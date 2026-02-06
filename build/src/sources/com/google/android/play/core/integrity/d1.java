@@ -6,40 +6,40 @@ import android.content.Context;
 public final class d1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ji.d0 f16153a;
+    private final ki.d0 f16133a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ji.d0 f16154b;
+    private final ki.d0 f16134b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ji.d0 f16155c;
+    private final ki.d0 f16135c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final ji.d0 f16156d;
+    private final ki.d0 f16136d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final ji.d0 f16157e;
+    private final ki.d0 f16137e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public /* synthetic */ d1(Context context, zh.i iVar) {
-        zh.a aVar;
+    public /* synthetic */ d1(Context context, ai.i iVar) {
+        ai.a aVar;
         z0 z0Var;
         z0 z0Var2;
-        ji.z b10 = ji.a0.b(context);
-        this.f16153a = b10;
-        aVar = g.f16170a;
-        ji.d0 b11 = ji.y.b(aVar);
-        this.f16154b = b11;
-        z0Var = y0.f16244a;
+        ki.z b10 = ki.a0.b(context);
+        this.f16133a = b10;
+        aVar = g.f16150a;
+        ki.d0 b11 = ki.y.b(aVar);
+        this.f16134b = b11;
+        z0Var = y0.f16224a;
         s sVar = new s(b10, z0Var);
-        this.f16155c = sVar;
-        z0Var2 = y0.f16244a;
-        ji.d0 b12 = ji.y.b(new m(b10, b11, sVar, z0Var2));
-        this.f16156d = b12;
-        this.f16157e = ji.y.b(new f(b12));
+        this.f16135c = sVar;
+        z0Var2 = y0.f16224a;
+        ki.d0 b12 = ki.y.b(new m(b10, b11, sVar, z0Var2));
+        this.f16136d = b12;
+        this.f16137e = ki.y.b(new f(b12));
     }
 
     public final IntegrityManager a() {
-        return (IntegrityManager) this.f16157e.a();
+        return (IntegrityManager) this.f16137e.a();
     }
 }

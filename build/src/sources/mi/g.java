@@ -1,52 +1,52 @@
 package mi;
 
-import java.io.Serializable;
+import java.io.IOException;
+import java.util.Iterator;
+import java.util.Objects;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-final class g extends i0 implements Serializable {
+public class g {
 
-    /* renamed from: d  reason: collision with root package name */
-    final li.f f38606d;
+    /* renamed from: a  reason: collision with root package name */
+    private final String f37175a;
 
-    /* renamed from: e  reason: collision with root package name */
-    final i0 f38607e;
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public g(li.f fVar, i0 i0Var) {
-        this.f38606d = (li.f) li.m.j(fVar);
-        this.f38607e = (i0) li.m.j(i0Var);
+    private g(String str) {
+        this.f37175a = (String) m.j(str);
     }
 
-    @Override // mi.i0, java.util.Comparator
-    public int compare(Object obj, Object obj2) {
-        return this.f38607e.compare(this.f38606d.apply(obj), this.f38606d.apply(obj2));
+    public static g d(char c10) {
+        return new g(String.valueOf(c10));
     }
 
-    @Override // java.util.Comparator
-    public boolean equals(Object obj) {
-        if (obj == this) {
-            return true;
-        }
-        if (obj instanceof g) {
-            g gVar = (g) obj;
-            if (this.f38606d.equals(gVar.f38606d) && this.f38607e.equals(gVar.f38607e)) {
-                return true;
+    public Appendable a(Appendable appendable, Iterator it) {
+        m.j(appendable);
+        if (it.hasNext()) {
+            appendable.append(e(it.next()));
+            while (it.hasNext()) {
+                appendable.append(this.f37175a);
+                appendable.append(e(it.next()));
             }
         }
-        return false;
+        return appendable;
     }
 
-    public int hashCode() {
-        return li.j.b(this.f38606d, this.f38607e);
+    public final StringBuilder b(StringBuilder sb2, Iterable iterable) {
+        return c(sb2, iterable.iterator());
     }
 
-    public String toString() {
-        String valueOf = String.valueOf(this.f38607e);
-        String valueOf2 = String.valueOf(this.f38606d);
-        StringBuilder sb2 = new StringBuilder(valueOf.length() + 13 + valueOf2.length());
-        sb2.append(valueOf);
-        sb2.append(".onResultOf(");
-        sb2.append(valueOf2);
-        sb2.append(")");
-        return sb2.toString();
+    public final StringBuilder c(StringBuilder sb2, Iterator it) {
+        try {
+            a(sb2, it);
+            return sb2;
+        } catch (IOException e10) {
+            throw new AssertionError(e10);
+        }
+    }
+
+    CharSequence e(Object obj) {
+        Objects.requireNonNull(obj);
+        if (obj instanceof CharSequence) {
+            return (CharSequence) obj;
+        }
+        return obj.toString();
     }
 }

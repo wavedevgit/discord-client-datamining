@@ -7,116 +7,116 @@ import java.util.Arrays;
 public final class n implements m {
 
     /* renamed from: q  reason: collision with root package name */
-    private static final double[] f20561q = {23.976023976023978d, 24.0d, 25.0d, 29.97002997002997d, 30.0d, 50.0d, 59.94005994005994d, 60.0d};
+    private static final double[] f20516q = {23.976023976023978d, 24.0d, 25.0d, 29.97002997002997d, 30.0d, 50.0d, 59.94005994005994d, 60.0d};
 
     /* renamed from: a  reason: collision with root package name */
-    private String f20562a;
+    private String f20517a;
 
     /* renamed from: b  reason: collision with root package name */
-    private tc.b0 f20563b;
+    private tc.b0 f20518b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final k0 f20564c;
+    private final k0 f20519c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final ne.h0 f20565d;
+    private final ne.h0 f20520d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final u f20566e;
+    private final u f20521e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final boolean[] f20567f;
+    private final boolean[] f20522f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final a f20568g;
+    private final a f20523g;
 
     /* renamed from: h  reason: collision with root package name */
-    private long f20569h;
+    private long f20524h;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f20570i;
+    private boolean f20525i;
 
     /* renamed from: j  reason: collision with root package name */
-    private boolean f20571j;
+    private boolean f20526j;
 
     /* renamed from: k  reason: collision with root package name */
-    private long f20572k;
+    private long f20527k;
 
     /* renamed from: l  reason: collision with root package name */
-    private long f20573l;
+    private long f20528l;
 
     /* renamed from: m  reason: collision with root package name */
-    private long f20574m;
+    private long f20529m;
 
     /* renamed from: n  reason: collision with root package name */
-    private long f20575n;
+    private long f20530n;
 
     /* renamed from: o  reason: collision with root package name */
-    private boolean f20576o;
+    private boolean f20531o;
 
     /* renamed from: p  reason: collision with root package name */
-    private boolean f20577p;
+    private boolean f20532p;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
 
         /* renamed from: e  reason: collision with root package name */
-        private static final byte[] f20578e = {0, 0, 1};
+        private static final byte[] f20533e = {0, 0, 1};
 
         /* renamed from: a  reason: collision with root package name */
-        private boolean f20579a;
+        private boolean f20534a;
 
         /* renamed from: b  reason: collision with root package name */
-        public int f20580b;
+        public int f20535b;
 
         /* renamed from: c  reason: collision with root package name */
-        public int f20581c;
+        public int f20536c;
 
         /* renamed from: d  reason: collision with root package name */
-        public byte[] f20582d;
+        public byte[] f20537d;
 
         public a(int i10) {
-            this.f20582d = new byte[i10];
+            this.f20537d = new byte[i10];
         }
 
         public void a(byte[] bArr, int i10, int i11) {
-            if (!this.f20579a) {
+            if (!this.f20534a) {
                 return;
             }
             int i12 = i11 - i10;
-            byte[] bArr2 = this.f20582d;
+            byte[] bArr2 = this.f20537d;
             int length = bArr2.length;
-            int i13 = this.f20580b;
+            int i13 = this.f20535b;
             if (length < i13 + i12) {
-                this.f20582d = Arrays.copyOf(bArr2, (i13 + i12) * 2);
+                this.f20537d = Arrays.copyOf(bArr2, (i13 + i12) * 2);
             }
-            System.arraycopy(bArr, i10, this.f20582d, this.f20580b, i12);
-            this.f20580b += i12;
+            System.arraycopy(bArr, i10, this.f20537d, this.f20535b, i12);
+            this.f20535b += i12;
         }
 
         public boolean b(int i10, int i11) {
-            if (this.f20579a) {
-                int i12 = this.f20580b - i11;
-                this.f20580b = i12;
-                if (this.f20581c == 0 && i10 == 181) {
-                    this.f20581c = i12;
+            if (this.f20534a) {
+                int i12 = this.f20535b - i11;
+                this.f20535b = i12;
+                if (this.f20536c == 0 && i10 == 181) {
+                    this.f20536c = i12;
                 } else {
-                    this.f20579a = false;
+                    this.f20534a = false;
                     return true;
                 }
             } else if (i10 == 179) {
-                this.f20579a = true;
+                this.f20534a = true;
             }
-            byte[] bArr = f20578e;
+            byte[] bArr = f20533e;
             a(bArr, 0, bArr.length);
             return false;
         }
 
         public void c() {
-            this.f20579a = false;
-            this.f20580b = 0;
-            this.f20581c = 0;
+            this.f20534a = false;
+            this.f20535b = 0;
+            this.f20536c = 0;
         }
     }
 
@@ -131,8 +131,8 @@ public final class n implements m {
     */
     private static android.util.Pair a(dd.n.a r8, java.lang.String r9) {
         /*
-            byte[] r0 = r8.f20582d
-            int r1 = r8.f20580b
+            byte[] r0 = r8.f20537d
+            int r1 = r8.f20535b
             byte[] r0 = java.util.Arrays.copyOf(r0, r1)
             r1 = 4
             r2 = r0[r1]
@@ -194,11 +194,11 @@ public final class n implements m {
             r1 = r1 & 15
             int r1 = r1 + (-1)
             if (r1 < 0) goto L98
-            double[] r2 = dd.n.f20561q
+            double[] r2 = dd.n.f20516q
             int r4 = r2.length
             if (r1 >= r4) goto L98
             r1 = r2[r1]
-            int r8 = r8.f20581c
+            int r8 = r8.f20536c
             int r8 = r8 + 9
             r8 = r0[r8]
             r0 = r8 & 96
@@ -244,29 +244,29 @@ public final class n implements m {
 
     @Override // dd.m
     public void c() {
-        ne.d0.a(this.f20567f);
-        this.f20568g.c();
-        u uVar = this.f20566e;
+        ne.d0.a(this.f20522f);
+        this.f20523g.c();
+        u uVar = this.f20521e;
         if (uVar != null) {
             uVar.d();
         }
-        this.f20569h = 0L;
-        this.f20570i = false;
-        this.f20573l = -9223372036854775807L;
-        this.f20575n = -9223372036854775807L;
+        this.f20524h = 0L;
+        this.f20525i = false;
+        this.f20528l = -9223372036854775807L;
+        this.f20530n = -9223372036854775807L;
     }
 
     @Override // dd.m
     public void e(long j10, int i10) {
-        this.f20573l = j10;
+        this.f20528l = j10;
     }
 
     @Override // dd.m
     public void f(tc.m mVar, i0.d dVar) {
         dVar.a();
-        this.f20562a = dVar.b();
-        this.f20563b = mVar.c(dVar.c(), 2);
-        k0 k0Var = this.f20564c;
+        this.f20517a = dVar.b();
+        this.f20518b = mVar.c(dVar.c(), 2);
+        k0 k0Var = this.f20519c;
         if (k0Var != null) {
             k0Var.b(mVar, dVar);
         }
@@ -274,18 +274,18 @@ public final class n implements m {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public n(k0 k0Var) {
-        this.f20564c = k0Var;
-        this.f20567f = new boolean[4];
-        this.f20568g = new a(IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
+        this.f20519c = k0Var;
+        this.f20522f = new boolean[4];
+        this.f20523g = new a(IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
         if (k0Var != null) {
-            this.f20566e = new u(178, IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
-            this.f20565d = new ne.h0();
+            this.f20521e = new u(178, IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
+            this.f20520d = new ne.h0();
         } else {
-            this.f20566e = null;
-            this.f20565d = null;
+            this.f20521e = null;
+            this.f20520d = null;
         }
-        this.f20573l = -9223372036854775807L;
-        this.f20575n = -9223372036854775807L;
+        this.f20528l = -9223372036854775807L;
+        this.f20530n = -9223372036854775807L;
     }
 
     @Override // dd.m

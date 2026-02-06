@@ -8,15 +8,15 @@ import java.util.List;
 public abstract class i {
 
     /* renamed from: a  reason: collision with root package name */
-    protected j f15294a;
+    protected j f15274a;
 
     /* renamed from: b  reason: collision with root package name */
-    protected final List f15295b = new ArrayList();
+    protected final List f15275b = new ArrayList();
 
     /* JADX INFO: Access modifiers changed from: protected */
     public i(int i10) {
         for (int i11 = 0; i11 < i10; i11++) {
-            this.f15295b.add(new h.a());
+            this.f15275b.add(new h.a());
         }
     }
 
@@ -34,7 +34,7 @@ public abstract class i {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public void e(j jVar) {
-        this.f15294a = jVar;
+        this.f15274a = jVar;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */

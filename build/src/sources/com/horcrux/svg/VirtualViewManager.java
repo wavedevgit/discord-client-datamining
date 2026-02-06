@@ -95,121 +95,121 @@ class VirtualViewManager<V extends VirtualView> extends ViewGroupManager<Virtual
     public static /* synthetic */ class b {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f16777a;
+        static final /* synthetic */ int[] f16757a;
 
         static {
             int[] iArr = new int[SVGClass.values().length];
-            f16777a = iArr;
+            f16757a = iArr;
             try {
                 iArr[SVGClass.RNSVGGroup.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f16777a[SVGClass.RNSVGPath.ordinal()] = 2;
+                f16757a[SVGClass.RNSVGPath.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f16777a[SVGClass.RNSVGCircle.ordinal()] = 3;
+                f16757a[SVGClass.RNSVGCircle.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f16777a[SVGClass.RNSVGEllipse.ordinal()] = 4;
+                f16757a[SVGClass.RNSVGEllipse.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f16777a[SVGClass.RNSVGLine.ordinal()] = 5;
+                f16757a[SVGClass.RNSVGLine.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                f16777a[SVGClass.RNSVGRect.ordinal()] = 6;
+                f16757a[SVGClass.RNSVGRect.ordinal()] = 6;
             } catch (NoSuchFieldError unused6) {
             }
             try {
-                f16777a[SVGClass.RNSVGText.ordinal()] = 7;
+                f16757a[SVGClass.RNSVGText.ordinal()] = 7;
             } catch (NoSuchFieldError unused7) {
             }
             try {
-                f16777a[SVGClass.RNSVGTSpan.ordinal()] = 8;
+                f16757a[SVGClass.RNSVGTSpan.ordinal()] = 8;
             } catch (NoSuchFieldError unused8) {
             }
             try {
-                f16777a[SVGClass.RNSVGTextPath.ordinal()] = 9;
+                f16757a[SVGClass.RNSVGTextPath.ordinal()] = 9;
             } catch (NoSuchFieldError unused9) {
             }
             try {
-                f16777a[SVGClass.RNSVGImage.ordinal()] = 10;
+                f16757a[SVGClass.RNSVGImage.ordinal()] = 10;
             } catch (NoSuchFieldError unused10) {
             }
             try {
-                f16777a[SVGClass.RNSVGClipPath.ordinal()] = 11;
+                f16757a[SVGClass.RNSVGClipPath.ordinal()] = 11;
             } catch (NoSuchFieldError unused11) {
             }
             try {
-                f16777a[SVGClass.RNSVGDefs.ordinal()] = 12;
+                f16757a[SVGClass.RNSVGDefs.ordinal()] = 12;
             } catch (NoSuchFieldError unused12) {
             }
             try {
-                f16777a[SVGClass.RNSVGUse.ordinal()] = 13;
+                f16757a[SVGClass.RNSVGUse.ordinal()] = 13;
             } catch (NoSuchFieldError unused13) {
             }
             try {
-                f16777a[SVGClass.RNSVGSymbol.ordinal()] = 14;
+                f16757a[SVGClass.RNSVGSymbol.ordinal()] = 14;
             } catch (NoSuchFieldError unused14) {
             }
             try {
-                f16777a[SVGClass.RNSVGLinearGradient.ordinal()] = 15;
+                f16757a[SVGClass.RNSVGLinearGradient.ordinal()] = 15;
             } catch (NoSuchFieldError unused15) {
             }
             try {
-                f16777a[SVGClass.RNSVGRadialGradient.ordinal()] = 16;
+                f16757a[SVGClass.RNSVGRadialGradient.ordinal()] = 16;
             } catch (NoSuchFieldError unused16) {
             }
             try {
-                f16777a[SVGClass.RNSVGPattern.ordinal()] = 17;
+                f16757a[SVGClass.RNSVGPattern.ordinal()] = 17;
             } catch (NoSuchFieldError unused17) {
             }
             try {
-                f16777a[SVGClass.RNSVGMask.ordinal()] = 18;
+                f16757a[SVGClass.RNSVGMask.ordinal()] = 18;
             } catch (NoSuchFieldError unused18) {
             }
             try {
-                f16777a[SVGClass.RNSVGFilter.ordinal()] = 19;
+                f16757a[SVGClass.RNSVGFilter.ordinal()] = 19;
             } catch (NoSuchFieldError unused19) {
             }
             try {
-                f16777a[SVGClass.RNSVGFeBlend.ordinal()] = 20;
+                f16757a[SVGClass.RNSVGFeBlend.ordinal()] = 20;
             } catch (NoSuchFieldError unused20) {
             }
             try {
-                f16777a[SVGClass.RNSVGFeColorMatrix.ordinal()] = 21;
+                f16757a[SVGClass.RNSVGFeColorMatrix.ordinal()] = 21;
             } catch (NoSuchFieldError unused21) {
             }
             try {
-                f16777a[SVGClass.RNSVGFeComposite.ordinal()] = 22;
+                f16757a[SVGClass.RNSVGFeComposite.ordinal()] = 22;
             } catch (NoSuchFieldError unused22) {
             }
             try {
-                f16777a[SVGClass.RNSVGFeFlood.ordinal()] = 23;
+                f16757a[SVGClass.RNSVGFeFlood.ordinal()] = 23;
             } catch (NoSuchFieldError unused23) {
             }
             try {
-                f16777a[SVGClass.RNSVGFeGaussianBlur.ordinal()] = 24;
+                f16757a[SVGClass.RNSVGFeGaussianBlur.ordinal()] = 24;
             } catch (NoSuchFieldError unused24) {
             }
             try {
-                f16777a[SVGClass.RNSVGFeMerge.ordinal()] = 25;
+                f16757a[SVGClass.RNSVGFeMerge.ordinal()] = 25;
             } catch (NoSuchFieldError unused25) {
             }
             try {
-                f16777a[SVGClass.RNSVGFeOffset.ordinal()] = 26;
+                f16757a[SVGClass.RNSVGFeOffset.ordinal()] = 26;
             } catch (NoSuchFieldError unused26) {
             }
             try {
-                f16777a[SVGClass.RNSVGMarker.ordinal()] = 27;
+                f16757a[SVGClass.RNSVGMarker.ordinal()] = 27;
             } catch (NoSuchFieldError unused27) {
             }
             try {
-                f16777a[SVGClass.RNSVGForeignObject.ordinal()] = 28;
+                f16757a[SVGClass.RNSVGForeignObject.ordinal()] = 28;
             } catch (NoSuchFieldError unused28) {
             }
         }
@@ -409,7 +409,7 @@ class VirtualViewManager<V extends VirtualView> extends ViewGroupManager<Virtual
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // com.facebook.react.uimanager.ViewManager
     public VirtualView createViewInstance(ThemedReactContext themedReactContext) {
-        switch (b.f16777a[this.svgClass.ordinal()]) {
+        switch (b.f16757a[this.svgClass.ordinal()]) {
             case 1:
                 return new c0(themedReactContext);
             case 2:

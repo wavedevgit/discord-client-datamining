@@ -1,124 +1,129 @@
 package mi;
-
-import java.util.Comparator;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class m {
-
-    /* renamed from: a  reason: collision with root package name */
-    private static final m f38651a = new a();
-
-    /* renamed from: b  reason: collision with root package name */
-    private static final m f38652b = new b(-1);
-
-    /* renamed from: c  reason: collision with root package name */
-    private static final m f38653c = new b(1);
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    class a extends m {
-        a() {
-            super(null);
+    private static String a(int i10, int i11, String str) {
+        if (i10 < 0) {
+            return q.b("%s (%s) must not be negative", str, Integer.valueOf(i10));
         }
-
-        @Override // mi.m
-        public m d(int i10, int i11) {
-            return k(oi.e.e(i10, i11));
+        if (i11 >= 0) {
+            return q.b("%s (%s) must be less than size (%s)", str, Integer.valueOf(i10), Integer.valueOf(i11));
         }
+        StringBuilder sb2 = new StringBuilder(26);
+        sb2.append("negative size: ");
+        sb2.append(i11);
+        throw new IllegalArgumentException(sb2.toString());
+    }
 
-        @Override // mi.m
-        public m e(long j10, long j11) {
-            return k(oi.g.a(j10, j11));
+    private static String b(int i10, int i11, String str) {
+        if (i10 < 0) {
+            return q.b("%s (%s) must not be negative", str, Integer.valueOf(i10));
         }
-
-        @Override // mi.m
-        public m f(Object obj, Object obj2, Comparator comparator) {
-            return k(comparator.compare(obj, obj2));
+        if (i11 >= 0) {
+            return q.b("%s (%s) must not be greater than size (%s)", str, Integer.valueOf(i10), Integer.valueOf(i11));
         }
+        StringBuilder sb2 = new StringBuilder(26);
+        sb2.append("negative size: ");
+        sb2.append(i11);
+        throw new IllegalArgumentException(sb2.toString());
+    }
 
-        @Override // mi.m
-        public m g(boolean z10, boolean z11) {
-            return k(oi.a.a(z10, z11));
-        }
-
-        @Override // mi.m
-        public m h(boolean z10, boolean z11) {
-            return k(oi.a.a(z11, z10));
-        }
-
-        @Override // mi.m
-        public int i() {
-            return 0;
-        }
-
-        m k(int i10) {
-            if (i10 < 0) {
-                return m.f38652b;
+    private static String c(int i10, int i11, int i12) {
+        if (i10 >= 0 && i10 <= i12) {
+            if (i11 >= 0 && i11 <= i12) {
+                return q.b("end index (%s) must not be less than start index (%s)", Integer.valueOf(i11), Integer.valueOf(i10));
             }
-            return i10 > 0 ? m.f38653c : m.f38651a;
+            return b(i11, i12, "end index");
         }
+        return b(i10, i12, "start index");
     }
 
-    /* synthetic */ m(a aVar) {
-        this();
+    public static void d(boolean z10) {
+        if (z10) {
+            return;
+        }
+        throw new IllegalArgumentException();
     }
 
-    public static m j() {
-        return f38651a;
+    public static void e(boolean z10, Object obj) {
+        if (z10) {
+            return;
+        }
+        throw new IllegalArgumentException(String.valueOf(obj));
     }
 
-    public abstract m d(int i10, int i11);
-
-    public abstract m e(long j10, long j11);
-
-    public abstract m f(Object obj, Object obj2, Comparator comparator);
-
-    public abstract m g(boolean z10, boolean z11);
-
-    public abstract m h(boolean z10, boolean z11);
-
-    public abstract int i();
-
-    private m() {
+    public static void f(boolean z10, String str, int i10, int i11) {
+        if (z10) {
+            return;
+        }
+        throw new IllegalArgumentException(q.b(str, Integer.valueOf(i10), Integer.valueOf(i11)));
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    private static final class b extends m {
-
-        /* renamed from: d  reason: collision with root package name */
-        final int f38654d;
-
-        b(int i10) {
-            super(null);
-            this.f38654d = i10;
+    public static void g(boolean z10, String str, long j10) {
+        if (z10) {
+            return;
         }
+        throw new IllegalArgumentException(q.b(str, Long.valueOf(j10)));
+    }
 
-        @Override // mi.m
-        public int i() {
-            return this.f38654d;
-        }
+    public static int h(int i10, int i11) {
+        return i(i10, i11, "index");
+    }
 
-        @Override // mi.m
-        public m d(int i10, int i11) {
-            return this;
+    public static int i(int i10, int i11, String str) {
+        if (i10 >= 0 && i10 < i11) {
+            return i10;
         }
+        throw new IndexOutOfBoundsException(a(i10, i11, str));
+    }
 
-        @Override // mi.m
-        public m e(long j10, long j11) {
-            return this;
-        }
+    public static Object j(Object obj) {
+        obj.getClass();
+        return obj;
+    }
 
-        @Override // mi.m
-        public m g(boolean z10, boolean z11) {
-            return this;
+    public static Object k(Object obj, Object obj2) {
+        if (obj != null) {
+            return obj;
         }
+        throw new NullPointerException(String.valueOf(obj2));
+    }
 
-        @Override // mi.m
-        public m h(boolean z10, boolean z11) {
-            return this;
-        }
+    public static int l(int i10, int i11) {
+        return m(i10, i11, "index");
+    }
 
-        @Override // mi.m
-        public m f(Object obj, Object obj2, Comparator comparator) {
-            return this;
+    public static int m(int i10, int i11, String str) {
+        if (i10 >= 0 && i10 <= i11) {
+            return i10;
         }
+        throw new IndexOutOfBoundsException(b(i10, i11, str));
+    }
+
+    public static void n(int i10, int i11, int i12) {
+        if (i10 >= 0 && i11 >= i10 && i11 <= i12) {
+            return;
+        }
+        throw new IndexOutOfBoundsException(c(i10, i11, i12));
+    }
+
+    public static void o(boolean z10) {
+        if (z10) {
+            return;
+        }
+        throw new IllegalStateException();
+    }
+
+    public static void p(boolean z10, Object obj) {
+        if (z10) {
+            return;
+        }
+        throw new IllegalStateException(String.valueOf(obj));
+    }
+
+    public static void q(boolean z10, String str, Object obj) {
+        if (z10) {
+            return;
+        }
+        throw new IllegalStateException(q.b(str, obj));
     }
 }

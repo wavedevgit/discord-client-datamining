@@ -7,20 +7,20 @@ import ff.q;
 public final class v0 extends q {
 
     /* renamed from: d  reason: collision with root package name */
-    final /* synthetic */ q.a f22995d;
+    final /* synthetic */ q.a f23296d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public v0(q.a aVar, com.google.android.gms.common.d[] dVarArr, boolean z10, int i10) {
         super(dVarArr, z10, i10);
-        this.f22995d = aVar;
+        this.f23296d = aVar;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // ff.q
-    public final void b(a.b bVar, xg.k kVar) {
+    public final void b(a.b bVar, yg.k kVar) {
         m mVar;
-        mVar = this.f22995d.f22971a;
+        mVar = this.f23296d.f23272a;
         mVar.accept(bVar, kVar);
     }
 }

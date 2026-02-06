@@ -16,7 +16,7 @@ interface j0 {
 
     Object f(Object obj);
 
-    int g(int i10, Object obj, Object obj2);
+    boolean g(Object obj);
 
-    boolean h(Object obj);
+    int h(int i10, Object obj, Object obj2);
 }

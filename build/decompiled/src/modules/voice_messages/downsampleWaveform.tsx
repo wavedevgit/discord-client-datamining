@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/voice_messages/downsampleWaveform.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1() {
-        _fun90588: for (var _fun90588_ip = 0;;) switch (_fun90588_ip) {
+        _fun90601: for (var _fun90601_ip = 0;;) switch (_fun90601_ip) {
             case 0:
                 var0 = arg0;
                 var8 = arg1;
@@ -39,8 +39,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var3.bind(var4)(var2, var1);
                 var1 = var0.length;
                 if (!(var1 !== var8)) {
-                    _fun90588_ip = 230;
-                    continue _fun90588
+                    _fun90601_ip = 230;
+                    continue _fun90601
                 }
             case 63:
                 var1 = var0.length;
@@ -52,8 +52,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = 1;
                 var3 = 0;
                 if (!var2) {
-                    _fun90588_ip = 228;
-                    continue _fun90588
+                    _fun90601_ip = 228;
+                    continue _fun90601
                 }
             case 98:
                 var10 = var5.Math;
@@ -66,8 +66,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = 0;
                 var2 = 0;
                 if (!var10) {
-                    _fun90588_ip = 203;
-                    continue _fun90588
+                    _fun90601_ip = 203;
+                    continue _fun90601
                 }
             case 138:
                 var10 = var0.length;
@@ -77,8 +77,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = 0;
                 var2 = 0;
                 if (!var10) {
-                    _fun90588_ip = 203;
-                    continue _fun90588
+                    _fun90601_ip = 203;
+                    continue _fun90601
                 }
             case 158:
                 var10 = var0[var3];
@@ -88,8 +88,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var15;
                 var2 = var14;
                 if (!(var3 < var9)) {
-                    _fun90588_ip = 203;
-                    continue _fun90588
+                    _fun90601_ip = 203;
+                    continue _fun90601
                 }
             case 182:
                 var10 = var0.length;
@@ -98,8 +98,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var13;
                 var2 = var12;
                 if (var3 < var10) {
-                    _fun90588_ip = 158;
-                    continue _fun90588
+                    _fun90601_ip = 158;
+                    continue _fun90601
                 }
             case 203:
                 var10 = var1.length;
@@ -108,8 +108,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var1.length;
                 var3 = var9;
                 if (var2 < var8) {
-                    _fun90588_ip = 98;
-                    continue _fun90588
+                    _fun90601_ip = 98;
+                    continue _fun90601
                 }
             case 228:
                 return var1;

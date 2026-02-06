@@ -5,7 +5,7 @@ import cc.c;
 public interface c {
     void a();
 
-    void h(long j10, c.b bVar, String str);
+    void g(long j10, c.b bVar, String str);
 
     cc.a m();
 }

@@ -10,13 +10,13 @@ import kotlin.jvm.internal.Intrinsics;
 public final class f0 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final f0 f5732a = new f0();
+    public static final f0 f6061a = new f0();
 
     private f0() {
     }
 
     private final File c(Context context) {
-        return new File(a.f5641a.a(context), "androidx.work.workdb");
+        return new File(a.f5970a.a(context), "androidx.work.workdb");
     }
 
     public static final void d(Context context) {
@@ -25,10 +25,10 @@ public final class f0 {
         String str3;
         String str4;
         Intrinsics.checkNotNullParameter(context, "context");
-        f0 f0Var = f5732a;
+        f0 f0Var = f6061a;
         if (f0Var.b(context).exists()) {
             k4.m e10 = k4.m.e();
-            str = g0.f5762a;
+            str = g0.f6091a;
             e10.a(str, "Migrating WorkDatabase to the no-backup directory");
             for (Map.Entry entry : f0Var.e(context).entrySet()) {
                 File file = (File) entry.getKey();
@@ -36,7 +36,7 @@ public final class f0 {
                 if (file.exists()) {
                     if (file2.exists()) {
                         k4.m e11 = k4.m.e();
-                        str4 = g0.f5762a;
+                        str4 = g0.f6091a;
                         e11.k(str4, "Over-writing contents of " + file2);
                     }
                     if (file.renameTo(file2)) {
@@ -45,7 +45,7 @@ public final class f0 {
                         str2 = "Renaming " + file + " to " + file2 + " failed";
                     }
                     k4.m e12 = k4.m.e();
-                    str3 = g0.f5762a;
+                    str3 = g0.f6091a;
                     e12.a(str3, str2);
                 }
             }
@@ -69,12 +69,12 @@ public final class f0 {
         Intrinsics.checkNotNullParameter(context, "context");
         File b10 = b(context);
         File a10 = a(context);
-        strArr = g0.f5763b;
+        strArr = g0.f6092b;
         LinkedHashMap linkedHashMap = new LinkedHashMap(kotlin.ranges.d.d(kotlin.collections.o0.e(strArr.length), 16));
         for (String str : strArr) {
-            Pair a11 = or.v.a(new File(b10.getPath() + str), new File(a10.getPath() + str));
+            Pair a11 = qr.v.a(new File(b10.getPath() + str), new File(a10.getPath() + str));
             linkedHashMap.put(a11.c(), a11.d());
         }
-        return kotlin.collections.o0.r(linkedHashMap, or.v.a(b10, a10));
+        return kotlin.collections.o0.r(linkedHashMap, qr.v.a(b10, a10));
     }
 }

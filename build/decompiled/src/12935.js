@@ -1,95 +1,32 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var4 = require;
-    var2 = exports;
-    var3 = dependencyMap;
-    var _closure1_slot0 = var4;
-    var _closure1_slot1 = var3;
-    var0 = function() {
-        var4 = undefined;
-        var0 = undefined;
-        var3 = _closure1_slot2;
-        var2 = function*(arg0) { // Environment: var2
-            var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
-                _fun99124: for (var _fun99124_ip = 0;;) switch (_fun99124_ip) {
-                    case 0:
-                        StartGenerator();
-                        ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
-                        if (var1) {
-                            _fun99124_ip = 74;
-                            continue _fun99124
-                        }
-                    case 7:
-                        var3 = _closure1_slot0;
-                        var2 = _closure1_slot1;
-                        var1 = 1;
-                        var2 = var2[var1];
-                        var1 = undefined;
-                        var3 = var3.bind(var1)(var2);
-                        var2 = var3._asyncOptionalChain;
-                        var1 = arg0;
-                        var1 = var2.bind(var3)(var1);
-                        SaveGenerator(address = 50);
-                    case 48:
-                        return var1;
-                    case 50:
-                        ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 2);
-                        if (var2) {
-                            _fun99124_ip = 71;
-                            continue _fun99124
-                        }
-                    case 56:
-                        var2 = null;
-                        var2 = var2 == var1;
-                        if (var2) {
-                            _fun99124_ip = 68;
-                            continue _fun99124
-                        }
-                    case 65:
-                        var2 = var1;
-                    case 68:
-                        return var2;
-                    case 71:
-                        return var1;
-                    case 74:
-                        return var0;
+    var1 = exports;
+    var0 = global;
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var2 = {};
+    var0 = true;
+    var2.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var4)(var1, var0, var2);
+    var0 = function arg0, arg1() {
+        _fun99121: for (var _fun99121_ip = 0;;) switch (_fun99121_ip) {
+            case 0:
+                var0 = arg0;
+                var1 = null;
+                if (!(var1 == var0)) {
+                    _fun99121_ip = 18;
+                    continue _fun99121
                 }
-            };
-            return var0;
-        };
-        var3 = var3.bind(var4)(var2);
-        _closure1_slot3 = var3;
-        var2 = var3.apply;
-        var0 = arguments;
-        var1 = var0;
-        var0 = this;
-        var0 = var2.bind(var3)(var0, var1);
-        return var0;
+            case 9:
+                var2 = arg1;
+                var1 = undefined;
+                var0 = var2.bind(var1)();
+            case 18:
+                return var0;
+        }
     };
-    var _closure1_slot3 = var0;
-    var0 = 0;
-    var3 = var3[var0];
+    var1._nullishCoalesce = var0;
     var0 = undefined;
-    var3 = var4.bind(var0)(var3);
-    var _closure1_slot2 = var3;
-    var3 = global;
-    var6 = var3.Object;
-    var5 = var6.defineProperty;
-    var4 = {};
-    var3 = true;
-    var4.value = var3;
-    var3 = '__esModule';
-    var3 = var5.bind(var6)(var2, var3, var4);
-    var1 = function arg0() {
-        var0 = undefined;
-        var3 = _closure1_slot3;
-        var2 = var3.apply;
-        var0 = arguments;
-        var1 = var0;
-        var0 = this;
-        var0 = var2.bind(var3)(var0, var1);
-        return var0;
-    };
-    var2._asyncOptionalChainDelete = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 12934]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

@@ -7,7 +7,7 @@ abstract class g1 extends h1 {
     public final boolean contains(Object obj) {
         if (obj instanceof Map.Entry) {
             Map.Entry entry = (Map.Entry) obj;
-            Object obj2 = q().get(entry.getKey());
+            Object obj2 = r().get(entry.getKey());
             if (obj2 != null && obj2.equals(entry.getValue())) {
                 return true;
             }
@@ -22,13 +22,13 @@ abstract class g1 extends h1 {
 
     @Override // com.google.android.gms.internal.fido.h1, java.util.Collection, java.util.Set
     public final int hashCode() {
-        return y1.a(q().c());
+        return y1.a(r().c());
     }
 
-    abstract f1 q();
+    abstract f1 r();
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
     public final int size() {
-        return q().size();
+        return r().size();
     }
 }

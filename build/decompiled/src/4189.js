@@ -1,191 +1,16 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var9 = require;
-    var6 = metroImportDefault;
-    var2 = exports;
-    var7 = dependencyMap;
-    var _closure1_slot0 = var9;
-    var _closure1_slot1 = var7;
+    var1 = exports;
     var0 = global;
     var5 = var0.Object;
-    var3 = var5.defineProperty;
-    var1 = {};
+    var4 = var5.defineProperty;
+    var3 = {};
     var0 = true;
-    var1.value = var0;
+    var3.value = var0;
     var0 = '__esModule';
-    var0 = var3.bind(var5)(var2, var0, var1);
-    var0 = 0;
-    var1 = var7[var0];
-    var0 = undefined;
-    var1 = var6.bind(var0)(var1);
-    var _closure1_slot2 = var1;
-    var1 = {
-        34852: 'SpectralSensitivity',
-        34855: 'ISOSpeedRatings',
-        34858: 'TimeZoneOffset',
-        34859: 'SelfTimerMode',
-        34865: 'StandardOutputSensitivity',
-        34866: 'RecommendedExposureIndex',
-        34867: 'ISOSpeed',
-        34868: 'ISOSpeedLatitudeyyy',
-        34869: 'ISOSpeedLatitudezzz',
-        36867: 'DateTimeOriginal',
-        36868: 'DateTimeDigitized',
-        36873: 'GooglePlusUploadCode',
-        36880: 'OffsetTime',
-        36881: 'OffsetTimeOriginal',
-        36882: 'OffsetTimeDigitized',
-        37122: 'CompressedBitsPerPixel',
-        37379: 'BrightnessValue',
-        37380: 'ExposureBiasValue',
-        37393: 'ImageNumber',
-        37395: 'ImageHistory',
-        37520: 'SubSecTime',
-        37521: 'SubSecTimeOriginal',
-        37522: 'SubSecTimeDigitized',
-        37724: 'ImageSourceData',
-        40962: 'PixelXDimension',
-        40963: 'PixelYDimension',
-        40964: 'RelatedSoundFile',
-        40965: 'Interoperability IFD Pointer',
-        41483: 'FlashEnergy',
-        41486: 'FocalPlaneXResolution',
-        41487: 'FocalPlaneYResolution',
-        41493: 'ExposureIndex',
-        42016: 'ImageUniqueID',
-        42032: 'CameraOwnerName',
-        42033: 'BodySerialNumber',
-        42035: 'LensMake',
-        42036: 'LensModel',
-        42037: 'LensSerialNumber',
-        42081: 'SourceImageNumberOfCompositeImage',
-        42082: 'SourceExposureTimesOfCompositeImage',
-        42240: 'Gamma',
-        59932: 'Padding',
-        59933: 'OffsetSchema',
-        65000: 'OwnerName',
-        65001: 'SerialNumber',
-        65002: 'Lens',
-        65100: 'RawFile',
-        65101: 'Converter',
-        65102: 'WhiteBalance',
-        65105: 'Exposure',
-        65106: 'Shadows',
-        65107: 'Brightness',
-        65108: 'Contrast',
-        65109: 'Saturation',
-        65110: 'Sharpness',
-        65111: 'Smoothness',
-        65112: 'MoireFilter'
-    };
-    var3 = {};
-    var5 = 'ExposureTime';
-    var3.name = var5;
-    var5 = 1;
-    var8 = var7[var5];
-    var8 = var6.bind(var0)(var8);
-    var8 = var8.ExposureTime;
-    var3.description = var8;
-    var1[33434] = var3;
-    var3 = {};
-    var8 = 'FNumber';
-    var3.name = var8;
-    var8 = var7[var5];
-    var8 = var6.bind(var0)(var8);
-    var8 = var8.FNumber;
-    var3.description = var8;
-    var1[33437] = var3;
-    var3 = {};
-    var8 = 'ExposureProgram';
-    var3.name = var8;
-    var8 = var7[var5];
-    var8 = var6.bind(var0)(var8);
-    var8 = var8.ExposureProgram;
-    var3.description = var8;
-    var1[34850] = var3;
-    var3 = {};
-    var8 = 'OECF';
-    var3.name = var8;
-    var8 = function() {
-        var0 = '[Raw OECF table data]';
-        return var0;
-    };
-    var3.description = var8;
-    var1[34856] = var3;
-    var3 = {};
-    var8 = 'SensitivityType';
-    var3.name = var8;
-    var8 = function arg0() {
-        _fun38233: for (var _fun38233_ip = 0;;) switch (_fun38233_ip) {
-            case 0:
-                var1 = {
-                    1: 'Standard Output Sensitivity',
-                    2: 'Recommended Exposure Index',
-                    3: 'ISO Speed',
-                    4: 'Standard Output Sensitivity and Recommended Exposure Index',
-                    5: 'Standard Output Sensitivity and ISO Speed',
-                    6: 'Recommended Exposure Index and ISO Speed',
-                    7: 'Standard Output Sensitivity, Recommended Exposure Index and ISO Speed'
-                };
-                var0 = arg0;
-                var0 = var1[var0];
-                if (var0) {
-                    _fun38233_ip = 28;
-                    continue _fun38233
-                }
-            case 24:
-                var0 = 'Unknown';
-            case 28:
-                return var0;
-        }
-    };
-    var3.description = var8;
-    var1[34864] = var3;
-    var3 = {};
-    var8 = 'ExifVersion';
-    var3.name = var8;
-    var8 = function arg0() {
-        var2 = _closure1_slot0;
-        var1 = _closure1_slot1;
-        var0 = 2;
-        var1 = var1[var0];
-        var0 = undefined;
-        var2 = var2.bind(var0)(var1);
-        var1 = var2.getStringValue;
-        var0 = arg0;
-        var0 = var1.bind(var2)(var0);
-        return var0;
-    };
-    var3.description = var8;
-    var1[36864] = var3;
-    var3 = {};
-    var8 = 'ComponentsConfiguration';
-    var3.name = var8;
-    var8 = var7[var5];
-    var8 = var6.bind(var0)(var8);
-    var8 = var8.ComponentsConfiguration;
-    var3.description = var8;
-    var1[37121] = var3;
-    var3 = {};
-    var8 = 'ShutterSpeedValue';
-    var3.name = var8;
-    var8 = var7[var5];
-    var8 = var6.bind(var0)(var8);
-    var8 = var8.ShutterSpeedValue;
-    var3.description = var8;
-    var1[37377] = var3;
-    var3 = {};
-    var8 = 'ApertureValue';
-    var3.name = var8;
-    var8 = var7[var5];
-    var8 = var6.bind(var0)(var8);
-    var8 = var8.ApertureValue;
-    var3.description = var8;
-    var1[37378] = var3;
-    var3 = {};
-    var8 = 'MaxApertureValue';
-    var3.name = var8;
-    var8 = function arg0() {
+    var0 = var4.bind(var5)(var1, var0, var3);
+    var0 = {};
+    var3 = function arg0() {
         var6 = arg0;
         var0 = global;
         var4 = var0.Math;
@@ -204,491 +29,96 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = var0.bind(var1)(var2);
         return var0;
     };
-    var3.description = var8;
-    var1[37381] = var3;
-    var3 = {};
-    var8 = 'SubjectDistance';
-    var3.name = var8;
-    var8 = function arg0() {
-        var2 = arg0;
-        var0 = 0;
-        var1 = var2[var0];
-        var0 = 1;
-        var0 = var2[var0];
-        var1 = var1 / var0;
-        var0 = ' m';
-        var0 = var1 + var0;
-        return var0;
-    };
-    var3.description = var8;
-    var1[37382] = var3;
-    var3 = {};
-    var8 = 'MeteringMode';
-    var3.name = var8;
-    var8 = var7[var5];
-    var8 = var6.bind(var0)(var8);
-    var8 = var8.MeteringMode;
-    var3.description = var8;
-    var1[37383] = var3;
-    var3 = {};
-    var8 = 'LightSource';
-    var3.name = var8;
-    var8 = var7[var5];
-    var8 = var6.bind(var0)(var8);
-    var8 = var8.LightSource;
-    var3.description = var8;
-    var1[37384] = var3;
-    var3 = {};
-    var8 = 'Flash';
-    var3.name = var8;
-    var8 = function arg0() {
-        _fun38237: for (var _fun38237_ip = 0;;) switch (_fun38237_ip) {
+    var0.ApertureValue = var3;
+    var3 = function arg0() {
+        _fun38209: for (var _fun38209_ip = 0;;) switch (_fun38209_ip) {
             case 0:
-                var23 = arg0;
-                var0 = 'Flash did not fire';
-                var1 = 0;
-                if (!(var1 !== var23)) {
-                    _fun38237_ip = 397;
-                    continue _fun38237
-                }
-            case 18:
-                var1 = 'Flash fired';
-                var2 = 1;
-                if (!(var2 !== var23)) {
-                    _fun38237_ip = 394;
-                    continue _fun38237
-                }
-            case 34:
-                var2 = 'Strobe return light not detected';
-                var3 = 5;
-                if (!(var3 !== var23)) {
-                    _fun38237_ip = 391;
-                    continue _fun38237
-                }
-            case 50:
-                var3 = 'Strobe return light detected';
-                var4 = 7;
-                if (!(var4 !== var23)) {
-                    _fun38237_ip = 388;
-                    continue _fun38237
-                }
-            case 66:
-                var4 = 'Flash fired, compulsory flash mode';
-                var5 = 9;
-                if (!(var5 !== var23)) {
-                    _fun38237_ip = 385;
-                    continue _fun38237
-                }
-            case 82:
-                var5 = 'Flash fired, compulsory flash mode, return light not detected';
-                var6 = 13;
-                if (!(var6 !== var23)) {
-                    _fun38237_ip = 382;
-                    continue _fun38237
-                }
-            case 98:
-                var6 = 'Flash fired, compulsory flash mode, return light detected';
-                var7 = 15;
-                if (!(var7 !== var23)) {
-                    _fun38237_ip = 379;
-                    continue _fun38237
-                }
-            case 114:
-                var7 = 'Flash did not fire, compulsory flash mode';
-                var8 = 16;
-                if (!(var8 !== var23)) {
-                    _fun38237_ip = 376;
-                    continue _fun38237
-                }
-            case 130:
-                var8 = 'Flash did not fire, auto mode';
-                var9 = 24;
-                if (!(var9 !== var23)) {
-                    _fun38237_ip = 373;
-                    continue _fun38237
-                }
-            case 146:
-                var9 = 'Flash fired, auto mode';
-                var10 = 25;
-                if (!(var10 !== var23)) {
-                    _fun38237_ip = 370;
-                    continue _fun38237
-                }
-            case 162:
-                var10 = 'Flash fired, auto mode, return light not detected';
-                var11 = 29;
-                if (!(var11 !== var23)) {
-                    _fun38237_ip = 367;
-                    continue _fun38237
-                }
-            case 178:
-                var11 = 'Flash fired, auto mode, return light detected';
-                var12 = 31;
-                if (!(var12 !== var23)) {
-                    _fun38237_ip = 364;
-                    continue _fun38237
-                }
-            case 194:
-                var12 = 'No flash function';
-                var13 = 32;
-                if (!(var13 !== var23)) {
-                    _fun38237_ip = 361;
-                    continue _fun38237
-                }
-            case 210:
-                var13 = 'Flash fired, red-eye reduction mode';
-                var14 = 65;
-                if (!(var14 !== var23)) {
-                    _fun38237_ip = 358;
-                    continue _fun38237
-                }
-            case 226:
-                var14 = 'Flash fired, red-eye reduction mode, return light not detected';
-                var15 = 69;
-                if (!(var15 !== var23)) {
-                    _fun38237_ip = 355;
-                    continue _fun38237
-                }
-            case 239:
-                var15 = 'Flash fired, red-eye reduction mode, return light detected';
-                var16 = 71;
-                if (!(var16 !== var23)) {
-                    _fun38237_ip = 352;
-                    continue _fun38237
-                }
-            case 252:
-                var16 = 'Flash fired, compulsory flash mode, red-eye reduction mode';
-                var17 = 73;
-                if (!(var17 !== var23)) {
-                    _fun38237_ip = 349;
-                    continue _fun38237
-                }
-            case 265:
-                var17 = 'Flash fired, compulsory flash mode, red-eye reduction mode, return light not detected';
-                var18 = 77;
-                if (!(var18 !== var23)) {
-                    _fun38237_ip = 346;
-                    continue _fun38237
-                }
-            case 278:
-                var18 = 'Flash fired, compulsory flash mode, red-eye reduction mode, return light detected';
-                var19 = 79;
-                if (!(var19 !== var23)) {
-                    _fun38237_ip = 343;
-                    continue _fun38237
-                }
-            case 291:
-                var19 = 'Flash fired, auto mode, red-eye reduction mode';
-                var20 = 89;
-                if (!(var20 !== var23)) {
-                    _fun38237_ip = 340;
-                    continue _fun38237
-                }
-            case 304:
-                var20 = 'Flash fired, auto mode, return light not detected, red-eye reduction mode';
-                var21 = 93;
-                if (!(var21 !== var23)) {
-                    _fun38237_ip = 337;
-                    continue _fun38237
-                }
-            case 317:
-                var21 = 'Unknown';
-                var22 = 95;
-                if (!(var22 === var23)) {
-                    _fun38237_ip = 334;
-                    continue _fun38237
-                }
-            case 328:
-                var21 = 'Flash fired, auto mode, return light detected, red-eye reduction mode';
-            case 334:
-                var20 = var21;
-            case 337:
-                var19 = var20;
-            case 340:
-                var18 = var19;
-            case 343:
-                var17 = var18;
-            case 346:
-                var16 = var17;
-            case 349:
-                var15 = var16;
-            case 352:
-                var14 = var15;
-            case 355:
-                var13 = var14;
-            case 358:
-                var12 = var13;
-            case 361:
-                var11 = var12;
-            case 364:
-                var10 = var11;
-            case 367:
-                var9 = var10;
-            case 370:
-                var8 = var9;
-            case 373:
-                var7 = var8;
-            case 376:
-                var6 = var7;
-            case 379:
-                var5 = var6;
-            case 382:
-                var4 = var5;
-            case 385:
-                var3 = var4;
-            case 388:
-                var2 = var3;
-            case 391:
-                var1 = var2;
-            case 394:
-                var0 = var1;
-            case 397:
-                return var0;
-        }
-    };
-    var3.description = var8;
-    var1[37385] = var3;
-    var3 = {};
-    var8 = 'FocalLength';
-    var3.name = var8;
-    var8 = var7[var5];
-    var8 = var6.bind(var0)(var8);
-    var8 = var8.FocalLength;
-    var3.description = var8;
-    var1[37386] = var3;
-    var3 = {};
-    var8 = 'SecurityClassification';
-    var3.name = var8;
-    var8 = function arg0() {
-        _fun38238: for (var _fun38238_ip = 0;;) switch (_fun38238_ip) {
-            case 0:
-                var1 = {
-                    'C': 'Confidential',
-                    'R': 'Restricted',
-                    'S': 'Secret',
-                    'T': 'Top Secret',
-                    'U': 'Unclassified'
-                };
-                var0 = arg0;
-                var0 = var1[var0];
-                if (var0) {
-                    _fun38238_ip = 28;
-                    continue _fun38238
-                }
-            case 24:
-                var0 = 'Unknown';
-            case 28:
-                return var0;
-        }
-    };
-    var3.description = var8;
-    var1[37394] = var3;
-    var3 = {};
-    var8 = 'SubjectArea';
-    var3.name = var8;
-    var8 = function arg0() {
-        _fun38239: for (var _fun38239_ip = 0;;) switch (_fun38239_ip) {
-            case 0:
-                var2 = arg0;
-                var0 = var2.length;
-                var1 = 2;
-                if (!(var1 !== var0)) {
-                    _fun38239_ip = 164;
-                    continue _fun38239
-                }
-            case 18:
-                var0 = var2.length;
-                var3 = 3;
-                if (!(var3 !== var0)) {
-                    _fun38239_ip = 110;
-                    continue _fun38239
-                }
-            case 30:
-                var5 = var2.length;
-                var0 = 'Unknown';
-                var4 = 4;
-                if (!(var4 === var5)) {
-                    _fun38239_ip = 108;
-                    continue _fun38239
-                }
-            case 46:
-                var4 = 0;
-                var18 = var2[var4];
-                var4 = 1;
-                var16 = var2[var4];
-                var14 = var2[var1];
-                var12 = var2[var3];
-                var3 = global;
-                var3 = var3.HermesInternal;
-                var7 = var3.concat;
-                var19 = 'Rectangle; X: ';
-                var17 = ', Y: ';
-                var15 = ', width: ';
-                var13 = ', height: ';
-                var0 = var19[var7](var18, var17, var16, var15, var14, var13, var12, var11);
-            case 108:
-                _fun38239_ip = 162;
-                continue _fun38239;
-            case 110:
-                var3 = 0;
-                var18 = var2[var3];
-                var3 = 1;
-                var16 = var2[var3];
-                var14 = var2[var1];
-                var1 = global;
-                var1 = var1.HermesInternal;
-                var5 = var1.concat;
-                var19 = 'Circle; X: ';
-                var17 = ', Y: ';
-                var15 = ', diameter: ';
-                var0 = var19[var5](var18, var17, var16, var15, var14, var13);
-            case 162:
-                _fun38239_ip = 209;
-                continue _fun38239;
-            case 164:
-                var1 = 0;
-                var5 = var2[var1];
+                var3 = arg0;
+                var0 = 'sRGB';
                 var1 = 1;
-                var4 = var2[var1];
-                var1 = global;
-                var1 = var1.HermesInternal;
-                var3 = var1.concat;
-                var2 = 'Location; X: ';
-                var1 = ', Y: ';
-                var0 = var3.bind(var2)(var5, var1, var4);
-            case 209:
+                if (!(var1 !== var3)) {
+                    _fun38209_ip = 37;
+                    continue _fun38209
+                }
+            case 14:
+                var1 = 'Unknown';
+                var2 = 65535;
+                if (!(var2 === var3)) {
+                    _fun38209_ip = 34;
+                    continue _fun38209
+                }
+            case 28:
+                var1 = 'Uncalibrated';
+            case 34:
+                var0 = var1;
+            case 37:
                 return var0;
         }
     };
-    var3.description = var8;
-    var1[37396] = var3;
-    var3 = {};
-    var8 = 'MakerNote';
-    var3.name = var8;
-    var8 = function() {
-        var0 = '[Raw maker note data]';
-        return var0;
-    };
-    var3.description = var8;
-    var1[37500] = var3;
-    var3 = {};
-    var8 = 'UserComment';
-    var3.name = var8;
-    var8 = 2;
-    var8 = var7[var8];
-    var8 = var9.bind(var0)(var8);
-    var8 = var8.getEncodedString;
-    var3.description = var8;
-    var1[37510] = var3;
-    var3 = {};
-    var8 = 'AmbientTemperature';
-    var3.name = var8;
-    var8 = function arg0() {
-        var2 = arg0;
-        var0 = 0;
-        var1 = var2[var0];
-        var0 = 1;
-        var0 = var2[var0];
-        var1 = var1 / var0;
-        var0 = ' °C';
-        var0 = var1 + var0;
-        return var0;
-    };
-    var3.description = var8;
-    var1[37888] = var3;
-    var3 = {};
-    var8 = 'Humidity';
-    var3.name = var8;
-    var8 = function arg0() {
-        var2 = arg0;
-        var0 = 0;
-        var1 = var2[var0];
-        var0 = 1;
-        var0 = var2[var0];
-        var1 = var1 / var0;
-        var0 = ' %';
-        var0 = var1 + var0;
-        return var0;
-    };
-    var3.description = var8;
-    var1[37889] = var3;
-    var3 = {};
-    var8 = 'Pressure';
-    var3.name = var8;
-    var8 = function arg0() {
-        var2 = arg0;
-        var0 = 0;
-        var1 = var2[var0];
-        var0 = 1;
-        var0 = var2[var0];
-        var1 = var1 / var0;
-        var0 = ' hPa';
-        var0 = var1 + var0;
-        return var0;
-    };
-    var3.description = var8;
-    var1[37890] = var3;
-    var3 = {};
-    var8 = 'WaterDepth';
-    var3.name = var8;
-    var8 = function arg0() {
-        var2 = arg0;
-        var0 = 0;
-        var1 = var2[var0];
-        var0 = 1;
-        var0 = var2[var0];
-        var1 = var1 / var0;
-        var0 = ' m';
-        var0 = var1 + var0;
-        return var0;
-    };
-    var3.description = var8;
-    var1[37891] = var3;
-    var3 = {};
-    var8 = 'Acceleration';
-    var3.name = var8;
-    var8 = function arg0() {
-        var2 = arg0;
-        var0 = 0;
-        var1 = var2[var0];
-        var0 = 1;
-        var0 = var2[var0];
-        var1 = var1 / var0;
-        var0 = ' mGal';
-        var0 = var1 + var0;
-        return var0;
-    };
-    var3.description = var8;
-    var1[37892] = var3;
-    var3 = {};
-    var8 = 'CameraElevationAngle';
-    var3.name = var8;
-    var8 = function arg0() {
-        var2 = arg0;
-        var0 = 0;
-        var1 = var2[var0];
-        var0 = 1;
-        var0 = var2[var0];
-        var1 = var1 / var0;
-        var0 = ' °';
-        var0 = var1 + var0;
-        return var0;
-    };
-    var3.description = var8;
-    var1[37893] = var3;
-    var3 = {};
-    var8 = 'FlashpixVersion';
-    var3.name = var8;
-    var8 = function arg0() {
+    var0.ColorSpace = var3;
+    var3 = function arg0() {
         var2 = arg0;
         var1 = var2.map;
         var0 = function(arg0) { // Environment: var0
-            var0 = global;
-            var2 = var0.String;
-            var1 = var2.fromCharCode;
-            var0 = arg0;
-            var0 = var1.bind(var2)(var0);
-            return var0;
+            _fun38211: for (var _fun38211_ip = 0;;) switch (_fun38211_ip) {
+                case 0:
+                    var7 = arg0;
+                    var0 = 'Y';
+                    var1 = 49;
+                    if (!(var1 !== var7)) {
+                        _fun38211_ip = 90;
+                        continue _fun38211
+                    }
+                case 14:
+                    var1 = 'Cb';
+                    var2 = 50;
+                    if (!(var2 !== var7)) {
+                        _fun38211_ip = 87;
+                        continue _fun38211
+                    }
+                case 27:
+                    var2 = 'Cr';
+                    var3 = 51;
+                    if (!(var3 !== var7)) {
+                        _fun38211_ip = 84;
+                        continue _fun38211
+                    }
+                case 40:
+                    var3 = 'R';
+                    var4 = 52;
+                    if (!(var4 !== var7)) {
+                        _fun38211_ip = 81;
+                        continue _fun38211
+                    }
+                case 51:
+                    var4 = 'G';
+                    var5 = 53;
+                    if (!(var5 !== var7)) {
+                        _fun38211_ip = 78;
+                        continue _fun38211
+                    }
+                case 62:
+                    var6 = 54;
+                    var5 = undefined;
+                    if (!(var6 === var7)) {
+                        _fun38211_ip = 75;
+                        continue _fun38211
+                    }
+                case 71:
+                    var5 = 'B';
+                case 75:
+                    var4 = var5;
+                case 78:
+                    var3 = var4;
+                case 81:
+                    var2 = var3;
+                case 84:
+                    var1 = var2;
+                case 87:
+                    var0 = var1;
+                case 90:
+                    return var0;
+            }
         };
         var2 = var1.bind(var2)(var0);
         var1 = var2.join;
@@ -696,367 +126,326 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = var1.bind(var2)(var0);
         return var0;
     };
-    var3.description = var8;
-    var1[40960] = var3;
-    var3 = {};
-    var8 = 'ColorSpace';
-    var3.name = var8;
-    var8 = var7[var5];
-    var8 = var6.bind(var0)(var8);
-    var8 = var8.ColorSpace;
-    var3.description = var8;
-    var1[40961] = var3;
-    var3 = {};
-    var8 = 'SpatialFrequencyResponse';
-    var3.name = var8;
-    var8 = function() {
-        var0 = '[Raw SFR table data]';
-        return var0;
-    };
-    var3.description = var8;
-    var1[41484] = var3;
-    var3 = {};
-    var8 = 'FocalPlaneResolutionUnit';
-    var3.name = var8;
-    var8 = var7[var5];
-    var8 = var6.bind(var0)(var8);
-    var8 = var8.FocalPlaneResolutionUnit;
-    var3.description = var8;
-    var1[41488] = var3;
-    var3 = {};
-    var8 = 'SubjectLocation';
-    var3.name = var8;
-    var8 = function arg0() {
-        var3 = _closure1_slot2;
-        var2 = undefined;
-        var1 = arg0;
-        var0 = 2;
-        var1 = var3.bind(var2)(var1, var0);
-        var0 = 0;
-        var4 = var1[var0];
-        var0 = 1;
-        var3 = var1[var0];
-        var0 = global;
-        var0 = var0.HermesInternal;
-        var2 = var0.concat;
-        var1 = 'X: ';
-        var0 = ', Y: ';
-        var0 = var2.bind(var1)(var4, var0, var3);
-        return var0;
-    };
-    var3.description = var8;
-    var1[41492] = var3;
-    var3 = {};
-    var8 = 'SensingMethod';
-    var3.name = var8;
-    var8 = function arg0() {
-        _fun38251: for (var _fun38251_ip = 0;;) switch (_fun38251_ip) {
-            case 0:
-                var8 = arg0;
-                var0 = 'Undefined';
-                var1 = 1;
-                if (!(var1 !== var8)) {
-                    _fun38251_ip = 116;
-                    continue _fun38251
-                }
-            case 16:
-                var1 = 'One-chip color area sensor';
-                var2 = 2;
-                if (!(var2 !== var8)) {
-                    _fun38251_ip = 113;
-                    continue _fun38251
-                }
-            case 29:
-                var2 = 'Two-chip color area sensor';
-                var3 = 3;
-                if (!(var3 !== var8)) {
-                    _fun38251_ip = 110;
-                    continue _fun38251
-                }
-            case 42:
-                var3 = 'Three-chip color area sensor';
-                var4 = 4;
-                if (!(var4 !== var8)) {
-                    _fun38251_ip = 107;
-                    continue _fun38251
-                }
-            case 55:
-                var4 = 'Color sequential area sensor';
-                var5 = 5;
-                if (!(var5 !== var8)) {
-                    _fun38251_ip = 104;
-                    continue _fun38251
-                }
-            case 68:
-                var5 = 'Trilinear sensor';
-                var6 = 7;
-                if (!(var6 !== var8)) {
-                    _fun38251_ip = 101;
-                    continue _fun38251
-                }
-            case 81:
-                var6 = 'Unknown';
-                var7 = 8;
-                if (!(var7 === var8)) {
-                    _fun38251_ip = 98;
-                    continue _fun38251
-                }
-            case 92:
-                var6 = 'Color sequential linear sensor';
-            case 98:
-                var5 = var6;
-            case 101:
-                var4 = var5;
-            case 104:
-                var3 = var4;
-            case 107:
-                var2 = var3;
-            case 110:
-                var1 = var2;
-            case 113:
-                var0 = var1;
-            case 116:
-                return var0;
-        }
-    };
-    var3.description = var8;
-    var1[41495] = var3;
-    var3 = {};
-    var8 = 'FileSource';
-    var3.name = var8;
-    var8 = function arg0() {
-        _fun38252: for (var _fun38252_ip = 0;;) switch (_fun38252_ip) {
-            case 0:
-                var0 = 'Unknown';
-                var2 = 3;
-                var1 = arg0;
-                if (!(var2 === var1)) {
-                    _fun38252_ip = 20;
-                    continue _fun38252
-                }
-            case 14:
-                var0 = 'DSC';
-            case 20:
-                return var0;
-        }
-    };
-    var3.description = var8;
-    var1[41728] = var3;
-    var3 = {};
-    var8 = 'SceneType';
-    var3.name = var8;
-    var8 = function arg0() {
-        _fun38253: for (var _fun38253_ip = 0;;) switch (_fun38253_ip) {
-            case 0:
-                var0 = 'Unknown';
-                var2 = 1;
-                var1 = arg0;
-                if (!(var2 === var1)) {
-                    _fun38253_ip = 20;
-                    continue _fun38253
-                }
-            case 14:
-                var0 = 'A directly photographed image';
-            case 20:
-                return var0;
-        }
-    };
-    var3.description = var8;
-    var1[41729] = var3;
-    var3 = {};
-    var8 = 'CFAPattern';
-    var3.name = var8;
-    var8 = function() {
-        var0 = '[Raw CFA pattern table data]';
-        return var0;
-    };
-    var3.description = var8;
-    var1[41730] = var3;
-    var3 = {};
-    var8 = 'CustomRendered';
-    var3.name = var8;
-    var8 = var7[var5];
-    var8 = var6.bind(var0)(var8);
-    var8 = var8.CustomRendered;
-    var3.description = var8;
-    var1[41985] = var3;
-    var3 = {};
-    var8 = 'ExposureMode';
-    var3.name = var8;
-    var8 = var7[var5];
-    var8 = var6.bind(var0)(var8);
-    var8 = var8.ExposureMode;
-    var3.description = var8;
-    var1[41986] = var3;
-    var3 = {};
-    var8 = 'WhiteBalance';
-    var3.name = var8;
-    var8 = var7[var5];
-    var8 = var6.bind(var0)(var8);
-    var8 = var8.WhiteBalance;
-    var3.description = var8;
-    var1[41987] = var3;
-    var3 = {};
-    var8 = 'DigitalZoomRatio';
-    var3.name = var8;
-    var8 = function arg0() {
-        _fun38255: for (var _fun38255_ip = 0;;) switch (_fun38255_ip) {
-            case 0:
-                var3 = arg0;
-                var1 = 0;
-                var2 = var3[var1];
-                var0 = 'Digital zoom was not used';
-                if (!(var1 !== var2)) {
-                    _fun38255_ip = 37;
-                    continue _fun38255
-                }
-            case 19:
-                var2 = var3[var1];
-                var1 = 1;
-                var1 = var3[var1];
-                var1 = var2 / var1;
-                var0 = '' + var1;
-            case 37:
-                return var0;
-        }
-    };
-    var3.description = var8;
-    var1[41988] = var3;
-    var3 = {};
-    var8 = 'FocalLengthIn35mmFilm';
-    var3.name = var8;
-    var8 = var7[var5];
-    var8 = var6.bind(var0)(var8);
-    var8 = var8.FocalLengthIn35mmFilm;
-    var3.description = var8;
-    var1[41989] = var3;
-    var3 = {};
-    var8 = 'SceneCaptureType';
-    var3.name = var8;
-    var8 = var7[var5];
-    var8 = var6.bind(var0)(var8);
-    var8 = var8.SceneCaptureType;
-    var3.description = var8;
-    var1[41990] = var3;
-    var3 = {};
-    var8 = 'GainControl';
-    var3.name = var8;
-    var8 = function arg0() {
-        _fun38256: for (var _fun38256_ip = 0;;) switch (_fun38256_ip) {
-            case 0:
-                var6 = arg0;
-                var0 = 'None';
-                var1 = 0;
-                if (!(var1 !== var6)) {
-                    _fun38256_ip = 81;
-                    continue _fun38256
-                }
-            case 13:
-                var1 = 'Low gain up';
-                var2 = 1;
-                if (!(var2 !== var6)) {
-                    _fun38256_ip = 78;
-                    continue _fun38256
-                }
-            case 26:
-                var2 = 'High gain up';
-                var3 = 2;
-                if (!(var3 !== var6)) {
-                    _fun38256_ip = 75;
-                    continue _fun38256
-                }
-            case 39:
-                var3 = 'Low gain down';
-                var4 = 3;
-                if (!(var4 !== var6)) {
-                    _fun38256_ip = 72;
-                    continue _fun38256
-                }
-            case 52:
-                var4 = 'Unknown';
-                var5 = 4;
-                if (!(var5 === var6)) {
-                    _fun38256_ip = 69;
-                    continue _fun38256
-                }
-            case 63:
-                var4 = 'High gain down';
-            case 69:
-                var3 = var4;
-            case 72:
-                var2 = var3;
-            case 75:
-                var1 = var2;
-            case 78:
-                var0 = var1;
-            case 81:
-                return var0;
-        }
-    };
-    var3.description = var8;
-    var1[41991] = var3;
-    var3 = {};
-    var8 = 'Contrast';
-    var3.name = var8;
-    var8 = var7[var5];
-    var8 = var6.bind(var0)(var8);
-    var8 = var8.Contrast;
-    var3.description = var8;
-    var1[41992] = var3;
-    var3 = {};
-    var8 = 'Saturation';
-    var3.name = var8;
-    var8 = var7[var5];
-    var8 = var6.bind(var0)(var8);
-    var8 = var8.Saturation;
-    var3.description = var8;
-    var1[41993] = var3;
-    var3 = {};
-    var8 = 'Sharpness';
-    var3.name = var8;
-    var5 = var7[var5];
-    var5 = var6.bind(var0)(var5);
-    var5 = var5.Sharpness;
-    var3.description = var5;
-    var1[41994] = var3;
-    var3 = {};
-    var5 = 'DeviceSettingDescription';
-    var3.name = var5;
-    var5 = function() {
-        var0 = '[Raw device settings table data]';
-        return var0;
-    };
-    var3.description = var5;
-    var1[41995] = var3;
-    var3 = {};
-    var5 = 'SubjectDistanceRange';
-    var3.name = var5;
-    var5 = function arg0() {
-        _fun38258: for (var _fun38258_ip = 0;;) switch (_fun38258_ip) {
+    var0.ComponentsConfiguration = var3;
+    var3 = function arg0() {
+        _fun38212: for (var _fun38212_ip = 0;;) switch (_fun38212_ip) {
             case 0:
                 var4 = arg0;
-                var0 = 'Macro';
-                var1 = 1;
+                var0 = 'Normal';
+                var1 = 0;
                 if (!(var1 !== var4)) {
-                    _fun38258_ip = 52;
-                    continue _fun38258
+                    _fun38212_ip = 51;
+                    continue _fun38212
+                }
+            case 15:
+                var1 = 'Soft';
+                var2 = 1;
+                if (!(var2 !== var4)) {
+                    _fun38212_ip = 48;
+                    continue _fun38212
+                }
+            case 28:
+                var2 = 'Unknown';
+                var3 = 2;
+                if (!(var3 === var4)) {
+                    _fun38212_ip = 45;
+                    continue _fun38212
+                }
+            case 39:
+                var2 = 'Hard';
+            case 45:
+                var1 = var2;
+            case 48:
+                var0 = var1;
+            case 51:
+                return var0;
+        }
+    };
+    var0.Contrast = var3;
+    var3 = function arg0() {
+        _fun38213: for (var _fun38213_ip = 0;;) switch (_fun38213_ip) {
+            case 0:
+                var3 = arg0;
+                var0 = 'Normal process';
+                var1 = 0;
+                if (!(var1 !== var3)) {
+                    _fun38213_ip = 35;
+                    continue _fun38213
+                }
+            case 15:
+                var1 = 'Unknown';
+                var2 = 1;
+                if (!(var2 === var3)) {
+                    _fun38213_ip = 32;
+                    continue _fun38213
+                }
+            case 26:
+                var1 = 'Custom process';
+            case 32:
+                var0 = var1;
+            case 35:
+                return var0;
+        }
+    };
+    var0.CustomRendered = var3;
+    var3 = function arg0() {
+        _fun38214: for (var _fun38214_ip = 0;;) switch (_fun38214_ip) {
+            case 0:
+                var4 = arg0;
+                var0 = 'Auto exposure';
+                var1 = 0;
+                if (!(var1 !== var4)) {
+                    _fun38214_ip = 51;
+                    continue _fun38214
+                }
+            case 15:
+                var1 = 'Manual exposure';
+                var2 = 1;
+                if (!(var2 !== var4)) {
+                    _fun38214_ip = 48;
+                    continue _fun38214
+                }
+            case 28:
+                var2 = 'Unknown';
+                var3 = 2;
+                if (!(var3 === var4)) {
+                    _fun38214_ip = 45;
+                    continue _fun38214
+                }
+            case 39:
+                var2 = 'Auto bracket';
+            case 45:
+                var1 = var2;
+            case 48:
+                var0 = var1;
+            case 51:
+                return var0;
+        }
+    };
+    var0.ExposureMode = var3;
+    var3 = function arg0() {
+        _fun38215: for (var _fun38215_ip = 0;;) switch (_fun38215_ip) {
+            case 0:
+                var11 = arg0;
+                var0 = 'Undefined';
+                var1 = 0;
+                if (!(var1 !== var11)) {
+                    _fun38215_ip = 167;
+                    continue _fun38215
+                }
+            case 18:
+                var1 = 'Manual';
+                var2 = 1;
+                if (!(var2 !== var11)) {
+                    _fun38215_ip = 164;
+                    continue _fun38215
+                }
+            case 32:
+                var2 = 'Normal program';
+                var3 = 2;
+                if (!(var3 !== var11)) {
+                    _fun38215_ip = 161;
+                    continue _fun38215
+                }
+            case 45:
+                var3 = 'Aperture priority';
+                var4 = 3;
+                if (!(var4 !== var11)) {
+                    _fun38215_ip = 158;
+                    continue _fun38215
+                }
+            case 58:
+                var4 = 'Shutter priority';
+                var5 = 4;
+                if (!(var5 !== var11)) {
+                    _fun38215_ip = 155;
+                    continue _fun38215
+                }
+            case 71:
+                var5 = 'Creative program';
+                var6 = 5;
+                if (!(var6 !== var11)) {
+                    _fun38215_ip = 152;
+                    continue _fun38215
+                }
+            case 84:
+                var6 = 'Action program';
+                var7 = 6;
+                if (!(var7 !== var11)) {
+                    _fun38215_ip = 149;
+                    continue _fun38215
+                }
+            case 97:
+                var7 = 'Portrait mode';
+                var8 = 7;
+                if (!(var8 !== var11)) {
+                    _fun38215_ip = 146;
+                    continue _fun38215
+                }
+            case 110:
+                var8 = 'Landscape mode';
+                var9 = 8;
+                if (!(var9 !== var11)) {
+                    _fun38215_ip = 143;
+                    continue _fun38215
+                }
+            case 123:
+                var9 = 'Unknown';
+                var10 = 9;
+                if (!(var10 === var11)) {
+                    _fun38215_ip = 140;
+                    continue _fun38215
+                }
+            case 134:
+                var9 = 'Bulb';
+            case 140:
+                var8 = var9;
+            case 143:
+                var7 = var8;
+            case 146:
+                var6 = var7;
+            case 149:
+                var5 = var6;
+            case 152:
+                var4 = var5;
+            case 155:
+                var3 = var4;
+            case 158:
+                var2 = var3;
+            case 161:
+                var1 = var2;
+            case 164:
+                var0 = var1;
+            case 167:
+                return var0;
+        }
+    };
+    var0.ExposureProgram = var3;
+    var3 = function arg0() {
+        _fun38216: for (var _fun38216_ip = 0;;) switch (_fun38216_ip) {
+            case 0:
+                var0 = arg0;
+                var1 = 0;
+                var4 = var0[var1];
+                var2 = 1;
+                var3 = var0[var2];
+                var4 = var4 / var3;
+                var3 = 0.25;
+                if (!(!(var4 > var3))) {
+                    _fun38216_ip = 126;
+                    continue _fun38216
+                }
+            case 34:
+                var3 = var0[var1];
+                if (!(var1 === var3)) {
+                    _fun38216_ip = 72;
+                    continue _fun38216
+                }
+            case 42:
+                var5 = var0[var2];
+                var3 = global;
+                var3 = var3.HermesInternal;
+                var4 = var3.concat;
+                var3 = '0/';
+                var3 = var4.bind(var3)(var5);
+                _fun38216_ip = 124;
+                continue _fun38216;
+            case 72:
+                var4 = global;
+                var7 = var4.Math;
+                var6 = var7.round;
+                var8 = var0[var2];
+                var5 = var0[var1];
+                var5 = var8 / var5;
+                var6 = var6.bind(var7)(var5);
+                var4 = var4.HermesInternal;
+                var5 = var4.concat;
+                var4 = '1/';
+                var3 = var5.bind(var4)(var6);
+            case 124:
+                return var3;
+            case 126:
+                var1 = var0[var1];
+                var0 = var0[var2];
+                var1 = var1 / var0;
+                var0 = global;
+                var3 = var0.Number;
+                var0 = var3.isInteger;
+                var0 = var0.bind(var3)(var1);
+                if (var0) {
+                    _fun38216_ip = 173;
+                    continue _fun38216
+                }
+            case 160:
+                var0 = var1.toFixed;
+                var0 = var0.bind(var1)(var2);
+                _fun38216_ip = 176;
+                continue _fun38216;
+            case 173:
+                var0 = '' + var1;
+            case 176:
+                return var0;
+        }
+    };
+    var0.ExposureTime = var3;
+    var3 = function arg0() {
+        var1 = arg0;
+        var0 = global;
+        var4 = var0.Number;
+        var2 = 0;
+        var2 = var1[var2];
+        var3 = 1;
+        var1 = var1[var3];
+        var2 = var2 / var1;
+        var1 = undefined;
+        var2 = var4.bind(var1)(var2);
+        var1 = var2.toFixed;
+        var2 = var1.bind(var2)(var3);
+        var0 = var0.HermesInternal;
+        var1 = var0.concat;
+        var0 = 'f/';
+        var0 = var1.bind(var0)(var2);
+        return var0;
+    };
+    var0.FNumber = var3;
+    var3 = function arg0() {
+        var2 = arg0;
+        var0 = 0;
+        var1 = var2[var0];
+        var0 = 1;
+        var0 = var2[var0];
+        var1 = var1 / var0;
+        var0 = ' mm';
+        var0 = var1 + var0;
+        return var0;
+    };
+    var0.FocalLength = var3;
+    var3 = function arg0() {
+        _fun38219: for (var _fun38219_ip = 0;;) switch (_fun38219_ip) {
+            case 0:
+                var4 = arg0;
+                var0 = 'inches';
+                var1 = 2;
+                if (!(var1 !== var4)) {
+                    _fun38219_ip = 52;
+                    continue _fun38219
                 }
             case 16:
-                var1 = 'Close view';
-                var2 = 2;
+                var1 = 'centimeters';
+                var2 = 3;
                 if (!(var2 !== var4)) {
-                    _fun38258_ip = 49;
-                    continue _fun38258
+                    _fun38219_ip = 49;
+                    continue _fun38219
                 }
             case 29:
                 var2 = 'Unknown';
-                var3 = 3;
+                var3 = 4;
                 if (!(var3 === var4)) {
-                    _fun38258_ip = 46;
-                    continue _fun38258
+                    _fun38219_ip = 46;
+                    continue _fun38219
                 }
             case 40:
-                var2 = 'Distant view';
+                var2 = 'millimeters';
             case 46:
                 var1 = var2;
             case 49:
@@ -1065,111 +454,523 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
         }
     };
-    var3.description = var5;
-    var1[41996] = var3;
-    var3 = {};
-    var5 = 'LensSpecification';
-    var3.name = var5;
-    var5 = function arg0() {
-        _fun38259: for (var _fun38259_ip = 0;;) switch (_fun38259_ip) {
+    var0.FocalPlaneResolutionUnit = var3;
+    var3 = function arg0() {
+        _fun38220: for (var _fun38220_ip = 0;;) switch (_fun38220_ip) {
             case 0:
-                var9 = arg0;
-                var0 = global;
-                var2 = var0.parseFloat;
-                var10 = 0;
-                var1 = var9[var10];
-                var3 = var1[var10];
-                var1 = var9[var10];
-                var4 = 1;
-                var1 = var1[var4];
-                var3 = var3 / var1;
-                var1 = var3.toFixed;
-                var7 = 5;
-                var1 = var1.bind(var3)(var7);
-                var5 = undefined;
-                var11 = var2.bind(var5)(var1);
-                var2 = var0.parseFloat;
-                var1 = var9[var4];
-                var3 = var1[var10];
-                var1 = var9[var4];
-                var1 = var1[var4];
-                var3 = var3 / var1;
-                var1 = var3.toFixed;
-                var1 = var1.bind(var3)(var7);
-                var13 = var2.bind(var5)(var1);
-                var1 = var0.HermesInternal;
-                var6 = var1.concat;
-                var3 = '';
-                var14 = '-';
-                var12 = ' mm';
-                var16 = var3;
-                var15 = var11;
-                var2 = var16[var6](var15, var14, var13, var12, var11);
-                var1 = 3;
-                var6 = var9[var1];
-                var6 = var6[var4];
-                if (!(var10 !== var6)) {
-                    _fun38259_ip = 248;
-                    continue _fun38259
+                var21 = arg0;
+                var0 = 'Daylight';
+                var1 = 1;
+                if (!(var1 !== var21)) {
+                    _fun38220_ip = 360;
+                    continue _fun38220
                 }
-            case 149:
-                var6 = 2;
-                var8 = var9[var6];
-                var8 = var8[var4];
-                var6 = var9[var6];
-                var6 = var6[var4];
-                var6 = var8 / var6;
-                var8 = var9[var1];
-                var8 = var8[var10];
-                var1 = var9[var1];
-                var1 = var1[var4];
-                var1 = var8 / var1;
-                var1 = var6 / var1;
-                var6 = var4 / var1;
-                var4 = var0.parseFloat;
-                var1 = var6.toFixed;
-                var1 = var1.bind(var6)(var7);
-                var5 = var4.bind(var5)(var1);
-                var1 = var0.HermesInternal;
-                var4 = var1.concat;
-                var1 = ' f/';
-                var1 = var4.bind(var3)(var2, var1, var5);
-                return var1;
-            case 248:
-                var0 = var0.HermesInternal;
-                var1 = var0.concat;
-                var0 = ' f/?';
-                var0 = var1.bind(var3)(var2, var0);
+            case 19:
+                var1 = 'Fluorescent';
+                var2 = 2;
+                if (!(var2 !== var21)) {
+                    _fun38220_ip = 357;
+                    continue _fun38220
+                }
+            case 35:
+                var2 = 'Tungsten (incandescent light)';
+                var3 = 3;
+                if (!(var3 !== var21)) {
+                    _fun38220_ip = 354;
+                    continue _fun38220
+                }
+            case 51:
+                var3 = 'Flash';
+                var4 = 4;
+                if (!(var4 !== var21)) {
+                    _fun38220_ip = 351;
+                    continue _fun38220
+                }
+            case 67:
+                var4 = 'Fine weather';
+                var5 = 9;
+                if (!(var5 !== var21)) {
+                    _fun38220_ip = 348;
+                    continue _fun38220
+                }
+            case 83:
+                var5 = 'Cloudy weather';
+                var6 = 10;
+                if (!(var6 !== var21)) {
+                    _fun38220_ip = 345;
+                    continue _fun38220
+                }
+            case 99:
+                var6 = 'Shade';
+                var7 = 11;
+                if (!(var7 !== var21)) {
+                    _fun38220_ip = 342;
+                    continue _fun38220
+                }
+            case 115:
+                var7 = 'Daylight fluorescent (D 5700 – 7100K)';
+                var8 = 12;
+                if (!(var8 !== var21)) {
+                    _fun38220_ip = 339;
+                    continue _fun38220
+                }
+            case 131:
+                var8 = 'Day white fluorescent (N 4600 – 5400K)';
+                var9 = 13;
+                if (!(var9 !== var21)) {
+                    _fun38220_ip = 336;
+                    continue _fun38220
+                }
+            case 147:
+                var9 = 'Cool white fluorescent (W 3900 – 4500K)';
+                var10 = 14;
+                if (!(var10 !== var21)) {
+                    _fun38220_ip = 333;
+                    continue _fun38220
+                }
+            case 163:
+                var10 = 'White fluorescent (WW 3200 – 3700K)';
+                var11 = 15;
+                if (!(var11 !== var21)) {
+                    _fun38220_ip = 330;
+                    continue _fun38220
+                }
+            case 179:
+                var11 = 'Standard light A';
+                var12 = 17;
+                if (!(var12 !== var21)) {
+                    _fun38220_ip = 327;
+                    continue _fun38220
+                }
+            case 195:
+                var12 = 'Standard light B';
+                var13 = 18;
+                if (!(var13 !== var21)) {
+                    _fun38220_ip = 324;
+                    continue _fun38220
+                }
+            case 208:
+                var13 = 'Standard light C';
+                var14 = 19;
+                if (!(var14 !== var21)) {
+                    _fun38220_ip = 321;
+                    continue _fun38220
+                }
+            case 221:
+                var14 = 'D55';
+                var15 = 20;
+                if (!(var15 !== var21)) {
+                    _fun38220_ip = 318;
+                    continue _fun38220
+                }
+            case 234:
+                var15 = 'D65';
+                var16 = 21;
+                if (!(var16 !== var21)) {
+                    _fun38220_ip = 315;
+                    continue _fun38220
+                }
+            case 247:
+                var16 = 'D75';
+                var17 = 22;
+                if (!(var17 !== var21)) {
+                    _fun38220_ip = 312;
+                    continue _fun38220
+                }
+            case 260:
+                var17 = 'D50';
+                var18 = 23;
+                if (!(var18 !== var21)) {
+                    _fun38220_ip = 309;
+                    continue _fun38220
+                }
+            case 273:
+                var18 = 'ISO studio tungsten';
+                var19 = 24;
+                if (!(var19 !== var21)) {
+                    _fun38220_ip = 306;
+                    continue _fun38220
+                }
+            case 286:
+                var19 = 'Unknown';
+                var20 = 255;
+                if (!(var20 === var21)) {
+                    _fun38220_ip = 303;
+                    continue _fun38220
+                }
+            case 297:
+                var19 = 'Other light source';
+            case 303:
+                var18 = var19;
+            case 306:
+                var17 = var18;
+            case 309:
+                var16 = var17;
+            case 312:
+                var15 = var16;
+            case 315:
+                var14 = var15;
+            case 318:
+                var13 = var14;
+            case 321:
+                var12 = var13;
+            case 324:
+                var11 = var12;
+            case 327:
+                var10 = var11;
+            case 330:
+                var9 = var10;
+            case 333:
+                var8 = var9;
+            case 336:
+                var7 = var8;
+            case 339:
+                var6 = var7;
+            case 342:
+                var5 = var6;
+            case 345:
+                var4 = var5;
+            case 348:
+                var3 = var4;
+            case 351:
+                var2 = var3;
+            case 354:
+                var1 = var2;
+            case 357:
+                var0 = var1;
+            case 360:
                 return var0;
         }
     };
-    var3.description = var5;
-    var1[42034] = var3;
-    var3 = {};
-    var5 = 'CompositeImage';
-    var3.name = var5;
-    var4 = function arg0() {
-        _fun38260: for (var _fun38260_ip = 0;;) switch (_fun38260_ip) {
+    var0.LightSource = var3;
+    var3 = function arg0() {
+        _fun38221: for (var _fun38221_ip = 0;;) switch (_fun38221_ip) {
             case 0:
-                var1 = {
-                    1: 'Not a Composite Image',
-                    2: 'General Composite Image',
-                    3: 'Composite Image Captured While Shooting'
-                };
-                var0 = arg0;
-                var0 = var1[var0];
-                if (var0) {
-                    _fun38260_ip = 28;
-                    continue _fun38260
+                var8 = arg0;
+                var0 = 'Average';
+                var1 = 1;
+                if (!(var1 !== var8)) {
+                    _fun38221_ip = 114;
+                    continue _fun38221
                 }
-            case 24:
-                var0 = 'Unknown';
+            case 16:
+                var1 = 'CenterWeightedAverage';
+                var2 = 2;
+                if (!(var2 !== var8)) {
+                    _fun38221_ip = 111;
+                    continue _fun38221
+                }
+            case 29:
+                var2 = 'Spot';
+                var3 = 3;
+                if (!(var3 !== var8)) {
+                    _fun38221_ip = 108;
+                    continue _fun38221
+                }
+            case 42:
+                var3 = 'MultiSpot';
+                var4 = 4;
+                if (!(var4 !== var8)) {
+                    _fun38221_ip = 105;
+                    continue _fun38221
+                }
+            case 55:
+                var4 = 'Pattern';
+                var5 = 5;
+                if (!(var5 !== var8)) {
+                    _fun38221_ip = 102;
+                    continue _fun38221
+                }
+            case 66:
+                var5 = 'Partial';
+                var6 = 6;
+                if (!(var6 !== var8)) {
+                    _fun38221_ip = 99;
+                    continue _fun38221
+                }
+            case 79:
+                var6 = 'Unknown';
+                var7 = 255;
+                if (!(var7 === var8)) {
+                    _fun38221_ip = 96;
+                    continue _fun38221
+                }
+            case 90:
+                var6 = 'Other';
+            case 96:
+                var5 = var6;
+            case 99:
+                var4 = var5;
+            case 102:
+                var3 = var4;
+            case 105:
+                var2 = var3;
+            case 108:
+                var1 = var2;
+            case 111:
+                var0 = var1;
+            case 114:
+                return var0;
+        }
+    };
+    var0.MeteringMode = var3;
+    var3 = function arg0() {
+        _fun38222: for (var _fun38222_ip = 0;;) switch (_fun38222_ip) {
+            case 0:
+                var3 = arg0;
+                var0 = 'inches';
+                var1 = 2;
+                if (!(var1 !== var3)) {
+                    _fun38222_ip = 36;
+                    continue _fun38222
+                }
+            case 16:
+                var1 = 'Unknown';
+                var2 = 3;
+                if (!(var2 === var3)) {
+                    _fun38222_ip = 33;
+                    continue _fun38222
+                }
+            case 27:
+                var1 = 'centimeters';
+            case 33:
+                var0 = var1;
+            case 36:
+                return var0;
+        }
+    };
+    var0.ResolutionUnit = var3;
+    var3 = function arg0() {
+        _fun38223: for (var _fun38223_ip = 0;;) switch (_fun38223_ip) {
+            case 0:
+                var4 = arg0;
+                var0 = 'Normal';
+                var1 = 0;
+                if (!(var1 !== var4)) {
+                    _fun38223_ip = 51;
+                    continue _fun38223
+                }
+            case 15:
+                var1 = 'Low saturation';
+                var2 = 1;
+                if (!(var2 !== var4)) {
+                    _fun38223_ip = 48;
+                    continue _fun38223
+                }
             case 28:
+                var2 = 'Unknown';
+                var3 = 2;
+                if (!(var3 === var4)) {
+                    _fun38223_ip = 45;
+                    continue _fun38223
+                }
+            case 39:
+                var2 = 'High saturation';
+            case 45:
+                var1 = var2;
+            case 48:
+                var0 = var1;
+            case 51:
                 return var0;
         }
     };
-    var3.description = var4;
-    var1[42080] = var3;
-    var2.default = var1;
+    var0.Saturation = var3;
+    var3 = function arg0() {
+        _fun38224: for (var _fun38224_ip = 0;;) switch (_fun38224_ip) {
+            case 0:
+                var2 = arg0;
+                var0 = 'Unknown';
+                var1 = 0;
+                if (!(var1 !== var2)) {
+                    _fun38224_ip = 23;
+                    continue _fun38224
+                }
+            case 13:
+                var1 = ' mm';
+                var0 = var2 + var1;
+            case 23:
+                return var0;
+        }
+    };
+    var0.FocalLengthIn35mmFilm = var3;
+    var3 = function arg0() {
+        _fun38225: for (var _fun38225_ip = 0;;) switch (_fun38225_ip) {
+            case 0:
+                var5 = arg0;
+                var0 = 'Standard';
+                var1 = 0;
+                if (!(var1 !== var5)) {
+                    _fun38225_ip = 67;
+                    continue _fun38225
+                }
+            case 15:
+                var1 = 'Landscape';
+                var2 = 1;
+                if (!(var2 !== var5)) {
+                    _fun38225_ip = 64;
+                    continue _fun38225
+                }
+            case 28:
+                var2 = 'Portrait';
+                var3 = 2;
+                if (!(var3 !== var5)) {
+                    _fun38225_ip = 61;
+                    continue _fun38225
+                }
+            case 41:
+                var3 = 'Unknown';
+                var4 = 3;
+                if (!(var4 === var5)) {
+                    _fun38225_ip = 58;
+                    continue _fun38225
+                }
+            case 52:
+                var3 = 'Night scene';
+            case 58:
+                var2 = var3;
+            case 61:
+                var1 = var2;
+            case 64:
+                var0 = var1;
+            case 67:
+                return var0;
+        }
+    };
+    var0.SceneCaptureType = var3;
+    var3 = function arg0() {
+        _fun38226: for (var _fun38226_ip = 0;;) switch (_fun38226_ip) {
+            case 0:
+                var4 = arg0;
+                var0 = 'Normal';
+                var1 = 0;
+                if (!(var1 !== var4)) {
+                    _fun38226_ip = 51;
+                    continue _fun38226
+                }
+            case 15:
+                var1 = 'Soft';
+                var2 = 1;
+                if (!(var2 !== var4)) {
+                    _fun38226_ip = 48;
+                    continue _fun38226
+                }
+            case 28:
+                var2 = 'Unknown';
+                var3 = 2;
+                if (!(var3 === var4)) {
+                    _fun38226_ip = 45;
+                    continue _fun38226
+                }
+            case 39:
+                var2 = 'Hard';
+            case 45:
+                var1 = var2;
+            case 48:
+                var0 = var1;
+            case 51:
+                return var0;
+        }
+    };
+    var0.Sharpness = var3;
+    var3 = function arg0() {
+        _fun38227: for (var _fun38227_ip = 0;;) switch (_fun38227_ip) {
+            case 0:
+                var0 = arg0;
+                var1 = global;
+                var4 = var1.Math;
+                var3 = var4.pow;
+                var2 = 0;
+                var2 = var0[var2];
+                var5 = 1;
+                var0 = var0[var5];
+                var2 = var2 / var0;
+                var0 = 2;
+                var2 = var3.bind(var4)(var0, var2);
+                if (!(!(var2 <= var5))) {
+                    _fun38227_ip = 87;
+                    continue _fun38227
+                }
+            case 47:
+                var3 = var1.Math;
+                var0 = var3.round;
+                var4 = var0.bind(var3)(var2);
+                var0 = var1.HermesInternal;
+                var3 = var0.concat;
+                var0 = '1/';
+                var0 = var3.bind(var0)(var4);
+                _fun38227_ip = 127;
+                continue _fun38227;
+            case 87:
+                var4 = var1.Math;
+                var3 = var4.round;
+                var2 = var5 / var2;
+                var3 = var3.bind(var4)(var2);
+                var1 = var1.HermesInternal;
+                var2 = var1.concat;
+                var1 = '';
+                var0 = var2.bind(var1)(var3);
+            case 127:
+                return var0;
+        }
+    };
+    var0.ShutterSpeedValue = var3;
+    var3 = function arg0() {
+        _fun38228: for (var _fun38228_ip = 0;;) switch (_fun38228_ip) {
+            case 0:
+                var3 = arg0;
+                var0 = 'Auto white balance';
+                var1 = 0;
+                if (!(var1 !== var3)) {
+                    _fun38228_ip = 35;
+                    continue _fun38228
+                }
+            case 15:
+                var1 = 'Unknown';
+                var2 = 1;
+                if (!(var2 === var3)) {
+                    _fun38228_ip = 32;
+                    continue _fun38228
+                }
+            case 26:
+                var1 = 'Manual white balance';
+            case 32:
+                var0 = var1;
+            case 35:
+                return var0;
+        }
+    };
+    var0.WhiteBalance = var3;
+    var3 = function arg0() {
+        var4 = arg0;
+        var0 = global;
+        var2 = var0.Math;
+        var1 = var2.round;
+        var0 = 0;
+        var3 = var4[var0];
+        var0 = 1;
+        var0 = var4[var0];
+        var0 = var3 / var0;
+        var0 = var1.bind(var2)(var0);
+        var0 = '' + var0;
+        return var0;
+    };
+    var0.XResolution = var3;
+    var2 = function arg0() {
+        var4 = arg0;
+        var0 = global;
+        var2 = var0.Math;
+        var1 = var2.round;
+        var0 = 0;
+        var3 = var4[var0];
+        var0 = 1;
+        var0 = var4[var0];
+        var0 = var3 / var0;
+        var0 = var1.bind(var2)(var0);
+        var0 = '' + var0;
+        return var0;
+    };
+    var0.YResolution = var2;
+    var1.default = var0;
+    var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 4188, 4190]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

@@ -1,275 +1,351 @@
 package jk;
 
+import com.facebook.react.views.textinput.ReactEditTextInputConnectionWrapper;
+import hk.g;
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
+import nk.e;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a implements Cloneable {
+public final class a {
 
-    /* renamed from: i  reason: collision with root package name */
-    private static final int[] f30966i = new int[0];
+    /* renamed from: b  reason: collision with root package name */
+    private static final String[] f29922b = {"CTRL_PS", " ", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "CTRL_LL", "CTRL_ML", "CTRL_DL", "CTRL_BS"};
+
+    /* renamed from: c  reason: collision with root package name */
+    private static final String[] f29923c = {"CTRL_PS", " ", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "CTRL_US", "CTRL_ML", "CTRL_DL", "CTRL_BS"};
 
     /* renamed from: d  reason: collision with root package name */
-    private int[] f30967d;
+    private static final String[] f29924d = {"CTRL_PS", " ", "\u0001", "\u0002", "\u0003", "\u0004", "\u0005", "\u0006", "\u0007", "\b", "\t", ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, "\u000b", "\f", "\r", "\u001b", "\u001c", "\u001d", "\u001e", "\u001f", "@", "\\", "^", "_", "`", "|", "~", "\u007f", "CTRL_LL", "CTRL_UL", "CTRL_PL", "CTRL_BS"};
 
     /* renamed from: e  reason: collision with root package name */
-    private int f30968e;
+    private static final String[] f29925e = {"FLG(n)", "\r", "\r\n", ". ", ", ", ": ", "!", "\"", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "[", "]", "{", "}", "CTRL_UL"};
 
-    public a() {
-        this.f30968e = 0;
-        this.f30967d = f30966i;
-    }
+    /* renamed from: f  reason: collision with root package name */
+    private static final String[] f29926f = {"CTRL_PS", " ", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", ",", ".", "CTRL_UL", "CTRL_US"};
 
-    private void f(int i10) {
-        if (i10 > this.f30967d.length * 32) {
-            int[] p10 = p((int) Math.ceil(i10 / 0.75f));
-            int[] iArr = this.f30967d;
-            System.arraycopy(iArr, 0, p10, 0, iArr.length);
-            this.f30967d = p10;
-        }
-    }
+    /* renamed from: g  reason: collision with root package name */
+    private static final Charset f29927g = StandardCharsets.ISO_8859_1;
 
-    private static int[] p(int i10) {
-        return new int[(i10 + 31) / 32];
-    }
+    /* renamed from: a  reason: collision with root package name */
+    private ik.a f29928a;
 
-    public void a(boolean z10) {
-        f(this.f30968e + 1);
-        if (z10) {
-            int[] iArr = this.f30967d;
-            int i10 = this.f30968e;
-            int i11 = i10 / 32;
-            iArr[i11] = (1 << (i10 & 31)) | iArr[i11];
-        }
-        this.f30968e++;
-    }
+    /* JADX INFO: Access modifiers changed from: package-private */
+    /* renamed from: jk.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static /* synthetic */ class C0419a {
 
-    public void b(a aVar) {
-        int i10 = aVar.f30968e;
-        f(this.f30968e + i10);
-        for (int i11 = 0; i11 < i10; i11++) {
-            a(aVar.g(i11));
-        }
-    }
+        /* renamed from: a  reason: collision with root package name */
+        static final /* synthetic */ int[] f29929a;
 
-    public void c(int i10, int i11) {
-        if (i11 >= 0 && i11 <= 32) {
-            int i12 = this.f30968e;
-            f(i12 + i11);
-            for (int i13 = i11 - 1; i13 >= 0; i13--) {
-                if (((1 << i13) & i10) != 0) {
-                    int[] iArr = this.f30967d;
-                    int i14 = i12 / 32;
-                    iArr[i14] = iArr[i14] | (1 << (i12 & 31));
-                }
-                i12++;
+        static {
+            int[] iArr = new int[c.values().length];
+            f29929a = iArr;
+            try {
+                iArr[c.UPPER.ordinal()] = 1;
+            } catch (NoSuchFieldError unused) {
             }
-            this.f30968e = i12;
-            return;
+            try {
+                f29929a[c.LOWER.ordinal()] = 2;
+            } catch (NoSuchFieldError unused2) {
+            }
+            try {
+                f29929a[c.MIXED.ordinal()] = 3;
+            } catch (NoSuchFieldError unused3) {
+            }
+            try {
+                f29929a[c.PUNCT.ordinal()] = 4;
+            } catch (NoSuchFieldError unused4) {
+            }
+            try {
+                f29929a[c.DIGIT.ordinal()] = 5;
+            } catch (NoSuchFieldError unused5) {
+            }
         }
-        throw new IllegalArgumentException("Num bits must be between 0 and 32");
     }
 
-    public void d() {
-        int length = this.f30967d.length;
+    /* JADX INFO: Access modifiers changed from: package-private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class b {
+
+        /* renamed from: a  reason: collision with root package name */
+        private final boolean[] f29930a;
+
+        /* renamed from: b  reason: collision with root package name */
+        private final int f29931b;
+
+        /* renamed from: c  reason: collision with root package name */
+        private final int f29932c;
+
+        b(boolean[] zArr, int i10, int i11) {
+            this.f29930a = zArr;
+            this.f29931b = i10;
+            this.f29932c = i11;
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public enum c {
+        UPPER,
+        LOWER,
+        MIXED,
+        DIGIT,
+        PUNCT,
+        BINARY
+    }
+
+    static byte[] a(boolean[] zArr) {
+        int length = (zArr.length + 7) / 8;
+        byte[] bArr = new byte[length];
         for (int i10 = 0; i10 < length; i10++) {
-            this.f30967d[i10] = 0;
+            bArr[i10] = h(zArr, i10 * 8);
         }
+        return bArr;
     }
 
-    /* renamed from: e */
-    public a clone() {
-        return new a((int[]) this.f30967d.clone(), this.f30968e);
-    }
-
-    public boolean equals(Object obj) {
-        if (!(obj instanceof a)) {
-            return false;
-        }
-        a aVar = (a) obj;
-        if (this.f30968e != aVar.f30968e || !Arrays.equals(this.f30967d, aVar.f30967d)) {
-            return false;
-        }
-        return true;
-    }
-
-    public boolean g(int i10) {
-        if (((1 << (i10 & 31)) & this.f30967d[i10 / 32]) != 0) {
-            return true;
-        }
-        return false;
-    }
-
-    public int hashCode() {
-        return (this.f30968e * 31) + Arrays.hashCode(this.f30967d);
-    }
-
-    public int[] i() {
-        return this.f30967d;
-    }
-
-    public int j(int i10) {
-        int i11 = this.f30968e;
-        if (i10 >= i11) {
-            return i11;
-        }
-        int i12 = i10 / 32;
-        int i13 = (-(1 << (i10 & 31))) & this.f30967d[i12];
-        while (i13 == 0) {
-            i12++;
-            int[] iArr = this.f30967d;
-            if (i12 == iArr.length) {
-                return this.f30968e;
-            }
-            i13 = iArr[i12];
-        }
-        return Math.min((i12 * 32) + Integer.numberOfTrailingZeros(i13), this.f30968e);
-    }
-
-    public int k(int i10) {
-        int i11 = this.f30968e;
-        if (i10 >= i11) {
-            return i11;
-        }
-        int i12 = i10 / 32;
-        int i13 = (-(1 << (i10 & 31))) & (~this.f30967d[i12]);
-        while (i13 == 0) {
-            i12++;
-            int[] iArr = this.f30967d;
-            if (i12 == iArr.length) {
-                return this.f30968e;
-            }
-            i13 = ~iArr[i12];
-        }
-        return Math.min((i12 * 32) + Integer.numberOfTrailingZeros(i13), this.f30968e);
-    }
-
-    public int l() {
-        return this.f30968e;
-    }
-
-    public int m() {
-        return (this.f30968e + 7) / 8;
-    }
-
-    public boolean n(int i10, int i11, boolean z10) {
-        int i12;
-        if (i11 >= i10 && i10 >= 0 && i11 <= this.f30968e) {
-            if (i11 == i10) {
-                return true;
-            }
-            int i13 = i11 - 1;
-            int i14 = i10 / 32;
-            int i15 = i13 / 32;
-            for (int i16 = i14; i16 <= i15; i16++) {
-                int i17 = 31;
-                if (i16 > i14) {
-                    i12 = 0;
-                } else {
-                    i12 = i10 & 31;
-                }
-                if (i16 >= i15) {
-                    i17 = 31 & i13;
-                }
-                int i18 = (2 << i17) - (1 << i12);
-                int i19 = this.f30967d[i16] & i18;
-                if (!z10) {
-                    i18 = 0;
-                }
-                if (i19 != i18) {
-                    return false;
-                }
-            }
-            return true;
-        }
-        throw new IllegalArgumentException();
-    }
-
-    public void q() {
-        int[] iArr = new int[this.f30967d.length];
-        int i10 = (this.f30968e - 1) / 32;
-        int i11 = i10 + 1;
-        for (int i12 = 0; i12 < i11; i12++) {
-            iArr[i10 - i12] = Integer.reverse(this.f30967d[i12]);
-        }
-        int i13 = this.f30968e;
-        int i14 = i11 * 32;
-        if (i13 != i14) {
-            int i15 = i14 - i13;
-            int i16 = iArr[0] >>> i15;
-            for (int i17 = 1; i17 < i11; i17++) {
-                int i18 = iArr[i17];
-                iArr[i17 - 1] = i16 | (i18 << (32 - i15));
-                i16 = i18 >>> i15;
-            }
-            iArr[i10] = i16;
-        }
-        this.f30967d = iArr;
-    }
-
-    public void r(int i10) {
-        int[] iArr = this.f30967d;
-        int i11 = i10 / 32;
-        iArr[i11] = (1 << (i10 & 31)) | iArr[i11];
-    }
-
-    public void s(int i10, int i11) {
-        this.f30967d[i10 / 32] = i11;
-    }
-
-    public void t(int i10, byte[] bArr, int i11, int i12) {
-        for (int i13 = 0; i13 < i12; i13++) {
-            int i14 = 0;
-            for (int i15 = 0; i15 < 8; i15++) {
-                if (g(i10)) {
-                    i14 |= 1 << (7 - i15);
-                }
-                i10++;
-            }
-            bArr[i11 + i13] = (byte) i14;
-        }
-    }
-
-    public String toString() {
-        char c10;
-        int i10 = this.f30968e;
-        StringBuilder sb2 = new StringBuilder(i10 + (i10 / 8) + 1);
-        for (int i11 = 0; i11 < this.f30968e; i11++) {
-            if ((i11 & 7) == 0) {
-                sb2.append(' ');
-            }
-            if (g(i11)) {
-                c10 = 'X';
+    private b b(boolean[] zArr) {
+        int i10;
+        nk.a aVar;
+        boolean z10;
+        boolean z11;
+        if (this.f29928a.e() <= 2) {
+            aVar = nk.a.f40875j;
+            i10 = 6;
+        } else {
+            i10 = 8;
+            if (this.f29928a.e() <= 8) {
+                aVar = nk.a.f40879n;
+            } else if (this.f29928a.e() <= 22) {
+                aVar = nk.a.f40874i;
+                i10 = 10;
             } else {
-                c10 = '.';
+                aVar = nk.a.f40873h;
+                i10 = 12;
             }
-            sb2.append(c10);
         }
-        return sb2.toString();
+        int d10 = this.f29928a.d();
+        int length = zArr.length / i10;
+        if (length >= d10) {
+            int length2 = zArr.length % i10;
+            int[] iArr = new int[length];
+            int i11 = 0;
+            while (i11 < length) {
+                iArr[i11] = i(zArr, length2, i10);
+                i11++;
+                length2 += i10;
+            }
+            try {
+                nk.c cVar = new nk.c(aVar);
+                int i12 = length - d10;
+                int a10 = cVar.a(iArr, i12);
+                int i13 = 1 << i10;
+                int i14 = i13 - 1;
+                int i15 = 0;
+                for (int i16 = 0; i16 < d10; i16++) {
+                    int i17 = iArr[i16];
+                    if (i17 != 0 && i17 != i14) {
+                        if (i17 == 1 || i17 == i13 - 2) {
+                            i15++;
+                        }
+                    } else {
+                        throw g.a();
+                    }
+                }
+                boolean[] zArr2 = new boolean[(d10 * i10) - i15];
+                int i18 = 0;
+                for (int i19 = 0; i19 < d10; i19++) {
+                    int i20 = iArr[i19];
+                    if (i20 != 1 && i20 != i13 - 2) {
+                        int i21 = i10 - 1;
+                        while (i21 >= 0) {
+                            int i22 = i18 + 1;
+                            if ((i20 & (1 << i21)) != 0) {
+                                z11 = true;
+                            } else {
+                                z11 = false;
+                            }
+                            zArr2[i18] = z11;
+                            i21--;
+                            i18 = i22;
+                        }
+                    } else {
+                        int i23 = (i18 + i10) - 1;
+                        if (i20 > 1) {
+                            z10 = true;
+                        } else {
+                            z10 = false;
+                        }
+                        Arrays.fill(zArr2, i18, i23, z10);
+                        i18 += i10 - 1;
+                    }
+                }
+                return new b(zArr2, a10, (i12 * 100) / length);
+            } catch (e e10) {
+                throw g.b(e10);
+            }
+        }
+        throw g.a();
     }
 
-    public void u(a aVar) {
-        if (this.f30968e == aVar.f30968e) {
-            int i10 = 0;
-            while (true) {
-                int[] iArr = this.f30967d;
-                if (i10 < iArr.length) {
-                    iArr[i10] = iArr[i10] ^ aVar.f30967d[i10];
-                    i10++;
-                } else {
-                    return;
-                }
+    private boolean[] d(lk.b bVar) {
+        int i10;
+        int i11;
+        boolean f10 = this.f29928a.f();
+        int e10 = this.f29928a.e();
+        if (f10) {
+            i10 = 11;
+        } else {
+            i10 = 14;
+        }
+        int i12 = i10 + (e10 * 4);
+        int[] iArr = new int[i12];
+        boolean[] zArr = new boolean[j(e10, f10)];
+        int i13 = 2;
+        if (f10) {
+            for (int i14 = 0; i14 < i12; i14++) {
+                iArr[i14] = i14;
             }
         } else {
-            throw new IllegalArgumentException("Sizes don't match");
+            int i15 = i12 / 2;
+            int i16 = ((i12 + 1) + (((i15 - 1) / 15) * 2)) / 2;
+            for (int i17 = 0; i17 < i15; i17++) {
+                int i18 = (i17 / 15) + i17;
+                iArr[(i15 - i17) - 1] = (i16 - i18) - 1;
+                iArr[i15 + i17] = i18 + i16 + 1;
+            }
         }
+        int i19 = 0;
+        int i20 = 0;
+        while (i19 < e10) {
+            int i21 = (e10 - i19) * 4;
+            if (f10) {
+                i11 = 9;
+            } else {
+                i11 = 12;
+            }
+            int i22 = i21 + i11;
+            int i23 = i19 * 2;
+            int i24 = (i12 - 1) - i23;
+            int i25 = 0;
+            while (i25 < i22) {
+                int i26 = i25 * 2;
+                int i27 = 0;
+                while (i27 < i13) {
+                    int i28 = i23 + i27;
+                    int i29 = i23 + i25;
+                    zArr[i20 + i26 + i27] = bVar.e(iArr[i28], iArr[i29]);
+                    int i30 = i24 - i27;
+                    zArr[(i22 * 2) + i20 + i26 + i27] = bVar.e(iArr[i29], iArr[i30]);
+                    int i31 = iArr[i30];
+                    int i32 = i24 - i25;
+                    zArr[(i22 * 4) + i20 + i26 + i27] = bVar.e(i31, iArr[i32]);
+                    zArr[(i22 * 6) + i20 + i26 + i27] = bVar.e(iArr[i32], iArr[i28]);
+                    i27++;
+                    i13 = 2;
+                }
+                i25++;
+                i13 = 2;
+            }
+            i20 += i22 * 8;
+            i19++;
+            i13 = 2;
+        }
+        return zArr;
     }
 
-    public a(int i10) {
-        this.f30968e = i10;
-        this.f30967d = p(i10);
+    private static String e(c cVar, int i10) {
+        int i11 = C0419a.f29929a[cVar.ordinal()];
+        if (i11 != 1) {
+            if (i11 != 2) {
+                if (i11 != 3) {
+                    if (i11 != 4) {
+                        if (i11 == 5) {
+                            return f29926f[i10];
+                        }
+                        throw new IllegalStateException("Bad table");
+                    }
+                    return f29925e[i10];
+                }
+                return f29924d[i10];
+            }
+            return f29923c[i10];
+        }
+        return f29922b[i10];
     }
 
-    a(int[] iArr, int i10) {
-        this.f30967d = iArr;
-        this.f30968e = i10;
+    /* JADX WARN: Code restructure failed: missing block: B:52:0x00b7, code lost:
+        throw hk.g.a();
+     */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    private static java.lang.String f(boolean[] r14) {
+        /*
+            Method dump skipped, instructions count: 285
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: jk.a.f(boolean[]):java.lang.String");
+    }
+
+    private static c g(char c10) {
+        if (c10 != 'B') {
+            if (c10 != 'D') {
+                if (c10 != 'P') {
+                    if (c10 != 'L') {
+                        if (c10 != 'M') {
+                            return c.UPPER;
+                        }
+                        return c.MIXED;
+                    }
+                    return c.LOWER;
+                }
+                return c.PUNCT;
+            }
+            return c.DIGIT;
+        }
+        return c.BINARY;
+    }
+
+    private static byte h(boolean[] zArr, int i10) {
+        int i11;
+        int length = zArr.length - i10;
+        if (length >= 8) {
+            i11 = i(zArr, i10, 8);
+        } else {
+            i11 = i(zArr, i10, length) << (8 - length);
+        }
+        return (byte) i11;
+    }
+
+    private static int i(boolean[] zArr, int i10, int i11) {
+        int i12 = 0;
+        for (int i13 = i10; i13 < i10 + i11; i13++) {
+            i12 <<= 1;
+            if (zArr[i13]) {
+                i12 |= 1;
+            }
+        }
+        return i12;
+    }
+
+    private static int j(int i10, boolean z10) {
+        int i11;
+        if (z10) {
+            i11 = 88;
+        } else {
+            i11 = 112;
+        }
+        return (i11 + (i10 * 16)) * i10;
+    }
+
+    public lk.e c(ik.a aVar) {
+        this.f29928a = aVar;
+        b b10 = b(d(aVar.a()));
+        lk.e eVar = new lk.e(a(b10.f29930a), f(b10.f29930a), null, String.format("%d%%", Integer.valueOf(b10.f29932c)));
+        eVar.o(b10.f29930a.length);
+        eVar.n(Integer.valueOf(b10.f29931b));
+        return eVar;
     }
 }

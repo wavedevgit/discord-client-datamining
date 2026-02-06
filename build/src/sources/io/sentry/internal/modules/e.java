@@ -5,13 +5,13 @@ import java.util.Map;
 public final class e implements b {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final e f29073a = new e();
+    private static final e f28217a = new e();
 
     private e() {
     }
 
     public static e b() {
-        return f29073a;
+        return f28217a;
     }
 
     @Override // io.sentry.internal.modules.b

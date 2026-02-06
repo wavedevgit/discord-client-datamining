@@ -45,21 +45,21 @@ public final class CapturePageConfig_ManualCaptureConfigJsonAdapter extends h {
     @NotNull
     public CapturePageConfig.ManualCaptureConfig fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         Boolean bool = null;
         Long l10 = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 bool = (Boolean) this.nullableBooleanAdapter.fromJson(reader);
-            } else if (W == 1) {
+            } else if (J == 1) {
                 l10 = (Long) this.nullableLongAdapter.fromJson(reader);
             }
         }
-        reader.z();
+        reader.D();
         return new CapturePageConfig.ManualCaptureConfig(bool, l10);
     }
 
@@ -68,11 +68,11 @@ public final class CapturePageConfig_ManualCaptureConfigJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (manualCaptureConfig != null) {
             writer.k();
-            writer.W("isEnabled");
+            writer.J("isEnabled");
             this.nullableBooleanAdapter.toJson(writer, manualCaptureConfig.isEnabled());
-            writer.W("delayMs");
+            writer.J("delayMs");
             this.nullableLongAdapter.toJson(writer, manualCaptureConfig.getDelayMs());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

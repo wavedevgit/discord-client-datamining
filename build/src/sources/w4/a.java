@@ -3,5 +3,5 @@ package w4;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static int f52670a = 2131362111;
+    public static int f53449a = 2131362111;
 }

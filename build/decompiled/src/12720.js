@@ -1,35 +1,47 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun96998: for (var _fun96998_ip = 0;;) switch (_fun96998_ip) {
+    _fun96993: for (var _fun96993_ip = 0;;) switch (_fun96993_ip) {
         case 0:
-            var6 = require;
-            var7 = dependencyMap;
+            var2 = require;
+            var3 = dependencyMap;
             var0 = 0;
-            var1 = var7[var0];
+            var1 = var3[var0];
             var0 = undefined;
-            var3 = var6.bind(var0)(var1);
-            var1 = 1;
-            var2 = var7[var1];
-            var2 = var6.bind(var0)(var2);
-            var2 = var2.WeakMap;
-            var2 = var3.bind(var0)(var2);
-            if (!var2) {
-                _fun96998_ip = 97;
-                continue _fun96998
-            }
-        case 45:
-            var4 = /native code/;
-            var3 = var4.test;
-            var5 = global;
-            var5 = var5.String;
-            var1 = var7[var1];
-            var1 = var6.bind(var0)(var1);
-            var1 = var1.WeakMap;
+            var5 = var2.bind(var0)(var1);
+            var1 = global;
+            var1 = var1.Function;
+            var1 = var1.toString;
             var1 = var5.bind(var0)(var1);
-            var2 = var3.bind(var4)(var1);
-        case 97:
-            var1 = module;
+            var _closure1_slot0 = var1;
+            var1 = 1;
+            var1 = var3[var1];
+            var6 = var2.bind(var0)(var1);
+            var1 = 2;
+            var5 = var3[var1];
+            var5 = var2.bind(var0)(var5);
+            var5 = var5.inspectSource;
+            var5 = var6.bind(var0)(var5);
+            if (var5) {
+                _fun96993_ip = 103;
+                continue _fun96993
+            }
+        case 81:
+            var5 = var3[var1];
+            var5 = var2.bind(var0)(var5);
+            var4 = function(arg0) { // Environment: var4
+                var2 = _closure1_slot0;
+                var1 = undefined;
+                var0 = arg0;
+                var0 = var2.bind(var1)(var0);
+                return var0;
+            };
+            var5.inspectSource = var4;
+        case 103:
+            var1 = var3[var1];
+            var1 = var2.bind(var0)(var1);
+            var2 = var1.inspectSource;
+            var1 = arg4;
             var1.exports = var2;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12684, 12658]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12668, 12687, 12677]);

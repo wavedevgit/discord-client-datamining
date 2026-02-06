@@ -3,11 +3,11 @@ package com.google.android.exoplayer2.trackselection;
 import android.os.SystemClock;
 import com.google.android.exoplayer2.Tracks;
 import com.google.android.exoplayer2.trackselection.MappingTrackSelector;
-import com.google.android.exoplayer2.upstream.h;
+import com.google.android.exoplayer2.upstream.i;
 import java.util.Arrays;
 import java.util.List;
 import je.l;
-import mi.s;
+import ni.s;
 import qd.u0;
 import qd.w0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -19,17 +19,17 @@ public abstract class h {
         for (int i10 = 0; i10 < mappedTrackInfo.d(); i10++) {
             w0 f10 = mappedTrackInfo.f(i10);
             List list = listArr[i10];
-            for (int i11 = 0; i11 < f10.f47844d; i11++) {
+            for (int i11 = 0; i11 < f10.f46892d; i11++) {
                 u0 b10 = f10.b(i11);
                 if (mappedTrackInfo.a(i10, i11, false) != 0) {
                     z10 = true;
                 } else {
                     z10 = false;
                 }
-                int i12 = b10.f47828d;
+                int i12 = b10.f46876d;
                 int[] iArr = new int[i12];
                 boolean[] zArr = new boolean[i12];
-                for (int i13 = 0; i13 < b10.f47828d; i13++) {
+                for (int i13 = 0; i13 < b10.f46876d; i13++) {
                     iArr[i13] = mappedTrackInfo.g(i10, i11, i13);
                     int i14 = 0;
                     while (true) {
@@ -51,31 +51,31 @@ public abstract class h {
             }
         }
         w0 h10 = mappedTrackInfo.h();
-        for (int i15 = 0; i15 < h10.f47844d; i15++) {
+        for (int i15 = 0; i15 < h10.f46892d; i15++) {
             u0 b11 = h10.b(i15);
-            int[] iArr2 = new int[b11.f47828d];
+            int[] iArr2 = new int[b11.f46876d];
             Arrays.fill(iArr2, 0);
-            aVar.a(new Tracks.a(b11, false, iArr2, new boolean[b11.f47828d]));
+            aVar.a(new Tracks.a(b11, false, iArr2, new boolean[b11.f46876d]));
         }
         return new Tracks(aVar.k());
     }
 
     public static Tracks b(MappingTrackSelector.MappedTrackInfo mappedTrackInfo, l[] lVarArr) {
-        s s10;
+        s t10;
         List[] listArr = new List[lVarArr.length];
         for (int i10 = 0; i10 < lVarArr.length; i10++) {
             l lVar = lVarArr[i10];
             if (lVar != null) {
-                s10 = s.t(lVar);
+                t10 = s.u(lVar);
             } else {
-                s10 = s.s();
+                t10 = s.t();
             }
-            listArr[i10] = s10;
+            listArr[i10] = t10;
         }
         return a(mappedTrackInfo, listArr);
     }
 
-    public static h.a c(g gVar) {
+    public static i.a c(g gVar) {
         long elapsedRealtime = SystemClock.elapsedRealtime();
         int length = gVar.length();
         int i10 = 0;
@@ -84,6 +84,6 @@ public abstract class h {
                 i10++;
             }
         }
-        return new h.a(1, 0, length, i10);
+        return new i.a(1, 0, length, i10);
     }
 }

@@ -52,7 +52,7 @@ public abstract class MessageAttachmentAccessory extends MessageAccessory {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit getUploadItemProps$lambda$0(Function2 function2, UploadContext uploadContext) {
         function2.invoke(uploadContext.getUploaderId(), uploadContext.getUploadItemId());
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     @NotNull
@@ -71,7 +71,7 @@ public abstract class MessageAttachmentAccessory extends MessageAccessory {
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     @NotNull
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo538getMessageId3Eiw7ao() {
+    public String mo536getMessageId3Eiw7ao() {
         return this.messageId;
     }
 

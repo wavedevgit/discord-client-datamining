@@ -68,7 +68,7 @@ public final class AudioPlayerWipeAnimatorManager {
         Intrinsics.checkNotNullParameter(binding, "binding");
         this.brand500 = context.getColor(R.color.brand_500);
         this.argbEvaluator = new ArgbEvaluator();
-        this.buttonContainerDefaultDrawable$delegate = or.l.a(new Function0() { // from class: com.discord.chat.presentation.message.view.voicemessages.u
+        this.buttonContainerDefaultDrawable$delegate = qr.l.a(new Function0() { // from class: com.discord.chat.presentation.message.view.voicemessages.u
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Drawable buttonContainerDefaultDrawable_delegate$lambda$0;
@@ -76,7 +76,7 @@ public final class AudioPlayerWipeAnimatorManager {
                 return buttonContainerDefaultDrawable_delegate$lambda$0;
             }
         });
-        this.buttonContainerActiveDrawable$delegate = or.l.a(new Function0() { // from class: com.discord.chat.presentation.message.view.voicemessages.v
+        this.buttonContainerActiveDrawable$delegate = qr.l.a(new Function0() { // from class: com.discord.chat.presentation.message.view.voicemessages.v
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 ColorDrawable buttonContainerActiveDrawable_delegate$lambda$2;
@@ -84,7 +84,7 @@ public final class AudioPlayerWipeAnimatorManager {
                 return buttonContainerActiveDrawable_delegate$lambda$2;
             }
         });
-        this.scaleAnimator$delegate = or.l.a(new Function0() { // from class: com.discord.chat.presentation.message.view.voicemessages.w
+        this.scaleAnimator$delegate = qr.l.a(new Function0() { // from class: com.discord.chat.presentation.message.view.voicemessages.w
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 ValueAnimator scaleAnimator_delegate$lambda$5;
@@ -92,7 +92,7 @@ public final class AudioPlayerWipeAnimatorManager {
                 return scaleAnimator_delegate$lambda$5;
             }
         });
-        this.textColorAnimator$delegate = or.l.a(new Function0() { // from class: com.discord.chat.presentation.message.view.voicemessages.x
+        this.textColorAnimator$delegate = qr.l.a(new Function0() { // from class: com.discord.chat.presentation.message.view.voicemessages.x
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 ValueAnimator textColorAnimator_delegate$lambda$9;
@@ -100,7 +100,7 @@ public final class AudioPlayerWipeAnimatorManager {
                 return textColorAnimator_delegate$lambda$9;
             }
         });
-        this.buttonIconColorAnimator$delegate = or.l.a(new Function0() { // from class: com.discord.chat.presentation.message.view.voicemessages.y
+        this.buttonIconColorAnimator$delegate = qr.l.a(new Function0() { // from class: com.discord.chat.presentation.message.view.voicemessages.y
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 ValueAnimator buttonIconColorAnimator_delegate$lambda$13;
@@ -108,7 +108,7 @@ public final class AudioPlayerWipeAnimatorManager {
                 return buttonIconColorAnimator_delegate$lambda$13;
             }
         });
-        this.progressColorAnimator$delegate = or.l.a(new Function0() { // from class: com.discord.chat.presentation.message.view.voicemessages.z
+        this.progressColorAnimator$delegate = qr.l.a(new Function0() { // from class: com.discord.chat.presentation.message.view.voicemessages.z
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 ValueAnimator progressColorAnimator_delegate$lambda$17;

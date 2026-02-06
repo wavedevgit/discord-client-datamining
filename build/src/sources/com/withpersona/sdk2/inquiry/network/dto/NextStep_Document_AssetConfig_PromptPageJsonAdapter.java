@@ -45,30 +45,30 @@ public final class NextStep_Document_AssetConfig_PromptPageJsonAdapter extends h
     @NotNull
     public NextStep.Document.AssetConfig.PromptPage fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         RemoteImage remoteImage = null;
         RemoteImage remoteImage2 = null;
         int i10 = -1;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 remoteImage = (RemoteImage) this.nullableRemoteImageAdapter.fromJson(reader);
                 i10 &= -2;
-            } else if (W == 1) {
+            } else if (J == 1) {
                 remoteImage2 = (RemoteImage) this.nullableRemoteImageAdapter.fromJson(reader);
                 i10 &= -3;
             }
         }
-        reader.z();
+        reader.D();
         if (i10 == -4) {
             return new NextStep.Document.AssetConfig.PromptPage(remoteImage, remoteImage2);
         }
         Constructor<NextStep.Document.AssetConfig.PromptPage> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = NextStep.Document.AssetConfig.PromptPage.class.getDeclaredConstructor(RemoteImage.class, RemoteImage.class, Integer.TYPE, ym.c.f54853c);
+            constructor = NextStep.Document.AssetConfig.PromptPage.class.getDeclaredConstructor(RemoteImage.class, RemoteImage.class, Integer.TYPE, an.c.f1164c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -82,11 +82,11 @@ public final class NextStep_Document_AssetConfig_PromptPageJsonAdapter extends h
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (promptPage != null) {
             writer.k();
-            writer.W("headerPictograph");
+            writer.J("headerPictograph");
             this.nullableRemoteImageAdapter.toJson(writer, promptPage.getHeaderPictograph());
-            writer.W("documentPictograph");
+            writer.J("documentPictograph");
             this.nullableRemoteImageAdapter.toJson(writer, promptPage.getDocumentPictograph());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

@@ -24,12 +24,12 @@ public final class SummarySeparatorDelegate extends BaseChatListItemDelegate<Sum
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void bindView$lambda$2$lambda$0(SummarySeparatorDelegate summarySeparatorDelegate, SummarySeparatorChatListItem summarySeparatorChatListItem, View view) {
-        summarySeparatorDelegate.getEventHandler().mo482onTapSummarysekaTiM(summarySeparatorChatListItem.getSummary().m431getChannelIdo4g7jtM(), summarySeparatorChatListItem.m500getCurrentMsgId3Eiw7ao(), summarySeparatorChatListItem.getSummary().getId());
+        summarySeparatorDelegate.getEventHandler().mo480onTapSummarysekaTiM(summarySeparatorChatListItem.getSummary().m429getChannelIdo4g7jtM(), summarySeparatorChatListItem.m498getCurrentMsgId3Eiw7ao(), summarySeparatorChatListItem.getSummary().getId());
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void bindView$lambda$2$lambda$1(SummarySeparatorDelegate summarySeparatorDelegate, SummarySeparatorChatListItem summarySeparatorChatListItem, View view) {
-        summarySeparatorDelegate.getEventHandler().mo483onTapSummaryJumpsekaTiM(summarySeparatorChatListItem.getSummary().m431getChannelIdo4g7jtM(), summarySeparatorChatListItem.m501getJumpToMsgId3Eiw7ao(), summarySeparatorChatListItem.getSummary().getId());
+        summarySeparatorDelegate.getEventHandler().mo481onTapSummaryJumpsekaTiM(summarySeparatorChatListItem.getSummary().m429getChannelIdo4g7jtM(), summarySeparatorChatListItem.m499getJumpToMsgId3Eiw7ao(), summarySeparatorChatListItem.getSummary().getId());
     }
 
     @Override // com.discord.chat.presentation.list.delegate.BaseChatListItemDelegate

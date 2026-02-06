@@ -15,7 +15,7 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.text.StringsKt;
 import kotlinx.coroutines.CoroutineScope;
-import ur.b;
+import wr.b;
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {2, 1, 0}, xi = 48)
 @e(c = "com.discord.file_manager.FileModule$readFile$1", f = "FileModule.kt", l = {}, m = "invokeSuspend")
 @SourceDebugExtension({"SMAP\nFileModule.kt\nKotlin\n*S Kotlin\n*F\n+ 1 FileModule.kt\ncom/discord/file_manager/FileModule$readFile$1\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,320:1\n1#2:321\n*E\n"})
@@ -47,8 +47,8 @@ final class FileModule$readFile$1 extends k implements Function2<CoroutineScope,
             c.b(obj);
             try {
                 FileInputStream fileInputStream = new FileInputStream(new File(this.$path));
-                byte[] c10 = zr.b.c(fileInputStream);
-                zr.c.a(fileInputStream, null);
+                byte[] c10 = bs.b.c(fileInputStream);
+                bs.c.a(fileInputStream, null);
                 if (Intrinsics.areEqual(this.$encoding, "base64")) {
                     this.$promise.resolve(Base64.encodeToString(c10, 2));
                 } else {
@@ -57,13 +57,13 @@ final class FileModule$readFile$1 extends k implements Function2<CoroutineScope,
             } catch (Throwable th2) {
                 this.$promise.reject(th2);
             }
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((FileModule$readFile$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+        return ((FileModule$readFile$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
     }
 }

@@ -1,314 +1,57 @@
 package og;
 
-import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
-import java.io.OutputStream;
-import java.nio.ByteBuffer;
-import java.nio.ByteOrder;
-import java.nio.charset.Charset;
-import java.util.Collection;
-import java.util.Map;
-import xi.c;
+import yi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class y1 implements xi.e {
-
-    /* renamed from: f  reason: collision with root package name */
-    private static final Charset f43599f = Charset.forName("UTF-8");
-
-    /* renamed from: g  reason: collision with root package name */
-    private static final xi.c f43600g;
-
-    /* renamed from: h  reason: collision with root package name */
-    private static final xi.c f43601h;
-
-    /* renamed from: i  reason: collision with root package name */
-    private static final xi.d f43602i;
+final class y1 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private OutputStream f43603a;
+    static final y1 f42704a = new y1();
 
     /* renamed from: b  reason: collision with root package name */
-    private final Map f43604b;
+    private static final yi.c f42705b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Map f43605c;
+    private static final yi.c f42706c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final xi.d f43606d;
+    private static final yi.c f42707d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final d2 f43607e = new d2(this);
+    private static final yi.c f42708e;
+
+    /* renamed from: f  reason: collision with root package name */
+    private static final yi.c f42709f;
 
     static {
-        c.b a10 = xi.c.a("key");
-        s1 s1Var = new s1();
-        s1Var.a(1);
-        f43600g = a10.b(s1Var.b()).a();
-        c.b a11 = xi.c.a("value");
-        s1 s1Var2 = new s1();
-        s1Var2.a(2);
-        f43601h = a11.b(s1Var2.b()).a();
-        f43602i = new xi.d() { // from class: og.x1
-            @Override // xi.d
-            public final void a(Object obj, Object obj2) {
-                y1.j((Map.Entry) obj, (xi.e) obj2);
-            }
-        };
+        c.b a10 = yi.c.a("inferenceCommonLogEvent");
+        f fVar = new f();
+        fVar.a(1);
+        f42705b = a10.b(fVar.b()).a();
+        c.b a11 = yi.c.a("options");
+        f fVar2 = new f();
+        fVar2.a(2);
+        f42706c = a11.b(fVar2.b()).a();
+        c.b a12 = yi.c.a("modelInitializationMs");
+        f fVar3 = new f();
+        fVar3.a(3);
+        f42707d = a12.b(fVar3.b()).a();
+        c.b a13 = yi.c.a("confidenceThreshold");
+        f fVar4 = new f();
+        fVar4.a(4);
+        f42708e = a13.b(fVar4.b()).a();
+        c.b a14 = yi.c.a("imageInfo");
+        f fVar5 = new f();
+        fVar5.a(5);
+        f42709f = a14.b(fVar5.b()).a();
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public y1(OutputStream outputStream, Map map, Map map2, xi.d dVar) {
-        this.f43603a = outputStream;
-        this.f43604b = map;
-        this.f43605c = map2;
-        this.f43606d = dVar;
+    private y1() {
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static /* synthetic */ void j(Map.Entry entry, xi.e eVar) {
-        eVar.d(f43600g, entry.getKey());
-        eVar.d(f43601h, entry.getValue());
-    }
-
-    private static int k(xi.c cVar) {
-        w1 w1Var = (w1) cVar.c(w1.class);
-        if (w1Var != null) {
-            return w1Var.zza();
-        }
-        throw new xi.b("Field has no @Protobuf config");
-    }
-
-    private final long l(xi.d dVar, Object obj) {
-        t1 t1Var = new t1();
-        try {
-            OutputStream outputStream = this.f43603a;
-            this.f43603a = t1Var;
-            dVar.a(obj, this);
-            this.f43603a = outputStream;
-            long a10 = t1Var.a();
-            t1Var.close();
-            return a10;
-        } catch (Throwable th2) {
-            try {
-                t1Var.close();
-            } catch (Throwable th3) {
-                try {
-                    Throwable.class.getDeclaredMethod("addSuppressed", Throwable.class).invoke(th2, th3);
-                } catch (Exception unused) {
-                }
-            }
-            throw th2;
-        }
-    }
-
-    private static w1 m(xi.c cVar) {
-        w1 w1Var = (w1) cVar.c(w1.class);
-        if (w1Var != null) {
-            return w1Var;
-        }
-        throw new xi.b("Field has no @Protobuf config");
-    }
-
-    private final y1 n(xi.d dVar, xi.c cVar, Object obj, boolean z10) {
-        long l10 = l(dVar, obj);
-        if (z10 && l10 == 0) {
-            return this;
-        }
-        q((k(cVar) << 3) | 2);
-        r(l10);
-        dVar.a(obj, this);
-        return this;
-    }
-
-    private final y1 o(xi.f fVar, xi.c cVar, Object obj, boolean z10) {
-        this.f43607e.b(cVar, z10);
-        fVar.a(obj, this.f43607e);
-        return this;
-    }
-
-    private static ByteBuffer p(int i10) {
-        return ByteBuffer.allocate(i10).order(ByteOrder.LITTLE_ENDIAN);
-    }
-
-    private final void q(int i10) {
-        while ((i10 & (-128)) != 0) {
-            this.f43603a.write((i10 & 127) | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
-            i10 >>>= 7;
-        }
-        this.f43603a.write(i10 & 127);
-    }
-
-    private final void r(long j10) {
-        while (((-128) & j10) != 0) {
-            this.f43603a.write((((int) j10) & 127) | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
-            j10 >>>= 7;
-        }
-        this.f43603a.write(((int) j10) & 127);
-    }
-
-    final xi.e a(xi.c cVar, double d10, boolean z10) {
-        if (z10 && d10 == 0.0d) {
-            return this;
-        }
-        q((k(cVar) << 3) | 1);
-        this.f43603a.write(p(8).putDouble(d10).array());
-        return this;
-    }
-
-    @Override // xi.e
-    public final /* synthetic */ xi.e b(xi.c cVar, int i10) {
-        g(cVar, i10, true);
-        return this;
-    }
-
-    @Override // xi.e
-    public final /* synthetic */ xi.e c(xi.c cVar, long j10) {
-        h(cVar, j10, true);
-        return this;
-    }
-
-    @Override // xi.e
-    public final xi.e d(xi.c cVar, Object obj) {
-        f(cVar, obj, true);
-        return this;
-    }
-
-    final xi.e e(xi.c cVar, float f10, boolean z10) {
-        if (z10 && f10 == 0.0f) {
-            return this;
-        }
-        q((k(cVar) << 3) | 5);
-        this.f43603a.write(p(4).putFloat(f10).array());
-        return this;
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public final xi.e f(xi.c cVar, Object obj, boolean z10) {
-        if (obj != null) {
-            if (obj instanceof CharSequence) {
-                CharSequence charSequence = (CharSequence) obj;
-                if (!z10 || charSequence.length() != 0) {
-                    q((k(cVar) << 3) | 2);
-                    byte[] bytes = charSequence.toString().getBytes(f43599f);
-                    q(bytes.length);
-                    this.f43603a.write(bytes);
-                    return this;
-                }
-            } else if (obj instanceof Collection) {
-                for (Object obj2 : (Collection) obj) {
-                    f(cVar, obj2, false);
-                }
-            } else if (obj instanceof Map) {
-                for (Map.Entry entry : ((Map) obj).entrySet()) {
-                    n(f43602i, cVar, entry, false);
-                }
-            } else if (obj instanceof Double) {
-                a(cVar, ((Double) obj).doubleValue(), z10);
-                return this;
-            } else if (obj instanceof Float) {
-                e(cVar, ((Float) obj).floatValue(), z10);
-                return this;
-            } else if (obj instanceof Number) {
-                h(cVar, ((Number) obj).longValue(), z10);
-                return this;
-            } else if (obj instanceof Boolean) {
-                g(cVar, ((Boolean) obj).booleanValue() ? 1 : 0, z10);
-                return this;
-            } else if (obj instanceof byte[]) {
-                byte[] bArr = (byte[]) obj;
-                if (!z10 || bArr.length != 0) {
-                    q((k(cVar) << 3) | 2);
-                    q(bArr.length);
-                    this.f43603a.write(bArr);
-                    return this;
-                }
-            } else {
-                xi.d dVar = (xi.d) this.f43604b.get(obj.getClass());
-                if (dVar != null) {
-                    n(dVar, cVar, obj, z10);
-                    return this;
-                }
-                xi.f fVar = (xi.f) this.f43605c.get(obj.getClass());
-                if (fVar != null) {
-                    o(fVar, cVar, obj, z10);
-                    return this;
-                } else if (obj instanceof u1) {
-                    g(cVar, ((u1) obj).zza(), true);
-                    return this;
-                } else if (obj instanceof Enum) {
-                    g(cVar, ((Enum) obj).ordinal(), true);
-                    return this;
-                } else {
-                    n(this.f43606d, cVar, obj, z10);
-                    return this;
-                }
-            }
-        }
-        return this;
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public final y1 g(xi.c cVar, int i10, boolean z10) {
-        if (!z10 || i10 != 0) {
-            w1 m10 = m(cVar);
-            v1 v1Var = v1.DEFAULT;
-            int ordinal = m10.zzb().ordinal();
-            if (ordinal != 0) {
-                if (ordinal != 1) {
-                    if (ordinal == 2) {
-                        q((m10.zza() << 3) | 5);
-                        this.f43603a.write(p(4).putInt(i10).array());
-                        return this;
-                    }
-                } else {
-                    q(m10.zza() << 3);
-                    q((i10 + i10) ^ (i10 >> 31));
-                    return this;
-                }
-            } else {
-                q(m10.zza() << 3);
-                q(i10);
-                return this;
-            }
-        }
-        return this;
-    }
-
-    final y1 h(xi.c cVar, long j10, boolean z10) {
-        if (!z10 || j10 != 0) {
-            w1 m10 = m(cVar);
-            v1 v1Var = v1.DEFAULT;
-            int ordinal = m10.zzb().ordinal();
-            if (ordinal != 0) {
-                if (ordinal != 1) {
-                    if (ordinal == 2) {
-                        q((m10.zza() << 3) | 1);
-                        this.f43603a.write(p(8).putLong(j10).array());
-                        return this;
-                    }
-                } else {
-                    q(m10.zza() << 3);
-                    r((j10 >> 63) ^ (j10 + j10));
-                    return this;
-                }
-            } else {
-                q(m10.zza() << 3);
-                r(j10);
-                return this;
-            }
-        }
-        return this;
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public final y1 i(Object obj) {
-        if (obj == null) {
-            return this;
-        }
-        xi.d dVar = (xi.d) this.f43604b.get(obj.getClass());
-        if (dVar != null) {
-            dVar.a(obj, this);
-            return this;
-        }
-        throw new xi.b("No encoder for ".concat(String.valueOf(obj.getClass())));
+    @Override // yi.d
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        android.support.v4.media.session.b.a(obj);
+        yi.e eVar = (yi.e) obj2;
+        throw null;
     }
 }

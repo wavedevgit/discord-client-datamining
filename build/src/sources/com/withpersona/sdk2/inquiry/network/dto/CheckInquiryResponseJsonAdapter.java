@@ -52,31 +52,31 @@ public final class CheckInquiryResponseJsonAdapter extends h {
     @NotNull
     public CheckInquiryResponse fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         CheckInquiryResponse.Data data = null;
         String str = null;
         List list = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 data = (CheckInquiryResponse.Data) this.dataAdapter.fromJson(reader);
                 if (data == null) {
-                    throw ym.c.x("data_", "data", reader);
+                    throw an.c.x("data_", "data", reader);
                 }
-            } else if (W == 1) {
+            } else if (J == 1) {
                 str = (String) this.nullableStringAdapter.fromJson(reader);
-            } else if (W == 2) {
+            } else if (J == 2) {
                 list = (List) this.nullableListOfIncludedAdapter.fromJson(reader);
             }
         }
-        reader.z();
+        reader.D();
         if (data != null) {
             return new CheckInquiryResponse(data, str, list);
         }
-        throw ym.c.o("data_", "data", reader);
+        throw an.c.o("data_", "data", reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -84,13 +84,13 @@ public final class CheckInquiryResponseJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (checkInquiryResponse != null) {
             writer.k();
-            writer.W("data");
+            writer.J("data");
             this.dataAdapter.toJson(writer, checkInquiryResponse.getData());
-            writer.W("token");
+            writer.J("token");
             this.nullableStringAdapter.toJson(writer, checkInquiryResponse.getToken());
-            writer.W("included");
+            writer.J("included");
             this.nullableListOfIncludedAdapter.toJson(writer, checkInquiryResponse.getIncluded());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

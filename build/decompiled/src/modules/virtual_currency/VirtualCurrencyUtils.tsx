@@ -44,19 +44,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/virtual_currency/VirtualCurrencyUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0) { // Environment: var1
-        _fun47197: for (var _fun47197_ip = 0;;) switch (_fun47197_ip) {
+        _fun47200: for (var _fun47200_ip = 0;;) switch (_fun47200_ip) {
             case 0:
                 var0 = _closure1_slot3;
                 var2 = var0.FRACTIONAL_PREMIUM;
                 var0 = arg0;
                 if (!(var0 !== var2)) {
-                    _fun47197_ip = 26;
-                    continue _fun47197
+                    _fun47200_ip = 26;
+                    continue _fun47200
                 }
             case 20:
                 var0 = _closure1_slot2;
-                _fun47197_ip = 30;
-                continue _fun47197;
+                _fun47200_ip = 30;
+                continue _fun47200;
             case 26:
                 var0 = _closure1_slot6;
             case 30:
@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getApplicationIdForOrbSKU = var3;
     var1 = function() { // Environment: var1
-        _fun47198: for (var _fun47198_ip = 0;;) switch (_fun47198_ip) {
+        _fun47201: for (var _fun47201_ip = 0;;) switch (_fun47201_ip) {
             case 0:
                 var6 = _closure1_slot0;
                 var1 = _closure1_slot1;
@@ -81,8 +81,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL;
                 var1 = var2.bind(var4)(var1);
                 if (var1) {
-                    _fun47198_ip = 280;
-                    continue _fun47198
+                    _fun47201_ip = 280;
+                    continue _fun47201
                 }
             case 66:
                 var2 = _closure1_slot0;
@@ -134,4 +134,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.dismissOrbsOnboardingExperience = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 3283, 1369, 1623, 3212, 1358, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 3285, 1369, 1623, 3214, 1358, 2]);

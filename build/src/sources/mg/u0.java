@@ -1,80 +1,58 @@
 package mg;
 
-import java.util.ConcurrentModificationException;
-import java.util.Iterator;
-import java.util.NoSuchElementException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-abstract class u0 implements Iterator {
-
-    /* renamed from: d  reason: collision with root package name */
-    int f38142d;
-
-    /* renamed from: e  reason: collision with root package name */
-    int f38143e;
-
-    /* renamed from: i  reason: collision with root package name */
-    int f38144i;
-
-    /* renamed from: o  reason: collision with root package name */
-    final /* synthetic */ y0 f38145o;
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public /* synthetic */ u0(y0 y0Var, t0 t0Var) {
-        int i10;
-        this.f38145o = y0Var;
-        i10 = y0Var.f38282p;
-        this.f38142d = i10;
-        this.f38143e = y0Var.h();
-        this.f38144i = -1;
-    }
-
-    private final void b() {
-        int i10;
-        i10 = this.f38145o.f38282p;
-        if (i10 == this.f38142d) {
-            return;
+public abstract class u0 {
+    public static String a(String str, Object... objArr) {
+        int length;
+        int length2;
+        int indexOf;
+        String str2;
+        int i10 = 0;
+        int i11 = 0;
+        while (true) {
+            length = objArr.length;
+            if (i11 >= length) {
+                break;
+            }
+            Object obj = objArr[i11];
+            if (obj == null) {
+                str2 = "null";
+            } else {
+                try {
+                    str2 = obj.toString();
+                } catch (Exception e10) {
+                    String str3 = obj.getClass().getName() + "@" + Integer.toHexString(System.identityHashCode(obj));
+                    Logger.getLogger("com.google.common.base.Strings").logp(Level.WARNING, "com.google.common.base.Strings", "lenientToString", "Exception during lenientFormat for ".concat(str3), (Throwable) e10);
+                    str2 = "<" + str3 + " threw " + e10.getClass().getName() + ">";
+                }
+            }
+            objArr[i11] = str2;
+            i11++;
         }
-        throw new ConcurrentModificationException();
-    }
-
-    abstract Object a(int i10);
-
-    @Override // java.util.Iterator
-    public final boolean hasNext() {
-        if (this.f38143e >= 0) {
-            return true;
+        StringBuilder sb2 = new StringBuilder(str.length() + (length * 16));
+        int i12 = 0;
+        while (true) {
+            length2 = objArr.length;
+            if (i10 >= length2 || (indexOf = str.indexOf("%s", i12)) == -1) {
+                break;
+            }
+            sb2.append((CharSequence) str, i12, indexOf);
+            sb2.append(objArr[i10]);
+            i10++;
+            i12 = indexOf + 2;
         }
-        return false;
-    }
-
-    @Override // java.util.Iterator
-    public final Object next() {
-        b();
-        if (hasNext()) {
-            int i10 = this.f38143e;
-            this.f38144i = i10;
-            Object a10 = a(i10);
-            this.f38143e = this.f38145o.i(this.f38143e);
-            return a10;
+        sb2.append((CharSequence) str, i12, str.length());
+        if (i10 < length2) {
+            sb2.append(" [");
+            sb2.append(objArr[i10]);
+            for (int i13 = i10 + 1; i13 < objArr.length; i13++) {
+                sb2.append(", ");
+                sb2.append(objArr[i13]);
+            }
+            sb2.append(']');
         }
-        throw new NoSuchElementException();
-    }
-
-    @Override // java.util.Iterator
-    public final void remove() {
-        boolean z10;
-        b();
-        if (this.f38144i >= 0) {
-            z10 = true;
-        } else {
-            z10 = false;
-        }
-        t.e(z10, "no calls to next() since the last call to remove()");
-        this.f38142d += 32;
-        int i10 = this.f38144i;
-        y0 y0Var = this.f38145o;
-        y0Var.remove(y0.j(y0Var, i10));
-        this.f38143e--;
-        this.f38144i = -1;
+        return sb2.toString();
     }
 }

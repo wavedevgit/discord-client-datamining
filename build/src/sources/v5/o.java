@@ -10,14 +10,14 @@ import w5.c;
 public class o implements n0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private int f51854a;
+    private int f52219a;
 
     public o(int i10) {
-        this.f51854a = i10;
+        this.f52219a = i10;
     }
 
     private s5.d b(s5.d dVar, List list) {
-        int i10 = this.f51854a * 4;
+        int i10 = this.f52219a * 4;
         if (list.size() <= i10) {
             return dVar;
         }
@@ -152,7 +152,7 @@ public class o implements n0 {
             z10 = false;
         }
         if (z10) {
-            cVar.v();
+            cVar.x();
         }
         while (cVar.hasNext()) {
             arrayList.add(Float.valueOf((float) cVar.nextDouble()));
@@ -163,20 +163,20 @@ public class o implements n0 {
             arrayList.add((Float) arrayList.get(1));
             arrayList.add((Float) arrayList.get(2));
             arrayList.add((Float) arrayList.get(3));
-            this.f51854a = 2;
+            this.f52219a = 2;
         }
         if (z10) {
-            cVar.t();
+            cVar.v();
         }
-        if (this.f51854a == -1) {
-            this.f51854a = arrayList.size() / 4;
+        if (this.f52219a == -1) {
+            this.f52219a = arrayList.size() / 4;
         }
-        int i10 = this.f51854a;
+        int i10 = this.f52219a;
         float[] fArr = new float[i10];
         int[] iArr = new int[i10];
         int i11 = 0;
         int i12 = 0;
-        for (int i13 = 0; i13 < this.f51854a * 4; i13++) {
+        for (int i13 = 0; i13 < this.f52219a * 4; i13++) {
             int i14 = i13 / 4;
             double floatValue = ((Float) arrayList.get(i13)).floatValue();
             int i15 = i13 % 4;

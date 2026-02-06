@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/video_calls/native/components/DisconnectRemoteButton.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun68279: for (var _fun68279_ip = 0;;) switch (_fun68279_ip) {
+        _fun68307: for (var _fun68307_ip = 0;;) switch (_fun68307_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.channel;
@@ -81,14 +81,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = _closure1_slot1;
                 var10 = _closure1_slot3;
                 if (var7) {
-                    _fun68279_ip = 140;
-                    continue _fun68279
+                    _fun68307_ip = 140;
+                    continue _fun68307
                 }
             case 131:
                 var7 = 6;
                 var7 = var10[var7];
-                _fun68279_ip = 147;
-                continue _fun68279;
+                _fun68307_ip = 147;
+                continue _fun68307;
             case 140:
                 var9 = 5;
                 var7 = var10[var9];
@@ -110,13 +110,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.accessibilityLabel = var6;
                 var0.isSmallSize = var5;
                 var4 = function() {
-                    _fun68281: for (var _fun68281_ip = 0;;) switch (_fun68281_ip) {
+                    _fun68309: for (var _fun68309_ip = 0;;) switch (_fun68309_ip) {
                         case 0:
                             var2 = _closure2_slot1;
                             var1 = null;
                             if (!(var1 == var2)) {
-                                _fun68281_ip = 50;
-                                continue _fun68281
+                                _fun68309_ip = 50;
+                                continue _fun68309
                             }
                         case 13:
                             var3 = _closure1_slot0;
@@ -127,8 +127,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var3.bind(var1)(var2);
                             var1 = var2.disconnectRemote;
                             var1 = var1.bind(var2)();
-                            _fun68281_ip = 117;
-                            continue _fun68281;
+                            _fun68309_ip = 117;
+                            continue _fun68309;
                         case 50:
                             var3 = _closure1_slot0;
                             var4 = _closure1_slot3;
@@ -157,4 +157,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.DisconnectRemoteButton = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3519, 33, 566, 7927, 5327, 8482, 1234, 8316, 8224, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3521, 33, 566, 7932, 5328, 8488, 1234, 8322, 8230, 2]);

@@ -7,10 +7,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
     var _closure1_slot2 = var6;
-    var0 = ['children', 'style', 'visible', 'size'];
+    var0 = ['children', 'style', 'onPress', 'to', 'accessibilityRole'];
     var _closure1_slot3 = var0;
-    var0 = ['backgroundColor'];
-    var _closure1_slot4 = var0;
     var0 = global;
     var8 = var0.Object;
     var7 = var8.defineProperty;
@@ -23,301 +21,378 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var6[var0];
     var0 = undefined;
     var3 = var5.bind(var0)(var3);
-    var _closure1_slot5 = var3;
+    var _closure1_slot4 = var3;
     var3 = 1;
     var3 = var6[var3];
     var3 = var5.bind(var0)(var3);
-    var _closure1_slot6 = var3;
+    var _closure1_slot5 = var3;
     var3 = 2;
-    var5 = var6[var3];
-    var3 = metroImportAll;
-    var3 = var3.bind(var0)(var5);
+    var3 = var6[var3];
+    var3 = var4.bind(var0)(var3);
+    var5 = var3.Platform;
+    var5 = var3.Pressable;
+    var _closure1_slot6 = var5;
+    var5 = var3.StyleSheet;
+    var3 = var3.Text;
     var _closure1_slot7 = var3;
     var3 = 3;
     var3 = var6[var3];
     var3 = var4.bind(var0)(var3);
-    var5 = var3.Animated;
-    var _closure1_slot8 = var5;
-    var5 = var3.StyleSheet;
-    var _closure1_slot9 = var5;
-    var3 = 4;
-    var3 = var6[var3];
-    var3 = var4.bind(var0)(var3);
-    var3 = var3.jsx;
-    var _closure1_slot10 = var3;
+    var4 = var3.jsx;
+    var _closure1_slot8 = var4;
+    var3 = var3.jsxs;
+    var _closure1_slot9 = var3;
     var4 = var5.create;
     var3 = {};
     var6 = {
-        'alignSelf': 'flex-end',
-        'textAlign': 'center',
-        'paddingHorizontal': 4,
-        'overflow': 'hidden'
+        'flex': 1,
+        'alignItems': 'center'
     };
-    var3.container = var6;
+    var3.tab = var6;
+    var6 = {
+        'justifyContent': 'flex-end',
+        'flexDirection': 'column'
+    };
+    var3.tabPortrait = var6;
+    var6 = {
+        'justifyContent': 'center',
+        'flexDirection': 'row'
+    };
+    var3.tabLandscape = var6;
+    var6 = {
+        'textAlign': 'center',
+        'backgroundColor': 'transparent'
+    };
+    var3.label = var6;
+    var6 = {};
+    var7 = 10;
+    var6.fontSize = var7;
+    var3.labelBeneath = var6;
+    var6 = {
+        'fontSize': 13,
+        'marginLeft': 20,
+        'marginTop': 3
+    };
+    var3.labelBeside = var6;
+    var6 = {};
+    var7 = 'flex';
+    var6.display = var7;
+    var3.button = var6;
     var3 = var4.bind(var5)(var3);
-    var _closure1_slot11 = var3;
+    var _closure1_slot10 = var3;
     var1 = function arg0() {
-        _fun100650: for (var _fun100650_ip = 0;;) switch (_fun100650_ip) {
+        _fun100653: for (var _fun100653_ip = 0;;) switch (_fun100653_ip) {
             case 0:
                 var4 = arg0;
-                var8 = var4.children;
-                var5 = var4.style;
-                var0 = var4.visible;
-                var3 = undefined;
-                var2 = var3 === var0;
-                if (var2) {
-                    _fun100650_ip = 33;
-                    continue _fun100650
+                var3 = var4.focused;
+                var9 = var4.route;
+                var8 = var4.descriptor;
+                var11 = var4.label;
+                var24 = var4.icon;
+                var26 = var4.badge;
+                var25 = var4.badgeStyle;
+                var21 = var4.to;
+                var2 = var4.button;
+                var1 = undefined;
+                if (!(var1 === var2)) {
+                    _fun100653_ip = 69;
+                    continue _fun100653
                 }
-            case 30:
-                var2 = var0;
-            case 33:
-                var _closure2_slot0 = var2;
-                var0 = var4.size;
-                var15 = 18;
-                if (!(var3 !== var0)) {
-                    _fun100650_ip = 52;
-                    continue _fun100650
-                }
-            case 49:
-                var15 = var0;
-            case 52:
-                var1 = _closure1_slot6;
-                var0 = _closure1_slot3;
-                var7 = var1.bind(var3)(var4, var0);
-                var13 = _closure1_slot7;
-                var1 = var13.useState;
-                var0 = function() { // Environment: var9
-                    _fun100651: for (var _fun100651_ip = 0;;) switch (_fun100651_ip) {
-                        case 0:
-                            var0 = _closure1_slot8;
-                            var2 = var0.Value;
-                            var1 = _closure2_slot0;
-                            var0 = 0;
-                            if (!var1) {
-                                _fun100651_ip = 28;
-                                continue _fun100651
-                            }
-                        case 25:
-                            var0 = 1;
-                        case 28:
-                            var1 = var2.prototype;
-                            var1 = Object.create(var1, {
-                                constructor: {
-                                    value: var2
-                                }
-                            });
-                            var4 = var1;
-                            var3 = var0;
-                            var0 = new var4[var2](var3, var2);
-                            var0 = var0 instanceof Object ? var0 : var1;
-                            return var0;
-                    }
+            case 60:
+                var2 = function(arg0) { // Environment: var0
+                    var5 = arg0;
+                    var0 = var5.children;
+                    var8 = var5.style;
+                    var9 = var5.onPress;
+                    var1 = var5.to;
+                    var10 = var5.accessibilityRole;
+                    var4 = _closure1_slot4;
+                    var2 = _closure1_slot3;
+                    var3 = undefined;
+                    var7 = var4.bind(var3)(var5, var2);
+                    var2 = _closure1_slot8;
+                    var1 = _closure1_slot6;
+                    var4 = global;
+                    var6 = var4.Object;
+                    var5 = var6.assign;
+                    var4 = {};
+                    var4.accessibilityRole = var10;
+                    var4.onPress = var9;
+                    var4.style = var8;
+                    var4.children = var0;
+                    var0 = {};
+                    var0 = var5.bind(var6)(var0, var7, var4);
+                    var0 = var2.bind(var3)(var1, var0);
+                    return var0;
                 };
-                var0 = var1.bind(var13)(var0);
-                var6 = _closure1_slot5;
-                var16 = 1;
-                var0 = var6.bind(var3)(var0, var16);
-                var4 = 0;
-                var14 = var0[var4];
-                var _closure2_slot1 = var14;
-                var0 = var13.useState;
-                var1 = var0.bind(var13)(var2);
-                var0 = 2;
-                var1 = var6.bind(var3)(var1, var0);
-                var6 = var1[var4];
-                var _closure2_slot2 = var6;
-                var4 = var1[var16];
-                var _closure2_slot3 = var4;
-                var11 = _closure1_slot0;
-                var12 = _closure1_slot2;
-                var1 = 5;
-                var1 = var12[var1];
-                var11 = var11.bind(var3)(var1);
-                var1 = var11.useTheme;
-                var1 = var1.bind(var11)();
-                var12 = var13.useEffect;
-                var11 = new Array(3);
-                var11[0] = var14;
-                var11[1] = var6;
-                var11[2] = var2;
-                var9 = function() { // Environment: var9
-                    _fun100652: for (var _fun100652_ip = 0;;) switch (_fun100652_ip) {
-                        case 0:
-                            var1 = _closure2_slot2;
-                            if (var1) {
-                                _fun100652_ip = 16;
-                                continue _fun100652
-                            }
-                        case 12:
-                            var1 = undefined;
-                            return var1;
-                        case 16:
-                            var4 = _closure1_slot8;
-                            var3 = var4.timing;
-                            var2 = _closure2_slot1;
-                            var1 = {
-                                'toValue': null,
-                                'duration': 150,
-                                'useNativeDriver': true
-                            };
-                            var6 = _closure2_slot0;
-                            var5 = 0;
-                            if (!var6) {
-                                _fun100652_ip = 59;
-                                continue _fun100652
-                            }
-                        case 56:
-                            var5 = 1;
-                        case 59:
-                            var1.toValue = var5;
-                            var3 = var3.bind(var4)(var2, var1);
-                            var2 = var3.start;
-                            var1 = function(arg0) { // Environment: var0
-                                _fun100653: for (var _fun100653_ip = 0;;) switch (_fun100653_ip) {
-                                    case 0:
-                                        var0 = arg0;
-                                        var0 = var0.finished;
-                                        if (!var0) {
-                                            _fun100653_ip = 22;
-                                            continue _fun100653
-                                        }
-                                    case 12:
-                                        var1 = _closure2_slot0;
-                                        var0 = !var1;
-                                    case 22:
-                                        if (!var0) {
-                                            _fun100653_ip = 41;
-                                            continue _fun100653
-                                        }
-                                    case 25:
-                                        var2 = _closure2_slot3;
-                                        var1 = undefined;
-                                        var0 = false;
-                                        var0 = var2.bind(var1)(var0);
-                                    case 41:
-                                        var0 = undefined;
-                                        return var0;
-                                }
-                            };
-                            var1 = var2.bind(var3)(var1);
-                            var0 = function() { // Environment: var0
-                                var1 = _closure2_slot1;
-                                var0 = var1.stopAnimation;
-                                var0 = var0.bind(var1)();
-                                return var0;
-                            };
-                            return var0;
-                    }
-                };
-                var9 = var12.bind(var13)(var9, var11);
-                if (var6) {
-                    _fun100650_ip = 229;
-                    continue _fun100650
+            case 69:
+                var5 = var4.accessibilityLabel;
+                var7 = var4.testID;
+                var20 = var4.onPress;
+                var17 = var4.onLongPress;
+                var15 = var4.horizontal;
+                var13 = var4.activeTintColor;
+                var18 = var4.inactiveTintColor;
+                var10 = var4.activeBackgroundColor;
+                var6 = 'transparent';
+                var0 = var6;
+                if (!(var1 !== var10)) {
+                    _fun100653_ip = 129;
+                    continue _fun100653
                 }
-            case 215:
-                if (var2) {
-                    _fun100650_ip = 222;
-                    continue _fun100650
+            case 126:
+                var0 = var10;
+            case 129:
+                var10 = var4.inactiveBackgroundColor;
+                if (!(var1 !== var10)) {
+                    _fun100653_ip = 142;
+                    continue _fun100653
                 }
-            case 218:
-                var2 = null;
-                return var2;
-            case 222:
-                var2 = true;
-                var2 = var4.bind(var3)(var2);
+            case 139:
+                var6 = var10;
+            case 142:
+                var10 = var4.showLabel;
+                var19 = var1 === var10;
+                if (var19) {
+                    _fun100653_ip = 158;
+                    continue _fun100653
+                }
+            case 155:
+                var19 = var10;
+            case 158:
+                var12 = var4.allowFontScaling;
+                var14 = var4.labelStyle;
+                var23 = var4.iconStyle;
+                var4 = var4.style;
+                var22 = _closure1_slot0;
+                var27 = _closure1_slot2;
+                var10 = 4;
+                var10 = var27[var10];
+                var22 = var22.bind(var1)(var10);
+                var10 = var22.useTheme;
+                var10 = var10.bind(var22)();
+                var10 = var10.colors;
+                if (!(var1 === var13)) {
+                    _fun100653_ip = 229;
+                    continue _fun100653
+                }
+            case 223:
+                var13 = var10.primary;
             case 229:
-                var4 = _closure1_slot9;
-                var2 = var4.flatten;
-                var5 = var2.bind(var4)(var5);
-                if (var5) {
-                    _fun100650_ip = 249;
-                    continue _fun100650
+                if (!(var1 === var18)) {
+                    _fun100653_ip = 315;
+                    continue _fun100653
                 }
-            case 247:
-                var5 = {};
-            case 249:
-                var2 = var5.backgroundColor;
-                if (!(var3 === var2)) {
-                    _fun100650_ip = 269;
-                    continue _fun100650
+            case 233:
+                var29 = _closure1_slot1;
+                var30 = _closure1_slot2;
+                var22 = 5;
+                var27 = var30[var22];
+                var28 = var29.bind(var1)(var27);
+                var27 = var10.text;
+                var28 = var28.bind(var1)(var27);
+                var27 = var28.mix;
+                var22 = var30[var22];
+                var22 = var29.bind(var1)(var22);
+                var10 = var10.card;
+                var22 = var22.bind(var1)(var10);
+                var10 = 0.5;
+                var22 = var27.bind(var28)(var22, var10);
+                var10 = var22.hex;
+                var18 = var10.bind(var22)();
+            case 315:
+                var10 = {};
+                var10.route = var9;
+                var10.focused = var3;
+                if (!var3) {
+                    _fun100653_ip = 333;
+                    continue _fun100653
                 }
-            case 258:
-                var1 = var1.colors;
-                var2 = var1.notification;
-            case 269:
-                var4 = _closure1_slot6;
-                var1 = _closure1_slot4;
-                var9 = var4.bind(var3)(var5, var1);
-                var4 = _closure1_slot1;
-                var5 = _closure1_slot2;
-                var1 = 6;
-                var1 = var5[var1];
-                var1 = var4.bind(var3)(var1);
-                var4 = var1.bind(var3)(var2);
-                var1 = var4.isLight;
-                var1 = var1.bind(var4)();
-                var17 = 'white';
-                var13 = var2;
-                if (!var1) {
-                    _fun100650_ip = 332;
-                    continue _fun100650
-                }
-            case 328:
-                var17 = 'black';
-            case 332:
-                var0 = var15 / var0;
-                var4 = global;
-                var5 = var4.Math;
-                var2 = var5.floor;
-                var1 = 3;
-                var6 = var1 * var15;
-                var1 = 4;
-                var1 = var6 / var1;
-                var12 = var2.bind(var5)(var1);
-                var2 = _closure1_slot10;
-                var1 = _closure1_slot8;
-                var1 = var1.Text;
-                var6 = var4.Object;
-                var5 = var6.assign;
-                var4 = {};
-                var4.numberOfLines = var16;
-                var11 = {};
-                var19 = {};
-                var20 = var14.interpolate;
-                var18 = {};
-                var21 = [0, 1];
-                var18.inputRange = var21;
-                var21 = [0.5, 1];
-                var18.outputRange = var21;
-                var18 = var20.bind(var14)(var18);
-                var19.scale = var18;
-                var18 = new Array(1);
-                var18[0] = var19;
-                var11.transform = var18;
-                var11.color = var17;
-                var16 = var15 - var16;
-                var11.lineHeight = var16;
-                var11.height = var15;
-                var11.minWidth = var15;
-                var11.opacity = var14;
-                var11.backgroundColor = var13;
-                var11.fontSize = var12;
-                var11.borderRadius = var0;
-                var0 = new Array(3);
-                var0[0] = var11;
-                var10 = _closure1_slot11;
-                var10 = var10.container;
-                var0[1] = var10;
-                var0[2] = var9;
-                var4.style = var0;
+            case 330:
+                var6 = var0;
+            case 333:
                 var0 = {};
-                var0.children = var8;
-                var0 = var5.bind(var6)(var4, var7, var0);
-                var0 = var2.bind(var3)(var1, var0);
+                var0.to = var21;
+                var0.onPress = var20;
+                var0.onLongPress = var17;
+                var0.testID = var7;
+                var0.accessibilityLabel = var5;
+                var5 = 'tab';
+                var0.accessibilityRole = var5;
+                var5 = {};
+                var5.selected = var3;
+                var0.accessibilityState = var5;
+                if (var3) {
+                    _fun100653_ip = 386;
+                    continue _fun100653
+                }
+            case 380:
+                var3 = new Array(0);
+                _fun100653_ip = 396;
+                continue _fun100653;
+            case 386:
+                var3 = ['selected'];
+            case 396:
+                var0.accessibilityStates = var3;
+                var3 = _closure1_slot10;
+                var5 = var3.tab;
+                var3 = new Array(4);
+                var3[0] = var5;
+                var5 = {};
+                var5.backgroundColor = var6;
+                var3[1] = var5;
+                var6 = _closure1_slot10;
+                if (var15) {
+                    _fun100653_ip = 446;
+                    continue _fun100653
+                }
+            case 438:
+                var5 = var6.tabPortrait;
+                _fun100653_ip = 452;
+                continue _fun100653;
+            case 446:
+                var5 = var6.tabLandscape;
+            case 452:
+                var3[2] = var5;
+                var3[3] = var4;
+                var0.style = var3;
+                var5 = _closure1_slot9;
+                var3 = _closure1_slot5;
+                var4 = var3.Fragment;
+                var3 = {};
+                var22 = var10.focused;
+                var17 = null;
+                if (!(var1 !== var24)) {
+                    _fun100653_ip = 568;
+                    continue _fun100653
+                }
+            case 492:
+                var21 = _closure1_slot8;
+                var20 = _closure1_slot1;
+                var27 = _closure1_slot2;
+                var6 = 6;
+                var6 = var27[var6];
+                var20 = var20.bind(var1)(var6);
+                var6 = {};
+                var6.route = var9;
+                var6.horizontal = var15;
+                var6.badge = var26;
+                var6.badgeStyle = var25;
+                var6.activeTintColor = var13;
+                var6.inactiveTintColor = var18;
+                var6.renderIcon = var24;
+                var6.style = var23;
+                var6.focused = var22;
+                var17 = var21.bind(var1)(var20, var6);
+            case 568:
+                var6 = new Array(2);
+                var6[0] = var17;
+                var10 = var10.focused;
+                var17 = false;
+                var7 = null;
+                if (!(var17 !== var19)) {
+                    _fun100653_ip = 793;
+                    continue _fun100653
+                }
+            case 593:
+                if (var10) {
+                    _fun100653_ip = 598;
+                    continue _fun100653
+                }
+            case 596:
+                _fun100653_ip = 601;
+                continue _fun100653;
+            case 598:
+                var18 = var13;
+            case 601:
+                var17 = 'string';
+                var13 = typeof var11;
+                if (!(var17 !== var13)) {
+                    _fun100653_ip = 700;
+                    continue _fun100653
+                }
+            case 612:
+                var8 = var8.options;
+                var13 = var8.tabBarLabel;
+                var13 = typeof var13;
+                if (!(var17 !== var13)) {
+                    _fun100653_ip = 653;
+                    continue _fun100653
+                }
+            case 630:
+                var13 = var8.title;
+                if (!(var1 === var13)) {
+                    _fun100653_ip = 646;
+                    continue _fun100653
+                }
+            case 639:
+                var9 = var9.name;
+                _fun100653_ip = 651;
+                continue _fun100653;
+            case 646:
+                var9 = var8.title;
+            case 651:
+                _fun100653_ip = 659;
+                continue _fun100653;
+            case 653:
+                var9 = var8.tabBarLabel;
+            case 659:
+                var8 = {};
+                var8.focused = var10;
+                var8.color = var18;
+                var10 = 'below-icon';
+                if (!var15) {
+                    _fun100653_ip = 685;
+                    continue _fun100653
+                }
+            case 679:
+                var10 = 'beside-icon';
+            case 685:
+                var8.position = var10;
+                var8.children = var9;
+                var7 = var11.bind(var1)(var8);
+                _fun100653_ip = 793;
+                continue _fun100653;
+            case 700:
+                var10 = _closure1_slot8;
+                var9 = _closure1_slot7;
+                var8 = {};
+                var13 = 1;
+                var8.numberOfLines = var13;
+                var13 = _closure1_slot10;
+                var17 = var13.label;
+                var13 = new Array(4);
+                var13[0] = var17;
+                var17 = {};
+                var17.color = var18;
+                var13[1] = var17;
+                var16 = _closure1_slot10;
+                if (var15) {
+                    _fun100653_ip = 760;
+                    continue _fun100653
+                }
+            case 752:
+                var15 = var16.labelBeneath;
+                _fun100653_ip = 766;
+                continue _fun100653;
+            case 760:
+                var15 = var16.labelBeside;
+            case 766:
+                var13[2] = var15;
+                var13[3] = var14;
+                var8.style = var13;
+                var8.allowFontScaling = var12;
+                var8.children = var11;
+                var7 = var10.bind(var1)(var9, var8);
+            case 793:
+                var6[1] = var7;
+                var3.children = var6;
+                var3 = var5.bind(var1)(var4, var3);
+                var0.children = var3;
+                var0 = var2.bind(var1)(var0);
                 return var0;
         }
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 29, 31, 27, 33, 1470, 5832]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [29, 31, 27, 33, 1470, 5836, 13126]);

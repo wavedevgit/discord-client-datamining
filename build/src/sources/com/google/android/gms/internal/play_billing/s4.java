@@ -5,7 +5,7 @@ import com.discord.misc.utilities.chat_view_types.ChatViewRecyclerTypes;
 final class s4 implements u1 {
 
     /* renamed from: a  reason: collision with root package name */
-    static final u1 f14372a = new s4();
+    static final u1 f14335a = new s4();
 
     private s4() {
     }

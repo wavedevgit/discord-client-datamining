@@ -1,43 +1,62 @@
 package og;
 
-import xi.c;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class g5 implements xi.d {
-
-    /* renamed from: a  reason: collision with root package name */
-    static final g5 f42900a = new g5();
-
-    /* renamed from: b  reason: collision with root package name */
-    private static final xi.c f42901b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private static final xi.c f42902c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private static final xi.c f42903d;
-
-    static {
-        c.b a10 = xi.c.a("modelType");
-        s1 s1Var = new s1();
-        s1Var.a(1);
-        f42901b = a10.b(s1Var.b()).a();
-        c.b a11 = xi.c.a("isSuccessful");
-        s1 s1Var2 = new s1();
-        s1Var2.a(2);
-        f42902c = a11.b(s1Var2.b()).a();
-        c.b a12 = xi.c.a("modelName");
-        s1 s1Var3 = new s1();
-        s1Var3.a(3);
-        f42903d = a12.b(s1Var3.b()).a();
+public abstract class g5 {
+    public static String a(String str, Object... objArr) {
+        int length;
+        int length2;
+        int indexOf;
+        String str2;
+        int i10 = 0;
+        int i11 = 0;
+        while (true) {
+            length = objArr.length;
+            if (i11 >= length) {
+                break;
+            }
+            Object obj = objArr[i11];
+            if (obj == null) {
+                str2 = "null";
+            } else {
+                try {
+                    str2 = obj.toString();
+                } catch (Exception e10) {
+                    String str3 = obj.getClass().getName() + '@' + Integer.toHexString(System.identityHashCode(obj));
+                    Logger.getLogger("com.google.common.base.Strings").logp(Level.WARNING, "com.google.common.base.Strings", "lenientToString", "Exception during lenientFormat for ".concat(str3), (Throwable) e10);
+                    str2 = "<" + str3 + " threw " + e10.getClass().getName() + ">";
+                }
+            }
+            objArr[i11] = str2;
+            i11++;
+        }
+        StringBuilder sb2 = new StringBuilder(str.length() + (length * 16));
+        int i12 = 0;
+        while (true) {
+            length2 = objArr.length;
+            if (i10 >= length2 || (indexOf = str.indexOf("%s", i12)) == -1) {
+                break;
+            }
+            sb2.append((CharSequence) str, i12, indexOf);
+            sb2.append(objArr[i10]);
+            i10++;
+            i12 = indexOf + 2;
+        }
+        sb2.append((CharSequence) str, i12, str.length());
+        if (i10 < length2) {
+            sb2.append(" [");
+            sb2.append(objArr[i10]);
+            for (int i13 = i10 + 1; i13 < objArr.length; i13++) {
+                sb2.append(", ");
+                sb2.append(objArr[i13]);
+            }
+            sb2.append(']');
+        }
+        return sb2.toString();
     }
 
-    private g5() {
-    }
-
-    @Override // xi.d
-    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
-        android.support.v4.media.session.b.a(obj);
-        xi.e eVar = (xi.e) obj2;
-        throw null;
+    public static boolean b(String str) {
+        return e3.a(str);
     }
 }

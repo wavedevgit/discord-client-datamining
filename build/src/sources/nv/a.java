@@ -1,20 +1,22 @@
 package nv;
-
-import com.facebook.react.ReactPackage;
-import com.facebook.react.bridge.ReactApplicationContext;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-import org.linusu.RNGetRandomValuesModule;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public class a implements ReactPackage {
-    @Override // com.facebook.react.ReactPackage
-    public List createNativeModules(ReactApplicationContext reactApplicationContext) {
-        return Arrays.asList(new RNGetRandomValuesModule(reactApplicationContext));
+class a {
+
+    /* renamed from: b  reason: collision with root package name */
+    private int f41169b = 0;
+
+    /* renamed from: a  reason: collision with root package name */
+    private final StringBuilder f41168a = new StringBuilder();
+
+    public void a(CharSequence charSequence) {
+        if (this.f41169b != 0) {
+            this.f41168a.append('\n');
+        }
+        this.f41168a.append(charSequence);
+        this.f41169b++;
     }
 
-    @Override // com.facebook.react.ReactPackage
-    public List createViewManagers(ReactApplicationContext reactApplicationContext) {
-        return Collections.EMPTY_LIST;
+    public String b() {
+        return this.f41168a.toString();
     }
 }

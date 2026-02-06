@@ -14,23 +14,23 @@ import java.util.concurrent.atomic.AtomicInteger;
 public final class n extends SpannableStringBuilder {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Class f4138d;
+    private final Class f4467d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final List f4139e;
+    private final List f4468e;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static class a implements TextWatcher, SpanWatcher {
 
         /* renamed from: d  reason: collision with root package name */
-        final Object f4140d;
+        final Object f4469d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final AtomicInteger f4141e = new AtomicInteger(0);
+        private final AtomicInteger f4470e = new AtomicInteger(0);
 
         a(Object obj) {
-            this.f4140d = obj;
+            this.f4469d = obj;
         }
 
         private boolean b(Object obj) {
@@ -38,36 +38,36 @@ public final class n extends SpannableStringBuilder {
         }
 
         final void a() {
-            this.f4141e.incrementAndGet();
+            this.f4470e.incrementAndGet();
         }
 
         @Override // android.text.TextWatcher
         public void afterTextChanged(Editable editable) {
-            ((TextWatcher) this.f4140d).afterTextChanged(editable);
+            ((TextWatcher) this.f4469d).afterTextChanged(editable);
         }
 
         @Override // android.text.TextWatcher
         public void beforeTextChanged(CharSequence charSequence, int i10, int i11, int i12) {
-            ((TextWatcher) this.f4140d).beforeTextChanged(charSequence, i10, i11, i12);
+            ((TextWatcher) this.f4469d).beforeTextChanged(charSequence, i10, i11, i12);
         }
 
         final void c() {
-            this.f4141e.decrementAndGet();
+            this.f4470e.decrementAndGet();
         }
 
         @Override // android.text.SpanWatcher
         public void onSpanAdded(Spannable spannable, Object obj, int i10, int i11) {
-            if (this.f4141e.get() > 0 && b(obj)) {
+            if (this.f4470e.get() > 0 && b(obj)) {
                 return;
             }
-            ((SpanWatcher) this.f4140d).onSpanAdded(spannable, obj, i10, i11);
+            ((SpanWatcher) this.f4469d).onSpanAdded(spannable, obj, i10, i11);
         }
 
         @Override // android.text.SpanWatcher
         public void onSpanChanged(Spannable spannable, Object obj, int i10, int i11, int i12, int i13) {
             int i14;
             int i15;
-            if (this.f4141e.get() > 0 && b(obj)) {
+            if (this.f4470e.get() > 0 && b(obj)) {
                 return;
             }
             if (Build.VERSION.SDK_INT < 28) {
@@ -77,38 +77,38 @@ public final class n extends SpannableStringBuilder {
                 if (i12 > i13) {
                     i14 = i10;
                     i15 = 0;
-                    ((SpanWatcher) this.f4140d).onSpanChanged(spannable, obj, i14, i11, i15, i13);
+                    ((SpanWatcher) this.f4469d).onSpanChanged(spannable, obj, i14, i11, i15, i13);
                 }
             }
             i14 = i10;
             i15 = i12;
-            ((SpanWatcher) this.f4140d).onSpanChanged(spannable, obj, i14, i11, i15, i13);
+            ((SpanWatcher) this.f4469d).onSpanChanged(spannable, obj, i14, i11, i15, i13);
         }
 
         @Override // android.text.SpanWatcher
         public void onSpanRemoved(Spannable spannable, Object obj, int i10, int i11) {
-            if (this.f4141e.get() > 0 && b(obj)) {
+            if (this.f4470e.get() > 0 && b(obj)) {
                 return;
             }
-            ((SpanWatcher) this.f4140d).onSpanRemoved(spannable, obj, i10, i11);
+            ((SpanWatcher) this.f4469d).onSpanRemoved(spannable, obj, i10, i11);
         }
 
         @Override // android.text.TextWatcher
         public void onTextChanged(CharSequence charSequence, int i10, int i11, int i12) {
-            ((TextWatcher) this.f4140d).onTextChanged(charSequence, i10, i11, i12);
+            ((TextWatcher) this.f4469d).onTextChanged(charSequence, i10, i11, i12);
         }
     }
 
     n(Class cls, CharSequence charSequence) {
         super(charSequence);
-        this.f4139e = new ArrayList();
+        this.f4468e = new ArrayList();
         b2.e.h(cls, "watcherClass cannot be null");
-        this.f4138d = cls;
+        this.f4467d = cls;
     }
 
     private void b() {
-        for (int i10 = 0; i10 < this.f4139e.size(); i10++) {
-            ((a) this.f4139e.get(i10)).a();
+        for (int i10 = 0; i10 < this.f4468e.size(); i10++) {
+            ((a) this.f4468e.get(i10)).a();
         }
     }
 
@@ -117,15 +117,15 @@ public final class n extends SpannableStringBuilder {
     }
 
     private void e() {
-        for (int i10 = 0; i10 < this.f4139e.size(); i10++) {
-            ((a) this.f4139e.get(i10)).onTextChanged(this, 0, length(), length());
+        for (int i10 = 0; i10 < this.f4468e.size(); i10++) {
+            ((a) this.f4468e.get(i10)).onTextChanged(this, 0, length(), length());
         }
     }
 
     private a f(Object obj) {
-        for (int i10 = 0; i10 < this.f4139e.size(); i10++) {
-            a aVar = (a) this.f4139e.get(i10);
-            if (aVar.f4140d == obj) {
+        for (int i10 = 0; i10 < this.f4468e.size(); i10++) {
+            a aVar = (a) this.f4468e.get(i10);
+            if (aVar.f4469d == obj) {
                 return aVar;
             }
         }
@@ -133,7 +133,7 @@ public final class n extends SpannableStringBuilder {
     }
 
     private boolean g(Class cls) {
-        if (this.f4138d == cls) {
+        if (this.f4467d == cls) {
             return true;
         }
         return false;
@@ -147,8 +147,8 @@ public final class n extends SpannableStringBuilder {
     }
 
     private void i() {
-        for (int i10 = 0; i10 < this.f4139e.size(); i10++) {
-            ((a) this.f4139e.get(i10)).c();
+        for (int i10 = 0; i10 < this.f4468e.size(); i10++) {
+            ((a) this.f4468e.get(i10)).c();
         }
     }
 
@@ -194,7 +194,7 @@ public final class n extends SpannableStringBuilder {
             a[] aVarArr = (a[]) super.getSpans(i10, i11, a.class);
             Object[] objArr = (Object[]) Array.newInstance(cls, aVarArr.length);
             for (int i12 = 0; i12 < aVarArr.length; i12++) {
-                objArr[i12] = aVarArr[i12].f4140d;
+                objArr[i12] = aVarArr[i12].f4469d;
             }
             return objArr;
         }
@@ -219,7 +219,7 @@ public final class n extends SpannableStringBuilder {
         }
         super.removeSpan(obj);
         if (aVar != null) {
-            this.f4139e.remove(aVar);
+            this.f4468e.remove(aVar);
         }
     }
 
@@ -227,7 +227,7 @@ public final class n extends SpannableStringBuilder {
     public void setSpan(Object obj, int i10, int i11, int i12) {
         if (h(obj)) {
             a aVar = new a(obj);
-            this.f4139e.add(aVar);
+            this.f4468e.add(aVar);
             obj = aVar;
         }
         super.setSpan(obj, i10, i11, i12);
@@ -235,7 +235,7 @@ public final class n extends SpannableStringBuilder {
 
     @Override // android.text.SpannableStringBuilder, java.lang.CharSequence
     public CharSequence subSequence(int i10, int i11) {
-        return new n(this.f4138d, this, i10, i11);
+        return new n(this.f4467d, this, i10, i11);
     }
 
     @Override // android.text.SpannableStringBuilder, android.text.Editable
@@ -266,9 +266,9 @@ public final class n extends SpannableStringBuilder {
 
     n(Class cls, CharSequence charSequence, int i10, int i11) {
         super(charSequence, i10, i11);
-        this.f4139e = new ArrayList();
+        this.f4468e = new ArrayList();
         b2.e.h(cls, "watcherClass cannot be null");
-        this.f4138d = cls;
+        this.f4467d = cls;
     }
 
     @Override // android.text.SpannableStringBuilder, android.text.Editable

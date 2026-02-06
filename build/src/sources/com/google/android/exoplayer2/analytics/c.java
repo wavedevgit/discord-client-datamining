@@ -28,7 +28,7 @@ import com.google.android.exoplayer2.decoder.DecoderCounters;
 import com.google.android.exoplayer2.j;
 import com.google.android.exoplayer2.source.LoadEventInfo;
 import com.google.android.exoplayer2.source.MediaLoadData;
-import com.google.android.exoplayer2.upstream.g;
+import com.google.android.exoplayer2.upstream.h;
 import com.google.android.exoplayer2.video.VideoSize;
 import fd.r;
 import java.io.FileNotFoundException;
@@ -47,10 +47,10 @@ import mc.p1;
 import mc.q1;
 import mc.r1;
 import mc.s1;
-import mi.s;
-import mi.t0;
 import ne.f0;
 import ne.w0;
+import ni.s;
+import ni.t0;
 import qd.r;
 import rc.h;
 import rc.m;
@@ -60,96 +60,96 @@ public final class c implements AnalyticsListener, d.a {
     private boolean A;
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f12101a;
+    private final Context f12000a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final d f12102b;
+    private final d f12001b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final PlaybackSession f12103c;
+    private final PlaybackSession f12002c;
 
     /* renamed from: i  reason: collision with root package name */
-    private String f12109i;
+    private String f12008i;
 
     /* renamed from: j  reason: collision with root package name */
-    private PlaybackMetrics.Builder f12110j;
+    private PlaybackMetrics.Builder f12009j;
 
     /* renamed from: k  reason: collision with root package name */
-    private int f12111k;
+    private int f12010k;
 
     /* renamed from: n  reason: collision with root package name */
-    private PlaybackException f12114n;
+    private PlaybackException f12013n;
 
     /* renamed from: o  reason: collision with root package name */
-    private b f12115o;
+    private b f12014o;
 
     /* renamed from: p  reason: collision with root package name */
-    private b f12116p;
+    private b f12015p;
 
     /* renamed from: q  reason: collision with root package name */
-    private b f12117q;
+    private b f12016q;
 
     /* renamed from: r  reason: collision with root package name */
-    private Format f12118r;
+    private Format f12017r;
 
     /* renamed from: s  reason: collision with root package name */
-    private Format f12119s;
+    private Format f12018s;
 
     /* renamed from: t  reason: collision with root package name */
-    private Format f12120t;
+    private Format f12019t;
 
     /* renamed from: u  reason: collision with root package name */
-    private boolean f12121u;
+    private boolean f12020u;
 
     /* renamed from: v  reason: collision with root package name */
-    private int f12122v;
+    private int f12021v;
 
     /* renamed from: w  reason: collision with root package name */
-    private boolean f12123w;
+    private boolean f12022w;
 
     /* renamed from: x  reason: collision with root package name */
-    private int f12124x;
+    private int f12023x;
 
     /* renamed from: y  reason: collision with root package name */
-    private int f12125y;
+    private int f12024y;
 
     /* renamed from: z  reason: collision with root package name */
-    private int f12126z;
+    private int f12025z;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Timeline.d f12105e = new Timeline.d();
+    private final Timeline.d f12004e = new Timeline.d();
 
     /* renamed from: f  reason: collision with root package name */
-    private final Timeline.b f12106f = new Timeline.b();
+    private final Timeline.b f12005f = new Timeline.b();
 
     /* renamed from: h  reason: collision with root package name */
-    private final HashMap f12108h = new HashMap();
+    private final HashMap f12007h = new HashMap();
 
     /* renamed from: g  reason: collision with root package name */
-    private final HashMap f12107g = new HashMap();
+    private final HashMap f12006g = new HashMap();
 
     /* renamed from: d  reason: collision with root package name */
-    private final long f12104d = SystemClock.elapsedRealtime();
+    private final long f12003d = SystemClock.elapsedRealtime();
 
     /* renamed from: l  reason: collision with root package name */
-    private int f12112l = 0;
+    private int f12011l = 0;
 
     /* renamed from: m  reason: collision with root package name */
-    private int f12113m = 0;
+    private int f12012m = 0;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public final int f12127a;
+        public final int f12026a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final int f12128b;
+        public final int f12027b;
 
         public a(int i10, int i11) {
-            this.f12127a = i10;
-            this.f12128b = i11;
+            this.f12026a = i10;
+            this.f12027b = i11;
         }
     }
 
@@ -158,47 +158,47 @@ public final class c implements AnalyticsListener, d.a {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public final Format f12129a;
+        public final Format f12028a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final int f12130b;
+        public final int f12029b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final String f12131c;
+        public final String f12030c;
 
         public b(Format format, int i10, String str) {
-            this.f12129a = format;
-            this.f12130b = i10;
-            this.f12131c = str;
+            this.f12028a = format;
+            this.f12029b = i10;
+            this.f12030c = str;
         }
     }
 
     private c(Context context, PlaybackSession playbackSession) {
-        this.f12101a = context.getApplicationContext();
-        this.f12103c = playbackSession;
+        this.f12000a = context.getApplicationContext();
+        this.f12002c = playbackSession;
         com.google.android.exoplayer2.analytics.b bVar = new com.google.android.exoplayer2.analytics.b();
-        this.f12102b = bVar;
+        this.f12001b = bVar;
         bVar.b(this);
     }
 
     private void A(int i10, long j10, Format format, int i11) {
-        TrackChangeEvent.Builder timeSinceCreatedMillis = o1.a(i10).setTimeSinceCreatedMillis(j10 - this.f12104d);
+        TrackChangeEvent.Builder timeSinceCreatedMillis = o1.a(i10).setTimeSinceCreatedMillis(j10 - this.f12003d);
         if (format != null) {
             timeSinceCreatedMillis.setTrackState(1);
             timeSinceCreatedMillis.setTrackChangeReason(p(i11));
-            String str = format.f11687v;
+            String str = format.f11586v;
             if (str != null) {
                 timeSinceCreatedMillis.setContainerMimeType(str);
             }
-            String str2 = format.f11688w;
+            String str2 = format.f11587w;
             if (str2 != null) {
                 timeSinceCreatedMillis.setSampleMimeType(str2);
             }
-            String str3 = format.f11685t;
+            String str3 = format.f11584t;
             if (str3 != null) {
                 timeSinceCreatedMillis.setCodecName(str3);
             }
-            int i12 = format.f11684s;
+            int i12 = format.f11583s;
             if (i12 != -1) {
                 timeSinceCreatedMillis.setBitrate(i12);
             }
@@ -218,7 +218,7 @@ public final class c implements AnalyticsListener, d.a {
             if (i16 != -1) {
                 timeSinceCreatedMillis.setAudioSampleRate(i16);
             }
-            String str4 = format.f11679i;
+            String str4 = format.f11578i;
             if (str4 != null) {
                 Pair l10 = l(str4);
                 timeSinceCreatedMillis.setLanguage((String) l10.first);
@@ -235,22 +235,22 @@ public final class c implements AnalyticsListener, d.a {
             timeSinceCreatedMillis.setTrackState(0);
         }
         this.A = true;
-        this.f12103c.reportTrackChangeEvent(timeSinceCreatedMillis.build());
+        this.f12002c.reportTrackChangeEvent(timeSinceCreatedMillis.build());
     }
 
     private int B(Player player) {
         int O = player.O();
-        if (this.f12121u) {
+        if (this.f12020u) {
             return 5;
         }
-        if (this.f12123w) {
+        if (this.f12022w) {
             return 13;
         }
         if (O == 4) {
             return 11;
         }
         if (O == 2) {
-            int i10 = this.f12112l;
+            int i10 = this.f12011l;
             if (i10 == 0 || i10 == 2) {
                 return 2;
             }
@@ -269,15 +269,15 @@ public final class c implements AnalyticsListener, d.a {
                 return 3;
             }
             return 9;
-        } else if (O == 1 && this.f12112l != 0) {
+        } else if (O == 1 && this.f12011l != 0) {
             return 12;
         } else {
-            return this.f12112l;
+            return this.f12011l;
         }
     }
 
     private boolean e(b bVar) {
-        if (bVar != null && bVar.f12131c.equals(this.f12102b.a())) {
+        if (bVar != null && bVar.f12030c.equals(this.f12001b.a())) {
             return true;
         }
         return false;
@@ -295,44 +295,44 @@ public final class c implements AnalyticsListener, d.a {
         long longValue;
         long longValue2;
         int i10;
-        PlaybackMetrics.Builder builder = this.f12110j;
+        PlaybackMetrics.Builder builder = this.f12009j;
         if (builder != null && this.A) {
-            builder.setAudioUnderrunCount(this.f12126z);
-            this.f12110j.setVideoFramesDropped(this.f12124x);
-            this.f12110j.setVideoFramesPlayed(this.f12125y);
-            Long l10 = (Long) this.f12107g.get(this.f12109i);
-            PlaybackMetrics.Builder builder2 = this.f12110j;
+            builder.setAudioUnderrunCount(this.f12025z);
+            this.f12009j.setVideoFramesDropped(this.f12023x);
+            this.f12009j.setVideoFramesPlayed(this.f12024y);
+            Long l10 = (Long) this.f12006g.get(this.f12008i);
+            PlaybackMetrics.Builder builder2 = this.f12009j;
             if (l10 == null) {
                 longValue = 0;
             } else {
                 longValue = l10.longValue();
             }
             builder2.setNetworkTransferDurationMillis(longValue);
-            Long l11 = (Long) this.f12108h.get(this.f12109i);
-            PlaybackMetrics.Builder builder3 = this.f12110j;
+            Long l11 = (Long) this.f12007h.get(this.f12008i);
+            PlaybackMetrics.Builder builder3 = this.f12009j;
             if (l11 == null) {
                 longValue2 = 0;
             } else {
                 longValue2 = l11.longValue();
             }
             builder3.setNetworkBytesRead(longValue2);
-            PlaybackMetrics.Builder builder4 = this.f12110j;
+            PlaybackMetrics.Builder builder4 = this.f12009j;
             if (l11 != null && l11.longValue() > 0) {
                 i10 = 1;
             } else {
                 i10 = 0;
             }
             builder4.setStreamSource(i10);
-            this.f12103c.reportPlaybackMetrics(this.f12110j.build());
+            this.f12002c.reportPlaybackMetrics(this.f12009j.build());
         }
-        this.f12110j = null;
-        this.f12109i = null;
-        this.f12126z = 0;
-        this.f12124x = 0;
-        this.f12125y = 0;
-        this.f12118r = null;
-        this.f12119s = null;
-        this.f12120t = null;
+        this.f12009j = null;
+        this.f12008i = null;
+        this.f12025z = 0;
+        this.f12023x = 0;
+        this.f12024y = 0;
+        this.f12017r = null;
+        this.f12018s = null;
+        this.f12019t = null;
         this.A = false;
     }
 
@@ -356,8 +356,8 @@ public final class c implements AnalyticsListener, d.a {
         t0 it = sVar.iterator();
         while (it.hasNext()) {
             Tracks.a aVar = (Tracks.a) it.next();
-            for (int i10 = 0; i10 < aVar.f12011d; i10++) {
-                if (aVar.g(i10) && (mVar = aVar.c(i10).f11691z) != null) {
+            for (int i10 = 0; i10 < aVar.f11910d; i10++) {
+                if (aVar.g(i10) && (mVar = aVar.c(i10).f11590z) != null) {
                     return mVar;
                 }
             }
@@ -366,15 +366,15 @@ public final class c implements AnalyticsListener, d.a {
     }
 
     private static int j(m mVar) {
-        for (int i10 = 0; i10 < mVar.f48754o; i10++) {
-            UUID uuid = mVar.o(i10).f48756e;
-            if (uuid.equals(lc.d.f36582d)) {
+        for (int i10 = 0; i10 < mVar.f48838o; i10++) {
+            UUID uuid = mVar.o(i10).f48840e;
+            if (uuid.equals(lc.d.f35975d)) {
                 return 3;
             }
-            if (uuid.equals(lc.d.f36583e)) {
+            if (uuid.equals(lc.d.f35976e)) {
                 return 2;
             }
-            if (uuid.equals(lc.d.f36581c)) {
+            if (uuid.equals(lc.d.f35974c)) {
                 return 6;
             }
         }
@@ -385,35 +385,35 @@ public final class c implements AnalyticsListener, d.a {
         int i10;
         boolean z11;
         int i11;
-        if (playbackException.f11931d == 1001) {
+        if (playbackException.f11830d == 1001) {
             return new a(20, 0);
         }
         if (playbackException instanceof j) {
             j jVar = (j) playbackException;
-            if (jVar.f12604t == 1) {
+            if (jVar.f12565t == 1) {
                 z11 = true;
             } else {
                 z11 = false;
             }
-            i10 = jVar.f12608x;
+            i10 = jVar.f12569x;
         } else {
             i10 = 0;
             z11 = false;
         }
         Throwable th2 = (Throwable) ne.a.e(playbackException.getCause());
         if (th2 instanceof IOException) {
-            if (th2 instanceof g.f) {
-                return new a(5, ((g.f) th2).f13449o);
+            if (th2 instanceof h.f) {
+                return new a(5, ((h.f) th2).f13410o);
             }
-            if (!(th2 instanceof g.e) && !(th2 instanceof l0)) {
-                boolean z12 = th2 instanceof g.d;
+            if (!(th2 instanceof h.e) && !(th2 instanceof l0)) {
+                boolean z12 = th2 instanceof h.d;
                 if (!z12 && !(th2 instanceof d0.a)) {
-                    if (playbackException.f11931d == 1002) {
+                    if (playbackException.f11830d == 1002) {
                         return new a(21, 0);
                     }
                     if (th2 instanceof n.a) {
                         Throwable th3 = (Throwable) ne.a.e(th2.getCause());
-                        int i12 = w0.f39657a;
+                        int i12 = w0.f39012a;
                         if (i12 >= 21 && (th3 instanceof MediaDrm.MediaDrmStateException)) {
                             int Z = w0.Z(((MediaDrm.MediaDrmStateException) th3).getDiagnosticInfo());
                             return new a(h(Z), Z);
@@ -436,7 +436,7 @@ public final class c implements AnalyticsListener, d.a {
                         }
                     } else if ((th2 instanceof s.b) && (th2.getCause() instanceof FileNotFoundException)) {
                         Throwable cause = ((Throwable) ne.a.e(th2.getCause())).getCause();
-                        if (w0.f39657a >= 21 && (cause instanceof ErrnoException) && ((ErrnoException) cause).errno == OsConstants.EACCES) {
+                        if (w0.f39012a >= 21 && (cause instanceof ErrnoException) && ((ErrnoException) cause).errno == OsConstants.EACCES) {
                             return new a(32, 0);
                         }
                         return new a(31, 0);
@@ -453,7 +453,7 @@ public final class c implements AnalyticsListener, d.a {
                     if (cause2 instanceof SocketTimeoutException) {
                         return new a(7, 0);
                     }
-                    if (z12 && ((g.d) th2).f13447i == 1) {
+                    if (z12 && ((h.d) th2).f13408i == 1) {
                         return new a(4, 0);
                     }
                     return new a(8, 0);
@@ -475,21 +475,21 @@ public final class c implements AnalyticsListener, d.a {
                 return new a(23, 0);
             }
             if (th2 instanceof r.b) {
-                return new a(13, w0.Z(((r.b) th2).f22851o));
+                return new a(13, w0.Z(((r.b) th2).f23152o));
             }
             if (th2 instanceof fd.m) {
-                return new a(14, w0.Z(((fd.m) th2).f22810e));
+                return new a(14, w0.Z(((fd.m) th2).f23111e));
             }
             if (th2 instanceof OutOfMemoryError) {
                 return new a(14, 0);
             }
             if (th2 instanceof f.b) {
-                return new a(17, ((f.b) th2).f12228d);
+                return new a(17, ((f.b) th2).f12127d);
             }
             if (th2 instanceof f.e) {
-                return new a(18, ((f.e) th2).f12233d);
+                return new a(18, ((f.e) th2).f12132d);
             }
-            if (w0.f39657a >= 16 && (th2 instanceof MediaCodec.CryptoException)) {
+            if (w0.f39012a >= 16 && (th2 instanceof MediaCodec.CryptoException)) {
                 int errorCode = ((MediaCodec.CryptoException) th2).getErrorCode();
                 return new a(h(errorCode), errorCode);
             }
@@ -537,11 +537,11 @@ public final class c implements AnalyticsListener, d.a {
     }
 
     private static int o(MediaItem mediaItem) {
-        MediaItem.h hVar = mediaItem.f11726e;
+        MediaItem.h hVar = mediaItem.f11625e;
         if (hVar == null) {
             return 0;
         }
-        int z02 = w0.z0(hVar.f11816d, hVar.f11817e);
+        int z02 = w0.z0(hVar.f11715d, hVar.f11716e);
         if (z02 != 0) {
             if (z02 != 1) {
                 if (z02 != 2) {
@@ -569,55 +569,55 @@ public final class c implements AnalyticsListener, d.a {
             int b10 = events.b(i10);
             AnalyticsListener.EventTime c10 = events.c(b10);
             if (b10 == 0) {
-                this.f12102b.g(c10);
+                this.f12001b.g(c10);
             } else if (b10 == 11) {
-                this.f12102b.f(c10, this.f12111k);
+                this.f12001b.f(c10, this.f12010k);
             } else {
-                this.f12102b.d(c10);
+                this.f12001b.d(c10);
             }
         }
     }
 
     private void r(long j10) {
-        int n10 = n(this.f12101a);
-        if (n10 != this.f12113m) {
-            this.f12113m = n10;
-            this.f12103c.reportNetworkEvent(p1.a().setNetworkType(n10).setTimeSinceCreatedMillis(j10 - this.f12104d).build());
+        int n10 = n(this.f12000a);
+        if (n10 != this.f12012m) {
+            this.f12012m = n10;
+            this.f12002c.reportNetworkEvent(p1.a().setNetworkType(n10).setTimeSinceCreatedMillis(j10 - this.f12003d).build());
         }
     }
 
     private void s(long j10) {
         boolean z10;
-        PlaybackException playbackException = this.f12114n;
+        PlaybackException playbackException = this.f12013n;
         if (playbackException == null) {
             return;
         }
-        Context context = this.f12101a;
-        if (this.f12122v == 4) {
+        Context context = this.f12000a;
+        if (this.f12021v == 4) {
             z10 = true;
         } else {
             z10 = false;
         }
         a k10 = k(playbackException, context, z10);
-        this.f12103c.reportPlaybackErrorEvent(n1.a().setTimeSinceCreatedMillis(j10 - this.f12104d).setErrorCode(k10.f12127a).setSubErrorCode(k10.f12128b).setException(playbackException).build());
+        this.f12002c.reportPlaybackErrorEvent(n1.a().setTimeSinceCreatedMillis(j10 - this.f12003d).setErrorCode(k10.f12026a).setSubErrorCode(k10.f12027b).setException(playbackException).build());
         this.A = true;
-        this.f12114n = null;
+        this.f12013n = null;
     }
 
     private void t(Player player, AnalyticsListener.Events events, long j10) {
         if (player.O() != 2) {
-            this.f12121u = false;
+            this.f12020u = false;
         }
         if (player.m() == null) {
-            this.f12123w = false;
+            this.f12022w = false;
         } else if (events.a(10)) {
-            this.f12123w = true;
+            this.f12022w = true;
         }
         int B = B(player);
-        if (this.f12112l != B) {
-            this.f12112l = B;
+        if (this.f12011l != B) {
+            this.f12011l = B;
             this.A = true;
-            this.f12103c.reportPlaybackStateEvent(m1.a().setState(this.f12112l).setTimeSinceCreatedMillis(j10 - this.f12104d).build());
+            this.f12002c.reportPlaybackStateEvent(m1.a().setState(this.f12011l).setTimeSinceCreatedMillis(j10 - this.f12003d).build());
         }
     }
 
@@ -639,34 +639,34 @@ public final class c implements AnalyticsListener, d.a {
                 }
             }
         }
-        if (e(this.f12115o)) {
-            b bVar = this.f12115o;
-            Format format = bVar.f12129a;
+        if (e(this.f12014o)) {
+            b bVar = this.f12014o;
+            Format format = bVar.f12028a;
             if (format.C != -1) {
-                z(j10, format, bVar.f12130b);
-                this.f12115o = null;
+                z(j10, format, bVar.f12029b);
+                this.f12014o = null;
             }
         }
-        if (e(this.f12116p)) {
-            b bVar2 = this.f12116p;
-            v(j10, bVar2.f12129a, bVar2.f12130b);
-            this.f12116p = null;
+        if (e(this.f12015p)) {
+            b bVar2 = this.f12015p;
+            v(j10, bVar2.f12028a, bVar2.f12029b);
+            this.f12015p = null;
         }
-        if (e(this.f12117q)) {
-            b bVar3 = this.f12117q;
-            x(j10, bVar3.f12129a, bVar3.f12130b);
-            this.f12117q = null;
+        if (e(this.f12016q)) {
+            b bVar3 = this.f12016q;
+            x(j10, bVar3.f12028a, bVar3.f12029b);
+            this.f12016q = null;
         }
     }
 
     private void v(long j10, Format format, int i10) {
-        if (w0.c(this.f12119s, format)) {
+        if (w0.c(this.f12018s, format)) {
             return;
         }
-        if (this.f12119s == null && i10 == 0) {
+        if (this.f12018s == null && i10 == 0) {
             i10 = 1;
         }
-        this.f12119s = format;
+        this.f12018s = format;
         A(0, j10, format, i10);
     }
 
@@ -674,44 +674,44 @@ public final class c implements AnalyticsListener, d.a {
         m i10;
         if (events.a(0)) {
             AnalyticsListener.EventTime c10 = events.c(0);
-            if (this.f12110j != null) {
-                y(c10.f12026b, c10.f12028d);
+            if (this.f12009j != null) {
+                y(c10.f11925b, c10.f11927d);
             }
         }
-        if (events.a(2) && this.f12110j != null && (i10 = i(player.o().b())) != null) {
-            r1.a(w0.j(this.f12110j)).setDrmType(j(i10));
+        if (events.a(2) && this.f12009j != null && (i10 = i(player.o().b())) != null) {
+            r1.a(w0.j(this.f12009j)).setDrmType(j(i10));
         }
         if (events.a(1011)) {
-            this.f12126z++;
+            this.f12025z++;
         }
     }
 
     private void x(long j10, Format format, int i10) {
-        if (w0.c(this.f12120t, format)) {
+        if (w0.c(this.f12019t, format)) {
             return;
         }
-        if (this.f12120t == null && i10 == 0) {
+        if (this.f12019t == null && i10 == 0) {
             i10 = 1;
         }
-        this.f12120t = format;
+        this.f12019t = format;
         A(2, j10, format, i10);
     }
 
     private void y(Timeline timeline, r.b bVar) {
         int f10;
         int i10;
-        PlaybackMetrics.Builder builder = this.f12110j;
-        if (bVar == null || (f10 = timeline.f(bVar.f47769a)) == -1) {
+        PlaybackMetrics.Builder builder = this.f12009j;
+        if (bVar == null || (f10 = timeline.f(bVar.f46817a)) == -1) {
             return;
         }
-        timeline.j(f10, this.f12106f);
-        timeline.r(this.f12106f.f11978i, this.f12105e);
-        builder.setStreamType(o(this.f12105e.f11989i));
-        Timeline.d dVar = this.f12105e;
-        if (dVar.f12000y != -9223372036854775807L && !dVar.f11998w && !dVar.f11995t && !dVar.g()) {
-            builder.setMediaDurationMillis(this.f12105e.f());
+        timeline.j(f10, this.f12005f);
+        timeline.r(this.f12005f.f11877i, this.f12004e);
+        builder.setStreamType(o(this.f12004e.f11888i));
+        Timeline.d dVar = this.f12004e;
+        if (dVar.f11899y != -9223372036854775807L && !dVar.f11897w && !dVar.f11894t && !dVar.g()) {
+            builder.setMediaDurationMillis(this.f12004e.f());
         }
-        if (this.f12105e.g()) {
+        if (this.f12004e.g()) {
             i10 = 2;
         } else {
             i10 = 1;
@@ -721,36 +721,36 @@ public final class c implements AnalyticsListener, d.a {
     }
 
     private void z(long j10, Format format, int i10) {
-        if (w0.c(this.f12118r, format)) {
+        if (w0.c(this.f12017r, format)) {
             return;
         }
-        if (this.f12118r == null && i10 == 0) {
+        if (this.f12017r == null && i10 == 0) {
             i10 = 1;
         }
-        this.f12118r = format;
+        this.f12017r = format;
         A(1, j10, format, i10);
     }
 
     @Override // com.google.android.exoplayer2.analytics.d.a
     public void a(AnalyticsListener.EventTime eventTime, String str, boolean z10) {
-        r.b bVar = eventTime.f12028d;
-        if ((bVar == null || !bVar.b()) && str.equals(this.f12109i)) {
+        r.b bVar = eventTime.f11927d;
+        if ((bVar == null || !bVar.b()) && str.equals(this.f12008i)) {
             g();
         }
-        this.f12107g.remove(str);
-        this.f12108h.remove(str);
+        this.f12006g.remove(str);
+        this.f12007h.remove(str);
     }
 
     @Override // com.google.android.exoplayer2.analytics.d.a
     public void b(AnalyticsListener.EventTime eventTime, String str) {
-        r.b bVar = eventTime.f12028d;
+        r.b bVar = eventTime.f11927d;
         if (bVar != null && bVar.b()) {
             return;
         }
         g();
-        this.f12109i = str;
-        this.f12110j = q1.a().setPlayerName("ExoPlayerLib").setPlayerVersion("2.19.1");
-        y(eventTime.f12026b, eventTime.f12028d);
+        this.f12008i = str;
+        this.f12009j = q1.a().setPlayerName("ExoPlayerLib").setPlayerVersion("2.19.1");
+        y(eventTime.f11925b, eventTime.f11927d);
     }
 
     @Override // com.google.android.exoplayer2.analytics.d.a
@@ -762,18 +762,18 @@ public final class c implements AnalyticsListener, d.a {
     }
 
     public LogSessionId m() {
-        return this.f12103c.getSessionId();
+        return this.f12002c.getSessionId();
     }
 
     @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
     public void onBandwidthEstimate(AnalyticsListener.EventTime eventTime, int i10, long j10, long j11) {
         long longValue;
-        r.b bVar = eventTime.f12028d;
+        r.b bVar = eventTime.f11927d;
         if (bVar != null) {
-            String h10 = this.f12102b.h(eventTime.f12026b, (r.b) ne.a.e(bVar));
-            Long l10 = (Long) this.f12108h.get(h10);
-            Long l11 = (Long) this.f12107g.get(h10);
-            HashMap hashMap = this.f12108h;
+            String h10 = this.f12001b.h(eventTime.f11925b, (r.b) ne.a.e(bVar));
+            Long l10 = (Long) this.f12007h.get(h10);
+            Long l11 = (Long) this.f12006g.get(h10);
+            HashMap hashMap = this.f12007h;
             long j12 = 0;
             if (l10 == null) {
                 longValue = 0;
@@ -781,7 +781,7 @@ public final class c implements AnalyticsListener, d.a {
                 longValue = l10.longValue();
             }
             hashMap.put(h10, Long.valueOf(longValue + j10));
-            HashMap hashMap2 = this.f12107g;
+            HashMap hashMap2 = this.f12006g;
             if (l11 != null) {
                 j12 = l11.longValue();
             }
@@ -791,24 +791,24 @@ public final class c implements AnalyticsListener, d.a {
 
     @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
     public void onDownstreamFormatChanged(AnalyticsListener.EventTime eventTime, MediaLoadData mediaLoadData) {
-        if (eventTime.f12028d != null) {
-            b bVar = new b((Format) ne.a.e(mediaLoadData.f12746c), mediaLoadData.f12747d, this.f12102b.h(eventTime.f12026b, (r.b) ne.a.e(eventTime.f12028d)));
-            int i10 = mediaLoadData.f12745b;
+        if (eventTime.f11927d != null) {
+            b bVar = new b((Format) ne.a.e(mediaLoadData.f12707c), mediaLoadData.f12708d, this.f12001b.h(eventTime.f11925b, (r.b) ne.a.e(eventTime.f11927d)));
+            int i10 = mediaLoadData.f12706b;
             if (i10 != 0) {
                 if (i10 != 1) {
                     if (i10 != 2) {
                         if (i10 != 3) {
                             return;
                         }
-                        this.f12117q = bVar;
+                        this.f12016q = bVar;
                         return;
                     }
                 } else {
-                    this.f12116p = bVar;
+                    this.f12015p = bVar;
                     return;
                 }
             }
-            this.f12115o = bVar;
+            this.f12014o = bVar;
         }
     }
 
@@ -823,42 +823,42 @@ public final class c implements AnalyticsListener, d.a {
             r(elapsedRealtime);
             t(player, events, elapsedRealtime);
             if (events.a(1028)) {
-                this.f12102b.c(events.c(1028));
+                this.f12001b.c(events.c(1028));
             }
         }
     }
 
     @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
     public void onLoadError(AnalyticsListener.EventTime eventTime, LoadEventInfo loadEventInfo, MediaLoadData mediaLoadData, IOException iOException, boolean z10) {
-        this.f12122v = mediaLoadData.f12744a;
+        this.f12021v = mediaLoadData.f12705a;
     }
 
     @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
     public void onPlayerError(AnalyticsListener.EventTime eventTime, PlaybackException playbackException) {
-        this.f12114n = playbackException;
+        this.f12013n = playbackException;
     }
 
     @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
     public void onPositionDiscontinuity(AnalyticsListener.EventTime eventTime, Player.PositionInfo positionInfo, Player.PositionInfo positionInfo2, int i10) {
         if (i10 == 1) {
-            this.f12121u = true;
+            this.f12020u = true;
         }
-        this.f12111k = i10;
+        this.f12010k = i10;
     }
 
     @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
     public void onVideoDisabled(AnalyticsListener.EventTime eventTime, DecoderCounters decoderCounters) {
-        this.f12124x += decoderCounters.f12473g;
-        this.f12125y += decoderCounters.f12471e;
+        this.f12023x += decoderCounters.f12372g;
+        this.f12024y += decoderCounters.f12370e;
     }
 
     @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
     public void onVideoSizeChanged(AnalyticsListener.EventTime eventTime, VideoSize videoSize) {
-        b bVar = this.f12115o;
+        b bVar = this.f12014o;
         if (bVar != null) {
-            Format format = bVar.f12129a;
+            Format format = bVar.f12028a;
             if (format.C == -1) {
-                this.f12115o = new b(format.b().n0(videoSize.f13501d).S(videoSize.f13502e).G(), bVar.f12130b, bVar.f12131c);
+                this.f12014o = new b(format.b().n0(videoSize.f13462d).S(videoSize.f13463e).G(), bVar.f12029b, bVar.f12030c);
             }
         }
     }

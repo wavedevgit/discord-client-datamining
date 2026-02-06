@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/voice_calls/native/action_sheet/NUFKrispActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun68835: for (var _fun68835_ip = 0;;) switch (_fun68835_ip) {
+        _fun68863: for (var _fun68863_ip = 0;;) switch (_fun68863_ip) {
             case 0:
                 var0 = arg0;
                 var5 = var0.callback;
@@ -147,15 +147,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure1_slot1;
                 var4 = _closure1_slot2;
                 if (var1) {
-                    _fun68835_ip = 189;
-                    continue _fun68835
+                    _fun68863_ip = 189;
+                    continue _fun68863
                 }
             case 175:
                 var1 = 10;
                 var1 = var4[var1];
                 var15 = var2.bind(var3)(var1);
-                _fun68835_ip = 201;
-                continue _fun68835;
+                _fun68863_ip = 201;
+                continue _fun68863;
             case 189:
                 var1 = 9;
                 var1 = var4[var1];
@@ -167,22 +167,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1[0] = var5;
                 var1[1] = var0;
                 var0 = function() { // Environment: var10
-                    _fun68838: for (var _fun68838_ip = 0;;) switch (_fun68838_ip) {
+                    _fun68866: for (var _fun68866_ip = 0;;) switch (_fun68866_ip) {
                         case 0:
                             var2 = _closure2_slot1;
                             var1 = 'NUF_KRISP_ACTIONSHEET';
                             var1 = var2 === var1;
                             if (var1) {
-                                _fun68838_ip = 29;
-                                continue _fun68838
+                                _fun68866_ip = 29;
+                                continue _fun68866
                             }
                         case 20:
                             var2 = _closure2_slot2;
                             var1 = var2.current;
                         case 29:
                             if (var1) {
-                                _fun68838_ip = 54;
-                                continue _fun68838
+                                _fun68866_ip = 54;
+                                continue _fun68866
                             }
                         case 32:
                             var2 = _closure2_slot0;
@@ -376,4 +376,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'NUF_KRISP_ACTIONSHEET';
     var2.NUF_KRISP_ACTIONSHEET_KEY = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3140, 3196, 660, 33, 1297, 566, 3206, 8501, 8502, 5210, 8625, 3941, 1234, 5336, 1684, 4875, 8230, 3147, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3142, 3198, 660, 33, 1297, 566, 3208, 8507, 8508, 5211, 8631, 3943, 1234, 5337, 1684, 4876, 8236, 3149, 2]);

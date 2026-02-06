@@ -1,6 +1,6 @@
 package sd;
 
-import com.google.android.exoplayer2.upstream.h;
+import com.google.android.exoplayer2.upstream.i;
 import java.util.List;
 import lc.t0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -11,7 +11,7 @@ public interface j {
 
     long e(long j10, t0 t0Var);
 
-    boolean f(f fVar, boolean z10, h.c cVar, com.google.android.exoplayer2.upstream.h hVar);
+    boolean f(f fVar, boolean z10, i.c cVar, com.google.android.exoplayer2.upstream.i iVar);
 
     boolean g(long j10, f fVar, List list);
 

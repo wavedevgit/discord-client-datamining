@@ -23,13 +23,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/powerups/native/hooks/useGuildPowerupColorConfig.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun102428: for (var _fun102428_ip = 0;;) switch (_fun102428_ip) {
+        _fun102436: for (var _fun102436_ip = 0;;) switch (_fun102436_ip) {
             case 0:
                 var1 = {};
                 var0 = arg0;
                 if (var0) {
-                    _fun102428_ip = 64;
-                    continue _fun102428
+                    _fun102436_ip = 64;
+                    continue _fun102436
                 }
             case 8:
                 var0 = 'text-muted';
@@ -44,8 +44,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.TEXT_MUTED;
                 var1.iconColor = var0;
                 var0 = var1;
-                _fun102428_ip = 118;
-                continue _fun102428;
+                _fun102436_ip = 118;
+                continue _fun102436;
             case 64:
                 var2 = 'text-default';
                 var1.textColor = var2;

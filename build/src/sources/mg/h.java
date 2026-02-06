@@ -1,38 +1,46 @@
 package mg;
 
-import android.os.Parcel;
-import android.os.Parcelable;
+import java.util.Arrays;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class h implements Parcelable.Creator {
-    @Override // android.os.Parcelable.Creator
-    public final /* bridge */ /* synthetic */ Object createFromParcel(Parcel parcel) {
-        int A = hf.b.A(parcel);
-        int i10 = 0;
-        String str = null;
-        String str2 = null;
-        while (parcel.dataPosition() < A) {
-            int r10 = hf.b.r(parcel);
-            int l10 = hf.b.l(r10);
-            if (l10 != 2) {
-                if (l10 != 3) {
-                    if (l10 != 4) {
-                        hf.b.z(parcel, r10);
-                    } else {
-                        i10 = hf.b.t(parcel, r10);
-                    }
-                } else {
-                    str2 = hf.b.f(parcel, r10);
-                }
-            } else {
-                str = hf.b.f(parcel, r10);
-            }
+public final class h {
+
+    /* renamed from: a  reason: collision with root package name */
+    Object[] f37110a = new Object[8];
+
+    /* renamed from: b  reason: collision with root package name */
+    int f37111b = 0;
+
+    /* renamed from: c  reason: collision with root package name */
+    g f37112c;
+
+    public final h a(Object obj, Object obj2) {
+        int i10 = this.f37111b + 1;
+        Object[] objArr = this.f37110a;
+        int length = objArr.length;
+        int i11 = i10 + i10;
+        if (i11 > length) {
+            this.f37110a = Arrays.copyOf(objArr, b.a(length, i11));
         }
-        hf.b.k(parcel, A);
-        return new yg(str, str2, i10);
+        w0.a(obj, obj2);
+        Object[] objArr2 = this.f37110a;
+        int i12 = this.f37111b;
+        int i13 = i12 + i12;
+        objArr2[i13] = obj;
+        objArr2[i13 + 1] = obj2;
+        this.f37111b = i12 + 1;
+        return this;
     }
 
-    @Override // android.os.Parcelable.Creator
-    public final /* synthetic */ Object[] newArray(int i10) {
-        return new yg[i10];
+    public final i b() {
+        g gVar = this.f37112c;
+        if (gVar == null) {
+            q g10 = q.g(this.f37111b, this.f37110a, this);
+            g gVar2 = this.f37112c;
+            if (gVar2 == null) {
+                return g10;
+            }
+            throw gVar2.a();
+        }
+        throw gVar.a();
     }
 }

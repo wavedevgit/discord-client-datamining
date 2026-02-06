@@ -4,16 +4,16 @@ package com.google.android.gms.internal.play_billing;
 public abstract class l4 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final i4 f14299a;
+    private static final i4 f14262a;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final /* synthetic */ int f14300b = 0;
+    public static final /* synthetic */ int f14263b = 0;
 
     static {
         if (g4.C() && g4.D()) {
-            int i10 = c0.f14195a;
+            int i10 = c0.f14158a;
         }
-        f14299a = new j4();
+        f14262a = new j4();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -106,11 +106,11 @@ public abstract class l4 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static boolean d(byte[] bArr) {
-        return f14299a.b(bArr, 0, bArr.length);
+        return f14262a.b(bArr, 0, bArr.length);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static boolean e(byte[] bArr, int i10, int i11) {
-        return f14299a.b(bArr, i10, i11);
+        return f14262a.b(bArr, i10, i11);
     }
 }

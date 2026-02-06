@@ -1,98 +1,129 @@
 package ss;
 
+import java.util.Arrays;
 import kotlin.Result;
-import kotlin.c;
+import kotlin.Unit;
 import kotlin.coroutines.Continuation;
-import kotlin.coroutines.CoroutineContext;
-import kotlin.coroutines.jvm.internal.g;
-import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.TypeIntrinsics;
-import kotlinx.coroutines.c0;
-import ms.j0;
-import ms.r;
-import ms.r1;
-import or.h;
-import rs.a0;
-import rs.l0;
+import kotlin.jvm.internal.Intrinsics;
+import rs.j0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public abstract class b {
-    private static final Void a(a0 a0Var, j0 j0Var) {
-        a0Var.o0(new r(j0Var.getCause(), false, 2, null));
-        throw j0Var.getCause();
+
+    /* renamed from: d  reason: collision with root package name */
+    private d[] f50021d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private int f50022e;
+
+    /* renamed from: i  reason: collision with root package name */
+    private int f50023i;
+
+    /* renamed from: o  reason: collision with root package name */
+    private b0 f50024o;
+
+    public static final /* synthetic */ int a(b bVar) {
+        return bVar.f50022e;
     }
 
-    private static final boolean b(a0 a0Var, Throwable th2) {
-        if ((th2 instanceof r1) && ((r1) th2).f38946d == a0Var) {
-            return false;
-        }
-        return true;
+    public static final /* synthetic */ d[] c(b bVar) {
+        return bVar.f50021d;
     }
 
-    public static final void c(Function2 function2, Object obj, Continuation continuation) {
-        Object invoke;
-        Continuation a10 = g.a(continuation);
-        try {
-            CoroutineContext context = a10.getContext();
-            Object i10 = l0.i(context, null);
-            g.b(a10);
-            if (!(function2 instanceof kotlin.coroutines.jvm.internal.a)) {
-                invoke = ur.b.d(function2, obj, a10);
-            } else {
-                invoke = ((Function2) TypeIntrinsics.beforeCheckcastToFunctionOfArity(function2, 2)).invoke(obj, a10);
+    public final j0 d() {
+        b0 b0Var;
+        synchronized (this) {
+            b0Var = this.f50024o;
+            if (b0Var == null) {
+                b0Var = new b0(this.f50022e);
+                this.f50024o = b0Var;
             }
-            l0.f(context, i10);
-            if (invoke != ur.b.f()) {
-                a10.resumeWith(Result.b(invoke));
-            }
-        } catch (Throwable th2) {
-            th = th2;
-            if (th instanceof j0) {
-                th = ((j0) th).getCause();
-            }
-            Result.a aVar = Result.f31985e;
-            a10.resumeWith(Result.b(c.a(th)));
         }
+        return b0Var;
     }
 
-    public static final Object d(a0 a0Var, Object obj, Function2 function2) {
-        return f(a0Var, true, obj, function2);
-    }
-
-    public static final Object e(a0 a0Var, Object obj, Function2 function2) {
-        return f(a0Var, false, obj, function2);
-    }
-
-    private static final Object f(a0 a0Var, boolean z10, Object obj, Function2 function2) {
-        r rVar;
-        try {
-            if (!(function2 instanceof kotlin.coroutines.jvm.internal.a)) {
-                rVar = ur.b.d(function2, obj, a0Var);
-            } else {
-                rVar = ((Function2) TypeIntrinsics.beforeCheckcastToFunctionOfArity(function2, 2)).invoke(obj, a0Var);
-            }
-        } catch (j0 e10) {
-            a(a0Var, e10);
-            throw new h();
-        } catch (Throwable th2) {
-            rVar = new r(th2, false, 2, null);
-        }
-        if (rVar == ur.b.f()) {
-            return ur.b.f();
-        }
-        Object p02 = a0Var.p0(rVar);
-        if (p02 == c0.f35019b) {
-            return ur.b.f();
-        }
-        a0Var.W0();
-        if (p02 instanceof r) {
-            if (!z10 && !b(a0Var, ((r) p02).f38943a)) {
-                if (rVar instanceof r) {
-                    throw ((r) rVar).f38943a;
+    /* JADX INFO: Access modifiers changed from: protected */
+    public final d e() {
+        d dVar;
+        b0 b0Var;
+        synchronized (this) {
+            try {
+                d[] dVarArr = this.f50021d;
+                if (dVarArr == null) {
+                    dVarArr = j(2);
+                    this.f50021d = dVarArr;
+                } else if (this.f50022e >= dVarArr.length) {
+                    Object[] copyOf = Arrays.copyOf(dVarArr, dVarArr.length * 2);
+                    Intrinsics.checkNotNullExpressionValue(copyOf, "copyOf(...)");
+                    this.f50021d = (d[]) copyOf;
+                    dVarArr = (d[]) copyOf;
                 }
-                return rVar;
+                int i10 = this.f50023i;
+                do {
+                    dVar = dVarArr[i10];
+                    if (dVar == null) {
+                        dVar = h();
+                        dVarArr[i10] = dVar;
+                    }
+                    i10++;
+                    if (i10 >= dVarArr.length) {
+                        i10 = 0;
+                    }
+                    Intrinsics.checkNotNull(dVar, "null cannot be cast to non-null type kotlinx.coroutines.flow.internal.AbstractSharedFlowSlot<kotlin.Any>");
+                } while (!dVar.a(this));
+                this.f50023i = i10;
+                this.f50022e++;
+                b0Var = this.f50024o;
+            } catch (Throwable th2) {
+                throw th2;
             }
-            throw ((r) p02).f38943a;
         }
-        return c0.h(p02);
+        if (b0Var != null) {
+            b0Var.Z(1);
+        }
+        return dVar;
+    }
+
+    protected abstract d h();
+
+    protected abstract d[] j(int i10);
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    public final void k(d dVar) {
+        b0 b0Var;
+        int i10;
+        Continuation[] b10;
+        synchronized (this) {
+            try {
+                int i11 = this.f50022e - 1;
+                this.f50022e = i11;
+                b0Var = this.f50024o;
+                if (i11 == 0) {
+                    this.f50023i = 0;
+                }
+                Intrinsics.checkNotNull(dVar, "null cannot be cast to non-null type kotlinx.coroutines.flow.internal.AbstractSharedFlowSlot<kotlin.Any>");
+                b10 = dVar.b(this);
+            } catch (Throwable th2) {
+                throw th2;
+            }
+        }
+        for (Continuation continuation : b10) {
+            if (continuation != null) {
+                Result.a aVar = Result.f32005e;
+                continuation.resumeWith(Result.b(Unit.f32008a));
+            }
+        }
+        if (b0Var != null) {
+            b0Var.Z(-1);
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    public final int l() {
+        return this.f50022e;
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    public final d[] m() {
+        return this.f50021d;
     }
 }

@@ -41,27 +41,27 @@ public final class StyleElements_SizeSetJsonAdapter extends h {
     @NotNull
     public StyleElements.SizeSet fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         StyleElements.Size size = null;
         StyleElements.Size size2 = null;
         StyleElements.Size size3 = null;
         StyleElements.Size size4 = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 size = (StyleElements.Size) this.nullableSizeAdapter.fromJson(reader);
-            } else if (W == 1) {
+            } else if (J == 1) {
                 size2 = (StyleElements.Size) this.nullableSizeAdapter.fromJson(reader);
-            } else if (W == 2) {
+            } else if (J == 2) {
                 size3 = (StyleElements.Size) this.nullableSizeAdapter.fromJson(reader);
-            } else if (W == 3) {
+            } else if (J == 3) {
                 size4 = (StyleElements.Size) this.nullableSizeAdapter.fromJson(reader);
             }
         }
-        reader.z();
+        reader.D();
         return new StyleElements.SizeSet(size, size2, size3, size4);
     }
 
@@ -70,15 +70,15 @@ public final class StyleElements_SizeSetJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (sizeSet != null) {
             writer.k();
-            writer.W(ViewProps.TOP);
+            writer.J(ViewProps.TOP);
             this.nullableSizeAdapter.toJson(writer, sizeSet.getTop());
-            writer.W(ViewProps.BOTTOM);
+            writer.J(ViewProps.BOTTOM);
             this.nullableSizeAdapter.toJson(writer, sizeSet.getBottom());
-            writer.W(ViewProps.LEFT);
+            writer.J(ViewProps.LEFT);
             this.nullableSizeAdapter.toJson(writer, sizeSet.getLeft());
-            writer.W(ViewProps.RIGHT);
+            writer.J(ViewProps.RIGHT);
             this.nullableSizeAdapter.toJson(writer, sizeSet.getRight());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

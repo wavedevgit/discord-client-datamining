@@ -4,14 +4,14 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.discord.chat.bridge.structurabletext.StructurableText;
 import com.discord.chat.bridge.structurabletext.StructurableTextSerializer;
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
-import dt.b0;
-import et.a;
-import gt.a2;
-import gt.h;
-import gt.h0;
-import gt.n2;
-import gt.p0;
+import ft.b0;
+import gt.a;
 import java.util.List;
+import jt.a2;
+import jt.h;
+import jt.h0;
+import jt.n2;
+import jt.p0;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
@@ -22,11 +22,11 @@ import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.encoding.Decoder;
 import kotlinx.serialization.encoding.Encoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import or.c;
 import org.jetbrains.annotations.NotNull;
 import org.webrtc.PeerConnection;
+import qr.c;
+@Metadata(d1 = {"\u0000:\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u001d\u0010\t\u001a\u00020\b2\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0007\u001a\u00020\u0002¢\u0006\u0004\b\t\u0010\nJ\u0015\u0010\r\u001a\u00020\u00022\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b\r\u0010\u000eJ\u0017\u0010\u0011\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00100\u000f¢\u0006\u0004\b\u0011\u0010\u0012R\u0017\u0010\u0014\u001a\u00020\u00138\u0006¢\u0006\f\n\u0004\b\u0014\u0010\u0015\u001a\u0004\b\u0016\u0010\u0017¨\u0006\u0018"}, d2 = {"com/discord/chat/bridge/activities/ActivityRichPresenceInviteEmbed.$serializer", "Ljt/h0;", "Lcom/discord/chat/bridge/activities/ActivityRichPresenceInviteEmbed;", "<init>", "()V", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "(Lkotlinx/serialization/encoding/Encoder;Lcom/discord/chat/bridge/activities/ActivityRichPresenceInviteEmbed;)V", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "(Lkotlinx/serialization/encoding/Decoder;)Lcom/discord/chat/bridge/activities/ActivityRichPresenceInviteEmbed;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @c
-@Metadata(d1 = {"\u0000:\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u001d\u0010\t\u001a\u00020\b2\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0007\u001a\u00020\u0002¢\u0006\u0004\b\t\u0010\nJ\u0015\u0010\r\u001a\u00020\u00022\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b\r\u0010\u000eJ\u0017\u0010\u0011\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00100\u000f¢\u0006\u0004\b\u0011\u0010\u0012R\u0017\u0010\u0014\u001a\u00020\u00138\u0006¢\u0006\f\n\u0004\b\u0014\u0010\u0015\u001a\u0004\b\u0016\u0010\u0017¨\u0006\u0018"}, d2 = {"com/discord/chat/bridge/activities/ActivityRichPresenceInviteEmbed.$serializer", "Lgt/h0;", "Lcom/discord/chat/bridge/activities/ActivityRichPresenceInviteEmbed;", "<init>", "()V", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "(Lkotlinx/serialization/encoding/Encoder;Lcom/discord/chat/bridge/activities/ActivityRichPresenceInviteEmbed;)V", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "(Lkotlinx/serialization/encoding/Decoder;)Lcom/discord/chat/bridge/activities/ActivityRichPresenceInviteEmbed;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public /* synthetic */ class ActivityRichPresenceInviteEmbed$$serializer implements h0 {
     @NotNull
@@ -62,15 +62,15 @@ public /* synthetic */ class ActivityRichPresenceInviteEmbed$$serializer impleme
     private ActivityRichPresenceInviteEmbed$$serializer() {
     }
 
-    @Override // gt.h0
+    @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
         Lazy[] lazyArr;
         lazyArr = ActivityRichPresenceInviteEmbed.$childSerializers;
-        h hVar = h.f25266a;
+        h hVar = h.f31005a;
         KSerializer u10 = a.u(hVar);
-        n2 n2Var = n2.f25302a;
-        return new KSerializer[]{u10, a.u(n2Var), a.u(hVar), a.u(n2Var), a.u((KSerializer) lazyArr[4].getValue()), a.u(n2Var), a.u(n2Var), a.u(hVar), a.u(hVar), a.u(hVar), a.u(p0.f25318a), a.u((KSerializer) lazyArr[11].getValue()), a.u(n2Var), a.u((KSerializer) lazyArr[13].getValue()), a.u(n2Var), a.u(n2Var), a.u(n2Var), a.u(StructurableTextSerializer.INSTANCE)};
+        n2 n2Var = n2.f31041a;
+        return new KSerializer[]{u10, a.u(n2Var), a.u(hVar), a.u(n2Var), a.u((KSerializer) lazyArr[4].getValue()), a.u(n2Var), a.u(n2Var), a.u(hVar), a.u(hVar), a.u(hVar), a.u(p0.f31057a), a.u((KSerializer) lazyArr[11].getValue()), a.u(n2Var), a.u((KSerializer) lazyArr[13].getValue()), a.u(n2Var), a.u(n2Var), a.u(n2Var), a.u(StructurableTextSerializer.INSTANCE)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -107,10 +107,10 @@ public /* synthetic */ class ActivityRichPresenceInviteEmbed$$serializer impleme
         kotlinx.serialization.encoding.c b10 = decoder.b(serialDescriptor);
         lazyArr = ActivityRichPresenceInviteEmbed.$childSerializers;
         if (b10.p()) {
-            h hVar = h.f25266a;
-            n2 n2Var = n2.f25302a;
+            h hVar = h.f31005a;
+            n2 n2Var = n2.f31041a;
             Boolean bool6 = (Boolean) b10.n(serialDescriptor, 9, hVar, null);
-            Integer num2 = (Integer) b10.n(serialDescriptor, 10, p0.f25318a, null);
+            Integer num2 = (Integer) b10.n(serialDescriptor, 10, p0.f31057a, null);
             List list6 = (List) b10.n(serialDescriptor, 11, (DeserializationStrategy) lazyArr[11].getValue(), null);
             str = (String) b10.n(serialDescriptor, 12, n2Var, null);
             List list7 = (List) b10.n(serialDescriptor, 13, (DeserializationStrategy) lazyArr[13].getValue(), null);
@@ -174,7 +174,7 @@ public /* synthetic */ class ActivityRichPresenceInviteEmbed$$serializer impleme
                         list4 = list8;
                         str10 = str14;
                         str11 = str21;
-                        bool9 = (Boolean) b10.n(serialDescriptor, 0, h.f25266a, bool9);
+                        bool9 = (Boolean) b10.n(serialDescriptor, 0, h.f31005a, bool9);
                         i10 |= 1;
                         str18 = str18;
                         str20 = str11;
@@ -186,7 +186,7 @@ public /* synthetic */ class ActivityRichPresenceInviteEmbed$$serializer impleme
                         list4 = list8;
                         str10 = str14;
                         str11 = str21;
-                        str18 = (String) b10.n(serialDescriptor, 1, n2.f25302a, str18);
+                        str18 = (String) b10.n(serialDescriptor, 1, n2.f31041a, str18);
                         i10 |= 2;
                         bool10 = bool10;
                         str20 = str11;
@@ -198,7 +198,7 @@ public /* synthetic */ class ActivityRichPresenceInviteEmbed$$serializer impleme
                         list4 = list8;
                         str10 = str14;
                         str11 = str21;
-                        bool10 = (Boolean) b10.n(serialDescriptor, 2, h.f25266a, bool10);
+                        bool10 = (Boolean) b10.n(serialDescriptor, 2, h.f31005a, bool10);
                         i10 |= 4;
                         str19 = str19;
                         str20 = str11;
@@ -210,7 +210,7 @@ public /* synthetic */ class ActivityRichPresenceInviteEmbed$$serializer impleme
                         list4 = list8;
                         str10 = str14;
                         str11 = str21;
-                        str19 = (String) b10.n(serialDescriptor, 3, n2.f25302a, str19);
+                        str19 = (String) b10.n(serialDescriptor, 3, n2.f31041a, str19);
                         i10 |= 8;
                         list10 = list10;
                         str20 = str11;
@@ -231,41 +231,41 @@ public /* synthetic */ class ActivityRichPresenceInviteEmbed$$serializer impleme
                         break;
                     case 5:
                         list5 = list8;
-                        str20 = (String) b10.n(serialDescriptor, 5, n2.f25302a, str21);
+                        str20 = (String) b10.n(serialDescriptor, 5, n2.f31041a, str21);
                         i10 |= 32;
                         str14 = str14;
                         list8 = list5;
                         break;
                     case 6:
-                        str15 = (String) b10.n(serialDescriptor, 6, n2.f25302a, str15);
+                        str15 = (String) b10.n(serialDescriptor, 6, n2.f31041a, str15);
                         i10 |= 64;
                         list8 = list8;
                         str20 = str21;
                         break;
                     case 7:
                         str9 = str15;
-                        bool8 = (Boolean) b10.n(serialDescriptor, 7, h.f25266a, bool8);
+                        bool8 = (Boolean) b10.n(serialDescriptor, 7, h.f31005a, bool8);
                         i10 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                         str20 = str21;
                         str15 = str9;
                         break;
                     case 8:
                         str9 = str15;
-                        bool11 = (Boolean) b10.n(serialDescriptor, 8, h.f25266a, bool11);
+                        bool11 = (Boolean) b10.n(serialDescriptor, 8, h.f31005a, bool11);
                         i10 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
                         str20 = str21;
                         str15 = str9;
                         break;
                     case 9:
                         str9 = str15;
-                        bool7 = (Boolean) b10.n(serialDescriptor, 9, h.f25266a, bool7);
+                        bool7 = (Boolean) b10.n(serialDescriptor, 9, h.f31005a, bool7);
                         i10 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING;
                         str20 = str21;
                         str15 = str9;
                         break;
                     case 10:
                         str9 = str15;
-                        num3 = (Integer) b10.n(serialDescriptor, 10, p0.f25318a, num3);
+                        num3 = (Integer) b10.n(serialDescriptor, 10, p0.f31057a, num3);
                         i10 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET;
                         str20 = str21;
                         str15 = str9;
@@ -279,7 +279,7 @@ public /* synthetic */ class ActivityRichPresenceInviteEmbed$$serializer impleme
                         break;
                     case 12:
                         str9 = str15;
-                        str = (String) b10.n(serialDescriptor, 12, n2.f25302a, str);
+                        str = (String) b10.n(serialDescriptor, 12, n2.f31041a, str);
                         i10 |= RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
                         str20 = str21;
                         str15 = str9;
@@ -293,14 +293,14 @@ public /* synthetic */ class ActivityRichPresenceInviteEmbed$$serializer impleme
                         break;
                     case 14:
                         str9 = str15;
-                        str14 = (String) b10.n(serialDescriptor, 14, n2.f25302a, str14);
+                        str14 = (String) b10.n(serialDescriptor, 14, n2.f31041a, str14);
                         i10 |= 16384;
                         str20 = str21;
                         str15 = str9;
                         break;
                     case 15:
                         str9 = str15;
-                        str16 = (String) b10.n(serialDescriptor, 15, n2.f25302a, str16);
+                        str16 = (String) b10.n(serialDescriptor, 15, n2.f31041a, str16);
                         i11 = PeerConnection.PORTALLOCATOR_ENABLE_ANY_ADDRESS_PORTS;
                         i10 |= i11;
                         str20 = str21;
@@ -308,7 +308,7 @@ public /* synthetic */ class ActivityRichPresenceInviteEmbed$$serializer impleme
                         break;
                     case 16:
                         str9 = str15;
-                        str17 = (String) b10.n(serialDescriptor, 16, n2.f25302a, str17);
+                        str17 = (String) b10.n(serialDescriptor, 16, n2.f31041a, str17);
                         i11 = 65536;
                         i10 |= i11;
                         str20 = str21;
@@ -350,13 +350,13 @@ public /* synthetic */ class ActivityRichPresenceInviteEmbed$$serializer impleme
         return new ActivityRichPresenceInviteEmbed(i14, bool, str5, bool5, str6, list2, str7, str2, bool4, bool2, bool3, num, list, str23, list3, str8, str3, str4, structurableText, (SerializationConstructorMarker) null);
     }
 
-    @Override // kotlinx.serialization.KSerializer, dt.o, kotlinx.serialization.DeserializationStrategy
+    @Override // kotlinx.serialization.KSerializer, ft.o, kotlinx.serialization.DeserializationStrategy
     @NotNull
     public final SerialDescriptor getDescriptor() {
         return descriptor;
     }
 
-    @Override // dt.o
+    @Override // ft.o
     public final void serialize(@NotNull Encoder encoder, @NotNull ActivityRichPresenceInviteEmbed value) {
         Intrinsics.checkNotNullParameter(encoder, "encoder");
         Intrinsics.checkNotNullParameter(value, "value");
@@ -366,7 +366,7 @@ public /* synthetic */ class ActivityRichPresenceInviteEmbed$$serializer impleme
         b10.c(serialDescriptor);
     }
 
-    @Override // gt.h0
+    @Override // jt.h0
     @NotNull
     public KSerializer[] typeParametersSerializers() {
         return h0.a.a(this);

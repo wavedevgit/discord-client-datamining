@@ -1,155 +1,30 @@
 package ng;
+
+import yi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class m6 implements yi.a {
+final class m6 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final yi.a f40825a = new m6();
+    static final m6 f40083a = new m6();
+
+    static {
+        c.b a10 = yi.c.a("maxResults");
+        l2 l2Var = new l2();
+        l2Var.a(1);
+        a10.b(l2Var.b()).a();
+        c.b a11 = yi.c.a("modelType");
+        l2 l2Var2 = new l2();
+        l2Var2.a(2);
+        a11.b(l2Var2.b()).a();
+    }
 
     private m6() {
     }
 
-    @Override // yi.a
-    public final void a(yi.b bVar) {
-        bVar.a(h8.class, t3.f41007a);
-        bVar.a(ma.class, b6.f40364a);
-        bVar.a(i8.class, u3.f41083a);
-        bVar.a(m8.class, w3.f41165a);
-        bVar.a(k8.class, v3.f41122a);
-        bVar.a(l8.class, x3.f41226a);
-        bVar.a(g7.class, v2.f41116a);
-        bVar.a(f7.class, u2.f41077a);
-        bVar.a(v7.class, m3.f40806a);
-        bVar.a(fa.class, t5.f41065a);
-        bVar.a(e7.class, t2.f41004a);
-        bVar.a(d7.class, s2.f40981a);
-        bVar.a(v8.class, j4.f40692a);
-        bVar.a(gb.class, g3.f40601a);
-        bVar.a(s7.class, j3.f40687a);
-        bVar.a(p7.class, f3.f40568a);
-        bVar.a(w8.class, k4.f40745a);
-        bVar.a(ca.class, q5.f40939a);
-        bVar.a(da.class, r5.f40957a);
-        bVar.a(ba.class, p5.f40915a);
-        bVar.a(q8.class, d4.f40415a);
-        bVar.a(fb.class, b2.f40354a);
-        bVar.a(r8.class, e4.f40437a);
-        bVar.a(e9.class, s4.f40986a);
-        bVar.a(h9.class, v4.f41132a);
-        bVar.a(g9.class, u4.f41091a);
-        bVar.a(f9.class, t4.f41059a);
-        bVar.a(r9.class, e5.f40439a);
-        bVar.a(s9.class, f5.f40575a);
-        bVar.a(u9.class, i5.f40669a);
-        bVar.a(t9.class, h5.f40640a);
-        bVar.a(p8.class, c4.f40394a);
-        bVar.a(v9.class, j5.f40699a);
-        bVar.a(w9.class, k5.f40747a);
-        bVar.a(x9.class, l5.f40784a);
-        bVar.a(y9.class, m5.f40821a);
-        bVar.a(aa.class, n5.f40859a);
-        bVar.a(z9.class, o5.f40891a);
-        bVar.a(q9.class, a5.f40337a);
-        bVar.a(c8.class, r3.f40950a);
-        bVar.a(o9.class, c5.f40399a);
-        bVar.a(n9.class, b5.f40361a);
-        bVar.a(p9.class, d5.f40421a);
-        bVar.a(ea.class, s5.f40989a);
-        bVar.a(sa.class, i6.f40675a);
-        bVar.a(s6.class, h2.f40625a);
-        bVar.a(q6.class, f2.f40565a);
-        bVar.a(p6.class, e2.f40431a);
-        bVar.a(r6.class, g2.f40597a);
-        bVar.a(u6.class, j2.f40683a);
-        bVar.a(t6.class, i2.f40660a);
-        bVar.a(v6.class, k2.f40737a);
-        bVar.a(w6.class, l2.f40774a);
-        bVar.a(x6.class, m2.f40802a);
-        bVar.a(y6.class, n2.f40847a);
-        bVar.a(z6.class, o2.f40876a);
-        bVar.a(s0.class, x1.f41213a);
-        bVar.a(u0.class, z1.f41280a);
-        bVar.a(t0.class, y1.f41252a);
-        bVar.a(a8.class, p3.f40909a);
-        bVar.a(h7.class, w2.f41161a);
-        bVar.a(s.class, w0.f41151a);
-        bVar.a(r.class, x0.f41208a);
-        bVar.a(n7.class, c3.f40387a);
-        bVar.a(u.class, y0.f41248a);
-        bVar.a(t.class, z0.f41274a);
-        bVar.a(a0.class, f1.f40561a);
-        bVar.a(z.class, g1.f40590a);
-        bVar.a(w.class, a1.f40321a);
-        bVar.a(v.class, b1.f40346a);
-        bVar.a(h0.class, l1.f40770a);
-        bVar.a(g0.class, m1.f40797a);
-        bVar.a(l0.class, p1.f40900a);
-        bVar.a(k0.class, q1.f40918a);
-        bVar.a(r0.class, v1.f41112a);
-        bVar.a(q0.class, w1.f41155a);
-        bVar.a(n0.class, r1.f40943a);
-        bVar.a(m0.class, s1.f40976a);
-        bVar.a(p0.class, t1.f41000a);
-        bVar.a(o0.class, u1.f41072a);
-        bVar.a(ab.class, w5.f41173a);
-        bVar.a(ta.class, x2.f41215a);
-        bVar.a(xa.class, b4.f40358a);
-        bVar.a(wa.class, a4.f40332a);
-        bVar.a(ua.class, h3.f40629a);
-        bVar.a(za.class, v5.f41136a);
-        bVar.a(ya.class, u5.f41097a);
-        bVar.a(bb.class, x5.f41235a);
-        bVar.a(va.class, n3.f40851a);
-        bVar.a(eb.class, k6.f40753a);
-        bVar.a(db.class, l6.f40788a);
-        bVar.a(cb.class, j6.f40706a);
-        bVar.a(ga.class, y5.f41267a);
-        bVar.a(z7.class, o3.f40880a);
-        bVar.a(d8.class, s3.f40984a);
-        bVar.a(o6.class, c2.f40380a);
-        bVar.a(t7.class, k3.f40741a);
-        bVar.a(b8.class, q3.f40929a);
-        bVar.a(o7.class, d3.f40411a);
-        bVar.a(k7.class, z2.f41285a);
-        bVar.a(l7.class, a3.f40330a);
-        bVar.a(j7.class, y2.f41258a);
-        bVar.a(m7.class, b3.f40356a);
-        bVar.a(o8.class, z3.f41288a);
-        bVar.a(n8.class, y3.f41260a);
-        bVar.a(q.class, v0.f41104a);
-        bVar.a(pa.class, e6.f40442a);
-        bVar.a(ra.class, g6.f40610a);
-        bVar.a(qa.class, f6.f40582a);
-        bVar.a(n6.class, a2.f40325a);
-        bVar.a(c7.class, r2.f40947a);
-        bVar.a(b7.class, q2.f40924a);
-        bVar.a(a7.class, p2.f40904a);
-        bVar.a(s8.class, g4.f40608a);
-        bVar.a(u8.class, i4.f40666a);
-        bVar.a(t8.class, h4.f40637a);
-        bVar.a(y.class, d1.f40407a);
-        bVar.a(x.class, e1.f40427a);
-        bVar.a(x8.class, l4.f40781a);
-        bVar.a(a9.class, o4.f40888a);
-        bVar.a(y8.class, m4.f40817a);
-        bVar.a(z8.class, n4.f40854a);
-        bVar.a(d0.class, h1.f40621a);
-        bVar.a(c0.class, i1.f40655a);
-        bVar.a(ia.class, a6.f40342a);
-        bVar.a(ha.class, z5.f41293a);
-        bVar.a(na.class, c6.f40401a);
-        bVar.a(oa.class, d6.f40423a);
-        bVar.a(i9.class, w4.f41170a);
-        bVar.a(m9.class, z4.f41291a);
-        bVar.a(j9.class, x4.f41231a);
-        bVar.a(l9.class, y4.f41263a);
-        bVar.a(j0.class, n1.f40843a);
-        bVar.a(i0.class, o1.f40871a);
-        bVar.a(u7.class, l3.f40778a);
-        bVar.a(q7.class, i3.f40664a);
-        bVar.a(b9.class, p4.f40913a);
-        bVar.a(d9.class, r4.f40954a);
-        bVar.a(c9.class, q4.f40933a);
-        bVar.a(f0.class, j1.f40679a);
-        bVar.a(e0.class, k1.f40733a);
+    @Override // yi.d
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        android.support.v4.media.session.b.a(obj);
+        yi.e eVar = (yi.e) obj2;
+        throw null;
     }
 }

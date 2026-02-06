@@ -72,7 +72,7 @@ public final class InputCheckboxGroup_InputCheckboxComponentStyleJsonAdapter ext
     @NotNull
     public InputCheckboxGroup.InputCheckboxComponentStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         AttributeStyles.InputCheckboxFontFamilyStyle inputCheckboxFontFamilyStyle = null;
         AttributeStyles.InputCheckboxFontSizeStyle inputCheckboxFontSizeStyle = null;
         AttributeStyles.InputCheckboxFontWeightStyle inputCheckboxFontWeightStyle = null;
@@ -81,10 +81,10 @@ public final class InputCheckboxGroup_InputCheckboxComponentStyleJsonAdapter ext
         AttributeStyles.InputCheckboxTextColorStyle inputCheckboxTextColorStyle = null;
         AttributeStyles.TextBasedTextColorStyle textBasedTextColorStyle = null;
         while (reader.hasNext()) {
-            switch (reader.W(this.options)) {
+            switch (reader.J(this.options)) {
                 case -1:
                     reader.E0();
-                    reader.P();
+                    reader.S();
                     break;
                 case 0:
                     inputCheckboxFontFamilyStyle = (AttributeStyles.InputCheckboxFontFamilyStyle) this.nullableInputCheckboxFontFamilyStyleAdapter.fromJson(reader);
@@ -109,7 +109,7 @@ public final class InputCheckboxGroup_InputCheckboxComponentStyleJsonAdapter ext
                     break;
             }
         }
-        reader.z();
+        reader.D();
         return new InputCheckboxGroup.InputCheckboxComponentStyle(inputCheckboxFontFamilyStyle, inputCheckboxFontSizeStyle, inputCheckboxFontWeightStyle, inputCheckboxLetterSpacingStyle, inputCheckboxLineHeightStyle, inputCheckboxTextColorStyle, textBasedTextColorStyle);
     }
 
@@ -118,21 +118,21 @@ public final class InputCheckboxGroup_InputCheckboxComponentStyleJsonAdapter ext
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (inputCheckboxComponentStyle != null) {
             writer.k();
-            writer.W(ViewProps.FONT_FAMILY);
+            writer.J(ViewProps.FONT_FAMILY);
             this.nullableInputCheckboxFontFamilyStyleAdapter.toJson(writer, inputCheckboxComponentStyle.getFontFamily());
-            writer.W(ViewProps.FONT_SIZE);
+            writer.J(ViewProps.FONT_SIZE);
             this.nullableInputCheckboxFontSizeStyleAdapter.toJson(writer, inputCheckboxComponentStyle.getFontSize());
-            writer.W(ViewProps.FONT_WEIGHT);
+            writer.J(ViewProps.FONT_WEIGHT);
             this.nullableInputCheckboxFontWeightStyleAdapter.toJson(writer, inputCheckboxComponentStyle.getFontWeight());
-            writer.W(ViewProps.LETTER_SPACING);
+            writer.J(ViewProps.LETTER_SPACING);
             this.nullableInputCheckboxLetterSpacingStyleAdapter.toJson(writer, inputCheckboxComponentStyle.getLetterSpacing());
-            writer.W(ViewProps.LINE_HEIGHT);
+            writer.J(ViewProps.LINE_HEIGHT);
             this.nullableInputCheckboxLineHeightStyleAdapter.toJson(writer, inputCheckboxComponentStyle.getLineHeight());
-            writer.W("textColor");
+            writer.J("textColor");
             this.nullableInputCheckboxTextColorStyleAdapter.toJson(writer, inputCheckboxComponentStyle.getTextColor());
-            writer.W("textColorHighlight");
+            writer.J("textColorHighlight");
             this.nullableTextBasedTextColorStyleAdapter.toJson(writer, inputCheckboxComponentStyle.getTextColorHighlight());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

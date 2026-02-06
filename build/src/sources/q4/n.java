@@ -7,10 +7,10 @@ import androidx.work.impl.WorkDatabase;
 public class n {
 
     /* renamed from: a  reason: collision with root package name */
-    private final WorkDatabase f47410a;
+    private final WorkDatabase f46458a;
 
     public n(WorkDatabase workDatabase) {
-        this.f47410a = workDatabase;
+        this.f46458a = workDatabase;
     }
 
     public static void c(Context context, x3.g gVar) {
@@ -23,19 +23,19 @@ public class n {
         if (sharedPreferences.getBoolean("reschedule_needed", false)) {
             j10 = 1;
         }
-        gVar.D();
+        gVar.H();
         try {
-            gVar.i0("INSERT OR REPLACE INTO `Preference` (`key`, `long_value`) VALUES (@key, @long_value)", new Object[]{"last_cancel_all_time_ms", Long.valueOf(j11)});
-            gVar.i0("INSERT OR REPLACE INTO `Preference` (`key`, `long_value`) VALUES (@key, @long_value)", new Object[]{"reschedule_needed", Long.valueOf(j10)});
+            gVar.k0("INSERT OR REPLACE INTO `Preference` (`key`, `long_value`) VALUES (@key, @long_value)", new Object[]{"last_cancel_all_time_ms", Long.valueOf(j11)});
+            gVar.k0("INSERT OR REPLACE INTO `Preference` (`key`, `long_value`) VALUES (@key, @long_value)", new Object[]{"reschedule_needed", Long.valueOf(j10)});
             sharedPreferences.edit().clear().apply();
-            gVar.h0();
+            gVar.j0();
         } finally {
-            gVar.t0();
+            gVar.v0();
         }
     }
 
     public long a() {
-        Long b10 = this.f47410a.D().b("last_force_stop_ms");
+        Long b10 = this.f46458a.D().b("last_force_stop_ms");
         if (b10 != null) {
             return b10.longValue();
         }
@@ -43,7 +43,7 @@ public class n {
     }
 
     public boolean b() {
-        Long b10 = this.f47410a.D().b("reschedule_needed");
+        Long b10 = this.f46458a.D().b("reschedule_needed");
         if (b10 != null && b10.longValue() == 1) {
             return true;
         }
@@ -51,10 +51,10 @@ public class n {
     }
 
     public void d(long j10) {
-        this.f47410a.D().a(new p4.d("last_force_stop_ms", Long.valueOf(j10)));
+        this.f46458a.D().a(new p4.d("last_force_stop_ms", Long.valueOf(j10)));
     }
 
     public void e(boolean z10) {
-        this.f47410a.D().a(new p4.d("reschedule_needed", z10));
+        this.f46458a.D().a(new p4.d("reschedule_needed", z10));
     }
 }

@@ -10,13 +10,13 @@ import java.util.List;
 public final class j implements i0.c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f20540a;
+    private final int f20495a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f20541b;
+    private final List f20496b;
 
     public j(int i10) {
-        this(i10, mi.s.s());
+        this(i10, ni.s.t());
     }
 
     private d0 c(i0.b bVar) {
@@ -33,10 +33,10 @@ public final class j implements i0.c {
         int i10;
         List list;
         if (f(32)) {
-            return this.f20541b;
+            return this.f20496b;
         }
-        ne.h0 h0Var = new ne.h0(bVar.f20534d);
-        List list2 = this.f20541b;
+        ne.h0 h0Var = new ne.h0(bVar.f20489d);
+        List list2 = this.f20496b;
         while (h0Var.a() > 0) {
             int H = h0Var.H();
             int f10 = h0Var.f() + h0Var.H();
@@ -78,7 +78,7 @@ public final class j implements i0.c {
     }
 
     private boolean f(int i10) {
-        if ((i10 & this.f20540a) != 0) {
+        if ((i10 & this.f20495a) != 0) {
             return true;
         }
         return false;
@@ -107,14 +107,14 @@ public final class j implements i0.c {
                                                             if (f(2)) {
                                                                 return null;
                                                             }
-                                                            return new w(new i(false, bVar.f20532b));
+                                                            return new w(new i(false, bVar.f20487b));
                                                         case 16:
                                                             return new w(new o(d(bVar)));
                                                         case 17:
                                                             if (f(2)) {
                                                                 return null;
                                                             }
-                                                            return new w(new s(bVar.f20532b));
+                                                            return new w(new s(bVar.f20487b));
                                                         default:
                                                             switch (i10) {
                                                                 case IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT /* 128 */:
@@ -131,7 +131,7 @@ public final class j implements i0.c {
                                                             }
                                                     }
                                                 }
-                                                return new w(new c(bVar.f20532b));
+                                                return new w(new c(bVar.f20487b));
                                             } else if (f(16)) {
                                                 return null;
                                             } else {
@@ -140,11 +140,11 @@ public final class j implements i0.c {
                                         }
                                         return new c0(new v("application/vnd.dvb.ait"));
                                     }
-                                    return new w(new f(bVar.f20532b));
+                                    return new w(new f(bVar.f20487b));
                                 }
-                                return new w(new k(bVar.f20532b));
+                                return new w(new k(bVar.f20487b));
                             }
-                            return new w(new l(bVar.f20533c));
+                            return new w(new l(bVar.f20488c));
                         }
                         return new w(new q(c(bVar)));
                     } else if (f(4)) {
@@ -155,13 +155,13 @@ public final class j implements i0.c {
                 }
                 return new w(new r());
             }
-            return new w(new t(bVar.f20532b));
+            return new w(new t(bVar.f20487b));
         }
         return new w(new n(d(bVar)));
     }
 
     public j(int i10, List list) {
-        this.f20540a = i10;
-        this.f20541b = list;
+        this.f20495a = i10;
+        this.f20496b = list;
     }
 }

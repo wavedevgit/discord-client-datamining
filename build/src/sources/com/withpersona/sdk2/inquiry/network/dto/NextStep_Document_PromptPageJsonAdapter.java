@@ -40,7 +40,7 @@ public final class NextStep_Document_PromptPageJsonAdapter extends h {
     @NotNull
     public NextStep.Document.PromptPage fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         String str = null;
         String str2 = null;
         String str3 = null;
@@ -53,10 +53,10 @@ public final class NextStep_Document_PromptPageJsonAdapter extends h {
         String str10 = null;
         String str11 = null;
         while (reader.hasNext()) {
-            switch (reader.W(this.options)) {
+            switch (reader.J(this.options)) {
                 case -1:
                     reader.E0();
-                    reader.P();
+                    reader.S();
                     break;
                 case 0:
                     str = (String) this.nullableStringAdapter.fromJson(reader);
@@ -93,7 +93,7 @@ public final class NextStep_Document_PromptPageJsonAdapter extends h {
                     break;
             }
         }
-        reader.z();
+        reader.D();
         return new NextStep.Document.PromptPage(str, str2, str3, str4, str5, str6, str7, str8, str9, str10, str11);
     }
 
@@ -102,29 +102,29 @@ public final class NextStep_Document_PromptPageJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (promptPage != null) {
             writer.k();
-            writer.W("title");
+            writer.J("title");
             this.nullableStringAdapter.toJson(writer, promptPage.getTitle());
-            writer.W("prompt");
+            writer.J("prompt");
             this.nullableStringAdapter.toJson(writer, promptPage.getPrompt());
-            writer.W("disclaimer");
+            writer.J("disclaimer");
             this.nullableStringAdapter.toJson(writer, promptPage.getDisclaimer());
-            writer.W("captureOptionsDialogTitle");
+            writer.J("captureOptionsDialogTitle");
             this.nullableStringAdapter.toJson(writer, promptPage.getCaptureOptionsDialogTitle());
-            writer.W("btnCapture");
+            writer.J("btnCapture");
             this.nullableStringAdapter.toJson(writer, promptPage.getBtnCapture());
-            writer.W("btnUpload");
+            writer.J("btnUpload");
             this.nullableStringAdapter.toJson(writer, promptPage.getBtnUpload());
-            writer.W("btnSubmit");
+            writer.J("btnSubmit");
             this.nullableStringAdapter.toJson(writer, promptPage.getBtnSubmit());
-            writer.W("cameraPermissionsTitle");
+            writer.J("cameraPermissionsTitle");
             this.nullableStringAdapter.toJson(writer, promptPage.getCameraPermissionsTitle());
-            writer.W("cameraPermissionsPrompt");
+            writer.J("cameraPermissionsPrompt");
             this.nullableStringAdapter.toJson(writer, promptPage.getCameraPermissionsPrompt());
-            writer.W("cameraPermissionsBtnContinueMobile");
+            writer.J("cameraPermissionsBtnContinueMobile");
             this.nullableStringAdapter.toJson(writer, promptPage.getCameraPermissionsAllowButtonText());
-            writer.W("cameraPermissionsBtnCancel");
+            writer.J("cameraPermissionsBtnCancel");
             this.nullableStringAdapter.toJson(writer, promptPage.getCameraPermissionsCancelButtonText());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

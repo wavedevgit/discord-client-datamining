@@ -10,18 +10,18 @@ import p.a;
 public abstract class p {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final Rational f51090a = new Rational(16, 9);
+    public static final Rational f51131a = new Rational(16, 9);
 
     private static boolean a(Size size, Rational rational) {
         return rational.equals(new Rational(size.getWidth(), size.getHeight()));
     }
 
     public static void b(Size size, i2.b bVar) {
-        if (((PreviewPixelHDRnetQuirk) androidx.camera.camera2.internal.compat.quirk.b.b(PreviewPixelHDRnetQuirk.class)) == null || a(size, f51090a)) {
+        if (((PreviewPixelHDRnetQuirk) androidx.camera.camera2.internal.compat.quirk.b.b(PreviewPixelHDRnetQuirk.class)) == null || a(size, f51131a)) {
             return;
         }
-        a.C0564a c0564a = new a.C0564a();
-        c0564a.f(CaptureRequest.TONEMAP_MODE, 2);
-        bVar.g(c0564a.c());
+        a.C0575a c0575a = new a.C0575a();
+        c0575a.f(CaptureRequest.TONEMAP_MODE, 2);
+        bVar.g(c0575a.c());
     }
 }

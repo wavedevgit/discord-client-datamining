@@ -10,18 +10,18 @@ public abstract class JvmMemberSignature {
     public static final class Field extends JvmMemberSignature {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f33785a;
+        private final String f33805a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final String f33786b;
+        private final String f33806b;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public Field(@NotNull String name, @NotNull String desc) {
             super(null);
             Intrinsics.checkNotNullParameter(name, "name");
             Intrinsics.checkNotNullParameter(desc, "desc");
-            this.f33785a = name;
-            this.f33786b = desc;
+            this.f33805a = name;
+            this.f33806b = desc;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.metadata.jvm.deserialization.JvmMemberSignature
@@ -32,12 +32,12 @@ public abstract class JvmMemberSignature {
 
         @NotNull
         public final String component1() {
-            return this.f33785a;
+            return this.f33805a;
         }
 
         @NotNull
         public final String component2() {
-            return this.f33786b;
+            return this.f33806b;
         }
 
         public boolean equals(Object obj) {
@@ -46,23 +46,23 @@ public abstract class JvmMemberSignature {
             }
             if (obj instanceof Field) {
                 Field field = (Field) obj;
-                return Intrinsics.areEqual(this.f33785a, field.f33785a) && Intrinsics.areEqual(this.f33786b, field.f33786b);
+                return Intrinsics.areEqual(this.f33805a, field.f33805a) && Intrinsics.areEqual(this.f33806b, field.f33806b);
             }
             return false;
         }
 
         @NotNull
         public String getDesc() {
-            return this.f33786b;
+            return this.f33806b;
         }
 
         @NotNull
         public String getName() {
-            return this.f33785a;
+            return this.f33805a;
         }
 
         public int hashCode() {
-            return (this.f33785a.hashCode() * 31) + this.f33786b.hashCode();
+            return (this.f33805a.hashCode() * 31) + this.f33806b.hashCode();
         }
     }
 
@@ -70,26 +70,26 @@ public abstract class JvmMemberSignature {
     public static final class Method extends JvmMemberSignature {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f33787a;
+        private final String f33807a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final String f33788b;
+        private final String f33808b;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public Method(@NotNull String name, @NotNull String desc) {
             super(null);
             Intrinsics.checkNotNullParameter(name, "name");
             Intrinsics.checkNotNullParameter(desc, "desc");
-            this.f33787a = name;
-            this.f33788b = desc;
+            this.f33807a = name;
+            this.f33808b = desc;
         }
 
         public static /* synthetic */ Method copy$default(Method method, String str, String str2, int i10, Object obj) {
             if ((i10 & 1) != 0) {
-                str = method.f33787a;
+                str = method.f33807a;
             }
             if ((i10 & 2) != 0) {
-                str2 = method.f33788b;
+                str2 = method.f33808b;
             }
             return method.copy(str, str2);
         }
@@ -113,23 +113,23 @@ public abstract class JvmMemberSignature {
             }
             if (obj instanceof Method) {
                 Method method = (Method) obj;
-                return Intrinsics.areEqual(this.f33787a, method.f33787a) && Intrinsics.areEqual(this.f33788b, method.f33788b);
+                return Intrinsics.areEqual(this.f33807a, method.f33807a) && Intrinsics.areEqual(this.f33808b, method.f33808b);
             }
             return false;
         }
 
         @NotNull
         public String getDesc() {
-            return this.f33788b;
+            return this.f33808b;
         }
 
         @NotNull
         public String getName() {
-            return this.f33787a;
+            return this.f33807a;
         }
 
         public int hashCode() {
-            return (this.f33787a.hashCode() * 31) + this.f33788b.hashCode();
+            return (this.f33807a.hashCode() * 31) + this.f33808b.hashCode();
         }
     }
 

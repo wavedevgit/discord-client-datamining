@@ -1,43 +1,44 @@
 package og;
 
-import xi.c;
+import com.facebook.react.devsupport.StackTraceHelper;
+import yi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class u5 implements xi.d {
+final class u5 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final u5 f43431a = new u5();
+    static final u5 f42549a = new u5();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final xi.c f43432b;
+    private static final yi.c f42550b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final xi.c f43433c;
+    private static final yi.c f42551c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final xi.c f43434d;
+    private static final yi.c f42552d;
 
     static {
-        c.b a10 = xi.c.a("identifyLanguageConfidenceThreshold");
-        s1 s1Var = new s1();
-        s1Var.a(1);
-        f43432b = a10.b(s1Var.b()).a();
-        c.b a11 = xi.c.a("identifyAllLanguagesConfidenceThreshold");
-        s1 s1Var2 = new s1();
-        s1Var2.a(2);
-        f43433c = a11.b(s1Var2.b()).a();
-        c.b a12 = xi.c.a("confidenceThreshold");
-        s1 s1Var3 = new s1();
-        s1Var3.a(3);
-        f43434d = a12.b(s1Var3.b()).a();
+        c.b a10 = yi.c.a(StackTraceHelper.NAME_KEY);
+        f fVar = new f();
+        fVar.a(1);
+        f42550b = a10.b(fVar.b()).a();
+        c.b a11 = yi.c.a("stages");
+        f fVar2 = new f();
+        fVar2.a(2);
+        f42551c = a11.b(fVar2.b()).a();
+        c.b a12 = yi.c.a("runMiniBenchmark");
+        f fVar3 = new f();
+        fVar3.a(3);
+        f42552d = a12.b(fVar3.b()).a();
     }
 
     private u5() {
     }
 
-    @Override // xi.d
+    @Override // yi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        xi.e eVar = (xi.e) obj2;
+        yi.e eVar = (yi.e) obj2;
         throw null;
     }
 }

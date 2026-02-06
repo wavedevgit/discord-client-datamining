@@ -18,42 +18,42 @@ import x3.g;
 public abstract class e {
     private static final Map a(g gVar, String str) {
         boolean z10;
-        Cursor H1 = gVar.H1("PRAGMA table_info(`" + str + "`)");
+        Cursor G1 = gVar.G1("PRAGMA table_info(`" + str + "`)");
         try {
-            if (H1.getColumnCount() <= 0) {
+            if (G1.getColumnCount() <= 0) {
                 Map i10 = o0.i();
-                zr.c.a(H1, null);
+                bs.c.a(G1, null);
                 return i10;
             }
-            int columnIndex = H1.getColumnIndex(StackTraceHelper.NAME_KEY);
-            int columnIndex2 = H1.getColumnIndex("type");
-            int columnIndex3 = H1.getColumnIndex("notnull");
-            int columnIndex4 = H1.getColumnIndex("pk");
-            int columnIndex5 = H1.getColumnIndex("dflt_value");
+            int columnIndex = G1.getColumnIndex(StackTraceHelper.NAME_KEY);
+            int columnIndex2 = G1.getColumnIndex("type");
+            int columnIndex3 = G1.getColumnIndex("notnull");
+            int columnIndex4 = G1.getColumnIndex("pk");
+            int columnIndex5 = G1.getColumnIndex("dflt_value");
             Map c10 = o0.c();
-            while (H1.moveToNext()) {
-                String name = H1.getString(columnIndex);
-                String type = H1.getString(columnIndex2);
-                if (H1.getInt(columnIndex3) != 0) {
+            while (G1.moveToNext()) {
+                String name = G1.getString(columnIndex);
+                String type = G1.getString(columnIndex2);
+                if (G1.getInt(columnIndex3) != 0) {
                     z10 = true;
                 } else {
                     z10 = false;
                 }
                 boolean z11 = z10;
-                int i11 = H1.getInt(columnIndex4);
-                String string = H1.getString(columnIndex5);
+                int i11 = G1.getInt(columnIndex4);
+                String string = G1.getString(columnIndex5);
                 Intrinsics.checkNotNullExpressionValue(name, "name");
                 Intrinsics.checkNotNullExpressionValue(type, "type");
                 c10.put(name, new d.a(name, type, z11, i11, string, 2));
             }
             Map b10 = o0.b(c10);
-            zr.c.a(H1, null);
+            bs.c.a(G1, null);
             return b10;
         } catch (Throwable th2) {
             try {
                 throw th2;
             } catch (Throwable th3) {
-                zr.c.a(H1, th2);
+                bs.c.a(G1, th2);
                 throw th3;
             }
         }
@@ -72,48 +72,48 @@ public abstract class e {
             Intrinsics.checkNotNullExpressionValue(string, "cursor.getString(fromColumnIndex)");
             String string2 = cursor.getString(columnIndex4);
             Intrinsics.checkNotNullExpressionValue(string2, "cursor.getString(toColumnIndex)");
-            c10.add(new d.C0644d(i10, i11, string, string2));
+            c10.add(new d.C0661d(i10, i11, string, string2));
         }
         return CollectionsKt.U0(CollectionsKt.a(c10));
     }
 
     private static final Set c(g gVar, String str) {
-        Cursor H1 = gVar.H1("PRAGMA foreign_key_list(`" + str + "`)");
+        Cursor G1 = gVar.G1("PRAGMA foreign_key_list(`" + str + "`)");
         try {
-            int columnIndex = H1.getColumnIndex(StackTraceHelper.ID_KEY);
-            int columnIndex2 = H1.getColumnIndex("seq");
-            int columnIndex3 = H1.getColumnIndex("table");
-            int columnIndex4 = H1.getColumnIndex("on_delete");
-            int columnIndex5 = H1.getColumnIndex("on_update");
-            List b10 = b(H1);
-            H1.moveToPosition(-1);
+            int columnIndex = G1.getColumnIndex(StackTraceHelper.ID_KEY);
+            int columnIndex2 = G1.getColumnIndex("seq");
+            int columnIndex3 = G1.getColumnIndex("table");
+            int columnIndex4 = G1.getColumnIndex("on_delete");
+            int columnIndex5 = G1.getColumnIndex("on_update");
+            List b10 = b(G1);
+            G1.moveToPosition(-1);
             Set b11 = x0.b();
-            while (H1.moveToNext()) {
-                if (H1.getInt(columnIndex2) == 0) {
-                    int i10 = H1.getInt(columnIndex);
+            while (G1.moveToNext()) {
+                if (G1.getInt(columnIndex2) == 0) {
+                    int i10 = G1.getInt(columnIndex);
                     ArrayList arrayList = new ArrayList();
                     ArrayList arrayList2 = new ArrayList();
-                    ArrayList<d.C0644d> arrayList3 = new ArrayList();
+                    ArrayList<d.C0661d> arrayList3 = new ArrayList();
                     for (Object obj : b10) {
-                        if (((d.C0644d) obj).e() == i10) {
+                        if (((d.C0661d) obj).e() == i10) {
                             arrayList3.add(obj);
                         }
                     }
-                    for (d.C0644d c0644d : arrayList3) {
-                        arrayList.add(c0644d.d());
-                        arrayList2.add(c0644d.f());
+                    for (d.C0661d c0661d : arrayList3) {
+                        arrayList.add(c0661d.d());
+                        arrayList2.add(c0661d.f());
                     }
-                    String string = H1.getString(columnIndex3);
+                    String string = G1.getString(columnIndex3);
                     Intrinsics.checkNotNullExpressionValue(string, "cursor.getString(tableColumnIndex)");
-                    String string2 = H1.getString(columnIndex4);
+                    String string2 = G1.getString(columnIndex4);
                     Intrinsics.checkNotNullExpressionValue(string2, "cursor.getString(onDeleteColumnIndex)");
-                    String string3 = H1.getString(columnIndex5);
+                    String string3 = G1.getString(columnIndex5);
                     Intrinsics.checkNotNullExpressionValue(string3, "cursor.getString(onUpdateColumnIndex)");
                     b11.add(new d.c(string, string2, string3, arrayList, arrayList2));
                 }
             }
             Set a10 = x0.a(b11);
-            zr.c.a(H1, null);
+            bs.c.a(G1, null);
             return a10;
         } finally {
         }
@@ -121,20 +121,20 @@ public abstract class e {
 
     private static final d.e d(g gVar, String str, boolean z10) {
         String str2;
-        Cursor H1 = gVar.H1("PRAGMA index_xinfo(`" + str + "`)");
+        Cursor G1 = gVar.G1("PRAGMA index_xinfo(`" + str + "`)");
         try {
-            int columnIndex = H1.getColumnIndex("seqno");
-            int columnIndex2 = H1.getColumnIndex("cid");
-            int columnIndex3 = H1.getColumnIndex(StackTraceHelper.NAME_KEY);
-            int columnIndex4 = H1.getColumnIndex("desc");
+            int columnIndex = G1.getColumnIndex("seqno");
+            int columnIndex2 = G1.getColumnIndex("cid");
+            int columnIndex3 = G1.getColumnIndex(StackTraceHelper.NAME_KEY);
+            int columnIndex4 = G1.getColumnIndex("desc");
             if (columnIndex != -1 && columnIndex2 != -1 && columnIndex3 != -1 && columnIndex4 != -1) {
                 TreeMap treeMap = new TreeMap();
                 TreeMap treeMap2 = new TreeMap();
-                while (H1.moveToNext()) {
-                    if (H1.getInt(columnIndex2) >= 0) {
-                        int i10 = H1.getInt(columnIndex);
-                        String columnName = H1.getString(columnIndex3);
-                        if (H1.getInt(columnIndex4) > 0) {
+                while (G1.moveToNext()) {
+                    if (G1.getInt(columnIndex2) >= 0) {
+                        int i10 = G1.getInt(columnIndex);
+                        String columnName = G1.getString(columnIndex3);
+                        if (G1.getInt(columnIndex4) > 0) {
                             str2 = "DESC";
                         } else {
                             str2 = "ASC";
@@ -151,44 +151,44 @@ public abstract class e {
                 Collection values2 = treeMap2.values();
                 Intrinsics.checkNotNullExpressionValue(values2, "ordersMap.values");
                 d.e eVar = new d.e(str, z10, h12, CollectionsKt.h1(values2));
-                zr.c.a(H1, null);
+                bs.c.a(G1, null);
                 return eVar;
             }
-            zr.c.a(H1, null);
+            bs.c.a(G1, null);
             return null;
         } finally {
         }
     }
 
     private static final Set e(g gVar, String str) {
-        Cursor H1 = gVar.H1("PRAGMA index_list(`" + str + "`)");
+        Cursor G1 = gVar.G1("PRAGMA index_list(`" + str + "`)");
         try {
-            int columnIndex = H1.getColumnIndex(StackTraceHelper.NAME_KEY);
-            int columnIndex2 = H1.getColumnIndex("origin");
-            int columnIndex3 = H1.getColumnIndex("unique");
+            int columnIndex = G1.getColumnIndex(StackTraceHelper.NAME_KEY);
+            int columnIndex2 = G1.getColumnIndex("origin");
+            int columnIndex3 = G1.getColumnIndex("unique");
             if (columnIndex != -1 && columnIndex2 != -1 && columnIndex3 != -1) {
                 Set b10 = x0.b();
-                while (H1.moveToNext()) {
-                    if (Intrinsics.areEqual("c", H1.getString(columnIndex2))) {
-                        String name = H1.getString(columnIndex);
+                while (G1.moveToNext()) {
+                    if (Intrinsics.areEqual("c", G1.getString(columnIndex2))) {
+                        String name = G1.getString(columnIndex);
                         boolean z10 = true;
-                        if (H1.getInt(columnIndex3) != 1) {
+                        if (G1.getInt(columnIndex3) != 1) {
                             z10 = false;
                         }
                         Intrinsics.checkNotNullExpressionValue(name, "name");
                         d.e d10 = d(gVar, name, z10);
                         if (d10 == null) {
-                            zr.c.a(H1, null);
+                            bs.c.a(G1, null);
                             return null;
                         }
                         b10.add(d10);
                     }
                 }
                 Set a10 = x0.a(b10);
-                zr.c.a(H1, null);
+                bs.c.a(G1, null);
                 return a10;
             }
-            zr.c.a(H1, null);
+            bs.c.a(G1, null);
             return null;
         } finally {
         }

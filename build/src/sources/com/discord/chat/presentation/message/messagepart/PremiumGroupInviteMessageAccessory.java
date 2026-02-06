@@ -19,19 +19,19 @@ public final class PremiumGroupInviteMessageAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-ntcYbpo$default  reason: not valid java name */
-    public static /* synthetic */ PremiumGroupInviteMessageAccessory m636copyntcYbpo$default(PremiumGroupInviteMessageAccessory premiumGroupInviteMessageAccessory, String str, PremiumGroupInviteEmbed premiumGroupInviteEmbed, int i10, Object obj) {
+    public static /* synthetic */ PremiumGroupInviteMessageAccessory m634copyntcYbpo$default(PremiumGroupInviteMessageAccessory premiumGroupInviteMessageAccessory, String str, PremiumGroupInviteEmbed premiumGroupInviteEmbed, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = premiumGroupInviteMessageAccessory.messageId;
         }
         if ((i10 & 2) != 0) {
             premiumGroupInviteEmbed = premiumGroupInviteMessageAccessory.premiumGroupInvite;
         }
-        return premiumGroupInviteMessageAccessory.m638copyntcYbpo(str, premiumGroupInviteEmbed);
+        return premiumGroupInviteMessageAccessory.m636copyntcYbpo(str, premiumGroupInviteEmbed);
     }
 
     @NotNull
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m637component13Eiw7ao() {
+    public final String m635component13Eiw7ao() {
         return this.messageId;
     }
 
@@ -42,7 +42,7 @@ public final class PremiumGroupInviteMessageAccessory extends MessageAccessory {
 
     @NotNull
     /* renamed from: copy-ntcYbpo  reason: not valid java name */
-    public final PremiumGroupInviteMessageAccessory m638copyntcYbpo(@NotNull String messageId, @NotNull PremiumGroupInviteEmbed premiumGroupInvite) {
+    public final PremiumGroupInviteMessageAccessory m636copyntcYbpo(@NotNull String messageId, @NotNull PremiumGroupInviteEmbed premiumGroupInvite) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(premiumGroupInvite, "premiumGroupInvite");
         return new PremiumGroupInviteMessageAccessory(messageId, premiumGroupInvite, null);
@@ -54,7 +54,7 @@ public final class PremiumGroupInviteMessageAccessory extends MessageAccessory {
         }
         if (obj instanceof PremiumGroupInviteMessageAccessory) {
             PremiumGroupInviteMessageAccessory premiumGroupInviteMessageAccessory = (PremiumGroupInviteMessageAccessory) obj;
-            return MessageId.m1089equalsimpl0(this.messageId, premiumGroupInviteMessageAccessory.messageId) && Intrinsics.areEqual(this.premiumGroupInvite, premiumGroupInviteMessageAccessory.premiumGroupInvite);
+            return MessageId.m1087equalsimpl0(this.messageId, premiumGroupInviteMessageAccessory.messageId) && Intrinsics.areEqual(this.premiumGroupInvite, premiumGroupInviteMessageAccessory.premiumGroupInvite);
         }
         return false;
     }
@@ -62,7 +62,7 @@ public final class PremiumGroupInviteMessageAccessory extends MessageAccessory {
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     @NotNull
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo538getMessageId3Eiw7ao() {
+    public String mo536getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -72,14 +72,14 @@ public final class PremiumGroupInviteMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        return (MessageId.m1090hashCodeimpl(this.messageId) * 31) + this.premiumGroupInvite.hashCode();
+        return (MessageId.m1088hashCodeimpl(this.messageId) * 31) + this.premiumGroupInvite.hashCode();
     }
 
     @NotNull
     public String toString() {
-        String m1092toStringimpl = MessageId.m1092toStringimpl(this.messageId);
+        String m1090toStringimpl = MessageId.m1090toStringimpl(this.messageId);
         PremiumGroupInviteEmbed premiumGroupInviteEmbed = this.premiumGroupInvite;
-        return "PremiumGroupInviteMessageAccessory(messageId=" + m1092toStringimpl + ", premiumGroupInvite=" + premiumGroupInviteEmbed + ")";
+        return "PremiumGroupInviteMessageAccessory(messageId=" + m1090toStringimpl + ", premiumGroupInvite=" + premiumGroupInviteEmbed + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

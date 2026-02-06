@@ -8,35 +8,35 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class s extends Service implements LifecycleOwner {
 
     /* renamed from: d  reason: collision with root package name */
-    private final l0 f4645d = new l0(this);
+    private final l0 f4974d = new l0(this);
 
     @Override // androidx.lifecycle.LifecycleOwner
     public Lifecycle getLifecycle() {
-        return this.f4645d.a();
+        return this.f4974d.a();
     }
 
     @Override // android.app.Service
     public IBinder onBind(Intent intent) {
         Intrinsics.checkNotNullParameter(intent, "intent");
-        this.f4645d.b();
+        this.f4974d.b();
         return null;
     }
 
     @Override // android.app.Service
     public void onCreate() {
-        this.f4645d.c();
+        this.f4974d.c();
         super.onCreate();
     }
 
     @Override // android.app.Service
     public void onDestroy() {
-        this.f4645d.d();
+        this.f4974d.d();
         super.onDestroy();
     }
 
     @Override // android.app.Service
     public void onStart(Intent intent, int i10) {
-        this.f4645d.e();
+        this.f4974d.e();
         super.onStart(intent, i10);
     }
 

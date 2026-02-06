@@ -1,40 +1,40 @@
 package kotlinx.serialization.internal;
 
-import gt.f2;
-import gt.z2;
+import jt.f2;
+import jt.z2;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.encoding.CompositeEncoder;
-import or.b0;
-import or.c0;
+import qr.b0;
+import qr.c0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class k extends f2 implements KSerializer {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final k f35098c = new k();
+    public static final k f35118c = new k();
 
     private k() {
-        super(et.a.J(b0.f44204e));
+        super(gt.a.J(b0.f48016e));
     }
 
-    @Override // gt.a
+    @Override // jt.a
     public /* bridge */ /* synthetic */ int e(Object obj) {
-        return v(((c0) obj).s());
+        return v(((c0) obj).t());
     }
 
-    @Override // gt.a
+    @Override // jt.a
     public /* bridge */ /* synthetic */ Object k(Object obj) {
-        return y(((c0) obj).s());
+        return y(((c0) obj).t());
     }
 
-    @Override // gt.f2
+    @Override // jt.f2
     public /* bridge */ /* synthetic */ Object r() {
         return c0.b(w());
     }
 
-    @Override // gt.f2
+    @Override // jt.f2
     public /* bridge */ /* synthetic */ void u(CompositeEncoder compositeEncoder, Object obj, int i10) {
-        z(compositeEncoder, ((c0) obj).s(), i10);
+        z(compositeEncoder, ((c0) obj).t(), i10);
     }
 
     protected int v(long[] collectionSize) {
@@ -47,7 +47,7 @@ public final class k extends f2 implements KSerializer {
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // gt.s, gt.a
+    @Override // jt.s, jt.a
     /* renamed from: x */
     public void h(kotlinx.serialization.encoding.c decoder, int i10, z2 builder, boolean z10) {
         Intrinsics.checkNotNullParameter(decoder, "decoder");

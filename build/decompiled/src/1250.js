@@ -11,8 +11,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         '__packager_asset': true,
         'httpServerLocation': '/assets/.cache/intl/aW50bA==',
         'scales': null,
-        'hash': 'e6875399aeb9c2d031ab493cbb69c564',
-        'name': 'hu.messages.e6875399aeb9c2d031ab493cbb69c564.compiled.messages',
+        'hash': '6c82a895c5267bb340d44a0234e20d67',
+        'name': 'hu.messages.6c82a895c5267bb340d44a0234e20d67.compiled.messages',
         'type': 'jsona'
     };
     var4 = [1];

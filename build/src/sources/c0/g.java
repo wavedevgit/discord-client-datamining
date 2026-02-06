@@ -8,22 +8,22 @@ import java.util.concurrent.ScheduledExecutorService;
 public abstract class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private static volatile ScheduledExecutorService f7326a;
+    private static volatile ScheduledExecutorService f7171a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static ScheduledExecutorService a() {
-        if (f7326a != null) {
-            return f7326a;
+        if (f7171a != null) {
+            return f7171a;
         }
         synchronized (g.class) {
             try {
-                if (f7326a == null) {
-                    f7326a = new d(new Handler(Looper.getMainLooper()));
+                if (f7171a == null) {
+                    f7171a = new d(new Handler(Looper.getMainLooper()));
                 }
             } catch (Throwable th2) {
                 throw th2;
             }
         }
-        return f7326a;
+        return f7171a;
     }
 }

@@ -263,4 +263,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.ShopGiftScreens = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 8916, 33, 5790, 1234, 4705, 4561, 11357, 1469, 11361, 5730, 5583, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 8922, 33, 5794, 1234, 4706, 4562, 11360, 1469, 11364, 5734, 5584, 2]);

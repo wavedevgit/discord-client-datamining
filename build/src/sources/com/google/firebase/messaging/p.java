@@ -16,7 +16,7 @@ import java.util.WeakHashMap;
 public class p implements Application.ActivityLifecycleCallbacks {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Set f16514d = Collections.newSetFromMap(new WeakHashMap());
+    private final Set f16494d = Collections.newSetFromMap(new WeakHashMap());
 
     /* JADX INFO: Access modifiers changed from: private */
     public void b(Intent intent) {
@@ -37,7 +37,7 @@ public class p implements Application.ActivityLifecycleCallbacks {
     @Override // android.app.Application.ActivityLifecycleCallbacks
     public void onActivityCreated(Activity activity, Bundle bundle) {
         final Intent intent = activity.getIntent();
-        if (intent != null && this.f16514d.add(intent)) {
+        if (intent != null && this.f16494d.add(intent)) {
             if (Build.VERSION.SDK_INT <= 25) {
                 new Handler(Looper.getMainLooper()).post(new Runnable() { // from class: com.google.firebase.messaging.o
                     @Override // java.lang.Runnable
@@ -58,7 +58,7 @@ public class p implements Application.ActivityLifecycleCallbacks {
     @Override // android.app.Application.ActivityLifecycleCallbacks
     public void onActivityPaused(Activity activity) {
         if (activity.isFinishing()) {
-            this.f16514d.remove(activity.getIntent());
+            this.f16494d.remove(activity.getIntent());
         }
     }
 

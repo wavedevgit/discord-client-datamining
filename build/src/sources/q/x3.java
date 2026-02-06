@@ -6,13 +6,13 @@ import p.a;
 final class x3 extends u0 {
 
     /* renamed from: c  reason: collision with root package name */
-    static final x3 f47172c = new x3(new u.k());
+    static final x3 f46220c = new x3(new u.k());
 
     /* renamed from: b  reason: collision with root package name */
-    private final u.k f47173b;
+    private final u.k f46221b;
 
     private x3(u.k kVar) {
-        this.f47173b = kVar;
+        this.f46221b = kVar;
     }
 
     @Override // q.u0, a0.p0.b
@@ -20,11 +20,11 @@ final class x3 extends u0 {
         super.a(x2Var, aVar);
         if (x2Var instanceof a0.g1) {
             a0.g1 g1Var = (a0.g1) x2Var;
-            a.C0564a c0564a = new a.C0564a();
+            a.C0575a c0575a = new a.C0575a();
             if (g1Var.e0()) {
-                this.f47173b.a(g1Var.X(), c0564a);
+                this.f46221b.a(g1Var.X(), c0575a);
             }
-            aVar.e(c0564a.c());
+            aVar.e(c0575a.c());
             return;
         }
         throw new IllegalArgumentException("config is not ImageCaptureConfig");

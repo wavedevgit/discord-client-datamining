@@ -10,10 +10,10 @@ import java.util.concurrent.atomic.AtomicInteger;
 public final class n6 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final o7 f29236a;
+    private final o7 f28380a;
 
     public n6(o7 o7Var) {
-        this.f29236a = (o7) io.sentry.util.y.c(o7Var, "The SentryStackTraceFactory is required.");
+        this.f28380a = (o7) io.sentry.util.y.c(o7Var, "The SentryStackTraceFactory is required.");
     }
 
     private io.sentry.protocol.s c(Throwable th2, io.sentry.protocol.l lVar, Long l10, List list, boolean z10) {
@@ -85,7 +85,7 @@ public final class n6 {
                 z10 = false;
             }
             io.sentry.protocol.l lVar2 = lVar;
-            deque2.addFirst(c(th3, lVar2, Long.valueOf(currentThread.getId()), this.f29236a.a(th3.getStackTrace(), Boolean.FALSE.equals(lVar2.l())), z10));
+            deque2.addFirst(c(th3, lVar2, Long.valueOf(currentThread.getId()), this.f28380a.a(th3.getStackTrace(), Boolean.FALSE.equals(lVar2.l())), z10));
             if (lVar2.k() == null) {
                 lVar2.p(str2);
             }

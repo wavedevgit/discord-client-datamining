@@ -1,14 +1,14 @@
 package com.google.android.gms.common;
 
-import android.content.Context;
-import android.content.res.Resources;
+import android.content.Intent;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class i extends j {
+public class i extends o {
 
-    /* renamed from: f  reason: collision with root package name */
-    public static final int f13812f = j.f13813a;
+    /* renamed from: e  reason: collision with root package name */
+    private final int f13778e;
 
-    public static Resources c(Context context) {
-        return j.c(context);
+    public i(int i10, String str, Intent intent) {
+        super(str, intent);
+        this.f13778e = i10;
     }
 }

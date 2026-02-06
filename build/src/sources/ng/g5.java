@@ -1,62 +1,34 @@
 package ng;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import yi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class g5 {
-    public static String a(String str, Object... objArr) {
-        int length;
-        int length2;
-        int indexOf;
-        String str2;
-        int i10 = 0;
-        int i11 = 0;
-        while (true) {
-            length = objArr.length;
-            if (i11 >= length) {
-                break;
-            }
-            Object obj = objArr[i11];
-            if (obj == null) {
-                str2 = "null";
-            } else {
-                try {
-                    str2 = obj.toString();
-                } catch (Exception e10) {
-                    String str3 = obj.getClass().getName() + '@' + Integer.toHexString(System.identityHashCode(obj));
-                    Logger.getLogger("com.google.common.base.Strings").logp(Level.WARNING, "com.google.common.base.Strings", "lenientToString", "Exception during lenientFormat for ".concat(str3), (Throwable) e10);
-                    str2 = "<" + str3 + " threw " + e10.getClass().getName() + ">";
-                }
-            }
-            objArr[i11] = str2;
-            i11++;
-        }
-        StringBuilder sb2 = new StringBuilder(str.length() + (length * 16));
-        int i12 = 0;
-        while (true) {
-            length2 = objArr.length;
-            if (i10 >= length2 || (indexOf = str.indexOf("%s", i12)) == -1) {
-                break;
-            }
-            sb2.append((CharSequence) str, i12, indexOf);
-            sb2.append(objArr[i10]);
-            i10++;
-            i12 = indexOf + 2;
-        }
-        sb2.append((CharSequence) str, i12, str.length());
-        if (i10 < length2) {
-            sb2.append(" [");
-            sb2.append(objArr[i10]);
-            for (int i13 = i10 + 1; i13 < objArr.length; i13++) {
-                sb2.append(", ");
-                sb2.append(objArr[i13]);
-            }
-            sb2.append(']');
-        }
-        return sb2.toString();
+final class g5 implements yi.d {
+
+    /* renamed from: a  reason: collision with root package name */
+    static final g5 f39819a = new g5();
+
+    static {
+        c.b a10 = yi.c.a("logEventKey");
+        l2 l2Var = new l2();
+        l2Var.a(1);
+        a10.b(l2Var.b()).a();
+        c.b a11 = yi.c.a("eventCount");
+        l2 l2Var2 = new l2();
+        l2Var2.a(2);
+        a11.b(l2Var2.b()).a();
+        c.b a12 = yi.c.a("inferenceDurationStats");
+        l2 l2Var3 = new l2();
+        l2Var3.a(3);
+        a12.b(l2Var3.b()).a();
     }
 
-    public static boolean b(String str) {
-        return e3.a(str);
+    private g5() {
+    }
+
+    @Override // yi.d
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        android.support.v4.media.session.b.a(obj);
+        yi.e eVar = (yi.e) obj2;
+        throw null;
     }
 }

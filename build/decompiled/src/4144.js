@@ -14,21 +14,58 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var4.bind(var5)(var2, var0, var3);
     var0 = undefined;
-    var2.isBLEND = var0;
-    var2.isELF = var0;
-    var2.isEXE = var0;
-    var2.isMACHO = var0;
-    var2.isINDD = var0;
-    var2.isORC = var0;
-    var2.isPARQUET = var0;
-    var2.isPDF = var0;
-    var2.isPS = var0;
-    var2.isRTF = var0;
-    var2.isSQLITE = var0;
-    var2.isSTL = var0;
-    var2.isTTF = var0;
-    var2.isDOC = var0;
-    var2.isPCAP = var0;
+    var2.isAVIF = var0;
+    var2.isBMP = var0;
+    var2.isBPG = var0;
+    var2.isCR2 = var0;
+    var2.isEXR = var0;
+    var2.isGIF = var0;
+    var2.isHEIC = var0;
+    var2.isICO = var0;
+    var2.isJPEG = var0;
+    var2.isPBM = var0;
+    var2.isPGM = var0;
+    var2.isPNG = var0;
+    var2.isPPM = var0;
+    var2.isPSD = var0;
+    var2.isWEBP = var0;
+    var3 = function arg0() {
+        _fun37898: for (var _fun37898_ip = 0;;) switch (_fun37898_ip) {
+            case 0:
+                var4 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                var5 = 0;
+                var0 = var6[var5];
+                var3 = undefined;
+                var0 = var4.bind(var3)(var0);
+                var2 = var0.getFileChunk;
+                var0 = arg0;
+                var2 = var2.bind(var3)(var0);
+                var0 = 1;
+                var0 = var6[var0];
+                var0 = var4.bind(var3)(var0);
+                var6 = var0.FileTypes;
+                var4 = var6.checkByFileType;
+                var0 = 'avif';
+                var0 = var4.bind(var6)(var2, var0);
+                var4 = !var0;
+                var0 = !var4;
+                if (var4) {
+                    _fun37898_ip = 111;
+                    continue _fun37898
+                }
+            case 83:
+                var4 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var1 = var1[var5];
+                var1 = var4.bind(var3)(var1);
+                var1 = var1.isAvifStringIncluded;
+                var0 = var1.bind(var3)(var2);
+            case 111:
+                return var0;
+        }
+    };
+    var2.isAVIF = var3;
     var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
@@ -44,11 +81,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = var2.bind(var1)(var0);
         var2 = var0.FileTypes;
         var1 = var2.checkByFileType;
-        var0 = 'blend';
+        var0 = 'bmp';
         var0 = var1.bind(var2)(var3, var0);
         return var0;
     };
-    var2.isBLEND = var3;
+    var2.isBMP = var3;
     var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
@@ -64,11 +101,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = var2.bind(var1)(var0);
         var2 = var0.FileTypes;
         var1 = var2.checkByFileType;
-        var0 = 'elf';
+        var0 = 'bpg';
         var0 = var1.bind(var2)(var3, var0);
         return var0;
     };
-    var2.isELF = var3;
+    var2.isBPG = var3;
     var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
@@ -84,11 +121,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = var2.bind(var1)(var0);
         var2 = var0.FileTypes;
         var1 = var2.checkByFileType;
-        var0 = 'exe';
+        var0 = 'cr2';
         var0 = var1.bind(var2)(var3, var0);
         return var0;
     };
-    var2.isEXE = var3;
+    var2.isCR2 = var3;
     var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
@@ -104,11 +141,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = var2.bind(var1)(var0);
         var2 = var0.FileTypes;
         var1 = var2.checkByFileType;
-        var0 = 'macho';
+        var0 = 'exr';
         var0 = var1.bind(var2)(var3, var0);
         return var0;
     };
-    var2.isMACHO = var3;
+    var2.isEXR = var3;
     var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
@@ -124,11 +161,48 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = var2.bind(var1)(var0);
         var2 = var0.FileTypes;
         var1 = var2.checkByFileType;
-        var0 = 'indd';
+        var0 = 'gif';
         var0 = var1.bind(var2)(var3, var0);
         return var0;
     };
-    var2.isINDD = var3;
+    var2.isGIF = var3;
+    var3 = function arg0() {
+        _fun37904: for (var _fun37904_ip = 0;;) switch (_fun37904_ip) {
+            case 0:
+                var4 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                var5 = 0;
+                var0 = var6[var5];
+                var3 = undefined;
+                var0 = var4.bind(var3)(var0);
+                var2 = var0.getFileChunk;
+                var0 = arg0;
+                var2 = var2.bind(var3)(var0);
+                var0 = 1;
+                var0 = var6[var0];
+                var0 = var4.bind(var3)(var0);
+                var6 = var0.FileTypes;
+                var4 = var6.checkByFileType;
+                var0 = 'avif';
+                var0 = var4.bind(var6)(var2, var0);
+                var4 = !var0;
+                var0 = !var4;
+                if (var4) {
+                    _fun37904_ip = 111;
+                    continue _fun37904
+                }
+            case 83:
+                var4 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var1 = var1[var5];
+                var1 = var4.bind(var3)(var1);
+                var1 = var1.isHeicSignatureIncluded;
+                var0 = var1.bind(var3)(var2);
+            case 111:
+                return var0;
+        }
+    };
+    var2.isHEIC = var3;
     var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
@@ -144,11 +218,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = var2.bind(var1)(var0);
         var2 = var0.FileTypes;
         var1 = var2.checkByFileType;
-        var0 = 'orc';
+        var0 = 'ico';
         var0 = var1.bind(var2)(var3, var0);
         return var0;
     };
-    var2.isORC = var3;
+    var2.isICO = var3;
     var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
@@ -164,11 +238,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = var2.bind(var1)(var0);
         var2 = var0.FileTypes;
         var1 = var2.checkByFileType;
-        var0 = 'parquet';
+        var0 = 'jpeg';
         var0 = var1.bind(var2)(var3, var0);
         return var0;
     };
-    var2.isPARQUET = var3;
+    var2.isJPEG = var3;
     var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
@@ -184,11 +258,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = var2.bind(var1)(var0);
         var2 = var0.FileTypes;
         var1 = var2.checkByFileType;
-        var0 = 'pdf';
+        var0 = 'pbm';
         var0 = var1.bind(var2)(var3, var0);
         return var0;
     };
-    var2.isPDF = var3;
+    var2.isPBM = var3;
     var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
@@ -204,11 +278,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = var2.bind(var1)(var0);
         var2 = var0.FileTypes;
         var1 = var2.checkByFileType;
-        var0 = 'ps';
+        var0 = 'pgm';
         var0 = var1.bind(var2)(var3, var0);
         return var0;
     };
-    var2.isPS = var3;
+    var2.isPGM = var3;
     var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
@@ -224,11 +298,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = var2.bind(var1)(var0);
         var2 = var0.FileTypes;
         var1 = var2.checkByFileType;
-        var0 = 'rtf';
+        var0 = 'png';
         var0 = var1.bind(var2)(var3, var0);
         return var0;
     };
-    var2.isRTF = var3;
+    var2.isPNG = var3;
     var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
@@ -244,11 +318,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = var2.bind(var1)(var0);
         var2 = var0.FileTypes;
         var1 = var2.checkByFileType;
-        var0 = 'sqlite';
+        var0 = 'ppm';
         var0 = var1.bind(var2)(var3, var0);
         return var0;
     };
-    var2.isSQLITE = var3;
+    var2.isPPM = var3;
     var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
@@ -264,51 +338,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = var2.bind(var1)(var0);
         var2 = var0.FileTypes;
         var1 = var2.checkByFileType;
-        var0 = 'stl';
+        var0 = 'psd';
         var0 = var1.bind(var2)(var3, var0);
         return var0;
     };
-    var2.isSTL = var3;
-    var3 = function arg0() {
-        var2 = _closure1_slot0;
-        var4 = _closure1_slot1;
-        var0 = 0;
-        var0 = var4[var0];
-        var1 = undefined;
-        var0 = var2.bind(var1)(var0);
-        var3 = var0.getFileChunk;
-        var0 = arg0;
-        var3 = var3.bind(var1)(var0);
-        var0 = 1;
-        var0 = var4[var0];
-        var0 = var2.bind(var1)(var0);
-        var2 = var0.FileTypes;
-        var1 = var2.checkByFileType;
-        var0 = 'ttf';
-        var0 = var1.bind(var2)(var3, var0);
-        return var0;
-    };
-    var2.isTTF = var3;
-    var3 = function arg0() {
-        var2 = _closure1_slot0;
-        var4 = _closure1_slot1;
-        var0 = 0;
-        var0 = var4[var0];
-        var1 = undefined;
-        var0 = var2.bind(var1)(var0);
-        var3 = var0.getFileChunk;
-        var0 = arg0;
-        var3 = var3.bind(var1)(var0);
-        var0 = 1;
-        var0 = var4[var0];
-        var0 = var2.bind(var1)(var0);
-        var2 = var0.FileTypes;
-        var1 = var2.checkByFileType;
-        var0 = 'doc';
-        var0 = var1.bind(var2)(var3, var0);
-        return var0;
-    };
-    var2.isDOC = var3;
+    var2.isPSD = var3;
     var1 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
@@ -324,10 +358,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = var2.bind(var1)(var0);
         var2 = var0.FileTypes;
         var1 = var2.checkByFileType;
-        var0 = 'pcap';
+        var0 = 'webp';
         var0 = var1.bind(var2)(var3, var0);
         return var0;
     };
-    var2.isPCAP = var1;
+    var2.isWEBP = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4137, 4138]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4138, 4139]);

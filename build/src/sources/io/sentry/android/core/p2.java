@@ -16,25 +16,25 @@ import java.util.concurrent.TimeUnit;
 public class p2 implements io.sentry.s0, c0.b {
 
     /* renamed from: h  reason: collision with root package name */
-    private static final long f28170h = TimeUnit.SECONDS.toNanos(1);
+    private static final long f27314h = TimeUnit.SECONDS.toNanos(1);
 
     /* renamed from: i  reason: collision with root package name */
-    private static final c7 f28171i = new c7(new Date(0), 0);
+    private static final c7 f27315i = new c7(new Date(0), 0);
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f28172a;
+    private final boolean f27316a;
 
     /* renamed from: c  reason: collision with root package name */
-    private final io.sentry.android.core.internal.util.c0 f28174c;
+    private final io.sentry.android.core.internal.util.c0 f27318c;
 
     /* renamed from: d  reason: collision with root package name */
-    private volatile String f28175d;
+    private volatile String f27319d;
 
     /* renamed from: b  reason: collision with root package name */
-    protected final io.sentry.util.a f28173b = new io.sentry.util.a();
+    protected final io.sentry.util.a f27317b = new io.sentry.util.a();
 
     /* renamed from: e  reason: collision with root package name */
-    private final SortedSet f28176e = new TreeSet(new Comparator() { // from class: io.sentry.android.core.o2
+    private final SortedSet f27320e = new TreeSet(new Comparator() { // from class: io.sentry.android.core.o2
         @Override // java.util.Comparator
         public final int compare(Object obj, Object obj2) {
             return p2.f((ISpan) obj, (ISpan) obj2);
@@ -42,66 +42,66 @@ public class p2 implements io.sentry.s0, c0.b {
     });
 
     /* renamed from: f  reason: collision with root package name */
-    private final ConcurrentSkipListSet f28177f = new ConcurrentSkipListSet();
+    private final ConcurrentSkipListSet f27321f = new ConcurrentSkipListSet();
 
     /* renamed from: g  reason: collision with root package name */
-    private long f28178g = 16666666;
+    private long f27322g = 16666666;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static class a implements Comparable {
 
         /* renamed from: d  reason: collision with root package name */
-        private final long f28179d;
+        private final long f27323d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final long f28180e;
+        private final long f27324e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final long f28181i;
+        private final long f27325i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final long f28182o;
+        private final long f27326o;
 
         /* renamed from: p  reason: collision with root package name */
-        private final boolean f28183p;
+        private final boolean f27327p;
 
         /* renamed from: q  reason: collision with root package name */
-        private final boolean f28184q;
+        private final boolean f27328q;
 
         /* renamed from: r  reason: collision with root package name */
-        private final long f28185r;
+        private final long f27329r;
 
         a(long j10) {
             this(j10, j10, 0L, 0L, false, false, 0L);
         }
 
         @Override // java.lang.Comparable
-        /* renamed from: k */
+        /* renamed from: j */
         public int compareTo(a aVar) {
-            return Long.compare(this.f28180e, aVar.f28180e);
+            return Long.compare(this.f27324e, aVar.f27324e);
         }
 
         a(long j10, long j11, long j12, long j13, boolean z10, boolean z11, long j14) {
-            this.f28179d = j10;
-            this.f28180e = j11;
-            this.f28181i = j12;
-            this.f28182o = j13;
-            this.f28183p = z10;
-            this.f28184q = z11;
-            this.f28185r = j14;
+            this.f27323d = j10;
+            this.f27324e = j11;
+            this.f27325i = j12;
+            this.f27326o = j13;
+            this.f27327p = z10;
+            this.f27328q = z11;
+            this.f27329r = j14;
         }
     }
 
     public p2(SentryAndroidOptions sentryAndroidOptions, io.sentry.android.core.internal.util.c0 c0Var) {
         boolean z10;
-        this.f28174c = c0Var;
+        this.f27318c = c0Var;
         if (sentryAndroidOptions.isEnablePerformanceV2() && sentryAndroidOptions.isEnableFramesTracking()) {
             z10 = true;
         } else {
             z10 = false;
         }
-        this.f28172a = z10;
+        this.f27316a = z10;
     }
 
     public static /* synthetic */ int f(ISpan iSpan, ISpan iSpan2) {
@@ -125,9 +125,9 @@ public class p2 implements io.sentry.s0, c0.b {
     }
 
     private void h(ISpan iSpan) {
-        io.sentry.a1 a10 = this.f28173b.a();
+        io.sentry.a1 a10 = this.f27317b.a();
         try {
-            if (!this.f28176e.remove(iSpan)) {
+            if (!this.f27320e.remove(iSpan)) {
                 if (a10 != null) {
                     a10.close();
                     return;
@@ -154,26 +154,26 @@ public class p2 implements io.sentry.s0, c0.b {
                 return;
             }
             m2 m2Var = new m2();
-            long j14 = this.f28178g;
-            if (!this.f28177f.isEmpty()) {
-                for (a aVar : this.f28177f.tailSet((ConcurrentSkipListSet) new a(j10))) {
-                    if (aVar.f28179d > j11) {
+            long j14 = this.f27322g;
+            if (!this.f27321f.isEmpty()) {
+                for (a aVar : this.f27321f.tailSet((ConcurrentSkipListSet) new a(j10))) {
+                    if (aVar.f27323d > j11) {
                         break;
                     }
-                    if (aVar.f28179d >= j10 && aVar.f28180e <= j11) {
-                        m2Var.a(aVar.f28181i, aVar.f28182o, aVar.f28183p, aVar.f28184q);
-                    } else if ((j10 > aVar.f28179d && j10 < aVar.f28180e) || (j11 > aVar.f28179d && j11 < aVar.f28180e)) {
-                        long min = Math.min(aVar.f28182o - Math.max(j13, Math.max(j13, j10 - aVar.f28179d) - aVar.f28185r), j12);
-                        long min2 = Math.min(j11, aVar.f28180e) - Math.max(j10, aVar.f28179d);
-                        m2Var.a(min2, min, io.sentry.android.core.internal.util.c0.j(min2, aVar.f28185r), io.sentry.android.core.internal.util.c0.i(min2));
+                    if (aVar.f27323d >= j10 && aVar.f27324e <= j11) {
+                        m2Var.a(aVar.f27325i, aVar.f27326o, aVar.f27327p, aVar.f27328q);
+                    } else if ((j10 > aVar.f27323d && j10 < aVar.f27324e) || (j11 > aVar.f27323d && j11 < aVar.f27324e)) {
+                        long min = Math.min(aVar.f27326o - Math.max(j13, Math.max(j13, j10 - aVar.f27323d) - aVar.f27329r), j12);
+                        long min2 = Math.min(j11, aVar.f27324e) - Math.max(j10, aVar.f27323d);
+                        m2Var.a(min2, min, io.sentry.android.core.internal.util.c0.j(min2, aVar.f27329r), io.sentry.android.core.internal.util.c0.i(min2));
                     }
-                    j14 = aVar.f28185r;
+                    j14 = aVar.f27329r;
                     j13 = 0;
                 }
             }
             long j15 = j14;
             int f10 = m2Var.f();
-            long h10 = this.f28174c.h();
+            long h10 = this.f27318c.h();
             if (h10 != -1) {
                 f10 = f10 + g(m2Var, j15, j11, h10) + i(m2Var, j15, j12);
             }
@@ -213,19 +213,19 @@ public class p2 implements io.sentry.s0, c0.b {
 
     private static long j(j5 j5Var) {
         if (j5Var instanceof c7) {
-            return j5Var.d(f28171i);
+            return j5Var.d(f27315i);
         }
         return System.nanoTime() - (io.sentry.k.i(System.currentTimeMillis()) - j5Var.h());
     }
 
     @Override // io.sentry.s0
     public void a(ISpan iSpan) {
-        if (!this.f28172a || (iSpan instanceof y2) || (iSpan instanceof a3)) {
+        if (!this.f27316a || (iSpan instanceof y2) || (iSpan instanceof a3)) {
             return;
         }
-        io.sentry.a1 a10 = this.f28173b.a();
+        io.sentry.a1 a10 = this.f27317b.a();
         try {
-            if (!this.f28176e.contains(iSpan)) {
+            if (!this.f27320e.contains(iSpan)) {
                 if (a10 != null) {
                     a10.close();
                     return;
@@ -236,12 +236,12 @@ public class p2 implements io.sentry.s0, c0.b {
                 a10.close();
             }
             h(iSpan);
-            a10 = this.f28173b.a();
+            a10 = this.f27317b.a();
             try {
-                if (this.f28176e.isEmpty()) {
+                if (this.f27320e.isEmpty()) {
                     clear();
                 } else {
-                    this.f28177f.headSet((ConcurrentSkipListSet) new a(j(((ISpan) this.f28176e.first()).t()))).clear();
+                    this.f27321f.headSet((ConcurrentSkipListSet) new a(j(((ISpan) this.f27320e.first()).t()))).clear();
                 }
                 if (a10 != null) {
                     a10.close();
@@ -262,14 +262,14 @@ public class p2 implements io.sentry.s0, c0.b {
 
     @Override // io.sentry.s0
     public void b(ISpan iSpan) {
-        if (!this.f28172a || (iSpan instanceof y2) || (iSpan instanceof a3)) {
+        if (!this.f27316a || (iSpan instanceof y2) || (iSpan instanceof a3)) {
             return;
         }
-        io.sentry.a1 a10 = this.f28173b.a();
+        io.sentry.a1 a10 = this.f27317b.a();
         try {
-            this.f28176e.add(iSpan);
-            if (this.f28175d == null) {
-                this.f28175d = this.f28174c.l(this);
+            this.f27320e.add(iSpan);
+            if (this.f27319d == null) {
+                this.f27319d = this.f27318c.l(this);
             }
             if (a10 != null) {
                 a10.close();
@@ -288,14 +288,14 @@ public class p2 implements io.sentry.s0, c0.b {
 
     @Override // io.sentry.s0
     public void clear() {
-        io.sentry.a1 a10 = this.f28173b.a();
+        io.sentry.a1 a10 = this.f27317b.a();
         try {
-            if (this.f28175d != null) {
-                this.f28174c.m(this.f28175d);
-                this.f28175d = null;
+            if (this.f27319d != null) {
+                this.f27318c.m(this.f27319d);
+                this.f27319d = null;
             }
-            this.f28177f.clear();
-            this.f28176e.clear();
+            this.f27321f.clear();
+            this.f27320e.clear();
             if (a10 != null) {
                 a10.close();
             }
@@ -313,13 +313,13 @@ public class p2 implements io.sentry.s0, c0.b {
 
     @Override // io.sentry.android.core.internal.util.c0.b
     public void e(long j10, long j11, long j12, long j13, boolean z10, boolean z11, float f10) {
-        if (this.f28177f.size() <= 3600) {
-            long j14 = (long) (f28170h / f10);
-            this.f28178g = j14;
+        if (this.f27321f.size() <= 3600) {
+            long j14 = (long) (f27314h / f10);
+            this.f27322g = j14;
             if (!z10 && !z11) {
                 return;
             }
-            this.f28177f.add(new a(j10, j11, j12, j13, z10, z11, j14));
+            this.f27321f.add(new a(j10, j11, j12, j13, z10, z11, j14));
         }
     }
 }

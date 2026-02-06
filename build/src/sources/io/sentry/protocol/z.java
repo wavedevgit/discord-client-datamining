@@ -12,44 +12,44 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class z implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private String f29476d;
+    private String f28620d;
 
     /* renamed from: e  reason: collision with root package name */
-    private String f29477e;
+    private String f28621e;
 
     /* renamed from: i  reason: collision with root package name */
-    private String f29478i;
+    private String f28622i;
 
     /* renamed from: o  reason: collision with root package name */
-    private Map f29479o;
+    private Map f28623o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
         @Override // io.sentry.m1
         /* renamed from: b */
         public z a(e3 e3Var, ILogger iLogger) {
-            e3Var.s();
+            e3Var.u();
             z zVar = new z();
             ConcurrentHashMap concurrentHashMap = null;
             while (e3Var.peek() == io.sentry.vendor.gson.stream.b.NAME) {
-                String m02 = e3Var.m0();
-                m02.getClass();
+                String o02 = e3Var.o0();
+                o02.getClass();
                 char c10 = 65535;
-                switch (m02.hashCode()) {
+                switch (o02.hashCode()) {
                     case -339173787:
-                        if (m02.equals("raw_description")) {
+                        if (o02.equals("raw_description")) {
                             c10 = 0;
                             break;
                         }
                         break;
                     case 3373707:
-                        if (m02.equals(StackTraceHelper.NAME_KEY)) {
+                        if (o02.equals(StackTraceHelper.NAME_KEY)) {
                             c10 = 1;
                             break;
                         }
                         break;
                     case 351608024:
-                        if (m02.equals("version")) {
+                        if (o02.equals("version")) {
                             c10 = 2;
                             break;
                         }
@@ -57,24 +57,24 @@ public final class z implements w1 {
                 }
                 switch (c10) {
                     case 0:
-                        zVar.f29478i = e3Var.r1();
+                        zVar.f28622i = e3Var.q1();
                         break;
                     case 1:
-                        zVar.f29476d = e3Var.r1();
+                        zVar.f28620d = e3Var.q1();
                         break;
                     case 2:
-                        zVar.f29477e = e3Var.r1();
+                        zVar.f28621e = e3Var.q1();
                         break;
                     default:
                         if (concurrentHashMap == null) {
                             concurrentHashMap = new ConcurrentHashMap();
                         }
-                        e3Var.v1(iLogger, concurrentHashMap, m02);
+                        e3Var.u1(iLogger, concurrentHashMap, o02);
                         break;
                 }
             }
             zVar.g(concurrentHashMap);
-            e3Var.z();
+            e3Var.D();
             return zVar;
         }
     }
@@ -83,53 +83,53 @@ public final class z implements w1 {
     }
 
     public String d() {
-        return this.f29476d;
+        return this.f28620d;
     }
 
     public String e() {
-        return this.f29477e;
+        return this.f28621e;
     }
 
     public void f(String str) {
-        this.f29476d = str;
+        this.f28620d = str;
     }
 
     public void g(Map map) {
-        this.f29479o = map;
+        this.f28623o = map;
     }
 
     public void h(String str) {
-        this.f29477e = str;
+        this.f28621e = str;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
-        f3Var.s();
-        if (this.f29476d != null) {
-            f3Var.e(StackTraceHelper.NAME_KEY).f(this.f29476d);
+        f3Var.u();
+        if (this.f28620d != null) {
+            f3Var.e(StackTraceHelper.NAME_KEY).f(this.f28620d);
         }
-        if (this.f29477e != null) {
-            f3Var.e("version").f(this.f29477e);
+        if (this.f28621e != null) {
+            f3Var.e("version").f(this.f28621e);
         }
-        if (this.f29478i != null) {
-            f3Var.e("raw_description").f(this.f29478i);
+        if (this.f28622i != null) {
+            f3Var.e("raw_description").f(this.f28622i);
         }
-        Map map = this.f29479o;
+        Map map = this.f28623o;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f29479o.get(str);
+                Object obj = this.f28623o.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
         }
-        f3Var.z();
+        f3Var.D();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public z(z zVar) {
-        this.f29476d = zVar.f29476d;
-        this.f29477e = zVar.f29477e;
-        this.f29478i = zVar.f29478i;
-        this.f29479o = io.sentry.util.c.b(zVar.f29479o);
+        this.f28620d = zVar.f28620d;
+        this.f28621e = zVar.f28621e;
+        this.f28622i = zVar.f28622i;
+        this.f28623o = io.sentry.util.c.b(zVar.f28623o);
     }
 }

@@ -3,10 +3,10 @@ package io.sentry.util.thread;
 public final class b implements a {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final b f29825a = new b();
+    private static final b f28969a = new b();
 
     public static b d() {
-        return f29825a;
+        return f28969a;
     }
 
     @Override // io.sentry.util.thread.a

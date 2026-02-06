@@ -1,10 +1,9 @@
 package com.discord.notifications.api;
 
 import com.discord.notifications.api.NotificationMessage;
-import dt.m;
-import gt.f;
-import ht.y;
+import ft.m;
 import java.util.List;
+import jt.f;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.collections.CollectionsKt;
@@ -16,11 +15,12 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
 import kotlinx.serialization.json.JsonObject;
-import or.l;
-import or.o;
+import kt.y;
 import org.jetbrains.annotations.NotNull;
-@Metadata(d1 = {"\u0000b\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u001f\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 A2\u00020\u0001:\u0002@AB_\u0012\u000e\b\u0002\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003\u0012\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u0006\u0012\u000e\b\u0002\u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\u00060\u0003\u0012\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\t\u0012\u000e\b\u0002\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u000b0\u0003\u0012\u000e\b\u0002\u0010\f\u001a\b\u0012\u0004\u0012\u00020\r0\u0003¢\u0006\u0004\b\u000e\u0010\u000fBo\b\u0010\u0012\u0006\u0010\u0010\u001a\u00020\u0011\u0012\u000e\u0010\u0002\u001a\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u0003\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006\u0012\u000e\u0010\u0007\u001a\n\u0012\u0004\u0012\u00020\u0006\u0018\u00010\u0003\u0012\b\u0010\b\u001a\u0004\u0018\u00010\t\u0012\u000e\u0010\n\u001a\n\u0012\u0004\u0012\u00020\u000b\u0018\u00010\u0003\u0012\u000e\u0010\f\u001a\n\u0012\u0004\u0012\u00020\r\u0018\u00010\u0003\u0012\b\u0010\u0012\u001a\u0004\u0018\u00010\u0013¢\u0006\u0004\b\u000e\u0010\u0014J\u000f\u0010+\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003HÆ\u0003J\u000b\u0010,\u001a\u0004\u0018\u00010\u0006HÆ\u0003J\u000f\u0010-\u001a\b\u0012\u0004\u0012\u00020\u00060\u0003HÆ\u0003J\u000b\u0010.\u001a\u0004\u0018\u00010\tHÆ\u0003J\u000f\u0010/\u001a\b\u0012\u0004\u0012\u00020\u000b0\u0003HÆ\u0003J\u000f\u00100\u001a\b\u0012\u0004\u0012\u00020\r0\u0003HÆ\u0003Ja\u00101\u001a\u00020\u00002\u000e\b\u0002\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u00032\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u00062\u000e\b\u0002\u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\u00060\u00032\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\t2\u000e\b\u0002\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u000b0\u00032\u000e\b\u0002\u0010\f\u001a\b\u0012\u0004\u0012\u00020\r0\u0003HÆ\u0001J\u0013\u00102\u001a\u0002032\b\u00104\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u00105\u001a\u00020\u0011HÖ\u0001J\t\u00106\u001a\u000207HÖ\u0001J%\u00108\u001a\u0002092\u0006\u0010:\u001a\u00020\u00002\u0006\u0010;\u001a\u00020<2\u0006\u0010=\u001a\u00020>H\u0001¢\u0006\u0002\b?R\"\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u00038\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\b\u0015\u0010\u0016\u001a\u0004\b\u0017\u0010\u0018R\u001e\u0010\u0005\u001a\u0004\u0018\u00010\u00068\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\b\u0019\u0010\u0016\u001a\u0004\b\u001a\u0010\u001bR\"\u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\u00060\u00038\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\b\u001c\u0010\u0016\u001a\u0004\b\u001d\u0010\u0018R\u001e\u0010\b\u001a\u0004\u0018\u00010\t8\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\b\u001e\u0010\u0016\u001a\u0004\b\u001f\u0010 R\"\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u000b0\u00038\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\b!\u0010\u0016\u001a\u0004\b\"\u0010\u0018R\"\u0010\f\u001a\b\u0012\u0004\u0012\u00020\r0\u00038\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\b#\u0010\u0016\u001a\u0004\b$\u0010\u0018R\u0013\u0010%\u001a\u0004\u0018\u00010\u00048F¢\u0006\u0006\u001a\u0004\b&\u0010'R\u0013\u0010(\u001a\u0004\u0018\u00010\u000b8F¢\u0006\u0006\u001a\u0004\b)\u0010*¨\u0006B"}, d2 = {"Lcom/discord/notifications/api/NotificationMessage;", "", "stickerItems", "", "Lcom/discord/notifications/api/Sticker;", "author", "Lkotlinx/serialization/json/JsonObject;", "mentions", "poll", "Lcom/discord/notifications/api/Poll;", "embeds", "Lcom/discord/notifications/api/Embed;", "components", "Lcom/discord/notifications/api/Component;", "<init>", "(Ljava/util/List;Lkotlinx/serialization/json/JsonObject;Ljava/util/List;Lcom/discord/notifications/api/Poll;Ljava/util/List;Ljava/util/List;)V", "seen0", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/util/List;Lkotlinx/serialization/json/JsonObject;Ljava/util/List;Lcom/discord/notifications/api/Poll;Ljava/util/List;Ljava/util/List;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "getStickerItems$annotations", "()V", "getStickerItems", "()Ljava/util/List;", "getAuthor$annotations", "getAuthor", "()Lkotlinx/serialization/json/JsonObject;", "getMentions$annotations", "getMentions", "getPoll$annotations", "getPoll", "()Lcom/discord/notifications/api/Poll;", "getEmbeds$annotations", "getEmbeds", "getComponents$annotations", "getComponents", "sticker", "getSticker", "()Lcom/discord/notifications/api/Sticker;", "embed", "getEmbed", "()Lcom/discord/notifications/api/Embed;", "component1", "component2", "component3", "component4", "component5", "component6", "copy", "equals", "", "other", "hashCode", "toString", "", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$notification_api_release", "$serializer", "Companion", "notification_api_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+import qr.l;
+import qr.o;
 @m
+@Metadata(d1 = {"\u0000b\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u001f\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 A2\u00020\u0001:\u0002@AB_\u0012\u000e\b\u0002\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003\u0012\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u0006\u0012\u000e\b\u0002\u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\u00060\u0003\u0012\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\t\u0012\u000e\b\u0002\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u000b0\u0003\u0012\u000e\b\u0002\u0010\f\u001a\b\u0012\u0004\u0012\u00020\r0\u0003¢\u0006\u0004\b\u000e\u0010\u000fBo\b\u0010\u0012\u0006\u0010\u0010\u001a\u00020\u0011\u0012\u000e\u0010\u0002\u001a\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u0003\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006\u0012\u000e\u0010\u0007\u001a\n\u0012\u0004\u0012\u00020\u0006\u0018\u00010\u0003\u0012\b\u0010\b\u001a\u0004\u0018\u00010\t\u0012\u000e\u0010\n\u001a\n\u0012\u0004\u0012\u00020\u000b\u0018\u00010\u0003\u0012\u000e\u0010\f\u001a\n\u0012\u0004\u0012\u00020\r\u0018\u00010\u0003\u0012\b\u0010\u0012\u001a\u0004\u0018\u00010\u0013¢\u0006\u0004\b\u000e\u0010\u0014J\u000f\u0010+\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003HÆ\u0003J\u000b\u0010,\u001a\u0004\u0018\u00010\u0006HÆ\u0003J\u000f\u0010-\u001a\b\u0012\u0004\u0012\u00020\u00060\u0003HÆ\u0003J\u000b\u0010.\u001a\u0004\u0018\u00010\tHÆ\u0003J\u000f\u0010/\u001a\b\u0012\u0004\u0012\u00020\u000b0\u0003HÆ\u0003J\u000f\u00100\u001a\b\u0012\u0004\u0012\u00020\r0\u0003HÆ\u0003Ja\u00101\u001a\u00020\u00002\u000e\b\u0002\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u00032\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u00062\u000e\b\u0002\u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\u00060\u00032\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\t2\u000e\b\u0002\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u000b0\u00032\u000e\b\u0002\u0010\f\u001a\b\u0012\u0004\u0012\u00020\r0\u0003HÆ\u0001J\u0013\u00102\u001a\u0002032\b\u00104\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u00105\u001a\u00020\u0011HÖ\u0001J\t\u00106\u001a\u000207HÖ\u0001J%\u00108\u001a\u0002092\u0006\u0010:\u001a\u00020\u00002\u0006\u0010;\u001a\u00020<2\u0006\u0010=\u001a\u00020>H\u0001¢\u0006\u0002\b?R\"\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u00038\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\b\u0015\u0010\u0016\u001a\u0004\b\u0017\u0010\u0018R\u001e\u0010\u0005\u001a\u0004\u0018\u00010\u00068\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\b\u0019\u0010\u0016\u001a\u0004\b\u001a\u0010\u001bR\"\u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\u00060\u00038\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\b\u001c\u0010\u0016\u001a\u0004\b\u001d\u0010\u0018R\u001e\u0010\b\u001a\u0004\u0018\u00010\t8\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\b\u001e\u0010\u0016\u001a\u0004\b\u001f\u0010 R\"\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u000b0\u00038\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\b!\u0010\u0016\u001a\u0004\b\"\u0010\u0018R\"\u0010\f\u001a\b\u0012\u0004\u0012\u00020\r0\u00038\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\b#\u0010\u0016\u001a\u0004\b$\u0010\u0018R\u0013\u0010%\u001a\u0004\u0018\u00010\u00048F¢\u0006\u0006\u001a\u0004\b&\u0010'R\u0013\u0010(\u001a\u0004\u0018\u00010\u000b8F¢\u0006\u0006\u001a\u0004\b)\u0010*¨\u0006B"}, d2 = {"Lcom/discord/notifications/api/NotificationMessage;", "", "stickerItems", "", "Lcom/discord/notifications/api/Sticker;", "author", "Lkotlinx/serialization/json/JsonObject;", "mentions", "poll", "Lcom/discord/notifications/api/Poll;", "embeds", "Lcom/discord/notifications/api/Embed;", "components", "Lcom/discord/notifications/api/Component;", "<init>", "(Ljava/util/List;Lkotlinx/serialization/json/JsonObject;Ljava/util/List;Lcom/discord/notifications/api/Poll;Ljava/util/List;Ljava/util/List;)V", "seen0", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/util/List;Lkotlinx/serialization/json/JsonObject;Ljava/util/List;Lcom/discord/notifications/api/Poll;Ljava/util/List;Ljava/util/List;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "getStickerItems$annotations", "()V", "getStickerItems", "()Ljava/util/List;", "getAuthor$annotations", "getAuthor", "()Lkotlinx/serialization/json/JsonObject;", "getMentions$annotations", "getMentions", "getPoll$annotations", "getPoll", "()Lcom/discord/notifications/api/Poll;", "getEmbeds$annotations", "getEmbeds", "getComponents$annotations", "getComponents", "sticker", "getSticker", "()Lcom/discord/notifications/api/Sticker;", "embed", "getEmbed", "()Lcom/discord/notifications/api/Embed;", "component1", "component2", "component3", "component4", "component5", "component6", "copy", "equals", "", "other", "hashCode", "toString", "", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$notification_api_release", "$serializer", "Companion", "notification_api_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class NotificationMessage {
     @NotNull
@@ -55,7 +55,7 @@ public final class NotificationMessage {
     }
 
     static {
-        o oVar = o.f44232e;
+        o oVar = o.f48044e;
         $childSerializers = new Lazy[]{l.b(oVar, new Function0() { // from class: p7.f
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
@@ -98,7 +98,7 @@ public final class NotificationMessage {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_$0() {
-        return new f(y.f26991a);
+        return new f(y.f35529a);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -159,23 +159,23 @@ public final class NotificationMessage {
 
     public static final /* synthetic */ void write$Self$notification_api_release(NotificationMessage notificationMessage, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         Lazy[] lazyArr = $childSerializers;
-        if (compositeEncoder.z(serialDescriptor, 0) || !Intrinsics.areEqual(notificationMessage.stickerItems, CollectionsKt.l())) {
-            compositeEncoder.l(serialDescriptor, 0, (dt.o) lazyArr[0].getValue(), notificationMessage.stickerItems);
+        if (compositeEncoder.A(serialDescriptor, 0) || !Intrinsics.areEqual(notificationMessage.stickerItems, CollectionsKt.l())) {
+            compositeEncoder.s(serialDescriptor, 0, (ft.o) lazyArr[0].getValue(), notificationMessage.stickerItems);
         }
-        if (compositeEncoder.z(serialDescriptor, 1) || notificationMessage.author != null) {
-            compositeEncoder.A(serialDescriptor, 1, y.f26991a, notificationMessage.author);
+        if (compositeEncoder.A(serialDescriptor, 1) || notificationMessage.author != null) {
+            compositeEncoder.l(serialDescriptor, 1, y.f35529a, notificationMessage.author);
         }
-        if (compositeEncoder.z(serialDescriptor, 2) || !Intrinsics.areEqual(notificationMessage.mentions, CollectionsKt.l())) {
-            compositeEncoder.l(serialDescriptor, 2, (dt.o) lazyArr[2].getValue(), notificationMessage.mentions);
+        if (compositeEncoder.A(serialDescriptor, 2) || !Intrinsics.areEqual(notificationMessage.mentions, CollectionsKt.l())) {
+            compositeEncoder.s(serialDescriptor, 2, (ft.o) lazyArr[2].getValue(), notificationMessage.mentions);
         }
-        if (compositeEncoder.z(serialDescriptor, 3) || notificationMessage.poll != null) {
-            compositeEncoder.A(serialDescriptor, 3, Poll$$serializer.INSTANCE, notificationMessage.poll);
+        if (compositeEncoder.A(serialDescriptor, 3) || notificationMessage.poll != null) {
+            compositeEncoder.l(serialDescriptor, 3, Poll$$serializer.INSTANCE, notificationMessage.poll);
         }
-        if (compositeEncoder.z(serialDescriptor, 4) || !Intrinsics.areEqual(notificationMessage.embeds, CollectionsKt.l())) {
-            compositeEncoder.l(serialDescriptor, 4, (dt.o) lazyArr[4].getValue(), notificationMessage.embeds);
+        if (compositeEncoder.A(serialDescriptor, 4) || !Intrinsics.areEqual(notificationMessage.embeds, CollectionsKt.l())) {
+            compositeEncoder.s(serialDescriptor, 4, (ft.o) lazyArr[4].getValue(), notificationMessage.embeds);
         }
-        if (compositeEncoder.z(serialDescriptor, 5) || !Intrinsics.areEqual(notificationMessage.components, CollectionsKt.l())) {
-            compositeEncoder.l(serialDescriptor, 5, (dt.o) lazyArr[5].getValue(), notificationMessage.components);
+        if (compositeEncoder.A(serialDescriptor, 5) || !Intrinsics.areEqual(notificationMessage.components, CollectionsKt.l())) {
+            compositeEncoder.s(serialDescriptor, 5, (ft.o) lazyArr[5].getValue(), notificationMessage.components);
         }
     }
 

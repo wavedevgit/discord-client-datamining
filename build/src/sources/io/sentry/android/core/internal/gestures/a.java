@@ -12,10 +12,10 @@ import io.sentry.util.r;
 public final class a implements io.sentry.internal.gestures.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final r f27952a;
+    private final r f27096a;
 
     public a(r rVar) {
-        this.f27952a = rVar;
+        this.f27096a = rVar;
     }
 
     private io.sentry.internal.gestures.b b(View view) {
@@ -56,7 +56,7 @@ public final class a implements io.sentry.internal.gestures.a {
         if (aVar == b.a.CLICKABLE && e(view)) {
             return b(view);
         }
-        if (aVar != b.a.SCROLLABLE || !d(view, ((Boolean) this.f27952a.a()).booleanValue())) {
+        if (aVar != b.a.SCROLLABLE || !d(view, ((Boolean) this.f27096a.a()).booleanValue())) {
             return null;
         }
         return b(view);

@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getDefaultDynamicLinkTemplate = var3;
     var1 = function arg0() {
-        _fun92764: for (var _fun92764_ip = 0;;) switch (_fun92764_ip) {
+        _fun92777: for (var _fun92777_ip = 0;;) switch (_fun92777_ip) {
             case 0:
                 var6 = arg0;
                 var0 = global;
@@ -80,8 +80,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.GLOBAL_ENV;
                 var4 = var1.WEBAPP_ENDPOINT;
                 if (var6) {
-                    _fun92764_ip = 44;
-                    continue _fun92764
+                    _fun92777_ip = 44;
+                    continue _fun92777
                 }
             case 38:
                 var6 = '@me';

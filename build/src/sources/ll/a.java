@@ -1,32 +1,15 @@
 package ll;
 
-import android.media.MediaFormat;
-import android.view.Surface;
+import java.util.List;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public interface a {
-    c a(int i10);
+    void onCancelled(String str, List list);
 
-    int b(long j10);
+    void onCompleted(String str, List list);
 
-    int c(long j10);
+    void onError(String str, Throwable th2, List list);
 
-    c d(int i10);
+    void onProgress(String str, float f10);
 
-    void e(c cVar);
-
-    void f(MediaFormat mediaFormat, Surface surface);
-
-    void g(int i10, boolean z10);
-
-    String getName();
-
-    MediaFormat getOutputFormat();
-
-    boolean isRunning();
-
-    void release();
-
-    void start();
-
-    void stop();
+    void onStarted(String str);
 }

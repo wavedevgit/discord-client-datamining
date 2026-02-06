@@ -5,7 +5,7 @@ import kotlin.jvm.internal.Intrinsics;
 public final class n extends s3.b {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final n f5772c = new n();
+    public static final n f6101c = new n();
 
     private n() {
         super(6, 7);
@@ -14,6 +14,6 @@ public final class n extends s3.b {
     @Override // s3.b
     public void a(x3.g db2) {
         Intrinsics.checkNotNullParameter(db2, "db");
-        db2.K("\n    CREATE TABLE IF NOT EXISTS `WorkProgress` (`work_spec_id` TEXT NOT NULL, `progress`\n    BLOB NOT NULL, PRIMARY KEY(`work_spec_id`), FOREIGN KEY(`work_spec_id`)\n    REFERENCES `WorkSpec`(`id`) ON UPDATE CASCADE ON DELETE CASCADE )\n    ");
+        db2.O("\n    CREATE TABLE IF NOT EXISTS `WorkProgress` (`work_spec_id` TEXT NOT NULL, `progress`\n    BLOB NOT NULL, PRIMARY KEY(`work_spec_id`), FOREIGN KEY(`work_spec_id`)\n    REFERENCES `WorkSpec`(`id`) ON UPDATE CASCADE ON DELETE CASCADE )\n    ");
     }
 }

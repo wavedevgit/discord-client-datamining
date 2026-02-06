@@ -1,43 +1,57 @@
 package og;
 
-import xi.c;
+import yi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class u4 implements xi.d {
+final class u4 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final u4 f43427a = new u4();
+    static final u4 f42543a = new u4();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final xi.c f43428b;
+    private static final yi.c f42544b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final xi.c f43429c;
+    private static final yi.c f42545c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final xi.c f43430d;
+    private static final yi.c f42546d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private static final yi.c f42547e;
+
+    /* renamed from: f  reason: collision with root package name */
+    private static final yi.c f42548f;
 
     static {
-        c.b a10 = xi.c.a("inferenceCommonLogEvent");
-        s1 s1Var = new s1();
-        s1Var.a(1);
-        f43428b = a10.b(s1Var.b()).a();
-        c.b a11 = xi.c.a("options");
-        s1 s1Var2 = new s1();
-        s1Var2.a(2);
-        f43429c = a11.b(s1Var2.b()).a();
-        c.b a12 = xi.c.a("imageInfo");
-        s1 s1Var3 = new s1();
-        s1Var3.a(3);
-        f43430d = a12.b(s1Var3.b()).a();
+        c.b a10 = yi.c.a("detectorOptions");
+        f fVar = new f();
+        fVar.a(1);
+        f42544b = a10.b(fVar.b()).a();
+        c.b a11 = yi.c.a("errorCodes");
+        f fVar2 = new f();
+        fVar2.a(2);
+        f42545c = a11.b(fVar2.b()).a();
+        c.b a12 = yi.c.a("totalInitializationMs");
+        f fVar3 = new f();
+        fVar3.a(3);
+        f42546d = a12.b(fVar3.b()).a();
+        c.b a13 = yi.c.a("loggingInitializationMs");
+        f fVar4 = new f();
+        fVar4.a(4);
+        f42547e = a13.b(fVar4.b()).a();
+        c.b a14 = yi.c.a("otherErrors");
+        f fVar5 = new f();
+        fVar5.a(5);
+        f42548f = a14.b(fVar5.b()).a();
     }
 
     private u4() {
     }
 
-    @Override // xi.d
+    @Override // yi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        xi.e eVar = (xi.e) obj2;
+        yi.e eVar = (yi.e) obj2;
         throw null;
     }
 }

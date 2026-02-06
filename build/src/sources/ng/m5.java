@@ -1,43 +1,27 @@
 package ng;
 
-import xi.c;
+import android.os.Parcel;
+import android.os.Parcelable;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class m5 implements xi.d {
-
-    /* renamed from: a  reason: collision with root package name */
-    static final m5 f40821a = new m5();
-
-    /* renamed from: b  reason: collision with root package name */
-    private static final xi.c f40822b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private static final xi.c f40823c;
+public final class m5 extends hf.a {
+    public static final Parcelable.Creator<m5> CREATOR = new l4();
 
     /* renamed from: d  reason: collision with root package name */
-    private static final xi.c f40824d;
+    public int f40081d;
 
-    static {
-        c.b a10 = xi.c.a("detectorMode");
-        f fVar = new f();
-        fVar.a(1);
-        f40822b = a10.b(fVar.b()).a();
-        c.b a11 = xi.c.a("streamModeSmoothingRatio");
-        f fVar2 = new f();
-        fVar2.a(2);
-        f40823c = a11.b(fVar2.b()).a();
-        c.b a12 = xi.c.a("rawSizeMaskEnabled");
-        f fVar3 = new f();
-        fVar3.a(3);
-        f40824d = a12.b(fVar3.b()).a();
+    /* renamed from: e  reason: collision with root package name */
+    public String[] f40082e;
+
+    public m5(int i10, String[] strArr) {
+        this.f40081d = i10;
+        this.f40082e = strArr;
     }
 
-    private m5() {
-    }
-
-    @Override // xi.d
-    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
-        android.support.v4.media.session.b.a(obj);
-        xi.e eVar = (xi.e) obj2;
-        throw null;
+    @Override // android.os.Parcelable
+    public final void writeToParcel(Parcel parcel, int i10) {
+        int a10 = hf.c.a(parcel);
+        hf.c.l(parcel, 2, this.f40081d);
+        hf.c.t(parcel, 3, this.f40082e, false);
+        hf.c.b(parcel, a10);
     }
 }

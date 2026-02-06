@@ -99,11 +99,11 @@ public final class SpoilerConfig {
     }
 
     public final void onHide() {
-        this.onHide.invoke(SpoilerIdentifier.m414boximpl(this.attributes.m411getIdentifierBq9X6Gg()));
+        this.onHide.invoke(SpoilerIdentifier.m412boximpl(this.attributes.m409getIdentifierBq9X6Gg()));
     }
 
     public final void onReveal() {
-        this.onReveal.invoke(SpoilerIdentifier.m414boximpl(this.attributes.m411getIdentifierBq9X6Gg()));
+        this.onReveal.invoke(SpoilerIdentifier.m412boximpl(this.attributes.m409getIdentifierBq9X6Gg()));
     }
 
     @NotNull

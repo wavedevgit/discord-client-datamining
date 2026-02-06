@@ -16,38 +16,38 @@ import x3.h;
 public final class WorkDatabase_Impl extends WorkDatabase {
 
     /* renamed from: q  reason: collision with root package name */
-    private volatile p4.v f5633q;
+    private volatile p4.v f5962q;
 
     /* renamed from: r  reason: collision with root package name */
-    private volatile p4.b f5634r;
+    private volatile p4.b f5963r;
 
     /* renamed from: s  reason: collision with root package name */
-    private volatile p4.z f5635s;
+    private volatile p4.z f5964s;
 
     /* renamed from: t  reason: collision with root package name */
-    private volatile p4.j f5636t;
+    private volatile p4.j f5965t;
 
     /* renamed from: u  reason: collision with root package name */
-    private volatile p4.o f5637u;
+    private volatile p4.o f5966u;
 
     /* renamed from: v  reason: collision with root package name */
-    private volatile p4.r f5638v;
+    private volatile p4.r f5967v;
 
     /* renamed from: w  reason: collision with root package name */
-    private volatile p4.e f5639w;
+    private volatile p4.e f5968w;
 
     @Override // androidx.work.impl.WorkDatabase
     public p4.b C() {
         p4.b bVar;
-        if (this.f5634r != null) {
-            return this.f5634r;
+        if (this.f5963r != null) {
+            return this.f5963r;
         }
         synchronized (this) {
             try {
-                if (this.f5634r == null) {
-                    this.f5634r = new p4.c(this);
+                if (this.f5963r == null) {
+                    this.f5963r = new p4.c(this);
                 }
-                bVar = this.f5634r;
+                bVar = this.f5963r;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -58,15 +58,15 @@ public final class WorkDatabase_Impl extends WorkDatabase {
     @Override // androidx.work.impl.WorkDatabase
     public p4.e D() {
         p4.e eVar;
-        if (this.f5639w != null) {
-            return this.f5639w;
+        if (this.f5968w != null) {
+            return this.f5968w;
         }
         synchronized (this) {
             try {
-                if (this.f5639w == null) {
-                    this.f5639w = new p4.f(this);
+                if (this.f5968w == null) {
+                    this.f5968w = new p4.f(this);
                 }
-                eVar = this.f5639w;
+                eVar = this.f5968w;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -77,15 +77,15 @@ public final class WorkDatabase_Impl extends WorkDatabase {
     @Override // androidx.work.impl.WorkDatabase
     public p4.j E() {
         p4.j jVar;
-        if (this.f5636t != null) {
-            return this.f5636t;
+        if (this.f5965t != null) {
+            return this.f5965t;
         }
         synchronized (this) {
             try {
-                if (this.f5636t == null) {
-                    this.f5636t = new p4.k(this);
+                if (this.f5965t == null) {
+                    this.f5965t = new p4.k(this);
                 }
-                jVar = this.f5636t;
+                jVar = this.f5965t;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -96,15 +96,15 @@ public final class WorkDatabase_Impl extends WorkDatabase {
     @Override // androidx.work.impl.WorkDatabase
     public p4.o F() {
         p4.o oVar;
-        if (this.f5637u != null) {
-            return this.f5637u;
+        if (this.f5966u != null) {
+            return this.f5966u;
         }
         synchronized (this) {
             try {
-                if (this.f5637u == null) {
-                    this.f5637u = new p4.p(this);
+                if (this.f5966u == null) {
+                    this.f5966u = new p4.p(this);
                 }
-                oVar = this.f5637u;
+                oVar = this.f5966u;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -115,15 +115,15 @@ public final class WorkDatabase_Impl extends WorkDatabase {
     @Override // androidx.work.impl.WorkDatabase
     public p4.r G() {
         p4.r rVar;
-        if (this.f5638v != null) {
-            return this.f5638v;
+        if (this.f5967v != null) {
+            return this.f5967v;
         }
         synchronized (this) {
             try {
-                if (this.f5638v == null) {
-                    this.f5638v = new p4.s(this);
+                if (this.f5967v == null) {
+                    this.f5967v = new p4.s(this);
                 }
-                rVar = this.f5638v;
+                rVar = this.f5967v;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -134,15 +134,15 @@ public final class WorkDatabase_Impl extends WorkDatabase {
     @Override // androidx.work.impl.WorkDatabase
     public p4.v H() {
         p4.v vVar;
-        if (this.f5633q != null) {
-            return this.f5633q;
+        if (this.f5962q != null) {
+            return this.f5962q;
         }
         synchronized (this) {
             try {
-                if (this.f5633q == null) {
-                    this.f5633q = new p4.w(this);
+                if (this.f5962q == null) {
+                    this.f5962q = new p4.w(this);
                 }
-                vVar = this.f5633q;
+                vVar = this.f5962q;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -153,15 +153,15 @@ public final class WorkDatabase_Impl extends WorkDatabase {
     @Override // androidx.work.impl.WorkDatabase
     public p4.z I() {
         p4.z zVar;
-        if (this.f5635s != null) {
-            return this.f5635s;
+        if (this.f5964s != null) {
+            return this.f5964s;
         }
         synchronized (this) {
             try {
-                if (this.f5635s == null) {
-                    this.f5635s = new p4.a0(this);
+                if (this.f5964s == null) {
+                    this.f5964s = new p4.a0(this);
                 }
-                zVar = this.f5635s;
+                zVar = this.f5964s;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -176,7 +176,7 @@ public final class WorkDatabase_Impl extends WorkDatabase {
 
     @Override // r3.u
     protected x3.h h(r3.f fVar) {
-        return fVar.f48412c.a(h.b.a(fVar.f48410a).d(fVar.f48411b).c(new r3.w(fVar, new a(20), "7d73d21f1bd82c9e5268b6dcf9fde2cb", "3071c8717539de5d5353f4c8cd59a032")).b());
+        return fVar.f48496c.a(h.b.a(fVar.f48494a).d(fVar.f48495b).c(new r3.w(fVar, new a(20), "7d73d21f1bd82c9e5268b6dcf9fde2cb", "3071c8717539de5d5353f4c8cd59a032")).b());
     }
 
     @Override // r3.u
@@ -211,59 +211,59 @@ public final class WorkDatabase_Impl extends WorkDatabase {
 
         @Override // r3.w.b
         public void a(x3.g gVar) {
-            gVar.K("CREATE TABLE IF NOT EXISTS `Dependency` (`work_spec_id` TEXT NOT NULL, `prerequisite_id` TEXT NOT NULL, PRIMARY KEY(`work_spec_id`, `prerequisite_id`), FOREIGN KEY(`work_spec_id`) REFERENCES `WorkSpec`(`id`) ON UPDATE CASCADE ON DELETE CASCADE , FOREIGN KEY(`prerequisite_id`) REFERENCES `WorkSpec`(`id`) ON UPDATE CASCADE ON DELETE CASCADE )");
-            gVar.K("CREATE INDEX IF NOT EXISTS `index_Dependency_work_spec_id` ON `Dependency` (`work_spec_id`)");
-            gVar.K("CREATE INDEX IF NOT EXISTS `index_Dependency_prerequisite_id` ON `Dependency` (`prerequisite_id`)");
-            gVar.K("CREATE TABLE IF NOT EXISTS `WorkSpec` (`id` TEXT NOT NULL, `state` INTEGER NOT NULL, `worker_class_name` TEXT NOT NULL, `input_merger_class_name` TEXT NOT NULL, `input` BLOB NOT NULL, `output` BLOB NOT NULL, `initial_delay` INTEGER NOT NULL, `interval_duration` INTEGER NOT NULL, `flex_duration` INTEGER NOT NULL, `run_attempt_count` INTEGER NOT NULL, `backoff_policy` INTEGER NOT NULL, `backoff_delay_duration` INTEGER NOT NULL, `last_enqueue_time` INTEGER NOT NULL DEFAULT -1, `minimum_retention_duration` INTEGER NOT NULL, `schedule_requested_at` INTEGER NOT NULL, `run_in_foreground` INTEGER NOT NULL, `out_of_quota_policy` INTEGER NOT NULL, `period_count` INTEGER NOT NULL DEFAULT 0, `generation` INTEGER NOT NULL DEFAULT 0, `next_schedule_time_override` INTEGER NOT NULL DEFAULT 9223372036854775807, `next_schedule_time_override_generation` INTEGER NOT NULL DEFAULT 0, `stop_reason` INTEGER NOT NULL DEFAULT -256, `required_network_type` INTEGER NOT NULL, `requires_charging` INTEGER NOT NULL, `requires_device_idle` INTEGER NOT NULL, `requires_battery_not_low` INTEGER NOT NULL, `requires_storage_not_low` INTEGER NOT NULL, `trigger_content_update_delay` INTEGER NOT NULL, `trigger_max_content_delay` INTEGER NOT NULL, `content_uri_triggers` BLOB NOT NULL, PRIMARY KEY(`id`))");
-            gVar.K("CREATE INDEX IF NOT EXISTS `index_WorkSpec_schedule_requested_at` ON `WorkSpec` (`schedule_requested_at`)");
-            gVar.K("CREATE INDEX IF NOT EXISTS `index_WorkSpec_last_enqueue_time` ON `WorkSpec` (`last_enqueue_time`)");
-            gVar.K("CREATE TABLE IF NOT EXISTS `WorkTag` (`tag` TEXT NOT NULL, `work_spec_id` TEXT NOT NULL, PRIMARY KEY(`tag`, `work_spec_id`), FOREIGN KEY(`work_spec_id`) REFERENCES `WorkSpec`(`id`) ON UPDATE CASCADE ON DELETE CASCADE )");
-            gVar.K("CREATE INDEX IF NOT EXISTS `index_WorkTag_work_spec_id` ON `WorkTag` (`work_spec_id`)");
-            gVar.K("CREATE TABLE IF NOT EXISTS `SystemIdInfo` (`work_spec_id` TEXT NOT NULL, `generation` INTEGER NOT NULL DEFAULT 0, `system_id` INTEGER NOT NULL, PRIMARY KEY(`work_spec_id`, `generation`), FOREIGN KEY(`work_spec_id`) REFERENCES `WorkSpec`(`id`) ON UPDATE CASCADE ON DELETE CASCADE )");
-            gVar.K("CREATE TABLE IF NOT EXISTS `WorkName` (`name` TEXT NOT NULL, `work_spec_id` TEXT NOT NULL, PRIMARY KEY(`name`, `work_spec_id`), FOREIGN KEY(`work_spec_id`) REFERENCES `WorkSpec`(`id`) ON UPDATE CASCADE ON DELETE CASCADE )");
-            gVar.K("CREATE INDEX IF NOT EXISTS `index_WorkName_work_spec_id` ON `WorkName` (`work_spec_id`)");
-            gVar.K("CREATE TABLE IF NOT EXISTS `WorkProgress` (`work_spec_id` TEXT NOT NULL, `progress` BLOB NOT NULL, PRIMARY KEY(`work_spec_id`), FOREIGN KEY(`work_spec_id`) REFERENCES `WorkSpec`(`id`) ON UPDATE CASCADE ON DELETE CASCADE )");
-            gVar.K("CREATE TABLE IF NOT EXISTS `Preference` (`key` TEXT NOT NULL, `long_value` INTEGER, PRIMARY KEY(`key`))");
-            gVar.K("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-            gVar.K("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '7d73d21f1bd82c9e5268b6dcf9fde2cb')");
+            gVar.O("CREATE TABLE IF NOT EXISTS `Dependency` (`work_spec_id` TEXT NOT NULL, `prerequisite_id` TEXT NOT NULL, PRIMARY KEY(`work_spec_id`, `prerequisite_id`), FOREIGN KEY(`work_spec_id`) REFERENCES `WorkSpec`(`id`) ON UPDATE CASCADE ON DELETE CASCADE , FOREIGN KEY(`prerequisite_id`) REFERENCES `WorkSpec`(`id`) ON UPDATE CASCADE ON DELETE CASCADE )");
+            gVar.O("CREATE INDEX IF NOT EXISTS `index_Dependency_work_spec_id` ON `Dependency` (`work_spec_id`)");
+            gVar.O("CREATE INDEX IF NOT EXISTS `index_Dependency_prerequisite_id` ON `Dependency` (`prerequisite_id`)");
+            gVar.O("CREATE TABLE IF NOT EXISTS `WorkSpec` (`id` TEXT NOT NULL, `state` INTEGER NOT NULL, `worker_class_name` TEXT NOT NULL, `input_merger_class_name` TEXT NOT NULL, `input` BLOB NOT NULL, `output` BLOB NOT NULL, `initial_delay` INTEGER NOT NULL, `interval_duration` INTEGER NOT NULL, `flex_duration` INTEGER NOT NULL, `run_attempt_count` INTEGER NOT NULL, `backoff_policy` INTEGER NOT NULL, `backoff_delay_duration` INTEGER NOT NULL, `last_enqueue_time` INTEGER NOT NULL DEFAULT -1, `minimum_retention_duration` INTEGER NOT NULL, `schedule_requested_at` INTEGER NOT NULL, `run_in_foreground` INTEGER NOT NULL, `out_of_quota_policy` INTEGER NOT NULL, `period_count` INTEGER NOT NULL DEFAULT 0, `generation` INTEGER NOT NULL DEFAULT 0, `next_schedule_time_override` INTEGER NOT NULL DEFAULT 9223372036854775807, `next_schedule_time_override_generation` INTEGER NOT NULL DEFAULT 0, `stop_reason` INTEGER NOT NULL DEFAULT -256, `required_network_type` INTEGER NOT NULL, `requires_charging` INTEGER NOT NULL, `requires_device_idle` INTEGER NOT NULL, `requires_battery_not_low` INTEGER NOT NULL, `requires_storage_not_low` INTEGER NOT NULL, `trigger_content_update_delay` INTEGER NOT NULL, `trigger_max_content_delay` INTEGER NOT NULL, `content_uri_triggers` BLOB NOT NULL, PRIMARY KEY(`id`))");
+            gVar.O("CREATE INDEX IF NOT EXISTS `index_WorkSpec_schedule_requested_at` ON `WorkSpec` (`schedule_requested_at`)");
+            gVar.O("CREATE INDEX IF NOT EXISTS `index_WorkSpec_last_enqueue_time` ON `WorkSpec` (`last_enqueue_time`)");
+            gVar.O("CREATE TABLE IF NOT EXISTS `WorkTag` (`tag` TEXT NOT NULL, `work_spec_id` TEXT NOT NULL, PRIMARY KEY(`tag`, `work_spec_id`), FOREIGN KEY(`work_spec_id`) REFERENCES `WorkSpec`(`id`) ON UPDATE CASCADE ON DELETE CASCADE )");
+            gVar.O("CREATE INDEX IF NOT EXISTS `index_WorkTag_work_spec_id` ON `WorkTag` (`work_spec_id`)");
+            gVar.O("CREATE TABLE IF NOT EXISTS `SystemIdInfo` (`work_spec_id` TEXT NOT NULL, `generation` INTEGER NOT NULL DEFAULT 0, `system_id` INTEGER NOT NULL, PRIMARY KEY(`work_spec_id`, `generation`), FOREIGN KEY(`work_spec_id`) REFERENCES `WorkSpec`(`id`) ON UPDATE CASCADE ON DELETE CASCADE )");
+            gVar.O("CREATE TABLE IF NOT EXISTS `WorkName` (`name` TEXT NOT NULL, `work_spec_id` TEXT NOT NULL, PRIMARY KEY(`name`, `work_spec_id`), FOREIGN KEY(`work_spec_id`) REFERENCES `WorkSpec`(`id`) ON UPDATE CASCADE ON DELETE CASCADE )");
+            gVar.O("CREATE INDEX IF NOT EXISTS `index_WorkName_work_spec_id` ON `WorkName` (`work_spec_id`)");
+            gVar.O("CREATE TABLE IF NOT EXISTS `WorkProgress` (`work_spec_id` TEXT NOT NULL, `progress` BLOB NOT NULL, PRIMARY KEY(`work_spec_id`), FOREIGN KEY(`work_spec_id`) REFERENCES `WorkSpec`(`id`) ON UPDATE CASCADE ON DELETE CASCADE )");
+            gVar.O("CREATE TABLE IF NOT EXISTS `Preference` (`key` TEXT NOT NULL, `long_value` INTEGER, PRIMARY KEY(`key`))");
+            gVar.O("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
+            gVar.O("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '7d73d21f1bd82c9e5268b6dcf9fde2cb')");
         }
 
         @Override // r3.w.b
         public void b(x3.g gVar) {
-            gVar.K("DROP TABLE IF EXISTS `Dependency`");
-            gVar.K("DROP TABLE IF EXISTS `WorkSpec`");
-            gVar.K("DROP TABLE IF EXISTS `WorkTag`");
-            gVar.K("DROP TABLE IF EXISTS `SystemIdInfo`");
-            gVar.K("DROP TABLE IF EXISTS `WorkName`");
-            gVar.K("DROP TABLE IF EXISTS `WorkProgress`");
-            gVar.K("DROP TABLE IF EXISTS `Preference`");
-            if (((r3.u) WorkDatabase_Impl.this).f48494h != null) {
-                int size = ((r3.u) WorkDatabase_Impl.this).f48494h.size();
+            gVar.O("DROP TABLE IF EXISTS `Dependency`");
+            gVar.O("DROP TABLE IF EXISTS `WorkSpec`");
+            gVar.O("DROP TABLE IF EXISTS `WorkTag`");
+            gVar.O("DROP TABLE IF EXISTS `SystemIdInfo`");
+            gVar.O("DROP TABLE IF EXISTS `WorkName`");
+            gVar.O("DROP TABLE IF EXISTS `WorkProgress`");
+            gVar.O("DROP TABLE IF EXISTS `Preference`");
+            if (((r3.u) WorkDatabase_Impl.this).f48578h != null) {
+                int size = ((r3.u) WorkDatabase_Impl.this).f48578h.size();
                 for (int i10 = 0; i10 < size; i10++) {
-                    ((u.b) ((r3.u) WorkDatabase_Impl.this).f48494h.get(i10)).b(gVar);
+                    ((u.b) ((r3.u) WorkDatabase_Impl.this).f48578h.get(i10)).b(gVar);
                 }
             }
         }
 
         @Override // r3.w.b
         public void c(x3.g gVar) {
-            if (((r3.u) WorkDatabase_Impl.this).f48494h != null) {
-                int size = ((r3.u) WorkDatabase_Impl.this).f48494h.size();
+            if (((r3.u) WorkDatabase_Impl.this).f48578h != null) {
+                int size = ((r3.u) WorkDatabase_Impl.this).f48578h.size();
                 for (int i10 = 0; i10 < size; i10++) {
-                    ((u.b) ((r3.u) WorkDatabase_Impl.this).f48494h.get(i10)).a(gVar);
+                    ((u.b) ((r3.u) WorkDatabase_Impl.this).f48578h.get(i10)).a(gVar);
                 }
             }
         }
 
         @Override // r3.w.b
         public void d(x3.g gVar) {
-            ((r3.u) WorkDatabase_Impl.this).f48487a = gVar;
-            gVar.K("PRAGMA foreign_keys = ON");
+            ((r3.u) WorkDatabase_Impl.this).f48571a = gVar;
+            gVar.O("PRAGMA foreign_keys = ON");
             WorkDatabase_Impl.this.u(gVar);
-            if (((r3.u) WorkDatabase_Impl.this).f48494h != null) {
-                int size = ((r3.u) WorkDatabase_Impl.this).f48494h.size();
+            if (((r3.u) WorkDatabase_Impl.this).f48578h != null) {
+                int size = ((r3.u) WorkDatabase_Impl.this).f48578h.size();
                 for (int i10 = 0; i10 < size; i10++) {
-                    ((u.b) ((r3.u) WorkDatabase_Impl.this).f48494h.get(i10)).c(gVar);
+                    ((u.b) ((r3.u) WorkDatabase_Impl.this).f48578h.get(i10)).c(gVar);
                 }
             }
         }

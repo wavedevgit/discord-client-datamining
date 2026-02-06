@@ -3,26 +3,26 @@ package f;
 public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    public static int f21924a = 2131099653;
+    public static int f22225a = 2131099653;
 
     /* renamed from: b  reason: collision with root package name */
-    public static int f21925b = 2131099654;
+    public static int f22226b = 2131099654;
 
     /* renamed from: c  reason: collision with root package name */
-    public static int f21926c = 2131099667;
+    public static int f22227c = 2131099667;
 
     /* renamed from: d  reason: collision with root package name */
-    public static int f21927d = 2131099668;
+    public static int f22228d = 2131099668;
 
     /* renamed from: e  reason: collision with root package name */
-    public static int f21928e = 2131099669;
+    public static int f22229e = 2131099669;
 
     /* renamed from: f  reason: collision with root package name */
-    public static int f21929f = 2131099670;
+    public static int f22230f = 2131099670;
 
     /* renamed from: g  reason: collision with root package name */
-    public static int f21930g = 2131099671;
+    public static int f22231g = 2131099671;
 
     /* renamed from: h  reason: collision with root package name */
-    public static int f21931h = 2131099672;
+    public static int f22232h = 2131099672;
 }

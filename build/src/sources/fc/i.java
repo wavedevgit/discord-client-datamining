@@ -7,22 +7,22 @@ import javax.inject.Provider;
 public final class i implements bc.b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Provider f22741a;
+    private final Provider f23042a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Provider f22742b;
+    private final Provider f23043b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Provider f22743c;
+    private final Provider f23044c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Provider f22744d;
+    private final Provider f23045d;
 
     public i(Provider provider, Provider provider2, Provider provider3, Provider provider4) {
-        this.f22741a = provider;
-        this.f22742b = provider2;
-        this.f22743c = provider3;
-        this.f22744d = provider4;
+        this.f23042a = provider;
+        this.f23043b = provider2;
+        this.f23044c = provider3;
+        this.f23045d = provider4;
     }
 
     public static i a(Provider provider, Provider provider2, Provider provider3, Provider provider4) {
@@ -36,6 +36,6 @@ public final class i implements bc.b {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public x get() {
-        return c((Context) this.f22741a.get(), (hc.d) this.f22742b.get(), (gc.f) this.f22743c.get(), (jc.a) this.f22744d.get());
+        return c((Context) this.f23042a.get(), (hc.d) this.f23043b.get(), (gc.f) this.f23044c.get(), (jc.a) this.f23045d.get());
     }
 }

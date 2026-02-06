@@ -16,10 +16,10 @@ import java.util.List;
 abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private static volatile ArrayList f5190a;
+    private static volatile ArrayList f5519a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Object f5191b = new Object();
+    private static final Object f5520b = new Object();
 
     private static String a(XmlResourceParser xmlResourceParser, String str) {
         String attributeValue = xmlResourceParser.getAttributeValue("http://schemas.android.com/apk/res/android", str);
@@ -31,17 +31,17 @@ abstract class b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static ArrayList b(Context context) {
-        if (f5190a == null) {
-            synchronized (f5191b) {
+        if (f5519a == null) {
+            synchronized (f5520b) {
                 try {
-                    if (f5190a == null) {
-                        f5190a = e(context);
+                    if (f5519a == null) {
+                        f5519a = e(context);
                     }
                 } finally {
                 }
             }
         }
-        return f5190a;
+        return f5519a;
     }
 
     private static XmlResourceParser c(Context context, ActivityInfo activityInfo) {
@@ -77,7 +77,7 @@ abstract class b {
             }
         }
         if (!arrayList.isEmpty() && a10 != null && !arrayList2.isEmpty()) {
-            return new a((a.C0070a[]) arrayList.toArray(new a.C0070a[arrayList.size()]), a10, (String[]) arrayList2.toArray(new String[arrayList2.size()]));
+            return new a((a.C0068a[]) arrayList.toArray(new a.C0068a[arrayList.size()]), a10, (String[]) arrayList2.toArray(new String[arrayList2.size()]));
         }
         return null;
     }
@@ -120,7 +120,7 @@ abstract class b {
         return arrayList;
     }
 
-    private static a.C0070a g(XmlResourceParser xmlResourceParser) {
-        return new a.C0070a(a(xmlResourceParser, "scheme"), a(xmlResourceParser, "host"), a(xmlResourceParser, "port"), a(xmlResourceParser, "path"), a(xmlResourceParser, "pathPattern"), a(xmlResourceParser, "pathPrefix"), a(xmlResourceParser, "mimeType"));
+    private static a.C0068a g(XmlResourceParser xmlResourceParser) {
+        return new a.C0068a(a(xmlResourceParser, "scheme"), a(xmlResourceParser, "host"), a(xmlResourceParser, "port"), a(xmlResourceParser, "path"), a(xmlResourceParser, "pathPattern"), a(xmlResourceParser, "pathPrefix"), a(xmlResourceParser, "mimeType"));
     }
 }

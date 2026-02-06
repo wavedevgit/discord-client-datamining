@@ -76,7 +76,7 @@ public abstract class j0 {
     }
 
     public static s3 g(final IScope iScope, final k7 k7Var) {
-        return iScope.S(new z3.a() { // from class: io.sentry.util.g0
+        return iScope.R(new z3.a() { // from class: io.sentry.util.g0
             @Override // io.sentry.z3.a
             public final void a(s3 s3Var) {
                 j0.b(IScope.this, k7Var, s3Var);
@@ -85,13 +85,13 @@ public abstract class j0 {
     }
 
     public static void h(w0 w0Var) {
-        w0Var.p(new b4() { // from class: io.sentry.util.h0
+        w0Var.o(new b4() { // from class: io.sentry.util.h0
             @Override // io.sentry.b4
             public final void a(IScope iScope) {
-                iScope.S(new z3.a() { // from class: io.sentry.util.i0
+                iScope.R(new z3.a() { // from class: io.sentry.util.i0
                     @Override // io.sentry.z3.a
                     public final void a(s3 s3Var) {
-                        IScope.this.W(new s3());
+                        IScope.this.V(new s3());
                     }
                 });
             }

@@ -8,11 +8,11 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a implements GenericArrayType, Type {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Type f32103d;
+    private final Type f32123d;
 
     public a(Type elementType) {
         Intrinsics.checkNotNullParameter(elementType, "elementType");
-        this.f32103d = elementType;
+        this.f32123d = elementType;
     }
 
     public boolean equals(Object obj) {
@@ -24,14 +24,14 @@ public final class a implements GenericArrayType, Type {
 
     @Override // java.lang.reflect.GenericArrayType
     public Type getGenericComponentType() {
-        return this.f32103d;
+        return this.f32123d;
     }
 
     @Override // java.lang.reflect.Type
     public String getTypeName() {
         String h10;
         StringBuilder sb2 = new StringBuilder();
-        h10 = p.h(this.f32103d);
+        h10 = p.h(this.f32123d);
         sb2.append(h10);
         sb2.append("[]");
         return sb2.toString();

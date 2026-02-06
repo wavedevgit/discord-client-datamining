@@ -8,20 +8,20 @@ import zd.g;
 final class d implements g {
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f21552d;
+    private final List f21485d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final List f21553e;
+    private final List f21486e;
 
     public d(List list, List list2) {
-        this.f21552d = list;
-        this.f21553e = list2;
+        this.f21485d = list;
+        this.f21486e = list2;
     }
 
     @Override // zd.g
     public int a(long j10) {
-        int d10 = w0.d(this.f21553e, Long.valueOf(j10), false, false);
-        if (d10 < this.f21553e.size()) {
+        int d10 = w0.d(this.f21486e, Long.valueOf(j10), false, false);
+        if (d10 < this.f21486e.size()) {
             return d10;
         }
         return -1;
@@ -29,11 +29,11 @@ final class d implements g {
 
     @Override // zd.g
     public List d(long j10) {
-        int f10 = w0.f(this.f21553e, Long.valueOf(j10), true, false);
+        int f10 = w0.f(this.f21486e, Long.valueOf(j10), true, false);
         if (f10 == -1) {
             return Collections.EMPTY_LIST;
         }
-        return (List) this.f21552d.get(f10);
+        return (List) this.f21485d.get(f10);
     }
 
     @Override // zd.g
@@ -46,15 +46,15 @@ final class d implements g {
             z10 = false;
         }
         ne.a.a(z10);
-        if (i10 < this.f21553e.size()) {
+        if (i10 < this.f21486e.size()) {
             z11 = true;
         }
         ne.a.a(z11);
-        return ((Long) this.f21553e.get(i10)).longValue();
+        return ((Long) this.f21486e.get(i10)).longValue();
     }
 
     @Override // zd.g
     public int f() {
-        return this.f21553e.size();
+        return this.f21486e.size();
     }
 }

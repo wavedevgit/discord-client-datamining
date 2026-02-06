@@ -28,37 +28,37 @@ public final class ColorUtils {
         float abs2 = (1.0f - Math.abs(((f10 / 60.0f) % 2.0f) - 1.0f)) * abs;
         switch (((int) f10) / 60) {
             case 0:
-                c10 = ds.a.c((abs + f13) * 255.0f);
-                c11 = ds.a.c((abs2 + f13) * 255.0f);
-                c12 = ds.a.c(f13 * 255.0f);
+                c10 = fs.a.c((abs + f13) * 255.0f);
+                c11 = fs.a.c((abs2 + f13) * 255.0f);
+                c12 = fs.a.c(f13 * 255.0f);
                 break;
             case 1:
-                c10 = ds.a.c((abs2 + f13) * 255.0f);
-                c11 = ds.a.c((abs + f13) * 255.0f);
-                c12 = ds.a.c(f13 * 255.0f);
+                c10 = fs.a.c((abs2 + f13) * 255.0f);
+                c11 = fs.a.c((abs + f13) * 255.0f);
+                c12 = fs.a.c(f13 * 255.0f);
                 break;
             case 2:
-                c10 = ds.a.c(f13 * 255.0f);
-                c11 = ds.a.c((abs + f13) * 255.0f);
-                c12 = ds.a.c((abs2 + f13) * 255.0f);
+                c10 = fs.a.c(f13 * 255.0f);
+                c11 = fs.a.c((abs + f13) * 255.0f);
+                c12 = fs.a.c((abs2 + f13) * 255.0f);
                 break;
             case 3:
-                c10 = ds.a.c(f13 * 255.0f);
-                c13 = ds.a.c((abs2 + f13) * 255.0f);
-                c12 = ds.a.c((abs + f13) * 255.0f);
+                c10 = fs.a.c(f13 * 255.0f);
+                c13 = fs.a.c((abs2 + f13) * 255.0f);
+                c12 = fs.a.c((abs + f13) * 255.0f);
                 c11 = c13;
                 break;
             case 4:
-                c10 = ds.a.c((abs2 + f13) * 255.0f);
-                c13 = ds.a.c(f13 * 255.0f);
-                c12 = ds.a.c((abs + f13) * 255.0f);
+                c10 = fs.a.c((abs2 + f13) * 255.0f);
+                c13 = fs.a.c(f13 * 255.0f);
+                c12 = fs.a.c((abs + f13) * 255.0f);
                 c11 = c13;
                 break;
             case 5:
             case 6:
-                c10 = ds.a.c((abs + f13) * 255.0f);
-                c11 = ds.a.c(f13 * 255.0f);
-                c12 = ds.a.c((abs2 + f13) * 255.0f);
+                c10 = fs.a.c((abs + f13) * 255.0f);
+                c11 = fs.a.c(f13 * 255.0f);
+                c12 = fs.a.c((abs2 + f13) * 255.0f);
                 break;
             default:
                 c12 = 0;

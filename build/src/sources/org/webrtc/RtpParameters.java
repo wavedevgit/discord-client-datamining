@@ -80,13 +80,13 @@ public class RtpParameters {
         private final boolean encrypted;
 
         /* renamed from: id  reason: collision with root package name */
-        private final int f44264id;
+        private final int f43393id;
         private final String uri;
 
         @CalledByNative("HeaderExtension")
         HeaderExtension(String str, int i10, boolean z10) {
             this.uri = str;
-            this.f44264id = i10;
+            this.f43393id = i10;
             this.encrypted = z10;
         }
 
@@ -97,7 +97,7 @@ public class RtpParameters {
 
         @CalledByNative("HeaderExtension")
         public int getId() {
-            return this.f44264id;
+            return this.f43393id;
         }
 
         @CalledByNative("HeaderExtension")

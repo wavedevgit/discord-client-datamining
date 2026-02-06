@@ -30,13 +30,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/video_backgrounds/isVideoBackgroundSupported.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun66624: for (var _fun66624_ip = 0;;) switch (_fun66624_ip) {
+        _fun66652: for (var _fun66652_ip = 0;;) switch (_fun66652_ip) {
             case 0:
                 var1 = arguments[0];
                 var0 = undefined;
                 if (!(var1 === var0)) {
-                    _fun66624_ip = 16;
-                    continue _fun66624
+                    _fun66652_ip = 16;
+                    continue _fun66652
                 }
             case 9:
                 var1 = _closure1_slot0;
@@ -47,8 +47,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.bind(var1)(var0);
                 var4 = var1;
                 if (!var0) {
-                    _fun66624_ip = 85;
-                    continue _fun66624
+                    _fun66652_ip = 85;
+                    continue _fun66652
                 }
             case 46:
                 var1 = global;
@@ -66,4 +66,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3476, 3510, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3478, 3512, 2]);

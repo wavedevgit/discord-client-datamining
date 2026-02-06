@@ -1,82 +1,23 @@
 package qg;
-
-import android.content.Context;
-import android.content.pm.ApplicationInfo;
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager;
-import android.content.pm.Signature;
-import android.os.Build;
-import java.util.ArrayList;
-import java.util.Iterator;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class r {
-
-    /* renamed from: a  reason: collision with root package name */
-    private static final d f47906a = new d("PhoneskyVerificationUtils");
-
-    public static int a(Context context) {
-        try {
-            PackageInfo packageInfo = context.getPackageManager().getPackageInfo("com.android.vending", 64);
-            ApplicationInfo applicationInfo = packageInfo.applicationInfo;
-            if (applicationInfo != null && applicationInfo.enabled && c(packageInfo.signatures)) {
-                return packageInfo.versionCode;
-            }
-            return 0;
-        } catch (PackageManager.NameNotFoundException unused) {
-            return 0;
+abstract class r {
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static int a(int i10, String str) {
+        if (i10 >= 0) {
+            return i10;
         }
+        throw new IllegalArgumentException(str + " cannot be negative but was: " + i10);
     }
 
-    public static boolean b(Context context) {
-        try {
-            if (!context.getPackageManager().getApplicationInfo("com.android.vending", 0).enabled) {
-                f47906a.d("Play Store package is disabled.", new Object[0]);
-            } else {
-                try {
-                    if (c(context.getPackageManager().getPackageInfo("com.android.vending", 64).signatures)) {
-                        return true;
-                    }
-                } catch (PackageManager.NameNotFoundException unused) {
-                    f47906a.d("Play Store package is not found.", new Object[0]);
-                }
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static void b(Object obj, Object obj2) {
+        if (obj != null) {
+            if (obj2 != null) {
+                return;
             }
-        } catch (PackageManager.NameNotFoundException unused2) {
-            f47906a.d("Play Store package is not found.", new Object[0]);
+            String obj3 = obj.toString();
+            throw new NullPointerException("null value in entry: " + obj3 + "=null");
         }
-        return false;
-    }
-
-    private static boolean c(Signature[] signatureArr) {
-        if (signatureArr != null && (r1 = signatureArr.length) != 0) {
-            ArrayList arrayList = new ArrayList();
-            for (Signature signature : signatureArr) {
-                String a10 = q.a(signature.toByteArray());
-                arrayList.add(a10);
-                if (!"8P1sW0EPJcslw7UzRsiXL64w-O50Ed-RBICtay1g24M".equals(a10)) {
-                    String str = Build.TAGS;
-                    if ((str.contains("dev-keys") || str.contains("test-keys")) && "GXWy8XF3vIml3_MfnmSmyuKBpT3B0dWbHRR_4cgq-gA".equals(a10)) {
-                        return true;
-                    }
-                } else {
-                    return true;
-                }
-            }
-            d dVar = f47906a;
-            StringBuilder sb2 = new StringBuilder();
-            Iterator it = arrayList.iterator();
-            if (it.hasNext()) {
-                while (true) {
-                    sb2.append((CharSequence) it.next());
-                    if (!it.hasNext()) {
-                        break;
-                    }
-                    sb2.append((CharSequence) ", ");
-                }
-            }
-            dVar.d(String.format("Play Store package certs are not valid. Found these sha256 certs: [%s].", sb2.toString()), new Object[0]);
-            return false;
-        }
-        f47906a.d("Play Store package is not signed -- possibly self-built package. Could not verify.", new Object[0]);
-        return false;
+        throw new NullPointerException("null key in entry: null=".concat(String.valueOf(obj2)));
     }
 }

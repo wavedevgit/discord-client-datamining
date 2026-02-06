@@ -1,125 +1,72 @@
 package xq;
 
-import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.Canvas;
-import android.graphics.Matrix;
-import android.graphics.Point;
-import android.net.Uri;
-import android.os.AsyncTask;
-import android.util.Log;
-import android.view.WindowManager;
-import java.io.Closeable;
-import java.io.IOException;
-import java.io.InputStream;
+import android.os.Parcel;
+import android.os.Parcelable;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class a {
-    public static int a(BitmapFactory.Options options, int i10, int i11) {
-        int i12 = options.outHeight;
-        int i13 = options.outWidth;
-        int i14 = 1;
-        if (i12 <= i11 && i13 <= i10) {
-            return 1;
+public class a implements Parcelable {
+    public static final Parcelable.Creator<a> CREATOR = new C0732a();
+
+    /* renamed from: d  reason: collision with root package name */
+    private final String f54739d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private final float f54740e;
+
+    /* renamed from: i  reason: collision with root package name */
+    private final float f54741i;
+
+    /* renamed from: xq.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    class C0732a implements Parcelable.Creator {
+        C0732a() {
         }
-        while (true) {
-            if (i12 / i14 <= i11 && i13 / i14 <= i10) {
-                return i14;
-            }
-            i14 *= 2;
+
+        @Override // android.os.Parcelable.Creator
+        /* renamed from: a */
+        public a createFromParcel(Parcel parcel) {
+            return new a(parcel);
+        }
+
+        @Override // android.os.Parcelable.Creator
+        /* renamed from: b */
+        public a[] newArray(int i10) {
+            return new a[i10];
         }
     }
 
-    public static int b(Context context) {
-        WindowManager windowManager = (WindowManager) context.getSystemService("window");
-        Point point = new Point();
-        if (windowManager != null) {
-            windowManager.getDefaultDisplay().getSize(point);
-        }
-        int sqrt = (int) Math.sqrt(Math.pow(point.x, 2.0d) + Math.pow(point.y, 2.0d));
-        Canvas canvas = new Canvas();
-        int min = Math.min(canvas.getMaximumBitmapWidth(), canvas.getMaximumBitmapHeight());
-        if (min > 0) {
-            sqrt = Math.min(sqrt, min);
-        }
-        int b10 = c.b();
-        if (b10 > 0) {
-            sqrt = Math.min(sqrt, b10);
-        }
-        Log.d("BitmapLoadUtils", "maxBitmapSize: " + sqrt);
-        return sqrt;
+    public a(String str, float f10, float f11) {
+        this.f54739d = str;
+        this.f54740e = f10;
+        this.f54741i = f11;
     }
 
-    public static void c(Closeable closeable) {
-        if (closeable != null) {
-            try {
-                closeable.close();
-            } catch (IOException unused) {
-            }
-        }
+    public String a() {
+        return this.f54739d;
     }
 
-    public static void d(Context context, Uri uri, Uri uri2, int i10, int i11, uq.b bVar) {
-        new wq.a(context, uri, uri2, i10, i11, bVar).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, new Void[0]);
+    public float b() {
+        return this.f54740e;
     }
 
-    public static int e(int i10) {
-        switch (i10) {
-            case 3:
-            case 4:
-                return 180;
-            case 5:
-            case 6:
-                return 90;
-            case 7:
-            case 8:
-                return 270;
-            default:
-                return 0;
-        }
+    public float c() {
+        return this.f54741i;
     }
 
-    public static int f(int i10) {
-        if (i10 != 2 && i10 != 7 && i10 != 4 && i10 != 5) {
-            return 1;
-        }
-        return -1;
+    @Override // android.os.Parcelable
+    public int describeContents() {
+        return 0;
     }
 
-    public static int g(Context context, Uri uri) {
-        int i10 = 0;
-        try {
-            InputStream openInputStream = context.getContentResolver().openInputStream(uri);
-            if (openInputStream == null) {
-                return 0;
-            }
-            i10 = new f(openInputStream).c();
-            c(openInputStream);
-            return i10;
-        } catch (IOException e10) {
-            Log.e("BitmapLoadUtils", "getExifOrientation: " + uri.toString(), e10);
-            return i10;
-        }
+    @Override // android.os.Parcelable
+    public void writeToParcel(Parcel parcel, int i10) {
+        parcel.writeString(this.f54739d);
+        parcel.writeFloat(this.f54740e);
+        parcel.writeFloat(this.f54741i);
     }
 
-    public static Bitmap h(Bitmap bitmap, Matrix matrix) {
-        Bitmap bitmap2;
-        try {
-            bitmap2 = bitmap;
-            try {
-                Bitmap createBitmap = Bitmap.createBitmap(bitmap2, 0, 0, bitmap.getWidth(), bitmap.getHeight(), matrix, true);
-                if (!bitmap2.sameAs(createBitmap)) {
-                    return createBitmap;
-                }
-                return bitmap2;
-            } catch (OutOfMemoryError e10) {
-                e = e10;
-                Log.e("BitmapLoadUtils", "transformBitmap: ", e);
-                return bitmap2;
-            }
-        } catch (OutOfMemoryError e11) {
-            e = e11;
-            bitmap2 = bitmap;
-        }
+    protected a(Parcel parcel) {
+        this.f54739d = parcel.readString();
+        this.f54740e = parcel.readFloat();
+        this.f54741i = parcel.readFloat();
     }
 }

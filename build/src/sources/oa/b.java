@@ -12,9 +12,9 @@ public abstract class b extends y8.b {
         if (dataSource.isFinished()) {
             CloseableReference closeableReference = (CloseableReference) dataSource.getResult();
             try {
-                onNewResultImpl((closeableReference == null || !(closeableReference.E0() instanceof sa.d)) ? null : ((sa.d) closeableReference.E0()).N1());
+                onNewResultImpl((closeableReference == null || !(closeableReference.J() instanceof sa.d)) ? null : ((sa.d) closeableReference.J()).M1());
             } finally {
-                CloseableReference.N(closeableReference);
+                CloseableReference.z(closeableReference);
             }
         }
     }

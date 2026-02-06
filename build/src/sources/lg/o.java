@@ -1,42 +1,75 @@
 package lg;
 
-import java.util.Iterator;
+import android.content.Context;
+import android.os.IBinder;
+import android.os.IInterface;
+import android.os.Looper;
+import androidx.collection.SimpleArrayMap;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class o extends j {
+public final class o extends gf.g {
+    private final SimpleArrayMap T;
+    private final SimpleArrayMap U;
+    private final SimpleArrayMap V;
+    private final SimpleArrayMap W;
 
-    /* renamed from: i  reason: collision with root package name */
-    private final transient i f36850i;
-
-    /* renamed from: o  reason: collision with root package name */
-    private final transient f f36851o;
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public o(i iVar, f fVar) {
-        this.f36850i = iVar;
-        this.f36851o = fVar;
+    public o(Context context, Looper looper, gf.d dVar, ff.d dVar2, ff.k kVar) {
+        super(context, looper, 23, dVar, dVar2, kVar);
+        this.T = new SimpleArrayMap();
+        this.U = new SimpleArrayMap();
+        this.V = new SimpleArrayMap();
+        this.W = new SimpleArrayMap();
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    @Override // lg.c
-    public final int b(Object[] objArr, int i10) {
-        return this.f36851o.b(objArr, 0);
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // gf.c
+    public final String D() {
+        return "com.google.android.gms.location.internal.IGoogleLocationManagerService";
     }
 
-    @Override // lg.c, java.util.AbstractCollection, java.util.Collection
-    public final boolean contains(Object obj) {
-        if (this.f36850i.get(obj) != null) {
-            return true;
+    @Override // gf.c
+    protected final String E() {
+        return "com.google.android.location.internal.GoogleLocationManagerService.START";
+    }
+
+    @Override // gf.c
+    public final void L(int i10) {
+        super.L(i10);
+        synchronized (this.T) {
+            this.T.clear();
         }
-        return false;
+        synchronized (this.U) {
+            this.U.clear();
+        }
+        synchronized (this.V) {
+            this.V.clear();
+        }
     }
 
-    @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set
-    public final /* synthetic */ Iterator iterator() {
-        return this.f36851o.listIterator(0);
+    @Override // gf.c
+    public final boolean Q() {
+        return true;
     }
 
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public final int size() {
-        return this.f36850i.size();
+    @Override // gf.c, ef.a.f
+    public final int n() {
+        return 11717000;
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // gf.c
+    public final /* synthetic */ IInterface r(IBinder iBinder) {
+        if (iBinder == null) {
+            return null;
+        }
+        IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.location.internal.IGoogleLocationManagerService");
+        if (queryLocalInterface instanceof f0) {
+            return (f0) queryLocalInterface;
+        }
+        return new e0(iBinder);
+    }
+
+    @Override // gf.c
+    public final com.google.android.gms.common.d[] u() {
+        return ug.o.f51467p;
     }
 }

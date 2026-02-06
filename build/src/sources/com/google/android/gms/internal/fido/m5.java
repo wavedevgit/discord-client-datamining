@@ -35,27 +35,27 @@ public abstract class m5 {
                                     if (b10 != 0 && b10 != 32) {
                                         if (b10 != 64) {
                                             if (b10 == 96) {
-                                                String o10 = o5Var.o();
-                                                c(a10, o10.length(), inputStream, o5Var);
-                                                return new j5(o10);
+                                                String n10 = o5Var.n();
+                                                c(a10, n10.length(), inputStream, o5Var);
+                                                return new j5(n10);
                                             }
                                             throw new f5("Unidentifiable major type: " + m10.c());
                                         }
-                                        byte[] E = o5Var.E();
-                                        int length = E.length;
+                                        byte[] s10 = o5Var.s();
+                                        int length = s10.length;
                                         c(a10, length, inputStream, o5Var);
-                                        return new e5(v4.n(E, 0, length));
+                                        return new e5(v4.o(s10, 0, length));
                                     }
-                                    long h10 = o5Var.h();
-                                    if (h10 > 0) {
-                                        j10 = h10;
+                                    long g10 = o5Var.g();
+                                    if (g10 > 0) {
+                                        j10 = g10;
                                     } else {
-                                        j10 = ~h10;
+                                        j10 = ~g10;
                                     }
                                     c(a10, j10, inputStream, o5Var);
-                                    return new g5(h10);
+                                    return new g5(g10);
                                 }
-                                return new d5(o5Var.y());
+                                return new d5(o5Var.p());
                             }
                             throw new f5("Tags are currently unsupported");
                         }

@@ -5,9 +5,9 @@ import android.os.Parcel;
 import android.os.Parcelable;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public abstract class b1 {
-    static {
-        b1.class.getClassLoader();
-    }
+
+    /* renamed from: a  reason: collision with root package name */
+    private static final ClassLoader f43928a = b1.class.getClassLoader();
 
     public static void a(Parcel parcel, Parcelable parcelable) {
         parcel.writeInt(1);

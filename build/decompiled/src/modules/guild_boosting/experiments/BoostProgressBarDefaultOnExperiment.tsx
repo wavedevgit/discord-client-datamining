@@ -5,13 +5,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2 = exports;
     var6 = dependencyMap;
     var0 = function arg0, arg1() {
-        _fun66068: for (var _fun66068_ip = 0;;) switch (_fun66068_ip) {
+        _fun66096: for (var _fun66096_ip = 0;;) switch (_fun66096_ip) {
             case 0:
                 var1 = arg0;
                 var0 = arg1;
                 if (!var0) {
-                    _fun66068_ip = 21;
-                    continue _fun66068
+                    _fun66096_ip = 21;
+                    continue _fun66096
                 }
             case 9:
                 var3 = var1.premiumProgressBarEnabledUserUpdatedAt;
@@ -19,8 +19,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2 == var3;
             case 21:
                 if (var0) {
-                    _fun66068_ip = 30;
-                    continue _fun66068
+                    _fun66096_ip = 30;
+                    continue _fun66096
                 }
             case 24:
                 var0 = var1.premiumProgressBarEnabled;
@@ -111,4 +111,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIsBoostProgressBarEnabled = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3115, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3117, 2]);

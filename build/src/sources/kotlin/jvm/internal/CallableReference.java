@@ -1,6 +1,6 @@
 package kotlin.jvm.internal;
 
-import bs.b;
+import ds.b;
 import java.io.Serializable;
 import java.lang.annotation.Annotation;
 import java.util.List;
@@ -132,7 +132,7 @@ public abstract class CallableReference implements KCallable, Serializable {
         return getReflected().isOpen();
     }
 
-    @Override // kotlin.reflect.KCallable, kotlin.reflect.KFunction
+    @Override // kotlin.reflect.KCallable
     public boolean isSuspend() {
         return getReflected().isSuspend();
     }

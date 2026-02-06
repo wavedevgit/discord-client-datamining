@@ -7,43 +7,43 @@ import java.util.Arrays;
 import okio.Buffer;
 import okio.BufferedSource;
 import okio.ByteString;
-import ou.a0;
+import qu.a0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public abstract class c implements Closeable {
 
     /* renamed from: r  reason: collision with root package name */
-    private static final String[] f52671r = new String[IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT];
+    private static final String[] f53450r = new String[IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT];
 
     /* renamed from: d  reason: collision with root package name */
-    int f52672d;
+    int f53451d;
 
     /* renamed from: e  reason: collision with root package name */
-    int[] f52673e = new int[32];
+    int[] f53452e = new int[32];
 
     /* renamed from: i  reason: collision with root package name */
-    String[] f52674i = new String[32];
+    String[] f53453i = new String[32];
 
     /* renamed from: o  reason: collision with root package name */
-    int[] f52675o = new int[32];
+    int[] f53454o = new int[32];
 
     /* renamed from: p  reason: collision with root package name */
-    boolean f52676p;
+    boolean f53455p;
 
     /* renamed from: q  reason: collision with root package name */
-    boolean f52677q;
+    boolean f53456q;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        final String[] f52678a;
+        final String[] f53457a;
 
         /* renamed from: b  reason: collision with root package name */
-        final a0 f52679b;
+        final a0 f53458b;
 
         private a(String[] strArr, a0 a0Var) {
-            this.f52678a = strArr;
-            this.f52679b = a0Var;
+            this.f53457a = strArr;
+            this.f53458b = a0Var;
         }
 
         public static a a(String... strArr) {
@@ -51,9 +51,9 @@ public abstract class c implements Closeable {
                 ByteString[] byteStringArr = new ByteString[strArr.length];
                 Buffer buffer = new Buffer();
                 for (int i10 = 0; i10 < strArr.length; i10++) {
-                    c.F(buffer, strArr[i10]);
+                    c.y(buffer, strArr[i10]);
                     buffer.readByte();
-                    byteStringArr[i10] = buffer.L1();
+                    byteStringArr[i10] = buffer.K1();
                 }
                 return new a((String[]) strArr.clone(), a0.l(byteStringArr));
             } catch (IOException e10) {
@@ -78,9 +78,9 @@ public abstract class c implements Closeable {
 
     static {
         for (int i10 = 0; i10 <= 31; i10++) {
-            f52671r[i10] = String.format("\\u%04x", Integer.valueOf(i10));
+            f53450r[i10] = String.format("\\u%04x", Integer.valueOf(i10));
         }
-        String[] strArr = f52671r;
+        String[] strArr = f53450r;
         strArr[34] = "\\\"";
         strArr[92] = "\\\\";
         strArr[9] = "\\t";
@@ -90,15 +90,19 @@ public abstract class c implements Closeable {
         strArr[12] = "\\f";
     }
 
+    public static c k(BufferedSource bufferedSource) {
+        return new e(bufferedSource);
+    }
+
     /* JADX INFO: Access modifiers changed from: private */
     /* JADX WARN: Removed duplicated region for block: B:16:0x002b  */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
     */
-    public static void F(okio.BufferedSink r7, java.lang.String r8) {
+    public static void y(okio.BufferedSink r7, java.lang.String r8) {
         /*
-            java.lang.String[] r0 = w5.c.f52671r
+            java.lang.String[] r0 = w5.c.f53450r
             r1 = 34
             r7.writeByte(r1)
             int r2 = r8.length()
@@ -123,82 +127,78 @@ public abstract class c implements Closeable {
             java.lang.String r5 = "\\u2029"
         L29:
             if (r4 >= r3) goto L2e
-            r7.x0(r8, r4, r3)
+            r7.z0(r8, r4, r3)
         L2e:
-            r7.o0(r5)
+            r7.q0(r5)
             int r4 = r3 + 1
         L33:
             int r3 = r3 + 1
             goto Ld
         L36:
             if (r4 >= r2) goto L3b
-            r7.x0(r8, r4, r2)
+            r7.z0(r8, r4, r2)
         L3b:
             r7.writeByte(r1)
             return
         */
-        throw new UnsupportedOperationException("Method not decompiled: w5.c.F(okio.BufferedSink, java.lang.String):void");
+        throw new UnsupportedOperationException("Method not decompiled: w5.c.y(okio.BufferedSink, java.lang.String):void");
     }
 
-    public static c k(BufferedSource bufferedSource) {
-        return new e(bufferedSource);
-    }
+    public abstract void D();
 
-    public abstract void E();
+    public abstract void S();
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public final w5.b L(String str) {
-        throw new w5.b(str + " at path " + r());
-    }
+    public abstract String e1();
 
-    public abstract void P();
-
-    public abstract String f1();
-
-    public abstract boolean h();
+    public abstract boolean g();
 
     public abstract boolean hasNext();
 
     public abstract b m();
 
-    public abstract String m0();
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public final void n(int i10) {
+        int i11 = this.f53451d;
+        int[] iArr = this.f53452e;
+        if (i11 == iArr.length) {
+            if (i11 != 256) {
+                this.f53452e = Arrays.copyOf(iArr, iArr.length * 2);
+                String[] strArr = this.f53453i;
+                this.f53453i = (String[]) Arrays.copyOf(strArr, strArr.length * 2);
+                int[] iArr2 = this.f53454o;
+                this.f53454o = Arrays.copyOf(iArr2, iArr2.length * 2);
+            } else {
+                throw new w5.a("Nesting too deep at " + t());
+            }
+        }
+        int[] iArr3 = this.f53452e;
+        int i12 = this.f53451d;
+        this.f53451d = i12 + 1;
+        iArr3[i12] = i10;
+    }
 
     public abstract double nextDouble();
 
     public abstract int nextInt();
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public final void o(int i10) {
-        int i11 = this.f52672d;
-        int[] iArr = this.f52673e;
-        if (i11 == iArr.length) {
-            if (i11 != 256) {
-                this.f52673e = Arrays.copyOf(iArr, iArr.length * 2);
-                String[] strArr = this.f52674i;
-                this.f52674i = (String[]) Arrays.copyOf(strArr, strArr.length * 2);
-                int[] iArr2 = this.f52675o;
-                this.f52675o = Arrays.copyOf(iArr2, iArr2.length * 2);
-            } else {
-                throw new w5.a("Nesting too deep at " + r());
-            }
-        }
-        int[] iArr3 = this.f52673e;
-        int i12 = this.f52672d;
-        this.f52672d = i12 + 1;
-        iArr3[i12] = i10;
-    }
+    public abstract String o0();
 
-    public final String r() {
-        return d.a(this.f52672d, this.f52673e, this.f52674i, this.f52675o);
-    }
+    public abstract int p(a aVar);
 
     public abstract void s();
 
-    public abstract void t();
+    public final String t() {
+        return d.a(this.f53451d, this.f53452e, this.f53453i, this.f53454o);
+    }
+
+    public abstract void u();
 
     public abstract void v();
 
-    public abstract int y(a aVar);
+    public abstract void x();
 
-    public abstract void z();
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public final w5.b z(String str) {
+        throw new w5.b(str + " at path " + t());
+    }
 }

@@ -1,36 +1,40 @@
 package ng;
 
-import xi.c;
+import java.util.HashMap;
+import java.util.Map;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class t2 implements xi.d {
+public final class t2 implements zi.b {
+
+    /* renamed from: d  reason: collision with root package name */
+    private static final yi.d f40269d = new yi.d() { // from class: ng.s2
+        @Override // yi.d
+        public final void a(Object obj, Object obj2) {
+            yi.e eVar = (yi.e) obj2;
+            int i10 = t2.f40270e;
+            throw new yi.b("Couldn't find encoder for type ".concat(String.valueOf(obj.getClass().getCanonicalName())));
+        }
+    };
+
+    /* renamed from: e  reason: collision with root package name */
+    public static final /* synthetic */ int f40270e = 0;
 
     /* renamed from: a  reason: collision with root package name */
-    static final t2 f41004a = new t2();
+    private final Map f40271a = new HashMap();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final xi.c f41005b;
+    private final Map f40272b = new HashMap();
 
     /* renamed from: c  reason: collision with root package name */
-    private static final xi.c f41006c;
+    private final yi.d f40273c = f40269d;
 
-    static {
-        c.b a10 = xi.c.a("type");
-        f fVar = new f();
-        fVar.a(1);
-        f41005b = a10.b(fVar.b()).a();
-        c.b a11 = xi.c.a("dims");
-        f fVar2 = new f();
-        fVar2.a(2);
-        f41006c = a11.b(fVar2.b()).a();
+    @Override // zi.b
+    public final /* bridge */ /* synthetic */ zi.b a(Class cls, yi.d dVar) {
+        this.f40271a.put(cls, dVar);
+        this.f40272b.remove(cls);
+        return this;
     }
 
-    private t2() {
-    }
-
-    @Override // xi.d
-    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
-        android.support.v4.media.session.b.a(obj);
-        xi.e eVar = (xi.e) obj2;
-        throw null;
+    public final u2 b() {
+        return new u2(new HashMap(this.f40271a), new HashMap(this.f40272b), this.f40273c);
     }
 }

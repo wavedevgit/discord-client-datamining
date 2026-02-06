@@ -1,38 +1,114 @@
 package jt;
 
+import java.util.Iterator;
+import java.util.Map;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import kotlinx.serialization.DeserializationStrategy;
-import kotlinx.serialization.encoding.Decoder;
-import kotlinx.serialization.json.Json;
-import kotlinx.serialization.json.JsonArray;
-import kotlinx.serialization.json.JsonElement;
-import kotlinx.serialization.json.JsonNull;
-import kotlinx.serialization.json.JsonObject;
-import kotlinx.serialization.json.JsonPrimitive;
+import kotlinx.serialization.KSerializer;
+import kotlinx.serialization.descriptors.SerialDescriptor;
+import kotlinx.serialization.encoding.CompositeEncoder;
+import kotlinx.serialization.encoding.Encoder;
+import kotlinx.serialization.encoding.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class d1 {
-    public static final Object a(Json json, JsonElement element, DeserializationStrategy deserializer) {
-        Decoder k0Var;
-        Intrinsics.checkNotNullParameter(json, "json");
-        Intrinsics.checkNotNullParameter(element, "element");
-        Intrinsics.checkNotNullParameter(deserializer, "deserializer");
-        if (element instanceof JsonObject) {
-            k0Var = new n0(json, (JsonObject) element, null, null, 12, null);
-        } else if (element instanceof JsonArray) {
-            k0Var = new o0(json, (JsonArray) element);
-        } else if (!(element instanceof ht.r) && !Intrinsics.areEqual(element, JsonNull.INSTANCE)) {
-            throw new or.p();
-        } else {
-            k0Var = new k0(json, (JsonPrimitive) element, null, 4, null);
-        }
-        return k0Var.G(deserializer);
+public abstract class d1 extends a {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final KSerializer f30987a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private final KSerializer f30988b;
+
+    public /* synthetic */ d1(KSerializer kSerializer, KSerializer kSerializer2, DefaultConstructorMarker defaultConstructorMarker) {
+        this(kSerializer, kSerializer2);
     }
 
-    public static final Object b(Json json, String discriminator, JsonObject element, DeserializationStrategy deserializer) {
-        Intrinsics.checkNotNullParameter(json, "<this>");
-        Intrinsics.checkNotNullParameter(discriminator, "discriminator");
-        Intrinsics.checkNotNullParameter(element, "element");
-        Intrinsics.checkNotNullParameter(deserializer, "deserializer");
-        return new n0(json, element, discriminator, deserializer.getDescriptor()).G(deserializer);
+    @Override // kotlinx.serialization.KSerializer, ft.o, kotlinx.serialization.DeserializationStrategy
+    public abstract SerialDescriptor getDescriptor();
+
+    public final KSerializer m() {
+        return this.f30987a;
+    }
+
+    public final KSerializer n() {
+        return this.f30988b;
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // jt.a
+    /* renamed from: o */
+    public final void g(kotlinx.serialization.encoding.c decoder, Map builder, int i10, int i11) {
+        Intrinsics.checkNotNullParameter(decoder, "decoder");
+        Intrinsics.checkNotNullParameter(builder, "builder");
+        if (i11 >= 0) {
+            kotlin.ranges.a s10 = kotlin.ranges.d.s(kotlin.ranges.d.u(0, i11 * 2), 2);
+            int d10 = s10.d();
+            int e10 = s10.e();
+            int f10 = s10.f();
+            if ((f10 <= 0 || d10 > e10) && (f10 >= 0 || e10 > d10)) {
+                return;
+            }
+            while (true) {
+                h(decoder, i10 + d10, builder, false);
+                if (d10 != e10) {
+                    d10 += f10;
+                } else {
+                    return;
+                }
+            }
+        } else {
+            throw new IllegalArgumentException("Size must be known in advance when using READ_ALL");
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // jt.a
+    /* renamed from: p */
+    public final void h(kotlinx.serialization.encoding.c decoder, int i10, Map builder, boolean z10) {
+        int i11;
+        Object c10;
+        Intrinsics.checkNotNullParameter(decoder, "decoder");
+        Intrinsics.checkNotNullParameter(builder, "builder");
+        Object c11 = c.a.c(decoder, getDescriptor(), i10, this.f30987a, null, 8, null);
+        if (z10) {
+            i11 = decoder.o(getDescriptor());
+            if (i11 != i10 + 1) {
+                throw new IllegalArgumentException(("Value must follow key in a map, index for key: " + i10 + ", returned index for value: " + i11).toString());
+            }
+        } else {
+            i11 = i10 + 1;
+        }
+        int i12 = i11;
+        if (builder.containsKey(c11) && !(this.f30988b.getDescriptor().getKind() instanceof ht.e)) {
+            c10 = decoder.y(getDescriptor(), i12, this.f30988b, kotlin.collections.o0.j(builder, c11));
+        } else {
+            c10 = c.a.c(decoder, getDescriptor(), i12, this.f30988b, null, 8, null);
+        }
+        builder.put(c11, c10);
+    }
+
+    @Override // ft.o
+    public void serialize(Encoder encoder, Object obj) {
+        Intrinsics.checkNotNullParameter(encoder, "encoder");
+        int e10 = e(obj);
+        SerialDescriptor descriptor = getDescriptor();
+        CompositeEncoder h10 = encoder.h(descriptor, e10);
+        Iterator d10 = d(obj);
+        int i10 = 0;
+        while (d10.hasNext()) {
+            Map.Entry entry = (Map.Entry) d10.next();
+            Object key = entry.getKey();
+            Object value = entry.getValue();
+            int i11 = i10 + 1;
+            h10.s(getDescriptor(), i10, m(), key);
+            i10 += 2;
+            h10.s(getDescriptor(), i11, n(), value);
+        }
+        h10.c(descriptor);
+    }
+
+    private d1(KSerializer kSerializer, KSerializer kSerializer2) {
+        super(null);
+        this.f30987a = kSerializer;
+        this.f30988b = kSerializer2;
     }
 }

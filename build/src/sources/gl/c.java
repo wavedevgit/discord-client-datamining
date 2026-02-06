@@ -1,8 +1,11 @@
 package gl;
+
+import com.facebook.react.bridge.Dynamic;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class c implements h {
-    @Override // gl.h
-    public void a(hl.g gVar) {
-        gVar.p();
+public class c extends k {
+    @Override // gl.k
+    /* renamed from: d */
+    public Integer c(Dynamic dynamic) {
+        return Integer.valueOf(dynamic.asInt());
     }
 }

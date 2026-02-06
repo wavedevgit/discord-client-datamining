@@ -1,11 +1,11 @@
 package bk;
 
-import android.util.Pair;
+import gf.q;
+import tj.i;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-interface c {
-    boolean b();
-
-    Pair c(yj.a aVar);
-
-    void zzb();
+public abstract class c {
+    public static d a(e eVar) {
+        q.m(eVar, "You must provide a valid FaceDetectorOptions.");
+        return ((ck.d) i.c().a(ck.d.class)).a(eVar);
+    }
 }

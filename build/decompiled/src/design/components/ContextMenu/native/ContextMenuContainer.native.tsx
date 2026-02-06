@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/ContextMenu/native/ContextMenuContainer.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun46518: for (var _fun46518_ip = 0;;) switch (_fun46518_ip) {
+        _fun46521: for (var _fun46521_ip = 0;;) switch (_fun46521_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var3 = _closure1_slot2;
@@ -102,13 +102,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var1.bind(var2)();
                 var2 = null;
                 if (!(var2 == var6)) {
-                    _fun46518_ip = 49;
-                    continue _fun46518
+                    _fun46521_ip = 49;
+                    continue _fun46521
                 }
             case 43:
                 var5 = _closure1_slot8;
-                _fun46518_ip = 60;
-                continue _fun46518;
+                _fun46521_ip = 60;
+                continue _fun46521;
             case 49:
                 var1 = new Array(1);
                 var1[0] = var6;
@@ -117,15 +117,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var2 == var6;
                 var1 = undefined;
                 if (var7) {
-                    _fun46518_ip = 75;
-                    continue _fun46518
+                    _fun46521_ip = 75;
+                    continue _fun46521
                 }
             case 69:
                 var1 = var6.requestClose;
             case 75:
                 if (!(var2 == var1)) {
-                    _fun46518_ip = 83;
-                    continue _fun46518
+                    _fun46521_ip = 83;
+                    continue _fun46521
                 }
             case 79:
                 var1 = _closure1_slot9;
@@ -173,7 +173,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = new Array(1);
                 var1[0] = var7;
                 var0 = function(arg0, arg1) { // Environment: var0
-                    _fun46522: for (var _fun46522_ip = 0;;) switch (_fun46522_ip) {
+                    _fun46525: for (var _fun46525_ip = 0;;) switch (_fun46525_ip) {
                         case 0:
                             var3 = _closure1_slot6;
                             var1 = _closure1_slot1;
@@ -193,8 +193,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var7 = 'auto';
                             var8 = 0;
                             if (!(var8 === var9)) {
-                                _fun46522_ip = 73;
-                                continue _fun46522
+                                _fun46525_ip = 73;
+                                continue _fun46525
                             }
                         case 69:
                             var7 = 'none';
@@ -244,4 +244,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ContextMenuContainer = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 5220, 5222, 4029, 4065, 4027, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 5221, 5223, 4030, 4066, 4028, 2]);

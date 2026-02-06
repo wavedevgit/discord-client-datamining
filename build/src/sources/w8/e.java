@@ -9,21 +9,21 @@ public enum e {
     static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f52706a;
+        static final /* synthetic */ int[] f53485a;
 
         static {
             int[] iArr = new int[e.values().length];
-            f52706a = iArr;
+            f53485a = iArr;
             try {
                 iArr[e.YES.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f52706a[e.NO.ordinal()] = 2;
+                f53485a[e.NO.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f52706a[e.UNSET.ordinal()] = 3;
+                f53485a[e.UNSET.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
         }
@@ -37,7 +37,7 @@ public enum e {
     }
 
     public boolean a() {
-        int i10 = a.f52706a[ordinal()];
+        int i10 = a.f53485a[ordinal()];
         if (i10 == 1) {
             return true;
         }

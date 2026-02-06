@@ -5,16 +5,16 @@ import com.google.android.gms.common.d;
 public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final d f51389a;
+    public static final d f51430a;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final d f51390b;
+    public static final d f51431b;
 
     /* renamed from: c  reason: collision with root package name */
-    public static final d f51391c;
+    public static final d f51432c;
 
     /* renamed from: d  reason: collision with root package name */
-    public static final d f51392d;
+    public static final d f51433d;
 
     static {
         new d("cancel_target_direct_transfer", 1L);
@@ -23,9 +23,9 @@ public abstract class b {
         new d("get_or_generate_device_public_key", 1L);
         new d("get_passkeys", 1L);
         new d("update_passkey", 1L);
-        f51389a = new d("is_user_verifying_platform_authenticator_available_for_credential", 1L);
-        f51390b = new d("is_user_verifying_platform_authenticator_available", 1L);
-        f51391c = new d("privileged_api_list_credentials", 2L);
+        f51430a = new d("is_user_verifying_platform_authenticator_available_for_credential", 1L);
+        f51431b = new d("is_user_verifying_platform_authenticator_available", 1L);
+        f51432c = new d("privileged_api_list_credentials", 2L);
         new d("start_target_direct_transfer", 1L);
         new d("first_party_api_get_link_info", 1L);
         new d("zero_party_api_register", 3L);
@@ -36,7 +36,7 @@ public abstract class b {
         new d("zero_party_api_register_passkey_with_sync_account", 1L);
         new d("zero_party_api_get_hybrid_client_registration_pending_intent", 1L);
         new d("zero_party_api_get_hybrid_client_sign_pending_intent", 1L);
-        f51392d = new d("get_browser_hybrid_client_sign_pending_intent", 1L);
+        f51433d = new d("get_browser_hybrid_client_sign_pending_intent", 1L);
         new d("get_browser_hybrid_client_registration_pending_intent", 1L);
         new d("privileged_authenticate_passkey", 2L);
         new d("privileged_register_passkey_with_sync_account", 1L);

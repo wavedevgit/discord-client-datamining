@@ -15,10 +15,10 @@ import org.jetbrains.annotations.NotNull;
 public final class CreateInquirySessionResponse {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Data f19171a;
+    private final Data f19151a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Meta f19172b;
+    private final Meta f19152b;
 
     @com.squareup.moshi.i(generateAdapter = true)
     @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\n\b\u0007\u0018\u00002\u00020\u0001B\u0017\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\u0006\u0010\u0005\u001a\u00020\u0004¢\u0006\u0004\b\u0006\u0010\u0007R\u0017\u0010\u0003\u001a\u00020\u00028\u0006¢\u0006\f\n\u0004\b\b\u0010\t\u001a\u0004\b\n\u0010\u000bR\u0017\u0010\u0005\u001a\u00020\u00048\u0006¢\u0006\f\n\u0004\b\n\u0010\f\u001a\u0004\b\b\u0010\r¨\u0006\u000e"}, d2 = {"Lcom/withpersona/sdk2/inquiry/internal/network/CreateInquirySessionResponse$Data;", "", "", StackTraceHelper.ID_KEY, "Lcom/withpersona/sdk2/inquiry/internal/network/CreateInquirySessionResponse$Attributes;", "attributes", "<init>", "(Ljava/lang/String;Lcom/withpersona/sdk2/inquiry/internal/network/CreateInquirySessionResponse$Attributes;)V", "a", "Ljava/lang/String;", "b", "()Ljava/lang/String;", "Lcom/withpersona/sdk2/inquiry/internal/network/CreateInquirySessionResponse$Attributes;", "()Lcom/withpersona/sdk2/inquiry/internal/network/CreateInquirySessionResponse$Attributes;", "inquiry-internal_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
@@ -26,24 +26,24 @@ public final class CreateInquirySessionResponse {
     public static final class Data {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f19176a;
+        private final String f19156a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Attributes f19177b;
+        private final Attributes f19157b;
 
         public Data(String id2, Attributes attributes) {
             Intrinsics.checkNotNullParameter(id2, "id");
             Intrinsics.checkNotNullParameter(attributes, "attributes");
-            this.f19176a = id2;
-            this.f19177b = attributes;
+            this.f19156a = id2;
+            this.f19157b = attributes;
         }
 
         public final Attributes a() {
-            return this.f19177b;
+            return this.f19157b;
         }
 
         public final String b() {
-            return this.f19176a;
+            return this.f19156a;
         }
     }
 
@@ -80,15 +80,15 @@ public final class CreateInquirySessionResponse {
             @NotNull
             public GpsCollectionRequirement fromJson(@NotNull m reader) {
                 Intrinsics.checkNotNullParameter(reader, "reader");
-                Object V = reader.V();
-                return Intrinsics.areEqual(V, "require") ? GpsCollectionRequirement.REQUIRE : Intrinsics.areEqual(V, "optional") ? GpsCollectionRequirement.OPTIONAL : GpsCollectionRequirement.NONE;
+                Object I = reader.I();
+                return Intrinsics.areEqual(I, "require") ? GpsCollectionRequirement.REQUIRE : Intrinsics.areEqual(I, "optional") ? GpsCollectionRequirement.OPTIONAL : GpsCollectionRequirement.NONE;
             }
         }
 
         static {
             GpsCollectionRequirement[] a10 = a();
             $VALUES = a10;
-            $ENTRIES = vr.a.a(a10);
+            $ENTRIES = xr.a.a(a10);
             Companion = new Companion(null);
         }
 
@@ -140,14 +140,14 @@ public final class CreateInquirySessionResponse {
             @NotNull
             public GpsPrecisionRequirement fromJson(@NotNull m reader) {
                 Intrinsics.checkNotNullParameter(reader, "reader");
-                return Intrinsics.areEqual(reader.V(), "rough") ? GpsPrecisionRequirement.ROUGH : GpsPrecisionRequirement.PRECISE;
+                return Intrinsics.areEqual(reader.I(), "rough") ? GpsPrecisionRequirement.ROUGH : GpsPrecisionRequirement.PRECISE;
             }
         }
 
         static {
             GpsPrecisionRequirement[] a10 = a();
             $VALUES = a10;
-            $ENTRIES = vr.a.a(a10);
+            $ENTRIES = xr.a.a(a10);
             Companion = new Companion(null);
         }
 
@@ -173,31 +173,31 @@ public final class CreateInquirySessionResponse {
     public static final class Meta {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f19178a;
+        private final String f19158a;
 
         public Meta(String accessToken) {
             Intrinsics.checkNotNullParameter(accessToken, "accessToken");
-            this.f19178a = accessToken;
+            this.f19158a = accessToken;
         }
 
         public final String a() {
-            return this.f19178a;
+            return this.f19158a;
         }
     }
 
     public CreateInquirySessionResponse(Data data, Meta meta) {
         Intrinsics.checkNotNullParameter(data, "data");
         Intrinsics.checkNotNullParameter(meta, "meta");
-        this.f19171a = data;
-        this.f19172b = meta;
+        this.f19151a = data;
+        this.f19152b = meta;
     }
 
     public final Data a() {
-        return this.f19171a;
+        return this.f19151a;
     }
 
     public final Meta b() {
-        return this.f19172b;
+        return this.f19152b;
     }
 
     @com.squareup.moshi.i(generateAdapter = true)
@@ -206,30 +206,30 @@ public final class CreateInquirySessionResponse {
     public static final class Attributes {
 
         /* renamed from: a  reason: collision with root package name */
-        private final GpsCollectionRequirement f19173a;
+        private final GpsCollectionRequirement f19153a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final GpsPrecisionRequirement f19174b;
+        private final GpsPrecisionRequirement f19154b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final String f19175c;
+        private final String f19155c;
 
         public Attributes(GpsCollectionRequirement gpsCollectionRequirement, GpsPrecisionRequirement gpsPrecisionRequirement, String str) {
-            this.f19173a = gpsCollectionRequirement;
-            this.f19174b = gpsPrecisionRequirement;
-            this.f19175c = str;
+            this.f19153a = gpsCollectionRequirement;
+            this.f19154b = gpsPrecisionRequirement;
+            this.f19155c = str;
         }
 
         public final GpsCollectionRequirement a() {
-            return this.f19173a;
+            return this.f19153a;
         }
 
         public final GpsPrecisionRequirement b() {
-            return this.f19174b;
+            return this.f19154b;
         }
 
         public final String c() {
-            return this.f19175c;
+            return this.f19155c;
         }
 
         public /* synthetic */ Attributes(GpsCollectionRequirement gpsCollectionRequirement, GpsPrecisionRequirement gpsPrecisionRequirement, String str, int i10, DefaultConstructorMarker defaultConstructorMarker) {

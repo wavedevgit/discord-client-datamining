@@ -16,21 +16,21 @@ import le.c0;
 class a implements DataSource {
 
     /* renamed from: a  reason: collision with root package name */
-    private final DataSource f52066a;
+    private final DataSource f52431a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final byte[] f52067b;
+    private final byte[] f52432b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final byte[] f52068c;
+    private final byte[] f52433c;
 
     /* renamed from: d  reason: collision with root package name */
-    private CipherInputStream f52069d;
+    private CipherInputStream f52434d;
 
     public a(DataSource dataSource, byte[] bArr, byte[] bArr2) {
-        this.f52066a = dataSource;
-        this.f52067b = bArr;
-        this.f52068c = bArr2;
+        this.f52431a = dataSource;
+        this.f52432b = bArr;
+        this.f52433c = bArr2;
     }
 
     @Override // com.google.android.exoplayer2.upstream.DataSource
@@ -38,10 +38,10 @@ class a implements DataSource {
         try {
             Cipher o10 = o();
             try {
-                o10.init(2, new SecretKeySpec(this.f52067b, "AES"), new IvParameterSpec(this.f52068c));
-                le.n nVar = new le.n(this.f52066a, aVar);
-                this.f52069d = new CipherInputStream(nVar, o10);
-                nVar.h();
+                o10.init(2, new SecretKeySpec(this.f52432b, "AES"), new IvParameterSpec(this.f52433c));
+                le.n nVar = new le.n(this.f52431a, aVar);
+                this.f52434d = new CipherInputStream(nVar, o10);
+                nVar.g();
                 return -1L;
             } catch (InvalidAlgorithmParameterException | InvalidKeyException e10) {
                 throw new RuntimeException(e10);
@@ -53,26 +53,26 @@ class a implements DataSource {
 
     @Override // com.google.android.exoplayer2.upstream.DataSource
     public void close() {
-        if (this.f52069d != null) {
-            this.f52069d = null;
-            this.f52066a.close();
+        if (this.f52434d != null) {
+            this.f52434d = null;
+            this.f52431a.close();
         }
     }
 
     @Override // com.google.android.exoplayer2.upstream.DataSource
     public final Map d() {
-        return this.f52066a.d();
+        return this.f52431a.d();
     }
 
     @Override // com.google.android.exoplayer2.upstream.DataSource
     public final void j(c0 c0Var) {
         ne.a.e(c0Var);
-        this.f52066a.j(c0Var);
+        this.f52431a.j(c0Var);
     }
 
     @Override // com.google.android.exoplayer2.upstream.DataSource
     public final Uri m() {
-        return this.f52066a.m();
+        return this.f52431a.m();
     }
 
     protected Cipher o() {
@@ -81,8 +81,8 @@ class a implements DataSource {
 
     @Override // le.j
     public final int read(byte[] bArr, int i10, int i11) {
-        ne.a.e(this.f52069d);
-        int read = this.f52069d.read(bArr, i10, i11);
+        ne.a.e(this.f52434d);
+        int read = this.f52434d.read(bArr, i10, i11);
         if (read < 0) {
             return -1;
         }

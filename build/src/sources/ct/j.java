@@ -1,41 +1,26 @@
 package ct;
 
-import ft.e;
+import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
-import kotlinx.serialization.KSerializer;
-import kotlinx.serialization.descriptors.SerialDescriptor;
-import kotlinx.serialization.encoding.Decoder;
-import kotlinx.serialization.encoding.Encoder;
-import ws.k;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class j implements KSerializer {
+public final class j implements e {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final j f20034a = new j();
+    private final Function1 f20030a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final SerialDescriptor f20035b = ft.j.b("kotlinx.datetime.UtcOffset", e.i.f23483a);
+    private final int f20031b;
 
-    private j() {
-    }
-
-    @Override // kotlinx.serialization.DeserializationStrategy
-    /* renamed from: a */
-    public k deserialize(Decoder decoder) {
-        Intrinsics.checkNotNullParameter(decoder, "decoder");
-        return k.a.b(k.Companion, decoder.z(), null, 2, null);
-    }
-
-    @Override // dt.o
-    /* renamed from: b */
-    public void serialize(Encoder encoder, k value) {
-        Intrinsics.checkNotNullParameter(encoder, "encoder");
-        Intrinsics.checkNotNullParameter(value, "value");
-        encoder.F(value.toString());
-    }
-
-    @Override // kotlinx.serialization.KSerializer, dt.o, kotlinx.serialization.DeserializationStrategy
-    public SerialDescriptor getDescriptor() {
-        return f20035b;
+    public j(Function1 number, int i10) {
+        Intrinsics.checkNotNullParameter(number, "number");
+        this.f20030a = number;
+        this.f20031b = i10;
+        if (i10 >= 0) {
+            if (i10 <= 9) {
+                return;
+            }
+            throw new IllegalArgumentException(("The minimum number of digits (" + i10 + ") exceeds the length of an Int").toString());
+        }
+        throw new IllegalArgumentException(("The minimum number of digits (" + i10 + ") is negative").toString());
     }
 }

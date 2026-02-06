@@ -10,7 +10,7 @@ import z9.b;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f54532a = new b();
+    public static final b f55076a = new b();
 
     private b() {
     }
@@ -20,22 +20,22 @@ public final class b {
         Intrinsics.checkNotNullParameter(shortcutAttribution, "shortcutAttribution");
         b.a aVar = new b.a();
         if (rect != null) {
-            aVar.f55192h = rect.width();
-            aVar.f55193i = rect.height();
+            aVar.f55923h = rect.width();
+            aVar.f55924i = rect.height();
         }
-        aVar.f55194j = str;
+        aVar.f55925j = str;
         if (pointF != null) {
-            aVar.f55195k = Float.valueOf(pointF.x);
-            aVar.f55196l = Float.valueOf(pointF.y);
+            aVar.f55926k = Float.valueOf(pointF.x);
+            aVar.f55927l = Float.valueOf(pointF.y);
         }
-        aVar.f55190f = obj;
-        aVar.f55197m = z10;
-        aVar.f55191g = uri;
-        aVar.f55187c = map;
-        aVar.f55188d = map3;
-        aVar.f55186b = shortcutAttribution;
-        aVar.f55185a = componentAttribution;
-        aVar.f55189e = map2;
+        aVar.f55921f = obj;
+        aVar.f55928m = z10;
+        aVar.f55922g = uri;
+        aVar.f55918c = map;
+        aVar.f55919d = map3;
+        aVar.f55917b = shortcutAttribution;
+        aVar.f55916a = componentAttribution;
+        aVar.f55920e = map2;
         return aVar;
     }
 }

@@ -1,57 +1,51 @@
 package ng;
-
-import xi.c;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class v2 implements xi.d {
+public final class v2 implements yi.g {
 
     /* renamed from: a  reason: collision with root package name */
-    static final v2 f41116a = new v2();
+    private boolean f40326a = false;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final xi.c f41117b;
+    private boolean f40327b = false;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final xi.c f41118c;
+    private yi.c f40328c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final xi.c f41119d;
+    private final r2 f40329d;
 
-    /* renamed from: e  reason: collision with root package name */
-    private static final xi.c f41120e;
-
-    /* renamed from: f  reason: collision with root package name */
-    private static final xi.c f41121f;
-
-    static {
-        c.b a10 = xi.c.a("remoteModelOptions");
-        f fVar = new f();
-        fVar.a(1);
-        f41117b = a10.b(fVar.b()).a();
-        c.b a11 = xi.c.a("localModelOptions");
-        f fVar2 = new f();
-        fVar2.a(2);
-        f41118c = a11.b(fVar2.b()).a();
-        c.b a12 = xi.c.a("errorCodes");
-        f fVar3 = new f();
-        fVar3.a(3);
-        f41119d = a12.b(fVar3.b()).a();
-        c.b a13 = xi.c.a("modelInitializationMs");
-        f fVar4 = new f();
-        fVar4.a(4);
-        f41120e = a13.b(fVar4.b()).a();
-        c.b a14 = xi.c.a("isNnApiEnabled");
-        f fVar5 = new f();
-        fVar5.a(5);
-        f41121f = a14.b(fVar5.b()).a();
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public v2(r2 r2Var) {
+        this.f40329d = r2Var;
     }
 
-    private v2() {
+    private final void b() {
+        if (!this.f40326a) {
+            this.f40326a = true;
+            return;
+        }
+        throw new yi.b("Cannot encode a second value in the ValueEncoderContext");
     }
 
-    @Override // xi.d
-    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
-        android.support.v4.media.session.b.a(obj);
-        xi.e eVar = (xi.e) obj2;
-        throw null;
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public final void a(yi.c cVar, boolean z10) {
+        this.f40326a = false;
+        this.f40328c = cVar;
+        this.f40327b = z10;
+    }
+
+    @Override // yi.g
+    public final yi.g d(String str) {
+        b();
+        this.f40329d.f(this.f40328c, str, this.f40327b);
+        return this;
+    }
+
+    @Override // yi.g
+    public final yi.g e(boolean z10) {
+        b();
+        this.f40329d.g(this.f40328c, z10 ? 1 : 0, this.f40327b);
+        return this;
     }
 }

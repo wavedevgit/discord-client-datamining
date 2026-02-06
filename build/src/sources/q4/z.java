@@ -6,19 +6,19 @@ import java.util.Map;
 public class z {
 
     /* renamed from: e  reason: collision with root package name */
-    private static final String f47451e = k4.m.i("WorkTimer");
+    private static final String f46499e = k4.m.i("WorkTimer");
 
     /* renamed from: a  reason: collision with root package name */
-    final k4.u f47452a;
+    final k4.u f46500a;
 
     /* renamed from: b  reason: collision with root package name */
-    final Map f47453b = new HashMap();
+    final Map f46501b = new HashMap();
 
     /* renamed from: c  reason: collision with root package name */
-    final Map f47454c = new HashMap();
+    final Map f46502c = new HashMap();
 
     /* renamed from: d  reason: collision with root package name */
-    final Object f47455d = new Object();
+    final Object f46503d = new Object();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public interface a {
@@ -29,27 +29,27 @@ public class z {
     public static class b implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        private final z f47456d;
+        private final z f46504d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final p4.m f47457e;
+        private final p4.m f46505e;
 
         b(z zVar, p4.m mVar) {
-            this.f47456d = zVar;
-            this.f47457e = mVar;
+            this.f46504d = zVar;
+            this.f46505e = mVar;
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            synchronized (this.f47456d.f47455d) {
+            synchronized (this.f46504d.f46503d) {
                 try {
-                    if (((b) this.f47456d.f47453b.remove(this.f47457e)) != null) {
-                        a aVar = (a) this.f47456d.f47454c.remove(this.f47457e);
+                    if (((b) this.f46504d.f46501b.remove(this.f46505e)) != null) {
+                        a aVar = (a) this.f46504d.f46502c.remove(this.f46505e);
                         if (aVar != null) {
-                            aVar.b(this.f47457e);
+                            aVar.b(this.f46505e);
                         }
                     } else {
-                        k4.m.e().a("WrkTimerRunnable", String.format("Timer with %s is already marked as complete.", this.f47457e));
+                        k4.m.e().a("WrkTimerRunnable", String.format("Timer with %s is already marked as complete.", this.f46505e));
                     }
                 } catch (Throwable th2) {
                     throw th2;
@@ -59,30 +59,30 @@ public class z {
     }
 
     public z(k4.u uVar) {
-        this.f47452a = uVar;
+        this.f46500a = uVar;
     }
 
     public void a(p4.m mVar, long j10, a aVar) {
-        synchronized (this.f47455d) {
+        synchronized (this.f46503d) {
             k4.m e10 = k4.m.e();
-            String str = f47451e;
+            String str = f46499e;
             e10.a(str, "Starting timer for " + mVar);
             b(mVar);
             b bVar = new b(this, mVar);
-            this.f47453b.put(mVar, bVar);
-            this.f47454c.put(mVar, aVar);
-            this.f47452a.b(j10, bVar);
+            this.f46501b.put(mVar, bVar);
+            this.f46502c.put(mVar, aVar);
+            this.f46500a.b(j10, bVar);
         }
     }
 
     public void b(p4.m mVar) {
-        synchronized (this.f47455d) {
+        synchronized (this.f46503d) {
             try {
-                if (((b) this.f47453b.remove(mVar)) != null) {
+                if (((b) this.f46501b.remove(mVar)) != null) {
                     k4.m e10 = k4.m.e();
-                    String str = f47451e;
+                    String str = f46499e;
                     e10.a(str, "Stopping timer for " + mVar);
-                    this.f47454c.remove(mVar);
+                    this.f46502c.remove(mVar);
                 }
             } catch (Throwable th2) {
                 throw th2;

@@ -8,7 +8,7 @@ import kotlin.reflect.jvm.internal.impl.protobuf.MessageLite;
 public abstract class AbstractParser<MessageType extends MessageLite> implements Parser<MessageType> {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final ExtensionRegistryLite f33881a = ExtensionRegistryLite.getEmptyRegistry();
+    private static final ExtensionRegistryLite f33901a = ExtensionRegistryLite.getEmptyRegistry();
 
     private MessageLite a(MessageLite messageLite) {
         if (messageLite != null && !messageLite.isInitialized()) {

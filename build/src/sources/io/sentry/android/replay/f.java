@@ -3,5 +3,5 @@ package io.sentry.android.replay;
 public abstract class f {
 
     /* renamed from: a  reason: collision with root package name */
-    public static int f28517a = 2131362988;
+    public static int f27661a = 2131362988;
 }

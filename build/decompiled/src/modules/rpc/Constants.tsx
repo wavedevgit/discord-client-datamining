@@ -191,98 +191,98 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.RPCDeepLinks = var6;
     var2.DynamicLinkType = var5;
     var4 = function arg0() {
-        _fun28999: for (var _fun28999_ip = 0;;) switch (_fun28999_ip) {
+        _fun29003: for (var _fun29003_ip = 0;;) switch (_fun29003_ip) {
             case 0:
                 var1 = arg0;
                 var2 = _closure1_slot0;
                 var2 = var2.USER_SETTINGS;
                 if (!(var2 !== var1)) {
-                    _fun28999_ip = 346;
-                    continue _fun28999
+                    _fun29003_ip = 346;
+                    continue _fun29003
                 }
             case 23:
                 var2 = _closure1_slot0;
                 var2 = var2.CHANGELOG;
                 if (!(var2 !== var1)) {
-                    _fun28999_ip = 334;
-                    continue _fun28999
+                    _fun29003_ip = 334;
+                    continue _fun29003
                 }
             case 40:
                 var2 = _closure1_slot0;
                 var2 = var2.LIBRARY;
                 if (!(var2 !== var1)) {
-                    _fun28999_ip = 322;
-                    continue _fun28999
+                    _fun29003_ip = 322;
+                    continue _fun29003
                 }
             case 57:
                 var2 = _closure1_slot0;
                 var2 = var2.STORE_HOME;
                 if (!(var2 !== var1)) {
-                    _fun28999_ip = 310;
-                    continue _fun28999
+                    _fun29003_ip = 310;
+                    continue _fun29003
                 }
             case 74:
                 var2 = _closure1_slot0;
                 var2 = var2.STORE_LISTING;
                 if (!(var2 !== var1)) {
-                    _fun28999_ip = 310;
-                    continue _fun28999
+                    _fun29003_ip = 310;
+                    continue _fun29003
                 }
             case 91:
                 var2 = _closure1_slot0;
                 var2 = var2.CHANNEL;
                 if (!(var2 !== var1)) {
-                    _fun28999_ip = 298;
-                    continue _fun28999
+                    _fun29003_ip = 298;
+                    continue _fun29003
                 }
             case 108:
                 var2 = _closure1_slot0;
                 var2 = var2.PICK_GUILD_SETTINGS;
                 if (!(var2 !== var1)) {
-                    _fun28999_ip = 286;
-                    continue _fun28999
+                    _fun29003_ip = 286;
+                    continue _fun29003
                 }
             case 125:
                 var2 = _closure1_slot0;
                 var2 = var2.QUEST_HOME;
                 if (!(var2 !== var1)) {
-                    _fun28999_ip = 274;
-                    continue _fun28999
+                    _fun29003_ip = 274;
+                    continue _fun29003
                 }
             case 142:
                 var2 = _closure1_slot0;
                 var2 = var2.QUEST_PREVIEW_TOOL;
                 if (!(var2 !== var1)) {
-                    _fun28999_ip = 262;
-                    continue _fun28999
+                    _fun29003_ip = 262;
+                    continue _fun29003
                 }
             case 156:
                 var2 = _closure1_slot0;
                 var2 = var2.DISCOVERY_GAME_RESULTS;
                 if (!(var2 !== var1)) {
-                    _fun28999_ip = 250;
-                    continue _fun28999
+                    _fun29003_ip = 250;
+                    continue _fun29003
                 }
             case 170:
                 var2 = _closure1_slot0;
                 var2 = var2.SHOP;
                 if (!(var2 !== var1)) {
-                    _fun28999_ip = 238;
-                    continue _fun28999
+                    _fun29003_ip = 238;
+                    continue _fun29003
                 }
             case 184:
                 var2 = _closure1_slot0;
                 var2 = var2.ACTIVITIES;
                 if (!(var2 !== var1)) {
-                    _fun28999_ip = 226;
-                    continue _fun28999
+                    _fun29003_ip = 226;
+                    continue _fun29003
                 }
             case 198:
                 var2 = _closure1_slot0;
                 var2 = var2.PLAYGROUND;
                 if (!(var2 !== var1)) {
-                    _fun28999_ip = 214;
-                    continue _fun28999
+                    _fun29003_ip = 214;
+                    continue _fun29003
                 }
             case 212:
                 return var1;

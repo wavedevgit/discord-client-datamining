@@ -5,15 +5,15 @@ import java.util.Map;
 import kotlin.collections.o0;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.text.StringsKt;
-import or.v;
+import qr.v;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f47499a = new a();
+    public static final a f46547a = new a();
 
     /* renamed from: b  reason: collision with root package name */
-    public static final Map f47500b = o0.m(v.a("mkv", "video/x-matroska"), v.a("glb", "model/gltf-binary"));
+    public static final Map f46548b = o0.m(v.a("mkv", "video/x-matroska"), v.a("glb", "model/gltf-binary"));
 
     private a() {
     }
@@ -30,7 +30,7 @@ public final class a {
 
     public static final String b(String path) {
         Intrinsics.checkNotNullParameter(path, "path");
-        String a10 = f47499a.a(path);
+        String a10 = f46547a.a(path);
         if (a10 != null) {
             Locale US = Locale.US;
             Intrinsics.checkNotNullExpressionValue(US, "US");
@@ -39,7 +39,7 @@ public final class a {
             if (lowerCase != null) {
                 String a11 = b.a(lowerCase);
                 if (a11 == null) {
-                    return (String) f47500b.get(lowerCase);
+                    return (String) f46548b.get(lowerCase);
                 }
                 return a11;
             }

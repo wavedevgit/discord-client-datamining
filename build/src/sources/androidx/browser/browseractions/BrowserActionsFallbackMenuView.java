@@ -11,19 +11,19 @@ import n.a;
 public class BrowserActionsFallbackMenuView extends LinearLayout {
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f1996d;
+    private final int f2325d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f1997e;
+    private final int f2326e;
 
     public BrowserActionsFallbackMenuView(@NonNull Context context, @NonNull AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f1996d = getResources().getDimensionPixelOffset(a.f38973b);
-        this.f1997e = getResources().getDimensionPixelOffset(a.f38972a);
+        this.f2325d = getResources().getDimensionPixelOffset(a.f38328b);
+        this.f2326e = getResources().getDimensionPixelOffset(a.f38327a);
     }
 
     @Override // android.widget.LinearLayout, android.view.View
     protected void onMeasure(int i10, int i11) {
-        super.onMeasure(View.MeasureSpec.makeMeasureSpec(Math.min(getResources().getDisplayMetrics().widthPixels - (this.f1996d * 2), this.f1997e), 1073741824), i11);
+        super.onMeasure(View.MeasureSpec.makeMeasureSpec(Math.min(getResources().getDisplayMetrics().widthPixels - (this.f2325d * 2), this.f2326e), 1073741824), i11);
     }
 }

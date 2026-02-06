@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.EXPECTED_ORB_LOTTIE_ANIMATION_DURATION_MS = var4;
     var2.ORB_LOTTIE_COUNTER_ANIMATION_FACTORS = var3;
     var1 = function(arg0, arg1) { // Environment: var1
-        _fun75678: for (var _fun75678_ip = 0;;) switch (_fun75678_ip) {
+        _fun75705: for (var _fun75705_ip = 0;;) switch (_fun75705_ip) {
             case 0:
                 var3 = arg1;
                 var0 = arg0;
@@ -37,8 +37,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure1_slot0;
                 var0 = 'SPEND';
                 if (!var4) {
-                    _fun75678_ip = 34;
-                    continue _fun75678
+                    _fun75705_ip = 34;
+                    continue _fun75705
                 }
             case 28:
                 var0 = 'EARN';
@@ -49,8 +49,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.duration = var2;
                 var1 = 0;
                 if (!var4) {
-                    _fun75678_ip = 57;
-                    continue _fun75678
+                    _fun75705_ip = 57;
+                    continue _fun75705
                 }
             case 53:
                 var1 = var3 - var2;

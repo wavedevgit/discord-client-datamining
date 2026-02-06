@@ -1,66 +1,36 @@
 package bv;
 
-import java.util.List;
-import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.Lambda;
-import ru.c;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class b implements qu.b, ru.c {
+public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f7282a = new b();
+    private final Object f7132a;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    static final class a extends Lambda implements Function2 {
+    public b(Object obj) {
+        this.f7132a = obj;
+    }
 
-        /* renamed from: d  reason: collision with root package name */
-        public static final a f7283d = new a();
-
-        a() {
-            super(2);
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
         }
-
-        public final Boolean a(int i10, int i11) {
-            boolean z10;
-            if (i10 >= i11) {
-                z10 = true;
-            } else {
-                z10 = false;
-            }
-            return Boolean.valueOf(z10);
+        if ((obj instanceof b) && Intrinsics.areEqual(this.f7132a, ((b) obj).f7132a)) {
+            return true;
         }
+        return false;
+    }
 
-        @Override // kotlin.jvm.functions.Function2
-        public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
-            return a(((Number) obj).intValue(), ((Number) obj2).intValue());
+    public int hashCode() {
+        Object obj = this.f7132a;
+        if (obj == null) {
+            return 0;
         }
+        return obj.hashCode();
     }
 
-    private b() {
-    }
-
-    @Override // ru.c
-    public boolean b(List list, Function2 function2) {
-        return c.a.b(this, list, function2);
-    }
-
-    @Override // ru.a
-    public Boolean c(Object obj) {
-        return c.a.f(this, obj);
-    }
-
-    @Override // ru.b
-    public List d(Comparable comparable, Comparable comparable2) {
-        return c.a.e(this, comparable, comparable2);
-    }
-
-    @Override // qu.b
-    public Object f(Object obj, Object obj2) {
-        return Boolean.valueOf(b(vv.a.c(obj), a.f7283d));
-    }
-
-    @Override // ru.b
-    public List g(Comparable comparable, Comparable comparable2) {
-        return c.a.d(this, comparable, comparable2);
+    public String toString() {
+        Object obj = this.f7132a;
+        return "SingleNestedValue(value=" + obj + ")";
     }
 }

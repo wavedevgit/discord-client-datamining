@@ -6,25 +6,25 @@ import android.graphics.Matrix;
 final class d extends v0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final q2 f53339a;
+    private final q2 f54158a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final long f53340b;
+    private final long f54159b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f53341c;
+    private final int f54160c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Matrix f53342d;
+    private final Matrix f54161d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public d(q2 q2Var, long j10, int i10, Matrix matrix) {
         if (q2Var != null) {
-            this.f53339a = q2Var;
-            this.f53340b = j10;
-            this.f53341c = i10;
+            this.f54158a = q2Var;
+            this.f54159b = j10;
+            this.f54160c = i10;
             if (matrix != null) {
-                this.f53342d = matrix;
+                this.f54161d = matrix;
                 return;
             }
             throw new NullPointerException("Null sensorToBufferTransformMatrix");
@@ -34,17 +34,17 @@ final class d extends v0 {
 
     @Override // x.v0, x.p0
     public long a() {
-        return this.f53340b;
+        return this.f54159b;
     }
 
     @Override // x.v0, x.p0
     public q2 c() {
-        return this.f53339a;
+        return this.f54158a;
     }
 
     @Override // x.v0, x.p0
     public int d() {
-        return this.f53341c;
+        return this.f54160c;
     }
 
     public boolean equals(Object obj) {
@@ -53,7 +53,7 @@ final class d extends v0 {
         }
         if (obj instanceof v0) {
             v0 v0Var = (v0) obj;
-            if (this.f53339a.equals(v0Var.c()) && this.f53340b == v0Var.a() && this.f53341c == v0Var.d() && this.f53342d.equals(v0Var.f())) {
+            if (this.f54158a.equals(v0Var.c()) && this.f54159b == v0Var.a() && this.f54160c == v0Var.d() && this.f54161d.equals(v0Var.f())) {
                 return true;
             }
         }
@@ -62,15 +62,15 @@ final class d extends v0 {
 
     @Override // x.v0
     public Matrix f() {
-        return this.f53342d;
+        return this.f54161d;
     }
 
     public int hashCode() {
-        long j10 = this.f53340b;
-        return ((((((this.f53339a.hashCode() ^ 1000003) * 1000003) ^ ((int) (j10 ^ (j10 >>> 32)))) * 1000003) ^ this.f53341c) * 1000003) ^ this.f53342d.hashCode();
+        long j10 = this.f54159b;
+        return ((((((this.f54158a.hashCode() ^ 1000003) * 1000003) ^ ((int) (j10 ^ (j10 >>> 32)))) * 1000003) ^ this.f54160c) * 1000003) ^ this.f54161d.hashCode();
     }
 
     public String toString() {
-        return "ImmutableImageInfo{tagBundle=" + this.f53339a + ", timestamp=" + this.f53340b + ", rotationDegrees=" + this.f53341c + ", sensorToBufferTransformMatrix=" + this.f53342d + "}";
+        return "ImmutableImageInfo{tagBundle=" + this.f54158a + ", timestamp=" + this.f54159b + ", rotationDegrees=" + this.f54160c + ", sensorToBufferTransformMatrix=" + this.f54161d + "}";
     }
 }

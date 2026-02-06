@@ -9,10 +9,10 @@ public final class l extends i {
     public static final Parcelable.Creator<l> CREATOR = new a();
 
     /* renamed from: e  reason: collision with root package name */
-    public final String f36677e;
+    public final String f36070e;
 
     /* renamed from: i  reason: collision with root package name */
-    public final byte[] f36678i;
+    public final byte[] f36071i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a implements Parcelable.Creator {
@@ -34,8 +34,8 @@ public final class l extends i {
 
     public l(String str, byte[] bArr) {
         super("PRIV");
-        this.f36677e = str;
-        this.f36678i = bArr;
+        this.f36070e = str;
+        this.f36071i = bArr;
     }
 
     public boolean equals(Object obj) {
@@ -44,7 +44,7 @@ public final class l extends i {
         }
         if (obj != null && l.class == obj.getClass()) {
             l lVar = (l) obj;
-            if (w0.c(this.f36677e, lVar.f36677e) && Arrays.equals(this.f36678i, lVar.f36678i)) {
+            if (w0.c(this.f36070e, lVar.f36070e) && Arrays.equals(this.f36071i, lVar.f36071i)) {
                 return true;
             }
         }
@@ -53,29 +53,29 @@ public final class l extends i {
 
     public int hashCode() {
         int i10;
-        String str = this.f36677e;
+        String str = this.f36070e;
         if (str != null) {
             i10 = str.hashCode();
         } else {
             i10 = 0;
         }
-        return ((527 + i10) * 31) + Arrays.hashCode(this.f36678i);
+        return ((527 + i10) * 31) + Arrays.hashCode(this.f36071i);
     }
 
     @Override // ld.i
     public String toString() {
-        return this.f36668d + ": owner=" + this.f36677e;
+        return this.f36061d + ": owner=" + this.f36070e;
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeString(this.f36677e);
-        parcel.writeByteArray(this.f36678i);
+        parcel.writeString(this.f36070e);
+        parcel.writeByteArray(this.f36071i);
     }
 
     l(Parcel parcel) {
         super("PRIV");
-        this.f36677e = (String) w0.j(parcel.readString());
-        this.f36678i = (byte[]) w0.j(parcel.createByteArray());
+        this.f36070e = (String) w0.j(parcel.readString());
+        this.f36071i = (byte[]) w0.j(parcel.createByteArray());
     }
 }

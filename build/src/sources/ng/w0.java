@@ -1,43 +1,68 @@
 package ng;
 
-import xi.c;
+import java.util.Map;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class w0 implements xi.d {
-
-    /* renamed from: a  reason: collision with root package name */
-    static final w0 f41151a = new w0();
-
-    /* renamed from: b  reason: collision with root package name */
-    private static final xi.c f41152b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private static final xi.c f41153c;
+final class w0 extends j0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final xi.c f41154d;
+    private final Object f40354d;
 
-    static {
-        c.b a10 = xi.c.a("logEventKey");
-        f fVar = new f();
-        fVar.a(1);
-        f41152b = a10.b(fVar.b()).a();
-        c.b a11 = xi.c.a("eventCount");
-        f fVar2 = new f();
-        fVar2.a(2);
-        f41153c = a11.b(fVar2.b()).a();
-        c.b a12 = xi.c.a("inferenceDurationStats");
-        f fVar3 = new f();
-        fVar3.a(3);
-        f41154d = a12.b(fVar3.b()).a();
+    /* renamed from: e  reason: collision with root package name */
+    private int f40355e;
+
+    /* renamed from: i  reason: collision with root package name */
+    final /* synthetic */ y0 f40356i;
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public w0(y0 y0Var, int i10) {
+        this.f40356i = y0Var;
+        this.f40354d = y0.j(y0Var, i10);
+        this.f40355e = i10;
     }
 
-    private w0() {
+    private final void a() {
+        int z10;
+        int i10 = this.f40355e;
+        if (i10 == -1 || i10 >= this.f40356i.size() || !r.a(this.f40354d, y0.j(this.f40356i, this.f40355e))) {
+            z10 = this.f40356i.z(this.f40354d);
+            this.f40355e = z10;
+        }
     }
 
-    @Override // xi.d
-    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
-        android.support.v4.media.session.b.a(obj);
-        xi.e eVar = (xi.e) obj2;
-        throw null;
+    @Override // ng.j0, java.util.Map.Entry
+    public final Object getKey() {
+        return this.f40354d;
+    }
+
+    @Override // ng.j0, java.util.Map.Entry
+    public final Object getValue() {
+        Map o10 = this.f40356i.o();
+        if (o10 != null) {
+            return o10.get(this.f40354d);
+        }
+        a();
+        int i10 = this.f40355e;
+        if (i10 == -1) {
+            return null;
+        }
+        return y0.m(this.f40356i, i10);
+    }
+
+    @Override // java.util.Map.Entry
+    public final Object setValue(Object obj) {
+        Map o10 = this.f40356i.o();
+        if (o10 != null) {
+            return o10.put(this.f40354d, obj);
+        }
+        a();
+        int i10 = this.f40355e;
+        if (i10 == -1) {
+            this.f40356i.put(this.f40354d, obj);
+            return null;
+        }
+        y0 y0Var = this.f40356i;
+        Object m10 = y0.m(y0Var, i10);
+        y0.q(y0Var, this.f40355e, obj);
+        return m10;
     }
 }

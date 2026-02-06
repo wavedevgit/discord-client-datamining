@@ -20,13 +20,13 @@ public final class DescriptorRendererModifier {
     public static final Companion Companion;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final /* synthetic */ DescriptorRendererModifier[] f34014e;
+    private static final /* synthetic */ DescriptorRendererModifier[] f34034e;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f34015i;
+    private static final /* synthetic */ EnumEntries f34035i;
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f34016d;
+    private final boolean f34036d;
     public static final DescriptorRendererModifier VISIBILITY = new DescriptorRendererModifier("VISIBILITY", 0, true);
     public static final DescriptorRendererModifier MODALITY = new DescriptorRendererModifier("MODALITY", 1, true);
     public static final DescriptorRendererModifier OVERRIDE = new DescriptorRendererModifier("OVERRIDE", 2, true);
@@ -54,13 +54,13 @@ public final class DescriptorRendererModifier {
 
     static {
         DescriptorRendererModifier[] a10 = a();
-        f34014e = a10;
-        f34015i = vr.a.a(a10);
+        f34034e = a10;
+        f34035i = xr.a.a(a10);
         Companion = new Companion(null);
         DescriptorRendererModifier[] values = values();
         ArrayList arrayList = new ArrayList();
         for (DescriptorRendererModifier descriptorRendererModifier : values) {
-            if (descriptorRendererModifier.f34016d) {
+            if (descriptorRendererModifier.f34036d) {
                 arrayList.add(descriptorRendererModifier);
             }
         }
@@ -69,7 +69,7 @@ public final class DescriptorRendererModifier {
     }
 
     private DescriptorRendererModifier(String str, int i10, boolean z10) {
-        this.f34016d = z10;
+        this.f34036d = z10;
     }
 
     private static final /* synthetic */ DescriptorRendererModifier[] a() {
@@ -81,6 +81,6 @@ public final class DescriptorRendererModifier {
     }
 
     public static DescriptorRendererModifier[] values() {
-        return (DescriptorRendererModifier[]) f34014e.clone();
+        return (DescriptorRendererModifier[]) f34034e.clone();
     }
 }

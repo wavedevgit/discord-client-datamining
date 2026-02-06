@@ -8,41 +8,41 @@ import x.i1;
 public interface i1 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final i1 f53381a = new i1() { // from class: x.h1
+    public static final i1 f54200a = new i1() { // from class: x.h1
         @Override // x.i1
         public final i1.c e(i1.b bVar) {
             i1.c cVar;
-            cVar = i1.c.f53386d;
+            cVar = i1.c.f54205d;
             return cVar;
         }
     };
 
     /* renamed from: b  reason: collision with root package name */
-    public static final i1 f53382b = new h0.b(d());
+    public static final i1 f54201b = new h0.b(d());
 
     /* renamed from: c  reason: collision with root package name */
-    public static final i1 f53383c = new a0.h0(d());
+    public static final i1 f54202c = new a0.h0(d());
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final i1 f53384a;
+        private final i1 f54203a;
 
         /* renamed from: b  reason: collision with root package name */
-        private long f53385b;
+        private long f54204b;
 
         public a(i1 i1Var) {
-            this.f53384a = i1Var;
-            this.f53385b = i1Var.b();
+            this.f54203a = i1Var;
+            this.f54204b = i1Var.b();
         }
 
         public i1 a() {
-            i1 i1Var = this.f53384a;
+            i1 i1Var = this.f54203a;
             if (i1Var instanceof h2) {
-                return ((h2) i1Var).c(this.f53385b);
+                return ((h2) i1Var).c(this.f54204b);
             }
-            return new r2(this.f53385b, this.f53384a);
+            return new r2(this.f54204b, this.f54203a);
         }
     }
 
@@ -59,25 +59,25 @@ public interface i1 {
     public static final class c {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final c f53386d = new c(false, 0);
+        public static final c f54205d = new c(false, 0);
 
         /* renamed from: e  reason: collision with root package name */
-        public static final c f53387e = new c(true);
+        public static final c f54206e = new c(true);
 
         /* renamed from: f  reason: collision with root package name */
-        public static final c f53388f = new c(true, 100);
+        public static final c f54207f = new c(true, 100);
 
         /* renamed from: g  reason: collision with root package name */
-        public static c f53389g = new c(false, 0, true);
+        public static c f54208g = new c(false, 0, true);
 
         /* renamed from: a  reason: collision with root package name */
-        private final long f53390a;
+        private final long f54209a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final boolean f53391b;
+        private final boolean f54210b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final boolean f53392c;
+        private final boolean f54211c;
 
         private c(boolean z10) {
             this(z10, a());
@@ -88,15 +88,15 @@ public interface i1 {
         }
 
         public long b() {
-            return this.f53390a;
+            return this.f54209a;
         }
 
         public boolean c() {
-            return this.f53392c;
+            return this.f54211c;
         }
 
         public boolean d() {
-            return this.f53391b;
+            return this.f54210b;
         }
 
         private c(boolean z10, long j10) {
@@ -104,12 +104,12 @@ public interface i1 {
         }
 
         private c(boolean z10, long j10, boolean z11) {
-            this.f53391b = z10;
-            this.f53390a = j10;
+            this.f54210b = z10;
+            this.f54209a = j10;
             if (z11) {
                 b2.e.b(!z10, "shouldRetry must be false when completeWithoutFailure is set to true");
             }
-            this.f53392c = z11;
+            this.f54211c = z11;
         }
     }
 

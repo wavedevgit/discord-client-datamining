@@ -2,8 +2,8 @@ package e6;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public interface b {
 
-    /* renamed from: c  reason: collision with root package name */
-    public static final b f21438c = new a();
+    /* renamed from: b  reason: collision with root package name */
+    public static final b f21371b = new a();
 
     void g();
 

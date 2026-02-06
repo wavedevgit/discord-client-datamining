@@ -7,30 +7,30 @@ import kotlin.jvm.internal.markers.KMappedMarker;
 public final class l0 implements Iterator, KMappedMarker {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Iterator f32037d;
+    private final Iterator f32057d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f32038e;
+    private int f32058e;
 
     public l0(Iterator iterator) {
         Intrinsics.checkNotNullParameter(iterator, "iterator");
-        this.f32037d = iterator;
+        this.f32057d = iterator;
     }
 
     @Override // java.util.Iterator
     /* renamed from: a */
     public final IndexedValue next() {
-        int i10 = this.f32038e;
-        this.f32038e = i10 + 1;
+        int i10 = this.f32058e;
+        this.f32058e = i10 + 1;
         if (i10 < 0) {
             t.v();
         }
-        return new IndexedValue(i10, this.f32037d.next());
+        return new IndexedValue(i10, this.f32057d.next());
     }
 
     @Override // java.util.Iterator
     public final boolean hasNext() {
-        return this.f32037d.hasNext();
+        return this.f32057d.hasNext();
     }
 
     @Override // java.util.Iterator

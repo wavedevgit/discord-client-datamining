@@ -668,7 +668,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var10 = var10.GLOBAL_ENV;
             var10 = var10.RELEASE_CHANNEL;
             var14 = var11.parseInt;
-            var13 = '5126';
+            var13 = '5129';
             var10 = 10;
             var10 = var14.bind(var0)(var13, var10);
             var13 = var11.isNaN;

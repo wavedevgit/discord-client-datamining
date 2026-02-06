@@ -40,7 +40,7 @@ public final class NextStep_GovernmentId_AutoClassificationPageJsonAdapter exten
     @NotNull
     public NextStep.GovernmentId.AutoClassificationPage fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         String str = null;
         String str2 = null;
         String str3 = null;
@@ -51,10 +51,10 @@ public final class NextStep_GovernmentId_AutoClassificationPageJsonAdapter exten
         String str8 = null;
         String str9 = null;
         while (reader.hasNext()) {
-            switch (reader.W(this.options)) {
+            switch (reader.J(this.options)) {
                 case -1:
                     reader.E0();
-                    reader.P();
+                    reader.S();
                     break;
                 case 0:
                     str = (String) this.nullableStringAdapter.fromJson(reader);
@@ -85,7 +85,7 @@ public final class NextStep_GovernmentId_AutoClassificationPageJsonAdapter exten
                     break;
             }
         }
-        reader.z();
+        reader.D();
         return new NextStep.GovernmentId.AutoClassificationPage(str, str2, str3, str4, str5, str6, str7, str8, str9);
     }
 
@@ -94,25 +94,25 @@ public final class NextStep_GovernmentId_AutoClassificationPageJsonAdapter exten
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (autoClassificationPage != null) {
             writer.k();
-            writer.W("unableToClassifyDocumentTitle");
+            writer.J("unableToClassifyDocumentTitle");
             this.nullableStringAdapter.toJson(writer, autoClassificationPage.getUnableToClassifyDocumentTitle());
-            writer.W("unableToClassifyDocumentContinueButtonText");
+            writer.J("unableToClassifyDocumentContinueButtonText");
             this.nullableStringAdapter.toJson(writer, autoClassificationPage.getUnableToClassifyDocumentContinueButtonText());
-            writer.W("idClassRejectedTitle");
+            writer.J("idClassRejectedTitle");
             this.nullableStringAdapter.toJson(writer, autoClassificationPage.getIdClassRejectedTitle());
-            writer.W("idClassRejectedContinueButtonText");
+            writer.J("idClassRejectedContinueButtonText");
             this.nullableStringAdapter.toJson(writer, autoClassificationPage.getIdClassRejectedContinueButtonText());
-            writer.W("countryInputTitle");
+            writer.J("countryInputTitle");
             this.nullableStringAdapter.toJson(writer, autoClassificationPage.getCountryInputTitle());
-            writer.W("idClassInputTitle");
+            writer.J("idClassInputTitle");
             this.nullableStringAdapter.toJson(writer, autoClassificationPage.getIdClassInputTitle());
-            writer.W("manualClassificationTitle");
+            writer.J("manualClassificationTitle");
             this.nullableStringAdapter.toJson(writer, autoClassificationPage.getManualClassificationTitle());
-            writer.W("manualClassificationContinueButtonText");
+            writer.J("manualClassificationContinueButtonText");
             this.nullableStringAdapter.toJson(writer, autoClassificationPage.getManualClassificationContinueButtonText());
-            writer.W("autoClassificationCaptureTipText");
+            writer.J("autoClassificationCaptureTipText");
             this.nullableStringAdapter.toJson(writer, autoClassificationPage.getAutoClassificationCaptureTipText());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

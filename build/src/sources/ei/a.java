@@ -1,35 +1,40 @@
 package ei;
 
-import java.util.HashMap;
-import java.util.Map;
+import android.os.IBinder;
+import android.os.IInterface;
+import android.os.Parcel;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class a {
+public abstract class a implements IInterface {
 
-    /* renamed from: a  reason: collision with root package name */
-    private static final Map f21594a;
+    /* renamed from: c  reason: collision with root package name */
+    private final IBinder f21526c;
 
-    /* renamed from: b  reason: collision with root package name */
-    private static final Map f21595b;
+    /* renamed from: d  reason: collision with root package name */
+    private final String f21527d = "com.google.android.play.core.inappreview.protocol.IInAppReviewService";
 
-    static {
-        HashMap hashMap = new HashMap();
-        f21594a = hashMap;
-        HashMap hashMap2 = new HashMap();
-        f21595b = hashMap2;
-        hashMap.put(-1, "The Play Store app is either not installed or not the official version.");
-        hashMap.put(-2, "Call first requestReviewFlow to get the ReviewInfo.");
-        hashMap.put(-100, "Retry with an exponential backoff. Consider filing a bug if fails consistently.");
-        hashMap2.put(-1, "PLAY_STORE_NOT_FOUND");
-        hashMap2.put(-2, "INVALID_REQUEST");
-        hashMap2.put(-100, "INTERNAL_ERROR");
+    /* JADX INFO: Access modifiers changed from: protected */
+    public a(IBinder iBinder, String str) {
+        this.f21526c = iBinder;
     }
 
-    public static String a(int i10) {
-        Map map = f21594a;
-        Integer valueOf = Integer.valueOf(i10);
-        if (!map.containsKey(valueOf)) {
-            return "";
+    @Override // android.os.IInterface
+    public final IBinder asBinder() {
+        return this.f21526c;
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    public final Parcel e() {
+        Parcel obtain = Parcel.obtain();
+        obtain.writeInterfaceToken(this.f21527d);
+        return obtain;
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    public final void f(int i10, Parcel parcel) {
+        try {
+            this.f21526c.transact(2, parcel, null, 1);
+        } finally {
+            parcel.recycle();
         }
-        return ((String) map.get(valueOf)) + " (https://developer.android.com/reference/com/google/android/play/core/review/model/ReviewErrorCode.html#" + ((String) f21595b.get(valueOf)) + ")";
     }
 }

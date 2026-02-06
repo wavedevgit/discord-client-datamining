@@ -12,7 +12,7 @@ import java.util.Set;
 public final class IncorrectJpegMetadataQuirk implements y1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Set f2122a = new HashSet(Arrays.asList("A24"));
+    private static final Set f2451a = new HashSet(Arrays.asList("A24"));
 
     private boolean c(byte[] bArr) {
         byte b10;
@@ -41,7 +41,7 @@ public final class IncorrectJpegMetadataQuirk implements y1 {
     }
 
     private static boolean e() {
-        if ("Samsung".equalsIgnoreCase(Build.BRAND) && f2122a.contains(Build.DEVICE.toUpperCase(Locale.US))) {
+        if ("Samsung".equalsIgnoreCase(Build.BRAND) && f2451a.contains(Build.DEVICE.toUpperCase(Locale.US))) {
             return true;
         }
         return false;
@@ -54,13 +54,13 @@ public final class IncorrectJpegMetadataQuirk implements y1 {
 
     public byte[] f(n nVar) {
         int i10 = 0;
-        ByteBuffer f10 = nVar.d1()[0].f();
-        byte[] bArr = new byte[f10.capacity()];
-        f10.rewind();
-        f10.get(bArr);
+        ByteBuffer e10 = nVar.c1()[0].e();
+        byte[] bArr = new byte[e10.capacity()];
+        e10.rewind();
+        e10.get(bArr);
         if (!c(bArr) && (i10 = d(bArr)) == -1) {
             return bArr;
         }
-        return Arrays.copyOfRange(bArr, i10, f10.limit());
+        return Arrays.copyOfRange(bArr, i10, e10.limit());
     }
 }

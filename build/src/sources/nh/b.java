@@ -1,71 +1,50 @@
 package nh;
 
-import android.content.res.ColorStateList;
-import android.graphics.Color;
-import android.os.Build;
-import android.util.Log;
+import android.content.Context;
+import android.util.TypedValue;
+import android.view.View;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class b {
-
-    /* renamed from: a  reason: collision with root package name */
-    public static final boolean f41306a = true;
-
-    /* renamed from: b  reason: collision with root package name */
-    private static final int[] f41307b = {16842919};
-
-    /* renamed from: c  reason: collision with root package name */
-    private static final int[] f41308c = {16843623, 16842908};
-
-    /* renamed from: d  reason: collision with root package name */
-    private static final int[] f41309d = {16842908};
-
-    /* renamed from: e  reason: collision with root package name */
-    private static final int[] f41310e = {16843623};
-
-    /* renamed from: f  reason: collision with root package name */
-    private static final int[] f41311f = {16842913, 16842919};
-
-    /* renamed from: g  reason: collision with root package name */
-    private static final int[] f41312g = {16842913, 16843623, 16842908};
-
-    /* renamed from: h  reason: collision with root package name */
-    private static final int[] f41313h = {16842913, 16842908};
-
-    /* renamed from: i  reason: collision with root package name */
-    private static final int[] f41314i = {16842913, 16843623};
-
-    /* renamed from: j  reason: collision with root package name */
-    private static final int[] f41315j = {16842913};
-
-    /* renamed from: k  reason: collision with root package name */
-    private static final int[] f41316k = {16842910, 16842919};
-
-    /* renamed from: l  reason: collision with root package name */
-    static final String f41317l = b.class.getSimpleName();
-
-    public static ColorStateList a(ColorStateList colorStateList) {
-        if (colorStateList != null) {
-            if (Build.VERSION.SDK_INT <= 27 && Color.alpha(colorStateList.getDefaultColor()) == 0 && Color.alpha(colorStateList.getColorForState(f41316k, 0)) != 0) {
-                Log.w(f41317l, "Use a non-transparent color for the default color as it will be used to finish ripple animations.");
-            }
-            return colorStateList;
+    public static TypedValue a(Context context, int i10) {
+        TypedValue typedValue = new TypedValue();
+        if (context.getTheme().resolveAttribute(i10, typedValue, true)) {
+            return typedValue;
         }
-        return ColorStateList.valueOf(0);
+        return null;
     }
 
-    public static boolean b(int[] iArr) {
-        boolean z10 = false;
-        boolean z11 = false;
-        for (int i10 : iArr) {
-            if (i10 == 16842910) {
-                z10 = true;
-            } else if (i10 == 16842908 || i10 == 16842919 || i10 == 16843623) {
-                z11 = true;
+    public static boolean b(Context context, int i10, boolean z10) {
+        TypedValue a10 = a(context, i10);
+        if (a10 != null && a10.type == 18) {
+            if (a10.data != 0) {
+                return true;
             }
-        }
-        if (!z10 || !z11) {
             return false;
         }
-        return true;
+        return z10;
+    }
+
+    public static int c(Context context, int i10, int i11) {
+        TypedValue a10 = a(context, i10);
+        if (a10 != null && a10.type == 16) {
+            return a10.data;
+        }
+        return i11;
+    }
+
+    public static int d(Context context, int i10, String str) {
+        return e(context, i10, str).data;
+    }
+
+    public static TypedValue e(Context context, int i10, String str) {
+        TypedValue a10 = a(context, i10);
+        if (a10 != null) {
+            return a10;
+        }
+        throw new IllegalArgumentException(String.format("%1$s requires a value for the %2$s attribute to be set in your app theme. You can either set the attribute in your theme or update your theme to inherit from Theme.MaterialComponents (or a descendant).", str, context.getResources().getResourceName(i10)));
+    }
+
+    public static TypedValue f(View view, int i10) {
+        return e(view.getContext(), i10, view.getClass().getCanonicalName());
     }
 }

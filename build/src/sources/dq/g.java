@@ -1,49 +1,199 @@
 package dq;
 
 import android.content.Context;
-import android.view.View;
-import android.view.ViewGroup;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import com.google.android.material.imageview.ShapeableImageView;
-import kotlin.Unit;
-import kotlin.jvm.functions.Function0;
+import android.graphics.drawable.Drawable;
+import android.os.Parcel;
+import android.os.Parcelable;
+import com.withpersona.sdk2.inquiry.network.dto.ui.styling.AttributeStyles;
+import com.withpersona.sdk2.inquiry.network.dto.ui.styling.StepStyles;
+import com.withpersona.sdk2.inquiry.network.dto.ui.styling.StyleElements;
+import java.util.ArrayList;
+import java.util.List;
 import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class g {
-    public static final View b(e eVar, m5 uiComponentHelper) {
-        Intrinsics.checkNotNullParameter(eVar, "<this>");
-        Intrinsics.checkNotNullParameter(uiComponentHelper, "uiComponentHelper");
-        Context a10 = uiComponentHelper.a();
-        if (!eVar.a()) {
-            return null;
-        }
-        final ShapeableImageView shapeableImageView = new ShapeableImageView(a10);
-        shapeableImageView.setImageResource(bq.d.f7104b);
-        shapeableImageView.setAdjustViewBounds(true);
-        int dimension = (int) a10.getResources().getDimension(pp.k.f46164b);
-        shapeableImageView.setPadding(dimension, shapeableImageView.getPaddingTop(), dimension, shapeableImageView.getPaddingBottom());
-        uiComponentHelper.d(new Function0() { // from class: dq.f
-            @Override // kotlin.jvm.functions.Function0
-            public final Object invoke() {
-                Unit c10;
-                c10 = g.c(ShapeableImageView.this);
-                return c10;
+public final class g implements Parcelable {
+    @NotNull
+    public static final Parcelable.Creator<g> CREATOR = new a();
+
+    /* renamed from: d  reason: collision with root package name */
+    private final List f21101d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private final List f21102e;
+
+    /* renamed from: i  reason: collision with root package name */
+    private final StepStyles.UiStepStyle f21103i;
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class a implements Parcelable.Creator {
+        @Override // android.os.Parcelable.Creator
+        /* renamed from: a */
+        public final g createFromParcel(Parcel parcel) {
+            ArrayList arrayList;
+            Intrinsics.checkNotNullParameter(parcel, "parcel");
+            if (parcel.readInt() == 0) {
+                arrayList = null;
+            } else {
+                int readInt = parcel.readInt();
+                ArrayList arrayList2 = new ArrayList(readInt);
+                for (int i10 = 0; i10 != readInt; i10++) {
+                    arrayList2.add(parcel.readParcelable(g.class.getClassLoader()));
+                }
+                arrayList = arrayList2;
             }
-        });
-        return shapeableImageView;
+            int readInt2 = parcel.readInt();
+            ArrayList arrayList3 = new ArrayList(readInt2);
+            for (int i11 = 0; i11 != readInt2; i11++) {
+                arrayList3.add(parcel.readParcelable(g.class.getClassLoader()));
+            }
+            return new g(arrayList, arrayList3, (StepStyles.UiStepStyle) parcel.readParcelable(g.class.getClassLoader()));
+        }
+
+        @Override // android.os.Parcelable.Creator
+        /* renamed from: b */
+        public final g[] newArray(int i10) {
+            return new g[i10];
+        }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final Unit c(ShapeableImageView shapeableImageView) {
-        ViewGroup.LayoutParams layoutParams = shapeableImageView.getLayoutParams();
-        if (layoutParams != null) {
-            ConstraintLayout.LayoutParams layoutParams2 = (ConstraintLayout.LayoutParams) layoutParams;
-            layoutParams2.G = 1.0f;
-            ((ViewGroup.MarginLayoutParams) layoutParams2).width = -2;
-            ((ViewGroup.MarginLayoutParams) layoutParams2).height = -2;
-            shapeableImageView.setLayoutParams(layoutParams2);
-            return Unit.f31988a;
+    public g(List list, List componentConfigs, StepStyles.UiStepStyle uiStepStyle) {
+        Intrinsics.checkNotNullParameter(componentConfigs, "componentConfigs");
+        this.f21101d = list;
+        this.f21102e = componentConfigs;
+        this.f21103i = uiStepStyle;
+    }
+
+    public static /* synthetic */ g c(g gVar, List list, List list2, StepStyles.UiStepStyle uiStepStyle, int i10, Object obj) {
+        if ((i10 & 1) != 0) {
+            list = gVar.f21101d;
         }
-        throw new NullPointerException("null cannot be cast to non-null type androidx.constraintlayout.widget.ConstraintLayout.LayoutParams");
+        if ((i10 & 2) != 0) {
+            list2 = gVar.f21102e;
+        }
+        if ((i10 & 4) != 0) {
+            uiStepStyle = gVar.f21103i;
+        }
+        return gVar.b(list, list2, uiStepStyle);
+    }
+
+    public final List P() {
+        return this.f21102e;
+    }
+
+    public final Drawable a(Context context) {
+        Intrinsics.checkNotNullParameter(context, "context");
+        StepStyles.UiStepStyle uiStepStyle = this.f21103i;
+        if (uiStepStyle != null) {
+            return mq.c.a(uiStepStyle, context);
+        }
+        return null;
+    }
+
+    public final g b(List list, List componentConfigs, StepStyles.UiStepStyle uiStepStyle) {
+        Intrinsics.checkNotNullParameter(componentConfigs, "componentConfigs");
+        return new g(list, componentConfigs, uiStepStyle);
+    }
+
+    public final Integer d() {
+        StepStyles.StepBackgroundColorStyle backgroundColor;
+        StyleElements.SimpleElementColor base;
+        StyleElements.SimpleElementColorValue base2;
+        StepStyles.UiStepStyle uiStepStyle = this.f21103i;
+        if (uiStepStyle != null && (backgroundColor = uiStepStyle.getBackgroundColor()) != null && (base = backgroundColor.getBase()) != null && (base2 = base.getBase()) != null) {
+            return base2.getValue();
+        }
+        return null;
+    }
+
+    @Override // android.os.Parcelable
+    public final int describeContents() {
+        return 0;
+    }
+
+    public final Integer e() {
+        AttributeStyles.HeaderButtonColorStyle headerButtonColor;
+        StyleElements.SimpleElementColor headerButton;
+        StyleElements.SimpleElementColorValue base;
+        StepStyles.UiStepStyle uiStepStyle = this.f21103i;
+        if (uiStepStyle != null && (headerButtonColor = uiStepStyle.getHeaderButtonColor()) != null && (headerButton = headerButtonColor.getHeaderButton()) != null && (base = headerButton.getBase()) != null) {
+            return base.getValue();
+        }
+        return null;
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof g)) {
+            return false;
+        }
+        g gVar = (g) obj;
+        if (Intrinsics.areEqual(this.f21101d, gVar.f21101d) && Intrinsics.areEqual(this.f21102e, gVar.f21102e) && Intrinsics.areEqual(this.f21103i, gVar.f21103i)) {
+            return true;
+        }
+        return false;
+    }
+
+    public final StyleElements.PositionType f() {
+        StepStyles.UiStepStyle uiStepStyle = this.f21103i;
+        if (uiStepStyle != null) {
+            return uiStepStyle.getPageLevelVerticalAlignment();
+        }
+        return null;
+    }
+
+    public final List getComponents() {
+        return this.f21101d;
+    }
+
+    public final StepStyles.UiStepStyle getStyles() {
+        return this.f21103i;
+    }
+
+    public int hashCode() {
+        int hashCode;
+        List list = this.f21101d;
+        int i10 = 0;
+        if (list == null) {
+            hashCode = 0;
+        } else {
+            hashCode = list.hashCode();
+        }
+        int hashCode2 = ((hashCode * 31) + this.f21102e.hashCode()) * 31;
+        StepStyles.UiStepStyle uiStepStyle = this.f21103i;
+        if (uiStepStyle != null) {
+            i10 = uiStepStyle.hashCode();
+        }
+        return hashCode2 + i10;
+    }
+
+    public String toString() {
+        List list = this.f21101d;
+        List list2 = this.f21102e;
+        StepStyles.UiStepStyle uiStepStyle = this.f21103i;
+        return "UiComponentScreen(components=" + list + ", componentConfigs=" + list2 + ", styles=" + uiStepStyle + ")";
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(Parcel dest, int i10) {
+        Intrinsics.checkNotNullParameter(dest, "dest");
+        List<Parcelable> list = this.f21101d;
+        if (list == null) {
+            dest.writeInt(0);
+        } else {
+            dest.writeInt(1);
+            dest.writeInt(list.size());
+            for (Parcelable parcelable : list) {
+                dest.writeParcelable(parcelable, i10);
+            }
+        }
+        List<Parcelable> list2 = this.f21102e;
+        dest.writeInt(list2.size());
+        for (Parcelable parcelable2 : list2) {
+            dest.writeParcelable(parcelable2, i10);
+        }
+        dest.writeParcelable(this.f21103i, i10);
     }
 }

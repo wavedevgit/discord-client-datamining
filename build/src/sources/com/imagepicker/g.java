@@ -7,65 +7,65 @@ import com.facebook.react.uimanager.ViewProps;
 public class g {
 
     /* renamed from: a  reason: collision with root package name */
-    int f17138a;
+    int f17118a;
 
     /* renamed from: b  reason: collision with root package name */
-    Boolean f17139b;
+    Boolean f17119b;
 
     /* renamed from: c  reason: collision with root package name */
-    Boolean f17140c;
+    Boolean f17120c;
 
     /* renamed from: d  reason: collision with root package name */
-    int f17141d;
+    int f17121d;
 
     /* renamed from: e  reason: collision with root package name */
-    int f17142e;
+    int f17122e;
 
     /* renamed from: f  reason: collision with root package name */
-    int f17143f;
+    int f17123f;
 
     /* renamed from: g  reason: collision with root package name */
-    int f17144g;
+    int f17124g;
 
     /* renamed from: h  reason: collision with root package name */
-    Boolean f17145h;
+    Boolean f17125h;
 
     /* renamed from: i  reason: collision with root package name */
-    int f17146i;
+    int f17126i;
 
     /* renamed from: j  reason: collision with root package name */
-    Boolean f17147j;
+    Boolean f17127j;
 
     /* renamed from: k  reason: collision with root package name */
-    Boolean f17148k;
+    Boolean f17128k;
 
     /* renamed from: l  reason: collision with root package name */
-    String f17149l;
+    String f17129l;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public g(ReadableMap readableMap) {
-        this.f17141d = 1;
+        this.f17121d = 1;
         Boolean bool = Boolean.FALSE;
-        this.f17147j = bool;
-        this.f17148k = bool;
-        this.f17149l = readableMap.getString("mediaType");
-        this.f17138a = readableMap.getInt("selectionLimit");
-        this.f17139b = Boolean.valueOf(readableMap.getBoolean("includeBase64"));
-        this.f17140c = Boolean.valueOf(readableMap.getBoolean("includeExtra"));
+        this.f17127j = bool;
+        this.f17128k = bool;
+        this.f17129l = readableMap.getString("mediaType");
+        this.f17118a = readableMap.getInt("selectionLimit");
+        this.f17119b = Boolean.valueOf(readableMap.getBoolean("includeBase64"));
+        this.f17120c = Boolean.valueOf(readableMap.getBoolean("includeExtra"));
         String string = readableMap.getString("videoQuality");
         if (!TextUtils.isEmpty(string) && !string.toLowerCase().equals("high")) {
-            this.f17141d = 0;
+            this.f17121d = 0;
         }
         if (readableMap.getString("cameraType").equals("front")) {
-            this.f17147j = Boolean.TRUE;
+            this.f17127j = Boolean.TRUE;
         }
         if (readableMap.hasKey("forceGetContent") && readableMap.getBoolean("forceGetContent")) {
-            this.f17148k = Boolean.TRUE;
+            this.f17128k = Boolean.TRUE;
         }
-        this.f17142e = (int) (readableMap.getDouble("quality") * 100.0d);
-        this.f17144g = readableMap.getInt(ViewProps.MAX_HEIGHT);
-        this.f17143f = readableMap.getInt(ViewProps.MAX_WIDTH);
-        this.f17145h = Boolean.valueOf(readableMap.getBoolean("saveToPhotos"));
-        this.f17146i = readableMap.getInt("durationLimit");
+        this.f17122e = (int) (readableMap.getDouble("quality") * 100.0d);
+        this.f17124g = readableMap.getInt(ViewProps.MAX_HEIGHT);
+        this.f17123f = readableMap.getInt(ViewProps.MAX_WIDTH);
+        this.f17125h = Boolean.valueOf(readableMap.getBoolean("saveToPhotos"));
+        this.f17126i = readableMap.getInt("durationLimit");
     }
 }

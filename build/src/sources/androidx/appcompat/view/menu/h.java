@@ -15,7 +15,7 @@ import android.widget.PopupWindow;
 public abstract class h implements k.e, j, AdapterView.OnItemClickListener {
 
     /* renamed from: d  reason: collision with root package name */
-    private Rect f1471d;
+    private Rect f1800d;
 
     /* JADX INFO: Access modifiers changed from: protected */
     public static int l(ListAdapter listAdapter, ViewGroup viewGroup, Context context, int i10) {
@@ -88,20 +88,20 @@ public abstract class h implements k.e, j, AdapterView.OnItemClickListener {
     }
 
     public Rect k() {
-        return this.f1471d;
+        return this.f1800d;
     }
 
     public abstract void m(View view);
 
     public void o(Rect rect) {
-        this.f1471d = rect;
+        this.f1800d = rect;
     }
 
     @Override // android.widget.AdapterView.OnItemClickListener
     public void onItemClick(AdapterView adapterView, View view, int i10, long j10) {
         int i11;
         ListAdapter listAdapter = (ListAdapter) adapterView.getAdapter();
-        e eVar = w(listAdapter).f1408d;
+        e eVar = w(listAdapter).f1737d;
         MenuItem menuItem = (MenuItem) listAdapter.getItem(i10);
         if (j()) {
             i11 = 0;

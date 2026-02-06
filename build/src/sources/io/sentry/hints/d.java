@@ -8,31 +8,31 @@ import java.util.concurrent.TimeUnit;
 public abstract class d implements f, i {
 
     /* renamed from: a  reason: collision with root package name */
-    private final CountDownLatch f29026a = new CountDownLatch(1);
+    private final CountDownLatch f28170a = new CountDownLatch(1);
 
     /* renamed from: b  reason: collision with root package name */
-    private final long f29027b;
+    private final long f28171b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ILogger f29028c;
+    private final ILogger f28172c;
 
     public d(long j10, ILogger iLogger) {
-        this.f29027b = j10;
-        this.f29028c = iLogger;
+        this.f28171b = j10;
+        this.f28172c = iLogger;
     }
 
     @Override // io.sentry.hints.f
     public void d() {
-        this.f29026a.countDown();
+        this.f28170a.countDown();
     }
 
     @Override // io.sentry.hints.i
     public boolean g() {
         try {
-            return this.f29026a.await(this.f29027b, TimeUnit.MILLISECONDS);
+            return this.f28170a.await(this.f28171b, TimeUnit.MILLISECONDS);
         } catch (InterruptedException e10) {
             Thread.currentThread().interrupt();
-            this.f29028c.b(SentryLevel.ERROR, "Exception while awaiting for flush in BlockingFlushHint", e10);
+            this.f28172c.b(SentryLevel.ERROR, "Exception while awaiting for flush in BlockingFlushHint", e10);
             return false;
         }
     }

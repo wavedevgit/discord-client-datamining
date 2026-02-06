@@ -8,72 +8,72 @@ public final class e {
     @NotNull
 
     /* renamed from: d  reason: collision with root package name */
-    public static final b f34929d = new b(null);
+    public static final b f34949d = new b(null);
 
     /* renamed from: e  reason: collision with root package name */
-    private static final e f34930e;
+    private static final e f34950e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final e f34931f;
+    private static final e f34951f;
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f34932a;
+    private final boolean f34952a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final a f34933b;
+    private final a f34953b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final c f34934c;
+    private final c f34954c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
         @NotNull
 
         /* renamed from: j  reason: collision with root package name */
-        public static final C0450a f34935j = new C0450a(null);
+        public static final C0465a f34955j = new C0465a(null);
 
         /* renamed from: k  reason: collision with root package name */
-        private static final a f34936k = new a(Integer.MAX_VALUE, Integer.MAX_VALUE, "  ", "", "", "");
+        private static final a f34956k = new a(Integer.MAX_VALUE, Integer.MAX_VALUE, "  ", "", "", "");
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f34937a;
+        private final int f34957a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f34938b;
+        private final int f34958b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final String f34939c;
+        private final String f34959c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final String f34940d;
+        private final String f34960d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final String f34941e;
+        private final String f34961e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final String f34942f;
+        private final String f34962f;
 
         /* renamed from: g  reason: collision with root package name */
-        private final boolean f34943g;
+        private final boolean f34963g;
 
         /* renamed from: h  reason: collision with root package name */
-        private final boolean f34944h;
+        private final boolean f34964h;
 
         /* renamed from: i  reason: collision with root package name */
-        private final boolean f34945i;
+        private final boolean f34965i;
 
         /* renamed from: kotlin.text.e$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-        public static final class C0450a {
-            public /* synthetic */ C0450a(DefaultConstructorMarker defaultConstructorMarker) {
+        public static final class C0465a {
+            public /* synthetic */ C0465a(DefaultConstructorMarker defaultConstructorMarker) {
                 this();
             }
 
             public final a a() {
-                return a.f34936k;
+                return a.f34956k;
             }
 
-            private C0450a() {
+            private C0465a() {
             }
         }
 
@@ -96,12 +96,12 @@ public final class e {
                 java.lang.String r0 = "byteSuffix"
                 kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r9, r0)
                 r3.<init>()
-                r3.f34937a = r4
-                r3.f34938b = r5
-                r3.f34939c = r6
-                r3.f34940d = r7
-                r3.f34941e = r8
-                r3.f34942f = r9
+                r3.f34957a = r4
+                r3.f34958b = r5
+                r3.f34959c = r6
+                r3.f34960d = r7
+                r3.f34961e = r8
+                r3.f34962f = r9
                 r0 = 0
                 r1 = 1
                 r2 = 2147483647(0x7fffffff, float:NaN)
@@ -112,7 +112,7 @@ public final class e {
             L2e:
                 r4 = r0
             L2f:
-                r3.f34943g = r4
+                r3.f34963g = r4
                 int r4 = r8.length()
                 if (r4 != 0) goto L45
                 int r4 = r9.length()
@@ -124,7 +124,7 @@ public final class e {
             L45:
                 r4 = r0
             L46:
-                r3.f34944h = r4
+                r3.f34964h = r4
                 boolean r4 = kotlin.text.f.a(r6)
                 if (r4 != 0) goto L60
                 boolean r4 = kotlin.text.f.a(r7)
@@ -136,7 +136,7 @@ public final class e {
             L60:
                 r0 = r1
             L61:
-                r3.f34945i = r0
+                r3.f34965i = r0
                 return
             */
             throw new UnsupportedOperationException("Method not decompiled: kotlin.text.e.a.<init>(int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String):void");
@@ -147,66 +147,66 @@ public final class e {
             Intrinsics.checkNotNullParameter(indent, "indent");
             sb2.append(indent);
             sb2.append("bytesPerLine = ");
-            sb2.append(this.f34937a);
+            sb2.append(this.f34957a);
             sb2.append(",");
             sb2.append('\n');
             sb2.append(indent);
             sb2.append("bytesPerGroup = ");
-            sb2.append(this.f34938b);
+            sb2.append(this.f34958b);
             sb2.append(",");
             sb2.append('\n');
             sb2.append(indent);
             sb2.append("groupSeparator = \"");
-            sb2.append(this.f34939c);
+            sb2.append(this.f34959c);
             sb2.append("\",");
             sb2.append('\n');
             sb2.append(indent);
             sb2.append("byteSeparator = \"");
-            sb2.append(this.f34940d);
+            sb2.append(this.f34960d);
             sb2.append("\",");
             sb2.append('\n');
             sb2.append(indent);
             sb2.append("bytePrefix = \"");
-            sb2.append(this.f34941e);
+            sb2.append(this.f34961e);
             sb2.append("\",");
             sb2.append('\n');
             sb2.append(indent);
             sb2.append("byteSuffix = \"");
-            sb2.append(this.f34942f);
+            sb2.append(this.f34962f);
             sb2.append("\"");
             return sb2;
         }
 
         public final String c() {
-            return this.f34941e;
+            return this.f34961e;
         }
 
         public final String d() {
-            return this.f34940d;
+            return this.f34960d;
         }
 
         public final String e() {
-            return this.f34942f;
+            return this.f34962f;
         }
 
         public final int f() {
-            return this.f34938b;
+            return this.f34958b;
         }
 
         public final int g() {
-            return this.f34937a;
+            return this.f34957a;
         }
 
         public final String h() {
-            return this.f34939c;
+            return this.f34959c;
         }
 
         public final boolean i() {
-            return this.f34943g;
+            return this.f34963g;
         }
 
         public final boolean j() {
-            return this.f34944h;
+            return this.f34964h;
         }
 
         public String toString() {
@@ -226,7 +226,7 @@ public final class e {
         }
 
         public final e a() {
-            return e.f34930e;
+            return e.f34950e;
         }
 
         private b() {
@@ -238,31 +238,31 @@ public final class e {
         @NotNull
 
         /* renamed from: h  reason: collision with root package name */
-        public static final a f34946h = new a(null);
+        public static final a f34966h = new a(null);
 
         /* renamed from: i  reason: collision with root package name */
-        private static final c f34947i = new c("", "", false, 1);
+        private static final c f34967i = new c("", "", false, 1);
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f34948a;
+        private final String f34968a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final String f34949b;
+        private final String f34969b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final boolean f34950c;
+        private final boolean f34970c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final int f34951d;
+        private final int f34971d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final boolean f34952e;
+        private final boolean f34972e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final boolean f34953f;
+        private final boolean f34973f;
 
         /* renamed from: g  reason: collision with root package name */
-        private final boolean f34954g;
+        private final boolean f34974g;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         public static final class a {
@@ -271,7 +271,7 @@ public final class e {
             }
 
             public final c a() {
-                return c.f34947i;
+                return c.f34967i;
             }
 
             private a() {
@@ -293,10 +293,10 @@ public final class e {
                 java.lang.String r0 = "suffix"
                 kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r4, r0)
                 r2.<init>()
-                r2.f34948a = r3
-                r2.f34949b = r4
-                r2.f34950c = r5
-                r2.f34951d = r6
+                r2.f34968a = r3
+                r2.f34969b = r4
+                r2.f34970c = r5
+                r2.f34971d = r6
                 int r5 = r3.length()
                 r0 = 0
                 r1 = 1
@@ -308,7 +308,7 @@ public final class e {
             L25:
                 r5 = r0
             L26:
-                r2.f34952e = r5
+                r2.f34972e = r5
                 if (r5 == 0) goto L2e
                 if (r6 != r1) goto L2e
                 r5 = r1
@@ -316,7 +316,7 @@ public final class e {
             L2e:
                 r5 = r0
             L2f:
-                r2.f34953f = r5
+                r2.f34973f = r5
                 boolean r3 = kotlin.text.f.a(r3)
                 if (r3 != 0) goto L3d
                 boolean r3 = kotlin.text.f.a(r4)
@@ -324,7 +324,7 @@ public final class e {
             L3d:
                 r0 = r1
             L3e:
-                r2.f34954g = r0
+                r2.f34974g = r0
                 return
             */
             throw new UnsupportedOperationException("Method not decompiled: kotlin.text.e.c.<init>(java.lang.String, java.lang.String, boolean, int):void");
@@ -335,39 +335,39 @@ public final class e {
             Intrinsics.checkNotNullParameter(indent, "indent");
             sb2.append(indent);
             sb2.append("prefix = \"");
-            sb2.append(this.f34948a);
+            sb2.append(this.f34968a);
             sb2.append("\",");
             sb2.append('\n');
             sb2.append(indent);
             sb2.append("suffix = \"");
-            sb2.append(this.f34949b);
+            sb2.append(this.f34969b);
             sb2.append("\",");
             sb2.append('\n');
             sb2.append(indent);
             sb2.append("removeLeadingZeros = ");
-            sb2.append(this.f34950c);
+            sb2.append(this.f34970c);
             sb2.append(',');
             sb2.append('\n');
             sb2.append(indent);
             sb2.append("minLength = ");
-            sb2.append(this.f34951d);
+            sb2.append(this.f34971d);
             return sb2;
         }
 
         public final boolean c() {
-            return this.f34954g;
+            return this.f34974g;
         }
 
         public final String d() {
-            return this.f34948a;
+            return this.f34968a;
         }
 
         public final String e() {
-            return this.f34949b;
+            return this.f34969b;
         }
 
         public final boolean f() {
-            return this.f34952e;
+            return this.f34972e;
         }
 
         public String toString() {
@@ -381,31 +381,31 @@ public final class e {
     }
 
     static {
-        a.C0450a c0450a = a.f34935j;
-        a a10 = c0450a.a();
-        c.a aVar = c.f34946h;
-        f34930e = new e(false, a10, aVar.a());
-        f34931f = new e(true, c0450a.a(), aVar.a());
+        a.C0465a c0465a = a.f34955j;
+        a a10 = c0465a.a();
+        c.a aVar = c.f34966h;
+        f34950e = new e(false, a10, aVar.a());
+        f34951f = new e(true, c0465a.a(), aVar.a());
     }
 
     public e(boolean z10, a bytes, c number) {
         Intrinsics.checkNotNullParameter(bytes, "bytes");
         Intrinsics.checkNotNullParameter(number, "number");
-        this.f34932a = z10;
-        this.f34933b = bytes;
-        this.f34934c = number;
+        this.f34952a = z10;
+        this.f34953b = bytes;
+        this.f34954c = number;
     }
 
     public final a b() {
-        return this.f34933b;
+        return this.f34953b;
     }
 
     public final c c() {
-        return this.f34934c;
+        return this.f34954c;
     }
 
     public final boolean d() {
-        return this.f34932a;
+        return this.f34952a;
     }
 
     public String toString() {
@@ -413,17 +413,17 @@ public final class e {
         sb2.append("HexFormat(");
         sb2.append('\n');
         sb2.append("    upperCase = ");
-        sb2.append(this.f34932a);
+        sb2.append(this.f34952a);
         sb2.append(",");
         sb2.append('\n');
         sb2.append("    bytes = BytesHexFormat(");
         sb2.append('\n');
-        this.f34933b.b(sb2, "        ").append('\n');
+        this.f34953b.b(sb2, "        ").append('\n');
         sb2.append("    ),");
         sb2.append('\n');
         sb2.append("    number = NumberHexFormat(");
         sb2.append('\n');
-        this.f34934c.b(sb2, "        ").append('\n');
+        this.f34954c.b(sb2, "        ").append('\n');
         sb2.append("    )");
         sb2.append('\n');
         sb2.append(")");

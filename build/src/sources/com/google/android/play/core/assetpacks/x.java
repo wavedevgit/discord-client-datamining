@@ -17,46 +17,46 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public final class x implements t4 {
 
     /* renamed from: g  reason: collision with root package name */
-    private static final wh.k0 f16081g = new wh.k0("AssetPackServiceImpl");
+    private static final xh.k0 f16061g = new xh.k0("AssetPackServiceImpl");
 
     /* renamed from: h  reason: collision with root package name */
-    private static final Intent f16082h = new Intent("com.google.android.play.core.assetmoduleservice.BIND_ASSET_MODULE_SERVICE").setPackage("com.android.vending");
+    private static final Intent f16062h = new Intent("com.google.android.play.core.assetmoduleservice.BIND_ASSET_MODULE_SERVICE").setPackage("com.android.vending");
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f16083a;
+    private final String f16063a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final b2 f16084b;
+    private final b2 f16064b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final o3 f16085c;
+    private final o3 f16065c;
 
     /* renamed from: d  reason: collision with root package name */
-    private wh.v0 f16086d;
+    private xh.v0 f16066d;
 
     /* renamed from: e  reason: collision with root package name */
-    private wh.v0 f16087e;
+    private xh.v0 f16067e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final AtomicBoolean f16088f = new AtomicBoolean();
+    private final AtomicBoolean f16068f = new AtomicBoolean();
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    /* JADX WARN: Type inference failed for: r5v0, types: [vh.a] */
-    /* JADX WARN: Type inference failed for: r7v0, types: [vh.a] */
+    /* JADX WARN: Type inference failed for: r5v0, types: [wh.a] */
+    /* JADX WARN: Type inference failed for: r7v0, types: [wh.a] */
     public x(Context context, b2 b2Var, o3 o3Var) {
-        this.f16083a = context.getPackageName();
-        this.f16084b = b2Var;
-        this.f16085c = o3Var;
-        if (wh.j.b(context)) {
-            Context a10 = wh.h.a(context);
-            wh.k0 k0Var = f16081g;
-            Intent intent = f16082h;
-            this.f16086d = new wh.v0(a10, k0Var, "AssetPackService", intent, new Object() { // from class: vh.a
+        this.f16063a = context.getPackageName();
+        this.f16064b = b2Var;
+        this.f16065c = o3Var;
+        if (xh.j.b(context)) {
+            Context a10 = xh.h.a(context);
+            xh.k0 k0Var = f16061g;
+            Intent intent = f16062h;
+            this.f16066d = new xh.v0(a10, k0Var, "AssetPackService", intent, new Object() { // from class: wh.a
             }, null);
-            this.f16087e = new wh.v0(wh.h.a(context), k0Var, "AssetPackService-keepAlive", intent, new Object() { // from class: vh.a
+            this.f16067e = new xh.v0(xh.h.a(context), k0Var, "AssetPackService-keepAlive", intent, new Object() { // from class: wh.a
             }, null);
         }
-        f16081g.a("AssetPackService initiated.", new Object[0]);
+        f16061g.a("AssetPackService initiated.", new Object[0]);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -89,16 +89,16 @@ public final class x implements t4 {
     }
 
     private static Task j() {
-        f16081g.b("onError(%d)", -11);
-        return xg.m.e(new a(-11));
+        f16061g.b("onError(%d)", -11);
+        return yg.m.e(new a(-11));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void k(int i10, String str, int i11) {
-        if (this.f16086d != null) {
-            f16081g.d("notifyModuleCompleted", new Object[0]);
-            xg.k kVar = new xg.k();
-            this.f16086d.t(new k(this, kVar, i10, str, kVar, i11), kVar);
+        if (this.f16066d != null) {
+            f16061g.d("notifyModuleCompleted", new Object[0]);
+            yg.k kVar = new yg.k();
+            this.f16066d.t(new k(this, kVar, i10, str, kVar, i11), kVar);
             return;
         }
         throw new w1("The Play Store app is not installed or is an unofficial version.", i10);
@@ -143,9 +143,9 @@ public final class x implements t4 {
         ArrayList arrayList = new ArrayList();
         Iterator it = list.iterator();
         while (it.hasNext()) {
-            AssetPackState assetPackState = (AssetPackState) d.a((Bundle) it.next(), xVar.f16084b, xVar.f16085c).c().values().iterator().next();
+            AssetPackState assetPackState = (AssetPackState) d.a((Bundle) it.next(), xVar.f16064b, xVar.f16065c).c().values().iterator().next();
             if (assetPackState == null) {
-                f16081g.b("onGetSessionStates: Bundle contained no pack.", new Object[0]);
+                f16061g.b("onGetSessionStates: Bundle contained no pack.", new Object[0]);
             }
             if (m0.a(assetPackState.i())) {
                 arrayList.add(assetPackState.h());
@@ -156,10 +156,10 @@ public final class x implements t4 {
 
     @Override // com.google.android.play.core.assetpacks.t4
     public final void a(int i10) {
-        if (this.f16086d != null) {
-            f16081g.d("notifySessionFailed", new Object[0]);
-            xg.k kVar = new xg.k();
-            this.f16086d.t(new l(this, kVar, i10, kVar), kVar);
+        if (this.f16066d != null) {
+            f16061g.d("notifySessionFailed", new Object[0]);
+            yg.k kVar = new yg.k();
+            this.f16066d.t(new l(this, kVar, i10, kVar), kVar);
             return;
         }
         throw new w1("The Play Store app is not installed or is an unofficial version.", i10);
@@ -172,36 +172,36 @@ public final class x implements t4 {
 
     @Override // com.google.android.play.core.assetpacks.t4
     public final Task c(Map map) {
-        if (this.f16086d == null) {
+        if (this.f16066d == null) {
             return j();
         }
-        f16081g.d("syncPacks", new Object[0]);
-        xg.k kVar = new xg.k();
-        this.f16086d.t(new i(this, kVar, map, kVar), kVar);
+        f16061g.d("syncPacks", new Object[0]);
+        yg.k kVar = new yg.k();
+        this.f16066d.t(new i(this, kVar, map, kVar), kVar);
         return kVar.a();
     }
 
     @Override // com.google.android.play.core.assetpacks.t4
     public final Task d(int i10, String str, String str2, int i11) {
-        if (this.f16086d == null) {
+        if (this.f16066d == null) {
             return j();
         }
-        f16081g.d("getChunkFileDescriptor(%s, %s, %d, session=%d)", str, str2, Integer.valueOf(i11), Integer.valueOf(i10));
-        xg.k kVar = new xg.k();
-        this.f16086d.t(new m(this, kVar, i10, str, str2, i11, kVar), kVar);
+        f16061g.d("getChunkFileDescriptor(%s, %s, %d, session=%d)", str, str2, Integer.valueOf(i11), Integer.valueOf(i10));
+        yg.k kVar = new yg.k();
+        this.f16066d.t(new m(this, kVar, i10, str, str2, i11, kVar), kVar);
         return kVar.a();
     }
 
     @Override // com.google.android.play.core.assetpacks.t4
     public final Task e(List list, Map map) {
-        if (this.f16086d == null) {
+        if (this.f16066d == null) {
             return j();
         }
-        f16081g.d("startDownload(%s)", list);
-        xg.k kVar = new xg.k();
-        this.f16086d.t(new g(this, kVar, list, map, kVar), kVar);
-        kVar.a().g(new xg.g() { // from class: com.google.android.play.core.assetpacks.f
-            @Override // xg.g
+        f16061g.d("startDownload(%s)", list);
+        yg.k kVar = new yg.k();
+        this.f16066d.t(new g(this, kVar, list, map, kVar), kVar);
+        kVar.a().g(new yg.g() { // from class: com.google.android.play.core.assetpacks.f
+            @Override // yg.g
             public final void onSuccess(Object obj) {
                 d dVar = (d) obj;
                 x.this.f();
@@ -212,20 +212,20 @@ public final class x implements t4 {
 
     @Override // com.google.android.play.core.assetpacks.t4
     public final void f(List list) {
-        if (this.f16086d == null) {
+        if (this.f16066d == null) {
             return;
         }
-        f16081g.d("cancelDownloads(%s)", list);
-        xg.k kVar = new xg.k();
-        this.f16086d.t(new h(this, kVar, list, kVar), kVar);
+        f16061g.d("cancelDownloads(%s)", list);
+        yg.k kVar = new yg.k();
+        this.f16066d.t(new h(this, kVar, list, kVar), kVar);
     }
 
     @Override // com.google.android.play.core.assetpacks.t4
     public final void g(int i10, String str, String str2, int i11) {
-        if (this.f16086d != null) {
-            f16081g.d("notifyChunkTransferred", new Object[0]);
-            xg.k kVar = new xg.k();
-            this.f16086d.t(new j(this, kVar, i10, str, str2, i11, kVar), kVar);
+        if (this.f16066d != null) {
+            f16061g.d("notifyChunkTransferred", new Object[0]);
+            yg.k kVar = new yg.k();
+            this.f16066d.t(new j(this, kVar, i10, str, str2, i11, kVar), kVar);
             return;
         }
         throw new w1("The Play Store app is not installed or is an unofficial version.", i10);
@@ -233,17 +233,17 @@ public final class x implements t4 {
 
     @Override // com.google.android.play.core.assetpacks.t4
     public final synchronized void f() {
-        if (this.f16087e == null) {
-            f16081g.e("Keep alive connection manager is not initialized.", new Object[0]);
+        if (this.f16067e == null) {
+            f16061g.e("Keep alive connection manager is not initialized.", new Object[0]);
             return;
         }
-        wh.k0 k0Var = f16081g;
+        xh.k0 k0Var = f16061g;
         k0Var.d("keepAlive", new Object[0]);
-        if (!this.f16088f.compareAndSet(false, true)) {
+        if (!this.f16068f.compareAndSet(false, true)) {
             k0Var.d("Service is already kept alive.", new Object[0]);
             return;
         }
-        xg.k kVar = new xg.k();
-        this.f16087e.t(new n(this, kVar, kVar), kVar);
+        yg.k kVar = new yg.k();
+        this.f16067e.t(new n(this, kVar, kVar), kVar);
     }
 }

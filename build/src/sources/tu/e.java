@@ -1,63 +1,24 @@
 package tu;
 
-import java.util.List;
-import java.util.Map;
-import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.Intrinsics;
-import tu.d;
+import kotlin.collections.CollectionsKt;
+import kotlin.jvm.functions.Function1;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class e implements qu.a, d {
+public final class e implements su.b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final e f51068a = new e();
+    private final Function1 f51110a;
 
-    private e() {
+    public e(Function1 function1) {
+        this.f51110a = function1;
     }
 
-    @Override // su.f
-    public Object b(Object obj, Object obj2, h hVar, Function2 function2) {
-        return d.a.f(this, obj, obj2, hVar, function2);
-    }
-
-    @Override // su.a
-    public su.b c(List list, Object obj, h hVar) {
-        return d.a.c(this, list, obj, hVar);
-    }
-
-    @Override // qu.a
-    public Object d(Object obj, Object obj2, h evaluator) {
-        Intrinsics.checkNotNullParameter(evaluator, "evaluator");
-        return g(obj, obj2, evaluator);
-    }
-
-    @Override // tu.d
-    public Object e(c data, h evaluator) {
-        Intrinsics.checkNotNullParameter(data, "data");
-        Intrinsics.checkNotNullParameter(evaluator, "evaluator");
-        for (Object obj : data.b()) {
-            if (f51068a.i(evaluator.a(data.a(), obj))) {
-                return Boolean.TRUE;
-            }
+    @Override // su.b
+    public Object f(Object obj, Object obj2) {
+        Object firstOrNull = CollectionsKt.firstOrNull(cw.a.c(obj));
+        Function1 function1 = this.f51110a;
+        if (function1 != null) {
+            function1.invoke(firstOrNull);
         }
-        return data.c();
-    }
-
-    @Override // uv.a
-    public List f(List list, Object obj, h hVar) {
-        return d.a.h(this, list, obj, hVar);
-    }
-
-    public Object g(Object obj, Object obj2, h hVar) {
-        return d.a.b(this, obj, obj2, hVar);
-    }
-
-    @Override // su.a
-    /* renamed from: h */
-    public Boolean a(Map map, List list) {
-        return d.a.e(this, map, list);
-    }
-
-    public boolean i(Object obj) {
-        return d.a.i(this, obj);
+        return firstOrNull;
     }
 }

@@ -8,10 +8,10 @@ import w5.c;
 public abstract class p {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final c.a f51855a = c.a.a("nm", "g", "o", "t", "s", "e", "r", "hd");
+    private static final c.a f52220a = c.a.a("nm", "g", "o", "t", "s", "e", "r", "hd");
 
     /* renamed from: b  reason: collision with root package name */
-    private static final c.a f51856b = c.a.a("p", "k");
+    private static final c.a f52221b = c.a.a("p", "k");
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static s5.e a(w5.c cVar, l5.i iVar) {
@@ -26,19 +26,19 @@ public abstract class p {
         r5.f fVar2 = null;
         boolean z10 = false;
         while (cVar.hasNext()) {
-            switch (cVar.y(f51855a)) {
+            switch (cVar.p(f52220a)) {
                 case 0:
-                    str = cVar.f1();
+                    str = cVar.e1();
                     break;
                 case 1:
-                    cVar.s();
+                    cVar.u();
                     int i10 = -1;
                     while (cVar.hasNext()) {
-                        int y10 = cVar.y(f51856b);
-                        if (y10 != 0) {
-                            if (y10 != 1) {
-                                cVar.E();
-                                cVar.P();
+                        int p10 = cVar.p(f52221b);
+                        if (p10 != 0) {
+                            if (p10 != 1) {
+                                cVar.s();
+                                cVar.S();
                             } else {
                                 cVar2 = d.g(cVar, iVar, i10);
                             }
@@ -46,7 +46,7 @@ public abstract class p {
                             i10 = cVar.nextInt();
                         }
                     }
-                    cVar.z();
+                    cVar.D();
                     break;
                 case 2:
                     dVar = d.h(cVar, iVar);
@@ -74,11 +74,11 @@ public abstract class p {
                     fillType2 = fillType;
                     break;
                 case 7:
-                    z10 = cVar.h();
+                    z10 = cVar.g();
                     break;
                 default:
-                    cVar.E();
-                    cVar.P();
+                    cVar.s();
+                    cVar.S();
                     break;
             }
         }

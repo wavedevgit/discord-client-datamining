@@ -17,22 +17,22 @@ import ze.p;
 public class SignInHubActivity extends FragmentActivity {
 
     /* renamed from: q */
-    private static boolean f13735q = false;
+    private static boolean f13696q = false;
 
     /* renamed from: d */
-    private boolean f13736d = false;
+    private boolean f13697d = false;
 
     /* renamed from: e */
-    private SignInConfiguration f13737e;
+    private SignInConfiguration f13698e;
 
     /* renamed from: i */
-    private boolean f13738i;
+    private boolean f13699i;
 
     /* renamed from: o */
-    private int f13739o;
+    private int f13700o;
 
     /* renamed from: p */
-    private Intent f13740p;
+    private Intent f13701p;
 
     private final void A(int i10) {
         Status status = new Status(i10);
@@ -40,7 +40,7 @@ public class SignInHubActivity extends FragmentActivity {
         intent.putExtra("googleSignInStatus", status);
         setResult(0, intent);
         finish();
-        f13735q = false;
+        f13696q = false;
     }
 
     private final void B(String str) {
@@ -50,11 +50,11 @@ public class SignInHubActivity extends FragmentActivity {
         } else {
             intent.setPackage(getPackageName());
         }
-        intent.putExtra("config", this.f13737e);
+        intent.putExtra("config", this.f13698e);
         try {
             startActivityForResult(intent, 40962);
         } catch (ActivityNotFoundException unused) {
-            this.f13736d = true;
+            this.f13697d = true;
             Log.w("AuthSignInClient", "Could not launch sign in Intent. Google Play Service is probably being updated...");
             A(17);
         }
@@ -62,7 +62,7 @@ public class SignInHubActivity extends FragmentActivity {
 
     private final void z() {
         getSupportLoaderManager().c(0, null, new a(this, null));
-        f13735q = false;
+        f13696q = false;
     }
 
     @Override // android.app.Activity, android.view.Window.Callback
@@ -72,7 +72,7 @@ public class SignInHubActivity extends FragmentActivity {
 
     @Override // androidx.fragment.app.FragmentActivity, androidx.activity.ComponentActivity, android.app.Activity
     public final void onActivityResult(int i10, int i11, Intent intent) {
-        if (!this.f13736d) {
+        if (!this.f13697d) {
             setResult(0);
             if (i10 != 40962) {
                 return;
@@ -86,12 +86,12 @@ public class SignInHubActivity extends FragmentActivity {
                         A(RecyclerViewScrollLimiter.MAX_FLING_VELOCITY);
                         return;
                     }
-                    p.a(this).c(this.f13737e.b(), b10);
+                    p.a(this).c(this.f13698e.b(), b10);
                     intent.removeExtra("signInAccount");
                     intent.putExtra("googleSignInAccount", b10);
-                    this.f13738i = true;
-                    this.f13739o = i11;
-                    this.f13740p = intent;
+                    this.f13699i = true;
+                    this.f13700o = i11;
+                    this.f13701p = intent;
                     z();
                     return;
                 } else if (intent.hasExtra("errorCode")) {
@@ -136,21 +136,21 @@ public class SignInHubActivity extends FragmentActivity {
                 finish();
                 return;
             }
-            this.f13737e = signInConfiguration;
+            this.f13698e = signInConfiguration;
             if (bundle == null) {
-                if (f13735q) {
+                if (f13696q) {
                     setResult(0);
                     A(12502);
                     return;
                 }
-                f13735q = true;
+                f13696q = true;
                 B(action);
                 return;
             }
             boolean z10 = bundle.getBoolean("signingInGoogleApiClients");
-            this.f13738i = z10;
+            this.f13699i = z10;
             if (z10) {
-                this.f13739o = bundle.getInt("signInResultCode");
+                this.f13700o = bundle.getInt("signInResultCode");
                 Intent intent2 = (Intent) bundle.getParcelable("signInResultData");
                 if (intent2 == null) {
                     Log.e("AuthSignInClient", "Sign in result data cannot be null");
@@ -158,7 +158,7 @@ public class SignInHubActivity extends FragmentActivity {
                     finish();
                     return;
                 }
-                this.f13740p = intent2;
+                this.f13701p = intent2;
                 z();
             }
         }
@@ -167,17 +167,17 @@ public class SignInHubActivity extends FragmentActivity {
     @Override // androidx.fragment.app.FragmentActivity, android.app.Activity
     public final void onDestroy() {
         super.onDestroy();
-        f13735q = false;
+        f13696q = false;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // androidx.activity.ComponentActivity, androidx.core.app.ComponentActivity, android.app.Activity
     public final void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
-        bundle.putBoolean("signingInGoogleApiClients", this.f13738i);
-        if (this.f13738i) {
-            bundle.putInt("signInResultCode", this.f13739o);
-            bundle.putParcelable("signInResultData", this.f13740p);
+        bundle.putBoolean("signingInGoogleApiClients", this.f13699i);
+        if (this.f13699i) {
+            bundle.putInt("signInResultCode", this.f13700o);
+            bundle.putParcelable("signInResultData", this.f13701p);
         }
     }
 }

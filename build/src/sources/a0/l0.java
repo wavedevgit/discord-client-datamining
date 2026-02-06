@@ -10,7 +10,7 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.RejectedExecutionException;
 import y.a;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-public final class l0 implements a.InterfaceC0748a {
+public final class l0 implements a.InterfaceC0735a {
 
     /* renamed from: a  reason: collision with root package name */
     private final StringBuilder f134a = new StringBuilder();
@@ -197,7 +197,7 @@ public final class l0 implements a.InterfaceC0748a {
         return d10;
     }
 
-    @Override // y.a.InterfaceC0748a
+    @Override // y.a.InterfaceC0735a
     public void a(int i10, int i11) {
         int i12;
         boolean z10;

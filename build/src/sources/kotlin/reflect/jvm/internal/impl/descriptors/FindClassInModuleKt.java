@@ -52,7 +52,7 @@ public final class FindClassInModuleKt {
             public Object get(Object obj) {
                 return ((ClassId) obj).getOuterClassId();
             }
-        }), b.f32366d)));
+        }), b.f32386d)));
     }
 
     public static final TypeAliasDescriptor findTypeAliasAcrossModuleDependencies(@NotNull ModuleDescriptor moduleDescriptor, @NotNull ClassId classId) {

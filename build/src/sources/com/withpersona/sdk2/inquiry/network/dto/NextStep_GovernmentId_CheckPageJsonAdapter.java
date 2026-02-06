@@ -45,37 +45,37 @@ public final class NextStep_GovernmentId_CheckPageJsonAdapter extends h {
     @NotNull
     public NextStep.GovernmentId.CheckPage fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         String str = null;
         String str2 = null;
         String str3 = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 str = (String) this.stringAdapter.fromJson(reader);
                 if (str == null) {
-                    throw ym.c.x("buttonSubmit", "btnSubmit", reader);
+                    throw an.c.x("buttonSubmit", "btnSubmit", reader);
                 }
-            } else if (W == 1) {
+            } else if (J == 1) {
                 str2 = (String) this.stringAdapter.fromJson(reader);
                 if (str2 == null) {
-                    throw ym.c.x("buttonRetake", "btnRetake", reader);
+                    throw an.c.x("buttonRetake", "btnRetake", reader);
                 }
-            } else if (W == 2) {
+            } else if (J == 2) {
                 str3 = (String) this.nullableStringAdapter.fromJson(reader);
             }
         }
-        reader.z();
+        reader.D();
         if (str != null) {
             if (str2 != null) {
                 return new NextStep.GovernmentId.CheckPage(str, str2, str3);
             }
-            throw ym.c.o("buttonRetake", "btnRetake", reader);
+            throw an.c.o("buttonRetake", "btnRetake", reader);
         }
-        throw ym.c.o("buttonSubmit", "btnSubmit", reader);
+        throw an.c.o("buttonSubmit", "btnSubmit", reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -83,13 +83,13 @@ public final class NextStep_GovernmentId_CheckPageJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (checkPage != null) {
             writer.k();
-            writer.W("btnSubmit");
+            writer.J("btnSubmit");
             this.stringAdapter.toJson(writer, checkPage.getButtonSubmit());
-            writer.W("btnRetake");
+            writer.J("btnRetake");
             this.stringAdapter.toJson(writer, checkPage.getButtonRetake());
-            writer.W("titleConfirmCapture");
+            writer.J("titleConfirmCapture");
             this.nullableStringAdapter.toJson(writer, checkPage.getTitleConfirmCapture());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

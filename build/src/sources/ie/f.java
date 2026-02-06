@@ -37,40 +37,40 @@ import zd.b;
 public abstract class f {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final Pattern f27347a = Pattern.compile("^(\\S+)\\s+-->\\s+(\\S+)(.*)?$");
+    public static final Pattern f26684a = Pattern.compile("^(\\S+)\\s+-->\\s+(\\S+)(.*)?$");
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Pattern f27348b = Pattern.compile("(\\S+?):(\\S+)");
+    private static final Pattern f26685b = Pattern.compile("(\\S+?):(\\S+)");
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Map f27349c;
+    private static final Map f26686c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Map f27350d;
+    private static final Map f26687d;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static class b {
 
         /* renamed from: c  reason: collision with root package name */
-        private static final Comparator f27351c = new Comparator() { // from class: ie.g
+        private static final Comparator f26688c = new Comparator() { // from class: ie.g
             @Override // java.util.Comparator
             public final int compare(Object obj, Object obj2) {
                 int compare;
-                compare = Integer.compare(((f.b) obj).f27352a.f27355b, ((f.b) obj2).f27352a.f27355b);
+                compare = Integer.compare(((f.b) obj).f26689a.f26692b, ((f.b) obj2).f26689a.f26692b);
                 return compare;
             }
         };
 
         /* renamed from: a  reason: collision with root package name */
-        private final c f27352a;
+        private final c f26689a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f27353b;
+        private final int f26690b;
 
         private b(c cVar, int i10) {
-            this.f27352a = cVar;
-            this.f27353b = i10;
+            this.f26689a = cVar;
+            this.f26690b = i10;
         }
     }
 
@@ -79,22 +79,22 @@ public abstract class f {
     public static final class c {
 
         /* renamed from: a  reason: collision with root package name */
-        public final String f27354a;
+        public final String f26691a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final int f27355b;
+        public final int f26692b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final String f27356c;
+        public final String f26693c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final Set f27357d;
+        public final Set f26694d;
 
         private c(String str, int i10, String str2, Set set) {
-            this.f27355b = i10;
-            this.f27354a = str;
-            this.f27356c = str2;
-            this.f27357d = set;
+            this.f26692b = i10;
+            this.f26691a = str;
+            this.f26693c = str2;
+            this.f26694d = set;
         }
 
         public static c a(String str, int i10) {
@@ -128,20 +128,20 @@ public abstract class f {
     public static final class d implements Comparable {
 
         /* renamed from: d  reason: collision with root package name */
-        public final int f27358d;
+        public final int f26695d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final ie.d f27359e;
+        public final ie.d f26696e;
 
         public d(int i10, ie.d dVar) {
-            this.f27358d = i10;
-            this.f27359e = dVar;
+            this.f26695d = i10;
+            this.f26696e = dVar;
         }
 
         @Override // java.lang.Comparable
         /* renamed from: a */
         public int compareTo(d dVar) {
-            return Integer.compare(this.f27358d, dVar.f27358d);
+            return Integer.compare(this.f26695d, dVar.f26695d);
         }
     }
 
@@ -150,37 +150,37 @@ public abstract class f {
     public static final class e {
 
         /* renamed from: c  reason: collision with root package name */
-        public CharSequence f27362c;
+        public CharSequence f26699c;
 
         /* renamed from: a  reason: collision with root package name */
-        public long f27360a = 0;
+        public long f26697a = 0;
 
         /* renamed from: b  reason: collision with root package name */
-        public long f27361b = 0;
+        public long f26698b = 0;
 
         /* renamed from: d  reason: collision with root package name */
-        public int f27363d = 2;
+        public int f26700d = 2;
 
         /* renamed from: e  reason: collision with root package name */
-        public float f27364e = -3.4028235E38f;
+        public float f26701e = -3.4028235E38f;
 
         /* renamed from: f  reason: collision with root package name */
-        public int f27365f = 1;
+        public int f26702f = 1;
 
         /* renamed from: g  reason: collision with root package name */
-        public int f27366g = 0;
+        public int f26703g = 0;
 
         /* renamed from: h  reason: collision with root package name */
-        public float f27367h = -3.4028235E38f;
+        public float f26704h = -3.4028235E38f;
 
         /* renamed from: i  reason: collision with root package name */
-        public int f27368i = Integer.MIN_VALUE;
+        public int f26705i = Integer.MIN_VALUE;
 
         /* renamed from: j  reason: collision with root package name */
-        public float f27369j = 1.0f;
+        public float f26706j = 1.0f;
 
         /* renamed from: k  reason: collision with root package name */
-        public int f27370k = Integer.MIN_VALUE;
+        public int f26707k = Integer.MIN_VALUE;
 
         private static float b(float f10, int i10) {
             int i11 = (f10 > (-3.4028235E38f) ? 1 : (f10 == (-3.4028235E38f) ? 0 : -1));
@@ -257,20 +257,20 @@ public abstract class f {
         }
 
         public ie.e a() {
-            return new ie.e(g().a(), this.f27360a, this.f27361b);
+            return new ie.e(g().a(), this.f26697a, this.f26698b);
         }
 
-        public b.C0782b g() {
-            float f10 = this.f27367h;
+        public b.C0770b g() {
+            float f10 = this.f26704h;
             if (f10 == -3.4028235E38f) {
-                f10 = e(this.f27363d);
+                f10 = e(this.f26700d);
             }
-            int i10 = this.f27368i;
+            int i10 = this.f26705i;
             if (i10 == Integer.MIN_VALUE) {
-                i10 = f(this.f27363d);
+                i10 = f(this.f26700d);
             }
-            b.C0782b r10 = new b.C0782b().p(c(this.f27363d)).h(b(this.f27364e, this.f27365f), this.f27365f).i(this.f27366g).k(f10).l(i10).n(Math.min(this.f27369j, d(i10, f10))).r(this.f27370k);
-            CharSequence charSequence = this.f27362c;
+            b.C0770b r10 = new b.C0770b().p(c(this.f26700d)).h(b(this.f26701e, this.f26702f), this.f26702f).i(this.f26703g).k(f10).l(i10).n(Math.min(this.f26706j, d(i10, f10))).r(this.f26707k);
+            CharSequence charSequence = this.f26699c;
             if (charSequence != null) {
                 r10.o(charSequence);
             }
@@ -288,7 +288,7 @@ public abstract class f {
         hashMap.put("magenta", Integer.valueOf(Color.rgb((int) SetSpanOperation.SPAN_MAX_PRIORITY, 0, (int) SetSpanOperation.SPAN_MAX_PRIORITY)));
         hashMap.put("blue", Integer.valueOf(Color.rgb(0, 0, (int) SetSpanOperation.SPAN_MAX_PRIORITY)));
         hashMap.put("black", Integer.valueOf(Color.rgb(0, 0, 0)));
-        f27349c = Collections.unmodifiableMap(hashMap);
+        f26686c = Collections.unmodifiableMap(hashMap);
         HashMap hashMap2 = new HashMap();
         hashMap2.put("bg_white", Integer.valueOf(Color.rgb((int) SetSpanOperation.SPAN_MAX_PRIORITY, (int) SetSpanOperation.SPAN_MAX_PRIORITY, (int) SetSpanOperation.SPAN_MAX_PRIORITY)));
         hashMap2.put("bg_lime", Integer.valueOf(Color.rgb(0, (int) SetSpanOperation.SPAN_MAX_PRIORITY, 0)));
@@ -298,18 +298,18 @@ public abstract class f {
         hashMap2.put("bg_magenta", Integer.valueOf(Color.rgb((int) SetSpanOperation.SPAN_MAX_PRIORITY, 0, (int) SetSpanOperation.SPAN_MAX_PRIORITY)));
         hashMap2.put("bg_blue", Integer.valueOf(Color.rgb(0, 0, (int) SetSpanOperation.SPAN_MAX_PRIORITY)));
         hashMap2.put("bg_black", Integer.valueOf(Color.rgb(0, 0, 0)));
-        f27350d = Collections.unmodifiableMap(hashMap2);
+        f26687d = Collections.unmodifiableMap(hashMap2);
     }
 
     private static void a(SpannableStringBuilder spannableStringBuilder, Set set, int i10, int i11) {
         Iterator it = set.iterator();
         while (it.hasNext()) {
             String str = (String) it.next();
-            Map map = f27349c;
+            Map map = f26686c;
             if (map.containsKey(str)) {
                 spannableStringBuilder.setSpan(new ForegroundColorSpan(((Integer) map.get(str)).intValue()), i10, i11, 33);
             } else {
-                Map map2 = f27350d;
+                Map map2 = f26687d;
                 if (map2.containsKey(str)) {
                     spannableStringBuilder.setSpan(new BackgroundColorSpan(((Integer) map2.get(str)).intValue()), i10, i11, 33);
                 }
@@ -369,15 +369,15 @@ public abstract class f {
         int i10 = i(list2, str, cVar);
         ArrayList arrayList = new ArrayList(list.size());
         arrayList.addAll(list);
-        Collections.sort(arrayList, b.f27351c);
-        int i11 = cVar.f27355b;
+        Collections.sort(arrayList, b.f26688c);
+        int i11 = cVar.f26692b;
         int i12 = 0;
         for (int i13 = 0; i13 < arrayList.size(); i13++) {
-            if ("rt".equals(((b) arrayList.get(i13)).f27352a.f27354a)) {
+            if ("rt".equals(((b) arrayList.get(i13)).f26689a.f26691a)) {
                 b bVar = (b) arrayList.get(i13);
-                int g10 = g(i(list2, str, bVar.f27352a), i10, 1);
-                int i14 = bVar.f27352a.f27355b - i12;
-                int i15 = bVar.f27353b - i12;
+                int g10 = g(i(list2, str, bVar.f26689a), i10, 1);
+                int i14 = bVar.f26689a.f26692b - i12;
+                int i15 = bVar.f26690b - i12;
                 CharSequence subSequence = spannableStringBuilder.subSequence(i14, i15);
                 spannableStringBuilder.delete(i14, i15);
                 spannableStringBuilder.setSpan(new de.c(subSequence.toString(), g10), i11, i14, 33);
@@ -388,9 +388,9 @@ public abstract class f {
     }
 
     private static void d(String str, c cVar, List list, SpannableStringBuilder spannableStringBuilder, List list2) {
-        int i10 = cVar.f27355b;
+        int i10 = cVar.f26692b;
         int length = spannableStringBuilder.length();
-        String str2 = cVar.f27354a;
+        String str2 = cVar.f26691a;
         str2.getClass();
         char c10 = 65535;
         switch (str2.hashCode()) {
@@ -452,7 +452,7 @@ public abstract class f {
                 spannableStringBuilder.setSpan(new StyleSpan(1), i10, length, 33);
                 break;
             case 2:
-                a(spannableStringBuilder, cVar.f27357d, i10, length);
+                a(spannableStringBuilder, cVar.f26694d, i10, length);
                 break;
             case 3:
                 spannableStringBuilder.setSpan(new StyleSpan(2), i10, length, 33);
@@ -468,7 +468,7 @@ public abstract class f {
         }
         List h10 = h(list2, str, cVar);
         for (int i11 = 0; i11 < h10.size(); i11++) {
-            e(spannableStringBuilder, ((d) h10.get(i11)).f27359e, i10, length);
+            e(spannableStringBuilder, ((d) h10.get(i11)).f26696e, i10, length);
         }
     }
 
@@ -535,7 +535,7 @@ public abstract class f {
         ArrayList arrayList = new ArrayList();
         for (int i10 = 0; i10 < list.size(); i10++) {
             ie.d dVar = (ie.d) list.get(i10);
-            int h10 = dVar.h(str, cVar.f27354a, cVar.f27357d, cVar.f27356c);
+            int h10 = dVar.h(str, cVar.f26691a, cVar.f26694d, cVar.f26693c);
             if (h10 > 0) {
                 arrayList.add(new d(h10, dVar));
             }
@@ -547,7 +547,7 @@ public abstract class f {
     private static int i(List list, String str, c cVar) {
         List h10 = h(list, str, cVar);
         for (int i10 = 0; i10 < h10.size(); i10++) {
-            ie.d dVar = ((d) h10.get(i10)).f27359e;
+            ie.d dVar = ((d) h10.get(i10)).f26696e;
             if (dVar.g() != -1) {
                 return dVar.g();
             }
@@ -632,15 +632,15 @@ public abstract class f {
     /* JADX INFO: Access modifiers changed from: package-private */
     public static zd.b l(CharSequence charSequence) {
         e eVar = new e();
-        eVar.f27362c = charSequence;
+        eVar.f26699c = charSequence;
         return eVar.g().a();
     }
 
     private static ie.e m(String str, Matcher matcher, h0 h0Var, List list) {
         e eVar = new e();
         try {
-            eVar.f27360a = i.d((String) ne.a.e(matcher.group(1)));
-            eVar.f27361b = i.d((String) ne.a.e(matcher.group(2)));
+            eVar.f26697a = i.d((String) ne.a.e(matcher.group(1)));
+            eVar.f26698b = i.d((String) ne.a.e(matcher.group(2)));
             p((String) ne.a.e(matcher.group(3)), eVar);
             StringBuilder sb2 = new StringBuilder();
             String s10 = h0Var.s();
@@ -651,7 +651,7 @@ public abstract class f {
                 sb2.append(s10.trim());
                 s10 = h0Var.s();
             }
-            eVar.f27362c = q(str, sb2.toString(), list);
+            eVar.f26699c = q(str, sb2.toString(), list);
             return eVar.a();
         } catch (NumberFormatException unused) {
             y.i("WebvttCueParser", "Skipping cue with bad header: " + matcher.group());
@@ -664,7 +664,7 @@ public abstract class f {
         if (s10 == null) {
             return null;
         }
-        Pattern pattern = f27347a;
+        Pattern pattern = f26684a;
         Matcher matcher = pattern.matcher(s10);
         if (matcher.matches()) {
             return m(null, matcher, h0Var, list);
@@ -681,14 +681,14 @@ public abstract class f {
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public static b.C0782b o(String str) {
+    public static b.C0770b o(String str) {
         e eVar = new e();
         p(str, eVar);
         return eVar.g();
     }
 
     private static void p(String str, e eVar) {
-        Matcher matcher = f27348b.matcher(str);
+        Matcher matcher = f26685b.matcher(str);
         while (matcher.find()) {
             String str2 = (String) ne.a.e(matcher.group(1));
             String str3 = (String) ne.a.e(matcher.group(2));
@@ -696,13 +696,13 @@ public abstract class f {
                 if ("line".equals(str2)) {
                     s(str3, eVar);
                 } else if ("align".equals(str2)) {
-                    eVar.f27363d = v(str3);
+                    eVar.f26700d = v(str3);
                 } else if (ViewProps.POSITION.equals(str2)) {
                     u(str3, eVar);
                 } else if ("size".equals(str2)) {
-                    eVar.f27369j = i.c(str3);
+                    eVar.f26706j = i.c(str3);
                 } else if ("vertical".equals(str2)) {
-                    eVar.f27370k = w(str3);
+                    eVar.f26707k = w(str3);
                 } else {
                     y.i("WebvttCueParser", "Unknown cue setting " + str2 + ":" + str3);
                 }
@@ -762,7 +762,7 @@ public abstract class f {
                                         } else {
                                             arrayList.clear();
                                         }
-                                        if (cVar.f27354a.equals(j10)) {
+                                        if (cVar.f26691a.equals(j10)) {
                                             break;
                                         }
                                     }
@@ -847,16 +847,16 @@ public abstract class f {
     private static void s(String str, e eVar) {
         int indexOf = str.indexOf(44);
         if (indexOf != -1) {
-            eVar.f27366g = r(str.substring(indexOf + 1));
+            eVar.f26703g = r(str.substring(indexOf + 1));
             str = str.substring(0, indexOf);
         }
         if (str.endsWith("%")) {
-            eVar.f27364e = i.c(str);
-            eVar.f27365f = 0;
+            eVar.f26701e = i.c(str);
+            eVar.f26702f = 0;
             return;
         }
-        eVar.f27364e = Integer.parseInt(str);
-        eVar.f27365f = 1;
+        eVar.f26701e = Integer.parseInt(str);
+        eVar.f26702f = 1;
     }
 
     private static int t(String str) {
@@ -919,10 +919,10 @@ public abstract class f {
     private static void u(String str, e eVar) {
         int indexOf = str.indexOf(44);
         if (indexOf != -1) {
-            eVar.f27368i = t(str.substring(indexOf + 1));
+            eVar.f26705i = t(str.substring(indexOf + 1));
             str = str.substring(0, indexOf);
         }
-        eVar.f27367h = i.c(str);
+        eVar.f26704h = i.c(str);
     }
 
     private static int v(String str) {

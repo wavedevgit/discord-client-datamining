@@ -16,49 +16,49 @@ import androidx.savedstate.SavedStateRegistryController;
 public class FragmentViewLifecycleOwner implements androidx.lifecycle.h, u3.f, androidx.lifecycle.q0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Fragment f4287d;
+    private final Fragment f4616d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final ViewModelStore f4288e;
+    private final ViewModelStore f4617e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Runnable f4289i;
+    private final Runnable f4618i;
 
     /* renamed from: o  reason: collision with root package name */
-    private ViewModelProvider.Factory f4290o;
+    private ViewModelProvider.Factory f4619o;
 
     /* renamed from: p  reason: collision with root package name */
-    private LifecycleRegistry f4291p = null;
+    private LifecycleRegistry f4620p = null;
 
     /* renamed from: q  reason: collision with root package name */
-    private SavedStateRegistryController f4292q = null;
+    private SavedStateRegistryController f4621q = null;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public FragmentViewLifecycleOwner(Fragment fragment, ViewModelStore viewModelStore, Runnable runnable) {
-        this.f4287d = fragment;
-        this.f4288e = viewModelStore;
-        this.f4289i = runnable;
+        this.f4616d = fragment;
+        this.f4617e = viewModelStore;
+        this.f4618i = runnable;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void a(Lifecycle.a aVar) {
-        this.f4291p.j(aVar);
+        this.f4620p.j(aVar);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void b() {
-        if (this.f4291p == null) {
-            this.f4291p = new LifecycleRegistry(this);
+        if (this.f4620p == null) {
+            this.f4620p = new LifecycleRegistry(this);
             SavedStateRegistryController a10 = SavedStateRegistryController.a(this);
-            this.f4292q = a10;
+            this.f4621q = a10;
             a10.c();
-            this.f4289i.run();
+            this.f4618i.run();
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean c() {
-        if (this.f4291p != null) {
+        if (this.f4620p != null) {
             return true;
         }
         return false;
@@ -66,23 +66,23 @@ public class FragmentViewLifecycleOwner implements androidx.lifecycle.h, u3.f, a
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void e(Bundle bundle) {
-        this.f4292q.d(bundle);
+        this.f4621q.d(bundle);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void f(Bundle bundle) {
-        this.f4292q.e(bundle);
+        this.f4621q.e(bundle);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void g(Lifecycle.State state) {
-        this.f4291p.o(state);
+        this.f4620p.o(state);
     }
 
     @Override // androidx.lifecycle.h
     public CreationExtras getDefaultViewModelCreationExtras() {
         Application application;
-        Context applicationContext = this.f4287d.requireContext().getApplicationContext();
+        Context applicationContext = this.f4616d.requireContext().getApplicationContext();
         while (true) {
             if (applicationContext instanceof ContextWrapper) {
                 if (applicationContext instanceof Application) {
@@ -97,12 +97,12 @@ public class FragmentViewLifecycleOwner implements androidx.lifecycle.h, u3.f, a
         }
         androidx.lifecycle.viewmodel.a aVar = new androidx.lifecycle.viewmodel.a();
         if (application != null) {
-            aVar.c(ViewModelProvider.a.f4576h, application);
+            aVar.c(ViewModelProvider.a.f4905h, application);
         }
-        aVar.c(androidx.lifecycle.e0.f4606a, this.f4287d);
-        aVar.c(androidx.lifecycle.e0.f4607b, this);
-        if (this.f4287d.getArguments() != null) {
-            aVar.c(androidx.lifecycle.e0.f4608c, this.f4287d.getArguments());
+        aVar.c(androidx.lifecycle.e0.f4935a, this.f4616d);
+        aVar.c(androidx.lifecycle.e0.f4936b, this);
+        if (this.f4616d.getArguments() != null) {
+            aVar.c(androidx.lifecycle.e0.f4937c, this.f4616d.getArguments());
         }
         return aVar;
     }
@@ -110,13 +110,13 @@ public class FragmentViewLifecycleOwner implements androidx.lifecycle.h, u3.f, a
     @Override // androidx.lifecycle.h
     public ViewModelProvider.Factory getDefaultViewModelProviderFactory() {
         Application application;
-        ViewModelProvider.Factory defaultViewModelProviderFactory = this.f4287d.getDefaultViewModelProviderFactory();
-        if (!defaultViewModelProviderFactory.equals(this.f4287d.mDefaultFactory)) {
-            this.f4290o = defaultViewModelProviderFactory;
+        ViewModelProvider.Factory defaultViewModelProviderFactory = this.f4616d.getDefaultViewModelProviderFactory();
+        if (!defaultViewModelProviderFactory.equals(this.f4616d.mDefaultFactory)) {
+            this.f4619o = defaultViewModelProviderFactory;
             return defaultViewModelProviderFactory;
         }
-        if (this.f4290o == null) {
-            Context applicationContext = this.f4287d.requireContext().getApplicationContext();
+        if (this.f4619o == null) {
+            Context applicationContext = this.f4616d.requireContext().getApplicationContext();
             while (true) {
                 if (applicationContext instanceof ContextWrapper) {
                     if (applicationContext instanceof Application) {
@@ -129,27 +129,27 @@ public class FragmentViewLifecycleOwner implements androidx.lifecycle.h, u3.f, a
                     break;
                 }
             }
-            Fragment fragment = this.f4287d;
-            this.f4290o = new androidx.lifecycle.j0(application, fragment, fragment.getArguments());
+            Fragment fragment = this.f4616d;
+            this.f4619o = new androidx.lifecycle.j0(application, fragment, fragment.getArguments());
         }
-        return this.f4290o;
+        return this.f4619o;
     }
 
     @Override // androidx.lifecycle.LifecycleOwner
     public Lifecycle getLifecycle() {
         b();
-        return this.f4291p;
+        return this.f4620p;
     }
 
     @Override // u3.f
     public SavedStateRegistry getSavedStateRegistry() {
         b();
-        return this.f4292q.b();
+        return this.f4621q.b();
     }
 
     @Override // androidx.lifecycle.q0
     public ViewModelStore getViewModelStore() {
         b();
-        return this.f4288e;
+        return this.f4617e;
     }
 }

@@ -7,39 +7,39 @@ import java.util.List;
 public final class d0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f20434a;
+    private final List f20389a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final tc.b0[] f20435b;
+    private final tc.b0[] f20390b;
 
     public d0(List list) {
-        this.f20434a = list;
-        this.f20435b = new tc.b0[list.size()];
+        this.f20389a = list;
+        this.f20390b = new tc.b0[list.size()];
     }
 
     public void a(long j10, ne.h0 h0Var) {
-        tc.b.a(j10, h0Var, this.f20435b);
+        tc.b.a(j10, h0Var, this.f20390b);
     }
 
     public void b(tc.m mVar, i0.d dVar) {
         boolean z10;
-        for (int i10 = 0; i10 < this.f20435b.length; i10++) {
+        for (int i10 = 0; i10 < this.f20390b.length; i10++) {
             dVar.a();
             tc.b0 c10 = mVar.c(dVar.c(), 3);
-            Format format = (Format) this.f20434a.get(i10);
-            String str = format.f11688w;
+            Format format = (Format) this.f20389a.get(i10);
+            String str = format.f11587w;
             if (!"application/cea-608".equals(str) && !"application/cea-708".equals(str)) {
                 z10 = false;
             } else {
                 z10 = true;
             }
             ne.a.b(z10, "Invalid closed caption MIME type provided: " + str);
-            String str2 = format.f11677d;
+            String str2 = format.f11576d;
             if (str2 == null) {
                 str2 = dVar.b();
             }
-            c10.b(new Format.b().U(str2).g0(str).i0(format.f11680o).X(format.f11679i).H(format.O).V(format.f11690y).G());
-            this.f20435b[i10] = c10;
+            c10.b(new Format.b().U(str2).g0(str).i0(format.f11579o).X(format.f11578i).H(format.O).V(format.f11589y).G());
+            this.f20390b[i10] = c10;
         }
     }
 }

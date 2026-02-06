@@ -62,7 +62,7 @@ public final class MediaSource {
     }
 
     /* renamed from: copy-M_16ML8$default  reason: not valid java name */
-    public static /* synthetic */ MediaSource m946copyM_16ML8$default(MediaSource mediaSource, String str, String str2, String str3, Integer num, String str4, MediaType mediaType, boolean z10, ChannelId channelId, String str5, Integer num2, Double d10, Boolean bool, int i10, Object obj) {
+    public static /* synthetic */ MediaSource m944copyM_16ML8$default(MediaSource mediaSource, String str, String str2, String str3, Integer num, String str4, MediaType mediaType, boolean z10, ChannelId channelId, String str5, Integer num2, Double d10, Boolean bool, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = mediaSource.sourceUrl;
         }
@@ -107,7 +107,7 @@ public final class MediaSource {
         ChannelId channelId2 = channelId;
         String str7 = str4;
         MediaType mediaType2 = mediaType;
-        return mediaSource.m949copyM_16ML8(str, str2, str3, num, str7, mediaType2, z11, channelId2, str6, num3, d11, bool2);
+        return mediaSource.m947copyM_16ML8(str, str2, str3, num, str7, mediaType2, z11, channelId2, str6, num3, d11, bool2);
     }
 
     public final String component1() {
@@ -153,25 +153,25 @@ public final class MediaSource {
     }
 
     /* renamed from: component8-qMVnFVQ  reason: not valid java name */
-    public final ChannelId m947component8qMVnFVQ() {
+    public final ChannelId m945component8qMVnFVQ() {
         return this.channelId;
     }
 
     /* renamed from: component9-N_6c4I0  reason: not valid java name */
-    public final String m948component9N_6c4I0() {
+    public final String m946component9N_6c4I0() {
         return this.messageId;
     }
 
     @NotNull
     /* renamed from: copy-M_16ML8  reason: not valid java name */
-    public final MediaSource m949copyM_16ML8(String str, String str2, String str3, Integer num, @NotNull String featureTag, @NotNull MediaType type, boolean z10, ChannelId channelId, String str4, Integer num2, Double d10, Boolean bool) {
+    public final MediaSource m947copyM_16ML8(String str, String str2, String str3, Integer num, @NotNull String featureTag, @NotNull MediaType type, boolean z10, ChannelId channelId, String str4, Integer num2, Double d10, Boolean bool) {
         Intrinsics.checkNotNullParameter(featureTag, "featureTag");
         Intrinsics.checkNotNullParameter(type, "type");
         return new MediaSource(str, str2, str3, num, featureTag, type, z10, channelId, str4, num2, d10, bool, null);
     }
 
     public boolean equals(Object obj) {
-        boolean m1089equalsimpl0;
+        boolean m1087equalsimpl0;
         if (this == obj) {
             return true;
         }
@@ -182,16 +182,16 @@ public final class MediaSource {
                 String str2 = mediaSource.messageId;
                 if (str == null) {
                     if (str2 == null) {
-                        m1089equalsimpl0 = true;
+                        m1087equalsimpl0 = true;
                     }
-                    m1089equalsimpl0 = false;
+                    m1087equalsimpl0 = false;
                 } else {
                     if (str2 != null) {
-                        m1089equalsimpl0 = MessageId.m1089equalsimpl0(str, str2);
+                        m1087equalsimpl0 = MessageId.m1087equalsimpl0(str, str2);
                     }
-                    m1089equalsimpl0 = false;
+                    m1087equalsimpl0 = false;
                 }
-                return m1089equalsimpl0 && Intrinsics.areEqual(this.index, mediaSource.index) && Intrinsics.areEqual((Object) this.portal, (Object) mediaSource.portal) && Intrinsics.areEqual(this.srcIsAnimated, mediaSource.srcIsAnimated);
+                return m1087equalsimpl0 && Intrinsics.areEqual(this.index, mediaSource.index) && Intrinsics.areEqual((Object) this.portal, (Object) mediaSource.portal) && Intrinsics.areEqual(this.srcIsAnimated, mediaSource.srcIsAnimated);
             }
             return false;
         }
@@ -199,7 +199,7 @@ public final class MediaSource {
     }
 
     /* renamed from: getChannelId-qMVnFVQ  reason: not valid java name */
-    public final ChannelId m950getChannelIdqMVnFVQ() {
+    public final ChannelId m948getChannelIdqMVnFVQ() {
         return this.channelId;
     }
 
@@ -213,7 +213,7 @@ public final class MediaSource {
     }
 
     /* renamed from: getMessageId-N_6c4I0  reason: not valid java name */
-    public final String m951getMessageIdN_6c4I0() {
+    public final String m949getMessageIdN_6c4I0() {
         return this.messageId;
     }
 
@@ -260,11 +260,11 @@ public final class MediaSource {
         Integer num = this.placeholderVersion;
         int hashCode4 = (((((((hashCode3 + (num == null ? 0 : num.hashCode())) * 31) + this.featureTag.hashCode()) * 31) + this.type.hashCode()) * 31) + Boolean.hashCode(this.shouldAutoPlay)) * 31;
         ChannelId channelId = this.channelId;
-        int m1064hashCodeimpl = (hashCode4 + (channelId == null ? 0 : ChannelId.m1064hashCodeimpl(channelId.m1068unboximpl()))) * 31;
+        int m1062hashCodeimpl = (hashCode4 + (channelId == null ? 0 : ChannelId.m1062hashCodeimpl(channelId.m1066unboximpl()))) * 31;
         String str4 = this.messageId;
-        int m1090hashCodeimpl = (m1064hashCodeimpl + (str4 == null ? 0 : MessageId.m1090hashCodeimpl(str4))) * 31;
+        int m1088hashCodeimpl = (m1062hashCodeimpl + (str4 == null ? 0 : MessageId.m1088hashCodeimpl(str4))) * 31;
         Integer num2 = this.index;
-        int hashCode5 = (m1090hashCodeimpl + (num2 == null ? 0 : num2.hashCode())) * 31;
+        int hashCode5 = (m1088hashCodeimpl + (num2 == null ? 0 : num2.hashCode())) * 31;
         Double d10 = this.portal;
         int hashCode6 = (hashCode5 + (d10 == null ? 0 : d10.hashCode())) * 31;
         Boolean bool = this.srcIsAnimated;
@@ -294,11 +294,11 @@ public final class MediaSource {
         boolean z10 = this.shouldAutoPlay;
         ChannelId channelId = this.channelId;
         String str5 = this.messageId;
-        String m1092toStringimpl = str5 == null ? "null" : MessageId.m1092toStringimpl(str5);
+        String m1090toStringimpl = str5 == null ? "null" : MessageId.m1090toStringimpl(str5);
         Integer num2 = this.index;
         Double d10 = this.portal;
         Boolean bool = this.srcIsAnimated;
-        return "MediaSource(sourceUrl=" + str + ", previewUrl=" + str2 + ", placeholder=" + str3 + ", placeholderVersion=" + num + ", featureTag=" + str4 + ", type=" + mediaType + ", shouldAutoPlay=" + z10 + ", channelId=" + channelId + ", messageId=" + m1092toStringimpl + ", index=" + num2 + ", portal=" + d10 + ", srcIsAnimated=" + bool + ")";
+        return "MediaSource(sourceUrl=" + str + ", previewUrl=" + str2 + ", placeholder=" + str3 + ", placeholderVersion=" + num + ", featureTag=" + str4 + ", type=" + mediaType + ", shouldAutoPlay=" + z10 + ", channelId=" + channelId + ", messageId=" + m1090toStringimpl + ", index=" + num2 + ", portal=" + d10 + ", srcIsAnimated=" + bool + ")";
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:23:0x0059, code lost:
@@ -364,7 +364,7 @@ public final class MediaSource {
             if (r4 != r3) goto L4d
             goto L53
         L4d:
-            or.p r2 = new or.p
+            qr.p r2 = new qr.p
             r2.<init>()
             throw r2
         L53:

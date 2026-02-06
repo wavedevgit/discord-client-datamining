@@ -5,41 +5,41 @@ import java.util.Arrays;
 public final class x3 {
 
     /* renamed from: f  reason: collision with root package name */
-    private static final x3 f14395f = new x3(0, new int[0], new Object[0], false);
+    private static final x3 f14358f = new x3(0, new int[0], new Object[0], false);
 
     /* renamed from: a  reason: collision with root package name */
-    private int f14396a;
+    private int f14359a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int[] f14397b;
+    private int[] f14360b;
 
     /* renamed from: c  reason: collision with root package name */
-    private Object[] f14398c;
+    private Object[] f14361c;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f14399d = -1;
+    private int f14362d = -1;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f14400e;
+    private boolean f14363e;
 
     private x3(int i10, int[] iArr, Object[] objArr, boolean z10) {
-        this.f14396a = i10;
-        this.f14397b = iArr;
-        this.f14398c = objArr;
-        this.f14400e = z10;
+        this.f14359a = i10;
+        this.f14360b = iArr;
+        this.f14361c = objArr;
+        this.f14363e = z10;
     }
 
     public static x3 c() {
-        return f14395f;
+        return f14358f;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static x3 e(x3 x3Var, x3 x3Var2) {
-        int i10 = x3Var.f14396a + x3Var2.f14396a;
-        int[] copyOf = Arrays.copyOf(x3Var.f14397b, i10);
-        System.arraycopy(x3Var2.f14397b, 0, copyOf, x3Var.f14396a, x3Var2.f14396a);
-        Object[] copyOf2 = Arrays.copyOf(x3Var.f14398c, i10);
-        System.arraycopy(x3Var2.f14398c, 0, copyOf2, x3Var.f14396a, x3Var2.f14396a);
+        int i10 = x3Var.f14359a + x3Var2.f14359a;
+        int[] copyOf = Arrays.copyOf(x3Var.f14360b, i10);
+        System.arraycopy(x3Var2.f14360b, 0, copyOf, x3Var.f14359a, x3Var2.f14359a);
+        Object[] copyOf2 = Arrays.copyOf(x3Var.f14361c, i10);
+        System.arraycopy(x3Var2.f14361c, 0, copyOf2, x3Var.f14359a, x3Var2.f14359a);
         return new x3(i10, copyOf, copyOf2, true);
     }
 
@@ -49,9 +49,9 @@ public final class x3 {
     }
 
     private final void m(int i10) {
-        int[] iArr = this.f14397b;
+        int[] iArr = this.f14360b;
         if (i10 > iArr.length) {
-            int i11 = this.f14396a;
+            int i11 = this.f14359a;
             int i12 = i11 + (i11 / 2);
             if (i12 >= i10) {
                 i10 = i12;
@@ -59,8 +59,8 @@ public final class x3 {
             if (i10 < 8) {
                 i10 = 8;
             }
-            this.f14397b = Arrays.copyOf(iArr, i10);
-            this.f14398c = Arrays.copyOf(this.f14398c, i10);
+            this.f14360b = Arrays.copyOf(iArr, i10);
+            this.f14361c = Arrays.copyOf(this.f14361c, i10);
         }
     }
 
@@ -68,11 +68,11 @@ public final class x3 {
         int w10;
         int x10;
         int i10;
-        int i11 = this.f14399d;
+        int i11 = this.f14362d;
         if (i11 == -1) {
             int i12 = 0;
-            for (int i13 = 0; i13 < this.f14396a; i13++) {
-                int i14 = this.f14397b[i13];
+            for (int i13 = 0; i13 < this.f14359a; i13++) {
+                int i14 = this.f14360b[i13];
                 int i15 = i14 >>> 3;
                 int i16 = i14 & 7;
                 if (i16 != 0) {
@@ -80,7 +80,7 @@ public final class x3 {
                         if (i16 != 2) {
                             if (i16 != 3) {
                                 if (i16 == 5) {
-                                    ((Integer) this.f14398c[i13]).getClass();
+                                    ((Integer) this.f14361c[i13]).getClass();
                                     i10 = z0.w(i15 << 3) + 4;
                                 } else {
                                     throw new IllegalStateException(a2.a());
@@ -88,45 +88,45 @@ public final class x3 {
                             } else {
                                 int w11 = z0.w(i15 << 3);
                                 w10 = w11 + w11;
-                                x10 = ((x3) this.f14398c[i13]).a();
+                                x10 = ((x3) this.f14361c[i13]).a();
                             }
                         } else {
                             int w12 = z0.w(i15 << 3);
-                            int d10 = ((r0) this.f14398c[i13]).d();
+                            int d10 = ((r0) this.f14361c[i13]).d();
                             i10 = w12 + z0.w(d10) + d10;
                         }
                     } else {
-                        ((Long) this.f14398c[i13]).getClass();
+                        ((Long) this.f14361c[i13]).getClass();
                         i10 = z0.w(i15 << 3) + 8;
                     }
                     i12 += i10;
                 } else {
                     int i17 = i15 << 3;
-                    long longValue = ((Long) this.f14398c[i13]).longValue();
+                    long longValue = ((Long) this.f14361c[i13]).longValue();
                     w10 = z0.w(i17);
                     x10 = z0.x(longValue);
                 }
                 i10 = w10 + x10;
                 i12 += i10;
             }
-            this.f14399d = i12;
+            this.f14362d = i12;
             return i12;
         }
         return i11;
     }
 
     public final int b() {
-        int i10 = this.f14399d;
+        int i10 = this.f14362d;
         if (i10 == -1) {
             int i11 = 0;
-            for (int i12 = 0; i12 < this.f14396a; i12++) {
+            for (int i12 = 0; i12 < this.f14359a; i12++) {
                 int w10 = z0.w(8);
-                int w11 = z0.w(16) + z0.w(this.f14397b[i12] >>> 3);
+                int w11 = z0.w(16) + z0.w(this.f14360b[i12] >>> 3);
                 int w12 = z0.w(24);
-                int d10 = ((r0) this.f14398c[i12]).d();
+                int d10 = ((r0) this.f14361c[i12]).d();
                 i11 += w10 + w10 + w11 + w12 + z0.w(d10) + d10;
             }
-            this.f14399d = i11;
+            this.f14362d = i11;
             return i11;
         }
         return i10;
@@ -134,15 +134,15 @@ public final class x3 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final x3 d(x3 x3Var) {
-        if (x3Var.equals(f14395f)) {
+        if (x3Var.equals(f14358f)) {
             return this;
         }
         g();
-        int i10 = this.f14396a + x3Var.f14396a;
+        int i10 = this.f14359a + x3Var.f14359a;
         m(i10);
-        System.arraycopy(x3Var.f14397b, 0, this.f14397b, this.f14396a, x3Var.f14396a);
-        System.arraycopy(x3Var.f14398c, 0, this.f14398c, this.f14396a, x3Var.f14396a);
-        this.f14396a = i10;
+        System.arraycopy(x3Var.f14360b, 0, this.f14360b, this.f14359a, x3Var.f14359a);
+        System.arraycopy(x3Var.f14361c, 0, this.f14361c, this.f14359a, x3Var.f14359a);
+        this.f14359a = i10;
         return this;
     }
 
@@ -154,10 +154,10 @@ public final class x3 {
             return false;
         }
         x3 x3Var = (x3) obj;
-        int i10 = this.f14396a;
-        if (i10 == x3Var.f14396a) {
-            int[] iArr = this.f14397b;
-            int[] iArr2 = x3Var.f14397b;
+        int i10 = this.f14359a;
+        if (i10 == x3Var.f14359a) {
+            int[] iArr = this.f14360b;
+            int[] iArr2 = x3Var.f14360b;
             int i11 = 0;
             while (true) {
                 if (i11 < i10) {
@@ -166,9 +166,9 @@ public final class x3 {
                     }
                     i11++;
                 } else {
-                    Object[] objArr = this.f14398c;
-                    Object[] objArr2 = x3Var.f14398c;
-                    int i12 = this.f14396a;
+                    Object[] objArr = this.f14361c;
+                    Object[] objArr2 = x3Var.f14361c;
+                    int i12 = this.f14359a;
                     for (int i13 = 0; i13 < i12; i13++) {
                         if (objArr[i13].equals(objArr2[i13])) {
                         }
@@ -181,30 +181,30 @@ public final class x3 {
     }
 
     final void g() {
-        if (this.f14400e) {
+        if (this.f14363e) {
             return;
         }
         throw new UnsupportedOperationException();
     }
 
     public final void h() {
-        if (this.f14400e) {
-            this.f14400e = false;
+        if (this.f14363e) {
+            this.f14363e = false;
         }
     }
 
     public final int hashCode() {
-        int i10 = this.f14396a;
+        int i10 = this.f14359a;
         int i11 = i10 + 527;
-        int[] iArr = this.f14397b;
+        int[] iArr = this.f14360b;
         int i12 = 17;
         int i13 = 17;
         for (int i14 = 0; i14 < i10; i14++) {
             i13 = (i13 * 31) + iArr[i14];
         }
         int i15 = ((i11 * 31) + i13) * 31;
-        Object[] objArr = this.f14398c;
-        int i16 = this.f14396a;
+        Object[] objArr = this.f14361c;
+        int i16 = this.f14359a;
         for (int i17 = 0; i17 < i16; i17++) {
             i12 = (i12 * 31) + objArr[i17].hashCode();
         }
@@ -213,34 +213,34 @@ public final class x3 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void i(StringBuilder sb2, int i10) {
-        for (int i11 = 0; i11 < this.f14396a; i11++) {
-            x2.b(sb2, i10, String.valueOf(this.f14397b[i11] >>> 3), this.f14398c[i11]);
+        for (int i11 = 0; i11 < this.f14359a; i11++) {
+            x2.b(sb2, i10, String.valueOf(this.f14360b[i11] >>> 3), this.f14361c[i11]);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void j(int i10, Object obj) {
         g();
-        m(this.f14396a + 1);
-        int[] iArr = this.f14397b;
-        int i11 = this.f14396a;
+        m(this.f14359a + 1);
+        int[] iArr = this.f14360b;
+        int i11 = this.f14359a;
         iArr[i11] = i10;
-        this.f14398c[i11] = obj;
-        this.f14396a = i11 + 1;
+        this.f14361c[i11] = obj;
+        this.f14359a = i11 + 1;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void k(o4 o4Var) {
-        for (int i10 = 0; i10 < this.f14396a; i10++) {
-            o4Var.E(this.f14397b[i10] >>> 3, this.f14398c[i10]);
+        for (int i10 = 0; i10 < this.f14359a; i10++) {
+            o4Var.E(this.f14360b[i10] >>> 3, this.f14361c[i10]);
         }
     }
 
     public final void l(o4 o4Var) {
-        if (this.f14396a != 0) {
-            for (int i10 = 0; i10 < this.f14396a; i10++) {
-                int i11 = this.f14397b[i10];
-                Object obj = this.f14398c[i10];
+        if (this.f14359a != 0) {
+            for (int i10 = 0; i10 < this.f14359a; i10++) {
+                int i11 = this.f14360b[i10];
+                Object obj = this.f14361c[i10];
                 int i12 = i11 & 7;
                 int i13 = i11 >>> 3;
                 if (i12 != 0) {

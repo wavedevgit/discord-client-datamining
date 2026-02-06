@@ -41,7 +41,7 @@ public final class StepStyles_GovernmentIdStepStrokeColorJsonAdapter extends h {
     @NotNull
     public StepStyles.GovernmentIdStepStrokeColor fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         StyleElements.SimpleElementColor simpleElementColor = null;
         StyleElements.SimpleElementColor simpleElementColor2 = null;
         StyleElements.SimpleElementColor simpleElementColor3 = null;
@@ -49,10 +49,10 @@ public final class StepStyles_GovernmentIdStepStrokeColorJsonAdapter extends h {
         StyleElements.SimpleElementColor simpleElementColor5 = null;
         StyleElements.SimpleElementColor simpleElementColor6 = null;
         while (reader.hasNext()) {
-            switch (reader.W(this.options)) {
+            switch (reader.J(this.options)) {
                 case -1:
                     reader.E0();
-                    reader.P();
+                    reader.S();
                     break;
                 case 0:
                     simpleElementColor = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
@@ -74,7 +74,7 @@ public final class StepStyles_GovernmentIdStepStrokeColorJsonAdapter extends h {
                     break;
             }
         }
-        reader.z();
+        reader.D();
         return new StepStyles.GovernmentIdStepStrokeColor(simpleElementColor, simpleElementColor2, simpleElementColor3, simpleElementColor4, simpleElementColor5, simpleElementColor6);
     }
 
@@ -83,19 +83,19 @@ public final class StepStyles_GovernmentIdStepStrokeColorJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (governmentIdStepStrokeColor != null) {
             writer.k();
-            writer.W("base");
+            writer.J("base");
             this.nullableSimpleElementColorAdapter.toJson(writer, governmentIdStepStrokeColor.getBase());
-            writer.W("governmentIdSelectOptionIcon");
+            writer.J("governmentIdSelectOptionIcon");
             this.nullableSimpleElementColorAdapter.toJson(writer, governmentIdStepStrokeColor.getGovernmentIdSelectOptionIcon());
-            writer.W("governmentIdSelectOptionChevron");
+            writer.J("governmentIdSelectOptionChevron");
             this.nullableSimpleElementColorAdapter.toJson(writer, governmentIdStepStrokeColor.getGovernmentIdSelectOptionChevron());
-            writer.W("capturePageHintIcon");
+            writer.J("capturePageHintIcon");
             this.nullableSimpleElementColorAdapter.toJson(writer, governmentIdStepStrokeColor.getCapturePageHintIcon());
-            writer.W("governmentIdCaptureFeedBox");
+            writer.J("governmentIdCaptureFeedBox");
             this.nullableSimpleElementColorAdapter.toJson(writer, governmentIdStepStrokeColor.getGovernmentIdCaptureFeedBox());
-            writer.W("captureOverlayHeaderButton");
+            writer.J("captureOverlayHeaderButton");
             this.nullableSimpleElementColorAdapter.toJson(writer, governmentIdStepStrokeColor.getCaptureOverlayHeaderButton());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

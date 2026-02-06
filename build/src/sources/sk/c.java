@@ -1,46 +1,63 @@
 package sk;
 
-import fk.p;
+import hk.d;
+import hk.g;
+import java.util.Map;
+import nk.e;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f49730a;
+    private final nk.c f49977a = new nk.c(nk.a.f40880o);
 
-    /* renamed from: b  reason: collision with root package name */
-    private final int[] f49731b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final p[] f49732c;
-
-    public c(int i10, int[] iArr, int i11, int i12, int i13) {
-        this.f49730a = i10;
-        this.f49731b = iArr;
-        float f10 = i11;
-        float f11 = i13;
-        this.f49732c = new p[]{new p(f10, f11), new p(i12, f11)};
-    }
-
-    public p[] a() {
-        return this.f49732c;
-    }
-
-    public int[] b() {
-        return this.f49731b;
-    }
-
-    public int c() {
-        return this.f49730a;
-    }
-
-    public boolean equals(Object obj) {
-        if (!(obj instanceof c) || this.f49730a != ((c) obj).f49730a) {
-            return false;
+    private int a(byte[] bArr, int i10, int i11, int i12, int i13) {
+        int i14;
+        int i15 = i11 + i12;
+        if (i13 == 0) {
+            i14 = 1;
+        } else {
+            i14 = 2;
         }
-        return true;
+        int[] iArr = new int[i15 / i14];
+        for (int i16 = 0; i16 < i15; i16++) {
+            if (i13 == 0 || i16 % 2 == i13 - 1) {
+                iArr[i16 / i14] = bArr[i16 + i10] & 255;
+            }
+        }
+        try {
+            int a10 = this.f49977a.a(iArr, i12 / i14);
+            for (int i17 = 0; i17 < i11; i17++) {
+                if (i13 == 0 || i17 % 2 == i13 - 1) {
+                    bArr[i17 + i10] = (byte) iArr[i17 / i14];
+                }
+            }
+            return a10;
+        } catch (e unused) {
+            throw d.a();
+        }
     }
 
-    public int hashCode() {
-        return this.f49730a;
+    public lk.e b(lk.b bVar, Map map) {
+        int a10;
+        byte[] bArr;
+        byte[] a11 = new a(bVar).a();
+        int a12 = a(a11, 0, 10, 10, 0);
+        int i10 = a11[0] & 15;
+        if (i10 != 2 && i10 != 3 && i10 != 4) {
+            if (i10 == 5) {
+                a10 = a12 + a(a11, 20, 68, 56, 1) + a(a11, 20, 68, 56, 2);
+                bArr = new byte[78];
+            } else {
+                throw g.a();
+            }
+        } else {
+            a10 = a12 + a(a11, 20, 84, 40, 1) + a(a11, 20, 84, 40, 2);
+            bArr = new byte[94];
+        }
+        System.arraycopy(a11, 0, bArr, 0, 10);
+        System.arraycopy(a11, 20, bArr, 10, bArr.length - 10);
+        lk.e a13 = b.a(bArr, i10);
+        a13.n(Integer.valueOf(a10));
+        return a13;
     }
 }

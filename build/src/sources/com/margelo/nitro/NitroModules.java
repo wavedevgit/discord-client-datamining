@@ -46,7 +46,7 @@ public final class NitroModules extends NitroModulesSpec {
     }
 
     static {
-        vl.a.a();
+        xl.a.a();
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

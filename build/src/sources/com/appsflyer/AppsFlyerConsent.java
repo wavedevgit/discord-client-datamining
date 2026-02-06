@@ -20,14 +20,14 @@ public final class AppsFlyerConsent {
         private Companion() {
         }
 
-        @or.c
         @NotNull
+        @qr.c
         public final AppsFlyerConsent forGDPRUser(boolean z10, boolean z11) {
             return new AppsFlyerConsent(Boolean.TRUE, Boolean.valueOf(z10), Boolean.valueOf(z11), null, 8, null);
         }
 
-        @or.c
         @NotNull
+        @qr.c
         public final AppsFlyerConsent forNonGDPRUser() {
             return new AppsFlyerConsent(Boolean.FALSE, null, null, null, 8, null);
         }
@@ -60,14 +60,14 @@ public final class AppsFlyerConsent {
         return appsFlyerConsent.copy(bool, bool2, bool3, bool4);
     }
 
-    @or.c
     @NotNull
+    @qr.c
     public static final AppsFlyerConsent forGDPRUser(boolean z10, boolean z11) {
         return Companion.forGDPRUser(z10, z11);
     }
 
-    @or.c
     @NotNull
+    @qr.c
     public static final AppsFlyerConsent forNonGDPRUser() {
         return Companion.forNonGDPRUser();
     }

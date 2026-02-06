@@ -1,25 +1,83 @@
 package qs;
 
+import kotlin.Unit;
 import kotlin.coroutines.Continuation;
-import kotlin.coroutines.CoroutineContext;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.Reflection;
+import qs.k;
+import ts.q0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-final class r implements Continuation {
+public class r extends e {
 
-    /* renamed from: d  reason: collision with root package name */
-    public static final r f48072d = new r();
+    /* renamed from: x  reason: collision with root package name */
+    private final int f48136x;
 
-    /* renamed from: e  reason: collision with root package name */
-    private static final CoroutineContext f48073e = kotlin.coroutines.e.f32062d;
+    /* renamed from: y  reason: collision with root package name */
+    private final a f48137y;
 
-    private r() {
+    public r(int i10, a aVar, Function1 function1) {
+        super(i10, function1);
+        this.f48136x = i10;
+        this.f48137y = aVar;
+        if (aVar != a.f48066d) {
+            if (i10 >= 1) {
+                return;
+            }
+            throw new IllegalArgumentException(("Buffered channel capacity must be at least 1, but " + i10 + " was specified").toString());
+        }
+        throw new IllegalArgumentException(("This implementation does not support suspension for senders, use " + Reflection.getOrCreateKotlinClass(e.class).getSimpleName() + " instead").toString());
     }
 
-    @Override // kotlin.coroutines.Continuation
-    public CoroutineContext getContext() {
-        return f48073e;
+    static /* synthetic */ Object x1(r rVar, Object obj, Continuation continuation) {
+        q0 c10;
+        Object z12 = rVar.z1(obj, true);
+        if (z12 instanceof k.a) {
+            k.e(z12);
+            Function1 function1 = rVar.f48087e;
+            if (function1 != null && (c10 = ts.x.c(function1, obj, null, 2, null)) != null) {
+                qr.e.a(c10, rVar.p0());
+                throw c10;
+            }
+            throw rVar.p0();
+        }
+        return Unit.f32008a;
     }
 
-    @Override // kotlin.coroutines.Continuation
-    public void resumeWith(Object obj) {
+    private final Object y1(Object obj, boolean z10) {
+        Function1 function1;
+        q0 c10;
+        Object i10 = super.i(obj);
+        if (!k.i(i10) && !k.h(i10)) {
+            if (z10 && (function1 = this.f48087e) != null && (c10 = ts.x.c(function1, obj, null, 2, null)) != null) {
+                throw c10;
+            }
+            return k.f48130b.c(Unit.f32008a);
+        }
+        return i10;
+    }
+
+    private final Object z1(Object obj, boolean z10) {
+        if (this.f48137y == a.f48068i) {
+            return y1(obj, z10);
+        }
+        return n1(obj);
+    }
+
+    @Override // qs.e
+    protected boolean C0() {
+        if (this.f48137y == a.f48067e) {
+            return true;
+        }
+        return false;
+    }
+
+    @Override // qs.e, qs.w
+    public Object i(Object obj) {
+        return z1(obj, false);
+    }
+
+    @Override // qs.e, qs.w
+    public Object x(Object obj, Continuation continuation) {
+        return x1(this, obj, continuation);
     }
 }

@@ -1,59 +1,57 @@
 package rs;
 
-import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.Intrinsics;
+import kotlinx.coroutines.flow.Flow;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public class q {
+public abstract /* synthetic */ class q {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final /* synthetic */ AtomicReferenceFieldUpdater f48993a = AtomicReferenceFieldUpdater.newUpdater(q.class, Object.class, "_cur$volatile");
-    private volatile /* synthetic */ Object _cur$volatile;
+    private static final Function1 f49355a = new Function1() { // from class: rs.o
+        @Override // kotlin.jvm.functions.Function1
+        public final Object invoke(Object obj) {
+            Object d10;
+            d10 = q.d(obj);
+            return d10;
+        }
+    };
 
-    public q(boolean z10) {
-        this._cur$volatile = new r(8, z10);
+    /* renamed from: b  reason: collision with root package name */
+    private static final Function2 f49356b = new Function2() { // from class: rs.p
+        @Override // kotlin.jvm.functions.Function2
+        public final Object invoke(Object obj, Object obj2) {
+            boolean c10;
+            c10 = q.c(obj, obj2);
+            return Boolean.valueOf(c10);
+        }
+    };
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final boolean c(Object obj, Object obj2) {
+        return Intrinsics.areEqual(obj, obj2);
     }
 
-    public final boolean a(Object obj) {
-        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f48993a;
-        while (true) {
-            r rVar = (r) atomicReferenceFieldUpdater.get(this);
-            int a10 = rVar.a(obj);
-            if (a10 == 0) {
-                return true;
-            }
-            if (a10 != 1) {
-                if (a10 == 2) {
-                    return false;
-                }
-            } else {
-                androidx.concurrent.futures.b.a(f48993a, this, rVar, rVar.l());
+    public static final Flow e(Flow flow) {
+        if (flow instanceof j0) {
+            return flow;
+        }
+        return f(flow, f49355a, f49356b);
+    }
+
+    private static final Flow f(Flow flow, Function1 function1, Function2 function2) {
+        if (flow instanceof f) {
+            f fVar = (f) flow;
+            if (fVar.f49259e == function1 && fVar.f49260i == function2) {
+                return flow;
             }
         }
+        return new f(flow, function1, function2);
     }
 
-    public final void b() {
-        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f48993a;
-        while (true) {
-            r rVar = (r) atomicReferenceFieldUpdater.get(this);
-            if (rVar.d()) {
-                return;
-            }
-            androidx.concurrent.futures.b.a(f48993a, this, rVar, rVar.l());
-        }
-    }
-
-    public final int c() {
-        return ((r) f48993a.get(this)).g();
-    }
-
-    public final Object e() {
-        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f48993a;
-        while (true) {
-            r rVar = (r) atomicReferenceFieldUpdater.get(this);
-            Object m10 = rVar.m();
-            if (m10 != r.f48997h) {
-                return m10;
-            }
-            androidx.concurrent.futures.b.a(f48993a, this, rVar, rVar.l());
-        }
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final Object d(Object obj) {
+        return obj;
     }
 }

@@ -8,7 +8,7 @@ import android.telephony.TelephonyManager;
 import com.discord.react.utilities.NativeMapExtensionsKt;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.WritableNativeMap;
-import fu.e;
+import hu.e;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -18,8 +18,8 @@ import okhttp3.Interceptor;
 import okhttp3.Response;
 import okhttp3.ResponseBody;
 import okio.BufferedSource;
-import or.v;
 import org.jetbrains.annotations.NotNull;
+import qr.v;
 @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0005\u0018\u0000 \u00052\u00020\u0001:\u0002\u0004\u0005B\u0007¢\u0006\u0004\b\u0002\u0010\u0003¨\u0006\u0006"}, d2 = {"Lcom/discord/resource_usage/DeviceResourceUsageRecorder;", "", "<init>", "()V", "RequestStats", "Companion", "resource_usage_monitor_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class DeviceResourceUsageRecorder {
@@ -51,13 +51,13 @@ public final class DeviceResourceUsageRecorder {
         }
 
         private final Response requestStatsInterceptor(Interceptor.Chain chain, RequestStats requestStats) {
-            Response a10 = chain.a(chain.h());
-            ResponseBody o10 = a10.o();
+            Response a10 = chain.a(chain.g());
+            ResponseBody n10 = a10.n();
             requestStats.setNumRequests(requestStats.getNumRequests() + 1);
-            if (e.b(a10) && o10 != null) {
-                BufferedSource source = o10.source();
-                source.B0(LongCompanionObject.MAX_VALUE);
-                requestStats.setBytesReceived(requestStats.getBytesReceived() + source.f().size());
+            if (e.b(a10) && n10 != null) {
+                BufferedSource source = n10.source();
+                source.D0(LongCompanionObject.MAX_VALUE);
+                requestStats.setBytesReceived(requestStats.getBytesReceived() + source.e().size());
             }
             return a10;
         }

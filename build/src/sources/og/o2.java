@@ -1,48 +1,43 @@
 package og;
+
+import yi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class o2 {
+final class o2 implements yi.d {
 
-    /* renamed from: a */
-    private ca f43196a;
+    /* renamed from: a  reason: collision with root package name */
+    static final o2 f42328a = new o2();
 
-    /* renamed from: b */
-    private Boolean f43197b;
+    /* renamed from: b  reason: collision with root package name */
+    private static final yi.c f42329b;
 
-    /* renamed from: c */
-    private n9 f43198c;
+    /* renamed from: c  reason: collision with root package name */
+    private static final yi.c f42330c;
 
-    /* renamed from: d */
-    private Integer f43199d;
+    /* renamed from: d  reason: collision with root package name */
+    private static final yi.c f42331d;
 
-    /* renamed from: e */
-    private Integer f43200e;
-
-    public final o2 a(Integer num) {
-        this.f43199d = Integer.valueOf(num.intValue() & Integer.MAX_VALUE);
-        return this;
+    static {
+        c.b a10 = yi.c.a("inferenceCommonLogEvent");
+        f fVar = new f();
+        fVar.a(1);
+        f42329b = a10.b(fVar.b()).a();
+        c.b a11 = yi.c.a("options");
+        f fVar2 = new f();
+        fVar2.a(2);
+        f42330c = a11.b(fVar2.b()).a();
+        c.b a12 = yi.c.a("imageInfo");
+        f fVar3 = new f();
+        fVar3.a(3);
+        f42331d = a12.b(fVar3.b()).a();
     }
 
-    public final o2 b(n9 n9Var) {
-        this.f43198c = n9Var;
-        return this;
+    private o2() {
     }
 
-    public final o2 c(ca caVar) {
-        this.f43196a = caVar;
-        return this;
-    }
-
-    public final o2 d(Boolean bool) {
-        this.f43197b = bool;
-        return this;
-    }
-
-    public final o2 e(Integer num) {
-        this.f43200e = Integer.valueOf(num.intValue() & Integer.MAX_VALUE);
-        return this;
-    }
-
-    public final q2 f() {
-        return new q2(this, null);
+    @Override // yi.d
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        android.support.v4.media.session.b.a(obj);
+        yi.e eVar = (yi.e) obj2;
+        throw null;
     }
 }

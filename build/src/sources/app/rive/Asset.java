@@ -64,7 +64,7 @@ public abstract class Asset<H> implements AutoCloseable {
                 r0.<init>(r5, r9)
             L18:
                 java.lang.Object r9 = r0.result
-                java.lang.Object r1 = ur.b.f()
+                java.lang.Object r1 = wr.b.f()
                 int r2 = r0.label
                 r3 = 1
                 if (r2 == 0) goto L3e
@@ -226,7 +226,7 @@ public abstract class Asset<H> implements AutoCloseable {
             @Override // kotlin.jvm.functions.Function0
             public /* bridge */ /* synthetic */ Object invoke() {
                 m17invoke();
-                return Unit.f31988a;
+                return Unit.f32008a;
             }
 
             /* renamed from: invoke  reason: collision with other method in class */

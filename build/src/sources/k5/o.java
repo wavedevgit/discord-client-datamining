@@ -6,27 +6,27 @@ import java.io.File;
 final class o {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final o f31650a = new o();
+    public static final o f31494a = new o();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final File f31651b = new File("/proc/self/fd");
+    private static final File f31495b = new File("/proc/self/fd");
 
     /* renamed from: c  reason: collision with root package name */
-    private static int f31652c = 30;
+    private static int f31496c = 30;
 
     /* renamed from: d  reason: collision with root package name */
-    private static long f31653d = SystemClock.uptimeMillis();
+    private static long f31497d = SystemClock.uptimeMillis();
 
     /* renamed from: e  reason: collision with root package name */
-    private static boolean f31654e = true;
+    private static boolean f31498e = true;
 
     private o() {
     }
 
     private final boolean a() {
-        int i10 = f31652c;
-        f31652c = i10 + 1;
-        if (i10 < 30 && SystemClock.uptimeMillis() <= f31653d + 30000) {
+        int i10 = f31496c;
+        f31496c = i10 + 1;
+        if (i10 < 30 && SystemClock.uptimeMillis() <= f31497d + 30000) {
             return false;
         }
         return true;
@@ -36,9 +36,9 @@ final class o {
         try {
             if (a()) {
                 boolean z10 = false;
-                f31652c = 0;
-                f31653d = SystemClock.uptimeMillis();
-                String[] list = f31651b.list();
+                f31496c = 0;
+                f31497d = SystemClock.uptimeMillis();
+                String[] list = f31495b.list();
                 if (list == null) {
                     list = new String[0];
                 }
@@ -46,14 +46,14 @@ final class o {
                 if (length < 800) {
                     z10 = true;
                 }
-                f31654e = z10;
-                if (!z10 && tVar != null && tVar.o() <= 5) {
+                f31498e = z10;
+                if (!z10 && tVar != null && tVar.n() <= 5) {
                     tVar.a("FileDescriptorCounter", 5, "Unable to allocate more hardware bitmaps. Number of used file descriptors: " + length, null);
                 }
             }
         } catch (Throwable th2) {
             throw th2;
         }
-        return f31654e;
+        return f31498e;
     }
 }

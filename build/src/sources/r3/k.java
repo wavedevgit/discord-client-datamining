@@ -7,9 +7,9 @@ import android.os.Parcel;
 import r3.j;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public interface k extends IInterface {
-    void W(int i10, String[] strArr);
+    void Y(int i10, String[] strArr);
 
-    void Y(j jVar, int i10);
+    void a0(j jVar, int i10);
 
     int x(j jVar, String str);
 
@@ -18,23 +18,23 @@ public interface k extends IInterface {
 
         /* renamed from: r3.k$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-        private static class C0619a implements k {
+        private static class C0617a implements k {
 
             /* renamed from: c  reason: collision with root package name */
-            private IBinder f48430c;
+            private IBinder f48514c;
 
-            C0619a(IBinder iBinder) {
-                this.f48430c = iBinder;
+            C0617a(IBinder iBinder) {
+                this.f48514c = iBinder;
             }
 
             @Override // r3.k
-            public void W(int i10, String[] strArr) {
+            public void Y(int i10, String[] strArr) {
                 Parcel obtain = Parcel.obtain();
                 try {
                     obtain.writeInterfaceToken("androidx.room.IMultiInstanceInvalidationService");
                     obtain.writeInt(i10);
                     obtain.writeStringArray(strArr);
-                    this.f48430c.transact(3, obtain, null, 1);
+                    this.f48514c.transact(3, obtain, null, 1);
                 } finally {
                     obtain.recycle();
                 }
@@ -42,7 +42,7 @@ public interface k extends IInterface {
 
             @Override // android.os.IInterface
             public IBinder asBinder() {
-                return this.f48430c;
+                return this.f48514c;
             }
 
             @Override // r3.k
@@ -53,7 +53,7 @@ public interface k extends IInterface {
                     obtain.writeInterfaceToken("androidx.room.IMultiInstanceInvalidationService");
                     obtain.writeStrongInterface(jVar);
                     obtain.writeString(str);
-                    this.f48430c.transact(1, obtain, obtain2, 0);
+                    this.f48514c.transact(1, obtain, obtain2, 0);
                     obtain2.readException();
                     return obtain2.readInt();
                 } finally {
@@ -75,7 +75,7 @@ public interface k extends IInterface {
             if (queryLocalInterface != null && (queryLocalInterface instanceof k)) {
                 return (k) queryLocalInterface;
             }
-            return new C0619a(iBinder);
+            return new C0617a(iBinder);
         }
 
         @Override // android.os.Binder
@@ -89,9 +89,9 @@ public interface k extends IInterface {
                         if (i10 != 3) {
                             return super.onTransact(i10, parcel, parcel2, i11);
                         }
-                        W(parcel.readInt(), parcel.createStringArray());
+                        Y(parcel.readInt(), parcel.createStringArray());
                     } else {
-                        Y(j.a.e(parcel.readStrongBinder()), parcel.readInt());
+                        a0(j.a.e(parcel.readStrongBinder()), parcel.readInt());
                         parcel2.writeNoException();
                     }
                 } else {

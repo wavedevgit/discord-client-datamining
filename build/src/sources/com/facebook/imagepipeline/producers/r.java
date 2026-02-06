@@ -8,15 +8,15 @@ import kotlin.jvm.internal.Intrinsics;
 public final class r implements w0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final w0 f10901a;
+    private final w0 f10800a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ScheduledExecutorService f10902b;
+    private final ScheduledExecutorService f10801b;
 
     public r(w0 inputProducer, ScheduledExecutorService scheduledExecutorService) {
         Intrinsics.checkNotNullParameter(inputProducer, "inputProducer");
-        this.f10901a = inputProducer;
-        this.f10902b = scheduledExecutorService;
+        this.f10800a = inputProducer;
+        this.f10801b = scheduledExecutorService;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -24,24 +24,24 @@ public final class r implements w0 {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(consumer, "$consumer");
         Intrinsics.checkNotNullParameter(context, "$context");
-        this$0.f10901a.b(consumer, context);
+        this$0.f10800a.b(consumer, context);
     }
 
     @Override // com.facebook.imagepipeline.producers.w0
     public void b(final Consumer consumer, final ProducerContext context) {
         Intrinsics.checkNotNullParameter(consumer, "consumer");
         Intrinsics.checkNotNullParameter(context, "context");
-        ImageRequest V = context.V();
-        ScheduledExecutorService scheduledExecutorService = this.f10902b;
+        ImageRequest I = context.I();
+        ScheduledExecutorService scheduledExecutorService = this.f10801b;
         if (scheduledExecutorService != null) {
             scheduledExecutorService.schedule(new Runnable() { // from class: com.facebook.imagepipeline.producers.q
                 @Override // java.lang.Runnable
                 public final void run() {
                     r.d(r.this, consumer, context);
                 }
-            }, V.getDelayMs(), TimeUnit.MILLISECONDS);
+            }, I.getDelayMs(), TimeUnit.MILLISECONDS);
         } else {
-            this.f10901a.b(consumer, context);
+            this.f10800a.b(consumer, context);
         }
     }
 }

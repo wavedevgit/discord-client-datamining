@@ -15,7 +15,7 @@ import kotlin.coroutines.Continuation;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.text.StringsKt;
-import ou.x;
+import qu.x;
 import x4.u;
 import x4.v;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -98,18 +98,18 @@ public final class k implements h {
                         Drawable drawable = d10;
                         boolean u10 = k5.k.u(drawable);
                         if (u10) {
-                            drawable = new BitmapDrawable(g10.getResources(), n.f31649a.a(drawable, this.f420b.f(), this.f420b.o(), this.f420b.n(), this.f420b.c()));
+                            drawable = new BitmapDrawable(g10.getResources(), n.f31493a.a(drawable, this.f420b.f(), this.f420b.o(), this.f420b.n(), this.f420b.c()));
                         }
-                        return new f(drawable, u10, x4.h.f53654i);
+                        return new f(drawable, u10, x4.h.f54473i);
                     }
                     TypedValue typedValue2 = new TypedValue();
-                    return new l(u.f(x.d(x.k(resourcesForApplication.openRawResource(intValue, typedValue2))), g10, new v(authority, intValue, typedValue2.density)), j10, x4.h.f53654i);
+                    return new l(u.f(x.d(x.k(resourcesForApplication.openRawResource(intValue, typedValue2))), g10, new v(authority, intValue, typedValue2.density)), j10, x4.h.f54473i);
                 }
                 b(this.f419a);
-                throw new or.h();
+                throw new qr.h();
             }
         }
         b(this.f419a);
-        throw new or.h();
+        throw new qr.h();
     }
 }

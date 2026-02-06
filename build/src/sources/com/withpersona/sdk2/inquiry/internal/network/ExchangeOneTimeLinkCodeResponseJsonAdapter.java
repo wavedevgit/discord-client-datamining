@@ -13,50 +13,50 @@ import org.jetbrains.annotations.NotNull;
 public final class ExchangeOneTimeLinkCodeResponseJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19216a;
+    private final m.b f19196a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f19217b;
+    private final com.squareup.moshi.h f19197b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final com.squareup.moshi.h f19218c;
+    private final com.squareup.moshi.h f19198c;
 
     public ExchangeOneTimeLinkCodeResponseJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("data", "meta");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19216a = a10;
+        this.f19196a = a10;
         com.squareup.moshi.h f10 = moshi.f(ExchangeOneTimeLinkCodeResponse.Data.class, x0.d(), "data");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19217b = f10;
+        this.f19197b = f10;
         com.squareup.moshi.h f11 = moshi.f(ExchangeOneTimeLinkCodeResponse.Metadata.class, x0.d(), "meta");
         Intrinsics.checkNotNullExpressionValue(f11, "adapter(...)");
-        this.f19218c = f11;
+        this.f19198c = f11;
     }
 
     @Override // com.squareup.moshi.h
     /* renamed from: a */
     public ExchangeOneTimeLinkCodeResponse fromJson(m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         ExchangeOneTimeLinkCodeResponse.Data data = null;
         ExchangeOneTimeLinkCodeResponse.Metadata metadata = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.f19216a);
-            if (W != -1) {
-                if (W != 0) {
-                    if (W == 1) {
-                        metadata = (ExchangeOneTimeLinkCodeResponse.Metadata) this.f19218c.fromJson(reader);
+            int J = reader.J(this.f19196a);
+            if (J != -1) {
+                if (J != 0) {
+                    if (J == 1) {
+                        metadata = (ExchangeOneTimeLinkCodeResponse.Metadata) this.f19198c.fromJson(reader);
                     }
                 } else {
-                    data = (ExchangeOneTimeLinkCodeResponse.Data) this.f19217b.fromJson(reader);
+                    data = (ExchangeOneTimeLinkCodeResponse.Data) this.f19197b.fromJson(reader);
                 }
             } else {
                 reader.E0();
-                reader.P();
+                reader.S();
             }
         }
-        reader.z();
+        reader.D();
         return new ExchangeOneTimeLinkCodeResponse(data, metadata);
     }
 
@@ -66,11 +66,11 @@ public final class ExchangeOneTimeLinkCodeResponseJsonAdapter extends com.square
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (exchangeOneTimeLinkCodeResponse != null) {
             writer.k();
-            writer.W("data");
-            this.f19217b.toJson(writer, exchangeOneTimeLinkCodeResponse.a());
-            writer.W("meta");
-            this.f19218c.toJson(writer, exchangeOneTimeLinkCodeResponse.b());
-            writer.E();
+            writer.J("data");
+            this.f19197b.toJson(writer, exchangeOneTimeLinkCodeResponse.a());
+            writer.J("meta");
+            this.f19198c.toJson(writer, exchangeOneTimeLinkCodeResponse.b());
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

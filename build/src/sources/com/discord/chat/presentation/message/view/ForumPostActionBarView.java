@@ -57,7 +57,7 @@ public final class ForumPostActionBarView extends ConstraintLayout {
     public static final Unit configure_CgeVRR0$lambda$8$lambda$7(int i10, RenderContext i18nFormat) {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put("count", String.valueOf(i10));
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     private final void setReactions(List<? extends ReactionView.Reaction> list, ReactionView.ReactionsTheme reactionsTheme, View.OnClickListener onClickListener, Function1<? super ReactionView.Reaction, Unit> function1, Function1<? super ReactionView.Reaction, Unit> function12) {
@@ -85,11 +85,11 @@ public final class ForumPostActionBarView extends ConstraintLayout {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setReactions$lambda$12(ReactionView.Reaction it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* renamed from: setSharePrompt-LdU2QRA  reason: not valid java name */
-    private final void m694setSharePromptLdU2QRA(final String str, PostSharePrompt postSharePrompt, View.OnClickListener onClickListener, String str2, View.OnClickListener onClickListener2, final Function2<? super MessageId, ? super LinkContentNode, Unit> function2) {
+    private final void m692setSharePromptLdU2QRA(final String str, PostSharePrompt postSharePrompt, View.OnClickListener onClickListener, String str2, View.OnClickListener onClickListener2, final Function2<? super MessageId, ? super LinkContentNode, Unit> function2) {
         boolean z10;
         int i10;
         ConstraintLayout sharePromptContainer = this.binding.sharePromptContainer;
@@ -145,8 +145,8 @@ public final class ForumPostActionBarView extends ConstraintLayout {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setSharePrompt_LdU2QRA$lambda$16$lambda$15(Function2 function2, String str, LinkContentNode node) {
         Intrinsics.checkNotNullParameter(node, "node");
-        function2.invoke(MessageId.m1085boximpl(str), node);
-        return Unit.f31988a;
+        function2.invoke(MessageId.m1083boximpl(str), node);
+        return Unit.f32008a;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:27:0x011b  */
@@ -160,12 +160,12 @@ public final class ForumPostActionBarView extends ConstraintLayout {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
     */
-    public final void m695configureCgeVRR0(@org.jetbrains.annotations.NotNull java.lang.String r26, int r27, boolean r28, java.lang.String r29, @org.jetbrains.annotations.NotNull java.lang.String r30, java.lang.String r31, @org.jetbrains.annotations.NotNull java.lang.String r32, java.util.List<? extends com.discord.reactions.ReactionView.Reaction> r33, com.discord.reactions.ReactionView.Reaction r34, boolean r35, @org.jetbrains.annotations.NotNull java.lang.String r36, com.discord.reactions.ReactionView.ReactionsTheme r37, @org.jetbrains.annotations.NotNull android.view.View.OnClickListener r38, @org.jetbrains.annotations.NotNull kotlin.jvm.functions.Function1<? super com.discord.reactions.ReactionView.Reaction, kotlin.Unit> r39, @org.jetbrains.annotations.NotNull kotlin.jvm.functions.Function1<? super com.discord.reactions.ReactionView.Reaction, kotlin.Unit> r40, @org.jetbrains.annotations.NotNull android.view.View.OnClickListener r41, @org.jetbrains.annotations.NotNull android.view.View.OnClickListener r42, @org.jetbrains.annotations.NotNull android.view.View.OnClickListener r43, com.discord.chat.bridge.forums.PostSharePrompt r44, @org.jetbrains.annotations.NotNull android.view.View.OnClickListener r45, @org.jetbrains.annotations.NotNull kotlin.jvm.functions.Function2<? super com.discord.primitives.MessageId, ? super com.discord.chat.bridge.contentnode.LinkContentNode, kotlin.Unit> r46) {
+    public final void m693configureCgeVRR0(@org.jetbrains.annotations.NotNull java.lang.String r26, int r27, boolean r28, java.lang.String r29, @org.jetbrains.annotations.NotNull java.lang.String r30, java.lang.String r31, @org.jetbrains.annotations.NotNull java.lang.String r32, java.util.List<? extends com.discord.reactions.ReactionView.Reaction> r33, com.discord.reactions.ReactionView.Reaction r34, boolean r35, @org.jetbrains.annotations.NotNull java.lang.String r36, com.discord.reactions.ReactionView.ReactionsTheme r37, @org.jetbrains.annotations.NotNull android.view.View.OnClickListener r38, @org.jetbrains.annotations.NotNull kotlin.jvm.functions.Function1<? super com.discord.reactions.ReactionView.Reaction, kotlin.Unit> r39, @org.jetbrains.annotations.NotNull kotlin.jvm.functions.Function1<? super com.discord.reactions.ReactionView.Reaction, kotlin.Unit> r40, @org.jetbrains.annotations.NotNull android.view.View.OnClickListener r41, @org.jetbrains.annotations.NotNull android.view.View.OnClickListener r42, @org.jetbrains.annotations.NotNull android.view.View.OnClickListener r43, com.discord.chat.bridge.forums.PostSharePrompt r44, @org.jetbrains.annotations.NotNull android.view.View.OnClickListener r45, @org.jetbrains.annotations.NotNull kotlin.jvm.functions.Function2<? super com.discord.primitives.MessageId, ? super com.discord.chat.bridge.contentnode.LinkContentNode, kotlin.Unit> r46) {
         /*
             Method dump skipped, instructions count: 412
             To view this dump add '--comments-level debug' option
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.discord.chat.presentation.message.view.ForumPostActionBarView.m695configureCgeVRR0(java.lang.String, int, boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.util.List, com.discord.reactions.ReactionView$Reaction, boolean, java.lang.String, com.discord.reactions.ReactionView$ReactionsTheme, android.view.View$OnClickListener, kotlin.jvm.functions.Function1, kotlin.jvm.functions.Function1, android.view.View$OnClickListener, android.view.View$OnClickListener, android.view.View$OnClickListener, com.discord.chat.bridge.forums.PostSharePrompt, android.view.View$OnClickListener, kotlin.jvm.functions.Function2):void");
+        throw new UnsupportedOperationException("Method not decompiled: com.discord.chat.presentation.message.view.ForumPostActionBarView.m693configureCgeVRR0(java.lang.String, int, boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.util.List, com.discord.reactions.ReactionView$Reaction, boolean, java.lang.String, com.discord.reactions.ReactionView$ReactionsTheme, android.view.View$OnClickListener, kotlin.jvm.functions.Function1, kotlin.jvm.functions.Function1, android.view.View$OnClickListener, android.view.View$OnClickListener, android.view.View$OnClickListener, com.discord.chat.bridge.forums.PostSharePrompt, android.view.View$OnClickListener, kotlin.jvm.functions.Function2):void");
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */

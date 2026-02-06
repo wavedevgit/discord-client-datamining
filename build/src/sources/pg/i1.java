@@ -1,56 +1,33 @@
 package pg;
-
-import java.util.Iterator;
-import java.util.Map;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 final class i1 extends p0 {
 
     /* renamed from: i  reason: collision with root package name */
-    private final transient o0 f45263i;
+    private final transient Object[] f44320i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final transient Object[] f45264o;
+    private final transient int f44321o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final transient int f45265p = 1;
+    private final transient int f44322p;
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public i1(o0 o0Var, Object[] objArr, int i10, int i11) {
-        this.f45263i = o0Var;
-        this.f45264o = objArr;
+    public i1(Object[] objArr, int i10, int i11) {
+        this.f44320i = objArr;
+        this.f44321o = i10;
+        this.f44322p = i11;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    @Override // pg.h0
-    public final int b(Object[] objArr, int i10) {
-        return f().b(objArr, 0);
+    @Override // java.util.List
+    public final Object get(int i10) {
+        c.a(i10, this.f44322p, "index");
+        Object obj = this.f44320i[i10 + i10 + this.f44321o];
+        obj.getClass();
+        return obj;
     }
 
-    @Override // pg.h0, java.util.AbstractCollection, java.util.Collection
-    public final boolean contains(Object obj) {
-        if (obj instanceof Map.Entry) {
-            Map.Entry entry = (Map.Entry) obj;
-            Object key = entry.getKey();
-            Object value = entry.getValue();
-            if (value != null && value.equals(this.f45263i.get(key))) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    @Override // pg.p0
-    final m0 g() {
-        return new h1(this);
-    }
-
-    @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set
-    public final /* synthetic */ Iterator iterator() {
-        return f().listIterator(0);
-    }
-
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
+    @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
     public final int size() {
-        return this.f45265p;
+        return this.f44322p;
     }
 }

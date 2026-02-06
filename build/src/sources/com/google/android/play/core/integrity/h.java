@@ -4,58 +4,58 @@ import android.os.Parcelable;
 import android.os.RemoteException;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class h extends ji.u0 {
+public final class h extends ki.u0 {
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ byte[] f16174e;
+    final /* synthetic */ byte[] f16154e;
 
     /* renamed from: i  reason: collision with root package name */
-    final /* synthetic */ Long f16175i;
+    final /* synthetic */ Long f16155i;
 
     /* renamed from: o  reason: collision with root package name */
-    final /* synthetic */ Parcelable f16176o;
+    final /* synthetic */ Parcelable f16156o;
 
     /* renamed from: p  reason: collision with root package name */
-    final /* synthetic */ xg.k f16177p;
+    final /* synthetic */ yg.k f16157p;
 
     /* renamed from: q  reason: collision with root package name */
-    final /* synthetic */ IntegrityTokenRequest f16178q;
+    final /* synthetic */ IntegrityTokenRequest f16158q;
 
     /* renamed from: r  reason: collision with root package name */
-    final /* synthetic */ k f16179r;
+    final /* synthetic */ k f16159r;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public h(k kVar, xg.k kVar2, byte[] bArr, Long l10, Parcelable parcelable, xg.k kVar3, IntegrityTokenRequest integrityTokenRequest) {
+    public h(k kVar, yg.k kVar2, byte[] bArr, Long l10, Parcelable parcelable, yg.k kVar3, IntegrityTokenRequest integrityTokenRequest) {
         super(kVar2);
-        this.f16174e = bArr;
-        this.f16175i = l10;
-        this.f16176o = parcelable;
-        this.f16177p = kVar3;
-        this.f16178q = integrityTokenRequest;
-        this.f16179r = kVar;
+        this.f16154e = bArr;
+        this.f16155i = l10;
+        this.f16156o = parcelable;
+        this.f16157p = kVar3;
+        this.f16158q = integrityTokenRequest;
+        this.f16159r = kVar;
     }
 
-    @Override // ji.u0
+    @Override // ki.u0
     public final void a(Exception exc) {
-        if (exc instanceof ji.g) {
+        if (exc instanceof ki.g) {
             super.a(new a(-9, exc));
         } else {
             super.a(exc);
         }
     }
 
-    @Override // ji.u0
+    @Override // ki.u0
     protected final void b() {
-        ji.t0 t0Var;
+        ki.t0 t0Var;
         try {
-            ((ji.q0) this.f16179r.f16203f.e()).i(k.a(this.f16179r, this.f16174e, this.f16175i, this.f16176o), new j(this.f16179r, this.f16177p));
+            ((ki.q0) this.f16159r.f16183f.e()).V0(k.a(this.f16159r, this.f16154e, this.f16155i, this.f16156o), new j(this.f16159r, this.f16157p));
         } catch (RemoteException e10) {
-            k kVar = this.f16179r;
-            IntegrityTokenRequest integrityTokenRequest = this.f16178q;
-            t0Var = kVar.f16198a;
+            k kVar = this.f16159r;
+            IntegrityTokenRequest integrityTokenRequest = this.f16158q;
+            t0Var = kVar.f16178a;
             t0Var.b(e10, "requestIntegrityToken(%s)", integrityTokenRequest);
-            this.f16177p.d(new a(-100, e10));
+            this.f16157p.d(new a(-100, e10));
         }
     }
 }

@@ -5,7 +5,7 @@ import android.database.Cursor;
 final class l {
 
     /* renamed from: a  reason: collision with root package name */
-    public Cursor f13882a;
+    public Cursor f13845a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ l(byte[] bArr) {

@@ -7,16 +7,16 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewParent;
-import bn.a0;
-import bn.e0;
-import bn.f0;
-import bn.g0;
-import bn.h0;
-import bn.r;
-import cn.d;
 import com.facebook.react.devsupport.StackTraceHelper;
 import com.facebook.react.modules.appstate.AppStateModule;
 import com.squareup.workflow1.ui.WorkflowViewStub;
+import dn.a0;
+import dn.e0;
+import dn.f0;
+import dn.g0;
+import dn.h0;
+import dn.r;
+import en.d;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function0;
@@ -27,21 +27,21 @@ import kotlin.jvm.internal.Lambda;
 import org.jetbrains.annotations.NotNull;
 import u3.f;
 import u3.j;
-@Metadata(d1 = {"\u0000N\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0010\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0010\u000b\n\u0002\b\r\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\b\b\u0007\u0018\u00002\u00020\u0001B1\b\u0007\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u0004\u0012\b\b\u0002\u0010\u0007\u001a\u00020\u0006\u0012\b\b\u0002\u0010\b\u001a\u00020\u0006¢\u0006\u0004\b\t\u0010\nJ\u0017\u0010\r\u001a\u00020\f2\u0006\u0010\u000b\u001a\u00020\u0001H\u0002¢\u0006\u0004\b\r\u0010\u000eJ\u0019\u0010\u0010\u001a\u00020\f2\b\b\u0001\u0010\u000f\u001a\u00020\u0006H\u0016¢\u0006\u0004\b\u0010\u0010\u0011J\u0017\u0010\u0013\u001a\u00020\f2\u0006\u0010\u0012\u001a\u00020\u0006H\u0016¢\u0006\u0004\b\u0013\u0010\u0011J\u000f\u0010\u0014\u001a\u00020\u0006H\u0016¢\u0006\u0004\b\u0014\u0010\u0015J\u0019\u0010\u0018\u001a\u00020\f2\b\u0010\u0017\u001a\u0004\u0018\u00010\u0016H\u0016¢\u0006\u0004\b\u0018\u0010\u0019J\u001d\u0010\u001e\u001a\u00020\u00012\u0006\u0010\u001b\u001a\u00020\u001a2\u0006\u0010\u001d\u001a\u00020\u001c¢\u0006\u0004\b\u001e\u0010\u001fR$\u0010%\u001a\u00020\u00012\u0006\u0010 \u001a\u00020\u00018\u0006@BX\u0086\u000e¢\u0006\f\n\u0004\b!\u0010\"\u001a\u0004\b#\u0010$R\"\u0010-\u001a\u00020&8\u0006@\u0006X\u0086\u000e¢\u0006\u0012\n\u0004\b'\u0010(\u001a\u0004\b)\u0010*\"\u0004\b+\u0010,R*\u00103\u001a\u00020\u00062\u0006\u0010.\u001a\u00020\u00068\u0006@FX\u0087\u000e¢\u0006\u0012\n\u0004\b/\u00100\u001a\u0004\b1\u0010\u0015\"\u0004\b2\u0010\u0011R4\u0010<\u001a\u0014\u0012\u0004\u0012\u000205\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020\f048\u0006@\u0006X\u0086\u000e¢\u0006\u0012\n\u0004\b6\u00107\u001a\u0004\b8\u00109\"\u0004\b:\u0010;¨\u0006="}, d2 = {"Lcom/squareup/workflow1/ui/WorkflowViewStub;", "Landroid/view/View;", "Landroid/content/Context;", "context", "Landroid/util/AttributeSet;", "attributeSet", "", "defStyle", "defStyleRes", "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;II)V", "newView", "", "b", "(Landroid/view/View;)V", StackTraceHelper.ID_KEY, "setId", "(I)V", "visibility", "setVisibility", "getVisibility", "()I", "Landroid/graphics/drawable/Drawable;", AppStateModule.APP_STATE_BACKGROUND, "setBackground", "(Landroid/graphics/drawable/Drawable;)V", "", "rendering", "Lbn/a0;", "viewEnvironment", "c", "(Ljava/lang/Object;Lbn/a0;)Landroid/view/View;", "<set-?>", "d", "Landroid/view/View;", "getActual", "()Landroid/view/View;", "actual", "", "e", "Z", "getUpdatesVisibility", "()Z", "setUpdatesVisibility", "(Z)V", "updatesVisibility", "value", "i", "I", "getInflatedId", "setInflatedId", "inflatedId", "Lkotlin/Function2;", "Landroid/view/ViewGroup;", "o", "Lkotlin/jvm/functions/Function2;", "getReplaceOldViewInParent", "()Lkotlin/jvm/functions/Function2;", "setReplaceOldViewInParent", "(Lkotlin/jvm/functions/Function2;)V", "replaceOldViewInParent", "wf1-core-android"}, k = 1, mv = {1, 6, 0}, xi = 48)
+@Metadata(d1 = {"\u0000N\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0010\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0010\u000b\n\u0002\b\r\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\b\b\u0007\u0018\u00002\u00020\u0001B1\b\u0007\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u0004\u0012\b\b\u0002\u0010\u0007\u001a\u00020\u0006\u0012\b\b\u0002\u0010\b\u001a\u00020\u0006¢\u0006\u0004\b\t\u0010\nJ\u0017\u0010\r\u001a\u00020\f2\u0006\u0010\u000b\u001a\u00020\u0001H\u0002¢\u0006\u0004\b\r\u0010\u000eJ\u0019\u0010\u0010\u001a\u00020\f2\b\b\u0001\u0010\u000f\u001a\u00020\u0006H\u0016¢\u0006\u0004\b\u0010\u0010\u0011J\u0017\u0010\u0013\u001a\u00020\f2\u0006\u0010\u0012\u001a\u00020\u0006H\u0016¢\u0006\u0004\b\u0013\u0010\u0011J\u000f\u0010\u0014\u001a\u00020\u0006H\u0016¢\u0006\u0004\b\u0014\u0010\u0015J\u0019\u0010\u0018\u001a\u00020\f2\b\u0010\u0017\u001a\u0004\u0018\u00010\u0016H\u0016¢\u0006\u0004\b\u0018\u0010\u0019J\u001d\u0010\u001e\u001a\u00020\u00012\u0006\u0010\u001b\u001a\u00020\u001a2\u0006\u0010\u001d\u001a\u00020\u001c¢\u0006\u0004\b\u001e\u0010\u001fR$\u0010%\u001a\u00020\u00012\u0006\u0010 \u001a\u00020\u00018\u0006@BX\u0086\u000e¢\u0006\f\n\u0004\b!\u0010\"\u001a\u0004\b#\u0010$R\"\u0010-\u001a\u00020&8\u0006@\u0006X\u0086\u000e¢\u0006\u0012\n\u0004\b'\u0010(\u001a\u0004\b)\u0010*\"\u0004\b+\u0010,R*\u00103\u001a\u00020\u00062\u0006\u0010.\u001a\u00020\u00068\u0006@FX\u0087\u000e¢\u0006\u0012\n\u0004\b/\u00100\u001a\u0004\b1\u0010\u0015\"\u0004\b2\u0010\u0011R4\u0010<\u001a\u0014\u0012\u0004\u0012\u000205\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020\f048\u0006@\u0006X\u0086\u000e¢\u0006\u0012\n\u0004\b6\u00107\u001a\u0004\b8\u00109\"\u0004\b:\u0010;¨\u0006="}, d2 = {"Lcom/squareup/workflow1/ui/WorkflowViewStub;", "Landroid/view/View;", "Landroid/content/Context;", "context", "Landroid/util/AttributeSet;", "attributeSet", "", "defStyle", "defStyleRes", "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;II)V", "newView", "", "b", "(Landroid/view/View;)V", StackTraceHelper.ID_KEY, "setId", "(I)V", "visibility", "setVisibility", "getVisibility", "()I", "Landroid/graphics/drawable/Drawable;", AppStateModule.APP_STATE_BACKGROUND, "setBackground", "(Landroid/graphics/drawable/Drawable;)V", "", "rendering", "Ldn/a0;", "viewEnvironment", "c", "(Ljava/lang/Object;Ldn/a0;)Landroid/view/View;", "<set-?>", "d", "Landroid/view/View;", "getActual", "()Landroid/view/View;", "actual", "", "e", "Z", "getUpdatesVisibility", "()Z", "setUpdatesVisibility", "(Z)V", "updatesVisibility", "value", "i", "I", "getInflatedId", "setInflatedId", "inflatedId", "Lkotlin/Function2;", "Landroid/view/ViewGroup;", "o", "Lkotlin/jvm/functions/Function2;", "getReplaceOldViewInParent", "()Lkotlin/jvm/functions/Function2;", "setReplaceOldViewInParent", "(Lkotlin/jvm/functions/Function2;)V", "replaceOldViewInParent", "wf1-core-android"}, k = 1, mv = {1, 6, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class WorkflowViewStub extends View {
 
     /* renamed from: d  reason: collision with root package name */
-    private View f18065d;
+    private View f18045d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f18066e;
+    private boolean f18046e;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f18067i;
+    private int f18047i;
 
     /* renamed from: o  reason: collision with root package name */
-    private Function2 f18068o;
+    private Function2 f18048o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     static final class a extends Lambda implements Function2 {
@@ -60,7 +60,7 @@ public final class WorkflowViewStub extends View {
                 unit = null;
             } else {
                 parent.addView(newView, indexOfChild, layoutParams);
-                unit = Unit.f31988a;
+                unit = Unit.f32008a;
             }
             if (unit == null) {
                 parent.addView(newView, indexOfChild);
@@ -70,7 +70,7 @@ public final class WorkflowViewStub extends View {
         @Override // kotlin.jvm.functions.Function2
         public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
             a((ViewGroup) obj, (View) obj2);
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
     }
 
@@ -102,7 +102,7 @@ public final class WorkflowViewStub extends View {
     public static final void d(View view, Function0 doStart) {
         Intrinsics.checkNotNullParameter(view, "view");
         Intrinsics.checkNotNullParameter(doStart, "doStart");
-        d.a.e(d.f7731a, view, null, 2, null);
+        d.a.e(d.f21675f, view, null, 2, null);
         doStart.invoke();
     }
 
@@ -110,26 +110,26 @@ public final class WorkflowViewStub extends View {
         d c10;
         Intrinsics.checkNotNullParameter(rendering, "rendering");
         Intrinsics.checkNotNullParameter(viewEnvironment, "viewEnvironment");
-        View view = this.f18065d;
+        View view = this.f18045d;
         ViewGroup viewGroup = null;
         if (!g0.b(view, rendering)) {
             view = null;
         }
         if (view == null) {
-            ViewParent parent = this.f18065d.getParent();
+            ViewParent parent = this.f18045d.getParent();
             if (parent instanceof ViewGroup) {
                 viewGroup = (ViewGroup) parent;
             }
             ViewGroup viewGroup2 = viewGroup;
             if (viewGroup2 != null) {
-                View view2 = this.f18065d;
-                if (view2 != this && (c10 = d.f7731a.c(view2)) != null) {
+                View view2 = this.f18045d;
+                if (view2 != this && (c10 = d.f21675f.c(view2)) != null) {
                     c10.d();
                 }
                 Context context = viewGroup2.getContext();
                 Intrinsics.checkNotNullExpressionValue(context, "parent.context");
-                View c11 = f0.c((e0) viewEnvironment.a(e0.f6544a), rendering, viewEnvironment, context, viewGroup2, new h0() { // from class: bn.l0
-                    @Override // bn.h0
+                View c11 = f0.c((e0) viewEnvironment.a(e0.f20867a), rendering, viewEnvironment, context, viewGroup2, new h0() { // from class: dn.l0
+                    @Override // dn.h0
                     public final void a(View view3, Function0 function0) {
                         WorkflowViewStub.d(view3, function0);
                     }
@@ -147,7 +147,7 @@ public final class WorkflowViewStub extends View {
                 }
                 b(c11);
                 getReplaceOldViewInParent().invoke(viewGroup2, c11);
-                this.f18065d = c11;
+                this.f18045d = c11;
                 return c11;
             }
             throw new IllegalStateException("WorkflowViewStub must have a non-null ViewGroup parent");
@@ -158,43 +158,43 @@ public final class WorkflowViewStub extends View {
 
     @NotNull
     public final View getActual() {
-        return this.f18065d;
+        return this.f18045d;
     }
 
     public final int getInflatedId() {
-        return this.f18067i;
+        return this.f18047i;
     }
 
     @NotNull
     public final Function2<ViewGroup, View, Unit> getReplaceOldViewInParent() {
-        return this.f18068o;
+        return this.f18048o;
     }
 
     public final boolean getUpdatesVisibility() {
-        return this.f18066e;
+        return this.f18046e;
     }
 
     @Override // android.view.View
     public int getVisibility() {
-        View view = this.f18065d;
+        View view = this.f18045d;
         if (Intrinsics.areEqual(view, this) || view == null) {
             return super.getVisibility();
         }
-        return this.f18065d.getVisibility();
+        return this.f18045d.getVisibility();
     }
 
     @Override // android.view.View
     public void setBackground(Drawable drawable) {
         View view;
         super.setBackground(drawable);
-        if (!Intrinsics.areEqual(this.f18065d, this) && (view = this.f18065d) != null && drawable != null) {
+        if (!Intrinsics.areEqual(this.f18045d, this) && (view = this.f18045d) != null && drawable != null) {
             view.setBackground(drawable);
         }
     }
 
     @Override // android.view.View
     public void setId(int i10) {
-        if (i10 != -1 && i10 == this.f18067i) {
+        if (i10 != -1 && i10 == this.f18047i) {
             throw new IllegalArgumentException(Intrinsics.stringPlus("id must be distinct from inflatedId: ", getResources().getResourceName(i10)).toString());
         }
         super.setId(i10);
@@ -204,23 +204,23 @@ public final class WorkflowViewStub extends View {
         if (i10 != -1 && i10 == getId()) {
             throw new IllegalArgumentException(Intrinsics.stringPlus("inflatedId must be distinct from id: ", getResources().getResourceName(getId())).toString());
         }
-        this.f18067i = i10;
+        this.f18047i = i10;
     }
 
     public final void setReplaceOldViewInParent(@NotNull Function2<? super ViewGroup, ? super View, Unit> function2) {
         Intrinsics.checkNotNullParameter(function2, "<set-?>");
-        this.f18068o = function2;
+        this.f18048o = function2;
     }
 
     public final void setUpdatesVisibility(boolean z10) {
-        this.f18066e = z10;
+        this.f18046e = z10;
     }
 
     @Override // android.view.View
     public void setVisibility(int i10) {
         View view;
         super.setVisibility(i10);
-        if (!Intrinsics.areEqual(this.f18065d, this) && (view = this.f18065d) != null) {
+        if (!Intrinsics.areEqual(this.f18045d, this) && (view = this.f18045d) != null) {
             view.setVisibility(i10);
         }
     }
@@ -233,15 +233,15 @@ public final class WorkflowViewStub extends View {
     public WorkflowViewStub(Context context, AttributeSet attributeSet, int i10, int i11) {
         super(context, attributeSet, i10, i11);
         Intrinsics.checkNotNullParameter(context, "context");
-        this.f18065d = this;
-        this.f18066e = true;
-        this.f18067i = -1;
+        this.f18045d = this;
+        this.f18046e = true;
+        this.f18047i = -1;
         TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, r.U, i10, i11);
         Intrinsics.checkNotNullExpressionValue(obtainStyledAttributes, "context.obtainStyledAttr…fStyle, defStyleRes\n    )");
         setInflatedId(obtainStyledAttributes.getResourceId(r.V, -1));
-        this.f18066e = obtainStyledAttributes.getBoolean(r.W, true);
+        this.f18046e = obtainStyledAttributes.getBoolean(r.W, true);
         obtainStyledAttributes.recycle();
         setWillNotDraw(true);
-        this.f18068o = new a();
+        this.f18048o = new a();
     }
 }

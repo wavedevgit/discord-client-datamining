@@ -18,13 +18,13 @@ import kotlin.text.StringsKt;
 public final class g0 extends j0 {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f10755d = new a(null);
+    public static final a f10654d = new a(null);
 
     /* renamed from: e  reason: collision with root package name */
-    private static final String[] f10756e = {"_id", "_data"};
+    private static final String[] f10655e = {"_id", "_data"};
 
     /* renamed from: c  reason: collision with root package name */
-    private final ContentResolver f10757c;
+    private final ContentResolver f10656c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
@@ -42,12 +42,12 @@ public final class g0 extends j0 {
         Intrinsics.checkNotNullParameter(executor, "executor");
         Intrinsics.checkNotNullParameter(pooledByteBufferFactory, "pooledByteBufferFactory");
         Intrinsics.checkNotNullParameter(contentResolver, "contentResolver");
-        this.f10757c = contentResolver;
+        this.f10656c = contentResolver;
     }
 
     private final sa.k g(Uri uri) {
         try {
-            ParcelFileDescriptor openFileDescriptor = this.f10757c.openFileDescriptor(uri, "r");
+            ParcelFileDescriptor openFileDescriptor = this.f10656c.openFileDescriptor(uri, "r");
             if (openFileDescriptor != null) {
                 sa.k e10 = e(new FileInputStream(openFileDescriptor.getFileDescriptor()), (int) openFileDescriptor.getStatSize());
                 Intrinsics.checkNotNullExpressionValue(e10, "getEncodedImage(...)");
@@ -71,13 +71,13 @@ public final class g0 extends j0 {
             String uri = sourceUri.toString();
             Intrinsics.checkNotNullExpressionValue(uri, "toString(...)");
             if (StringsKt.z(uri, "/photo", false, 2, null)) {
-                createInputStream = this.f10757c.openInputStream(sourceUri);
+                createInputStream = this.f10656c.openInputStream(sourceUri);
             } else {
                 String uri2 = sourceUri.toString();
                 Intrinsics.checkNotNullExpressionValue(uri2, "toString(...)");
                 if (StringsKt.z(uri2, "/display_photo", false, 2, null)) {
                     try {
-                        AssetFileDescriptor openAssetFileDescriptor = this.f10757c.openAssetFileDescriptor(sourceUri, "r");
+                        AssetFileDescriptor openAssetFileDescriptor = this.f10656c.openAssetFileDescriptor(sourceUri, "r");
                         if (openAssetFileDescriptor != null) {
                             createInputStream = openAssetFileDescriptor.createInputStream();
                         } else {
@@ -87,7 +87,7 @@ public final class g0 extends j0 {
                         throw new IOException("Contact photo does not exist: " + sourceUri);
                     }
                 } else {
-                    InputStream openContactPhotoInputStream = ContactsContract.Contacts.openContactPhotoInputStream(this.f10757c, sourceUri);
+                    InputStream openContactPhotoInputStream = ContactsContract.Contacts.openContactPhotoInputStream(this.f10656c, sourceUri);
                     if (openContactPhotoInputStream != null) {
                         createInputStream = openContactPhotoInputStream;
                     } else {
@@ -102,7 +102,7 @@ public final class g0 extends j0 {
         } else if (w8.f.k(sourceUri) && (g10 = g(sourceUri)) != null) {
             return g10;
         } else {
-            InputStream openInputStream = this.f10757c.openInputStream(sourceUri);
+            InputStream openInputStream = this.f10656c.openInputStream(sourceUri);
             if (openInputStream != null) {
                 return e(openInputStream, -1);
             }

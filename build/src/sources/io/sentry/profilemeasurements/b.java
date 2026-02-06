@@ -16,16 +16,16 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class b implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private Map f29256d;
+    private Map f28400d;
 
     /* renamed from: e  reason: collision with root package name */
-    private double f29257e;
+    private double f28401e;
 
     /* renamed from: i  reason: collision with root package name */
-    private String f29258i;
+    private String f28402i;
 
     /* renamed from: o  reason: collision with root package name */
-    private double f29259o;
+    private double f28403o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -33,28 +33,28 @@ public final class b implements w1 {
         /* renamed from: b */
         public b a(e3 e3Var, ILogger iLogger) {
             Double d10;
-            e3Var.s();
+            e3Var.u();
             b bVar = new b();
             ConcurrentHashMap concurrentHashMap = null;
             while (e3Var.peek() == io.sentry.vendor.gson.stream.b.NAME) {
-                String m02 = e3Var.m0();
-                m02.getClass();
+                String o02 = e3Var.o0();
+                o02.getClass();
                 char c10 = 65535;
-                switch (m02.hashCode()) {
+                switch (o02.hashCode()) {
                     case -1709412534:
-                        if (m02.equals("elapsed_since_start_ns")) {
+                        if (o02.equals("elapsed_since_start_ns")) {
                             c10 = 0;
                             break;
                         }
                         break;
                     case 55126294:
-                        if (m02.equals("timestamp")) {
+                        if (o02.equals("timestamp")) {
                             c10 = 1;
                             break;
                         }
                         break;
                     case 111972721:
-                        if (m02.equals("value")) {
+                        if (o02.equals("value")) {
                             c10 = 2;
                             break;
                         }
@@ -62,20 +62,20 @@ public final class b implements w1 {
                 }
                 switch (c10) {
                     case 0:
-                        String r12 = e3Var.r1();
-                        if (r12 == null) {
+                        String q12 = e3Var.q1();
+                        if (q12 == null) {
                             break;
                         } else {
-                            bVar.f29258i = r12;
+                            bVar.f28402i = q12;
                             break;
                         }
                     case 1:
                         try {
-                            d10 = e3Var.l0();
+                            d10 = e3Var.n0();
                         } catch (NumberFormatException unused) {
-                            Date s02 = e3Var.s0(iLogger);
-                            if (s02 != null) {
-                                d10 = Double.valueOf(k.b(s02));
+                            Date u02 = e3Var.u0(iLogger);
+                            if (u02 != null) {
+                                d10 = Double.valueOf(k.b(u02));
                             } else {
                                 d10 = null;
                             }
@@ -83,27 +83,27 @@ public final class b implements w1 {
                         if (d10 == null) {
                             break;
                         } else {
-                            bVar.f29257e = d10.doubleValue();
+                            bVar.f28401e = d10.doubleValue();
                             break;
                         }
                     case 2:
-                        Double l02 = e3Var.l0();
-                        if (l02 == null) {
+                        Double n02 = e3Var.n0();
+                        if (n02 == null) {
                             break;
                         } else {
-                            bVar.f29259o = l02.doubleValue();
+                            bVar.f28403o = n02.doubleValue();
                             break;
                         }
                     default:
                         if (concurrentHashMap == null) {
                             concurrentHashMap = new ConcurrentHashMap();
                         }
-                        e3Var.v1(iLogger, concurrentHashMap, m02);
+                        e3Var.u1(iLogger, concurrentHashMap, o02);
                         break;
                 }
             }
             bVar.e(concurrentHashMap);
-            e3Var.z();
+            e3Var.D();
             return bVar;
         }
     }
@@ -117,7 +117,7 @@ public final class b implements w1 {
     }
 
     public void e(Map map) {
-        this.f29256d = map;
+        this.f28400d = map;
     }
 
     public boolean equals(Object obj) {
@@ -126,7 +126,7 @@ public final class b implements w1 {
         }
         if (obj != null && b.class == obj.getClass()) {
             b bVar = (b) obj;
-            if (y.a(this.f29256d, bVar.f29256d) && this.f29258i.equals(bVar.f29258i) && this.f29259o == bVar.f29259o && this.f29257e == bVar.f29257e) {
+            if (y.a(this.f28400d, bVar.f28400d) && this.f28402i.equals(bVar.f28402i) && this.f28403o == bVar.f28403o && this.f28401e == bVar.f28401e) {
                 return true;
             }
         }
@@ -134,29 +134,29 @@ public final class b implements w1 {
     }
 
     public int hashCode() {
-        return y.b(this.f29256d, this.f29258i, Double.valueOf(this.f29259o));
+        return y.b(this.f28400d, this.f28402i, Double.valueOf(this.f28403o));
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
-        f3Var.s();
-        f3Var.e("value").j(iLogger, Double.valueOf(this.f29259o));
-        f3Var.e("elapsed_since_start_ns").j(iLogger, this.f29258i);
-        f3Var.e("timestamp").j(iLogger, d(Double.valueOf(this.f29257e)));
-        Map map = this.f29256d;
+        f3Var.u();
+        f3Var.e("value").j(iLogger, Double.valueOf(this.f28403o));
+        f3Var.e("elapsed_since_start_ns").j(iLogger, this.f28402i);
+        f3Var.e("timestamp").j(iLogger, d(Double.valueOf(this.f28401e)));
+        Map map = this.f28400d;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f29256d.get(str);
+                Object obj = this.f28400d.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
         }
-        f3Var.z();
+        f3Var.D();
     }
 
     public b(Long l10, Number number, long j10) {
-        this.f29258i = l10.toString();
-        this.f29259o = number.doubleValue();
-        this.f29257e = k.m(j10);
+        this.f28402i = l10.toString();
+        this.f28403o = number.doubleValue();
+        this.f28401e = k.m(j10);
     }
 }

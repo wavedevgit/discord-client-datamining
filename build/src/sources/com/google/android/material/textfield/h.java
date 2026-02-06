@@ -5,10 +5,10 @@ import android.graphics.RectF;
 import android.graphics.Region;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
-import ph.g;
+import qh.g;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class h extends ph.g {
+public abstract class h extends qh.g {
     b K;
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -19,17 +19,17 @@ public abstract class h extends ph.g {
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
-        @Override // ph.g
+        @Override // qh.g
         public void r(Canvas canvas) {
-            if (this.K.f15480w.isEmpty()) {
+            if (this.K.f15460w.isEmpty()) {
                 super.r(canvas);
                 return;
             }
             canvas.save();
             if (Build.VERSION.SDK_INT >= 26) {
-                canvas.clipOutRect(this.K.f15480w);
+                canvas.clipOutRect(this.K.f15460w);
             } else {
-                canvas.clipRect(this.K.f15480w, Region.Op.DIFFERENCE);
+                canvas.clipRect(this.K.f15460w, Region.Op.DIFFERENCE);
             }
             super.r(canvas);
             canvas.restore();
@@ -42,14 +42,14 @@ public abstract class h extends ph.g {
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public static h m0(ph.k kVar) {
+    public static h m0(qh.k kVar) {
         if (kVar == null) {
-            kVar = new ph.k();
+            kVar = new qh.k();
         }
         return l0(new b(kVar, new RectF()));
     }
 
-    @Override // ph.g, android.graphics.drawable.Drawable
+    @Override // qh.g, android.graphics.drawable.Drawable
     public Drawable mutate() {
         this.K = new b(this.K);
         return this;
@@ -57,7 +57,7 @@ public abstract class h extends ph.g {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean n0() {
-        return !this.K.f15480w.isEmpty();
+        return !this.K.f15460w.isEmpty();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -66,10 +66,10 @@ public abstract class h extends ph.g {
     }
 
     void p0(float f10, float f11, float f12, float f13) {
-        if (f10 == this.K.f15480w.left && f11 == this.K.f15480w.top && f12 == this.K.f15480w.right && f13 == this.K.f15480w.bottom) {
+        if (f10 == this.K.f15460w.left && f11 == this.K.f15460w.top && f12 == this.K.f15460w.right && f13 == this.K.f15460w.bottom) {
             return;
         }
-        this.K.f15480w.set(f10, f11, f12, f13);
+        this.K.f15460w.set(f10, f11, f12, f13);
         invalidateSelf();
     }
 
@@ -83,23 +83,23 @@ public abstract class h extends ph.g {
     public static final class b extends g.c {
 
         /* renamed from: w  reason: collision with root package name */
-        private final RectF f15480w;
+        private final RectF f15460w;
 
-        @Override // ph.g.c, android.graphics.drawable.Drawable.ConstantState
+        @Override // qh.g.c, android.graphics.drawable.Drawable.ConstantState
         public Drawable newDrawable() {
             h l02 = h.l0(this);
             l02.invalidateSelf();
             return l02;
         }
 
-        private b(ph.k kVar, RectF rectF) {
+        private b(qh.k kVar, RectF rectF) {
             super(kVar, null);
-            this.f15480w = rectF;
+            this.f15460w = rectF;
         }
 
         private b(b bVar) {
             super(bVar);
-            this.f15480w = bVar.f15480w;
+            this.f15460w = bVar.f15460w;
         }
     }
 

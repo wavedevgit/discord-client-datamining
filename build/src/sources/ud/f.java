@@ -3,29 +3,29 @@ package ud;
 public final class f {
 
     /* renamed from: a  reason: collision with root package name */
-    public final id.a[] f51306a;
+    public final id.a[] f51347a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final long[] f51307b;
+    public final long[] f51348b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final String f51308c;
+    public final String f51349c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final String f51309d;
+    public final String f51350d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final long f51310e;
+    public final long f51351e;
 
     public f(String str, String str2, long j10, long[] jArr, id.a[] aVarArr) {
-        this.f51308c = str;
-        this.f51309d = str2;
-        this.f51310e = j10;
-        this.f51307b = jArr;
-        this.f51306a = aVarArr;
+        this.f51349c = str;
+        this.f51350d = str2;
+        this.f51351e = j10;
+        this.f51348b = jArr;
+        this.f51347a = aVarArr;
     }
 
     public String a() {
-        return this.f51308c + "/" + this.f51309d;
+        return this.f51349c + "/" + this.f51350d;
     }
 }

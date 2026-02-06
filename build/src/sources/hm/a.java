@@ -1,29 +1,55 @@
 package hm;
 
-import android.os.Build;
+import com.facebook.react.bridge.WritableMap;
+import com.facebook.react.uimanager.events.Event;
+import com.facebook.react.uimanager.events.RCTEventEmitter;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a {
-
-    /* renamed from: a  reason: collision with root package name */
-    public static final a f25955a = new a();
+public final class a extends Event {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final boolean f25956b;
+    public static final C0355a f26160b = new C0355a(null);
 
-    static {
-        boolean z10;
-        if (Build.VERSION.SDK_INT < 30) {
-            z10 = true;
-        } else {
-            z10 = false;
+    /* renamed from: a  reason: collision with root package name */
+    private final WritableMap f26161a;
+
+    /* renamed from: hm.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class C0355a {
+        public /* synthetic */ C0355a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
         }
-        f25956b = z10;
+
+        private C0355a() {
+        }
     }
 
-    private a() {
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public a(int i10, WritableMap mEventData) {
+        super(i10);
+        Intrinsics.checkNotNullParameter(mEventData, "mEventData");
+        this.f26161a = mEventData;
     }
 
-    public final boolean a() {
-        return f25956b;
+    @Override // com.facebook.react.uimanager.events.Event
+    public boolean canCoalesce() {
+        return false;
+    }
+
+    @Override // com.facebook.react.uimanager.events.Event
+    public void dispatch(RCTEventEmitter rctEventEmitter) {
+        Intrinsics.checkNotNullParameter(rctEventEmitter, "rctEventEmitter");
+        rctEventEmitter.receiveEvent(getViewTag(), internal_getEventNameCompat(), this.f26161a);
+    }
+
+    @Override // com.facebook.react.uimanager.events.Event
+    public short getCoalescingKey() {
+        return (short) 0;
+    }
+
+    @Override // com.facebook.react.uimanager.events.Event
+    public String getEventName() {
+        return "topHttpError";
     }
 }

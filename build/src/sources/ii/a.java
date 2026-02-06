@@ -1,34 +1,33 @@
 package ii;
 
-import java.nio.ByteBuffer;
-import java.security.MessageDigest;
+import android.app.PendingIntent;
+import android.os.Bundle;
+import com.discord.js_watchdog.SharedPreferencesKey;
+import java.util.List;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-final class a implements s {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final ByteBuffer f27386a;
-
-    public a(ByteBuffer byteBuffer) {
-        this.f27386a = byteBuffer.slice();
+public abstract class a {
+    public static a j(Bundle bundle) {
+        return new b(bundle.getInt(SharedPreferencesKey.SESSION_ID), bundle.getInt("status"), bundle.getInt("error_code"), bundle.getLong("bytes_downloaded"), bundle.getLong("total_bytes_to_download"), bundle.getStringArrayList("module_names"), bundle.getStringArrayList("languages"), (PendingIntent) bundle.getParcelable("user_confirmation_intent"), bundle.getParcelableArrayList("split_file_intents"));
     }
 
-    @Override // ii.s
-    public final void a(MessageDigest[] messageDigestArr, long j10, int i10) {
-        ByteBuffer slice;
-        synchronized (this.f27386a) {
-            int i11 = (int) j10;
-            this.f27386a.position(i11);
-            this.f27386a.limit(i11 + i10);
-            slice = this.f27386a.slice();
-        }
-        for (MessageDigest messageDigest : messageDigestArr) {
-            slice.position(0);
-            messageDigest.update(slice);
-        }
-    }
+    public abstract long a();
 
-    @Override // ii.s
-    public final long zza() {
-        return this.f27386a.capacity();
-    }
+    public abstract int b();
+
+    public abstract PendingIntent c();
+
+    public abstract int d();
+
+    public abstract int e();
+
+    public abstract long f();
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public abstract List g();
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public abstract List h();
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public abstract List i();
 }

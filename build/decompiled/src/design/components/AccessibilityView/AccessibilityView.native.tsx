@@ -132,4 +132,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.AccessibilityView = var3;
     var2.AccessibilityViewAnimated = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 4067, 3720, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 4068, 3722, 2]);

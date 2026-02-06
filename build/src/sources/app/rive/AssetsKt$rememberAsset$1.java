@@ -56,7 +56,7 @@ final class AssetsKt$rememberAsset$1 extends k implements Function2<u, Continuat
     public final java.lang.Object invokeSuspend(@org.jetbrains.annotations.NotNull java.lang.Object r7) {
         /*
             r6 = this;
-            java.lang.Object r0 = ur.b.f()
+            java.lang.Object r0 = wr.b.f()
             int r1 = r6.label
             r2 = 2
             r3 = 1
@@ -113,7 +113,7 @@ final class AssetsKt$rememberAsset$1 extends k implements Function2<u, Continuat
         L68:
             return r0
         L69:
-            or.h r7 = new or.h
+            qr.h r7 = new qr.h
             r7.<init>()
             throw r7
         */
@@ -122,6 +122,6 @@ final class AssetsKt$rememberAsset$1 extends k implements Function2<u, Continuat
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(@NotNull u uVar, Continuation<? super Unit> continuation) {
-        return ((AssetsKt$rememberAsset$1) create(uVar, continuation)).invokeSuspend(Unit.f31988a);
+        return ((AssetsKt$rememberAsset$1) create(uVar, continuation)).invokeSuspend(Unit.f32008a);
     }
 }

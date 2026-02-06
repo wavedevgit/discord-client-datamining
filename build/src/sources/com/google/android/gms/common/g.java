@@ -11,17 +11,17 @@ import com.facebook.react.devsupport.StackTraceHelper;
 public class g {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final int f13809a = j.f13813a;
+    public static final int f13775a = k.f13780a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final g f13810b = new g();
+    private static final g f13776b = new g();
 
     public static g f() {
-        return f13810b;
+        return f13776b;
     }
 
     public int a(Context context) {
-        return j.a(context);
+        return k.b(context);
     }
 
     public Intent b(Context context, int i10, String str) {
@@ -40,7 +40,7 @@ public class g {
         } else {
             StringBuilder sb2 = new StringBuilder();
             sb2.append("gcore_");
-            sb2.append(f13809a);
+            sb2.append(f13775a);
             sb2.append("-");
             if (!TextUtils.isEmpty(str)) {
                 sb2.append(str);
@@ -82,26 +82,30 @@ public class g {
     }
 
     public String e(int i10) {
-        return j.b(i10);
+        return k.c(i10);
     }
 
     public int g(Context context) {
-        return h(context, f13809a);
+        return h(context, f13775a);
     }
 
     public int h(Context context, int i10) {
-        int e10 = j.e(context, i10);
-        if (j.f(context, e10)) {
+        int f10 = k.f(context, i10);
+        if (k.g(context, f10)) {
             return 18;
         }
-        return e10;
+        return f10;
     }
 
     public boolean i(Context context, String str) {
-        return j.i(context, str);
+        return k.j(context, str);
     }
 
     public boolean j(int i10) {
-        return j.h(i10);
+        return k.i(i10);
+    }
+
+    public void k(Context context, int i10) {
+        k.a(context, i10);
     }
 }

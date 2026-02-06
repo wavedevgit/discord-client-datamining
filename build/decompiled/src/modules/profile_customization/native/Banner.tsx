@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/profile_customization/native/Banner.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun57217: for (var _fun57217_ip = 0;;) switch (_fun57217_ip) {
+        _fun57244: for (var _fun57244_ip = 0;;) switch (_fun57244_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.style;
@@ -68,16 +68,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.bannerSafeArea;
                 var3 = undefined;
                 if (!(var1 === var3)) {
-                    _fun57217_ip = 33;
-                    continue _fun57217
+                    _fun57244_ip = 33;
+                    continue _fun57244
                 }
             case 31:
                 var1 = 0;
             case 33:
                 var0 = var0.bannerHeight;
                 if (!(var0 === var3)) {
-                    _fun57217_ip = 50;
-                    continue _fun57217
+                    _fun57244_ip = 50;
+                    continue _fun57244
                 }
             case 43:
                 var0 = _closure1_slot4;
@@ -107,8 +107,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = null;
                 var6 = var4 != var8;
                 if (!var6) {
-                    _fun57217_ip = 197;
-                    continue _fun57217
+                    _fun57244_ip = 197;
+                    continue _fun57244
                 }
             case 151:
                 var7 = _closure1_slot5;
@@ -130,4 +130,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 33, 1297, 668, 4704, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 33, 1297, 668, 4705, 2]);

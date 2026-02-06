@@ -1,28 +1,34 @@
 package ah;
-
-import android.animation.TypeEvaluator;
-import com.facebook.react.views.text.internal.span.SetSpanOperation;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class c implements TypeEvaluator {
+public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final c f630a = new c();
+    public static int f665a = 2131100043;
 
-    public static c b() {
-        return f630a;
-    }
+    /* renamed from: b  reason: collision with root package name */
+    public static int f666b = 2131100047;
 
-    @Override // android.animation.TypeEvaluator
-    /* renamed from: a */
-    public Integer evaluate(float f10, Integer num, Integer num2) {
-        int intValue = num.intValue();
-        float f11 = ((intValue >> 24) & SetSpanOperation.SPAN_MAX_PRIORITY) / 255.0f;
-        int intValue2 = num2.intValue();
-        float pow = (float) Math.pow(((intValue >> 16) & SetSpanOperation.SPAN_MAX_PRIORITY) / 255.0f, 2.2d);
-        float pow2 = (float) Math.pow(((intValue >> 8) & SetSpanOperation.SPAN_MAX_PRIORITY) / 255.0f, 2.2d);
-        float pow3 = (float) Math.pow((intValue & SetSpanOperation.SPAN_MAX_PRIORITY) / 255.0f, 2.2d);
-        float pow4 = (float) Math.pow(((intValue2 >> 16) & SetSpanOperation.SPAN_MAX_PRIORITY) / 255.0f, 2.2d);
-        float pow5 = pow3 + (f10 * (((float) Math.pow((intValue2 & SetSpanOperation.SPAN_MAX_PRIORITY) / 255.0f, 2.2d)) - pow3));
-        return Integer.valueOf((Math.round(((float) Math.pow(pow + ((pow4 - pow) * f10), 0.45454545454545453d)) * 255.0f) << 16) | (Math.round((f11 + (((((intValue2 >> 24) & SetSpanOperation.SPAN_MAX_PRIORITY) / 255.0f) - f11) * f10)) * 255.0f) << 24) | (Math.round(((float) Math.pow(pow2 + ((((float) Math.pow(((intValue2 >> 8) & SetSpanOperation.SPAN_MAX_PRIORITY) / 255.0f, 2.2d)) - pow2) * f10), 0.45454545454545453d)) * 255.0f) << 8) | Math.round(((float) Math.pow(pow5, 0.45454545454545453d)) * 255.0f));
-    }
+    /* renamed from: c  reason: collision with root package name */
+    public static int f667c = 2131100048;
+
+    /* renamed from: d  reason: collision with root package name */
+    public static int f668d = 2131100049;
+
+    /* renamed from: e  reason: collision with root package name */
+    public static int f669e = 2131100050;
+
+    /* renamed from: f  reason: collision with root package name */
+    public static int f670f = 2131100771;
+
+    /* renamed from: g  reason: collision with root package name */
+    public static int f671g = 2131100809;
+
+    /* renamed from: h  reason: collision with root package name */
+    public static int f672h = 2131100836;
+
+    /* renamed from: i  reason: collision with root package name */
+    public static int f673i = 2131100837;
+
+    /* renamed from: j  reason: collision with root package name */
+    public static int f674j = 2131100840;
 }

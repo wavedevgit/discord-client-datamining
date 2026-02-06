@@ -92,7 +92,7 @@ public final class HorizontalStack_HorizontalStackComponentStyleJsonAdapter exte
     @NotNull
     public HorizontalStack.HorizontalStackComponentStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         AttributeStyles.HorizontalStackBackgroundColorStyle horizontalStackBackgroundColorStyle = null;
         AttributeStyles.HorizontalStackBorderWidthStyle horizontalStackBorderWidthStyle = null;
         AttributeStyles.HorizontalStackBorderColorStyle horizontalStackBorderColorStyle = null;
@@ -105,10 +105,10 @@ public final class HorizontalStack_HorizontalStackComponentStyleJsonAdapter exte
         AttributeStyles.HorizontalStackGapStyle horizontalStackGapStyle = null;
         AttributeStyles.HorizontalStackWidthStyle horizontalStackWidthStyle = null;
         while (reader.hasNext()) {
-            switch (reader.W(this.options)) {
+            switch (reader.J(this.options)) {
                 case -1:
                     reader.E0();
-                    reader.P();
+                    reader.S();
                     break;
                 case 0:
                     horizontalStackBackgroundColorStyle = (AttributeStyles.HorizontalStackBackgroundColorStyle) this.nullableHorizontalStackBackgroundColorStyleAdapter.fromJson(reader);
@@ -145,7 +145,7 @@ public final class HorizontalStack_HorizontalStackComponentStyleJsonAdapter exte
                     break;
             }
         }
-        reader.z();
+        reader.D();
         return new HorizontalStack.HorizontalStackComponentStyle(horizontalStackBackgroundColorStyle, horizontalStackBorderWidthStyle, horizontalStackBorderColorStyle, horizontalStackBorderRadiusStyle, horizontalStackPaddingStyle, horizontalStackMarginStyle, horizontalStackAxisStyle, horizontalStackChildSizesStyle, horizontalStackAlignmentStyle, horizontalStackGapStyle, horizontalStackWidthStyle);
     }
 
@@ -154,29 +154,29 @@ public final class HorizontalStack_HorizontalStackComponentStyleJsonAdapter exte
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (horizontalStackComponentStyle != null) {
             writer.k();
-            writer.W(ViewProps.BACKGROUND_COLOR);
+            writer.J(ViewProps.BACKGROUND_COLOR);
             this.nullableHorizontalStackBackgroundColorStyleAdapter.toJson(writer, horizontalStackComponentStyle.getBackgroundColor());
-            writer.W(ViewProps.BORDER_WIDTH);
+            writer.J(ViewProps.BORDER_WIDTH);
             this.nullableHorizontalStackBorderWidthStyleAdapter.toJson(writer, horizontalStackComponentStyle.getBorderWidth());
-            writer.W(ViewProps.BORDER_COLOR);
+            writer.J(ViewProps.BORDER_COLOR);
             this.nullableHorizontalStackBorderColorStyleAdapter.toJson(writer, horizontalStackComponentStyle.getBorderColor());
-            writer.W("borderRadius");
+            writer.J("borderRadius");
             this.nullableHorizontalStackBorderRadiusStyleAdapter.toJson(writer, horizontalStackComponentStyle.getBorderRadius());
-            writer.W(ViewProps.PADDING);
+            writer.J(ViewProps.PADDING);
             this.nullableHorizontalStackPaddingStyleAdapter.toJson(writer, horizontalStackComponentStyle.getPadding());
-            writer.W(ViewProps.MARGIN);
+            writer.J(ViewProps.MARGIN);
             this.nullableHorizontalStackMarginStyleAdapter.toJson(writer, horizontalStackComponentStyle.getMargin());
-            writer.W("axis");
+            writer.J("axis");
             this.nullableHorizontalStackAxisStyleAdapter.toJson(writer, horizontalStackComponentStyle.getAxis());
-            writer.W("childSizes");
+            writer.J("childSizes");
             this.nullableHorizontalStackChildSizesStyleAdapter.toJson(writer, horizontalStackComponentStyle.getChildSizes());
-            writer.W("alignment");
+            writer.J("alignment");
             this.nullableHorizontalStackAlignmentStyleAdapter.toJson(writer, horizontalStackComponentStyle.getAlignment());
-            writer.W(ViewProps.GAP);
+            writer.J(ViewProps.GAP);
             this.nullableHorizontalStackGapStyleAdapter.toJson(writer, horizontalStackComponentStyle.getGap());
-            writer.W("width");
+            writer.J("width");
             this.nullableHorizontalStackWidthStyleAdapter.toJson(writer, horizontalStackComponentStyle.getWidth());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

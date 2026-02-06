@@ -25,29 +25,29 @@ public final class AutoModerationNotificationEmbedViewHolder extends MessagePart
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void bind$lambda$0(Function2 function2, String str, long j10, View view) {
-        function2.invoke(MessageId.m1085boximpl(str), ChannelId.m1059boximpl(j10));
+        function2.invoke(MessageId.m1083boximpl(str), ChannelId.m1057boximpl(j10));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void bind$lambda$1(Function2 function2, String str, long j10, View view) {
-        function2.invoke(MessageId.m1085boximpl(str), ChannelId.m1059boximpl(j10));
+        function2.invoke(MessageId.m1083boximpl(str), ChannelId.m1057boximpl(j10));
     }
 
     public final void bind(@NotNull AutoModerationNotificationEmbedAccessory notificationEmbedAccessory, @NotNull final Function2<? super MessageId, ? super ChannelId, Unit> onTapAutoModerationActions, @NotNull final Function2<? super MessageId, ? super ChannelId, Unit> onTapAutoModerationFeedback) {
         Intrinsics.checkNotNullParameter(notificationEmbedAccessory, "notificationEmbedAccessory");
         Intrinsics.checkNotNullParameter(onTapAutoModerationActions, "onTapAutoModerationActions");
         Intrinsics.checkNotNullParameter(onTapAutoModerationFeedback, "onTapAutoModerationFeedback");
-        final long m236getChannelIdo4g7jtM = notificationEmbedAccessory.getMessage().m236getChannelIdo4g7jtM();
-        final String m239getId3Eiw7ao = notificationEmbedAccessory.getMessage().m239getId3Eiw7ao();
+        final long m234getChannelIdo4g7jtM = notificationEmbedAccessory.getMessage().m234getChannelIdo4g7jtM();
+        final String m237getId3Eiw7ao = notificationEmbedAccessory.getMessage().m237getId3Eiw7ao();
         this.notificationEmbedView.configure(notificationEmbedAccessory.getModerationContext(), new View.OnClickListener() { // from class: com.discord.chat.presentation.message.viewholder.d
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
-                AutoModerationNotificationEmbedViewHolder.bind$lambda$0(Function2.this, m239getId3Eiw7ao, m236getChannelIdo4g7jtM, view);
+                AutoModerationNotificationEmbedViewHolder.bind$lambda$0(Function2.this, m237getId3Eiw7ao, m234getChannelIdo4g7jtM, view);
             }
         }, new View.OnClickListener() { // from class: com.discord.chat.presentation.message.viewholder.e
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
-                AutoModerationNotificationEmbedViewHolder.bind$lambda$1(Function2.this, m239getId3Eiw7ao, m236getChannelIdo4g7jtM, view);
+                AutoModerationNotificationEmbedViewHolder.bind$lambda$1(Function2.this, m237getId3Eiw7ao, m234getChannelIdo4g7jtM, view);
             }
         });
     }

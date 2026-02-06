@@ -7,49 +7,49 @@ import com.facebook.react.bridge.ReactContext;
 public class r0 extends RenderableView {
 
     /* renamed from: d  reason: collision with root package name */
-    private SVGLength f17029d;
+    private SVGLength f17009d;
 
     /* renamed from: e  reason: collision with root package name */
-    private SVGLength f17030e;
+    private SVGLength f17010e;
 
     /* renamed from: i  reason: collision with root package name */
-    private SVGLength f17031i;
+    private SVGLength f17011i;
 
     /* renamed from: o  reason: collision with root package name */
-    private SVGLength f17032o;
+    private SVGLength f17012o;
 
     /* renamed from: p  reason: collision with root package name */
-    private SVGLength f17033p;
+    private SVGLength f17013p;
 
     /* renamed from: q  reason: collision with root package name */
-    private SVGLength f17034q;
+    private SVGLength f17014q;
 
     public r0(ReactContext reactContext) {
         super(reactContext);
     }
 
     public void c(Dynamic dynamic) {
-        this.f17032o = SVGLength.b(dynamic);
+        this.f17012o = SVGLength.b(dynamic);
         invalidate();
     }
 
     public void d(Dynamic dynamic) {
-        this.f17033p = SVGLength.b(dynamic);
+        this.f17013p = SVGLength.b(dynamic);
         invalidate();
     }
 
     public void e(Dynamic dynamic) {
-        this.f17034q = SVGLength.b(dynamic);
+        this.f17014q = SVGLength.b(dynamic);
         invalidate();
     }
 
     public void f(Dynamic dynamic) {
-        this.f17031i = SVGLength.b(dynamic);
+        this.f17011i = SVGLength.b(dynamic);
         invalidate();
     }
 
     public void g(Dynamic dynamic) {
-        this.f17029d = SVGLength.b(dynamic);
+        this.f17009d = SVGLength.b(dynamic);
         invalidate();
     }
 
@@ -70,7 +70,7 @@ public class r0 extends RenderableView {
     }
 
     public void h(Dynamic dynamic) {
-        this.f17030e = SVGLength.b(dynamic);
+        this.f17010e = SVGLength.b(dynamic);
         invalidate();
     }
 }

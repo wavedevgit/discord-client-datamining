@@ -17,77 +17,77 @@ import x.y0;
 public abstract class i implements j1.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private f.a f2099a;
+    private f.a f2428a;
 
     /* renamed from: b  reason: collision with root package name */
-    private volatile int f2100b;
+    private volatile int f2429b;
 
     /* renamed from: c  reason: collision with root package name */
-    private volatile int f2101c;
+    private volatile int f2430c;
 
     /* renamed from: e  reason: collision with root package name */
-    private volatile boolean f2103e;
+    private volatile boolean f2432e;
 
     /* renamed from: f  reason: collision with root package name */
-    private volatile boolean f2104f;
+    private volatile boolean f2433f;
 
     /* renamed from: g  reason: collision with root package name */
-    private Executor f2105g;
+    private Executor f2434g;
 
     /* renamed from: h  reason: collision with root package name */
-    private q f2106h;
+    private q f2435h;
 
     /* renamed from: i  reason: collision with root package name */
-    private ImageWriter f2107i;
+    private ImageWriter f2436i;
 
     /* renamed from: n  reason: collision with root package name */
-    ByteBuffer f2112n;
+    ByteBuffer f2441n;
 
     /* renamed from: o  reason: collision with root package name */
-    ByteBuffer f2113o;
+    ByteBuffer f2442o;
 
     /* renamed from: p  reason: collision with root package name */
-    ByteBuffer f2114p;
+    ByteBuffer f2443p;
 
     /* renamed from: q  reason: collision with root package name */
-    ByteBuffer f2115q;
+    ByteBuffer f2444q;
 
     /* renamed from: d  reason: collision with root package name */
-    private volatile int f2102d = 1;
+    private volatile int f2431d = 1;
 
     /* renamed from: j  reason: collision with root package name */
-    private Rect f2108j = new Rect();
+    private Rect f2437j = new Rect();
 
     /* renamed from: k  reason: collision with root package name */
-    private Rect f2109k = new Rect();
+    private Rect f2438k = new Rect();
 
     /* renamed from: l  reason: collision with root package name */
-    private Matrix f2110l = new Matrix();
+    private Matrix f2439l = new Matrix();
 
     /* renamed from: m  reason: collision with root package name */
-    private Matrix f2111m = new Matrix();
+    private Matrix f2440m = new Matrix();
 
     /* renamed from: r  reason: collision with root package name */
-    private final Object f2116r = new Object();
+    private final Object f2445r = new Object();
 
     /* renamed from: s  reason: collision with root package name */
-    protected boolean f2117s = true;
+    protected boolean f2446s = true;
 
     public static /* synthetic */ void b(i iVar, n nVar, Matrix matrix, n nVar2, Rect rect, f.a aVar, c.a aVar2) {
         int i10;
-        if (iVar.f2117s) {
-            q2 c10 = nVar.A().c();
-            long a10 = nVar.A().a();
-            if (iVar.f2103e) {
+        if (iVar.f2446s) {
+            q2 c10 = nVar.E().c();
+            long a10 = nVar.E().a();
+            if (iVar.f2432e) {
                 i10 = 0;
             } else {
-                i10 = iVar.f2100b;
+                i10 = iVar.f2429b;
             }
             r rVar = new r(nVar2, v0.e(c10, a10, i10, matrix));
             if (!rect.isEmpty()) {
-                rVar.A0(rect);
+                rVar.C0(rect);
             }
-            aVar.g(rVar);
+            aVar.h(rVar);
             aVar2.c(null);
             return;
         }
@@ -106,21 +106,21 @@ public abstract class i implements j1.a {
     }
 
     private void h(n nVar) {
-        if (this.f2102d == 1) {
-            if (this.f2113o == null) {
-                this.f2113o = ByteBuffer.allocateDirect(nVar.getWidth() * nVar.getHeight());
+        if (this.f2431d == 1) {
+            if (this.f2442o == null) {
+                this.f2442o = ByteBuffer.allocateDirect(nVar.getWidth() * nVar.getHeight());
             }
-            this.f2113o.position(0);
-            if (this.f2114p == null) {
-                this.f2114p = ByteBuffer.allocateDirect((nVar.getWidth() * nVar.getHeight()) / 4);
+            this.f2442o.position(0);
+            if (this.f2443p == null) {
+                this.f2443p = ByteBuffer.allocateDirect((nVar.getWidth() * nVar.getHeight()) / 4);
             }
-            this.f2114p.position(0);
-            if (this.f2115q == null) {
-                this.f2115q = ByteBuffer.allocateDirect((nVar.getWidth() * nVar.getHeight()) / 4);
+            this.f2443p.position(0);
+            if (this.f2444q == null) {
+                this.f2444q = ByteBuffer.allocateDirect((nVar.getWidth() * nVar.getHeight()) / 4);
             }
-            this.f2115q.position(0);
-        } else if (this.f2102d == 2 && this.f2112n == null) {
-            this.f2112n = ByteBuffer.allocateDirect(nVar.getWidth() * nVar.getHeight() * 4);
+            this.f2444q.position(0);
+        } else if (this.f2431d == 2 && this.f2441n == null) {
+            this.f2441n = ByteBuffer.allocateDirect(nVar.getWidth() * nVar.getHeight() * 4);
         }
     }
 
@@ -146,7 +146,7 @@ public abstract class i implements j1.a {
     static Matrix k(int i10, int i11, int i12, int i13, int i14) {
         Matrix matrix = new Matrix();
         if (i14 > 0) {
-            matrix.setRectToRect(new RectF(0.0f, 0.0f, i10, i11), b0.q.f6083a, Matrix.ScaleToFit.FILL);
+            matrix.setRectToRect(new RectF(0.0f, 0.0f, i10, i11), b0.q.f6376a, Matrix.ScaleToFit.FILL);
             matrix.postRotate(i14);
             matrix.postConcat(b0.q.c(new RectF(0.0f, 0.0f, i12, i13)));
         }
@@ -162,22 +162,22 @@ public abstract class i implements j1.a {
     }
 
     private void n(int i10, int i11, int i12, int i13) {
-        Matrix k10 = k(i10, i11, i12, i13, this.f2100b);
-        this.f2109k = l(this.f2108j, k10);
-        this.f2111m.setConcat(this.f2110l, k10);
+        Matrix k10 = k(i10, i11, i12, i13, this.f2429b);
+        this.f2438k = l(this.f2437j, k10);
+        this.f2440m.setConcat(this.f2439l, k10);
     }
 
     private void o(n nVar, int i10) {
-        q qVar = this.f2106h;
+        q qVar = this.f2435h;
         if (qVar != null) {
             qVar.j();
-            this.f2106h = i(nVar.getWidth(), nVar.getHeight(), i10, this.f2106h.c(), this.f2106h.f());
-            if (this.f2102d == 1) {
-                ImageWriter imageWriter = this.f2107i;
+            this.f2435h = i(nVar.getWidth(), nVar.getHeight(), i10, this.f2435h.c(), this.f2435h.f());
+            if (this.f2431d == 1) {
+                ImageWriter imageWriter = this.f2436i;
                 if (imageWriter != null) {
                     f0.a.a(imageWriter);
                 }
-                this.f2107i = f0.a.c(this.f2106h.getSurface(), this.f2106h.f());
+                this.f2436i = f0.a.c(this.f2435h.getSurface(), this.f2435h.f());
             }
         }
     }
@@ -215,7 +215,7 @@ public abstract class i implements j1.a {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void f() {
-        this.f2117s = true;
+        this.f2446s = true;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -223,7 +223,7 @@ public abstract class i implements j1.a {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void j() {
-        this.f2117s = false;
+        this.f2446s = false;
         g();
     }
 
@@ -234,52 +234,52 @@ public abstract class i implements j1.a {
         if (aVar == null) {
             g();
         }
-        synchronized (this.f2116r) {
-            this.f2099a = aVar;
-            this.f2105g = executor;
+        synchronized (this.f2445r) {
+            this.f2428a = aVar;
+            this.f2434g = executor;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void q(boolean z10) {
-        this.f2104f = z10;
+        this.f2433f = z10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void r(int i10) {
-        this.f2102d = i10;
+        this.f2431d = i10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void s(boolean z10) {
-        this.f2103e = z10;
+        this.f2432e = z10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void t(q qVar) {
-        synchronized (this.f2116r) {
-            this.f2106h = qVar;
+        synchronized (this.f2445r) {
+            this.f2435h = qVar;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void u(int i10) {
-        this.f2100b = i10;
+        this.f2429b = i10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void v(Matrix matrix) {
-        synchronized (this.f2116r) {
-            this.f2110l = matrix;
-            this.f2111m = new Matrix(this.f2110l);
+        synchronized (this.f2445r) {
+            this.f2439l = matrix;
+            this.f2440m = new Matrix(this.f2439l);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void w(Rect rect) {
-        synchronized (this.f2116r) {
-            this.f2108j = rect;
-            this.f2109k = new Rect(this.f2108j);
+        synchronized (this.f2445r) {
+            this.f2437j = rect;
+            this.f2438k = new Rect(this.f2437j);
         }
     }
 }

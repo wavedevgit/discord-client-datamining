@@ -72,118 +72,132 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/messages/NavigateToMentionsExperiment.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function arg0, arg1() {
-        _fun77807: for (var _fun77807_ip = 0;;) switch (_fun77807_ip) {
+    var1 = function arg0() {
+        _fun73710: for (var _fun73710_ip = 0;;) switch (_fun73710_ip) {
             case 0:
-                var8 = arg0;
-                var9 = arg1;
-                var0 = _closure1_slot7;
-                var4 = var0.GUILD_TEXTUAL;
-                var3 = var4.has;
-                var0 = var8.type;
-                var0 = var3.bind(var4)(var0);
-                if (!var0) {
-                    _fun77807_ip = 48;
-                    continue _fun77807
-                }
-            case 39:
-                var0 = var9.ready;
-                if (var0) {
-                    _fun77807_ip = 52;
-                    continue _fun77807
-                }
-            case 48:
-                var0 = null;
-                return var0;
-            case 52:
-                var3 = _closure1_slot5;
-                var0 = var3.getCurrentUser;
-                var3 = var0.bind(var3)();
-                var _closure2_slot0 = var3;
-                var0 = null;
-                if (!(var0 != var3)) {
-                    _fun77807_ip = 408;
-                    continue _fun77807
-                }
-            case 78:
-                var5 = _closure1_slot3;
-                var4 = var5.getMentionCount;
-                var3 = var8.id;
-                var7 = var4.bind(var5)(var3);
-                var4 = 0;
-                if (!(!(var7 <= var4))) {
-                    _fun77807_ip = 406;
-                    continue _fun77807
-                }
-            case 107:
-                var6 = _closure1_slot8;
-                var5 = var6.getConfig;
-                var3 = {};
-                var10 = 'trackMentionsOnInitialUnreadChannelLoad';
-                var3.location = var10;
-                var5 = var5.bind(var6)(var3);
-                var3 = var5.enableTracking;
-                var5 = var5.enableNavigation;
+                var0 = arg0;
+                var8 = var0.channel;
+                var11 = var0.messages;
+                var3 = var0.track;
+                var5 = undefined;
+                var _closure2_slot0 = var5;
                 var _closure2_slot1 = var5;
-                if (var3) {
-                    _fun77807_ip = 158;
-                    continue _fun77807
-                }
-            case 153:
-                if (var5) {
-                    _fun77807_ip = 158;
-                    continue _fun77807
-                }
-            case 156:
-                return var0;
-            case 158:
-                var10 = _closure1_slot3;
-                var6 = var10.ackMessageId;
-                var5 = var8.id;
-                var5 = var6.bind(var10)(var5);
                 var _closure2_slot2 = var5;
-                var6 = var0 != var5;
-                if (!(var0 == var5)) {
-                    _fun77807_ip = 282;
-                    continue _fun77807
+                var _closure2_slot3 = var5;
+                var _closure2_slot4 = var5;
+                var0 = _closure1_slot7;
+                var6 = var0.GUILD_TEXTUAL;
+                var4 = var6.has;
+                var0 = var8.type;
+                var0 = var4.bind(var6)(var0);
+                if (!var0) {
+                    _fun73710_ip = 480;
+                    continue _fun73710
                 }
-            case 190:
-                var11 = _closure1_slot2;
-                var10 = var11.getGuild;
-                var5 = var8.guild_id;
-                var5 = var10.bind(var11)(var5);
-                var10 = var0 != var5;
-                if (!var10) {
-                    _fun77807_ip = 226;
-                    continue _fun77807
+            case 77:
+                var0 = _closure1_slot7;
+                var6 = var0.THREADS;
+                var4 = var6.has;
+                var0 = var8.type;
+                var0 = var4.bind(var6)(var0);
+                if (var0) {
+                    _fun73710_ip = 480;
+                    continue _fun73710
                 }
-            case 216:
-                var11 = var5.joinedAt;
-                var10 = var0 != var11;
+            case 108:
+                var0 = var11.ready;
+                if (!var0) {
+                    _fun73710_ip = 480;
+                    continue _fun73710
+                }
+            case 120:
+                var4 = _closure1_slot5;
+                var0 = var4.getCurrentUser;
+                var4 = var0.bind(var4)();
+                _closure2_slot0 = var4;
+                var0 = null;
+                if (!(var0 != var4)) {
+                    _fun73710_ip = 478;
+                    continue _fun73710
+                }
+            case 146:
+                var7 = _closure1_slot3;
+                var6 = var7.getMentionCount;
+                var4 = var8.id;
+                var7 = var6.bind(var7)(var4);
+                var9 = 0;
+                if (!(!(var7 <= var9))) {
+                    _fun73710_ip = 476;
+                    continue _fun73710
+                }
+            case 175:
+                var10 = _closure1_slot8;
+                var6 = var10.getConfig;
+                var4 = {};
+                var12 = 'trackMentionsOnInitialUnreadChannelLoad';
+                var4.location = var12;
+                var6 = var6.bind(var10)(var4);
+                var4 = var6.enableTracking;
+                var6 = var6.enableNavigation;
+                _closure2_slot1 = var6;
+                if (var4) {
+                    _fun73710_ip = 226;
+                    continue _fun73710
+                }
+            case 221:
+                if (var6) {
+                    _fun73710_ip = 226;
+                    continue _fun73710
+                }
+            case 224:
+                return var0;
             case 226:
-                if (!var10) {
-                    _fun77807_ip = 282;
-                    continue _fun77807
+                var12 = _closure1_slot3;
+                var10 = var12.ackMessageId;
+                var6 = var8.id;
+                var10 = var10.bind(var12)(var6);
+                _closure2_slot2 = var10;
+                var6 = var0 != var10;
+                if (!(var0 == var10)) {
+                    _fun73710_ip = 348;
+                    continue _fun73710
                 }
-            case 229:
-                var12 = _closure1_slot0;
-                var11 = _closure1_slot1;
-                var10 = 5;
-                var11 = var11[var10];
-                var10 = undefined;
-                var11 = var12.bind(var10)(var11);
-                var10 = var11.fromTimestamp;
-                var12 = var5.joinedAt;
-                var5 = var12.getTime;
-                var5 = var5.bind(var12)();
-                var5 = var10.bind(var11)(var5);
-                _closure2_slot2 = var5;
-            case 282:
-                var _closure2_slot3 = var4;
-                var _closure2_slot4 = var0;
-                var5 = var9.forAll;
-                var4 = function(arg0) { // Environment: var1
-                    _fun77808: for (var _fun77808_ip = 0;;) switch (_fun77808_ip) {
+            case 258:
+                var13 = _closure1_slot2;
+                var12 = var13.getGuild;
+                var10 = var8.guild_id;
+                var10 = var12.bind(var13)(var10);
+                var12 = var0 != var10;
+                if (!var12) {
+                    _fun73710_ip = 294;
+                    continue _fun73710
+                }
+            case 284:
+                var13 = var10.joinedAt;
+                var12 = var0 != var13;
+            case 294:
+                if (!var12) {
+                    _fun73710_ip = 348;
+                    continue _fun73710
+                }
+            case 297:
+                var13 = _closure1_slot0;
+                var14 = _closure1_slot1;
+                var12 = 5;
+                var12 = var14[var12];
+                var13 = var13.bind(var5)(var12);
+                var12 = var13.fromTimestamp;
+                var14 = var10.joinedAt;
+                var10 = var14.getTime;
+                var10 = var10.bind(var14)();
+                var10 = var12.bind(var13)(var10);
+                _closure2_slot2 = var10;
+            case 348:
+                _closure2_slot3 = var9;
+                _closure2_slot4 = var0;
+                var10 = var11.forAll;
+                var9 = function(arg0) { // Environment: var1
+                    _fun73711: for (var _fun73711_ip = 0;;) switch (_fun73711_ip) {
                         case 0:
                             var1 = arg0;
                             var3 = _closure1_slot0;
@@ -199,8 +213,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var6 = 0;
                             var3 = var3 > var6;
                             if (!var3) {
-                                _fun77808_ip = 75;
-                                continue _fun77808
+                                _fun73711_ip = 75;
+                                continue _fun73711
                             }
                         case 61:
                             var7 = _closure1_slot4;
@@ -208,8 +222,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var7.bind(var0)(var1, var4);
                         case 75:
                             if (!var3) {
-                                _fun77808_ip = 166;
-                                continue _fun77808
+                                _fun73711_ip = 166;
+                                continue _fun73711
                             }
                         case 78:
                             var3 = _closure2_slot3;
@@ -217,16 +231,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             _closure2_slot3 = var3;
                             var3 = _closure2_slot1;
                             if (!var3) {
-                                _fun77808_ip = 154;
-                                continue _fun77808
+                                _fun73711_ip = 154;
+                                continue _fun73711
                             }
                         case 96:
                             var7 = _closure2_slot4;
                             var4 = null;
                             var4 = var4 == var7;
                             if (var4) {
-                                _fun77808_ip = 151;
-                                continue _fun77808
+                                _fun73711_ip = 151;
+                                continue _fun73711
                             }
                         case 109:
                             var7 = _closure1_slot0;
@@ -242,8 +256,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var4;
                         case 154:
                             if (!var3) {
-                                _fun77808_ip = 166;
-                                continue _fun77808
+                                _fun73711_ip = 166;
+                                continue _fun73711
                             }
                         case 157:
                             var1 = var1.id;
@@ -252,18 +266,24 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             return var0;
                     }
                 };
-                var4 = var5.bind(var9)(var4);
+                var9 = var10.bind(var11)(var9);
                 if (!var3) {
-                    _fun77807_ip = 400;
-                    continue _fun77807
+                    _fun73710_ip = 380;
+                    continue _fun73710
                 }
-            case 311:
-                var5 = _closure1_slot0;
-                var4 = _closure1_slot1;
+            case 377:
+                var3 = var4;
+            case 380:
+                if (!var3) {
+                    _fun73710_ip = 470;
+                    continue _fun73710
+                }
+            case 383:
+                var4 = _closure1_slot0;
+                var9 = _closure1_slot1;
                 var3 = 6;
-                var4 = var4[var3];
-                var3 = undefined;
-                var5 = var5.bind(var3)(var4);
+                var3 = var9[var3];
+                var5 = var4.bind(var5)(var3);
                 var4 = var5.track;
                 var2 = _closure1_slot6;
                 var3 = var2.CHANNEL_WITH_UNREAD_MENTIONS_LOADED;
@@ -277,15 +297,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2.loaded_mention_count = var7;
                 var2.has_previous_ack = var6;
                 var2 = var4.bind(var5)(var3, var2);
-            case 400:
+            case 470:
                 var1 = _closure2_slot4;
                 return var1;
-            case 406:
+            case 476:
                 return var0;
-            case 408:
+            case 478:
+                return var0;
+            case 480:
+                var0 = null;
                 return var0;
         }
     };
-    var2.getAndTrackOldestUnreadMentionOnLoad = var1;
+    var2.getOldestUnreadMentionOnLoad = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1410, 3947, 1621, 660, 1301, 21, 795, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1410, 3949, 1621, 660, 1301, 21, 795, 2]);

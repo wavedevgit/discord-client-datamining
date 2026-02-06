@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
     var3 = function() {
-        _fun85744: for (var _fun85744_ip = 0;;) switch (_fun85744_ip) {
+        _fun85756: for (var _fun85756_ip = 0;;) switch (_fun85756_ip) {
             case 0:
                 var1 = _closure1_slot2;
                 var0 = undefined;
@@ -15,8 +15,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var0 = var0 != var1;
                 if (!var0) {
-                    _fun85744_ip = 25;
-                    continue _fun85744
+                    _fun85756_ip = 25;
+                    continue _fun85756
                 }
             case 22:
                 var0 = var1;
@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1 = function() {
-        _fun85745: for (var _fun85745_ip = 0;;) switch (_fun85745_ip) {
+        _fun85757: for (var _fun85757_ip = 0;;) switch (_fun85757_ip) {
             case 0:
                 var1 = _closure1_slot2;
                 var3 = undefined;
@@ -38,8 +38,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var1.isAndroid;
                 var0 = var0.bind(var1)();
                 if (!var0) {
-                    _fun85745_ip = 52;
-                    continue _fun85745
+                    _fun85757_ip = 52;
+                    continue _fun85757
                 }
             case 46:
                 var1 = null;
@@ -105,4 +105,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.useAndroidMessageNotificationsSettingValue = var3;
     var2.useHasAndroidMessageNotificationsSetting = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [11036, 7028, 478, 9017, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [11038, 7033, 478, 9023, 1234, 2]);

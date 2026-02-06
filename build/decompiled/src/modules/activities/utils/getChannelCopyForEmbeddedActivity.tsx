@@ -22,19 +22,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/utils/getChannelCopyForEmbeddedActivity.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun62151: for (var _fun62151_ip = 0;;) switch (_fun62151_ip) {
+        _fun62178: for (var _fun62178_ip = 0;;) switch (_fun62178_ip) {
             case 0:
                 var0 = arg0;
                 var1 = null;
                 if (!(var1 != var0)) {
-                    _fun62151_ip = 17;
-                    continue _fun62151
+                    _fun62178_ip = 17;
+                    continue _fun62178
                 }
             case 9:
                 var1 = '';
                 if (!(var1 === var0)) {
-                    _fun62151_ip = 78;
-                    continue _fun62151
+                    _fun62178_ip = 78;
+                    continue _fun62178
                 }
             case 17:
                 var5 = _closure1_slot0;

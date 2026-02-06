@@ -1,69 +1,50 @@
 package og;
+
+import yi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class q2 {
+final class q2 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ca f43274a;
+    static final q2 f42376a = new q2();
 
     /* renamed from: b  reason: collision with root package name */
-    private final Boolean f43275b;
+    private static final yi.c f42377b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final r9 f43276c = null;
+    private static final yi.c f42378c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final n9 f43277d;
+    private static final yi.c f42379d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Integer f43278e;
+    private static final yi.c f42380e;
 
-    /* renamed from: f  reason: collision with root package name */
-    private final Integer f43279f;
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public /* synthetic */ q2(o2 o2Var, p2 p2Var) {
-        this.f43274a = o2.h(o2Var);
-        this.f43275b = o2.i(o2Var);
-        this.f43277d = o2.g(o2Var);
-        this.f43278e = o2.j(o2Var);
-        this.f43279f = o2.k(o2Var);
+    static {
+        c.b a10 = yi.c.a("supportedFormats");
+        f fVar = new f();
+        fVar.a(1);
+        f42377b = a10.b(fVar.b()).a();
+        c.b a11 = yi.c.a("durationMs");
+        f fVar2 = new f();
+        fVar2.a(2);
+        f42378c = a11.b(fVar2.b()).a();
+        c.b a12 = yi.c.a("errorCode");
+        f fVar3 = new f();
+        fVar3.a(3);
+        f42379d = a12.b(fVar3.b()).a();
+        c.b a13 = yi.c.a("allowManualInput");
+        f fVar4 = new f();
+        fVar4.a(4);
+        f42380e = a13.b(fVar4.b()).a();
     }
 
-    public final n9 a() {
-        return this.f43277d;
+    private q2() {
     }
 
-    public final ca b() {
-        return this.f43274a;
-    }
-
-    public final Boolean c() {
-        return this.f43275b;
-    }
-
-    public final Integer d() {
-        return this.f43278e;
-    }
-
-    public final Integer e() {
-        return this.f43279f;
-    }
-
-    public final boolean equals(Object obj) {
-        if (obj == this) {
-            return true;
-        }
-        if (!(obj instanceof q2)) {
-            return false;
-        }
-        q2 q2Var = (q2) obj;
-        if (gf.o.a(this.f43274a, q2Var.f43274a) && gf.o.a(this.f43275b, q2Var.f43275b) && gf.o.a(null, null) && gf.o.a(this.f43277d, q2Var.f43277d) && gf.o.a(this.f43278e, q2Var.f43278e) && gf.o.a(this.f43279f, q2Var.f43279f)) {
-            return true;
-        }
-        return false;
-    }
-
-    public final int hashCode() {
-        return gf.o.b(this.f43274a, this.f43275b, null, this.f43277d, this.f43278e, this.f43279f);
+    @Override // yi.d
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        android.support.v4.media.session.b.a(obj);
+        yi.e eVar = (yi.e) obj2;
+        throw null;
     }
 }

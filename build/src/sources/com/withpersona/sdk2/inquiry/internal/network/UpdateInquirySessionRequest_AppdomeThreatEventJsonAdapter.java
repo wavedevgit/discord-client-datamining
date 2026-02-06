@@ -14,65 +14,65 @@ import org.jetbrains.annotations.NotNull;
 public final class UpdateInquirySessionRequest_AppdomeThreatEventJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19246a;
+    private final m.b f19226a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f19247b;
+    private final com.squareup.moshi.h f19227b;
 
     public UpdateInquirySessionRequest_AppdomeThreatEventJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a(StackTraceHelper.NAME_KEY, "timestamp", "reasonData");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19246a = a10;
+        this.f19226a = a10;
         com.squareup.moshi.h f10 = moshi.f(String.class, x0.d(), StackTraceHelper.NAME_KEY);
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19247b = f10;
+        this.f19227b = f10;
     }
 
     @Override // com.squareup.moshi.h
     /* renamed from: a */
     public UpdateInquirySessionRequest.AppdomeThreatEvent fromJson(m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         String str = null;
         String str2 = null;
         String str3 = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.f19246a);
-            if (W != -1) {
-                if (W != 0) {
-                    if (W != 1) {
-                        if (W == 2 && (str3 = (String) this.f19247b.fromJson(reader)) == null) {
-                            throw ym.c.x("reasonData", "reasonData", reader);
+            int J = reader.J(this.f19226a);
+            if (J != -1) {
+                if (J != 0) {
+                    if (J != 1) {
+                        if (J == 2 && (str3 = (String) this.f19227b.fromJson(reader)) == null) {
+                            throw an.c.x("reasonData", "reasonData", reader);
                         }
                     } else {
-                        str2 = (String) this.f19247b.fromJson(reader);
+                        str2 = (String) this.f19227b.fromJson(reader);
                         if (str2 == null) {
-                            throw ym.c.x("timestamp", "timestamp", reader);
+                            throw an.c.x("timestamp", "timestamp", reader);
                         }
                     }
                 } else {
-                    str = (String) this.f19247b.fromJson(reader);
+                    str = (String) this.f19227b.fromJson(reader);
                     if (str == null) {
-                        throw ym.c.x(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
+                        throw an.c.x(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
                     }
                 }
             } else {
                 reader.E0();
-                reader.P();
+                reader.S();
             }
         }
-        reader.z();
+        reader.D();
         if (str != null) {
             if (str2 != null) {
                 if (str3 != null) {
                     return new UpdateInquirySessionRequest.AppdomeThreatEvent(str, str2, str3);
                 }
-                throw ym.c.o("reasonData", "reasonData", reader);
+                throw an.c.o("reasonData", "reasonData", reader);
             }
-            throw ym.c.o("timestamp", "timestamp", reader);
+            throw an.c.o("timestamp", "timestamp", reader);
         }
-        throw ym.c.o(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
+        throw an.c.o(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -81,13 +81,13 @@ public final class UpdateInquirySessionRequest_AppdomeThreatEventJsonAdapter ext
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (appdomeThreatEvent != null) {
             writer.k();
-            writer.W(StackTraceHelper.NAME_KEY);
-            this.f19247b.toJson(writer, appdomeThreatEvent.a());
-            writer.W("timestamp");
-            this.f19247b.toJson(writer, appdomeThreatEvent.c());
-            writer.W("reasonData");
-            this.f19247b.toJson(writer, appdomeThreatEvent.b());
-            writer.E();
+            writer.J(StackTraceHelper.NAME_KEY);
+            this.f19227b.toJson(writer, appdomeThreatEvent.a());
+            writer.J("timestamp");
+            this.f19227b.toJson(writer, appdomeThreatEvent.c());
+            writer.J("reasonData");
+            this.f19227b.toJson(writer, appdomeThreatEvent.b());
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

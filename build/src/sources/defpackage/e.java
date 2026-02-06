@@ -1,17 +1,17 @@
 package defpackage;
 
-import av.f;
-import av.g;
-import av.h;
-import bv.d;
 import com.facebook.react.uimanager.ViewProps;
+import cv.f;
+import cv.g;
+import cv.h;
+import dv.d;
 import java.util.Map;
 import kotlin.collections.o0;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
-import or.v;
-import uu.b;
-import uu.c;
+import qr.v;
+import wu.b;
+import wu.c;
 /* renamed from: e  reason: default package */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public interface e {
@@ -21,26 +21,26 @@ public interface e {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private Function1 f21271a;
+        private Function1 f21204a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Map f21272b = o0.n(v.a("var", c.f51729a), v.a("missing_some", b.f51728a), v.a("missing", uu.a.f51727a), v.a(">", bv.a.f7280a), v.a(">=", bv.b.f7282a), v.a("<", bv.c.f7284a), v.a("<=", d.f7286a), v.a("min", av.e.f6007a), v.a("max", av.d.f6005a), v.a("+", av.a.f6002a), v.a("-", h.f6012a), v.a("*", g.f6010a), v.a("/", av.b.f6004a), v.a("%", f.f6009a), v.a("==", xu.a.f54274a), v.a("!=", xu.d.f54278a), v.a("===", yu.b.f54930a), v.a("!==", yu.a.f54928a), v.a("!", wu.d.f53317a), v.a("!!", wu.b.f53315a), v.a("and", wu.a.f53314a), v.a("or", wu.e.f53318a), v.a("if", wu.c.f53316a), v.a("cat", dv.a.f21269a), v.a("substr", dv.c.f21270a), v.a("merge", su.e.f50247a), v.a("in", ru.d.f49246a));
+        private final Map f21205b = o0.n(v.a("var", c.f54129a), v.a("missing_some", b.f54128a), v.a("missing", wu.a.f54127a), v.a(">", dv.a.f21196a), v.a(">=", dv.b.f21198a), v.a("<", dv.c.f21200a), v.a("<=", d.f21202a), v.a("min", cv.e.f20049a), v.a("max", cv.d.f20047a), v.a("+", cv.a.f20044a), v.a("-", h.f20054a), v.a("*", g.f20052a), v.a("/", cv.b.f20046a), v.a("%", f.f20051a), v.a("==", zu.a.f56635a), v.a("!=", zu.d.f56639a), v.a("===", av.b.f6303a), v.a("!==", av.a.f6301a), v.a("!", yu.d.f55632a), v.a("!!", yu.b.f55630a), v.a("and", yu.a.f55629a), v.a("or", yu.e.f55633a), v.a("if", yu.c.f55631a), v.a("cat", fv.a.f23776a), v.a("substr", fv.c.f23777a), v.a("merge", uu.e.f52093a), v.a("in", tu.d.f51109a));
 
         /* renamed from: c  reason: collision with root package name */
-        private final Map f21273c = o0.n(v.a("map", su.d.f50246a), v.a(ViewProps.FILTER, su.c.f50245a), v.a("reduce", su.g.f50248a), v.a("all", tu.a.f51062a), v.a(ViewProps.NONE, tu.b.f51063a), v.a("some", tu.e.f51068a));
+        private final Map f21206c = o0.n(v.a("map", uu.d.f52092a), v.a(ViewProps.FILTER, uu.c.f52091a), v.a("reduce", uu.g.f52094a), v.a("all", vu.a.f52990a), v.a(ViewProps.NONE, vu.b.f52991a), v.a("some", vu.e.f52996a));
 
         private final boolean f(String str) {
-            if (!this.f21273c.containsKey(str) && !this.f21272b.containsKey(str)) {
+            if (!this.f21206c.containsKey(str) && !this.f21205b.containsKey(str)) {
                 return true;
             }
             return false;
         }
 
-        public final a a(String operationName, qu.a operation) {
+        public final a a(String operationName, su.a operation) {
             Intrinsics.checkNotNullParameter(operationName, "operationName");
             Intrinsics.checkNotNullParameter(operation, "operation");
             if (f(operationName)) {
-                this.f21273c.put(operationName, operation);
+                this.f21206c.put(operationName, operation);
             }
             return this;
         }
@@ -48,16 +48,16 @@ public interface e {
         public final a b(Map operations) {
             Intrinsics.checkNotNullParameter(operations, "operations");
             for (Map.Entry entry : operations.entrySet()) {
-                a((String) entry.getKey(), (qu.a) entry.getValue());
+                a((String) entry.getKey(), (su.a) entry.getValue());
             }
             return this;
         }
 
-        public final a c(String operationName, qu.b operation) {
+        public final a c(String operationName, su.b operation) {
             Intrinsics.checkNotNullParameter(operationName, "operationName");
             Intrinsics.checkNotNullParameter(operation, "operation");
             if (f(operationName)) {
-                this.f21272b.put(operationName, operation);
+                this.f21205b.put(operationName, operation);
             }
             return this;
         }
@@ -65,14 +65,14 @@ public interface e {
         public final a d(Map operations) {
             Intrinsics.checkNotNullParameter(operations, "operations");
             for (Map.Entry entry : operations.entrySet()) {
-                c((String) entry.getKey(), (qu.b) entry.getValue());
+                c((String) entry.getKey(), (su.b) entry.getValue());
             }
             return this;
         }
 
         public final e e() {
-            qu.b bVar = (qu.b) this.f21272b.put("log", new ru.e(this.f21271a));
-            return new defpackage.a(new br.a(new br.b(this.f21272b, this.f21273c)));
+            su.b bVar = (su.b) this.f21205b.put("log", new tu.e(this.f21204a));
+            return new defpackage.a(new dr.a(new dr.b(this.f21205b, this.f21206c)));
         }
     }
 

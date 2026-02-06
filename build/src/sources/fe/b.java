@@ -8,20 +8,20 @@ import zd.g;
 final class b implements g {
 
     /* renamed from: d  reason: collision with root package name */
-    private final zd.b[] f22875d;
+    private final zd.b[] f23176d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final long[] f22876e;
+    private final long[] f23177e;
 
     public b(zd.b[] bVarArr, long[] jArr) {
-        this.f22875d = bVarArr;
-        this.f22876e = jArr;
+        this.f23176d = bVarArr;
+        this.f23177e = jArr;
     }
 
     @Override // zd.g
     public int a(long j10) {
-        int e10 = w0.e(this.f22876e, j10, false, false);
-        if (e10 < this.f22876e.length) {
+        int e10 = w0.e(this.f23177e, j10, false, false);
+        if (e10 < this.f23177e.length) {
             return e10;
         }
         return -1;
@@ -30,8 +30,8 @@ final class b implements g {
     @Override // zd.g
     public List d(long j10) {
         zd.b bVar;
-        int i10 = w0.i(this.f22876e, j10, true, false);
-        if (i10 != -1 && (bVar = this.f22875d[i10]) != zd.b.C) {
+        int i10 = w0.i(this.f23177e, j10, true, false);
+        if (i10 != -1 && (bVar = this.f23176d[i10]) != zd.b.C) {
             return Collections.singletonList(bVar);
         }
         return Collections.EMPTY_LIST;
@@ -47,15 +47,15 @@ final class b implements g {
             z10 = false;
         }
         ne.a.a(z10);
-        if (i10 < this.f22876e.length) {
+        if (i10 < this.f23177e.length) {
             z11 = true;
         }
         ne.a.a(z11);
-        return this.f22876e[i10];
+        return this.f23177e[i10];
     }
 
     @Override // zd.g
     public int f() {
-        return this.f22876e.length;
+        return this.f23177e.length;
     }
 }

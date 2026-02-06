@@ -10,7 +10,7 @@ import kotlin.reflect.KClass;
 public final class h {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final h f37264a = new h();
+    public static final h f36846a = new h();
 
     private h() {
     }
@@ -20,7 +20,7 @@ public final class h {
         if (owner instanceof androidx.lifecycle.h) {
             return ((androidx.lifecycle.h) owner).getDefaultViewModelCreationExtras();
         }
-        return CreationExtras.b.f4656c;
+        return CreationExtras.b.f4985c;
     }
 
     public final ViewModelProvider.Factory b(q0 owner) {
@@ -28,7 +28,7 @@ public final class h {
         if (owner instanceof androidx.lifecycle.h) {
             return ((androidx.lifecycle.h) owner).getDefaultViewModelProviderFactory();
         }
-        return d.f37258b;
+        return d.f36840b;
     }
 
     public final String c(KClass modelClass) {

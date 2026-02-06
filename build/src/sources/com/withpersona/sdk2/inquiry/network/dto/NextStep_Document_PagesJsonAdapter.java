@@ -40,18 +40,18 @@ public final class NextStep_Document_PagesJsonAdapter extends h {
     @NotNull
     public NextStep.Document.Pages fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         NextStep.Document.Pages.DocumentPages documentPages = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 documentPages = (NextStep.Document.Pages.DocumentPages) this.nullableDocumentPagesAdapter.fromJson(reader);
             }
         }
-        reader.z();
+        reader.D();
         return new NextStep.Document.Pages(documentPages);
     }
 
@@ -60,9 +60,9 @@ public final class NextStep_Document_PagesJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (pages != null) {
             writer.k();
-            writer.W("document");
+            writer.J("document");
             this.nullableDocumentPagesAdapter.toJson(writer, pages.getDocument());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

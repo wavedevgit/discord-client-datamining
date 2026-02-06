@@ -22,48 +22,48 @@ import zd.i;
 public final class c extends zd.f {
 
     /* renamed from: p  reason: collision with root package name */
-    private static final Pattern f24685p = Pattern.compile("^([0-9][0-9]+):([0-9][0-9]):([0-9][0-9])(?:(\\.[0-9]+)|:([0-9][0-9])(?:\\.([0-9]+))?)?$");
+    private static final Pattern f24938p = Pattern.compile("^([0-9][0-9]+):([0-9][0-9]):([0-9][0-9])(?:(\\.[0-9]+)|:([0-9][0-9])(?:\\.([0-9]+))?)?$");
 
     /* renamed from: q  reason: collision with root package name */
-    private static final Pattern f24686q = Pattern.compile("^([0-9]+(?:\\.[0-9]+)?)(h|m|s|ms|f|t)$");
+    private static final Pattern f24939q = Pattern.compile("^([0-9]+(?:\\.[0-9]+)?)(h|m|s|ms|f|t)$");
 
     /* renamed from: r  reason: collision with root package name */
-    private static final Pattern f24687r = Pattern.compile("^(([0-9]*.)?[0-9]+)(px|em|%)$");
+    private static final Pattern f24940r = Pattern.compile("^(([0-9]*.)?[0-9]+)(px|em|%)$");
 
     /* renamed from: s  reason: collision with root package name */
-    static final Pattern f24688s = Pattern.compile("^([-+]?\\d+\\.?\\d*?)%$");
+    static final Pattern f24941s = Pattern.compile("^([-+]?\\d+\\.?\\d*?)%$");
 
     /* renamed from: t  reason: collision with root package name */
-    static final Pattern f24689t = Pattern.compile("^(\\d+\\.?\\d*?)% (\\d+\\.?\\d*?)%$");
+    static final Pattern f24942t = Pattern.compile("^(\\d+\\.?\\d*?)% (\\d+\\.?\\d*?)%$");
 
     /* renamed from: u  reason: collision with root package name */
-    private static final Pattern f24690u = Pattern.compile("^(\\d+\\.?\\d*?)px (\\d+\\.?\\d*?)px$");
+    private static final Pattern f24943u = Pattern.compile("^(\\d+\\.?\\d*?)px (\\d+\\.?\\d*?)px$");
 
     /* renamed from: v  reason: collision with root package name */
-    private static final Pattern f24691v = Pattern.compile("^(\\d+) (\\d+)$");
+    private static final Pattern f24944v = Pattern.compile("^(\\d+) (\\d+)$");
 
     /* renamed from: w  reason: collision with root package name */
-    private static final b f24692w = new b(30.0f, 1, 1);
+    private static final b f24945w = new b(30.0f, 1, 1);
 
     /* renamed from: x  reason: collision with root package name */
-    private static final a f24693x = new a(32, 15);
+    private static final a f24946x = new a(32, 15);
 
     /* renamed from: o  reason: collision with root package name */
-    private final XmlPullParserFactory f24694o;
+    private final XmlPullParserFactory f24947o;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        final int f24695a;
+        final int f24948a;
 
         /* renamed from: b  reason: collision with root package name */
-        final int f24696b;
+        final int f24949b;
 
         a(int i10, int i11) {
-            this.f24695a = i10;
-            this.f24696b = i11;
+            this.f24948a = i10;
+            this.f24949b = i11;
         }
     }
 
@@ -72,35 +72,35 @@ public final class c extends zd.f {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        final float f24697a;
+        final float f24950a;
 
         /* renamed from: b  reason: collision with root package name */
-        final int f24698b;
+        final int f24951b;
 
         /* renamed from: c  reason: collision with root package name */
-        final int f24699c;
+        final int f24952c;
 
         b(float f10, int i10, int i11) {
-            this.f24697a = f10;
-            this.f24698b = i10;
-            this.f24699c = i11;
+            this.f24950a = f10;
+            this.f24951b = i10;
+            this.f24952c = i11;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     /* renamed from: ge.c$c  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class C0339c {
+    public static final class C0336c {
 
         /* renamed from: a  reason: collision with root package name */
-        final int f24700a;
+        final int f24953a;
 
         /* renamed from: b  reason: collision with root package name */
-        final int f24701b;
+        final int f24954b;
 
-        C0339c(int i10, int i11) {
-            this.f24700a = i10;
-            this.f24701b = i11;
+        C0336c(int i10, int i11) {
+            this.f24953a = i10;
+            this.f24954b = i11;
         }
     }
 
@@ -108,7 +108,7 @@ public final class c extends zd.f {
         super("TtmlDecoder");
         try {
             XmlPullParserFactory newInstance = XmlPullParserFactory.newInstance();
-            this.f24694o = newInstance;
+            this.f24947o = newInstance;
             newInstance.setNamespaceAware(true);
         } catch (XmlPullParserException e10) {
             throw new RuntimeException("Couldn't create XmlPullParserFactory instance", e10);
@@ -130,7 +130,7 @@ public final class c extends zd.f {
     }
 
     private static Layout.Alignment D(String str) {
-        String e10 = li.b.e(str);
+        String e10 = mi.b.e(str);
         e10.getClass();
         char c10 = 65535;
         switch (e10.hashCode()) {
@@ -184,7 +184,7 @@ public final class c extends zd.f {
         if (attributeValue == null) {
             return aVar;
         }
-        Matcher matcher = f24691v.matcher(attributeValue);
+        Matcher matcher = f24944v.matcher(attributeValue);
         if (!matcher.matches()) {
             y.i("TtmlDecoder", "Ignoring malformed cell resolution: " + attributeValue);
             return aVar;
@@ -206,9 +206,9 @@ public final class c extends zd.f {
         Matcher matcher;
         String[] d12 = w0.d1(str, "\\s+");
         if (d12.length == 1) {
-            matcher = f24687r.matcher(str);
+            matcher = f24940r.matcher(str);
         } else if (d12.length == 2) {
-            matcher = f24687r.matcher(d12[1]);
+            matcher = f24940r.matcher(d12[1]);
             y.i("TtmlDecoder", "Multiple values in fontSize attribute. Picking the second value for vertical font size and ignoring the first.");
         } else {
             throw new i("Invalid number of entries for fontSize: " + d12.length + ".");
@@ -276,13 +276,13 @@ public final class c extends zd.f {
         } else {
             f10 = 1.0f;
         }
-        b bVar = f24692w;
-        int i11 = bVar.f24698b;
+        b bVar = f24945w;
+        int i11 = bVar.f24951b;
         String attributeValue3 = xmlPullParser.getAttributeValue("http://www.w3.org/ns/ttml#parameter", "subFrameRate");
         if (attributeValue3 != null) {
             i11 = Integer.parseInt(attributeValue3);
         }
-        int i12 = bVar.f24699c;
+        int i12 = bVar.f24952c;
         String attributeValue4 = xmlPullParser.getAttributeValue("http://www.w3.org/ns/ttml#parameter", "tickRate");
         if (attributeValue4 != null) {
             i12 = Integer.parseInt(attributeValue4);
@@ -290,7 +290,7 @@ public final class c extends zd.f {
         return new b(i10 * f10, i11, i12);
     }
 
-    private static Map H(XmlPullParser xmlPullParser, Map map, a aVar, C0339c c0339c, Map map2, Map map3) {
+    private static Map H(XmlPullParser xmlPullParser, Map map, a aVar, C0336c c0336c, Map map2, Map map3) {
         do {
             xmlPullParser.next();
             if (y0.f(xmlPullParser, "style")) {
@@ -306,9 +306,9 @@ public final class c extends zd.f {
                     map.put(g10, M);
                 }
             } else if (y0.f(xmlPullParser, "region")) {
-                e K = K(xmlPullParser, aVar, c0339c);
+                e K = K(xmlPullParser, aVar, c0336c);
                 if (K != null) {
-                    map2.put(K.f24715a, K);
+                    map2.put(K.f24968a, K);
                 }
             } else if (y0.f(xmlPullParser, "metadata")) {
                 I(xmlPullParser, map3);
@@ -419,7 +419,7 @@ public final class c extends zd.f {
             attributeCount = i11;
         }
         if (dVar != null) {
-            long j13 = dVar.f24705d;
+            long j13 = dVar.f24958d;
             if (j13 != -9223372036854775807L) {
                 if (j10 != -9223372036854775807L) {
                     j10 += j13;
@@ -434,7 +434,7 @@ public final class c extends zd.f {
             if (j12 != -9223372036854775807L) {
                 j11 = j14 + j12;
             } else if (dVar != null) {
-                long j15 = dVar.f24706e;
+                long j15 = dVar.f24959e;
                 if (j15 != -9223372036854775807L) {
                     j11 = j15;
                 }
@@ -452,7 +452,7 @@ public final class c extends zd.f {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
     */
-    private static ge.e K(org.xmlpull.v1.XmlPullParser r17, ge.c.a r18, ge.c.C0339c r19) {
+    private static ge.e K(org.xmlpull.v1.XmlPullParser r17, ge.c.a r18, ge.c.C0336c r19) {
         /*
             Method dump skipped, instructions count: 566
             To view this dump add '--comments-level debug' option
@@ -461,7 +461,7 @@ public final class c extends zd.f {
     }
 
     private static float L(String str) {
-        Matcher matcher = f24688s.matcher(str);
+        Matcher matcher = f24941s.matcher(str);
         if (!matcher.matches()) {
             y.i("TtmlDecoder", "Invalid value for shear: " + str);
             return Float.MAX_VALUE;
@@ -514,18 +514,18 @@ public final class c extends zd.f {
         throw new UnsupportedOperationException("Method not decompiled: ge.c.O(java.lang.String, ge.c$b):long");
     }
 
-    private static C0339c P(XmlPullParser xmlPullParser) {
+    private static C0336c P(XmlPullParser xmlPullParser) {
         String a10 = y0.a(xmlPullParser, "extent");
         if (a10 == null) {
             return null;
         }
-        Matcher matcher = f24690u.matcher(a10);
+        Matcher matcher = f24943u.matcher(a10);
         if (!matcher.matches()) {
             y.i("TtmlDecoder", "Ignoring non-pixel tts extent: " + a10);
             return null;
         }
         try {
-            return new C0339c(Integer.parseInt((String) ne.a.e(matcher.group(1))), Integer.parseInt((String) ne.a.e(matcher.group(2))));
+            return new C0336c(Integer.parseInt((String) ne.a.e(matcher.group(1))), Integer.parseInt((String) ne.a.e(matcher.group(2))));
         } catch (NumberFormatException unused) {
             y.i("TtmlDecoder", "Ignoring malformed tts extent: " + a10);
             return null;
@@ -535,17 +535,17 @@ public final class c extends zd.f {
     @Override // zd.f
     protected zd.g z(byte[] bArr, int i10, boolean z10) {
         try {
-            XmlPullParser newPullParser = this.f24694o.newPullParser();
+            XmlPullParser newPullParser = this.f24947o.newPullParser();
             HashMap hashMap = new HashMap();
             HashMap hashMap2 = new HashMap();
             HashMap hashMap3 = new HashMap();
             hashMap2.put("", new e(""));
             int i11 = 0;
-            C0339c c0339c = null;
+            C0336c c0336c = null;
             newPullParser.setInput(new ByteArrayInputStream(bArr, 0, i10), null);
             ArrayDeque arrayDeque = new ArrayDeque();
-            b bVar = f24692w;
-            a aVar = f24693x;
+            b bVar = f24945w;
+            a aVar = f24946x;
             h hVar = null;
             for (int eventType = newPullParser.getEventType(); eventType != 1; eventType = newPullParser.getEventType()) {
                 d dVar = (d) arrayDeque.peek();
@@ -554,17 +554,17 @@ public final class c extends zd.f {
                     if (eventType == 2) {
                         if ("tt".equals(name)) {
                             bVar = G(newPullParser);
-                            aVar = E(newPullParser, f24693x);
-                            c0339c = P(newPullParser);
+                            aVar = E(newPullParser, f24946x);
+                            c0336c = P(newPullParser);
                         }
                         b bVar2 = bVar;
-                        C0339c c0339c2 = c0339c;
+                        C0336c c0336c2 = c0336c;
                         a aVar2 = aVar;
                         if (!C(name)) {
                             y.f("TtmlDecoder", "Ignoring unsupported tag: " + newPullParser.getName());
                         } else {
                             if ("head".equals(name)) {
-                                H(newPullParser, hashMap, aVar2, c0339c2, hashMap2, hashMap3);
+                                H(newPullParser, hashMap, aVar2, c0336c2, hashMap2, hashMap3);
                             } else {
                                 try {
                                     d J = J(newPullParser, dVar, hashMap2, bVar2);
@@ -577,12 +577,12 @@ public final class c extends zd.f {
                                 }
                             }
                             aVar = aVar2;
-                            c0339c = c0339c2;
+                            c0336c = c0336c2;
                             bVar = bVar2;
                         }
                         i11++;
                         aVar = aVar2;
-                        c0339c = c0339c2;
+                        c0336c = c0336c2;
                         bVar = bVar2;
                     } else if (eventType == 4) {
                         ((d) ne.a.e(dVar)).a(d.d(newPullParser.getText()));

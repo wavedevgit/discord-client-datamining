@@ -19,13 +19,13 @@ public /* synthetic */ class MessageAccessoriesAdapter$onBindViewHolder$68 exten
 
     @Override // kotlin.jvm.functions.Function3
     public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2, Object obj3) {
-        m525invokeSHRpUJI(((Number) obj).intValue(), ((ChannelId) obj2).m1068unboximpl(), ((MessageId) obj3).m1094unboximpl());
-        return Unit.f31988a;
+        m523invokeSHRpUJI(((Number) obj).intValue(), ((ChannelId) obj2).m1066unboximpl(), ((MessageId) obj3).m1092unboximpl());
+        return Unit.f32008a;
     }
 
     /* renamed from: invoke-SHRpUJI  reason: not valid java name */
-    public final void m525invokeSHRpUJI(int i10, long j10, String p22) {
+    public final void m523invokeSHRpUJI(int i10, long j10, String p22) {
         Intrinsics.checkNotNullParameter(p22, "p2");
-        ((ChatEventHandler) this.receiver).mo460onTapForwardFooterSHRpUJI(i10, j10, p22);
+        ((ChatEventHandler) this.receiver).mo458onTapForwardFooterSHRpUJI(i10, j10, p22);
     }
 }

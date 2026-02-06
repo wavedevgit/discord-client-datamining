@@ -10,13 +10,13 @@ import org.jetbrains.annotations.NotNull;
 public final class FieldDescriptorImpl extends AnnotatedImpl implements FieldDescriptor {
 
     /* renamed from: e  reason: collision with root package name */
-    private final PropertyDescriptor f32435e;
+    private final PropertyDescriptor f32455e;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public FieldDescriptorImpl(@NotNull Annotations annotations, @NotNull PropertyDescriptor correspondingProperty) {
         super(annotations);
         Intrinsics.checkNotNullParameter(annotations, "annotations");
         Intrinsics.checkNotNullParameter(correspondingProperty, "correspondingProperty");
-        this.f32435e = correspondingProperty;
+        this.f32455e = correspondingProperty;
     }
 }

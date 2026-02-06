@@ -1,97 +1,67 @@
 package pg;
 
-import java.util.Collection;
-import java.util.Map;
-import java.util.Set;
-/* JADX INFO: Access modifiers changed from: package-private */
+import java.util.NoSuchElementException;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class e extends c1 {
+abstract class e extends o1 {
 
-    /* renamed from: i  reason: collision with root package name */
-    final transient Map f45178i;
+    /* renamed from: d  reason: collision with root package name */
+    private final int f44145d;
 
-    /* renamed from: o  reason: collision with root package name */
-    final /* synthetic */ m f45179o;
+    /* renamed from: e  reason: collision with root package name */
+    private int f44146e;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public e(m mVar, Map map) {
-        this.f45179o = mVar;
-        this.f45178i = map;
+    /* JADX INFO: Access modifiers changed from: protected */
+    public e(int i10, int i11) {
+        c.b(i11, i10, "index");
+        this.f44145d = i10;
+        this.f44146e = i11;
     }
 
-    @Override // pg.c1
-    protected final Set a() {
-        return new c(this);
-    }
+    protected abstract Object a(int i10);
 
-    @Override // java.util.AbstractMap, java.util.Map
-    public final void clear() {
-        Map map;
-        m mVar = this.f45179o;
-        Map map2 = this.f45178i;
-        map = mVar.f45544i;
-        if (map2 == map) {
-            mVar.o();
-        } else {
-            q0.a(new d(this));
+    @Override // java.util.Iterator, java.util.ListIterator
+    public final boolean hasNext() {
+        if (this.f44146e < this.f44145d) {
+            return true;
         }
+        return false;
     }
 
-    @Override // java.util.AbstractMap, java.util.Map
-    public final boolean containsKey(Object obj) {
-        return d1.b(this.f45178i, obj);
-    }
-
-    @Override // java.util.AbstractMap, java.util.Map
-    public final boolean equals(Object obj) {
-        if (this != obj && !this.f45178i.equals(obj)) {
-            return false;
+    @Override // java.util.ListIterator
+    public final boolean hasPrevious() {
+        if (this.f44146e > 0) {
+            return true;
         }
-        return true;
+        return false;
     }
 
-    @Override // java.util.AbstractMap, java.util.Map
-    public final /* bridge */ /* synthetic */ Object get(Object obj) {
-        Collection collection = (Collection) d1.a(this.f45178i, obj);
-        if (collection == null) {
-            return null;
+    @Override // java.util.Iterator, java.util.ListIterator
+    public final Object next() {
+        if (hasNext()) {
+            int i10 = this.f44146e;
+            this.f44146e = i10 + 1;
+            return a(i10);
         }
-        return this.f45179o.h(obj, collection);
+        throw new NoSuchElementException();
     }
 
-    @Override // java.util.AbstractMap, java.util.Map
-    public final int hashCode() {
-        return this.f45178i.hashCode();
+    @Override // java.util.ListIterator
+    public final int nextIndex() {
+        return this.f44146e;
     }
 
-    @Override // java.util.AbstractMap, java.util.Map
-    public final Set keySet() {
-        return this.f45179o.d();
-    }
-
-    @Override // java.util.AbstractMap, java.util.Map
-    public final /* bridge */ /* synthetic */ Object remove(Object obj) {
-        int i10;
-        Collection collection = (Collection) this.f45178i.remove(obj);
-        if (collection == null) {
-            return null;
+    @Override // java.util.ListIterator
+    public final Object previous() {
+        if (hasPrevious()) {
+            int i10 = this.f44146e - 1;
+            this.f44146e = i10;
+            return a(i10);
         }
-        Collection g10 = this.f45179o.g();
-        g10.addAll(collection);
-        m mVar = this.f45179o;
-        i10 = mVar.f45545o;
-        mVar.f45545o = i10 - collection.size();
-        collection.clear();
-        return g10;
+        throw new NoSuchElementException();
     }
 
-    @Override // java.util.AbstractMap, java.util.Map
-    public final int size() {
-        return this.f45178i.size();
-    }
-
-    @Override // java.util.AbstractMap
-    public final String toString() {
-        return this.f45178i.toString();
+    @Override // java.util.ListIterator
+    public final int previousIndex() {
+        return this.f44146e - 1;
     }
 }

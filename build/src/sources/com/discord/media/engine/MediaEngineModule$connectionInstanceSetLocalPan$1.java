@@ -35,7 +35,7 @@ final class MediaEngineModule$connectionInstanceSetLocalPan$1 extends kotlin.cor
     @Override // kotlin.coroutines.jvm.internal.a
     public final Object invokeSuspend(Object obj) {
         Object awaitMediaEngine;
-        Object f10 = ur.b.f();
+        Object f10 = wr.b.f();
         int i10 = this.label;
         if (i10 != 0) {
             if (i10 == 1) {
@@ -53,11 +53,11 @@ final class MediaEngineModule$connectionInstanceSetLocalPan$1 extends kotlin.cor
             }
         }
         this.this$0.getMediaEngine().connectionInstanceSetLocalPan$media_engine_release((int) this.$connectionId, this.$userId, (float) this.$left, (float) this.$right);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaEngineModule$connectionInstanceSetLocalPan$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+        return ((MediaEngineModule$connectionInstanceSetLocalPan$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
     }
 }

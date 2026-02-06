@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Pile/native/GuildIconPile.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun62269: for (var _fun62269_ip = 0;;) switch (_fun62269_ip) {
+        _fun62296: for (var _fun62296_ip = 0;;) switch (_fun62296_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.size;
@@ -76,8 +76,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var12 <= var4;
                 var4 = var11;
                 if (!var8) {
-                    _fun62269_ip = 182;
-                    continue _fun62269
+                    _fun62296_ip = 182;
+                    continue _fun62296
                 }
             case 179:
                 var4 = var7;
@@ -90,15 +90,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = null;
                 var5 = var5 != var10;
                 if (!var5) {
-                    _fun62269_ip = 222;
-                    continue _fun62269
+                    _fun62296_ip = 222;
+                    continue _fun62296
                 }
             case 218:
                 var5 = var9 < var10;
             case 222:
                 if (!var5) {
-                    _fun62269_ip = 283;
-                    continue _fun62269
+                    _fun62296_ip = 283;
+                    continue _fun62296
                 }
             case 225:
                 var8 = _closure1_slot3;
@@ -124,4 +124,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.GuildIconPile = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 7415, 7828, 7830, 5461, 7829, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 7420, 7833, 7835, 5462, 7834, 2]);

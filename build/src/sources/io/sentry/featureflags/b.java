@@ -5,5 +5,5 @@ import io.sentry.protocol.g;
 public interface b {
     b clone();
 
-    g p();
+    g o();
 }

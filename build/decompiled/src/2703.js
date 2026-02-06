@@ -1,82 +1,228 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var8 = require;
-    var1 = exports;
-    var9 = dependencyMap;
-    var3 = function arg0() {
-        _fun22302: for (var _fun22302_ip = 0;;) switch (_fun22302_ip) {
-            case 0:
-                var2 = arg0;
-                if (!var2) {
-                    _fun22302_ip = 18;
-                    continue _fun22302
+    _fun22298: for (var _fun22298_ip = 0;;) switch (_fun22298_ip) {
+        case 0:
+            var1 = exports;
+            var0 = global;
+            var4 = var0.Object;
+            var3 = var4.defineProperty;
+            var2 = {};
+            var0 = true;
+            var2.value = var0;
+            var0 = '__esModule';
+            var0 = var3.bind(var4)(var1, var0, var2);
+            var0 = undefined;
+            var1.default = var0;
+            var3 = dependencyMap;
+            var2 = 0;
+            var3 = var3[var2];
+            var2 = require;
+            var4 = var2.bind(var0)(var3);
+            if (!var4) {
+                _fun22298_ip = 77;
+                continue _fun22298
+            }
+        case 65:
+            var2 = var4.__esModule;
+            var3 = var4;
+            if (var2) {
+                _fun22298_ip = 86;
+                continue _fun22298
+            }
+        case 77:
+            var2 = {};
+            var2.default = var4;
+            var3 = var2;
+        case 86:
+            var2 = {};
+            var4 = function arg0, arg1() {
+                _fun22299: for (var _fun22299_ip = 0;;) switch (_fun22299_ip) {
+                    case 0:
+                        var0 = global;
+                        var2 = var0.Number;
+                        var1 = undefined;
+                        var0 = arg0;
+                        var1 = var2.bind(var1)(var0);
+                        var0 = 100;
+                        var2 = var1 % var0;
+                        var0 = 20;
+                        if (!(!(var2 > var0))) {
+                            _fun22299_ip = 39;
+                            continue _fun22299
+                        }
+                    case 32:
+                        var0 = 10;
+                        if (!(var2 < var0)) {
+                            _fun22299_ip = 60;
+                            continue _fun22299
+                        }
+                    case 39:
+                        var0 = 10;
+                        var2 = var2 % var0;
+                        var0 = 1;
+                        if (!(var0 !== var2)) {
+                            _fun22299_ip = 72;
+                            continue _fun22299
+                        }
+                    case 53:
+                        var0 = 2;
+                        if (!(var0 !== var2)) {
+                            _fun22299_ip = 72;
+                            continue _fun22299
+                        }
+                    case 60:
+                        var0 = ':e';
+                        var0 = var1 + var0;
+                        return var0;
+                    case 72:
+                        var0 = ':a';
+                        var0 = var1 + var0;
+                        return var0;
                 }
-            case 6:
-                var1 = var2.__esModule;
-                var0 = var2;
-                if (var1) {
-                    _fun22302_ip = 27;
-                    continue _fun22302
-                }
-            case 18:
-                var1 = {};
-                var1.default = var2;
-                var0 = var1;
-            case 27:
+            };
+            var2.ordinalNumber = var4;
+            var6 = var3.default;
+            var4 = {};
+            var5 = {};
+            var8 = ['f.Kr.', 'e.Kr.'];
+            var5.narrow = var8;
+            var8 = ['f.Kr.', 'e.Kr.'];
+            var5.abbreviated = var8;
+            var8 = ['före Kristus', 'efter Kristus'];
+            var5.wide = var8;
+            var4.values = var5;
+            var5 = 'wide';
+            var4.defaultWidth = var5;
+            var4 = var6.bind(var0)(var4);
+            var2.era = var4;
+            var6 = var3.default;
+            var4 = {};
+            var8 = {};
+            var9 = ['1', '2', '3', '4'];
+            var8.narrow = var9;
+            var9 = ['Q1', 'Q2', 'Q3', 'Q4'];
+            var8.abbreviated = var9;
+            var9 = ['1:a kvartalet', '2:a kvartalet', '3:e kvartalet', '4:e kvartalet'];
+            var8.wide = var9;
+            var4.values = var8;
+            var4.defaultWidth = var5;
+            var7 = function arg0() {
+                var1 = arg0;
+                var0 = 1;
+                var0 = var1 - var0;
                 return var0;
-        }
-    };
-    var0 = global;
-    var5 = var0.Object;
-    var4 = var5.defineProperty;
-    var2 = {};
-    var0 = true;
-    var2.value = var0;
-    var0 = '__esModule';
-    var0 = var4.bind(var5)(var1, var0, var2);
-    var0 = undefined;
-    var1.default = var0;
-    var2 = 0;
-    var2 = var9[var2];
-    var2 = var8.bind(var0)(var2);
-    var7 = var3.bind(var0)(var2);
-    var2 = 1;
-    var2 = var9[var2];
-    var2 = var8.bind(var0)(var2);
-    var6 = var3.bind(var0)(var2);
-    var2 = 2;
-    var2 = var9[var2];
-    var2 = var8.bind(var0)(var2);
-    var5 = var3.bind(var0)(var2);
-    var2 = 3;
-    var2 = var9[var2];
-    var2 = var8.bind(var0)(var2);
-    var4 = var3.bind(var0)(var2);
-    var2 = 4;
-    var2 = var9[var2];
-    var2 = var8.bind(var0)(var2);
-    var3 = var3.bind(var0)(var2);
-    var2 = {};
-    var8 = 'th';
-    var2.code = var8;
-    var7 = var7.default;
-    var2.formatDistance = var7;
-    var6 = var6.default;
-    var2.formatLong = var6;
-    var5 = var5.default;
-    var2.formatRelative = var5;
-    var4 = var4.default;
-    var2.localize = var4;
-    var3 = var3.default;
-    var2.match = var3;
-    var3 = {
-        'weekStartsOn': 0,
-        'firstWeekContainsDate': 1
-    };
-    var2.options = var3;
-    var1.default = var2;
-    var2 = var1.default;
-    var1 = arg4;
-    var1.exports = var2;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [2704, 2705, 2706, 2707, 2708]);
+            };
+            var4.argumentCallback = var7;
+            var4 = var6.bind(var0)(var4);
+            var2.quarter = var4;
+            var6 = var3.default;
+            var4 = {};
+            var7 = {};
+            var8 = ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'];
+            var7.narrow = var8;
+            var8 = ['jan.', 'feb.', 'mars', 'apr.', 'maj', 'juni', 'juli', 'aug.', 'sep.', 'okt.', 'nov.', 'dec.'];
+            var7.abbreviated = var8;
+            var8 = ['januari', 'februari', 'mars', 'april', 'maj', 'juni', 'juli', 'augusti', 'september', 'oktober', 'november', 'december'];
+            var7.wide = var8;
+            var4.values = var7;
+            var4.defaultWidth = var5;
+            var4 = var6.bind(var0)(var4);
+            var2.month = var4;
+            var6 = var3.default;
+            var4 = {};
+            var7 = {};
+            var8 = ['S', 'M', 'T', 'O', 'T', 'F', 'L'];
+            var7.narrow = var8;
+            var8 = ['sö', 'må', 'ti', 'on', 'to', 'fr', 'lö'];
+            var7.short = var8;
+            var8 = ['sön', 'mån', 'tis', 'ons', 'tors', 'fre', 'lör'];
+            var7.abbreviated = var8;
+            var8 = ['söndag', 'måndag', 'tisdag', 'onsdag', 'torsdag', 'fredag', 'lördag'];
+            var7.wide = var8;
+            var4.values = var7;
+            var4.defaultWidth = var5;
+            var4 = var6.bind(var0)(var4);
+            var2.day = var4;
+            var4 = var3.default;
+            var3 = {};
+            var6 = {};
+            var7 = {
+                'am': 'fm',
+                'pm': 'em',
+                'midnight': 'midnatt',
+                'noon': 'middag',
+                'morning': 'morg.',
+                'afternoon': 'efterm.',
+                'evening': 'kväll',
+                'night': 'natt'
+            };
+            var6.narrow = var7;
+            var7 = {
+                'am': 'f.m.',
+                'pm': 'e.m.',
+                'midnight': 'midnatt',
+                'noon': 'middag',
+                'morning': 'morgon',
+                'afternoon': 'efterm.',
+                'evening': 'kväll',
+                'night': 'natt'
+            };
+            var6.abbreviated = var7;
+            var7 = {
+                'am': 'förmiddag',
+                'pm': 'eftermiddag',
+                'midnight': 'midnatt',
+                'noon': 'middag',
+                'morning': 'morgon',
+                'afternoon': 'eftermiddag',
+                'evening': 'kväll',
+                'night': 'natt'
+            };
+            var6.wide = var7;
+            var3.values = var6;
+            var3.defaultWidth = var5;
+            var6 = {};
+            var7 = {
+                'am': 'fm',
+                'pm': 'em',
+                'midnight': 'midnatt',
+                'noon': 'middag',
+                'morning': 'på morg.',
+                'afternoon': 'på efterm.',
+                'evening': 'på kvällen',
+                'night': 'på natten'
+            };
+            var6.narrow = var7;
+            var7 = {
+                'am': 'fm',
+                'pm': 'em',
+                'midnight': 'midnatt',
+                'noon': 'middag',
+                'morning': 'på morg.',
+                'afternoon': 'på efterm.',
+                'evening': 'på kvällen',
+                'night': 'på natten'
+            };
+            var6.abbreviated = var7;
+            var7 = {
+                'am': 'fm',
+                'pm': 'em',
+                'midnight': 'midnatt',
+                'noon': 'middag',
+                'morning': 'på morgonen',
+                'afternoon': 'på eftermiddagen',
+                'evening': 'på kvällen',
+                'night': 'på natten'
+            };
+            var6.wide = var7;
+            var3.formattingValues = var6;
+            var3.defaultFormattingWidth = var5;
+            var3 = var4.bind(var0)(var3);
+            var2.dayPeriod = var3;
+            var1.default = var2;
+            var2 = var1.default;
+            var1 = arg4;
+            var1.exports = var2;
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1693]);

@@ -1,48 +1,34 @@
 package ng;
 
-import java.util.Set;
+import yi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class pc extends la implements Set {
+final class pc implements yi.d {
 
-    /* renamed from: e  reason: collision with root package name */
-    private transient mc f40917e;
+    /* renamed from: a  reason: collision with root package name */
+    static final pc f40183a = new pc();
 
-    @Override // java.util.Collection, java.util.Set
-    public final boolean equals(Object obj) {
-        if (obj == this || obj == this) {
-            return true;
-        }
-        if (obj instanceof Set) {
-            Set set = (Set) obj;
-            try {
-                if (size() == set.size()) {
-                    if (containsAll(set)) {
-                        return true;
-                    }
-                    return false;
-                }
-            } catch (ClassCastException | NullPointerException unused) {
-            }
-        }
-        return false;
+    static {
+        c.b a10 = yi.c.a("numSamples");
+        l2 l2Var = new l2();
+        l2Var.a(1);
+        a10.b(l2Var.b()).a();
+        c.b a11 = yi.c.a("errorCode");
+        l2 l2Var2 = new l2();
+        l2Var2.a(2);
+        a11.b(l2Var2.b()).a();
+        c.b a12 = yi.c.a("metricResults");
+        l2 l2Var3 = new l2();
+        l2Var3.a(3);
+        a12.b(l2Var3.b()).a();
     }
 
-    public final mc f() {
-        mc mcVar = this.f40917e;
-        if (mcVar == null) {
-            mc g10 = g();
-            this.f40917e = g10;
-            return g10;
-        }
-        return mcVar;
+    private pc() {
     }
 
-    mc g() {
-        return mc.g(toArray());
-    }
-
-    @Override // java.util.Collection, java.util.Set
-    public final int hashCode() {
-        return b.a(this);
+    @Override // yi.d
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        android.support.v4.media.session.b.a(obj);
+        yi.e eVar = (yi.e) obj2;
+        throw null;
     }
 }

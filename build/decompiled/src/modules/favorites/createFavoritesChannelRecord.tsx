@@ -20,7 +20,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'modules/favorites/createFavoritesChannelRecord.tsx';
     var1 = var3.bind(var4)(var1);
     var1 = function arg0, arg1, arg2() {
-        _fun24761: for (var _fun24761_ip = 0;;) switch (_fun24761_ip) {
+        _fun24765: for (var _fun24765_ip = 0;;) switch (_fun24765_ip) {
             case 0:
                 var1 = arg1;
                 var2 = arg2;
@@ -41,8 +41,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var1.nickname;
                 var3 = null;
                 if (!(var3 != var2)) {
-                    _fun24761_ip = 77;
-                    continue _fun24761
+                    _fun24765_ip = 77;
+                    continue _fun24765
                 }
             case 65:
                 var2 = var1.nickname;
@@ -51,8 +51,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var1.parentId;
                 var2 = var3 != var2;
                 if (!var2) {
-                    _fun24761_ip = 103;
-                    continue _fun24761
+                    _fun24765_ip = 103;
+                    continue _fun24765
                 }
             case 90:
                 var4 = var1.parentId;
@@ -60,8 +60,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var4 in var3;
             case 103:
                 if (!var2) {
-                    _fun24761_ip = 118;
-                    continue _fun24761
+                    _fun24765_ip = 118;
+                    continue _fun24765
                 }
             case 106:
                 var1 = var1.parentId;

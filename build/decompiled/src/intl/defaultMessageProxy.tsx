@@ -33,4 +33,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2._defaultMessages = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1272, 1236, 12630, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1272, 1236, 12634, 2]);

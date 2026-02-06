@@ -8,18 +8,18 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import androidx.annotation.NonNull;
-import tq.e;
-import tq.h;
-import uq.c;
-import uq.d;
+import vq.e;
+import vq.h;
+import wq.c;
+import wq.d;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class UCropView extends FrameLayout {
 
     /* renamed from: d  reason: collision with root package name */
-    private GestureCropImageView f19939d;
+    private GestureCropImageView f19919d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final OverlayView f19940e;
+    private final OverlayView f19920e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -27,9 +27,9 @@ public class UCropView extends FrameLayout {
         a() {
         }
 
-        @Override // uq.c
+        @Override // wq.c
         public void a(float f10) {
-            UCropView.this.f19940e.setTargetAspectRatio(f10);
+            UCropView.this.f19920e.setTargetAspectRatio(f10);
         }
     }
 
@@ -39,9 +39,9 @@ public class UCropView extends FrameLayout {
         b() {
         }
 
-        @Override // uq.d
+        @Override // wq.d
         public void a(RectF rectF) {
-            UCropView.this.f19939d.setCropRect(rectF);
+            UCropView.this.f19919d.setCropRect(rectF);
         }
     }
 
@@ -50,18 +50,18 @@ public class UCropView extends FrameLayout {
     }
 
     private void c() {
-        this.f19939d.setCropBoundsChangeListener(new a());
-        this.f19940e.setOverlayViewChangeListener(new b());
+        this.f19919d.setCropBoundsChangeListener(new a());
+        this.f19920e.setOverlayViewChangeListener(new b());
     }
 
     @NonNull
     public GestureCropImageView getCropImageView() {
-        return this.f19939d;
+        return this.f19919d;
     }
 
     @NonNull
     public OverlayView getOverlayView() {
-        return this.f19940e;
+        return this.f19920e;
     }
 
     @Override // android.widget.FrameLayout, android.view.ViewGroup
@@ -71,13 +71,13 @@ public class UCropView extends FrameLayout {
 
     public UCropView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        LayoutInflater.from(context).inflate(e.f50976d, (ViewGroup) this, true);
-        this.f19939d = (GestureCropImageView) findViewById(tq.d.f50948b);
-        OverlayView overlayView = (OverlayView) findViewById(tq.d.f50971y);
-        this.f19940e = overlayView;
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, h.f50986e);
+        LayoutInflater.from(context).inflate(e.f52904d, (ViewGroup) this, true);
+        this.f19919d = (GestureCropImageView) findViewById(vq.d.f52876b);
+        OverlayView overlayView = (OverlayView) findViewById(vq.d.f52899y);
+        this.f19920e = overlayView;
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, h.f52914e);
         overlayView.g(obtainStyledAttributes);
-        this.f19939d.y(obtainStyledAttributes);
+        this.f19919d.y(obtainStyledAttributes);
         obtainStyledAttributes.recycle();
         c();
     }

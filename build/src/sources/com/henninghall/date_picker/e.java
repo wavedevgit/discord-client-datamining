@@ -10,7 +10,7 @@ import java.util.Calendar;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class e {
     private static DeviceEventManagerModule.RCTDeviceEventEmitter a() {
-        return (DeviceEventManagerModule.RCTDeviceEventEmitter) c.f16599a.getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class);
+        return (DeviceEventManagerModule.RCTDeviceEventEmitter) c.f16579a.getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class);
     }
 
     public static void b(String str) {
@@ -34,7 +34,7 @@ public abstract class e {
         a().emit("dateChange", createMap);
     }
 
-    public static void e(fl.c cVar, String str, View view) {
+    public static void e(hl.c cVar, String str, View view) {
         WritableMap createMap = Arguments.createMap();
         createMap.putString("spinnerState", cVar.toString());
         createMap.putString(StackTraceHelper.ID_KEY, str);

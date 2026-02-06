@@ -1,49 +1,14 @@
 package com.google.android.gms.common;
 
-import android.app.PendingIntent;
-import android.os.Parcel;
-import android.os.Parcelable;
+import android.content.Intent;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class o implements Parcelable.Creator {
-    @Override // android.os.Parcelable.Creator
-    public final /* bridge */ /* synthetic */ Object createFromParcel(Parcel parcel) {
-        int A = hf.b.A(parcel);
-        PendingIntent pendingIntent = null;
-        String str = null;
-        Integer num = null;
-        int i10 = 0;
-        int i11 = 0;
-        while (parcel.dataPosition() < A) {
-            int r10 = hf.b.r(parcel);
-            int l10 = hf.b.l(r10);
-            if (l10 != 1) {
-                if (l10 != 2) {
-                    if (l10 != 3) {
-                        if (l10 != 4) {
-                            if (l10 != 5) {
-                                hf.b.z(parcel, r10);
-                            } else {
-                                num = hf.b.u(parcel, r10);
-                            }
-                        } else {
-                            str = hf.b.f(parcel, r10);
-                        }
-                    } else {
-                        pendingIntent = (PendingIntent) hf.b.e(parcel, r10, PendingIntent.CREATOR);
-                    }
-                } else {
-                    i11 = hf.b.t(parcel, r10);
-                }
-            } else {
-                i10 = hf.b.t(parcel, r10);
-            }
-        }
-        hf.b.k(parcel, A);
-        return new b(i10, i11, pendingIntent, str, num);
-    }
+public abstract class o extends Exception {
 
-    @Override // android.os.Parcelable.Creator
-    public final /* synthetic */ Object[] newArray(int i10) {
-        return new b[i10];
+    /* renamed from: d  reason: collision with root package name */
+    private final Intent f13791d;
+
+    public o(String str, Intent intent) {
+        super(str);
+        this.f13791d = intent;
     }
 }

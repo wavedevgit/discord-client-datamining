@@ -1,22 +1,15 @@
 package bt;
 
 import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.FunctionReferenceImpl;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class u implements o {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final Function1 f7273a;
-
-    public u(Function1 operation) {
-        Intrinsics.checkNotNullParameter(operation, "operation");
-        this.f7273a = operation;
+public final /* synthetic */ class u extends FunctionReferenceImpl implements Function1 {
+    public u(Object obj) {
+        super(1, obj, b.class, "getter", "getter(Ljava/lang/Object;)Ljava/lang/Object;", 0);
     }
 
-    @Override // bt.o
-    public Object a(Object obj, CharSequence input, int i10) {
-        Intrinsics.checkNotNullParameter(input, "input");
-        this.f7273a.invoke(obj);
-        return k.f7241a.b(i10);
+    @Override // kotlin.jvm.functions.Function1
+    public final Object invoke(Object obj) {
+        return ((b) this.receiver).a(obj);
     }
 }

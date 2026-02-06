@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/app_launcher/native/screens/home/NoPermsState.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun107865: for (var _fun107865_ip = 0;;) switch (_fun107865_ip) {
+        _fun107893: for (var _fun107893_ip = 0;;) switch (_fun107893_ip) {
             case 0:
                 var0 = _closure1_slot7;
                 var3 = undefined;
@@ -99,14 +99,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.bind(var5)(var0);
                 var5 = _closure1_slot2;
                 if (var0) {
-                    _fun107865_ip = 80;
-                    continue _fun107865
+                    _fun107893_ip = 80;
+                    continue _fun107893
                 }
             case 71:
                 var0 = 8;
                 var0 = var5[var0];
-                _fun107865_ip = 87;
-                continue _fun107865;
+                _fun107893_ip = 87;
+                continue _fun107893;
             case 80:
                 var2 = 7;
                 var0 = var5[var2];
@@ -171,4 +171,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 3206, 3246, 13939, 13940, 13881, 7756, 3941, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 3208, 3248, 13943, 13944, 13885, 7761, 3943, 1234, 2]);

@@ -10,7 +10,7 @@ import java.util.WeakHashMap;
 public abstract class e0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static Map f3468a = Collections.synchronizedMap(new WeakHashMap());
+    private static Map f3797a = Collections.synchronizedMap(new WeakHashMap());
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     private static class a {
@@ -22,10 +22,10 @@ public abstract class e0 {
     public static void a(VelocityTracker velocityTracker, MotionEvent motionEvent) {
         velocityTracker.addMovement(motionEvent);
         if (Build.VERSION.SDK_INT < 34 && motionEvent.getSource() == 4194304) {
-            if (!f3468a.containsKey(velocityTracker)) {
-                f3468a.put(velocityTracker, new f0());
+            if (!f3797a.containsKey(velocityTracker)) {
+                f3797a.put(velocityTracker, new f0());
             }
-            ((f0) f3468a.get(velocityTracker)).a(motionEvent);
+            ((f0) f3797a.get(velocityTracker)).a(motionEvent);
         }
     }
 
@@ -59,6 +59,6 @@ public abstract class e0 {
     }
 
     private static f0 e(VelocityTracker velocityTracker) {
-        return (f0) f3468a.get(velocityTracker);
+        return (f0) f3797a.get(velocityTracker);
     }
 }

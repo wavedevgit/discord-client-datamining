@@ -58,7 +58,7 @@ public final class InputNumber_AttributesJsonAdapter extends h {
     @NotNull
     public InputNumber.Attributes fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         Number number = null;
         String str = null;
         String str2 = null;
@@ -66,10 +66,10 @@ public final class InputNumber_AttributesJsonAdapter extends h {
         JsonLogicBoolean jsonLogicBoolean2 = null;
         Integer num = null;
         while (reader.hasNext()) {
-            switch (reader.W(this.options)) {
+            switch (reader.J(this.options)) {
                 case -1:
                     reader.E0();
-                    reader.P();
+                    reader.S();
                     break;
                 case 0:
                     number = (Number) this.nullableNumberAdapter.fromJson(reader);
@@ -91,7 +91,7 @@ public final class InputNumber_AttributesJsonAdapter extends h {
                     break;
             }
         }
-        reader.z();
+        reader.D();
         return new InputNumber.Attributes(number, str, str2, jsonLogicBoolean, jsonLogicBoolean2, num);
     }
 
@@ -100,19 +100,19 @@ public final class InputNumber_AttributesJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (attributes != null) {
             writer.k();
-            writer.W("prefill");
+            writer.J("prefill");
             this.nullableNumberAdapter.toJson(writer, attributes.getPrefill());
-            writer.W("label");
+            writer.J("label");
             this.nullableStringAdapter.toJson(writer, attributes.getLabel());
-            writer.W(ReactTextInputShadowNode.PROP_PLACEHOLDER);
+            writer.J(ReactTextInputShadowNode.PROP_PLACEHOLDER);
             this.nullableStringAdapter.toJson(writer, attributes.getPlaceholder());
-            writer.W(ViewProps.HIDDEN);
+            writer.J(ViewProps.HIDDEN);
             this.nullableJsonLogicBooleanAdapter.toJson(writer, attributes.getHidden());
-            writer.W("disabled");
+            writer.J("disabled");
             this.nullableJsonLogicBooleanAdapter.toJson(writer, attributes.getDisabled());
-            writer.W("precision");
+            writer.J("precision");
             this.nullableIntAdapter.toJson(writer, attributes.getPrecision());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

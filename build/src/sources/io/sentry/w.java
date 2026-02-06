@@ -6,19 +6,19 @@ import java.nio.charset.Charset;
 public final class w implements n0 {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Charset f29895b = Charset.forName("UTF-8");
+    private static final Charset f29039b = Charset.forName("UTF-8");
 
     /* renamed from: a  reason: collision with root package name */
-    private final b1 f29896a;
+    private final b1 f29040a;
 
     public w(b1 b1Var) {
-        this.f29896a = b1Var;
+        this.f29040a = b1Var;
     }
 
     private m5 b(byte[] bArr, int i10, int i11) {
-        StringReader stringReader = new StringReader(new String(bArr, i10, i11, f29895b));
+        StringReader stringReader = new StringReader(new String(bArr, i10, i11, f29039b));
         try {
-            m5 m5Var = (m5) this.f29896a.c(stringReader, m5.class);
+            m5 m5Var = (m5) this.f29040a.c(stringReader, m5.class);
             stringReader.close();
             return m5Var;
         } catch (Throwable th2) {
@@ -32,9 +32,9 @@ public final class w implements n0 {
     }
 
     private m6 c(byte[] bArr, int i10, int i11) {
-        StringReader stringReader = new StringReader(new String(bArr, i10, i11, f29895b));
+        StringReader stringReader = new StringReader(new String(bArr, i10, i11, f29039b));
         try {
-            m6 m6Var = (m6) this.f29896a.c(stringReader, m6.class);
+            m6 m6Var = (m6) this.f29040a.c(stringReader, m6.class);
             stringReader.close();
             return m6Var;
         } catch (Throwable th2) {

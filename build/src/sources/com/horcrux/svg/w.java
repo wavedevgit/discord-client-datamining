@@ -9,25 +9,25 @@ enum w {
     
 
     /* renamed from: o  reason: collision with root package name */
-    private static final Map f17078o = new HashMap();
+    private static final Map f17058o = new HashMap();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f17080d;
+    private final String f17060d;
 
     static {
         w[] values;
         for (w wVar : values()) {
-            f17078o.put(wVar.f17080d, wVar);
+            f17058o.put(wVar.f17060d, wVar);
         }
     }
 
     w(String str) {
-        this.f17080d = str;
+        this.f17060d = str;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static w d(String str) {
-        Map map = f17078o;
+        Map map = f17058o;
         if (map.containsKey(str)) {
             return (w) map.get(str);
         }
@@ -36,6 +36,6 @@ enum w {
 
     @Override // java.lang.Enum
     public String toString() {
-        return this.f17080d;
+        return this.f17060d;
     }
 }

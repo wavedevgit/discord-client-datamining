@@ -6,15 +6,15 @@ import ff.r;
 final class k extends g {
 
     /* renamed from: c  reason: collision with root package name */
-    final /* synthetic */ xg.k f20810c;
+    final /* synthetic */ yg.k f20765c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public k(b bVar, xg.k kVar) {
-        this.f20810c = kVar;
+    public k(b bVar, yg.k kVar) {
+        this.f20765c = kVar;
     }
 
     @Override // dg.h
-    public final void O(Status status) {
-        r.b(status, this.f20810c);
+    public final void S(Status status) {
+        r.b(status, this.f20765c);
     }
 }

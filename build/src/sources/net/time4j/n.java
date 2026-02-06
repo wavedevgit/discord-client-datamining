@@ -6,60 +6,60 @@ import java.io.Serializable;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
-import pt.l0;
+import rt.l0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class n extends pt.a implements Serializable {
-    private static final pt.j0 A;
-    private static final pt.j0 B;
+public final class n extends rt.a implements Serializable {
+    private static final rt.j0 A;
+    private static final rt.j0 B;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final char f40129i;
+    private static final char f39484i;
 
     /* renamed from: o  reason: collision with root package name */
-    private static final n f40130o;
+    private static final n f39485o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final a f40131p;
+    private static final a f39486p;
 
     /* renamed from: q  reason: collision with root package name */
-    private static final a f40132q;
+    private static final a f39487q;
 
     /* renamed from: r  reason: collision with root package name */
-    private static final a f40133r;
+    private static final a f39488r;
 
     /* renamed from: s  reason: collision with root package name */
-    private static final a f40134s;
+    private static final a f39489s;
     private static final long serialVersionUID = -6321211763598951499L;
 
     /* renamed from: t  reason: collision with root package name */
-    private static final a f40135t;
+    private static final a f39490t;
 
     /* renamed from: u  reason: collision with root package name */
-    private static final a f40136u;
+    private static final a f39491u;
 
     /* renamed from: v  reason: collision with root package name */
-    private static final Comparator f40137v;
+    private static final Comparator f39492v;
 
     /* renamed from: w  reason: collision with root package name */
-    public static pt.d0 f40138w;
+    public static rt.d0 f39493w;
 
     /* renamed from: x  reason: collision with root package name */
-    public static pt.d0 f40139x;
+    public static rt.d0 f39494x;
 
     /* renamed from: y  reason: collision with root package name */
-    public static pt.d0 f40140y;
+    public static rt.d0 f39495y;
 
     /* renamed from: z  reason: collision with root package name */
-    private static final pt.j0 f40141z;
+    private static final rt.j0 f39496z;
 
     /* renamed from: d  reason: collision with root package name */
-    private final transient List f40142d;
+    private final transient List f39497d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final transient boolean f40143e;
+    private final transient boolean f39498e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a extends qt.w {
+    public static final class a extends st.w {
         private a(Class cls, String str) {
             super(cls, str);
         }
@@ -69,7 +69,7 @@ public final class n extends pt.a implements Serializable {
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
-        @Override // qt.w
+        @Override // st.w
         /* renamed from: j */
         public w f(char c10) {
             if (c10 != 'I') {
@@ -83,38 +83,38 @@ public final class n extends pt.a implements Serializable {
                                             if (c10 != 's') {
                                                 switch (c10) {
                                                     case 'C':
-                                                        return f.f39927e;
+                                                        return f.f39282e;
                                                     case 'D':
-                                                        return f.f39933s;
+                                                        return f.f39288s;
                                                     case 'E':
-                                                        return f.f39928i;
+                                                        return f.f39283i;
                                                     default:
                                                         throw new IllegalArgumentException("Unsupported pattern symbol: " + c10);
                                                 }
                                             }
-                                            return g.f39968i;
+                                            return g.f39323i;
                                         }
-                                        return g.f39967e;
+                                        return g.f39322e;
                                     }
-                                    return g.f39966d;
+                                    return g.f39321d;
                                 }
-                                return g.f39971q;
+                                return g.f39326q;
                             }
-                            return f.f39929o;
+                            return f.f39284o;
                         }
-                        return f.f39932r;
+                        return f.f39287r;
                     }
-                    return f.f39930p;
+                    return f.f39285p;
                 }
-                return f.f39931q;
+                return f.f39286q;
             }
-            return f.f39926d;
+            return f.f39281d;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static class b extends pt.b {
+    public static class b extends rt.b {
         /* synthetic */ b(w[] wVarArr, m mVar) {
             this(wVarArr);
         }
@@ -131,36 +131,36 @@ public final class n extends pt.a implements Serializable {
         } else {
             c10 = ',';
         }
-        f40129i = c10;
-        f40130o = new n();
-        f40131p = e(true, false);
-        f40132q = e(true, true);
-        f40133r = e(false, false);
-        f40134s = e(false, true);
-        f40135t = f(true);
-        f40136u = f(false);
-        f40137v = p0.a();
-        f40138w = p0.k();
-        f40139x = p0.h();
-        f40140y = p0.j();
-        f fVar = f.f39929o;
-        f fVar2 = f.f39931q;
-        f fVar3 = f.f39933s;
-        f40141z = g(fVar, fVar2, fVar3);
-        A = g(g.f39966d, g.f39967e, g.f39968i, g.f39971q);
-        B = g(f.f(), f.f39932r, fVar3);
+        f39484i = c10;
+        f39485o = new n();
+        f39486p = e(true, false);
+        f39487q = e(true, true);
+        f39488r = e(false, false);
+        f39489s = e(false, true);
+        f39490t = f(true);
+        f39491u = f(false);
+        f39492v = p0.a();
+        f39493w = p0.l();
+        f39494x = p0.g();
+        f39495y = p0.k();
+        f fVar = f.f39284o;
+        f fVar2 = f.f39286q;
+        f fVar3 = f.f39288s;
+        f39496z = g(fVar, fVar2, fVar3);
+        A = g(g.f39321d, g.f39322e, g.f39323i, g.f39326q);
+        B = g(f.f(), f.f39287r, fVar3);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public n(List list, boolean z10) {
         boolean isEmpty = list.isEmpty();
         if (isEmpty) {
-            this.f40142d = Collections.EMPTY_LIST;
+            this.f39497d = Collections.EMPTY_LIST;
         } else {
-            Collections.sort(list, f40137v);
-            this.f40142d = Collections.unmodifiableList(list);
+            Collections.sort(list, f39492v);
+            this.f39497d = Collections.unmodifiableList(list);
         }
-        this.f40143e = !isEmpty && z10;
+        this.f39498e = !isEmpty && z10;
     }
 
     private int d() {
@@ -193,7 +193,7 @@ public final class n extends pt.a implements Serializable {
         return a.k(g.class, str);
     }
 
-    public static pt.j0 g(w... wVarArr) {
+    public static rt.j0 g(w... wVarArr) {
         return new b(wVarArr, null);
     }
 
@@ -206,7 +206,7 @@ public final class n extends pt.a implements Serializable {
     }
 
     public static n j() {
-        return f40130o;
+        return f39485o;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:113:0x01e1  */
@@ -230,9 +230,9 @@ public final class n extends pt.a implements Serializable {
         return new SPX(this, 6);
     }
 
-    @Override // pt.l0
+    @Override // rt.l0
     public List a() {
-        return this.f40142d;
+        return this.f39497d;
     }
 
     public boolean c(w wVar) {
@@ -240,9 +240,9 @@ public final class n extends pt.a implements Serializable {
             return false;
         }
         boolean h10 = h(wVar);
-        int size = this.f40142d.size();
+        int size = this.f39497d.size();
         for (int i10 = 0; i10 < size; i10++) {
-            l0.a aVar = (l0.a) this.f40142d.get(i10);
+            l0.a aVar = (l0.a) this.f39497d.get(i10);
             w wVar2 = (w) aVar.b();
             if (wVar2.equals(wVar) || (h10 && h(wVar2))) {
                 if (aVar.a() <= 0) {
@@ -261,7 +261,7 @@ public final class n extends pt.a implements Serializable {
         }
         if (obj instanceof n) {
             n nVar = (n) n.class.cast(obj);
-            if (this.f40143e == nVar.f40143e && a().equals(nVar.a())) {
+            if (this.f39498e == nVar.f39498e && a().equals(nVar.a())) {
                 return true;
             }
         }
@@ -270,14 +270,14 @@ public final class n extends pt.a implements Serializable {
 
     public int hashCode() {
         int hashCode = a().hashCode();
-        if (this.f40143e) {
+        if (this.f39498e) {
             return 0;
         }
         return hashCode;
     }
 
     public boolean i() {
-        return this.f40143e;
+        return this.f39498e;
     }
 
     public String toString() {
@@ -285,7 +285,7 @@ public final class n extends pt.a implements Serializable {
     }
 
     private n() {
-        this.f40142d = Collections.EMPTY_LIST;
-        this.f40143e = false;
+        this.f39497d = Collections.EMPTY_LIST;
+        this.f39498e = false;
     }
 }

@@ -40,18 +40,18 @@ public final class CreatePersonaSheet_PagesJsonAdapter extends h {
     @NotNull
     public CreatePersonaSheet.Pages fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         CreatePersonaSheet.CardCtaPage cardCtaPage = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 cardCtaPage = (CreatePersonaSheet.CardCtaPage) this.nullableCardCtaPageAdapter.fromJson(reader);
             }
         }
-        reader.z();
+        reader.D();
         return new CreatePersonaSheet.Pages(cardCtaPage);
     }
 
@@ -60,9 +60,9 @@ public final class CreatePersonaSheet_PagesJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (pages != null) {
             writer.k();
-            writer.W("ctaCard");
+            writer.J("ctaCard");
             this.nullableCardCtaPageAdapter.toJson(writer, pages.getCtaCard());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

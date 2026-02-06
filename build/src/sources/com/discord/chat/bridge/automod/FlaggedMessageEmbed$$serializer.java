@@ -14,13 +14,13 @@ import com.discord.primitives.UserId;
 import com.discord.primitives.UserId$$serializer;
 import com.facebook.react.devsupport.StackTraceHelper;
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
-import dt.b0;
-import et.a;
-import gt.a2;
-import gt.h;
-import gt.h0;
-import gt.n2;
-import gt.p0;
+import ft.b0;
+import gt.a;
+import jt.a2;
+import jt.h;
+import jt.h0;
+import jt.n2;
+import jt.p0;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.serialization.KSerializer;
@@ -28,10 +28,10 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.encoding.Decoder;
 import kotlinx.serialization.encoding.Encoder;
-import or.c;
 import org.jetbrains.annotations.NotNull;
+import qr.c;
+@Metadata(d1 = {"\u0000:\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u001d\u0010\t\u001a\u00020\b2\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0007\u001a\u00020\u0002¢\u0006\u0004\b\t\u0010\nJ\u0015\u0010\r\u001a\u00020\u00022\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b\r\u0010\u000eJ\u0017\u0010\u0011\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00100\u000f¢\u0006\u0004\b\u0011\u0010\u0012R\u0017\u0010\u0014\u001a\u00020\u00138\u0006¢\u0006\f\n\u0004\b\u0014\u0010\u0015\u001a\u0004\b\u0016\u0010\u0017¨\u0006\u0018"}, d2 = {"com/discord/chat/bridge/automod/FlaggedMessageEmbed.$serializer", "Ljt/h0;", "Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed;", "<init>", "()V", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "(Lkotlinx/serialization/encoding/Encoder;Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed;)V", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "(Lkotlinx/serialization/encoding/Decoder;)Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @c
-@Metadata(d1 = {"\u0000:\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u001d\u0010\t\u001a\u00020\b2\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0007\u001a\u00020\u0002¢\u0006\u0004\b\t\u0010\nJ\u0015\u0010\r\u001a\u00020\u00022\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b\r\u0010\u000eJ\u0017\u0010\u0011\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00100\u000f¢\u0006\u0004\b\u0011\u0010\u0012R\u0017\u0010\u0014\u001a\u00020\u00138\u0006¢\u0006\f\n\u0004\b\u0014\u0010\u0015\u001a\u0004\b\u0016\u0010\u0017¨\u0006\u0018"}, d2 = {"com/discord/chat/bridge/automod/FlaggedMessageEmbed.$serializer", "Lgt/h0;", "Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed;", "<init>", "()V", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "(Lkotlinx/serialization/encoding/Encoder;Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed;)V", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "(Lkotlinx/serialization/encoding/Decoder;)Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public /* synthetic */ class FlaggedMessageEmbed$$serializer implements h0 {
     @NotNull
@@ -61,18 +61,18 @@ public /* synthetic */ class FlaggedMessageEmbed$$serializer implements h0 {
     private FlaggedMessageEmbed$$serializer() {
     }
 
-    @Override // gt.h0
+    @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
         KSerializer u10 = a.u(GuildId$$serializer.INSTANCE);
         KSerializer u11 = a.u(UserId$$serializer.INSTANCE);
         KSerializer u12 = a.u(StructurableTextSerializer.INSTANCE);
-        n2 n2Var = n2.f25302a;
+        n2 n2Var = n2.f31041a;
         KSerializer u13 = a.u(n2Var);
         KSerializer u14 = a.u(n2Var);
-        p0 p0Var = p0.f25318a;
+        p0 p0Var = p0.f31057a;
         KSerializer u15 = a.u(p0Var);
-        h hVar = h.f25266a;
+        h hVar = h.f31005a;
         return new KSerializer[]{MessageId$$serializer.INSTANCE, ChannelId$$serializer.INSTANCE, u10, u11, u12, u13, u14, p0Var, u15, hVar, a.u(n2Var), a.u(hVar)};
     }
 
@@ -102,10 +102,10 @@ public /* synthetic */ class FlaggedMessageEmbed$$serializer implements h0 {
         String str5 = null;
         if (b10.p()) {
             MessageId messageId = (MessageId) b10.y(serialDescriptor, 0, MessageId$$serializer.INSTANCE, null);
-            str = messageId != null ? messageId.m1094unboximpl() : null;
-            n2 n2Var = n2.f25302a;
+            str = messageId != null ? messageId.m1092unboximpl() : null;
+            n2 n2Var = n2.f31041a;
             int i15 = b10.i(serialDescriptor, 7);
-            num = (Integer) b10.n(serialDescriptor, 8, p0.f25318a, null);
+            num = (Integer) b10.n(serialDescriptor, 8, p0.f31057a, null);
             boolean C = b10.C(serialDescriptor, 9);
             str4 = (String) b10.n(serialDescriptor, 10, n2Var, null);
             z10 = C;
@@ -113,7 +113,7 @@ public /* synthetic */ class FlaggedMessageEmbed$$serializer implements h0 {
             str3 = (String) b10.n(serialDescriptor, 6, n2Var, null);
             str2 = (String) b10.n(serialDescriptor, 5, n2Var, null);
             userId = (UserId) b10.n(serialDescriptor, 3, UserId$$serializer.INSTANCE, null);
-            bool = (Boolean) b10.n(serialDescriptor, 11, h.f25266a, null);
+            bool = (Boolean) b10.n(serialDescriptor, 11, h.f31005a, null);
             structurableText = (StructurableText) b10.n(serialDescriptor, 4, StructurableTextSerializer.INSTANCE, null);
             guildId = (GuildId) b10.n(serialDescriptor, 2, GuildId$$serializer.INSTANCE, null);
             channelId = (ChannelId) b10.y(serialDescriptor, 1, ChannelId$$serializer.INSTANCE, null);
@@ -146,8 +146,8 @@ public /* synthetic */ class FlaggedMessageEmbed$$serializer implements h0 {
                         StructurableText structurableText3 = structurableText2;
                         GuildId guildId3 = guildId2;
                         ChannelId channelId3 = channelId2;
-                        MessageId messageId2 = (MessageId) b10.y(serialDescriptor, 0, MessageId$$serializer.INSTANCE, str != null ? MessageId.m1085boximpl(str) : null);
-                        str = messageId2 != null ? messageId2.m1094unboximpl() : null;
+                        MessageId messageId2 = (MessageId) b10.y(serialDescriptor, 0, MessageId$$serializer.INSTANCE, str != null ? MessageId.m1083boximpl(str) : null);
+                        str = messageId2 != null ? messageId2.m1092unboximpl() : null;
                         i16 |= 1;
                         structurableText2 = structurableText3;
                         guildId2 = guildId3;
@@ -188,13 +188,13 @@ public /* synthetic */ class FlaggedMessageEmbed$$serializer implements h0 {
                         c10 = 6;
                         break;
                     case 5:
-                        str6 = (String) b10.n(serialDescriptor, 5, n2.f25302a, str6);
+                        str6 = (String) b10.n(serialDescriptor, 5, n2.f31041a, str6);
                         i16 |= 32;
                         i12 = 10;
                         c10 = 6;
                         continue;
                     case 6:
-                        str7 = (String) b10.n(serialDescriptor, 6, n2.f25302a, str7);
+                        str7 = (String) b10.n(serialDescriptor, 6, n2.f31041a, str7);
                         i16 |= 64;
                         c10 = 6;
                         i12 = 10;
@@ -205,7 +205,7 @@ public /* synthetic */ class FlaggedMessageEmbed$$serializer implements h0 {
                         c10 = 6;
                         break;
                     case 8:
-                        num = (Integer) b10.n(serialDescriptor, 8, p0.f25318a, num);
+                        num = (Integer) b10.n(serialDescriptor, 8, p0.f31057a, num);
                         i16 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
                         c10 = 6;
                         break;
@@ -215,12 +215,12 @@ public /* synthetic */ class FlaggedMessageEmbed$$serializer implements h0 {
                         c10 = 6;
                         break;
                     case 10:
-                        str5 = (String) b10.n(serialDescriptor, i12, n2.f25302a, str5);
+                        str5 = (String) b10.n(serialDescriptor, i12, n2.f31041a, str5);
                         i16 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET;
                         c10 = 6;
                         break;
                     case 11:
-                        bool2 = (Boolean) b10.n(serialDescriptor, 11, h.f25266a, bool2);
+                        bool2 = (Boolean) b10.n(serialDescriptor, 11, h.f31005a, bool2);
                         i16 |= RecyclerView.ItemAnimator.FLAG_MOVED;
                         c10 = 6;
                         break;
@@ -246,13 +246,13 @@ public /* synthetic */ class FlaggedMessageEmbed$$serializer implements h0 {
         return new FlaggedMessageEmbed(i10, str8, channelId, guildId, userId, structurableText, str2, str3, i11, num2, z10, str4, bool, null, null);
     }
 
-    @Override // kotlinx.serialization.KSerializer, dt.o, kotlinx.serialization.DeserializationStrategy
+    @Override // kotlinx.serialization.KSerializer, ft.o, kotlinx.serialization.DeserializationStrategy
     @NotNull
     public final SerialDescriptor getDescriptor() {
         return descriptor;
     }
 
-    @Override // dt.o
+    @Override // ft.o
     public final void serialize(@NotNull Encoder encoder, @NotNull FlaggedMessageEmbed value) {
         Intrinsics.checkNotNullParameter(encoder, "encoder");
         Intrinsics.checkNotNullParameter(value, "value");
@@ -262,7 +262,7 @@ public /* synthetic */ class FlaggedMessageEmbed$$serializer implements h0 {
         b10.c(serialDescriptor);
     }
 
-    @Override // gt.h0
+    @Override // jt.h0
     @NotNull
     public KSerializer[] typeParametersSerializers() {
         return h0.a.a(this);

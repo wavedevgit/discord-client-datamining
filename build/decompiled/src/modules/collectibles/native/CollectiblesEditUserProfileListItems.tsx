@@ -104,7 +104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var7)(var3);
     var _closure1_slot9 = var3;
     var3 = function arg0() {
-        _fun51034: for (var _fun51034_ip = 0;;) switch (_fun51034_ip) {
+        _fun51047: for (var _fun51047_ip = 0;;) switch (_fun51047_ip) {
             case 0:
                 var0 = arg0;
                 var10 = var0.size;
@@ -118,8 +118,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var0.accessibilityRole;
                 var3 = undefined;
                 if (!(var7 === var3)) {
-                    _fun51034_ip = 61;
-                    continue _fun51034
+                    _fun51047_ip = 61;
+                    continue _fun51047
                 }
             case 57:
                 var7 = 'button';
@@ -167,8 +167,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7[0] = var9;
                 var9 = null;
                 if (!var12) {
-                    _fun51034_ip = 172;
-                    continue _fun51034
+                    _fun51047_ip = 172;
+                    continue _fun51047
                 }
             case 166:
                 var9 = var11.selected;
@@ -196,7 +196,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.EditCollectibleListItem = var3;
     var3 = function(arg0) { // Environment: var1
-        _fun51036: for (var _fun51036_ip = 0;;) switch (_fun51036_ip) {
+        _fun51049: for (var _fun51049_ip = 0;;) switch (_fun51049_ip) {
             case 0:
                 var8 = arg0;
                 var0 = _closure1_slot9;
@@ -252,14 +252,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var12.bind(var3)(var9);
                 var9 = var9.t;
                 if (var8) {
-                    _fun51036_ip = 238;
-                    continue _fun51036
+                    _fun51049_ip = 238;
+                    continue _fun51049
                 }
             case 225:
                 var8 = var9.PoWNfe;
                 var8 = var10.bind(var11)(var8);
-                _fun51036_ip = 249;
-                continue _fun51036;
+                _fun51049_ip = 249;
+                continue _fun51049;
             case 238:
                 var9 = var9.CHf9iJ;
                 var8 = var10.bind(var11)(var9);
@@ -396,7 +396,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.EditCollectiblesListItemShop = var3;
     var1 = function(arg0) { // Environment: var1
-        _fun51039: for (var _fun51039_ip = 0;;) switch (_fun51039_ip) {
+        _fun51052: for (var _fun51052_ip = 0;;) switch (_fun51052_ip) {
             case 0:
                 var2 = arg0;
                 var6 = var2.isSelected;
@@ -467,13 +467,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = new Array(2);
                 var5[0] = var4;
                 if (!(var9 == var12)) {
-                    _fun51039_ip = 328;
-                    continue _fun51039
+                    _fun51052_ip = 328;
+                    continue _fun51052
                 }
             case 262:
                 if (var14) {
-                    _fun51039_ip = 328;
-                    continue _fun51039
+                    _fun51052_ip = 328;
+                    continue _fun51052
                 }
             case 265:
                 var15 = _closure1_slot7;
@@ -490,30 +490,30 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.style = var16;
                 var4.isNew = var10;
                 var4 = var15.bind(var3)(var6, var4);
-                _fun51039_ip = 411;
-                continue _fun51039;
+                _fun51052_ip = 411;
+                continue _fun51052;
             case 328:
                 var6 = null;
                 if (!var14) {
-                    _fun51039_ip = 408;
-                    continue _fun51039
+                    _fun51052_ip = 408;
+                    continue _fun51052
                 }
             case 333:
                 var6 = null;
                 if (var13) {
-                    _fun51039_ip = 408;
-                    continue _fun51039
+                    _fun51052_ip = 408;
+                    continue _fun51052
                 }
             case 338:
                 if (!(var9 != var12)) {
-                    _fun51039_ip = 347;
-                    continue _fun51039
+                    _fun51052_ip = 347;
+                    continue _fun51052
                 }
             case 342:
                 var6 = null;
                 if (var8) {
-                    _fun51039_ip = 408;
-                    continue _fun51039
+                    _fun51052_ip = 408;
+                    continue _fun51052
                 }
             case 347:
                 var9 = _closure1_slot7;
@@ -542,4 +542,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.EditCollectiblesListItemProduct = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1621, 3283, 33, 1297, 671, 4904, 3279, 3280, 4086, 5749, 3941, 1234, 5730, 4597, 3278, 5750, 5751, 566, 3109, 5582, 4599, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1621, 3285, 33, 1297, 671, 4905, 3281, 3282, 4087, 5753, 3943, 1234, 5734, 4598, 3280, 5754, 5755, 566, 3111, 5583, 4600, 2]);

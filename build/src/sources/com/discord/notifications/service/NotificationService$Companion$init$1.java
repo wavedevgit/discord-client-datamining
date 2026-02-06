@@ -18,7 +18,7 @@ public /* synthetic */ class NotificationService$Companion$init$1 extends Functi
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Object invoke(Object obj) {
         invoke((String) obj);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     public final void invoke(String p02) {

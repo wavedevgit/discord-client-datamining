@@ -17,7 +17,7 @@ public interface b extends IInterface {
             }
 
             @Override // bf.b
-            public void Z(af.a aVar, bf.a aVar2) {
+            public void c0(af.a aVar, bf.a aVar2) {
                 Parcel e10 = e();
                 eg.d.b(e10, aVar);
                 eg.d.c(e10, aVar2);
@@ -37,5 +37,5 @@ public interface b extends IInterface {
         }
     }
 
-    void Z(af.a aVar, bf.a aVar2);
+    void c0(af.a aVar, bf.a aVar2);
 }

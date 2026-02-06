@@ -47,4 +47,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.right = var3;
     var2.DEFAULT_LANDSCAPE_PILLERBOX_CONFIG = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7936, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7941, 2]);

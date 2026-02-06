@@ -1,13 +1,30 @@
 package ng;
 
-import android.os.SystemClock;
+import yi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class hc {
-    public static void a(wb wbVar, int i10, int i11, long j10, int i12, int i13, int i14, int i15) {
-        wbVar.c(b(i10, i11, j10, i12, i13, i14, i15), e8.INPUT_IMAGE_CONSTRUCTION);
+final class hc implements yi.d {
+
+    /* renamed from: a  reason: collision with root package name */
+    static final hc f39861a = new hc();
+
+    static {
+        c.b a10 = yi.c.a("errorCode");
+        l2 l2Var = new l2();
+        l2Var.a(1);
+        a10.b(l2Var.b()).a();
+        c.b a11 = yi.c.a("textDetectionOptions");
+        l2 l2Var2 = new l2();
+        l2Var2.a(2);
+        a11.b(l2Var2.b()).a();
     }
 
-    private static gc b(int i10, int i11, long j10, int i12, int i13, int i14, int i15) {
-        return new gc(i10, i11, i14, i12, i13, SystemClock.elapsedRealtime() - j10, i15);
+    private hc() {
+    }
+
+    @Override // yi.d
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        android.support.v4.media.session.b.a(obj);
+        yi.e eVar = (yi.e) obj2;
+        throw null;
     }
 }

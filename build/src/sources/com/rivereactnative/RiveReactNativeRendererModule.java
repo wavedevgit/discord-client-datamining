@@ -22,7 +22,7 @@ public final class RiveReactNativeRendererModule extends ReactContextBaseJavaMod
     public final void defaultRenderer(@NotNull String iosRenderer, @NotNull String androidRenderer) {
         Intrinsics.checkNotNullParameter(iosRenderer, "iosRenderer");
         Intrinsics.checkNotNullParameter(androidRenderer, "androidRenderer");
-        j.a aVar = j.f17689e;
+        j.a aVar = j.f17669e;
         RendererType b10 = aVar.b(aVar.a(androidRenderer));
         Rive rive = Rive.INSTANCE;
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();

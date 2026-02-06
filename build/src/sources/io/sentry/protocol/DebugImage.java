@@ -29,63 +29,63 @@ public final class DebugImage implements w1 {
         /* renamed from: b */
         public DebugImage a(e3 e3Var, ILogger iLogger) {
             DebugImage debugImage = new DebugImage();
-            e3Var.s();
+            e3Var.u();
             HashMap hashMap = null;
             while (e3Var.peek() == io.sentry.vendor.gson.stream.b.NAME) {
-                String m02 = e3Var.m0();
-                m02.getClass();
+                String o02 = e3Var.o0();
+                o02.getClass();
                 char c10 = 65535;
-                switch (m02.hashCode()) {
+                switch (o02.hashCode()) {
                     case -1840639000:
-                        if (m02.equals("debug_file")) {
+                        if (o02.equals("debug_file")) {
                             c10 = 0;
                             break;
                         }
                         break;
                     case -1443345323:
-                        if (m02.equals("image_addr")) {
+                        if (o02.equals("image_addr")) {
                             c10 = 1;
                             break;
                         }
                         break;
                     case -1442803611:
-                        if (m02.equals("image_size")) {
+                        if (o02.equals("image_size")) {
                             c10 = 2;
                             break;
                         }
                         break;
                     case -1127437170:
-                        if (m02.equals("code_file")) {
+                        if (o02.equals("code_file")) {
                             c10 = 3;
                             break;
                         }
                         break;
                     case 3002454:
-                        if (m02.equals("arch")) {
+                        if (o02.equals("arch")) {
                             c10 = 4;
                             break;
                         }
                         break;
                     case 3575610:
-                        if (m02.equals("type")) {
+                        if (o02.equals("type")) {
                             c10 = 5;
                             break;
                         }
                         break;
                     case 3601339:
-                        if (m02.equals("uuid")) {
+                        if (o02.equals("uuid")) {
                             c10 = 6;
                             break;
                         }
                         break;
                     case 547804807:
-                        if (m02.equals("debug_id")) {
+                        if (o02.equals("debug_id")) {
                             c10 = 7;
                             break;
                         }
                         break;
                     case 941842605:
-                        if (m02.equals("code_id")) {
+                        if (o02.equals("code_id")) {
                             c10 = '\b';
                             break;
                         }
@@ -93,41 +93,41 @@ public final class DebugImage implements w1 {
                 }
                 switch (c10) {
                     case 0:
-                        debugImage.debugFile = e3Var.r1();
+                        debugImage.debugFile = e3Var.q1();
                         break;
                     case 1:
-                        debugImage.imageAddr = e3Var.r1();
+                        debugImage.imageAddr = e3Var.q1();
                         break;
                     case 2:
-                        debugImage.imageSize = e3Var.m1();
+                        debugImage.imageSize = e3Var.l1();
                         break;
                     case 3:
-                        debugImage.codeFile = e3Var.r1();
+                        debugImage.codeFile = e3Var.q1();
                         break;
                     case 4:
-                        debugImage.arch = e3Var.r1();
+                        debugImage.arch = e3Var.q1();
                         break;
                     case 5:
-                        debugImage.type = e3Var.r1();
+                        debugImage.type = e3Var.q1();
                         break;
                     case 6:
-                        debugImage.uuid = e3Var.r1();
+                        debugImage.uuid = e3Var.q1();
                         break;
                     case 7:
-                        debugImage.debugId = e3Var.r1();
+                        debugImage.debugId = e3Var.q1();
                         break;
                     case '\b':
-                        debugImage.codeId = e3Var.r1();
+                        debugImage.codeId = e3Var.q1();
                         break;
                     default:
                         if (hashMap == null) {
                             hashMap = new HashMap();
                         }
-                        e3Var.v1(iLogger, hashMap, m02);
+                        e3Var.u1(iLogger, hashMap, o02);
                         break;
                 }
             }
-            e3Var.z();
+            e3Var.D();
             debugImage.setUnknown(hashMap);
             return debugImage;
         }
@@ -175,7 +175,7 @@ public final class DebugImage implements w1 {
 
     @Override // io.sentry.w1
     public void serialize(@NotNull f3 f3Var, @NotNull ILogger iLogger) {
-        f3Var.s();
+        f3Var.u();
         if (this.uuid != null) {
             f3Var.e("uuid").f(this.uuid);
         }
@@ -209,7 +209,7 @@ public final class DebugImage implements w1 {
                 f3Var.e(str).j(iLogger, this.unknown.get(str));
             }
         }
-        f3Var.z();
+        f3Var.D();
     }
 
     public void setArch(String str) {

@@ -15,14 +15,14 @@ public abstract class i {
         }
         int i10 = sharedPreferences.getInt("next_job_scheduler_id", 0);
         int i11 = sharedPreferences.getInt("next_alarm_manager_id", 0);
-        sqLiteDatabase.D();
+        sqLiteDatabase.H();
         try {
-            sqLiteDatabase.i0("INSERT OR REPLACE INTO `Preference` (`key`, `long_value`) VALUES (@key, @long_value)", new Object[]{"next_job_scheduler_id", Integer.valueOf(i10)});
-            sqLiteDatabase.i0("INSERT OR REPLACE INTO `Preference` (`key`, `long_value`) VALUES (@key, @long_value)", new Object[]{"next_alarm_manager_id", Integer.valueOf(i11)});
+            sqLiteDatabase.k0("INSERT OR REPLACE INTO `Preference` (`key`, `long_value`) VALUES (@key, @long_value)", new Object[]{"next_job_scheduler_id", Integer.valueOf(i10)});
+            sqLiteDatabase.k0("INSERT OR REPLACE INTO `Preference` (`key`, `long_value`) VALUES (@key, @long_value)", new Object[]{"next_alarm_manager_id", Integer.valueOf(i11)});
             sharedPreferences.edit().clear().apply();
-            sqLiteDatabase.h0();
+            sqLiteDatabase.j0();
         } finally {
-            sqLiteDatabase.t0();
+            sqLiteDatabase.v0();
         }
     }
 

@@ -49,30 +49,30 @@ public final class PoseConfigJsonAdapter extends h {
     @NotNull
     public PoseConfig fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         String str = null;
         Boolean bool = null;
         Boolean bool2 = null;
         Long l10 = null;
         Boolean bool3 = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 str = (String) this.nullableStringAdapter.fromJson(reader);
-            } else if (W == 1) {
+            } else if (J == 1) {
                 bool = (Boolean) this.nullableBooleanAdapter.fromJson(reader);
-            } else if (W == 2) {
+            } else if (J == 2) {
                 bool2 = (Boolean) this.nullableBooleanAdapter.fromJson(reader);
-            } else if (W == 3) {
+            } else if (J == 3) {
                 l10 = (Long) this.nullableLongAdapter.fromJson(reader);
-            } else if (W == 4) {
+            } else if (J == 4) {
                 bool3 = (Boolean) this.nullableBooleanAdapter.fromJson(reader);
             }
         }
-        reader.z();
+        reader.D();
         return new PoseConfig(str, bool, bool2, l10, bool3);
     }
 
@@ -81,17 +81,17 @@ public final class PoseConfigJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (poseConfig != null) {
             writer.k();
-            writer.W("pose");
+            writer.J("pose");
             this.nullableStringAdapter.toJson(writer, poseConfig.getPose());
-            writer.W("allowReview");
+            writer.J("allowReview");
             this.nullableBooleanAdapter.toJson(writer, poseConfig.getAllowReview());
-            writer.W("manualCaptureEnabled");
+            writer.J("manualCaptureEnabled");
             this.nullableBooleanAdapter.toJson(writer, poseConfig.getManualCaptureEnabled());
-            writer.W("manualCaptureDelayMs");
+            writer.J("manualCaptureDelayMs");
             this.nullableLongAdapter.toJson(writer, poseConfig.getManualCaptureDelayMs());
-            writer.W("autoCaptureEnabled");
+            writer.J("autoCaptureEnabled");
             this.nullableBooleanAdapter.toJson(writer, poseConfig.getAutoCaptureEnabled());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

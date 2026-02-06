@@ -11,12 +11,12 @@ import com.discord.primitives.RoleId$$serializer;
 import com.discord.primitives.UserId;
 import com.discord.primitives.UserId$$serializer;
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
-import dt.b0;
-import gt.a2;
-import gt.h0;
-import gt.n2;
-import gt.p0;
+import ft.b0;
 import java.util.List;
+import jt.a2;
+import jt.h0;
+import jt.n2;
+import jt.p0;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
@@ -27,8 +27,8 @@ import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.encoding.Decoder;
 import kotlinx.serialization.encoding.Encoder;
 import org.jetbrains.annotations.NotNull;
-@or.c
-@Metadata(d1 = {"\u0000:\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u001d\u0010\t\u001a\u00020\b2\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0007\u001a\u00020\u0002¢\u0006\u0004\b\t\u0010\nJ\u0015\u0010\r\u001a\u00020\u00022\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b\r\u0010\u000eJ\u0017\u0010\u0011\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00100\u000f¢\u0006\u0004\b\u0011\u0010\u0012R\u0017\u0010\u0014\u001a\u00020\u00138\u0006¢\u0006\f\n\u0004\b\u0014\u0010\u0015\u001a\u0004\b\u0016\u0010\u0017¨\u0006\u0018"}, d2 = {"com/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode.$serializer", "Lgt/h0;", "Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;", "<init>", "()V", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "(Lkotlinx/serialization/encoding/Encoder;Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;)V", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "(Lkotlinx/serialization/encoding/Decoder;)Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+@Metadata(d1 = {"\u0000:\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u001d\u0010\t\u001a\u00020\b2\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0007\u001a\u00020\u0002¢\u0006\u0004\b\t\u0010\nJ\u0015\u0010\r\u001a\u00020\u00022\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b\r\u0010\u000eJ\u0017\u0010\u0011\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00100\u000f¢\u0006\u0004\b\u0011\u0010\u0012R\u0017\u0010\u0014\u001a\u00020\u00138\u0006¢\u0006\f\n\u0004\b\u0014\u0010\u0015\u001a\u0004\b\u0016\u0010\u0017¨\u0006\u0018"}, d2 = {"com/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode.$serializer", "Ljt/h0;", "Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;", "<init>", "()V", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "(Lkotlinx/serialization/encoding/Encoder;Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;)V", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "(Lkotlinx/serialization/encoding/Decoder;)Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+@qr.c
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public /* synthetic */ class UserOrRoleMentionContentNode$$serializer implements h0 {
     @NotNull
@@ -56,12 +56,12 @@ public /* synthetic */ class UserOrRoleMentionContentNode$$serializer implements
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    @Override // gt.h0
+    @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
         Lazy[] access$get$childSerializers$cp = UserOrRoleMentionContentNode.access$get$childSerializers$cp();
-        n2 n2Var = n2.f25302a;
-        return new KSerializer[]{et.a.u(ChannelId$$serializer.INSTANCE), et.a.u(UserId$$serializer.INSTANCE), et.a.u(n2Var), et.a.u(n2Var), p0.f25318a, et.a.u(RoleColors$$serializer.INSTANCE), et.a.u(GuildId$$serializer.INSTANCE), et.a.u(RoleId$$serializer.INSTANCE), access$get$childSerializers$cp[8].getValue()};
+        n2 n2Var = n2.f31041a;
+        return new KSerializer[]{gt.a.u(ChannelId$$serializer.INSTANCE), gt.a.u(UserId$$serializer.INSTANCE), gt.a.u(n2Var), gt.a.u(n2Var), p0.f31057a, gt.a.u(RoleColors$$serializer.INSTANCE), gt.a.u(GuildId$$serializer.INSTANCE), gt.a.u(RoleId$$serializer.INSTANCE), access$get$childSerializers$cp[8].getValue()};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -83,7 +83,7 @@ public /* synthetic */ class UserOrRoleMentionContentNode$$serializer implements
         Lazy[] access$get$childSerializers$cp = UserOrRoleMentionContentNode.access$get$childSerializers$cp();
         int i12 = 7;
         if (b10.p()) {
-            n2 n2Var = n2.f25302a;
+            n2 n2Var = n2.f31041a;
             int i13 = b10.i(serialDescriptor, 4);
             list = (List) b10.y(serialDescriptor, 8, (DeserializationStrategy) access$get$childSerializers$cp[8].getValue(), null);
             channelId = (ChannelId) b10.n(serialDescriptor, 0, ChannelId$$serializer.INSTANCE, null);
@@ -124,12 +124,12 @@ public /* synthetic */ class UserOrRoleMentionContentNode$$serializer implements
                         i12 = 7;
                         break;
                     case 2:
-                        str4 = (String) b10.n(serialDescriptor, 2, n2.f25302a, str4);
+                        str4 = (String) b10.n(serialDescriptor, 2, n2.f31041a, str4);
                         i15 |= 4;
                         i12 = 7;
                         break;
                     case 3:
-                        str3 = (String) b10.n(serialDescriptor, 3, n2.f25302a, str3);
+                        str3 = (String) b10.n(serialDescriptor, 3, n2.f31041a, str3);
                         i15 |= 8;
                         i12 = 7;
                         break;
@@ -175,13 +175,13 @@ public /* synthetic */ class UserOrRoleMentionContentNode$$serializer implements
         return new UserOrRoleMentionContentNode(i11, channelId, userId, str2, str, i10, roleColors, guildId, roleId, list, null, null);
     }
 
-    @Override // kotlinx.serialization.KSerializer, dt.o, kotlinx.serialization.DeserializationStrategy
+    @Override // kotlinx.serialization.KSerializer, ft.o, kotlinx.serialization.DeserializationStrategy
     @NotNull
     public final SerialDescriptor getDescriptor() {
         return descriptor;
     }
 
-    @Override // dt.o
+    @Override // ft.o
     public final void serialize(@NotNull Encoder encoder, @NotNull UserOrRoleMentionContentNode value) {
         Intrinsics.checkNotNullParameter(encoder, "encoder");
         Intrinsics.checkNotNullParameter(value, "value");
@@ -191,7 +191,7 @@ public /* synthetic */ class UserOrRoleMentionContentNode$$serializer implements
         b10.c(serialDescriptor);
     }
 
-    @Override // gt.h0
+    @Override // jt.h0
     @NotNull
     public KSerializer[] typeParametersSerializers() {
         return h0.a.a(this);

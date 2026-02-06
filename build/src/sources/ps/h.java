@@ -1,43 +1,47 @@
 package ps;
 
-import kotlin.Unit;
-import kotlin.coroutines.Continuation;
-import kotlin.jvm.functions.Function2;
-import kotlinx.coroutines.flow.Flow;
-import kotlinx.coroutines.flow.FlowCollector;
-/* JADX INFO: Access modifiers changed from: package-private */
+import android.os.Build;
+import android.os.Handler;
+import android.os.Looper;
+import android.view.Choreographer;
+import kotlin.Result;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract /* synthetic */ class h {
+public abstract class h {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a implements Flow {
+    /* renamed from: a  reason: collision with root package name */
+    public static final g f45659a;
+    private static volatile Choreographer choreographer;
 
-        /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Object f46374d;
-
-        public a(Object obj) {
-            this.f46374d = obj;
+    static {
+        Object b10;
+        g gVar = null;
+        try {
+            Result.a aVar = Result.f32005e;
+            b10 = Result.b(new f(a(Looper.getMainLooper(), true), null, 2, null));
+        } catch (Throwable th2) {
+            Result.a aVar2 = Result.f32005e;
+            b10 = Result.b(kotlin.c.a(th2));
         }
+        if (!Result.g(b10)) {
+            gVar = b10;
+        }
+        f45659a = gVar;
+    }
 
-        @Override // kotlinx.coroutines.flow.Flow
-        public Object collect(FlowCollector flowCollector, Continuation continuation) {
-            Object emit = flowCollector.emit(this.f46374d, continuation);
-            if (emit == ur.b.f()) {
-                return emit;
+    public static final Handler a(Looper looper, boolean z10) {
+        if (z10) {
+            if (Build.VERSION.SDK_INT >= 28) {
+                Object invoke = Handler.class.getDeclaredMethod("createAsync", Looper.class).invoke(null, looper);
+                Intrinsics.checkNotNull(invoke, "null cannot be cast to non-null type android.os.Handler");
+                return (Handler) invoke;
             }
-            return Unit.f31988a;
+            try {
+                return (Handler) Handler.class.getDeclaredConstructor(Looper.class, Handler.Callback.class, Boolean.TYPE).newInstance(looper, null, Boolean.TRUE);
+            } catch (NoSuchMethodException unused) {
+                return new Handler(looper);
+            }
         }
-    }
-
-    public static final Flow a(Function2 function2) {
-        return new b(function2, null, 0, null, 14, null);
-    }
-
-    public static final Flow b(Function2 function2) {
-        return new z(function2);
-    }
-
-    public static final Flow c(Object obj) {
-        return new a(obj);
+        return new Handler(looper);
     }
 }

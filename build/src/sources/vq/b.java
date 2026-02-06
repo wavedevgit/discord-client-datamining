@@ -1,65 +1,37 @@
 package vq;
-
-import android.graphics.Bitmap;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class b {
+public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private int f52342a;
+    public static int f52862a = 2131166084;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f52343b;
+    public static int f52863b = 2131166085;
 
     /* renamed from: c  reason: collision with root package name */
-    private Bitmap.CompressFormat f52344c;
+    public static int f52864c = 2131166087;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f52345d;
+    public static int f52865d = 2131166088;
 
     /* renamed from: e  reason: collision with root package name */
-    private String f52346e;
+    public static int f52866e = 2131166089;
 
     /* renamed from: f  reason: collision with root package name */
-    private String f52347f;
+    public static int f52867f = 2131166092;
 
     /* renamed from: g  reason: collision with root package name */
-    private c f52348g;
+    public static int f52868g = 2131166094;
 
-    public b(int i10, int i11, Bitmap.CompressFormat compressFormat, int i12, String str, String str2, c cVar) {
-        this.f52342a = i10;
-        this.f52343b = i11;
-        this.f52344c = compressFormat;
-        this.f52345d = i12;
-        this.f52346e = str;
-        this.f52347f = str2;
-        this.f52348g = cVar;
-    }
+    /* renamed from: h  reason: collision with root package name */
+    public static int f52869h = 2131166095;
 
-    public Bitmap.CompressFormat a() {
-        return this.f52344c;
-    }
+    /* renamed from: i  reason: collision with root package name */
+    public static int f52870i = 2131166100;
 
-    public int b() {
-        return this.f52345d;
-    }
+    /* renamed from: j  reason: collision with root package name */
+    public static int f52871j = 2131166104;
 
-    public c c() {
-        return this.f52348g;
-    }
-
-    public String d() {
-        return this.f52346e;
-    }
-
-    public String e() {
-        return this.f52347f;
-    }
-
-    public int f() {
-        return this.f52342a;
-    }
-
-    public int g() {
-        return this.f52343b;
-    }
+    /* renamed from: k  reason: collision with root package name */
+    public static int f52872k = 2131166105;
 }

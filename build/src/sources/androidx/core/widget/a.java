@@ -16,102 +16,102 @@ public abstract class a implements View.OnTouchListener {
     private boolean B;
 
     /* renamed from: i  reason: collision with root package name */
-    final View f3581i;
+    final View f3910i;
 
     /* renamed from: o  reason: collision with root package name */
-    private Runnable f3582o;
+    private Runnable f3911o;
 
     /* renamed from: r  reason: collision with root package name */
-    private int f3585r;
+    private int f3914r;
 
     /* renamed from: s  reason: collision with root package name */
-    private int f3586s;
+    private int f3915s;
 
     /* renamed from: w  reason: collision with root package name */
-    private boolean f3590w;
+    private boolean f3919w;
 
     /* renamed from: x  reason: collision with root package name */
-    boolean f3591x;
+    boolean f3920x;
 
     /* renamed from: y  reason: collision with root package name */
-    boolean f3592y;
+    boolean f3921y;
 
     /* renamed from: z  reason: collision with root package name */
-    boolean f3593z;
+    boolean f3922z;
 
     /* renamed from: d  reason: collision with root package name */
-    final C0043a f3579d = new C0043a();
+    final C0041a f3908d = new C0041a();
 
     /* renamed from: e  reason: collision with root package name */
-    private final Interpolator f3580e = new AccelerateInterpolator();
+    private final Interpolator f3909e = new AccelerateInterpolator();
 
     /* renamed from: p  reason: collision with root package name */
-    private float[] f3583p = {0.0f, 0.0f};
+    private float[] f3912p = {0.0f, 0.0f};
 
     /* renamed from: q  reason: collision with root package name */
-    private float[] f3584q = {Float.MAX_VALUE, Float.MAX_VALUE};
+    private float[] f3913q = {Float.MAX_VALUE, Float.MAX_VALUE};
 
     /* renamed from: t  reason: collision with root package name */
-    private float[] f3587t = {0.0f, 0.0f};
+    private float[] f3916t = {0.0f, 0.0f};
 
     /* renamed from: u  reason: collision with root package name */
-    private float[] f3588u = {0.0f, 0.0f};
+    private float[] f3917u = {0.0f, 0.0f};
 
     /* renamed from: v  reason: collision with root package name */
-    private float[] f3589v = {Float.MAX_VALUE, Float.MAX_VALUE};
+    private float[] f3918v = {Float.MAX_VALUE, Float.MAX_VALUE};
 
     /* JADX INFO: Access modifiers changed from: private */
     /* renamed from: androidx.core.widget.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static class C0043a {
+    public static class C0041a {
 
         /* renamed from: a  reason: collision with root package name */
-        private int f3594a;
+        private int f3923a;
 
         /* renamed from: b  reason: collision with root package name */
-        private int f3595b;
+        private int f3924b;
 
         /* renamed from: c  reason: collision with root package name */
-        private float f3596c;
+        private float f3925c;
 
         /* renamed from: d  reason: collision with root package name */
-        private float f3597d;
+        private float f3926d;
 
         /* renamed from: j  reason: collision with root package name */
-        private float f3603j;
+        private float f3932j;
 
         /* renamed from: k  reason: collision with root package name */
-        private int f3604k;
+        private int f3933k;
 
         /* renamed from: e  reason: collision with root package name */
-        private long f3598e = Long.MIN_VALUE;
+        private long f3927e = Long.MIN_VALUE;
 
         /* renamed from: i  reason: collision with root package name */
-        private long f3602i = -1;
+        private long f3931i = -1;
 
         /* renamed from: f  reason: collision with root package name */
-        private long f3599f = 0;
+        private long f3928f = 0;
 
         /* renamed from: g  reason: collision with root package name */
-        private int f3600g = 0;
+        private int f3929g = 0;
 
         /* renamed from: h  reason: collision with root package name */
-        private int f3601h = 0;
+        private int f3930h = 0;
 
-        C0043a() {
+        C0041a() {
         }
 
         private float e(long j10) {
-            long j11 = this.f3598e;
+            long j11 = this.f3927e;
             if (j10 < j11) {
                 return 0.0f;
             }
-            long j12 = this.f3602i;
+            long j12 = this.f3931i;
             if (j12 >= 0 && j10 >= j12) {
-                float f10 = this.f3603j;
-                return (1.0f - f10) + (f10 * a.e(((float) (j10 - j12)) / this.f3604k, 0.0f, 1.0f));
+                float f10 = this.f3932j;
+                return (1.0f - f10) + (f10 * a.e(((float) (j10 - j12)) / this.f3933k, 0.0f, 1.0f));
             }
-            return a.e(((float) (j10 - j11)) / this.f3594a, 0.0f, 1.0f) * 0.5f;
+            return a.e(((float) (j10 - j11)) / this.f3923a, 0.0f, 1.0f) * 0.5f;
         }
 
         private float g(float f10) {
@@ -119,38 +119,38 @@ public abstract class a implements View.OnTouchListener {
         }
 
         public void a() {
-            if (this.f3599f != 0) {
+            if (this.f3928f != 0) {
                 long currentAnimationTimeMillis = AnimationUtils.currentAnimationTimeMillis();
                 float g10 = g(e(currentAnimationTimeMillis));
-                this.f3599f = currentAnimationTimeMillis;
-                float f10 = ((float) (currentAnimationTimeMillis - this.f3599f)) * g10;
-                this.f3600g = (int) (this.f3596c * f10);
-                this.f3601h = (int) (f10 * this.f3597d);
+                this.f3928f = currentAnimationTimeMillis;
+                float f10 = ((float) (currentAnimationTimeMillis - this.f3928f)) * g10;
+                this.f3929g = (int) (this.f3925c * f10);
+                this.f3930h = (int) (f10 * this.f3926d);
                 return;
             }
             throw new RuntimeException("Cannot compute scroll delta before calling start()");
         }
 
         public int b() {
-            return this.f3600g;
+            return this.f3929g;
         }
 
         public int c() {
-            return this.f3601h;
+            return this.f3930h;
         }
 
         public int d() {
-            float f10 = this.f3596c;
+            float f10 = this.f3925c;
             return (int) (f10 / Math.abs(f10));
         }
 
         public int f() {
-            float f10 = this.f3597d;
+            float f10 = this.f3926d;
             return (int) (f10 / Math.abs(f10));
         }
 
         public boolean h() {
-            if (this.f3602i > 0 && AnimationUtils.currentAnimationTimeMillis() > this.f3602i + this.f3604k) {
+            if (this.f3931i > 0 && AnimationUtils.currentAnimationTimeMillis() > this.f3931i + this.f3933k) {
                 return true;
             }
             return false;
@@ -158,32 +158,32 @@ public abstract class a implements View.OnTouchListener {
 
         public void i() {
             long currentAnimationTimeMillis = AnimationUtils.currentAnimationTimeMillis();
-            this.f3604k = a.f((int) (currentAnimationTimeMillis - this.f3598e), 0, this.f3595b);
-            this.f3603j = e(currentAnimationTimeMillis);
-            this.f3602i = currentAnimationTimeMillis;
+            this.f3933k = a.f((int) (currentAnimationTimeMillis - this.f3927e), 0, this.f3924b);
+            this.f3932j = e(currentAnimationTimeMillis);
+            this.f3931i = currentAnimationTimeMillis;
         }
 
         public void j(int i10) {
-            this.f3595b = i10;
+            this.f3924b = i10;
         }
 
         public void k(int i10) {
-            this.f3594a = i10;
+            this.f3923a = i10;
         }
 
         public void l(float f10, float f11) {
-            this.f3596c = f10;
-            this.f3597d = f11;
+            this.f3925c = f10;
+            this.f3926d = f11;
         }
 
         public void m() {
             long currentAnimationTimeMillis = AnimationUtils.currentAnimationTimeMillis();
-            this.f3598e = currentAnimationTimeMillis;
-            this.f3602i = -1L;
-            this.f3599f = currentAnimationTimeMillis;
-            this.f3603j = 0.5f;
-            this.f3600g = 0;
-            this.f3601h = 0;
+            this.f3927e = currentAnimationTimeMillis;
+            this.f3931i = -1L;
+            this.f3928f = currentAnimationTimeMillis;
+            this.f3932j = 0.5f;
+            this.f3929g = 0;
+            this.f3930h = 0;
         }
     }
 
@@ -196,31 +196,31 @@ public abstract class a implements View.OnTouchListener {
         @Override // java.lang.Runnable
         public void run() {
             a aVar = a.this;
-            if (!aVar.f3593z) {
+            if (!aVar.f3922z) {
                 return;
             }
-            if (aVar.f3591x) {
-                aVar.f3591x = false;
-                aVar.f3579d.m();
+            if (aVar.f3920x) {
+                aVar.f3920x = false;
+                aVar.f3908d.m();
             }
-            C0043a c0043a = a.this.f3579d;
-            if (!c0043a.h() && a.this.u()) {
+            C0041a c0041a = a.this.f3908d;
+            if (!c0041a.h() && a.this.u()) {
                 a aVar2 = a.this;
-                if (aVar2.f3592y) {
-                    aVar2.f3592y = false;
+                if (aVar2.f3921y) {
+                    aVar2.f3921y = false;
                     aVar2.c();
                 }
-                c0043a.a();
-                a.this.j(c0043a.b(), c0043a.c());
-                h0.f0(a.this.f3581i, this);
+                c0041a.a();
+                a.this.j(c0041a.b(), c0041a.c());
+                h0.f0(a.this.f3910i, this);
                 return;
             }
-            a.this.f3593z = false;
+            a.this.f3922z = false;
         }
     }
 
     public a(View view) {
-        this.f3581i = view;
+        this.f3910i = view;
         float f10 = Resources.getSystem().getDisplayMetrics().density;
         float f11 = (int) ((1575.0f * f10) + 0.5f);
         o(f11, f11);
@@ -236,14 +236,14 @@ public abstract class a implements View.OnTouchListener {
     }
 
     private float d(int i10, float f10, float f11, float f12) {
-        float h10 = h(this.f3583p[i10], f11, this.f3584q[i10], f10);
+        float h10 = h(this.f3912p[i10], f11, this.f3913q[i10], f10);
         int i11 = (h10 > 0.0f ? 1 : (h10 == 0.0f ? 0 : -1));
         if (i11 == 0) {
             return 0.0f;
         }
-        float f13 = this.f3587t[i10];
-        float f14 = this.f3588u[i10];
-        float f15 = this.f3589v[i10];
+        float f13 = this.f3916t[i10];
+        float f14 = this.f3917u[i10];
+        float f15 = this.f3918v[i10];
         float f16 = f13 * f12;
         if (i11 > 0) {
             return e(h10 * f16, f14, f15);
@@ -263,7 +263,7 @@ public abstract class a implements View.OnTouchListener {
         if (f11 == 0.0f) {
             return 0.0f;
         }
-        int i10 = this.f3585r;
+        int i10 = this.f3914r;
         if (i10 != 0 && i10 != 1) {
             if (i10 == 2 && f10 < 0.0f) {
                 return f10 / (-f11);
@@ -272,7 +272,7 @@ public abstract class a implements View.OnTouchListener {
             if (f10 >= 0.0f) {
                 return 1.0f - (f10 / f11);
             }
-            if (this.f3593z && i10 == 1) {
+            if (this.f3922z && i10 == 1) {
                 return 1.0f;
             }
         }
@@ -284,36 +284,36 @@ public abstract class a implements View.OnTouchListener {
         float e10 = e(f10 * f11, 0.0f, f12);
         float g10 = g(f11 - f13, e10) - g(f13, e10);
         if (g10 < 0.0f) {
-            interpolation = -this.f3580e.getInterpolation(-g10);
+            interpolation = -this.f3909e.getInterpolation(-g10);
         } else if (g10 <= 0.0f) {
             return 0.0f;
         } else {
-            interpolation = this.f3580e.getInterpolation(g10);
+            interpolation = this.f3909e.getInterpolation(g10);
         }
         return e(interpolation, -1.0f, 1.0f);
     }
 
     private void i() {
-        if (this.f3591x) {
-            this.f3593z = false;
+        if (this.f3920x) {
+            this.f3922z = false;
         } else {
-            this.f3579d.i();
+            this.f3908d.i();
         }
     }
 
     private void v() {
         int i10;
-        if (this.f3582o == null) {
-            this.f3582o = new b();
+        if (this.f3911o == null) {
+            this.f3911o = new b();
         }
-        this.f3593z = true;
-        this.f3591x = true;
-        if (!this.f3590w && (i10 = this.f3586s) > 0) {
-            h0.g0(this.f3581i, this.f3582o, i10);
+        this.f3922z = true;
+        this.f3920x = true;
+        if (!this.f3919w && (i10 = this.f3915s) > 0) {
+            h0.g0(this.f3910i, this.f3911o, i10);
         } else {
-            this.f3582o.run();
+            this.f3911o.run();
         }
-        this.f3590w = true;
+        this.f3919w = true;
     }
 
     public abstract boolean a(int i10);
@@ -323,19 +323,19 @@ public abstract class a implements View.OnTouchListener {
     void c() {
         long uptimeMillis = SystemClock.uptimeMillis();
         MotionEvent obtain = MotionEvent.obtain(uptimeMillis, uptimeMillis, 3, 0.0f, 0.0f, 0);
-        this.f3581i.onTouchEvent(obtain);
+        this.f3910i.onTouchEvent(obtain);
         obtain.recycle();
     }
 
     public abstract void j(int i10, int i11);
 
     public a k(int i10) {
-        this.f3586s = i10;
+        this.f3915s = i10;
         return this;
     }
 
     public a l(int i10) {
-        this.f3585r = i10;
+        this.f3914r = i10;
         return this;
     }
 
@@ -348,14 +348,14 @@ public abstract class a implements View.OnTouchListener {
     }
 
     public a n(float f10, float f11) {
-        float[] fArr = this.f3584q;
+        float[] fArr = this.f3913q;
         fArr[0] = f10;
         fArr[1] = f11;
         return this;
     }
 
     public a o(float f10, float f11) {
-        float[] fArr = this.f3589v;
+        float[] fArr = this.f3918v;
         fArr[0] = f10 / 1000.0f;
         fArr[1] = f11 / 1000.0f;
         return this;
@@ -390,26 +390,26 @@ public abstract class a implements View.OnTouchListener {
             r5.i()
             goto L58
         L1a:
-            r5.f3592y = r2
-            r5.f3590w = r1
+            r5.f3921y = r2
+            r5.f3919w = r1
         L1e:
             float r0 = r7.getX()
             int r3 = r6.getWidth()
             float r3 = (float) r3
-            android.view.View r4 = r5.f3581i
+            android.view.View r4 = r5.f3910i
             int r4 = r4.getWidth()
             float r4 = (float) r4
             float r0 = r5.d(r1, r0, r3, r4)
             float r7 = r7.getY()
             int r6 = r6.getHeight()
             float r6 = (float) r6
-            android.view.View r3 = r5.f3581i
+            android.view.View r3 = r5.f3910i
             int r3 = r3.getHeight()
             float r3 = (float) r3
             float r6 = r5.d(r2, r7, r6, r3)
-            androidx.core.widget.a$a r7 = r5.f3579d
+            androidx.core.widget.a$a r7 = r5.f3908d
             r7.l(r0, r6)
-            boolean r6 = r5.f3593z
+            boolean r6 = r5.f3922z
             if (r6 != 0) goto L58
             boolean r6 = r5.u()
             if (r6 == 0) goto L58
@@ -417,7 +417,7 @@ public abstract class a implements View.OnTouchListener {
         L58:
             boolean r6 = r5.B
             if (r6 == 0) goto L61
-            boolean r6 = r5.f3593z
+            boolean r6 = r5.f3922z
             if (r6 == 0) goto L61
             return r2
         L61:
@@ -427,40 +427,40 @@ public abstract class a implements View.OnTouchListener {
     }
 
     public a p(float f10, float f11) {
-        float[] fArr = this.f3588u;
+        float[] fArr = this.f3917u;
         fArr[0] = f10 / 1000.0f;
         fArr[1] = f11 / 1000.0f;
         return this;
     }
 
     public a q(int i10) {
-        this.f3579d.j(i10);
+        this.f3908d.j(i10);
         return this;
     }
 
     public a r(int i10) {
-        this.f3579d.k(i10);
+        this.f3908d.k(i10);
         return this;
     }
 
     public a s(float f10, float f11) {
-        float[] fArr = this.f3583p;
+        float[] fArr = this.f3912p;
         fArr[0] = f10;
         fArr[1] = f11;
         return this;
     }
 
     public a t(float f10, float f11) {
-        float[] fArr = this.f3587t;
+        float[] fArr = this.f3916t;
         fArr[0] = f10 / 1000.0f;
         fArr[1] = f11 / 1000.0f;
         return this;
     }
 
     boolean u() {
-        C0043a c0043a = this.f3579d;
-        int f10 = c0043a.f();
-        int d10 = c0043a.d();
+        C0041a c0041a = this.f3908d;
+        int f10 = c0041a.f();
+        int d10 = c0041a.d();
         if (f10 == 0 || !b(f10)) {
             if (d10 != 0 && a(d10)) {
                 return true;

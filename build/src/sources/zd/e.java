@@ -4,24 +4,24 @@ import java.nio.ByteBuffer;
 import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.List;
-import mi.s;
+import ni.s;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class e implements h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final c f55491a = new c();
+    private final c f56222a = new c();
 
     /* renamed from: b  reason: collision with root package name */
-    private final k f55492b = new k();
+    private final k f56223b = new k();
 
     /* renamed from: c  reason: collision with root package name */
-    private final Deque f55493c = new ArrayDeque();
+    private final Deque f56224c = new ArrayDeque();
 
     /* renamed from: d  reason: collision with root package name */
-    private int f55494d;
+    private int f56225d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f55495e;
+    private boolean f56226e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a extends l {
@@ -39,19 +39,19 @@ public final class e implements h {
     public static final class b implements g {
 
         /* renamed from: d  reason: collision with root package name */
-        private final long f55497d;
+        private final long f56228d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final s f55498e;
+        private final s f56229e;
 
         public b(long j10, s sVar) {
-            this.f55497d = j10;
-            this.f55498e = sVar;
+            this.f56228d = j10;
+            this.f56229e = sVar;
         }
 
         @Override // zd.g
         public int a(long j10) {
-            if (this.f55497d > j10) {
+            if (this.f56228d > j10) {
                 return 0;
             }
             return -1;
@@ -59,10 +59,10 @@ public final class e implements h {
 
         @Override // zd.g
         public List d(long j10) {
-            if (j10 >= this.f55497d) {
-                return this.f55498e;
+            if (j10 >= this.f56228d) {
+                return this.f56229e;
             }
-            return s.s();
+            return s.t();
         }
 
         @Override // zd.g
@@ -74,7 +74,7 @@ public final class e implements h {
                 z10 = false;
             }
             ne.a.a(z10);
-            return this.f55497d;
+            return this.f56228d;
         }
 
         @Override // zd.g
@@ -85,57 +85,57 @@ public final class e implements h {
 
     public e() {
         for (int i10 = 0; i10 < 2; i10++) {
-            this.f55493c.addFirst(new a());
+            this.f56224c.addFirst(new a());
         }
-        this.f55494d = 0;
+        this.f56225d = 0;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void i(l lVar) {
         boolean z10;
-        if (this.f55493c.size() < 2) {
+        if (this.f56224c.size() < 2) {
             z10 = true;
         } else {
             z10 = false;
         }
         ne.a.g(z10);
-        ne.a.a(!this.f55493c.contains(lVar));
+        ne.a.a(!this.f56224c.contains(lVar));
         lVar.h();
-        this.f55493c.addFirst(lVar);
+        this.f56224c.addFirst(lVar);
     }
 
     @Override // qc.d
     /* renamed from: f */
     public k d() {
-        ne.a.g(!this.f55495e);
-        if (this.f55494d != 0) {
+        ne.a.g(!this.f56226e);
+        if (this.f56225d != 0) {
             return null;
         }
-        this.f55494d = 1;
-        return this.f55492b;
+        this.f56225d = 1;
+        return this.f56223b;
     }
 
     @Override // qc.d
     public void flush() {
-        ne.a.g(!this.f55495e);
-        this.f55492b.h();
-        this.f55494d = 0;
+        ne.a.g(!this.f56226e);
+        this.f56223b.h();
+        this.f56225d = 0;
     }
 
     @Override // qc.d
     /* renamed from: g */
     public l b() {
-        ne.a.g(!this.f55495e);
-        if (this.f55494d == 2 && !this.f55493c.isEmpty()) {
-            l lVar = (l) this.f55493c.removeFirst();
-            if (this.f55492b.n()) {
+        ne.a.g(!this.f56226e);
+        if (this.f56225d == 2 && !this.f56224c.isEmpty()) {
+            l lVar = (l) this.f56224c.removeFirst();
+            if (this.f56223b.n()) {
                 lVar.g(4);
             } else {
-                k kVar = this.f55492b;
-                lVar.u(this.f55492b.f47563p, new b(kVar.f47563p, this.f55491a.a(((ByteBuffer) ne.a.e(kVar.f47561i)).array())), 0L);
+                k kVar = this.f56223b;
+                lVar.u(this.f56223b.f46611p, new b(kVar.f46611p, this.f56222a.a(((ByteBuffer) ne.a.e(kVar.f46609i)).array())), 0L);
             }
-            this.f55492b.h();
-            this.f55494d = 0;
+            this.f56223b.h();
+            this.f56225d = 0;
             return lVar;
         }
         return null;
@@ -146,23 +146,23 @@ public final class e implements h {
     public void c(k kVar) {
         boolean z10;
         boolean z11 = true;
-        ne.a.g(!this.f55495e);
-        if (this.f55494d == 1) {
+        ne.a.g(!this.f56226e);
+        if (this.f56225d == 1) {
             z10 = true;
         } else {
             z10 = false;
         }
         ne.a.g(z10);
-        if (this.f55492b != kVar) {
+        if (this.f56223b != kVar) {
             z11 = false;
         }
         ne.a.a(z11);
-        this.f55494d = 2;
+        this.f56225d = 2;
     }
 
     @Override // qc.d
     public void release() {
-        this.f55495e = true;
+        this.f56226e = true;
     }
 
     @Override // zd.h

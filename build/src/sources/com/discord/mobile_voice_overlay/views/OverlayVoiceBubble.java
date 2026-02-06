@@ -62,7 +62,7 @@ public final class OverlayVoiceBubble extends OverlayBubbleWrap {
         IconUrlUtils iconUrlUtils = IconUrlUtils.INSTANCE;
         Context context = getContext();
         Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
-        simpleDraweeView.setImageURI(IconUrlUtils.m917getForUser_fRzTXg$default(iconUrlUtils, context, UserId.m1137boximpl(user.m967getUserIdre6GcUE()), user.getAvatar(), Integer.valueOf(user.getDiscriminator()), false, null, 48, null));
+        simpleDraweeView.setImageURI(IconUrlUtils.m915getForUser_fRzTXg$default(iconUrlUtils, context, UserId.m1135boximpl(user.m965getUserIdre6GcUE()), user.getAvatar(), Integer.valueOf(user.getDiscriminator()), false, null, 48, null));
         if (user.getSpeaking()) {
             fadeActive();
         } else {

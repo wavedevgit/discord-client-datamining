@@ -49,7 +49,7 @@ public final class RoleDotDrawable extends Drawable {
     }
 
     @Override // android.graphics.drawable.Drawable
-    @or.c
+    @qr.c
     public int getOpacity() {
         return -1;
     }

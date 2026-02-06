@@ -1,27 +1,45 @@
 package ml;
 
-import java.util.Locale;
+import android.media.MediaFormat;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class a extends d {
+public class a {
+
+    /* renamed from: a  reason: collision with root package name */
+    private MediaFormat f37213a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private MediaFormat f37214b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private String f37215c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private String f37216d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final long f38712e;
+    private long f37217e = -1;
 
-    /* renamed from: i  reason: collision with root package name */
-    private final long f38713i;
-
-    public a(long j10, long j11) {
-        this(j10, j11, new Throwable());
+    public long a() {
+        return this.f37217e;
     }
 
-    @Override // java.lang.Throwable
-    public String getMessage() {
-        return String.format(Locale.ENGLISH, "Insufficient disk space, estimated file size in bytes %d, available disk space in bytes %d", Long.valueOf(this.f38712e), Long.valueOf(this.f38713i));
+    public void b(String str) {
+        this.f37215c = str;
     }
 
-    public a(long j10, long j11, Throwable th2) {
-        super(th2);
-        this.f38712e = j10;
-        this.f38713i = j11;
+    public void c(long j10) {
+        this.f37217e = j10;
+    }
+
+    public void d(String str) {
+        this.f37216d = str;
+    }
+
+    public void e(MediaFormat mediaFormat) {
+        this.f37213a = mediaFormat;
+    }
+
+    public void f(MediaFormat mediaFormat) {
+        this.f37214b = mediaFormat;
     }
 }

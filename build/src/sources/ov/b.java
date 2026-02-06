@@ -1,139 +1,61 @@
 package ov;
 
-import java.lang.annotation.Annotation;
-import java.lang.reflect.Type;
-import kotlin.Unit;
-import okhttp3.RequestBody;
-import okhttp3.ResponseBody;
-import ov.h;
+import qv.f;
+import qv.r;
+import qv.v;
+import qv.w;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-final class b extends h.a {
+public abstract class b implements tv.a {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    static final class a implements h {
+    /* renamed from: a  reason: collision with root package name */
+    private final char f43554a;
 
-        /* renamed from: a  reason: collision with root package name */
-        static final a f44571a = new a();
-
-        a() {
-        }
-
-        @Override // ov.h
-        /* renamed from: b */
-        public ResponseBody a(ResponseBody responseBody) {
-            try {
-                return e0.a(responseBody);
-            } finally {
-                responseBody.close();
-            }
-        }
+    /* JADX INFO: Access modifiers changed from: protected */
+    public b(char c10) {
+        this.f43554a = c10;
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    static final class d implements h {
-
-        /* renamed from: a  reason: collision with root package name */
-        static final d f44574a = new d();
-
-        d() {
-        }
-
-        @Override // ov.h
-        /* renamed from: b */
-        public String a(Object obj) {
-            return obj.toString();
-        }
+    @Override // tv.a
+    public char a() {
+        return this.f43554a;
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    static final class e implements h {
-
-        /* renamed from: a  reason: collision with root package name */
-        static final e f44575a = new e();
-
-        e() {
-        }
-
-        @Override // ov.h
-        /* renamed from: b */
-        public Unit a(ResponseBody responseBody) {
-            responseBody.close();
-            return Unit.f31988a;
-        }
+    @Override // tv.a
+    public int b() {
+        return 1;
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    static final class f implements h {
-
-        /* renamed from: a  reason: collision with root package name */
-        static final f f44576a = new f();
-
-        f() {
+    @Override // tv.a
+    public int c(tv.b bVar, tv.b bVar2) {
+        if ((bVar.a() || bVar2.c()) && bVar2.b() % 3 != 0 && (bVar.b() + bVar2.b()) % 3 == 0) {
+            return 0;
         }
-
-        @Override // ov.h
-        /* renamed from: b */
-        public Void a(ResponseBody responseBody) {
-            responseBody.close();
-            return null;
+        if (bVar.length() >= 2 && bVar2.length() >= 2) {
+            return 2;
         }
+        return 1;
     }
 
-    @Override // ov.h.a
-    public h c(Type type, Annotation[] annotationArr, Annotation[] annotationArr2, a0 a0Var) {
-        if (RequestBody.class.isAssignableFrom(e0.h(type))) {
-            return C0562b.f44572a;
-        }
-        return null;
+    @Override // tv.a
+    public char d() {
+        return this.f43554a;
     }
 
-    @Override // ov.h.a
-    public h d(Type type, Annotation[] annotationArr, a0 a0Var) {
-        if (type == ResponseBody.class) {
-            if (e0.l(annotationArr, qv.w.class)) {
-                return c.f44573a;
-            }
-            return a.f44571a;
-        } else if (type == Void.class) {
-            return f.f44576a;
+    @Override // tv.a
+    public void e(w wVar, w wVar2, int i10) {
+        r vVar;
+        String valueOf = String.valueOf(d());
+        if (i10 == 1) {
+            vVar = new f(valueOf);
         } else {
-            if (e0.m(type)) {
-                return e.f44575a;
-            }
-            return null;
+            vVar = new v(valueOf + valueOf);
         }
-    }
-
-    /* renamed from: ov.b$b  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    static final class C0562b implements h {
-
-        /* renamed from: a  reason: collision with root package name */
-        static final C0562b f44572a = new C0562b();
-
-        C0562b() {
+        r e10 = wVar.e();
+        while (e10 != null && e10 != wVar2) {
+            r e11 = e10.e();
+            vVar.b(e10);
+            e10 = e11;
         }
-
-        @Override // ov.h
-        /* renamed from: b */
-        public RequestBody a(RequestBody requestBody) {
-            return requestBody;
-        }
-    }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    static final class c implements h {
-
-        /* renamed from: a  reason: collision with root package name */
-        static final c f44573a = new c();
-
-        c() {
-        }
-
-        @Override // ov.h
-        /* renamed from: b */
-        public ResponseBody a(ResponseBody responseBody) {
-            return responseBody;
-        }
+        wVar.h(vVar);
     }
 }

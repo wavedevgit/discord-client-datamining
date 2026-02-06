@@ -1,23 +1,26 @@
 package un;
 
-import com.withpersona.sdk2.camera.camera2.Camera2PreviewView;
-import un.g;
+import android.view.View;
+import kotlin.coroutines.Continuation;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class i implements g.a {
+public interface i {
+    void a(boolean z10);
 
-    /* renamed from: a  reason: collision with root package name */
-    private final h f51580a;
+    v b();
 
-    i(h hVar) {
-        this.f51580a = hVar;
-    }
+    rs.j0 c();
 
-    public static zq.h b(h hVar) {
-        return zq.e.a(new i(hVar));
-    }
+    void d();
 
-    @Override // un.g.a
-    public g a(m mVar, Camera2PreviewView camera2PreviewView, b bVar, yn.a aVar, rq.a aVar2, boolean z10) {
-        return this.f51580a.b(mVar, camera2PreviewView, bVar, aVar, aVar2, z10);
-    }
+    View e();
+
+    void f();
+
+    Object g(Continuation continuation);
+
+    void h(boolean z10);
+
+    Object i(Continuation continuation);
+
+    Object j(Continuation continuation);
 }

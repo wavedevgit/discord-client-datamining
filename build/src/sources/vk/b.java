@@ -1,74 +1,79 @@
 package vk;
 
-import com.google.zxing.Result;
-import fk.k;
-import fk.m;
-import fk.o;
-import fk.p;
-import java.util.ArrayList;
-import java.util.Map;
-import jk.e;
-import wk.j;
+import java.util.Objects;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b implements m {
+final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Result[] f52303a = new Result[0];
+    private final uk.b f52691a;
 
-    private static Result[] b(fk.c cVar, Map map, boolean z10) {
-        ArrayList arrayList = new ArrayList();
-        yk.b d10 = yk.a.d(cVar, map, z10);
-        for (p[] pVarArr : d10.b()) {
-            e i10 = j.i(d10.a(), pVarArr[4], pVarArr[5], pVarArr[6], pVarArr[7], e(pVarArr), c(pVarArr));
-            Result result = new Result(i10.k(), i10.g(), pVarArr, fk.a.PDF_417);
-            result.h(o.ERROR_CORRECTION_LEVEL, i10.b());
-            result.h(o.ERRORS_CORRECTED, i10.d());
-            result.h(o.ERASURES_CORRECTED, i10.c());
-            c cVar2 = (c) i10.f();
-            if (cVar2 != null) {
-                result.h(o.PDF417_EXTRA_METADATA, cVar2);
-            }
-            result.h(o.ORIENTATION, Integer.valueOf(d10.c()));
-            o oVar = o.SYMBOLOGY_IDENTIFIER;
-            result.h(oVar, "]L" + i10.j());
-            arrayList.add(result);
+    /* renamed from: b  reason: collision with root package name */
+    private final uk.b f52692b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private final uk.c f52693c;
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public b(uk.b bVar, uk.b bVar2, uk.c cVar) {
+        this.f52691a = bVar;
+        this.f52692b = bVar2;
+        this.f52693c = cVar;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public uk.c a() {
+        return this.f52693c;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public uk.b b() {
+        return this.f52691a;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public uk.b c() {
+        return this.f52692b;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public boolean d() {
+        if (this.f52692b == null) {
+            return true;
         }
-        return (Result[]) arrayList.toArray(f52303a);
+        return false;
     }
 
-    private static int c(p[] pVarArr) {
-        return Math.max(Math.max(d(pVarArr[0], pVarArr[4]), (d(pVarArr[6], pVarArr[2]) * 17) / 18), Math.max(d(pVarArr[1], pVarArr[5]), (d(pVarArr[7], pVarArr[3]) * 17) / 18));
-    }
-
-    private static int d(p pVar, p pVar2) {
-        if (pVar != null && pVar2 != null) {
-            return (int) Math.abs(pVar.c() - pVar2.c());
+    public boolean equals(Object obj) {
+        if (!(obj instanceof b)) {
+            return false;
         }
-        return 0;
-    }
-
-    private static int e(p[] pVarArr) {
-        return Math.min(Math.min(f(pVarArr[0], pVarArr[4]), (f(pVarArr[6], pVarArr[2]) * 17) / 18), Math.min(f(pVarArr[1], pVarArr[5]), (f(pVarArr[7], pVarArr[3]) * 17) / 18));
-    }
-
-    private static int f(p pVar, p pVar2) {
-        if (pVar != null && pVar2 != null) {
-            return (int) Math.abs(pVar.c() - pVar2.c());
+        b bVar = (b) obj;
+        if (!Objects.equals(this.f52691a, bVar.f52691a) || !Objects.equals(this.f52692b, bVar.f52692b) || !Objects.equals(this.f52693c, bVar.f52693c)) {
+            return false;
         }
-        return Integer.MAX_VALUE;
+        return true;
     }
 
-    @Override // fk.m
-    public Result a(fk.c cVar, Map map) {
-        Result result;
-        Result[] b10 = b(cVar, map, false);
-        if (b10.length != 0 && (result = b10[0]) != null) {
-            return result;
+    public int hashCode() {
+        return (Objects.hashCode(this.f52691a) ^ Objects.hashCode(this.f52692b)) ^ Objects.hashCode(this.f52693c);
+    }
+
+    public String toString() {
+        Object valueOf;
+        StringBuilder sb2 = new StringBuilder();
+        sb2.append("[ ");
+        sb2.append(this.f52691a);
+        sb2.append(" , ");
+        sb2.append(this.f52692b);
+        sb2.append(" : ");
+        uk.c cVar = this.f52693c;
+        if (cVar == null) {
+            valueOf = "null";
+        } else {
+            valueOf = Integer.valueOf(cVar.c());
         }
-        throw k.a();
-    }
-
-    @Override // fk.m
-    public void reset() {
+        sb2.append(valueOf);
+        sb2.append(" ]");
+        return sb2.toString();
     }
 }

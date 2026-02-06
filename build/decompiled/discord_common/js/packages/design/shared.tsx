@@ -1,7 +1,7 @@
 // ../discord_common/js/packages/design/shared.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun27755: for (var _fun27755_ip = 0;;) switch (_fun27755_ip) {
+    _fun27759: for (var _fun27759_ip = 0;;) switch (_fun27759_ip) {
         case 0:
             var9 = require;
             var8 = exports;
@@ -31,8 +31,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var10 = var9.bind(var0)(var10);
                     var10 = var10[var11];
                     var8[var11] = var10;
-                    _fun27755_ip = 90;
-                    continue _fun27755;
+                    _fun27759_ip = 90;
+                    continue _fun27759;
                 }
         case 121:
             var2 = 2;
@@ -45,8 +45,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var10 = var9.bind(var0)(var10);
                     var10 = var10[var11];
                     var8[var11] = var10;
-                    _fun27755_ip = 141;
-                    continue _fun27755;
+                    _fun27759_ip = 141;
+                    continue _fun27759;
                 }
         case 172:
             var1 = 3;
@@ -58,8 +58,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 204: var11 = var1;
                     var10 = var6[var11];
                     var8[var11] = var10;
-                    _fun27755_ip = 195;
-                    continue _fun27755;
+                    _fun27759_ip = 195;
+                    continue _fun27759;
                 }
         case 217:
             var2 = 4;
@@ -72,8 +72,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var10 = var9.bind(var0)(var10);
                     var10 = var10[var11];
                     var8[var11] = var10;
-                    _fun27755_ip = 237;
-                    continue _fun27755;
+                    _fun27759_ip = 237;
+                    continue _fun27759;
                 }
         case 268:
             var2 = 5;
@@ -86,8 +86,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var10 = var9.bind(var0)(var10);
                     var10 = var10[var11];
                     var8[var11] = var10;
-                    _fun27755_ip = 288;
-                    continue _fun27755;
+                    _fun27759_ip = 288;
+                    continue _fun27759;
                 }
         case 319:
             var2 = 6;
@@ -100,8 +100,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var10 = var9.bind(var0)(var10);
                     var10 = var10[var11];
                     var8[var11] = var10;
-                    _fun27755_ip = 339;
-                    continue _fun27755;
+                    _fun27759_ip = 339;
+                    continue _fun27759;
                 }
         case 370:
             var2 = 7;
@@ -114,8 +114,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var10 = var9.bind(var0)(var10);
                     var10 = var10[var11];
                     var8[var11] = var10;
-                    _fun27755_ip = 390;
-                    continue _fun27755;
+                    _fun27759_ip = 390;
+                    continue _fun27759;
                 }
         case 421:
             var2 = 8;
@@ -128,10 +128,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var10 = var9.bind(var0)(var10);
                     var10 = var10[var11];
                     var8[var11] = var10;
-                    _fun27755_ip = 441;
-                    continue _fun27755;
+                    _fun27759_ip = 441;
+                    continue _fun27759;
                 }
         case 472:
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [2, 3160, 3165, 3166, 3167, 3169, 3170, 3171, 3172]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2, 3162, 3167, 3168, 3169, 3171, 3172, 3173, 3174]);

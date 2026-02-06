@@ -26,22 +26,22 @@ public final class ChannelPromptActionsViewHolder extends MessagePartViewHolder 
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void bind$lambda$0(Function3 function3, ChannelPromptActionsAccessory channelPromptActionsAccessory, View view) {
-        function3.invoke(MessageId.m1085boximpl(channelPromptActionsAccessory.mo538getMessageId3Eiw7ao()), ChannelId.m1059boximpl(channelPromptActionsAccessory.getMessage().m236getChannelIdo4g7jtM()), "camera");
+        function3.invoke(MessageId.m1083boximpl(channelPromptActionsAccessory.mo536getMessageId3Eiw7ao()), ChannelId.m1057boximpl(channelPromptActionsAccessory.getMessage().m234getChannelIdo4g7jtM()), "camera");
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void bind$lambda$1(Function3 function3, ChannelPromptActionsAccessory channelPromptActionsAccessory, View view) {
-        function3.invoke(MessageId.m1085boximpl(channelPromptActionsAccessory.mo538getMessageId3Eiw7ao()), ChannelId.m1059boximpl(channelPromptActionsAccessory.getMessage().m236getChannelIdo4g7jtM()), "emoji");
+        function3.invoke(MessageId.m1083boximpl(channelPromptActionsAccessory.mo536getMessageId3Eiw7ao()), ChannelId.m1057boximpl(channelPromptActionsAccessory.getMessage().m234getChannelIdo4g7jtM()), "emoji");
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void bind$lambda$2(Function3 function3, ChannelPromptActionsAccessory channelPromptActionsAccessory, View view) {
-        function3.invoke(MessageId.m1085boximpl(channelPromptActionsAccessory.mo538getMessageId3Eiw7ao()), ChannelId.m1059boximpl(channelPromptActionsAccessory.getMessage().m236getChannelIdo4g7jtM()), "gaming-stats");
+        function3.invoke(MessageId.m1083boximpl(channelPromptActionsAccessory.mo536getMessageId3Eiw7ao()), ChannelId.m1057boximpl(channelPromptActionsAccessory.getMessage().m234getChannelIdo4g7jtM()), "gaming-stats");
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void bind$lambda$3(Function3 function3, ChannelPromptActionsAccessory channelPromptActionsAccessory, View view) {
-        function3.invoke(MessageId.m1085boximpl(channelPromptActionsAccessory.mo538getMessageId3Eiw7ao()), ChannelId.m1059boximpl(channelPromptActionsAccessory.getMessage().m236getChannelIdo4g7jtM()), "gif");
+        function3.invoke(MessageId.m1083boximpl(channelPromptActionsAccessory.mo536getMessageId3Eiw7ao()), ChannelId.m1057boximpl(channelPromptActionsAccessory.getMessage().m234getChannelIdo4g7jtM()), "gif");
     }
 
     public final void bind(@NotNull final ChannelPromptActionsAccessory accessory, @NotNull final Function3 onTapChannelPromptButton) {

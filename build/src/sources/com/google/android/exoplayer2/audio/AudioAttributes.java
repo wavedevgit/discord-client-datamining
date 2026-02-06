@@ -9,25 +9,25 @@ import ne.w0;
 public final class AudioAttributes implements com.google.android.exoplayer2.g {
 
     /* renamed from: r  reason: collision with root package name */
-    public static final AudioAttributes f12175r = new e().a();
+    public static final AudioAttributes f12074r = new e().a();
 
     /* renamed from: s  reason: collision with root package name */
-    private static final String f12176s = w0.B0(0);
+    private static final String f12075s = w0.B0(0);
 
     /* renamed from: t  reason: collision with root package name */
-    private static final String f12177t = w0.B0(1);
+    private static final String f12076t = w0.B0(1);
 
     /* renamed from: u  reason: collision with root package name */
-    private static final String f12178u = w0.B0(2);
+    private static final String f12077u = w0.B0(2);
 
     /* renamed from: v  reason: collision with root package name */
-    private static final String f12179v = w0.B0(3);
+    private static final String f12078v = w0.B0(3);
 
     /* renamed from: w  reason: collision with root package name */
-    private static final String f12180w = w0.B0(4);
+    private static final String f12079w = w0.B0(4);
 
     /* renamed from: x  reason: collision with root package name */
-    public static final g.a f12181x = new g.a() { // from class: nc.d
+    public static final g.a f12080x = new g.a() { // from class: nc.d
         @Override // com.google.android.exoplayer2.g.a
         public final com.google.android.exoplayer2.g a(Bundle bundle) {
             return AudioAttributes.a(bundle);
@@ -35,22 +35,22 @@ public final class AudioAttributes implements com.google.android.exoplayer2.g {
     };
 
     /* renamed from: d  reason: collision with root package name */
-    public final int f12182d;
+    public final int f12081d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final int f12183e;
+    public final int f12082e;
 
     /* renamed from: i  reason: collision with root package name */
-    public final int f12184i;
+    public final int f12083i;
 
     /* renamed from: o  reason: collision with root package name */
-    public final int f12185o;
+    public final int f12084o;
 
     /* renamed from: p  reason: collision with root package name */
-    public final int f12186p;
+    public final int f12085p;
 
     /* renamed from: q  reason: collision with root package name */
-    private d f12187q;
+    private d f12086q;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     private static final class b {
@@ -70,18 +70,18 @@ public final class AudioAttributes implements com.google.android.exoplayer2.g {
     public static final class d {
 
         /* renamed from: a  reason: collision with root package name */
-        public final android.media.AudioAttributes f12188a;
+        public final android.media.AudioAttributes f12087a;
 
         private d(AudioAttributes audioAttributes) {
-            AudioAttributes.Builder usage = new AudioAttributes.Builder().setContentType(audioAttributes.f12182d).setFlags(audioAttributes.f12183e).setUsage(audioAttributes.f12184i);
-            int i10 = w0.f39657a;
+            AudioAttributes.Builder usage = new AudioAttributes.Builder().setContentType(audioAttributes.f12081d).setFlags(audioAttributes.f12082e).setUsage(audioAttributes.f12083i);
+            int i10 = w0.f39012a;
             if (i10 >= 29) {
-                b.a(usage, audioAttributes.f12185o);
+                b.a(usage, audioAttributes.f12084o);
             }
             if (i10 >= 32) {
-                c.a(usage, audioAttributes.f12186p);
+                c.a(usage, audioAttributes.f12085p);
             }
-            this.f12188a = usage.build();
+            this.f12087a = usage.build();
         }
     }
 
@@ -89,69 +89,69 @@ public final class AudioAttributes implements com.google.android.exoplayer2.g {
     public static final class e {
 
         /* renamed from: a  reason: collision with root package name */
-        private int f12189a = 0;
+        private int f12088a = 0;
 
         /* renamed from: b  reason: collision with root package name */
-        private int f12190b = 0;
+        private int f12089b = 0;
 
         /* renamed from: c  reason: collision with root package name */
-        private int f12191c = 1;
+        private int f12090c = 1;
 
         /* renamed from: d  reason: collision with root package name */
-        private int f12192d = 1;
+        private int f12091d = 1;
 
         /* renamed from: e  reason: collision with root package name */
-        private int f12193e = 0;
+        private int f12092e = 0;
 
         public AudioAttributes a() {
-            return new AudioAttributes(this.f12189a, this.f12190b, this.f12191c, this.f12192d, this.f12193e);
+            return new AudioAttributes(this.f12088a, this.f12089b, this.f12090c, this.f12091d, this.f12092e);
         }
 
         public e b(int i10) {
-            this.f12192d = i10;
+            this.f12091d = i10;
             return this;
         }
 
         public e c(int i10) {
-            this.f12189a = i10;
+            this.f12088a = i10;
             return this;
         }
 
         public e d(int i10) {
-            this.f12190b = i10;
+            this.f12089b = i10;
             return this;
         }
 
         public e e(int i10) {
-            this.f12193e = i10;
+            this.f12092e = i10;
             return this;
         }
 
         public e f(int i10) {
-            this.f12191c = i10;
+            this.f12090c = i10;
             return this;
         }
     }
 
     public static /* synthetic */ AudioAttributes a(Bundle bundle) {
         e eVar = new e();
-        String str = f12176s;
+        String str = f12075s;
         if (bundle.containsKey(str)) {
             eVar.c(bundle.getInt(str));
         }
-        String str2 = f12177t;
+        String str2 = f12076t;
         if (bundle.containsKey(str2)) {
             eVar.d(bundle.getInt(str2));
         }
-        String str3 = f12178u;
+        String str3 = f12077u;
         if (bundle.containsKey(str3)) {
             eVar.f(bundle.getInt(str3));
         }
-        String str4 = f12179v;
+        String str4 = f12078v;
         if (bundle.containsKey(str4)) {
             eVar.b(bundle.getInt(str4));
         }
-        String str5 = f12180w;
+        String str5 = f12079w;
         if (bundle.containsKey(str5)) {
             eVar.e(bundle.getInt(str5));
         }
@@ -159,10 +159,10 @@ public final class AudioAttributes implements com.google.android.exoplayer2.g {
     }
 
     public d b() {
-        if (this.f12187q == null) {
-            this.f12187q = new d();
+        if (this.f12086q == null) {
+            this.f12086q = new d();
         }
-        return this.f12187q;
+        return this.f12086q;
     }
 
     public boolean equals(Object obj) {
@@ -171,7 +171,7 @@ public final class AudioAttributes implements com.google.android.exoplayer2.g {
         }
         if (obj != null && AudioAttributes.class == obj.getClass()) {
             AudioAttributes audioAttributes = (AudioAttributes) obj;
-            if (this.f12182d == audioAttributes.f12182d && this.f12183e == audioAttributes.f12183e && this.f12184i == audioAttributes.f12184i && this.f12185o == audioAttributes.f12185o && this.f12186p == audioAttributes.f12186p) {
+            if (this.f12081d == audioAttributes.f12081d && this.f12082e == audioAttributes.f12082e && this.f12083i == audioAttributes.f12083i && this.f12084o == audioAttributes.f12084o && this.f12085p == audioAttributes.f12085p) {
                 return true;
             }
         }
@@ -179,14 +179,14 @@ public final class AudioAttributes implements com.google.android.exoplayer2.g {
     }
 
     public int hashCode() {
-        return ((((((((527 + this.f12182d) * 31) + this.f12183e) * 31) + this.f12184i) * 31) + this.f12185o) * 31) + this.f12186p;
+        return ((((((((527 + this.f12081d) * 31) + this.f12082e) * 31) + this.f12083i) * 31) + this.f12084o) * 31) + this.f12085p;
     }
 
     private AudioAttributes(int i10, int i11, int i12, int i13, int i14) {
-        this.f12182d = i10;
-        this.f12183e = i11;
-        this.f12184i = i12;
-        this.f12185o = i13;
-        this.f12186p = i14;
+        this.f12081d = i10;
+        this.f12082e = i11;
+        this.f12083i = i12;
+        this.f12084o = i13;
+        this.f12085p = i14;
     }
 }

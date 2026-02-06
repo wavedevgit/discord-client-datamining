@@ -21,7 +21,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = var4.isAndroid;
             var3 = var3.bind(var4)();
             if (var3) {
-                _fun37610_ip = 81;
+                _fun37610_ip = 85;
                 continue _fun37610
             }
         case 69:
@@ -29,16 +29,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 'fontScale': 1,
                 'isClassicChatFontScaleEnabled': false
             };
-            _fun37610_ip = 108;
+            _fun37610_ip = 112;
             continue _fun37610;
-        case 81:
+        case 85:
             var3 = 1;
             var7 = var6[var3];
             var3 = metroImportDefault;
             var7 = var3.bind(var0)(var7);
             var3 = var7.getCustomFontScale;
             var4 = var3.bind(var7)();
-        case 108:
+        case 112:
             var3 = {};
             var7 = var4.fontScale;
             var3.persistedFontScale = var7;
@@ -68,4 +68,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.useFontScaleStore = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [478, 4092, 797, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [478, 4093, 797, 2]);

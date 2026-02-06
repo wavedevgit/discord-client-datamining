@@ -387,4 +387,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.isRawMessageMentioned = var3;
     var2.isMentioned = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3990, 1372, 1681, 1410, 3993, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3991, 1372, 1681, 1410, 3994, 2]);

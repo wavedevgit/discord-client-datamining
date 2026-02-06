@@ -1,33 +1,33 @@
 package com.google.android.play.core.assetpacks;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class n1 implements wh.t {
+public final class n1 implements xh.t {
 
     /* renamed from: a  reason: collision with root package name */
-    private final wh.w f15923a;
+    private final xh.w f15903a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final wh.w f15924b;
+    private final xh.w f15904b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final wh.w f15925c;
+    private final xh.w f15905c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final wh.w f15926d;
+    private final xh.w f15906d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final wh.w f15927e;
+    private final xh.w f15907e;
 
-    public n1(wh.w wVar, wh.w wVar2, wh.w wVar3, wh.w wVar4, wh.w wVar5) {
-        this.f15923a = wVar;
-        this.f15924b = wVar2;
-        this.f15925c = wVar3;
-        this.f15926d = wVar4;
-        this.f15927e = wVar5;
+    public n1(xh.w wVar, xh.w wVar2, xh.w wVar3, xh.w wVar4, xh.w wVar5) {
+        this.f15903a = wVar;
+        this.f15904b = wVar2;
+        this.f15905c = wVar3;
+        this.f15906d = wVar4;
+        this.f15907e = wVar5;
     }
 
-    @Override // wh.w
+    @Override // xh.w
     public final /* bridge */ /* synthetic */ Object a() {
-        Object a10 = this.f15923a.a();
-        return new m1((n0) a10, wh.r.c(wh.v.a(this.f15924b)), wh.r.c(wh.v.a(this.f15925c)), (b2) this.f15926d.a(), (o3) this.f15927e.a());
+        Object a10 = this.f15903a.a();
+        return new m1((n0) a10, xh.r.c(xh.v.a(this.f15904b)), xh.r.c(xh.v.a(this.f15905c)), (b2) this.f15906d.a(), (o3) this.f15907e.a());
     }
 }

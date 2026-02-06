@@ -1,54 +1,20 @@
 package fm;
 
-import com.facebook.react.bridge.WritableMap;
-import com.facebook.react.uimanager.events.Event;
-import com.facebook.react.uimanager.events.RCTEventEmitter;
-import kotlin.jvm.internal.DefaultConstructorMarker;
-import kotlin.jvm.internal.Intrinsics;
+import com.facebook.react.ReactPackage;
+import com.facebook.react.bridge.ReactApplicationContext;
+import com.reactnativecommunity.netinfo.NetInfoModule;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class c extends Event {
-
-    /* renamed from: b  reason: collision with root package name */
-    public static final a f23139b = new a(null);
-
-    /* renamed from: a  reason: collision with root package name */
-    private final WritableMap f23140a;
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a {
-        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
-        }
-
-        private a() {
-        }
+public class c implements ReactPackage {
+    @Override // com.facebook.react.ReactPackage
+    public List createNativeModules(ReactApplicationContext reactApplicationContext) {
+        return Arrays.asList(new NetInfoModule(reactApplicationContext));
     }
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public c(int i10, WritableMap mEventData) {
-        super(i10);
-        Intrinsics.checkNotNullParameter(mEventData, "mEventData");
-        this.f23140a = mEventData;
-    }
-
-    @Override // com.facebook.react.uimanager.events.Event
-    public boolean canCoalesce() {
-        return false;
-    }
-
-    @Override // com.facebook.react.uimanager.events.Event
-    public void dispatch(RCTEventEmitter rctEventEmitter) {
-        Intrinsics.checkNotNullParameter(rctEventEmitter, "rctEventEmitter");
-        rctEventEmitter.receiveEvent(getViewTag(), internal_getEventNameCompat(), this.f23140a);
-    }
-
-    @Override // com.facebook.react.uimanager.events.Event
-    public short getCoalescingKey() {
-        return (short) 0;
-    }
-
-    @Override // com.facebook.react.uimanager.events.Event
-    public String getEventName() {
-        return "topLoadingFinish";
+    @Override // com.facebook.react.ReactPackage
+    public List createViewManagers(ReactApplicationContext reactApplicationContext) {
+        return Collections.EMPTY_LIST;
     }
 }

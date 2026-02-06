@@ -43,26 +43,26 @@ public final class NextStep_GovernmentId_AssetConfig_CheckPageJsonAdapter extend
     @NotNull
     public NextStep.GovernmentId.AssetConfig.CheckPage fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         RemoteImage remoteImage = null;
         int i10 = -1;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 remoteImage = (RemoteImage) this.nullableRemoteImageAdapter.fromJson(reader);
                 i10 = -2;
             }
         }
-        reader.z();
+        reader.D();
         if (i10 == -2) {
             return new NextStep.GovernmentId.AssetConfig.CheckPage(remoteImage);
         }
         Constructor<NextStep.GovernmentId.AssetConfig.CheckPage> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = NextStep.GovernmentId.AssetConfig.CheckPage.class.getDeclaredConstructor(RemoteImage.class, Integer.TYPE, ym.c.f54853c);
+            constructor = NextStep.GovernmentId.AssetConfig.CheckPage.class.getDeclaredConstructor(RemoteImage.class, Integer.TYPE, an.c.f1164c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -76,9 +76,9 @@ public final class NextStep_GovernmentId_AssetConfig_CheckPageJsonAdapter extend
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (checkPage != null) {
             writer.k();
-            writer.W("iconFile");
+            writer.J("iconFile");
             this.nullableRemoteImageAdapter.toJson(writer, checkPage.getIconFile());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

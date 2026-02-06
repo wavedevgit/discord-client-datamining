@@ -22,28 +22,28 @@ import kotlin.jvm.internal.Lambda;
 public final class OnBackPressedDispatcher {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Runnable f927a;
+    private final Runnable f1256a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Consumer f928b;
+    private final Consumer f1257b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ArrayDeque f929c;
+    private final ArrayDeque f1258c;
 
     /* renamed from: d  reason: collision with root package name */
-    private OnBackPressedCallback f930d;
+    private OnBackPressedCallback f1259d;
 
     /* renamed from: e  reason: collision with root package name */
-    private OnBackInvokedCallback f931e;
+    private OnBackInvokedCallback f1260e;
 
     /* renamed from: f  reason: collision with root package name */
-    private OnBackInvokedDispatcher f932f;
+    private OnBackInvokedDispatcher f1261f;
 
     /* renamed from: g  reason: collision with root package name */
-    private boolean f933g;
+    private boolean f1262g;
 
     /* renamed from: h  reason: collision with root package name */
-    private boolean f934h;
+    private boolean f1263h;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     static final class a extends Lambda implements Function1 {
@@ -59,7 +59,7 @@ public final class OnBackPressedDispatcher {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((BackEventCompat) obj);
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
     }
 
@@ -77,7 +77,7 @@ public final class OnBackPressedDispatcher {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((BackEventCompat) obj);
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
     }
 
@@ -90,7 +90,7 @@ public final class OnBackPressedDispatcher {
         @Override // kotlin.jvm.functions.Function0
         public /* bridge */ /* synthetic */ Object invoke() {
             m1invoke();
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
 
         /* renamed from: invoke  reason: collision with other method in class */
@@ -108,7 +108,7 @@ public final class OnBackPressedDispatcher {
         @Override // kotlin.jvm.functions.Function0
         public /* bridge */ /* synthetic */ Object invoke() {
             m2invoke();
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
 
         /* renamed from: invoke  reason: collision with other method in class */
@@ -126,7 +126,7 @@ public final class OnBackPressedDispatcher {
         @Override // kotlin.jvm.functions.Function0
         public /* bridge */ /* synthetic */ Object invoke() {
             m3invoke();
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
 
         /* renamed from: invoke  reason: collision with other method in class */
@@ -139,7 +139,7 @@ public final class OnBackPressedDispatcher {
     public static final class f {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final f f940a = new f();
+        public static final f f1269a = new f();
 
         private f() {
         }
@@ -175,46 +175,46 @@ public final class OnBackPressedDispatcher {
     public static final class g {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final g f941a = new g();
+        public static final g f1270a = new g();
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         public static final class a implements OnBackAnimationCallback {
 
             /* renamed from: a  reason: collision with root package name */
-            final /* synthetic */ Function1 f942a;
+            final /* synthetic */ Function1 f1271a;
 
             /* renamed from: b  reason: collision with root package name */
-            final /* synthetic */ Function1 f943b;
+            final /* synthetic */ Function1 f1272b;
 
             /* renamed from: c  reason: collision with root package name */
-            final /* synthetic */ Function0 f944c;
+            final /* synthetic */ Function0 f1273c;
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ Function0 f945d;
+            final /* synthetic */ Function0 f1274d;
 
             a(Function1 function1, Function1 function12, Function0 function0, Function0 function02) {
-                this.f942a = function1;
-                this.f943b = function12;
-                this.f944c = function0;
-                this.f945d = function02;
+                this.f1271a = function1;
+                this.f1272b = function12;
+                this.f1273c = function0;
+                this.f1274d = function02;
             }
 
             public void onBackCancelled() {
-                this.f945d.invoke();
+                this.f1274d.invoke();
             }
 
             public void onBackInvoked() {
-                this.f944c.invoke();
+                this.f1273c.invoke();
             }
 
             public void onBackProgressed(BackEvent backEvent) {
                 Intrinsics.checkNotNullParameter(backEvent, "backEvent");
-                this.f943b.invoke(new BackEventCompat(backEvent));
+                this.f1272b.invoke(new BackEventCompat(backEvent));
             }
 
             public void onBackStarted(BackEvent backEvent) {
                 Intrinsics.checkNotNullParameter(backEvent, "backEvent");
-                this.f942a.invoke(new BackEventCompat(backEvent));
+                this.f1271a.invoke(new BackEventCompat(backEvent));
             }
         }
 
@@ -235,45 +235,45 @@ public final class OnBackPressedDispatcher {
     public final class h implements androidx.lifecycle.m, Cancellable {
 
         /* renamed from: d  reason: collision with root package name */
-        private final Lifecycle f946d;
+        private final Lifecycle f1275d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final OnBackPressedCallback f947e;
+        private final OnBackPressedCallback f1276e;
 
         /* renamed from: i  reason: collision with root package name */
-        private Cancellable f948i;
+        private Cancellable f1277i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ OnBackPressedDispatcher f949o;
+        final /* synthetic */ OnBackPressedDispatcher f1278o;
 
         public h(OnBackPressedDispatcher onBackPressedDispatcher, Lifecycle lifecycle, OnBackPressedCallback onBackPressedCallback) {
             Intrinsics.checkNotNullParameter(lifecycle, "lifecycle");
             Intrinsics.checkNotNullParameter(onBackPressedCallback, "onBackPressedCallback");
-            this.f949o = onBackPressedDispatcher;
-            this.f946d = lifecycle;
-            this.f947e = onBackPressedCallback;
+            this.f1278o = onBackPressedDispatcher;
+            this.f1275d = lifecycle;
+            this.f1276e = onBackPressedCallback;
             lifecycle.a(this);
         }
 
         @Override // androidx.activity.Cancellable
         public void cancel() {
-            this.f946d.d(this);
-            this.f947e.removeCancellable(this);
-            Cancellable cancellable = this.f948i;
+            this.f1275d.d(this);
+            this.f1276e.removeCancellable(this);
+            Cancellable cancellable = this.f1277i;
             if (cancellable != null) {
                 cancellable.cancel();
             }
-            this.f948i = null;
+            this.f1277i = null;
         }
 
         @Override // androidx.lifecycle.m
-        public void h(LifecycleOwner source, Lifecycle.a event) {
+        public void k(LifecycleOwner source, Lifecycle.a event) {
             Intrinsics.checkNotNullParameter(source, "source");
             Intrinsics.checkNotNullParameter(event, "event");
             if (event == Lifecycle.a.ON_START) {
-                this.f948i = this.f949o.i(this.f947e);
+                this.f1277i = this.f1278o.i(this.f1276e);
             } else if (event == Lifecycle.a.ON_STOP) {
-                Cancellable cancellable = this.f948i;
+                Cancellable cancellable = this.f1277i;
                 if (cancellable != null) {
                     cancellable.cancel();
                 }
@@ -288,30 +288,30 @@ public final class OnBackPressedDispatcher {
     public final class i implements Cancellable {
 
         /* renamed from: d  reason: collision with root package name */
-        private final OnBackPressedCallback f950d;
+        private final OnBackPressedCallback f1279d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ OnBackPressedDispatcher f951e;
+        final /* synthetic */ OnBackPressedDispatcher f1280e;
 
         public i(OnBackPressedDispatcher onBackPressedDispatcher, OnBackPressedCallback onBackPressedCallback) {
             Intrinsics.checkNotNullParameter(onBackPressedCallback, "onBackPressedCallback");
-            this.f951e = onBackPressedDispatcher;
-            this.f950d = onBackPressedCallback;
+            this.f1280e = onBackPressedDispatcher;
+            this.f1279d = onBackPressedCallback;
         }
 
         @Override // androidx.activity.Cancellable
         public void cancel() {
-            this.f951e.f929c.remove(this.f950d);
-            if (Intrinsics.areEqual(this.f951e.f930d, this.f950d)) {
-                this.f950d.handleOnBackCancelled();
-                this.f951e.f930d = null;
+            this.f1280e.f1258c.remove(this.f1279d);
+            if (Intrinsics.areEqual(this.f1280e.f1259d, this.f1279d)) {
+                this.f1279d.handleOnBackCancelled();
+                this.f1280e.f1259d = null;
             }
-            this.f950d.removeCancellable(this);
-            Function0<Unit> enabledChangedCallback$activity_release = this.f950d.getEnabledChangedCallback$activity_release();
+            this.f1279d.removeCancellable(this);
+            Function0<Unit> enabledChangedCallback$activity_release = this.f1279d.getEnabledChangedCallback$activity_release();
             if (enabledChangedCallback$activity_release != null) {
                 enabledChangedCallback$activity_release.invoke();
             }
-            this.f950d.setEnabledChangedCallback$activity_release(null);
+            this.f1279d.setEnabledChangedCallback$activity_release(null);
         }
     }
 
@@ -325,7 +325,7 @@ public final class OnBackPressedDispatcher {
         @Override // kotlin.jvm.functions.Function0
         public /* bridge */ /* synthetic */ Object invoke() {
             m4invoke();
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
 
         /* renamed from: invoke  reason: collision with other method in class */
@@ -344,7 +344,7 @@ public final class OnBackPressedDispatcher {
         @Override // kotlin.jvm.functions.Function0
         public /* bridge */ /* synthetic */ Object invoke() {
             m5invoke();
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
 
         /* renamed from: invoke  reason: collision with other method in class */
@@ -355,17 +355,17 @@ public final class OnBackPressedDispatcher {
 
     public OnBackPressedDispatcher(Runnable runnable, Consumer consumer) {
         OnBackInvokedCallback b10;
-        this.f927a = runnable;
-        this.f928b = consumer;
-        this.f929c = new ArrayDeque();
+        this.f1256a = runnable;
+        this.f1257b = consumer;
+        this.f1258c = new ArrayDeque();
         int i10 = Build.VERSION.SDK_INT;
         if (i10 >= 33) {
             if (i10 >= 34) {
-                b10 = g.f941a.a(new a(), new b(), new c(), new d());
+                b10 = g.f1270a.a(new a(), new b(), new c(), new d());
             } else {
-                b10 = f.f940a.b(new e());
+                b10 = f.f1269a.b(new e());
             }
-            this.f931e = b10;
+            this.f1260e = b10;
         }
     }
 
@@ -376,9 +376,9 @@ public final class OnBackPressedDispatcher {
     /* JADX WARN: Type inference failed for: r2v4, types: [java.lang.Object] */
     public final void k() {
         ?? r22;
-        OnBackPressedCallback onBackPressedCallback = this.f930d;
+        OnBackPressedCallback onBackPressedCallback = this.f1259d;
         if (onBackPressedCallback == null) {
-            ArrayDeque arrayDeque = this.f929c;
+            ArrayDeque arrayDeque = this.f1258c;
             ListIterator listIterator = arrayDeque.listIterator(arrayDeque.size());
             while (true) {
                 if (listIterator.hasPrevious()) {
@@ -393,7 +393,7 @@ public final class OnBackPressedDispatcher {
             }
             onBackPressedCallback = r22;
         }
-        this.f930d = null;
+        this.f1259d = null;
         if (onBackPressedCallback != null) {
             onBackPressedCallback.handleOnBackCancelled();
         }
@@ -406,9 +406,9 @@ public final class OnBackPressedDispatcher {
     /* JADX WARN: Type inference failed for: r1v4, types: [java.lang.Object] */
     public final void m(BackEventCompat backEventCompat) {
         ?? r12;
-        OnBackPressedCallback onBackPressedCallback = this.f930d;
+        OnBackPressedCallback onBackPressedCallback = this.f1259d;
         if (onBackPressedCallback == null) {
-            ArrayDeque arrayDeque = this.f929c;
+            ArrayDeque arrayDeque = this.f1258c;
             ListIterator listIterator = arrayDeque.listIterator(arrayDeque.size());
             while (true) {
                 if (listIterator.hasPrevious()) {
@@ -431,7 +431,7 @@ public final class OnBackPressedDispatcher {
     /* JADX INFO: Access modifiers changed from: private */
     public final void n(BackEventCompat backEventCompat) {
         Object obj;
-        ArrayDeque arrayDeque = this.f929c;
+        ArrayDeque arrayDeque = this.f1258c;
         ListIterator<E> listIterator = arrayDeque.listIterator(arrayDeque.size());
         while (true) {
             if (listIterator.hasPrevious()) {
@@ -445,33 +445,33 @@ public final class OnBackPressedDispatcher {
             }
         }
         OnBackPressedCallback onBackPressedCallback = (OnBackPressedCallback) obj;
-        if (this.f930d != null) {
+        if (this.f1259d != null) {
             k();
         }
-        this.f930d = onBackPressedCallback;
+        this.f1259d = onBackPressedCallback;
         if (onBackPressedCallback != null) {
             onBackPressedCallback.handleOnBackStarted(backEventCompat);
         }
     }
 
     private final void p(boolean z10) {
-        OnBackInvokedDispatcher onBackInvokedDispatcher = this.f932f;
-        OnBackInvokedCallback onBackInvokedCallback = this.f931e;
+        OnBackInvokedDispatcher onBackInvokedDispatcher = this.f1261f;
+        OnBackInvokedCallback onBackInvokedCallback = this.f1260e;
         if (onBackInvokedDispatcher != null && onBackInvokedCallback != null) {
-            if (z10 && !this.f933g) {
-                f.f940a.d(onBackInvokedDispatcher, 0, onBackInvokedCallback);
-                this.f933g = true;
-            } else if (!z10 && this.f933g) {
-                f.f940a.e(onBackInvokedDispatcher, onBackInvokedCallback);
-                this.f933g = false;
+            if (z10 && !this.f1262g) {
+                f.f1269a.d(onBackInvokedDispatcher, 0, onBackInvokedCallback);
+                this.f1262g = true;
+            } else if (!z10 && this.f1262g) {
+                f.f1269a.e(onBackInvokedDispatcher, onBackInvokedCallback);
+                this.f1262g = false;
             }
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void q() {
-        boolean z10 = this.f934h;
-        ArrayDeque arrayDeque = this.f929c;
+        boolean z10 = this.f1263h;
+        ArrayDeque arrayDeque = this.f1258c;
         boolean z11 = false;
         if (arrayDeque == null || !arrayDeque.isEmpty()) {
             Iterator<E> it = arrayDeque.iterator();
@@ -484,9 +484,9 @@ public final class OnBackPressedDispatcher {
                 }
             }
         }
-        this.f934h = z11;
+        this.f1263h = z11;
         if (z11 != z10) {
-            Consumer consumer = this.f928b;
+            Consumer consumer = this.f1257b;
             if (consumer != null) {
                 consumer.accept(Boolean.valueOf(z11));
             }
@@ -500,7 +500,7 @@ public final class OnBackPressedDispatcher {
         Intrinsics.checkNotNullParameter(owner, "owner");
         Intrinsics.checkNotNullParameter(onBackPressedCallback, "onBackPressedCallback");
         Lifecycle lifecycle = owner.getLifecycle();
-        if (lifecycle.b() == Lifecycle.State.f4517d) {
+        if (lifecycle.b() == Lifecycle.State.f4846d) {
             return;
         }
         onBackPressedCallback.addCancellable(new h(this, lifecycle, onBackPressedCallback));
@@ -510,7 +510,7 @@ public final class OnBackPressedDispatcher {
 
     public final Cancellable i(OnBackPressedCallback onBackPressedCallback) {
         Intrinsics.checkNotNullParameter(onBackPressedCallback, "onBackPressedCallback");
-        this.f929c.add(onBackPressedCallback);
+        this.f1258c.add(onBackPressedCallback);
         i iVar = new i(this, onBackPressedCallback);
         onBackPressedCallback.addCancellable(iVar);
         q();
@@ -519,7 +519,7 @@ public final class OnBackPressedDispatcher {
     }
 
     public final boolean j() {
-        return this.f934h;
+        return this.f1263h;
     }
 
     /* JADX WARN: Multi-variable type inference failed */
@@ -528,9 +528,9 @@ public final class OnBackPressedDispatcher {
     /* JADX WARN: Type inference failed for: r2v4, types: [java.lang.Object] */
     public final void l() {
         ?? r22;
-        OnBackPressedCallback onBackPressedCallback = this.f930d;
+        OnBackPressedCallback onBackPressedCallback = this.f1259d;
         if (onBackPressedCallback == null) {
-            ArrayDeque arrayDeque = this.f929c;
+            ArrayDeque arrayDeque = this.f1258c;
             ListIterator listIterator = arrayDeque.listIterator(arrayDeque.size());
             while (true) {
                 if (listIterator.hasPrevious()) {
@@ -545,12 +545,12 @@ public final class OnBackPressedDispatcher {
             }
             onBackPressedCallback = r22;
         }
-        this.f930d = null;
+        this.f1259d = null;
         if (onBackPressedCallback != null) {
             onBackPressedCallback.handleOnBackPressed();
             return;
         }
-        Runnable runnable = this.f927a;
+        Runnable runnable = this.f1256a;
         if (runnable != null) {
             runnable.run();
         }
@@ -558,8 +558,8 @@ public final class OnBackPressedDispatcher {
 
     public final void o(OnBackInvokedDispatcher invoker) {
         Intrinsics.checkNotNullParameter(invoker, "invoker");
-        this.f932f = invoker;
-        p(this.f934h);
+        this.f1261f = invoker;
+        p(this.f1263h);
     }
 
     public OnBackPressedDispatcher(Runnable runnable) {

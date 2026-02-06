@@ -17,12 +17,12 @@ public interface a extends IInterface {
         protected boolean e(int i10, Parcel parcel, Parcel parcel2, int i11) {
             if (i10 == 1) {
                 f(parcel);
-                e0((Status) eg.d.a(parcel, Status.CREATOR), (af.c) eg.d.a(parcel, af.c.CREATOR));
+                f0((Status) eg.d.a(parcel, Status.CREATOR), (af.c) eg.d.a(parcel, af.c.CREATOR));
                 return true;
             }
             return false;
         }
     }
 
-    void e0(Status status, af.c cVar);
+    void f0(Status status, af.c cVar);
 }

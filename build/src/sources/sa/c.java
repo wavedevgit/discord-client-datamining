@@ -3,19 +3,19 @@ package sa;
 public class c extends h {
 
     /* renamed from: o  reason: collision with root package name */
-    private ga.e f49492o;
+    private ga.e f49827o;
 
     /* renamed from: p  reason: collision with root package name */
-    private boolean f49493p;
+    private boolean f49828p;
 
     public c(ga.e eVar, boolean z10) {
-        this.f49492o = eVar;
-        this.f49493p = z10;
+        this.f49827o = eVar;
+        this.f49828p = z10;
     }
 
     public synchronized ga.c F0() {
         ga.c d10;
-        ga.e eVar = this.f49492o;
+        ga.e eVar = this.f49827o;
         if (eVar == null) {
             d10 = null;
         } else {
@@ -25,18 +25,18 @@ public class c extends h {
     }
 
     public synchronized ga.e I0() {
-        return this.f49492o;
+        return this.f49827o;
     }
 
     @Override // sa.e, java.io.Closeable, java.lang.AutoCloseable
     public void close() {
         synchronized (this) {
             try {
-                ga.e eVar = this.f49492o;
+                ga.e eVar = this.f49827o;
                 if (eVar == null) {
                     return;
                 }
-                this.f49492o = null;
+                this.f49827o = null;
                 eVar.a();
             } catch (Throwable th2) {
                 throw th2;
@@ -47,7 +47,7 @@ public class c extends h {
     @Override // sa.e, com.facebook.imagepipeline.image.ImageInfo
     public synchronized int getHeight() {
         int height;
-        ga.e eVar = this.f49492o;
+        ga.e eVar = this.f49827o;
         if (eVar == null) {
             height = 0;
         } else {
@@ -59,7 +59,7 @@ public class c extends h {
     @Override // sa.e, com.facebook.imagepipeline.image.ImageInfo
     public synchronized int getWidth() {
         int width;
-        ga.e eVar = this.f49492o;
+        ga.e eVar = this.f49827o;
         if (eVar == null) {
             width = 0;
         } else {
@@ -71,7 +71,7 @@ public class c extends h {
     @Override // sa.e
     public synchronized boolean isClosed() {
         boolean z10;
-        if (this.f49492o == null) {
+        if (this.f49827o == null) {
             z10 = true;
         } else {
             z10 = false;
@@ -81,18 +81,18 @@ public class c extends h {
 
     @Override // sa.a, sa.e
     public boolean l2() {
-        return this.f49493p;
+        return this.f49828p;
     }
 
     @Override // sa.e
-    public synchronized int u() {
-        int u10;
-        ga.e eVar = this.f49492o;
+    public synchronized int w() {
+        int w10;
+        ga.e eVar = this.f49827o;
         if (eVar == null) {
-            u10 = 0;
+            w10 = 0;
         } else {
-            u10 = eVar.d().u();
+            w10 = eVar.d().w();
         }
-        return u10;
+        return w10;
     }
 }

@@ -2,7 +2,7 @@ package ne;
 
 import android.os.SystemClock;
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
-import com.google.android.exoplayer2.upstream.i;
+import com.google.android.exoplayer2.upstream.j;
 import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
@@ -13,19 +13,19 @@ import java.util.ConcurrentModificationException;
 public abstract class m0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Object f39598a = new Object();
+    private static final Object f38953a = new Object();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Object f39599b = new Object();
+    private static final Object f38954b = new Object();
 
     /* renamed from: c  reason: collision with root package name */
-    private static boolean f39600c = false;
+    private static boolean f38955c = false;
 
     /* renamed from: d  reason: collision with root package name */
-    private static long f39601d = 0;
+    private static long f38956d = 0;
 
     /* renamed from: e  reason: collision with root package name */
-    private static String f39602e = "time.android.com";
+    private static String f38957e = "time.android.com";
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public interface b {
@@ -56,10 +56,10 @@ public abstract class m0 {
 
     public static long h() {
         long j10;
-        synchronized (f39599b) {
+        synchronized (f38954b) {
             try {
-                if (f39600c) {
-                    j10 = f39601d;
+                if (f38955c) {
+                    j10 = f38956d;
                 } else {
                     j10 = -9223372036854775807L;
                 }
@@ -72,13 +72,13 @@ public abstract class m0 {
 
     public static String i() {
         String str;
-        synchronized (f39599b) {
-            str = f39602e;
+        synchronized (f38954b) {
+            str = f38957e;
         }
         return str;
     }
 
-    public static void j(com.google.android.exoplayer2.upstream.i iVar, b bVar) {
+    public static void j(com.google.android.exoplayer2.upstream.j jVar, b bVar) {
         if (k()) {
             if (bVar != null) {
                 bVar.b();
@@ -86,16 +86,16 @@ public abstract class m0 {
             }
             return;
         }
-        if (iVar == null) {
-            iVar = new com.google.android.exoplayer2.upstream.i("SntpClient");
+        if (jVar == null) {
+            jVar = new com.google.android.exoplayer2.upstream.j("SntpClient");
         }
-        iVar.n(new d(), new c(bVar), 1);
+        jVar.n(new d(), new c(bVar), 1);
     }
 
     public static boolean k() {
         boolean z10;
-        synchronized (f39599b) {
-            z10 = f39600c;
+        synchronized (f38954b) {
+            z10 = f38955c;
         }
         return z10;
     }
@@ -182,63 +182,63 @@ public abstract class m0 {
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    private static final class d implements i.e {
+    private static final class d implements j.e {
         private d() {
         }
 
-        @Override // com.google.android.exoplayer2.upstream.i.e
+        @Override // com.google.android.exoplayer2.upstream.j.e
         public void b() {
-            synchronized (m0.f39598a) {
-                synchronized (m0.f39599b) {
-                    if (m0.f39600c) {
+            synchronized (m0.f38953a) {
+                synchronized (m0.f38954b) {
+                    if (m0.f38955c) {
                         return;
                     }
                     long e10 = m0.e();
-                    synchronized (m0.f39599b) {
-                        long unused = m0.f39601d = e10;
-                        boolean unused2 = m0.f39600c = true;
+                    synchronized (m0.f38954b) {
+                        long unused = m0.f38956d = e10;
+                        boolean unused2 = m0.f38955c = true;
                     }
                 }
             }
         }
 
-        @Override // com.google.android.exoplayer2.upstream.i.e
+        @Override // com.google.android.exoplayer2.upstream.j.e
         public void c() {
         }
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    private static final class c implements i.b {
+    private static final class c implements j.b {
 
         /* renamed from: d  reason: collision with root package name */
-        private final b f39603d;
+        private final b f38958d;
 
         public c(b bVar) {
-            this.f39603d = bVar;
+            this.f38958d = bVar;
         }
 
-        @Override // com.google.android.exoplayer2.upstream.i.b
-        public void j(i.e eVar, long j10, long j11) {
-            if (this.f39603d != null) {
+        @Override // com.google.android.exoplayer2.upstream.j.b
+        public void j(j.e eVar, long j10, long j11) {
+            if (this.f38958d != null) {
                 if (!m0.k()) {
-                    this.f39603d.a(new IOException(new ConcurrentModificationException()));
+                    this.f38958d.a(new IOException(new ConcurrentModificationException()));
                 } else {
-                    this.f39603d.b();
+                    this.f38958d.b();
                 }
             }
         }
 
-        @Override // com.google.android.exoplayer2.upstream.i.b
-        public i.c n(i.e eVar, long j10, long j11, IOException iOException, int i10) {
-            b bVar = this.f39603d;
+        @Override // com.google.android.exoplayer2.upstream.j.b
+        public j.c n(j.e eVar, long j10, long j11, IOException iOException, int i10) {
+            b bVar = this.f38958d;
             if (bVar != null) {
                 bVar.a(iOException);
             }
-            return com.google.android.exoplayer2.upstream.i.f13467f;
+            return com.google.android.exoplayer2.upstream.j.f13428f;
         }
 
-        @Override // com.google.android.exoplayer2.upstream.i.b
-        public void i(i.e eVar, long j10, long j11, boolean z10) {
+        @Override // com.google.android.exoplayer2.upstream.j.b
+        public void i(j.e eVar, long j10, long j11, boolean z10) {
         }
     }
 }

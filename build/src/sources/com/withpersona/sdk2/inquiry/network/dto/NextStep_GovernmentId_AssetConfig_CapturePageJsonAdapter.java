@@ -45,7 +45,7 @@ public final class NextStep_GovernmentId_AssetConfig_CapturePageJsonAdapter exte
     @NotNull
     public NextStep.GovernmentId.AssetConfig.CapturePage fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         int i10 = -1;
         RemoteImage remoteImage = null;
         RemoteImage remoteImage2 = null;
@@ -56,10 +56,10 @@ public final class NextStep_GovernmentId_AssetConfig_CapturePageJsonAdapter exte
         RemoteImage remoteImage7 = null;
         RemoteImage remoteImage8 = null;
         while (reader.hasNext()) {
-            switch (reader.W(this.options)) {
+            switch (reader.J(this.options)) {
                 case -1:
                     reader.E0();
-                    reader.P();
+                    reader.S();
                     break;
                 case 0:
                     remoteImage = (RemoteImage) this.nullableRemoteImageAdapter.fromJson(reader);
@@ -95,7 +95,7 @@ public final class NextStep_GovernmentId_AssetConfig_CapturePageJsonAdapter exte
                     break;
             }
         }
-        reader.z();
+        reader.D();
         if (i10 == -256) {
             RemoteImage remoteImage9 = remoteImage8;
             RemoteImage remoteImage10 = remoteImage7;
@@ -114,7 +114,7 @@ public final class NextStep_GovernmentId_AssetConfig_CapturePageJsonAdapter exte
         RemoteImage remoteImage21 = remoteImage;
         Constructor<NextStep.GovernmentId.AssetConfig.CapturePage> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = NextStep.GovernmentId.AssetConfig.CapturePage.class.getDeclaredConstructor(RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, Integer.TYPE, ym.c.f54853c);
+            constructor = NextStep.GovernmentId.AssetConfig.CapturePage.class.getDeclaredConstructor(RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, Integer.TYPE, an.c.f1164c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -128,23 +128,23 @@ public final class NextStep_GovernmentId_AssetConfig_CapturePageJsonAdapter exte
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (capturePage != null) {
             writer.k();
-            writer.W("idFrontPictograph");
+            writer.J("idFrontPictograph");
             this.nullableRemoteImageAdapter.toJson(writer, capturePage.getIdFrontPictograph());
-            writer.W("idBackPictograph");
+            writer.J("idBackPictograph");
             this.nullableRemoteImageAdapter.toJson(writer, capturePage.getIdBackPictograph());
-            writer.W("barcodePdf417Pictograph");
+            writer.J("barcodePdf417Pictograph");
             this.nullableRemoteImageAdapter.toJson(writer, capturePage.getBarcodePdf417Pictograph());
-            writer.W("passportFrontPictograph");
+            writer.J("passportFrontPictograph");
             this.nullableRemoteImageAdapter.toJson(writer, capturePage.getPassportFrontPictograph());
-            writer.W("passportSignaturePictograph");
+            writer.J("passportSignaturePictograph");
             this.nullableRemoteImageAdapter.toJson(writer, capturePage.getPassportSignaturePictograph());
-            writer.W("idFrontHelpModalPictograph");
+            writer.J("idFrontHelpModalPictograph");
             this.nullableRemoteImageAdapter.toJson(writer, capturePage.getIdFrontHelpModalPictograph());
-            writer.W("idBackHelpModalPictograph");
+            writer.J("idBackHelpModalPictograph");
             this.nullableRemoteImageAdapter.toJson(writer, capturePage.getIdBackHelpModalPictograph());
-            writer.W("barcodeHelpModalPictograph");
+            writer.J("barcodeHelpModalPictograph");
             this.nullableRemoteImageAdapter.toJson(writer, capturePage.getBarcodeHelpModalPictograph());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

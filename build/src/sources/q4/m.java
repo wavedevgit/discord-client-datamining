@@ -8,7 +8,7 @@ import com.facebook.react.uimanager.ViewProps;
 public abstract class m {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final String f47409a = k4.m.i("PackageManagerHelper");
+    private static final String f46457a = k4.m.i("PackageManagerHelper");
 
     private static int a(Context context, String str) {
         return context.getPackageManager().getComponentEnabledSetting(new ComponentName(context, str));
@@ -30,7 +30,7 @@ public abstract class m {
         String str2 = "disabled";
         try {
             if (z10 == b(a(context, cls.getName()), false)) {
-                k4.m.e().a(f47409a, "Skipping component enablement for " + cls.getName());
+                k4.m.e().a(f46457a, "Skipping component enablement for " + cls.getName());
                 return;
             }
             PackageManager packageManager = context.getPackageManager();
@@ -42,7 +42,7 @@ public abstract class m {
             }
             packageManager.setComponentEnabledSetting(componentName, i10, 1);
             k4.m e10 = k4.m.e();
-            String str3 = f47409a;
+            String str3 = f46457a;
             StringBuilder sb2 = new StringBuilder();
             sb2.append(cls.getName());
             sb2.append(" ");
@@ -55,7 +55,7 @@ public abstract class m {
             e10.a(str3, sb2.toString());
         } catch (Exception e11) {
             k4.m e12 = k4.m.e();
-            String str4 = f47409a;
+            String str4 = f46457a;
             StringBuilder sb3 = new StringBuilder();
             sb3.append(cls.getName());
             sb3.append("could not be ");

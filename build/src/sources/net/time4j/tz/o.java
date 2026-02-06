@@ -3,5 +3,5 @@ package net.time4j.tz;
 public interface o {
     o a(g gVar);
 
-    long b(nt.a aVar, nt.g gVar, l lVar);
+    long b(pt.a aVar, pt.g gVar, l lVar);
 }

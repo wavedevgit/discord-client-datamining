@@ -1,53 +1,51 @@
 package ji;
+
+import android.util.Log;
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class m {
-    public static int a(int i10, int i11, String str) {
-        String a10;
-        if (i10 >= 0 && i10 < i11) {
-            return i10;
+abstract class m implements h {
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static Object c(ClassLoader classLoader) {
+        return d0.b(classLoader, "pathList", Object.class).a();
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static boolean d(ClassLoader classLoader, File file, File file2, boolean z10, l lVar, String str, k kVar) {
+        ArrayList arrayList = new ArrayList();
+        Object c10 = c(classLoader);
+        b0 a10 = d0.a(c10, "dexElements", Object.class);
+        List<Object> asList = Arrays.asList((Object[]) a10.a());
+        ArrayList arrayList2 = new ArrayList();
+        for (Object obj : asList) {
+            arrayList2.add((File) d0.b(obj, str, File.class).a());
         }
-        if (i10 >= 0) {
-            if (i11 < 0) {
-                throw new IllegalArgumentException("negative size: " + i11);
+        if (arrayList2.contains(file2)) {
+            return true;
+        }
+        if (!z10 && !kVar.a(c10, file2, file)) {
+            Log.w("SplitCompat", "Should be optimized ".concat(String.valueOf(file2.getPath())));
+            return false;
+        }
+        a10.d(Arrays.asList(lVar.a(c10, new ArrayList(Collections.singleton(file2)), file, arrayList)));
+        if (arrayList.isEmpty()) {
+            return true;
+        }
+        a0 a0Var = new a0("DexPathList.makeDexElement failed");
+        int size = arrayList.size();
+        for (int i10 = 0; i10 < size; i10++) {
+            IOException iOException = (IOException) arrayList.get(i10);
+            Log.e("SplitCompat", "DexPathList.makeDexElement failed", iOException);
+            try {
+                Throwable.class.getDeclaredMethod("addSuppressed", Throwable.class).invoke(a0Var, iOException);
+            } catch (Exception unused) {
             }
-            a10 = n.a("%s (%s) must be less than size (%s)", "index", Integer.valueOf(i10), Integer.valueOf(i11));
-        } else {
-            a10 = n.a("%s (%s) must not be negative", "index", Integer.valueOf(i10));
         }
-        throw new IndexOutOfBoundsException(a10);
-    }
-
-    public static int b(int i10, int i11, String str) {
-        if (i10 >= 0 && i10 <= i11) {
-            return i10;
-        }
-        throw new IndexOutOfBoundsException(d(i10, i11, "index"));
-    }
-
-    public static void c(int i10, int i11, int i12) {
-        String d10;
-        if (i10 >= 0 && i11 >= i10 && i11 <= i12) {
-            return;
-        }
-        if (i10 >= 0 && i10 <= i12) {
-            if (i11 >= 0 && i11 <= i12) {
-                d10 = n.a("end index (%s) must not be less than start index (%s)", Integer.valueOf(i11), Integer.valueOf(i10));
-            } else {
-                d10 = d(i11, i12, "end index");
-            }
-        } else {
-            d10 = d(i10, i12, "start index");
-        }
-        throw new IndexOutOfBoundsException(d10);
-    }
-
-    private static String d(int i10, int i11, String str) {
-        if (i10 < 0) {
-            return n.a("%s (%s) must not be negative", str, Integer.valueOf(i10));
-        }
-        if (i11 >= 0) {
-            return n.a("%s (%s) must not be greater than size (%s)", str, Integer.valueOf(i10), Integer.valueOf(i11));
-        }
-        throw new IllegalArgumentException("negative size: " + i11);
+        d0.a(c10, "dexElementsSuppressedExceptions", IOException.class).d(arrayList);
+        throw a0Var;
     }
 }

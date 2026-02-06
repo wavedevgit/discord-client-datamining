@@ -6,10 +6,10 @@ import android.view.ViewGroup;
 public class o extends o0 {
 
     /* renamed from: b  reason: collision with root package name */
-    private float f5431b = 3.0f;
+    private float f5760b = 3.0f;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f5432c = 80;
+    private int f5761c = 80;
 
     /* JADX WARN: Code restructure failed: missing block: B:11:0x001d, code lost:
         if (r6.getLayoutDirection() == 1) goto L22;
@@ -30,7 +30,7 @@ public class o extends o0 {
     private int h(android.view.View r6, int r7, int r8, int r9, int r10, int r11, int r12, int r13, int r14) {
         /*
             r5 = this;
-            int r0 = r5.f5432c
+            int r0 = r5.f5761c
             r1 = 8388611(0x800003, float:1.1754948E-38)
             r2 = 1
             r3 = 3
@@ -88,7 +88,7 @@ public class o extends o0 {
     }
 
     private int i(ViewGroup viewGroup) {
-        int i10 = this.f5432c;
+        int i10 = this.f5761c;
         if (i10 != 3 && i10 != 5 && i10 != 8388611 && i10 != 8388613) {
             return viewGroup.getHeight();
         }
@@ -107,7 +107,7 @@ public class o extends o0 {
         if (c0Var3 == null && c0Var2 == null) {
             return 0L;
         }
-        Rect w10 = transition.w();
+        Rect x10 = transition.x();
         if (c0Var2 != null && e(c0Var3) != 0) {
             c0Var3 = c0Var2;
             i10 = 1;
@@ -122,12 +122,12 @@ public class o extends o0 {
         int round2 = iArr[1] + Math.round(viewGroup.getTranslationY());
         int width = viewGroup.getWidth() + round;
         int height = viewGroup.getHeight() + round2;
-        if (w10 != null) {
-            int centerX = w10.centerX();
+        if (x10 != null) {
+            int centerX = x10.centerX();
             i13 = g10;
             viewGroup2 = viewGroup;
             i14 = round2;
-            i12 = w10.centerY();
+            i12 = x10.centerY();
             i11 = centerX;
         } else {
             i11 = (round + width) / 2;
@@ -137,14 +137,14 @@ public class o extends o0 {
             i14 = round2;
         }
         float h10 = h(viewGroup2, f10, i13, i11, i12, round, i14, width, height) / i(viewGroup);
-        long v10 = transition.v();
-        if (v10 < 0) {
-            v10 = 300;
+        long w10 = transition.w();
+        if (w10 < 0) {
+            w10 = 300;
         }
-        return Math.round((((float) (v10 * i10)) / this.f5431b) * h10);
+        return Math.round((((float) (w10 * i10)) / this.f5760b) * h10);
     }
 
     public void j(int i10) {
-        this.f5432c = i10;
+        this.f5761c = i10;
     }
 }

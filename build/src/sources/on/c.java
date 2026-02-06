@@ -1,20 +1,29 @@
 package on;
 
-import java.util.List;
-import kotlin.collections.CollectionsKt;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.ViewParent;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class c extends a {
-    public c() {
-        super(false, 1, null);
+public abstract class c {
+    public static final ViewGroup a(View view) {
+        Intrinsics.checkNotNullParameter(view, "<this>");
+        ViewParent parent = view.getParent();
+        if (parent instanceof ViewGroup) {
+            return (ViewGroup) parent;
+        }
+        return null;
     }
 
-    @Override // com.swmansion.rnscreens.stack.views.ChildrenDrawingOrderStrategy
-    public void a(List drawingOperations) {
-        Intrinsics.checkNotNullParameter(drawingOperations, "drawingOperations");
-        if (!b()) {
-            return;
+    public static final View b(View view) {
+        Intrinsics.checkNotNullParameter(view, "<this>");
+        ViewGroup a10 = a(view);
+        if (a10 != null) {
+            a10.endViewTransition(view);
+            a10.removeView(view);
         }
-        CollectionsKt.X(drawingOperations);
+        view.setVisibility(0);
+        view.setTranslationY(0.0f);
+        return view;
     }
 }

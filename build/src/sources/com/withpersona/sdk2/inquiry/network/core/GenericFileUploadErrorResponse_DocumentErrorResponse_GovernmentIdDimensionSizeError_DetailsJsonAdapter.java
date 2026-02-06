@@ -30,43 +30,43 @@ public final class GenericFileUploadErrorResponse_DocumentErrorResponse_Governme
     @Override // com.squareup.moshi.h
     @NotNull
     public GenericFileUploadErrorResponse.DocumentErrorResponse.GovernmentIdDimensionSizeError.Details fromJson(@NotNull m mVar) {
-        mVar.s();
+        mVar.u();
         Integer num = null;
         Integer num2 = null;
         while (mVar.hasNext()) {
-            int W = mVar.W(this.options);
-            if (W == -1) {
+            int J = mVar.J(this.options);
+            if (J == -1) {
                 mVar.E0();
-                mVar.P();
-            } else if (W == 0) {
+                mVar.S();
+            } else if (J == 0) {
                 num = (Integer) this.intAdapter.fromJson(mVar);
                 if (num == null) {
-                    throw ym.c.x("minDimensionSize", "min_dimension_size", mVar);
+                    throw an.c.x("minDimensionSize", "min_dimension_size", mVar);
                 }
-            } else if (W == 1 && (num2 = (Integer) this.intAdapter.fromJson(mVar)) == null) {
-                throw ym.c.x("maxDimensionSize", "max_dimension_size", mVar);
+            } else if (J == 1 && (num2 = (Integer) this.intAdapter.fromJson(mVar)) == null) {
+                throw an.c.x("maxDimensionSize", "max_dimension_size", mVar);
             }
         }
-        mVar.z();
+        mVar.D();
         if (num != null) {
             int intValue = num.intValue();
             if (num2 != null) {
                 return new GenericFileUploadErrorResponse.DocumentErrorResponse.GovernmentIdDimensionSizeError.Details(intValue, num2.intValue());
             }
-            throw ym.c.o("maxDimensionSize", "max_dimension_size", mVar);
+            throw an.c.o("maxDimensionSize", "max_dimension_size", mVar);
         }
-        throw ym.c.o("minDimensionSize", "min_dimension_size", mVar);
+        throw an.c.o("minDimensionSize", "min_dimension_size", mVar);
     }
 
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t tVar, GenericFileUploadErrorResponse.DocumentErrorResponse.GovernmentIdDimensionSizeError.Details details) {
         if (details != null) {
             tVar.k();
-            tVar.W("min_dimension_size");
+            tVar.J("min_dimension_size");
             this.intAdapter.toJson(tVar, Integer.valueOf(details.getMinDimensionSize()));
-            tVar.W("max_dimension_size");
+            tVar.J("max_dimension_size");
             this.intAdapter.toJson(tVar, Integer.valueOf(details.getMaxDimensionSize()));
-            tVar.E();
+            tVar.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

@@ -1,70 +1,114 @@
 package ht;
 
-import ft.d;
-import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.Reflection;
-import kotlin.reflect.KClass;
-import kotlinx.serialization.DeserializationStrategy;
-import kotlinx.serialization.KSerializer;
-import kotlinx.serialization.descriptors.SerialDescriptor;
-import kotlinx.serialization.encoding.Decoder;
-import kotlinx.serialization.encoding.Encoder;
-import kotlinx.serialization.json.JsonElement;
-import org.jetbrains.annotations.NotNull;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class e implements KSerializer {
-    @NotNull
-    private final KClass baseClass;
-    @NotNull
-    private final SerialDescriptor descriptor;
+public abstract class e extends k {
 
-    public e(KClass baseClass) {
-        Intrinsics.checkNotNullParameter(baseClass, "baseClass");
-        this.baseClass = baseClass;
-        this.descriptor = ft.j.e("JsonContentPolymorphicSerializer<" + baseClass.getSimpleName() + '>', d.b.f23474a, new SerialDescriptor[0], null, 8, null);
-    }
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a extends e {
 
-    private final Void a(KClass kClass, KClass kClass2) {
-        String simpleName = kClass.getSimpleName();
-        if (simpleName == null) {
-            simpleName = String.valueOf(kClass);
+        /* renamed from: a  reason: collision with root package name */
+        public static final a f26470a = new a();
+
+        private a() {
+            super(null);
         }
-        throw new dt.n("Class '" + simpleName + "' is not registered for polymorphic serialization " + ("in the scope of '" + kClass2.getSimpleName() + '\'') + ".\nMark the base class as 'sealed' or register the serializer explicitly.");
     }
 
-    @Override // kotlinx.serialization.DeserializationStrategy
-    @NotNull
-    public final Object deserialize(@NotNull Decoder decoder) {
-        Intrinsics.checkNotNullParameter(decoder, "decoder");
-        f d10 = p.d(decoder);
-        JsonElement g10 = d10.g();
-        DeserializationStrategy selectDeserializer = selectDeserializer(g10);
-        Intrinsics.checkNotNull(selectDeserializer, "null cannot be cast to non-null type kotlinx.serialization.KSerializer<T of kotlinx.serialization.json.JsonContentPolymorphicSerializer>");
-        return d10.d().d((KSerializer) selectDeserializer, g10);
-    }
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class b extends e {
 
-    @Override // kotlinx.serialization.KSerializer, dt.o, kotlinx.serialization.DeserializationStrategy
-    @NotNull
-    public SerialDescriptor getDescriptor() {
-        return this.descriptor;
-    }
+        /* renamed from: a  reason: collision with root package name */
+        public static final b f26471a = new b();
 
-    protected abstract DeserializationStrategy selectDeserializer(JsonElement jsonElement);
-
-    @Override // dt.o
-    public final void serialize(@NotNull Encoder encoder, @NotNull Object value) {
-        Intrinsics.checkNotNullParameter(encoder, "encoder");
-        Intrinsics.checkNotNullParameter(value, "value");
-        KSerializer e10 = encoder.a().e(this.baseClass, value);
-        if (e10 == null) {
-            KSerializer e11 = dt.w.e(Reflection.getOrCreateKotlinClass(value.getClass()));
-            if (e11 != null) {
-                e10 = e11;
-            } else {
-                a(Reflection.getOrCreateKotlinClass(value.getClass()), this.baseClass);
-                throw new or.h();
-            }
+        private b() {
+            super(null);
         }
-        ((KSerializer) e10).serialize(encoder, value);
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class c extends e {
+
+        /* renamed from: a  reason: collision with root package name */
+        public static final c f26472a = new c();
+
+        private c() {
+            super(null);
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class d extends e {
+
+        /* renamed from: a  reason: collision with root package name */
+        public static final d f26473a = new d();
+
+        private d() {
+            super(null);
+        }
+    }
+
+    /* renamed from: ht.e$e  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class C0372e extends e {
+
+        /* renamed from: a  reason: collision with root package name */
+        public static final C0372e f26474a = new C0372e();
+
+        private C0372e() {
+            super(null);
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class f extends e {
+
+        /* renamed from: a  reason: collision with root package name */
+        public static final f f26475a = new f();
+
+        private f() {
+            super(null);
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class g extends e {
+
+        /* renamed from: a  reason: collision with root package name */
+        public static final g f26476a = new g();
+
+        private g() {
+            super(null);
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class h extends e {
+
+        /* renamed from: a  reason: collision with root package name */
+        public static final h f26477a = new h();
+
+        private h() {
+            super(null);
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class i extends e {
+
+        /* renamed from: a  reason: collision with root package name */
+        public static final i f26478a = new i();
+
+        private i() {
+            super(null);
+        }
+    }
+
+    public /* synthetic */ e(DefaultConstructorMarker defaultConstructorMarker) {
+        this();
+    }
+
+    private e() {
+        super(null);
     }
 }

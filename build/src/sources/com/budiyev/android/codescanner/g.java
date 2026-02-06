@@ -6,86 +6,86 @@ import android.hardware.Camera;
 public final class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Camera f8459a;
+    private final Camera f8358a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Camera.CameraInfo f8460b;
+    private final Camera.CameraInfo f8359b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final f f8461c;
+    private final f f8360c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final i f8462d;
+    private final i f8361d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final i f8463e;
+    private final i f8362e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final i f8464f;
+    private final i f8363f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final int f8465g;
+    private final int f8364g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final boolean f8466h;
+    private final boolean f8365h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final boolean f8467i;
+    private final boolean f8366i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final boolean f8468j;
+    private final boolean f8367j;
 
     public g(Camera camera, Camera.CameraInfo cameraInfo, f fVar, i iVar, i iVar2, i iVar3, int i10, boolean z10, boolean z11) {
-        this.f8459a = camera;
-        this.f8460b = cameraInfo;
-        this.f8461c = fVar;
-        this.f8462d = iVar;
-        this.f8463e = iVar2;
-        this.f8464f = iVar3;
-        this.f8465g = i10;
-        this.f8466h = cameraInfo.facing == 1;
-        this.f8467i = z10;
-        this.f8468j = z11;
+        this.f8358a = camera;
+        this.f8359b = cameraInfo;
+        this.f8360c = fVar;
+        this.f8361d = iVar;
+        this.f8362e = iVar2;
+        this.f8363f = iVar3;
+        this.f8364g = i10;
+        this.f8365h = cameraInfo.facing == 1;
+        this.f8366i = z10;
+        this.f8367j = z11;
     }
 
     public Camera a() {
-        return this.f8459a;
+        return this.f8358a;
     }
 
     public f b() {
-        return this.f8461c;
+        return this.f8360c;
     }
 
     public int c() {
-        return this.f8465g;
+        return this.f8364g;
     }
 
     public i d() {
-        return this.f8462d;
+        return this.f8361d;
     }
 
     public i e() {
-        return this.f8463e;
+        return this.f8362e;
     }
 
     public i f() {
-        return this.f8464f;
+        return this.f8363f;
     }
 
     public boolean g() {
-        return this.f8467i;
+        return this.f8366i;
     }
 
     public boolean h() {
-        return this.f8468j;
+        return this.f8367j;
     }
 
     public void i() {
-        this.f8459a.release();
-        this.f8461c.l();
+        this.f8358a.release();
+        this.f8360c.l();
     }
 
     public boolean j() {
-        return this.f8466h;
+        return this.f8365h;
     }
 }

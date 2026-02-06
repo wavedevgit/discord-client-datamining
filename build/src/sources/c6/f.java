@@ -8,52 +8,52 @@ import java.util.List;
 public final class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f7406a;
+    private final int f7251a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f7407b;
+    private final List f7252b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f7408c;
+    private final int f7253c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final InputStream f7409d;
+    private final InputStream f7254d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final byte[] f7410e;
+    private final byte[] f7255e;
 
     public f(int i10, List list) {
         this(i10, list, -1, null);
     }
 
     public final InputStream a() {
-        InputStream inputStream = this.f7409d;
+        InputStream inputStream = this.f7254d;
         if (inputStream != null) {
             return inputStream;
         }
-        if (this.f7410e != null) {
-            return new ByteArrayInputStream(this.f7410e);
+        if (this.f7255e != null) {
+            return new ByteArrayInputStream(this.f7255e);
         }
         return null;
     }
 
     public final int b() {
-        return this.f7408c;
+        return this.f7253c;
     }
 
     public final List c() {
-        return Collections.unmodifiableList(this.f7407b);
+        return Collections.unmodifiableList(this.f7252b);
     }
 
     public final int d() {
-        return this.f7406a;
+        return this.f7251a;
     }
 
     public f(int i10, List list, int i11, InputStream inputStream) {
-        this.f7406a = i10;
-        this.f7407b = list;
-        this.f7408c = i11;
-        this.f7409d = inputStream;
-        this.f7410e = null;
+        this.f7251a = i10;
+        this.f7252b = list;
+        this.f7253c = i11;
+        this.f7254d = inputStream;
+        this.f7255e = null;
     }
 }

@@ -1,30 +1,32 @@
 package vv;
 
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
-import java.util.Map;
-import kotlin.collections.CollectionsKt;
-import kotlin.jvm.internal.Intrinsics;
+import java.util.concurrent.Executor;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class c {
-    public static final Map a(List list) {
-        Intrinsics.checkNotNullParameter(list, "<this>");
-        Object b10 = b(list);
-        if (!a.f(b10)) {
-            b10 = null;
+class c {
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    static final class a extends c {
+        @Override // vv.c
+        List a(Executor executor) {
+            return Arrays.asList(new g(), new i(executor));
         }
-        if (!(b10 instanceof Map)) {
-            return null;
+
+        @Override // vv.c
+        List b() {
+            return Collections.singletonList(new t());
         }
-        return (Map) b10;
     }
 
-    public static final Object b(List list) {
-        Intrinsics.checkNotNullParameter(list, "<this>");
-        return CollectionsKt.q0(list, 1);
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public List a(Executor executor) {
+        return Collections.singletonList(new i(executor));
     }
 
-    public static final Object c(List list) {
-        Intrinsics.checkNotNullParameter(list, "<this>");
-        return CollectionsKt.q0(list, 2);
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public List b() {
+        return Collections.EMPTY_LIST;
     }
 }

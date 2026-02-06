@@ -22,22 +22,22 @@ import org.jetbrains.annotations.NotNull;
 public abstract class DeserializedPackageFragmentImpl extends DeserializedPackageFragment {
 
     /* renamed from: s  reason: collision with root package name */
-    private final BinaryVersion f34306s;
+    private final BinaryVersion f34326s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final DeserializedContainerSource f34307t;
+    private final DeserializedContainerSource f34327t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final NameResolverImpl f34308u;
+    private final NameResolverImpl f34328u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final ProtoBasedClassDataFinder f34309v;
+    private final ProtoBasedClassDataFinder f34329v;
 
     /* renamed from: w  reason: collision with root package name */
-    private ProtoBuf.PackageFragment f34310w;
+    private ProtoBuf.PackageFragment f34330w;
 
     /* renamed from: x  reason: collision with root package name */
-    private MemberScope f34311x;
+    private MemberScope f34331x;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public DeserializedPackageFragmentImpl(@NotNull FqName fqName, @NotNull StorageManager storageManager, @NotNull ModuleDescriptor module, @NotNull ProtoBuf.PackageFragment proto, @NotNull BinaryVersion metadataVersion, DeserializedContainerSource deserializedContainerSource) {
@@ -47,22 +47,22 @@ public abstract class DeserializedPackageFragmentImpl extends DeserializedPackag
         Intrinsics.checkNotNullParameter(module, "module");
         Intrinsics.checkNotNullParameter(proto, "proto");
         Intrinsics.checkNotNullParameter(metadataVersion, "metadataVersion");
-        this.f34306s = metadataVersion;
-        this.f34307t = deserializedContainerSource;
+        this.f34326s = metadataVersion;
+        this.f34327t = deserializedContainerSource;
         ProtoBuf.StringTable strings = proto.getStrings();
         Intrinsics.checkNotNullExpressionValue(strings, "getStrings(...)");
         ProtoBuf.QualifiedNameTable qualifiedNames = proto.getQualifiedNames();
         Intrinsics.checkNotNullExpressionValue(qualifiedNames, "getQualifiedNames(...)");
         NameResolverImpl nameResolverImpl = new NameResolverImpl(strings, qualifiedNames);
-        this.f34308u = nameResolverImpl;
-        this.f34309v = new ProtoBasedClassDataFinder(proto, nameResolverImpl, metadataVersion, new c(this));
-        this.f34310w = proto;
+        this.f34328u = nameResolverImpl;
+        this.f34329v = new ProtoBasedClassDataFinder(proto, nameResolverImpl, metadataVersion, new c(this));
+        this.f34330w = proto;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final SourceElement d(DeserializedPackageFragmentImpl deserializedPackageFragmentImpl, ClassId it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        DeserializedContainerSource deserializedContainerSource = deserializedPackageFragmentImpl.f34307t;
+        DeserializedContainerSource deserializedContainerSource = deserializedPackageFragmentImpl.f34327t;
         if (deserializedContainerSource != null) {
             return deserializedContainerSource;
         }
@@ -90,7 +90,7 @@ public abstract class DeserializedPackageFragmentImpl extends DeserializedPackag
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.PackageFragmentDescriptor
     @NotNull
     public MemberScope getMemberScope() {
-        MemberScope memberScope = this.f34311x;
+        MemberScope memberScope = this.f34331x;
         if (memberScope == null) {
             Intrinsics.throwUninitializedPropertyAccessException("_memberScope");
             return null;
@@ -101,15 +101,15 @@ public abstract class DeserializedPackageFragmentImpl extends DeserializedPackag
     @Override // kotlin.reflect.jvm.internal.impl.serialization.deserialization.DeserializedPackageFragment
     public void initialize(@NotNull DeserializationComponents components) {
         Intrinsics.checkNotNullParameter(components, "components");
-        ProtoBuf.PackageFragment packageFragment = this.f34310w;
+        ProtoBuf.PackageFragment packageFragment = this.f34330w;
         if (packageFragment != null) {
-            this.f34310w = null;
+            this.f34330w = null;
             ProtoBuf.Package r42 = packageFragment.getPackage();
             Intrinsics.checkNotNullExpressionValue(r42, "getPackage(...)");
-            NameResolverImpl nameResolverImpl = this.f34308u;
-            BinaryVersion binaryVersion = this.f34306s;
-            DeserializedContainerSource deserializedContainerSource = this.f34307t;
-            this.f34311x = new DeserializedPackageMemberScope(this, r42, nameResolverImpl, binaryVersion, deserializedContainerSource, components, "scope of " + this, new d(this));
+            NameResolverImpl nameResolverImpl = this.f34328u;
+            BinaryVersion binaryVersion = this.f34326s;
+            DeserializedContainerSource deserializedContainerSource = this.f34327t;
+            this.f34331x = new DeserializedPackageMemberScope(this, r42, nameResolverImpl, binaryVersion, deserializedContainerSource, components, "scope of " + this, new d(this));
             return;
         }
         throw new IllegalStateException("Repeated call to DeserializedPackageFragmentImpl::initialize");
@@ -118,6 +118,6 @@ public abstract class DeserializedPackageFragmentImpl extends DeserializedPackag
     @Override // kotlin.reflect.jvm.internal.impl.serialization.deserialization.DeserializedPackageFragment
     @NotNull
     public ProtoBasedClassDataFinder getClassDataFinder() {
-        return this.f34309v;
+        return this.f34329v;
     }
 }

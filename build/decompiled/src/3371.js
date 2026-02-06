@@ -1,131 +1,69 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var1 = require;
+    var _closure1_slot0 = var1;
+    var1 = dependencyMap;
+    var _closure1_slot1 = var1;
     var1 = global;
     var1 = var1.TypeError;
-    var _closure1_slot0 = var1;
+    var _closure1_slot2 = var1;
     var1 = function arg0() {
         _fun29065: for (var _fun29065_ip = 0;;) switch (_fun29065_ip) {
             case 0:
-                var5 = arg0;
-                var0 = undefined;
                 var4 = undefined;
-                if (!var5) {
-                    _fun29065_ip = 186;
-                    continue _fun29065
-                }
-            case 13:
-                var1 = var5.next;
-                var3 = 'function';
-                var1 = typeof var1;
-                if (!(var3 === var1)) {
-                    _fun29065_ip = 186;
-                    continue _fun29065
-                }
-            case 32:
-                var2 = arguments.length;
-                var1 = 1;
-                var6 = var2 > var1;
-                var2 = undefined;
-                if (!var6) {
-                    _fun29065_ip = 61;
-                    continue _fun29065
-                }
-            case 47:
-                var4 = arguments[var1];
-                var1 = typeof var4;
-                var2 = var4;
-                if (!(var3 === var1)) {
-                    _fun29065_ip = 151;
-                    continue _fun29065
-                }
-            case 61:
-                var1 = var2;
-                if (var1) {
-                    _fun29065_ip = 71;
-                    continue _fun29065
-                }
-            case 67:
-                var1 = new Array(0);
-            case 71:
-                var3 = var5.next;
-                var4 = var3.bind(var5)();
-                if (!var4) {
-                    _fun29065_ip = 144;
-                    continue _fun29065
-                }
-            case 83:
-                var3 = var4.done;
+                var5 = undefined;
+                var1 = _closure1_slot0;
+                var3 = _closure1_slot1;
+                var0 = 0;
+                var0 = var3[var0];
+                var1 = var1.bind(var4)(var0);
+                var0 = arg0;
+                var3 = var1.bind(var4)(var0);
                 if (var3) {
-                    _fun29065_ip = 144;
+                    _fun29065_ip = 69;
                     continue _fun29065
                 }
-            case 91:
-                if (var2) {
-                    _fun29065_ip = 111;
+            case 37:
+                var6 = _closure1_slot2;
+                var0 = var6.prototype;
+                var1 = Object.create(var0, {
+                    constructor: {
+                        value: var6
+                    }
+                });
+                var8 = 'non-iterable value provided';
+                var9 = var1;
+                var0 = new var9[var6](var8, var7);
+                var0 = var0 instanceof Object ? var0 : var1;
+                throw var0;
+            case 69:
+                var0 = arguments.length;
+                var1 = 1;
+                if (!(!(var0 > var1))) {
+                    _fun29065_ip = 103;
                     continue _fun29065
                 }
-            case 94:
-                var6 = var1.push;
-                var3 = var4.value;
-                var3 = var6.bind(var1)(var3);
-                _fun29065_ip = 121;
+            case 79:
+                var6 = _closure1_slot0;
+                var0 = _closure1_slot1;
+                var0 = var0[var1];
+                var0 = var6.bind(var4)(var0);
+                var0 = var0.bind(var4)(var3);
+                _fun29065_ip = 130;
                 continue _fun29065;
-            case 111:
-                var3 = var4.value;
-                var3 = var2.bind(var0)(var3);
-            case 121:
-                var3 = var5.next;
-                var6 = var3.bind(var5)();
-                if (!var6) {
-                    _fun29065_ip = 144;
-                    continue _fun29065
-                }
-            case 133:
-                var3 = var6.done;
-                var4 = var6;
-                if (!var3) {
-                    _fun29065_ip = 91;
-                    continue _fun29065
-                }
-            case 144:
-                if (var2) {
-                    _fun29065_ip = 149;
-                    continue _fun29065
-                }
-            case 147:
-                return var1;
-            case 149:
+            case 103:
+                var6 = _closure1_slot0;
+                var2 = _closure1_slot1;
+                var2 = var2[var1];
+                var2 = var6.bind(var4)(var2);
+                var1 = arguments[var1];
+                var0 = var2.bind(var4)(var3, var1);
+            case 130:
                 return var0;
-            case 151:
-                var2 = _closure1_slot0;
-                var0 = var2.prototype;
-                var1 = Object.create(var0, {
-                    constructor: {
-                        value: var2
-                    }
-                });
-                var7 = '`callback`, if provided, must be a function';
-                var8 = var1;
-                var0 = new var8[var2](var7, var6);
-                var0 = var0 instanceof Object ? var0 : var1;
-                throw var0;
-            case 186:
-                var2 = _closure1_slot0;
-                var0 = var2.prototype;
-                var1 = Object.create(var0, {
-                    constructor: {
-                        value: var2
-                    }
-                });
-                var7 = 'iterator must be an object with a `next` method';
-                var8 = var1;
-                var0 = new var8[var2](var7, var6);
-                var0 = var0 instanceof Object ? var0 : var1;
-                throw var0;
         }
     };
     var0 = arg4;
     var0.exports = var1;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3372, 3373]);

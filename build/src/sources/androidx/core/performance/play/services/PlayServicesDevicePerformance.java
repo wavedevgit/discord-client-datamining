@@ -17,49 +17,49 @@ import kotlin.jvm.internal.Lambda;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.flow.Flow;
 import kotlinx.coroutines.flow.FlowCollector;
-import ms.h;
-import ms.i;
-import or.l;
-import ps.g;
+import os.h;
+import os.i;
+import qr.l;
+import rs.g;
 import w2.f;
 import z2.d;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class PlayServicesDevicePerformance {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f3294a;
+    private final Context f3623a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final f f3295b;
+    private final f f3624b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f3296c;
+    private final String f3625c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final x1.b f3297d;
+    private final x1.b f3626d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final d.a f3298e;
+    private final d.a f3627e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final Lazy f3299f;
+    private final Lazy f3628f;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     static final class a extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Context f3300d;
+        final /* synthetic */ Context f3629d;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(Context context) {
             super(0);
-            this.f3300d = context;
+            this.f3629d = context;
         }
 
         @Override // kotlin.jvm.functions.Function0
         /* renamed from: a */
         public final File invoke() {
-            return y2.a.a(this.f3300d, "media_performance_class");
+            return y2.a.a(this.f3629d, "media_performance_class");
         }
     }
 
@@ -67,45 +67,45 @@ public final class PlayServicesDevicePerformance {
     public static final class b implements Flow {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Flow f3301d;
+        final /* synthetic */ Flow f3630d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ PlayServicesDevicePerformance f3302e;
+        final /* synthetic */ PlayServicesDevicePerformance f3631e;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         public static final class a implements FlowCollector {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ FlowCollector f3303d;
+            final /* synthetic */ FlowCollector f3632d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ PlayServicesDevicePerformance f3304e;
+            final /* synthetic */ PlayServicesDevicePerformance f3633e;
 
             /* renamed from: androidx.core.performance.play.services.PlayServicesDevicePerformance$b$a$a  reason: collision with other inner class name */
             /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-            public static final class C0037a extends kotlin.coroutines.jvm.internal.d {
+            public static final class C0035a extends kotlin.coroutines.jvm.internal.d {
 
                 /* renamed from: d  reason: collision with root package name */
-                /* synthetic */ Object f3305d;
+                /* synthetic */ Object f3634d;
 
                 /* renamed from: e  reason: collision with root package name */
-                int f3306e;
+                int f3635e;
 
-                public C0037a(Continuation continuation) {
+                public C0035a(Continuation continuation) {
                     super(continuation);
                 }
 
                 @Override // kotlin.coroutines.jvm.internal.a
                 public final Object invokeSuspend(Object obj) {
-                    this.f3305d = obj;
-                    this.f3306e |= Integer.MIN_VALUE;
+                    this.f3634d = obj;
+                    this.f3635e |= Integer.MIN_VALUE;
                     return a.this.emit(null, this);
                 }
             }
 
             public a(FlowCollector flowCollector, PlayServicesDevicePerformance playServicesDevicePerformance) {
-                this.f3303d = flowCollector;
-                this.f3304e = playServicesDevicePerformance;
+                this.f3632d = flowCollector;
+                this.f3633e = playServicesDevicePerformance;
             }
 
             /* JADX WARN: Removed duplicated region for block: B:10:0x0023  */
@@ -118,24 +118,24 @@ public final class PlayServicesDevicePerformance {
             public final java.lang.Object emit(java.lang.Object r5, kotlin.coroutines.Continuation r6) {
                 /*
                     r4 = this;
-                    boolean r0 = r6 instanceof androidx.core.performance.play.services.PlayServicesDevicePerformance.b.a.C0037a
+                    boolean r0 = r6 instanceof androidx.core.performance.play.services.PlayServicesDevicePerformance.b.a.C0035a
                     if (r0 == 0) goto L13
                     r0 = r6
-                    androidx.core.performance.play.services.PlayServicesDevicePerformance$b$a$a r0 = (androidx.core.performance.play.services.PlayServicesDevicePerformance.b.a.C0037a) r0
-                    int r1 = r0.f3306e
+                    androidx.core.performance.play.services.PlayServicesDevicePerformance$b$a$a r0 = (androidx.core.performance.play.services.PlayServicesDevicePerformance.b.a.C0035a) r0
+                    int r1 = r0.f3635e
                     r2 = -2147483648(0xffffffff80000000, float:-0.0)
                     r3 = r1 & r2
                     if (r3 == 0) goto L13
                     int r1 = r1 - r2
-                    r0.f3306e = r1
+                    r0.f3635e = r1
                     goto L18
                 L13:
                     androidx.core.performance.play.services.PlayServicesDevicePerformance$b$a$a r0 = new androidx.core.performance.play.services.PlayServicesDevicePerformance$b$a$a
                     r0.<init>(r6)
                 L18:
-                    java.lang.Object r6 = r0.f3305d
-                    java.lang.Object r1 = ur.b.f()
-                    int r2 = r0.f3306e
+                    java.lang.Object r6 = r0.f3634d
+                    java.lang.Object r1 = wr.b.f()
+                    int r2 = r0.f3635e
                     r3 = 1
                     if (r2 == 0) goto L31
                     if (r2 != r3) goto L29
@@ -148,17 +148,17 @@ public final class PlayServicesDevicePerformance {
                     throw r5
                 L31:
                     kotlin.c.b(r6)
-                    kotlinx.coroutines.flow.FlowCollector r6 = r4.f3303d
+                    kotlinx.coroutines.flow.FlowCollector r6 = r4.f3632d
                     z2.d r5 = (z2.d) r5
-                    androidx.core.performance.play.services.PlayServicesDevicePerformance r2 = r4.f3304e
+                    androidx.core.performance.play.services.PlayServicesDevicePerformance r2 = r4.f3633e
                     z2.d$a r2 = androidx.core.performance.play.services.PlayServicesDevicePerformance.d(r2)
                     java.lang.Object r5 = r5.b(r2)
-                    r0.f3306e = r3
+                    r0.f3635e = r3
                     java.lang.Object r5 = r6.emit(r5, r0)
                     if (r5 != r1) goto L4b
                     return r1
                 L4b:
-                    kotlin.Unit r5 = kotlin.Unit.f31988a
+                    kotlin.Unit r5 = kotlin.Unit.f32008a
                     return r5
                 */
                 throw new UnsupportedOperationException("Method not decompiled: androidx.core.performance.play.services.PlayServicesDevicePerformance.b.a.emit(java.lang.Object, kotlin.coroutines.Continuation):java.lang.Object");
@@ -166,17 +166,17 @@ public final class PlayServicesDevicePerformance {
         }
 
         public b(Flow flow, PlayServicesDevicePerformance playServicesDevicePerformance) {
-            this.f3301d = flow;
-            this.f3302e = playServicesDevicePerformance;
+            this.f3630d = flow;
+            this.f3631e = playServicesDevicePerformance;
         }
 
         @Override // kotlinx.coroutines.flow.Flow
         public Object collect(FlowCollector flowCollector, Continuation continuation) {
-            Object collect = this.f3301d.collect(new a(flowCollector, this.f3302e), continuation);
-            if (collect == ur.b.f()) {
+            Object collect = this.f3630d.collect(new a(flowCollector, this.f3631e), continuation);
+            if (collect == wr.b.f()) {
                 return collect;
             }
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
     }
 
@@ -188,27 +188,27 @@ public final class PlayServicesDevicePerformance {
         public static final class a extends k implements Function2 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f3309d;
+            int f3638d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ PlayServicesDevicePerformance f3310e;
+            final /* synthetic */ PlayServicesDevicePerformance f3639e;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             a(PlayServicesDevicePerformance playServicesDevicePerformance, Continuation continuation) {
                 super(2, continuation);
-                this.f3310e = playServicesDevicePerformance;
+                this.f3639e = playServicesDevicePerformance;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation create(Object obj, Continuation continuation) {
-                return new a(this.f3310e, continuation);
+                return new a(this.f3639e, continuation);
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Object invokeSuspend(Object obj) {
                 int i10;
-                Object f10 = ur.b.f();
-                int i11 = this.f3309d;
+                Object f10 = wr.b.f();
+                int i11 = this.f3638d;
                 if (i11 != 0) {
                     if (i11 == 1) {
                         kotlin.c.b(obj);
@@ -217,32 +217,32 @@ public final class PlayServicesDevicePerformance {
                     }
                 } else {
                     kotlin.c.b(obj);
-                    Flow i12 = this.f3310e.i();
-                    this.f3309d = 1;
+                    Flow i12 = this.f3639e.i();
+                    this.f3638d = 1;
                     obj = g.s(i12, this);
                     if (obj == f10) {
                         return f10;
                     }
                 }
                 Integer num = (Integer) obj;
-                String str = this.f3310e.f3296c;
+                String str = this.f3639e.f3625c;
                 Log.v(str, "Stored mpc is " + num);
-                String str2 = this.f3310e.f3296c;
-                Log.v(str2, "Default mpc is " + this.f3310e.f3297d.b());
+                String str2 = this.f3639e.f3625c;
+                Log.v(str2, "Default mpc is " + this.f3639e.f3626d.b());
                 if (num != null) {
                     i10 = num.intValue();
                 } else {
                     i10 = 0;
                 }
-                int max = Math.max(i10, this.f3310e.f3297d.b());
-                String str3 = this.f3310e.f3296c;
+                int max = Math.max(i10, this.f3639e.f3626d.b());
+                String str3 = this.f3639e.f3625c;
                 Log.v(str3, "Mpc value used " + max);
                 return kotlin.coroutines.jvm.internal.b.e(max);
             }
 
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-                return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+                return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
             }
         }
 
@@ -264,34 +264,34 @@ public final class PlayServicesDevicePerformance {
     public static final class d extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f3311d;
+        int f3640d;
 
         /* renamed from: e  reason: collision with root package name */
-        /* synthetic */ Object f3312e;
+        /* synthetic */ Object f3641e;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ int f3314o;
+        final /* synthetic */ int f3643o;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         d(int i10, Continuation continuation) {
             super(2, continuation);
-            this.f3314o = i10;
+            this.f3643o = i10;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            d dVar = new d(this.f3314o, continuation);
-            dVar.f3312e = obj;
+            d dVar = new d(this.f3643o, continuation);
+            dVar.f3641e = obj;
             return dVar;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            ur.b.f();
-            if (this.f3311d == 0) {
+            wr.b.f();
+            if (this.f3640d == 0) {
                 kotlin.c.b(obj);
-                ((z2.a) this.f3312e).i(PlayServicesDevicePerformance.this.f3298e, kotlin.coroutines.jvm.internal.b.e(this.f3314o));
-                return Unit.f31988a;
+                ((z2.a) this.f3641e).i(PlayServicesDevicePerformance.this.f3627e, kotlin.coroutines.jvm.internal.b.e(this.f3643o));
+                return Unit.f32008a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
@@ -299,7 +299,7 @@ public final class PlayServicesDevicePerformance {
         @Override // kotlin.jvm.functions.Function2
         /* renamed from: j */
         public final Object invoke(z2.a aVar, Continuation continuation) {
-            return ((d) create(aVar, continuation)).invokeSuspend(Unit.f31988a);
+            return ((d) create(aVar, continuation)).invokeSuspend(Unit.f32008a);
         }
     }
 
@@ -312,47 +312,47 @@ public final class PlayServicesDevicePerformance {
         public static final class a extends k implements Function2 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f3316d;
+            int f3645d;
 
             /* renamed from: e  reason: collision with root package name */
-            private /* synthetic */ Object f3317e;
+            private /* synthetic */ Object f3646e;
 
             /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ PlayServicesDevicePerformance f3318i;
+            final /* synthetic */ PlayServicesDevicePerformance f3647i;
 
             /* renamed from: o  reason: collision with root package name */
-            final /* synthetic */ Integer f3319o;
+            final /* synthetic */ Integer f3648o;
 
             /* JADX INFO: Access modifiers changed from: package-private */
             /* renamed from: androidx.core.performance.play.services.PlayServicesDevicePerformance$e$a$a  reason: collision with other inner class name */
             /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-            public static final class C0038a extends k implements Function2 {
+            public static final class C0036a extends k implements Function2 {
 
                 /* renamed from: d  reason: collision with root package name */
-                int f3320d;
+                int f3649d;
 
                 /* renamed from: e  reason: collision with root package name */
-                final /* synthetic */ PlayServicesDevicePerformance f3321e;
+                final /* synthetic */ PlayServicesDevicePerformance f3650e;
 
                 /* renamed from: i  reason: collision with root package name */
-                final /* synthetic */ int f3322i;
+                final /* synthetic */ int f3651i;
 
                 /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-                C0038a(PlayServicesDevicePerformance playServicesDevicePerformance, int i10, Continuation continuation) {
+                C0036a(PlayServicesDevicePerformance playServicesDevicePerformance, int i10, Continuation continuation) {
                     super(2, continuation);
-                    this.f3321e = playServicesDevicePerformance;
-                    this.f3322i = i10;
+                    this.f3650e = playServicesDevicePerformance;
+                    this.f3651i = i10;
                 }
 
                 @Override // kotlin.coroutines.jvm.internal.a
                 public final Continuation create(Object obj, Continuation continuation) {
-                    return new C0038a(this.f3321e, this.f3322i, continuation);
+                    return new C0036a(this.f3650e, this.f3651i, continuation);
                 }
 
                 @Override // kotlin.coroutines.jvm.internal.a
                 public final Object invokeSuspend(Object obj) {
-                    Object f10 = ur.b.f();
-                    int i10 = this.f3320d;
+                    Object f10 = wr.b.f();
+                    int i10 = this.f3649d;
                     if (i10 != 0) {
                         if (i10 == 1) {
                             kotlin.c.b(obj);
@@ -361,57 +361,57 @@ public final class PlayServicesDevicePerformance {
                         }
                     } else {
                         kotlin.c.b(obj);
-                        PlayServicesDevicePerformance playServicesDevicePerformance = this.f3321e;
-                        int i11 = this.f3322i;
-                        this.f3320d = 1;
+                        PlayServicesDevicePerformance playServicesDevicePerformance = this.f3650e;
+                        int i11 = this.f3651i;
+                        this.f3649d = 1;
                         if (playServicesDevicePerformance.j(i11, this) == f10) {
                             return f10;
                         }
                     }
-                    String str = this.f3321e.f3296c;
-                    Log.v(str, "Saved mediaPerformanceClass " + this.f3322i);
-                    return Unit.f31988a;
+                    String str = this.f3650e.f3625c;
+                    Log.v(str, "Saved mediaPerformanceClass " + this.f3651i);
+                    return Unit.f32008a;
                 }
 
                 @Override // kotlin.jvm.functions.Function2
                 public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-                    return ((C0038a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+                    return ((C0036a) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
                 }
             }
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             a(PlayServicesDevicePerformance playServicesDevicePerformance, Integer num, Continuation continuation) {
                 super(2, continuation);
-                this.f3318i = playServicesDevicePerformance;
-                this.f3319o = num;
+                this.f3647i = playServicesDevicePerformance;
+                this.f3648o = num;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation create(Object obj, Continuation continuation) {
-                a aVar = new a(this.f3318i, this.f3319o, continuation);
-                aVar.f3317e = obj;
+                a aVar = new a(this.f3647i, this.f3648o, continuation);
+                aVar.f3646e = obj;
                 return aVar;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Object invokeSuspend(Object obj) {
-                ur.b.f();
-                if (this.f3316d == 0) {
+                wr.b.f();
+                if (this.f3645d == 0) {
                     kotlin.c.b(obj);
-                    CoroutineScope coroutineScope = (CoroutineScope) this.f3317e;
-                    String str = this.f3318i.f3296c;
-                    Log.v(str, "Got mediaPerformanceClass " + this.f3319o);
-                    Integer result = this.f3319o;
+                    CoroutineScope coroutineScope = (CoroutineScope) this.f3646e;
+                    String str = this.f3647i.f3625c;
+                    Log.v(str, "Got mediaPerformanceClass " + this.f3648o);
+                    Integer result = this.f3648o;
                     Intrinsics.checkNotNullExpressionValue(result, "result");
-                    i.d(coroutineScope, null, null, new C0038a(this.f3318i, Math.max(result.intValue(), this.f3318i.f3297d.b()), null), 3, null);
-                    return Unit.f31988a;
+                    i.d(coroutineScope, null, null, new C0036a(this.f3647i, Math.max(result.intValue(), this.f3647i.f3626d.b()), null), 3, null);
+                    return Unit.f32008a;
                 }
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
 
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-                return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+                return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
             }
         }
 
@@ -426,7 +426,7 @@ public final class PlayServicesDevicePerformance {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((Integer) obj);
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
     }
 
@@ -434,40 +434,40 @@ public final class PlayServicesDevicePerformance {
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(client, "client");
         Intrinsics.checkNotNullParameter(performanceStore, "performanceStore");
-        this.f3294a = context;
-        this.f3295b = performanceStore;
-        this.f3296c = "PlayServicesDevicePerformance";
-        this.f3297d = new x1.b();
-        this.f3298e = z2.f.d("mpc_value");
-        this.f3299f = l.a(new c());
+        this.f3623a = context;
+        this.f3624b = performanceStore;
+        this.f3625c = "PlayServicesDevicePerformance";
+        this.f3626d = new x1.b();
+        this.f3627e = z2.f.d("mpc_value");
+        this.f3628f = l.a(new c());
         Log.v("PlayServicesDevicePerformance", "Getting mediaPerformanceClass from com.google.android.gms.deviceperformance.DevicePerformanceClient");
         k(client);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final Flow i() {
-        return new b(this.f3295b.getData(), this);
+        return new b(this.f3624b.getData(), this);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final Object j(int i10, Continuation continuation) {
-        Object a10 = z2.g.a(this.f3295b, new d(i10, null), continuation);
-        if (a10 == ur.b.f()) {
+        Object a10 = z2.g.a(this.f3624b, new d(i10, null), continuation);
+        if (a10 == wr.b.f()) {
             return a10;
         }
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     private final void k(qf.b bVar) {
         Task a10 = bVar.a();
         final e eVar = new e();
-        a10.g(new xg.g() { // from class: y1.a
-            @Override // xg.g
+        a10.g(new yg.g() { // from class: y1.a
+            @Override // yg.g
             public final void onSuccess(Object obj) {
                 PlayServicesDevicePerformance.l(Function1.this, obj);
             }
-        }).e(new xg.f() { // from class: y1.b
-            @Override // xg.f
+        }).e(new yg.f() { // from class: y1.b
+            @Override // yg.f
             public final void onFailure(Exception exc) {
                 PlayServicesDevicePerformance.m(PlayServicesDevicePerformance.this, exc);
             }
@@ -485,19 +485,19 @@ public final class PlayServicesDevicePerformance {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(e10, "e");
         if (e10 instanceof ef.b) {
-            Log.e(this$0.f3296c, "Error saving mediaPerformanceClass", e10);
+            Log.e(this$0.f3625c, "Error saving mediaPerformanceClass", e10);
         } else if (e10 instanceof IllegalStateException) {
-            Log.e(this$0.f3296c, "Error saving mediaPerformanceClass", e10);
+            Log.e(this$0.f3625c, "Error saving mediaPerformanceClass", e10);
         }
     }
 
     public int h() {
-        return ((Number) this.f3299f.getValue()).intValue();
+        return ((Number) this.f3628f.getValue()).intValue();
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public PlayServicesDevicePerformance(Context context) {
-        this(context, qf.a.f47874a.a(context), z2.c.b(z2.c.f55149a, null, null, null, new a(context), 7, null));
+        this(context, qf.a.f46922a.a(context), z2.c.b(z2.c.f55880a, null, null, null, new a(context), 7, null));
         Intrinsics.checkNotNullParameter(context, "context");
     }
 }

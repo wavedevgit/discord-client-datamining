@@ -58,7 +58,7 @@ public final class ReactTextInputSelectionEvent extends Event<ReactTextInputSele
         return EVENT_NAME;
     }
 
-    @or.c
+    @qr.c
     public ReactTextInputSelectionEvent(int i10, int i11, int i12) {
         this(-1, i10, i11, i12);
     }

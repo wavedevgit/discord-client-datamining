@@ -25,14 +25,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/utils/isGameActivity.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun62137: for (var _fun62137_ip = 0;;) switch (_fun62137_ip) {
+        _fun62164: for (var _fun62164_ip = 0;;) switch (_fun62164_ip) {
             case 0:
                 var1 = arg0;
                 var0 = null;
                 var0 = var0 != var1;
                 if (!var0) {
-                    _fun62137_ip = 34;
-                    continue _fun62137
+                    _fun62164_ip = 34;
+                    continue _fun62164
                 }
             case 12:
                 var2 = var1.type;

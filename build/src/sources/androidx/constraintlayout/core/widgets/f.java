@@ -17,45 +17,45 @@ public class f extends ConstraintWidget {
     static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f2525a;
+        static final /* synthetic */ int[] f2854a;
 
         static {
             int[] iArr = new int[d.a.values().length];
-            f2525a = iArr;
+            f2854a = iArr;
             try {
                 iArr[d.a.LEFT.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f2525a[d.a.RIGHT.ordinal()] = 2;
+                f2854a[d.a.RIGHT.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f2525a[d.a.TOP.ordinal()] = 3;
+                f2854a[d.a.TOP.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f2525a[d.a.BOTTOM.ordinal()] = 4;
+                f2854a[d.a.BOTTOM.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f2525a[d.a.BASELINE.ordinal()] = 5;
+                f2854a[d.a.BASELINE.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                f2525a[d.a.CENTER.ordinal()] = 6;
+                f2854a[d.a.CENTER.ordinal()] = 6;
             } catch (NoSuchFieldError unused6) {
             }
             try {
-                f2525a[d.a.CENTER_X.ordinal()] = 7;
+                f2854a[d.a.CENTER_X.ordinal()] = 7;
             } catch (NoSuchFieldError unused7) {
             }
             try {
-                f2525a[d.a.CENTER_Y.ordinal()] = 8;
+                f2854a[d.a.CENTER_Y.ordinal()] = 8;
             } catch (NoSuchFieldError unused8) {
             }
             try {
-                f2525a[d.a.NONE.ordinal()] = 9;
+                f2854a[d.a.NONE.ordinal()] = 9;
             } catch (NoSuchFieldError unused9) {
             }
         }
@@ -102,7 +102,7 @@ public class f extends ConstraintWidget {
         if (constraintWidgetContainer != null) {
             d o10 = constraintWidgetContainer.o(d.a.LEFT);
             d o11 = constraintWidgetContainer.o(d.a.RIGHT);
-            ConstraintWidget constraintWidget = this.f2367a0;
+            ConstraintWidget constraintWidget = this.f2696a0;
             boolean z12 = true;
             if (constraintWidget != null && constraintWidget.Z[0] == ConstraintWidget.b.WRAP_CONTENT) {
                 z11 = true;
@@ -112,7 +112,7 @@ public class f extends ConstraintWidget {
             if (this.Q0 == 0) {
                 o10 = constraintWidgetContainer.o(d.a.TOP);
                 o11 = constraintWidgetContainer.o(d.a.BOTTOM);
-                ConstraintWidget constraintWidget2 = this.f2367a0;
+                ConstraintWidget constraintWidget2 = this.f2696a0;
                 if (constraintWidget2 == null || constraintWidget2.Z[1] != ConstraintWidget.b.WRAP_CONTENT) {
                     z12 = false;
                 }
@@ -163,7 +163,7 @@ public class f extends ConstraintWidget {
 
     @Override // androidx.constraintlayout.core.widgets.ConstraintWidget
     public d o(d.a aVar) {
-        int i10 = a.f2525a[aVar.ordinal()];
+        int i10 = a.f2854a[aVar.ordinal()];
         if (i10 != 1 && i10 != 2) {
             if ((i10 == 3 || i10 == 4) && this.Q0 == 0) {
                 return this.P0;

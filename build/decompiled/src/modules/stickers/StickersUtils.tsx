@@ -1088,4 +1088,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isFavoriteSticker = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1310, 1410, 3999, 4218, 1352, 660, 4219, 1417, 1587, 478, 1443, 4221, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1310, 1410, 4000, 4219, 1352, 660, 4220, 1417, 1587, 478, 1443, 4222, 2]);

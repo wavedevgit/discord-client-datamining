@@ -1,32 +1,20 @@
 package aq;
 
-import kotlin.Lazy;
-import kotlin.jvm.functions.Function0;
-import or.l;
+import dn.b0;
+import kotlin.jvm.internal.Reflection;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class b {
+public final class b extends b0 {
 
-    /* renamed from: a  reason: collision with root package name */
-    private static final Lazy f5970a = l.a(new Function0() { // from class: aq.a
-        @Override // kotlin.jvm.functions.Function0
-        public final Object invoke() {
-            boolean c10;
-            c10 = b.c();
-            return Boolean.valueOf(c10);
-        }
-    });
+    /* renamed from: b  reason: collision with root package name */
+    public static final b f6281b = new b();
 
-    public static final boolean b() {
-        return ((Boolean) f5970a.getValue()).booleanValue();
+    private b() {
+        super(Reflection.getOrCreateKotlinClass(a.class));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final boolean c() {
-        try {
-            Class.forName("androidx.test.espresso.Espresso");
-            return true;
-        } catch (ClassNotFoundException unused) {
-            return false;
-        }
+    @Override // dn.b0
+    /* renamed from: b */
+    public a a() {
+        throw new IllegalStateException("Unset");
     }
 }

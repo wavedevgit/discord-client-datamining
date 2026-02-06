@@ -40,18 +40,18 @@ public final class StyleElements_AxisContainerJsonAdapter extends h {
     @NotNull
     public StyleElements.AxisContainer fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         StyleElements.Axis axis = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 axis = (StyleElements.Axis) this.nullableAxisAdapter.fromJson(reader);
             }
         }
-        reader.z();
+        reader.D();
         return new StyleElements.AxisContainer(axis);
     }
 
@@ -60,9 +60,9 @@ public final class StyleElements_AxisContainerJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (axisContainer != null) {
             writer.k();
-            writer.W("base");
+            writer.J("base");
             this.nullableAxisAdapter.toJson(writer, axisContainer.getBase());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

@@ -14,11 +14,11 @@ import java.util.TreeMap;
 public final class b extends d {
 
     /* renamed from: e  reason: collision with root package name */
-    private final Context f27981e;
+    private final Context f27125e;
 
     public b(Context context, ILogger iLogger) {
         super(iLogger);
-        this.f27981e = e1.g(context);
+        this.f27125e = e1.g(context);
         new Thread(new Runnable() { // from class: io.sentry.android.core.internal.modules.a
             @Override // java.lang.Runnable
             public final void run() {
@@ -31,7 +31,7 @@ public final class b extends d {
     protected Map b() {
         TreeMap treeMap = new TreeMap();
         try {
-            InputStream open = this.f27981e.getAssets().open("sentry-external-modules.txt");
+            InputStream open = this.f27125e.getAssets().open("sentry-external-modules.txt");
             try {
                 Map c10 = c(open);
                 if (open != null) {
@@ -50,10 +50,10 @@ public final class b extends d {
                 throw th2;
             }
         } catch (FileNotFoundException unused) {
-            this.f29070a.c(SentryLevel.INFO, "%s file was not found.", "sentry-external-modules.txt");
+            this.f28214a.c(SentryLevel.INFO, "%s file was not found.", "sentry-external-modules.txt");
             return treeMap;
         } catch (IOException e10) {
-            this.f29070a.b(SentryLevel.ERROR, "Error extracting modules.", e10);
+            this.f28214a.b(SentryLevel.ERROR, "Error extracting modules.", e10);
             return treeMap;
         }
     }

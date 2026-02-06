@@ -4,11 +4,11 @@ import com.discord.react.utilities.NativeArrayExtensionsKt;
 import com.discord.react.utilities.NativeMapExtensionsKt;
 import com.facebook.react.bridge.ReadableNativeArray;
 import com.facebook.react.bridge.WritableNativeMap;
-import gt.n2;
-import gt.p0;
-import gt.u0;
 import java.util.List;
 import java.util.Map;
+import jt.n2;
+import jt.p0;
+import jt.u0;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.Pair;
@@ -19,10 +19,10 @@ import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import or.v;
 import org.jetbrains.annotations.NotNull;
+import qr.v;
+@ft.m
 @Metadata(d1 = {"\u0000R\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010 \n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010$\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\r\n\u0002\u0018\u0002\n\u0002\b\r\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 52\u00020\u0001:\u000245Bg\u0012\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0003\u0012\u0010\b\u0002\u0010\u0005\u001a\n\u0012\u0004\u0012\u00020\u0003\u0018\u00010\u0006\u0012\u0010\b\u0002\u0010\u0007\u001a\n\u0012\u0004\u0012\u00020\u0003\u0018\u00010\u0006\u0012\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\t\u0012\u0016\b\u0002\u0010\n\u001a\u0010\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\f\u0018\u00010\u000b¢\u0006\u0004\b\r\u0010\u000eBo\b\u0010\u0012\u0006\u0010\u000f\u001a\u00020\f\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0003\u0012\u000e\u0010\u0005\u001a\n\u0012\u0004\u0012\u00020\u0003\u0018\u00010\u0006\u0012\u000e\u0010\u0007\u001a\n\u0012\u0004\u0012\u00020\u0003\u0018\u00010\u0006\u0012\b\u0010\b\u001a\u0004\u0018\u00010\t\u0012\u0014\u0010\n\u001a\u0010\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\f\u0018\u00010\u000b\u0012\b\u0010\u0010\u001a\u0004\u0018\u00010\u0011¢\u0006\u0004\b\r\u0010\u0012J\u0006\u0010\u001e\u001a\u00020\u001fJ\u000b\u0010 \u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u000b\u0010!\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u0011\u0010\"\u001a\n\u0012\u0004\u0012\u00020\u0003\u0018\u00010\u0006HÆ\u0003J\u0011\u0010#\u001a\n\u0012\u0004\u0012\u00020\u0003\u0018\u00010\u0006HÆ\u0003J\u0010\u0010$\u001a\u0004\u0018\u00010\tHÆ\u0003¢\u0006\u0002\u0010\u001aJ\u0017\u0010%\u001a\u0010\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\f\u0018\u00010\u000bHÆ\u0003Jn\u0010&\u001a\u00020\u00002\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00032\u0010\b\u0002\u0010\u0005\u001a\n\u0012\u0004\u0012\u00020\u0003\u0018\u00010\u00062\u0010\b\u0002\u0010\u0007\u001a\n\u0012\u0004\u0012\u00020\u0003\u0018\u00010\u00062\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\t2\u0016\b\u0002\u0010\n\u001a\u0010\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\f\u0018\u00010\u000bHÆ\u0001¢\u0006\u0002\u0010'J\u0013\u0010(\u001a\u00020\t2\b\u0010)\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010*\u001a\u00020\fHÖ\u0001J\t\u0010+\u001a\u00020\u0003HÖ\u0001J%\u0010,\u001a\u00020-2\u0006\u0010.\u001a\u00020\u00002\u0006\u0010/\u001a\u0002002\u0006\u00101\u001a\u000202H\u0001¢\u0006\u0002\b3R\u0013\u0010\u0002\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u0014R\u0013\u0010\u0004\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0014R\u0019\u0010\u0005\u001a\n\u0012\u0004\u0012\u00020\u0003\u0018\u00010\u0006¢\u0006\b\n\u0000\u001a\u0004\b\u0016\u0010\u0017R\u0019\u0010\u0007\u001a\n\u0012\u0004\u0012\u00020\u0003\u0018\u00010\u0006¢\u0006\b\n\u0000\u001a\u0004\b\u0018\u0010\u0017R\u0015\u0010\b\u001a\u0004\u0018\u00010\t¢\u0006\n\n\u0002\u0010\u001b\u001a\u0004\b\u0019\u0010\u001aR\u001f\u0010\n\u001a\u0010\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\f\u0018\u00010\u000b¢\u0006\b\n\u0000\u001a\u0004\b\u001c\u0010\u001d¨\u00066"}, d2 = {"Lcom/discord/bundle_updater/BuildOverrideCookieMeta;", "", "expiresAt", "", "releaseChannel", "validForUserIds", "", "allowedVersions", "allowLoggedOut", "", "experiments", "", "", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/lang/Boolean;Ljava/util/Map;)V", "seen0", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/lang/Boolean;Ljava/util/Map;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "getExpiresAt", "()Ljava/lang/String;", "getReleaseChannel", "getValidForUserIds", "()Ljava/util/List;", "getAllowedVersions", "getAllowLoggedOut", "()Ljava/lang/Boolean;", "Ljava/lang/Boolean;", "getExperiments", "()Ljava/util/Map;", "toNativeMap", "Lcom/facebook/react/bridge/WritableNativeMap;", "component1", "component2", "component3", "component4", "component5", "component6", "copy", "(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/lang/Boolean;Ljava/util/Map;)Lcom/discord/bundle_updater/BuildOverrideCookieMeta;", "equals", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$bundle_updater_release", "$serializer", "Companion", "bundle_updater_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
-@dt.m
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class BuildOverrideCookieMeta {
     @NotNull
@@ -53,22 +53,22 @@ public final class BuildOverrideCookieMeta {
     }
 
     static {
-        or.o oVar = or.o.f44232e;
-        $childSerializers = new Lazy[]{null, null, or.l.b(oVar, new Function0() { // from class: com.discord.bundle_updater.c
+        qr.o oVar = qr.o.f48044e;
+        $childSerializers = new Lazy[]{null, null, qr.l.b(oVar, new Function0() { // from class: com.discord.bundle_updater.c
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 KSerializer _childSerializers$_anonymous_;
                 _childSerializers$_anonymous_ = BuildOverrideCookieMeta._childSerializers$_anonymous_();
                 return _childSerializers$_anonymous_;
             }
-        }), or.l.b(oVar, new Function0() { // from class: com.discord.bundle_updater.d
+        }), qr.l.b(oVar, new Function0() { // from class: com.discord.bundle_updater.d
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 KSerializer _childSerializers$_anonymous_$0;
                 _childSerializers$_anonymous_$0 = BuildOverrideCookieMeta._childSerializers$_anonymous_$0();
                 return _childSerializers$_anonymous_$0;
             }
-        }), null, or.l.b(oVar, new Function0() { // from class: com.discord.bundle_updater.e
+        }), null, qr.l.b(oVar, new Function0() { // from class: com.discord.bundle_updater.e
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 KSerializer _childSerializers$_anonymous_$1;
@@ -84,17 +84,17 @@ public final class BuildOverrideCookieMeta {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_() {
-        return new gt.f(n2.f25302a);
+        return new jt.f(n2.f31041a);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_$0() {
-        return new gt.f(n2.f25302a);
+        return new jt.f(n2.f31041a);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_$1() {
-        return new u0(n2.f25302a, p0.f25318a);
+        return new u0(n2.f31041a, p0.f31057a);
     }
 
     public static /* synthetic */ BuildOverrideCookieMeta copy$default(BuildOverrideCookieMeta buildOverrideCookieMeta, String str, String str2, List list, List list2, Boolean bool, Map map, int i10, Object obj) {
@@ -126,23 +126,23 @@ public final class BuildOverrideCookieMeta {
 
     public static final /* synthetic */ void write$Self$bundle_updater_release(BuildOverrideCookieMeta buildOverrideCookieMeta, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         Lazy[] lazyArr = $childSerializers;
-        if (compositeEncoder.z(serialDescriptor, 0) || buildOverrideCookieMeta.expiresAt != null) {
-            compositeEncoder.A(serialDescriptor, 0, n2.f25302a, buildOverrideCookieMeta.expiresAt);
+        if (compositeEncoder.A(serialDescriptor, 0) || buildOverrideCookieMeta.expiresAt != null) {
+            compositeEncoder.l(serialDescriptor, 0, n2.f31041a, buildOverrideCookieMeta.expiresAt);
         }
-        if (compositeEncoder.z(serialDescriptor, 1) || buildOverrideCookieMeta.releaseChannel != null) {
-            compositeEncoder.A(serialDescriptor, 1, n2.f25302a, buildOverrideCookieMeta.releaseChannel);
+        if (compositeEncoder.A(serialDescriptor, 1) || buildOverrideCookieMeta.releaseChannel != null) {
+            compositeEncoder.l(serialDescriptor, 1, n2.f31041a, buildOverrideCookieMeta.releaseChannel);
         }
-        if (compositeEncoder.z(serialDescriptor, 2) || buildOverrideCookieMeta.validForUserIds != null) {
-            compositeEncoder.A(serialDescriptor, 2, (dt.o) lazyArr[2].getValue(), buildOverrideCookieMeta.validForUserIds);
+        if (compositeEncoder.A(serialDescriptor, 2) || buildOverrideCookieMeta.validForUserIds != null) {
+            compositeEncoder.l(serialDescriptor, 2, (ft.o) lazyArr[2].getValue(), buildOverrideCookieMeta.validForUserIds);
         }
-        if (compositeEncoder.z(serialDescriptor, 3) || buildOverrideCookieMeta.allowedVersions != null) {
-            compositeEncoder.A(serialDescriptor, 3, (dt.o) lazyArr[3].getValue(), buildOverrideCookieMeta.allowedVersions);
+        if (compositeEncoder.A(serialDescriptor, 3) || buildOverrideCookieMeta.allowedVersions != null) {
+            compositeEncoder.l(serialDescriptor, 3, (ft.o) lazyArr[3].getValue(), buildOverrideCookieMeta.allowedVersions);
         }
-        if (compositeEncoder.z(serialDescriptor, 4) || buildOverrideCookieMeta.allowLoggedOut != null) {
-            compositeEncoder.A(serialDescriptor, 4, gt.h.f25266a, buildOverrideCookieMeta.allowLoggedOut);
+        if (compositeEncoder.A(serialDescriptor, 4) || buildOverrideCookieMeta.allowLoggedOut != null) {
+            compositeEncoder.l(serialDescriptor, 4, jt.h.f31005a, buildOverrideCookieMeta.allowLoggedOut);
         }
-        if (compositeEncoder.z(serialDescriptor, 5) || buildOverrideCookieMeta.experiments != null) {
-            compositeEncoder.A(serialDescriptor, 5, (dt.o) lazyArr[5].getValue(), buildOverrideCookieMeta.experiments);
+        if (compositeEncoder.A(serialDescriptor, 5) || buildOverrideCookieMeta.experiments != null) {
+            compositeEncoder.l(serialDescriptor, 5, (ft.o) lazyArr[5].getValue(), buildOverrideCookieMeta.experiments);
         }
     }
 

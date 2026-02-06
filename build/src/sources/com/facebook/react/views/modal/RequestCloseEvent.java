@@ -44,7 +44,7 @@ public final class RequestCloseEvent extends Event<RequestCloseEvent> {
         return EVENT_NAME;
     }
 
-    @or.c
+    @qr.c
     public RequestCloseEvent(int i10) {
         this(-1, i10);
     }

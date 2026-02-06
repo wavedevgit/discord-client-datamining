@@ -1,46 +1,27 @@
 package ys;
 
+import j$.time.DayOfWeek;
+import kotlin.enums.EnumEntries;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.text.StringsKt;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public abstract class d {
-    public static final int a(char c10) {
-        return c10 - '0';
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public /* synthetic */ class a {
+
+        /* renamed from: a  reason: collision with root package name */
+        public static final /* synthetic */ EnumEntries f55586a = xr.a.a(DayOfWeek.values());
     }
 
-    public static final boolean b(char c10) {
-        if ('0' > c10 || c10 >= ':') {
-            return false;
+    public static final DayOfWeek a(int i10) {
+        if (1 <= i10 && i10 < 8) {
+            return (DayOfWeek) a.f55586a.get(i10 - 1);
         }
-        return true;
+        throw new IllegalArgumentException(("Expected ISO day-of-week number in 1..7, got " + i10).toString());
     }
 
-    private static final String c(String str, int i10) {
-        if (str.length() >= i10 + 12) {
-            int i11 = 0;
-            if (StringsKt.U("+-", str.charAt(0), false, 2, null)) {
-                int h02 = StringsKt.h0(str, '-', 1, false, 4, null);
-                if (h02 < 12) {
-                    return str;
-                }
-                while (true) {
-                    int i12 = i11 + 1;
-                    if (str.charAt(i12) != '0') {
-                        break;
-                    }
-                    i11 = i12;
-                }
-                if (h02 - i11 >= 12) {
-                    return str;
-                }
-                return StringsKt.C0(str, 1, h02 - 10).toString();
-            }
-        }
-        return str;
-    }
-
-    public static final String d(String input) {
-        Intrinsics.checkNotNullParameter(input, "input");
-        return c(input.toString(), 6);
+    public static final int b(DayOfWeek dayOfWeek) {
+        Intrinsics.checkNotNullParameter(dayOfWeek, "<this>");
+        return dayOfWeek.ordinal() + 1;
     }
 }

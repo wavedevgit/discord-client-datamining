@@ -20,7 +20,7 @@ public final class ChatListAdapterUpdateLogKt {
         if (chatListAction instanceof ChatListAction.StickToBottomIfAtBottom) {
             return "StickToBottomIfAtBottom";
         }
-        throw new or.p();
+        throw new qr.p();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -50,7 +50,7 @@ public final class ChatListAdapterUpdateLogKt {
             int last3 = changeRange.getLast();
             return "CRNG(" + first3 + "-" + last3 + ")";
         } else {
-            throw new or.p();
+            throw new qr.p();
         }
     }
 }

@@ -1,87 +1,140 @@
 package zs;
 
-import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.Lazy;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.Lambda;
+import zs.o;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class b0 extends a {
+public abstract class b0 {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final b f56219a;
+    /* renamed from: a */
+    private static final Lazy f56460a = qr.l.a(a.f56462d);
 
-    /* renamed from: b  reason: collision with root package name */
-    private final int f56220b;
+    /* renamed from: b */
+    private static final w f56461b = new w(null, null, null, null, null, null, 63, null);
 
-    /* renamed from: c  reason: collision with root package name */
-    private final int f56221c;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    static final class a extends Lambda implements Function0 {
 
-    /* renamed from: d  reason: collision with root package name */
-    private final String f56222d;
+        /* renamed from: d */
+        public static final a f56462d = new a();
 
-    /* renamed from: e  reason: collision with root package name */
-    private final Integer f56223e;
+        /* renamed from: zs.b0$a$a */
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+        public static final class C0788a extends Lambda implements Function1 {
 
-    /* renamed from: f  reason: collision with root package name */
-    private final m f56224f;
+            /* renamed from: d */
+            public static final C0788a f56463d = new C0788a();
 
-    /* renamed from: g  reason: collision with root package name */
-    private final int f56225g;
+            /* renamed from: zs.b0$a$a$a */
+            /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+            public static final class C0789a extends Lambda implements Function1 {
 
-    public /* synthetic */ b0(b bVar, int i10, int i11, String str, Integer num, m mVar, int i12, DefaultConstructorMarker defaultConstructorMarker) {
-        this(bVar, i10, i11, (i12 & 8) != 0 ? bVar.getName() : str, (i12 & 16) != 0 ? null : num, (i12 & 32) != 0 ? null : mVar);
-    }
+                /* renamed from: d */
+                public static final C0789a f56464d = new C0789a();
 
-    @Override // zs.n
-    public b b() {
-        return this.f56219a;
-    }
+                C0789a() {
+                    super(1);
+                }
 
-    @Override // zs.n
-    public m c() {
-        return this.f56224f;
-    }
+                public final void a(o.c alternativeParsing) {
+                    Intrinsics.checkNotNullParameter(alternativeParsing, "$this$alternativeParsing");
+                }
 
-    @Override // zs.n
-    /* renamed from: d */
-    public Integer a() {
-        return this.f56223e;
-    }
+                @Override // kotlin.jvm.functions.Function1
+                public /* bridge */ /* synthetic */ Object invoke(Object obj) {
+                    a((o.c) obj);
+                    return Unit.f32008a;
+                }
+            }
 
-    public final int e() {
-        return this.f56225g;
-    }
+            /* renamed from: zs.b0$a$a$b */
+            /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+            public static final class b extends Lambda implements Function1 {
 
-    public final int f() {
-        return this.f56221c;
-    }
+                /* renamed from: d */
+                public static final b f56465d = new b();
 
-    public final int g() {
-        return this.f56220b;
-    }
+                /* renamed from: zs.b0$a$a$b$a */
+                /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+                public static final class C0790a extends Lambda implements Function1 {
 
-    @Override // zs.n
-    public String getName() {
-        return this.f56222d;
-    }
+                    /* renamed from: d */
+                    public static final C0790a f56466d = new C0790a();
 
-    public b0(b accessor, int i10, int i11, String name, Integer num, m mVar) {
-        int i12;
-        Intrinsics.checkNotNullParameter(accessor, "accessor");
-        Intrinsics.checkNotNullParameter(name, "name");
-        this.f56219a = accessor;
-        this.f56220b = i10;
-        this.f56221c = i11;
-        this.f56222d = name;
-        this.f56223e = num;
-        this.f56224f = mVar;
-        if (i11 < 10) {
-            i12 = 1;
-        } else if (i11 < 100) {
-            i12 = 2;
-        } else if (i11 >= 1000) {
-            throw new IllegalArgumentException("Max value " + i11 + " is too large");
-        } else {
-            i12 = 3;
+                    C0790a() {
+                        super(1);
+                    }
+
+                    public final void a(o.c optional) {
+                        Intrinsics.checkNotNullParameter(optional, "$this$optional");
+                        p.b(optional, '.');
+                        optional.t(1, 9);
+                    }
+
+                    @Override // kotlin.jvm.functions.Function1
+                    public /* bridge */ /* synthetic */ Object invoke(Object obj) {
+                        a((o.c) obj);
+                        return Unit.f32008a;
+                    }
+                }
+
+                b() {
+                    super(1);
+                }
+
+                public final void a(o.c alternativeParsing) {
+                    Intrinsics.checkNotNullParameter(alternativeParsing, "$this$alternativeParsing");
+                    p.b(alternativeParsing, ':');
+                    o.c.a.c(alternativeParsing, null, 1, null);
+                    p.d(alternativeParsing, null, C0790a.f56466d, 1, null);
+                }
+
+                @Override // kotlin.jvm.functions.Function1
+                public /* bridge */ /* synthetic */ Object invoke(Object obj) {
+                    a((o.c) obj);
+                    return Unit.f32008a;
+                }
+            }
+
+            C0788a() {
+                super(1);
+            }
+
+            public final void a(o.c build) {
+                Intrinsics.checkNotNullParameter(build, "$this$build");
+                o.c.a.a(build, null, 1, null);
+                p.b(build, ':');
+                o.c.a.b(build, null, 1, null);
+                p.a(build, new Function1[]{C0789a.f56464d}, b.f56465d);
+            }
+
+            @Override // kotlin.jvm.functions.Function1
+            public /* bridge */ /* synthetic */ Object invoke(Object obj) {
+                a((o.c) obj);
+                return Unit.f32008a;
+            }
         }
-        this.f56225g = i12;
+
+        a() {
+            super(0);
+        }
+
+        @Override // kotlin.jvm.functions.Function0
+        /* renamed from: a */
+        public final a0 invoke() {
+            return a0.f56457b.a(C0788a.f56463d);
+        }
+    }
+
+    public static final /* synthetic */ w a() {
+        return f56461b;
+    }
+
+    public static final a0 b() {
+        return (a0) f56460a.getValue();
     }
 }

@@ -20,29 +20,29 @@ import java.util.concurrent.Callable;
 public final class l6 {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Charset f29136d = Charset.forName("UTF-8");
+    private static final Charset f28280d = Charset.forName("UTF-8");
 
     /* renamed from: a  reason: collision with root package name */
-    private final m6 f29137a;
+    private final m6 f28281a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Callable f29138b;
+    private final Callable f28282b;
 
     /* renamed from: c  reason: collision with root package name */
-    private byte[] f29139c;
+    private byte[] f28283c;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private byte[] f29140a;
+        private byte[] f28284a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Callable f29141b;
+        private final Callable f28285b;
 
         public a(Callable callable) {
-            this.f29141b = callable;
+            this.f28285b = callable;
         }
 
         private static byte[] b(byte[] bArr) {
@@ -54,18 +54,18 @@ public final class l6 {
 
         public byte[] a() {
             Callable callable;
-            if (this.f29140a == null && (callable = this.f29141b) != null) {
-                this.f29140a = (byte[]) callable.call();
+            if (this.f28284a == null && (callable = this.f28285b) != null) {
+                this.f28284a = (byte[]) callable.call();
             }
-            return b(this.f29140a);
+            return b(this.f28284a);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public l6(m6 m6Var, byte[] bArr) {
-        this.f29137a = (m6) io.sentry.util.y.c(m6Var, "SentryEnvelopeItemHeader is required.");
-        this.f29139c = bArr;
-        this.f29138b = null;
+        this.f28281a = (m6) io.sentry.util.y.c(m6Var, "SentryEnvelopeItemHeader is required.");
+        this.f28283c = bArr;
+        this.f28282b = null;
     }
 
     public static l6 A(final b1 b1Var, final io.sentry.clientreport.c cVar) {
@@ -252,7 +252,7 @@ public final class l6 {
         try {
             byteArrayOutputStream.write((byte) (map.size() | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT));
             for (Map.Entry entry : map.entrySet()) {
-                byte[] bytes = ((String) entry.getKey()).getBytes(f29136d);
+                byte[] bytes = ((String) entry.getKey()).getBytes(f28280d);
                 int length = bytes.length;
                 byteArrayOutputStream.write(-39);
                 byteArrayOutputStream.write((byte) length);
@@ -279,7 +279,7 @@ public final class l6 {
     public static /* synthetic */ byte[] c(b1 b1Var, l7 l7Var, v3 v3Var, File file, ILogger iLogger, boolean z10) {
         try {
             ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-            BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(byteArrayOutputStream, f29136d));
+            BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(byteArrayOutputStream, f28280d));
             try {
                 LinkedHashMap linkedHashMap = new LinkedHashMap();
                 b1Var.a(l7Var, bufferedWriter);
@@ -340,7 +340,7 @@ public final class l6 {
     public static /* synthetic */ byte[] d(b1 b1Var, io.sentry.clientreport.c cVar) {
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
         try {
-            BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(byteArrayOutputStream, f29136d));
+            BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(byteArrayOutputStream, f28280d));
             b1Var.a(cVar, bufferedWriter);
             byte[] byteArray = byteArrayOutputStream.toByteArray();
             bufferedWriter.close();
@@ -359,7 +359,7 @@ public final class l6 {
     public static /* synthetic */ byte[] n(b1 b1Var, e5 e5Var) {
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
         try {
-            BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(byteArrayOutputStream, f29136d));
+            BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(byteArrayOutputStream, f28280d));
             b1Var.a(e5Var, bufferedWriter);
             byte[] byteArray = byteArrayOutputStream.toByteArray();
             bufferedWriter.close();
@@ -385,7 +385,7 @@ public final class l6 {
                     try {
                         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
                         try {
-                            BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(byteArrayOutputStream, f29136d));
+                            BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(byteArrayOutputStream, f28280d));
                             b1Var.a(q3Var, bufferedWriter);
                             byte[] byteArray = byteArrayOutputStream.toByteArray();
                             bufferedWriter.close();
@@ -414,7 +414,7 @@ public final class l6 {
     public static /* synthetic */ byte[] s(b1 b1Var, z6 z6Var) {
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
         try {
-            BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(byteArrayOutputStream, f29136d));
+            BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(byteArrayOutputStream, f28280d));
             b1Var.a(z6Var, bufferedWriter);
             byte[] byteArray = byteArrayOutputStream.toByteArray();
             bufferedWriter.close();
@@ -433,7 +433,7 @@ public final class l6 {
     public static /* synthetic */ byte[] t(b1 b1Var, z7 z7Var) {
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
         try {
-            BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(byteArrayOutputStream, f29136d));
+            BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(byteArrayOutputStream, f28280d));
             b1Var.a(z7Var, bufferedWriter);
             byte[] byteArray = byteArrayOutputStream.toByteArray();
             bufferedWriter.close();
@@ -473,7 +473,7 @@ public final class l6 {
                 try {
                     ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
                     try {
-                        BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(byteArrayOutputStream, f29136d));
+                        BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(byteArrayOutputStream, f28280d));
                         b1Var.a(m3Var, bufferedWriter);
                         byte[] byteArray = byteArrayOutputStream.toByteArray();
                         bufferedWriter.close();
@@ -553,9 +553,9 @@ public final class l6 {
     }
 
     public io.sentry.clientreport.c H(b1 b1Var) {
-        m6 m6Var = this.f29137a;
+        m6 m6Var = this.f28281a;
         if (m6Var != null && m6Var.b() == v6.ClientReport) {
-            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new ByteArrayInputStream(I()), f29136d));
+            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new ByteArrayInputStream(I()), f28280d));
             try {
                 io.sentry.clientreport.c cVar = (io.sentry.clientreport.c) b1Var.c(bufferedReader, io.sentry.clientreport.c.class);
                 bufferedReader.close();
@@ -574,16 +574,16 @@ public final class l6 {
 
     public byte[] I() {
         Callable callable;
-        if (this.f29139c == null && (callable = this.f29138b) != null) {
-            this.f29139c = (byte[]) callable.call();
+        if (this.f28283c == null && (callable = this.f28282b) != null) {
+            this.f28283c = (byte[]) callable.call();
         }
-        return this.f29139c;
+        return this.f28283c;
     }
 
     public SentryEvent J(b1 b1Var) {
-        m6 m6Var = this.f29137a;
+        m6 m6Var = this.f28281a;
         if (m6Var != null && m6Var.b() == v6.Event) {
-            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new ByteArrayInputStream(I()), f29136d));
+            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new ByteArrayInputStream(I()), f28280d));
             try {
                 SentryEvent sentryEvent = (SentryEvent) b1Var.c(bufferedReader, SentryEvent.class);
                 bufferedReader.close();
@@ -601,13 +601,13 @@ public final class l6 {
     }
 
     public m6 K() {
-        return this.f29137a;
+        return this.f28281a;
     }
 
     public z6 L(b1 b1Var) {
-        m6 m6Var = this.f29137a;
+        m6 m6Var = this.f28281a;
         if (m6Var != null && m6Var.b() == v6.Log) {
-            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new ByteArrayInputStream(I()), f29136d));
+            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new ByteArrayInputStream(I()), f28280d));
             try {
                 z6 z6Var = (z6) b1Var.c(bufferedReader, z6.class);
                 bufferedReader.close();
@@ -625,9 +625,9 @@ public final class l6 {
     }
 
     public io.sentry.protocol.d0 M(b1 b1Var) {
-        m6 m6Var = this.f29137a;
+        m6 m6Var = this.f28281a;
         if (m6Var != null && m6Var.b() == v6.Transaction) {
-            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new ByteArrayInputStream(I()), f29136d));
+            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new ByteArrayInputStream(I()), f28280d));
             try {
                 io.sentry.protocol.d0 d0Var = (io.sentry.protocol.d0) b1Var.c(bufferedReader, io.sentry.protocol.d0.class);
                 bufferedReader.close();
@@ -645,8 +645,8 @@ public final class l6 {
     }
 
     l6(m6 m6Var, Callable callable) {
-        this.f29137a = (m6) io.sentry.util.y.c(m6Var, "SentryEnvelopeItemHeader is required.");
-        this.f29138b = (Callable) io.sentry.util.y.c(callable, "DataFactory is required.");
-        this.f29139c = null;
+        this.f28281a = (m6) io.sentry.util.y.c(m6Var, "SentryEnvelopeItemHeader is required.");
+        this.f28282b = (Callable) io.sentry.util.y.c(callable, "DataFactory is required.");
+        this.f28283c = null;
     }
 }

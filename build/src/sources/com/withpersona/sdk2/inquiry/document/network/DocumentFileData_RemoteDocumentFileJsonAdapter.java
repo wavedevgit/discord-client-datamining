@@ -14,54 +14,54 @@ import org.jetbrains.annotations.NotNull;
 public final class DocumentFileData_RemoteDocumentFileJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f18518a;
+    private final m.b f18498a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f18519b;
+    private final h f18499b;
 
     public DocumentFileData_RemoteDocumentFileJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("url", "filename");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f18518a = a10;
+        this.f18498a = a10;
         h f10 = moshi.f(String.class, x0.d(), "url");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f18519b = f10;
+        this.f18499b = f10;
     }
 
     @Override // com.squareup.moshi.h
     /* renamed from: a */
     public DocumentFileData.RemoteDocumentFile fromJson(m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         String str = null;
         String str2 = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.f18518a);
-            if (W != -1) {
-                if (W != 0) {
-                    if (W == 1 && (str2 = (String) this.f18519b.fromJson(reader)) == null) {
-                        throw ym.c.x("filename", "filename", reader);
+            int J = reader.J(this.f18498a);
+            if (J != -1) {
+                if (J != 0) {
+                    if (J == 1 && (str2 = (String) this.f18499b.fromJson(reader)) == null) {
+                        throw an.c.x("filename", "filename", reader);
                     }
                 } else {
-                    str = (String) this.f18519b.fromJson(reader);
+                    str = (String) this.f18499b.fromJson(reader);
                     if (str == null) {
-                        throw ym.c.x("url", "url", reader);
+                        throw an.c.x("url", "url", reader);
                     }
                 }
             } else {
                 reader.E0();
-                reader.P();
+                reader.S();
             }
         }
-        reader.z();
+        reader.D();
         if (str != null) {
             if (str2 != null) {
                 return new DocumentFileData.RemoteDocumentFile(str, str2);
             }
-            throw ym.c.o("filename", "filename", reader);
+            throw an.c.o("filename", "filename", reader);
         }
-        throw ym.c.o("url", "url", reader);
+        throw an.c.o("url", "url", reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -70,11 +70,11 @@ public final class DocumentFileData_RemoteDocumentFileJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (remoteDocumentFile != null) {
             writer.k();
-            writer.W("url");
-            this.f18519b.toJson(writer, remoteDocumentFile.b());
-            writer.W("filename");
-            this.f18519b.toJson(writer, remoteDocumentFile.a());
-            writer.E();
+            writer.J("url");
+            this.f18499b.toJson(writer, remoteDocumentFile.b());
+            writer.J("filename");
+            this.f18499b.toJson(writer, remoteDocumentFile.a());
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

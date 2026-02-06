@@ -1,10 +1,24 @@
 package wh;
+
+import com.google.android.play.core.assetpacks.q4;
+import k4.y;
+import xh.s;
+import xh.t;
+import xh.w;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class k {
-    public static Object a(Object obj, Object obj2) {
-        if (obj != null) {
-            return obj;
-        }
-        throw new NullPointerException((String) obj2);
+public final class k implements t {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final w f53831a;
+
+    public k(w wVar) {
+        this.f53831a = wVar;
+    }
+
+    @Override // xh.w
+    public final /* bridge */ /* synthetic */ Object a() {
+        y e10 = y.e(((q4) this.f53831a).b());
+        s.a(e10);
+        return e10;
     }
 }

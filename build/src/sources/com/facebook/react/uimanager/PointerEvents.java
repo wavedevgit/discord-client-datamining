@@ -67,7 +67,7 @@ public final class PointerEvents {
     static {
         PointerEvents[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = vr.a.a($values);
+        $ENTRIES = xr.a.a($values);
         Companion = new Companion(null);
     }
 

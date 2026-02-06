@@ -42,21 +42,21 @@ public final class AttributeStyles_LocalImageFillColorStyleJsonAdapter extends h
     @NotNull
     public AttributeStyles.LocalImageFillColorStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         StyleElements.SimpleElementColor simpleElementColor = null;
         StyleElements.SimpleElementColor simpleElementColor2 = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 simpleElementColor = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
-            } else if (W == 1) {
+            } else if (J == 1) {
                 simpleElementColor2 = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
             }
         }
-        reader.z();
+        reader.D();
         return new AttributeStyles.LocalImageFillColorStyle(simpleElementColor, simpleElementColor2);
     }
 
@@ -65,11 +65,11 @@ public final class AttributeStyles_LocalImageFillColorStyleJsonAdapter extends h
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (localImageFillColorStyle != null) {
             writer.k();
-            writer.W("base");
+            writer.J("base");
             this.nullableSimpleElementColorAdapter.toJson(writer, localImageFillColorStyle.getBase());
-            writer.W(AppStateModule.APP_STATE_BACKGROUND);
+            writer.J(AppStateModule.APP_STATE_BACKGROUND);
             this.nullableSimpleElementColorAdapter.toJson(writer, localImageFillColorStyle.getBackground());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

@@ -47,15 +47,15 @@ public final class CreateAttachmentAccessoryKt {
 
     @NotNull
     public static final MessageAttachmentAccessory createAttachmentAccessory(@NotNull Attachment attachment, @NotNull Message message, int i10, int i11, int i12, Boolean bool) {
-        String m239getId3Eiw7ao;
+        String m237getId3Eiw7ao;
         boolean z10;
         boolean z11;
         boolean z12;
         Intrinsics.checkNotNullParameter(attachment, "<this>");
         Intrinsics.checkNotNullParameter(message, "message");
         SpoilerAttributes forAttachment = SpoilerAttributes.Companion.forAttachment(attachment, message, i10, bool);
-        if (!Intrinsics.areEqual(message.isCurrentUserMessageAuthor(), Boolean.TRUE) || (m239getId3Eiw7ao = message.m240getNonceN_6c4I0()) == null) {
-            m239getId3Eiw7ao = message.m239getId3Eiw7ao();
+        if (!Intrinsics.areEqual(message.isCurrentUserMessageAuthor(), Boolean.TRUE) || (m237getId3Eiw7ao = message.m238getNonceN_6c4I0()) == null) {
+            m237getId3Eiw7ao = message.m237getId3Eiw7ao();
         }
         int i13 = WhenMappings.$EnumSwitchMapping$0[attachment.type().ordinal()];
         boolean z13 = false;
@@ -63,14 +63,14 @@ public final class CreateAttachmentAccessoryKt {
             if (i13 != 2) {
                 if (i13 != 3) {
                     if (i13 == 4) {
-                        return new AudioAttachmentMessageAccessory(message.m236getChannelIdo4g7jtM(), m239getId3Eiw7ao, attachment, i10, message.getAttachmentsOpacity(), message.m235getAuthorIdwUX8bhU(), message.getAudioAttachmentBackgroundColor(), MessageFlagKt.hasMessageFlag(Long.valueOf(message.getFlags()), MessageFlag.IS_VOICE_MESSAGE), null);
+                        return new AudioAttachmentMessageAccessory(message.m234getChannelIdo4g7jtM(), m237getId3Eiw7ao, attachment, i10, message.getAttachmentsOpacity(), message.m233getAuthorIdwUX8bhU(), message.getAudioAttachmentBackgroundColor(), MessageFlagKt.hasMessageFlag(Long.valueOf(message.getFlags()), MessageFlag.IS_VOICE_MESSAGE), null);
                     }
-                    throw new or.p();
+                    throw new qr.p();
                 }
-                return new FileAttachmentMessageAccessory(m239getId3Eiw7ao, attachment, i10, message.getAttachmentsOpacity(), forAttachment, attachment.getUploaderId(), attachment.getUploaderItemId(), null);
+                return new FileAttachmentMessageAccessory(m237getId3Eiw7ao, attachment, i10, message.getAttachmentsOpacity(), forAttachment, attachment.getUploaderId(), attachment.getUploaderItemId(), null);
             }
-            String str = m239getId3Eiw7ao;
-            long m236getChannelIdo4g7jtM = message.m236getChannelIdo4g7jtM();
+            String str = m237getId3Eiw7ao;
+            long m234getChannelIdo4g7jtM = message.m234getChannelIdo4g7jtM();
             Boolean useAttachmentGridLayout = message.getUseAttachmentGridLayout();
             if (useAttachmentGridLayout != null) {
                 z10 = useAttachmentGridLayout.booleanValue();
@@ -88,9 +88,9 @@ public final class CreateAttachmentAccessoryKt {
             } else {
                 z12 = false;
             }
-            return new VideoAttachmentMessageAccessory(m236getChannelIdo4g7jtM, str, i10, attachment, message.getAttachmentsOpacity(), i11, i12, forAttachment, z10, z12, null);
+            return new VideoAttachmentMessageAccessory(m234getChannelIdo4g7jtM, str, i10, attachment, message.getAttachmentsOpacity(), i11, i12, forAttachment, z10, z12, null);
         }
-        String str2 = m239getId3Eiw7ao;
+        String str2 = m237getId3Eiw7ao;
         Boolean useAttachmentGridLayout2 = message.getUseAttachmentGridLayout();
         if (useAttachmentGridLayout2 != null) {
             z13 = useAttachmentGridLayout2.booleanValue();

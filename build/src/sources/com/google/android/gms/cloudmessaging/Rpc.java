@@ -26,20 +26,20 @@ import java.util.concurrent.ScheduledThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import xg.j;
-import xg.k;
-import xg.m;
+import yg.j;
+import yg.k;
+import yg.m;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public class Rpc {
 
     /* renamed from: h  reason: collision with root package name */
-    private static int f13742h;
+    private static int f13703h;
 
     /* renamed from: i  reason: collision with root package name */
-    private static PendingIntent f13743i;
+    private static PendingIntent f13704i;
 
     /* renamed from: j  reason: collision with root package name */
-    private static final Executor f13744j = new Executor() { // from class: df.a0
+    private static final Executor f13705j = new Executor() { // from class: df.a0
         @Override // java.util.concurrent.Executor
         public final void execute(Runnable runnable) {
             runnable.run();
@@ -47,36 +47,36 @@ public class Rpc {
     };
 
     /* renamed from: k  reason: collision with root package name */
-    private static final Pattern f13745k = Pattern.compile("\\|ID\\|([^|]+)\\|:?+(.*)");
+    private static final Pattern f13706k = Pattern.compile("\\|ID\\|([^|]+)\\|:?+(.*)");
 
     /* renamed from: b  reason: collision with root package name */
-    private final Context f13747b;
+    private final Context f13708b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final z f13748c;
+    private final z f13709c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final ScheduledExecutorService f13749d;
+    private final ScheduledExecutorService f13710d;
 
     /* renamed from: f  reason: collision with root package name */
-    private Messenger f13751f;
+    private Messenger f13712f;
 
     /* renamed from: g  reason: collision with root package name */
-    private h f13752g;
+    private h f13713g;
 
     /* renamed from: a  reason: collision with root package name */
-    private final SimpleArrayMap f13746a = new SimpleArrayMap();
+    private final SimpleArrayMap f13707a = new SimpleArrayMap();
 
     /* renamed from: e  reason: collision with root package name */
-    private final Messenger f13750e = new Messenger(new c(this, Looper.getMainLooper()));
+    private final Messenger f13711e = new Messenger(new c(this, Looper.getMainLooper()));
 
     public Rpc(Context context) {
-        this.f13747b = context;
-        this.f13748c = new z(context);
+        this.f13708b = context;
+        this.f13709c = new z(context);
         ScheduledThreadPoolExecutor scheduledThreadPoolExecutor = new ScheduledThreadPoolExecutor(1);
         scheduledThreadPoolExecutor.setKeepAliveTime(60L, TimeUnit.SECONDS);
         scheduledThreadPoolExecutor.allowCoreThreadTimeOut(true);
-        this.f13749d = scheduledThreadPoolExecutor;
+        this.f13710d = scheduledThreadPoolExecutor;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -97,10 +97,10 @@ public class Rpc {
                 if (intent.hasExtra("google.messenger")) {
                     Parcelable parcelableExtra = intent.getParcelableExtra("google.messenger");
                     if (parcelableExtra instanceof h) {
-                        rpc.f13752g = (h) parcelableExtra;
+                        rpc.f13713g = (h) parcelableExtra;
                     }
                     if (parcelableExtra instanceof Messenger) {
-                        rpc.f13751f = (Messenger) parcelableExtra;
+                        rpc.f13712f = (Messenger) parcelableExtra;
                     }
                 }
                 Intent intent2 = (Intent) message.obj;
@@ -139,10 +139,10 @@ public class Rpc {
                         Log.w("Rpc", "Unexpected structured response ".concat(stringExtra2));
                         return;
                     }
-                    synchronized (rpc.f13746a) {
-                        for (int i10 = 0; i10 < rpc.f13746a.size(); i10++) {
+                    synchronized (rpc.f13707a) {
+                        for (int i10 = 0; i10 < rpc.f13707a.size(); i10++) {
                             try {
-                                rpc.l((String) rpc.f13746a.f(i10), intent2.getExtras());
+                                rpc.l((String) rpc.f13707a.f(i10), intent2.getExtras());
                             } catch (Throwable th2) {
                                 throw th2;
                             }
@@ -150,7 +150,7 @@ public class Rpc {
                     }
                     return;
                 }
-                Matcher matcher = f13745k.matcher(stringExtra);
+                Matcher matcher = f13706k.matcher(stringExtra);
                 if (!matcher.matches()) {
                     if (Log.isLoggable("Rpc", 3)) {
                         Log.d("Rpc", "Unexpected response string: ".concat(stringExtra));
@@ -175,47 +175,47 @@ public class Rpc {
     private final Task i(Bundle bundle) {
         final String j10 = j();
         final k kVar = new k();
-        synchronized (this.f13746a) {
-            this.f13746a.put(j10, kVar);
+        synchronized (this.f13707a) {
+            this.f13707a.put(j10, kVar);
         }
         Intent intent = new Intent();
         intent.setPackage("com.google.android.gms");
-        if (this.f13748c.b() == 2) {
+        if (this.f13709c.b() == 2) {
             intent.setAction("com.google.iid.TOKEN_REQUEST");
         } else {
             intent.setAction("com.google.android.c2dm.intent.REGISTER");
         }
         intent.putExtras(bundle);
-        k(this.f13747b, intent);
+        k(this.f13708b, intent);
         intent.putExtra("kid", "|ID|" + j10 + "|");
         if (Log.isLoggable("Rpc", 3)) {
             Log.d("Rpc", "Sending ".concat(String.valueOf(intent.getExtras())));
         }
-        intent.putExtra("google.messenger", this.f13750e);
-        if (this.f13751f != null || this.f13752g != null) {
+        intent.putExtra("google.messenger", this.f13711e);
+        if (this.f13712f != null || this.f13713g != null) {
             Message obtain = Message.obtain();
             obtain.obj = intent;
             try {
-                Messenger messenger = this.f13751f;
+                Messenger messenger = this.f13712f;
                 if (messenger != null) {
                     messenger.send(obtain);
                 } else {
-                    this.f13752g.b(obtain);
+                    this.f13713g.b(obtain);
                 }
             } catch (RemoteException unused) {
                 if (Log.isLoggable("Rpc", 3)) {
                     Log.d("Rpc", "Messenger failed, fallback to startService");
                 }
             }
-            final ScheduledFuture<?> schedule = this.f13749d.schedule(new Runnable() { // from class: df.e
+            final ScheduledFuture<?> schedule = this.f13710d.schedule(new Runnable() { // from class: df.e
                 @Override // java.lang.Runnable
                 public final void run() {
-                    if (xg.k.this.d(new IOException("TIMEOUT"))) {
+                    if (yg.k.this.d(new IOException("TIMEOUT"))) {
                         Log.w("Rpc", "No response");
                     }
                 }
             }, 30L, TimeUnit.SECONDS);
-            kVar.a().c(f13744j, new OnCompleteListener() { // from class: com.google.android.gms.cloudmessaging.b
+            kVar.a().c(f13705j, new OnCompleteListener() { // from class: com.google.android.gms.cloudmessaging.b
                 @Override // com.google.android.gms.tasks.OnCompleteListener
                 public final void onComplete(Task task) {
                     Rpc.this.h(j10, schedule, task);
@@ -223,20 +223,20 @@ public class Rpc {
             });
             return kVar.a();
         }
-        if (this.f13748c.b() == 2) {
-            this.f13747b.sendBroadcast(intent);
+        if (this.f13709c.b() == 2) {
+            this.f13708b.sendBroadcast(intent);
         } else {
-            this.f13747b.startService(intent);
+            this.f13708b.startService(intent);
         }
-        final ScheduledFuture schedule2 = this.f13749d.schedule(new Runnable() { // from class: df.e
+        final ScheduledFuture schedule2 = this.f13710d.schedule(new Runnable() { // from class: df.e
             @Override // java.lang.Runnable
             public final void run() {
-                if (xg.k.this.d(new IOException("TIMEOUT"))) {
+                if (yg.k.this.d(new IOException("TIMEOUT"))) {
                     Log.w("Rpc", "No response");
                 }
             }
         }, 30L, TimeUnit.SECONDS);
-        kVar.a().c(f13744j, new OnCompleteListener() { // from class: com.google.android.gms.cloudmessaging.b
+        kVar.a().c(f13705j, new OnCompleteListener() { // from class: com.google.android.gms.cloudmessaging.b
             @Override // com.google.android.gms.tasks.OnCompleteListener
             public final void onComplete(Task task) {
                 Rpc.this.h(j10, schedule2, task);
@@ -248,8 +248,8 @@ public class Rpc {
     private static synchronized String j() {
         String num;
         synchronized (Rpc.class) {
-            int i10 = f13742h;
-            f13742h = i10 + 1;
+            int i10 = f13703h;
+            f13703h = i10 + 1;
             num = Integer.toString(i10);
         }
         return num;
@@ -258,12 +258,12 @@ public class Rpc {
     private static synchronized void k(Context context, Intent intent) {
         synchronized (Rpc.class) {
             try {
-                if (f13743i == null) {
+                if (f13704i == null) {
                     Intent intent2 = new Intent();
                     intent2.setPackage("com.google.example.invalidpackage");
-                    f13743i = PendingIntent.getBroadcast(context, 0, intent2, gg.a.f24912a);
+                    f13704i = PendingIntent.getBroadcast(context, 0, intent2, gg.a.f25165a);
                 }
-                intent.putExtra("app", f13743i);
+                intent.putExtra("app", f13704i);
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -271,9 +271,9 @@ public class Rpc {
     }
 
     private final void l(String str, Bundle bundle) {
-        synchronized (this.f13746a) {
+        synchronized (this.f13707a) {
             try {
-                k kVar = (k) this.f13746a.remove(str);
+                k kVar = (k) this.f13707a.remove(str);
                 if (kVar == null) {
                     Log.w("Rpc", "Missing callback for " + str);
                     return;
@@ -293,9 +293,9 @@ public class Rpc {
     }
 
     public Task a() {
-        if (this.f13748c.a() >= 241100000) {
-            return y.b(this.f13747b).d(5, Bundle.EMPTY).h(f13744j, new xg.c() { // from class: df.d
-                @Override // xg.c
+        if (this.f13709c.a() >= 241100000) {
+            return y.b(this.f13708b).d(5, Bundle.EMPTY).h(f13705j, new yg.c() { // from class: df.d
+                @Override // yg.c
                 public final Object a(Task task) {
                     Intent intent = (Intent) ((Bundle) task.l()).getParcelable("notification_data");
                     if (intent != null) {
@@ -309,23 +309,23 @@ public class Rpc {
     }
 
     public Task b(a aVar) {
-        if (this.f13748c.a() >= 233700000) {
+        if (this.f13709c.a() >= 233700000) {
             Bundle bundle = new Bundle();
             bundle.putString("google.message_id", aVar.c());
             Integer d10 = aVar.d();
             if (d10 != null) {
                 bundle.putInt("google.product_id", d10.intValue());
             }
-            return y.b(this.f13747b).c(3, bundle);
+            return y.b(this.f13708b).c(3, bundle);
         }
         return m.e(new IOException("SERVICE_NOT_AVAILABLE"));
     }
 
     public Task c(final Bundle bundle) {
-        if (this.f13748c.a() < 12000000) {
-            if (this.f13748c.b() != 0) {
-                return i(bundle).i(f13744j, new xg.c() { // from class: com.google.android.gms.cloudmessaging.f
-                    @Override // xg.c
+        if (this.f13709c.a() < 12000000) {
+            if (this.f13709c.b() != 0) {
+                return i(bundle).i(f13705j, new yg.c() { // from class: com.google.android.gms.cloudmessaging.f
+                    @Override // yg.c
                     public final Object a(Task task) {
                         return Rpc.this.f(bundle, task);
                     }
@@ -333,8 +333,8 @@ public class Rpc {
             }
             return m.e(new IOException("MISSING_INSTANCEID_SERVICE"));
         }
-        return y.b(this.f13747b).d(1, bundle).h(f13744j, new xg.c() { // from class: df.c
-            @Override // xg.c
+        return y.b(this.f13708b).d(1, bundle).h(f13705j, new yg.c() { // from class: df.c
+            @Override // yg.c
             public final Object a(Task task) {
                 if (task.p()) {
                     return (Bundle) task.l();
@@ -348,10 +348,10 @@ public class Rpc {
     }
 
     public Task d(boolean z10) {
-        if (this.f13748c.a() >= 241100000) {
+        if (this.f13709c.a() >= 241100000) {
             Bundle bundle = new Bundle();
             bundle.putBoolean("proxy_retention", z10);
-            return y.b(this.f13747b).c(4, bundle);
+            return y.b(this.f13708b).c(4, bundle);
         }
         return m.e(new IOException("SERVICE_NOT_AVAILABLE"));
     }
@@ -359,8 +359,8 @@ public class Rpc {
     /* JADX INFO: Access modifiers changed from: package-private */
     public final /* synthetic */ Task f(Bundle bundle, Task task) {
         if (task.p() && m((Bundle) task.l())) {
-            return i(bundle).q(f13744j, new j() { // from class: com.google.android.gms.cloudmessaging.e
-                @Override // xg.j
+            return i(bundle).q(f13705j, new j() { // from class: com.google.android.gms.cloudmessaging.e
+                @Override // yg.j
                 public final Task a(Object obj) {
                     return Rpc.e((Bundle) obj);
                 }
@@ -371,8 +371,8 @@ public class Rpc {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final /* synthetic */ void h(String str, ScheduledFuture scheduledFuture, Task task) {
-        synchronized (this.f13746a) {
-            this.f13746a.remove(str);
+        synchronized (this.f13707a) {
+            this.f13707a.remove(str);
         }
         scheduledFuture.cancel(false);
     }

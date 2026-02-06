@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/safety_hub/hooks/useEmitAppealIngestionEvent.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() { // Environment: var1
-        _fun80074: for (var _fun80074_ip = 0;;) switch (_fun80074_ip) {
+        _fun80098: for (var _fun80098_ip = 0;;) switch (_fun80098_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var4 = _closure1_slot2;
@@ -72,8 +72,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = null;
                 var1 = var6;
                 if (!(var5 == var1)) {
-                    _fun80074_ip = 92;
-                    continue _fun80074
+                    _fun80098_ip = 92;
+                    continue _fun80098
                 }
             case 88:
                 var1 = _closure1_slot6;
@@ -111,7 +111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1[2] = var5;
                 var1[3] = var4;
                 var0 = function(arg0) { // Environment: var0
-                    _fun80077: for (var _fun80077_ip = 0;;) switch (_fun80077_ip) {
+                    _fun80101: for (var _fun80101_ip = 0;;) switch (_fun80101_ip) {
                         case 0:
                             var2 = _closure1_slot1;
                             var1 = _closure1_slot2;
@@ -132,8 +132,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var7 = null;
                             var8 = var7 != var8;
                             if (!var8) {
-                                _fun80077_ip = 107;
-                                continue _fun80077
+                                _fun80101_ip = 107;
+                                continue _fun80101
                             }
                         case 79:
                             var8 = global;
@@ -163,4 +163,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useEmitAppealIngestionEvent = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 10173, 5945, 660, 566, 10179, 10181, 795, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 10179, 5949, 660, 566, 10185, 10187, 795, 2]);

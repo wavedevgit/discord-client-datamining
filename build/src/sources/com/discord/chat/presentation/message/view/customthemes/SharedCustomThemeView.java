@@ -56,11 +56,11 @@ public final class SharedCustomThemeView extends LinearLayout {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void bind_pPZZVto$lambda$2(Function1 function1, String str, View view) {
-        function1.invoke(MessageId.m1085boximpl(str));
+        function1.invoke(MessageId.m1083boximpl(str));
     }
 
     /* renamed from: bind-pPZZVto  reason: not valid java name */
-    public final void m710bindpPZZVto(@NotNull final String messageId, @NotNull SharedCustomThemeData sharedCustomThemeData, String str, @NotNull final Function1<? super MessageId, Unit> onTapPreview, @NotNull Function1<? super MessageId, Unit> onViewed) {
+    public final void m708bindpPZZVto(@NotNull final String messageId, @NotNull SharedCustomThemeData sharedCustomThemeData, String str, @NotNull final Function1<? super MessageId, Unit> onTapPreview, @NotNull Function1<? super MessageId, Unit> onViewed) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(sharedCustomThemeData, "sharedCustomThemeData");
         Intrinsics.checkNotNullParameter(onTapPreview, "onTapPreview");
@@ -156,7 +156,7 @@ public final class SharedCustomThemeView extends LinearLayout {
         if (!this.hasViewed && (str = this.messageId) != null) {
             Function1<? super MessageId, Unit> function1 = this.onViewed;
             if (function1 != null) {
-                function1.invoke(MessageId.m1085boximpl(str));
+                function1.invoke(MessageId.m1083boximpl(str));
             }
             this.hasViewed = true;
         }

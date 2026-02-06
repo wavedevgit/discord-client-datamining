@@ -7,7 +7,7 @@ import kotlin.reflect.jvm.internal.impl.descriptors.ValueParameterDescriptor;
 public class o implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final o f34067d = new o();
+    public static final o f34087d = new o();
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {

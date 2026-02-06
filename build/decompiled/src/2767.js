@@ -1,74 +1,97 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var3 = exports;
-    var2 = global;
-    var6 = var2.Object;
-    var5 = var6.defineProperty;
-    var4 = {};
-    var0 = true;
-    var4.value = var0;
-    var0 = '__esModule';
-    var0 = var5.bind(var6)(var3, var0, var4);
-    var0 = function arg0() {
-        _fun22740: for (var _fun22740_ip = 0;;) switch (_fun22740_ip) {
+    var5 = require;
+    var1 = exports;
+    var6 = dependencyMap;
+    var _closure1_slot0 = var5;
+    var _closure1_slot1 = var6;
+    var4 = function arg0() {
+        _fun22738: for (var _fun22738_ip = 0;;) switch (_fun22738_ip) {
             case 0:
                 var2 = arg0;
-                var1 = _closure1_slot0;
-                if (var2) {
-                    _fun22740_ip = 23;
-                    continue _fun22740
+                if (!var2) {
+                    _fun22738_ip = 18;
+                    continue _fun22738
                 }
-            case 13:
-                var0 = _closure1_slot1;
-                var0 = var1[var0];
-                _fun22740_ip = 27;
-                continue _fun22740;
-            case 23:
-                var0 = var1[var2];
+            case 6:
+                var1 = var2.__esModule;
+                var0 = var2;
+                if (var1) {
+                    _fun22738_ip = 27;
+                    continue _fun22738
+                }
+            case 18:
+                var1 = {};
+                var1.default = var2;
+                var0 = var1;
             case 27:
                 return var0;
         }
     };
-    var3.getRoundingMethod = var0;
-    var0 = {};
-    var3 = var2.Math;
-    var3 = var3.ceil;
-    var0.ceil = var3;
-    var3 = var2.Math;
-    var3 = var3.round;
-    var0.round = var3;
-    var2 = var2.Math;
-    var2 = var2.floor;
-    var0.floor = var2;
-    var2 = function arg0() {
-        _fun22741: for (var _fun22741_ip = 0;;) switch (_fun22741_ip) {
+    var0 = global;
+    var8 = var0.Object;
+    var7 = var8.defineProperty;
+    var2 = {};
+    var0 = true;
+    var2.value = var0;
+    var0 = '__esModule';
+    var0 = var7.bind(var8)(var1, var0, var2);
+    var0 = function arg0, arg1, arg2() {
+        _fun22739: for (var _fun22739_ip = 0;;) switch (_fun22739_ip) {
             case 0:
+                var4 = arg2;
+                var2 = undefined;
+                var0 = undefined;
+                var1 = _closure1_slot3;
+                var3 = var1.default;
+                var0 = arguments;
+                var1 = var0;
+                var0 = 2;
+                var1 = var3.bind(var2)(var0, var1);
+                var1 = _closure1_slot2;
+                var6 = var1.default;
                 var3 = arg0;
-                var0 = 0;
-                if (!(!(var3 < var0))) {
-                    _fun22741_ip = 30;
-                    continue _fun22741
+                var1 = arg1;
+                var1 = var6.bind(var2)(var3, var1);
+                var3 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var0 = var5[var0];
+                var0 = var3.bind(var2)(var0);
+                var0 = var0.millisecondsInHour;
+                var1 = var1 / var0;
+                var0 = 3;
+                var0 = var5[var0];
+                var0 = var3.bind(var2)(var0);
+                var3 = var0.getRoundingMethod;
+                var0 = null;
+                var5 = var0 == var4;
+                var0 = undefined;
+                if (var5) {
+                    _fun22739_ip = 116;
+                    continue _fun22739
                 }
-            case 9:
-                var0 = global;
-                var1 = var0.Math;
-                var0 = var1.floor;
-                var0 = var0.bind(var1)(var3);
-                _fun22741_ip = 49;
-                continue _fun22741;
-            case 30:
-                var1 = global;
-                var2 = var1.Math;
-                var1 = var2.ceil;
-                var0 = var1.bind(var2)(var3);
-            case 49:
+            case 110:
+                var0 = var4.roundingMethod;
+            case 116:
+                var0 = var3.bind(var2)(var0);
+                var0 = var0.bind(var2)(var1);
                 return var0;
         }
     };
-    var0.trunc = var2;
-    var _closure1_slot0 = var0;
-    var0 = 'trunc';
-    var _closure1_slot1 = var0;
+    var1.default = var0;
+    var0 = 0;
+    var2 = var6[var0];
     var0 = undefined;
+    var2 = var5.bind(var0)(var2);
+    var2 = var4.bind(var0)(var2);
+    var _closure1_slot2 = var2;
+    var2 = 1;
+    var2 = var6[var2];
+    var2 = var5.bind(var0)(var2);
+    var2 = var4.bind(var0)(var2);
+    var _closure1_slot3 = var2;
+    var2 = var1.default;
+    var1 = arg4;
+    var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2768, 2576, 2754, 2769]);

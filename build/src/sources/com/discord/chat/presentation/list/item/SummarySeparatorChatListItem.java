@@ -98,20 +98,20 @@ public final class SummarySeparatorChatListItem extends ChatListItem {
 
     @NotNull
     /* renamed from: getCurrentMsgId-3Eiw7ao  reason: not valid java name */
-    public final String m500getCurrentMsgId3Eiw7ao() {
+    public final String m498getCurrentMsgId3Eiw7ao() {
         if (this.isBeforeContent) {
-            return this.summary.m433getStartId3Eiw7ao();
+            return this.summary.m431getStartId3Eiw7ao();
         }
-        return this.summary.m432getEndId3Eiw7ao();
+        return this.summary.m430getEndId3Eiw7ao();
     }
 
     @NotNull
     /* renamed from: getJumpToMsgId-3Eiw7ao  reason: not valid java name */
-    public final String m501getJumpToMsgId3Eiw7ao() {
+    public final String m499getJumpToMsgId3Eiw7ao() {
         if (this.isBeforeContent) {
-            return this.summary.m432getEndId3Eiw7ao();
+            return this.summary.m430getEndId3Eiw7ao();
         }
-        return this.summary.m433getStartId3Eiw7ao();
+        return this.summary.m431getStartId3Eiw7ao();
     }
 
     @NotNull

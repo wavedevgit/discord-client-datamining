@@ -8,68 +8,68 @@ import java.util.concurrent.Executor;
 public final class k3 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final n0 f15849a;
+    private final n0 f15829a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final r2 f15850b;
+    private final r2 f15830b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final b2 f15851c;
+    private final b2 f15831c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final o3 f15852d;
+    private final o3 f15832d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final wh.r f15853e;
+    private final xh.r f15833e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final wh.r f15854f;
+    private final xh.r f15834f;
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public k3(n0 n0Var, wh.r rVar, r2 r2Var, wh.r rVar2, b2 b2Var, o3 o3Var) {
-        this.f15849a = n0Var;
-        this.f15853e = rVar;
-        this.f15850b = r2Var;
-        this.f15854f = rVar2;
-        this.f15851c = b2Var;
-        this.f15852d = o3Var;
+    public k3(n0 n0Var, xh.r rVar, r2 r2Var, xh.r rVar2, b2 b2Var, o3 o3Var) {
+        this.f15829a = n0Var;
+        this.f15833e = rVar;
+        this.f15830b = r2Var;
+        this.f15834f = rVar2;
+        this.f15831c = b2Var;
+        this.f15832d = o3Var;
     }
 
     public final void b(final i3 i3Var) {
-        n0 n0Var = this.f15849a;
-        String str = i3Var.f16034b;
-        int i10 = i3Var.f15799c;
-        long j10 = i3Var.f15800d;
+        n0 n0Var = this.f15829a;
+        String str = i3Var.f16014b;
+        int i10 = i3Var.f15779c;
+        long j10 = i3Var.f15780d;
         File w10 = n0Var.w(str, i10, j10);
         File y10 = n0Var.y(str, i10, j10);
         if (w10.exists() && y10.exists()) {
-            File u10 = this.f15849a.u(i3Var.f16034b, i3Var.f15799c, i3Var.f15800d);
+            File u10 = this.f15829a.u(i3Var.f16014b, i3Var.f15779c, i3Var.f15780d);
             u10.mkdirs();
             if (w10.renameTo(u10)) {
-                new File(this.f15849a.u(i3Var.f16034b, i3Var.f15799c, i3Var.f15800d), "merge.tmp").delete();
-                File v10 = this.f15849a.v(i3Var.f16034b, i3Var.f15799c, i3Var.f15800d);
+                new File(this.f15829a.u(i3Var.f16014b, i3Var.f15779c, i3Var.f15780d), "merge.tmp").delete();
+                File v10 = this.f15829a.v(i3Var.f16014b, i3Var.f15779c, i3Var.f15780d);
                 v10.mkdirs();
                 if (y10.renameTo(v10)) {
                     try {
-                        this.f15852d.b(i3Var.f16034b, i3Var.f15799c, i3Var.f15800d, i3Var.f15801e);
-                        ((Executor) this.f15854f.a()).execute(new Runnable() { // from class: com.google.android.play.core.assetpacks.j3
+                        this.f15832d.b(i3Var.f16014b, i3Var.f15779c, i3Var.f15780d, i3Var.f15781e);
+                        ((Executor) this.f15834f.a()).execute(new Runnable() { // from class: com.google.android.play.core.assetpacks.j3
                             @Override // java.lang.Runnable
                             public final void run() {
-                                k3.this.f15849a.b(r1.f16034b, r1.f15799c, i3Var.f15800d);
+                                k3.this.f15829a.b(r1.f16014b, r1.f15779c, i3Var.f15780d);
                             }
                         });
-                        this.f15850b.k(i3Var.f16034b, i3Var.f15799c, i3Var.f15800d);
-                        this.f15851c.c(i3Var.f16034b);
-                        ((t4) this.f15853e.a()).b(i3Var.f16033a, i3Var.f16034b);
+                        this.f15830b.k(i3Var.f16014b, i3Var.f15779c, i3Var.f15780d);
+                        this.f15831c.c(i3Var.f16014b);
+                        ((t4) this.f15833e.a()).b(i3Var.f16013a, i3Var.f16014b);
                         return;
                     } catch (IOException e10) {
-                        throw new w1(String.format("Could not write asset pack version tag for pack %s: %s", i3Var.f16034b, e10.getMessage()), i3Var.f16033a);
+                        throw new w1(String.format("Could not write asset pack version tag for pack %s: %s", i3Var.f16014b, e10.getMessage()), i3Var.f16013a);
                     }
                 }
-                throw new w1("Cannot move metadata files to final location.", i3Var.f16033a);
+                throw new w1("Cannot move metadata files to final location.", i3Var.f16013a);
             }
-            throw new w1("Cannot move merged pack files to final location.", i3Var.f16033a);
+            throw new w1("Cannot move merged pack files to final location.", i3Var.f16013a);
         }
-        throw new w1(String.format("Cannot find pack files to move for pack %s.", i3Var.f16034b), i3Var.f16033a);
+        throw new w1(String.format("Cannot find pack files to move for pack %s.", i3Var.f16014b), i3Var.f16013a);
     }
 }

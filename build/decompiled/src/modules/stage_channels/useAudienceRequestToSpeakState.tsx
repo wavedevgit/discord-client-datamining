@@ -177,4 +177,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.RequestToSpeakStates = var3;
     var2.getAudienceRequestToSpeakState = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3521, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3523, 566, 2]);

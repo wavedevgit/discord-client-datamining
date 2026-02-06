@@ -1,54 +1,56 @@
 package gq;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import androidx.viewbinding.ViewBinding;
-import com.google.android.material.textfield.TextInputEditText;
-import com.google.android.material.textfield.TextInputLayout;
+import java.util.List;
+import kotlin.jvm.internal.Intrinsics;
+import kotlinx.coroutines.flow.Flow;
+import kotlinx.coroutines.flow.MutableStateFlow;
+import rs.l0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class k implements ViewBinding {
+public final class k {
 
     /* renamed from: a  reason: collision with root package name */
-    private final TextInputLayout f25116a;
+    private final MutableStateFlow f25536a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final TextInputEditText f25117b;
+    private final Flow f25537b;
 
-    /* renamed from: c  reason: collision with root package name */
-    public final TextInputLayout f25118c;
-
-    private k(TextInputLayout textInputLayout, TextInputEditText textInputEditText, TextInputLayout textInputLayout2) {
-        this.f25116a = textInputLayout;
-        this.f25117b = textInputEditText;
-        this.f25118c = textInputLayout2;
+    public k(List initialValue) {
+        Intrinsics.checkNotNullParameter(initialValue, "initialValue");
+        MutableStateFlow a10 = l0.a(initialValue);
+        this.f25536a = a10;
+        this.f25537b = rs.g.m(a10, 1);
     }
 
-    public static k a(View view) {
-        int i10 = bq.e.f7158z;
-        TextInputEditText textInputEditText = (TextInputEditText) e4.a.a(view, i10);
-        if (textInputEditText != null) {
-            TextInputLayout textInputLayout = (TextInputLayout) view;
-            return new k(textInputLayout, textInputEditText, textInputLayout);
-        }
-        throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i10)));
+    public final Flow a() {
+        return this.f25537b;
     }
 
-    public static k c(LayoutInflater layoutInflater) {
-        return d(layoutInflater, null, false);
+    public final List b() {
+        return (List) this.f25536a.getValue();
     }
 
-    public static k d(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(bq.f.f7171l, viewGroup, false);
-        if (z10) {
-            viewGroup.addView(inflate);
-        }
-        return a(inflate);
+    public final void c(List value) {
+        Intrinsics.checkNotNullParameter(value, "value");
+        this.f25536a.setValue(value);
     }
 
-    @Override // androidx.viewbinding.ViewBinding
-    /* renamed from: b */
-    public TextInputLayout getRoot() {
-        return this.f25116a;
+    /* JADX WARN: Illegal instructions before constructor call */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public k(fq.b4 r1) {
+        /*
+            r0 = this;
+            if (r1 != 0) goto L7
+            java.util.List r1 = kotlin.collections.CollectionsKt.l()
+            goto Lb
+        L7:
+            java.util.List r1 = kotlin.collections.CollectionsKt.e(r1)
+        Lb:
+            r0.<init>(r1)
+            return
+        */
+        throw new UnsupportedOperationException("Method not decompiled: gq.k.<init>(fq.b4):void");
     }
 }

@@ -1,13 +1,13 @@
 package net.time4j.history;
 
 import net.time4j.f0;
-import pt.p;
-import pt.q;
-import pt.r;
-import pt.x;
-import pt.z;
+import rt.p;
+import rt.q;
+import rt.r;
+import rt.x;
+import rt.z;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-final class i extends pt.e {
+final class i extends rt.e {
     private static final long serialVersionUID = -5386613740709845550L;
     private final d history;
 
@@ -15,28 +15,28 @@ final class i extends pt.e {
     private static class a implements z {
 
         /* renamed from: d  reason: collision with root package name */
-        private final d f40052d;
+        private final d f39407d;
 
         a(d dVar) {
-            this.f40052d = dVar;
+            this.f39407d = dVar;
         }
 
-        @Override // pt.z
+        @Override // rt.z
         /* renamed from: b */
         public p a(q qVar) {
             throw new UnsupportedOperationException("Never called.");
         }
 
-        @Override // pt.z
+        @Override // rt.z
         /* renamed from: c */
-        public p h(q qVar) {
+        public p g(q qVar) {
             throw new UnsupportedOperationException("Never called.");
         }
 
-        @Override // pt.z
+        @Override // rt.z
         /* renamed from: d */
         public h k(q qVar) {
-            d dVar = this.f40052d;
+            d dVar = this.f39407d;
             if (dVar == d.D) {
                 return h.i(j.BYZANTINE, 999984973, 8, 31);
             }
@@ -49,10 +49,10 @@ final class i extends pt.e {
             return h.i(j.AD, 9999, 12, 31);
         }
 
-        @Override // pt.z
+        @Override // rt.z
         /* renamed from: e */
-        public h r(q qVar) {
-            d dVar = this.f40052d;
+        public h o(q qVar) {
+            d dVar = this.f39407d;
             if (dVar == d.D) {
                 return h.i(j.BYZANTINE, 0, 9, 1);
             }
@@ -65,27 +65,27 @@ final class i extends pt.e {
             return h.i(j.BC, 45, 1, 1);
         }
 
-        @Override // pt.z
+        @Override // rt.z
         /* renamed from: f */
         public h y(q qVar) {
             try {
-                return this.f40052d.e((f0) qVar.v(f0.f39951z));
+                return this.f39407d.e((f0) qVar.s(f0.f39306z));
             } catch (IllegalArgumentException e10) {
                 throw new r(e10.getMessage(), e10);
             }
         }
 
-        @Override // pt.z
-        /* renamed from: g */
-        public boolean p(q qVar, h hVar) {
-            return this.f40052d.B(hVar);
+        @Override // rt.z
+        /* renamed from: h */
+        public boolean n(q qVar, h hVar) {
+            return this.f39407d.B(hVar);
         }
 
-        @Override // pt.z
+        @Override // rt.z
         /* renamed from: i */
-        public q x(q qVar, h hVar, boolean z10) {
+        public q u(q qVar, h hVar, boolean z10) {
             if (hVar != null) {
-                return qVar.E(f0.f39951z, this.f40052d.d(hVar));
+                return qVar.E(f0.f39306z, this.f39407d.d(hVar));
             }
             throw new IllegalArgumentException("Missing historic date.");
         }
@@ -101,44 +101,44 @@ final class i extends pt.e {
         return this.history.f();
     }
 
-    @Override // pt.p
-    public boolean B() {
+    @Override // rt.p
+    public boolean A() {
+        return true;
+    }
+
+    @Override // rt.p
+    public boolean D() {
         return false;
     }
 
-    @Override // pt.p
+    @Override // rt.p
     /* renamed from: F */
     public h e() {
         return h.i(j.AD, 9999, 12, 31);
     }
 
-    @Override // pt.p
+    @Override // rt.p
     /* renamed from: G */
-    public h A() {
+    public h B() {
         return h.i(j.BC, 45, 1, 1);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // pt.e
+    @Override // rt.e
     public z c(x xVar) {
-        if (xVar.E(f0.f39951z)) {
+        if (xVar.E(f0.f39306z)) {
             return new a(this.history);
         }
         return null;
     }
 
-    @Override // pt.p
+    @Override // rt.p
     public Class getType() {
         return h.class;
     }
 
-    @Override // pt.e
-    protected boolean j(pt.e eVar) {
+    @Override // rt.e
+    protected boolean l(rt.e eVar) {
         return this.history.equals(((i) eVar).history);
-    }
-
-    @Override // pt.p
-    public boolean z() {
-        return true;
     }
 }

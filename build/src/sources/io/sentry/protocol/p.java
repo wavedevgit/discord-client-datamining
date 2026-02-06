@@ -11,62 +11,62 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class p implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private String f29431d;
+    private String f28575d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Map f29432e;
+    private Map f28576e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Integer f29433i;
+    private Integer f28577i;
 
     /* renamed from: o  reason: collision with root package name */
-    private Long f29434o;
+    private Long f28578o;
 
     /* renamed from: p  reason: collision with root package name */
-    private Object f29435p;
+    private Object f28579p;
 
     /* renamed from: q  reason: collision with root package name */
-    private Map f29436q;
+    private Map f28580q;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
         @Override // io.sentry.m1
         /* renamed from: b */
         public p a(e3 e3Var, ILogger iLogger) {
-            e3Var.s();
+            e3Var.u();
             p pVar = new p();
             ConcurrentHashMap concurrentHashMap = null;
             while (e3Var.peek() == io.sentry.vendor.gson.stream.b.NAME) {
-                String m02 = e3Var.m0();
-                m02.getClass();
+                String o02 = e3Var.o0();
+                o02.getClass();
                 char c10 = 65535;
-                switch (m02.hashCode()) {
+                switch (o02.hashCode()) {
                     case -891699686:
-                        if (m02.equals("status_code")) {
+                        if (o02.equals("status_code")) {
                             c10 = 0;
                             break;
                         }
                         break;
                     case 3076010:
-                        if (m02.equals("data")) {
+                        if (o02.equals("data")) {
                             c10 = 1;
                             break;
                         }
                         break;
                     case 795307910:
-                        if (m02.equals("headers")) {
+                        if (o02.equals("headers")) {
                             c10 = 2;
                             break;
                         }
                         break;
                     case 952189583:
-                        if (m02.equals("cookies")) {
+                        if (o02.equals("cookies")) {
                             c10 = 3;
                             break;
                         }
                         break;
                     case 1252988030:
-                        if (m02.equals("body_size")) {
+                        if (o02.equals("body_size")) {
                             c10 = 4;
                             break;
                         }
@@ -74,35 +74,35 @@ public final class p implements w1 {
                 }
                 switch (c10) {
                     case 0:
-                        pVar.f29433i = e3Var.k1();
+                        pVar.f28577i = e3Var.j1();
                         break;
                     case 1:
-                        pVar.f29435p = e3Var.V1();
+                        pVar.f28579p = e3Var.U1();
                         break;
                     case 2:
-                        Map map = (Map) e3Var.V1();
+                        Map map = (Map) e3Var.U1();
                         if (map == null) {
                             break;
                         } else {
-                            pVar.f29432e = io.sentry.util.c.b(map);
+                            pVar.f28576e = io.sentry.util.c.b(map);
                             break;
                         }
                     case 3:
-                        pVar.f29431d = e3Var.r1();
+                        pVar.f28575d = e3Var.q1();
                         break;
                     case 4:
-                        pVar.f29434o = e3Var.m1();
+                        pVar.f28578o = e3Var.l1();
                         break;
                     default:
                         if (concurrentHashMap == null) {
                             concurrentHashMap = new ConcurrentHashMap();
                         }
-                        e3Var.v1(iLogger, concurrentHashMap, m02);
+                        e3Var.u1(iLogger, concurrentHashMap, o02);
                         break;
                 }
             }
             pVar.f(concurrentHashMap);
-            e3Var.z();
+            e3Var.D();
             return pVar;
         }
     }
@@ -111,44 +111,44 @@ public final class p implements w1 {
     }
 
     public void f(Map map) {
-        this.f29436q = map;
+        this.f28580q = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
-        f3Var.s();
-        if (this.f29431d != null) {
-            f3Var.e("cookies").f(this.f29431d);
+        f3Var.u();
+        if (this.f28575d != null) {
+            f3Var.e("cookies").f(this.f28575d);
         }
-        if (this.f29432e != null) {
-            f3Var.e("headers").j(iLogger, this.f29432e);
+        if (this.f28576e != null) {
+            f3Var.e("headers").j(iLogger, this.f28576e);
         }
-        if (this.f29433i != null) {
-            f3Var.e("status_code").j(iLogger, this.f29433i);
+        if (this.f28577i != null) {
+            f3Var.e("status_code").j(iLogger, this.f28577i);
         }
-        if (this.f29434o != null) {
-            f3Var.e("body_size").j(iLogger, this.f29434o);
+        if (this.f28578o != null) {
+            f3Var.e("body_size").j(iLogger, this.f28578o);
         }
-        if (this.f29435p != null) {
-            f3Var.e("data").j(iLogger, this.f29435p);
+        if (this.f28579p != null) {
+            f3Var.e("data").j(iLogger, this.f28579p);
         }
-        Map map = this.f29436q;
+        Map map = this.f28580q;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f29436q.get(str);
+                Object obj = this.f28580q.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
         }
-        f3Var.z();
+        f3Var.D();
     }
 
     public p(p pVar) {
-        this.f29431d = pVar.f29431d;
-        this.f29432e = io.sentry.util.c.b(pVar.f29432e);
-        this.f29436q = io.sentry.util.c.b(pVar.f29436q);
-        this.f29433i = pVar.f29433i;
-        this.f29434o = pVar.f29434o;
-        this.f29435p = pVar.f29435p;
+        this.f28575d = pVar.f28575d;
+        this.f28576e = io.sentry.util.c.b(pVar.f28576e);
+        this.f28580q = io.sentry.util.c.b(pVar.f28580q);
+        this.f28577i = pVar.f28577i;
+        this.f28578o = pVar.f28578o;
+        this.f28579p = pVar.f28579p;
     }
 }

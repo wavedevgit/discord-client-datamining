@@ -5,429 +5,379 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7 = dependencyMap;
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
-    var0 = global;
-    var5 = var0.Object;
+    var1 = global;
+    var5 = var1.Object;
     var4 = var5.defineProperty;
     var3 = {};
-    var0 = true;
-    var3.value = var0;
-    var0 = '__esModule';
-    var0 = var4.bind(var5)(var2, var0, var3);
-    var0 = {};
-    var3 = 'function validateConfig_Pnpm_decayTs1(config){if(config.clamp){if(!Array.isArray(config.clamp)){throw new ReanimatedError("`config.clamp` must be an array but is "+typeof config.clamp+".");}if(config.clamp.length!==2){throw new ReanimatedError("`clamp array` must contain 2 items but is given "+config.clamp.length+".");}}if(config.velocityFactor<=0){throw new ReanimatedError("`config.velocityFactor` must be greater then 0 but is "+config.velocityFactor+".");}if(config.rubberBandEffect&&!config.clamp){throw new ReanimatedError(\'You need to set `clamp` property when using `rubberBandEffect`.\');}}';
-    var0.code = var3;
-    var _closure1_slot2 = var0;
-    var3 = function() { // Environment: var1
-        var0 = function arg0() {
-            _fun33907: for (var _fun33907_ip = 0;;) switch (_fun33907_ip) {
-                case 0:
-                    var1 = arg0;
-                    var0 = var1.clamp;
-                    if (!var0) {
-                        _fun33907_ip = 151;
-                        continue _fun33907
-                    }
-                case 15:
-                    var0 = global;
-                    var4 = var0.Array;
-                    var3 = var4.isArray;
-                    var2 = var1.clamp;
-                    var2 = var3.bind(var4)(var2);
-                    if (var2) {
-                        _fun33907_ip = 130;
-                        continue _fun33907
-                    }
-                case 42:
-                    var4 = _closure1_slot0;
-                    var3 = _closure1_slot1;
-                    var2 = 0;
-                    var3 = var3[var2];
-                    var2 = undefined;
-                    var2 = var4.bind(var2)(var3);
-                    var4 = var2.ReanimatedError;
-                    var2 = var1.clamp;
-                    var3 = var0.HermesInternal;
-                    var6 = var3.concat;
-                    var5 = '`config.clamp` must be an array but is ';
-                    var3 = typeof var2;
-                    var2 = '.';
-                    var8 = var6.bind(var5)(var3, var2);
-                    var3 = var4.prototype;
-                    var3 = Object.create(var3, {
-                        constructor: {
-                            value: var4
-                        }
-                    });
-                    var9 = var3;
-                    var2 = new var9[var4](var8, var7);
-                    var2 = var2 instanceof Object ? var2 : var3;
-                    throw var2;
-                case 130:
-                    var2 = var1.clamp;
-                    var3 = var2.length;
-                    var2 = 2;
-                    if (!(var2 === var3)) {
-                        _fun33907_ip = 326;
-                        continue _fun33907
-                    }
-                case 151:
-                    var2 = var1.velocityFactor;
-                    var3 = 0;
-                    if (!(!(var2 <= var3))) {
-                        _fun33907_ip = 241;
-                        continue _fun33907
-                    }
-                case 163:
-                    var2 = var1.rubberBandEffect;
-                    if (!var2) {
-                        _fun33907_ip = 237;
-                        continue _fun33907
-                    }
-                case 172:
-                    var2 = var1.clamp;
-                    if (var2) {
-                        _fun33907_ip = 237;
-                        continue _fun33907
-                    }
-                case 181:
-                    var5 = _closure1_slot0;
-                    var2 = _closure1_slot1;
-                    var4 = var2[var3];
-                    var2 = undefined;
-                    var2 = var5.bind(var2)(var4);
-                    var5 = var2.ReanimatedError;
-                    var2 = var5.prototype;
-                    var4 = Object.create(var2, {
-                        constructor: {
-                            value: var5
-                        }
-                    });
-                    var8 = 'You need to set `clamp` property when using `rubberBandEffect`.';
-                    var9 = var4;
-                    var2 = new var9[var5](var8, var7);
-                    var2 = var2 instanceof Object ? var2 : var4;
-                    throw var2;
-                case 237:
-                    var2 = undefined;
-                    return var2;
-                case 241:
-                    var4 = _closure1_slot0;
-                    var2 = _closure1_slot1;
-                    var3 = var2[var3];
-                    var2 = undefined;
-                    var2 = var4.bind(var2)(var3);
-                    var4 = var2.ReanimatedError;
-                    var6 = var1.velocityFactor;
-                    var2 = global;
-                    var2 = var2.HermesInternal;
-                    var5 = var2.concat;
-                    var3 = '`config.velocityFactor` must be greater then 0 but is ';
-                    var2 = '.';
-                    var8 = var5.bind(var3)(var6, var2);
-                    var3 = var4.prototype;
-                    var3 = Object.create(var3, {
-                        constructor: {
-                            value: var4
-                        }
-                    });
-                    var9 = var3;
-                    var2 = new var9[var4](var8, var7);
-                    var2 = var2 instanceof Object ? var2 : var3;
-                    throw var2;
-                case 326:
-                    var4 = _closure1_slot0;
-                    var3 = _closure1_slot1;
-                    var2 = 0;
-                    var3 = var3[var2];
-                    var2 = undefined;
-                    var2 = var4.bind(var2)(var3);
-                    var2 = var2.ReanimatedError;
-                    var1 = var1.clamp;
-                    var4 = var1.length;
-                    var0 = var0.HermesInternal;
-                    var3 = var0.concat;
-                    var1 = '`clamp array` must contain 2 items but is given ';
-                    var0 = '.';
-                    var8 = var3.bind(var1)(var4, var0);
-                    var1 = var2.prototype;
-                    var1 = Object.create(var1, {
-                        constructor: {
-                            value: var2
-                        }
-                    });
-                    var9 = var1;
-                    var0 = new var9[var2](var8, var7);
-                    var0 = var0 instanceof Object ? var0 : var1;
-                    throw var0;
-            }
-        };
-        var1 = {};
-        var0.__closure = var1;
-        var1 = 14532293098342.0;
-        var0.__workletHash = var1;
-        var1 = _closure1_slot2;
-        var0.__initData = var1;
-        return var0;
-    };
-    var0 = undefined;
-    var8 = var3.bind(var0)();
-    var _closure1_slot3 = var8;
+    var1 = true;
+    var3.value = var1;
+    var1 = '__esModule';
+    var1 = var4.bind(var5)(var2, var1, var3);
     var3 = {};
-    var4 = "function pnpm_decayTs2(userConfig,callback){const{defineAnimation,isValidRubberBandConfig,rubberBandDecay,rigidDecay,validateConfig,getReduceMotionForAnimation}=this.__closure;return defineAnimation(0,function(){'worklet';var _config$velocity;const config={deceleration:0.998,velocityFactor:1,velocity:0,rubberBandFactor:0.6};if(userConfig){Object.keys(userConfig).forEach(function(key){return config[key]=userConfig[key];});}const decay=isValidRubberBandConfig(config)?function(animation,now){return rubberBandDecay(animation,now,config);}:function(animation,now){return rigidDecay(animation,now,config);};function onStart(animation,value,now){const initialVelocity=config.velocity;animation.current=value;animation.lastTimestamp=now;animation.startTimestamp=now;animation.initialVelocity=initialVelocity;animation.velocity=initialVelocity;validateConfig(config);if(animation.reduceMotion&&config.clamp){if(value<config.clamp[0]){animation.current=config.clamp[0];}else if(value>config.clamp[1]){animation.current=config.clamp[1];}}}return{onFrame:decay,onStart:onStart,callback:callback,velocity:(_config$velocity=config.velocity)!==null&&_config$velocity!==void 0?_config$velocity:0,initialVelocity:0,current:undefined,lastTimestamp:0,startTimestamp:0,reduceMotion:getReduceMotionForAnimation(config.reduceMotion)};});}";
-    var3.code = var4;
-    var4 = {};
-    var5 = 'function pnpm_decayTs3(){const{userConfig,isValidRubberBandConfig,rubberBandDecay,rigidDecay,validateConfig,callback,getReduceMotionForAnimation}=this.__closure;var _config$velocity;const config={deceleration:0.998,velocityFactor:1,velocity:0,rubberBandFactor:0.6};if(userConfig){Object.keys(userConfig).forEach(function(key){return config[key]=userConfig[key];});}const decay=isValidRubberBandConfig(config)?function(animation,now){return rubberBandDecay(animation,now,config);}:function(animation,now){return rigidDecay(animation,now,config);};function onStart(animation,value,now){const initialVelocity=config.velocity;animation.current=value;animation.lastTimestamp=now;animation.startTimestamp=now;animation.initialVelocity=initialVelocity;animation.velocity=initialVelocity;validateConfig(config);if(animation.reduceMotion&&config.clamp){if(value<config.clamp[0]){animation.current=config.clamp[0];}else if(value>config.clamp[1]){animation.current=config.clamp[1];}}}return{onFrame:decay,onStart:onStart,callback:callback,velocity:(_config$velocity=config.velocity)!==null&&_config$velocity!==void 0?_config$velocity:0,initialVelocity:0,current:undefined,lastTimestamp:0,startTimestamp:0,reduceMotion:getReduceMotionForAnimation(config.reduceMotion)};}';
-    var4.code = var5;
-    var _closure1_slot4 = var4;
+    var1 = 'function pnpm_clampTs1(config,_animationToClamp){const{defineAnimation,recognizePrefixSuffix,logger,getReduceMotionForAnimation}=this.__closure;return defineAnimation(_animationToClamp,function(){\'worklet\';const animationToClamp=typeof _animationToClamp===\'function\'?_animationToClamp():_animationToClamp;const strippedMin=config.min===undefined?undefined:recognizePrefixSuffix(config.min).strippedValue;const strippedMax=config.max===undefined?undefined:recognizePrefixSuffix(config.max).strippedValue;function clampOnFrame(animation,now){const finished=animationToClamp.onFrame(animationToClamp,now);if(animationToClamp.current===undefined){logger.warn("Error inside \'withClamp\' animation, the inner animation has invalid current value");return true;}else{const{prefix:prefix,strippedValue:strippedValue,suffix:suffix}=recognizePrefixSuffix(animationToClamp.current);let newValue;if(strippedMax!==undefined&&strippedMax<strippedValue){newValue=strippedMax;}else if(strippedMin!==undefined&&strippedMin>strippedValue){newValue=strippedMin;}else{newValue=strippedValue;}animation.current=typeof animationToClamp.current===\'number\'?newValue:""+(prefix===undefined?\'\':prefix)+newValue+(suffix===undefined?\'\':suffix);}return finished;}function onStart(animation,value,now,previousAnimation){animation.current=value;animation.previousAnimation=animationToClamp;const animationBeforeClamped=previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.previousAnimation;if(config.max!==undefined&&config.min!==undefined&&config.max<config.min){logger.warn(\'Wrong config was provided to withClamp. Min value is bigger than max\');}animationToClamp.onStart(animationToClamp,(animationBeforeClamped===null||animationBeforeClamped===void 0?void 0:animationBeforeClamped.current)||value,now,animationBeforeClamped);}const callback=function(finished){if(animationToClamp.callback){animationToClamp.callback(finished);}};return{isHigherOrder:true,onFrame:clampOnFrame,onStart:onStart,current:animationToClamp.current,callback:callback,previousAnimation:null,reduceMotion:getReduceMotionForAnimation(config.reduceMotion)};});}';
+    var3.code = var1;
+    var1 = {};
+    var4 = 'function pnpm_clampTs2(){const{_animationToClamp,config,recognizePrefixSuffix,logger,getReduceMotionForAnimation}=this.__closure;const animationToClamp=typeof _animationToClamp===\'function\'?_animationToClamp():_animationToClamp;const strippedMin=config.min===undefined?undefined:recognizePrefixSuffix(config.min).strippedValue;const strippedMax=config.max===undefined?undefined:recognizePrefixSuffix(config.max).strippedValue;function clampOnFrame(animation,now){const finished=animationToClamp.onFrame(animationToClamp,now);if(animationToClamp.current===undefined){logger.warn("Error inside \'withClamp\' animation, the inner animation has invalid current value");return true;}else{const{prefix:prefix,strippedValue:strippedValue,suffix:suffix}=recognizePrefixSuffix(animationToClamp.current);let newValue;if(strippedMax!==undefined&&strippedMax<strippedValue){newValue=strippedMax;}else if(strippedMin!==undefined&&strippedMin>strippedValue){newValue=strippedMin;}else{newValue=strippedValue;}animation.current=typeof animationToClamp.current===\'number\'?newValue:""+(prefix===undefined?\'\':prefix)+newValue+(suffix===undefined?\'\':suffix);}return finished;}function onStart(animation,value,now,previousAnimation){animation.current=value;animation.previousAnimation=animationToClamp;const animationBeforeClamped=previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.previousAnimation;if(config.max!==undefined&&config.min!==undefined&&config.max<config.min){logger.warn(\'Wrong config was provided to withClamp. Min value is bigger than max\');}animationToClamp.onStart(animationToClamp,(animationBeforeClamped===null||animationBeforeClamped===void 0?void 0:animationBeforeClamped.current)||value,now,animationBeforeClamped);}const callback=function(finished){if(animationToClamp.callback){animationToClamp.callback(finished);}};return{isHigherOrder:true,onFrame:clampOnFrame,onStart:onStart,current:animationToClamp.current,callback:callback,previousAnimation:null,reduceMotion:getReduceMotionForAnimation(config.reduceMotion)};}';
+    var1.code = var4;
+    var _closure1_slot2 = var1;
     var1 = function arg0, arg1() {
         var10 = arg0;
-        var9 = arg1;
+        var3 = arg1;
         var _closure2_slot0 = var10;
-        var _closure2_slot1 = var9;
-        var7 = _closure1_slot0;
-        var8 = _closure1_slot1;
-        var5 = 1;
-        var2 = var8[var5];
-        var6 = undefined;
-        var3 = var7.bind(var6)(var2);
-        var2 = var3.defineAnimation;
-        var1 = function() {
-            _fun33909: for (var _fun33909_ip = 0;;) switch (_fun33909_ip) {
+        var _closure2_slot1 = var3;
+        var8 = _closure1_slot0;
+        var9 = _closure1_slot1;
+        var6 = 0;
+        var1 = var9[var6];
+        var7 = undefined;
+        var2 = var8.bind(var7)(var1);
+        var1 = var2.defineAnimation;
+        var0 = function() {
+            _fun33904: for (var _fun33904_ip = 0;;) switch (_fun33904_ip) {
                 case 0:
-                    var1 = {
-                        'deceleration': 0.998,
-                        'velocityFactor': 1,
-                        'velocity': 0,
-                        'rubberBandFactor': 0.6
-                    };
-                    var5 = 1;
-                    var3 = 0;
-                    var _closure3_slot0 = var1;
-                    var0 = _closure2_slot0;
-                    if (!var0) {
-                        _fun33909_ip = 72;
-                        continue _fun33909
+                    var0 = _closure2_slot1;
+                    var3 = 'function';
+                    var0 = typeof var0;
+                    if (!(var3 !== var0)) {
+                        _fun33904_ip = 26;
+                        continue _fun33904
                     }
-                case 35:
-                    var0 = global;
-                    var4 = var0.Object;
-                    var2 = var4.keys;
+                case 20:
+                    var3 = _closure2_slot1;
+                    _fun33904_ip = 36;
+                    continue _fun33904;
+                case 26:
+                    var4 = _closure2_slot1;
+                    var0 = undefined;
+                    var3 = var4.bind(var0)();
+                case 36:
+                    var _closure3_slot0 = var3;
                     var0 = _closure2_slot0;
-                    var4 = var2.bind(var4)(var0);
-                    var2 = var4.forEach;
-                    var0 = function(arg0) { // Environment: var7
-                        var2 = arg0;
-                        var1 = _closure3_slot0;
-                        var0 = _closure2_slot0;
-                        var0 = var0[var2];
-                        var1[var2] = var0;
-                        return var0;
-                    };
-                    var0 = var2.bind(var4)(var0);
-                case 72:
-                    var0 = {};
-                    var9 = _closure1_slot0;
-                    var8 = _closure1_slot1;
-                    var4 = 2;
-                    var8 = var8[var4];
+                    var5 = var0.min;
                     var4 = undefined;
-                    var9 = var9.bind(var4)(var8);
-                    var8 = var9.isValidRubberBandConfig;
-                    var8 = var8.bind(var9)(var1);
-                    if (var8) {
-                        _fun33909_ip = 120;
-                        continue _fun33909
+                    var0 = undefined;
+                    if (!(var4 !== var5)) {
+                        _fun33904_ip = 105;
+                        continue _fun33904
                     }
-                case 113:
-                    var8 = function(arg0, arg1) { // Environment: var7
-                        var2 = _closure1_slot0;
-                        var1 = _closure1_slot1;
-                        var0 = 4;
-                        var1 = var1[var0];
-                        var0 = undefined;
-                        var4 = var2.bind(var0)(var1);
-                        var3 = var4.rigidDecay;
-                        var2 = _closure3_slot0;
-                        var1 = arg0;
-                        var0 = arg1;
-                        var0 = var3.bind(var4)(var1, var0, var2);
-                        return var0;
-                    };
-                    _fun33909_ip = 125;
-                    continue _fun33909;
-                case 120:
-                    var8 = function(arg0, arg1) { // Environment: var7
-                        var2 = _closure1_slot0;
-                        var1 = _closure1_slot1;
-                        var0 = 3;
-                        var1 = var1[var0];
-                        var0 = undefined;
-                        var4 = var2.bind(var0)(var1);
-                        var3 = var4.rubberBandDecay;
-                        var2 = _closure3_slot0;
-                        var1 = arg0;
-                        var0 = arg1;
-                        var0 = var3.bind(var4)(var1, var0, var2);
-                        return var0;
-                    };
-                case 125:
-                    var0.onFrame = var8;
-                    var7 = function arg0, arg1, arg2() {
-                        _fun33913: for (var _fun33913_ip = 0;;) switch (_fun33913_ip) {
+                case 57:
+                    var6 = _closure1_slot0;
+                    var7 = _closure1_slot1;
+                    var5 = 0;
+                    var5 = var7[var5];
+                    var7 = var6.bind(var4)(var5);
+                    var6 = var7.recognizePrefixSuffix;
+                    var5 = _closure2_slot0;
+                    var5 = var5.min;
+                    var5 = var6.bind(var7)(var5);
+                    var0 = var5.strippedValue;
+                case 105:
+                    var _closure3_slot1 = var0;
+                    var0 = _closure2_slot0;
+                    var5 = var0.max;
+                    var0 = undefined;
+                    if (!(var0 !== var5)) {
+                        _fun33904_ip = 172;
+                        continue _fun33904
+                    }
+                case 124:
+                    var6 = _closure1_slot0;
+                    var7 = _closure1_slot1;
+                    var5 = 0;
+                    var5 = var7[var5];
+                    var7 = var6.bind(var4)(var5);
+                    var6 = var7.recognizePrefixSuffix;
+                    var5 = _closure2_slot0;
+                    var5 = var5.max;
+                    var5 = var6.bind(var7)(var5);
+                    var0 = var5.strippedValue;
+                case 172:
+                    var _closure3_slot2 = var0;
+                    var0 = {};
+                    var5 = true;
+                    var0.isHigherOrder = var5;
+                    var5 = function arg0, arg1() {
+                        _fun33905: for (var _fun33905_ip = 0;;) switch (_fun33905_ip) {
                             case 0:
-                                var2 = arg0;
-                                var6 = arg1;
-                                var3 = arg2;
                                 var4 = _closure3_slot0;
-                                var0 = var4.velocity;
-                                var2.current = var6;
-                                var2.lastTimestamp = var3;
-                                var2.startTimestamp = var3;
-                                var2.initialVelocity = var0;
-                                var2.velocity = var0;
-                                var3 = _closure1_slot3;
-                                var0 = undefined;
-                                var3 = var3.bind(var0)(var4);
-                                var3 = var2.reduceMotion;
-                                if (!var3) {
-                                    _fun33913_ip = 85;
-                                    continue _fun33913
-                                }
-                            case 75:
-                                var4 = _closure3_slot0;
-                                var3 = var4.clamp;
-                            case 85:
-                                if (!var3) {
-                                    _fun33913_ip = 171;
-                                    continue _fun33913
-                                }
-                            case 88:
-                                var3 = _closure3_slot0;
-                                var4 = var3.clamp;
-                                var3 = 0;
-                                var4 = var4[var3];
-                                if (!(!(var6 < var4))) {
-                                    _fun33913_ip = 151;
-                                    continue _fun33913
-                                }
-                            case 108:
-                                var4 = _closure3_slot0;
-                                var4 = var4.clamp;
-                                var5 = 1;
-                                var4 = var4[var5];
-                                if (!(var6 > var4)) {
-                                    _fun33913_ip = 171;
-                                    continue _fun33913
-                                }
-                            case 129:
-                                var4 = _closure3_slot0;
-                                var4 = var4.clamp;
-                                var4 = var4[var5];
-                                var2.current = var4;
-                                _fun33913_ip = 171;
-                                continue _fun33913;
-                            case 151:
+                                var2 = var4.onFrame;
                                 var1 = _closure3_slot0;
-                                var1 = var1.clamp;
-                                var1 = var1[var3];
-                                var2.current = var1;
-                            case 171:
+                                var0 = arg1;
+                                var0 = var2.bind(var4)(var1, var0);
+                                var1 = _closure3_slot0;
+                                var1 = var1.current;
+                                var2 = undefined;
+                                if (!(var2 !== var1)) {
+                                    _fun33905_ip = 230;
+                                    continue _fun33905
+                                }
+                            case 44:
+                                var4 = _closure1_slot0;
+                                var5 = _closure1_slot1;
+                                var1 = 0;
+                                var1 = var5[var1];
+                                var5 = var4.bind(var2)(var1);
+                                var4 = var5.recognizePrefixSuffix;
+                                var1 = _closure3_slot0;
+                                var1 = var1.current;
+                                var1 = var4.bind(var5)(var1);
+                                var4 = var1.prefix;
+                                var6 = var1.strippedValue;
+                                var1 = var1.suffix;
+                                var5 = _closure3_slot2;
+                                if (!(var2 !== var5)) {
+                                    _fun33905_ip = 120;
+                                    continue _fun33905
+                                }
+                            case 112:
+                                var5 = _closure3_slot2;
+                                if (!(!(var5 < var6))) {
+                                    _fun33905_ip = 148;
+                                    continue _fun33905
+                                }
+                            case 120:
+                                var5 = _closure3_slot1;
+                                var7 = var6;
+                                if (!(var2 !== var5)) {
+                                    _fun33905_ip = 146;
+                                    continue _fun33905
+                                }
+                            case 131:
+                                var5 = _closure3_slot1;
+                                var7 = var6;
+                                if (!(var5 > var7)) {
+                                    _fun33905_ip = 146;
+                                    continue _fun33905
+                                }
+                            case 142:
+                                var7 = _closure3_slot1;
+                            case 146:
+                                _fun33905_ip = 152;
+                                continue _fun33905;
+                            case 148:
+                                var7 = _closure3_slot2;
+                            case 152:
+                                var3 = _closure3_slot0;
+                                var3 = var3.current;
+                                var6 = 'number';
+                                var5 = typeof var3;
+                                var3 = var7;
+                                if (!(var6 !== var5)) {
+                                    _fun33905_ip = 219;
+                                    continue _fun33905
+                                }
+                            case 175:
+                                var6 = '';
+                                var5 = var6;
+                                if (!(var2 !== var4)) {
+                                    _fun33905_ip = 189;
+                                    continue _fun33905
+                                }
+                            case 186:
+                                var5 = var4;
+                            case 189:
+                                var4 = var6;
+                                if (!(var2 !== var1)) {
+                                    _fun33905_ip = 199;
+                                    continue _fun33905
+                                }
+                            case 196:
+                                var4 = var1;
+                            case 199:
+                                var1 = global;
+                                var1 = var1.HermesInternal;
+                                var1 = var1.concat;
+                                var3 = var1.bind(var6)(var5, var7, var4);
+                            case 219:
+                                var1 = arg0;
+                                var1.current = var3;
+                                return var0;
+                            case 230:
+                                var1 = _closure1_slot0;
+                                var3 = _closure1_slot1;
+                                var0 = 1;
+                                var0 = var3[var0];
+                                var0 = var1.bind(var2)(var0);
+                                var2 = var0.logger;
+                                var1 = var2.warn;
+                                var0 = "Error inside 'withClamp' animation, the inner animation has invalid current value";
+                                var0 = var1.bind(var2)(var0);
+                                var0 = true;
                                 return var0;
                         }
                     };
-                    var0.onStart = var7;
-                    var6 = _closure2_slot1;
-                    var0.callback = var6;
-                    var7 = var1.velocity;
-                    var6 = null;
-                    var8 = var6 != var7;
-                    var6 = 0;
-                    if (!var8) {
-                        _fun33909_ip = 169;
-                        continue _fun33909
-                    }
-                case 166:
-                    var6 = var7;
-                case 169:
-                    var0.velocity = var6;
-                    var0.initialVelocity = var3;
-                    var0.current = var4;
-                    var0.lastTimestamp = var3;
-                    var0.startTimestamp = var3;
+                    var0.onFrame = var5;
+                    var5 = function arg0, arg1, arg2, arg3() {
+                        _fun33906: for (var _fun33906_ip = 0;;) switch (_fun33906_ip) {
+                            case 0:
+                                var2 = arg0;
+                                var1 = arg1;
+                                var4 = arg3;
+                                var2.current = var1;
+                                var0 = _closure3_slot0;
+                                var2.previousAnimation = var0;
+                                var2 = null;
+                                var5 = var2 == var4;
+                                var0 = undefined;
+                                var6 = undefined;
+                                if (var5) {
+                                    _fun33906_ip = 47;
+                                    continue _fun33906
+                                }
+                            case 41:
+                                var6 = var4.previousAnimation;
+                            case 47:
+                                var4 = _closure2_slot0;
+                                var4 = var4.max;
+                                var4 = var0 !== var4;
+                                if (!var4) {
+                                    _fun33906_ip = 79;
+                                    continue _fun33906
+                                }
+                            case 66:
+                                var7 = _closure2_slot0;
+                                var7 = var7.min;
+                                var4 = var0 !== var7;
+                            case 79:
+                                if (!var4) {
+                                    _fun33906_ip = 100;
+                                    continue _fun33906
+                                }
+                            case 82:
+                                var5 = _closure2_slot0;
+                                var7 = var5.max;
+                                var5 = var5.min;
+                                var4 = var7 < var5;
+                            case 100:
+                                if (!var4) {
+                                    _fun33906_ip = 148;
+                                    continue _fun33906
+                                }
+                            case 103:
+                                var5 = _closure1_slot0;
+                                var7 = _closure1_slot1;
+                                var4 = 1;
+                                var4 = var7[var4];
+                                var4 = var5.bind(var0)(var4);
+                                var7 = var4.logger;
+                                var5 = var7.warn;
+                                var4 = 'Wrong config was provided to withClamp. Min value is bigger than max';
+                                var4 = var5.bind(var7)(var4);
+                            case 148:
+                                var5 = _closure3_slot0;
+                                var4 = var5.onStart;
+                                var3 = _closure3_slot0;
+                                var7 = var2 == var6;
+                                var2 = undefined;
+                                if (var7) {
+                                    _fun33906_ip = 176;
+                                    continue _fun33906
+                                }
+                            case 171:
+                                var2 = var6.current;
+                            case 176:
+                                if (var2) {
+                                    _fun33906_ip = 182;
+                                    continue _fun33906
+                                }
+                            case 179:
+                                var2 = var1;
+                            case 182:
+                                var9 = arg2;
+                                var12 = var5;
+                                var11 = var3;
+                                var10 = var2;
+                                var8 = var6;
+                                var1 = var12[var4](var11, var10, var9, var8, var7);
+                                return var0;
+                        }
+                    };
+                    var0.onStart = var5;
+                    var3 = var3.current;
+                    var0.current = var3;
+                    var2 = function arg0() {
+                        _fun33907: for (var _fun33907_ip = 0;;) switch (_fun33907_ip) {
+                            case 0:
+                                var1 = _closure3_slot0;
+                                var1 = var1.callback;
+                                if (!var1) {
+                                    _fun33907_ip = 34;
+                                    continue _fun33907
+                                }
+                            case 16:
+                                var2 = _closure3_slot0;
+                                var1 = var2.callback;
+                                var0 = arg0;
+                                var0 = var1.bind(var2)(var0);
+                            case 34:
+                                var0 = undefined;
+                                return var0;
+                        }
+                    };
+                    var0.callback = var2;
+                    var2 = null;
+                    var0.previousAnimation = var2;
                     var3 = _closure1_slot0;
-                    var2 = _closure1_slot1;
-                    var2 = var2[var5];
+                    var5 = _closure1_slot1;
+                    var2 = 0;
+                    var2 = var5[var2];
                     var3 = var3.bind(var4)(var2);
                     var2 = var3.getReduceMotionForAnimation;
+                    var1 = _closure2_slot0;
                     var1 = var1.reduceMotion;
                     var1 = var2.bind(var3)(var1);
                     var0.reduceMotion = var1;
                     return var0;
             }
         };
-        var4 = {};
-        var4.userConfig = var10;
-        var10 = 2;
-        var10 = var8[var10];
-        var10 = var7.bind(var6)(var10);
-        var10 = var10.isValidRubberBandConfig;
-        var4.isValidRubberBandConfig = var10;
-        var10 = 3;
-        var10 = var8[var10];
-        var10 = var7.bind(var6)(var10);
-        var10 = var10.rubberBandDecay;
-        var4.rubberBandDecay = var10;
-        var10 = 4;
-        var10 = var8[var10];
-        var10 = var7.bind(var6)(var10);
-        var10 = var10.rigidDecay;
-        var4.rigidDecay = var10;
-        var10 = _closure1_slot3;
-        var4.validateConfig = var10;
-        var4.callback = var9;
-        var5 = var8[var5];
-        var5 = var7.bind(var6)(var5);
-        var5 = var5.getReduceMotionForAnimation;
-        var4.getReduceMotionForAnimation = var5;
-        var1.__closure = var4;
-        var4 = 17099614658252.0;
-        var1.__workletHash = var4;
-        var0 = _closure1_slot4;
-        var1.__initData = var0;
-        var0 = 0;
-        var0 = var2.bind(var3)(var0, var1);
+        var5 = {};
+        var5._animationToClamp = var3;
+        var5.config = var10;
+        var10 = var9[var6];
+        var10 = var8.bind(var7)(var10);
+        var10 = var10.recognizePrefixSuffix;
+        var5.recognizePrefixSuffix = var10;
+        var10 = 1;
+        var10 = var9[var10];
+        var10 = var8.bind(var7)(var10);
+        var10 = var10.logger;
+        var5.logger = var10;
+        var6 = var9[var6];
+        var6 = var8.bind(var7)(var6);
+        var6 = var6.getReduceMotionForAnimation;
+        var5.getReduceMotionForAnimation = var6;
+        var0.__closure = var5;
+        var5 = 9293031098818.0;
+        var0.__workletHash = var5;
+        var4 = _closure1_slot2;
+        var0.__initData = var4;
+        var0 = var1.bind(var2)(var3, var0);
         return var0;
     };
     var4 = {};
-    var5 = 1;
-    var9 = var7[var5];
-    var9 = var6.bind(var0)(var9);
-    var9 = var9.defineAnimation;
-    var4.defineAnimation = var9;
-    var9 = 2;
-    var9 = var7[var9];
-    var9 = var6.bind(var0)(var9);
-    var9 = var9.isValidRubberBandConfig;
-    var4.isValidRubberBandConfig = var9;
-    var9 = 3;
-    var9 = var7[var9];
-    var9 = var6.bind(var0)(var9);
-    var9 = var9.rubberBandDecay;
-    var4.rubberBandDecay = var9;
-    var9 = 4;
-    var9 = var7[var9];
-    var9 = var6.bind(var0)(var9);
-    var9 = var9.rigidDecay;
-    var4.rigidDecay = var9;
-    var4.validateConfig = var8;
+    var5 = 0;
+    var8 = var7[var5];
+    var0 = undefined;
+    var8 = var6.bind(var0)(var8);
+    var8 = var8.defineAnimation;
+    var4.defineAnimation = var8;
+    var8 = var7[var5];
+    var8 = var6.bind(var0)(var8);
+    var8 = var8.recognizePrefixSuffix;
+    var4.recognizePrefixSuffix = var8;
+    var8 = 1;
+    var8 = var7[var8];
+    var8 = var6.bind(var0)(var8);
+    var8 = var8.logger;
+    var4.logger = var8;
     var5 = var7[var5];
     var5 = var6.bind(var0)(var5);
     var5 = var5.getReduceMotionForAnimation;
     var4.getReduceMotionForAnimation = var5;
     var1.__closure = var4;
-    var4 = 3913201228611.0;
+    var4 = 2452826107198.0;
     var1.__workletHash = var4;
     var1.__initData = var3;
-    var2.withDecay = var1;
+    var2.withClamp = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3732, 3761, 3797, 3798, 3799]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3763, 3727]);

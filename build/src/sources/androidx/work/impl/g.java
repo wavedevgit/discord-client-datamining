@@ -5,7 +5,7 @@ import kotlin.jvm.internal.Intrinsics;
 public final class g extends s3.b {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final g f5761c = new g();
+    public static final g f6090c = new g();
 
     private g() {
         super(11, 12);
@@ -14,6 +14,6 @@ public final class g extends s3.b {
     @Override // s3.b
     public void a(x3.g db2) {
         Intrinsics.checkNotNullParameter(db2, "db");
-        db2.K("ALTER TABLE workspec ADD COLUMN `out_of_quota_policy` INTEGER NOT NULL DEFAULT 0");
+        db2.O("ALTER TABLE workspec ADD COLUMN `out_of_quota_policy` INTEGER NOT NULL DEFAULT 0");
     }
 }

@@ -15,15 +15,15 @@ import java.util.List;
 public abstract class f implements Window.Callback {
 
     /* renamed from: d  reason: collision with root package name */
-    public final Window.Callback f28660d;
+    public final Window.Callback f27804d;
 
     public f(Window.Callback callback) {
-        this.f28660d = callback;
+        this.f27804d = callback;
     }
 
     @Override // android.view.Window.Callback
     public boolean dispatchGenericMotionEvent(MotionEvent motionEvent) {
-        Window.Callback callback = this.f28660d;
+        Window.Callback callback = this.f27804d;
         if (callback == null) {
             return false;
         }
@@ -32,7 +32,7 @@ public abstract class f implements Window.Callback {
 
     @Override // android.view.Window.Callback
     public boolean dispatchKeyEvent(KeyEvent keyEvent) {
-        Window.Callback callback = this.f28660d;
+        Window.Callback callback = this.f27804d;
         if (callback == null) {
             return false;
         }
@@ -41,7 +41,7 @@ public abstract class f implements Window.Callback {
 
     @Override // android.view.Window.Callback
     public boolean dispatchKeyShortcutEvent(KeyEvent keyEvent) {
-        Window.Callback callback = this.f28660d;
+        Window.Callback callback = this.f27804d;
         if (callback == null) {
             return false;
         }
@@ -50,7 +50,7 @@ public abstract class f implements Window.Callback {
 
     @Override // android.view.Window.Callback
     public boolean dispatchPopulateAccessibilityEvent(AccessibilityEvent accessibilityEvent) {
-        Window.Callback callback = this.f28660d;
+        Window.Callback callback = this.f27804d;
         if (callback == null) {
             return false;
         }
@@ -59,7 +59,7 @@ public abstract class f implements Window.Callback {
 
     @Override // android.view.Window.Callback
     public boolean dispatchTouchEvent(MotionEvent motionEvent) {
-        Window.Callback callback = this.f28660d;
+        Window.Callback callback = this.f27804d;
         if (callback == null) {
             return false;
         }
@@ -68,7 +68,7 @@ public abstract class f implements Window.Callback {
 
     @Override // android.view.Window.Callback
     public boolean dispatchTrackballEvent(MotionEvent motionEvent) {
-        Window.Callback callback = this.f28660d;
+        Window.Callback callback = this.f27804d;
         if (callback == null) {
             return false;
         }
@@ -77,7 +77,7 @@ public abstract class f implements Window.Callback {
 
     @Override // android.view.Window.Callback
     public void onActionModeFinished(ActionMode actionMode) {
-        Window.Callback callback = this.f28660d;
+        Window.Callback callback = this.f27804d;
         if (callback == null) {
             return;
         }
@@ -86,7 +86,7 @@ public abstract class f implements Window.Callback {
 
     @Override // android.view.Window.Callback
     public void onActionModeStarted(ActionMode actionMode) {
-        Window.Callback callback = this.f28660d;
+        Window.Callback callback = this.f27804d;
         if (callback == null) {
             return;
         }
@@ -95,7 +95,7 @@ public abstract class f implements Window.Callback {
 
     @Override // android.view.Window.Callback
     public void onAttachedToWindow() {
-        Window.Callback callback = this.f28660d;
+        Window.Callback callback = this.f27804d;
         if (callback == null) {
             return;
         }
@@ -104,7 +104,7 @@ public abstract class f implements Window.Callback {
 
     @Override // android.view.Window.Callback
     public void onContentChanged() {
-        Window.Callback callback = this.f28660d;
+        Window.Callback callback = this.f27804d;
         if (callback == null) {
             return;
         }
@@ -113,7 +113,7 @@ public abstract class f implements Window.Callback {
 
     @Override // android.view.Window.Callback
     public boolean onCreatePanelMenu(int i10, Menu menu) {
-        Window.Callback callback = this.f28660d;
+        Window.Callback callback = this.f27804d;
         if (callback == null) {
             return false;
         }
@@ -122,7 +122,7 @@ public abstract class f implements Window.Callback {
 
     @Override // android.view.Window.Callback
     public View onCreatePanelView(int i10) {
-        Window.Callback callback = this.f28660d;
+        Window.Callback callback = this.f27804d;
         if (callback == null) {
             return null;
         }
@@ -131,7 +131,7 @@ public abstract class f implements Window.Callback {
 
     @Override // android.view.Window.Callback
     public void onDetachedFromWindow() {
-        Window.Callback callback = this.f28660d;
+        Window.Callback callback = this.f27804d;
         if (callback == null) {
             return;
         }
@@ -140,7 +140,7 @@ public abstract class f implements Window.Callback {
 
     @Override // android.view.Window.Callback
     public boolean onMenuItemSelected(int i10, MenuItem menuItem) {
-        Window.Callback callback = this.f28660d;
+        Window.Callback callback = this.f27804d;
         if (callback == null) {
             return false;
         }
@@ -149,7 +149,7 @@ public abstract class f implements Window.Callback {
 
     @Override // android.view.Window.Callback
     public boolean onMenuOpened(int i10, Menu menu) {
-        Window.Callback callback = this.f28660d;
+        Window.Callback callback = this.f27804d;
         if (callback == null) {
             return false;
         }
@@ -158,7 +158,7 @@ public abstract class f implements Window.Callback {
 
     @Override // android.view.Window.Callback
     public void onPanelClosed(int i10, Menu menu) {
-        Window.Callback callback = this.f28660d;
+        Window.Callback callback = this.f27804d;
         if (callback == null) {
             return;
         }
@@ -167,7 +167,7 @@ public abstract class f implements Window.Callback {
 
     @Override // android.view.Window.Callback
     public void onPointerCaptureChanged(boolean z10) {
-        Window.Callback callback = this.f28660d;
+        Window.Callback callback = this.f27804d;
         if (callback == null) {
             return;
         }
@@ -176,7 +176,7 @@ public abstract class f implements Window.Callback {
 
     @Override // android.view.Window.Callback
     public boolean onPreparePanel(int i10, View view, Menu menu) {
-        Window.Callback callback = this.f28660d;
+        Window.Callback callback = this.f27804d;
         if (callback == null) {
             return false;
         }
@@ -185,7 +185,7 @@ public abstract class f implements Window.Callback {
 
     @Override // android.view.Window.Callback
     public void onProvideKeyboardShortcuts(List list, Menu menu, int i10) {
-        Window.Callback callback = this.f28660d;
+        Window.Callback callback = this.f27804d;
         if (callback == null) {
             return;
         }
@@ -194,7 +194,7 @@ public abstract class f implements Window.Callback {
 
     @Override // android.view.Window.Callback
     public boolean onSearchRequested() {
-        Window.Callback callback = this.f28660d;
+        Window.Callback callback = this.f27804d;
         if (callback == null) {
             return false;
         }
@@ -203,7 +203,7 @@ public abstract class f implements Window.Callback {
 
     @Override // android.view.Window.Callback
     public void onWindowAttributesChanged(WindowManager.LayoutParams layoutParams) {
-        Window.Callback callback = this.f28660d;
+        Window.Callback callback = this.f27804d;
         if (callback == null) {
             return;
         }
@@ -212,7 +212,7 @@ public abstract class f implements Window.Callback {
 
     @Override // android.view.Window.Callback
     public void onWindowFocusChanged(boolean z10) {
-        Window.Callback callback = this.f28660d;
+        Window.Callback callback = this.f27804d;
         if (callback == null) {
             return;
         }
@@ -221,7 +221,7 @@ public abstract class f implements Window.Callback {
 
     @Override // android.view.Window.Callback
     public ActionMode onWindowStartingActionMode(ActionMode.Callback callback) {
-        Window.Callback callback2 = this.f28660d;
+        Window.Callback callback2 = this.f27804d;
         if (callback2 == null) {
             return null;
         }
@@ -230,7 +230,7 @@ public abstract class f implements Window.Callback {
 
     @Override // android.view.Window.Callback
     public boolean onSearchRequested(SearchEvent searchEvent) {
-        Window.Callback callback = this.f28660d;
+        Window.Callback callback = this.f27804d;
         if (callback == null) {
             return false;
         }
@@ -239,7 +239,7 @@ public abstract class f implements Window.Callback {
 
     @Override // android.view.Window.Callback
     public ActionMode onWindowStartingActionMode(ActionMode.Callback callback, int i10) {
-        Window.Callback callback2 = this.f28660d;
+        Window.Callback callback2 = this.f27804d;
         if (callback2 == null) {
             return null;
         }

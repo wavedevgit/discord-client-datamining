@@ -24,7 +24,7 @@ public abstract class c {
     }
 
     public static u0 b() {
-        ILogger logger = l4.f().u().b().getLogger();
+        ILogger logger = l4.g().t().b().getLogger();
         try {
             android.support.v4.media.session.b.a(c(b.class));
             logger.c(SentryLevel.DEBUG, "No profile converter provider found, using NoOpProfileConverter", new Object[0]);

@@ -1,23 +1,23 @@
 package ck;
 
-import java.util.concurrent.Executor;
+import gf.q;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public interface d {
-    Executor a();
+public final class d {
 
-    String b();
+    /* renamed from: a  reason: collision with root package name */
+    private final f f7474a;
 
-    String c();
+    /* renamed from: b  reason: collision with root package name */
+    private final tj.d f7475b;
 
-    boolean d();
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public d(f fVar, tj.d dVar) {
+        this.f7474a = fVar;
+        this.f7475b = dVar;
+    }
 
-    int e();
-
-    String f();
-
-    String g();
-
-    int h();
-
-    String i();
+    public final a a(bk.e eVar) {
+        q.m(eVar, "You must provide a valid FaceDetectorOptions.");
+        return new a((i) this.f7474a.b(eVar), this.f7475b, eVar, null);
+    }
 }

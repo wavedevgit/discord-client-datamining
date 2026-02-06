@@ -41,18 +41,18 @@ public final class AttributeStyles_ESignatureBorderColorStyleJsonAdapter extends
     @NotNull
     public AttributeStyles.ESignatureBorderColorStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         StyleElements.ComplexElementColor complexElementColor = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 complexElementColor = (StyleElements.ComplexElementColor) this.nullableComplexElementColorAdapter.fromJson(reader);
             }
         }
-        reader.z();
+        reader.D();
         return new AttributeStyles.ESignatureBorderColorStyle(complexElementColor);
     }
 
@@ -61,9 +61,9 @@ public final class AttributeStyles_ESignatureBorderColorStyleJsonAdapter extends
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (eSignatureBorderColorStyle != null) {
             writer.k();
-            writer.W("base");
+            writer.J("base");
             this.nullableComplexElementColorAdapter.toJson(writer, eSignatureBorderColorStyle.getBase());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

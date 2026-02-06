@@ -84,10 +84,10 @@ public final class PostPreviewEmbedView extends ConstraintLayout {
         backgroundImage.setVisibility(i11);
         if (str != null && !StringsKt.k0(str)) {
             if (str3 != null && !StringsKt.k0(str3)) {
-                ((GenericDraweeHierarchy) this.binding.coverImage.getHierarchy()).t(ScalingUtils$ScaleType.f10019e);
+                ((GenericDraweeHierarchy) this.binding.coverImage.getHierarchy()).t(ScalingUtils$ScaleType.f9918e);
                 this.binding.backgroundImage.setImageURI(str3);
             } else {
-                ((GenericDraweeHierarchy) this.binding.coverImage.getHierarchy()).t(ScalingUtils$ScaleType.f10023i);
+                ((GenericDraweeHierarchy) this.binding.coverImage.getHierarchy()).t(ScalingUtils$ScaleType.f9922i);
             }
             this.binding.coverImage.setImageURI(str);
         } else if (str2 != null && !StringsKt.k0(str2)) {
@@ -115,7 +115,7 @@ public final class PostPreviewEmbedView extends ConstraintLayout {
     }
 
     /* renamed from: setFooter-Ayv7vGE  reason: not valid java name */
-    private final void m704setFooterAyv7vGE(StructurableText structurableText, String str) {
+    private final void m702setFooterAyv7vGE(StructurableText structurableText, String str) {
         SimpleDraweeSpanTextView simpleDraweeSpanTextView = this.binding.footer;
         Intrinsics.checkNotNull(simpleDraweeSpanTextView);
         Context context = simpleDraweeSpanTextView.getContext();
@@ -174,7 +174,7 @@ public final class PostPreviewEmbedView extends ConstraintLayout {
     }
 
     /* renamed from: setPostPreviewEmbed-4itWklQ  reason: not valid java name */
-    public final void m705setPostPreviewEmbed4itWklQ(@NotNull String title, String str, @NotNull String ctaCopy, int i10, @NotNull StructurableText footer, @NotNull String messageId, String str2, String str3, String str4, String str5, @NotNull View.OnClickListener onButtonClickListener, boolean z10, boolean z11, boolean z12, boolean z13, SpoilerConfig spoilerConfig) {
+    public final void m703setPostPreviewEmbed4itWklQ(@NotNull String title, String str, @NotNull String ctaCopy, int i10, @NotNull StructurableText footer, @NotNull String messageId, String str2, String str3, String str4, String str5, @NotNull View.OnClickListener onButtonClickListener, boolean z10, boolean z11, boolean z12, boolean z13, SpoilerConfig spoilerConfig) {
         Intrinsics.checkNotNullParameter(title, "title");
         Intrinsics.checkNotNullParameter(ctaCopy, "ctaCopy");
         Intrinsics.checkNotNullParameter(footer, "footer");
@@ -184,7 +184,7 @@ public final class PostPreviewEmbedView extends ConstraintLayout {
         setButtonColor(i10);
         setTitle(title);
         setSubtitle(str);
-        m704setFooterAyv7vGE(footer, messageId);
+        m702setFooterAyv7vGE(footer, messageId);
         setCoverImage(str2, str3, str5);
         setCoverImageButtonText(str4);
         this.binding.cta.setOnClickButtonListener(onButtonClickListener);

@@ -14,95 +14,95 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class i extends b implements w1 {
 
     /* renamed from: i  reason: collision with root package name */
-    private String f29667i;
+    private String f28811i;
 
     /* renamed from: o  reason: collision with root package name */
-    private String f29668o;
+    private String f28812o;
 
     /* renamed from: p  reason: collision with root package name */
-    private String f29669p;
+    private String f28813p;
 
     /* renamed from: q  reason: collision with root package name */
-    private double f29670q;
+    private double f28814q;
 
     /* renamed from: r  reason: collision with root package name */
-    private double f29671r;
+    private double f28815r;
 
     /* renamed from: s  reason: collision with root package name */
-    private Map f29672s;
+    private Map f28816s;
 
     /* renamed from: t  reason: collision with root package name */
-    private Map f29673t;
+    private Map f28817t;
 
     /* renamed from: u  reason: collision with root package name */
-    private Map f29674u;
+    private Map f28818u;
 
     /* renamed from: v  reason: collision with root package name */
-    private Map f29675v;
+    private Map f28819v;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
         private void c(i iVar, e3 e3Var, ILogger iLogger) {
-            e3Var.s();
+            e3Var.u();
             ConcurrentHashMap concurrentHashMap = null;
             while (e3Var.peek() == io.sentry.vendor.gson.stream.b.NAME) {
-                String m02 = e3Var.m0();
-                m02.getClass();
-                if (!m02.equals("payload")) {
-                    if (!m02.equals("tag")) {
+                String o02 = e3Var.o0();
+                o02.getClass();
+                if (!o02.equals("payload")) {
+                    if (!o02.equals("tag")) {
                         if (concurrentHashMap == null) {
                             concurrentHashMap = new ConcurrentHashMap();
                         }
-                        e3Var.v1(iLogger, concurrentHashMap, m02);
+                        e3Var.u1(iLogger, concurrentHashMap, o02);
                     } else {
-                        String r12 = e3Var.r1();
-                        if (r12 == null) {
-                            r12 = "";
+                        String q12 = e3Var.q1();
+                        if (q12 == null) {
+                            q12 = "";
                         }
-                        iVar.f29667i = r12;
+                        iVar.f28811i = q12;
                     }
                 } else {
                     d(iVar, e3Var, iLogger);
                 }
             }
             iVar.p(concurrentHashMap);
-            e3Var.z();
+            e3Var.D();
         }
 
         private void d(i iVar, e3 e3Var, ILogger iLogger) {
-            e3Var.s();
+            e3Var.u();
             ConcurrentHashMap concurrentHashMap = null;
             while (e3Var.peek() == io.sentry.vendor.gson.stream.b.NAME) {
-                String m02 = e3Var.m0();
-                m02.getClass();
+                String o02 = e3Var.o0();
+                o02.getClass();
                 char c10 = 65535;
-                switch (m02.hashCode()) {
+                switch (o02.hashCode()) {
                     case -1724546052:
-                        if (m02.equals("description")) {
+                        if (o02.equals("description")) {
                             c10 = 0;
                             break;
                         }
                         break;
                     case -356088197:
-                        if (m02.equals("endTimestamp")) {
+                        if (o02.equals("endTimestamp")) {
                             c10 = 1;
                             break;
                         }
                         break;
                     case -299216172:
-                        if (m02.equals("startTimestamp")) {
+                        if (o02.equals("startTimestamp")) {
                             c10 = 2;
                             break;
                         }
                         break;
                     case 3553:
-                        if (m02.equals("op")) {
+                        if (o02.equals("op")) {
                             c10 = 3;
                             break;
                         }
                         break;
                     case 3076010:
-                        if (m02.equals("data")) {
+                        if (o02.equals("data")) {
                             c10 = 4;
                             break;
                         }
@@ -110,107 +110,107 @@ public final class i extends b implements w1 {
                 }
                 switch (c10) {
                     case 0:
-                        iVar.f29669p = e3Var.r1();
+                        iVar.f28813p = e3Var.q1();
                         break;
                     case 1:
-                        iVar.f29671r = e3Var.nextDouble();
+                        iVar.f28815r = e3Var.nextDouble();
                         break;
                     case 2:
-                        iVar.f29670q = e3Var.nextDouble();
+                        iVar.f28814q = e3Var.nextDouble();
                         break;
                     case 3:
-                        iVar.f29668o = e3Var.r1();
+                        iVar.f28812o = e3Var.q1();
                         break;
                     case 4:
-                        Map b10 = io.sentry.util.c.b((Map) e3Var.V1());
+                        Map b10 = io.sentry.util.c.b((Map) e3Var.U1());
                         if (b10 == null) {
                             break;
                         } else {
-                            iVar.f29672s = b10;
+                            iVar.f28816s = b10;
                             break;
                         }
                     default:
                         if (concurrentHashMap == null) {
                             concurrentHashMap = new ConcurrentHashMap();
                         }
-                        e3Var.v1(iLogger, concurrentHashMap, m02);
+                        e3Var.u1(iLogger, concurrentHashMap, o02);
                         break;
                 }
             }
             iVar.t(concurrentHashMap);
-            e3Var.z();
+            e3Var.D();
         }
 
         @Override // io.sentry.m1
         /* renamed from: b */
         public i a(e3 e3Var, ILogger iLogger) {
-            e3Var.s();
+            e3Var.u();
             i iVar = new i();
             b.a aVar = new b.a();
             HashMap hashMap = null;
             while (e3Var.peek() == io.sentry.vendor.gson.stream.b.NAME) {
-                String m02 = e3Var.m0();
-                m02.getClass();
-                if (!m02.equals("data")) {
-                    if (!aVar.a(iVar, m02, e3Var, iLogger)) {
+                String o02 = e3Var.o0();
+                o02.getClass();
+                if (!o02.equals("data")) {
+                    if (!aVar.a(iVar, o02, e3Var, iLogger)) {
                         if (hashMap == null) {
                             hashMap = new HashMap();
                         }
-                        e3Var.v1(iLogger, hashMap, m02);
+                        e3Var.u1(iLogger, hashMap, o02);
                     }
                 } else {
                     c(iVar, e3Var, iLogger);
                 }
             }
             iVar.v(hashMap);
-            e3Var.z();
+            e3Var.D();
             return iVar;
         }
     }
 
     public i() {
         super(c.Custom);
-        this.f29667i = "performanceSpan";
+        this.f28811i = "performanceSpan";
     }
 
     private void m(f3 f3Var, ILogger iLogger) {
-        f3Var.s();
-        f3Var.e("tag").f(this.f29667i);
+        f3Var.u();
+        f3Var.e("tag").f(this.f28811i);
         f3Var.e("payload");
         n(f3Var, iLogger);
-        Map map = this.f29675v;
+        Map map = this.f28819v;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f29675v.get(str);
+                Object obj = this.f28819v.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
         }
-        f3Var.z();
+        f3Var.D();
     }
 
     private void n(f3 f3Var, ILogger iLogger) {
-        f3Var.s();
-        if (this.f29668o != null) {
-            f3Var.e("op").f(this.f29668o);
+        f3Var.u();
+        if (this.f28812o != null) {
+            f3Var.e("op").f(this.f28812o);
         }
-        if (this.f29669p != null) {
-            f3Var.e("description").f(this.f29669p);
+        if (this.f28813p != null) {
+            f3Var.e("description").f(this.f28813p);
         }
-        f3Var.e("startTimestamp").j(iLogger, BigDecimal.valueOf(this.f29670q));
-        f3Var.e("endTimestamp").j(iLogger, BigDecimal.valueOf(this.f29671r));
-        if (this.f29672s != null) {
-            f3Var.e("data").j(iLogger, this.f29672s);
+        f3Var.e("startTimestamp").j(iLogger, BigDecimal.valueOf(this.f28814q));
+        f3Var.e("endTimestamp").j(iLogger, BigDecimal.valueOf(this.f28815r));
+        if (this.f28816s != null) {
+            f3Var.e("data").j(iLogger, this.f28816s);
         }
-        Map map = this.f29674u;
+        Map map = this.f28818u;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f29674u.get(str);
+                Object obj = this.f28818u.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
         }
-        f3Var.z();
+        f3Var.D();
     }
 
     public void o(Map map) {
@@ -220,51 +220,51 @@ public final class i extends b implements w1 {
         } else {
             concurrentHashMap = new ConcurrentHashMap(map);
         }
-        this.f29672s = concurrentHashMap;
+        this.f28816s = concurrentHashMap;
     }
 
     public void p(Map map) {
-        this.f29675v = map;
+        this.f28819v = map;
     }
 
     public void q(String str) {
-        this.f29669p = str;
+        this.f28813p = str;
     }
 
     public void r(double d10) {
-        this.f29671r = d10;
+        this.f28815r = d10;
     }
 
     public void s(String str) {
-        this.f29668o = str;
+        this.f28812o = str;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
-        f3Var.s();
-        new b.C0412b().a(this, f3Var, iLogger);
+        f3Var.u();
+        new b.C0406b().a(this, f3Var, iLogger);
         f3Var.e("data");
         m(f3Var, iLogger);
-        Map map = this.f29673t;
+        Map map = this.f28817t;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f29673t.get(str);
+                Object obj = this.f28817t.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
         }
-        f3Var.z();
+        f3Var.D();
     }
 
     public void t(Map map) {
-        this.f29674u = map;
+        this.f28818u = map;
     }
 
     public void u(double d10) {
-        this.f29670q = d10;
+        this.f28814q = d10;
     }
 
     public void v(Map map) {
-        this.f29673t = map;
+        this.f28817t = map;
     }
 }

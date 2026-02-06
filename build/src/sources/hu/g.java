@@ -1,210 +1,151 @@
 package hu;
 
-import fu.k;
-import java.io.IOException;
-import java.net.ProtocolException;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
-import java.util.concurrent.TimeUnit;
-import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import okhttp3.Headers;
-import okhttp3.OkHttpClient;
+import okhttp3.Call;
+import okhttp3.Interceptor;
 import okhttp3.Request;
 import okhttp3.Response;
-import okio.Sink;
-import okio.Source;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class g implements fu.d {
-
-    /* renamed from: g  reason: collision with root package name */
-    public static final a f27111g = new a(null);
-
-    /* renamed from: h  reason: collision with root package name */
-    private static final List f27112h = au.e.w("connection", "host", "keep-alive", "proxy-connection", "te", "transfer-encoding", "encoding", "upgrade", ":method", ":path", ":scheme", ":authority");
-
-    /* renamed from: i  reason: collision with root package name */
-    private static final List f27113i = au.e.w("connection", "host", "keep-alive", "proxy-connection", "te", "transfer-encoding", "encoding", "upgrade");
+public final class g implements Interceptor.Chain {
 
     /* renamed from: a  reason: collision with root package name */
-    private final eu.f f27114a;
+    private final gu.e f26501a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final fu.g f27115b;
+    private final List f26502b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final f f27116c;
+    private final int f26503c;
 
     /* renamed from: d  reason: collision with root package name */
-    private volatile i f27117d;
+    private final gu.c f26504d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final zt.j f27118e;
+    private final Request f26505e;
 
     /* renamed from: f  reason: collision with root package name */
-    private volatile boolean f27119f;
+    private final int f26506f;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a {
-        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
+    /* renamed from: g  reason: collision with root package name */
+    private final int f26507g;
+
+    /* renamed from: h  reason: collision with root package name */
+    private final int f26508h;
+
+    /* renamed from: i  reason: collision with root package name */
+    private int f26509i;
+
+    public g(gu.e call, List interceptors, int i10, gu.c cVar, Request request, int i11, int i12, int i13) {
+        Intrinsics.checkNotNullParameter(call, "call");
+        Intrinsics.checkNotNullParameter(interceptors, "interceptors");
+        Intrinsics.checkNotNullParameter(request, "request");
+        this.f26501a = call;
+        this.f26502b = interceptors;
+        this.f26503c = i10;
+        this.f26504d = cVar;
+        this.f26505e = request;
+        this.f26506f = i11;
+        this.f26507g = i12;
+        this.f26508h = i13;
+    }
+
+    public static /* synthetic */ g c(g gVar, int i10, gu.c cVar, Request request, int i11, int i12, int i13, int i14, Object obj) {
+        if ((i14 & 1) != 0) {
+            i10 = gVar.f26503c;
         }
+        if ((i14 & 2) != 0) {
+            cVar = gVar.f26504d;
+        }
+        if ((i14 & 4) != 0) {
+            request = gVar.f26505e;
+        }
+        if ((i14 & 8) != 0) {
+            i11 = gVar.f26506f;
+        }
+        if ((i14 & 16) != 0) {
+            i12 = gVar.f26507g;
+        }
+        if ((i14 & 32) != 0) {
+            i13 = gVar.f26508h;
+        }
+        int i15 = i12;
+        int i16 = i13;
+        return gVar.b(i10, cVar, request, i11, i15, i16);
+    }
 
-        public final List a(Request request) {
-            Intrinsics.checkNotNullParameter(request, "request");
-            Headers h10 = request.h();
-            ArrayList arrayList = new ArrayList(h10.size() + 4);
-            arrayList.add(new c(c.f27016g, request.j()));
-            arrayList.add(new c(c.f27017h, fu.i.f23518a.c(request.n())));
-            String f10 = request.f("Host");
-            if (f10 != null) {
-                arrayList.add(new c(c.f27019j, f10));
-            }
-            arrayList.add(new c(c.f27018i, request.n().s()));
-            int size = h10.size();
-            for (int i10 = 0; i10 < size; i10++) {
-                String e10 = h10.e(i10);
-                Locale US = Locale.US;
-                Intrinsics.checkNotNullExpressionValue(US, "US");
-                String lowerCase = e10.toLowerCase(US);
-                Intrinsics.checkNotNullExpressionValue(lowerCase, "this as java.lang.String).toLowerCase(locale)");
-                if (!g.f27112h.contains(lowerCase) || (Intrinsics.areEqual(lowerCase, "te") && Intrinsics.areEqual(h10.j(i10), "trailers"))) {
-                    arrayList.add(new c(lowerCase, h10.j(i10)));
+    @Override // okhttp3.Interceptor.Chain
+    public Response a(Request request) {
+        Intrinsics.checkNotNullParameter(request, "request");
+        if (this.f26503c < this.f26502b.size()) {
+            this.f26509i++;
+            gu.c cVar = this.f26504d;
+            if (cVar != null) {
+                if (cVar.j().g(request.n())) {
+                    if (this.f26509i != 1) {
+                        throw new IllegalStateException(("network interceptor " + this.f26502b.get(this.f26503c - 1) + " must call proceed() exactly once").toString());
+                    }
+                } else {
+                    throw new IllegalStateException(("network interceptor " + this.f26502b.get(this.f26503c - 1) + " must retain the same host and port").toString());
                 }
             }
-            return arrayList;
-        }
-
-        public final Response.a b(Headers headerBlock, zt.j protocol) {
-            Intrinsics.checkNotNullParameter(headerBlock, "headerBlock");
-            Intrinsics.checkNotNullParameter(protocol, "protocol");
-            Headers.a aVar = new Headers.a();
-            int size = headerBlock.size();
-            fu.k kVar = null;
-            for (int i10 = 0; i10 < size; i10++) {
-                String e10 = headerBlock.e(i10);
-                String j10 = headerBlock.j(i10);
-                if (Intrinsics.areEqual(e10, ":status")) {
-                    k.a aVar2 = fu.k.f23521d;
-                    kVar = aVar2.a("HTTP/1.1 " + j10);
-                } else if (!g.f27113i.contains(e10)) {
-                    aVar.d(e10, j10);
+            g c10 = c(this, this.f26503c + 1, null, request, 0, 0, 0, 58, null);
+            Interceptor interceptor = (Interceptor) this.f26502b.get(this.f26503c);
+            Response intercept = interceptor.intercept(c10);
+            if (intercept != null) {
+                if (this.f26504d != null && this.f26503c + 1 < this.f26502b.size() && c10.f26509i != 1) {
+                    throw new IllegalStateException(("network interceptor " + interceptor + " must call proceed() exactly once").toString());
+                } else if (intercept.n() != null) {
+                    return intercept;
+                } else {
+                    throw new IllegalStateException(("interceptor " + interceptor + " returned a response with no body").toString());
                 }
             }
-            if (kVar != null) {
-                return new Response.a().p(protocol).g(kVar.f23523b).m(kVar.f23524c).k(aVar.f());
-            }
-            throw new ProtocolException("Expected ':status' header not present");
+            throw new NullPointerException("interceptor " + interceptor + " returned null");
         }
-
-        private a() {
-        }
+        throw new IllegalStateException("Check failed.");
     }
 
-    public g(OkHttpClient client, eu.f connection, fu.g chain, f http2Connection) {
-        Intrinsics.checkNotNullParameter(client, "client");
-        Intrinsics.checkNotNullParameter(connection, "connection");
-        Intrinsics.checkNotNullParameter(chain, "chain");
-        Intrinsics.checkNotNullParameter(http2Connection, "http2Connection");
-        this.f27114a = connection;
-        this.f27115b = chain;
-        this.f27116c = http2Connection;
-        List G = client.G();
-        zt.j jVar = zt.j.H2_PRIOR_KNOWLEDGE;
-        this.f27118e = G.contains(jVar) ? jVar : zt.j.HTTP_2;
-    }
-
-    @Override // fu.d
-    public void a() {
-        i iVar = this.f27117d;
-        Intrinsics.checkNotNull(iVar);
-        iVar.n().close();
-    }
-
-    @Override // fu.d
-    public Source b(Response response) {
-        Intrinsics.checkNotNullParameter(response, "response");
-        i iVar = this.f27117d;
-        Intrinsics.checkNotNull(iVar);
-        return iVar.p();
-    }
-
-    @Override // fu.d
-    public eu.f c() {
-        return this.f27114a;
-    }
-
-    @Override // fu.d
-    public void cancel() {
-        this.f27119f = true;
-        i iVar = this.f27117d;
-        if (iVar != null) {
-            iVar.f(b.CANCEL);
-        }
-    }
-
-    @Override // fu.d
-    public long d(Response response) {
-        Intrinsics.checkNotNullParameter(response, "response");
-        if (!fu.e.b(response)) {
-            return 0L;
-        }
-        return au.e.v(response);
-    }
-
-    @Override // fu.d
-    public Sink e(Request request, long j10) {
+    public final g b(int i10, gu.c cVar, Request request, int i11, int i12, int i13) {
         Intrinsics.checkNotNullParameter(request, "request");
-        i iVar = this.f27117d;
-        Intrinsics.checkNotNull(iVar);
-        return iVar.n();
+        return new g(this.f26501a, this.f26502b, i10, cVar, request, i11, i12, i13);
     }
 
-    @Override // fu.d
-    public void f(Request request) {
-        boolean z10;
-        Intrinsics.checkNotNullParameter(request, "request");
-        if (this.f27117d != null) {
-            return;
-        }
-        if (request.c() != null) {
-            z10 = true;
-        } else {
-            z10 = false;
-        }
-        this.f27117d = this.f27116c.c2(f27111g.a(request), z10);
-        if (!this.f27119f) {
-            i iVar = this.f27117d;
-            Intrinsics.checkNotNull(iVar);
-            TimeUnit timeUnit = TimeUnit.MILLISECONDS;
-            iVar.v().g(this.f27115b.g(), timeUnit);
-            i iVar2 = this.f27117d;
-            Intrinsics.checkNotNull(iVar2);
-            iVar2.E().g(this.f27115b.j(), timeUnit);
-            return;
-        }
-        i iVar3 = this.f27117d;
-        Intrinsics.checkNotNull(iVar3);
-        iVar3.f(b.CANCEL);
-        throw new IOException("Canceled");
+    @Override // okhttp3.Interceptor.Chain
+    public Call call() {
+        return this.f26501a;
     }
 
-    @Override // fu.d
-    public Response.a g(boolean z10) {
-        i iVar = this.f27117d;
-        if (iVar != null) {
-            Response.a b10 = f27111g.b(iVar.C(), this.f27118e);
-            if (z10 && b10.h() == 100) {
-                return null;
-            }
-            return b10;
-        }
-        throw new IOException("stream wasn't created");
+    public final gu.e d() {
+        return this.f26501a;
     }
 
-    @Override // fu.d
-    public void h() {
-        this.f27116c.flush();
+    public final int e() {
+        return this.f26506f;
+    }
+
+    public final gu.c f() {
+        return this.f26504d;
+    }
+
+    @Override // okhttp3.Interceptor.Chain
+    public Request g() {
+        return this.f26505e;
+    }
+
+    public final int h() {
+        return this.f26507g;
+    }
+
+    public final Request i() {
+        return this.f26505e;
+    }
+
+    public final int j() {
+        return this.f26508h;
+    }
+
+    public int k() {
+        return this.f26507g;
     }
 }

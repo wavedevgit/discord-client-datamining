@@ -47,13 +47,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var5;
         var0 = function() { // Environment: var0
-            _fun81270: for (var _fun81270_ip = 0;;) switch (_fun81270_ip) {
+            _fun81271: for (var _fun81271_ip = 0;;) switch (_fun81271_ip) {
                 case 0:
                     var2 = _closure2_slot0;
                     var0 = null;
                     if (!(var0 != var2)) {
-                        _fun81270_ip = 142;
-                        continue _fun81270
+                        _fun81271_ip = 142;
+                        continue _fun81271
                     }
                 case 16:
                     var0 = {};
@@ -67,8 +67,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var3.CHANGE_NICKNAME;
                     var3 = var4.bind(var6)(var3, var5);
                     if (var3) {
-                        _fun81270_ip = 100;
-                        continue _fun81270
+                        _fun81271_ip = 100;
+                        continue _fun81271
                     }
                 case 70:
                     var7 = _closure1_slot2;
@@ -86,8 +86,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = _closure2_slot0;
                     var1 = var3.bind(var4)(var2, var1);
                     var0.canManageChannels = var1;
-                    _fun81270_ip = 156;
-                    continue _fun81270;
+                    _fun81271_ip = 156;
+                    continue _fun81271;
                 case 142:
                     var0 = {
                         'canAccessSettings': false,
@@ -103,4 +103,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useGuildActionSheetPermissions = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3091, 660, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3093, 660, 566, 2]);

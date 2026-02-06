@@ -57,7 +57,7 @@ public final class TextDisplayComponentViewManager extends SimpleViewManager<Tex
     @NotNull
     public static final String NAME = "TextDisplayComponentView";
     @NotNull
-    private final ReactEvents reactEvents = new ReactEvents(or.v.a("onTapLink", Reflection.getOrCreateKotlinClass(TapLinkData.class)), or.v.a("onLongPressLink", Reflection.getOrCreateKotlinClass(LongPressLinkData.class)), or.v.a("onTapAttachmentLink", Reflection.getOrCreateKotlinClass(TapAttachmentLinkData.class)), or.v.a("onLongPressAttachmentLink", Reflection.getOrCreateKotlinClass(LongPressAttachmentLinkData.class)), or.v.a("onTapMention", Reflection.getOrCreateKotlinClass(TapMentionData.class)), or.v.a("onTapTimestamp", Reflection.getOrCreateKotlinClass(TapTimestampEvent.class)), or.v.a("onTapInlineCode", Reflection.getOrCreateKotlinClass(TapInlineCodeEvent.class)), or.v.a("onTapEmoji", Reflection.getOrCreateKotlinClass(TapEmojiData.class)));
+    private final ReactEvents reactEvents = new ReactEvents(qr.v.a("onTapLink", Reflection.getOrCreateKotlinClass(TapLinkData.class)), qr.v.a("onLongPressLink", Reflection.getOrCreateKotlinClass(LongPressLinkData.class)), qr.v.a("onTapAttachmentLink", Reflection.getOrCreateKotlinClass(TapAttachmentLinkData.class)), qr.v.a("onLongPressAttachmentLink", Reflection.getOrCreateKotlinClass(LongPressAttachmentLinkData.class)), qr.v.a("onTapMention", Reflection.getOrCreateKotlinClass(TapMentionData.class)), qr.v.a("onTapTimestamp", Reflection.getOrCreateKotlinClass(TapTimestampEvent.class)), qr.v.a("onTapInlineCode", Reflection.getOrCreateKotlinClass(TapInlineCodeEvent.class)), qr.v.a("onTapEmoji", Reflection.getOrCreateKotlinClass(TapEmojiData.class)));
     @NotNull
     private final Map<TextDisplayComponentView, PartialData> viewToDataMapping = new LinkedHashMap();
 
@@ -182,73 +182,73 @@ public final class TextDisplayComponentViewManager extends SimpleViewManager<Tex
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit createTextDisplayComponentContext$lambda$10(CommandMentionContentNode it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit createTextDisplayComponentContext$lambda$11(TextDisplayComponentViewManager textDisplayComponentViewManager, TextDisplayComponentView textDisplayComponentView) {
         textDisplayComponentViewManager.tryConfigure(textDisplayComponentView);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit createTextDisplayComponentContext$lambda$12(TextDisplayComponentViewManager textDisplayComponentViewManager, TextDisplayComponentView textDisplayComponentView, String timestamp) {
         Intrinsics.checkNotNullParameter(timestamp, "timestamp");
         textDisplayComponentViewManager.reactEvents.emitEvent(textDisplayComponentView, new TapTimestampEvent(timestamp));
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit createTextDisplayComponentContext$lambda$13(TextDisplayComponentViewManager textDisplayComponentViewManager, TextDisplayComponentView textDisplayComponentView, InlineCodeContentNode node) {
         Intrinsics.checkNotNullParameter(node, "node");
         textDisplayComponentViewManager.reactEvents.emitEvent(textDisplayComponentView, new TapInlineCodeEvent(node));
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit createTextDisplayComponentContext$lambda$14(TextDisplayComponentViewManager textDisplayComponentViewManager, TextDisplayComponentView textDisplayComponentView, EmojiContentNode emojiNode) {
         Intrinsics.checkNotNullParameter(emojiNode, "emojiNode");
         textDisplayComponentViewManager.reactEvents.emitEvent(textDisplayComponentView, new TapEmojiData(emojiNode));
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit createTextDisplayComponentContext$lambda$15(SoundmojiContentNode it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit createTextDisplayComponentContext$lambda$2(TextDisplayComponentViewManager textDisplayComponentViewManager, TextDisplayComponentView textDisplayComponentView, LinkContentNode node) {
         Intrinsics.checkNotNullParameter(node, "node");
         textDisplayComponentViewManager.reactEvents.emitEvent(textDisplayComponentView, new TapLinkData(null, node, null));
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit createTextDisplayComponentContext$lambda$3(TextDisplayComponentViewManager textDisplayComponentViewManager, TextDisplayComponentView textDisplayComponentView, LinkContentNode node) {
         Intrinsics.checkNotNullParameter(node, "node");
         textDisplayComponentViewManager.reactEvents.emitEvent(textDisplayComponentView, new LongPressLinkData(node.getUrl()));
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit createTextDisplayComponentContext$lambda$4(String str, String str2, String str3) {
         Intrinsics.checkNotNullParameter(str, "<unused var>");
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit createTextDisplayComponentContext$lambda$5(String str, String str2, String str3, String str4) {
         Intrinsics.checkNotNullParameter(str, "<unused var>");
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit createTextDisplayComponentContext$lambda$6(TextDisplayComponentViewManager textDisplayComponentViewManager, TextDisplayComponentView textDisplayComponentView, String attachmentUrl) {
         Intrinsics.checkNotNullParameter(attachmentUrl, "attachmentUrl");
         textDisplayComponentViewManager.reactEvents.emitEvent(textDisplayComponentView, new TapAttachmentLinkData(attachmentUrl));
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -256,20 +256,20 @@ public final class TextDisplayComponentViewManager extends SimpleViewManager<Tex
         Intrinsics.checkNotNullParameter(attachmentUrl, "attachmentUrl");
         Intrinsics.checkNotNullParameter(attachmentName, "attachmentName");
         textDisplayComponentViewManager.reactEvents.emitEvent(textDisplayComponentView, new LongPressAttachmentLinkData(attachmentUrl, attachmentName));
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit createTextDisplayComponentContext$lambda$8(TextDisplayComponentViewManager textDisplayComponentViewManager, TextDisplayComponentView textDisplayComponentView, String str, String channelId, String str2, String str3) {
         Intrinsics.checkNotNullParameter(channelId, "channelId");
         textDisplayComponentViewManager.reactEvents.emitEvent(textDisplayComponentView, new TapMentionData(str, channelId, str2, str3));
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit createTextDisplayComponentContext$lambda$9(CommandMentionContentNode it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     private final void tryConfigure(TextDisplayComponentView textDisplayComponentView) {

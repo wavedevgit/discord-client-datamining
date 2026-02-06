@@ -1,29 +1,37 @@
 package ah;
-
-import android.graphics.Matrix;
-import android.util.Property;
-import android.widget.ImageView;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class e extends Property {
+public abstract class e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Matrix f632a;
+    public static int f709a = 2131231266;
 
-    public e() {
-        super(Matrix.class, "imageMatrixProperty");
-        this.f632a = new Matrix();
-    }
+    /* renamed from: b  reason: collision with root package name */
+    public static int f710b = 2131232115;
 
-    @Override // android.util.Property
-    /* renamed from: a */
-    public Matrix get(ImageView imageView) {
-        this.f632a.set(imageView.getImageMatrix());
-        return this.f632a;
-    }
+    /* renamed from: c  reason: collision with root package name */
+    public static int f711c = 2131232130;
 
-    @Override // android.util.Property
-    /* renamed from: b */
-    public void set(ImageView imageView, Matrix matrix) {
-        imageView.setImageMatrix(matrix);
-    }
+    /* renamed from: d  reason: collision with root package name */
+    public static int f712d = 2131232132;
+
+    /* renamed from: e  reason: collision with root package name */
+    public static int f713e = 2131232432;
+
+    /* renamed from: f  reason: collision with root package name */
+    public static int f714f = 2131232433;
+
+    /* renamed from: g  reason: collision with root package name */
+    public static int f715g = 2131232434;
+
+    /* renamed from: h  reason: collision with root package name */
+    public static int f716h = 2131232443;
+
+    /* renamed from: i  reason: collision with root package name */
+    public static int f717i = 2131232444;
+
+    /* renamed from: j  reason: collision with root package name */
+    public static int f718j = 2131232446;
+
+    /* renamed from: k  reason: collision with root package name */
+    public static int f719k = 2131232468;
 }

@@ -303,4 +303,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isMentionItem = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4223, 1348, 21, 3970, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4224, 1348, 21, 3971, 2]);

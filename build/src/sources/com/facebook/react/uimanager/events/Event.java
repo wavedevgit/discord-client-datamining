@@ -64,7 +64,7 @@ public abstract class Event<T extends Event<T>> {
         return event;
     }
 
-    @or.c
+    @qr.c
     public void dispatch(@NotNull RCTEventEmitter rctEventEmitter) {
         Intrinsics.checkNotNullParameter(rctEventEmitter, "rctEventEmitter");
         rctEventEmitter.receiveEvent(this.viewTag, internal_getEventNameCompat(), getEventData());
@@ -143,7 +143,7 @@ public abstract class Event<T extends Event<T>> {
         return this.viewTag;
     }
 
-    @or.c
+    @qr.c
     protected final void init(int i10) {
         init(-1, i10);
     }
@@ -189,7 +189,7 @@ public abstract class Event<T extends Event<T>> {
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @or.c
+    @qr.c
     public Event(int i10) {
         int i11 = uniqueIdCounter;
         uniqueIdCounter = i11 + 1;

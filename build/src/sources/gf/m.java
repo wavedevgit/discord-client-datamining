@@ -5,19 +5,19 @@ import java.util.concurrent.ConcurrentHashMap;
 public class m {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final i f24854b = new i("LibraryVersion", "");
+    private static final i f25107b = new i("LibraryVersion", "");
 
     /* renamed from: c  reason: collision with root package name */
-    private static final m f24855c = new m();
+    private static final m f25108c = new m();
 
     /* renamed from: a  reason: collision with root package name */
-    private final ConcurrentHashMap f24856a = new ConcurrentHashMap();
+    private final ConcurrentHashMap f25109a = new ConcurrentHashMap();
 
     protected m() {
     }
 
     public static m a() {
-        return f24855c;
+        return f25108c;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:24:0x00b3  */
@@ -34,7 +34,7 @@ public class m {
             gf.q.g(r9, r1)
             java.lang.String r1 = " version is "
             java.lang.String r2 = "Failed to get app version for libraryName: "
-            java.util.concurrent.ConcurrentHashMap r3 = r8.f24856a
+            java.util.concurrent.ConcurrentHashMap r3 = r8.f25109a
             boolean r4 = r3.containsKey(r9)
             if (r4 == 0) goto L1a
             java.lang.Object r9 = r3.get(r9)
@@ -53,7 +53,7 @@ public class m {
             r3.load(r5)     // Catch: java.lang.Throwable -> L66 java.io.IOException -> L68
             java.lang.String r6 = "version"
             java.lang.String r4 = r3.getProperty(r6, r4)     // Catch: java.lang.Throwable -> L66 java.io.IOException -> L68
-            gf.i r3 = gf.m.f24854b     // Catch: java.lang.Throwable -> L66 java.io.IOException -> L68
+            gf.i r3 = gf.m.f25107b     // Catch: java.lang.Throwable -> L66 java.io.IOException -> L68
             java.lang.String r6 = java.lang.String.valueOf(r9)     // Catch: java.lang.Throwable -> L66 java.io.IOException -> L68
             int r6 = r6.length()     // Catch: java.lang.Throwable -> L66 java.io.IOException -> L68
             int r6 = r6 + 12
@@ -77,7 +77,7 @@ public class m {
             r4 = r5
             goto L91
         L6c:
-            gf.i r1 = gf.m.f24854b     // Catch: java.lang.Throwable -> L66 java.io.IOException -> L68
+            gf.i r1 = gf.m.f25107b     // Catch: java.lang.Throwable -> L66 java.io.IOException -> L68
             java.lang.String r3 = java.lang.String.valueOf(r9)     // Catch: java.lang.Throwable -> L66 java.io.IOException -> L68
             int r3 = r3.length()     // Catch: java.lang.Throwable -> L66 java.io.IOException -> L68
             int r3 = r3 + 43
@@ -98,7 +98,7 @@ public class m {
             r1 = move-exception
             r3 = r4
         L91:
-            gf.i r5 = gf.m.f24854b     // Catch: java.lang.Throwable -> L8d
+            gf.i r5 = gf.m.f25107b     // Catch: java.lang.Throwable -> L8d
             java.lang.String r6 = java.lang.String.valueOf(r9)     // Catch: java.lang.Throwable -> L8d
             int r6 = r6.length()     // Catch: java.lang.Throwable -> L8d
             int r6 = r6 + 43
@@ -115,12 +115,12 @@ public class m {
             com.google.android.gms.common.util.j.a(r5)
         Lb6:
             if (r4 != 0) goto Lc1
-            gf.i r1 = gf.m.f24854b
+            gf.i r1 = gf.m.f25107b
             java.lang.String r2 = ".properties file is dropped during release process. Failure to read app version is expected during Google internal testing where locally-built libraries are used"
             r1.b(r0, r2)
             java.lang.String r4 = "UNKNOWN"
         Lc1:
-            java.util.concurrent.ConcurrentHashMap r0 = r8.f24856a
+            java.util.concurrent.ConcurrentHashMap r0 = r8.f25109a
             r0.put(r9, r4)
             return r4
         Lc7:

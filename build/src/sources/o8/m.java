@@ -5,27 +5,27 @@ import com.facebook.common.internal.Supplier;
 public abstract class m {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final Supplier f42333a = new b();
+    public static final Supplier f41556a = new b();
 
     /* renamed from: b  reason: collision with root package name */
-    public static final Supplier f42334b = new c();
+    public static final Supplier f41557b = new c();
 
     /* renamed from: c  reason: collision with root package name */
-    public static final Supplier f42335c = new d();
+    public static final Supplier f41558c = new d();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a implements Supplier {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Object f42336a;
+        final /* synthetic */ Object f41559a;
 
         a(Object obj) {
-            this.f42336a = obj;
+            this.f41559a = obj;
         }
 
         @Override // com.facebook.common.internal.Supplier
         public Object get() {
-            return this.f42336a;
+            return this.f41559a;
         }
     }
 

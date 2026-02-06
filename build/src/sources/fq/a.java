@@ -1,63 +1,238 @@
 package fq;
 
-import android.text.Editable;
-import android.view.View;
-import android.widget.EditText;
-import bq.e;
-import com.google.android.material.textfield.TextInputLayout;
-import kotlin.collections.CollectionsKt;
+import android.os.Parcel;
+import android.os.Parcelable;
+import com.withpersona.sdk2.inquiry.network.dto.JsonLogicBoolean;
+import java.util.ArrayList;
+import java.util.List;
 import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a {
+public final class a implements h {
+    @NotNull
+    public static final Parcelable.Creator<a> CREATOR = new C0327a();
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final a f23416a = new a();
+    /* renamed from: d  reason: collision with root package name */
+    private final String f23395d;
 
-    private a() {
+    /* renamed from: e  reason: collision with root package name */
+    private final JsonLogicBoolean f23396e;
+
+    /* renamed from: i  reason: collision with root package name */
+    private final JsonLogicBoolean f23397i;
+
+    /* renamed from: o  reason: collision with root package name */
+    private final String f23398o;
+
+    /* renamed from: p  reason: collision with root package name */
+    private final Integer f23399p;
+
+    /* renamed from: q  reason: collision with root package name */
+    private final List f23400q;
+
+    /* renamed from: r  reason: collision with root package name */
+    private boolean f23401r;
+
+    /* renamed from: fq.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class C0327a implements Parcelable.Creator {
+        @Override // android.os.Parcelable.Creator
+        /* renamed from: a */
+        public final a createFromParcel(Parcel parcel) {
+            Integer valueOf;
+            Intrinsics.checkNotNullParameter(parcel, "parcel");
+            String readString = parcel.readString();
+            JsonLogicBoolean jsonLogicBoolean = (JsonLogicBoolean) parcel.readParcelable(a.class.getClassLoader());
+            JsonLogicBoolean jsonLogicBoolean2 = (JsonLogicBoolean) parcel.readParcelable(a.class.getClassLoader());
+            String readString2 = parcel.readString();
+            if (parcel.readInt() == 0) {
+                valueOf = null;
+            } else {
+                valueOf = Integer.valueOf(parcel.readInt());
+            }
+            return new a(readString, jsonLogicBoolean, jsonLogicBoolean2, readString2, valueOf);
+        }
+
+        @Override // android.os.Parcelable.Creator
+        /* renamed from: b */
+        public final a[] newArray(int i10) {
+            return new a[i10];
+        }
     }
 
-    public final String a(View view) {
-        Editable editable;
-        Editable editable2;
-        Editable editable3;
-        Intrinsics.checkNotNullParameter(view, "view");
-        TextInputLayout textInputLayout = (TextInputLayout) view.findViewById(e.f7149u0);
-        TextInputLayout textInputLayout2 = (TextInputLayout) view.findViewById(e.B0);
-        TextInputLayout textInputLayout3 = (TextInputLayout) view.findViewById(e.L);
-        EditText editText = ((TextInputLayout) view.findViewById(e.G)).getEditText();
-        Editable editable4 = null;
-        if (editText != null) {
-            editable = editText.getText();
-        } else {
-            editable = null;
-        }
-        String valueOf = String.valueOf(editable);
-        EditText editText2 = textInputLayout.getEditText();
-        if (editText2 != null) {
-            editable2 = editText2.getText();
-        } else {
-            editable2 = null;
-        }
-        String valueOf2 = String.valueOf(editable2);
-        EditText editText3 = textInputLayout2.getEditText();
-        if (editText3 != null) {
-            editable3 = editText3.getText();
-        } else {
-            editable3 = null;
-        }
-        String valueOf3 = String.valueOf(editable3);
-        EditText editText4 = textInputLayout3.getEditText();
-        if (editText4 != null) {
-            editable4 = editText4.getText();
-        }
-        return CollectionsKt.x0(CollectionsKt.o(valueOf, valueOf2, valueOf3, String.valueOf(editable4)), "", null, null, 0, null, null, 62, null);
+    public a(String name, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, String str, Integer num) {
+        Intrinsics.checkNotNullParameter(name, "name");
+        this.f23395d = name;
+        this.f23396e = jsonLogicBoolean;
+        this.f23397i = jsonLogicBoolean2;
+        this.f23398o = str;
+        this.f23399p = num;
+        this.f23400q = new ArrayList();
     }
 
-    public final boolean b(View view) {
-        Intrinsics.checkNotNullParameter(view, "view");
-        if (a(view).length() == 4) {
+    @Override // fq.h
+    public boolean E0() {
+        return this.f23401r;
+    }
+
+    @Override // fq.e0
+    public List d() {
+        return this.f23400q;
+    }
+
+    @Override // android.os.Parcelable
+    public final int describeContents() {
+        return 0;
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof a)) {
+            return false;
+        }
+        a aVar = (a) obj;
+        if (Intrinsics.areEqual(this.f23395d, aVar.f23395d) && Intrinsics.areEqual(this.f23396e, aVar.f23396e) && Intrinsics.areEqual(this.f23397i, aVar.f23397i) && Intrinsics.areEqual(this.f23398o, aVar.f23398o) && Intrinsics.areEqual(this.f23399p, aVar.f23399p)) {
             return true;
         }
         return false;
+    }
+
+    @Override // fq.h
+    public String getAutoSubmitCountdownText() {
+        return this.f23398o;
+    }
+
+    @Override // fq.h
+    public Integer getAutoSubmitIntervalSeconds() {
+        return this.f23399p;
+    }
+
+    @Override // fq.v
+    public JsonLogicBoolean getDisabled() {
+        return this.f23397i;
+    }
+
+    @Override // fq.e0
+    public JsonLogicBoolean getHidden() {
+        return this.f23396e;
+    }
+
+    @Override // fq.h, fq.k5
+    public String getName() {
+        return this.f23395d;
+    }
+
+    public int hashCode() {
+        int hashCode;
+        int hashCode2;
+        int hashCode3;
+        int hashCode4 = this.f23395d.hashCode() * 31;
+        JsonLogicBoolean jsonLogicBoolean = this.f23396e;
+        int i10 = 0;
+        if (jsonLogicBoolean == null) {
+            hashCode = 0;
+        } else {
+            hashCode = jsonLogicBoolean.hashCode();
+        }
+        int i11 = (hashCode4 + hashCode) * 31;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f23397i;
+        if (jsonLogicBoolean2 == null) {
+            hashCode2 = 0;
+        } else {
+            hashCode2 = jsonLogicBoolean2.hashCode();
+        }
+        int i12 = (i11 + hashCode2) * 31;
+        String str = this.f23398o;
+        if (str == null) {
+            hashCode3 = 0;
+        } else {
+            hashCode3 = str.hashCode();
+        }
+        int i13 = (i12 + hashCode3) * 31;
+        Integer num = this.f23399p;
+        if (num != null) {
+            i10 = num.hashCode();
+        }
+        return i13 + i10;
+    }
+
+    @Override // fq.h, fq.j2
+    public void m(boolean z10) {
+        this.f23401r = z10;
+    }
+
+    public String toString() {
+        String str = this.f23395d;
+        JsonLogicBoolean jsonLogicBoolean = this.f23396e;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f23397i;
+        String str2 = this.f23398o;
+        Integer num = this.f23399p;
+        return "ActionButtonComponent(name=" + str + ", hidden=" + jsonLogicBoolean + ", disabled=" + jsonLogicBoolean2 + ", autoSubmitCountdownText=" + str2 + ", autoSubmitIntervalSeconds=" + num + ")";
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(Parcel dest, int i10) {
+        Intrinsics.checkNotNullParameter(dest, "dest");
+        dest.writeString(this.f23395d);
+        dest.writeParcelable(this.f23396e, i10);
+        dest.writeParcelable(this.f23397i, i10);
+        dest.writeString(this.f23398o);
+        Integer num = this.f23399p;
+        if (num == null) {
+            dest.writeInt(0);
+            return;
+        }
+        dest.writeInt(1);
+        dest.writeInt(num.intValue());
+    }
+
+    /* JADX WARN: Illegal instructions before constructor call */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public a(com.withpersona.sdk2.inquiry.network.dto.ui.components.ActionButton r8) {
+        /*
+            r7 = this;
+            java.lang.String r0 = "config"
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r8, r0)
+            java.lang.String r2 = r8.getName()
+            com.withpersona.sdk2.inquiry.network.dto.ui.BasicButtonAttributes r0 = r8.getAttributes()
+            r1 = 0
+            if (r0 == 0) goto L16
+            com.withpersona.sdk2.inquiry.network.dto.JsonLogicBoolean r0 = r0.getHidden()
+            r3 = r0
+            goto L17
+        L16:
+            r3 = r1
+        L17:
+            com.withpersona.sdk2.inquiry.network.dto.ui.BasicButtonAttributes r0 = r8.getAttributes()
+            if (r0 == 0) goto L23
+            com.withpersona.sdk2.inquiry.network.dto.JsonLogicBoolean r0 = r0.getDisabled()
+            r4 = r0
+            goto L24
+        L23:
+            r4 = r1
+        L24:
+            com.withpersona.sdk2.inquiry.network.dto.ui.BasicButtonAttributes r0 = r8.getAttributes()
+            if (r0 == 0) goto L30
+            java.lang.String r0 = r0.getAutoSubmitCountdownText()
+            r5 = r0
+            goto L31
+        L30:
+            r5 = r1
+        L31:
+            com.withpersona.sdk2.inquiry.network.dto.ui.BasicButtonAttributes r8 = r8.getAttributes()
+            if (r8 == 0) goto L3b
+            java.lang.Integer r1 = r8.getAutoSubmitIntervalSeconds()
+        L3b:
+            r6 = r1
+            r1 = r7
+            r1.<init>(r2, r3, r4, r5, r6)
+            return
+        */
+        throw new UnsupportedOperationException("Method not decompiled: fq.a.<init>(com.withpersona.sdk2.inquiry.network.dto.ui.components.ActionButton):void");
     }
 }

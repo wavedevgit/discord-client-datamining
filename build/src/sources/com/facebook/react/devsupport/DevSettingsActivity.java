@@ -8,7 +8,7 @@ import kotlin.Metadata;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class DevSettingsActivity extends PreferenceActivity {
     @Override // android.preference.PreferenceActivity, android.app.Activity
-    @or.c
+    @qr.c
     protected void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         setTitle(getApplication().getResources().getString(R.string.catalyst_settings_title));

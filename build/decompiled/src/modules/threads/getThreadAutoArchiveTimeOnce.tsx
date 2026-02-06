@@ -7,14 +7,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
     var1 = function arg0() {
-        _fun41316: for (var _fun41316_ip = 0;;) switch (_fun41316_ip) {
+        _fun41319: for (var _fun41319_ip = 0;;) switch (_fun41319_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.threadMetadata;
                 var2 = null;
                 if (!(var2 != var1)) {
-                    _fun41316_ip = 175;
-                    continue _fun41316
+                    _fun41319_ip = 175;
+                    continue _fun41319
                 }
             case 18:
                 var5 = _closure1_slot2;
@@ -22,8 +22,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var0.id;
                 var4 = var4.bind(var5)(var3);
                 if (!(var2 == var4)) {
-                    _fun41316_ip = 50;
-                    continue _fun41316
+                    _fun41319_ip = 50;
+                    continue _fun41319
                 }
             case 45:
                 var4 = var0.id;
@@ -41,8 +41,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2 != var1;
                 var2 = 0;
                 if (!var1) {
-                    _fun41316_ip = 154;
-                    continue _fun41316
+                    _fun41319_ip = 154;
+                    continue _fun41319
                 }
             case 104:
                 var1 = global;
@@ -93,14 +93,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/threads/getThreadAutoArchiveTimeOnce.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function arg0() {
-        _fun41317: for (var _fun41317_ip = 0;;) switch (_fun41317_ip) {
+        _fun41320: for (var _fun41320_ip = 0;;) switch (_fun41320_ip) {
             case 0:
                 var3 = arg0;
                 var1 = var3.threadMetadata;
                 var0 = null;
                 if (!(var0 != var1)) {
-                    _fun41317_ip = 83;
-                    continue _fun41317
+                    _fun41320_ip = 83;
+                    continue _fun41320
                 }
             case 15:
                 var0 = var3.threadMetadata;
@@ -126,4 +126,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.getThreadLastActivityTime = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3947, 667, 21, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3949, 667, 21, 2]);

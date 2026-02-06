@@ -1,51 +1,62 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function arg0, arg1() {
-        _fun28335: for (var _fun28335_ip = 0;;) switch (_fun28335_ip) {
+    var1 = function arg0, arg1, arg2() {
+        _fun28333: for (var _fun28333_ip = 0;;) switch (_fun28333_ip) {
             case 0:
-                var6 = arg0;
-                var5 = arg1;
-                var0 = null;
-                var0 = var0 == var6;
-                var1 = 0;
-                var4 = 0;
-                if (var0) {
-                    _fun28335_ip = 24;
-                    continue _fun28335
+                var2 = arg0;
+                var1 = arg1;
+                var4 = arg2;
+                var7 = var4.length;
+                var0 = 0;
+                if (!(var0 !== var7)) {
+                    _fun28333_ip = 122;
+                    continue _fun28333
                 }
-            case 19:
-                var4 = var6.length;
-            case 24:
-                var0 = new Array(0);
-                var7 = var1 < var4;
-                var3 = undefined;
-                var2 = 0;
-                var1 = 0;
-                if (!var7) {
-                    _fun28335_ip = 81;
-                    continue _fun28335
+            case 20:
+                var3 = 1;
+                if (!(var3 !== var7)) {
+                    _fun28333_ip = 105;
+                    continue _fun28333
+                }
+            case 27:
+                var5 = 2;
+                if (!(var5 !== var7)) {
+                    _fun28333_ip = 83;
+                    continue _fun28333
+                }
+            case 34:
+                var6 = 3;
+                if (!(var6 !== var7)) {
+                    _fun28333_ip = 54;
+                    continue _fun28333
                 }
             case 41:
-                var11 = var6[var2];
-                var9 = var5.bind(var3)(var11, var2, var6);
-                var8 = var2;
-                var7 = var1;
-                if (!var9) {
-                    _fun28335_ip = 71;
-                    continue _fun28335
-                }
-            case 61:
-                var10 = parseFloat(var1);
-                var7 = var10 + 1;
-                var0[var10] = var11;
-            case 71:
-                var2 = var8 + 1;
-                var1 = var7;
-                if (var2 < var4) {
-                    _fun28335_ip = 41;
-                    continue _fun28335
-                }
-            case 81:
+                var6 = var2.apply;
+                var6 = var6.bind(var2)(var1, var4);
+                return var6;
+            case 54:
+                var8 = var2.call;
+                var11 = var4[var0];
+                var10 = var4[var3];
+                var9 = var4[var5];
+                var13 = var2;
+                var12 = var1;
+                var5 = var13[var8](var12, var11, var10, var9, var8);
+                return var5;
+            case 83:
+                var6 = var2.call;
+                var5 = var4[var0];
+                var3 = var4[var3];
+                var3 = var6.bind(var2)(var1, var5, var3);
+                return var3;
+            case 105:
+                var3 = var2.call;
+                var0 = var4[var0];
+                var0 = var3.bind(var2)(var1, var0);
+                return var0;
+            case 122:
+                var0 = var2.call;
+                var0 = var0.bind(var2)(var1);
                 return var0;
         }
     };

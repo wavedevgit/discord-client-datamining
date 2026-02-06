@@ -7,22 +7,22 @@ import java.util.Map;
 public final class k0 extends IOException {
 
     /* renamed from: d  reason: collision with root package name */
-    public final com.google.android.exoplayer2.upstream.a f48741d;
+    public final com.google.android.exoplayer2.upstream.a f48825d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final Uri f48742e;
+    public final Uri f48826e;
 
     /* renamed from: i  reason: collision with root package name */
-    public final Map f48743i;
+    public final Map f48827i;
 
     /* renamed from: o  reason: collision with root package name */
-    public final long f48744o;
+    public final long f48828o;
 
     public k0(com.google.android.exoplayer2.upstream.a aVar, Uri uri, Map map, long j10, Throwable th2) {
         super(th2);
-        this.f48741d = aVar;
-        this.f48742e = uri;
-        this.f48743i = map;
-        this.f48744o = j10;
+        this.f48825d = aVar;
+        this.f48826e = uri;
+        this.f48827i = map;
+        this.f48828o = j10;
     }
 }

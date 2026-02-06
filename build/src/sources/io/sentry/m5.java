@@ -11,56 +11,56 @@ import java.util.Map;
 public final class m5 implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final io.sentry.protocol.x f29190d;
+    private final io.sentry.protocol.x f28334d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final io.sentry.protocol.r f29191e;
+    private final io.sentry.protocol.r f28335e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final q8 f29192i;
+    private final q8 f28336i;
 
     /* renamed from: o  reason: collision with root package name */
-    private Date f29193o;
+    private Date f28337o;
 
     /* renamed from: p  reason: collision with root package name */
-    private Map f29194p;
+    private Map f28338p;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
         @Override // io.sentry.m1
         /* renamed from: b */
         public m5 a(e3 e3Var, ILogger iLogger) {
-            e3Var.s();
+            e3Var.u();
             io.sentry.protocol.x xVar = null;
             io.sentry.protocol.r rVar = null;
             q8 q8Var = null;
             Date date = null;
             HashMap hashMap = null;
             while (e3Var.peek() == io.sentry.vendor.gson.stream.b.NAME) {
-                String m02 = e3Var.m0();
-                m02.getClass();
+                String o02 = e3Var.o0();
+                o02.getClass();
                 char c10 = 65535;
-                switch (m02.hashCode()) {
+                switch (o02.hashCode()) {
                     case 113722:
-                        if (m02.equals("sdk")) {
+                        if (o02.equals("sdk")) {
                             c10 = 0;
                             break;
                         }
                         break;
                     case 110620997:
-                        if (m02.equals(SharedPreferencesKey.TRACE)) {
+                        if (o02.equals(SharedPreferencesKey.TRACE)) {
                             c10 = 1;
                             break;
                         }
                         break;
                     case 278118624:
-                        if (m02.equals("event_id")) {
+                        if (o02.equals("event_id")) {
                             c10 = 2;
                             break;
                         }
                         break;
                     case 1980389946:
-                        if (m02.equals("sent_at")) {
+                        if (o02.equals("sent_at")) {
                             c10 = 3;
                             break;
                         }
@@ -77,20 +77,20 @@ public final class m5 implements w1 {
                         xVar = (io.sentry.protocol.x) e3Var.G0(iLogger, new x.a());
                         break;
                     case 3:
-                        date = e3Var.s0(iLogger);
+                        date = e3Var.u0(iLogger);
                         break;
                     default:
                         if (hashMap == null) {
                             hashMap = new HashMap();
                         }
-                        e3Var.v1(iLogger, hashMap, m02);
+                        e3Var.u1(iLogger, hashMap, o02);
                         break;
                 }
             }
             m5 m5Var = new m5(xVar, rVar, q8Var);
             m5Var.d(date);
             m5Var.e(hashMap);
-            e3Var.z();
+            e3Var.D();
             return m5Var;
         }
     }
@@ -100,54 +100,54 @@ public final class m5 implements w1 {
     }
 
     public io.sentry.protocol.x a() {
-        return this.f29190d;
+        return this.f28334d;
     }
 
     public io.sentry.protocol.r b() {
-        return this.f29191e;
+        return this.f28335e;
     }
 
     public q8 c() {
-        return this.f29192i;
+        return this.f28336i;
     }
 
     public void d(Date date) {
-        this.f29193o = date;
+        this.f28337o = date;
     }
 
     public void e(Map map) {
-        this.f29194p = map;
+        this.f28338p = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
-        f3Var.s();
-        if (this.f29190d != null) {
-            f3Var.e("event_id").j(iLogger, this.f29190d);
+        f3Var.u();
+        if (this.f28334d != null) {
+            f3Var.e("event_id").j(iLogger, this.f28334d);
         }
-        if (this.f29191e != null) {
-            f3Var.e("sdk").j(iLogger, this.f29191e);
+        if (this.f28335e != null) {
+            f3Var.e("sdk").j(iLogger, this.f28335e);
         }
-        if (this.f29192i != null) {
-            f3Var.e(SharedPreferencesKey.TRACE).j(iLogger, this.f29192i);
+        if (this.f28336i != null) {
+            f3Var.e(SharedPreferencesKey.TRACE).j(iLogger, this.f28336i);
         }
-        if (this.f29193o != null) {
-            f3Var.e("sent_at").j(iLogger, k.h(this.f29193o));
+        if (this.f28337o != null) {
+            f3Var.e("sent_at").j(iLogger, k.h(this.f28337o));
         }
-        Map map = this.f29194p;
+        Map map = this.f28338p;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f29194p.get(str);
+                Object obj = this.f28338p.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
         }
-        f3Var.z();
+        f3Var.D();
     }
 
     public m5(io.sentry.protocol.x xVar, io.sentry.protocol.r rVar, q8 q8Var) {
-        this.f29190d = xVar;
-        this.f29191e = rVar;
-        this.f29192i = q8Var;
+        this.f28334d = xVar;
+        this.f28335e = rVar;
+        this.f28336i = q8Var;
     }
 }

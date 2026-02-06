@@ -9,23 +9,23 @@ import java.util.Set;
 public class e extends e0 {
 
     /* renamed from: a  reason: collision with root package name */
-    protected final String f11423a;
+    protected final String f11322a;
 
     /* renamed from: b  reason: collision with root package name */
-    protected q f11424b = null;
+    protected q f11323b = null;
 
     /* renamed from: c  reason: collision with root package name */
-    protected Set f11425c = null;
+    protected Set f11324c = null;
 
     public e(String str) {
-        this.f11423a = str;
+        this.f11322a = str;
     }
 
     static String g(String str) {
         if ("base".equals(str)) {
-            return SoLoader.f11402d.getApplicationInfo().sourceDir;
+            return SoLoader.f11301d.getApplicationInfo().sourceDir;
         }
-        String[] strArr = SoLoader.f11402d.getApplicationInfo().splitSourceDirs;
+        String[] strArr = SoLoader.f11301d.getApplicationInfo().splitSourceDirs;
         if (strArr != null) {
             String str2 = "split_" + str + ".apk";
             for (String str3 : strArr) {
@@ -45,7 +45,7 @@ public class e extends e0 {
 
     @Override // com.facebook.soloader.e0
     public int d(String str, int i10, StrictMode.ThreadPolicy threadPolicy) {
-        Set set = this.f11425c;
+        Set set = this.f11324c;
         if (set != null) {
             if (set.contains(str)) {
                 return h(str, i10);
@@ -58,14 +58,14 @@ public class e extends e0 {
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // com.facebook.soloader.e0
     public void e(int i10) {
-        AssetManager assets = SoLoader.f11402d.getAssets();
-        InputStream open = assets.open(this.f11423a + ".soloader-manifest");
+        AssetManager assets = SoLoader.f11301d.getAssets();
+        InputStream open = assets.open(this.f11322a + ".soloader-manifest");
         try {
-            this.f11424b = q.b(open);
+            this.f11323b = q.b(open);
             if (open != null) {
                 open.close();
             }
-            this.f11425c = new HashSet(this.f11424b.f11464b);
+            this.f11324c = new HashSet(this.f11323b.f11363b);
         } catch (Throwable th2) {
             if (open != null) {
                 try {
@@ -79,10 +79,10 @@ public class e extends e0 {
     }
 
     public String f(String str) {
-        Set set = this.f11425c;
-        if (set != null && this.f11424b != null) {
+        Set set = this.f11324c;
+        if (set != null && this.f11323b != null) {
             if (set.contains(str)) {
-                return g(this.f11423a) + "!/lib/" + this.f11424b.f11463a + "/" + str;
+                return g(this.f11322a) + "!/lib/" + this.f11323b.f11362a + "/" + str;
             }
             return null;
         }

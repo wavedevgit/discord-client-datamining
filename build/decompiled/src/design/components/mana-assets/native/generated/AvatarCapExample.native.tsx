@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/mana-assets/native/generated/AvatarCapExample.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun52368: for (var _fun52368_ip = 0;;) switch (_fun52368_ip) {
+        _fun52381: for (var _fun52381_ip = 0;;) switch (_fun52381_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.accessible;
@@ -37,16 +37,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var0.width;
                 var3 = undefined;
                 if (!(var9 === var3)) {
-                    _fun52368_ip = 32;
-                    continue _fun52368
+                    _fun52381_ip = 32;
+                    continue _fun52381
                 }
             case 29:
                 var9 = 100;
             case 32:
                 var7 = var0.height;
                 if (!(var7 === var3)) {
-                    _fun52368_ip = 44;
-                    continue _fun52368
+                    _fun52381_ip = 44;
+                    continue _fun52381
                 }
             case 41:
                 var7 = 100;
@@ -81,4 +81,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.AvatarCapExample = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4704, 5976, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4705, 5980, 2]);

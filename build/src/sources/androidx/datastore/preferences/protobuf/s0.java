@@ -6,22 +6,22 @@ import java.util.Map;
 final class s0 implements d1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final o0 f3907a;
+    private final o0 f4236a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final k1 f3908b;
+    private final k1 f4237b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f3909c;
+    private final boolean f4238c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final p f3910d;
+    private final p f4239d;
 
     private s0(k1 k1Var, p pVar, o0 o0Var) {
-        this.f3908b = k1Var;
-        this.f3909c = pVar.e(o0Var);
-        this.f3910d = pVar;
-        this.f3907a = o0Var;
+        this.f4237b = k1Var;
+        this.f4238c = pVar.e(o0Var);
+        this.f4239d = pVar;
+        this.f4236a = o0Var;
     }
 
     private int j(k1 k1Var, Object obj) {
@@ -32,7 +32,7 @@ final class s0 implements d1 {
         k1 k1Var2;
         Object f10 = k1Var.f(obj);
         s d10 = pVar.d(obj);
-        while (c1Var.D() != Integer.MAX_VALUE) {
+        while (c1Var.z() != Integer.MAX_VALUE) {
             try {
                 k1Var2 = k1Var;
                 p pVar2 = pVar;
@@ -69,36 +69,36 @@ final class s0 implements d1 {
 
     private boolean m(c1 c1Var, o oVar, p pVar, s sVar, k1 k1Var, Object obj) {
         int tag = c1Var.getTag();
-        if (tag != q1.f3847a) {
+        if (tag != q1.f4176a) {
             if (q1.b(tag) == 2) {
-                Object b10 = pVar.b(oVar, this.f3907a, q1.a(tag));
+                Object b10 = pVar.b(oVar, this.f4236a, q1.a(tag));
                 if (b10 != null) {
                     pVar.h(c1Var, b10, oVar, sVar);
                     return true;
                 }
                 return k1Var.m(obj, c1Var);
             }
-            return c1Var.H();
+            return c1Var.C();
         }
         Object obj2 = null;
         int i10 = 0;
         g gVar = null;
-        while (c1Var.D() != Integer.MAX_VALUE) {
+        while (c1Var.z() != Integer.MAX_VALUE) {
             int tag2 = c1Var.getTag();
-            if (tag2 == q1.f3849c) {
-                i10 = c1Var.h();
-                obj2 = pVar.b(oVar, this.f3907a, i10);
-            } else if (tag2 == q1.f3850d) {
+            if (tag2 == q1.f4178c) {
+                i10 = c1Var.g();
+                obj2 = pVar.b(oVar, this.f4236a, i10);
+            } else if (tag2 == q1.f4179d) {
                 if (obj2 != null) {
                     pVar.h(c1Var, obj2, oVar, sVar);
                 } else {
-                    gVar = c1Var.o();
+                    gVar = c1Var.n();
                 }
-            } else if (!c1Var.H()) {
+            } else if (!c1Var.C()) {
                 break;
             }
         }
-        if (c1Var.getTag() == q1.f3848b) {
+        if (c1Var.getTag() == q1.f4177b) {
             if (gVar != null) {
                 if (obj2 != null) {
                     pVar.i(gVar, obj2, oVar, sVar);
@@ -117,70 +117,70 @@ final class s0 implements d1 {
 
     @Override // androidx.datastore.preferences.protobuf.d1
     public void a(Object obj, Object obj2) {
-        f1.F(this.f3908b, obj, obj2);
-        if (this.f3909c) {
-            f1.D(this.f3910d, obj, obj2);
+        f1.F(this.f4237b, obj, obj2);
+        if (this.f4238c) {
+            f1.D(this.f4239d, obj, obj2);
         }
     }
 
     @Override // androidx.datastore.preferences.protobuf.d1
-    public void b(Object obj, c1 c1Var, o oVar) {
-        k(this.f3908b, this.f3910d, obj, c1Var, oVar);
+    public void b(Object obj) {
+        this.f4237b.j(obj);
+        this.f4239d.f(obj);
     }
 
     @Override // androidx.datastore.preferences.protobuf.d1
-    public void c(Object obj) {
-        this.f3908b.j(obj);
-        this.f3910d.f(obj);
+    public final boolean c(Object obj) {
+        return this.f4239d.c(obj).k();
     }
 
     @Override // androidx.datastore.preferences.protobuf.d1
-    public final boolean d(Object obj) {
-        return this.f3910d.c(obj).k();
+    public Object d() {
+        return this.f4236a.newBuilderForType().s();
     }
 
     @Override // androidx.datastore.preferences.protobuf.d1
     public int e(Object obj) {
-        int j10 = j(this.f3908b, obj);
-        if (this.f3909c) {
-            return j10 + this.f3910d.c(obj).f();
-        }
-        return j10;
-    }
-
-    @Override // androidx.datastore.preferences.protobuf.d1
-    public Object f() {
-        return this.f3907a.newBuilderForType().D0();
-    }
-
-    @Override // androidx.datastore.preferences.protobuf.d1
-    public int g(Object obj) {
-        int hashCode = this.f3908b.g(obj).hashCode();
-        if (this.f3909c) {
-            return (hashCode * 53) + this.f3910d.c(obj).hashCode();
+        int hashCode = this.f4237b.g(obj).hashCode();
+        if (this.f4238c) {
+            return (hashCode * 53) + this.f4239d.c(obj).hashCode();
         }
         return hashCode;
     }
 
     @Override // androidx.datastore.preferences.protobuf.d1
-    public void h(Object obj, r1 r1Var) {
-        Iterator n10 = this.f3910d.c(obj).n();
+    public boolean f(Object obj, Object obj2) {
+        if (!this.f4237b.g(obj).equals(this.f4237b.g(obj2))) {
+            return false;
+        }
+        if (this.f4238c) {
+            return this.f4239d.c(obj).equals(this.f4239d.c(obj2));
+        }
+        return true;
+    }
+
+    @Override // androidx.datastore.preferences.protobuf.d1
+    public void g(Object obj, c1 c1Var, o oVar) {
+        k(this.f4237b, this.f4239d, obj, c1Var, oVar);
+    }
+
+    @Override // androidx.datastore.preferences.protobuf.d1
+    public int h(Object obj) {
+        int j10 = j(this.f4237b, obj);
+        if (this.f4238c) {
+            return j10 + this.f4239d.c(obj).f();
+        }
+        return j10;
+    }
+
+    @Override // androidx.datastore.preferences.protobuf.d1
+    public void i(Object obj, r1 r1Var) {
+        Iterator n10 = this.f4239d.c(obj).n();
         if (!n10.hasNext()) {
-            n(this.f3908b, obj, r1Var);
+            n(this.f4237b, obj, r1Var);
         } else {
             android.support.v4.media.session.b.a(((Map.Entry) n10.next()).getKey());
             throw null;
         }
-    }
-
-    @Override // androidx.datastore.preferences.protobuf.d1
-    public boolean i(Object obj, Object obj2) {
-        if (!this.f3908b.g(obj).equals(this.f3908b.g(obj2))) {
-            return false;
-        }
-        if (this.f3909c) {
-            return this.f3910d.c(obj).equals(this.f3910d.c(obj2));
-        }
-        return true;
     }
 }

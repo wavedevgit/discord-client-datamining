@@ -14,31 +14,31 @@ public class q extends hf.a {
     public static final Parcelable.Creator<q> CREATOR = new t0();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f52971d;
+    private final String f53750d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f52972e;
+    private final String f53751e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final v4 f52973i;
+    private final v4 f53752i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final g f52974o;
+    private final g f53753o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final f f52975p;
+    private final f f53754p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final h f52976q;
+    private final h f53755q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final d f52977r;
+    private final d f53756r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final String f52978s;
+    private final String f53757s;
 
     /* renamed from: t  reason: collision with root package name */
-    private String f52979t;
+    private String f53758t;
 
     private q(String str, String str2, v4 v4Var, g gVar, f fVar, h hVar, d dVar, String str3, String str4) {
         boolean z10 = false;
@@ -47,15 +47,15 @@ public class q extends hf.a {
             z10 = true;
         }
         gf.q.b(z10, "Must provide id and rawId if not an error response.");
-        this.f52971d = str;
-        this.f52972e = str2;
-        this.f52973i = v4Var;
-        this.f52974o = gVar;
-        this.f52975p = fVar;
-        this.f52976q = hVar;
-        this.f52977r = dVar;
-        this.f52978s = str3;
-        this.f52979t = null;
+        this.f53750d = str;
+        this.f53751e = str2;
+        this.f53752i = v4Var;
+        this.f53753o = gVar;
+        this.f53754p = fVar;
+        this.f53755q = hVar;
+        this.f53756r = dVar;
+        this.f53757s = str3;
+        this.f53758t = null;
     }
 
     public static q b(byte[] bArr) {
@@ -63,15 +63,15 @@ public class q extends hf.a {
     }
 
     public String c() {
-        return this.f52978s;
+        return this.f53757s;
     }
 
     public d d() {
-        return this.f52977r;
+        return this.f53756r;
     }
 
     public String e() {
-        return this.f52971d;
+        return this.f53750d;
     }
 
     public boolean equals(Object obj) {
@@ -79,30 +79,30 @@ public class q extends hf.a {
             return false;
         }
         q qVar = (q) obj;
-        if (!gf.o.a(this.f52971d, qVar.f52971d) || !gf.o.a(this.f52972e, qVar.f52972e) || !gf.o.a(this.f52973i, qVar.f52973i) || !gf.o.a(this.f52974o, qVar.f52974o) || !gf.o.a(this.f52975p, qVar.f52975p) || !gf.o.a(this.f52976q, qVar.f52976q) || !gf.o.a(this.f52977r, qVar.f52977r) || !gf.o.a(this.f52978s, qVar.f52978s)) {
+        if (!gf.o.a(this.f53750d, qVar.f53750d) || !gf.o.a(this.f53751e, qVar.f53751e) || !gf.o.a(this.f53752i, qVar.f53752i) || !gf.o.a(this.f53753o, qVar.f53753o) || !gf.o.a(this.f53754p, qVar.f53754p) || !gf.o.a(this.f53755q, qVar.f53755q) || !gf.o.a(this.f53756r, qVar.f53756r) || !gf.o.a(this.f53757s, qVar.f53757s)) {
             return false;
         }
         return true;
     }
 
     public byte[] f() {
-        v4 v4Var = this.f52973i;
+        v4 v4Var = this.f53752i;
         if (v4Var == null) {
             return null;
         }
-        return v4Var.o();
+        return v4Var.p();
     }
 
-    public i g() {
-        g gVar = this.f52974o;
+    public i h() {
+        g gVar = this.f53753o;
         if (gVar != null) {
             return gVar;
         }
-        f fVar = this.f52975p;
+        f fVar = this.f53754p;
         if (fVar != null) {
             return fVar;
         }
-        h hVar = this.f52976q;
+        h hVar = this.f53755q;
         if (hVar != null) {
             return hVar;
         }
@@ -110,11 +110,11 @@ public class q extends hf.a {
     }
 
     public int hashCode() {
-        return gf.o.b(this.f52971d, this.f52972e, this.f52973i, this.f52975p, this.f52974o, this.f52976q, this.f52977r, this.f52978s);
+        return gf.o.b(this.f53750d, this.f53751e, this.f53752i, this.f53754p, this.f53753o, this.f53755q, this.f53756r, this.f53757s);
     }
 
     public String i() {
-        return this.f52972e;
+        return this.f53751e;
     }
 
     public String j() {
@@ -125,33 +125,33 @@ public class q extends hf.a {
         JSONObject jSONObject;
         try {
             JSONObject jSONObject2 = new JSONObject();
-            v4 v4Var = this.f52973i;
-            if (v4Var != null && v4Var.o().length > 0) {
-                jSONObject2.put("rawId", com.google.android.gms.common.util.c.b(this.f52973i.o()));
+            v4 v4Var = this.f53752i;
+            if (v4Var != null && v4Var.p().length > 0) {
+                jSONObject2.put("rawId", com.google.android.gms.common.util.c.b(this.f53752i.p()));
             }
-            String str = this.f52978s;
+            String str = this.f53757s;
             if (str != null) {
                 jSONObject2.put("authenticatorAttachment", str);
             }
-            String str2 = this.f52972e;
-            if (str2 != null && this.f52976q == null) {
+            String str2 = this.f53751e;
+            if (str2 != null && this.f53755q == null) {
                 jSONObject2.put("type", str2);
             }
-            String str3 = this.f52971d;
+            String str3 = this.f53750d;
             if (str3 != null) {
                 jSONObject2.put(StackTraceHelper.ID_KEY, str3);
             }
             String str4 = "response";
-            f fVar = this.f52975p;
+            f fVar = this.f53754p;
             boolean z10 = true;
             if (fVar != null) {
-                jSONObject = fVar.g();
+                jSONObject = fVar.h();
             } else {
-                g gVar = this.f52974o;
+                g gVar = this.f53753o;
                 if (gVar != null) {
                     jSONObject = gVar.f();
                 } else {
-                    h hVar = this.f52976q;
+                    h hVar = this.f53755q;
                     z10 = false;
                     if (hVar != null) {
                         jSONObject = hVar.e();
@@ -164,7 +164,7 @@ public class q extends hf.a {
             if (jSONObject != null) {
                 jSONObject2.put(str4, jSONObject);
             }
-            d dVar = this.f52977r;
+            d dVar = this.f53756r;
             if (dVar != null) {
                 jSONObject2.put("clientExtensionResults", dVar.d());
                 return jSONObject2;
@@ -179,21 +179,21 @@ public class q extends hf.a {
     }
 
     public final String toString() {
-        byte[] o10;
-        v4 v4Var = this.f52973i;
+        byte[] p10;
+        v4 v4Var = this.f53752i;
         if (v4Var == null) {
-            o10 = null;
+            p10 = null;
         } else {
-            o10 = v4Var.o();
+            p10 = v4Var.p();
         }
-        String str = this.f52972e;
-        String str2 = this.f52971d;
-        g gVar = this.f52974o;
-        f fVar = this.f52975p;
-        h hVar = this.f52976q;
-        d dVar = this.f52977r;
-        String str3 = this.f52978s;
-        String b10 = com.google.android.gms.common.util.c.b(o10);
+        String str = this.f53751e;
+        String str2 = this.f53750d;
+        g gVar = this.f53753o;
+        f fVar = this.f53754p;
+        h hVar = this.f53755q;
+        d dVar = this.f53756r;
+        String str3 = this.f53757s;
+        String b10 = com.google.android.gms.common.util.c.b(p10);
         String valueOf = String.valueOf(gVar);
         String valueOf2 = String.valueOf(fVar);
         String valueOf3 = String.valueOf(hVar);
@@ -204,24 +204,24 @@ public class q extends hf.a {
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
         if (q5.b()) {
-            this.f52979t = l().toString();
+            this.f53758t = l().toString();
         }
         int a10 = hf.c.a(parcel);
         hf.c.s(parcel, 1, e(), false);
         hf.c.s(parcel, 2, i(), false);
         hf.c.f(parcel, 3, f(), false);
-        hf.c.q(parcel, 4, this.f52974o, i10, false);
-        hf.c.q(parcel, 5, this.f52975p, i10, false);
-        hf.c.q(parcel, 6, this.f52976q, i10, false);
+        hf.c.q(parcel, 4, this.f53753o, i10, false);
+        hf.c.q(parcel, 5, this.f53754p, i10, false);
+        hf.c.q(parcel, 6, this.f53755q, i10, false);
         hf.c.q(parcel, 7, d(), i10, false);
         hf.c.s(parcel, 8, c(), false);
-        hf.c.s(parcel, 9, this.f52979t, false);
+        hf.c.s(parcel, 9, this.f53758t, false);
         hf.c.b(parcel, a10);
-        this.f52979t = null;
+        this.f53758t = null;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public q(String str, String str2, byte[] bArr, g gVar, f fVar, h hVar, d dVar, String str3, String str4) {
-        this(str, str2, bArr == null ? null : v4.n(bArr, 0, bArr.length), gVar, fVar, hVar, dVar, str3, str4);
+        this(str, str2, bArr == null ? null : v4.o(bArr, 0, bArr.length), gVar, fVar, hVar, dVar, str3, str4);
     }
 }

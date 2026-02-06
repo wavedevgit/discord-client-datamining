@@ -16,25 +16,25 @@ import va.m;
 public abstract class b implements d {
 
     /* renamed from: f  reason: collision with root package name */
-    private static final Class f52723f = b.class;
+    private static final Class f53502f = b.class;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final byte[] f52724g = {-1, -39};
+    private static final byte[] f53503g = {-1, -39};
 
     /* renamed from: a  reason: collision with root package name */
-    private final va.d f52725a;
+    private final va.d f53504a;
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f52726b;
+    private boolean f53505b;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f52727c;
+    private boolean f53506c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final PreverificationHelper f52728d;
+    private final PreverificationHelper f53507d;
 
     /* renamed from: e  reason: collision with root package name */
-    final b2.d f52729e;
+    final b2.d f53508e;
 
     public b(va.d dVar, b2.d dVar2, f fVar) {
         PreverificationHelper preverificationHelper;
@@ -43,13 +43,13 @@ public abstract class b implements d {
         } else {
             preverificationHelper = null;
         }
-        this.f52728d = preverificationHelper;
-        this.f52725a = dVar;
+        this.f53507d = preverificationHelper;
+        this.f53504a = dVar;
         if (dVar instanceof m) {
-            this.f52726b = fVar.a();
-            this.f52727c = fVar.b();
+            this.f53505b = fVar.a();
+            this.f53506c = fVar.b();
         }
-        this.f52729e = dVar2;
+        this.f53508e = dVar2;
     }
 
     /* JADX WARN: Multi-variable type inference failed */
@@ -86,7 +86,7 @@ public abstract class b implements d {
         /*
             android.graphics.BitmapFactory$Options r0 = new android.graphics.BitmapFactory$Options
             r0.<init>()
-            int r1 = r5.W()
+            int r1 = r5.J()
             r0.inSampleSize = r1
             r1 = 1
             r0.inJustDecodeBounds = r1
@@ -107,7 +107,7 @@ public abstract class b implements d {
         L24:
             r0.inMutable = r1
             if (r7 != 0) goto L40
-            java.io.InputStream r5 = r5.N()
+            java.io.InputStream r5 = r5.C()
             r7 = 0
             android.graphics.BitmapFactory.decodeStream(r5, r7, r0)
             int r5 = r0.outWidth
@@ -133,14 +133,14 @@ public abstract class b implements d {
     @Override // wa.d
     public CloseableReference a(k kVar, Bitmap.Config config, Rect rect, ColorSpace colorSpace) {
         boolean z10;
-        BitmapFactory.Options e10 = e(kVar, config, this.f52726b);
+        BitmapFactory.Options e10 = e(kVar, config, this.f53505b);
         if (e10.inPreferredConfig != Bitmap.Config.ARGB_8888) {
             z10 = true;
         } else {
             z10 = false;
         }
         try {
-            return c((InputStream) j.g(kVar.N()), e10, rect, colorSpace);
+            return c((InputStream) j.g(kVar.C()), e10, rect, colorSpace);
         } catch (RuntimeException e11) {
             if (z10) {
                 return a(kVar, Bitmap.Config.ARGB_8888, rect, colorSpace);
@@ -153,14 +153,14 @@ public abstract class b implements d {
     public CloseableReference b(k kVar, Bitmap.Config config, Rect rect, int i10, ColorSpace colorSpace) {
         boolean z10;
         boolean I0 = kVar.I0(i10);
-        BitmapFactory.Options e10 = e(kVar, config, this.f52726b);
-        u8.b N = kVar.N();
-        j.g(N);
-        if (kVar.C0() > i10) {
-            N = new u8.a(N, i10);
+        BitmapFactory.Options e10 = e(kVar, config, this.f53505b);
+        u8.b C = kVar.C();
+        j.g(C);
+        if (kVar.P() > i10) {
+            C = new u8.a(C, i10);
         }
         if (!I0) {
-            N = new u8.b(N, f52724g);
+            C = new u8.b(C, f53503g);
         }
         if (e10.inPreferredConfig != Bitmap.Config.ARGB_8888) {
             z10 = true;
@@ -170,9 +170,9 @@ public abstract class b implements d {
         boolean z11 = z10;
         try {
             try {
-                CloseableReference c10 = c(N, e10, rect, colorSpace);
+                CloseableReference c10 = c(C, e10, rect, colorSpace);
                 try {
-                    N.close();
+                    C.close();
                     return c10;
                 } catch (IOException e11) {
                     e11.printStackTrace();
@@ -180,7 +180,7 @@ public abstract class b implements d {
                 }
             } catch (Throwable th2) {
                 try {
-                    N.close();
+                    C.close();
                 } catch (IOException e12) {
                     e12.printStackTrace();
                 }
@@ -190,7 +190,7 @@ public abstract class b implements d {
             if (z11) {
                 CloseableReference b10 = b(kVar, Bitmap.Config.ARGB_8888, rect, i10, colorSpace);
                 try {
-                    N.close();
+                    C.close();
                 } catch (IOException e14) {
                     e14.printStackTrace();
                 }
@@ -207,7 +207,7 @@ public abstract class b implements d {
     public static final class a implements s8.c {
 
         /* renamed from: a  reason: collision with root package name */
-        private static final a f52730a = new a();
+        private static final a f53509a = new a();
 
         private a() {
         }

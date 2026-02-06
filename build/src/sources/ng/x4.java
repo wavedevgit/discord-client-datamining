@@ -1,43 +1,77 @@
 package ng;
 
-import xi.c;
+import yi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class x4 implements xi.d {
+final class x4 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final x4 f41231a = new x4();
+    static final x4 f40386a = new x4();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final xi.c f41232b;
+    private static final yi.c f40387b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final xi.c f41233c;
+    private static final yi.c f40388c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final xi.c f41234d;
+    private static final yi.c f40389d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private static final yi.c f40390e;
+
+    /* renamed from: f  reason: collision with root package name */
+    private static final yi.c f40391f;
+
+    /* renamed from: g  reason: collision with root package name */
+    private static final yi.c f40392g;
+
+    /* renamed from: h  reason: collision with root package name */
+    private static final yi.c f40393h;
 
     static {
-        c.b a10 = xi.c.a("options");
-        f fVar = new f();
-        fVar.a(1);
-        f41232b = a10.b(fVar.b()).a();
-        c.b a11 = xi.c.a("errorCode");
-        f fVar2 = new f();
-        fVar2.a(2);
-        f41233c = a11.b(fVar2.b()).a();
-        c.b a12 = xi.c.a("durationMs");
-        f fVar3 = new f();
-        fVar3.a(3);
-        f41234d = a12.b(fVar3.b()).a();
+        c.b a10 = yi.c.a("errorCode");
+        l2 l2Var = new l2();
+        l2Var.a(1);
+        f40387b = a10.b(l2Var.b()).a();
+        c.b a11 = yi.c.a("hasResult");
+        l2 l2Var2 = new l2();
+        l2Var2.a(2);
+        f40388c = a11.b(l2Var2.b()).a();
+        c.b a12 = yi.c.a("isColdCall");
+        l2 l2Var3 = new l2();
+        l2Var3.a(3);
+        f40389d = a12.b(l2Var3.b()).a();
+        c.b a13 = yi.c.a("imageInfo");
+        l2 l2Var4 = new l2();
+        l2Var4.a(4);
+        f40390e = a13.b(l2Var4.b()).a();
+        c.b a14 = yi.c.a("options");
+        l2 l2Var5 = new l2();
+        l2Var5.a(5);
+        f40391f = a14.b(l2Var5.b()).a();
+        c.b a15 = yi.c.a("detectedBarcodeFormats");
+        l2 l2Var6 = new l2();
+        l2Var6.a(6);
+        f40392g = a15.b(l2Var6.b()).a();
+        c.b a16 = yi.c.a("detectedBarcodeValueTypes");
+        l2 l2Var7 = new l2();
+        l2Var7.a(7);
+        f40393h = a16.b(l2Var7.b()).a();
     }
 
     private x4() {
     }
 
-    @Override // xi.d
+    @Override // yi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
-        android.support.v4.media.session.b.a(obj);
-        xi.e eVar = (xi.e) obj2;
-        throw null;
+        e3 e3Var = (e3) obj;
+        yi.e eVar = (yi.e) obj2;
+        eVar.a(f40387b, e3Var.c());
+        eVar.a(f40388c, null);
+        eVar.a(f40389d, e3Var.e());
+        eVar.a(f40390e, null);
+        eVar.a(f40391f, e3Var.d());
+        eVar.a(f40392g, e3Var.a());
+        eVar.a(f40393h, e3Var.b());
     }
 }

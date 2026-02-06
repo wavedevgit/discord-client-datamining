@@ -1,63 +1,33 @@
 package pg;
 
-import java.util.List;
-/* JADX INFO: Access modifiers changed from: package-private */
+import java.io.Serializable;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class l0 extends m0 {
+final class l0 extends r implements Serializable {
 
-    /* renamed from: o  reason: collision with root package name */
-    final transient int f45523o;
+    /* renamed from: d  reason: collision with root package name */
+    final Object f44421d;
 
-    /* renamed from: p  reason: collision with root package name */
-    final transient int f45524p;
-
-    /* renamed from: q  reason: collision with root package name */
-    final /* synthetic */ m0 f45525q;
+    /* renamed from: e  reason: collision with root package name */
+    final Object f44422e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public l0(m0 m0Var, int i10, int i11) {
-        this.f45525q = m0Var;
-        this.f45523o = i10;
-        this.f45524p = i11;
+    public l0(Object obj, Object obj2) {
+        this.f44421d = obj;
+        this.f44422e = obj2;
     }
 
-    @Override // pg.h0
-    final int c() {
-        return this.f45525q.d() + this.f45523o + this.f45524p;
+    @Override // pg.r, java.util.Map.Entry
+    public final Object getKey() {
+        return this.f44421d;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    @Override // pg.h0
-    public final int d() {
-        return this.f45525q.d() + this.f45523o;
+    @Override // pg.r, java.util.Map.Entry
+    public final Object getValue() {
+        return this.f44422e;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    @Override // pg.h0
-    public final Object[] e() {
-        return this.f45525q.e();
-    }
-
-    @Override // pg.m0
-    public final m0 f(int i10, int i11) {
-        el.c(i10, i11, this.f45524p);
-        int i12 = this.f45523o;
-        return this.f45525q.subList(i10 + i12, i11 + i12);
-    }
-
-    @Override // java.util.List
-    public final Object get(int i10) {
-        el.a(i10, this.f45524p, "index");
-        return this.f45525q.get(i10 + this.f45523o);
-    }
-
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
-    public final int size() {
-        return this.f45524p;
-    }
-
-    @Override // pg.m0, java.util.List
-    public final /* bridge */ /* synthetic */ List subList(int i10, int i11) {
-        return subList(i10, i11);
+    @Override // java.util.Map.Entry
+    public final Object setValue(Object obj) {
+        throw new UnsupportedOperationException();
     }
 }

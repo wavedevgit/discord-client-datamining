@@ -62,13 +62,13 @@ public class FileProvider extends ContentProvider {
     public static class b implements PathStrategy {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f3236a;
+        private final String f3565a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final HashMap f3237b = new HashMap();
+        private final HashMap f3566b = new HashMap();
 
         b(String str) {
-            this.f3236a = str;
+            this.f3565a = str;
         }
 
         private boolean d(String str, String str2) {
@@ -83,7 +83,7 @@ public class FileProvider extends ContentProvider {
             try {
                 String canonicalPath = file.getCanonicalPath();
                 Map.Entry entry = null;
-                for (Map.Entry entry2 : this.f3237b.entrySet()) {
+                for (Map.Entry entry2 : this.f3566b.entrySet()) {
                     String path = ((File) entry2.getValue()).getPath();
                     if (d(canonicalPath, path) && (entry == null || path.length() > ((File) entry.getValue()).getPath().length())) {
                         entry = entry2;
@@ -96,7 +96,7 @@ public class FileProvider extends ContentProvider {
                     } else {
                         substring = canonicalPath.substring(path2.length() + 1);
                     }
-                    return new Uri.Builder().scheme("content").authority(this.f3236a).encodedPath(Uri.encode((String) entry.getKey()) + '/' + Uri.encode(substring, "/")).build();
+                    return new Uri.Builder().scheme("content").authority(this.f3565a).encodedPath(Uri.encode((String) entry.getKey()) + '/' + Uri.encode(substring, "/")).build();
                 }
                 throw new IllegalArgumentException("Failed to find configured root that contains " + canonicalPath);
             } catch (IOException unused) {
@@ -111,7 +111,7 @@ public class FileProvider extends ContentProvider {
             if (indexOf != -1) {
                 String decode = Uri.decode(encodedPath.substring(1, indexOf));
                 String decode2 = Uri.decode(encodedPath.substring(indexOf + 1));
-                File file = (File) this.f3237b.get(decode);
+                File file = (File) this.f3566b.get(decode);
                 if (file != null) {
                     File file2 = new File(file, decode2);
                     try {
@@ -132,7 +132,7 @@ public class FileProvider extends ContentProvider {
         void c(String str, File file) {
             if (!TextUtils.isEmpty(str)) {
                 try {
-                    this.f3237b.put(str, file.getCanonicalFile());
+                    this.f3566b.put(str, file.getCanonicalFile());
                     return;
                 } catch (IOException e10) {
                     throw new IllegalArgumentException("Failed to resolve canonical path for " + file, e10);

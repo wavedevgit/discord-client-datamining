@@ -11,13 +11,13 @@ import java.util.Set;
 public class CaptureFailedRetryQuirk implements y1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Set f2121a = new HashSet(Collections.singletonList(Pair.create("SAMSUNG", "SM-G981U1")));
+    private static final Set f2450a = new HashSet(Collections.singletonList(Pair.create("SAMSUNG", "SM-G981U1")));
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static boolean d() {
         String str = Build.BRAND;
         Locale locale = Locale.US;
-        return f2121a.contains(Pair.create(str.toUpperCase(locale), Build.MODEL.toUpperCase(locale)));
+        return f2450a.contains(Pair.create(str.toUpperCase(locale), Build.MODEL.toUpperCase(locale)));
     }
 
     public int c() {

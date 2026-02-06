@@ -81,8 +81,8 @@ public final class RemoteImage implements UiComponentConfig {
             @NotNull
             public ContentType fromJson(@NotNull m reader) {
                 Intrinsics.checkNotNullParameter(reader, "reader");
-                Object V = reader.V();
-                return Intrinsics.areEqual(V, "application/json") ? ContentType.JSON : Intrinsics.areEqual(V, "image/svg+xml") ? ContentType.SVG : ContentType.Image;
+                Object I = reader.I();
+                return Intrinsics.areEqual(I, "application/json") ? ContentType.JSON : Intrinsics.areEqual(I, "image/svg+xml") ? ContentType.SVG : ContentType.Image;
             }
         }
 
@@ -93,7 +93,7 @@ public final class RemoteImage implements UiComponentConfig {
         static {
             ContentType[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = vr.a.a($values);
+            $ENTRIES = xr.a.a($values);
             Companion = new Companion(null);
         }
 

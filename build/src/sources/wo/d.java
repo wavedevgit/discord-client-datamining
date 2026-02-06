@@ -1,25 +1,39 @@
 package wo;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.FrameLayout;
+import androidx.viewbinding.ViewBinding;
+import uo.g2;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class d implements zq.d {
+public final class d implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final c f53183a;
+    private final FrameLayout f54049a;
 
-    public d(c cVar) {
-        this.f53183a = cVar;
+    private d(FrameLayout frameLayout) {
+        this.f54049a = frameLayout;
     }
 
-    public static d a(c cVar) {
-        return new d(cVar);
+    public static d a(View view) {
+        if (view != null) {
+            return new d((FrameLayout) view);
+        }
+        throw new NullPointerException("rootView");
     }
 
-    public static so.f b(c cVar) {
-        return (so.f) zq.g.d(cVar.a());
+    public static d c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
+        View inflate = layoutInflater.inflate(g2.f51951e, viewGroup, false);
+        if (z10) {
+            viewGroup.addView(inflate);
+        }
+        return a(inflate);
     }
 
-    @Override // javax.inject.Provider
-    /* renamed from: c */
-    public so.f get() {
-        return b(this.f53183a);
+    @Override // androidx.viewbinding.ViewBinding
+    /* renamed from: b */
+    public FrameLayout getRoot() {
+        return this.f54049a;
     }
 }

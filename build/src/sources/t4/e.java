@@ -2,15 +2,15 @@ package t4;
 
 import java.util.List;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-public final class e implements qu.b {
+public final class e implements su.b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final e f50320a = new e();
+    public static final e f50296a = new e();
 
     private e() {
     }
 
-    @Override // qu.b
+    @Override // su.b
     public Object f(Object obj, Object obj2) {
         List list;
         if (obj instanceof List) {

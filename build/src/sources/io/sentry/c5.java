@@ -6,125 +6,125 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class c5 implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    boolean f28772d;
+    boolean f27916d;
 
     /* renamed from: e  reason: collision with root package name */
-    Double f28773e;
+    Double f27917e;
 
     /* renamed from: i  reason: collision with root package name */
-    boolean f28774i;
+    boolean f27918i;
 
     /* renamed from: o  reason: collision with root package name */
-    Double f28775o;
+    Double f27919o;
 
     /* renamed from: p  reason: collision with root package name */
-    String f28776p;
+    String f27920p;
 
     /* renamed from: q  reason: collision with root package name */
-    boolean f28777q;
+    boolean f27921q;
 
     /* renamed from: r  reason: collision with root package name */
-    boolean f28778r;
+    boolean f27922r;
 
     /* renamed from: s  reason: collision with root package name */
-    int f28779s;
+    int f27923s;
 
     /* renamed from: t  reason: collision with root package name */
-    boolean f28780t;
+    boolean f27924t;
 
     /* renamed from: u  reason: collision with root package name */
-    boolean f28781u;
+    boolean f27925u;
 
     /* renamed from: v  reason: collision with root package name */
-    boolean f28782v;
+    boolean f27926v;
 
     /* renamed from: w  reason: collision with root package name */
-    o3 f28783w;
+    o3 f27927w;
 
     /* renamed from: x  reason: collision with root package name */
-    private Map f28784x;
+    private Map f27928x;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
         @Override // io.sentry.m1
         /* renamed from: b */
         public c5 a(e3 e3Var, ILogger iLogger) {
-            e3Var.s();
+            e3Var.u();
             c5 c5Var = new c5();
             ConcurrentHashMap concurrentHashMap = null;
             while (e3Var.peek() == io.sentry.vendor.gson.stream.b.NAME) {
-                String m02 = e3Var.m0();
-                m02.getClass();
+                String o02 = e3Var.o0();
+                o02.getClass();
                 char c10 = 65535;
-                switch (m02.hashCode()) {
+                switch (o02.hashCode()) {
                     case -801141276:
-                        if (m02.equals("is_enable_app_start_profiling")) {
+                        if (o02.equals("is_enable_app_start_profiling")) {
                             c10 = 0;
                             break;
                         }
                         break;
                     case -566246656:
-                        if (m02.equals("trace_sampled")) {
+                        if (o02.equals("trace_sampled")) {
                             c10 = 1;
                             break;
                         }
                         break;
                     case -450071601:
-                        if (m02.equals("profiling_traces_dir_path")) {
+                        if (o02.equals("profiling_traces_dir_path")) {
                             c10 = 2;
                             break;
                         }
                         break;
                     case -436975123:
-                        if (m02.equals("is_continuous_profiling_enabled")) {
+                        if (o02.equals("is_continuous_profiling_enabled")) {
                             c10 = 3;
                             break;
                         }
                         break;
                     case -116896685:
-                        if (m02.equals("is_profiling_enabled")) {
+                        if (o02.equals("is_profiling_enabled")) {
                             c10 = 4;
                             break;
                         }
                         break;
                     case -104146616:
-                        if (m02.equals("is_start_profiler_on_app_start")) {
+                        if (o02.equals("is_start_profiler_on_app_start")) {
                             c10 = 5;
                             break;
                         }
                         break;
                     case -69617820:
-                        if (m02.equals("profile_sampled")) {
+                        if (o02.equals("profile_sampled")) {
                             c10 = 6;
                             break;
                         }
                         break;
                     case 401419348:
-                        if (m02.equals("profile_lifecycle")) {
+                        if (o02.equals("profile_lifecycle")) {
                             c10 = 7;
                             break;
                         }
                         break;
                     case 1401020980:
-                        if (m02.equals("continuous_profile_sampled")) {
+                        if (o02.equals("continuous_profile_sampled")) {
                             c10 = '\b';
                             break;
                         }
                         break;
                     case 1583866442:
-                        if (m02.equals("profiling_traces_hz")) {
+                        if (o02.equals("profiling_traces_hz")) {
                             c10 = '\t';
                             break;
                         }
                         break;
                     case 1653938779:
-                        if (m02.equals("trace_sample_rate")) {
+                        if (o02.equals("trace_sample_rate")) {
                             c10 = '\n';
                             break;
                         }
                         break;
                     case 2140552383:
-                        if (m02.equals("profile_sample_rate")) {
+                        if (o02.equals("profile_sample_rate")) {
                             c10 = 11;
                             break;
                         }
@@ -132,226 +132,226 @@ public final class c5 implements w1 {
                 }
                 switch (c10) {
                     case 0:
-                        Boolean w02 = e3Var.w0();
-                        if (w02 == null) {
+                        Boolean y02 = e3Var.y0();
+                        if (y02 == null) {
                             break;
                         } else {
-                            c5Var.f28781u = w02.booleanValue();
+                            c5Var.f27925u = y02.booleanValue();
                             break;
                         }
                     case 1:
-                        Boolean w03 = e3Var.w0();
-                        if (w03 == null) {
+                        Boolean y03 = e3Var.y0();
+                        if (y03 == null) {
                             break;
                         } else {
-                            c5Var.f28774i = w03.booleanValue();
+                            c5Var.f27918i = y03.booleanValue();
                             break;
                         }
                     case 2:
-                        String r12 = e3Var.r1();
-                        if (r12 == null) {
+                        String q12 = e3Var.q1();
+                        if (q12 == null) {
                             break;
                         } else {
-                            c5Var.f28776p = r12;
+                            c5Var.f27920p = q12;
                             break;
                         }
                     case 3:
-                        Boolean w04 = e3Var.w0();
-                        if (w04 == null) {
+                        Boolean y04 = e3Var.y0();
+                        if (y04 == null) {
                             break;
                         } else {
-                            c5Var.f28778r = w04.booleanValue();
+                            c5Var.f27922r = y04.booleanValue();
                             break;
                         }
                     case 4:
-                        Boolean w05 = e3Var.w0();
-                        if (w05 == null) {
+                        Boolean y05 = e3Var.y0();
+                        if (y05 == null) {
                             break;
                         } else {
-                            c5Var.f28777q = w05.booleanValue();
+                            c5Var.f27921q = y05.booleanValue();
                             break;
                         }
                     case 5:
-                        Boolean w06 = e3Var.w0();
-                        if (w06 == null) {
+                        Boolean y06 = e3Var.y0();
+                        if (y06 == null) {
                             break;
                         } else {
-                            c5Var.f28782v = w06.booleanValue();
+                            c5Var.f27926v = y06.booleanValue();
                             break;
                         }
                     case 6:
-                        Boolean w07 = e3Var.w0();
-                        if (w07 == null) {
+                        Boolean y07 = e3Var.y0();
+                        if (y07 == null) {
                             break;
                         } else {
-                            c5Var.f28772d = w07.booleanValue();
+                            c5Var.f27916d = y07.booleanValue();
                             break;
                         }
                     case 7:
-                        String r13 = e3Var.r1();
-                        if (r13 == null) {
+                        String q13 = e3Var.q1();
+                        if (q13 == null) {
                             break;
                         } else {
                             try {
-                                c5Var.f28783w = o3.valueOf(r13);
+                                c5Var.f27927w = o3.valueOf(q13);
                                 break;
                             } catch (IllegalArgumentException unused) {
-                                iLogger.c(SentryLevel.ERROR, "Error when deserializing ProfileLifecycle: " + r13, new Object[0]);
+                                iLogger.c(SentryLevel.ERROR, "Error when deserializing ProfileLifecycle: " + q13, new Object[0]);
                                 break;
                             }
                         }
                     case '\b':
-                        Boolean w08 = e3Var.w0();
-                        if (w08 == null) {
+                        Boolean y08 = e3Var.y0();
+                        if (y08 == null) {
                             break;
                         } else {
-                            c5Var.f28780t = w08.booleanValue();
+                            c5Var.f27924t = y08.booleanValue();
                             break;
                         }
                     case '\t':
-                        Integer k12 = e3Var.k1();
-                        if (k12 == null) {
+                        Integer j12 = e3Var.j1();
+                        if (j12 == null) {
                             break;
                         } else {
-                            c5Var.f28779s = k12.intValue();
+                            c5Var.f27923s = j12.intValue();
                             break;
                         }
                     case '\n':
-                        Double l02 = e3Var.l0();
-                        if (l02 == null) {
+                        Double n02 = e3Var.n0();
+                        if (n02 == null) {
                             break;
                         } else {
-                            c5Var.f28775o = l02;
+                            c5Var.f27919o = n02;
                             break;
                         }
                     case 11:
-                        Double l03 = e3Var.l0();
-                        if (l03 == null) {
+                        Double n03 = e3Var.n0();
+                        if (n03 == null) {
                             break;
                         } else {
-                            c5Var.f28773e = l03;
+                            c5Var.f27917e = n03;
                             break;
                         }
                     default:
                         if (concurrentHashMap == null) {
                             concurrentHashMap = new ConcurrentHashMap();
                         }
-                        e3Var.v1(iLogger, concurrentHashMap, m02);
+                        e3Var.u1(iLogger, concurrentHashMap, o02);
                         break;
                 }
             }
             c5Var.m(concurrentHashMap);
-            e3Var.z();
+            e3Var.D();
             return c5Var;
         }
     }
 
     public c5() {
-        this.f28774i = false;
-        this.f28775o = null;
-        this.f28772d = false;
-        this.f28773e = null;
-        this.f28780t = false;
-        this.f28776p = null;
-        this.f28777q = false;
-        this.f28778r = false;
-        this.f28783w = o3.MANUAL;
-        this.f28779s = 0;
-        this.f28781u = true;
-        this.f28782v = false;
+        this.f27918i = false;
+        this.f27919o = null;
+        this.f27916d = false;
+        this.f27917e = null;
+        this.f27924t = false;
+        this.f27920p = null;
+        this.f27921q = false;
+        this.f27922r = false;
+        this.f27927w = o3.MANUAL;
+        this.f27923s = 0;
+        this.f27925u = true;
+        this.f27926v = false;
     }
 
     public o3 a() {
-        return this.f28783w;
+        return this.f27927w;
     }
 
     public Double b() {
-        return this.f28773e;
+        return this.f27917e;
     }
 
     public String c() {
-        return this.f28776p;
+        return this.f27920p;
     }
 
     public int d() {
-        return this.f28779s;
+        return this.f27923s;
     }
 
     public Double e() {
-        return this.f28775o;
+        return this.f27919o;
     }
 
     public boolean f() {
-        return this.f28780t;
+        return this.f27924t;
     }
 
     public boolean g() {
-        return this.f28778r;
+        return this.f27922r;
     }
 
     public boolean h() {
-        return this.f28781u;
+        return this.f27925u;
     }
 
     public boolean i() {
-        return this.f28772d;
+        return this.f27916d;
     }
 
     public boolean j() {
-        return this.f28777q;
+        return this.f27921q;
     }
 
     public boolean k() {
-        return this.f28782v;
+        return this.f27926v;
     }
 
     public boolean l() {
-        return this.f28774i;
+        return this.f27918i;
     }
 
     public void m(Map map) {
-        this.f28784x = map;
+        this.f27928x = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
-        f3Var.s();
-        f3Var.e("profile_sampled").j(iLogger, Boolean.valueOf(this.f28772d));
-        f3Var.e("profile_sample_rate").j(iLogger, this.f28773e);
-        f3Var.e("continuous_profile_sampled").j(iLogger, Boolean.valueOf(this.f28780t));
-        f3Var.e("trace_sampled").j(iLogger, Boolean.valueOf(this.f28774i));
-        f3Var.e("trace_sample_rate").j(iLogger, this.f28775o);
-        f3Var.e("profiling_traces_dir_path").j(iLogger, this.f28776p);
-        f3Var.e("is_profiling_enabled").j(iLogger, Boolean.valueOf(this.f28777q));
-        f3Var.e("is_continuous_profiling_enabled").j(iLogger, Boolean.valueOf(this.f28778r));
-        f3Var.e("profile_lifecycle").j(iLogger, this.f28783w.name());
-        f3Var.e("profiling_traces_hz").j(iLogger, Integer.valueOf(this.f28779s));
-        f3Var.e("is_enable_app_start_profiling").j(iLogger, Boolean.valueOf(this.f28781u));
-        f3Var.e("is_start_profiler_on_app_start").j(iLogger, Boolean.valueOf(this.f28782v));
-        Map map = this.f28784x;
+        f3Var.u();
+        f3Var.e("profile_sampled").j(iLogger, Boolean.valueOf(this.f27916d));
+        f3Var.e("profile_sample_rate").j(iLogger, this.f27917e);
+        f3Var.e("continuous_profile_sampled").j(iLogger, Boolean.valueOf(this.f27924t));
+        f3Var.e("trace_sampled").j(iLogger, Boolean.valueOf(this.f27918i));
+        f3Var.e("trace_sample_rate").j(iLogger, this.f27919o);
+        f3Var.e("profiling_traces_dir_path").j(iLogger, this.f27920p);
+        f3Var.e("is_profiling_enabled").j(iLogger, Boolean.valueOf(this.f27921q));
+        f3Var.e("is_continuous_profiling_enabled").j(iLogger, Boolean.valueOf(this.f27922r));
+        f3Var.e("profile_lifecycle").j(iLogger, this.f27927w.name());
+        f3Var.e("profiling_traces_hz").j(iLogger, Integer.valueOf(this.f27923s));
+        f3Var.e("is_enable_app_start_profiling").j(iLogger, Boolean.valueOf(this.f27925u));
+        f3Var.e("is_start_profiler_on_app_start").j(iLogger, Boolean.valueOf(this.f27926v));
+        Map map = this.f27928x;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f28784x.get(str);
+                Object obj = this.f27928x.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
         }
-        f3Var.z();
+        f3Var.D();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c5(k7 k7Var, s8 s8Var) {
-        this.f28774i = s8Var.e().booleanValue();
-        this.f28775o = s8Var.d();
-        this.f28772d = s8Var.b().booleanValue();
-        this.f28773e = s8Var.a();
-        this.f28780t = k7Var.getInternalTracesSampler().c(io.sentry.util.d0.a().c());
-        this.f28776p = k7Var.getProfilingTracesDirPath();
-        this.f28777q = k7Var.isProfilingEnabled();
-        this.f28778r = k7Var.isContinuousProfilingEnabled();
-        this.f28783w = k7Var.getProfileLifecycle();
-        this.f28779s = k7Var.getProfilingTracesHz();
-        this.f28781u = k7Var.isEnableAppStartProfiling();
-        this.f28782v = k7Var.isStartProfilerOnAppStart();
+        this.f27918i = s8Var.e().booleanValue();
+        this.f27919o = s8Var.d();
+        this.f27916d = s8Var.b().booleanValue();
+        this.f27917e = s8Var.a();
+        this.f27924t = k7Var.getInternalTracesSampler().c(io.sentry.util.d0.a().c());
+        this.f27920p = k7Var.getProfilingTracesDirPath();
+        this.f27921q = k7Var.isProfilingEnabled();
+        this.f27922r = k7Var.isContinuousProfilingEnabled();
+        this.f27927w = k7Var.getProfileLifecycle();
+        this.f27923s = k7Var.getProfilingTracesHz();
+        this.f27925u = k7Var.isEnableAppStartProfiling();
+        this.f27926v = k7Var.isStartProfilerOnAppStart();
     }
 }

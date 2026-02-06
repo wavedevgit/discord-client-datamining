@@ -1,128 +1,91 @@
 package ni;
 
-import java.math.RoundingMode;
-import li.m;
+import java.util.NoSuchElementException;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class b {
-
-    /* renamed from: a  reason: collision with root package name */
-    static final byte[] f41321a = {9, 9, 9, 8, 8, 8, 7, 7, 7, 6, 6, 6, 6, 5, 5, 5, 4, 4, 4, 3, 3, 3, 3, 2, 2, 2, 1, 1, 1, 0, 0, 0, 0};
-
-    /* renamed from: b  reason: collision with root package name */
-    static final int[] f41322b = {1, 10, 100, 1000, 10000, 100000, 1000000, 10000000, 100000000, 1000000000};
-
-    /* renamed from: c  reason: collision with root package name */
-    static final int[] f41323c = {3, 31, 316, 3162, 31622, 316227, 3162277, 31622776, 316227766, Integer.MAX_VALUE};
+public abstract class b extends t0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final int[] f41324d = {1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880, 3628800, 39916800, 479001600};
+    private EnumC0544b f40716d = EnumC0544b.NOT_READY;
 
     /* renamed from: e  reason: collision with root package name */
-    static int[] f41325e = {Integer.MAX_VALUE, Integer.MAX_VALUE, 65536, 2345, 477, 193, 110, 75, 58, 49, 43, 39, 37, 35, 34, 34, 33};
+    private Object f40717e;
 
+    /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    static /* synthetic */ class a {
+    public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f41326a;
+        static final /* synthetic */ int[] f40718a;
 
         static {
-            int[] iArr = new int[RoundingMode.values().length];
-            f41326a = iArr;
+            int[] iArr = new int[EnumC0544b.values().length];
+            f40718a = iArr;
             try {
-                iArr[RoundingMode.UNNECESSARY.ordinal()] = 1;
+                iArr[EnumC0544b.DONE.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f41326a[RoundingMode.DOWN.ordinal()] = 2;
+                f40718a[EnumC0544b.READY.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
-            }
-            try {
-                f41326a[RoundingMode.FLOOR.ordinal()] = 3;
-            } catch (NoSuchFieldError unused3) {
-            }
-            try {
-                f41326a[RoundingMode.UP.ordinal()] = 4;
-            } catch (NoSuchFieldError unused4) {
-            }
-            try {
-                f41326a[RoundingMode.CEILING.ordinal()] = 5;
-            } catch (NoSuchFieldError unused5) {
-            }
-            try {
-                f41326a[RoundingMode.HALF_DOWN.ordinal()] = 6;
-            } catch (NoSuchFieldError unused6) {
-            }
-            try {
-                f41326a[RoundingMode.HALF_UP.ordinal()] = 7;
-            } catch (NoSuchFieldError unused7) {
-            }
-            try {
-                f41326a[RoundingMode.HALF_EVEN.ordinal()] = 8;
-            } catch (NoSuchFieldError unused8) {
             }
         }
     }
 
-    public static int a(int i10, int i11, RoundingMode roundingMode) {
-        boolean z10;
-        m.j(roundingMode);
-        if (i11 != 0) {
-            int i12 = i10 / i11;
-            int i13 = i10 - (i11 * i12);
-            if (i13 == 0) {
-                return i12;
-            }
-            boolean z11 = true;
-            int i14 = ((i10 ^ i11) >> 31) | 1;
-            switch (a.f41326a[roundingMode.ordinal()]) {
-                case 1:
-                    if (i13 != 0) {
-                        z11 = false;
-                    }
-                    d.a(z11);
-                    return i12;
-                case 2:
-                    return i12;
-                case 3:
-                    if (i14 >= 0) {
-                        return i12;
-                    }
-                    return i12 + i14;
-                case 4:
-                    return i12 + i14;
-                case 5:
-                    if (i14 <= 0) {
-                        return i12;
-                    }
-                    return i12 + i14;
-                case 6:
-                case 7:
-                case 8:
-                    int abs = Math.abs(i13);
-                    int abs2 = abs - (Math.abs(i11) - abs);
-                    if (abs2 == 0) {
-                        if (roundingMode != RoundingMode.HALF_UP) {
-                            if (roundingMode == RoundingMode.HALF_EVEN) {
-                                z10 = true;
-                            } else {
-                                z10 = false;
-                            }
-                            if ((i12 & 1) == 0) {
-                                z11 = false;
-                            }
-                            if (!(z10 & z11)) {
-                                return i12;
-                            }
-                        }
-                    } else if (abs2 <= 0) {
-                        return i12;
-                    }
-                    return i12 + i14;
-                default:
-                    throw new AssertionError();
-            }
+    /* JADX INFO: Access modifiers changed from: private */
+    /* renamed from: ni.b$b  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public enum EnumC0544b {
+        READY,
+        NOT_READY,
+        DONE,
+        FAILED
+    }
+
+    private boolean c() {
+        this.f40716d = EnumC0544b.FAILED;
+        this.f40717e = a();
+        if (this.f40716d != EnumC0544b.DONE) {
+            this.f40716d = EnumC0544b.READY;
+            return true;
         }
-        throw new ArithmeticException("/ by zero");
+        return false;
+    }
+
+    protected abstract Object a();
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    public final Object b() {
+        this.f40716d = EnumC0544b.DONE;
+        return null;
+    }
+
+    @Override // java.util.Iterator
+    public final boolean hasNext() {
+        boolean z10;
+        if (this.f40716d != EnumC0544b.FAILED) {
+            z10 = true;
+        } else {
+            z10 = false;
+        }
+        mi.m.o(z10);
+        int i10 = a.f40718a[this.f40716d.ordinal()];
+        if (i10 == 1) {
+            return false;
+        }
+        if (i10 == 2) {
+            return true;
+        }
+        return c();
+    }
+
+    @Override // java.util.Iterator
+    public final Object next() {
+        if (hasNext()) {
+            this.f40716d = EnumC0544b.NOT_READY;
+            Object a10 = g0.a(this.f40717e);
+            this.f40717e = null;
+            return a10;
+        }
+        throw new NoSuchElementException();
     }
 }

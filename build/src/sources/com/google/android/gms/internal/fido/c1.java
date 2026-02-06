@@ -7,10 +7,10 @@ import android.os.Parcelable;
 public abstract class c1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final ClassLoader f13970a = c1.class.getClassLoader();
+    private static final ClassLoader f13933a = c1.class.getClassLoader();
 
     /* renamed from: b  reason: collision with root package name */
-    public static final /* synthetic */ int f13971b = 0;
+    public static final /* synthetic */ int f13934b = 0;
 
     public static Parcelable a(Parcel parcel, Parcelable.Creator creator) {
         if (parcel.readInt() == 0) {

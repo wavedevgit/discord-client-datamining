@@ -1,37 +1,35 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun97006: for (var _fun97006_ip = 0;;) switch (_fun97006_ip) {
+    _fun97007: for (var _fun97007_ip = 0;;) switch (_fun97007_ip) {
         case 0:
-            var1 = require;
-            var _closure1_slot0 = var1;
-            var1 = dependencyMap;
-            var _closure1_slot1 = var1;
-            var1 = global;
-            var1 = var1.Object;
-            var1 = var1.keys;
-            if (var1) {
-                _fun97006_ip = 39;
-                continue _fun97006
-            }
-        case 32:
-            var1 = function arg0() {
-                var1 = _closure1_slot0;
-                var4 = _closure1_slot1;
-                var0 = 0;
-                var0 = var4[var0];
-                var3 = undefined;
-                var2 = var1.bind(var3)(var0);
-                var0 = 1;
-                var0 = var4[var0];
-                var1 = var1.bind(var3)(var0);
-                var0 = arg0;
-                var0 = var2.bind(var3)(var0, var1);
-                return var0;
-            };
-        case 39:
-            var0 = arg4;
-            var0.exports = var1;
+            var6 = require;
+            var7 = dependencyMap;
+            var0 = 0;
+            var1 = var7[var0];
             var0 = undefined;
+            var3 = var6.bind(var0)(var1);
+            var1 = 1;
+            var2 = var7[var1];
+            var2 = var6.bind(var0)(var2);
+            var2 = var2.WeakMap;
+            var2 = var3.bind(var0)(var2);
+            if (!var2) {
+                _fun97007_ip = 97;
+                continue _fun97007
+            }
+        case 45:
+            var4 = /native code/;
+            var3 = var4.test;
+            var5 = global;
+            var5 = var5.String;
+            var1 = var7[var1];
+            var1 = var6.bind(var0)(var1);
+            var1 = var1.WeakMap;
+            var1 = var5.bind(var0)(var1);
+            var2 = var3.bind(var4)(var1);
+        case 97:
+            var1 = module;
+            var1.exports = var2;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12702, 12701]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12687, 12661]);

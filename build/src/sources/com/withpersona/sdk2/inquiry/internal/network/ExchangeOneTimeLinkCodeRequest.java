@@ -9,7 +9,7 @@ import kotlin.jvm.internal.Intrinsics;
 public final class ExchangeOneTimeLinkCodeRequest {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Data f19197a;
+    private final Data f19177a;
 
     @com.squareup.moshi.i(generateAdapter = true)
     @Metadata(d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0005\b\u0087\b\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010\u0003\u001a\u00020\u0002¢\u0006\u0004\b\u0004\u0010\u0005J\u0010\u0010\u0006\u001a\u00020\u0002HÖ\u0001¢\u0006\u0004\b\u0006\u0010\u0007J\u0010\u0010\t\u001a\u00020\bHÖ\u0001¢\u0006\u0004\b\t\u0010\nJ\u001a\u0010\r\u001a\u00020\f2\b\u0010\u000b\u001a\u0004\u0018\u00010\u0001HÖ\u0003¢\u0006\u0004\b\r\u0010\u000eR\u0017\u0010\u0003\u001a\u00020\u00028\u0006¢\u0006\f\n\u0004\b\u000f\u0010\u0010\u001a\u0004\b\u000f\u0010\u0007¨\u0006\u0011"}, d2 = {"Lcom/withpersona/sdk2/inquiry/internal/network/ExchangeOneTimeLinkCodeRequest$Attributes;", "", "", "oneTimeLinkCode", "<init>", "(Ljava/lang/String;)V", "toString", "()Ljava/lang/String;", "", "hashCode", "()I", "other", "", "equals", "(Ljava/lang/Object;)Z", "a", "Ljava/lang/String;", "inquiry-internal_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
@@ -17,41 +17,41 @@ public final class ExchangeOneTimeLinkCodeRequest {
     public static final class Attributes {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f19198a;
+        private final String f19178a;
 
         public Attributes(String oneTimeLinkCode) {
             Intrinsics.checkNotNullParameter(oneTimeLinkCode, "oneTimeLinkCode");
-            this.f19198a = oneTimeLinkCode;
+            this.f19178a = oneTimeLinkCode;
         }
 
         public final String a() {
-            return this.f19198a;
+            return this.f19178a;
         }
 
         public boolean equals(Object obj) {
             if (this == obj) {
                 return true;
             }
-            return (obj instanceof Attributes) && Intrinsics.areEqual(this.f19198a, ((Attributes) obj).f19198a);
+            return (obj instanceof Attributes) && Intrinsics.areEqual(this.f19178a, ((Attributes) obj).f19178a);
         }
 
         public int hashCode() {
-            return this.f19198a.hashCode();
+            return this.f19178a.hashCode();
         }
 
         public String toString() {
-            String str = this.f19198a;
+            String str = this.f19178a;
             return "Attributes(oneTimeLinkCode=" + str + ")";
         }
     }
 
     public ExchangeOneTimeLinkCodeRequest(Data data) {
         Intrinsics.checkNotNullParameter(data, "data");
-        this.f19197a = data;
+        this.f19177a = data;
     }
 
     public final Data a() {
-        return this.f19197a;
+        return this.f19177a;
     }
 
     @com.squareup.moshi.i(generateAdapter = true)
@@ -60,24 +60,24 @@ public final class ExchangeOneTimeLinkCodeRequest {
     public static final class Data {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Attributes f19199a;
+        private final Attributes f19179a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final String f19200b;
+        private final String f19180b;
 
         public Data(Attributes attributes, String type) {
             Intrinsics.checkNotNullParameter(attributes, "attributes");
             Intrinsics.checkNotNullParameter(type, "type");
-            this.f19199a = attributes;
-            this.f19200b = type;
+            this.f19179a = attributes;
+            this.f19180b = type;
         }
 
         public final Attributes a() {
-            return this.f19199a;
+            return this.f19179a;
         }
 
         public final String b() {
-            return this.f19200b;
+            return this.f19180b;
         }
 
         public boolean equals(Object obj) {
@@ -86,18 +86,18 @@ public final class ExchangeOneTimeLinkCodeRequest {
             }
             if (obj instanceof Data) {
                 Data data = (Data) obj;
-                return Intrinsics.areEqual(this.f19199a, data.f19199a) && Intrinsics.areEqual(this.f19200b, data.f19200b);
+                return Intrinsics.areEqual(this.f19179a, data.f19179a) && Intrinsics.areEqual(this.f19180b, data.f19180b);
             }
             return false;
         }
 
         public int hashCode() {
-            return (this.f19199a.hashCode() * 31) + this.f19200b.hashCode();
+            return (this.f19179a.hashCode() * 31) + this.f19180b.hashCode();
         }
 
         public String toString() {
-            Attributes attributes = this.f19199a;
-            String str = this.f19200b;
+            Attributes attributes = this.f19179a;
+            String str = this.f19180b;
             return "Data(attributes=" + attributes + ", type=" + str + ")";
         }
 

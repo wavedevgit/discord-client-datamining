@@ -7,15 +7,15 @@ import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.coroutines.flow.Flow;
 import kotlinx.coroutines.flow.FlowCollector;
-@Metadata(d1 = {"\u0000*\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0007\b\u0000\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001:\u0001\u000eB\u001b\b\u0007\u0012\b\b\u0001\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0006\u001a\u00020\u0005¢\u0006\u0004\b\u0007\u0010\bJ\u0015\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u00020\tH\u0016¢\u0006\u0004\b\n\u0010\u000bJ\u001b\u0010\u000e\u001a\u00020\r2\n\u0010\f\u001a\u0006\u0012\u0002\b\u00030\u0001H\u0016¢\u0006\u0004\b\u000e\u0010\u000fR\u0014\u0010\u0004\u001a\u00020\u00038\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0010\u0010\u0011R\u0014\u0010\u0006\u001a\u00020\u00058\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0012\u0010\u0013¨\u0006\u0014"}, d2 = {"Lcom/withpersona/sdk2/inquiry/internal/f;", "Lzm/o;", "Lcom/withpersona/sdk2/inquiry/internal/network/d;", "", "oneTimeLinkCode", "Lcom/withpersona/sdk2/inquiry/internal/network/e;", "inquiryApiHelper", "<init>", "(Ljava/lang/String;Lcom/withpersona/sdk2/inquiry/internal/network/e;)V", "Lkotlinx/coroutines/flow/Flow;", "run", "()Lkotlinx/coroutines/flow/Flow;", "otherWorker", "", "a", "(Lzm/o;)Z", "b", "Ljava/lang/String;", "c", "Lcom/withpersona/sdk2/inquiry/internal/network/e;", "inquiry-internal_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
+@Metadata(d1 = {"\u0000*\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0007\b\u0000\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001:\u0001\u000eB\u001b\b\u0007\u0012\b\b\u0001\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0006\u001a\u00020\u0005¢\u0006\u0004\b\u0007\u0010\bJ\u0015\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u00020\tH\u0016¢\u0006\u0004\b\n\u0010\u000bJ\u001b\u0010\u000e\u001a\u00020\r2\n\u0010\f\u001a\u0006\u0012\u0002\b\u00030\u0001H\u0016¢\u0006\u0004\b\u000e\u0010\u000fR\u0014\u0010\u0004\u001a\u00020\u00038\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0010\u0010\u0011R\u0014\u0010\u0006\u001a\u00020\u00058\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0012\u0010\u0013¨\u0006\u0014"}, d2 = {"Lcom/withpersona/sdk2/inquiry/internal/f;", "Lbn/o;", "Lcom/withpersona/sdk2/inquiry/internal/network/d;", "", "oneTimeLinkCode", "Lcom/withpersona/sdk2/inquiry/internal/network/e;", "inquiryApiHelper", "<init>", "(Ljava/lang/String;Lcom/withpersona/sdk2/inquiry/internal/network/e;)V", "Lkotlinx/coroutines/flow/Flow;", "run", "()Lkotlinx/coroutines/flow/Flow;", "otherWorker", "", "a", "(Lbn/o;)Z", "b", "Ljava/lang/String;", "c", "Lcom/withpersona/sdk2/inquiry/internal/network/e;", "inquiry-internal_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class f implements zm.o<com.withpersona.sdk2.inquiry.internal.network.d> {
+public final class f implements bn.o<com.withpersona.sdk2.inquiry.internal.network.d> {
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f18813b;
+    private final String f18793b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final com.withpersona.sdk2.inquiry.internal.network.e f18814c;
+    private final com.withpersona.sdk2.inquiry.internal.network.e f18794c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public interface a {
@@ -26,10 +26,10 @@ public final class f implements zm.o<com.withpersona.sdk2.inquiry.internal.netwo
     static final class b extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f18815d;
+        int f18795d;
 
         /* renamed from: e  reason: collision with root package name */
-        private /* synthetic */ Object f18816e;
+        private /* synthetic */ Object f18796e;
 
         b(Continuation continuation) {
             super(2, continuation);
@@ -38,7 +38,7 @@ public final class f implements zm.o<com.withpersona.sdk2.inquiry.internal.netwo
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
             b bVar = new b(continuation);
-            bVar.f18816e = obj;
+            bVar.f18796e = obj;
             return bVar;
         }
 
@@ -59,8 +59,8 @@ public final class f implements zm.o<com.withpersona.sdk2.inquiry.internal.netwo
         public final java.lang.Object invokeSuspend(java.lang.Object r6) {
             /*
                 r5 = this;
-                java.lang.Object r0 = ur.b.f()
-                int r1 = r5.f18815d
+                java.lang.Object r0 = wr.b.f()
+                int r1 = r5.f18795d
                 r2 = 2
                 r3 = 1
                 if (r1 == 0) goto L22
@@ -74,34 +74,34 @@ public final class f implements zm.o<com.withpersona.sdk2.inquiry.internal.netwo
                 r6.<init>(r0)
                 throw r6
             L1a:
-                java.lang.Object r1 = r5.f18816e
+                java.lang.Object r1 = r5.f18796e
                 kotlinx.coroutines.flow.FlowCollector r1 = (kotlinx.coroutines.flow.FlowCollector) r1
                 kotlin.c.b(r6)
                 goto L41
             L22:
                 kotlin.c.b(r6)
-                java.lang.Object r6 = r5.f18816e
+                java.lang.Object r6 = r5.f18796e
                 r1 = r6
                 kotlinx.coroutines.flow.FlowCollector r1 = (kotlinx.coroutines.flow.FlowCollector) r1
                 com.withpersona.sdk2.inquiry.internal.f r6 = com.withpersona.sdk2.inquiry.internal.f.this
                 com.withpersona.sdk2.inquiry.internal.network.e r6 = com.withpersona.sdk2.inquiry.internal.f.b(r6)
                 com.withpersona.sdk2.inquiry.internal.f r4 = com.withpersona.sdk2.inquiry.internal.f.this
                 java.lang.String r4 = com.withpersona.sdk2.inquiry.internal.f.c(r4)
-                r5.f18816e = r1
-                r5.f18815d = r3
+                r5.f18796e = r1
+                r5.f18795d = r3
                 java.lang.Object r6 = r6.j(r4, r5)
                 if (r6 != r0) goto L41
                 goto L4c
             L41:
                 r3 = 0
-                r5.f18816e = r3
-                r5.f18815d = r2
+                r5.f18796e = r3
+                r5.f18795d = r2
                 java.lang.Object r6 = r1.emit(r6, r5)
                 if (r6 != r0) goto L4d
             L4c:
                 return r0
             L4d:
-                kotlin.Unit r6 = kotlin.Unit.f31988a
+                kotlin.Unit r6 = kotlin.Unit.f32008a
                 return r6
             */
             throw new UnsupportedOperationException("Method not decompiled: com.withpersona.sdk2.inquiry.internal.f.b.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -109,28 +109,28 @@ public final class f implements zm.o<com.withpersona.sdk2.inquiry.internal.netwo
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(FlowCollector flowCollector, Continuation continuation) {
-            return ((b) create(flowCollector, continuation)).invokeSuspend(Unit.f31988a);
+            return ((b) create(flowCollector, continuation)).invokeSuspend(Unit.f32008a);
         }
     }
 
     public f(String oneTimeLinkCode, com.withpersona.sdk2.inquiry.internal.network.e inquiryApiHelper) {
         Intrinsics.checkNotNullParameter(oneTimeLinkCode, "oneTimeLinkCode");
         Intrinsics.checkNotNullParameter(inquiryApiHelper, "inquiryApiHelper");
-        this.f18813b = oneTimeLinkCode;
-        this.f18814c = inquiryApiHelper;
+        this.f18793b = oneTimeLinkCode;
+        this.f18794c = inquiryApiHelper;
     }
 
-    @Override // zm.o
-    public boolean a(zm.o otherWorker) {
+    @Override // bn.o
+    public boolean a(bn.o otherWorker) {
         Intrinsics.checkNotNullParameter(otherWorker, "otherWorker");
-        if ((otherWorker instanceof f) && Intrinsics.areEqual(this.f18813b, ((f) otherWorker).f18813b)) {
+        if ((otherWorker instanceof f) && Intrinsics.areEqual(this.f18793b, ((f) otherWorker).f18793b)) {
             return true;
         }
         return false;
     }
 
-    @Override // zm.o
+    @Override // bn.o
     public Flow run() {
-        return ps.g.v(new b(null));
+        return rs.g.v(new b(null));
     }
 }

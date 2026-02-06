@@ -55,27 +55,27 @@ public final class CapturePageConfigJsonAdapter extends h {
     @NotNull
     public CapturePageConfig fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         String str = null;
         CapturePageConfig.ManualCaptureConfig manualCaptureConfig = null;
         CapturePageConfig.AutoCaptureConfig autoCaptureConfig = null;
         CapturePageConfig.OverlayConfig overlayConfig = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 str = (String) this.nullableStringAdapter.fromJson(reader);
-            } else if (W == 1) {
+            } else if (J == 1) {
                 manualCaptureConfig = (CapturePageConfig.ManualCaptureConfig) this.nullableManualCaptureConfigAdapter.fromJson(reader);
-            } else if (W == 2) {
+            } else if (J == 2) {
                 autoCaptureConfig = (CapturePageConfig.AutoCaptureConfig) this.nullableAutoCaptureConfigAdapter.fromJson(reader);
-            } else if (W == 3) {
+            } else if (J == 3) {
                 overlayConfig = (CapturePageConfig.OverlayConfig) this.nullableOverlayConfigAdapter.fromJson(reader);
             }
         }
-        reader.z();
+        reader.D();
         return new CapturePageConfig(str, manualCaptureConfig, autoCaptureConfig, overlayConfig);
     }
 
@@ -84,15 +84,15 @@ public final class CapturePageConfigJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (capturePageConfig != null) {
             writer.k();
-            writer.W("side");
+            writer.J("side");
             this.nullableStringAdapter.toJson(writer, capturePageConfig.getSide());
-            writer.W("manualCaptureConfig");
+            writer.J("manualCaptureConfig");
             this.nullableManualCaptureConfigAdapter.toJson(writer, capturePageConfig.getManualCaptureConfig());
-            writer.W("autoCaptureConfig");
+            writer.J("autoCaptureConfig");
             this.nullableAutoCaptureConfigAdapter.toJson(writer, capturePageConfig.getAutoCaptureConfig());
-            writer.W("overlay");
+            writer.J("overlay");
             this.nullableOverlayConfigAdapter.toJson(writer, capturePageConfig.getOverlay());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

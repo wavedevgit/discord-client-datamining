@@ -1,24 +1,42 @@
 package di;
-/* JADX INFO: Access modifiers changed from: package-private */
+
+import android.os.Bundle;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class m extends j {
+public abstract class m {
 
-    /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ j f20819e;
+    /* renamed from: a  reason: collision with root package name */
+    private static final Set f20783a = new HashSet(Arrays.asList("native", "unity"));
 
-    /* renamed from: i  reason: collision with root package name */
-    final /* synthetic */ t f20820i;
+    /* renamed from: b  reason: collision with root package name */
+    private static final Map f20784b = new HashMap();
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public m(t tVar, xg.k kVar, j jVar) {
-        super(kVar);
-        this.f20820i = tVar;
-        this.f20819e = jVar;
+    /* renamed from: c  reason: collision with root package name */
+    private static final ei.i f20785c = new ei.i("PlayCoreVersion");
+
+    public static Bundle a() {
+        Bundle bundle = new Bundle();
+        Map b10 = b();
+        bundle.putInt("playcore_version_code", ((Integer) b10.get("java")).intValue());
+        if (b10.containsKey("native")) {
+            bundle.putInt("playcore_native_version", ((Integer) b10.get("native")).intValue());
+        }
+        if (b10.containsKey("unity")) {
+            bundle.putInt("playcore_unity_version", ((Integer) b10.get("unity")).intValue());
+        }
+        return bundle;
     }
 
-    @Override // di.j
-    public final void a() {
-        t.m(this.f20820i, this.f20819e);
+    public static synchronized Map b() {
+        Map map;
+        synchronized (m.class) {
+            map = f20784b;
+            map.put("java", 11004);
+        }
+        return map;
     }
 }

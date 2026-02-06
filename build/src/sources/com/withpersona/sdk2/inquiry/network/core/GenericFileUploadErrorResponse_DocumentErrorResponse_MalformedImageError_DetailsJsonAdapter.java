@@ -26,14 +26,14 @@ public final class GenericFileUploadErrorResponse_DocumentErrorResponse_Malforme
     @Override // com.squareup.moshi.h
     @NotNull
     public GenericFileUploadErrorResponse.DocumentErrorResponse.MalformedImageError.Details fromJson(@NotNull m mVar) {
-        mVar.s();
+        mVar.u();
         while (mVar.hasNext()) {
-            if (mVar.W(this.options) == -1) {
+            if (mVar.J(this.options) == -1) {
                 mVar.E0();
-                mVar.P();
+                mVar.S();
             }
         }
-        mVar.z();
+        mVar.D();
         return new GenericFileUploadErrorResponse.DocumentErrorResponse.MalformedImageError.Details();
     }
 
@@ -41,7 +41,7 @@ public final class GenericFileUploadErrorResponse_DocumentErrorResponse_Malforme
     public void toJson(@NotNull t tVar, GenericFileUploadErrorResponse.DocumentErrorResponse.MalformedImageError.Details details) {
         if (details != null) {
             tVar.k();
-            tVar.E();
+            tVar.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

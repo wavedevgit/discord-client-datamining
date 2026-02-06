@@ -7,33 +7,33 @@ import java.nio.ByteBuffer;
 class t4 extends s4 {
 
     /* renamed from: i  reason: collision with root package name */
-    protected final byte[] f14121i;
+    protected final byte[] f14084i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public t4(byte[] bArr) {
         super(null);
         bArr.getClass();
-        this.f14121i = bArr;
+        this.f14084i = bArr;
     }
 
     @Override // com.google.android.gms.internal.fido.v4
     public byte b(int i10) {
-        return this.f14121i[i10];
+        return this.f14084i[i10];
     }
 
     @Override // com.google.android.gms.internal.fido.v4
     byte c(int i10) {
-        return this.f14121i[i10];
+        return this.f14084i[i10];
     }
 
     @Override // com.google.android.gms.internal.fido.v4
     public int d() {
-        return this.f14121i.length;
+        return this.f14084i.length;
     }
 
     @Override // com.google.android.gms.internal.fido.v4
     protected void e(byte[] bArr, int i10, int i11, int i12) {
-        System.arraycopy(this.f14121i, 0, bArr, 0, i12);
+        System.arraycopy(this.f14084i, 0, bArr, 0, i12);
     }
 
     @Override // com.google.android.gms.internal.fido.v4
@@ -57,17 +57,17 @@ class t4 extends s4 {
             int d10 = d();
             if (d10 <= t4Var.d()) {
                 if (d10 <= t4Var.d()) {
-                    byte[] bArr = this.f14121i;
-                    byte[] bArr2 = t4Var.f14121i;
-                    int p10 = p() + d10;
-                    int p11 = p();
-                    int p12 = t4Var.p();
-                    while (p11 < p10) {
-                        if (bArr[p11] != bArr2[p12]) {
+                    byte[] bArr = this.f14084i;
+                    byte[] bArr2 = t4Var.f14084i;
+                    int q10 = q() + d10;
+                    int q11 = q();
+                    int q12 = t4Var.q();
+                    while (q11 < q10) {
+                        if (bArr[q11] != bArr2[q12]) {
                             return false;
                         }
-                        p11++;
-                        p12++;
+                        q11++;
+                        q12++;
                     }
                     return true;
                 }
@@ -82,10 +82,10 @@ class t4 extends s4 {
 
     @Override // com.google.android.gms.internal.fido.v4
     protected final int f(int i10, int i11, int i12) {
-        int p10 = p();
-        byte[] bArr = z4.f14154a;
-        for (int i13 = p10; i13 < p10 + i12; i13++) {
-            i10 = (i10 * 31) + this.f14121i[i13];
+        int q10 = q();
+        byte[] bArr = z4.f14117a;
+        for (int i13 = q10; i13 < q10 + i12; i13++) {
+            i10 = (i10 * 31) + this.f14084i[i13];
         }
         return i10;
     }
@@ -94,22 +94,22 @@ class t4 extends s4 {
     public final v4 g(int i10, int i11) {
         int j10 = v4.j(i10, i11, d());
         if (j10 == 0) {
-            return v4.f14136e;
+            return v4.f14099e;
         }
-        return new q4(this.f14121i, p() + i10, j10);
+        return new q4(this.f14084i, q() + i10, j10);
     }
 
     @Override // com.google.android.gms.internal.fido.v4
     public final InputStream h() {
-        return new ByteArrayInputStream(this.f14121i, p(), d());
+        return new ByteArrayInputStream(this.f14084i, q(), d());
     }
 
     @Override // com.google.android.gms.internal.fido.v4
     public final ByteBuffer i() {
-        return ByteBuffer.wrap(this.f14121i, p(), d()).asReadOnlyBuffer();
+        return ByteBuffer.wrap(this.f14084i, q(), d()).asReadOnlyBuffer();
     }
 
-    protected int p() {
+    protected int q() {
         return 0;
     }
 }

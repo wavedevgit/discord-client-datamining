@@ -1,7 +1,5 @@
 package com.google.android.material.transformation;
 
-import ah.b;
-import ah.h;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.AnimatorSet;
@@ -11,6 +9,8 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import bh.b;
+import bh.h;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.util.ArrayList;
 import java.util.List;
@@ -19,52 +19,52 @@ import java.util.List;
 public class FabTransformationScrimBehavior extends ExpandableTransformationBehavior {
 
     /* renamed from: i  reason: collision with root package name */
-    private final h f15656i;
+    private final h f15636i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final h f15657o;
+    private final h f15637o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a extends AnimatorListenerAdapter {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ boolean f15658a;
+        final /* synthetic */ boolean f15638a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ View f15659b;
+        final /* synthetic */ View f15639b;
 
         a(boolean z10, View view) {
-            this.f15658a = z10;
-            this.f15659b = view;
+            this.f15638a = z10;
+            this.f15639b = view;
         }
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationEnd(Animator animator) {
-            if (!this.f15658a) {
-                this.f15659b.setVisibility(4);
+            if (!this.f15638a) {
+                this.f15639b.setVisibility(4);
             }
         }
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationStart(Animator animator) {
-            if (this.f15658a) {
-                this.f15659b.setVisibility(0);
+            if (this.f15638a) {
+                this.f15639b.setVisibility(0);
             }
         }
     }
 
     public FabTransformationScrimBehavior() {
-        this.f15656i = new h(75L, 150L);
-        this.f15657o = new h(0L, 150L);
+        this.f15636i = new h(75L, 150L);
+        this.f15637o = new h(0L, 150L);
     }
 
     private void O(View view, boolean z10, boolean z11, List list, List list2) {
         h hVar;
         ObjectAnimator ofFloat;
         if (z10) {
-            hVar = this.f15656i;
+            hVar = this.f15636i;
         } else {
-            hVar = this.f15657o;
+            hVar = this.f15637o;
         }
         if (z10) {
             if (!z11) {
@@ -100,7 +100,7 @@ public class FabTransformationScrimBehavior extends ExpandableTransformationBeha
 
     public FabTransformationScrimBehavior(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f15656i = new h(75L, 150L);
-        this.f15657o = new h(0L, 150L);
+        this.f15636i = new h(75L, 150L);
+        this.f15637o = new h(0L, 150L);
     }
 }

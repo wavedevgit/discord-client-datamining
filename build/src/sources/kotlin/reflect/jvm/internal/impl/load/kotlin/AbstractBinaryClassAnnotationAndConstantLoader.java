@@ -28,14 +28,14 @@ import org.jetbrains.annotations.NotNull;
 public abstract class AbstractBinaryClassAnnotationAndConstantLoader<A, C> extends AbstractBinaryClassAnnotationLoader<A, AnnotationsContainerWithConstants<? extends A, ? extends C>> implements AnnotationAndConstantLoader<A, C> {
 
     /* renamed from: b  reason: collision with root package name */
-    private final MemoizedFunctionToNotNull f33142b;
+    private final MemoizedFunctionToNotNull f33162b;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public AbstractBinaryClassAnnotationAndConstantLoader(@NotNull StorageManager storageManager, @NotNull KotlinClassFinder kotlinClassFinder) {
         super(kotlinClassFinder);
         Intrinsics.checkNotNullParameter(storageManager, "storageManager");
         Intrinsics.checkNotNullParameter(kotlinClassFinder, "kotlinClassFinder");
-        this.f33142b = storageManager.createMemoizedFunction(new a(this));
+        this.f33162b = storageManager.createMemoizedFunction(new a(this));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -55,13 +55,13 @@ public abstract class AbstractBinaryClassAnnotationAndConstantLoader<A, C> exten
             public final class AnnotationVisitorForMethod extends MemberAnnotationVisitor implements KotlinJvmBinaryClass.MethodAnnotationVisitor {
 
                 /* renamed from: d  reason: collision with root package name */
-                final /* synthetic */ AbstractBinaryClassAnnotationAndConstantLoader$loadAnnotationsAndInitializers$1 f33148d;
+                final /* synthetic */ AbstractBinaryClassAnnotationAndConstantLoader$loadAnnotationsAndInitializers$1 f33168d;
 
                 /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
                 public AnnotationVisitorForMethod(AbstractBinaryClassAnnotationAndConstantLoader$loadAnnotationsAndInitializers$1 abstractBinaryClassAnnotationAndConstantLoader$loadAnnotationsAndInitializers$1, MemberSignature signature) {
                     super(abstractBinaryClassAnnotationAndConstantLoader$loadAnnotationsAndInitializers$1, signature);
                     Intrinsics.checkNotNullParameter(signature, "signature");
-                    this.f33148d = abstractBinaryClassAnnotationAndConstantLoader$loadAnnotationsAndInitializers$1;
+                    this.f33168d = abstractBinaryClassAnnotationAndConstantLoader$loadAnnotationsAndInitializers$1;
                 }
 
                 @Override // kotlin.reflect.jvm.internal.impl.load.kotlin.KotlinJvmBinaryClass.MethodAnnotationVisitor
@@ -82,36 +82,36 @@ public abstract class AbstractBinaryClassAnnotationAndConstantLoader<A, C> exten
             public class MemberAnnotationVisitor implements KotlinJvmBinaryClass.AnnotationVisitor {
 
                 /* renamed from: a  reason: collision with root package name */
-                private final MemberSignature f33149a;
+                private final MemberSignature f33169a;
 
                 /* renamed from: b  reason: collision with root package name */
-                private final ArrayList f33150b;
+                private final ArrayList f33170b;
 
                 /* renamed from: c  reason: collision with root package name */
-                final /* synthetic */ AbstractBinaryClassAnnotationAndConstantLoader$loadAnnotationsAndInitializers$1 f33151c;
+                final /* synthetic */ AbstractBinaryClassAnnotationAndConstantLoader$loadAnnotationsAndInitializers$1 f33171c;
 
                 public MemberAnnotationVisitor(AbstractBinaryClassAnnotationAndConstantLoader$loadAnnotationsAndInitializers$1 abstractBinaryClassAnnotationAndConstantLoader$loadAnnotationsAndInitializers$1, MemberSignature signature) {
                     Intrinsics.checkNotNullParameter(signature, "signature");
-                    this.f33151c = abstractBinaryClassAnnotationAndConstantLoader$loadAnnotationsAndInitializers$1;
-                    this.f33149a = signature;
-                    this.f33150b = new ArrayList();
+                    this.f33171c = abstractBinaryClassAnnotationAndConstantLoader$loadAnnotationsAndInitializers$1;
+                    this.f33169a = signature;
+                    this.f33170b = new ArrayList();
                 }
 
                 protected final MemberSignature a() {
-                    return this.f33149a;
+                    return this.f33169a;
                 }
 
                 @Override // kotlin.reflect.jvm.internal.impl.load.kotlin.KotlinJvmBinaryClass.AnnotationVisitor
                 public KotlinJvmBinaryClass.AnnotationArgumentVisitor visitAnnotation(ClassId classId, SourceElement source) {
                     Intrinsics.checkNotNullParameter(classId, "classId");
                     Intrinsics.checkNotNullParameter(source, "source");
-                    return AbstractBinaryClassAnnotationAndConstantLoader.this.j(classId, source, this.f33150b);
+                    return AbstractBinaryClassAnnotationAndConstantLoader.this.j(classId, source, this.f33170b);
                 }
 
                 @Override // kotlin.reflect.jvm.internal.impl.load.kotlin.KotlinJvmBinaryClass.AnnotationVisitor
                 public void visitEnd() {
-                    if (!this.f33150b.isEmpty()) {
-                        hashMap.put(this.f33149a, this.f33150b);
+                    if (!this.f33170b.isEmpty()) {
+                        hashMap.put(this.f33169a, this.f33170b);
                     }
                 }
             }
@@ -151,7 +151,7 @@ public abstract class AbstractBinaryClassAnnotationAndConstantLoader<A, C> exten
             return null;
         }
         MemberSignature f10 = f(property, protoContainer.getNameResolver(), protoContainer.getTypeTable(), annotatedCallableKind, d10.getClassHeader().getMetadataVersion().isAtLeast(DeserializedDescriptorResolver.Companion.getKOTLIN_1_3_RC_METADATA_VERSION$descriptors_jvm()));
-        if (f10 == null || (invoke = function2.invoke(this.f33142b.invoke(d10), f10)) == null) {
+        if (f10 == null || (invoke = function2.invoke(this.f33162b.invoke(d10), f10)) == null) {
             return null;
         }
         if (UnsignedTypes.isUnsignedType(kotlinType)) {
@@ -178,7 +178,7 @@ public abstract class AbstractBinaryClassAnnotationAndConstantLoader<A, C> exten
         Intrinsics.checkNotNullParameter(container, "container");
         Intrinsics.checkNotNullParameter(proto, "proto");
         Intrinsics.checkNotNullParameter(expectedType, "expectedType");
-        return (C) t(container, proto, AnnotatedCallableKind.PROPERTY_GETTER, expectedType, b.f33239d);
+        return (C) t(container, proto, AnnotatedCallableKind.PROPERTY_GETTER, expectedType, b.f33259d);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -189,7 +189,7 @@ public abstract class AbstractBinaryClassAnnotationAndConstantLoader<A, C> exten
         Intrinsics.checkNotNullParameter(container, "container");
         Intrinsics.checkNotNullParameter(proto, "proto");
         Intrinsics.checkNotNullParameter(expectedType, "expectedType");
-        return (C) t(container, proto, AnnotatedCallableKind.PROPERTY, expectedType, c.f33240d);
+        return (C) t(container, proto, AnnotatedCallableKind.PROPERTY, expectedType, c.f33260d);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -197,7 +197,7 @@ public abstract class AbstractBinaryClassAnnotationAndConstantLoader<A, C> exten
     /* renamed from: p */
     public AnnotationsContainerWithConstants getAnnotationsContainer(KotlinJvmBinaryClass binaryClass) {
         Intrinsics.checkNotNullParameter(binaryClass, "binaryClass");
-        return (AnnotationsContainerWithConstants) this.f33142b.invoke(binaryClass);
+        return (AnnotationsContainerWithConstants) this.f33162b.invoke(binaryClass);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */

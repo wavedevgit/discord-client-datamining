@@ -38,7 +38,7 @@ public final class ThreadEmbedViewHolder extends MessagePartViewHolder {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void bind$lambda$2$lambda$0(Function1 function1, ThreadEmbedMessageAccessory threadEmbedMessageAccessory, View view) {
-        function1.invoke(MessageId.m1085boximpl(threadEmbedMessageAccessory.mo538getMessageId3Eiw7ao()));
+        function1.invoke(MessageId.m1083boximpl(threadEmbedMessageAccessory.mo536getMessageId3Eiw7ao()));
     }
 
     /* JADX WARN: Multi-variable type inference failed */
@@ -96,7 +96,7 @@ public final class ThreadEmbedViewHolder extends MessagePartViewHolder {
             StructurableText content = message.getContent();
             Context context = threadEmbedView.getContext();
             Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
-            String m239getId3Eiw7ao = message.m239getId3Eiw7ao();
+            String m237getId3Eiw7ao = message.m237getId3Eiw7ao();
             boolean shouldAnimateEmoji = MessageKt.shouldAnimateEmoji(message);
             boolean shouldShowLinkDecorations = MessageKt.shouldShowLinkDecorations(message);
             boolean shouldShowRoleDot = message.getShouldShowRoleDot();
@@ -106,7 +106,7 @@ public final class ThreadEmbedViewHolder extends MessagePartViewHolder {
             float baselineHeightPx = TextUtilsKt.getBaselineHeightPx(fontMetrics);
             TextPaint paint = threadEmbedView.getBinding().threadEmbedMostRecentMessageContent.getPaint();
             Intrinsics.checkNotNullExpressionValue(paint, "getPaint(...)");
-            draweeSpanStringBuilder = TextUtilsKt.toSpannable$default(content, context, m239getId3Eiw7ao, shouldAnimateEmoji, shouldShowLinkDecorations, shouldShowRoleDot, shouldShowRoleOnName, paint, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, true, null, baselineHeightPx, null, false, 113246080, null);
+            draweeSpanStringBuilder = TextUtilsKt.toSpannable$default(content, context, m237getId3Eiw7ao, shouldAnimateEmoji, shouldShowLinkDecorations, shouldShowRoleDot, shouldShowRoleOnName, paint, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, true, null, baselineHeightPx, null, false, 113246080, null);
         } else {
             Context context2 = threadEmbedView.getContext();
             Intrinsics.checkNotNullExpressionValue(context2, "getContext(...)");
@@ -147,9 +147,9 @@ public final class ThreadEmbedViewHolder extends MessagePartViewHolder {
             str4 = null;
         }
         if (message != null) {
-            guildId = message.m237getClanTagGuildIdqOKuAAo();
+            guildId = message.m235getClanTagGuildIdqOKuAAo();
         }
-        threadEmbedView.m709setMessageCKTq3AQ(str, str2, num, draweeSpanStringBuilder, z10, str3, str4, guildId);
+        threadEmbedView.m707setMessageCKTq3AQ(str, str2, num, draweeSpanStringBuilder, z10, str3, str4, guildId);
         if (message != null) {
             TextView threadEmbedMostRecentMessageName = threadEmbedView.getBinding().threadEmbedMostRecentMessageName;
             Intrinsics.checkNotNullExpressionValue(threadEmbedMostRecentMessageName, "threadEmbedMostRecentMessageName");

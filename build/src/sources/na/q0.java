@@ -40,82 +40,82 @@ public final class q0 {
     private final Lazy J;
 
     /* renamed from: a  reason: collision with root package name */
-    private final ContentResolver f39322a;
+    private final ContentResolver f38677a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final x f39323b;
+    private final x f38678b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final NetworkFetcher f39324c;
+    private final NetworkFetcher f38679c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f39325d;
+    private final boolean f38680d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f39326e;
+    private final boolean f38681e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final h1 f39327f;
+    private final h1 f38682f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final DownsampleMode f39328g;
+    private final DownsampleMode f38683g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final boolean f39329h;
+    private final boolean f38684h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final boolean f39330i;
+    private final boolean f38685i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final boolean f39331j;
+    private final boolean f38686j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final za.d f39332k;
+    private final za.d f38687k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final boolean f39333l;
+    private final boolean f38688l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final boolean f39334m;
+    private final boolean f38689m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final boolean f39335n;
+    private final boolean f38690n;
 
     /* renamed from: o  reason: collision with root package name */
-    private final Set f39336o;
+    private final Set f38691o;
 
     /* renamed from: p  reason: collision with root package name */
-    private Map f39337p;
+    private Map f38692p;
 
     /* renamed from: q  reason: collision with root package name */
-    private Map f39338q;
+    private Map f38693q;
 
     /* renamed from: r  reason: collision with root package name */
-    private Map f39339r;
+    private Map f38694r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final Lazy f39340s;
+    private final Lazy f38695s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final Lazy f39341t;
+    private final Lazy f38696t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final Lazy f39342u;
+    private final Lazy f38697u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final Lazy f39343v;
+    private final Lazy f38698v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final Lazy f39344w;
+    private final Lazy f38699w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final Lazy f39345x;
+    private final Lazy f38700x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final Lazy f39346y;
+    private final Lazy f38701y;
 
     /* renamed from: z  reason: collision with root package name */
-    private final Lazy f39347z;
+    private final Lazy f38702z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
@@ -157,25 +157,25 @@ public final class q0 {
         Intrinsics.checkNotNullParameter(threadHandoffProducerQueue, "threadHandoffProducerQueue");
         Intrinsics.checkNotNullParameter(downsampleMode, "downsampleMode");
         Intrinsics.checkNotNullParameter(imageTranscoderFactory, "imageTranscoderFactory");
-        this.f39322a = contentResolver;
-        this.f39323b = producerFactory;
-        this.f39324c = networkFetcher;
-        this.f39325d = z10;
-        this.f39326e = z11;
-        this.f39327f = threadHandoffProducerQueue;
-        this.f39328g = downsampleMode;
-        this.f39329h = z12;
-        this.f39330i = z13;
-        this.f39331j = z14;
-        this.f39332k = imageTranscoderFactory;
-        this.f39333l = z15;
-        this.f39334m = z16;
-        this.f39335n = z17;
-        this.f39336o = set;
-        this.f39337p = new LinkedHashMap();
-        this.f39338q = new LinkedHashMap();
-        this.f39339r = new LinkedHashMap();
-        this.f39340s = or.l.a(new Function0() { // from class: na.y
+        this.f38677a = contentResolver;
+        this.f38678b = producerFactory;
+        this.f38679c = networkFetcher;
+        this.f38680d = z10;
+        this.f38681e = z11;
+        this.f38682f = threadHandoffProducerQueue;
+        this.f38683g = downsampleMode;
+        this.f38684h = z12;
+        this.f38685i = z13;
+        this.f38686j = z14;
+        this.f38687k = imageTranscoderFactory;
+        this.f38688l = z15;
+        this.f38689m = z16;
+        this.f38690n = z17;
+        this.f38691o = set;
+        this.f38692p = new LinkedHashMap();
+        this.f38693q = new LinkedHashMap();
+        this.f38694r = new LinkedHashMap();
+        this.f38695s = qr.l.a(new Function0() { // from class: na.y
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 b1 b02;
@@ -183,7 +183,7 @@ public final class q0 {
                 return b02;
             }
         });
-        this.f39341t = or.l.a(new Function0() { // from class: na.p0
+        this.f38696t = qr.l.a(new Function0() { // from class: na.p0
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 b1 V;
@@ -191,7 +191,7 @@ public final class q0 {
                 return V;
             }
         });
-        this.f39342u = or.l.a(new Function0() { // from class: na.z
+        this.f38697u = qr.l.a(new Function0() { // from class: na.z
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 b1 T;
@@ -199,7 +199,7 @@ public final class q0 {
                 return T;
             }
         });
-        this.f39343v = or.l.a(new Function0() { // from class: na.a0
+        this.f38698v = qr.l.a(new Function0() { // from class: na.a0
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 w0 c02;
@@ -207,7 +207,7 @@ public final class q0 {
                 return c02;
             }
         });
-        this.f39344w = or.l.a(new Function0() { // from class: na.b0
+        this.f38699w = qr.l.a(new Function0() { // from class: na.b0
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 w0 u10;
@@ -215,7 +215,7 @@ public final class q0 {
                 return u10;
             }
         });
-        this.f39345x = or.l.a(new Function0() { // from class: na.c0
+        this.f38700x = qr.l.a(new Function0() { // from class: na.c0
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 f1 d02;
@@ -223,7 +223,7 @@ public final class q0 {
                 return d02;
             }
         });
-        this.f39346y = or.l.a(new Function0() { // from class: na.d0
+        this.f38701y = qr.l.a(new Function0() { // from class: na.d0
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 w0 v10;
@@ -231,7 +231,7 @@ public final class q0 {
                 return v10;
             }
         });
-        this.f39347z = or.l.a(new Function0() { // from class: na.e0
+        this.f38702z = qr.l.a(new Function0() { // from class: na.e0
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 f1 W;
@@ -239,7 +239,7 @@ public final class q0 {
                 return W;
             }
         });
-        this.A = or.l.a(new Function0() { // from class: na.f0
+        this.A = qr.l.a(new Function0() { // from class: na.f0
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 w0 t10;
@@ -247,7 +247,7 @@ public final class q0 {
                 return t10;
             }
         });
-        this.B = or.l.a(new Function0() { // from class: na.g0
+        this.B = qr.l.a(new Function0() { // from class: na.g0
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 w0 s10;
@@ -255,7 +255,7 @@ public final class q0 {
                 return s10;
             }
         });
-        this.C = or.l.a(new Function0() { // from class: na.h0
+        this.C = qr.l.a(new Function0() { // from class: na.h0
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 w0 X;
@@ -263,7 +263,7 @@ public final class q0 {
                 return X;
             }
         });
-        this.D = or.l.a(new Function0() { // from class: na.i0
+        this.D = qr.l.a(new Function0() { // from class: na.i0
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 w0 a02;
@@ -271,7 +271,7 @@ public final class q0 {
                 return a02;
             }
         });
-        this.E = or.l.a(new Function0() { // from class: na.j0
+        this.E = qr.l.a(new Function0() { // from class: na.j0
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 w0 U;
@@ -279,7 +279,7 @@ public final class q0 {
                 return U;
             }
         });
-        this.F = or.l.a(new Function0() { // from class: na.k0
+        this.F = qr.l.a(new Function0() { // from class: na.k0
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 w0 Z;
@@ -287,7 +287,7 @@ public final class q0 {
                 return Z;
             }
         });
-        this.G = or.l.a(new Function0() { // from class: na.l0
+        this.G = qr.l.a(new Function0() { // from class: na.l0
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 w0 n02;
@@ -295,7 +295,7 @@ public final class q0 {
                 return n02;
             }
         });
-        this.H = or.l.a(new Function0() { // from class: na.m0
+        this.H = qr.l.a(new Function0() { // from class: na.m0
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 w0 Y;
@@ -303,7 +303,7 @@ public final class q0 {
                 return Y;
             }
         });
-        this.I = or.l.a(new Function0() { // from class: na.n0
+        this.I = qr.l.a(new Function0() { // from class: na.n0
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 w0 S;
@@ -311,7 +311,7 @@ public final class q0 {
                 return S;
             }
         });
-        this.J = or.l.a(new Function0() { // from class: na.o0
+        this.J = qr.l.a(new Function0() { // from class: na.o0
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 w0 w10;
@@ -344,7 +344,7 @@ public final class q0 {
                             if (imageRequest.getLoadThumbnailOnlyForAndroidSdkAboveQ()) {
                                 return M();
                             }
-                            if (q8.a.c(this.f39322a.getType(sourceUri))) {
+                            if (q8.a.c(this.f38677a.getType(sourceUri))) {
                                 return N();
                             }
                             return I();
@@ -357,7 +357,7 @@ public final class q0 {
                         case 8:
                             return R();
                         default:
-                            Set set = this.f39336o;
+                            Set set = this.f38691o;
                             if (set != null) {
                                 Iterator it = set.iterator();
                                 if (it.hasNext()) {
@@ -402,7 +402,7 @@ public final class q0 {
                                 w0 M3 = M();
                                 ya.b.b();
                                 return M3;
-                            } else if (q8.a.c(this.f39322a.getType(sourceUri2))) {
+                            } else if (q8.a.c(this.f38677a.getType(sourceUri2))) {
                                 w0 N = N();
                                 ya.b.b();
                                 return N;
@@ -423,7 +423,7 @@ public final class q0 {
                             O = R();
                             break;
                         default:
-                            Set set2 = this.f39336o;
+                            Set set2 = this.f38691o;
                             if (set2 != null) {
                                 Iterator it2 = set2.iterator();
                                 if (it2.hasNext()) {
@@ -449,29 +449,29 @@ public final class q0 {
 
     private final synchronized w0 B(w0 w0Var) {
         w0 w0Var2;
-        w0Var2 = (w0) this.f39339r.get(w0Var);
+        w0Var2 = (w0) this.f38694r.get(w0Var);
         if (w0Var2 == null) {
-            w0Var2 = this.f39323b.f(w0Var);
-            this.f39339r.put(w0Var, w0Var2);
+            w0Var2 = this.f38678b.f(w0Var);
+            this.f38694r.put(w0Var, w0Var2);
         }
         return w0Var2;
     }
 
     private final synchronized w0 F(w0 w0Var) {
         com.facebook.imagepipeline.producers.r k10;
-        k10 = this.f39323b.k(w0Var);
+        k10 = this.f38678b.k(w0Var);
         Intrinsics.checkNotNullExpressionValue(k10, "newDelayProducer(...)");
         return k10;
     }
 
     private final synchronized w0 Q(w0 w0Var) {
         w0 w0Var2;
-        w0Var2 = (w0) this.f39337p.get(w0Var);
+        w0Var2 = (w0) this.f38692p.get(w0Var);
         if (w0Var2 == null) {
-            u0 B = this.f39323b.B(w0Var);
+            u0 B = this.f38678b.B(w0Var);
             Intrinsics.checkNotNullExpressionValue(B, "newPostprocessorProducer(...)");
-            w0Var2 = this.f39323b.A(B);
-            this.f39337p.put(w0Var, w0Var2);
+            w0Var2 = this.f38678b.A(B);
+            this.f38692p.put(w0Var, w0Var2);
         }
         return w0Var2;
     }
@@ -479,7 +479,7 @@ public final class q0 {
     /* JADX INFO: Access modifiers changed from: private */
     public static final w0 S(q0 this$0) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
-        com.facebook.imagepipeline.producers.f0 q10 = this$0.f39323b.q();
+        com.facebook.imagepipeline.producers.f0 q10 = this$0.f38678b.q();
         Intrinsics.checkNotNullExpressionValue(q10, "newLocalAssetFetchProducer(...)");
         return this$0.g0(q10);
     }
@@ -501,9 +501,9 @@ public final class q0 {
     /* JADX INFO: Access modifiers changed from: private */
     public static final w0 U(q0 this$0) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
-        com.facebook.imagepipeline.producers.g0 r10 = this$0.f39323b.r();
+        com.facebook.imagepipeline.producers.g0 r10 = this$0.f38678b.r();
         Intrinsics.checkNotNullExpressionValue(r10, "newLocalContentUriFetchProducer(...)");
-        return this$0.h0(r10, new m1[]{this$0.f39323b.s(), this$0.f39323b.t()});
+        return this$0.h0(r10, new m1[]{this$0.f38678b.s(), this$0.f38678b.t()});
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -524,11 +524,11 @@ public final class q0 {
     public static final f1 W(q0 this$0) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         if (!ya.b.d()) {
-            return this$0.f39323b.E(this$0.y());
+            return this$0.f38678b.E(this$0.y());
         }
         ya.b.a("ProducerSequenceFactory#getLocalFileFetchToEncodedMemoryPrefetchSequence:init");
         try {
-            return this$0.f39323b.E(this$0.y());
+            return this$0.f38678b.E(this$0.y());
         } finally {
             ya.b.b();
         }
@@ -537,7 +537,7 @@ public final class q0 {
     /* JADX INFO: Access modifiers changed from: private */
     public static final w0 X(q0 this$0) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
-        com.facebook.imagepipeline.producers.k0 u10 = this$0.f39323b.u();
+        com.facebook.imagepipeline.producers.k0 u10 = this$0.f38678b.u();
         Intrinsics.checkNotNullExpressionValue(u10, "newLocalFileFetchProducer(...)");
         return this$0.g0(u10);
     }
@@ -545,7 +545,7 @@ public final class q0 {
     /* JADX INFO: Access modifiers changed from: private */
     public static final w0 Y(q0 this$0) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
-        com.facebook.imagepipeline.producers.l0 v10 = this$0.f39323b.v();
+        com.facebook.imagepipeline.producers.l0 v10 = this$0.f38678b.v();
         Intrinsics.checkNotNullExpressionValue(v10, "newLocalResourceFetchProducer(...)");
         return this$0.g0(v10);
     }
@@ -554,7 +554,7 @@ public final class q0 {
     public static final w0 Z(q0 this$0) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         if (Build.VERSION.SDK_INT >= 29) {
-            com.facebook.imagepipeline.producers.m0 w10 = this$0.f39323b.w();
+            com.facebook.imagepipeline.producers.m0 w10 = this$0.f38678b.w();
             Intrinsics.checkNotNullExpressionValue(w10, "newLocalThumbnailBitmapSdk29Producer(...)");
             return this$0.e0(w10);
         }
@@ -564,7 +564,7 @@ public final class q0 {
     /* JADX INFO: Access modifiers changed from: private */
     public static final w0 a0(q0 this$0) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
-        com.facebook.imagepipeline.producers.n0 x10 = this$0.f39323b.x();
+        com.facebook.imagepipeline.producers.n0 x10 = this$0.f38678b.x();
         Intrinsics.checkNotNullExpressionValue(x10, "newLocalVideoThumbnailProducer(...)");
         return this$0.e0(x10);
     }
@@ -601,37 +601,37 @@ public final class q0 {
     public static final f1 d0(q0 this$0) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         if (!ya.b.d()) {
-            return this$0.f39323b.E(this$0.z());
+            return this$0.f38678b.E(this$0.z());
         }
         ya.b.a("ProducerSequenceFactory#getNetworkFetchToEncodedMemoryPrefetchSequence");
         try {
-            return this$0.f39323b.E(this$0.z());
+            return this$0.f38678b.E(this$0.z());
         } finally {
             ya.b.b();
         }
     }
 
     private final w0 e0(w0 w0Var) {
-        com.facebook.imagepipeline.producers.i e10 = this.f39323b.e(w0Var);
+        com.facebook.imagepipeline.producers.i e10 = this.f38678b.e(w0Var);
         Intrinsics.checkNotNullExpressionValue(e10, "newBitmapMemoryCacheProducer(...)");
-        com.facebook.imagepipeline.producers.h d10 = this.f39323b.d(e10);
+        com.facebook.imagepipeline.producers.h d10 = this.f38678b.d(e10);
         Intrinsics.checkNotNullExpressionValue(d10, "newBitmapMemoryCacheKeyMultiplexProducer(...)");
-        w0 b10 = this.f39323b.b(d10, this.f39327f);
+        w0 b10 = this.f38678b.b(d10, this.f38682f);
         Intrinsics.checkNotNullExpressionValue(b10, "newBackgroundThreadHandoffProducer(...)");
-        if (!this.f39333l && !this.f39334m) {
-            com.facebook.imagepipeline.producers.g c10 = this.f39323b.c(b10);
+        if (!this.f38688l && !this.f38689m) {
+            com.facebook.imagepipeline.producers.g c10 = this.f38678b.c(b10);
             Intrinsics.checkNotNullExpressionValue(c10, "newBitmapMemoryCacheGetProducer(...)");
             return c10;
         }
-        com.facebook.imagepipeline.producers.g c11 = this.f39323b.c(b10);
+        com.facebook.imagepipeline.producers.g c11 = this.f38678b.c(b10);
         Intrinsics.checkNotNullExpressionValue(c11, "newBitmapMemoryCacheGetProducer(...)");
-        com.facebook.imagepipeline.producers.k g10 = this.f39323b.g(c11);
+        com.facebook.imagepipeline.producers.k g10 = this.f38678b.g(c11);
         Intrinsics.checkNotNullExpressionValue(g10, "newBitmapProbeProducer(...)");
         return g10;
     }
 
     private final w0 g0(w0 w0Var) {
-        return h0(w0Var, new m1[]{this.f39323b.t()});
+        return h0(w0Var, new m1[]{this.f38678b.t()});
     }
 
     private final w0 h0(w0 w0Var, m1[] m1VarArr) {
@@ -642,29 +642,29 @@ public final class q0 {
         com.facebook.imagepipeline.producers.v m10;
         com.facebook.imagepipeline.producers.v m11;
         if (!ya.b.d()) {
-            if (this.f39330i) {
-                r0 z10 = this.f39323b.z(w0Var);
+            if (this.f38685i) {
+                r0 z10 = this.f38678b.z(w0Var);
                 Intrinsics.checkNotNullExpressionValue(z10, "newPartialDiskCacheProducer(...)");
-                m11 = this.f39323b.m(z10);
+                m11 = this.f38678b.m(z10);
             } else {
-                m11 = this.f39323b.m(w0Var);
+                m11 = this.f38678b.m(w0Var);
             }
             Intrinsics.checkNotNull(m11);
-            com.facebook.imagepipeline.producers.u l10 = this.f39323b.l(m11);
+            com.facebook.imagepipeline.producers.u l10 = this.f38678b.l(m11);
             Intrinsics.checkNotNullExpressionValue(l10, "newDiskCacheReadProducer(...)");
             return l10;
         }
         ya.b.a("ProducerSequenceFactory#newDiskCacheSequence");
         try {
-            if (this.f39330i) {
-                r0 z11 = this.f39323b.z(w0Var);
+            if (this.f38685i) {
+                r0 z11 = this.f38678b.z(w0Var);
                 Intrinsics.checkNotNullExpressionValue(z11, "newPartialDiskCacheProducer(...)");
-                m10 = this.f39323b.m(z11);
+                m10 = this.f38678b.m(z11);
             } else {
-                m10 = this.f39323b.m(w0Var);
+                m10 = this.f38678b.m(w0Var);
             }
             Intrinsics.checkNotNull(m10);
-            com.facebook.imagepipeline.producers.u l11 = this.f39323b.l(m10);
+            com.facebook.imagepipeline.producers.u l11 = this.f38678b.l(m10);
             Intrinsics.checkNotNullExpressionValue(l11, "newDiskCacheReadProducer(...)");
             ya.b.b();
             return l11;
@@ -675,27 +675,27 @@ public final class q0 {
     }
 
     private final w0 k0(w0 w0Var) {
-        if (this.f39331j) {
+        if (this.f38686j) {
             w0Var = j0(w0Var);
         }
-        w0 o10 = this.f39323b.o(w0Var);
+        w0 o10 = this.f38678b.o(w0Var);
         Intrinsics.checkNotNullExpressionValue(o10, "newEncodedMemoryCacheProducer(...)");
-        if (this.f39334m) {
-            com.facebook.imagepipeline.producers.z p10 = this.f39323b.p(o10);
+        if (this.f38689m) {
+            com.facebook.imagepipeline.producers.z p10 = this.f38678b.p(o10);
             Intrinsics.checkNotNullExpressionValue(p10, "newEncodedProbeProducer(...)");
-            com.facebook.imagepipeline.producers.x n10 = this.f39323b.n(p10);
+            com.facebook.imagepipeline.producers.x n10 = this.f38678b.n(p10);
             Intrinsics.checkNotNullExpressionValue(n10, "newEncodedCacheKeyMultiplexProducer(...)");
             return n10;
         }
-        com.facebook.imagepipeline.producers.x n11 = this.f39323b.n(o10);
+        com.facebook.imagepipeline.producers.x n11 = this.f38678b.n(o10);
         Intrinsics.checkNotNullExpressionValue(n11, "newEncodedCacheKeyMultiplexProducer(...)");
         return n11;
     }
 
     private final w0 l0(m1[] m1VarArr) {
-        l1 G = this.f39323b.G(m1VarArr);
+        l1 G = this.f38678b.G(m1VarArr);
         Intrinsics.checkNotNullExpressionValue(G, "newThumbnailBranchProducer(...)");
-        c1 D = this.f39323b.D(G, true, this.f39332k);
+        c1 D = this.f38678b.D(G, true, this.f38687k);
         Intrinsics.checkNotNullExpressionValue(D, "newResizeAndRotateProducer(...)");
         return D;
     }
@@ -703,7 +703,7 @@ public final class q0 {
     private final w0 m0(w0 w0Var, m1[] m1VarArr) {
         com.facebook.imagepipeline.producers.a a10 = x.a(w0Var);
         Intrinsics.checkNotNullExpressionValue(a10, "newAddImageTransformMetaDataProducer(...)");
-        j1 F = this.f39323b.F(this.f39323b.D(a10, true, this.f39332k));
+        j1 F = this.f38678b.F(this.f38678b.D(a10, true, this.f38687k));
         Intrinsics.checkNotNullExpressionValue(F, "newThrottlingProducer(...)");
         com.facebook.imagepipeline.producers.l h10 = x.h(l0(m1VarArr), F);
         Intrinsics.checkNotNullExpressionValue(h10, "newBranchOnSeparateImagesProducer(...)");
@@ -713,7 +713,7 @@ public final class q0 {
     /* JADX INFO: Access modifiers changed from: private */
     public static final w0 n0(q0 this$0) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
-        a1 C = this$0.f39323b.C();
+        a1 C = this$0.f38678b.C();
         Intrinsics.checkNotNullExpressionValue(C, "newQualifiedResourceFetchProducer(...)");
         return this$0.g0(C);
     }
@@ -722,15 +722,15 @@ public final class q0 {
     public static final w0 s(q0 this$0) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         if (!ya.b.d()) {
-            com.facebook.imagepipeline.producers.g0 r10 = this$0.f39323b.r();
+            com.facebook.imagepipeline.producers.g0 r10 = this$0.f38678b.r();
             Intrinsics.checkNotNullExpressionValue(r10, "newLocalContentUriFetchProducer(...)");
-            return this$0.f39323b.b(this$0.k0(r10), this$0.f39327f);
+            return this$0.f38678b.b(this$0.k0(r10), this$0.f38682f);
         }
         ya.b.a("ProducerSequenceFactory#getBackgroundLocalContentUriFetchToEncodeMemorySequence:init");
         try {
-            com.facebook.imagepipeline.producers.g0 r11 = this$0.f39323b.r();
+            com.facebook.imagepipeline.producers.g0 r11 = this$0.f38678b.r();
             Intrinsics.checkNotNullExpressionValue(r11, "newLocalContentUriFetchProducer(...)");
-            return this$0.f39323b.b(this$0.k0(r11), this$0.f39327f);
+            return this$0.f38678b.b(this$0.k0(r11), this$0.f38682f);
         } finally {
             ya.b.b();
         }
@@ -740,15 +740,15 @@ public final class q0 {
     public static final w0 t(q0 this$0) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         if (!ya.b.d()) {
-            com.facebook.imagepipeline.producers.k0 u10 = this$0.f39323b.u();
+            com.facebook.imagepipeline.producers.k0 u10 = this$0.f38678b.u();
             Intrinsics.checkNotNullExpressionValue(u10, "newLocalFileFetchProducer(...)");
-            return this$0.f39323b.b(this$0.k0(u10), this$0.f39327f);
+            return this$0.f38678b.b(this$0.k0(u10), this$0.f38682f);
         }
         ya.b.a("ProducerSequenceFactory#getBackgroundLocalFileFetchToEncodeMemorySequence");
         try {
-            com.facebook.imagepipeline.producers.k0 u11 = this$0.f39323b.u();
+            com.facebook.imagepipeline.producers.k0 u11 = this$0.f38678b.u();
             Intrinsics.checkNotNullExpressionValue(u11, "newLocalFileFetchProducer(...)");
-            return this$0.f39323b.b(this$0.k0(u11), this$0.f39327f);
+            return this$0.f38678b.b(this$0.k0(u11), this$0.f38682f);
         } finally {
             ya.b.b();
         }
@@ -758,11 +758,11 @@ public final class q0 {
     public static final w0 u(q0 this$0) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         if (!ya.b.d()) {
-            return this$0.f39323b.b(this$0.C(), this$0.f39327f);
+            return this$0.f38678b.b(this$0.C(), this$0.f38682f);
         }
         ya.b.a("ProducerSequenceFactory#getBackgroundNetworkFetchToEncodedMemorySequence:init");
         try {
-            return this$0.f39323b.b(this$0.C(), this$0.f39327f);
+            return this$0.f38678b.b(this$0.C(), this$0.f38682f);
         } finally {
             ya.b.b();
         }
@@ -772,11 +772,11 @@ public final class q0 {
     public static final w0 v(q0 this$0) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         if (!ya.b.d()) {
-            return this$0.i0(this$0.f39324c);
+            return this$0.i0(this$0.f38679c);
         }
         ya.b.a("ProducerSequenceFactory#getCommonNetworkFetchToEncodedMemorySequence");
         try {
-            return this$0.i0(this$0.f39324c);
+            return this$0.i0(this$0.f38679c);
         } finally {
             ya.b.b();
         }
@@ -785,13 +785,13 @@ public final class q0 {
     /* JADX INFO: Access modifiers changed from: private */
     public static final w0 w(q0 this$0) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
-        com.facebook.imagepipeline.producers.n i10 = this$0.f39323b.i();
+        com.facebook.imagepipeline.producers.n i10 = this$0.f38678b.i();
         Intrinsics.checkNotNullExpressionValue(i10, "newDataFetchProducer(...)");
-        return this$0.f0(this$0.f39323b.D(x.a(i10), true, this$0.f39332k));
+        return this$0.f0(this$0.f38678b.D(x.a(i10), true, this$0.f38687k));
     }
 
     public final w0 C() {
-        return (w0) this.f39346y.getValue();
+        return (w0) this.f38701y.getValue();
     }
 
     public final w0 D() {
@@ -805,10 +805,10 @@ public final class q0 {
             if (imageRequest.getPostprocessor() != null) {
                 A = Q(A);
             }
-            if (this.f39329h) {
+            if (this.f38684h) {
                 A = B(A);
             }
-            if (this.f39335n && imageRequest.getDelayMs() > 0) {
+            if (this.f38690n && imageRequest.getDelayMs() > 0) {
                 return F(A);
             }
             return A;
@@ -819,10 +819,10 @@ public final class q0 {
             if (imageRequest.getPostprocessor() != null) {
                 A2 = Q(A2);
             }
-            if (this.f39329h) {
+            if (this.f38684h) {
                 A2 = B(A2);
             }
-            if (this.f39335n && imageRequest.getDelayMs() > 0) {
+            if (this.f38690n && imageRequest.getDelayMs() > 0) {
                 A2 = F(A2);
             }
             ya.b.b();
@@ -859,7 +859,7 @@ public final class q0 {
     }
 
     public final w0 J() {
-        Object value = this.f39347z.getValue();
+        Object value = this.f38702z.getValue();
         Intrinsics.checkNotNullExpressionValue(value, "getValue(...)");
         return (w0) value;
     }
@@ -881,11 +881,11 @@ public final class q0 {
     }
 
     public final w0 O() {
-        return (w0) this.f39343v.getValue();
+        return (w0) this.f38698v.getValue();
     }
 
     public final w0 P() {
-        Object value = this.f39345x.getValue();
+        Object value = this.f38700x.getValue();
         Intrinsics.checkNotNullExpressionValue(value, "getValue(...)");
         return (w0) value;
     }
@@ -897,13 +897,13 @@ public final class q0 {
     public final w0 f0(w0 inputProducer) {
         Intrinsics.checkNotNullParameter(inputProducer, "inputProducer");
         if (!ya.b.d()) {
-            com.facebook.imagepipeline.producers.o j10 = this.f39323b.j(inputProducer);
+            com.facebook.imagepipeline.producers.o j10 = this.f38678b.j(inputProducer);
             Intrinsics.checkNotNullExpressionValue(j10, "newDecodeProducer(...)");
             return e0(j10);
         }
         ya.b.a("ProducerSequenceFactory#newBitmapCacheGetToDecodeSequence");
         try {
-            com.facebook.imagepipeline.producers.o j11 = this.f39323b.j(inputProducer);
+            com.facebook.imagepipeline.producers.o j11 = this.f38678b.j(inputProducer);
             Intrinsics.checkNotNullExpressionValue(j11, "newDecodeProducer(...)");
             return e0(j11);
         } finally {
@@ -916,26 +916,26 @@ public final class q0 {
             Intrinsics.checkNotNullParameter(networkFetcher, "networkFetcher");
             boolean z10 = false;
             if (!ya.b.d()) {
-                w0 y10 = this.f39323b.y(networkFetcher);
+                w0 y10 = this.f38678b.y(networkFetcher);
                 Intrinsics.checkNotNullExpressionValue(y10, "newNetworkFetchProducer(...)");
                 com.facebook.imagepipeline.producers.a a10 = x.a(k0(y10));
                 Intrinsics.checkNotNullExpressionValue(a10, "newAddImageTransformMetaDataProducer(...)");
-                x xVar = this.f39323b;
-                if (this.f39325d && this.f39328g != DownsampleMode.f10465i) {
+                x xVar = this.f38678b;
+                if (this.f38680d && this.f38683g != DownsampleMode.f10364i) {
                     z10 = true;
                 }
-                return xVar.D(a10, z10, this.f39332k);
+                return xVar.D(a10, z10, this.f38687k);
             }
             ya.b.a("ProducerSequenceFactory#createCommonNetworkFetchToEncodedMemorySequence");
-            w0 y11 = this.f39323b.y(networkFetcher);
+            w0 y11 = this.f38678b.y(networkFetcher);
             Intrinsics.checkNotNullExpressionValue(y11, "newNetworkFetchProducer(...)");
             com.facebook.imagepipeline.producers.a a11 = x.a(k0(y11));
             Intrinsics.checkNotNullExpressionValue(a11, "newAddImageTransformMetaDataProducer(...)");
-            x xVar2 = this.f39323b;
-            if (this.f39325d && this.f39328g != DownsampleMode.f10465i) {
+            x xVar2 = this.f38678b;
+            if (this.f38680d && this.f38683g != DownsampleMode.f10364i) {
                 z10 = true;
             }
-            c1 D = xVar2.D(a11, z10, this.f39332k);
+            c1 D = xVar2.D(a11, z10, this.f38687k);
             ya.b.b();
             return D;
         } catch (Throwable th2) {
@@ -956,7 +956,7 @@ public final class q0 {
     }
 
     public final w0 z() {
-        Object value = this.f39344w.getValue();
+        Object value = this.f38699w.getValue();
         Intrinsics.checkNotNullExpressionValue(value, "getValue(...)");
         return (w0) value;
     }

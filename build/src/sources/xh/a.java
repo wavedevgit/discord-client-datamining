@@ -1,57 +1,41 @@
 package xh;
 
-import java.util.HashMap;
-import java.util.Map;
+import android.os.IBinder;
+import android.os.IInterface;
+import android.os.Parcel;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class a {
+public abstract class a implements IInterface {
 
-    /* renamed from: a  reason: collision with root package name */
-    private static final Map f53870a;
+    /* renamed from: c  reason: collision with root package name */
+    private final IBinder f54650c;
 
-    /* renamed from: b  reason: collision with root package name */
-    private static final Map f53871b;
+    /* renamed from: d  reason: collision with root package name */
+    private final String f54651d;
 
-    static {
-        HashMap hashMap = new HashMap();
-        f53870a = hashMap;
-        HashMap hashMap2 = new HashMap();
-        f53871b = hashMap2;
-        hashMap.put(-1, "The requesting app is unavailable (e.g. unpublished, nonexistent version code).");
-        hashMap.put(-2, "The requested pack is not available.");
-        hashMap.put(-3, "The request is invalid.");
-        hashMap.put(-4, "The requested download is not found.");
-        hashMap.put(-5, "The Asset Delivery API is not available.");
-        hashMap.put(-6, "Network error. Unable to obtain the asset pack details.");
-        hashMap.put(-7, "Download not permitted under current device circumstances (e.g. in background).");
-        hashMap.put(-10, "Asset pack download failed due to insufficient storage.");
-        hashMap.put(-11, "The Play Store app is either not installed or not the official version.");
-        hashMap.put(-12, "Tried to show the cellular data confirmation but no asset packs are waiting for Wi-Fi.");
-        hashMap.put(-13, "The app is not owned by any user on this device. An app is \"owned\" if it has been acquired from Play.");
-        hashMap.put(-14, "Tried to show the confirmation dialog but no asset packs are waiting for user confirmation.");
-        hashMap.put(-14, "The installed app version was not installed by Play.");
-        hashMap.put(-100, "Unknown error downloading an asset pack.");
-        hashMap2.put(-1, "APP_UNAVAILABLE");
-        hashMap2.put(-2, "PACK_UNAVAILABLE");
-        hashMap2.put(-3, "INVALID_REQUEST");
-        hashMap2.put(-4, "DOWNLOAD_NOT_FOUND");
-        hashMap2.put(-5, "API_NOT_AVAILABLE");
-        hashMap2.put(-6, "NETWORK_ERROR");
-        hashMap2.put(-7, "ACCESS_DENIED");
-        hashMap2.put(-10, "INSUFFICIENT_STORAGE");
-        hashMap2.put(-11, "PLAY_STORE_NOT_FOUND");
-        hashMap2.put(-12, "NETWORK_UNRESTRICTED");
-        hashMap2.put(-13, "APP_NOT_OWNED");
-        hashMap2.put(-14, "CONFIRMATION_NOT_REQUIRED");
-        hashMap2.put(-15, "UNRECOGNIZED_INSTALLATION");
-        hashMap2.put(-100, "INTERNAL_ERROR");
+    /* JADX INFO: Access modifiers changed from: protected */
+    public a(IBinder iBinder, String str) {
+        this.f54650c = iBinder;
+        this.f54651d = str;
     }
 
-    public static String a(int i10) {
-        Map map = f53870a;
-        Integer valueOf = Integer.valueOf(i10);
-        if (!map.containsKey(valueOf)) {
-            return "";
+    @Override // android.os.IInterface
+    public final IBinder asBinder() {
+        return this.f54650c;
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    public final Parcel e() {
+        Parcel obtain = Parcel.obtain();
+        obtain.writeInterfaceToken(this.f54651d);
+        return obtain;
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    public final void f(int i10, Parcel parcel) {
+        try {
+            this.f54650c.transact(i10, parcel, null, 1);
+        } finally {
+            parcel.recycle();
         }
-        return ((String) map.get(valueOf)) + " (https://developer.android.com/reference/com/google/android/play/core/assetpacks/model/AssetPackErrorCode.html#" + ((String) f53871b.get(valueOf)) + ")";
     }
 }

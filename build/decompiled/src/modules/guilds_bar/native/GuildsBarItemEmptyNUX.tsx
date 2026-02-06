@@ -210,7 +210,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var9.bind(var3)(var1);
         var1 = var2.useAnimatedStyle;
         var0 = function() {
-            _fun101213: for (var _fun101213_ip = 0;;) switch (_fun101213_ip) {
+            _fun101221: for (var _fun101221_ip = 0;;) switch (_fun101221_ip) {
                 case 0:
                     var0 = {};
                     var4 = _closure1_slot0;
@@ -222,13 +222,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var5.withSpring;
                     var3 = _closure2_slot0;
                     if (var3) {
-                        _fun101213_ip = 48;
-                        continue _fun101213
+                        _fun101221_ip = 48;
+                        continue _fun101221
                     }
                 case 42:
                     var3 = _closure2_slot2;
-                    _fun101213_ip = 52;
-                    continue _fun101213;
+                    _fun101221_ip = 52;
+                    continue _fun101221;
                 case 48:
                     var3 = _closure2_slot3;
                 case 52:
@@ -337,4 +337,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3213, 13150, 660, 6965, 33, 1297, 566, 5619, 3720, 3151, 671, 4081, 1234, 13203, 13161, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3215, 13152, 660, 6970, 33, 1297, 566, 5619, 3722, 3153, 671, 4082, 1234, 13205, 13163, 2]);

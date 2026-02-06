@@ -9,7 +9,7 @@ import kotlin.jvm.internal.Intrinsics;
 public final class k0 extends j0 {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f10817c = new a(null);
+    public static final a f10716c = new a(null);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {

@@ -10,7 +10,7 @@ import com.google.android.exoplayer2.g;
 import ne.w0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class b implements com.google.android.exoplayer2.g {
-    public static final b C = new C0782b().o("").a();
+    public static final b C = new C0770b().o("").a();
     private static final String D = w0.B0(0);
     private static final String E = w0.B0(1);
     private static final String F = w0.B0(2);
@@ -40,312 +40,312 @@ public final class b implements com.google.android.exoplayer2.g {
     public final float B;
 
     /* renamed from: d  reason: collision with root package name */
-    public final CharSequence f55459d;
+    public final CharSequence f56190d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final Layout.Alignment f55460e;
+    public final Layout.Alignment f56191e;
 
     /* renamed from: i  reason: collision with root package name */
-    public final Layout.Alignment f55461i;
+    public final Layout.Alignment f56192i;
 
     /* renamed from: o  reason: collision with root package name */
-    public final Bitmap f55462o;
+    public final Bitmap f56193o;
 
     /* renamed from: p  reason: collision with root package name */
-    public final float f55463p;
+    public final float f56194p;
 
     /* renamed from: q  reason: collision with root package name */
-    public final int f55464q;
+    public final int f56195q;
 
     /* renamed from: r  reason: collision with root package name */
-    public final int f55465r;
+    public final int f56196r;
 
     /* renamed from: s  reason: collision with root package name */
-    public final float f55466s;
+    public final float f56197s;
 
     /* renamed from: t  reason: collision with root package name */
-    public final int f55467t;
+    public final int f56198t;
 
     /* renamed from: u  reason: collision with root package name */
-    public final float f55468u;
+    public final float f56199u;
 
     /* renamed from: v  reason: collision with root package name */
-    public final float f55469v;
+    public final float f56200v;
 
     /* renamed from: w  reason: collision with root package name */
-    public final boolean f55470w;
+    public final boolean f56201w;
 
     /* renamed from: x  reason: collision with root package name */
-    public final int f55471x;
+    public final int f56202x;
 
     /* renamed from: y  reason: collision with root package name */
-    public final int f55472y;
+    public final int f56203y;
 
     /* renamed from: z  reason: collision with root package name */
-    public final float f55473z;
+    public final float f56204z;
 
     /* renamed from: zd.b$b  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class C0782b {
+    public static final class C0770b {
 
         /* renamed from: a  reason: collision with root package name */
-        private CharSequence f55474a;
+        private CharSequence f56205a;
 
         /* renamed from: b  reason: collision with root package name */
-        private Bitmap f55475b;
+        private Bitmap f56206b;
 
         /* renamed from: c  reason: collision with root package name */
-        private Layout.Alignment f55476c;
+        private Layout.Alignment f56207c;
 
         /* renamed from: d  reason: collision with root package name */
-        private Layout.Alignment f55477d;
+        private Layout.Alignment f56208d;
 
         /* renamed from: e  reason: collision with root package name */
-        private float f55478e;
+        private float f56209e;
 
         /* renamed from: f  reason: collision with root package name */
-        private int f55479f;
+        private int f56210f;
 
         /* renamed from: g  reason: collision with root package name */
-        private int f55480g;
+        private int f56211g;
 
         /* renamed from: h  reason: collision with root package name */
-        private float f55481h;
+        private float f56212h;
 
         /* renamed from: i  reason: collision with root package name */
-        private int f55482i;
+        private int f56213i;
 
         /* renamed from: j  reason: collision with root package name */
-        private int f55483j;
+        private int f56214j;
 
         /* renamed from: k  reason: collision with root package name */
-        private float f55484k;
+        private float f56215k;
 
         /* renamed from: l  reason: collision with root package name */
-        private float f55485l;
+        private float f56216l;
 
         /* renamed from: m  reason: collision with root package name */
-        private float f55486m;
+        private float f56217m;
 
         /* renamed from: n  reason: collision with root package name */
-        private boolean f55487n;
+        private boolean f56218n;
 
         /* renamed from: o  reason: collision with root package name */
-        private int f55488o;
+        private int f56219o;
 
         /* renamed from: p  reason: collision with root package name */
-        private int f55489p;
+        private int f56220p;
 
         /* renamed from: q  reason: collision with root package name */
-        private float f55490q;
+        private float f56221q;
 
         public b a() {
-            return new b(this.f55474a, this.f55476c, this.f55477d, this.f55475b, this.f55478e, this.f55479f, this.f55480g, this.f55481h, this.f55482i, this.f55483j, this.f55484k, this.f55485l, this.f55486m, this.f55487n, this.f55488o, this.f55489p, this.f55490q);
+            return new b(this.f56205a, this.f56207c, this.f56208d, this.f56206b, this.f56209e, this.f56210f, this.f56211g, this.f56212h, this.f56213i, this.f56214j, this.f56215k, this.f56216l, this.f56217m, this.f56218n, this.f56219o, this.f56220p, this.f56221q);
         }
 
-        public C0782b b() {
-            this.f55487n = false;
+        public C0770b b() {
+            this.f56218n = false;
             return this;
         }
 
         public int c() {
-            return this.f55480g;
+            return this.f56211g;
         }
 
         public int d() {
-            return this.f55482i;
+            return this.f56213i;
         }
 
         public CharSequence e() {
-            return this.f55474a;
+            return this.f56205a;
         }
 
-        public C0782b f(Bitmap bitmap) {
-            this.f55475b = bitmap;
+        public C0770b f(Bitmap bitmap) {
+            this.f56206b = bitmap;
             return this;
         }
 
-        public C0782b g(float f10) {
-            this.f55486m = f10;
+        public C0770b g(float f10) {
+            this.f56217m = f10;
             return this;
         }
 
-        public C0782b h(float f10, int i10) {
-            this.f55478e = f10;
-            this.f55479f = i10;
+        public C0770b h(float f10, int i10) {
+            this.f56209e = f10;
+            this.f56210f = i10;
             return this;
         }
 
-        public C0782b i(int i10) {
-            this.f55480g = i10;
+        public C0770b i(int i10) {
+            this.f56211g = i10;
             return this;
         }
 
-        public C0782b j(Layout.Alignment alignment) {
-            this.f55477d = alignment;
+        public C0770b j(Layout.Alignment alignment) {
+            this.f56208d = alignment;
             return this;
         }
 
-        public C0782b k(float f10) {
-            this.f55481h = f10;
+        public C0770b k(float f10) {
+            this.f56212h = f10;
             return this;
         }
 
-        public C0782b l(int i10) {
-            this.f55482i = i10;
+        public C0770b l(int i10) {
+            this.f56213i = i10;
             return this;
         }
 
-        public C0782b m(float f10) {
-            this.f55490q = f10;
+        public C0770b m(float f10) {
+            this.f56221q = f10;
             return this;
         }
 
-        public C0782b n(float f10) {
-            this.f55485l = f10;
+        public C0770b n(float f10) {
+            this.f56216l = f10;
             return this;
         }
 
-        public C0782b o(CharSequence charSequence) {
-            this.f55474a = charSequence;
+        public C0770b o(CharSequence charSequence) {
+            this.f56205a = charSequence;
             return this;
         }
 
-        public C0782b p(Layout.Alignment alignment) {
-            this.f55476c = alignment;
+        public C0770b p(Layout.Alignment alignment) {
+            this.f56207c = alignment;
             return this;
         }
 
-        public C0782b q(float f10, int i10) {
-            this.f55484k = f10;
-            this.f55483j = i10;
+        public C0770b q(float f10, int i10) {
+            this.f56215k = f10;
+            this.f56214j = i10;
             return this;
         }
 
-        public C0782b r(int i10) {
-            this.f55489p = i10;
+        public C0770b r(int i10) {
+            this.f56220p = i10;
             return this;
         }
 
-        public C0782b s(int i10) {
-            this.f55488o = i10;
-            this.f55487n = true;
+        public C0770b s(int i10) {
+            this.f56219o = i10;
+            this.f56218n = true;
             return this;
         }
 
-        public C0782b() {
-            this.f55474a = null;
-            this.f55475b = null;
-            this.f55476c = null;
-            this.f55477d = null;
-            this.f55478e = -3.4028235E38f;
-            this.f55479f = Integer.MIN_VALUE;
-            this.f55480g = Integer.MIN_VALUE;
-            this.f55481h = -3.4028235E38f;
-            this.f55482i = Integer.MIN_VALUE;
-            this.f55483j = Integer.MIN_VALUE;
-            this.f55484k = -3.4028235E38f;
-            this.f55485l = -3.4028235E38f;
-            this.f55486m = -3.4028235E38f;
-            this.f55487n = false;
-            this.f55488o = -16777216;
-            this.f55489p = Integer.MIN_VALUE;
+        public C0770b() {
+            this.f56205a = null;
+            this.f56206b = null;
+            this.f56207c = null;
+            this.f56208d = null;
+            this.f56209e = -3.4028235E38f;
+            this.f56210f = Integer.MIN_VALUE;
+            this.f56211g = Integer.MIN_VALUE;
+            this.f56212h = -3.4028235E38f;
+            this.f56213i = Integer.MIN_VALUE;
+            this.f56214j = Integer.MIN_VALUE;
+            this.f56215k = -3.4028235E38f;
+            this.f56216l = -3.4028235E38f;
+            this.f56217m = -3.4028235E38f;
+            this.f56218n = false;
+            this.f56219o = -16777216;
+            this.f56220p = Integer.MIN_VALUE;
         }
 
-        private C0782b(b bVar) {
-            this.f55474a = bVar.f55459d;
-            this.f55475b = bVar.f55462o;
-            this.f55476c = bVar.f55460e;
-            this.f55477d = bVar.f55461i;
-            this.f55478e = bVar.f55463p;
-            this.f55479f = bVar.f55464q;
-            this.f55480g = bVar.f55465r;
-            this.f55481h = bVar.f55466s;
-            this.f55482i = bVar.f55467t;
-            this.f55483j = bVar.f55472y;
-            this.f55484k = bVar.f55473z;
-            this.f55485l = bVar.f55468u;
-            this.f55486m = bVar.f55469v;
-            this.f55487n = bVar.f55470w;
-            this.f55488o = bVar.f55471x;
-            this.f55489p = bVar.A;
-            this.f55490q = bVar.B;
+        private C0770b(b bVar) {
+            this.f56205a = bVar.f56190d;
+            this.f56206b = bVar.f56193o;
+            this.f56207c = bVar.f56191e;
+            this.f56208d = bVar.f56192i;
+            this.f56209e = bVar.f56194p;
+            this.f56210f = bVar.f56195q;
+            this.f56211g = bVar.f56196r;
+            this.f56212h = bVar.f56197s;
+            this.f56213i = bVar.f56198t;
+            this.f56214j = bVar.f56203y;
+            this.f56215k = bVar.f56204z;
+            this.f56216l = bVar.f56199u;
+            this.f56217m = bVar.f56200v;
+            this.f56218n = bVar.f56201w;
+            this.f56219o = bVar.f56202x;
+            this.f56220p = bVar.A;
+            this.f56221q = bVar.B;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final b c(Bundle bundle) {
-        C0782b c0782b = new C0782b();
+        C0770b c0770b = new C0770b();
         CharSequence charSequence = bundle.getCharSequence(D);
         if (charSequence != null) {
-            c0782b.o(charSequence);
+            c0770b.o(charSequence);
         }
         Layout.Alignment alignment = (Layout.Alignment) bundle.getSerializable(E);
         if (alignment != null) {
-            c0782b.p(alignment);
+            c0770b.p(alignment);
         }
         Layout.Alignment alignment2 = (Layout.Alignment) bundle.getSerializable(F);
         if (alignment2 != null) {
-            c0782b.j(alignment2);
+            c0770b.j(alignment2);
         }
         Bitmap bitmap = (Bitmap) bundle.getParcelable(G);
         if (bitmap != null) {
-            c0782b.f(bitmap);
+            c0770b.f(bitmap);
         }
         String str = H;
         if (bundle.containsKey(str)) {
             String str2 = I;
             if (bundle.containsKey(str2)) {
-                c0782b.h(bundle.getFloat(str), bundle.getInt(str2));
+                c0770b.h(bundle.getFloat(str), bundle.getInt(str2));
             }
         }
         String str3 = J;
         if (bundle.containsKey(str3)) {
-            c0782b.i(bundle.getInt(str3));
+            c0770b.i(bundle.getInt(str3));
         }
         String str4 = K;
         if (bundle.containsKey(str4)) {
-            c0782b.k(bundle.getFloat(str4));
+            c0770b.k(bundle.getFloat(str4));
         }
         String str5 = L;
         if (bundle.containsKey(str5)) {
-            c0782b.l(bundle.getInt(str5));
+            c0770b.l(bundle.getInt(str5));
         }
         String str6 = N;
         if (bundle.containsKey(str6)) {
             String str7 = M;
             if (bundle.containsKey(str7)) {
-                c0782b.q(bundle.getFloat(str6), bundle.getInt(str7));
+                c0770b.q(bundle.getFloat(str6), bundle.getInt(str7));
             }
         }
         String str8 = O;
         if (bundle.containsKey(str8)) {
-            c0782b.n(bundle.getFloat(str8));
+            c0770b.n(bundle.getFloat(str8));
         }
         String str9 = P;
         if (bundle.containsKey(str9)) {
-            c0782b.g(bundle.getFloat(str9));
+            c0770b.g(bundle.getFloat(str9));
         }
         String str10 = Q;
         if (bundle.containsKey(str10)) {
-            c0782b.s(bundle.getInt(str10));
+            c0770b.s(bundle.getInt(str10));
         }
         if (!bundle.getBoolean(R, false)) {
-            c0782b.b();
+            c0770b.b();
         }
         String str11 = S;
         if (bundle.containsKey(str11)) {
-            c0782b.r(bundle.getInt(str11));
+            c0770b.r(bundle.getInt(str11));
         }
         String str12 = T;
         if (bundle.containsKey(str12)) {
-            c0782b.m(bundle.getFloat(str12));
+            c0770b.m(bundle.getFloat(str12));
         }
-        return c0782b.a();
+        return c0770b.a();
     }
 
-    public C0782b b() {
-        return new C0782b();
+    public C0770b b() {
+        return new C0770b();
     }
 
     public boolean equals(Object obj) {
@@ -356,7 +356,7 @@ public final class b implements com.google.android.exoplayer2.g {
         }
         if (obj != null && b.class == obj.getClass()) {
             b bVar = (b) obj;
-            if (TextUtils.equals(this.f55459d, bVar.f55459d) && this.f55460e == bVar.f55460e && this.f55461i == bVar.f55461i && ((bitmap = this.f55462o) != null ? !((bitmap2 = bVar.f55462o) == null || !bitmap.sameAs(bitmap2)) : bVar.f55462o == null) && this.f55463p == bVar.f55463p && this.f55464q == bVar.f55464q && this.f55465r == bVar.f55465r && this.f55466s == bVar.f55466s && this.f55467t == bVar.f55467t && this.f55468u == bVar.f55468u && this.f55469v == bVar.f55469v && this.f55470w == bVar.f55470w && this.f55471x == bVar.f55471x && this.f55472y == bVar.f55472y && this.f55473z == bVar.f55473z && this.A == bVar.A && this.B == bVar.B) {
+            if (TextUtils.equals(this.f56190d, bVar.f56190d) && this.f56191e == bVar.f56191e && this.f56192i == bVar.f56192i && ((bitmap = this.f56193o) != null ? !((bitmap2 = bVar.f56193o) == null || !bitmap.sameAs(bitmap2)) : bVar.f56193o == null) && this.f56194p == bVar.f56194p && this.f56195q == bVar.f56195q && this.f56196r == bVar.f56196r && this.f56197s == bVar.f56197s && this.f56198t == bVar.f56198t && this.f56199u == bVar.f56199u && this.f56200v == bVar.f56200v && this.f56201w == bVar.f56201w && this.f56202x == bVar.f56202x && this.f56203y == bVar.f56203y && this.f56204z == bVar.f56204z && this.A == bVar.A && this.B == bVar.B) {
                 return true;
             }
         }
@@ -364,7 +364,7 @@ public final class b implements com.google.android.exoplayer2.g {
     }
 
     public int hashCode() {
-        return li.j.b(this.f55459d, this.f55460e, this.f55461i, this.f55462o, Float.valueOf(this.f55463p), Integer.valueOf(this.f55464q), Integer.valueOf(this.f55465r), Float.valueOf(this.f55466s), Integer.valueOf(this.f55467t), Float.valueOf(this.f55468u), Float.valueOf(this.f55469v), Boolean.valueOf(this.f55470w), Integer.valueOf(this.f55471x), Integer.valueOf(this.f55472y), Float.valueOf(this.f55473z), Integer.valueOf(this.A), Float.valueOf(this.B));
+        return mi.j.b(this.f56190d, this.f56191e, this.f56192i, this.f56193o, Float.valueOf(this.f56194p), Integer.valueOf(this.f56195q), Integer.valueOf(this.f56196r), Float.valueOf(this.f56197s), Integer.valueOf(this.f56198t), Float.valueOf(this.f56199u), Float.valueOf(this.f56200v), Boolean.valueOf(this.f56201w), Integer.valueOf(this.f56202x), Integer.valueOf(this.f56203y), Float.valueOf(this.f56204z), Integer.valueOf(this.A), Float.valueOf(this.B));
     }
 
     private b(CharSequence charSequence, Layout.Alignment alignment, Layout.Alignment alignment2, Bitmap bitmap, float f10, int i10, int i11, float f11, int i12, int i13, float f12, float f13, float f14, boolean z10, int i14, int i15, float f15) {
@@ -374,26 +374,26 @@ public final class b implements com.google.android.exoplayer2.g {
             ne.a.a(bitmap == null);
         }
         if (charSequence instanceof Spanned) {
-            this.f55459d = SpannedString.valueOf(charSequence);
+            this.f56190d = SpannedString.valueOf(charSequence);
         } else if (charSequence != null) {
-            this.f55459d = charSequence.toString();
+            this.f56190d = charSequence.toString();
         } else {
-            this.f55459d = null;
+            this.f56190d = null;
         }
-        this.f55460e = alignment;
-        this.f55461i = alignment2;
-        this.f55462o = bitmap;
-        this.f55463p = f10;
-        this.f55464q = i10;
-        this.f55465r = i11;
-        this.f55466s = f11;
-        this.f55467t = i12;
-        this.f55468u = f13;
-        this.f55469v = f14;
-        this.f55470w = z10;
-        this.f55471x = i14;
-        this.f55472y = i13;
-        this.f55473z = f12;
+        this.f56191e = alignment;
+        this.f56192i = alignment2;
+        this.f56193o = bitmap;
+        this.f56194p = f10;
+        this.f56195q = i10;
+        this.f56196r = i11;
+        this.f56197s = f11;
+        this.f56198t = i12;
+        this.f56199u = f13;
+        this.f56200v = f14;
+        this.f56201w = z10;
+        this.f56202x = i14;
+        this.f56203y = i13;
+        this.f56204z = f12;
         this.A = i15;
         this.B = f15;
     }

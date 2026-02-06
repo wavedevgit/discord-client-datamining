@@ -1,7 +1,7 @@
 package com.discord.notifications.api;
 
 import com.discord.primitives.ChannelId;
-import et.a;
+import gt.a;
 import java.util.ArrayList;
 import java.util.List;
 import kotlin.Metadata;
@@ -30,7 +30,7 @@ public final class ChannelListSerializer implements KSerializer {
         return str;
     }
 
-    @Override // kotlinx.serialization.KSerializer, dt.o, kotlinx.serialization.DeserializationStrategy
+    @Override // kotlinx.serialization.KSerializer, ft.o, kotlinx.serialization.DeserializationStrategy
     @NotNull
     public SerialDescriptor getDescriptor() {
         return a.h(ChannelId.Companion.serializer()).getDescriptor();
@@ -46,15 +46,15 @@ public final class ChannelListSerializer implements KSerializer {
                 str = StringsKt.B0(StringsKt.D0(str, "\""), "\"");
             }
             Long t10 = StringsKt.t(str);
-            ChannelId m1059boximpl = t10 != null ? ChannelId.m1059boximpl(ChannelId.m1060constructorimpl(t10.longValue())) : null;
-            if (m1059boximpl != null) {
-                arrayList.add(m1059boximpl);
+            ChannelId m1057boximpl = t10 != null ? ChannelId.m1057boximpl(ChannelId.m1058constructorimpl(t10.longValue())) : null;
+            if (m1057boximpl != null) {
+                arrayList.add(m1057boximpl);
             }
         }
         return arrayList;
     }
 
-    @Override // dt.o
+    @Override // ft.o
     public void serialize(@NotNull Encoder encoder, @NotNull List<ChannelId> value) {
         Intrinsics.checkNotNullParameter(encoder, "encoder");
         Intrinsics.checkNotNullParameter(value, "value");

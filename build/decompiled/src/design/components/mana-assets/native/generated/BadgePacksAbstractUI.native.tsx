@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/mana-assets/native/generated/BadgePacksAbstractUI.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun52407: for (var _fun52407_ip = 0;;) switch (_fun52407_ip) {
+        _fun52420: for (var _fun52420_ip = 0;;) switch (_fun52420_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.accessible;
@@ -37,16 +37,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var0.width;
                 var3 = undefined;
                 if (!(var9 === var3)) {
-                    _fun52407_ip = 35;
-                    continue _fun52407
+                    _fun52420_ip = 35;
+                    continue _fun52420
                 }
             case 29:
                 var9 = 288;
             case 35:
                 var7 = var0.height;
                 if (!(var7 === var3)) {
-                    _fun52407_ip = 47;
-                    continue _fun52407
+                    _fun52420_ip = 47;
+                    continue _fun52420
                 }
             case 44:
                 var7 = 192;
@@ -81,4 +81,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.BadgePacksAbstractUI = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4704, 6002, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4705, 6006, 2]);

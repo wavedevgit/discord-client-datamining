@@ -18,10 +18,10 @@ import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlinx.coroutines.CoroutineDispatcher;
 import kotlinx.coroutines.CoroutineScope;
-import ms.g;
-import ms.m0;
+import os.g;
+import os.m0;
 import sa.d;
-import ur.b;
+import wr.b;
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {2, 1, 0}, xi = 48)
 @e(c = "com.discord.image.fresco.tiled.TiledDraweeController$load$1", f = "TiledDraweeController.kt", l = {84}, m = "invokeSuspend")
@@ -106,7 +106,7 @@ public final class TiledDraweeController$load$1 extends k implements Function2<C
         CloseableReference closeableReference = (CloseableReference) obj;
         this.this$0.myImageReference = closeableReference;
         if (closeableReference != null) {
-            eVar = (sa.e) closeableReference.E0();
+            eVar = (sa.e) closeableReference.J();
         } else {
             eVar = null;
         }
@@ -116,7 +116,7 @@ public final class TiledDraweeController$load$1 extends k implements Function2<C
             dVar = null;
         }
         if (dVar != null) {
-            bitmap = dVar.N1();
+            bitmap = dVar.M1();
         } else {
             bitmap = null;
         }
@@ -139,11 +139,11 @@ public final class TiledDraweeController$load$1 extends k implements Function2<C
             genericDraweeHierarchy.e(bitmapDrawable, 1.0f, !z10);
         }
         dataSource.close();
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((TiledDraweeController$load$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+        return ((TiledDraweeController$load$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
     }
 }

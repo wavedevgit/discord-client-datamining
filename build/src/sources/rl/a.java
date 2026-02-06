@@ -1,127 +1,13 @@
 package rl;
 
-import android.content.Context;
-import android.media.MediaExtractor;
-import android.media.MediaFormat;
-import android.media.MediaMetadataRetriever;
-import android.net.Uri;
-import androidx.annotation.NonNull;
-import com.linkedin.android.litr.io.MediaRange;
-import java.io.IOException;
-import java.nio.ByteBuffer;
-import java.util.Map;
-import kotlin.jvm.internal.LongCompanionObject;
-import ml.b;
+import pl.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class a implements e {
-    private final long duration;
-    private final MediaExtractor mediaExtractor;
-    private final MediaRange mediaRange;
-    private int orientationHint;
-    private long size;
-
-    public a(Context context, Uri uri) {
-        this(context, uri, new MediaRange(0L, LongCompanionObject.MAX_VALUE));
+public class a extends b {
+    public a() {
+        this(null);
     }
 
-    private void a(MediaMetadataRetriever mediaMetadataRetriever) {
-        try {
-            mediaMetadataRetriever.release();
-        } catch (IOException unused) {
-        }
-    }
-
-    @Override // rl.e
-    public void advance() {
-        this.mediaExtractor.advance();
-    }
-
-    @Override // rl.e
-    public long getDuration() {
-        return this.duration;
-    }
-
-    @Override // rl.e
-    public int getOrientationHint() {
-        return this.orientationHint;
-    }
-
-    @Override // rl.e
-    public int getSampleFlags() {
-        return this.mediaExtractor.getSampleFlags();
-    }
-
-    @Override // rl.e
-    public long getSampleTime() {
-        return this.mediaExtractor.getSampleTime();
-    }
-
-    @Override // rl.e
-    public int getSampleTrackIndex() {
-        return this.mediaExtractor.getSampleTrackIndex();
-    }
-
-    @Override // rl.e
-    @NonNull
-    public MediaRange getSelection() {
-        return this.mediaRange;
-    }
-
-    @Override // rl.e
-    public long getSize() {
-        return this.size;
-    }
-
-    @Override // rl.e
-    public int getTrackCount() {
-        return this.mediaExtractor.getTrackCount();
-    }
-
-    @Override // rl.e
-    @NonNull
-    public MediaFormat getTrackFormat(int i10) {
-        return this.mediaExtractor.getTrackFormat(i10);
-    }
-
-    @Override // rl.e
-    public int readSampleData(@NonNull ByteBuffer byteBuffer, int i10) {
-        return this.mediaExtractor.readSampleData(byteBuffer, i10);
-    }
-
-    @Override // rl.e
-    public void release() {
-        this.mediaExtractor.release();
-    }
-
-    @Override // rl.e
-    public void seekTo(long j10, int i10) {
-        this.mediaExtractor.seekTo(j10, i10);
-    }
-
-    @Override // rl.e
-    public void selectTrack(int i10) {
-        this.mediaExtractor.selectTrack(i10);
-    }
-
-    public a(Context context, Uri uri, MediaRange mediaRange) {
-        this.mediaRange = mediaRange;
-        MediaExtractor mediaExtractor = new MediaExtractor();
-        this.mediaExtractor = mediaExtractor;
-        MediaMetadataRetriever mediaMetadataRetriever = new MediaMetadataRetriever();
-        try {
-            mediaExtractor.setDataSource(context, uri, (Map<String, String>) null);
-            mediaMetadataRetriever.setDataSource(context, uri);
-            String extractMetadata = mediaMetadataRetriever.extractMetadata(24);
-            if (extractMetadata != null) {
-                this.orientationHint = Integer.parseInt(extractMetadata);
-            }
-            String extractMetadata2 = mediaMetadataRetriever.extractMetadata(9);
-            this.duration = extractMetadata2 != null ? Long.parseLong(extractMetadata2) : -1L;
-            this.size = ul.g.g(context, uri);
-            a(mediaMetadataRetriever);
-        } catch (IOException e10) {
-            a(mediaMetadataRetriever);
-            throw new ml.b(b.a.DATA_SOURCE, uri, e10);
-        }
+    public a(c cVar) {
+        super("uniform mat4 uMVPMatrix;\nuniform mat4 uSTMatrix;\nattribute vec4 aPosition;\nattribute vec4 aTextureCoord;\nvarying vec2 vTextureCoord;\nvoid main()\n{\ngl_Position = uMVPMatrix * aPosition;\nvTextureCoord = (uSTMatrix * aTextureCoord).xy;\n}", "#extension GL_OES_EGL_image_external : require\nprecision mediump float;\nvarying vec2 vTextureCoord;\nuniform samplerExternalOES sTexture;\nvoid main()\n{\ngl_FragColor = texture2D(sTexture, vTextureCoord);\n}", null, cVar);
     }
 }

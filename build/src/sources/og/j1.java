@@ -1,85 +1,43 @@
 package og;
-/* JADX INFO: Access modifiers changed from: package-private */
+
+import yi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class j1 extends r0 {
+final class j1 implements yi.d {
 
-    /* renamed from: q  reason: collision with root package name */
-    static final r0 f43007q = new j1(null, new Object[0], 0);
+    /* renamed from: a  reason: collision with root package name */
+    static final j1 f42131a = new j1();
 
-    /* renamed from: o  reason: collision with root package name */
-    final transient Object[] f43008o;
+    /* renamed from: b  reason: collision with root package name */
+    private static final yi.c f42132b;
 
-    /* renamed from: p  reason: collision with root package name */
-    private final transient int f43009p;
+    /* renamed from: c  reason: collision with root package name */
+    private static final yi.c f42133c;
 
-    private j1(Object obj, Object[] objArr, int i10) {
-        this.f43008o = objArr;
-        this.f43009p = i10;
+    /* renamed from: d  reason: collision with root package name */
+    private static final yi.c f42134d;
+
+    static {
+        c.b a10 = yi.c.a("logEventKey");
+        f fVar = new f();
+        fVar.a(1);
+        f42132b = a10.b(fVar.b()).a();
+        c.b a11 = yi.c.a("eventCount");
+        f fVar2 = new f();
+        fVar2.a(2);
+        f42133c = a11.b(fVar2.b()).a();
+        c.b a12 = yi.c.a("inferenceDurationStats");
+        f fVar3 = new f();
+        fVar3.a(3);
+        f42134d = a12.b(fVar3.b()).a();
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static j1 g(int i10, Object[] objArr, q0 q0Var) {
-        Object obj = objArr[0];
-        obj.getClass();
-        Object obj2 = objArr[1];
-        obj2.getClass();
-        v.b(obj, obj2);
-        return new j1(null, objArr, 1);
+    private j1() {
     }
 
-    @Override // og.r0
-    final k0 a() {
-        return new i1(this.f43008o, 1, this.f43009p);
-    }
-
-    @Override // og.r0
-    final s0 d() {
-        return new g1(this, this.f43008o, 0, this.f43009p);
-    }
-
-    @Override // og.r0
-    final s0 e() {
-        return new h1(this, new i1(this.f43008o, 0, this.f43009p));
-    }
-
-    /* JADX WARN: Removed duplicated region for block: B:11:0x001f A[RETURN] */
-    /* JADX WARN: Removed duplicated region for block: B:12:0x0020 A[RETURN] */
-    @Override // og.r0, java.util.Map
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    public final java.lang.Object get(java.lang.Object r5) {
-        /*
-            r4 = this;
-            java.lang.Object[] r0 = r4.f43008o
-            int r1 = r4.f43009p
-            r2 = 0
-            if (r5 != 0) goto L9
-        L7:
-            r5 = r2
-            goto L1d
-        L9:
-            r3 = 1
-            if (r1 != r3) goto L7
-            r1 = 0
-            r1 = r0[r1]
-            r1.getClass()
-            boolean r5 = r1.equals(r5)
-            if (r5 == 0) goto L7
-            r5 = r0[r3]
-            r5.getClass()
-        L1d:
-            if (r5 != 0) goto L20
-            return r2
-        L20:
-            return r5
-        */
-        throw new UnsupportedOperationException("Method not decompiled: og.j1.get(java.lang.Object):java.lang.Object");
-    }
-
-    @Override // java.util.Map
-    public final int size() {
-        return this.f43009p;
+    @Override // yi.d
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        android.support.v4.media.session.b.a(obj);
+        yi.e eVar = (yi.e) obj2;
+        throw null;
     }
 }

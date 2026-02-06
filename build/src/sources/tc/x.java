@@ -6,16 +6,16 @@ import tc.z;
 public final class x implements z {
 
     /* renamed from: a  reason: collision with root package name */
-    private final long[] f50599a;
+    private final long[] f50575a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final long[] f50600b;
+    private final long[] f50576b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final long f50601c;
+    private final long f50577c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f50602d;
+    private final boolean f50578d;
 
     public x(long[] jArr, long[] jArr2, long j10) {
         boolean z10;
@@ -32,43 +32,43 @@ public final class x implements z {
         } else {
             z11 = false;
         }
-        this.f50602d = z11;
+        this.f50578d = z11;
         if (z11 && jArr2[0] > 0) {
             int i10 = length + 1;
             long[] jArr3 = new long[i10];
-            this.f50599a = jArr3;
+            this.f50575a = jArr3;
             long[] jArr4 = new long[i10];
-            this.f50600b = jArr4;
+            this.f50576b = jArr4;
             System.arraycopy(jArr, 0, jArr3, 1, length);
             System.arraycopy(jArr2, 0, jArr4, 1, length);
         } else {
-            this.f50599a = jArr;
-            this.f50600b = jArr2;
+            this.f50575a = jArr;
+            this.f50576b = jArr2;
         }
-        this.f50601c = j10;
+        this.f50577c = j10;
     }
 
     @Override // tc.z
     public z.a e(long j10) {
-        if (!this.f50602d) {
-            return new z.a(a0.f50499c);
+        if (!this.f50578d) {
+            return new z.a(a0.f50475c);
         }
-        int i10 = w0.i(this.f50600b, j10, true, true);
-        a0 a0Var = new a0(this.f50600b[i10], this.f50599a[i10]);
-        if (a0Var.f50500a != j10 && i10 != this.f50600b.length - 1) {
+        int i10 = w0.i(this.f50576b, j10, true, true);
+        a0 a0Var = new a0(this.f50576b[i10], this.f50575a[i10]);
+        if (a0Var.f50476a != j10 && i10 != this.f50576b.length - 1) {
             int i11 = i10 + 1;
-            return new z.a(a0Var, new a0(this.f50600b[i11], this.f50599a[i11]));
+            return new z.a(a0Var, new a0(this.f50576b[i11], this.f50575a[i11]));
         }
         return new z.a(a0Var);
     }
 
     @Override // tc.z
     public boolean h() {
-        return this.f50602d;
+        return this.f50578d;
     }
 
     @Override // tc.z
     public long i() {
-        return this.f50601c;
+        return this.f50577c;
     }
 }

@@ -1,63 +1,101 @@
 package j$.time;
-
-import j$.time.format.DateTimeFormatterBuilder;
-import j$.time.temporal.TemporalAccessor;
-import j$.time.temporal.TemporalQuery;
-import j$.time.temporal.o;
-import j$.time.temporal.p;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes2.dex */
-public final /* synthetic */ class c implements TemporalQuery {
+public abstract /* synthetic */ class c {
 
     /* renamed from: a  reason: collision with root package name */
-    public final /* synthetic */ int f30432a;
+    public static final /* synthetic */ int[] f29406a;
 
-    public /* synthetic */ c(int i10) {
-        this.f30432a = i10;
-    }
+    /* renamed from: b  reason: collision with root package name */
+    public static final /* synthetic */ int[] f29407b;
 
-    @Override // j$.time.temporal.TemporalQuery
-    public final Object queryFrom(TemporalAccessor temporalAccessor) {
-        int i10 = this.f30432a;
-        c cVar = o.f30544a;
-        switch (i10) {
-            case 0:
-                return LocalDate.t(temporalAccessor);
-            case 1:
-                return LocalTime.t(temporalAccessor);
-            case 2:
-                c cVar2 = DateTimeFormatterBuilder.f30454f;
-                k kVar = (k) temporalAccessor.a(cVar);
-                if (kVar == null || (kVar instanceof ZoneOffset)) {
-                    return null;
-                }
-                return kVar;
-            case 3:
-                return (k) temporalAccessor.a(cVar);
-            case 4:
-                return (j$.time.chrono.j) temporalAccessor.a(o.f30545b);
-            case 5:
-                return (p) temporalAccessor.a(o.f30546c);
-            case 6:
-                j$.time.temporal.a aVar = j$.time.temporal.a.OFFSET_SECONDS;
-                if (temporalAccessor.j(aVar)) {
-                    return ZoneOffset.ofTotalSeconds(temporalAccessor.g(aVar));
-                }
-                return null;
-            case 7:
-                k kVar2 = (k) temporalAccessor.a(cVar);
-                return kVar2 != null ? kVar2 : (k) temporalAccessor.a(o.f30547d);
-            case 8:
-                j$.time.temporal.a aVar2 = j$.time.temporal.a.EPOCH_DAY;
-                if (temporalAccessor.j(aVar2)) {
-                    return LocalDate.ofEpochDay(temporalAccessor.m(aVar2));
-                }
-                return null;
-            default:
-                j$.time.temporal.a aVar3 = j$.time.temporal.a.NANO_OF_DAY;
-                if (temporalAccessor.j(aVar3)) {
-                    return LocalTime.x(temporalAccessor.m(aVar3));
-                }
-                return null;
+    static {
+        int[] iArr = new int[j$.time.temporal.b.values().length];
+        f29407b = iArr;
+        try {
+            iArr[j$.time.temporal.b.DAYS.ordinal()] = 1;
+        } catch (NoSuchFieldError unused) {
+        }
+        try {
+            f29407b[j$.time.temporal.b.WEEKS.ordinal()] = 2;
+        } catch (NoSuchFieldError unused2) {
+        }
+        try {
+            f29407b[j$.time.temporal.b.MONTHS.ordinal()] = 3;
+        } catch (NoSuchFieldError unused3) {
+        }
+        try {
+            f29407b[j$.time.temporal.b.YEARS.ordinal()] = 4;
+        } catch (NoSuchFieldError unused4) {
+        }
+        try {
+            f29407b[j$.time.temporal.b.DECADES.ordinal()] = 5;
+        } catch (NoSuchFieldError unused5) {
+        }
+        try {
+            f29407b[j$.time.temporal.b.CENTURIES.ordinal()] = 6;
+        } catch (NoSuchFieldError unused6) {
+        }
+        try {
+            f29407b[j$.time.temporal.b.MILLENNIA.ordinal()] = 7;
+        } catch (NoSuchFieldError unused7) {
+        }
+        try {
+            f29407b[j$.time.temporal.b.ERAS.ordinal()] = 8;
+        } catch (NoSuchFieldError unused8) {
+        }
+        int[] iArr2 = new int[j$.time.temporal.a.values().length];
+        f29406a = iArr2;
+        try {
+            iArr2[j$.time.temporal.a.DAY_OF_MONTH.ordinal()] = 1;
+        } catch (NoSuchFieldError unused9) {
+        }
+        try {
+            f29406a[j$.time.temporal.a.DAY_OF_YEAR.ordinal()] = 2;
+        } catch (NoSuchFieldError unused10) {
+        }
+        try {
+            f29406a[j$.time.temporal.a.ALIGNED_WEEK_OF_MONTH.ordinal()] = 3;
+        } catch (NoSuchFieldError unused11) {
+        }
+        try {
+            f29406a[j$.time.temporal.a.YEAR_OF_ERA.ordinal()] = 4;
+        } catch (NoSuchFieldError unused12) {
+        }
+        try {
+            f29406a[j$.time.temporal.a.DAY_OF_WEEK.ordinal()] = 5;
+        } catch (NoSuchFieldError unused13) {
+        }
+        try {
+            f29406a[j$.time.temporal.a.ALIGNED_DAY_OF_WEEK_IN_MONTH.ordinal()] = 6;
+        } catch (NoSuchFieldError unused14) {
+        }
+        try {
+            f29406a[j$.time.temporal.a.ALIGNED_DAY_OF_WEEK_IN_YEAR.ordinal()] = 7;
+        } catch (NoSuchFieldError unused15) {
+        }
+        try {
+            f29406a[j$.time.temporal.a.EPOCH_DAY.ordinal()] = 8;
+        } catch (NoSuchFieldError unused16) {
+        }
+        try {
+            f29406a[j$.time.temporal.a.ALIGNED_WEEK_OF_YEAR.ordinal()] = 9;
+        } catch (NoSuchFieldError unused17) {
+        }
+        try {
+            f29406a[j$.time.temporal.a.MONTH_OF_YEAR.ordinal()] = 10;
+        } catch (NoSuchFieldError unused18) {
+        }
+        try {
+            f29406a[j$.time.temporal.a.PROLEPTIC_MONTH.ordinal()] = 11;
+        } catch (NoSuchFieldError unused19) {
+        }
+        try {
+            f29406a[j$.time.temporal.a.YEAR.ordinal()] = 12;
+        } catch (NoSuchFieldError unused20) {
+        }
+        try {
+            f29406a[j$.time.temporal.a.ERA.ordinal()] = 13;
+        } catch (NoSuchFieldError unused21) {
         }
     }
 }

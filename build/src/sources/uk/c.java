@@ -1,24 +1,46 @@
 package uk;
-/* JADX INFO: Access modifiers changed from: package-private */
+
+import hk.p;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class c extends h {
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public c(jk.a aVar) {
-        super(aVar);
+public final class c {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final int f51576a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private final int[] f51577b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private final p[] f51578c;
+
+    public c(int i10, int[] iArr, int i11, int i12, int i13) {
+        this.f51576a = i10;
+        this.f51577b = iArr;
+        float f10 = i11;
+        float f11 = i13;
+        this.f51578c = new p[]{new p(f10, f11), new p(i12, f11)};
     }
 
-    @Override // uk.j
-    public String d() {
-        if (c().l() >= 48) {
-            StringBuilder sb2 = new StringBuilder();
-            f(sb2, 8);
-            int f10 = b().f(48, 2);
-            sb2.append("(392");
-            sb2.append(f10);
-            sb2.append(')');
-            sb2.append(b().c(50, null).b());
-            return sb2.toString();
+    public p[] a() {
+        return this.f51578c;
+    }
+
+    public int[] b() {
+        return this.f51577b;
+    }
+
+    public int c() {
+        return this.f51576a;
+    }
+
+    public boolean equals(Object obj) {
+        if (!(obj instanceof c) || this.f51576a != ((c) obj).f51576a) {
+            return false;
         }
-        throw fk.k.a();
+        return true;
+    }
+
+    public int hashCode() {
+        return this.f51576a;
     }
 }

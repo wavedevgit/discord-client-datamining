@@ -46,21 +46,21 @@ public final class CapturePageConfig_OverlayConfigJsonAdapter extends h {
     @NotNull
     public CapturePageConfig.OverlayConfig fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         RemoteImage remoteImage = null;
         CapturePageConfig.OverlayLocalIcon overlayLocalIcon = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 remoteImage = (RemoteImage) this.nullableRemoteImageAdapter.fromJson(reader);
-            } else if (W == 1) {
+            } else if (J == 1) {
                 overlayLocalIcon = (CapturePageConfig.OverlayLocalIcon) this.nullableOverlayLocalIconAdapter.fromJson(reader);
             }
         }
-        reader.z();
+        reader.D();
         return new CapturePageConfig.OverlayConfig(remoteImage, overlayLocalIcon);
     }
 
@@ -69,11 +69,11 @@ public final class CapturePageConfig_OverlayConfigJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (overlayConfig != null) {
             writer.k();
-            writer.W("overlay");
+            writer.J("overlay");
             this.nullableRemoteImageAdapter.toJson(writer, overlayConfig.getOverlay());
-            writer.W("overlayFallback");
+            writer.J("overlayFallback");
             this.nullableOverlayLocalIconAdapter.toJson(writer, overlayConfig.getOverlayFallback());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

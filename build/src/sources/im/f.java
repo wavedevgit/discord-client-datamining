@@ -1,154 +1,119 @@
 package im;
 
-import com.facebook.react.bridge.Arguments;
-import com.facebook.react.bridge.WritableMap;
-import com.facebook.react.uimanager.events.Event;
-import com.facebook.react.views.progressbar.ReactProgressBarViewManager;
-import kotlin.enums.EnumEntries;
-import kotlin.jvm.internal.DefaultConstructorMarker;
+import java.util.Arrays;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class f extends Event {
-
-    /* renamed from: f  reason: collision with root package name */
-    public static final a f27456f = new a(null);
-
-    /* renamed from: g  reason: collision with root package name */
-    private static final a.EnumC0384a f27457g = a.EnumC0384a.f27466e;
-
-    /* renamed from: h  reason: collision with root package name */
-    private static final a.EnumC0384a f27458h = a.EnumC0384a.f27467i;
-
-    /* renamed from: i  reason: collision with root package name */
-    private static final a.EnumC0384a f27459i = a.EnumC0384a.f27468o;
-
-    /* renamed from: j  reason: collision with root package name */
-    private static final a.EnumC0384a f27460j = a.EnumC0384a.f27469p;
+public final class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final a.EnumC0384a f27461a;
+    private final String f26830a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final double f27462b;
+    private final String[] f26831b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final double f27463c;
+    private final String f26832c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f27464d;
+    private final boolean f26833d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f27465e;
+    private final boolean f26834e;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a {
+    /* renamed from: f  reason: collision with root package name */
+    private final boolean f26835f;
 
-        /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-        /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
-        /* renamed from: im.f$a$a  reason: collision with other inner class name */
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public static final class EnumC0384a {
+    /* renamed from: g  reason: collision with root package name */
+    private final boolean f26836g;
 
-            /* renamed from: e  reason: collision with root package name */
-            public static final EnumC0384a f27466e = new EnumC0384a("Move", 0, "topKeyboardMove");
-
-            /* renamed from: i  reason: collision with root package name */
-            public static final EnumC0384a f27467i = new EnumC0384a("Start", 1, "topKeyboardMoveStart");
-
-            /* renamed from: o  reason: collision with root package name */
-            public static final EnumC0384a f27468o = new EnumC0384a("End", 2, "topKeyboardMoveEnd");
-
-            /* renamed from: p  reason: collision with root package name */
-            public static final EnumC0384a f27469p = new EnumC0384a("Interactive", 3, "topKeyboardMoveInteractive");
-
-            /* renamed from: q  reason: collision with root package name */
-            private static final /* synthetic */ EnumC0384a[] f27470q;
-
-            /* renamed from: r  reason: collision with root package name */
-            private static final /* synthetic */ EnumEntries f27471r;
-
-            /* renamed from: d  reason: collision with root package name */
-            private final String f27472d;
-
-            static {
-                EnumC0384a[] a10 = a();
-                f27470q = a10;
-                f27471r = vr.a.a(a10);
-            }
-
-            private EnumC0384a(String str, int i10, String str2) {
-                this.f27472d = str2;
-            }
-
-            private static final /* synthetic */ EnumC0384a[] a() {
-                return new EnumC0384a[]{f27466e, f27467i, f27468o, f27469p};
-            }
-
-            public static EnumC0384a valueOf(String str) {
-                return (EnumC0384a) Enum.valueOf(EnumC0384a.class, str);
-            }
-
-            public static EnumC0384a[] values() {
-                return (EnumC0384a[]) f27470q.clone();
-            }
-
-            public final String d() {
-                return this.f27472d;
-            }
-        }
-
-        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
-        }
-
-        public final EnumC0384a a() {
-            return f.f27459i;
-        }
-
-        public final EnumC0384a b() {
-            return f.f27460j;
-        }
-
-        public final EnumC0384a c() {
-            return f.f27457g;
-        }
-
-        public final EnumC0384a d() {
-            return f.f27458h;
-        }
-
-        private a() {
-        }
+    public f(String str, String[] mimeTypes, String str2, boolean z10, boolean z11, boolean z12, boolean z13) {
+        Intrinsics.checkNotNullParameter(mimeTypes, "mimeTypes");
+        this.f26830a = str;
+        this.f26831b = mimeTypes;
+        this.f26832c = str2;
+        this.f26833d = z10;
+        this.f26834e = z11;
+        this.f26835f = z12;
+        this.f26836g = z13;
     }
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public f(int i10, int i11, a.EnumC0384a event, double d10, double d11, int i12, int i13) {
-        super(i10, i11);
-        Intrinsics.checkNotNullParameter(event, "event");
-        this.f27461a = event;
-        this.f27462b = d10;
-        this.f27463c = d11;
-        this.f27464d = i12;
-        this.f27465e = i13;
+    public final String a() {
+        if (Intrinsics.areEqual("open", this.f26830a)) {
+            return "android.intent.action.OPEN_DOCUMENT";
+        }
+        return "android.intent.action.GET_CONTENT";
     }
 
-    @Override // com.facebook.react.uimanager.events.Event
-    public short getCoalescingKey() {
-        return (short) 0;
+    public final boolean b() {
+        return this.f26836g;
     }
 
-    @Override // com.facebook.react.uimanager.events.Event
-    protected WritableMap getEventData() {
-        WritableMap createMap = Arguments.createMap();
-        createMap.putDouble(ReactProgressBarViewManager.PROP_PROGRESS, this.f27463c);
-        createMap.putDouble("height", this.f27462b);
-        createMap.putInt("duration", this.f27464d);
-        createMap.putInt("target", this.f27465e);
-        return createMap;
+    public final String c() {
+        return this.f26832c;
     }
 
-    @Override // com.facebook.react.uimanager.events.Event
-    public String getEventName() {
-        return this.f27461a.d();
+    public final String d() {
+        if (Intrinsics.areEqual(a(), "android.intent.action.OPEN_DOCUMENT")) {
+            return "*/*";
+        }
+        return kotlin.collections.i.v0(this.f26831b, "|", null, null, 0, null, null, 62, null);
+    }
+
+    public final boolean e() {
+        return this.f26833d;
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof f)) {
+            return false;
+        }
+        f fVar = (f) obj;
+        if (Intrinsics.areEqual(this.f26830a, fVar.f26830a) && Intrinsics.areEqual(this.f26831b, fVar.f26831b) && Intrinsics.areEqual(this.f26832c, fVar.f26832c) && this.f26833d == fVar.f26833d && this.f26834e == fVar.f26834e && this.f26835f == fVar.f26835f && this.f26836g == fVar.f26836g) {
+            return true;
+        }
+        return false;
+    }
+
+    public final String[] f() {
+        return this.f26831b;
+    }
+
+    public final boolean g() {
+        return this.f26834e;
+    }
+
+    public final boolean h() {
+        return this.f26835f;
+    }
+
+    public int hashCode() {
+        int hashCode;
+        String str = this.f26830a;
+        int i10 = 0;
+        if (str == null) {
+            hashCode = 0;
+        } else {
+            hashCode = str.hashCode();
+        }
+        int hashCode2 = ((hashCode * 31) + Arrays.hashCode(this.f26831b)) * 31;
+        String str2 = this.f26832c;
+        if (str2 != null) {
+            i10 = str2.hashCode();
+        }
+        return ((((((((hashCode2 + i10) * 31) + Boolean.hashCode(this.f26833d)) * 31) + Boolean.hashCode(this.f26834e)) * 31) + Boolean.hashCode(this.f26835f)) * 31) + Boolean.hashCode(this.f26836g);
+    }
+
+    public String toString() {
+        String str = this.f26830a;
+        String arrays = Arrays.toString(this.f26831b);
+        String str2 = this.f26832c;
+        boolean z10 = this.f26833d;
+        boolean z11 = this.f26834e;
+        boolean z12 = this.f26835f;
+        boolean z13 = this.f26836g;
+        return "PickOptions(mode=" + str + ", mimeTypes=" + arrays + ", initialDirectoryUrl=" + str2 + ", localOnly=" + z10 + ", multiple=" + z11 + ", requestLongTermAccess=" + z12 + ", allowVirtualFiles=" + z13 + ")";
     }
 }

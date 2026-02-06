@@ -8,7 +8,7 @@ public final class d implements Parcelable.Creator {
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void c(c cVar, Parcel parcel, int i10) {
         int a10 = hf.c.a(parcel);
-        hf.c.s(parcel, 1, cVar.g(), false);
+        hf.c.s(parcel, 1, cVar.h(), false);
         hf.c.e(parcel, 2, cVar.c(), false);
         hf.c.e(parcel, 3, cVar.b(), false);
         hf.c.s(parcel, 4, cVar.e(), false);

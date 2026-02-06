@@ -1,7 +1,8 @@
 package okhttp3.internal.publicsuffix;
 
-import au.e;
+import bs.c;
 import com.facebook.react.views.text.internal.span.SetSpanOperation;
+import cu.e;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InterruptedIOException;
@@ -11,7 +12,6 @@ import java.nio.charset.StandardCharsets;
 import java.util.List;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.atomic.AtomicBoolean;
-import ju.h;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
@@ -20,37 +20,37 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Ref;
 import kotlin.sequences.k;
 import kotlin.text.StringsKt;
+import lu.h;
 import okio.BufferedSource;
-import ou.m;
-import ou.x;
-import zr.c;
+import qu.m;
+import qu.x;
 @Metadata(d1 = {"\u0000:\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010 \n\u0002\b\u0005\n\u0002\u0010\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0012\n\u0002\b\u0004\u0018\u0000 \r2\u00020\u0001:\u0001\u0012B\u0007¢\u0006\u0004\b\u0002\u0010\u0003J\u001d\u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\u00040\u00062\u0006\u0010\u0005\u001a\u00020\u0004H\u0002¢\u0006\u0004\b\u0007\u0010\bJ#\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u00040\u00062\f\u0010\t\u001a\b\u0012\u0004\u0012\u00020\u00040\u0006H\u0002¢\u0006\u0004\b\n\u0010\u000bJ\u000f\u0010\r\u001a\u00020\fH\u0002¢\u0006\u0004\b\r\u0010\u0003J\u000f\u0010\u000e\u001a\u00020\fH\u0002¢\u0006\u0004\b\u000e\u0010\u0003J\u0017\u0010\u000f\u001a\u0004\u0018\u00010\u00042\u0006\u0010\u0005\u001a\u00020\u0004¢\u0006\u0004\b\u000f\u0010\u0010R\u0014\u0010\u0014\u001a\u00020\u00118\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0012\u0010\u0013R\u0014\u0010\u0017\u001a\u00020\u00158\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\n\u0010\u0016R\u0016\u0010\u001a\u001a\u00020\u00188\u0002@\u0002X\u0082.¢\u0006\u0006\n\u0004\b\u000f\u0010\u0019R\u0016\u0010\u001b\u001a\u00020\u00188\u0002@\u0002X\u0082.¢\u0006\u0006\n\u0004\b\u000e\u0010\u0019¨\u0006\u001c"}, d2 = {"Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;", "", "<init>", "()V", "", "domain", "", "f", "(Ljava/lang/String;)Ljava/util/List;", "domainLabels", "b", "(Ljava/util/List;)Ljava/util/List;", "", "e", "d", "c", "(Ljava/lang/String;)Ljava/lang/String;", "Ljava/util/concurrent/atomic/AtomicBoolean;", "a", "Ljava/util/concurrent/atomic/AtomicBoolean;", "listRead", "Ljava/util/concurrent/CountDownLatch;", "Ljava/util/concurrent/CountDownLatch;", "readCompleteLatch", "", "[B", "publicSuffixListBytes", "publicSuffixExceptionListBytes", "okhttp"}, k = 1, mv = {1, 8, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class PublicSuffixDatabase {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f44041e = new a(null);
+    public static final a f43147e = new a(null);
 
     /* renamed from: f  reason: collision with root package name */
-    private static final byte[] f44042f = {42};
+    private static final byte[] f43148f = {42};
 
     /* renamed from: g  reason: collision with root package name */
-    private static final List f44043g = CollectionsKt.e("*");
+    private static final List f43149g = CollectionsKt.e("*");
 
     /* renamed from: h  reason: collision with root package name */
-    private static final PublicSuffixDatabase f44044h = new PublicSuffixDatabase();
+    private static final PublicSuffixDatabase f43150h = new PublicSuffixDatabase();
 
     /* renamed from: a  reason: collision with root package name */
-    private final AtomicBoolean f44045a = new AtomicBoolean(false);
+    private final AtomicBoolean f43151a = new AtomicBoolean(false);
 
     /* renamed from: b  reason: collision with root package name */
-    private final CountDownLatch f44046b = new CountDownLatch(1);
+    private final CountDownLatch f43152b = new CountDownLatch(1);
 
     /* renamed from: c  reason: collision with root package name */
-    private byte[] f44047c;
+    private byte[] f43153c;
 
     /* renamed from: d  reason: collision with root package name */
-    private byte[] f44048d;
+    private byte[] f43154d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -137,7 +137,7 @@ public final class PublicSuffixDatabase {
         }
 
         public final PublicSuffixDatabase c() {
-            return PublicSuffixDatabase.f44044h;
+            return PublicSuffixDatabase.f43150h;
         }
 
         private a() {
@@ -150,16 +150,16 @@ public final class PublicSuffixDatabase {
         String str3;
         List l10;
         List l11;
-        if (!this.f44045a.get() && this.f44045a.compareAndSet(false, true)) {
+        if (!this.f43151a.get() && this.f43151a.compareAndSet(false, true)) {
             e();
         } else {
             try {
-                this.f44046b.await();
+                this.f43152b.await();
             } catch (InterruptedException unused) {
                 Thread.currentThread().interrupt();
             }
         }
-        if (this.f44047c != null) {
+        if (this.f43153c != null) {
             int size = list.size();
             byte[][] bArr = new byte[size];
             for (int i10 = 0; i10 < size; i10++) {
@@ -173,8 +173,8 @@ public final class PublicSuffixDatabase {
             while (true) {
                 str = null;
                 if (i11 < size) {
-                    a aVar = f44041e;
-                    byte[] bArr2 = this.f44047c;
+                    a aVar = f43147e;
+                    byte[] bArr2 = this.f43153c;
                     if (bArr2 == null) {
                         Intrinsics.throwUninitializedPropertyAccessException("publicSuffixListBytes");
                         bArr2 = null;
@@ -193,9 +193,9 @@ public final class PublicSuffixDatabase {
                 byte[][] bArr3 = (byte[][]) bArr.clone();
                 int length = bArr3.length - 1;
                 for (int i12 = 0; i12 < length; i12++) {
-                    bArr3[i12] = f44042f;
-                    a aVar2 = f44041e;
-                    byte[] bArr4 = this.f44047c;
+                    bArr3[i12] = f43148f;
+                    a aVar2 = f43147e;
+                    byte[] bArr4 = this.f43153c;
                     if (bArr4 == null) {
                         Intrinsics.throwUninitializedPropertyAccessException("publicSuffixListBytes");
                         bArr4 = null;
@@ -215,8 +215,8 @@ public final class PublicSuffixDatabase {
                     if (i14 >= i13) {
                         break;
                     }
-                    a aVar3 = f44041e;
-                    byte[] bArr5 = this.f44048d;
+                    a aVar3 = f43147e;
+                    byte[] bArr5 = this.f43154d;
                     if (bArr5 == null) {
                         Intrinsics.throwUninitializedPropertyAccessException("publicSuffixExceptionListBytes");
                         bArr5 = null;
@@ -232,7 +232,7 @@ public final class PublicSuffixDatabase {
             if (str != null) {
                 return StringsKt.L0('!' + str, new char[]{'.'}, false, 0, 6, null);
             } else if (str2 == null && str3 == null) {
-                return f44043g;
+                return f43149g;
             } else {
                 if (str2 == null || (l10 = StringsKt.L0(str2, new char[]{'.'}, false, 0, 6, null)) == null) {
                     l10 = CollectionsKt.l();
@@ -258,21 +258,21 @@ public final class PublicSuffixDatabase {
             InputStream resourceAsStream = PublicSuffixDatabase.class.getResourceAsStream("publicsuffixes.gz");
             if (resourceAsStream != null) {
                 BufferedSource d10 = x.d(new m(x.k(resourceAsStream)));
-                objectRef.element = d10.M0(d10.readInt());
-                objectRef2.element = d10.M0(d10.readInt());
-                Unit unit = Unit.f31988a;
+                objectRef.element = d10.N0(d10.readInt());
+                objectRef2.element = d10.N0(d10.readInt());
+                Unit unit = Unit.f32008a;
                 c.a(d10, null);
                 synchronized (this) {
                     T t10 = objectRef.element;
                     Intrinsics.checkNotNull(t10);
-                    this.f44047c = (byte[]) t10;
+                    this.f43153c = (byte[]) t10;
                     T t11 = objectRef2.element;
                     Intrinsics.checkNotNull(t11);
-                    this.f44048d = (byte[]) t11;
+                    this.f43154d = (byte[]) t11;
                 }
             }
         } finally {
-            this.f44046b.countDown();
+            this.f43152b.countDown();
         }
     }
 
@@ -287,7 +287,7 @@ public final class PublicSuffixDatabase {
                     Thread.interrupted();
                     z10 = true;
                 } catch (IOException e10) {
-                    h.f31441a.g().k("Failed to read public suffix list", 5, e10);
+                    h.f36777a.g().k("Failed to read public suffix list", 5, e10);
                     if (!z10) {
                         return;
                     }

@@ -1,50 +1,60 @@
 package pg;
-
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Objects;
-import java.util.Set;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class c extends y0 {
-
-    /* renamed from: d  reason: collision with root package name */
-    final /* synthetic */ e f45138d;
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public c(e eVar) {
-        this.f45138d = eVar;
-    }
-
-    @Override // pg.y0
-    final Map b() {
-        return this.f45138d;
-    }
-
-    @Override // pg.y0, java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public final boolean contains(Object obj) {
-        Set entrySet = this.f45138d.f45178i.entrySet();
-        entrySet.getClass();
-        try {
-            return entrySet.contains(obj);
-        } catch (ClassCastException | NullPointerException unused) {
-            return false;
+public abstract class c {
+    public static int a(int i10, int i11, String str) {
+        String a10;
+        if (i10 >= 0 && i10 < i11) {
+            return i10;
         }
-    }
-
-    @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set
-    public final Iterator iterator() {
-        return new d(this.f45138d);
-    }
-
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public final boolean remove(Object obj) {
-        if (!contains(obj)) {
-            return false;
+        if (i10 >= 0) {
+            if (i11 < 0) {
+                throw new IllegalArgumentException("negative size: " + i11);
+            }
+            a10 = d.a("%s (%s) must be less than size (%s)", "index", Integer.valueOf(i10), Integer.valueOf(i11));
+        } else {
+            a10 = d.a("%s (%s) must not be negative", "index", Integer.valueOf(i10));
         }
-        Map.Entry entry = (Map.Entry) obj;
-        Objects.requireNonNull(entry);
-        e eVar = this.f45138d;
-        m.n(eVar.f45179o, entry.getKey());
-        return true;
+        throw new IndexOutOfBoundsException(a10);
+    }
+
+    public static int b(int i10, int i11, String str) {
+        if (i10 >= 0 && i10 <= i11) {
+            return i10;
+        }
+        throw new IndexOutOfBoundsException(e(i10, i11, "index"));
+    }
+
+    public static void c(int i10, int i11, int i12) {
+        String e10;
+        if (i10 >= 0 && i11 >= i10 && i11 <= i12) {
+            return;
+        }
+        if (i10 >= 0 && i10 <= i12) {
+            if (i11 >= 0 && i11 <= i12) {
+                e10 = d.a("end index (%s) must not be less than start index (%s)", Integer.valueOf(i11), Integer.valueOf(i10));
+            } else {
+                e10 = e(i11, i12, "end index");
+            }
+        } else {
+            e10 = e(i10, i12, "start index");
+        }
+        throw new IndexOutOfBoundsException(e10);
+    }
+
+    public static void d(boolean z10, Object obj) {
+        if (z10) {
+            return;
+        }
+        throw new IllegalStateException((String) obj);
+    }
+
+    private static String e(int i10, int i11, String str) {
+        if (i10 < 0) {
+            return d.a("%s (%s) must not be negative", str, Integer.valueOf(i10));
+        }
+        if (i11 >= 0) {
+            return d.a("%s (%s) must not be greater than size (%s)", str, Integer.valueOf(i10), Integer.valueOf(i11));
+        }
+        throw new IllegalArgumentException("negative size: " + i11);
     }
 }

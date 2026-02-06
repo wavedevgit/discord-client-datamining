@@ -8,15 +8,15 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Random;
 import kotlin.jvm.internal.LongCompanionObject;
-import li.r;
+import mi.r;
 import ne.w0;
 import qd.r;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class b implements d {
 
     /* renamed from: i  reason: collision with root package name */
-    public static final r f12084i = new r() { // from class: mc.l1
-        @Override // li.r
+    public static final r f11983i = new r() { // from class: mc.l1
+        @Override // mi.r
         public final Object get() {
             String n10;
             n10 = com.google.android.exoplayer2.analytics.b.n();
@@ -25,66 +25,66 @@ public final class b implements d {
     };
 
     /* renamed from: j  reason: collision with root package name */
-    private static final Random f12085j = new Random();
+    private static final Random f11984j = new Random();
 
     /* renamed from: a  reason: collision with root package name */
-    private final Timeline.d f12086a;
+    private final Timeline.d f11985a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Timeline.b f12087b;
+    private final Timeline.b f11986b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final HashMap f12088c;
+    private final HashMap f11987c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final r f12089d;
+    private final r f11988d;
 
     /* renamed from: e  reason: collision with root package name */
-    private d.a f12090e;
+    private d.a f11989e;
 
     /* renamed from: f  reason: collision with root package name */
-    private Timeline f12091f;
+    private Timeline f11990f;
 
     /* renamed from: g  reason: collision with root package name */
-    private String f12092g;
+    private String f11991g;
 
     /* renamed from: h  reason: collision with root package name */
-    private long f12093h;
+    private long f11992h;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f12094a;
+        private final String f11993a;
 
         /* renamed from: b  reason: collision with root package name */
-        private int f12095b;
+        private int f11994b;
 
         /* renamed from: c  reason: collision with root package name */
-        private long f12096c;
+        private long f11995c;
 
         /* renamed from: d  reason: collision with root package name */
-        private r.b f12097d;
+        private r.b f11996d;
 
         /* renamed from: e  reason: collision with root package name */
-        private boolean f12098e;
+        private boolean f11997e;
 
         /* renamed from: f  reason: collision with root package name */
-        private boolean f12099f;
+        private boolean f11998f;
 
         public a(String str, int i10, r.b bVar) {
             long j10;
-            this.f12094a = str;
-            this.f12095b = i10;
+            this.f11993a = str;
+            this.f11994b = i10;
             if (bVar == null) {
                 j10 = -1;
             } else {
-                j10 = bVar.f47772d;
+                j10 = bVar.f46820d;
             }
-            this.f12096c = j10;
+            this.f11995c = j10;
             if (bVar != null && bVar.b()) {
-                this.f12097d = bVar;
+                this.f11996d = bVar;
             }
         }
 
@@ -95,11 +95,11 @@ public final class b implements d {
                 }
                 return i10;
             }
-            timeline.r(i10, b.this.f12086a);
-            for (int i11 = b.this.f12086a.f12001z; i11 <= b.this.f12086a.A; i11++) {
+            timeline.r(i10, b.this.f11985a);
+            for (int i11 = b.this.f11985a.f11900z; i11 <= b.this.f11985a.A; i11++) {
                 int f10 = timeline2.f(timeline.q(i11));
                 if (f10 != -1) {
-                    return timeline2.j(f10, b.this.f12087b).f11978i;
+                    return timeline2.j(f10, b.this.f11986b).f11877i;
                 }
             }
             return -1;
@@ -107,18 +107,18 @@ public final class b implements d {
 
         public boolean i(int i10, r.b bVar) {
             if (bVar == null) {
-                if (i10 != this.f12095b) {
+                if (i10 != this.f11994b) {
                     return false;
                 }
                 return true;
             }
-            r.b bVar2 = this.f12097d;
+            r.b bVar2 = this.f11996d;
             if (bVar2 == null) {
-                if (bVar.b() || bVar.f47772d != this.f12096c) {
+                if (bVar.b() || bVar.f46820d != this.f11995c) {
                     return false;
                 }
                 return true;
-            } else if (bVar.f47772d != bVar2.f47772d || bVar.f47770b != bVar2.f47770b || bVar.f47771c != bVar2.f47771c) {
+            } else if (bVar.f46820d != bVar2.f46820d || bVar.f46818b != bVar2.f46818b || bVar.f46819c != bVar2.f46819c) {
                 return false;
             } else {
                 return true;
@@ -126,64 +126,64 @@ public final class b implements d {
         }
 
         public boolean j(AnalyticsListener.EventTime eventTime) {
-            r.b bVar = eventTime.f12028d;
+            r.b bVar = eventTime.f11927d;
             if (bVar == null) {
-                if (this.f12095b != eventTime.f12027c) {
+                if (this.f11994b != eventTime.f11926c) {
                     return true;
                 }
                 return false;
             }
-            long j10 = this.f12096c;
+            long j10 = this.f11995c;
             if (j10 == -1) {
                 return false;
             }
-            if (bVar.f47772d > j10) {
+            if (bVar.f46820d > j10) {
                 return true;
             }
-            if (this.f12097d == null) {
+            if (this.f11996d == null) {
                 return false;
             }
-            int f10 = eventTime.f12026b.f(bVar.f47769a);
-            int f11 = eventTime.f12026b.f(this.f12097d.f47769a);
-            r.b bVar2 = eventTime.f12028d;
-            if (bVar2.f47772d < this.f12097d.f47772d || f10 < f11) {
+            int f10 = eventTime.f11925b.f(bVar.f46817a);
+            int f11 = eventTime.f11925b.f(this.f11996d.f46817a);
+            r.b bVar2 = eventTime.f11927d;
+            if (bVar2.f46820d < this.f11996d.f46820d || f10 < f11) {
                 return false;
             }
             if (f10 > f11) {
                 return true;
             }
             if (bVar2.b()) {
-                r.b bVar3 = eventTime.f12028d;
-                int i10 = bVar3.f47770b;
-                int i11 = bVar3.f47771c;
-                r.b bVar4 = this.f12097d;
-                int i12 = bVar4.f47770b;
-                if (i10 > i12 || (i10 == i12 && i11 > bVar4.f47771c)) {
+                r.b bVar3 = eventTime.f11927d;
+                int i10 = bVar3.f46818b;
+                int i11 = bVar3.f46819c;
+                r.b bVar4 = this.f11996d;
+                int i12 = bVar4.f46818b;
+                if (i10 > i12 || (i10 == i12 && i11 > bVar4.f46819c)) {
                     return true;
                 }
                 return false;
             }
-            int i13 = eventTime.f12028d.f47773e;
-            if (i13 == -1 || i13 > this.f12097d.f47770b) {
+            int i13 = eventTime.f11927d.f46821e;
+            if (i13 == -1 || i13 > this.f11996d.f46818b) {
                 return true;
             }
             return false;
         }
 
         public void k(int i10, r.b bVar) {
-            if (this.f12096c == -1 && i10 == this.f12095b && bVar != null && bVar.f47772d >= b.this.o()) {
-                this.f12096c = bVar.f47772d;
+            if (this.f11995c == -1 && i10 == this.f11994b && bVar != null && bVar.f46820d >= b.this.o()) {
+                this.f11995c = bVar.f46820d;
             }
         }
 
         public boolean m(Timeline timeline, Timeline timeline2) {
-            int l10 = l(timeline, timeline2, this.f12095b);
-            this.f12095b = l10;
+            int l10 = l(timeline, timeline2, this.f11994b);
+            this.f11994b = l10;
             if (l10 == -1) {
                 return false;
             }
-            r.b bVar = this.f12097d;
-            if (bVar != null && timeline2.f(bVar.f47769a) == -1) {
+            r.b bVar = this.f11996d;
+            if (bVar != null && timeline2.f(bVar.f46817a) == -1) {
                 return false;
             }
             return true;
@@ -191,42 +191,42 @@ public final class b implements d {
     }
 
     public b() {
-        this(f12084i);
+        this(f11983i);
     }
 
     private void m(a aVar) {
-        if (aVar.f12096c != -1) {
-            this.f12093h = aVar.f12096c;
+        if (aVar.f11995c != -1) {
+            this.f11992h = aVar.f11995c;
         }
-        this.f12092g = null;
+        this.f11991g = null;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static String n() {
         byte[] bArr = new byte[12];
-        f12085j.nextBytes(bArr);
+        f11984j.nextBytes(bArr);
         return Base64.encodeToString(bArr, 10);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public long o() {
-        a aVar = (a) this.f12088c.get(this.f12092g);
-        if (aVar != null && aVar.f12096c != -1) {
-            return aVar.f12096c;
+        a aVar = (a) this.f11987c.get(this.f11991g);
+        if (aVar != null && aVar.f11995c != -1) {
+            return aVar.f11995c;
         }
-        return this.f12093h + 1;
+        return this.f11992h + 1;
     }
 
     private a p(int i10, r.b bVar) {
         int i11;
         a aVar = null;
         long j10 = LongCompanionObject.MAX_VALUE;
-        for (a aVar2 : this.f12088c.values()) {
+        for (a aVar2 : this.f11987c.values()) {
             aVar2.k(i10, bVar);
             if (aVar2.i(i10, bVar)) {
-                long j11 = aVar2.f12096c;
+                long j11 = aVar2.f11995c;
                 if (j11 != -1 && j11 >= j10) {
-                    if (i11 == 0 && ((a) w0.j(aVar)).f12097d != null && aVar2.f12097d != null) {
+                    if (i11 == 0 && ((a) w0.j(aVar)).f11996d != null && aVar2.f11996d != null) {
                         aVar = aVar2;
                     }
                 } else {
@@ -236,60 +236,60 @@ public final class b implements d {
             }
         }
         if (aVar == null) {
-            String str = (String) this.f12089d.get();
+            String str = (String) this.f11988d.get();
             a aVar3 = new a(str, i10, bVar);
-            this.f12088c.put(str, aVar3);
+            this.f11987c.put(str, aVar3);
             return aVar3;
         }
         return aVar;
     }
 
     private void q(AnalyticsListener.EventTime eventTime) {
-        if (eventTime.f12026b.u()) {
-            String str = this.f12092g;
+        if (eventTime.f11925b.u()) {
+            String str = this.f11991g;
             if (str != null) {
-                m((a) ne.a.e((a) this.f12088c.get(str)));
+                m((a) ne.a.e((a) this.f11987c.get(str)));
                 return;
             }
             return;
         }
-        a aVar = (a) this.f12088c.get(this.f12092g);
-        a p10 = p(eventTime.f12027c, eventTime.f12028d);
-        this.f12092g = p10.f12094a;
+        a aVar = (a) this.f11987c.get(this.f11991g);
+        a p10 = p(eventTime.f11926c, eventTime.f11927d);
+        this.f11991g = p10.f11993a;
         d(eventTime);
-        r.b bVar = eventTime.f12028d;
+        r.b bVar = eventTime.f11927d;
         if (bVar != null && bVar.b()) {
-            if (aVar == null || aVar.f12096c != eventTime.f12028d.f47772d || aVar.f12097d == null || aVar.f12097d.f47770b != eventTime.f12028d.f47770b || aVar.f12097d.f47771c != eventTime.f12028d.f47771c) {
-                r.b bVar2 = eventTime.f12028d;
-                this.f12090e.d(eventTime, p(eventTime.f12027c, new r.b(bVar2.f47769a, bVar2.f47772d)).f12094a, p10.f12094a);
+            if (aVar == null || aVar.f11995c != eventTime.f11927d.f46820d || aVar.f11996d == null || aVar.f11996d.f46818b != eventTime.f11927d.f46818b || aVar.f11996d.f46819c != eventTime.f11927d.f46819c) {
+                r.b bVar2 = eventTime.f11927d;
+                this.f11989e.d(eventTime, p(eventTime.f11926c, new r.b(bVar2.f46817a, bVar2.f46820d)).f11993a, p10.f11993a);
             }
         }
     }
 
     @Override // com.google.android.exoplayer2.analytics.d
     public synchronized String a() {
-        return this.f12092g;
+        return this.f11991g;
     }
 
     @Override // com.google.android.exoplayer2.analytics.d
     public void b(d.a aVar) {
-        this.f12090e = aVar;
+        this.f11989e = aVar;
     }
 
     @Override // com.google.android.exoplayer2.analytics.d
     public synchronized void c(AnalyticsListener.EventTime eventTime) {
         d.a aVar;
         try {
-            String str = this.f12092g;
+            String str = this.f11991g;
             if (str != null) {
-                m((a) ne.a.e((a) this.f12088c.get(str)));
+                m((a) ne.a.e((a) this.f11987c.get(str)));
             }
-            Iterator it = this.f12088c.values().iterator();
+            Iterator it = this.f11987c.values().iterator();
             while (it.hasNext()) {
                 a aVar2 = (a) it.next();
                 it.remove();
-                if (aVar2.f12098e && (aVar = this.f12090e) != null) {
-                    aVar.a(eventTime, aVar2.f12094a, false);
+                if (aVar2.f11997e && (aVar = this.f11989e) != null) {
+                    aVar.a(eventTime, aVar2.f11993a, false);
                 }
             }
         } catch (Throwable th2) {
@@ -299,53 +299,53 @@ public final class b implements d {
 
     @Override // com.google.android.exoplayer2.analytics.d
     public synchronized void d(AnalyticsListener.EventTime eventTime) {
-        ne.a.e(this.f12090e);
-        if (eventTime.f12026b.u()) {
+        ne.a.e(this.f11989e);
+        if (eventTime.f11925b.u()) {
             return;
         }
-        r.b bVar = eventTime.f12028d;
+        r.b bVar = eventTime.f11927d;
         if (bVar != null) {
-            if (bVar.f47772d < o()) {
+            if (bVar.f46820d < o()) {
                 return;
             }
-            a aVar = (a) this.f12088c.get(this.f12092g);
-            if (aVar != null && aVar.f12096c == -1 && aVar.f12095b != eventTime.f12027c) {
+            a aVar = (a) this.f11987c.get(this.f11991g);
+            if (aVar != null && aVar.f11995c == -1 && aVar.f11994b != eventTime.f11926c) {
                 return;
             }
         }
-        a p10 = p(eventTime.f12027c, eventTime.f12028d);
-        if (this.f12092g == null) {
-            this.f12092g = p10.f12094a;
+        a p10 = p(eventTime.f11926c, eventTime.f11927d);
+        if (this.f11991g == null) {
+            this.f11991g = p10.f11993a;
         }
-        r.b bVar2 = eventTime.f12028d;
+        r.b bVar2 = eventTime.f11927d;
         if (bVar2 != null && bVar2.b()) {
-            r.b bVar3 = eventTime.f12028d;
-            r.b bVar4 = new r.b(bVar3.f47769a, bVar3.f47772d, bVar3.f47770b);
-            a p11 = p(eventTime.f12027c, bVar4);
-            if (!p11.f12098e) {
-                p11.f12098e = true;
-                eventTime.f12026b.l(eventTime.f12028d.f47769a, this.f12087b);
-                this.f12090e.c(new AnalyticsListener.EventTime(eventTime.f12025a, eventTime.f12026b, eventTime.f12027c, bVar4, Math.max(0L, w0.p1(this.f12087b.i(eventTime.f12028d.f47770b)) + this.f12087b.p()), eventTime.f12030f, eventTime.f12031g, eventTime.f12032h, eventTime.f12033i, eventTime.f12034j), p11.f12094a);
+            r.b bVar3 = eventTime.f11927d;
+            r.b bVar4 = new r.b(bVar3.f46817a, bVar3.f46820d, bVar3.f46818b);
+            a p11 = p(eventTime.f11926c, bVar4);
+            if (!p11.f11997e) {
+                p11.f11997e = true;
+                eventTime.f11925b.l(eventTime.f11927d.f46817a, this.f11986b);
+                this.f11989e.c(new AnalyticsListener.EventTime(eventTime.f11924a, eventTime.f11925b, eventTime.f11926c, bVar4, Math.max(0L, w0.p1(this.f11986b.i(eventTime.f11927d.f46818b)) + this.f11986b.p()), eventTime.f11929f, eventTime.f11930g, eventTime.f11931h, eventTime.f11932i, eventTime.f11933j), p11.f11993a);
             }
         }
-        if (!p10.f12098e) {
-            p10.f12098e = true;
-            this.f12090e.c(eventTime, p10.f12094a);
+        if (!p10.f11997e) {
+            p10.f11997e = true;
+            this.f11989e.c(eventTime, p10.f11993a);
         }
-        if (p10.f12094a.equals(this.f12092g) && !p10.f12099f) {
-            p10.f12099f = true;
-            this.f12090e.b(eventTime, p10.f12094a);
+        if (p10.f11993a.equals(this.f11991g) && !p10.f11998f) {
+            p10.f11998f = true;
+            this.f11989e.b(eventTime, p10.f11993a);
         }
     }
 
     @Override // com.google.android.exoplayer2.analytics.d
     public synchronized boolean e(AnalyticsListener.EventTime eventTime, String str) {
-        a aVar = (a) this.f12088c.get(str);
+        a aVar = (a) this.f11987c.get(str);
         if (aVar == null) {
             return false;
         }
-        aVar.k(eventTime.f12027c, eventTime.f12028d);
-        return aVar.i(eventTime.f12027c, eventTime.f12028d);
+        aVar.k(eventTime.f11926c, eventTime.f11927d);
+        return aVar.i(eventTime.f11926c, eventTime.f11927d);
     }
 
     @Override // com.google.android.exoplayer2.analytics.d
@@ -353,20 +353,20 @@ public final class b implements d {
         boolean z10;
         boolean z11;
         try {
-            ne.a.e(this.f12090e);
+            ne.a.e(this.f11989e);
             if (i10 == 0) {
                 z10 = true;
             } else {
                 z10 = false;
             }
-            Iterator it = this.f12088c.values().iterator();
+            Iterator it = this.f11987c.values().iterator();
             while (it.hasNext()) {
                 a aVar = (a) it.next();
                 if (aVar.j(eventTime)) {
                     it.remove();
-                    if (aVar.f12098e) {
-                        boolean equals = aVar.f12094a.equals(this.f12092g);
-                        if (z10 && equals && aVar.f12099f) {
+                    if (aVar.f11997e) {
+                        boolean equals = aVar.f11993a.equals(this.f11991g);
+                        if (z10 && equals && aVar.f11998f) {
                             z11 = true;
                         } else {
                             z11 = false;
@@ -374,7 +374,7 @@ public final class b implements d {
                         if (equals) {
                             m(aVar);
                         }
-                        this.f12090e.a(eventTime, aVar.f12094a, z11);
+                        this.f11989e.a(eventTime, aVar.f11993a, z11);
                     }
                 }
             }
@@ -387,20 +387,20 @@ public final class b implements d {
     @Override // com.google.android.exoplayer2.analytics.d
     public synchronized void g(AnalyticsListener.EventTime eventTime) {
         try {
-            ne.a.e(this.f12090e);
-            Timeline timeline = this.f12091f;
-            this.f12091f = eventTime.f12026b;
-            Iterator it = this.f12088c.values().iterator();
+            ne.a.e(this.f11989e);
+            Timeline timeline = this.f11990f;
+            this.f11990f = eventTime.f11925b;
+            Iterator it = this.f11987c.values().iterator();
             while (it.hasNext()) {
                 a aVar = (a) it.next();
-                if (aVar.m(timeline, this.f12091f) && !aVar.j(eventTime)) {
+                if (aVar.m(timeline, this.f11990f) && !aVar.j(eventTime)) {
                 }
                 it.remove();
-                if (aVar.f12098e) {
-                    if (aVar.f12094a.equals(this.f12092g)) {
+                if (aVar.f11997e) {
+                    if (aVar.f11993a.equals(this.f11991g)) {
                         m(aVar);
                     }
-                    this.f12090e.a(eventTime, aVar.f12094a, false);
+                    this.f11989e.a(eventTime, aVar.f11993a, false);
                 }
             }
             q(eventTime);
@@ -411,15 +411,15 @@ public final class b implements d {
 
     @Override // com.google.android.exoplayer2.analytics.d
     public synchronized String h(Timeline timeline, r.b bVar) {
-        return p(timeline.l(bVar.f47769a, this.f12087b).f11978i, bVar).f12094a;
+        return p(timeline.l(bVar.f46817a, this.f11986b).f11877i, bVar).f11993a;
     }
 
-    public b(li.r rVar) {
-        this.f12089d = rVar;
-        this.f12086a = new Timeline.d();
-        this.f12087b = new Timeline.b();
-        this.f12088c = new HashMap();
-        this.f12091f = Timeline.f11965d;
-        this.f12093h = -1L;
+    public b(mi.r rVar) {
+        this.f11988d = rVar;
+        this.f11985a = new Timeline.d();
+        this.f11986b = new Timeline.b();
+        this.f11987c = new HashMap();
+        this.f11990f = Timeline.f11864d;
+        this.f11992h = -1L;
     }
 }

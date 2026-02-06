@@ -9,13 +9,13 @@ public interface o0 {
     public static class a implements o0 {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Random f47756a;
+        private final Random f46804a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int[] f47757b;
+        private final int[] f46805b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final int[] f47758c;
+        private final int[] f46806c;
 
         public a(int i10) {
             this(i10, new Random());
@@ -37,11 +37,11 @@ public interface o0 {
         @Override // qd.o0
         public o0 a(int i10, int i11) {
             int i12 = i11 - i10;
-            int[] iArr = new int[this.f47757b.length - i12];
+            int[] iArr = new int[this.f46805b.length - i12];
             int i13 = 0;
             int i14 = 0;
             while (true) {
-                int[] iArr2 = this.f47757b;
+                int[] iArr2 = this.f46805b;
                 if (i13 < iArr2.length) {
                     int i15 = iArr2[i13];
                     if (i15 >= i10 && i15 < i11) {
@@ -55,24 +55,24 @@ public interface o0 {
                     }
                     i13++;
                 } else {
-                    return new a(iArr, new Random(this.f47756a.nextLong()));
+                    return new a(iArr, new Random(this.f46804a.nextLong()));
                 }
             }
         }
 
         @Override // qd.o0
         public int b(int i10) {
-            int i11 = this.f47758c[i10] - 1;
+            int i11 = this.f46806c[i10] - 1;
             if (i11 < 0) {
                 return -1;
             }
-            return this.f47757b[i11];
+            return this.f46805b[i11];
         }
 
         @Override // qd.o0
         public int c(int i10) {
-            int i11 = this.f47758c[i10] + 1;
-            int[] iArr = this.f47757b;
+            int i11 = this.f46806c[i10] + 1;
+            int[] iArr = this.f46805b;
             if (i11 < iArr.length) {
                 return iArr[i11];
             }
@@ -81,7 +81,7 @@ public interface o0 {
 
         @Override // qd.o0
         public int d() {
-            int[] iArr = this.f47757b;
+            int[] iArr = this.f46805b;
             if (iArr.length > 0) {
                 return iArr[iArr.length - 1];
             }
@@ -90,12 +90,12 @@ public interface o0 {
 
         @Override // qd.o0
         public o0 e() {
-            return new a(0, new Random(this.f47756a.nextLong()));
+            return new a(0, new Random(this.f46804a.nextLong()));
         }
 
         @Override // qd.o0
         public int f() {
-            int[] iArr = this.f47757b;
+            int[] iArr = this.f46805b;
             if (iArr.length > 0) {
                 return iArr[0];
             }
@@ -109,19 +109,19 @@ public interface o0 {
             int i12 = 0;
             int i13 = 0;
             while (i13 < i11) {
-                iArr[i13] = this.f47756a.nextInt(this.f47757b.length + 1);
+                iArr[i13] = this.f46804a.nextInt(this.f46805b.length + 1);
                 int i14 = i13 + 1;
-                int nextInt = this.f47756a.nextInt(i14);
+                int nextInt = this.f46804a.nextInt(i14);
                 iArr2[i13] = iArr2[nextInt];
                 iArr2[nextInt] = i13 + i10;
                 i13 = i14;
             }
             Arrays.sort(iArr);
-            int[] iArr3 = new int[this.f47757b.length + i11];
+            int[] iArr3 = new int[this.f46805b.length + i11];
             int i15 = 0;
             int i16 = 0;
             while (true) {
-                int[] iArr4 = this.f47757b;
+                int[] iArr4 = this.f46805b;
                 if (i12 < iArr4.length + i11) {
                     if (i15 < i11 && i16 == iArr[i15]) {
                         iArr3[i12] = iArr2[i15];
@@ -137,14 +137,14 @@ public interface o0 {
                     }
                     i12++;
                 } else {
-                    return new a(iArr3, new Random(this.f47756a.nextLong()));
+                    return new a(iArr3, new Random(this.f46804a.nextLong()));
                 }
             }
         }
 
         @Override // qd.o0
         public int getLength() {
-            return this.f47757b.length;
+            return this.f46805b.length;
         }
 
         private a(int i10, Random random) {
@@ -152,11 +152,11 @@ public interface o0 {
         }
 
         private a(int[] iArr, Random random) {
-            this.f47757b = iArr;
-            this.f47756a = random;
-            this.f47758c = new int[iArr.length];
+            this.f46805b = iArr;
+            this.f46804a = random;
+            this.f46806c = new int[iArr.length];
             for (int i10 = 0; i10 < iArr.length; i10++) {
-                this.f47758c[iArr[i10]] = i10;
+                this.f46806c[iArr[i10]] = i10;
             }
         }
     }

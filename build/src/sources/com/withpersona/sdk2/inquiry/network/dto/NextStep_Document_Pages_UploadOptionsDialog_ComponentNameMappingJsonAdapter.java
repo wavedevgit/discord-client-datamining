@@ -40,27 +40,27 @@ public final class NextStep_Document_Pages_UploadOptionsDialog_ComponentNameMapp
     @NotNull
     public NextStep.Document.Pages.UploadOptionsDialog.ComponentNameMapping fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         String str = null;
         String str2 = null;
         String str3 = null;
         String str4 = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 str = (String) this.nullableStringAdapter.fromJson(reader);
-            } else if (W == 1) {
+            } else if (J == 1) {
                 str2 = (String) this.nullableStringAdapter.fromJson(reader);
-            } else if (W == 2) {
+            } else if (J == 2) {
                 str3 = (String) this.nullableStringAdapter.fromJson(reader);
-            } else if (W == 3) {
+            } else if (J == 3) {
                 str4 = (String) this.nullableStringAdapter.fromJson(reader);
             }
         }
-        reader.z();
+        reader.D();
         return new NextStep.Document.Pages.UploadOptionsDialog.ComponentNameMapping(str, str2, str3, str4);
     }
 
@@ -69,15 +69,15 @@ public final class NextStep_Document_Pages_UploadOptionsDialog_ComponentNameMapp
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (componentNameMapping != null) {
             writer.k();
-            writer.W("buttonFilePicker");
+            writer.J("buttonFilePicker");
             this.nullableStringAdapter.toJson(writer, componentNameMapping.getButtonFilePicker());
-            writer.W("buttonPhotoLibrary");
+            writer.J("buttonPhotoLibrary");
             this.nullableStringAdapter.toJson(writer, componentNameMapping.getButtonPhotoLibrary());
-            writer.W("buttonCamera");
+            writer.J("buttonCamera");
             this.nullableStringAdapter.toJson(writer, componentNameMapping.getButtonCamera());
-            writer.W("buttonCancel");
+            writer.J("buttonCancel");
             this.nullableStringAdapter.toJson(writer, componentNameMapping.getButtonCancel());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

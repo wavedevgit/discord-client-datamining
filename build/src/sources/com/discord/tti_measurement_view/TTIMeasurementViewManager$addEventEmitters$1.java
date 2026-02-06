@@ -17,7 +17,7 @@ public /* synthetic */ class TTIMeasurementViewManager$addEventEmitters$1 extend
     @Override // kotlin.jvm.functions.Function2
     public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
         invoke((TTIMeasurementView) obj, ((Number) obj2).doubleValue());
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     public final void invoke(TTIMeasurementView p02, double d10) {

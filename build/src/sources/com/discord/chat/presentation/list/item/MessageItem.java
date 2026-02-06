@@ -139,7 +139,7 @@ public final class MessageItem extends ChatListItem {
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public MessageItem(@NotNull Message message, @NotNull MessageContext messageContext, boolean z10, BackgroundHighlight backgroundHighlight, Integer num, boolean z11) {
-        super(MessageId.m1092toStringimpl(message.m239getId3Eiw7ao()), null);
+        super(MessageId.m1090toStringimpl(message.m237getId3Eiw7ao()), null);
         Intrinsics.checkNotNullParameter(message, "message");
         Intrinsics.checkNotNullParameter(messageContext, "messageContext");
         this.message = message;

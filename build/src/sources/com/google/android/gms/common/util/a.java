@@ -9,10 +9,10 @@ import java.security.NoSuchAlgorithmException;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Object f13826a = new Object();
+    private static final Object f13794a = new Object();
 
     /* renamed from: b  reason: collision with root package name */
-    public static final /* synthetic */ int f13827b = 0;
+    public static final /* synthetic */ int f13795b = 0;
 
     public static byte[] a(Context context, String str) {
         MessageDigest b10;

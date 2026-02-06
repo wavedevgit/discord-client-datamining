@@ -11,22 +11,22 @@ import java.util.Objects;
 public class Person {
 
     /* renamed from: a  reason: collision with root package name */
-    CharSequence f3157a;
+    CharSequence f3486a;
 
     /* renamed from: b  reason: collision with root package name */
-    IconCompat f3158b;
+    IconCompat f3487b;
 
     /* renamed from: c  reason: collision with root package name */
-    String f3159c;
+    String f3488c;
 
     /* renamed from: d  reason: collision with root package name */
-    String f3160d;
+    String f3489d;
 
     /* renamed from: e  reason: collision with root package name */
-    boolean f3161e;
+    boolean f3490e;
 
     /* renamed from: f  reason: collision with root package name */
-    boolean f3162f;
+    boolean f3491f;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     static class a {
@@ -37,17 +37,17 @@ public class Person {
         static PersistableBundle b(Person person) {
             String str;
             PersistableBundle persistableBundle = new PersistableBundle();
-            CharSequence charSequence = person.f3157a;
+            CharSequence charSequence = person.f3486a;
             if (charSequence != null) {
                 str = charSequence.toString();
             } else {
                 str = null;
             }
             persistableBundle.putString(StackTraceHelper.NAME_KEY, str);
-            persistableBundle.putString("uri", person.f3159c);
-            persistableBundle.putString("key", person.f3160d);
-            persistableBundle.putBoolean("isBot", person.f3161e);
-            persistableBundle.putBoolean("isImportant", person.f3162f);
+            persistableBundle.putString("uri", person.f3488c);
+            persistableBundle.putString("key", person.f3489d);
+            persistableBundle.putBoolean("isBot", person.f3490e);
+            persistableBundle.putBoolean("isImportant", person.f3491f);
             return persistableBundle;
         }
     }
@@ -81,65 +81,65 @@ public class Person {
     public static class c {
 
         /* renamed from: a  reason: collision with root package name */
-        CharSequence f3163a;
+        CharSequence f3492a;
 
         /* renamed from: b  reason: collision with root package name */
-        IconCompat f3164b;
+        IconCompat f3493b;
 
         /* renamed from: c  reason: collision with root package name */
-        String f3165c;
+        String f3494c;
 
         /* renamed from: d  reason: collision with root package name */
-        String f3166d;
+        String f3495d;
 
         /* renamed from: e  reason: collision with root package name */
-        boolean f3167e;
+        boolean f3496e;
 
         /* renamed from: f  reason: collision with root package name */
-        boolean f3168f;
+        boolean f3497f;
 
         public Person a() {
             return new Person(this);
         }
 
         public c b(boolean z10) {
-            this.f3167e = z10;
+            this.f3496e = z10;
             return this;
         }
 
         public c c(IconCompat iconCompat) {
-            this.f3164b = iconCompat;
+            this.f3493b = iconCompat;
             return this;
         }
 
         public c d(boolean z10) {
-            this.f3168f = z10;
+            this.f3497f = z10;
             return this;
         }
 
         public c e(String str) {
-            this.f3166d = str;
+            this.f3495d = str;
             return this;
         }
 
         public c f(CharSequence charSequence) {
-            this.f3163a = charSequence;
+            this.f3492a = charSequence;
             return this;
         }
 
         public c g(String str) {
-            this.f3165c = str;
+            this.f3494c = str;
             return this;
         }
     }
 
     Person(c cVar) {
-        this.f3157a = cVar.f3163a;
-        this.f3158b = cVar.f3164b;
-        this.f3159c = cVar.f3165c;
-        this.f3160d = cVar.f3166d;
-        this.f3161e = cVar.f3167e;
-        this.f3162f = cVar.f3168f;
+        this.f3486a = cVar.f3492a;
+        this.f3487b = cVar.f3493b;
+        this.f3488c = cVar.f3494c;
+        this.f3489d = cVar.f3495d;
+        this.f3490e = cVar.f3496e;
+        this.f3491f = cVar.f3497f;
     }
 
     public static Person a(android.app.Person person) {
@@ -163,11 +163,11 @@ public class Person {
     }
 
     public IconCompat d() {
-        return this.f3158b;
+        return this.f3487b;
     }
 
     public String e() {
-        return this.f3160d;
+        return this.f3489d;
     }
 
     public boolean equals(Object obj) {
@@ -187,15 +187,15 @@ public class Person {
     }
 
     public CharSequence f() {
-        return this.f3157a;
+        return this.f3486a;
     }
 
     public String g() {
-        return this.f3159c;
+        return this.f3488c;
     }
 
     public boolean h() {
-        return this.f3161e;
+        return this.f3490e;
     }
 
     public int hashCode() {
@@ -207,16 +207,16 @@ public class Person {
     }
 
     public boolean i() {
-        return this.f3162f;
+        return this.f3491f;
     }
 
     public String j() {
-        String str = this.f3159c;
+        String str = this.f3488c;
         if (str != null) {
             return str;
         }
-        if (this.f3157a != null) {
-            return "name:" + ((Object) this.f3157a);
+        if (this.f3486a != null) {
+            return "name:" + ((Object) this.f3486a);
         }
         return "";
     }
@@ -228,18 +228,18 @@ public class Person {
     public Bundle l() {
         Bundle bundle;
         Bundle bundle2 = new Bundle();
-        bundle2.putCharSequence(StackTraceHelper.NAME_KEY, this.f3157a);
-        IconCompat iconCompat = this.f3158b;
+        bundle2.putCharSequence(StackTraceHelper.NAME_KEY, this.f3486a);
+        IconCompat iconCompat = this.f3487b;
         if (iconCompat != null) {
             bundle = iconCompat.u();
         } else {
             bundle = null;
         }
         bundle2.putBundle("icon", bundle);
-        bundle2.putString("uri", this.f3159c);
-        bundle2.putString("key", this.f3160d);
-        bundle2.putBoolean("isBot", this.f3161e);
-        bundle2.putBoolean("isImportant", this.f3162f);
+        bundle2.putString("uri", this.f3488c);
+        bundle2.putString("key", this.f3489d);
+        bundle2.putBoolean("isBot", this.f3490e);
+        bundle2.putBoolean("isImportant", this.f3491f);
         return bundle2;
     }
 

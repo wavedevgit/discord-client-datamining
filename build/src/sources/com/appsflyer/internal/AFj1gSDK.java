@@ -12,14 +12,14 @@ public final class AFj1gSDK implements AFj1jSDK {
         Object obj;
         Object obj2 = "";
         try {
-            Result.a aVar = Result.f31985e;
+            Result.a aVar = Result.f32005e;
             Field declaredField = z5.a.class.getDeclaredField("a");
             declaredField.setAccessible(true);
             Object obj3 = declaredField.get(null);
             Intrinsics.checkNotNull(obj3, "");
             obj = Result.b((String) obj3);
         } catch (Throwable th2) {
-            Result.a aVar2 = Result.f31985e;
+            Result.a aVar2 = Result.f32005e;
             obj = Result.b(kotlin.c.a(th2));
         }
         if (!Result.g(obj)) {

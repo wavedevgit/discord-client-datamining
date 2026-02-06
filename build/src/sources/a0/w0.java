@@ -244,15 +244,15 @@ public abstract class w0 {
         this.f296c = false;
         this.f301h = size;
         this.f302i = i10;
-        ListenableFuture a10 = androidx.concurrent.futures.c.a(new c.InterfaceC0029c() { // from class: a0.t0
-            @Override // androidx.concurrent.futures.c.InterfaceC0029c
+        ListenableFuture a10 = androidx.concurrent.futures.c.a(new c.InterfaceC0027c() { // from class: a0.t0
+            @Override // androidx.concurrent.futures.c.InterfaceC0027c
             public final Object a(c.a aVar) {
                 return w0.a(w0.this, aVar);
             }
         });
         this.f298e = a10;
-        this.f300g = androidx.concurrent.futures.c.a(new c.InterfaceC0029c() { // from class: a0.u0
-            @Override // androidx.concurrent.futures.c.InterfaceC0029c
+        this.f300g = androidx.concurrent.futures.c.a(new c.InterfaceC0027c() { // from class: a0.u0
+            @Override // androidx.concurrent.futures.c.InterfaceC0027c
             public final Object a(c.a aVar) {
                 return w0.b(w0.this, aVar);
             }

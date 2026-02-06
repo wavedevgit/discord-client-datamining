@@ -1,107 +1,82 @@
 package mu;
 
-import java.security.GeneralSecurityException;
-import java.security.cert.X509Certificate;
-import java.util.ArrayDeque;
-import java.util.ArrayList;
-import java.util.Iterator;
+import android.net.ssl.SSLSockets;
+import android.os.Build;
+import java.io.IOException;
 import java.util.List;
-import javax.net.ssl.SSLPeerUnverifiedException;
+import javax.net.ssl.SSLParameters;
+import javax.net.ssl.SSLSocket;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class a extends c {
+public final class a implements k {
 
-    /* renamed from: c  reason: collision with root package name */
-    public static final C0511a f38967c = new C0511a(null);
-
-    /* renamed from: b  reason: collision with root package name */
-    private final e f38968b;
+    /* renamed from: a  reason: collision with root package name */
+    public static final C0524a f38298a = new C0524a(null);
 
     /* renamed from: mu.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class C0511a {
-        public /* synthetic */ C0511a(DefaultConstructorMarker defaultConstructorMarker) {
+    public static final class C0524a {
+        public /* synthetic */ C0524a(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
 
-        private C0511a() {
-        }
-    }
-
-    public a(e trustRootIndex) {
-        Intrinsics.checkNotNullParameter(trustRootIndex, "trustRootIndex");
-        this.f38968b = trustRootIndex;
-    }
-
-    private final boolean b(X509Certificate x509Certificate, X509Certificate x509Certificate2) {
-        if (!Intrinsics.areEqual(x509Certificate.getIssuerDN(), x509Certificate2.getSubjectDN())) {
-            return false;
-        }
-        try {
-            x509Certificate.verify(x509Certificate2.getPublicKey());
-            return true;
-        } catch (GeneralSecurityException unused) {
-            return false;
-        }
-    }
-
-    @Override // mu.c
-    public List a(List chain, String hostname) {
-        Intrinsics.checkNotNullParameter(chain, "chain");
-        Intrinsics.checkNotNullParameter(hostname, "hostname");
-        ArrayDeque arrayDeque = new ArrayDeque(chain);
-        ArrayList arrayList = new ArrayList();
-        Object removeFirst = arrayDeque.removeFirst();
-        Intrinsics.checkNotNullExpressionValue(removeFirst, "queue.removeFirst()");
-        arrayList.add(removeFirst);
-        boolean z10 = false;
-        for (int i10 = 0; i10 < 9; i10++) {
-            Object obj = arrayList.get(arrayList.size() - 1);
-            Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type java.security.cert.X509Certificate");
-            X509Certificate x509Certificate = (X509Certificate) obj;
-            X509Certificate a10 = this.f38968b.a(x509Certificate);
-            if (a10 != null) {
-                if (arrayList.size() > 1 || !Intrinsics.areEqual(x509Certificate, a10)) {
-                    arrayList.add(a10);
-                }
-                if (!b(a10, a10)) {
-                    z10 = true;
-                } else {
-                    return arrayList;
-                }
-            } else {
-                Iterator it = arrayDeque.iterator();
-                Intrinsics.checkNotNullExpressionValue(it, "queue.iterator()");
-                while (it.hasNext()) {
-                    Object next = it.next();
-                    Intrinsics.checkNotNull(next, "null cannot be cast to non-null type java.security.cert.X509Certificate");
-                    X509Certificate x509Certificate2 = (X509Certificate) next;
-                    if (b(x509Certificate, x509Certificate2)) {
-                        it.remove();
-                        arrayList.add(x509Certificate2);
-                    }
-                }
-                if (!z10) {
-                    throw new SSLPeerUnverifiedException("Failed to find a trusted cert that signed " + x509Certificate);
-                }
-                return arrayList;
+        public final k a() {
+            if (b()) {
+                return new a();
             }
+            return null;
         }
-        throw new SSLPeerUnverifiedException("Certificate chain too long: " + arrayList);
+
+        public final boolean b() {
+            if (lu.h.f36777a.h() && Build.VERSION.SDK_INT >= 29) {
+                return true;
+            }
+            return false;
+        }
+
+        private C0524a() {
+        }
     }
 
-    public boolean equals(Object obj) {
-        if (obj == this) {
-            return true;
-        }
-        if ((obj instanceof a) && Intrinsics.areEqual(((a) obj).f38968b, this.f38968b)) {
-            return true;
-        }
-        return false;
+    @Override // mu.k
+    public boolean a() {
+        return f38298a.b();
     }
 
-    public int hashCode() {
-        return this.f38968b.hashCode();
+    @Override // mu.k
+    public boolean b(SSLSocket sslSocket) {
+        Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
+        return SSLSockets.isSupportedSocket(sslSocket);
+    }
+
+    @Override // mu.k
+    public String c(SSLSocket sslSocket) {
+        boolean areEqual;
+        Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
+        String applicationProtocol = sslSocket.getApplicationProtocol();
+        if (applicationProtocol == null) {
+            areEqual = true;
+        } else {
+            areEqual = Intrinsics.areEqual(applicationProtocol, "");
+        }
+        if (areEqual) {
+            return null;
+        }
+        return applicationProtocol;
+    }
+
+    @Override // mu.k
+    public void d(SSLSocket sslSocket, String str, List protocols) {
+        Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
+        Intrinsics.checkNotNullParameter(protocols, "protocols");
+        try {
+            SSLSockets.setUseSessionTickets(sslSocket, true);
+            SSLParameters sSLParameters = sslSocket.getSSLParameters();
+            sSLParameters.setApplicationProtocols((String[]) lu.h.f36777a.b(protocols).toArray(new String[0]));
+            sslSocket.setSSLParameters(sSLParameters);
+        } catch (IllegalArgumentException e10) {
+            throw new IOException("Android internal error", e10);
+        }
     }
 }

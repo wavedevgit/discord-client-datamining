@@ -1,25 +1,16 @@
 package vv;
 
-import kotlin.jvm.internal.Intrinsics;
-import kotlin.text.StringsKt;
+import okhttp3.Request;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class d {
-    public static final double a(String str) {
-        Intrinsics.checkNotNullParameter(str, "<this>");
-        Double p10 = StringsKt.p(str);
-        if (p10 != null) {
-            return p10.doubleValue();
-        }
-        return 0.0d;
-    }
+public interface d<T> extends Cloneable {
+    boolean C();
 
-    public static final int b(String str) {
-        Intrinsics.checkNotNullParameter(str, "<this>");
-        return (int) a(str);
-    }
+    void E0(f fVar);
 
-    public static final long c(String str) {
-        Intrinsics.checkNotNullParameter(str, "<this>");
-        return (long) a(str);
-    }
+    void cancel();
+
+    /* renamed from: clone */
+    d mo1234clone();
+
+    Request g();
 }

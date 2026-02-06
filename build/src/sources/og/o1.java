@@ -1,15 +1,50 @@
 package og;
 
-import java.util.ListIterator;
+import yi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class o1 extends n1 implements ListIterator {
-    @Override // java.util.ListIterator
-    public final void add(Object obj) {
-        throw new UnsupportedOperationException();
+final class o1 implements yi.d {
+
+    /* renamed from: a  reason: collision with root package name */
+    static final o1 f42323a = new o1();
+
+    /* renamed from: b  reason: collision with root package name */
+    private static final yi.c f42324b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private static final yi.c f42325c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private static final yi.c f42326d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private static final yi.c f42327e;
+
+    static {
+        c.b a10 = yi.c.a("errorCode");
+        f fVar = new f();
+        fVar.a(1);
+        f42324b = a10.b(fVar.b()).a();
+        c.b a11 = yi.c.a("imageInfo");
+        f fVar2 = new f();
+        fVar2.a(2);
+        f42325c = a11.b(fVar2.b()).a();
+        c.b a12 = yi.c.a("isColdCall");
+        f fVar3 = new f();
+        fVar3.a(3);
+        f42326d = a12.b(fVar3.b()).a();
+        c.b a13 = yi.c.a("options");
+        f fVar4 = new f();
+        fVar4.a(4);
+        f42327e = a13.b(fVar4.b()).a();
     }
 
-    @Override // java.util.ListIterator
-    public final void set(Object obj) {
-        throw new UnsupportedOperationException();
+    private o1() {
+    }
+
+    @Override // yi.d
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        android.support.v4.media.session.b.a(obj);
+        yi.e eVar = (yi.e) obj2;
+        throw null;
     }
 }

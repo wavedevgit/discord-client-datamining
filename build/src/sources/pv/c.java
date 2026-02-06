@@ -1,44 +1,131 @@
 package pv;
-
-import com.squareup.moshi.j;
-import com.squareup.moshi.m;
-import okhttp3.ResponseBody;
-import okio.BufferedSource;
-import okio.ByteString;
-import ov.h;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-final class c implements h {
-
-    /* renamed from: b  reason: collision with root package name */
-    private static final ByteString f46707b = ByteString.f("EFBBBF");
-
-    /* renamed from: a  reason: collision with root package name */
-    private final com.squareup.moshi.h f46708a;
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public c(com.squareup.moshi.h hVar) {
-        this.f46708a = hVar;
+public abstract class c {
+    public static int a(CharSequence charSequence, int i10) {
+        char charAt;
+        if (i10 >= charSequence.length()) {
+            return -1;
+        }
+        if (charSequence.charAt(i10) == '<') {
+            while (true) {
+                i10++;
+                if (i10 >= charSequence.length() || (charAt = charSequence.charAt(i10)) == '\n' || charAt == '<') {
+                    break;
+                } else if (charAt != '>') {
+                    if (charAt == '\\') {
+                        int i11 = i10 + 1;
+                        if (d.g(charSequence, i11)) {
+                            i10 = i11;
+                        }
+                    }
+                } else {
+                    return i10 + 1;
+                }
+            }
+            return -1;
+        }
+        return b(charSequence, i10);
     }
 
-    @Override // ov.h
-    /* renamed from: b */
-    public Object a(ResponseBody responseBody) {
-        BufferedSource source = responseBody.source();
-        try {
-            ByteString byteString = f46707b;
-            if (source.q0(0L, byteString)) {
-                source.skip(byteString.G());
+    private static int b(CharSequence charSequence, int i10) {
+        int i11 = 0;
+        int i12 = i10;
+        while (i12 < charSequence.length()) {
+            char charAt = charSequence.charAt(i12);
+            if (charAt != 0 && charAt != ' ') {
+                if (charAt != '\\') {
+                    if (charAt != '(') {
+                        if (charAt != ')') {
+                            if (Character.isISOControl(charAt)) {
+                                if (i12 == i10) {
+                                    return -1;
+                                }
+                            }
+                        } else if (i11 != 0) {
+                            i11--;
+                        }
+                    } else {
+                        i11++;
+                        if (i11 > 32) {
+                            return -1;
+                        }
+                    }
+                } else {
+                    int i13 = i12 + 1;
+                    if (d.g(charSequence, i13)) {
+                        i12 = i13;
+                    }
+                }
+                i12++;
+            } else if (i12 == i10) {
+                return -1;
             }
-            m y10 = m.y(source);
-            Object fromJson = this.f46708a.fromJson(y10);
-            if (y10.E() == m.c.END_DOCUMENT) {
-                responseBody.close();
-                return fromJson;
-            }
-            throw new j("JSON document was not fully consumed.");
-        } catch (Throwable th2) {
-            responseBody.close();
-            throw th2;
+            return i12;
         }
+        return charSequence.length();
+    }
+
+    public static int c(CharSequence charSequence, int i10) {
+        while (i10 < charSequence.length()) {
+            switch (charSequence.charAt(i10)) {
+                case '[':
+                    return -1;
+                case '\\':
+                    int i11 = i10 + 1;
+                    if (!d.g(charSequence, i11)) {
+                        break;
+                    } else {
+                        i10 = i11;
+                        break;
+                    }
+                case ']':
+                    return i10;
+            }
+            i10++;
+        }
+        return charSequence.length();
+    }
+
+    public static int d(CharSequence charSequence, int i10) {
+        if (i10 >= charSequence.length()) {
+            return -1;
+        }
+        char charAt = charSequence.charAt(i10);
+        char c10 = '\"';
+        if (charAt != '\"') {
+            c10 = '\'';
+            if (charAt != '\'') {
+                if (charAt != '(') {
+                    return -1;
+                }
+                c10 = ')';
+            }
+        }
+        int e10 = e(charSequence, i10 + 1, c10);
+        if (e10 == -1 || e10 >= charSequence.length() || charSequence.charAt(e10) != c10) {
+            return -1;
+        }
+        return e10 + 1;
+    }
+
+    public static int e(CharSequence charSequence, int i10, char c10) {
+        while (i10 < charSequence.length()) {
+            char charAt = charSequence.charAt(i10);
+            if (charAt == '\\') {
+                int i11 = i10 + 1;
+                if (d.g(charSequence, i11)) {
+                    i10 = i11;
+                    i10++;
+                }
+            }
+            if (charAt == c10) {
+                return i10;
+            }
+            if (c10 == ')' && charAt == '(') {
+                return -1;
+            }
+            i10++;
+        }
+        return charSequence.length();
     }
 }

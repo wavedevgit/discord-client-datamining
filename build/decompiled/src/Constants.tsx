@@ -3442,6 +3442,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.VERIFY_AGE = var38;
             var38 = '/age-verification/methods';
             var25.AGE_VERIFICATION_METHODS = var38;
+            var38 = '/users/@me/age-verification/check';
+            var25.AGE_VERIFICATION_REACTIVE_CHECK = var38;
+            var38 = '/users/@me/age-verification/reset';
+            var25.AGE_VERIFICATION_RESET = var38;
             var38 = '/experiments';
             var25.EXPERIMENTS = var38;
             var38 = '/auth/login';
@@ -8240,6 +8244,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var138.UNKNOWN_GIFT_CODE = var22;
             var7 = 'UNKNOWN_GIFT_CODE';
             var138[var22] = var7;
+            var22 = 10134;
+            var138.UNKNOWN_TIDA_CONTENT = var22;
+            var7 = 'UNKNOWN_TIDA_CONTENT';
+            var138[var22] = var7;
             var22 = 20001;
             var138.BOT_DISALLOWED = var22;
             var7 = 'BOT_DISALLOWED';
@@ -8581,6 +8589,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var12 = 50097;
             var138.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED = var12;
             var7 = 'INVALID_GIFT_REDEMPTION_FRAUD_REJECTED';
+            var138[var12] = var7;
+            var12 = 50098;
+            var138.INVALID_SIGNATURE_MISMATCH = var12;
+            var7 = 'INVALID_SIGNATURE_MISMATCH';
             var138[var12] = var7;
             var12 = 100060;
             var138.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE = var12;
@@ -16729,28 +16741,28 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var231 = var221[var236];
             var234 = var220.bind(var0)(var231);
             for (var231 in var234)
-                case 62321: {
-                    case 62330: var238 = var231;
+                case 62383: {
+                    case 62392: var238 = var231;
                     var237 = var221[var236];
                     var237 = var220.bind(var0)(var237);
                     var237 = var237[var238];
                     var2[var238] = var237;
-                    _fun7396_ip = 62321;
+                    _fun7396_ip = 62383;
                     continue _fun7396;
                 }
-        case 62352:
+        case 62414:
             var230 = var221[var230];
             var235 = var220.bind(var0)(var230);
             var233 = var235;
             for (var230 in var233)
-                case 62372: {
-                    case 62381: var237 = var230;
+                case 62434: {
+                    case 62443: var237 = var230;
                     var236 = var235[var237];
                     var2[var237] = var236;
-                    _fun7396_ip = 62372;
+                    _fun7396_ip = 62434;
                     continue _fun7396;
                 }
-        case 62394:
+        case 62456:
             var2.Routes = var229;
             var2.ME = var228;
             var2.FAVORITES = var227;

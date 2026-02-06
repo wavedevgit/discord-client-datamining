@@ -5,17 +5,17 @@ import java.nio.ByteBuffer;
 final class h extends qc.f {
 
     /* renamed from: t  reason: collision with root package name */
-    private long f22790t;
+    private long f23091t;
 
     /* renamed from: u  reason: collision with root package name */
-    private int f22791u;
+    private int f23092u;
 
     /* renamed from: v  reason: collision with root package name */
-    private int f22792v;
+    private int f23093v;
 
     public h() {
         super(2);
-        this.f22792v = 32;
+        this.f23093v = 32;
     }
 
     private boolean A(qc.f fVar) {
@@ -23,30 +23,30 @@ final class h extends qc.f {
         if (!E()) {
             return true;
         }
-        if (this.f22791u >= this.f22792v || fVar.m() != m()) {
+        if (this.f23092u >= this.f23093v || fVar.m() != m()) {
             return false;
         }
-        ByteBuffer byteBuffer2 = fVar.f47561i;
-        if (byteBuffer2 == null || (byteBuffer = this.f47561i) == null || byteBuffer.position() + byteBuffer2.remaining() <= 3072000) {
+        ByteBuffer byteBuffer2 = fVar.f46609i;
+        if (byteBuffer2 == null || (byteBuffer = this.f46609i) == null || byteBuffer.position() + byteBuffer2.remaining() <= 3072000) {
             return true;
         }
         return false;
     }
 
     public long B() {
-        return this.f47563p;
+        return this.f46611p;
     }
 
     public long C() {
-        return this.f22790t;
+        return this.f23091t;
     }
 
     public int D() {
-        return this.f22791u;
+        return this.f23092u;
     }
 
     public boolean E() {
-        if (this.f22791u > 0) {
+        if (this.f23092u > 0) {
             return true;
         }
         return false;
@@ -60,26 +60,26 @@ final class h extends qc.f {
             z10 = false;
         }
         ne.a.a(z10);
-        this.f22792v = i10;
+        this.f23093v = i10;
     }
 
     @Override // qc.f, qc.a
     public void h() {
         super.h();
-        this.f22791u = 0;
+        this.f23092u = 0;
     }
 
     public boolean z(qc.f fVar) {
         ne.a.a(!fVar.w());
-        ne.a.a(!fVar.l());
+        ne.a.a(!fVar.k());
         ne.a.a(!fVar.n());
         if (!A(fVar)) {
             return false;
         }
-        int i10 = this.f22791u;
-        this.f22791u = i10 + 1;
+        int i10 = this.f23092u;
+        this.f23092u = i10 + 1;
         if (i10 == 0) {
-            this.f47563p = fVar.f47563p;
+            this.f46611p = fVar.f46611p;
             if (fVar.q()) {
                 s(1);
             }
@@ -87,12 +87,12 @@ final class h extends qc.f {
         if (fVar.m()) {
             s(Integer.MIN_VALUE);
         }
-        ByteBuffer byteBuffer = fVar.f47561i;
+        ByteBuffer byteBuffer = fVar.f46609i;
         if (byteBuffer != null) {
             u(byteBuffer.remaining());
-            this.f47561i.put(byteBuffer);
+            this.f46609i.put(byteBuffer);
         }
-        this.f22790t = fVar.f47563p;
+        this.f23091t = fVar.f46611p;
         return true;
     }
 }

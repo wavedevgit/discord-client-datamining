@@ -13,10 +13,10 @@ import java.util.Iterator;
 public final class TaskStackBuilder implements Iterable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final ArrayList f3190d = new ArrayList();
+    private final ArrayList f3519d = new ArrayList();
 
     /* renamed from: e  reason: collision with root package name */
-    private final Context f3191e;
+    private final Context f3520e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public interface a {
@@ -24,7 +24,7 @@ public final class TaskStackBuilder implements Iterable {
     }
 
     private TaskStackBuilder(Context context) {
-        this.f3191e = context;
+        this.f3520e = context;
     }
 
     public static TaskStackBuilder e(Context context) {
@@ -32,7 +32,7 @@ public final class TaskStackBuilder implements Iterable {
     }
 
     public TaskStackBuilder b(Intent intent) {
-        this.f3190d.add(intent);
+        this.f3519d.add(intent);
         return this;
     }
 
@@ -49,7 +49,7 @@ public final class TaskStackBuilder implements Iterable {
         if (intent != null) {
             ComponentName component = intent.getComponent();
             if (component == null) {
-                component = intent.resolveActivity(this.f3191e.getPackageManager());
+                component = intent.resolveActivity(this.f3520e.getPackageManager());
             }
             d(component);
             b(intent);
@@ -58,12 +58,12 @@ public final class TaskStackBuilder implements Iterable {
     }
 
     public TaskStackBuilder d(ComponentName componentName) {
-        int size = this.f3190d.size();
+        int size = this.f3519d.size();
         try {
-            Intent b10 = i.b(this.f3191e, componentName);
+            Intent b10 = i.b(this.f3520e, componentName);
             while (b10 != null) {
-                this.f3190d.add(size, b10);
-                b10 = i.b(this.f3191e, b10.getComponent());
+                this.f3519d.add(size, b10);
+                b10 = i.b(this.f3520e, b10.getComponent());
             }
             return this;
         } catch (PackageManager.NameNotFoundException e10) {
@@ -77,13 +77,13 @@ public final class TaskStackBuilder implements Iterable {
     }
 
     public void g(Bundle bundle) {
-        if (!this.f3190d.isEmpty()) {
-            Intent[] intentArr = (Intent[]) this.f3190d.toArray(new Intent[0]);
+        if (!this.f3519d.isEmpty()) {
+            Intent[] intentArr = (Intent[]) this.f3519d.toArray(new Intent[0]);
             intentArr[0] = new Intent(intentArr[0]).addFlags(268484608);
-            if (!androidx.core.content.a.n(this.f3191e, intentArr, bundle)) {
+            if (!androidx.core.content.a.n(this.f3520e, intentArr, bundle)) {
                 Intent intent = new Intent(intentArr[intentArr.length - 1]);
                 intent.addFlags(268435456);
-                this.f3191e.startActivity(intent);
+                this.f3520e.startActivity(intent);
                 return;
             }
             return;
@@ -93,6 +93,6 @@ public final class TaskStackBuilder implements Iterable {
 
     @Override // java.lang.Iterable
     public Iterator iterator() {
-        return this.f3190d.iterator();
+        return this.f3519d.iterator();
     }
 }

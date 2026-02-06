@@ -15,7 +15,7 @@ import kotlin.coroutines.jvm.internal.k;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlinx.coroutines.CoroutineScope;
-import ur.b;
+import wr.b;
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\b\n\u0002\u0018\u0002\u0010\u0000\u001a\u0010\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u0002\u0018\u00010\u0001*\u00020\u0003H\n"}, d2 = {"<anonymous>", "Lkotlin/Pair;", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {2, 1, 0}, xi = 48)
 @e(c = "com.discord.media.MediaManagerModule$getImageDimensions$2", f = "MediaManagerModule.kt", l = {}, m = "invokeSuspend")
@@ -62,7 +62,7 @@ public final class MediaManagerModule$getImageDimensions$2 extends k implements 
                 } else {
                     pair = null;
                 }
-                zr.c.a(openInputStream, null);
+                bs.c.a(openInputStream, null);
                 return pair;
             } catch (Exception e10) {
                 Log.INSTANCE.e("MediaManagerModule", "Failed to get image dimensions from URI: " + this.$uri, e10);
@@ -74,6 +74,6 @@ public final class MediaManagerModule$getImageDimensions$2 extends k implements 
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Pair<Integer, Integer>> continuation) {
-        return ((MediaManagerModule$getImageDimensions$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+        return ((MediaManagerModule$getImageDimensions$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
     }
 }

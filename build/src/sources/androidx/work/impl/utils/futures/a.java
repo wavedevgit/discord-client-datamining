@@ -17,25 +17,25 @@ import java.util.logging.Logger;
 public abstract class a implements ListenableFuture {
 
     /* renamed from: o  reason: collision with root package name */
-    static final boolean f5853o = Boolean.parseBoolean(System.getProperty("guava.concurrent.generate_cancellation_cause", "false"));
+    static final boolean f6182o = Boolean.parseBoolean(System.getProperty("guava.concurrent.generate_cancellation_cause", "false"));
 
     /* renamed from: p  reason: collision with root package name */
-    private static final Logger f5854p = Logger.getLogger(a.class.getName());
+    private static final Logger f6183p = Logger.getLogger(a.class.getName());
 
     /* renamed from: q  reason: collision with root package name */
-    static final b f5855q;
+    static final b f6184q;
 
     /* renamed from: r  reason: collision with root package name */
-    private static final Object f5856r;
+    private static final Object f6185r;
 
     /* renamed from: d  reason: collision with root package name */
-    volatile Object f5857d;
+    volatile Object f6186d;
 
     /* renamed from: e  reason: collision with root package name */
-    volatile e f5858e;
+    volatile e f6187e;
 
     /* renamed from: i  reason: collision with root package name */
-    volatile i f5859i;
+    volatile i f6188i;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -59,30 +59,30 @@ public abstract class a implements ListenableFuture {
     public static final class c {
 
         /* renamed from: c  reason: collision with root package name */
-        static final c f5860c;
+        static final c f6189c;
 
         /* renamed from: d  reason: collision with root package name */
-        static final c f5861d;
+        static final c f6190d;
 
         /* renamed from: a  reason: collision with root package name */
-        final boolean f5862a;
+        final boolean f6191a;
 
         /* renamed from: b  reason: collision with root package name */
-        final Throwable f5863b;
+        final Throwable f6192b;
 
         static {
-            if (a.f5853o) {
-                f5861d = null;
-                f5860c = null;
+            if (a.f6182o) {
+                f6190d = null;
+                f6189c = null;
                 return;
             }
-            f5861d = new c(false, null);
-            f5860c = new c(true, null);
+            f6190d = new c(false, null);
+            f6189c = new c(true, null);
         }
 
         c(boolean z10, Throwable th2) {
-            this.f5862a = z10;
-            this.f5863b = th2;
+            this.f6191a = z10;
+            this.f6192b = th2;
         }
     }
 
@@ -91,15 +91,15 @@ public abstract class a implements ListenableFuture {
     public static final class d {
 
         /* renamed from: b  reason: collision with root package name */
-        static final d f5864b = new d(new C0083a("Failure occurred while trying to finish a future."));
+        static final d f6193b = new d(new C0081a("Failure occurred while trying to finish a future."));
 
         /* renamed from: a  reason: collision with root package name */
-        final Throwable f5865a;
+        final Throwable f6194a;
 
         /* renamed from: androidx.work.impl.utils.futures.a$d$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-        class C0083a extends Throwable {
-            C0083a(String str) {
+        class C0081a extends Throwable {
+            C0081a(String str) {
                 super(str);
             }
 
@@ -110,7 +110,7 @@ public abstract class a implements ListenableFuture {
         }
 
         d(Throwable th2) {
-            this.f5865a = (Throwable) a.e(th2);
+            this.f6194a = (Throwable) a.e(th2);
         }
     }
 
@@ -119,20 +119,20 @@ public abstract class a implements ListenableFuture {
     public static final class e {
 
         /* renamed from: d  reason: collision with root package name */
-        static final e f5866d = new e(null, null);
+        static final e f6195d = new e(null, null);
 
         /* renamed from: a  reason: collision with root package name */
-        final Runnable f5867a;
+        final Runnable f6196a;
 
         /* renamed from: b  reason: collision with root package name */
-        final Executor f5868b;
+        final Executor f6197b;
 
         /* renamed from: c  reason: collision with root package name */
-        e f5869c;
+        e f6198c;
 
         e(Runnable runnable, Executor executor) {
-            this.f5867a = runnable;
-            this.f5868b = executor;
+            this.f6196a = runnable;
+            this.f6197b = executor;
         }
     }
 
@@ -140,52 +140,52 @@ public abstract class a implements ListenableFuture {
     private static final class f extends b {
 
         /* renamed from: a  reason: collision with root package name */
-        final AtomicReferenceFieldUpdater f5870a;
+        final AtomicReferenceFieldUpdater f6199a;
 
         /* renamed from: b  reason: collision with root package name */
-        final AtomicReferenceFieldUpdater f5871b;
+        final AtomicReferenceFieldUpdater f6200b;
 
         /* renamed from: c  reason: collision with root package name */
-        final AtomicReferenceFieldUpdater f5872c;
+        final AtomicReferenceFieldUpdater f6201c;
 
         /* renamed from: d  reason: collision with root package name */
-        final AtomicReferenceFieldUpdater f5873d;
+        final AtomicReferenceFieldUpdater f6202d;
 
         /* renamed from: e  reason: collision with root package name */
-        final AtomicReferenceFieldUpdater f5874e;
+        final AtomicReferenceFieldUpdater f6203e;
 
         f(AtomicReferenceFieldUpdater atomicReferenceFieldUpdater, AtomicReferenceFieldUpdater atomicReferenceFieldUpdater2, AtomicReferenceFieldUpdater atomicReferenceFieldUpdater3, AtomicReferenceFieldUpdater atomicReferenceFieldUpdater4, AtomicReferenceFieldUpdater atomicReferenceFieldUpdater5) {
             super();
-            this.f5870a = atomicReferenceFieldUpdater;
-            this.f5871b = atomicReferenceFieldUpdater2;
-            this.f5872c = atomicReferenceFieldUpdater3;
-            this.f5873d = atomicReferenceFieldUpdater4;
-            this.f5874e = atomicReferenceFieldUpdater5;
+            this.f6199a = atomicReferenceFieldUpdater;
+            this.f6200b = atomicReferenceFieldUpdater2;
+            this.f6201c = atomicReferenceFieldUpdater3;
+            this.f6202d = atomicReferenceFieldUpdater4;
+            this.f6203e = atomicReferenceFieldUpdater5;
         }
 
         @Override // androidx.work.impl.utils.futures.a.b
         boolean a(a aVar, e eVar, e eVar2) {
-            return androidx.concurrent.futures.b.a(this.f5873d, aVar, eVar, eVar2);
+            return androidx.concurrent.futures.b.a(this.f6202d, aVar, eVar, eVar2);
         }
 
         @Override // androidx.work.impl.utils.futures.a.b
         boolean b(a aVar, Object obj, Object obj2) {
-            return androidx.concurrent.futures.b.a(this.f5874e, aVar, obj, obj2);
+            return androidx.concurrent.futures.b.a(this.f6203e, aVar, obj, obj2);
         }
 
         @Override // androidx.work.impl.utils.futures.a.b
         boolean c(a aVar, i iVar, i iVar2) {
-            return androidx.concurrent.futures.b.a(this.f5872c, aVar, iVar, iVar2);
+            return androidx.concurrent.futures.b.a(this.f6201c, aVar, iVar, iVar2);
         }
 
         @Override // androidx.work.impl.utils.futures.a.b
         void d(i iVar, i iVar2) {
-            this.f5871b.lazySet(iVar, iVar2);
+            this.f6200b.lazySet(iVar, iVar2);
         }
 
         @Override // androidx.work.impl.utils.futures.a.b
         void e(i iVar, Thread thread) {
-            this.f5870a.lazySet(iVar, thread);
+            this.f6199a.lazySet(iVar, thread);
         }
     }
 
@@ -194,21 +194,21 @@ public abstract class a implements ListenableFuture {
     public static final class g implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final a f5875d;
+        final a f6204d;
 
         /* renamed from: e  reason: collision with root package name */
-        final ListenableFuture f5876e;
+        final ListenableFuture f6205e;
 
         g(a aVar, ListenableFuture listenableFuture) {
-            this.f5875d = aVar;
-            this.f5876e = listenableFuture;
+            this.f6204d = aVar;
+            this.f6205e = listenableFuture;
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            if (this.f5875d.f5857d == this) {
-                if (a.f5855q.b(this.f5875d, this, a.j(this.f5876e))) {
-                    a.g(this.f5875d);
+            if (this.f6204d.f6186d == this) {
+                if (a.f6184q.b(this.f6204d, this, a.j(this.f6205e))) {
+                    a.g(this.f6204d);
                 }
             }
         }
@@ -224,8 +224,8 @@ public abstract class a implements ListenableFuture {
         boolean a(a aVar, e eVar, e eVar2) {
             synchronized (aVar) {
                 try {
-                    if (aVar.f5858e == eVar) {
-                        aVar.f5858e = eVar2;
+                    if (aVar.f6187e == eVar) {
+                        aVar.f6187e = eVar2;
                         return true;
                     }
                     return false;
@@ -239,8 +239,8 @@ public abstract class a implements ListenableFuture {
         boolean b(a aVar, Object obj, Object obj2) {
             synchronized (aVar) {
                 try {
-                    if (aVar.f5857d == obj) {
-                        aVar.f5857d = obj2;
+                    if (aVar.f6186d == obj) {
+                        aVar.f6186d = obj2;
                         return true;
                     }
                     return false;
@@ -254,8 +254,8 @@ public abstract class a implements ListenableFuture {
         boolean c(a aVar, i iVar, i iVar2) {
             synchronized (aVar) {
                 try {
-                    if (aVar.f5859i == iVar) {
-                        aVar.f5859i = iVar2;
+                    if (aVar.f6188i == iVar) {
+                        aVar.f6188i = iVar2;
                         return true;
                     }
                     return false;
@@ -267,12 +267,12 @@ public abstract class a implements ListenableFuture {
 
         @Override // androidx.work.impl.utils.futures.a.b
         void d(i iVar, i iVar2) {
-            iVar.f5879b = iVar2;
+            iVar.f6208b = iVar2;
         }
 
         @Override // androidx.work.impl.utils.futures.a.b
         void e(i iVar, Thread thread) {
-            iVar.f5878a = thread;
+            iVar.f6207a = thread;
         }
     }
 
@@ -281,31 +281,31 @@ public abstract class a implements ListenableFuture {
     public static final class i {
 
         /* renamed from: c  reason: collision with root package name */
-        static final i f5877c = new i(false);
+        static final i f6206c = new i(false);
 
         /* renamed from: a  reason: collision with root package name */
-        volatile Thread f5878a;
+        volatile Thread f6207a;
 
         /* renamed from: b  reason: collision with root package name */
-        volatile i f5879b;
+        volatile i f6208b;
 
         i(boolean z10) {
         }
 
         void a(i iVar) {
-            a.f5855q.d(this, iVar);
+            a.f6184q.d(this, iVar);
         }
 
         void b() {
-            Thread thread = this.f5878a;
+            Thread thread = this.f6207a;
             if (thread != null) {
-                this.f5878a = null;
+                this.f6207a = null;
                 LockSupport.unpark(thread);
             }
         }
 
         i() {
-            a.f5855q.e(this, Thread.currentThread());
+            a.f6184q.e(this, Thread.currentThread());
         }
     }
 
@@ -318,11 +318,11 @@ public abstract class a implements ListenableFuture {
             th = th2;
             hVar = new h();
         }
-        f5855q = hVar;
+        f6184q = hVar;
         if (th != null) {
-            f5854p.log(Level.SEVERE, "SafeAtomicHelper is broken!", th);
+            f6183p.log(Level.SEVERE, "SafeAtomicHelper is broken!", th);
         }
-        f5856r = new Object();
+        f6185r = new Object();
     }
 
     private void b(StringBuilder sb2) {
@@ -358,13 +358,13 @@ public abstract class a implements ListenableFuture {
     private e f(e eVar) {
         e eVar2;
         do {
-            eVar2 = this.f5858e;
-        } while (!f5855q.a(this, eVar2, e.f5866d));
+            eVar2 = this.f6187e;
+        } while (!f6184q.a(this, eVar2, e.f6195d));
         e eVar3 = eVar;
         e eVar4 = eVar2;
         while (eVar4 != null) {
-            e eVar5 = eVar4.f5869c;
-            eVar4.f5869c = eVar3;
+            e eVar5 = eVar4.f6198c;
+            eVar4.f6198c = eVar3;
             eVar3 = eVar4;
             eVar4 = eVar5;
         }
@@ -378,20 +378,20 @@ public abstract class a implements ListenableFuture {
             aVar.c();
             e f10 = aVar.f(eVar);
             while (f10 != null) {
-                eVar = f10.f5869c;
-                Runnable runnable = f10.f5867a;
+                eVar = f10.f6198c;
+                Runnable runnable = f10.f6196a;
                 if (runnable instanceof g) {
                     g gVar = (g) runnable;
-                    aVar = gVar.f5875d;
-                    if (aVar.f5857d == gVar) {
-                        if (f5855q.b(aVar, gVar, j(gVar.f5876e))) {
+                    aVar = gVar.f6204d;
+                    if (aVar.f6186d == gVar) {
+                        if (f6184q.b(aVar, gVar, j(gVar.f6205e))) {
                             break;
                         }
                     } else {
                         continue;
                     }
                 } else {
-                    h(runnable, f10.f5868b);
+                    h(runnable, f10.f6197b);
                 }
                 f10 = eVar;
             }
@@ -403,7 +403,7 @@ public abstract class a implements ListenableFuture {
         try {
             executor.execute(runnable);
         } catch (RuntimeException e10) {
-            Logger logger = f5854p;
+            Logger logger = f6183p;
             Level level = Level.SEVERE;
             logger.log(level, "RuntimeException while executing runnable " + runnable + " with executor " + executor, (Throwable) e10);
         }
@@ -412,39 +412,39 @@ public abstract class a implements ListenableFuture {
     private Object i(Object obj) {
         if (!(obj instanceof c)) {
             if (!(obj instanceof d)) {
-                if (obj == f5856r) {
+                if (obj == f6185r) {
                     return null;
                 }
                 return obj;
             }
-            throw new ExecutionException(((d) obj).f5865a);
+            throw new ExecutionException(((d) obj).f6194a);
         }
-        throw d("Task was cancelled.", ((c) obj).f5863b);
+        throw d("Task was cancelled.", ((c) obj).f6192b);
     }
 
     static Object j(ListenableFuture listenableFuture) {
         if (listenableFuture instanceof a) {
-            Object obj = ((a) listenableFuture).f5857d;
+            Object obj = ((a) listenableFuture).f6186d;
             if (obj instanceof c) {
                 c cVar = (c) obj;
-                if (cVar.f5862a) {
-                    if (cVar.f5863b != null) {
-                        return new c(false, cVar.f5863b);
+                if (cVar.f6191a) {
+                    if (cVar.f6192b != null) {
+                        return new c(false, cVar.f6192b);
                     }
-                    return c.f5861d;
+                    return c.f6190d;
                 }
                 return obj;
             }
             return obj;
         }
         boolean isCancelled = listenableFuture.isCancelled();
-        if ((!f5853o) & isCancelled) {
-            return c.f5861d;
+        if ((!f6182o) & isCancelled) {
+            return c.f6190d;
         }
         try {
             Object k10 = k(listenableFuture);
             if (k10 == null) {
-                return f5856r;
+                return f6185r;
             }
             return k10;
         } catch (CancellationException e10) {
@@ -484,30 +484,30 @@ public abstract class a implements ListenableFuture {
     private void n() {
         i iVar;
         do {
-            iVar = this.f5859i;
-        } while (!f5855q.c(this, iVar, i.f5877c));
+            iVar = this.f6188i;
+        } while (!f6184q.c(this, iVar, i.f6206c));
         while (iVar != null) {
             iVar.b();
-            iVar = iVar.f5879b;
+            iVar = iVar.f6208b;
         }
     }
 
     private void o(i iVar) {
-        iVar.f5878a = null;
+        iVar.f6207a = null;
         while (true) {
-            i iVar2 = this.f5859i;
-            if (iVar2 != i.f5877c) {
+            i iVar2 = this.f6188i;
+            if (iVar2 != i.f6206c) {
                 i iVar3 = null;
                 while (iVar2 != null) {
-                    i iVar4 = iVar2.f5879b;
-                    if (iVar2.f5878a != null) {
+                    i iVar4 = iVar2.f6208b;
+                    if (iVar2.f6207a != null) {
                         iVar3 = iVar2;
                     } else if (iVar3 != null) {
-                        iVar3.f5879b = iVar4;
-                        if (iVar3.f5878a == null) {
+                        iVar3.f6208b = iVar4;
+                        if (iVar3.f6207a == null) {
                             break;
                         }
-                    } else if (!f5855q.c(this, iVar2, iVar4)) {
+                    } else if (!f6184q.c(this, iVar2, iVar4)) {
                         break;
                     }
                     iVar2 = iVar4;
@@ -529,16 +529,16 @@ public abstract class a implements ListenableFuture {
     public final void a(Runnable runnable, Executor executor) {
         e(runnable);
         e(executor);
-        e eVar = this.f5858e;
-        if (eVar != e.f5866d) {
+        e eVar = this.f6187e;
+        if (eVar != e.f6195d) {
             e eVar2 = new e(runnable, executor);
             do {
-                eVar2.f5869c = eVar;
-                if (f5855q.a(this, eVar, eVar2)) {
+                eVar2.f6198c = eVar;
+                if (f6184q.a(this, eVar, eVar2)) {
                     return;
                 }
-                eVar = this.f5858e;
-            } while (eVar != e.f5866d);
+                eVar = this.f6187e;
+            } while (eVar != e.f6195d);
             h(runnable, executor);
         }
         h(runnable, executor);
@@ -558,7 +558,7 @@ public abstract class a implements ListenableFuture {
     public final boolean cancel(boolean r8) {
         /*
             r7 = this;
-            java.lang.Object r0 = r7.f5857d
+            java.lang.Object r0 = r7.f6186d
             r1 = 1
             r2 = 0
             if (r0 != 0) goto L8
@@ -570,7 +570,7 @@ public abstract class a implements ListenableFuture {
             boolean r4 = r0 instanceof androidx.work.impl.utils.futures.a.g
             r3 = r3 | r4
             if (r3 == 0) goto L60
-            boolean r3 = androidx.work.impl.utils.futures.a.f5853o
+            boolean r3 = androidx.work.impl.utils.futures.a.f6182o
             if (r3 == 0) goto L1f
             androidx.work.impl.utils.futures.a$c r3 = new androidx.work.impl.utils.futures.a$c
             java.util.concurrent.CancellationException r4 = new java.util.concurrent.CancellationException
@@ -580,15 +580,15 @@ public abstract class a implements ListenableFuture {
             goto L26
         L1f:
             if (r8 == 0) goto L24
-            androidx.work.impl.utils.futures.a$c r3 = androidx.work.impl.utils.futures.a.c.f5860c
+            androidx.work.impl.utils.futures.a$c r3 = androidx.work.impl.utils.futures.a.c.f6189c
             goto L26
         L24:
-            androidx.work.impl.utils.futures.a$c r3 = androidx.work.impl.utils.futures.a.c.f5861d
+            androidx.work.impl.utils.futures.a$c r3 = androidx.work.impl.utils.futures.a.c.f6190d
         L26:
             r4 = r7
             r5 = r2
         L28:
-            androidx.work.impl.utils.futures.a$b r6 = androidx.work.impl.utils.futures.a.f5855q
+            androidx.work.impl.utils.futures.a$b r6 = androidx.work.impl.utils.futures.a.f6184q
             boolean r6 = r6.b(r4, r0, r3)
             if (r6 == 0) goto L59
             if (r8 == 0) goto L35
@@ -598,12 +598,12 @@ public abstract class a implements ListenableFuture {
             boolean r4 = r0 instanceof androidx.work.impl.utils.futures.a.g
             if (r4 == 0) goto L58
             androidx.work.impl.utils.futures.a$g r0 = (androidx.work.impl.utils.futures.a.g) r0
-            com.google.common.util.concurrent.ListenableFuture r0 = r0.f5876e
+            com.google.common.util.concurrent.ListenableFuture r0 = r0.f6205e
             boolean r4 = r0 instanceof androidx.work.impl.utils.futures.a
             if (r4 == 0) goto L55
             r4 = r0
             androidx.work.impl.utils.futures.a r4 = (androidx.work.impl.utils.futures.a) r4
-            java.lang.Object r0 = r4.f5857d
+            java.lang.Object r0 = r4.f6186d
             if (r0 != 0) goto L4d
             r5 = r1
             goto L4e
@@ -620,7 +620,7 @@ public abstract class a implements ListenableFuture {
         L58:
             return r1
         L59:
-            java.lang.Object r0 = r4.f5857d
+            java.lang.Object r0 = r4.f6186d
             boolean r6 = r0 instanceof androidx.work.impl.utils.futures.a.g
             if (r6 != 0) goto L28
             return r5
@@ -635,22 +635,22 @@ public abstract class a implements ListenableFuture {
         Locale locale;
         long nanos = timeUnit.toNanos(j10);
         if (!Thread.interrupted()) {
-            Object obj = this.f5857d;
+            Object obj = this.f6186d;
             if ((obj != null) & (!(obj instanceof g))) {
                 return i(obj);
             }
             long nanoTime = nanos > 0 ? System.nanoTime() + nanos : 0L;
             if (nanos >= 1000) {
-                i iVar = this.f5859i;
-                if (iVar != i.f5877c) {
+                i iVar = this.f6188i;
+                if (iVar != i.f6206c) {
                     i iVar2 = new i();
                     do {
                         iVar2.a(iVar);
-                        if (f5855q.c(this, iVar, iVar2)) {
+                        if (f6184q.c(this, iVar, iVar2)) {
                             do {
                                 LockSupport.parkNanos(this, nanos);
                                 if (!Thread.interrupted()) {
-                                    Object obj2 = this.f5857d;
+                                    Object obj2 = this.f6186d;
                                     if ((obj2 != null) & (!(obj2 instanceof g))) {
                                         return i(obj2);
                                     }
@@ -662,15 +662,15 @@ public abstract class a implements ListenableFuture {
                             } while (nanos >= 1000);
                             o(iVar2);
                         } else {
-                            iVar = this.f5859i;
+                            iVar = this.f6188i;
                         }
-                    } while (iVar != i.f5877c);
-                    return i(this.f5857d);
+                    } while (iVar != i.f6206c);
+                    return i(this.f6186d);
                 }
-                return i(this.f5857d);
+                return i(this.f6186d);
             }
             while (nanos > 0) {
-                Object obj3 = this.f5857d;
+                Object obj3 = this.f6186d;
                 if ((obj3 != null) & (!(obj3 instanceof g))) {
                     return i(obj3);
                 }
@@ -712,14 +712,14 @@ public abstract class a implements ListenableFuture {
 
     @Override // java.util.concurrent.Future
     public final boolean isCancelled() {
-        return this.f5857d instanceof c;
+        return this.f6186d instanceof c;
     }
 
     @Override // java.util.concurrent.Future
     public final boolean isDone() {
         Object obj;
         boolean z10;
-        if (this.f5857d != null) {
+        if (this.f6186d != null) {
             z10 = true;
         } else {
             z10 = false;
@@ -731,9 +731,9 @@ public abstract class a implements ListenableFuture {
     }
 
     protected String m() {
-        Object obj = this.f5857d;
+        Object obj = this.f6186d;
         if (obj instanceof g) {
-            return "setFuture=[" + s(((g) obj).f5876e) + "]";
+            return "setFuture=[" + s(((g) obj).f6205e) + "]";
         } else if (this instanceof ScheduledFuture) {
             return "remaining delay=[" + ((ScheduledFuture) this).getDelay(TimeUnit.MILLISECONDS) + " ms]";
         } else {
@@ -744,9 +744,9 @@ public abstract class a implements ListenableFuture {
     /* JADX INFO: Access modifiers changed from: protected */
     public boolean p(Object obj) {
         if (obj == null) {
-            obj = f5856r;
+            obj = f6185r;
         }
-        if (f5855q.b(this, null, obj)) {
+        if (f6184q.b(this, null, obj)) {
             g(this);
             return true;
         }
@@ -755,7 +755,7 @@ public abstract class a implements ListenableFuture {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public boolean q(Throwable th2) {
-        if (f5855q.b(this, null, new d((Throwable) e(th2)))) {
+        if (f6184q.b(this, null, new d((Throwable) e(th2)))) {
             g(this);
             return true;
         }
@@ -766,33 +766,33 @@ public abstract class a implements ListenableFuture {
     public boolean r(ListenableFuture listenableFuture) {
         d dVar;
         e(listenableFuture);
-        Object obj = this.f5857d;
+        Object obj = this.f6186d;
         if (obj == null) {
             if (listenableFuture.isDone()) {
-                if (!f5855q.b(this, null, j(listenableFuture))) {
+                if (!f6184q.b(this, null, j(listenableFuture))) {
                     return false;
                 }
                 g(this);
                 return true;
             }
             g gVar = new g(this, listenableFuture);
-            if (f5855q.b(this, null, gVar)) {
+            if (f6184q.b(this, null, gVar)) {
                 try {
                     listenableFuture.a(gVar, androidx.work.impl.utils.futures.b.INSTANCE);
                 } catch (Throwable th2) {
                     try {
                         dVar = new d(th2);
                     } catch (Throwable unused) {
-                        dVar = d.f5864b;
+                        dVar = d.f6193b;
                     }
-                    f5855q.b(this, gVar, dVar);
+                    f6184q.b(this, gVar, dVar);
                 }
                 return true;
             }
-            obj = this.f5857d;
+            obj = this.f6186d;
         }
         if (obj instanceof c) {
-            listenableFuture.cancel(((c) obj).f5862a);
+            listenableFuture.cancel(((c) obj).f6191a);
         }
         return false;
     }
@@ -830,20 +830,20 @@ public abstract class a implements ListenableFuture {
     public final Object get() {
         Object obj;
         if (!Thread.interrupted()) {
-            Object obj2 = this.f5857d;
+            Object obj2 = this.f6186d;
             if ((obj2 != null) & (!(obj2 instanceof g))) {
                 return i(obj2);
             }
-            i iVar = this.f5859i;
-            if (iVar != i.f5877c) {
+            i iVar = this.f6188i;
+            if (iVar != i.f6206c) {
                 i iVar2 = new i();
                 do {
                     iVar2.a(iVar);
-                    if (f5855q.c(this, iVar, iVar2)) {
+                    if (f6184q.c(this, iVar, iVar2)) {
                         do {
                             LockSupport.park(this);
                             if (!Thread.interrupted()) {
-                                obj = this.f5857d;
+                                obj = this.f6186d;
                             } else {
                                 o(iVar2);
                                 throw new InterruptedException();
@@ -851,11 +851,11 @@ public abstract class a implements ListenableFuture {
                         } while (!((obj != null) & (!(obj instanceof g))));
                         return i(obj);
                     }
-                    iVar = this.f5859i;
-                } while (iVar != i.f5877c);
-                return i(this.f5857d);
+                    iVar = this.f6188i;
+                } while (iVar != i.f6206c);
+                return i(this.f6186d);
             }
-            return i(this.f5857d);
+            return i(this.f6186d);
         }
         throw new InterruptedException();
     }

@@ -6,16 +6,16 @@ import kotlin.jvm.functions.Function1;
 public class a implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final AbstractBinaryClassAnnotationAndConstantLoader f33238d;
+    private final AbstractBinaryClassAnnotationAndConstantLoader f33258d;
 
     public a(AbstractBinaryClassAnnotationAndConstantLoader abstractBinaryClassAnnotationAndConstantLoader) {
-        this.f33238d = abstractBinaryClassAnnotationAndConstantLoader;
+        this.f33258d = abstractBinaryClassAnnotationAndConstantLoader;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         AnnotationsContainerWithConstants v10;
-        v10 = AbstractBinaryClassAnnotationAndConstantLoader.v(this.f33238d, (KotlinJvmBinaryClass) obj);
+        v10 = AbstractBinaryClassAnnotationAndConstantLoader.v(this.f33258d, (KotlinJvmBinaryClass) obj);
         return v10;
     }
 }

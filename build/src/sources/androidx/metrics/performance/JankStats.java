@@ -10,22 +10,22 @@ import kotlin.jvm.internal.Intrinsics;
 public final class JankStats {
 
     /* renamed from: f  reason: collision with root package name */
-    public static final a f4723f = new a(null);
+    public static final a f5052f = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final OnFrameListener f4724a;
+    private final OnFrameListener f5053a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final g.b f4725b;
+    private final g.b f5054b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final f f4726c;
+    private final f f5055c;
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f4727d;
+    private boolean f5056d;
 
     /* renamed from: e  reason: collision with root package name */
-    private float f4728e;
+    private float f5057e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public interface OnFrameListener {
@@ -53,30 +53,30 @@ public final class JankStats {
     }
 
     public final float a() {
-        return this.f4728e;
+        return this.f5057e;
     }
 
     public final void b(FrameData volatileFrameData) {
         Intrinsics.checkNotNullParameter(volatileFrameData, "volatileFrameData");
-        this.f4724a.a(volatileFrameData);
+        this.f5053a.a(volatileFrameData);
     }
 
     public final void c(float f10) {
-        f.f4752b.b(-1L);
-        this.f4728e = f10;
+        f.f5081b.b(-1L);
+        this.f5057e = f10;
     }
 
     public final void d(boolean z10) {
-        this.f4726c.c(z10);
-        this.f4727d = z10;
+        this.f5055c.c(z10);
+        this.f5056d = z10;
     }
 
     private JankStats(Window window, OnFrameListener onFrameListener) {
         f dVar;
-        this.f4724a = onFrameListener;
+        this.f5053a = onFrameListener;
         View peekDecorView = window.peekDecorView();
         if (peekDecorView != null) {
-            this.f4725b = g.f4755f.a(peekDecorView);
+            this.f5054b = g.f5084f.a(peekDecorView);
             int i10 = Build.VERSION.SDK_INT;
             if (i10 >= 31) {
                 dVar = new e(this, peekDecorView, window);
@@ -85,10 +85,10 @@ public final class JankStats {
             } else {
                 dVar = new d(this, peekDecorView, window);
             }
-            this.f4726c = dVar;
+            this.f5055c = dVar;
             dVar.c(true);
-            this.f4727d = true;
-            this.f4728e = 2.0f;
+            this.f5056d = true;
+            this.f5057e = 2.0f;
             return;
         }
         throw new IllegalStateException("window.peekDecorView() is null: JankStats can only be created with a Window that has a non-null DecorView");

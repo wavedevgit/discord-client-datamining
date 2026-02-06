@@ -4,11 +4,11 @@ package com.google.android.gms.internal.fido;
 public class e0 {
 
     /* renamed from: a  reason: collision with root package name */
-    String f13983a;
+    String f13946a;
 
     /* renamed from: b  reason: collision with root package name */
-    Object f13984b;
+    Object f13947b;
 
     /* renamed from: c  reason: collision with root package name */
-    e0 f13985c;
+    e0 f13948c;
 }

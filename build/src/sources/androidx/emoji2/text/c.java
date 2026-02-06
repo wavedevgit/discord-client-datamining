@@ -20,10 +20,10 @@ public abstract class c {
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final b f4056a;
+        private final b f4385a;
 
         public a(b bVar) {
-            this.f4056a = bVar == null ? e() : bVar;
+            this.f4385a = bVar == null ? e() : bVar;
         }
 
         private e.c a(Context context, z1.e eVar) {
@@ -44,14 +44,14 @@ public abstract class c {
         private z1.e d(ProviderInfo providerInfo, PackageManager packageManager) {
             String str = providerInfo.authority;
             String str2 = providerInfo.packageName;
-            return new z1.e(str, str2, "emojicompat-emoji-font", b(this.f4056a.b(packageManager, str2)));
+            return new z1.e(str, str2, "emojicompat-emoji-font", b(this.f4385a.b(packageManager, str2)));
         }
 
         private static b e() {
             if (Build.VERSION.SDK_INT >= 28) {
                 return new d();
             }
-            return new C0050c();
+            return new C0048c();
         }
 
         private boolean f(ProviderInfo providerInfo) {
@@ -63,8 +63,8 @@ public abstract class c {
         }
 
         private ProviderInfo g(PackageManager packageManager) {
-            for (ResolveInfo resolveInfo : this.f4056a.c(packageManager, new Intent("androidx.content.action.LOAD_EMOJI_FONT"), 0)) {
-                ProviderInfo a10 = this.f4056a.a(resolveInfo);
+            for (ResolveInfo resolveInfo : this.f4385a.c(packageManager, new Intent("androidx.content.action.LOAD_EMOJI_FONT"), 0)) {
+                ProviderInfo a10 = this.f4385a.a(resolveInfo);
                 if (f(a10)) {
                     return a10;
                 }
@@ -105,7 +105,7 @@ public abstract class c {
 
     /* renamed from: androidx.emoji2.text.c$c  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static class C0050c extends b {
+    public static class C0048c extends b {
         @Override // androidx.emoji2.text.c.b
         public ProviderInfo a(ResolveInfo resolveInfo) {
             return resolveInfo.providerInfo;
@@ -118,7 +118,7 @@ public abstract class c {
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static class d extends C0050c {
+    public static class d extends C0048c {
         @Override // androidx.emoji2.text.c.b
         public Signature[] b(PackageManager packageManager, String str) {
             return packageManager.getPackageInfo(str, 64).signatures;

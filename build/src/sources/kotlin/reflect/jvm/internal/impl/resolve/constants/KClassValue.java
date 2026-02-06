@@ -23,8 +23,8 @@ import kotlin.reflect.jvm.internal.impl.types.Variance;
 import kotlin.reflect.jvm.internal.impl.types.error.ErrorTypeKind;
 import kotlin.reflect.jvm.internal.impl.types.error.ErrorUtils;
 import kotlin.reflect.jvm.internal.impl.types.typeUtil.TypeUtilsKt;
-import or.p;
 import org.jetbrains.annotations.NotNull;
+import qr.p;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class KClassValue extends ConstantValue<Value> {
     @NotNull
@@ -73,34 +73,34 @@ public final class KClassValue extends ConstantValue<Value> {
         public static final class LocalClass extends Value {
 
             /* renamed from: a  reason: collision with root package name */
-            private final KotlinType f34132a;
+            private final KotlinType f34152a;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public LocalClass(@NotNull KotlinType type) {
                 super(null);
                 Intrinsics.checkNotNullParameter(type, "type");
-                this.f34132a = type;
+                this.f34152a = type;
             }
 
             public boolean equals(Object obj) {
                 if (this == obj) {
                     return true;
                 }
-                return (obj instanceof LocalClass) && Intrinsics.areEqual(this.f34132a, ((LocalClass) obj).f34132a);
+                return (obj instanceof LocalClass) && Intrinsics.areEqual(this.f34152a, ((LocalClass) obj).f34152a);
             }
 
             @NotNull
             public final KotlinType getType() {
-                return this.f34132a;
+                return this.f34152a;
             }
 
             public int hashCode() {
-                return this.f34132a.hashCode();
+                return this.f34152a.hashCode();
             }
 
             @NotNull
             public String toString() {
-                return "LocalClass(type=" + this.f34132a + ')';
+                return "LocalClass(type=" + this.f34152a + ')';
             }
         }
 
@@ -108,43 +108,43 @@ public final class KClassValue extends ConstantValue<Value> {
         public static final class NormalClass extends Value {
 
             /* renamed from: a  reason: collision with root package name */
-            private final ClassLiteralValue f34133a;
+            private final ClassLiteralValue f34153a;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public NormalClass(@NotNull ClassLiteralValue value) {
                 super(null);
                 Intrinsics.checkNotNullParameter(value, "value");
-                this.f34133a = value;
+                this.f34153a = value;
             }
 
             public boolean equals(Object obj) {
                 if (this == obj) {
                     return true;
                 }
-                return (obj instanceof NormalClass) && Intrinsics.areEqual(this.f34133a, ((NormalClass) obj).f34133a);
+                return (obj instanceof NormalClass) && Intrinsics.areEqual(this.f34153a, ((NormalClass) obj).f34153a);
             }
 
             public final int getArrayDimensions() {
-                return this.f34133a.getArrayNestedness();
+                return this.f34153a.getArrayNestedness();
             }
 
             @NotNull
             public final ClassId getClassId() {
-                return this.f34133a.getClassId();
+                return this.f34153a.getClassId();
             }
 
             @NotNull
             public final ClassLiteralValue getValue() {
-                return this.f34133a;
+                return this.f34153a;
             }
 
             public int hashCode() {
-                return this.f34133a.hashCode();
+                return this.f34153a.hashCode();
             }
 
             @NotNull
             public String toString() {
-                return "NormalClass(value=" + this.f34133a + ')';
+                return "NormalClass(value=" + this.f34153a + ')';
             }
         }
 

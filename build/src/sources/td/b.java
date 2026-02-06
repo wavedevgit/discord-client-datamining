@@ -10,22 +10,22 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
-import mi.v;
 import ne.w0;
+import ni.v;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f50608a;
+    private final Map f50584a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Map f50609b;
+    private final Map f50585b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Map f50610c;
+    private final Map f50586c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Random f50611d;
+    private final Random f50587d;
 
     public b() {
         this(new Random());
@@ -40,12 +40,12 @@ public final class b {
 
     private List c(List list) {
         long elapsedRealtime = SystemClock.elapsedRealtime();
-        h(elapsedRealtime, this.f50608a);
-        h(elapsedRealtime, this.f50609b);
+        h(elapsedRealtime, this.f50584a);
+        h(elapsedRealtime, this.f50585b);
         ArrayList arrayList = new ArrayList();
         for (int i10 = 0; i10 < list.size(); i10++) {
             ud.b bVar = (ud.b) list.get(i10);
-            if (!this.f50608a.containsKey(bVar.f51273b) && !this.f50609b.containsKey(Integer.valueOf(bVar.f51274c))) {
+            if (!this.f50584a.containsKey(bVar.f51314b) && !this.f50585b.containsKey(Integer.valueOf(bVar.f51315c))) {
                 arrayList.add(bVar);
             }
         }
@@ -54,17 +54,17 @@ public final class b {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static int d(ud.b bVar, ud.b bVar2) {
-        int compare = Integer.compare(bVar.f51274c, bVar2.f51274c);
+        int compare = Integer.compare(bVar.f51315c, bVar2.f51315c);
         if (compare != 0) {
             return compare;
         }
-        return bVar.f51273b.compareTo(bVar2.f51273b);
+        return bVar.f51314b.compareTo(bVar2.f51314b);
     }
 
     public static int f(List list) {
         HashSet hashSet = new HashSet();
         for (int i10 = 0; i10 < list.size(); i10++) {
-            hashSet.add(Integer.valueOf(((ud.b) list.get(i10)).f51274c));
+            hashSet.add(Integer.valueOf(((ud.b) list.get(i10)).f51315c));
         }
         return hashSet.size();
     }
@@ -84,13 +84,13 @@ public final class b {
     private ud.b k(List list) {
         int i10 = 0;
         for (int i11 = 0; i11 < list.size(); i11++) {
-            i10 += ((ud.b) list.get(i11)).f51275d;
+            i10 += ((ud.b) list.get(i11)).f51316d;
         }
-        int nextInt = this.f50611d.nextInt(i10);
+        int nextInt = this.f50587d.nextInt(i10);
         int i12 = 0;
         for (int i13 = 0; i13 < list.size(); i13++) {
             ud.b bVar = (ud.b) list.get(i13);
-            i12 += bVar.f51275d;
+            i12 += bVar.f51316d;
             if (nextInt < i12) {
                 return bVar;
             }
@@ -100,10 +100,10 @@ public final class b {
 
     public void e(ud.b bVar, long j10) {
         long elapsedRealtime = SystemClock.elapsedRealtime() + j10;
-        b(bVar.f51273b, elapsedRealtime, this.f50608a);
-        int i10 = bVar.f51274c;
+        b(bVar.f51314b, elapsedRealtime, this.f50584a);
+        int i10 = bVar.f51315c;
         if (i10 != Integer.MIN_VALUE) {
-            b(Integer.valueOf(i10), elapsedRealtime, this.f50609b);
+            b(Integer.valueOf(i10), elapsedRealtime, this.f50585b);
         }
     }
 
@@ -111,15 +111,15 @@ public final class b {
         HashSet hashSet = new HashSet();
         List c10 = c(list);
         for (int i10 = 0; i10 < c10.size(); i10++) {
-            hashSet.add(Integer.valueOf(((ud.b) c10.get(i10)).f51274c));
+            hashSet.add(Integer.valueOf(((ud.b) c10.get(i10)).f51315c));
         }
         return hashSet.size();
     }
 
     public void i() {
-        this.f50608a.clear();
-        this.f50609b.clear();
-        this.f50610c.clear();
+        this.f50584a.clear();
+        this.f50585b.clear();
+        this.f50586c.clear();
     }
 
     public ud.b j(List list) {
@@ -136,35 +136,35 @@ public final class b {
             }
         });
         ArrayList arrayList = new ArrayList();
-        int i10 = ((ud.b) c10.get(0)).f51274c;
+        int i10 = ((ud.b) c10.get(0)).f51315c;
         int i11 = 0;
         while (true) {
             if (i11 >= c10.size()) {
                 break;
             }
             ud.b bVar = (ud.b) c10.get(i11);
-            if (i10 != bVar.f51274c) {
+            if (i10 != bVar.f51315c) {
                 if (arrayList.size() == 1) {
                     return (ud.b) c10.get(0);
                 }
             } else {
-                arrayList.add(new Pair(bVar.f51273b, Integer.valueOf(bVar.f51275d)));
+                arrayList.add(new Pair(bVar.f51314b, Integer.valueOf(bVar.f51316d)));
                 i11++;
             }
         }
-        ud.b bVar2 = (ud.b) this.f50610c.get(arrayList);
+        ud.b bVar2 = (ud.b) this.f50586c.get(arrayList);
         if (bVar2 == null) {
             ud.b k10 = k(c10.subList(0, arrayList.size()));
-            this.f50610c.put(arrayList, k10);
+            this.f50586c.put(arrayList, k10);
             return k10;
         }
         return bVar2;
     }
 
     b(Random random) {
-        this.f50610c = new HashMap();
-        this.f50611d = random;
-        this.f50608a = new HashMap();
-        this.f50609b = new HashMap();
+        this.f50586c = new HashMap();
+        this.f50587d = random;
+        this.f50584a = new HashMap();
+        this.f50585b = new HashMap();
     }
 }

@@ -72,4 +72,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.NitroGem24Lottie = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 8474, 12202, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 8480, 12205, 2]);

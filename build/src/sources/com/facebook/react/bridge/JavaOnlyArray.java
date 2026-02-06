@@ -85,7 +85,7 @@ public final class JavaOnlyArray implements ReadableArray, WritableArray {
                             javaOnlyArray.pushArray(JavaOnlyArray.Companion.deepClone(readableArray.getArray(i10)));
                             break;
                         default:
-                            throw new or.p();
+                            throw new qr.p();
                     }
                 }
             }

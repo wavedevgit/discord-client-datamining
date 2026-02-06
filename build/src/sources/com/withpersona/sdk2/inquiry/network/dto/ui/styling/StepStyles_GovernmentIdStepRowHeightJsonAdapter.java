@@ -41,18 +41,18 @@ public final class StepStyles_GovernmentIdStepRowHeightJsonAdapter extends h {
     @NotNull
     public StepStyles.GovernmentIdStepRowHeight fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         StyleElements.Measurement measurement = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 measurement = (StyleElements.Measurement) this.nullableMeasurementAdapter.fromJson(reader);
             }
         }
-        reader.z();
+        reader.D();
         return new StepStyles.GovernmentIdStepRowHeight(measurement);
     }
 
@@ -61,9 +61,9 @@ public final class StepStyles_GovernmentIdStepRowHeightJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (governmentIdStepRowHeight != null) {
             writer.k();
-            writer.W("governmentIdSelectOptionMinRowHeight");
+            writer.J("governmentIdSelectOptionMinRowHeight");
             this.nullableMeasurementAdapter.toJson(writer, governmentIdStepRowHeight.getGovernmentIdSelectOptionMinRowHeight());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

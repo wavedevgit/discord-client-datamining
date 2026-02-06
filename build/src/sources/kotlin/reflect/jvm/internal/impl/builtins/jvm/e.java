@@ -7,16 +7,16 @@ import kotlin.reflect.jvm.internal.impl.builtins.jvm.JvmBuiltIns;
 public class e implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final JvmBuiltIns f32266d;
+    private final JvmBuiltIns f32286d;
 
     public e(JvmBuiltIns jvmBuiltIns) {
-        this.f32266d = jvmBuiltIns;
+        this.f32286d = jvmBuiltIns;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         JvmBuiltIns.Settings u10;
-        u10 = JvmBuiltIns.u(this.f32266d);
+        u10 = JvmBuiltIns.u(this.f32286d);
         return u10;
     }
 }

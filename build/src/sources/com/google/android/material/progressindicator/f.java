@@ -57,12 +57,12 @@ public final class f extends g {
 
     /* JADX INFO: Access modifiers changed from: private */
     public float x() {
-        return this.D.f15291b;
+        return this.D.f15271b;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void z(float f10) {
-        this.D.f15291b = f10;
+        this.D.f15271b = f10;
         invalidateSelf();
     }
 
@@ -77,19 +77,19 @@ public final class f extends g {
         if (!getBounds().isEmpty() && isVisible() && canvas.getClipBounds(rect)) {
             canvas.save();
             this.A.g(canvas, getBounds(), h(), k(), j());
-            this.f15285x.setStyle(Paint.Style.FILL);
-            this.f15285x.setAntiAlias(true);
+            this.f15265x.setStyle(Paint.Style.FILL);
+            this.f15265x.setAntiAlias(true);
             h.a aVar = this.D;
-            b bVar = this.f15274e;
-            aVar.f15292c = bVar.f15244c[0];
-            int i10 = bVar.f15248g;
+            b bVar = this.f15254e;
+            aVar.f15272c = bVar.f15224c[0];
+            int i10 = bVar.f15228g;
             if (i10 > 0) {
-                this.A.d(canvas, this.f15285x, x(), 1.0f, this.f15274e.f15245d, getAlpha(), (int) ((i10 * u1.a.a(x(), 0.0f, 0.01f)) / 0.01f));
+                this.A.d(canvas, this.f15265x, x(), 1.0f, this.f15254e.f15225d, getAlpha(), (int) ((i10 * u1.a.a(x(), 0.0f, 0.01f)) / 0.01f));
             } else {
-                this.A.d(canvas, this.f15285x, 0.0f, 1.0f, bVar.f15245d, getAlpha(), 0);
+                this.A.d(canvas, this.f15265x, 0.0f, 1.0f, bVar.f15225d, getAlpha(), 0);
             }
-            this.A.c(canvas, this.f15285x, this.D, getAlpha());
-            this.A.b(canvas, this.f15285x, this.f15274e.f15244c[0], getAlpha());
+            this.A.c(canvas, this.f15265x, this.D, getAlpha());
+            this.A.b(canvas, this.f15265x, this.f15254e.f15224c[0], getAlpha());
             canvas.restore();
         }
     }
@@ -166,7 +166,7 @@ public final class f extends g {
     @Override // com.google.android.material.progressindicator.g
     public boolean r(boolean z10, boolean z11, boolean z12) {
         boolean r10 = super.r(z10, z11, z12);
-        float a10 = this.f15275i.a(this.f15273d.getContentResolver());
+        float a10 = this.f15255i.a(this.f15253d.getContentResolver());
         if (a10 == 0.0f) {
             this.E = true;
             return r10;

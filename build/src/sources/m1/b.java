@@ -6,5 +6,5 @@ import androidx.core.view.u;
 public abstract class b extends ConstraintLayout implements u {
 
     /* renamed from: d  reason: collision with root package name */
-    public static boolean f37241d;
+    public static boolean f36823d;
 }

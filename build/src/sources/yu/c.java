@@ -1,64 +1,49 @@
 package yu;
 
-import java.util.ArrayList;
+import bv.d;
 import java.util.List;
 import kotlin.collections.CollectionsKt;
-import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.Intrinsics;
-import xu.b;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface c extends xu.b {
+public final class c implements su.b, bv.d {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a {
-        public static boolean a(c cVar, Object obj, Function2 operator) {
-            Intrinsics.checkNotNullParameter(operator, "operator");
-            List c10 = vv.a.c(obj);
-            if (c10.size() != 1) {
-                List<Object> list = c10;
-                ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
-                for (Object obj2 : list) {
-                    arrayList.add(cVar.a(obj2));
-                }
-                return cVar.b(arrayList, operator);
-            }
-            return false;
-        }
+    /* renamed from: a  reason: collision with root package name */
+    public static final c f55631a = new c();
 
-        public static boolean b(c cVar, List list, Function2 operator) {
-            Intrinsics.checkNotNullParameter(operator, "operator");
-            return b.a.b(cVar, list, operator);
-        }
-
-        public static List c(c cVar, Comparable comparable, Comparable comparable2) {
-            return cVar.d(comparable, comparable2);
-        }
-
-        public static List d(c cVar, Comparable comparable, Comparable comparable2) {
-            return b.a.d(cVar, comparable, comparable2);
-        }
-
-        public static Object e(c cVar, Object obj) {
-            return b.a.e(cVar, obj);
-        }
-
-        public static Object f(c cVar, Object obj) {
-            Number number;
-            if (obj instanceof Number) {
-                number = (Number) obj;
-            } else {
-                number = null;
-            }
-            if (number != null) {
-                return Double.valueOf(number.doubleValue());
-            }
-            return obj;
-        }
-
-        public static Boolean g(c cVar, Object obj) {
-            return b.a.g(cVar, obj);
-        }
+    private c() {
     }
 
-    Object a(Object obj);
+    private final Object a(List list) {
+        int size = list.size();
+        if (size == 0) {
+            return null;
+        }
+        if (size != 1) {
+            if (size != 2) {
+                if (size != 3) {
+                    if (b(CollectionsKt.firstOrNull(list))) {
+                        return cw.c.b(list);
+                    }
+                    return a(list.subList(2, list.size()));
+                } else if (b(CollectionsKt.firstOrNull(list))) {
+                    return cw.c.b(list);
+                } else {
+                    return cw.c.c(list);
+                }
+            } else if (!b(CollectionsKt.firstOrNull(list))) {
+                return null;
+            } else {
+                return cw.c.b(list);
+            }
+        }
+        return CollectionsKt.firstOrNull(list);
+    }
+
+    public boolean b(Object obj) {
+        return d.a.a(this, obj);
+    }
+
+    @Override // su.b
+    public Object f(Object obj, Object obj2) {
+        return a(cw.a.c(obj));
+    }
 }

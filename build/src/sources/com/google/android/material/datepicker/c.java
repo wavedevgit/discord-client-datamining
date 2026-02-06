@@ -9,42 +9,42 @@ import android.graphics.Paint;
 public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    final b f14891a;
+    final b f14871a;
 
     /* renamed from: b  reason: collision with root package name */
-    final b f14892b;
+    final b f14872b;
 
     /* renamed from: c  reason: collision with root package name */
-    final b f14893c;
+    final b f14873c;
 
     /* renamed from: d  reason: collision with root package name */
-    final b f14894d;
+    final b f14874d;
 
     /* renamed from: e  reason: collision with root package name */
-    final b f14895e;
+    final b f14875e;
 
     /* renamed from: f  reason: collision with root package name */
-    final b f14896f;
+    final b f14876f;
 
     /* renamed from: g  reason: collision with root package name */
-    final b f14897g;
+    final b f14877g;
 
     /* renamed from: h  reason: collision with root package name */
-    final Paint f14898h;
+    final Paint f14878h;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c(Context context) {
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(mh.b.d(context, zg.b.f55569z, i.class.getCanonicalName()), zg.k.f55870o3);
-        this.f14891a = b.a(context, obtainStyledAttributes.getResourceId(zg.k.f55906s3, 0));
-        this.f14897g = b.a(context, obtainStyledAttributes.getResourceId(zg.k.f55888q3, 0));
-        this.f14892b = b.a(context, obtainStyledAttributes.getResourceId(zg.k.f55897r3, 0));
-        this.f14893c = b.a(context, obtainStyledAttributes.getResourceId(zg.k.f55915t3, 0));
-        ColorStateList a10 = mh.c.a(context, obtainStyledAttributes, zg.k.f55924u3);
-        this.f14894d = b.a(context, obtainStyledAttributes.getResourceId(zg.k.f55942w3, 0));
-        this.f14895e = b.a(context, obtainStyledAttributes.getResourceId(zg.k.f55933v3, 0));
-        this.f14896f = b.a(context, obtainStyledAttributes.getResourceId(zg.k.f55951x3, 0));
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(nh.b.d(context, ah.b.f664z, i.class.getCanonicalName()), ah.k.f965o3);
+        this.f14871a = b.a(context, obtainStyledAttributes.getResourceId(ah.k.f1001s3, 0));
+        this.f14877g = b.a(context, obtainStyledAttributes.getResourceId(ah.k.f983q3, 0));
+        this.f14872b = b.a(context, obtainStyledAttributes.getResourceId(ah.k.f992r3, 0));
+        this.f14873c = b.a(context, obtainStyledAttributes.getResourceId(ah.k.f1010t3, 0));
+        ColorStateList a10 = nh.c.a(context, obtainStyledAttributes, ah.k.f1019u3);
+        this.f14874d = b.a(context, obtainStyledAttributes.getResourceId(ah.k.f1037w3, 0));
+        this.f14875e = b.a(context, obtainStyledAttributes.getResourceId(ah.k.f1028v3, 0));
+        this.f14876f = b.a(context, obtainStyledAttributes.getResourceId(ah.k.f1046x3, 0));
         Paint paint = new Paint();
-        this.f14898h = paint;
+        this.f14878h = paint;
         paint.setColor(a10.getDefaultColor());
         obtainStyledAttributes.recycle();
     }

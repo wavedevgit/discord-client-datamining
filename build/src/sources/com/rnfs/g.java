@@ -7,31 +7,31 @@ import java.util.ArrayList;
 public class g {
 
     /* renamed from: a  reason: collision with root package name */
-    public URL f17825a;
+    public URL f17805a;
 
     /* renamed from: b  reason: collision with root package name */
-    public ArrayList f17826b;
+    public ArrayList f17806b;
 
     /* renamed from: c  reason: collision with root package name */
-    public boolean f17827c;
+    public boolean f17807c;
 
     /* renamed from: d  reason: collision with root package name */
-    public ReadableMap f17828d;
+    public ReadableMap f17808d;
 
     /* renamed from: e  reason: collision with root package name */
-    public ReadableMap f17829e;
+    public ReadableMap f17809e;
 
     /* renamed from: f  reason: collision with root package name */
-    public String f17830f;
+    public String f17810f;
 
     /* renamed from: g  reason: collision with root package name */
-    public b f17831g;
+    public b f17811g;
 
     /* renamed from: h  reason: collision with root package name */
-    public c f17832h;
+    public c f17812h;
 
     /* renamed from: i  reason: collision with root package name */
-    public a f17833i;
+    public a f17813i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public interface a {

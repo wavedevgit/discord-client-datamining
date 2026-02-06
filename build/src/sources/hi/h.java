@@ -1,20 +1,22 @@
 package hi;
 
-import java.util.concurrent.atomic.AtomicReference;
+import java.io.File;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public enum h implements e {
-    INSTANCE;
-    
+final class h implements m {
 
-    /* renamed from: e  reason: collision with root package name */
-    private static final AtomicReference f25876e = new AtomicReference(null);
+    /* renamed from: a  reason: collision with root package name */
+    final /* synthetic */ i f26004a;
 
-    public final void a(f fVar) {
-        f25876e.set(fVar);
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public h(i iVar) {
+        this.f26004a = iVar;
     }
 
-    @Override // hi.e
-    public final f zza() {
-        return (f) f25876e.get();
+    @Override // hi.m
+    public final void a(n nVar, File file, boolean z10) {
+        this.f26004a.f26006b.add(file);
+        if (!z10) {
+            this.f26004a.f26007c.set(false);
+        }
     }
 }

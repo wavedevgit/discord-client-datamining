@@ -1,53 +1,152 @@
 package um;
 
-import android.content.Context;
-import android.content.res.TypedArray;
-import android.graphics.Color;
-import android.os.Build;
-import com.facebook.react.uimanager.ThemedReactContext;
-import com.facebook.react.views.text.internal.span.SetSpanOperation;
-import com.reactnativekeyboardcontroller.d;
-import java.util.Map;
-import kotlin.Pair;
-import kotlin.collections.o0;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.ViewParent;
+import android.widget.EditText;
+import com.facebook.react.bridge.UiThreadUtil;
+import java.util.ArrayList;
+import java.util.List;
 import kotlin.jvm.internal.Intrinsics;
-import or.v;
+import kotlin.ranges.d;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class c {
+public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Map f51473a = o0.m(v.a("com.android.inputmethod.latin", v.a(Integer.valueOf(com.reactnativekeyboardcontroller.c.f17589a), Integer.valueOf(com.reactnativekeyboardcontroller.c.f17589a))), v.a("com.google.android.inputmethod.latin", v.a(Integer.valueOf(com.reactnativekeyboardcontroller.c.f17591c), Integer.valueOf(com.reactnativekeyboardcontroller.c.f17590b))), v.a("com.touchtype.swiftkey", v.a(Integer.valueOf(com.reactnativekeyboardcontroller.c.f17597i), Integer.valueOf(com.reactnativekeyboardcontroller.c.f17596h))), v.a("com.google.android.googlequicksearchbox", v.a(Integer.valueOf(com.reactnativekeyboardcontroller.c.f17593e), Integer.valueOf(com.reactnativekeyboardcontroller.c.f17592d))), v.a("com.google.android.tts", v.a(Integer.valueOf(com.reactnativekeyboardcontroller.c.f17593e), Integer.valueOf(com.reactnativekeyboardcontroller.c.f17592d))), v.a("ru.yandex.androidkeyboard", v.a(Integer.valueOf(com.reactnativekeyboardcontroller.c.f17599k), Integer.valueOf(com.reactnativekeyboardcontroller.c.f17598j))), v.a("com.samsung.android.honeyboard", v.a(Integer.valueOf(com.reactnativekeyboardcontroller.c.f17595g), Integer.valueOf(com.reactnativekeyboardcontroller.c.f17594f))));
+    public static final c f51631a = new c();
 
-    public static final a a(Context context, int i10) {
-        Intrinsics.checkNotNullParameter(context, "<this>");
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(i10, d.f17600a);
-        Intrinsics.checkNotNullExpressionValue(obtainStyledAttributes, "obtainStyledAttributes(...)");
-        try {
-            return new a(obtainStyledAttributes.getColor(d.f17601b, -16777216), obtainStyledAttributes.getInt(d.f17602c, 0));
-        } finally {
-            obtainStyledAttributes.recycle();
+    private c() {
+    }
+
+    private final EditText b(View view, int i10) {
+        ViewGroup viewGroup;
+        int i11;
+        int i12;
+        ViewParent parent = view.getParent();
+        if (parent instanceof ViewGroup) {
+            viewGroup = (ViewGroup) parent;
+        } else {
+            viewGroup = null;
+        }
+        if (viewGroup == null) {
+            return null;
+        }
+        int indexOfChild = viewGroup.indexOfChild(view);
+        if (i10 > 0) {
+            i11 = indexOfChild + 1;
+        } else {
+            i11 = indexOfChild - 1;
+        }
+        if (i10 > 0) {
+            i12 = viewGroup.getChildCount();
+        } else {
+            i12 = -1;
+        }
+        while (i11 != i12) {
+            View childAt = viewGroup.getChildAt(i11);
+            Intrinsics.checkNotNull(childAt);
+            EditText d10 = d(childAt, i10);
+            if (d10 != null) {
+                return d10;
+            }
+            i11 += i10;
+        }
+        return b(viewGroup, i10);
+    }
+
+    private final EditText c(ViewGroup viewGroup, int i10) {
+        kotlin.ranges.a p10;
+        int childCount = viewGroup.getChildCount();
+        if (i10 > 0) {
+            p10 = d.u(0, childCount);
+        } else {
+            p10 = d.p(childCount - 1, 0);
+        }
+        int d10 = p10.d();
+        int e10 = p10.e();
+        int f10 = p10.f();
+        if ((f10 <= 0 || d10 > e10) && (f10 >= 0 || e10 > d10)) {
+            return null;
+        }
+        while (true) {
+            View childAt = viewGroup.getChildAt(d10);
+            Intrinsics.checkNotNull(childAt);
+            EditText d11 = d(childAt, i10);
+            if (d11 != null) {
+                return d11;
+            }
+            if (d10 != e10) {
+                d10 += f10;
+            } else {
+                return null;
+            }
         }
     }
 
-    public static final int b(ThemedReactContext themedReactContext) {
-        Intrinsics.checkNotNullParameter(themedReactContext, "<this>");
-        String a10 = jm.a.a(themedReactContext);
-        boolean c10 = jm.a.c(themedReactContext);
-        nm.a aVar = nm.a.f41373a;
-        nm.a.c(aVar, "Skins", "Current IME: " + a10, null, 4, null);
-        Pair pair = (Pair) f51473a.get(a10);
-        if (pair == null) {
-            pair = v.a(Integer.valueOf(com.reactnativekeyboardcontroller.c.f17591c), Integer.valueOf(com.reactnativekeyboardcontroller.c.f17590b));
+    private final EditText d(View view, int i10) {
+        if (i(view)) {
+            Intrinsics.checkNotNull(view, "null cannot be cast to non-null type android.widget.EditText");
+            return (EditText) view;
+        } else if (view instanceof ViewGroup) {
+            return c((ViewGroup) view, i10);
+        } else {
+            return null;
         }
-        int intValue = ((Number) pair.a()).intValue();
-        int intValue2 = ((Number) pair.b()).intValue();
-        if (c10 && Build.VERSION.SDK_INT > 29) {
-            intValue = intValue2;
-        }
-        return a(themedReactContext, intValue).a();
     }
 
-    public static final int c(int i10, int i11) {
-        return Color.argb(Color.alpha(i10), kotlin.ranges.d.m(Color.red(i10) + i11, 0, SetSpanOperation.SPAN_MAX_PRIORITY), kotlin.ranges.d.m(Color.green(i10) + i11, 0, SetSpanOperation.SPAN_MAX_PRIORITY), kotlin.ranges.d.m(Color.blue(i10) + i11, 0, SetSpanOperation.SPAN_MAX_PRIORITY));
+    private final EditText e(View view) {
+        return b(view, 1);
+    }
+
+    private final EditText f(View view) {
+        return b(view, -1);
+    }
+
+    private static final void h(List list, View view) {
+        if (f51631a.i(view)) {
+            Intrinsics.checkNotNull(view, "null cannot be cast to non-null type android.widget.EditText");
+            list.add((EditText) view);
+        } else if (view instanceof ViewGroup) {
+            ViewGroup viewGroup = (ViewGroup) view;
+            int childCount = viewGroup.getChildCount();
+            for (int i10 = 0; i10 < childCount; i10++) {
+                h(list, viewGroup.getChildAt(i10));
+            }
+        }
+    }
+
+    private final boolean i(View view) {
+        if ((view instanceof EditText) && ((EditText) view).isEnabled()) {
+            return true;
+        }
+        return false;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final void k(EditText editText) {
+        lm.c.e(editText);
+    }
+
+    public final List g(View view) {
+        ArrayList arrayList = new ArrayList();
+        h(arrayList, view);
+        return arrayList;
+    }
+
+    public final void j(String direction, View view) {
+        final EditText f10;
+        Intrinsics.checkNotNullParameter(direction, "direction");
+        Intrinsics.checkNotNullParameter(view, "view");
+        if (Intrinsics.areEqual(direction, "next")) {
+            f10 = e(view);
+        } else {
+            f10 = f(view);
+        }
+        UiThreadUtil.runOnUiThread(new Runnable() { // from class: um.b
+            @Override // java.lang.Runnable
+            public final void run() {
+                c.k(f10);
+            }
+        });
     }
 }

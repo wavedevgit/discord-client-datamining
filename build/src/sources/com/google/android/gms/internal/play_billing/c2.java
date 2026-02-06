@@ -6,26 +6,26 @@ import java.util.Map;
 final class c2 implements Iterator {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Iterator f14196d;
+    private final Iterator f14159d;
 
     public c2(Iterator it) {
-        this.f14196d = it;
+        this.f14159d = it;
     }
 
     @Override // java.util.Iterator
     public final boolean hasNext() {
-        return this.f14196d.hasNext();
+        return this.f14159d.hasNext();
     }
 
     @Override // java.util.Iterator
     public final /* bridge */ /* synthetic */ Object next() {
-        Map.Entry entry = (Map.Entry) this.f14196d.next();
+        Map.Entry entry = (Map.Entry) this.f14159d.next();
         entry.getValue();
         return entry;
     }
 
     @Override // java.util.Iterator
     public final void remove() {
-        this.f14196d.remove();
+        this.f14159d.remove();
     }
 }

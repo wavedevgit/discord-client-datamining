@@ -1,38 +1,39 @@
 package uu;
 
-import java.util.ArrayList;
+import bw.a;
 import java.util.List;
+import java.util.Map;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class a implements qu.b {
+public interface a extends bw.a {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final a f51727a = new a();
-
-    private a() {
-    }
-
-    private final boolean b(Object obj) {
-        if (obj != null) {
-            if (!(obj instanceof String) || ((CharSequence) obj).length() != 0) {
-                return false;
-            }
-            return true;
+    /* renamed from: uu.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class C0683a {
+        public static b a(a aVar, List expressionValues, Object obj, h evaluator) {
+            Intrinsics.checkNotNullParameter(expressionValues, "expressionValues");
+            Intrinsics.checkNotNullParameter(evaluator, "evaluator");
+            List f10 = aVar.f(expressionValues, obj, evaluator);
+            Map a10 = cw.c.a(expressionValues);
+            return new b(f10, a10, aVar.a(a10, expressionValues));
         }
-        return true;
+
+        public static Object b(a aVar, Map map, List expressionValues) {
+            Intrinsics.checkNotNullParameter(expressionValues, "expressionValues");
+            if (map == null) {
+                return cw.c.b(expressionValues);
+            }
+            return null;
+        }
+
+        public static List c(a aVar, List expression, Object obj, h evaluator) {
+            Intrinsics.checkNotNullParameter(expression, "expression");
+            Intrinsics.checkNotNullParameter(evaluator, "evaluator");
+            return a.C0121a.a(aVar, expression, obj, evaluator);
+        }
     }
 
-    @Override // qu.b
-    /* renamed from: a */
-    public List f(Object obj, Object obj2) {
-        ArrayList arrayList = new ArrayList();
-        for (Object obj3 : vv.a.c(obj)) {
-            if (!f51727a.b(c.f51729a.f(obj3, obj2))) {
-                obj3 = null;
-            }
-            if (obj3 != null) {
-                arrayList.add(obj3);
-            }
-        }
-        return arrayList;
-    }
+    Object a(Map map, List list);
+
+    b c(List list, Object obj, h hVar);
 }

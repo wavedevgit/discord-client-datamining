@@ -1,49 +1,56 @@
 package rt;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-enum b0 implements pt.p {
-    TIMEZONE_ID,
-    TIMEZONE_OFFSET;
+public enum b0 implements p {
+    LEAP_SECOND,
+    DAYLIGHT_SAVING;
 
-    @Override // pt.p
-    public boolean B() {
+    @Override // rt.p
+    public boolean A() {
+        return false;
+    }
+
+    @Override // rt.p
+    public boolean D() {
         return false;
     }
 
     @Override // java.util.Comparator
     /* renamed from: a */
-    public int compare(pt.o oVar, pt.o oVar2) {
-        return oVar.u().a().compareTo(oVar2.u().a());
+    public int compare(o oVar, o oVar2) {
+        boolean n10 = oVar.n(this);
+        if (n10 == oVar2.n(this)) {
+            return 0;
+        }
+        if (n10) {
+            return 1;
+        }
+        return -1;
     }
 
-    @Override // pt.p
+    @Override // rt.p
     public char d() {
         return (char) 0;
     }
 
-    @Override // pt.p
+    @Override // rt.p
+    /* renamed from: g */
+    public Boolean e() {
+        return Boolean.TRUE;
+    }
+
+    @Override // rt.p
     public Class getType() {
-        return net.time4j.tz.k.class;
+        return Boolean.class;
     }
 
-    @Override // pt.p
-    /* renamed from: h */
-    public net.time4j.tz.k e() {
-        return net.time4j.tz.p.r(net.time4j.tz.f.AHEAD_OF_UTC, 14);
+    @Override // rt.p
+    public boolean i() {
+        return false;
     }
 
-    @Override // pt.p
+    @Override // rt.p
     /* renamed from: k */
-    public net.time4j.tz.k A() {
-        return net.time4j.tz.p.r(net.time4j.tz.f.BEHIND_UTC, 14);
-    }
-
-    @Override // pt.p
-    public boolean l() {
-        return false;
-    }
-
-    @Override // pt.p
-    public boolean z() {
-        return false;
+    public Boolean B() {
+        return Boolean.FALSE;
     }
 }

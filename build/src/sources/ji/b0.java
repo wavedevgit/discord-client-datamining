@@ -1,32 +1,55 @@
 package ji;
 
-import android.os.Binder;
-import android.os.IBinder;
-import android.os.IInterface;
-import android.os.Parcel;
+import java.lang.reflect.Array;
+import java.lang.reflect.Field;
+import java.util.Collection;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class b0 extends Binder implements IInterface {
-    /* JADX INFO: Access modifiers changed from: protected */
-    public b0(String str) {
-        attachInterface(this, str);
+public final class b0 extends c0 {
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public b0(Object obj, Field field, Class cls) {
+        super(obj, field, Array.newInstance(cls, 0).getClass());
     }
 
-    protected abstract boolean e(int i10, Parcel parcel, Parcel parcel2, int i11);
+    private final Class f() {
+        return b().getType().getComponentType();
+    }
 
-    @Override // android.os.Binder
-    public final boolean onTransact(int i10, Parcel parcel, Parcel parcel2, int i11) {
-        if (i10 > 16777215) {
-            if (super.onTransact(i10, parcel, parcel2, i11)) {
-                return true;
-            }
+    public final void d(Collection collection) {
+        int length;
+        Object[] objArr = (Object[]) a();
+        if (objArr == null) {
+            length = 0;
         } else {
-            parcel.enforceInterface(getInterfaceDescriptor());
+            length = objArr.length;
         }
-        return e(i10, parcel, parcel2, i11);
+        Object[] objArr2 = (Object[]) Array.newInstance(f(), collection.size() + length);
+        if (objArr != null) {
+            System.arraycopy(objArr, 0, objArr2, 0, objArr.length);
+        }
+        for (Object obj : collection) {
+            objArr2[length] = obj;
+            length++;
+        }
+        c(objArr2);
     }
 
-    @Override // android.os.IInterface
-    public final IBinder asBinder() {
-        return this;
+    public final void e(Collection collection) {
+        int length;
+        Object[] objArr = (Object[]) a();
+        int i10 = 0;
+        if (objArr == null) {
+            length = 0;
+        } else {
+            length = objArr.length;
+        }
+        Object[] objArr2 = (Object[]) Array.newInstance(f(), length + collection.size());
+        if (objArr != null) {
+            System.arraycopy(objArr, 0, objArr2, collection.size(), objArr.length);
+        }
+        for (Object obj : collection) {
+            objArr2[i10] = obj;
+            i10++;
+        }
+        c(objArr2);
     }
 }

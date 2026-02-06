@@ -10,10 +10,10 @@ import org.jetbrains.annotations.NotNull;
 public class LazyClassReceiverParameterDescriptor extends AbstractReceiverParameterDescriptor {
 
     /* renamed from: i  reason: collision with root package name */
-    private final ClassDescriptor f32474i;
+    private final ClassDescriptor f32494i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final ImplicitClassReceiver f32475o;
+    private final ImplicitClassReceiver f32495o;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public LazyClassReceiverParameterDescriptor(@NotNull ClassDescriptor classDescriptor) {
@@ -21,8 +21,8 @@ public class LazyClassReceiverParameterDescriptor extends AbstractReceiverParame
         if (classDescriptor == null) {
             a(0);
         }
-        this.f32474i = classDescriptor;
-        this.f32475o = new ImplicitClassReceiver(classDescriptor, null);
+        this.f32494i = classDescriptor;
+        this.f32495o = new ImplicitClassReceiver(classDescriptor, null);
     }
 
     private static /* synthetic */ void a(int i10) {
@@ -59,7 +59,7 @@ public class LazyClassReceiverParameterDescriptor extends AbstractReceiverParame
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptor
     @NotNull
     public DeclarationDescriptor getContainingDeclaration() {
-        ClassDescriptor classDescriptor = this.f32474i;
+        ClassDescriptor classDescriptor = this.f32494i;
         if (classDescriptor == null) {
             a(2);
         }
@@ -69,7 +69,7 @@ public class LazyClassReceiverParameterDescriptor extends AbstractReceiverParame
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ReceiverParameterDescriptor
     @NotNull
     public ReceiverValue getValue() {
-        ImplicitClassReceiver implicitClassReceiver = this.f32475o;
+        ImplicitClassReceiver implicitClassReceiver = this.f32495o;
         if (implicitClassReceiver == null) {
             a(1);
         }
@@ -78,6 +78,6 @@ public class LazyClassReceiverParameterDescriptor extends AbstractReceiverParame
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.impl.DeclarationDescriptorImpl
     public String toString() {
-        return "class " + this.f32474i.getName() + "::this";
+        return "class " + this.f32494i.getName() + "::this";
     }
 }

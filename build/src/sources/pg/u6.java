@@ -1,26 +1,29 @@
 package pg;
 
-import xi.c;
+import yi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class u6 implements xi.d {
+final class u6 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final u6 f45733a = new u6();
+    static final u6 f44777a = new u6();
+
+    /* renamed from: b  reason: collision with root package name */
+    private static final yi.c f44778b;
 
     static {
-        c.b a10 = xi.c.a("useCases");
-        v1 v1Var = new v1();
-        v1Var.a(1);
-        a10.b(v1Var.b()).a();
+        c.b a10 = yi.c.a("identifiedLanguage");
+        s1 s1Var = new s1();
+        s1Var.a(1);
+        f44778b = a10.b(s1Var.b()).a();
     }
 
     private u6() {
     }
 
-    @Override // xi.d
+    @Override // yi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        xi.e eVar = (xi.e) obj2;
+        yi.e eVar = (yi.e) obj2;
         throw null;
     }
 }

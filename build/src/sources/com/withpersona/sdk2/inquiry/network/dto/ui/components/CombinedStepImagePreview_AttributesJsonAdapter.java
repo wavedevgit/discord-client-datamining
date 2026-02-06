@@ -34,14 +34,14 @@ public final class CombinedStepImagePreview_AttributesJsonAdapter extends h {
     @NotNull
     public CombinedStepImagePreview.Attributes fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         while (reader.hasNext()) {
-            if (reader.W(this.options) == -1) {
+            if (reader.J(this.options) == -1) {
                 reader.E0();
-                reader.P();
+                reader.S();
             }
         }
-        reader.z();
+        reader.D();
         return new CombinedStepImagePreview.Attributes();
     }
 
@@ -50,7 +50,7 @@ public final class CombinedStepImagePreview_AttributesJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (attributes != null) {
             writer.k();
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

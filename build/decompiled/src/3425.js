@@ -7,47 +7,64 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = function arg0() {
         _fun29179: for (var _fun29179_ip = 0;;) switch (_fun29179_ip) {
             case 0:
-                var2 = arg0;
-                var1 = undefined;
-                if (!(var1 !== var2)) {
-                    _fun29179_ip = 87;
+                var4 = arg0;
+                var3 = undefined;
+                if (!(var3 !== var4)) {
+                    _fun29179_ip = 153;
                     continue _fun29179
                 }
-            case 9:
-                var4 = _closure1_slot0;
+            case 12:
+                var2 = _closure1_slot0;
                 var5 = _closure1_slot1;
-                var3 = 0;
-                var3 = var5[var3];
-                var3 = var4.bind(var1)(var3);
-                var3 = var3.bind(var1)(var2);
-                if (var3) {
-                    _fun29179_ip = 87;
+                var0 = 0;
+                var0 = var5[var0];
+                var0 = var2.bind(var3)(var0);
+                var5 = var0.bind(var3)(var4);
+                var2 = _closure1_slot0;
+                var0 = _closure1_slot1;
+                if (var5) {
+                    _fun29179_ip = 90;
                     continue _fun29179
                 }
-            case 39:
-                var3 = _closure1_slot0;
-                var4 = _closure1_slot1;
-                var0 = 1;
-                var0 = var4[var0];
-                var4 = var3.bind(var1)(var0);
-                var0 = var4.prototype;
-                var3 = Object.create(var0, {
+            case 50:
+                var5 = 1;
+                var5 = var0[var5];
+                var7 = var2.bind(var3)(var5);
+                var5 = var7.prototype;
+                var6 = Object.create(var5, {
                     constructor: {
-                        value: var4
+                        value: var7
                     }
                 });
-                var6 = 'Assertion failed: `Desc` must be a Property Descriptor';
-                var7 = var3;
-                var0 = new var7[var4](var6, var5);
-                var0 = var0 instanceof Object ? var0 : var3;
-                throw var0;
-            case 87:
-                var3 = _closure1_slot0;
-                var4 = _closure1_slot1;
-                var0 = 2;
-                var0 = var4[var0];
-                var0 = var3.bind(var1)(var0);
-                var0 = var0.bind(var1)(var2);
+                var9 = 'Assertion failed: `Desc` must be a Property Descriptor';
+                var10 = var6;
+                var5 = new var10[var7](var9, var8);
+                var5 = var5 instanceof Object ? var5 : var6;
+                throw var5;
+            case 90:
+                var5 = 2;
+                var0 = var0[var5];
+                var2 = var2.bind(var3)(var0);
+                var0 = '[[Value]]';
+                var0 = var2.bind(var3)(var4, var0);
+                var0 = !var0;
+                if (!var0) {
+                    _fun29179_ip = 148;
+                    continue _fun29179
+                }
+            case 118:
+                var2 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var1 = var1[var5];
+                var2 = var2.bind(var3)(var1);
+                var1 = '[[Writable]]';
+                var1 = var2.bind(var3)(var4, var1);
+                var0 = !var1;
+            case 148:
+                var0 = !var0;
+                return var0;
+            case 153:
+                var0 = false;
                 return var0;
         }
     };
@@ -55,4 +72,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.exports = var1;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3419, 518, 3426]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3421, 518, 550]);

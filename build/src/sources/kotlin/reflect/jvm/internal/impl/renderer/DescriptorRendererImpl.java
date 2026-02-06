@@ -90,10 +90,10 @@ import org.jetbrains.annotations.NotNull;
 public final class DescriptorRendererImpl extends DescriptorRenderer implements DescriptorRendererOptions {
 
     /* renamed from: a  reason: collision with root package name */
-    private final DescriptorRendererOptionsImpl f34011a;
+    private final DescriptorRendererOptionsImpl f34031a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Lazy f34012b;
+    private final Lazy f34032b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     private final class RenderDeclarationDescriptorVisitor implements DeclarationDescriptorVisitor {
@@ -136,7 +136,7 @@ public final class DescriptorRendererImpl extends DescriptorRenderer implements 
                 if (i10 == 3) {
                     return;
                 }
-                throw new or.p();
+                throw new qr.p();
             } else {
                 c(propertyAccessorDescriptor, sb2);
             }
@@ -223,79 +223,79 @@ public final class DescriptorRendererImpl extends DescriptorRenderer implements 
         @Override // kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptorVisitor
         public /* bridge */ /* synthetic */ Object visitClassDescriptor(ClassDescriptor classDescriptor, Object obj) {
             a(classDescriptor, (StringBuilder) obj);
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptorVisitor
         public /* bridge */ /* synthetic */ Object visitConstructorDescriptor(ConstructorDescriptor constructorDescriptor, Object obj) {
             b(constructorDescriptor, (StringBuilder) obj);
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptorVisitor
         public /* bridge */ /* synthetic */ Object visitFunctionDescriptor(FunctionDescriptor functionDescriptor, Object obj) {
             c(functionDescriptor, (StringBuilder) obj);
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptorVisitor
         public /* bridge */ /* synthetic */ Object visitModuleDeclaration(ModuleDescriptor moduleDescriptor, Object obj) {
             d(moduleDescriptor, (StringBuilder) obj);
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptorVisitor
         public /* bridge */ /* synthetic */ Object visitPackageFragmentDescriptor(PackageFragmentDescriptor packageFragmentDescriptor, Object obj) {
             e(packageFragmentDescriptor, (StringBuilder) obj);
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptorVisitor
         public /* bridge */ /* synthetic */ Object visitPackageViewDescriptor(PackageViewDescriptor packageViewDescriptor, Object obj) {
             f(packageViewDescriptor, (StringBuilder) obj);
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptorVisitor
         public /* bridge */ /* synthetic */ Object visitPropertyDescriptor(PropertyDescriptor propertyDescriptor, Object obj) {
             h(propertyDescriptor, (StringBuilder) obj);
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptorVisitor
         public /* bridge */ /* synthetic */ Object visitPropertyGetterDescriptor(PropertyGetterDescriptor propertyGetterDescriptor, Object obj) {
             i(propertyGetterDescriptor, (StringBuilder) obj);
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptorVisitor
         public /* bridge */ /* synthetic */ Object visitPropertySetterDescriptor(PropertySetterDescriptor propertySetterDescriptor, Object obj) {
             j(propertySetterDescriptor, (StringBuilder) obj);
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptorVisitor
         public /* bridge */ /* synthetic */ Object visitReceiverParameterDescriptor(ReceiverParameterDescriptor receiverParameterDescriptor, Object obj) {
             k(receiverParameterDescriptor, (StringBuilder) obj);
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptorVisitor
         public /* bridge */ /* synthetic */ Object visitTypeAliasDescriptor(TypeAliasDescriptor typeAliasDescriptor, Object obj) {
             l(typeAliasDescriptor, (StringBuilder) obj);
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptorVisitor
         public /* bridge */ /* synthetic */ Object visitTypeParameterDescriptor(TypeParameterDescriptor typeParameterDescriptor, Object obj) {
             m(typeParameterDescriptor, (StringBuilder) obj);
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptorVisitor
         public /* bridge */ /* synthetic */ Object visitValueParameterDescriptor(ValueParameterDescriptor valueParameterDescriptor, Object obj) {
             n(valueParameterDescriptor, (StringBuilder) obj);
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
     }
 
@@ -334,9 +334,9 @@ public final class DescriptorRendererImpl extends DescriptorRenderer implements 
 
     public DescriptorRendererImpl(@NotNull DescriptorRendererOptionsImpl options) {
         Intrinsics.checkNotNullParameter(options, "options");
-        this.f34011a = options;
+        this.f34031a = options;
         options.isLocked();
-        this.f34012b = or.l.a(new l(this));
+        this.f34032b = qr.l.a(new l(this));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -517,7 +517,7 @@ public final class DescriptorRendererImpl extends DescriptorRenderer implements 
             if (i10 == 2) {
                 return "&rarr;";
             }
-            throw new or.p();
+            throw new qr.p();
         }
         return G("->");
     }
@@ -550,7 +550,7 @@ public final class DescriptorRendererImpl extends DescriptorRenderer implements 
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final DescriptorRendererImpl H(DescriptorRendererImpl descriptorRendererImpl) {
-        DescriptorRenderer withOptions = descriptorRendererImpl.withOptions(q.f34069d);
+        DescriptorRenderer withOptions = descriptorRendererImpl.withOptions(q.f34089d);
         Intrinsics.checkNotNull(withOptions, "null cannot be cast to non-null type org.jetbrains.kotlin.renderer.DescriptorRendererImpl");
         return (DescriptorRendererImpl) withOptions;
     }
@@ -565,7 +565,7 @@ public final class DescriptorRendererImpl extends DescriptorRenderer implements 
     public static final Unit I(DescriptorRendererOptions withOptions) {
         Intrinsics.checkNotNullParameter(withOptions, "$this$withOptions");
         withOptions.setExcludedTypeAnnotationClasses(x0.l(withOptions.getExcludedTypeAnnotationClasses(), CollectionsKt.o(StandardNames.FqNames.extensionFunctionType, StandardNames.FqNames.contextFunctionTypeParams)));
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     private final void I0(FunctionDescriptor functionDescriptor, StringBuilder sb2) {
@@ -573,7 +573,7 @@ public final class DescriptorRendererImpl extends DescriptorRenderer implements 
     }
 
     private final DescriptorRendererImpl J() {
-        return (DescriptorRendererImpl) this.f34012b.getValue();
+        return (DescriptorRendererImpl) this.f34032b.getValue();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1302,7 +1302,7 @@ public final class DescriptorRendererImpl extends DescriptorRenderer implements 
             if (i10 == 3) {
                 return false;
             }
-            throw new or.p();
+            throw new qr.p();
         } else if (!z10) {
             return true;
         } else {
@@ -1336,7 +1336,7 @@ public final class DescriptorRendererImpl extends DescriptorRenderer implements 
     }
 
     private final String a0(ConstantValue constantValue) {
-        Function1<ConstantValue<?>, String> propertyConstantRenderer = this.f34011a.getPropertyConstantRenderer();
+        Function1<ConstantValue<?>, String> propertyConstantRenderer = this.f34031a.getPropertyConstantRenderer();
         if (propertyConstantRenderer != null) {
             return (String) propertyConstantRenderer.invoke(constantValue);
         }
@@ -1365,7 +1365,7 @@ public final class DescriptorRendererImpl extends DescriptorRenderer implements 
                     }
                     return asString + "::class";
                 } else {
-                    throw new or.p();
+                    throw new qr.p();
                 }
             }
             return constantValue.toString();
@@ -1448,7 +1448,7 @@ public final class DescriptorRendererImpl extends DescriptorRenderer implements 
             sb2.append(((StubTypeForBuilderInference) simpleType).getOriginalTypeVariable().toString());
         } else {
             M0(this, sb2, kotlinType, null, 2, null);
-            Unit unit = Unit.f31988a;
+            Unit unit = Unit.f32008a;
         }
         if (kotlinType.isMarkedNullable()) {
             sb2.append("?");
@@ -1464,7 +1464,7 @@ public final class DescriptorRendererImpl extends DescriptorRenderer implements 
             if (i10 == 2) {
                 return "<font color=red><b>" + str + "</b></font>";
             }
-            throw new or.p();
+            throw new qr.p();
         }
         return str;
     }
@@ -1678,7 +1678,7 @@ public final class DescriptorRendererImpl extends DescriptorRenderer implements 
                     return "<b>" + str + "</b>";
                 }
             } else {
-                throw new or.p();
+                throw new qr.p();
             }
         }
         return str;
@@ -1778,7 +1778,7 @@ public final class DescriptorRendererImpl extends DescriptorRenderer implements 
         } else if (unwrap instanceof SimpleType) {
             E0(sb2, (SimpleType) unwrap);
         } else {
-            throw new or.p();
+            throw new qr.p();
         }
     }
 
@@ -1837,223 +1837,223 @@ public final class DescriptorRendererImpl extends DescriptorRenderer implements 
     }
 
     public boolean getActualPropertiesInPrimaryConstructor() {
-        return this.f34011a.getActualPropertiesInPrimaryConstructor();
+        return this.f34031a.getActualPropertiesInPrimaryConstructor();
     }
 
     public boolean getAlwaysRenderModifiers() {
-        return this.f34011a.getAlwaysRenderModifiers();
+        return this.f34031a.getAlwaysRenderModifiers();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.renderer.DescriptorRendererOptions
     @NotNull
     public AnnotationArgumentsRenderingPolicy getAnnotationArgumentsRenderingPolicy() {
-        return this.f34011a.getAnnotationArgumentsRenderingPolicy();
+        return this.f34031a.getAnnotationArgumentsRenderingPolicy();
     }
 
     public Function1<AnnotationDescriptor, Boolean> getAnnotationFilter() {
-        return this.f34011a.getAnnotationFilter();
+        return this.f34031a.getAnnotationFilter();
     }
 
     public boolean getBoldOnlyForNamesInHtml() {
-        return this.f34011a.getBoldOnlyForNamesInHtml();
+        return this.f34031a.getBoldOnlyForNamesInHtml();
     }
 
     public boolean getClassWithPrimaryConstructor() {
-        return this.f34011a.getClassWithPrimaryConstructor();
+        return this.f34031a.getClassWithPrimaryConstructor();
     }
 
     @NotNull
     public ClassifierNamePolicy getClassifierNamePolicy() {
-        return this.f34011a.getClassifierNamePolicy();
+        return this.f34031a.getClassifierNamePolicy();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.renderer.DescriptorRendererOptions
     public boolean getDebugMode() {
-        return this.f34011a.getDebugMode();
+        return this.f34031a.getDebugMode();
     }
 
     public Function1<ValueParameterDescriptor, String> getDefaultParameterValueRenderer() {
-        return this.f34011a.getDefaultParameterValueRenderer();
+        return this.f34031a.getDefaultParameterValueRenderer();
     }
 
     public boolean getEachAnnotationOnNewLine() {
-        return this.f34011a.getEachAnnotationOnNewLine();
+        return this.f34031a.getEachAnnotationOnNewLine();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.renderer.DescriptorRendererOptions
     public boolean getEnhancedTypes() {
-        return this.f34011a.getEnhancedTypes();
+        return this.f34031a.getEnhancedTypes();
     }
 
     @NotNull
     public Set<FqName> getExcludedAnnotationClasses() {
-        return this.f34011a.getExcludedAnnotationClasses();
+        return this.f34031a.getExcludedAnnotationClasses();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.renderer.DescriptorRendererOptions
     @NotNull
     public Set<FqName> getExcludedTypeAnnotationClasses() {
-        return this.f34011a.getExcludedTypeAnnotationClasses();
+        return this.f34031a.getExcludedTypeAnnotationClasses();
     }
 
     public boolean getIncludeAdditionalModifiers() {
-        return this.f34011a.getIncludeAdditionalModifiers();
+        return this.f34031a.getIncludeAdditionalModifiers();
     }
 
     public boolean getIncludeAnnotationArguments() {
-        return this.f34011a.getIncludeAnnotationArguments();
+        return this.f34031a.getIncludeAnnotationArguments();
     }
 
     public boolean getIncludeEmptyAnnotationArguments() {
-        return this.f34011a.getIncludeEmptyAnnotationArguments();
+        return this.f34031a.getIncludeEmptyAnnotationArguments();
     }
 
     public boolean getIncludePropertyConstant() {
-        return this.f34011a.getIncludePropertyConstant();
+        return this.f34031a.getIncludePropertyConstant();
     }
 
     public boolean getInformativeErrorType() {
-        return this.f34011a.getInformativeErrorType();
+        return this.f34031a.getInformativeErrorType();
     }
 
     @NotNull
     public Set<DescriptorRendererModifier> getModifiers() {
-        return this.f34011a.getModifiers();
+        return this.f34031a.getModifiers();
     }
 
     public boolean getNormalizedVisibilities() {
-        return this.f34011a.getNormalizedVisibilities();
+        return this.f34031a.getNormalizedVisibilities();
     }
 
     @NotNull
     public final DescriptorRendererOptionsImpl getOptions() {
-        return this.f34011a;
+        return this.f34031a;
     }
 
     @NotNull
     public OverrideRenderingPolicy getOverrideRenderingPolicy() {
-        return this.f34011a.getOverrideRenderingPolicy();
+        return this.f34031a.getOverrideRenderingPolicy();
     }
 
     @NotNull
     public ParameterNameRenderingPolicy getParameterNameRenderingPolicy() {
-        return this.f34011a.getParameterNameRenderingPolicy();
+        return this.f34031a.getParameterNameRenderingPolicy();
     }
 
     public boolean getParameterNamesInFunctionalTypes() {
-        return this.f34011a.getParameterNamesInFunctionalTypes();
+        return this.f34031a.getParameterNamesInFunctionalTypes();
     }
 
     public boolean getPresentableUnresolvedTypes() {
-        return this.f34011a.getPresentableUnresolvedTypes();
+        return this.f34031a.getPresentableUnresolvedTypes();
     }
 
     @NotNull
     public PropertyAccessorRenderingPolicy getPropertyAccessorRenderingPolicy() {
-        return this.f34011a.getPropertyAccessorRenderingPolicy();
+        return this.f34031a.getPropertyAccessorRenderingPolicy();
     }
 
     public boolean getReceiverAfterName() {
-        return this.f34011a.getReceiverAfterName();
+        return this.f34031a.getReceiverAfterName();
     }
 
     public boolean getRenderAbbreviatedTypeComments() {
-        return this.f34011a.getRenderAbbreviatedTypeComments();
+        return this.f34031a.getRenderAbbreviatedTypeComments();
     }
 
     public boolean getRenderCompanionObjectName() {
-        return this.f34011a.getRenderCompanionObjectName();
+        return this.f34031a.getRenderCompanionObjectName();
     }
 
     public boolean getRenderConstructorDelegation() {
-        return this.f34011a.getRenderConstructorDelegation();
+        return this.f34031a.getRenderConstructorDelegation();
     }
 
     public boolean getRenderConstructorKeyword() {
-        return this.f34011a.getRenderConstructorKeyword();
+        return this.f34031a.getRenderConstructorKeyword();
     }
 
     public boolean getRenderDefaultAnnotationArguments() {
-        return this.f34011a.getRenderDefaultAnnotationArguments();
+        return this.f34031a.getRenderDefaultAnnotationArguments();
     }
 
     public boolean getRenderDefaultModality() {
-        return this.f34011a.getRenderDefaultModality();
+        return this.f34031a.getRenderDefaultModality();
     }
 
     public boolean getRenderDefaultVisibility() {
-        return this.f34011a.getRenderDefaultVisibility();
+        return this.f34031a.getRenderDefaultVisibility();
     }
 
     public boolean getRenderPrimaryConstructorParametersAsProperties() {
-        return this.f34011a.getRenderPrimaryConstructorParametersAsProperties();
+        return this.f34031a.getRenderPrimaryConstructorParametersAsProperties();
     }
 
     public boolean getRenderTypeExpansions() {
-        return this.f34011a.getRenderTypeExpansions();
+        return this.f34031a.getRenderTypeExpansions();
     }
 
     public boolean getRenderUnabbreviatedType() {
-        return this.f34011a.getRenderUnabbreviatedType();
+        return this.f34031a.getRenderUnabbreviatedType();
     }
 
     public boolean getSecondaryConstructorsAsPrimary() {
-        return this.f34011a.getSecondaryConstructorsAsPrimary();
+        return this.f34031a.getSecondaryConstructorsAsPrimary();
     }
 
     public boolean getStartFromDeclarationKeyword() {
-        return this.f34011a.getStartFromDeclarationKeyword();
+        return this.f34031a.getStartFromDeclarationKeyword();
     }
 
     public boolean getStartFromName() {
-        return this.f34011a.getStartFromName();
+        return this.f34031a.getStartFromName();
     }
 
     @NotNull
     public RenderingFormat getTextFormat() {
-        return this.f34011a.getTextFormat();
+        return this.f34031a.getTextFormat();
     }
 
     @NotNull
     public Function1<KotlinType, KotlinType> getTypeNormalizer() {
-        return this.f34011a.getTypeNormalizer();
+        return this.f34031a.getTypeNormalizer();
     }
 
     public boolean getUninferredTypeParameterAsName() {
-        return this.f34011a.getUninferredTypeParameterAsName();
+        return this.f34031a.getUninferredTypeParameterAsName();
     }
 
     public boolean getUnitReturnType() {
-        return this.f34011a.getUnitReturnType();
+        return this.f34031a.getUnitReturnType();
     }
 
     @NotNull
     public DescriptorRenderer.ValueParametersHandler getValueParametersHandler() {
-        return this.f34011a.getValueParametersHandler();
+        return this.f34031a.getValueParametersHandler();
     }
 
     public boolean getVerbose() {
-        return this.f34011a.getVerbose();
+        return this.f34031a.getVerbose();
     }
 
     public boolean getWithDefinedIn() {
-        return this.f34011a.getWithDefinedIn();
+        return this.f34031a.getWithDefinedIn();
     }
 
     public boolean getWithSourceFileForTopLevel() {
-        return this.f34011a.getWithSourceFileForTopLevel();
+        return this.f34031a.getWithSourceFileForTopLevel();
     }
 
     public boolean getWithoutReturnType() {
-        return this.f34011a.getWithoutReturnType();
+        return this.f34031a.getWithoutReturnType();
     }
 
     public boolean getWithoutSuperTypes() {
-        return this.f34011a.getWithoutSuperTypes();
+        return this.f34031a.getWithoutSuperTypes();
     }
 
     public boolean getWithoutTypeParameters() {
-        return this.f34011a.getWithoutTypeParameters();
+        return this.f34031a.getWithoutTypeParameters();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.renderer.DescriptorRenderer
@@ -2150,7 +2150,7 @@ public final class DescriptorRendererImpl extends DescriptorRenderer implements 
             if (i10 == 2) {
                 return "<i>" + message + "</i>";
             }
-            throw new or.p();
+            throw new qr.p();
         }
         return message;
     }
@@ -2195,7 +2195,7 @@ public final class DescriptorRendererImpl extends DescriptorRenderer implements 
         if (!(mo1199getDeclarationDescriptor instanceof TypeParameterDescriptor) && !(mo1199getDeclarationDescriptor instanceof ClassDescriptor) && !(mo1199getDeclarationDescriptor instanceof TypeAliasDescriptor)) {
             if (mo1199getDeclarationDescriptor == null) {
                 if (typeConstructor instanceof IntersectionTypeConstructor) {
-                    return ((IntersectionTypeConstructor) typeConstructor).makeDebugNameForIntersectionType(m.f34065d);
+                    return ((IntersectionTypeConstructor) typeConstructor).makeDebugNameForIntersectionType(m.f34085d);
                 }
                 return typeConstructor.toString();
             }
@@ -2216,76 +2216,76 @@ public final class DescriptorRendererImpl extends DescriptorRenderer implements 
     @Override // kotlin.reflect.jvm.internal.impl.renderer.DescriptorRendererOptions
     public void setAnnotationArgumentsRenderingPolicy(@NotNull AnnotationArgumentsRenderingPolicy annotationArgumentsRenderingPolicy) {
         Intrinsics.checkNotNullParameter(annotationArgumentsRenderingPolicy, "<set-?>");
-        this.f34011a.setAnnotationArgumentsRenderingPolicy(annotationArgumentsRenderingPolicy);
+        this.f34031a.setAnnotationArgumentsRenderingPolicy(annotationArgumentsRenderingPolicy);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.renderer.DescriptorRendererOptions
     public void setClassifierNamePolicy(@NotNull ClassifierNamePolicy classifierNamePolicy) {
         Intrinsics.checkNotNullParameter(classifierNamePolicy, "<set-?>");
-        this.f34011a.setClassifierNamePolicy(classifierNamePolicy);
+        this.f34031a.setClassifierNamePolicy(classifierNamePolicy);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.renderer.DescriptorRendererOptions
     public void setDebugMode(boolean z10) {
-        this.f34011a.setDebugMode(z10);
+        this.f34031a.setDebugMode(z10);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.renderer.DescriptorRendererOptions
     public void setExcludedTypeAnnotationClasses(@NotNull Set<FqName> set) {
         Intrinsics.checkNotNullParameter(set, "<set-?>");
-        this.f34011a.setExcludedTypeAnnotationClasses(set);
+        this.f34031a.setExcludedTypeAnnotationClasses(set);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.renderer.DescriptorRendererOptions
     public void setModifiers(@NotNull Set<? extends DescriptorRendererModifier> set) {
         Intrinsics.checkNotNullParameter(set, "<set-?>");
-        this.f34011a.setModifiers(set);
+        this.f34031a.setModifiers(set);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.renderer.DescriptorRendererOptions
     public void setParameterNameRenderingPolicy(@NotNull ParameterNameRenderingPolicy parameterNameRenderingPolicy) {
         Intrinsics.checkNotNullParameter(parameterNameRenderingPolicy, "<set-?>");
-        this.f34011a.setParameterNameRenderingPolicy(parameterNameRenderingPolicy);
+        this.f34031a.setParameterNameRenderingPolicy(parameterNameRenderingPolicy);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.renderer.DescriptorRendererOptions
     public void setReceiverAfterName(boolean z10) {
-        this.f34011a.setReceiverAfterName(z10);
+        this.f34031a.setReceiverAfterName(z10);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.renderer.DescriptorRendererOptions
     public void setRenderCompanionObjectName(boolean z10) {
-        this.f34011a.setRenderCompanionObjectName(z10);
+        this.f34031a.setRenderCompanionObjectName(z10);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.renderer.DescriptorRendererOptions
     public void setStartFromName(boolean z10) {
-        this.f34011a.setStartFromName(z10);
+        this.f34031a.setStartFromName(z10);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.renderer.DescriptorRendererOptions
     public void setTextFormat(@NotNull RenderingFormat renderingFormat) {
         Intrinsics.checkNotNullParameter(renderingFormat, "<set-?>");
-        this.f34011a.setTextFormat(renderingFormat);
+        this.f34031a.setTextFormat(renderingFormat);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.renderer.DescriptorRendererOptions
     public void setVerbose(boolean z10) {
-        this.f34011a.setVerbose(z10);
+        this.f34031a.setVerbose(z10);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.renderer.DescriptorRendererOptions
     public void setWithDefinedIn(boolean z10) {
-        this.f34011a.setWithDefinedIn(z10);
+        this.f34031a.setWithDefinedIn(z10);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.renderer.DescriptorRendererOptions
     public void setWithoutSuperTypes(boolean z10) {
-        this.f34011a.setWithoutSuperTypes(z10);
+        this.f34031a.setWithoutSuperTypes(z10);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.renderer.DescriptorRendererOptions
     public void setWithoutTypeParameters(boolean z10) {
-        this.f34011a.setWithoutTypeParameters(z10);
+        this.f34031a.setWithoutTypeParameters(z10);
     }
 }

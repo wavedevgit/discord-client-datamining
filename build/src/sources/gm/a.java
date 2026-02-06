@@ -1,171 +1,50 @@
 package gm;
 
-import android.net.Uri;
-import android.util.Base64;
-import android.webkit.MimeTypeMap;
-import com.facebook.react.bridge.Arguments;
-import com.facebook.react.bridge.ReadableMap;
-import com.facebook.react.bridge.WritableArray;
-import com.facebook.react.bridge.WritableMap;
-import com.facebook.react.devsupport.StackTraceHelper;
-import java.util.Locale;
-import kotlin.jvm.internal.Intrinsics;
-import kotlin.text.Charsets;
+import android.net.NetworkInfo;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final Uri f24990a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private String f24991b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private Long f24992c;
+public enum a {
+    CG_2G("2g"),
+    CG_3G("3g"),
+    CG_4G("4g"),
+    CG_5G("5g");
+    
 
     /* renamed from: d  reason: collision with root package name */
-    private String f24993d;
+    public final String f25395d;
 
-    /* renamed from: e  reason: collision with root package name */
-    private String f24994e;
-
-    /* renamed from: f  reason: collision with root package name */
-    private String[] f24995f;
-
-    /* renamed from: g  reason: collision with root package name */
-    private String f24996g;
-
-    /* renamed from: h  reason: collision with root package name */
-    private String f24997h;
-
-    /* renamed from: i  reason: collision with root package name */
-    private Boolean f24998i;
-
-    public a(Uri forUri) {
-        Intrinsics.checkNotNullParameter(forUri, "forUri");
-        this.f24990a = forUri;
+    a(String str) {
+        this.f25395d = str;
     }
 
-    private final ReadableMap d() {
-        Long l10;
-        String str;
-        WritableMap createMap = Arguments.createMap();
-        Intrinsics.checkNotNullExpressionValue(createMap, "createMap(...)");
-        createMap.putString(StackTraceHelper.NAME_KEY, this.f24991b);
-        createMap.putString("uri", this.f24990a.toString());
-        if (this.f24992c != null) {
-            createMap.putDouble("size", l10.longValue());
-        } else {
-            createMap.putNull("size");
+    public static a d(NetworkInfo networkInfo) {
+        if (networkInfo == null) {
+            return null;
         }
-        String str2 = this.f24993d;
-        String str3 = null;
-        if (str2 != null) {
-            str = str2.toLowerCase(Locale.ROOT);
-            Intrinsics.checkNotNullExpressionValue(str, "toLowerCase(...)");
-        } else {
-            str = null;
-        }
-        createMap.putString("type", str);
-        String str4 = this.f24993d;
-        if (str4 != null) {
-            str3 = str4.toLowerCase(Locale.ROOT);
-            Intrinsics.checkNotNullExpressionValue(str3, "toLowerCase(...)");
-        }
-        createMap.putString("nativeType", str3);
-        String[] strArr = this.f24995f;
-        if (strArr != null) {
-            WritableArray createArray = Arguments.createArray();
-            Intrinsics.checkNotNullExpressionValue(createArray, "createArray(...)");
-            for (String str5 : strArr) {
-                WritableMap createMap2 = Arguments.createMap();
-                Intrinsics.checkNotNullExpressionValue(createMap2, "createMap(...)");
-                String extensionFromMimeType = MimeTypeMap.getSingleton().getExtensionFromMimeType(str5);
-                createMap2.putString("mimeType", str5);
-                createMap2.putString("extension", extensionFromMimeType);
-                createArray.pushMap(createMap2);
+        int subtype = networkInfo.getSubtype();
+        if (subtype != 20) {
+            switch (subtype) {
+                case 1:
+                case 2:
+                case 4:
+                case 7:
+                case 11:
+                    return CG_2G;
+                case 3:
+                case 5:
+                case 6:
+                case 8:
+                case 9:
+                case 10:
+                case 12:
+                case 14:
+                    return CG_3G;
+                case 13:
+                case 15:
+                    return CG_4G;
+                default:
+                    return null;
             }
-            createMap.putArray("convertibleToMimeTypes", createArray);
-        } else {
-            createMap.putNull("convertibleToMimeTypes");
         }
-        createMap.putString("error", this.f24994e);
-        Boolean bool = this.f24998i;
-        if (bool != null) {
-            createMap.putBoolean("isVirtual", bool.booleanValue());
-        } else {
-            createMap.putNull("isVirtual");
-        }
-        String str6 = this.f24996g;
-        if (str6 != null) {
-            byte[] bytes = str6.getBytes(Charsets.UTF_8);
-            Intrinsics.checkNotNullExpressionValue(bytes, "getBytes(...)");
-            String encodeToString = Base64.encodeToString(bytes, 0);
-            createMap.putString("bookmarkStatus", "success");
-            createMap.putString("bookmark", encodeToString);
-            return createMap;
-        }
-        String str7 = this.f24997h;
-        if (str7 != null) {
-            createMap.putString("bookmarkStatus", "error");
-            createMap.putString("bookmarkError", str7);
-        }
-        return createMap;
-    }
-
-    public final a a(Uri bookmark) {
-        Intrinsics.checkNotNullParameter(bookmark, "bookmark");
-        this.f24996g = bookmark.toString();
-        return this;
-    }
-
-    public final a b(String str) {
-        this.f24997h = str;
-        return this;
-    }
-
-    public final ReadableMap c() {
-        return d();
-    }
-
-    public final Uri e() {
-        return this.f24990a;
-    }
-
-    public final boolean f() {
-        if (this.f24993d != null) {
-            return true;
-        }
-        return false;
-    }
-
-    public final a g(String str) {
-        this.f24994e = str;
-        return this;
-    }
-
-    public final a h(String str) {
-        this.f24993d = str;
-        return this;
-    }
-
-    public final a i(String str) {
-        this.f24991b = str;
-        return this;
-    }
-
-    public final a j(String[] strArr) {
-        this.f24995f = strArr;
-        return this;
-    }
-
-    public final a k(Long l10) {
-        this.f24992c = l10;
-        return this;
-    }
-
-    public final a l(boolean z10) {
-        this.f24998i = Boolean.valueOf(z10);
-        return this;
+        return CG_5G;
     }
 }

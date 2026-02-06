@@ -20,15 +20,15 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
-import xg.m;
+import yg.m;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public abstract class a extends BroadcastReceiver {
 
     /* renamed from: a  reason: collision with root package name */
-    private static SoftReference f20759a;
+    private static SoftReference f20714a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static SoftReference f20760b;
+    private static SoftReference f20715b;
 
     private final int e(Context context, Intent intent) {
         PendingIntent pendingIntent = (PendingIntent) intent.getParcelableExtra("pending_intent");
@@ -57,7 +57,7 @@ public abstract class a extends BroadcastReceiver {
         ExecutorService executorService;
         synchronized (a.class) {
             try {
-                SoftReference softReference = f20759a;
+                SoftReference softReference = f20714a;
                 if (softReference != null) {
                     executorService = (ExecutorService) softReference.get();
                 } else {
@@ -66,7 +66,7 @@ public abstract class a extends BroadcastReceiver {
                 if (executorService == null) {
                     gg.e.a();
                     executorService = Executors.unconfigurableExecutorService(Executors.newCachedThreadPool(new of.a("firebase-iid-executor")));
-                    f20759a = new SoftReference(executorService);
+                    f20714a = new SoftReference(executorService);
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -99,7 +99,7 @@ public abstract class a extends BroadcastReceiver {
                 final com.google.android.gms.cloudmessaging.a aVar = new com.google.android.gms.cloudmessaging.a(intent);
                 final CountDownLatch countDownLatch = new CountDownLatch(1);
                 synchronized (a.class) {
-                    SoftReference softReference = f20760b;
+                    SoftReference softReference = f20715b;
                     if (softReference != null) {
                         executor = (Executor) softReference.get();
                     }
@@ -108,7 +108,7 @@ public abstract class a extends BroadcastReceiver {
                         ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(1, 1, 60L, TimeUnit.SECONDS, new LinkedBlockingQueue(), new of.a("pscm-ack-executor"));
                         threadPoolExecutor.allowCoreThreadTimeOut(true);
                         executor = Executors.unconfigurableExecutorService(threadPoolExecutor);
-                        f20760b = new SoftReference(executor);
+                        f20715b = new SoftReference(executor);
                     }
                 }
                 executor.execute(new Runnable() { // from class: com.google.android.gms.cloudmessaging.d

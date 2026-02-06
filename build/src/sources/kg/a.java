@@ -7,34 +7,33 @@ import android.os.Parcel;
 public abstract class a implements IInterface {
 
     /* renamed from: c  reason: collision with root package name */
-    private final IBinder f31806c;
+    private final IBinder f31650c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f31807d;
+    private final String f31651d = "com.google.android.gms.identitycredentials.internal.IIdentityCredentialService";
 
     /* JADX INFO: Access modifiers changed from: protected */
     public a(IBinder iBinder, String str) {
-        this.f31806c = iBinder;
-        this.f31807d = str;
+        this.f31650c = iBinder;
     }
 
     @Override // android.os.IInterface
-    public final IBinder asBinder() {
-        return this.f31806c;
+    public IBinder asBinder() {
+        return this.f31650c;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    public final Parcel e() {
+    public Parcel e() {
         Parcel obtain = Parcel.obtain();
-        obtain.writeInterfaceToken(this.f31807d);
+        obtain.writeInterfaceToken(this.f31651d);
         return obtain;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    public final void f(int i10, Parcel parcel) {
+    public void f(int i10, Parcel parcel) {
         Parcel obtain = Parcel.obtain();
         try {
-            this.f31806c.transact(i10, parcel, obtain, 0);
+            this.f31650c.transact(i10, parcel, obtain, 0);
             obtain.readException();
         } finally {
             parcel.recycle();

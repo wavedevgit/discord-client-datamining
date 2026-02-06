@@ -40,18 +40,18 @@ public final class StepStyles_StepBackgroundImageStyleJsonAdapter extends h {
     @NotNull
     public StepStyles.StepBackgroundImageStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         StepStyles.StepBackgroundImageStyleContainer stepBackgroundImageStyleContainer = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 stepBackgroundImageStyleContainer = (StepStyles.StepBackgroundImageStyleContainer) this.nullableStepBackgroundImageStyleContainerAdapter.fromJson(reader);
             }
         }
-        reader.z();
+        reader.D();
         return new StepStyles.StepBackgroundImageStyle(stepBackgroundImageStyleContainer);
     }
 
@@ -60,9 +60,9 @@ public final class StepStyles_StepBackgroundImageStyleJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (stepBackgroundImageStyle != null) {
             writer.k();
-            writer.W("base");
+            writer.J("base");
             this.nullableStepBackgroundImageStyleContainerAdapter.toJson(writer, stepBackgroundImageStyle.getBase());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

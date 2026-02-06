@@ -1,124 +1,86 @@
 package hu;
 
-import kotlin.jvm.internal.DefaultConstructorMarker;
+import java.text.DateFormat;
+import java.text.ParsePosition;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+import kotlin.Unit;
 import kotlin.jvm.internal.Intrinsics;
-import okio.ByteString;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class c {
-
-    /* renamed from: d  reason: collision with root package name */
-    public static final a f27013d = new a(null);
-
-    /* renamed from: e  reason: collision with root package name */
-    public static final ByteString f27014e;
-
-    /* renamed from: f  reason: collision with root package name */
-    public static final ByteString f27015f;
-
-    /* renamed from: g  reason: collision with root package name */
-    public static final ByteString f27016g;
-
-    /* renamed from: h  reason: collision with root package name */
-    public static final ByteString f27017h;
-
-    /* renamed from: i  reason: collision with root package name */
-    public static final ByteString f27018i;
-
-    /* renamed from: j  reason: collision with root package name */
-    public static final ByteString f27019j;
+public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    public final ByteString f27020a;
+    private static final a f26495a = new a();
 
     /* renamed from: b  reason: collision with root package name */
-    public final ByteString f27021b;
+    private static final String[] f26496b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final int f27022c;
+    private static final DateFormat[] f26497c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a {
-        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
+    public static final class a extends ThreadLocal {
+        a() {
         }
 
-        private a() {
+        /* JADX INFO: Access modifiers changed from: protected */
+        @Override // java.lang.ThreadLocal
+        /* renamed from: a */
+        public DateFormat initialValue() {
+            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss 'GMT'", Locale.US);
+            simpleDateFormat.setLenient(false);
+            simpleDateFormat.setTimeZone(cu.e.f20040f);
+            return simpleDateFormat;
         }
     }
 
     static {
-        ByteString.a aVar = ByteString.f44060o;
-        f27014e = aVar.g(":");
-        f27015f = aVar.g(":status");
-        f27016g = aVar.g(":method");
-        f27017h = aVar.g(":path");
-        f27018i = aVar.g(":scheme");
-        f27019j = aVar.g(":authority");
+        String[] strArr = {"EEE, dd MMM yyyy HH:mm:ss zzz", "EEEE, dd-MMM-yy HH:mm:ss zzz", "EEE MMM d HH:mm:ss yyyy", "EEE, dd-MMM-yyyy HH:mm:ss z", "EEE, dd-MMM-yyyy HH-mm-ss z", "EEE, dd MMM yy HH:mm:ss z", "EEE dd-MMM-yyyy HH:mm:ss z", "EEE dd MMM yyyy HH:mm:ss z", "EEE dd-MMM-yyyy HH-mm-ss z", "EEE dd-MMM-yy HH:mm:ss z", "EEE dd MMM yy HH:mm:ss z", "EEE,dd-MMM-yy HH:mm:ss z", "EEE,dd-MMM-yyyy HH:mm:ss z", "EEE, dd-MM-yyyy HH:mm:ss z", "EEE MMM d yyyy HH:mm:ss z"};
+        f26496b = strArr;
+        f26497c = new DateFormat[strArr.length];
     }
 
-    public c(ByteString name, ByteString value) {
-        Intrinsics.checkNotNullParameter(name, "name");
-        Intrinsics.checkNotNullParameter(value, "value");
-        this.f27020a = name;
-        this.f27021b = value;
-        this.f27022c = name.G() + 32 + value.G();
-    }
-
-    public final ByteString a() {
-        return this.f27020a;
-    }
-
-    public final ByteString b() {
-        return this.f27021b;
-    }
-
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
+    public static final Date a(String str) {
+        Intrinsics.checkNotNullParameter(str, "<this>");
+        if (str.length() == 0) {
+            return null;
         }
-        if (!(obj instanceof c)) {
-            return false;
+        ParsePosition parsePosition = new ParsePosition(0);
+        Date parse = ((DateFormat) f26495a.get()).parse(str, parsePosition);
+        if (parsePosition.getIndex() == str.length()) {
+            return parse;
         }
-        c cVar = (c) obj;
-        if (Intrinsics.areEqual(this.f27020a, cVar.f27020a) && Intrinsics.areEqual(this.f27021b, cVar.f27021b)) {
-            return true;
+        String[] strArr = f26496b;
+        synchronized (strArr) {
+            try {
+                int length = strArr.length;
+                for (int i10 = 0; i10 < length; i10++) {
+                    DateFormat[] dateFormatArr = f26497c;
+                    DateFormat dateFormat = dateFormatArr[i10];
+                    if (dateFormat == null) {
+                        dateFormat = new SimpleDateFormat(f26496b[i10], Locale.US);
+                        dateFormat.setTimeZone(cu.e.f20040f);
+                        dateFormatArr[i10] = dateFormat;
+                    }
+                    parsePosition.setIndex(0);
+                    Date parse2 = dateFormat.parse(str, parsePosition);
+                    if (parsePosition.getIndex() != 0) {
+                        return parse2;
+                    }
+                }
+                Unit unit = Unit.f32008a;
+                return null;
+            } catch (Throwable th2) {
+                throw th2;
+            }
         }
-        return false;
     }
 
-    public int hashCode() {
-        return (this.f27020a.hashCode() * 31) + this.f27021b.hashCode();
-    }
-
-    public String toString() {
-        return this.f27020a.M() + ": " + this.f27021b.M();
-    }
-
-    /* JADX WARN: Illegal instructions before constructor call */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    public c(java.lang.String r2, java.lang.String r3) {
-        /*
-            r1 = this;
-            java.lang.String r0 = "name"
-            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r2, r0)
-            java.lang.String r0 = "value"
-            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r3, r0)
-            okio.ByteString$a r0 = okio.ByteString.f44060o
-            okio.ByteString r2 = r0.g(r2)
-            okio.ByteString r3 = r0.g(r3)
-            r1.<init>(r2, r3)
-            return
-        */
-        throw new UnsupportedOperationException("Method not decompiled: hu.c.<init>(java.lang.String, java.lang.String):void");
-    }
-
-    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
-    public c(ByteString name, String value) {
-        this(name, ByteString.f44060o.g(value));
-        Intrinsics.checkNotNullParameter(name, "name");
-        Intrinsics.checkNotNullParameter(value, "value");
+    public static final String b(Date date) {
+        Intrinsics.checkNotNullParameter(date, "<this>");
+        String format = ((DateFormat) f26495a.get()).format(date);
+        Intrinsics.checkNotNullExpressionValue(format, "STANDARD_DATE_FORMAT.get().format(this)");
+        return format;
     }
 }

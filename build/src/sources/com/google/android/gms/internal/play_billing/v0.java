@@ -3,7 +3,7 @@ package com.google.android.gms.internal.play_billing;
 public abstract class v0 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final /* synthetic */ int f14390a = 0;
+    public static final /* synthetic */ int f14353a = 0;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ v0(u0 u0Var) {

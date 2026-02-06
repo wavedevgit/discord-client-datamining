@@ -17,87 +17,87 @@ import java.util.TimeZone;
 public class DateTimeFormat {
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f10208d;
+    private boolean f10107d;
 
     /* renamed from: e  reason: collision with root package name */
-    private String f10209e;
+    private String f10108e;
 
     /* renamed from: f  reason: collision with root package name */
-    private boolean f10210f;
+    private boolean f10109f;
 
     /* renamed from: g  reason: collision with root package name */
-    private String f10211g;
+    private String f10110g;
 
     /* renamed from: h  reason: collision with root package name */
-    private Object f10212h;
+    private Object f10111h;
 
     /* renamed from: i  reason: collision with root package name */
-    private b.g f10213i;
+    private b.g f10112i;
 
     /* renamed from: j  reason: collision with root package name */
-    private b.e f10214j;
+    private b.e f10113j;
 
     /* renamed from: k  reason: collision with root package name */
-    private b.m f10215k;
+    private b.m f10114k;
 
     /* renamed from: l  reason: collision with root package name */
-    private b.d f10216l;
+    private b.d f10115l;
 
     /* renamed from: m  reason: collision with root package name */
-    private b.n f10217m;
+    private b.n f10116m;
 
     /* renamed from: n  reason: collision with root package name */
-    private b.i f10218n;
+    private b.i f10117n;
 
     /* renamed from: o  reason: collision with root package name */
-    private b.c f10219o;
+    private b.c f10118o;
 
     /* renamed from: p  reason: collision with root package name */
-    private b.f f10220p;
+    private b.f f10119p;
 
     /* renamed from: q  reason: collision with root package name */
-    private b.h f10221q;
+    private b.h f10120q;
 
     /* renamed from: r  reason: collision with root package name */
-    private b.j f10222r;
+    private b.j f10121r;
 
     /* renamed from: s  reason: collision with root package name */
-    private b.l f10223s;
+    private b.l f10122s;
 
     /* renamed from: t  reason: collision with root package name */
-    private b.EnumC0155b f10224t;
+    private b.EnumC0148b f10123t;
 
     /* renamed from: u  reason: collision with root package name */
-    private b.k f10225u;
+    private b.k f10124u;
 
     /* renamed from: b  reason: collision with root package name */
-    private da.b f10206b = null;
+    private da.b f10105b = null;
 
     /* renamed from: c  reason: collision with root package name */
-    private da.b f10207c = null;
+    private da.b f10106c = null;
 
     /* renamed from: v  reason: collision with root package name */
-    private Object f10226v = null;
+    private Object f10125v = null;
 
     /* renamed from: a  reason: collision with root package name */
-    b f10205a = new i();
+    b f10104a = new i();
 
     @fb.a
     public DateTimeFormat(List<String> list, Map<String, Object> map) {
         String str;
         c(list, map);
-        b bVar = this.f10205a;
-        da.b bVar2 = this.f10206b;
-        if (this.f10208d) {
+        b bVar = this.f10104a;
+        da.b bVar2 = this.f10105b;
+        if (this.f10107d) {
             str = "";
         } else {
-            str = this.f10209e;
+            str = this.f10108e;
         }
-        bVar.g(bVar2, str, this.f10210f ? "" : this.f10211g, this.f10214j, this.f10215k, this.f10216l, this.f10217m, this.f10218n, this.f10219o, this.f10220p, this.f10221q, this.f10222r, this.f10223s, this.f10213i, this.f10226v, this.f10224t, this.f10225u, this.f10212h);
+        bVar.g(bVar2, str, this.f10109f ? "" : this.f10110g, this.f10113j, this.f10114k, this.f10115l, this.f10116m, this.f10117n, this.f10118o, this.f10119p, this.f10120q, this.f10121r, this.f10122s, this.f10112i, this.f10125v, this.f10123t, this.f10124u, this.f10111h);
     }
 
     private Object a() {
-        return this.f10205a.d(this.f10206b);
+        return this.f10104a.d(this.f10105b);
     }
 
     private Object b(Object obj, String str, String str2) {
@@ -144,7 +144,7 @@ public class DateTimeFormat {
         Object b10 = b(map, "any", InquiryField.DateField.TYPE);
         Object q10 = da.d.q();
         g.a aVar = g.a.STRING;
-        da.d.c(q10, "localeMatcher", g.c(b10, "localeMatcher", aVar, da.a.f20364a, "best fit"));
+        da.d.c(q10, "localeMatcher", g.c(b10, "localeMatcher", aVar, da.a.f20319a, "best fit"));
         Object c10 = g.c(b10, "calendar", aVar, da.d.d(), da.d.d());
         if (!da.d.n(c10) && !d(da.d.h(c10))) {
             throw new da.f("Invalid calendar option !");
@@ -163,23 +163,23 @@ public class DateTimeFormat {
         da.d.c(q10, "hc", c13);
         HashMap a10 = f.a(list, q10, asList);
         da.b bVar = (da.b) da.d.g(a10).get("locale");
-        this.f10206b = bVar;
-        this.f10207c = bVar.d();
+        this.f10105b = bVar;
+        this.f10106c = bVar.d();
         Object a11 = da.d.a(a10, "ca");
         if (!da.d.j(a11)) {
-            this.f10208d = false;
-            this.f10209e = da.d.h(a11);
+            this.f10107d = false;
+            this.f10108e = da.d.h(a11);
         } else {
-            this.f10208d = true;
-            this.f10209e = this.f10205a.h(this.f10206b);
+            this.f10107d = true;
+            this.f10108e = this.f10104a.h(this.f10105b);
         }
         Object a12 = da.d.a(a10, "nu");
         if (!da.d.j(a12)) {
-            this.f10210f = false;
-            this.f10211g = da.d.h(a12);
+            this.f10109f = false;
+            this.f10110g = da.d.h(a12);
         } else {
-            this.f10210f = true;
-            this.f10211g = this.f10205a.c(this.f10206b);
+            this.f10109f = true;
+            this.f10110g = this.f10104a.c(this.f10105b);
         }
         Object a13 = da.d.a(a10, "hc");
         Object a14 = da.d.a(b10, "timeZone");
@@ -188,25 +188,25 @@ public class DateTimeFormat {
         } else {
             e10 = e(a14.toString());
         }
-        this.f10226v = e10;
-        this.f10214j = (b.e) g.d(b.e.class, da.d.h(g.c(b10, "formatMatcher", aVar, new String[]{"basic", "best fit"}, "best fit")));
-        this.f10215k = (b.m) g.d(b.m.class, g.c(b10, "weekday", aVar, new String[]{"long", "short", "narrow"}, da.d.d()));
-        this.f10216l = (b.d) g.d(b.d.class, g.c(b10, "era", aVar, new String[]{"long", "short", "narrow"}, da.d.d()));
-        this.f10217m = (b.n) g.d(b.n.class, g.c(b10, "year", aVar, new String[]{"numeric", "2-digit"}, da.d.d()));
-        this.f10218n = (b.i) g.d(b.i.class, g.c(b10, "month", aVar, new String[]{"numeric", "2-digit", "long", "short", "narrow"}, da.d.d()));
-        this.f10219o = (b.c) g.d(b.c.class, g.c(b10, "day", aVar, new String[]{"numeric", "2-digit"}, da.d.d()));
+        this.f10125v = e10;
+        this.f10113j = (b.e) g.d(b.e.class, da.d.h(g.c(b10, "formatMatcher", aVar, new String[]{"basic", "best fit"}, "best fit")));
+        this.f10114k = (b.m) g.d(b.m.class, g.c(b10, "weekday", aVar, new String[]{"long", "short", "narrow"}, da.d.d()));
+        this.f10115l = (b.d) g.d(b.d.class, g.c(b10, "era", aVar, new String[]{"long", "short", "narrow"}, da.d.d()));
+        this.f10116m = (b.n) g.d(b.n.class, g.c(b10, "year", aVar, new String[]{"numeric", "2-digit"}, da.d.d()));
+        this.f10117n = (b.i) g.d(b.i.class, g.c(b10, "month", aVar, new String[]{"numeric", "2-digit", "long", "short", "narrow"}, da.d.d()));
+        this.f10118o = (b.c) g.d(b.c.class, g.c(b10, "day", aVar, new String[]{"numeric", "2-digit"}, da.d.d()));
         Object c14 = g.c(b10, "hour", aVar, new String[]{"numeric", "2-digit"}, da.d.d());
-        this.f10220p = (b.f) g.d(b.f.class, c14);
-        this.f10221q = (b.h) g.d(b.h.class, g.c(b10, "minute", aVar, new String[]{"numeric", "2-digit"}, da.d.d()));
-        this.f10222r = (b.j) g.d(b.j.class, g.c(b10, "second", aVar, new String[]{"numeric", "2-digit"}, da.d.d()));
-        this.f10223s = (b.l) g.d(b.l.class, g.c(b10, "timeZoneName", aVar, new String[]{"long", "longOffset", "longGeneric", "short", "shortOffset", "shortGeneric"}, da.d.d()));
-        this.f10224t = (b.EnumC0155b) g.d(b.EnumC0155b.class, g.c(b10, "dateStyle", aVar, new String[]{"full", "long", "medium", "short"}, da.d.d()));
+        this.f10119p = (b.f) g.d(b.f.class, c14);
+        this.f10120q = (b.h) g.d(b.h.class, g.c(b10, "minute", aVar, new String[]{"numeric", "2-digit"}, da.d.d()));
+        this.f10121r = (b.j) g.d(b.j.class, g.c(b10, "second", aVar, new String[]{"numeric", "2-digit"}, da.d.d()));
+        this.f10122s = (b.l) g.d(b.l.class, g.c(b10, "timeZoneName", aVar, new String[]{"long", "longOffset", "longGeneric", "short", "shortOffset", "shortGeneric"}, da.d.d()));
+        this.f10123t = (b.EnumC0148b) g.d(b.EnumC0148b.class, g.c(b10, "dateStyle", aVar, new String[]{"full", "long", "medium", "short"}, da.d.d()));
         Object c15 = g.c(b10, "timeStyle", aVar, new String[]{"full", "long", "medium", "short"}, da.d.d());
-        this.f10225u = (b.k) g.d(b.k.class, c15);
+        this.f10124u = (b.k) g.d(b.k.class, c15);
         if (da.d.n(c14) && da.d.n(c15)) {
-            this.f10213i = b.g.UNDEFINED;
+            this.f10112i = b.g.UNDEFINED;
         } else {
-            b.g f10 = this.f10205a.f(this.f10206b);
+            b.g f10 = this.f10104a.f(this.f10105b);
             if (da.d.j(a13)) {
                 gVar = f10;
             } else {
@@ -222,9 +222,9 @@ public class DateTimeFormat {
                     gVar = (f10 == b.g.H11 || f10 == b.g.H23) ? b.g.H23 : b.g.H24;
                 }
             }
-            this.f10213i = gVar;
+            this.f10112i = gVar;
         }
-        this.f10212h = c12;
+        this.f10111h = c12;
     }
 
     private boolean d(String str) {
@@ -233,7 +233,7 @@ public class DateTimeFormat {
 
     @fb.a
     public static List<String> supportedLocalesOf(List<String> list, Map<String, Object> map) {
-        String h10 = da.d.h(g.c(map, "localeMatcher", g.a.STRING, da.a.f20364a, "best fit"));
+        String h10 = da.d.h(g.c(map, "localeMatcher", g.a.STRING, da.a.f20319a, "best fit"));
         String[] strArr = new String[list.size()];
         if (h10.equals("best fit")) {
             return Arrays.asList(e.d((String[]) list.toArray(strArr)));
@@ -266,21 +266,21 @@ public class DateTimeFormat {
 
     @fb.a
     public String format(double d10) {
-        return this.f10205a.b(d10);
+        return this.f10104a.b(d10);
     }
 
     @fb.a
     public List<Map<String, String>> formatToParts(double d10) {
         String str;
         ArrayList arrayList = new ArrayList();
-        AttributedCharacterIterator a10 = this.f10205a.a(d10);
+        AttributedCharacterIterator a10 = this.f10104a.a(d10);
         StringBuilder sb2 = new StringBuilder();
         for (char first = a10.first(); first != 65535; first = a10.next()) {
             sb2.append(first);
             if (a10.getIndex() + 1 == a10.getRunLimit()) {
                 Iterator<AttributedCharacterIterator.Attribute> it = a10.getAttributes().keySet().iterator();
                 if (it.hasNext()) {
-                    str = this.f10205a.e(it.next(), sb2.toString());
+                    str = this.f10104a.e(it.next(), sb2.toString());
                 } else {
                     str = "literal";
                 }
@@ -298,61 +298,61 @@ public class DateTimeFormat {
     @fb.a
     public Map<String, Object> resolvedOptions() {
         LinkedHashMap linkedHashMap = new LinkedHashMap();
-        linkedHashMap.put("locale", this.f10207c.g());
-        linkedHashMap.put("numberingSystem", this.f10211g);
-        linkedHashMap.put("calendar", this.f10209e);
-        linkedHashMap.put("timeZone", this.f10226v);
-        b.g gVar = this.f10213i;
+        linkedHashMap.put("locale", this.f10106c.g());
+        linkedHashMap.put("numberingSystem", this.f10110g);
+        linkedHashMap.put("calendar", this.f10108e);
+        linkedHashMap.put("timeZone", this.f10125v);
+        b.g gVar = this.f10112i;
         if (gVar != b.g.UNDEFINED) {
             linkedHashMap.put("hourCycle", gVar.toString());
-            b.g gVar2 = this.f10213i;
+            b.g gVar2 = this.f10112i;
             if (gVar2 != b.g.H11 && gVar2 != b.g.H12) {
                 linkedHashMap.put("hour12", Boolean.FALSE);
             } else {
                 linkedHashMap.put("hour12", Boolean.TRUE);
             }
         }
-        b.m mVar = this.f10215k;
+        b.m mVar = this.f10114k;
         if (mVar != b.m.UNDEFINED) {
             linkedHashMap.put("weekday", mVar.toString());
         }
-        b.d dVar = this.f10216l;
+        b.d dVar = this.f10115l;
         if (dVar != b.d.UNDEFINED) {
             linkedHashMap.put("era", dVar.toString());
         }
-        b.n nVar = this.f10217m;
+        b.n nVar = this.f10116m;
         if (nVar != b.n.UNDEFINED) {
             linkedHashMap.put("year", nVar.toString());
         }
-        b.i iVar = this.f10218n;
+        b.i iVar = this.f10117n;
         if (iVar != b.i.UNDEFINED) {
             linkedHashMap.put("month", iVar.toString());
         }
-        b.c cVar = this.f10219o;
+        b.c cVar = this.f10118o;
         if (cVar != b.c.UNDEFINED) {
             linkedHashMap.put("day", cVar.toString());
         }
-        b.f fVar = this.f10220p;
+        b.f fVar = this.f10119p;
         if (fVar != b.f.UNDEFINED) {
             linkedHashMap.put("hour", fVar.toString());
         }
-        b.h hVar = this.f10221q;
+        b.h hVar = this.f10120q;
         if (hVar != b.h.UNDEFINED) {
             linkedHashMap.put("minute", hVar.toString());
         }
-        b.j jVar = this.f10222r;
+        b.j jVar = this.f10121r;
         if (jVar != b.j.UNDEFINED) {
             linkedHashMap.put("second", jVar.toString());
         }
-        b.l lVar = this.f10223s;
+        b.l lVar = this.f10122s;
         if (lVar != b.l.UNDEFINED) {
             linkedHashMap.put("timeZoneName", lVar.toString());
         }
-        b.EnumC0155b enumC0155b = this.f10224t;
-        if (enumC0155b != b.EnumC0155b.UNDEFINED) {
-            linkedHashMap.put("dateStyle", enumC0155b.toString());
+        b.EnumC0148b enumC0148b = this.f10123t;
+        if (enumC0148b != b.EnumC0148b.UNDEFINED) {
+            linkedHashMap.put("dateStyle", enumC0148b.toString());
         }
-        b.k kVar = this.f10225u;
+        b.k kVar = this.f10124u;
         if (kVar != b.k.UNDEFINED) {
             linkedHashMap.put("timeStyle", kVar.toString());
         }

@@ -6,16 +6,16 @@ import kotlin.jvm.internal.Intrinsics;
 public final class c {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f22711c = new a(null);
+    public static final a f23012c = new a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    public static final c f22712d = new c("UNKNOWN", null);
+    public static final c f23013d = new c("UNKNOWN", null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f22713a;
+    private final String f23014a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f22714b;
+    private final String f23015b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
@@ -36,12 +36,12 @@ public final class c {
 
     public c(String name, String str) {
         Intrinsics.checkNotNullParameter(name, "name");
-        this.f22713a = name;
-        this.f22714b = str;
+        this.f23014a = name;
+        this.f23015b = str;
     }
 
     public final String a() {
-        return this.f22713a;
+        return this.f23014a;
     }
 
     public boolean equals(Object obj) {
@@ -52,7 +52,7 @@ public final class c {
             return false;
         }
         c cVar = (c) obj;
-        if (Intrinsics.areEqual(this.f22713a, cVar.f22713a) && Intrinsics.areEqual(this.f22714b, cVar.f22714b)) {
+        if (Intrinsics.areEqual(this.f23014a, cVar.f23014a) && Intrinsics.areEqual(this.f23015b, cVar.f23015b)) {
             return true;
         }
         return false;
@@ -60,8 +60,8 @@ public final class c {
 
     public int hashCode() {
         int hashCode;
-        int hashCode2 = this.f22713a.hashCode() * 31;
-        String str = this.f22714b;
+        int hashCode2 = this.f23014a.hashCode() * 31;
+        String str = this.f23015b;
         if (str == null) {
             hashCode = 0;
         } else {
@@ -71,6 +71,6 @@ public final class c {
     }
 
     public String toString() {
-        return this.f22713a;
+        return this.f23014a;
     }
 }

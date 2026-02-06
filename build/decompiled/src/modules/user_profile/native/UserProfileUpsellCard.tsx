@@ -119,7 +119,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_profile/native/UserProfileUpsellCard.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun80506: for (var _fun80506_ip = 0;;) switch (_fun80506_ip) {
+        _fun80528: for (var _fun80528_ip = 0;;) switch (_fun80528_ip) {
             case 0:
                 var0 = arg0;
                 var9 = var0.style;
@@ -172,8 +172,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = null;
                 var7 = var9 != var22;
                 if (!var7) {
-                    _fun80506_ip = 383;
-                    continue _fun80506
+                    _fun80528_ip = 383;
+                    continue _fun80528
                 }
             case 228:
                 var15 = _closure1_slot8;
@@ -253,8 +253,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8.renderIcon = var11;
                 var11 = undefined;
                 if (!var13) {
-                    _fun80506_ip = 495;
-                    continue _fun80506
+                    _fun80528_ip = 495;
+                    continue _fun80528
                 }
             case 488:
                 var11 = function() { // Environment: var12
@@ -295,4 +295,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 6983, 660, 33, 1297, 671, 7306, 5753, 3941, 7653, 4875, 4098, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 6988, 660, 33, 1297, 671, 7311, 5757, 3943, 7658, 4876, 4099, 2]);

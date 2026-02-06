@@ -6,10 +6,10 @@ import java.util.concurrent.Executor;
 public final /* synthetic */ class s implements Executor {
 
     /* renamed from: d  reason: collision with root package name */
-    public final /* synthetic */ Handler f39440d;
+    public final /* synthetic */ Handler f38795d;
 
     @Override // java.util.concurrent.Executor
     public final void execute(Runnable runnable) {
-        this.f39440d.post(runnable);
+        this.f38795d.post(runnable);
     }
 }

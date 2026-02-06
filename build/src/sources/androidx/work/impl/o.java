@@ -5,7 +5,7 @@ import kotlin.jvm.internal.Intrinsics;
 public final class o extends s3.b {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final o f5773c = new o();
+    public static final o f6102c = new o();
 
     private o() {
         super(7, 8);
@@ -14,6 +14,6 @@ public final class o extends s3.b {
     @Override // s3.b
     public void a(x3.g db2) {
         Intrinsics.checkNotNullParameter(db2, "db");
-        db2.K("\n    CREATE INDEX IF NOT EXISTS `index_WorkSpec_period_start_time` ON `workspec`(`period_start_time`)\n    ");
+        db2.O("\n    CREATE INDEX IF NOT EXISTS `index_WorkSpec_period_start_time` ON `workspec`(`period_start_time`)\n    ");
     }
 }

@@ -7,28 +7,28 @@ import kotlin.enums.EnumEntries;
 public final class o {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final o f18470d = new o("PADDING", 0);
+    public static final o f18450d = new o("PADDING", 0);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final o f18471e = new o("MARGIN", 1);
+    public static final o f18451e = new o("MARGIN", 1);
 
     /* renamed from: i  reason: collision with root package name */
-    private static final /* synthetic */ o[] f18472i;
+    private static final /* synthetic */ o[] f18452i;
 
     /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f18473o;
+    private static final /* synthetic */ EnumEntries f18453o;
 
     static {
         o[] a10 = a();
-        f18472i = a10;
-        f18473o = vr.a.a(a10);
+        f18452i = a10;
+        f18453o = xr.a.a(a10);
     }
 
     private o(String str, int i10) {
     }
 
     private static final /* synthetic */ o[] a() {
-        return new o[]{f18470d, f18471e};
+        return new o[]{f18450d, f18451e};
     }
 
     public static o valueOf(String str) {
@@ -36,6 +36,6 @@ public final class o {
     }
 
     public static o[] values() {
-        return (o[]) f18472i.clone();
+        return (o[]) f18452i.clone();
     }
 }

@@ -41,18 +41,18 @@ public final class StepStyles_SelfieStepBorderWidthJsonAdapter extends h {
     @NotNull
     public StepStyles.SelfieStepBorderWidth fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         StyleElements.MeasurementSet measurementSet = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 measurementSet = (StyleElements.MeasurementSet) this.nullableMeasurementSetAdapter.fromJson(reader);
             }
         }
-        reader.z();
+        reader.D();
         return new StepStyles.SelfieStepBorderWidth(measurementSet);
     }
 
@@ -61,9 +61,9 @@ public final class StepStyles_SelfieStepBorderWidthJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (selfieStepBorderWidth != null) {
             writer.k();
-            writer.W("selfieCaptureFeedBox");
+            writer.J("selfieCaptureFeedBox");
             this.nullableMeasurementSetAdapter.toJson(writer, selfieStepBorderWidth.getSelfieCaptureFeedBox());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

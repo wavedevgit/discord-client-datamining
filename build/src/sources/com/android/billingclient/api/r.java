@@ -6,24 +6,24 @@ import java.util.List;
 public final class r {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f8099a;
+    private final List f7998a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final BillingResult f8100b;
+    private final BillingResult f7999b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public r(BillingResult billingResult, List list) {
-        this.f8099a = list;
-        this.f8100b = billingResult;
+        this.f7998a = list;
+        this.f7999b = billingResult;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final BillingResult a() {
-        return this.f8100b;
+        return this.f7999b;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final List b() {
-        return this.f8099a;
+        return this.f7998a;
     }
 }

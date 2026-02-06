@@ -176,8 +176,8 @@ public final class ReferralView extends CardView {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit bind$lambda$13$lambda$11(Function2 function2, ReferralMessageAccessory referralMessageAccessory, LinkContentNode node) {
         Intrinsics.checkNotNullParameter(node, "node");
-        function2.invoke(MessageId.m1085boximpl(referralMessageAccessory.mo538getMessageId3Eiw7ao()), node);
-        return Unit.f31988a;
+        function2.invoke(MessageId.m1083boximpl(referralMessageAccessory.mo536getMessageId3Eiw7ao()), node);
+        return Unit.f32008a;
     }
 
     private final boolean didResolve(long j10) {
@@ -289,13 +289,13 @@ public final class ReferralView extends CardView {
                 AnnotatedStructurableText structuredBodyText = resolved.getStructuredBodyText();
                 Context context = simpleDraweeSpanTextView.getContext();
                 Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
-                String mo538getMessageId3Eiw7ao = accessory.mo538getMessageId3Eiw7ao();
+                String mo536getMessageId3Eiw7ao = accessory.mo536getMessageId3Eiw7ao();
                 Paint.FontMetrics fontMetrics = simpleDraweeSpanTextView.getPaint().getFontMetrics();
                 Intrinsics.checkNotNullExpressionValue(fontMetrics, "getFontMetrics(...)");
                 float baselineHeightPx = TextUtilsKt.getBaselineHeightPx(fontMetrics);
                 TextPaint paint = simpleDraweeSpanTextView.getPaint();
                 Intrinsics.checkNotNullExpressionValue(paint, "getPaint(...)");
-                simpleDraweeSpanTextView.setDraweeSpanStringBuilder(TextUtilsKt.toSpannable$default(structuredBodyText, context, mo538getMessageId3Eiw7ao, false, true, false, false, paint, new Function1() { // from class: com.discord.chat.presentation.message.view.y2
+                simpleDraweeSpanTextView.setDraweeSpanStringBuilder(TextUtilsKt.toSpannable$default(structuredBodyText, context, mo536getMessageId3Eiw7ao, false, true, false, false, paint, new Function1() { // from class: com.discord.chat.presentation.message.view.y2
                     @Override // kotlin.jvm.functions.Function1
                     public final Object invoke(Object obj) {
                         Unit bind$lambda$13$lambda$11;
@@ -403,7 +403,7 @@ public final class ReferralView extends CardView {
             }
             this.lastState = new Companion.State.Resolved(accessory.getItemId().longValue());
         } else {
-            throw new or.p();
+            throw new qr.p();
         }
     }
 

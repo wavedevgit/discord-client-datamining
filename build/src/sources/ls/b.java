@@ -1,20 +1,22 @@
 package ls;
 
-import kotlin.jvm.internal.Intrinsics;
+import java.util.Map;
+import kotlin.jvm.functions.Function0;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-abstract class b {
-    public static final void a(long j10, byte[] dst, int i10, int i11, int i12) {
-        Intrinsics.checkNotNullParameter(dst, "dst");
-        c.f(j10, dst, i10, i11, i12);
+public class b implements Function0 {
+
+    /* renamed from: d  reason: collision with root package name */
+    private final Map f36588d;
+
+    public b(Map map) {
+        this.f36588d = map;
     }
 
-    public static final a b(String hexString) {
-        Intrinsics.checkNotNullParameter(hexString, "hexString");
-        return c.h(hexString);
-    }
-
-    public static final a c(String hexDashString) {
-        Intrinsics.checkNotNullParameter(hexDashString, "hexDashString");
-        return c.i(hexDashString);
+    @Override // kotlin.jvm.functions.Function0
+    public Object invoke() {
+        int j10;
+        j10 = f.j(this.f36588d);
+        return Integer.valueOf(j10);
     }
 }

@@ -1,69 +1,69 @@
 package ng;
 
-import java.io.UnsupportedEncodingException;
+import yi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class xb implements ob {
+final class xb implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final f8 f41246a;
+    static final xb f40400a = new xb();
 
     /* renamed from: b  reason: collision with root package name */
-    private ja f41247b = new ja();
+    private static final yi.c f40401b;
 
-    private xb(f8 f8Var, int i10) {
-        this.f41246a = f8Var;
-        jc.a();
+    /* renamed from: c  reason: collision with root package name */
+    private static final yi.c f40402c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private static final yi.c f40403d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private static final yi.c f40404e;
+
+    /* renamed from: f  reason: collision with root package name */
+    private static final yi.c f40405f;
+
+    /* renamed from: g  reason: collision with root package name */
+    private static final yi.c f40406g;
+
+    static {
+        c.b a10 = yi.c.a("appName");
+        l2 l2Var = new l2();
+        l2Var.a(1);
+        f40401b = a10.b(l2Var.b()).a();
+        c.b a11 = yi.c.a("sessionId");
+        l2 l2Var2 = new l2();
+        l2Var2.a(2);
+        f40402c = a11.b(l2Var2.b()).a();
+        c.b a12 = yi.c.a("startZoomLevel");
+        l2 l2Var3 = new l2();
+        l2Var3.a(3);
+        f40403d = a12.b(l2Var3.b()).a();
+        c.b a13 = yi.c.a("endZoomLevel");
+        l2 l2Var4 = new l2();
+        l2Var4.a(4);
+        f40404e = a13.b(l2Var4.b()).a();
+        c.b a14 = yi.c.a("durationMs");
+        l2 l2Var5 = new l2();
+        l2Var5.a(5);
+        f40405f = a14.b(l2Var5.b()).a();
+        c.b a15 = yi.c.a("predictedArea");
+        l2 l2Var6 = new l2();
+        l2Var6.a(6);
+        f40406g = a15.b(l2Var6.b()).a();
     }
 
-    public static ob e(f8 f8Var) {
-        return new xb(f8Var, 0);
+    private xb() {
     }
 
-    @Override // ng.ob
-    public final String a() {
-        ma c10 = this.f41246a.f().c();
-        if (c10 != null && !g5.b(c10.k())) {
-            return (String) gf.q.l(c10.k());
-        }
-        return "NA";
-    }
-
-    @Override // ng.ob
-    public final ob b(ja jaVar) {
-        this.f41247b = jaVar;
-        return this;
-    }
-
-    @Override // ng.ob
-    public final byte[] c(int i10, boolean z10) {
-        boolean z11;
-        int i11 = i10 ^ 1;
-        ja jaVar = this.f41247b;
-        if (1 != i11) {
-            z11 = false;
-        } else {
-            z11 = true;
-        }
-        jaVar.f(Boolean.valueOf(z11));
-        this.f41247b.e(Boolean.FALSE);
-        this.f41246a.e(this.f41247b.m());
-        try {
-            jc.a();
-            if (i10 == 0) {
-                return new zi.d().j(m6.f40825a).k(true).i().b(this.f41246a.f()).getBytes("utf-8");
-            }
-            h8 f10 = this.f41246a.f();
-            n nVar = new n();
-            m6.f40825a.a(nVar);
-            return nVar.b().a(f10);
-        } catch (UnsupportedEncodingException e10) {
-            throw new UnsupportedOperationException("Failed to covert logging to UTF-8 byte array", e10);
-        }
-    }
-
-    @Override // ng.ob
-    public final ob d(e8 e8Var) {
-        this.f41246a.c(e8Var);
-        return this;
+    @Override // yi.d
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        pi piVar = (pi) obj;
+        yi.e eVar = (yi.e) obj2;
+        eVar.a(f40401b, piVar.e());
+        eVar.a(f40402c, piVar.f());
+        eVar.a(f40403d, piVar.c());
+        eVar.a(f40404e, piVar.b());
+        eVar.a(f40405f, piVar.d());
+        eVar.a(f40406g, piVar.a());
     }
 }

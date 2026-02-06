@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var4.bind(var0)(var3);
     var6 = var7.createStyles;
     var3 = function(arg0) { // Environment: var1
-        _fun111653: for (var _fun111653_ip = 0;;) switch (_fun111653_ip) {
+        _fun111676: for (var _fun111676_ip = 0;;) switch (_fun111676_ip) {
             case 0:
                 var2 = arg0;
                 var0 = {};
@@ -51,13 +51,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var7.bind(var5)(var4);
                 var7 = var4.colors;
                 if (var2) {
-                    _fun111653_ip = 118;
-                    continue _fun111653
+                    _fun111676_ip = 118;
+                    continue _fun111676
                 }
             case 110:
                 var4 = var7.WHITE;
-                _fun111653_ip = 124;
-                continue _fun111653;
+                _fun111676_ip = 124;
+                continue _fun111676;
             case 118:
                 var4 = var7.INTERACTIVE_TEXT_DEFAULT;
             case 124:
@@ -93,13 +93,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var4.bind(var5)(var3);
                 var3 = var3.colors;
                 if (var2) {
-                    _fun111653_ip = 269;
-                    continue _fun111653
+                    _fun111676_ip = 269;
+                    continue _fun111676
                 }
             case 261:
                 var2 = var3.WHITE;
-                _fun111653_ip = 275;
-                continue _fun111653;
+                _fun111676_ip = 275;
+                continue _fun111676;
             case 269:
                 var2 = var3.CONTROL_BRAND_FOREGROUND;
             case 275:
@@ -137,4 +137,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useVoicePanelButtonStyles = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1297, 671, 8212, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1297, 671, 8218, 2]);

@@ -9,10 +9,10 @@ import java.util.concurrent.Executor;
 public class q0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Executor f16517a;
+    private final Executor f16497a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Map f16518b = new u0.a();
+    private final Map f16498b = new u0.a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     interface a {
@@ -21,19 +21,19 @@ public class q0 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public q0(Executor executor) {
-        this.f16517a = executor;
+        this.f16497a = executor;
     }
 
     public static /* synthetic */ Task a(q0 q0Var, String str, Task task) {
         synchronized (q0Var) {
-            q0Var.f16518b.remove(str);
+            q0Var.f16498b.remove(str);
         }
         return task;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public synchronized Task b(final String str, a aVar) {
-        Task task = (Task) this.f16518b.get(str);
+        Task task = (Task) this.f16498b.get(str);
         if (task != null) {
             if (Log.isLoggable("FirebaseMessaging", 3)) {
                 Log.d("FirebaseMessaging", "Joining ongoing request for: " + str);
@@ -43,13 +43,13 @@ public class q0 {
         if (Log.isLoggable("FirebaseMessaging", 3)) {
             Log.d("FirebaseMessaging", "Making new request for: " + str);
         }
-        Task i10 = aVar.start().i(this.f16517a, new xg.c() { // from class: com.google.firebase.messaging.p0
-            @Override // xg.c
+        Task i10 = aVar.start().i(this.f16497a, new yg.c() { // from class: com.google.firebase.messaging.p0
+            @Override // yg.c
             public final Object a(Task task2) {
                 return q0.a(q0.this, str, task2);
             }
         });
-        this.f16518b.put(str, i10);
+        this.f16498b.put(str, i10);
         return i10;
     }
 }

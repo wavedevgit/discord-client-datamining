@@ -19,8 +19,8 @@ import kotlin.text.Regex;
 import kotlin.text.m;
 import kotlinx.serialization.json.Json;
 import kotlinx.serialization.json.JsonBuilder;
-import or.p;
 import org.jetbrains.annotations.NotNull;
+import qr.p;
 @Metadata(d1 = {"\u0000d\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0006\n\u0002\u0010\u0006\n\u0002\b\u0010\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010%\n\u0002\b\u0005\b\u0000\u0018\u0000 82\u00020\u0001:\u00018B-\u0012$\u0010\u0007\u001a \u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00040\u0003\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00060\u0002¢\u0006\u0004\b\b\u0010\tJ\u0017\u0010\f\u001a\u00020\u00062\u0006\u0010\u000b\u001a\u00020\nH\u0002¢\u0006\u0004\b\f\u0010\rJ\u0017\u0010\u000f\u001a\u00020\u00062\u0006\u0010\u000b\u001a\u00020\u000eH\u0002¢\u0006\u0004\b\u000f\u0010\u0010J\u0017\u0010\u0012\u001a\u00020\u00062\u0006\u0010\u000b\u001a\u00020\u0011H\u0002¢\u0006\u0004\b\u0012\u0010\u0013J'\u0010\u001a\u001a\u00020\u00192\u0006\u0010\u0014\u001a\u00020\u00052\u0006\u0010\u0016\u001a\u00020\u00152\u0006\u0010\u0018\u001a\u00020\u0017H\u0002¢\u0006\u0004\b\u001a\u0010\u001bJ\u001f\u0010\u001e\u001a\u00020\u00192\u0006\u0010\u001c\u001a\u00020\u00052\u0006\u0010\u001d\u001a\u00020\u0005H\u0002¢\u0006\u0004\b\u001e\u0010\u001fJ'\u0010$\u001a\u00020 2\u0006\u0010!\u001a\u00020 2\u0006\u0010\"\u001a\u00020 2\u0006\u0010#\u001a\u00020 H\u0002¢\u0006\u0004\b$\u0010%J\u001f\u0010'\u001a\u00020\u00062\u0006\u0010&\u001a\u00020\u00052\u0006\u0010\u0018\u001a\u00020\u0017H\u0002¢\u0006\u0004\b'\u0010(J\u0015\u0010*\u001a\u00020\u00062\u0006\u0010)\u001a\u00020\u0005¢\u0006\u0004\b*\u0010+J\r\u0010,\u001a\u00020\u0006¢\u0006\u0004\b,\u0010-R5\u0010\u0007\u001a \u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00040\u0003\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00060\u00028\u0006¢\u0006\f\n\u0004\b\u0007\u0010.\u001a\u0004\b/\u00100R\u0014\u00102\u001a\u0002018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b2\u00103R \u00105\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u0015048\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b5\u00106R \u00107\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u0017048\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b7\u00106¨\u00069"}, d2 = {"Lcom/discord/user_search_worker/UserSearchWorker;", "", "Lkotlin/Function3;", "", "Lcom/discord/user_search_worker/UserSearchWorkerResult;", "", "", "onResults", "<init>", "(Lkotlin/jvm/functions/Function3;)V", "Lcom/discord/user_search_worker/UserSearchUpdateUsersData;", "data", "mergeUsers", "(Lcom/discord/user_search_worker/UserSearchUpdateUsersData;)V", "Lcom/discord/user_search_worker/UserSearchQuerySetData;", "setNewQuery", "(Lcom/discord/user_search_worker/UserSearchQuerySetData;)V", "Lcom/discord/user_search_worker/UserSearchQueryClearData;", "clearQuery", "(Lcom/discord/user_search_worker/UserSearchQueryClearData;)V", StackTraceHelper.ID_KEY, "Lcom/discord/user_search_worker/UserSearchTransformedUser;", "user", "Lcom/discord/user_search_worker/UserSearchQuerySetPayload;", "payload", "", "isValid", "(Ljava/lang/String;Lcom/discord/user_search_worker/UserSearchTransformedUser;Lcom/discord/user_search_worker/UserSearchQuerySetPayload;)Z", "needleBase", "haystackBase", "fuzzySearch", "(Ljava/lang/String;Ljava/lang/String;)Z", "", "score", "booster", "boosterFallback", "calculateScore", "(DDD)D", "uuid", "searchUsers", "(Ljava/lang/String;Lcom/discord/user_search_worker/UserSearchQuerySetPayload;)V", "dataJSON", "onMessage", "(Ljava/lang/String;)V", "terminate", "()V", "Lkotlin/jvm/functions/Function3;", "getOnResults", "()Lkotlin/jvm/functions/Function3;", "Lkotlinx/serialization/json/Json;", "json", "Lkotlinx/serialization/json/Json;", "", "users", "Ljava/util/Map;", "queries", "Companion", "user_search_worker_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nUserSearchWorker.kt\nKotlin\n*S Kotlin\n*F\n+ 1 UserSearchWorker.kt\ncom/discord/user_search_worker/UserSearchWorker\n+ 2 Json.kt\nkotlinx/serialization/json/Json\n+ 3 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 4 _Maps.kt\nkotlin/collections/MapsKt___MapsKt\n*L\n1#1,283:1\n147#2:284\n1869#3,2:285\n216#4,2:287\n*S KotlinDebug\n*F\n+ 1 UserSearchWorker.kt\ncom/discord/user_search_worker/UserSearchWorker\n*L\n26#1:284\n47#1:285,2\n70#1:287,2\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -226,7 +226,7 @@ public final class UserSearchWorker {
     public static final Unit json$lambda$0(JsonBuilder Json) {
         Intrinsics.checkNotNullParameter(Json, "$this$Json");
         Json.c(true);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:35:0x00a1, code lost:
@@ -376,8 +376,8 @@ public final class UserSearchWorker {
             userSearchWorker.onResults.invoke(arrayList, query, str);
             return;
         }
-        String c12 = Regex.f34911e.c(query);
-        m mVar = m.f34971i;
+        String c12 = Regex.f34931e.c(query);
+        m mVar = m.f34991i;
         Regex regex = new Regex("^" + c12, mVar);
         Regex regex2 = new Regex(c12, mVar);
         for (Map.Entry<String, UserSearchTransformedUser> entry : userSearchWorker.users.entrySet()) {
@@ -481,7 +481,7 @@ public final class UserSearchWorker {
         Function1[] function1Arr = new Function1[2];
         function1Arr[c11] = function1;
         function1Arr[1] = function12;
-        userSearchWorker.onResults.invoke(CollectionsKt.a1(CollectionsKt.W0(arrayList, rr.a.b(function1Arr)), userSearchQuerySetPayload.getLimit()), query, str);
+        userSearchWorker.onResults.invoke(CollectionsKt.a1(CollectionsKt.W0(arrayList, tr.a.b(function1Arr)), userSearchQuerySetPayload.getLimit()), query, str);
     }
 
     /* JADX INFO: Access modifiers changed from: private */

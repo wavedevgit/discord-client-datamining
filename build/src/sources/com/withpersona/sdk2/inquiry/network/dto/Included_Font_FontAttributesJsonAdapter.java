@@ -47,24 +47,24 @@ public final class Included_Font_FontAttributesJsonAdapter extends h {
     @NotNull
     public Included.Font.FontAttributes fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         String str = null;
         StyleElements.FontWeight fontWeight = null;
         String str2 = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 str = (String) this.nullableStringAdapter.fromJson(reader);
-            } else if (W == 1) {
+            } else if (J == 1) {
                 fontWeight = (StyleElements.FontWeight) this.nullableFontWeightAdapter.fromJson(reader);
-            } else if (W == 2) {
+            } else if (J == 2) {
                 str2 = (String) this.nullableStringAdapter.fromJson(reader);
             }
         }
-        reader.z();
+        reader.D();
         return new Included.Font.FontAttributes(str, fontWeight, str2);
     }
 
@@ -73,13 +73,13 @@ public final class Included_Font_FontAttributesJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (fontAttributes != null) {
             writer.k();
-            writer.W("fontFamilyName");
+            writer.J("fontFamilyName");
             this.nullableStringAdapter.toJson(writer, fontAttributes.getFontFamilyName());
-            writer.W(ViewProps.FONT_WEIGHT);
+            writer.J(ViewProps.FONT_WEIGHT);
             this.nullableFontWeightAdapter.toJson(writer, fontAttributes.getFontWeight());
-            writer.W("url");
+            writer.J("url");
             this.nullableStringAdapter.toJson(writer, fontAttributes.getUrl());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

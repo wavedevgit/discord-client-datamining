@@ -7,9 +7,9 @@ import kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptor;
 import kotlin.reflect.jvm.internal.impl.descriptors.annotations.Annotations;
 import kotlin.reflect.jvm.internal.impl.load.java.JavaTypeQualifiersByElementType;
 import kotlin.reflect.jvm.internal.impl.load.java.structure.JavaTypeParameterListOwner;
-import or.l;
-import or.o;
 import org.jetbrains.annotations.NotNull;
+import qr.l;
+import qr.o;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class ContextKt {
     private static final LazyJavaResolverContext c(LazyJavaResolverContext lazyJavaResolverContext, DeclarationDescriptor declarationDescriptor, JavaTypeParameterListOwner javaTypeParameterListOwner, int i10, Lazy lazy) {
@@ -34,7 +34,7 @@ public final class ContextKt {
     public static final LazyJavaResolverContext childForClassOrPackage(@NotNull LazyJavaResolverContext lazyJavaResolverContext, @NotNull ClassOrPackageFragmentDescriptor containingDeclaration, JavaTypeParameterListOwner javaTypeParameterListOwner, int i10) {
         Intrinsics.checkNotNullParameter(lazyJavaResolverContext, "<this>");
         Intrinsics.checkNotNullParameter(containingDeclaration, "containingDeclaration");
-        return c(lazyJavaResolverContext, containingDeclaration, javaTypeParameterListOwner, i10, l.b(o.f44233i, new a(lazyJavaResolverContext, containingDeclaration)));
+        return c(lazyJavaResolverContext, containingDeclaration, javaTypeParameterListOwner, i10, l.b(o.f48045i, new a(lazyJavaResolverContext, containingDeclaration)));
     }
 
     public static /* synthetic */ LazyJavaResolverContext childForClassOrPackage$default(LazyJavaResolverContext lazyJavaResolverContext, ClassOrPackageFragmentDescriptor classOrPackageFragmentDescriptor, JavaTypeParameterListOwner javaTypeParameterListOwner, int i10, int i11, Object obj) {
@@ -75,7 +75,7 @@ public final class ContextKt {
         if (additionalAnnotations.isEmpty()) {
             return lazyJavaResolverContext;
         }
-        return new LazyJavaResolverContext(lazyJavaResolverContext.getComponents(), lazyJavaResolverContext.getTypeParameterResolver(), l.b(o.f44233i, new b(lazyJavaResolverContext, additionalAnnotations)));
+        return new LazyJavaResolverContext(lazyJavaResolverContext.getComponents(), lazyJavaResolverContext.getTypeParameterResolver(), l.b(o.f48045i, new b(lazyJavaResolverContext, additionalAnnotations)));
     }
 
     /* JADX INFO: Access modifiers changed from: private */

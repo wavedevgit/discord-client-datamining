@@ -1,217 +1,170 @@
 package ts;
 
-import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
 import java.util.concurrent.atomic.AtomicIntegerFieldUpdater;
-import java.util.concurrent.atomic.AtomicReferenceArray;
-import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
-import kotlin.jvm.internal.Ref;
+import kotlin.coroutines.CoroutineContext;
+import kotlinx.coroutines.CancellableContinuation;
+import kotlinx.coroutines.CoroutineDispatcher;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class l {
+public final class l extends CoroutineDispatcher implements kotlinx.coroutines.k {
 
-    /* renamed from: b  reason: collision with root package name */
-    private static final /* synthetic */ AtomicReferenceFieldUpdater f51053b = AtomicReferenceFieldUpdater.newUpdater(l.class, Object.class, "lastScheduledTask$volatile");
+    /* renamed from: t  reason: collision with root package name */
+    private static final /* synthetic */ AtomicIntegerFieldUpdater f50833t = AtomicIntegerFieldUpdater.newUpdater(l.class, "runningWorkers$volatile");
 
-    /* renamed from: c  reason: collision with root package name */
-    private static final /* synthetic */ AtomicIntegerFieldUpdater f51054c = AtomicIntegerFieldUpdater.newUpdater(l.class, "producerIndex$volatile");
+    /* renamed from: i  reason: collision with root package name */
+    private final /* synthetic */ kotlinx.coroutines.k f50834i;
 
-    /* renamed from: d  reason: collision with root package name */
-    private static final /* synthetic */ AtomicIntegerFieldUpdater f51055d = AtomicIntegerFieldUpdater.newUpdater(l.class, "consumerIndex$volatile");
+    /* renamed from: o  reason: collision with root package name */
+    private final CoroutineDispatcher f50835o;
 
-    /* renamed from: e  reason: collision with root package name */
-    private static final /* synthetic */ AtomicIntegerFieldUpdater f51056e = AtomicIntegerFieldUpdater.newUpdater(l.class, "blockingTasksInBuffer$volatile");
+    /* renamed from: p  reason: collision with root package name */
+    private final int f50836p;
 
-    /* renamed from: a  reason: collision with root package name */
-    private final AtomicReferenceArray f51057a = new AtomicReferenceArray((int) IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
-    private volatile /* synthetic */ int blockingTasksInBuffer$volatile;
-    private volatile /* synthetic */ int consumerIndex$volatile;
-    private volatile /* synthetic */ Object lastScheduledTask$volatile;
-    private volatile /* synthetic */ int producerIndex$volatile;
+    /* renamed from: q  reason: collision with root package name */
+    private final String f50837q;
 
-    private final h b(h hVar) {
-        if (e() == 127) {
-            return hVar;
+    /* renamed from: r  reason: collision with root package name */
+    private final q f50838r;
+    private volatile /* synthetic */ int runningWorkers$volatile;
+
+    /* renamed from: s  reason: collision with root package name */
+    private final Object f50839s;
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    private final class a implements Runnable {
+
+        /* renamed from: d  reason: collision with root package name */
+        private Runnable f50840d;
+
+        public a(Runnable runnable) {
+            this.f50840d = runnable;
         }
-        if (hVar.f51044e) {
-            f51056e.incrementAndGet(this);
+
+        @Override // java.lang.Runnable
+        public void run() {
+            int i10 = 0;
+            while (true) {
+                this.f50840d.run();
+                Runnable p22 = l.this.p2();
+                if (p22 != null) {
+                    try {
+                        this.f50840d = p22;
+                        i10++;
+                        if (i10 >= 16 && j.d(l.this.f50835o, l.this)) {
+                            j.c(l.this.f50835o, l.this, this);
+                            return;
+                        }
+                    }
+                } else {
+                    return;
+                }
+            }
         }
-        int i10 = f51054c.get(this) & 127;
-        while (this.f51057a.get(i10) != null) {
-            Thread.yield();
-        }
-        this.f51057a.lazySet(i10, hVar);
-        f51054c.incrementAndGet(this);
-        return null;
     }
 
-    private final void c(h hVar) {
-        if (hVar != null && hVar.f51044e) {
-            f51056e.decrementAndGet(this);
+    public l(CoroutineDispatcher coroutineDispatcher, int i10, String str) {
+        kotlinx.coroutines.k kVar;
+        if (coroutineDispatcher instanceof kotlinx.coroutines.k) {
+            kVar = (kotlinx.coroutines.k) coroutineDispatcher;
+        } else {
+            kVar = null;
         }
+        this.f50834i = kVar == null ? os.f0.a() : kVar;
+        this.f50835o = coroutineDispatcher;
+        this.f50836p = i10;
+        this.f50837q = str;
+        this.f50838r = new q(false);
+        this.f50839s = new Object();
     }
 
-    private final int e() {
-        return f51054c.get(this) - f51055d.get(this);
+    public static final /* synthetic */ AtomicIntegerFieldUpdater h2() {
+        return f50833t;
     }
 
-    private final h m() {
-        h hVar;
+    public static final /* synthetic */ Object i2(l lVar) {
+        return lVar.f50839s;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public final Runnable p2() {
         while (true) {
-            int i10 = f51055d.get(this);
-            if (i10 - f51054c.get(this) == 0) {
-                return null;
-            }
-            int i11 = i10 & 127;
-            if (f51055d.compareAndSet(this, i10, i10 + 1) && (hVar = (h) this.f51057a.getAndSet(i11, null)) != null) {
-                c(hVar);
-                return hVar;
-            }
-        }
-    }
-
-    private final boolean n(d dVar) {
-        h m10 = m();
-        if (m10 == null) {
-            return false;
-        }
-        dVar.a(m10);
-        return true;
-    }
-
-    private final h o(boolean z10) {
-        h hVar;
-        do {
-            hVar = (h) f51053b.get(this);
-            if (hVar == null || hVar.f51044e != z10) {
-                int i10 = f51055d.get(this);
-                int i11 = f51054c.get(this);
-                while (i10 != i11) {
-                    if (z10 && f51056e.get(this) == 0) {
+            Runnable runnable = (Runnable) this.f50838r.e();
+            if (runnable == null) {
+                synchronized (this.f50839s) {
+                    f50833t.decrementAndGet(this);
+                    if (this.f50838r.c() == 0) {
                         return null;
                     }
-                    i11--;
-                    h q10 = q(i11, z10);
-                    if (q10 != null) {
-                        return q10;
-                    }
+                    f50833t.incrementAndGet(this);
                 }
-                return null;
-            }
-        } while (!androidx.concurrent.futures.b.a(f51053b, this, hVar, null));
-        return hVar;
-    }
-
-    private final h p(int i10) {
-        int i11 = f51055d.get(this);
-        int i12 = f51054c.get(this);
-        boolean z10 = true;
-        if (i10 != 1) {
-            z10 = false;
-        }
-        while (i11 != i12) {
-            if (z10 && f51056e.get(this) == 0) {
-                return null;
-            }
-            int i13 = i11 + 1;
-            h q10 = q(i11, z10);
-            if (q10 == null) {
-                i11 = i13;
             } else {
-                return q10;
+                return runnable;
             }
         }
-        return null;
     }
 
-    private final h q(int i10, boolean z10) {
-        int i11 = i10 & 127;
-        h hVar = (h) this.f51057a.get(i11);
-        if (hVar == null || hVar.f51044e != z10 || !os.l.a(this.f51057a, i11, hVar, null)) {
-            return null;
-        }
-        if (z10) {
-            f51056e.decrementAndGet(this);
-        }
-        return hVar;
-    }
-
-    /* JADX WARN: Type inference failed for: r0v2, types: [T, java.lang.Object, ts.h] */
-    private final long s(int i10, Ref.ObjectRef objectRef) {
-        ?? r02;
-        int i11;
-        do {
-            r02 = (h) f51053b.get(this);
-            if (r02 == 0) {
-                return -2L;
+    private final boolean q2() {
+        synchronized (this.f50839s) {
+            if (f50833t.get(this) >= this.f50836p) {
+                return false;
             }
-            if (r02.f51044e) {
-                i11 = 1;
-            } else {
-                i11 = 2;
+            f50833t.incrementAndGet(this);
+            return true;
+        }
+    }
+
+    @Override // kotlinx.coroutines.CoroutineDispatcher
+    public void D1(CoroutineContext coroutineContext, Runnable runnable) {
+        Runnable p22;
+        this.f50838r.a(runnable);
+        if (f50833t.get(this) < this.f50836p && q2() && (p22 = p2()) != null) {
+            try {
+                j.c(this.f50835o, this, new a(p22));
+            } catch (Throwable th2) {
+                f50833t.decrementAndGet(this);
+                throw th2;
             }
-            if ((i11 & i10) == 0) {
-                return -2L;
+        }
+    }
+
+    @Override // kotlinx.coroutines.CoroutineDispatcher
+    public void T1(CoroutineContext coroutineContext, Runnable runnable) {
+        Runnable p22;
+        this.f50838r.a(runnable);
+        if (f50833t.get(this) < this.f50836p && q2() && (p22 = p2()) != null) {
+            try {
+                this.f50835o.T1(this, new a(p22));
+            } catch (Throwable th2) {
+                f50833t.decrementAndGet(this);
+                throw th2;
             }
-            long a10 = j.f51051f.a() - r02.f51043d;
-            long j10 = j.f51047b;
-            if (a10 < j10) {
-                return j10 - a10;
-            }
-        } while (!androidx.concurrent.futures.b.a(f51053b, this, r02, null));
-        objectRef.element = r02;
-        return -1L;
+        }
     }
 
-    public final h a(h hVar, boolean z10) {
-        if (z10) {
-            return b(hVar);
-        }
-        h hVar2 = (h) f51053b.getAndSet(this, hVar);
-        if (hVar2 == null) {
-            return null;
-        }
-        return b(hVar2);
+    @Override // kotlinx.coroutines.k
+    public os.n0 Y(long j10, Runnable runnable, CoroutineContext coroutineContext) {
+        return this.f50834i.Y(j10, runnable, coroutineContext);
     }
 
-    public final int i() {
-        if (f51053b.get(this) != null) {
-            return e() + 1;
+    @Override // kotlinx.coroutines.CoroutineDispatcher
+    public CoroutineDispatcher a2(int i10, String str) {
+        m.a(i10);
+        if (i10 >= this.f50836p) {
+            return m.b(this, str);
         }
-        return e();
+        return super.a2(i10, str);
     }
 
-    public final void j(d dVar) {
-        h hVar = (h) f51053b.getAndSet(this, null);
-        if (hVar != null) {
-            dVar.a(hVar);
+    @Override // kotlinx.coroutines.CoroutineDispatcher
+    public String toString() {
+        String str = this.f50837q;
+        if (str == null) {
+            return this.f50835o + ".limitedParallelism(" + this.f50836p + ')';
         }
-        do {
-        } while (n(dVar));
+        return str;
     }
 
-    public final h k() {
-        h hVar = (h) f51053b.getAndSet(this, null);
-        if (hVar == null) {
-            return m();
-        }
-        return hVar;
-    }
-
-    public final h l() {
-        return o(true);
-    }
-
-    /* JADX WARN: Multi-variable type inference failed */
-    public final long r(int i10, Ref.ObjectRef objectRef) {
-        T t10;
-        if (i10 == 3) {
-            t10 = m();
-        } else {
-            t10 = p(i10);
-        }
-        if (t10 != 0) {
-            objectRef.element = t10;
-            return -1L;
-        }
-        return s(i10, objectRef);
+    @Override // kotlinx.coroutines.k
+    public void y(long j10, CancellableContinuation cancellableContinuation) {
+        this.f50834i.y(j10, cancellableContinuation);
     }
 }

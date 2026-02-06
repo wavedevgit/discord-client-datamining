@@ -165,4 +165,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getThumbnailImage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3979, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3980, 2]);

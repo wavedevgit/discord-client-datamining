@@ -19,19 +19,19 @@ public final class EphemeralIndicationMessageAccessory extends MessageAccessory 
     }
 
     /* renamed from: copy-ntcYbpo$default  reason: not valid java name */
-    public static /* synthetic */ EphemeralIndicationMessageAccessory m568copyntcYbpo$default(EphemeralIndicationMessageAccessory ephemeralIndicationMessageAccessory, String str, EphemeralIndication ephemeralIndication, int i10, Object obj) {
+    public static /* synthetic */ EphemeralIndicationMessageAccessory m566copyntcYbpo$default(EphemeralIndicationMessageAccessory ephemeralIndicationMessageAccessory, String str, EphemeralIndication ephemeralIndication, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = ephemeralIndicationMessageAccessory.messageId;
         }
         if ((i10 & 2) != 0) {
             ephemeralIndication = ephemeralIndicationMessageAccessory.ephemeralIndication;
         }
-        return ephemeralIndicationMessageAccessory.m570copyntcYbpo(str, ephemeralIndication);
+        return ephemeralIndicationMessageAccessory.m568copyntcYbpo(str, ephemeralIndication);
     }
 
     @NotNull
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m569component13Eiw7ao() {
+    public final String m567component13Eiw7ao() {
         return this.messageId;
     }
 
@@ -42,7 +42,7 @@ public final class EphemeralIndicationMessageAccessory extends MessageAccessory 
 
     @NotNull
     /* renamed from: copy-ntcYbpo  reason: not valid java name */
-    public final EphemeralIndicationMessageAccessory m570copyntcYbpo(@NotNull String messageId, @NotNull EphemeralIndication ephemeralIndication) {
+    public final EphemeralIndicationMessageAccessory m568copyntcYbpo(@NotNull String messageId, @NotNull EphemeralIndication ephemeralIndication) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(ephemeralIndication, "ephemeralIndication");
         return new EphemeralIndicationMessageAccessory(messageId, ephemeralIndication, null);
@@ -54,7 +54,7 @@ public final class EphemeralIndicationMessageAccessory extends MessageAccessory 
         }
         if (obj instanceof EphemeralIndicationMessageAccessory) {
             EphemeralIndicationMessageAccessory ephemeralIndicationMessageAccessory = (EphemeralIndicationMessageAccessory) obj;
-            return MessageId.m1089equalsimpl0(this.messageId, ephemeralIndicationMessageAccessory.messageId) && Intrinsics.areEqual(this.ephemeralIndication, ephemeralIndicationMessageAccessory.ephemeralIndication);
+            return MessageId.m1087equalsimpl0(this.messageId, ephemeralIndicationMessageAccessory.messageId) && Intrinsics.areEqual(this.ephemeralIndication, ephemeralIndicationMessageAccessory.ephemeralIndication);
         }
         return false;
     }
@@ -67,19 +67,19 @@ public final class EphemeralIndicationMessageAccessory extends MessageAccessory 
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     @NotNull
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo538getMessageId3Eiw7ao() {
+    public String mo536getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        return (MessageId.m1090hashCodeimpl(this.messageId) * 31) + this.ephemeralIndication.hashCode();
+        return (MessageId.m1088hashCodeimpl(this.messageId) * 31) + this.ephemeralIndication.hashCode();
     }
 
     @NotNull
     public String toString() {
-        String m1092toStringimpl = MessageId.m1092toStringimpl(this.messageId);
+        String m1090toStringimpl = MessageId.m1090toStringimpl(this.messageId);
         EphemeralIndication ephemeralIndication = this.ephemeralIndication;
-        return "EphemeralIndicationMessageAccessory(messageId=" + m1092toStringimpl + ", ephemeralIndication=" + ephemeralIndication + ")";
+        return "EphemeralIndicationMessageAccessory(messageId=" + m1090toStringimpl + ", ephemeralIndication=" + ephemeralIndication + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

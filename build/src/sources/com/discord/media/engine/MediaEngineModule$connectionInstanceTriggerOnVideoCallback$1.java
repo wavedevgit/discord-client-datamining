@@ -29,7 +29,7 @@ final class MediaEngineModule$connectionInstanceTriggerOnVideoCallback$1 extends
         ReactEvents reactEvents;
         reactEvents = mediaEngineModule.reactEvents;
         reactEvents.emitModuleEvent(mediaEngineModule.getReactContext(), new OnVideoCallbackEvent((int) d10, str, j10, str2, str3));
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -40,7 +40,7 @@ final class MediaEngineModule$connectionInstanceTriggerOnVideoCallback$1 extends
     @Override // kotlin.coroutines.jvm.internal.a
     public final Object invokeSuspend(Object obj) {
         Object awaitMediaEngine;
-        Object f10 = ur.b.f();
+        Object f10 = wr.b.f();
         int i10 = this.label;
         if (i10 != 0) {
             if (i10 == 1) {
@@ -68,11 +68,11 @@ final class MediaEngineModule$connectionInstanceTriggerOnVideoCallback$1 extends
                 return invokeSuspend$lambda$0;
             }
         });
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaEngineModule$connectionInstanceTriggerOnVideoCallback$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+        return ((MediaEngineModule$connectionInstanceTriggerOnVideoCallback$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
     }
 }

@@ -6,10 +6,10 @@ import android.content.res.Configuration;
 public class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private Context f1274a;
+    private Context f1603a;
 
     private a(Context context) {
-        this.f1274a = context;
+        this.f1603a = context;
     }
 
     public static a b(Context context) {
@@ -17,18 +17,18 @@ public class a {
     }
 
     public boolean a() {
-        if (this.f1274a.getApplicationInfo().targetSdkVersion < 14) {
+        if (this.f1603a.getApplicationInfo().targetSdkVersion < 14) {
             return true;
         }
         return false;
     }
 
     public int c() {
-        return this.f1274a.getResources().getDisplayMetrics().widthPixels / 2;
+        return this.f1603a.getResources().getDisplayMetrics().widthPixels / 2;
     }
 
     public int d() {
-        Configuration configuration = this.f1274a.getResources().getConfiguration();
+        Configuration configuration = this.f1603a.getResources().getConfiguration();
         int i10 = configuration.screenWidthDp;
         int i11 = configuration.screenHeightDp;
         if (configuration.smallestScreenWidthDp <= 600 && i10 <= 600) {
@@ -56,7 +56,7 @@ public class a {
     }
 
     public boolean e() {
-        return this.f1274a.getResources().getBoolean(f.b.f21923a);
+        return this.f1603a.getResources().getBoolean(f.b.f22224a);
     }
 
     public boolean f() {

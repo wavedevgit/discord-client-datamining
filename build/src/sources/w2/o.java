@@ -3,7 +3,7 @@ package w2;
 final class o extends n {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final o f52628a = new o();
+    public static final o f53407a = new o();
 
     private o() {
         super(null);

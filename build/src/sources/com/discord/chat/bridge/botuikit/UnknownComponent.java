@@ -9,8 +9,8 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
 import org.jetbrains.annotations.NotNull;
+@ft.m
 @Metadata(d1 = {"\u0000D\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 \"2\u00020\u0001:\u0002!\"B\u001b\u0012\b\b\u0002\u0010\u0002\u001a\u00020\u0003\u0012\b\b\u0002\u0010\u0004\u001a\u00020\u0005¢\u0006\u0004\b\u0006\u0010\u0007B-\b\u0010\u0012\u0006\u0010\b\u001a\u00020\u0003\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\t\u001a\u0004\u0018\u00010\n¢\u0006\u0004\b\u0006\u0010\u000bJ\t\u0010\u0010\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0011\u001a\u00020\u0005HÆ\u0003J\u001d\u0010\u0012\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u0005HÆ\u0001J\u0013\u0010\u0013\u001a\u00020\u00142\b\u0010\u0015\u001a\u0004\u0018\u00010\u0016HÖ\u0003J\t\u0010\u0017\u001a\u00020\u0003HÖ\u0001J\t\u0010\u0018\u001a\u00020\u0005HÖ\u0001J%\u0010\u0019\u001a\u00020\u001a2\u0006\u0010\u001b\u001a\u00020\u00002\u0006\u0010\u001c\u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\u001fH\u0001¢\u0006\u0002\b R\u0014\u0010\u0002\u001a\u00020\u0003X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\f\u0010\rR\u0014\u0010\u0004\u001a\u00020\u0005X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u000f¨\u0006#"}, d2 = {"Lcom/discord/chat/bridge/botuikit/UnknownComponent;", "Lcom/discord/chat/bridge/botuikit/Component;", "type", "", StackTraceHelper.ID_KEY, "", "<init>", "(ILjava/lang/String;)V", "seen0", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(IILjava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "getType", "()I", "getId", "()Ljava/lang/String;", "component1", "component2", "copy", "equals", "", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
-@dt.m
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class UnknownComponent extends Component {
     @NotNull
@@ -18,7 +18,7 @@ public final class UnknownComponent extends Component {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f8640id;
+    private final String f8539id;
     private final int type;
 
     @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005¨\u0006\u0007"}, d2 = {"Lcom/discord/chat/bridge/botuikit/UnknownComponent$Companion;", "", "<init>", "()V", "serializer", "Lkotlinx/serialization/KSerializer;", "Lcom/discord/chat/bridge/botuikit/UnknownComponent;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
@@ -46,17 +46,17 @@ public final class UnknownComponent extends Component {
             i10 = unknownComponent.type;
         }
         if ((i11 & 2) != 0) {
-            str = unknownComponent.f8640id;
+            str = unknownComponent.f8539id;
         }
         return unknownComponent.copy(i10, str);
     }
 
     public static final /* synthetic */ void write$Self$chat_release(UnknownComponent unknownComponent, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
-        if (compositeEncoder.z(serialDescriptor, 0) || unknownComponent.getType() != 0) {
-            compositeEncoder.v(serialDescriptor, 0, unknownComponent.getType());
+        if (compositeEncoder.A(serialDescriptor, 0) || unknownComponent.getType() != 0) {
+            compositeEncoder.x(serialDescriptor, 0, unknownComponent.getType());
         }
-        if (compositeEncoder.z(serialDescriptor, 1) || !Intrinsics.areEqual(unknownComponent.getId(), "-1")) {
-            compositeEncoder.x(serialDescriptor, 1, unknownComponent.getId());
+        if (compositeEncoder.A(serialDescriptor, 1) || !Intrinsics.areEqual(unknownComponent.getId(), "-1")) {
+            compositeEncoder.z(serialDescriptor, 1, unknownComponent.getId());
         }
     }
 
@@ -66,7 +66,7 @@ public final class UnknownComponent extends Component {
 
     @NotNull
     public final String component2() {
-        return this.f8640id;
+        return this.f8539id;
     }
 
     @NotNull
@@ -81,7 +81,7 @@ public final class UnknownComponent extends Component {
         }
         if (obj instanceof UnknownComponent) {
             UnknownComponent unknownComponent = (UnknownComponent) obj;
-            return this.type == unknownComponent.type && Intrinsics.areEqual(this.f8640id, unknownComponent.f8640id);
+            return this.type == unknownComponent.type && Intrinsics.areEqual(this.f8539id, unknownComponent.f8539id);
         }
         return false;
     }
@@ -89,7 +89,7 @@ public final class UnknownComponent extends Component {
     @Override // com.discord.chat.bridge.botuikit.Component
     @NotNull
     public String getId() {
-        return this.f8640id;
+        return this.f8539id;
     }
 
     @Override // com.discord.chat.bridge.botuikit.Component
@@ -98,13 +98,13 @@ public final class UnknownComponent extends Component {
     }
 
     public int hashCode() {
-        return (Integer.hashCode(this.type) * 31) + this.f8640id.hashCode();
+        return (Integer.hashCode(this.type) * 31) + this.f8539id.hashCode();
     }
 
     @NotNull
     public String toString() {
         int i10 = this.type;
-        String str = this.f8640id;
+        String str = this.f8539id;
         return "UnknownComponent(type=" + i10 + ", id=" + str + ")";
     }
 
@@ -112,9 +112,9 @@ public final class UnknownComponent extends Component {
         super(null);
         this.type = (i10 & 1) == 0 ? 0 : i11;
         if ((i10 & 2) == 0) {
-            this.f8640id = "-1";
+            this.f8539id = "-1";
         } else {
-            this.f8640id = str;
+            this.f8539id = str;
         }
     }
 
@@ -127,6 +127,6 @@ public final class UnknownComponent extends Component {
         super(null);
         Intrinsics.checkNotNullParameter(id2, "id");
         this.type = i10;
-        this.f8640id = id2;
+        this.f8539id = id2;
     }
 }

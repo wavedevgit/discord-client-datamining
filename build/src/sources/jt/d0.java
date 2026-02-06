@@ -1,61 +1,106 @@
 package jt;
 
-import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.FunctionReferenceImpl;
+import java.util.Arrays;
+import kotlin.Lazy;
+import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.Intrinsics;
+import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
+import kotlinx.serialization.encoding.Decoder;
+import kotlinx.serialization.encoding.Encoder;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class d0 {
+public final class d0 implements KSerializer {
 
     /* renamed from: a  reason: collision with root package name */
-    private final gt.z f31311a;
+    private final Enum[] f30984a;
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f31312b;
+    private SerialDescriptor f30985b;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    /* synthetic */ class a extends FunctionReferenceImpl implements Function2 {
-        a(Object obj) {
-            super(2, obj, d0.class, "readIfAbsent", "readIfAbsent(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z", 0);
-        }
+    /* renamed from: c  reason: collision with root package name */
+    private final Lazy f30986c;
 
-        public final Boolean a(SerialDescriptor p02, int i10) {
-            Intrinsics.checkNotNullParameter(p02, "p0");
-            return Boolean.valueOf(((d0) this.receiver).e(p02, i10));
-        }
-
-        @Override // kotlin.jvm.functions.Function2
-        public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
-            return a((SerialDescriptor) obj, ((Number) obj2).intValue());
-        }
+    public d0(final String serialName, Enum[] values) {
+        Intrinsics.checkNotNullParameter(serialName, "serialName");
+        Intrinsics.checkNotNullParameter(values, "values");
+        this.f30984a = values;
+        this.f30986c = qr.l.a(new Function0() { // from class: jt.c0
+            @Override // kotlin.jvm.functions.Function0
+            public final Object invoke() {
+                SerialDescriptor c10;
+                c10 = d0.c(d0.this, serialName);
+                return c10;
+            }
+        });
     }
 
-    public d0(SerialDescriptor descriptor) {
-        Intrinsics.checkNotNullParameter(descriptor, "descriptor");
-        this.f31311a = new gt.z(descriptor, new a(this));
+    private final SerialDescriptor b(String str) {
+        b0 b0Var = new b0(str, this.f30984a.length);
+        for (Enum r42 : this.f30984a) {
+            a2.p(b0Var, r42.name(), false, 2, null);
+        }
+        return b0Var;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public final boolean e(SerialDescriptor serialDescriptor, int i10) {
-        boolean z10;
-        if (!serialDescriptor.i(i10) && serialDescriptor.g(i10).b()) {
-            z10 = true;
-        } else {
-            z10 = false;
+    public static final SerialDescriptor c(d0 d0Var, String str) {
+        SerialDescriptor serialDescriptor = d0Var.f30985b;
+        if (serialDescriptor == null) {
+            return d0Var.b(str);
         }
-        this.f31312b = z10;
-        return z10;
+        return serialDescriptor;
     }
 
-    public final boolean b() {
-        return this.f31312b;
+    @Override // kotlinx.serialization.DeserializationStrategy
+    /* renamed from: d */
+    public Enum deserialize(Decoder decoder) {
+        Intrinsics.checkNotNullParameter(decoder, "decoder");
+        int e10 = decoder.e(getDescriptor());
+        if (e10 >= 0) {
+            Enum[] enumArr = this.f30984a;
+            if (e10 < enumArr.length) {
+                return enumArr[e10];
+            }
+        }
+        throw new ft.n(e10 + " is not among valid " + getDescriptor().h() + " enum values, values size is " + this.f30984a.length);
     }
 
-    public final void c(int i10) {
-        this.f31311a.a(i10);
+    @Override // ft.o
+    /* renamed from: e */
+    public void serialize(Encoder encoder, Enum value) {
+        Intrinsics.checkNotNullParameter(encoder, "encoder");
+        Intrinsics.checkNotNullParameter(value, "value");
+        int h02 = kotlin.collections.i.h0(this.f30984a, value);
+        if (h02 != -1) {
+            encoder.i(getDescriptor(), h02);
+            return;
+        }
+        StringBuilder sb2 = new StringBuilder();
+        sb2.append(value);
+        sb2.append(" is not a valid enum ");
+        sb2.append(getDescriptor().h());
+        sb2.append(", must be one of ");
+        String arrays = Arrays.toString(this.f30984a);
+        Intrinsics.checkNotNullExpressionValue(arrays, "toString(...)");
+        sb2.append(arrays);
+        throw new ft.n(sb2.toString());
     }
 
-    public final int d() {
-        return this.f31311a.d();
+    @Override // kotlinx.serialization.KSerializer, ft.o, kotlinx.serialization.DeserializationStrategy
+    public SerialDescriptor getDescriptor() {
+        return (SerialDescriptor) this.f30986c.getValue();
+    }
+
+    public String toString() {
+        return "kotlinx.serialization.internal.EnumSerializer<" + getDescriptor().h() + '>';
+    }
+
+    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
+    public d0(String serialName, Enum[] values, SerialDescriptor descriptor) {
+        this(serialName, values);
+        Intrinsics.checkNotNullParameter(serialName, "serialName");
+        Intrinsics.checkNotNullParameter(values, "values");
+        Intrinsics.checkNotNullParameter(descriptor, "descriptor");
+        this.f30985b = descriptor;
     }
 }

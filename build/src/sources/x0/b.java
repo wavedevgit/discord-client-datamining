@@ -5,26 +5,26 @@ import java.util.concurrent.atomic.AtomicReference;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final AtomicReference f53601a;
+    private final AtomicReference f54420a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Object f53602b;
+    private final Object f54421b;
 
     /* renamed from: c  reason: collision with root package name */
-    private Object f53603c;
+    private Object f54422c;
 
     public b() {
         d dVar;
-        dVar = c.f53604a;
-        this.f53601a = new AtomicReference(dVar);
-        this.f53602b = new Object();
+        dVar = c.f54423a;
+        this.f54420a = new AtomicReference(dVar);
+        this.f54421b = new Object();
     }
 
     public final Object a() {
         long a10 = f.a();
         if (a10 == e.a()) {
-            return this.f53603c;
+            return this.f54422c;
         }
-        return ((d) this.f53601a.get()).b(a10);
+        return ((d) this.f54420a.get()).b(a10);
     }
 }

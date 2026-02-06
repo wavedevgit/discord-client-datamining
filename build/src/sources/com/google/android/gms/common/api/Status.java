@@ -12,49 +12,49 @@ import gf.o;
 public final class Status extends hf.a implements k, ReflectedParcelable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f13786d;
+    private final int f13741d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f13787e;
+    private final String f13742e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final PendingIntent f13788i;
+    private final PendingIntent f13743i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final com.google.android.gms.common.b f13789o;
+    private final com.google.android.gms.common.b f13744o;
 
     /* renamed from: p  reason: collision with root package name */
-    public static final Status f13778p = new Status(-1);
+    public static final Status f13733p = new Status(-1);
 
     /* renamed from: q  reason: collision with root package name */
-    public static final Status f13779q = new Status(0);
+    public static final Status f13734q = new Status(0);
 
     /* renamed from: r  reason: collision with root package name */
-    public static final Status f13780r = new Status(14);
+    public static final Status f13735r = new Status(14);
 
     /* renamed from: s  reason: collision with root package name */
-    public static final Status f13781s = new Status(8);
+    public static final Status f13736s = new Status(8);
 
     /* renamed from: t  reason: collision with root package name */
-    public static final Status f13782t = new Status(15);
+    public static final Status f13737t = new Status(15);
 
     /* renamed from: u  reason: collision with root package name */
-    public static final Status f13783u = new Status(16);
+    public static final Status f13738u = new Status(16);
 
     /* renamed from: v  reason: collision with root package name */
-    public static final Status f13784v = new Status(17);
+    public static final Status f13739v = new Status(17);
 
     /* renamed from: w  reason: collision with root package name */
-    public static final Status f13785w = new Status(18);
+    public static final Status f13740w = new Status(18);
     @NonNull
     public static final Parcelable.Creator<Status> CREATOR = new b();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Status(int i10, String str, PendingIntent pendingIntent, com.google.android.gms.common.b bVar) {
-        this.f13786d = i10;
-        this.f13787e = str;
-        this.f13788i = pendingIntent;
-        this.f13789o = bVar;
+        this.f13741d = i10;
+        this.f13742e = str;
+        this.f13743i = pendingIntent;
+        this.f13744o = bVar;
     }
 
     @Override // ef.k
@@ -63,19 +63,19 @@ public final class Status extends hf.a implements k, ReflectedParcelable {
     }
 
     public com.google.android.gms.common.b b() {
-        return this.f13789o;
+        return this.f13744o;
     }
 
     public PendingIntent c() {
-        return this.f13788i;
+        return this.f13743i;
     }
 
     public int d() {
-        return this.f13786d;
+        return this.f13741d;
     }
 
     public String e() {
-        return this.f13787e;
+        return this.f13742e;
     }
 
     public boolean equals(Object obj) {
@@ -83,36 +83,36 @@ public final class Status extends hf.a implements k, ReflectedParcelable {
             return false;
         }
         Status status = (Status) obj;
-        if (this.f13786d != status.f13786d || !o.a(this.f13787e, status.f13787e) || !o.a(this.f13788i, status.f13788i) || !o.a(this.f13789o, status.f13789o)) {
+        if (this.f13741d != status.f13741d || !o.a(this.f13742e, status.f13742e) || !o.a(this.f13743i, status.f13743i) || !o.a(this.f13744o, status.f13744o)) {
             return false;
         }
         return true;
     }
 
     public boolean f() {
-        return this.f13788i != null;
+        return this.f13743i != null;
     }
 
-    public boolean g() {
-        return this.f13786d <= 0;
+    public boolean h() {
+        return this.f13741d <= 0;
     }
 
     public int hashCode() {
-        return o.b(Integer.valueOf(this.f13786d), this.f13787e, this.f13788i, this.f13789o);
+        return o.b(Integer.valueOf(this.f13741d), this.f13742e, this.f13743i, this.f13744o);
     }
 
     public final String i() {
-        String str = this.f13787e;
+        String str = this.f13742e;
         if (str != null) {
             return str;
         }
-        return c.a(this.f13786d);
+        return c.a(this.f13741d);
     }
 
     public String toString() {
         o.a c10 = o.c(this);
         c10.a("statusCode", i());
-        c10.a("resolution", this.f13788i);
+        c10.a("resolution", this.f13743i);
         return c10.toString();
     }
 
@@ -121,7 +121,7 @@ public final class Status extends hf.a implements k, ReflectedParcelable {
         int a10 = hf.c.a(parcel);
         hf.c.l(parcel, 1, d());
         hf.c.s(parcel, 2, e(), false);
-        hf.c.q(parcel, 3, this.f13788i, i10, false);
+        hf.c.q(parcel, 3, this.f13743i, i10, false);
         hf.c.q(parcel, 4, b(), i10, false);
         hf.c.b(parcel, a10);
     }

@@ -12,39 +12,39 @@ import org.jetbrains.annotations.NotNull;
 public final class OneTimeLinkCodeResponseJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19845a;
+    private final m.b f19825a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f19846b;
+    private final h f19826b;
 
     public OneTimeLinkCodeResponseJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("meta");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19845a = a10;
+        this.f19825a = a10;
         h f10 = moshi.f(Metadata.class, x0.d(), "meta");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19846b = f10;
+        this.f19826b = f10;
     }
 
     @Override // com.squareup.moshi.h
     /* renamed from: a */
     public OneTimeLinkCodeResponse fromJson(m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         Metadata metadata = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.f19845a);
-            if (W != -1) {
-                if (W == 0) {
-                    metadata = (Metadata) this.f19846b.fromJson(reader);
+            int J = reader.J(this.f19825a);
+            if (J != -1) {
+                if (J == 0) {
+                    metadata = (Metadata) this.f19826b.fromJson(reader);
                 }
             } else {
                 reader.E0();
-                reader.P();
+                reader.S();
             }
         }
-        reader.z();
+        reader.D();
         return new OneTimeLinkCodeResponse(metadata);
     }
 
@@ -54,9 +54,9 @@ public final class OneTimeLinkCodeResponseJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (oneTimeLinkCodeResponse != null) {
             writer.k();
-            writer.W("meta");
-            this.f19846b.toJson(writer, oneTimeLinkCodeResponse.a());
-            writer.E();
+            writer.J("meta");
+            this.f19826b.toJson(writer, oneTimeLinkCodeResponse.a());
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

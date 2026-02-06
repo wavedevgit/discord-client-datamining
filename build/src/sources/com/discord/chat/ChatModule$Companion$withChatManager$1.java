@@ -9,7 +9,7 @@ import kotlin.coroutines.jvm.internal.e;
 import kotlin.coroutines.jvm.internal.k;
 import kotlin.jvm.functions.Function2;
 import kotlinx.coroutines.CoroutineScope;
-import ur.b;
+import wr.b;
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {2, 1, 0}, xi = 48)
 @e(c = "com.discord.chat.ChatModule$Companion$withChatManager$1", f = "ChatModule.kt", l = {167}, m = "invokeSuspend")
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -51,11 +51,11 @@ final class ChatModule$Companion$withChatManager$1 extends k implements Function
                 return f10;
             }
         }
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((ChatModule$Companion$withChatManager$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+        return ((ChatModule$Companion$withChatManager$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
     }
 }

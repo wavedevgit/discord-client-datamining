@@ -7,13 +7,13 @@ import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
 import kotlin.text.StringsKt;
-import or.p;
+import qr.p;
 /* renamed from: c  reason: default package */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-public final class c implements qu.b {
+public final class c implements su.b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final c f7288a = new c();
+    public static final c f7133a = new c();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: c$a */
@@ -21,21 +21,21 @@ public final class c implements qu.b {
     public static final class a extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Object f7289d;
+        final /* synthetic */ Object f7134d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ int f7290e;
+        final /* synthetic */ int f7135e;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(Object obj, int i10) {
             super(0);
-            this.f7289d = obj;
-            this.f7290e = i10;
+            this.f7134d = obj;
+            this.f7135e = i10;
         }
 
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
-            return StringsKt.p1((String) this.f7289d, this.f7290e);
+            return StringsKt.p1((String) this.f7134d, this.f7135e);
         }
     }
 
@@ -45,45 +45,45 @@ public final class c implements qu.b {
     public static final class b extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Object f7293d;
+        final /* synthetic */ Object f7138d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ int f7294e;
+        final /* synthetic */ int f7139e;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         b(Object obj, int i10) {
             super(0);
-            this.f7293d = obj;
-            this.f7294e = i10;
+            this.f7138d = obj;
+            this.f7139e = i10;
         }
 
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
-            return StringsKt.q1((String) this.f7293d, this.f7294e);
+            return StringsKt.q1((String) this.f7138d, this.f7139e);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: c$c  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static final class C0133c extends Lambda implements Function0 {
+    public static final class C0125c extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Object f7302d;
+        final /* synthetic */ Object f7147d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ int f7303e;
+        final /* synthetic */ int f7148e;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        C0133c(Object obj, int i10) {
+        C0125c(Object obj, int i10) {
             super(0);
-            this.f7302d = obj;
-            this.f7303e = i10;
+            this.f7147d = obj;
+            this.f7148e = i10;
         }
 
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
-            return CollectionsKt.f0((Iterable) this.f7302d, this.f7303e);
+            return CollectionsKt.f0((Iterable) this.f7147d, this.f7148e);
         }
     }
 
@@ -93,21 +93,21 @@ public final class c implements qu.b {
     public static final class d extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Object f7304d;
+        final /* synthetic */ Object f7149d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ int f7305e;
+        final /* synthetic */ int f7150e;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         d(Object obj, int i10) {
             super(0);
-            this.f7304d = obj;
-            this.f7305e = i10;
+            this.f7149d = obj;
+            this.f7150e = i10;
         }
 
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
-            return CollectionsKt.g0((List) this.f7304d, this.f7305e);
+            return CollectionsKt.g0((List) this.f7149d, this.f7150e);
         }
     }
 
@@ -119,19 +119,19 @@ public final class c implements qu.b {
             return b(dVar, new a(obj, i10), new b(obj, i10));
         }
         if (obj instanceof List) {
-            return b(dVar, new C0133c(obj, i10), new d(obj, i10));
+            return b(dVar, new C0125c(obj, i10), new d(obj, i10));
         }
         return null;
     }
 
     private final Object b(defpackage.d dVar, Function0 function0, Function0 function02) {
-        if (Intrinsics.areEqual(dVar, d.a.f20100a)) {
+        if (Intrinsics.areEqual(dVar, d.a.f20055a)) {
             return function0.invoke();
         }
-        if (Intrinsics.areEqual(dVar, d.b.f20104a)) {
+        if (Intrinsics.areEqual(dVar, d.b.f20059a)) {
             return function02.invoke();
         }
-        if (Intrinsics.areEqual(dVar, d.c.f20105a)) {
+        if (Intrinsics.areEqual(dVar, d.c.f20060a)) {
             return null;
         }
         throw new p();
@@ -139,23 +139,23 @@ public final class c implements qu.b {
 
     private final defpackage.d c(String str) {
         if (Intrinsics.areEqual(str, "first")) {
-            return d.a.f20100a;
+            return d.a.f20055a;
         }
         if (Intrinsics.areEqual(str, "last")) {
-            return d.b.f20104a;
+            return d.b.f20059a;
         }
-        return d.c.f20105a;
+        return d.c.f20060a;
     }
 
-    @Override // qu.b
+    @Override // su.b
     public Object f(Object obj, Object obj2) {
         String str;
         Integer num;
-        List c10 = vv.a.c(obj);
+        List c10 = cw.a.c(obj);
         Object firstOrNull = CollectionsKt.firstOrNull(c10);
-        Object b10 = vv.c.b(c10);
-        c cVar = f7288a;
-        Object c11 = vv.c.c(c10);
+        Object b10 = cw.c.b(c10);
+        c cVar = f7133a;
+        Object c11 = cw.c.c(c10);
         if (c11 instanceof String) {
             str = (String) c11;
         } else {

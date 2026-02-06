@@ -17,14 +17,14 @@ import kotlin.jvm.internal.Intrinsics;
 
     @Override // kotlin.jvm.functions.Function3
     public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2, Object obj3) {
-        m722invokeu7_MRrM(((MessageId) obj).m1094unboximpl(), (String) obj2, (String) obj3);
-        return Unit.f31988a;
+        m720invokeu7_MRrM(((MessageId) obj).m1092unboximpl(), (String) obj2, (String) obj3);
+        return Unit.f32008a;
     }
 
     /* renamed from: invoke-u7_MRrM  reason: not valid java name */
-    public final void m722invokeu7_MRrM(String p02, String p12, String str) {
+    public final void m720invokeu7_MRrM(String p02, String p12, String str) {
         Intrinsics.checkNotNullParameter(p02, "p0");
         Intrinsics.checkNotNullParameter(p12, "p1");
-        ((ChatEventHandler) this.receiver).mo440onLinkClickedu7_MRrM(p02, p12, str);
+        ((ChatEventHandler) this.receiver).mo438onLinkClickedu7_MRrM(p02, p12, str);
     }
 }

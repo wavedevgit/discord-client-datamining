@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
     var0 = function arg0, arg1() {
-        _fun110153: for (var _fun110153_ip = 0;;) switch (_fun110153_ip) {
+        _fun110176: for (var _fun110176_ip = 0;;) switch (_fun110176_ip) {
             case 0:
                 var5 = arg1;
                 var1 = new Array(3);
@@ -24,8 +24,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var0.layout;
                 var0 = arg0;
                 if (var0) {
-                    _fun110153_ip = 101;
-                    continue _fun110153
+                    _fun110176_ip = 101;
+                    continue _fun110176
                 }
             case 46:
                 var0 = var4.margin;
@@ -40,8 +40,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.padding;
                 var1[2] = var0;
                 var0 = var1;
-                _fun110153_ip = 155;
-                continue _fun110153;
+                _fun110176_ip = 155;
+                continue _fun110176;
             case 101:
                 var4 = var4.marginThread;
                 var6 = var4.marginVertical;
@@ -95,7 +95,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/launchpad/native/shared/renderChannelWrapper.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1() {
-        _fun110154: for (var _fun110154_ip = 0;;) switch (_fun110154_ip) {
+        _fun110177: for (var _fun110177_ip = 0;;) switch (_fun110177_ip) {
             case 0:
                 var0 = arg1;
                 var9 = var0.channel;
@@ -115,8 +115,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var4 == var9;
                 var7 = undefined;
                 if (var8) {
-                    _fun110154_ip = 79;
-                    continue _fun110154
+                    _fun110177_ip = 79;
+                    continue _fun110177
                 }
             case 69:
                 var8 = var9.isThread;
@@ -124,8 +124,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 79:
                 var4 = var4 != var7;
                 if (!var4) {
-                    _fun110154_ip = 89;
-                    continue _fun110154
+                    _fun110177_ip = 89;
+                    continue _fun110177
                 }
             case 86:
                 var4 = var7;
@@ -140,4 +140,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 14188, 14191, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 14192, 14195, 2]);

@@ -1,41 +1,30 @@
 package ct;
 
-import ft.e;
+import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
-import kotlinx.serialization.KSerializer;
-import kotlinx.serialization.descriptors.SerialDescriptor;
-import kotlinx.serialization.encoding.Decoder;
-import kotlinx.serialization.encoding.Encoder;
-import ws.i;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class g implements KSerializer {
+public final class g implements e {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final g f20024a = new g();
+    private final Function1 f20024a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final SerialDescriptor f20025b = ft.j.b("kotlinx.datetime.LocalTime", e.i.f23483a);
+    private final int f20025b;
 
-    private g() {
-    }
+    /* renamed from: c  reason: collision with root package name */
+    private final Integer f20026c;
 
-    @Override // kotlinx.serialization.DeserializationStrategy
-    /* renamed from: a */
-    public ws.i deserialize(Decoder decoder) {
-        Intrinsics.checkNotNullParameter(decoder, "decoder");
-        return i.a.b(ws.i.Companion, decoder.z(), null, 2, null);
-    }
-
-    @Override // dt.o
-    /* renamed from: b */
-    public void serialize(Encoder encoder, ws.i value) {
-        Intrinsics.checkNotNullParameter(encoder, "encoder");
-        Intrinsics.checkNotNullParameter(value, "value");
-        encoder.F(value.toString());
-    }
-
-    @Override // kotlinx.serialization.KSerializer, dt.o, kotlinx.serialization.DeserializationStrategy
-    public SerialDescriptor getDescriptor() {
-        return f20025b;
+    public g(Function1 number, int i10, Integer num) {
+        Intrinsics.checkNotNullParameter(number, "number");
+        this.f20024a = number;
+        this.f20025b = i10;
+        this.f20026c = num;
+        if (i10 >= 0) {
+            if (i10 <= 9) {
+                return;
+            }
+            throw new IllegalArgumentException(("The minimum number of digits (" + i10 + ") exceeds the length of an Int").toString());
+        }
+        throw new IllegalArgumentException(("The minimum number of digits (" + i10 + ") is negative").toString());
     }
 }

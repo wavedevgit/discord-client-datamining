@@ -3,13 +3,13 @@ package com.google.android.play.core.assetpacks;
 public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final b f15686a = new r0(1, null, null);
+    private static final b f15666a = new r0(1, null, null);
 
     /* renamed from: b  reason: collision with root package name */
-    public static final /* synthetic */ int f15687b = 0;
+    public static final /* synthetic */ int f15667b = 0;
 
     public static b a() {
-        return f15686a;
+        return f15666a;
     }
 
     public abstract String b();

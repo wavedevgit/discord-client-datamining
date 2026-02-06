@@ -1,33 +1,73 @@
 package oo;
 
-import kotlin.collections.CollectionsKt;
+import android.os.Parcel;
+import android.os.Parcelable;
+import java.util.LinkedHashMap;
+import java.util.Map;
 import kotlin.jvm.internal.Intrinsics;
-import sn.h0;
+import org.jetbrains.annotations.NotNull;
+import qo.e;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class b {
-    public static final boolean a(a aVar) {
-        Intrinsics.checkNotNullParameter(aVar, "<this>");
-        if (aVar.b().size() < 3) {
-            return false;
+public final class b implements Parcelable {
+    @NotNull
+    public static final Parcelable.Creator<b> CREATOR = new a();
+
+    /* renamed from: d  reason: collision with root package name */
+    private final e f43286d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private final String f43287e;
+
+    /* renamed from: i  reason: collision with root package name */
+    private final Map f43288i;
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class a implements Parcelable.Creator {
+        @Override // android.os.Parcelable.Creator
+        /* renamed from: a */
+        public final b createFromParcel(Parcel parcel) {
+            Intrinsics.checkNotNullParameter(parcel, "parcel");
+            e valueOf = e.valueOf(parcel.readString());
+            String readString = parcel.readString();
+            int readInt = parcel.readInt();
+            LinkedHashMap linkedHashMap = new LinkedHashMap(readInt);
+            for (int i10 = 0; i10 != readInt; i10++) {
+                linkedHashMap.put(parcel.readString(), Integer.valueOf(parcel.readInt()));
+            }
+            return new b(valueOf, readString, linkedHashMap);
         }
-        int i10 = 0;
-        for (h0 h0Var : aVar.b()) {
-            i10 += h0Var.a().length();
+
+        @Override // android.os.Parcelable.Creator
+        /* renamed from: b */
+        public final b[] newArray(int i10) {
+            return new b[i10];
         }
-        double size = i10 / aVar.b().size();
-        double d10 = 0.0d;
-        for (h0 h0Var2 : aVar.b()) {
-            d10 += (h0Var2.a().length() - size) * (h0Var2.a().length() - size);
-        }
-        if (Math.sqrt(d10 / aVar.b().size()) / size >= 0.05d) {
-            return false;
-        }
-        return true;
     }
 
-    public static final a b(a aVar, h0 newFrame) {
-        Intrinsics.checkNotNullParameter(aVar, "<this>");
-        Intrinsics.checkNotNullParameter(newFrame, "newFrame");
-        return aVar.a(CollectionsKt.M0(CollectionsKt.b1(aVar.b(), 2), newFrame));
+    public b(e idType, String minAge, Map elementToStoreLength) {
+        Intrinsics.checkNotNullParameter(idType, "idType");
+        Intrinsics.checkNotNullParameter(minAge, "minAge");
+        Intrinsics.checkNotNullParameter(elementToStoreLength, "elementToStoreLength");
+        this.f43286d = idType;
+        this.f43287e = minAge;
+        this.f43288i = elementToStoreLength;
+    }
+
+    @Override // android.os.Parcelable
+    public final int describeContents() {
+        return 0;
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(Parcel dest, int i10) {
+        Intrinsics.checkNotNullParameter(dest, "dest");
+        dest.writeString(this.f43286d.name());
+        dest.writeString(this.f43287e);
+        Map map = this.f43288i;
+        dest.writeInt(map.size());
+        for (Map.Entry entry : map.entrySet()) {
+            dest.writeString((String) entry.getKey());
+            dest.writeInt(((Number) entry.getValue()).intValue());
+        }
     }
 }

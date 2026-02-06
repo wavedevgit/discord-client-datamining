@@ -7,20 +7,20 @@ import java.util.concurrent.ThreadFactory;
 public class a implements ThreadFactory {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f42547a;
+    private final String f41770a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ThreadFactory f42548b = Executors.defaultThreadFactory();
+    private final ThreadFactory f41771b = Executors.defaultThreadFactory();
 
     public a(String str) {
         q.m(str, "Name must not be null");
-        this.f42547a = str;
+        this.f41770a = str;
     }
 
     @Override // java.util.concurrent.ThreadFactory
     public final Thread newThread(Runnable runnable) {
-        Thread newThread = this.f42548b.newThread(new b(runnable, 0));
-        newThread.setName(this.f42547a);
+        Thread newThread = this.f41771b.newThread(new b(runnable, 0));
+        newThread.setName(this.f41770a);
         return newThread;
     }
 }

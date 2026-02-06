@@ -13,43 +13,43 @@ import org.jetbrains.annotations.NotNull;
 public final class UpdateInquirySessionRequestJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19244a;
+    private final m.b f19224a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f19245b;
+    private final com.squareup.moshi.h f19225b;
 
     public UpdateInquirySessionRequestJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("data");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19244a = a10;
+        this.f19224a = a10;
         com.squareup.moshi.h f10 = moshi.f(UpdateInquirySessionRequest.Data.class, x0.d(), "data");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19245b = f10;
+        this.f19225b = f10;
     }
 
     @Override // com.squareup.moshi.h
     /* renamed from: a */
     public UpdateInquirySessionRequest fromJson(m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         UpdateInquirySessionRequest.Data data = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.f19244a);
-            if (W != -1) {
-                if (W == 0 && (data = (UpdateInquirySessionRequest.Data) this.f19245b.fromJson(reader)) == null) {
-                    throw ym.c.x("data_", "data", reader);
+            int J = reader.J(this.f19224a);
+            if (J != -1) {
+                if (J == 0 && (data = (UpdateInquirySessionRequest.Data) this.f19225b.fromJson(reader)) == null) {
+                    throw an.c.x("data_", "data", reader);
                 }
             } else {
                 reader.E0();
-                reader.P();
+                reader.S();
             }
         }
-        reader.z();
+        reader.D();
         if (data != null) {
             return new UpdateInquirySessionRequest(data);
         }
-        throw ym.c.o("data_", "data", reader);
+        throw an.c.o("data_", "data", reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -58,9 +58,9 @@ public final class UpdateInquirySessionRequestJsonAdapter extends com.squareup.m
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (updateInquirySessionRequest != null) {
             writer.k();
-            writer.W("data");
-            this.f19245b.toJson(writer, updateInquirySessionRequest.a());
-            writer.E();
+            writer.J("data");
+            this.f19225b.toJson(writer, updateInquirySessionRequest.a());
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

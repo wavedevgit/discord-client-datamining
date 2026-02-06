@@ -34,7 +34,7 @@ public final class ChatListView$sync$1 extends kotlin.coroutines.jvm.internal.k 
     @Override // kotlin.coroutines.jvm.internal.a
     public final Object invokeSuspend(Object obj) {
         ChatListView.DataSource dataSource;
-        Object f10 = ur.b.f();
+        Object f10 = wr.b.f();
         int i10 = this.label;
         if (i10 != 0) {
             if (i10 == 1) {
@@ -66,7 +66,7 @@ public final class ChatListView$sync$1 extends kotlin.coroutines.jvm.internal.k 
                         chatListView.onChatListUpdate(ChatListUpdate.copy$default(chatListUpdate, null, null, null, 0, null, 27, null));
                         Ref.BooleanRef.this.element = false;
                     }
-                    return Unit.f31988a;
+                    return Unit.f32008a;
                 }
             };
             this.label = 1;
@@ -74,11 +74,11 @@ public final class ChatListView$sync$1 extends kotlin.coroutines.jvm.internal.k 
                 return f10;
             }
         }
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((ChatListView$sync$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+        return ((ChatListView$sync$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
     }
 }

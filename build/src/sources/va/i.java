@@ -5,16 +5,16 @@ import android.util.SparseIntArray;
 public final class i {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final i f51941a = new i();
+    public static final i f52306a = new i();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final SparseIntArray f51942b = new SparseIntArray(0);
+    private static final SparseIntArray f52307b = new SparseIntArray(0);
 
     private i() {
     }
 
     public static final z a() {
-        return new z(0, f51941a.b(), f51942b);
+        return new z(0, f52306a.b(), f52307b);
     }
 
     private final int b() {

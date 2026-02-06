@@ -32,31 +32,31 @@ public final class InternalErrorInfo_NoDiskSpaceErrorInfoJsonAdapter extends h {
     @Override // com.squareup.moshi.h
     @NotNull
     public InternalErrorInfo.NoDiskSpaceErrorInfo fromJson(@NotNull m mVar) {
-        mVar.s();
+        mVar.u();
         String str = null;
         int i10 = -1;
         while (mVar.hasNext()) {
-            int W = mVar.W(this.options);
-            if (W == -1) {
+            int J = mVar.J(this.options);
+            if (J == -1) {
                 mVar.E0();
-                mVar.P();
-            } else if (W == 0) {
+                mVar.S();
+            } else if (J == 0) {
                 str = (String) this.stringAdapter.fromJson(mVar);
                 if (str == null) {
-                    throw ym.c.x("message", "message", mVar);
+                    throw an.c.x("message", "message", mVar);
                 }
                 i10 = -2;
             } else {
                 continue;
             }
         }
-        mVar.z();
+        mVar.D();
         if (i10 == -2) {
             return new InternalErrorInfo.NoDiskSpaceErrorInfo(str);
         }
         Constructor<InternalErrorInfo.NoDiskSpaceErrorInfo> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = InternalErrorInfo.NoDiskSpaceErrorInfo.class.getDeclaredConstructor(String.class, Integer.TYPE, ym.c.f54853c);
+            constructor = InternalErrorInfo.NoDiskSpaceErrorInfo.class.getDeclaredConstructor(String.class, Integer.TYPE, an.c.f1164c);
             this.constructorRef = constructor;
         }
         return constructor.newInstance(str, Integer.valueOf(i10), null);
@@ -66,9 +66,9 @@ public final class InternalErrorInfo_NoDiskSpaceErrorInfoJsonAdapter extends h {
     public void toJson(@NotNull t tVar, InternalErrorInfo.NoDiskSpaceErrorInfo noDiskSpaceErrorInfo) {
         if (noDiskSpaceErrorInfo != null) {
             tVar.k();
-            tVar.W("message");
+            tVar.J("message");
             this.stringAdapter.toJson(tVar, noDiskSpaceErrorInfo.getMessage());
-            tVar.E();
+            tVar.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

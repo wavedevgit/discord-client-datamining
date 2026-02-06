@@ -7,16 +7,16 @@ import kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScope;
 public class b implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final JvmPackageScope f32954d;
+    private final JvmPackageScope f32974d;
 
     public b(JvmPackageScope jvmPackageScope) {
-        this.f32954d = jvmPackageScope;
+        this.f32974d = jvmPackageScope;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         MemberScope[] c10;
-        c10 = JvmPackageScope.c(this.f32954d);
+        c10 = JvmPackageScope.c(this.f32974d);
         return c10;
     }
 }

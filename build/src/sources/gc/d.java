@@ -15,18 +15,18 @@ import java.util.zip.Adler32;
 public class d implements x {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f24611a;
+    private final Context f24864a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final hc.d f24612b;
+    private final hc.d f24865b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final f f24613c;
+    private final f f24866c;
 
     public d(Context context, hc.d dVar, f fVar) {
-        this.f24611a = context;
-        this.f24612b = dVar;
-        this.f24613c = fVar;
+        this.f24864a = context;
+        this.f24865b = dVar;
+        this.f24866c = fVar;
     }
 
     private boolean d(JobScheduler jobScheduler, int i10, int i11) {
@@ -48,15 +48,15 @@ public class d implements x {
 
     @Override // gc.x
     public void a(zb.o oVar, int i10, boolean z10) {
-        ComponentName componentName = new ComponentName(this.f24611a, JobInfoSchedulerService.class);
-        JobScheduler jobScheduler = (JobScheduler) this.f24611a.getSystemService("jobscheduler");
+        ComponentName componentName = new ComponentName(this.f24864a, JobInfoSchedulerService.class);
+        JobScheduler jobScheduler = (JobScheduler) this.f24864a.getSystemService("jobscheduler");
         int c10 = c(oVar);
         if (!z10 && d(jobScheduler, c10, i10)) {
             dc.a.b("JobInfoScheduler", "Upload for context %s is already scheduled. Returning...", oVar);
             return;
         }
-        long r02 = this.f24612b.r0(oVar);
-        JobInfo.Builder c11 = this.f24613c.c(new JobInfo.Builder(c10, componentName), oVar.d(), r02, i10);
+        long t02 = this.f24865b.t0(oVar);
+        JobInfo.Builder c11 = this.f24866c.c(new JobInfo.Builder(c10, componentName), oVar.d(), t02, i10);
         PersistableBundle persistableBundle = new PersistableBundle();
         persistableBundle.putInt("attemptNumber", i10);
         persistableBundle.putString("backendName", oVar.b());
@@ -65,7 +65,7 @@ public class d implements x {
             persistableBundle.putString("extras", Base64.encodeToString(oVar.c(), 0));
         }
         c11.setExtras(persistableBundle);
-        dc.a.c("JobInfoScheduler", "Scheduling upload for context %s with jobId=%d in %dms(Backend next call timestamp %d). Attempt %d", oVar, Integer.valueOf(c10), Long.valueOf(this.f24613c.g(oVar.d(), r02, i10)), Long.valueOf(r02), Integer.valueOf(i10));
+        dc.a.c("JobInfoScheduler", "Scheduling upload for context %s with jobId=%d in %dms(Backend next call timestamp %d). Attempt %d", oVar, Integer.valueOf(c10), Long.valueOf(this.f24866c.g(oVar.d(), t02, i10)), Long.valueOf(t02), Integer.valueOf(i10));
         jobScheduler.schedule(c11.build());
     }
 
@@ -76,7 +76,7 @@ public class d implements x {
 
     int c(zb.o oVar) {
         Adler32 adler32 = new Adler32();
-        adler32.update(this.f24611a.getPackageName().getBytes(Charset.forName("UTF-8")));
+        adler32.update(this.f24864a.getPackageName().getBytes(Charset.forName("UTF-8")));
         adler32.update(oVar.b().getBytes(Charset.forName("UTF-8")));
         adler32.update(ByteBuffer.allocate(4).putInt(kc.a.a(oVar.d())).array());
         if (oVar.c() != null) {

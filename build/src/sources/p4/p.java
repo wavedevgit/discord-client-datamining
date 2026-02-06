@@ -8,10 +8,10 @@ import java.util.List;
 public final class p implements o {
 
     /* renamed from: a  reason: collision with root package name */
-    private final r3.u f44875a;
+    private final r3.u f43672a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final r3.i f44876b;
+    private final r3.i f43673b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a extends r3.i {
@@ -28,21 +28,21 @@ public final class p implements o {
         /* renamed from: k */
         public void i(x3.k kVar, n nVar) {
             if (nVar.a() == null) {
-                kVar.P1(1);
+                kVar.O1(1);
             } else {
-                kVar.h1(1, nVar.a());
+                kVar.g1(1, nVar.a());
             }
             if (nVar.b() == null) {
-                kVar.P1(2);
+                kVar.O1(2);
             } else {
-                kVar.h1(2, nVar.b());
+                kVar.g1(2, nVar.b());
             }
         }
     }
 
     public p(r3.u uVar) {
-        this.f44875a = uVar;
-        this.f44876b = new a(uVar);
+        this.f43672a = uVar;
+        this.f43673b = new a(uVar);
     }
 
     public static List c() {
@@ -54,12 +54,12 @@ public final class p implements o {
         String string;
         r3.x k10 = r3.x.k("SELECT name FROM workname WHERE work_spec_id=?", 1);
         if (str == null) {
-            k10.P1(1);
+            k10.O1(1);
         } else {
-            k10.h1(1, str);
+            k10.g1(1, str);
         }
-        this.f44875a.d();
-        Cursor b10 = t3.b.b(this.f44875a, k10, false, null);
+        this.f43672a.d();
+        Cursor b10 = t3.b.b(this.f43672a, k10, false, null);
         try {
             ArrayList arrayList = new ArrayList(b10.getCount());
             while (b10.moveToNext()) {
@@ -73,19 +73,19 @@ public final class p implements o {
             return arrayList;
         } finally {
             b10.close();
-            k10.y();
+            k10.p();
         }
     }
 
     @Override // p4.o
     public void b(n nVar) {
-        this.f44875a.d();
-        this.f44875a.e();
+        this.f43672a.d();
+        this.f43672a.e();
         try {
-            this.f44876b.j(nVar);
-            this.f44875a.A();
+            this.f43673b.j(nVar);
+            this.f43672a.A();
         } finally {
-            this.f44875a.i();
+            this.f43672a.i();
         }
     }
 }

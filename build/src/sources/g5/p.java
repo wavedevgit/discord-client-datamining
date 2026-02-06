@@ -11,22 +11,22 @@ import kotlinx.coroutines.Job;
 public final class p {
 
     /* renamed from: a  reason: collision with root package name */
-    private final v4.h f23802a;
+    private final v4.h f24055a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final k5.v f23803b;
+    private final k5.v f24056b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final k5.p f23804c;
+    private final k5.p f24057c;
 
     public p(v4.h hVar, k5.v vVar, k5.t tVar) {
-        this.f23802a = hVar;
-        this.f23803b = vVar;
-        this.f23804c = k5.f.a(tVar);
+        this.f24055a = hVar;
+        this.f24056b = vVar;
+        this.f24057c = k5.f.a(tVar);
     }
 
     private final boolean b(m mVar) {
-        if (k5.a.d(mVar.f()) && !this.f23804c.a()) {
+        if (k5.a.d(mVar.f()) && !this.f24057c.a()) {
             return false;
         }
         return true;
@@ -36,7 +36,7 @@ public final class p {
         if (!k5.a.d(hVar.j())) {
             return true;
         }
-        if (c(hVar, hVar.j()) && this.f23804c.b(iVar)) {
+        if (c(hVar, hVar.j()) && this.f24057c.b(iVar)) {
             return true;
         }
         return false;
@@ -90,11 +90,11 @@ public final class p {
         }
         Bitmap.Config config2 = config;
         h5.c d10 = iVar.d();
-        c.b bVar = c.b.f25658a;
+        c.b bVar = c.b.f25786a;
         if (!Intrinsics.areEqual(d10, bVar) && !Intrinsics.areEqual(iVar.c(), bVar)) {
             hVar2 = hVar.J();
         } else {
-            hVar2 = h5.h.f25669e;
+            hVar2 = h5.h.f25797e;
         }
         h5.h hVar3 = hVar2;
         if (hVar.i() && hVar.O().isEmpty() && config2 != Bitmap.Config.ALPHA_8) {
@@ -109,7 +109,7 @@ public final class p {
         Lifecycle z10 = hVar.z();
         i5.c M = hVar.M();
         if (M instanceof i5.d) {
-            return new u(this.f23802a, hVar, (i5.d) M, z10, job);
+            return new u(this.f24055a, hVar, (i5.d) M, z10, job);
         }
         return new a(z10, job);
     }
@@ -141,10 +141,10 @@ public final class p {
             boolean r0 = r0.d()
             if (r0 == 0) goto L2f
             r0 = r22
-            k5.v r4 = r0.f23803b
+            k5.v r4 = r0.f24056b
             boolean r4 = r4.b()
             if (r4 != 0) goto L31
-            g5.b r1 = g5.b.f23689q
+            g5.b r1 = g5.b.f23942q
         L2c:
             r19 = r1
             goto L33

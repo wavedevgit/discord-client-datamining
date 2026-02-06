@@ -23,28 +23,28 @@ abstract class FocusStrategy {
     private static class a implements Comparator {
 
         /* renamed from: d  reason: collision with root package name */
-        private final Rect f3651d = new Rect();
+        private final Rect f3980d = new Rect();
 
         /* renamed from: e  reason: collision with root package name */
-        private final Rect f3652e = new Rect();
+        private final Rect f3981e = new Rect();
 
         /* renamed from: i  reason: collision with root package name */
-        private final boolean f3653i;
+        private final boolean f3982i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final BoundsAdapter f3654o;
+        private final BoundsAdapter f3983o;
 
         a(boolean z10, BoundsAdapter boundsAdapter) {
-            this.f3653i = z10;
-            this.f3654o = boundsAdapter;
+            this.f3982i = z10;
+            this.f3983o = boundsAdapter;
         }
 
         @Override // java.util.Comparator
         public int compare(Object obj, Object obj2) {
-            Rect rect = this.f3651d;
-            Rect rect2 = this.f3652e;
-            this.f3654o.a(obj, rect);
-            this.f3654o.a(obj2, rect2);
+            Rect rect = this.f3980d;
+            Rect rect2 = this.f3981e;
+            this.f3983o.a(obj, rect);
+            this.f3983o.a(obj2, rect2);
             int i10 = rect.top;
             int i11 = rect2.top;
             if (i10 < i11) {
@@ -56,12 +56,12 @@ abstract class FocusStrategy {
             int i12 = rect.left;
             int i13 = rect2.left;
             if (i12 < i13) {
-                if (!this.f3653i) {
+                if (!this.f3982i) {
                     return -1;
                 }
                 return 1;
             } else if (i12 > i13) {
-                if (this.f3653i) {
+                if (this.f3982i) {
                     return -1;
                 }
                 return 1;
@@ -77,12 +77,12 @@ abstract class FocusStrategy {
                 int i16 = rect.right;
                 int i17 = rect2.right;
                 if (i16 < i17) {
-                    if (!this.f3653i) {
+                    if (!this.f3982i) {
                         return -1;
                     }
                     return 1;
                 } else if (i16 > i17) {
-                    if (this.f3653i) {
+                    if (this.f3982i) {
                         return -1;
                     }
                     return 1;

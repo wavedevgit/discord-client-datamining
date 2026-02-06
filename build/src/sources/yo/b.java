@@ -2,37 +2,10 @@ package yo;
 
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class b {
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public /* synthetic */ class a {
-
-        /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f54867a;
-
-        static {
-            int[] iArr = new int[so.f.values().length];
-            try {
-                iArr[so.f.f50059d.ordinal()] = 1;
-            } catch (NoSuchFieldError unused) {
-            }
-            try {
-                iArr[so.f.f50060e.ordinal()] = 2;
-            } catch (NoSuchFieldError unused2) {
-            }
-            f54867a = iArr;
-        }
-    }
-
-    public static final String a(so.f fVar) {
-        Intrinsics.checkNotNullParameter(fVar, "<this>");
-        int i10 = a.f54867a[fVar.ordinal()];
-        if (i10 != 1) {
-            if (i10 == 2) {
-                return "sandbox";
-            }
-            throw new or.p();
-        }
-        return "production";
+public final class b extends Exception {
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public b(String message) {
+        super(message);
+        Intrinsics.checkNotNullParameter(message, "message");
     }
 }

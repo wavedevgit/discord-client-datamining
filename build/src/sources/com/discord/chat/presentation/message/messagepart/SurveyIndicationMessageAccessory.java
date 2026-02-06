@@ -19,19 +19,19 @@ public final class SurveyIndicationMessageAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-ntcYbpo$default  reason: not valid java name */
-    public static /* synthetic */ SurveyIndicationMessageAccessory m662copyntcYbpo$default(SurveyIndicationMessageAccessory surveyIndicationMessageAccessory, String str, SurveyIndication surveyIndication, int i10, Object obj) {
+    public static /* synthetic */ SurveyIndicationMessageAccessory m660copyntcYbpo$default(SurveyIndicationMessageAccessory surveyIndicationMessageAccessory, String str, SurveyIndication surveyIndication, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = surveyIndicationMessageAccessory.messageId;
         }
         if ((i10 & 2) != 0) {
             surveyIndication = surveyIndicationMessageAccessory.surveyIndication;
         }
-        return surveyIndicationMessageAccessory.m664copyntcYbpo(str, surveyIndication);
+        return surveyIndicationMessageAccessory.m662copyntcYbpo(str, surveyIndication);
     }
 
     @NotNull
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m663component13Eiw7ao() {
+    public final String m661component13Eiw7ao() {
         return this.messageId;
     }
 
@@ -42,7 +42,7 @@ public final class SurveyIndicationMessageAccessory extends MessageAccessory {
 
     @NotNull
     /* renamed from: copy-ntcYbpo  reason: not valid java name */
-    public final SurveyIndicationMessageAccessory m664copyntcYbpo(@NotNull String messageId, @NotNull SurveyIndication surveyIndication) {
+    public final SurveyIndicationMessageAccessory m662copyntcYbpo(@NotNull String messageId, @NotNull SurveyIndication surveyIndication) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(surveyIndication, "surveyIndication");
         return new SurveyIndicationMessageAccessory(messageId, surveyIndication, null);
@@ -54,7 +54,7 @@ public final class SurveyIndicationMessageAccessory extends MessageAccessory {
         }
         if (obj instanceof SurveyIndicationMessageAccessory) {
             SurveyIndicationMessageAccessory surveyIndicationMessageAccessory = (SurveyIndicationMessageAccessory) obj;
-            return MessageId.m1089equalsimpl0(this.messageId, surveyIndicationMessageAccessory.messageId) && Intrinsics.areEqual(this.surveyIndication, surveyIndicationMessageAccessory.surveyIndication);
+            return MessageId.m1087equalsimpl0(this.messageId, surveyIndicationMessageAccessory.messageId) && Intrinsics.areEqual(this.surveyIndication, surveyIndicationMessageAccessory.surveyIndication);
         }
         return false;
     }
@@ -62,7 +62,7 @@ public final class SurveyIndicationMessageAccessory extends MessageAccessory {
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     @NotNull
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo538getMessageId3Eiw7ao() {
+    public String mo536getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -72,14 +72,14 @@ public final class SurveyIndicationMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        return (MessageId.m1090hashCodeimpl(this.messageId) * 31) + this.surveyIndication.hashCode();
+        return (MessageId.m1088hashCodeimpl(this.messageId) * 31) + this.surveyIndication.hashCode();
     }
 
     @NotNull
     public String toString() {
-        String m1092toStringimpl = MessageId.m1092toStringimpl(this.messageId);
+        String m1090toStringimpl = MessageId.m1090toStringimpl(this.messageId);
         SurveyIndication surveyIndication = this.surveyIndication;
-        return "SurveyIndicationMessageAccessory(messageId=" + m1092toStringimpl + ", surveyIndication=" + surveyIndication + ")";
+        return "SurveyIndicationMessageAccessory(messageId=" + m1090toStringimpl + ", surveyIndication=" + surveyIndication + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

@@ -1,50 +1,81 @@
 package com.google.android.exoplayer2.upstream;
 
 import android.net.Uri;
-import com.google.android.exoplayer2.upstream.DataSource;
-import java.io.IOException;
-import le.c0;
+import com.google.android.exoplayer2.source.LoadEventInfo;
+import com.google.android.exoplayer2.upstream.a;
+import com.google.android.exoplayer2.upstream.j;
+import java.io.InputStream;
+import java.util.Map;
+import le.a0;
+import le.n;
+import ne.w0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class k implements DataSource {
+public final class k implements j.e {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final k f13491a = new k();
+    public final long f13446a;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final DataSource.Factory f13492b = new DataSource.Factory() { // from class: le.v
-        @Override // com.google.android.exoplayer2.upstream.DataSource.Factory
-        public final DataSource createDataSource() {
-            return com.google.android.exoplayer2.upstream.k.o();
+    public final com.google.android.exoplayer2.upstream.a f13447b;
+
+    /* renamed from: c  reason: collision with root package name */
+    public final int f13448c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private final a0 f13449d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private final a f13450e;
+
+    /* renamed from: f  reason: collision with root package name */
+    private volatile Object f13451f;
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    public interface a {
+        Object a(Uri uri, InputStream inputStream);
+    }
+
+    public k(DataSource dataSource, Uri uri, int i10, a aVar) {
+        this(dataSource, new a.b().i(uri).b(1).a(), i10, aVar);
+    }
+
+    public long a() {
+        return this.f13449d.o();
+    }
+
+    @Override // com.google.android.exoplayer2.upstream.j.e
+    public final void b() {
+        this.f13449d.r();
+        n nVar = new n(this.f13449d, this.f13447b);
+        try {
+            nVar.g();
+            this.f13451f = this.f13450e.a((Uri) ne.a.e(this.f13449d.m()), nVar);
+        } finally {
+            w0.n(nVar);
         }
-    };
-
-    private k() {
     }
 
-    public static /* synthetic */ k o() {
-        return new k();
+    @Override // com.google.android.exoplayer2.upstream.j.e
+    public final void c() {
     }
 
-    @Override // com.google.android.exoplayer2.upstream.DataSource
-    public long b(a aVar) {
-        throw new IOException("PlaceholderDataSource cannot be opened");
+    public Map d() {
+        return this.f13449d.q();
     }
 
-    @Override // com.google.android.exoplayer2.upstream.DataSource
-    public void close() {
+    public final Object e() {
+        return this.f13451f;
     }
 
-    @Override // com.google.android.exoplayer2.upstream.DataSource
-    public Uri m() {
-        return null;
+    public Uri f() {
+        return this.f13449d.p();
     }
 
-    @Override // le.j
-    public int read(byte[] bArr, int i10, int i11) {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override // com.google.android.exoplayer2.upstream.DataSource
-    public void j(c0 c0Var) {
+    public k(DataSource dataSource, com.google.android.exoplayer2.upstream.a aVar, int i10, a aVar2) {
+        this.f13449d = new a0(dataSource);
+        this.f13447b = aVar;
+        this.f13448c = i10;
+        this.f13450e = aVar2;
+        this.f13446a = LoadEventInfo.a();
     }
 }

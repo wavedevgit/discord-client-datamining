@@ -7,30 +7,30 @@ import kotlin.jvm.internal.Intrinsics;
 public final class Pair<A, B> implements Serializable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Object f31983d;
+    private final Object f32003d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Object f31984e;
+    private final Object f32004e;
 
     public Pair(Object obj, Object obj2) {
-        this.f31983d = obj;
-        this.f31984e = obj2;
+        this.f32003d = obj;
+        this.f32004e = obj2;
     }
 
     public final Object a() {
-        return this.f31983d;
+        return this.f32003d;
     }
 
     public final Object b() {
-        return this.f31984e;
+        return this.f32004e;
     }
 
     public final Object c() {
-        return this.f31983d;
+        return this.f32003d;
     }
 
     public final Object d() {
-        return this.f31984e;
+        return this.f32004e;
     }
 
     public boolean equals(Object obj) {
@@ -39,19 +39,19 @@ public final class Pair<A, B> implements Serializable {
         }
         if (obj instanceof Pair) {
             Pair pair = (Pair) obj;
-            return Intrinsics.areEqual(this.f31983d, pair.f31983d) && Intrinsics.areEqual(this.f31984e, pair.f31984e);
+            return Intrinsics.areEqual(this.f32003d, pair.f32003d) && Intrinsics.areEqual(this.f32004e, pair.f32004e);
         }
         return false;
     }
 
     public int hashCode() {
-        Object obj = this.f31983d;
+        Object obj = this.f32003d;
         int hashCode = (obj == null ? 0 : obj.hashCode()) * 31;
-        Object obj2 = this.f31984e;
+        Object obj2 = this.f32004e;
         return hashCode + (obj2 != null ? obj2.hashCode() : 0);
     }
 
     public String toString() {
-        return '(' + this.f31983d + ", " + this.f31984e + ')';
+        return '(' + this.f32003d + ", " + this.f32004e + ')';
     }
 }

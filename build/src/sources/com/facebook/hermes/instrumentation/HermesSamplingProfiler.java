@@ -8,7 +8,7 @@ import org.jetbrains.annotations.NotNull;
 public final class HermesSamplingProfiler {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final HermesSamplingProfiler f10195a = new HermesSamplingProfiler();
+    public static final HermesSamplingProfiler f10094a = new HermesSamplingProfiler();
 
     static {
         SoLoader.t("jsijniprofiler");

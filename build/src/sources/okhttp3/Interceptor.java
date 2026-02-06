@@ -8,7 +8,7 @@ public interface Interceptor {
 
         Call call();
 
-        Request h();
+        Request g();
     }
 
     Response intercept(Chain chain);

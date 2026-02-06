@@ -10,13 +10,13 @@ import va.s;
 public final class g extends k {
 
     /* renamed from: d  reason: collision with root package name */
-    private final f f10635d;
+    private final f f10534d;
 
     /* renamed from: e  reason: collision with root package name */
-    private CloseableReference f10636e;
+    private CloseableReference f10535e;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f10637i;
+    private int f10536i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a extends RuntimeException {
@@ -29,8 +29,8 @@ public final class g extends k {
         this(fVar, (i11 & 2) != 0 ? fVar.C() : i10);
     }
 
-    private final void h() {
-        if (CloseableReference.K0(this.f10636e)) {
+    private final void g() {
+        if (CloseableReference.I0(this.f10535e)) {
             return;
         }
         throw new a();
@@ -38,31 +38,31 @@ public final class g extends k {
 
     @Override // r8.k, java.io.OutputStream, java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        CloseableReference.N(this.f10636e);
-        this.f10636e = null;
-        this.f10637i = -1;
+        CloseableReference.z(this.f10535e);
+        this.f10535e = null;
+        this.f10536i = -1;
         super.close();
     }
 
     public final void k(int i10) {
-        h();
-        CloseableReference closeableReference = this.f10636e;
+        g();
+        CloseableReference closeableReference = this.f10535e;
         if (closeableReference != null) {
             Intrinsics.checkNotNull(closeableReference);
-            if (i10 <= ((q) closeableReference.E0()).getSize()) {
+            if (i10 <= ((q) closeableReference.J()).getSize()) {
                 return;
             }
-            Object obj = this.f10635d.get(i10);
+            Object obj = this.f10534d.get(i10);
             Intrinsics.checkNotNullExpressionValue(obj, "get(...)");
             q qVar = (q) obj;
-            CloseableReference closeableReference2 = this.f10636e;
+            CloseableReference closeableReference2 = this.f10535e;
             if (closeableReference2 != null) {
                 Intrinsics.checkNotNull(closeableReference2);
-                ((q) closeableReference2.E0()).k(0, qVar, 0, this.f10637i);
-                CloseableReference closeableReference3 = this.f10636e;
+                ((q) closeableReference2.J()).k(0, qVar, 0, this.f10536i);
+                CloseableReference closeableReference3 = this.f10535e;
                 Intrinsics.checkNotNull(closeableReference3);
                 closeableReference3.close();
-                this.f10636e = CloseableReference.V0(qVar, this.f10635d);
+                this.f10535e = CloseableReference.O0(qVar, this.f10534d);
                 return;
             }
             throw new IllegalStateException("Required value was null.");
@@ -73,17 +73,17 @@ public final class g extends k {
     @Override // r8.k
     /* renamed from: m */
     public s a() {
-        h();
-        CloseableReference closeableReference = this.f10636e;
+        g();
+        CloseableReference closeableReference = this.f10535e;
         if (closeableReference != null) {
-            return new s(closeableReference, this.f10637i);
+            return new s(closeableReference, this.f10536i);
         }
         throw new IllegalStateException("Required value was null.");
     }
 
     @Override // r8.k
     public int size() {
-        return this.f10637i;
+        return this.f10536i;
     }
 
     @Override // java.io.OutputStream
@@ -94,9 +94,9 @@ public final class g extends k {
     public g(f pool, int i10) {
         Intrinsics.checkNotNullParameter(pool, "pool");
         if (i10 > 0) {
-            this.f10635d = pool;
-            this.f10637i = 0;
-            this.f10636e = CloseableReference.V0(pool.get(i10), pool);
+            this.f10534d = pool;
+            this.f10536i = 0;
+            this.f10535e = CloseableReference.O0(pool.get(i10), pool);
             return;
         }
         throw new IllegalStateException("Check failed.");
@@ -106,12 +106,12 @@ public final class g extends k {
     public void write(byte[] buffer, int i10, int i11) {
         Intrinsics.checkNotNullParameter(buffer, "buffer");
         if (i10 >= 0 && i11 >= 0 && i10 + i11 <= buffer.length) {
-            h();
-            k(this.f10637i + i11);
-            CloseableReference closeableReference = this.f10636e;
+            g();
+            k(this.f10536i + i11);
+            CloseableReference closeableReference = this.f10535e;
             if (closeableReference != null) {
-                ((q) closeableReference.E0()).h(this.f10637i, buffer, i10, i11);
-                this.f10637i += i11;
+                ((q) closeableReference.J()).g(this.f10536i, buffer, i10, i11);
+                this.f10536i += i11;
                 return;
             }
             throw new IllegalStateException("Required value was null.");

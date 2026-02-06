@@ -15,7 +15,7 @@ import java.util.Objects;
 public final class ContentInfoCompat {
 
     /* renamed from: a  reason: collision with root package name */
-    private final f f3339a;
+    private final f f3668a;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -36,44 +36,44 @@ public final class ContentInfoCompat {
     public static final class e implements f {
 
         /* renamed from: a  reason: collision with root package name */
-        private final ContentInfo f3347a;
+        private final ContentInfo f3676a;
 
         e(ContentInfo contentInfo) {
-            this.f3347a = androidx.core.view.c.a(b2.e.g(contentInfo));
+            this.f3676a = androidx.core.view.c.a(b2.e.g(contentInfo));
         }
 
         @Override // androidx.core.view.ContentInfoCompat.f
         public Uri a() {
-            return this.f3347a.getLinkUri();
+            return this.f3676a.getLinkUri();
         }
 
         @Override // androidx.core.view.ContentInfoCompat.f
         public ContentInfo b() {
-            return this.f3347a;
+            return this.f3676a;
         }
 
         @Override // androidx.core.view.ContentInfoCompat.f
         public ClipData c() {
-            return this.f3347a.getClip();
+            return this.f3676a.getClip();
         }
 
         @Override // androidx.core.view.ContentInfoCompat.f
         public int d() {
-            return this.f3347a.getFlags();
+            return this.f3676a.getFlags();
         }
 
         @Override // androidx.core.view.ContentInfoCompat.f
         public Bundle getExtras() {
-            return this.f3347a.getExtras();
+            return this.f3676a.getExtras();
         }
 
         @Override // androidx.core.view.ContentInfoCompat.f
         public int getSource() {
-            return this.f3347a.getSource();
+            return this.f3676a.getSource();
         }
 
         public String toString() {
-            return "ContentInfoCompat{" + this.f3347a + "}";
+            return "ContentInfoCompat{" + this.f3676a + "}";
         }
     }
 
@@ -97,31 +97,31 @@ public final class ContentInfoCompat {
     private static final class g implements f {
 
         /* renamed from: a  reason: collision with root package name */
-        private final ClipData f3348a;
+        private final ClipData f3677a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f3349b;
+        private final int f3678b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final int f3350c;
+        private final int f3679c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final Uri f3351d;
+        private final Uri f3680d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final Bundle f3352e;
+        private final Bundle f3681e;
 
         g(d dVar) {
-            this.f3348a = (ClipData) b2.e.g(dVar.f3342a);
-            this.f3349b = b2.e.c(dVar.f3343b, 0, 5, "source");
-            this.f3350c = b2.e.f(dVar.f3344c, 1);
-            this.f3351d = dVar.f3345d;
-            this.f3352e = dVar.f3346e;
+            this.f3677a = (ClipData) b2.e.g(dVar.f3671a);
+            this.f3678b = b2.e.c(dVar.f3672b, 0, 5, "source");
+            this.f3679c = b2.e.f(dVar.f3673c, 1);
+            this.f3680d = dVar.f3674d;
+            this.f3681e = dVar.f3675e;
         }
 
         @Override // androidx.core.view.ContentInfoCompat.f
         public Uri a() {
-            return this.f3351d;
+            return this.f3680d;
         }
 
         @Override // androidx.core.view.ContentInfoCompat.f
@@ -131,41 +131,41 @@ public final class ContentInfoCompat {
 
         @Override // androidx.core.view.ContentInfoCompat.f
         public ClipData c() {
-            return this.f3348a;
+            return this.f3677a;
         }
 
         @Override // androidx.core.view.ContentInfoCompat.f
         public int d() {
-            return this.f3350c;
+            return this.f3679c;
         }
 
         @Override // androidx.core.view.ContentInfoCompat.f
         public Bundle getExtras() {
-            return this.f3352e;
+            return this.f3681e;
         }
 
         @Override // androidx.core.view.ContentInfoCompat.f
         public int getSource() {
-            return this.f3349b;
+            return this.f3678b;
         }
 
         public String toString() {
             String str;
             StringBuilder sb2 = new StringBuilder();
             sb2.append("ContentInfoCompat{clip=");
-            sb2.append(this.f3348a.getDescription());
+            sb2.append(this.f3677a.getDescription());
             sb2.append(", source=");
-            sb2.append(ContentInfoCompat.j(this.f3349b));
+            sb2.append(ContentInfoCompat.j(this.f3678b));
             sb2.append(", flags=");
-            sb2.append(ContentInfoCompat.b(this.f3350c));
+            sb2.append(ContentInfoCompat.b(this.f3679c));
             String str2 = "";
-            if (this.f3351d == null) {
+            if (this.f3680d == null) {
                 str = "";
             } else {
-                str = ", hasLinkUri(" + this.f3351d.toString().length() + ")";
+                str = ", hasLinkUri(" + this.f3680d.toString().length() + ")";
             }
             sb2.append(str);
-            if (this.f3352e != null) {
+            if (this.f3681e != null) {
                 str2 = ", hasExtras";
             }
             sb2.append(str2);
@@ -175,7 +175,7 @@ public final class ContentInfoCompat {
     }
 
     ContentInfoCompat(f fVar) {
-        this.f3339a = fVar;
+        this.f3668a = fVar;
     }
 
     static ClipData a(ClipDescription clipDescription, List list) {
@@ -246,28 +246,28 @@ public final class ContentInfoCompat {
     }
 
     public ClipData c() {
-        return this.f3339a.c();
+        return this.f3668a.c();
     }
 
     public Bundle d() {
-        return this.f3339a.getExtras();
+        return this.f3668a.getExtras();
     }
 
     public int e() {
-        return this.f3339a.d();
+        return this.f3668a.d();
     }
 
     public Uri f() {
-        return this.f3339a.a();
+        return this.f3668a.a();
     }
 
     public int g() {
-        return this.f3339a.getSource();
+        return this.f3668a.getSource();
     }
 
     public Pair i(Predicate predicate) {
         ContentInfoCompat contentInfoCompat;
-        ClipData c10 = this.f3339a.c();
+        ClipData c10 = this.f3668a.c();
         ContentInfoCompat contentInfoCompat2 = null;
         if (c10.getItemCount() == 1) {
             boolean test = predicate.test(c10.getItemAt(0));
@@ -292,54 +292,54 @@ public final class ContentInfoCompat {
     }
 
     public ContentInfo k() {
-        ContentInfo b10 = this.f3339a.b();
+        ContentInfo b10 = this.f3668a.b();
         Objects.requireNonNull(b10);
         androidx.core.view.c.a(b10);
         return b10;
     }
 
     public String toString() {
-        return this.f3339a.toString();
+        return this.f3668a.toString();
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     private static final class b implements c {
 
         /* renamed from: a  reason: collision with root package name */
-        private final ContentInfo.Builder f3341a;
+        private final ContentInfo.Builder f3670a;
 
         b(ClipData clipData, int i10) {
-            this.f3341a = androidx.core.view.d.a(clipData, i10);
+            this.f3670a = androidx.core.view.d.a(clipData, i10);
         }
 
         @Override // androidx.core.view.ContentInfoCompat.c
         public void a(Uri uri) {
-            this.f3341a.setLinkUri(uri);
+            this.f3670a.setLinkUri(uri);
         }
 
         @Override // androidx.core.view.ContentInfoCompat.c
         public void b(ClipData clipData) {
-            this.f3341a.setClip(clipData);
+            this.f3670a.setClip(clipData);
         }
 
         @Override // androidx.core.view.ContentInfoCompat.c
         public ContentInfoCompat build() {
-            return new ContentInfoCompat(new e(this.f3341a.build()));
+            return new ContentInfoCompat(new e(this.f3670a.build()));
         }
 
         @Override // androidx.core.view.ContentInfoCompat.c
         public void c(int i10) {
-            this.f3341a.setFlags(i10);
+            this.f3670a.setFlags(i10);
         }
 
         @Override // androidx.core.view.ContentInfoCompat.c
         public void setExtras(Bundle bundle) {
-            this.f3341a.setExtras(bundle);
+            this.f3670a.setExtras(bundle);
         }
 
         b(ContentInfoCompat contentInfoCompat) {
             androidx.core.view.f.a();
-            this.f3341a = androidx.core.view.e.a(contentInfoCompat.k());
+            this.f3670a = androidx.core.view.e.a(contentInfoCompat.k());
         }
     }
 
@@ -347,33 +347,33 @@ public final class ContentInfoCompat {
     private static final class d implements c {
 
         /* renamed from: a  reason: collision with root package name */
-        ClipData f3342a;
+        ClipData f3671a;
 
         /* renamed from: b  reason: collision with root package name */
-        int f3343b;
+        int f3672b;
 
         /* renamed from: c  reason: collision with root package name */
-        int f3344c;
+        int f3673c;
 
         /* renamed from: d  reason: collision with root package name */
-        Uri f3345d;
+        Uri f3674d;
 
         /* renamed from: e  reason: collision with root package name */
-        Bundle f3346e;
+        Bundle f3675e;
 
         d(ClipData clipData, int i10) {
-            this.f3342a = clipData;
-            this.f3343b = i10;
+            this.f3671a = clipData;
+            this.f3672b = i10;
         }
 
         @Override // androidx.core.view.ContentInfoCompat.c
         public void a(Uri uri) {
-            this.f3345d = uri;
+            this.f3674d = uri;
         }
 
         @Override // androidx.core.view.ContentInfoCompat.c
         public void b(ClipData clipData) {
-            this.f3342a = clipData;
+            this.f3671a = clipData;
         }
 
         @Override // androidx.core.view.ContentInfoCompat.c
@@ -383,20 +383,20 @@ public final class ContentInfoCompat {
 
         @Override // androidx.core.view.ContentInfoCompat.c
         public void c(int i10) {
-            this.f3344c = i10;
+            this.f3673c = i10;
         }
 
         @Override // androidx.core.view.ContentInfoCompat.c
         public void setExtras(Bundle bundle) {
-            this.f3346e = bundle;
+            this.f3675e = bundle;
         }
 
         d(ContentInfoCompat contentInfoCompat) {
-            this.f3342a = contentInfoCompat.c();
-            this.f3343b = contentInfoCompat.g();
-            this.f3344c = contentInfoCompat.e();
-            this.f3345d = contentInfoCompat.f();
-            this.f3346e = contentInfoCompat.d();
+            this.f3671a = contentInfoCompat.c();
+            this.f3672b = contentInfoCompat.g();
+            this.f3673c = contentInfoCompat.e();
+            this.f3674d = contentInfoCompat.f();
+            this.f3675e = contentInfoCompat.d();
         }
     }
 
@@ -404,45 +404,45 @@ public final class ContentInfoCompat {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final c f3340a;
+        private final c f3669a;
 
         public a(ContentInfoCompat contentInfoCompat) {
             if (Build.VERSION.SDK_INT >= 31) {
-                this.f3340a = new b(contentInfoCompat);
+                this.f3669a = new b(contentInfoCompat);
             } else {
-                this.f3340a = new d(contentInfoCompat);
+                this.f3669a = new d(contentInfoCompat);
             }
         }
 
         public ContentInfoCompat a() {
-            return this.f3340a.build();
+            return this.f3669a.build();
         }
 
         public a b(ClipData clipData) {
-            this.f3340a.b(clipData);
+            this.f3669a.b(clipData);
             return this;
         }
 
         public a c(Bundle bundle) {
-            this.f3340a.setExtras(bundle);
+            this.f3669a.setExtras(bundle);
             return this;
         }
 
         public a d(int i10) {
-            this.f3340a.c(i10);
+            this.f3669a.c(i10);
             return this;
         }
 
         public a e(Uri uri) {
-            this.f3340a.a(uri);
+            this.f3669a.a(uri);
             return this;
         }
 
         public a(ClipData clipData, int i10) {
             if (Build.VERSION.SDK_INT >= 31) {
-                this.f3340a = new b(clipData, i10);
+                this.f3669a = new b(clipData, i10);
             } else {
-                this.f3340a = new d(clipData, i10);
+                this.f3669a = new d(clipData, i10);
             }
         }
     }

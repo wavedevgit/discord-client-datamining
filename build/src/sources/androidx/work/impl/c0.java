@@ -11,34 +11,34 @@ import kotlin.jvm.internal.LongCompanionObject;
 public class c0 extends k4.w {
 
     /* renamed from: j  reason: collision with root package name */
-    private static final String f5717j = k4.m.i("WorkContinuationImpl");
+    private static final String f6046j = k4.m.i("WorkContinuationImpl");
 
     /* renamed from: a  reason: collision with root package name */
-    private final p0 f5718a;
+    private final p0 f6047a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f5719b;
+    private final String f6048b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final k4.f f5720c;
+    private final k4.f f6049c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f5721d;
+    private final List f6050d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final List f5722e;
+    private final List f6051e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final List f5723f;
+    private final List f6052f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final List f5724g;
+    private final List f6053g;
 
     /* renamed from: h  reason: collision with root package name */
-    private boolean f5725h;
+    private boolean f6054h;
 
     /* renamed from: i  reason: collision with root package name */
-    private k4.q f5726i;
+    private k4.q f6055i;
 
     public c0(p0 p0Var, List list) {
         this(p0Var, null, k4.f.KEEP, list, null);
@@ -77,40 +77,40 @@ public class c0 extends k4.w {
     }
 
     public k4.q a() {
-        if (!this.f5725h) {
+        if (!this.f6054h) {
             q4.c cVar = new q4.c(this);
-            this.f5718a.q().d(cVar);
-            this.f5726i = cVar.d();
+            this.f6047a.q().d(cVar);
+            this.f6055i = cVar.d();
         } else {
             k4.m e10 = k4.m.e();
-            String str = f5717j;
-            e10.k(str, "Already enqueued work ids (" + TextUtils.join(", ", this.f5722e) + ")");
+            String str = f6046j;
+            e10.k(str, "Already enqueued work ids (" + TextUtils.join(", ", this.f6051e) + ")");
         }
-        return this.f5726i;
+        return this.f6055i;
     }
 
     public k4.f b() {
-        return this.f5720c;
+        return this.f6049c;
     }
 
     public List c() {
-        return this.f5722e;
+        return this.f6051e;
     }
 
     public String d() {
-        return this.f5719b;
+        return this.f6048b;
     }
 
     public List e() {
-        return this.f5724g;
+        return this.f6053g;
     }
 
     public List f() {
-        return this.f5721d;
+        return this.f6050d;
     }
 
     public p0 g() {
-        return this.f5718a;
+        return this.f6047a;
     }
 
     public boolean h() {
@@ -118,11 +118,11 @@ public class c0 extends k4.w {
     }
 
     public boolean j() {
-        return this.f5725h;
+        return this.f6054h;
     }
 
     public void k() {
-        this.f5725h = true;
+        this.f6054h = true;
     }
 
     public c0(p0 p0Var, String str, k4.f fVar, List list) {
@@ -130,17 +130,17 @@ public class c0 extends k4.w {
     }
 
     public c0(p0 p0Var, String str, k4.f fVar, List list, List list2) {
-        this.f5718a = p0Var;
-        this.f5719b = str;
-        this.f5720c = fVar;
-        this.f5721d = list;
-        this.f5724g = list2;
-        this.f5722e = new ArrayList(list.size());
-        this.f5723f = new ArrayList();
+        this.f6047a = p0Var;
+        this.f6048b = str;
+        this.f6049c = fVar;
+        this.f6050d = list;
+        this.f6053g = list2;
+        this.f6051e = new ArrayList(list.size());
+        this.f6052f = new ArrayList();
         if (list2 != null) {
             Iterator it = list2.iterator();
             while (it.hasNext()) {
-                this.f5723f.addAll(((c0) it.next()).f5723f);
+                this.f6052f.addAll(((c0) it.next()).f6052f);
             }
         }
         for (int i10 = 0; i10 < list.size(); i10++) {
@@ -148,8 +148,8 @@ public class c0 extends k4.w {
                 throw new IllegalArgumentException("Next Schedule Time Override must be used with ExistingPeriodicWorkPolicyUPDATE (preferably) or KEEP");
             }
             String b10 = ((k4.z) list.get(i10)).b();
-            this.f5722e.add(b10);
-            this.f5723f.add(b10);
+            this.f6051e.add(b10);
+            this.f6052f.add(b10);
         }
     }
 }

@@ -68,7 +68,7 @@ public class FunctionReference extends CallableReference implements FunctionBase
         return getReflected().isOperator();
     }
 
-    @Override // kotlin.jvm.internal.CallableReference, kotlin.reflect.KCallable, kotlin.reflect.KFunction
+    @Override // kotlin.jvm.internal.CallableReference, kotlin.reflect.KCallable
     public boolean isSuspend() {
         return getReflected().isSuspend();
     }

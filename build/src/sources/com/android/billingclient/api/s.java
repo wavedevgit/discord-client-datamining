@@ -10,21 +10,21 @@ import com.google.android.gms.internal.play_billing.x4;
 public abstract /* synthetic */ class s {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final /* synthetic */ int f8101a = 0;
+    public static final /* synthetic */ int f8000a = 0;
 
     static {
-        com.google.android.gms.internal.play_billing.m mVar = t.f8102a;
+        com.google.android.gms.internal.play_billing.m mVar = t.f8001a;
     }
 
     public static r4 a(int i10, int i11, BillingResult billingResult) {
         try {
             q4 F = r4.F();
             x4 F2 = b5.F();
-            F2.p(billingResult.b());
-            F2.n(billingResult.a());
+            F2.o(billingResult.b());
+            F2.m(billingResult.a());
             F2.q(i10);
             F.l(F2);
-            F.p(i11);
+            F.o(i11);
             return (r4) F.f();
         } catch (Exception e10) {
             com.google.android.gms.internal.play_billing.a0.j("BillingLogger", "Unable to create logging payload", e10);
@@ -35,15 +35,15 @@ public abstract /* synthetic */ class s {
     public static r4 b(int i10, int i11, BillingResult billingResult, String str) {
         try {
             x4 F = b5.F();
-            F.p(billingResult.b());
-            F.n(billingResult.a());
+            F.o(billingResult.b());
+            F.m(billingResult.a());
             F.q(i10);
             if (str != null) {
                 F.l(str);
             }
             q4 F2 = r4.F();
             F2.l(F);
-            F2.p(i11);
+            F2.o(i11);
             return (r4) F2.f();
         } catch (Exception e10) {
             com.google.android.gms.internal.play_billing.a0.j("BillingLogger", "Unable to create logging payload", e10);
@@ -54,7 +54,7 @@ public abstract /* synthetic */ class s {
     public static v4 c(int i10) {
         try {
             u4 D = v4.D();
-            D.n(i10);
+            D.m(i10);
             return (v4) D.f();
         } catch (Exception e10) {
             com.google.android.gms.internal.play_billing.a0.j("BillingLogger", "Unable to create logging payload", e10);

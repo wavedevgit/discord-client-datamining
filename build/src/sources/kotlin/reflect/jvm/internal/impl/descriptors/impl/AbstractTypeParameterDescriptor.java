@@ -35,41 +35,41 @@ import org.jetbrains.annotations.NotNull;
 public abstract class AbstractTypeParameterDescriptor extends DeclarationDescriptorNonRootImpl implements TypeParameterDescriptor {
 
     /* renamed from: p  reason: collision with root package name */
-    private final Variance f32391p;
+    private final Variance f32411p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final boolean f32392q;
+    private final boolean f32412q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final int f32393r;
+    private final int f32413r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final NotNullLazyValue f32394s;
+    private final NotNullLazyValue f32414s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final NotNullLazyValue f32395t;
+    private final NotNullLazyValue f32415t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final StorageManager f32396u;
+    private final StorageManager f32416u;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     class a implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ StorageManager f32397d;
+        final /* synthetic */ StorageManager f32417d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ SupertypeLoopChecker f32398e;
+        final /* synthetic */ SupertypeLoopChecker f32418e;
 
         a(StorageManager storageManager, SupertypeLoopChecker supertypeLoopChecker) {
-            this.f32397d = storageManager;
-            this.f32398e = supertypeLoopChecker;
+            this.f32417d = storageManager;
+            this.f32418e = supertypeLoopChecker;
         }
 
         @Override // kotlin.jvm.functions.Function0
         /* renamed from: a */
         public TypeConstructor invoke() {
-            return new c(AbstractTypeParameterDescriptor.this, this.f32397d, this.f32398e);
+            return new c(AbstractTypeParameterDescriptor.this, this.f32417d, this.f32418e);
         }
     }
 
@@ -78,7 +78,7 @@ public abstract class AbstractTypeParameterDescriptor extends DeclarationDescrip
     public class b implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Name f32400d;
+        final /* synthetic */ Name f32420d;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -89,12 +89,12 @@ public abstract class AbstractTypeParameterDescriptor extends DeclarationDescrip
             @Override // kotlin.jvm.functions.Function0
             /* renamed from: a */
             public MemberScope invoke() {
-                return TypeIntersectionScope.create("Scope for type parameter " + b.this.f32400d.asString(), AbstractTypeParameterDescriptor.this.getUpperBounds());
+                return TypeIntersectionScope.create("Scope for type parameter " + b.this.f32420d.asString(), AbstractTypeParameterDescriptor.this.getUpperBounds());
             }
         }
 
         b(Name name) {
-            this.f32400d = name;
+            this.f32420d = name;
         }
 
         @Override // kotlin.jvm.functions.Function0
@@ -109,10 +109,10 @@ public abstract class AbstractTypeParameterDescriptor extends DeclarationDescrip
     public class c extends AbstractTypeConstructor {
 
         /* renamed from: d  reason: collision with root package name */
-        private final SupertypeLoopChecker f32403d;
+        private final SupertypeLoopChecker f32423d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ AbstractTypeParameterDescriptor f32404e;
+        final /* synthetic */ AbstractTypeParameterDescriptor f32424e;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public c(AbstractTypeParameterDescriptor abstractTypeParameterDescriptor, StorageManager storageManager, SupertypeLoopChecker supertypeLoopChecker) {
@@ -120,8 +120,8 @@ public abstract class AbstractTypeParameterDescriptor extends DeclarationDescrip
             if (storageManager == null) {
                 A(0);
             }
-            this.f32404e = abstractTypeParameterDescriptor;
-            this.f32403d = supertypeLoopChecker;
+            this.f32424e = abstractTypeParameterDescriptor;
+            this.f32423d = supertypeLoopChecker;
         }
 
         private static /* synthetic */ void A(int i10) {
@@ -197,7 +197,7 @@ public abstract class AbstractTypeParameterDescriptor extends DeclarationDescrip
             if (classifierDescriptor == null) {
                 A(9);
             }
-            if ((classifierDescriptor instanceof TypeParameterDescriptor) && DescriptorEquivalenceForOverrides.INSTANCE.areTypeParametersEquivalent(this.f32404e, (TypeParameterDescriptor) classifierDescriptor, true)) {
+            if ((classifierDescriptor instanceof TypeParameterDescriptor) && DescriptorEquivalenceForOverrides.INSTANCE.areTypeParametersEquivalent(this.f32424e, (TypeParameterDescriptor) classifierDescriptor, true)) {
                 return true;
             }
             return false;
@@ -205,7 +205,7 @@ public abstract class AbstractTypeParameterDescriptor extends DeclarationDescrip
 
         @Override // kotlin.reflect.jvm.internal.impl.types.TypeConstructor
         public KotlinBuiltIns getBuiltIns() {
-            KotlinBuiltIns builtIns = DescriptorUtilsKt.getBuiltIns(this.f32404e);
+            KotlinBuiltIns builtIns = DescriptorUtilsKt.getBuiltIns(this.f32424e);
             if (builtIns == null) {
                 A(4);
             }
@@ -215,7 +215,7 @@ public abstract class AbstractTypeParameterDescriptor extends DeclarationDescrip
         @Override // kotlin.reflect.jvm.internal.impl.types.ClassifierBasedTypeConstructor, kotlin.reflect.jvm.internal.impl.types.TypeConstructor
         /* renamed from: getDeclarationDescriptor */
         public ClassifierDescriptor mo1199getDeclarationDescriptor() {
-            AbstractTypeParameterDescriptor abstractTypeParameterDescriptor = this.f32404e;
+            AbstractTypeParameterDescriptor abstractTypeParameterDescriptor = this.f32424e;
             if (abstractTypeParameterDescriptor == null) {
                 A(3);
             }
@@ -238,7 +238,7 @@ public abstract class AbstractTypeParameterDescriptor extends DeclarationDescrip
 
         @Override // kotlin.reflect.jvm.internal.impl.types.AbstractTypeConstructor
         protected Collection l() {
-            List c10 = this.f32404e.c();
+            List c10 = this.f32424e.c();
             if (c10 == null) {
                 A(1);
             }
@@ -252,7 +252,7 @@ public abstract class AbstractTypeParameterDescriptor extends DeclarationDescrip
 
         @Override // kotlin.reflect.jvm.internal.impl.types.AbstractTypeConstructor
         protected SupertypeLoopChecker p() {
-            SupertypeLoopChecker supertypeLoopChecker = this.f32403d;
+            SupertypeLoopChecker supertypeLoopChecker = this.f32423d;
             if (supertypeLoopChecker == null) {
                 A(5);
             }
@@ -264,7 +264,7 @@ public abstract class AbstractTypeParameterDescriptor extends DeclarationDescrip
             if (list == null) {
                 A(7);
             }
-            List b10 = this.f32404e.b(list);
+            List b10 = this.f32424e.b(list);
             if (b10 == null) {
                 A(8);
             }
@@ -276,11 +276,11 @@ public abstract class AbstractTypeParameterDescriptor extends DeclarationDescrip
             if (kotlinType == null) {
                 A(6);
             }
-            this.f32404e.reportSupertypeLoopError(kotlinType);
+            this.f32424e.reportSupertypeLoopError(kotlinType);
         }
 
         public String toString() {
-            return this.f32404e.getName().toString();
+            return this.f32424e.getName().toString();
         }
     }
 
@@ -309,12 +309,12 @@ public abstract class AbstractTypeParameterDescriptor extends DeclarationDescrip
         if (supertypeLoopChecker == null) {
             a(6);
         }
-        this.f32391p = variance;
-        this.f32392q = z10;
-        this.f32393r = i10;
-        this.f32394s = storageManager.createLazyValue(new a(storageManager, supertypeLoopChecker));
-        this.f32395t = storageManager.createLazyValue(new b(name));
-        this.f32396u = storageManager;
+        this.f32411p = variance;
+        this.f32412q = z10;
+        this.f32413r = i10;
+        this.f32414s = storageManager.createLazyValue(new a(storageManager, supertypeLoopChecker));
+        this.f32415t = storageManager.createLazyValue(new b(name));
+        this.f32416u = storageManager;
     }
 
     private static /* synthetic */ void a(int i10) {
@@ -465,7 +465,7 @@ public abstract class AbstractTypeParameterDescriptor extends DeclarationDescrip
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassifierDescriptor
     @NotNull
     public SimpleType getDefaultType() {
-        SimpleType simpleType = (SimpleType) this.f32395t.invoke();
+        SimpleType simpleType = (SimpleType) this.f32415t.invoke();
         if (simpleType == null) {
             a(10);
         }
@@ -474,13 +474,13 @@ public abstract class AbstractTypeParameterDescriptor extends DeclarationDescrip
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.TypeParameterDescriptor
     public int getIndex() {
-        return this.f32393r;
+        return this.f32413r;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.TypeParameterDescriptor
     @NotNull
     public StorageManager getStorageManager() {
-        StorageManager storageManager = this.f32396u;
+        StorageManager storageManager = this.f32416u;
         if (storageManager == null) {
             a(14);
         }
@@ -490,7 +490,7 @@ public abstract class AbstractTypeParameterDescriptor extends DeclarationDescrip
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.TypeParameterDescriptor, kotlin.reflect.jvm.internal.impl.descriptors.ClassifierDescriptor
     @NotNull
     public final TypeConstructor getTypeConstructor() {
-        TypeConstructor typeConstructor = (TypeConstructor) this.f32394s.invoke();
+        TypeConstructor typeConstructor = (TypeConstructor) this.f32414s.invoke();
         if (typeConstructor == null) {
             a(9);
         }
@@ -510,7 +510,7 @@ public abstract class AbstractTypeParameterDescriptor extends DeclarationDescrip
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.TypeParameterDescriptor
     @NotNull
     public Variance getVariance() {
-        Variance variance = this.f32391p;
+        Variance variance = this.f32411p;
         if (variance == null) {
             a(7);
         }
@@ -524,7 +524,7 @@ public abstract class AbstractTypeParameterDescriptor extends DeclarationDescrip
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.TypeParameterDescriptor
     public boolean isReified() {
-        return this.f32392q;
+        return this.f32412q;
     }
 
     protected abstract void reportSupertypeLoopError(KotlinType kotlinType);

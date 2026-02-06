@@ -8,13 +8,13 @@ import kotlin.jvm.internal.Intrinsics;
 public final class c implements p9.b {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f47513c = new a(null);
+    public static final a f46561c = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private int f47514a = -1;
+    private int f46562a = -1;
 
     /* renamed from: b  reason: collision with root package name */
-    private CloseableReference f47515b;
+    private CloseableReference f46563b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
@@ -27,9 +27,9 @@ public final class c implements p9.b {
     }
 
     private final synchronized void f() {
-        CloseableReference.N(this.f47515b);
-        this.f47515b = null;
-        this.f47514a = -1;
+        CloseableReference.z(this.f46563b);
+        this.f46563b = null;
+        this.f46562a = -1;
     }
 
     @Override // p9.b
@@ -42,21 +42,21 @@ public final class c implements p9.b {
         Bitmap bitmap;
         try {
             Intrinsics.checkNotNullParameter(bitmapReference, "bitmapReference");
-            if (this.f47515b != null) {
-                Object E0 = bitmapReference.E0();
-                CloseableReference closeableReference = this.f47515b;
+            if (this.f46563b != null) {
+                Object J = bitmapReference.J();
+                CloseableReference closeableReference = this.f46563b;
                 if (closeableReference != null) {
-                    bitmap = (Bitmap) closeableReference.E0();
+                    bitmap = (Bitmap) closeableReference.J();
                 } else {
                     bitmap = null;
                 }
-                if (Intrinsics.areEqual(E0, bitmap)) {
+                if (Intrinsics.areEqual(J, bitmap)) {
                     return;
                 }
             }
-            CloseableReference.N(this.f47515b);
-            this.f47515b = CloseableReference.E(bitmapReference);
-            this.f47514a = i10;
+            CloseableReference.z(this.f46563b);
+            this.f46563b = CloseableReference.n(bitmapReference);
+            this.f46562a = i10;
         } catch (Throwable th2) {
             throw th2;
         }
@@ -64,7 +64,7 @@ public final class c implements p9.b {
 
     @Override // p9.b
     public synchronized CloseableReference c(int i10) {
-        return CloseableReference.E(this.f47515b);
+        return CloseableReference.n(this.f46563b);
     }
 
     @Override // p9.b
@@ -75,8 +75,8 @@ public final class c implements p9.b {
     @Override // p9.b
     public synchronized boolean contains(int i10) {
         boolean z10;
-        if (i10 == this.f47514a) {
-            if (CloseableReference.K0(this.f47515b)) {
+        if (i10 == this.f46562a) {
+            if (CloseableReference.I0(this.f46563b)) {
                 z10 = true;
             }
         }
@@ -86,17 +86,17 @@ public final class c implements p9.b {
 
     @Override // p9.b
     public synchronized CloseableReference d(int i10, int i11, int i12) {
-        CloseableReference E;
-        E = CloseableReference.E(this.f47515b);
+        CloseableReference n10;
+        n10 = CloseableReference.n(this.f46563b);
         f();
-        return E;
+        return n10;
     }
 
     @Override // p9.b
     public synchronized CloseableReference e(int i10) {
         CloseableReference closeableReference;
-        if (this.f47514a == i10) {
-            closeableReference = CloseableReference.E(this.f47515b);
+        if (this.f46562a == i10) {
+            closeableReference = CloseableReference.n(this.f46563b);
         } else {
             closeableReference = null;
         }

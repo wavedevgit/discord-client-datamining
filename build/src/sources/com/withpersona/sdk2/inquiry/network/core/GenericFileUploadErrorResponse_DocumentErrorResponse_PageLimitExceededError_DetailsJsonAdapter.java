@@ -30,31 +30,31 @@ public final class GenericFileUploadErrorResponse_DocumentErrorResponse_PageLimi
     @Override // com.squareup.moshi.h
     @NotNull
     public GenericFileUploadErrorResponse.DocumentErrorResponse.PageLimitExceededError.Details fromJson(@NotNull m mVar) {
-        mVar.s();
+        mVar.u();
         Integer num = null;
         while (mVar.hasNext()) {
-            int W = mVar.W(this.options);
-            if (W == -1) {
+            int J = mVar.J(this.options);
+            if (J == -1) {
                 mVar.E0();
-                mVar.P();
-            } else if (W == 0 && (num = (Integer) this.intAdapter.fromJson(mVar)) == null) {
-                throw ym.c.x("pageLimit", "page_limit", mVar);
+                mVar.S();
+            } else if (J == 0 && (num = (Integer) this.intAdapter.fromJson(mVar)) == null) {
+                throw an.c.x("pageLimit", "page_limit", mVar);
             }
         }
-        mVar.z();
+        mVar.D();
         if (num != null) {
             return new GenericFileUploadErrorResponse.DocumentErrorResponse.PageLimitExceededError.Details(num.intValue());
         }
-        throw ym.c.o("pageLimit", "page_limit", mVar);
+        throw an.c.o("pageLimit", "page_limit", mVar);
     }
 
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t tVar, GenericFileUploadErrorResponse.DocumentErrorResponse.PageLimitExceededError.Details details) {
         if (details != null) {
             tVar.k();
-            tVar.W("page_limit");
+            tVar.J("page_limit");
             this.intAdapter.toJson(tVar, Integer.valueOf(details.getPageLimit()));
-            tVar.E();
+            tVar.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

@@ -310,4 +310,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ButtonShine = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 33, 4089, 669, 3206, 3720, 4097, 1297, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 33, 4090, 669, 3208, 3722, 4098, 1297, 2]);

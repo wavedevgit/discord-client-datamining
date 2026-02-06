@@ -1,78 +1,51 @@
 package pg;
 
-import java.util.Objects;
-/* JADX INFO: Access modifiers changed from: package-private */
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.Set;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class l1 extends o0 {
-
-    /* renamed from: o  reason: collision with root package name */
-    final transient Object[] f45526o;
-
-    private l1(Object obj, Object[] objArr, int i10) {
-        this.f45526o = objArr;
+public abstract class l1 {
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static int a(Set set) {
+        int i10;
+        int i11 = 0;
+        for (Object obj : set) {
+            if (obj != null) {
+                i10 = obj.hashCode();
+            } else {
+                i10 = 0;
+            }
+            i11 += i10;
+        }
+        return i11;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public static l1 g(int i10, Object[] objArr, n0 n0Var) {
-        Object obj = objArr[0];
-        Objects.requireNonNull(obj);
-        Object obj2 = objArr[1];
-        Objects.requireNonNull(obj2);
-        r.b(obj, obj2);
-        return new l1(null, objArr, 1);
+    public static boolean b(Set set, Collection collection) {
+        collection.getClass();
+        if (collection instanceof d1) {
+            collection = ((d1) collection).zza();
+        }
+        if ((collection instanceof Set) && collection.size() > set.size()) {
+            Iterator it = set.iterator();
+            boolean z10 = false;
+            while (it.hasNext()) {
+                if (collection.contains(it.next())) {
+                    it.remove();
+                    z10 = true;
+                }
+            }
+            return z10;
+        }
+        return c(set, collection.iterator());
     }
 
-    @Override // pg.o0
-    final h0 a() {
-        return new k1(this.f45526o, 1, 1);
-    }
-
-    @Override // pg.o0
-    final p0 d() {
-        return new i1(this, this.f45526o, 0, 1);
-    }
-
-    @Override // pg.o0
-    final p0 e() {
-        return new j1(this, new k1(this.f45526o, 0, 1));
-    }
-
-    /* JADX WARN: Removed duplicated region for block: B:10:0x001c A[RETURN] */
-    /* JADX WARN: Removed duplicated region for block: B:9:0x001b A[RETURN] */
-    @Override // pg.o0, java.util.Map
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    public final java.lang.Object get(java.lang.Object r4) {
-        /*
-            r3 = this;
-            r0 = 0
-            if (r4 != 0) goto L5
-        L3:
-            r4 = r0
-            goto L19
-        L5:
-            java.lang.Object[] r1 = r3.f45526o
-            r2 = 0
-            r2 = r1[r2]
-            java.util.Objects.requireNonNull(r2)
-            boolean r4 = r2.equals(r4)
-            if (r4 == 0) goto L3
-            r4 = 1
-            r4 = r1[r4]
-            java.util.Objects.requireNonNull(r4)
-        L19:
-            if (r4 != 0) goto L1c
-            return r0
-        L1c:
-            return r4
-        */
-        throw new UnsupportedOperationException("Method not decompiled: pg.l1.get(java.lang.Object):java.lang.Object");
-    }
-
-    @Override // java.util.Map
-    public final int size() {
-        return 1;
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static boolean c(Set set, Iterator it) {
+        boolean z10 = false;
+        while (it.hasNext()) {
+            z10 |= set.remove(it.next());
+        }
+        return z10;
     }
 }

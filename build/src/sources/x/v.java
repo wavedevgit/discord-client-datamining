@@ -24,52 +24,52 @@ import x.w;
 public final class v {
 
     /* renamed from: o  reason: collision with root package name */
-    private static final Object f53487o = new Object();
+    private static final Object f54306o = new Object();
 
     /* renamed from: p  reason: collision with root package name */
-    private static final SparseArray f53488p = new SparseArray();
+    private static final SparseArray f54307p = new SparseArray();
 
     /* renamed from: a  reason: collision with root package name */
-    final a0.i0 f53489a;
+    final a0.i0 f54308a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Object f53490b;
+    private final Object f54309b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final w f53491c;
+    private final w f54310c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Executor f53492d;
+    private final Executor f54311d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Handler f53493e;
+    private final Handler f54312e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final HandlerThread f53494f;
+    private final HandlerThread f54313f;
 
     /* renamed from: g  reason: collision with root package name */
-    private a0.c0 f53495g;
+    private a0.c0 f54314g;
 
     /* renamed from: h  reason: collision with root package name */
-    private a0.b0 f53496h;
+    private a0.b0 f54315h;
 
     /* renamed from: i  reason: collision with root package name */
-    private y2 f53497i;
+    private y2 f54316i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final i1 f53498j;
+    private final i1 f54317j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final ListenableFuture f53499k;
+    private final ListenableFuture f54318k;
 
     /* renamed from: l  reason: collision with root package name */
-    private a f53500l;
+    private a f54319l;
 
     /* renamed from: m  reason: collision with root package name */
-    private ListenableFuture f53501m;
+    private ListenableFuture f54320m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final Integer f53502n;
+    private final Integer f54321n;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -100,7 +100,7 @@ public final class v {
     }
 
     public static /* synthetic */ Object b(v vVar, Context context, c.a aVar) {
-        vVar.k(vVar.f53492d, SystemClock.elapsedRealtime(), 1, context, aVar);
+        vVar.k(vVar.f54311d, SystemClock.elapsedRealtime(), 1, context, aVar);
         return "CameraX initInternal";
     }
 
@@ -155,13 +155,13 @@ public final class v {
     }
 
     private static void j(Integer num) {
-        synchronized (f53487o) {
+        synchronized (f54306o) {
             try {
                 if (num == null) {
                     return;
                 }
                 b2.e.c(num.intValue(), 3, 6, "minLogLevel");
-                SparseArray sparseArray = f53488p;
+                SparseArray sparseArray = f54307p;
                 int i10 = 1;
                 if (sparseArray.get(num.intValue()) != null) {
                     i10 = 1 + ((Integer) sparseArray.get(num.intValue())).intValue();
@@ -187,16 +187,16 @@ public final class v {
     private ListenableFuture l(final Context context) {
         boolean z10;
         ListenableFuture a10;
-        synchronized (this.f53490b) {
-            if (this.f53500l == a.UNINITIALIZED) {
+        synchronized (this.f54309b) {
+            if (this.f54319l == a.UNINITIALIZED) {
                 z10 = true;
             } else {
                 z10 = false;
             }
             b2.e.j(z10, "CameraX.initInternal() should only be called once per instance");
-            this.f53500l = a.INITIALIZING;
-            a10 = androidx.concurrent.futures.c.a(new c.InterfaceC0029c() { // from class: x.s
-                @Override // androidx.concurrent.futures.c.InterfaceC0029c
+            this.f54319l = a.INITIALIZING;
+            a10 = androidx.concurrent.futures.c.a(new c.InterfaceC0027c() { // from class: x.s
+                @Override // androidx.concurrent.futures.c.InterfaceC0027c
                 public final Object a(c.a aVar) {
                     return v.b(v.this, context, aVar);
                 }
@@ -206,8 +206,8 @@ public final class v {
     }
 
     private void m() {
-        synchronized (this.f53490b) {
-            this.f53500l = a.INITIALIZED;
+        synchronized (this.f54309b) {
+            this.f54319l = a.INITIALIZED;
         }
     }
 
@@ -224,7 +224,7 @@ public final class v {
     }
 
     private static void o() {
-        SparseArray sparseArray = f53488p;
+        SparseArray sparseArray = f54307p;
         if (sparseArray.size() == 0) {
             y0.i();
         } else if (sparseArray.get(3) != null) {
@@ -253,7 +253,7 @@ public final class v {
     }
 
     public a0.b0 d() {
-        a0.b0 b0Var = this.f53496h;
+        a0.b0 b0Var = this.f54315h;
         if (b0Var != null) {
             return b0Var;
         }
@@ -261,7 +261,7 @@ public final class v {
     }
 
     public a0.c0 e() {
-        a0.c0 c0Var = this.f53495g;
+        a0.c0 c0Var = this.f54314g;
         if (c0Var != null) {
             return c0Var;
         }
@@ -269,11 +269,11 @@ public final class v {
     }
 
     public a0.i0 f() {
-        return this.f53489a;
+        return this.f54308a;
     }
 
     public y2 h() {
-        y2 y2Var = this.f53497i;
+        y2 y2Var = this.f54316i;
         if (y2Var != null) {
             return y2Var;
         }
@@ -281,41 +281,41 @@ public final class v {
     }
 
     public ListenableFuture i() {
-        return this.f53499k;
+        return this.f54318k;
     }
 
     v(Context context, w.b bVar, Function function) {
-        this.f53489a = new a0.i0();
-        this.f53490b = new Object();
-        this.f53500l = a.UNINITIALIZED;
-        this.f53501m = d0.n.p(null);
+        this.f54308a = new a0.i0();
+        this.f54309b = new Object();
+        this.f54319l = a.UNINITIALIZED;
+        this.f54320m = d0.n.p(null);
         if (bVar != null) {
-            this.f53491c = bVar.getCameraXConfig();
+            this.f54310c = bVar.getCameraXConfig();
         } else {
             w.b g10 = g(context);
             if (g10 != null) {
-                this.f53491c = g10.getCameraXConfig();
+                this.f54310c = g10.getCameraXConfig();
             } else {
                 throw new IllegalStateException("CameraX is not configured properly. The most likely cause is you did not include a default implementation in your build such as 'camera-camera2'.");
             }
         }
-        p(context, this.f53491c.c0(), function);
-        Executor X = this.f53491c.X(null);
-        Handler d02 = this.f53491c.d0(null);
-        this.f53492d = X == null ? new m() : X;
+        p(context, this.f54310c.c0(), function);
+        Executor X = this.f54310c.X(null);
+        Handler d02 = this.f54310c.d0(null);
+        this.f54311d = X == null ? new m() : X;
         if (d02 == null) {
             HandlerThread handlerThread = new HandlerThread("CameraX-scheduler", 10);
-            this.f53494f = handlerThread;
+            this.f54313f = handlerThread;
             handlerThread.start();
-            this.f53493e = w1.g.a(handlerThread.getLooper());
+            this.f54312e = w1.g.a(handlerThread.getLooper());
         } else {
-            this.f53494f = null;
-            this.f53493e = d02;
+            this.f54313f = null;
+            this.f54312e = d02;
         }
-        Integer num = (Integer) this.f53491c.e(w.O, null);
-        this.f53502n = num;
+        Integer num = (Integer) this.f54310c.e(w.O, null);
+        this.f54321n = num;
         j(num);
-        this.f53498j = new i1.a(this.f53491c.a0()).a();
-        this.f53499k = l(context);
+        this.f54317j = new i1.a(this.f54310c.a0()).a();
+        this.f54318k = l(context);
     }
 }

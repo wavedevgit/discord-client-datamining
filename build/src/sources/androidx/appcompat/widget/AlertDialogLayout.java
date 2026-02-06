@@ -28,9 +28,9 @@ public class AlertDialogLayout extends i0 {
                 int id2 = childAt.getId();
                 if (id2 == f.f.Q) {
                     view = childAt;
-                } else if (id2 == f.f.f21982l) {
+                } else if (id2 == f.f.f22283l) {
                     view2 = childAt;
-                } else if ((id2 != f.f.f21984n && id2 != f.f.f21986p) || view3 != null) {
+                } else if ((id2 != f.f.f22285n && id2 != f.f.f22287p) || view3 != null) {
                     return false;
                 } else {
                     view3 = childAt;

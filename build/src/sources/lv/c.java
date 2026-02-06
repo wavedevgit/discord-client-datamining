@@ -1,19 +1,29 @@
 package lv;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class c {
-    public static c a(int i10) {
-        return new gv.b(-1, i10, false);
+public enum c {
+    UNSET(0),
+    TRUE(1),
+    FALSE(2);
+    
+
+    /* renamed from: d  reason: collision with root package name */
+    private final int f36790d;
+
+    c(int i10) {
+        this.f36790d = i10;
     }
 
-    public static c b(int i10) {
-        return new gv.b(i10, -1, false);
+    public static c d(Boolean bool) {
+        if (bool == null) {
+            return UNSET;
+        }
+        if (bool.booleanValue()) {
+            return TRUE;
+        }
+        return FALSE;
     }
 
-    public static c c() {
-        return new gv.b(-1, -1, true);
-    }
-
-    public static c d() {
-        return null;
+    public int e() {
+        return this.f36790d;
     }
 }

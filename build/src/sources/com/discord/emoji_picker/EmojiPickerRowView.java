@@ -167,7 +167,7 @@ public final class EmojiPickerRowView extends LinearLayout {
             SimpleDraweeView simpleDraweeView = new SimpleDraweeView(getContext());
             RippleUtilsKt.addCircleRipple$default(simpleDraweeView, false, 1, null);
             ((GenericDraweeHierarchy) simpleDraweeView.getHierarchy()).z(placeholder);
-            ((GenericDraweeHierarchy) simpleDraweeView.getHierarchy()).t(ScalingUtils$ScaleType.f10019e);
+            ((GenericDraweeHierarchy) simpleDraweeView.getHierarchy()).t(ScalingUtils$ScaleType.f9918e);
             LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(dpToPx, dpToPx);
             layoutParams.setMargins(i10, dpToPx3, 0, dpToPx3);
             simpleDraweeView.setLayoutParams(layoutParams);
@@ -179,13 +179,13 @@ public final class EmojiPickerRowView extends LinearLayout {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onLongPressEmoji$lambda$1(String it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onPressEmoji$lambda$0(String it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     @NotNull

@@ -78,7 +78,7 @@ public final class SafeAreaViewManager extends ReactViewManager {
             com.th3rdwave.safeareacontext.l r0 = com.th3rdwave.safeareacontext.l.valueOf(r0)
             if (r0 != 0) goto L22
         L20:
-            com.th3rdwave.safeareacontext.l r0 = com.th3rdwave.safeareacontext.l.f18458d
+            com.th3rdwave.safeareacontext.l r0 = com.th3rdwave.safeareacontext.l.f18438d
         L22:
             java.lang.String r2 = "right"
             java.lang.String r2 = r7.getString(r2)
@@ -89,7 +89,7 @@ public final class SafeAreaViewManager extends ReactViewManager {
             com.th3rdwave.safeareacontext.l r2 = com.th3rdwave.safeareacontext.l.valueOf(r2)
             if (r2 != 0) goto L3b
         L39:
-            com.th3rdwave.safeareacontext.l r2 = com.th3rdwave.safeareacontext.l.f18458d
+            com.th3rdwave.safeareacontext.l r2 = com.th3rdwave.safeareacontext.l.f18438d
         L3b:
             java.lang.String r3 = "bottom"
             java.lang.String r3 = r7.getString(r3)
@@ -100,7 +100,7 @@ public final class SafeAreaViewManager extends ReactViewManager {
             com.th3rdwave.safeareacontext.l r3 = com.th3rdwave.safeareacontext.l.valueOf(r3)
             if (r3 != 0) goto L54
         L52:
-            com.th3rdwave.safeareacontext.l r3 = com.th3rdwave.safeareacontext.l.f18458d
+            com.th3rdwave.safeareacontext.l r3 = com.th3rdwave.safeareacontext.l.f18438d
         L54:
             java.lang.String r4 = "left"
             java.lang.String r7 = r7.getString(r4)
@@ -111,7 +111,7 @@ public final class SafeAreaViewManager extends ReactViewManager {
             com.th3rdwave.safeareacontext.l r7 = com.th3rdwave.safeareacontext.l.valueOf(r7)
             if (r7 != 0) goto L6d
         L6b:
-            com.th3rdwave.safeareacontext.l r7 = com.th3rdwave.safeareacontext.l.f18458d
+            com.th3rdwave.safeareacontext.l r7 = com.th3rdwave.safeareacontext.l.f18438d
         L6d:
             com.th3rdwave.safeareacontext.m r1 = new com.th3rdwave.safeareacontext.m
             r1.<init>(r0, r2, r3, r7)
@@ -126,9 +126,9 @@ public final class SafeAreaViewManager extends ReactViewManager {
     public final void setMode(@NotNull k view, String str) {
         Intrinsics.checkNotNullParameter(view, "view");
         if (Intrinsics.areEqual(str, ViewProps.PADDING)) {
-            view.setMode(o.f18470d);
+            view.setMode(o.f18450d);
         } else if (Intrinsics.areEqual(str, ViewProps.MARGIN)) {
-            view.setMode(o.f18471e);
+            view.setMode(o.f18451e);
         }
     }
 

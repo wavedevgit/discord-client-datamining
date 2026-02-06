@@ -10,10 +10,10 @@ public class b implements Metadata.b {
     public static final Parcelable.Creator<b> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    public final String f30863d;
+    public final String f29836d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final String f30864e;
+    public final String f29837e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a implements Parcelable.Creator {
@@ -34,18 +34,13 @@ public class b implements Metadata.b {
     }
 
     public b(String str, String str2) {
-        this.f30863d = str;
-        this.f30864e = str2;
-    }
-
-    @Override // android.os.Parcelable
-    public int describeContents() {
-        return 0;
+        this.f29836d = str;
+        this.f29837e = str2;
     }
 
     @Override // com.google.android.exoplayer2.metadata.Metadata.b
-    public void e1(MediaMetadata.b bVar) {
-        String str = this.f30863d;
+    public void d1(MediaMetadata.b bVar) {
+        String str = this.f29836d;
         str.getClass();
         char c10 = 65535;
         switch (str.hashCode()) {
@@ -82,23 +77,28 @@ public class b implements Metadata.b {
         }
         switch (c10) {
             case 0:
-                bVar.N(this.f30864e);
+                bVar.N(this.f29837e);
                 return;
             case 1:
-                bVar.m0(this.f30864e);
+                bVar.m0(this.f29837e);
                 return;
             case 2:
-                bVar.U(this.f30864e);
+                bVar.U(this.f29837e);
                 return;
             case 3:
-                bVar.M(this.f30864e);
+                bVar.M(this.f29837e);
                 return;
             case 4:
-                bVar.O(this.f30864e);
+                bVar.O(this.f29837e);
                 return;
             default:
                 return;
         }
+    }
+
+    @Override // android.os.Parcelable
+    public int describeContents() {
+        return 0;
     }
 
     public boolean equals(Object obj) {
@@ -107,7 +107,7 @@ public class b implements Metadata.b {
         }
         if (obj != null && getClass() == obj.getClass()) {
             b bVar = (b) obj;
-            if (this.f30863d.equals(bVar.f30863d) && this.f30864e.equals(bVar.f30864e)) {
+            if (this.f29836d.equals(bVar.f29836d) && this.f29837e.equals(bVar.f29837e)) {
                 return true;
             }
         }
@@ -115,22 +115,22 @@ public class b implements Metadata.b {
     }
 
     public int hashCode() {
-        return ((527 + this.f30863d.hashCode()) * 31) + this.f30864e.hashCode();
+        return ((527 + this.f29836d.hashCode()) * 31) + this.f29837e.hashCode();
     }
 
     public String toString() {
-        return "VC: " + this.f30863d + "=" + this.f30864e;
+        return "VC: " + this.f29836d + "=" + this.f29837e;
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeString(this.f30863d);
-        parcel.writeString(this.f30864e);
+        parcel.writeString(this.f29836d);
+        parcel.writeString(this.f29837e);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public b(Parcel parcel) {
-        this.f30863d = (String) w0.j(parcel.readString());
-        this.f30864e = (String) w0.j(parcel.readString());
+        this.f29836d = (String) w0.j(parcel.readString());
+        this.f29837e = (String) w0.j(parcel.readString());
     }
 }

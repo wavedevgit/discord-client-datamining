@@ -17,8 +17,8 @@ import kotlin.Metadata;
 import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
-import or.v;
 import org.jetbrains.annotations.NotNull;
+import qr.v;
 @Metadata(d1 = {"\u00002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0004\b\u0004\u0010\u0005J\b\u0010\u0006\u001a\u00020\u0007H\u0016J\u0018\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000b2\u0006\u0010\f\u001a\u00020\rH\u0007J\u0012\u0010\u000e\u001a\u00020\u000f2\b\u0010\u0010\u001a\u0004\u0018\u00010\u0007H\u0002¨\u0006\u0011"}, d2 = {"Lcom/discord/media/MediaFetcherModule;", "Lcom/facebook/react/bridge/ReactContextBaseJavaModule;", "reactContext", "Lcom/facebook/react/bridge/ReactApplicationContext;", "<init>", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "getName", "", "getPhotos", "", "params", "Lcom/facebook/react/bridge/ReadableMap;", BaseJavaModule.METHOD_TYPE_PROMISE, "Lcom/facebook/react/bridge/Promise;", "getQueryType", "Lcom/discord/media/utils/ContentResolverMedia$QueryType;", ViewProps.FILTER, "media_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nMediaFetcherModule.kt\nKotlin\n*S Kotlin\n*F\n+ 1 MediaFetcherModule.kt\ncom/discord/media/MediaFetcherModule\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,63:1\n1068#2:64\n*S KotlinDebug\n*F\n+ 1 MediaFetcherModule.kt\ncom/discord/media/MediaFetcherModule\n*L\n32#1:64\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -73,7 +73,7 @@ public final class MediaFetcherModule extends ReactContextBaseJavaModule {
             List a12 = CollectionsKt.a1(CollectionsKt.W0(companion.getMedia(reactApplicationContext, queryType, i10, num), new Comparator() { // from class: com.discord.media.MediaFetcherModule$getPhotos$$inlined$sortedByDescending$1
                 @Override // java.util.Comparator
                 public final int compare(T t10, T t11) {
-                    return rr.a.d(Integer.valueOf(((ContentResolverMedia) t11).getDateAdded()), Integer.valueOf(((ContentResolverMedia) t10).getDateAdded()));
+                    return tr.a.d(Integer.valueOf(((ContentResolverMedia) t11).getDateAdded()), Integer.valueOf(((ContentResolverMedia) t10).getDateAdded()));
                 }
             }), i10);
             if (a12.size() == i10) {

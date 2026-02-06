@@ -14,16 +14,16 @@ import androidx.recyclerview.widget.RecyclerView;
 public class CheckableImageButton extends androidx.appcompat.widget.l implements Checkable {
 
     /* renamed from: r  reason: collision with root package name */
-    private static final int[] f15107r = {16842912};
+    private static final int[] f15087r = {16842912};
 
     /* renamed from: o  reason: collision with root package name */
-    private boolean f15108o;
+    private boolean f15088o;
 
     /* renamed from: p  reason: collision with root package name */
-    private boolean f15109p;
+    private boolean f15089p;
 
     /* renamed from: q  reason: collision with root package name */
-    private boolean f15110q;
+    private boolean f15090q;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a extends androidx.core.view.a {
@@ -50,7 +50,7 @@ public class CheckableImageButton extends androidx.appcompat.widget.l implements
         public static final Parcelable.Creator<b> CREATOR = new a();
 
         /* renamed from: i  reason: collision with root package name */
-        boolean f15112i;
+        boolean f15092i;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         class a implements Parcelable.ClassLoaderCreator {
@@ -85,13 +85,13 @@ public class CheckableImageButton extends androidx.appcompat.widget.l implements
             if (parcel.readInt() != 1) {
                 z10 = false;
             }
-            this.f15112i = z10;
+            this.f15092i = z10;
         }
 
         @Override // u2.a, android.os.Parcelable
         public void writeToParcel(Parcel parcel, int i10) {
             super.writeToParcel(parcel, i10);
-            parcel.writeInt(this.f15112i ? 1 : 0);
+            parcel.writeInt(this.f15092i ? 1 : 0);
         }
 
         public b(Parcel parcel, ClassLoader classLoader) {
@@ -105,18 +105,18 @@ public class CheckableImageButton extends androidx.appcompat.widget.l implements
     }
 
     public boolean a() {
-        return this.f15109p;
+        return this.f15089p;
     }
 
     @Override // android.widget.Checkable
     public boolean isChecked() {
-        return this.f15108o;
+        return this.f15088o;
     }
 
     @Override // android.widget.ImageView, android.view.View
     public int[] onCreateDrawableState(int i10) {
-        if (this.f15108o) {
-            int[] iArr = f15107r;
+        if (this.f15088o) {
+            int[] iArr = f15087r;
             return View.mergeDrawableStates(super.onCreateDrawableState(i10 + iArr.length), iArr);
         }
         return super.onCreateDrawableState(i10);
@@ -130,52 +130,52 @@ public class CheckableImageButton extends androidx.appcompat.widget.l implements
         }
         b bVar = (b) parcelable;
         super.onRestoreInstanceState(bVar.a());
-        setChecked(bVar.f15112i);
+        setChecked(bVar.f15092i);
     }
 
     @Override // android.view.View
     protected Parcelable onSaveInstanceState() {
         b bVar = new b(super.onSaveInstanceState());
-        bVar.f15112i = this.f15108o;
+        bVar.f15092i = this.f15088o;
         return bVar;
     }
 
     public void setCheckable(boolean z10) {
-        if (this.f15109p != z10) {
-            this.f15109p = z10;
+        if (this.f15089p != z10) {
+            this.f15089p = z10;
             sendAccessibilityEvent(0);
         }
     }
 
     @Override // android.widget.Checkable
     public void setChecked(boolean z10) {
-        if (this.f15109p && this.f15108o != z10) {
-            this.f15108o = z10;
+        if (this.f15089p && this.f15088o != z10) {
+            this.f15088o = z10;
             refreshDrawableState();
             sendAccessibilityEvent(RecyclerView.ItemAnimator.FLAG_MOVED);
         }
     }
 
     public void setPressable(boolean z10) {
-        this.f15110q = z10;
+        this.f15090q = z10;
     }
 
     @Override // android.view.View
     public void setPressed(boolean z10) {
-        if (this.f15110q) {
+        if (this.f15090q) {
             super.setPressed(z10);
         }
     }
 
     @Override // android.widget.Checkable
     public void toggle() {
-        setChecked(!this.f15108o);
+        setChecked(!this.f15088o);
     }
 
     public CheckableImageButton(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        this.f15109p = true;
-        this.f15110q = true;
+        this.f15089p = true;
+        this.f15090q = true;
         h0.n0(this, new a());
     }
 }

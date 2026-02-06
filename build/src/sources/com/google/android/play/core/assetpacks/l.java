@@ -3,38 +3,42 @@ package com.google.android.play.core.assetpacks;
 import android.os.Bundle;
 import android.os.RemoteException;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-final class l extends wh.l0 {
+final class l extends xh.l0 {
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ int f15868e;
+    final /* synthetic */ int f15848e;
 
     /* renamed from: i  reason: collision with root package name */
-    final /* synthetic */ xg.k f15869i;
+    final /* synthetic */ yg.k f15849i;
 
     /* renamed from: o  reason: collision with root package name */
-    final /* synthetic */ x f15870o;
+    final /* synthetic */ x f15850o;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public l(x xVar, xg.k kVar, int i10, xg.k kVar2) {
+    public l(x xVar, yg.k kVar, int i10, yg.k kVar2) {
         super(kVar);
-        this.f15868e = i10;
-        this.f15869i = kVar2;
-        this.f15870o = xVar;
+        this.f15848e = i10;
+        this.f15849i = kVar2;
+        this.f15850o = xVar;
     }
 
-    @Override // wh.l0
+    @Override // xh.l0
     protected final void a() {
+        xh.k0 k0Var;
+        xh.v0 v0Var;
         String str;
         Bundle i10;
         Bundle h10;
         try {
-            str = this.f15870o.f16083a;
-            i10 = x.i(this.f15868e);
+            v0Var = this.f15850o.f16066d;
+            str = this.f15850o.f16063a;
+            i10 = x.i(this.f15848e);
             h10 = x.h();
-            ((wh.b0) this.f15870o.f16086d.e()).c0(str, i10, h10, new v(this.f15870o, this.f15869i));
+            ((xh.b0) v0Var.e()).W(str, i10, h10, new v(this.f15850o, this.f15849i));
         } catch (RemoteException e10) {
-            x.f16081g.c(e10, "notifySessionFailed", new Object[0]);
+            k0Var = x.f16061g;
+            k0Var.c(e10, "notifySessionFailed", new Object[0]);
         }
     }
 }

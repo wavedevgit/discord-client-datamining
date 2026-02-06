@@ -36,53 +36,53 @@ public final class d0 extends e5 implements w1 {
         @Override // io.sentry.m1
         /* renamed from: b */
         public d0 a(e3 e3Var, ILogger iLogger) {
-            e3Var.s();
+            e3Var.u();
             d0 d0Var = new d0("", Double.valueOf(0.0d), null, new ArrayList(), new HashMap(), new f0(g0.CUSTOM.apiName()));
             e5.a aVar = new e5.a();
             ConcurrentHashMap concurrentHashMap = null;
             while (e3Var.peek() == io.sentry.vendor.gson.stream.b.NAME) {
-                String m02 = e3Var.m0();
-                m02.getClass();
+                String o02 = e3Var.o0();
+                o02.getClass();
                 char c10 = 65535;
-                switch (m02.hashCode()) {
+                switch (o02.hashCode()) {
                     case -1526966919:
-                        if (m02.equals("start_timestamp")) {
+                        if (o02.equals("start_timestamp")) {
                             c10 = 0;
                             break;
                         }
                         break;
                     case -362243017:
-                        if (m02.equals("measurements")) {
+                        if (o02.equals("measurements")) {
                             c10 = 1;
                             break;
                         }
                         break;
                     case 3575610:
-                        if (m02.equals("type")) {
+                        if (o02.equals("type")) {
                             c10 = 2;
                             break;
                         }
                         break;
                     case 55126294:
-                        if (m02.equals("timestamp")) {
+                        if (o02.equals("timestamp")) {
                             c10 = 3;
                             break;
                         }
                         break;
                     case 109638249:
-                        if (m02.equals("spans")) {
+                        if (o02.equals("spans")) {
                             c10 = 4;
                             break;
                         }
                         break;
                     case 508716399:
-                        if (m02.equals("transaction_info")) {
+                        if (o02.equals("transaction_info")) {
                             c10 = 5;
                             break;
                         }
                         break;
                     case 2141246174:
-                        if (m02.equals("transaction")) {
+                        if (o02.equals("transaction")) {
                             c10 = 6;
                             break;
                         }
@@ -91,48 +91,48 @@ public final class d0 extends e5 implements w1 {
                 switch (c10) {
                     case 0:
                         try {
-                            Double l02 = e3Var.l0();
-                            if (l02 == null) {
+                            Double n02 = e3Var.n0();
+                            if (n02 == null) {
                                 break;
                             } else {
-                                d0Var.B = l02;
+                                d0Var.B = n02;
                                 break;
                             }
                         } catch (NumberFormatException unused) {
-                            Date s02 = e3Var.s0(iLogger);
-                            if (s02 == null) {
+                            Date u02 = e3Var.u0(iLogger);
+                            if (u02 == null) {
                                 break;
                             } else {
-                                d0Var.B = Double.valueOf(io.sentry.k.b(s02));
+                                d0Var.B = Double.valueOf(io.sentry.k.b(u02));
                                 break;
                             }
                         }
                     case 1:
-                        Map u12 = e3Var.u1(iLogger, new k.a());
-                        if (u12 == null) {
+                        Map t12 = e3Var.t1(iLogger, new k.a());
+                        if (t12 == null) {
                             break;
                         } else {
-                            d0Var.F.putAll(u12);
+                            d0Var.F.putAll(t12);
                             break;
                         }
                     case 2:
-                        e3Var.f1();
+                        e3Var.e1();
                         break;
                     case 3:
                         try {
-                            Double l03 = e3Var.l0();
-                            if (l03 == null) {
+                            Double n03 = e3Var.n0();
+                            if (n03 == null) {
                                 break;
                             } else {
-                                d0Var.C = l03;
+                                d0Var.C = n03;
                                 break;
                             }
                         } catch (NumberFormatException unused2) {
-                            Date s03 = e3Var.s0(iLogger);
-                            if (s03 == null) {
+                            Date u03 = e3Var.u0(iLogger);
+                            if (u03 == null) {
                                 break;
                             } else {
-                                d0Var.C = Double.valueOf(io.sentry.k.b(s03));
+                                d0Var.C = Double.valueOf(io.sentry.k.b(u03));
                                 break;
                             }
                         }
@@ -148,14 +148,14 @@ public final class d0 extends e5 implements w1 {
                         d0Var.G = new f0.a().a(e3Var, iLogger);
                         break;
                     case 6:
-                        d0Var.A = e3Var.r1();
+                        d0Var.A = e3Var.q1();
                         break;
                     default:
-                        if (!aVar.a(d0Var, m02, e3Var, iLogger)) {
+                        if (!aVar.a(d0Var, o02, e3Var, iLogger)) {
                             if (concurrentHashMap == null) {
                                 concurrentHashMap = new ConcurrentHashMap();
                             }
-                            e3Var.v1(iLogger, concurrentHashMap, m02);
+                            e3Var.u1(iLogger, concurrentHashMap, o02);
                             break;
                         } else {
                             break;
@@ -163,7 +163,7 @@ public final class d0 extends e5 implements w1 {
                 }
             }
             d0Var.u0(concurrentHashMap);
-            e3Var.z();
+            e3Var.D();
             return d0Var;
         }
     }
@@ -195,9 +195,9 @@ public final class d0 extends e5 implements w1 {
                 e8Var.q((String) entry2.getKey(), entry2.getValue());
             }
         }
-        g p10 = q10.d().p();
-        if (p10 != null) {
-            for (f fVar : p10.a()) {
+        g o10 = q10.d().o();
+        if (o10 != null) {
+            for (f fVar : o10.a()) {
                 e8Var.q("flag.evaluation." + fVar.a(), fVar.b());
             }
         }
@@ -234,7 +234,7 @@ public final class d0 extends e5 implements w1 {
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
-        f3Var.s();
+        f3Var.u();
         if (this.A != null) {
             f3Var.e("transaction").f(this.A);
         }
@@ -259,7 +259,7 @@ public final class d0 extends e5 implements w1 {
                 f3Var.j(iLogger, obj);
             }
         }
-        f3Var.z();
+        f3Var.D();
     }
 
     public boolean t0() {

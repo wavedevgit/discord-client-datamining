@@ -27,11 +27,11 @@ public final class IconUrlUtils {
     }
 
     /* renamed from: getApplicationIcon-weIltyw$default */
-    public static /* synthetic */ String m913getApplicationIconweIltyw$default(IconUrlUtils iconUrlUtils, ApplicationId applicationId, String str, int i10, int i11, Object obj) {
+    public static /* synthetic */ String m911getApplicationIconweIltyw$default(IconUrlUtils iconUrlUtils, ApplicationId applicationId, String str, int i10, int i11, Object obj) {
         if ((i11 & 4) != 0) {
             i10 = 160;
         }
-        return iconUrlUtils.m918getApplicationIconweIltyw(applicationId, str, i10);
+        return iconUrlUtils.m916getApplicationIconweIltyw(applicationId, str, i10);
     }
 
     public static /* synthetic */ String getCustomEmojiUrl$default(IconUrlUtils iconUrlUtils, long j10, boolean z10, Integer num, int i10, Object obj) {
@@ -42,15 +42,15 @@ public final class IconUrlUtils {
     }
 
     /* renamed from: getForChannel-JYSGpIY$default */
-    public static /* synthetic */ String m914getForChannelJYSGpIY$default(IconUrlUtils iconUrlUtils, Context context, ChannelId channelId, String str, boolean z10, Integer num, int i10, Object obj) {
+    public static /* synthetic */ String m912getForChannelJYSGpIY$default(IconUrlUtils iconUrlUtils, Context context, ChannelId channelId, String str, boolean z10, Integer num, int i10, Object obj) {
         if ((i10 & 16) != 0) {
             num = null;
         }
-        return iconUrlUtils.m919getForChannelJYSGpIY(context, channelId, str, z10, num);
+        return iconUrlUtils.m917getForChannelJYSGpIY(context, channelId, str, z10, num);
     }
 
     /* renamed from: getForGuild-14CJxO4$default */
-    public static /* synthetic */ String m915getForGuild14CJxO4$default(IconUrlUtils iconUrlUtils, GuildId guildId, String str, String str2, boolean z10, Integer num, int i10, Object obj) {
+    public static /* synthetic */ String m913getForGuild14CJxO4$default(IconUrlUtils iconUrlUtils, GuildId guildId, String str, String str2, boolean z10, Integer num, int i10, Object obj) {
         if ((i10 & 4) != 0) {
             str2 = null;
         }
@@ -60,11 +60,11 @@ public final class IconUrlUtils {
         if ((i10 & 16) != 0) {
             num = null;
         }
-        return iconUrlUtils.m920getForGuild14CJxO4(guildId, str, str2, z10, num);
+        return iconUrlUtils.m918getForGuild14CJxO4(guildId, str, str2, z10, num);
     }
 
     /* renamed from: getForGuildMember-2tNb6hE$default */
-    public static /* synthetic */ String m916getForGuildMember2tNb6hE$default(IconUrlUtils iconUrlUtils, String str, GuildId guildId, UserId userId, Integer num, boolean z10, int i10, Object obj) {
+    public static /* synthetic */ String m914getForGuildMember2tNb6hE$default(IconUrlUtils iconUrlUtils, String str, GuildId guildId, UserId userId, Integer num, boolean z10, int i10, Object obj) {
         if ((i10 & 8) != 0) {
             num = null;
         }
@@ -72,11 +72,11 @@ public final class IconUrlUtils {
         if ((i10 & 16) != 0) {
             z10 = false;
         }
-        return iconUrlUtils.m921getForGuildMember2tNb6hE(str, guildId, userId, num2, z10);
+        return iconUrlUtils.m919getForGuildMember2tNb6hE(str, guildId, userId, num2, z10);
     }
 
     /* renamed from: getForUser-_fRzTXg$default */
-    public static /* synthetic */ String m917getForUser_fRzTXg$default(IconUrlUtils iconUrlUtils, Context context, UserId userId, String str, Integer num, boolean z10, Integer num2, int i10, Object obj) {
+    public static /* synthetic */ String m915getForUser_fRzTXg$default(IconUrlUtils iconUrlUtils, Context context, UserId userId, String str, Integer num, boolean z10, Integer num2, int i10, Object obj) {
         if ((i10 & 8) != 0) {
             num = null;
         }
@@ -86,7 +86,7 @@ public final class IconUrlUtils {
         if ((i10 & 32) != 0) {
             num2 = null;
         }
-        return iconUrlUtils.m922getForUser_fRzTXg(context, userId, str, num, z10, num2);
+        return iconUrlUtils.m920getForUser_fRzTXg(context, userId, str, num, z10, num2);
     }
 
     public static /* synthetic */ void init$default(IconUrlUtils iconUrlUtils, Context context, String str, String str2, int i10, Object obj) {
@@ -101,7 +101,7 @@ public final class IconUrlUtils {
 
     @NotNull
     /* renamed from: getApplicationIcon-weIltyw */
-    public final String m918getApplicationIconweIltyw(ApplicationId applicationId, String str, int i10) {
+    public final String m916getApplicationIconweIltyw(ApplicationId applicationId, String str, int i10) {
         MediaProxy mediaProxy = MediaProxy.INSTANCE;
         String cdn = Hosts.INSTANCE.getCDN();
         return mediaProxy.withSize(cdn + "/app-icons/" + applicationId + "/" + str, false, Integer.valueOf(i10), null);
@@ -116,7 +116,7 @@ public final class IconUrlUtils {
 
     @NotNull
     /* renamed from: getForChannel-JYSGpIY */
-    public final String m919getForChannelJYSGpIY(@NotNull Context context, ChannelId channelId, String str, boolean z10, Integer num) {
+    public final String m917getForChannelJYSGpIY(@NotNull Context context, ChannelId channelId, String str, boolean z10, Integer num) {
         String b10;
         Intrinsics.checkNotNullParameter(context, "context");
         if (channelId == null) {
@@ -124,10 +124,10 @@ public final class IconUrlUtils {
         }
         if (str != null && str.length() != 0) {
             try {
-                Result.a aVar = Result.f31985e;
+                Result.a aVar = Result.f32005e;
                 b10 = Result.b(MediaProxy.INSTANCE.withSize(Hosts.INSTANCE.getCDN() + "/channel-icons/" + channelId + "/" + str, false, num, str));
             } catch (Throwable th2) {
-                Result.a aVar2 = Result.f31985e;
+                Result.a aVar2 = Result.f32005e;
                 b10 = Result.b(c.a(th2));
             }
             if (Result.e(b10) != null) {
@@ -160,15 +160,15 @@ public final class IconUrlUtils {
 
     @NotNull
     /* renamed from: getForGuild-14CJxO4 */
-    public final String m920getForGuild14CJxO4(GuildId guildId, String str, String str2, boolean z10, Integer num) {
+    public final String m918getForGuild14CJxO4(GuildId guildId, String str, String str2, boolean z10, Integer num) {
         String b10;
         if (str != null && str.length() != 0 && guildId != null) {
             MediaProxy mediaProxy = MediaProxy.INSTANCE;
             try {
-                Result.a aVar = Result.f31985e;
+                Result.a aVar = Result.f32005e;
                 b10 = Result.b(Hosts.INSTANCE.getCDN() + "/icons/" + guildId + "/" + str);
             } catch (Throwable th2) {
-                Result.a aVar2 = Result.f31985e;
+                Result.a aVar2 = Result.f32005e;
                 b10 = Result.b(c.a(th2));
             }
             if (Result.e(b10) != null) {
@@ -184,8 +184,8 @@ public final class IconUrlUtils {
 
     @NotNull
     /* renamed from: getForGuildMember-2tNb6hE */
-    public final String m921getForGuildMember2tNb6hE(String str, GuildId guildId, UserId userId, Integer num, boolean z10) {
-        if (str != null && !StringsKt.k0(str) && guildId != null && GuildId.m1078isValidimpl(guildId.m1081unboximpl()) && userId != null && UserId.m1143isValidimpl(userId.m1146unboximpl())) {
+    public final String m919getForGuildMember2tNb6hE(String str, GuildId guildId, UserId userId, Integer num, boolean z10) {
+        if (str != null && !StringsKt.k0(str) && guildId != null && GuildId.m1076isValidimpl(guildId.m1079unboximpl()) && userId != null && UserId.m1141isValidimpl(userId.m1144unboximpl())) {
             String cdn = Hosts.INSTANCE.getCDN();
             return MediaProxy.INSTANCE.withSize(cdn + "/guilds/" + guildId + "/users/" + userId + "/avatars/" + str, z10, num, str);
         }
@@ -194,21 +194,21 @@ public final class IconUrlUtils {
 
     @NotNull
     /* renamed from: getForUser-_fRzTXg */
-    public final String m922getForUser_fRzTXg(@NotNull Context context, UserId userId, String str, Integer num, boolean z10, Integer num2) {
+    public final String m920getForUser_fRzTXg(@NotNull Context context, UserId userId, String str, Integer num, boolean z10, Integer num2) {
         String b10;
         Intrinsics.checkNotNullParameter(context, "context");
         if (userId != null) {
-            if (UserId.m1140equalsimpl(UserId.m1138constructorimpl(-1L), userId)) {
+            if (UserId.m1138equalsimpl(UserId.m1136constructorimpl(-1L), userId)) {
                 if (str == null) {
                     return "";
                 }
                 return str;
             } else if (str != null) {
                 try {
-                    Result.a aVar = Result.f31985e;
+                    Result.a aVar = Result.f32005e;
                     b10 = Result.b(MediaProxy.INSTANCE.withSize(Hosts.INSTANCE.getCDN() + "/avatars/" + userId + "/" + str, z10, num2, str));
                 } catch (Throwable th2) {
-                    Result.a aVar2 = Result.f31985e;
+                    Result.a aVar2 = Result.f32005e;
                     b10 = Result.b(c.a(th2));
                 }
                 if (Result.e(b10) != null) {

@@ -1,8 +1,19 @@
 package qv;
-
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-@Retention(RetentionPolicy.RUNTIME)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public @interface a {
+public abstract class a extends r {
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // qv.r
+    public void j(r rVar) {
+        if (rVar instanceof a) {
+            super.j(rVar);
+            return;
+        }
+        throw new IllegalArgumentException("Parent of block must also be block (can not be inline)");
+    }
+
+    @Override // qv.r
+    /* renamed from: m */
+    public a f() {
+        return (a) super.f();
+    }
 }

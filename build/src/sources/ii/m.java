@@ -1,51 +1,32 @@
 package ii;
-
-import android.util.Log;
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-abstract class m implements h {
+public final class m implements Runnable {
+
+    /* renamed from: d  reason: collision with root package name */
+    final /* synthetic */ a f26740d;
+
+    /* renamed from: e  reason: collision with root package name */
+    final /* synthetic */ int f26741e;
+
+    /* renamed from: i  reason: collision with root package name */
+    final /* synthetic */ int f26742i;
+
+    /* renamed from: o  reason: collision with root package name */
+    final /* synthetic */ n f26743o;
+
     /* JADX INFO: Access modifiers changed from: package-private */
-    public static Object c(ClassLoader classLoader) {
-        return d0.b(classLoader, "pathList", Object.class).a();
+    public m(n nVar, a aVar, int i10, int i11) {
+        this.f26743o = nVar;
+        this.f26740d = aVar;
+        this.f26741e = i10;
+        this.f26742i = i11;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static boolean d(ClassLoader classLoader, File file, File file2, boolean z10, l lVar, String str, k kVar) {
-        ArrayList arrayList = new ArrayList();
-        Object c10 = c(classLoader);
-        b0 a10 = d0.a(c10, "dexElements", Object.class);
-        List<Object> asList = Arrays.asList((Object[]) a10.a());
-        ArrayList arrayList2 = new ArrayList();
-        for (Object obj : asList) {
-            arrayList2.add((File) d0.b(obj, str, File.class).a());
-        }
-        if (arrayList2.contains(file2)) {
-            return true;
-        }
-        if (!z10 && !kVar.a(c10, file2, file)) {
-            Log.w("SplitCompat", "Should be optimized ".concat(String.valueOf(file2.getPath())));
-            return false;
-        }
-        a10.d(Arrays.asList(lVar.a(c10, new ArrayList(Collections.singleton(file2)), file, arrayList)));
-        if (arrayList.isEmpty()) {
-            return true;
-        }
-        a0 a0Var = new a0("DexPathList.makeDexElement failed");
-        int size = arrayList.size();
-        for (int i10 = 0; i10 < size; i10++) {
-            IOException iOException = (IOException) arrayList.get(i10);
-            Log.e("SplitCompat", "DexPathList.makeDexElement failed", iOException);
-            try {
-                Throwable.class.getDeclaredMethod("addSuppressed", Throwable.class).invoke(a0Var, iOException);
-            } catch (Exception unused) {
-            }
-        }
-        d0.a(c10, "dexElementsSuppressedExceptions", IOException.class).d(arrayList);
-        throw a0Var;
+    @Override // java.lang.Runnable
+    public final void run() {
+        n nVar = this.f26743o;
+        a aVar = this.f26740d;
+        nVar.h(new b(aVar.d(), this.f26741e, this.f26742i, aVar.a(), aVar.f(), aVar.h(), aVar.g(), aVar.c(), aVar.i()));
     }
 }

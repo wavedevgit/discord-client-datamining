@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'hours';
     var3 = var7.bind(var8)(var4, var3);
     var1 = function() {
-        _fun28367: for (var _fun28367_ip = 0;;) switch (_fun28367_ip) {
+        _fun28371: for (var _fun28371_ip = 0;;) switch (_fun28371_ip) {
             case 0:
                 var3 = global;
                 var0 = var3.process;
@@ -35,8 +35,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = undefined;
                 var4 = null;
                 if (!(var0 !== var2)) {
-                    _fun28367_ip = 181;
-                    continue _fun28367
+                    _fun28371_ip = 181;
+                    continue _fun28371
                 }
             case 33:
                 var2 = var3.process;
@@ -45,8 +45,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = '';
                 var4 = null;
                 if (!(var2 !== var5)) {
-                    _fun28367_ip = 181;
-                    continue _fun28367
+                    _fun28371_ip = 181;
+                    continue _fun28371
                 }
             case 61:
                 var6 = _closure1_slot0;
@@ -57,8 +57,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var6.isIOS;
                 var2 = var2.bind(var6)();
                 if (var2) {
-                    _fun28367_ip = 129;
-                    continue _fun28367
+                    _fun28371_ip = 129;
+                    continue _fun28371
                 }
             case 97:
                 var6 = _closure1_slot0;
@@ -69,8 +69,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var2.bind(var6)();
                 var2 = null;
                 if (!var6) {
-                    _fun28367_ip = 178;
-                    continue _fun28367
+                    _fun28371_ip = 178;
+                    continue _fun28371
                 }
             case 129:
                 var6 = _closure1_slot1;
@@ -97,8 +97,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var1 == var8;
                 var5 = undefined;
                 if (var9) {
-                    _fun28367_ip = 235;
-                    continue _fun28367
+                    _fun28371_ip = 235;
+                    continue _fun28371
                 }
             case 229:
                 var5 = var8.Build;
@@ -109,29 +109,29 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var3.bind(var7)(var5);
                 var3 = null;
                 if (var7) {
-                    _fun28367_ip = 297;
-                    continue _fun28367
+                    _fun28371_ip = 297;
+                    continue _fun28371
                 }
             case 262:
                 var7 = 0;
                 var3 = null;
                 if (!(var7 !== var5)) {
-                    _fun28367_ip = 297;
-                    continue _fun28367
+                    _fun28371_ip = 297;
+                    continue _fun28371
                 }
             case 270:
                 var7 = 123456;
                 var3 = null;
                 if (!(var7 !== var5)) {
-                    _fun28367_ip = 297;
-                    continue _fun28367
+                    _fun28371_ip = 297;
+                    continue _fun28371
                 }
             case 282:
                 var7 = 1234567890;
                 var3 = null;
                 if (!(var7 !== var5)) {
-                    _fun28367_ip = 297;
-                    continue _fun28367
+                    _fun28371_ip = 297;
+                    continue _fun28371
                 }
             case 294:
                 var3 = var5;
@@ -145,8 +145,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var1 == var2;
                 var0 = undefined;
                 if (var5) {
-                    _fun28367_ip = 339;
-                    continue _fun28367
+                    _fun28371_ip = 339;
+                    continue _fun28371
                 }
             case 333:
                 var0 = var2.Version;
@@ -154,28 +154,28 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var1 != var0;
                 var2 = null;
                 if (!var5) {
-                    _fun28367_ip = 351;
-                    continue _fun28367
+                    _fun28371_ip = 351;
+                    continue _fun28371
                 }
             case 348:
                 var2 = var0;
             case 351:
                 var0 = null;
                 if (!(var1 !== var4)) {
-                    _fun28367_ip = 388;
-                    continue _fun28367
+                    _fun28371_ip = 388;
+                    continue _fun28371
                 }
             case 357:
                 var0 = null;
                 if (!(var1 !== var3)) {
-                    _fun28367_ip = 388;
-                    continue _fun28367
+                    _fun28371_ip = 388;
+                    continue _fun28371
                 }
             case 363:
                 var0 = null;
                 if (!(var0 !== var2)) {
-                    _fun28367_ip = 388;
-                    continue _fun28367
+                    _fun28371_ip = 388;
+                    continue _fun28371
                 }
             case 369:
                 var1 = {};
@@ -197,4 +197,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.UPDATE_CHECK_INTERVAL = var3;
     var2.UPDATE_CONFIG = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3045, 478, 1457, 1594, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3047, 478, 1457, 1594, 2]);

@@ -8,26 +8,26 @@ import androidx.lifecycle.LifecycleOwner;
 public abstract class a implements d, j5.d, DefaultLifecycleObserver {
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f27244d;
+    private boolean f26581d;
 
     @Override // i5.c
     public void a(Drawable drawable) {
-        g(drawable);
+        f(drawable);
     }
 
     @Override // i5.c
     public void b(Drawable drawable) {
-        g(drawable);
+        f(drawable);
     }
 
     @Override // i5.c
     public void c(Drawable drawable) {
-        g(drawable);
+        f(drawable);
     }
 
     public abstract void d(Drawable drawable);
 
-    protected final void f() {
+    protected final void e() {
         Animatable animatable;
         Drawable drawable = getDrawable();
         if (drawable instanceof Animatable) {
@@ -38,14 +38,14 @@ public abstract class a implements d, j5.d, DefaultLifecycleObserver {
         if (animatable == null) {
             return;
         }
-        if (this.f27244d) {
+        if (this.f26581d) {
             animatable.start();
         } else {
             animatable.stop();
         }
     }
 
-    protected final void g(Drawable drawable) {
+    protected final void f(Drawable drawable) {
         Animatable animatable;
         Drawable drawable2 = getDrawable();
         if (drawable2 instanceof Animatable) {
@@ -57,7 +57,7 @@ public abstract class a implements d, j5.d, DefaultLifecycleObserver {
             animatable.stop();
         }
         d(drawable);
-        f();
+        e();
     }
 
     @Override // j5.d
@@ -65,13 +65,13 @@ public abstract class a implements d, j5.d, DefaultLifecycleObserver {
 
     @Override // androidx.lifecycle.DefaultLifecycleObserver
     public void onStart(LifecycleOwner lifecycleOwner) {
-        this.f27244d = true;
-        f();
+        this.f26581d = true;
+        e();
     }
 
     @Override // androidx.lifecycle.DefaultLifecycleObserver
     public void onStop(LifecycleOwner lifecycleOwner) {
-        this.f27244d = false;
-        f();
+        this.f26581d = false;
+        e();
     }
 }

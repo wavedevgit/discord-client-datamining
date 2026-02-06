@@ -15,16 +15,16 @@ import sa.k;
 public final class g implements c {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f55289d = new a(null);
+    public static final a f56020d = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f55290a;
+    private final boolean f56021a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f55291b;
+    private final int f56022b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f55292c = "SimpleImageTranscoder";
+    private final String f56023c = "SimpleImageTranscoder";
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
@@ -37,10 +37,10 @@ public final class g implements c {
             if (cVar == null) {
                 return Bitmap.CompressFormat.JPEG;
             }
-            if (cVar == fa.b.f22696b) {
+            if (cVar == fa.b.f22997b) {
                 return Bitmap.CompressFormat.JPEG;
             }
-            if (cVar == fa.b.f22697c) {
+            if (cVar == fa.b.f22998c) {
                 return Bitmap.CompressFormat.PNG;
             }
             if (fa.b.a(cVar)) {
@@ -54,29 +54,29 @@ public final class g implements c {
     }
 
     public g(boolean z10, int i10) {
-        this.f55290a = z10;
-        this.f55291b = i10;
+        this.f56021a = z10;
+        this.f56022b = i10;
     }
 
     private final int e(k kVar, RotationOptions rotationOptions, ResizeOptions resizeOptions) {
-        if (!this.f55290a) {
+        if (!this.f56021a) {
             return 1;
         }
-        return za.a.b(rotationOptions, resizeOptions, kVar, this.f55291b);
+        return za.a.b(rotationOptions, resizeOptions, kVar, this.f56022b);
     }
 
     @Override // za.c
     public String a() {
-        return this.f55292c;
+        return this.f56023c;
     }
 
     @Override // za.c
     public boolean b(k encodedImage, RotationOptions rotationOptions, ResizeOptions resizeOptions) {
         Intrinsics.checkNotNullParameter(encodedImage, "encodedImage");
         if (rotationOptions == null) {
-            rotationOptions = RotationOptions.f10451c.a();
+            rotationOptions = RotationOptions.f10350c.a();
         }
-        if (this.f55290a && za.a.b(rotationOptions, resizeOptions, encodedImage, this.f55291b) > 1) {
+        if (this.f56021a && za.a.b(rotationOptions, resizeOptions, encodedImage, this.f56022b) > 1) {
             return true;
         }
         return false;
@@ -95,7 +95,7 @@ public final class g implements c {
             num2 = num;
         }
         if (rotationOptions == null) {
-            rotationOptions2 = RotationOptions.f10451c.a();
+            rotationOptions2 = RotationOptions.f10350c.a();
         } else {
             rotationOptions2 = rotationOptions;
         }
@@ -106,7 +106,7 @@ public final class g implements c {
             options.inPreferredColorSpace = colorSpace;
         }
         try {
-            Bitmap decodeStream = BitmapFactory.decodeStream(encodedImage.N(), null, options);
+            Bitmap decodeStream = BitmapFactory.decodeStream(encodedImage.C(), null, options);
             if (decodeStream == null) {
                 p8.a.m("SimpleImageTranscoder", "Couldn't decode the EncodedImage InputStream ! ");
                 return new b(2);
@@ -135,7 +135,7 @@ public final class g implements c {
             }
             try {
                 try {
-                    bitmap.compress(f55289d.b(cVar), num2.intValue(), outputStream);
+                    bitmap.compress(f56020d.b(cVar), num2.intValue(), outputStream);
                     int i10 = 1;
                     if (e10 > 1) {
                         i10 = 0;
@@ -167,7 +167,7 @@ public final class g implements c {
     @Override // za.c
     public boolean d(fa.c imageFormat) {
         Intrinsics.checkNotNullParameter(imageFormat, "imageFormat");
-        if (imageFormat != fa.b.f22706l && imageFormat != fa.b.f22696b) {
+        if (imageFormat != fa.b.f23007l && imageFormat != fa.b.f22997b) {
             return false;
         }
         return true;

@@ -1,37 +1,14 @@
 package di;
 
-import android.os.BadParcelableException;
-import android.os.IInterface;
-import android.os.Parcel;
-import android.os.Parcelable;
+import android.content.Context;
+import com.google.android.play.core.review.ReviewManager;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class c {
-
-    /* renamed from: a  reason: collision with root package name */
-    private static final ClassLoader f20813a = c.class.getClassLoader();
-
-    public static Parcelable a(Parcel parcel, Parcelable.Creator creator) {
-        if (parcel.readInt() == 0) {
-            return null;
+    public static ReviewManager a(Context context) {
+        Context applicationContext = context.getApplicationContext();
+        if (applicationContext != null) {
+            context = applicationContext;
         }
-        return (Parcelable) creator.createFromParcel(parcel);
-    }
-
-    public static void b(Parcel parcel) {
-        int dataAvail = parcel.dataAvail();
-        if (dataAvail <= 0) {
-            return;
-        }
-        throw new BadParcelableException("Parcel data not fully consumed, unread size: " + dataAvail);
-    }
-
-    public static void c(Parcel parcel, Parcelable parcelable) {
-        parcel.writeInt(1);
-        parcelable.writeToParcel(parcel, 0);
-    }
-
-    /* JADX WARN: Multi-variable type inference failed */
-    public static void d(Parcel parcel, IInterface iInterface) {
-        parcel.writeStrongBinder(iInterface);
+        return new g(new l(context));
     }
 }

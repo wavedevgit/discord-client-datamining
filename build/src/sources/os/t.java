@@ -1,38 +1,31 @@
 package os;
 
-import kotlin.Unit;
-import kotlin.coroutines.CoroutineContext;
-import kotlinx.coroutines.channels.ProducerScope;
-import ms.a0;
-import os.w;
-/* JADX INFO: Access modifiers changed from: package-private */
+import kotlin.Result;
+import kotlin.coroutines.Continuation;
+import kotlinx.coroutines.CancellableContinuation;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class t extends h implements ProducerScope {
-    public t(CoroutineContext coroutineContext, g gVar) {
-        super(coroutineContext, gVar, true, true);
-    }
-
-    @Override // kotlinx.coroutines.a
-    protected void R0(Throwable th2, boolean z10) {
-        if (!X0().t(th2) && !z10) {
-            a0.a(getContext(), th2);
+public abstract class t {
+    public static final Object a(Object obj, Continuation continuation) {
+        if (obj instanceof r) {
+            Result.a aVar = Result.f32005e;
+            return Result.b(kotlin.c.a(((r) obj).f43525a));
         }
+        return Result.b(obj);
     }
 
-    @Override // kotlinx.coroutines.a, kotlinx.coroutines.b0, kotlinx.coroutines.Job
-    public boolean a() {
-        return super.a();
+    public static final Object b(Object obj) {
+        Throwable e10 = Result.e(obj);
+        if (e10 == null) {
+            return obj;
+        }
+        return new r(e10, false, 2, null);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    @Override // kotlinx.coroutines.a
-    /* renamed from: a1 */
-    public void T0(Unit unit) {
-        w.a.a(X0(), null, 1, null);
-    }
-
-    @Override // kotlinx.coroutines.channels.ProducerScope
-    public /* bridge */ /* synthetic */ w m() {
-        return W0();
+    public static final Object c(Object obj, CancellableContinuation cancellableContinuation) {
+        Throwable e10 = Result.e(obj);
+        if (e10 == null) {
+            return obj;
+        }
+        return new r(e10, false, 2, null);
     }
 }

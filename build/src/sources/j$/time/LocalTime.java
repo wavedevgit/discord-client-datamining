@@ -3,6 +3,7 @@ package j$.time;
 import j$.time.format.DateTimeFormatter;
 import j$.time.temporal.TemporalAccessor;
 import j$.time.temporal.TemporalQuery;
+import j$.time.temporal.n;
 import j$.time.temporal.o;
 import java.io.Serializable;
 import java.util.Objects;
@@ -12,33 +13,33 @@ public final class LocalTime implements j$.time.temporal.k, j$.time.temporal.l, 
     public static final LocalTime MIN;
 
     /* renamed from: e  reason: collision with root package name */
-    public static final LocalTime f30411e;
+    public static final LocalTime f29387e;
 
     /* renamed from: f  reason: collision with root package name */
-    public static final LocalTime[] f30412f = new LocalTime[24];
+    public static final LocalTime[] f29388f = new LocalTime[24];
 
     /* renamed from: a  reason: collision with root package name */
-    public final byte f30413a;
+    public final byte f29389a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final byte f30414b;
+    public final byte f29390b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final byte f30415c;
+    public final byte f29391c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final int f30416d;
+    public final int f29392d;
 
     static {
         int i10 = 0;
         while (true) {
-            LocalTime[] localTimeArr = f30412f;
+            LocalTime[] localTimeArr = f29388f;
             if (i10 < localTimeArr.length) {
                 localTimeArr[i10] = new LocalTime(i10, 0, 0, 0);
                 i10++;
             } else {
                 LocalTime localTime = localTimeArr[0];
-                f30411e = localTime;
+                f29387e = localTime;
                 LocalTime localTime2 = localTimeArr[12];
                 MIN = localTime;
                 MAX = new LocalTime(23, 59, 59, 999999999);
@@ -67,7 +68,7 @@ public final class LocalTime implements j$.time.temporal.k, j$.time.temporal.l, 
 
     public static LocalTime t(TemporalAccessor temporalAccessor) {
         Objects.requireNonNull(temporalAccessor, "temporal");
-        LocalTime localTime = (LocalTime) temporalAccessor.a(o.f30550g);
+        LocalTime localTime = (LocalTime) temporalAccessor.a(o.f29523g);
         if (localTime != null) {
             return localTime;
         }
@@ -75,27 +76,27 @@ public final class LocalTime implements j$.time.temporal.k, j$.time.temporal.l, 
     }
 
     public static LocalTime parse(CharSequence charSequence) {
-        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.f30447f;
+        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.f29421f;
         Objects.requireNonNull(dateTimeFormatter, "formatter");
-        return (LocalTime) dateTimeFormatter.parse(charSequence, new c(1));
+        return (LocalTime) dateTimeFormatter.parse(charSequence, new b(1));
     }
 
     public static LocalTime r(int i10, int i11, int i12, int i13) {
         if ((i11 | i12 | i13) == 0) {
-            return f30412f[i10];
+            return f29388f[i10];
         }
         return new LocalTime(i10, i11, i12, i13);
     }
 
     public LocalTime(int i10, int i11, int i12, int i13) {
-        this.f30413a = (byte) i10;
-        this.f30414b = (byte) i11;
-        this.f30415c = (byte) i12;
-        this.f30416d = i13;
+        this.f29389a = (byte) i10;
+        this.f29390b = (byte) i11;
+        this.f29391c = (byte) i12;
+        this.f29392d = i13;
     }
 
     @Override // j$.time.temporal.TemporalAccessor
-    public final boolean j(j$.time.temporal.n nVar) {
+    public final boolean j(n nVar) {
         if (nVar instanceof j$.time.temporal.a) {
             return ((j$.time.temporal.a) nVar).F();
         }
@@ -103,7 +104,7 @@ public final class LocalTime implements j$.time.temporal.k, j$.time.temporal.l, 
     }
 
     @Override // j$.time.temporal.TemporalAccessor
-    public final int g(j$.time.temporal.n nVar) {
+    public final int g(n nVar) {
         if (nVar instanceof j$.time.temporal.a) {
             return w(nVar);
         }
@@ -111,7 +112,7 @@ public final class LocalTime implements j$.time.temporal.k, j$.time.temporal.l, 
     }
 
     @Override // j$.time.temporal.TemporalAccessor
-    public final long m(j$.time.temporal.n nVar) {
+    public final long m(n nVar) {
         if (nVar instanceof j$.time.temporal.a) {
             if (nVar == j$.time.temporal.a.NANO_OF_DAY) {
                 return G();
@@ -124,46 +125,46 @@ public final class LocalTime implements j$.time.temporal.k, j$.time.temporal.l, 
         return nVar.B(this);
     }
 
-    public final int w(j$.time.temporal.n nVar) {
-        switch (f.f30445a[((j$.time.temporal.a) nVar).ordinal()]) {
+    public final int w(n nVar) {
+        switch (e.f29418a[((j$.time.temporal.a) nVar).ordinal()]) {
             case 1:
-                return this.f30416d;
+                return this.f29392d;
             case 2:
                 throw new DateTimeException("Invalid field 'NanoOfDay' for get() method, use getLong() instead");
             case 3:
-                return this.f30416d / 1000;
+                return this.f29392d / 1000;
             case 4:
                 throw new DateTimeException("Invalid field 'MicroOfDay' for get() method, use getLong() instead");
             case 5:
-                return this.f30416d / 1000000;
+                return this.f29392d / 1000000;
             case 6:
                 return (int) (G() / 1000000);
             case 7:
-                return this.f30415c;
+                return this.f29391c;
             case 8:
                 return toSecondOfDay();
             case 9:
-                return this.f30414b;
+                return this.f29390b;
             case 10:
-                return (this.f30413a * 60) + this.f30414b;
+                return (this.f29389a * 60) + this.f29390b;
             case 11:
-                return this.f30413a % 12;
+                return this.f29389a % 12;
             case 12:
-                int i10 = this.f30413a % 12;
+                int i10 = this.f29389a % 12;
                 if (i10 % 12 == 0) {
                     return 12;
                 }
                 return i10;
             case 13:
-                return this.f30413a;
+                return this.f29389a;
             case 14:
-                byte b10 = this.f30413a;
+                byte b10 = this.f29389a;
                 if (b10 == 0) {
                     return 24;
                 }
                 return b10;
             case 15:
-                return this.f30413a / 12;
+                return this.f29389a / 12;
             default:
                 throw new DateTimeException("Unsupported field: " + nVar);
         }
@@ -176,11 +177,11 @@ public final class LocalTime implements j$.time.temporal.k, j$.time.temporal.l, 
 
     @Override // j$.time.temporal.k
     /* renamed from: H */
-    public final LocalTime b(long j10, j$.time.temporal.n nVar) {
+    public final LocalTime b(long j10, n nVar) {
         if (nVar instanceof j$.time.temporal.a) {
             j$.time.temporal.a aVar = (j$.time.temporal.a) nVar;
             aVar.E(j10);
-            switch (f.f30445a[aVar.ordinal()]) {
+            switch (e.f29418a[aVar.ordinal()]) {
                 case 1:
                     return I((int) j10);
                 case 2:
@@ -195,34 +196,34 @@ public final class LocalTime implements j$.time.temporal.k, j$.time.temporal.l, 
                     return x(j10 * 1000000);
                 case 7:
                     int i10 = (int) j10;
-                    if (this.f30415c != i10) {
+                    if (this.f29391c != i10) {
                         j$.time.temporal.a.SECOND_OF_MINUTE.E(i10);
-                        return r(this.f30413a, this.f30414b, i10, this.f30416d);
+                        return r(this.f29389a, this.f29390b, i10, this.f29392d);
                     }
                     break;
                 case 8:
                     return F(j10 - toSecondOfDay());
                 case 9:
                     int i11 = (int) j10;
-                    if (this.f30414b != i11) {
+                    if (this.f29390b != i11) {
                         j$.time.temporal.a.MINUTE_OF_HOUR.E(i11);
-                        return r(this.f30413a, i11, this.f30415c, this.f30416d);
+                        return r(this.f29389a, i11, this.f29391c, this.f29392d);
                     }
                     break;
                 case 10:
-                    return C(j10 - ((this.f30413a * 60) + this.f30414b));
+                    return C(j10 - ((this.f29389a * 60) + this.f29390b));
                 case 11:
-                    return B(j10 - (this.f30413a % 12));
+                    return B(j10 - (this.f29389a % 12));
                 case 12:
                     if (j10 == 12) {
                         j10 = 0;
                     }
-                    return B(j10 - (this.f30413a % 12));
+                    return B(j10 - (this.f29389a % 12));
                 case 13:
                     int i12 = (int) j10;
-                    if (this.f30413a != i12) {
+                    if (this.f29389a != i12) {
                         j$.time.temporal.a.HOUR_OF_DAY.E(i12);
-                        return r(i12, this.f30414b, this.f30415c, this.f30416d);
+                        return r(i12, this.f29390b, this.f29391c, this.f29392d);
                     }
                     break;
                 case 14:
@@ -230,13 +231,13 @@ public final class LocalTime implements j$.time.temporal.k, j$.time.temporal.l, 
                         j10 = 0;
                     }
                     int i13 = (int) j10;
-                    if (this.f30413a != i13) {
+                    if (this.f29389a != i13) {
                         j$.time.temporal.a.HOUR_OF_DAY.E(i13);
-                        return r(i13, this.f30414b, this.f30415c, this.f30416d);
+                        return r(i13, this.f29390b, this.f29391c, this.f29392d);
                     }
                     break;
                 case 15:
-                    return B((j10 - (this.f30413a / 12)) * 12);
+                    return B((j10 - (this.f29389a / 12)) * 12);
                 default:
                     throw new DateTimeException("Unsupported field: " + nVar);
             }
@@ -246,17 +247,17 @@ public final class LocalTime implements j$.time.temporal.k, j$.time.temporal.l, 
     }
 
     public final LocalTime I(int i10) {
-        if (this.f30416d == i10) {
+        if (this.f29392d == i10) {
             return this;
         }
         j$.time.temporal.a.NANO_OF_SECOND.E(i10);
-        return r(this.f30413a, this.f30414b, this.f30415c, i10);
+        return r(this.f29389a, this.f29390b, this.f29391c, i10);
     }
 
     @Override // j$.time.temporal.k
     public final j$.time.temporal.k h(long j10, j$.time.temporal.b bVar) {
         if (bVar != null) {
-            switch (f.f30446b[bVar.ordinal()]) {
+            switch (e.f29419b[bVar.ordinal()]) {
                 case 1:
                     return E(j10);
                 case 2:
@@ -280,15 +281,15 @@ public final class LocalTime implements j$.time.temporal.k, j$.time.temporal.l, 
     }
 
     public final LocalTime B(long j10) {
-        return j10 == 0 ? this : r(((((int) (j10 % 24)) + this.f30413a) + 24) % 24, this.f30414b, this.f30415c, this.f30416d);
+        return j10 == 0 ? this : r(((((int) (j10 % 24)) + this.f29389a) + 24) % 24, this.f29390b, this.f29391c, this.f29392d);
     }
 
     public final LocalTime C(long j10) {
         if (j10 != 0) {
-            int i10 = (this.f30413a * 60) + this.f30414b;
+            int i10 = (this.f29389a * 60) + this.f29390b;
             int i11 = ((((int) (j10 % 1440)) + i10) + 1440) % 1440;
             if (i10 != i11) {
-                return r(i11 / 60, i11 % 60, this.f30415c, this.f30416d);
+                return r(i11 / 60, i11 % 60, this.f29391c, this.f29392d);
             }
         }
         return this;
@@ -296,10 +297,10 @@ public final class LocalTime implements j$.time.temporal.k, j$.time.temporal.l, 
 
     public final LocalTime F(long j10) {
         if (j10 != 0) {
-            int i10 = (this.f30414b * 60) + (this.f30413a * 3600) + this.f30415c;
+            int i10 = (this.f29390b * 60) + (this.f29389a * 3600) + this.f29391c;
             int i11 = ((((int) (j10 % 86400)) + i10) + 86400) % 86400;
             if (i10 != i11) {
-                return r(i11 / 3600, (i11 / 60) % 60, i11 % 60, this.f30416d);
+                return r(i11 / 3600, (i11 / 60) % 60, i11 % 60, this.f29392d);
             }
         }
         return this;
@@ -318,16 +319,16 @@ public final class LocalTime implements j$.time.temporal.k, j$.time.temporal.l, 
 
     @Override // j$.time.temporal.TemporalAccessor
     public final Object a(TemporalQuery temporalQuery) {
-        if (temporalQuery == o.f30545b || temporalQuery == o.f30544a || temporalQuery == o.f30548e || temporalQuery == o.f30547d) {
+        if (temporalQuery == o.f29518b || temporalQuery == o.f29517a || temporalQuery == o.f29521e || temporalQuery == o.f29520d) {
             return null;
         }
-        if (temporalQuery == o.f30550g) {
+        if (temporalQuery == o.f29523g) {
             return this;
         }
-        if (temporalQuery == o.f30549f) {
+        if (temporalQuery == o.f29522f) {
             return null;
         }
-        if (temporalQuery == o.f30546c) {
+        if (temporalQuery == o.f29519c) {
             return j$.time.temporal.b.NANOS;
         }
         return temporalQuery.queryFrom(this);
@@ -339,17 +340,17 @@ public final class LocalTime implements j$.time.temporal.k, j$.time.temporal.l, 
     }
 
     public int toSecondOfDay() {
-        return (this.f30414b * 60) + (this.f30413a * 3600) + this.f30415c;
+        return (this.f29390b * 60) + (this.f29389a * 3600) + this.f29391c;
     }
 
     public final long G() {
-        return (this.f30415c * 1000000000) + (this.f30414b * 60000000000L) + (this.f30413a * 3600000000000L) + this.f30416d;
+        return (this.f29391c * 1000000000) + (this.f29390b * 60000000000L) + (this.f29389a * 3600000000000L) + this.f29392d;
     }
 
     @Override // java.lang.Comparable
     public int compareTo(LocalTime localTime) {
-        int compare = Integer.compare(this.f30413a, localTime.f30413a);
-        return (compare == 0 && (compare = Integer.compare(this.f30414b, localTime.f30414b)) == 0 && (compare = Integer.compare(this.f30415c, localTime.f30415c)) == 0) ? Integer.compare(this.f30416d, localTime.f30416d) : compare;
+        int compare = Integer.compare(this.f29389a, localTime.f29389a);
+        return (compare == 0 && (compare = Integer.compare(this.f29390b, localTime.f29390b)) == 0 && (compare = Integer.compare(this.f29391c, localTime.f29391c)) == 0) ? Integer.compare(this.f29392d, localTime.f29392d) : compare;
     }
 
     public final boolean equals(Object obj) {
@@ -358,7 +359,7 @@ public final class LocalTime implements j$.time.temporal.k, j$.time.temporal.l, 
         }
         if (obj instanceof LocalTime) {
             LocalTime localTime = (LocalTime) obj;
-            if (this.f30413a == localTime.f30413a && this.f30414b == localTime.f30414b && this.f30415c == localTime.f30415c && this.f30416d == localTime.f30416d) {
+            if (this.f29389a == localTime.f29389a && this.f29390b == localTime.f29390b && this.f29391c == localTime.f29391c && this.f29392d == localTime.f29392d) {
                 return true;
             }
         }
@@ -372,10 +373,10 @@ public final class LocalTime implements j$.time.temporal.k, j$.time.temporal.l, 
 
     public String toString() {
         StringBuilder sb2 = new StringBuilder(18);
-        byte b10 = this.f30413a;
-        byte b11 = this.f30414b;
-        byte b12 = this.f30415c;
-        int i10 = this.f30416d;
+        byte b10 = this.f29389a;
+        byte b11 = this.f29390b;
+        byte b12 = this.f29391c;
+        int i10 = this.f29392d;
         sb2.append(b10 < 10 ? "0" : "");
         sb2.append((int) b10);
         sb2.append(b11 < 10 ? ":0" : ":");

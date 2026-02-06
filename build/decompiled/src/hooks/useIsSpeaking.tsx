@@ -451,4 +451,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getIsSpeaking = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3956, 1670, 3949, 3521, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3957, 1670, 3951, 3523, 566, 2]);

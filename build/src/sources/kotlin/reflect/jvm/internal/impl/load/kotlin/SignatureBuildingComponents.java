@@ -95,7 +95,7 @@ public final class SignatureBuildingComponents {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(parameters, "parameters");
         Intrinsics.checkNotNullParameter(ret, "ret");
-        return name + '(' + CollectionsKt.x0(parameters, "", null, null, 0, null, e.f33242d, 30, null) + ')' + b(ret);
+        return name + '(' + CollectionsKt.x0(parameters, "", null, null, 0, null, e.f33262d, 30, null) + ')' + b(ret);
     }
 
     @NotNull

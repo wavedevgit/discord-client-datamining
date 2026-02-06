@@ -1,30 +1,38 @@
 package zq;
 
-import javax.inject.Provider;
+import android.graphics.PorterDuff;
+import android.graphics.drawable.Drawable;
+import android.graphics.drawable.StateListDrawable;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class i {
+public class i extends StateListDrawable {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    class a implements h {
+    /* renamed from: d  reason: collision with root package name */
+    private int f56454d;
 
-        /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Provider f56181a;
-
-        a(Provider provider) {
-            this.f56181a = provider;
-        }
-
-        @Override // javax.inject.Provider
-        public Object get() {
-            return this.f56181a.get();
-        }
+    public i(Drawable drawable, int i10) {
+        this.f56454d = i10;
+        addState(new int[]{16842913}, drawable);
+        addState(new int[0], drawable);
     }
 
-    public static h a(Provider provider) {
-        g.b(provider);
-        if (provider instanceof h) {
-            return (h) provider;
+    @Override // android.graphics.drawable.StateListDrawable, android.graphics.drawable.DrawableContainer, android.graphics.drawable.Drawable
+    public boolean isStateful() {
+        return true;
+    }
+
+    @Override // android.graphics.drawable.StateListDrawable, android.graphics.drawable.DrawableContainer, android.graphics.drawable.Drawable
+    protected boolean onStateChange(int[] iArr) {
+        boolean z10 = false;
+        for (int i10 : iArr) {
+            if (i10 == 16842913) {
+                z10 = true;
+            }
         }
-        return new a(provider);
+        if (z10) {
+            super.setColorFilter(this.f56454d, PorterDuff.Mode.SRC_ATOP);
+        } else {
+            super.clearColorFilter();
+        }
+        return super.onStateChange(iArr);
     }
 }

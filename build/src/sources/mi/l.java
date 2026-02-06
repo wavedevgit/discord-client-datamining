@@ -1,39 +1,38 @@
 package mi;
 
-import java.io.Serializable;
-import java.util.Comparator;
+import java.util.logging.Logger;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-final class l extends i0 implements Serializable {
+abstract class l {
 
-    /* renamed from: d  reason: collision with root package name */
-    final Comparator f38636d;
+    /* renamed from: a  reason: collision with root package name */
+    private static final Logger f37184a = Logger.getLogger(l.class.getName());
+
+    /* renamed from: b  reason: collision with root package name */
+    private static final k f37185b = b();
+
+    /* JADX INFO: Access modifiers changed from: private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class b implements k {
+        private b() {
+        }
+    }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public l(Comparator comparator) {
-        this.f38636d = (Comparator) li.m.j(comparator);
-    }
-
-    @Override // mi.i0, java.util.Comparator
-    public int compare(Object obj, Object obj2) {
-        return this.f38636d.compare(obj, obj2);
-    }
-
-    @Override // java.util.Comparator
-    public boolean equals(Object obj) {
-        if (obj == this) {
-            return true;
+    public static String a(String str) {
+        if (c(str)) {
+            return null;
         }
-        if (obj instanceof l) {
-            return this.f38636d.equals(((l) obj).f38636d);
+        return str;
+    }
+
+    private static k b() {
+        return new b();
+    }
+
+    static boolean c(String str) {
+        if (str != null && !str.isEmpty()) {
+            return false;
         }
-        return false;
-    }
-
-    public int hashCode() {
-        return this.f38636d.hashCode();
-    }
-
-    public String toString() {
-        return this.f38636d.toString();
+        return true;
     }
 }

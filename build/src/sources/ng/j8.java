@@ -1,49 +1,30 @@
 package ng;
 
-import java.util.Arrays;
+import yi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-abstract class j8 extends k9 {
+final class j8 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    Object[] f40709a = new Object[4];
+    static final j8 f39901a = new j8();
 
-    /* renamed from: b  reason: collision with root package name */
-    int f40710b = 0;
-
-    /* renamed from: c  reason: collision with root package name */
-    boolean f40711c;
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public j8(int i10) {
+    static {
+        c.b a10 = yi.c.a("latencyMs");
+        l2 l2Var = new l2();
+        l2Var.a(1);
+        a10.b(l2Var.b()).a();
+        c.b a11 = yi.c.a("logSceneBrightness");
+        l2 l2Var2 = new l2();
+        l2Var2.a(2);
+        a11.b(l2Var2.b()).a();
     }
 
-    private final void b(int i10) {
-        Object[] objArr = this.f40709a;
-        int length = objArr.length;
-        if (length < i10) {
-            int i11 = length + (length >> 1) + 1;
-            if (i11 < i10) {
-                int highestOneBit = Integer.highestOneBit(i10 - 1);
-                i11 = highestOneBit + highestOneBit;
-            }
-            if (i11 < 0) {
-                i11 = Integer.MAX_VALUE;
-            }
-            this.f40709a = Arrays.copyOf(objArr, i11);
-            this.f40711c = false;
-        } else if (this.f40711c) {
-            this.f40709a = (Object[]) objArr.clone();
-            this.f40711c = false;
-        }
+    private j8() {
     }
 
-    public final j8 a(Object obj) {
-        obj.getClass();
-        b(this.f40710b + 1);
-        Object[] objArr = this.f40709a;
-        int i10 = this.f40710b;
-        this.f40710b = i10 + 1;
-        objArr[i10] = obj;
-        return this;
+    @Override // yi.d
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        android.support.v4.media.session.b.a(obj);
+        yi.e eVar = (yi.e) obj2;
+        throw null;
     }
 }

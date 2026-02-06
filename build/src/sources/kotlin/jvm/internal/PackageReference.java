@@ -1,6 +1,6 @@
 package kotlin.jvm.internal;
 
-import bs.b;
+import ds.b;
 import java.util.Collection;
 import kotlin.Metadata;
 import kotlin.reflect.KCallable;

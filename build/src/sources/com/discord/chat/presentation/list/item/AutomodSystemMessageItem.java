@@ -96,7 +96,7 @@ public final class AutomodSystemMessageItem extends ChatListItem {
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public AutomodSystemMessageItem(@NotNull Message message, @NotNull MessageContext messageContext, boolean z10) {
-        super(MessageId.m1092toStringimpl(message.m239getId3Eiw7ao()), null);
+        super(MessageId.m1090toStringimpl(message.m237getId3Eiw7ao()), null);
         Intrinsics.checkNotNullParameter(message, "message");
         Intrinsics.checkNotNullParameter(messageContext, "messageContext");
         this.message = message;

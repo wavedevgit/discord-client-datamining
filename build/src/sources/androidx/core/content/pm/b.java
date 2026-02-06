@@ -20,10 +20,10 @@ import p1.d;
 public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private static volatile androidx.core.content.pm.a f3272a;
+    private static volatile androidx.core.content.pm.a f3601a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static volatile List f3273b;
+    private static volatile List f3602b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     private static class a {
@@ -45,11 +45,11 @@ public abstract class b {
     static boolean a(Context context, ShortcutInfoCompat shortcutInfoCompat) {
         Bitmap decodeStream;
         IconCompat h10;
-        IconCompat iconCompat = shortcutInfoCompat.f3249i;
+        IconCompat iconCompat = shortcutInfoCompat.f3578i;
         if (iconCompat == null) {
             return false;
         }
-        int i10 = iconCompat.f3280a;
+        int i10 = iconCompat.f3609a;
         if (i10 != 6 && i10 != 4) {
             return true;
         }
@@ -62,7 +62,7 @@ public abstract class b {
         } else {
             h10 = IconCompat.h(decodeStream);
         }
-        shortcutInfoCompat.f3249i = h10;
+        shortcutInfoCompat.f3578i = h10;
         return true;
     }
 
@@ -95,7 +95,7 @@ public abstract class b {
     */
     private static java.util.List d(android.content.Context r5) {
         /*
-            java.util.List r0 = androidx.core.content.pm.b.f3273b
+            java.util.List r0 = androidx.core.content.pm.b.f3602b
             if (r0 != 0) goto L71
             java.util.ArrayList r0 = new java.util.ArrayList
             r0.<init>()
@@ -141,27 +141,27 @@ public abstract class b {
             r0.add(r4)     // Catch: java.lang.Exception -> L25
             goto L25
         L6b:
-            java.util.List r5 = androidx.core.content.pm.b.f3273b
+            java.util.List r5 = androidx.core.content.pm.b.f3602b
             if (r5 != 0) goto L71
-            androidx.core.content.pm.b.f3273b = r0
+            androidx.core.content.pm.b.f3602b = r0
         L71:
-            java.util.List r5 = androidx.core.content.pm.b.f3273b
+            java.util.List r5 = androidx.core.content.pm.b.f3602b
             return r5
         */
         throw new UnsupportedOperationException("Method not decompiled: androidx.core.content.pm.b.d(android.content.Context):java.util.List");
     }
 
     private static androidx.core.content.pm.a e(Context context) {
-        if (f3272a == null) {
+        if (f3601a == null) {
             try {
-                f3272a = (androidx.core.content.pm.a) Class.forName("w3.a", false, b.class.getClassLoader()).getMethod("getInstance", Context.class).invoke(null, context);
+                f3601a = (androidx.core.content.pm.a) Class.forName("w3.a", false, b.class.getClassLoader()).getMethod("getInstance", Context.class).invoke(null, context);
             } catch (Exception unused) {
             }
-            if (f3272a == null) {
-                f3272a = new a.C0036a();
+            if (f3601a == null) {
+                f3601a = new a.C0034a();
             }
         }
-        return f3272a;
+        return f3601a;
     }
 
     public static List f(Context context, int i10) {

@@ -5,8 +5,8 @@ import android.provider.Settings;
 import kotlin.Metadata;
 import kotlin.enums.EnumEntries;
 import kotlin.jvm.internal.Intrinsics;
-import or.p;
 import org.jetbrains.annotations.NotNull;
+import qr.p;
 @Metadata(d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\u0010\u000e\n\u0002\b\u0005\bÆ\u0002\u0018\u00002\u00020\u0001:\u0001\u000fB\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\n\u0010\u0006\u001a\u00020\u0007*\u00020\bJ\u0015\u0010\t\u001a\u00020\n2\u0006\u0010\u0004\u001a\u00020\u000bH\u0000¢\u0006\u0002\b\fJ\f\u0010\r\u001a\u00020\u0007*\u00020\bH\u0002J\u0010\u0010\u000e\u001a\u00020\u00052\u0006\u0010\u0004\u001a\u00020\u000bH\u0002R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006\u0010"}, d2 = {"Lcom/discord/device/utils/DeviceReducedMotion;", "", "<init>", "()V", "motionPreference", "Lcom/discord/device/utils/DeviceReducedMotion$MotionPreference;", "isReducedMotionEnabled", "", "Landroid/content/Context;", "setMotionPreference", "", "", "setMotionPreference$device_release", "isSystemReducedMotionEnabled", "createMotionPreference", "MotionPreference", "device_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class DeviceReducedMotion {
@@ -34,7 +34,7 @@ public final class DeviceReducedMotion {
         static {
             MotionPreference[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = vr.a.a($values);
+            $ENTRIES = xr.a.a($values);
         }
 
         private MotionPreference(String str, int i10) {

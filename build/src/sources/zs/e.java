@@ -1,43 +1,34 @@
 package zs;
 
 import kotlin.jvm.internal.Intrinsics;
+import zs.o;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class e implements s {
+public interface e extends o.d {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final l f56233a;
-
-    public e(l directive) {
-        Intrinsics.checkNotNullParameter(directive, "directive");
-        this.f56233a = directive;
-    }
-
-    @Override // zs.o
-    public at.e a() {
-        return this.f56233a.a();
-    }
-
-    @Override // zs.o
-    public bt.q b() {
-        return this.f56233a.b();
-    }
-
-    public final l c() {
-        return this.f56233a;
-    }
-
-    public boolean equals(Object obj) {
-        if ((obj instanceof e) && Intrinsics.areEqual(this.f56233a, ((e) obj).f56233a)) {
-            return true;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a {
+        public static void a(e eVar, n format) {
+            Intrinsics.checkNotNullParameter(format, "format");
+            if (format instanceof o0) {
+                eVar.o(((o0) format).b());
+            }
         }
-        return false;
+
+        public static void b(e eVar, h0 padding) {
+            Intrinsics.checkNotNullParameter(padding, "padding");
+            eVar.o(new bt.y(new bt.e(new s0(padding)), true));
+        }
+
+        public static void c(e eVar, h0 padding) {
+            Intrinsics.checkNotNullParameter(padding, "padding");
+            eVar.o(new bt.e(new q0(padding)));
+        }
+
+        public static void d(e eVar, h0 padding) {
+            Intrinsics.checkNotNullParameter(padding, "padding");
+            eVar.o(new bt.e(new r0(padding)));
+        }
     }
 
-    public int hashCode() {
-        return this.f56233a.hashCode();
-    }
-
-    public String toString() {
-        return "BasicFormatStructure(" + this.f56233a + ')';
-    }
+    void o(bt.o oVar);
 }

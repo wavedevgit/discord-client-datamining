@@ -1,53 +1,52 @@
 package ws;
 
-import j$.time.DateTimeException;
-import j$.time.LocalDate;
-import kotlin.jvm.internal.Intrinsics;
-import or.p;
-import ws.c;
+import kotlin.jvm.functions.Function3;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class g {
+public final class g implements f {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final long f53282a = LocalDate.MIN.toEpochDay();
+    private final Object f54072a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final long f53283b = LocalDate.MAX.toEpochDay();
+    private final Function3 f54073b;
 
-    private static final LocalDate a(long j10) {
-        long j11 = f53282a;
-        if (j10 <= f53283b && j11 <= j10) {
-            LocalDate ofEpochDay = LocalDate.ofEpochDay(j10);
-            Intrinsics.checkNotNullExpressionValue(ofEpochDay, "ofEpochDay(...)");
-            return ofEpochDay;
-        }
-        throw new DateTimeException("The resulting day " + j10 + " is out of supported LocalDate range.");
+    /* renamed from: c  reason: collision with root package name */
+    private final Function3 f54074c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private final Function3 f54075d;
+
+    public g(Object obj, Function3 function3, Function3 function32) {
+        Function3 function33;
+        this.f54072a = obj;
+        this.f54073b = function3;
+        this.f54074c = function32;
+        function33 = m.f54099a;
+        this.f54075d = function33;
     }
 
-    public static final f b(f fVar, int i10, c.b unit) {
-        Intrinsics.checkNotNullParameter(fVar, "<this>");
-        Intrinsics.checkNotNullParameter(unit, "unit");
-        return c(fVar, i10, unit);
+    @Override // ws.j
+    public Function3 a() {
+        return this.f54073b;
     }
 
-    public static final f c(f fVar, long j10, c.b unit) {
-        LocalDate plusMonths;
-        Intrinsics.checkNotNullParameter(fVar, "<this>");
-        Intrinsics.checkNotNullParameter(unit, "unit");
-        try {
-            if (unit instanceof c.C0706c) {
-                plusMonths = a(ys.b.a(fVar.h().toEpochDay(), ys.b.c(j10, ((c.C0706c) unit).d())));
-            } else if (unit instanceof c.d) {
-                plusMonths = fVar.h().plusMonths(ys.b.c(j10, ((c.d) unit).d()));
-            } else {
-                throw new p();
-            }
-            return new f(plusMonths);
-        } catch (Exception e10) {
-            if (!(e10 instanceof DateTimeException) && !(e10 instanceof ArithmeticException)) {
-                throw e10;
-            }
-            throw new a("The result of adding " + j10 + " of " + unit + " to " + fVar + " is out of LocalDate range.", e10);
-        }
+    @Override // ws.j
+    public Function3 b() {
+        return this.f54074c;
+    }
+
+    @Override // ws.j
+    public Function3 c() {
+        return this.f54075d;
+    }
+
+    @Override // ws.j
+    public Object d() {
+        return this.f54072a;
+    }
+
+    public /* synthetic */ g(Object obj, Function3 function3, Function3 function32, int i10, DefaultConstructorMarker defaultConstructorMarker) {
+        this(obj, function3, (i10 & 4) != 0 ? null : function32);
     }
 }

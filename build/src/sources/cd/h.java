@@ -5,21 +5,21 @@ import com.google.android.exoplayer2.Format;
 import com.google.android.exoplayer2.metadata.Metadata;
 import java.util.Arrays;
 import java.util.List;
-import mi.s;
 import nc.w;
 import ne.h0;
+import ni.s;
 import tc.e0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 final class h extends i {
 
     /* renamed from: o  reason: collision with root package name */
-    private static final byte[] f7531o = {79, 112, 117, 115, 72, 101, 97, 100};
+    private static final byte[] f7376o = {79, 112, 117, 115, 72, 101, 97, 100};
 
     /* renamed from: p  reason: collision with root package name */
-    private static final byte[] f7532p = {79, 112, 117, 115, 84, 97, 103, 115};
+    private static final byte[] f7377p = {79, 112, 117, 115, 84, 97, 103, 115};
 
     /* renamed from: n  reason: collision with root package name */
-    private boolean f7533n;
+    private boolean f7378n;
 
     private static boolean n(h0 h0Var, byte[] bArr) {
         if (h0Var.a() < bArr.length) {
@@ -33,7 +33,7 @@ final class h extends i {
     }
 
     public static boolean o(h0 h0Var) {
-        return n(h0Var, f7531o);
+        return n(h0Var, f7376o);
     }
 
     @Override // cd.i
@@ -43,32 +43,32 @@ final class h extends i {
 
     @Override // cd.i
     protected boolean h(h0 h0Var, long j10, i.b bVar) {
-        if (n(h0Var, f7531o)) {
+        if (n(h0Var, f7376o)) {
             byte[] copyOf = Arrays.copyOf(h0Var.e(), h0Var.g());
             int c10 = w.c(copyOf);
             List a10 = w.a(copyOf);
-            if (bVar.f7547a != null) {
+            if (bVar.f7392a != null) {
                 return true;
             }
-            bVar.f7547a = new Format.b().g0("audio/opus").J(c10).h0(48000).V(a10).G();
+            bVar.f7392a = new Format.b().g0("audio/opus").J(c10).h0(48000).V(a10).G();
             return true;
         }
-        byte[] bArr = f7532p;
+        byte[] bArr = f7377p;
         if (n(h0Var, bArr)) {
-            ne.a.i(bVar.f7547a);
-            if (this.f7533n) {
+            ne.a.i(bVar.f7392a);
+            if (this.f7378n) {
                 return true;
             }
-            this.f7533n = true;
+            this.f7378n = true;
             h0Var.V(bArr.length);
-            Metadata c11 = e0.c(s.o(e0.i(h0Var, false, false).f50538b));
+            Metadata c11 = e0.c(s.p(e0.i(h0Var, false, false).f50514b));
             if (c11 == null) {
                 return true;
             }
-            bVar.f7547a = bVar.f7547a.b().Z(c11.b(bVar.f7547a.f11686u)).G();
+            bVar.f7392a = bVar.f7392a.b().Z(c11.b(bVar.f7392a.f11585u)).G();
             return true;
         }
-        ne.a.i(bVar.f7547a);
+        ne.a.i(bVar.f7392a);
         return false;
     }
 
@@ -77,7 +77,7 @@ final class h extends i {
     public void l(boolean z10) {
         super.l(z10);
         if (z10) {
-            this.f7533n = false;
+            this.f7378n = false;
         }
     }
 }

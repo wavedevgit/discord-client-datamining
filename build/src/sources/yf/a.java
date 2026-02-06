@@ -11,12 +11,12 @@ public interface a extends IInterface {
 
     /* renamed from: yf.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static abstract class AbstractBinderC0763a extends jg.b implements a {
-        public AbstractBinderC0763a() {
+    public static abstract class AbstractBinderC0750a extends kg.b implements a {
+        public AbstractBinderC0750a() {
             super("com.google.android.gms.identitycredentials.internal.IIdentityCredentialCallbacks");
         }
 
-        @Override // jg.b
+        @Override // kg.b
         protected boolean e(int i10, Parcel parcel, Parcel parcel2, int i11) {
             if (i10 != 1) {
                 if (i10 != 2) {
@@ -26,32 +26,32 @@ public interface a extends IInterface {
                                 return false;
                             }
                             f(parcel);
-                            R((Status) jg.c.a(parcel, Status.CREATOR), (k) jg.c.a(parcel, k.CREATOR));
+                            U((Status) kg.c.a(parcel, Status.CREATOR), (k) kg.c.a(parcel, k.CREATOR));
                         } else {
                             f(parcel);
-                            m0((Status) jg.c.a(parcel, Status.CREATOR), (i) jg.c.a(parcel, i.CREATOR));
+                            m0((Status) kg.c.a(parcel, Status.CREATOR), (i) kg.c.a(parcel, i.CREATOR));
                         }
                     } else {
                         f(parcel);
-                        o0((Status) jg.c.a(parcel, Status.CREATOR), (xf.a) jg.c.a(parcel, xf.a.CREATOR));
+                        o0((Status) kg.c.a(parcel, Status.CREATOR), (xf.a) kg.c.a(parcel, xf.a.CREATOR));
                     }
                 } else {
                     f(parcel);
-                    C0((Status) jg.c.a(parcel, Status.CREATOR), (m) jg.c.a(parcel, m.CREATOR));
+                    F0((Status) kg.c.a(parcel, Status.CREATOR), (m) kg.c.a(parcel, m.CREATOR));
                 }
             } else {
                 f(parcel);
-                j((Status) jg.c.a(parcel, Status.CREATOR), (xf.g) jg.c.a(parcel, xf.g.CREATOR));
+                i((Status) kg.c.a(parcel, Status.CREATOR), (xf.g) kg.c.a(parcel, xf.g.CREATOR));
             }
             return true;
         }
     }
 
-    void C0(Status status, m mVar);
+    void F0(Status status, m mVar);
 
-    void R(Status status, k kVar);
+    void U(Status status, k kVar);
 
-    void j(Status status, xf.g gVar);
+    void i(Status status, xf.g gVar);
 
     void m0(Status status, i iVar);
 

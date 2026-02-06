@@ -5,30 +5,30 @@ import android.os.Bundle;
 final class h0 extends e0 {
 
     /* renamed from: e  reason: collision with root package name */
-    private final ji.t0 f16180e;
+    private final ki.t0 f16160e;
 
     /* renamed from: f  reason: collision with root package name */
-    final /* synthetic */ j0 f16181f;
+    final /* synthetic */ j0 f16161f;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public h0(j0 j0Var, xg.k kVar) {
+    public h0(j0 j0Var, yg.k kVar) {
         super(j0Var, kVar);
-        this.f16181f = j0Var;
-        this.f16180e = new ji.t0("OnWarmUpIntegrityTokenCallback");
+        this.f16161f = j0Var;
+        this.f16160e = new ki.t0("OnWarmUpIntegrityTokenCallback");
     }
 
-    @Override // com.google.android.play.core.integrity.e0, ji.n0
-    public final void B0(Bundle bundle) {
+    @Override // com.google.android.play.core.integrity.e0, ki.n0
+    public final void D0(Bundle bundle) {
         x0 x0Var;
-        super.B0(bundle);
-        this.f16180e.c("onWarmUpExpressIntegrityToken", new Object[0]);
-        x0Var = this.f16181f.f16196e;
+        super.D0(bundle);
+        this.f16160e.c("onWarmUpExpressIntegrityToken", new Object[0]);
+        x0Var = this.f16161f.f16176e;
         ef.b a10 = x0Var.a(bundle);
         if (a10 != null) {
-            this.f16159c.d(a10);
+            this.f16139c.d(a10);
         } else {
-            this.f16159c.e(Long.valueOf(bundle.getLong("warm.up.sid")));
+            this.f16139c.e(Long.valueOf(bundle.getLong("warm.up.sid")));
         }
     }
 }

@@ -13,7 +13,7 @@ import o8.j;
 public class WebPImage implements c, ha.c {
 
     /* renamed from: a  reason: collision with root package name */
-    private Bitmap.Config f9912a = null;
+    private Bitmap.Config f9811a = null;
     @d
     private long mNativeContext;
 
@@ -26,7 +26,7 @@ public class WebPImage implements c, ha.c {
         byteBuffer.rewind();
         WebPImage nativeCreateFromDirectByteBuffer = nativeCreateFromDirectByteBuffer(byteBuffer);
         if (imageDecodeOptions != null) {
-            nativeCreateFromDirectByteBuffer.f9912a = imageDecodeOptions.f10436i;
+            nativeCreateFromDirectByteBuffer.f9811a = imageDecodeOptions.f10335i;
         }
         return nativeCreateFromDirectByteBuffer;
     }
@@ -42,7 +42,7 @@ public class WebPImage implements c, ha.c {
         j.b(Boolean.valueOf(z10));
         WebPImage nativeCreateFromNativeMemory = nativeCreateFromNativeMemory(j10, i10);
         if (imageDecodeOptions != null) {
-            nativeCreateFromNativeMemory.f9912a = imageDecodeOptions.f10436i;
+            nativeCreateFromNativeMemory.f9811a = imageDecodeOptions.f10335i;
         }
         return nativeCreateFromNativeMemory;
     }
@@ -72,6 +72,11 @@ public class WebPImage implements c, ha.c {
     private native int nativeGetWidth();
 
     @Override // ga.c
+    public int[] A() {
+        return nativeGetFrameDurations();
+    }
+
+    @Override // ga.c
     public int a() {
         return nativeGetFrameCount();
     }
@@ -84,29 +89,29 @@ public class WebPImage implements c, ha.c {
     @Override // ga.c
     public b c(int i10) {
         b.a aVar;
-        b.EnumC0338b enumC0338b;
-        WebPFrame x10 = x(i10);
+        b.EnumC0335b enumC0335b;
+        WebPFrame z10 = z(i10);
         try {
-            int b10 = x10.b();
-            int c10 = x10.c();
-            int width = x10.getWidth();
-            int height = x10.getHeight();
-            if (x10.d()) {
+            int b10 = z10.b();
+            int c10 = z10.c();
+            int width = z10.getWidth();
+            int height = z10.getHeight();
+            if (z10.d()) {
                 aVar = b.a.BLEND_WITH_PREVIOUS;
             } else {
                 aVar = b.a.NO_BLEND;
             }
             b.a aVar2 = aVar;
-            if (x10.e()) {
-                enumC0338b = b.EnumC0338b.DISPOSE_TO_BACKGROUND;
+            if (z10.e()) {
+                enumC0335b = b.EnumC0335b.DISPOSE_TO_BACKGROUND;
             } else {
-                enumC0338b = b.EnumC0338b.DISPOSE_DO_NOT;
+                enumC0335b = b.EnumC0335b.DISPOSE_DO_NOT;
             }
-            b bVar = new b(i10, b10, c10, width, height, aVar2, enumC0338b);
-            x10.dispose();
+            b bVar = new b(i10, b10, c10, width, height, aVar2, enumC0335b);
+            z10.dispose();
             return bVar;
         } catch (Throwable th2) {
-            x10.dispose();
+            z10.dispose();
             throw th2;
         }
     }
@@ -137,28 +142,23 @@ public class WebPImage implements c, ha.c {
 
     @Override // ga.c
     /* renamed from: h */
-    public WebPFrame x(int i10) {
+    public WebPFrame z(int i10) {
         return nativeGetFrame(i10);
     }
 
     @Override // ga.c
-    public int u() {
+    public int w() {
         return nativeGetSizeInBytes();
     }
 
     @Override // ga.c
-    public boolean v() {
+    public boolean x() {
         return true;
     }
 
     @Override // ga.c
-    public Bitmap.Config w() {
-        return this.f9912a;
-    }
-
-    @Override // ga.c
-    public int[] y() {
-        return nativeGetFrameDurations();
+    public Bitmap.Config y() {
+        return this.f9811a;
     }
 
     @d

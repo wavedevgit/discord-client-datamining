@@ -1,69 +1,124 @@
 package du;
 
+import bu.d;
+import bu.g;
+import bu.h;
+import bu.k;
+import java.net.Authenticator;
+import java.net.InetAddress;
+import java.net.InetSocketAddress;
+import java.net.PasswordAuthentication;
+import java.net.Proxy;
+import java.net.SocketAddress;
+import java.util.List;
+import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
+import kotlin.text.StringsKt;
+import okhttp3.HttpUrl;
+import okhttp3.Request;
+import okhttp3.Response;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class a {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final String f21246a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private final boolean f21247b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private d f21248c;
+public final class a implements bu.a {
 
     /* renamed from: d  reason: collision with root package name */
-    private long f21249d;
+    private final h f21194d;
 
-    public a(String name, boolean z10) {
-        Intrinsics.checkNotNullParameter(name, "name");
-        this.f21246a = name;
-        this.f21247b = z10;
-        this.f21249d = -1L;
-    }
+    /* renamed from: du.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public /* synthetic */ class C0279a {
 
-    public final boolean a() {
-        return this.f21247b;
-    }
+        /* renamed from: a  reason: collision with root package name */
+        public static final /* synthetic */ int[] f21195a;
 
-    public final String b() {
-        return this.f21246a;
-    }
-
-    public final long c() {
-        return this.f21249d;
-    }
-
-    public final d d() {
-        return this.f21248c;
-    }
-
-    public final void e(d queue) {
-        Intrinsics.checkNotNullParameter(queue, "queue");
-        d dVar = this.f21248c;
-        if (dVar == queue) {
-            return;
+        static {
+            int[] iArr = new int[Proxy.Type.values().length];
+            try {
+                iArr[Proxy.Type.DIRECT.ordinal()] = 1;
+            } catch (NoSuchFieldError unused) {
+            }
+            f21195a = iArr;
         }
-        if (dVar == null) {
-            this.f21248c = queue;
-            return;
+    }
+
+    public a(h defaultDns) {
+        Intrinsics.checkNotNullParameter(defaultDns, "defaultDns");
+        this.f21194d = defaultDns;
+    }
+
+    private final InetAddress b(Proxy proxy, HttpUrl httpUrl, h hVar) {
+        int i10;
+        Proxy.Type type = proxy.type();
+        if (type == null) {
+            i10 = -1;
+        } else {
+            i10 = C0279a.f21195a[type.ordinal()];
         }
-        throw new IllegalStateException("task is in multiple queues");
+        if (i10 == 1) {
+            return (InetAddress) CollectionsKt.o0(hVar.lookup(httpUrl.i()));
+        }
+        SocketAddress address = proxy.address();
+        Intrinsics.checkNotNull(address, "null cannot be cast to non-null type java.net.InetSocketAddress");
+        InetAddress address2 = ((InetSocketAddress) address).getAddress();
+        Intrinsics.checkNotNullExpressionValue(address2, "address() as InetSocketAddress).address");
+        return address2;
     }
 
-    public abstract long f();
-
-    public final void g(long j10) {
-        this.f21249d = j10;
+    @Override // bu.a
+    public Request a(k kVar, Response response) {
+        boolean z10;
+        Proxy proxy;
+        h hVar;
+        PasswordAuthentication requestPasswordAuthentication;
+        String str;
+        okhttp3.a a10;
+        Intrinsics.checkNotNullParameter(response, "response");
+        List<d> y10 = response.y();
+        Request Y0 = response.Y0();
+        HttpUrl n10 = Y0.n();
+        if (response.z() == 407) {
+            z10 = true;
+        } else {
+            z10 = false;
+        }
+        if (kVar == null || (proxy = kVar.b()) == null) {
+            proxy = Proxy.NO_PROXY;
+        }
+        for (d dVar : y10) {
+            if (StringsKt.A("Basic", dVar.c(), true)) {
+                if (kVar == null || (a10 = kVar.a()) == null || (hVar = a10.c()) == null) {
+                    hVar = this.f21194d;
+                }
+                if (z10) {
+                    SocketAddress address = proxy.address();
+                    Intrinsics.checkNotNull(address, "null cannot be cast to non-null type java.net.InetSocketAddress");
+                    InetSocketAddress inetSocketAddress = (InetSocketAddress) address;
+                    String hostName = inetSocketAddress.getHostName();
+                    Intrinsics.checkNotNullExpressionValue(proxy, "proxy");
+                    requestPasswordAuthentication = Authenticator.requestPasswordAuthentication(hostName, b(proxy, n10, hVar), inetSocketAddress.getPort(), n10.s(), dVar.b(), dVar.c(), n10.u(), Authenticator.RequestorType.PROXY);
+                } else {
+                    String i10 = n10.i();
+                    Intrinsics.checkNotNullExpressionValue(proxy, "proxy");
+                    requestPasswordAuthentication = Authenticator.requestPasswordAuthentication(i10, b(proxy, n10, hVar), n10.o(), n10.s(), dVar.b(), dVar.c(), n10.u(), Authenticator.RequestorType.SERVER);
+                }
+                if (requestPasswordAuthentication != null) {
+                    if (z10) {
+                        str = "Proxy-Authorization";
+                    } else {
+                        str = "Authorization";
+                    }
+                    String userName = requestPasswordAuthentication.getUserName();
+                    Intrinsics.checkNotNullExpressionValue(userName, "auth.userName");
+                    char[] password = requestPasswordAuthentication.getPassword();
+                    Intrinsics.checkNotNullExpressionValue(password, "auth.password");
+                    return Y0.k().e(str, g.a(userName, new String(password), dVar.a())).b();
+                }
+            }
+        }
+        return null;
     }
 
-    public String toString() {
-        return this.f21246a;
-    }
-
-    public /* synthetic */ a(String str, boolean z10, int i10, DefaultConstructorMarker defaultConstructorMarker) {
-        this(str, (i10 & 2) != 0 ? true : z10);
+    public /* synthetic */ a(h hVar, int i10, DefaultConstructorMarker defaultConstructorMarker) {
+        this((i10 & 1) != 0 ? h.f7117b : hVar);
     }
 }

@@ -7,28 +7,28 @@ import java.io.Closeable;
 public class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final CloseableReference.c f39275a;
+    private final CloseableReference.c f38630a;
 
     /* renamed from: na.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    class C0519a implements CloseableReference.c {
+    class C0533a implements CloseableReference.c {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ pa.a f39276a;
+        final /* synthetic */ pa.a f38631a;
 
-        C0519a(pa.a aVar) {
-            this.f39276a = aVar;
+        C0533a(pa.a aVar) {
+            this.f38631a = aVar;
         }
 
         @Override // com.facebook.common.references.CloseableReference.c
         public boolean a() {
-            return this.f39276a.b();
+            return this.f38631a.b();
         }
 
         @Override // com.facebook.common.references.CloseableReference.c
         public void b(s8.d dVar, Throwable th2) {
             String str;
-            this.f39276a.a(dVar, th2);
+            this.f38631a.a(dVar, th2);
             Object f10 = dVar.f();
             if (f10 != null) {
                 str = f10.getClass().getName();
@@ -40,7 +40,7 @@ public class a {
     }
 
     public a(pa.a aVar) {
-        this.f39275a = new C0519a(aVar);
+        this.f38630a = new C0533a(aVar);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -52,10 +52,10 @@ public class a {
     }
 
     public CloseableReference b(Closeable closeable) {
-        return CloseableReference.S0(closeable, this.f39275a);
+        return CloseableReference.L0(closeable, this.f38630a);
     }
 
     public CloseableReference c(Object obj, s8.c cVar) {
-        return CloseableReference.Y0(obj, cVar, this.f39275a);
+        return CloseableReference.V0(obj, cVar, this.f38630a);
     }
 }

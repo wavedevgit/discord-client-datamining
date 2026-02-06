@@ -10,10 +10,10 @@ import android.view.ViewParent;
 public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final ThreadLocal f15165a = new ThreadLocal();
+    private static final ThreadLocal f15145a = new ThreadLocal();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ThreadLocal f15166b = new ThreadLocal();
+    private static final ThreadLocal f15146b = new ThreadLocal();
 
     public static void a(ViewGroup viewGroup, View view, Rect rect) {
         rect.set(0, 0, view.getWidth(), view.getHeight());
@@ -34,7 +34,7 @@ public abstract class b {
     }
 
     public static void c(ViewGroup viewGroup, View view, Rect rect) {
-        ThreadLocal threadLocal = f15165a;
+        ThreadLocal threadLocal = f15145a;
         Matrix matrix = (Matrix) threadLocal.get();
         if (matrix == null) {
             matrix = new Matrix();
@@ -43,7 +43,7 @@ public abstract class b {
             matrix.reset();
         }
         b(viewGroup, view, matrix);
-        ThreadLocal threadLocal2 = f15166b;
+        ThreadLocal threadLocal2 = f15146b;
         RectF rectF = (RectF) threadLocal2.get();
         if (rectF == null) {
             rectF = new RectF();

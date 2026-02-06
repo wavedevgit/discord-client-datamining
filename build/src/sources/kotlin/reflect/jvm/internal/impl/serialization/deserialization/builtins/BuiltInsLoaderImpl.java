@@ -35,7 +35,7 @@ import org.jetbrains.annotations.NotNull;
 public final class BuiltInsLoaderImpl implements BuiltInsLoader {
 
     /* renamed from: a  reason: collision with root package name */
-    private final BuiltInsResourceLoader f34345a = new BuiltInsResourceLoader();
+    private final BuiltInsResourceLoader f34365a = new BuiltInsResourceLoader();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     /* synthetic */ class a extends FunctionReferenceImpl implements Function1 {
@@ -112,6 +112,6 @@ public final class BuiltInsLoaderImpl implements BuiltInsLoader {
         Intrinsics.checkNotNullParameter(classDescriptorFactories, "classDescriptorFactories");
         Intrinsics.checkNotNullParameter(platformDependentDeclarationFilter, "platformDependentDeclarationFilter");
         Intrinsics.checkNotNullParameter(additionalClassPartsProvider, "additionalClassPartsProvider");
-        return createBuiltInPackageFragmentProvider(storageManager, builtInsModule, StandardNames.BUILT_INS_PACKAGE_FQ_NAMES, classDescriptorFactories, platformDependentDeclarationFilter, additionalClassPartsProvider, z10, new a(this.f34345a));
+        return createBuiltInPackageFragmentProvider(storageManager, builtInsModule, StandardNames.BUILT_INS_PACKAGE_FQ_NAMES, classDescriptorFactories, platformDependentDeclarationFilter, additionalClassPartsProvider, z10, new a(this.f34365a));
     }
 }

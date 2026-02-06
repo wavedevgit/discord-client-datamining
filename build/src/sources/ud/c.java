@@ -10,84 +10,84 @@ import ne.w0;
 public class c implements pd.a {
 
     /* renamed from: a  reason: collision with root package name */
-    public final long f51276a;
+    public final long f51317a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final long f51277b;
+    public final long f51318b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final long f51278c;
+    public final long f51319c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final boolean f51279d;
+    public final boolean f51320d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final long f51280e;
+    public final long f51321e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final long f51281f;
+    public final long f51322f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final long f51282g;
+    public final long f51323g;
 
     /* renamed from: h  reason: collision with root package name */
-    public final long f51283h;
+    public final long f51324h;
 
     /* renamed from: i  reason: collision with root package name */
-    public final o f51284i;
+    public final o f51325i;
 
     /* renamed from: j  reason: collision with root package name */
-    public final l f51285j;
+    public final l f51326j;
 
     /* renamed from: k  reason: collision with root package name */
-    public final Uri f51286k;
+    public final Uri f51327k;
 
     /* renamed from: l  reason: collision with root package name */
-    public final h f51287l;
+    public final h f51328l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final List f51288m;
+    private final List f51329m;
 
     public c(long j10, long j11, long j12, boolean z10, long j13, long j14, long j15, long j16, h hVar, o oVar, l lVar, Uri uri, List list) {
         List list2;
-        this.f51276a = j10;
-        this.f51277b = j11;
-        this.f51278c = j12;
-        this.f51279d = z10;
-        this.f51280e = j13;
-        this.f51281f = j14;
-        this.f51282g = j15;
-        this.f51283h = j16;
-        this.f51287l = hVar;
-        this.f51284i = oVar;
-        this.f51286k = uri;
-        this.f51285j = lVar;
+        this.f51317a = j10;
+        this.f51318b = j11;
+        this.f51319c = j12;
+        this.f51320d = z10;
+        this.f51321e = j13;
+        this.f51322f = j14;
+        this.f51323g = j15;
+        this.f51324h = j16;
+        this.f51328l = hVar;
+        this.f51325i = oVar;
+        this.f51327k = uri;
+        this.f51326j = lVar;
         if (list == null) {
             list2 = Collections.EMPTY_LIST;
         } else {
             list2 = list;
         }
-        this.f51288m = list2;
+        this.f51329m = list2;
     }
 
     private static ArrayList c(List list, LinkedList linkedList) {
         pd.c cVar = (pd.c) linkedList.poll();
-        int i10 = cVar.f45002d;
+        int i10 = cVar.f43799d;
         ArrayList arrayList = new ArrayList();
         do {
-            int i11 = cVar.f45003e;
+            int i11 = cVar.f43800e;
             a aVar = (a) list.get(i11);
-            List list2 = aVar.f51268c;
+            List list2 = aVar.f51309c;
             ArrayList arrayList2 = new ArrayList();
             do {
-                arrayList2.add((j) list2.get(cVar.f45004i));
+                arrayList2.add((j) list2.get(cVar.f43801i));
                 cVar = (pd.c) linkedList.poll();
-                if (cVar.f45002d != i10) {
+                if (cVar.f43799d != i10) {
                     break;
                 }
-            } while (cVar.f45003e == i11);
-            arrayList.add(new a(aVar.f51266a, aVar.f51267b, arrayList2, aVar.f51269d, aVar.f51270e, aVar.f51271f));
-        } while (cVar.f45002d == i10);
+            } while (cVar.f43800e == i11);
+            arrayList.add(new a(aVar.f51307a, aVar.f51308b, arrayList2, aVar.f51310d, aVar.f51311e, aVar.f51312f));
+        } while (cVar.f43799d == i10);
         linkedList.addFirst(cVar);
         return arrayList;
     }
@@ -107,44 +107,44 @@ public class c implements pd.a {
             if (i10 >= e()) {
                 break;
             }
-            if (((pd.c) linkedList.peek()).f45002d != i10) {
+            if (((pd.c) linkedList.peek()).f43799d != i10) {
                 long f10 = f(i10);
                 if (f10 != -9223372036854775807L) {
                     j11 += f10;
                 }
             } else {
                 g d10 = d(i10);
-                arrayList.add(new g(d10.f51311a, d10.f51312b - j11, c(d10.f51313c, linkedList), d10.f51314d));
+                arrayList.add(new g(d10.f51352a, d10.f51353b - j11, c(d10.f51354c, linkedList), d10.f51355d));
             }
             i10++;
         }
-        long j12 = this.f51277b;
+        long j12 = this.f51318b;
         if (j12 != -9223372036854775807L) {
             j10 = j12 - j11;
         }
-        return new c(this.f51276a, j10, this.f51278c, this.f51279d, this.f51280e, this.f51281f, this.f51282g, this.f51283h, this.f51287l, this.f51284i, this.f51285j, this.f51286k, arrayList);
+        return new c(this.f51317a, j10, this.f51319c, this.f51320d, this.f51321e, this.f51322f, this.f51323g, this.f51324h, this.f51328l, this.f51325i, this.f51326j, this.f51327k, arrayList);
     }
 
     public final g d(int i10) {
-        return (g) this.f51288m.get(i10);
+        return (g) this.f51329m.get(i10);
     }
 
     public final int e() {
-        return this.f51288m.size();
+        return this.f51329m.size();
     }
 
     public final long f(int i10) {
         long j10;
         long j11;
-        if (i10 == this.f51288m.size() - 1) {
-            j10 = this.f51277b;
+        if (i10 == this.f51329m.size() - 1) {
+            j10 = this.f51318b;
             if (j10 == -9223372036854775807L) {
                 return -9223372036854775807L;
             }
-            j11 = ((g) this.f51288m.get(i10)).f51312b;
+            j11 = ((g) this.f51329m.get(i10)).f51353b;
         } else {
-            j10 = ((g) this.f51288m.get(i10 + 1)).f51312b;
-            j11 = ((g) this.f51288m.get(i10)).f51312b;
+            j10 = ((g) this.f51329m.get(i10 + 1)).f51353b;
+            j11 = ((g) this.f51329m.get(i10)).f51353b;
         }
         return j10 - j11;
     }

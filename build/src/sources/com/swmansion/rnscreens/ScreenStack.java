@@ -50,9 +50,9 @@ public class ScreenStack extends ScreenContainer {
         /* JADX INFO: Access modifiers changed from: private */
         public final boolean b(ScreenFragmentWrapper screenFragmentWrapper, Screen.StackAnimation stackAnimation) {
             if (stackAnimation == null) {
-                stackAnimation = screenFragmentWrapper.h().getStackAnimation();
+                stackAnimation = screenFragmentWrapper.g().getStackAnimation();
             }
-            if ((Build.VERSION.SDK_INT >= 33 || stackAnimation == Screen.StackAnimation.f18175o || stackAnimation == Screen.StackAnimation.f18178r || stackAnimation == Screen.StackAnimation.f18179s || stackAnimation == Screen.StackAnimation.f18180t) && stackAnimation != Screen.StackAnimation.f18173e) {
+            if ((Build.VERSION.SDK_INT >= 33 || stackAnimation == Screen.StackAnimation.f18155o || stackAnimation == Screen.StackAnimation.f18158r || stackAnimation == Screen.StackAnimation.f18159s || stackAnimation == Screen.StackAnimation.f18160t) && stackAnimation != Screen.StackAnimation.f18153e) {
                 return true;
             }
             return false;
@@ -66,46 +66,46 @@ public class ScreenStack extends ScreenContainer {
     public final class DrawingOp {
 
         /* renamed from: a  reason: collision with root package name */
-        private Canvas f18215a;
+        private Canvas f18195a;
 
         /* renamed from: b  reason: collision with root package name */
-        private View f18216b;
+        private View f18196b;
 
         /* renamed from: c  reason: collision with root package name */
-        private long f18217c;
+        private long f18197c;
 
         public DrawingOp() {
         }
 
         public final void a() {
             ScreenStack.this.G(this);
-            this.f18215a = null;
-            this.f18216b = null;
-            this.f18217c = 0L;
+            this.f18195a = null;
+            this.f18196b = null;
+            this.f18197c = 0L;
         }
 
         public final Canvas b() {
-            return this.f18215a;
+            return this.f18195a;
         }
 
         public final View c() {
-            return this.f18216b;
+            return this.f18196b;
         }
 
         public final long d() {
-            return this.f18217c;
+            return this.f18197c;
         }
 
         public final void e(Canvas canvas) {
-            this.f18215a = canvas;
+            this.f18195a = canvas;
         }
 
         public final void f(View view) {
-            this.f18216b = view;
+            this.f18196b = view;
         }
 
         public final void g(long j10) {
-            this.f18217c = j10;
+            this.f18197c = j10;
         }
     }
 
@@ -113,15 +113,15 @@ public class ScreenStack extends ScreenContainer {
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f18219a;
+        public static final /* synthetic */ int[] f18199a;
 
         static {
             int[] iArr = new int[Screen.StackPresentation.values().length];
             try {
-                iArr[Screen.StackPresentation.f18186o.ordinal()] = 1;
+                iArr[Screen.StackPresentation.f18166o.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
-            f18219a = iArr;
+            f18199a = iArr;
         }
     }
 
@@ -161,7 +161,7 @@ public class ScreenStack extends ScreenContainer {
     /* JADX INFO: Access modifiers changed from: private */
     public static final boolean D(ScreenStack screenStack, ScreenFragmentWrapper it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        if (!CollectionsKt.d0(screenStack.dismissedWrappers, it) && it.h().getActivityState() != Screen.ActivityState.f18163d) {
+        if (!CollectionsKt.d0(screenStack.dismissedWrappers, it) && it.g().getActivityState() != Screen.ActivityState.f18143d) {
             return true;
         }
         return false;
@@ -170,13 +170,13 @@ public class ScreenStack extends ScreenContainer {
     /* JADX INFO: Access modifiers changed from: private */
     public static final boolean E(ScreenFragmentWrapper it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return it.i();
+        return it.h();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final boolean F(Ref.ObjectRef objectRef, ScreenStackFragmentWrapper it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        if (it != objectRef.element && it.i()) {
+        if (it != objectRef.element && it.h()) {
             return true;
         }
         return false;
@@ -191,10 +191,10 @@ public class ScreenStack extends ScreenContainer {
 
     private final void H(ScreenFragmentWrapper screenFragmentWrapper) {
         ScreenStackFragmentWrapper screenStackFragmentWrapper;
-        if (this.screenWrappers.size() > 1 && screenFragmentWrapper != null && (screenStackFragmentWrapper = this.topScreenWrapper) != null && screenStackFragmentWrapper.i()) {
+        if (this.screenWrappers.size() > 1 && screenFragmentWrapper != null && (screenStackFragmentWrapper = this.topScreenWrapper) != null && screenStackFragmentWrapper.h()) {
             ArrayList<ScreenFragmentWrapper> arrayList = this.screenWrappers;
             for (ScreenFragmentWrapper screenFragmentWrapper2 : CollectionsKt.S(CollectionsKt.T0(arrayList, kotlin.ranges.d.u(0, arrayList.size() - 1)))) {
-                screenFragmentWrapper2.h().changeAccessibilityMode(4);
+                screenFragmentWrapper2.g().changeAccessibilityMode(4);
                 if (Intrinsics.areEqual(screenFragmentWrapper2, screenFragmentWrapper)) {
                     break;
                 }
@@ -212,7 +212,7 @@ public class ScreenStack extends ScreenContainer {
         Intrinsics.checkNotNull(context, "null cannot be cast to non-null type com.facebook.react.bridge.ReactContext");
         EventDispatcher eventDispatcherForReactTag = UIManagerHelper.getEventDispatcherForReactTag((ReactContext) context, getId());
         if (eventDispatcherForReactTag != null) {
-            eventDispatcherForReactTag.dispatchEvent(new ln.t(surfaceId, getId()));
+            eventDispatcherForReactTag.dispatchEvent(new nn.t(surfaceId, getId()));
         }
     }
 
@@ -236,7 +236,7 @@ public class ScreenStack extends ScreenContainer {
     /* JADX INFO: Access modifiers changed from: private */
     public static final boolean w(Ref.ObjectRef objectRef, ScreenStack screenStack, ScreenFragmentWrapper it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        if ((it != objectRef.element && !CollectionsKt.d0(screenStack.dismissedWrappers, it)) || it.h().getActivityState() == Screen.ActivityState.f18163d) {
+        if ((it != objectRef.element && !CollectionsKt.d0(screenStack.dismissedWrappers, it)) || it.g().getActivityState() == Screen.ActivityState.f18143d) {
             return true;
         }
         return false;
@@ -259,9 +259,9 @@ public class ScreenStack extends ScreenContainer {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void z(ScreenFragmentWrapper screenFragmentWrapper) {
-        Screen h10;
-        if (screenFragmentWrapper != null && (h10 = screenFragmentWrapper.h()) != null) {
-            h10.bringToFront();
+        Screen g10;
+        if (screenFragmentWrapper != null && (g10 = screenFragmentWrapper.g()) != null) {
+            g10.bringToFront();
         }
     }
 
@@ -322,7 +322,7 @@ public class ScreenStack extends ScreenContainer {
     @NotNull
     public final Screen getRootScreen() {
         Object obj;
-        Screen h10;
+        Screen g10;
         Iterator<T> it = this.screenWrappers.iterator();
         while (true) {
             if (it.hasNext()) {
@@ -336,8 +336,8 @@ public class ScreenStack extends ScreenContainer {
             }
         }
         ScreenFragmentWrapper screenFragmentWrapper = (ScreenFragmentWrapper) obj;
-        if (screenFragmentWrapper != null && (h10 = screenFragmentWrapper.h()) != null) {
-            return h10;
+        if (screenFragmentWrapper != null && (g10 = screenFragmentWrapper.g()) != null) {
+            return g10;
         }
         throw new IllegalStateException("[RNScreens] Stack has no root screen set");
     }
@@ -346,7 +346,7 @@ public class ScreenStack extends ScreenContainer {
     public Screen getTopScreen() {
         ScreenStackFragmentWrapper screenStackFragmentWrapper = this.topScreenWrapper;
         if (screenStackFragmentWrapper != null) {
-            return screenStackFragmentWrapper.h();
+            return screenStackFragmentWrapper.g();
         }
         return null;
     }
@@ -362,7 +362,7 @@ public class ScreenStack extends ScreenContainer {
     @Override // com.swmansion.rnscreens.ScreenContainer
     protected void notifyContainerUpdate() {
         for (ScreenStackFragmentWrapper screenStackFragmentWrapper : this.stack) {
-            screenStackFragmentWrapper.m();
+            screenStackFragmentWrapper.l();
         }
     }
 
@@ -410,9 +410,9 @@ public class ScreenStack extends ScreenContainer {
     public void startViewTransition(@NotNull View view) {
         ChildrenDrawingOrderStrategy childrenDrawingOrderStrategy;
         Intrinsics.checkNotNullParameter(view, "view");
-        if (view instanceof on.d) {
+        if (view instanceof qn.d) {
             super.startViewTransition(view);
-            if (((on.d) view).getFragment$react_native_screens_release().isRemoving()) {
+            if (((qn.d) view).getFragment$react_native_screens_release().isRemoving()) {
                 this.disappearingTransitioningChildren.add(view);
             }
             if (!this.disappearingTransitioningChildren.isEmpty() && (childrenDrawingOrderStrategy = this.childrenDrawingOrderStrategy) != null) {
@@ -430,7 +430,7 @@ public class ScreenStack extends ScreenContainer {
     @NotNull
     public ScreenStackFragmentWrapper adapt(@NotNull Screen screen) {
         Intrinsics.checkNotNullParameter(screen, "screen");
-        if (a.f18219a[screen.getStackPresentation().ordinal()] == 1) {
+        if (a.f18199a[screen.getStackPresentation().ordinal()] == 1) {
             return new n0(screen);
         }
         return new n0(screen);

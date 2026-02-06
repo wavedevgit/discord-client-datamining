@@ -1,33 +1,120 @@
 package rs;
 
 import java.util.ArrayList;
-import kotlin.jvm.internal.DefaultConstructorMarker;
-import kotlin.jvm.internal.Intrinsics;
+import java.util.Collection;
+import java.util.List;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
+import kotlinx.coroutines.flow.Flow;
+import kotlinx.coroutines.flow.FlowCollector;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class k {
-    public static /* synthetic */ Object b(Object obj, int i10, DefaultConstructorMarker defaultConstructorMarker) {
+public abstract /* synthetic */ class k {
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a extends kotlin.coroutines.jvm.internal.d {
+
+        /* renamed from: d  reason: collision with root package name */
+        Object f49292d;
+
+        /* renamed from: e  reason: collision with root package name */
+        /* synthetic */ Object f49293e;
+
+        /* renamed from: i  reason: collision with root package name */
+        int f49294i;
+
+        a(Continuation continuation) {
+            super(continuation);
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.a
+        public final Object invokeSuspend(Object obj) {
+            this.f49293e = obj;
+            this.f49294i |= Integer.MIN_VALUE;
+            return g.J(null, null, this);
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class b implements FlowCollector {
+
+        /* renamed from: d  reason: collision with root package name */
+        final /* synthetic */ Collection f49295d;
+
+        b(Collection collection) {
+            this.f49295d = collection;
+        }
+
+        @Override // kotlinx.coroutines.flow.FlowCollector
+        public final Object emit(Object obj, Continuation continuation) {
+            this.f49295d.add(obj);
+            return Unit.f32008a;
+        }
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:10:0x0023  */
+    /* JADX WARN: Removed duplicated region for block: B:15:0x0035  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public static final java.lang.Object a(kotlinx.coroutines.flow.Flow r4, java.util.Collection r5, kotlin.coroutines.Continuation r6) {
+        /*
+            boolean r0 = r6 instanceof rs.k.a
+            if (r0 == 0) goto L13
+            r0 = r6
+            rs.k$a r0 = (rs.k.a) r0
+            int r1 = r0.f49294i
+            r2 = -2147483648(0xffffffff80000000, float:-0.0)
+            r3 = r1 & r2
+            if (r3 == 0) goto L13
+            int r1 = r1 - r2
+            r0.f49294i = r1
+            goto L18
+        L13:
+            rs.k$a r0 = new rs.k$a
+            r0.<init>(r6)
+        L18:
+            java.lang.Object r6 = r0.f49293e
+            java.lang.Object r1 = wr.b.f()
+            int r2 = r0.f49294i
+            r3 = 1
+            if (r2 == 0) goto L35
+            if (r2 != r3) goto L2d
+            java.lang.Object r4 = r0.f49292d
+            java.util.Collection r4 = (java.util.Collection) r4
+            kotlin.c.b(r6)
+            return r4
+        L2d:
+            java.lang.IllegalStateException r4 = new java.lang.IllegalStateException
+            java.lang.String r5 = "call to 'resume' before 'invoke' with coroutine"
+            r4.<init>(r5)
+            throw r4
+        L35:
+            kotlin.c.b(r6)
+            rs.k$b r6 = new rs.k$b
+            r6.<init>(r5)
+            r0.f49292d = r5
+            r0.f49294i = r3
+            java.lang.Object r4 = r4.collect(r6, r0)
+            if (r4 != r1) goto L48
+            return r1
+        L48:
+            return r5
+        */
+        throw new UnsupportedOperationException("Method not decompiled: rs.k.a(kotlinx.coroutines.flow.Flow, java.util.Collection, kotlin.coroutines.Continuation):java.lang.Object");
+    }
+
+    public static final Object b(Flow flow, List list, Continuation continuation) {
+        return g.J(flow, list, continuation);
+    }
+
+    public static /* synthetic */ Object c(Flow flow, List list, Continuation continuation, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            obj = null;
+            list = new ArrayList();
         }
-        return a(obj);
-    }
-
-    public static final Object c(Object obj, Object obj2) {
-        if (obj == null) {
-            return a(obj2);
-        }
-        if (obj instanceof ArrayList) {
-            Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type java.util.ArrayList<E of kotlinx.coroutines.internal.InlineList>");
-            ((ArrayList) obj).add(obj2);
-            return a(obj);
-        }
-        ArrayList arrayList = new ArrayList(4);
-        arrayList.add(obj);
-        arrayList.add(obj2);
-        return a(arrayList);
-    }
-
-    public static Object a(Object obj) {
-        return obj;
+        return g.K(flow, list, continuation);
     }
 }

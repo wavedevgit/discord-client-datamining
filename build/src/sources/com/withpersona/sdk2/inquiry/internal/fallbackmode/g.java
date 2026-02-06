@@ -7,21 +7,21 @@ import com.withpersona.sdk2.inquiry.internal.fallbackmode.i;
 public final class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final zq.h f18908a;
+    private final br.h f18888a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final zq.h f18909b;
+    private final br.h f18889b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final zq.h f18910c;
+    private final br.h f18890c;
 
-    public g(zq.h hVar, zq.h hVar2, zq.h hVar3) {
-        this.f18908a = hVar;
-        this.f18909b = hVar2;
-        this.f18910c = hVar3;
+    public g(br.h hVar, br.h hVar2, br.h hVar3) {
+        this.f18888a = hVar;
+        this.f18889b = hVar2;
+        this.f18890c = hVar3;
     }
 
-    public static g a(zq.h hVar, zq.h hVar2, zq.h hVar3) {
+    public static g a(br.h hVar, br.h hVar2, br.h hVar3) {
         return new g(hVar, hVar2, hVar3);
     }
 
@@ -30,6 +30,6 @@ public final class g {
     }
 
     public f b(int i10) {
-        return c((w) this.f18908a.get(), (Context) this.f18909b.get(), (i.a) this.f18910c.get(), i10);
+        return c((w) this.f18888a.get(), (Context) this.f18889b.get(), (i.a) this.f18890c.get(), i10);
     }
 }

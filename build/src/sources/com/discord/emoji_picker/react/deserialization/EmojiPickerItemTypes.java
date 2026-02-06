@@ -4,7 +4,7 @@ import kotlin.Metadata;
 import kotlin.enums.EnumEntries;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import org.jetbrains.annotations.NotNull;
-import vr.a;
+import xr.a;
 /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
 /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 @Metadata(d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0010\b\u0080\u0081\u0002\u0018\u0000 \u00142\b\u0012\u0004\u0012\u00020\u00000\u0001:\u0001\u0014B\u001d\b\u0002\u0012\b\b\u0002\u0010\u0002\u001a\u00020\u0003\u0012\b\b\u0002\u0010\u0004\u001a\u00020\u0005¢\u0006\u0004\b\u0006\u0010\u0007R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\b\u0010\tR\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\n\u0010\u000bj\u0002\b\fj\u0002\b\rj\u0002\b\u000ej\u0002\b\u000fj\u0002\b\u0010j\u0002\b\u0011j\u0002\b\u0012j\u0002\b\u0013¨\u0006\u0015"}, d2 = {"Lcom/discord/emoji_picker/react/deserialization/EmojiPickerItemTypes;", "", "unsupported", "", "noop", "", "<init>", "(Ljava/lang/String;ILjava/lang/String;Z)V", "getUnsupported", "()Ljava/lang/String;", "getNoop", "()Z", "PLACEHOLDER", "TITLE", "EMOJI_ROW", "EMOJI_ROW_SLIM", "EMOJI_ROW_NSFW", "FOOTER_UPSELL", "PREMIUM_INLINE_ROADBLOCK", "NATIVE_SECTION", "Companion", "emoji_picker_release"}, k = 1, mv = {2, 1, 0}, xi = 48)

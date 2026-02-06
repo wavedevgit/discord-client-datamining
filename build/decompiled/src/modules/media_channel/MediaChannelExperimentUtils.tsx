@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.GuildMediaExperiment = var4;
     var4 = function arg0() {
-        _fun65705: for (var _fun65705_ip = 0;;) switch (_fun65705_ip) {
+        _fun65733: for (var _fun65733_ip = 0;;) switch (_fun65733_ip) {
             case 0:
                 var3 = arg0;
                 var6 = _closure1_slot1;
@@ -84,15 +84,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var2 == var3;
                 var1 = undefined;
                 if (var8) {
-                    _fun65705_ip = 34;
-                    continue _fun65705
+                    _fun65733_ip = 34;
+                    continue _fun65733
                 }
             case 29:
                 var1 = var3.id;
             case 34:
                 if (!(var2 == var1)) {
-                    _fun65705_ip = 42;
-                    continue _fun65705
+                    _fun65733_ip = 42;
+                    continue _fun65733
                 }
             case 38:
                 var1 = _closure1_slot0;
@@ -108,16 +108,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var2 == var3;
                 var0 = undefined;
                 if (var4) {
-                    _fun65705_ip = 90;
-                    continue _fun65705
+                    _fun65733_ip = 90;
+                    continue _fun65733
                 }
             case 85:
                 var0 = var3.id;
             case 90:
                 var0 = var2 != var0;
                 if (!var0) {
-                    _fun65705_ip = 100;
-                    continue _fun65705
+                    _fun65733_ip = 100;
+                    continue _fun65733
                 }
             case 97:
                 var0 = var1;
@@ -156,4 +156,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isEligibleForGuildMediaChannelPostPreviewEmbed = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 3115, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 3117, 2]);

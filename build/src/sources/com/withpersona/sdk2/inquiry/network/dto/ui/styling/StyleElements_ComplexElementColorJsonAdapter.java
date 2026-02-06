@@ -41,30 +41,30 @@ public final class StyleElements_ComplexElementColorJsonAdapter extends h {
     @NotNull
     public StyleElements.ComplexElementColor fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         StyleElements.SimpleElementColorValue simpleElementColorValue = null;
         StyleElements.SimpleElementColorValue simpleElementColorValue2 = null;
         StyleElements.SimpleElementColorValue simpleElementColorValue3 = null;
         StyleElements.SimpleElementColorValue simpleElementColorValue4 = null;
         StyleElements.SimpleElementColorValue simpleElementColorValue5 = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 simpleElementColorValue = (StyleElements.SimpleElementColorValue) this.nullableSimpleElementColorValueAdapter.fromJson(reader);
-            } else if (W == 1) {
+            } else if (J == 1) {
                 simpleElementColorValue2 = (StyleElements.SimpleElementColorValue) this.nullableSimpleElementColorValueAdapter.fromJson(reader);
-            } else if (W == 2) {
+            } else if (J == 2) {
                 simpleElementColorValue3 = (StyleElements.SimpleElementColorValue) this.nullableSimpleElementColorValueAdapter.fromJson(reader);
-            } else if (W == 3) {
+            } else if (J == 3) {
                 simpleElementColorValue4 = (StyleElements.SimpleElementColorValue) this.nullableSimpleElementColorValueAdapter.fromJson(reader);
-            } else if (W == 4) {
+            } else if (J == 4) {
                 simpleElementColorValue5 = (StyleElements.SimpleElementColorValue) this.nullableSimpleElementColorValueAdapter.fromJson(reader);
             }
         }
-        reader.z();
+        reader.D();
         return new StyleElements.ComplexElementColor(simpleElementColorValue, simpleElementColorValue2, simpleElementColorValue3, simpleElementColorValue4, simpleElementColorValue5);
     }
 
@@ -73,17 +73,17 @@ public final class StyleElements_ComplexElementColorJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (complexElementColor != null) {
             writer.k();
-            writer.W("base");
+            writer.J("base");
             this.nullableSimpleElementColorValueAdapter.toJson(writer, complexElementColor.get_base());
-            writer.W("focused");
+            writer.J("focused");
             this.nullableSimpleElementColorValueAdapter.toJson(writer, complexElementColor.get_focused());
-            writer.W(AppStateModule.APP_STATE_ACTIVE);
+            writer.J(AppStateModule.APP_STATE_ACTIVE);
             this.nullableSimpleElementColorValueAdapter.toJson(writer, complexElementColor.get_active());
-            writer.W("disabled");
+            writer.J("disabled");
             this.nullableSimpleElementColorValueAdapter.toJson(writer, complexElementColor.get_disabled());
-            writer.W("errored");
+            writer.J("errored");
             this.nullableSimpleElementColorValueAdapter.toJson(writer, complexElementColor.get_errored());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

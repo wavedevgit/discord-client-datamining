@@ -7,19 +7,19 @@ import kotlin.jvm.internal.StringCompanionObject;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f55281a;
+    private final int f56012a;
 
     public b(int i10) {
-        this.f55281a = i10;
+        this.f56012a = i10;
     }
 
     public final int a() {
-        return this.f55281a;
+        return this.f56012a;
     }
 
     public String toString() {
         StringCompanionObject stringCompanionObject = StringCompanionObject.INSTANCE;
-        String format = String.format(null, "Status: %d", Arrays.copyOf(new Object[]{Integer.valueOf(this.f55281a)}, 1));
+        String format = String.format(null, "Status: %d", Arrays.copyOf(new Object[]{Integer.valueOf(this.f56012a)}, 1));
         Intrinsics.checkNotNullExpressionValue(format, "format(...)");
         return format;
     }

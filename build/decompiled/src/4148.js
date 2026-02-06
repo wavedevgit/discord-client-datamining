@@ -19,7 +19,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5.value = var2;
     var2 = '__esModule';
     var2 = var6.bind(var7)(var1, var2, var5);
-    var1.VideoTypes = var0;
+    var1.ImageTypes = var0;
     var2 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
@@ -30,193 +30,280 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot1 = var2;
     var2 = var3.bind(var0)(var2);
-    var1.VideoTypes = var2;
+    var1.ImageTypes = var2;
     var1 = {
-        'extension': 'avi',
-        'mimeType': 'video/x-msvideo',
-        'description': 'Audio Video Interleave video format'
+        'extension': 'avif',
+        'mimeType': 'image/avif',
+        'description': 'Alliance for Open Media (AOMedia) Video 1 (AV1) Image File'
     };
     var4 = {};
-    var3 = [82, 73, 70, 70, 65, 86, 73, 32, 76, 73, 83, 84];
+    var3 = [0, 0, 0];
+    var4.sequence = var3;
+    var3 = new Array(1);
+    var3[0] = var4;
+    var1.signatures = var3;
+    var2.AVIF = var1;
+    var1 = {
+        'extension': 'bmp',
+        'mimeType': 'image/bmp',
+        'description': 'A bitmap format used mostly in Windows'
+    };
+    var4 = {};
+    var3 = [66, 77];
+    var4.sequence = var3;
+    var3 = ['dib'];
+    var4.compatibleExtensions = var3;
+    var3 = new Array(1);
+    var3[0] = var4;
+    var1.signatures = var3;
+    var2.BMP = var1;
+    var1 = {
+        'extension': 'bpg',
+        'mimeType': 'image/bpg',
+        'description': 'Better Portable Graphics image format'
+    };
+    var4 = {};
+    var3 = [66, 80, 71, 251];
+    var4.sequence = var3;
+    var3 = new Array(1);
+    var3[0] = var4;
+    var1.signatures = var3;
+    var2.BPG = var1;
+    var1 = {
+        'extension': 'cr2',
+        'mimeType': 'image/x-canon-cr2',
+        'description': 'Canon digital camera RAW file'
+    };
+    var4 = {};
+    var3 = [73, 73, 42, 0, 16, 0, 0, 0, 67, 82];
+    var4.sequence = var3;
+    var3 = new Array(1);
+    var3[0] = var4;
+    var1.signatures = var3;
+    var2.CR2 = var1;
+    var1 = {
+        'extension': 'exr',
+        'mimeType': 'image/x-exr',
+        'description': 'OpenEXR bitmap image format'
+    };
+    var4 = {};
+    var3 = [118, 47, 49, 1];
+    var4.sequence = var3;
+    var3 = new Array(1);
+    var3[0] = var4;
+    var1.signatures = var3;
+    var2.EXR = var1;
+    var1 = {
+        'extension': 'gif',
+        'mimeType': 'image/gif',
+        'description': 'Image file encoded in the Graphics Interchange Format (GIF)'
+    };
+    var4 = {};
+    var3 = [71, 73, 70, 56, 55, 97];
+    var4.sequence = var3;
+    var3 = new Array(2);
+    var3[0] = var4;
+    var4 = {};
+    var5 = [71, 73, 70, 56, 57, 97];
+    var4.sequence = var5;
+    var3[1] = var4;
+    var1.signatures = var3;
+    var2.GIF = var1;
+    var1 = {
+        'extension': 'heic',
+        'mimeType': 'image/heic',
+        'description': 'A variant of the HEIF (High Efficiency Image Format) that store images on the latest Apple devices.'
+    };
+    var4 = {};
+    var3 = [102, 116, 121, 112, 104, 101, 105, 99];
+    var4.sequence = var3;
+    var5 = 4;
+    var4.offset = var5;
+    var3 = new Array(2);
+    var3[0] = var4;
+    var4 = {};
+    var6 = [102, 116, 121, 112, 109];
+    var4.sequence = var6;
+    var4.offset = var5;
+    var3[1] = var4;
+    var1.signatures = var3;
+    var2.HEIC = var1;
+    var1 = {
+        'extension': 'ico',
+        'mimeType': 'image/x-icon',
+        'description': 'Computer icon encoded in ICO file format'
+    };
+    var4 = {};
+    var3 = [0, 0, 1, 0];
+    var4.sequence = var3;
+    var3 = ['spl'];
+    var4.compatibleExtensions = var3;
+    var3 = new Array(1);
+    var3[0] = var4;
+    var1.signatures = var3;
+    var2.ICO = var1;
+    var1 = {
+        'extension': 'jpeg',
+        'mimeType': 'image/jpeg',
+        'description': 'JPEG (Joint Photographic Experts Group) is a widely used lossy image compression format.'
+    };
+    var4 = {};
+    var3 = [255, 216, 255, 225, 69, 120, 105, 102, 0];
+    var4.sequence = var3;
+    var3 = [4, 5];
+    var4.skippedBytes = var3;
+    var3 = 'Digital camera JPG using Exchangeable Image File Format (EXIF)';
+    var4.description = var3;
+    var3 = new Array(8);
+    var3[0] = var4;
+    var4 = {};
+    var5 = [255, 216, 255, 232, 83, 80, 73, 70, 70, 0];
+    var4.sequence = var5;
+    var5 = [4, 5];
+    var4.skippedBytes = var5;
+    var5 = 'Still Picture Interchange File Format (SPIFF)';
+    var4.description = var5;
+    var3[1] = var4;
+    var4 = {};
+    var5 = [255, 216, 255, 224, 0, 16, 74, 70, 73, 70, 0, 0];
+    var4.sequence = var5;
+    var5 = 'JPEG raw or in the JFIF or Exif file format';
+    var4.description = var5;
+    var3[2] = var4;
+    var4 = {};
+    var6 = [255, 216, 255, 238];
+    var4.sequence = var6;
+    var4.description = var5;
+    var3[3] = var4;
+    var4 = {};
+    var6 = [255, 216, 255, 225, 69, 120, 105, 102, 0, 0];
+    var4.sequence = var6;
+    var6 = [4, 5];
+    var4.skippedBytes = var6;
+    var4.description = var5;
+    var3[4] = var4;
+    var4 = {};
+    var6 = [255, 216, 255, 224, 74, 70, 73, 70, 0];
+    var4.sequence = var6;
+    var6 = [4, 5];
+    var4.skippedBytes = var6;
+    var6 = 'JPEG/JFIF graphics file';
+    var4.description = var6;
+    var6 = ['jfif', 'jpe'];
+    var4.compatibleExtensions = var6;
+    var3[5] = var4;
+    var4 = {};
+    var6 = [255, 216, 255, 224];
+    var4.sequence = var6;
+    var4.description = var5;
+    var3[6] = var4;
+    var4 = {};
+    var5 = [255, 216];
+    var4.sequence = var5;
+    var5 = 'Generic JPEGimage file';
+    var4.description = var5;
+    var5 = ['jpe'];
+    var4.compatibleExtensions = var5;
+    var3[7] = var4;
+    var1.signatures = var3;
+    var2.JPEG = var1;
+    var1 = {
+        'extension': 'pbm',
+        'mimeType': 'image/x-portable-bitmap',
+        'description': 'PBM (Portable Bitmap) is a simple monochrome bitmap image format that uses plain text ASCII characters to represent binary image data'
+    };
+    var4 = {};
+    var3 = [80, 49, 10];
+    var4.sequence = var3;
+    var3 = 'Portable bitmap ASCII';
+    var4.description = var3;
+    var3 = new Array(2);
+    var3[0] = var4;
+    var4 = {};
+    var5 = [80, 52, 10];
+    var4.sequence = var5;
+    var5 = 'Portable bitmap binary';
+    var4.description = var5;
+    var3[1] = var4;
+    var1.signatures = var3;
+    var2.PBM = var1;
+    var1 = {
+        'extension': 'pgm',
+        'mimeType': 'image/x-portable-graymap',
+        'description': 'PGM (Portable Graymap) is a simple grayscale image format that uses ASCII text characters to represent binary image data.'
+    };
+    var4 = {};
+    var3 = [80, 50, 10];
+    var4.sequence = var3;
+    var3 = 'Portable Gray Map ASCII';
+    var4.description = var3;
+    var3 = new Array(2);
+    var3[0] = var4;
+    var4 = {};
+    var5 = [80, 53, 10];
+    var4.sequence = var5;
+    var5 = 'Portable Gray Map binary';
+    var4.description = var5;
+    var3[1] = var4;
+    var1.signatures = var3;
+    var2.PGM = var1;
+    var1 = {
+        'extension': 'png',
+        'mimeType': 'image/png',
+        'description': 'PNG (Portable Network Graphics) is a lossless image compression format that supports a wide range of color depths and transparency and is widely used for high-quality graphics.'
+    };
+    var4 = {};
+    var3 = [137, 80, 78, 71, 13, 10, 26, 10];
+    var4.sequence = var3;
+    var3 = new Array(1);
+    var3[0] = var4;
+    var1.signatures = var3;
+    var2.PNG = var1;
+    var1 = {
+        'extension': 'ppm',
+        'mimeType': 'image/x-portable-pixmap',
+        'description': 'PPM (Portable Pixmap) is a simple color image format in the Portable Network Graphics (PNG) suite.'
+    };
+    var4 = {};
+    var3 = [80, 51, 10];
+    var4.sequence = var3;
+    var3 = 'Portable Pixmap ASCII';
+    var4.description = var3;
+    var3 = new Array(2);
+    var3[0] = var4;
+    var4 = {};
+    var5 = [80, 54, 10];
+    var4.sequence = var5;
+    var5 = 'Portable Pixmap binary';
+    var4.description = var5;
+    var3[1] = var4;
+    var1.signatures = var3;
+    var2.PPM = var1;
+    var1 = {
+        'extension': 'psd',
+        'mimeType': 'image/vnd.adobe.photoshop',
+        'description': 'PSD (Photoshop Document) is an Adobe Photoshop image file format'
+    };
+    var4 = {};
+    var3 = [56, 66, 80, 83];
+    var4.sequence = var3;
+    var3 = new Array(1);
+    var3[0] = var4;
+    var1.signatures = var3;
+    var2.PSD = var1;
+    var1 = {
+        'extension': 'webp',
+        'mimeType': 'image/webp',
+        'description': 'A modern image format that provides superior lossless and lossy compression for images on the web'
+    };
+    var4 = {};
+    var3 = [82, 73, 70, 70, 87, 69, 66, 80];
     var4.sequence = var3;
     var3 = [4, 5, 6, 7];
     var4.skippedBytes = var3;
     var3 = new Array(1);
     var3[0] = var4;
     var1.signatures = var3;
-    var2.AVI = var1;
-    var1 = {
-        'extension': 'flv',
-        'mimeType': 'video/x-flv',
-        'description': 'Flash Video file'
-    };
-    var4 = {};
-    var3 = [70, 76, 86, 1];
-    var4.sequence = var3;
-    var3 = new Array(2);
-    var3[0] = var4;
-    var4 = {
-        'sequence': null,
-        'description': 'ISO Media, MPEG v4 system, or iTunes AVC-LC file',
-        'offset': 4
-    };
-    var5 = [102, 116, 121, 112, 77, 52, 86, 32];
-    var4.sequence = var5;
-    var6 = 4;
-    var5 = ['mp4', 'm4v'];
-    var4.compatibleExtensions = var5;
-    var3[1] = var4;
-    var1.signatures = var3;
-    var2.FLV = var1;
-    var1 = {
-        'extension': 'm4v',
-        'mimeType': 'video/x-m4v',
-        'description': "Apple's video container format, very similar to MP4"
-    };
-    var4 = {
-        'sequence': null,
-        'description': 'MPEG-4 video | QuickTime file',
-        'offset': 4
-    };
-    var3 = [102, 116, 121, 112, 109, 112, 52, 50];
-    var4.sequence = var3;
-    var3 = ['mp4'];
-    var4.compatibleExtensions = var3;
-    var3 = new Array(2);
-    var3[0] = var4;
-    var4 = {
-        'sequence': null,
-        'description': 'ISO Media, MPEG v4 system, or iTunes AVC-LC file',
-        'offset': 4
-    };
-    var5 = [102, 116, 121, 112, 77, 52, 86, 32];
-    var4.sequence = var5;
-    var5 = ['mp4', 'flv'];
-    var4.compatibleExtensions = var5;
-    var3[1] = var4;
-    var1.signatures = var3;
-    var2.M4V = var1;
-    var1 = {
-        'extension': 'mkv',
-        'mimeType': 'video/x-matroska',
-        'description': 'MKV (Matroska Video) is a flexible, open-source media container format that supports multiple audio, video, and subtitle streams in a single file'
-    };
-    var5 = {};
-    var3 = [26, 69, 223, 163];
-    var5.sequence = var3;
-    var3 = 'EBML identifier';
-    var5.description = var3;
-    var4 = ['webm', 'mka', 'mks', 'mk3d'];
-    var5.compatibleExtensions = var4;
-    var4 = new Array(1);
-    var4[0] = var5;
-    var1.signatures = var4;
-    var2.MKV = var1;
-    var1 = {
-        'extension': 'mov',
-        'mimeType': 'video/quicktime',
-        'description': 'QuickTime movie file'
-    };
-    var5 = {};
-    var4 = [102, 116, 121, 112, 113, 116, 32, 32];
-    var5.sequence = var4;
-    var5.offset = var6;
-    var4 = new Array(2);
-    var4[0] = var5;
-    var5 = {};
-    var7 = [109, 111, 111, 118];
-    var5.sequence = var7;
-    var5.offset = var6;
-    var4[1] = var5;
-    var1.signatures = var4;
-    var2.MOV = var1;
-    var1 = {
-        'extension': 'mp4',
-        'mimeType': 'video/mp4',
-        'description': 'A multimedia container format widely used for storing audio, video, and other data, and is known for its high compression efficiency and compatibility with many devices'
-    };
-    var5 = {
-        'sequence': null,
-        'description': 'MPEG-4 video file',
-        'offset': 4
-    };
-    var4 = [102, 116, 121, 112, 77, 83, 78, 86];
-    var5.sequence = var4;
-    var4 = new Array(3);
-    var4[0] = var5;
-    var5 = {
-        'sequence': null,
-        'description': 'ISO Base Media file (MPEG-4) v1',
-        'offset': 4
-    };
-    var6 = [102, 116, 121, 112, 105, 115, 111, 109];
-    var5.sequence = var6;
-    var4[1] = var5;
-    var5 = {
-        'sequence': null,
-        'description': 'ISO Media, MPEG v4 system, or iTunes AVC-LC file',
-        'offset': 4
-    };
-    var6 = [102, 116, 121, 112, 77, 52, 86, 32];
-    var5.sequence = var6;
-    var6 = ['m4v', 'flv'];
-    var5.compatibleExtensions = var6;
-    var4[2] = var5;
-    var1.signatures = var4;
-    var2.MP4 = var1;
-    var1 = {
-        'extension': 'ogg',
-        'mimeType': 'video/ogg',
-        'description': 'Ogg Vorbis Codec compressed Multimedia file'
-    };
-    var5 = {};
-    var4 = [79, 103, 103, 83, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0];
-    var5.sequence = var4;
-    var4 = ['oga', 'ogv', 'ogx'];
-    var5.compatibleExtensions = var4;
-    var4 = new Array(1);
-    var4[0] = var5;
-    var1.signatures = var4;
-    var2.OGG = var1;
-    var1 = {
-        'extension': 'swf',
-        'mimeType': 'application/x-shockwave-flash',
-        'description': 'SWF (Shockwave Flash) is a file format for multimedia, vector graphics, and ActionScript, used for creating and delivering animations, games, and other interactive web-based content'
-    };
-    var5 = {};
-    var4 = [67, 87, 83];
-    var5.sequence = var4;
-    var4 = 'Macromedia Shockwave Flash player file (zlib compressed, SWF 6 and later)';
-    var5.description = var4;
-    var4 = new Array(3);
-    var4[0] = var5;
-    var5 = {};
-    var6 = [70, 87, 83];
-    var5.sequence = var6;
-    var6 = 'Macromedia Shockwave Flash player file (uncompressed)';
-    var5.description = var6;
-    var4[1] = var5;
-    var5 = {};
-    var7 = [90, 87, 83];
-    var5.sequence = var7;
-    var5.description = var6;
-    var4[2] = var5;
-    var1.signatures = var4;
-    var2.SWF = var1;
-    var1 = {
-        'extension': 'webm',
-        'mimeType': 'video/webm',
-        'description': 'WebM is a royalty-free, open-source media file format optimized for web delivery, using efficient VP8 video and Vorbis audio codecs'
-    };
-    var4 = {};
-    var5 = [26, 69, 223, 163];
-    var4.sequence = var5;
-    var4.description = var3;
-    var3 = ['mkv'];
-    var4.compatibleExtensions = var3;
-    var3 = new Array(1);
-    var3[0] = var4;
-    var1.signatures = var3;
-    var2.WEBM = var1;
+    var2.WEBP = var1;
     return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, [7, 6]);

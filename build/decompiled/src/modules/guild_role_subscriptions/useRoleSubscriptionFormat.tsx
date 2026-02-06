@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = _closure1_slot4;
         var3[1] = var2;
         var2 = function() { // Environment: var0
-            _fun116752: for (var _fun116752_ip = 0;;) switch (_fun116752_ip) {
+            _fun116781: for (var _fun116781_ip = 0;;) switch (_fun116781_ip) {
                 case 0:
                     var3 = _closure1_slot5;
                     var2 = var3.getGuild;
@@ -76,8 +76,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var0 != var3;
                     var0 = undefined;
                     if (!var2) {
-                        _fun116752_ip = 50;
-                        continue _fun116752
+                        _fun116781_ip = 50;
+                        continue _fun116781
                     }
                 case 35:
                     var2 = _closure1_slot4;
@@ -94,13 +94,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = new Array(1);
         var2[0] = var5;
         var0 = function() { // Environment: var0
-            _fun116753: for (var _fun116753_ip = 0;;) switch (_fun116753_ip) {
+            _fun116782: for (var _fun116782_ip = 0;;) switch (_fun116782_ip) {
                 case 0:
                     var2 = _closure2_slot1;
                     var0 = null;
                     if (!(var0 != var2)) {
-                        _fun116753_ip = 57;
-                        continue _fun116753
+                        _fun116782_ip = 57;
+                        continue _fun116782
                     }
                 case 13:
                     var4 = _closure1_slot3;
@@ -110,14 +110,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = undefined;
                     var1 = var4.bind(var1)(var3, var2);
                     if (var1) {
-                        _fun116753_ip = 57;
-                        continue _fun116753
+                        _fun116782_ip = 57;
+                        continue _fun116782
                     }
                 case 45:
                     var0 = _closure1_slot6;
                     var0 = var0.ALL_CHANNELS;
-                    _fun116753_ip = 70;
-                    continue _fun116753;
+                    _fun116782_ip = 70;
+                    continue _fun116782;
                 case 57:
                     var1 = _closure1_slot6;
                     var0 = var1.SOME_CHANNELS;

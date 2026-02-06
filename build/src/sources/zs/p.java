@@ -1,35 +1,42 @@
 package zs;
 
-import java.util.List;
-import kotlin.collections.CollectionsKt;
+import java.util.Arrays;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.TypeIntrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public abstract class p {
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final List b(o oVar) {
-        List c10 = CollectionsKt.c();
-        c(c10, oVar);
-        return CollectionsKt.a(c10);
+    public static final void a(o oVar, Function1[] alternativeFormats, Function1 primaryFormat) {
+        Intrinsics.checkNotNullParameter(oVar, "<this>");
+        Intrinsics.checkNotNullParameter(alternativeFormats, "alternativeFormats");
+        Intrinsics.checkNotNullParameter(primaryFormat, "primaryFormat");
+        if (oVar instanceof b) {
+            ((b) oVar).k((Function1[]) Arrays.copyOf(alternativeFormats, alternativeFormats.length), (Function1) TypeIntrinsics.beforeCheckcastToFunctionOfArity(primaryFormat, 1));
+            return;
+        }
+        throw new IllegalStateException("impossible");
     }
 
-    private static final void c(List list, o oVar) {
-        if (oVar instanceof e) {
-            list.add(((e) oVar).c());
-        } else if (oVar instanceof h) {
-            for (s sVar : ((h) oVar).c()) {
-                c(list, sVar);
-            }
-        } else if (!(oVar instanceof j)) {
-            if (oVar instanceof y) {
-                c(list, ((y) oVar).f());
-            } else if (oVar instanceof c) {
-                c cVar = (c) oVar;
-                c(list, cVar.d());
-                for (o oVar2 : cVar.c()) {
-                    c(list, oVar2);
-                }
-            } else if (oVar instanceof t) {
-                c(list, ((t) oVar).d());
-            }
+    public static final void b(o oVar, char c10) {
+        Intrinsics.checkNotNullParameter(oVar, "<this>");
+        oVar.r(String.valueOf(c10));
+    }
+
+    public static final void c(o oVar, String ifZero, Function1 format) {
+        Intrinsics.checkNotNullParameter(oVar, "<this>");
+        Intrinsics.checkNotNullParameter(ifZero, "ifZero");
+        Intrinsics.checkNotNullParameter(format, "format");
+        if (oVar instanceof b) {
+            ((b) oVar).b(ifZero, (Function1) TypeIntrinsics.beforeCheckcastToFunctionOfArity(format, 1));
+            return;
         }
+        throw new IllegalStateException("impossible");
+    }
+
+    public static /* synthetic */ void d(o oVar, String str, Function1 function1, int i10, Object obj) {
+        if ((i10 & 1) != 0) {
+            str = "";
+        }
+        c(oVar, str, function1);
     }
 }

@@ -1,62 +1,37 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var4 = require;
     var2 = exports;
-    var6 = dependencyMap;
-    var _closure1_slot0 = var4;
-    var _closure1_slot1 = var6;
     var0 = global;
-    var7 = var0.Object;
-    var5 = var7.defineProperty;
-    var3 = {};
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var1 = {};
     var0 = true;
-    var3.value = var0;
+    var1.value = var0;
     var0 = '__esModule';
-    var0 = var5.bind(var7)(var2, var0, var3);
+    var0 = var3.bind(var4)(var2, var0, var1);
+    var1 = dependencyMap;
     var0 = 0;
-    var5 = var6[var0];
-    var3 = metroImportDefault;
+    var3 = var1[var0];
+    var1 = require;
     var0 = undefined;
-    var3 = var3.bind(var0)(var5);
-    var7 = 1;
-    var3 = var6[var7];
-    var3 = var4.bind(var0)(var3);
-    var5 = var3.StyleSheet;
-    var3 = var3.View;
-    var _closure1_slot2 = var3;
-    var3 = 2;
-    var3 = var6[var3];
-    var3 = var4.bind(var0)(var3);
-    var3 = var3.jsx;
-    var _closure1_slot3 = var3;
-    var4 = var5.create;
-    var3 = {};
-    var6 = {};
-    var6.flex = var7;
-    var3.flex = var6;
-    var3 = var4.bind(var5)(var3);
-    var _closure1_slot4 = var3;
-    var1 = function arg0() {
-        var0 = arg0;
-        var4 = var0.children;
-        var3 = _closure1_slot3;
-        var2 = _closure1_slot2;
-        var1 = {};
-        var5 = _closure1_slot4;
-        var5 = var5.flex;
-        var1.style = var5;
-        var6 = _closure1_slot0;
-        var5 = _closure1_slot1;
-        var0 = 3;
-        var5 = var5[var0];
-        var0 = undefined;
-        var5 = var6.bind(var0)(var5);
-        var5 = var5.TEST_ID_KEYBOARD_TOOLBAR_CONTENT;
-        var1.testID = var5;
-        var1.children = var4;
-        var0 = var3.bind(var0)(var2, var1);
-        return var0;
+    var1 = var1.bind(var0)(var3);
+    var3 = var1.Platform;
+    var1 = var1.PlatformColor;
+    var1 = {};
+    var3 = {
+        'primary': '#2c2c2c',
+        'disabled': '#B0BEC5',
+        'background': '#f3f3f4',
+        'ripple': '#bcbcbcbc'
     };
-    var2.default = var1;
+    var1.light = var3;
+    var3 = {
+        'primary': '#fafafa',
+        'disabled': '#707070',
+        'background': '#2C2C2E',
+        'ripple': '#F8F8F888'
+    };
+    var1.dark = var3;
+    var2.colors = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 8571]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27]);

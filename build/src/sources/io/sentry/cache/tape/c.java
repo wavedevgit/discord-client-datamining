@@ -16,17 +16,17 @@ public abstract class c implements Iterable, Closeable {
         Object b(byte[] bArr);
     }
 
-    public static c L() {
+    public static c C() {
         return new io.sentry.cache.tape.a();
     }
 
-    public static c y(d dVar, a aVar) {
+    public static c s(d dVar, a aVar) {
         return new b(dVar, aVar);
     }
 
-    public abstract void C0(int i10);
+    public abstract void E0(int i10);
 
-    public List V(int i10) {
+    public List P(int i10) {
         int min = Math.min(i10, size());
         ArrayList arrayList = new ArrayList(min);
         Iterator it = iterator();
@@ -37,13 +37,13 @@ public abstract class c implements Iterable, Closeable {
     }
 
     public void clear() {
-        C0(size());
+        E0(size());
     }
 
-    public abstract void h(Object obj);
+    public abstract void g(Object obj);
 
-    public List o() {
-        return V(size());
+    public List p() {
+        return P(size());
     }
 
     public abstract int size();

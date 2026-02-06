@@ -6,51 +6,49 @@ import java.util.Map;
 import java.util.Queue;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public interface IScope {
-    io.sentry.protocol.c A();
+    void A(String str, Object obj);
 
-    void B(String str, Object obj);
+    void B(e1 e1Var);
 
-    void C(e1 e1Var);
+    List C();
 
-    List D();
+    io.sentry.protocol.h0 D();
 
-    io.sentry.protocol.h0 E();
+    String E();
 
-    String F();
+    void F();
 
-    void G();
+    io.sentry.featureflags.b G();
 
-    io.sentry.featureflags.b H();
+    void H(y0 y0Var);
 
-    void I(y0 y0Var);
+    void I(String str);
 
-    void J(String str);
+    z7 J();
 
-    z7 K();
+    io.sentry.protocol.x K();
 
-    io.sentry.protocol.x L();
+    s3 L();
 
-    s3 M();
+    void M(String str);
 
-    void N(String str);
+    y0 N();
 
-    y0 O();
+    List O();
 
-    List P();
+    void P(SentryEvent sentryEvent);
 
-    void Q(SentryEvent sentryEvent);
+    void Q();
 
-    void R();
+    s3 R(z3.a aVar);
 
-    s3 S(z3.a aVar);
+    void S(z3.c cVar);
 
-    void T(z3.c cVar);
+    void T(io.sentry.protocol.x xVar);
 
-    void U(io.sentry.protocol.x xVar);
+    List U();
 
-    List V();
-
-    void W(s3 s3Var);
+    void V(s3 s3Var);
 
     void a(String str, String str2);
 
@@ -66,41 +64,43 @@ public interface IScope {
 
     void f(String str, String str2);
 
+    String g();
+
     Map getExtras();
 
-    String h();
+    void h(Breadcrumb breadcrumb, Hint hint);
 
-    void i(Breadcrumb breadcrumb, Hint hint);
+    void j(Throwable th2, ISpan iSpan, String str);
 
-    void k(Throwable th2, ISpan iSpan, String str);
+    void k(io.sentry.protocol.h0 h0Var);
 
-    void l(io.sentry.protocol.h0 h0Var);
+    e1 l();
 
-    e1 m();
+    z7 m();
 
-    z7 n();
+    SentryLevel n();
 
-    SentryLevel o();
+    io.sentry.protocol.g o();
 
-    io.sentry.protocol.g p();
+    void p(io.sentry.protocol.x xVar);
 
-    void q(io.sentry.protocol.x xVar);
+    z3.d q();
 
-    z3.d r();
+    void r(k7 k7Var);
 
-    void s(k7 k7Var);
+    ISpan s();
 
-    ISpan t();
+    Queue t();
 
-    Queue u();
+    void u(List list);
 
-    void v(List list);
+    z7 v(z3.b bVar);
 
-    z7 w(z3.b bVar);
+    Map w();
 
-    Map x();
+    void x();
 
-    void y();
+    List y();
 
-    List z();
+    io.sentry.protocol.c z();
 }

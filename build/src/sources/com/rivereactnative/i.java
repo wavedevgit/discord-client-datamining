@@ -7,7 +7,7 @@ import kotlin.jvm.internal.Intrinsics;
 public final class i extends com.android.volley.n {
 
     /* renamed from: d  reason: collision with root package name */
-    private final p.b f17688d;
+    private final p.b f17668d;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public i(String url, p.b listener, p.a errorListener) {
@@ -15,7 +15,7 @@ public final class i extends com.android.volley.n {
         Intrinsics.checkNotNullParameter(url, "url");
         Intrinsics.checkNotNullParameter(listener, "listener");
         Intrinsics.checkNotNullParameter(errorListener, "errorListener");
-        this.f17688d = listener;
+        this.f17668d = listener;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -24,7 +24,7 @@ public final class i extends com.android.volley.n {
         byte[] bArr;
         if (kVar != null) {
             try {
-                bArr = kVar.f8175b;
+                bArr = kVar.f8074b;
                 if (bArr == null) {
                 }
                 com.android.volley.p c10 = com.android.volley.p.c(bArr, c6.e.e(kVar));
@@ -46,6 +46,6 @@ public final class i extends com.android.volley.n {
     @Override // com.android.volley.n
     public void deliverResponse(byte[] response) {
         Intrinsics.checkNotNullParameter(response, "response");
-        this.f17688d.a(response);
+        this.f17668d.a(response);
     }
 }

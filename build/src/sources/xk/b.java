@@ -1,108 +1,74 @@
 package xk;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b {
 
-    /* renamed from: f  reason: collision with root package name */
-    public static final b f53925f = new b(929, 3);
+import com.google.zxing.Result;
+import hk.k;
+import hk.m;
+import hk.o;
+import hk.p;
+import java.util.ArrayList;
+import java.util.Map;
+import lk.e;
+import yk.j;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+public final class b implements m {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int[] f53926a;
+    private static final Result[] f54703a = new Result[0];
 
-    /* renamed from: b  reason: collision with root package name */
-    private final int[] f53927b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final c f53928c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private final c f53929d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private final int f53930e;
-
-    private b(int i10, int i11) {
-        this.f53930e = i10;
-        this.f53926a = new int[i10];
-        this.f53927b = new int[i10];
-        int i12 = 1;
-        for (int i13 = 0; i13 < i10; i13++) {
-            this.f53926a[i13] = i12;
-            i12 = (i12 * i11) % i10;
-        }
-        for (int i14 = 0; i14 < i10 - 1; i14++) {
-            this.f53927b[this.f53926a[i14]] = i14;
-        }
-        this.f53928c = new c(this, new int[]{0});
-        this.f53929d = new c(this, new int[]{1});
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public int a(int i10, int i11) {
-        return (i10 + i11) % this.f53930e;
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public c b(int i10, int i11) {
-        if (i10 >= 0) {
-            if (i11 == 0) {
-                return this.f53928c;
+    private static Result[] b(hk.c cVar, Map map, boolean z10) {
+        ArrayList arrayList = new ArrayList();
+        al.b c10 = al.a.c(cVar, map, z10);
+        for (p[] pVarArr : c10.b()) {
+            e i10 = j.i(c10.a(), pVarArr[4], pVarArr[5], pVarArr[6], pVarArr[7], e(pVarArr), c(pVarArr));
+            Result result = new Result(i10.k(), i10.g(), pVarArr, hk.a.PDF_417);
+            result.h(o.ERROR_CORRECTION_LEVEL, i10.b());
+            result.h(o.ERRORS_CORRECTED, i10.d());
+            result.h(o.ERASURES_CORRECTED, i10.c());
+            c cVar2 = (c) i10.f();
+            if (cVar2 != null) {
+                result.h(o.PDF417_EXTRA_METADATA, cVar2);
             }
-            int[] iArr = new int[i10 + 1];
-            iArr[0] = i11;
-            return new c(this, iArr);
+            result.h(o.ORIENTATION, Integer.valueOf(c10.c()));
+            o oVar = o.SYMBOLOGY_IDENTIFIER;
+            result.h(oVar, "]L" + i10.j());
+            arrayList.add(result);
         }
-        throw new IllegalArgumentException();
+        return (Result[]) arrayList.toArray(f54703a);
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public int c(int i10) {
-        return this.f53926a[i10];
+    private static int c(p[] pVarArr) {
+        return Math.max(Math.max(d(pVarArr[0], pVarArr[4]), (d(pVarArr[6], pVarArr[2]) * 17) / 18), Math.max(d(pVarArr[1], pVarArr[5]), (d(pVarArr[7], pVarArr[3]) * 17) / 18));
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public c d() {
-        return this.f53929d;
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public int e() {
-        return this.f53930e;
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public c f() {
-        return this.f53928c;
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public int g(int i10) {
-        if (i10 != 0) {
-            return this.f53926a[(this.f53930e - this.f53927b[i10]) - 1];
-        }
-        throw new ArithmeticException();
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public int h(int i10) {
-        if (i10 != 0) {
-            return this.f53927b[i10];
-        }
-        throw new IllegalArgumentException();
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public int i(int i10, int i11) {
-        if (i10 != 0 && i11 != 0) {
-            int[] iArr = this.f53926a;
-            int[] iArr2 = this.f53927b;
-            return iArr[(iArr2[i10] + iArr2[i11]) % (this.f53930e - 1)];
+    private static int d(p pVar, p pVar2) {
+        if (pVar != null && pVar2 != null) {
+            return (int) Math.abs(pVar.c() - pVar2.c());
         }
         return 0;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public int j(int i10, int i11) {
-        int i12 = this.f53930e;
-        return ((i10 + i12) - i11) % i12;
+    private static int e(p[] pVarArr) {
+        return Math.min(Math.min(f(pVarArr[0], pVarArr[4]), (f(pVarArr[6], pVarArr[2]) * 17) / 18), Math.min(f(pVarArr[1], pVarArr[5]), (f(pVarArr[7], pVarArr[3]) * 17) / 18));
+    }
+
+    private static int f(p pVar, p pVar2) {
+        if (pVar != null && pVar2 != null) {
+            return (int) Math.abs(pVar.c() - pVar2.c());
+        }
+        return Integer.MAX_VALUE;
+    }
+
+    @Override // hk.m
+    public Result a(hk.c cVar, Map map) {
+        Result result;
+        Result[] b10 = b(cVar, map, false);
+        if (b10.length != 0 && (result = b10[0]) != null) {
+            return result;
+        }
+        throw k.a();
+    }
+
+    @Override // hk.m
+    public void reset() {
     }
 }

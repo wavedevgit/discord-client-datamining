@@ -12,45 +12,44 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = dependencyMap;
     var0 = 0;
     var4 = var3[var0];
-    var3 = metroImportDefault;
+    var3 = require;
     var0 = undefined;
     var3 = var3.bind(var0)(var4);
+    var3 = var3.Platform;
+    var3 = {};
+    var4 = 'nativeBegin';
+    var3.NATIVE_BEGIN = var4;
+    var4 = 'nativeStart';
+    var3.NATIVE_START = var4;
+    var4 = 'finalize';
+    var3.FINALIZE = var4;
+    var4 = 'longPressTouchesDown';
+    var3.LONG_PRESS_TOUCHES_DOWN = var4;
+    var4 = 'cancel';
+    var3.CANCEL = var4;
     var _closure1_slot0 = var3;
-    var1 = function arg0, arg1, arg2() {
-        _fun45364: for (var _fun45364_ip = 0;;) switch (_fun45364_ip) {
-            case 0:
-                var3 = arg0;
-                var5 = arg2;
-                if (!var5) {
-                    _fun45364_ip = 69;
-                    continue _fun45364
-                }
-            case 9:
-                var0 = global;
-                var1 = var0.Array;
-                var0 = var1.isArray;
-                var0 = var0.bind(var1)(var5);
-                var1 = arg1;
-                var2 = var3[var1];
-                if (var0) {
-                    _fun45364_ip = 44;
-                    continue _fun45364
-                }
-            case 37:
-                var0 = var2.bind(var3)(var5);
-                _fun45364_ip = 69;
-                continue _fun45364;
-            case 44:
-                var1 = var2.apply;
-                var4 = _closure1_slot0;
-                var0 = undefined;
-                var0 = var4.bind(var0)(var5);
-                var0 = var1.bind(var2)(var3, var0);
-            case 69:
-                var0 = undefined;
-                return var0;
-        }
+    var2.StateMachineEvent = var3;
+    var1 = function arg0, arg1() {
+        var1 = {};
+        var2 = _closure1_slot0;
+        var0 = var2.NATIVE_BEGIN;
+        var1.eventName = var0;
+        var0 = new Array(3);
+        var0[0] = var1;
+        var1 = {};
+        var3 = var2.LONG_PRESS_TOUCHES_DOWN;
+        var1.eventName = var3;
+        var3 = arg0;
+        var1.callback = var3;
+        var0[1] = var1;
+        var1 = {};
+        var2 = var2.FINALIZE;
+        var1.eventName = var2;
+        var2 = arg1;
+        var1.callback = var2;
+        var0[2] = var1;
+        return var0;
     };
-    var2.applyRelationProp = var1;
+    var2.getStatesConfig = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [65]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27]);

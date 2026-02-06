@@ -13,38 +13,38 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public class MenuHostHelper {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Runnable f3364a;
+    private final Runnable f3693a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final CopyOnWriteArrayList f3365b = new CopyOnWriteArrayList();
+    private final CopyOnWriteArrayList f3694b = new CopyOnWriteArrayList();
 
     /* renamed from: c  reason: collision with root package name */
-    private final Map f3366c = new HashMap();
+    private final Map f3695c = new HashMap();
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        final Lifecycle f3367a;
+        final Lifecycle f3696a;
 
         /* renamed from: b  reason: collision with root package name */
-        private androidx.lifecycle.m f3368b;
+        private androidx.lifecycle.m f3697b;
 
         a(Lifecycle lifecycle, androidx.lifecycle.m mVar) {
-            this.f3367a = lifecycle;
-            this.f3368b = mVar;
+            this.f3696a = lifecycle;
+            this.f3697b = mVar;
             lifecycle.a(mVar);
         }
 
         void a() {
-            this.f3367a.d(this.f3368b);
-            this.f3368b = null;
+            this.f3696a.d(this.f3697b);
+            this.f3697b = null;
         }
     }
 
     public MenuHostHelper(Runnable runnable) {
-        this.f3364a = runnable;
+        this.f3693a = runnable;
     }
 
     public static /* synthetic */ void a(MenuHostHelper menuHostHelper, Lifecycle.State state, MenuProvider menuProvider, LifecycleOwner lifecycleOwner, Lifecycle.a aVar) {
@@ -54,8 +54,8 @@ public class MenuHostHelper {
         } else if (aVar == Lifecycle.a.ON_DESTROY) {
             menuHostHelper.j(menuProvider);
         } else if (aVar == Lifecycle.a.d(state)) {
-            menuHostHelper.f3365b.remove(menuProvider);
-            menuHostHelper.f3364a.run();
+            menuHostHelper.f3694b.remove(menuProvider);
+            menuHostHelper.f3693a.run();
         }
     }
 
@@ -67,20 +67,20 @@ public class MenuHostHelper {
     }
 
     public void c(MenuProvider menuProvider) {
-        this.f3365b.add(menuProvider);
-        this.f3364a.run();
+        this.f3694b.add(menuProvider);
+        this.f3693a.run();
     }
 
     public void d(final MenuProvider menuProvider, LifecycleOwner lifecycleOwner) {
         c(menuProvider);
         Lifecycle lifecycle = lifecycleOwner.getLifecycle();
-        a aVar = (a) this.f3366c.remove(menuProvider);
+        a aVar = (a) this.f3695c.remove(menuProvider);
         if (aVar != null) {
             aVar.a();
         }
-        this.f3366c.put(menuProvider, new a(lifecycle, new androidx.lifecycle.m() { // from class: androidx.core.view.p
+        this.f3695c.put(menuProvider, new a(lifecycle, new androidx.lifecycle.m() { // from class: androidx.core.view.p
             @Override // androidx.lifecycle.m
-            public final void h(LifecycleOwner lifecycleOwner2, Lifecycle.a aVar2) {
+            public final void k(LifecycleOwner lifecycleOwner2, Lifecycle.a aVar2) {
                 MenuHostHelper.b(MenuHostHelper.this, menuProvider, lifecycleOwner2, aVar2);
             }
         }));
@@ -88,34 +88,34 @@ public class MenuHostHelper {
 
     public void e(final MenuProvider menuProvider, LifecycleOwner lifecycleOwner, final Lifecycle.State state) {
         Lifecycle lifecycle = lifecycleOwner.getLifecycle();
-        a aVar = (a) this.f3366c.remove(menuProvider);
+        a aVar = (a) this.f3695c.remove(menuProvider);
         if (aVar != null) {
             aVar.a();
         }
-        this.f3366c.put(menuProvider, new a(lifecycle, new androidx.lifecycle.m() { // from class: androidx.core.view.o
+        this.f3695c.put(menuProvider, new a(lifecycle, new androidx.lifecycle.m() { // from class: androidx.core.view.o
             @Override // androidx.lifecycle.m
-            public final void h(LifecycleOwner lifecycleOwner2, Lifecycle.a aVar2) {
+            public final void k(LifecycleOwner lifecycleOwner2, Lifecycle.a aVar2) {
                 MenuHostHelper.a(MenuHostHelper.this, state, menuProvider, lifecycleOwner2, aVar2);
             }
         }));
     }
 
     public void f(Menu menu, MenuInflater menuInflater) {
-        Iterator it = this.f3365b.iterator();
+        Iterator it = this.f3694b.iterator();
         while (it.hasNext()) {
             ((MenuProvider) it.next()).d(menu, menuInflater);
         }
     }
 
     public void g(Menu menu) {
-        Iterator it = this.f3365b.iterator();
+        Iterator it = this.f3694b.iterator();
         while (it.hasNext()) {
             ((MenuProvider) it.next()).a(menu);
         }
     }
 
     public boolean h(MenuItem menuItem) {
-        Iterator it = this.f3365b.iterator();
+        Iterator it = this.f3694b.iterator();
         while (it.hasNext()) {
             if (((MenuProvider) it.next()).c(menuItem)) {
                 return true;
@@ -125,18 +125,18 @@ public class MenuHostHelper {
     }
 
     public void i(Menu menu) {
-        Iterator it = this.f3365b.iterator();
+        Iterator it = this.f3694b.iterator();
         while (it.hasNext()) {
             ((MenuProvider) it.next()).b(menu);
         }
     }
 
     public void j(MenuProvider menuProvider) {
-        this.f3365b.remove(menuProvider);
-        a aVar = (a) this.f3366c.remove(menuProvider);
+        this.f3694b.remove(menuProvider);
+        a aVar = (a) this.f3695c.remove(menuProvider);
         if (aVar != null) {
             aVar.a();
         }
-        this.f3364a.run();
+        this.f3693a.run();
     }
 }

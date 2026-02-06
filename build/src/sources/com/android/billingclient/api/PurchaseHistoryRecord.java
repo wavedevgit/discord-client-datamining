@@ -9,41 +9,41 @@ import org.json.JSONObject;
 public class PurchaseHistoryRecord {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f7984a;
+    private final String f7883a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f7985b;
+    private final String f7884b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final JSONObject f7986c;
+    private final JSONObject f7885c;
 
     public PurchaseHistoryRecord(String str, String str2) {
-        this.f7984a = str;
-        this.f7985b = str2;
-        this.f7986c = new JSONObject(str);
+        this.f7883a = str;
+        this.f7884b = str2;
+        this.f7885c = new JSONObject(str);
     }
 
     private final ArrayList g() {
         ArrayList arrayList = new ArrayList();
-        if (this.f7986c.has("productIds")) {
-            JSONArray optJSONArray = this.f7986c.optJSONArray("productIds");
+        if (this.f7885c.has("productIds")) {
+            JSONArray optJSONArray = this.f7885c.optJSONArray("productIds");
             if (optJSONArray != null) {
                 for (int i10 = 0; i10 < optJSONArray.length(); i10++) {
                     arrayList.add(optJSONArray.optString(i10));
                 }
             }
-        } else if (this.f7986c.has("productId")) {
-            arrayList.add(this.f7986c.optString("productId"));
+        } else if (this.f7885c.has("productId")) {
+            arrayList.add(this.f7885c.optString("productId"));
         }
         return arrayList;
     }
 
     public String a() {
-        return this.f7986c.optString("developerPayload");
+        return this.f7885c.optString("developerPayload");
     }
 
     public String b() {
-        return this.f7984a;
+        return this.f7883a;
     }
 
     public List c() {
@@ -51,11 +51,11 @@ public class PurchaseHistoryRecord {
     }
 
     public long d() {
-        return this.f7986c.optLong("purchaseTime");
+        return this.f7885c.optLong("purchaseTime");
     }
 
     public String e() {
-        JSONObject jSONObject = this.f7986c;
+        JSONObject jSONObject = this.f7885c;
         return jSONObject.optString("token", jSONObject.optString("purchaseToken"));
     }
 
@@ -67,21 +67,21 @@ public class PurchaseHistoryRecord {
             return false;
         }
         PurchaseHistoryRecord purchaseHistoryRecord = (PurchaseHistoryRecord) obj;
-        if (TextUtils.equals(this.f7984a, purchaseHistoryRecord.b()) && TextUtils.equals(this.f7985b, purchaseHistoryRecord.f())) {
+        if (TextUtils.equals(this.f7883a, purchaseHistoryRecord.b()) && TextUtils.equals(this.f7884b, purchaseHistoryRecord.f())) {
             return true;
         }
         return false;
     }
 
     public String f() {
-        return this.f7985b;
+        return this.f7884b;
     }
 
     public int hashCode() {
-        return this.f7984a.hashCode();
+        return this.f7883a.hashCode();
     }
 
     public String toString() {
-        return "PurchaseHistoryRecord. Json: ".concat(String.valueOf(this.f7984a));
+        return "PurchaseHistoryRecord. Json: ".concat(String.valueOf(this.f7883a));
     }
 }

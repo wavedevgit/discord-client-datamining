@@ -1,22 +1,21 @@
 package oi;
+
+import java.math.BigDecimal;
+import java.math.BigInteger;
+import java.math.RoundingMode;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class a {
-    public static int a(boolean z10, boolean z11) {
-        if (z10 == z11) {
-            return 0;
-        }
-        if (z10) {
-            return 1;
-        }
-        return -1;
-    }
 
-    public static boolean b(boolean[] zArr, boolean z10) {
-        for (boolean z11 : zArr) {
-            if (z11 == z10) {
-                return true;
-            }
-        }
-        return false;
+    /* renamed from: a  reason: collision with root package name */
+    static final BigInteger f42770a = new BigInteger("16a09e667f3bcc908b2fb1366ea957d3e3adec17512775099da2f590b0667322a", 16);
+
+    /* renamed from: b  reason: collision with root package name */
+    private static final double f42771b = Math.log(10.0d);
+
+    /* renamed from: c  reason: collision with root package name */
+    private static final double f42772c = Math.log(2.0d);
+
+    public static BigInteger a(BigInteger bigInteger, BigInteger bigInteger2, RoundingMode roundingMode) {
+        return new BigDecimal(bigInteger).divide(new BigDecimal(bigInteger2), 0, roundingMode).toBigIntegerExact();
     }
 }

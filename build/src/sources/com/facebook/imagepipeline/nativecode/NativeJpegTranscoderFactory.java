@@ -4,27 +4,27 @@ package com.facebook.imagepipeline.nativecode;
 public class NativeJpegTranscoderFactory implements za.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f10645a;
+    private final int f10544a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f10646b;
+    private final boolean f10545b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f10647c;
+    private final boolean f10546c;
 
     @o8.d
     public NativeJpegTranscoderFactory(int i10, boolean z10, boolean z11) {
-        this.f10645a = i10;
-        this.f10646b = z10;
-        this.f10647c = z11;
+        this.f10544a = i10;
+        this.f10545b = z10;
+        this.f10546c = z11;
     }
 
     @Override // za.d
     @o8.d
     public za.c createImageTranscoder(fa.c cVar, boolean z10) {
-        if (cVar != fa.b.f22696b) {
+        if (cVar != fa.b.f22997b) {
             return null;
         }
-        return new NativeJpegTranscoder(z10, this.f10645a, this.f10646b, this.f10647c);
+        return new NativeJpegTranscoder(z10, this.f10544a, this.f10545b, this.f10546c);
     }
 }

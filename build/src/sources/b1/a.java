@@ -6,16 +6,16 @@ import kotlin.jvm.internal.FloatCompanionObject;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final C0094a f6084a = new C0094a(null);
+    public static final C0094a f6377a = new C0094a(null);
 
     /* renamed from: b  reason: collision with root package name */
-    private static final long f6085b = b.a(0.0f, 0.0f);
+    private static final long f6378b = b.a(0.0f, 0.0f);
 
     /* renamed from: c  reason: collision with root package name */
-    private static final long f6086c = b.a(Float.POSITIVE_INFINITY, Float.POSITIVE_INFINITY);
+    private static final long f6379c = b.a(Float.POSITIVE_INFINITY, Float.POSITIVE_INFINITY);
 
     /* renamed from: d  reason: collision with root package name */
-    private static final long f6087d = b.a(Float.NaN, Float.NaN);
+    private static final long f6380d = b.a(Float.NaN, Float.NaN);
 
     /* renamed from: b1.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -29,7 +29,7 @@ public abstract class a {
     }
 
     public static final float b(long j10) {
-        if (j10 != f6087d) {
+        if (j10 != f6380d) {
             FloatCompanionObject floatCompanionObject = FloatCompanionObject.INSTANCE;
             return Float.intBitsToFloat((int) (j10 >> 32));
         }
@@ -37,7 +37,7 @@ public abstract class a {
     }
 
     public static final float c(long j10) {
-        if (j10 != f6087d) {
+        if (j10 != f6380d) {
             FloatCompanionObject floatCompanionObject = FloatCompanionObject.INSTANCE;
             return Float.intBitsToFloat((int) (j10 & 4294967295L));
         }

@@ -155,4 +155,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.fetchActivityStatistics = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 3993, 660, 667, 507, 806, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 3994, 660, 667, 507, 806, 2]);

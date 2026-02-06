@@ -22,7 +22,7 @@ import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class DebugCorePackage extends BaseReactPackage implements ViewManagerOnDemandReactPackage {
     @NotNull
-    private final Lazy viewManagersMap$delegate = or.l.b(or.o.f44233i, new Function0() { // from class: com.facebook.react.b
+    private final Lazy viewManagersMap$delegate = qr.l.b(qr.o.f48045i, new Function0() { // from class: com.facebook.react.b
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             Map viewManagersMap_delegate$lambda$1;
@@ -42,7 +42,7 @@ public final class DebugCorePackage extends BaseReactPackage implements ViewMana
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Map viewManagersMap_delegate$lambda$1() {
-        return o0.f(or.v.a(DebuggingOverlayManager.REACT_CLASS, ModuleSpec.Companion.viewManagerSpec(new Provider() { // from class: com.facebook.react.d
+        return o0.f(qr.v.a(DebuggingOverlayManager.REACT_CLASS, ModuleSpec.Companion.viewManagerSpec(new Provider() { // from class: com.facebook.react.d
             @Override // javax.inject.Provider
             public final Object get() {
                 NativeModule viewManagersMap_delegate$lambda$1$lambda$0;

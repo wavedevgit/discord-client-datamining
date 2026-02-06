@@ -1,29 +1,29 @@
 package com.google.android.play.core.assetpacks;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class s2 implements wh.t {
+public final class s2 implements xh.t {
 
     /* renamed from: a  reason: collision with root package name */
-    private final wh.w f16010a;
+    private final xh.w f15990a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final wh.w f16011b;
+    private final xh.w f15991b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final wh.w f16012c;
+    private final xh.w f15992c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final wh.w f16013d;
+    private final xh.w f15993d;
 
-    public s2(wh.w wVar, wh.w wVar2, wh.w wVar3, wh.w wVar4) {
-        this.f16010a = wVar;
-        this.f16011b = wVar2;
-        this.f16012c = wVar3;
-        this.f16013d = wVar4;
+    public s2(xh.w wVar, xh.w wVar2, xh.w wVar3, xh.w wVar4) {
+        this.f15990a = wVar;
+        this.f15991b = wVar2;
+        this.f15992c = wVar3;
+        this.f15993d = wVar4;
     }
 
-    @Override // wh.w
+    @Override // xh.w
     public final /* bridge */ /* synthetic */ Object a() {
-        Object a10 = this.f16010a.a();
-        return new r2((n0) a10, wh.r.c(wh.v.a(this.f16011b)), (b2) this.f16012c.a(), wh.r.c(wh.v.a(this.f16013d)));
+        Object a10 = this.f15990a.a();
+        return new r2((n0) a10, xh.r.c(xh.v.a(this.f15991b)), (b2) this.f15992c.a(), xh.r.c(xh.v.a(this.f15993d)));
     }
 }

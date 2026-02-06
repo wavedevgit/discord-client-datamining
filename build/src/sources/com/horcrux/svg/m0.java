@@ -3,14 +3,14 @@ package com.horcrux.svg;
 class m0 {
 
     /* renamed from: a  reason: collision with root package name */
-    double f16990a;
+    double f16970a;
 
     /* renamed from: b  reason: collision with root package name */
-    double f16991b;
+    double f16971b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public m0(double d10, double d11) {
-        this.f16990a = d10;
-        this.f16991b = d11;
+        this.f16970a = d10;
+        this.f16971b = d11;
     }
 }

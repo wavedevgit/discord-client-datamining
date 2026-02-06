@@ -21,23 +21,23 @@ import org.jetbrains.annotations.NotNull;
 public final class k extends ReactViewGroup implements ViewTreeObserver.OnPreDrawListener {
 
     /* renamed from: d  reason: collision with root package name */
-    private o f18453d;
+    private o f18433d;
 
     /* renamed from: e  reason: collision with root package name */
-    private a f18454e;
+    private a f18434e;
 
     /* renamed from: i  reason: collision with root package name */
-    private m f18455i;
+    private m f18435i;
 
     /* renamed from: o  reason: collision with root package name */
-    private View f18456o;
+    private View f18436o;
 
     /* renamed from: p  reason: collision with root package name */
-    private StateWrapper f18457p;
+    private StateWrapper f18437p;
 
     public k(Context context) {
         super(context);
-        this.f18453d = o.f18470d;
+        this.f18433d = o.f18450d;
     }
 
     private final View e() {
@@ -51,21 +51,21 @@ public final class k extends ReactViewGroup implements ViewTreeObserver.OnPreDra
 
     private final boolean f() {
         a e10;
-        View view = this.f18456o;
-        if (view == null || (e10 = h.e(view)) == null || Intrinsics.areEqual(this.f18454e, e10)) {
+        View view = this.f18436o;
+        if (view == null || (e10 = h.e(view)) == null || Intrinsics.areEqual(this.f18434e, e10)) {
             return false;
         }
-        this.f18454e = e10;
+        this.f18434e = e10;
         g();
         return true;
     }
 
     private final void g() {
-        a aVar = this.f18454e;
+        a aVar = this.f18434e;
         if (aVar != null) {
-            m mVar = this.f18455i;
+            m mVar = this.f18435i;
             if (mVar == null) {
-                l lVar = l.f18459e;
+                l lVar = l.f18439e;
                 mVar = new m(lVar, lVar, lVar, lVar);
             }
             StateWrapper stateWrapper = getStateWrapper();
@@ -76,7 +76,7 @@ public final class k extends ReactViewGroup implements ViewTreeObserver.OnPreDra
                 stateWrapper.updateState(createMap);
                 return;
             }
-            n nVar = new n(aVar, this.f18453d, mVar);
+            n nVar = new n(aVar, this.f18433d, mVar);
             ReactContext a10 = r.a(this);
             final UIManagerModule uIManagerModule = (UIManagerModule) a10.getNativeModule(UIManagerModule.class);
             if (uIManagerModule != null) {
@@ -123,7 +123,7 @@ public final class k extends ReactViewGroup implements ViewTreeObserver.OnPreDra
                 throw th2;
             }
         }
-        Unit unit = Unit.f31988a;
+        Unit unit = Unit.f32008a;
         reentrantLock.unlock();
         if (j10 >= 500000000) {
             Log.w("SafeAreaView", "Timed out waiting for layout.");
@@ -138,7 +138,7 @@ public final class k extends ReactViewGroup implements ViewTreeObserver.OnPreDra
                 booleanRef.element = true;
                 condition.signal();
             }
-            Unit unit = Unit.f31988a;
+            Unit unit = Unit.f32008a;
             reentrantLock.unlock();
         } catch (Throwable th2) {
             reentrantLock.unlock();
@@ -147,7 +147,7 @@ public final class k extends ReactViewGroup implements ViewTreeObserver.OnPreDra
     }
 
     public final StateWrapper getStateWrapper() {
-        return this.f18457p;
+        return this.f18437p;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -156,7 +156,7 @@ public final class k extends ReactViewGroup implements ViewTreeObserver.OnPreDra
         ViewTreeObserver viewTreeObserver;
         super.onAttachedToWindow();
         View e10 = e();
-        this.f18456o = e10;
+        this.f18436o = e10;
         if (e10 != null && (viewTreeObserver = e10.getViewTreeObserver()) != null) {
             viewTreeObserver.addOnPreDrawListener(this);
         }
@@ -167,11 +167,11 @@ public final class k extends ReactViewGroup implements ViewTreeObserver.OnPreDra
     protected void onDetachedFromWindow() {
         ViewTreeObserver viewTreeObserver;
         super.onDetachedFromWindow();
-        View view = this.f18456o;
+        View view = this.f18436o;
         if (view != null && (viewTreeObserver = view.getViewTreeObserver()) != null) {
             viewTreeObserver.removeOnPreDrawListener(this);
         }
-        this.f18456o = null;
+        this.f18436o = null;
     }
 
     @Override // android.view.ViewTreeObserver.OnPreDrawListener
@@ -185,17 +185,17 @@ public final class k extends ReactViewGroup implements ViewTreeObserver.OnPreDra
 
     public final void setEdges(@NotNull m edges) {
         Intrinsics.checkNotNullParameter(edges, "edges");
-        this.f18455i = edges;
+        this.f18435i = edges;
         g();
     }
 
     public final void setMode(@NotNull o mode) {
         Intrinsics.checkNotNullParameter(mode, "mode");
-        this.f18453d = mode;
+        this.f18433d = mode;
         g();
     }
 
     public final void setStateWrapper(StateWrapper stateWrapper) {
-        this.f18457p = stateWrapper;
+        this.f18437p = stateWrapper;
     }
 }

@@ -40,31 +40,31 @@ public final class NextStep_Selfie_PendingPageJsonAdapter extends h {
     @NotNull
     public NextStep.Selfie.PendingPage fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         String str = null;
         String str2 = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 str = (String) this.stringAdapter.fromJson(reader);
                 if (str == null) {
-                    throw ym.c.x("title", "title", reader);
+                    throw an.c.x("title", "title", reader);
                 }
-            } else if (W == 1 && (str2 = (String) this.stringAdapter.fromJson(reader)) == null) {
-                throw ym.c.x("description", "description", reader);
+            } else if (J == 1 && (str2 = (String) this.stringAdapter.fromJson(reader)) == null) {
+                throw an.c.x("description", "description", reader);
             }
         }
-        reader.z();
+        reader.D();
         if (str != null) {
             if (str2 != null) {
                 return new NextStep.Selfie.PendingPage(str, str2);
             }
-            throw ym.c.o("description", "description", reader);
+            throw an.c.o("description", "description", reader);
         }
-        throw ym.c.o("title", "title", reader);
+        throw an.c.o("title", "title", reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -72,11 +72,11 @@ public final class NextStep_Selfie_PendingPageJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (pendingPage != null) {
             writer.k();
-            writer.W("title");
+            writer.J("title");
             this.stringAdapter.toJson(writer, pendingPage.getTitle());
-            writer.W("description");
+            writer.J("description");
             this.stringAdapter.toJson(writer, pendingPage.getDescription());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

@@ -25,15 +25,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/native/doesOrientationMatchLockState.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1() {
-        _fun64832: for (var _fun64832_ip = 0;;) switch (_fun64832_ip) {
+        _fun64860: for (var _fun64860_ip = 0;;) switch (_fun64860_ip) {
             case 0:
                 var1 = arg0;
                 var3 = arg1;
                 var0 = null;
                 var0 = var0 == var3;
                 if (var0) {
-                    _fun64832_ip = 32;
-                    continue _fun64832
+                    _fun64860_ip = 32;
+                    continue _fun64860
                 }
             case 15:
                 var2 = _closure1_slot0;
@@ -41,14 +41,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var3 === var2;
             case 32:
                 if (var0) {
-                    _fun64832_ip = 61;
-                    continue _fun64832
+                    _fun64860_ip = 61;
+                    continue _fun64860
                 }
             case 35:
                 var2 = !var1;
                 if (!var2) {
-                    _fun64832_ip = 58;
-                    continue _fun64832
+                    _fun64860_ip = 58;
+                    continue _fun64860
                 }
             case 41:
                 var4 = _closure1_slot0;
@@ -58,13 +58,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2;
             case 61:
                 if (var0) {
-                    _fun64832_ip = 87;
-                    continue _fun64832
+                    _fun64860_ip = 87;
+                    continue _fun64860
                 }
             case 64:
                 if (!var1) {
-                    _fun64832_ip = 84;
-                    continue _fun64832
+                    _fun64860_ip = 84;
+                    continue _fun64860
                 }
             case 67:
                 var2 = _closure1_slot0;
@@ -78,4 +78,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3457, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3459, 2]);

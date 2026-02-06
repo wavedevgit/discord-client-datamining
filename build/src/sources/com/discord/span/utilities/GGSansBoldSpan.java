@@ -43,13 +43,13 @@ public final class GGSansBoldSpan extends StyleSpan {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit updateDrawState$lambda$0(GGSansBoldSpan gGSansBoldSpan, TextPaint textPaint) {
         super.updateDrawState(textPaint);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit updateMeasureState$lambda$1(GGSansBoldSpan gGSansBoldSpan, TextPaint textPaint) {
         super.updateMeasureState(textPaint);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     @Override // android.text.style.StyleSpan, android.text.style.CharacterStyle

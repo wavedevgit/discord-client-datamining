@@ -4,30 +4,30 @@ package com.google.android.gms.internal.fido;
 public final class e3 {
 
     /* renamed from: c  reason: collision with root package name */
-    static final e3 f13988c;
+    static final e3 f13951c;
 
     /* renamed from: d  reason: collision with root package name */
-    static final e3 f13989d;
+    static final e3 f13952d;
 
     /* renamed from: a  reason: collision with root package name */
-    final boolean f13990a;
+    final boolean f13953a;
 
     /* renamed from: b  reason: collision with root package name */
-    final Throwable f13991b;
+    final Throwable f13954b;
 
     static {
-        if (l3.f14049o) {
-            f13989d = null;
-            f13988c = null;
+        if (l3.f14012o) {
+            f13952d = null;
+            f13951c = null;
             return;
         }
-        f13989d = new e3(false, null);
-        f13988c = new e3(true, null);
+        f13952d = new e3(false, null);
+        f13951c = new e3(true, null);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public e3(boolean z10, Throwable th2) {
-        this.f13990a = z10;
-        this.f13991b = th2;
+        this.f13953a = z10;
+        this.f13954b = th2;
     }
 }

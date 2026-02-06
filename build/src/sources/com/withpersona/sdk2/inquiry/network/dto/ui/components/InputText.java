@@ -184,35 +184,35 @@ public final class InputText implements UiComponentConfig {
             @f
             public AutofillHint fromJson(@NotNull m reader) {
                 Intrinsics.checkNotNullParameter(reader, "reader");
-                Object V = reader.V();
-                if (Intrinsics.areEqual(V, StackTraceHelper.NAME_KEY)) {
+                Object I = reader.I();
+                if (Intrinsics.areEqual(I, StackTraceHelper.NAME_KEY)) {
                     return AutofillHint.NAME;
                 }
-                if (Intrinsics.areEqual(V, "name_first")) {
+                if (Intrinsics.areEqual(I, "name_first")) {
                     return AutofillHint.NAME_FIRST;
                 }
-                if (Intrinsics.areEqual(V, "name_middle")) {
+                if (Intrinsics.areEqual(I, "name_middle")) {
                     return AutofillHint.NAME_MIDDLE;
                 }
-                if (Intrinsics.areEqual(V, "name_last")) {
+                if (Intrinsics.areEqual(I, "name_last")) {
                     return AutofillHint.NAME_LAST;
                 }
-                if (Intrinsics.areEqual(V, "email")) {
+                if (Intrinsics.areEqual(I, "email")) {
                     return AutofillHint.EMAIL;
                 }
-                if (Intrinsics.areEqual(V, "address_line_1")) {
+                if (Intrinsics.areEqual(I, "address_line_1")) {
                     return AutofillHint.ADDRESS_LINE_1;
                 }
-                if (Intrinsics.areEqual(V, "address_line_2")) {
+                if (Intrinsics.areEqual(I, "address_line_2")) {
                     return AutofillHint.ADDRESS_LINE_2;
                 }
-                if (Intrinsics.areEqual(V, "city")) {
+                if (Intrinsics.areEqual(I, "city")) {
                     return AutofillHint.CITY;
                 }
-                if (Intrinsics.areEqual(V, AdRevenueScheme.COUNTRY)) {
+                if (Intrinsics.areEqual(I, AdRevenueScheme.COUNTRY)) {
                     return AutofillHint.COUNTRY;
                 }
-                if (Intrinsics.areEqual(V, "postal_code")) {
+                if (Intrinsics.areEqual(I, "postal_code")) {
                     return AutofillHint.POSTAL_CODE;
                 }
                 return null;
@@ -226,7 +226,7 @@ public final class InputText implements UiComponentConfig {
         static {
             AutofillHint[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = vr.a.a($values);
+            $ENTRIES = xr.a.a($values);
             Companion = new Companion(null);
         }
 
@@ -310,8 +310,8 @@ public final class InputText implements UiComponentConfig {
             @NotNull
             public InputType fromJson(@NotNull m reader) {
                 Intrinsics.checkNotNullParameter(reader, "reader");
-                Object V = reader.V();
-                return Intrinsics.areEqual(V, "text") ? InputType.TEXT : Intrinsics.areEqual(V, "email") ? InputType.EMAIL : Intrinsics.areEqual(V, "number_pad") ? InputType.NUMBER_PAD : InputType.TEXT;
+                Object I = reader.I();
+                return Intrinsics.areEqual(I, "text") ? InputType.TEXT : Intrinsics.areEqual(I, "email") ? InputType.EMAIL : Intrinsics.areEqual(I, "number_pad") ? InputType.NUMBER_PAD : InputType.TEXT;
             }
         }
 
@@ -322,7 +322,7 @@ public final class InputText implements UiComponentConfig {
         static {
             InputType[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = vr.a.a($values);
+            $ENTRIES = xr.a.a($values);
             Companion = new Companion(null);
         }
 

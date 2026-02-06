@@ -14,54 +14,54 @@ import org.jetbrains.annotations.NotNull;
 public final class SubmitDocumentRequest_MetaJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f18536a;
+    private final m.b f18516a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f18537b;
+    private final h f18517b;
 
     public SubmitDocumentRequest_MetaJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("fromStep", "fromComponent");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f18536a = a10;
+        this.f18516a = a10;
         h f10 = moshi.f(String.class, x0.d(), "fromStep");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f18537b = f10;
+        this.f18517b = f10;
     }
 
     @Override // com.squareup.moshi.h
     /* renamed from: a */
     public SubmitDocumentRequest.Meta fromJson(m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         String str = null;
         String str2 = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.f18536a);
-            if (W != -1) {
-                if (W != 0) {
-                    if (W == 1 && (str2 = (String) this.f18537b.fromJson(reader)) == null) {
-                        throw ym.c.x("fromComponent", "fromComponent", reader);
+            int J = reader.J(this.f18516a);
+            if (J != -1) {
+                if (J != 0) {
+                    if (J == 1 && (str2 = (String) this.f18517b.fromJson(reader)) == null) {
+                        throw an.c.x("fromComponent", "fromComponent", reader);
                     }
                 } else {
-                    str = (String) this.f18537b.fromJson(reader);
+                    str = (String) this.f18517b.fromJson(reader);
                     if (str == null) {
-                        throw ym.c.x("fromStep", "fromStep", reader);
+                        throw an.c.x("fromStep", "fromStep", reader);
                     }
                 }
             } else {
                 reader.E0();
-                reader.P();
+                reader.S();
             }
         }
-        reader.z();
+        reader.D();
         if (str != null) {
             if (str2 != null) {
                 return new SubmitDocumentRequest.Meta(str, str2);
             }
-            throw ym.c.o("fromComponent", "fromComponent", reader);
+            throw an.c.o("fromComponent", "fromComponent", reader);
         }
-        throw ym.c.o("fromStep", "fromStep", reader);
+        throw an.c.o("fromStep", "fromStep", reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -70,11 +70,11 @@ public final class SubmitDocumentRequest_MetaJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (meta != null) {
             writer.k();
-            writer.W("fromStep");
-            this.f18537b.toJson(writer, meta.b());
-            writer.W("fromComponent");
-            this.f18537b.toJson(writer, meta.a());
-            writer.E();
+            writer.J("fromStep");
+            this.f18517b.toJson(writer, meta.b());
+            writer.J("fromComponent");
+            this.f18517b.toJson(writer, meta.a());
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

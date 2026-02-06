@@ -8,10 +8,10 @@ import com.google.android.exoplayer2.text.CueGroup;
 import com.google.android.exoplayer2.w1;
 import kotlin.jvm.internal.LongCompanionObject;
 import lc.x;
-import mi.s;
 import ne.c0;
 import ne.w0;
 import ne.y;
+import ni.s;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class n extends com.google.android.exoplayer2.f implements Handler.Callback {
     private final Handler A;
@@ -33,11 +33,11 @@ public final class n extends com.google.android.exoplayer2.f implements Handler.
     private long Q;
 
     public n(m mVar, Looper looper) {
-        this(mVar, looper, j.f55501a);
+        this(mVar, looper, j.f56232a);
     }
 
     private void a0() {
-        l0(new CueGroup(s.s(), d0(this.Q)));
+        l0(new CueGroup(s.t(), d0(this.Q)));
     }
 
     private long b0(long j10) {
@@ -49,7 +49,7 @@ public final class n extends com.google.android.exoplayer2.f implements Handler.
             }
             return this.L.e(a10 - 1);
         }
-        return this.L.f47569e;
+        return this.L.f46617e;
     }
 
     private long c0() {
@@ -91,7 +91,7 @@ public final class n extends com.google.android.exoplayer2.f implements Handler.
     }
 
     private void g0(CueGroup cueGroup) {
-        this.B.onCues(cueGroup.f12977d);
+        this.B.onCues(cueGroup.f12938d);
         this.B.onCues(cueGroup);
     }
 
@@ -177,7 +177,7 @@ public final class n extends com.google.android.exoplayer2.f implements Handler.
                 i10 = 2;
             }
             return w1.b(i10);
-        } else if (c0.r(format.f11688w)) {
+        } else if (c0.r(format.f11587w)) {
             return w1.b(1);
         } else {
             return w1.b(0);
@@ -257,7 +257,7 @@ public final class n extends com.google.android.exoplayer2.f implements Handler.
                                 this.F = true;
                             }
                         }
-                    } else if (lVar.f47569e <= j10) {
+                    } else if (lVar.f46617e <= j10) {
                         l lVar2 = this.L;
                         if (lVar2 != null) {
                             lVar2.t();
@@ -297,9 +297,9 @@ public final class n extends com.google.android.exoplayer2.f implements Handler.
                                     this.E = true;
                                     this.G = false;
                                 } else {
-                                    Format format = this.D.f36636b;
+                                    Format format = this.D.f36029b;
                                     if (format != null) {
-                                        kVar.f55502t = format.A;
+                                        kVar.f56233t = format.A;
                                         kVar.v();
                                         this.G &= !kVar.q();
                                     } else {

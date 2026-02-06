@@ -12,10 +12,10 @@ import kotlin.jvm.functions.Function1;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlinx.coroutines.CoroutineScope;
-import ms.g;
 import org.jetbrains.annotations.NotNull;
-import ur.b;
+import os.g;
 import w0.o;
+import wr.b;
 @Metadata(d1 = {"\u0000\u0016\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\u0010\t\n\u0002\b\u0002\u001a(\u0010\u0006\u001a\u0002H\u0007\"\u0004\b\u0000\u0010\u00072\u0012\u0010\b\u001a\u000e\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u0002H\u00070\tH\u0086@¢\u0006\u0002\u0010\u000b\"\u0011\u0010\u0000\u001a\u00020\u0001¢\u0006\b\n\u0000\u001a\u0004\b\u0002\u0010\u0003\"\u0011\u0010\u0004\u001a\u00020\u0001¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0003¨\u0006\f"}, d2 = {"ChoreographerFrameTicker", "Lapp/rive/core/FrameTicker;", "getChoreographerFrameTicker", "()Lapp/rive/core/FrameTicker;", "ComposeFrameTicker", "getComposeFrameTicker", "withFrameNanosChoreo", "R", "onFrame", "Lkotlin/Function1;", "", "(Lkotlin/jvm/functions/Function1;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "kotlin_release"}, k = 2, mv = {1, 9, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nFrameTicker.kt\nKotlin\n*S Kotlin\n*F\n+ 1 FrameTicker.kt\napp/rive/core/FrameTickerKt\n+ 2 CancellableContinuation.kt\nkotlinx/coroutines/CancellableContinuationKt\n*L\n1#1,49:1\n318#2,11:50\n*S KotlinDebug\n*F\n+ 1 FrameTicker.kt\napp/rive/core/FrameTickerKt\n*L\n37#1:50,11\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -34,7 +34,7 @@ public final class FrameTickerKt {
                 @Override // kotlin.jvm.functions.Function1
                 public /* bridge */ /* synthetic */ Object invoke(Object obj) {
                     invoke(((Number) obj).longValue());
-                    return Unit.f31988a;
+                    return Unit.f32008a;
                 }
 
                 public final void invoke(long j10) {
@@ -44,7 +44,7 @@ public final class FrameTickerKt {
             if (withFrameNanosChoreo == b.f()) {
                 return withFrameNanosChoreo;
             }
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
     };
     @NotNull
@@ -94,7 +94,7 @@ public final class FrameTickerKt {
                         @Override // kotlin.jvm.functions.Function1
                         public /* bridge */ /* synthetic */ Object invoke(Object obj2) {
                             invoke(((Number) obj2).longValue());
-                            return Unit.f31988a;
+                            return Unit.f32008a;
                         }
 
                         public final void invoke(long j10) {
@@ -106,22 +106,22 @@ public final class FrameTickerKt {
                         return f10;
                     }
                 }
-                return Unit.f31988a;
+                return Unit.f32008a;
             }
 
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(@NotNull CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-                return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+                return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
             }
         }
 
         @Override // app.rive.core.FrameTicker
         public final Object withFrame(@NotNull Function1<? super Long, Unit> function1, @NotNull Continuation<? super Unit> continuation) {
-            Object g10 = g.g(a.f23529x.a(), new AnonymousClass1(function1, null), continuation);
+            Object g10 = g.g(a.f23782x.a(), new AnonymousClass1(function1, null), continuation);
             if (g10 == b.f()) {
                 return g10;
             }
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
     };
 
@@ -159,7 +159,7 @@ public final class FrameTickerKt {
             r0.<init>(r6)
         L18:
             java.lang.Object r6 = r0.result
-            java.lang.Object r1 = ur.b.f()
+            java.lang.Object r1 = wr.b.f()
             int r2 = r0.label
             r3 = 1
             if (r2 == 0) goto L35
@@ -178,7 +178,7 @@ public final class FrameTickerKt {
             r0.L$0 = r5
             r0.label = r3
             kotlinx.coroutines.e r6 = new kotlinx.coroutines.e
-            kotlin.coroutines.Continuation r2 = ur.b.c(r0)
+            kotlin.coroutines.Continuation r2 = wr.b.c(r0)
             r6.<init>(r2, r3)
             r6.H()
             android.view.Choreographer r2 = android.view.Choreographer.getInstance()
@@ -189,7 +189,7 @@ public final class FrameTickerKt {
             r4.<init>()
             r6.c(r4)
             java.lang.Object r6 = r6.B()
-            java.lang.Object r2 = ur.b.f()
+            java.lang.Object r2 = wr.b.f()
             if (r6 != r2) goto L69
             kotlin.coroutines.jvm.internal.g.c(r0)
         L69:

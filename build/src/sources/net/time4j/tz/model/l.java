@@ -7,12 +7,12 @@ import java.util.List;
 import net.time4j.tz.m;
 import net.time4j.tz.p;
 import net.time4j.tz.q;
-import pt.a0;
+import rt.a0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public abstract class l implements m, Serializable {
 
     /* renamed from: d  reason: collision with root package name */
-    static final String f40274d = System.getProperty("line.separator");
+    static final String f39629d = System.getProperty("line.separator");
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static long f(int i10) {
@@ -75,8 +75,8 @@ public abstract class l implements m, Serializable {
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public static long j(nt.a aVar, nt.g gVar) {
-        return nt.c.i(a0.UNIX.p(nt.b.j(aVar.f(), aVar.t(), aVar.g()), a0.MODIFIED_JULIAN_DATE), 86400L) + (gVar.h() * 3600) + (gVar.e() * 60) + gVar.d();
+    public static long j(pt.a aVar, pt.g gVar) {
+        return pt.c.i(a0.UNIX.n(pt.b.j(aVar.f(), aVar.r(), aVar.g()), a0.MODIFIED_JULIAN_DATE), 86400L) + (gVar.h() * 3600) + (gVar.e() * 60) + gVar.d();
     }
 
     @Override // net.time4j.tz.m

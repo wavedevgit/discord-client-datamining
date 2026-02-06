@@ -10,11 +10,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = {
         '__packager_asset': true,
         'httpServerLocation': '/assets/modules/guild_role_subscriptions/native/guild_settings/welcome/images',
-        'width': 40,
-        'height': 40.5,
+        'width': 87,
+        'height': 61.5,
         'scales': null,
-        'hash': 'a3768a48fee4076951a25e660d265530',
-        'name': 'role_subscription_benefit_wise_avatar',
+        'hash': 'd8d9b21fdc821b420337e07a880866f5',
+        'name': 'asset_role_subscription_exclusive_perks',
         'type': 'png'
     };
     var4 = [2, 3];

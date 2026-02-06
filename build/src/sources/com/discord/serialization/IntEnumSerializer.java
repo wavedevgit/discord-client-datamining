@@ -1,10 +1,10 @@
 package com.discord.serialization;
 
-import bs.a;
 import com.discord.serialization.IntEnum;
 import com.withpersona.sdk2.inquiry.network.dto.InquiryField;
-import ft.e;
-import ft.j;
+import ds.a;
+import ht.e;
+import ht.j;
 import java.util.ArrayList;
 import kotlin.Metadata;
 import kotlin.collections.i;
@@ -49,7 +49,7 @@ public class IntEnumSerializer<T extends IntEnum> implements KSerializer {
         }
         Integer[] numArr = (Integer[]) arrayList.toArray(new Integer[0]);
         this.choicesNumbers = numArr;
-        this.descriptor = j.b(this.serialName, e.f.f23480a);
+        this.descriptor = j.b(this.serialName, e.f.f26475a);
         if (numArr.length == this.choices.length) {
             if (i.P(numArr).size() != numArr.length) {
                 throw new IllegalArgumentException("There must be no duplicates of serial numbers.");
@@ -63,14 +63,14 @@ public class IntEnumSerializer<T extends IntEnum> implements KSerializer {
         return this.f1default;
     }
 
-    @Override // kotlinx.serialization.KSerializer, dt.o, kotlinx.serialization.DeserializationStrategy
+    @Override // kotlinx.serialization.KSerializer, ft.o, kotlinx.serialization.DeserializationStrategy
     @NotNull
     public SerialDescriptor getDescriptor() {
         return this.descriptor;
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    @Override // dt.o
+    @Override // ft.o
     public /* bridge */ /* synthetic */ void serialize(Encoder encoder, Object obj) {
         serialize(encoder, (Encoder) ((IntEnum) obj));
     }

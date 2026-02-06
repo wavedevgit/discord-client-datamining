@@ -35,7 +35,7 @@ public class NoMoveItemAnimator extends DefaultItemAnimator {
             function0.invoke();
         }
         noMoveItemAnimator.onAnimationFinishedEventPending = false;
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     private final void setActiveAnimations(int i10) {
@@ -47,7 +47,7 @@ public class NoMoveItemAnimator extends DefaultItemAnimator {
             }
         }
         if (i10 == 0 && this.activeAnimations == 1) {
-            this.onAnimationsFinishedEvents.tryEmit(Unit.f31988a);
+            this.onAnimationsFinishedEvents.tryEmit(Unit.f32008a);
         }
         this.activeAnimations = i10;
     }
@@ -67,7 +67,7 @@ public class NoMoveItemAnimator extends DefaultItemAnimator {
     @Override // androidx.recyclerview.widget.DefaultItemAnimator, androidx.recyclerview.widget.q
     public boolean animateMove(RecyclerView.ViewHolder viewHolder, int i10, int i11, int i12, int i13) {
         dispatchMoveFinished(viewHolder);
-        Unit unit = Unit.f31988a;
+        Unit unit = Unit.f32008a;
         return false;
     }
 

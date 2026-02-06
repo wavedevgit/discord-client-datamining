@@ -30,7 +30,7 @@ public final class MediaMosaicAttachmentMessageAccessory extends MessageAccessor
     }
 
     /* renamed from: copy-SFu99iY$default  reason: not valid java name */
-    public static /* synthetic */ MediaMosaicAttachmentMessageAccessory m617copySFu99iY$default(MediaMosaicAttachmentMessageAccessory mediaMosaicAttachmentMessageAccessory, String str, MessageMargins messageMargins, long j10, List list, int i10, boolean z10, MessageState messageState, boolean z11, int i11, Object obj) {
+    public static /* synthetic */ MediaMosaicAttachmentMessageAccessory m615copySFu99iY$default(MediaMosaicAttachmentMessageAccessory mediaMosaicAttachmentMessageAccessory, String str, MessageMargins messageMargins, long j10, List list, int i10, boolean z10, MessageState messageState, boolean z11, int i11, Object obj) {
         if ((i11 & 1) != 0) {
             str = mediaMosaicAttachmentMessageAccessory.messageId;
         }
@@ -60,12 +60,12 @@ public final class MediaMosaicAttachmentMessageAccessory extends MessageAccessor
         boolean z13 = z10;
         List list3 = list2;
         long j11 = j10;
-        return mediaMosaicAttachmentMessageAccessory.m620copySFu99iY(str, messageMargins, j11, list3, i10, z13, messageState, z12);
+        return mediaMosaicAttachmentMessageAccessory.m618copySFu99iY(str, messageMargins, j11, list3, i10, z13, messageState, z12);
     }
 
     @NotNull
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m618component13Eiw7ao() {
+    public final String m616component13Eiw7ao() {
         return this.messageId;
     }
 
@@ -75,7 +75,7 @@ public final class MediaMosaicAttachmentMessageAccessory extends MessageAccessor
     }
 
     /* renamed from: component3-o4g7jtM  reason: not valid java name */
-    public final long m619component3o4g7jtM() {
+    public final long m617component3o4g7jtM() {
         return this.channelId;
     }
 
@@ -103,7 +103,7 @@ public final class MediaMosaicAttachmentMessageAccessory extends MessageAccessor
 
     @NotNull
     /* renamed from: copy-SFu99iY  reason: not valid java name */
-    public final MediaMosaicAttachmentMessageAccessory m620copySFu99iY(@NotNull String messageId, @NotNull MessageMargins margins, long j10, @NotNull List<? extends MessageAttachmentAccessory> attachments, int i10, boolean z10, @NotNull MessageState messageState, boolean z11) {
+    public final MediaMosaicAttachmentMessageAccessory m618copySFu99iY(@NotNull String messageId, @NotNull MessageMargins margins, long j10, @NotNull List<? extends MessageAttachmentAccessory> attachments, int i10, boolean z10, @NotNull MessageState messageState, boolean z11) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(margins, "margins");
         Intrinsics.checkNotNullParameter(attachments, "attachments");
@@ -117,7 +117,7 @@ public final class MediaMosaicAttachmentMessageAccessory extends MessageAccessor
         }
         if (obj instanceof MediaMosaicAttachmentMessageAccessory) {
             MediaMosaicAttachmentMessageAccessory mediaMosaicAttachmentMessageAccessory = (MediaMosaicAttachmentMessageAccessory) obj;
-            return MessageId.m1089equalsimpl0(this.messageId, mediaMosaicAttachmentMessageAccessory.messageId) && Intrinsics.areEqual(this.margins, mediaMosaicAttachmentMessageAccessory.margins) && ChannelId.m1063equalsimpl0(this.channelId, mediaMosaicAttachmentMessageAccessory.channelId) && Intrinsics.areEqual(this.attachments, mediaMosaicAttachmentMessageAccessory.attachments) && this.constrainedWidth == mediaMosaicAttachmentMessageAccessory.constrainedWidth && this.isForwardedContent == mediaMosaicAttachmentMessageAccessory.isForwardedContent && this.messageState == mediaMosaicAttachmentMessageAccessory.messageState && this.shouldAutoPlayGif == mediaMosaicAttachmentMessageAccessory.shouldAutoPlayGif;
+            return MessageId.m1087equalsimpl0(this.messageId, mediaMosaicAttachmentMessageAccessory.messageId) && Intrinsics.areEqual(this.margins, mediaMosaicAttachmentMessageAccessory.margins) && ChannelId.m1061equalsimpl0(this.channelId, mediaMosaicAttachmentMessageAccessory.channelId) && Intrinsics.areEqual(this.attachments, mediaMosaicAttachmentMessageAccessory.attachments) && this.constrainedWidth == mediaMosaicAttachmentMessageAccessory.constrainedWidth && this.isForwardedContent == mediaMosaicAttachmentMessageAccessory.isForwardedContent && this.messageState == mediaMosaicAttachmentMessageAccessory.messageState && this.shouldAutoPlayGif == mediaMosaicAttachmentMessageAccessory.shouldAutoPlayGif;
         }
         return false;
     }
@@ -128,7 +128,7 @@ public final class MediaMosaicAttachmentMessageAccessory extends MessageAccessor
     }
 
     /* renamed from: getChannelId-o4g7jtM  reason: not valid java name */
-    public final long m621getChannelIdo4g7jtM() {
+    public final long m619getChannelIdo4g7jtM() {
         return this.channelId;
     }
 
@@ -144,7 +144,7 @@ public final class MediaMosaicAttachmentMessageAccessory extends MessageAccessor
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     @NotNull
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo538getMessageId3Eiw7ao() {
+    public String mo536getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -158,7 +158,7 @@ public final class MediaMosaicAttachmentMessageAccessory extends MessageAccessor
     }
 
     public int hashCode() {
-        return (((((((((((((MessageId.m1090hashCodeimpl(this.messageId) * 31) + this.margins.hashCode()) * 31) + ChannelId.m1064hashCodeimpl(this.channelId)) * 31) + this.attachments.hashCode()) * 31) + Integer.hashCode(this.constrainedWidth)) * 31) + Boolean.hashCode(this.isForwardedContent)) * 31) + this.messageState.hashCode()) * 31) + Boolean.hashCode(this.shouldAutoPlayGif);
+        return (((((((((((((MessageId.m1088hashCodeimpl(this.messageId) * 31) + this.margins.hashCode()) * 31) + ChannelId.m1062hashCodeimpl(this.channelId)) * 31) + this.attachments.hashCode()) * 31) + Integer.hashCode(this.constrainedWidth)) * 31) + Boolean.hashCode(this.isForwardedContent)) * 31) + this.messageState.hashCode()) * 31) + Boolean.hashCode(this.shouldAutoPlayGif);
     }
 
     public final boolean isForwardedContent() {
@@ -167,15 +167,15 @@ public final class MediaMosaicAttachmentMessageAccessory extends MessageAccessor
 
     @NotNull
     public String toString() {
-        String m1092toStringimpl = MessageId.m1092toStringimpl(this.messageId);
+        String m1090toStringimpl = MessageId.m1090toStringimpl(this.messageId);
         MessageMargins messageMargins = this.margins;
-        String m1066toStringimpl = ChannelId.m1066toStringimpl(this.channelId);
+        String m1064toStringimpl = ChannelId.m1064toStringimpl(this.channelId);
         List<MessageAttachmentAccessory> list = this.attachments;
         int i10 = this.constrainedWidth;
         boolean z10 = this.isForwardedContent;
         MessageState messageState = this.messageState;
         boolean z11 = this.shouldAutoPlayGif;
-        return "MediaMosaicAttachmentMessageAccessory(messageId=" + m1092toStringimpl + ", margins=" + messageMargins + ", channelId=" + m1066toStringimpl + ", attachments=" + list + ", constrainedWidth=" + i10 + ", isForwardedContent=" + z10 + ", messageState=" + messageState + ", shouldAutoPlayGif=" + z11 + ")";
+        return "MediaMosaicAttachmentMessageAccessory(messageId=" + m1090toStringimpl + ", margins=" + messageMargins + ", channelId=" + m1064toStringimpl + ", attachments=" + list + ", constrainedWidth=" + i10 + ", isForwardedContent=" + z10 + ", messageState=" + messageState + ", shouldAutoPlayGif=" + z11 + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

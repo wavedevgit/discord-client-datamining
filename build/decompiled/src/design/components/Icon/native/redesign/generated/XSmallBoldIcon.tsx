@@ -33,15 +33,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Icon/native/redesign/generated/XSmallBoldIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun57487: for (var _fun57487_ip = 0;;) switch (_fun57487_ip) {
+        _fun57514: for (var _fun57514_ip = 0;;) switch (_fun57514_ip) {
             case 0:
                 var2 = arg0;
                 var5 = var2.style;
                 var6 = var2.color;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun57487_ip = 53;
-                    continue _fun57487
+                    _fun57514_ip = 53;
+                    continue _fun57514
                 }
             case 19:
                 var1 = _closure1_slot1;
@@ -83,4 +83,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.XSmallBoldIcon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3150, 5423, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3152, 5424, 2]);

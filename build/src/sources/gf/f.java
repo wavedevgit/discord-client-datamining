@@ -12,67 +12,67 @@ import gf.j;
 public class f extends hf.a {
 
     /* renamed from: d  reason: collision with root package name */
-    final int f24803d;
+    final int f25056d;
 
     /* renamed from: e  reason: collision with root package name */
-    final int f24804e;
+    final int f25057e;
 
     /* renamed from: i  reason: collision with root package name */
-    final int f24805i;
+    final int f25058i;
 
     /* renamed from: o  reason: collision with root package name */
-    String f24806o;
+    String f25059o;
 
     /* renamed from: p  reason: collision with root package name */
-    IBinder f24807p;
+    IBinder f25060p;
 
     /* renamed from: q  reason: collision with root package name */
-    Scope[] f24808q;
+    Scope[] f25061q;
 
     /* renamed from: r  reason: collision with root package name */
-    Bundle f24809r;
+    Bundle f25062r;
 
     /* renamed from: s  reason: collision with root package name */
-    Account f24810s;
+    Account f25063s;
 
     /* renamed from: t  reason: collision with root package name */
-    com.google.android.gms.common.d[] f24811t;
+    com.google.android.gms.common.d[] f25064t;
 
     /* renamed from: u  reason: collision with root package name */
-    com.google.android.gms.common.d[] f24812u;
+    com.google.android.gms.common.d[] f25065u;
 
     /* renamed from: v  reason: collision with root package name */
-    final boolean f24813v;
+    final boolean f25066v;
 
     /* renamed from: w  reason: collision with root package name */
-    final int f24814w;
+    final int f25067w;
 
     /* renamed from: x  reason: collision with root package name */
-    boolean f24815x;
+    boolean f25068x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final String f24816y;
+    private final String f25069y;
     @NonNull
     public static final Parcelable.Creator<f> CREATOR = new g1();
 
     /* renamed from: z  reason: collision with root package name */
-    static final Scope[] f24802z = new Scope[0];
+    static final Scope[] f25055z = new Scope[0];
     static final com.google.android.gms.common.d[] A = new com.google.android.gms.common.d[0];
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public f(int i10, int i11, int i12, String str, IBinder iBinder, Scope[] scopeArr, Bundle bundle, Account account, com.google.android.gms.common.d[] dVarArr, com.google.android.gms.common.d[] dVarArr2, boolean z10, int i13, boolean z11, String str2) {
         Account account2;
-        scopeArr = scopeArr == null ? f24802z : scopeArr;
+        scopeArr = scopeArr == null ? f25055z : scopeArr;
         bundle = bundle == null ? new Bundle() : bundle;
         dVarArr = dVarArr == null ? A : dVarArr;
         dVarArr2 = dVarArr2 == null ? A : dVarArr2;
-        this.f24803d = i10;
-        this.f24804e = i11;
-        this.f24805i = i12;
+        this.f25056d = i10;
+        this.f25057e = i11;
+        this.f25058i = i12;
         if ("com.google.android.gms".equals(str)) {
-            this.f24806o = "com.google.android.gms";
+            this.f25059o = "com.google.android.gms";
         } else {
-            this.f24806o = str;
+            this.f25059o = str;
         }
         if (i10 < 2) {
             if (iBinder != null) {
@@ -80,23 +80,23 @@ public class f extends hf.a {
             } else {
                 account2 = null;
             }
-            this.f24810s = account2;
+            this.f25063s = account2;
         } else {
-            this.f24807p = iBinder;
-            this.f24810s = account;
+            this.f25060p = iBinder;
+            this.f25063s = account;
         }
-        this.f24808q = scopeArr;
-        this.f24809r = bundle;
-        this.f24811t = dVarArr;
-        this.f24812u = dVarArr2;
-        this.f24813v = z10;
-        this.f24814w = i13;
-        this.f24815x = z11;
-        this.f24816y = str2;
+        this.f25061q = scopeArr;
+        this.f25062r = bundle;
+        this.f25064t = dVarArr;
+        this.f25065u = dVarArr2;
+        this.f25066v = z10;
+        this.f25067w = i13;
+        this.f25068x = z11;
+        this.f25069y = str2;
     }
 
     public String b() {
-        return this.f24816y;
+        return this.f25069y;
     }
 
     @Override // android.os.Parcelable

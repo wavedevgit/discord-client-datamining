@@ -1,49 +1,39 @@
 package fs;
-
-import java.util.NoSuchElementException;
-import kotlin.collections.n0;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class c extends n0 {
-
-    /* renamed from: d  reason: collision with root package name */
-    private final long f23459d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private final long f23460e;
-
-    /* renamed from: i  reason: collision with root package name */
-    private boolean f23461i;
-
-    /* renamed from: o  reason: collision with root package name */
-    private long f23462o;
-
-    public c(long j10, long j11, long j12) {
-        this.f23459d = j12;
-        this.f23460e = j11;
-        boolean z10 = false;
-        if (j12 <= 0 ? j10 >= j11 : j10 <= j11) {
-            z10 = true;
-        }
-        this.f23461i = z10;
-        this.f23462o = z10 ? j10 : j11;
+public class c extends b {
+    public static int a(long j10) {
+        return Long.signum(j10);
     }
 
-    @Override // java.util.Iterator
-    public boolean hasNext() {
-        return this.f23461i;
-    }
-
-    @Override // kotlin.collections.n0
-    public long nextLong() {
-        long j10 = this.f23462o;
-        if (j10 == this.f23460e) {
-            if (this.f23461i) {
-                this.f23461i = false;
-                return j10;
+    public static int b(double d10) {
+        if (!Double.isNaN(d10)) {
+            if (d10 > 2.147483647E9d) {
+                return Integer.MAX_VALUE;
             }
-            throw new NoSuchElementException();
+            if (d10 < -2.147483648E9d) {
+                return Integer.MIN_VALUE;
+            }
+            return (int) Math.round(d10);
         }
-        this.f23462o = this.f23459d + j10;
-        return j10;
+        throw new IllegalArgumentException("Cannot round NaN value.");
+    }
+
+    public static int c(float f10) {
+        if (!Float.isNaN(f10)) {
+            return Math.round(f10);
+        }
+        throw new IllegalArgumentException("Cannot round NaN value.");
+    }
+
+    public static long d(double d10) {
+        if (!Double.isNaN(d10)) {
+            return Math.round(d10);
+        }
+        throw new IllegalArgumentException("Cannot round NaN value.");
+    }
+
+    public static long e(float f10) {
+        return d(f10);
     }
 }

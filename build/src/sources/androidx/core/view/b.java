@@ -8,13 +8,13 @@ import android.view.View;
 public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f3455a;
+    private final Context f3784a;
 
     /* renamed from: b  reason: collision with root package name */
-    private a f3456b;
+    private a f3785b;
 
     /* renamed from: c  reason: collision with root package name */
-    private InterfaceC0040b f3457c;
+    private InterfaceC0038b f3786c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public interface a {
@@ -22,12 +22,12 @@ public abstract class b {
 
     /* renamed from: androidx.core.view.b$b  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public interface InterfaceC0040b {
+    public interface InterfaceC0038b {
         void onActionProviderVisibilityChanged(boolean z10);
     }
 
     public b(Context context) {
-        this.f3455a = context;
+        this.f3784a = context;
     }
 
     public abstract boolean a();
@@ -43,13 +43,13 @@ public abstract class b {
     public abstract boolean f();
 
     public void g() {
-        this.f3457c = null;
-        this.f3456b = null;
+        this.f3786c = null;
+        this.f3785b = null;
     }
 
     public void h(a aVar) {
-        this.f3456b = aVar;
+        this.f3785b = aVar;
     }
 
-    public abstract void i(InterfaceC0040b interfaceC0040b);
+    public abstract void i(InterfaceC0038b interfaceC0038b);
 }

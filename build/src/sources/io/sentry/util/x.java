@@ -25,39 +25,19 @@ import java.util.concurrent.atomic.AtomicIntegerArray;
 public final class x implements f3 {
 
     /* renamed from: a  reason: collision with root package name */
-    final Map f29829a;
+    final Map f28973a;
 
     /* renamed from: b  reason: collision with root package name */
-    final ArrayDeque f29830b;
+    final ArrayDeque f28974b;
 
     public x(Map map) {
-        this.f29829a = map;
+        this.f28973a = map;
         ArrayDeque arrayDeque = new ArrayDeque();
-        this.f29830b = arrayDeque;
+        this.f28974b = arrayDeque;
         arrayDeque.addLast(map);
     }
 
-    private void A(ILogger iLogger, Date date) {
-        try {
-            f(io.sentry.k.h(date));
-        } catch (Exception e10) {
-            iLogger.b(SentryLevel.ERROR, "Error when serializing Date", e10);
-            l();
-        }
-    }
-
-    private void B(ILogger iLogger, Map map) {
-        s();
-        for (Object obj : map.keySet()) {
-            if (obj instanceof String) {
-                e((String) obj);
-                j(iLogger, map.get(obj));
-            }
-        }
-        z();
-    }
-
-    private void C(ILogger iLogger, TimeZone timeZone) {
+    private void B(ILogger iLogger, TimeZone timeZone) {
         try {
             f(timeZone.getID());
         } catch (Exception e10) {
@@ -66,8 +46,8 @@ public final class x implements f3 {
         }
     }
 
-    private Map u() {
-        Object peekLast = this.f29830b.peekLast();
+    private Map s() {
+        Object peekLast = this.f28974b.peekLast();
         if (peekLast != null) {
             if (peekLast instanceof Map) {
                 return (Map) peekLast;
@@ -77,36 +57,60 @@ public final class x implements f3 {
         throw new IllegalStateException("Stack is empty.");
     }
 
-    private void x(Object obj) {
-        Object peekLast = this.f29830b.peekLast();
+    private void t(Object obj) {
+        Object peekLast = this.f28974b.peekLast();
         if (peekLast instanceof List) {
             ((List) peekLast).add(obj);
         } else if (peekLast instanceof String) {
-            u().put((String) this.f29830b.removeLast(), obj);
+            s().put((String) this.f28974b.removeLast(), obj);
         } else {
             throw new IllegalStateException("Invalid stack state, expected array or string on top");
         }
     }
 
-    private void y(ILogger iLogger, Collection collection) {
-        v();
+    private void w(ILogger iLogger, Collection collection) {
+        x();
         for (Object obj : collection) {
             j(iLogger, obj);
         }
-        t();
+        v();
+    }
+
+    private void y(ILogger iLogger, Date date) {
+        try {
+            f(io.sentry.k.h(date));
+        } catch (Exception e10) {
+            iLogger.b(SentryLevel.ERROR, "Error when serializing Date", e10);
+            l();
+        }
+    }
+
+    private void z(ILogger iLogger, Map map) {
+        u();
+        for (Object obj : map.keySet()) {
+            if (obj instanceof String) {
+                e((String) obj);
+                j(iLogger, map.get(obj));
+            }
+        }
+        D();
     }
 
     @Override // io.sentry.f3
-    /* renamed from: D */
+    public void A(boolean z10) {
+    }
+
+    @Override // io.sentry.f3
+    /* renamed from: C */
     public x c(double d10) {
-        x(Double.valueOf(d10));
+        t(Double.valueOf(d10));
         return this;
     }
 
     @Override // io.sentry.f3
     /* renamed from: E */
     public x b(long j10) {
-        x(Long.valueOf(j10));
+        t(Long.valueOf(j10));
         return this;
     }
 
@@ -129,28 +133,28 @@ public final class x implements f3 {
             i((Number) obj);
             return this;
         } else if (obj instanceof Date) {
-            A(iLogger, (Date) obj);
+            y(iLogger, (Date) obj);
             return this;
         } else if (obj instanceof TimeZone) {
-            C(iLogger, (TimeZone) obj);
+            B(iLogger, (TimeZone) obj);
             return this;
         } else if (obj instanceof w1) {
             ((w1) obj).serialize(this, iLogger);
             return this;
         } else if (obj instanceof Collection) {
-            y(iLogger, (Collection) obj);
+            w(iLogger, (Collection) obj);
             return this;
         } else if (obj.getClass().isArray()) {
-            y(iLogger, Arrays.asList((Object[]) obj));
+            w(iLogger, Arrays.asList((Object[]) obj));
             return this;
         } else if (obj instanceof Map) {
-            B(iLogger, (Map) obj);
+            z(iLogger, (Map) obj);
             return this;
         } else if (obj instanceof Locale) {
             f(obj.toString());
             return this;
         } else if (obj instanceof AtomicIntegerArray) {
-            y(iLogger, q.a((AtomicIntegerArray) obj));
+            w(iLogger, q.a((AtomicIntegerArray) obj));
             return this;
         } else if (obj instanceof AtomicBoolean) {
             d(((AtomicBoolean) obj).get());
@@ -168,7 +172,7 @@ public final class x implements f3 {
             f(obj.toString());
             return this;
         } else if (obj instanceof Calendar) {
-            B(iLogger, q.d((Calendar) obj));
+            z(iLogger, q.d((Calendar) obj));
             return this;
         } else if (obj.getClass().isEnum()) {
             f(obj.toString());
@@ -182,28 +186,28 @@ public final class x implements f3 {
     @Override // io.sentry.f3
     /* renamed from: G */
     public x k(Boolean bool) {
-        x(bool);
+        t(bool);
         return this;
     }
 
     @Override // io.sentry.f3
     /* renamed from: H */
     public x i(Number number) {
-        x(number);
+        t(number);
         return this;
     }
 
     @Override // io.sentry.f3
     /* renamed from: I */
     public x f(String str) {
-        x(str);
+        t(str);
         return this;
     }
 
     @Override // io.sentry.f3
     /* renamed from: J */
     public x d(boolean z10) {
-        x(Boolean.valueOf(z10));
+        t(Boolean.valueOf(z10));
         return this;
     }
 
@@ -223,47 +227,43 @@ public final class x implements f3 {
 
     @Override // io.sentry.f3
     /* renamed from: m */
-    public x v() {
-        this.f29830b.add(new ArrayList());
+    public x x() {
+        this.f28974b.add(new ArrayList());
         return this;
     }
 
     @Override // io.sentry.f3
     /* renamed from: n */
-    public x s() {
-        this.f29830b.addLast(new HashMap());
+    public x u() {
+        this.f28974b.addLast(new HashMap());
         return this;
     }
 
     @Override // io.sentry.f3
     /* renamed from: o */
-    public x t() {
-        z();
+    public x v() {
+        D();
         return this;
     }
 
     @Override // io.sentry.f3
     /* renamed from: p */
-    public x z() {
-        x(this.f29830b.removeLast());
+    public x D() {
+        t(this.f28974b.removeLast());
         return this;
     }
 
     @Override // io.sentry.f3
     /* renamed from: q */
     public x e(String str) {
-        this.f29830b.add(str);
+        this.f28974b.add(str);
         return this;
     }
 
     @Override // io.sentry.f3
     /* renamed from: r */
     public x l() {
-        x(null);
+        t(null);
         return this;
-    }
-
-    @Override // io.sentry.f3
-    public void w(boolean z10) {
     }
 }

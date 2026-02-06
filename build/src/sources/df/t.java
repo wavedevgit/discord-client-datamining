@@ -10,20 +10,20 @@ import java.util.Objects;
 final class t {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Messenger f20787a;
+    private final Messenger f20742a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f20788b;
+    private final h f20743b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public t(IBinder iBinder) {
         String interfaceDescriptor = iBinder.getInterfaceDescriptor();
         if (Objects.equals(interfaceDescriptor, "android.os.IMessenger")) {
-            this.f20787a = new Messenger(iBinder);
-            this.f20788b = null;
+            this.f20742a = new Messenger(iBinder);
+            this.f20743b = null;
         } else if (Objects.equals(interfaceDescriptor, "com.google.android.gms.iid.IMessengerCompat")) {
-            this.f20788b = new h(iBinder);
-            this.f20787a = null;
+            this.f20743b = new h(iBinder);
+            this.f20742a = null;
         } else {
             Log.w("MessengerIpcClient", "Invalid interface descriptor: ".concat(String.valueOf(interfaceDescriptor)));
             throw new RemoteException();
@@ -32,12 +32,12 @@ final class t {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void a(Message message) {
-        Messenger messenger = this.f20787a;
+        Messenger messenger = this.f20742a;
         if (messenger != null) {
             messenger.send(message);
             return;
         }
-        h hVar = this.f20788b;
+        h hVar = this.f20743b;
         if (hVar != null) {
             hVar.b(message);
             return;

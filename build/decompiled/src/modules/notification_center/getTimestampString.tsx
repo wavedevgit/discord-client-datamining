@@ -278,4 +278,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getFullFormatter = var3;
     var2.getDurationString = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1234, 3045, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1234, 3047, 2]);

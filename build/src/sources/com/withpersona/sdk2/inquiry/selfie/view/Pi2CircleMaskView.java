@@ -16,7 +16,7 @@ import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
-import kp.z0;
+import mp.z0;
 import org.jetbrains.annotations.NotNull;
 @Metadata(d1 = {"\u0000V\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0007\n\u0000\n\u0002\u0010\t\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0004\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\r\n\u0002\u0018\u0002\n\u0002\b\b\u0018\u0000 /2\u00020\u0001:\u00010B'\b\u0007\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u0004\u0012\b\b\u0002\u0010\u0007\u001a\u00020\u0006¢\u0006\u0004\b\b\u0010\tJ\u000f\u0010\u000b\u001a\u00020\nH\u0002¢\u0006\u0004\b\u000b\u0010\fJ\u0017\u0010\u0010\u001a\u00020\u000f2\u0006\u0010\u000e\u001a\u00020\rH\u0002¢\u0006\u0004\b\u0010\u0010\u0011J\u0017\u0010\u0015\u001a\u00020\u00142\u0006\u0010\u0013\u001a\u00020\u0012H\u0014¢\u0006\u0004\b\u0015\u0010\u0016J\r\u0010\u0017\u001a\u00020\u0014¢\u0006\u0004\b\u0017\u0010\u0018J)\u0010\u001d\u001a\u00020\u00142\b\b\u0002\u0010\u001a\u001a\u00020\u00192\u0010\b\u0002\u0010\u001c\u001a\n\u0012\u0004\u0012\u00020\u0014\u0018\u00010\u001b¢\u0006\u0004\b\u001d\u0010\u001eJ\r\u0010\u001f\u001a\u00020\u0019¢\u0006\u0004\b\u001f\u0010 R\u0014\u0010\"\u001a\u00020\r8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u001d\u0010!R\u0014\u0010%\u001a\u00020\u00068\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b#\u0010$R\u0018\u0010(\u001a\u0004\u0018\u00010\n8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b&\u0010'R\u0016\u0010,\u001a\u00020)8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b*\u0010+R\u0016\u0010.\u001a\u00020)8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b-\u0010+¨\u00061"}, d2 = {"Lcom/withpersona/sdk2/inquiry/selfie/view/Pi2CircleMaskView;", "Landroid/view/View;", "Landroid/content/Context;", "context", "Landroid/util/AttributeSet;", "attrs", "", "defStyleAttr", "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "Landroid/graphics/Bitmap;", "c", "()Landroid/graphics/Bitmap;", "", "targetScaleX", "", "b", "(F)J", "Landroid/graphics/Canvas;", "canvas", "", "onDraw", "(Landroid/graphics/Canvas;)V", "h", "()V", "", "animated", "Lkotlin/Function0;", "onComplete", "d", "(ZLkotlin/jvm/functions/Function0;)V", "g", "()Z", "F", "size", "e", "I", "maskColor", "i", "Landroid/graphics/Bitmap;", "mask", "Landroid/graphics/Paint;", "o", "Landroid/graphics/Paint;", "paint", "p", "clearPaint", "q", "a", "selfie_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nPi2CircleMaskView.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Pi2CircleMaskView.kt\ncom/withpersona/sdk2/inquiry/selfie/view/Pi2CircleMaskView\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,110:1\n1#2:111\n*E\n"})
@@ -24,22 +24,22 @@ import org.jetbrains.annotations.NotNull;
 public final class Pi2CircleMaskView extends View {
 
     /* renamed from: q  reason: collision with root package name */
-    public static final a f19465q = new a(null);
+    public static final a f19445q = new a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final float f19466d;
+    private final float f19446d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f19467e;
+    private final int f19447e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Bitmap f19468i;
+    private Bitmap f19448i;
 
     /* renamed from: o  reason: collision with root package name */
-    private Paint f19469o;
+    private Paint f19449o;
 
     /* renamed from: p  reason: collision with root package name */
-    private Paint f19470p;
+    private Paint f19450p;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -58,11 +58,11 @@ public final class Pi2CircleMaskView extends View {
     }
 
     private final long b(float f10) {
-        return ds.a.e((Math.abs(getScaleX() - f10) / 4.0f) * ((float) 500));
+        return fs.a.e((Math.abs(getScaleX() - f10) / 4.0f) * ((float) 500));
     }
 
     private final Bitmap c() {
-        Bitmap bitmap = this.f19468i;
+        Bitmap bitmap = this.f19448i;
         if (bitmap != null) {
             bitmap = (bitmap.getWidth() == getWidth() && bitmap.getHeight() == getHeight()) ? null : null;
             if (bitmap != null) {
@@ -72,9 +72,9 @@ public final class Pi2CircleMaskView extends View {
         Bitmap createBitmap = Bitmap.createBitmap(getWidth(), getHeight(), Bitmap.Config.ARGB_8888);
         Intrinsics.checkNotNullExpressionValue(createBitmap, "createBitmap(...)");
         Canvas canvas = new Canvas(createBitmap);
-        canvas.drawColor(this.f19467e);
-        canvas.drawCircle(canvas.getWidth() / 2.0f, canvas.getHeight() / 2.0f, this.f19466d * Math.min(canvas.getWidth(), canvas.getHeight()), this.f19470p);
-        this.f19468i = createBitmap;
+        canvas.drawColor(this.f19447e);
+        canvas.drawCircle(canvas.getWidth() / 2.0f, canvas.getHeight() / 2.0f, this.f19446d * Math.min(canvas.getWidth(), canvas.getHeight()), this.f19450p);
+        this.f19448i = createBitmap;
         return createBitmap;
     }
 
@@ -101,7 +101,7 @@ public final class Pi2CircleMaskView extends View {
             animate.setDuration(b(1.0f));
             animate.scaleX(1.0f);
             animate.scaleY(1.0f);
-            animate.withEndAction(new Runnable() { // from class: op.n
+            animate.withEndAction(new Runnable() { // from class: qp.n
                 @Override // java.lang.Runnable
                 public final void run() {
                     Pi2CircleMaskView.f(Function0.this);
@@ -139,7 +139,7 @@ public final class Pi2CircleMaskView extends View {
     @Override // android.view.View
     protected void onDraw(Canvas canvas) {
         Intrinsics.checkNotNullParameter(canvas, "canvas");
-        canvas.drawBitmap(c(), 0.0f, 0.0f, this.f19469o);
+        canvas.drawBitmap(c(), 0.0f, 0.0f, this.f19449o);
     }
 
     public /* synthetic */ Pi2CircleMaskView(Context context, AttributeSet attributeSet, int i10, int i11, DefaultConstructorMarker defaultConstructorMarker) {
@@ -150,16 +150,16 @@ public final class Pi2CircleMaskView extends View {
     public Pi2CircleMaskView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
         Intrinsics.checkNotNullParameter(context, "context");
-        this.f19469o = new Paint(7);
+        this.f19449o = new Paint(7);
         Paint paint = new Paint(1);
         paint.setColor(0);
         paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.CLEAR));
-        this.f19470p = paint;
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, z0.f36098a, i10, 0);
+        this.f19450p = paint;
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, z0.f38254a, i10, 0);
         Intrinsics.checkNotNullExpressionValue(obtainStyledAttributes, "obtainStyledAttributes(...)");
         try {
-            this.f19466d = obtainStyledAttributes.getFloat(z0.f36099b, 0.4f);
-            this.f19467e = obtainStyledAttributes.getColor(z0.f36100c, -16777216);
+            this.f19446d = obtainStyledAttributes.getFloat(z0.f38255b, 0.4f);
+            this.f19447e = obtainStyledAttributes.getColor(z0.f38256c, -16777216);
             obtainStyledAttributes.recycle();
             setWillNotDraw(false);
         } catch (Throwable th2) {

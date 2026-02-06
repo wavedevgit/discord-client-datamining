@@ -17,7 +17,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = 'warning';
                 var1 = 'warn';
                 if (!(var1 !== var2)) {
-                    _fun9585_ip = 46;
+                    _fun9585_ip = 48;
                     continue _fun9585
                 }
             case 15:
@@ -26,14 +26,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var1.bind(var3)(var2);
                 var1 = 'log';
                 if (!var3) {
-                    _fun9585_ip = 43;
+                    _fun9585_ip = 45;
                     continue _fun9585
                 }
-            case 40:
+            case 42:
                 var1 = var2;
-            case 43:
+            case 45:
                 var0 = var1;
-            case 46:
+            case 48:
                 return var0;
         }
     };

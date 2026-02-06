@@ -20,13 +20,13 @@ import java.util.Map;
 import java.util.UUID;
 import kotlin.jvm.internal.ByteCompanionObject;
 import lc.l0;
-import mi.s;
 import nc.a;
 import ne.d0;
 import ne.h0;
 import ne.w0;
 import ne.y;
 import ne.z;
+import ni.s;
 import rc.m;
 import tc.b0;
 import tc.c0;
@@ -39,7 +39,7 @@ import tc.z;
 public class e implements k {
 
     /* renamed from: c0  reason: collision with root package name */
-    public static final p f55391c0 = new p() { // from class: zc.d
+    public static final p f56122c0 = new p() { // from class: zc.d
         @Override // tc.p
         public final k[] b() {
             return e.b();
@@ -47,22 +47,22 @@ public class e implements k {
     };
 
     /* renamed from: d0  reason: collision with root package name */
-    private static final byte[] f55392d0 = {49, 10, 48, 48, 58, 48, 48, 58, 48, 48, 44, 48, 48, 48, 32, 45, 45, 62, 32, 48, 48, 58, 48, 48, 58, 48, 48, 44, 48, 48, 48, 10};
+    private static final byte[] f56123d0 = {49, 10, 48, 48, 58, 48, 48, 58, 48, 48, 44, 48, 48, 48, 32, 45, 45, 62, 32, 48, 48, 58, 48, 48, 58, 48, 48, 44, 48, 48, 48, 10};
 
     /* renamed from: e0  reason: collision with root package name */
-    private static final byte[] f55393e0 = w0.s0("Format: Start, End, ReadOrder, Layer, Style, Name, MarginL, MarginR, MarginV, Effect, Text");
+    private static final byte[] f56124e0 = w0.s0("Format: Start, End, ReadOrder, Layer, Style, Name, MarginL, MarginR, MarginV, Effect, Text");
 
     /* renamed from: f0  reason: collision with root package name */
-    private static final byte[] f55394f0 = {68, 105, 97, 108, 111, 103, 117, 101, 58, 32, 48, 58, 48, 48, 58, 48, 48, 58, 48, 48, 44, 48, 58, 48, 48, 58, 48, 48, 58, 48, 48, 44};
+    private static final byte[] f56125f0 = {68, 105, 97, 108, 111, 103, 117, 101, 58, 32, 48, 58, 48, 48, 58, 48, 48, 58, 48, 48, 44, 48, 58, 48, 48, 58, 48, 48, 58, 48, 48, 44};
 
     /* renamed from: g0  reason: collision with root package name */
-    private static final byte[] f55395g0 = {87, 69, 66, 86, 84, 84, 10, 10, 48, 48, 58, 48, 48, 58, 48, 48, 46, 48, 48, 48, 32, 45, 45, 62, 32, 48, 48, 58, 48, 48, 58, 48, 48, 46, 48, 48, 48, 10};
+    private static final byte[] f56126g0 = {87, 69, 66, 86, 84, 84, 10, 10, 48, 48, 58, 48, 48, 58, 48, 48, 46, 48, 48, 48, 32, 45, 45, 62, 32, 48, 48, 58, 48, 48, 58, 48, 48, 46, 48, 48, 48, 10};
 
     /* renamed from: h0  reason: collision with root package name */
-    private static final UUID f55396h0 = new UUID(72057594037932032L, -9223371306706625679L);
+    private static final UUID f56127h0 = new UUID(72057594037932032L, -9223371306706625679L);
 
     /* renamed from: i0  reason: collision with root package name */
-    private static final Map f55397i0;
+    private static final Map f56128i0;
     private long A;
     private long B;
     private z C;
@@ -91,88 +91,88 @@ public class e implements k {
     private byte Z;
 
     /* renamed from: a  reason: collision with root package name */
-    private final zc.c f55398a;
+    private final zc.c f56129a;
 
     /* renamed from: a0  reason: collision with root package name */
-    private boolean f55399a0;
+    private boolean f56130a0;
 
     /* renamed from: b  reason: collision with root package name */
-    private final g f55400b;
+    private final g f56131b;
 
     /* renamed from: b0  reason: collision with root package name */
-    private m f55401b0;
+    private m f56132b0;
 
     /* renamed from: c  reason: collision with root package name */
-    private final SparseArray f55402c;
+    private final SparseArray f56133c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f55403d;
+    private final boolean f56134d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final h0 f55404e;
+    private final h0 f56135e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final h0 f55405f;
+    private final h0 f56136f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final h0 f55406g;
+    private final h0 f56137g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final h0 f55407h;
+    private final h0 f56138h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final h0 f55408i;
+    private final h0 f56139i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final h0 f55409j;
+    private final h0 f56140j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final h0 f55410k;
+    private final h0 f56141k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final h0 f55411l;
+    private final h0 f56142l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final h0 f55412m;
+    private final h0 f56143m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final h0 f55413n;
+    private final h0 f56144n;
 
     /* renamed from: o  reason: collision with root package name */
-    private ByteBuffer f55414o;
+    private ByteBuffer f56145o;
 
     /* renamed from: p  reason: collision with root package name */
-    private long f55415p;
+    private long f56146p;
 
     /* renamed from: q  reason: collision with root package name */
-    private long f55416q;
+    private long f56147q;
 
     /* renamed from: r  reason: collision with root package name */
-    private long f55417r;
+    private long f56148r;
 
     /* renamed from: s  reason: collision with root package name */
-    private long f55418s;
+    private long f56149s;
 
     /* renamed from: t  reason: collision with root package name */
-    private long f55419t;
+    private long f56150t;
 
     /* renamed from: u  reason: collision with root package name */
-    private c f55420u;
+    private c f56151u;
 
     /* renamed from: v  reason: collision with root package name */
-    private boolean f55421v;
+    private boolean f56152v;
 
     /* renamed from: w  reason: collision with root package name */
-    private int f55422w;
+    private int f56153w;
 
     /* renamed from: x  reason: collision with root package name */
-    private long f55423x;
+    private long f56154x;
 
     /* renamed from: y  reason: collision with root package name */
-    private boolean f55424y;
+    private boolean f56155y;
 
     /* renamed from: z  reason: collision with root package name */
-    private long f55425z;
+    private long f56156z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     private final class b implements zc.b {
@@ -230,82 +230,82 @@ public class e implements k {
         public int Y;
 
         /* renamed from: a  reason: collision with root package name */
-        public String f55427a;
+        public String f56158a;
 
         /* renamed from: b  reason: collision with root package name */
-        public String f55428b;
+        public String f56159b;
 
         /* renamed from: c  reason: collision with root package name */
-        public int f55429c;
+        public int f56160c;
 
         /* renamed from: d  reason: collision with root package name */
-        public int f55430d;
+        public int f56161d;
 
         /* renamed from: e  reason: collision with root package name */
-        public int f55431e;
+        public int f56162e;
 
         /* renamed from: f  reason: collision with root package name */
-        public int f55432f;
+        public int f56163f;
 
         /* renamed from: g  reason: collision with root package name */
-        private int f55433g;
+        private int f56164g;
 
         /* renamed from: h  reason: collision with root package name */
-        public boolean f55434h;
+        public boolean f56165h;
 
         /* renamed from: i  reason: collision with root package name */
-        public byte[] f55435i;
+        public byte[] f56166i;
 
         /* renamed from: j  reason: collision with root package name */
-        public b0.a f55436j;
+        public b0.a f56167j;
 
         /* renamed from: k  reason: collision with root package name */
-        public byte[] f55437k;
+        public byte[] f56168k;
 
         /* renamed from: l  reason: collision with root package name */
-        public rc.m f55438l;
+        public rc.m f56169l;
 
         /* renamed from: m  reason: collision with root package name */
-        public int f55439m = -1;
+        public int f56170m = -1;
 
         /* renamed from: n  reason: collision with root package name */
-        public int f55440n = -1;
+        public int f56171n = -1;
 
         /* renamed from: o  reason: collision with root package name */
-        public int f55441o = -1;
+        public int f56172o = -1;
 
         /* renamed from: p  reason: collision with root package name */
-        public int f55442p = -1;
+        public int f56173p = -1;
 
         /* renamed from: q  reason: collision with root package name */
-        public int f55443q = 0;
+        public int f56174q = 0;
 
         /* renamed from: r  reason: collision with root package name */
-        public int f55444r = -1;
+        public int f56175r = -1;
 
         /* renamed from: s  reason: collision with root package name */
-        public float f55445s = 0.0f;
+        public float f56176s = 0.0f;
 
         /* renamed from: t  reason: collision with root package name */
-        public float f55446t = 0.0f;
+        public float f56177t = 0.0f;
 
         /* renamed from: u  reason: collision with root package name */
-        public float f55447u = 0.0f;
+        public float f56178u = 0.0f;
 
         /* renamed from: v  reason: collision with root package name */
-        public byte[] f55448v = null;
+        public byte[] f56179v = null;
 
         /* renamed from: w  reason: collision with root package name */
-        public int f55449w = -1;
+        public int f56180w = -1;
 
         /* renamed from: x  reason: collision with root package name */
-        public boolean f55450x = false;
+        public boolean f56181x = false;
 
         /* renamed from: y  reason: collision with root package name */
-        public int f55451y = -1;
+        public int f56182y = -1;
 
         /* renamed from: z  reason: collision with root package name */
-        public int f55452z = -1;
+        public int f56183z = -1;
         public int A = -1;
         public int B = 1000;
         public int C = h.DEFAULT_DRAG_ANIMATION_DURATION;
@@ -336,7 +336,7 @@ public class e implements k {
         }
 
         private byte[] g(String str) {
-            byte[] bArr = this.f55437k;
+            byte[] bArr = this.f56168k;
             if (bArr != null) {
                 return bArr;
             }
@@ -399,8 +399,8 @@ public class e implements k {
                 }
                 if (z10 == 65534) {
                     h0Var.U(24);
-                    if (h0Var.A() == e.f55396h0.getMostSignificantBits()) {
-                        if (h0Var.A() == e.f55396h0.getLeastSignificantBits()) {
+                    if (h0Var.A() == e.f56127h0.getMostSignificantBits()) {
+                        if (h0Var.A() == e.f56127h0.getLeastSignificantBits()) {
                             return true;
                         }
                     }
@@ -467,10 +467,10 @@ public class e implements k {
 
         /* JADX INFO: Access modifiers changed from: private */
         public boolean o(boolean z10) {
-            if ("A_OPUS".equals(this.f55428b)) {
+            if ("A_OPUS".equals(this.f56159b)) {
                 return z10;
             }
-            if (this.f55432f > 0) {
+            if (this.f56163f > 0) {
                 return true;
             }
             return false;
@@ -493,7 +493,7 @@ public class e implements k {
             float f10;
             int i18;
             oe.d a10;
-            String str3 = this.f55428b;
+            String str3 = this.f56159b;
             str3.getClass();
             switch (str3.hashCode()) {
                 case -2095576542:
@@ -737,7 +737,7 @@ public class e implements k {
                 case 0:
                 case 1:
                 case '\t':
-                    byte[] bArr = this.f55437k;
+                    byte[] bArr = this.f56168k;
                     if (bArr == null) {
                         singletonList = null;
                     } else {
@@ -749,7 +749,7 @@ public class e implements k {
                     i11 = -1;
                     break;
                 case 2:
-                    if (l(new h0(g(this.f55428b)))) {
+                    if (l(new h0(g(this.f56159b)))) {
                         int g02 = w0.g0(this.P);
                         if (g02 == 0) {
                             y.i("MatroskaExtractor", "Unsupported PCM bit depth: " + this.P + ". Setting mimeType to audio/x-unknown");
@@ -778,7 +778,7 @@ public class e implements k {
                     i11 = -1;
                     break;
                 case 4:
-                    singletonList = m(g(this.f55428b));
+                    singletonList = m(g(this.f56159b));
                     str4 = "audio/vorbis";
                     i12 = 8192;
                     str = null;
@@ -799,7 +799,7 @@ public class e implements k {
                     i11 = -1;
                     break;
                 case 7:
-                    Pair k10 = k(new h0(g(this.f55428b)));
+                    Pair k10 = k(new h0(g(this.f56159b)));
                     str4 = (String) k10.first;
                     singletonList = (List) k10.second;
                     str = null;
@@ -808,18 +808,18 @@ public class e implements k {
                     break;
                 case '\b':
                     byte[] bArr2 = new byte[4];
-                    System.arraycopy(g(this.f55428b), 0, bArr2, 0, 4);
-                    singletonList = s.t(bArr2);
+                    System.arraycopy(g(this.f56159b), 0, bArr2, 0, 4);
+                    singletonList = s.u(bArr2);
                     str = null;
                     str4 = "application/dvbsubs";
                     i12 = -1;
                     i11 = -1;
                     break;
                 case '\n':
-                    oe.a b10 = oe.a.b(new h0(g(this.f55428b)));
-                    list = b10.f42359a;
-                    this.Y = b10.f42360b;
-                    str2 = b10.f42367i;
+                    oe.a b10 = oe.a.b(new h0(g(this.f56159b)));
+                    list = b10.f41582a;
+                    this.Y = b10.f41583b;
+                    str2 = b10.f41590i;
                     str4 = "video/avc";
                     List list2 = list;
                     str = str2;
@@ -828,7 +828,7 @@ public class e implements k {
                     i11 = -1;
                     break;
                 case 11:
-                    singletonList = s.t(g(this.f55428b));
+                    singletonList = s.u(g(this.f56159b));
                     str = null;
                     str4 = "application/vobsub";
                     i12 = -1;
@@ -842,11 +842,11 @@ public class e implements k {
                     i11 = -1;
                     break;
                 case '\r':
-                    singletonList = Collections.singletonList(g(this.f55428b));
-                    a.b f11 = nc.a.f(this.f55437k);
-                    this.Q = f11.f39388a;
-                    this.O = f11.f39389b;
-                    str = f11.f39390c;
+                    singletonList = Collections.singletonList(g(this.f56159b));
+                    a.b f11 = nc.a.f(this.f56168k);
+                    this.Q = f11.f38743a;
+                    this.O = f11.f38744b;
+                    str = f11.f38745c;
                     str4 = "audio/mp4a-latm";
                     i12 = -1;
                     i11 = -1;
@@ -954,17 +954,17 @@ public class e implements k {
                     str = null;
                     i12 = -1;
                 case ChatViewRecyclerTypes.GUILD_INVITE_DISABLED /* 25 */:
-                    singletonList = s.u(e.f55393e0, g(this.f55428b));
+                    singletonList = s.v(e.f56124e0, g(this.f56159b));
                     str = null;
                     str4 = "text/x-ssa";
                     i12 = -1;
                     i11 = -1;
                     break;
                 case ChatViewRecyclerTypes.MEDIA_MOSAIC_ATTACHMENT /* 26 */:
-                    oe.f a11 = oe.f.a(new h0(g(this.f55428b)));
-                    list = a11.f42401a;
-                    this.Y = a11.f42402b;
-                    str2 = a11.f42409i;
+                    oe.f a11 = oe.f.a(new h0(g(this.f56159b)));
+                    list = a11.f41624a;
+                    this.Y = a11.f41625b;
+                    str2 = a11.f41632i;
                     str4 = "video/hevc";
                     List list22 = list;
                     str = str2;
@@ -1001,7 +1001,7 @@ public class e implements k {
                     i11 = -1;
                     break;
                 case ChatViewRecyclerTypes.EMBEDDED_ACTIVITY_INVITE /* 31 */:
-                    singletonList = Collections.singletonList(g(this.f55428b));
+                    singletonList = Collections.singletonList(g(this.f56159b));
                     str4 = "audio/flac";
                     str = null;
                     i12 = -1;
@@ -1009,7 +1009,7 @@ public class e implements k {
                     break;
                 case ' ':
                     singletonList = new ArrayList(3);
-                    singletonList.add(g(this.f55428b));
+                    singletonList.add(g(this.f56159b));
                     ByteBuffer allocate = ByteBuffer.allocate(8);
                     ByteOrder byteOrder = ByteOrder.LITTLE_ENDIAN;
                     singletonList.add(allocate.order(byteOrder).putLong(this.R).array());
@@ -1023,7 +1023,7 @@ public class e implements k {
                     throw l0.a("Unrecognized codec identifier.", null);
             }
             if (this.N != null && (a10 = oe.d.a(new h0(this.N))) != null) {
-                str = a10.f42386c;
+                str = a10.f41609c;
                 str4 = "video/dolby-vision";
             }
             String str5 = str4;
@@ -1039,57 +1039,57 @@ public class e implements k {
                 bVar.J(this.O).h0(this.Q).a0(i11);
                 i15 = 1;
             } else if (ne.c0.s(str5)) {
-                if (this.f55443q == 0) {
-                    int i21 = this.f55441o;
+                if (this.f56174q == 0) {
+                    int i21 = this.f56172o;
                     i16 = -1;
                     if (i21 == -1) {
-                        i21 = this.f55439m;
+                        i21 = this.f56170m;
                     }
-                    this.f55441o = i21;
-                    int i22 = this.f55442p;
+                    this.f56172o = i21;
+                    int i22 = this.f56173p;
                     if (i22 == -1) {
-                        i22 = this.f55440n;
+                        i22 = this.f56171n;
                     }
-                    this.f55442p = i22;
+                    this.f56173p = i22;
                 } else {
                     i16 = -1;
                 }
-                if (this.f55441o != i16 && (i18 = this.f55442p) != i16) {
-                    f10 = (this.f55440n * i17) / (this.f55439m * i18);
+                if (this.f56172o != i16 && (i18 = this.f56173p) != i16) {
+                    f10 = (this.f56171n * i17) / (this.f56170m * i18);
                 } else {
                     f10 = -1.0f;
                 }
-                if (this.f55450x) {
-                    cVar = new oe.c(this.f55451y, this.A, this.f55452z, h());
+                if (this.f56181x) {
+                    cVar = new oe.c(this.f56182y, this.A, this.f56183z, h());
                 }
-                if (this.f55427a != null && e.f55397i0.containsKey(this.f55427a)) {
-                    i16 = ((Integer) e.f55397i0.get(this.f55427a)).intValue();
+                if (this.f56158a != null && e.f56128i0.containsKey(this.f56158a)) {
+                    i16 = ((Integer) e.f56128i0.get(this.f56158a)).intValue();
                 }
-                if (this.f55444r == 0 && Float.compare(this.f55445s, 0.0f) == 0 && Float.compare(this.f55446t, 0.0f) == 0) {
-                    if (Float.compare(this.f55447u, 0.0f) == 0) {
+                if (this.f56175r == 0 && Float.compare(this.f56176s, 0.0f) == 0 && Float.compare(this.f56177t, 0.0f) == 0) {
+                    if (Float.compare(this.f56178u, 0.0f) == 0) {
                         i16 = 0;
-                    } else if (Float.compare(this.f55446t, 90.0f) == 0) {
+                    } else if (Float.compare(this.f56177t, 90.0f) == 0) {
                         i16 = 90;
-                    } else if (Float.compare(this.f55446t, -180.0f) != 0 && Float.compare(this.f55446t, 180.0f) != 0) {
-                        if (Float.compare(this.f55446t, -90.0f) == 0) {
+                    } else if (Float.compare(this.f56177t, -180.0f) != 0 && Float.compare(this.f56177t, 180.0f) != 0) {
+                        if (Float.compare(this.f56177t, -90.0f) == 0) {
                             i16 = 270;
                         }
                     } else {
                         i16 = 180;
                     }
                 }
-                bVar.n0(this.f55439m).S(this.f55440n).c0(f10).f0(i16).d0(this.f55448v).j0(this.f55449w).L(cVar);
+                bVar.n0(this.f56170m).S(this.f56171n).c0(f10).f0(i16).d0(this.f56179v).j0(this.f56180w).L(cVar);
                 i15 = 2;
             } else if (!"application/x-subrip".equals(str5) && !"text/x-ssa".equals(str5) && !"text/vtt".equals(str5) && !"application/vobsub".equals(str5) && !"application/pgs".equals(str5) && !"application/dvbsubs".equals(str5)) {
                 throw l0.a("Unexpected MIME type.", null);
             } else {
                 i15 = 3;
             }
-            if (this.f55427a != null && !e.f55397i0.containsKey(this.f55427a)) {
-                bVar.W(this.f55427a);
+            if (this.f56158a != null && !e.f56128i0.containsKey(this.f56158a)) {
+                bVar.W(this.f56158a);
             }
-            Format G = bVar.T(i10).g0(str5).Y(i12).X(this.W).i0(i20).V(singletonList).K(str).O(this.f55438l).G();
-            b0 c11 = mVar.c(this.f55429c, i15);
+            Format G = bVar.T(i10).g0(str5).Y(i12).X(this.W).i0(i20).V(singletonList).K(str).O(this.f56169l).G();
+            b0 c11 = mVar.c(this.f56160c, i15);
             this.X = c11;
             c11.b(G);
         }
@@ -1097,7 +1097,7 @@ public class e implements k {
         public void j() {
             c0 c0Var = this.T;
             if (c0Var != null) {
-                c0Var.a(this.X, this.f55436j);
+                c0Var.a(this.X, this.f56167j);
             }
         }
 
@@ -1115,7 +1115,7 @@ public class e implements k {
         hashMap.put("htc_video_rotA-090", 90);
         hashMap.put("htc_video_rotA-180", 180);
         hashMap.put("htc_video_rotA-270", 270);
-        f55397i0 = Collections.unmodifiableMap(hashMap);
+        f56128i0 = Collections.unmodifiableMap(hashMap);
     }
 
     public e() {
@@ -1123,16 +1123,16 @@ public class e implements k {
     }
 
     private boolean A(tc.y yVar, long j10) {
-        if (this.f55424y) {
+        if (this.f56155y) {
             this.A = j10;
-            yVar.f50603a = this.f55425z;
-            this.f55424y = false;
+            yVar.f50579a = this.f56156z;
+            this.f56155y = false;
             return true;
         }
-        if (this.f55421v) {
+        if (this.f56152v) {
             long j11 = this.A;
             if (j11 != -1) {
-                yVar.f50603a = j11;
+                yVar.f50579a = j11;
                 this.A = -1L;
                 return true;
             }
@@ -1141,15 +1141,15 @@ public class e implements k {
     }
 
     private void B(l lVar, int i10) {
-        if (this.f55406g.g() >= i10) {
+        if (this.f56137g.g() >= i10) {
             return;
         }
-        if (this.f55406g.b() < i10) {
-            h0 h0Var = this.f55406g;
+        if (this.f56137g.b() < i10) {
+            h0 h0Var = this.f56137g;
             h0Var.c(Math.max(h0Var.b() * 2, i10));
         }
-        lVar.readFully(this.f55406g.e(), this.f55406g.g(), i10 - this.f55406g.g());
-        this.f55406g.T(i10);
+        lVar.readFully(this.f56137g.e(), this.f56137g.g(), i10 - this.f56137g.g());
+        this.f56137g.T(i10);
     }
 
     private void C() {
@@ -1161,12 +1161,12 @@ public class e implements k {
         this.X = false;
         this.Y = 0;
         this.Z = (byte) 0;
-        this.f55399a0 = false;
-        this.f55409j.Q(0);
+        this.f56130a0 = false;
+        this.f56140j.Q(0);
     }
 
     private long D(long j10) {
-        long j11 = this.f55417r;
+        long j11 = this.f56148r;
         if (j11 != -9223372036854775807L) {
             return w0.X0(j10, j11, 1000L);
         }
@@ -1220,28 +1220,28 @@ public class e implements k {
     private int H(l lVar, c cVar, int i10, boolean z10) {
         boolean z11;
         int i11;
-        if ("S_TEXT/UTF8".equals(cVar.f55428b)) {
-            I(lVar, f55392d0, i10);
+        if ("S_TEXT/UTF8".equals(cVar.f56159b)) {
+            I(lVar, f56123d0, i10);
             return q();
-        } else if ("S_TEXT/ASS".equals(cVar.f55428b)) {
-            I(lVar, f55394f0, i10);
+        } else if ("S_TEXT/ASS".equals(cVar.f56159b)) {
+            I(lVar, f56125f0, i10);
             return q();
-        } else if ("S_TEXT/WEBVTT".equals(cVar.f55428b)) {
-            I(lVar, f55395g0, i10);
+        } else if ("S_TEXT/WEBVTT".equals(cVar.f56159b)) {
+            I(lVar, f56126g0, i10);
             return q();
         } else {
             b0 b0Var = cVar.X;
             boolean z12 = true;
             if (!this.V) {
-                if (cVar.f55434h) {
+                if (cVar.f56165h) {
                     this.O &= -1073741825;
                     boolean z13 = this.W;
                     int i12 = IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                     if (!z13) {
-                        lVar.readFully(this.f55406g.e(), 0, 1);
+                        lVar.readFully(this.f56137g.e(), 0, 1);
                         this.S++;
-                        if ((this.f55406g.e()[0] & ByteCompanionObject.MIN_VALUE) != 128) {
-                            this.Z = this.f55406g.e()[0];
+                        if ((this.f56137g.e()[0] & ByteCompanionObject.MIN_VALUE) != 128) {
+                            this.Z = this.f56137g.e()[0];
                             this.W = true;
                         } else {
                             throw l0.a("Extension bit is set in signal byte", null);
@@ -1255,42 +1255,42 @@ public class e implements k {
                             z11 = false;
                         }
                         this.O |= 1073741824;
-                        if (!this.f55399a0) {
-                            lVar.readFully(this.f55411l.e(), 0, 8);
+                        if (!this.f56130a0) {
+                            lVar.readFully(this.f56142l.e(), 0, 8);
                             this.S += 8;
-                            this.f55399a0 = true;
-                            byte[] e10 = this.f55406g.e();
+                            this.f56130a0 = true;
+                            byte[] e10 = this.f56137g.e();
                             if (!z11) {
                                 i12 = 0;
                             }
                             e10[0] = (byte) (i12 | 8);
-                            this.f55406g.U(0);
-                            b0Var.e(this.f55406g, 1, 1);
+                            this.f56137g.U(0);
+                            b0Var.e(this.f56137g, 1, 1);
                             this.T++;
-                            this.f55411l.U(0);
-                            b0Var.e(this.f55411l, 8, 1);
+                            this.f56142l.U(0);
+                            b0Var.e(this.f56142l, 8, 1);
                             this.T += 8;
                         }
                         if (z11) {
                             if (!this.X) {
-                                lVar.readFully(this.f55406g.e(), 0, 1);
+                                lVar.readFully(this.f56137g.e(), 0, 1);
                                 this.S++;
-                                this.f55406g.U(0);
-                                this.Y = this.f55406g.H();
+                                this.f56137g.U(0);
+                                this.Y = this.f56137g.H();
                                 this.X = true;
                             }
                             int i13 = this.Y * 4;
-                            this.f55406g.Q(i13);
-                            lVar.readFully(this.f55406g.e(), 0, i13);
+                            this.f56137g.Q(i13);
+                            lVar.readFully(this.f56137g.e(), 0, i13);
                             this.S += i13;
                             short s10 = (short) ((this.Y / 2) + 1);
                             int i14 = (s10 * 6) + 2;
-                            ByteBuffer byteBuffer = this.f55414o;
+                            ByteBuffer byteBuffer = this.f56145o;
                             if (byteBuffer == null || byteBuffer.capacity() < i14) {
-                                this.f55414o = ByteBuffer.allocate(i14);
+                                this.f56145o = ByteBuffer.allocate(i14);
                             }
-                            this.f55414o.position(0);
-                            this.f55414o.putShort(s10);
+                            this.f56145o.position(0);
+                            this.f56145o.putShort(s10);
                             int i15 = 0;
                             int i16 = 0;
                             while (true) {
@@ -1298,51 +1298,51 @@ public class e implements k {
                                 if (i15 >= i11) {
                                     break;
                                 }
-                                int L = this.f55406g.L();
+                                int L = this.f56137g.L();
                                 if (i15 % 2 == 0) {
-                                    this.f55414o.putShort((short) (L - i16));
+                                    this.f56145o.putShort((short) (L - i16));
                                 } else {
-                                    this.f55414o.putInt(L - i16);
+                                    this.f56145o.putInt(L - i16);
                                 }
                                 i15++;
                                 i16 = L;
                             }
                             int i17 = (i10 - this.S) - i16;
                             if (i11 % 2 == 1) {
-                                this.f55414o.putInt(i17);
+                                this.f56145o.putInt(i17);
                             } else {
-                                this.f55414o.putShort((short) i17);
-                                this.f55414o.putInt(0);
+                                this.f56145o.putShort((short) i17);
+                                this.f56145o.putInt(0);
                             }
-                            this.f55412m.S(this.f55414o.array(), i14);
-                            b0Var.e(this.f55412m, i14, 1);
+                            this.f56143m.S(this.f56145o.array(), i14);
+                            b0Var.e(this.f56143m, i14, 1);
                             this.T += i14;
                         }
                     }
                 } else {
-                    byte[] bArr = cVar.f55435i;
+                    byte[] bArr = cVar.f56166i;
                     if (bArr != null) {
-                        this.f55409j.S(bArr, bArr.length);
+                        this.f56140j.S(bArr, bArr.length);
                     }
                 }
                 if (cVar.o(z10)) {
                     this.O |= 268435456;
-                    this.f55413n.Q(0);
-                    int g10 = (this.f55409j.g() + i10) - this.S;
-                    this.f55406g.Q(4);
-                    this.f55406g.e()[0] = (byte) ((g10 >> 24) & SetSpanOperation.SPAN_MAX_PRIORITY);
-                    this.f55406g.e()[1] = (byte) ((g10 >> 16) & SetSpanOperation.SPAN_MAX_PRIORITY);
-                    this.f55406g.e()[2] = (byte) ((g10 >> 8) & SetSpanOperation.SPAN_MAX_PRIORITY);
-                    this.f55406g.e()[3] = (byte) (g10 & SetSpanOperation.SPAN_MAX_PRIORITY);
-                    b0Var.e(this.f55406g, 4, 2);
+                    this.f56144n.Q(0);
+                    int g10 = (this.f56140j.g() + i10) - this.S;
+                    this.f56137g.Q(4);
+                    this.f56137g.e()[0] = (byte) ((g10 >> 24) & SetSpanOperation.SPAN_MAX_PRIORITY);
+                    this.f56137g.e()[1] = (byte) ((g10 >> 16) & SetSpanOperation.SPAN_MAX_PRIORITY);
+                    this.f56137g.e()[2] = (byte) ((g10 >> 8) & SetSpanOperation.SPAN_MAX_PRIORITY);
+                    this.f56137g.e()[3] = (byte) (g10 & SetSpanOperation.SPAN_MAX_PRIORITY);
+                    b0Var.e(this.f56137g, 4, 2);
                     this.T += 4;
                 }
                 this.V = true;
             }
-            int g11 = i10 + this.f55409j.g();
-            if (!"V_MPEG4/ISO/AVC".equals(cVar.f55428b) && !"V_MPEGH/ISO/HEVC".equals(cVar.f55428b)) {
+            int g11 = i10 + this.f56140j.g();
+            if (!"V_MPEG4/ISO/AVC".equals(cVar.f56159b) && !"V_MPEGH/ISO/HEVC".equals(cVar.f56159b)) {
                 if (cVar.T != null) {
-                    if (this.f55409j.g() != 0) {
+                    if (this.f56140j.g() != 0) {
                         z12 = false;
                     }
                     ne.a.g(z12);
@@ -1358,7 +1358,7 @@ public class e implements k {
                     this.T += J;
                 }
             } else {
-                byte[] e11 = this.f55405f.e();
+                byte[] e11 = this.f56136f.e();
                 e11[0] = 0;
                 e11[1] = 0;
                 e11[2] = 0;
@@ -1369,10 +1369,10 @@ public class e implements k {
                     if (i21 == 0) {
                         K(lVar, e11, i20, i19);
                         this.S += i19;
-                        this.f55405f.U(0);
-                        this.U = this.f55405f.L();
-                        this.f55404e.U(0);
-                        b0Var.f(this.f55404e, 4);
+                        this.f56136f.U(0);
+                        this.U = this.f56136f.L();
+                        this.f56135e.U(0);
+                        b0Var.f(this.f56135e, 4);
                         this.T += 4;
                     } else {
                         int J2 = J(lVar, b0Var, i21);
@@ -1382,9 +1382,9 @@ public class e implements k {
                     }
                 }
             }
-            if ("A_VORBIS".equals(cVar.f55428b)) {
-                this.f55407h.U(0);
-                b0Var.f(this.f55407h, 4);
+            if ("A_VORBIS".equals(cVar.f56159b)) {
+                this.f56138h.U(0);
+                b0Var.f(this.f56138h, 4);
                 this.T += 4;
             }
             return q();
@@ -1393,31 +1393,31 @@ public class e implements k {
 
     private void I(l lVar, byte[] bArr, int i10) {
         int length = bArr.length + i10;
-        if (this.f55410k.b() < length) {
-            this.f55410k.R(Arrays.copyOf(bArr, length + i10));
+        if (this.f56141k.b() < length) {
+            this.f56141k.R(Arrays.copyOf(bArr, length + i10));
         } else {
-            System.arraycopy(bArr, 0, this.f55410k.e(), 0, bArr.length);
+            System.arraycopy(bArr, 0, this.f56141k.e(), 0, bArr.length);
         }
-        lVar.readFully(this.f55410k.e(), bArr.length, i10);
-        this.f55410k.U(0);
-        this.f55410k.T(length);
+        lVar.readFully(this.f56141k.e(), bArr.length, i10);
+        this.f56141k.U(0);
+        this.f56141k.T(length);
     }
 
     private int J(l lVar, b0 b0Var, int i10) {
-        int a10 = this.f55409j.a();
+        int a10 = this.f56140j.a();
         if (a10 > 0) {
             int min = Math.min(i10, a10);
-            b0Var.f(this.f55409j, min);
+            b0Var.f(this.f56140j, min);
             return min;
         }
         return b0Var.a(lVar, i10, false);
     }
 
     private void K(l lVar, byte[] bArr, int i10, int i11) {
-        int min = Math.min(i11, this.f55409j.a());
+        int min = Math.min(i11, this.f56140j.a());
         lVar.readFully(bArr, i10 + min, i11 - min);
         if (min > 0) {
-            this.f55409j.l(bArr, i10, min);
+            this.f56140j.l(bArr, i10, min);
         }
     }
 
@@ -1433,19 +1433,19 @@ public class e implements k {
     }
 
     private void j(int i10) {
-        if (this.f55420u != null) {
+        if (this.f56151u != null) {
             return;
         }
         throw l0.a("Element " + i10 + " must be in a TrackEntry", null);
     }
 
     private void k() {
-        ne.a.i(this.f55401b0);
+        ne.a.i(this.f56132b0);
     }
 
     private tc.z m(z zVar, z zVar2) {
         int i10;
-        if (this.f55416q != -1 && this.f55419t != -9223372036854775807L && zVar != null && zVar.c() != 0 && zVar2 != null && zVar2.c() == zVar.c()) {
+        if (this.f56147q != -1 && this.f56150t != -9223372036854775807L && zVar != null && zVar.c() != 0 && zVar2 != null && zVar2.c() == zVar.c()) {
             int c10 = zVar.c();
             int[] iArr = new int[c10];
             long[] jArr = new long[c10];
@@ -1454,7 +1454,7 @@ public class e implements k {
             int i11 = 0;
             for (int i12 = 0; i12 < c10; i12++) {
                 jArr3[i12] = zVar.b(i12);
-                jArr[i12] = this.f55416q + zVar2.b(i12);
+                jArr[i12] = this.f56147q + zVar2.b(i12);
             }
             while (true) {
                 i10 = c10 - 1;
@@ -1466,8 +1466,8 @@ public class e implements k {
                 jArr2[i11] = jArr3[i13] - jArr3[i11];
                 i11 = i13;
             }
-            iArr[i10] = (int) ((this.f55416q + this.f55415p) - jArr[i10]);
-            long j10 = this.f55419t - jArr3[i10];
+            iArr[i10] = (int) ((this.f56147q + this.f56146p) - jArr[i10]);
+            long j10 = this.f56150t - jArr3[i10];
             jArr2[i10] = j10;
             if (j10 <= 0) {
                 y.i("MatroskaExtractor", "Discarding last cue point with unexpected duration: " + j10);
@@ -1478,7 +1478,7 @@ public class e implements k {
             }
             return new tc.c(iArr, jArr, jArr2, jArr3);
         }
-        return new z.b(this.f55419t);
+        return new z.b(this.f56150t);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:28:0x009e  */
@@ -1496,7 +1496,7 @@ public class e implements k {
             if (r2 == 0) goto L1c
             r3 = r2
             tc.b0 r2 = r1.X
-            tc.b0$a r8 = r1.f55436j
+            tc.b0$a r8 = r1.f56167j
             r5 = r21
             r6 = r22
             r7 = r23
@@ -1506,15 +1506,15 @@ public class e implements k {
             goto Lc8
         L1c:
             java.lang.String r2 = "S_TEXT/UTF8"
-            java.lang.String r3 = r1.f55428b
+            java.lang.String r3 = r1.f56159b
             boolean r2 = r2.equals(r3)
             if (r2 != 0) goto L3a
             java.lang.String r2 = "S_TEXT/ASS"
-            java.lang.String r3 = r1.f55428b
+            java.lang.String r3 = r1.f56159b
             boolean r2 = r2.equals(r3)
             if (r2 != 0) goto L3a
             java.lang.String r2 = "S_TEXT/WEBVTT"
-            java.lang.String r3 = r1.f55428b
+            java.lang.String r3 = r1.f56159b
             boolean r2 = r2.equals(r3)
             if (r2 == 0) goto L56
         L3a:
@@ -1535,21 +1535,21 @@ public class e implements k {
             r2 = r22
             goto L98
         L59:
-            java.lang.String r2 = r1.f55428b
-            ne.h0 r3 = r0.f55410k
+            java.lang.String r2 = r1.f56159b
+            ne.h0 r3 = r0.f56141k
             byte[] r3 = r3.e()
             E(r2, r4, r3)
-            ne.h0 r2 = r0.f55410k
+            ne.h0 r2 = r0.f56141k
             int r2 = r2.f()
         L6a:
-            ne.h0 r3 = r0.f55410k
+            ne.h0 r3 = r0.f56141k
             int r3 = r3.g()
             if (r2 >= r3) goto L85
-            ne.h0 r3 = r0.f55410k
+            ne.h0 r3 = r0.f56141k
             byte[] r3 = r3.e()
             r3 = r3[r2]
             if (r3 != 0) goto L82
-            ne.h0 r3 = r0.f55410k
+            ne.h0 r3 = r0.f56141k
             r3.T(r2)
             goto L85
         L82:
@@ -1557,10 +1557,10 @@ public class e implements k {
             goto L6a
         L85:
             tc.b0 r2 = r1.X
-            ne.h0 r3 = r0.f55410k
+            ne.h0 r3 = r0.f56141k
             int r4 = r3.g()
             r2.f(r3, r4)
-            ne.h0 r2 = r0.f55410k
+            ne.h0 r2 = r0.f56141k
             int r2 = r2.g()
             int r2 = r22 + r2
         L98:
@@ -1569,22 +1569,22 @@ public class e implements k {
             if (r3 == 0) goto Lb8
             int r3 = r0.K
             if (r3 <= r9) goto La9
-            ne.h0 r3 = r0.f55413n
+            ne.h0 r3 = r0.f56144n
             r4 = 0
             r3.Q(r4)
             goto Lb8
         La9:
-            ne.h0 r3 = r0.f55413n
+            ne.h0 r3 = r0.f56144n
             int r3 = r3.g()
             tc.b0 r4 = r1.X
-            ne.h0 r5 = r0.f55413n
+            ne.h0 r5 = r0.f56144n
             r6 = 2
             r4.e(r5, r3, r6)
             int r2 = r2 + r3
         Lb8:
             r14 = r2
             tc.b0 r10 = r1.X
-            tc.b0$a r1 = r1.f55436j
+            tc.b0$a r1 = r1.f56167j
             r11 = r19
             r13 = r21
             r15 = r23
@@ -1882,13 +1882,13 @@ public class e implements k {
                             if (i10 != 21968) {
                                 if (i10 != 408125543) {
                                     if (i10 != 475249515) {
-                                        if (i10 == 524531317 && !this.f55421v) {
-                                            if (this.f55403d && this.f55425z != -1) {
-                                                this.f55424y = true;
+                                        if (i10 == 524531317 && !this.f56152v) {
+                                            if (this.f56134d && this.f56156z != -1) {
+                                                this.f56155y = true;
                                                 return;
                                             }
-                                            this.f55401b0.q(new z.b(this.f55419t));
-                                            this.f55421v = true;
+                                            this.f56132b0.q(new z.b(this.f56150t));
+                                            this.f56152v = true;
                                             return;
                                         }
                                         return;
@@ -1897,28 +1897,28 @@ public class e implements k {
                                     this.D = new ne.z();
                                     return;
                                 }
-                                long j12 = this.f55416q;
+                                long j12 = this.f56147q;
                                 if (j12 != -1 && j12 != j10) {
                                     throw l0.a("Multiple Segment elements not supported", null);
                                 }
-                                this.f55416q = j10;
-                                this.f55415p = j11;
+                                this.f56147q = j10;
+                                this.f56146p = j11;
                                 return;
                             }
-                            t(i10).f55450x = true;
+                            t(i10).f56181x = true;
                             return;
                         }
-                        t(i10).f55434h = true;
+                        t(i10).f56165h = true;
                         return;
                     }
-                    this.f55422w = -1;
-                    this.f55423x = -1L;
+                    this.f56153w = -1;
+                    this.f56154x = -1L;
                     return;
                 }
                 this.E = false;
                 return;
             }
-            this.f55420u = new c();
+            this.f56151u = new c();
             return;
         }
         this.Q = false;
@@ -1935,7 +1935,7 @@ public class e implements k {
                     }
                     return;
                 }
-                t(i10).f55427a = str;
+                t(i10).f56158a = str;
                 return;
             } else if (!"webm".equals(str) && !"matroska".equals(str)) {
                 throw l0.a("DocType " + str + " not supported", null);
@@ -1943,24 +1943,24 @@ public class e implements k {
                 return;
             }
         }
-        t(i10).f55428b = str;
+        t(i10).f56159b = str;
     }
 
     @Override // tc.k
     public void a(long j10, long j11) {
         this.B = -9223372036854775807L;
         this.G = 0;
-        this.f55398a.reset();
-        this.f55400b.e();
+        this.f56129a.reset();
+        this.f56131b.e();
         C();
-        for (int i10 = 0; i10 < this.f55402c.size(); i10++) {
-            ((c) this.f55402c.valueAt(i10)).n();
+        for (int i10 = 0; i10 < this.f56133c.size(); i10++) {
+            ((c) this.f56133c.valueAt(i10)).n();
         }
     }
 
     @Override // tc.k
     public final void c(m mVar) {
-        this.f55401b0 = mVar;
+        this.f56132b0 = mVar;
     }
 
     @Override // tc.k
@@ -1968,7 +1968,7 @@ public class e implements k {
         this.F = false;
         boolean z10 = true;
         while (z10 && !this.F) {
-            z10 = this.f55398a.a(lVar);
+            z10 = this.f56129a.a(lVar);
             if (z10 && A(yVar, lVar.getPosition())) {
                 return 1;
             }
@@ -1976,8 +1976,8 @@ public class e implements k {
         if (z10) {
             return 0;
         }
-        for (int i10 = 0; i10 < this.f55402c.size(); i10++) {
-            c cVar = (c) this.f55402c.valueAt(i10);
+        for (int i10 = 0; i10 < this.f56133c.size(); i10++) {
+            c cVar = (c) this.f56133c.valueAt(i10);
             cVar.f();
             cVar.j();
         }
@@ -2015,56 +2015,56 @@ public class e implements k {
                             if (i10 != 357149030) {
                                 if (i10 != 374648427) {
                                     if (i10 == 475249515) {
-                                        if (!this.f55421v) {
-                                            this.f55401b0.q(m(this.C, this.D));
-                                            this.f55421v = true;
+                                        if (!this.f56152v) {
+                                            this.f56132b0.q(m(this.C, this.D));
+                                            this.f56152v = true;
                                         }
                                         this.C = null;
                                         this.D = null;
                                         return;
                                     }
                                     return;
-                                } else if (this.f55402c.size() != 0) {
-                                    this.f55401b0.s();
+                                } else if (this.f56133c.size() != 0) {
+                                    this.f56132b0.s();
                                     return;
                                 } else {
                                     throw l0.a("No valid tracks were found", null);
                                 }
                             }
-                            if (this.f55417r == -9223372036854775807L) {
-                                this.f55417r = 1000000L;
+                            if (this.f56148r == -9223372036854775807L) {
+                                this.f56148r = 1000000L;
                             }
-                            long j10 = this.f55418s;
+                            long j10 = this.f56149s;
                             if (j10 != -9223372036854775807L) {
-                                this.f55419t = D(j10);
+                                this.f56150t = D(j10);
                                 return;
                             }
                             return;
                         }
                         j(i10);
-                        c cVar = this.f55420u;
-                        if (cVar.f55434h && cVar.f55435i != null) {
+                        c cVar = this.f56151u;
+                        if (cVar.f56165h && cVar.f56166i != null) {
                             throw l0.a("Combining encryption and compression is not supported", null);
                         }
                         return;
                     }
                     j(i10);
-                    c cVar2 = this.f55420u;
-                    if (cVar2.f55434h) {
-                        if (cVar2.f55436j != null) {
-                            cVar2.f55438l = new rc.m(new m.b(lc.d.f36579a, "video/webm", this.f55420u.f55436j.f50503b));
+                    c cVar2 = this.f56151u;
+                    if (cVar2.f56165h) {
+                        if (cVar2.f56167j != null) {
+                            cVar2.f56169l = new rc.m(new m.b(lc.d.f35972a, "video/webm", this.f56151u.f56167j.f50479b));
                             return;
                         }
                         throw l0.a("Encrypted Track found but ContentEncKeyID was not found", null);
                     }
                     return;
                 }
-                int i11 = this.f55422w;
+                int i11 = this.f56153w;
                 if (i11 != -1) {
-                    long j11 = this.f55423x;
+                    long j11 = this.f56154x;
                     if (j11 != -1) {
                         if (i11 == 475249515) {
-                            this.f55425z = j11;
+                            this.f56156z = j11;
                             return;
                         }
                         return;
@@ -2072,22 +2072,22 @@ public class e implements k {
                 }
                 throw l0.a("Mandatory element SeekID or SeekPosition not found", null);
             }
-            c cVar3 = (c) ne.a.i(this.f55420u);
-            String str = cVar3.f55428b;
+            c cVar3 = (c) ne.a.i(this.f56151u);
+            String str = cVar3.f56159b;
             if (str != null) {
                 if (y(str)) {
-                    cVar3.i(this.f55401b0, cVar3.f55429c);
-                    this.f55402c.put(cVar3.f55429c, cVar3);
+                    cVar3.i(this.f56132b0, cVar3.f56160c);
+                    this.f56133c.put(cVar3.f56160c, cVar3);
                 }
-                this.f55420u = null;
+                this.f56151u = null;
                 return;
             }
             throw l0.a("CodecId is missing in TrackEntry element", null);
         } else if (this.G == 2) {
-            c cVar4 = (c) this.f55402c.get(this.M);
+            c cVar4 = (c) this.f56133c.get(this.M);
             cVar4.f();
-            if (this.R > 0 && "A_OPUS".equals(cVar4.f55428b)) {
-                this.f55413n.R(ByteBuffer.allocate(8).order(ByteOrder.LITTLE_ENDIAN).putLong(this.R).array());
+            if (this.R > 0 && "A_OPUS".equals(cVar4.f56159b)) {
+                this.f56144n.R(ByteBuffer.allocate(8).order(ByteOrder.LITTLE_ENDIAN).putLong(this.R).array());
             }
             int i12 = 0;
             for (int i13 = 0; i13 < this.K; i13++) {
@@ -2095,7 +2095,7 @@ public class e implements k {
             }
             int i14 = 0;
             while (i14 < this.K) {
-                long j12 = this.H + ((cVar4.f55431e * i14) / 1000);
+                long j12 = this.H + ((cVar4.f56162e * i14) / 1000);
                 int i15 = this.O;
                 if (i14 == 0 && !this.Q) {
                     i15 |= 1;
@@ -2147,20 +2147,20 @@ public class e implements k {
                     default:
                         switch (i10) {
                             case 30323:
-                                t(i10).f55445s = (float) d10;
+                                t(i10).f56176s = (float) d10;
                                 return;
                             case 30324:
-                                t(i10).f55446t = (float) d10;
+                                t(i10).f56177t = (float) d10;
                                 return;
                             case 30325:
-                                t(i10).f55447u = (float) d10;
+                                t(i10).f56178u = (float) d10;
                                 return;
                             default:
                                 return;
                         }
                 }
             }
-            this.f55418s = (long) d10;
+            this.f56149s = (long) d10;
             return;
         }
         t(i10).Q = (int) d10;
@@ -2168,7 +2168,7 @@ public class e implements k {
 
     protected c t(int i10) {
         j(i10);
-        return this.f55420u;
+        return this.f56151u;
     }
 
     protected int u(int i10) {
@@ -2276,7 +2276,7 @@ public class e implements k {
     }
 
     protected void v(c cVar, l lVar, int i10) {
-        if (cVar.f55433g != 1685485123 && cVar.f55433g != 1685480259) {
+        if (cVar.f56164g != 1685485123 && cVar.f56164g != 1685480259) {
             lVar.k(i10);
             return;
         }
@@ -2286,9 +2286,9 @@ public class e implements k {
     }
 
     protected void w(c cVar, int i10, l lVar, int i11) {
-        if (i10 == 4 && "V_VP9".equals(cVar.f55428b)) {
-            this.f55413n.Q(i11);
-            lVar.readFully(this.f55413n.e(), 0, i11);
+        if (i10 == 4 && "V_VP9".equals(cVar.f56159b)) {
+            this.f56144n.Q(i11);
+            lVar.readFully(this.f56144n.e(), 0, i11);
             return;
         }
         lVar.k(i11);
@@ -2300,7 +2300,7 @@ public class e implements k {
                 boolean z10 = false;
                 switch (i10) {
                     case 131:
-                        t(i10).f55430d = (int) j10;
+                        t(i10).f56161d = (int) j10;
                         return;
                     case 136:
                         c t10 = t(i10);
@@ -2316,17 +2316,17 @@ public class e implements k {
                         t(i10).O = (int) j10;
                         return;
                     case 176:
-                        t(i10).f55439m = (int) j10;
+                        t(i10).f56170m = (int) j10;
                         return;
                     case 179:
                         i(i10);
                         this.C.a(D(j10));
                         return;
                     case 186:
-                        t(i10).f55440n = (int) j10;
+                        t(i10).f56171n = (int) j10;
                         return;
                     case 215:
-                        t(i10).f55429c = (int) j10;
+                        t(i10).f56160c = (int) j10;
                         return;
                     case 231:
                         this.B = D(j10);
@@ -2346,7 +2346,7 @@ public class e implements k {
                         this.Q = true;
                         return;
                     case 16871:
-                        t(i10).f55433g = (int) j10;
+                        t(i10).f56164g = (int) j10;
                         return;
                     case 16980:
                         if (j10 != 3) {
@@ -2374,7 +2374,7 @@ public class e implements k {
                         }
                         return;
                     case 21420:
-                        this.f55423x = j10 + this.f55416q;
+                        this.f56154x = j10 + this.f56147q;
                         return;
                     case 21432:
                         int i11 = (int) j10;
@@ -2383,27 +2383,27 @@ public class e implements k {
                             if (i11 != 1) {
                                 if (i11 != 3) {
                                     if (i11 == 15) {
-                                        this.f55420u.f55449w = 3;
+                                        this.f56151u.f56180w = 3;
                                         return;
                                     }
                                     return;
                                 }
-                                this.f55420u.f55449w = 1;
+                                this.f56151u.f56180w = 1;
                                 return;
                             }
-                            this.f55420u.f55449w = 2;
+                            this.f56151u.f56180w = 2;
                             return;
                         }
-                        this.f55420u.f55449w = 0;
+                        this.f56151u.f56180w = 0;
                         return;
                     case 21680:
-                        t(i10).f55441o = (int) j10;
+                        t(i10).f56172o = (int) j10;
                         return;
                     case 21682:
-                        t(i10).f55443q = (int) j10;
+                        t(i10).f56174q = (int) j10;
                         return;
                     case 21690:
-                        t(i10).f55442p = (int) j10;
+                        t(i10).f56173p = (int) j10;
                         return;
                     case 21930:
                         c t11 = t(i10);
@@ -2413,7 +2413,7 @@ public class e implements k {
                         t11.U = z10;
                         return;
                     case 21998:
-                        t(i10).f55432f = (int) j10;
+                        t(i10).f56163f = (int) j10;
                         return;
                     case 22186:
                         t(i10).R = j10;
@@ -2434,24 +2434,24 @@ public class e implements k {
                             if (i12 != 1) {
                                 if (i12 != 2) {
                                     if (i12 == 3) {
-                                        this.f55420u.f55444r = 3;
+                                        this.f56151u.f56175r = 3;
                                         return;
                                     }
                                     return;
                                 }
-                                this.f55420u.f55444r = 2;
+                                this.f56151u.f56175r = 2;
                                 return;
                             }
-                            this.f55420u.f55444r = 1;
+                            this.f56151u.f56175r = 1;
                             return;
                         }
-                        this.f55420u.f55444r = 0;
+                        this.f56151u.f56175r = 0;
                         return;
                     case 2352003:
-                        t(i10).f55431e = (int) j10;
+                        t(i10).f56162e = (int) j10;
                         return;
                     case 2807729:
-                        this.f55417r = j10;
+                        this.f56148r = j10;
                         return;
                     default:
                         switch (i10) {
@@ -2460,27 +2460,27 @@ public class e implements k {
                                 int i13 = (int) j10;
                                 if (i13 != 1) {
                                     if (i13 == 2) {
-                                        this.f55420u.A = 1;
+                                        this.f56151u.A = 1;
                                         return;
                                     }
                                     return;
                                 }
-                                this.f55420u.A = 2;
+                                this.f56151u.A = 2;
                                 return;
                             case 21946:
                                 j(i10);
                                 int i14 = oe.c.i((int) j10);
                                 if (i14 != -1) {
-                                    this.f55420u.f55452z = i14;
+                                    this.f56151u.f56183z = i14;
                                     return;
                                 }
                                 return;
                             case 21947:
                                 j(i10);
-                                this.f55420u.f55450x = true;
+                                this.f56151u.f56181x = true;
                                 int h10 = oe.c.h((int) j10);
                                 if (h10 != -1) {
-                                    this.f55420u.f55451y = h10;
+                                    this.f56151u.f56182y = h10;
                                     return;
                                 }
                                 return;
@@ -2515,28 +2515,28 @@ public class e implements k {
     }
 
     e(zc.c cVar, int i10) {
-        this.f55416q = -1L;
-        this.f55417r = -9223372036854775807L;
-        this.f55418s = -9223372036854775807L;
-        this.f55419t = -9223372036854775807L;
-        this.f55425z = -1L;
+        this.f56147q = -1L;
+        this.f56148r = -9223372036854775807L;
+        this.f56149s = -9223372036854775807L;
+        this.f56150t = -9223372036854775807L;
+        this.f56156z = -1L;
         this.A = -1L;
         this.B = -9223372036854775807L;
-        this.f55398a = cVar;
+        this.f56129a = cVar;
         cVar.b(new b());
-        this.f55403d = (i10 & 1) == 0;
-        this.f55400b = new g();
-        this.f55402c = new SparseArray();
-        this.f55406g = new h0(4);
-        this.f55407h = new h0(ByteBuffer.allocate(4).putInt(-1).array());
-        this.f55408i = new h0(4);
-        this.f55404e = new h0(d0.f39510a);
-        this.f55405f = new h0(4);
-        this.f55409j = new h0();
-        this.f55410k = new h0();
-        this.f55411l = new h0(8);
-        this.f55412m = new h0();
-        this.f55413n = new h0();
+        this.f56134d = (i10 & 1) == 0;
+        this.f56131b = new g();
+        this.f56133c = new SparseArray();
+        this.f56137g = new h0(4);
+        this.f56138h = new h0(ByteBuffer.allocate(4).putInt(-1).array());
+        this.f56139i = new h0(4);
+        this.f56135e = new h0(d0.f38865a);
+        this.f56136f = new h0(4);
+        this.f56140j = new h0();
+        this.f56141k = new h0();
+        this.f56142l = new h0(8);
+        this.f56143m = new h0();
+        this.f56144n = new h0();
         this.L = new int[1];
     }
 

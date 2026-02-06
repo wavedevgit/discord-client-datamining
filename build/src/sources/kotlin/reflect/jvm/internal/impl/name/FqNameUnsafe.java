@@ -15,22 +15,22 @@ public final class FqNameUnsafe {
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: e  reason: collision with root package name */
-    private static final Name f33809e;
+    private static final Name f33829e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final Pattern f33810f;
+    private static final Pattern f33830f;
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f33811a;
+    private final String f33831a;
 
     /* renamed from: b  reason: collision with root package name */
-    private transient FqName f33812b;
+    private transient FqName f33832b;
 
     /* renamed from: c  reason: collision with root package name */
-    private transient FqNameUnsafe f33813c;
+    private transient FqNameUnsafe f33833c;
 
     /* renamed from: d  reason: collision with root package name */
-    private transient Name f33814d;
+    private transient Name f33834d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
@@ -53,10 +53,10 @@ public final class FqNameUnsafe {
     static {
         Name special = Name.special("<root>");
         Intrinsics.checkNotNullExpressionValue(special, "special(...)");
-        f33809e = special;
+        f33829e = special;
         Pattern compile = Pattern.compile("\\.");
         Intrinsics.checkNotNullExpressionValue(compile, "compile(...)");
-        f33810f = compile;
+        f33830f = compile;
     }
 
     public /* synthetic */ FqNameUnsafe(String str, FqNameUnsafe fqNameUnsafe, Name name, DefaultConstructorMarker defaultConstructorMarker) {
@@ -64,18 +64,18 @@ public final class FqNameUnsafe {
     }
 
     private final void a() {
-        int b10 = b(this.f33811a);
+        int b10 = b(this.f33831a);
         if (b10 >= 0) {
-            String substring = this.f33811a.substring(b10 + 1);
+            String substring = this.f33831a.substring(b10 + 1);
             Intrinsics.checkNotNullExpressionValue(substring, "substring(...)");
-            this.f33814d = Name.guessByFirstCharacter(substring);
-            String substring2 = this.f33811a.substring(0, b10);
+            this.f33834d = Name.guessByFirstCharacter(substring);
+            String substring2 = this.f33831a.substring(0, b10);
             Intrinsics.checkNotNullExpressionValue(substring2, "substring(...)");
-            this.f33813c = new FqNameUnsafe(substring2);
+            this.f33833c = new FqNameUnsafe(substring2);
             return;
         }
-        this.f33814d = Name.guessByFirstCharacter(this.f33811a);
-        this.f33813c = FqName.ROOT.toUnsafe();
+        this.f33834d = Name.guessByFirstCharacter(this.f33831a);
+        this.f33833c = FqName.ROOT.toUnsafe();
     }
 
     private final int b(String str) {
@@ -107,7 +107,7 @@ public final class FqNameUnsafe {
 
     @NotNull
     public final String asString() {
-        return this.f33811a;
+        return this.f33831a;
     }
 
     @NotNull
@@ -117,7 +117,7 @@ public final class FqNameUnsafe {
         if (isRoot()) {
             str = name.asString();
         } else {
-            str = this.f33811a + '.' + name.asString();
+            str = this.f33831a + '.' + name.asString();
         }
         Intrinsics.checkNotNull(str);
         return new FqNameUnsafe(str, this, name);
@@ -127,25 +127,25 @@ public final class FqNameUnsafe {
         if (this == obj) {
             return true;
         }
-        if ((obj instanceof FqNameUnsafe) && Intrinsics.areEqual(this.f33811a, ((FqNameUnsafe) obj).f33811a)) {
+        if ((obj instanceof FqNameUnsafe) && Intrinsics.areEqual(this.f33831a, ((FqNameUnsafe) obj).f33831a)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return this.f33811a.hashCode();
+        return this.f33831a.hashCode();
     }
 
     public final boolean isRoot() {
-        if (this.f33811a.length() == 0) {
+        if (this.f33831a.length() == 0) {
             return true;
         }
         return false;
     }
 
     public final boolean isSafe() {
-        if (this.f33812b == null && StringsKt.h0(asString(), '<', 0, false, 6, null) >= 0) {
+        if (this.f33832b == null && StringsKt.h0(asString(), '<', 0, false, 6, null) >= 0) {
             return false;
         }
         return true;
@@ -153,13 +153,13 @@ public final class FqNameUnsafe {
 
     @NotNull
     public final FqNameUnsafe parent() {
-        FqNameUnsafe fqNameUnsafe = this.f33813c;
+        FqNameUnsafe fqNameUnsafe = this.f33833c;
         if (fqNameUnsafe != null) {
             return fqNameUnsafe;
         }
         if (!isRoot()) {
             a();
-            FqNameUnsafe fqNameUnsafe2 = this.f33813c;
+            FqNameUnsafe fqNameUnsafe2 = this.f33833c;
             Intrinsics.checkNotNull(fqNameUnsafe2);
             return fqNameUnsafe2;
         }
@@ -173,13 +173,13 @@ public final class FqNameUnsafe {
 
     @NotNull
     public final Name shortName() {
-        Name name = this.f33814d;
+        Name name = this.f33834d;
         if (name != null) {
             return name;
         }
         if (!isRoot()) {
             a();
-            Name name2 = this.f33814d;
+            Name name2 = this.f33834d;
             Intrinsics.checkNotNull(name2);
             return name2;
         }
@@ -189,7 +189,7 @@ public final class FqNameUnsafe {
     @NotNull
     public final Name shortNameOrSpecial() {
         if (isRoot()) {
-            return f33809e;
+            return f33829e;
         }
         return shortName();
     }
@@ -199,14 +199,14 @@ public final class FqNameUnsafe {
         if (isRoot()) {
             return false;
         }
-        int h02 = StringsKt.h0(this.f33811a, '.', 0, false, 6, null);
+        int h02 = StringsKt.h0(this.f33831a, '.', 0, false, 6, null);
         if (h02 == -1) {
-            h02 = this.f33811a.length();
+            h02 = this.f33831a.length();
         }
         int i10 = h02;
         String asString = segment.asString();
         Intrinsics.checkNotNullExpressionValue(asString, "asString(...)");
-        if (i10 != asString.length() || !StringsKt.E(this.f33811a, 0, asString, 0, i10, false, 16, null)) {
+        if (i10 != asString.length() || !StringsKt.E(this.f33831a, 0, asString, 0, i10, false, 16, null)) {
             return false;
         }
         return true;
@@ -214,10 +214,10 @@ public final class FqNameUnsafe {
 
     @NotNull
     public final FqName toSafe() {
-        FqName fqName = this.f33812b;
+        FqName fqName = this.f33832b;
         if (fqName == null) {
             FqName fqName2 = new FqName(this);
-            this.f33812b = fqName2;
+            this.f33832b = fqName2;
             return fqName2;
         }
         return fqName;
@@ -226,28 +226,28 @@ public final class FqNameUnsafe {
     @NotNull
     public String toString() {
         if (isRoot()) {
-            String asString = f33809e.asString();
+            String asString = f33829e.asString();
             Intrinsics.checkNotNullExpressionValue(asString, "asString(...)");
             return asString;
         }
-        return this.f33811a;
+        return this.f33831a;
     }
 
     public FqNameUnsafe(@NotNull String fqName, @NotNull FqName safe) {
         Intrinsics.checkNotNullParameter(fqName, "fqName");
         Intrinsics.checkNotNullParameter(safe, "safe");
-        this.f33811a = fqName;
-        this.f33812b = safe;
+        this.f33831a = fqName;
+        this.f33832b = safe;
     }
 
     public FqNameUnsafe(@NotNull String fqName) {
         Intrinsics.checkNotNullParameter(fqName, "fqName");
-        this.f33811a = fqName;
+        this.f33831a = fqName;
     }
 
     private FqNameUnsafe(String str, FqNameUnsafe fqNameUnsafe, Name name) {
-        this.f33811a = str;
-        this.f33813c = fqNameUnsafe;
-        this.f33814d = name;
+        this.f33831a = str;
+        this.f33833c = fqNameUnsafe;
+        this.f33834d = name;
     }
 }

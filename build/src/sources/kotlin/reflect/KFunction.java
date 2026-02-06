@@ -11,6 +11,6 @@ public interface KFunction extends KCallable, Function {
 
     boolean isOperator();
 
-    @Override // 
+    @Override // kotlin.reflect.KCallable
     boolean isSuspend();
 }

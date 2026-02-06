@@ -1,226 +1,278 @@
 // modules/age_assurance/AgeVerificationUtils.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var7 = require;
-    var5 = metroImportDefault;
+    var9 = require;
+    var7 = metroImportDefault;
     var2 = exports;
-    var8 = dependencyMap;
-    var _closure1_slot0 = var7;
-    var _closure1_slot1 = var5;
-    var _closure1_slot2 = var8;
-    var3 = global;
-    var9 = var3.Object;
-    var6 = var9.defineProperty;
-    var4 = {};
+    var10 = dependencyMap;
+    var _closure1_slot0 = var9;
+    var _closure1_slot1 = var7;
+    var _closure1_slot2 = var10;
+    var4 = function() {
+        _fun38922: for (var _fun38922_ip = 0;;) switch (_fun38922_ip) {
+            case 0:
+                var2 = _closure1_slot9;
+                var0 = var2.getCurrentUser;
+                var3 = var0.bind(var2)();
+                var2 = null;
+                var0 = var2 == var3;
+                var4 = undefined;
+                var6 = undefined;
+                if (var0) {
+                    _fun38922_ip = 35;
+                    continue _fun38922
+                }
+            case 29:
+                var6 = var3.ageVerificationStatus;
+            case 35:
+                var7 = _closure1_slot0;
+                var0 = _closure1_slot2;
+                var5 = 13;
+                var0 = var0[var5];
+                var0 = var7.bind(var4)(var0);
+                var0 = var0.AgeVerificationStatusUkAndAusOnly;
+                var0 = var0.UNVERIFIED;
+                var0 = var6 !== var0;
+                if (!var0) {
+                    _fun38922_ip = 122;
+                    continue _fun38922
+                }
+            case 74:
+                var6 = var2 == var3;
+                var2 = undefined;
+                if (var6) {
+                    _fun38922_ip = 89;
+                    continue _fun38922
+                }
+            case 83:
+                var2 = var3.ageVerificationStatus;
+            case 89:
+                var3 = _closure1_slot0;
+                var1 = _closure1_slot2;
+                var1 = var1[var5];
+                var1 = var3.bind(var4)(var1);
+                var1 = var1.AgeVerificationStatusUkAndAusOnly;
+                var1 = var1.CLIENT_ONLY_PENDING;
+                var0 = var2 !== var1;
+            case 122:
+                return var0;
+        }
+    };
+    var _closure1_slot18 = var4;
+    var3 = function() {
+        _fun38923: for (var _fun38923_ip = 0;;) switch (_fun38923_ip) {
+            case 0:
+                var2 = _closure1_slot0;
+                var3 = _closure1_slot2;
+                var0 = 14;
+                var0 = var3[var0];
+                var4 = undefined;
+                var5 = var2.bind(var4)(var0);
+                var3 = var5.useStateFromStores;
+                var0 = _closure1_slot9;
+                var2 = new Array(1);
+                var2[0] = var0;
+                var0 = function() { // Environment: var0
+                    var1 = _closure1_slot9;
+                    var0 = var1.getCurrentUser;
+                    var0 = var0.bind(var1)();
+                    return var0;
+                };
+                var3 = var3.bind(var5)(var2, var0);
+                var2 = null;
+                var0 = var2 == var3;
+                var6 = undefined;
+                if (var0) {
+                    _fun38923_ip = 72;
+                    continue _fun38923
+                }
+            case 66:
+                var6 = var3.ageVerificationStatus;
+            case 72:
+                var7 = _closure1_slot0;
+                var0 = _closure1_slot2;
+                var5 = 13;
+                var0 = var0[var5];
+                var0 = var7.bind(var4)(var0);
+                var0 = var0.AgeVerificationStatusUkAndAusOnly;
+                var0 = var0.UNVERIFIED;
+                var0 = var6 !== var0;
+                if (!var0) {
+                    _fun38923_ip = 159;
+                    continue _fun38923
+                }
+            case 111:
+                var6 = var2 == var3;
+                var2 = undefined;
+                if (var6) {
+                    _fun38923_ip = 126;
+                    continue _fun38923
+                }
+            case 120:
+                var2 = var3.ageVerificationStatus;
+            case 126:
+                var3 = _closure1_slot0;
+                var1 = _closure1_slot2;
+                var1 = var1[var5];
+                var1 = var3.bind(var4)(var1);
+                var1 = var1.AgeVerificationStatusUkAndAusOnly;
+                var1 = var1.CLIENT_ONLY_PENDING;
+                var0 = var2 !== var1;
+            case 159:
+                return var0;
+        }
+    };
+    var _closure1_slot19 = var3;
+    var5 = global;
+    var11 = var5.Object;
+    var8 = var11.defineProperty;
+    var6 = {};
     var0 = true;
-    var4.value = var0;
+    var6.value = var0;
     var0 = '__esModule';
-    var0 = var6.bind(var9)(var2, var0, var4);
+    var0 = var8.bind(var11)(var2, var0, var6);
     var0 = 0;
-    var4 = var8[var0];
+    var6 = var10[var0];
     var0 = undefined;
-    var4 = var5.bind(var0)(var4);
-    var _closure1_slot3 = var4;
-    var4 = 1;
-    var4 = var8[var4];
-    var4 = var5.bind(var0)(var4);
-    var _closure1_slot4 = var4;
-    var4 = 2;
-    var6 = var8[var4];
-    var4 = metroImportAll;
-    var4 = var4.bind(var0)(var6);
-    var _closure1_slot5 = var4;
-    var4 = 3;
-    var4 = var8[var4];
-    var4 = var5.bind(var0)(var4);
-    var _closure1_slot6 = var4;
-    var4 = 4;
-    var4 = var8[var4];
-    var4 = var5.bind(var0)(var4);
-    var _closure1_slot7 = var4;
-    var4 = 5;
-    var4 = var8[var4];
-    var4 = var5.bind(var0)(var4);
-    var _closure1_slot8 = var4;
-    var4 = 6;
-    var4 = var8[var4];
-    var4 = var7.bind(var0)(var4);
-    var4 = var4.FULLSCREEN_AGE_VERIFICATION_ENTRY_POINTS;
-    var _closure1_slot9 = var4;
-    var4 = 7;
-    var4 = var8[var4];
-    var4 = var7.bind(var0)(var4);
-    var4 = var4.MessageEmbedTypes;
-    var _closure1_slot10 = var4;
-    var4 = 8;
-    var4 = var8[var4];
-    var4 = var7.bind(var0)(var4);
-    var4 = var4.AgeGateSource;
-    var5 = 9;
-    var5 = var8[var5];
-    var5 = var7.bind(var0)(var5);
-    var5 = var5.SafetyToastType;
-    var _closure1_slot11 = var5;
-    var9 = var3.Set;
-    var6 = 10;
-    var5 = var8[var6];
-    var5 = var7.bind(var0)(var5);
-    var5 = var5.AgeVerificationModalEntryPoint;
-    var10 = var5.STAGE_CHANNEL_AGE_VERIFICATION_PROMPT;
-    var5 = new Array(3);
-    var5[0] = var10;
-    var10 = var8[var6];
-    var10 = var7.bind(var0)(var10);
-    var10 = var10.AgeVerificationModalEntryPoint;
-    var10 = var10.START_STAGE_PROMPT;
-    var5[1] = var10;
-    var6 = var8[var6];
     var6 = var7.bind(var0)(var6);
-    var6 = var6.AgeVerificationModalEntryPoint;
-    var6 = var6.STAGE_CHANNEL_RAISE_HAND;
-    var5[2] = var6;
-    var6 = var9.prototype;
+    var _closure1_slot3 = var6;
+    var6 = 1;
+    var6 = var10[var6];
+    var6 = var7.bind(var0)(var6);
+    var _closure1_slot4 = var6;
+    var6 = 2;
+    var8 = var10[var6];
+    var6 = arg3;
+    var6 = var6.bind(var0)(var8);
+    var _closure1_slot5 = var6;
+    var6 = 3;
+    var6 = var10[var6];
+    var6 = var7.bind(var0)(var6);
+    var _closure1_slot6 = var6;
+    var6 = 4;
+    var6 = var10[var6];
+    var6 = var7.bind(var0)(var6);
+    var _closure1_slot7 = var6;
+    var6 = 5;
+    var6 = var10[var6];
+    var6 = var7.bind(var0)(var6);
+    var _closure1_slot8 = var6;
+    var6 = 6;
+    var6 = var10[var6];
+    var6 = var7.bind(var0)(var6);
+    var _closure1_slot9 = var6;
+    var6 = 7;
+    var6 = var10[var6];
+    var6 = var7.bind(var0)(var6);
+    var _closure1_slot10 = var6;
+    var6 = 8;
+    var6 = var10[var6];
+    var6 = var9.bind(var0)(var6);
+    var6 = var6.FULLSCREEN_AGE_VERIFICATION_ENTRY_POINTS;
+    var _closure1_slot11 = var6;
+    var6 = 9;
+    var6 = var10[var6];
+    var6 = var9.bind(var0)(var6);
+    var6 = var6.MessageEmbedTypes;
+    var _closure1_slot12 = var6;
+    var6 = 10;
+    var6 = var10[var6];
+    var6 = var9.bind(var0)(var6);
+    var6 = var6.AgeGateSource;
+    var7 = 11;
+    var7 = var10[var7];
+    var7 = var9.bind(var0)(var7);
+    var7 = var7.SafetyToastType;
+    var _closure1_slot13 = var7;
+    var11 = var5.Set;
+    var8 = 12;
+    var7 = var10[var8];
+    var7 = var9.bind(var0)(var7);
+    var7 = var7.AgeVerificationModalEntryPoint;
+    var12 = var7.STAGE_CHANNEL_AGE_VERIFICATION_PROMPT;
+    var7 = new Array(3);
+    var7[0] = var12;
+    var12 = var10[var8];
+    var12 = var9.bind(var0)(var12);
+    var12 = var12.AgeVerificationModalEntryPoint;
+    var12 = var12.START_STAGE_PROMPT;
+    var7[1] = var12;
+    var8 = var10[var8];
+    var8 = var9.bind(var0)(var8);
+    var8 = var8.AgeVerificationModalEntryPoint;
+    var8 = var8.STAGE_CHANNEL_RAISE_HAND;
+    var7[2] = var8;
+    var8 = var11.prototype;
+    var8 = Object.create(var8, {
+        constructor: {
+            value: var11
+        }
+    });
+    var16 = var8;
+    var15 = var7;
+    var7 = new var16[var11](var15, var14);
+    var7 = var7 instanceof Object ? var7 : var8;
+    var _closure1_slot14 = var7;
+    var7 = var5.Set;
+    var8 = var6.NSFW_SERVER;
+    var5 = new Array(6);
+    var5[0] = var8;
+    var8 = var6.NSFW_SERVER_INVITE;
+    var5[1] = var8;
+    var8 = var6.NSFW_SERVER_INVITE_EMBED;
+    var5[2] = var8;
+    var8 = var6.LARGE_GUILD;
+    var5[3] = var8;
+    var8 = var6.JOIN_LARGE_GUILD_UNDERAGE;
+    var5[4] = var8;
+    var6 = var6.ACCESS_LARGE_GUILD_UNDERAGE;
+    var5[5] = var6;
+    var6 = var7.prototype;
     var6 = Object.create(var6, {
         constructor: {
-            value: var9
+            value: var7
         }
     });
-    var14 = var6;
-    var13 = var5;
-    var5 = new var14[var9](var13, var12);
+    var16 = var6;
+    var15 = var5;
+    var5 = new var16[var7](var15, var14);
     var5 = var5 instanceof Object ? var5 : var6;
-    var _closure1_slot12 = var5;
-    var5 = var3.Set;
-    var6 = var4.NSFW_SERVER;
-    var3 = new Array(6);
-    var3[0] = var6;
-    var6 = var4.NSFW_SERVER_INVITE;
-    var3[1] = var6;
-    var6 = var4.NSFW_SERVER_INVITE_EMBED;
-    var3[2] = var6;
-    var6 = var4.LARGE_GUILD;
-    var3[3] = var6;
-    var6 = var4.JOIN_LARGE_GUILD_UNDERAGE;
-    var3[4] = var6;
-    var4 = var4.ACCESS_LARGE_GUILD_UNDERAGE;
-    var3[5] = var4;
-    var4 = var5.prototype;
-    var4 = Object.create(var4, {
-        constructor: {
-            value: var5
-        }
-    });
-    var14 = var4;
-    var13 = var3;
-    var3 = new var14[var5](var13, var12);
-    var3 = var3 instanceof Object ? var3 : var4;
-    var _closure1_slot13 = var3;
+    var _closure1_slot15 = var5;
+    var7 = {};
+    var5 = 'ctas';
+    var7.CTAS = var5;
+    var5 = 'content_type';
+    var7.CONTENT_TYPE = var5;
+    var _closure1_slot16 = var7;
+    var6 = {};
+    var5 = 'retry';
+    var6.RETRY = var5;
+    var _closure1_slot17 = var6;
     var5 = {};
-    var3 = 'ctas';
-    var5.CTAS = var3;
-    var3 = 'content_type';
-    var5.CONTENT_TYPE = var3;
-    var _closure1_slot14 = var5;
-    var4 = {};
-    var3 = 'retry';
-    var4.RETRY = var3;
-    var _closure1_slot15 = var4;
-    var3 = {};
-    var6 = 'verified_adult';
-    var3.VERIFIED_ADULT = var6;
-    var6 = 'verified_teen';
-    var3.VERIFIED_TEEN = var6;
-    var6 = 'error';
-    var3.ERROR = var6;
-    var6 = 23;
-    var6 = var8[var6];
-    var8 = var7.bind(var0)(var6);
-    var7 = var8.fileFinishedImporting;
-    var6 = 'modules/age_assurance/AgeVerificationUtils.tsx';
-    var6 = var7.bind(var8)(var6);
-    var6 = function(arg0) { // Environment: var1
-        var2 = _closure1_slot13;
+    var8 = 'verified_adult';
+    var5.VERIFIED_ADULT = var8;
+    var8 = 'verified_teen';
+    var5.VERIFIED_TEEN = var8;
+    var8 = 'error';
+    var5.ERROR = var8;
+    var8 = 26;
+    var8 = var10[var8];
+    var10 = var9.bind(var0)(var8);
+    var9 = var10.fileFinishedImporting;
+    var8 = 'modules/age_assurance/AgeVerificationUtils.tsx';
+    var8 = var9.bind(var10)(var8);
+    var8 = function(arg0) { // Environment: var1
+        var2 = _closure1_slot15;
         var1 = var2.has;
         var0 = arg0;
         var0 = var1.bind(var2)(var0);
         return var0;
     };
-    var2.ageGateSourceHasLightboxBackdrop = var6;
-    var6 = function() {
-        _fun38923: for (var _fun38923_ip = 0;;) switch (_fun38923_ip) {
-            case 0:
-                var2 = _closure1_slot8;
-                var1 = var2.getCurrentUser;
-                var2 = var1.bind(var2)();
-                var1 = null;
-                var4 = var1 == var2;
-                var3 = undefined;
-                var1 = undefined;
-                if (var4) {
-                    _fun38923_ip = 35;
-                    continue _fun38923
-                }
-            case 29:
-                var1 = var2.ageVerificationStatus;
-            case 35:
-                var2 = _closure1_slot0;
-                var4 = _closure1_slot2;
-                var0 = 11;
-                var0 = var4[var0];
-                var0 = var2.bind(var3)(var0);
-                var0 = var0.AgeVerificationStatusUkAndAusOnly;
-                var0 = var0.VERIFIED_ADULT;
-                var0 = var1 !== var0;
-                return var0;
-        }
-    };
-    var2.shouldShowTiggerPawtect = var6;
-    var6 = function() {
-        _fun38924: for (var _fun38924_ip = 0;;) switch (_fun38924_ip) {
-            case 0:
-                var2 = _closure1_slot0;
-                var3 = _closure1_slot2;
-                var1 = 12;
-                var1 = var3[var1];
-                var3 = undefined;
-                var5 = var2.bind(var3)(var1);
-                var4 = var5.useStateFromStores;
-                var1 = _closure1_slot8;
-                var2 = new Array(1);
-                var2[0] = var1;
-                var1 = function() { // Environment: var1
-                    var1 = _closure1_slot8;
-                    var0 = var1.getCurrentUser;
-                    var0 = var0.bind(var1)();
-                    return var0;
-                };
-                var2 = var4.bind(var5)(var2, var1);
-                var1 = null;
-                var4 = var1 == var2;
-                var1 = undefined;
-                if (var4) {
-                    _fun38924_ip = 72;
-                    continue _fun38924
-                }
-            case 66:
-                var1 = var2.ageVerificationStatus;
-            case 72:
-                var2 = _closure1_slot0;
-                var4 = _closure1_slot2;
-                var0 = 11;
-                var0 = var4[var0];
-                var0 = var2.bind(var3)(var0);
-                var0 = var0.AgeVerificationStatusUkAndAusOnly;
-                var0 = var0.VERIFIED_ADULT;
-                var0 = var1 !== var0;
-                return var0;
-        }
-    };
-    var2.useShouldShowTiggerPawtect = var6;
-    var6 = function() {
+    var2.ageGateSourceHasLightboxBackdrop = var8;
+    var8 = function() {
         _fun38926: for (var _fun38926_ip = 0;;) switch (_fun38926_ip) {
             case 0:
-                var2 = _closure1_slot8;
+                var2 = _closure1_slot9;
                 var1 = var2.getCurrentUser;
                 var2 = var1.bind(var2)();
                 var1 = null;
@@ -236,31 +288,31 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 35:
                 var2 = _closure1_slot0;
                 var4 = _closure1_slot2;
-                var0 = 11;
+                var0 = 13;
                 var0 = var4[var0];
                 var0 = var2.bind(var3)(var0);
                 var0 = var0.AgeVerificationStatusUkAndAusOnly;
-                var0 = var0.VERIFIED_TEEN;
-                var0 = var1 === var0;
+                var0 = var0.VERIFIED_ADULT;
+                var0 = var1 !== var0;
                 return var0;
         }
     };
-    var2.isVerifiedTeen = var6;
-    var6 = function() {
+    var2.shouldShowTiggerPawtect = var8;
+    var8 = function() {
         _fun38927: for (var _fun38927_ip = 0;;) switch (_fun38927_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var3 = _closure1_slot2;
-                var1 = 12;
+                var1 = 14;
                 var1 = var3[var1];
                 var3 = undefined;
                 var5 = var2.bind(var3)(var1);
                 var4 = var5.useStateFromStores;
-                var1 = _closure1_slot8;
+                var1 = _closure1_slot9;
                 var2 = new Array(1);
                 var2[0] = var1;
                 var1 = function() { // Environment: var1
-                    var1 = _closure1_slot8;
+                    var1 = _closure1_slot9;
                     var0 = var1.getCurrentUser;
                     var0 = var0.bind(var1)();
                     return var0;
@@ -278,20 +330,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72:
                 var2 = _closure1_slot0;
                 var4 = _closure1_slot2;
-                var0 = 11;
+                var0 = 13;
                 var0 = var4[var0];
                 var0 = var2.bind(var3)(var0);
                 var0 = var0.AgeVerificationStatusUkAndAusOnly;
-                var0 = var0.VERIFIED_TEEN;
-                var0 = var1 === var0;
+                var0 = var0.VERIFIED_ADULT;
+                var0 = var1 !== var0;
                 return var0;
         }
     };
-    var2.useIsVerifiedTeen = var6;
-    var6 = function() {
+    var2.useShouldShowTiggerPawtect = var8;
+    var8 = function() {
         _fun38929: for (var _fun38929_ip = 0;;) switch (_fun38929_ip) {
             case 0:
-                var2 = _closure1_slot8;
+                var2 = _closure1_slot9;
                 var1 = var2.getCurrentUser;
                 var2 = var1.bind(var2)();
                 var1 = null;
@@ -307,31 +359,31 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 35:
                 var2 = _closure1_slot0;
                 var4 = _closure1_slot2;
-                var0 = 11;
+                var0 = 13;
                 var0 = var4[var0];
                 var0 = var2.bind(var3)(var0);
                 var0 = var0.AgeVerificationStatusUkAndAusOnly;
-                var0 = var0.VERIFIED_ADULT;
+                var0 = var0.VERIFIED_TEEN;
                 var0 = var1 === var0;
                 return var0;
         }
     };
-    var2.isVerifiedAdult = var6;
-    var6 = function() {
+    var2.isVerifiedTeen = var8;
+    var8 = function() {
         _fun38930: for (var _fun38930_ip = 0;;) switch (_fun38930_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var3 = _closure1_slot2;
-                var1 = 12;
+                var1 = 14;
                 var1 = var3[var1];
                 var3 = undefined;
                 var5 = var2.bind(var3)(var1);
                 var4 = var5.useStateFromStores;
-                var1 = _closure1_slot8;
+                var1 = _closure1_slot9;
                 var2 = new Array(1);
                 var2[0] = var1;
                 var1 = function() { // Environment: var1
-                    var1 = _closure1_slot8;
+                    var1 = _closure1_slot9;
                     var0 = var1.getCurrentUser;
                     var0 = var0.bind(var1)();
                     return var0;
@@ -349,7 +401,36 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 72:
                 var2 = _closure1_slot0;
                 var4 = _closure1_slot2;
-                var0 = 11;
+                var0 = 13;
+                var0 = var4[var0];
+                var0 = var2.bind(var3)(var0);
+                var0 = var0.AgeVerificationStatusUkAndAusOnly;
+                var0 = var0.VERIFIED_TEEN;
+                var0 = var1 === var0;
+                return var0;
+        }
+    };
+    var2.useIsVerifiedTeen = var8;
+    var8 = function() {
+        _fun38932: for (var _fun38932_ip = 0;;) switch (_fun38932_ip) {
+            case 0:
+                var2 = _closure1_slot9;
+                var1 = var2.getCurrentUser;
+                var2 = var1.bind(var2)();
+                var1 = null;
+                var4 = var1 == var2;
+                var3 = undefined;
+                var1 = undefined;
+                if (var4) {
+                    _fun38932_ip = 35;
+                    continue _fun38932
+                }
+            case 29:
+                var1 = var2.ageVerificationStatus;
+            case 35:
+                var2 = _closure1_slot0;
+                var4 = _closure1_slot2;
+                var0 = 13;
                 var0 = var4[var0];
                 var0 = var2.bind(var3)(var0);
                 var0 = var0.AgeVerificationStatusUkAndAusOnly;
@@ -358,54 +439,96 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var2.useIsVerifiedAdult = var6;
-    var2.AgeVerificationSystemNotificationEmbedKeys = var5;
-    var2.AgeVerificationSystemNotificationCtaTypes = var4;
-    var2.AgeVerificationSystemNotificationContentType = var3;
-    var3 = function arg0, arg1() {
-        _fun38932: for (var _fun38932_ip = 0;;) switch (_fun38932_ip) {
+    var2.isVerifiedAdult = var8;
+    var8 = function() {
+        _fun38933: for (var _fun38933_ip = 0;;) switch (_fun38933_ip) {
             case 0:
-                var4 = _closure1_slot7;
+                var2 = _closure1_slot0;
+                var3 = _closure1_slot2;
+                var1 = 14;
+                var1 = var3[var1];
+                var3 = undefined;
+                var5 = var2.bind(var3)(var1);
+                var4 = var5.useStateFromStores;
+                var1 = _closure1_slot9;
+                var2 = new Array(1);
+                var2[0] = var1;
+                var1 = function() { // Environment: var1
+                    var1 = _closure1_slot9;
+                    var0 = var1.getCurrentUser;
+                    var0 = var0.bind(var1)();
+                    return var0;
+                };
+                var2 = var4.bind(var5)(var2, var1);
+                var1 = null;
+                var4 = var1 == var2;
+                var1 = undefined;
+                if (var4) {
+                    _fun38933_ip = 72;
+                    continue _fun38933
+                }
+            case 66:
+                var1 = var2.ageVerificationStatus;
+            case 72:
+                var2 = _closure1_slot0;
+                var4 = _closure1_slot2;
+                var0 = 13;
+                var0 = var4[var0];
+                var0 = var2.bind(var3)(var0);
+                var0 = var0.AgeVerificationStatusUkAndAusOnly;
+                var0 = var0.VERIFIED_ADULT;
+                var0 = var1 === var0;
+                return var0;
+        }
+    };
+    var2.useIsVerifiedAdult = var8;
+    var2.AgeVerificationSystemNotificationEmbedKeys = var7;
+    var2.AgeVerificationSystemNotificationCtaTypes = var6;
+    var2.AgeVerificationSystemNotificationContentType = var5;
+    var5 = function arg0, arg1() {
+        _fun38935: for (var _fun38935_ip = 0;;) switch (_fun38935_ip) {
+            case 0:
+                var4 = _closure1_slot8;
                 var3 = var4.getMessage;
                 var2 = arg0;
                 var0 = arg1;
                 var2 = var3.bind(var4)(var2, var0);
                 var0 = null;
                 if (!(var0 != var2)) {
-                    _fun38932_ip = 200;
-                    continue _fun38932
+                    _fun38935_ip = 200;
+                    continue _fun38935
                 }
             case 34:
                 var3 = var2.embeds;
                 if (!(var0 != var3)) {
-                    _fun38932_ip = 200;
-                    continue _fun38932
+                    _fun38935_ip = 200;
+                    continue _fun38935
                 }
             case 47:
                 var3 = var2.embeds;
                 var4 = var3.length;
                 var3 = 0;
                 if (!(var3 !== var4)) {
-                    _fun38932_ip = 200;
-                    continue _fun38932
+                    _fun38935_ip = 200;
+                    continue _fun38935
                 }
             case 67:
                 var4 = var2.embeds;
                 var4 = var4[var3];
                 var4 = var4.fields;
                 if (!(var0 != var4)) {
-                    _fun38932_ip = 200;
-                    continue _fun38932
+                    _fun38935_ip = 200;
+                    continue _fun38935
                 }
             case 87:
                 var4 = var2.embeds;
                 var4 = var4[var3];
                 var5 = var4.type;
-                var4 = _closure1_slot10;
+                var4 = _closure1_slot12;
                 var4 = var4.AGE_VERIFICATION_SYSTEM_NOTIFICATION;
                 if (!(var5 === var4)) {
-                    _fun38932_ip = 200;
-                    continue _fun38932
+                    _fun38935_ip = 200;
+                    continue _fun38935
                 }
             case 116:
                 var2 = var2.embeds;
@@ -415,7 +538,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = function(arg0) { // Environment: var2
                     var0 = arg0;
                     var1 = var0.rawName;
-                    var0 = _closure1_slot14;
+                    var0 = _closure1_slot16;
                     var0 = var0.CTAS;
                     var0 = var1 === var0;
                     return var0;
@@ -424,8 +547,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var0 == var2;
                 var0 = undefined;
                 if (var3) {
-                    _fun38932_ip = 198;
-                    continue _fun38932
+                    _fun38935_ip = 198;
+                    continue _fun38935
                 }
             case 158:
                 var4 = var2.rawValue;
@@ -433,7 +556,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = ',';
                 var3 = var3.bind(var4)(var2);
                 var2 = var3.includes;
-                var1 = _closure1_slot15;
+                var1 = _closure1_slot17;
                 var1 = var1.RETRY;
                 var0 = var2.bind(var3)(var1);
             case 198:
@@ -443,121 +566,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var2.isAgeVerificationMessageWithRetryCta = var3;
-    var3 = function() {
-        _fun38934: for (var _fun38934_ip = 0;;) switch (_fun38934_ip) {
-            case 0:
-                var2 = _closure1_slot8;
-                var0 = var2.getCurrentUser;
-                var3 = var0.bind(var2)();
-                var2 = null;
-                var0 = var2 == var3;
-                var4 = undefined;
-                var6 = undefined;
-                if (var0) {
-                    _fun38934_ip = 35;
-                    continue _fun38934
-                }
-            case 29:
-                var6 = var3.ageVerificationStatus;
-            case 35:
-                var7 = _closure1_slot0;
-                var0 = _closure1_slot2;
-                var5 = 11;
-                var0 = var0[var5];
-                var0 = var7.bind(var4)(var0);
-                var0 = var0.AgeVerificationStatusUkAndAusOnly;
-                var0 = var0.UNVERIFIED;
-                var0 = var6 !== var0;
-                if (!var0) {
-                    _fun38934_ip = 122;
-                    continue _fun38934
-                }
-            case 74:
-                var6 = var2 == var3;
-                var2 = undefined;
-                if (var6) {
-                    _fun38934_ip = 89;
-                    continue _fun38934
-                }
-            case 83:
-                var2 = var3.ageVerificationStatus;
-            case 89:
-                var3 = _closure1_slot0;
-                var1 = _closure1_slot2;
-                var1 = var1[var5];
-                var1 = var3.bind(var4)(var1);
-                var1 = var1.AgeVerificationStatusUkAndAusOnly;
-                var1 = var1.CLIENT_ONLY_PENDING;
-                var0 = var2 !== var1;
-            case 122:
-                return var0;
-        }
-    };
-    var2.isAgeVerified = var3;
-    var3 = function() {
-        _fun38935: for (var _fun38935_ip = 0;;) switch (_fun38935_ip) {
-            case 0:
-                var2 = _closure1_slot0;
-                var3 = _closure1_slot2;
-                var0 = 12;
-                var0 = var3[var0];
-                var4 = undefined;
-                var5 = var2.bind(var4)(var0);
-                var3 = var5.useStateFromStores;
-                var0 = _closure1_slot8;
-                var2 = new Array(1);
-                var2[0] = var0;
-                var0 = function() { // Environment: var0
-                    var1 = _closure1_slot8;
-                    var0 = var1.getCurrentUser;
-                    var0 = var0.bind(var1)();
-                    return var0;
-                };
-                var3 = var3.bind(var5)(var2, var0);
-                var2 = null;
-                var0 = var2 == var3;
-                var6 = undefined;
-                if (var0) {
-                    _fun38935_ip = 72;
-                    continue _fun38935
-                }
-            case 66:
-                var6 = var3.ageVerificationStatus;
-            case 72:
-                var7 = _closure1_slot0;
-                var0 = _closure1_slot2;
-                var5 = 11;
-                var0 = var0[var5];
-                var0 = var7.bind(var4)(var0);
-                var0 = var0.AgeVerificationStatusUkAndAusOnly;
-                var0 = var0.UNVERIFIED;
-                var0 = var6 !== var0;
-                if (!var0) {
-                    _fun38935_ip = 159;
-                    continue _fun38935
-                }
-            case 111:
-                var6 = var2 == var3;
-                var2 = undefined;
-                if (var6) {
-                    _fun38935_ip = 126;
-                    continue _fun38935
-                }
-            case 120:
-                var2 = var3.ageVerificationStatus;
-            case 126:
-                var3 = _closure1_slot0;
-                var1 = _closure1_slot2;
-                var1 = var1[var5];
-                var1 = var3.bind(var4)(var1);
-                var1 = var1.AgeVerificationStatusUkAndAusOnly;
-                var1 = var1.CLIENT_ONLY_PENDING;
-                var0 = var2 !== var1;
-            case 159:
-                return var0;
-        }
-    };
+    var2.isAgeVerificationMessageWithRetryCta = var5;
+    var2.isAgeVerified = var4;
     var2.useIsAgeVerified = var3;
     var3 = function arg0() {
         _fun38937: for (var _fun38937_ip = 0;;) switch (_fun38937_ip) {
@@ -622,15 +632,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 _closure2_slot6 = var3;
                 var8 = _closure1_slot0;
                 var13 = _closure1_slot2;
-                var3 = 12;
+                var3 = 14;
                 var3 = var13[var3];
                 var14 = var8.bind(var1)(var3);
                 var13 = var14.useStateFromStores;
-                var3 = _closure1_slot8;
+                var3 = _closure1_slot9;
                 var8 = new Array(1);
                 var8[0] = var3;
                 var3 = function() { // Environment: var0
-                    var1 = _closure1_slot8;
+                    var1 = _closure1_slot9;
                     var0 = var1.getCurrentUser;
                     var0 = var0.bind(var1)();
                     return var0;
@@ -652,7 +662,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 _closure2_slot7 = var13;
                 var8 = _closure1_slot0;
                 var10 = _closure1_slot2;
-                var3 = 13;
+                var3 = 15;
                 var3 = var10[var3];
                 var8 = var8.bind(var1)(var3);
                 var3 = var8.useIsSuspendedUser;
@@ -670,7 +680,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         case 0:
                             var3 = _closure1_slot1;
                             var2 = _closure1_slot2;
-                            var0 = 14;
+                            var0 = 16;
                             var2 = var2[var0];
                             var0 = undefined;
                             var5 = var3.bind(var0)(var2);
@@ -696,7 +706,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         case 72:
                             var2 = _closure1_slot1;
                             var3 = _closure1_slot2;
-                            var1 = 15;
+                            var1 = 17;
                             var1 = var3[var1];
                             var3 = var2.bind(var0)(var1);
                             var2 = var3.maybeOpenAgeVerificationUserFeedback;
@@ -735,7 +745,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 case 29: // try_start_0 // try_start_1
                                     var5 = _closure1_slot1;
                                     var6 = _closure1_slot2;
-                                    var1 = 14;
+                                    var1 = 16;
                                     var1 = var6[var1];
                                     var8 = var5.bind(var4)(var1);
                                     var5 = var8.dispatch;
@@ -744,7 +754,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var1.type = var9;
                                     var1 = var5.bind(var8)(var1);
                                     var5 = _closure1_slot0;
-                                    var1 = 16;
+                                    var1 = 18;
                                     var1 = var6[var1];
                                     var6 = var5.bind(var4)(var1);
                                     var5 = var6.requestAgeVerification;
@@ -775,7 +785,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 case 142:
                                     var5 = _closure1_slot1;
                                     var6 = _closure1_slot2;
-                                    var3 = 17;
+                                    var3 = 19;
                                     var3 = var6[var3];
                                     var6 = var5.bind(var4)(var3);
                                     var5 = var6.showAgeVerification;
@@ -809,11 +819,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     CatchBlockStart(arg_register = 1);
                                     var5 = _closure1_slot1;
                                     var6 = _closure1_slot2;
-                                    var3 = 18;
+                                    var3 = 20;
                                     var3 = var6[var3];
                                     var5 = var5.bind(var4)(var3);
                                     var3 = var5.showFailedToast;
-                                    var1 = _closure1_slot11;
+                                    var1 = _closure1_slot13;
                                     var1 = var1.TIGGER_PAWTECT_ERROR;
                                     var1 = var3.bind(var5)(var1);
                                     var1 = _closure2_slot9;
@@ -871,18 +881,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot0 = var7;
                 var9 = _closure1_slot0;
                 var10 = _closure1_slot2;
-                var6 = 12;
+                var6 = 14;
                 var3 = var10[var6];
                 var0 = undefined;
                 var8 = var9.bind(var0)(var3);
                 var5 = var8.useStateFromStores;
-                var3 = _closure1_slot8;
+                var3 = _closure1_slot9;
                 var4 = new Array(1);
                 var4[0] = var3;
                 var3 = function() { // Environment: var1
                     _fun38945: for (var _fun38945_ip = 0;;) switch (_fun38945_ip) {
                         case 0:
-                            var1 = _closure1_slot8;
+                            var1 = _closure1_slot9;
                             var0 = var1.getCurrentUser;
                             var1 = var0.bind(var1)();
                             var0 = null;
@@ -900,18 +910,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var8 = var5.bind(var8)(var4, var3);
                 var4 = _closure1_slot1;
-                var3 = 19;
+                var3 = 21;
                 var3 = var10[var3];
                 var3 = var4.bind(var0)(var3);
                 var5 = var3.bind(var0)(var8);
                 var3 = var10[var6];
                 var13 = var9.bind(var0)(var3);
                 var12 = var13.useStateFromStores;
-                var3 = _closure1_slot6;
+                var3 = _closure1_slot7;
                 var11 = new Array(1);
                 var11[0] = var3;
                 var4 = function() { // Environment: var1
-                    var1 = _closure1_slot6;
+                    var1 = _closure1_slot7;
                     var0 = var1.getSuspendedUserToken;
                     var1 = var0.bind(var1)();
                     var0 = null;
@@ -925,7 +935,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = new Array(1);
                 var6[0] = var3;
                 var3 = function() { // Environment: var1
-                    var1 = _closure1_slot6;
+                    var1 = _closure1_slot7;
                     var0 = var1.isAuthenticated;
                     var0 = var0.bind(var1)();
                     return var0;
@@ -1003,7 +1013,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun38949
                 }
             case 12:
-                var2 = _closure1_slot9;
+                var2 = _closure1_slot11;
                 var1 = var2.has;
                 var0 = var1.bind(var2)(var3);
             case 29:
@@ -1014,7 +1024,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = function arg0() {
         _fun38950: for (var _fun38950_ip = 0;;) switch (_fun38950_ip) {
             case 0:
-                var3 = _closure1_slot12;
+                var3 = _closure1_slot14;
                 var2 = var3.has;
                 var0 = arg0;
                 var0 = var2.bind(var3)(var0);
@@ -1025,12 +1035,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     continue _fun38950
                 }
             case 34:
-                var0 = 21;
+                var0 = 23;
                 var0 = var6[var0];
                 var8 = undefined;
                 var3 = var5.bind(var8)(var0);
                 var2 = var3.getUpdatedAgeVerificationString;
-                var0 = 20;
+                var0 = 22;
                 var1 = var6[var0];
                 var1 = var5.bind(var8)(var1);
                 var7 = var1.intl;
@@ -1053,7 +1063,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 _fun38950_ip = 208;
                 continue _fun38950;
             case 157:
-                var1 = 20;
+                var1 = 22;
                 var2 = var6[var1];
                 var4 = undefined;
                 var2 = var5.bind(var4)(var2);
@@ -1069,7 +1079,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.getAgeVerificationGetStartedTitle = var3;
-    var1 = function arg0, arg1() {
+    var3 = function arg0, arg1() {
         _fun38951: for (var _fun38951_ip = 0;;) switch (_fun38951_ip) {
             case 0:
                 var7 = arg1;
@@ -1082,7 +1092,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 12:
                 var0 = false;
             case 14:
-                var4 = _closure1_slot12;
+                var4 = _closure1_slot14;
                 var3 = var4.has;
                 var2 = arg0;
                 var2 = var3.bind(var4)(var2);
@@ -1104,11 +1114,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 55:
                 var9 = _closure1_slot0;
                 var10 = _closure1_slot2;
-                var0 = 21;
+                var0 = 23;
                 var0 = var10[var0];
                 var4 = var9.bind(var5)(var0);
                 var3 = var4.getUpdatedAgeVerificationString;
-                var0 = 20;
+                var0 = 22;
                 var2 = var10[var0];
                 var2 = var9.bind(var5)(var2);
                 var8 = var2.intl;
@@ -1133,13 +1143,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 184:
                 var3 = _closure1_slot0;
                 var8 = _closure1_slot2;
-                var2 = 20;
+                var2 = 22;
                 var2 = var8[var2];
                 var2 = var3.bind(var5)(var2);
                 var6 = var2.intl;
                 var4 = var6.format;
                 var3 = _closure1_slot1;
-                var2 = 22;
+                var2 = 24;
                 var2 = var8[var2];
                 var2 = var3.bind(var5)(var2);
                 var3 = var2.RpMIT0;
@@ -1152,17 +1162,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 254:
                 var8 = _closure1_slot0;
                 var10 = _closure1_slot2;
-                var2 = 21;
+                var2 = 23;
                 var2 = var10[var2];
                 var6 = var8.bind(var5)(var2);
                 var4 = var6.getUpdatedAgeVerificationString;
-                var7 = 20;
+                var7 = 22;
                 var2 = var10[var7];
                 var2 = var8.bind(var5)(var2);
                 var12 = var2.intl;
                 var11 = var12.string;
                 var9 = _closure1_slot1;
-                var2 = 22;
+                var2 = 24;
                 var3 = var10[var2];
                 var3 = var9.bind(var5)(var3);
                 var3 = var3["1/6wta"];
@@ -1182,7 +1192,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 380:
                 var4 = _closure1_slot0;
                 var6 = _closure1_slot2;
-                var1 = 20;
+                var1 = 22;
                 var2 = var6[var1];
                 var2 = var4.bind(var5)(var2);
                 var3 = var2.intl;
@@ -1196,6 +1206,100 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var2.getAgeVerificationGetStartedSubtitle = var1;
+    var2.getAgeVerificationGetStartedSubtitle = var3;
+    var3 = function() {
+        var2 = _closure1_slot19;
+        var4 = undefined;
+        var5 = var2.bind(var4)();
+        var _closure2_slot0 = var5;
+        var3 = _closure1_slot0;
+        var6 = _closure1_slot2;
+        var2 = 14;
+        var2 = var6[var2];
+        var4 = var3.bind(var4)(var2);
+        var3 = var4.useStateFromStores;
+        var6 = _closure1_slot10;
+        var2 = new Array(2);
+        var2[0] = var6;
+        var1 = _closure1_slot6;
+        var2[1] = var1;
+        var1 = new Array(1);
+        var1[0] = var5;
+        var0 = function() { // Environment: var0
+            _fun38953: for (var _fun38953_ip = 0;;) switch (_fun38953_ip) {
+                case 0:
+                    var1 = _closure2_slot0;
+                    var0 = !var1;
+                    if (var1) {
+                        _fun38953_ip = 85;
+                        continue _fun38953
+                    }
+                case 13:
+                    var4 = _closure1_slot6;
+                    var3 = var4.isFeatureAgeGated;
+                    var6 = _closure1_slot0;
+                    var5 = _closure1_slot2;
+                    var1 = 25;
+                    var5 = var5[var1];
+                    var1 = undefined;
+                    var1 = var6.bind(var1)(var5);
+                    var1 = var1.AgeGatedFeature;
+                    var1 = var1.REACTIVE_CHECK;
+                    var1 = var3.bind(var4)(var1);
+                    if (!var1) {
+                        _fun38953_ip = 82;
+                        continue _fun38953
+                    }
+                case 68:
+                    var3 = _closure1_slot10;
+                    var2 = var3.shouldCallReactiveCheck;
+                    var1 = var2.bind(var3)();
+                case 82:
+                    var0 = var1;
+                case 85:
+                    return var0;
+            }
+        };
+        var0 = var3.bind(var4)(var2, var0, var1);
+        return var0;
+    };
+    var2.useShouldCallReactiveCheck = var3;
+    var1 = function() {
+        _fun38954: for (var _fun38954_ip = 0;;) switch (_fun38954_ip) {
+            case 0:
+                var0 = _closure1_slot18;
+                var6 = undefined;
+                var1 = var0.bind(var6)();
+                var0 = !var1;
+                if (var1) {
+                    _fun38954_ip = 86;
+                    continue _fun38954
+                }
+            case 19:
+                var4 = _closure1_slot6;
+                var3 = var4.isFeatureAgeGated;
+                var5 = _closure1_slot0;
+                var7 = _closure1_slot2;
+                var1 = 25;
+                var1 = var7[var1];
+                var1 = var5.bind(var6)(var1);
+                var1 = var1.AgeGatedFeature;
+                var1 = var1.REACTIVE_CHECK;
+                var1 = var3.bind(var4)(var1);
+                if (!var1) {
+                    _fun38954_ip = 83;
+                    continue _fun38954
+                }
+            case 69:
+                var3 = _closure1_slot10;
+                var2 = var3.shouldCallReactiveCheck;
+                var1 = var2.bind(var3)();
+            case 83:
+                var0 = var1;
+            case 86:
+                return var0;
+        }
+    };
+    var2.shouldCallReactiveCheck = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 57, 31, 1216, 4249, 1621, 5937, 660, 1219, 5921, 4555, 1645, 566, 5944, 806, 5956, 6458, 5936, 5928, 5310, 1234, 4553, 2372, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 57, 31, 4250, 1216, 4252, 1621, 6461, 5941, 660, 1219, 5925, 4556, 1645, 566, 5948, 806, 5960, 6462, 5940, 5932, 5311, 1234, 4554, 2372, 4301, 2]);

@@ -1,6 +1,6 @@
 package kotlinx.serialization.encoding;
 
-import dt.n;
+import ft.n;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Reflection;
 import kotlinx.serialization.DeserializationStrategy;
@@ -67,6 +67,7 @@ public abstract class a implements Decoder, c {
         return this;
     }
 
+    @Override // kotlinx.serialization.encoding.c
     public void c(SerialDescriptor descriptor) {
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
     }
@@ -177,6 +178,7 @@ public abstract class a implements Decoder, c {
         return ((Character) J).charValue();
     }
 
+    @Override // kotlinx.serialization.encoding.c
     public Object y(SerialDescriptor descriptor, int i10, DeserializationStrategy deserializer, Object obj) {
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
         Intrinsics.checkNotNullParameter(deserializer, "deserializer");

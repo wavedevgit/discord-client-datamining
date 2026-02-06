@@ -20,7 +20,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'modules/report_to_mod/getGuildModeratorReportingEnabled.tsx';
     var1 = var3.bind(var4)(var1);
     var1 = function arg0() {
-        _fun41798: for (var _fun41798_ip = 0;;) switch (_fun41798_ip) {
+        _fun41801: for (var _fun41801_ip = 0;;) switch (_fun41801_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.moderatorReporting;
@@ -28,16 +28,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var0 == var2;
                 var1 = undefined;
                 if (var3) {
-                    _fun41798_ip = 26;
-                    continue _fun41798
+                    _fun41801_ip = 26;
+                    continue _fun41801
                 }
             case 20:
                 var1 = var2.moderatorReportingEnabled;
             case 26:
                 var0 = var0 != var1;
                 if (!var0) {
-                    _fun41798_ip = 36;
-                    continue _fun41798
+                    _fun41801_ip = 36;
+                    continue _fun41801
                 }
             case 33:
                 var0 = var1;

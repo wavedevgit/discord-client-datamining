@@ -8,14 +8,14 @@ import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.Intrinsics;
-import or.l;
-import or.o;
 import org.jetbrains.annotations.NotNull;
+import qr.l;
+import qr.o;
 @Metadata(d1 = {"\u0000(\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\u001a'\u0010\r\u001a\u0002H\u000e\"\u0004\b\u0000\u0010\u000e2\u000e\b\u0004\u0010\u000f\u001a\b\u0012\u0004\u0012\u0002H\u000e0\u0010H\u0086\bø\u0001\u0000¢\u0006\u0002\u0010\u0011\u001a\u001c\u0010\u0012\u001a\u00020\u00132\u000e\b\u0004\u0010\u000f\u001a\b\u0012\u0004\u0012\u00020\u00130\u0010H\u0086\bø\u0001\u0000\"\u001b\u0010\u0000\u001a\u00020\u00018FX\u0086\u0084\u0002¢\u0006\f\n\u0004\b\u0004\u0010\u0005\u001a\u0004\b\u0002\u0010\u0003\"\u0011\u0010\u0006\u001a\u00020\u0007¢\u0006\b\n\u0000\u001a\u0004\b\b\u0010\t\"\u0011\u0010\n\u001a\u00020\u000b8F¢\u0006\u0006\u001a\u0004\b\n\u0010\f\u0082\u0002\u0007\n\u0005\b\u009920\u0001¨\u0006\u0014"}, d2 = {"uiHandler", "Landroid/os/Handler;", "getUiHandler", "()Landroid/os/Handler;", "uiHandler$delegate", "Lkotlin/Lazy;", "uiExecutor", "Ljava/util/concurrent/Executor;", "getUiExecutor", "()Ljava/util/concurrent/Executor;", "isOnMainThread", "", "()Z", "assertOnUiThread", "T", "block", "Lkotlin/Function0;", "(Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;", "postOrRunOnMainThread", "", "misc_utilities_release"}, k = 2, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class ThreadUtilsKt {
     @NotNull
-    private static final Lazy uiHandler$delegate = l.b(o.f44232e, new Function0() { // from class: com.discord.misc.utilities.threading.a
+    private static final Lazy uiHandler$delegate = l.b(o.f48044e, new Function0() { // from class: com.discord.misc.utilities.threading.a
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             Handler uiHandler_delegate$lambda$0;

@@ -12,10 +12,10 @@ import java.util.Queue;
 public final class n2 implements IScope {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final n2 f29230b = new n2();
+    private static final n2 f28374b = new n2();
 
     /* renamed from: a  reason: collision with root package name */
-    private final io.sentry.util.r f29231a = new io.sentry.util.r(new r.a() { // from class: io.sentry.m2
+    private final io.sentry.util.r f28375a = new io.sentry.util.r(new r.a() { // from class: io.sentry.m2
         @Override // io.sentry.util.r.a
         public final Object a() {
             k7 empty;
@@ -27,112 +27,107 @@ public final class n2 implements IScope {
     private n2() {
     }
 
-    public static n2 g() {
-        return f29230b;
+    public static n2 i() {
+        return f28374b;
     }
 
     @Override // io.sentry.IScope
-    public io.sentry.protocol.c A() {
-        return new io.sentry.protocol.c();
+    public void A(String str, Object obj) {
     }
 
     @Override // io.sentry.IScope
-    public void B(String str, Object obj) {
+    public void B(e1 e1Var) {
     }
 
     @Override // io.sentry.IScope
-    public void C(e1 e1Var) {
-    }
-
-    @Override // io.sentry.IScope
-    public List D() {
+    public List C() {
         return new ArrayList();
     }
 
     @Override // io.sentry.IScope
-    public io.sentry.protocol.h0 E() {
+    public io.sentry.protocol.h0 D() {
         return null;
     }
 
     @Override // io.sentry.IScope
-    public String F() {
+    public String E() {
         return null;
     }
 
     @Override // io.sentry.IScope
-    public void G() {
+    public void F() {
     }
 
     @Override // io.sentry.IScope
-    public io.sentry.featureflags.b H() {
+    public io.sentry.featureflags.b G() {
         return io.sentry.featureflags.c.a();
     }
 
     @Override // io.sentry.IScope
-    public void I(y0 y0Var) {
+    public void H(y0 y0Var) {
     }
 
     @Override // io.sentry.IScope
-    public void J(String str) {
+    public void I(String str) {
     }
 
     @Override // io.sentry.IScope
-    public z7 K() {
+    public z7 J() {
         return null;
     }
 
     @Override // io.sentry.IScope
-    public io.sentry.protocol.x L() {
-        return io.sentry.protocol.x.f29471e;
+    public io.sentry.protocol.x K() {
+        return io.sentry.protocol.x.f28615e;
     }
 
     @Override // io.sentry.IScope
-    public s3 M() {
+    public s3 L() {
         return new s3();
     }
 
     @Override // io.sentry.IScope
-    public void N(String str) {
+    public void M(String str) {
     }
 
     @Override // io.sentry.IScope
-    public y0 O() {
+    public y0 N() {
         return s2.n();
     }
 
     @Override // io.sentry.IScope
-    public List P() {
+    public List O() {
         return new ArrayList();
     }
 
     @Override // io.sentry.IScope
-    public void Q(SentryEvent sentryEvent) {
+    public void P(SentryEvent sentryEvent) {
     }
 
     @Override // io.sentry.IScope
-    public void R() {
+    public void Q() {
     }
 
     @Override // io.sentry.IScope
-    public s3 S(z3.a aVar) {
+    public s3 R(z3.a aVar) {
         return new s3();
     }
 
     @Override // io.sentry.IScope
-    public void T(z3.c cVar) {
+    public void S(z3.c cVar) {
     }
 
     @Override // io.sentry.IScope
-    public void U(io.sentry.protocol.x xVar) {
+    public void T(io.sentry.protocol.x xVar) {
     }
 
     @Override // io.sentry.IScope
-    public List V() {
+    public List U() {
         return new ArrayList();
     }
 
     @Override // io.sentry.IScope
-    public void W(s3 s3Var) {
+    public void V(s3 s3Var) {
     }
 
     @Override // io.sentry.IScope
@@ -141,7 +136,7 @@ public final class n2 implements IScope {
 
     @Override // io.sentry.IScope
     public k7 b() {
-        return (k7) this.f29231a.a();
+        return (k7) this.f28375a.a();
     }
 
     @Override // io.sentry.IScope
@@ -162,96 +157,101 @@ public final class n2 implements IScope {
     }
 
     @Override // io.sentry.IScope
+    public String g() {
+        return null;
+    }
+
+    @Override // io.sentry.IScope
     public Map getExtras() {
         return new HashMap();
     }
 
     @Override // io.sentry.IScope
-    public String h() {
+    public void h(Breadcrumb breadcrumb, Hint hint) {
+    }
+
+    @Override // io.sentry.IScope
+    public void j(Throwable th2, ISpan iSpan, String str) {
+    }
+
+    @Override // io.sentry.IScope
+    public void k(io.sentry.protocol.h0 h0Var) {
+    }
+
+    @Override // io.sentry.IScope
+    public e1 l() {
         return null;
     }
 
     @Override // io.sentry.IScope
-    public void i(Breadcrumb breadcrumb, Hint hint) {
-    }
-
-    @Override // io.sentry.IScope
-    public void k(Throwable th2, ISpan iSpan, String str) {
-    }
-
-    @Override // io.sentry.IScope
-    public void l(io.sentry.protocol.h0 h0Var) {
-    }
-
-    @Override // io.sentry.IScope
-    public e1 m() {
+    public z7 m() {
         return null;
     }
 
     @Override // io.sentry.IScope
-    public z7 n() {
+    public SentryLevel n() {
         return null;
     }
 
     @Override // io.sentry.IScope
-    public SentryLevel o() {
+    public io.sentry.protocol.g o() {
         return null;
     }
 
     @Override // io.sentry.IScope
-    public io.sentry.protocol.g p() {
+    public void p(io.sentry.protocol.x xVar) {
+    }
+
+    @Override // io.sentry.IScope
+    public z3.d q() {
         return null;
     }
 
     @Override // io.sentry.IScope
-    public void q(io.sentry.protocol.x xVar) {
+    public void r(k7 k7Var) {
     }
 
     @Override // io.sentry.IScope
-    public z3.d r() {
+    public ISpan s() {
         return null;
     }
 
     @Override // io.sentry.IScope
-    public void s(k7 k7Var) {
-    }
-
-    @Override // io.sentry.IScope
-    public ISpan t() {
-        return null;
-    }
-
-    @Override // io.sentry.IScope
-    public Queue u() {
+    public Queue t() {
         return new ArrayDeque();
     }
 
     @Override // io.sentry.IScope
-    public void v(List list) {
+    public void u(List list) {
     }
 
     @Override // io.sentry.IScope
-    public z7 w(z3.b bVar) {
+    public z7 v(z3.b bVar) {
         return null;
     }
 
     @Override // io.sentry.IScope
-    public Map x() {
+    public Map w() {
         return new HashMap();
     }
 
     @Override // io.sentry.IScope
-    public void y() {
+    public void x() {
     }
 
     @Override // io.sentry.IScope
-    public List z() {
+    public List y() {
         return new ArrayList();
+    }
+
+    @Override // io.sentry.IScope
+    public io.sentry.protocol.c z() {
+        return new io.sentry.protocol.c();
     }
 
     @Override // io.sentry.IScope
     /* renamed from: clone */
     public IScope m1190clone() {
-        return g();
+        return i();
     }
 }

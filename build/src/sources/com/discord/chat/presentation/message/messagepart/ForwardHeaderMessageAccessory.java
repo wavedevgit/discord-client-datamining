@@ -16,22 +16,22 @@ public final class ForwardHeaderMessageAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-1xi1bu0$default  reason: not valid java name */
-    public static /* synthetic */ ForwardHeaderMessageAccessory m588copy1xi1bu0$default(ForwardHeaderMessageAccessory forwardHeaderMessageAccessory, String str, int i10, Object obj) {
+    public static /* synthetic */ ForwardHeaderMessageAccessory m586copy1xi1bu0$default(ForwardHeaderMessageAccessory forwardHeaderMessageAccessory, String str, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = forwardHeaderMessageAccessory.messageId;
         }
-        return forwardHeaderMessageAccessory.m590copy1xi1bu0(str);
+        return forwardHeaderMessageAccessory.m588copy1xi1bu0(str);
     }
 
     @NotNull
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m589component13Eiw7ao() {
+    public final String m587component13Eiw7ao() {
         return this.messageId;
     }
 
     @NotNull
     /* renamed from: copy-1xi1bu0  reason: not valid java name */
-    public final ForwardHeaderMessageAccessory m590copy1xi1bu0(@NotNull String messageId) {
+    public final ForwardHeaderMessageAccessory m588copy1xi1bu0(@NotNull String messageId) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         return new ForwardHeaderMessageAccessory(messageId, null);
     }
@@ -40,24 +40,24 @@ public final class ForwardHeaderMessageAccessory extends MessageAccessory {
         if (this == obj) {
             return true;
         }
-        return (obj instanceof ForwardHeaderMessageAccessory) && MessageId.m1089equalsimpl0(this.messageId, ((ForwardHeaderMessageAccessory) obj).messageId);
+        return (obj instanceof ForwardHeaderMessageAccessory) && MessageId.m1087equalsimpl0(this.messageId, ((ForwardHeaderMessageAccessory) obj).messageId);
     }
 
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     @NotNull
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo538getMessageId3Eiw7ao() {
+    public String mo536getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        return MessageId.m1090hashCodeimpl(this.messageId);
+        return MessageId.m1088hashCodeimpl(this.messageId);
     }
 
     @NotNull
     public String toString() {
-        String m1092toStringimpl = MessageId.m1092toStringimpl(this.messageId);
-        return "ForwardHeaderMessageAccessory(messageId=" + m1092toStringimpl + ")";
+        String m1090toStringimpl = MessageId.m1090toStringimpl(this.messageId);
+        return "ForwardHeaderMessageAccessory(messageId=" + m1090toStringimpl + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

@@ -48,50 +48,50 @@ public final class CheckInquiryResponse_DataJsonAdapter extends h {
     @NotNull
     public CheckInquiryResponse.Data fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         String str = null;
         String str2 = null;
         CheckInquiryResponse.Attributes attributes = null;
         int i10 = -1;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 str = (String) this.stringAdapter.fromJson(reader);
                 if (str == null) {
-                    throw ym.c.x(StackTraceHelper.ID_KEY, StackTraceHelper.ID_KEY, reader);
+                    throw an.c.x(StackTraceHelper.ID_KEY, StackTraceHelper.ID_KEY, reader);
                 }
-            } else if (W == 1) {
+            } else if (J == 1) {
                 str2 = (String) this.stringAdapter.fromJson(reader);
                 if (str2 == null) {
-                    throw ym.c.x("type", "type", reader);
+                    throw an.c.x("type", "type", reader);
                 }
-            } else if (W == 2) {
+            } else if (J == 2) {
                 attributes = (CheckInquiryResponse.Attributes) this.attributesAdapter.fromJson(reader);
                 if (attributes == null) {
-                    throw ym.c.x("attributes", "attributes", reader);
+                    throw an.c.x("attributes", "attributes", reader);
                 }
                 i10 = -5;
             } else {
                 continue;
             }
         }
-        reader.z();
+        reader.D();
         if (i10 == -5) {
             if (str != null) {
                 if (str2 != null) {
                     Intrinsics.checkNotNull(attributes, "null cannot be cast to non-null type com.withpersona.sdk2.inquiry.network.dto.CheckInquiryResponse.Attributes");
                     return new CheckInquiryResponse.Data(str, str2, attributes);
                 }
-                throw ym.c.o("type", "type", reader);
+                throw an.c.o("type", "type", reader);
             }
-            throw ym.c.o(StackTraceHelper.ID_KEY, StackTraceHelper.ID_KEY, reader);
+            throw an.c.o(StackTraceHelper.ID_KEY, StackTraceHelper.ID_KEY, reader);
         }
         Constructor<CheckInquiryResponse.Data> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = CheckInquiryResponse.Data.class.getDeclaredConstructor(String.class, String.class, CheckInquiryResponse.Attributes.class, Integer.TYPE, ym.c.f54853c);
+            constructor = CheckInquiryResponse.Data.class.getDeclaredConstructor(String.class, String.class, CheckInquiryResponse.Attributes.class, Integer.TYPE, an.c.f1164c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -101,9 +101,9 @@ public final class CheckInquiryResponse_DataJsonAdapter extends h {
                 Intrinsics.checkNotNullExpressionValue(newInstance, "newInstance(...)");
                 return newInstance;
             }
-            throw ym.c.o("type", "type", reader);
+            throw an.c.o("type", "type", reader);
         }
-        throw ym.c.o(StackTraceHelper.ID_KEY, StackTraceHelper.ID_KEY, reader);
+        throw an.c.o(StackTraceHelper.ID_KEY, StackTraceHelper.ID_KEY, reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -111,13 +111,13 @@ public final class CheckInquiryResponse_DataJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (data != null) {
             writer.k();
-            writer.W(StackTraceHelper.ID_KEY);
+            writer.J(StackTraceHelper.ID_KEY);
             this.stringAdapter.toJson(writer, data.getId());
-            writer.W("type");
+            writer.J("type");
             this.stringAdapter.toJson(writer, data.getType());
-            writer.W("attributes");
+            writer.J("attributes");
             this.attributesAdapter.toJson(writer, data.getAttributes());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

@@ -31,30 +31,30 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'uikit-native/CloseIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun69727: for (var _fun69727_ip = 0;;) switch (_fun69727_ip) {
+        _fun69755: for (var _fun69755_ip = 0;;) switch (_fun69755_ip) {
             case 0:
                 var2 = arg0;
                 var10 = var2.width;
                 var3 = undefined;
                 if (!(var10 === var3)) {
-                    _fun69727_ip = 17;
-                    continue _fun69727
+                    _fun69755_ip = 17;
+                    continue _fun69755
                 }
             case 14:
                 var10 = 24;
             case 17:
                 var9 = var2.height;
                 if (!(var9 === var3)) {
-                    _fun69727_ip = 29;
-                    continue _fun69727
+                    _fun69755_ip = 29;
+                    continue _fun69755
                 }
             case 26:
                 var9 = 24;
             case 29:
                 var6 = var2.color;
                 if (!(var6 === var3)) {
-                    _fun69727_ip = 44;
-                    continue _fun69727
+                    _fun69755_ip = 44;
+                    continue _fun69755
                 }
             case 38:
                 var6 = 'currentColor';
@@ -104,4 +104,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 5464, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 5465, 2]);

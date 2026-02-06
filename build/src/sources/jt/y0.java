@@ -1,27 +1,51 @@
 package jt;
 
-import java.util.Set;
+import java.util.Arrays;
 import kotlin.jvm.internal.Intrinsics;
-import kotlinx.serialization.descriptors.SerialDescriptor;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class y0 {
+public final class y0 extends d2 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Set f31408a = kotlin.collections.x0.i(et.a.I(or.z.f44252e).getDescriptor(), et.a.J(or.b0.f44204e).getDescriptor(), et.a.H(or.x.f44247e).getDescriptor(), et.a.K(or.e0.f44215e).getDescriptor());
+    private long[] f31104a;
 
-    public static final boolean a(SerialDescriptor serialDescriptor) {
-        Intrinsics.checkNotNullParameter(serialDescriptor, "<this>");
-        if (serialDescriptor.isInline() && Intrinsics.areEqual(serialDescriptor, ht.h.p())) {
-            return true;
-        }
-        return false;
+    /* renamed from: b  reason: collision with root package name */
+    private int f31105b;
+
+    public y0(long[] bufferWithData) {
+        Intrinsics.checkNotNullParameter(bufferWithData, "bufferWithData");
+        this.f31104a = bufferWithData;
+        this.f31105b = bufferWithData.length;
+        b(10);
     }
 
-    public static final boolean b(SerialDescriptor serialDescriptor) {
-        Intrinsics.checkNotNullParameter(serialDescriptor, "<this>");
-        if (serialDescriptor.isInline() && f31408a.contains(serialDescriptor)) {
-            return true;
+    @Override // jt.d2
+    public void b(int i10) {
+        long[] jArr = this.f31104a;
+        if (jArr.length < i10) {
+            long[] copyOf = Arrays.copyOf(jArr, kotlin.ranges.d.d(i10, jArr.length * 2));
+            Intrinsics.checkNotNullExpressionValue(copyOf, "copyOf(...)");
+            this.f31104a = copyOf;
         }
-        return false;
+    }
+
+    @Override // jt.d2
+    public int d() {
+        return this.f31105b;
+    }
+
+    public final void e(long j10) {
+        d2.c(this, 0, 1, null);
+        long[] jArr = this.f31104a;
+        int d10 = d();
+        this.f31105b = d10 + 1;
+        jArr[d10] = j10;
+    }
+
+    @Override // jt.d2
+    /* renamed from: f */
+    public long[] a() {
+        long[] copyOf = Arrays.copyOf(this.f31104a, d());
+        Intrinsics.checkNotNullExpressionValue(copyOf, "copyOf(...)");
+        return copyOf;
     }
 }

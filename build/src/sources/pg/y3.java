@@ -1,38 +1,43 @@
 package pg;
+
+import yi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class y3 {
+final class y3 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final w3 f45910a;
+    static final y3 f44950a = new y3();
 
     /* renamed from: b  reason: collision with root package name */
-    private final Integer f45911b;
+    private static final yi.c f44951b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final jd f45912c;
+    private static final yi.c f44952c;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public /* synthetic */ y3(t3 t3Var, x3 x3Var) {
-        w3 w3Var;
-        Integer num;
-        jd jdVar;
-        w3Var = t3Var.f45704a;
-        this.f45910a = w3Var;
-        num = t3Var.f45705b;
-        this.f45911b = num;
-        jdVar = t3Var.f45706c;
-        this.f45912c = jdVar;
+    /* renamed from: d  reason: collision with root package name */
+    private static final yi.c f44953d;
+
+    static {
+        c.b a10 = yi.c.a("logEventKey");
+        s1 s1Var = new s1();
+        s1Var.a(1);
+        f44951b = a10.b(s1Var.b()).a();
+        c.b a11 = yi.c.a("eventCount");
+        s1 s1Var2 = new s1();
+        s1Var2.a(2);
+        f44952c = a11.b(s1Var2.b()).a();
+        c.b a12 = yi.c.a("inferenceDurationStats");
+        s1 s1Var3 = new s1();
+        s1Var3.a(3);
+        f44953d = a12.b(s1Var3.b()).a();
     }
 
-    public final w3 a() {
-        return this.f45910a;
+    private y3() {
     }
 
-    public final jd b() {
-        return this.f45912c;
-    }
-
-    public final Integer c() {
-        return this.f45911b;
+    @Override // yi.d
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        android.support.v4.media.session.b.a(obj);
+        yi.e eVar = (yi.e) obj2;
+        throw null;
     }
 }

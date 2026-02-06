@@ -13,43 +13,43 @@ import org.jetbrains.annotations.NotNull;
 public final class DocumentFileUploadResponseJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f18521a;
+    private final m.b f18501a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f18522b;
+    private final h f18502b;
 
     public DocumentFileUploadResponseJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("data");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f18521a = a10;
+        this.f18501a = a10;
         h f10 = moshi.f(DocumentFileData.class, x0.d(), "data");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f18522b = f10;
+        this.f18502b = f10;
     }
 
     @Override // com.squareup.moshi.h
     /* renamed from: a */
     public DocumentFileUploadResponse fromJson(m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         DocumentFileData documentFileData = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.f18521a);
-            if (W != -1) {
-                if (W == 0 && (documentFileData = (DocumentFileData) this.f18522b.fromJson(reader)) == null) {
-                    throw ym.c.x("data_", "data", reader);
+            int J = reader.J(this.f18501a);
+            if (J != -1) {
+                if (J == 0 && (documentFileData = (DocumentFileData) this.f18502b.fromJson(reader)) == null) {
+                    throw an.c.x("data_", "data", reader);
                 }
             } else {
                 reader.E0();
-                reader.P();
+                reader.S();
             }
         }
-        reader.z();
+        reader.D();
         if (documentFileData != null) {
             return new DocumentFileUploadResponse(documentFileData);
         }
-        throw ym.c.o("data_", "data", reader);
+        throw an.c.o("data_", "data", reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -58,9 +58,9 @@ public final class DocumentFileUploadResponseJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (documentFileUploadResponse != null) {
             writer.k();
-            writer.W("data");
-            this.f18522b.toJson(writer, documentFileUploadResponse.a());
-            writer.E();
+            writer.J("data");
+            this.f18502b.toJson(writer, documentFileUploadResponse.a());
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

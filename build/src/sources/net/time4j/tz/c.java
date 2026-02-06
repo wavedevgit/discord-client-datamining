@@ -13,7 +13,7 @@ public final class c extends l {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c(k kVar, m mVar) {
-        this(kVar, mVar, l.f40224o);
+        this(kVar, mVar, l.f39579o);
     }
 
     private void readObject(ObjectInputStream objectInputStream) {
@@ -25,21 +25,21 @@ public final class c extends l {
     }
 
     @Override // net.time4j.tz.l
-    public p A(nt.a aVar, nt.g gVar) {
-        List e10 = this.H.e(aVar, gVar);
-        if (e10.size() == 1) {
-            return (p) e10.get(0);
+    public p A(pt.a aVar, pt.g gVar) {
+        List c10 = this.H.c(aVar, gVar);
+        if (c10.size() == 1) {
+            return (p) c10.get(0);
         }
-        return p.t(this.H.c(aVar, gVar).l());
+        return p.t(this.H.a(aVar, gVar).k());
     }
 
     @Override // net.time4j.tz.l
-    public p B(nt.f fVar) {
+    public p B(pt.f fVar) {
         q b10 = this.H.b(fVar);
         if (b10 == null) {
-            return this.H.d();
+            return this.H.e();
         }
-        return p.t(b10.l());
+        return p.t(b10.k());
     }
 
     @Override // net.time4j.tz.l
@@ -48,8 +48,8 @@ public final class c extends l {
     }
 
     @Override // net.time4j.tz.l
-    public boolean I(nt.f fVar) {
-        nt.f b10;
+    public boolean I(pt.f fVar) {
+        pt.f b10;
         q b11;
         q b12 = this.H.b(fVar);
         if (b12 == null) {
@@ -59,10 +59,10 @@ public final class c extends l {
         if (f10 > 0) {
             return true;
         }
-        if (f10 < 0 || !this.H.a() || (b11 = this.H.b((b10 = i.b(b12.g(), 0)))) == null) {
+        if (f10 < 0 || !this.H.d() || (b11 = this.H.b((b10 = i.b(b12.g(), 0)))) == null) {
             return false;
         }
-        if (b11.k() == b12.k()) {
+        if (b11.j() == b12.j()) {
             if (b11.f() >= 0) {
                 return false;
             }
@@ -77,9 +77,9 @@ public final class c extends l {
     }
 
     @Override // net.time4j.tz.l
-    public boolean K(nt.a aVar, nt.g gVar) {
-        q c10 = this.H.c(aVar, gVar);
-        if (c10 != null && c10.m()) {
+    public boolean K(pt.a aVar, pt.g gVar) {
+        q a10 = this.H.a(aVar, gVar);
+        if (a10 != null && a10.m()) {
             return true;
         }
         return false;

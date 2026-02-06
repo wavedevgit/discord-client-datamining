@@ -8,47 +8,47 @@ import java.nio.channels.FileChannel;
 public class i implements h {
 
     /* renamed from: d  reason: collision with root package name */
-    private File f11440d;
+    private File f11339d;
 
     /* renamed from: e  reason: collision with root package name */
-    private FileInputStream f11441e;
+    private FileInputStream f11340e;
 
     /* renamed from: i  reason: collision with root package name */
-    private FileChannel f11442i;
+    private FileChannel f11341i;
 
     public i(File file) {
-        this.f11440d = file;
+        this.f11339d = file;
         a();
     }
 
     public void a() {
-        FileInputStream fileInputStream = new FileInputStream(this.f11440d);
-        this.f11441e = fileInputStream;
-        this.f11442i = fileInputStream.getChannel();
+        FileInputStream fileInputStream = new FileInputStream(this.f11339d);
+        this.f11340e = fileInputStream;
+        this.f11341i = fileInputStream.getChannel();
     }
 
     @Override // java.nio.channels.Channel, java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        this.f11441e.close();
+        this.f11340e.close();
     }
 
     @Override // com.facebook.soloader.h
-    public int g0(ByteBuffer byteBuffer, long j10) {
-        return this.f11442i.read(byteBuffer, j10);
+    public int i0(ByteBuffer byteBuffer, long j10) {
+        return this.f11341i.read(byteBuffer, j10);
     }
 
     @Override // java.nio.channels.Channel
     public boolean isOpen() {
-        return this.f11442i.isOpen();
+        return this.f11341i.isOpen();
     }
 
     @Override // java.nio.channels.ReadableByteChannel
     public int read(ByteBuffer byteBuffer) {
-        return this.f11442i.read(byteBuffer);
+        return this.f11341i.read(byteBuffer);
     }
 
     @Override // java.nio.channels.WritableByteChannel
     public int write(ByteBuffer byteBuffer) {
-        return this.f11442i.write(byteBuffer);
+        return this.f11341i.write(byteBuffer);
     }
 }

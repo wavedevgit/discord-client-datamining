@@ -1,34 +1,58 @@
 package mg;
 
-import android.os.IBinder;
-import android.os.IInterface;
-import android.os.Parcel;
+import java.util.Objects;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class l extends a implements n {
+public final class l extends f {
+
+    /* renamed from: q  reason: collision with root package name */
+    static final f f37128q = new l(new Object[0], 0);
+
+    /* renamed from: o  reason: collision with root package name */
+    final transient Object[] f37129o;
+
+    /* renamed from: p  reason: collision with root package name */
+    private final transient int f37130p;
+
     /* JADX INFO: Access modifiers changed from: package-private */
-    public l(IBinder iBinder) {
-        super(iBinder, "com.google.android.gms.vision.barcode.internal.client.INativeBarcodeDetectorCreator");
+    public l(Object[] objArr, int i10) {
+        this.f37129o = objArr;
+        this.f37130p = i10;
     }
 
-    @Override // mg.n
-    public final k l0(sf.a aVar, i iVar) {
-        k kVar;
-        Parcel e10 = e();
-        p0.b(e10, aVar);
-        p0.a(e10, iVar);
-        Parcel f10 = f(1, e10);
-        IBinder readStrongBinder = f10.readStrongBinder();
-        if (readStrongBinder == null) {
-            kVar = null;
-        } else {
-            IInterface queryLocalInterface = readStrongBinder.queryLocalInterface("com.google.android.gms.vision.barcode.internal.client.INativeBarcodeDetector");
-            if (queryLocalInterface instanceof k) {
-                kVar = (k) queryLocalInterface;
-            } else {
-                kVar = new k(readStrongBinder);
-            }
-        }
-        f10.recycle();
-        return kVar;
+    @Override // mg.f, mg.c
+    final int b(Object[] objArr, int i10) {
+        System.arraycopy(this.f37129o, 0, objArr, 0, this.f37130p);
+        return this.f37130p;
+    }
+
+    @Override // mg.c
+    final int c() {
+        return this.f37130p;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    @Override // mg.c
+    public final int d() {
+        return 0;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    @Override // mg.c
+    public final Object[] e() {
+        return this.f37129o;
+    }
+
+    @Override // java.util.List
+    public final Object get(int i10) {
+        t0.a(i10, this.f37130p, "index");
+        Object obj = this.f37129o[i10];
+        Objects.requireNonNull(obj);
+        return obj;
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
+    public final int size() {
+        return this.f37130p;
     }
 }

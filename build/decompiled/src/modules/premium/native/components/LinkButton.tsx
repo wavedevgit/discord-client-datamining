@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/native/components/LinkButton.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun59527: for (var _fun59527_ip = 0;;) switch (_fun59527_ip) {
+        _fun59554: for (var _fun59554_ip = 0;;) switch (_fun59554_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.onPress;
@@ -62,16 +62,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var0.variant;
                 var3 = undefined;
                 if (!(var10 === var3)) {
-                    _fun59527_ip = 47;
-                    continue _fun59527
+                    _fun59554_ip = 47;
+                    continue _fun59554
                 }
             case 41:
                 var10 = 'text-xs/medium';
             case 47:
                 var9 = var0.textColor;
                 if (!(var9 === var3)) {
-                    _fun59527_ip = 63;
-                    continue _fun59527
+                    _fun59554_ip = 63;
+                    continue _fun59554
                 }
             case 57:
                 var9 = 'text-link';
@@ -92,8 +92,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12[0] = var14;
                 var14 = var7;
                 if (!var14) {
-                    _fun59527_ip = 138;
-                    continue _fun59527
+                    _fun59554_ip = 138;
+                    continue _fun59554
                 }
             case 132:
                 var14 = var15.disabledContainerStyle;
@@ -136,4 +136,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.LinkButton = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 4904, 3941, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 4905, 3943, 2]);

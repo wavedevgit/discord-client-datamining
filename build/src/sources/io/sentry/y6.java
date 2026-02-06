@@ -7,40 +7,40 @@ import java.util.Map;
 public final class y6 implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private String f29966d;
+    private String f29110d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Object f29967e;
+    private Object f29111e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Map f29968i;
+    private Map f29112i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
         @Override // io.sentry.m1
         /* renamed from: b */
         public y6 a(e3 e3Var, ILogger iLogger) {
-            e3Var.s();
+            e3Var.u();
             String str = null;
             Object obj = null;
             HashMap hashMap = null;
             while (e3Var.peek() == io.sentry.vendor.gson.stream.b.NAME) {
-                String m02 = e3Var.m0();
-                m02.getClass();
-                if (!m02.equals("type")) {
-                    if (!m02.equals("value")) {
+                String o02 = e3Var.o0();
+                o02.getClass();
+                if (!o02.equals("type")) {
+                    if (!o02.equals("value")) {
                         if (hashMap == null) {
                             hashMap = new HashMap();
                         }
-                        e3Var.v1(iLogger, hashMap, m02);
+                        e3Var.u1(iLogger, hashMap, o02);
                     } else {
-                        obj = e3Var.V1();
+                        obj = e3Var.U1();
                     }
                 } else {
-                    str = e3Var.r1();
+                    str = e3Var.q1();
                 }
             }
-            e3Var.z();
+            e3Var.D();
             if (str != null) {
                 y6 y6Var = new y6(str, obj);
                 y6Var.a(hashMap);
@@ -53,29 +53,29 @@ public final class y6 implements w1 {
     }
 
     public y6(String str, Object obj) {
-        this.f29966d = str;
+        this.f29110d = str;
         if (obj != null && str.equals(InquiryField.StringField.TYPE)) {
-            this.f29967e = obj.toString();
+            this.f29111e = obj.toString();
         } else {
-            this.f29967e = obj;
+            this.f29111e = obj;
         }
     }
 
     public void a(Map map) {
-        this.f29968i = map;
+        this.f29112i = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
-        f3Var.s();
-        f3Var.e("type").j(iLogger, this.f29966d);
-        f3Var.e("value").j(iLogger, this.f29967e);
-        Map map = this.f29968i;
+        f3Var.u();
+        f3Var.e("type").j(iLogger, this.f29110d);
+        f3Var.e("value").j(iLogger, this.f29111e);
+        Map map = this.f29112i;
         if (map != null) {
             for (String str : map.keySet()) {
-                f3Var.e(str).j(iLogger, this.f29968i.get(str));
+                f3Var.e(str).j(iLogger, this.f29112i.get(str));
             }
         }
-        f3Var.z();
+        f3Var.D();
     }
 }

@@ -42,48 +42,48 @@ public final class InternalErrorInfo_NetworkErrorInfoJsonAdapter extends h {
     @Override // com.squareup.moshi.h
     @NotNull
     public InternalErrorInfo.NetworkErrorInfo fromJson(@NotNull m mVar) {
-        mVar.s();
+        mVar.u();
         Integer num = null;
         String str = null;
         Boolean bool = null;
         ErrorResponse.Error error = null;
         int i10 = -1;
         while (mVar.hasNext()) {
-            int W = mVar.W(this.options);
-            if (W == -1) {
+            int J = mVar.J(this.options);
+            if (J == -1) {
                 mVar.E0();
-                mVar.P();
-            } else if (W == 0) {
+                mVar.S();
+            } else if (J == 0) {
                 num = (Integer) this.intAdapter.fromJson(mVar);
                 if (num == null) {
-                    throw ym.c.x("code", "code", mVar);
+                    throw an.c.x("code", "code", mVar);
                 }
-            } else if (W == 1) {
+            } else if (J == 1) {
                 str = (String) this.nullableStringAdapter.fromJson(mVar);
-            } else if (W == 2) {
+            } else if (J == 2) {
                 bool = (Boolean) this.booleanAdapter.fromJson(mVar);
                 if (bool == null) {
-                    throw ym.c.x("isRecoverable", "isRecoverable", mVar);
+                    throw an.c.x("isRecoverable", "isRecoverable", mVar);
                 }
-            } else if (W == 3) {
+            } else if (J == 3) {
                 error = (ErrorResponse.Error) this.nullableErrorAdapter.fromJson(mVar);
                 i10 = -9;
             }
         }
-        mVar.z();
+        mVar.D();
         if (i10 == -9) {
             if (num != null) {
                 int intValue = num.intValue();
                 if (bool != null) {
                     return new InternalErrorInfo.NetworkErrorInfo(intValue, str, bool.booleanValue(), error);
                 }
-                throw ym.c.o("isRecoverable", "isRecoverable", mVar);
+                throw an.c.o("isRecoverable", "isRecoverable", mVar);
             }
-            throw ym.c.o("code", "code", mVar);
+            throw an.c.o("code", "code", mVar);
         }
         Constructor<InternalErrorInfo.NetworkErrorInfo> constructor = this.constructorRef;
         if (constructor == null) {
-            Class cls = ym.c.f54853c;
+            Class cls = an.c.f1164c;
             Class cls2 = Integer.TYPE;
             constructor = InternalErrorInfo.NetworkErrorInfo.class.getDeclaredConstructor(cls2, String.class, Boolean.TYPE, ErrorResponse.Error.class, cls2, cls);
             this.constructorRef = constructor;
@@ -92,24 +92,24 @@ public final class InternalErrorInfo_NetworkErrorInfoJsonAdapter extends h {
             if (bool != null) {
                 return constructor.newInstance(num, str, bool, error, Integer.valueOf(i10), null);
             }
-            throw ym.c.o("isRecoverable", "isRecoverable", mVar);
+            throw an.c.o("isRecoverable", "isRecoverable", mVar);
         }
-        throw ym.c.o("code", "code", mVar);
+        throw an.c.o("code", "code", mVar);
     }
 
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t tVar, InternalErrorInfo.NetworkErrorInfo networkErrorInfo) {
         if (networkErrorInfo != null) {
             tVar.k();
-            tVar.W("code");
+            tVar.J("code");
             this.intAdapter.toJson(tVar, Integer.valueOf(networkErrorInfo.getCode()));
-            tVar.W("message");
+            tVar.J("message");
             this.nullableStringAdapter.toJson(tVar, networkErrorInfo.getMessage());
-            tVar.W("isRecoverable");
+            tVar.J("isRecoverable");
             this.booleanAdapter.toJson(tVar, Boolean.valueOf(networkErrorInfo.isRecoverable()));
-            tVar.W("responseError");
+            tVar.J("responseError");
             this.nullableErrorAdapter.toJson(tVar, networkErrorInfo.getResponseError());
-            tVar.E();
+            tVar.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

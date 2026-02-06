@@ -13,65 +13,65 @@ import org.jetbrains.annotations.NotNull;
 public final class p extends LayoutShadowNode {
 
     /* renamed from: a  reason: collision with root package name */
-    private n f18474a;
+    private n f18454a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final float[] f18475b;
+    private final float[] f18455b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final float[] f18476c;
+    private final float[] f18456c;
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f18477d;
+    private boolean f18457d;
 
     public p() {
         int[] iArr = ViewProps.PADDING_MARGIN_SPACING_TYPES;
-        this.f18475b = new float[iArr.length];
-        this.f18476c = new float[iArr.length];
+        this.f18455b = new float[iArr.length];
+        this.f18456c = new float[iArr.length];
         int length = iArr.length;
         for (int i10 = 0; i10 < length; i10++) {
-            this.f18475b[i10] = Float.NaN;
-            this.f18476c[i10] = Float.NaN;
+            this.f18455b[i10] = Float.NaN;
+            this.f18456c[i10] = Float.NaN;
         }
     }
 
     private final float a(l lVar, float f10, float f11) {
-        if (lVar == l.f18458d) {
+        if (lVar == l.f18438d) {
             return f11;
         }
-        if (lVar == l.f18460i) {
+        if (lVar == l.f18440i) {
             return Math.max(f10, f11);
         }
         return f10 + f11;
     }
 
     private final void b(o oVar) {
-        if (oVar == o.f18470d) {
-            super.setPadding(1, this.f18475b[1]);
-            super.setPadding(2, this.f18475b[2]);
-            super.setPadding(3, this.f18475b[3]);
-            super.setPadding(0, this.f18475b[0]);
+        if (oVar == o.f18450d) {
+            super.setPadding(1, this.f18455b[1]);
+            super.setPadding(2, this.f18455b[2]);
+            super.setPadding(3, this.f18455b[3]);
+            super.setPadding(0, this.f18455b[0]);
         } else {
-            super.setMargin(1, this.f18476c[1]);
-            super.setMargin(2, this.f18476c[2]);
-            super.setMargin(3, this.f18476c[3]);
-            super.setMargin(0, this.f18476c[0]);
+            super.setMargin(1, this.f18456c[1]);
+            super.setMargin(2, this.f18456c[2]);
+            super.setMargin(3, this.f18456c[3]);
+            super.setMargin(0, this.f18456c[0]);
         }
         markUpdated();
     }
 
     private final void c() {
         float[] fArr;
-        n nVar = this.f18474a;
+        n nVar = this.f18454a;
         if (nVar == null) {
             return;
         }
         o c10 = nVar.c();
-        o oVar = o.f18470d;
+        o oVar = o.f18450d;
         if (c10 == oVar) {
-            fArr = this.f18475b;
+            fArr = this.f18455b;
         } else {
-            fArr = this.f18476c;
+            fArr = this.f18456c;
         }
         float f10 = fArr[8];
         if (Float.isNaN(f10)) {
@@ -128,8 +128,8 @@ public final class p extends LayoutShadowNode {
     @Override // com.facebook.react.uimanager.ReactShadowNodeImpl, com.facebook.react.uimanager.ReactShadowNode
     public void onBeforeLayout(NativeViewHierarchyOptimizer nativeViewHierarchyOptimizer) {
         Intrinsics.checkNotNullParameter(nativeViewHierarchyOptimizer, "nativeViewHierarchyOptimizer");
-        if (this.f18477d) {
-            this.f18477d = false;
+        if (this.f18457d) {
+            this.f18457d = false;
             c();
         }
     }
@@ -140,12 +140,12 @@ public final class p extends LayoutShadowNode {
         if (!(data instanceof n)) {
             return;
         }
-        n nVar = this.f18474a;
+        n nVar = this.f18454a;
         if (nVar != null && nVar.c() != ((n) data).c()) {
             b(nVar.c());
         }
-        this.f18474a = (n) data;
-        this.f18477d = false;
+        this.f18454a = (n) data;
+        this.f18457d = false;
         c();
     }
 
@@ -155,7 +155,7 @@ public final class p extends LayoutShadowNode {
         float f10;
         Intrinsics.checkNotNullParameter(margin, "margin");
         int i11 = ViewProps.PADDING_MARGIN_SPACING_TYPES[i10];
-        float[] fArr = this.f18476c;
+        float[] fArr = this.f18456c;
         if (margin.getType() == ReadableType.Number) {
             f10 = (float) margin.asDouble();
         } else {
@@ -163,7 +163,7 @@ public final class p extends LayoutShadowNode {
         }
         fArr[i11] = f10;
         super.setMargins(i10, margin);
-        this.f18477d = true;
+        this.f18457d = true;
     }
 
     @Override // com.facebook.react.uimanager.LayoutShadowNode
@@ -172,7 +172,7 @@ public final class p extends LayoutShadowNode {
         float f10;
         Intrinsics.checkNotNullParameter(padding, "padding");
         int i11 = ViewProps.PADDING_MARGIN_SPACING_TYPES[i10];
-        float[] fArr = this.f18475b;
+        float[] fArr = this.f18455b;
         if (padding.getType() == ReadableType.Number) {
             f10 = (float) padding.asDouble();
         } else {
@@ -180,6 +180,6 @@ public final class p extends LayoutShadowNode {
         }
         fArr[i11] = f10;
         super.setPaddings(i10, padding);
-        this.f18477d = true;
+        this.f18457d = true;
     }
 }

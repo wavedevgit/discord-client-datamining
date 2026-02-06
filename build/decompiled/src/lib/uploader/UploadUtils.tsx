@@ -718,4 +718,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.canUploadNatively = var3;
     var2.LibdiscoreHttpClient = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 4005, 507, 4011, 1616, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 4006, 507, 4012, 1616, 2]);

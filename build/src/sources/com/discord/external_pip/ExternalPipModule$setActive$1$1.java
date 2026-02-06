@@ -19,12 +19,12 @@ final class ExternalPipModule$setActive$1$1 implements Function1<Result, Unit> {
 
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Object invoke(Object obj) {
-        m877invoke(((Result) obj).j());
-        return Unit.f31988a;
+        m875invoke(((Result) obj).j());
+        return Unit.f32008a;
     }
 
     /* renamed from: invoke  reason: collision with other method in class */
-    public final void m877invoke(Object obj) {
+    public final void m875invoke(Object obj) {
         Throwable e10 = Result.e(obj);
         if (e10 != null) {
             this.$onResultPromise.reject(e10);

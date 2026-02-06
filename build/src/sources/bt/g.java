@@ -1,89 +1,24 @@
 package bt;
 
+import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface g {
+public final class g implements v {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a implements g {
+    /* renamed from: a  reason: collision with root package name */
+    private final Object f7065a;
 
-        /* renamed from: a  reason: collision with root package name */
-        private final Object f7224a;
+    /* renamed from: b  reason: collision with root package name */
+    private final Function1 f7066b;
 
-        public a(Object conflicting) {
-            Intrinsics.checkNotNullParameter(conflicting, "conflicting");
-            this.f7224a = conflicting;
-        }
-
-        @Override // bt.g
-        public String a() {
-            return "attempted to overwrite the existing value '" + this.f7224a + '\'';
-        }
+    public g(Object obj, Function1 getter) {
+        Intrinsics.checkNotNullParameter(getter, "getter");
+        this.f7065a = obj;
+        this.f7066b = getter;
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class b implements g {
-
-        /* renamed from: a  reason: collision with root package name */
-        public static final b f7225a = new b();
-
-        private b() {
-        }
-
-        @Override // bt.g
-        public String a() {
-            return "expected an Int value";
-        }
+    @Override // bt.v
+    public boolean test(Object obj) {
+        return Intrinsics.areEqual(this.f7066b.invoke(obj), this.f7065a);
     }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class c implements g {
-
-        /* renamed from: a  reason: collision with root package name */
-        private final int f7226a;
-
-        public c(int i10) {
-            this.f7226a = i10;
-        }
-
-        @Override // bt.g
-        public String a() {
-            return "expected at least " + this.f7226a + " digits";
-        }
-    }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class d implements g {
-
-        /* renamed from: a  reason: collision with root package name */
-        private final int f7227a;
-
-        public d(int i10) {
-            this.f7227a = i10;
-        }
-
-        @Override // bt.g
-        public String a() {
-            return "expected at most " + this.f7227a + " digits";
-        }
-    }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class e implements g {
-
-        /* renamed from: a  reason: collision with root package name */
-        private final String f7228a;
-
-        public e(String expected) {
-            Intrinsics.checkNotNullParameter(expected, "expected");
-            this.f7228a = expected;
-        }
-
-        @Override // bt.g
-        public String a() {
-            return "expected '" + this.f7228a + '\'';
-        }
-    }
-
-    String a();
 }

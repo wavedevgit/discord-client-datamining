@@ -1,39 +1,32 @@
 package di;
+
+import android.os.Bundle;
+import ei.t;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class j implements Runnable {
+abstract class j extends ei.g {
+
+    /* renamed from: c  reason: collision with root package name */
+    final ei.i f20776c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final xg.k f20815d;
+    final yg.k f20777d;
+
+    /* renamed from: e  reason: collision with root package name */
+    final /* synthetic */ l f20778e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public j() {
-        this.f20815d = null;
+    public j(l lVar, ei.i iVar, yg.k kVar) {
+        this.f20778e = lVar;
+        this.f20776c = iVar;
+        this.f20777d = kVar;
     }
 
-    protected abstract void a();
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public final xg.k b() {
-        return this.f20815d;
-    }
-
-    public final void c(Exception exc) {
-        xg.k kVar = this.f20815d;
-        if (kVar != null) {
-            kVar.d(exc);
+    @Override // ei.h
+    public void H0(Bundle bundle) {
+        t tVar = this.f20778e.f20781a;
+        if (tVar != null) {
+            tVar.r(this.f20777d);
         }
-    }
-
-    @Override // java.lang.Runnable
-    public final void run() {
-        try {
-            a();
-        } catch (Exception e10) {
-            c(e10);
-        }
-    }
-
-    public j(xg.k kVar) {
-        this.f20815d = kVar;
+        this.f20776c.d("onGetLaunchReviewFlowInfo", new Object[0]);
     }
 }

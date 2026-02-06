@@ -1,52 +1,71 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var3 = require;
-    var2 = dependencyMap;
-    var _closure1_slot0 = var3;
-    var _closure1_slot1 = var2;
-    var0 = 0;
-    var2 = var2[var0];
-    var0 = undefined;
-    var3 = var3.bind(var0)(var2);
-    var2 = '%String%';
-    var2 = var3.bind(var0)(var2);
-    var _closure1_slot2 = var2;
-    var2 = function arg0() {
+    var1 = require;
+    var _closure1_slot0 = var1;
+    var1 = dependencyMap;
+    var _closure1_slot1 = var1;
+    var1 = function() {
         _fun29108: for (var _fun29108_ip = 0;;) switch (_fun29108_ip) {
             case 0:
-                var2 = arg0;
-                var1 = 'symbol';
-                var0 = typeof var2;
-                if (!(var1 !== var0)) {
-                    _fun29108_ip = 30;
+                var1 = global;
+                var0 = var1.String;
+                var0 = var0.prototype;
+                var0 = var0.trim;
+                if (!var0) {
+                    _fun29108_ip = 102;
                     continue _fun29108
                 }
-            case 14:
-                var1 = _closure1_slot2;
+            case 22:
+                var2 = '\u200b';
+                var0 = var2.trim;
+                var0 = var0.bind(var2)();
+                if (!(var2 === var0)) {
+                    _fun29108_ip = 102;
+                    continue _fun29108
+                }
+            case 42:
+                var2 = '\u180e';
+                var0 = var2.trim;
+                var0 = var0.bind(var2)();
+                if (!(var2 === var0)) {
+                    _fun29108_ip = 102;
+                    continue _fun29108
+                }
+            case 62:
+                var2 = '_\u180e';
+                var0 = var2.trim;
+                var0 = var0.bind(var2)();
+                if (!(var2 === var0)) {
+                    _fun29108_ip = 102;
+                    continue _fun29108
+                }
+            case 82:
+                var2 = '\u180e_';
+                var0 = var2.trim;
+                var0 = var0.bind(var2)();
+                if (!(var2 !== var0)) {
+                    _fun29108_ip = 128;
+                    continue _fun29108
+                }
+            case 102:
+                var3 = _closure1_slot0;
+                var2 = _closure1_slot1;
+                var0 = 0;
+                var2 = var2[var0];
                 var0 = undefined;
-                var0 = var1.bind(var0)(var2);
+                var0 = var3.bind(var0)(var2);
+                _fun29108_ip = 145;
+                continue _fun29108;
+            case 128:
+                var1 = var1.String;
+                var1 = var1.prototype;
+                var0 = var1.trim;
+            case 145:
                 return var0;
-            case 30:
-                var2 = _closure1_slot0;
-                var1 = _closure1_slot1;
-                var0 = 1;
-                var1 = var1[var0];
-                var0 = undefined;
-                var2 = var2.bind(var0)(var1);
-                var0 = var2.prototype;
-                var1 = Object.create(var0, {
-                    constructor: {
-                        value: var2
-                    }
-                });
-                var3 = 'Cannot convert a Symbol value to a string';
-                var4 = var1;
-                var0 = new var4[var2](var3, var2);
-                var0 = var0 instanceof Object ? var0 : var1;
-                throw var0;
         }
     };
-    var1 = arg4;
-    var1.exports = var2;
+    var0 = arg4;
+    var0.exports = var1;
+    var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [517, 518]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3392]);

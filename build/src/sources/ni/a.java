@@ -1,21 +1,67 @@
 package ni;
 
-import java.math.BigDecimal;
-import java.math.BigInteger;
-import java.math.RoundingMode;
+import java.util.NoSuchElementException;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class a {
+abstract class a extends u0 {
 
-    /* renamed from: a  reason: collision with root package name */
-    static final BigInteger f41318a = new BigInteger("16a09e667f3bcc908b2fb1366ea957d3e3adec17512775099da2f590b0667322a", 16);
+    /* renamed from: d  reason: collision with root package name */
+    private final int f40707d;
 
-    /* renamed from: b  reason: collision with root package name */
-    private static final double f41319b = Math.log(10.0d);
+    /* renamed from: e  reason: collision with root package name */
+    private int f40708e;
 
-    /* renamed from: c  reason: collision with root package name */
-    private static final double f41320c = Math.log(2.0d);
+    /* JADX INFO: Access modifiers changed from: protected */
+    public a(int i10, int i11) {
+        mi.m.l(i11, i10);
+        this.f40707d = i10;
+        this.f40708e = i11;
+    }
 
-    public static BigInteger a(BigInteger bigInteger, BigInteger bigInteger2, RoundingMode roundingMode) {
-        return new BigDecimal(bigInteger).divide(new BigDecimal(bigInteger2), 0, roundingMode).toBigIntegerExact();
+    protected abstract Object a(int i10);
+
+    @Override // java.util.Iterator, java.util.ListIterator
+    public final boolean hasNext() {
+        if (this.f40708e < this.f40707d) {
+            return true;
+        }
+        return false;
+    }
+
+    @Override // java.util.ListIterator
+    public final boolean hasPrevious() {
+        if (this.f40708e > 0) {
+            return true;
+        }
+        return false;
+    }
+
+    @Override // java.util.Iterator, java.util.ListIterator
+    public final Object next() {
+        if (hasNext()) {
+            int i10 = this.f40708e;
+            this.f40708e = i10 + 1;
+            return a(i10);
+        }
+        throw new NoSuchElementException();
+    }
+
+    @Override // java.util.ListIterator
+    public final int nextIndex() {
+        return this.f40708e;
+    }
+
+    @Override // java.util.ListIterator
+    public final Object previous() {
+        if (hasPrevious()) {
+            int i10 = this.f40708e - 1;
+            this.f40708e = i10;
+            return a(i10);
+        }
+        throw new NoSuchElementException();
+    }
+
+    @Override // java.util.ListIterator
+    public final int previousIndex() {
+        return this.f40708e - 1;
     }
 }

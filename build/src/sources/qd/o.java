@@ -12,35 +12,35 @@ public final class o extends y0 {
     private boolean E;
 
     /* renamed from: x  reason: collision with root package name */
-    private final boolean f47749x;
+    private final boolean f46797x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final Timeline.d f47750y;
+    private final Timeline.d f46798y;
 
     /* renamed from: z  reason: collision with root package name */
-    private final Timeline.b f47751z;
+    private final Timeline.b f46799z;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a extends l {
 
         /* renamed from: t  reason: collision with root package name */
-        public static final Object f47752t = new Object();
+        public static final Object f46800t = new Object();
 
         /* renamed from: r  reason: collision with root package name */
-        private final Object f47753r;
+        private final Object f46801r;
 
         /* renamed from: s  reason: collision with root package name */
-        private final Object f47754s;
+        private final Object f46802s;
 
         private a(Timeline timeline, Object obj, Object obj2) {
             super(timeline);
-            this.f47753r = obj;
-            this.f47754s = obj2;
+            this.f46801r = obj;
+            this.f46802s = obj2;
         }
 
         public static a y(MediaItem mediaItem) {
-            return new a(new b(mediaItem), Timeline.d.C, f47752t);
+            return new a(new b(mediaItem), Timeline.d.C, f46800t);
         }
 
         public static a z(Timeline timeline, Object obj, Object obj2) {
@@ -50,8 +50,8 @@ public final class o extends y0 {
         @Override // qd.l, com.google.android.exoplayer2.Timeline
         public int f(Object obj) {
             Object obj2;
-            Timeline timeline = this.f47705q;
-            if (f47752t.equals(obj) && (obj2 = this.f47754s) != null) {
+            Timeline timeline = this.f46753q;
+            if (f46800t.equals(obj) && (obj2 = this.f46802s) != null) {
                 obj = obj2;
             }
             return timeline.f(obj);
@@ -59,33 +59,33 @@ public final class o extends y0 {
 
         @Override // qd.l, com.google.android.exoplayer2.Timeline
         public Timeline.b k(int i10, Timeline.b bVar, boolean z10) {
-            this.f47705q.k(i10, bVar, z10);
-            if (ne.w0.c(bVar.f11977e, this.f47754s) && z10) {
-                bVar.f11977e = f47752t;
+            this.f46753q.k(i10, bVar, z10);
+            if (ne.w0.c(bVar.f11876e, this.f46802s) && z10) {
+                bVar.f11876e = f46800t;
             }
             return bVar;
         }
 
         @Override // qd.l, com.google.android.exoplayer2.Timeline
         public Object q(int i10) {
-            Object q10 = this.f47705q.q(i10);
-            if (ne.w0.c(q10, this.f47754s)) {
-                return f47752t;
+            Object q10 = this.f46753q.q(i10);
+            if (ne.w0.c(q10, this.f46802s)) {
+                return f46800t;
             }
             return q10;
         }
 
         @Override // qd.l, com.google.android.exoplayer2.Timeline
         public Timeline.d s(int i10, Timeline.d dVar, long j10) {
-            this.f47705q.s(i10, dVar, j10);
-            if (ne.w0.c(dVar.f11987d, this.f47753r)) {
-                dVar.f11987d = Timeline.d.C;
+            this.f46753q.s(i10, dVar, j10);
+            if (ne.w0.c(dVar.f11886d, this.f46801r)) {
+                dVar.f11886d = Timeline.d.C;
             }
             return dVar;
         }
 
         public a x(Timeline timeline) {
-            return new a(timeline, this.f47753r, this.f47754s);
+            return new a(timeline, this.f46801r, this.f46802s);
         }
     }
 
@@ -93,15 +93,15 @@ public final class o extends y0 {
     public static final class b extends Timeline {
 
         /* renamed from: q  reason: collision with root package name */
-        private final MediaItem f47755q;
+        private final MediaItem f46803q;
 
         public b(MediaItem mediaItem) {
-            this.f47755q = mediaItem;
+            this.f46803q = mediaItem;
         }
 
         @Override // com.google.android.exoplayer2.Timeline
         public int f(Object obj) {
-            if (obj == a.f47752t) {
+            if (obj == a.f46800t) {
                 return 0;
             }
             return -1;
@@ -117,9 +117,9 @@ public final class o extends y0 {
                 num = null;
             }
             if (z10) {
-                obj = a.f47752t;
+                obj = a.f46800t;
             }
-            bVar.w(num, obj, 0, -9223372036854775807L, 0L, rd.c.f48783r, true);
+            bVar.w(num, obj, 0, -9223372036854775807L, 0L, rd.c.f48867r, true);
             return bVar;
         }
 
@@ -130,13 +130,13 @@ public final class o extends y0 {
 
         @Override // com.google.android.exoplayer2.Timeline
         public Object q(int i10) {
-            return a.f47752t;
+            return a.f46800t;
         }
 
         @Override // com.google.android.exoplayer2.Timeline
         public Timeline.d s(int i10, Timeline.d dVar, long j10) {
-            dVar.h(Timeline.d.C, this.f47755q, null, -9223372036854775807L, -9223372036854775807L, -9223372036854775807L, false, true, null, 0L, -9223372036854775807L, 0, 0, 0L);
-            dVar.f11998w = true;
+            dVar.h(Timeline.d.C, this.f46803q, null, -9223372036854775807L, -9223372036854775807L, -9223372036854775807L, false, true, null, 0L, -9223372036854775807L, 0, 0, 0L);
+            dVar.f11897w = true;
             return dVar;
         }
 
@@ -154,9 +154,9 @@ public final class o extends y0 {
         } else {
             z11 = false;
         }
-        this.f47749x = z11;
-        this.f47750y = new Timeline.d();
-        this.f47751z = new Timeline.b();
+        this.f46797x = z11;
+        this.f46798y = new Timeline.d();
+        this.f46799z = new Timeline.b();
         Timeline q10 = rVar.q();
         if (q10 != null) {
             this.A = a.z(q10, null, null);
@@ -167,26 +167,26 @@ public final class o extends y0 {
     }
 
     private Object V(Object obj) {
-        if (this.A.f47754s != null && this.A.f47754s.equals(obj)) {
-            return a.f47752t;
+        if (this.A.f46802s != null && this.A.f46802s.equals(obj)) {
+            return a.f46800t;
         }
         return obj;
     }
 
     private Object W(Object obj) {
-        if (this.A.f47754s != null && obj.equals(a.f47752t)) {
-            return this.A.f47754s;
+        if (this.A.f46802s != null && obj.equals(a.f46800t)) {
+            return this.A.f46802s;
         }
         return obj;
     }
 
     private void Y(long j10) {
         n nVar = this.B;
-        int f10 = this.A.f(nVar.f47742d.f47769a);
+        int f10 = this.A.f(nVar.f46790d.f46817a);
         if (f10 == -1) {
             return;
         }
-        long j11 = this.A.j(f10, this.f47751z).f11979o;
+        long j11 = this.A.j(f10, this.f46799z).f11878o;
         if (j11 != -9223372036854775807L && j10 >= j11) {
             j10 = Math.max(0L, j11 - 1);
         }
@@ -202,7 +202,7 @@ public final class o extends y0 {
 
     @Override // qd.y0
     protected r.b L(r.b bVar) {
-        return bVar.c(V(bVar.f47769a));
+        return bVar.c(V(bVar.f46817a));
     }
 
     /* JADX WARN: Removed duplicated region for block: B:22:0x008d  */
@@ -238,33 +238,33 @@ public final class o extends y0 {
             goto L32
         L2a:
             java.lang.Object r0 = com.google.android.exoplayer2.Timeline.d.C
-            java.lang.Object r1 = qd.o.a.f47752t
+            java.lang.Object r1 = qd.o.a.f46800t
             qd.o$a r15 = qd.o.a.z(r15, r0, r1)
         L32:
             r14.A = r15
             goto Lae
         L36:
-            com.google.android.exoplayer2.Timeline$d r0 = r14.f47750y
+            com.google.android.exoplayer2.Timeline$d r0 = r14.f46798y
             r1 = 0
             r15.r(r1, r0)
-            com.google.android.exoplayer2.Timeline$d r0 = r14.f47750y
+            com.google.android.exoplayer2.Timeline$d r0 = r14.f46798y
             long r2 = r0.e()
-            com.google.android.exoplayer2.Timeline$d r0 = r14.f47750y
-            java.lang.Object r0 = r0.f11987d
+            com.google.android.exoplayer2.Timeline$d r0 = r14.f46798y
+            java.lang.Object r0 = r0.f11886d
             qd.n r4 = r14.B
             if (r4 == 0) goto L74
             long r4 = r4.q()
             qd.o$a r6 = r14.A
             qd.n r7 = r14.B
-            qd.r$b r7 = r7.f47742d
-            java.lang.Object r7 = r7.f47769a
-            com.google.android.exoplayer2.Timeline$b r8 = r14.f47751z
+            qd.r$b r7 = r7.f46790d
+            java.lang.Object r7 = r7.f46817a
+            com.google.android.exoplayer2.Timeline$b r8 = r14.f46799z
             r6.l(r7, r8)
-            com.google.android.exoplayer2.Timeline$b r6 = r14.f47751z
+            com.google.android.exoplayer2.Timeline$b r6 = r14.f46799z
             long r6 = r6.q()
             long r6 = r6 + r4
             qd.o$a r4 = r14.A
-            com.google.android.exoplayer2.Timeline$d r5 = r14.f47750y
+            com.google.android.exoplayer2.Timeline$d r5 = r14.f46798y
             com.google.android.exoplayer2.Timeline$d r1 = r4.r(r1, r5)
             long r4 = r1.e()
             int r1 = (r6 > r4 ? 1 : (r6 == r4 ? 0 : -1))
@@ -274,8 +274,8 @@ public final class o extends y0 {
         L74:
             r12 = r2
         L75:
-            com.google.android.exoplayer2.Timeline$d r9 = r14.f47750y
-            com.google.android.exoplayer2.Timeline$b r10 = r14.f47751z
+            com.google.android.exoplayer2.Timeline$d r9 = r14.f46798y
+            com.google.android.exoplayer2.Timeline$b r10 = r14.f46799z
             r11 = 0
             r8 = r15
             android.util.Pair r15 = r8.n(r9, r10, r11, r12)
@@ -295,8 +295,8 @@ public final class o extends y0 {
             qd.n r15 = r14.B
             if (r15 == 0) goto Lae
             r14.Y(r2)
-            qd.r$b r15 = r15.f47742d
-            java.lang.Object r0 = r15.f47769a
+            qd.r$b r15 = r15.f46790d
+            java.lang.Object r0 = r15.f46817a
             java.lang.Object r0 = r14.W(r0)
             qd.r$b r15 = r15.c(r0)
             goto Laf
@@ -321,7 +321,7 @@ public final class o extends y0 {
 
     @Override // qd.y0
     public void T() {
-        if (!this.f47749x) {
+        if (!this.f46797x) {
             this.C = true;
             S();
         }
@@ -331,9 +331,9 @@ public final class o extends y0 {
     /* renamed from: U */
     public n h(r.b bVar, le.b bVar2, long j10) {
         n nVar = new n(bVar, bVar2, j10);
-        nVar.y(this.f47857v);
+        nVar.y(this.f46905v);
         if (this.D) {
-            nVar.a(bVar.c(W(bVar.f47769a)));
+            nVar.a(bVar.c(W(bVar.f46817a)));
             return nVar;
         }
         this.B = nVar;

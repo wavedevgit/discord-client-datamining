@@ -57,7 +57,7 @@ public class ScreenStackViewManager extends ViewGroupManager<ScreenStack> implem
     @Override // com.facebook.react.uimanager.BaseViewManager, com.facebook.react.uimanager.ViewManager
     @NotNull
     public Map<String, Object> getExportedCustomDirectEventTypeConstants() {
-        return kotlin.collections.o0.n(or.v.a("topFinishTransitioning", kotlin.collections.o0.n(or.v.a("registrationName", "onFinishTransitioning"))));
+        return kotlin.collections.o0.n(qr.v.a("topFinishTransitioning", kotlin.collections.o0.n(qr.v.a("registrationName", "onFinishTransitioning"))));
     }
 
     @Override // com.facebook.react.uimanager.ViewManager, com.facebook.react.bridge.NativeModule
@@ -69,7 +69,7 @@ public class ScreenStackViewManager extends ViewGroupManager<ScreenStack> implem
     @Override // com.facebook.react.bridge.BaseJavaModule, com.facebook.react.bridge.NativeModule, com.facebook.react.turbomodule.core.interfaces.TurboModule
     public void invalidate() {
         super.invalidate();
-        NativeProxy.f18161a.b();
+        NativeProxy.f18141a.b();
     }
 
     @Override // com.facebook.react.uimanager.ViewGroupManager, com.facebook.react.uimanager.IViewManagerWithChildren
@@ -98,7 +98,7 @@ public class ScreenStackViewManager extends ViewGroupManager<ScreenStack> implem
         Intrinsics.checkNotNullParameter(child, "child");
         if (child instanceof Screen) {
             Screen screen = (Screen) child;
-            NativeProxy.f18161a.a(screen.getId(), screen);
+            NativeProxy.f18141a.a(screen.getId(), screen);
             parent.addScreen(screen, i10);
             return;
         }
@@ -124,6 +124,6 @@ public class ScreenStackViewManager extends ViewGroupManager<ScreenStack> implem
         Screen screenAt = parent.getScreenAt(i10);
         prepareOutTransition(screenAt);
         parent.removeScreenAt(i10);
-        NativeProxy.f18161a.c(screenAt.getId());
+        NativeProxy.f18141a.c(screenAt.getId());
     }
 }

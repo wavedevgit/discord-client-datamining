@@ -12,10 +12,10 @@ public abstract class e {
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public da.b f10385a;
+        public da.b f10284a;
 
         /* renamed from: b  reason: collision with root package name */
-        public HashMap f10386b = new HashMap();
+        public HashMap f10285b = new HashMap();
     }
 
     public static String a(String[] strArr, String str) {
@@ -47,12 +47,12 @@ public abstract class e {
             da.b b10 = da.g.b(str);
             ULocale b11 = b(b10);
             if (b11 != null) {
-                aVar.f10385a = da.h.k(b11);
-                aVar.f10386b = b10.a();
+                aVar.f10284a = da.h.k(b11);
+                aVar.f10285b = b10.a();
                 return aVar;
             }
         }
-        aVar.f10385a = da.h.i();
+        aVar.f10284a = da.h.i();
         return aVar;
     }
 
@@ -84,12 +84,12 @@ public abstract class e {
             da.b b10 = da.g.b(str);
             String a10 = a(strArr2, b10.e());
             if (!a10.isEmpty()) {
-                aVar.f10385a = da.g.b(a10);
-                aVar.f10386b = b10.a();
+                aVar.f10284a = da.g.b(a10);
+                aVar.f10285b = b10.a();
                 return aVar;
             }
         }
-        aVar.f10385a = da.g.a();
+        aVar.f10284a = da.g.a();
         return aVar;
     }
 

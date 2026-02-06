@@ -7,16 +7,16 @@ import kotlin.reflect.jvm.internal.impl.types.checker.KotlinTypeRefiner;
 public class m implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final IntersectionTypeConstructor f34719d;
+    private final IntersectionTypeConstructor f34739d;
 
     public m(IntersectionTypeConstructor intersectionTypeConstructor) {
-        this.f34719d = intersectionTypeConstructor;
+        this.f34739d = intersectionTypeConstructor;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         SimpleType d10;
-        d10 = IntersectionTypeConstructor.d(this.f34719d, (KotlinTypeRefiner) obj);
+        d10 = IntersectionTypeConstructor.d(this.f34739d, (KotlinTypeRefiner) obj);
         return d10;
     }
 }

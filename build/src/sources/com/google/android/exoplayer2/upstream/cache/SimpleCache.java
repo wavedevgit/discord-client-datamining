@@ -16,59 +16,59 @@ import ne.y;
 public final class SimpleCache implements com.google.android.exoplayer2.upstream.cache.a {
 
     /* renamed from: l  reason: collision with root package name */
-    private static final HashSet f13366l = new HashSet();
+    private static final HashSet f13303l = new HashSet();
 
     /* renamed from: a  reason: collision with root package name */
-    private final File f13367a;
+    private final File f13304a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final d f13368b;
+    private final d f13305b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final h f13369c;
+    private final h f13306c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final f f13370d;
+    private final f f13307d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final HashMap f13371e;
+    private final HashMap f13308e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final Random f13372f;
+    private final Random f13309f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final boolean f13373g;
+    private final boolean f13310g;
 
     /* renamed from: h  reason: collision with root package name */
-    private long f13374h;
+    private long f13311h;
 
     /* renamed from: i  reason: collision with root package name */
-    private long f13375i;
+    private long f13312i;
 
     /* renamed from: j  reason: collision with root package name */
-    private boolean f13376j;
+    private boolean f13313j;
 
     /* renamed from: k  reason: collision with root package name */
-    private a.C0175a f13377k;
+    private a.C0168a f13314k;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a extends Thread {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ ConditionVariable f13378d;
+        final /* synthetic */ ConditionVariable f13315d;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(String str, ConditionVariable conditionVariable) {
             super(str);
-            this.f13378d = conditionVariable;
+            this.f13315d = conditionVariable;
         }
 
         @Override // java.lang.Thread, java.lang.Runnable
         public void run() {
             synchronized (SimpleCache.this) {
-                this.f13378d.open();
+                this.f13315d.open();
                 SimpleCache.this.p();
-                SimpleCache.this.f13368b.f();
+                SimpleCache.this.f13305b.f();
             }
         }
     }
@@ -78,8 +78,8 @@ public final class SimpleCache implements com.google.android.exoplayer2.upstream
     }
 
     private void k(j jVar) {
-        this.f13369c.m(jVar.f37484d).a(jVar);
-        this.f13375i += jVar.f37486i;
+        this.f13306c.m(jVar.f37066d).a(jVar);
+        this.f13312i += jVar.f37068i;
         t(jVar);
     }
 
@@ -87,7 +87,7 @@ public final class SimpleCache implements com.google.android.exoplayer2.upstream
         if (!file.mkdirs() && !file.isDirectory()) {
             String str = "Failed to create cache directory: " + file;
             y.c("SimpleCache", str);
-            throw new a.C0175a(str);
+            throw new a.C0168a(str);
         }
     }
 
@@ -109,13 +109,13 @@ public final class SimpleCache implements com.google.android.exoplayer2.upstream
 
     private j o(String str, long j10, long j11) {
         j d10;
-        g g10 = this.f13369c.g(str);
+        g g10 = this.f13306c.g(str);
         if (g10 == null) {
             return j.i(str, j10, j11);
         }
         while (true) {
             d10 = g10.d(j10, j11);
-            if (!d10.f37487o || d10.f37488p.length() == d10.f37486i) {
+            if (!d10.f37069o || d10.f37070p.length() == d10.f37068i) {
                 break;
             }
             y();
@@ -125,54 +125,54 @@ public final class SimpleCache implements com.google.android.exoplayer2.upstream
 
     /* JADX INFO: Access modifiers changed from: private */
     public void p() {
-        if (!this.f13367a.exists()) {
+        if (!this.f13304a.exists()) {
             try {
-                m(this.f13367a);
-            } catch (a.C0175a e10) {
-                this.f13377k = e10;
+                m(this.f13304a);
+            } catch (a.C0168a e10) {
+                this.f13314k = e10;
                 return;
             }
         }
-        File[] listFiles = this.f13367a.listFiles();
+        File[] listFiles = this.f13304a.listFiles();
         if (listFiles == null) {
-            String str = "Failed to list cache directory files: " + this.f13367a;
+            String str = "Failed to list cache directory files: " + this.f13304a;
             y.c("SimpleCache", str);
-            this.f13377k = new a.C0175a(str);
+            this.f13314k = new a.C0168a(str);
             return;
         }
         long r10 = r(listFiles);
-        this.f13374h = r10;
+        this.f13311h = r10;
         if (r10 == -1) {
             try {
-                this.f13374h = n(this.f13367a);
+                this.f13311h = n(this.f13304a);
             } catch (IOException e11) {
-                String str2 = "Failed to create cache UID: " + this.f13367a;
+                String str2 = "Failed to create cache UID: " + this.f13304a;
                 y.d("SimpleCache", str2, e11);
-                this.f13377k = new a.C0175a(str2, e11);
+                this.f13314k = new a.C0168a(str2, e11);
                 return;
             }
         }
         try {
-            this.f13369c.n(this.f13374h);
-            f fVar = this.f13370d;
+            this.f13306c.n(this.f13311h);
+            f fVar = this.f13307d;
             if (fVar != null) {
-                fVar.e(this.f13374h);
-                Map b10 = this.f13370d.b();
-                q(this.f13367a, true, listFiles, b10);
-                this.f13370d.g(b10.keySet());
+                fVar.e(this.f13311h);
+                Map b10 = this.f13307d.b();
+                q(this.f13304a, true, listFiles, b10);
+                this.f13307d.g(b10.keySet());
             } else {
-                q(this.f13367a, true, listFiles, null);
+                q(this.f13304a, true, listFiles, null);
             }
-            this.f13369c.r();
+            this.f13306c.r();
             try {
-                this.f13369c.s();
+                this.f13306c.s();
             } catch (IOException e12) {
                 y.d("SimpleCache", "Storing index file failed", e12);
             }
         } catch (IOException e13) {
-            String str3 = "Failed to initialize cache indices: " + this.f13367a;
+            String str3 = "Failed to initialize cache indices: " + this.f13304a;
             y.d("SimpleCache", str3, e13);
-            this.f13377k = new a.C0175a(str3, e13);
+            this.f13314k = new a.C0168a(str3, e13);
         }
     }
 
@@ -192,13 +192,13 @@ public final class SimpleCache implements com.google.android.exoplayer2.upstream
                         eVar = null;
                     }
                     if (eVar != null) {
-                        j10 = eVar.f13410a;
-                        j11 = eVar.f13411b;
+                        j10 = eVar.f13347a;
+                        j11 = eVar.f13348b;
                     } else {
                         j10 = -1;
                         j11 = -9223372036854775807L;
                     }
-                    j g10 = j.g(file2, j10, j11, this.f13369c);
+                    j g10 = j.g(file2, j10, j11, this.f13306c);
                     if (g10 != null) {
                         k(g10);
                     } else {
@@ -231,39 +231,39 @@ public final class SimpleCache implements com.google.android.exoplayer2.upstream
     private static synchronized boolean s(File file) {
         boolean add;
         synchronized (SimpleCache.class) {
-            add = f13366l.add(file.getAbsoluteFile());
+            add = f13303l.add(file.getAbsoluteFile());
         }
         return add;
     }
 
     private void t(j jVar) {
-        ArrayList arrayList = (ArrayList) this.f13371e.get(jVar.f37484d);
+        ArrayList arrayList = (ArrayList) this.f13308e.get(jVar.f37066d);
         if (arrayList != null) {
             for (int size = arrayList.size() - 1; size >= 0; size--) {
                 ((a.b) arrayList.get(size)).c(this, jVar);
             }
         }
-        this.f13368b.c(this, jVar);
+        this.f13305b.c(this, jVar);
     }
 
     private void u(me.c cVar) {
-        ArrayList arrayList = (ArrayList) this.f13371e.get(cVar.f37484d);
+        ArrayList arrayList = (ArrayList) this.f13308e.get(cVar.f37066d);
         if (arrayList != null) {
             for (int size = arrayList.size() - 1; size >= 0; size--) {
                 ((a.b) arrayList.get(size)).d(this, cVar);
             }
         }
-        this.f13368b.d(this, cVar);
+        this.f13305b.d(this, cVar);
     }
 
     private void v(j jVar, me.c cVar) {
-        ArrayList arrayList = (ArrayList) this.f13371e.get(jVar.f37484d);
+        ArrayList arrayList = (ArrayList) this.f13308e.get(jVar.f37066d);
         if (arrayList != null) {
             for (int size = arrayList.size() - 1; size >= 0; size--) {
                 ((a.b) arrayList.get(size)).a(this, jVar, cVar);
             }
         }
-        this.f13368b.a(this, jVar, cVar);
+        this.f13305b.a(this, jVar, cVar);
     }
 
     private static long w(String str) {
@@ -271,29 +271,29 @@ public final class SimpleCache implements com.google.android.exoplayer2.upstream
     }
 
     private void x(me.c cVar) {
-        g g10 = this.f13369c.g(cVar.f37484d);
+        g g10 = this.f13306c.g(cVar.f37066d);
         if (g10 != null && g10.j(cVar)) {
-            this.f13375i -= cVar.f37486i;
-            if (this.f13370d != null) {
-                String name = cVar.f37488p.getName();
+            this.f13312i -= cVar.f37068i;
+            if (this.f13307d != null) {
+                String name = cVar.f37070p.getName();
                 try {
-                    this.f13370d.f(name);
+                    this.f13307d.f(name);
                 } catch (IOException unused) {
                     y.i("SimpleCache", "Failed to remove file index entry for: " + name);
                 }
             }
-            this.f13369c.p(g10.f13416b);
+            this.f13306c.p(g10.f13353b);
             u(cVar);
         }
     }
 
     private void y() {
         ArrayList arrayList = new ArrayList();
-        for (g gVar : this.f13369c.h()) {
+        for (g gVar : this.f13306c.h()) {
             Iterator it = gVar.e().iterator();
             while (it.hasNext()) {
                 me.c cVar = (me.c) it.next();
-                if (cVar.f37488p.length() != cVar.f37486i) {
+                if (cVar.f37070p.length() != cVar.f37068i) {
                     arrayList.add(cVar);
                 }
             }
@@ -305,13 +305,13 @@ public final class SimpleCache implements com.google.android.exoplayer2.upstream
 
     private j z(String str, j jVar) {
         boolean z10;
-        if (!this.f13373g) {
+        if (!this.f13310g) {
             return jVar;
         }
-        String name = ((File) ne.a.e(jVar.f37488p)).getName();
-        long j10 = jVar.f37486i;
+        String name = ((File) ne.a.e(jVar.f37070p)).getName();
+        long j10 = jVar.f37068i;
         long currentTimeMillis = System.currentTimeMillis();
-        f fVar = this.f13370d;
+        f fVar = this.f13307d;
         if (fVar != null) {
             try {
                 fVar.h(name, j10, currentTimeMillis);
@@ -322,7 +322,7 @@ public final class SimpleCache implements com.google.android.exoplayer2.upstream
         } else {
             z10 = true;
         }
-        j k10 = this.f13369c.g(str).k(jVar, currentTimeMillis, z10);
+        j k10 = this.f13306c.g(str).k(jVar, currentTimeMillis, z10);
         v(jVar, k10);
         return k10;
     }
@@ -332,26 +332,26 @@ public final class SimpleCache implements com.google.android.exoplayer2.upstream
         Throwable th2;
         try {
             try {
-                ne.a.g(!this.f13376j);
+                ne.a.g(!this.f13313j);
                 l();
-                g g10 = this.f13369c.g(str);
+                g g10 = this.f13306c.g(str);
                 ne.a.e(g10);
                 ne.a.g(g10.g(j10, j11));
-                if (!this.f13367a.exists()) {
+                if (!this.f13304a.exists()) {
                     try {
-                        m(this.f13367a);
+                        m(this.f13304a);
                         y();
                     } catch (Throwable th3) {
                         th2 = th3;
                         throw th2;
                     }
                 }
-                this.f13368b.e(this, str, j10, j11);
-                File file = new File(this.f13367a, Integer.toString(this.f13372f.nextInt(10)));
+                this.f13305b.e(this, str, j10, j11);
+                File file = new File(this.f13304a, Integer.toString(this.f13309f.nextInt(10)));
                 if (!file.exists()) {
                     m(file);
                 }
-                return j.l(file, g10.f13415a, j10, System.currentTimeMillis());
+                return j.k(file, g10.f13352a, j10, System.currentTimeMillis());
             } catch (Throwable th4) {
                 th = th4;
                 th2 = th;
@@ -366,20 +366,20 @@ public final class SimpleCache implements com.google.android.exoplayer2.upstream
 
     @Override // com.google.android.exoplayer2.upstream.cache.a
     public synchronized me.d b(String str) {
-        ne.a.g(!this.f13376j);
-        return this.f13369c.j(str);
+        ne.a.g(!this.f13313j);
+        return this.f13306c.j(str);
     }
 
     @Override // com.google.android.exoplayer2.upstream.cache.a
     public synchronized me.c c(String str, long j10, long j11) {
         try {
             try {
-                ne.a.g(!this.f13376j);
+                ne.a.g(!this.f13313j);
                 l();
                 j o10 = o(str, j10, j11);
-                if (o10.f37487o) {
+                if (o10.f37069o) {
                     return z(str, o10);
-                } else if (this.f13369c.m(str).i(j10, o10.f37486i)) {
+                } else if (this.f13306c.m(str).i(j10, o10.f37068i)) {
                     return o10;
                 } else {
                     return null;
@@ -395,28 +395,28 @@ public final class SimpleCache implements com.google.android.exoplayer2.upstream
 
     @Override // com.google.android.exoplayer2.upstream.cache.a
     public synchronized void d(me.c cVar) {
-        ne.a.g(!this.f13376j);
+        ne.a.g(!this.f13313j);
         x(cVar);
     }
 
     @Override // com.google.android.exoplayer2.upstream.cache.a
     public synchronized void e(me.c cVar) {
-        ne.a.g(!this.f13376j);
-        g gVar = (g) ne.a.e(this.f13369c.g(cVar.f37484d));
-        gVar.l(cVar.f37485e);
-        this.f13369c.p(gVar.f13416b);
+        ne.a.g(!this.f13313j);
+        g gVar = (g) ne.a.e(this.f13306c.g(cVar.f37066d));
+        gVar.l(cVar.f37067e);
+        this.f13306c.p(gVar.f13353b);
         notifyAll();
     }
 
     @Override // com.google.android.exoplayer2.upstream.cache.a
     public synchronized void f(String str, me.e eVar) {
-        ne.a.g(!this.f13376j);
+        ne.a.g(!this.f13313j);
         l();
-        this.f13369c.e(str, eVar);
+        this.f13306c.e(str, eVar);
         try {
-            this.f13369c.s();
+            this.f13306c.s();
         } catch (IOException e10) {
-            throw new a.C0175a(e10);
+            throw new a.C0168a(e10);
         }
     }
 
@@ -424,7 +424,7 @@ public final class SimpleCache implements com.google.android.exoplayer2.upstream
     @Override // com.google.android.exoplayer2.upstream.cache.a
     public synchronized me.c g(String str, long j10, long j11) {
         try {
-            ne.a.g(!this.f13376j);
+            ne.a.g(!this.f13313j);
             l();
             while (true) {
                 me.c c10 = c(str, j10, j11);
@@ -453,7 +453,7 @@ public final class SimpleCache implements com.google.android.exoplayer2.upstream
     @Override // com.google.android.exoplayer2.upstream.cache.a
     public synchronized void h(File file, long j10) {
         boolean z10 = true;
-        ne.a.g(!this.f13376j);
+        ne.a.g(!this.f13313j);
         if (!file.exists()) {
             return;
         }
@@ -461,36 +461,36 @@ public final class SimpleCache implements com.google.android.exoplayer2.upstream
             file.delete();
             return;
         }
-        j jVar = (j) ne.a.e(j.h(file, j10, this.f13369c));
-        g gVar = (g) ne.a.e(this.f13369c.g(jVar.f37484d));
-        ne.a.g(gVar.g(jVar.f37485e, jVar.f37486i));
+        j jVar = (j) ne.a.e(j.h(file, j10, this.f13306c));
+        g gVar = (g) ne.a.e(this.f13306c.g(jVar.f37066d));
+        ne.a.g(gVar.g(jVar.f37067e, jVar.f37068i));
         long d10 = me.d.d(gVar.c());
         if (d10 != -1) {
-            if (jVar.f37485e + jVar.f37486i > d10) {
+            if (jVar.f37067e + jVar.f37068i > d10) {
                 z10 = false;
             }
             ne.a.g(z10);
         }
-        if (this.f13370d != null) {
+        if (this.f13307d != null) {
             try {
-                this.f13370d.h(file.getName(), jVar.f37486i, jVar.f37489q);
+                this.f13307d.h(file.getName(), jVar.f37068i, jVar.f37071q);
             } catch (IOException e10) {
-                throw new a.C0175a(e10);
+                throw new a.C0168a(e10);
             }
         }
         k(jVar);
         try {
-            this.f13369c.s();
+            this.f13306c.s();
             notifyAll();
         } catch (IOException e11) {
-            throw new a.C0175a(e11);
+            throw new a.C0168a(e11);
         }
     }
 
     public synchronized void l() {
-        a.C0175a c0175a = this.f13377k;
-        if (c0175a != null) {
-            throw c0175a;
+        a.C0168a c0168a = this.f13314k;
+        if (c0168a != null) {
+            throw c0168a;
         }
     }
 
@@ -500,14 +500,14 @@ public final class SimpleCache implements com.google.android.exoplayer2.upstream
 
     SimpleCache(File file, d dVar, h hVar, f fVar) {
         if (s(file)) {
-            this.f13367a = file;
-            this.f13368b = dVar;
-            this.f13369c = hVar;
-            this.f13370d = fVar;
-            this.f13371e = new HashMap();
-            this.f13372f = new Random();
-            this.f13373g = dVar.b();
-            this.f13374h = -1L;
+            this.f13304a = file;
+            this.f13305b = dVar;
+            this.f13306c = hVar;
+            this.f13307d = fVar;
+            this.f13308e = new HashMap();
+            this.f13309f = new Random();
+            this.f13310g = dVar.b();
+            this.f13311h = -1L;
             ConditionVariable conditionVariable = new ConditionVariable();
             new a("ExoPlayer:SimpleCacheInit", conditionVariable).start();
             conditionVariable.block();

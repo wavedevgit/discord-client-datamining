@@ -32,18 +32,18 @@ public final class ErrorResponseJsonAdapter extends h {
     @Override // com.squareup.moshi.h
     @NotNull
     public ErrorResponse fromJson(@NotNull m mVar) {
-        mVar.s();
+        mVar.u();
         List list = null;
         while (mVar.hasNext()) {
-            int W = mVar.W(this.options);
-            if (W == -1) {
+            int J = mVar.J(this.options);
+            if (J == -1) {
                 mVar.E0();
-                mVar.P();
-            } else if (W == 0) {
+                mVar.S();
+            } else if (J == 0) {
                 list = (List) this.nullableListOfErrorAdapter.fromJson(mVar);
             }
         }
-        mVar.z();
+        mVar.D();
         return new ErrorResponse(list);
     }
 
@@ -51,9 +51,9 @@ public final class ErrorResponseJsonAdapter extends h {
     public void toJson(@NotNull t tVar, ErrorResponse errorResponse) {
         if (errorResponse != null) {
             tVar.k();
-            tVar.W("errors");
+            tVar.J("errors");
             this.nullableListOfErrorAdapter.toJson(tVar, errorResponse.getErrors());
-            tVar.E();
+            tVar.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

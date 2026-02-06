@@ -1,40 +1,59 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var0 = global;
-    var4 = var0.Object;
-    var3 = var4.defineProperty;
-    var2 = {};
-    var0 = true;
-    var2.value = var0;
-    var0 = '__esModule';
-    var0 = var3.bind(var4)(var1, var0, var2);
-    var0 = {};
-    var2 = {
-        'message': '`refreshing` prop must be set as a boolean in order to use `onRefresh`, but got `undefined`.',
-        'type': 'InvariantViolation'
+    var0 = module;
+    var _closure1_slot0 = var0;
+    var1 = function() {
+        _fun45772: for (var _fun45772_ip = 0;;) switch (_fun45772_ip) {
+            case 0:
+            case 2: // try_start_0
+                var1 = global;
+                var2 = var1.Boolean;
+                var2 = var2.prototype;
+                var3 = var2.valueOf;
+                var2 = var3.call;
+                var7 = var1.Reflect;
+                var6 = var7.construct;
+                var5 = var1.Boolean;
+                var4 = new Array(0);
+                var1 = function() { // Environment: var0
+                    var0 = undefined;
+                    return var0;
+                };
+                var1 = var6.bind(var7)(var5, var4, var1);
+                var1 = var2.bind(var3)(var1);
+                var1 = !var1;
+                var _closure2_slot0 = var1;
+            case 70: // try_end0
+                _fun45772_ip = 74;
+                continue _fun45772;
+            case 72: // catch_target0
+                CatchBlockStart(arg_register = 1);
+            case 74:
+                var1 = _closure1_slot0;
+                var0 = function() {
+                    var0 = _closure2_slot0;
+                    var0 = !var0;
+                    var0 = !var0;
+                    return var0;
+                };
+                var1.exports = var0;
+                var2 = var1.exports;
+                var0 = true;
+                var2.__esModule = var0;
+                var0 = var1.exports;
+                var1 = var1.exports;
+                var0.default = var1;
+                var0 = undefined;
+                var0 = var1.bind(var0)();
+                return var0;
+        }
     };
-    var0.refreshBooleanMissing = var2;
-    var2 = {
-        'message': 'sticky headers are not supported when list is in horizontal mode. Remove `stickyHeaderIndices` prop.',
-        'type': 'NotSupportedException'
-    };
-    var0.stickyWhileHorizontalNotSupported = var2;
-    var2 = {
-        'message': 'numColumns is not supported when list is in horizontal mode. Please remove or set numColumns to 1.',
-        'type': 'NotSupportedException'
-    };
-    var0.columnsWhileHorizontalNotSupported = var2;
-    var2 = {
-        'message': 'You can set exactly one of itemVisiblePercentThreshold or viewAreaCoveragePercentThreshold. Specifying both is not supported.',
-        'type': 'MultipleViewabilityThresholdTypesException'
-    };
-    var0.multipleViewabilityThresholdTypesNotSupported = var2;
-    var2 = {
-        'message': 'optimizeItemArrangement has been enabled on `MasonryFlashList` but overrideItemLayout is not set.',
-        'type': 'InvariantViolation'
-    };
-    var0.overrideItemLayoutRequiredForMasonryOptimization = var2;
+    var0.exports = var1;
+    var2 = var0.exports;
+    var1 = true;
+    var2.__esModule = var1;
+    var1 = var0.exports;
+    var0 = var0.exports;
     var1.default = var0;
     var0 = undefined;
     return var0;

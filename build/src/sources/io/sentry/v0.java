@@ -24,11 +24,11 @@ public interface v0 {
 
     void j(io.sentry.protocol.c cVar);
 
-    void k(Map map);
+    void k(io.sentry.protocol.h0 h0Var);
 
-    void l(io.sentry.protocol.h0 h0Var);
+    void l(Map map);
 
     void m(String str);
 
-    void q(io.sentry.protocol.x xVar);
+    void p(io.sentry.protocol.x xVar);
 }

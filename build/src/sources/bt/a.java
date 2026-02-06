@@ -1,7 +1,7 @@
 package bt;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface a {
-    Object c(Object obj, Object obj2);
-
-    String getName();
+public abstract class a implements n {
+    public String toString() {
+        return "The field " + getName() + " (default value is " + a() + ')';
+    }
 }

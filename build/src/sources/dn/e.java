@@ -1,194 +1,61 @@
 package dn;
 
-import android.os.Parcel;
-import android.os.Parcelable;
-import android.util.SparseArray;
 import android.view.View;
-import bn.n;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.Set;
-import kotlin.Pair;
-import kotlin.collections.CollectionsKt;
-import kotlin.collections.o0;
-import kotlin.collections.x0;
-import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.Lambda;
-import kotlin.jvm.internal.TypeIntrinsics;
-import kotlin.sequences.k;
-import or.v;
-import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class e {
+public abstract class e {
+    private static final j a(View view) {
+        return (j) view.getTag(q.f20928c);
+    }
 
-    /* renamed from: a  reason: collision with root package name */
-    private final Map f20912a;
+    /* JADX WARN: Removed duplicated region for block: B:7:0x000c  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public static final androidx.activity.z b(android.content.Context r2) {
+        /*
+            java.lang.String r0 = "<this>"
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r2, r0)
+        L5:
+            boolean r0 = r2 instanceof androidx.activity.z
+            if (r0 == 0) goto Lc
+            androidx.activity.z r2 = (androidx.activity.z) r2
+            return r2
+        Lc:
+            boolean r0 = r2 instanceof android.content.ContextWrapper
+            r1 = 0
+            if (r0 == 0) goto L14
+            android.content.ContextWrapper r2 = (android.content.ContextWrapper) r2
+            goto L15
+        L14:
+            r2 = r1
+        L15:
+            if (r2 != 0) goto L18
+            return r1
+        L18:
+            android.content.Context r2 = r2.getBaseContext()
+            if (r2 != 0) goto L5
+            return r1
+        */
+        throw new UnsupportedOperationException("Method not decompiled: dn.e.b(android.content.Context):androidx.activity.z");
+    }
 
-    /* renamed from: b  reason: collision with root package name */
-    private final cn.f f20913b;
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class b extends Lambda implements Function1 {
-
-        /* renamed from: d  reason: collision with root package name */
-        public static final b f20915d = new b();
-
-        b() {
-            super(1);
+    public static final void c(View view, Function0 function0) {
+        j jVar;
+        Intrinsics.checkNotNullParameter(view, "<this>");
+        j a10 = a(view);
+        if (a10 != null) {
+            a10.b();
         }
-
-        @Override // kotlin.jvm.functions.Function1
-        /* renamed from: a */
-        public final String invoke(n it) {
-            Intrinsics.checkNotNullParameter(it, "it");
-            return it.c();
+        if (function0 == null) {
+            jVar = null;
+        } else {
+            j jVar2 = new j(view, function0);
+            jVar2.start();
+            jVar = jVar2;
         }
-    }
-
-    public e(Map viewStates) {
-        Intrinsics.checkNotNullParameter(viewStates, "viewStates");
-        this.f20912a = viewStates;
-        this.f20913b = new cn.f();
-    }
-
-    private final void e(Collection collection) {
-        CollectionsKt.I(this.f20912a.keySet(), x0.j(this.f20912a.keySet(), collection));
-        this.f20913b.j(collection);
-    }
-
-    public final void a(String key, u3.f parentOwner) {
-        Intrinsics.checkNotNullParameter(key, "key");
-        Intrinsics.checkNotNullParameter(parentOwner, "parentOwner");
-        this.f20913b.f(key, parentOwner);
-    }
-
-    public final void b() {
-        this.f20913b.g();
-    }
-
-    public final Map c() {
-        return this.f20912a;
-    }
-
-    public final void d(Collection retaining) {
-        Intrinsics.checkNotNullParameter(retaining, "retaining");
-        Collection<n> collection = retaining;
-        ArrayList arrayList = new ArrayList(CollectionsKt.w(collection, 10));
-        for (n nVar : collection) {
-            arrayList.add(nVar.c());
-        }
-        e(arrayList);
-    }
-
-    public final void f(a from) {
-        Intrinsics.checkNotNullParameter(from, "from");
-        this.f20912a.clear();
-        this.f20912a.putAll(from.a());
-    }
-
-    public final a g() {
-        return new a(this);
-    }
-
-    public final void h(Collection retainedRenderings, View view, View newView) {
-        String b10;
-        String b11;
-        Intrinsics.checkNotNullParameter(retainedRenderings, "retainedRenderings");
-        Intrinsics.checkNotNullParameter(newView, "newView");
-        b10 = f.b(newView);
-        Set a02 = k.a0(k.R(CollectionsKt.b0(retainedRenderings), b.f20915d));
-        if (retainedRenderings.size() == a02.size()) {
-            this.f20913b.h(newView, b10);
-            g gVar = (g) this.f20912a.remove(b10);
-            if (gVar != null) {
-                newView.restoreHierarchyState(gVar.a());
-            }
-            if (view != null) {
-                b11 = f.b(view);
-                if (!a02.contains(b11)) {
-                    b11 = null;
-                }
-                if (b11 != null) {
-                    SparseArray<Parcelable> sparseArray = new SparseArray<>();
-                    view.saveHierarchyState(sparseArray);
-                    Map c10 = c();
-                    Pair a10 = v.a(b11, new g(b11, sparseArray));
-                    c10.put(a10.c(), a10.d());
-                    this.f20913b.m(b11);
-                }
-            }
-            e(x0.m(a02, b10));
-            return;
-        }
-        throw new IllegalArgumentException(("Duplicate entries not allowed in " + retainedRenderings + '.').toString());
-    }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a implements Parcelable {
-        @NotNull
-        public static final C0287a CREATOR = new C0287a(null);
-
-        /* renamed from: d  reason: collision with root package name */
-        private final Map f20914d;
-
-        /* renamed from: dn.e$a$a  reason: collision with other inner class name */
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public static final class C0287a implements Parcelable.Creator {
-            public /* synthetic */ C0287a(DefaultConstructorMarker defaultConstructorMarker) {
-                this();
-            }
-
-            @Override // android.os.Parcelable.Creator
-            /* renamed from: a */
-            public a createFromParcel(Parcel source) {
-                Intrinsics.checkNotNullParameter(source, "source");
-                return new a(source);
-            }
-
-            @Override // android.os.Parcelable.Creator
-            /* renamed from: b */
-            public a[] newArray(int i10) {
-                return new a[i10];
-            }
-
-            private C0287a() {
-            }
-        }
-
-        public a(e viewStateCache) {
-            Intrinsics.checkNotNullParameter(viewStateCache, "viewStateCache");
-            this.f20914d = o0.w(viewStateCache.c());
-        }
-
-        public final Map a() {
-            return this.f20914d;
-        }
-
-        @Override // android.os.Parcelable
-        public int describeContents() {
-            return 0;
-        }
-
-        @Override // android.os.Parcelable
-        public void writeToParcel(Parcel out, int i10) {
-            Intrinsics.checkNotNullParameter(out, "out");
-            out.writeMap(this.f20914d);
-        }
-
-        public a(Parcel source) {
-            Intrinsics.checkNotNullParameter(source, "source");
-            LinkedHashMap linkedHashMap = new LinkedHashMap();
-            source.readMap(TypeIntrinsics.asMutableMap(linkedHashMap), e.class.getClassLoader());
-            this.f20914d = o0.w(linkedHashMap);
-        }
-    }
-
-    public e() {
-        this(new LinkedHashMap());
+        view.setTag(q.f20928c, jVar);
     }
 }

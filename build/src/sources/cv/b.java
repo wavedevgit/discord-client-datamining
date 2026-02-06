@@ -1,35 +1,36 @@
 package cv;
 
-import java.util.ArrayList;
+import ev.a;
 import java.util.List;
 import kotlin.collections.CollectionsKt;
-import kotlin.text.StringsKt;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface b {
+public final class b implements su.b, ev.a {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a {
-        private static Object a(b bVar, Object obj) {
-            while (!(obj instanceof Number)) {
-                if (obj instanceof String) {
-                    return StringsKt.p((String) obj);
-                }
-                if (obj instanceof List) {
-                    obj = CollectionsKt.firstOrNull((List) obj);
-                } else {
-                    return null;
-                }
-            }
-            return Double.valueOf(((Number) obj).doubleValue());
-        }
+    /* renamed from: a  reason: collision with root package name */
+    public static final b f20046a = new b();
 
-        public static List b(b bVar, Object obj) {
-            List<Object> c10 = vv.a.c(obj);
-            ArrayList arrayList = new ArrayList(CollectionsKt.w(c10, 10));
-            for (Object obj2 : c10) {
-                arrayList.add(a(bVar, obj2));
-            }
-            return arrayList;
+    private b() {
+    }
+
+    @Override // su.b
+    /* renamed from: a */
+    public Double f(Object obj, Object obj2) {
+        List b10 = b(obj);
+        if (b10.size() < 2) {
+            b10 = null;
         }
+        if (b10 != null) {
+            Double d10 = (Double) b10.get(1);
+            Double d11 = (Double) CollectionsKt.o0(b10);
+            if (d11 != null && d10 != null && !Intrinsics.areEqual(d10, 0.0d)) {
+                return Double.valueOf(d11.doubleValue() / d10.doubleValue());
+            }
+        }
+        return null;
+    }
+
+    public List b(Object obj) {
+        return a.C0316a.c(this, obj);
     }
 }

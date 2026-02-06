@@ -14,12 +14,12 @@ public final class AsyncInitDispatcher$post$1 implements Function0<Unit> {
 
     @Override // kotlin.jvm.functions.Function0
     public /* bridge */ /* synthetic */ Object invoke() {
-        m210invoke();
-        return Unit.f31988a;
+        m208invoke();
+        return Unit.f32008a;
     }
 
     /* renamed from: invoke  reason: collision with other method in class */
-    public final void m210invoke() {
+    public final void m208invoke() {
         this.$task.invoke();
     }
 }

@@ -7,13 +7,13 @@ public interface Call extends Cloneable {
         Call a(Request request);
     }
 
-    void V(zt.b bVar);
+    boolean C();
+
+    void J0(bu.b bVar);
 
     void cancel();
 
     Response execute();
 
-    Request h();
-
-    boolean y();
+    Request g();
 }

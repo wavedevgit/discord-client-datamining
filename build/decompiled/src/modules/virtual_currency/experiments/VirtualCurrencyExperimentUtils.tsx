@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/virtual_currency/experiments/VirtualCurrencyExperimentUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun28897: for (var _fun28897_ip = 0;;) switch (_fun28897_ip) {
+        _fun28901: for (var _fun28901_ip = 0;;) switch (_fun28901_ip) {
             case 0:
                 var2 = _closure1_slot2;
                 var0 = var2.getCurrentUser;
@@ -35,8 +35,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var0 = var0 == var3;
                 if (var0) {
-                    _fun28897_ip = 38;
-                    continue _fun28897
+                    _fun28901_ip = 38;
+                    continue _fun28901
                 }
             case 25:
                 var2 = var3.isStaff;
@@ -44,8 +44,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = !var2;
             case 38:
                 if (!var0) {
-                    _fun28897_ip = 85;
-                    continue _fun28897
+                    _fun28901_ip = 85;
+                    continue _fun28901
                 }
             case 41:
                 var3 = _closure1_slot0;
@@ -65,4 +65,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.shouldHoldoutVirtualCurrencyFeatures = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1621, 3346, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1621, 3348, 2]);

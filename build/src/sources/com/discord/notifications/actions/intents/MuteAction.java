@@ -34,7 +34,7 @@ public final class MuteAction implements NotificationAction {
         @Override // android.os.Parcelable.Creator
         public final MuteAction createFromParcel(Parcel parcel) {
             Intrinsics.checkNotNullParameter(parcel, "parcel");
-            return new MuteAction(parcel.readString(), (GuildId) parcel.readParcelable(MuteAction.class.getClassLoader()), ((ChannelId) parcel.readParcelable(MuteAction.class.getClassLoader())).m1068unboximpl(), parcel.readInt() == 0 ? null : Integer.valueOf(parcel.readInt()), null);
+            return new MuteAction(parcel.readString(), (GuildId) parcel.readParcelable(MuteAction.class.getClassLoader()), ((ChannelId) parcel.readParcelable(MuteAction.class.getClassLoader())).m1066unboximpl(), parcel.readInt() == 0 ? null : Integer.valueOf(parcel.readInt()), null);
         }
 
         /* JADX WARN: Can't rename method to resolve collision */
@@ -72,7 +72,7 @@ public final class MuteAction implements NotificationAction {
         Bundle bundle = new Bundle();
         GuildId guildId = this.guildId;
         if (guildId != null) {
-            bundle.putString("guildId", String.valueOf(guildId.m1081unboximpl()));
+            bundle.putString("guildId", String.valueOf(guildId.m1079unboximpl()));
         }
         bundle.putString("channelId", String.valueOf(this.channelId));
         if (this.muteTime != null) {
@@ -97,7 +97,7 @@ public final class MuteAction implements NotificationAction {
         Intrinsics.checkNotNullParameter(dest, "dest");
         dest.writeString(this.tag);
         dest.writeParcelable(this.guildId, i10);
-        dest.writeParcelable(ChannelId.m1059boximpl(this.channelId), i10);
+        dest.writeParcelable(ChannelId.m1057boximpl(this.channelId), i10);
         Integer num = this.muteTime;
         if (num == null) {
             dest.writeInt(0);

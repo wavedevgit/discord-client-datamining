@@ -111,7 +111,7 @@ public final class ButtonCombinedStepComponentStyleJsonAdapter extends h {
     @NotNull
     public ButtonCombinedStepComponentStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         AttributeStyles.ButtonBasedPaddingStyle buttonBasedPaddingStyle = null;
         AttributeStyles.ButtonBasedMarginStyle buttonBasedMarginStyle = null;
         AttributeStyles.ButtonBasedJustifyStyle buttonBasedJustifyStyle = null;
@@ -128,10 +128,10 @@ public final class ButtonCombinedStepComponentStyleJsonAdapter extends h {
         AttributeStyles.ButtonBasedBorderRadiusStyle buttonBasedBorderRadiusStyle = null;
         AttributeStyles.ButtonBasedBorderWidthStyle buttonBasedBorderWidthStyle = null;
         while (reader.hasNext()) {
-            switch (reader.W(this.options)) {
+            switch (reader.J(this.options)) {
                 case -1:
                     reader.E0();
-                    reader.P();
+                    reader.S();
                     break;
                 case 0:
                     buttonBasedPaddingStyle = (AttributeStyles.ButtonBasedPaddingStyle) this.nullableButtonBasedPaddingStyleAdapter.fromJson(reader);
@@ -180,7 +180,7 @@ public final class ButtonCombinedStepComponentStyleJsonAdapter extends h {
                     break;
             }
         }
-        reader.z();
+        reader.D();
         return new ButtonCombinedStepComponentStyle(buttonBasedPaddingStyle, buttonBasedMarginStyle, buttonBasedJustifyStyle, buttonBasedFontFamilyStyle, buttonBasedFontSizeStyle, buttonBasedFontWeightStyle, buttonBasedLetterSpacingStyle, buttonBasedLineHeightStyle, buttonBasedTextColorStyle, buttonBasedHeightStyle, buttonBasedWidthStyle, buttonBasedBackgroundColorStyle, buttonBasedBorderColorStyle, buttonBasedBorderRadiusStyle, buttonBasedBorderWidthStyle);
     }
 
@@ -189,37 +189,37 @@ public final class ButtonCombinedStepComponentStyleJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (buttonCombinedStepComponentStyle != null) {
             writer.k();
-            writer.W(ViewProps.PADDING);
+            writer.J(ViewProps.PADDING);
             this.nullableButtonBasedPaddingStyleAdapter.toJson(writer, buttonCombinedStepComponentStyle.getPadding());
-            writer.W(ViewProps.MARGIN);
+            writer.J(ViewProps.MARGIN);
             this.nullableButtonBasedMarginStyleAdapter.toJson(writer, buttonCombinedStepComponentStyle.getMargin());
-            writer.W("justify");
+            writer.J("justify");
             this.nullableButtonBasedJustifyStyleAdapter.toJson(writer, buttonCombinedStepComponentStyle.getJustify());
-            writer.W(ViewProps.FONT_FAMILY);
+            writer.J(ViewProps.FONT_FAMILY);
             this.nullableButtonBasedFontFamilyStyleAdapter.toJson(writer, buttonCombinedStepComponentStyle.getFontFamily());
-            writer.W(ViewProps.FONT_SIZE);
+            writer.J(ViewProps.FONT_SIZE);
             this.nullableButtonBasedFontSizeStyleAdapter.toJson(writer, buttonCombinedStepComponentStyle.getFontSize());
-            writer.W(ViewProps.FONT_WEIGHT);
+            writer.J(ViewProps.FONT_WEIGHT);
             this.nullableButtonBasedFontWeightStyleAdapter.toJson(writer, buttonCombinedStepComponentStyle.getFontWeight());
-            writer.W(ViewProps.LETTER_SPACING);
+            writer.J(ViewProps.LETTER_SPACING);
             this.nullableButtonBasedLetterSpacingStyleAdapter.toJson(writer, buttonCombinedStepComponentStyle.getLetterSpacing());
-            writer.W(ViewProps.LINE_HEIGHT);
+            writer.J(ViewProps.LINE_HEIGHT);
             this.nullableButtonBasedLineHeightStyleAdapter.toJson(writer, buttonCombinedStepComponentStyle.getLineHeight());
-            writer.W("textColor");
+            writer.J("textColor");
             this.nullableButtonBasedTextColorStyleAdapter.toJson(writer, buttonCombinedStepComponentStyle.getTextColor());
-            writer.W("height");
+            writer.J("height");
             this.nullableButtonBasedHeightStyleAdapter.toJson(writer, buttonCombinedStepComponentStyle.getHeight());
-            writer.W("width");
+            writer.J("width");
             this.nullableButtonBasedWidthStyleAdapter.toJson(writer, buttonCombinedStepComponentStyle.getWidth());
-            writer.W(ViewProps.BACKGROUND_COLOR);
+            writer.J(ViewProps.BACKGROUND_COLOR);
             this.nullableButtonBasedBackgroundColorStyleAdapter.toJson(writer, buttonCombinedStepComponentStyle.getBackgroundColor());
-            writer.W(ViewProps.BORDER_COLOR);
+            writer.J(ViewProps.BORDER_COLOR);
             this.nullableButtonBasedBorderColorStyleAdapter.toJson(writer, buttonCombinedStepComponentStyle.getBorderColor());
-            writer.W("borderRadius");
+            writer.J("borderRadius");
             this.nullableButtonBasedBorderRadiusStyleAdapter.toJson(writer, buttonCombinedStepComponentStyle.getBorderRadius());
-            writer.W(ViewProps.BORDER_WIDTH);
+            writer.J(ViewProps.BORDER_WIDTH);
             this.nullableButtonBasedBorderWidthStyleAdapter.toJson(writer, buttonCombinedStepComponentStyle.getBorderWidth());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

@@ -6,20 +6,20 @@ import java.util.ArrayList;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ArrayList f27984a;
+    private final ArrayList f27128a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f27985b = 0;
+    private final int f27129b = 0;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f27986c;
+    private final int f27130c;
 
     /* renamed from: d  reason: collision with root package name */
-    public int f27987d;
+    public int f27131d;
 
     public b(ArrayList arrayList) {
-        this.f27984a = arrayList;
-        this.f27986c = arrayList.size();
+        this.f27128a = arrayList;
+        this.f27130c = arrayList.size();
     }
 
     public static b c(BufferedReader bufferedReader) {
@@ -37,23 +37,23 @@ public final class b {
     }
 
     public boolean a() {
-        if (this.f27987d < this.f27986c) {
+        if (this.f27131d < this.f27130c) {
             return true;
         }
         return false;
     }
 
     public a b() {
-        int i10 = this.f27987d;
-        if (i10 >= this.f27985b && i10 < this.f27986c) {
-            ArrayList arrayList = this.f27984a;
-            this.f27987d = i10 + 1;
+        int i10 = this.f27131d;
+        if (i10 >= this.f27129b && i10 < this.f27130c) {
+            ArrayList arrayList = this.f27128a;
+            this.f27131d = i10 + 1;
             return (a) arrayList.get(i10);
         }
         return null;
     }
 
     public void d() {
-        this.f27987d--;
+        this.f27131d--;
     }
 }

@@ -1,18 +1,87 @@
 package pg;
+
+import java.io.Serializable;
+import java.lang.reflect.Array;
+import java.util.AbstractCollection;
+import java.util.Arrays;
+import java.util.Collection;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class k0 extends gl {
+public abstract class k0 extends AbstractCollection implements Serializable {
 
-    /* renamed from: i  reason: collision with root package name */
-    private final m0 f45475i;
+    /* renamed from: d  reason: collision with root package name */
+    private static final Object[] f44390d = new Object[0];
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public k0(m0 m0Var, int i10) {
-        super(m0Var.size(), i10);
-        this.f45475i = m0Var;
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public final boolean add(Object obj) {
+        throw new UnsupportedOperationException();
     }
 
-    @Override // pg.gl
-    protected final Object a(int i10) {
-        return this.f45475i.get(i10);
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public final boolean addAll(Collection collection) {
+        throw new UnsupportedOperationException();
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public abstract int b(Object[] objArr, int i10);
+
+    int c() {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public final void clear() {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
+    public abstract boolean contains(Object obj);
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public int d() {
+        throw new UnsupportedOperationException();
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public Object[] e() {
+        return null;
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public final boolean remove(Object obj) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public final boolean removeAll(Collection collection) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public final boolean retainAll(Collection collection) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public final Object[] toArray() {
+        return toArray(f44390d);
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public final Object[] toArray(Object[] objArr) {
+        objArr.getClass();
+        int size = size();
+        int length = objArr.length;
+        if (length < size) {
+            Object[] e10 = e();
+            if (e10 == null) {
+                objArr = (Object[]) Array.newInstance(objArr.getClass().getComponentType(), size);
+            } else {
+                return Arrays.copyOfRange(e10, d(), c(), objArr.getClass());
+            }
+        } else if (length > size) {
+            objArr[size] = null;
+        }
+        b(objArr, 0);
+        return objArr;
     }
 }

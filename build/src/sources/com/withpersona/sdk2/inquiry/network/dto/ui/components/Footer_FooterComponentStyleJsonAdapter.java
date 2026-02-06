@@ -52,24 +52,24 @@ public final class Footer_FooterComponentStyleJsonAdapter extends h {
     @NotNull
     public Footer.FooterComponentStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         AttributeStyles.FooterColorStyle footerColorStyle = null;
         AttributeStyles.FooterPaddingStyle footerPaddingStyle = null;
         AttributeStyles.FooterBorderWidthStyle footerBorderWidthStyle = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 footerColorStyle = (AttributeStyles.FooterColorStyle) this.nullableFooterColorStyleAdapter.fromJson(reader);
-            } else if (W == 1) {
+            } else if (J == 1) {
                 footerPaddingStyle = (AttributeStyles.FooterPaddingStyle) this.nullableFooterPaddingStyleAdapter.fromJson(reader);
-            } else if (W == 2) {
+            } else if (J == 2) {
                 footerBorderWidthStyle = (AttributeStyles.FooterBorderWidthStyle) this.nullableFooterBorderWidthStyleAdapter.fromJson(reader);
             }
         }
-        reader.z();
+        reader.D();
         return new Footer.FooterComponentStyle(footerColorStyle, footerPaddingStyle, footerBorderWidthStyle);
     }
 
@@ -78,13 +78,13 @@ public final class Footer_FooterComponentStyleJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (footerComponentStyle != null) {
             writer.k();
-            writer.W(ViewProps.BACKGROUND_COLOR);
+            writer.J(ViewProps.BACKGROUND_COLOR);
             this.nullableFooterColorStyleAdapter.toJson(writer, footerComponentStyle.getBackgroundColor());
-            writer.W(ViewProps.PADDING);
+            writer.J(ViewProps.PADDING);
             this.nullableFooterPaddingStyleAdapter.toJson(writer, footerComponentStyle.getPadding());
-            writer.W(ViewProps.BORDER_WIDTH);
+            writer.J(ViewProps.BORDER_WIDTH);
             this.nullableFooterBorderWidthStyleAdapter.toJson(writer, footerComponentStyle.getBorderWidth());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

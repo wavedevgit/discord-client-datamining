@@ -9,16 +9,16 @@ import java.util.Locale;
 public class a implements TransformationMethod {
 
     /* renamed from: d  reason: collision with root package name */
-    private Locale f30574d;
+    private Locale f29547d;
 
     public a(Context context) {
-        this.f30574d = context.getResources().getConfiguration().locale;
+        this.f29547d = context.getResources().getConfiguration().locale;
     }
 
     @Override // android.text.method.TransformationMethod
     public CharSequence getTransformation(CharSequence charSequence, View view) {
         if (charSequence != null) {
-            return charSequence.toString().toUpperCase(this.f30574d);
+            return charSequence.toString().toUpperCase(this.f29547d);
         }
         return null;
     }

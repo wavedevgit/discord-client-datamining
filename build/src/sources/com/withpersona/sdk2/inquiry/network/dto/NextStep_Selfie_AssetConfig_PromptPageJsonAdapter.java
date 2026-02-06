@@ -45,7 +45,7 @@ public final class NextStep_Selfie_AssetConfig_PromptPageJsonAdapter extends h {
     @NotNull
     public NextStep.Selfie.AssetConfig.PromptPage fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         RemoteImage remoteImage = null;
         RemoteImage remoteImage2 = null;
         RemoteImage remoteImage3 = null;
@@ -53,28 +53,28 @@ public final class NextStep_Selfie_AssetConfig_PromptPageJsonAdapter extends h {
         RemoteImage remoteImage5 = null;
         int i10 = -1;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 remoteImage = (RemoteImage) this.nullableRemoteImageAdapter.fromJson(reader);
                 i10 &= -2;
-            } else if (W == 1) {
+            } else if (J == 1) {
                 remoteImage2 = (RemoteImage) this.nullableRemoteImageAdapter.fromJson(reader);
                 i10 &= -3;
-            } else if (W == 2) {
+            } else if (J == 2) {
                 remoteImage3 = (RemoteImage) this.nullableRemoteImageAdapter.fromJson(reader);
                 i10 &= -5;
-            } else if (W == 3) {
+            } else if (J == 3) {
                 remoteImage4 = (RemoteImage) this.nullableRemoteImageAdapter.fromJson(reader);
                 i10 &= -9;
-            } else if (W == 4) {
+            } else if (J == 4) {
                 remoteImage5 = (RemoteImage) this.nullableRemoteImageAdapter.fromJson(reader);
                 i10 &= -17;
             }
         }
-        reader.z();
+        reader.D();
         if (i10 == -32) {
             RemoteImage remoteImage6 = remoteImage5;
             RemoteImage remoteImage7 = remoteImage4;
@@ -87,7 +87,7 @@ public final class NextStep_Selfie_AssetConfig_PromptPageJsonAdapter extends h {
         RemoteImage remoteImage12 = remoteImage;
         Constructor<NextStep.Selfie.AssetConfig.PromptPage> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = NextStep.Selfie.AssetConfig.PromptPage.class.getDeclaredConstructor(RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, Integer.TYPE, ym.c.f54853c);
+            constructor = NextStep.Selfie.AssetConfig.PromptPage.class.getDeclaredConstructor(RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, Integer.TYPE, an.c.f1164c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -101,17 +101,17 @@ public final class NextStep_Selfie_AssetConfig_PromptPageJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (promptPage != null) {
             writer.k();
-            writer.W("headerPictograph");
+            writer.J("headerPictograph");
             this.nullableRemoteImageAdapter.toJson(writer, promptPage.getHeaderPictograph());
-            writer.W("selfiePictograph");
+            writer.J("selfiePictograph");
             this.nullableRemoteImageAdapter.toJson(writer, promptPage.getSelfiePictograph());
-            writer.W("selfieCenterPictograph");
+            writer.J("selfieCenterPictograph");
             this.nullableRemoteImageAdapter.toJson(writer, promptPage.getSelfieCenterPictograph());
-            writer.W("selfieLeftPictograph");
+            writer.J("selfieLeftPictograph");
             this.nullableRemoteImageAdapter.toJson(writer, promptPage.getSelfieLeftPictograph());
-            writer.W("selfieRightPictograph");
+            writer.J("selfieRightPictograph");
             this.nullableRemoteImageAdapter.toJson(writer, promptPage.getSelfieRightPictograph());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

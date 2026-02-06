@@ -11,20 +11,20 @@ import x.c1;
 public class j extends c1 {
 
     /* renamed from: e  reason: collision with root package name */
-    static final PointF f2237e = new PointF(2.0f, 2.0f);
+    static final PointF f2566e = new PointF(2.0f, 2.0f);
 
     /* renamed from: b  reason: collision with root package name */
-    private final e f2238b;
+    private final e f2567b;
 
     /* renamed from: c  reason: collision with root package name */
-    private Rect f2239c = null;
+    private Rect f2568c = null;
 
     /* renamed from: d  reason: collision with root package name */
-    private Matrix f2240d;
+    private Matrix f2569d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public j(e eVar) {
-        this.f2238b = eVar;
+        this.f2567b = eVar;
     }
 
     @Override // x.c1
@@ -32,9 +32,9 @@ public class j extends c1 {
         float[] fArr = {f10, f11};
         synchronized (this) {
             try {
-                Matrix matrix = this.f2240d;
+                Matrix matrix = this.f2569d;
                 if (matrix == null) {
-                    return f2237e;
+                    return f2566e;
                 }
                 matrix.mapPoints(fArr);
                 return new PointF(fArr[0], fArr[1]);
@@ -50,11 +50,11 @@ public class j extends c1 {
         b0.p.a();
         synchronized (this) {
             try {
-                if (size.getWidth() != 0 && size.getHeight() != 0 && (rect = this.f2239c) != null) {
-                    this.f2240d = this.f2238b.c(size, i10, rect);
+                if (size.getWidth() != 0 && size.getHeight() != 0 && (rect = this.f2568c) != null) {
+                    this.f2569d = this.f2567b.c(size, i10, rect);
                     return;
                 }
-                this.f2240d = null;
+                this.f2569d = null;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -64,7 +64,7 @@ public class j extends c1 {
     public void g(Rect rect) {
         e(new Rational(rect.width(), rect.height()));
         synchronized (this) {
-            this.f2239c = rect;
+            this.f2568c = rect;
         }
     }
 }

@@ -1,41 +1,34 @@
 package ji;
 
-import android.os.IBinder;
-import android.os.IInterface;
-import android.os.Parcel;
+import java.nio.ByteBuffer;
+import java.security.MessageDigest;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class a implements IInterface {
+final class a implements s {
 
-    /* renamed from: c  reason: collision with root package name */
-    private final IBinder f30909c;
+    /* renamed from: a  reason: collision with root package name */
+    private final ByteBuffer f29884a;
 
-    /* renamed from: d  reason: collision with root package name */
-    private final String f30910d;
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    public a(IBinder iBinder, String str) {
-        this.f30909c = iBinder;
-        this.f30910d = str;
+    public a(ByteBuffer byteBuffer) {
+        this.f29884a = byteBuffer.slice();
     }
 
-    @Override // android.os.IInterface
-    public final IBinder asBinder() {
-        return this.f30909c;
-    }
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    public final Parcel e() {
-        Parcel obtain = Parcel.obtain();
-        obtain.writeInterfaceToken(this.f30910d);
-        return obtain;
-    }
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    public final void f(int i10, Parcel parcel) {
-        try {
-            this.f30909c.transact(i10, parcel, null, 1);
-        } finally {
-            parcel.recycle();
+    @Override // ji.s
+    public final void a(MessageDigest[] messageDigestArr, long j10, int i10) {
+        ByteBuffer slice;
+        synchronized (this.f29884a) {
+            int i11 = (int) j10;
+            this.f29884a.position(i11);
+            this.f29884a.limit(i11 + i10);
+            slice = this.f29884a.slice();
         }
+        for (MessageDigest messageDigest : messageDigestArr) {
+            slice.position(0);
+            messageDigest.update(slice);
+        }
+    }
+
+    @Override // ji.s
+    public final long zza() {
+        return this.f29884a.capacity();
     }
 }

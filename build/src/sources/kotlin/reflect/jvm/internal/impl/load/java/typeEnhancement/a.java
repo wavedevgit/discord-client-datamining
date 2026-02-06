@@ -7,20 +7,20 @@ import kotlin.reflect.jvm.internal.impl.load.java.typeEnhancement.AbstractSignat
 public class a implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final AbstractSignatureParts f33074d;
+    private final AbstractSignatureParts f33094d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final AbstractSignatureParts.a f33075e;
+    private final AbstractSignatureParts.a f33095e;
 
     public a(AbstractSignatureParts abstractSignatureParts, AbstractSignatureParts.a aVar) {
-        this.f33074d = abstractSignatureParts;
-        this.f33075e = aVar;
+        this.f33094d = abstractSignatureParts;
+        this.f33095e = aVar;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         boolean h10;
-        h10 = AbstractSignatureParts.h(this.f33074d, this.f33075e, obj);
+        h10 = AbstractSignatureParts.h(this.f33094d, this.f33095e, obj);
         return Boolean.valueOf(h10);
     }
 }

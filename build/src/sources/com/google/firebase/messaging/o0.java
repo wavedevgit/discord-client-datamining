@@ -8,7 +8,7 @@ public class o0 implements Parcelable.Creator {
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void c(RemoteMessage remoteMessage, Parcel parcel, int i10) {
         int a10 = hf.c.a(parcel);
-        hf.c.e(parcel, 2, remoteMessage.f16405d, false);
+        hf.c.e(parcel, 2, remoteMessage.f16385d, false);
         hf.c.b(parcel, a10);
     }
 

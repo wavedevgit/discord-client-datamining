@@ -4,19 +4,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = exports;
     var6 = dependencyMap;
     var4 = function arg0() {
-        _fun22743: for (var _fun22743_ip = 0;;) switch (_fun22743_ip) {
+        _fun22741: for (var _fun22741_ip = 0;;) switch (_fun22741_ip) {
             case 0:
                 var2 = arg0;
                 if (!var2) {
-                    _fun22743_ip = 18;
-                    continue _fun22743
+                    _fun22741_ip = 18;
+                    continue _fun22741
                 }
             case 6:
                 var1 = var2.__esModule;
                 var0 = var2;
                 if (var1) {
-                    _fun22743_ip = 27;
-                    continue _fun22743
+                    _fun22741_ip = 27;
+                    continue _fun22741
                 }
             case 18:
                 var1 = {};
@@ -35,57 +35,28 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var7.bind(var8)(var1, var0, var2);
     var0 = function arg0, arg1() {
-        _fun22744: for (var _fun22744_ip = 0;;) switch (_fun22744_ip) {
-            case 0:
-                var4 = undefined;
-                var1 = undefined;
-                var2 = _closure1_slot4;
-                var3 = var2.default;
-                var1 = arguments;
-                var2 = var1;
-                var1 = 2;
-                var1 = var3.bind(var4)(var1, var2);
-                var1 = _closure1_slot0;
-                var2 = var1.default;
-                var1 = arg0;
-                var8 = var2.bind(var4)(var1);
-                var1 = _closure1_slot0;
-                var2 = var1.default;
-                var1 = arg1;
-                var6 = var2.bind(var4)(var1);
-                var1 = _closure1_slot2;
-                var1 = var1.default;
-                var1 = var1.bind(var4)(var8, var6);
-                var3 = global;
-                var7 = var3.Math;
-                var5 = var7.abs;
-                var2 = _closure1_slot1;
-                var2 = var2.default;
-                var2 = var2.bind(var4)(var8, var6);
-                var2 = var5.bind(var7)(var2);
-                var5 = _closure1_slot3;
-                var7 = var5.default;
-                var5 = var1 * var2;
-                var5 = var7.bind(var4)(var8, var5);
-                var3 = var3.Number;
-                var0 = _closure1_slot2;
-                var0 = var0.default;
-                var5 = var0.bind(var4)(var5, var6);
-                var0 = -var1;
-                var0 = var5 === var0;
-                var0 = var3.bind(var4)(var0);
-                var0 = var2 - var0;
-                var1 = var1 * var0;
-                var0 = 0;
-                if (!(var0 !== var1)) {
-                    _fun22744_ip = 182;
-                    continue _fun22744
-                }
-            case 179:
-                var0 = var1;
-            case 182:
-                return var0;
-        }
+        var3 = undefined;
+        var1 = undefined;
+        var2 = _closure1_slot1;
+        var4 = var2.default;
+        var1 = arguments;
+        var2 = var1;
+        var1 = 2;
+        var1 = var4.bind(var3)(var1, var2);
+        var1 = _closure1_slot0;
+        var2 = var1.default;
+        var1 = arg0;
+        var2 = var2.bind(var3)(var1);
+        var1 = var2.getTime;
+        var1 = var1.bind(var2)();
+        var0 = _closure1_slot0;
+        var2 = var0.default;
+        var0 = arg1;
+        var2 = var2.bind(var3)(var0);
+        var0 = var2.getTime;
+        var0 = var0.bind(var2)();
+        var0 = var1 - var0;
+        return var0;
     };
     var1.default = var0;
     var0 = 0;
@@ -99,23 +70,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var5.bind(var0)(var2);
     var2 = var4.bind(var0)(var2);
     var _closure1_slot1 = var2;
-    var2 = 2;
-    var2 = var6[var2];
-    var2 = var5.bind(var0)(var2);
-    var2 = var4.bind(var0)(var2);
-    var _closure1_slot2 = var2;
-    var2 = 3;
-    var2 = var6[var2];
-    var2 = var5.bind(var0)(var2);
-    var2 = var4.bind(var0)(var2);
-    var _closure1_slot3 = var2;
-    var2 = 4;
-    var2 = var6[var2];
-    var2 = var5.bind(var0)(var2);
-    var2 = var4.bind(var0)(var2);
-    var _closure1_slot4 = var2;
     var2 = var1.default;
     var1 = arg4;
     var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [2573, 2757, 2749, 2769, 2574]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2575, 2576]);

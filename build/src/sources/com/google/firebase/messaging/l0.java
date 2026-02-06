@@ -13,7 +13,7 @@ import java.util.concurrent.Executor;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class l0 {
-    public static /* synthetic */ void a(Context context, boolean z10, xg.k kVar) {
+    public static /* synthetic */ void a(Context context, boolean z10, yg.k kVar) {
         try {
             if (!b(context)) {
                 Log.e("FirebaseMessaging", "error configuring notification delegate for package " + context.getPackageName());
@@ -69,9 +69,9 @@ public abstract class l0 {
 
     static Task e(Executor executor, final Context context, final boolean z10) {
         if (!com.google.android.gms.common.util.k.g()) {
-            return xg.m.f(null);
+            return yg.m.f(null);
         }
-        final xg.k kVar = new xg.k();
+        final yg.k kVar = new yg.k();
         executor.execute(new Runnable() { // from class: com.google.firebase.messaging.k0
             @Override // java.lang.Runnable
             public final void run() {

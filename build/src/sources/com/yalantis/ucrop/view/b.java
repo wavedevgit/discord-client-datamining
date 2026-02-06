@@ -10,85 +10,85 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.widget.ImageView;
 import androidx.appcompat.widget.m;
-import vq.c;
-import xq.d;
-import xq.g;
+import xq.c;
+import zq.d;
+import zq.g;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class b extends m {
 
     /* renamed from: d  reason: collision with root package name */
-    protected final float[] f19960d;
+    protected final float[] f19940d;
 
     /* renamed from: e  reason: collision with root package name */
-    protected final float[] f19961e;
+    protected final float[] f19941e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final float[] f19962i;
+    private final float[] f19942i;
 
     /* renamed from: o  reason: collision with root package name */
-    protected Matrix f19963o;
+    protected Matrix f19943o;
 
     /* renamed from: p  reason: collision with root package name */
-    protected int f19964p;
+    protected int f19944p;
 
     /* renamed from: q  reason: collision with root package name */
-    protected int f19965q;
+    protected int f19945q;
 
     /* renamed from: r  reason: collision with root package name */
-    protected InterfaceC0269b f19966r;
+    protected InterfaceC0261b f19946r;
 
     /* renamed from: s  reason: collision with root package name */
-    private float[] f19967s;
+    private float[] f19947s;
 
     /* renamed from: t  reason: collision with root package name */
-    private float[] f19968t;
+    private float[] f19948t;
 
     /* renamed from: u  reason: collision with root package name */
-    protected boolean f19969u;
+    protected boolean f19949u;
 
     /* renamed from: v  reason: collision with root package name */
-    protected boolean f19970v;
+    protected boolean f19950v;
 
     /* renamed from: w  reason: collision with root package name */
-    private int f19971w;
+    private int f19951w;
 
     /* renamed from: x  reason: collision with root package name */
-    private String f19972x;
+    private String f19952x;
 
     /* renamed from: y  reason: collision with root package name */
-    private String f19973y;
+    private String f19953y;
 
     /* renamed from: z  reason: collision with root package name */
-    private c f19974z;
+    private c f19954z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    class a implements uq.b {
+    class a implements wq.b {
         a() {
         }
 
-        @Override // uq.b
+        @Override // wq.b
         public void a(Bitmap bitmap, c cVar, String str, String str2) {
-            b.this.f19972x = str;
-            b.this.f19973y = str2;
-            b.this.f19974z = cVar;
+            b.this.f19952x = str;
+            b.this.f19953y = str2;
+            b.this.f19954z = cVar;
             b bVar = b.this;
-            bVar.f19969u = true;
+            bVar.f19949u = true;
             bVar.setImageBitmap(bitmap);
         }
 
-        @Override // uq.b
+        @Override // wq.b
         public void onFailure(Exception exc) {
             Log.e("TransformImageView", "onFailure: setImageUri", exc);
-            InterfaceC0269b interfaceC0269b = b.this.f19966r;
-            if (interfaceC0269b != null) {
-                interfaceC0269b.b(exc);
+            InterfaceC0261b interfaceC0261b = b.this.f19946r;
+            if (interfaceC0261b != null) {
+                interfaceC0261b.b(exc);
             }
         }
     }
 
     /* renamed from: com.yalantis.ucrop.view.b$b  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public interface InterfaceC0269b {
+    public interface InterfaceC0261b {
         void a();
 
         void b(Exception exc);
@@ -100,19 +100,19 @@ public abstract class b extends m {
 
     public b(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        this.f19960d = new float[8];
-        this.f19961e = new float[2];
-        this.f19962i = new float[9];
-        this.f19963o = new Matrix();
-        this.f19969u = false;
-        this.f19970v = false;
-        this.f19971w = 0;
+        this.f19940d = new float[8];
+        this.f19941e = new float[2];
+        this.f19942i = new float[9];
+        this.f19943o = new Matrix();
+        this.f19949u = false;
+        this.f19950v = false;
+        this.f19951w = 0;
         i();
     }
 
     private void o() {
-        this.f19963o.mapPoints(this.f19960d, this.f19967s);
-        this.f19963o.mapPoints(this.f19961e, this.f19968t);
+        this.f19943o.mapPoints(this.f19940d, this.f19947s);
+        this.f19943o.mapPoints(this.f19941e, this.f19948t);
     }
 
     public float f(Matrix matrix) {
@@ -124,30 +124,30 @@ public abstract class b extends m {
     }
 
     public float getCurrentAngle() {
-        return f(this.f19963o);
+        return f(this.f19943o);
     }
 
     public float getCurrentScale() {
-        return g(this.f19963o);
+        return g(this.f19943o);
     }
 
     public c getExifInfo() {
-        return this.f19974z;
+        return this.f19954z;
     }
 
     public String getImageInputPath() {
-        return this.f19972x;
+        return this.f19952x;
     }
 
     public String getImageOutputPath() {
-        return this.f19973y;
+        return this.f19953y;
     }
 
     public int getMaxBitmapSize() {
-        if (this.f19971w <= 0) {
-            this.f19971w = xq.a.b(getContext());
+        if (this.f19951w <= 0) {
+            this.f19951w = zq.a.b(getContext());
         }
-        return this.f19971w;
+        return this.f19951w;
     }
 
     public Bitmap getViewBitmap() {
@@ -158,8 +158,8 @@ public abstract class b extends m {
     }
 
     protected float h(Matrix matrix, int i10) {
-        matrix.getValues(this.f19962i);
-        return this.f19962i[i10];
+        matrix.getValues(this.f19942i);
+        return this.f19942i[i10];
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -175,34 +175,34 @@ public abstract class b extends m {
             float intrinsicHeight = drawable.getIntrinsicHeight();
             Log.d("TransformImageView", String.format("Image size: [%d:%d]", Integer.valueOf((int) intrinsicWidth), Integer.valueOf((int) intrinsicHeight)));
             RectF rectF = new RectF(0.0f, 0.0f, intrinsicWidth, intrinsicHeight);
-            this.f19967s = g.b(rectF);
-            this.f19968t = g.a(rectF);
-            this.f19970v = true;
-            InterfaceC0269b interfaceC0269b = this.f19966r;
-            if (interfaceC0269b != null) {
-                interfaceC0269b.a();
+            this.f19947s = g.b(rectF);
+            this.f19948t = g.a(rectF);
+            this.f19950v = true;
+            InterfaceC0261b interfaceC0261b = this.f19946r;
+            if (interfaceC0261b != null) {
+                interfaceC0261b.a();
             }
         }
     }
 
     public void k(float f10, float f11, float f12) {
         if (f10 != 0.0f) {
-            this.f19963o.postRotate(f10, f11, f12);
-            setImageMatrix(this.f19963o);
-            InterfaceC0269b interfaceC0269b = this.f19966r;
-            if (interfaceC0269b != null) {
-                interfaceC0269b.d(f(this.f19963o));
+            this.f19943o.postRotate(f10, f11, f12);
+            setImageMatrix(this.f19943o);
+            InterfaceC0261b interfaceC0261b = this.f19946r;
+            if (interfaceC0261b != null) {
+                interfaceC0261b.d(f(this.f19943o));
             }
         }
     }
 
     public void l(float f10, float f11, float f12) {
         if (f10 != 0.0f) {
-            this.f19963o.postScale(f10, f10, f11, f12);
-            setImageMatrix(this.f19963o);
-            InterfaceC0269b interfaceC0269b = this.f19966r;
-            if (interfaceC0269b != null) {
-                interfaceC0269b.c(g(this.f19963o));
+            this.f19943o.postScale(f10, f10, f11, f12);
+            setImageMatrix(this.f19943o);
+            InterfaceC0261b interfaceC0261b = this.f19946r;
+            if (interfaceC0261b != null) {
+                interfaceC0261b.c(g(this.f19943o));
             }
         }
     }
@@ -211,25 +211,25 @@ public abstract class b extends m {
         if (f10 == 0.0f && f11 == 0.0f) {
             return;
         }
-        this.f19963o.postTranslate(f10, f11);
-        setImageMatrix(this.f19963o);
+        this.f19943o.postTranslate(f10, f11);
+        setImageMatrix(this.f19943o);
     }
 
     public void n(Uri uri, Uri uri2) {
         int maxBitmapSize = getMaxBitmapSize();
-        xq.a.d(getContext(), uri, uri2, maxBitmapSize, maxBitmapSize, new a());
+        zq.a.d(getContext(), uri, uri2, maxBitmapSize, maxBitmapSize, new a());
     }
 
     @Override // android.view.View
     protected void onLayout(boolean z10, int i10, int i11, int i12, int i13) {
         super.onLayout(z10, i10, i11, i12, i13);
-        if (!z10 && (!this.f19969u || this.f19970v)) {
+        if (!z10 && (!this.f19949u || this.f19950v)) {
             return;
         }
         int paddingLeft = getPaddingLeft();
         int paddingTop = getPaddingTop();
-        this.f19964p = (getWidth() - getPaddingRight()) - paddingLeft;
-        this.f19965q = (getHeight() - getPaddingBottom()) - paddingTop;
+        this.f19944p = (getWidth() - getPaddingRight()) - paddingLeft;
+        this.f19945q = (getHeight() - getPaddingBottom()) - paddingTop;
         j();
     }
 
@@ -241,12 +241,12 @@ public abstract class b extends m {
     @Override // android.widget.ImageView
     public void setImageMatrix(Matrix matrix) {
         super.setImageMatrix(matrix);
-        this.f19963o.set(matrix);
+        this.f19943o.set(matrix);
         o();
     }
 
     public void setMaxBitmapSize(int i10) {
-        this.f19971w = i10;
+        this.f19951w = i10;
     }
 
     @Override // android.widget.ImageView
@@ -258,7 +258,7 @@ public abstract class b extends m {
         }
     }
 
-    public void setTransformImageListener(InterfaceC0269b interfaceC0269b) {
-        this.f19966r = interfaceC0269b;
+    public void setTransformImageListener(InterfaceC0261b interfaceC0261b) {
+        this.f19946r = interfaceC0261b;
     }
 }

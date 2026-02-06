@@ -20,7 +20,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'components_native/channel_settings/ChannelSettingsUtils.tsx';
     var1 = var3.bind(var4)(var1);
     var1 = function arg0() {
-        _fun108971: for (var _fun108971_ip = 0;;) switch (_fun108971_ip) {
+        _fun108996: for (var _fun108996_ip = 0;;) switch (_fun108996_ip) {
             case 0:
                 var2 = arg0;
                 var3 = var2.canManageThread;
@@ -30,31 +30,31 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.isThread;
                 var2 = var2.isChannelOwner;
                 if (!var5) {
-                    _fun108971_ip = 45;
-                    continue _fun108971
+                    _fun108996_ip = 45;
+                    continue _fun108996
                 }
             case 42:
                 if (var2) {
-                    _fun108971_ip = 69;
-                    continue _fun108971
+                    _fun108996_ip = 69;
+                    continue _fun108996
                 }
             case 45:
                 var0 = var3;
                 if (var5) {
-                    _fun108971_ip = 69;
-                    continue _fun108971
+                    _fun108996_ip = 69;
+                    continue _fun108996
                 }
             case 51:
                 var0 = var4;
                 if (!var1) {
-                    _fun108971_ip = 69;
-                    continue _fun108971
+                    _fun108996_ip = 69;
+                    continue _fun108996
                 }
             case 57:
                 var1 = var3;
                 if (var3) {
-                    _fun108971_ip = 66;
-                    continue _fun108971
+                    _fun108996_ip = 66;
+                    continue _fun108996
                 }
             case 63:
                 var1 = var2;

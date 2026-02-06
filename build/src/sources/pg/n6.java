@@ -1,30 +1,27 @@
 package pg;
 
-import xi.c;
+import yi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class n6 implements xi.d {
+final class n6 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final n6 f45576a = new n6();
+    static final n6 f44517a = new n6();
+
+    /* renamed from: b  reason: collision with root package name */
+    private static final yi.c f44518b;
 
     static {
-        c.b a10 = xi.c.a("type");
-        v1 v1Var = new v1();
-        v1Var.a(1);
-        a10.b(v1Var.b()).a();
-        c.b a11 = xi.c.a("dims");
-        v1 v1Var2 = new v1();
-        v1Var2.a(2);
-        a11.b(v1Var2.b()).a();
+        c.b a10 = yi.c.a("errorCode");
+        s1 s1Var = new s1();
+        s1Var.a(1);
+        f44518b = a10.b(s1Var.b()).a();
     }
 
     private n6() {
     }
 
-    @Override // xi.d
+    @Override // yi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
-        android.support.v4.media.session.b.a(obj);
-        xi.e eVar = (xi.e) obj2;
-        throw null;
+        ((yi.e) obj2).a(f44518b, ((za) obj).a());
     }
 }

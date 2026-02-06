@@ -22,10 +22,10 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.text.Charsets;
-import or.p;
-import or.v;
 import org.jetbrains.annotations.NotNull;
 import org.json.JSONObject;
+import qr.p;
+import qr.v;
 @Metadata(d1 = {"\u0000\u0096\u0001\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0000\n\u0002\u0010\t\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0016\n\u0000\n\u0002\u0010\u0015\n\u0002\b\u0006\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\"\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\u0010\u0011\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\t\b\u0000\u0018\u0000 L2\u00020\u0001:\u0004IJKLB\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0004\b\u0006\u0010\u0007J\u0014\u0010\u0018\u001a\u00020\u00192\f\u0010\u001a\u001a\b\u0012\u0004\u0012\u00020\u001c0\u001bJ \u0010\u001d\u001a\u00020\u00192\u0006\u0010\u001e\u001a\u00020\u001f2\u0006\u0010 \u001a\u00020\u001f2\u0006\u0010!\u001a\u00020\u001cH\u0002J\u0018\u0010\"\u001a\u00020\u00192\u0006\u0010 \u001a\u00020\u001f2\u0006\u0010#\u001a\u00020\u000bH\u0002J5\u0010$\u001a\u00020%2\f\u0010&\u001a\b\u0012\u0004\u0012\u00020(0'2\u0006\u0010)\u001a\u00020\u000b2\b\u0010*\u001a\u0004\u0018\u00010\u00052\b\u0010+\u001a\u0004\u0018\u00010\u000b¢\u0006\u0002\u0010,J\u0006\u0010-\u001a\u00020\u0019J\u0019\u0010.\u001a\u0004\u0018\u00010\u000b2\b\u0010+\u001a\u0004\u0018\u00010\u000bH\u0002¢\u0006\u0002\u0010/J9\u00100\u001a\u0014\u0012\u0004\u0012\u000202\u0012\n\u0012\b\u0012\u0004\u0012\u00020203012\u0006\u00104\u001a\u00020\t2\u0006\u0010)\u001a\u00020\u000b2\b\u0010+\u001a\u0004\u0018\u00010\u000bH\u0002¢\u0006\u0002\u00105J'\u00106\u001a\u0002072\u0006\u00104\u001a\u00020\t2\u0006\u0010)\u001a\u00020\u000b2\b\u0010+\u001a\u0004\u0018\u00010\u000bH\u0002¢\u0006\u0002\u00108J\b\u00109\u001a\u00020\u0019H\u0002J\u0010\u0010:\u001a\u00020\u00192\u0006\u0010;\u001a\u00020<H\u0002J\u0010\u0010=\u001a\u00020\u00192\u0006\u0010;\u001a\u00020<H\u0002J\u0010\u0010>\u001a\u00020\u00192\u0006\u0010;\u001a\u00020<H\u0002J\u0010\u0010?\u001a\u00020@2\u0006\u0010;\u001a\u00020<H\u0002J\u0010\u0010A\u001a\u00020\u00192\u0006\u0010;\u001a\u00020<H\u0002J\u0010\u0010B\u001a\u0002022\u0006\u0010!\u001a\u00020\u001cH\u0002J\u001a\u0010C\u001a\u0004\u0018\u00010D2\u0006\u0010E\u001a\u0002022\u0006\u0010F\u001a\u00020\u000bH\u0002J\u0018\u0010G\u001a\u0002072\u0006\u0010;\u001a\u00020<2\u0006\u0010H\u001a\u000202H\u0002R\u000e\u0010\b\u001a\u00020\tX\u0082\u0004¢\u0006\u0002\n\u0000R\u0012\u0010\n\u001a\u0004\u0018\u00010\u000bX\u0082\u0004¢\u0006\u0004\n\u0002\u0010\fR\u000e\u0010\r\u001a\u00020\u000eX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\u0010X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0011\u001a\u00020\u0012X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0013\u001a\u00020\tX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0014\u001a\u00020\tX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0015\u001a\u00020\tX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0016\u001a\u00020\u000bX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0017\u001a\u00020\u000bX\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006M"}, d2 = {"Lcom/discord/crash_reporting/TelemetryRingSqliteStore;", "", "context", "Landroid/content/Context;", "evictionBudget", "Lcom/discord/crash_reporting/TelemetryRingTypes$Budget;", "<init>", "(Landroid/content/Context;Lcom/discord/crash_reporting/TelemetryRingTypes$Budget;)V", "capacity", "", "byteLimit", "", "Ljava/lang/Long;", "dbHelper", "Lcom/discord/crash_reporting/TelemetryRingSqliteStore$DbHelper;", "slotSeq", "", "slotSize", "", "head", "tail", "count", "totalBytes", "nextSeq", "append", "", "entries", "", "Lcom/discord/crash_reporting/TelemetryRingSqliteStore$EntryPayload;", "appendEntry", "updateSlot", "Landroid/database/sqlite/SQLiteStatement;", "clearSlot", "entry", "evictIfNeeded", "limit", "snapshot", "Lcom/discord/crash_reporting/TelemetryRingTypes$Snapshot;", TelemetryRingSqliteStore.KEY_CHANNEL_MASK, "", "Lcom/discord/crash_reporting/TelemetryRingTypes$Channel;", "beforeOffset", "snapshotBudget", "ackedEndOffset", "(Ljava/util/Set;JLcom/discord/crash_reporting/TelemetryRingTypes$Budget;Ljava/lang/Long;)Lcom/discord/crash_reporting/TelemetryRingTypes$Snapshot;", "clear", "effectiveAckedEndOffset", "(Ljava/lang/Long;)Ljava/lang/Long;", "buildSelection", "Lkotlin/Pair;", "", "", "requestedMask", "(IJLjava/lang/Long;)Lkotlin/Pair;", "hasMore", "", "(IJLjava/lang/Long;)Z", "loadState", "ensureSchema", "db", "Landroid/database/sqlite/SQLiteDatabase;", "resetSchema", "loadSlots", "readMeta", "Lcom/discord/crash_reporting/TelemetryRingSqliteStore$MetaState;", "updateMeta", "buildPayloadJson", "decodePayload", "Lcom/discord/crash_reporting/TelemetryRingTypes$LogEntry;", "payload", "seq", "tableExists", "table", "EntryPayload", "MetaState", "DbHelper", "Companion", "crash_reporting_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nTelemetryRingSqliteStore.kt\nKotlin\n*S Kotlin\n*F\n+ 1 TelemetryRingSqliteStore.kt\ncom/discord/crash_reporting/TelemetryRingSqliteStore\n+ 2 SQLiteDatabase.kt\nandroidx/core/database/sqlite/SQLiteDatabaseKt\n+ 3 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 4 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 5 ArraysJVM.kt\nkotlin/collections/ArraysKt__ArraysJVMKt\n*L\n1#1,628:1\n27#2,11:629\n38#2,4:642\n27#2,15:650\n27#2,15:669\n1869#3,2:640\n1803#3,3:647\n1#4:646\n37#5:665\n36#5,3:666\n*S KotlinDebug\n*F\n+ 1 TelemetryRingSqliteStore.kt\ncom/discord/crash_reporting/TelemetryRingSqliteStore\n*L\n49#1:629,11\n49#1:642,4\n241#1:650,15\n322#1:669,15\n56#1:640,2\n152#1:647,3\n287#1:665\n287#1:666,3\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -130,7 +130,7 @@ public final class TelemetryRingSqliteStore {
             Cursor rawQuery = sQLiteDatabase.rawQuery(str, null);
             try {
                 rawQuery.moveToFirst();
-                zr.c.a(rawQuery, null);
+                bs.c.a(rawQuery, null);
             } finally {
             }
         }
@@ -147,7 +147,7 @@ public final class TelemetryRingSqliteStore {
             db2.beginTransaction();
             try {
                 TelemetryRingSqliteStore.Companion.createSchema(db2, this.capacity);
-                Unit unit = Unit.f31988a;
+                Unit unit = Unit.f32008a;
                 db2.setTransactionSuccessful();
             } finally {
                 db2.endTransaction();
@@ -579,14 +579,14 @@ public final class TelemetryRingSqliteStore {
         try {
             if (!query.moveToFirst()) {
                 Companion.createSchema(sQLiteDatabase, this.capacity);
-                zr.c.a(query, null);
+                bs.c.a(query, null);
                 return;
             }
             if (query.getInt(0) != this.capacity) {
                 resetSchema(sQLiteDatabase);
             }
-            Unit unit = Unit.f31988a;
-            zr.c.a(query, null);
+            Unit unit = Unit.f32008a;
+            bs.c.a(query, null);
         } finally {
         }
     }
@@ -627,7 +627,7 @@ public final class TelemetryRingSqliteStore {
         Intrinsics.checkNotNullExpressionValue(query, "query(...)");
         try {
             boolean moveToFirst = query.moveToFirst();
-            zr.c.a(query, null);
+            bs.c.a(query, null);
             return moveToFirst;
         } finally {
         }
@@ -648,8 +648,8 @@ public final class TelemetryRingSqliteStore {
             } finally {
             }
         }
-        Unit unit = Unit.f31988a;
-        zr.c.a(query, null);
+        Unit unit = Unit.f32008a;
+        bs.c.a(query, null);
     }
 
     private final void loadState() {
@@ -665,7 +665,7 @@ public final class TelemetryRingSqliteStore {
             this.totalBytes = readMeta.getTotalBytes();
             this.nextSeq = readMeta.getNextSeq();
             loadSlots(writableDatabase);
-            Unit unit = Unit.f31988a;
+            Unit unit = Unit.f32008a;
             writableDatabase.setTransactionSuccessful();
         } finally {
             writableDatabase.endTransaction();
@@ -678,17 +678,17 @@ public final class TelemetryRingSqliteStore {
         try {
             if (!query.moveToFirst()) {
                 MetaState metaState = new MetaState(-1, 0, 0, 0L, 1L);
-                zr.c.a(query, null);
+                bs.c.a(query, null);
                 return metaState;
             }
             MetaState metaState2 = new MetaState(query.getInt(0), query.getInt(1), query.getInt(2), query.getLong(3), query.getLong(4));
-            zr.c.a(query, null);
+            bs.c.a(query, null);
             return metaState2;
         } catch (Throwable th2) {
             try {
                 throw th2;
             } catch (Throwable th3) {
-                zr.c.a(query, th2);
+                bs.c.a(query, th2);
                 throw th3;
             }
         }
@@ -705,7 +705,7 @@ public final class TelemetryRingSqliteStore {
         Intrinsics.checkNotNullExpressionValue(rawQuery, "rawQuery(...)");
         try {
             boolean moveToFirst = rawQuery.moveToFirst();
-            zr.c.a(rawQuery, null);
+            bs.c.a(rawQuery, null);
             return moveToFirst;
         } finally {
         }
@@ -730,13 +730,13 @@ public final class TelemetryRingSqliteStore {
         if (!entries.isEmpty()) {
             SQLiteDatabase writableDatabase = this.dbHelper.getWritableDatabase();
             try {
-                Result.a aVar = Result.f31985e;
+                Result.a aVar = Result.f32005e;
                 Intrinsics.checkNotNull(writableDatabase);
                 writableDatabase.beginTransaction();
                 compileStatement = writableDatabase.compileStatement("UPDATE telemetry_ring_slots SET seq=?, channel_mask=?, payload_json=?, payload_size=? WHERE slot_id=?");
                 compileStatement2 = writableDatabase.compileStatement("UPDATE telemetry_ring_slots SET seq=0, channel_mask=0, payload_json=NULL, payload_size=0 WHERE slot_id=?");
             } catch (Throwable th2) {
-                Result.a aVar2 = Result.f31985e;
+                Result.a aVar2 = Result.f32005e;
                 b10 = Result.b(kotlin.c.a(th2));
             }
             try {
@@ -745,13 +745,13 @@ public final class TelemetryRingSqliteStore {
                     Intrinsics.checkNotNull(compileStatement2);
                     appendEntry(compileStatement, compileStatement2, entryPayload);
                 }
-                Unit unit = Unit.f31988a;
-                zr.c.a(compileStatement2, null);
-                zr.c.a(compileStatement, null);
+                Unit unit = Unit.f32008a;
+                bs.c.a(compileStatement2, null);
+                bs.c.a(compileStatement, null);
                 updateMeta(writableDatabase);
                 writableDatabase.setTransactionSuccessful();
                 writableDatabase.endTransaction();
-                b10 = Result.b(Unit.f31988a);
+                b10 = Result.b(Unit.f32008a);
                 Throwable e10 = Result.e(b10);
                 if (e10 == null) {
                     return;
@@ -759,9 +759,9 @@ public final class TelemetryRingSqliteStore {
                 Log.INSTANCE.w(TAG, "TelemetryRing append rolled back; reloading in-memory state", e10);
                 try {
                     loadState();
-                    b11 = Result.b(Unit.f31988a);
+                    b11 = Result.b(Unit.f32008a);
                 } catch (Throwable th3) {
-                    Result.a aVar3 = Result.f31985e;
+                    Result.a aVar3 = Result.f32005e;
                     b11 = Result.b(kotlin.c.a(th3));
                 }
                 Throwable e11 = Result.e(b11);
@@ -773,7 +773,7 @@ public final class TelemetryRingSqliteStore {
                 try {
                     throw th4;
                 } catch (Throwable th5) {
-                    zr.c.a(compileStatement2, th4);
+                    bs.c.a(compileStatement2, th4);
                     throw th5;
                 }
             }
@@ -785,7 +785,7 @@ public final class TelemetryRingSqliteStore {
         Object b11;
         SQLiteDatabase writableDatabase = this.dbHelper.getWritableDatabase();
         try {
-            Result.a aVar = Result.f31985e;
+            Result.a aVar = Result.f32005e;
             Intrinsics.checkNotNull(writableDatabase);
             writableDatabase.beginTransaction();
             writableDatabase.execSQL("UPDATE telemetry_ring_slots SET seq=0, channel_mask=0, payload_json=NULL, payload_size=0");
@@ -797,12 +797,12 @@ public final class TelemetryRingSqliteStore {
             kotlin.collections.i.y(this.slotSeq, 0L, 0, 0, 6, null);
             kotlin.collections.i.x(this.slotSize, 0, 0, 0, 6, null);
             updateMeta(writableDatabase);
-            Unit unit = Unit.f31988a;
+            Unit unit = Unit.f32008a;
             writableDatabase.setTransactionSuccessful();
             writableDatabase.endTransaction();
-            b10 = Result.b(Unit.f31988a);
+            b10 = Result.b(Unit.f32008a);
         } catch (Throwable th2) {
-            Result.a aVar2 = Result.f31985e;
+            Result.a aVar2 = Result.f32005e;
             b10 = Result.b(kotlin.c.a(th2));
         }
         Throwable e10 = Result.e(b10);
@@ -810,9 +810,9 @@ public final class TelemetryRingSqliteStore {
             Log.INSTANCE.w(TAG, "TelemetryRing clear failed; reloading in-memory state", e10);
             try {
                 loadState();
-                b11 = Result.b(Unit.f31988a);
+                b11 = Result.b(Unit.f32008a);
             } catch (Throwable th3) {
-                Result.a aVar3 = Result.f31985e;
+                Result.a aVar3 = Result.f32005e;
                 b11 = Result.b(kotlin.c.a(th3));
             }
             Throwable e11 = Result.e(b11);
@@ -907,8 +907,8 @@ public final class TelemetryRingSqliteStore {
             arrayList = arrayList2;
             j12 = j16;
             j13 = j15;
-            Unit unit = Unit.f31988a;
-            zr.c.a(query, null);
+            Unit unit = Unit.f32008a;
+            bs.c.a(query, null);
             if (arrayList.isEmpty()) {
                 List l11 = CollectionsKt.l();
                 if (effectiveAckedEndOffset != null) {

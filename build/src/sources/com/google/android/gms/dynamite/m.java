@@ -7,10 +7,10 @@ import com.google.android.gms.dynamite.DynamiteModule;
 public final class m implements DynamiteModule.b.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f13883a;
+    private final int f13846a;
 
     public m(int i10, int i11) {
-        this.f13883a = i10;
+        this.f13846a = i10;
     }
 
     @Override // com.google.android.gms.dynamite.DynamiteModule.b.a
@@ -20,6 +20,6 @@ public final class m implements DynamiteModule.b.a {
 
     @Override // com.google.android.gms.dynamite.DynamiteModule.b.a
     public final int b(Context context, String str) {
-        return this.f13883a;
+        return this.f13846a;
     }
 }

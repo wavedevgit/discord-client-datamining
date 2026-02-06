@@ -37,7 +37,7 @@ public interface l1 extends Closeable {
         public abstract l1 b();
     }
 
-    void M(float[] fArr, float[] fArr2, boolean z10);
+    void Q(float[] fArr, float[] fArr2, boolean z10);
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     void close();
@@ -46,7 +46,7 @@ public interface l1 extends Closeable {
 
     Size getSize();
 
-    void i1(float[] fArr, float[] fArr2);
+    void h1(float[] fArr, float[] fArr2);
 
-    Surface j1(Executor executor, Consumer consumer);
+    Surface i1(Executor executor, Consumer consumer);
 }

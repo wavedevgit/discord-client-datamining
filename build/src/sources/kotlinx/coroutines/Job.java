@@ -6,12 +6,12 @@ import kotlin.coroutines.CoroutineContext;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.functions.Function2;
 import kotlin.sequences.Sequence;
-import ms.n0;
+import os.n0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public interface Job extends CoroutineContext.Element {
 
     /* renamed from: h  reason: collision with root package name */
-    public static final b f34997h = b.f34998d;
+    public static final b f35017h = b.f35018d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -20,7 +20,7 @@ public interface Job extends CoroutineContext.Element {
                 if ((i10 & 1) != 0) {
                     cancellationException = null;
                 }
-                job.h(cancellationException);
+                job.k(cancellationException);
                 return;
             }
             throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: cancel");
@@ -47,31 +47,31 @@ public interface Job extends CoroutineContext.Element {
     public static final class b implements CoroutineContext.b {
 
         /* renamed from: d  reason: collision with root package name */
-        static final /* synthetic */ b f34998d = new b();
+        static final /* synthetic */ b f35018d = new b();
 
         private b() {
         }
     }
 
-    n0 C0(Function1 function1);
+    CancellationException C();
 
-    n0 L(boolean z10, boolean z11, Function1 function1);
+    os.n E0(os.o oVar);
 
-    CancellationException N();
-
-    Object Y0(Continuation continuation);
-
-    ms.n Z0(ms.o oVar);
+    n0 P(Function1 function1);
 
     boolean a();
 
-    Sequence getChildren();
+    Object d1(Continuation continuation);
 
-    void h(CancellationException cancellationException);
+    Sequence getChildren();
 
     boolean isCancelled();
 
     boolean isCompleted();
 
+    void k(CancellationException cancellationException);
+
     boolean start();
+
+    n0 z(boolean z10, boolean z11, Function1 function1);
 }

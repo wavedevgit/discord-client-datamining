@@ -5,13 +5,13 @@ import kotlin.jvm.internal.Intrinsics;
 public final class d extends e {
 
     /* renamed from: o  reason: collision with root package name */
-    private final String f25629o;
+    private final String f25757o;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public d(String type, CharSequence charSequence) {
         super(type, charSequence);
         Intrinsics.checkNotNullParameter(type, "type");
-        this.f25629o = type;
+        this.f25757o = type;
         if (a().length() > 0) {
             return;
         }
@@ -19,6 +19,6 @@ public final class d extends e {
     }
 
     public String a() {
-        return this.f25629o;
+        return this.f25757o;
     }
 }

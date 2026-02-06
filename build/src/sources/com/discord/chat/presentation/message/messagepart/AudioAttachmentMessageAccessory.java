@@ -29,7 +29,7 @@ public final class AudioAttachmentMessageAccessory extends MessageAttachmentAcce
     }
 
     /* renamed from: copy-adMySAk$default  reason: not valid java name */
-    public static /* synthetic */ AudioAttachmentMessageAccessory m545copyadMySAk$default(AudioAttachmentMessageAccessory audioAttachmentMessageAccessory, long j10, String str, Attachment attachment, int i10, Float f10, UserId userId, Integer num, boolean z10, int i11, Object obj) {
+    public static /* synthetic */ AudioAttachmentMessageAccessory m543copyadMySAk$default(AudioAttachmentMessageAccessory audioAttachmentMessageAccessory, long j10, String str, Attachment attachment, int i10, Float f10, UserId userId, Integer num, boolean z10, int i11, Object obj) {
         if ((i11 & 1) != 0) {
             j10 = audioAttachmentMessageAccessory.channelId;
         }
@@ -45,17 +45,17 @@ public final class AudioAttachmentMessageAccessory extends MessageAttachmentAcce
         if ((i11 & 8) != 0) {
             i10 = audioAttachmentMessageAccessory.attachmentIndex;
         }
-        return audioAttachmentMessageAccessory.m549copyadMySAk(j11, str2, attachment2, i10, (i11 & 16) != 0 ? audioAttachmentMessageAccessory.attachmentsOpacity : f10, (i11 & 32) != 0 ? audioAttachmentMessageAccessory.authorId : userId, (i11 & 64) != 0 ? audioAttachmentMessageAccessory.color : num, (i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0 ? audioAttachmentMessageAccessory.isVoiceMessage : z10);
+        return audioAttachmentMessageAccessory.m547copyadMySAk(j11, str2, attachment2, i10, (i11 & 16) != 0 ? audioAttachmentMessageAccessory.attachmentsOpacity : f10, (i11 & 32) != 0 ? audioAttachmentMessageAccessory.authorId : userId, (i11 & 64) != 0 ? audioAttachmentMessageAccessory.color : num, (i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0 ? audioAttachmentMessageAccessory.isVoiceMessage : z10);
     }
 
     /* renamed from: component1-o4g7jtM  reason: not valid java name */
-    public final long m546component1o4g7jtM() {
+    public final long m544component1o4g7jtM() {
         return this.channelId;
     }
 
     @NotNull
     /* renamed from: component2-3Eiw7ao  reason: not valid java name */
-    public final String m547component23Eiw7ao() {
+    public final String m545component23Eiw7ao() {
         return this.messageId;
     }
 
@@ -73,7 +73,7 @@ public final class AudioAttachmentMessageAccessory extends MessageAttachmentAcce
     }
 
     /* renamed from: component6-wUX8bhU  reason: not valid java name */
-    public final UserId m548component6wUX8bhU() {
+    public final UserId m546component6wUX8bhU() {
         return this.authorId;
     }
 
@@ -87,7 +87,7 @@ public final class AudioAttachmentMessageAccessory extends MessageAttachmentAcce
 
     @NotNull
     /* renamed from: copy-adMySAk  reason: not valid java name */
-    public final AudioAttachmentMessageAccessory m549copyadMySAk(long j10, @NotNull String messageId, @NotNull Attachment attachment, int i10, Float f10, UserId userId, Integer num, boolean z10) {
+    public final AudioAttachmentMessageAccessory m547copyadMySAk(long j10, @NotNull String messageId, @NotNull Attachment attachment, int i10, Float f10, UserId userId, Integer num, boolean z10) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(attachment, "attachment");
         return new AudioAttachmentMessageAccessory(j10, messageId, attachment, i10, f10, userId, num, z10, null);
@@ -99,7 +99,7 @@ public final class AudioAttachmentMessageAccessory extends MessageAttachmentAcce
         }
         if (obj instanceof AudioAttachmentMessageAccessory) {
             AudioAttachmentMessageAccessory audioAttachmentMessageAccessory = (AudioAttachmentMessageAccessory) obj;
-            return ChannelId.m1063equalsimpl0(this.channelId, audioAttachmentMessageAccessory.channelId) && MessageId.m1089equalsimpl0(this.messageId, audioAttachmentMessageAccessory.messageId) && Intrinsics.areEqual(this.attachment, audioAttachmentMessageAccessory.attachment) && this.attachmentIndex == audioAttachmentMessageAccessory.attachmentIndex && Intrinsics.areEqual((Object) this.attachmentsOpacity, (Object) audioAttachmentMessageAccessory.attachmentsOpacity) && Intrinsics.areEqual(this.authorId, audioAttachmentMessageAccessory.authorId) && Intrinsics.areEqual(this.color, audioAttachmentMessageAccessory.color) && this.isVoiceMessage == audioAttachmentMessageAccessory.isVoiceMessage;
+            return ChannelId.m1061equalsimpl0(this.channelId, audioAttachmentMessageAccessory.channelId) && MessageId.m1087equalsimpl0(this.messageId, audioAttachmentMessageAccessory.messageId) && Intrinsics.areEqual(this.attachment, audioAttachmentMessageAccessory.attachment) && this.attachmentIndex == audioAttachmentMessageAccessory.attachmentIndex && Intrinsics.areEqual((Object) this.attachmentsOpacity, (Object) audioAttachmentMessageAccessory.attachmentsOpacity) && Intrinsics.areEqual(this.authorId, audioAttachmentMessageAccessory.authorId) && Intrinsics.areEqual(this.color, audioAttachmentMessageAccessory.color) && this.isVoiceMessage == audioAttachmentMessageAccessory.isVoiceMessage;
         }
         return false;
     }
@@ -121,12 +121,12 @@ public final class AudioAttachmentMessageAccessory extends MessageAttachmentAcce
     }
 
     /* renamed from: getAuthorId-wUX8bhU  reason: not valid java name */
-    public final UserId m550getAuthorIdwUX8bhU() {
+    public final UserId m548getAuthorIdwUX8bhU() {
         return this.authorId;
     }
 
     /* renamed from: getChannelId-o4g7jtM  reason: not valid java name */
-    public final long m551getChannelIdo4g7jtM() {
+    public final long m549getChannelIdo4g7jtM() {
         return this.channelId;
     }
 
@@ -137,18 +137,18 @@ public final class AudioAttachmentMessageAccessory extends MessageAttachmentAcce
     @Override // com.discord.chat.presentation.message.messagepart.MessageAttachmentAccessory, com.discord.chat.presentation.message.messagepart.MessageAccessory
     @NotNull
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo538getMessageId3Eiw7ao() {
+    public String mo536getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        int m1064hashCodeimpl = ((((((ChannelId.m1064hashCodeimpl(this.channelId) * 31) + MessageId.m1090hashCodeimpl(this.messageId)) * 31) + this.attachment.hashCode()) * 31) + Integer.hashCode(this.attachmentIndex)) * 31;
+        int m1062hashCodeimpl = ((((((ChannelId.m1062hashCodeimpl(this.channelId) * 31) + MessageId.m1088hashCodeimpl(this.messageId)) * 31) + this.attachment.hashCode()) * 31) + Integer.hashCode(this.attachmentIndex)) * 31;
         Float f10 = this.attachmentsOpacity;
-        int hashCode = (m1064hashCodeimpl + (f10 == null ? 0 : f10.hashCode())) * 31;
+        int hashCode = (m1062hashCodeimpl + (f10 == null ? 0 : f10.hashCode())) * 31;
         UserId userId = this.authorId;
-        int m1142hashCodeimpl = (hashCode + (userId == null ? 0 : UserId.m1142hashCodeimpl(userId.m1146unboximpl()))) * 31;
+        int m1140hashCodeimpl = (hashCode + (userId == null ? 0 : UserId.m1140hashCodeimpl(userId.m1144unboximpl()))) * 31;
         Integer num = this.color;
-        return ((m1142hashCodeimpl + (num != null ? num.hashCode() : 0)) * 31) + Boolean.hashCode(this.isVoiceMessage);
+        return ((m1140hashCodeimpl + (num != null ? num.hashCode() : 0)) * 31) + Boolean.hashCode(this.isVoiceMessage);
     }
 
     public final boolean isVoiceMessage() {
@@ -157,15 +157,15 @@ public final class AudioAttachmentMessageAccessory extends MessageAttachmentAcce
 
     @NotNull
     public String toString() {
-        String m1066toStringimpl = ChannelId.m1066toStringimpl(this.channelId);
-        String m1092toStringimpl = MessageId.m1092toStringimpl(this.messageId);
+        String m1064toStringimpl = ChannelId.m1064toStringimpl(this.channelId);
+        String m1090toStringimpl = MessageId.m1090toStringimpl(this.messageId);
         Attachment attachment = this.attachment;
         int i10 = this.attachmentIndex;
         Float f10 = this.attachmentsOpacity;
         UserId userId = this.authorId;
         Integer num = this.color;
         boolean z10 = this.isVoiceMessage;
-        return "AudioAttachmentMessageAccessory(channelId=" + m1066toStringimpl + ", messageId=" + m1092toStringimpl + ", attachment=" + attachment + ", attachmentIndex=" + i10 + ", attachmentsOpacity=" + f10 + ", authorId=" + userId + ", color=" + num + ", isVoiceMessage=" + z10 + ")";
+        return "AudioAttachmentMessageAccessory(channelId=" + m1064toStringimpl + ", messageId=" + m1090toStringimpl + ", attachment=" + attachment + ", attachmentIndex=" + i10 + ", attachmentsOpacity=" + f10 + ", authorId=" + userId + ", color=" + num + ", isVoiceMessage=" + z10 + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

@@ -6,52 +6,52 @@ import com.google.android.exoplayer2.Format;
 import java.util.ArrayList;
 import java.util.Arrays;
 import lc.l0;
-import mi.s;
 import ne.h0;
+import ni.s;
 import tc.e0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 final class j extends i {
 
     /* renamed from: n  reason: collision with root package name */
-    private a f7549n;
+    private a f7394n;
 
     /* renamed from: o  reason: collision with root package name */
-    private int f7550o;
+    private int f7395o;
 
     /* renamed from: p  reason: collision with root package name */
-    private boolean f7551p;
+    private boolean f7396p;
 
     /* renamed from: q  reason: collision with root package name */
-    private e0.c f7552q;
+    private e0.c f7397q;
 
     /* renamed from: r  reason: collision with root package name */
-    private e0.a f7553r;
+    private e0.a f7398r;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public final e0.c f7554a;
+        public final e0.c f7399a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final e0.a f7555b;
+        public final e0.a f7400b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final byte[] f7556c;
+        public final byte[] f7401c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final e0.b[] f7557d;
+        public final e0.b[] f7402d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final int f7558e;
+        public final int f7403e;
 
         public a(e0.c cVar, e0.a aVar, byte[] bArr, e0.b[] bVarArr, int i10) {
-            this.f7554a = cVar;
-            this.f7555b = aVar;
-            this.f7556c = bArr;
-            this.f7557d = bVarArr;
-            this.f7558e = i10;
+            this.f7399a = cVar;
+            this.f7400b = aVar;
+            this.f7401c = bArr;
+            this.f7402d = bVarArr;
+            this.f7403e = i10;
         }
     }
 
@@ -69,10 +69,10 @@ final class j extends i {
     }
 
     private static int o(byte b10, a aVar) {
-        if (!aVar.f7557d[p(b10, aVar.f7558e, 1)].f50540a) {
-            return aVar.f7554a.f50550g;
+        if (!aVar.f7402d[p(b10, aVar.f7403e, 1)].f50516a) {
+            return aVar.f7399a.f50526g;
         }
-        return aVar.f7554a.f50551h;
+        return aVar.f7399a.f50527h;
     }
 
     static int p(byte b10, int i10, int i11) {
@@ -98,12 +98,12 @@ final class j extends i {
         } else {
             z10 = false;
         }
-        this.f7551p = z10;
-        e0.c cVar = this.f7552q;
+        this.f7396p = z10;
+        e0.c cVar = this.f7397q;
         if (cVar != null) {
-            i10 = cVar.f50550g;
+            i10 = cVar.f50526g;
         }
-        this.f7550o = i10;
+        this.f7395o = i10;
     }
 
     @Override // cd.i
@@ -112,33 +112,33 @@ final class j extends i {
         if ((h0Var.e()[0] & 1) == 1) {
             return -1L;
         }
-        int o10 = o(h0Var.e()[0], (a) ne.a.i(this.f7549n));
-        if (this.f7551p) {
-            i10 = (this.f7550o + o10) / 4;
+        int o10 = o(h0Var.e()[0], (a) ne.a.i(this.f7394n));
+        if (this.f7396p) {
+            i10 = (this.f7395o + o10) / 4;
         }
         long j10 = i10;
         n(h0Var, j10);
-        this.f7551p = true;
-        this.f7550o = o10;
+        this.f7396p = true;
+        this.f7395o = o10;
         return j10;
     }
 
     @Override // cd.i
     protected boolean h(h0 h0Var, long j10, i.b bVar) {
-        if (this.f7549n != null) {
-            ne.a.e(bVar.f7547a);
+        if (this.f7394n != null) {
+            ne.a.e(bVar.f7392a);
             return false;
         }
         a q10 = q(h0Var);
-        this.f7549n = q10;
+        this.f7394n = q10;
         if (q10 == null) {
             return true;
         }
-        e0.c cVar = q10.f7554a;
+        e0.c cVar = q10.f7399a;
         ArrayList arrayList = new ArrayList();
-        arrayList.add(cVar.f50553j);
-        arrayList.add(q10.f7556c);
-        bVar.f7547a = new Format.b().g0("audio/vorbis").I(cVar.f50548e).b0(cVar.f50547d).J(cVar.f50545b).h0(cVar.f50546c).V(arrayList).Z(e0.c(s.o(q10.f7555b.f50538b))).G();
+        arrayList.add(cVar.f50529j);
+        arrayList.add(q10.f7401c);
+        bVar.f7392a = new Format.b().g0("audio/vorbis").I(cVar.f50524e).b0(cVar.f50523d).J(cVar.f50521b).h0(cVar.f50522c).V(arrayList).Z(e0.c(s.p(q10.f7400b.f50514b))).G();
         return true;
     }
 
@@ -147,28 +147,28 @@ final class j extends i {
     public void l(boolean z10) {
         super.l(z10);
         if (z10) {
-            this.f7549n = null;
-            this.f7552q = null;
-            this.f7553r = null;
+            this.f7394n = null;
+            this.f7397q = null;
+            this.f7398r = null;
         }
-        this.f7550o = 0;
-        this.f7551p = false;
+        this.f7395o = 0;
+        this.f7396p = false;
     }
 
     a q(h0 h0Var) {
-        e0.c cVar = this.f7552q;
+        e0.c cVar = this.f7397q;
         if (cVar == null) {
-            this.f7552q = e0.j(h0Var);
+            this.f7397q = e0.j(h0Var);
             return null;
         }
-        e0.a aVar = this.f7553r;
+        e0.a aVar = this.f7398r;
         if (aVar == null) {
-            this.f7553r = e0.h(h0Var);
+            this.f7398r = e0.h(h0Var);
             return null;
         }
         byte[] bArr = new byte[h0Var.g()];
         System.arraycopy(h0Var.e(), 0, bArr, 0, h0Var.g());
-        e0.b[] k10 = e0.k(h0Var, cVar.f50545b);
+        e0.b[] k10 = e0.k(h0Var, cVar.f50521b);
         return new a(cVar, aVar, bArr, k10, e0.a(k10.length - 1));
     }
 }

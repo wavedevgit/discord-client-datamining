@@ -11,84 +11,84 @@ import java.io.OutputStream;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final File f39501a;
+    private final File f38856a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final File f39502b;
+    private final File f38857b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     private static final class a extends OutputStream {
 
         /* renamed from: d  reason: collision with root package name */
-        private final FileOutputStream f39503d;
+        private final FileOutputStream f38858d;
 
         /* renamed from: e  reason: collision with root package name */
-        private boolean f39504e = false;
+        private boolean f38859e = false;
 
         public a(File file) {
-            this.f39503d = new FileOutputStream(file);
+            this.f38858d = new FileOutputStream(file);
         }
 
         @Override // java.io.OutputStream, java.io.Closeable, java.lang.AutoCloseable
         public void close() {
-            if (this.f39504e) {
+            if (this.f38859e) {
                 return;
             }
-            this.f39504e = true;
+            this.f38859e = true;
             flush();
             try {
-                this.f39503d.getFD().sync();
+                this.f38858d.getFD().sync();
             } catch (IOException e10) {
                 y.j("AtomicFile", "Failed to sync file descriptor:", e10);
             }
-            this.f39503d.close();
+            this.f38858d.close();
         }
 
         @Override // java.io.OutputStream, java.io.Flushable
         public void flush() {
-            this.f39503d.flush();
+            this.f38858d.flush();
         }
 
         @Override // java.io.OutputStream
         public void write(int i10) {
-            this.f39503d.write(i10);
+            this.f38858d.write(i10);
         }
 
         @Override // java.io.OutputStream
         public void write(byte[] bArr) {
-            this.f39503d.write(bArr);
+            this.f38858d.write(bArr);
         }
 
         @Override // java.io.OutputStream
         public void write(byte[] bArr, int i10, int i11) {
-            this.f39503d.write(bArr, i10, i11);
+            this.f38858d.write(bArr, i10, i11);
         }
     }
 
     public b(File file) {
-        this.f39501a = file;
-        this.f39502b = new File(file.getPath() + ".bak");
+        this.f38856a = file;
+        this.f38857b = new File(file.getPath() + ".bak");
     }
 
     private void e() {
-        if (this.f39502b.exists()) {
-            this.f39501a.delete();
-            this.f39502b.renameTo(this.f39501a);
+        if (this.f38857b.exists()) {
+            this.f38856a.delete();
+            this.f38857b.renameTo(this.f38856a);
         }
     }
 
     public void a() {
-        this.f39501a.delete();
-        this.f39502b.delete();
+        this.f38856a.delete();
+        this.f38857b.delete();
     }
 
     public void b(OutputStream outputStream) {
         outputStream.close();
-        this.f39502b.delete();
+        this.f38857b.delete();
     }
 
     public boolean c() {
-        if (!this.f39501a.exists() && !this.f39502b.exists()) {
+        if (!this.f38856a.exists() && !this.f38857b.exists()) {
             return false;
         }
         return true;
@@ -96,31 +96,31 @@ public final class b {
 
     public InputStream d() {
         e();
-        return new FileInputStream(this.f39501a);
+        return new FileInputStream(this.f38856a);
     }
 
     public OutputStream f() {
-        if (this.f39501a.exists()) {
-            if (!this.f39502b.exists()) {
-                if (!this.f39501a.renameTo(this.f39502b)) {
-                    y.i("AtomicFile", "Couldn't rename file " + this.f39501a + " to backup file " + this.f39502b);
+        if (this.f38856a.exists()) {
+            if (!this.f38857b.exists()) {
+                if (!this.f38856a.renameTo(this.f38857b)) {
+                    y.i("AtomicFile", "Couldn't rename file " + this.f38856a + " to backup file " + this.f38857b);
                 }
             } else {
-                this.f39501a.delete();
+                this.f38856a.delete();
             }
         }
         try {
-            return new a(this.f39501a);
+            return new a(this.f38856a);
         } catch (FileNotFoundException e10) {
-            File parentFile = this.f39501a.getParentFile();
+            File parentFile = this.f38856a.getParentFile();
             if (parentFile != null && parentFile.mkdirs()) {
                 try {
-                    return new a(this.f39501a);
+                    return new a(this.f38856a);
                 } catch (FileNotFoundException e11) {
-                    throw new IOException("Couldn't create " + this.f39501a, e11);
+                    throw new IOException("Couldn't create " + this.f38856a, e11);
                 }
             }
-            throw new IOException("Couldn't create " + this.f39501a, e10);
+            throw new IOException("Couldn't create " + this.f38856a, e10);
         }
     }
 }

@@ -6,43 +6,43 @@ import com.google.zxing.Result;
 public final class e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final byte[] f8437a;
+    private final byte[] f8336a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final i f8438b;
+    private final i f8337b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final i f8439c;
+    private final i f8338c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final i f8440d;
+    private final i f8339d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final l f8441e;
+    private final l f8340e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final int f8442f;
+    private final int f8341f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final boolean f8443g;
+    private final boolean f8342g;
 
     public e(byte[] bArr, i iVar, i iVar2, i iVar3, l lVar, int i10, boolean z10) {
-        this.f8437a = bArr;
-        this.f8438b = iVar;
-        this.f8439c = iVar2;
-        this.f8440d = iVar3;
-        this.f8441e = lVar;
-        this.f8442f = i10;
-        this.f8443g = z10;
+        this.f8336a = bArr;
+        this.f8337b = iVar;
+        this.f8338c = iVar2;
+        this.f8339d = iVar3;
+        this.f8340e = lVar;
+        this.f8341f = i10;
+        this.f8342g = z10;
     }
 
-    public Result a(fk.j jVar) {
+    public Result a(hk.j jVar) {
         int i10;
         int i11;
-        int a10 = this.f8438b.a();
-        int b10 = this.f8438b.b();
-        int i12 = this.f8442f;
-        byte[] q10 = n.q(this.f8437a, a10, b10, i12);
+        int a10 = this.f8337b.a();
+        int b10 = this.f8337b.b();
+        int i12 = this.f8341f;
+        byte[] q10 = n.q(this.f8336a, a10, b10, i12);
         if (i12 != 90 && i12 != 270) {
             i11 = a10;
             i10 = b10;
@@ -50,11 +50,11 @@ public final class e {
             i10 = a10;
             i11 = b10;
         }
-        l m10 = n.m(i11, i10, this.f8441e, this.f8439c, this.f8440d);
+        l m10 = n.m(i11, i10, this.f8340e, this.f8338c, this.f8339d);
         int h10 = m10.h();
         int d10 = m10.d();
         if (h10 >= 1 && d10 >= 1) {
-            return n.h(jVar, new fk.l(q10, i11, i10, m10.e(), m10.g(), h10, d10, this.f8443g));
+            return n.h(jVar, new hk.l(q10, i11, i10, m10.e(), m10.g(), h10, d10, this.f8342g));
         }
         return null;
     }

@@ -7,16 +7,16 @@ import kotlin.jvm.functions.Function0;
 public class u implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final LazyJavaPackageFragment f32991d;
+    private final LazyJavaPackageFragment f33011d;
 
     public u(LazyJavaPackageFragment lazyJavaPackageFragment) {
-        this.f32991d = lazyJavaPackageFragment;
+        this.f33011d = lazyJavaPackageFragment;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         List g10;
-        g10 = LazyJavaPackageFragment.g(this.f32991d);
+        g10 = LazyJavaPackageFragment.g(this.f33011d);
         return g10;
     }
 }

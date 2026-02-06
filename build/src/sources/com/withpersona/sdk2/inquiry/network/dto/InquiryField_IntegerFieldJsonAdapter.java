@@ -47,35 +47,35 @@ public final class InquiryField_IntegerFieldJsonAdapter extends h {
     @NotNull
     public InquiryField.IntegerField fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         Integer num = null;
         String str = null;
         int i10 = -1;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 num = (Integer) this.nullableIntAdapter.fromJson(reader);
-            } else if (W == 1) {
+            } else if (J == 1) {
                 str = (String) this.stringAdapter.fromJson(reader);
                 if (str == null) {
-                    throw ym.c.x("type", "type", reader);
+                    throw an.c.x("type", "type", reader);
                 }
                 i10 = -3;
             } else {
                 continue;
             }
         }
-        reader.z();
+        reader.D();
         if (i10 == -3) {
             Intrinsics.checkNotNull(str, "null cannot be cast to non-null type kotlin.String");
             return new InquiryField.IntegerField(num, str);
         }
         Constructor<InquiryField.IntegerField> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = InquiryField.IntegerField.class.getDeclaredConstructor(Integer.class, String.class, Integer.TYPE, ym.c.f54853c);
+            constructor = InquiryField.IntegerField.class.getDeclaredConstructor(Integer.class, String.class, Integer.TYPE, an.c.f1164c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -89,11 +89,11 @@ public final class InquiryField_IntegerFieldJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (integerField != null) {
             writer.k();
-            writer.W("value");
+            writer.J("value");
             this.nullableIntAdapter.toJson(writer, integerField.getValue());
-            writer.W("type");
+            writer.J("type");
             this.stringAdapter.toJson(writer, integerField.getType());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

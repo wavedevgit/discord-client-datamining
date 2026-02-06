@@ -14,15 +14,15 @@ import com.discord.primitives.MessageId$$serializer;
 import com.discord.primitives.UserId;
 import com.discord.primitives.UserId$$serializer;
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
-import dt.m;
-import gt.h;
-import gt.n2;
-import gt.p0;
-import gt.u0;
-import gt.v1;
-import gt.z0;
+import ft.m;
 import java.util.List;
 import java.util.Map;
+import jt.h;
+import jt.n2;
+import jt.p0;
+import jt.u0;
+import jt.v1;
+import jt.z0;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.collections.CollectionsKt;
@@ -34,12 +34,12 @@ import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import or.l;
-import or.o;
 import org.jetbrains.annotations.NotNull;
 import org.webrtc.PeerConnection;
-@Metadata(d1 = {"\u0000\u0083\u0001\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0010\t\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0010 \n\u0000\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0011\n\u0002\u0010$\n\u0002\b\u0010\n\u0002\u0018\u0002\n\u0003\bà\u0001\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 ¼\u00022\u00020\u0001:\u0004¼\u0002½\u0002B\u0089\u0006\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\f\u0012\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0002\u0010\u000e\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u000f\u001a\u0004\u0018\u00010\u0010\u0012\n\b\u0002\u0010\u0011\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u0012\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u0013\u001a\u0004\u0018\u00010\u0010\u0012\n\b\u0002\u0010\u0014\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0002\u0010\u0015\u001a\u0004\u0018\u00010\u0003\u0012\u000e\b\u0002\u0010\u0016\u001a\b\u0012\u0004\u0012\u00020\u00100\u0017\u0012\n\b\u0002\u0010\u0018\u001a\u0004\u0018\u00010\u0019\u0012\n\b\u0002\u0010\u001a\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u001b\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u001c\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0002\u0010\u001d\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u001e\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u001f\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010 \u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0002\u0010!\u001a\u0004\u0018\u00010\"\u0012\n\b\u0002\u0010#\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010$\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010%\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010&\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0002\u0010'\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010(\u001a\u0004\u0018\u00010)\u0012\n\b\u0002\u0010*\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010+\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010,\u001a\u0004\u0018\u00010-\u0012\n\b\u0002\u0010.\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010/\u001a\u0004\u0018\u00010\u0007\u0012\b\b\u0002\u00100\u001a\u000201\u0012\b\b\u0002\u00102\u001a\u000201\u0012\n\b\u0002\u00103\u001a\u0004\u0018\u00010\u0019\u0012\n\b\u0002\u00104\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u00105\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u00106\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u00107\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u00108\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u00109\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010:\u001a\u0004\u0018\u000101\u0012\n\b\u0002\u0010;\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010<\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010=\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0002\u0010>\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0002\u0010?\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0002\u0010@\u001a\u0004\u0018\u00010\u0003\u0012\b\b\u0002\u0010A\u001a\u000201\u0012\u0014\b\u0002\u0010B\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00030C\u0012\b\b\u0002\u0010D\u001a\u000201\u0012\n\b\u0002\u0010E\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010F\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010G\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010H\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010I\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010J\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010K\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010L\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0002\u0010M\u001a\u0004\u0018\u00010\u0003¢\u0006\u0004\bN\u0010OBµ\u0005\b\u0010\u0012\u0006\u0010P\u001a\u00020\u0007\u0012\u0006\u0010Q\u001a\u00020\u0007\u0012\u0006\u0010R\u001a\u00020\u0007\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010\b\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\t\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\f\u0012\b\u0010\r\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010\u000e\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u000f\u001a\u0004\u0018\u00010\u0010\u0012\b\u0010\u0011\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0012\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0013\u001a\u0004\u0018\u00010\u0010\u0012\b\u0010\u0014\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010\u0015\u001a\u0004\u0018\u00010\u0003\u0012\u000e\u0010\u0016\u001a\n\u0012\u0004\u0012\u00020\u0010\u0018\u00010\u0017\u0012\b\u0010\u0018\u001a\u0004\u0018\u00010\u0019\u0012\b\u0010\u001a\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u001b\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u001c\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010\u001d\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u001e\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u001f\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010 \u001a\u0004\u0018\u00010\u0007\u0012\b\u0010!\u001a\u0004\u0018\u00010\"\u0012\b\u0010#\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010$\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010%\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010&\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010'\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010(\u001a\u0004\u0018\u00010)\u0012\b\u0010*\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010+\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010,\u001a\u0004\u0018\u00010-\u0012\b\u0010.\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010/\u001a\u0004\u0018\u00010\u0007\u0012\u0006\u00100\u001a\u000201\u0012\u0006\u00102\u001a\u000201\u0012\b\u00103\u001a\u0004\u0018\u00010\u0019\u0012\b\u00104\u001a\u0004\u0018\u00010\u0003\u0012\b\u00105\u001a\u0004\u0018\u00010\u0003\u0012\b\u00106\u001a\u0004\u0018\u00010\u0003\u0012\b\u00107\u001a\u0004\u0018\u00010\u0003\u0012\b\u00108\u001a\u0004\u0018\u00010\u0003\u0012\b\u00109\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010:\u001a\u0004\u0018\u000101\u0012\b\u0010;\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010<\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010=\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010>\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010?\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010@\u001a\u0004\u0018\u00010\u0003\u0012\u0006\u0010A\u001a\u000201\u0012\u0014\u0010B\u001a\u0010\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u0003\u0018\u00010C\u0012\u0006\u0010D\u001a\u000201\u0012\b\u0010E\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010F\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010G\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010H\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010I\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010J\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010K\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010L\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010M\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010S\u001a\u0004\u0018\u00010T¢\u0006\u0004\bN\u0010UJ\n\u0010æ\u0001\u001a\u00020\u0003HÆ\u0003J\u0014\u0010ç\u0001\u001a\u0004\u0018\u00010\u0005HÆ\u0003¢\u0006\u0005\bè\u0001\u0010YJ\u0011\u0010é\u0001\u001a\u0004\u0018\u00010\u0007HÆ\u0003¢\u0006\u0002\u0010_J\f\u0010ê\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u0011\u0010ë\u0001\u001a\u0004\u0018\u00010\u0007HÆ\u0003¢\u0006\u0002\u0010_J\f\u0010ì\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u0011\u0010í\u0001\u001a\u0004\u0018\u00010\fHÆ\u0003¢\u0006\u0002\u0010iJ\u0011\u0010î\u0001\u001a\u0004\u0018\u00010\u0007HÆ\u0003¢\u0006\u0002\u0010_J\f\u0010ï\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u0012\u0010ð\u0001\u001a\u0004\u0018\u00010\u0010HÆ\u0003¢\u0006\u0003\bñ\u0001J\f\u0010ò\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010ó\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u0012\u0010ô\u0001\u001a\u0004\u0018\u00010\u0010HÆ\u0003¢\u0006\u0003\bõ\u0001J\u0011\u0010ö\u0001\u001a\u0004\u0018\u00010\u0007HÆ\u0003¢\u0006\u0002\u0010_J\f\u0010÷\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u0010\u0010ø\u0001\u001a\b\u0012\u0004\u0012\u00020\u00100\u0017HÆ\u0003J\u0012\u0010ù\u0001\u001a\u0004\u0018\u00010\u0019HÆ\u0003¢\u0006\u0003\bú\u0001J\f\u0010û\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010ü\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u0011\u0010ý\u0001\u001a\u0004\u0018\u00010\u0007HÆ\u0003¢\u0006\u0002\u0010_J\f\u0010þ\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010ÿ\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010\u0080\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u0011\u0010\u0081\u0002\u001a\u0004\u0018\u00010\u0007HÆ\u0003¢\u0006\u0002\u0010_J\u0012\u0010\u0082\u0002\u001a\u0004\u0018\u00010\"HÆ\u0003¢\u0006\u0003\b\u0083\u0002J\f\u0010\u0084\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010\u0085\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010\u0086\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u0011\u0010\u0087\u0002\u001a\u0004\u0018\u00010\u0007HÆ\u0003¢\u0006\u0002\u0010_J\f\u0010\u0088\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u0012\u0010\u0089\u0002\u001a\u0004\u0018\u00010)HÆ\u0003¢\u0006\u0003\b\u008a\u0002J\f\u0010\u008b\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010\u008c\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010\u008d\u0002\u001a\u0004\u0018\u00010-HÆ\u0003J\f\u0010\u008e\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u0011\u0010\u008f\u0002\u001a\u0004\u0018\u00010\u0007HÆ\u0003¢\u0006\u0002\u0010_J\n\u0010\u0090\u0002\u001a\u000201HÆ\u0003J\n\u0010\u0091\u0002\u001a\u000201HÆ\u0003J\u0012\u0010\u0092\u0002\u001a\u0004\u0018\u00010\u0019HÆ\u0003¢\u0006\u0003\b\u0093\u0002J\f\u0010\u0094\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010\u0095\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010\u0096\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010\u0097\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010\u0098\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010\u0099\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u0012\u0010\u009a\u0002\u001a\u0004\u0018\u000101HÆ\u0003¢\u0006\u0003\u0010¿\u0001J\f\u0010\u009b\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010\u009c\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u0011\u0010\u009d\u0002\u001a\u0004\u0018\u00010\u0007HÆ\u0003¢\u0006\u0002\u0010_J\u0011\u0010\u009e\u0002\u001a\u0004\u0018\u00010\u0007HÆ\u0003¢\u0006\u0002\u0010_J\u0011\u0010\u009f\u0002\u001a\u0004\u0018\u00010\u0007HÆ\u0003¢\u0006\u0002\u0010_J\f\u0010 \u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\n\u0010¡\u0002\u001a\u000201HÆ\u0003J\u0016\u0010¢\u0002\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00030CHÆ\u0003J\n\u0010£\u0002\u001a\u000201HÆ\u0003J\f\u0010¤\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010¥\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010¦\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010§\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010¨\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010©\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010ª\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u0011\u0010«\u0002\u001a\u0004\u0018\u00010\u0007HÆ\u0003¢\u0006\u0002\u0010_J\f\u0010¬\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u0097\u0006\u0010\u00ad\u0002\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\f2\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010\u000e\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u000f\u001a\u0004\u0018\u00010\u00102\n\b\u0002\u0010\u0011\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0012\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0013\u001a\u0004\u0018\u00010\u00102\n\b\u0002\u0010\u0014\u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010\u0015\u001a\u0004\u0018\u00010\u00032\u000e\b\u0002\u0010\u0016\u001a\b\u0012\u0004\u0012\u00020\u00100\u00172\n\b\u0002\u0010\u0018\u001a\u0004\u0018\u00010\u00192\n\b\u0002\u0010\u001a\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u001b\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u001c\u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010\u001d\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u001e\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u001f\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010 \u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010!\u001a\u0004\u0018\u00010\"2\n\b\u0002\u0010#\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010$\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010%\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010&\u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010'\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010(\u001a\u0004\u0018\u00010)2\n\b\u0002\u0010*\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010+\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010,\u001a\u0004\u0018\u00010-2\n\b\u0002\u0010.\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010/\u001a\u0004\u0018\u00010\u00072\b\b\u0002\u00100\u001a\u0002012\b\b\u0002\u00102\u001a\u0002012\n\b\u0002\u00103\u001a\u0004\u0018\u00010\u00192\n\b\u0002\u00104\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u00105\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u00106\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u00107\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u00108\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u00109\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010:\u001a\u0004\u0018\u0001012\n\b\u0002\u0010;\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010<\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010=\u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010>\u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010?\u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010@\u001a\u0004\u0018\u00010\u00032\b\b\u0002\u0010A\u001a\u0002012\u0014\b\u0002\u0010B\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00030C2\b\b\u0002\u0010D\u001a\u0002012\n\b\u0002\u0010E\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010F\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010G\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010H\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010I\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010J\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010K\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010L\u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010M\u001a\u0004\u0018\u00010\u0003HÆ\u0001¢\u0006\u0006\b®\u0002\u0010¯\u0002J\u0015\u0010°\u0002\u001a\u0002012\t\u0010±\u0002\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\n\u0010²\u0002\u001a\u00020\u0007HÖ\u0001J\n\u0010³\u0002\u001a\u00020\u0003HÖ\u0001J-\u0010´\u0002\u001a\u00030µ\u00022\u0007\u0010¶\u0002\u001a\u00020\u00002\b\u0010·\u0002\u001a\u00030¸\u00022\b\u0010¹\u0002\u001a\u00030º\u0002H\u0001¢\u0006\u0003\b»\u0002R\u001c\u0010\u0002\u001a\u00020\u00038\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\bV\u0010W\u001a\u0004\bX\u0010YR \u0010\u0004\u001a\u0004\u0018\u00010\u00058\u0006X\u0087\u0004¢\u0006\u0010\n\u0002\u0010\\\u0012\u0004\bZ\u0010W\u001a\u0004\b[\u0010YR \u0010\u0006\u001a\u0004\u0018\u00010\u00078\u0006X\u0087\u0004¢\u0006\u0010\n\u0002\u0010`\u0012\u0004\b]\u0010W\u001a\u0004\b^\u0010_R\u001e\u0010\b\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\ba\u0010W\u001a\u0004\bb\u0010YR \u0010\t\u001a\u0004\u0018\u00010\u00078\u0006X\u0087\u0004¢\u0006\u0010\n\u0002\u0010`\u0012\u0004\bc\u0010W\u001a\u0004\bd\u0010_R\u001e\u0010\n\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\be\u0010W\u001a\u0004\bf\u0010YR \u0010\u000b\u001a\u0004\u0018\u00010\f8\u0006X\u0087\u0004¢\u0006\u0010\n\u0002\u0010j\u0012\u0004\bg\u0010W\u001a\u0004\bh\u0010iR \u0010\r\u001a\u0004\u0018\u00010\u00078\u0006X\u0087\u0004¢\u0006\u0010\n\u0002\u0010`\u0012\u0004\bk\u0010W\u001a\u0004\bl\u0010_R\u001e\u0010\u000e\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\bm\u0010W\u001a\u0004\bn\u0010YR\u001e\u0010\u000f\u001a\u0004\u0018\u00010\u00108\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\bo\u0010W\u001a\u0004\bp\u0010qR\u001e\u0010\u0011\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\br\u0010W\u001a\u0004\bs\u0010YR\u001e\u0010\u0012\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\bt\u0010W\u001a\u0004\bu\u0010YR\u001e\u0010\u0013\u001a\u0004\u0018\u00010\u00108\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\bv\u0010W\u001a\u0004\bw\u0010qR \u0010\u0014\u001a\u0004\u0018\u00010\u00078\u0006X\u0087\u0004¢\u0006\u0010\n\u0002\u0010`\u0012\u0004\bx\u0010W\u001a\u0004\by\u0010_R\u001e\u0010\u0015\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\bz\u0010W\u001a\u0004\b{\u0010YR\"\u0010\u0016\u001a\b\u0012\u0004\u0012\u00020\u00100\u00178\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\b|\u0010W\u001a\u0004\b}\u0010~R \u0010\u0018\u001a\u0004\u0018\u00010\u00198\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0004\b\u007f\u0010W\u001a\u0006\b\u0080\u0001\u0010\u0081\u0001R \u0010\u001a\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\b\u0082\u0001\u0010W\u001a\u0005\b\u0083\u0001\u0010YR \u0010\u001b\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\b\u0084\u0001\u0010W\u001a\u0005\b\u0085\u0001\u0010YR\"\u0010\u001c\u001a\u0004\u0018\u00010\u00078\u0006X\u0087\u0004¢\u0006\u0012\n\u0002\u0010`\u0012\u0005\b\u0086\u0001\u0010W\u001a\u0005\b\u0087\u0001\u0010_R \u0010\u001d\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\b\u0088\u0001\u0010W\u001a\u0005\b\u0089\u0001\u0010YR \u0010\u001e\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\b\u008a\u0001\u0010W\u001a\u0005\b\u008b\u0001\u0010YR \u0010\u001f\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\b\u008c\u0001\u0010W\u001a\u0005\b\u008d\u0001\u0010YR\"\u0010 \u001a\u0004\u0018\u00010\u00078\u0006X\u0087\u0004¢\u0006\u0012\n\u0002\u0010`\u0012\u0005\b\u008e\u0001\u0010W\u001a\u0005\b\u008f\u0001\u0010_R!\u0010!\u001a\u0004\u0018\u00010\"8\u0006X\u0087\u0004¢\u0006\u0011\n\u0000\u0012\u0005\b\u0090\u0001\u0010W\u001a\u0006\b\u0091\u0001\u0010\u0092\u0001R \u0010#\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\b\u0093\u0001\u0010W\u001a\u0005\b\u0094\u0001\u0010YR \u0010$\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\b\u0095\u0001\u0010W\u001a\u0005\b\u0096\u0001\u0010YR \u0010%\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\b\u0097\u0001\u0010W\u001a\u0005\b\u0098\u0001\u0010YR\"\u0010&\u001a\u0004\u0018\u00010\u00078\u0006X\u0087\u0004¢\u0006\u0012\n\u0002\u0010`\u0012\u0005\b\u0099\u0001\u0010W\u001a\u0005\b\u009a\u0001\u0010_R \u0010'\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\b\u009b\u0001\u0010W\u001a\u0005\b\u009c\u0001\u0010YR!\u0010(\u001a\u0004\u0018\u00010)8\u0006X\u0087\u0004¢\u0006\u0011\n\u0000\u0012\u0005\b\u009d\u0001\u0010W\u001a\u0006\b\u009e\u0001\u0010\u009f\u0001R \u0010*\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\b \u0001\u0010W\u001a\u0005\b¡\u0001\u0010YR \u0010+\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\b¢\u0001\u0010W\u001a\u0005\b£\u0001\u0010YR!\u0010,\u001a\u0004\u0018\u00010-8\u0006X\u0087\u0004¢\u0006\u0011\n\u0000\u0012\u0005\b¤\u0001\u0010W\u001a\u0006\b¥\u0001\u0010¦\u0001R \u0010.\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\b§\u0001\u0010W\u001a\u0005\b¨\u0001\u0010YR\"\u0010/\u001a\u0004\u0018\u00010\u00078\u0006X\u0087\u0004¢\u0006\u0012\n\u0002\u0010`\u0012\u0005\b©\u0001\u0010W\u001a\u0005\bª\u0001\u0010_R\u001f\u00100\u001a\u0002018\u0006X\u0087\u0004¢\u0006\u0011\n\u0000\u0012\u0005\b«\u0001\u0010W\u001a\u0006\b¬\u0001\u0010\u00ad\u0001R\u001e\u00102\u001a\u0002018\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\b®\u0001\u0010W\u001a\u0005\b2\u0010\u00ad\u0001R!\u00103\u001a\u0004\u0018\u00010\u00198\u0006X\u0087\u0004¢\u0006\u0011\n\u0000\u0012\u0005\b¯\u0001\u0010W\u001a\u0006\b°\u0001\u0010\u0081\u0001R \u00104\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\b±\u0001\u0010W\u001a\u0005\b²\u0001\u0010YR \u00105\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\b³\u0001\u0010W\u001a\u0005\b´\u0001\u0010YR \u00106\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\bµ\u0001\u0010W\u001a\u0005\b¶\u0001\u0010YR \u00107\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\b·\u0001\u0010W\u001a\u0005\b¸\u0001\u0010YR \u00108\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\b¹\u0001\u0010W\u001a\u0005\bº\u0001\u0010YR \u00109\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\b»\u0001\u0010W\u001a\u0005\b¼\u0001\u0010YR$\u0010:\u001a\u0004\u0018\u0001018\u0006X\u0087\u0004¢\u0006\u0014\n\u0003\u0010À\u0001\u0012\u0005\b½\u0001\u0010W\u001a\u0006\b¾\u0001\u0010¿\u0001R \u0010;\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\bÁ\u0001\u0010W\u001a\u0005\bÂ\u0001\u0010YR \u0010<\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\bÃ\u0001\u0010W\u001a\u0005\bÄ\u0001\u0010YR\"\u0010=\u001a\u0004\u0018\u00010\u00078\u0006X\u0087\u0004¢\u0006\u0012\n\u0002\u0010`\u0012\u0005\bÅ\u0001\u0010W\u001a\u0005\bÆ\u0001\u0010_R\"\u0010>\u001a\u0004\u0018\u00010\u00078\u0006X\u0087\u0004¢\u0006\u0012\n\u0002\u0010`\u0012\u0005\bÇ\u0001\u0010W\u001a\u0005\bÈ\u0001\u0010_R\"\u0010?\u001a\u0004\u0018\u00010\u00078\u0006X\u0087\u0004¢\u0006\u0012\n\u0002\u0010`\u0012\u0005\bÉ\u0001\u0010W\u001a\u0005\bÊ\u0001\u0010_R \u0010@\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\bË\u0001\u0010W\u001a\u0005\bÌ\u0001\u0010YR\u001f\u0010A\u001a\u0002018\u0006X\u0087\u0004¢\u0006\u0011\n\u0000\u0012\u0005\bÍ\u0001\u0010W\u001a\u0006\bÎ\u0001\u0010\u00ad\u0001R+\u0010B\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00030C8\u0006X\u0087\u0004¢\u0006\u0011\n\u0000\u0012\u0005\bÏ\u0001\u0010W\u001a\u0006\bÐ\u0001\u0010Ñ\u0001R\u001f\u0010D\u001a\u0002018\u0006X\u0087\u0004¢\u0006\u0011\n\u0000\u0012\u0005\bÒ\u0001\u0010W\u001a\u0006\bÓ\u0001\u0010\u00ad\u0001R \u0010E\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\bÔ\u0001\u0010W\u001a\u0005\bÕ\u0001\u0010YR \u0010F\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\bÖ\u0001\u0010W\u001a\u0005\b×\u0001\u0010YR \u0010G\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\bØ\u0001\u0010W\u001a\u0005\bÙ\u0001\u0010YR \u0010H\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\bÚ\u0001\u0010W\u001a\u0005\bÛ\u0001\u0010YR \u0010I\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\bÜ\u0001\u0010W\u001a\u0005\bÝ\u0001\u0010YR \u0010J\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\bÞ\u0001\u0010W\u001a\u0005\bß\u0001\u0010YR \u0010K\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\bà\u0001\u0010W\u001a\u0005\bá\u0001\u0010YR\"\u0010L\u001a\u0004\u0018\u00010\u00078\u0006X\u0087\u0004¢\u0006\u0012\n\u0002\u0010`\u0012\u0005\bâ\u0001\u0010W\u001a\u0005\bã\u0001\u0010_R \u0010M\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\bä\u0001\u0010W\u001a\u0005\bå\u0001\u0010Y¨\u0006¾\u0002"}, d2 = {"Lcom/discord/notifications/api/NotificationData;", "", "type", "", "messageId", "Lcom/discord/primitives/MessageId;", "messageActivityType", "", "messageApplicationName", "messageType", "messageContent", "messageFlags", "", "channelType", NotificationRenderer.CHANNEL_NAME, "channelId", "Lcom/discord/primitives/ChannelId;", "channelIcon", "parentName", "parentId", "messageReferenceType", "channelRtcRegion", "ackChannelIds", "", "userId", "Lcom/discord/primitives/UserId;", "userUsername", "userGlobalName", "userDiscriminator", "userAvatar", "userGuildAvatar", "platformUserUsername", "relationshipType", "guildId", "Lcom/discord/primitives/GuildId;", "guildName", "guildIcon", "activityInstanceId", "activityType", "activityName", "applicationId", "Lcom/discord/primitives/ApplicationId;", "applicationName", "applicationIcon", "message", "Lcom/discord/notifications/api/NotificationMessage;", "stageInstanceTopic", "guildScheduledEventEntityType", "canReply", "", "isFromCurrentUser", "receivingUserId", "title", "subtitle", "iconUrl", "notificationChannel", "trackingType", "deeplink", "expandSubtitle", "imageAttachmentUrl", "ergoImageAttachmentUrl", "attachmentTextVariant", "imageAttachmentCount", "videoAttachmentCount", "timeReceived", "silent", "userInfo", "", "appDm", "notifTypeId", "notifInstanceId", "joinId", "mentionType", "appState", "inviteGuildName", "inviteChannelName", "inviteTitleVariant", "pollQuestion", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/Long;Ljava/lang/Integer;Ljava/lang/String;Lcom/discord/primitives/ChannelId;Ljava/lang/String;Ljava/lang/String;Lcom/discord/primitives/ChannelId;Ljava/lang/Integer;Ljava/lang/String;Ljava/util/List;Lcom/discord/primitives/UserId;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Lcom/discord/primitives/GuildId;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Lcom/discord/primitives/ApplicationId;Ljava/lang/String;Ljava/lang/String;Lcom/discord/notifications/api/NotificationMessage;Ljava/lang/String;Ljava/lang/Integer;ZZLcom/discord/primitives/UserId;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;ZLjava/util/Map;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "seen0", "seen1", "seen2", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(IIILjava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/Long;Ljava/lang/Integer;Ljava/lang/String;Lcom/discord/primitives/ChannelId;Ljava/lang/String;Ljava/lang/String;Lcom/discord/primitives/ChannelId;Ljava/lang/Integer;Ljava/lang/String;Ljava/util/List;Lcom/discord/primitives/UserId;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Lcom/discord/primitives/GuildId;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Lcom/discord/primitives/ApplicationId;Ljava/lang/String;Ljava/lang/String;Lcom/discord/notifications/api/NotificationMessage;Ljava/lang/String;Ljava/lang/Integer;ZZLcom/discord/primitives/UserId;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;ZLjava/util/Map;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "getType$annotations", "()V", "getType", "()Ljava/lang/String;", "getMessageId-N_6c4I0$annotations", "getMessageId-N_6c4I0", "Ljava/lang/String;", "getMessageActivityType$annotations", "getMessageActivityType", "()Ljava/lang/Integer;", "Ljava/lang/Integer;", "getMessageApplicationName$annotations", "getMessageApplicationName", "getMessageType$annotations", "getMessageType", "getMessageContent$annotations", "getMessageContent", "getMessageFlags$annotations", "getMessageFlags", "()Ljava/lang/Long;", "Ljava/lang/Long;", "getChannelType$annotations", "getChannelType", "getChannelName$annotations", "getChannelName", "getChannelId-qMVnFVQ$annotations", "getChannelId-qMVnFVQ", "()Lcom/discord/primitives/ChannelId;", "getChannelIcon$annotations", "getChannelIcon", "getParentName$annotations", "getParentName", "getParentId-qMVnFVQ$annotations", "getParentId-qMVnFVQ", "getMessageReferenceType$annotations", "getMessageReferenceType", "getChannelRtcRegion$annotations", "getChannelRtcRegion", "getAckChannelIds$annotations", "getAckChannelIds", "()Ljava/util/List;", "getUserId-wUX8bhU$annotations", "getUserId-wUX8bhU", "()Lcom/discord/primitives/UserId;", "getUserUsername$annotations", "getUserUsername", "getUserGlobalName$annotations", "getUserGlobalName", "getUserDiscriminator$annotations", "getUserDiscriminator", "getUserAvatar$annotations", "getUserAvatar", "getUserGuildAvatar$annotations", "getUserGuildAvatar", "getPlatformUserUsername$annotations", "getPlatformUserUsername", "getRelationshipType$annotations", "getRelationshipType", "getGuildId-qOKuAAo$annotations", "getGuildId-qOKuAAo", "()Lcom/discord/primitives/GuildId;", "getGuildName$annotations", "getGuildName", "getGuildIcon$annotations", "getGuildIcon", "getActivityInstanceId$annotations", "getActivityInstanceId", "getActivityType$annotations", "getActivityType", "getActivityName$annotations", "getActivityName", "getApplicationId-UtIrSio$annotations", "getApplicationId-UtIrSio", "()Lcom/discord/primitives/ApplicationId;", "getApplicationName$annotations", "getApplicationName", "getApplicationIcon$annotations", "getApplicationIcon", "getMessage$annotations", "getMessage", "()Lcom/discord/notifications/api/NotificationMessage;", "getStageInstanceTopic$annotations", "getStageInstanceTopic", "getGuildScheduledEventEntityType$annotations", "getGuildScheduledEventEntityType", "getCanReply$annotations", "getCanReply", "()Z", "isFromCurrentUser$annotations", "getReceivingUserId-wUX8bhU$annotations", "getReceivingUserId-wUX8bhU", "getTitle$annotations", "getTitle", "getSubtitle$annotations", "getSubtitle", "getIconUrl$annotations", "getIconUrl", "getNotificationChannel$annotations", "getNotificationChannel", "getTrackingType$annotations", "getTrackingType", "getDeeplink$annotations", "getDeeplink", "getExpandSubtitle$annotations", "getExpandSubtitle", "()Ljava/lang/Boolean;", "Ljava/lang/Boolean;", "getImageAttachmentUrl$annotations", "getImageAttachmentUrl", "getErgoImageAttachmentUrl$annotations", "getErgoImageAttachmentUrl", "getAttachmentTextVariant$annotations", "getAttachmentTextVariant", "getImageAttachmentCount$annotations", "getImageAttachmentCount", "getVideoAttachmentCount$annotations", "getVideoAttachmentCount", "getTimeReceived$annotations", "getTimeReceived", "getSilent$annotations", "getSilent", "getUserInfo$annotations", "getUserInfo", "()Ljava/util/Map;", "getAppDm$annotations", "getAppDm", "getNotifTypeId$annotations", "getNotifTypeId", "getNotifInstanceId$annotations", "getNotifInstanceId", "getJoinId$annotations", "getJoinId", "getMentionType$annotations", "getMentionType", "getAppState$annotations", "getAppState", "getInviteGuildName$annotations", "getInviteGuildName", "getInviteChannelName$annotations", "getInviteChannelName", "getInviteTitleVariant$annotations", "getInviteTitleVariant", "getPollQuestion$annotations", "getPollQuestion", "component1", "component2", "component2-N_6c4I0", "component3", "component4", "component5", "component6", "component7", "component8", "component9", "component10", "component10-qMVnFVQ", "component11", "component12", "component13", "component13-qMVnFVQ", "component14", "component15", "component16", "component17", "component17-wUX8bhU", "component18", "component19", "component20", "component21", "component22", "component23", "component24", "component25", "component25-qOKuAAo", "component26", "component27", "component28", "component29", "component30", "component31", "component31-UtIrSio", "component32", "component33", "component34", "component35", "component36", "component37", "component38", "component39", "component39-wUX8bhU", "component40", "component41", "component42", "component43", "component44", "component45", "component46", "component47", "component48", "component49", "component50", "component51", "component52", "component53", "component54", "component55", "component56", "component57", "component58", "component59", "component60", "component61", "component62", "component63", "component64", "copy", "copy-AIkOYOk", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/Long;Ljava/lang/Integer;Ljava/lang/String;Lcom/discord/primitives/ChannelId;Ljava/lang/String;Ljava/lang/String;Lcom/discord/primitives/ChannelId;Ljava/lang/Integer;Ljava/lang/String;Ljava/util/List;Lcom/discord/primitives/UserId;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Lcom/discord/primitives/GuildId;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Lcom/discord/primitives/ApplicationId;Ljava/lang/String;Ljava/lang/String;Lcom/discord/notifications/api/NotificationMessage;Ljava/lang/String;Ljava/lang/Integer;ZZLcom/discord/primitives/UserId;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;ZLjava/util/Map;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;)Lcom/discord/notifications/api/NotificationData;", "equals", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$notification_api_release", "Companion", "$serializer", "notification_api_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+import qr.l;
+import qr.o;
 @m
+@Metadata(d1 = {"\u0000\u0083\u0001\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0010\t\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0010 \n\u0000\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0011\n\u0002\u0010$\n\u0002\b\u0010\n\u0002\u0018\u0002\n\u0003\bà\u0001\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 ¼\u00022\u00020\u0001:\u0004¼\u0002½\u0002B\u0089\u0006\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\f\u0012\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0002\u0010\u000e\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u000f\u001a\u0004\u0018\u00010\u0010\u0012\n\b\u0002\u0010\u0011\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u0012\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u0013\u001a\u0004\u0018\u00010\u0010\u0012\n\b\u0002\u0010\u0014\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0002\u0010\u0015\u001a\u0004\u0018\u00010\u0003\u0012\u000e\b\u0002\u0010\u0016\u001a\b\u0012\u0004\u0012\u00020\u00100\u0017\u0012\n\b\u0002\u0010\u0018\u001a\u0004\u0018\u00010\u0019\u0012\n\b\u0002\u0010\u001a\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u001b\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u001c\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0002\u0010\u001d\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u001e\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u001f\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010 \u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0002\u0010!\u001a\u0004\u0018\u00010\"\u0012\n\b\u0002\u0010#\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010$\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010%\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010&\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0002\u0010'\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010(\u001a\u0004\u0018\u00010)\u0012\n\b\u0002\u0010*\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010+\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010,\u001a\u0004\u0018\u00010-\u0012\n\b\u0002\u0010.\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010/\u001a\u0004\u0018\u00010\u0007\u0012\b\b\u0002\u00100\u001a\u000201\u0012\b\b\u0002\u00102\u001a\u000201\u0012\n\b\u0002\u00103\u001a\u0004\u0018\u00010\u0019\u0012\n\b\u0002\u00104\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u00105\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u00106\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u00107\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u00108\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u00109\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010:\u001a\u0004\u0018\u000101\u0012\n\b\u0002\u0010;\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010<\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010=\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0002\u0010>\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0002\u0010?\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0002\u0010@\u001a\u0004\u0018\u00010\u0003\u0012\b\b\u0002\u0010A\u001a\u000201\u0012\u0014\b\u0002\u0010B\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00030C\u0012\b\b\u0002\u0010D\u001a\u000201\u0012\n\b\u0002\u0010E\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010F\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010G\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010H\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010I\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010J\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010K\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010L\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0002\u0010M\u001a\u0004\u0018\u00010\u0003¢\u0006\u0004\bN\u0010OBµ\u0005\b\u0010\u0012\u0006\u0010P\u001a\u00020\u0007\u0012\u0006\u0010Q\u001a\u00020\u0007\u0012\u0006\u0010R\u001a\u00020\u0007\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010\b\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\t\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\f\u0012\b\u0010\r\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010\u000e\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u000f\u001a\u0004\u0018\u00010\u0010\u0012\b\u0010\u0011\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0012\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0013\u001a\u0004\u0018\u00010\u0010\u0012\b\u0010\u0014\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010\u0015\u001a\u0004\u0018\u00010\u0003\u0012\u000e\u0010\u0016\u001a\n\u0012\u0004\u0012\u00020\u0010\u0018\u00010\u0017\u0012\b\u0010\u0018\u001a\u0004\u0018\u00010\u0019\u0012\b\u0010\u001a\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u001b\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u001c\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010\u001d\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u001e\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u001f\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010 \u001a\u0004\u0018\u00010\u0007\u0012\b\u0010!\u001a\u0004\u0018\u00010\"\u0012\b\u0010#\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010$\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010%\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010&\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010'\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010(\u001a\u0004\u0018\u00010)\u0012\b\u0010*\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010+\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010,\u001a\u0004\u0018\u00010-\u0012\b\u0010.\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010/\u001a\u0004\u0018\u00010\u0007\u0012\u0006\u00100\u001a\u000201\u0012\u0006\u00102\u001a\u000201\u0012\b\u00103\u001a\u0004\u0018\u00010\u0019\u0012\b\u00104\u001a\u0004\u0018\u00010\u0003\u0012\b\u00105\u001a\u0004\u0018\u00010\u0003\u0012\b\u00106\u001a\u0004\u0018\u00010\u0003\u0012\b\u00107\u001a\u0004\u0018\u00010\u0003\u0012\b\u00108\u001a\u0004\u0018\u00010\u0003\u0012\b\u00109\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010:\u001a\u0004\u0018\u000101\u0012\b\u0010;\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010<\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010=\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010>\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010?\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010@\u001a\u0004\u0018\u00010\u0003\u0012\u0006\u0010A\u001a\u000201\u0012\u0014\u0010B\u001a\u0010\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u0003\u0018\u00010C\u0012\u0006\u0010D\u001a\u000201\u0012\b\u0010E\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010F\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010G\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010H\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010I\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010J\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010K\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010L\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010M\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010S\u001a\u0004\u0018\u00010T¢\u0006\u0004\bN\u0010UJ\n\u0010æ\u0001\u001a\u00020\u0003HÆ\u0003J\u0014\u0010ç\u0001\u001a\u0004\u0018\u00010\u0005HÆ\u0003¢\u0006\u0005\bè\u0001\u0010YJ\u0011\u0010é\u0001\u001a\u0004\u0018\u00010\u0007HÆ\u0003¢\u0006\u0002\u0010_J\f\u0010ê\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u0011\u0010ë\u0001\u001a\u0004\u0018\u00010\u0007HÆ\u0003¢\u0006\u0002\u0010_J\f\u0010ì\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u0011\u0010í\u0001\u001a\u0004\u0018\u00010\fHÆ\u0003¢\u0006\u0002\u0010iJ\u0011\u0010î\u0001\u001a\u0004\u0018\u00010\u0007HÆ\u0003¢\u0006\u0002\u0010_J\f\u0010ï\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u0012\u0010ð\u0001\u001a\u0004\u0018\u00010\u0010HÆ\u0003¢\u0006\u0003\bñ\u0001J\f\u0010ò\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010ó\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u0012\u0010ô\u0001\u001a\u0004\u0018\u00010\u0010HÆ\u0003¢\u0006\u0003\bõ\u0001J\u0011\u0010ö\u0001\u001a\u0004\u0018\u00010\u0007HÆ\u0003¢\u0006\u0002\u0010_J\f\u0010÷\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u0010\u0010ø\u0001\u001a\b\u0012\u0004\u0012\u00020\u00100\u0017HÆ\u0003J\u0012\u0010ù\u0001\u001a\u0004\u0018\u00010\u0019HÆ\u0003¢\u0006\u0003\bú\u0001J\f\u0010û\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010ü\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u0011\u0010ý\u0001\u001a\u0004\u0018\u00010\u0007HÆ\u0003¢\u0006\u0002\u0010_J\f\u0010þ\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010ÿ\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010\u0080\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u0011\u0010\u0081\u0002\u001a\u0004\u0018\u00010\u0007HÆ\u0003¢\u0006\u0002\u0010_J\u0012\u0010\u0082\u0002\u001a\u0004\u0018\u00010\"HÆ\u0003¢\u0006\u0003\b\u0083\u0002J\f\u0010\u0084\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010\u0085\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010\u0086\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u0011\u0010\u0087\u0002\u001a\u0004\u0018\u00010\u0007HÆ\u0003¢\u0006\u0002\u0010_J\f\u0010\u0088\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u0012\u0010\u0089\u0002\u001a\u0004\u0018\u00010)HÆ\u0003¢\u0006\u0003\b\u008a\u0002J\f\u0010\u008b\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010\u008c\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010\u008d\u0002\u001a\u0004\u0018\u00010-HÆ\u0003J\f\u0010\u008e\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u0011\u0010\u008f\u0002\u001a\u0004\u0018\u00010\u0007HÆ\u0003¢\u0006\u0002\u0010_J\n\u0010\u0090\u0002\u001a\u000201HÆ\u0003J\n\u0010\u0091\u0002\u001a\u000201HÆ\u0003J\u0012\u0010\u0092\u0002\u001a\u0004\u0018\u00010\u0019HÆ\u0003¢\u0006\u0003\b\u0093\u0002J\f\u0010\u0094\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010\u0095\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010\u0096\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010\u0097\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010\u0098\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010\u0099\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u0012\u0010\u009a\u0002\u001a\u0004\u0018\u000101HÆ\u0003¢\u0006\u0003\u0010¿\u0001J\f\u0010\u009b\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010\u009c\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u0011\u0010\u009d\u0002\u001a\u0004\u0018\u00010\u0007HÆ\u0003¢\u0006\u0002\u0010_J\u0011\u0010\u009e\u0002\u001a\u0004\u0018\u00010\u0007HÆ\u0003¢\u0006\u0002\u0010_J\u0011\u0010\u009f\u0002\u001a\u0004\u0018\u00010\u0007HÆ\u0003¢\u0006\u0002\u0010_J\f\u0010 \u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\n\u0010¡\u0002\u001a\u000201HÆ\u0003J\u0016\u0010¢\u0002\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00030CHÆ\u0003J\n\u0010£\u0002\u001a\u000201HÆ\u0003J\f\u0010¤\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010¥\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010¦\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010§\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010¨\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010©\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010ª\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u0011\u0010«\u0002\u001a\u0004\u0018\u00010\u0007HÆ\u0003¢\u0006\u0002\u0010_J\f\u0010¬\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u0097\u0006\u0010\u00ad\u0002\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\f2\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010\u000e\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u000f\u001a\u0004\u0018\u00010\u00102\n\b\u0002\u0010\u0011\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0012\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0013\u001a\u0004\u0018\u00010\u00102\n\b\u0002\u0010\u0014\u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010\u0015\u001a\u0004\u0018\u00010\u00032\u000e\b\u0002\u0010\u0016\u001a\b\u0012\u0004\u0012\u00020\u00100\u00172\n\b\u0002\u0010\u0018\u001a\u0004\u0018\u00010\u00192\n\b\u0002\u0010\u001a\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u001b\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u001c\u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010\u001d\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u001e\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u001f\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010 \u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010!\u001a\u0004\u0018\u00010\"2\n\b\u0002\u0010#\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010$\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010%\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010&\u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010'\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010(\u001a\u0004\u0018\u00010)2\n\b\u0002\u0010*\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010+\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010,\u001a\u0004\u0018\u00010-2\n\b\u0002\u0010.\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010/\u001a\u0004\u0018\u00010\u00072\b\b\u0002\u00100\u001a\u0002012\b\b\u0002\u00102\u001a\u0002012\n\b\u0002\u00103\u001a\u0004\u0018\u00010\u00192\n\b\u0002\u00104\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u00105\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u00106\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u00107\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u00108\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u00109\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010:\u001a\u0004\u0018\u0001012\n\b\u0002\u0010;\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010<\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010=\u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010>\u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010?\u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010@\u001a\u0004\u0018\u00010\u00032\b\b\u0002\u0010A\u001a\u0002012\u0014\b\u0002\u0010B\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00030C2\b\b\u0002\u0010D\u001a\u0002012\n\b\u0002\u0010E\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010F\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010G\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010H\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010I\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010J\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010K\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010L\u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010M\u001a\u0004\u0018\u00010\u0003HÆ\u0001¢\u0006\u0006\b®\u0002\u0010¯\u0002J\u0015\u0010°\u0002\u001a\u0002012\t\u0010±\u0002\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\n\u0010²\u0002\u001a\u00020\u0007HÖ\u0001J\n\u0010³\u0002\u001a\u00020\u0003HÖ\u0001J-\u0010´\u0002\u001a\u00030µ\u00022\u0007\u0010¶\u0002\u001a\u00020\u00002\b\u0010·\u0002\u001a\u00030¸\u00022\b\u0010¹\u0002\u001a\u00030º\u0002H\u0001¢\u0006\u0003\b»\u0002R\u001c\u0010\u0002\u001a\u00020\u00038\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\bV\u0010W\u001a\u0004\bX\u0010YR \u0010\u0004\u001a\u0004\u0018\u00010\u00058\u0006X\u0087\u0004¢\u0006\u0010\n\u0002\u0010\\\u0012\u0004\bZ\u0010W\u001a\u0004\b[\u0010YR \u0010\u0006\u001a\u0004\u0018\u00010\u00078\u0006X\u0087\u0004¢\u0006\u0010\n\u0002\u0010`\u0012\u0004\b]\u0010W\u001a\u0004\b^\u0010_R\u001e\u0010\b\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\ba\u0010W\u001a\u0004\bb\u0010YR \u0010\t\u001a\u0004\u0018\u00010\u00078\u0006X\u0087\u0004¢\u0006\u0010\n\u0002\u0010`\u0012\u0004\bc\u0010W\u001a\u0004\bd\u0010_R\u001e\u0010\n\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\be\u0010W\u001a\u0004\bf\u0010YR \u0010\u000b\u001a\u0004\u0018\u00010\f8\u0006X\u0087\u0004¢\u0006\u0010\n\u0002\u0010j\u0012\u0004\bg\u0010W\u001a\u0004\bh\u0010iR \u0010\r\u001a\u0004\u0018\u00010\u00078\u0006X\u0087\u0004¢\u0006\u0010\n\u0002\u0010`\u0012\u0004\bk\u0010W\u001a\u0004\bl\u0010_R\u001e\u0010\u000e\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\bm\u0010W\u001a\u0004\bn\u0010YR\u001e\u0010\u000f\u001a\u0004\u0018\u00010\u00108\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\bo\u0010W\u001a\u0004\bp\u0010qR\u001e\u0010\u0011\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\br\u0010W\u001a\u0004\bs\u0010YR\u001e\u0010\u0012\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\bt\u0010W\u001a\u0004\bu\u0010YR\u001e\u0010\u0013\u001a\u0004\u0018\u00010\u00108\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\bv\u0010W\u001a\u0004\bw\u0010qR \u0010\u0014\u001a\u0004\u0018\u00010\u00078\u0006X\u0087\u0004¢\u0006\u0010\n\u0002\u0010`\u0012\u0004\bx\u0010W\u001a\u0004\by\u0010_R\u001e\u0010\u0015\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\bz\u0010W\u001a\u0004\b{\u0010YR\"\u0010\u0016\u001a\b\u0012\u0004\u0012\u00020\u00100\u00178\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\b|\u0010W\u001a\u0004\b}\u0010~R \u0010\u0018\u001a\u0004\u0018\u00010\u00198\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0004\b\u007f\u0010W\u001a\u0006\b\u0080\u0001\u0010\u0081\u0001R \u0010\u001a\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\b\u0082\u0001\u0010W\u001a\u0005\b\u0083\u0001\u0010YR \u0010\u001b\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\b\u0084\u0001\u0010W\u001a\u0005\b\u0085\u0001\u0010YR\"\u0010\u001c\u001a\u0004\u0018\u00010\u00078\u0006X\u0087\u0004¢\u0006\u0012\n\u0002\u0010`\u0012\u0005\b\u0086\u0001\u0010W\u001a\u0005\b\u0087\u0001\u0010_R \u0010\u001d\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\b\u0088\u0001\u0010W\u001a\u0005\b\u0089\u0001\u0010YR \u0010\u001e\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\b\u008a\u0001\u0010W\u001a\u0005\b\u008b\u0001\u0010YR \u0010\u001f\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\b\u008c\u0001\u0010W\u001a\u0005\b\u008d\u0001\u0010YR\"\u0010 \u001a\u0004\u0018\u00010\u00078\u0006X\u0087\u0004¢\u0006\u0012\n\u0002\u0010`\u0012\u0005\b\u008e\u0001\u0010W\u001a\u0005\b\u008f\u0001\u0010_R!\u0010!\u001a\u0004\u0018\u00010\"8\u0006X\u0087\u0004¢\u0006\u0011\n\u0000\u0012\u0005\b\u0090\u0001\u0010W\u001a\u0006\b\u0091\u0001\u0010\u0092\u0001R \u0010#\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\b\u0093\u0001\u0010W\u001a\u0005\b\u0094\u0001\u0010YR \u0010$\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\b\u0095\u0001\u0010W\u001a\u0005\b\u0096\u0001\u0010YR \u0010%\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\b\u0097\u0001\u0010W\u001a\u0005\b\u0098\u0001\u0010YR\"\u0010&\u001a\u0004\u0018\u00010\u00078\u0006X\u0087\u0004¢\u0006\u0012\n\u0002\u0010`\u0012\u0005\b\u0099\u0001\u0010W\u001a\u0005\b\u009a\u0001\u0010_R \u0010'\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\b\u009b\u0001\u0010W\u001a\u0005\b\u009c\u0001\u0010YR!\u0010(\u001a\u0004\u0018\u00010)8\u0006X\u0087\u0004¢\u0006\u0011\n\u0000\u0012\u0005\b\u009d\u0001\u0010W\u001a\u0006\b\u009e\u0001\u0010\u009f\u0001R \u0010*\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\b \u0001\u0010W\u001a\u0005\b¡\u0001\u0010YR \u0010+\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\b¢\u0001\u0010W\u001a\u0005\b£\u0001\u0010YR!\u0010,\u001a\u0004\u0018\u00010-8\u0006X\u0087\u0004¢\u0006\u0011\n\u0000\u0012\u0005\b¤\u0001\u0010W\u001a\u0006\b¥\u0001\u0010¦\u0001R \u0010.\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\b§\u0001\u0010W\u001a\u0005\b¨\u0001\u0010YR\"\u0010/\u001a\u0004\u0018\u00010\u00078\u0006X\u0087\u0004¢\u0006\u0012\n\u0002\u0010`\u0012\u0005\b©\u0001\u0010W\u001a\u0005\bª\u0001\u0010_R\u001f\u00100\u001a\u0002018\u0006X\u0087\u0004¢\u0006\u0011\n\u0000\u0012\u0005\b«\u0001\u0010W\u001a\u0006\b¬\u0001\u0010\u00ad\u0001R\u001e\u00102\u001a\u0002018\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\b®\u0001\u0010W\u001a\u0005\b2\u0010\u00ad\u0001R!\u00103\u001a\u0004\u0018\u00010\u00198\u0006X\u0087\u0004¢\u0006\u0011\n\u0000\u0012\u0005\b¯\u0001\u0010W\u001a\u0006\b°\u0001\u0010\u0081\u0001R \u00104\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\b±\u0001\u0010W\u001a\u0005\b²\u0001\u0010YR \u00105\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\b³\u0001\u0010W\u001a\u0005\b´\u0001\u0010YR \u00106\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\bµ\u0001\u0010W\u001a\u0005\b¶\u0001\u0010YR \u00107\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\b·\u0001\u0010W\u001a\u0005\b¸\u0001\u0010YR \u00108\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\b¹\u0001\u0010W\u001a\u0005\bº\u0001\u0010YR \u00109\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\b»\u0001\u0010W\u001a\u0005\b¼\u0001\u0010YR$\u0010:\u001a\u0004\u0018\u0001018\u0006X\u0087\u0004¢\u0006\u0014\n\u0003\u0010À\u0001\u0012\u0005\b½\u0001\u0010W\u001a\u0006\b¾\u0001\u0010¿\u0001R \u0010;\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\bÁ\u0001\u0010W\u001a\u0005\bÂ\u0001\u0010YR \u0010<\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\bÃ\u0001\u0010W\u001a\u0005\bÄ\u0001\u0010YR\"\u0010=\u001a\u0004\u0018\u00010\u00078\u0006X\u0087\u0004¢\u0006\u0012\n\u0002\u0010`\u0012\u0005\bÅ\u0001\u0010W\u001a\u0005\bÆ\u0001\u0010_R\"\u0010>\u001a\u0004\u0018\u00010\u00078\u0006X\u0087\u0004¢\u0006\u0012\n\u0002\u0010`\u0012\u0005\bÇ\u0001\u0010W\u001a\u0005\bÈ\u0001\u0010_R\"\u0010?\u001a\u0004\u0018\u00010\u00078\u0006X\u0087\u0004¢\u0006\u0012\n\u0002\u0010`\u0012\u0005\bÉ\u0001\u0010W\u001a\u0005\bÊ\u0001\u0010_R \u0010@\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\bË\u0001\u0010W\u001a\u0005\bÌ\u0001\u0010YR\u001f\u0010A\u001a\u0002018\u0006X\u0087\u0004¢\u0006\u0011\n\u0000\u0012\u0005\bÍ\u0001\u0010W\u001a\u0006\bÎ\u0001\u0010\u00ad\u0001R+\u0010B\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00030C8\u0006X\u0087\u0004¢\u0006\u0011\n\u0000\u0012\u0005\bÏ\u0001\u0010W\u001a\u0006\bÐ\u0001\u0010Ñ\u0001R\u001f\u0010D\u001a\u0002018\u0006X\u0087\u0004¢\u0006\u0011\n\u0000\u0012\u0005\bÒ\u0001\u0010W\u001a\u0006\bÓ\u0001\u0010\u00ad\u0001R \u0010E\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\bÔ\u0001\u0010W\u001a\u0005\bÕ\u0001\u0010YR \u0010F\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\bÖ\u0001\u0010W\u001a\u0005\b×\u0001\u0010YR \u0010G\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\bØ\u0001\u0010W\u001a\u0005\bÙ\u0001\u0010YR \u0010H\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\bÚ\u0001\u0010W\u001a\u0005\bÛ\u0001\u0010YR \u0010I\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\bÜ\u0001\u0010W\u001a\u0005\bÝ\u0001\u0010YR \u0010J\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\bÞ\u0001\u0010W\u001a\u0005\bß\u0001\u0010YR \u0010K\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\bà\u0001\u0010W\u001a\u0005\bá\u0001\u0010YR\"\u0010L\u001a\u0004\u0018\u00010\u00078\u0006X\u0087\u0004¢\u0006\u0012\n\u0002\u0010`\u0012\u0005\bâ\u0001\u0010W\u001a\u0005\bã\u0001\u0010_R \u0010M\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\bä\u0001\u0010W\u001a\u0005\bå\u0001\u0010Y¨\u0006¾\u0002"}, d2 = {"Lcom/discord/notifications/api/NotificationData;", "", "type", "", "messageId", "Lcom/discord/primitives/MessageId;", "messageActivityType", "", "messageApplicationName", "messageType", "messageContent", "messageFlags", "", "channelType", NotificationRenderer.CHANNEL_NAME, "channelId", "Lcom/discord/primitives/ChannelId;", "channelIcon", "parentName", "parentId", "messageReferenceType", "channelRtcRegion", "ackChannelIds", "", "userId", "Lcom/discord/primitives/UserId;", "userUsername", "userGlobalName", "userDiscriminator", "userAvatar", "userGuildAvatar", "platformUserUsername", "relationshipType", "guildId", "Lcom/discord/primitives/GuildId;", "guildName", "guildIcon", "activityInstanceId", "activityType", "activityName", "applicationId", "Lcom/discord/primitives/ApplicationId;", "applicationName", "applicationIcon", "message", "Lcom/discord/notifications/api/NotificationMessage;", "stageInstanceTopic", "guildScheduledEventEntityType", "canReply", "", "isFromCurrentUser", "receivingUserId", "title", "subtitle", "iconUrl", "notificationChannel", "trackingType", "deeplink", "expandSubtitle", "imageAttachmentUrl", "ergoImageAttachmentUrl", "attachmentTextVariant", "imageAttachmentCount", "videoAttachmentCount", "timeReceived", "silent", "userInfo", "", "appDm", "notifTypeId", "notifInstanceId", "joinId", "mentionType", "appState", "inviteGuildName", "inviteChannelName", "inviteTitleVariant", "pollQuestion", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/Long;Ljava/lang/Integer;Ljava/lang/String;Lcom/discord/primitives/ChannelId;Ljava/lang/String;Ljava/lang/String;Lcom/discord/primitives/ChannelId;Ljava/lang/Integer;Ljava/lang/String;Ljava/util/List;Lcom/discord/primitives/UserId;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Lcom/discord/primitives/GuildId;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Lcom/discord/primitives/ApplicationId;Ljava/lang/String;Ljava/lang/String;Lcom/discord/notifications/api/NotificationMessage;Ljava/lang/String;Ljava/lang/Integer;ZZLcom/discord/primitives/UserId;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;ZLjava/util/Map;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "seen0", "seen1", "seen2", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(IIILjava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/Long;Ljava/lang/Integer;Ljava/lang/String;Lcom/discord/primitives/ChannelId;Ljava/lang/String;Ljava/lang/String;Lcom/discord/primitives/ChannelId;Ljava/lang/Integer;Ljava/lang/String;Ljava/util/List;Lcom/discord/primitives/UserId;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Lcom/discord/primitives/GuildId;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Lcom/discord/primitives/ApplicationId;Ljava/lang/String;Ljava/lang/String;Lcom/discord/notifications/api/NotificationMessage;Ljava/lang/String;Ljava/lang/Integer;ZZLcom/discord/primitives/UserId;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;ZLjava/util/Map;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "getType$annotations", "()V", "getType", "()Ljava/lang/String;", "getMessageId-N_6c4I0$annotations", "getMessageId-N_6c4I0", "Ljava/lang/String;", "getMessageActivityType$annotations", "getMessageActivityType", "()Ljava/lang/Integer;", "Ljava/lang/Integer;", "getMessageApplicationName$annotations", "getMessageApplicationName", "getMessageType$annotations", "getMessageType", "getMessageContent$annotations", "getMessageContent", "getMessageFlags$annotations", "getMessageFlags", "()Ljava/lang/Long;", "Ljava/lang/Long;", "getChannelType$annotations", "getChannelType", "getChannelName$annotations", "getChannelName", "getChannelId-qMVnFVQ$annotations", "getChannelId-qMVnFVQ", "()Lcom/discord/primitives/ChannelId;", "getChannelIcon$annotations", "getChannelIcon", "getParentName$annotations", "getParentName", "getParentId-qMVnFVQ$annotations", "getParentId-qMVnFVQ", "getMessageReferenceType$annotations", "getMessageReferenceType", "getChannelRtcRegion$annotations", "getChannelRtcRegion", "getAckChannelIds$annotations", "getAckChannelIds", "()Ljava/util/List;", "getUserId-wUX8bhU$annotations", "getUserId-wUX8bhU", "()Lcom/discord/primitives/UserId;", "getUserUsername$annotations", "getUserUsername", "getUserGlobalName$annotations", "getUserGlobalName", "getUserDiscriminator$annotations", "getUserDiscriminator", "getUserAvatar$annotations", "getUserAvatar", "getUserGuildAvatar$annotations", "getUserGuildAvatar", "getPlatformUserUsername$annotations", "getPlatformUserUsername", "getRelationshipType$annotations", "getRelationshipType", "getGuildId-qOKuAAo$annotations", "getGuildId-qOKuAAo", "()Lcom/discord/primitives/GuildId;", "getGuildName$annotations", "getGuildName", "getGuildIcon$annotations", "getGuildIcon", "getActivityInstanceId$annotations", "getActivityInstanceId", "getActivityType$annotations", "getActivityType", "getActivityName$annotations", "getActivityName", "getApplicationId-UtIrSio$annotations", "getApplicationId-UtIrSio", "()Lcom/discord/primitives/ApplicationId;", "getApplicationName$annotations", "getApplicationName", "getApplicationIcon$annotations", "getApplicationIcon", "getMessage$annotations", "getMessage", "()Lcom/discord/notifications/api/NotificationMessage;", "getStageInstanceTopic$annotations", "getStageInstanceTopic", "getGuildScheduledEventEntityType$annotations", "getGuildScheduledEventEntityType", "getCanReply$annotations", "getCanReply", "()Z", "isFromCurrentUser$annotations", "getReceivingUserId-wUX8bhU$annotations", "getReceivingUserId-wUX8bhU", "getTitle$annotations", "getTitle", "getSubtitle$annotations", "getSubtitle", "getIconUrl$annotations", "getIconUrl", "getNotificationChannel$annotations", "getNotificationChannel", "getTrackingType$annotations", "getTrackingType", "getDeeplink$annotations", "getDeeplink", "getExpandSubtitle$annotations", "getExpandSubtitle", "()Ljava/lang/Boolean;", "Ljava/lang/Boolean;", "getImageAttachmentUrl$annotations", "getImageAttachmentUrl", "getErgoImageAttachmentUrl$annotations", "getErgoImageAttachmentUrl", "getAttachmentTextVariant$annotations", "getAttachmentTextVariant", "getImageAttachmentCount$annotations", "getImageAttachmentCount", "getVideoAttachmentCount$annotations", "getVideoAttachmentCount", "getTimeReceived$annotations", "getTimeReceived", "getSilent$annotations", "getSilent", "getUserInfo$annotations", "getUserInfo", "()Ljava/util/Map;", "getAppDm$annotations", "getAppDm", "getNotifTypeId$annotations", "getNotifTypeId", "getNotifInstanceId$annotations", "getNotifInstanceId", "getJoinId$annotations", "getJoinId", "getMentionType$annotations", "getMentionType", "getAppState$annotations", "getAppState", "getInviteGuildName$annotations", "getInviteGuildName", "getInviteChannelName$annotations", "getInviteChannelName", "getInviteTitleVariant$annotations", "getInviteTitleVariant", "getPollQuestion$annotations", "getPollQuestion", "component1", "component2", "component2-N_6c4I0", "component3", "component4", "component5", "component6", "component7", "component8", "component9", "component10", "component10-qMVnFVQ", "component11", "component12", "component13", "component13-qMVnFVQ", "component14", "component15", "component16", "component17", "component17-wUX8bhU", "component18", "component19", "component20", "component21", "component22", "component23", "component24", "component25", "component25-qOKuAAo", "component26", "component27", "component28", "component29", "component30", "component31", "component31-UtIrSio", "component32", "component33", "component34", "component35", "component36", "component37", "component38", "component39", "component39-wUX8bhU", "component40", "component41", "component42", "component43", "component44", "component45", "component46", "component47", "component48", "component49", "component50", "component51", "component52", "component53", "component54", "component55", "component56", "component57", "component58", "component59", "component60", "component61", "component62", "component63", "component64", "copy", "copy-AIkOYOk", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/Long;Ljava/lang/Integer;Ljava/lang/String;Lcom/discord/primitives/ChannelId;Ljava/lang/String;Ljava/lang/String;Lcom/discord/primitives/ChannelId;Ljava/lang/Integer;Ljava/lang/String;Ljava/util/List;Lcom/discord/primitives/UserId;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Lcom/discord/primitives/GuildId;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Lcom/discord/primitives/ApplicationId;Ljava/lang/String;Ljava/lang/String;Lcom/discord/notifications/api/NotificationMessage;Ljava/lang/String;Ljava/lang/Integer;ZZLcom/discord/primitives/UserId;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;ZLjava/util/Map;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;)Lcom/discord/notifications/api/NotificationData;", "equals", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$notification_api_release", "Companion", "$serializer", "notification_api_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class NotificationData {
     public static final int ACTIVITY_TYPE_PLAYING = 0;
@@ -216,7 +216,7 @@ public final class NotificationData {
     @NotNull
     public static final Companion Companion = new Companion(null);
     @NotNull
-    private static final Lazy[] $childSerializers = {null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, l.b(o.f44232e, new Function0() { // from class: p7.e
+    private static final Lazy[] $childSerializers = {null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, l.b(o.f48044e, new Function0() { // from class: p7.e
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             KSerializer _childSerializers$_anonymous_;
@@ -247,7 +247,7 @@ public final class NotificationData {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_() {
-        n2 n2Var = n2.f25302a;
+        n2 n2Var = n2.f31041a;
         return new u0(n2Var, n2Var);
     }
 
@@ -274,7 +274,7 @@ public final class NotificationData {
     }
 
     /* renamed from: getApplicationId-UtIrSio$annotations  reason: not valid java name */
-    public static /* synthetic */ void m1006getApplicationIdUtIrSio$annotations() {
+    public static /* synthetic */ void m1004getApplicationIdUtIrSio$annotations() {
     }
 
     public static /* synthetic */ void getApplicationName$annotations() {
@@ -291,7 +291,7 @@ public final class NotificationData {
     }
 
     /* renamed from: getChannelId-qMVnFVQ$annotations  reason: not valid java name */
-    public static /* synthetic */ void m1007getChannelIdqMVnFVQ$annotations() {
+    public static /* synthetic */ void m1005getChannelIdqMVnFVQ$annotations() {
     }
 
     public static /* synthetic */ void getChannelName$annotations() {
@@ -316,7 +316,7 @@ public final class NotificationData {
     }
 
     /* renamed from: getGuildId-qOKuAAo$annotations  reason: not valid java name */
-    public static /* synthetic */ void m1008getGuildIdqOKuAAo$annotations() {
+    public static /* synthetic */ void m1006getGuildIdqOKuAAo$annotations() {
     }
 
     public static /* synthetic */ void getGuildName$annotations() {
@@ -366,7 +366,7 @@ public final class NotificationData {
     }
 
     /* renamed from: getMessageId-N_6c4I0$annotations  reason: not valid java name */
-    public static /* synthetic */ void m1009getMessageIdN_6c4I0$annotations() {
+    public static /* synthetic */ void m1007getMessageIdN_6c4I0$annotations() {
     }
 
     public static /* synthetic */ void getMessageReferenceType$annotations() {
@@ -385,7 +385,7 @@ public final class NotificationData {
     }
 
     /* renamed from: getParentId-qMVnFVQ$annotations  reason: not valid java name */
-    public static /* synthetic */ void m1010getParentIdqMVnFVQ$annotations() {
+    public static /* synthetic */ void m1008getParentIdqMVnFVQ$annotations() {
     }
 
     public static /* synthetic */ void getParentName$annotations() {
@@ -398,7 +398,7 @@ public final class NotificationData {
     }
 
     /* renamed from: getReceivingUserId-wUX8bhU$annotations  reason: not valid java name */
-    public static /* synthetic */ void m1011getReceivingUserIdwUX8bhU$annotations() {
+    public static /* synthetic */ void m1009getReceivingUserIdwUX8bhU$annotations() {
     }
 
     public static /* synthetic */ void getRelationshipType$annotations() {
@@ -438,7 +438,7 @@ public final class NotificationData {
     }
 
     /* renamed from: getUserId-wUX8bhU$annotations  reason: not valid java name */
-    public static /* synthetic */ void m1012getUserIdwUX8bhU$annotations() {
+    public static /* synthetic */ void m1010getUserIdwUX8bhU$annotations() {
     }
 
     public static /* synthetic */ void getUserInfo$annotations() {
@@ -456,202 +456,202 @@ public final class NotificationData {
     public static final /* synthetic */ void write$Self$notification_api_release(NotificationData notificationData, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         MessageId messageId;
         Lazy[] lazyArr = $childSerializers;
-        compositeEncoder.x(serialDescriptor, 0, notificationData.type);
-        if (compositeEncoder.z(serialDescriptor, 1) || notificationData.messageId != null) {
+        compositeEncoder.z(serialDescriptor, 0, notificationData.type);
+        if (compositeEncoder.A(serialDescriptor, 1) || notificationData.messageId != null) {
             MessageId$$serializer messageId$$serializer = MessageId$$serializer.INSTANCE;
             String str = notificationData.messageId;
             if (str != null) {
-                messageId = MessageId.m1085boximpl(str);
+                messageId = MessageId.m1083boximpl(str);
             } else {
                 messageId = null;
             }
-            compositeEncoder.A(serialDescriptor, 1, messageId$$serializer, messageId);
+            compositeEncoder.l(serialDescriptor, 1, messageId$$serializer, messageId);
         }
-        if (compositeEncoder.z(serialDescriptor, 2) || notificationData.messageActivityType != null) {
-            compositeEncoder.A(serialDescriptor, 2, p0.f25318a, notificationData.messageActivityType);
+        if (compositeEncoder.A(serialDescriptor, 2) || notificationData.messageActivityType != null) {
+            compositeEncoder.l(serialDescriptor, 2, p0.f31057a, notificationData.messageActivityType);
         }
-        if (compositeEncoder.z(serialDescriptor, 3) || notificationData.messageApplicationName != null) {
-            compositeEncoder.A(serialDescriptor, 3, n2.f25302a, notificationData.messageApplicationName);
+        if (compositeEncoder.A(serialDescriptor, 3) || notificationData.messageApplicationName != null) {
+            compositeEncoder.l(serialDescriptor, 3, n2.f31041a, notificationData.messageApplicationName);
         }
-        if (compositeEncoder.z(serialDescriptor, 4) || notificationData.messageType != null) {
-            compositeEncoder.A(serialDescriptor, 4, p0.f25318a, notificationData.messageType);
+        if (compositeEncoder.A(serialDescriptor, 4) || notificationData.messageType != null) {
+            compositeEncoder.l(serialDescriptor, 4, p0.f31057a, notificationData.messageType);
         }
-        if (compositeEncoder.z(serialDescriptor, 5) || notificationData.messageContent != null) {
-            compositeEncoder.A(serialDescriptor, 5, n2.f25302a, notificationData.messageContent);
+        if (compositeEncoder.A(serialDescriptor, 5) || notificationData.messageContent != null) {
+            compositeEncoder.l(serialDescriptor, 5, n2.f31041a, notificationData.messageContent);
         }
-        if (compositeEncoder.z(serialDescriptor, 6) || notificationData.messageFlags != null) {
-            compositeEncoder.A(serialDescriptor, 6, z0.f25376a, notificationData.messageFlags);
+        if (compositeEncoder.A(serialDescriptor, 6) || notificationData.messageFlags != null) {
+            compositeEncoder.l(serialDescriptor, 6, z0.f31115a, notificationData.messageFlags);
         }
-        if (compositeEncoder.z(serialDescriptor, 7) || notificationData.channelType != null) {
-            compositeEncoder.A(serialDescriptor, 7, p0.f25318a, notificationData.channelType);
+        if (compositeEncoder.A(serialDescriptor, 7) || notificationData.channelType != null) {
+            compositeEncoder.l(serialDescriptor, 7, p0.f31057a, notificationData.channelType);
         }
-        if (compositeEncoder.z(serialDescriptor, 8) || notificationData.channelName != null) {
-            compositeEncoder.A(serialDescriptor, 8, n2.f25302a, notificationData.channelName);
+        if (compositeEncoder.A(serialDescriptor, 8) || notificationData.channelName != null) {
+            compositeEncoder.l(serialDescriptor, 8, n2.f31041a, notificationData.channelName);
         }
-        if (compositeEncoder.z(serialDescriptor, 9) || notificationData.channelId != null) {
-            compositeEncoder.A(serialDescriptor, 9, ChannelId$$serializer.INSTANCE, notificationData.channelId);
+        if (compositeEncoder.A(serialDescriptor, 9) || notificationData.channelId != null) {
+            compositeEncoder.l(serialDescriptor, 9, ChannelId$$serializer.INSTANCE, notificationData.channelId);
         }
-        if (compositeEncoder.z(serialDescriptor, 10) || notificationData.channelIcon != null) {
-            compositeEncoder.A(serialDescriptor, 10, n2.f25302a, notificationData.channelIcon);
+        if (compositeEncoder.A(serialDescriptor, 10) || notificationData.channelIcon != null) {
+            compositeEncoder.l(serialDescriptor, 10, n2.f31041a, notificationData.channelIcon);
         }
-        if (compositeEncoder.z(serialDescriptor, 11) || notificationData.parentName != null) {
-            compositeEncoder.A(serialDescriptor, 11, n2.f25302a, notificationData.parentName);
+        if (compositeEncoder.A(serialDescriptor, 11) || notificationData.parentName != null) {
+            compositeEncoder.l(serialDescriptor, 11, n2.f31041a, notificationData.parentName);
         }
-        if (compositeEncoder.z(serialDescriptor, 12) || notificationData.parentId != null) {
-            compositeEncoder.A(serialDescriptor, 12, ChannelId$$serializer.INSTANCE, notificationData.parentId);
+        if (compositeEncoder.A(serialDescriptor, 12) || notificationData.parentId != null) {
+            compositeEncoder.l(serialDescriptor, 12, ChannelId$$serializer.INSTANCE, notificationData.parentId);
         }
-        if (compositeEncoder.z(serialDescriptor, 13) || notificationData.messageReferenceType != null) {
-            compositeEncoder.A(serialDescriptor, 13, p0.f25318a, notificationData.messageReferenceType);
+        if (compositeEncoder.A(serialDescriptor, 13) || notificationData.messageReferenceType != null) {
+            compositeEncoder.l(serialDescriptor, 13, p0.f31057a, notificationData.messageReferenceType);
         }
-        if (compositeEncoder.z(serialDescriptor, 14) || notificationData.channelRtcRegion != null) {
-            compositeEncoder.A(serialDescriptor, 14, n2.f25302a, notificationData.channelRtcRegion);
+        if (compositeEncoder.A(serialDescriptor, 14) || notificationData.channelRtcRegion != null) {
+            compositeEncoder.l(serialDescriptor, 14, n2.f31041a, notificationData.channelRtcRegion);
         }
-        if (compositeEncoder.z(serialDescriptor, 15) || !Intrinsics.areEqual(notificationData.ackChannelIds, CollectionsKt.l())) {
-            compositeEncoder.l(serialDescriptor, 15, ChannelListSerializer.INSTANCE, notificationData.ackChannelIds);
+        if (compositeEncoder.A(serialDescriptor, 15) || !Intrinsics.areEqual(notificationData.ackChannelIds, CollectionsKt.l())) {
+            compositeEncoder.s(serialDescriptor, 15, ChannelListSerializer.INSTANCE, notificationData.ackChannelIds);
         }
-        if (compositeEncoder.z(serialDescriptor, 16) || notificationData.userId != null) {
-            compositeEncoder.A(serialDescriptor, 16, UserId$$serializer.INSTANCE, notificationData.userId);
+        if (compositeEncoder.A(serialDescriptor, 16) || notificationData.userId != null) {
+            compositeEncoder.l(serialDescriptor, 16, UserId$$serializer.INSTANCE, notificationData.userId);
         }
-        if (compositeEncoder.z(serialDescriptor, 17) || notificationData.userUsername != null) {
-            compositeEncoder.A(serialDescriptor, 17, n2.f25302a, notificationData.userUsername);
+        if (compositeEncoder.A(serialDescriptor, 17) || notificationData.userUsername != null) {
+            compositeEncoder.l(serialDescriptor, 17, n2.f31041a, notificationData.userUsername);
         }
-        if (compositeEncoder.z(serialDescriptor, 18) || notificationData.userGlobalName != null) {
-            compositeEncoder.A(serialDescriptor, 18, n2.f25302a, notificationData.userGlobalName);
+        if (compositeEncoder.A(serialDescriptor, 18) || notificationData.userGlobalName != null) {
+            compositeEncoder.l(serialDescriptor, 18, n2.f31041a, notificationData.userGlobalName);
         }
-        if (compositeEncoder.z(serialDescriptor, 19) || notificationData.userDiscriminator != null) {
-            compositeEncoder.A(serialDescriptor, 19, p0.f25318a, notificationData.userDiscriminator);
+        if (compositeEncoder.A(serialDescriptor, 19) || notificationData.userDiscriminator != null) {
+            compositeEncoder.l(serialDescriptor, 19, p0.f31057a, notificationData.userDiscriminator);
         }
-        if (compositeEncoder.z(serialDescriptor, 20) || notificationData.userAvatar != null) {
-            compositeEncoder.A(serialDescriptor, 20, n2.f25302a, notificationData.userAvatar);
+        if (compositeEncoder.A(serialDescriptor, 20) || notificationData.userAvatar != null) {
+            compositeEncoder.l(serialDescriptor, 20, n2.f31041a, notificationData.userAvatar);
         }
-        if (compositeEncoder.z(serialDescriptor, 21) || notificationData.userGuildAvatar != null) {
-            compositeEncoder.A(serialDescriptor, 21, n2.f25302a, notificationData.userGuildAvatar);
+        if (compositeEncoder.A(serialDescriptor, 21) || notificationData.userGuildAvatar != null) {
+            compositeEncoder.l(serialDescriptor, 21, n2.f31041a, notificationData.userGuildAvatar);
         }
-        if (compositeEncoder.z(serialDescriptor, 22) || notificationData.platformUserUsername != null) {
-            compositeEncoder.A(serialDescriptor, 22, n2.f25302a, notificationData.platformUserUsername);
+        if (compositeEncoder.A(serialDescriptor, 22) || notificationData.platformUserUsername != null) {
+            compositeEncoder.l(serialDescriptor, 22, n2.f31041a, notificationData.platformUserUsername);
         }
-        if (compositeEncoder.z(serialDescriptor, 23) || notificationData.relationshipType != null) {
-            compositeEncoder.A(serialDescriptor, 23, p0.f25318a, notificationData.relationshipType);
+        if (compositeEncoder.A(serialDescriptor, 23) || notificationData.relationshipType != null) {
+            compositeEncoder.l(serialDescriptor, 23, p0.f31057a, notificationData.relationshipType);
         }
-        if (compositeEncoder.z(serialDescriptor, 24) || notificationData.guildId != null) {
-            compositeEncoder.A(serialDescriptor, 24, GuildId$$serializer.INSTANCE, notificationData.guildId);
+        if (compositeEncoder.A(serialDescriptor, 24) || notificationData.guildId != null) {
+            compositeEncoder.l(serialDescriptor, 24, GuildId$$serializer.INSTANCE, notificationData.guildId);
         }
-        if (compositeEncoder.z(serialDescriptor, 25) || notificationData.guildName != null) {
-            compositeEncoder.A(serialDescriptor, 25, n2.f25302a, notificationData.guildName);
+        if (compositeEncoder.A(serialDescriptor, 25) || notificationData.guildName != null) {
+            compositeEncoder.l(serialDescriptor, 25, n2.f31041a, notificationData.guildName);
         }
-        if (compositeEncoder.z(serialDescriptor, 26) || notificationData.guildIcon != null) {
-            compositeEncoder.A(serialDescriptor, 26, n2.f25302a, notificationData.guildIcon);
+        if (compositeEncoder.A(serialDescriptor, 26) || notificationData.guildIcon != null) {
+            compositeEncoder.l(serialDescriptor, 26, n2.f31041a, notificationData.guildIcon);
         }
-        if (compositeEncoder.z(serialDescriptor, 27) || notificationData.activityInstanceId != null) {
-            compositeEncoder.A(serialDescriptor, 27, n2.f25302a, notificationData.activityInstanceId);
+        if (compositeEncoder.A(serialDescriptor, 27) || notificationData.activityInstanceId != null) {
+            compositeEncoder.l(serialDescriptor, 27, n2.f31041a, notificationData.activityInstanceId);
         }
-        if (compositeEncoder.z(serialDescriptor, 28) || notificationData.activityType != null) {
-            compositeEncoder.A(serialDescriptor, 28, p0.f25318a, notificationData.activityType);
+        if (compositeEncoder.A(serialDescriptor, 28) || notificationData.activityType != null) {
+            compositeEncoder.l(serialDescriptor, 28, p0.f31057a, notificationData.activityType);
         }
-        if (compositeEncoder.z(serialDescriptor, 29) || notificationData.activityName != null) {
-            compositeEncoder.A(serialDescriptor, 29, n2.f25302a, notificationData.activityName);
+        if (compositeEncoder.A(serialDescriptor, 29) || notificationData.activityName != null) {
+            compositeEncoder.l(serialDescriptor, 29, n2.f31041a, notificationData.activityName);
         }
-        if (compositeEncoder.z(serialDescriptor, 30) || notificationData.applicationId != null) {
-            compositeEncoder.A(serialDescriptor, 30, ApplicationId$$serializer.INSTANCE, notificationData.applicationId);
+        if (compositeEncoder.A(serialDescriptor, 30) || notificationData.applicationId != null) {
+            compositeEncoder.l(serialDescriptor, 30, ApplicationId$$serializer.INSTANCE, notificationData.applicationId);
         }
-        if (compositeEncoder.z(serialDescriptor, 31) || notificationData.applicationName != null) {
-            compositeEncoder.A(serialDescriptor, 31, n2.f25302a, notificationData.applicationName);
+        if (compositeEncoder.A(serialDescriptor, 31) || notificationData.applicationName != null) {
+            compositeEncoder.l(serialDescriptor, 31, n2.f31041a, notificationData.applicationName);
         }
-        if (compositeEncoder.z(serialDescriptor, 32) || notificationData.applicationIcon != null) {
-            compositeEncoder.A(serialDescriptor, 32, n2.f25302a, notificationData.applicationIcon);
+        if (compositeEncoder.A(serialDescriptor, 32) || notificationData.applicationIcon != null) {
+            compositeEncoder.l(serialDescriptor, 32, n2.f31041a, notificationData.applicationIcon);
         }
-        if (compositeEncoder.z(serialDescriptor, 33) || notificationData.message != null) {
-            compositeEncoder.A(serialDescriptor, 33, NotificationMessageSerializer.INSTANCE, notificationData.message);
+        if (compositeEncoder.A(serialDescriptor, 33) || notificationData.message != null) {
+            compositeEncoder.l(serialDescriptor, 33, NotificationMessageSerializer.INSTANCE, notificationData.message);
         }
-        if (compositeEncoder.z(serialDescriptor, 34) || notificationData.stageInstanceTopic != null) {
-            compositeEncoder.A(serialDescriptor, 34, n2.f25302a, notificationData.stageInstanceTopic);
+        if (compositeEncoder.A(serialDescriptor, 34) || notificationData.stageInstanceTopic != null) {
+            compositeEncoder.l(serialDescriptor, 34, n2.f31041a, notificationData.stageInstanceTopic);
         }
-        if (compositeEncoder.z(serialDescriptor, 35) || notificationData.guildScheduledEventEntityType != null) {
-            compositeEncoder.A(serialDescriptor, 35, p0.f25318a, notificationData.guildScheduledEventEntityType);
+        if (compositeEncoder.A(serialDescriptor, 35) || notificationData.guildScheduledEventEntityType != null) {
+            compositeEncoder.l(serialDescriptor, 35, p0.f31057a, notificationData.guildScheduledEventEntityType);
         }
-        if (compositeEncoder.z(serialDescriptor, 36) || notificationData.canReply) {
-            compositeEncoder.l(serialDescriptor, 36, CanReplySerializer.INSTANCE, Boolean.valueOf(notificationData.canReply));
+        if (compositeEncoder.A(serialDescriptor, 36) || notificationData.canReply) {
+            compositeEncoder.s(serialDescriptor, 36, CanReplySerializer.INSTANCE, Boolean.valueOf(notificationData.canReply));
         }
-        if (compositeEncoder.z(serialDescriptor, 37) || notificationData.isFromCurrentUser) {
-            compositeEncoder.w(serialDescriptor, 37, notificationData.isFromCurrentUser);
+        if (compositeEncoder.A(serialDescriptor, 37) || notificationData.isFromCurrentUser) {
+            compositeEncoder.y(serialDescriptor, 37, notificationData.isFromCurrentUser);
         }
-        if (compositeEncoder.z(serialDescriptor, 38) || notificationData.receivingUserId != null) {
-            compositeEncoder.A(serialDescriptor, 38, UserId$$serializer.INSTANCE, notificationData.receivingUserId);
+        if (compositeEncoder.A(serialDescriptor, 38) || notificationData.receivingUserId != null) {
+            compositeEncoder.l(serialDescriptor, 38, UserId$$serializer.INSTANCE, notificationData.receivingUserId);
         }
-        if (compositeEncoder.z(serialDescriptor, 39) || notificationData.title != null) {
-            compositeEncoder.A(serialDescriptor, 39, n2.f25302a, notificationData.title);
+        if (compositeEncoder.A(serialDescriptor, 39) || notificationData.title != null) {
+            compositeEncoder.l(serialDescriptor, 39, n2.f31041a, notificationData.title);
         }
-        if (compositeEncoder.z(serialDescriptor, 40) || notificationData.subtitle != null) {
-            compositeEncoder.A(serialDescriptor, 40, n2.f25302a, notificationData.subtitle);
+        if (compositeEncoder.A(serialDescriptor, 40) || notificationData.subtitle != null) {
+            compositeEncoder.l(serialDescriptor, 40, n2.f31041a, notificationData.subtitle);
         }
-        if (compositeEncoder.z(serialDescriptor, 41) || notificationData.iconUrl != null) {
-            compositeEncoder.A(serialDescriptor, 41, n2.f25302a, notificationData.iconUrl);
+        if (compositeEncoder.A(serialDescriptor, 41) || notificationData.iconUrl != null) {
+            compositeEncoder.l(serialDescriptor, 41, n2.f31041a, notificationData.iconUrl);
         }
-        if (compositeEncoder.z(serialDescriptor, 42) || notificationData.notificationChannel != null) {
-            compositeEncoder.A(serialDescriptor, 42, n2.f25302a, notificationData.notificationChannel);
+        if (compositeEncoder.A(serialDescriptor, 42) || notificationData.notificationChannel != null) {
+            compositeEncoder.l(serialDescriptor, 42, n2.f31041a, notificationData.notificationChannel);
         }
-        if (compositeEncoder.z(serialDescriptor, 43) || notificationData.trackingType != null) {
-            compositeEncoder.A(serialDescriptor, 43, n2.f25302a, notificationData.trackingType);
+        if (compositeEncoder.A(serialDescriptor, 43) || notificationData.trackingType != null) {
+            compositeEncoder.l(serialDescriptor, 43, n2.f31041a, notificationData.trackingType);
         }
-        if (compositeEncoder.z(serialDescriptor, 44) || notificationData.deeplink != null) {
-            compositeEncoder.A(serialDescriptor, 44, n2.f25302a, notificationData.deeplink);
+        if (compositeEncoder.A(serialDescriptor, 44) || notificationData.deeplink != null) {
+            compositeEncoder.l(serialDescriptor, 44, n2.f31041a, notificationData.deeplink);
         }
-        if (compositeEncoder.z(serialDescriptor, 45) || !Intrinsics.areEqual(notificationData.expandSubtitle, Boolean.FALSE)) {
-            compositeEncoder.A(serialDescriptor, 45, h.f25266a, notificationData.expandSubtitle);
+        if (compositeEncoder.A(serialDescriptor, 45) || !Intrinsics.areEqual(notificationData.expandSubtitle, Boolean.FALSE)) {
+            compositeEncoder.l(serialDescriptor, 45, h.f31005a, notificationData.expandSubtitle);
         }
-        if (compositeEncoder.z(serialDescriptor, 46) || notificationData.imageAttachmentUrl != null) {
-            compositeEncoder.A(serialDescriptor, 46, n2.f25302a, notificationData.imageAttachmentUrl);
+        if (compositeEncoder.A(serialDescriptor, 46) || notificationData.imageAttachmentUrl != null) {
+            compositeEncoder.l(serialDescriptor, 46, n2.f31041a, notificationData.imageAttachmentUrl);
         }
-        if (compositeEncoder.z(serialDescriptor, 47) || notificationData.ergoImageAttachmentUrl != null) {
-            compositeEncoder.A(serialDescriptor, 47, n2.f25302a, notificationData.ergoImageAttachmentUrl);
+        if (compositeEncoder.A(serialDescriptor, 47) || notificationData.ergoImageAttachmentUrl != null) {
+            compositeEncoder.l(serialDescriptor, 47, n2.f31041a, notificationData.ergoImageAttachmentUrl);
         }
-        if (compositeEncoder.z(serialDescriptor, 48) || notificationData.attachmentTextVariant != null) {
-            compositeEncoder.A(serialDescriptor, 48, p0.f25318a, notificationData.attachmentTextVariant);
+        if (compositeEncoder.A(serialDescriptor, 48) || notificationData.attachmentTextVariant != null) {
+            compositeEncoder.l(serialDescriptor, 48, p0.f31057a, notificationData.attachmentTextVariant);
         }
-        if (compositeEncoder.z(serialDescriptor, 49) || notificationData.imageAttachmentCount != null) {
-            compositeEncoder.A(serialDescriptor, 49, p0.f25318a, notificationData.imageAttachmentCount);
+        if (compositeEncoder.A(serialDescriptor, 49) || notificationData.imageAttachmentCount != null) {
+            compositeEncoder.l(serialDescriptor, 49, p0.f31057a, notificationData.imageAttachmentCount);
         }
-        if (compositeEncoder.z(serialDescriptor, 50) || notificationData.videoAttachmentCount != null) {
-            compositeEncoder.A(serialDescriptor, 50, p0.f25318a, notificationData.videoAttachmentCount);
+        if (compositeEncoder.A(serialDescriptor, 50) || notificationData.videoAttachmentCount != null) {
+            compositeEncoder.l(serialDescriptor, 50, p0.f31057a, notificationData.videoAttachmentCount);
         }
-        if (compositeEncoder.z(serialDescriptor, 51) || notificationData.timeReceived != null) {
-            compositeEncoder.A(serialDescriptor, 51, n2.f25302a, notificationData.timeReceived);
+        if (compositeEncoder.A(serialDescriptor, 51) || notificationData.timeReceived != null) {
+            compositeEncoder.l(serialDescriptor, 51, n2.f31041a, notificationData.timeReceived);
         }
-        if (compositeEncoder.z(serialDescriptor, 52) || notificationData.silent) {
-            compositeEncoder.w(serialDescriptor, 52, notificationData.silent);
+        if (compositeEncoder.A(serialDescriptor, 52) || notificationData.silent) {
+            compositeEncoder.y(serialDescriptor, 52, notificationData.silent);
         }
-        if (compositeEncoder.z(serialDescriptor, 53) || !Intrinsics.areEqual(notificationData.userInfo, o0.i())) {
-            compositeEncoder.l(serialDescriptor, 53, (dt.o) lazyArr[53].getValue(), notificationData.userInfo);
+        if (compositeEncoder.A(serialDescriptor, 53) || !Intrinsics.areEqual(notificationData.userInfo, o0.i())) {
+            compositeEncoder.s(serialDescriptor, 53, (ft.o) lazyArr[53].getValue(), notificationData.userInfo);
         }
-        if (compositeEncoder.z(serialDescriptor, 54) || notificationData.appDm) {
-            compositeEncoder.w(serialDescriptor, 54, notificationData.appDm);
+        if (compositeEncoder.A(serialDescriptor, 54) || notificationData.appDm) {
+            compositeEncoder.y(serialDescriptor, 54, notificationData.appDm);
         }
-        if (compositeEncoder.z(serialDescriptor, 55) || notificationData.notifTypeId != null) {
-            compositeEncoder.A(serialDescriptor, 55, n2.f25302a, notificationData.notifTypeId);
+        if (compositeEncoder.A(serialDescriptor, 55) || notificationData.notifTypeId != null) {
+            compositeEncoder.l(serialDescriptor, 55, n2.f31041a, notificationData.notifTypeId);
         }
-        if (compositeEncoder.z(serialDescriptor, 56) || notificationData.notifInstanceId != null) {
-            compositeEncoder.A(serialDescriptor, 56, n2.f25302a, notificationData.notifInstanceId);
+        if (compositeEncoder.A(serialDescriptor, 56) || notificationData.notifInstanceId != null) {
+            compositeEncoder.l(serialDescriptor, 56, n2.f31041a, notificationData.notifInstanceId);
         }
-        if (compositeEncoder.z(serialDescriptor, 57) || notificationData.joinId != null) {
-            compositeEncoder.A(serialDescriptor, 57, n2.f25302a, notificationData.joinId);
+        if (compositeEncoder.A(serialDescriptor, 57) || notificationData.joinId != null) {
+            compositeEncoder.l(serialDescriptor, 57, n2.f31041a, notificationData.joinId);
         }
-        if (compositeEncoder.z(serialDescriptor, 58) || notificationData.mentionType != null) {
-            compositeEncoder.A(serialDescriptor, 58, n2.f25302a, notificationData.mentionType);
+        if (compositeEncoder.A(serialDescriptor, 58) || notificationData.mentionType != null) {
+            compositeEncoder.l(serialDescriptor, 58, n2.f31041a, notificationData.mentionType);
         }
-        if (compositeEncoder.z(serialDescriptor, 59) || notificationData.appState != null) {
-            compositeEncoder.A(serialDescriptor, 59, n2.f25302a, notificationData.appState);
+        if (compositeEncoder.A(serialDescriptor, 59) || notificationData.appState != null) {
+            compositeEncoder.l(serialDescriptor, 59, n2.f31041a, notificationData.appState);
         }
-        if (compositeEncoder.z(serialDescriptor, 60) || notificationData.inviteGuildName != null) {
-            compositeEncoder.A(serialDescriptor, 60, n2.f25302a, notificationData.inviteGuildName);
+        if (compositeEncoder.A(serialDescriptor, 60) || notificationData.inviteGuildName != null) {
+            compositeEncoder.l(serialDescriptor, 60, n2.f31041a, notificationData.inviteGuildName);
         }
-        if (compositeEncoder.z(serialDescriptor, 61) || notificationData.inviteChannelName != null) {
-            compositeEncoder.A(serialDescriptor, 61, n2.f25302a, notificationData.inviteChannelName);
+        if (compositeEncoder.A(serialDescriptor, 61) || notificationData.inviteChannelName != null) {
+            compositeEncoder.l(serialDescriptor, 61, n2.f31041a, notificationData.inviteChannelName);
         }
-        if (compositeEncoder.z(serialDescriptor, 62) || notificationData.inviteTitleVariant != null) {
-            compositeEncoder.A(serialDescriptor, 62, p0.f25318a, notificationData.inviteTitleVariant);
+        if (compositeEncoder.A(serialDescriptor, 62) || notificationData.inviteTitleVariant != null) {
+            compositeEncoder.l(serialDescriptor, 62, p0.f31057a, notificationData.inviteTitleVariant);
         }
-        if (compositeEncoder.z(serialDescriptor, 63) || notificationData.pollQuestion != null) {
-            compositeEncoder.A(serialDescriptor, 63, n2.f25302a, notificationData.pollQuestion);
+        if (compositeEncoder.A(serialDescriptor, 63) || notificationData.pollQuestion != null) {
+            compositeEncoder.l(serialDescriptor, 63, n2.f31041a, notificationData.pollQuestion);
         }
     }
 
@@ -661,7 +661,7 @@ public final class NotificationData {
     }
 
     /* renamed from: component10-qMVnFVQ  reason: not valid java name */
-    public final ChannelId m1013component10qMVnFVQ() {
+    public final ChannelId m1011component10qMVnFVQ() {
         return this.channelId;
     }
 
@@ -674,7 +674,7 @@ public final class NotificationData {
     }
 
     /* renamed from: component13-qMVnFVQ  reason: not valid java name */
-    public final ChannelId m1014component13qMVnFVQ() {
+    public final ChannelId m1012component13qMVnFVQ() {
         return this.parentId;
     }
 
@@ -692,7 +692,7 @@ public final class NotificationData {
     }
 
     /* renamed from: component17-wUX8bhU  reason: not valid java name */
-    public final UserId m1015component17wUX8bhU() {
+    public final UserId m1013component17wUX8bhU() {
         return this.userId;
     }
 
@@ -705,7 +705,7 @@ public final class NotificationData {
     }
 
     /* renamed from: component2-N_6c4I0  reason: not valid java name */
-    public final String m1016component2N_6c4I0() {
+    public final String m1014component2N_6c4I0() {
         return this.messageId;
     }
 
@@ -730,7 +730,7 @@ public final class NotificationData {
     }
 
     /* renamed from: component25-qOKuAAo  reason: not valid java name */
-    public final GuildId m1017component25qOKuAAo() {
+    public final GuildId m1015component25qOKuAAo() {
         return this.guildId;
     }
 
@@ -759,7 +759,7 @@ public final class NotificationData {
     }
 
     /* renamed from: component31-UtIrSio  reason: not valid java name */
-    public final ApplicationId m1018component31UtIrSio() {
+    public final ApplicationId m1016component31UtIrSio() {
         return this.applicationId;
     }
 
@@ -792,7 +792,7 @@ public final class NotificationData {
     }
 
     /* renamed from: component39-wUX8bhU  reason: not valid java name */
-    public final UserId m1019component39wUX8bhU() {
+    public final UserId m1017component39wUX8bhU() {
         return this.receivingUserId;
     }
 
@@ -923,7 +923,7 @@ public final class NotificationData {
 
     @NotNull
     /* renamed from: copy-AIkOYOk  reason: not valid java name */
-    public final NotificationData m1020copyAIkOYOk(@NotNull String type, String str, Integer num, String str2, Integer num2, String str3, Long l10, Integer num3, String str4, ChannelId channelId, String str5, String str6, ChannelId channelId2, Integer num4, String str7, @NotNull List<ChannelId> ackChannelIds, UserId userId, String str8, String str9, Integer num5, String str10, String str11, String str12, Integer num6, GuildId guildId, String str13, String str14, String str15, Integer num7, String str16, ApplicationId applicationId, String str17, String str18, NotificationMessage notificationMessage, String str19, Integer num8, boolean z10, boolean z11, UserId userId2, String str20, String str21, String str22, String str23, String str24, String str25, Boolean bool, String str26, String str27, Integer num9, Integer num10, Integer num11, String str28, boolean z12, @NotNull Map<String, String> userInfo, boolean z13, String str29, String str30, String str31, String str32, String str33, String str34, String str35, Integer num12, String str36) {
+    public final NotificationData m1018copyAIkOYOk(@NotNull String type, String str, Integer num, String str2, Integer num2, String str3, Long l10, Integer num3, String str4, ChannelId channelId, String str5, String str6, ChannelId channelId2, Integer num4, String str7, @NotNull List<ChannelId> ackChannelIds, UserId userId, String str8, String str9, Integer num5, String str10, String str11, String str12, Integer num6, GuildId guildId, String str13, String str14, String str15, Integer num7, String str16, ApplicationId applicationId, String str17, String str18, NotificationMessage notificationMessage, String str19, Integer num8, boolean z10, boolean z11, UserId userId2, String str20, String str21, String str22, String str23, String str24, String str25, Boolean bool, String str26, String str27, Integer num9, Integer num10, Integer num11, String str28, boolean z12, @NotNull Map<String, String> userInfo, boolean z13, String str29, String str30, String str31, String str32, String str33, String str34, String str35, Integer num12, String str36) {
         Intrinsics.checkNotNullParameter(type, "type");
         Intrinsics.checkNotNullParameter(ackChannelIds, "ackChannelIds");
         Intrinsics.checkNotNullParameter(userInfo, "userInfo");
@@ -931,7 +931,7 @@ public final class NotificationData {
     }
 
     public boolean equals(Object obj) {
-        boolean m1089equalsimpl0;
+        boolean m1087equalsimpl0;
         if (this == obj) {
             return true;
         }
@@ -942,16 +942,16 @@ public final class NotificationData {
                 String str2 = notificationData.messageId;
                 if (str == null) {
                     if (str2 == null) {
-                        m1089equalsimpl0 = true;
+                        m1087equalsimpl0 = true;
                     }
-                    m1089equalsimpl0 = false;
+                    m1087equalsimpl0 = false;
                 } else {
                     if (str2 != null) {
-                        m1089equalsimpl0 = MessageId.m1089equalsimpl0(str, str2);
+                        m1087equalsimpl0 = MessageId.m1087equalsimpl0(str, str2);
                     }
-                    m1089equalsimpl0 = false;
+                    m1087equalsimpl0 = false;
                 }
-                return m1089equalsimpl0 && Intrinsics.areEqual(this.messageActivityType, notificationData.messageActivityType) && Intrinsics.areEqual(this.messageApplicationName, notificationData.messageApplicationName) && Intrinsics.areEqual(this.messageType, notificationData.messageType) && Intrinsics.areEqual(this.messageContent, notificationData.messageContent) && Intrinsics.areEqual(this.messageFlags, notificationData.messageFlags) && Intrinsics.areEqual(this.channelType, notificationData.channelType) && Intrinsics.areEqual(this.channelName, notificationData.channelName) && Intrinsics.areEqual(this.channelId, notificationData.channelId) && Intrinsics.areEqual(this.channelIcon, notificationData.channelIcon) && Intrinsics.areEqual(this.parentName, notificationData.parentName) && Intrinsics.areEqual(this.parentId, notificationData.parentId) && Intrinsics.areEqual(this.messageReferenceType, notificationData.messageReferenceType) && Intrinsics.areEqual(this.channelRtcRegion, notificationData.channelRtcRegion) && Intrinsics.areEqual(this.ackChannelIds, notificationData.ackChannelIds) && Intrinsics.areEqual(this.userId, notificationData.userId) && Intrinsics.areEqual(this.userUsername, notificationData.userUsername) && Intrinsics.areEqual(this.userGlobalName, notificationData.userGlobalName) && Intrinsics.areEqual(this.userDiscriminator, notificationData.userDiscriminator) && Intrinsics.areEqual(this.userAvatar, notificationData.userAvatar) && Intrinsics.areEqual(this.userGuildAvatar, notificationData.userGuildAvatar) && Intrinsics.areEqual(this.platformUserUsername, notificationData.platformUserUsername) && Intrinsics.areEqual(this.relationshipType, notificationData.relationshipType) && Intrinsics.areEqual(this.guildId, notificationData.guildId) && Intrinsics.areEqual(this.guildName, notificationData.guildName) && Intrinsics.areEqual(this.guildIcon, notificationData.guildIcon) && Intrinsics.areEqual(this.activityInstanceId, notificationData.activityInstanceId) && Intrinsics.areEqual(this.activityType, notificationData.activityType) && Intrinsics.areEqual(this.activityName, notificationData.activityName) && Intrinsics.areEqual(this.applicationId, notificationData.applicationId) && Intrinsics.areEqual(this.applicationName, notificationData.applicationName) && Intrinsics.areEqual(this.applicationIcon, notificationData.applicationIcon) && Intrinsics.areEqual(this.message, notificationData.message) && Intrinsics.areEqual(this.stageInstanceTopic, notificationData.stageInstanceTopic) && Intrinsics.areEqual(this.guildScheduledEventEntityType, notificationData.guildScheduledEventEntityType) && this.canReply == notificationData.canReply && this.isFromCurrentUser == notificationData.isFromCurrentUser && Intrinsics.areEqual(this.receivingUserId, notificationData.receivingUserId) && Intrinsics.areEqual(this.title, notificationData.title) && Intrinsics.areEqual(this.subtitle, notificationData.subtitle) && Intrinsics.areEqual(this.iconUrl, notificationData.iconUrl) && Intrinsics.areEqual(this.notificationChannel, notificationData.notificationChannel) && Intrinsics.areEqual(this.trackingType, notificationData.trackingType) && Intrinsics.areEqual(this.deeplink, notificationData.deeplink) && Intrinsics.areEqual(this.expandSubtitle, notificationData.expandSubtitle) && Intrinsics.areEqual(this.imageAttachmentUrl, notificationData.imageAttachmentUrl) && Intrinsics.areEqual(this.ergoImageAttachmentUrl, notificationData.ergoImageAttachmentUrl) && Intrinsics.areEqual(this.attachmentTextVariant, notificationData.attachmentTextVariant) && Intrinsics.areEqual(this.imageAttachmentCount, notificationData.imageAttachmentCount) && Intrinsics.areEqual(this.videoAttachmentCount, notificationData.videoAttachmentCount) && Intrinsics.areEqual(this.timeReceived, notificationData.timeReceived) && this.silent == notificationData.silent && Intrinsics.areEqual(this.userInfo, notificationData.userInfo) && this.appDm == notificationData.appDm && Intrinsics.areEqual(this.notifTypeId, notificationData.notifTypeId) && Intrinsics.areEqual(this.notifInstanceId, notificationData.notifInstanceId) && Intrinsics.areEqual(this.joinId, notificationData.joinId) && Intrinsics.areEqual(this.mentionType, notificationData.mentionType) && Intrinsics.areEqual(this.appState, notificationData.appState) && Intrinsics.areEqual(this.inviteGuildName, notificationData.inviteGuildName) && Intrinsics.areEqual(this.inviteChannelName, notificationData.inviteChannelName) && Intrinsics.areEqual(this.inviteTitleVariant, notificationData.inviteTitleVariant) && Intrinsics.areEqual(this.pollQuestion, notificationData.pollQuestion);
+                return m1087equalsimpl0 && Intrinsics.areEqual(this.messageActivityType, notificationData.messageActivityType) && Intrinsics.areEqual(this.messageApplicationName, notificationData.messageApplicationName) && Intrinsics.areEqual(this.messageType, notificationData.messageType) && Intrinsics.areEqual(this.messageContent, notificationData.messageContent) && Intrinsics.areEqual(this.messageFlags, notificationData.messageFlags) && Intrinsics.areEqual(this.channelType, notificationData.channelType) && Intrinsics.areEqual(this.channelName, notificationData.channelName) && Intrinsics.areEqual(this.channelId, notificationData.channelId) && Intrinsics.areEqual(this.channelIcon, notificationData.channelIcon) && Intrinsics.areEqual(this.parentName, notificationData.parentName) && Intrinsics.areEqual(this.parentId, notificationData.parentId) && Intrinsics.areEqual(this.messageReferenceType, notificationData.messageReferenceType) && Intrinsics.areEqual(this.channelRtcRegion, notificationData.channelRtcRegion) && Intrinsics.areEqual(this.ackChannelIds, notificationData.ackChannelIds) && Intrinsics.areEqual(this.userId, notificationData.userId) && Intrinsics.areEqual(this.userUsername, notificationData.userUsername) && Intrinsics.areEqual(this.userGlobalName, notificationData.userGlobalName) && Intrinsics.areEqual(this.userDiscriminator, notificationData.userDiscriminator) && Intrinsics.areEqual(this.userAvatar, notificationData.userAvatar) && Intrinsics.areEqual(this.userGuildAvatar, notificationData.userGuildAvatar) && Intrinsics.areEqual(this.platformUserUsername, notificationData.platformUserUsername) && Intrinsics.areEqual(this.relationshipType, notificationData.relationshipType) && Intrinsics.areEqual(this.guildId, notificationData.guildId) && Intrinsics.areEqual(this.guildName, notificationData.guildName) && Intrinsics.areEqual(this.guildIcon, notificationData.guildIcon) && Intrinsics.areEqual(this.activityInstanceId, notificationData.activityInstanceId) && Intrinsics.areEqual(this.activityType, notificationData.activityType) && Intrinsics.areEqual(this.activityName, notificationData.activityName) && Intrinsics.areEqual(this.applicationId, notificationData.applicationId) && Intrinsics.areEqual(this.applicationName, notificationData.applicationName) && Intrinsics.areEqual(this.applicationIcon, notificationData.applicationIcon) && Intrinsics.areEqual(this.message, notificationData.message) && Intrinsics.areEqual(this.stageInstanceTopic, notificationData.stageInstanceTopic) && Intrinsics.areEqual(this.guildScheduledEventEntityType, notificationData.guildScheduledEventEntityType) && this.canReply == notificationData.canReply && this.isFromCurrentUser == notificationData.isFromCurrentUser && Intrinsics.areEqual(this.receivingUserId, notificationData.receivingUserId) && Intrinsics.areEqual(this.title, notificationData.title) && Intrinsics.areEqual(this.subtitle, notificationData.subtitle) && Intrinsics.areEqual(this.iconUrl, notificationData.iconUrl) && Intrinsics.areEqual(this.notificationChannel, notificationData.notificationChannel) && Intrinsics.areEqual(this.trackingType, notificationData.trackingType) && Intrinsics.areEqual(this.deeplink, notificationData.deeplink) && Intrinsics.areEqual(this.expandSubtitle, notificationData.expandSubtitle) && Intrinsics.areEqual(this.imageAttachmentUrl, notificationData.imageAttachmentUrl) && Intrinsics.areEqual(this.ergoImageAttachmentUrl, notificationData.ergoImageAttachmentUrl) && Intrinsics.areEqual(this.attachmentTextVariant, notificationData.attachmentTextVariant) && Intrinsics.areEqual(this.imageAttachmentCount, notificationData.imageAttachmentCount) && Intrinsics.areEqual(this.videoAttachmentCount, notificationData.videoAttachmentCount) && Intrinsics.areEqual(this.timeReceived, notificationData.timeReceived) && this.silent == notificationData.silent && Intrinsics.areEqual(this.userInfo, notificationData.userInfo) && this.appDm == notificationData.appDm && Intrinsics.areEqual(this.notifTypeId, notificationData.notifTypeId) && Intrinsics.areEqual(this.notifInstanceId, notificationData.notifInstanceId) && Intrinsics.areEqual(this.joinId, notificationData.joinId) && Intrinsics.areEqual(this.mentionType, notificationData.mentionType) && Intrinsics.areEqual(this.appState, notificationData.appState) && Intrinsics.areEqual(this.inviteGuildName, notificationData.inviteGuildName) && Intrinsics.areEqual(this.inviteChannelName, notificationData.inviteChannelName) && Intrinsics.areEqual(this.inviteTitleVariant, notificationData.inviteTitleVariant) && Intrinsics.areEqual(this.pollQuestion, notificationData.pollQuestion);
             }
             return false;
         }
@@ -988,7 +988,7 @@ public final class NotificationData {
     }
 
     /* renamed from: getApplicationId-UtIrSio  reason: not valid java name */
-    public final ApplicationId m1021getApplicationIdUtIrSio() {
+    public final ApplicationId m1019getApplicationIdUtIrSio() {
         return this.applicationId;
     }
 
@@ -1009,7 +1009,7 @@ public final class NotificationData {
     }
 
     /* renamed from: getChannelId-qMVnFVQ  reason: not valid java name */
-    public final ChannelId m1022getChannelIdqMVnFVQ() {
+    public final ChannelId m1020getChannelIdqMVnFVQ() {
         return this.channelId;
     }
 
@@ -1042,7 +1042,7 @@ public final class NotificationData {
     }
 
     /* renamed from: getGuildId-qOKuAAo  reason: not valid java name */
-    public final GuildId m1023getGuildIdqOKuAAo() {
+    public final GuildId m1021getGuildIdqOKuAAo() {
         return this.guildId;
     }
 
@@ -1107,7 +1107,7 @@ public final class NotificationData {
     }
 
     /* renamed from: getMessageId-N_6c4I0  reason: not valid java name */
-    public final String m1024getMessageIdN_6c4I0() {
+    public final String m1022getMessageIdN_6c4I0() {
         return this.messageId;
     }
 
@@ -1132,7 +1132,7 @@ public final class NotificationData {
     }
 
     /* renamed from: getParentId-qMVnFVQ  reason: not valid java name */
-    public final ChannelId m1025getParentIdqMVnFVQ() {
+    public final ChannelId m1023getParentIdqMVnFVQ() {
         return this.parentId;
     }
 
@@ -1149,7 +1149,7 @@ public final class NotificationData {
     }
 
     /* renamed from: getReceivingUserId-wUX8bhU  reason: not valid java name */
-    public final UserId m1026getReceivingUserIdwUX8bhU() {
+    public final UserId m1024getReceivingUserIdwUX8bhU() {
         return this.receivingUserId;
     }
 
@@ -1203,7 +1203,7 @@ public final class NotificationData {
     }
 
     /* renamed from: getUserId-wUX8bhU  reason: not valid java name */
-    public final UserId m1027getUserIdwUX8bhU() {
+    public final UserId m1025getUserIdwUX8bhU() {
         return this.userId;
     }
 
@@ -1223,9 +1223,9 @@ public final class NotificationData {
     public int hashCode() {
         int hashCode = this.type.hashCode() * 31;
         String str = this.messageId;
-        int m1090hashCodeimpl = (hashCode + (str == null ? 0 : MessageId.m1090hashCodeimpl(str))) * 31;
+        int m1088hashCodeimpl = (hashCode + (str == null ? 0 : MessageId.m1088hashCodeimpl(str))) * 31;
         Integer num = this.messageActivityType;
-        int hashCode2 = (m1090hashCodeimpl + (num == null ? 0 : num.hashCode())) * 31;
+        int hashCode2 = (m1088hashCodeimpl + (num == null ? 0 : num.hashCode())) * 31;
         String str2 = this.messageApplicationName;
         int hashCode3 = (hashCode2 + (str2 == null ? 0 : str2.hashCode())) * 31;
         Integer num2 = this.messageType;
@@ -1239,21 +1239,21 @@ public final class NotificationData {
         String str4 = this.channelName;
         int hashCode8 = (hashCode7 + (str4 == null ? 0 : str4.hashCode())) * 31;
         ChannelId channelId = this.channelId;
-        int m1064hashCodeimpl = (hashCode8 + (channelId == null ? 0 : ChannelId.m1064hashCodeimpl(channelId.m1068unboximpl()))) * 31;
+        int m1062hashCodeimpl = (hashCode8 + (channelId == null ? 0 : ChannelId.m1062hashCodeimpl(channelId.m1066unboximpl()))) * 31;
         String str5 = this.channelIcon;
-        int hashCode9 = (m1064hashCodeimpl + (str5 == null ? 0 : str5.hashCode())) * 31;
+        int hashCode9 = (m1062hashCodeimpl + (str5 == null ? 0 : str5.hashCode())) * 31;
         String str6 = this.parentName;
         int hashCode10 = (hashCode9 + (str6 == null ? 0 : str6.hashCode())) * 31;
         ChannelId channelId2 = this.parentId;
-        int m1064hashCodeimpl2 = (hashCode10 + (channelId2 == null ? 0 : ChannelId.m1064hashCodeimpl(channelId2.m1068unboximpl()))) * 31;
+        int m1062hashCodeimpl2 = (hashCode10 + (channelId2 == null ? 0 : ChannelId.m1062hashCodeimpl(channelId2.m1066unboximpl()))) * 31;
         Integer num4 = this.messageReferenceType;
-        int hashCode11 = (m1064hashCodeimpl2 + (num4 == null ? 0 : num4.hashCode())) * 31;
+        int hashCode11 = (m1062hashCodeimpl2 + (num4 == null ? 0 : num4.hashCode())) * 31;
         String str7 = this.channelRtcRegion;
         int hashCode12 = (((hashCode11 + (str7 == null ? 0 : str7.hashCode())) * 31) + this.ackChannelIds.hashCode()) * 31;
         UserId userId = this.userId;
-        int m1142hashCodeimpl = (hashCode12 + (userId == null ? 0 : UserId.m1142hashCodeimpl(userId.m1146unboximpl()))) * 31;
+        int m1140hashCodeimpl = (hashCode12 + (userId == null ? 0 : UserId.m1140hashCodeimpl(userId.m1144unboximpl()))) * 31;
         String str8 = this.userUsername;
-        int hashCode13 = (m1142hashCodeimpl + (str8 == null ? 0 : str8.hashCode())) * 31;
+        int hashCode13 = (m1140hashCodeimpl + (str8 == null ? 0 : str8.hashCode())) * 31;
         String str9 = this.userGlobalName;
         int hashCode14 = (hashCode13 + (str9 == null ? 0 : str9.hashCode())) * 31;
         Integer num5 = this.userDiscriminator;
@@ -1267,9 +1267,9 @@ public final class NotificationData {
         Integer num6 = this.relationshipType;
         int hashCode19 = (hashCode18 + (num6 == null ? 0 : num6.hashCode())) * 31;
         GuildId guildId = this.guildId;
-        int m1077hashCodeimpl = (hashCode19 + (guildId == null ? 0 : GuildId.m1077hashCodeimpl(guildId.m1081unboximpl()))) * 31;
+        int m1075hashCodeimpl = (hashCode19 + (guildId == null ? 0 : GuildId.m1075hashCodeimpl(guildId.m1079unboximpl()))) * 31;
         String str13 = this.guildName;
-        int hashCode20 = (m1077hashCodeimpl + (str13 == null ? 0 : str13.hashCode())) * 31;
+        int hashCode20 = (m1075hashCodeimpl + (str13 == null ? 0 : str13.hashCode())) * 31;
         String str14 = this.guildIcon;
         int hashCode21 = (hashCode20 + (str14 == null ? 0 : str14.hashCode())) * 31;
         String str15 = this.activityInstanceId;
@@ -1279,9 +1279,9 @@ public final class NotificationData {
         String str16 = this.activityName;
         int hashCode24 = (hashCode23 + (str16 == null ? 0 : str16.hashCode())) * 31;
         ApplicationId applicationId = this.applicationId;
-        int m1051hashCodeimpl = (hashCode24 + (applicationId == null ? 0 : ApplicationId.m1051hashCodeimpl(applicationId.m1055unboximpl()))) * 31;
+        int m1049hashCodeimpl = (hashCode24 + (applicationId == null ? 0 : ApplicationId.m1049hashCodeimpl(applicationId.m1053unboximpl()))) * 31;
         String str17 = this.applicationName;
-        int hashCode25 = (m1051hashCodeimpl + (str17 == null ? 0 : str17.hashCode())) * 31;
+        int hashCode25 = (m1049hashCodeimpl + (str17 == null ? 0 : str17.hashCode())) * 31;
         String str18 = this.applicationIcon;
         int hashCode26 = (hashCode25 + (str18 == null ? 0 : str18.hashCode())) * 31;
         NotificationMessage notificationMessage = this.message;
@@ -1291,9 +1291,9 @@ public final class NotificationData {
         Integer num8 = this.guildScheduledEventEntityType;
         int hashCode29 = (((((hashCode28 + (num8 == null ? 0 : num8.hashCode())) * 31) + Boolean.hashCode(this.canReply)) * 31) + Boolean.hashCode(this.isFromCurrentUser)) * 31;
         UserId userId2 = this.receivingUserId;
-        int m1142hashCodeimpl2 = (hashCode29 + (userId2 == null ? 0 : UserId.m1142hashCodeimpl(userId2.m1146unboximpl()))) * 31;
+        int m1140hashCodeimpl2 = (hashCode29 + (userId2 == null ? 0 : UserId.m1140hashCodeimpl(userId2.m1144unboximpl()))) * 31;
         String str20 = this.title;
-        int hashCode30 = (m1142hashCodeimpl2 + (str20 == null ? 0 : str20.hashCode())) * 31;
+        int hashCode30 = (m1140hashCodeimpl2 + (str20 == null ? 0 : str20.hashCode())) * 31;
         String str21 = this.subtitle;
         int hashCode31 = (hashCode30 + (str21 == null ? 0 : str21.hashCode())) * 31;
         String str22 = this.iconUrl;
@@ -1346,7 +1346,7 @@ public final class NotificationData {
     public String toString() {
         String str = this.type;
         String str2 = this.messageId;
-        String m1092toStringimpl = str2 == null ? "null" : MessageId.m1092toStringimpl(str2);
+        String m1090toStringimpl = str2 == null ? "null" : MessageId.m1090toStringimpl(str2);
         Integer num = this.messageActivityType;
         String str3 = this.messageApplicationName;
         Integer num2 = this.messageType;
@@ -1409,7 +1409,7 @@ public final class NotificationData {
         String str36 = this.inviteChannelName;
         Integer num12 = this.inviteTitleVariant;
         String str37 = this.pollQuestion;
-        return "NotificationData(type=" + str + ", messageId=" + m1092toStringimpl + ", messageActivityType=" + num + ", messageApplicationName=" + str3 + ", messageType=" + num2 + ", messageContent=" + str4 + ", messageFlags=" + l10 + ", channelType=" + num3 + ", channelName=" + str5 + ", channelId=" + channelId + ", channelIcon=" + str6 + ", parentName=" + str7 + ", parentId=" + channelId2 + ", messageReferenceType=" + num4 + ", channelRtcRegion=" + str8 + ", ackChannelIds=" + list + ", userId=" + userId + ", userUsername=" + str9 + ", userGlobalName=" + str10 + ", userDiscriminator=" + num5 + ", userAvatar=" + str11 + ", userGuildAvatar=" + str12 + ", platformUserUsername=" + str13 + ", relationshipType=" + num6 + ", guildId=" + guildId + ", guildName=" + str14 + ", guildIcon=" + str15 + ", activityInstanceId=" + str16 + ", activityType=" + num7 + ", activityName=" + str17 + ", applicationId=" + applicationId + ", applicationName=" + str18 + ", applicationIcon=" + str19 + ", message=" + notificationMessage + ", stageInstanceTopic=" + str20 + ", guildScheduledEventEntityType=" + num8 + ", canReply=" + z10 + ", isFromCurrentUser=" + z11 + ", receivingUserId=" + userId2 + ", title=" + str21 + ", subtitle=" + str22 + ", iconUrl=" + str23 + ", notificationChannel=" + str24 + ", trackingType=" + str25 + ", deeplink=" + str26 + ", expandSubtitle=" + bool + ", imageAttachmentUrl=" + str27 + ", ergoImageAttachmentUrl=" + str28 + ", attachmentTextVariant=" + num9 + ", imageAttachmentCount=" + num10 + ", videoAttachmentCount=" + num11 + ", timeReceived=" + str29 + ", silent=" + z12 + ", userInfo=" + map + ", appDm=" + z13 + ", notifTypeId=" + str30 + ", notifInstanceId=" + str31 + ", joinId=" + str32 + ", mentionType=" + str33 + ", appState=" + str34 + ", inviteGuildName=" + str35 + ", inviteChannelName=" + str36 + ", inviteTitleVariant=" + num12 + ", pollQuestion=" + str37 + ")";
+        return "NotificationData(type=" + str + ", messageId=" + m1090toStringimpl + ", messageActivityType=" + num + ", messageApplicationName=" + str3 + ", messageType=" + num2 + ", messageContent=" + str4 + ", messageFlags=" + l10 + ", channelType=" + num3 + ", channelName=" + str5 + ", channelId=" + channelId + ", channelIcon=" + str6 + ", parentName=" + str7 + ", parentId=" + channelId2 + ", messageReferenceType=" + num4 + ", channelRtcRegion=" + str8 + ", ackChannelIds=" + list + ", userId=" + userId + ", userUsername=" + str9 + ", userGlobalName=" + str10 + ", userDiscriminator=" + num5 + ", userAvatar=" + str11 + ", userGuildAvatar=" + str12 + ", platformUserUsername=" + str13 + ", relationshipType=" + num6 + ", guildId=" + guildId + ", guildName=" + str14 + ", guildIcon=" + str15 + ", activityInstanceId=" + str16 + ", activityType=" + num7 + ", activityName=" + str17 + ", applicationId=" + applicationId + ", applicationName=" + str18 + ", applicationIcon=" + str19 + ", message=" + notificationMessage + ", stageInstanceTopic=" + str20 + ", guildScheduledEventEntityType=" + num8 + ", canReply=" + z10 + ", isFromCurrentUser=" + z11 + ", receivingUserId=" + userId2 + ", title=" + str21 + ", subtitle=" + str22 + ", iconUrl=" + str23 + ", notificationChannel=" + str24 + ", trackingType=" + str25 + ", deeplink=" + str26 + ", expandSubtitle=" + bool + ", imageAttachmentUrl=" + str27 + ", ergoImageAttachmentUrl=" + str28 + ", attachmentTextVariant=" + num9 + ", imageAttachmentCount=" + num10 + ", videoAttachmentCount=" + num11 + ", timeReceived=" + str29 + ", silent=" + z12 + ", userInfo=" + map + ", appDm=" + z13 + ", notifTypeId=" + str30 + ", notifInstanceId=" + str31 + ", joinId=" + str32 + ", mentionType=" + str33 + ", appState=" + str34 + ", inviteGuildName=" + str35 + ", inviteChannelName=" + str36 + ", inviteTitleVariant=" + num12 + ", pollQuestion=" + str37 + ")";
     }
 
     public /* synthetic */ NotificationData(String str, String str2, Integer num, String str3, Integer num2, String str4, Long l10, Integer num3, String str5, ChannelId channelId, String str6, String str7, ChannelId channelId2, Integer num4, String str8, List list, UserId userId, String str9, String str10, Integer num5, String str11, String str12, String str13, Integer num6, GuildId guildId, String str14, String str15, String str16, Integer num7, String str17, ApplicationId applicationId, String str18, String str19, NotificationMessage notificationMessage, String str20, Integer num8, boolean z10, boolean z11, UserId userId2, String str21, String str22, String str23, String str24, String str25, String str26, Boolean bool, String str27, String str28, Integer num9, Integer num10, Integer num11, String str29, boolean z12, Map map, boolean z13, String str30, String str31, String str32, String str33, String str34, String str35, String str36, Integer num12, String str37, DefaultConstructorMarker defaultConstructorMarker) {

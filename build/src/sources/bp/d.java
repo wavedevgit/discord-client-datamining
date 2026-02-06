@@ -1,28 +1,37 @@
 package bp;
 
-import android.content.Context;
-import zq.h;
+import dn.g;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class d implements zq.d {
+public final class d implements g {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final h f7095a;
+    /* renamed from: b  reason: collision with root package name */
+    private final Object f6965b;
 
-    public d(h hVar) {
-        this.f7095a = hVar;
+    /* renamed from: c  reason: collision with root package name */
+    private final boolean f6966c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private final String f6967d;
+
+    public d(Object screen, boolean z10, String name) {
+        Intrinsics.checkNotNullParameter(screen, "screen");
+        Intrinsics.checkNotNullParameter(name, "name");
+        this.f6965b = screen;
+        this.f6966c = z10;
+        this.f6967d = name;
     }
 
-    public static d a(h hVar) {
-        return new d(hVar);
+    public final Object a() {
+        return this.f6965b;
     }
 
-    public static b c(Context context) {
-        return new b(context);
+    public final boolean b() {
+        return this.f6966c;
     }
 
-    @Override // javax.inject.Provider
-    /* renamed from: b */
-    public b get() {
-        return c((Context) this.f7095a.get());
+    @Override // dn.g
+    public String c() {
+        return this.f6967d;
     }
 }

@@ -18,64 +18,64 @@ import x.y0;
 public final class e {
 
     /* renamed from: i  reason: collision with root package name */
-    private static final PreviewView.d f2214i = PreviewView.d.FILL_CENTER;
+    private static final PreviewView.d f2543i = PreviewView.d.FILL_CENTER;
 
     /* renamed from: a  reason: collision with root package name */
-    private Size f2215a;
+    private Size f2544a;
 
     /* renamed from: b  reason: collision with root package name */
-    private Rect f2216b;
+    private Rect f2545b;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f2217c;
+    private int f2546c;
 
     /* renamed from: d  reason: collision with root package name */
-    private Matrix f2218d;
+    private Matrix f2547d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f2219e;
+    private int f2548e;
 
     /* renamed from: f  reason: collision with root package name */
-    private boolean f2220f;
+    private boolean f2549f;
 
     /* renamed from: g  reason: collision with root package name */
-    private boolean f2221g;
+    private boolean f2550g;
 
     /* renamed from: h  reason: collision with root package name */
-    private PreviewView.d f2222h = f2214i;
+    private PreviewView.d f2551h = f2543i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f2223a;
+        static final /* synthetic */ int[] f2552a;
 
         static {
             int[] iArr = new int[PreviewView.d.values().length];
-            f2223a = iArr;
+            f2552a = iArr;
             try {
                 iArr[PreviewView.d.FIT_CENTER.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f2223a[PreviewView.d.FILL_CENTER.ordinal()] = 2;
+                f2552a[PreviewView.d.FILL_CENTER.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f2223a[PreviewView.d.FIT_END.ordinal()] = 3;
+                f2552a[PreviewView.d.FIT_END.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f2223a[PreviewView.d.FILL_END.ordinal()] = 4;
+                f2552a[PreviewView.d.FILL_END.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f2223a[PreviewView.d.FIT_START.ordinal()] = 5;
+                f2552a[PreviewView.d.FIT_START.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                f2223a[PreviewView.d.FILL_START.ordinal()] = 6;
+                f2552a[PreviewView.d.FILL_START.ordinal()] = 6;
             } catch (NoSuchFieldError unused6) {
             }
         }
@@ -87,35 +87,35 @@ public final class e {
     }
 
     private int e() {
-        if (!this.f2221g) {
-            return this.f2217c;
+        if (!this.f2550g) {
+            return this.f2546c;
         }
-        return -b0.c.b(this.f2219e);
+        return -b0.c.b(this.f2548e);
     }
 
     private Size f() {
-        if (b0.q.i(this.f2217c)) {
-            return new Size(this.f2216b.height(), this.f2216b.width());
+        if (b0.q.i(this.f2546c)) {
+            return new Size(this.f2545b.height(), this.f2545b.width());
         }
-        return new Size(this.f2216b.width(), this.f2216b.height());
+        return new Size(this.f2545b.width(), this.f2545b.height());
     }
 
     private RectF l(Size size, int i10) {
         b2.e.i(m());
         Matrix j10 = j(size, i10);
-        RectF rectF = new RectF(0.0f, 0.0f, this.f2215a.getWidth(), this.f2215a.getHeight());
+        RectF rectF = new RectF(0.0f, 0.0f, this.f2544a.getWidth(), this.f2544a.getHeight());
         j10.mapRect(rectF);
         return rectF;
     }
 
     private boolean m() {
         boolean z10;
-        if (this.f2221g && this.f2219e == -1) {
+        if (this.f2550g && this.f2548e == -1) {
             z10 = false;
         } else {
             z10 = true;
         }
-        if (this.f2216b != null && this.f2215a != null && z10) {
+        if (this.f2545b != null && this.f2544a != null && z10) {
             return true;
         }
         return false;
@@ -123,7 +123,7 @@ public final class e {
 
     private static void p(Matrix matrix, RectF rectF, RectF rectF2, PreviewView.d dVar) {
         Matrix.ScaleToFit scaleToFit;
-        switch (a.f2223a[dVar.ordinal()]) {
+        switch (a.f2552a[dVar.ordinal()]) {
             case 1:
             case 2:
                 scaleToFit = Matrix.ScaleToFit.CENTER;
@@ -160,7 +160,7 @@ public final class e {
         Canvas canvas = new Canvas(createBitmap);
         Matrix matrix = new Matrix();
         matrix.postConcat(k10);
-        matrix.postScale(l10.width() / this.f2215a.getWidth(), l10.height() / this.f2215a.getHeight());
+        matrix.postScale(l10.width() / this.f2544a.getWidth(), l10.height() / this.f2544a.getHeight());
         matrix.postTranslate(l10.left, l10.top);
         canvas.drawBitmap(bitmap, matrix, new Paint(7));
         return createBitmap;
@@ -184,7 +184,7 @@ public final class e {
         Size f10 = f();
         RectF rectF2 = new RectF(0.0f, 0.0f, f10.getWidth(), f10.getHeight());
         Matrix matrix = new Matrix();
-        p(matrix, rectF2, rectF, this.f2222h);
+        p(matrix, rectF2, rectF, this.f2551h);
         matrix.mapRect(rectF2);
         if (i10 == 1) {
             return b(rectF2, size.getWidth() / 2.0f);
@@ -194,7 +194,7 @@ public final class e {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public PreviewView.d g() {
-        return this.f2222h;
+        return this.f2551h;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -202,14 +202,14 @@ public final class e {
         if (!m()) {
             return null;
         }
-        Matrix matrix = new Matrix(this.f2218d);
+        Matrix matrix = new Matrix(this.f2547d);
         matrix.postConcat(j(size, i10));
         return matrix;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Rect i() {
-        return this.f2216b;
+        return this.f2545b;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -221,20 +221,20 @@ public final class e {
         } else {
             d10 = d(size, i10);
         }
-        Matrix d11 = b0.q.d(new RectF(this.f2216b), d10, this.f2217c);
-        if (this.f2220f && this.f2221g) {
-            if (b0.q.i(this.f2217c)) {
-                d11.preScale(1.0f, -1.0f, this.f2216b.centerX(), this.f2216b.centerY());
+        Matrix d11 = b0.q.d(new RectF(this.f2545b), d10, this.f2546c);
+        if (this.f2549f && this.f2550g) {
+            if (b0.q.i(this.f2546c)) {
+                d11.preScale(1.0f, -1.0f, this.f2545b.centerX(), this.f2545b.centerY());
                 return d11;
             }
-            d11.preScale(-1.0f, 1.0f, this.f2216b.centerX(), this.f2216b.centerY());
+            d11.preScale(-1.0f, 1.0f, this.f2545b.centerX(), this.f2545b.centerY());
         }
         return d11;
     }
 
     Matrix k() {
         b2.e.i(m());
-        RectF rectF = new RectF(0.0f, 0.0f, this.f2215a.getWidth(), this.f2215a.getHeight());
+        RectF rectF = new RectF(0.0f, 0.0f, this.f2544a.getWidth(), this.f2544a.getHeight());
         return b0.q.d(rectF, rectF, e());
     }
 
@@ -244,28 +244,28 @@ public final class e {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void o(int i10, int i11) {
-        if (!this.f2221g) {
+        if (!this.f2550g) {
             return;
         }
-        this.f2217c = i10;
-        this.f2219e = i11;
+        this.f2546c = i10;
+        this.f2548e = i11;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void q(PreviewView.d dVar) {
-        this.f2222h = dVar;
+        this.f2551h = dVar;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void r(w1.h hVar, Size size, boolean z10) {
         y0.a("PreviewTransform", "Transformation info set: " + hVar + " " + size + " " + z10);
-        this.f2216b = hVar.a();
-        this.f2217c = hVar.b();
-        this.f2219e = hVar.d();
-        this.f2215a = size;
-        this.f2220f = z10;
-        this.f2221g = hVar.e();
-        this.f2218d = hVar.c();
+        this.f2545b = hVar.a();
+        this.f2546c = hVar.b();
+        this.f2548e = hVar.d();
+        this.f2544a = size;
+        this.f2549f = z10;
+        this.f2550g = hVar.e();
+        this.f2547d = hVar.c();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -280,12 +280,12 @@ public final class e {
             } else {
                 Display display = view.getDisplay();
                 boolean z11 = false;
-                if (this.f2221g && display != null && display.getRotation() != this.f2219e) {
+                if (this.f2550g && display != null && display.getRotation() != this.f2548e) {
                     z10 = true;
                 } else {
                     z10 = false;
                 }
-                if (!this.f2221g && e() != 0) {
+                if (!this.f2550g && e() != 0) {
                     z11 = true;
                 }
                 if (z10 || z11) {
@@ -295,8 +295,8 @@ public final class e {
             RectF l10 = l(size, i10);
             view.setPivotX(0.0f);
             view.setPivotY(0.0f);
-            view.setScaleX(l10.width() / this.f2215a.getWidth());
-            view.setScaleY(l10.height() / this.f2215a.getHeight());
+            view.setScaleX(l10.width() / this.f2544a.getWidth());
+            view.setScaleY(l10.height() / this.f2544a.getHeight());
             view.setTranslationX(l10.left - view.getLeft());
             view.setTranslationY(l10.top - view.getTop());
             return;

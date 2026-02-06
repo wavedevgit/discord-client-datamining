@@ -14,16 +14,16 @@ public final class UnsignedArrayType {
     public static final UnsignedArrayType USHORTARRAY;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final /* synthetic */ UnsignedArrayType[] f32150i;
+    private static final /* synthetic */ UnsignedArrayType[] f32170i;
 
     /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f32151o;
+    private static final /* synthetic */ EnumEntries f32171o;
 
     /* renamed from: d  reason: collision with root package name */
-    private final ClassId f32152d;
+    private final ClassId f32172d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Name f32153e;
+    private final Name f32173e;
 
     static {
         ClassId.Companion companion = ClassId.Companion;
@@ -32,13 +32,13 @@ public final class UnsignedArrayType {
         UINTARRAY = new UnsignedArrayType("UINTARRAY", 2, ClassId.Companion.fromString$default(companion, "kotlin/UIntArray", false, 2, null));
         ULONGARRAY = new UnsignedArrayType("ULONGARRAY", 3, ClassId.Companion.fromString$default(companion, "kotlin/ULongArray", false, 2, null));
         UnsignedArrayType[] a10 = a();
-        f32150i = a10;
-        f32151o = vr.a.a(a10);
+        f32170i = a10;
+        f32171o = xr.a.a(a10);
     }
 
     private UnsignedArrayType(String str, int i10, ClassId classId) {
-        this.f32152d = classId;
-        this.f32153e = classId.getShortClassName();
+        this.f32172d = classId;
+        this.f32173e = classId.getShortClassName();
     }
 
     private static final /* synthetic */ UnsignedArrayType[] a() {
@@ -50,11 +50,11 @@ public final class UnsignedArrayType {
     }
 
     public static UnsignedArrayType[] values() {
-        return (UnsignedArrayType[]) f32150i.clone();
+        return (UnsignedArrayType[]) f32170i.clone();
     }
 
     @NotNull
     public final Name getTypeName() {
-        return this.f32153e;
+        return this.f32173e;
     }
 }

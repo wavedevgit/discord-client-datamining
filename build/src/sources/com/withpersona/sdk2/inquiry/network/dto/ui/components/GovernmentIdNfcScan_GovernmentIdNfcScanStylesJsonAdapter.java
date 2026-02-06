@@ -51,24 +51,24 @@ public final class GovernmentIdNfcScan_GovernmentIdNfcScanStylesJsonAdapter exte
     @NotNull
     public GovernmentIdNfcScan.GovernmentIdNfcScanStyles fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         AttributeStyles.GovernmentIdNfcScanPrimaryButtonStyles governmentIdNfcScanPrimaryButtonStyles = null;
         AttributeStyles.GovernmentIdNfcScanInputTextStyles governmentIdNfcScanInputTextStyles = null;
         AttributeStyles.GovernmentIdNfcScanInputDateStyles governmentIdNfcScanInputDateStyles = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 governmentIdNfcScanPrimaryButtonStyles = (AttributeStyles.GovernmentIdNfcScanPrimaryButtonStyles) this.nullableGovernmentIdNfcScanPrimaryButtonStylesAdapter.fromJson(reader);
-            } else if (W == 1) {
+            } else if (J == 1) {
                 governmentIdNfcScanInputTextStyles = (AttributeStyles.GovernmentIdNfcScanInputTextStyles) this.nullableGovernmentIdNfcScanInputTextStylesAdapter.fromJson(reader);
-            } else if (W == 2) {
+            } else if (J == 2) {
                 governmentIdNfcScanInputDateStyles = (AttributeStyles.GovernmentIdNfcScanInputDateStyles) this.nullableGovernmentIdNfcScanInputDateStylesAdapter.fromJson(reader);
             }
         }
-        reader.z();
+        reader.D();
         return new GovernmentIdNfcScan.GovernmentIdNfcScanStyles(governmentIdNfcScanPrimaryButtonStyles, governmentIdNfcScanInputTextStyles, governmentIdNfcScanInputDateStyles);
     }
 
@@ -77,13 +77,13 @@ public final class GovernmentIdNfcScan_GovernmentIdNfcScanStylesJsonAdapter exte
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (governmentIdNfcScanStyles != null) {
             writer.k();
-            writer.W("buttonPrimaryStyle");
+            writer.J("buttonPrimaryStyle");
             this.nullableGovernmentIdNfcScanPrimaryButtonStylesAdapter.toJson(writer, governmentIdNfcScanStyles.getButtonPrimaryStyle());
-            writer.W("inputTextStyle");
+            writer.J("inputTextStyle");
             this.nullableGovernmentIdNfcScanInputTextStylesAdapter.toJson(writer, governmentIdNfcScanStyles.getInputTextStyle());
-            writer.W("inputDateStyle");
+            writer.J("inputDateStyle");
             this.nullableGovernmentIdNfcScanInputDateStylesAdapter.toJson(writer, governmentIdNfcScanStyles.getInputDateStyle());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

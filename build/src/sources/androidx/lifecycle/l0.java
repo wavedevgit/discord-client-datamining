@@ -7,62 +7,62 @@ import kotlin.jvm.internal.Intrinsics;
 public class l0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final LifecycleRegistry f4632a;
+    private final LifecycleRegistry f4961a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Handler f4633b;
+    private final Handler f4962b;
 
     /* renamed from: c  reason: collision with root package name */
-    private a f4634c;
+    private a f4963c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        private final LifecycleRegistry f4635d;
+        private final LifecycleRegistry f4964d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final Lifecycle.a f4636e;
+        private final Lifecycle.a f4965e;
 
         /* renamed from: i  reason: collision with root package name */
-        private boolean f4637i;
+        private boolean f4966i;
 
         public a(LifecycleRegistry registry, Lifecycle.a event) {
             Intrinsics.checkNotNullParameter(registry, "registry");
             Intrinsics.checkNotNullParameter(event, "event");
-            this.f4635d = registry;
-            this.f4636e = event;
+            this.f4964d = registry;
+            this.f4965e = event;
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            if (!this.f4637i) {
-                this.f4635d.j(this.f4636e);
-                this.f4637i = true;
+            if (!this.f4966i) {
+                this.f4964d.j(this.f4965e);
+                this.f4966i = true;
             }
         }
     }
 
     public l0(LifecycleOwner provider) {
         Intrinsics.checkNotNullParameter(provider, "provider");
-        this.f4632a = new LifecycleRegistry(provider);
-        this.f4633b = new Handler();
+        this.f4961a = new LifecycleRegistry(provider);
+        this.f4962b = new Handler();
     }
 
     private final void f(Lifecycle.a aVar) {
-        a aVar2 = this.f4634c;
+        a aVar2 = this.f4963c;
         if (aVar2 != null) {
             aVar2.run();
         }
-        a aVar3 = new a(this.f4632a, aVar);
-        this.f4634c = aVar3;
-        Handler handler = this.f4633b;
+        a aVar3 = new a(this.f4961a, aVar);
+        this.f4963c = aVar3;
+        Handler handler = this.f4962b;
         Intrinsics.checkNotNull(aVar3);
         handler.postAtFrontOfQueue(aVar3);
     }
 
     public Lifecycle a() {
-        return this.f4632a;
+        return this.f4961a;
     }
 
     public void b() {

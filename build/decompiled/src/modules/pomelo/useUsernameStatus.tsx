@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/pomelo/useUsernameStatus.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun81541: for (var _fun81541_ip = 0;;) switch (_fun81541_ip) {
+        _fun81542: for (var _fun81542_ip = 0;;) switch (_fun81542_ip) {
             case 0:
                 var6 = arg0;
                 var9 = arguments[1];
@@ -41,22 +41,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot0 = var6;
                 var8 = undefined;
                 if (!(var9 === var8)) {
-                    _fun81541_ip = 26;
-                    continue _fun81541
+                    _fun81542_ip = 26;
+                    continue _fun81542
                 }
             case 24:
                 var9 = true;
             case 26:
                 if (!(var7 === var8)) {
-                    _fun81541_ip = 32;
-                    continue _fun81541
+                    _fun81542_ip = 32;
+                    continue _fun81542
                 }
             case 30:
                 var7 = false;
             case 32:
                 if (!(var5 === var8)) {
-                    _fun81541_ip = 38;
-                    continue _fun81541
+                    _fun81542_ip = 38;
+                    continue _fun81542
                 }
             case 36:
                 var5 = undefined;
@@ -88,35 +88,35 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2[1] = var6;
                 var2[2] = var5;
                 var1 = function() { // Environment: var1
-                    _fun81542: for (var _fun81542_ip = 0;;) switch (_fun81542_ip) {
+                    _fun81543: for (var _fun81543_ip = 0;;) switch (_fun81543_ip) {
                         case 0:
                             var2 = _closure2_slot0;
                             var1 = '';
                             if (!(var1 !== var2)) {
-                                _fun81542_ip = 54;
-                                continue _fun81542
+                                _fun81543_ip = 54;
+                                continue _fun81543
                             }
                         case 15:
                             var2 = _closure2_slot0;
                             var1 = _closure2_slot1;
                             if (!(var2 !== var1)) {
-                                _fun81542_ip = 54;
-                                continue _fun81542
+                                _fun81543_ip = 54;
+                                continue _fun81543
                             }
                         case 27:
                             var2 = _closure2_slot2;
                             var1 = null;
                             if (!(var1 != var2)) {
-                                _fun81542_ip = 65;
-                                continue _fun81542
+                                _fun81543_ip = 65;
+                                continue _fun81543
                             }
                         case 37:
                             var3 = _closure2_slot3;
                             var2 = _closure2_slot2;
                             var1 = undefined;
                             var1 = var3.bind(var1)(var2);
-                            _fun81542_ip = 65;
-                            continue _fun81542;
+                            _fun81543_ip = 65;
+                            continue _fun81543;
                         case 54:
                             var1 = _closure2_slot3;
                             var0 = undefined;
@@ -132,4 +132,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useUsernameStatus = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 10379, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 10381, 2]);

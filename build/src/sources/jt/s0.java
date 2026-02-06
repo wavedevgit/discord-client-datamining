@@ -1,72 +1,96 @@
 package jt;
 
-import ft.k;
-import ft.l;
-import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.reflect.KClass;
 import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
+import kotlinx.serialization.encoding.CompositeEncoder;
+import kotlinx.serialization.encoding.Decoder;
+import kotlinx.serialization.encoding.Encoder;
+import kotlinx.serialization.encoding.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class s0 implements kt.d {
+public abstract class s0 implements KSerializer {
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f31378a;
+    private final KSerializer f31073a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f31379b;
+    private final KSerializer f31074b;
 
-    public s0(boolean z10, String discriminator) {
-        Intrinsics.checkNotNullParameter(discriminator, "discriminator");
-        this.f31378a = z10;
-        this.f31379b = discriminator;
+    public /* synthetic */ s0(KSerializer kSerializer, KSerializer kSerializer2, DefaultConstructorMarker defaultConstructorMarker) {
+        this(kSerializer, kSerializer2);
     }
 
-    private final void d(SerialDescriptor serialDescriptor, KClass kClass) {
-        int d10 = serialDescriptor.d();
-        for (int i10 = 0; i10 < d10; i10++) {
-            String e10 = serialDescriptor.e(i10);
-            if (Intrinsics.areEqual(e10, this.f31379b)) {
-                throw new IllegalArgumentException("Polymorphic serializer for " + kClass + " has property '" + e10 + "' that conflicts with JSON class discriminator. You can either change class discriminator in JsonConfiguration, rename property with @SerialName annotation or fall back to array polymorphism");
-            }
-        }
+    protected abstract Object a(Object obj);
+
+    protected final KSerializer b() {
+        return this.f31073a;
     }
 
-    private final void e(SerialDescriptor serialDescriptor, KClass kClass) {
-        ft.k kind = serialDescriptor.getKind();
-        if (!(kind instanceof ft.d) && !Intrinsics.areEqual(kind, k.a.f23492a)) {
-            if (!this.f31378a) {
-                if (!Intrinsics.areEqual(kind, l.b.f23495a) && !Intrinsics.areEqual(kind, l.c.f23496a) && !(kind instanceof ft.e) && !(kind instanceof k.b)) {
-                    return;
+    protected abstract Object c(Object obj);
+
+    protected final KSerializer d() {
+        return this.f31074b;
+    }
+
+    @Override // kotlinx.serialization.DeserializationStrategy
+    public Object deserialize(Decoder decoder) {
+        Object obj;
+        Object obj2;
+        Object obj3;
+        Object obj4;
+        Object e10;
+        Intrinsics.checkNotNullParameter(decoder, "decoder");
+        SerialDescriptor descriptor = getDescriptor();
+        kotlinx.serialization.encoding.c b10 = decoder.b(descriptor);
+        if (!b10.p()) {
+            obj = u2.f31084a;
+            obj2 = u2.f31084a;
+            Object obj5 = obj2;
+            while (true) {
+                int o10 = b10.o(getDescriptor());
+                if (o10 == -1) {
+                    obj3 = u2.f31084a;
+                    if (obj != obj3) {
+                        obj4 = u2.f31084a;
+                        if (obj5 != obj4) {
+                            e10 = e(obj, obj5);
+                        } else {
+                            throw new ft.n("Element 'value' is missing");
+                        }
+                    } else {
+                        throw new ft.n("Element 'key' is missing");
+                    }
+                } else if (o10 != 0) {
+                    if (o10 == 1) {
+                        obj5 = c.a.c(b10, getDescriptor(), 1, d(), null, 8, null);
+                    } else {
+                        throw new ft.n("Invalid index: " + o10);
+                    }
+                } else {
+                    obj = c.a.c(b10, getDescriptor(), 0, b(), null, 8, null);
                 }
-                throw new IllegalArgumentException("Serializer for " + kClass.getSimpleName() + " of kind " + kind + " cannot be serialized polymorphically with class discriminator.");
             }
-            return;
+        } else {
+            e10 = e(c.a.c(b10, getDescriptor(), 0, b(), null, 8, null), c.a.c(b10, getDescriptor(), 1, d(), null, 8, null));
         }
-        throw new IllegalArgumentException("Serializer for " + kClass.getSimpleName() + " can't be registered as a subclass for polymorphic serialization because its kind " + kind + " is not concrete. To work with multiple hierarchies, register it as a base class.");
+        b10.c(descriptor);
+        return e10;
     }
 
-    @Override // kt.d
-    public void a(KClass baseClass, KClass actualClass, KSerializer actualSerializer) {
-        Intrinsics.checkNotNullParameter(baseClass, "baseClass");
-        Intrinsics.checkNotNullParameter(actualClass, "actualClass");
-        Intrinsics.checkNotNullParameter(actualSerializer, "actualSerializer");
-        SerialDescriptor descriptor = actualSerializer.getDescriptor();
-        e(descriptor, actualClass);
-        if (!this.f31378a) {
-            d(descriptor, actualClass);
-        }
+    protected abstract Object e(Object obj, Object obj2);
+
+    @Override // ft.o
+    public void serialize(Encoder encoder, Object obj) {
+        Intrinsics.checkNotNullParameter(encoder, "encoder");
+        CompositeEncoder b10 = encoder.b(getDescriptor());
+        b10.s(getDescriptor(), 0, this.f31073a, a(obj));
+        b10.s(getDescriptor(), 1, this.f31074b, c(obj));
+        b10.c(getDescriptor());
     }
 
-    @Override // kt.d
-    public void b(KClass baseClass, Function1 defaultDeserializerProvider) {
-        Intrinsics.checkNotNullParameter(baseClass, "baseClass");
-        Intrinsics.checkNotNullParameter(defaultDeserializerProvider, "defaultDeserializerProvider");
-    }
-
-    @Override // kt.d
-    public void c(KClass baseClass, Function1 defaultSerializerProvider) {
-        Intrinsics.checkNotNullParameter(baseClass, "baseClass");
-        Intrinsics.checkNotNullParameter(defaultSerializerProvider, "defaultSerializerProvider");
+    private s0(KSerializer kSerializer, KSerializer kSerializer2) {
+        this.f31073a = kSerializer;
+        this.f31074b = kSerializer2;
     }
 }

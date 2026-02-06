@@ -5,11 +5,11 @@ import com.google.android.play.core.integrity.c;
 final class s0 extends c.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final long f16232a;
+    private final long f16212a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public /* synthetic */ s0(long j10, int i10, zh.f fVar) {
-        this.f16232a = j10;
+    public /* synthetic */ s0(long j10, int i10, ai.f fVar) {
+        this.f16212a = j10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -20,7 +20,7 @@ final class s0 extends c.a {
 
     @Override // com.google.android.play.core.integrity.c.a
     public final long b() {
-        return this.f16232a;
+        return this.f16212a;
     }
 
     public final boolean equals(Object obj) {
@@ -29,7 +29,7 @@ final class s0 extends c.a {
         }
         if (obj instanceof c.a) {
             c.a aVar = (c.a) obj;
-            if (this.f16232a == aVar.b()) {
+            if (this.f16212a == aVar.b()) {
                 aVar.a();
                 return true;
             }
@@ -38,11 +38,11 @@ final class s0 extends c.a {
     }
 
     public final int hashCode() {
-        long j10 = this.f16232a;
+        long j10 = this.f16212a;
         return (((int) (j10 ^ (j10 >>> 32))) ^ 1000003) * 1000003;
     }
 
     public final String toString() {
-        return "PrepareIntegrityTokenRequest{cloudProjectNumber=" + this.f16232a + ", webViewRequestMode=0}";
+        return "PrepareIntegrityTokenRequest{cloudProjectNumber=" + this.f16212a + ", webViewRequestMode=0}";
     }
 }

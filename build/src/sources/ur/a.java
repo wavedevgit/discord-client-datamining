@@ -1,44 +1,66 @@
 package ur;
 
-import kotlin.enums.EnumEntries;
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a {
+public abstract class a {
 
-    /* renamed from: d  reason: collision with root package name */
-    public static final a f51654d = new a("COROUTINE_SUSPENDED", 0);
+    /* renamed from: ur.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class C0682a extends Thread {
 
-    /* renamed from: e  reason: collision with root package name */
-    public static final a f51655e = new a("UNDECIDED", 1);
+        /* renamed from: d  reason: collision with root package name */
+        final /* synthetic */ Function0 f52086d;
 
-    /* renamed from: i  reason: collision with root package name */
-    public static final a f51656i = new a("RESUMED", 2);
+        C0682a(Function0 function0) {
+            this.f52086d = function0;
+        }
 
-    /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ a[] f51657o;
-
-    /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f51658p;
-
-    static {
-        a[] a10 = a();
-        f51657o = a10;
-        f51658p = vr.a.a(a10);
+        @Override // java.lang.Thread, java.lang.Runnable
+        public void run() {
+            this.f52086d.invoke();
+        }
     }
 
-    private a(String str, int i10) {
+    public static final Thread a(boolean z10, boolean z11, ClassLoader classLoader, String str, int i10, Function0 block) {
+        Intrinsics.checkNotNullParameter(block, "block");
+        C0682a c0682a = new C0682a(block);
+        if (z11) {
+            c0682a.setDaemon(true);
+        }
+        if (i10 > 0) {
+            c0682a.setPriority(i10);
+        }
+        if (str != null) {
+            c0682a.setName(str);
+        }
+        if (classLoader != null) {
+            c0682a.setContextClassLoader(classLoader);
+        }
+        if (z10) {
+            c0682a.start();
+        }
+        return c0682a;
     }
 
-    private static final /* synthetic */ a[] a() {
-        return new a[]{f51654d, f51655e, f51656i};
-    }
-
-    public static a valueOf(String str) {
-        return (a) Enum.valueOf(a.class, str);
-    }
-
-    public static a[] values() {
-        return (a[]) f51657o.clone();
+    public static /* synthetic */ Thread b(boolean z10, boolean z11, ClassLoader classLoader, String str, int i10, Function0 function0, int i11, Object obj) {
+        if ((i11 & 1) != 0) {
+            z10 = true;
+        }
+        if ((i11 & 2) != 0) {
+            z11 = false;
+        }
+        if ((i11 & 4) != 0) {
+            classLoader = null;
+        }
+        if ((i11 & 8) != 0) {
+            str = null;
+        }
+        if ((i11 & 16) != 0) {
+            i10 = -1;
+        }
+        int i12 = i10;
+        String str2 = str;
+        return a(z10, z11, classLoader, str2, i12, function0);
     }
 }

@@ -41,22 +41,22 @@ public final class NextStep_CompleteJsonAdapter extends h {
     @NotNull
     public NextStep.Complete fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         String str = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0 && (str = (String) this.stringAdapter.fromJson(reader)) == null) {
-                throw ym.c.x(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
+                reader.S();
+            } else if (J == 0 && (str = (String) this.stringAdapter.fromJson(reader)) == null) {
+                throw an.c.x(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
             }
         }
-        reader.z();
+        reader.D();
         if (str != null) {
             return new NextStep.Complete(str);
         }
-        throw ym.c.o(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
+        throw an.c.o(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -64,9 +64,9 @@ public final class NextStep_CompleteJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (complete != null) {
             writer.k();
-            writer.W(StackTraceHelper.NAME_KEY);
+            writer.J(StackTraceHelper.NAME_KEY);
             this.stringAdapter.toJson(writer, complete.getName());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

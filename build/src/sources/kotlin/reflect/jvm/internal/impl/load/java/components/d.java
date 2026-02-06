@@ -7,16 +7,16 @@ import kotlin.jvm.functions.Function0;
 public class d implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final JavaRetentionAnnotationDescriptor f32805d;
+    private final JavaRetentionAnnotationDescriptor f32825d;
 
     public d(JavaRetentionAnnotationDescriptor javaRetentionAnnotationDescriptor) {
-        this.f32805d = javaRetentionAnnotationDescriptor;
+        this.f32825d = javaRetentionAnnotationDescriptor;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         Map e10;
-        e10 = JavaRetentionAnnotationDescriptor.e(this.f32805d);
+        e10 = JavaRetentionAnnotationDescriptor.e(this.f32825d);
         return e10;
     }
 }

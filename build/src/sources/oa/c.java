@@ -26,19 +26,19 @@ public class c extends a {
     @Override // y8.a
     /* renamed from: E */
     public void f(CloseableReference closeableReference) {
-        CloseableReference.N(closeableReference);
+        CloseableReference.z(closeableReference);
     }
 
     @Override // y8.a, com.facebook.datasource.DataSource
     /* renamed from: G */
     public CloseableReference getResult() {
-        return CloseableReference.E((CloseableReference) super.getResult());
+        return CloseableReference.n((CloseableReference) super.getResult());
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // oa.a
     /* renamed from: H */
     public void D(CloseableReference closeableReference, int i10, ProducerContext producerContext) {
-        super.D(CloseableReference.E(closeableReference), i10, producerContext);
+        super.D(CloseableReference.n(closeableReference), i10, producerContext);
     }
 }

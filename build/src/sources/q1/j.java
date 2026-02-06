@@ -20,13 +20,13 @@ import q1.j;
 public abstract class j {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final ThreadLocal f47314a = new ThreadLocal();
+    private static final ThreadLocal f46362a = new ThreadLocal();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final WeakHashMap f47315b = new WeakHashMap(0);
+    private static final WeakHashMap f46363b = new WeakHashMap(0);
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Object f47316c = new Object();
+    private static final Object f46364c = new Object();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     static class a {
@@ -63,24 +63,24 @@ public abstract class j {
     public static class d {
 
         /* renamed from: a  reason: collision with root package name */
-        final ColorStateList f47317a;
+        final ColorStateList f46365a;
 
         /* renamed from: b  reason: collision with root package name */
-        final Configuration f47318b;
+        final Configuration f46366b;
 
         /* renamed from: c  reason: collision with root package name */
-        final int f47319c;
+        final int f46367c;
 
         d(ColorStateList colorStateList, Configuration configuration, Resources.Theme theme) {
             int hashCode;
-            this.f47317a = colorStateList;
-            this.f47318b = configuration;
+            this.f46365a = colorStateList;
+            this.f46366b = configuration;
             if (theme == null) {
                 hashCode = 0;
             } else {
                 hashCode = theme.hashCode();
             }
-            this.f47319c = hashCode;
+            this.f46367c = hashCode;
         }
     }
 
@@ -89,14 +89,14 @@ public abstract class j {
     public static final class e {
 
         /* renamed from: a  reason: collision with root package name */
-        final Resources f47320a;
+        final Resources f46368a;
 
         /* renamed from: b  reason: collision with root package name */
-        final Resources.Theme f47321b;
+        final Resources.Theme f46369b;
 
         e(Resources resources, Resources.Theme theme) {
-            this.f47320a = resources;
-            this.f47321b = theme;
+            this.f46368a = resources;
+            this.f46369b = theme;
         }
 
         public boolean equals(Object obj) {
@@ -105,7 +105,7 @@ public abstract class j {
             }
             if (obj != null && e.class == obj.getClass()) {
                 e eVar = (e) obj;
-                if (this.f47320a.equals(eVar.f47320a) && b2.b.a(this.f47321b, eVar.f47321b)) {
+                if (this.f46368a.equals(eVar.f46368a) && b2.b.a(this.f46369b, eVar.f46369b)) {
                     return true;
                 }
             }
@@ -113,7 +113,7 @@ public abstract class j {
         }
 
         public int hashCode() {
-            return b2.b.b(this.f47320a, this.f47321b);
+            return b2.b.b(this.f46368a, this.f46369b);
         }
     }
 
@@ -156,33 +156,33 @@ public abstract class j {
         static class a {
 
             /* renamed from: a  reason: collision with root package name */
-            private static final Object f47322a = new Object();
+            private static final Object f46370a = new Object();
 
             /* renamed from: b  reason: collision with root package name */
-            private static Method f47323b;
+            private static Method f46371b;
 
             /* renamed from: c  reason: collision with root package name */
-            private static boolean f47324c;
+            private static boolean f46372c;
 
             static void a(Resources.Theme theme) {
-                synchronized (f47322a) {
-                    if (!f47324c) {
+                synchronized (f46370a) {
+                    if (!f46372c) {
                         try {
                             Method declaredMethod = Resources.Theme.class.getDeclaredMethod("rebase", null);
-                            f47323b = declaredMethod;
+                            f46371b = declaredMethod;
                             declaredMethod.setAccessible(true);
                         } catch (NoSuchMethodException e10) {
                             Log.i("ResourcesCompat", "Failed to retrieve rebase() method", e10);
                         }
-                        f47324c = true;
+                        f46372c = true;
                     }
-                    Method method = f47323b;
+                    Method method = f46371b;
                     if (method != null) {
                         try {
                             method.invoke(theme, null);
                         } catch (IllegalAccessException | InvocationTargetException e11) {
                             Log.i("ResourcesCompat", "Failed to invoke rebase() method via reflection", e11);
-                            f47323b = null;
+                            f46371b = null;
                         }
                     }
                 }
@@ -206,15 +206,15 @@ public abstract class j {
     }
 
     private static void a(e eVar, int i10, ColorStateList colorStateList, Resources.Theme theme) {
-        synchronized (f47316c) {
+        synchronized (f46364c) {
             try {
-                WeakHashMap weakHashMap = f47315b;
+                WeakHashMap weakHashMap = f46363b;
                 SparseArray sparseArray = (SparseArray) weakHashMap.get(eVar);
                 if (sparseArray == null) {
                     sparseArray = new SparseArray();
                     weakHashMap.put(eVar, sparseArray);
                 }
-                sparseArray.append(i10, new d(colorStateList, eVar.f47320a.getConfiguration(), theme));
+                sparseArray.append(i10, new d(colorStateList, eVar.f46368a.getConfiguration(), theme));
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -222,7 +222,7 @@ public abstract class j {
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:21:0x003c, code lost:
-        if (r2.f47319c == r5.hashCode()) goto L17;
+        if (r2.f46367c == r5.hashCode()) goto L17;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -230,9 +230,9 @@ public abstract class j {
     */
     private static android.content.res.ColorStateList b(q1.j.e r5, int r6) {
         /*
-            java.lang.Object r0 = q1.j.f47316c
+            java.lang.Object r0 = q1.j.f46364c
             monitor-enter(r0)
-            java.util.WeakHashMap r1 = q1.j.f47315b     // Catch: java.lang.Throwable -> L32
+            java.util.WeakHashMap r1 = q1.j.f46363b     // Catch: java.lang.Throwable -> L32
             java.lang.Object r1 = r1.get(r5)     // Catch: java.lang.Throwable -> L32
             android.util.SparseArray r1 = (android.util.SparseArray) r1     // Catch: java.lang.Throwable -> L32
             if (r1 == 0) goto L45
@@ -241,14 +241,14 @@ public abstract class j {
             java.lang.Object r2 = r1.get(r6)     // Catch: java.lang.Throwable -> L32
             q1.j$d r2 = (q1.j.d) r2     // Catch: java.lang.Throwable -> L32
             if (r2 == 0) goto L45
-            android.content.res.Configuration r3 = r2.f47318b     // Catch: java.lang.Throwable -> L32
-            android.content.res.Resources r4 = r5.f47320a     // Catch: java.lang.Throwable -> L32
+            android.content.res.Configuration r3 = r2.f46366b     // Catch: java.lang.Throwable -> L32
+            android.content.res.Resources r4 = r5.f46368a     // Catch: java.lang.Throwable -> L32
             android.content.res.Configuration r4 = r4.getConfiguration()     // Catch: java.lang.Throwable -> L32
             boolean r3 = r3.equals(r4)     // Catch: java.lang.Throwable -> L32
             if (r3 == 0) goto L42
-            android.content.res.Resources$Theme r5 = r5.f47321b     // Catch: java.lang.Throwable -> L32
+            android.content.res.Resources$Theme r5 = r5.f46369b     // Catch: java.lang.Throwable -> L32
             if (r5 != 0) goto L34
-            int r3 = r2.f47319c     // Catch: java.lang.Throwable -> L32
+            int r3 = r2.f46367c     // Catch: java.lang.Throwable -> L32
             if (r3 == 0) goto L3e
             goto L34
         L32:
@@ -256,11 +256,11 @@ public abstract class j {
             goto L48
         L34:
             if (r5 == 0) goto L42
-            int r3 = r2.f47319c     // Catch: java.lang.Throwable -> L32
+            int r3 = r2.f46367c     // Catch: java.lang.Throwable -> L32
             int r5 = r5.hashCode()     // Catch: java.lang.Throwable -> L32
             if (r3 != r5) goto L42
         L3e:
-            android.content.res.ColorStateList r5 = r2.f47317a     // Catch: java.lang.Throwable -> L32
+            android.content.res.ColorStateList r5 = r2.f46365a     // Catch: java.lang.Throwable -> L32
             monitor-exit(r0)     // Catch: java.lang.Throwable -> L32
             return r5
         L42:
@@ -345,7 +345,7 @@ public abstract class j {
     }
 
     private static TypedValue l() {
-        ThreadLocal threadLocal = f47314a;
+        ThreadLocal threadLocal = f46362a;
         TypedValue typedValue = (TypedValue) threadLocal.get();
         if (typedValue == null) {
             TypedValue typedValue2 = new TypedValue();

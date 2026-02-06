@@ -1,74 +1,42 @@
 package jt;
 
-import java.util.List;
-import kotlin.collections.CollectionsKt;
+import ht.e;
 import kotlin.jvm.internal.Intrinsics;
+import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
-import kotlinx.serialization.json.Json;
-import kotlinx.serialization.json.JsonElement;
-import kotlinx.serialization.json.JsonObject;
+import kotlinx.serialization.encoding.Decoder;
+import kotlinx.serialization.encoding.Encoder;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-final class p0 extends n0 {
+public final class p0 implements KSerializer {
 
-    /* renamed from: k  reason: collision with root package name */
-    private final JsonObject f31359k;
+    /* renamed from: a  reason: collision with root package name */
+    public static final p0 f31057a = new p0();
 
-    /* renamed from: l  reason: collision with root package name */
-    private final List f31360l;
+    /* renamed from: b  reason: collision with root package name */
+    private static final SerialDescriptor f31058b = new g2("kotlin.Int", e.f.f26475a);
 
-    /* renamed from: m  reason: collision with root package name */
-    private final int f31361m;
-
-    /* renamed from: n  reason: collision with root package name */
-    private int f31362n;
-
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public p0(Json json, JsonObject value) {
-        super(json, value, null, null, 12, null);
-        Intrinsics.checkNotNullParameter(json, "json");
-        Intrinsics.checkNotNullParameter(value, "value");
-        this.f31359k = value;
-        List h12 = CollectionsKt.h1(D0().keySet());
-        this.f31360l = h12;
-        this.f31361m = h12.size() * 2;
-        this.f31362n = -1;
+    private p0() {
     }
 
-    @Override // jt.n0, jt.c
-    /* renamed from: I0 */
-    public JsonObject D0() {
-        return this.f31359k;
+    @Override // kotlinx.serialization.DeserializationStrategy
+    /* renamed from: a */
+    public Integer deserialize(Decoder decoder) {
+        Intrinsics.checkNotNullParameter(decoder, "decoder");
+        return Integer.valueOf(decoder.h());
     }
 
-    @Override // jt.n0, jt.c, gt.q2, kotlinx.serialization.encoding.c
-    public void c(SerialDescriptor descriptor) {
-        Intrinsics.checkNotNullParameter(descriptor, "descriptor");
+    public void b(Encoder encoder, int i10) {
+        Intrinsics.checkNotNullParameter(encoder, "encoder");
+        encoder.B(i10);
     }
 
-    @Override // jt.n0, gt.g1
-    protected String i0(SerialDescriptor descriptor, int i10) {
-        Intrinsics.checkNotNullParameter(descriptor, "descriptor");
-        return (String) this.f31360l.get(i10 / 2);
+    @Override // kotlinx.serialization.KSerializer, ft.o, kotlinx.serialization.DeserializationStrategy
+    public SerialDescriptor getDescriptor() {
+        return f31058b;
     }
 
-    @Override // jt.n0, kotlinx.serialization.encoding.c
-    public int o(SerialDescriptor descriptor) {
-        Intrinsics.checkNotNullParameter(descriptor, "descriptor");
-        int i10 = this.f31362n;
-        if (i10 < this.f31361m - 1) {
-            int i11 = i10 + 1;
-            this.f31362n = i11;
-            return i11;
-        }
-        return -1;
-    }
-
-    @Override // jt.n0, jt.c
-    protected JsonElement o0(String tag) {
-        Intrinsics.checkNotNullParameter(tag, "tag");
-        if (this.f31362n % 2 == 0) {
-            return ht.h.d(tag);
-        }
-        return (JsonElement) kotlin.collections.o0.j(D0(), tag);
+    @Override // ft.o
+    public /* bridge */ /* synthetic */ void serialize(Encoder encoder, Object obj) {
+        b(encoder, ((Number) obj).intValue());
     }
 }

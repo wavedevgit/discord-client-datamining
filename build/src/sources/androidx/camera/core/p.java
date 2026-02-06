@@ -15,43 +15,43 @@ import x.y0;
 public class p implements j1, e.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Object f2138a;
+    private final Object f2467a;
 
     /* renamed from: b  reason: collision with root package name */
-    private a0.k f2139b;
+    private a0.k f2468b;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f2140c;
+    private int f2469c;
 
     /* renamed from: d  reason: collision with root package name */
-    private j1.a f2141d;
+    private j1.a f2470d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f2142e;
+    private boolean f2471e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final j1 f2143f;
+    private final j1 f2472f;
 
     /* renamed from: g  reason: collision with root package name */
-    j1.a f2144g;
+    j1.a f2473g;
 
     /* renamed from: h  reason: collision with root package name */
-    private Executor f2145h;
+    private Executor f2474h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final LongSparseArray f2146i;
+    private final LongSparseArray f2475i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final LongSparseArray f2147j;
+    private final LongSparseArray f2476j;
 
     /* renamed from: k  reason: collision with root package name */
-    private int f2148k;
+    private int f2477k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final List f2149l;
+    private final List f2478l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final List f2150m;
+    private final List f2479m;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a extends a0.k {
@@ -75,8 +75,8 @@ public class p implements j1, e.a {
     }
 
     public static /* synthetic */ void i(p pVar, j1 j1Var) {
-        synchronized (pVar.f2138a) {
-            pVar.f2140c++;
+        synchronized (pVar.f2467a) {
+            pVar.f2469c++;
         }
         pVar.n(j1Var);
     }
@@ -86,19 +86,19 @@ public class p implements j1, e.a {
     }
 
     private void k(n nVar) {
-        synchronized (this.f2138a) {
+        synchronized (this.f2467a) {
             try {
-                int indexOf = this.f2149l.indexOf(nVar);
+                int indexOf = this.f2478l.indexOf(nVar);
                 if (indexOf >= 0) {
-                    this.f2149l.remove(indexOf);
-                    int i10 = this.f2148k;
+                    this.f2478l.remove(indexOf);
+                    int i10 = this.f2477k;
                     if (indexOf <= i10) {
-                        this.f2148k = i10 - 1;
+                        this.f2477k = i10 - 1;
                     }
                 }
-                this.f2150m.remove(nVar);
-                if (this.f2140c > 0) {
-                    n(this.f2143f);
+                this.f2479m.remove(nVar);
+                if (this.f2469c > 0) {
+                    n(this.f2472f);
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -109,13 +109,13 @@ public class p implements j1, e.a {
     private void l(r rVar) {
         final j1.a aVar;
         Executor executor;
-        synchronized (this.f2138a) {
+        synchronized (this.f2467a) {
             try {
-                if (this.f2149l.size() < f()) {
+                if (this.f2478l.size() < f()) {
                     rVar.a(this);
-                    this.f2149l.add(rVar);
-                    aVar = this.f2144g;
-                    executor = this.f2145h;
+                    this.f2478l.add(rVar);
+                    aVar = this.f2473g;
+                    executor = this.f2474h;
                 } else {
                     y0.a("TAG", "Maximum image number reached.");
                     rVar.close();
@@ -141,15 +141,15 @@ public class p implements j1, e.a {
     }
 
     private void o() {
-        synchronized (this.f2138a) {
+        synchronized (this.f2467a) {
             try {
-                for (int size = this.f2146i.size() - 1; size >= 0; size--) {
-                    p0 p0Var = (p0) this.f2146i.valueAt(size);
+                for (int size = this.f2475i.size() - 1; size >= 0; size--) {
+                    p0 p0Var = (p0) this.f2475i.valueAt(size);
                     long a10 = p0Var.a();
-                    n nVar = (n) this.f2147j.get(a10);
+                    n nVar = (n) this.f2476j.get(a10);
                     if (nVar != null) {
-                        this.f2147j.remove(a10);
-                        this.f2146i.removeAt(size);
+                        this.f2476j.remove(a10);
+                        this.f2475i.removeAt(size);
                         l(new r(nVar, p0Var));
                     }
                 }
@@ -161,24 +161,24 @@ public class p implements j1, e.a {
     }
 
     private void p() {
-        synchronized (this.f2138a) {
+        synchronized (this.f2467a) {
             try {
-                if (this.f2147j.size() != 0 && this.f2146i.size() != 0) {
-                    long keyAt = this.f2147j.keyAt(0);
+                if (this.f2476j.size() != 0 && this.f2475i.size() != 0) {
+                    long keyAt = this.f2476j.keyAt(0);
                     Long valueOf = Long.valueOf(keyAt);
-                    long keyAt2 = this.f2146i.keyAt(0);
+                    long keyAt2 = this.f2475i.keyAt(0);
                     b2.e.a(!Long.valueOf(keyAt2).equals(valueOf));
                     if (keyAt2 > keyAt) {
-                        for (int size = this.f2147j.size() - 1; size >= 0; size--) {
-                            if (this.f2147j.keyAt(size) < keyAt2) {
-                                ((n) this.f2147j.valueAt(size)).close();
-                                this.f2147j.removeAt(size);
+                        for (int size = this.f2476j.size() - 1; size >= 0; size--) {
+                            if (this.f2476j.keyAt(size) < keyAt2) {
+                                ((n) this.f2476j.valueAt(size)).close();
+                                this.f2476j.removeAt(size);
                             }
                         }
                     } else {
-                        for (int size2 = this.f2146i.size() - 1; size2 >= 0; size2--) {
-                            if (this.f2146i.keyAt(size2) < keyAt) {
-                                this.f2146i.removeAt(size2);
+                        for (int size2 = this.f2475i.size() - 1; size2 >= 0; size2--) {
+                            if (this.f2475i.keyAt(size2) < keyAt) {
+                                this.f2475i.removeAt(size2);
                             }
                         }
                     }
@@ -190,33 +190,33 @@ public class p implements j1, e.a {
 
     @Override // androidx.camera.core.e.a
     public void a(n nVar) {
-        synchronized (this.f2138a) {
+        synchronized (this.f2467a) {
             k(nVar);
         }
     }
 
     @Override // a0.j1
     public n b() {
-        synchronized (this.f2138a) {
+        synchronized (this.f2467a) {
             try {
-                if (this.f2149l.isEmpty()) {
+                if (this.f2478l.isEmpty()) {
                     return null;
                 }
-                if (this.f2148k < this.f2149l.size()) {
+                if (this.f2477k < this.f2478l.size()) {
                     ArrayList<n> arrayList = new ArrayList();
-                    for (int i10 = 0; i10 < this.f2149l.size() - 1; i10++) {
-                        if (!this.f2150m.contains(this.f2149l.get(i10))) {
-                            arrayList.add((n) this.f2149l.get(i10));
+                    for (int i10 = 0; i10 < this.f2478l.size() - 1; i10++) {
+                        if (!this.f2479m.contains(this.f2478l.get(i10))) {
+                            arrayList.add((n) this.f2478l.get(i10));
                         }
                     }
                     for (n nVar : arrayList) {
                         nVar.close();
                     }
-                    int size = this.f2149l.size();
-                    List list = this.f2149l;
-                    this.f2148k = size;
+                    int size = this.f2478l.size();
+                    List list = this.f2478l;
+                    this.f2477k = size;
                     n nVar2 = (n) list.get(size - 1);
-                    this.f2150m.add(nVar2);
+                    this.f2479m.add(nVar2);
                     return nVar2;
                 }
                 throw new IllegalStateException("Maximum image number reached.");
@@ -229,25 +229,25 @@ public class p implements j1, e.a {
     @Override // a0.j1
     public int c() {
         int c10;
-        synchronized (this.f2138a) {
-            c10 = this.f2143f.c();
+        synchronized (this.f2467a) {
+            c10 = this.f2472f.c();
         }
         return c10;
     }
 
     @Override // a0.j1
     public void close() {
-        synchronized (this.f2138a) {
+        synchronized (this.f2467a) {
             try {
-                if (this.f2142e) {
+                if (this.f2471e) {
                     return;
                 }
-                for (n nVar : new ArrayList(this.f2149l)) {
+                for (n nVar : new ArrayList(this.f2478l)) {
                     nVar.close();
                 }
-                this.f2149l.clear();
-                this.f2143f.close();
-                this.f2142e = true;
+                this.f2478l.clear();
+                this.f2472f.close();
+                this.f2471e = true;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -256,45 +256,45 @@ public class p implements j1, e.a {
 
     @Override // a0.j1
     public void d() {
-        synchronized (this.f2138a) {
-            this.f2143f.d();
-            this.f2144g = null;
-            this.f2145h = null;
-            this.f2140c = 0;
+        synchronized (this.f2467a) {
+            this.f2472f.d();
+            this.f2473g = null;
+            this.f2474h = null;
+            this.f2469c = 0;
         }
     }
 
     @Override // a0.j1
     public void e(j1.a aVar, Executor executor) {
-        synchronized (this.f2138a) {
-            this.f2144g = (j1.a) b2.e.g(aVar);
-            this.f2145h = (Executor) b2.e.g(executor);
-            this.f2143f.e(this.f2141d, executor);
+        synchronized (this.f2467a) {
+            this.f2473g = (j1.a) b2.e.g(aVar);
+            this.f2474h = (Executor) b2.e.g(executor);
+            this.f2472f.e(this.f2470d, executor);
         }
     }
 
     @Override // a0.j1
     public int f() {
         int f10;
-        synchronized (this.f2138a) {
-            f10 = this.f2143f.f();
+        synchronized (this.f2467a) {
+            f10 = this.f2472f.f();
         }
         return f10;
     }
 
     @Override // a0.j1
     public n g() {
-        synchronized (this.f2138a) {
+        synchronized (this.f2467a) {
             try {
-                if (this.f2149l.isEmpty()) {
+                if (this.f2478l.isEmpty()) {
                     return null;
                 }
-                if (this.f2148k < this.f2149l.size()) {
-                    List list = this.f2149l;
-                    int i10 = this.f2148k;
-                    this.f2148k = i10 + 1;
+                if (this.f2477k < this.f2478l.size()) {
+                    List list = this.f2478l;
+                    int i10 = this.f2477k;
+                    this.f2477k = i10 + 1;
                     n nVar = (n) list.get(i10);
-                    this.f2150m.add(nVar);
+                    this.f2479m.add(nVar);
                     return nVar;
                 }
                 throw new IllegalStateException("Maximum image number reached.");
@@ -307,8 +307,8 @@ public class p implements j1, e.a {
     @Override // a0.j1
     public int getHeight() {
         int height;
-        synchronized (this.f2138a) {
-            height = this.f2143f.getHeight();
+        synchronized (this.f2467a) {
+            height = this.f2472f.getHeight();
         }
         return height;
     }
@@ -316,8 +316,8 @@ public class p implements j1, e.a {
     @Override // a0.j1
     public Surface getSurface() {
         Surface surface;
-        synchronized (this.f2138a) {
-            surface = this.f2143f.getSurface();
+        synchronized (this.f2467a) {
+            surface = this.f2472f.getSurface();
         }
         return surface;
     }
@@ -325,24 +325,24 @@ public class p implements j1, e.a {
     @Override // a0.j1
     public int getWidth() {
         int width;
-        synchronized (this.f2138a) {
-            width = this.f2143f.getWidth();
+        synchronized (this.f2467a) {
+            width = this.f2472f.getWidth();
         }
         return width;
     }
 
     public a0.k m() {
-        return this.f2139b;
+        return this.f2468b;
     }
 
     void n(j1 j1Var) {
         n nVar;
-        synchronized (this.f2138a) {
+        synchronized (this.f2467a) {
             try {
-                if (this.f2142e) {
+                if (this.f2471e) {
                     return;
                 }
-                int size = this.f2147j.size() + this.f2149l.size();
+                int size = this.f2476j.size() + this.f2478l.size();
                 if (size >= j1Var.f()) {
                     y0.a("MetadataImageReader", "Skip to acquire the next image because the acquired image count has reached the max images count.");
                     return;
@@ -351,16 +351,16 @@ public class p implements j1, e.a {
                     try {
                         nVar = j1Var.g();
                         if (nVar != null) {
-                            this.f2140c--;
+                            this.f2469c--;
                             size++;
-                            this.f2147j.put(nVar.A().a(), nVar);
+                            this.f2476j.put(nVar.E().a(), nVar);
                             o();
                         }
                     } catch (IllegalStateException e10) {
                         y0.b("MetadataImageReader", "Failed to acquire next image.", e10);
                         nVar = null;
                     }
-                    if (nVar == null || this.f2140c <= 0) {
+                    if (nVar == null || this.f2469c <= 0) {
                         break;
                     }
                 } while (size < j1Var.f());
@@ -371,12 +371,12 @@ public class p implements j1, e.a {
     }
 
     void q(u uVar) {
-        synchronized (this.f2138a) {
+        synchronized (this.f2467a) {
             try {
-                if (this.f2142e) {
+                if (this.f2471e) {
                     return;
                 }
-                this.f2146i.put(uVar.a(), new e0.c(uVar));
+                this.f2475i.put(uVar.a(), new e0.c(uVar));
                 o();
             } catch (Throwable th2) {
                 throw th2;
@@ -385,21 +385,21 @@ public class p implements j1, e.a {
     }
 
     p(j1 j1Var) {
-        this.f2138a = new Object();
-        this.f2139b = new a();
-        this.f2140c = 0;
-        this.f2141d = new j1.a() { // from class: x.z0
+        this.f2467a = new Object();
+        this.f2468b = new a();
+        this.f2469c = 0;
+        this.f2470d = new j1.a() { // from class: x.z0
             @Override // a0.j1.a
             public final void a(a0.j1 j1Var2) {
                 androidx.camera.core.p.i(androidx.camera.core.p.this, j1Var2);
             }
         };
-        this.f2142e = false;
-        this.f2146i = new LongSparseArray();
-        this.f2147j = new LongSparseArray();
-        this.f2150m = new ArrayList();
-        this.f2143f = j1Var;
-        this.f2148k = 0;
-        this.f2149l = new ArrayList(f());
+        this.f2471e = false;
+        this.f2475i = new LongSparseArray();
+        this.f2476j = new LongSparseArray();
+        this.f2479m = new ArrayList();
+        this.f2472f = j1Var;
+        this.f2477k = 0;
+        this.f2478l = new ArrayList(f());
     }
 }

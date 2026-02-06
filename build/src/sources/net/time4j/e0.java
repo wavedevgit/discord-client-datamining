@@ -3,7 +3,7 @@ package net.time4j;
 import java.io.Serializable;
 import net.time4j.f;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-final class e0 extends pt.f implements u, Serializable {
+final class e0 extends rt.f implements u, Serializable {
     private static final long serialVersionUID = 1988843503875912054L;
     private final int policy;
     private final f unit;
@@ -14,15 +14,15 @@ final class e0 extends pt.f implements u, Serializable {
         this.policy = i10;
     }
 
-    @Override // pt.w
+    @Override // rt.w
     public boolean a() {
         return true;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // pt.f
-    public pt.m0 b(pt.x xVar) {
-        if (xVar.E(f0.f39950y)) {
+    @Override // rt.f
+    public rt.m0 b(rt.x xVar) {
+        if (xVar.E(f0.f39305y)) {
             return new f.j(this.unit, this.policy);
         }
         return null;
@@ -46,7 +46,7 @@ final class e0 extends pt.f implements u, Serializable {
         return false;
     }
 
-    @Override // pt.w
+    @Override // rt.w
     public double getLength() {
         return this.unit.getLength();
     }

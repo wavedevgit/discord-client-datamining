@@ -13,81 +13,81 @@ import okhttp3.Headers;
 public final class Request {
 
     /* renamed from: a  reason: collision with root package name */
-    private final HttpUrl f43834a;
+    private final HttpUrl f42940a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f43835b;
+    private final String f42941b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Headers f43836c;
+    private final Headers f42942c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final RequestBody f43837d;
+    private final RequestBody f42943d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Map f43838e;
+    private final Map f42944e;
 
     /* renamed from: f  reason: collision with root package name */
-    private CacheControl f43839f;
+    private CacheControl f42945f;
 
     public Request(HttpUrl url, String method, Headers headers, RequestBody requestBody, Map tags) {
         Intrinsics.checkNotNullParameter(url, "url");
         Intrinsics.checkNotNullParameter(method, "method");
         Intrinsics.checkNotNullParameter(headers, "headers");
         Intrinsics.checkNotNullParameter(tags, "tags");
-        this.f43834a = url;
-        this.f43835b = method;
-        this.f43836c = headers;
-        this.f43837d = requestBody;
-        this.f43838e = tags;
+        this.f42940a = url;
+        this.f42941b = method;
+        this.f42942c = headers;
+        this.f42943d = requestBody;
+        this.f42944e = tags;
     }
 
     public final String a() {
-        return this.f43835b;
+        return this.f42941b;
     }
 
     public final HttpUrl b() {
-        return this.f43834a;
+        return this.f42940a;
     }
 
     public final RequestBody c() {
-        return this.f43837d;
+        return this.f42943d;
     }
 
     public final CacheControl d() {
-        CacheControl cacheControl = this.f43839f;
+        CacheControl cacheControl = this.f42945f;
         if (cacheControl == null) {
-            CacheControl b10 = CacheControl.f43685n.b(this.f43836c);
-            this.f43839f = b10;
+            CacheControl b10 = CacheControl.f42791n.b(this.f42942c);
+            this.f42945f = b10;
             return b10;
         }
         return cacheControl;
     }
 
     public final Map e() {
-        return this.f43838e;
+        return this.f42944e;
     }
 
     public final String f(String name) {
         Intrinsics.checkNotNullParameter(name, "name");
-        return this.f43836c.c(name);
+        return this.f42942c.c(name);
     }
 
     public final List g(String name) {
         Intrinsics.checkNotNullParameter(name, "name");
-        return this.f43836c.l(name);
+        return this.f42942c.l(name);
     }
 
     public final Headers h() {
-        return this.f43836c;
+        return this.f42942c;
     }
 
     public final boolean i() {
-        return this.f43834a.j();
+        return this.f42940a.j();
     }
 
     public final String j() {
-        return this.f43835b;
+        return this.f42941b;
     }
 
     public final Builder k() {
@@ -100,23 +100,23 @@ public final class Request {
 
     public final Object m(Class type) {
         Intrinsics.checkNotNullParameter(type, "type");
-        return type.cast(this.f43838e.get(type));
+        return type.cast(this.f42944e.get(type));
     }
 
     public final HttpUrl n() {
-        return this.f43834a;
+        return this.f42940a;
     }
 
     public String toString() {
         StringBuilder sb2 = new StringBuilder();
         sb2.append("Request{method=");
-        sb2.append(this.f43835b);
+        sb2.append(this.f42941b);
         sb2.append(", url=");
-        sb2.append(this.f43834a);
-        if (this.f43836c.size() != 0) {
+        sb2.append(this.f42940a);
+        if (this.f42942c.size() != 0) {
             sb2.append(", headers=[");
             int i10 = 0;
-            for (Object obj : this.f43836c) {
+            for (Object obj : this.f42942c) {
                 int i11 = i10 + 1;
                 if (i10 < 0) {
                     CollectionsKt.v();
@@ -134,9 +134,9 @@ public final class Request {
             }
             sb2.append(']');
         }
-        if (!this.f43838e.isEmpty()) {
+        if (!this.f42944e.isEmpty()) {
             sb2.append(", tags=");
-            sb2.append(this.f43838e);
+            sb2.append(this.f42944e);
         }
         sb2.append('}');
         String sb3 = sb2.toString();
@@ -148,37 +148,37 @@ public final class Request {
     public static class Builder {
 
         /* renamed from: a  reason: collision with root package name */
-        private HttpUrl f43840a;
+        private HttpUrl f42946a;
 
         /* renamed from: b  reason: collision with root package name */
-        private String f43841b;
+        private String f42947b;
 
         /* renamed from: c  reason: collision with root package name */
-        private Headers.a f43842c;
+        private Headers.a f42948c;
 
         /* renamed from: d  reason: collision with root package name */
-        private RequestBody f43843d;
+        private RequestBody f42949d;
 
         /* renamed from: e  reason: collision with root package name */
-        private Map f43844e;
+        private Map f42950e;
 
         public Builder() {
-            this.f43844e = new LinkedHashMap();
-            this.f43841b = "GET";
-            this.f43842c = new Headers.a();
+            this.f42950e = new LinkedHashMap();
+            this.f42947b = "GET";
+            this.f42948c = new Headers.a();
         }
 
         public Builder a(String name, String value) {
             Intrinsics.checkNotNullParameter(name, "name");
             Intrinsics.checkNotNullParameter(value, "value");
-            this.f43842c.a(name, value);
+            this.f42948c.a(name, value);
             return this;
         }
 
         public Request b() {
-            HttpUrl httpUrl = this.f43840a;
+            HttpUrl httpUrl = this.f42946a;
             if (httpUrl != null) {
-                return new Request(httpUrl, this.f43841b, this.f43842c.f(), this.f43843d, au.e.W(this.f43844e));
+                return new Request(httpUrl, this.f42947b, this.f42948c.f(), this.f42949d, cu.e.W(this.f42950e));
             }
             throw new IllegalStateException("url == null");
         }
@@ -199,13 +199,13 @@ public final class Request {
         public Builder e(String name, String value) {
             Intrinsics.checkNotNullParameter(name, "name");
             Intrinsics.checkNotNullParameter(value, "value");
-            this.f43842c.j(name, value);
+            this.f42948c.j(name, value);
             return this;
         }
 
         public Builder f(Headers headers) {
             Intrinsics.checkNotNullParameter(headers, "headers");
-            this.f43842c = headers.g();
+            this.f42948c = headers.g();
             return this;
         }
 
@@ -213,14 +213,14 @@ public final class Request {
             Intrinsics.checkNotNullParameter(method, "method");
             if (method.length() > 0) {
                 if (requestBody == null) {
-                    if (fu.f.e(method)) {
+                    if (hu.f.e(method)) {
                         throw new IllegalArgumentException(("method " + method + " must have a request body.").toString());
                     }
-                } else if (!fu.f.b(method)) {
+                } else if (!hu.f.b(method)) {
                     throw new IllegalArgumentException(("method " + method + " must not have a request body.").toString());
                 }
-                this.f43841b = method;
-                this.f43843d = requestBody;
+                this.f42947b = method;
+                this.f42949d = requestBody;
                 return this;
             }
             throw new IllegalArgumentException("method.isEmpty() == true");
@@ -233,20 +233,20 @@ public final class Request {
 
         public Builder i(String name) {
             Intrinsics.checkNotNullParameter(name, "name");
-            this.f43842c.i(name);
+            this.f42948c.i(name);
             return this;
         }
 
         public Builder j(Class type, Object obj) {
             Intrinsics.checkNotNullParameter(type, "type");
             if (obj == null) {
-                this.f43844e.remove(type);
+                this.f42950e.remove(type);
                 return this;
             }
-            if (this.f43844e.isEmpty()) {
-                this.f43844e = new LinkedHashMap();
+            if (this.f42950e.isEmpty()) {
+                this.f42950e = new LinkedHashMap();
             }
-            Map map = this.f43844e;
+            Map map = this.f42950e;
             Object cast = type.cast(obj);
             Intrinsics.checkNotNull(cast);
             map.put(type, cast);
@@ -274,29 +274,29 @@ public final class Request {
                 sb3.append(substring2);
                 url = sb3.toString();
             }
-            return m(HttpUrl.f43745k.d(url));
+            return m(HttpUrl.f42851k.d(url));
         }
 
         public Builder m(HttpUrl url) {
             Intrinsics.checkNotNullParameter(url, "url");
-            this.f43840a = url;
+            this.f42946a = url;
             return this;
         }
 
         public Builder(Request request) {
             Map y10;
             Intrinsics.checkNotNullParameter(request, "request");
-            this.f43844e = new LinkedHashMap();
-            this.f43840a = request.n();
-            this.f43841b = request.j();
-            this.f43843d = request.c();
+            this.f42950e = new LinkedHashMap();
+            this.f42946a = request.n();
+            this.f42947b = request.j();
+            this.f42949d = request.c();
             if (request.e().isEmpty()) {
                 y10 = new LinkedHashMap();
             } else {
                 y10 = o0.y(request.e());
             }
-            this.f43844e = y10;
-            this.f43842c = request.h().g();
+            this.f42950e = y10;
+            this.f42948c = request.h().g();
         }
     }
 }

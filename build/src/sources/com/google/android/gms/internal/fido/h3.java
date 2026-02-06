@@ -12,9 +12,9 @@ final class h3 extends c3 {
         g3 g3Var2;
         synchronized (l3Var) {
             try {
-                g3Var2 = l3Var.f14054e;
+                g3Var2 = l3Var.f14017e;
                 if (g3Var2 != g3Var) {
-                    l3Var.f14054e = g3Var;
+                    l3Var.f14017e = g3Var;
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -29,9 +29,9 @@ final class h3 extends c3 {
         k3 k3Var2;
         synchronized (l3Var) {
             try {
-                k3Var2 = l3Var.f14055i;
+                k3Var2 = l3Var.f14018i;
                 if (k3Var2 != k3Var) {
-                    l3Var.f14055i = k3Var;
+                    l3Var.f14018i = k3Var;
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -43,13 +43,13 @@ final class h3 extends c3 {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.gms.internal.fido.c3
     public final void c(k3 k3Var, k3 k3Var2) {
-        k3Var.f14038b = k3Var2;
+        k3Var.f14001b = k3Var2;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.gms.internal.fido.c3
     public final void d(k3 k3Var, Thread thread) {
-        k3Var.f14037a = thread;
+        k3Var.f14000a = thread;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -58,9 +58,9 @@ final class h3 extends c3 {
         Object obj3;
         synchronized (l3Var) {
             try {
-                obj3 = l3Var.f14053d;
+                obj3 = l3Var.f14016d;
                 if (obj3 == obj) {
-                    l3Var.f14053d = obj2;
+                    l3Var.f14016d = obj2;
                     return true;
                 }
                 return false;
@@ -76,9 +76,9 @@ final class h3 extends c3 {
         k3 k3Var3;
         synchronized (l3Var) {
             try {
-                k3Var3 = l3Var.f14055i;
+                k3Var3 = l3Var.f14018i;
                 if (k3Var3 == k3Var) {
-                    l3Var.f14055i = k3Var2;
+                    l3Var.f14018i = k3Var2;
                     return true;
                 }
                 return false;

@@ -9,37 +9,37 @@ import java.util.RandomAccess;
 public abstract class i extends d implements List, RandomAccess {
 
     /* renamed from: e  reason: collision with root package name */
-    private static final m f25847e = new f(k.f25849q, 0);
+    private static final m f25975e = new f(k.f25977q, 0);
 
     /* renamed from: i  reason: collision with root package name */
-    public static final /* synthetic */ int f25848i = 0;
+    public static final /* synthetic */ int f25976i = 0;
 
     public static i h() {
-        return k.f25849q;
+        return k.f25977q;
     }
 
     public static i i(Object obj) {
         Object[] objArr = {obj};
         j.a(objArr, 1);
-        return n(objArr, 1);
+        return o(objArr, 1);
     }
 
     public static i j(Object obj, Object obj2, Object obj3) {
         Object[] objArr = {obj, obj2, obj3};
         j.a(objArr, 3);
-        return n(objArr, 3);
+        return o(objArr, 3);
     }
 
     public static i l(Object obj, Object obj2, Object obj3, Object obj4, Object obj5, Object obj6) {
         Object[] objArr = {obj, obj2, obj3, obj4, obj5, obj6};
         j.a(objArr, 6);
-        return n(objArr, 6);
+        return o(objArr, 6);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public static i n(Object[] objArr, int i10) {
+    public static i o(Object[] objArr, int i10) {
         if (i10 == 0) {
-            return k.f25849q;
+            return k.f25977q;
         }
         return new k(objArr, i10);
     }
@@ -151,7 +151,7 @@ public abstract class i extends d implements List, RandomAccess {
             return this;
         }
         if (i12 == 0) {
-            return k.f25849q;
+            return k.f25977q;
         }
         return new h(this, i10, i12);
     }
@@ -202,11 +202,11 @@ public abstract class i extends d implements List, RandomAccess {
     }
 
     @Override // java.util.List
-    /* renamed from: o */
+    /* renamed from: p */
     public final m listIterator(int i10) {
         z.c(i10, size(), "index");
         if (isEmpty()) {
-            return f25847e;
+            return f25975e;
         }
         return new f(this, i10);
     }

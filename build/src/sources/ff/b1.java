@@ -6,10 +6,10 @@ import com.google.android.gms.common.api.Status;
 public abstract class b1 {
 
     /* renamed from: a  reason: collision with root package name */
-    public final int f22885a;
+    public final int f23186a;
 
     public b1(int i10) {
-        this.f22885a = i10;
+        this.f23186a = i10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */

@@ -6,16 +6,16 @@ import w5.c;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final c.a f51811a = c.a.a("k", "x", "y");
+    private static final c.a f52176a = c.a.a("k", "x", "y");
 
     public static r5.e a(w5.c cVar, l5.i iVar) {
         ArrayList arrayList = new ArrayList();
         if (cVar.m() == c.b.BEGIN_ARRAY) {
-            cVar.v();
+            cVar.x();
             while (cVar.hasNext()) {
                 arrayList.add(z.a(cVar, iVar));
             }
-            cVar.t();
+            cVar.v();
             u.b(arrayList);
         } else {
             arrayList.add(new y5.a(s.e(cVar, x5.j.e())));
@@ -25,26 +25,26 @@ public abstract class a {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static r5.m b(w5.c cVar, l5.i iVar) {
-        cVar.s();
+        cVar.u();
         r5.e eVar = null;
         r5.b bVar = null;
         boolean z10 = false;
         r5.b bVar2 = null;
         while (cVar.m() != c.b.END_OBJECT) {
-            int y10 = cVar.y(f51811a);
-            if (y10 != 0) {
-                if (y10 != 1) {
-                    if (y10 != 2) {
-                        cVar.E();
-                        cVar.P();
+            int p10 = cVar.p(f52176a);
+            if (p10 != 0) {
+                if (p10 != 1) {
+                    if (p10 != 2) {
+                        cVar.s();
+                        cVar.S();
                     } else if (cVar.m() == c.b.STRING) {
-                        cVar.P();
+                        cVar.S();
                         z10 = true;
                     } else {
                         bVar = d.e(cVar, iVar);
                     }
                 } else if (cVar.m() == c.b.STRING) {
-                    cVar.P();
+                    cVar.S();
                     z10 = true;
                 } else {
                     bVar2 = d.e(cVar, iVar);
@@ -53,7 +53,7 @@ public abstract class a {
                 eVar = a(cVar, iVar);
             }
         }
-        cVar.z();
+        cVar.D();
         if (z10) {
             iVar.a("Lottie doesn't support expressions.");
         }

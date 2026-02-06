@@ -1,14 +1,21 @@
 package at;
-
-import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class c implements e {
+public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f5974a;
+    private static final int[] f6286a = {1, 10, 100, 1000, 10000, 100000, 1000000, 10000000, 100000000, 1000000000};
 
-    public c(String string) {
-        Intrinsics.checkNotNullParameter(string, "string");
-        this.f5974a = string;
+    public static final int a(long j10) {
+        if (j10 > 2147483647L) {
+            return Integer.MAX_VALUE;
+        }
+        if (j10 < -2147483648L) {
+            return Integer.MIN_VALUE;
+        }
+        return (int) j10;
+    }
+
+    public static final int[] b() {
+        return f6286a;
     }
 }

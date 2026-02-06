@@ -3,11 +3,11 @@ package y9;
 import java.util.Map;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public interface a {
-    Object D0(String str);
+    void J(Map map);
 
-    void W(Map map);
+    Object Y(String str);
 
     Map getExtras();
 
-    void y(String str, Object obj);
+    void p(String str, Object obj);
 }

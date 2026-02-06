@@ -4,17 +4,17 @@ package ff;
 public final class r0 implements Runnable {
 
     /* renamed from: d  reason: collision with root package name */
-    final /* synthetic */ u0 f22978d;
+    final /* synthetic */ u0 f23279d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public r0(u0 u0Var) {
-        this.f22978d = u0Var;
+        this.f23279d = u0Var;
     }
 
     @Override // java.lang.Runnable
     public final void run() {
         t0 t0Var;
-        t0Var = this.f22978d.f22992i;
+        t0Var = this.f23279d.f23293i;
         t0Var.c(new com.google.android.gms.common.b(4));
     }
 }

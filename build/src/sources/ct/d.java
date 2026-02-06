@@ -1,125 +1,36 @@
 package ct;
 
-import gt.p0;
-import kotlin.Lazy;
-import kotlin.Unit;
-import kotlin.collections.CollectionsKt;
-import kotlin.jvm.functions.Function0;
+import java.util.List;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.Lambda;
-import kotlinx.serialization.KSerializer;
-import kotlinx.serialization.descriptors.SerialDescriptor;
-import kotlinx.serialization.encoding.CompositeEncoder;
-import kotlinx.serialization.encoding.Decoder;
-import kotlinx.serialization.encoding.Encoder;
-import or.l;
-import or.o;
-import ws.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class d implements KSerializer {
+public final class d implements e {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final d f20016a = new d();
+    private final Function1 f20017a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Lazy f20017b = l.b(o.f44232e, a.f20018d);
+    private final int f20018b;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    static final class a extends Lambda implements Function0 {
+    /* renamed from: c  reason: collision with root package name */
+    private final int f20019c;
 
-        /* renamed from: d  reason: collision with root package name */
-        public static final a f20018d = new a();
+    /* renamed from: d  reason: collision with root package name */
+    private final List f20020d;
 
-        /* JADX INFO: Access modifiers changed from: package-private */
-        /* renamed from: ct.d$a$a  reason: collision with other inner class name */
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-        public static final class C0274a extends Lambda implements Function1 {
-
-            /* renamed from: d  reason: collision with root package name */
-            public static final C0274a f20019d = new C0274a();
-
-            C0274a() {
-                super(1);
+    public d(Function1 number, int i10, int i11, List zerosToAdd) {
+        Intrinsics.checkNotNullParameter(number, "number");
+        Intrinsics.checkNotNullParameter(zerosToAdd, "zerosToAdd");
+        this.f20017a = number;
+        this.f20018b = i10;
+        this.f20019c = i11;
+        this.f20020d = zerosToAdd;
+        if (1 <= i10 && i10 < 10) {
+            if (i10 <= i11 && i11 < 10) {
+                return;
             }
-
-            public final void a(ft.a buildClassSerialDescriptor) {
-                Intrinsics.checkNotNullParameter(buildClassSerialDescriptor, "$this$buildClassSerialDescriptor");
-                buildClassSerialDescriptor.a("days", p0.f25318a.getDescriptor(), CollectionsKt.l(), false);
-            }
-
-            @Override // kotlin.jvm.functions.Function1
-            public /* bridge */ /* synthetic */ Object invoke(Object obj) {
-                a((ft.a) obj);
-                return Unit.f31988a;
-            }
+            throw new IllegalArgumentException(("The maximum number of digits (" + i11 + ") is not in range " + i10 + "..9").toString());
         }
-
-        a() {
-            super(0);
-        }
-
-        @Override // kotlin.jvm.functions.Function0
-        /* renamed from: a */
-        public final SerialDescriptor invoke() {
-            return ft.j.c("kotlinx.datetime.DayBased", new SerialDescriptor[0], C0274a.f20019d);
-        }
-    }
-
-    private d() {
-    }
-
-    @Override // kotlinx.serialization.DeserializationStrategy
-    /* renamed from: a */
-    public c.C0706c deserialize(Decoder decoder) {
-        int i10;
-        Intrinsics.checkNotNullParameter(decoder, "decoder");
-        SerialDescriptor descriptor = getDescriptor();
-        kotlinx.serialization.encoding.c b10 = decoder.b(descriptor);
-        boolean z10 = true;
-        if (b10.p()) {
-            i10 = b10.i(f20016a.getDescriptor(), 0);
-        } else {
-            i10 = 0;
-            boolean z11 = false;
-            while (true) {
-                d dVar = f20016a;
-                int o10 = b10.o(dVar.getDescriptor());
-                if (o10 != -1) {
-                    if (o10 == 0) {
-                        i10 = b10.i(dVar.getDescriptor(), 0);
-                        z11 = true;
-                    } else {
-                        c.a(o10);
-                        throw new or.h();
-                    }
-                } else {
-                    z10 = z11;
-                    break;
-                }
-            }
-        }
-        Unit unit = Unit.f31988a;
-        b10.c(descriptor);
-        if (z10) {
-            return new c.C0706c(i10);
-        }
-        throw new dt.c("days", getDescriptor().h());
-    }
-
-    @Override // dt.o
-    /* renamed from: b */
-    public void serialize(Encoder encoder, c.C0706c value) {
-        Intrinsics.checkNotNullParameter(encoder, "encoder");
-        Intrinsics.checkNotNullParameter(value, "value");
-        SerialDescriptor descriptor = getDescriptor();
-        CompositeEncoder b10 = encoder.b(descriptor);
-        b10.v(f20016a.getDescriptor(), 0, value.d());
-        b10.c(descriptor);
-    }
-
-    @Override // kotlinx.serialization.KSerializer, dt.o, kotlinx.serialization.DeserializationStrategy
-    public SerialDescriptor getDescriptor() {
-        return (SerialDescriptor) f20017b.getValue();
+        throw new IllegalArgumentException(("The minimum number of digits (" + i10 + ") is not in range 1..9").toString());
     }
 }

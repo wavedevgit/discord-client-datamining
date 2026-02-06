@@ -11,13 +11,13 @@ import org.json.JSONObject;
 public final class f extends b {
 
     /* renamed from: l  reason: collision with root package name */
-    public static final a f23585l = new a(null);
+    public static final a f23838l = new a(null);
 
     /* renamed from: j  reason: collision with root package name */
-    private final String f23586j;
+    private final String f23839j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final byte[] f23587k;
+    private final byte[] f23840k;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -25,14 +25,14 @@ public final class f extends b {
             this();
         }
 
-        public static /* synthetic */ b.C0336b b(a aVar, String str, String str2, int i10, Object obj) {
+        public static /* synthetic */ b.C0333b b(a aVar, String str, String str2, int i10, Object obj) {
             if ((i10 & 2) != 0) {
                 str2 = null;
             }
             return aVar.a(str, str2);
         }
 
-        public final b.C0336b a(String requestJson, String str) {
+        public final b.C0333b a(String requestJson, String str) {
             String string;
             Intrinsics.checkNotNullParameter(requestJson, "requestJson");
             try {
@@ -44,7 +44,7 @@ public final class f extends b {
                     string = jSONObject.getString("displayName");
                 }
                 Intrinsics.checkNotNullExpressionValue(userName, "userName");
-                return new b.C0336b(userName, string, null, str);
+                return new b.C0333b(userName, string, null, str);
             } catch (Exception unused) {
                 throw new IllegalArgumentException("user.name must be defined in requestJson");
             }
@@ -72,19 +72,19 @@ public final class f extends b {
         }
     }
 
-    /* synthetic */ f(String str, byte[] bArr, boolean z10, boolean z11, b.C0336b c0336b, String str2, Bundle bundle, Bundle bundle2, int i10, DefaultConstructorMarker defaultConstructorMarker) {
-        this(str, bArr, z10, z11, c0336b, (i10 & 32) != 0 ? null : str2, (i10 & 64) != 0 ? f23585l.d(str, bArr) : bundle, (i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0 ? f23585l.c(str, bArr) : bundle2);
+    /* synthetic */ f(String str, byte[] bArr, boolean z10, boolean z11, b.C0333b c0333b, String str2, Bundle bundle, Bundle bundle2, int i10, DefaultConstructorMarker defaultConstructorMarker) {
+        this(str, bArr, z10, z11, c0333b, (i10 & 32) != 0 ? null : str2, (i10 & 64) != 0 ? f23838l.d(str, bArr) : bundle, (i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0 ? f23838l.c(str, bArr) : bundle2);
     }
 
     public final String g() {
-        return this.f23586j;
+        return this.f23839j;
     }
 
-    private f(String str, byte[] bArr, boolean z10, boolean z11, b.C0336b c0336b, String str2, Bundle bundle, Bundle bundle2) {
-        super("androidx.credentials.TYPE_PUBLIC_KEY_CREDENTIAL", bundle, bundle2, false, z10, c0336b, str2, z11);
-        this.f23586j = str;
-        this.f23587k = bArr;
-        if (!k2.c.f31561a.a(str)) {
+    private f(String str, byte[] bArr, boolean z10, boolean z11, b.C0333b c0333b, String str2, Bundle bundle, Bundle bundle2) {
+        super("androidx.credentials.TYPE_PUBLIC_KEY_CREDENTIAL", bundle, bundle2, false, z10, c0333b, str2, z11);
+        this.f23839j = str;
+        this.f23840k = bArr;
+        if (!k2.c.f31405a.a(str)) {
             throw new IllegalArgumentException("requestJson must not be empty, and must be a valid JSON");
         }
     }
@@ -95,7 +95,7 @@ public final class f extends b {
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public f(String requestJson, byte[] bArr, boolean z10, String str, boolean z11) {
-        this(requestJson, bArr, z11, z10, a.b(f23585l, requestJson, null, 2, null), str, null, null, 192, null);
+        this(requestJson, bArr, z11, z10, a.b(f23838l, requestJson, null, 2, null), str, null, null, 192, null);
         Intrinsics.checkNotNullParameter(requestJson, "requestJson");
     }
 }

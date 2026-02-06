@@ -15,39 +15,39 @@ import org.jetbrains.annotations.NotNull;
 public final class TransitionInquiryRequest_AttributesJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19857a;
+    private final m.b f19837a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f19858b;
+    private final h f19838b;
 
     public TransitionInquiryRequest_AttributesJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("componentParams");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19857a = a10;
+        this.f19837a = a10;
         h f10 = moshi.f(a0.j(Map.class, String.class, ComponentParam.class), x0.d(), "componentParams");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19858b = f10;
+        this.f19838b = f10;
     }
 
     @Override // com.squareup.moshi.h
     /* renamed from: a */
     public TransitionInquiryRequest.Attributes fromJson(m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         Map map = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.f19857a);
-            if (W != -1) {
-                if (W == 0) {
-                    map = (Map) this.f19858b.fromJson(reader);
+            int J = reader.J(this.f19837a);
+            if (J != -1) {
+                if (J == 0) {
+                    map = (Map) this.f19838b.fromJson(reader);
                 }
             } else {
                 reader.E0();
-                reader.P();
+                reader.S();
             }
         }
-        reader.z();
+        reader.D();
         return new TransitionInquiryRequest.Attributes(map);
     }
 
@@ -57,9 +57,9 @@ public final class TransitionInquiryRequest_AttributesJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (attributes != null) {
             writer.k();
-            writer.W("componentParams");
-            this.f19858b.toJson(writer, attributes.a());
-            writer.E();
+            writer.J("componentParams");
+            this.f19838b.toJson(writer, attributes.a());
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

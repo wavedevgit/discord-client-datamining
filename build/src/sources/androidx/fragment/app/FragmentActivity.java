@@ -213,11 +213,11 @@ public class FragmentActivity extends ComponentActivity implements b.e {
                     z10 |= w(fragment.getChildFragmentManager(), state);
                 }
                 FragmentViewLifecycleOwner fragmentViewLifecycleOwner = fragment.mViewLifecycleOwner;
-                if (fragmentViewLifecycleOwner != null && fragmentViewLifecycleOwner.getLifecycle().b().d(Lifecycle.State.f4520o)) {
+                if (fragmentViewLifecycleOwner != null && fragmentViewLifecycleOwner.getLifecycle().b().d(Lifecycle.State.f4849o)) {
                     fragment.mViewLifecycleOwner.g(state);
                     z10 = true;
                 }
-                if (fragment.mLifecycleRegistry.b().d(Lifecycle.State.f4520o)) {
+                if (fragment.mLifecycleRegistry.b().d(Lifecycle.State.f4849o)) {
                     fragment.mLifecycleRegistry.o(state);
                     z10 = true;
                 }
@@ -267,7 +267,7 @@ public class FragmentActivity extends ComponentActivity implements b.e {
 
     void markFragmentsCreated() {
         do {
-        } while (w(getSupportFragmentManager(), Lifecycle.State.f4519i));
+        } while (w(getSupportFragmentManager(), Lifecycle.State.f4848i));
     }
 
     /* JADX INFO: Access modifiers changed from: protected */

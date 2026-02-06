@@ -11,7 +11,7 @@ import java.util.List;
 public abstract class i {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final int[] f27978a = new int[2];
+    private static final int[] f27122a = new int[2];
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static io.sentry.internal.gestures.b a(SentryAndroidOptions sentryAndroidOptions, View view, float f10, float f11, b.a aVar) {
@@ -64,7 +64,7 @@ public abstract class i {
         if (view == null) {
             return false;
         }
-        int[] iArr = f27978a;
+        int[] iArr = f27122a;
         view.getLocationOnScreen(iArr);
         int i10 = iArr[0];
         int i11 = iArr[1];

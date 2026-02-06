@@ -84,4 +84,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.openIgnoreThermalStateAlert = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 3936, 8015, 1307, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 3938, 8020, 1307, 2]);

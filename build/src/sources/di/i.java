@@ -1,66 +1,45 @@
 package di;
 
-import android.os.Process;
-import android.text.TextUtils;
-import android.util.Log;
-import java.util.IllegalFormatException;
-import java.util.Locale;
+import android.os.Bundle;
+import android.os.RemoteException;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class i {
+public final class i extends ei.j {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final String f20814a;
+    /* renamed from: e  reason: collision with root package name */
+    final /* synthetic */ yg.k f20774e;
 
-    public i(String str) {
-        int myUid = Process.myUid();
-        int myPid = Process.myPid();
-        this.f20814a = ("UID: [" + myUid + "]  PID: [" + myPid + "] ").concat(str);
+    /* renamed from: i  reason: collision with root package name */
+    final /* synthetic */ l f20775i;
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public i(l lVar, yg.k kVar, yg.k kVar2) {
+        super(kVar);
+        this.f20775i = lVar;
+        this.f20774e = kVar2;
     }
 
-    private static String f(String str, String str2, Object... objArr) {
-        if (objArr.length > 0) {
-            try {
-                str2 = String.format(Locale.US, str2, objArr);
-            } catch (IllegalFormatException e10) {
-                Log.e("PlayCore", "Unable to format ".concat(str2), e10);
-                str2 = str2 + " [" + TextUtils.join(", ", objArr) + "]";
-            }
+    /* JADX WARN: Type inference failed for: r0v3, types: [ei.f, android.os.IInterface] */
+    @Override // ei.j
+    protected final void a() {
+        ei.i iVar;
+        String str;
+        String str2;
+        String str3;
+        try {
+            ?? e10 = this.f20775i.f20781a.e();
+            str2 = this.f20775i.f20782b;
+            Bundle a10 = m.a();
+            l lVar = this.f20775i;
+            yg.k kVar = this.f20774e;
+            str3 = lVar.f20782b;
+            e10.G(str2, a10, new k(lVar, kVar, str3));
+        } catch (RemoteException e11) {
+            iVar = l.f20780c;
+            str = this.f20775i.f20782b;
+            iVar.c(e11, "error requesting in-app review for %s", str);
+            this.f20774e.d(new RuntimeException(e11));
         }
-        return str + " : " + str2;
-    }
-
-    public final int a(String str, Object... objArr) {
-        if (Log.isLoggable("PlayCore", 3)) {
-            return Log.d("PlayCore", f(this.f20814a, "Already connected to the service.", objArr));
-        }
-        return 0;
-    }
-
-    public final int b(String str, Object... objArr) {
-        if (Log.isLoggable("PlayCore", 6)) {
-            return Log.e("PlayCore", f(this.f20814a, "Play Store app is either not installed or not the official version", objArr));
-        }
-        return 0;
-    }
-
-    public final int c(Throwable th2, String str, Object... objArr) {
-        if (Log.isLoggable("PlayCore", 6)) {
-            return Log.e("PlayCore", f(this.f20814a, str, objArr), th2);
-        }
-        return 0;
-    }
-
-    public final int d(String str, Object... objArr) {
-        if (Log.isLoggable("PlayCore", 4)) {
-            return Log.i("PlayCore", f(this.f20814a, str, objArr));
-        }
-        return 0;
-    }
-
-    public final int e(String str, Object... objArr) {
-        if (Log.isLoggable("PlayCore", 5)) {
-            return Log.w("PlayCore", f(this.f20814a, "Phonesky package is not signed -- possibly self-built package. Could not verify.", objArr));
-        }
-        return 0;
     }
 }

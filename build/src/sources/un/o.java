@@ -1,53 +1,29 @@
 package un;
-
-import kotlin.jvm.internal.DefaultConstructorMarker;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class o {
+public final class o implements br.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final long f51619a;
+    private final n f51758a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f51620b;
+    private final br.h f51759b;
 
-    public o(long j10, boolean z10) {
-        this.f51619a = j10;
-        this.f51620b = z10;
+    public o(n nVar, br.h hVar) {
+        this.f51758a = nVar;
+        this.f51759b = hVar;
     }
 
-    public final long a() {
-        return this.f51619a;
+    public static zn.a a(n nVar, ar.a aVar) {
+        return (zn.a) br.g.d(nVar.a(aVar));
     }
 
-    public final boolean b() {
-        return this.f51620b;
+    public static o b(n nVar, br.h hVar) {
+        return new o(nVar, hVar);
     }
 
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (!(obj instanceof o)) {
-            return false;
-        }
-        o oVar = (o) obj;
-        if (this.f51619a == oVar.f51619a && this.f51620b == oVar.f51620b) {
-            return true;
-        }
-        return false;
-    }
-
-    public int hashCode() {
-        return (Long.hashCode(this.f51619a) * 31) + Boolean.hashCode(this.f51620b);
-    }
-
-    public String toString() {
-        long j10 = this.f51619a;
-        boolean z10 = this.f51620b;
-        return "ExtraCameraOptions(dynamicRange=" + j10 + ", previewStabilization=" + z10 + ")";
-    }
-
-    public /* synthetic */ o(long j10, boolean z10, int i10, DefaultConstructorMarker defaultConstructorMarker) {
-        this((i10 & 1) != 0 ? 1L : j10, (i10 & 2) != 0 ? false : z10);
+    @Override // javax.inject.Provider
+    /* renamed from: c */
+    public zn.a get() {
+        return a(this.f51758a, br.c.b(this.f51759b));
     }
 }

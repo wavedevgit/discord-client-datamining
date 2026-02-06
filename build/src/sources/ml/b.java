@@ -1,41 +1,36 @@
 package ml;
 
-import android.net.Uri;
+import android.media.MediaFormat;
+import java.util.ArrayList;
+import java.util.List;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class b extends d {
+public class b {
 
-    /* renamed from: e  reason: collision with root package name */
-    private final a f38714e;
+    /* renamed from: a  reason: collision with root package name */
+    private List f37218a = new ArrayList(2);
 
-    /* renamed from: i  reason: collision with root package name */
-    private final Uri f38715i;
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public enum a {
-        DATA_SOURCE("data source error");
-        
-
-        /* renamed from: d  reason: collision with root package name */
-        private final String f38718d;
-
-        a(String str) {
-            this.f38718d = str;
-        }
+    public void a(MediaFormat mediaFormat) {
+        a aVar = new a();
+        aVar.e(mediaFormat);
+        this.f37218a.add(aVar);
     }
 
-    public b(a aVar, Uri uri, Throwable th2) {
-        super(th2);
-        this.f38714e = aVar;
-        this.f38715i = uri;
+    public List b() {
+        return this.f37218a;
     }
 
-    @Override // java.lang.Throwable
-    public String getMessage() {
-        return "Failed to create media source due to a " + this.f38714e.f38718d;
+    public void c(int i10, long j10) {
+        a aVar = (a) this.f37218a.get(i10);
+        aVar.c(aVar.a() + j10);
     }
 
-    @Override // ml.d, java.lang.Throwable
-    public String toString() {
-        return super.toString() + "\nFailed to create media source due to a " + this.f38714e.f38718d + "\nUri: " + this.f38715i;
+    public void d(int i10, MediaFormat mediaFormat) {
+        ((a) this.f37218a.get(i10)).f(mediaFormat);
+    }
+
+    public void e(int i10, String str, String str2) {
+        a aVar = (a) this.f37218a.get(i10);
+        aVar.b(str);
+        aVar.d(str2);
     }
 }

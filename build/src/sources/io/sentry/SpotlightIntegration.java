@@ -12,35 +12,13 @@ import java.util.zip.GZIPOutputStream;
 public final class SpotlightIntegration implements k1, k7.b, Closeable {
 
     /* renamed from: d  reason: collision with root package name */
-    private k7 f27716d;
+    private k7 f26860d;
 
     /* renamed from: e  reason: collision with root package name */
-    private ILogger f27717e = i2.e();
+    private ILogger f26861e = i2.e();
 
     /* renamed from: i  reason: collision with root package name */
-    private z0 f27718i = v2.f();
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public void E(l5 l5Var) {
-        try {
-            if (this.f27716d != null) {
-                HttpURLConnection o10 = o(y());
-                OutputStream outputStream = o10.getOutputStream();
-                GZIPOutputStream gZIPOutputStream = new GZIPOutputStream(outputStream);
-                this.f27716d.getSerializer().b(l5Var, gZIPOutputStream);
-                gZIPOutputStream.close();
-                if (outputStream != null) {
-                    outputStream.close();
-                }
-                this.f27717e.c(SentryLevel.DEBUG, "Envelope sent to spotlight: %d", Integer.valueOf(o10.getResponseCode()));
-                m(o10);
-                return;
-            }
-            throw new IllegalArgumentException("SentryOptions are required to send envelopes.");
-        } catch (Exception e10) {
-            this.f27717e.b(SentryLevel.ERROR, "An exception occurred while creating the connection to spotlight.", e10);
-        }
-    }
+    private z0 f26862i = v2.f();
 
     private void m(HttpURLConnection httpURLConnection) {
         try {
@@ -51,7 +29,7 @@ public final class SpotlightIntegration implements k1, k7.b, Closeable {
         }
     }
 
-    private HttpURLConnection o(String str) {
+    private HttpURLConnection n(String str) {
         HttpURLConnection httpURLConnection = (HttpURLConnection) URI.create(str).toURL().openConnection();
         httpURLConnection.setReadTimeout(1000);
         httpURLConnection.setConnectTimeout(1000);
@@ -65,47 +43,69 @@ public final class SpotlightIntegration implements k1, k7.b, Closeable {
         return httpURLConnection;
     }
 
+    /* JADX INFO: Access modifiers changed from: private */
+    public void s(l5 l5Var) {
+        try {
+            if (this.f26860d != null) {
+                HttpURLConnection n10 = n(p());
+                OutputStream outputStream = n10.getOutputStream();
+                GZIPOutputStream gZIPOutputStream = new GZIPOutputStream(outputStream);
+                this.f26860d.getSerializer().b(l5Var, gZIPOutputStream);
+                gZIPOutputStream.close();
+                if (outputStream != null) {
+                    outputStream.close();
+                }
+                this.f26861e.c(SentryLevel.DEBUG, "Envelope sent to spotlight: %d", Integer.valueOf(n10.getResponseCode()));
+                m(n10);
+                return;
+            }
+            throw new IllegalArgumentException("SentryOptions are required to send envelopes.");
+        } catch (Exception e10) {
+            this.f26861e.b(SentryLevel.ERROR, "An exception occurred while creating the connection to spotlight.", e10);
+        }
+    }
+
     @Override // io.sentry.k7.b
     public void a(final l5 l5Var, Hint hint) {
         try {
-            this.f27718i.submit(new Runnable() { // from class: io.sentry.m8
+            this.f26862i.submit(new Runnable() { // from class: io.sentry.m8
                 @Override // java.lang.Runnable
                 public final void run() {
-                    SpotlightIntegration.this.E(l5Var);
+                    SpotlightIntegration.this.s(l5Var);
                 }
             });
         } catch (RejectedExecutionException e10) {
-            this.f27717e.b(SentryLevel.WARNING, "Spotlight envelope submission rejected.", e10);
+            this.f26861e.b(SentryLevel.WARNING, "Spotlight envelope submission rejected.", e10);
         }
     }
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        this.f27718i.a(0L);
-        k7 k7Var = this.f27716d;
+        this.f26862i.a(0L);
+        k7 k7Var = this.f26860d;
         if (k7Var != null && k7Var.getBeforeEnvelopeCallback() == this) {
-            this.f27716d.setBeforeEnvelopeCallback(null);
+            this.f26860d.setBeforeEnvelopeCallback(null);
         }
     }
 
     @Override // io.sentry.k1
-    public void h(w0 w0Var, k7 k7Var) {
-        this.f27716d = k7Var;
-        this.f27717e = k7Var.getLogger();
+    public void g(w0 w0Var, k7 k7Var) {
+        this.f26860d = k7Var;
+        this.f26861e = k7Var.getLogger();
         if (k7Var.getBeforeEnvelopeCallback() == null && k7Var.isEnableSpotlight()) {
-            this.f27718i = new q6(k7Var);
+            this.f26862i = new q6(k7Var);
             k7Var.setBeforeEnvelopeCallback(this);
-            this.f27717e.c(SentryLevel.DEBUG, "SpotlightIntegration enabled.", new Object[0]);
+            this.f26861e.c(SentryLevel.DEBUG, "SpotlightIntegration enabled.", new Object[0]);
             io.sentry.util.p.a("Spotlight");
             return;
         }
-        this.f27717e.c(SentryLevel.DEBUG, "SpotlightIntegration is not enabled. BeforeEnvelopeCallback is already set or spotlight is not enabled.", new Object[0]);
+        this.f26861e.c(SentryLevel.DEBUG, "SpotlightIntegration is not enabled. BeforeEnvelopeCallback is already set or spotlight is not enabled.", new Object[0]);
     }
 
-    public String y() {
-        k7 k7Var = this.f27716d;
+    public String p() {
+        k7 k7Var = this.f26860d;
         if (k7Var != null && k7Var.getSpotlightConnectionUrl() != null) {
-            return this.f27716d.getSpotlightConnectionUrl();
+            return this.f26860d.getSpotlightConnectionUrl();
         }
         if (io.sentry.util.a0.a()) {
             return "http://10.0.2.2:8969/stream";

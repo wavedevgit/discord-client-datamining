@@ -1,67 +1,38 @@
 package ng;
 
-import java.util.NoSuchElementException;
+import yi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-abstract class h6 extends d {
+final class h6 implements yi.d {
 
-    /* renamed from: d  reason: collision with root package name */
-    private final int f40645d;
+    /* renamed from: a  reason: collision with root package name */
+    static final h6 f39855a = new h6();
 
-    /* renamed from: e  reason: collision with root package name */
-    private int f40646e;
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    public h6(int i10, int i11) {
-        f4.b(i11, i10, "index");
-        this.f40645d = i10;
-        this.f40646e = i11;
+    static {
+        c.b a10 = yi.c.a("remoteModelOptions");
+        l2 l2Var = new l2();
+        l2Var.a(1);
+        a10.b(l2Var.b()).a();
+        c.b a11 = yi.c.a("localModelOptions");
+        l2 l2Var2 = new l2();
+        l2Var2.a(2);
+        a11.b(l2Var2.b()).a();
+        c.b a12 = yi.c.a("errorCodes");
+        l2 l2Var3 = new l2();
+        l2Var3.a(3);
+        a12.b(l2Var3.b()).a();
+        c.b a13 = yi.c.a("modelInitializationMs");
+        l2 l2Var4 = new l2();
+        l2Var4.a(4);
+        a13.b(l2Var4.b()).a();
     }
 
-    protected abstract Object a(int i10);
-
-    @Override // java.util.Iterator, java.util.ListIterator
-    public final boolean hasNext() {
-        if (this.f40646e < this.f40645d) {
-            return true;
-        }
-        return false;
+    private h6() {
     }
 
-    @Override // java.util.ListIterator
-    public final boolean hasPrevious() {
-        if (this.f40646e > 0) {
-            return true;
-        }
-        return false;
-    }
-
-    @Override // java.util.Iterator, java.util.ListIterator
-    public final Object next() {
-        if (hasNext()) {
-            int i10 = this.f40646e;
-            this.f40646e = i10 + 1;
-            return a(i10);
-        }
-        throw new NoSuchElementException();
-    }
-
-    @Override // java.util.ListIterator
-    public final int nextIndex() {
-        return this.f40646e;
-    }
-
-    @Override // java.util.ListIterator
-    public final Object previous() {
-        if (hasPrevious()) {
-            int i10 = this.f40646e - 1;
-            this.f40646e = i10;
-            return a(i10);
-        }
-        throw new NoSuchElementException();
-    }
-
-    @Override // java.util.ListIterator
-    public final int previousIndex() {
-        return this.f40646e - 1;
+    @Override // yi.d
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        android.support.v4.media.session.b.a(obj);
+        yi.e eVar = (yi.e) obj2;
+        throw null;
     }
 }

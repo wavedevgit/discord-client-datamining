@@ -11,25 +11,25 @@ public final class DateTimeFormatter {
     public static final DateTimeFormatter ISO_LOCAL_DATE;
 
     /* renamed from: f  reason: collision with root package name */
-    public static final DateTimeFormatter f30447f;
+    public static final DateTimeFormatter f29421f;
 
     /* renamed from: g  reason: collision with root package name */
-    public static final DateTimeFormatter f30448g;
+    public static final DateTimeFormatter f29422g;
 
     /* renamed from: a  reason: collision with root package name */
-    public final d f30449a;
+    public final d f29423a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final Locale f30450b;
+    public final Locale f29424b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final t f30451c;
+    public final t f29425c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final v f30452d;
+    public final v f29426d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final j$.time.chrono.j f30453e;
+    public final j$.time.chrono.j f29427e;
 
     static {
         DateTimeFormatterBuilder dateTimeFormatterBuilder = new DateTimeFormatterBuilder();
@@ -43,7 +43,7 @@ public final class DateTimeFormatter {
         j$.time.temporal.a aVar3 = j$.time.temporal.a.DAY_OF_MONTH;
         dateTimeFormatterBuilder.g(aVar3, 2);
         v vVar = v.STRICT;
-        j$.time.chrono.k kVar = j$.time.chrono.k.f30441a;
+        j$.time.chrono.k kVar = j$.time.chrono.k.f29416a;
         DateTimeFormatter k10 = dateTimeFormatterBuilder.k(vVar, kVar);
         ISO_LOCAL_DATE = k10;
         DateTimeFormatterBuilder parseCaseInsensitive = new DateTimeFormatterBuilder().parseCaseInsensitive();
@@ -66,7 +66,7 @@ public final class DateTimeFormatter {
         dateTimeFormatterBuilder2.j();
         dateTimeFormatterBuilder2.b(new f(j$.time.temporal.a.NANO_OF_SECOND));
         DateTimeFormatter k11 = dateTimeFormatterBuilder2.k(vVar, null);
-        f30447f = k11;
+        f29421f = k11;
         DateTimeFormatterBuilder parseCaseInsensitive3 = new DateTimeFormatterBuilder().parseCaseInsensitive();
         parseCaseInsensitive3.a(k11);
         parseCaseInsensitive3.appendOffsetId().k(vVar, null);
@@ -108,9 +108,9 @@ public final class DateTimeFormatter {
         parseCaseInsensitive7.j();
         parseCaseInsensitive7.appendOffsetId().k(vVar, kVar);
         DateTimeFormatterBuilder parseCaseInsensitive8 = new DateTimeFormatterBuilder().parseCaseInsensitive();
-        parseCaseInsensitive8.h(j$.time.temporal.j.f30542c, 4, 10, wVar);
+        parseCaseInsensitive8.h(j$.time.temporal.j.f29515c, 4, 10, wVar);
         parseCaseInsensitive8.d("-W");
-        parseCaseInsensitive8.g(j$.time.temporal.j.f30541b, 2);
+        parseCaseInsensitive8.g(j$.time.temporal.j.f29514b, 2);
         parseCaseInsensitive8.c('-');
         j$.time.temporal.a aVar7 = j$.time.temporal.a.DAY_OF_WEEK;
         parseCaseInsensitive8.g(aVar7, 1);
@@ -119,7 +119,7 @@ public final class DateTimeFormatter {
         DateTimeFormatterBuilder parseCaseInsensitive9 = new DateTimeFormatterBuilder().parseCaseInsensitive();
         parseCaseInsensitive9.getClass();
         parseCaseInsensitive9.b(new g(0));
-        f30448g = parseCaseInsensitive9.k(vVar, null);
+        f29422g = parseCaseInsensitive9.k(vVar, null);
         DateTimeFormatterBuilder parseCaseInsensitive10 = new DateTimeFormatterBuilder().parseCaseInsensitive();
         parseCaseInsensitive10.g(aVar, 4);
         parseCaseInsensitive10.g(aVar2, 2);
@@ -171,20 +171,20 @@ public final class DateTimeFormatter {
     }
 
     public DateTimeFormatter(d dVar, Locale locale, v vVar, j$.time.chrono.j jVar) {
-        t tVar = t.f30507a;
-        this.f30449a = dVar;
+        t tVar = t.f29481a;
+        this.f29423a = dVar;
         Objects.requireNonNull(locale, "locale");
-        this.f30450b = locale;
-        this.f30451c = tVar;
+        this.f29424b = locale;
+        this.f29425c = tVar;
         Objects.requireNonNull(vVar, "resolverStyle");
-        this.f30452d = vVar;
-        this.f30453e = jVar;
+        this.f29426d = vVar;
+        this.f29427e = jVar;
     }
 
     public final String a(TemporalAccessor temporalAccessor) {
         StringBuilder sb2 = new StringBuilder(32);
         try {
-            this.f30449a.r(new q(temporalAccessor, this), sb2);
+            this.f29423a.r(new q(temporalAccessor, this), sb2);
             return sb2.toString();
         } catch (IOException e10) {
             throw new RuntimeException(e10.getMessage(), e10);
@@ -212,7 +212,7 @@ public final class DateTimeFormatter {
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:131:0x030c, code lost:
-        if (((java.util.HashMap) r9.f30508a).containsKey(j$.time.temporal.a.SECOND_OF_MINUTE) != false) goto L104;
+        if (((java.util.HashMap) r9.f29482a).containsKey(j$.time.temporal.a.SECOND_OF_MINUTE) != false) goto L104;
      */
     /* JADX WARN: Removed duplicated region for block: B:101:0x0277  */
     /* JADX WARN: Removed duplicated region for block: B:108:0x02a1  */
@@ -236,7 +236,7 @@ public final class DateTimeFormatter {
     }
 
     public final String toString() {
-        String dVar = this.f30449a.toString();
+        String dVar = this.f29423a.toString();
         return dVar.startsWith("[") ? dVar : dVar.substring(1, dVar.length() - 1);
     }
 }

@@ -1,10 +1,13 @@
 package lg;
-
-import java.util.Iterator;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class s implements Iterator {
-    @Override // java.util.Iterator
-    public final void remove() {
-        throw new UnsupportedOperationException();
+public abstract class s extends r {
+    public static boolean a(Object obj, Object obj2) {
+        if (obj == obj2) {
+            return true;
+        }
+        if (obj != null && obj.equals(obj2)) {
+            return true;
+        }
+        return false;
     }
 }

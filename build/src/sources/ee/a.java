@@ -28,37 +28,37 @@ import zd.g;
 public final class a extends f {
 
     /* renamed from: t  reason: collision with root package name */
-    private static final Pattern f21514t = Pattern.compile("(?:(\\d+):)?(\\d+):(\\d+)[:.](\\d+)");
+    private static final Pattern f21447t = Pattern.compile("(?:(\\d+):)?(\\d+):(\\d+)[:.](\\d+)");
 
     /* renamed from: o  reason: collision with root package name */
-    private final boolean f21515o;
+    private final boolean f21448o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final b f21516p;
+    private final b f21449p;
 
     /* renamed from: q  reason: collision with root package name */
-    private Map f21517q;
+    private Map f21450q;
 
     /* renamed from: r  reason: collision with root package name */
-    private float f21518r;
+    private float f21451r;
 
     /* renamed from: s  reason: collision with root package name */
-    private float f21519s;
+    private float f21452s;
 
     public a(List list) {
         super("SsaDecoder");
-        this.f21518r = -3.4028235E38f;
-        this.f21519s = -3.4028235E38f;
+        this.f21451r = -3.4028235E38f;
+        this.f21452s = -3.4028235E38f;
         if (list != null && !list.isEmpty()) {
-            this.f21515o = true;
+            this.f21448o = true;
             String E = w0.E((byte[]) list.get(0));
             ne.a.a(E.startsWith("Format:"));
-            this.f21516p = (b) ne.a.e(b.a(E));
-            H(new h0((byte[]) list.get(1)), li.d.f36882c);
+            this.f21449p = (b) ne.a.e(b.a(E));
+            H(new h0((byte[]) list.get(1)), mi.d.f37171c);
             return;
         }
-        this.f21515o = false;
-        this.f21516p = null;
+        this.f21448o = false;
+        this.f21449p = null;
     }
 
     private static int B(long j10, List list, List list2) {
@@ -105,46 +105,46 @@ public final class a extends f {
 
     private static zd.b D(String str, c cVar, c.b bVar, float f10, float f11) {
         SpannableString spannableString = new SpannableString(str);
-        b.C0782b o10 = new b.C0782b().o(spannableString);
+        b.C0770b o10 = new b.C0770b().o(spannableString);
         if (cVar != null) {
-            if (cVar.f21527c != null) {
-                spannableString.setSpan(new ForegroundColorSpan(cVar.f21527c.intValue()), 0, spannableString.length(), 33);
+            if (cVar.f21460c != null) {
+                spannableString.setSpan(new ForegroundColorSpan(cVar.f21460c.intValue()), 0, spannableString.length(), 33);
             }
-            if (cVar.f21534j == 3 && cVar.f21528d != null) {
-                spannableString.setSpan(new BackgroundColorSpan(cVar.f21528d.intValue()), 0, spannableString.length(), 33);
+            if (cVar.f21467j == 3 && cVar.f21461d != null) {
+                spannableString.setSpan(new BackgroundColorSpan(cVar.f21461d.intValue()), 0, spannableString.length(), 33);
             }
-            float f12 = cVar.f21529e;
+            float f12 = cVar.f21462e;
             if (f12 != -3.4028235E38f && f11 != -3.4028235E38f) {
                 o10.q(f12 / f11, 1);
             }
-            boolean z10 = cVar.f21530f;
-            if (z10 && cVar.f21531g) {
+            boolean z10 = cVar.f21463f;
+            if (z10 && cVar.f21464g) {
                 spannableString.setSpan(new StyleSpan(3), 0, spannableString.length(), 33);
             } else if (z10) {
                 spannableString.setSpan(new StyleSpan(1), 0, spannableString.length(), 33);
-            } else if (cVar.f21531g) {
+            } else if (cVar.f21464g) {
                 spannableString.setSpan(new StyleSpan(2), 0, spannableString.length(), 33);
             }
-            if (cVar.f21532h) {
+            if (cVar.f21465h) {
                 spannableString.setSpan(new UnderlineSpan(), 0, spannableString.length(), 33);
             }
-            if (cVar.f21533i) {
+            if (cVar.f21466i) {
                 spannableString.setSpan(new StrikethroughSpan(), 0, spannableString.length(), 33);
             }
         }
-        int i10 = bVar.f21550a;
+        int i10 = bVar.f21483a;
         if (i10 == -1) {
             if (cVar != null) {
-                i10 = cVar.f21526b;
+                i10 = cVar.f21459b;
             } else {
                 i10 = -1;
             }
         }
         o10.p(N(i10)).l(M(i10)).i(L(i10));
-        PointF pointF = bVar.f21551b;
+        PointF pointF = bVar.f21484b;
         if (pointF != null && f11 != -3.4028235E38f && f10 != -3.4028235E38f) {
             o10.k(pointF.x / f10);
-            o10.h(bVar.f21551b.y / f11, 0);
+            o10.h(bVar.f21484b.y / f11, 0);
         } else {
             o10.k(C(o10.d()));
             o10.h(C(o10.c()), 0);
@@ -157,36 +157,36 @@ public final class a extends f {
         if (P != null) {
             return P;
         }
-        return li.d.f36882c;
+        return mi.d.f37171c;
     }
 
     private void F(String str, b bVar, List list, List list2) {
         c cVar;
         int i10;
         ne.a.a(str.startsWith("Dialogue:"));
-        String[] split = str.substring(9).split(",", bVar.f21524e);
-        if (split.length != bVar.f21524e) {
+        String[] split = str.substring(9).split(",", bVar.f21457e);
+        if (split.length != bVar.f21457e) {
             y.i("SsaDecoder", "Skipping dialogue line with fewer columns than format: " + str);
             return;
         }
-        long K = K(split[bVar.f21520a]);
+        long K = K(split[bVar.f21453a]);
         if (K == -9223372036854775807L) {
             y.i("SsaDecoder", "Skipping invalid timing: " + str);
             return;
         }
-        long K2 = K(split[bVar.f21521b]);
+        long K2 = K(split[bVar.f21454b]);
         if (K2 == -9223372036854775807L) {
             y.i("SsaDecoder", "Skipping invalid timing: " + str);
             return;
         }
-        Map map = this.f21517q;
-        if (map != null && (i10 = bVar.f21522c) != -1) {
+        Map map = this.f21450q;
+        if (map != null && (i10 = bVar.f21455c) != -1) {
             cVar = (c) map.get(split[i10].trim());
         } else {
             cVar = null;
         }
-        String str2 = split[bVar.f21523d];
-        zd.b D = D(c.b.d(str2).replace("\\N", ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE).replace("\\n", ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE).replace("\\h", " "), cVar, c.b.b(str2), this.f21518r, this.f21519s);
+        String str2 = split[bVar.f21456d];
+        zd.b D = D(c.b.d(str2).replace("\\N", ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE).replace("\\n", ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE).replace("\\h", " "), cVar, c.b.b(str2), this.f21451r, this.f21452s);
         int B = B(K2, list2, list);
         for (int B2 = B(K, list2, list); B2 < B; B2++) {
             ((List) list.get(B2)).add(D);
@@ -195,8 +195,8 @@ public final class a extends f {
 
     private void G(h0 h0Var, List list, List list2, Charset charset) {
         b bVar;
-        if (this.f21515o) {
-            bVar = this.f21516p;
+        if (this.f21448o) {
+            bVar = this.f21449p;
         } else {
             bVar = null;
         }
@@ -225,7 +225,7 @@ public final class a extends f {
                 if ("[Script Info]".equalsIgnoreCase(t10)) {
                     I(h0Var, charset);
                 } else if ("[V4+ Styles]".equalsIgnoreCase(t10)) {
-                    this.f21517q = J(h0Var, charset);
+                    this.f21450q = J(h0Var, charset);
                 } else if ("[V4 Styles]".equalsIgnoreCase(t10)) {
                     y.f("SsaDecoder", "[V4 Styles] are not supported");
                 } else if ("[Events]".equalsIgnoreCase(t10)) {
@@ -265,7 +265,7 @@ public final class a extends f {
             r1 = 0
             r1 = r0[r1]
             java.lang.String r1 = r1.trim()
-            java.lang.String r1 = li.b.e(r1)
+            java.lang.String r1 = mi.b.e(r1)
             r1.getClass()
             java.lang.String r2 = "playresx"
             boolean r2 = r1.equals(r2)
@@ -279,13 +279,13 @@ public final class a extends f {
             r0 = r0[r3]     // Catch: java.lang.NumberFormatException -> L0
             java.lang.String r0 = r0.trim()     // Catch: java.lang.NumberFormatException -> L0
             float r0 = java.lang.Float.parseFloat(r0)     // Catch: java.lang.NumberFormatException -> L0
-            r4.f21519s = r0     // Catch: java.lang.NumberFormatException -> L0
+            r4.f21452s = r0     // Catch: java.lang.NumberFormatException -> L0
             goto L0
         L4c:
             r0 = r0[r3]     // Catch: java.lang.NumberFormatException -> L0
             java.lang.String r0 = r0.trim()     // Catch: java.lang.NumberFormatException -> L0
             float r0 = java.lang.Float.parseFloat(r0)     // Catch: java.lang.NumberFormatException -> L0
-            r4.f21518r = r0     // Catch: java.lang.NumberFormatException -> L0
+            r4.f21451r = r0     // Catch: java.lang.NumberFormatException -> L0
             goto L0
         L59:
             return
@@ -308,7 +308,7 @@ public final class a extends f {
                 } else {
                     c b10 = c.b(t10, aVar);
                     if (b10 != null) {
-                        linkedHashMap.put(b10.f21525a, b10);
+                        linkedHashMap.put(b10.f21458a, b10);
                     }
                 }
             }
@@ -317,7 +317,7 @@ public final class a extends f {
     }
 
     private static long K(String str) {
-        Matcher matcher = f21514t.matcher(str.trim());
+        Matcher matcher = f21447t.matcher(str.trim());
         if (!matcher.matches()) {
             return -9223372036854775807L;
         }
@@ -399,7 +399,7 @@ public final class a extends f {
         ArrayList arrayList2 = new ArrayList();
         h0 h0Var = new h0(bArr, i10);
         Charset E = E(h0Var);
-        if (!this.f21515o) {
+        if (!this.f21448o) {
             H(h0Var, E);
         }
         G(h0Var, arrayList, arrayList2, E);

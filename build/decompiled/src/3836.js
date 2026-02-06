@@ -1,43 +1,159 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = exports;
-    var0 = global;
-    var4 = var0.Object;
-    var3 = var4.defineProperty;
-    var2 = {};
-    var0 = true;
-    var2.value = var0;
-    var0 = '__esModule';
-    var0 = var3.bind(var4)(var1, var0, var2);
-    var0 = function arg0, arg1, arg2() {
-        _fun34268: for (var _fun34268_ip = 0;;) switch (_fun34268_ip) {
+    var2 = function arg0() {
+        _fun34262: for (var _fun34262_ip = 0;;) switch (_fun34262_ip) {
             case 0:
                 var2 = arg0;
-                var0 = 'build';
-                var1 = var0 in var2;
-                if (!var1) {
-                    _fun34268_ip = 31;
-                    continue _fun34268
+                var0 = {};
+                var3 = null;
+                var5 = var3 == var2;
+                var4 = undefined;
+                if (var5) {
+                    _fun34262_ip = 37;
+                    continue _fun34262
                 }
-            case 14:
-                var0 = var2.build;
-                var3 = 'function';
-                var0 = typeof var0;
-                var1 = var3 === var0;
+            case 16:
+                var5 = var2.viewConfig;
+                var6 = var3 == var5;
+                var4 = undefined;
+                if (var6) {
+                    _fun34262_ip = 37;
+                    continue _fun34262
+                }
             case 31:
-                var0 = var2;
-                if (!var1) {
-                    _fun34268_ip = 47;
-                    continue _fun34268
-                }
+                var4 = var5.uiViewClassName;
             case 37:
-                var1 = var2.build;
-                var0 = var1.bind(var2)();
-            case 47:
+                var0.viewName = var4;
+                var5 = var3 == var2;
+                var4 = undefined;
+                if (var5) {
+                    _fun34262_ip = 57;
+                    continue _fun34262
+                }
+            case 51:
+                var4 = var2._nativeTag;
+            case 57:
+                var0.viewTag = var4;
+                var3 = var3 == var2;
+                var1 = undefined;
+                if (var3) {
+                    _fun34262_ip = 77;
+                    continue _fun34262
+                }
+            case 71:
+                var1 = var2.viewConfig;
+            case 77:
+                var0.viewConfig = var1;
                 return var0;
         }
     };
-    var1.maybeBuild = var0;
+    var _closure1_slot0 = var2;
+    var2 = function arg0() {
+        _fun34263: for (var _fun34263_ip = 0;;) switch (_fun34263_ip) {
+            case 0:
+                var2 = arg0;
+                var0 = {};
+                var3 = null;
+                var5 = var3 == var2;
+                var4 = undefined;
+                if (var5) {
+                    _fun34263_ip = 37;
+                    continue _fun34263
+                }
+            case 16:
+                var5 = var2._viewConfig;
+                var6 = var3 == var5;
+                var4 = undefined;
+                if (var6) {
+                    _fun34263_ip = 37;
+                    continue _fun34263
+                }
+            case 31:
+                var4 = var5.uiViewClassName;
+            case 37:
+                var0.viewName = var4;
+                var5 = var3 == var2;
+                var4 = undefined;
+                if (var5) {
+                    _fun34263_ip = 57;
+                    continue _fun34263
+                }
+            case 51:
+                var4 = var2.__nativeTag;
+            case 57:
+                var0.viewTag = var4;
+                var3 = var3 == var2;
+                var1 = undefined;
+                if (var3) {
+                    _fun34263_ip = 77;
+                    continue _fun34263
+                }
+            case 71:
+                var1 = var2._viewConfig;
+            case 77:
+                var0.viewConfig = var1;
+                return var0;
+        }
+    };
+    var _closure1_slot1 = var2;
+    var2 = global;
+    var5 = var2.Object;
+    var4 = var5.defineProperty;
+    var3 = {};
+    var2 = true;
+    var3.value = var2;
+    var2 = '__esModule';
+    var2 = var4.bind(var5)(var1, var2, var3);
+    var0 = function arg0() {
+        _fun34264: for (var _fun34264_ip = 0;;) switch (_fun34264_ip) {
+            case 0:
+                var3 = arg0;
+                var0 = var3._nativeTag;
+                var2 = undefined;
+                if (!(var2 !== var0)) {
+                    _fun34264_ip = 27;
+                    continue _fun34264
+                }
+            case 15:
+                var1 = var3.__nativeTag;
+                var0 = null;
+                if (!(var0 === var1)) {
+                    _fun34264_ip = 77;
+                    continue _fun34264
+                }
+            case 27:
+                var0 = var3.__nativeTag;
+                if (!(var2 !== var0)) {
+                    _fun34264_ip = 49;
+                    continue _fun34264
+                }
+            case 37:
+                var1 = var3.__nativeTag;
+                var0 = null;
+                if (!(var0 === var1)) {
+                    _fun34264_ip = 63;
+                    continue _fun34264
+                }
+            case 49:
+                var0 = _closure1_slot0;
+                var0 = var0.bind(var2)(var3);
+                _fun34264_ip = 75;
+                continue _fun34264;
+            case 63:
+                var1 = _closure1_slot1;
+                var0 = var1.bind(var2)(var3);
+            case 75:
+                _fun34264_ip = 89;
+                continue _fun34264;
+            case 77:
+                var1 = _closure1_slot0;
+                var0 = var1.bind(var2)(var3);
+            case 89:
+                return var0;
+        }
+    };
+    var1.getViewInfo = var0;
     var0 = undefined;
     return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, []);

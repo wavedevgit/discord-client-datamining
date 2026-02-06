@@ -10,68 +10,68 @@ public interface b {
     public static final class a {
 
         /* renamed from: n  reason: collision with root package name */
-        public static final C0778a f55184n = new C0778a(null);
+        public static final C0766a f55915n = new C0766a(null);
 
         /* renamed from: a  reason: collision with root package name */
-        public Map f55185a;
+        public Map f55916a;
 
         /* renamed from: b  reason: collision with root package name */
-        public Map f55186b;
+        public Map f55917b;
 
         /* renamed from: c  reason: collision with root package name */
-        public Map f55187c;
+        public Map f55918c;
 
         /* renamed from: d  reason: collision with root package name */
-        public Map f55188d;
+        public Map f55919d;
 
         /* renamed from: e  reason: collision with root package name */
-        public Map f55189e;
+        public Map f55920e;
 
         /* renamed from: f  reason: collision with root package name */
-        public Object f55190f;
+        public Object f55921f;
 
         /* renamed from: g  reason: collision with root package name */
-        public Uri f55191g;
+        public Uri f55922g;
 
         /* renamed from: h  reason: collision with root package name */
-        public int f55192h = -1;
+        public int f55923h = -1;
 
         /* renamed from: i  reason: collision with root package name */
-        public int f55193i = -1;
+        public int f55924i = -1;
 
         /* renamed from: j  reason: collision with root package name */
-        public Object f55194j;
+        public Object f55925j;
 
         /* renamed from: k  reason: collision with root package name */
-        public Float f55195k;
+        public Float f55926k;
 
         /* renamed from: l  reason: collision with root package name */
-        public Float f55196l;
+        public Float f55927l;
 
         /* renamed from: m  reason: collision with root package name */
-        public boolean f55197m;
+        public boolean f55928m;
 
         /* renamed from: z9.b$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-        public static final class C0778a {
-            public /* synthetic */ C0778a(DefaultConstructorMarker defaultConstructorMarker) {
+        public static final class C0766a {
+            public /* synthetic */ C0766a(DefaultConstructorMarker defaultConstructorMarker) {
                 this();
             }
 
-            private C0778a() {
+            private C0766a() {
             }
         }
     }
 
     void a(String str, Object obj, a aVar);
 
-    void h(String str, Throwable th2, a aVar);
+    void g(String str, Throwable th2, a aVar);
 
     void k(String str);
 
-    void o(String str, a aVar);
+    void n(String str, a aVar);
 
     void onIntermediateImageSet(String str, Object obj);
 
-    void y(String str, Object obj, a aVar);
+    void p(String str, Object obj, a aVar);
 }

@@ -1,57 +1,57 @@
 package pg;
 
-import java.util.Objects;
+import java.util.Iterator;
+import java.util.Map;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class g1 extends m0 {
+final class g1 extends s0 {
 
-    /* renamed from: q  reason: collision with root package name */
-    static final m0 f45217q = new g1(new Object[0], 0);
+    /* renamed from: i  reason: collision with root package name */
+    private final transient r0 f44233i;
 
     /* renamed from: o  reason: collision with root package name */
-    final transient Object[] f45218o;
+    private final transient Object[] f44234o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final transient int f45219p;
+    private final transient int f44235p;
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public g1(Object[] objArr, int i10) {
-        this.f45218o = objArr;
-        this.f45219p = i10;
-    }
-
-    @Override // pg.m0, pg.h0
-    final int b(Object[] objArr, int i10) {
-        System.arraycopy(this.f45218o, 0, objArr, 0, this.f45219p);
-        return this.f45219p;
-    }
-
-    @Override // pg.h0
-    final int c() {
-        return this.f45219p;
+    public g1(r0 r0Var, Object[] objArr, int i10, int i11) {
+        this.f44233i = r0Var;
+        this.f44234o = objArr;
+        this.f44235p = i11;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    @Override // pg.h0
-    public final int d() {
-        return 0;
+    @Override // pg.k0
+    public final int b(Object[] objArr, int i10) {
+        return f().b(objArr, 0);
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    @Override // pg.h0
-    public final Object[] e() {
-        return this.f45218o;
+    @Override // pg.k0, java.util.AbstractCollection, java.util.Collection, java.util.Set
+    public final boolean contains(Object obj) {
+        if (obj instanceof Map.Entry) {
+            Map.Entry entry = (Map.Entry) obj;
+            Object key = entry.getKey();
+            Object value = entry.getValue();
+            if (value != null && value.equals(this.f44233i.get(key))) {
+                return true;
+            }
+        }
+        return false;
     }
 
-    @Override // java.util.List
-    public final Object get(int i10) {
-        el.a(i10, this.f45219p, "index");
-        Object obj = this.f45218o[i10];
-        Objects.requireNonNull(obj);
-        return obj;
+    @Override // pg.s0
+    final p0 g() {
+        return new f1(this);
     }
 
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
+    @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set
+    public final /* synthetic */ Iterator iterator() {
+        return f().listIterator(0);
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
     public final int size() {
-        return this.f45219p;
+        return this.f44235p;
     }
 }

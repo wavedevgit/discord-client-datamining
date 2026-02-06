@@ -9,19 +9,19 @@ import kotlin.jvm.internal.Lambda;
 public final class b0 {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f956e = new a(null);
+    public static final a f1285e = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f957a;
+    private final int f1286a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f958b;
+    private final int f1287b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f959c;
+    private final int f1288c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Function1 f960d;
+    private final Function1 f1289d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -29,12 +29,12 @@ public final class b0 {
         /* JADX INFO: Access modifiers changed from: package-private */
         /* renamed from: androidx.activity.b0$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-        public static final class C0014a extends Lambda implements Function1 {
+        public static final class C0012a extends Lambda implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final C0014a f961d = new C0014a();
+            public static final C0012a f1290d = new C0012a();
 
-            C0014a() {
+            C0012a() {
                 super(1);
             }
 
@@ -57,7 +57,7 @@ public final class b0 {
         public static final class b extends Lambda implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final b f962d = new b();
+            public static final b f1291d = new b();
 
             b() {
                 super(1);
@@ -76,7 +76,7 @@ public final class b0 {
         public static final class c extends Lambda implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final c f963d = new c();
+            public static final c f1292d = new c();
 
             c() {
                 super(1);
@@ -96,7 +96,7 @@ public final class b0 {
 
         public static /* synthetic */ b0 b(a aVar, int i10, int i11, Function1 function1, int i12, Object obj) {
             if ((i12 & 4) != 0) {
-                function1 = C0014a.f961d;
+                function1 = C0012a.f1290d;
             }
             return aVar.a(i10, i11, function1);
         }
@@ -107,11 +107,11 @@ public final class b0 {
         }
 
         public final b0 c(int i10) {
-            return new b0(i10, i10, 2, b.f962d, null);
+            return new b0(i10, i10, 2, b.f1291d, null);
         }
 
         public final b0 d(int i10, int i11) {
-            return new b0(i10, i11, 1, c.f963d, null);
+            return new b0(i10, i11, 1, c.f1292d, null);
         }
 
         private a() {
@@ -123,46 +123,46 @@ public final class b0 {
     }
 
     public static final b0 a(int i10) {
-        return f956e.c(i10);
+        return f1285e.c(i10);
     }
 
     public static final b0 g(int i10, int i11) {
-        return f956e.d(i10, i11);
+        return f1285e.d(i10, i11);
     }
 
     public final int b() {
-        return this.f958b;
+        return this.f1287b;
     }
 
     public final Function1 c() {
-        return this.f960d;
+        return this.f1289d;
     }
 
     public final int d() {
-        return this.f959c;
+        return this.f1288c;
     }
 
     public final int e(boolean z10) {
         if (z10) {
-            return this.f958b;
+            return this.f1287b;
         }
-        return this.f957a;
+        return this.f1286a;
     }
 
     public final int f(boolean z10) {
-        if (this.f959c == 0) {
+        if (this.f1288c == 0) {
             return 0;
         }
         if (z10) {
-            return this.f958b;
+            return this.f1287b;
         }
-        return this.f957a;
+        return this.f1286a;
     }
 
     private b0(int i10, int i11, int i12, Function1 function1) {
-        this.f957a = i10;
-        this.f958b = i11;
-        this.f959c = i12;
-        this.f960d = function1;
+        this.f1286a = i10;
+        this.f1287b = i11;
+        this.f1288c = i12;
+        this.f1289d = function1;
     }
 }

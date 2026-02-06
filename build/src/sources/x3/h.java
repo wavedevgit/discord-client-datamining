@@ -18,24 +18,24 @@ public interface h extends Closeable {
     public static abstract class a {
 
         /* renamed from: b  reason: collision with root package name */
-        public static final C0708a f53623b = new C0708a(null);
+        public static final C0728a f54442b = new C0728a(null);
 
         /* renamed from: a  reason: collision with root package name */
-        public final int f53624a;
+        public final int f54443a;
 
         /* renamed from: x3.h$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-        public static final class C0708a {
-            public /* synthetic */ C0708a(DefaultConstructorMarker defaultConstructorMarker) {
+        public static final class C0728a {
+            public /* synthetic */ C0728a(DefaultConstructorMarker defaultConstructorMarker) {
                 this();
             }
 
-            private C0708a() {
+            private C0728a() {
             }
         }
 
         public a(int i10) {
-            this.f53624a = i10;
+            this.f54443a = i10;
         }
 
         private final void a(String str) {
@@ -88,9 +88,9 @@ public interface h extends Closeable {
             Intrinsics.checkNotNullParameter(db2, "db");
             Log.e("SupportSQLite", "Corruption reported by sqlite on database: " + db2 + ".path");
             if (!db2.isOpen()) {
-                String r10 = db2.r();
-                if (r10 != null) {
-                    a(r10);
+                String t10 = db2.t();
+                if (t10 != null) {
+                    a(t10);
                     return;
                 }
                 return;
@@ -98,7 +98,7 @@ public interface h extends Closeable {
             List<Pair> list = null;
             try {
                 try {
-                    list = db2.H();
+                    list = db2.L();
                 } catch (SQLiteException unused) {
                 }
                 try {
@@ -113,9 +113,9 @@ public interface h extends Closeable {
                         a((String) obj);
                     }
                 } else {
-                    String r11 = db2.r();
-                    if (r11 != null) {
-                        a(r11);
+                    String t11 = db2.t();
+                    if (t11 != null) {
+                        a(t11);
                     }
                 }
             }
@@ -136,84 +136,84 @@ public interface h extends Closeable {
     public static final class b {
 
         /* renamed from: f  reason: collision with root package name */
-        public static final C0709b f53625f = new C0709b(null);
+        public static final C0729b f54444f = new C0729b(null);
 
         /* renamed from: a  reason: collision with root package name */
-        public final Context f53626a;
+        public final Context f54445a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final String f53627b;
+        public final String f54446b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final a f53628c;
+        public final a f54447c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final boolean f53629d;
+        public final boolean f54448d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final boolean f53630e;
+        public final boolean f54449e;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         public static class a {
 
             /* renamed from: a  reason: collision with root package name */
-            private final Context f53631a;
+            private final Context f54450a;
 
             /* renamed from: b  reason: collision with root package name */
-            private String f53632b;
+            private String f54451b;
 
             /* renamed from: c  reason: collision with root package name */
-            private a f53633c;
+            private a f54452c;
 
             /* renamed from: d  reason: collision with root package name */
-            private boolean f53634d;
+            private boolean f54453d;
 
             /* renamed from: e  reason: collision with root package name */
-            private boolean f53635e;
+            private boolean f54454e;
 
             public a(Context context) {
                 Intrinsics.checkNotNullParameter(context, "context");
-                this.f53631a = context;
+                this.f54450a = context;
             }
 
             public a a(boolean z10) {
-                this.f53635e = z10;
+                this.f54454e = z10;
                 return this;
             }
 
             public b b() {
                 String str;
-                a aVar = this.f53633c;
+                a aVar = this.f54452c;
                 if (aVar != null) {
-                    if (this.f53634d && ((str = this.f53632b) == null || str.length() == 0)) {
+                    if (this.f54453d && ((str = this.f54451b) == null || str.length() == 0)) {
                         throw new IllegalArgumentException("Must set a non-null database name to a configuration that uses the no backup directory.");
                     }
-                    return new b(this.f53631a, this.f53632b, aVar, this.f53634d, this.f53635e);
+                    return new b(this.f54450a, this.f54451b, aVar, this.f54453d, this.f54454e);
                 }
                 throw new IllegalArgumentException("Must set a callback to create the configuration.");
             }
 
             public a c(a callback) {
                 Intrinsics.checkNotNullParameter(callback, "callback");
-                this.f53633c = callback;
+                this.f54452c = callback;
                 return this;
             }
 
             public a d(String str) {
-                this.f53632b = str;
+                this.f54451b = str;
                 return this;
             }
 
             public a e(boolean z10) {
-                this.f53634d = z10;
+                this.f54453d = z10;
                 return this;
             }
         }
 
         /* renamed from: x3.h$b$b  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-        public static final class C0709b {
-            public /* synthetic */ C0709b(DefaultConstructorMarker defaultConstructorMarker) {
+        public static final class C0729b {
+            public /* synthetic */ C0729b(DefaultConstructorMarker defaultConstructorMarker) {
                 this();
             }
 
@@ -222,22 +222,22 @@ public interface h extends Closeable {
                 return new a(context);
             }
 
-            private C0709b() {
+            private C0729b() {
             }
         }
 
         public b(Context context, String str, a callback, boolean z10, boolean z11) {
             Intrinsics.checkNotNullParameter(context, "context");
             Intrinsics.checkNotNullParameter(callback, "callback");
-            this.f53626a = context;
-            this.f53627b = str;
-            this.f53628c = callback;
-            this.f53629d = z10;
-            this.f53630e = z11;
+            this.f54445a = context;
+            this.f54446b = str;
+            this.f54447c = callback;
+            this.f54448d = z10;
+            this.f54449e = z11;
         }
 
         public static final a a(Context context) {
-            return f53625f.a(context);
+            return f54444f.a(context);
         }
     }
 

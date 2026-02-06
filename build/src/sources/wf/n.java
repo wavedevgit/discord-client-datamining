@@ -9,29 +9,29 @@ public class n extends hf.a {
     public static final Parcelable.Creator<n> CREATOR = new w1();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f52964d;
+    private final String f53743d;
 
     public n(String str) {
-        this.f52964d = (String) gf.q.l(str);
+        this.f53743d = (String) gf.q.l(str);
     }
 
     public String b() {
-        return this.f52964d;
+        return this.f53743d;
     }
 
     public boolean equals(Object obj) {
         if (!(obj instanceof n)) {
             return false;
         }
-        return this.f52964d.equals(((n) obj).f52964d);
+        return this.f53743d.equals(((n) obj).f53743d);
     }
 
     public int hashCode() {
-        return gf.o.b(this.f52964d);
+        return gf.o.b(this.f53743d);
     }
 
     public final String toString() {
-        return "FidoAppIdExtension{appid='" + this.f52964d + "'}";
+        return "FidoAppIdExtension{appid='" + this.f53743d + "'}";
     }
 
     @Override // android.os.Parcelable

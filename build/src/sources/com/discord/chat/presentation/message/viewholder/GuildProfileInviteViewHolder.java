@@ -26,7 +26,7 @@ public final class GuildProfileInviteViewHolder extends MessagePartViewHolder {
         Intrinsics.checkNotNullParameter(inviteAccessory, "inviteAccessory");
         Intrinsics.checkNotNullParameter(eventHandler, "eventHandler");
         GuildProfileInviteEmbedImpl invite = inviteAccessory.getInvite();
-        final String mo538getMessageId3Eiw7ao = inviteAccessory.mo538getMessageId3Eiw7ao();
+        final String mo536getMessageId3Eiw7ao = inviteAccessory.mo536getMessageId3Eiw7ao();
         final int codedLinkIndex = inviteAccessory.getCodedLinkIndex();
         GuildProfileInviteView guildProfileInviteView = this.guildProfileInviteView;
         guildProfileInviteView.setHeader(invite.getHeaderText());
@@ -50,12 +50,12 @@ public final class GuildProfileInviteViewHolder extends MessagePartViewHolder {
         guildProfileInviteView.setClickListeners(new View.OnClickListener() { // from class: com.discord.chat.presentation.message.viewholder.u
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
-                ChatEventHandler.this.mo464onTapInviteEmbedAFFcxXc(mo538getMessageId3Eiw7ao, codedLinkIndex, null, null);
+                ChatEventHandler.this.mo462onTapInviteEmbedAFFcxXc(mo536getMessageId3Eiw7ao, codedLinkIndex, null, null);
             }
         }, new View.OnClickListener() { // from class: com.discord.chat.presentation.message.viewholder.v
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
-                ChatEventHandler.this.mo465onTapInviteEmbedAcceptntcYbpo(mo538getMessageId3Eiw7ao, codedLinkIndex);
+                ChatEventHandler.this.mo463onTapInviteEmbedAcceptntcYbpo(mo536getMessageId3Eiw7ao, codedLinkIndex);
             }
         });
     }

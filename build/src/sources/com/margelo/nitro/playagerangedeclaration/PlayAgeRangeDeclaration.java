@@ -17,9 +17,9 @@ import kotlin.coroutines.jvm.internal.k;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.coroutines.CancellableContinuation;
-import th.d;
-import th.e;
-import xg.f;
+import uh.d;
+import uh.e;
+import yg.f;
 @Metadata(d1 = {"\u00000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0006\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0007\u0018\u00002\u00020\u0001B\u0007¢\u0006\u0004\b\u0002\u0010\u0003J\u0015\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004H\u0016¢\u0006\u0004\b\u0006\u0010\u0007J1\u0010\r\u001a\b\u0012\u0004\u0012\u00020\f0\u00042\u0006\u0010\t\u001a\u00020\b2\b\u0010\n\u001a\u0004\u0018\u00010\b2\b\u0010\u000b\u001a\u0004\u0018\u00010\bH\u0016¢\u0006\u0004\b\r\u0010\u000eR\u0014\u0010\u0012\u001a\u00020\u000f8BX\u0082\u0004¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0013"}, d2 = {"Lcom/margelo/nitro/playagerangedeclaration/PlayAgeRangeDeclaration;", "Lcom/margelo/nitro/playagerangedeclaration/HybridPlayAgeRangeDeclarationSpec;", "<init>", "()V", "Lcom/margelo/nitro/core/Promise;", "Lcom/margelo/nitro/playagerangedeclaration/PlayAgeRangeDeclarationResult;", "getPlayAgeRangeDeclaration", "()Lcom/margelo/nitro/core/Promise;", "", "firstThresholdAge", "secondThresholdAge", "thirdThresholdAge", "Lcom/margelo/nitro/playagerangedeclaration/DeclaredAgeRangeResult;", "requestDeclaredAgeRange", "(DLjava/lang/Double;Ljava/lang/Double;)Lcom/margelo/nitro/core/Promise;", "Landroid/content/Context;", "b", "()Landroid/content/Context;", "appContext", "react-native-play-age-range-declaration_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @fb.a
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -29,24 +29,24 @@ public final class PlayAgeRangeDeclaration extends HybridPlayAgeRangeDeclaration
     static final class a extends k implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f17258d;
+        Object f17238d;
 
         /* renamed from: e  reason: collision with root package name */
-        Object f17259e;
+        Object f17239e;
 
         /* renamed from: i  reason: collision with root package name */
-        int f17260i;
+        int f17240i;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* renamed from: com.margelo.nitro.playagerangedeclaration.PlayAgeRangeDeclaration$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public static final class C0207a implements Function1 {
+        public static final class C0199a implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ CancellableContinuation f17262d;
+            final /* synthetic */ CancellableContinuation f17242d;
 
-            C0207a(CancellableContinuation cancellableContinuation) {
-                this.f17262d = cancellableContinuation;
+            C0199a(CancellableContinuation cancellableContinuation) {
+                this.f17242d = cancellableContinuation;
             }
 
             public final void a(e eVar) {
@@ -76,7 +76,7 @@ public final class PlayAgeRangeDeclaration extends HybridPlayAgeRangeDeclaration
                     z10 = true;
                 }
                 boolean z11 = !z10;
-                CancellableContinuation cancellableContinuation = this.f17262d;
+                CancellableContinuation cancellableContinuation = this.f17242d;
                 String d12 = eVar.d();
                 if (eVar.a() != null) {
                     d10 = Double.valueOf(a10.intValue());
@@ -92,7 +92,7 @@ public final class PlayAgeRangeDeclaration extends HybridPlayAgeRangeDeclaration
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Object invoke(Object obj) {
                 a((e) obj);
-                return Unit.f31988a;
+                return Unit.f32008a;
             }
         }
 
@@ -101,13 +101,13 @@ public final class PlayAgeRangeDeclaration extends HybridPlayAgeRangeDeclaration
         public static final class b implements f {
 
             /* renamed from: a  reason: collision with root package name */
-            final /* synthetic */ CancellableContinuation f17263a;
+            final /* synthetic */ CancellableContinuation f17243a;
 
             b(CancellableContinuation cancellableContinuation) {
-                this.f17263a = cancellableContinuation;
+                this.f17243a = cancellableContinuation;
             }
 
-            @Override // xg.f
+            @Override // yg.f
             public final void onFailure(Exception e10) {
                 Intrinsics.checkNotNullParameter(e10, "e");
                 String message = e10.getMessage();
@@ -115,8 +115,8 @@ public final class PlayAgeRangeDeclaration extends HybridPlayAgeRangeDeclaration
                     message = "Unknown error";
                 }
                 String str = message;
-                CancellableContinuation cancellableContinuation = this.f17263a;
-                Result.a aVar = Result.f31985e;
+                CancellableContinuation cancellableContinuation = this.f17243a;
+                Result.a aVar = Result.f32005e;
                 cancellableContinuation.resumeWith(Result.b(new PlayAgeRangeDeclarationResult(false, null, null, str, null, null, null)));
             }
         }
@@ -132,31 +132,31 @@ public final class PlayAgeRangeDeclaration extends HybridPlayAgeRangeDeclaration
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            Object f10 = ur.b.f();
-            int i10 = this.f17260i;
+            Object f10 = wr.b.f();
+            int i10 = this.f17240i;
             try {
                 if (i10 != 0) {
                     if (i10 == 1) {
-                        d dVar = (d) this.f17259e;
-                        th.b bVar = (th.b) this.f17258d;
+                        d dVar = (d) this.f17239e;
+                        uh.b bVar = (uh.b) this.f17238d;
                         kotlin.c.b(obj);
                     } else {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
                 } else {
                     kotlin.c.b(obj);
-                    th.b a10 = th.c.a(PlayAgeRangeDeclaration.this.b());
+                    uh.b a10 = uh.c.a(PlayAgeRangeDeclaration.this.b());
                     Intrinsics.checkNotNullExpressionValue(a10, "create(...)");
                     d a11 = d.a().a();
                     Intrinsics.checkNotNullExpressionValue(a11, "build(...)");
-                    this.f17258d = a10;
-                    this.f17259e = a11;
-                    this.f17260i = 1;
-                    kotlinx.coroutines.e eVar = new kotlinx.coroutines.e(ur.b.c(this), 1);
+                    this.f17238d = a10;
+                    this.f17239e = a11;
+                    this.f17240i = 1;
+                    kotlinx.coroutines.e eVar = new kotlinx.coroutines.e(wr.b.c(this), 1);
                     eVar.H();
-                    a10.a(a11).g(new c(new C0207a(eVar))).e(new b(eVar));
+                    a10.a(a11).g(new c(new C0199a(eVar))).e(new b(eVar));
                     obj = eVar.B();
-                    if (obj == ur.b.f()) {
+                    if (obj == wr.b.f()) {
                         g.c(this);
                     }
                     if (obj == f10) {
@@ -173,7 +173,7 @@ public final class PlayAgeRangeDeclaration extends HybridPlayAgeRangeDeclaration
 
         @Override // kotlin.jvm.functions.Function1
         public final Object invoke(Continuation continuation) {
-            return ((a) create(continuation)).invokeSuspend(Unit.f31988a);
+            return ((a) create(continuation)).invokeSuspend(Unit.f32008a);
         }
     }
 
@@ -181,7 +181,7 @@ public final class PlayAgeRangeDeclaration extends HybridPlayAgeRangeDeclaration
     static final class b extends k implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f17264d;
+        int f17244d;
 
         b(Continuation continuation) {
             super(1, continuation);
@@ -194,8 +194,8 @@ public final class PlayAgeRangeDeclaration extends HybridPlayAgeRangeDeclaration
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            ur.b.f();
-            if (this.f17264d == 0) {
+            wr.b.f();
+            if (this.f17244d == 0) {
                 kotlin.c.b(obj);
                 return new DeclaredAgeRangeResult(false, null, null, null, null);
             }
@@ -204,25 +204,25 @@ public final class PlayAgeRangeDeclaration extends HybridPlayAgeRangeDeclaration
 
         @Override // kotlin.jvm.functions.Function1
         public final Object invoke(Continuation continuation) {
-            return ((b) create(continuation)).invokeSuspend(Unit.f31988a);
+            return ((b) create(continuation)).invokeSuspend(Unit.f32008a);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class c implements xg.g {
+    public static final class c implements yg.g {
 
         /* renamed from: a  reason: collision with root package name */
-        private final /* synthetic */ Function1 f17265a;
+        private final /* synthetic */ Function1 f17245a;
 
         c(Function1 function) {
             Intrinsics.checkNotNullParameter(function, "function");
-            this.f17265a = function;
+            this.f17245a = function;
         }
 
-        @Override // xg.g
+        @Override // yg.g
         public final /* synthetic */ void onSuccess(Object obj) {
-            this.f17265a.invoke(obj);
+            this.f17245a.invoke(obj);
         }
     }
 

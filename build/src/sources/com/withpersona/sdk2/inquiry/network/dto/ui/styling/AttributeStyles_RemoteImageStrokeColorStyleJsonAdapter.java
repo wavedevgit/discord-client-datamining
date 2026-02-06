@@ -41,21 +41,21 @@ public final class AttributeStyles_RemoteImageStrokeColorStyleJsonAdapter extend
     @NotNull
     public AttributeStyles.RemoteImageStrokeColorStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         StyleElements.SimpleElementColor simpleElementColor = null;
         StyleElements.SimpleElementColor simpleElementColor2 = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 simpleElementColor = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
-            } else if (W == 1) {
+            } else if (J == 1) {
                 simpleElementColor2 = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
             }
         }
-        reader.z();
+        reader.D();
         return new AttributeStyles.RemoteImageStrokeColorStyle(simpleElementColor, simpleElementColor2);
     }
 
@@ -64,11 +64,11 @@ public final class AttributeStyles_RemoteImageStrokeColorStyleJsonAdapter extend
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (remoteImageStrokeColorStyle != null) {
             writer.k();
-            writer.W("stroke");
+            writer.J("stroke");
             this.nullableSimpleElementColorAdapter.toJson(writer, remoteImageStrokeColorStyle.getStroke());
-            writer.W("originalStroke");
+            writer.J("originalStroke");
             this.nullableSimpleElementColorAdapter.toJson(writer, remoteImageStrokeColorStyle.getOriginalStroke());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

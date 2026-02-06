@@ -1,209 +1,258 @@
 package vm;
 
-import android.graphics.Point;
+import android.app.Activity;
+import android.graphics.Rect;
+import android.os.Build;
 import android.view.MotionEvent;
-import android.view.View;
-import com.facebook.react.bridge.WritableNativeMap;
-import com.facebook.react.config.ReactFeatureFlags;
-import com.facebook.react.uimanager.JSTouchDispatcher;
-import com.facebook.react.uimanager.StateWrapper;
+import android.view.VelocityTracker;
+import android.view.ViewConfiguration;
+import android.view.WindowManager;
+import android.view.WindowMetrics;
+import androidx.core.view.WindowInsetsCompat;
+import androidx.core.view.h0;
 import com.facebook.react.uimanager.ThemedReactContext;
-import com.facebook.react.uimanager.events.EventDispatcher;
 import com.facebook.react.views.view.ReactViewGroup;
-import kotlin.Unit;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import vm.h;
+import lm.i;
+import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class f extends ReactViewGroup implements h {
+public final class f extends ReactViewGroup {
+
+    /* renamed from: y  reason: collision with root package name */
+    public static final a f52754y = new a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final ThemedReactContext f52322d;
+    private final ThemedReactContext f52755d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final JSTouchDispatcher f52323e;
+    private boolean f52756e;
 
     /* renamed from: i  reason: collision with root package name */
-    private c f52324i;
+    private float f52757i;
 
     /* renamed from: o  reason: collision with root package name */
-    private EventDispatcher f52325o;
+    private float f52758o;
 
     /* renamed from: p  reason: collision with root package name */
-    private StateWrapper f52326p;
+    private int f52759p;
 
     /* renamed from: q  reason: collision with root package name */
-    private boolean f52327q;
+    private int f52760q;
+
+    /* renamed from: r  reason: collision with root package name */
+    private int f52761r;
+
+    /* renamed from: s  reason: collision with root package name */
+    private nm.a f52762s;
+
+    /* renamed from: t  reason: collision with root package name */
+    private boolean f52763t;
+
+    /* renamed from: u  reason: collision with root package name */
+    private boolean f52764u;
+
+    /* renamed from: v  reason: collision with root package name */
+    private final Rect f52765v;
+
+    /* renamed from: w  reason: collision with root package name */
+    private final mm.f f52766w;
+
+    /* renamed from: x  reason: collision with root package name */
+    private VelocityTracker f52767x;
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class a {
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        private a() {
+        }
+    }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public f(ThemedReactContext reactContext) {
         super(reactContext);
         Intrinsics.checkNotNullParameter(reactContext, "reactContext");
-        this.f52322d = reactContext;
-        this.f52323e = new JSTouchDispatcher(this);
-        if (ReactFeatureFlags.dispatchPointerEvents) {
-            this.f52324i = new c(this);
+        this.f52755d = reactContext;
+        this.f52762s = new nm.c();
+        this.f52764u = true;
+        this.f52765v = new Rect();
+        this.f52766w = new mm.f();
+    }
+
+    private final void c() {
+        this.f52766w.n();
+        g();
+    }
+
+    private final void d(MotionEvent motionEvent) {
+        VelocityTracker velocityTracker = this.f52767x;
+        if (velocityTracker != null) {
+            velocityTracker.addMovement(motionEvent);
+        }
+        this.f52757i = motionEvent.getX();
+        this.f52758o = motionEvent.getY();
+        i.a(this, this.f52765v);
+        this.f52759p = this.f52765v.top;
+    }
+
+    private final void e(MotionEvent motionEvent) {
+        boolean z10;
+        i.a(this, this.f52765v);
+        int i10 = this.f52765v.top - this.f52759p;
+        MotionEvent obtain = MotionEvent.obtain(motionEvent);
+        obtain.offsetLocation(0.0f, i10);
+        VelocityTracker velocityTracker = this.f52767x;
+        if (velocityTracker != null) {
+            velocityTracker.addMovement(obtain);
+        }
+        float x10 = obtain.getX() - this.f52757i;
+        float y10 = obtain.getY() - this.f52758o;
+        boolean z11 = false;
+        if (!this.f52756e) {
+            if (Math.abs(y10) > Math.abs(x10) && Math.abs(y10) >= ViewConfiguration.get(getContext()).getScaledTouchSlop()) {
+                z10 = true;
+            } else {
+                z10 = false;
+            }
+            this.f52756e = z10;
+        }
+        if (this.f52756e) {
+            if (this.f52766w.t()) {
+                if (this.f52760q == 0) {
+                    this.f52760q = this.f52766w.q();
+                }
+                int a10 = this.f52762s.a(fs.a.c(y10), getWindowHeight() - ((int) motionEvent.getRawY()), this.f52766w.q(), this.f52761r);
+                if (a10 != 0) {
+                    this.f52766w.r(a10);
+                }
+            } else if (!this.f52766w.u()) {
+                WindowInsetsCompat G = h0.G(this);
+                if (G != null && G.u(WindowInsetsCompat.p.c())) {
+                    z11 = true;
+                }
+                if (h(y10, z11)) {
+                    mm.f.y(this.f52766w, this, null, 2, null);
+                }
+            }
+            this.f52758o = motionEvent.getY();
+            this.f52757i = motionEvent.getX();
+            this.f52759p = this.f52765v.top;
         }
     }
 
-    private final void d(int i10, int i11) {
-        WritableNativeMap writableNativeMap = new WritableNativeMap();
-        writableNativeMap.putDouble("screenWidth", jm.d.a(i10));
-        writableNativeMap.putDouble("screenHeight", jm.d.a(i11));
-        StateWrapper stateWrapper = this.f52326p;
-        if (stateWrapper != null) {
-            stateWrapper.updateState(writableNativeMap);
+    private final void f(MotionEvent motionEvent) {
+        Float f10;
+        VelocityTracker velocityTracker = this.f52767x;
+        if (velocityTracker != null) {
+            velocityTracker.addMovement(motionEvent);
         }
-    }
-
-    public final boolean c() {
-        return this.f52327q;
-    }
-
-    public final EventDispatcher getEventDispatcher$react_native_keyboard_controller_release() {
-        return this.f52325o;
-    }
-
-    public final StateWrapper getStateWrapper$react_native_keyboard_controller_release() {
-        return this.f52326p;
-    }
-
-    @Override // com.facebook.react.uimanager.RootView
-    public void handleException(Throwable t10) {
-        Intrinsics.checkNotNullParameter(t10, "t");
-        this.f52322d.getReactApplicationContext().handleException(new RuntimeException(t10));
-    }
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    @Override // com.facebook.react.views.view.ReactViewGroup, android.view.ViewGroup, android.view.View
-    public void onAttachedToWindow() {
-        super.onAttachedToWindow();
-        Point b10 = jm.a.b(this.f52322d);
-        d(b10.x, b10.y);
-        this.f52327q = true;
-    }
-
-    @Override // com.facebook.react.uimanager.RootView
-    public void onChildEndedNativeGesture(View childView, MotionEvent ev2) {
-        Intrinsics.checkNotNullParameter(childView, "childView");
-        Intrinsics.checkNotNullParameter(ev2, "ev");
-        EventDispatcher eventDispatcher = this.f52325o;
-        if (eventDispatcher != null) {
-            this.f52323e.onChildEndedNativeGesture(ev2, eventDispatcher);
+        VelocityTracker velocityTracker2 = this.f52767x;
+        if (velocityTracker2 != null) {
+            velocityTracker2.computeCurrentVelocity(500);
         }
-        c cVar = this.f52324i;
-        if (cVar != null) {
-            cVar.onChildEndedNativeGesture();
+        VelocityTracker velocityTracker3 = this.f52767x;
+        Float f11 = null;
+        if (velocityTracker3 != null) {
+            f10 = Float.valueOf(velocityTracker3.getYVelocity());
+        } else {
+            f10 = null;
         }
+        if (!this.f52766w.t() || this.f52760q != this.f52766w.q()) {
+            f11 = f10;
+        }
+        this.f52766w.l(f11);
+        g();
     }
 
-    @Override // com.facebook.react.uimanager.RootView
-    public void onChildStartedNativeGesture(MotionEvent motionEvent) {
-        h.a.a(this, motionEvent);
+    private final void g() {
+        this.f52756e = false;
+        this.f52757i = 0.0f;
+        this.f52758o = 0.0f;
+        this.f52759p = 0;
+        this.f52760q = 0;
+        this.f52765v.setEmpty();
+        VelocityTracker velocityTracker = this.f52767x;
+        if (velocityTracker != null) {
+            velocityTracker.recycle();
+        }
+        this.f52767x = null;
+    }
+
+    private final int getWindowHeight() {
+        WindowMetrics windowMetrics;
+        Rect bounds;
+        WindowManager windowManager;
+        if (Build.VERSION.SDK_INT >= 30) {
+            Activity currentActivity = this.f52755d.getCurrentActivity();
+            if (currentActivity != null && (windowManager = currentActivity.getWindowManager()) != null) {
+                windowMetrics = windowManager.getCurrentWindowMetrics();
+            } else {
+                windowMetrics = null;
+            }
+            if (windowMetrics != null && (bounds = windowMetrics.getBounds()) != null) {
+                return bounds.height();
+            }
+        }
+        return 0;
+    }
+
+    private final boolean h(float f10, boolean z10) {
+        if (f10 < 0.0f) {
+            if (!z10 && this.f52763t) {
+                return true;
+            }
+            return false;
+        } else if (f10 > 0.0f && z10 && this.f52764u) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     @Override // android.view.ViewGroup, android.view.View
-    protected void onDetachedFromWindow() {
-        super.onDetachedFromWindow();
-        d(0, 0);
-        this.f52327q = false;
-    }
-
-    @Override // com.facebook.react.views.view.ReactViewGroup, android.view.View
-    public boolean onHoverEvent(MotionEvent event) {
-        c cVar;
-        Intrinsics.checkNotNullParameter(event, "event");
-        EventDispatcher eventDispatcher = this.f52325o;
-        if (eventDispatcher != null && (cVar = this.f52324i) != null) {
-            cVar.f(event, eventDispatcher, false);
+    public boolean dispatchTouchEvent(MotionEvent motionEvent) {
+        Integer num;
+        if (this.f52767x == null) {
+            this.f52767x = VelocityTracker.obtain();
         }
-        return super.onHoverEvent(event);
-    }
-
-    @Override // android.view.ViewGroup
-    public boolean onInterceptHoverEvent(MotionEvent event) {
-        c cVar;
-        Intrinsics.checkNotNullParameter(event, "event");
-        EventDispatcher eventDispatcher = this.f52325o;
-        if (eventDispatcher != null && (cVar = this.f52324i) != null) {
-            cVar.f(event, eventDispatcher, true);
+        if (motionEvent != null) {
+            num = Integer.valueOf(motionEvent.getAction());
+        } else {
+            num = null;
         }
-        return super.onInterceptHoverEvent(event);
-    }
-
-    @Override // com.facebook.react.views.view.ReactViewGroup, android.view.ViewGroup
-    public boolean onInterceptTouchEvent(MotionEvent event) {
-        Intrinsics.checkNotNullParameter(event, "event");
-        EventDispatcher eventDispatcher = this.f52325o;
-        if (eventDispatcher != null) {
-            try {
-                this.f52323e.handleTouchEvent(event, eventDispatcher);
-                c cVar = this.f52324i;
-                if (cVar != null) {
-                    cVar.f(event, eventDispatcher, true);
-                    Unit unit = Unit.f31988a;
-                }
-            } catch (RuntimeException e10) {
-                nm.a.f41373a.e(g.a(), "Can not handle touch event", e10);
-                Unit unit2 = Unit.f31988a;
-            }
+        if (num != null && num.intValue() == 0) {
+            d(motionEvent);
+        } else if (num != null && num.intValue() == 2) {
+            e(motionEvent);
+        } else if (num != null && num.intValue() == 1) {
+            f(motionEvent);
+        } else if (num != null && num.intValue() == 3) {
+            c();
         }
-        return super.onInterceptTouchEvent(event);
+        return super.dispatchTouchEvent(motionEvent);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    @Override // com.facebook.react.views.view.ReactViewGroup, android.view.View
-    public void onSizeChanged(int i10, int i11, int i12, int i13) {
-        super.onSizeChanged(i10, i11, i12, i13);
-        d(i10, i11);
-    }
-
-    @Override // com.facebook.react.views.view.ReactViewGroup, android.view.View
-    public boolean onTouchEvent(MotionEvent event) {
-        Intrinsics.checkNotNullParameter(event, "event");
-        EventDispatcher eventDispatcher = this.f52325o;
-        if (eventDispatcher != null) {
-            try {
-                this.f52323e.handleTouchEvent(event, eventDispatcher);
-                c cVar = this.f52324i;
-                if (cVar != null) {
-                    cVar.f(event, eventDispatcher, false);
-                    Unit unit = Unit.f31988a;
-                }
-            } catch (RuntimeException e10) {
-                nm.a.f41373a.e(g.a(), "Can not handle touch event", e10);
-                Unit unit2 = Unit.f31988a;
-            }
+    public final void setInterpolator(@NotNull String interpolator) {
+        Intrinsics.checkNotNullParameter(interpolator, "interpolator");
+        nm.a aVar = (nm.a) g.a().get(interpolator);
+        if (aVar == null) {
+            aVar = new nm.c();
         }
-        super.onTouchEvent(event);
-        return true;
+        this.f52762s = aVar;
     }
 
-    public final void setAttached$react_native_keyboard_controller_release(boolean z10) {
-        this.f52327q = z10;
+    public final void setOffset(double d10) {
+        this.f52761r = (int) lm.d.b((float) d10);
     }
 
-    public final void setEventDispatcher$react_native_keyboard_controller_release(EventDispatcher eventDispatcher) {
-        this.f52325o = eventDispatcher;
+    public final void setScrollKeyboardOffScreenWhenVisible(boolean z10) {
+        this.f52764u = z10;
     }
 
-    public final void setStateWrapper$react_native_keyboard_controller_release(StateWrapper stateWrapper) {
-        this.f52326p = stateWrapper;
-    }
-
-    @Override // com.facebook.react.uimanager.RootView
-    public void onChildStartedNativeGesture(View view, MotionEvent ev2) {
-        Intrinsics.checkNotNullParameter(ev2, "ev");
-        EventDispatcher eventDispatcher = this.f52325o;
-        if (eventDispatcher != null) {
-            this.f52323e.onChildStartedNativeGesture(ev2, eventDispatcher);
-            c cVar = this.f52324i;
-            if (cVar != null) {
-                cVar.onChildStartedNativeGesture(view, ev2, eventDispatcher);
-            }
-        }
-    }
-
-    @Override // android.view.ViewGroup, android.view.ViewParent
-    public void requestDisallowInterceptTouchEvent(boolean z10) {
+    public final void setScrollKeyboardOnScreenWhenNotVisible(boolean z10) {
+        this.f52763t = z10;
     }
 }

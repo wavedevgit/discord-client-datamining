@@ -252,7 +252,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter {
             chatEventHandler = null;
         }
         chatEventHandler.onTapReferralRedeem(null);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -263,8 +263,8 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter {
             Intrinsics.throwUninitializedPropertyAccessException("eventHandler");
             chatEventHandler = null;
         }
-        chatEventHandler.mo461onTapGiftCodeAcceptNU4t8f8(giftCode, ((GiftMessageAccessory) messageAccessory).mo538getMessageId3Eiw7ao());
-        return Unit.f31988a;
+        chatEventHandler.mo459onTapGiftCodeAcceptNU4t8f8(giftCode, ((GiftMessageAccessory) messageAccessory).mo536getMessageId3Eiw7ao());
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -274,7 +274,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter {
         Intrinsics.checkNotNullParameter(attachmentViewHolder, "attachmentViewHolder");
         View itemView = attachmentViewHolder.itemView;
         Intrinsics.checkNotNullExpressionValue(itemView, "itemView");
-        String mo538getMessageId3Eiw7ao = attachment.mo538getMessageId3Eiw7ao();
+        String mo536getMessageId3Eiw7ao = attachment.mo536getMessageId3Eiw7ao();
         if (attachment instanceof ImageAttachmentMessageAccessory) {
             valueOf = null;
         } else if (attachment instanceof VideoAttachmentMessageAccessory) {
@@ -282,20 +282,20 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter {
         } else {
             throw new IllegalStateException(("Unsupported accessory: " + attachment).toString());
         }
-        messageAccessoriesAdapter.m506onMediaClickedmdVZsaY(itemView, mo538getMessageId3Eiw7ao, "attachment", ViewResizeMode.Cover, valueOf, i10, null, null, null);
-        return Unit.f31988a;
+        messageAccessoriesAdapter.m504onMediaClickedmdVZsaY(itemView, mo536getMessageId3Eiw7ao, "attachment", ViewResizeMode.Cover, valueOf, i10, null, null, null);
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onBindViewHolder$lambda$14$lambda$13(Function4 function4, int i10) {
         function4.invoke(MediaType.Attachment, Integer.valueOf(i10), null, null);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onBindViewHolder$lambda$15(MessageAccessoriesAdapter messageAccessoriesAdapter, MessagePartViewHolder messagePartViewHolder) {
         messageAccessoriesAdapter.onTapSpoiler.invoke(messagePartViewHolder);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -306,8 +306,8 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter {
             chatEventHandler = null;
         }
         MediaMosaicAttachmentMessageAccessory mediaMosaicAttachmentMessageAccessory = (MediaMosaicAttachmentMessageAccessory) messageAccessory;
-        chatEventHandler.mo471onTapObscuredMediaToggleZQwuxwg(mediaMosaicAttachmentMessageAccessory.mo538getMessageId3Eiw7ao(), mediaMosaicAttachmentMessageAccessory.m621getChannelIdo4g7jtM(), z10, null, null);
-        return Unit.f31988a;
+        chatEventHandler.mo469onTapObscuredMediaToggleZQwuxwg(mediaMosaicAttachmentMessageAccessory.mo536getMessageId3Eiw7ao(), mediaMosaicAttachmentMessageAccessory.m619getChannelIdo4g7jtM(), z10, null, null);
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -319,7 +319,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter {
         }
         String str = messageAccessoriesAdapter.messageId;
         Intrinsics.checkNotNull(str);
-        ChatEventHandler.DefaultImpls.m493onTapReactionAFFcxXc$default(chatEventHandler, str, null, null, "Message Shortcut", 4, null);
+        ChatEventHandler.DefaultImpls.m491onTapReactionAFFcxXc$default(chatEventHandler, str, null, null, "Message Shortcut", 4, null);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -333,7 +333,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter {
         Intrinsics.checkNotNull(str);
         ChannelId channelId = messageAccessoriesAdapter.channelId;
         Intrinsics.checkNotNull(channelId);
-        chatEventHandler.mo437onInitiateReply8a0ehIg(str, channelId.m1068unboximpl(), Boolean.TRUE, "message_shortcut");
+        chatEventHandler.mo435onInitiateReply8a0ehIg(str, channelId.m1066unboximpl(), Boolean.TRUE, "message_shortcut");
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -346,8 +346,8 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter {
         }
         String str = messageAccessoriesAdapter.messageId;
         Intrinsics.checkNotNull(str);
-        ChatEventHandler.DefaultImpls.m493onTapReactionAFFcxXc$default(chatEventHandler, str, reaction, null, null, 12, null);
-        return Unit.f31988a;
+        ChatEventHandler.DefaultImpls.m491onTapReactionAFFcxXc$default(chatEventHandler, str, reaction, null, null, 12, null);
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -362,8 +362,8 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter {
         Intrinsics.checkNotNull(str);
         ChannelId channelId = messageAccessoriesAdapter.channelId;
         Intrinsics.checkNotNull(channelId);
-        chatEventHandler.mo443onLongPressReactionEqy5D80(str, channelId.m1068unboximpl(), reaction);
-        return Unit.f31988a;
+        chatEventHandler.mo441onLongPressReactionEqy5D80(str, channelId.m1066unboximpl(), reaction);
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -375,8 +375,8 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter {
             chatEventHandler = null;
         }
         StickerMessageAccessory stickerMessageAccessory = (StickerMessageAccessory) messageAccessory;
-        chatEventHandler.mo446onStickerClickedAyv7vGE(stickerMessageAccessory.getSticker(), stickerMessageAccessory.mo538getMessageId3Eiw7ao());
-        return Unit.f31988a;
+        chatEventHandler.mo444onStickerClickedAyv7vGE(stickerMessageAccessory.getSticker(), stickerMessageAccessory.mo536getMessageId3Eiw7ao());
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -388,8 +388,8 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter {
             chatEventHandler = null;
         }
         StickerMessageAccessory stickerMessageAccessory = (StickerMessageAccessory) messageAccessory;
-        chatEventHandler.mo447onStickerLongClickedAyv7vGE(stickerMessageAccessory.getSticker(), stickerMessageAccessory.mo538getMessageId3Eiw7ao());
-        return Unit.f31988a;
+        chatEventHandler.mo445onStickerLongClickedAyv7vGE(stickerMessageAccessory.getSticker(), stickerMessageAccessory.mo536getMessageId3Eiw7ao());
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -403,7 +403,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter {
         Intrinsics.checkNotNull(str);
         ChannelId channelId = messageAccessoriesAdapter.channelId;
         Intrinsics.checkNotNull(channelId);
-        chatEventHandler.mo459onTapFollowForumPostpfaIj0E(str, channelId.m1068unboximpl());
+        chatEventHandler.mo457onTapFollowForumPostpfaIj0E(str, channelId.m1066unboximpl());
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -415,10 +415,10 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter {
         }
         ChannelId channelId = messageAccessoriesAdapter.channelId;
         Intrinsics.checkNotNull(channelId);
-        long m1068unboximpl = channelId.m1068unboximpl();
+        long m1066unboximpl = channelId.m1066unboximpl();
         GuildId guildId = messageAccessoriesAdapter.guildId;
         Intrinsics.checkNotNull(guildId);
-        chatEventHandler.mo481onTapShareForumPostmgk6anA(m1068unboximpl, guildId.m1081unboximpl());
+        chatEventHandler.mo479onTapShareForumPostmgk6anA(m1066unboximpl, guildId.m1079unboximpl());
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -430,7 +430,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter {
         }
         String str = messageAccessoriesAdapter.messageId;
         Intrinsics.checkNotNull(str);
-        ChatEventHandler.DefaultImpls.m493onTapReactionAFFcxXc$default(chatEventHandler, str, null, null, null, 12, null);
+        ChatEventHandler.DefaultImpls.m491onTapReactionAFFcxXc$default(chatEventHandler, str, null, null, null, 12, null);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -444,7 +444,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter {
         Intrinsics.checkNotNull(str);
         ChannelId channelId = messageAccessoriesAdapter.channelId;
         Intrinsics.checkNotNull(channelId);
-        chatEventHandler.mo478onTapReactionOverflowpfaIj0E(str, channelId.m1068unboximpl());
+        chatEventHandler.mo476onTapReactionOverflowpfaIj0E(str, channelId.m1066unboximpl());
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -457,8 +457,8 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter {
         }
         String str = messageAccessoriesAdapter.messageId;
         Intrinsics.checkNotNull(str);
-        ChatEventHandler.DefaultImpls.m493onTapReactionAFFcxXc$default(chatEventHandler, str, reaction, null, null, 12, null);
-        return Unit.f31988a;
+        ChatEventHandler.DefaultImpls.m491onTapReactionAFFcxXc$default(chatEventHandler, str, reaction, null, null, 12, null);
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -473,8 +473,8 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter {
         Intrinsics.checkNotNull(str);
         ChannelId channelId = messageAccessoriesAdapter.channelId;
         Intrinsics.checkNotNull(channelId);
-        chatEventHandler.mo443onLongPressReactionEqy5D80(str, channelId.m1068unboximpl(), reaction);
-        return Unit.f31988a;
+        chatEventHandler.mo441onLongPressReactionEqy5D80(str, channelId.m1066unboximpl(), reaction);
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -486,7 +486,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter {
                 Intrinsics.throwUninitializedPropertyAccessException("eventHandler");
                 chatEventHandler = null;
             }
-            chatEventHandler.mo458onTapDismissMediaPostSharePrompt1xi1bu0(str);
+            chatEventHandler.mo456onTapDismissMediaPostSharePrompt1xi1bu0(str);
         }
     }
 
@@ -501,35 +501,35 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter {
         }
         String str = messageAccessoriesAdapter.messageId;
         Intrinsics.checkNotNull(str);
-        chatEventHandler.mo440onLinkClickedu7_MRrM(str, url, filename);
-        return Unit.f31988a;
+        chatEventHandler.mo438onLinkClickedu7_MRrM(str, url, filename);
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onBindViewHolder$lambda$32(MessageAccessoriesAdapter messageAccessoriesAdapter, MessagePartViewHolder messagePartViewHolder) {
         messageAccessoriesAdapter.onTapSpoiler.invoke(messagePartViewHolder);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onBindViewHolder$lambda$34$lambda$33(Function4 function4, String componentId, Integer num) {
         Intrinsics.checkNotNullParameter(componentId, "componentId");
         function4.invoke(MediaType.Component, null, componentId, num);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onBindViewHolder$lambda$35(MessageAccessory messageAccessory, MessageAccessoriesAdapter messageAccessoriesAdapter, View view, String componentId, Integer num, Double d10) {
         Intrinsics.checkNotNullParameter(view, "view");
         Intrinsics.checkNotNullParameter(componentId, "componentId");
-        messageAccessoriesAdapter.m506onMediaClickedmdVZsaY(view, ((MessageComponentsAccessory) messageAccessory).mo538getMessageId3Eiw7ao(), "component", ViewResizeMode.Fill, d10, 0, null, componentId, num);
-        return Unit.f31988a;
+        messageAccessoriesAdapter.m504onMediaClickedmdVZsaY(view, ((MessageComponentsAccessory) messageAccessory).mo536getMessageId3Eiw7ao(), "component", ViewResizeMode.Fill, d10, 0, null, componentId, num);
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onBindViewHolder$lambda$36(MessageAccessoriesAdapter messageAccessoriesAdapter, MessagePartViewHolder messagePartViewHolder) {
         messageAccessoriesAdapter.onTapSpoiler.invoke(messagePartViewHolder);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -540,15 +540,15 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter {
             chatEventHandler = null;
         }
         MessageComponentsAccessory messageComponentsAccessory = (MessageComponentsAccessory) messageAccessory;
-        chatEventHandler.mo471onTapObscuredMediaToggleZQwuxwg(messageComponentsAccessory.mo538getMessageId3Eiw7ao(), messageComponentsAccessory.getMessage().m236getChannelIdo4g7jtM(), z10, null, null);
-        return Unit.f31988a;
+        chatEventHandler.mo469onTapObscuredMediaToggleZQwuxwg(messageComponentsAccessory.mo536getMessageId3Eiw7ao(), messageComponentsAccessory.getMessage().m234getChannelIdo4g7jtM(), z10, null, null);
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onBindViewHolder$lambda$39$lambda$38(Function4 function4, MessageAccessory messageAccessory, String str, Integer num) {
         Intrinsics.checkNotNullParameter(str, "<unused var>");
         function4.invoke(MediaType.Attachment, Integer.valueOf(((AudioAttachmentMessageAccessory) messageAccessory).getAttachmentIndex()), null, null);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -558,7 +558,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter {
         String str2 = messageAccessoriesAdapter.messageId;
         Intrinsics.checkNotNull(str2);
         if (str2 != null) {
-            messageId = MessageId.m1085boximpl(str2);
+            messageId = MessageId.m1083boximpl(str2);
         } else {
             messageId = null;
         }
@@ -566,13 +566,13 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter {
         ChannelId channelId = messageAccessoriesAdapter.channelId;
         Intrinsics.checkNotNull(channelId);
         function6.invoke(messageId2, channelId, num, mediaType, str, num2);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onBindViewHolder$lambda$40(MessageAccessoriesAdapter messageAccessoriesAdapter, MessagePartViewHolder messagePartViewHolder) {
         messageAccessoriesAdapter.onTapSpoiler.invoke(messagePartViewHolder);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -583,14 +583,14 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter {
             chatEventHandler = null;
         }
         PostPreviewEmbedMessageAccessory postPreviewEmbedMessageAccessory = (PostPreviewEmbedMessageAccessory) messageAccessory;
-        chatEventHandler.mo471onTapObscuredMediaToggleZQwuxwg(postPreviewEmbedMessageAccessory.mo538getMessageId3Eiw7ao(), postPreviewEmbedMessageAccessory.getPostPreviewEmbed().m407getThreadIdo4g7jtM(), z10, null, null);
-        return Unit.f31988a;
+        chatEventHandler.mo469onTapObscuredMediaToggleZQwuxwg(postPreviewEmbedMessageAccessory.mo536getMessageId3Eiw7ao(), postPreviewEmbedMessageAccessory.getPostPreviewEmbed().m405getThreadIdo4g7jtM(), z10, null, null);
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onBindViewHolder$lambda$5(MessageAccessoriesAdapter messageAccessoriesAdapter, MessagePartViewHolder messagePartViewHolder) {
         messageAccessoriesAdapter.onTapSpoiler.invoke(messagePartViewHolder);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -601,14 +601,14 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter {
             chatEventHandler = null;
         }
         EmbedMessageAccessory embedMessageAccessory = (EmbedMessageAccessory) messageAccessory;
-        chatEventHandler.mo471onTapObscuredMediaToggleZQwuxwg(embedMessageAccessory.mo538getMessageId3Eiw7ao(), embedMessageAccessory.m564getChannelIdo4g7jtM(), z10, null, embedMessageAccessory.getEmbed().getId());
-        return Unit.f31988a;
+        chatEventHandler.mo469onTapObscuredMediaToggleZQwuxwg(embedMessageAccessory.mo536getMessageId3Eiw7ao(), embedMessageAccessory.m562getChannelIdo4g7jtM(), z10, null, embedMessageAccessory.getEmbed().getId());
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onBindViewHolder$lambda$7(MessageAccessoriesAdapter messageAccessoriesAdapter, MessagePartViewHolder messagePartViewHolder) {
         messageAccessoriesAdapter.onTapSpoiler.invoke(messagePartViewHolder);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -616,8 +616,8 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter {
         View itemView = messagePartViewHolder.itemView;
         Intrinsics.checkNotNullExpressionValue(itemView, "itemView");
         EmbedMessageAccessory embedMessageAccessory = (EmbedMessageAccessory) messageAccessory;
-        messageAccessoriesAdapter.m506onMediaClickedmdVZsaY(itemView, embedMessageAccessory.mo538getMessageId3Eiw7ao(), "embed", ViewResizeMode.Fill, d10, embedMessageAccessory.getIndex(), num, null, null);
-        return Unit.f31988a;
+        messageAccessoriesAdapter.m504onMediaClickedmdVZsaY(itemView, embedMessageAccessory.mo536getMessageId3Eiw7ao(), "embed", ViewResizeMode.Fill, d10, embedMessageAccessory.getIndex(), num, null, null);
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -628,26 +628,26 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter {
             chatEventHandler = null;
         }
         InfoLinkMessageAccessory infoLinkMessageAccessory = (InfoLinkMessageAccessory) messageAccessory;
-        chatEventHandler.mo470onTapObscuredMediaLearnMore8a0ehIg(infoLinkMessageAccessory.mo538getMessageId3Eiw7ao(), infoLinkMessageAccessory.m613getChannelIdo4g7jtM(), infoLinkMessageAccessory.getAttachmentId(), infoLinkMessageAccessory.getEmbedId());
-        return Unit.f31988a;
+        chatEventHandler.mo468onTapObscuredMediaLearnMore8a0ehIg(infoLinkMessageAccessory.mo536getMessageId3Eiw7ao(), infoLinkMessageAccessory.m611getChannelIdo4g7jtM(), infoLinkMessageAccessory.getAttachmentId(), infoLinkMessageAccessory.getEmbedId());
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onCreateViewHolder$lambda$2(MessageAccessoriesAdapter messageAccessoriesAdapter, MessagePartViewHolder holder) {
         Intrinsics.checkNotNullParameter(holder, "holder");
         messageAccessoriesAdapter.onTapSpoiler.invoke(holder);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* renamed from: onMediaClicked-mdVZsaY  reason: not valid java name */
-    private final void m506onMediaClickedmdVZsaY(View view, String str, String str2, ViewResizeMode viewResizeMode, Double d10, int i10, Integer num, String str3, Integer num2) {
+    private final void m504onMediaClickedmdVZsaY(View view, String str, String str2, ViewResizeMode viewResizeMode, Double d10, int i10, Integer num, String str3, Integer num2) {
         Point locationInWindow = ViewLocationUtilsKt.getLocationInWindow(view);
         ChatEventHandler chatEventHandler = this.eventHandler;
         if (chatEventHandler == null) {
             Intrinsics.throwUninitializedPropertyAccessException("eventHandler");
             chatEventHandler = null;
         }
-        chatEventHandler.mo462onTapImageJR3bP6M(str, i10, str2, (int) SizeUtilsKt.getPxToDp(view.getWidth()), (int) SizeUtilsKt.getPxToDp(view.getHeight()), (int) SizeUtilsKt.getPxToDp(locationInWindow.x), (int) SizeUtilsKt.getPxToDp(locationInWindow.y), viewResizeMode, d10, num, str3, num2);
+        chatEventHandler.mo460onTapImageJR3bP6M(str, i10, str2, (int) SizeUtilsKt.getPxToDp(view.getWidth()), (int) SizeUtilsKt.getPxToDp(view.getHeight()), (int) SizeUtilsKt.getPxToDp(locationInWindow.x), (int) SizeUtilsKt.getPxToDp(locationInWindow.y), viewResizeMode, d10, num, str3, num2);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -655,7 +655,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter {
         Intrinsics.checkNotNullParameter(holder, "holder");
         messageAccessoriesAdapter.notifyItemChanged(holder.getBindingAdapterPosition());
         messageAccessoriesAdapter.measureAndLayout.invoke();
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     @SuppressLint({"NotifyDataSetChanged"})
@@ -724,7 +724,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter {
                         if (i11 == 4) {
                             return 27;
                         }
-                        throw new or.p();
+                        throw new qr.p();
                     }
                     return 8;
                 }
@@ -804,7 +804,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter {
                         if (i12 == 3) {
                             return 38;
                         }
-                        throw new or.p();
+                        throw new qr.p();
                     }
                     return 37;
                 }
@@ -828,7 +828,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter {
                     if (messageAccessory instanceof VideoAttachmentMessageAccessory) {
                         throw new IllegalArgumentException("No longer allowed. Use MediaMosaicAttachmentMessageAccessory");
                     }
-                    throw new or.p();
+                    throw new qr.p();
                 }
                 throw new IllegalArgumentException("No longer allowed. Use MediaMosaicAttachmentMessageAccessory");
             }
@@ -846,11 +846,11 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter {
 
     @SuppressLint({"NotifyDataSetChanged"})
     /* renamed from: setItems-bo5iIEc  reason: not valid java name */
-    public final void m507setItemsbo5iIEc(@NotNull String messageId, long j10, GuildId guildId, @NotNull List<? extends MessageAccessory> items) {
+    public final void m505setItemsbo5iIEc(@NotNull String messageId, long j10, GuildId guildId, @NotNull List<? extends MessageAccessory> items) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(items, "items");
         this.messageId = messageId;
-        this.channelId = ChannelId.m1059boximpl(j10);
+        this.channelId = ChannelId.m1057boximpl(j10);
         this.guildId = guildId;
         this.items = items;
         notifyDataSetChanged();
@@ -865,7 +865,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter {
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit unit;
-                unit = Unit.f31988a;
+                unit = Unit.f32008a;
                 return unit;
             }
         } : function0);
@@ -884,8 +884,8 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter {
             Intrinsics.throwUninitializedPropertyAccessException("eventHandler");
             chatEventHandler6 = null;
         }
-        final Function6 mo495getOnMessageLongPressed = chatEventHandler6.mo495getOnMessageLongPressed();
-        final Function4 function4 = mo495getOnMessageLongPressed != null ? new Function4() { // from class: com.discord.chat.presentation.message.q
+        final Function6 mo493getOnMessageLongPressed = chatEventHandler6.mo493getOnMessageLongPressed();
+        final Function4 function4 = mo493getOnMessageLongPressed != null ? new Function4() { // from class: com.discord.chat.presentation.message.q
             @Override // kotlin.jvm.functions.Function4
             public final Object invoke(Object obj, Object obj2, Object obj3, Object obj4) {
                 Unit onBindViewHolder$lambda$4$lambda$3;
@@ -958,12 +958,12 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter {
             }, new Function2<MessageId, LinkContentNode, Unit>() { // from class: com.discord.chat.presentation.message.MessageAccessoriesAdapter$onBindViewHolder$7
                 @Override // kotlin.jvm.functions.Function2
                 public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
-                    m526invokentcYbpo(((MessageId) obj).m1094unboximpl(), (LinkContentNode) obj2);
-                    return Unit.f31988a;
+                    m524invokentcYbpo(((MessageId) obj).m1092unboximpl(), (LinkContentNode) obj2);
+                    return Unit.f32008a;
                 }
 
                 /* renamed from: invoke-ntcYbpo  reason: not valid java name */
-                public final void m526invokentcYbpo(String messageId, LinkContentNode node) {
+                public final void m524invokentcYbpo(String messageId, LinkContentNode node) {
                     ChatEventHandler chatEventHandler8;
                     Intrinsics.checkNotNullParameter(messageId, "messageId");
                     Intrinsics.checkNotNullParameter(node, "node");
@@ -972,19 +972,19 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter {
                         Intrinsics.throwUninitializedPropertyAccessException("eventHandler");
                         chatEventHandler8 = null;
                     }
-                    chatEventHandler8.mo439onLinkClickedntcYbpo(messageId, node);
+                    chatEventHandler8.mo437onLinkClickedntcYbpo(messageId, node);
                 }
             });
         } else if (messageAccessory instanceof PremiumGroupInviteMessageAccessory) {
             ((PremiumGroupInviteViewHolder) holder).bind((PremiumGroupInviteMessageAccessory) messageAccessory, new Function2<MessageId, LinkContentNode, Unit>() { // from class: com.discord.chat.presentation.message.MessageAccessoriesAdapter$onBindViewHolder$8
                 @Override // kotlin.jvm.functions.Function2
                 public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
-                    m527invokentcYbpo(((MessageId) obj).m1094unboximpl(), (LinkContentNode) obj2);
-                    return Unit.f31988a;
+                    m525invokentcYbpo(((MessageId) obj).m1092unboximpl(), (LinkContentNode) obj2);
+                    return Unit.f32008a;
                 }
 
                 /* renamed from: invoke-ntcYbpo  reason: not valid java name */
-                public final void m527invokentcYbpo(String messageId, LinkContentNode node) {
+                public final void m525invokentcYbpo(String messageId, LinkContentNode node) {
                     ChatEventHandler chatEventHandler8;
                     Intrinsics.checkNotNullParameter(messageId, "messageId");
                     Intrinsics.checkNotNullParameter(node, "node");
@@ -993,7 +993,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter {
                         Intrinsics.throwUninitializedPropertyAccessException("eventHandler");
                         chatEventHandler8 = null;
                     }
-                    chatEventHandler8.mo439onLinkClickedntcYbpo(messageId, node);
+                    chatEventHandler8.mo437onLinkClickedntcYbpo(messageId, node);
                 }
             });
         } else if (messageAccessory instanceof GiftMessageAccessory) {
@@ -1498,8 +1498,8 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter {
             } else if (messageAccessory instanceof CtaButtonMessageAccessory) {
                 CtaButtonViewHolder ctaButtonViewHolder = (CtaButtonViewHolder) holder;
                 CtaButtonMessageAccessory ctaButtonMessageAccessory = (CtaButtonMessageAccessory) messageAccessory;
-                long m559getChannelIdo4g7jtM = ctaButtonMessageAccessory.m559getChannelIdo4g7jtM();
-                String mo538getMessageId3Eiw7ao = ctaButtonMessageAccessory.mo538getMessageId3Eiw7ao();
+                long m557getChannelIdo4g7jtM = ctaButtonMessageAccessory.m557getChannelIdo4g7jtM();
+                String mo536getMessageId3Eiw7ao = ctaButtonMessageAccessory.mo536getMessageId3Eiw7ao();
                 CtaButton ctaButton = ctaButtonMessageAccessory.getCtaButton();
                 ChatEventHandler chatEventHandler44 = this.eventHandler;
                 if (chatEventHandler44 == null) {
@@ -1508,7 +1508,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter {
                 } else {
                     chatEventHandler = chatEventHandler44;
                 }
-                ctaButtonViewHolder.m720bindJjTCmh4(m559getChannelIdo4g7jtM, mo538getMessageId3Eiw7ao, ctaButton, new MessageAccessoriesAdapter$onBindViewHolder$67(chatEventHandler));
+                ctaButtonViewHolder.m718bindJjTCmh4(m557getChannelIdo4g7jtM, mo536getMessageId3Eiw7ao, ctaButton, new MessageAccessoriesAdapter$onBindViewHolder$67(chatEventHandler));
             } else if (messageAccessory instanceof ForwardHeaderMessageAccessory) {
                 ((ForwardHeaderViewHolder) holder).bind();
             } else if (messageAccessory instanceof ForwardBreadcrumbMessageAccessory) {
@@ -1522,14 +1522,14 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter {
                 forwardBreadcrumbViewHolder.bind(forwardBreadcrumbMessageAccessory, new MessageAccessoriesAdapter$onBindViewHolder$68(chatEventHandler45));
             } else if (!(messageAccessory instanceof ImageAttachmentMessageAccessory)) {
                 if (!(messageAccessory instanceof VideoAttachmentMessageAccessory)) {
-                    throw new or.p();
+                    throw new qr.p();
                 }
                 throw new IllegalArgumentException("No longer allowed. Use MediaMosaicAttachmentMessageAccessory");
             } else {
                 throw new IllegalArgumentException("No longer allowed. Use MediaMosaicAttachmentMessageAccessory");
             }
         }
-        ForceExhaustiveKt.forceExhaustive(Unit.f31988a);
+        ForceExhaustiveKt.forceExhaustive(Unit.f32008a);
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.Adapter

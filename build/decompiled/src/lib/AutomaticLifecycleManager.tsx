@@ -54,7 +54,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = 'initialize';
         var0.key = var1;
         var1 = function() {
-            _fun39535: for (var _fun39535_ip = 0;;) switch (_fun39535_ip) {
+            _fun39538: for (var _fun39538_ip = 0;;) switch (_fun39538_ip) {
                 case 0:
                     var1 = this;
                     var2 = var1.initializedCount;
@@ -63,8 +63,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var1.initializedCount;
                     var2 = 1;
                     if (!(!(var3 > var2))) {
-                        _fun39535_ip = 104;
-                        continue _fun39535
+                        _fun39538_ip = 104;
+                        continue _fun39538
                     }
                 case 33:
                     var2 = var1._initialize;
@@ -76,133 +76,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var3.bind(var4)(var2);
                     var3 = var4.forEach;
                     var2 = function(arg0) { // Environment: var0
-                        _fun39536: for (var _fun39536_ip = 0;;) switch (_fun39536_ip) {
-                            case 0:
-                                var3 = arg0;
-                                var1 = var3[Symbol.iterator];
-                                var3 = var1().next;
-                                var5 = var3().value;
-                                var2 = var1;
-                                var0 = undefined;
-                                var2 = var2 === var0;
-                                var4 = undefined;
-                                if (var2) {
-                                    _fun39536_ip = 27;
-                                    continue _fun39536
-                                }
-                            case 24:
-                                var4 = var5;
-                            case 27:
-                                var5 = undefined;
-                                if (var2) {
-                                    _fun39536_ip = 57;
-                                    continue _fun39536
-                                }
-                            case 32:
-                                var6 = var3().value;
-                                var3 = var1;
-                                var3 = var3 === var0;
-                                var5 = undefined;
-                                var2 = var3;
-                                if (var3) {
-                                    _fun39536_ip = 57;
-                                    continue _fun39536
-                                }
-                            case 51:
-                                var5 = var6;
-                                var2 = var3;
-                            case 57:
-                                if (var2) {
-                                    _fun39536_ip = 63;
-                                    continue _fun39536
-                                }
-                            case 60:
-                                var1.return();
-                            case 63:
-                                var2 = _closure1_slot0;
-                                var3 = _closure1_slot1;
-                                var1 = 2;
-                                var1 = var3[var1];
-                                var3 = var2.bind(var0)(var1);
-                                var2 = var3.subscribe;
-                                var7 = 'function';
-                                var6 = typeof var5;
-                                var1 = var5;
-                                if (!(var7 !== var6)) {
-                                    _fun39536_ip = 112;
-                                    continue _fun39536
-                                }
-                            case 106:
-                                var1 = var5.callback;
-                            case 112:
-                                var1 = var2.bind(var3)(var4, var1);
-                                return var0;
-                        }
-                    };
-                    var2 = var3.bind(var4)(var2);
-                    var2 = var1.stores;
-                    var1 = var2.forEach;
-                    var0 = function(arg0, arg1) { // Environment: var0
-                        var1 = arg0;
-                        var2 = arg1;
-                        var0 = var2.addChangeListener;
-                        var0 = var0.bind(var2)(var1);
-                        var0 = undefined;
-                        var1 = var1.bind(var0)();
-                        return var0;
-                    };
-                    var0 = var1.bind(var2)(var0);
-                case 104:
-                    var0 = undefined;
-                    return var0;
-            }
-        };
-        var0.value = var1;
-        var1 = new Array(4);
-        var1[0] = var0;
-        var0 = {};
-        var5 = 'terminate';
-        var0.key = var5;
-        var5 = function arg0() {
-            _fun39538: for (var _fun39538_ip = 0;;) switch (_fun39538_ip) {
-                case 0:
-                    var0 = this;
-                    var1 = var0.initializedCount;
-                    var2 = 0;
-                    if (!(!(var1 <= var2))) {
-                        _fun39538_ip = 106;
-                        continue _fun39538
-                    }
-                case 15:
-                    var1 = arg0;
-                    if (var1) {
-                        _fun39538_ip = 38;
-                        continue _fun39538
-                    }
-                case 21:
-                    var1 = var0.initializedCount;
-                    var1 = var1 - 1;
-                    var0.initializedCount = var1;
-                    _fun39538_ip = 44;
-                    continue _fun39538;
-                case 38:
-                    var0.initializedCount = var2;
-                case 44:
-                    var1 = var0.initializedCount;
-                    if (!(var2 === var1)) {
-                        _fun39538_ip = 106;
-                        continue _fun39538
-                    }
-                case 54:
-                    var1 = var0._terminate;
-                    var1 = var1.bind(var0)();
-                    var1 = global;
-                    var2 = var1.Object;
-                    var1 = var2.entries;
-                    var0 = var0.actions;
-                    var2 = var1.bind(var2)(var0);
-                    var1 = var2.forEach;
-                    var0 = function(arg0) { // Environment: var0
                         _fun39539: for (var _fun39539_ip = 0;;) switch (_fun39539_ip) {
                             case 0:
                                 var3 = arg0;
@@ -251,13 +124,140 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var1 = 2;
                                 var1 = var3[var1];
                                 var3 = var2.bind(var0)(var1);
-                                var2 = var3.unsubscribe;
+                                var2 = var3.subscribe;
                                 var7 = 'function';
                                 var6 = typeof var5;
                                 var1 = var5;
                                 if (!(var7 !== var6)) {
                                     _fun39539_ip = 112;
                                     continue _fun39539
+                                }
+                            case 106:
+                                var1 = var5.callback;
+                            case 112:
+                                var1 = var2.bind(var3)(var4, var1);
+                                return var0;
+                        }
+                    };
+                    var2 = var3.bind(var4)(var2);
+                    var2 = var1.stores;
+                    var1 = var2.forEach;
+                    var0 = function(arg0, arg1) { // Environment: var0
+                        var1 = arg0;
+                        var2 = arg1;
+                        var0 = var2.addChangeListener;
+                        var0 = var0.bind(var2)(var1);
+                        var0 = undefined;
+                        var1 = var1.bind(var0)();
+                        return var0;
+                    };
+                    var0 = var1.bind(var2)(var0);
+                case 104:
+                    var0 = undefined;
+                    return var0;
+            }
+        };
+        var0.value = var1;
+        var1 = new Array(4);
+        var1[0] = var0;
+        var0 = {};
+        var5 = 'terminate';
+        var0.key = var5;
+        var5 = function arg0() {
+            _fun39541: for (var _fun39541_ip = 0;;) switch (_fun39541_ip) {
+                case 0:
+                    var0 = this;
+                    var1 = var0.initializedCount;
+                    var2 = 0;
+                    if (!(!(var1 <= var2))) {
+                        _fun39541_ip = 106;
+                        continue _fun39541
+                    }
+                case 15:
+                    var1 = arg0;
+                    if (var1) {
+                        _fun39541_ip = 38;
+                        continue _fun39541
+                    }
+                case 21:
+                    var1 = var0.initializedCount;
+                    var1 = var1 - 1;
+                    var0.initializedCount = var1;
+                    _fun39541_ip = 44;
+                    continue _fun39541;
+                case 38:
+                    var0.initializedCount = var2;
+                case 44:
+                    var1 = var0.initializedCount;
+                    if (!(var2 === var1)) {
+                        _fun39541_ip = 106;
+                        continue _fun39541
+                    }
+                case 54:
+                    var1 = var0._terminate;
+                    var1 = var1.bind(var0)();
+                    var1 = global;
+                    var2 = var1.Object;
+                    var1 = var2.entries;
+                    var0 = var0.actions;
+                    var2 = var1.bind(var2)(var0);
+                    var1 = var2.forEach;
+                    var0 = function(arg0) { // Environment: var0
+                        _fun39542: for (var _fun39542_ip = 0;;) switch (_fun39542_ip) {
+                            case 0:
+                                var3 = arg0;
+                                var1 = var3[Symbol.iterator];
+                                var3 = var1().next;
+                                var5 = var3().value;
+                                var2 = var1;
+                                var0 = undefined;
+                                var2 = var2 === var0;
+                                var4 = undefined;
+                                if (var2) {
+                                    _fun39542_ip = 27;
+                                    continue _fun39542
+                                }
+                            case 24:
+                                var4 = var5;
+                            case 27:
+                                var5 = undefined;
+                                if (var2) {
+                                    _fun39542_ip = 57;
+                                    continue _fun39542
+                                }
+                            case 32:
+                                var6 = var3().value;
+                                var3 = var1;
+                                var3 = var3 === var0;
+                                var5 = undefined;
+                                var2 = var3;
+                                if (var3) {
+                                    _fun39542_ip = 57;
+                                    continue _fun39542
+                                }
+                            case 51:
+                                var5 = var6;
+                                var2 = var3;
+                            case 57:
+                                if (var2) {
+                                    _fun39542_ip = 63;
+                                    continue _fun39542
+                                }
+                            case 60:
+                                var1.return();
+                            case 63:
+                                var2 = _closure1_slot0;
+                                var3 = _closure1_slot1;
+                                var1 = 2;
+                                var1 = var3[var1];
+                                var3 = var2.bind(var0)(var1);
+                                var2 = var3.unsubscribe;
+                                var7 = 'function';
+                                var6 = typeof var5;
+                                var1 = var5;
+                                if (!(var7 !== var6)) {
+                                    _fun39542_ip = 112;
+                                    continue _fun39542
                                 }
                             case 106:
                                 var1 = var5.callback;

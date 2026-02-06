@@ -19,14 +19,14 @@ public /* synthetic */ class GuildEventInviteViewHolder$bind$1$1$1 extends Funct
 
     @Override // kotlin.jvm.functions.Function2
     public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
-        m727invokentcYbpo(((MessageId) obj).m1094unboximpl(), (LinkContentNode) obj2);
-        return Unit.f31988a;
+        m725invokentcYbpo(((MessageId) obj).m1092unboximpl(), (LinkContentNode) obj2);
+        return Unit.f32008a;
     }
 
     /* renamed from: invoke-ntcYbpo  reason: not valid java name */
-    public final void m727invokentcYbpo(String p02, LinkContentNode p12) {
+    public final void m725invokentcYbpo(String p02, LinkContentNode p12) {
         Intrinsics.checkNotNullParameter(p02, "p0");
         Intrinsics.checkNotNullParameter(p12, "p1");
-        ((ChatEventHandler) this.receiver).mo439onLinkClickedntcYbpo(p02, p12);
+        ((ChatEventHandler) this.receiver).mo437onLinkClickedntcYbpo(p02, p12);
     }
 }

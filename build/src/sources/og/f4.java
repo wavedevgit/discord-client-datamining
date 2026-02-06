@@ -1,43 +1,53 @@
 package og;
-
-import xi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class f4 implements xi.d {
-
-    /* renamed from: a  reason: collision with root package name */
-    static final f4 f42863a = new f4();
-
-    /* renamed from: b  reason: collision with root package name */
-    private static final xi.c f42864b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private static final xi.c f42865c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private static final xi.c f42866d;
-
-    static {
-        c.b a10 = xi.c.a("logEventKey");
-        s1 s1Var = new s1();
-        s1Var.a(1);
-        f42864b = a10.b(s1Var.b()).a();
-        c.b a11 = xi.c.a("eventCount");
-        s1 s1Var2 = new s1();
-        s1Var2.a(2);
-        f42865c = a11.b(s1Var2.b()).a();
-        c.b a12 = xi.c.a("inferenceDurationStats");
-        s1 s1Var3 = new s1();
-        s1Var3.a(3);
-        f42866d = a12.b(s1Var3.b()).a();
+public abstract class f4 {
+    public static int a(int i10, int i11, String str) {
+        String a10;
+        if (i10 >= 0 && i10 < i11) {
+            return i10;
+        }
+        if (i10 >= 0) {
+            if (i11 < 0) {
+                throw new IllegalArgumentException("negative size: " + i11);
+            }
+            a10 = g5.a("%s (%s) must be less than size (%s)", "index", Integer.valueOf(i10), Integer.valueOf(i11));
+        } else {
+            a10 = g5.a("%s (%s) must not be negative", "index", Integer.valueOf(i10));
+        }
+        throw new IndexOutOfBoundsException(a10);
     }
 
-    private f4() {
+    public static int b(int i10, int i11, String str) {
+        if (i10 >= 0 && i10 <= i11) {
+            return i10;
+        }
+        throw new IndexOutOfBoundsException(d(i10, i11, "index"));
     }
 
-    @Override // xi.d
-    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
-        android.support.v4.media.session.b.a(obj);
-        xi.e eVar = (xi.e) obj2;
-        throw null;
+    public static void c(int i10, int i11, int i12) {
+        String d10;
+        if (i10 >= 0 && i11 >= i10 && i11 <= i12) {
+            return;
+        }
+        if (i10 >= 0 && i10 <= i12) {
+            if (i11 >= 0 && i11 <= i12) {
+                d10 = g5.a("end index (%s) must not be less than start index (%s)", Integer.valueOf(i11), Integer.valueOf(i10));
+            } else {
+                d10 = d(i11, i12, "end index");
+            }
+        } else {
+            d10 = d(i10, i12, "start index");
+        }
+        throw new IndexOutOfBoundsException(d10);
+    }
+
+    private static String d(int i10, int i11, String str) {
+        if (i10 < 0) {
+            return g5.a("%s (%s) must not be negative", str, Integer.valueOf(i10));
+        }
+        if (i11 >= 0) {
+            return g5.a("%s (%s) must not be greater than size (%s)", str, Integer.valueOf(i10), Integer.valueOf(i11));
+        }
+        throw new IllegalArgumentException("negative size: " + i11);
     }
 }

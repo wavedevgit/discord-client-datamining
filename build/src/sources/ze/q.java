@@ -13,9 +13,9 @@ public abstract class q extends cg.o implements r {
             if (i10 != 2) {
                 return false;
             }
-            l();
+            j();
         } else {
-            q();
+            p();
         }
         return true;
     }

@@ -7,16 +7,16 @@ public class k extends e {
     public k(i iVar, d dVar, long j10) {
         ByteOrder byteOrder;
         ByteBuffer allocate = ByteBuffer.allocate(8);
-        if (dVar.f51227a) {
+        if (dVar.f51268a) {
             byteOrder = ByteOrder.BIG_ENDIAN;
         } else {
             byteOrder = ByteOrder.LITTLE_ENDIAN;
         }
         allocate.order(byteOrder);
-        long j11 = dVar.f51229c + (j10 * dVar.f51231e);
-        this.f51236a = iVar.L(allocate, j11);
-        this.f51237b = iVar.E(allocate, 8 + j11);
-        this.f51238c = iVar.E(allocate, 16 + j11);
-        this.f51239d = iVar.E(allocate, j11 + 40);
+        long j11 = dVar.f51270c + (j10 * dVar.f51272e);
+        this.f51277a = iVar.z(allocate, j11);
+        this.f51278b = iVar.s(allocate, 8 + j11);
+        this.f51279c = iVar.s(allocate, 16 + j11);
+        this.f51280d = iVar.s(allocate, j11 + 40);
     }
 }

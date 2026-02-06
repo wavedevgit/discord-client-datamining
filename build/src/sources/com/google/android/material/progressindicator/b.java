@@ -1,43 +1,43 @@
 package com.google.android.material.progressindicator;
 
+import ah.k;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
 import com.google.android.material.internal.l;
-import zg.k;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public int f15242a;
+    public int f15222a;
 
     /* renamed from: b  reason: collision with root package name */
-    public int f15243b;
+    public int f15223b;
 
     /* renamed from: c  reason: collision with root package name */
-    public int[] f15244c = new int[0];
+    public int[] f15224c = new int[0];
 
     /* renamed from: d  reason: collision with root package name */
-    public int f15245d;
+    public int f15225d;
 
     /* renamed from: e  reason: collision with root package name */
-    public int f15246e;
+    public int f15226e;
 
     /* renamed from: f  reason: collision with root package name */
-    public int f15247f;
+    public int f15227f;
 
     /* renamed from: g  reason: collision with root package name */
-    public int f15248g;
+    public int f15228g;
 
     /* JADX INFO: Access modifiers changed from: protected */
     public b(Context context, AttributeSet attributeSet, int i10, int i11) {
-        int dimensionPixelSize = context.getResources().getDimensionPixelSize(zg.d.f55583b0);
+        int dimensionPixelSize = context.getResources().getDimensionPixelSize(ah.d.f678b0);
         TypedArray i12 = l.i(context, attributeSet, k.G, i10, i11, new int[0]);
-        this.f15242a = mh.c.c(context, i12, k.P, dimensionPixelSize);
-        this.f15243b = Math.min(mh.c.c(context, i12, k.O, 0), this.f15242a / 2);
-        this.f15246e = i12.getInt(k.L, 0);
-        this.f15247f = i12.getInt(k.H, 0);
-        this.f15248g = i12.getDimensionPixelSize(k.J, 0);
+        this.f15222a = nh.c.c(context, i12, k.P, dimensionPixelSize);
+        this.f15223b = Math.min(nh.c.c(context, i12, k.O, 0), this.f15222a / 2);
+        this.f15226e = i12.getInt(k.L, 0);
+        this.f15227f = i12.getInt(k.H, 0);
+        this.f15228g = i12.getDimensionPixelSize(k.J, 0);
         c(context, i12);
         d(context, i12);
         i12.recycle();
@@ -45,12 +45,12 @@ public abstract class b {
 
     private void c(Context context, TypedArray typedArray) {
         if (!typedArray.hasValue(k.I)) {
-            this.f15244c = new int[]{fh.a.b(context, zg.b.f55555l, -1)};
+            this.f15224c = new int[]{gh.a.b(context, ah.b.f650l, -1)};
         } else if (typedArray.peekValue(k.I).type != 1) {
-            this.f15244c = new int[]{typedArray.getColor(k.I, -1)};
+            this.f15224c = new int[]{typedArray.getColor(k.I, -1)};
         } else {
             int[] intArray = context.getResources().getIntArray(typedArray.getResourceId(k.I, -1));
-            this.f15244c = intArray;
+            this.f15224c = intArray;
             if (intArray.length != 0) {
                 return;
             }
@@ -60,25 +60,25 @@ public abstract class b {
 
     private void d(Context context, TypedArray typedArray) {
         if (typedArray.hasValue(k.N)) {
-            this.f15245d = typedArray.getColor(k.N, -1);
+            this.f15225d = typedArray.getColor(k.N, -1);
             return;
         }
-        this.f15245d = this.f15244c[0];
+        this.f15225d = this.f15224c[0];
         TypedArray obtainStyledAttributes = context.getTheme().obtainStyledAttributes(new int[]{16842803});
         float f10 = obtainStyledAttributes.getFloat(0, 0.2f);
         obtainStyledAttributes.recycle();
-        this.f15245d = fh.a.a(this.f15245d, (int) (f10 * 255.0f));
+        this.f15225d = gh.a.a(this.f15225d, (int) (f10 * 255.0f));
     }
 
     public boolean a() {
-        if (this.f15247f != 0) {
+        if (this.f15227f != 0) {
             return true;
         }
         return false;
     }
 
     public boolean b() {
-        if (this.f15246e != 0) {
+        if (this.f15226e != 0) {
             return true;
         }
         return false;
@@ -86,7 +86,7 @@ public abstract class b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void e() {
-        if (this.f15248g >= 0) {
+        if (this.f15228g >= 0) {
             return;
         }
         throw new IllegalArgumentException("indicatorTrackGapSize must be >= 0.");

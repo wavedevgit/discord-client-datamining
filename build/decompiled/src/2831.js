@@ -4,19 +4,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = exports;
     var6 = dependencyMap;
     var4 = function arg0() {
-        _fun22973: for (var _fun22973_ip = 0;;) switch (_fun22973_ip) {
+        _fun22969: for (var _fun22969_ip = 0;;) switch (_fun22969_ip) {
             case 0:
                 var2 = arg0;
                 if (!var2) {
-                    _fun22973_ip = 18;
-                    continue _fun22973
+                    _fun22969_ip = 18;
+                    continue _fun22969
                 }
             case 6:
                 var1 = var2.__esModule;
                 var0 = var2;
                 if (var1) {
-                    _fun22973_ip = 27;
-                    continue _fun22973
+                    _fun22969_ip = 27;
+                    continue _fun22969
                 }
             case 18:
                 var1 = {};
@@ -35,225 +35,268 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var7.bind(var8)(var1, var0, var2);
     var0 = function arg0, arg1() {
-        _fun22974: for (var _fun22974_ip = 0;;) switch (_fun22974_ip) {
+        _fun22970: for (var _fun22970_ip = 0;;) switch (_fun22970_ip) {
             case 0:
-                var1 = arg1;
-                var16 = undefined;
+                var5 = arg1;
+                var11 = undefined;
                 var0 = undefined;
-                var2 = arguments.length;
-                var5 = 1;
-                if (!(!(var2 < var5))) {
-                    _fun22974_ip = 662;
-                    continue _fun22974
+                var1 = arguments.length;
+                var14 = 1;
+                if (!(!(var1 < var14))) {
+                    _fun22970_ip = 646;
+                    continue _fun22970
                 }
             case 20:
-                var2 = _closure1_slot0;
-                var3 = var2.default;
-                var2 = arg0;
-                var3 = var3.bind(var16)(var2);
-                var2 = _closure1_slot1;
-                var2 = var2.default;
-                var2 = var2.bind(var16)(var3);
-                var6 = global;
+                var1 = _closure1_slot0;
+                var2 = var1.default;
+                var1 = arg0;
+                var12 = var2.bind(var11)(var1);
+                var1 = _closure1_slot1;
+                var1 = var1.default;
+                var2 = var1.bind(var11)(var12);
+                var1 = global;
                 if (var2) {
-                    _fun22974_ip = 93;
-                    continue _fun22974
+                    _fun22970_ip = 93;
+                    continue _fun22970
                 }
             case 59:
-                var7 = var6.RangeError;
-                var2 = var7.prototype;
+                var6 = var1.RangeError;
+                var2 = var6.prototype;
                 var4 = Object.create(var2, {
                     constructor: {
-                        value: var7
+                        value: var6
                     }
                 });
-                var24 = 'Invalid time value';
-                var25 = var4;
-                var2 = new var25[var7](var24, var23);
+                var16 = 'Invalid time value';
+                var17 = var4;
+                var2 = new var17[var6](var16, var15);
                 var2 = var2 instanceof Object ? var2 : var4;
                 throw var2;
             case 93:
-                var2 = var6.Number;
-                var7 = null;
-                var8 = var7 == var1;
-                var4 = undefined;
-                if (var8) {
-                    _fun22974_ip = 118;
-                    continue _fun22974
+                var6 = var1.String;
+                var9 = null;
+                var2 = var9 == var5;
+                var7 = undefined;
+                if (var2) {
+                    _fun22970_ip = 115;
+                    continue _fun22970
                 }
             case 110:
-                var4 = var1.fractionDigits;
-            case 118:
-                var13 = 0;
-                var1 = 0;
-                if (!(var7 !== var4)) {
-                    _fun22974_ip = 135;
-                    continue _fun22974
+                var7 = var5.format;
+            case 115:
+                var4 = 'extended';
+                var2 = var4;
+                if (!(var9 !== var7)) {
+                    _fun22970_ip = 136;
+                    continue _fun22970
                 }
             case 126:
-                var1 = 0;
-                if (!(var16 !== var4)) {
-                    _fun22974_ip = 135;
-                    continue _fun22974
+                var2 = var4;
+                if (!(var11 !== var7)) {
+                    _fun22970_ip = 136;
+                    continue _fun22970
                 }
-            case 132:
-                var1 = var4;
-            case 135:
-                var17 = var2.bind(var16)(var1);
-                if (!(var17 >= var13)) {
-                    _fun22974_ip = 151;
-                    continue _fun22974
+            case 133:
+                var2 = var7;
+            case 136:
+                var2 = var6.bind(var11)(var2);
+                var7 = var1.String;
+                var6 = var9 == var5;
+                var8 = undefined;
+                if (var6) {
+                    _fun22970_ip = 162;
+                    continue _fun22970
                 }
-            case 144:
-                var1 = 3;
-                if (!(!(var17 <= var1))) {
-                    _fun22974_ip = 185;
-                    continue _fun22974
+            case 156:
+                var8 = var5.representation;
+            case 162:
+                var6 = 'complete';
+                var5 = var6;
+                if (!(var9 !== var8)) {
+                    _fun22970_ip = 183;
+                    continue _fun22970
                 }
-            case 151:
-                var7 = var6.RangeError;
-                var2 = var7.prototype;
-                var4 = Object.create(var2, {
+            case 173:
+                var5 = var6;
+                if (!(var11 !== var8)) {
+                    _fun22970_ip = 183;
+                    continue _fun22970
+                }
+            case 180:
+                var5 = var8;
+            case 183:
+                var7 = var7.bind(var11)(var5);
+                if (!(var4 !== var2)) {
+                    _fun22970_ip = 203;
+                    continue _fun22970
+                }
+            case 192:
+                var5 = 'basic';
+                if (!(var5 === var2)) {
+                    _fun22970_ip = 612;
+                    continue _fun22970
+                }
+            case 203:
+                var5 = 'date';
+                var5 = var5 !== var7;
+                if (!var5) {
+                    _fun22970_ip = 229;
+                    continue _fun22970
+                }
+            case 214:
+                var8 = 'time';
+                if (!(var8 !== var7)) {
+                    _fun22970_ip = 229;
+                    continue _fun22970
+                }
+            case 222:
+                if (!(var6 === var7)) {
+                    _fun22970_ip = 578;
+                    continue _fun22970
+                }
+            case 229:
+                var2 = var4 === var2;
+                var10 = '';
+                var9 = var10;
+                if (!var2) {
+                    _fun22970_ip = 247;
+                    continue _fun22970
+                }
+            case 243:
+                var9 = '-';
+            case 247:
+                var6 = var10;
+                if (!var2) {
+                    _fun22970_ip = 257;
+                    continue _fun22970
+                }
+            case 253:
+                var6 = ':';
+            case 257:
+                var2 = 'time';
+                var4 = var10;
+                if (!(var2 !== var7)) {
+                    _fun22970_ip = 406;
+                    continue _fun22970
+                }
+            case 271:
+                var2 = _closure1_slot2;
+                var7 = var2.default;
+                var2 = var12.getDate;
+                var2 = var2.bind(var12)();
+                var13 = 2;
+                var8 = var7.bind(var11)(var2, var13);
+                var2 = _closure1_slot2;
+                var7 = var2.default;
+                var2 = var12.getMonth;
+                var2 = var2.bind(var12)();
+                var2 = var2 + var14;
+                var13 = var7.bind(var11)(var2, var13);
+                var2 = _closure1_slot2;
+                var14 = var2.default;
+                var2 = var12.getFullYear;
+                var7 = var2.bind(var12)();
+                var2 = 4;
+                var7 = var14.bind(var11)(var7, var2);
+                var2 = var10.concat;
+                var7 = var2.bind(var10)(var7);
+                var2 = var7.concat;
+                var7 = var2.bind(var7)(var9);
+                var2 = var7.concat;
+                var7 = var2.bind(var7)(var13);
+                var2 = var7.concat;
+                var7 = var2.bind(var7)(var9);
+                var2 = var7.concat;
+                var4 = var2.bind(var7)(var8);
+            case 406:
+                var2 = var4;
+                if (!var5) {
+                    _fun22970_ip = 576;
+                    continue _fun22970
+                }
+            case 415:
+                var5 = _closure1_slot2;
+                var7 = var5.default;
+                var5 = var12.getHours;
+                var5 = var5.bind(var12)();
+                var9 = 2;
+                var8 = var7.bind(var11)(var5, var9);
+                var5 = _closure1_slot2;
+                var7 = var5.default;
+                var5 = var12.getMinutes;
+                var5 = var5.bind(var12)();
+                var7 = var7.bind(var11)(var5, var9);
+                var3 = _closure1_slot2;
+                var5 = var3.default;
+                var3 = var12.getSeconds;
+                var3 = var3.bind(var12)();
+                var5 = var5.bind(var11)(var3, var9);
+                var9 = ' ';
+                if (!(var10 === var4)) {
+                    _fun22970_ip = 506;
+                    continue _fun22970
+                }
+            case 503:
+                var9 = var10;
+            case 506:
+                var3 = var10.concat;
+                var4 = var3.bind(var10)(var4);
+                var3 = var4.concat;
+                var4 = var3.bind(var4)(var9);
+                var3 = var4.concat;
+                var4 = var3.bind(var4)(var8);
+                var3 = var4.concat;
+                var4 = var3.bind(var4)(var6);
+                var3 = var4.concat;
+                var4 = var3.bind(var4)(var7);
+                var3 = var4.concat;
+                var4 = var3.bind(var4)(var6);
+                var3 = var4.concat;
+                var2 = var3.bind(var4)(var5);
+            case 576:
+                return var2;
+            case 578:
+                var4 = var1.RangeError;
+                var2 = var4.prototype;
+                var3 = Object.create(var2, {
                     constructor: {
-                        value: var7
+                        value: var4
                     }
                 });
-                var24 = 'fractionDigits must be between 0 and 3 inclusively';
-                var25 = var4;
-                var2 = new var25[var7](var24, var23);
-                var2 = var2 instanceof Object ? var2 : var4;
+                var16 = "representation must be 'date', 'time', or 'complete'";
+                var17 = var3;
+                var2 = new var17[var4](var16, var15);
+                var2 = var2 instanceof Object ? var2 : var3;
                 throw var2;
-            case 185:
-                var2 = _closure1_slot2;
-                var4 = var2.default;
-                var2 = var3.getDate;
-                var2 = var2.bind(var3)();
-                var15 = 2;
-                var9 = var4.bind(var16)(var2, var15);
-                var2 = _closure1_slot2;
-                var4 = var2.default;
-                var2 = var3.getMonth;
-                var2 = var2.bind(var3)();
-                var2 = var2 + var5;
-                var10 = var4.bind(var16)(var2, var15);
-                var2 = var3.getFullYear;
-                var11 = var2.bind(var3)();
-                var2 = _closure1_slot2;
-                var4 = var2.default;
-                var2 = var3.getHours;
-                var2 = var2.bind(var3)();
-                var8 = var4.bind(var16)(var2, var15);
-                var2 = _closure1_slot2;
-                var4 = var2.default;
-                var2 = var3.getMinutes;
-                var2 = var2.bind(var3)();
-                var7 = var4.bind(var16)(var2, var15);
-                var2 = _closure1_slot2;
-                var4 = var2.default;
-                var2 = var3.getSeconds;
-                var2 = var2.bind(var3)();
-                var5 = var4.bind(var16)(var2, var15);
-                var14 = var17 > var13;
-                var2 = '';
-                var4 = var2;
-                if (!var14) {
-                    _fun22974_ip = 420;
-                    continue _fun22974
-                }
-            case 341:
-                var14 = var3.getMilliseconds;
-                var19 = var14.bind(var3)();
-                var18 = var6.Math;
-                var14 = var18.floor;
-                var22 = var6.Math;
-                var21 = var22.pow;
-                var20 = var17 - var1;
-                var1 = 10;
-                var1 = var21.bind(var22)(var1, var20);
-                var1 = var19 * var1;
-                var14 = var14.bind(var18)(var1);
-                var1 = _closure1_slot2;
-                var1 = var1.default;
-                var14 = var1.bind(var16)(var14, var17);
-                var1 = '.';
-                var4 = var1 + var14;
-            case 420:
-                var1 = var3.getTimezoneOffset;
-                var1 = var1.bind(var3)();
-                var3 = 'Z';
-                if (!(var13 !== var1)) {
-                    _fun22974_ip = 563;
-                    continue _fun22974
-                }
-            case 441:
-                var14 = var6.Math;
-                var6 = var14.abs;
-                var17 = var6.bind(var14)(var1);
-                var6 = _closure1_slot2;
-                var18 = var6.default;
-                var6 = _closure1_slot3;
-                var19 = var6.default;
-                var6 = 60;
-                var14 = var17 / var6;
-                var14 = var19.bind(var16)(var14);
-                var14 = var18.bind(var16)(var14, var15);
-                var12 = _closure1_slot2;
-                var12 = var12.default;
-                var6 = var17 % var6;
-                var12 = var12.bind(var16)(var6, var15);
-                var6 = var2.concat;
-                var13 = var1 < var13;
-                var1 = '-';
-                if (!var13) {
-                    _fun22974_ip = 533;
-                    continue _fun22974
-                }
-            case 529:
-                var1 = '+';
-            case 533:
-                var13 = var6.bind(var2)(var1);
-                var6 = var13.concat;
-                var1 = ':';
-                var6 = var6.bind(var13)(var14, var1);
-                var1 = var6.concat;
-                var3 = var1.bind(var6)(var12);
-            case 563:
-                var1 = var2.concat;
-                var6 = '-';
-                var2 = var1.bind(var2)(var11, var6);
-                var1 = var2.concat;
-                var6 = var1.bind(var2)(var10, var6);
-                var2 = var6.concat;
-                var1 = 'T';
-                var2 = var2.bind(var6)(var9, var1);
-                var1 = var2.concat;
-                var6 = ':';
-                var2 = var1.bind(var2)(var8, var6);
-                var1 = var2.concat;
-                var2 = var1.bind(var2)(var7, var6);
-                var1 = var2.concat;
-                var2 = var1.bind(var2)(var5);
-                var1 = var2.concat;
-                var2 = var1.bind(var2)(var4);
-                var1 = var2.concat;
-                var1 = var1.bind(var2)(var3);
-                return var1;
-            case 662:
+            case 612:
+                var3 = var1.RangeError;
+                var1 = var3.prototype;
+                var2 = Object.create(var1, {
+                    constructor: {
+                        value: var3
+                    }
+                });
+                var16 = "format must be 'extended' or 'basic'";
+                var17 = var2;
+                var1 = new var17[var3](var16, var15);
+                var1 = var1 instanceof Object ? var1 : var2;
+                throw var1;
+            case 646:
                 var1 = global;
                 var2 = var1.TypeError;
-                var4 = '1 arguments required, but only ';
+                var4 = '1 argument required, but only ';
                 var3 = var4.concat;
                 var1 = arguments.length;
                 var0 = ' present';
-                var24 = var3.bind(var4)(var1, var0);
+                var16 = var3.bind(var4)(var1, var0);
                 var1 = var2.prototype;
                 var1 = Object.create(var1, {
                     constructor: {
                         value: var2
                     }
                 });
-                var25 = var1;
-                var0 = new var25[var2](var24, var23);
+                var17 = var1;
+                var0 = new var17[var2](var16, var15);
                 var0 = var0 instanceof Object ? var0 : var1;
                 throw var0;
         }
@@ -275,13 +318,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var5.bind(var0)(var2);
     var2 = var4.bind(var0)(var2);
     var _closure1_slot2 = var2;
-    var2 = 3;
-    var2 = var6[var2];
-    var2 = var5.bind(var0)(var2);
-    var2 = var4.bind(var0)(var2);
-    var _closure1_slot3 = var2;
     var2 = var1.default;
     var1 = arg4;
     var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [2573, 2755, 2816, 2577]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2575, 2757, 2818]);

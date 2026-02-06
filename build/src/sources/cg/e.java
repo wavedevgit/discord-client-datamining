@@ -9,40 +9,40 @@ import ve.f;
 public final class e extends ef.d implements ve.c {
 
     /* renamed from: l  reason: collision with root package name */
-    private static final a.g f7594l;
+    private static final a.g f7439l;
 
     /* renamed from: m  reason: collision with root package name */
-    private static final a.AbstractC0294a f7595m;
+    private static final a.AbstractC0286a f7440m;
 
     /* renamed from: n  reason: collision with root package name */
-    private static final ef.a f7596n;
+    private static final ef.a f7441n;
 
     /* renamed from: k  reason: collision with root package name */
-    private final String f7597k;
+    private final String f7442k;
 
     static {
         a.g gVar = new a.g();
-        f7594l = gVar;
+        f7439l = gVar;
         c cVar = new c();
-        f7595m = cVar;
-        f7596n = new ef.a("Auth.Api.Identity.CredentialSaving.API", cVar, gVar);
+        f7440m = cVar;
+        f7441n = new ef.a("Auth.Api.Identity.CredentialSaving.API", cVar, gVar);
     }
 
     public e(Activity activity, ve.m mVar) {
-        super(activity, f7596n, (a.d) mVar, d.a.f21569c);
-        this.f7597k = n.a();
+        super(activity, f7441n, (a.d) mVar, d.a.f21502c);
+        this.f7442k = n.a();
     }
 
     @Override // ve.c
     public final Task f(ve.f fVar) {
         gf.q.l(fVar);
         f.a d10 = ve.f.d(fVar);
-        d10.c(this.f7597k);
+        d10.c(this.f7442k);
         final ve.f a10 = d10.a();
-        return p(ff.q.a().d(m.f7612e).b(new ff.m() { // from class: cg.b
+        return p(ff.q.a().d(m.f7457e).b(new ff.m() { // from class: cg.b
             @Override // ff.m
             public final void accept(Object obj, Object obj2) {
-                ((w) ((t) obj).C()).h(new d(e.this, (xg.k) obj2), (ve.f) gf.q.l(a10));
+                ((w) ((t) obj).C()).h(new d(e.this, (yg.k) obj2), (ve.f) gf.q.l(a10));
             }
         }).c(false).e(1536).a());
     }

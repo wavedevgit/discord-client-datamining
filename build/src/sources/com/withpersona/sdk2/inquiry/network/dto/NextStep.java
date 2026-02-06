@@ -35,9 +35,9 @@ import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
-import or.l;
 import org.jetbrains.annotations.NotNull;
 import org.webrtc.MediaStreamTrack;
+import qr.l;
 @Metadata(d1 = {"\u0000,\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\b\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b6\u0018\u0000 \b2\u00020\u0001:\b\b\t\n\u000b\f\r\u000e\u000fB\u0011\b\u0004\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0004\b\u0004\u0010\u0005R\u0014\u0010\u0002\u001a\u00020\u0003X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0006\u0010\u0007\u0082\u0001\u0006\u0010\u0011\u0012\u0013\u0014\u0015¨\u0006\u0016"}, d2 = {"Lcom/withpersona/sdk2/inquiry/network/dto/NextStep;", "", StackTraceHelper.NAME_KEY, "", "<init>", "(Ljava/lang/String;)V", "getName", "()Ljava/lang/String;", "Companion", "Unknown", "Ui", "GovernmentId", "Selfie", "Document", "CancelDialog", "Complete", "Lcom/withpersona/sdk2/inquiry/network/dto/NextStep$Complete;", "Lcom/withpersona/sdk2/inquiry/network/dto/NextStep$Document;", "Lcom/withpersona/sdk2/inquiry/network/dto/NextStep$GovernmentId;", "Lcom/withpersona/sdk2/inquiry/network/dto/NextStep$Selfie;", "Lcom/withpersona/sdk2/inquiry/network/dto/NextStep$Ui;", "Lcom/withpersona/sdk2/inquiry/network/dto/NextStep$Unknown;", "network-inquiry_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class NextStep {
@@ -121,7 +121,7 @@ public abstract class NextStep {
 
         @NotNull
         public final h.e createAdapter() {
-            xm.b e10 = xm.b.b(NextStep.class, "type").c(Unknown.INSTANCE).e(Ui.class, "ui").e(GovernmentId.class, "government_id").e(Selfie.class, "selfie").e(Document.class, "document").e(Complete.class, "complete");
+            zm.b e10 = zm.b.b(NextStep.class, "type").c(Unknown.INSTANCE).e(Ui.class, "ui").e(GovernmentId.class, "government_id").e(Selfie.class, "selfie").e(Document.class, "document").e(Complete.class, "complete");
             Intrinsics.checkNotNullExpressionValue(e10, "withSubtype(...)");
             return e10;
         }
@@ -1688,7 +1688,7 @@ public abstract class NextStep {
             static {
                 StartPage[] $values = $values();
                 $VALUES = $values;
-                $ENTRIES = vr.a.a($values);
+                $ENTRIES = xr.a.a($values);
             }
 
             private StartPage(String str, int i10) {
@@ -3128,8 +3128,8 @@ public abstract class NextStep {
                 @NotNull
                 public CaptureFileType fromJson(@NotNull m reader) {
                     Intrinsics.checkNotNullParameter(reader, "reader");
-                    Object V = reader.V();
-                    return Intrinsics.areEqual(V, MediaStreamTrack.VIDEO_TRACK_KIND) ? CaptureFileType.Video : Intrinsics.areEqual(V, "image") ? CaptureFileType.Image : CaptureFileType.Unknown;
+                    Object I = reader.I();
+                    return Intrinsics.areEqual(I, MediaStreamTrack.VIDEO_TRACK_KIND) ? CaptureFileType.Video : Intrinsics.areEqual(I, "image") ? CaptureFileType.Image : CaptureFileType.Unknown;
                 }
             }
 
@@ -3140,7 +3140,7 @@ public abstract class NextStep {
             static {
                 CaptureFileType[] $values = $values();
                 $VALUES = $values;
-                $ENTRIES = vr.a.a($values);
+                $ENTRIES = xr.a.a($values);
                 Companion = new Companion(null);
             }
 
@@ -3953,8 +3953,8 @@ public abstract class NextStep {
                 @NotNull
                 public PassportNfcOption fromJson(@NotNull m reader) {
                     Intrinsics.checkNotNullParameter(reader, "reader");
-                    Object V = reader.V();
-                    return Intrinsics.areEqual(V, "required") ? PassportNfcOption.REQUIRED : Intrinsics.areEqual(V, "optional") ? PassportNfcOption.OPTIONAL : Intrinsics.areEqual(V, "required_if_supported") ? PassportNfcOption.REQUIRED_IF_SUPPORTED : PassportNfcOption.OPTIONAL;
+                    Object I = reader.I();
+                    return Intrinsics.areEqual(I, "required") ? PassportNfcOption.REQUIRED : Intrinsics.areEqual(I, "optional") ? PassportNfcOption.OPTIONAL : Intrinsics.areEqual(I, "required_if_supported") ? PassportNfcOption.REQUIRED_IF_SUPPORTED : PassportNfcOption.OPTIONAL;
                 }
             }
 
@@ -3965,7 +3965,7 @@ public abstract class NextStep {
             static {
                 PassportNfcOption[] $values = $values();
                 $VALUES = $values;
-                $ENTRIES = vr.a.a($values);
+                $ENTRIES = xr.a.a($values);
                 Companion = new Companion(null);
             }
 
@@ -4454,52 +4454,52 @@ public abstract class NextStep {
                 public SelectPage fromJson(@NotNull m reader) {
                     Intrinsics.checkNotNullParameter(reader, "reader");
                     LinkedHashMap linkedHashMap = new LinkedHashMap();
-                    reader.s();
+                    reader.u();
                     String str = "";
                     String str2 = str;
                     String str3 = str2;
                     String str4 = null;
                     while (reader.hasNext()) {
-                        String m02 = reader.m0();
-                        if (m02 != null) {
-                            switch (m02.hashCode()) {
+                        String o02 = reader.o0();
+                        if (o02 != null) {
+                            switch (o02.hashCode()) {
                                 case -979805852:
-                                    if (!m02.equals("prompt")) {
+                                    if (!o02.equals("prompt")) {
                                         break;
                                     } else {
-                                        str2 = reader.f1();
+                                        str2 = reader.e1();
                                         continue;
                                     }
                                 case 110371416:
-                                    if (!m02.equals("title")) {
+                                    if (!o02.equals("title")) {
                                         break;
                                     } else {
-                                        str = reader.f1();
+                                        str = reader.e1();
                                         continue;
                                     }
                                 case 432371099:
-                                    if (!m02.equals("disclaimer")) {
+                                    if (!o02.equals("disclaimer")) {
                                         break;
                                     } else {
                                         str4 = JsonReaderUtilsKt.nextStringOrNull(reader);
                                         continue;
                                     }
                                 case 1282023341:
-                                    if (!m02.equals("optionNotice")) {
+                                    if (!o02.equals("optionNotice")) {
                                         break;
                                     } else {
-                                        str3 = reader.f1();
+                                        str3 = reader.e1();
                                         continue;
                                     }
                             }
                         }
-                        if (reader.hasNext() && reader.E() == m.c.STRING) {
-                            linkedHashMap.put(m02, reader.f1());
+                        if (reader.hasNext() && reader.s() == m.c.STRING) {
+                            linkedHashMap.put(o02, reader.e1());
                         } else {
-                            reader.P();
+                            reader.S();
                         }
                     }
-                    reader.z();
+                    reader.D();
                     return new SelectPage(str, str2, str3, str4, linkedHashMap);
                 }
             }
@@ -4622,8 +4622,8 @@ public abstract class NextStep {
                 @NotNull
                 public VideoCaptureMethod fromJson(@NotNull m reader) {
                     Intrinsics.checkNotNullParameter(reader, "reader");
-                    Object V = reader.V();
-                    return Intrinsics.areEqual(V, "stream") ? VideoCaptureMethod.Stream : Intrinsics.areEqual(V, "upload") ? VideoCaptureMethod.Upload : VideoCaptureMethod.None;
+                    Object I = reader.I();
+                    return Intrinsics.areEqual(I, "stream") ? VideoCaptureMethod.Stream : Intrinsics.areEqual(I, "upload") ? VideoCaptureMethod.Upload : VideoCaptureMethod.None;
                 }
             }
 
@@ -4634,7 +4634,7 @@ public abstract class NextStep {
             static {
                 VideoCaptureMethod[] $values = $values();
                 $VALUES = $values;
-                $ENTRIES = vr.a.a($values);
+                $ENTRIES = xr.a.a($values);
                 Companion = new Companion(null);
             }
 
@@ -5180,8 +5180,8 @@ public abstract class NextStep {
                 @NotNull
                 public CaptureFileType fromJson(@NotNull m reader) {
                     Intrinsics.checkNotNullParameter(reader, "reader");
-                    Object V = reader.V();
-                    return Intrinsics.areEqual(V, MediaStreamTrack.VIDEO_TRACK_KIND) ? CaptureFileType.Video : Intrinsics.areEqual(V, "image") ? CaptureFileType.Image : CaptureFileType.Unknown;
+                    Object I = reader.I();
+                    return Intrinsics.areEqual(I, MediaStreamTrack.VIDEO_TRACK_KIND) ? CaptureFileType.Video : Intrinsics.areEqual(I, "image") ? CaptureFileType.Image : CaptureFileType.Unknown;
                 }
             }
 
@@ -5192,7 +5192,7 @@ public abstract class NextStep {
             static {
                 CaptureFileType[] $values = $values();
                 $VALUES = $values;
-                $ENTRIES = vr.a.a($values);
+                $ENTRIES = xr.a.a($values);
                 Companion = new Companion(null);
             }
 
@@ -5235,7 +5235,7 @@ public abstract class NextStep {
             static {
                 CaptureMethod[] $values = $values();
                 $VALUES = $values;
-                $ENTRIES = vr.a.a($values);
+                $ENTRIES = xr.a.a($values);
             }
 
             private CaptureMethod(String str, int i10) {
@@ -5965,7 +5965,7 @@ public abstract class NextStep {
             static {
                 SelfiePose[] $values = $values();
                 $VALUES = $values;
-                $ENTRIES = vr.a.a($values);
+                $ENTRIES = xr.a.a($values);
             }
 
             private SelfiePose(String str, int i10) {
@@ -6020,8 +6020,8 @@ public abstract class NextStep {
                 @NotNull
                 public VideoCaptureMethod fromJson(@NotNull m reader) {
                     Intrinsics.checkNotNullParameter(reader, "reader");
-                    Object V = reader.V();
-                    return Intrinsics.areEqual(V, "stream") ? VideoCaptureMethod.Stream : Intrinsics.areEqual(V, "upload") ? VideoCaptureMethod.Upload : VideoCaptureMethod.None;
+                    Object I = reader.I();
+                    return Intrinsics.areEqual(I, "stream") ? VideoCaptureMethod.Stream : Intrinsics.areEqual(I, "upload") ? VideoCaptureMethod.Upload : VideoCaptureMethod.None;
                 }
             }
 
@@ -6032,7 +6032,7 @@ public abstract class NextStep {
             static {
                 VideoCaptureMethod[] $values = $values();
                 $VALUES = $values;
-                $ENTRIES = vr.a.a($values);
+                $ENTRIES = xr.a.a($values);
                 Companion = new Companion(null);
             }
 

@@ -6,7 +6,7 @@ import com.google.android.gms.dynamite.DynamiteModule;
 final class d implements DynamiteModule.b.a {
     @Override // com.google.android.gms.dynamite.DynamiteModule.b.a
     public final int a(Context context, String str, boolean z10) {
-        return DynamiteModule.e(context, str, z10);
+        return DynamiteModule.f(context, str, z10);
     }
 
     @Override // com.google.android.gms.dynamite.DynamiteModule.b.a

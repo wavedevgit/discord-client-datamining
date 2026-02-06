@@ -23,95 +23,95 @@ public final class PlaybackStats {
     private final long[] N;
 
     /* renamed from: a  reason: collision with root package name */
-    public final int f12037a;
+    public final int f11936a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final List f12038b;
+    public final List f11937b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final List f12039c;
+    public final List f11938c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final long f12040d;
+    public final long f11939d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final int f12041e;
+    public final int f11940e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final int f12042f;
+    public final int f11941f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final int f12043g;
+    public final int f11942g;
 
     /* renamed from: h  reason: collision with root package name */
-    public final int f12044h;
+    public final int f11943h;
 
     /* renamed from: i  reason: collision with root package name */
-    public final long f12045i;
+    public final long f11944i;
 
     /* renamed from: j  reason: collision with root package name */
-    public final int f12046j;
+    public final int f11945j;
 
     /* renamed from: k  reason: collision with root package name */
-    public final int f12047k;
+    public final int f11946k;
 
     /* renamed from: l  reason: collision with root package name */
-    public final int f12048l;
+    public final int f11947l;
 
     /* renamed from: m  reason: collision with root package name */
-    public final int f12049m;
+    public final int f11948m;
 
     /* renamed from: n  reason: collision with root package name */
-    public final int f12050n;
+    public final int f11949n;
 
     /* renamed from: o  reason: collision with root package name */
-    public final long f12051o;
+    public final long f11950o;
 
     /* renamed from: p  reason: collision with root package name */
-    public final int f12052p;
+    public final int f11951p;
 
     /* renamed from: q  reason: collision with root package name */
-    public final List f12053q;
+    public final List f11952q;
 
     /* renamed from: r  reason: collision with root package name */
-    public final List f12054r;
+    public final List f11953r;
 
     /* renamed from: s  reason: collision with root package name */
-    public final long f12055s;
+    public final long f11954s;
 
     /* renamed from: t  reason: collision with root package name */
-    public final long f12056t;
+    public final long f11955t;
 
     /* renamed from: u  reason: collision with root package name */
-    public final long f12057u;
+    public final long f11956u;
 
     /* renamed from: v  reason: collision with root package name */
-    public final long f12058v;
+    public final long f11957v;
 
     /* renamed from: w  reason: collision with root package name */
-    public final long f12059w;
+    public final long f11958w;
 
     /* renamed from: x  reason: collision with root package name */
-    public final long f12060x;
+    public final long f11959x;
 
     /* renamed from: y  reason: collision with root package name */
-    public final int f12061y;
+    public final int f11960y;
 
     /* renamed from: z  reason: collision with root package name */
-    public final int f12062z;
+    public final int f11961z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public final AnalyticsListener.EventTime f12063a;
+        public final AnalyticsListener.EventTime f11962a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final Exception f12064b;
+        public final Exception f11963b;
 
         public a(AnalyticsListener.EventTime eventTime, Exception exc) {
-            this.f12063a = eventTime;
-            this.f12064b = exc;
+            this.f11962a = eventTime;
+            this.f11963b = exc;
         }
 
         public boolean equals(Object obj) {
@@ -122,14 +122,14 @@ public final class PlaybackStats {
                 return false;
             }
             a aVar = (a) obj;
-            if (!this.f12063a.equals(aVar.f12063a)) {
+            if (!this.f11962a.equals(aVar.f11962a)) {
                 return false;
             }
-            return this.f12064b.equals(aVar.f12064b);
+            return this.f11963b.equals(aVar.f11963b);
         }
 
         public int hashCode() {
-            return (this.f12063a.hashCode() * 31) + this.f12064b.hashCode();
+            return (this.f11962a.hashCode() * 31) + this.f11963b.hashCode();
         }
     }
 
@@ -137,14 +137,14 @@ public final class PlaybackStats {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public final AnalyticsListener.EventTime f12065a;
+        public final AnalyticsListener.EventTime f11964a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final Format f12066b;
+        public final Format f11965b;
 
         public b(AnalyticsListener.EventTime eventTime, Format format) {
-            this.f12065a = eventTime;
-            this.f12066b = format;
+            this.f11964a = eventTime;
+            this.f11965b = format;
         }
 
         public boolean equals(Object obj) {
@@ -153,11 +153,11 @@ public final class PlaybackStats {
             }
             if (obj != null && b.class == obj.getClass()) {
                 b bVar = (b) obj;
-                if (!this.f12065a.equals(bVar.f12065a)) {
+                if (!this.f11964a.equals(bVar.f11964a)) {
                     return false;
                 }
-                Format format = this.f12066b;
-                Format format2 = bVar.f12066b;
+                Format format = this.f11965b;
+                Format format2 = bVar.f11965b;
                 if (format != null) {
                     return format.equals(format2);
                 }
@@ -170,8 +170,8 @@ public final class PlaybackStats {
 
         public int hashCode() {
             int i10;
-            int hashCode = this.f12065a.hashCode() * 31;
-            Format format = this.f12066b;
+            int hashCode = this.f11964a.hashCode() * 31;
+            Format format = this.f11965b;
             if (format != null) {
                 i10 = format.hashCode();
             } else {
@@ -185,14 +185,14 @@ public final class PlaybackStats {
     public static final class c {
 
         /* renamed from: a  reason: collision with root package name */
-        public final AnalyticsListener.EventTime f12067a;
+        public final AnalyticsListener.EventTime f11966a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final int f12068b;
+        public final int f11967b;
 
         public c(AnalyticsListener.EventTime eventTime, int i10) {
-            this.f12067a = eventTime;
-            this.f12068b = i10;
+            this.f11966a = eventTime;
+            this.f11967b = i10;
         }
 
         public boolean equals(Object obj) {
@@ -203,46 +203,46 @@ public final class PlaybackStats {
                 return false;
             }
             c cVar = (c) obj;
-            if (this.f12068b != cVar.f12068b) {
+            if (this.f11967b != cVar.f11967b) {
                 return false;
             }
-            return this.f12067a.equals(cVar.f12067a);
+            return this.f11966a.equals(cVar.f11966a);
         }
 
         public int hashCode() {
-            return (this.f12067a.hashCode() * 31) + this.f12068b;
+            return (this.f11966a.hashCode() * 31) + this.f11967b;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public PlaybackStats(int i10, long[] jArr, List list, List list2, long j10, int i11, int i12, int i13, int i14, long j11, int i15, int i16, int i17, int i18, int i19, long j12, int i20, List list3, List list4, long j13, long j14, long j15, long j16, long j17, long j18, int i21, int i22, int i23, long j19, int i24, long j20, long j21, long j22, long j23, long j24, int i25, int i26, int i27, List list5, List list6) {
-        this.f12037a = i10;
+        this.f11936a = i10;
         this.N = jArr;
-        this.f12038b = Collections.unmodifiableList(list);
-        this.f12039c = Collections.unmodifiableList(list2);
-        this.f12040d = j10;
-        this.f12041e = i11;
-        this.f12042f = i12;
-        this.f12043g = i13;
-        this.f12044h = i14;
-        this.f12045i = j11;
-        this.f12046j = i15;
-        this.f12047k = i16;
-        this.f12048l = i17;
-        this.f12049m = i18;
-        this.f12050n = i19;
-        this.f12051o = j12;
-        this.f12052p = i20;
-        this.f12053q = Collections.unmodifiableList(list3);
-        this.f12054r = Collections.unmodifiableList(list4);
-        this.f12055s = j13;
-        this.f12056t = j14;
-        this.f12057u = j15;
-        this.f12058v = j16;
-        this.f12059w = j17;
-        this.f12060x = j18;
-        this.f12061y = i21;
-        this.f12062z = i22;
+        this.f11937b = Collections.unmodifiableList(list);
+        this.f11938c = Collections.unmodifiableList(list2);
+        this.f11939d = j10;
+        this.f11940e = i11;
+        this.f11941f = i12;
+        this.f11942g = i13;
+        this.f11943h = i14;
+        this.f11944i = j11;
+        this.f11945j = i15;
+        this.f11946k = i16;
+        this.f11947l = i17;
+        this.f11948m = i18;
+        this.f11949n = i19;
+        this.f11950o = j12;
+        this.f11951p = i20;
+        this.f11952q = Collections.unmodifiableList(list3);
+        this.f11953r = Collections.unmodifiableList(list4);
+        this.f11954s = j13;
+        this.f11955t = j14;
+        this.f11956u = j15;
+        this.f11957v = j16;
+        this.f11958w = j17;
+        this.f11959x = j18;
+        this.f11960y = i21;
+        this.f11961z = i22;
         this.A = i23;
         this.B = j19;
         this.C = i24;
@@ -299,52 +299,52 @@ public final class PlaybackStats {
         int i29 = 0;
         while (i26 < length) {
             PlaybackStats playbackStats = playbackStatsArr2[i26];
-            i11 += playbackStats.f12037a;
+            i11 += playbackStats.f11936a;
             for (int i30 = 0; i30 < 16; i30++) {
                 jArr[i30] = jArr[i30] + playbackStats.N[i30];
             }
             if (j23 == -9223372036854775807L) {
-                j23 = playbackStats.f12040d;
+                j23 = playbackStats.f11939d;
             } else {
-                long j25 = playbackStats.f12040d;
+                long j25 = playbackStats.f11939d;
                 if (j25 != -9223372036854775807L) {
                     j23 = Math.min(j23, j25);
                 }
             }
-            i27 += playbackStats.f12041e;
-            i28 += playbackStats.f12042f;
-            i29 += playbackStats.f12043g;
-            i12 += playbackStats.f12044h;
+            i27 += playbackStats.f11940e;
+            i28 += playbackStats.f11941f;
+            i29 += playbackStats.f11942g;
+            i12 += playbackStats.f11943h;
             if (j24 == -9223372036854775807L) {
-                j24 = playbackStats.f12045i;
+                j24 = playbackStats.f11944i;
             } else {
-                long j26 = playbackStats.f12045i;
+                long j26 = playbackStats.f11944i;
                 if (j26 != -9223372036854775807L) {
                     j24 += j26;
                 }
             }
-            i13 += playbackStats.f12046j;
-            i14 += playbackStats.f12047k;
-            i15 += playbackStats.f12048l;
-            i16 += playbackStats.f12049m;
-            i17 += playbackStats.f12050n;
+            i13 += playbackStats.f11945j;
+            i14 += playbackStats.f11946k;
+            i15 += playbackStats.f11947l;
+            i16 += playbackStats.f11948m;
+            i17 += playbackStats.f11949n;
             if (j22 == -9223372036854775807L) {
-                j22 = playbackStats.f12051o;
+                j22 = playbackStats.f11950o;
             } else {
-                long j27 = playbackStats.f12051o;
+                long j27 = playbackStats.f11950o;
                 if (j27 != -9223372036854775807L) {
                     j22 = Math.max(j22, j27);
                 }
             }
-            i18 += playbackStats.f12052p;
-            j10 += playbackStats.f12055s;
-            j11 += playbackStats.f12056t;
-            j12 += playbackStats.f12057u;
-            j13 += playbackStats.f12058v;
-            j14 += playbackStats.f12059w;
-            j15 += playbackStats.f12060x;
-            i19 += playbackStats.f12061y;
-            i20 += playbackStats.f12062z;
+            i18 += playbackStats.f11951p;
+            j10 += playbackStats.f11954s;
+            j11 += playbackStats.f11955t;
+            j12 += playbackStats.f11956u;
+            j13 += playbackStats.f11957v;
+            j14 += playbackStats.f11958w;
+            j15 += playbackStats.f11959x;
+            i19 += playbackStats.f11960y;
+            i20 += playbackStats.f11961z;
             int i31 = i25;
             if (i31 == -1) {
                 i25 = playbackStats.A;

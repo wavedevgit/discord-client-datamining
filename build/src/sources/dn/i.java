@@ -1,0 +1,150 @@
+package dn;
+
+import android.content.Context;
+import android.view.View;
+import android.view.ViewGroup;
+import kotlin.Pair;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.functions.Function4;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.Lambda;
+import kotlin.reflect.KClass;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+public final class i implements c0 {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final KClass f20877a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private final Function2 f20878b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private final h0 f20879c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private final Function4 f20880d;
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class a extends Lambda implements Function4 {
+
+        /* renamed from: d  reason: collision with root package name */
+        final /* synthetic */ Function1 f20881d;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        a(Function1 function1) {
+            super(4);
+            this.f20881d = function1;
+        }
+
+        public final void a(View noName_0, Function2 innerShowRendering, Object outerRendering, a0 viewEnvironment) {
+            Intrinsics.checkNotNullParameter(noName_0, "$noName_0");
+            Intrinsics.checkNotNullParameter(innerShowRendering, "innerShowRendering");
+            Intrinsics.checkNotNullParameter(outerRendering, "outerRendering");
+            Intrinsics.checkNotNullParameter(viewEnvironment, "viewEnvironment");
+            innerShowRendering.invoke(this.f20881d.invoke(outerRendering), viewEnvironment);
+        }
+
+        @Override // kotlin.jvm.functions.Function4
+        public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2, Object obj3, Object obj4) {
+            a((View) obj, (Function2) obj2, obj3, (a0) obj4);
+            return Unit.f32008a;
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    static final class b extends Lambda implements Function2 {
+
+        /* renamed from: d  reason: collision with root package name */
+        final /* synthetic */ Function1 f20882d;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        b(Function1 function1) {
+            super(2);
+            this.f20882d = function1;
+        }
+
+        @Override // kotlin.jvm.functions.Function2
+        /* renamed from: a */
+        public final Pair invoke(Object outer, a0 viewEnvironment) {
+            Intrinsics.checkNotNullParameter(outer, "outer");
+            Intrinsics.checkNotNullParameter(viewEnvironment, "viewEnvironment");
+            return new Pair(this.f20882d.invoke(outer), viewEnvironment);
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class c extends Lambda implements Function2 {
+
+        /* renamed from: e  reason: collision with root package name */
+        final /* synthetic */ View f20884e;
+
+        /* renamed from: i  reason: collision with root package name */
+        final /* synthetic */ Function2 f20885i;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        c(View view, Function2 function2) {
+            super(2);
+            this.f20884e = view;
+            this.f20885i = function2;
+        }
+
+        public final void a(Object rendering, a0 env) {
+            Intrinsics.checkNotNullParameter(rendering, "rendering");
+            Intrinsics.checkNotNullParameter(env, "env");
+            i.this.f20880d.invoke(this.f20884e, this.f20885i, rendering, env);
+        }
+
+        @Override // kotlin.jvm.functions.Function2
+        public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
+            a(obj, (a0) obj2);
+            return Unit.f32008a;
+        }
+    }
+
+    public i(KClass type, Function2 map, h0 h0Var, Function4 doShowRendering) {
+        Intrinsics.checkNotNullParameter(type, "type");
+        Intrinsics.checkNotNullParameter(map, "map");
+        Intrinsics.checkNotNullParameter(doShowRendering, "doShowRendering");
+        this.f20877a = type;
+        this.f20878b = map;
+        this.f20879c = h0Var;
+        this.f20880d = doShowRendering;
+    }
+
+    @Override // dn.c0
+    public View a(Object initialRendering, a0 initialViewEnvironment, Context contextForNewView, ViewGroup viewGroup) {
+        Intrinsics.checkNotNullParameter(initialRendering, "initialRendering");
+        Intrinsics.checkNotNullParameter(initialViewEnvironment, "initialViewEnvironment");
+        Intrinsics.checkNotNullParameter(contextForNewView, "contextForNewView");
+        Pair pair = (Pair) this.f20878b.invoke(initialRendering, initialViewEnvironment);
+        Object a10 = pair.a();
+        a0 a0Var = (a0) pair.b();
+        View c10 = f0.c((e0) a0Var.a(e0.f20867a), a10, a0Var, contextForNewView, viewGroup, this.f20879c);
+        Function2 d10 = g0.d(c10);
+        Intrinsics.checkNotNull(d10);
+        g0.a(c10, initialRendering, a0Var, new c(c10, d10));
+        return c10;
+    }
+
+    @Override // dn.c0
+    public KClass getType() {
+        return this.f20877a;
+    }
+
+    public /* synthetic */ i(KClass kClass, Function1 function1, h0 h0Var, Function4 function4, int i10, DefaultConstructorMarker defaultConstructorMarker) {
+        this(kClass, function1, (i10 & 4) != 0 ? null : h0Var, (i10 & 8) != 0 ? new a(function1) : function4);
+    }
+
+    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
+    public i(KClass type, Function1 map, h0 h0Var, Function4 doShowRendering) {
+        this(type, new b(map), h0Var, doShowRendering);
+        Intrinsics.checkNotNullParameter(type, "type");
+        Intrinsics.checkNotNullParameter(map, "map");
+        Intrinsics.checkNotNullParameter(doShowRendering, "doShowRendering");
+    }
+}

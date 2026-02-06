@@ -29,7 +29,7 @@ import kotlin.enums.EnumEntries;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
-import ph.k;
+import qh.k;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class Screen extends g implements ScreenContentWrapper.a {
     @NotNull
@@ -80,31 +80,31 @@ public class Screen extends g implements ScreenContentWrapper.a {
     public static final class ActivityState {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final ActivityState f18163d = new ActivityState("INACTIVE", 0);
+        public static final ActivityState f18143d = new ActivityState("INACTIVE", 0);
 
         /* renamed from: e  reason: collision with root package name */
-        public static final ActivityState f18164e = new ActivityState("TRANSITIONING_OR_BELOW_TOP", 1);
+        public static final ActivityState f18144e = new ActivityState("TRANSITIONING_OR_BELOW_TOP", 1);
 
         /* renamed from: i  reason: collision with root package name */
-        public static final ActivityState f18165i = new ActivityState("ON_TOP", 2);
+        public static final ActivityState f18145i = new ActivityState("ON_TOP", 2);
 
         /* renamed from: o  reason: collision with root package name */
-        private static final /* synthetic */ ActivityState[] f18166o;
+        private static final /* synthetic */ ActivityState[] f18146o;
 
         /* renamed from: p  reason: collision with root package name */
-        private static final /* synthetic */ EnumEntries f18167p;
+        private static final /* synthetic */ EnumEntries f18147p;
 
         static {
             ActivityState[] a10 = a();
-            f18166o = a10;
-            f18167p = vr.a.a(a10);
+            f18146o = a10;
+            f18147p = xr.a.a(a10);
         }
 
         private ActivityState(String str, int i10) {
         }
 
         private static final /* synthetic */ ActivityState[] a() {
-            return new ActivityState[]{f18163d, f18164e, f18165i};
+            return new ActivityState[]{f18143d, f18144e, f18145i};
         }
 
         public static ActivityState valueOf(String str) {
@@ -112,7 +112,7 @@ public class Screen extends g implements ScreenContentWrapper.a {
         }
 
         public static ActivityState[] values() {
-            return (ActivityState[]) f18166o.clone();
+            return (ActivityState[]) f18146o.clone();
         }
     }
 
@@ -132,28 +132,28 @@ public class Screen extends g implements ScreenContentWrapper.a {
     public static final class ReplaceAnimation {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final ReplaceAnimation f18168d = new ReplaceAnimation("PUSH", 0);
+        public static final ReplaceAnimation f18148d = new ReplaceAnimation("PUSH", 0);
 
         /* renamed from: e  reason: collision with root package name */
-        public static final ReplaceAnimation f18169e = new ReplaceAnimation("POP", 1);
+        public static final ReplaceAnimation f18149e = new ReplaceAnimation("POP", 1);
 
         /* renamed from: i  reason: collision with root package name */
-        private static final /* synthetic */ ReplaceAnimation[] f18170i;
+        private static final /* synthetic */ ReplaceAnimation[] f18150i;
 
         /* renamed from: o  reason: collision with root package name */
-        private static final /* synthetic */ EnumEntries f18171o;
+        private static final /* synthetic */ EnumEntries f18151o;
 
         static {
             ReplaceAnimation[] a10 = a();
-            f18170i = a10;
-            f18171o = vr.a.a(a10);
+            f18150i = a10;
+            f18151o = xr.a.a(a10);
         }
 
         private ReplaceAnimation(String str, int i10) {
         }
 
         private static final /* synthetic */ ReplaceAnimation[] a() {
-            return new ReplaceAnimation[]{f18168d, f18169e};
+            return new ReplaceAnimation[]{f18148d, f18149e};
         }
 
         public static ReplaceAnimation valueOf(String str) {
@@ -161,7 +161,7 @@ public class Screen extends g implements ScreenContentWrapper.a {
         }
 
         public static ReplaceAnimation[] values() {
-            return (ReplaceAnimation[]) f18170i.clone();
+            return (ReplaceAnimation[]) f18150i.clone();
         }
     }
 
@@ -171,49 +171,49 @@ public class Screen extends g implements ScreenContentWrapper.a {
     public static final class StackAnimation {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final StackAnimation f18172d = new StackAnimation("DEFAULT", 0);
+        public static final StackAnimation f18152d = new StackAnimation("DEFAULT", 0);
 
         /* renamed from: e  reason: collision with root package name */
-        public static final StackAnimation f18173e = new StackAnimation("NONE", 1);
+        public static final StackAnimation f18153e = new StackAnimation("NONE", 1);
 
         /* renamed from: i  reason: collision with root package name */
-        public static final StackAnimation f18174i = new StackAnimation("FADE", 2);
+        public static final StackAnimation f18154i = new StackAnimation("FADE", 2);
 
         /* renamed from: o  reason: collision with root package name */
-        public static final StackAnimation f18175o = new StackAnimation("SLIDE_FROM_BOTTOM", 3);
+        public static final StackAnimation f18155o = new StackAnimation("SLIDE_FROM_BOTTOM", 3);
 
         /* renamed from: p  reason: collision with root package name */
-        public static final StackAnimation f18176p = new StackAnimation("SLIDE_FROM_RIGHT", 4);
+        public static final StackAnimation f18156p = new StackAnimation("SLIDE_FROM_RIGHT", 4);
 
         /* renamed from: q  reason: collision with root package name */
-        public static final StackAnimation f18177q = new StackAnimation("SLIDE_FROM_LEFT", 5);
+        public static final StackAnimation f18157q = new StackAnimation("SLIDE_FROM_LEFT", 5);
 
         /* renamed from: r  reason: collision with root package name */
-        public static final StackAnimation f18178r = new StackAnimation("FADE_FROM_BOTTOM", 6);
+        public static final StackAnimation f18158r = new StackAnimation("FADE_FROM_BOTTOM", 6);
 
         /* renamed from: s  reason: collision with root package name */
-        public static final StackAnimation f18179s = new StackAnimation("IOS_FROM_RIGHT", 7);
+        public static final StackAnimation f18159s = new StackAnimation("IOS_FROM_RIGHT", 7);
 
         /* renamed from: t  reason: collision with root package name */
-        public static final StackAnimation f18180t = new StackAnimation("IOS_FROM_LEFT", 8);
+        public static final StackAnimation f18160t = new StackAnimation("IOS_FROM_LEFT", 8);
 
         /* renamed from: u  reason: collision with root package name */
-        private static final /* synthetic */ StackAnimation[] f18181u;
+        private static final /* synthetic */ StackAnimation[] f18161u;
 
         /* renamed from: v  reason: collision with root package name */
-        private static final /* synthetic */ EnumEntries f18182v;
+        private static final /* synthetic */ EnumEntries f18162v;
 
         static {
             StackAnimation[] a10 = a();
-            f18181u = a10;
-            f18182v = vr.a.a(a10);
+            f18161u = a10;
+            f18162v = xr.a.a(a10);
         }
 
         private StackAnimation(String str, int i10) {
         }
 
         private static final /* synthetic */ StackAnimation[] a() {
-            return new StackAnimation[]{f18172d, f18173e, f18174i, f18175o, f18176p, f18177q, f18178r, f18179s, f18180t};
+            return new StackAnimation[]{f18152d, f18153e, f18154i, f18155o, f18156p, f18157q, f18158r, f18159s, f18160t};
         }
 
         public static StackAnimation valueOf(String str) {
@@ -221,7 +221,7 @@ public class Screen extends g implements ScreenContentWrapper.a {
         }
 
         public static StackAnimation[] values() {
-            return (StackAnimation[]) f18181u.clone();
+            return (StackAnimation[]) f18161u.clone();
         }
     }
 
@@ -231,34 +231,34 @@ public class Screen extends g implements ScreenContentWrapper.a {
     public static final class StackPresentation {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final StackPresentation f18183d = new StackPresentation("PUSH", 0);
+        public static final StackPresentation f18163d = new StackPresentation("PUSH", 0);
 
         /* renamed from: e  reason: collision with root package name */
-        public static final StackPresentation f18184e = new StackPresentation("MODAL", 1);
+        public static final StackPresentation f18164e = new StackPresentation("MODAL", 1);
 
         /* renamed from: i  reason: collision with root package name */
-        public static final StackPresentation f18185i = new StackPresentation("TRANSPARENT_MODAL", 2);
+        public static final StackPresentation f18165i = new StackPresentation("TRANSPARENT_MODAL", 2);
 
         /* renamed from: o  reason: collision with root package name */
-        public static final StackPresentation f18186o = new StackPresentation("FORM_SHEET", 3);
+        public static final StackPresentation f18166o = new StackPresentation("FORM_SHEET", 3);
 
         /* renamed from: p  reason: collision with root package name */
-        private static final /* synthetic */ StackPresentation[] f18187p;
+        private static final /* synthetic */ StackPresentation[] f18167p;
 
         /* renamed from: q  reason: collision with root package name */
-        private static final /* synthetic */ EnumEntries f18188q;
+        private static final /* synthetic */ EnumEntries f18168q;
 
         static {
             StackPresentation[] a10 = a();
-            f18187p = a10;
-            f18188q = vr.a.a(a10);
+            f18167p = a10;
+            f18168q = xr.a.a(a10);
         }
 
         private StackPresentation(String str, int i10) {
         }
 
         private static final /* synthetic */ StackPresentation[] a() {
-            return new StackPresentation[]{f18183d, f18184e, f18185i, f18186o};
+            return new StackPresentation[]{f18163d, f18164e, f18165i, f18166o};
         }
 
         public static StackPresentation valueOf(String str) {
@@ -266,7 +266,7 @@ public class Screen extends g implements ScreenContentWrapper.a {
         }
 
         public static StackPresentation[] values() {
-            return (StackPresentation[]) f18187p.clone();
+            return (StackPresentation[]) f18167p.clone();
         }
     }
 
@@ -274,19 +274,19 @@ public class Screen extends g implements ScreenContentWrapper.a {
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f18189a;
+        public static final /* synthetic */ int[] f18169a;
 
         static {
             int[] iArr = new int[StackPresentation.values().length];
             try {
-                iArr[StackPresentation.f18185i.ordinal()] = 1;
+                iArr[StackPresentation.f18165i.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[StackPresentation.f18186o.ordinal()] = 2;
+                iArr[StackPresentation.f18166o.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
-            f18189a = iArr;
+            f18169a = iArr;
         }
     }
 
@@ -296,49 +296,49 @@ public class Screen extends g implements ScreenContentWrapper.a {
     public static final class b {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final b f18190d = new b("ORIENTATION", 0);
+        public static final b f18170d = new b("ORIENTATION", 0);
 
         /* renamed from: e  reason: collision with root package name */
-        public static final b f18191e = new b("COLOR", 1);
+        public static final b f18171e = new b("COLOR", 1);
 
         /* renamed from: i  reason: collision with root package name */
-        public static final b f18192i = new b("STYLE", 2);
+        public static final b f18172i = new b("STYLE", 2);
 
         /* renamed from: o  reason: collision with root package name */
-        public static final b f18193o = new b("TRANSLUCENT", 3);
+        public static final b f18173o = new b("TRANSLUCENT", 3);
 
         /* renamed from: p  reason: collision with root package name */
-        public static final b f18194p = new b("HIDDEN", 4);
+        public static final b f18174p = new b("HIDDEN", 4);
 
         /* renamed from: q  reason: collision with root package name */
-        public static final b f18195q = new b("ANIMATED", 5);
+        public static final b f18175q = new b("ANIMATED", 5);
 
         /* renamed from: r  reason: collision with root package name */
-        public static final b f18196r = new b("NAVIGATION_BAR_COLOR", 6);
+        public static final b f18176r = new b("NAVIGATION_BAR_COLOR", 6);
 
         /* renamed from: s  reason: collision with root package name */
-        public static final b f18197s = new b("NAVIGATION_BAR_TRANSLUCENT", 7);
+        public static final b f18177s = new b("NAVIGATION_BAR_TRANSLUCENT", 7);
 
         /* renamed from: t  reason: collision with root package name */
-        public static final b f18198t = new b("NAVIGATION_BAR_HIDDEN", 8);
+        public static final b f18178t = new b("NAVIGATION_BAR_HIDDEN", 8);
 
         /* renamed from: u  reason: collision with root package name */
-        private static final /* synthetic */ b[] f18199u;
+        private static final /* synthetic */ b[] f18179u;
 
         /* renamed from: v  reason: collision with root package name */
-        private static final /* synthetic */ EnumEntries f18200v;
+        private static final /* synthetic */ EnumEntries f18180v;
 
         static {
             b[] a10 = a();
-            f18199u = a10;
-            f18200v = vr.a.a(a10);
+            f18179u = a10;
+            f18180v = xr.a.a(a10);
         }
 
         private b(String str, int i10) {
         }
 
         private static final /* synthetic */ b[] a() {
-            return new b[]{f18190d, f18191e, f18192i, f18193o, f18194p, f18195q, f18196r, f18197s, f18198t};
+            return new b[]{f18170d, f18171e, f18172i, f18173o, f18174p, f18175q, f18176r, f18177s, f18178t};
         }
 
         public static b valueOf(String str) {
@@ -346,7 +346,7 @@ public class Screen extends g implements ScreenContentWrapper.a {
         }
 
         public static b[] values() {
-            return (b[]) f18199u.clone();
+            return (b[]) f18179u.clone();
         }
     }
 
@@ -355,9 +355,9 @@ public class Screen extends g implements ScreenContentWrapper.a {
         super(reactContext);
         Intrinsics.checkNotNullParameter(reactContext, "reactContext");
         this.reactContext = reactContext;
-        this.stackPresentation = StackPresentation.f18183d;
-        this.replaceAnimation = ReplaceAnimation.f18169e;
-        this.stackAnimation = StackAnimation.f18172d;
+        this.stackPresentation = StackPresentation.f18163d;
+        this.replaceAnimation = ReplaceAnimation.f18149e;
+        this.stackAnimation = StackAnimation.f18152d;
         this.isGestureEnabled = true;
         this.sheetExpandsWhenScrolledToEdge = true;
         this.sheetDetents = CollectionsKt.r(Double.valueOf(1.0d));
@@ -376,7 +376,7 @@ public class Screen extends g implements ScreenContentWrapper.a {
         int surfaceId = UIManagerHelper.getSurfaceId(this.reactContext);
         EventDispatcher reactEventDispatcher = getReactEventDispatcher();
         if (reactEventDispatcher != null) {
-            reactEventDispatcher.dispatchEvent(new ln.s(surfaceId, getId(), i10, z10));
+            reactEventDispatcher.dispatchEvent(new nn.s(surfaceId, getId(), i10, z10));
         }
     }
 
@@ -417,23 +417,23 @@ public class Screen extends g implements ScreenContentWrapper.a {
         int surfaceId = UIManagerHelper.getSurfaceId(reactContext);
         EventDispatcher eventDispatcherForReactTag = UIManagerHelper.getEventDispatcherForReactTag(reactContext, getId());
         if (eventDispatcherForReactTag != null) {
-            eventDispatcherForReactTag.dispatchEvent(new ln.d(surfaceId, getId(), i10));
+            eventDispatcherForReactTag.dispatchEvent(new nn.d(surfaceId, getId(), i10));
         }
     }
 
-    @or.c
+    @qr.c
     public static /* synthetic */ void getNavigationBarColor$annotations() {
     }
 
-    @or.c
+    @qr.c
     public static /* synthetic */ void getStatusBarColor$annotations() {
     }
 
-    @or.c
+    @qr.c
     public static /* synthetic */ void isNavigationBarTranslucent$annotations() {
     }
 
-    @or.c
+    @qr.c
     public static /* synthetic */ void isStatusBarTranslucent$annotations() {
     }
 
@@ -678,7 +678,7 @@ public class Screen extends g implements ScreenContentWrapper.a {
     }
 
     public final boolean isTranslucent() {
-        int i10 = a.f18189a[this.stackPresentation.ordinal()];
+        int i10 = a.f18169a[this.stackPresentation.ordinal()];
         if (i10 == 1 || i10 == 2) {
             return true;
         }
@@ -689,15 +689,15 @@ public class Screen extends g implements ScreenContentWrapper.a {
     protected void onAttachedToWindow() {
         Fragment fragment;
         n0 a10;
-        kn.h a02;
+        mn.h a02;
         super.onAttachedToWindow();
-        if (kn.j.d(this) && (fragment = getFragment()) != null && (a10 = mn.a.a(fragment)) != null && (a02 = a10.a0()) != null) {
-            j.f18296d.b(a02);
+        if (mn.j.d(this) && (fragment = getFragment()) != null && (a10 = on.a.a(fragment)) != null && (a02 = a10.a0()) != null) {
+            j.f18276d.b(a02);
         }
     }
 
     public final void onBottomSheetBehaviorDidLayout$react_native_screens_release(boolean z10) {
-        if (kn.j.d(this) && e()) {
+        if (mn.j.d(this) && e()) {
             if (z10) {
                 a(getWidth(), getHeight(), getTop());
             }
@@ -718,8 +718,8 @@ public class Screen extends g implements ScreenContentWrapper.a {
     public void onContentWrapperLayout(boolean z10, int i10, int i11, int i12, int i13) {
         BottomSheetBehavior<Screen> sheetBehavior;
         int i14 = i13 - i11;
-        if (kn.j.d(this) && kn.j.b(this) && (sheetBehavior = getSheetBehavior()) != null) {
-            kn.a.b(sheetBehavior, Integer.valueOf(i14), false, 2, null);
+        if (mn.j.d(this) && mn.j.b(this) && (sheetBehavior = getSheetBehavior()) != null) {
+            mn.a.b(sheetBehavior, Integer.valueOf(i14), false, 2, null);
         }
     }
 
@@ -732,18 +732,18 @@ public class Screen extends g implements ScreenContentWrapper.a {
 
     @Override // android.view.ViewGroup, android.view.View
     protected void onLayout(boolean z10, int i10, int i11, int i12, int i13) {
-        if (z10 && e() && !kn.j.d(this)) {
+        if (z10 && e() && !mn.j.d(this)) {
             a(i12 - i10, i13 - i11, i11);
             f(i11);
         }
     }
 
     public final void onSheetCornerRadiusChange$react_native_screens_release() {
-        ph.g gVar;
-        if (this.stackPresentation == StackPresentation.f18186o && getBackground() != null) {
+        qh.g gVar;
+        if (this.stackPresentation == StackPresentation.f18166o && getBackground() != null) {
             Drawable background = getBackground();
-            if (background instanceof ph.g) {
-                gVar = (ph.g) background;
+            if (background instanceof qh.g) {
+                gVar = (qh.g) background;
             } else {
                 gVar = null;
             }
@@ -767,7 +767,7 @@ public class Screen extends g implements ScreenContentWrapper.a {
     @Override // android.view.View
     @SuppressLint({"ClickableViewAccessibility"})
     public boolean onTouchEvent(MotionEvent motionEvent) {
-        if (kn.j.d(this)) {
+        if (mn.j.d(this)) {
             return true;
         }
         return super.onTouchEvent(motionEvent);
@@ -837,34 +837,34 @@ public class Screen extends g implements ScreenContentWrapper.a {
 
     public final void setNavigationBarColor(Integer num) {
         if (num != null) {
-            v0.f18385a.e();
+            v0.f18365a.e();
         }
         this.navigationBarColor = num;
         ScreenFragmentWrapper screenFragmentWrapper = this.fragmentWrapper;
         if (screenFragmentWrapper != null) {
-            v0.f18385a.q(this, screenFragmentWrapper.j());
+            v0.f18365a.q(this, screenFragmentWrapper.i());
         }
     }
 
     public final void setNavigationBarHidden(Boolean bool) {
         if (bool != null) {
-            v0.f18385a.e();
+            v0.f18365a.e();
         }
         this.isNavigationBarHidden = bool;
         ScreenFragmentWrapper screenFragmentWrapper = this.fragmentWrapper;
         if (screenFragmentWrapper != null) {
-            v0.f18385a.r(this, screenFragmentWrapper.j());
+            v0.f18365a.r(this, screenFragmentWrapper.i());
         }
     }
 
     public final void setNavigationBarTranslucent(Boolean bool) {
         if (bool != null) {
-            v0.f18385a.e();
+            v0.f18365a.e();
         }
         this.isNavigationBarTranslucent = bool;
         ScreenFragmentWrapper screenFragmentWrapper = this.fragmentWrapper;
         if (screenFragmentWrapper != null) {
-            v0.f18385a.s(this, screenFragmentWrapper.j());
+            v0.f18365a.s(this, screenFragmentWrapper.i());
         }
     }
 
@@ -880,7 +880,7 @@ public class Screen extends g implements ScreenContentWrapper.a {
             this.screenOrientation = null;
             return;
         }
-        v0 v0Var = v0.f18385a;
+        v0 v0Var = v0.f18365a;
         v0Var.f();
         switch (str.hashCode()) {
             case -1894896954:
@@ -939,7 +939,7 @@ public class Screen extends g implements ScreenContentWrapper.a {
         this.screenOrientation = Integer.valueOf(i10);
         ScreenFragmentWrapper screenFragmentWrapper = this.fragmentWrapper;
         if (screenFragmentWrapper != null) {
-            v0Var.t(this, screenFragmentWrapper.j());
+            v0Var.t(this, screenFragmentWrapper.i());
         }
     }
 
@@ -1000,45 +1000,45 @@ public class Screen extends g implements ScreenContentWrapper.a {
 
     public final void setStatusBarColor(Integer num) {
         if (num != null) {
-            v0.f18385a.g();
+            v0.f18365a.g();
         }
         this.statusBarColor = num;
         ScreenFragmentWrapper screenFragmentWrapper = this.fragmentWrapper;
         if (screenFragmentWrapper != null) {
-            v0.f18385a.m(this, screenFragmentWrapper.j(), screenFragmentWrapper.o());
+            v0.f18365a.m(this, screenFragmentWrapper.i(), screenFragmentWrapper.o());
         }
     }
 
     public final void setStatusBarHidden(Boolean bool) {
         if (bool != null) {
-            v0.f18385a.g();
+            v0.f18365a.g();
         }
         this.isStatusBarHidden = bool;
         ScreenFragmentWrapper screenFragmentWrapper = this.fragmentWrapper;
         if (screenFragmentWrapper != null) {
-            v0.f18385a.o(this, screenFragmentWrapper.j());
+            v0.f18365a.o(this, screenFragmentWrapper.i());
         }
     }
 
     public final void setStatusBarStyle(String str) {
         if (str != null) {
-            v0.f18385a.g();
+            v0.f18365a.g();
         }
         this.statusBarStyle = str;
         ScreenFragmentWrapper screenFragmentWrapper = this.fragmentWrapper;
         if (screenFragmentWrapper != null) {
-            v0.f18385a.v(this, screenFragmentWrapper.j(), screenFragmentWrapper.o());
+            v0.f18365a.v(this, screenFragmentWrapper.i(), screenFragmentWrapper.o());
         }
     }
 
     public final void setStatusBarTranslucent(Boolean bool) {
         if (bool != null) {
-            v0.f18385a.g();
+            v0.f18365a.g();
         }
         this.isStatusBarTranslucent = bool;
         ScreenFragmentWrapper screenFragmentWrapper = this.fragmentWrapper;
         if (screenFragmentWrapper != null) {
-            v0.f18385a.w(this, screenFragmentWrapper.j(), screenFragmentWrapper.o());
+            v0.f18365a.w(this, screenFragmentWrapper.i(), screenFragmentWrapper.o());
         }
     }
 

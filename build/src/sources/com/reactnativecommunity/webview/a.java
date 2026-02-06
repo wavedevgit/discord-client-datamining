@@ -4,14 +4,14 @@ package com.reactnativecommunity.webview;
 public class a {
 
     /* renamed from: a  reason: collision with root package name */
-    String f17505a;
+    String f17485a;
 
     /* renamed from: b  reason: collision with root package name */
-    String f17506b;
+    String f17486b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public a(String str, String str2) {
-        this.f17505a = str;
-        this.f17506b = str2;
+        this.f17485a = str;
+        this.f17486b = str2;
     }
 }

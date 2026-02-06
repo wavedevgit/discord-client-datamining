@@ -9,6 +9,7 @@ public interface g extends KProperty1, e {
     public interface a extends e.a, Function2 {
     }
 
+    @Override // kotlin.reflect.e
     a getSetter();
 
     void set(Object obj, Object obj2);

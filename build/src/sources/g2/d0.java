@@ -7,10 +7,10 @@ import kotlin.jvm.internal.Intrinsics;
 public final class d0 {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final a f23579b = new a(null);
+    public static final a f23832b = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final h f23580a;
+    private final h f23833a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -25,7 +25,7 @@ public final class d0 {
             if (string == null || (bundle2 = bundle.getBundle("androidx.credentials.provider.extra.EXTRA_CREDENTIAL_DATA")) == null) {
                 return null;
             }
-            return new d0(h.f23593c.b(string, bundle2));
+            return new d0(h.f23846c.b(string, bundle2));
         }
 
         private a() {
@@ -34,10 +34,10 @@ public final class d0 {
 
     public d0(h credential) {
         Intrinsics.checkNotNullParameter(credential, "credential");
-        this.f23580a = credential;
+        this.f23833a = credential;
     }
 
     public final h a() {
-        return this.f23580a;
+        return this.f23833a;
     }
 }

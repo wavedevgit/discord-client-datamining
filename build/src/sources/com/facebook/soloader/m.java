@@ -18,31 +18,31 @@ import org.webrtc.PeerConnection;
 public class m extends g0 {
 
     /* renamed from: f  reason: collision with root package name */
-    protected final File f11452f;
+    protected final File f11351f;
 
     /* renamed from: g  reason: collision with root package name */
-    protected final String f11453g;
+    protected final String f11352g;
 
     /* JADX INFO: Access modifiers changed from: protected */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a extends g0.c implements Comparable {
 
         /* renamed from: i  reason: collision with root package name */
-        final ZipEntry f11454i;
+        final ZipEntry f11353i;
 
         /* renamed from: o  reason: collision with root package name */
-        final int f11455o;
+        final int f11354o;
 
         a(String str, ZipEntry zipEntry, int i10) {
             super(str, String.valueOf(zipEntry.getCrc()));
-            this.f11454i = zipEntry;
-            this.f11455o = i10;
+            this.f11353i = zipEntry;
+            this.f11354o = i10;
         }
 
         @Override // java.lang.Comparable
         /* renamed from: a */
         public int compareTo(a aVar) {
-            return this.f11436d.compareTo(aVar.f11436d);
+            return this.f11335d.compareTo(aVar.f11335d);
         }
 
         public boolean equals(Object obj) {
@@ -51,7 +51,7 @@ public class m extends g0 {
             }
             if (obj != null && a.class == obj.getClass()) {
                 a aVar = (a) obj;
-                if (this.f11454i.equals(aVar.f11454i) && this.f11455o == aVar.f11455o) {
+                if (this.f11353i.equals(aVar.f11353i) && this.f11354o == aVar.f11354o) {
                     return true;
                 }
             }
@@ -59,7 +59,7 @@ public class m extends g0 {
         }
 
         public int hashCode() {
-            return (this.f11455o * 31) + this.f11454i.hashCode();
+            return (this.f11354o * 31) + this.f11353i.hashCode();
         }
     }
 
@@ -67,35 +67,35 @@ public class m extends g0 {
     protected class b extends g0.e {
 
         /* renamed from: d  reason: collision with root package name */
-        protected a[] f11456d;
+        protected a[] f11355d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final ZipFile f11457e;
+        private final ZipFile f11356e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final g0 f11458i;
+        private final g0 f11357i;
 
         b(g0 g0Var) {
-            this.f11457e = new ZipFile(m.this.f11452f);
-            this.f11458i = g0Var;
+            this.f11356e = new ZipFile(m.this.f11351f);
+            this.f11357i = g0Var;
         }
 
         @Override // com.facebook.soloader.g0.e, java.io.Closeable, java.lang.AutoCloseable
         public void close() {
-            this.f11457e.close();
+            this.f11356e.close();
         }
 
         @Override // com.facebook.soloader.g0.e
-        public final g0.c[] h() {
-            return o();
+        public final g0.c[] g() {
+            return n();
         }
 
         @Override // com.facebook.soloader.g0.e
         public void k(File file) {
-            a[] o10 = o();
+            a[] n10 = n();
             byte[] bArr = new byte[PeerConnection.PORTALLOCATOR_ENABLE_ANY_ADDRESS_PORTS];
-            for (a aVar : o10) {
-                InputStream inputStream = this.f11457e.getInputStream(aVar.f11454i);
+            for (a aVar : n10) {
+                InputStream inputStream = this.f11356e.getInputStream(aVar.f11353i);
                 try {
                     g0.d dVar = new g0.d(aVar, inputStream);
                     a(dVar, bArr, file);
@@ -112,9 +112,9 @@ public class m extends g0 {
         a[] m() {
             LinkedHashSet linkedHashSet = new LinkedHashSet();
             HashMap hashMap = new HashMap();
-            Pattern compile = Pattern.compile(m.this.f11453g);
+            Pattern compile = Pattern.compile(m.this.f11352g);
             String[] j10 = SysUtil.j();
-            Enumeration<? extends ZipEntry> entries = this.f11457e.entries();
+            Enumeration<? extends ZipEntry> entries = this.f11356e.entries();
             while (entries.hasMoreElements()) {
                 ZipEntry nextElement = entries.nextElement();
                 Matcher matcher = compile.matcher(nextElement.getName());
@@ -126,33 +126,33 @@ public class m extends g0 {
                     if (e10 >= 0) {
                         linkedHashSet.add(group);
                         a aVar = (a) hashMap.get(group2);
-                        if (aVar == null || e10 < aVar.f11455o) {
+                        if (aVar == null || e10 < aVar.f11354o) {
                             hashMap.put(group2, new a(group2, nextElement, e10));
                         }
                     }
                 }
             }
-            this.f11458i.t((String[]) linkedHashSet.toArray(new String[linkedHashSet.size()]));
+            this.f11357i.t((String[]) linkedHashSet.toArray(new String[linkedHashSet.size()]));
             a[] aVarArr = (a[]) hashMap.values().toArray(new a[hashMap.size()]);
             Arrays.sort(aVarArr);
             return aVarArr;
         }
 
-        a[] o() {
-            a[] aVarArr = this.f11456d;
+        a[] n() {
+            a[] aVarArr = this.f11355d;
             if (aVarArr != null) {
                 return aVarArr;
             }
             a[] m10 = m();
-            this.f11456d = m10;
+            this.f11355d = m10;
             return m10;
         }
     }
 
     public m(Context context, String str, File file, String str2) {
         super(context, str);
-        this.f11452f = file;
-        this.f11453g = str2;
+        this.f11351f = file;
+        this.f11352g = str2;
     }
 
     @Override // com.facebook.soloader.f, com.facebook.soloader.e0
@@ -169,9 +169,9 @@ public class m extends g0 {
     @Override // com.facebook.soloader.f, com.facebook.soloader.e0
     public String toString() {
         try {
-            return this.f11452f.getCanonicalPath();
+            return this.f11351f.getCanonicalPath();
         } catch (IOException unused) {
-            return this.f11452f.getName();
+            return this.f11351f.getName();
         }
     }
 

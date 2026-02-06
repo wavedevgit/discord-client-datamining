@@ -3,27 +3,27 @@ package zb;
 final class r implements xb.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final o f55367a;
+    private final o f56098a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f55368b;
+    private final String f56099b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final xb.c f55369c;
+    private final xb.c f56100c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final xb.g f55370d;
+    private final xb.g f56101d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final s f55371e;
+    private final s f56102e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public r(o oVar, String str, xb.c cVar, xb.g gVar, s sVar) {
-        this.f55367a = oVar;
-        this.f55368b = str;
-        this.f55369c = cVar;
-        this.f55370d = gVar;
-        this.f55371e = sVar;
+        this.f56098a = oVar;
+        this.f56099b = str;
+        this.f56100c = cVar;
+        this.f56101d = gVar;
+        this.f56102e = sVar;
     }
 
     public static /* synthetic */ void b(Exception exc) {
@@ -40,6 +40,6 @@ final class r implements xb.h {
     }
 
     public void c(xb.d dVar, xb.j jVar) {
-        this.f55371e.a(n.a().e(this.f55367a).c(dVar).f(this.f55368b).d(this.f55370d).b(this.f55369c).a(), jVar);
+        this.f56102e.a(n.a().e(this.f56098a).c(dVar).f(this.f56099b).d(this.f56101d).b(this.f56100c).a(), jVar);
     }
 }

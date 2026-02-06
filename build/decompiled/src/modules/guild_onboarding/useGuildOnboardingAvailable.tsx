@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_onboarding/useGuildOnboardingAvailable.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun49707: for (var _fun49707_ip = 0;;) switch (_fun49707_ip) {
+        _fun49670: for (var _fun49670_ip = 0;;) switch (_fun49670_ip) {
             case 0:
                 var3 = arg0;
                 var _closure2_slot0 = var3;
@@ -47,23 +47,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = new Array(1);
                 var4[0] = var7;
                 var0 = function() { // Environment: var0
-                    _fun49708: for (var _fun49708_ip = 0;;) switch (_fun49708_ip) {
+                    _fun49671: for (var _fun49671_ip = 0;;) switch (_fun49671_ip) {
                         case 0:
                             var1 = _closure2_slot0;
                             var2 = null;
                             var3 = var2 == var1;
                             var1 = undefined;
                             if (var3) {
-                                _fun49708_ip = 27;
-                                continue _fun49708
+                                _fun49671_ip = 27;
+                                continue _fun49671
                             }
                         case 18:
                             var3 = _closure2_slot0;
                             var1 = var3.id;
                         case 27:
                             if (!(var2 != var1)) {
-                                _fun49708_ip = 82;
-                                continue _fun49708
+                                _fun49671_ip = 82;
+                                continue _fun49671
                             }
                         case 31:
                             var3 = _closure1_slot2;
@@ -75,8 +75,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var1.id;
                             var1 = var2.bind(var3)(var1);
                             if (!var0) {
-                                _fun49708_ip = 80;
-                                continue _fun49708
+                                _fun49671_ip = 80;
+                                continue _fun49671
                             }
                         case 77:
                             var0 = var1;
@@ -89,16 +89,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var0 = var5.bind(var6)(var4, var0);
                 if (var0) {
-                    _fun49707_ip = 105;
-                    continue _fun49707
+                    _fun49670_ip = 105;
+                    continue _fun49670
                 }
             case 65:
                 var4 = null;
                 var4 = var4 == var3;
                 var1 = undefined;
                 if (var4) {
-                    _fun49707_ip = 102;
-                    continue _fun49707
+                    _fun49670_ip = 102;
+                    continue _fun49670
                 }
             case 76:
                 var4 = var3.features;
@@ -114,13 +114,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var3;
     var1 = function arg0() {
-        _fun49709: for (var _fun49709_ip = 0;;) switch (_fun49709_ip) {
+        _fun49672: for (var _fun49672_ip = 0;;) switch (_fun49672_ip) {
             case 0:
                 var2 = arg0;
                 var0 = null;
                 if (!(var0 != var2)) {
-                    _fun49709_ip = 85;
-                    continue _fun49709
+                    _fun49672_ip = 85;
+                    continue _fun49672
                 }
             case 9:
                 var5 = _closure1_slot2;
@@ -131,15 +131,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var2.id;
                 var3 = var4.bind(var5)(var3);
                 if (!var0) {
-                    _fun49709_ip = 54;
-                    continue _fun49709
+                    _fun49672_ip = 54;
+                    continue _fun49672
                 }
             case 51:
                 var0 = var3;
             case 54:
                 if (var0) {
-                    _fun49709_ip = 83;
-                    continue _fun49709
+                    _fun49672_ip = 83;
+                    continue _fun49672
                 }
             case 57:
                 var3 = var2.features;

@@ -36,7 +36,7 @@ public final class a extends e {
         String action = intent.getAction();
         if (action != null) {
             k4.m e10 = k4.m.e();
-            str = b.f42233a;
+            str = b.f41456a;
             e10.a(str, "Received " + action);
             switch (action.hashCode()) {
                 case -1886648615:
@@ -76,7 +76,7 @@ public final class a extends e {
         Intent registerReceiver = d().registerReceiver(null, new IntentFilter("android.intent.action.BATTERY_CHANGED"));
         if (registerReceiver == null) {
             k4.m e10 = k4.m.e();
-            str = b.f42233a;
+            str = b.f41456a;
             e10.c(str, "getInitialState - null intent received");
             return Boolean.FALSE;
         }

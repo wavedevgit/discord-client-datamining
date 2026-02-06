@@ -1,15 +1,24 @@
 package ys;
+
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class b {
-    public static final long a(long j10, long j11) {
-        return Math.addExact(j10, j11);
+public final class b extends IllegalArgumentException {
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public b(String message) {
+        super(message);
+        Intrinsics.checkNotNullParameter(message, "message");
     }
 
-    public static final int b(int i10, int i11) {
-        return Math.multiplyExact(i10, i11);
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public b(Throwable cause) {
+        super(cause);
+        Intrinsics.checkNotNullParameter(cause, "cause");
     }
 
-    public static final long c(long j10, long j11) {
-        return Math.multiplyExact(j10, j11);
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public b(String message, Throwable cause) {
+        super(message, cause);
+        Intrinsics.checkNotNullParameter(message, "message");
+        Intrinsics.checkNotNullParameter(cause, "cause");
     }
 }

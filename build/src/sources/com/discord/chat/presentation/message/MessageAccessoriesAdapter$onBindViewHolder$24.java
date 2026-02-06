@@ -19,7 +19,7 @@ public /* synthetic */ class MessageAccessoriesAdapter$onBindViewHolder$24 exten
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Object invoke(Object obj) {
         invoke((SoundmojiContentNode) obj);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     public final void invoke(SoundmojiContentNode p02) {

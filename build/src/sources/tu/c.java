@@ -1,70 +1,69 @@
 package tu;
 
+import java.util.Collection;
 import java.util.List;
-import java.util.Map;
+import kotlin.collections.CollectionsKt;
+import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
+import tu.b;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class c {
+public interface c extends b {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final List f51064a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private final Map f51065b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final Object f51066c;
-
-    public c(List operationData, Map mappingOperation, Object obj) {
-        Intrinsics.checkNotNullParameter(operationData, "operationData");
-        Intrinsics.checkNotNullParameter(mappingOperation, "mappingOperation");
-        this.f51064a = operationData;
-        this.f51065b = mappingOperation;
-        this.f51066c = obj;
-    }
-
-    public final Map a() {
-        return this.f51065b;
-    }
-
-    public final List b() {
-        return this.f51064a;
-    }
-
-    public final Object c() {
-        return this.f51066c;
-    }
-
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a {
+        private static boolean a(c cVar, List list, Function2 function2) {
+            Integer c10 = c(cVar, (Comparable) CollectionsKt.firstOrNull(list), (Comparable) cw.c.b(list));
+            if (c10 == null) {
+                return false;
+            }
+            return ((Boolean) function2.invoke(Integer.valueOf(c10.intValue()), 0)).booleanValue();
         }
-        if (!(obj instanceof c)) {
+
+        public static boolean b(c cVar, List list, Function2 operator) {
+            List d10;
+            Intrinsics.checkNotNullParameter(operator, "operator");
+            if (list != null && (d10 = cw.a.d(list)) != null) {
+                return a(cVar, d10, operator);
+            }
             return false;
         }
-        c cVar = (c) obj;
-        if (Intrinsics.areEqual(this.f51064a, cVar.f51064a) && Intrinsics.areEqual(this.f51065b, cVar.f51065b) && Intrinsics.areEqual(this.f51066c, cVar.f51066c)) {
-            return true;
+
+        private static Integer c(c cVar, Comparable comparable, Comparable comparable2) {
+            List g10 = cVar.g(comparable, comparable2);
+            if (g10 == null) {
+                return null;
+            }
+            List<Comparable> list = g10;
+            boolean z10 = list instanceof Collection;
+            if (!z10 || !list.isEmpty()) {
+                for (Comparable comparable3 : list) {
+                    if (comparable3 != null) {
+                        if (!z10 || !list.isEmpty()) {
+                            for (Comparable comparable4 : list) {
+                                if (comparable4 == null) {
+                                    return null;
+                                }
+                            }
+                        }
+                        return Integer.valueOf(tr.a.d((Comparable) CollectionsKt.firstOrNull(g10), (Comparable) cw.c.b(g10)));
+                    }
+                }
+            }
+            return Integer.valueOf(tr.a.d((Comparable) CollectionsKt.firstOrNull(g10), (Comparable) cw.c.b(g10)));
         }
-        return false;
+
+        public static List d(c cVar, Comparable comparable, Comparable comparable2) {
+            return b.a.a(cVar, comparable, comparable2);
+        }
+
+        public static List e(c cVar, Comparable comparable, Comparable comparable2) {
+            return b.a.b(cVar, comparable, comparable2);
+        }
+
+        public static Boolean f(c cVar, Object obj) {
+            return b.a.c(cVar, obj);
+        }
     }
 
-    public int hashCode() {
-        int hashCode;
-        int hashCode2 = ((this.f51064a.hashCode() * 31) + this.f51065b.hashCode()) * 31;
-        Object obj = this.f51066c;
-        if (obj == null) {
-            hashCode = 0;
-        } else {
-            hashCode = obj.hashCode();
-        }
-        return hashCode2 + hashCode;
-    }
-
-    public String toString() {
-        List list = this.f51064a;
-        Map map = this.f51065b;
-        Object obj = this.f51066c;
-        return "OccurrenceCheckInputData(operationData=" + list + ", mappingOperation=" + map + ", operationDefault=" + obj + ")";
-    }
+    boolean b(List list, Function2 function2);
 }

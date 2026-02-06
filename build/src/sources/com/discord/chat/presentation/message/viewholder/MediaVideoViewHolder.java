@@ -29,13 +29,13 @@ public class MediaVideoViewHolder extends MessagePartViewHolder {
     }
 
     /* renamed from: bind-l_cVQvE  reason: not valid java name */
-    public final void m729bindl_cVQvE(ChannelId channelId, String str, Integer num, @NotNull String url, @NotNull String previewUrl, int i10, int i11, String str2, Integer num2, boolean z10, SpoilerConfig spoilerConfig, boolean z11, boolean z12, boolean z13, boolean z14, boolean z15, String str3, String str4, boolean z16, Function1<? super String, Unit> function1, int i12, boolean z17, UploadItemProps uploadItemProps, boolean z18, boolean z19, String str5, ReactAsset reactAsset, Integer num3, Integer num4, String str6, double d10, @NotNull View.OnClickListener onClicked, View.OnLongClickListener onLongClickListener, @NotNull Function1<? super MediaPlayFinishedAnalytics, Unit> onMediaPlayFinishedAnalytics, @NotNull MediaPlayer.PlayerSettings playerSettings) {
+    public final void m727bindl_cVQvE(ChannelId channelId, String str, Integer num, @NotNull String url, @NotNull String previewUrl, int i10, int i11, String str2, Integer num2, boolean z10, SpoilerConfig spoilerConfig, boolean z11, boolean z12, boolean z13, boolean z14, boolean z15, String str3, String str4, boolean z16, Function1<? super String, Unit> function1, int i12, boolean z17, UploadItemProps uploadItemProps, boolean z18, boolean z19, String str5, ReactAsset reactAsset, Integer num3, Integer num4, String str6, double d10, @NotNull View.OnClickListener onClicked, View.OnLongClickListener onLongClickListener, @NotNull Function1<? super MediaPlayFinishedAnalytics, Unit> onMediaPlayFinishedAnalytics, @NotNull MediaPlayer.PlayerSettings playerSettings) {
         Intrinsics.checkNotNullParameter(url, "url");
         Intrinsics.checkNotNullParameter(previewUrl, "previewUrl");
         Intrinsics.checkNotNullParameter(onClicked, "onClicked");
         Intrinsics.checkNotNullParameter(onMediaPlayFinishedAnalytics, "onMediaPlayFinishedAnalytics");
         Intrinsics.checkNotNullParameter(playerSettings, "playerSettings");
-        this.view.m699setContentwJTRs(channelId, str, num, url, previewUrl, i11, i10, str2, num2, i12, z17, z10, spoilerConfig, z11, z12, z13, z14, uploadItemProps, z18, z19, str5, reactAsset, num3, num4, d10, playerSettings);
+        this.view.m697setContentwJTRs(channelId, str, num, url, previewUrl, i11, i10, str2, num2, i12, z17, z10, spoilerConfig, z11, z12, z13, z14, uploadItemProps, z18, z19, str5, reactAsset, num3, num4, d10, playerSettings);
         this.view.setDescription(str3, str4);
         boolean z20 = false;
         this.view.showAltTextButton(z16 && z15, str3, function1);

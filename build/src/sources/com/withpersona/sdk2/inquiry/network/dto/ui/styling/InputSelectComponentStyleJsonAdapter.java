@@ -101,7 +101,7 @@ public final class InputSelectComponentStyleJsonAdapter extends h {
     @NotNull
     public InputSelectComponentStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         AttributeStyles.InputMarginStyle inputMarginStyle = null;
         AttributeStyles.TextBasedJustifyStyle textBasedJustifyStyle = null;
         AttributeStyles.InputSelectTextFontFamilyStyle inputSelectTextFontFamilyStyle = null;
@@ -116,10 +116,10 @@ public final class InputSelectComponentStyleJsonAdapter extends h {
         AttributeStyles.InputSelectBorderColorStyle inputSelectBorderColorStyle = null;
         AttributeStyles.InputSelectStrokeColorStyle inputSelectStrokeColorStyle = null;
         while (reader.hasNext()) {
-            switch (reader.W(this.options)) {
+            switch (reader.J(this.options)) {
                 case -1:
                     reader.E0();
-                    reader.P();
+                    reader.S();
                     break;
                 case 0:
                     inputMarginStyle = (AttributeStyles.InputMarginStyle) this.nullableInputMarginStyleAdapter.fromJson(reader);
@@ -162,7 +162,7 @@ public final class InputSelectComponentStyleJsonAdapter extends h {
                     break;
             }
         }
-        reader.z();
+        reader.D();
         return new InputSelectComponentStyle(inputMarginStyle, textBasedJustifyStyle, inputSelectTextFontFamilyStyle, inputSelectTextFontSizeStyle, inputSelectTextFontWeightStyle, inputSelectTextLetterSpacingStyle, inputSelectTextLineHeightStyle, inputSelectTextColorStyle, inputSelectBorderRadiusStyle, inputSelectBorderWidthStyle, inputSelectBackgroundColorStyle, inputSelectBorderColorStyle, inputSelectStrokeColorStyle);
     }
 
@@ -171,33 +171,33 @@ public final class InputSelectComponentStyleJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (inputSelectComponentStyle != null) {
             writer.k();
-            writer.W(ViewProps.MARGIN);
+            writer.J(ViewProps.MARGIN);
             this.nullableInputMarginStyleAdapter.toJson(writer, inputSelectComponentStyle.getMargin());
-            writer.W("justify");
+            writer.J("justify");
             this.nullableTextBasedJustifyStyleAdapter.toJson(writer, inputSelectComponentStyle.getJustify());
-            writer.W(ViewProps.FONT_FAMILY);
+            writer.J(ViewProps.FONT_FAMILY);
             this.nullableInputSelectTextFontFamilyStyleAdapter.toJson(writer, inputSelectComponentStyle.getFontFamily());
-            writer.W(ViewProps.FONT_SIZE);
+            writer.J(ViewProps.FONT_SIZE);
             this.nullableInputSelectTextFontSizeStyleAdapter.toJson(writer, inputSelectComponentStyle.getFontSize());
-            writer.W(ViewProps.FONT_WEIGHT);
+            writer.J(ViewProps.FONT_WEIGHT);
             this.nullableInputSelectTextFontWeightStyleAdapter.toJson(writer, inputSelectComponentStyle.getFontWeight());
-            writer.W(ViewProps.LETTER_SPACING);
+            writer.J(ViewProps.LETTER_SPACING);
             this.nullableInputSelectTextLetterSpacingStyleAdapter.toJson(writer, inputSelectComponentStyle.getLetterSpacing());
-            writer.W(ViewProps.LINE_HEIGHT);
+            writer.J(ViewProps.LINE_HEIGHT);
             this.nullableInputSelectTextLineHeightStyleAdapter.toJson(writer, inputSelectComponentStyle.getLineHeight());
-            writer.W("textColor");
+            writer.J("textColor");
             this.nullableInputSelectTextColorStyleAdapter.toJson(writer, inputSelectComponentStyle.getTextColor());
-            writer.W("borderRadius");
+            writer.J("borderRadius");
             this.nullableInputSelectBorderRadiusStyleAdapter.toJson(writer, inputSelectComponentStyle.getBorderRadius());
-            writer.W(ViewProps.BORDER_WIDTH);
+            writer.J(ViewProps.BORDER_WIDTH);
             this.nullableInputSelectBorderWidthStyleAdapter.toJson(writer, inputSelectComponentStyle.getBorderWidth());
-            writer.W(ViewProps.BACKGROUND_COLOR);
+            writer.J(ViewProps.BACKGROUND_COLOR);
             this.nullableInputSelectBackgroundColorStyleAdapter.toJson(writer, inputSelectComponentStyle.getBackgroundColor());
-            writer.W(ViewProps.BORDER_COLOR);
+            writer.J(ViewProps.BORDER_COLOR);
             this.nullableInputSelectBorderColorStyleAdapter.toJson(writer, inputSelectComponentStyle.getBorderColor());
-            writer.W("strokeColor");
+            writer.J("strokeColor");
             this.nullableInputSelectStrokeColorStyleAdapter.toJson(writer, inputSelectComponentStyle.getStrokeColor());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

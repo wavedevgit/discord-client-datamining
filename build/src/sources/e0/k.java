@@ -21,32 +21,32 @@ import x.y0;
 public class k {
 
     /* renamed from: a  reason: collision with root package name */
-    private final d0 f21308a;
+    private final d0 f21241a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f21309b;
+    private final int f21242b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f21310c;
+    private final int f21243c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Rational f21311d;
+    private final Rational f21244d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final l f21312e;
+    private final l f21245e;
 
     public k(d0 d0Var, Size size) {
         Rational i10;
-        this.f21308a = d0Var;
-        this.f21309b = d0Var.a();
-        this.f21310c = d0Var.c();
+        this.f21241a = d0Var;
+        this.f21242b = d0Var.a();
+        this.f21243c = d0Var.c();
         if (size != null) {
             i10 = h(size);
         } else {
             i10 = i(d0Var);
         }
-        this.f21311d = i10;
-        this.f21312e = new l(d0Var, i10);
+        this.f21244d = i10;
+        this.f21245e = new l(d0Var, i10);
     }
 
     private static LinkedHashMap a(List list, m0.a aVar, Rational rational) {
@@ -82,7 +82,7 @@ public class k {
         if (cVar.a() == 1) {
             ArrayList arrayList = new ArrayList();
             arrayList.addAll(list);
-            arrayList.addAll(this.f21308a.d(i10));
+            arrayList.addAll(this.f21241a.d(i10));
             Collections.sort(arrayList, new b0.d(true));
             return arrayList;
         }
@@ -131,7 +131,7 @@ public class k {
     private static void g(List list, m0.d dVar) {
         if (!list.isEmpty()) {
             int b10 = dVar.b();
-            if (!dVar.equals(m0.d.f37238c)) {
+            if (!dVar.equals(m0.d.f36820c)) {
                 Size a10 = dVar.a();
                 if (b10 != 0) {
                     if (b10 != 1) {
@@ -173,7 +173,7 @@ public class k {
     private List j(List list, int i10) {
         List l10 = l(list, i10);
         if (l10 == null) {
-            l10 = this.f21308a.f(i10);
+            l10 = this.f21241a.f(i10);
         }
         ArrayList arrayList = new ArrayList(l10);
         Collections.sort(arrayList, new b0.d(true));
@@ -186,8 +186,8 @@ public class k {
     /* JADX INFO: Access modifiers changed from: package-private */
     public static List k(List list) {
         ArrayList arrayList = new ArrayList();
-        arrayList.add(b0.a.f6016a);
-        arrayList.add(b0.a.f6018c);
+        arrayList.add(b0.a.f6309a);
+        arrayList.add(b0.a.f6311c);
         Iterator it = list.iterator();
         while (it.hasNext()) {
             Size size = (Size) it.next();
@@ -238,14 +238,14 @@ public class k {
                 y0.c("SupportedOutputSizesCollector", "Undefined target aspect ratio: " + i10);
                 return null;
             } else if (z10) {
-                return b0.a.f6018c;
+                return b0.a.f6311c;
             } else {
-                return b0.a.f6019d;
+                return b0.a.f6312d;
             }
         } else if (z10) {
-            return b0.a.f6016a;
+            return b0.a.f6309a;
         } else {
-            return b0.a.f6017b;
+            return b0.a.f6310b;
         }
     }
 
@@ -333,13 +333,13 @@ public class k {
         m0.c o10 = i1Var.o(null);
         List j10 = j(i1Var.l(null), x2Var.getInputFormat());
         if (o10 == null) {
-            return this.f21312e.f(j10, x2Var);
+            return this.f21245e.f(j10, x2Var);
         }
         Size i10 = ((i1) x2Var).i(null);
         int z10 = i1Var.z(0);
         if (!x2Var.P(false)) {
             j10 = c(j10, o10, x2Var.getInputFormat());
         }
-        return p(i1Var.m(), j10, i10, z10, this.f21311d, this.f21309b, this.f21310c);
+        return p(i1Var.m(), j10, i10, z10, this.f21244d, this.f21242b, this.f21243c);
     }
 }

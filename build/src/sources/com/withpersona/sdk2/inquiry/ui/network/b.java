@@ -1,7 +1,8 @@
 package com.withpersona.sdk2.inquiry.ui.network;
 
+import bn.o;
 import com.withpersona.sdk2.inquiry.network.core.InternalErrorInfo;
-import dq.k5;
+import fq.k5;
 import java.util.List;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
@@ -11,86 +12,85 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.coroutines.flow.Flow;
 import kotlinx.coroutines.flow.FlowCollector;
-import ps.g;
-import zm.o;
-@kotlin.Metadata(d1 = {"\u00002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\n\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001:\u0002\u0013\u0011B)\b\u0002\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0003\u0012\u0006\u0010\t\u001a\u00020\b¢\u0006\u0004\b\n\u0010\u000bJ\u0015\u0010\r\u001a\b\u0012\u0004\u0012\u00020\u00020\fH\u0016¢\u0006\u0004\b\r\u0010\u000eJ\u001b\u0010\u0011\u001a\u00020\u00102\n\u0010\u000f\u001a\u0006\u0012\u0002\b\u00030\u0001H\u0016¢\u0006\u0004\b\u0011\u0010\u0012R\u0014\u0010\u0004\u001a\u00020\u00038\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0013\u0010\u0014R\u0014\u0010\u0006\u001a\u00020\u00058\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0015\u0010\u0016R\u0014\u0010\u0007\u001a\u00020\u00038\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0017\u0010\u0014R\u0014\u0010\t\u001a\u00020\b8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0018\u0010\u0019¨\u0006\u001a"}, d2 = {"Lcom/withpersona/sdk2/inquiry/ui/network/b;", "Lzm/o;", "Lcom/withpersona/sdk2/inquiry/ui/network/b$b;", "", "sessionToken", "Ldq/k5;", "triggeringComponent", "addressText", "Lpq/b;", "uiService", "<init>", "(Ljava/lang/String;Ldq/k5;Ljava/lang/String;Lpq/b;)V", "Lkotlinx/coroutines/flow/Flow;", "run", "()Lkotlinx/coroutines/flow/Flow;", "otherWorker", "", "a", "(Lzm/o;)Z", "b", "Ljava/lang/String;", "c", "Ldq/k5;", "d", "e", "Lpq/b;", "ui_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
+import rs.g;
+@kotlin.Metadata(d1 = {"\u00002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\n\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001:\u0002\u0013\u0011B)\b\u0002\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0003\u0012\u0006\u0010\t\u001a\u00020\b¢\u0006\u0004\b\n\u0010\u000bJ\u0015\u0010\r\u001a\b\u0012\u0004\u0012\u00020\u00020\fH\u0016¢\u0006\u0004\b\r\u0010\u000eJ\u001b\u0010\u0011\u001a\u00020\u00102\n\u0010\u000f\u001a\u0006\u0012\u0002\b\u00030\u0001H\u0016¢\u0006\u0004\b\u0011\u0010\u0012R\u0014\u0010\u0004\u001a\u00020\u00038\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0013\u0010\u0014R\u0014\u0010\u0006\u001a\u00020\u00058\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0015\u0010\u0016R\u0014\u0010\u0007\u001a\u00020\u00038\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0017\u0010\u0014R\u0014\u0010\t\u001a\u00020\b8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0018\u0010\u0019¨\u0006\u001a"}, d2 = {"Lcom/withpersona/sdk2/inquiry/ui/network/b;", "Lbn/o;", "Lcom/withpersona/sdk2/inquiry/ui/network/b$b;", "", "sessionToken", "Lfq/k5;", "triggeringComponent", "addressText", "Lrq/b;", "uiService", "<init>", "(Ljava/lang/String;Lfq/k5;Ljava/lang/String;Lrq/b;)V", "Lkotlinx/coroutines/flow/Flow;", "run", "()Lkotlinx/coroutines/flow/Flow;", "otherWorker", "", "a", "(Lbn/o;)Z", "b", "Ljava/lang/String;", "c", "Lfq/k5;", "d", "e", "Lrq/b;", "ui_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b implements o<AbstractC0265b> {
+public final class b implements o<AbstractC0257b> {
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f19863b;
+    private final String f19843b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final k5 f19864c;
+    private final k5 f19844c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f19865d;
+    private final String f19845d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final pq.b f19866e;
+    private final rq.b f19846e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final pq.b f19867a;
+        private final rq.b f19847a;
 
-        public a(pq.b uiService) {
+        public a(rq.b uiService) {
             Intrinsics.checkNotNullParameter(uiService, "uiService");
-            this.f19867a = uiService;
+            this.f19847a = uiService;
         }
 
         public final b a(String sessionToken, k5 triggeringComponent, String addressText) {
             Intrinsics.checkNotNullParameter(sessionToken, "sessionToken");
             Intrinsics.checkNotNullParameter(triggeringComponent, "triggeringComponent");
             Intrinsics.checkNotNullParameter(addressText, "addressText");
-            return new b(sessionToken, triggeringComponent, addressText, this.f19867a, null);
+            return new b(sessionToken, triggeringComponent, addressText, this.f19847a, null);
         }
     }
 
     /* renamed from: com.withpersona.sdk2.inquiry.ui.network.b$b  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static abstract class AbstractC0265b {
+    public static abstract class AbstractC0257b {
 
         /* renamed from: com.withpersona.sdk2.inquiry.ui.network.b$b$a */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public static final class a extends AbstractC0265b {
+        public static final class a extends AbstractC0257b {
 
             /* renamed from: a  reason: collision with root package name */
-            private final InternalErrorInfo f19868a;
+            private final InternalErrorInfo f19848a;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public a(InternalErrorInfo cause) {
                 super(null);
                 Intrinsics.checkNotNullParameter(cause, "cause");
-                this.f19868a = cause;
+                this.f19848a = cause;
             }
         }
 
         /* renamed from: com.withpersona.sdk2.inquiry.ui.network.b$b$b  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public static final class C0266b extends AbstractC0265b {
+        public static final class C0258b extends AbstractC0257b {
 
             /* renamed from: a  reason: collision with root package name */
-            private final List f19869a;
+            private final List f19849a;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            public C0266b(List results) {
+            public C0258b(List results) {
                 super(null);
                 Intrinsics.checkNotNullParameter(results, "results");
-                this.f19869a = results;
+                this.f19849a = results;
             }
 
             public final List a() {
-                return this.f19869a;
+                return this.f19849a;
             }
         }
 
-        public /* synthetic */ AbstractC0265b(DefaultConstructorMarker defaultConstructorMarker) {
+        public /* synthetic */ AbstractC0257b(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
 
-        private AbstractC0265b() {
+        private AbstractC0257b() {
         }
     }
 
@@ -98,10 +98,10 @@ public final class b implements o<AbstractC0265b> {
     static final class c extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f19870d;
+        int f19850d;
 
         /* renamed from: e  reason: collision with root package name */
-        private /* synthetic */ Object f19871e;
+        private /* synthetic */ Object f19851e;
 
         c(Continuation continuation) {
             super(2, continuation);
@@ -110,7 +110,7 @@ public final class b implements o<AbstractC0265b> {
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
             c cVar = new c(continuation);
-            cVar.f19871e = obj;
+            cVar.f19851e = obj;
             return cVar;
         }
 
@@ -134,8 +134,8 @@ public final class b implements o<AbstractC0265b> {
         public final java.lang.Object invokeSuspend(java.lang.Object r10) {
             /*
                 r9 = this;
-                java.lang.Object r0 = ur.b.f()
-                int r1 = r9.f19870d
+                java.lang.Object r0 = wr.b.f()
+                int r1 = r9.f19850d
                 r2 = 3
                 r3 = 2
                 r4 = 1
@@ -153,40 +153,40 @@ public final class b implements o<AbstractC0265b> {
                 kotlin.c.b(r10)
                 goto L9d
             L1f:
-                java.lang.Object r1 = r9.f19871e
+                java.lang.Object r1 = r9.f19851e
                 kotlinx.coroutines.flow.FlowCollector r1 = (kotlinx.coroutines.flow.FlowCollector) r1
                 kotlin.c.b(r10)
                 goto L58
             L27:
                 kotlin.c.b(r10)
-                java.lang.Object r10 = r9.f19871e
+                java.lang.Object r10 = r9.f19851e
                 r1 = r10
                 kotlinx.coroutines.flow.FlowCollector r1 = (kotlinx.coroutines.flow.FlowCollector) r1
                 com.withpersona.sdk2.inquiry.ui.network.b r10 = com.withpersona.sdk2.inquiry.ui.network.b.this
-                pq.b r10 = com.withpersona.sdk2.inquiry.ui.network.b.e(r10)
+                rq.b r10 = com.withpersona.sdk2.inquiry.ui.network.b.e(r10)
                 com.withpersona.sdk2.inquiry.ui.network.b r5 = com.withpersona.sdk2.inquiry.ui.network.b.this
                 java.lang.String r5 = com.withpersona.sdk2.inquiry.ui.network.b.c(r5)
-                com.withpersona.sdk2.inquiry.ui.network.AddressAutocompleteRequest$a r6 = com.withpersona.sdk2.inquiry.ui.network.AddressAutocompleteRequest.f19784b
+                com.withpersona.sdk2.inquiry.ui.network.AddressAutocompleteRequest$a r6 = com.withpersona.sdk2.inquiry.ui.network.AddressAutocompleteRequest.f19764b
                 com.withpersona.sdk2.inquiry.ui.network.b r7 = com.withpersona.sdk2.inquiry.ui.network.b.this
-                dq.k5 r7 = com.withpersona.sdk2.inquiry.ui.network.b.d(r7)
+                fq.k5 r7 = com.withpersona.sdk2.inquiry.ui.network.b.d(r7)
                 com.withpersona.sdk2.inquiry.ui.network.b r8 = com.withpersona.sdk2.inquiry.ui.network.b.this
                 java.lang.String r8 = com.withpersona.sdk2.inquiry.ui.network.b.b(r8)
                 com.withpersona.sdk2.inquiry.ui.network.AddressAutocompleteRequest r6 = r6.a(r7, r8)
-                r9.f19871e = r1
-                r9.f19870d = r4
+                r9.f19851e = r1
+                r9.f19850d = r4
                 java.lang.Object r10 = r10.d(r5, r6, r9)
                 if (r10 != r0) goto L58
                 goto L9c
             L58:
-                ov.z r10 = (ov.z) r10
+                vv.z r10 = (vv.z) r10
                 boolean r4 = r10.g()
                 r5 = 0
                 if (r4 != 0) goto L75
                 com.withpersona.sdk2.inquiry.ui.network.b$b$a r2 = new com.withpersona.sdk2.inquiry.ui.network.b$b$a
                 com.withpersona.sdk2.inquiry.network.core.InternalErrorInfo$NetworkErrorInfo r10 = com.withpersona.sdk2.inquiry.network.core.NetworkUtilsKt.toErrorInfo(r10)
                 r2.<init>(r10)
-                r9.f19871e = r5
-                r9.f19870d = r3
+                r9.f19851e = r5
+                r9.f19850d = r3
                 java.lang.Object r10 = r1.emit(r2, r9)
                 if (r10 != r0) goto L9d
                 goto L9c
@@ -203,14 +203,14 @@ public final class b implements o<AbstractC0265b> {
                 java.util.List r10 = kotlin.collections.CollectionsKt.l()
             L8f:
                 r3.<init>(r10)
-                r9.f19871e = r5
-                r9.f19870d = r2
+                r9.f19851e = r5
+                r9.f19850d = r2
                 java.lang.Object r10 = r1.emit(r3, r9)
                 if (r10 != r0) goto L9d
             L9c:
                 return r0
             L9d:
-                kotlin.Unit r10 = kotlin.Unit.f31988a
+                kotlin.Unit r10 = kotlin.Unit.f32008a
                 return r10
             */
             throw new UnsupportedOperationException("Method not decompiled: com.withpersona.sdk2.inquiry.ui.network.b.c.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -218,32 +218,32 @@ public final class b implements o<AbstractC0265b> {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(FlowCollector flowCollector, Continuation continuation) {
-            return ((c) create(flowCollector, continuation)).invokeSuspend(Unit.f31988a);
+            return ((c) create(flowCollector, continuation)).invokeSuspend(Unit.f32008a);
         }
     }
 
-    public /* synthetic */ b(String str, k5 k5Var, String str2, pq.b bVar, DefaultConstructorMarker defaultConstructorMarker) {
+    public /* synthetic */ b(String str, k5 k5Var, String str2, rq.b bVar, DefaultConstructorMarker defaultConstructorMarker) {
         this(str, k5Var, str2, bVar);
     }
 
-    @Override // zm.o
+    @Override // bn.o
     public boolean a(o otherWorker) {
         Intrinsics.checkNotNullParameter(otherWorker, "otherWorker");
-        if ((otherWorker instanceof b) && Intrinsics.areEqual(this.f19865d, ((b) otherWorker).f19865d)) {
+        if ((otherWorker instanceof b) && Intrinsics.areEqual(this.f19845d, ((b) otherWorker).f19845d)) {
             return true;
         }
         return false;
     }
 
-    @Override // zm.o
+    @Override // bn.o
     public Flow run() {
         return g.v(new c(null));
     }
 
-    private b(String str, k5 k5Var, String str2, pq.b bVar) {
-        this.f19863b = str;
-        this.f19864c = k5Var;
-        this.f19865d = str2;
-        this.f19866e = bVar;
+    private b(String str, k5 k5Var, String str2, rq.b bVar) {
+        this.f19843b = str;
+        this.f19844c = k5Var;
+        this.f19845d = str2;
+        this.f19846e = bVar;
     }
 }

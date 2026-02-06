@@ -1,18 +1,30 @@
 package ng;
+
+import yi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class kc extends h6 {
+final class kc implements yi.d {
 
-    /* renamed from: i  reason: collision with root package name */
-    private final mc f40760i;
+    /* renamed from: a  reason: collision with root package name */
+    static final kc f40016a = new kc();
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public kc(mc mcVar, int i10) {
-        super(mcVar.size(), i10);
-        this.f40760i = mcVar;
+    static {
+        c.b a10 = yi.c.a("language");
+        l2 l2Var = new l2();
+        l2Var.a(1);
+        a10.b(l2Var.b()).a();
+        c.b a11 = yi.c.a("inferenceCommonLogEvent");
+        l2 l2Var2 = new l2();
+        l2Var2.a(2);
+        a11.b(l2Var2.b()).a();
     }
 
-    @Override // ng.h6
-    protected final Object a(int i10) {
-        return this.f40760i.get(i10);
+    private kc() {
+    }
+
+    @Override // yi.d
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        android.support.v4.media.session.b.a(obj);
+        yi.e eVar = (yi.e) obj2;
+        throw null;
     }
 }

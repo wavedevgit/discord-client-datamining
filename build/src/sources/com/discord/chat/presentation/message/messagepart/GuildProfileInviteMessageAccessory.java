@@ -20,7 +20,7 @@ public final class GuildProfileInviteMessageAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-u7_MRrM$default  reason: not valid java name */
-    public static /* synthetic */ GuildProfileInviteMessageAccessory m603copyu7_MRrM$default(GuildProfileInviteMessageAccessory guildProfileInviteMessageAccessory, String str, int i10, GuildProfileInviteEmbedImpl guildProfileInviteEmbedImpl, int i11, Object obj) {
+    public static /* synthetic */ GuildProfileInviteMessageAccessory m601copyu7_MRrM$default(GuildProfileInviteMessageAccessory guildProfileInviteMessageAccessory, String str, int i10, GuildProfileInviteEmbedImpl guildProfileInviteEmbedImpl, int i11, Object obj) {
         if ((i11 & 1) != 0) {
             str = guildProfileInviteMessageAccessory.messageId;
         }
@@ -30,12 +30,12 @@ public final class GuildProfileInviteMessageAccessory extends MessageAccessory {
         if ((i11 & 4) != 0) {
             guildProfileInviteEmbedImpl = guildProfileInviteMessageAccessory.invite;
         }
-        return guildProfileInviteMessageAccessory.m605copyu7_MRrM(str, i10, guildProfileInviteEmbedImpl);
+        return guildProfileInviteMessageAccessory.m603copyu7_MRrM(str, i10, guildProfileInviteEmbedImpl);
     }
 
     @NotNull
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m604component13Eiw7ao() {
+    public final String m602component13Eiw7ao() {
         return this.messageId;
     }
 
@@ -50,7 +50,7 @@ public final class GuildProfileInviteMessageAccessory extends MessageAccessory {
 
     @NotNull
     /* renamed from: copy-u7_MRrM  reason: not valid java name */
-    public final GuildProfileInviteMessageAccessory m605copyu7_MRrM(@NotNull String messageId, int i10, @NotNull GuildProfileInviteEmbedImpl invite) {
+    public final GuildProfileInviteMessageAccessory m603copyu7_MRrM(@NotNull String messageId, int i10, @NotNull GuildProfileInviteEmbedImpl invite) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(invite, "invite");
         return new GuildProfileInviteMessageAccessory(messageId, i10, invite, null);
@@ -62,7 +62,7 @@ public final class GuildProfileInviteMessageAccessory extends MessageAccessory {
         }
         if (obj instanceof GuildProfileInviteMessageAccessory) {
             GuildProfileInviteMessageAccessory guildProfileInviteMessageAccessory = (GuildProfileInviteMessageAccessory) obj;
-            return MessageId.m1089equalsimpl0(this.messageId, guildProfileInviteMessageAccessory.messageId) && this.codedLinkIndex == guildProfileInviteMessageAccessory.codedLinkIndex && Intrinsics.areEqual(this.invite, guildProfileInviteMessageAccessory.invite);
+            return MessageId.m1087equalsimpl0(this.messageId, guildProfileInviteMessageAccessory.messageId) && this.codedLinkIndex == guildProfileInviteMessageAccessory.codedLinkIndex && Intrinsics.areEqual(this.invite, guildProfileInviteMessageAccessory.invite);
         }
         return false;
     }
@@ -79,20 +79,20 @@ public final class GuildProfileInviteMessageAccessory extends MessageAccessory {
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     @NotNull
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo538getMessageId3Eiw7ao() {
+    public String mo536getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        return (((MessageId.m1090hashCodeimpl(this.messageId) * 31) + Integer.hashCode(this.codedLinkIndex)) * 31) + this.invite.hashCode();
+        return (((MessageId.m1088hashCodeimpl(this.messageId) * 31) + Integer.hashCode(this.codedLinkIndex)) * 31) + this.invite.hashCode();
     }
 
     @NotNull
     public String toString() {
-        String m1092toStringimpl = MessageId.m1092toStringimpl(this.messageId);
+        String m1090toStringimpl = MessageId.m1090toStringimpl(this.messageId);
         int i10 = this.codedLinkIndex;
         GuildProfileInviteEmbedImpl guildProfileInviteEmbedImpl = this.invite;
-        return "GuildProfileInviteMessageAccessory(messageId=" + m1092toStringimpl + ", codedLinkIndex=" + i10 + ", invite=" + guildProfileInviteEmbedImpl + ")";
+        return "GuildProfileInviteMessageAccessory(messageId=" + m1090toStringimpl + ", codedLinkIndex=" + i10 + ", invite=" + guildProfileInviteEmbedImpl + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

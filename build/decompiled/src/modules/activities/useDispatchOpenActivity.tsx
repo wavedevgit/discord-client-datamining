@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/useDispatchOpenActivity.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun64840: for (var _fun64840_ip = 0;;) switch (_fun64840_ip) {
+        _fun64868: for (var _fun64868_ip = 0;;) switch (_fun64868_ip) {
             case 0:
                 var0 = arg0;
                 var5 = var0.connectedEmbeddedActivity;
@@ -39,8 +39,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2 == var5;
                 var6 = undefined;
                 if (var2) {
-                    _fun64840_ip = 37;
-                    continue _fun64840
+                    _fun64868_ip = 37;
+                    continue _fun64868
                 }
             case 32:
                 var6 = var5.applicationId;
@@ -52,22 +52,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2[0] = var6;
                 var2[1] = var5;
                 var1 = function() { // Environment: var1
-                    _fun64841: for (var _fun64841_ip = 0;;) switch (_fun64841_ip) {
+                    _fun64869: for (var _fun64869_ip = 0;;) switch (_fun64869_ip) {
                         case 0:
                             var0 = _closure2_slot0;
                             var2 = null;
                             var0 = var2 != var0;
                             if (!var0) {
-                                _fun64841_ip = 24;
-                                continue _fun64841
+                                _fun64869_ip = 24;
+                                continue _fun64869
                             }
                         case 16:
                             var1 = _closure2_slot1;
                             var0 = var2 != var1;
                         case 24:
                             if (!var0) {
-                                _fun64841_ip = 93;
-                                continue _fun64841
+                                _fun64869_ip = 93;
+                                continue _fun64869
                             }
                         case 27:
                             var2 = _closure1_slot0;

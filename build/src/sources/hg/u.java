@@ -3,16 +3,16 @@ package hg;
 final class u extends t {
 
     /* renamed from: a  reason: collision with root package name */
-    private final char f25856a;
+    private final char f25984a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public u(char c10) {
-        this.f25856a = c10;
+        this.f25984a = c10;
     }
 
     @Override // hg.x
     public final boolean a(char c10) {
-        if (c10 == this.f25856a) {
+        if (c10 == this.f25984a) {
             return true;
         }
         return false;
@@ -26,7 +26,7 @@ final class u extends t {
         cArr[3] = 0;
         cArr[4] = 0;
         cArr[5] = 0;
-        int i10 = this.f25856a;
+        int i10 = this.f25984a;
         for (int i11 = 0; i11 < 4; i11++) {
             cArr[5 - i11] = "0123456789ABCDEF".charAt(i10 & 15);
             i10 >>= 4;

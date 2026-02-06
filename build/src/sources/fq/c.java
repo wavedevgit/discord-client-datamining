@@ -1,32 +1,29 @@
 package fq;
 
-import kotlin.Unit;
-import kotlin.jvm.functions.Function0;
-import kotlin.jvm.internal.Intrinsics;
+import com.withpersona.sdk2.inquiry.steps.ui.components.InputAddressComponent;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class c {
+public interface c {
+    dn.t a();
 
-    /* renamed from: a  reason: collision with root package name */
-    private Function0 f23417a = new Function0() { // from class: fq.b
-        @Override // kotlin.jvm.functions.Function0
-        public final Object invoke() {
-            Unit d10;
-            d10 = c.d();
-            return d10;
-        }
-    };
+    dn.t b();
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final Unit d() {
-        return Unit.f31988a;
-    }
+    dn.t c();
 
-    public final Function0 b() {
-        return this.f23417a;
-    }
+    InputAddressComponent e(String str);
 
-    public final void c(Function0 function0) {
-        Intrinsics.checkNotNullParameter(function0, "<set-?>");
-        this.f23417a = function0;
-    }
+    InputAddressComponent f(String str);
+
+    dn.t h();
+
+    dn.t i();
+
+    InputAddressComponent j(Boolean bool);
+
+    InputAddressComponent l(String str);
+
+    InputAddressComponent o(String str);
+
+    gq.m p();
+
+    InputAddressComponent q(String str);
 }

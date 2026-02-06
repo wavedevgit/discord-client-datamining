@@ -11,9 +11,9 @@ import com.discord.primitives.RoleId$$serializer;
 import com.discord.primitives.UserId;
 import com.discord.primitives.UserId$$serializer;
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
-import gt.n2;
-import gt.v1;
 import java.util.List;
+import jt.n2;
+import jt.v1;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.jvm.functions.Function0;
@@ -24,8 +24,8 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
 import org.jetbrains.annotations.NotNull;
+@ft.m
 @Metadata(d1 = {"\u0000n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\"\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 I2\u00020\u0001:\u0002HIBs\u0012\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u0007\u0012\b\b\u0002\u0010\t\u001a\u00020\n\u0012\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\f\u0012\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u000e\u0012\n\b\u0002\u0010\u000f\u001a\u0004\u0018\u00010\u0010\u0012\f\u0010\u0011\u001a\b\u0012\u0004\u0012\u00020\u00130\u0012¢\u0006\u0004\b\u0014\u0010\u0015By\b\u0010\u0012\u0006\u0010\u0016\u001a\u00020\n\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010\b\u001a\u0004\u0018\u00010\u0007\u0012\u0006\u0010\t\u001a\u00020\n\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\f\u0012\b\u0010\r\u001a\u0004\u0018\u00010\u000e\u0012\b\u0010\u000f\u001a\u0004\u0018\u00010\u0010\u0012\u000e\u0010\u0011\u001a\n\u0012\u0004\u0012\u00020\u0013\u0018\u00010\u0012\u0012\b\u0010\u0017\u001a\u0004\u0018\u00010\u0018¢\u0006\u0004\b\u0014\u0010\u0019J\u0010\u0010+\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\b,J\u0010\u0010-\u001a\u0004\u0018\u00010\u0005HÆ\u0003¢\u0006\u0002\b.J\u000b\u0010/\u001a\u0004\u0018\u00010\u0007HÆ\u0003J\u000b\u00100\u001a\u0004\u0018\u00010\u0007HÆ\u0003J\t\u00101\u001a\u00020\nHÆ\u0003J\u000b\u00102\u001a\u0004\u0018\u00010\fHÆ\u0003J\u0010\u00103\u001a\u0004\u0018\u00010\u000eHÆ\u0003¢\u0006\u0002\b4J\u0010\u00105\u001a\u0004\u0018\u00010\u0010HÆ\u0003¢\u0006\u0002\b6J\u000f\u00107\u001a\b\u0012\u0004\u0012\u00020\u00130\u0012HÆ\u0003J|\u00108\u001a\u00020\u00002\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u00072\b\b\u0002\u0010\t\u001a\u00020\n2\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\f2\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u000e2\n\b\u0002\u0010\u000f\u001a\u0004\u0018\u00010\u00102\u000e\b\u0002\u0010\u0011\u001a\b\u0012\u0004\u0012\u00020\u00130\u0012HÆ\u0001¢\u0006\u0002\b9J\u0013\u0010:\u001a\u00020;2\b\u0010<\u001a\u0004\u0018\u00010=HÖ\u0003J\t\u0010>\u001a\u00020\nHÖ\u0001J\t\u0010?\u001a\u00020\u0007HÖ\u0001J%\u0010@\u001a\u00020A2\u0006\u0010B\u001a\u00020\u00002\u0006\u0010C\u001a\u00020D2\u0006\u0010E\u001a\u00020FH\u0001¢\u0006\u0002\bGR\u0013\u0010\u0002\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u001a\u0010\u001bR\u0013\u0010\u0004\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u001c\u0010\u001dR\u0013\u0010\u0006\u001a\u0004\u0018\u00010\u0007¢\u0006\b\n\u0000\u001a\u0004\b\u001e\u0010\u001fR\u0013\u0010\b\u001a\u0004\u0018\u00010\u0007¢\u0006\b\n\u0000\u001a\u0004\b \u0010\u001fR\u0011\u0010\t\u001a\u00020\n¢\u0006\b\n\u0000\u001a\u0004\b!\u0010\"R\u0013\u0010\u000b\u001a\u0004\u0018\u00010\f¢\u0006\b\n\u0000\u001a\u0004\b#\u0010$R\u0013\u0010\r\u001a\u0004\u0018\u00010\u000e¢\u0006\b\n\u0000\u001a\u0004\b%\u0010&R\u0013\u0010\u000f\u001a\u0004\u0018\u00010\u0010¢\u0006\b\n\u0000\u001a\u0004\b'\u0010(R\u001a\u0010\u0011\u001a\b\u0012\u0004\u0012\u00020\u00130\u0012X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b)\u0010*¨\u0006J"}, d2 = {"Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;", "Lcom/discord/chat/bridge/contentnode/MentionContentNode;", "channelId", "Lcom/discord/primitives/ChannelId;", "userId", "Lcom/discord/primitives/UserId;", "roleName", "", "parsedUserId", "roleColor", "", "roleColors", "Lcom/discord/chat/bridge/rolecolors/RoleColors;", "guildId", "Lcom/discord/primitives/GuildId;", "roleId", "Lcom/discord/primitives/RoleId;", "content", "", "Lcom/discord/chat/bridge/contentnode/ContentNode;", "<init>", "(Lcom/discord/primitives/ChannelId;Lcom/discord/primitives/UserId;Ljava/lang/String;Ljava/lang/String;ILcom/discord/chat/bridge/rolecolors/RoleColors;Lcom/discord/primitives/GuildId;Lcom/discord/primitives/RoleId;Ljava/util/List;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "seen0", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILcom/discord/primitives/ChannelId;Lcom/discord/primitives/UserId;Ljava/lang/String;Ljava/lang/String;ILcom/discord/chat/bridge/rolecolors/RoleColors;Lcom/discord/primitives/GuildId;Lcom/discord/primitives/RoleId;Ljava/util/List;Lkotlinx/serialization/internal/SerializationConstructorMarker;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "getChannelId-qMVnFVQ", "()Lcom/discord/primitives/ChannelId;", "getUserId-wUX8bhU", "()Lcom/discord/primitives/UserId;", "getRoleName", "()Ljava/lang/String;", "getParsedUserId", "getRoleColor", "()I", "getRoleColors", "()Lcom/discord/chat/bridge/rolecolors/RoleColors;", "getGuildId-qOKuAAo", "()Lcom/discord/primitives/GuildId;", "getRoleId-fYaclRY", "()Lcom/discord/primitives/RoleId;", "getContent", "()Ljava/util/List;", "component1", "component1-qMVnFVQ", "component2", "component2-wUX8bhU", "component3", "component4", "component5", "component6", "component7", "component7-qOKuAAo", "component8", "component8-fYaclRY", "component9", "copy", "copy-5RCyINY", "equals", "", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
-@dt.m
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class UserOrRoleMentionContentNode extends MentionContentNode {
     private final ChannelId channelId;
@@ -41,7 +41,7 @@ public final class UserOrRoleMentionContentNode extends MentionContentNode {
     @NotNull
     public static final Companion Companion = new Companion(null);
     @NotNull
-    private static final Lazy[] $childSerializers = {null, null, null, null, null, null, null, null, or.l.b(or.o.f44232e, new Function0() { // from class: com.discord.chat.bridge.contentnode.x
+    private static final Lazy[] $childSerializers = {null, null, null, null, null, null, null, null, qr.l.b(qr.o.f48044e, new Function0() { // from class: com.discord.chat.bridge.contentnode.x
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             KSerializer _childSerializers$_anonymous_;
@@ -71,7 +71,7 @@ public final class UserOrRoleMentionContentNode extends MentionContentNode {
     }
 
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_() {
-        return new gt.f(ContentNodeSerializer.INSTANCE);
+        return new jt.f(ContentNodeSerializer.INSTANCE);
     }
 
     public static final /* synthetic */ Lazy[] access$get$childSerializers$cp() {
@@ -79,7 +79,7 @@ public final class UserOrRoleMentionContentNode extends MentionContentNode {
     }
 
     /* renamed from: copy-5RCyINY$default */
-    public static /* synthetic */ UserOrRoleMentionContentNode m382copy5RCyINY$default(UserOrRoleMentionContentNode userOrRoleMentionContentNode, ChannelId channelId, UserId userId, String str, String str2, int i10, RoleColors roleColors, GuildId guildId, RoleId roleId, List list, int i11, Object obj) {
+    public static /* synthetic */ UserOrRoleMentionContentNode m380copy5RCyINY$default(UserOrRoleMentionContentNode userOrRoleMentionContentNode, ChannelId channelId, UserId userId, String str, String str2, int i10, RoleColors roleColors, GuildId guildId, RoleId roleId, List list, int i11, Object obj) {
         if ((i11 & 1) != 0) {
             channelId = userOrRoleMentionContentNode.channelId;
         }
@@ -114,46 +114,46 @@ public final class UserOrRoleMentionContentNode extends MentionContentNode {
         GuildId guildId2 = guildId;
         int i12 = i10;
         String str3 = str;
-        return userOrRoleMentionContentNode.m387copy5RCyINY(channelId, userId, str3, str2, i12, roleColors2, guildId2, roleId2, list3);
+        return userOrRoleMentionContentNode.m385copy5RCyINY(channelId, userId, str3, str2, i12, roleColors2, guildId2, roleId2, list3);
     }
 
     public static final /* synthetic */ void write$Self$chat_release(UserOrRoleMentionContentNode userOrRoleMentionContentNode, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         MentionContentNode.write$Self(userOrRoleMentionContentNode, compositeEncoder, serialDescriptor);
         Lazy[] lazyArr = $childSerializers;
-        if (compositeEncoder.z(serialDescriptor, 0) || userOrRoleMentionContentNode.channelId != null) {
-            compositeEncoder.A(serialDescriptor, 0, ChannelId$$serializer.INSTANCE, userOrRoleMentionContentNode.channelId);
+        if (compositeEncoder.A(serialDescriptor, 0) || userOrRoleMentionContentNode.channelId != null) {
+            compositeEncoder.l(serialDescriptor, 0, ChannelId$$serializer.INSTANCE, userOrRoleMentionContentNode.channelId);
         }
-        if (compositeEncoder.z(serialDescriptor, 1) || userOrRoleMentionContentNode.userId != null) {
-            compositeEncoder.A(serialDescriptor, 1, UserId$$serializer.INSTANCE, userOrRoleMentionContentNode.userId);
+        if (compositeEncoder.A(serialDescriptor, 1) || userOrRoleMentionContentNode.userId != null) {
+            compositeEncoder.l(serialDescriptor, 1, UserId$$serializer.INSTANCE, userOrRoleMentionContentNode.userId);
         }
-        if (compositeEncoder.z(serialDescriptor, 2) || userOrRoleMentionContentNode.roleName != null) {
-            compositeEncoder.A(serialDescriptor, 2, n2.f25302a, userOrRoleMentionContentNode.roleName);
+        if (compositeEncoder.A(serialDescriptor, 2) || userOrRoleMentionContentNode.roleName != null) {
+            compositeEncoder.l(serialDescriptor, 2, n2.f31041a, userOrRoleMentionContentNode.roleName);
         }
-        if (compositeEncoder.z(serialDescriptor, 3) || userOrRoleMentionContentNode.parsedUserId != null) {
-            compositeEncoder.A(serialDescriptor, 3, n2.f25302a, userOrRoleMentionContentNode.parsedUserId);
+        if (compositeEncoder.A(serialDescriptor, 3) || userOrRoleMentionContentNode.parsedUserId != null) {
+            compositeEncoder.l(serialDescriptor, 3, n2.f31041a, userOrRoleMentionContentNode.parsedUserId);
         }
-        if (compositeEncoder.z(serialDescriptor, 4) || userOrRoleMentionContentNode.roleColor != 0) {
-            compositeEncoder.v(serialDescriptor, 4, userOrRoleMentionContentNode.roleColor);
+        if (compositeEncoder.A(serialDescriptor, 4) || userOrRoleMentionContentNode.roleColor != 0) {
+            compositeEncoder.x(serialDescriptor, 4, userOrRoleMentionContentNode.roleColor);
         }
-        if (compositeEncoder.z(serialDescriptor, 5) || userOrRoleMentionContentNode.roleColors != null) {
-            compositeEncoder.A(serialDescriptor, 5, RoleColors$$serializer.INSTANCE, userOrRoleMentionContentNode.roleColors);
+        if (compositeEncoder.A(serialDescriptor, 5) || userOrRoleMentionContentNode.roleColors != null) {
+            compositeEncoder.l(serialDescriptor, 5, RoleColors$$serializer.INSTANCE, userOrRoleMentionContentNode.roleColors);
         }
-        if (compositeEncoder.z(serialDescriptor, 6) || userOrRoleMentionContentNode.guildId != null) {
-            compositeEncoder.A(serialDescriptor, 6, GuildId$$serializer.INSTANCE, userOrRoleMentionContentNode.guildId);
+        if (compositeEncoder.A(serialDescriptor, 6) || userOrRoleMentionContentNode.guildId != null) {
+            compositeEncoder.l(serialDescriptor, 6, GuildId$$serializer.INSTANCE, userOrRoleMentionContentNode.guildId);
         }
-        if (compositeEncoder.z(serialDescriptor, 7) || userOrRoleMentionContentNode.roleId != null) {
-            compositeEncoder.A(serialDescriptor, 7, RoleId$$serializer.INSTANCE, userOrRoleMentionContentNode.roleId);
+        if (compositeEncoder.A(serialDescriptor, 7) || userOrRoleMentionContentNode.roleId != null) {
+            compositeEncoder.l(serialDescriptor, 7, RoleId$$serializer.INSTANCE, userOrRoleMentionContentNode.roleId);
         }
-        compositeEncoder.l(serialDescriptor, 8, (dt.o) lazyArr[8].getValue(), userOrRoleMentionContentNode.getContent());
+        compositeEncoder.s(serialDescriptor, 8, (ft.o) lazyArr[8].getValue(), userOrRoleMentionContentNode.getContent());
     }
 
     /* renamed from: component1-qMVnFVQ */
-    public final ChannelId m383component1qMVnFVQ() {
+    public final ChannelId m381component1qMVnFVQ() {
         return this.channelId;
     }
 
     /* renamed from: component2-wUX8bhU */
-    public final UserId m384component2wUX8bhU() {
+    public final UserId m382component2wUX8bhU() {
         return this.userId;
     }
 
@@ -174,12 +174,12 @@ public final class UserOrRoleMentionContentNode extends MentionContentNode {
     }
 
     /* renamed from: component7-qOKuAAo */
-    public final GuildId m385component7qOKuAAo() {
+    public final GuildId m383component7qOKuAAo() {
         return this.guildId;
     }
 
     /* renamed from: component8-fYaclRY */
-    public final RoleId m386component8fYaclRY() {
+    public final RoleId m384component8fYaclRY() {
         return this.roleId;
     }
 
@@ -190,7 +190,7 @@ public final class UserOrRoleMentionContentNode extends MentionContentNode {
 
     @NotNull
     /* renamed from: copy-5RCyINY */
-    public final UserOrRoleMentionContentNode m387copy5RCyINY(ChannelId channelId, UserId userId, String str, String str2, int i10, RoleColors roleColors, GuildId guildId, RoleId roleId, @NotNull List<? extends ContentNode> content) {
+    public final UserOrRoleMentionContentNode m385copy5RCyINY(ChannelId channelId, UserId userId, String str, String str2, int i10, RoleColors roleColors, GuildId guildId, RoleId roleId, @NotNull List<? extends ContentNode> content) {
         Intrinsics.checkNotNullParameter(content, "content");
         return new UserOrRoleMentionContentNode(channelId, userId, str, str2, i10, roleColors, guildId, roleId, content, null);
     }
@@ -207,7 +207,7 @@ public final class UserOrRoleMentionContentNode extends MentionContentNode {
     }
 
     /* renamed from: getChannelId-qMVnFVQ */
-    public final ChannelId m388getChannelIdqMVnFVQ() {
+    public final ChannelId m386getChannelIdqMVnFVQ() {
         return this.channelId;
     }
 
@@ -218,7 +218,7 @@ public final class UserOrRoleMentionContentNode extends MentionContentNode {
     }
 
     /* renamed from: getGuildId-qOKuAAo */
-    public final GuildId m389getGuildIdqOKuAAo() {
+    public final GuildId m387getGuildIdqOKuAAo() {
         return this.guildId;
     }
 
@@ -235,7 +235,7 @@ public final class UserOrRoleMentionContentNode extends MentionContentNode {
     }
 
     /* renamed from: getRoleId-fYaclRY */
-    public final RoleId m390getRoleIdfYaclRY() {
+    public final RoleId m388getRoleIdfYaclRY() {
         return this.roleId;
     }
 
@@ -244,25 +244,25 @@ public final class UserOrRoleMentionContentNode extends MentionContentNode {
     }
 
     /* renamed from: getUserId-wUX8bhU */
-    public final UserId m391getUserIdwUX8bhU() {
+    public final UserId m389getUserIdwUX8bhU() {
         return this.userId;
     }
 
     public int hashCode() {
         ChannelId channelId = this.channelId;
-        int m1064hashCodeimpl = (channelId == null ? 0 : ChannelId.m1064hashCodeimpl(channelId.m1068unboximpl())) * 31;
+        int m1062hashCodeimpl = (channelId == null ? 0 : ChannelId.m1062hashCodeimpl(channelId.m1066unboximpl())) * 31;
         UserId userId = this.userId;
-        int m1142hashCodeimpl = (m1064hashCodeimpl + (userId == null ? 0 : UserId.m1142hashCodeimpl(userId.m1146unboximpl()))) * 31;
+        int m1140hashCodeimpl = (m1062hashCodeimpl + (userId == null ? 0 : UserId.m1140hashCodeimpl(userId.m1144unboximpl()))) * 31;
         String str = this.roleName;
-        int hashCode = (m1142hashCodeimpl + (str == null ? 0 : str.hashCode())) * 31;
+        int hashCode = (m1140hashCodeimpl + (str == null ? 0 : str.hashCode())) * 31;
         String str2 = this.parsedUserId;
         int hashCode2 = (((hashCode + (str2 == null ? 0 : str2.hashCode())) * 31) + Integer.hashCode(this.roleColor)) * 31;
         RoleColors roleColors = this.roleColors;
         int hashCode3 = (hashCode2 + (roleColors == null ? 0 : roleColors.hashCode())) * 31;
         GuildId guildId = this.guildId;
-        int m1077hashCodeimpl = (hashCode3 + (guildId == null ? 0 : GuildId.m1077hashCodeimpl(guildId.m1081unboximpl()))) * 31;
+        int m1075hashCodeimpl = (hashCode3 + (guildId == null ? 0 : GuildId.m1075hashCodeimpl(guildId.m1079unboximpl()))) * 31;
         RoleId roleId = this.roleId;
-        return ((m1077hashCodeimpl + (roleId != null ? RoleId.m1116hashCodeimpl(roleId.m1120unboximpl()) : 0)) * 31) + this.content.hashCode();
+        return ((m1075hashCodeimpl + (roleId != null ? RoleId.m1114hashCodeimpl(roleId.m1118unboximpl()) : 0)) * 31) + this.content.hashCode();
     }
 
     @NotNull

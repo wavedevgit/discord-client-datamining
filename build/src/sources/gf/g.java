@@ -41,7 +41,7 @@ public abstract class g extends c implements a.f {
     }
 
     @Override // ef.a.f
-    public Set j() {
+    public Set i() {
         if (g()) {
             return this.R;
         }
@@ -60,7 +60,7 @@ public abstract class g extends c implements a.f {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public g(Context context, Looper looper, int i10, d dVar, ff.d dVar2, ff.k kVar) {
-        this(context, looper, h.a(context), com.google.android.gms.common.f.m(), i10, dVar, (ff.d) q.l(dVar2), (ff.k) q.l(kVar));
+        this(context, looper, h.a(context), com.google.android.gms.common.f.n(), i10, dVar, (ff.d) q.l(dVar2), (ff.k) q.l(kVar));
     }
 
     protected g(Context context, Looper looper, h hVar, com.google.android.gms.common.f fVar, int i10, d dVar, ff.d dVar2, ff.k kVar) {

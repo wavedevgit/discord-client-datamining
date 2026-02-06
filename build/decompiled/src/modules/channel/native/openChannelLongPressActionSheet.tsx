@@ -66,4 +66,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.openChannelLongPressActionSheet = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3278, 9132, 1307, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3280, 9138, 1307, 2]);

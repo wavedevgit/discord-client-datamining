@@ -1,155 +1,133 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var4 = require;
     var2 = exports;
-    var3 = dependencyMap;
-    var _closure1_slot0 = var4;
-    var _closure1_slot1 = var3;
-    var0 = global;
-    var7 = var0.Object;
-    var6 = var7.defineProperty;
-    var5 = {};
-    var0 = true;
-    var5.value = var0;
-    var0 = '__esModule';
-    var0 = var6.bind(var7)(var2, var0, var5);
-    var0 = 0;
-    var3 = var3[var0];
+    var0 = dependencyMap;
+    var3 = metroImportDefault;
+    var _closure1_slot0 = var3;
+    var _closure1_slot1 = var0;
+    var3 = global;
+    var6 = var3.Object;
+    var5 = var6.defineProperty;
+    var4 = {};
+    var3 = true;
+    var4.value = var3;
+    var3 = '__esModule';
+    var3 = var5.bind(var6)(var2, var3, var4);
+    var4 = 0;
+    var5 = var0[var4];
+    var3 = require;
     var0 = undefined;
-    var3 = var4.bind(var0)(var3);
-    var3 = var3.processColor;
+    var3 = var3.bind(var0)(var5);
+    var5 = var3.processColor;
+    var3 = {
+        'evenodd': 0,
+        'nonzero': 1
+    };
     var _closure1_slot2 = var3;
-    var3 = /^url\(#(.+)\)$/;
+    var3 = {};
+    var3.type = var4;
+    var4 = 'black';
+    var4 = var5.bind(var0)(var4);
+    var3.payload = var4;
     var _closure1_slot3 = var3;
-    var3 = {};
-    var4 = 2;
-    var3.type = var4;
-    var _closure1_slot4 = var3;
-    var3 = {};
-    var4 = 3;
-    var3.type = var4;
-    var _closure1_slot5 = var3;
-    var3 = {};
-    var4 = 4;
-    var3.type = var4;
-    var _closure1_slot6 = var3;
-    var1 = function arg0() {
-        _fun48544: for (var _fun48544_ip = 0;;) switch (_fun48544_ip) {
+    var1 = function arg0, arg1, arg2() {
+        _fun48545: for (var _fun48545_ip = 0;;) switch (_fun48545_ip) {
             case 0:
-                var7 = arg0;
-                var0 = 'none';
-                if (!(var0 !== var7)) {
-                    _fun48544_ip = 288;
-                    continue _fun48544
+                var1 = arg0;
+                var0 = arg1;
+                var4 = arg2;
+                var8 = var0.fill;
+                var3 = var0.fillRule;
+                var6 = var0.fillOpacity;
+                var0 = null;
+                if (!(var0 == var8)) {
+                    _fun48545_ip = 48;
+                    continue _fun48545
                 }
-            case 14:
-                var0 = 'currentColor';
-                if (!(var0 !== var7)) {
-                    _fun48544_ip = 279;
-                    continue _fun48544
+            case 33:
+                var2 = _closure1_slot3;
+                var1.fill = var2;
+                _fun48545_ip = 121;
+                continue _fun48545;
+            case 48:
+                var5 = var4.push;
+                var2 = 'fill';
+                var2 = var5.bind(var4)(var2);
+                if (var8) {
+                    _fun48545_ip = 85;
+                    continue _fun48545
                 }
-            case 27:
-                var0 = 'context-fill';
-                if (!(var0 !== var7)) {
-                    _fun48544_ip = 270;
-                    continue _fun48544
+            case 65:
+                var5 = 'number';
+                var2 = typeof var8;
+                if (!(var5 !== var2)) {
+                    _fun48545_ip = 85;
+                    continue _fun48545
                 }
-            case 40:
-                var0 = 'context-stroke';
-                if (!(var0 !== var7)) {
-                    _fun48544_ip = 261;
-                    continue _fun48544
-                }
-            case 53:
-                var1 = 'string';
-                var0 = typeof var7;
-                var2 = var1 === var0;
-                if (!var2) {
-                    _fun48544_ip = 85;
-                    continue _fun48544
-                }
-            case 67:
-                var1 = var7.match;
-                var0 = _closure1_slot3;
-                var2 = var1.bind(var7)(var0);
+            case 76:
+                var2 = _closure1_slot3;
+                _fun48545_ip = 115;
+                continue _fun48545;
             case 85:
-                if (var2) {
-                    _fun48544_ip = 239;
-                    continue _fun48544
+                var9 = _closure1_slot0;
+                var7 = _closure1_slot1;
+                var5 = 1;
+                var5 = var7[var5];
+                var7 = undefined;
+                var5 = var9.bind(var7)(var5);
+                var2 = var5.bind(var7)(var8);
+            case 115:
+                var1.fill = var2;
+            case 121:
+                if (!(var0 != var6)) {
+                    _fun48545_ip = 175;
+                    continue _fun48545
                 }
-            case 91:
-                var3 = _closure1_slot0;
-                var4 = _closure1_slot1;
-                var1 = 1;
-                var1 = var4[var1];
-                var6 = undefined;
-                var3 = var3.bind(var6)(var1);
-                var1 = var3.convertPercentageColor;
-                var1 = var1.bind(var3)(var7);
-                var0 = _closure1_slot2;
-                var3 = var0.bind(var6)(var1);
-                var1 = typeof var3;
-                var0 = 'number';
-                if (!(var0 !== var1)) {
-                    _fun48544_ip = 221;
-                    continue _fun48544
+            case 125:
+                var5 = var4.push;
+                var2 = 'fillOpacity';
+                var2 = var5.bind(var4)(var2);
+                var7 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var2 = 2;
+                var2 = var5[var2];
+                var5 = undefined;
+                var2 = var7.bind(var5)(var2);
+                var2 = var2.bind(var5)(var6);
+                var1.fillOpacity = var2;
+            case 175:
+                if (!(var0 != var3)) {
+                    _fun48545_ip = 230;
+                    continue _fun48545
                 }
-            case 147:
-                var0 = 'object';
-                if (!(var0 === var1)) {
-                    _fun48544_ip = 161;
-                    continue _fun48544
+            case 179:
+                var2 = var4.push;
+                var0 = 'fillRule';
+                var0 = var2.bind(var4)(var0);
+                var4 = 1;
+                var0 = var4;
+                if (!var3) {
+                    _fun48545_ip = 224;
+                    continue _fun48545
                 }
-            case 155:
-                var0 = null;
-                if (!(var0 === var3)) {
-                    _fun48544_ip = 221;
-                    continue _fun48544
+            case 202:
+                var2 = _closure1_slot2;
+                var3 = var2[var3];
+                var2 = 0;
+                var0 = var4;
+                if (!(var2 === var3)) {
+                    _fun48545_ip = 224;
+                    continue _fun48545
                 }
-            case 161:
-                var0 = global;
-                var4 = var0.console;
-                var1 = var4.warn;
-                var5 = var0.String;
-                var7 = var5.bind(var6)(var7);
-                var0 = var0.HermesInternal;
-                var6 = var0.concat;
-                var5 = '"';
-                var0 = '" is not a valid color or brush';
-                var0 = var6.bind(var5)(var7, var0);
-                var0 = var1.bind(var4)(var0);
-                var0 = null;
-                _fun48544_ip = 237;
-                continue _fun48544;
-            case 221:
-                var1 = {};
-                var4 = 0;
-                var1.type = var4;
-                var1.payload = var3;
-                var0 = var1;
-            case 237:
-                return var0;
-            case 239:
-                var0 = {};
-                var1 = 1;
-                var0.type = var1;
-                var1 = var2[var1];
-                var0.brushRef = var1;
-                return var0;
-            case 261:
-                var0 = _closure1_slot6;
-                return var0;
-            case 270:
-                var0 = _closure1_slot5;
-                return var0;
-            case 279:
-                var0 = _closure1_slot4;
-                return var0;
-            case 288:
-                var0 = null;
+            case 222:
+                var0 = 0;
+            case 224:
+                var1.fillRule = var0;
+            case 230:
+                var0 = undefined;
                 return var0;
         }
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 5483]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 5483, 5471]);

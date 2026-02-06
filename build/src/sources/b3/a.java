@@ -12,24 +12,24 @@ public abstract class a {
     public static final class C0095a extends c {
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ Function0 f6095b;
+        final /* synthetic */ Function0 f6388b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ Function1 f6096c;
+        final /* synthetic */ Function1 f6389c;
 
         C0095a(Function0 function0, Function1 function1) {
-            this.f6095b = function0;
-            this.f6096c = function1;
+            this.f6388b = function0;
+            this.f6389c = function1;
         }
 
         @Override // b3.c
         public float a() {
-            return ((Number) this.f6095b.invoke()).floatValue();
+            return ((Number) this.f6388b.invoke()).floatValue();
         }
 
         @Override // b3.c
         public void b(float f10) {
-            this.f6096c.invoke(Float.valueOf(f10));
+            this.f6389c.invoke(Float.valueOf(f10));
         }
     }
 

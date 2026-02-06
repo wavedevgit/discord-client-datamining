@@ -95,7 +95,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/main_tabs_v2/native/tabs/messages/MessagesEmptyState.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun101820: for (var _fun101820_ip = 0;;) switch (_fun101820_ip) {
+        _fun101828: for (var _fun101828_ip = 0;;) switch (_fun101828_ip) {
             case 0:
                 var1 = _closure1_slot10;
                 var3 = undefined;
@@ -165,8 +165,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = 'messages-empty';
                 var6 = var2.bind(var4)(var1);
                 if (!var6) {
-                    _fun101820_ip = 247;
-                    continue _fun101820
+                    _fun101828_ip = 247;
+                    continue _fun101828
                 }
             case 244:
                 var6 = var0;
@@ -184,14 +184,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4[0] = var5;
                 var5 = undefined;
                 if (!var6) {
-                    _fun101820_ip = 302;
-                    continue _fun101820
+                    _fun101828_ip = 306;
+                    continue _fun101828
                 }
-            case 292:
+            case 296:
                 var6 = {};
                 var6.paddingBottom = var7;
                 var5 = var6;
-            case 302:
+            case 306:
                 var4[1] = var5;
                 var0.contentContainerStyle = var4;
                 var6 = _closure1_slot9;
@@ -221,13 +221,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = 622;
                 var16 = var20;
                 if (!(var19 < var18)) {
-                    _fun101820_ip = 425;
-                    continue _fun101820
+                    _fun101828_ip = 429;
+                    continue _fun101828
                 }
-            case 417:
+            case 421:
                 var17 = var19 / var18;
                 var16 = var17 * var20;
-            case 425:
+            case 429:
                 var15.height = var16;
                 var16 = global;
                 var17 = var16.Math;
@@ -334,4 +334,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 5226, 33, 1297, 1464, 1469, 5216, 481, 5366, 5227, 13285, 3941, 1234, 4084, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 5227, 33, 1297, 1464, 1469, 5217, 481, 5367, 5228, 13287, 3943, 1234, 4085, 2]);

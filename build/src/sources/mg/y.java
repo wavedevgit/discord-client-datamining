@@ -1,50 +1,54 @@
 package mg;
-
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Objects;
-import java.util.Set;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class y extends p1 {
+final class y extends d0 {
+
+    /* renamed from: a  reason: collision with root package name */
+    private String f37154a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private boolean f37155b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private int f37156c;
 
     /* renamed from: d  reason: collision with root package name */
-    final /* synthetic */ a0 f38276d;
+    private byte f37157d;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public y(a0 a0Var) {
-        this.f38276d = a0Var;
+    @Override // mg.d0
+    public final d0 a(boolean z10) {
+        this.f37155b = true;
+        this.f37157d = (byte) (1 | this.f37157d);
+        return this;
     }
 
-    @Override // mg.p1
-    final Map b() {
-        return this.f38276d;
+    @Override // mg.d0
+    public final d0 b(int i10) {
+        this.f37156c = 1;
+        this.f37157d = (byte) (this.f37157d | 2);
+        return this;
     }
 
-    @Override // mg.p1, java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public final boolean contains(Object obj) {
-        Set entrySet = this.f38276d.f37515i.entrySet();
-        entrySet.getClass();
-        try {
-            return entrySet.contains(obj);
-        } catch (ClassCastException | NullPointerException unused) {
-            return false;
+    @Override // mg.d0
+    public final e0 c() {
+        String str;
+        if (this.f37157d == 3 && (str = this.f37154a) != null) {
+            return new a0(str, this.f37155b, this.f37156c, null);
         }
-    }
-
-    @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set
-    public final Iterator iterator() {
-        return new z(this.f38276d);
-    }
-
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public final boolean remove(Object obj) {
-        if (!contains(obj)) {
-            return false;
+        StringBuilder sb2 = new StringBuilder();
+        if (this.f37154a == null) {
+            sb2.append(" libraryName");
         }
-        Map.Entry entry = (Map.Entry) obj;
-        Objects.requireNonNull(entry);
-        a0 a0Var = this.f38276d;
-        i0.n(a0Var.f37516o, entry.getKey());
-        return true;
+        if ((this.f37157d & 1) == 0) {
+            sb2.append(" enableFirelog");
+        }
+        if ((this.f37157d & 2) == 0) {
+            sb2.append(" firelogEventType");
+        }
+        throw new IllegalStateException("Missing required properties:".concat(sb2.toString()));
+    }
+
+    public final d0 d(String str) {
+        this.f37154a = "common";
+        return this;
     }
 }

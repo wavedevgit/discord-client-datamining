@@ -9,15 +9,15 @@ public final class DeserializedContainerAbiStability {
     public static final DeserializedContainerAbiStability UNSTABLE = new DeserializedContainerAbiStability("UNSTABLE", 1);
 
     /* renamed from: d  reason: collision with root package name */
-    private static final /* synthetic */ DeserializedContainerAbiStability[] f34373d;
+    private static final /* synthetic */ DeserializedContainerAbiStability[] f34393d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f34374e;
+    private static final /* synthetic */ EnumEntries f34394e;
 
     static {
         DeserializedContainerAbiStability[] a10 = a();
-        f34373d = a10;
-        f34374e = vr.a.a(a10);
+        f34393d = a10;
+        f34394e = xr.a.a(a10);
     }
 
     private DeserializedContainerAbiStability(String str, int i10) {
@@ -32,6 +32,6 @@ public final class DeserializedContainerAbiStability {
     }
 
     public static DeserializedContainerAbiStability[] values() {
-        return (DeserializedContainerAbiStability[]) f34373d.clone();
+        return (DeserializedContainerAbiStability[]) f34393d.clone();
     }
 }

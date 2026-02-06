@@ -15,57 +15,57 @@ import org.jetbrains.annotations.NotNull;
 public final class DocumentFileDataJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f18513a;
+    private final m.b f18493a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f18514b;
+    private final h f18494b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final h f18515c;
+    private final h f18495c;
 
     public DocumentFileDataJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a(StackTraceHelper.ID_KEY, "attributes");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f18513a = a10;
+        this.f18493a = a10;
         h f10 = moshi.f(String.class, x0.d(), StackTraceHelper.ID_KEY);
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f18514b = f10;
+        this.f18494b = f10;
         h f11 = moshi.f(DocumentFileData.Attributes.class, x0.d(), "attributes");
         Intrinsics.checkNotNullExpressionValue(f11, "adapter(...)");
-        this.f18515c = f11;
+        this.f18495c = f11;
     }
 
     @Override // com.squareup.moshi.h
     /* renamed from: a */
     public DocumentFileData fromJson(m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         String str = null;
         DocumentFileData.Attributes attributes = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.f18513a);
-            if (W != -1) {
-                if (W != 0) {
-                    if (W == 1) {
-                        attributes = (DocumentFileData.Attributes) this.f18515c.fromJson(reader);
+            int J = reader.J(this.f18493a);
+            if (J != -1) {
+                if (J != 0) {
+                    if (J == 1) {
+                        attributes = (DocumentFileData.Attributes) this.f18495c.fromJson(reader);
                     }
                 } else {
-                    str = (String) this.f18514b.fromJson(reader);
+                    str = (String) this.f18494b.fromJson(reader);
                     if (str == null) {
-                        throw ym.c.x(StackTraceHelper.ID_KEY, StackTraceHelper.ID_KEY, reader);
+                        throw an.c.x(StackTraceHelper.ID_KEY, StackTraceHelper.ID_KEY, reader);
                     }
                 }
             } else {
                 reader.E0();
-                reader.P();
+                reader.S();
             }
         }
-        reader.z();
+        reader.D();
         if (str != null) {
             return new DocumentFileData(str, attributes);
         }
-        throw ym.c.o(StackTraceHelper.ID_KEY, StackTraceHelper.ID_KEY, reader);
+        throw an.c.o(StackTraceHelper.ID_KEY, StackTraceHelper.ID_KEY, reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -74,11 +74,11 @@ public final class DocumentFileDataJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (documentFileData != null) {
             writer.k();
-            writer.W(StackTraceHelper.ID_KEY);
-            this.f18514b.toJson(writer, documentFileData.b());
-            writer.W("attributes");
-            this.f18515c.toJson(writer, documentFileData.a());
-            writer.E();
+            writer.J(StackTraceHelper.ID_KEY);
+            this.f18494b.toJson(writer, documentFileData.b());
+            writer.J("attributes");
+            this.f18495c.toJson(writer, documentFileData.a());
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

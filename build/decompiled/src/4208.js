@@ -6,45 +6,65 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
     var0 = function arg0() {
-        _fun38455: for (var _fun38455_ip = 0;;) switch (_fun38455_ip) {
+        _fun38436: for (var _fun38436_ip = 0;;) switch (_fun38436_ip) {
             case 0:
-                var5 = arg0;
-                var0 = 'None';
-                var1 = 0;
-                if (!(var1 !== var5)) {
-                    _fun38455_ip = 65;
-                    continue _fun38455
+                var0 = arg0;
+                var1 = var0.toLowerCase;
+                var2 = var1.bind(var0)();
+                var1 = 'appl';
+                if (!(var1 !== var2)) {
+                    _fun38436_ip = 113;
+                    continue _fun38436
                 }
-            case 13:
-                var1 = 'Rotate 90 CW';
-                var2 = 1;
-                if (!(var2 !== var5)) {
-                    _fun38455_ip = 62;
-                    continue _fun38455
+            case 23:
+                var1 = 'adbe';
+                if (!(var1 !== var2)) {
+                    _fun38436_ip = 105;
+                    continue _fun38436
                 }
-            case 26:
-                var2 = 'Rotate 180';
-                var3 = 2;
-                if (!(var3 !== var5)) {
-                    _fun38455_ip = 59;
-                    continue _fun38455
+            case 33:
+                var1 = 'msft';
+                if (!(var1 !== var2)) {
+                    _fun38436_ip = 99;
+                    continue _fun38436
                 }
-            case 39:
-                var3 = 'Unknown';
-                var4 = 3;
-                if (!(var4 === var5)) {
-                    _fun38455_ip = 56;
-                    continue _fun38455
+            case 43:
+                var1 = 'sunw';
+                if (!(var1 !== var2)) {
+                    _fun38436_ip = 91;
+                    continue _fun38436
                 }
-            case 50:
-                var3 = 'Rotate 270 CW';
-            case 56:
-                var2 = var3;
-            case 59:
-                var1 = var2;
-            case 62:
-                var0 = var1;
-            case 65:
+            case 53:
+                var1 = 'sgi';
+                if (!(var1 !== var2)) {
+                    _fun38436_ip = 83;
+                    continue _fun38436
+                }
+            case 63:
+                var1 = 'tgnt';
+                if (!(var1 !== var2)) {
+                    _fun38436_ip = 75;
+                    continue _fun38436
+                }
+            case 73:
+                return var0;
+            case 75:
+                var0 = 'Taligent';
+                return var0;
+            case 83:
+                var0 = 'Silicon Graphics';
+                return var0;
+            case 91:
+                var0 = 'Sun Microsystems';
+                return var0;
+            case 99:
+                var0 = 'Microsoft';
+                return var0;
+            case 105:
+                var0 = 'Adobe';
+                return var0;
+            case 113:
+                var0 = 'Apple';
                 return var0;
         }
     };
@@ -52,79 +72,509 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = global;
     var5 = var0.Object;
     var4 = var5.defineProperty;
-    var3 = {};
+    var2 = {};
     var0 = true;
-    var3.value = var0;
+    var2.value = var0;
     var0 = '__esModule';
-    var0 = var4.bind(var5)(var1, var0, var3);
+    var0 = var4.bind(var5)(var1, var0, var2);
     var0 = {};
-    var2 = function arg0, arg1, arg2, arg3, arg4() {
-        _fun38456: for (var _fun38456_ip = 0;;) switch (_fun38456_ip) {
+    var2 = {};
+    var4 = 'Preferred CMM type';
+    var2.name = var4;
+    var4 = function arg0, arg1() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 0;
+        var1 = var1[var0];
+        var0 = undefined;
+        var4 = var2.bind(var0)(var1);
+        var3 = var4.getStringFromDataView;
+        var2 = arg0;
+        var1 = arg1;
+        var0 = 4;
+        var0 = var3.bind(var4)(var2, var1, var0);
+        return var0;
+    };
+    var2.value = var4;
+    var4 = function arg0() {
+        _fun38438: for (var _fun38438_ip = 0;;) switch (_fun38438_ip) {
             case 0:
-                var9 = arg1;
-                var1 = _closure1_slot0;
-                var2 = _closure1_slot1;
-                var0 = 0;
-                var0 = var2[var0];
-                var8 = undefined;
-                var6 = var1.bind(var8)(var0);
-                var5 = var6.readIfd;
-                var0 = 1;
-                var0 = var2[var0];
-                var0 = var1.bind(var8)(var0);
-                var15 = var0.IFD_TYPE_CANON;
-                var0 = arg2;
-                var13 = var9 + var0;
-                var16 = arg0;
-                var12 = arg3;
-                var11 = arg4;
-                var17 = var6;
-                var14 = var9;
-                var5 = var17[var5](var16, var15, var14, var13, var12, var11, var10);
-                var1 = var5.ShotInfo;
-                var0 = var5;
-                if (!var1) {
-                    _fun38456_ip = 191;
-                    continue _fun38456
+                var3 = arg0;
+                var0 = '';
+                var1 = null;
+                if (!(var1 !== var3)) {
+                    _fun38438_ip = 27;
+                    continue _fun38438
                 }
-            case 89:
-                var2 = _closure1_slot0;
-                var3 = _closure1_slot1;
-                var1 = 2;
-                var1 = var3[var1];
-                var4 = var2.bind(var8)(var1);
-                var3 = var4.objectAssign;
-                var1 = var5.ShotInfo;
-                var9 = var1.value;
-                var2 = {};
-                var6 = 27;
-                var1 = var9[var6];
-                if (!(var8 !== var1)) {
-                    _fun38456_ip = 174;
-                    continue _fun38456
-                }
-            case 139:
-                var1 = {};
-                var10 = var9[var6];
-                var1.value = var10;
-                var7 = _closure1_slot2;
-                var6 = var9[var6];
-                var6 = var7.bind(var8)(var6);
-                var1.description = var6;
-                var2.AutoRotate = var1;
-            case 174:
-                var1 = {};
-                var1 = var3.bind(var4)(var1, var5, var2);
-                var2 = delete var1.ShotInfo;
-                var0 = var1;
-            case 191:
+            case 13:
+                var2 = _closure1_slot2;
+                var1 = undefined;
+                var0 = var2.bind(var1)(var3);
+            case 27:
                 return var0;
         }
     };
-    var0.read = var2;
-    var2 = 27;
-    var0.SHOT_INFO_AUTO_ROTATE = var2;
-    var1.default = var0;
+    var2.description = var4;
+    var0[4] = var2;
+    var2 = {};
+    var4 = 'Profile Version';
+    var2.name = var4;
+    var4 = function arg0, arg1() {
+        var5 = arg0;
+        var6 = arg1;
+        var0 = var5.getUint8;
+        var1 = var0.bind(var5)(var6);
+        var0 = var1.toString;
+        var4 = 10;
+        var0 = var0.bind(var1)(var4);
+        var2 = '.';
+        var3 = var0 + var2;
+        var7 = var5.getUint8;
+        var1 = 1;
+        var0 = var6 + var1;
+        var7 = var7.bind(var5)(var0);
+        var0 = 4;
+        var7 = var7 >> var0;
+        var0 = var7.toString;
+        var0 = var0.bind(var7)(var4);
+        var0 = var3 + var0;
+        var3 = var5.getUint8;
+        var1 = var6 + var1;
+        var3 = var3.bind(var5)(var1);
+        var1 = 16;
+        var3 = var3 % var1;
+        var1 = var3.toString;
+        var1 = var1.bind(var3)(var4);
+        var0 = var0 + var2;
+        var0 = var0 + var1;
+        return var0;
+    };
+    var2.value = var4;
+    var0[8] = var2;
+    var2 = {};
+    var4 = 'Profile/Device class';
+    var2.name = var4;
+    var4 = function arg0, arg1() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 0;
+        var1 = var1[var0];
+        var0 = undefined;
+        var4 = var2.bind(var0)(var1);
+        var3 = var4.getStringFromDataView;
+        var2 = arg0;
+        var1 = arg1;
+        var0 = 4;
+        var0 = var3.bind(var4)(var2, var1, var0);
+        return var0;
+    };
+    var2.value = var4;
+    var4 = function arg0() {
+        _fun38441: for (var _fun38441_ip = 0;;) switch (_fun38441_ip) {
+            case 0:
+                var0 = arg0;
+                var1 = var0.toLowerCase;
+                var2 = var1.bind(var0)();
+                var1 = 'scnr';
+                if (!(var1 !== var2)) {
+                    _fun38441_ip = 215;
+                    continue _fun38441
+                }
+            case 26:
+                var1 = 'mntr';
+                if (!(var1 !== var2)) {
+                    _fun38441_ip = 207;
+                    continue _fun38441
+                }
+            case 39:
+                var1 = 'prtr';
+                if (!(var1 !== var2)) {
+                    _fun38441_ip = 199;
+                    continue _fun38441
+                }
+            case 52:
+                var1 = 'link';
+                if (!(var1 !== var2)) {
+                    _fun38441_ip = 191;
+                    continue _fun38441
+                }
+            case 63:
+                var1 = 'abst';
+                if (!(var1 !== var2)) {
+                    _fun38441_ip = 183;
+                    continue _fun38441
+                }
+            case 73:
+                var1 = 'spac';
+                if (!(var1 !== var2)) {
+                    _fun38441_ip = 175;
+                    continue _fun38441
+                }
+            case 83:
+                var1 = 'nmcl';
+                if (!(var1 !== var2)) {
+                    _fun38441_ip = 167;
+                    continue _fun38441
+                }
+            case 93:
+                var1 = 'cenc';
+                if (!(var1 !== var2)) {
+                    _fun38441_ip = 159;
+                    continue _fun38441
+                }
+            case 103:
+                var1 = 'mid ';
+                if (!(var1 !== var2)) {
+                    _fun38441_ip = 151;
+                    continue _fun38441
+                }
+            case 113:
+                var1 = 'mlnk';
+                if (!(var1 !== var2)) {
+                    _fun38441_ip = 143;
+                    continue _fun38441
+                }
+            case 123:
+                var1 = 'mvis';
+                if (!(var1 !== var2)) {
+                    _fun38441_ip = 135;
+                    continue _fun38441
+                }
+            case 133:
+                return var0;
+            case 135:
+                var0 = 'MultiplexVisualization profile';
+                return var0;
+            case 143:
+                var0 = 'MultiplexLink profile';
+                return var0;
+            case 151:
+                var0 = 'MultiplexIdentification profile';
+                return var0;
+            case 159:
+                var0 = 'ColorEncodingSpace profile';
+                return var0;
+            case 167:
+                var0 = 'NamedColor profile';
+                return var0;
+            case 175:
+                var0 = 'ColorSpace profile';
+                return var0;
+            case 183:
+                var0 = 'Abstract profile';
+                return var0;
+            case 191:
+                var0 = 'DeviceLink profile';
+                return var0;
+            case 199:
+                var0 = 'Output Device profile';
+                return var0;
+            case 207:
+                var0 = 'Display Device profile';
+                return var0;
+            case 215:
+                var0 = 'Input Device profile';
+                return var0;
+        }
+    };
+    var2.description = var4;
+    var0[12] = var2;
+    var2 = {};
+    var4 = 'Color Space';
+    var2.name = var4;
+    var4 = function arg0, arg1() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 0;
+        var1 = var1[var0];
+        var0 = undefined;
+        var4 = var2.bind(var0)(var1);
+        var3 = var4.getStringFromDataView;
+        var2 = arg0;
+        var1 = arg1;
+        var0 = 4;
+        var0 = var3.bind(var4)(var2, var1, var0);
+        return var0;
+    };
+    var2.value = var4;
+    var0[16] = var2;
+    var2 = {};
+    var4 = 'Connection Space';
+    var2.name = var4;
+    var4 = function arg0, arg1() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 0;
+        var1 = var1[var0];
+        var0 = undefined;
+        var4 = var2.bind(var0)(var1);
+        var3 = var4.getStringFromDataView;
+        var2 = arg0;
+        var1 = arg1;
+        var0 = 4;
+        var0 = var3.bind(var4)(var2, var1, var0);
+        return var0;
+    };
+    var2.value = var4;
+    var0[20] = var2;
+    var2 = {};
+    var4 = 'ICC Profile Date';
+    var2.name = var4;
+    var4 = function arg0, arg1() {
+        var2 = arg0;
+        var3 = arg1;
+        var0 = var2.getUint16;
+        var8 = var0.bind(var2)(var3);
+        var1 = var2.getUint16;
+        var0 = 2;
+        var0 = var3 + var0;
+        var1 = var1.bind(var2)(var0);
+        var0 = 1;
+        var13 = var1 - var0;
+        var1 = var2.getUint16;
+        var0 = 4;
+        var0 = var3 + var0;
+        var12 = var1.bind(var2)(var0);
+        var1 = var2.getUint16;
+        var0 = 6;
+        var0 = var3 + var0;
+        var11 = var1.bind(var2)(var0);
+        var1 = var2.getUint16;
+        var0 = 8;
+        var0 = var3 + var0;
+        var10 = var1.bind(var2)(var0);
+        var1 = var2.getUint16;
+        var0 = 10;
+        var0 = var3 + var0;
+        var9 = var1.bind(var2)(var0);
+        var0 = global;
+        var2 = var0.Date;
+        var1 = var0.Date;
+        var0 = var1.UTC;
+        var15 = var1;
+        var14 = var8;
+        var14 = var15[var0](var14, var13, var12, var11, var10, var9, var8);
+        var1 = var2.prototype;
+        var1 = Object.create(var1, {
+            constructor: {
+                value: var2
+            }
+        });
+        var15 = var1;
+        var0 = new var15[var2](var14, var13);
+        var1 = var0 instanceof Object ? var0 : var1;
+        var0 = var1.toISOString;
+        var0 = var0.bind(var1)();
+        return var0;
+    };
+    var2.value = var4;
+    var0[24] = var2;
+    var2 = {};
+    var4 = 'ICC Signature';
+    var2.name = var4;
+    var4 = function arg0, arg1() {
+        var3 = arg1;
+        var0 = arg0;
+        var2 = var0.buffer;
+        var1 = var2.slice;
+        var0 = 4;
+        var0 = var3 + var0;
+        var6 = var1.bind(var2)(var3, var0);
+        var0 = global;
+        var1 = var0.String;
+        var3 = var1.fromCharCode;
+        var2 = var3.apply;
+        var0 = var0.Uint8Array;
+        var1 = var0.prototype;
+        var1 = Object.create(var1, {
+            constructor: {
+                value: var0
+            }
+        });
+        var7 = var1;
+        var0 = new var7[var0](var6, var5);
+        var1 = var0 instanceof Object ? var0 : var1;
+        var0 = null;
+        var0 = var2.bind(var3)(var0, var1);
+        return var0;
+    };
+    var2.value = var4;
+    var0[36] = var2;
+    var2 = {};
+    var4 = 'Primary Platform';
+    var2.name = var4;
+    var4 = function arg0, arg1() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 0;
+        var1 = var1[var0];
+        var0 = undefined;
+        var4 = var2.bind(var0)(var1);
+        var3 = var4.getStringFromDataView;
+        var2 = arg0;
+        var1 = arg1;
+        var0 = 4;
+        var0 = var3.bind(var4)(var2, var1, var0);
+        return var0;
+    };
+    var2.value = var4;
+    var4 = function arg0() {
+        var2 = _closure1_slot2;
+        var1 = undefined;
+        var0 = arg0;
+        var0 = var2.bind(var1)(var0);
+        return var0;
+    };
+    var2.description = var4;
+    var0[40] = var2;
+    var2 = {};
+    var4 = 'Device Manufacturer';
+    var2.name = var4;
+    var4 = function arg0, arg1() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 0;
+        var1 = var1[var0];
+        var0 = undefined;
+        var4 = var2.bind(var0)(var1);
+        var3 = var4.getStringFromDataView;
+        var2 = arg0;
+        var1 = arg1;
+        var0 = 4;
+        var0 = var3.bind(var4)(var2, var1, var0);
+        return var0;
+    };
+    var2.value = var4;
+    var4 = function arg0() {
+        var2 = _closure1_slot2;
+        var1 = undefined;
+        var0 = arg0;
+        var0 = var2.bind(var1)(var0);
+        return var0;
+    };
+    var2.description = var4;
+    var0[48] = var2;
+    var2 = {};
+    var4 = 'Device Model Number';
+    var2.name = var4;
+    var4 = function arg0, arg1() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 0;
+        var1 = var1[var0];
+        var0 = undefined;
+        var4 = var2.bind(var0)(var1);
+        var3 = var4.getStringFromDataView;
+        var2 = arg0;
+        var1 = arg1;
+        var0 = 4;
+        var0 = var3.bind(var4)(var2, var1, var0);
+        return var0;
+    };
+    var2.value = var4;
+    var0[52] = var2;
+    var2 = {};
+    var4 = 'Rendering Intent';
+    var2.name = var4;
+    var4 = function arg0, arg1() {
+        var2 = arg0;
+        var1 = var2.getUint32;
+        var0 = arg1;
+        var0 = var1.bind(var2)(var0);
+        return var0;
+    };
+    var2.value = var4;
+    var4 = function arg0() {
+        _fun38452: for (var _fun38452_ip = 0;;) switch (_fun38452_ip) {
+            case 0:
+                var0 = arg0;
+                var1 = 0;
+                if (!(var1 !== var0)) {
+                    _fun38452_ip = 54;
+                    continue _fun38452
+                }
+            case 9:
+                var1 = 1;
+                if (!(var1 !== var0)) {
+                    _fun38452_ip = 46;
+                    continue _fun38452
+                }
+            case 16:
+                var1 = 2;
+                if (!(var1 !== var0)) {
+                    _fun38452_ip = 40;
+                    continue _fun38452
+                }
+            case 23:
+                var1 = 3;
+                if (!(var1 !== var0)) {
+                    _fun38452_ip = 32;
+                    continue _fun38452
+                }
+            case 30:
+                return var0;
+            case 32:
+                var0 = 'Absolute Colorimetric';
+                return var0;
+            case 40:
+                var0 = 'Saturation';
+                return var0;
+            case 46:
+                var0 = 'Relative Colorimetric';
+                return var0;
+            case 54:
+                var0 = 'Perceptual';
+                return var0;
+        }
+    };
+    var2.description = var4;
+    var0[64] = var2;
+    var2 = {};
+    var4 = 'Profile Creator';
+    var2.name = var4;
+    var3 = function arg0, arg1() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 0;
+        var1 = var1[var0];
+        var0 = undefined;
+        var4 = var2.bind(var0)(var1);
+        var3 = var4.getStringFromDataView;
+        var2 = arg0;
+        var1 = arg1;
+        var0 = 4;
+        var0 = var3.bind(var4)(var2, var1, var0);
+        return var0;
+    };
+    var2.value = var3;
+    var0[80] = var2;
+    var2 = {};
+    var3 = {};
+    var4 = 'ICC Description';
+    var3.name = var4;
+    var2.desc = var3;
+    var3 = {};
+    var4 = 'ICC Copyright';
+    var3.name = var4;
+    var2.cprt = var3;
+    var3 = {};
+    var4 = 'ICC Device Model Description';
+    var3.name = var4;
+    var2.dmdd = var3;
+    var3 = {};
+    var4 = 'ICC Viewing Conditions Description';
+    var3.name = var4;
+    var2.vued = var3;
+    var3 = {};
+    var4 = 'ICC Device Manufacturer for Display';
+    var3.name = var4;
+    var2.dmnd = var3;
+    var3 = {};
+    var4 = 'Technology';
+    var3.name = var4;
+    var2.tech = var3;
+    var1.iccTags = var2;
+    var1.iccProfile = var0;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4185, 4186, 4165]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4166]);

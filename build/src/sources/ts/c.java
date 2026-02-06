@@ -1,33 +1,104 @@
 package ts;
 
-import kotlinx.coroutines.CoroutineDispatcher;
-import rs.m;
+import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class c extends f {
+public abstract class c {
 
-    /* renamed from: t  reason: collision with root package name */
-    public static final c f51036t = new c();
+    /* renamed from: d  reason: collision with root package name */
+    private static final /* synthetic */ AtomicReferenceFieldUpdater f50816d = AtomicReferenceFieldUpdater.newUpdater(c.class, Object.class, "_next$volatile");
 
-    private c() {
-        super(j.f51048c, j.f51049d, j.f51050e, j.f51046a);
+    /* renamed from: e  reason: collision with root package name */
+    private static final /* synthetic */ AtomicReferenceFieldUpdater f50817e = AtomicReferenceFieldUpdater.newUpdater(c.class, Object.class, "_prev$volatile");
+    private volatile /* synthetic */ Object _next$volatile;
+    private volatile /* synthetic */ Object _prev$volatile;
+
+    public c(c cVar) {
+        this._prev$volatile = cVar;
     }
 
-    @Override // kotlinx.coroutines.CoroutineDispatcher
-    public CoroutineDispatcher b2(int i10, String str) {
-        m.a(i10);
-        if (i10 >= j.f51048c) {
-            return m.b(this, str);
+    private final c d() {
+        c h10 = h();
+        while (h10 != null && h10.k()) {
+            h10 = (c) f50817e.get(h10);
         }
-        return super.b2(i10, str);
+        return h10;
     }
 
-    @Override // java.io.Closeable, java.lang.AutoCloseable
-    public void close() {
-        throw new UnsupportedOperationException("Dispatchers.Default cannot be closed");
+    private final c e() {
+        c f10;
+        c f11 = f();
+        Intrinsics.checkNotNull(f11);
+        while (f11.k() && (f10 = f11.f()) != null) {
+            f11 = f10;
+        }
+        return f11;
     }
 
-    @Override // kotlinx.coroutines.CoroutineDispatcher
-    public String toString() {
-        return "Dispatchers.Default";
+    /* JADX INFO: Access modifiers changed from: private */
+    public final Object g() {
+        return f50816d.get(this);
+    }
+
+    public final void c() {
+        f50817e.set(this, null);
+    }
+
+    public final c f() {
+        Object g10 = g();
+        if (g10 == b.a()) {
+            return null;
+        }
+        return (c) g10;
+    }
+
+    public final c h() {
+        return (c) f50817e.get(this);
+    }
+
+    public abstract boolean k();
+
+    public final boolean l() {
+        if (f() == null) {
+            return true;
+        }
+        return false;
+    }
+
+    public final boolean m() {
+        return androidx.concurrent.futures.b.a(f50816d, this, null, b.a());
+    }
+
+    public final void n() {
+        Object obj;
+        c cVar;
+        if (l()) {
+            return;
+        }
+        while (true) {
+            c d10 = d();
+            c e10 = e();
+            AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f50817e;
+            do {
+                obj = atomicReferenceFieldUpdater.get(e10);
+                if (((c) obj) == null) {
+                    cVar = null;
+                } else {
+                    cVar = d10;
+                }
+            } while (!androidx.concurrent.futures.b.a(atomicReferenceFieldUpdater, e10, obj, cVar));
+            if (d10 != null) {
+                f50816d.set(d10, e10);
+            }
+            if (!e10.k() || e10.l()) {
+                if (d10 == null || !d10.k()) {
+                    return;
+                }
+            }
+        }
+    }
+
+    public final boolean o(c cVar) {
+        return androidx.concurrent.futures.b.a(f50816d, this, null, cVar);
     }
 }

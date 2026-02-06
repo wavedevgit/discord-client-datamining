@@ -10,46 +10,46 @@ import k4.m;
 public class p0 extends k4.y {
 
     /* renamed from: k  reason: collision with root package name */
-    private static final String f5777k = k4.m.i("WorkManagerImpl");
+    private static final String f6106k = k4.m.i("WorkManagerImpl");
 
     /* renamed from: l  reason: collision with root package name */
-    private static p0 f5778l = null;
+    private static p0 f6107l = null;
 
     /* renamed from: m  reason: collision with root package name */
-    private static p0 f5779m = null;
+    private static p0 f6108m = null;
 
     /* renamed from: n  reason: collision with root package name */
-    private static final Object f5780n = new Object();
+    private static final Object f6109n = new Object();
 
     /* renamed from: a  reason: collision with root package name */
-    private Context f5781a;
+    private Context f6110a;
 
     /* renamed from: b  reason: collision with root package name */
-    private androidx.work.a f5782b;
+    private androidx.work.a f6111b;
 
     /* renamed from: c  reason: collision with root package name */
-    private WorkDatabase f5783c;
+    private WorkDatabase f6112c;
 
     /* renamed from: d  reason: collision with root package name */
-    private r4.b f5784d;
+    private r4.b f6113d;
 
     /* renamed from: e  reason: collision with root package name */
-    private List f5785e;
+    private List f6114e;
 
     /* renamed from: f  reason: collision with root package name */
-    private u f5786f;
+    private u f6115f;
 
     /* renamed from: g  reason: collision with root package name */
-    private q4.n f5787g;
+    private q4.n f6116g;
 
     /* renamed from: h  reason: collision with root package name */
-    private boolean f5788h = false;
+    private boolean f6117h = false;
 
     /* renamed from: i  reason: collision with root package name */
-    private BroadcastReceiver.PendingResult f5789i;
+    private BroadcastReceiver.PendingResult f6118i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final o4.n f5790j;
+    private final o4.n f6119j;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     static class a {
@@ -62,16 +62,16 @@ public class p0 extends k4.y {
         Context applicationContext = context.getApplicationContext();
         if (!a.a(applicationContext)) {
             k4.m.h(new m.a(aVar.j()));
-            this.f5781a = applicationContext;
-            this.f5784d = bVar;
-            this.f5783c = workDatabase;
-            this.f5786f = uVar;
-            this.f5790j = nVar;
-            this.f5782b = aVar;
-            this.f5785e = list;
-            this.f5787g = new q4.n(workDatabase);
-            z.e(list, this.f5786f, bVar.c(), this.f5783c, aVar);
-            this.f5784d.d(new ForceStopRunnable(applicationContext, this));
+            this.f6110a = applicationContext;
+            this.f6113d = bVar;
+            this.f6112c = workDatabase;
+            this.f6115f = uVar;
+            this.f6119j = nVar;
+            this.f6111b = aVar;
+            this.f6114e = list;
+            this.f6116g = new q4.n(workDatabase);
+            z.e(list, this.f6115f, bVar.c(), this.f6112c, aVar);
+            this.f6113d.d(new ForceStopRunnable(applicationContext, this));
             return;
         }
         throw new IllegalStateException("Cannot initialize WorkManager in direct boot mode");
@@ -81,13 +81,13 @@ public class p0 extends k4.y {
         r3 = r3.getApplicationContext();
      */
     /* JADX WARN: Code restructure failed: missing block: B:15:0x001e, code lost:
-        if (androidx.work.impl.p0.f5779m != null) goto L16;
+        if (androidx.work.impl.p0.f6108m != null) goto L16;
      */
     /* JADX WARN: Code restructure failed: missing block: B:16:0x0020, code lost:
-        androidx.work.impl.p0.f5779m = androidx.work.impl.q0.c(r3, r4);
+        androidx.work.impl.p0.f6108m = androidx.work.impl.q0.c(r3, r4);
      */
     /* JADX WARN: Code restructure failed: missing block: B:17:0x0026, code lost:
-        androidx.work.impl.p0.f5778l = androidx.work.impl.p0.f5779m;
+        androidx.work.impl.p0.f6107l = androidx.work.impl.p0.f6108m;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -95,11 +95,11 @@ public class p0 extends k4.y {
     */
     public static void f(android.content.Context r3, androidx.work.a r4) {
         /*
-            java.lang.Object r0 = androidx.work.impl.p0.f5780n
+            java.lang.Object r0 = androidx.work.impl.p0.f6109n
             monitor-enter(r0)
-            androidx.work.impl.p0 r1 = androidx.work.impl.p0.f5778l     // Catch: java.lang.Throwable -> L14
+            androidx.work.impl.p0 r1 = androidx.work.impl.p0.f6107l     // Catch: java.lang.Throwable -> L14
             if (r1 == 0) goto L16
-            androidx.work.impl.p0 r2 = androidx.work.impl.p0.f5779m     // Catch: java.lang.Throwable -> L14
+            androidx.work.impl.p0 r2 = androidx.work.impl.p0.f6108m     // Catch: java.lang.Throwable -> L14
             if (r2 != 0) goto Lc
             goto L16
         Lc:
@@ -113,13 +113,13 @@ public class p0 extends k4.y {
         L16:
             if (r1 != 0) goto L2a
             android.content.Context r3 = r3.getApplicationContext()     // Catch: java.lang.Throwable -> L14
-            androidx.work.impl.p0 r1 = androidx.work.impl.p0.f5779m     // Catch: java.lang.Throwable -> L14
+            androidx.work.impl.p0 r1 = androidx.work.impl.p0.f6108m     // Catch: java.lang.Throwable -> L14
             if (r1 != 0) goto L26
             androidx.work.impl.p0 r3 = androidx.work.impl.q0.c(r3, r4)     // Catch: java.lang.Throwable -> L14
-            androidx.work.impl.p0.f5779m = r3     // Catch: java.lang.Throwable -> L14
+            androidx.work.impl.p0.f6108m = r3     // Catch: java.lang.Throwable -> L14
         L26:
-            androidx.work.impl.p0 r3 = androidx.work.impl.p0.f5779m     // Catch: java.lang.Throwable -> L14
-            androidx.work.impl.p0.f5778l = r3     // Catch: java.lang.Throwable -> L14
+            androidx.work.impl.p0 r3 = androidx.work.impl.p0.f6108m     // Catch: java.lang.Throwable -> L14
+            androidx.work.impl.p0.f6107l = r3     // Catch: java.lang.Throwable -> L14
         L2a:
             monitor-exit(r0)     // Catch: java.lang.Throwable -> L14
             return
@@ -131,13 +131,13 @@ public class p0 extends k4.y {
     }
 
     public static p0 j() {
-        synchronized (f5780n) {
+        synchronized (f6109n) {
             try {
-                p0 p0Var = f5778l;
+                p0 p0Var = f6107l;
                 if (p0Var != null) {
                     return p0Var;
                 }
-                return f5779m;
+                return f6108m;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -146,7 +146,7 @@ public class p0 extends k4.y {
 
     public static p0 k(Context context) {
         p0 j10;
-        synchronized (f5780n) {
+        synchronized (f6109n) {
             try {
                 j10 = j();
                 if (j10 == null) {
@@ -175,50 +175,50 @@ public class p0 extends k4.y {
 
     public k4.q g(UUID uuid) {
         q4.b b10 = q4.b.b(uuid, this);
-        this.f5784d.d(b10);
+        this.f6113d.d(b10);
         return b10.d();
     }
 
     public Context h() {
-        return this.f5781a;
+        return this.f6110a;
     }
 
     public androidx.work.a i() {
-        return this.f5782b;
+        return this.f6111b;
     }
 
     public q4.n l() {
-        return this.f5787g;
+        return this.f6116g;
     }
 
     public u m() {
-        return this.f5786f;
+        return this.f6115f;
     }
 
     public List n() {
-        return this.f5785e;
+        return this.f6114e;
     }
 
     public o4.n o() {
-        return this.f5790j;
+        return this.f6119j;
     }
 
     public WorkDatabase p() {
-        return this.f5783c;
+        return this.f6112c;
     }
 
     public r4.b q() {
-        return this.f5784d;
+        return this.f6113d;
     }
 
     public void r() {
-        synchronized (f5780n) {
+        synchronized (f6109n) {
             try {
-                this.f5788h = true;
-                BroadcastReceiver.PendingResult pendingResult = this.f5789i;
+                this.f6117h = true;
+                BroadcastReceiver.PendingResult pendingResult = this.f6118i;
                 if (pendingResult != null) {
                     pendingResult.finish();
-                    this.f5789i = null;
+                    this.f6118i = null;
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -233,16 +233,16 @@ public class p0 extends k4.y {
     }
 
     public void t(BroadcastReceiver.PendingResult pendingResult) {
-        synchronized (f5780n) {
+        synchronized (f6109n) {
             try {
-                BroadcastReceiver.PendingResult pendingResult2 = this.f5789i;
+                BroadcastReceiver.PendingResult pendingResult2 = this.f6118i;
                 if (pendingResult2 != null) {
                     pendingResult2.finish();
                 }
-                this.f5789i = pendingResult;
-                if (this.f5788h) {
+                this.f6118i = pendingResult;
+                if (this.f6117h) {
                     pendingResult.finish();
-                    this.f5789i = null;
+                    this.f6118i = null;
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -251,6 +251,6 @@ public class p0 extends k4.y {
     }
 
     public void u(p4.m mVar) {
-        this.f5784d.d(new q4.r(this.f5786f, new a0(mVar), true));
+        this.f6113d.d(new q4.r(this.f6115f, new a0(mVar), true));
     }
 }

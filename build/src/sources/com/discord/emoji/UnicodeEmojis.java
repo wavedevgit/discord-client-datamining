@@ -4,10 +4,10 @@ import android.content.Context;
 import com.discord.emoji.UnicodeEmojis;
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
 import com.facebook.react.views.text.internal.span.SetSpanOperation;
-import gt.n2;
-import gt.v1;
 import java.util.List;
 import java.util.Map;
+import jt.n2;
+import jt.v1;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.Unit;
@@ -25,10 +25,10 @@ import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
 import kotlinx.serialization.json.Json;
 import kotlinx.serialization.json.JsonBuilder;
-import ms.m0;
-import or.o;
-import or.v;
 import org.jetbrains.annotations.NotNull;
+import os.m0;
+import qr.o;
+import qr.v;
 @Metadata(d1 = {"\u0000<\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010$\n\u0002\u0010\u000e\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\bÆ\u0002\u0018\u00002\u00020\u0001:\u0002\u0013\u0014B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J(\u0010\r\u001a\u0014\u0012\u0004\u0012\u00020\n\u0012\n\u0012\b\u0012\u0004\u0012\u00020\f0\u000b0\t2\u0006\u0010\u000e\u001a\u00020\u000fH\u0086@¢\u0006\u0002\u0010\u0010J\u0016\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u000e\u001a\u00020\u000fH\u0082@¢\u0006\u0002\u0010\u0010R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004¢\u0006\u0002\n\u0000R \u0010\b\u001a\u0014\u0012\u0004\u0012\u00020\n\u0012\n\u0012\b\u0012\u0004\u0012\u00020\f0\u000b0\tX\u0082.¢\u0006\u0002\n\u0000¨\u0006\u0015"}, d2 = {"Lcom/discord/emoji/UnicodeEmojis;", "", "<init>", "()V", "emojiJsonParser", "Lkotlinx/serialization/json/Json;", "emojiLoadingMutex", "Lkotlinx/coroutines/sync/Mutex;", "emojis", "", "", "", "Lcom/discord/emoji/UnicodeEmojis$Emoji;", "load", "context", "Landroid/content/Context;", "(Landroid/content/Context;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "loadData", "Lcom/discord/emoji/UnicodeEmojis$EmojiCategories;", "EmojiCategories", "Emoji", "emoji_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nUnicodeEmojis.kt\nKotlin\n*S Kotlin\n*F\n+ 1 UnicodeEmojis.kt\ncom/discord/emoji/UnicodeEmojis\n+ 2 Mutex.kt\nkotlinx/coroutines/sync/MutexKt\n*L\n1#1,68:1\n116#2,10:69\n*S KotlinDebug\n*F\n+ 1 UnicodeEmojis.kt\ncom/discord/emoji/UnicodeEmojis\n*L\n22#1:69,10\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -45,11 +45,11 @@ public final class UnicodeEmojis {
         }
     }, 1, null);
     @NotNull
-    private static final Mutex emojiLoadingMutex = vs.f.b(false, 1, null);
+    private static final Mutex emojiLoadingMutex = xs.f.b(false, 1, null);
     private static Map<String, ? extends List<Emoji>> emojis;
 
+    @ft.m
     @Metadata(d1 = {"\u0000B\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010 \n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 \"2\u00020\u0001:\u0002!\"B\u001d\u0012\f\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0004¢\u0006\u0004\b\u0006\u0010\u0007B5\b\u0010\u0012\u0006\u0010\b\u001a\u00020\t\u0012\u000e\u0010\u0002\u001a\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u0003\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0004\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u000b¢\u0006\u0004\b\u0006\u0010\fJ\u000f\u0010\u0011\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003HÆ\u0003J\t\u0010\u0012\u001a\u00020\u0004HÆ\u0003J#\u0010\u0013\u001a\u00020\u00002\u000e\b\u0002\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u00032\b\b\u0002\u0010\u0005\u001a\u00020\u0004HÆ\u0001J\u0013\u0010\u0014\u001a\u00020\u00152\b\u0010\u0016\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u0017\u001a\u00020\tHÖ\u0001J\t\u0010\u0018\u001a\u00020\u0004HÖ\u0001J%\u0010\u0019\u001a\u00020\u001a2\u0006\u0010\u001b\u001a\u00020\u00002\u0006\u0010\u001c\u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\u001fH\u0001¢\u0006\u0002\b R\u0017\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\u000eR\u0011\u0010\u0005\u001a\u00020\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u0010¨\u0006#"}, d2 = {"Lcom/discord/emoji/UnicodeEmojis$Emoji;", "", "names", "", "", "surrogates", "<init>", "(Ljava/util/List;Ljava/lang/String;)V", "seen0", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/util/List;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "getNames", "()Ljava/util/List;", "getSurrogates", "()Ljava/lang/String;", "component1", "component2", "copy", "equals", "", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$emoji_release", "$serializer", "Companion", "emoji_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
-    @dt.m
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class Emoji {
         @NotNull
@@ -59,7 +59,7 @@ public final class UnicodeEmojis {
         @NotNull
         public static final Companion Companion = new Companion(null);
         @NotNull
-        private static final Lazy[] $childSerializers = {or.l.b(o.f44232e, new Function0() { // from class: com.discord.emoji.e
+        private static final Lazy[] $childSerializers = {qr.l.b(o.f48044e, new Function0() { // from class: com.discord.emoji.e
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 KSerializer _childSerializers$_anonymous_;
@@ -94,7 +94,7 @@ public final class UnicodeEmojis {
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final /* synthetic */ KSerializer _childSerializers$_anonymous_() {
-            return new gt.f(n2.f25302a);
+            return new jt.f(n2.f31041a);
         }
 
         /* JADX WARN: Multi-variable type inference failed */
@@ -109,8 +109,8 @@ public final class UnicodeEmojis {
         }
 
         public static final /* synthetic */ void write$Self$emoji_release(Emoji emoji, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
-            compositeEncoder.l(serialDescriptor, 0, (dt.o) $childSerializers[0].getValue(), emoji.names);
-            compositeEncoder.x(serialDescriptor, 1, emoji.surrogates);
+            compositeEncoder.s(serialDescriptor, 0, (ft.o) $childSerializers[0].getValue(), emoji.names);
+            compositeEncoder.z(serialDescriptor, 1, emoji.surrogates);
         }
 
         @NotNull
@@ -170,8 +170,8 @@ public final class UnicodeEmojis {
         }
     }
 
+    @ft.m
     @Metadata(d1 = {"\u0000N\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u000b\n\u0002\u0010$\n\u0002\u0010\u000e\n\u0002\b\n\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 62\u00020\u0001:\u000256Bw\u0012\f\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003\u0012\f\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003\u0012\f\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003\u0012\f\u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003\u0012\f\u0010\b\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003\u0012\f\u0010\t\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003\u0012\f\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003\u0012\f\u0010\u000b\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003¢\u0006\u0004\b\f\u0010\rB\u009b\u0001\b\u0010\u0012\u0006\u0010\u000e\u001a\u00020\u000f\u0012\u000e\u0010\u0002\u001a\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u0003\u0012\u000e\u0010\u0005\u001a\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u0003\u0012\u000e\u0010\u0006\u001a\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u0003\u0012\u000e\u0010\u0007\u001a\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u0003\u0012\u000e\u0010\b\u001a\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u0003\u0012\u000e\u0010\t\u001a\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u0003\u0012\u000e\u0010\n\u001a\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u0003\u0012\u000e\u0010\u000b\u001a\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u0003\u0012\b\u0010\u0010\u001a\u0004\u0018\u00010\u0011¢\u0006\u0004\b\f\u0010\u0012J\u0018\u0010\u001c\u001a\u0014\u0012\u0004\u0012\u00020\u001e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00040\u00030\u001dJ\u000f\u0010\u001f\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003HÆ\u0003J\u000f\u0010 \u001a\b\u0012\u0004\u0012\u00020\u00040\u0003HÆ\u0003J\u000f\u0010!\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003HÆ\u0003J\u000f\u0010\"\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003HÆ\u0003J\u000f\u0010#\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003HÆ\u0003J\u000f\u0010$\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003HÆ\u0003J\u000f\u0010%\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003HÆ\u0003J\u000f\u0010&\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003HÆ\u0003J\u0089\u0001\u0010'\u001a\u00020\u00002\u000e\b\u0002\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u00032\u000e\b\u0002\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00040\u00032\u000e\b\u0002\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\u00040\u00032\u000e\b\u0002\u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\u00040\u00032\u000e\b\u0002\u0010\b\u001a\b\u0012\u0004\u0012\u00020\u00040\u00032\u000e\b\u0002\u0010\t\u001a\b\u0012\u0004\u0012\u00020\u00040\u00032\u000e\b\u0002\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u00040\u00032\u000e\b\u0002\u0010\u000b\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003HÆ\u0001J\u0013\u0010(\u001a\u00020)2\b\u0010*\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010+\u001a\u00020\u000fHÖ\u0001J\t\u0010,\u001a\u00020\u001eHÖ\u0001J%\u0010-\u001a\u00020.2\u0006\u0010/\u001a\u00020\u00002\u0006\u00100\u001a\u0002012\u0006\u00102\u001a\u000203H\u0001¢\u0006\u0002\b4R\u0017\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u0014R\u0017\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0014R\u0017\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0016\u0010\u0014R\u0017\u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0014R\u0017\u0010\b\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0018\u0010\u0014R\u0017\u0010\t\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0019\u0010\u0014R\u0017\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u001a\u0010\u0014R\u0017\u0010\u000b\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u001b\u0010\u0014¨\u00067"}, d2 = {"Lcom/discord/emoji/UnicodeEmojis$EmojiCategories;", "", "people", "", "Lcom/discord/emoji/UnicodeEmojis$Emoji;", "nature", "food", "activity", "travel", "objects", "symbols", "flags", "<init>", "(Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;)V", "seen0", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "getPeople", "()Ljava/util/List;", "getNature", "getFood", "getActivity", "getTravel", "getObjects", "getSymbols", "getFlags", "toMap", "", "", "component1", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "copy", "equals", "", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$emoji_release", "$serializer", "Companion", "emoji_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
-    @dt.m
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class EmojiCategories {
         @NotNull
@@ -212,57 +212,57 @@ public final class UnicodeEmojis {
         }
 
         static {
-            o oVar = o.f44232e;
-            $childSerializers = new Lazy[]{or.l.b(oVar, new Function0() { // from class: com.discord.emoji.f
+            o oVar = o.f48044e;
+            $childSerializers = new Lazy[]{qr.l.b(oVar, new Function0() { // from class: com.discord.emoji.f
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
                     KSerializer _childSerializers$_anonymous_;
                     _childSerializers$_anonymous_ = UnicodeEmojis.EmojiCategories._childSerializers$_anonymous_();
                     return _childSerializers$_anonymous_;
                 }
-            }), or.l.b(oVar, new Function0() { // from class: com.discord.emoji.g
+            }), qr.l.b(oVar, new Function0() { // from class: com.discord.emoji.g
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
                     KSerializer _childSerializers$_anonymous_$0;
                     _childSerializers$_anonymous_$0 = UnicodeEmojis.EmojiCategories._childSerializers$_anonymous_$0();
                     return _childSerializers$_anonymous_$0;
                 }
-            }), or.l.b(oVar, new Function0() { // from class: com.discord.emoji.h
+            }), qr.l.b(oVar, new Function0() { // from class: com.discord.emoji.h
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
                     KSerializer _childSerializers$_anonymous_$1;
                     _childSerializers$_anonymous_$1 = UnicodeEmojis.EmojiCategories._childSerializers$_anonymous_$1();
                     return _childSerializers$_anonymous_$1;
                 }
-            }), or.l.b(oVar, new Function0() { // from class: com.discord.emoji.i
+            }), qr.l.b(oVar, new Function0() { // from class: com.discord.emoji.i
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
                     KSerializer _childSerializers$_anonymous_$2;
                     _childSerializers$_anonymous_$2 = UnicodeEmojis.EmojiCategories._childSerializers$_anonymous_$2();
                     return _childSerializers$_anonymous_$2;
                 }
-            }), or.l.b(oVar, new Function0() { // from class: com.discord.emoji.j
+            }), qr.l.b(oVar, new Function0() { // from class: com.discord.emoji.j
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
                     KSerializer _childSerializers$_anonymous_$3;
                     _childSerializers$_anonymous_$3 = UnicodeEmojis.EmojiCategories._childSerializers$_anonymous_$3();
                     return _childSerializers$_anonymous_$3;
                 }
-            }), or.l.b(oVar, new Function0() { // from class: com.discord.emoji.k
+            }), qr.l.b(oVar, new Function0() { // from class: com.discord.emoji.k
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
                     KSerializer _childSerializers$_anonymous_$4;
                     _childSerializers$_anonymous_$4 = UnicodeEmojis.EmojiCategories._childSerializers$_anonymous_$4();
                     return _childSerializers$_anonymous_$4;
                 }
-            }), or.l.b(oVar, new Function0() { // from class: com.discord.emoji.l
+            }), qr.l.b(oVar, new Function0() { // from class: com.discord.emoji.l
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
                     KSerializer _childSerializers$_anonymous_$5;
                     _childSerializers$_anonymous_$5 = UnicodeEmojis.EmojiCategories._childSerializers$_anonymous_$5();
                     return _childSerializers$_anonymous_$5;
                 }
-            }), or.l.b(oVar, new Function0() { // from class: com.discord.emoji.m
+            }), qr.l.b(oVar, new Function0() { // from class: com.discord.emoji.m
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
                     KSerializer _childSerializers$_anonymous_$6;
@@ -288,42 +288,42 @@ public final class UnicodeEmojis {
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final /* synthetic */ KSerializer _childSerializers$_anonymous_() {
-            return new gt.f(UnicodeEmojis$Emoji$$serializer.INSTANCE);
+            return new jt.f(UnicodeEmojis$Emoji$$serializer.INSTANCE);
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final /* synthetic */ KSerializer _childSerializers$_anonymous_$0() {
-            return new gt.f(UnicodeEmojis$Emoji$$serializer.INSTANCE);
+            return new jt.f(UnicodeEmojis$Emoji$$serializer.INSTANCE);
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final /* synthetic */ KSerializer _childSerializers$_anonymous_$1() {
-            return new gt.f(UnicodeEmojis$Emoji$$serializer.INSTANCE);
+            return new jt.f(UnicodeEmojis$Emoji$$serializer.INSTANCE);
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final /* synthetic */ KSerializer _childSerializers$_anonymous_$2() {
-            return new gt.f(UnicodeEmojis$Emoji$$serializer.INSTANCE);
+            return new jt.f(UnicodeEmojis$Emoji$$serializer.INSTANCE);
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final /* synthetic */ KSerializer _childSerializers$_anonymous_$3() {
-            return new gt.f(UnicodeEmojis$Emoji$$serializer.INSTANCE);
+            return new jt.f(UnicodeEmojis$Emoji$$serializer.INSTANCE);
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final /* synthetic */ KSerializer _childSerializers$_anonymous_$4() {
-            return new gt.f(UnicodeEmojis$Emoji$$serializer.INSTANCE);
+            return new jt.f(UnicodeEmojis$Emoji$$serializer.INSTANCE);
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final /* synthetic */ KSerializer _childSerializers$_anonymous_$5() {
-            return new gt.f(UnicodeEmojis$Emoji$$serializer.INSTANCE);
+            return new jt.f(UnicodeEmojis$Emoji$$serializer.INSTANCE);
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final /* synthetic */ KSerializer _childSerializers$_anonymous_$6() {
-            return new gt.f(UnicodeEmojis$Emoji$$serializer.INSTANCE);
+            return new jt.f(UnicodeEmojis$Emoji$$serializer.INSTANCE);
         }
 
         public static /* synthetic */ EmojiCategories copy$default(EmojiCategories emojiCategories, List list, List list2, List list3, List list4, List list5, List list6, List list7, List list8, int i10, Object obj) {
@@ -368,14 +368,14 @@ public final class UnicodeEmojis {
 
         public static final /* synthetic */ void write$Self$emoji_release(EmojiCategories emojiCategories, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
             Lazy[] lazyArr = $childSerializers;
-            compositeEncoder.l(serialDescriptor, 0, (dt.o) lazyArr[0].getValue(), emojiCategories.people);
-            compositeEncoder.l(serialDescriptor, 1, (dt.o) lazyArr[1].getValue(), emojiCategories.nature);
-            compositeEncoder.l(serialDescriptor, 2, (dt.o) lazyArr[2].getValue(), emojiCategories.food);
-            compositeEncoder.l(serialDescriptor, 3, (dt.o) lazyArr[3].getValue(), emojiCategories.activity);
-            compositeEncoder.l(serialDescriptor, 4, (dt.o) lazyArr[4].getValue(), emojiCategories.travel);
-            compositeEncoder.l(serialDescriptor, 5, (dt.o) lazyArr[5].getValue(), emojiCategories.objects);
-            compositeEncoder.l(serialDescriptor, 6, (dt.o) lazyArr[6].getValue(), emojiCategories.symbols);
-            compositeEncoder.l(serialDescriptor, 7, (dt.o) lazyArr[7].getValue(), emojiCategories.flags);
+            compositeEncoder.s(serialDescriptor, 0, (ft.o) lazyArr[0].getValue(), emojiCategories.people);
+            compositeEncoder.s(serialDescriptor, 1, (ft.o) lazyArr[1].getValue(), emojiCategories.nature);
+            compositeEncoder.s(serialDescriptor, 2, (ft.o) lazyArr[2].getValue(), emojiCategories.food);
+            compositeEncoder.s(serialDescriptor, 3, (ft.o) lazyArr[3].getValue(), emojiCategories.activity);
+            compositeEncoder.s(serialDescriptor, 4, (ft.o) lazyArr[4].getValue(), emojiCategories.travel);
+            compositeEncoder.s(serialDescriptor, 5, (ft.o) lazyArr[5].getValue(), emojiCategories.objects);
+            compositeEncoder.s(serialDescriptor, 6, (ft.o) lazyArr[6].getValue(), emojiCategories.symbols);
+            compositeEncoder.s(serialDescriptor, 7, (ft.o) lazyArr[7].getValue(), emojiCategories.flags);
         }
 
         @NotNull
@@ -531,12 +531,12 @@ public final class UnicodeEmojis {
     public static final Unit emojiJsonParser$lambda$0(JsonBuilder Json) {
         Intrinsics.checkNotNullParameter(Json, "$this$Json");
         Json.c(true);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final Object loadData(Context context, Continuation<? super EmojiCategories> continuation) {
-        return ms.g.g(m0.b(), new UnicodeEmojis$loadData$2(context, null), continuation);
+        return os.g.g(m0.b(), new UnicodeEmojis$loadData$2(context, null), continuation);
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:21:0x0058, code lost:
@@ -570,7 +570,7 @@ public final class UnicodeEmojis {
             r0.<init>(r7, r9)
         L18:
             java.lang.Object r9 = r0.result
-            java.lang.Object r1 = ur.b.f()
+            java.lang.Object r1 = wr.b.f()
             int r2 = r0.label
             r3 = 2
             r4 = 1

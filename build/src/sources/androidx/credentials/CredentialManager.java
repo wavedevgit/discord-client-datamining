@@ -21,13 +21,13 @@ import kotlinx.coroutines.CancellableContinuation;
 public interface CredentialManager {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f3612a = a.f3613a;
+    public static final a f3941a = a.f3942a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ a f3613a = new a();
+        static final /* synthetic */ a f3942a = new a();
 
         private a() {
         }
@@ -43,22 +43,22 @@ public interface CredentialManager {
     public static final class b extends Lambda implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ CancellationSignal f3614d;
+        final /* synthetic */ CancellationSignal f3943d;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         b(CancellationSignal cancellationSignal) {
             super(1);
-            this.f3614d = cancellationSignal;
+            this.f3943d = cancellationSignal;
         }
 
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((Throwable) obj);
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
 
         public final void invoke(Throwable th2) {
-            this.f3614d.cancel();
+            this.f3943d.cancel();
         }
     }
 
@@ -66,19 +66,19 @@ public interface CredentialManager {
     public static final class c implements j {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ CancellableContinuation f3615a;
+        final /* synthetic */ CancellableContinuation f3944a;
 
         c(CancellableContinuation cancellableContinuation) {
-            this.f3615a = cancellableContinuation;
+            this.f3944a = cancellableContinuation;
         }
 
         @Override // g2.j
         /* renamed from: b */
         public void a(h2.e e10) {
             Intrinsics.checkNotNullParameter(e10, "e");
-            if (this.f3615a.a()) {
-                CancellableContinuation cancellableContinuation = this.f3615a;
-                Result.a aVar = Result.f31985e;
+            if (this.f3944a.a()) {
+                CancellableContinuation cancellableContinuation = this.f3944a;
+                Result.a aVar = Result.f32005e;
                 cancellableContinuation.resumeWith(Result.b(kotlin.c.a(e10)));
             }
         }
@@ -87,8 +87,8 @@ public interface CredentialManager {
         /* renamed from: c */
         public void onResult(g2.c result) {
             Intrinsics.checkNotNullParameter(result, "result");
-            if (this.f3615a.a()) {
-                this.f3615a.resumeWith(Result.b(result));
+            if (this.f3944a.a()) {
+                this.f3944a.resumeWith(Result.b(result));
             }
         }
     }
@@ -98,22 +98,22 @@ public interface CredentialManager {
     public static final class d extends Lambda implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ CancellationSignal f3616d;
+        final /* synthetic */ CancellationSignal f3945d;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         d(CancellationSignal cancellationSignal) {
             super(1);
-            this.f3616d = cancellationSignal;
+            this.f3945d = cancellationSignal;
         }
 
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((Throwable) obj);
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
 
         public final void invoke(Throwable th2) {
-            this.f3616d.cancel();
+            this.f3945d.cancel();
         }
     }
 
@@ -121,19 +121,19 @@ public interface CredentialManager {
     public static final class e implements j {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ CancellableContinuation f3617a;
+        final /* synthetic */ CancellableContinuation f3946a;
 
         e(CancellableContinuation cancellableContinuation) {
-            this.f3617a = cancellableContinuation;
+            this.f3946a = cancellableContinuation;
         }
 
         @Override // g2.j
         /* renamed from: b */
         public void a(m e10) {
             Intrinsics.checkNotNullParameter(e10, "e");
-            if (this.f3617a.a()) {
-                CancellableContinuation cancellableContinuation = this.f3617a;
-                Result.a aVar = Result.f31985e;
+            if (this.f3946a.a()) {
+                CancellableContinuation cancellableContinuation = this.f3946a;
+                Result.a aVar = Result.f32005e;
                 cancellableContinuation.resumeWith(Result.b(kotlin.c.a(e10)));
             }
         }
@@ -142,33 +142,33 @@ public interface CredentialManager {
         /* renamed from: c */
         public void onResult(d0 result) {
             Intrinsics.checkNotNullParameter(result, "result");
-            if (this.f3617a.a()) {
-                this.f3617a.resumeWith(Result.b(result));
+            if (this.f3946a.a()) {
+                this.f3946a.resumeWith(Result.b(result));
             }
         }
     }
 
     static /* synthetic */ Object d(CredentialManager credentialManager, Context context, g2.b bVar, Continuation continuation) {
-        kotlinx.coroutines.e eVar = new kotlinx.coroutines.e(ur.b.c(continuation), 1);
+        kotlinx.coroutines.e eVar = new kotlinx.coroutines.e(wr.b.c(continuation), 1);
         eVar.H();
         CancellationSignal cancellationSignal = new CancellationSignal();
         eVar.c(new b(cancellationSignal));
         credentialManager.e(context, bVar, cancellationSignal, new i(), new c(eVar));
         Object B = eVar.B();
-        if (B == ur.b.f()) {
+        if (B == wr.b.f()) {
             g.c(continuation);
         }
         return B;
     }
 
     static /* synthetic */ Object f(CredentialManager credentialManager, Context context, c0 c0Var, Continuation continuation) {
-        kotlinx.coroutines.e eVar = new kotlinx.coroutines.e(ur.b.c(continuation), 1);
+        kotlinx.coroutines.e eVar = new kotlinx.coroutines.e(wr.b.c(continuation), 1);
         eVar.H();
         CancellationSignal cancellationSignal = new CancellationSignal();
         eVar.c(new d(cancellationSignal));
         credentialManager.b(context, c0Var, cancellationSignal, new i(), new e(eVar));
         Object B = eVar.B();
-        if (B == ur.b.f()) {
+        if (B == wr.b.f()) {
             g.c(continuation);
         }
         return B;

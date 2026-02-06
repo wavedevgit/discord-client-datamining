@@ -6,37 +6,37 @@ import zb.o;
 final class d extends o {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f55338a;
+    private final String f56069a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final byte[] f55339b;
+    private final byte[] f56070b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final xb.e f55340c;
+    private final xb.e f56071c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     static final class b extends o.a {
 
         /* renamed from: a  reason: collision with root package name */
-        private String f55341a;
+        private String f56072a;
 
         /* renamed from: b  reason: collision with root package name */
-        private byte[] f55342b;
+        private byte[] f56073b;
 
         /* renamed from: c  reason: collision with root package name */
-        private xb.e f55343c;
+        private xb.e f56074c;
 
         @Override // zb.o.a
         public o a() {
             String str = "";
-            if (this.f55341a == null) {
+            if (this.f56072a == null) {
                 str = " backendName";
             }
-            if (this.f55343c == null) {
+            if (this.f56074c == null) {
                 str = str + " priority";
             }
             if (str.isEmpty()) {
-                return new d(this.f55341a, this.f55342b, this.f55343c);
+                return new d(this.f56072a, this.f56073b, this.f56074c);
             }
             throw new IllegalStateException("Missing required properties:" + str);
         }
@@ -44,7 +44,7 @@ final class d extends o {
         @Override // zb.o.a
         public o.a b(String str) {
             if (str != null) {
-                this.f55341a = str;
+                this.f56072a = str;
                 return this;
             }
             throw new NullPointerException("Null backendName");
@@ -52,14 +52,14 @@ final class d extends o {
 
         @Override // zb.o.a
         public o.a c(byte[] bArr) {
-            this.f55342b = bArr;
+            this.f56073b = bArr;
             return this;
         }
 
         @Override // zb.o.a
         public o.a d(xb.e eVar) {
             if (eVar != null) {
-                this.f55343c = eVar;
+                this.f56074c = eVar;
                 return this;
             }
             throw new NullPointerException("Null priority");
@@ -68,17 +68,17 @@ final class d extends o {
 
     @Override // zb.o
     public String b() {
-        return this.f55338a;
+        return this.f56069a;
     }
 
     @Override // zb.o
     public byte[] c() {
-        return this.f55339b;
+        return this.f56070b;
     }
 
     @Override // zb.o
     public xb.e d() {
-        return this.f55340c;
+        return this.f56071c;
     }
 
     public boolean equals(Object obj) {
@@ -88,14 +88,14 @@ final class d extends o {
         }
         if (obj instanceof o) {
             o oVar = (o) obj;
-            if (this.f55338a.equals(oVar.b())) {
-                byte[] bArr = this.f55339b;
+            if (this.f56069a.equals(oVar.b())) {
+                byte[] bArr = this.f56070b;
                 if (oVar instanceof d) {
-                    c10 = ((d) oVar).f55339b;
+                    c10 = ((d) oVar).f56070b;
                 } else {
                     c10 = oVar.c();
                 }
-                if (Arrays.equals(bArr, c10) && this.f55340c.equals(oVar.d())) {
+                if (Arrays.equals(bArr, c10) && this.f56071c.equals(oVar.d())) {
                     return true;
                 }
             }
@@ -104,12 +104,12 @@ final class d extends o {
     }
 
     public int hashCode() {
-        return ((((this.f55338a.hashCode() ^ 1000003) * 1000003) ^ Arrays.hashCode(this.f55339b)) * 1000003) ^ this.f55340c.hashCode();
+        return ((((this.f56069a.hashCode() ^ 1000003) * 1000003) ^ Arrays.hashCode(this.f56070b)) * 1000003) ^ this.f56071c.hashCode();
     }
 
     private d(String str, byte[] bArr, xb.e eVar) {
-        this.f55338a = str;
-        this.f55339b = bArr;
-        this.f55340c = eVar;
+        this.f56069a = str;
+        this.f56070b = bArr;
+        this.f56071c = eVar;
     }
 }

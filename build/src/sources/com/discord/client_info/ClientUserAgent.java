@@ -32,7 +32,7 @@ public final class ClientUserAgent {
         @NotNull
         public Response intercept(@NotNull Interceptor.Chain chain) {
             Intrinsics.checkNotNullParameter(chain, "chain");
-            return chain.a(chain.h().k().i("User-Agent").a("User-Agent", this.userAgent).b());
+            return chain.a(chain.g().k().i("User-Agent").a("User-Agent", this.userAgent).b());
         }
     }
 

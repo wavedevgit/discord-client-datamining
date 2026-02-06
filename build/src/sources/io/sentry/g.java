@@ -12,221 +12,216 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public final class g implements IScope {
 
     /* renamed from: a  reason: collision with root package name */
-    private final IScope f28997a;
+    private final IScope f28141a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final IScope f28998b;
+    private final IScope f28142b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final IScope f28999c;
+    private final IScope f28143c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f29000a;
+        static final /* synthetic */ int[] f28144a;
 
         static {
             int[] iArr = new int[d4.values().length];
-            f29000a = iArr;
+            f28144a = iArr;
             try {
                 iArr[d4.CURRENT.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f29000a[d4.ISOLATION.ordinal()] = 2;
+                f28144a[d4.ISOLATION.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f29000a[d4.GLOBAL.ordinal()] = 3;
+                f28144a[d4.GLOBAL.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f29000a[d4.COMBINED.ordinal()] = 4;
+                f28144a[d4.COMBINED.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
         }
     }
 
     public g(IScope iScope, IScope iScope2, IScope iScope3) {
-        this.f28997a = iScope;
-        this.f28998b = iScope2;
-        this.f28999c = iScope3;
+        this.f28141a = iScope;
+        this.f28142b = iScope2;
+        this.f28143c = iScope3;
     }
 
     private IScope d() {
-        return g(null);
+        return i(null);
     }
 
     @Override // io.sentry.IScope
-    public io.sentry.protocol.c A() {
-        return new f(this.f28997a.A(), this.f28998b.A(), this.f28999c.A(), b().getDefaultScopeType());
+    public void A(String str, Object obj) {
+        d().A(str, obj);
     }
 
     @Override // io.sentry.IScope
-    public void B(String str, Object obj) {
-        d().B(str, obj);
+    public void B(e1 e1Var) {
+        d().B(e1Var);
     }
 
     @Override // io.sentry.IScope
-    public void C(e1 e1Var) {
-        d().C(e1Var);
+    public List C() {
+        List C = this.f28143c.C();
+        if (!C.isEmpty()) {
+            return C;
+        }
+        List C2 = this.f28142b.C();
+        if (!C2.isEmpty()) {
+            return C2;
+        }
+        return this.f28141a.C();
     }
 
     @Override // io.sentry.IScope
-    public List D() {
-        List D = this.f28999c.D();
-        if (!D.isEmpty()) {
+    public io.sentry.protocol.h0 D() {
+        io.sentry.protocol.h0 D = this.f28143c.D();
+        if (D != null) {
             return D;
         }
-        List D2 = this.f28998b.D();
-        if (!D2.isEmpty()) {
+        io.sentry.protocol.h0 D2 = this.f28142b.D();
+        if (D2 != null) {
             return D2;
         }
-        return this.f28997a.D();
+        return this.f28141a.D();
     }
 
     @Override // io.sentry.IScope
-    public io.sentry.protocol.h0 E() {
-        io.sentry.protocol.h0 E = this.f28999c.E();
+    public String E() {
+        String E = this.f28143c.E();
         if (E != null) {
             return E;
         }
-        io.sentry.protocol.h0 E2 = this.f28998b.E();
+        String E2 = this.f28142b.E();
         if (E2 != null) {
             return E2;
         }
-        return this.f28997a.E();
+        return this.f28141a.E();
     }
 
     @Override // io.sentry.IScope
-    public String F() {
-        String F = this.f28999c.F();
-        if (F != null) {
-            return F;
+    public void F() {
+        d().F();
+    }
+
+    @Override // io.sentry.IScope
+    public io.sentry.featureflags.b G() {
+        return io.sentry.featureflags.a.c(b(), this.f28141a.G(), this.f28142b.G(), this.f28143c.G());
+    }
+
+    @Override // io.sentry.IScope
+    public void H(y0 y0Var) {
+        d().H(y0Var);
+    }
+
+    @Override // io.sentry.IScope
+    public void I(String str) {
+        d().I(str);
+    }
+
+    @Override // io.sentry.IScope
+    public z7 J() {
+        z7 J = this.f28143c.J();
+        if (J != null) {
+            return J;
         }
-        String F2 = this.f28998b.F();
-        if (F2 != null) {
-            return F2;
+        z7 J2 = this.f28142b.J();
+        if (J2 != null) {
+            return J2;
         }
-        return this.f28997a.F();
+        return this.f28141a.J();
     }
 
     @Override // io.sentry.IScope
-    public void G() {
-        d().G();
-    }
-
-    @Override // io.sentry.IScope
-    public io.sentry.featureflags.b H() {
-        return io.sentry.featureflags.a.c(b(), this.f28997a.H(), this.f28998b.H(), this.f28999c.H());
-    }
-
-    @Override // io.sentry.IScope
-    public void I(y0 y0Var) {
-        d().I(y0Var);
-    }
-
-    @Override // io.sentry.IScope
-    public void J(String str) {
-        d().J(str);
-    }
-
-    @Override // io.sentry.IScope
-    public z7 K() {
-        z7 K = this.f28999c.K();
-        if (K != null) {
+    public io.sentry.protocol.x K() {
+        io.sentry.protocol.x K = this.f28143c.K();
+        io.sentry.protocol.x xVar = io.sentry.protocol.x.f28615e;
+        if (!xVar.equals(K)) {
             return K;
         }
-        z7 K2 = this.f28998b.K();
-        if (K2 != null) {
+        io.sentry.protocol.x K2 = this.f28142b.K();
+        if (!xVar.equals(K2)) {
             return K2;
         }
-        return this.f28997a.K();
+        return this.f28141a.K();
     }
 
     @Override // io.sentry.IScope
-    public io.sentry.protocol.x L() {
-        io.sentry.protocol.x L = this.f28999c.L();
-        io.sentry.protocol.x xVar = io.sentry.protocol.x.f29471e;
-        if (!xVar.equals(L)) {
-            return L;
+    public s3 L() {
+        return d().L();
+    }
+
+    @Override // io.sentry.IScope
+    public void M(String str) {
+        d().M(str);
+    }
+
+    @Override // io.sentry.IScope
+    public y0 N() {
+        y0 N = this.f28143c.N();
+        if (!(N instanceof s2)) {
+            return N;
         }
-        io.sentry.protocol.x L2 = this.f28998b.L();
-        if (!xVar.equals(L2)) {
-            return L2;
+        y0 N2 = this.f28142b.N();
+        if (!(N2 instanceof s2)) {
+            return N2;
         }
-        return this.f28997a.L();
+        return this.f28141a.N();
     }
 
     @Override // io.sentry.IScope
-    public s3 M() {
-        return d().M();
-    }
-
-    @Override // io.sentry.IScope
-    public void N(String str) {
-        d().N(str);
-    }
-
-    @Override // io.sentry.IScope
-    public y0 O() {
-        y0 O = this.f28999c.O();
-        if (!(O instanceof s2)) {
-            return O;
-        }
-        y0 O2 = this.f28998b.O();
-        if (!(O2 instanceof s2)) {
-            return O2;
-        }
-        return this.f28997a.O();
-    }
-
-    @Override // io.sentry.IScope
-    public List P() {
+    public List O() {
         CopyOnWriteArrayList copyOnWriteArrayList = new CopyOnWriteArrayList();
-        copyOnWriteArrayList.addAll(this.f28997a.P());
-        copyOnWriteArrayList.addAll(this.f28998b.P());
-        copyOnWriteArrayList.addAll(this.f28999c.P());
+        copyOnWriteArrayList.addAll(this.f28141a.O());
+        copyOnWriteArrayList.addAll(this.f28142b.O());
+        copyOnWriteArrayList.addAll(this.f28143c.O());
         return copyOnWriteArrayList;
     }
 
     @Override // io.sentry.IScope
-    public void Q(SentryEvent sentryEvent) {
-        this.f28997a.Q(sentryEvent);
+    public void P(SentryEvent sentryEvent) {
+        this.f28141a.P(sentryEvent);
     }
 
     @Override // io.sentry.IScope
-    public void R() {
-        d().R();
+    public void Q() {
+        d().Q();
     }
 
     @Override // io.sentry.IScope
-    public s3 S(z3.a aVar) {
-        return d().S(aVar);
+    public s3 R(z3.a aVar) {
+        return d().R(aVar);
     }
 
     @Override // io.sentry.IScope
-    public void T(z3.c cVar) {
-        d().T(cVar);
+    public void S(z3.c cVar) {
+        d().S(cVar);
     }
 
     @Override // io.sentry.IScope
-    public void U(io.sentry.protocol.x xVar) {
-        this.f28997a.U(xVar);
-        this.f28998b.U(xVar);
-        this.f28999c.U(xVar);
+    public void T(io.sentry.protocol.x xVar) {
+        this.f28141a.T(xVar);
+        this.f28142b.T(xVar);
+        this.f28143c.T(xVar);
     }
 
     @Override // io.sentry.IScope
-    public List V() {
-        return io.sentry.util.f.a(z());
+    public List U() {
+        return io.sentry.util.f.a(y());
     }
 
     @Override // io.sentry.IScope
-    public void W(s3 s3Var) {
-        d().W(s3Var);
+    public void V(s3 s3Var) {
+        d().V(s3Var);
     }
 
     @Override // io.sentry.IScope
@@ -236,20 +231,20 @@ public final class g implements IScope {
 
     @Override // io.sentry.IScope
     public k7 b() {
-        return this.f28997a.b();
+        return this.f28141a.b();
     }
 
     @Override // io.sentry.IScope
     public io.sentry.protocol.o c() {
-        io.sentry.protocol.o c10 = this.f28999c.c();
+        io.sentry.protocol.o c10 = this.f28143c.c();
         if (c10 != null) {
             return c10;
         }
-        io.sentry.protocol.o c11 = this.f28998b.c();
+        io.sentry.protocol.o c11 = this.f28142b.c();
         if (c11 != null) {
             return c11;
         }
-        return this.f28997a.c();
+        return this.f28141a.c();
     }
 
     @Override // io.sentry.IScope
@@ -267,10 +262,37 @@ public final class g implements IScope {
         d().f(str, str2);
     }
 
+    @Override // io.sentry.IScope
+    public String g() {
+        String g10 = this.f28143c.g();
+        if (g10 != null) {
+            return g10;
+        }
+        String g11 = this.f28142b.g();
+        if (g11 != null) {
+            return g11;
+        }
+        return this.f28141a.g();
+    }
+
+    @Override // io.sentry.IScope
+    public Map getExtras() {
+        ConcurrentHashMap concurrentHashMap = new ConcurrentHashMap();
+        concurrentHashMap.putAll(this.f28141a.getExtras());
+        concurrentHashMap.putAll(this.f28142b.getExtras());
+        concurrentHashMap.putAll(this.f28143c.getExtras());
+        return concurrentHashMap;
+    }
+
+    @Override // io.sentry.IScope
+    public void h(Breadcrumb breadcrumb, Hint hint) {
+        d().h(breadcrumb, hint);
+    }
+
     /* JADX INFO: Access modifiers changed from: package-private */
-    public IScope g(d4 d4Var) {
+    public IScope i(d4 d4Var) {
         if (d4Var != null) {
-            int i10 = a.f29000a[d4Var.ordinal()];
+            int i10 = a.f28144a[d4Var.ordinal()];
             if (i10 != 1) {
                 if (i10 != 2) {
                     if (i10 != 3) {
@@ -278,178 +300,156 @@ public final class g implements IScope {
                             return this;
                         }
                     } else {
-                        return this.f28997a;
+                        return this.f28141a;
                     }
                 } else {
-                    return this.f28998b;
+                    return this.f28142b;
                 }
             } else {
-                return this.f28999c;
+                return this.f28143c;
             }
         }
-        int i11 = a.f29000a[b().getDefaultScopeType().ordinal()];
+        int i11 = a.f28144a[b().getDefaultScopeType().ordinal()];
         if (i11 != 1) {
             if (i11 != 2) {
                 if (i11 != 3) {
-                    return this.f28999c;
+                    return this.f28143c;
                 }
-                return this.f28997a;
+                return this.f28141a;
             }
-            return this.f28998b;
+            return this.f28142b;
         }
-        return this.f28999c;
+        return this.f28143c;
     }
 
     @Override // io.sentry.IScope
-    public Map getExtras() {
-        ConcurrentHashMap concurrentHashMap = new ConcurrentHashMap();
-        concurrentHashMap.putAll(this.f28997a.getExtras());
-        concurrentHashMap.putAll(this.f28998b.getExtras());
-        concurrentHashMap.putAll(this.f28999c.getExtras());
-        return concurrentHashMap;
+    public void j(Throwable th2, ISpan iSpan, String str) {
+        this.f28141a.j(th2, iSpan, str);
     }
 
     @Override // io.sentry.IScope
-    public String h() {
-        String h10 = this.f28999c.h();
-        if (h10 != null) {
-            return h10;
+    public void k(io.sentry.protocol.h0 h0Var) {
+        d().k(h0Var);
+    }
+
+    @Override // io.sentry.IScope
+    public e1 l() {
+        e1 l10 = this.f28143c.l();
+        if (l10 != null) {
+            return l10;
         }
-        String h11 = this.f28998b.h();
-        if (h11 != null) {
-            return h11;
+        e1 l11 = this.f28142b.l();
+        if (l11 != null) {
+            return l11;
         }
-        return this.f28997a.h();
+        return this.f28141a.l();
     }
 
     @Override // io.sentry.IScope
-    public void i(Breadcrumb breadcrumb, Hint hint) {
-        d().i(breadcrumb, hint);
+    public z7 m() {
+        return d().m();
     }
 
     @Override // io.sentry.IScope
-    public void k(Throwable th2, ISpan iSpan, String str) {
-        this.f28997a.k(th2, iSpan, str);
-    }
-
-    @Override // io.sentry.IScope
-    public void l(io.sentry.protocol.h0 h0Var) {
-        d().l(h0Var);
-    }
-
-    @Override // io.sentry.IScope
-    public e1 m() {
-        e1 m10 = this.f28999c.m();
-        if (m10 != null) {
-            return m10;
+    public SentryLevel n() {
+        SentryLevel n10 = this.f28143c.n();
+        if (n10 != null) {
+            return n10;
         }
-        e1 m11 = this.f28998b.m();
-        if (m11 != null) {
-            return m11;
+        SentryLevel n11 = this.f28142b.n();
+        if (n11 != null) {
+            return n11;
         }
-        return this.f28997a.m();
+        return this.f28141a.n();
     }
 
     @Override // io.sentry.IScope
-    public z7 n() {
-        return d().n();
+    public io.sentry.protocol.g o() {
+        return G().o();
     }
 
     @Override // io.sentry.IScope
-    public SentryLevel o() {
-        SentryLevel o10 = this.f28999c.o();
-        if (o10 != null) {
-            return o10;
+    public void p(io.sentry.protocol.x xVar) {
+        d().p(xVar);
+    }
+
+    @Override // io.sentry.IScope
+    public z3.d q() {
+        return d().q();
+    }
+
+    @Override // io.sentry.IScope
+    public void r(k7 k7Var) {
+        this.f28141a.r(k7Var);
+    }
+
+    @Override // io.sentry.IScope
+    public ISpan s() {
+        ISpan s10 = this.f28143c.s();
+        if (s10 != null) {
+            return s10;
         }
-        SentryLevel o11 = this.f28998b.o();
-        if (o11 != null) {
-            return o11;
+        ISpan s11 = this.f28142b.s();
+        if (s11 != null) {
+            return s11;
         }
-        return this.f28997a.o();
+        return this.f28141a.s();
     }
 
     @Override // io.sentry.IScope
-    public io.sentry.protocol.g p() {
-        return H().p();
-    }
-
-    @Override // io.sentry.IScope
-    public void q(io.sentry.protocol.x xVar) {
-        d().q(xVar);
-    }
-
-    @Override // io.sentry.IScope
-    public z3.d r() {
-        return d().r();
-    }
-
-    @Override // io.sentry.IScope
-    public void s(k7 k7Var) {
-        this.f28997a.s(k7Var);
-    }
-
-    @Override // io.sentry.IScope
-    public ISpan t() {
-        ISpan t10 = this.f28999c.t();
-        if (t10 != null) {
-            return t10;
-        }
-        ISpan t11 = this.f28998b.t();
-        if (t11 != null) {
-            return t11;
-        }
-        return this.f28997a.t();
-    }
-
-    @Override // io.sentry.IScope
-    public Queue u() {
+    public Queue t() {
         ArrayList arrayList = new ArrayList();
-        arrayList.addAll(this.f28997a.u());
-        arrayList.addAll(this.f28998b.u());
-        arrayList.addAll(this.f28999c.u());
+        arrayList.addAll(this.f28141a.t());
+        arrayList.addAll(this.f28142b.t());
+        arrayList.addAll(this.f28143c.t());
         Collections.sort(arrayList);
-        Queue g10 = z3.g(this.f28999c.b().getMaxBreadcrumbs());
-        g10.addAll(arrayList);
-        return g10;
+        Queue i10 = z3.i(this.f28143c.b().getMaxBreadcrumbs());
+        i10.addAll(arrayList);
+        return i10;
     }
 
     @Override // io.sentry.IScope
-    public void v(List list) {
-        d().v(list);
+    public void u(List list) {
+        d().u(list);
     }
 
     @Override // io.sentry.IScope
-    public z7 w(z3.b bVar) {
-        return d().w(bVar);
+    public z7 v(z3.b bVar) {
+        return d().v(bVar);
     }
 
     @Override // io.sentry.IScope
-    public Map x() {
+    public Map w() {
         ConcurrentHashMap concurrentHashMap = new ConcurrentHashMap();
-        concurrentHashMap.putAll(this.f28997a.x());
-        concurrentHashMap.putAll(this.f28998b.x());
-        concurrentHashMap.putAll(this.f28999c.x());
+        concurrentHashMap.putAll(this.f28141a.w());
+        concurrentHashMap.putAll(this.f28142b.w());
+        concurrentHashMap.putAll(this.f28143c.w());
         return concurrentHashMap;
     }
 
     @Override // io.sentry.IScope
-    public void y() {
-        d().y();
+    public void x() {
+        d().x();
     }
 
     @Override // io.sentry.IScope
-    public List z() {
+    public List y() {
         CopyOnWriteArrayList copyOnWriteArrayList = new CopyOnWriteArrayList();
-        copyOnWriteArrayList.addAll(this.f28997a.z());
-        copyOnWriteArrayList.addAll(this.f28998b.z());
-        copyOnWriteArrayList.addAll(this.f28999c.z());
+        copyOnWriteArrayList.addAll(this.f28141a.y());
+        copyOnWriteArrayList.addAll(this.f28142b.y());
+        copyOnWriteArrayList.addAll(this.f28143c.y());
         Collections.sort(copyOnWriteArrayList);
         return copyOnWriteArrayList;
     }
 
     @Override // io.sentry.IScope
+    public io.sentry.protocol.c z() {
+        return new f(this.f28141a.z(), this.f28142b.z(), this.f28143c.z(), b().getDefaultScopeType());
+    }
+
+    @Override // io.sentry.IScope
     /* renamed from: clone */
     public IScope m1185clone() {
-        return new g(this.f28997a, this.f28998b.clone(), this.f28999c.clone());
+        return new g(this.f28141a, this.f28142b.clone(), this.f28143c.clone());
     }
 }

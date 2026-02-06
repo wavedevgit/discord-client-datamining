@@ -6,56 +6,56 @@ import java.util.HashMap;
 public final class r1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ArrayList f29524a = new ArrayList();
+    private final ArrayList f28668a = new ArrayList();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f29525a;
+        static final /* synthetic */ int[] f28669a;
 
         static {
             int[] iArr = new int[io.sentry.vendor.gson.stream.b.values().length];
-            f29525a = iArr;
+            f28669a = iArr;
             try {
                 iArr[io.sentry.vendor.gson.stream.b.BEGIN_ARRAY.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f29525a[io.sentry.vendor.gson.stream.b.END_ARRAY.ordinal()] = 2;
+                f28669a[io.sentry.vendor.gson.stream.b.END_ARRAY.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f29525a[io.sentry.vendor.gson.stream.b.BEGIN_OBJECT.ordinal()] = 3;
+                f28669a[io.sentry.vendor.gson.stream.b.BEGIN_OBJECT.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f29525a[io.sentry.vendor.gson.stream.b.END_OBJECT.ordinal()] = 4;
+                f28669a[io.sentry.vendor.gson.stream.b.END_OBJECT.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f29525a[io.sentry.vendor.gson.stream.b.NAME.ordinal()] = 5;
+                f28669a[io.sentry.vendor.gson.stream.b.NAME.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                f29525a[io.sentry.vendor.gson.stream.b.STRING.ordinal()] = 6;
+                f28669a[io.sentry.vendor.gson.stream.b.STRING.ordinal()] = 6;
             } catch (NoSuchFieldError unused6) {
             }
             try {
-                f29525a[io.sentry.vendor.gson.stream.b.NUMBER.ordinal()] = 7;
+                f28669a[io.sentry.vendor.gson.stream.b.NUMBER.ordinal()] = 7;
             } catch (NoSuchFieldError unused7) {
             }
             try {
-                f29525a[io.sentry.vendor.gson.stream.b.BOOLEAN.ordinal()] = 8;
+                f28669a[io.sentry.vendor.gson.stream.b.BOOLEAN.ordinal()] = 8;
             } catch (NoSuchFieldError unused8) {
             }
             try {
-                f29525a[io.sentry.vendor.gson.stream.b.NULL.ordinal()] = 9;
+                f28669a[io.sentry.vendor.gson.stream.b.NULL.ordinal()] = 9;
             } catch (NoSuchFieldError unused9) {
             }
             try {
-                f29525a[io.sentry.vendor.gson.stream.b.END_DOCUMENT.ordinal()] = 10;
+                f28669a[io.sentry.vendor.gson.stream.b.END_DOCUMENT.ordinal()] = 10;
             } catch (NoSuchFieldError unused10) {
             }
         }
@@ -78,15 +78,15 @@ public final class r1 {
     public static final class f implements c {
 
         /* renamed from: a  reason: collision with root package name */
-        final String f29528a;
+        final String f28672a;
 
         f(String str) {
-            this.f29528a = str;
+            this.f28672a = str;
         }
 
         @Override // io.sentry.r1.c
         public Object getValue() {
-            return this.f29528a;
+            return this.f28672a;
         }
     }
 
@@ -95,15 +95,15 @@ public final class r1 {
     public static final class g implements c {
 
         /* renamed from: a  reason: collision with root package name */
-        final Object f29529a;
+        final Object f28673a;
 
         g(Object obj) {
-            this.f29529a = obj;
+            this.f28673a = obj;
         }
 
         @Override // io.sentry.r1.c
         public Object getValue() {
-            return this.f29529a;
+            return this.f28673a;
         }
     }
 
@@ -112,10 +112,10 @@ public final class r1 {
     }
 
     private c f() {
-        if (this.f29524a.isEmpty()) {
+        if (this.f28668a.isEmpty()) {
             return null;
         }
-        ArrayList arrayList = this.f29524a;
+        ArrayList arrayList = this.f28668a;
         return (c) arrayList.get(arrayList.size() - 1);
     }
 
@@ -130,14 +130,14 @@ public final class r1 {
             l();
             e eVar = (e) f();
             if (fVar != null && f10 != null && eVar != null) {
-                eVar.f29527a.put(fVar.f29528a, f10.getValue());
+                eVar.f28671a.put(fVar.f28672a, f10.getValue());
                 return false;
             }
             return false;
         } else if (f() instanceof d) {
             d dVar = (d) f();
             if (f10 != null && dVar != null) {
-                dVar.f29526a.add(f10.getValue());
+                dVar.f28670a.add(f10.getValue());
                 return false;
             }
             return false;
@@ -153,10 +153,10 @@ public final class r1 {
             return true;
         } else if (f() instanceof f) {
             l();
-            ((e) f()).f29527a.put(((f) f()).f29528a, a10);
+            ((e) f()).f28671a.put(((f) f()).f28672a, a10);
             return false;
         } else if (f() instanceof d) {
-            ((d) f()).f29526a.add(a10);
+            ((d) f()).f28670a.add(a10);
             return false;
         } else {
             return false;
@@ -164,7 +164,7 @@ public final class r1 {
     }
 
     private boolean i() {
-        if (this.f29524a.size() == 1) {
+        if (this.f28668a.size() == 1) {
             return true;
         }
         return false;
@@ -186,36 +186,36 @@ public final class r1 {
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
     private void k(final s1 s1Var) {
         boolean z10;
-        switch (a.f29525a[s1Var.peek().ordinal()]) {
+        switch (a.f28669a[s1Var.peek().ordinal()]) {
             case 1:
-                s1Var.v();
+                s1Var.x();
                 m(new d(null));
                 z10 = false;
                 break;
             case 2:
-                s1Var.t();
+                s1Var.v();
                 z10 = g();
                 break;
             case 3:
-                s1Var.s();
+                s1Var.u();
                 m(new e(null));
                 z10 = false;
                 break;
             case 4:
-                s1Var.z();
+                s1Var.D();
                 z10 = g();
                 break;
             case 5:
-                m(new f(s1Var.m0()));
+                m(new f(s1Var.o0()));
                 z10 = false;
                 break;
             case 6:
                 z10 = h(new b() { // from class: io.sentry.n1
                     @Override // io.sentry.r1.b
                     public final Object a() {
-                        Object f12;
-                        f12 = s1.this.f1();
-                        return f12;
+                        Object e12;
+                        e12 = s1.this.e1();
+                        return e12;
                     }
                 });
                 break;
@@ -240,7 +240,7 @@ public final class r1 {
                 });
                 break;
             case 9:
-                s1Var.h();
+                s1Var.g();
                 z10 = h(new b() { // from class: io.sentry.q1
                     @Override // io.sentry.r1.b
                     public final Object a() {
@@ -261,15 +261,15 @@ public final class r1 {
     }
 
     private void l() {
-        if (this.f29524a.isEmpty()) {
+        if (this.f28668a.isEmpty()) {
             return;
         }
-        ArrayList arrayList = this.f29524a;
+        ArrayList arrayList = this.f28668a;
         arrayList.remove(arrayList.size() - 1);
     }
 
     private void m(c cVar) {
-        this.f29524a.add(cVar);
+        this.f28668a.add(cVar);
     }
 
     public Object e(s1 s1Var) {
@@ -286,15 +286,15 @@ public final class r1 {
     public static final class d implements c {
 
         /* renamed from: a  reason: collision with root package name */
-        final ArrayList f29526a;
+        final ArrayList f28670a;
 
         private d() {
-            this.f29526a = new ArrayList();
+            this.f28670a = new ArrayList();
         }
 
         @Override // io.sentry.r1.c
         public Object getValue() {
-            return this.f29526a;
+            return this.f28670a;
         }
 
         /* synthetic */ d(a aVar) {
@@ -307,15 +307,15 @@ public final class r1 {
     public static final class e implements c {
 
         /* renamed from: a  reason: collision with root package name */
-        final HashMap f29527a;
+        final HashMap f28671a;
 
         private e() {
-            this.f29527a = new HashMap();
+            this.f28671a = new HashMap();
         }
 
         @Override // io.sentry.r1.c
         public Object getValue() {
-            return this.f29527a;
+            return this.f28671a;
         }
 
         /* synthetic */ e(a aVar) {

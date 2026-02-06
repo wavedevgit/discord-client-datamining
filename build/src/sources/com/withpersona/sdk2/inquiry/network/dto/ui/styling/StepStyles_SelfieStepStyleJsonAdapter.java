@@ -117,7 +117,7 @@ public final class StepStyles_SelfieStepStyleJsonAdapter extends h {
     @NotNull
     public StepStyles.SelfieStepStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         AttributeStyles.HeaderButtonColorStyle headerButtonColorStyle = null;
         StepStyles.StepBackgroundColorStyle stepBackgroundColorStyle = null;
         StepStyles.StepBackgroundImageStyle stepBackgroundImageStyle = null;
@@ -135,10 +135,10 @@ public final class StepStyles_SelfieStepStyleJsonAdapter extends h {
         StepStyles.StepBorderRadiusStyle stepBorderRadiusStyle = null;
         StepStyles.CombinedStepAlignment combinedStepAlignment = null;
         while (reader.hasNext()) {
-            switch (reader.W(this.options)) {
+            switch (reader.J(this.options)) {
                 case -1:
                     reader.E0();
-                    reader.P();
+                    reader.S();
                     break;
                 case 0:
                     headerButtonColorStyle = (AttributeStyles.HeaderButtonColorStyle) this.nullableHeaderButtonColorStyleAdapter.fromJson(reader);
@@ -190,7 +190,7 @@ public final class StepStyles_SelfieStepStyleJsonAdapter extends h {
                     break;
             }
         }
-        reader.z();
+        reader.D();
         return new StepStyles.SelfieStepStyle(headerButtonColorStyle, stepBackgroundColorStyle, stepBackgroundImageStyle, selfieStepTitleComponentStyle, selfieStepTextBasedComponentStyle, stepPrimaryButtonComponentStyle, stepSecondaryButtonComponentStyle, stepTextBasedComponentStyle, selfieStepStrokeColor, selfieStepBorderColor, selfieStepBorderWidth, selfieStepFillColor, selfieStepImageLocalStyle, stepPaddingStyle, stepBorderRadiusStyle, combinedStepAlignment);
     }
 
@@ -199,39 +199,39 @@ public final class StepStyles_SelfieStepStyleJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (selfieStepStyle != null) {
             writer.k();
-            writer.W("textColor");
+            writer.J("textColor");
             this.nullableHeaderButtonColorStyleAdapter.toJson(writer, selfieStepStyle.getHeaderButtonColor());
-            writer.W(ViewProps.BACKGROUND_COLOR);
+            writer.J(ViewProps.BACKGROUND_COLOR);
             this.nullableStepBackgroundColorStyleAdapter.toJson(writer, selfieStepStyle.getBackgroundColor());
-            writer.W("backgroundImage");
+            writer.J("backgroundImage");
             this.nullableStepBackgroundImageStyleAdapter.toJson(writer, selfieStepStyle.getBackgroundImage());
-            writer.W("titleStyle");
+            writer.J("titleStyle");
             this.nullableSelfieStepTitleComponentStyleAdapter.toJson(writer, selfieStepStyle.getTitleStyle());
-            writer.W("textStyle");
+            writer.J("textStyle");
             this.nullableSelfieStepTextBasedComponentStyleAdapter.toJson(writer, selfieStepStyle.getTextStyle());
-            writer.W("buttonPrimaryStyle");
+            writer.J("buttonPrimaryStyle");
             this.nullableStepPrimaryButtonComponentStyleAdapter.toJson(writer, selfieStepStyle.getButtonPrimaryStyle());
-            writer.W("buttonSecondaryStyle");
+            writer.J("buttonSecondaryStyle");
             this.nullableStepSecondaryButtonComponentStyleAdapter.toJson(writer, selfieStepStyle.getButtonSecondaryStyle());
-            writer.W("disclaimerStyle");
+            writer.J("disclaimerStyle");
             this.nullableStepTextBasedComponentStyleAdapter.toJson(writer, selfieStepStyle.getDisclaimerStyle());
-            writer.W("strokeColor");
+            writer.J("strokeColor");
             this.nullableSelfieStepStrokeColorAdapter.toJson(writer, selfieStepStyle.getStrokeColor());
-            writer.W(ViewProps.BORDER_COLOR);
+            writer.J(ViewProps.BORDER_COLOR);
             this.nullableSelfieStepBorderColorAdapter.toJson(writer, selfieStepStyle.getBorderColor());
-            writer.W(ViewProps.BORDER_WIDTH);
+            writer.J(ViewProps.BORDER_WIDTH);
             this.nullableSelfieStepBorderWidthAdapter.toJson(writer, selfieStepStyle.getBorderWidth());
-            writer.W("fillColor");
+            writer.J("fillColor");
             this.nullableSelfieStepFillColorAdapter.toJson(writer, selfieStepStyle.getFillColor());
-            writer.W("imageLocalStyle");
+            writer.J("imageLocalStyle");
             this.nullableSelfieStepImageLocalStyleAdapter.toJson(writer, selfieStepStyle.getImageLocalStyle());
-            writer.W(ViewProps.PADDING);
+            writer.J(ViewProps.PADDING);
             this.nullableStepPaddingStyleAdapter.toJson(writer, selfieStepStyle.getPadding());
-            writer.W("borderRadius");
+            writer.J("borderRadius");
             this.nullableStepBorderRadiusStyleAdapter.toJson(writer, selfieStepStyle.getBorderRadius());
-            writer.W("alignment");
+            writer.J("alignment");
             this.nullableCombinedStepAlignmentAdapter.toJson(writer, selfieStepStyle.getAlignment());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

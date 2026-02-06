@@ -14,49 +14,49 @@ import java.util.Arrays;
 public class j extends Drawable implements h {
 
     /* renamed from: i  reason: collision with root package name */
-    float[] f10055i;
+    float[] f9954i;
 
     /* renamed from: d  reason: collision with root package name */
-    private final float[] f10053d = new float[8];
+    private final float[] f9952d = new float[8];
 
     /* renamed from: e  reason: collision with root package name */
-    final float[] f10054e = new float[8];
+    final float[] f9953e = new float[8];
 
     /* renamed from: o  reason: collision with root package name */
-    final Paint f10056o = new Paint(1);
+    final Paint f9955o = new Paint(1);
 
     /* renamed from: p  reason: collision with root package name */
-    private boolean f10057p = false;
+    private boolean f9956p = false;
 
     /* renamed from: q  reason: collision with root package name */
-    private float f10058q = 0.0f;
+    private float f9957q = 0.0f;
 
     /* renamed from: r  reason: collision with root package name */
-    private float f10059r = 0.0f;
+    private float f9958r = 0.0f;
 
     /* renamed from: s  reason: collision with root package name */
-    private int f10060s = 0;
+    private int f9959s = 0;
 
     /* renamed from: t  reason: collision with root package name */
-    private boolean f10061t = false;
+    private boolean f9960t = false;
 
     /* renamed from: u  reason: collision with root package name */
-    private boolean f10062u = false;
+    private boolean f9961u = false;
 
     /* renamed from: v  reason: collision with root package name */
-    final Path f10063v = new Path();
+    final Path f9962v = new Path();
 
     /* renamed from: w  reason: collision with root package name */
-    final Path f10064w = new Path();
+    final Path f9963w = new Path();
 
     /* renamed from: x  reason: collision with root package name */
-    private int f10065x = 0;
+    private int f9964x = 0;
 
     /* renamed from: y  reason: collision with root package name */
-    private final RectF f10066y = new RectF();
+    private final RectF f9965y = new RectF();
 
     /* renamed from: z  reason: collision with root package name */
-    private int f10067z = SetSpanOperation.SPAN_MAX_PRIORITY;
+    private int f9966z = SetSpanOperation.SPAN_MAX_PRIORITY;
 
     public j(int i10) {
         j(i10);
@@ -70,71 +70,71 @@ public class j extends Drawable implements h {
         float[] fArr;
         float f10;
         float[] fArr2;
-        this.f10063v.reset();
-        this.f10064w.reset();
-        this.f10066y.set(getBounds());
-        RectF rectF = this.f10066y;
-        float f11 = this.f10058q;
+        this.f9962v.reset();
+        this.f9963w.reset();
+        this.f9965y.set(getBounds());
+        RectF rectF = this.f9965y;
+        float f11 = this.f9957q;
         rectF.inset(f11 / 2.0f, f11 / 2.0f);
         int i10 = 0;
-        if (this.f10057p) {
-            this.f10064w.addCircle(this.f10066y.centerX(), this.f10066y.centerY(), Math.min(this.f10066y.width(), this.f10066y.height()) / 2.0f, Path.Direction.CW);
+        if (this.f9956p) {
+            this.f9963w.addCircle(this.f9965y.centerX(), this.f9965y.centerY(), Math.min(this.f9965y.width(), this.f9965y.height()) / 2.0f, Path.Direction.CW);
         } else {
             int i11 = 0;
             while (true) {
-                fArr = this.f10054e;
+                fArr = this.f9953e;
                 if (i11 >= fArr.length) {
                     break;
                 }
-                fArr[i11] = (this.f10053d[i11] + this.f10059r) - (this.f10058q / 2.0f);
+                fArr[i11] = (this.f9952d[i11] + this.f9958r) - (this.f9957q / 2.0f);
                 i11++;
             }
-            this.f10064w.addRoundRect(this.f10066y, fArr, Path.Direction.CW);
+            this.f9963w.addRoundRect(this.f9965y, fArr, Path.Direction.CW);
         }
-        RectF rectF2 = this.f10066y;
-        float f12 = this.f10058q;
+        RectF rectF2 = this.f9965y;
+        float f12 = this.f9957q;
         rectF2.inset((-f12) / 2.0f, (-f12) / 2.0f);
-        float f13 = this.f10059r;
-        if (this.f10061t) {
-            f10 = this.f10058q;
+        float f13 = this.f9958r;
+        if (this.f9960t) {
+            f10 = this.f9957q;
         } else {
             f10 = 0.0f;
         }
         float f14 = f13 + f10;
-        this.f10066y.inset(f14, f14);
-        if (this.f10057p) {
-            this.f10063v.addCircle(this.f10066y.centerX(), this.f10066y.centerY(), Math.min(this.f10066y.width(), this.f10066y.height()) / 2.0f, Path.Direction.CW);
-        } else if (this.f10061t) {
-            if (this.f10055i == null) {
-                this.f10055i = new float[8];
+        this.f9965y.inset(f14, f14);
+        if (this.f9956p) {
+            this.f9962v.addCircle(this.f9965y.centerX(), this.f9965y.centerY(), Math.min(this.f9965y.width(), this.f9965y.height()) / 2.0f, Path.Direction.CW);
+        } else if (this.f9960t) {
+            if (this.f9954i == null) {
+                this.f9954i = new float[8];
             }
             while (true) {
-                fArr2 = this.f10055i;
+                fArr2 = this.f9954i;
                 if (i10 >= fArr2.length) {
                     break;
                 }
-                fArr2[i10] = this.f10053d[i10] - this.f10058q;
+                fArr2[i10] = this.f9952d[i10] - this.f9957q;
                 i10++;
             }
-            this.f10063v.addRoundRect(this.f10066y, fArr2, Path.Direction.CW);
+            this.f9962v.addRoundRect(this.f9965y, fArr2, Path.Direction.CW);
         } else {
-            this.f10063v.addRoundRect(this.f10066y, this.f10053d, Path.Direction.CW);
+            this.f9962v.addRoundRect(this.f9965y, this.f9952d, Path.Direction.CW);
         }
         float f15 = -f14;
-        this.f10066y.inset(f15, f15);
+        this.f9965y.inset(f15, f15);
     }
 
     @Override // com.facebook.drawee.drawable.h
     public void a(boolean z10) {
-        this.f10057p = z10;
+        this.f9956p = z10;
         k();
         invalidateSelf();
     }
 
     @Override // com.facebook.drawee.drawable.h
     public void b(float f10) {
-        if (this.f10059r != f10) {
-            this.f10059r = f10;
+        if (this.f9958r != f10) {
+            this.f9958r = f10;
             k();
             invalidateSelf();
         }
@@ -149,7 +149,7 @@ public class j extends Drawable implements h {
             z10 = false;
         }
         o8.j.c(z10, "radius should be non negative");
-        Arrays.fill(this.f10053d, f10);
+        Arrays.fill(this.f9952d, f10);
         k();
         invalidateSelf();
     }
@@ -160,30 +160,30 @@ public class j extends Drawable implements h {
 
     @Override // android.graphics.drawable.Drawable
     public void draw(Canvas canvas) {
-        this.f10056o.setColor(d.c(this.f10065x, this.f10067z));
-        this.f10056o.setStyle(Paint.Style.FILL);
-        this.f10056o.setFilterBitmap(i());
-        canvas.drawPath(this.f10063v, this.f10056o);
-        if (this.f10058q != 0.0f) {
-            this.f10056o.setColor(d.c(this.f10060s, this.f10067z));
-            this.f10056o.setStyle(Paint.Style.STROKE);
-            this.f10056o.setStrokeWidth(this.f10058q);
-            canvas.drawPath(this.f10064w, this.f10056o);
+        this.f9955o.setColor(d.c(this.f9964x, this.f9966z));
+        this.f9955o.setStyle(Paint.Style.FILL);
+        this.f9955o.setFilterBitmap(i());
+        canvas.drawPath(this.f9962v, this.f9955o);
+        if (this.f9957q != 0.0f) {
+            this.f9955o.setColor(d.c(this.f9959s, this.f9966z));
+            this.f9955o.setStyle(Paint.Style.STROKE);
+            this.f9955o.setStrokeWidth(this.f9957q);
+            canvas.drawPath(this.f9963w, this.f9955o);
         }
     }
 
     @Override // com.facebook.drawee.drawable.h
     public void e(boolean z10) {
-        if (this.f10062u != z10) {
-            this.f10062u = z10;
+        if (this.f9961u != z10) {
+            this.f9961u = z10;
             invalidateSelf();
         }
     }
 
     @Override // com.facebook.drawee.drawable.h
     public void f(boolean z10) {
-        if (this.f10061t != z10) {
-            this.f10061t = z10;
+        if (this.f9960t != z10) {
+            this.f9960t = z10;
             k();
             invalidateSelf();
         }
@@ -191,19 +191,19 @@ public class j extends Drawable implements h {
 
     @Override // android.graphics.drawable.Drawable
     public int getAlpha() {
-        return this.f10067z;
+        return this.f9966z;
     }
 
     @Override // android.graphics.drawable.Drawable
     public int getOpacity() {
-        return d.b(d.c(this.f10065x, this.f10067z));
+        return d.b(d.c(this.f9964x, this.f9966z));
     }
 
     @Override // com.facebook.drawee.drawable.h
     public void h(float[] fArr) {
         boolean z10;
         if (fArr == null) {
-            Arrays.fill(this.f10053d, 0.0f);
+            Arrays.fill(this.f9952d, 0.0f);
         } else {
             if (fArr.length == 8) {
                 z10 = true;
@@ -211,19 +211,19 @@ public class j extends Drawable implements h {
                 z10 = false;
             }
             o8.j.c(z10, "radii should have exactly 8 values");
-            System.arraycopy(fArr, 0, this.f10053d, 0, 8);
+            System.arraycopy(fArr, 0, this.f9952d, 0, 8);
         }
         k();
         invalidateSelf();
     }
 
     public boolean i() {
-        return this.f10062u;
+        return this.f9961u;
     }
 
     public void j(int i10) {
-        if (this.f10065x != i10) {
-            this.f10065x = i10;
+        if (this.f9964x != i10) {
+            this.f9964x = i10;
             invalidateSelf();
         }
     }
@@ -236,20 +236,20 @@ public class j extends Drawable implements h {
 
     @Override // android.graphics.drawable.Drawable
     public void setAlpha(int i10) {
-        if (i10 != this.f10067z) {
-            this.f10067z = i10;
+        if (i10 != this.f9966z) {
+            this.f9966z = i10;
             invalidateSelf();
         }
     }
 
     @Override // com.facebook.drawee.drawable.h
     public void setBorder(int i10, float f10) {
-        if (this.f10060s != i10) {
-            this.f10060s = i10;
+        if (this.f9959s != i10) {
+            this.f9959s = i10;
             invalidateSelf();
         }
-        if (this.f10058q != f10) {
-            this.f10058q = f10;
+        if (this.f9957q != f10) {
+            this.f9957q = f10;
             k();
             invalidateSelf();
         }

@@ -14,13 +14,13 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class n {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final int f983a = Color.argb(230, (int) SetSpanOperation.SPAN_MAX_PRIORITY, (int) SetSpanOperation.SPAN_MAX_PRIORITY, (int) SetSpanOperation.SPAN_MAX_PRIORITY);
+    private static final int f1312a = Color.argb(230, (int) SetSpanOperation.SPAN_MAX_PRIORITY, (int) SetSpanOperation.SPAN_MAX_PRIORITY, (int) SetSpanOperation.SPAN_MAX_PRIORITY);
 
     /* renamed from: b  reason: collision with root package name */
-    private static final int f984b = Color.argb((int) IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT, 27, 27, 27);
+    private static final int f1313b = Color.argb((int) IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT, 27, 27, 27);
 
     /* renamed from: c  reason: collision with root package name */
-    private static v f985c;
+    private static v f1314c;
 
     public static final void a(ComponentActivity componentActivity, b0 statusBarStyle, b0 navigationBarStyle) {
         Intrinsics.checkNotNullParameter(componentActivity, "<this>");
@@ -36,7 +36,7 @@ public abstract class n {
         Resources resources2 = decorView.getResources();
         Intrinsics.checkNotNullExpressionValue(resources2, "view.resources");
         boolean booleanValue2 = ((Boolean) c11.invoke(resources2)).booleanValue();
-        v vVar = f985c;
+        v vVar = f1314c;
         if (vVar == null) {
             int i10 = Build.VERSION.SDK_INT;
             if (i10 >= 30) {
@@ -62,10 +62,10 @@ public abstract class n {
 
     public static /* synthetic */ void b(ComponentActivity componentActivity, b0 b0Var, b0 b0Var2, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            b0Var = b0.a.b(b0.f956e, 0, 0, null, 4, null);
+            b0Var = b0.a.b(b0.f1285e, 0, 0, null, 4, null);
         }
         if ((i10 & 2) != 0) {
-            b0Var2 = b0.a.b(b0.f956e, f983a, f984b, null, 4, null);
+            b0Var2 = b0.a.b(b0.f1285e, f1312a, f1313b, null, 4, null);
         }
         a(componentActivity, b0Var, b0Var2);
     }

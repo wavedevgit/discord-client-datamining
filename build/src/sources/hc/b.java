@@ -4,21 +4,21 @@ package hc;
 public final class b extends k {
 
     /* renamed from: a  reason: collision with root package name */
-    private final long f25745a;
+    private final long f25873a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final zb.o f25746b;
+    private final zb.o f25874b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final zb.i f25747c;
+    private final zb.i f25875c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(long j10, zb.o oVar, zb.i iVar) {
-        this.f25745a = j10;
+        this.f25873a = j10;
         if (oVar != null) {
-            this.f25746b = oVar;
+            this.f25874b = oVar;
             if (iVar != null) {
-                this.f25747c = iVar;
+                this.f25875c = iVar;
                 return;
             }
             throw new NullPointerException("Null event");
@@ -28,17 +28,17 @@ public final class b extends k {
 
     @Override // hc.k
     public zb.i b() {
-        return this.f25747c;
+        return this.f25875c;
     }
 
     @Override // hc.k
     public long c() {
-        return this.f25745a;
+        return this.f25873a;
     }
 
     @Override // hc.k
     public zb.o d() {
-        return this.f25746b;
+        return this.f25874b;
     }
 
     public boolean equals(Object obj) {
@@ -47,7 +47,7 @@ public final class b extends k {
         }
         if (obj instanceof k) {
             k kVar = (k) obj;
-            if (this.f25745a == kVar.c() && this.f25746b.equals(kVar.d()) && this.f25747c.equals(kVar.b())) {
+            if (this.f25873a == kVar.c() && this.f25874b.equals(kVar.d()) && this.f25875c.equals(kVar.b())) {
                 return true;
             }
         }
@@ -55,11 +55,11 @@ public final class b extends k {
     }
 
     public int hashCode() {
-        long j10 = this.f25745a;
-        return ((((((int) (j10 ^ (j10 >>> 32))) ^ 1000003) * 1000003) ^ this.f25746b.hashCode()) * 1000003) ^ this.f25747c.hashCode();
+        long j10 = this.f25873a;
+        return ((((((int) (j10 ^ (j10 >>> 32))) ^ 1000003) * 1000003) ^ this.f25874b.hashCode()) * 1000003) ^ this.f25875c.hashCode();
     }
 
     public String toString() {
-        return "PersistedEvent{id=" + this.f25745a + ", transportContext=" + this.f25746b + ", event=" + this.f25747c + "}";
+        return "PersistedEvent{id=" + this.f25873a + ", transportContext=" + this.f25874b + ", event=" + this.f25875c + "}";
     }
 }

@@ -1,6 +1,7 @@
 package com.withpersona.sdk2.inquiry.internal.fallbackmode;
 
 import android.content.Context;
+import bs.r;
 import com.squareup.moshi.a0;
 import com.squareup.moshi.w;
 import com.withpersona.sdk2.inquiry.internal.fallbackmode.i;
@@ -19,22 +20,21 @@ import kotlin.text.Charsets;
 import okhttp3.RequestBody;
 import org.json.JSONArray;
 import org.json.JSONObject;
-import ov.z;
-import zr.r;
+import vv.z;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class f implements wo.a {
+public final class f implements yo.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final w f18904a;
+    private final w f18884a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Context f18905b;
+    private final Context f18885b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final i.a f18906c;
+    private final i.a f18886c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f18907d;
+    private final int f18887d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public interface a {
@@ -45,39 +45,39 @@ public final class f implements wo.a {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(staticTemplateSessionFactory, "staticTemplateSessionFactory");
-        this.f18904a = moshi;
-        this.f18905b = context;
-        this.f18906c = staticTemplateSessionFactory;
-        this.f18907d = i10;
+        this.f18884a = moshi;
+        this.f18885b = context;
+        this.f18886c = staticTemplateSessionFactory;
+        this.f18887d = i10;
     }
 
-    @Override // wo.a
+    @Override // yo.a
     public Object a(String str, RequestBody requestBody, Continuation continuation) {
         z i10 = z.i(null);
         Intrinsics.checkNotNullExpressionValue(i10, "success(...)");
         return i10;
     }
 
-    @Override // wo.a
+    @Override // yo.a
     public Object b(String str, RequestBody requestBody, Continuation continuation) {
         z i10 = z.i(null);
         Intrinsics.checkNotNullExpressionValue(i10, "success(...)");
         return i10;
     }
 
-    @Override // wo.a
-    public Object c(yo.d dVar, Continuation continuation) {
+    @Override // yo.a
+    public Object c(ap.d dVar, Continuation continuation) {
         String jSONArray;
         try {
-            InputStream openRawResource = this.f18905b.getResources().openRawResource(this.f18907d);
+            InputStream openRawResource = this.f18885b.getResources().openRawResource(this.f18887d);
             Intrinsics.checkNotNullExpressionValue(openRawResource, "openRawResource(...)");
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(openRawResource, Charsets.UTF_8), 8192);
             String h10 = r.h(bufferedReader);
             ArrayList arrayList = null;
-            zr.c.a(bufferedReader, null);
+            bs.c.a(bufferedReader, null);
             JSONArray optJSONArray = new JSONObject(h10).optJSONArray("steps");
             if (optJSONArray != null && (jSONArray = optJSONArray.toString()) != null) {
-                List list = (List) this.f18904a.d(a0.j(List.class, NextStep.class)).fromJson(jSONArray);
+                List list = (List) this.f18884a.d(a0.j(List.class, NextStep.class)).fromJson(jSONArray);
                 if (list != null) {
                     List<NextStep> list2 = list;
                     arrayList = new ArrayList(CollectionsKt.w(list2, 10));
@@ -86,20 +86,20 @@ public final class f implements wo.a {
                     }
                 }
                 if (arrayList != null && !arrayList.isEmpty()) {
-                    Result.a aVar = Result.f31985e;
-                    i.a aVar2 = this.f18906c;
+                    Result.a aVar = Result.f32005e;
+                    i.a aVar2 = this.f18886c;
                     String uuid = UUID.randomUUID().toString();
                     Intrinsics.checkNotNullExpressionValue(uuid, "toString(...)");
                     return Result.b(aVar2.a(arrayList, uuid));
                 }
-                Result.a aVar3 = Result.f31985e;
-                return Result.b(kotlin.c.a(new wo.b("Expected steps to contain at least one step")));
+                Result.a aVar3 = Result.f32005e;
+                return Result.b(kotlin.c.a(new yo.b("Expected steps to contain at least one step")));
             }
-            Result.a aVar4 = Result.f31985e;
-            return Result.b(kotlin.c.a(new wo.b("Failed to open resource as static template")));
+            Result.a aVar4 = Result.f32005e;
+            return Result.b(kotlin.c.a(new yo.b("Failed to open resource as static template")));
         } catch (Exception unused) {
-            Result.a aVar5 = Result.f31985e;
-            return Result.b(kotlin.c.a(new wo.b("Failed to open resource as static template. Resource not found.")));
+            Result.a aVar5 = Result.f32005e;
+            return Result.b(kotlin.c.a(new yo.b("Failed to open resource as static template. Resource not found.")));
         }
     }
 }

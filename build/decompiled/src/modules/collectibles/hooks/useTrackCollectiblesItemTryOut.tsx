@@ -108,7 +108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1[0] = var5;
         var1[1] = var4;
         var0 = function(arg0) { // Environment: var0
-            _fun49260: for (var _fun49260_ip = 0;;) switch (_fun49260_ip) {
+            _fun49231: for (var _fun49231_ip = 0;;) switch (_fun49231_ip) {
                 case 0:
                     var0 = arg0;
                     var9 = var0.type;
@@ -137,13 +137,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = var6.bind(var9)(var7);
                     var8 = _closure1_slot6;
                     if (var6) {
-                        _fun49260_ip = 128;
-                        continue _fun49260
+                        _fun49231_ip = 128;
+                        continue _fun49231
                     }
                 case 120:
                     var6 = var8.PREMIUM_STANDARD;
-                    _fun49260_ip = 134;
-                    continue _fun49260;
+                    _fun49231_ip = 134;
+                    continue _fun49231;
                 case 128:
                     var6 = var8.FREE;
                 case 134:
@@ -152,8 +152,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var8 = var6 == var7;
                     var6 = undefined;
                     if (var8) {
-                        _fun49260_ip = 155;
-                        continue _fun49260
+                        _fun49231_ip = 155;
+                        continue _fun49231
                     }
                 case 150:
                     var6 = var7.name;
@@ -170,4 +170,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4598, 660, 1623, 3493, 632, 795, 4599, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4599, 660, 1623, 3495, 632, 795, 4600, 2]);

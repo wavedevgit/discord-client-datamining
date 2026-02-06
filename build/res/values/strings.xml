@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="CronetProviderClassName">com.google.android.gms.net.PlayServicesCronetProvider</string>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_up_description">Navigate up</string>
     <string name="abc_action_menu_overflow_description">More options</string>
@@ -404,7 +405,7 @@
     <string name="radiogroup_description">Radio Group</string>
     <string name="range_end">Range end</string>
     <string name="range_start">Range start</string>
-    <string name="react_native_dev_server_ip">10.76.159.132</string>
+    <string name="react_native_dev_server_ip">10.76.254.133</string>
     <string name="rn_tab_description">Tab</string>
     <string name="scrollbar_description">Scroll Bar</string>
     <string name="search_menu_title">Search</string>

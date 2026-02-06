@@ -7,7 +7,7 @@ import gf.q;
 public abstract class h {
     public static g a(k kVar, e eVar) {
         q.m(kVar, "Result must not be null");
-        q.b(!kVar.a().g(), "Status code must not be SUCCESS");
+        q.b(!kVar.a().h(), "Status code must not be SUCCESS");
         o oVar = new o(eVar, kVar);
         oVar.setResult(kVar);
         return oVar;

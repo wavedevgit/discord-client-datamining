@@ -1,19 +1,19 @@
 package lg;
+
+import android.os.Parcel;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class b {
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static int a(int i10, int i11) {
-        if (i11 >= 0) {
-            int i12 = i10 + (i10 >> 1) + 1;
-            if (i12 < i11) {
-                int highestOneBit = Integer.highestOneBit(i11 - 1);
-                i12 = highestOneBit + highestOneBit;
-            }
-            if (i12 < 0) {
-                return Integer.MAX_VALUE;
-            }
-            return i12;
+public abstract class b extends d implements c {
+    public b() {
+        super("com.google.android.gms.location.internal.ISettingsCallbacks");
+    }
+
+    @Override // lg.d
+    protected final boolean e(int i10, Parcel parcel, Parcel parcel2, int i11) {
+        if (i10 == 1) {
+            h.d(parcel);
+            I((ug.f) h.a(parcel, ug.f.CREATOR));
+            return true;
         }
-        throw new AssertionError("cannot store more than MAX_VALUE elements");
+        return false;
     }
 }

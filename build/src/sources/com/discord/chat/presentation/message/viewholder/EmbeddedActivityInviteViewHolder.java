@@ -29,7 +29,7 @@ public final class EmbeddedActivityInviteViewHolder extends MessagePartViewHolde
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void bind$lambda$2$lambda$1(EmbeddedActivityInviteViewHolder embeddedActivityInviteViewHolder, EmbeddedActivityInviteMessageAccessory embeddedActivityInviteMessageAccessory, View view) {
-        embeddedActivityInviteViewHolder.eventHandler.mo464onTapInviteEmbedAFFcxXc(embeddedActivityInviteMessageAccessory.mo538getMessageId3Eiw7ao(), embeddedActivityInviteMessageAccessory.getCodedLinkIndex(), null, null);
+        embeddedActivityInviteViewHolder.eventHandler.mo462onTapInviteEmbedAFFcxXc(embeddedActivityInviteMessageAccessory.mo536getMessageId3Eiw7ao(), embeddedActivityInviteMessageAccessory.getCodedLinkIndex(), null, null);
     }
 
     public final void bind(@NotNull final EmbeddedActivityInviteMessageAccessory embeddedActivityInviteAccessory) {
@@ -39,11 +39,11 @@ public final class EmbeddedActivityInviteViewHolder extends MessagePartViewHolde
         embeddedActivityInviteView.setSplash(embeddedActivityInviteAccessory.getMargins(), embeddedActivityInviteEmbed.getSplashUrl(), embeddedActivityInviteAccessory.getConstrainedWidth());
         embeddedActivityInviteView.setTitleText(embeddedActivityInviteEmbed.getTitleText());
         embeddedActivityInviteView.setHeaderText(embeddedActivityInviteEmbed.getHeaderText());
-        embeddedActivityInviteView.m691setSubtitleText2dg2Uz0(embeddedActivityInviteAccessory.getMargins(), embeddedActivityInviteEmbed.getStructurableSubtitleText(), embeddedActivityInviteAccessory.mo538getMessageId3Eiw7ao(), new EmbeddedActivityInviteViewHolder$bind$1$1(this.eventHandler), new EmbeddedActivityInviteViewHolder$bind$1$2(this.eventHandler), new EmbeddedActivityInviteViewHolder$bind$1$3(this.eventHandler), new EmbeddedActivityInviteViewHolder$bind$1$4(this.eventHandler), new EmbeddedActivityInviteViewHolder$bind$1$5(this.eventHandler), new EmbeddedActivityInviteViewHolder$bind$1$6(this.eventHandler), new EmbeddedActivityInviteViewHolder$bind$1$7(this.eventHandler), new EmbeddedActivityInviteViewHolder$bind$1$8(this.eventHandler), new EmbeddedActivityInviteViewHolder$bind$1$9(this.eventHandler), new Function0() { // from class: com.discord.chat.presentation.message.viewholder.j
+        embeddedActivityInviteView.m689setSubtitleText2dg2Uz0(embeddedActivityInviteAccessory.getMargins(), embeddedActivityInviteEmbed.getStructurableSubtitleText(), embeddedActivityInviteAccessory.mo536getMessageId3Eiw7ao(), new EmbeddedActivityInviteViewHolder$bind$1$1(this.eventHandler), new EmbeddedActivityInviteViewHolder$bind$1$2(this.eventHandler), new EmbeddedActivityInviteViewHolder$bind$1$3(this.eventHandler), new EmbeddedActivityInviteViewHolder$bind$1$4(this.eventHandler), new EmbeddedActivityInviteViewHolder$bind$1$5(this.eventHandler), new EmbeddedActivityInviteViewHolder$bind$1$6(this.eventHandler), new EmbeddedActivityInviteViewHolder$bind$1$7(this.eventHandler), new EmbeddedActivityInviteViewHolder$bind$1$8(this.eventHandler), new EmbeddedActivityInviteViewHolder$bind$1$9(this.eventHandler), new Function0() { // from class: com.discord.chat.presentation.message.viewholder.j
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit unit;
-                unit = Unit.f31988a;
+                unit = Unit.f32008a;
                 return unit;
             }
         }, new EmbeddedActivityInviteViewHolder$bind$1$10(this.eventHandler), new EmbeddedActivityInviteViewHolder$bind$1$11(this.eventHandler), new EmbeddedActivityInviteViewHolder$bind$1$12(this.eventHandler), new EmbeddedActivityInviteViewHolder$bind$1$13(this.eventHandler), new EmbeddedActivityInviteViewHolder$bind$1$14(this.eventHandler));

@@ -29,20 +29,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/avatar_decorations/native/AvatarDecorationUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun49132: for (var _fun49132_ip = 0;;) switch (_fun49132_ip) {
+        _fun49135: for (var _fun49135_ip = 0;;) switch (_fun49135_ip) {
             case 0:
                 var3 = arg0;
                 var1 = 'number';
                 var0 = typeof var3;
                 if (!(var1 === var0)) {
-                    _fun49132_ip = 27;
-                    continue _fun49132
+                    _fun49135_ip = 27;
+                    continue _fun49135
                 }
             case 14:
                 var0 = _closure1_slot3;
                 var0 = var3 * var0;
-                _fun49132_ip = 70;
-                continue _fun49132;
+                _fun49135_ip = 70;
+                continue _fun49135;
             case 27:
                 var5 = _closure1_slot0;
                 var4 = _closure1_slot2;
@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getDecorationSizeForAvatarSize = var3;
     var3 = function arg0, arg1() {
-        _fun49133: for (var _fun49133_ip = 0;;) switch (_fun49133_ip) {
+        _fun49136: for (var _fun49136_ip = 0;;) switch (_fun49136_ip) {
             case 0:
                 var5 = arg0;
                 var6 = arg1;
@@ -68,8 +68,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = null;
                 var0 = var5;
                 if (!(var4 != var0)) {
-                    _fun49133_ip = 153;
-                    continue _fun49133
+                    _fun49136_ip = 153;
+                    continue _fun49136
                 }
             case 24:
                 var1 = {};
@@ -81,8 +81,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var4 != var7;
                 var2 = 0;
                 if (!var8) {
-                    _fun49133_ip = 66;
-                    continue _fun49133
+                    _fun49136_ip = 66;
+                    continue _fun49136
                 }
             case 63:
                 var2 = var7;
@@ -101,8 +101,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5.nativeCutouts;
                 var4 = var4 == var5;
                 if (var4) {
-                    _fun49133_ip = 145;
-                    continue _fun49133
+                    _fun49136_ip = 145;
+                    continue _fun49136
                 }
             case 130:
                 var4 = var5.map;
@@ -170,4 +170,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.openAvatarDecorationActionSheet = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5579, 5458, 3278, 5581, 1307, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5580, 5459, 3280, 5582, 1307, 2]);

@@ -14,40 +14,40 @@ import java.util.Objects;
 public final class y implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private String f29473d;
+    private String f28617d;
 
     /* renamed from: e  reason: collision with root package name */
-    private String f29474e;
+    private String f28618e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Map f29475i;
+    private Map f28619i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
         @Override // io.sentry.m1
         /* renamed from: b */
         public y a(e3 e3Var, ILogger iLogger) {
-            e3Var.s();
+            e3Var.u();
             String str = null;
             String str2 = null;
             HashMap hashMap = null;
             while (e3Var.peek() == io.sentry.vendor.gson.stream.b.NAME) {
-                String m02 = e3Var.m0();
-                m02.getClass();
-                if (!m02.equals(StackTraceHelper.NAME_KEY)) {
-                    if (!m02.equals("version")) {
+                String o02 = e3Var.o0();
+                o02.getClass();
+                if (!o02.equals(StackTraceHelper.NAME_KEY)) {
+                    if (!o02.equals("version")) {
                         if (hashMap == null) {
                             hashMap = new HashMap();
                         }
-                        e3Var.v1(iLogger, hashMap, m02);
+                        e3Var.u1(iLogger, hashMap, o02);
                     } else {
-                        str2 = e3Var.f1();
+                        str2 = e3Var.e1();
                     }
                 } else {
-                    str = e3Var.f1();
+                    str = e3Var.e1();
                 }
             }
-            e3Var.z();
+            e3Var.D();
             if (str != null) {
                 if (str2 != null) {
                     y yVar = new y(str, str2);
@@ -65,20 +65,20 @@ public final class y implements w1 {
     }
 
     public y(String str, String str2) {
-        this.f29473d = (String) io.sentry.util.y.c(str, "name is required.");
-        this.f29474e = (String) io.sentry.util.y.c(str2, "version is required.");
+        this.f28617d = (String) io.sentry.util.y.c(str, "name is required.");
+        this.f28618e = (String) io.sentry.util.y.c(str2, "version is required.");
     }
 
     public String a() {
-        return this.f29473d;
+        return this.f28617d;
     }
 
     public String b() {
-        return this.f29474e;
+        return this.f28618e;
     }
 
     public void c(Map map) {
-        this.f29475i = map;
+        this.f28619i = map;
     }
 
     public boolean equals(Object obj) {
@@ -87,7 +87,7 @@ public final class y implements w1 {
         }
         if (obj != null && y.class == obj.getClass()) {
             y yVar = (y) obj;
-            if (Objects.equals(this.f29473d, yVar.f29473d) && Objects.equals(this.f29474e, yVar.f29474e)) {
+            if (Objects.equals(this.f28617d, yVar.f28617d) && Objects.equals(this.f28618e, yVar.f28618e)) {
                 return true;
             }
         }
@@ -95,20 +95,20 @@ public final class y implements w1 {
     }
 
     public int hashCode() {
-        return Objects.hash(this.f29473d, this.f29474e);
+        return Objects.hash(this.f28617d, this.f28618e);
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
-        f3Var.s();
-        f3Var.e(StackTraceHelper.NAME_KEY).f(this.f29473d);
-        f3Var.e("version").f(this.f29474e);
-        Map map = this.f29475i;
+        f3Var.u();
+        f3Var.e(StackTraceHelper.NAME_KEY).f(this.f28617d);
+        f3Var.e("version").f(this.f28618e);
+        Map map = this.f28619i;
         if (map != null) {
             for (String str : map.keySet()) {
-                f3Var.e(str).j(iLogger, this.f29475i.get(str));
+                f3Var.e(str).j(iLogger, this.f28619i.get(str));
             }
         }
-        f3Var.z();
+        f3Var.D();
     }
 }

@@ -1,0 +1,21 @@
+package kt;
+
+import java.io.InputStream;
+import kotlin.jvm.internal.Intrinsics;
+import kotlinx.serialization.DeserializationStrategy;
+import kotlinx.serialization.json.Json;
+import lt.l0;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+public abstract class b0 {
+    public static final Object a(Json json, DeserializationStrategy deserializer, InputStream stream) {
+        Intrinsics.checkNotNullParameter(json, "<this>");
+        Intrinsics.checkNotNullParameter(deserializer, "deserializer");
+        Intrinsics.checkNotNullParameter(stream, "stream");
+        lt.a0 a0Var = new lt.a0(stream);
+        try {
+            return l0.a(json, deserializer, a0Var);
+        } finally {
+            a0Var.b();
+        }
+    }
+}

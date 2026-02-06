@@ -10,22 +10,22 @@ public final class c implements Comparable, Parcelable, g {
     public static final Parcelable.Creator<c> CREATOR = new a();
 
     /* renamed from: o  reason: collision with root package name */
-    private static final String f44999o = w0.B0(0);
+    private static final String f43796o = w0.B0(0);
 
     /* renamed from: p  reason: collision with root package name */
-    private static final String f45000p = w0.B0(1);
+    private static final String f43797p = w0.B0(1);
 
     /* renamed from: q  reason: collision with root package name */
-    private static final String f45001q = w0.B0(2);
+    private static final String f43798q = w0.B0(2);
 
     /* renamed from: d  reason: collision with root package name */
-    public final int f45002d;
+    public final int f43799d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final int f45003e;
+    public final int f43800e;
 
     /* renamed from: i  reason: collision with root package name */
-    public final int f45004i;
+    public final int f43801i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a implements Parcelable.Creator {
@@ -46,23 +46,23 @@ public final class c implements Comparable, Parcelable, g {
     }
 
     public c(int i10, int i11, int i12) {
-        this.f45002d = i10;
-        this.f45003e = i11;
-        this.f45004i = i12;
+        this.f43799d = i10;
+        this.f43800e = i11;
+        this.f43801i = i12;
     }
 
     public static c d(Bundle bundle) {
-        return new c(bundle.getInt(f44999o, 0), bundle.getInt(f45000p, 0), bundle.getInt(f45001q, 0));
+        return new c(bundle.getInt(f43796o, 0), bundle.getInt(f43797p, 0), bundle.getInt(f43798q, 0));
     }
 
     @Override // java.lang.Comparable
     /* renamed from: a */
     public int compareTo(c cVar) {
-        int i10 = this.f45002d - cVar.f45002d;
+        int i10 = this.f43799d - cVar.f43799d;
         if (i10 == 0) {
-            int i11 = this.f45003e - cVar.f45003e;
+            int i11 = this.f43800e - cVar.f43800e;
             if (i11 == 0) {
-                return this.f45004i - cVar.f45004i;
+                return this.f43801i - cVar.f43801i;
             }
             return i11;
         }
@@ -80,7 +80,7 @@ public final class c implements Comparable, Parcelable, g {
         }
         if (obj != null && c.class == obj.getClass()) {
             c cVar = (c) obj;
-            if (this.f45002d == cVar.f45002d && this.f45003e == cVar.f45003e && this.f45004i == cVar.f45004i) {
+            if (this.f43799d == cVar.f43799d && this.f43800e == cVar.f43800e && this.f43801i == cVar.f43801i) {
                 return true;
             }
         }
@@ -88,23 +88,23 @@ public final class c implements Comparable, Parcelable, g {
     }
 
     public int hashCode() {
-        return (((this.f45002d * 31) + this.f45003e) * 31) + this.f45004i;
+        return (((this.f43799d * 31) + this.f43800e) * 31) + this.f43801i;
     }
 
     public String toString() {
-        return this.f45002d + "." + this.f45003e + "." + this.f45004i;
+        return this.f43799d + "." + this.f43800e + "." + this.f43801i;
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeInt(this.f45002d);
-        parcel.writeInt(this.f45003e);
-        parcel.writeInt(this.f45004i);
+        parcel.writeInt(this.f43799d);
+        parcel.writeInt(this.f43800e);
+        parcel.writeInt(this.f43801i);
     }
 
     c(Parcel parcel) {
-        this.f45002d = parcel.readInt();
-        this.f45003e = parcel.readInt();
-        this.f45004i = parcel.readInt();
+        this.f43799d = parcel.readInt();
+        this.f43800e = parcel.readInt();
+        this.f43801i = parcel.readInt();
     }
 }

@@ -1,129 +1,572 @@
 package ws;
 
-import j$.time.ZoneOffset;
-import j$.time.format.DateTimeFormatter;
-import kotlin.Metadata;
-import kotlin.jvm.internal.DefaultConstructorMarker;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
+import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
+import kotlin.collections.CollectionsKt;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.CoroutineContext;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.functions.Function3;
 import kotlin.jvm.internal.Intrinsics;
-import kotlinx.serialization.KSerializer;
-import org.jetbrains.annotations.NotNull;
-import xs.p0;
-@Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0004\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\n\b\u0007\u0018\u0000 \u00152\u00020\u0001:\u0002\u0010\u0016B\u000f\u0012\u0006\u0010\u0003\u001a\u00020\u0002¢\u0006\u0004\b\u0004\u0010\u0005J\u000f\u0010\u0007\u001a\u00020\u0006H\u0016¢\u0006\u0004\b\u0007\u0010\bJ\u001a\u0010\u000b\u001a\u00020\n2\b\u0010\t\u001a\u0004\u0018\u00010\u0001H\u0096\u0002¢\u0006\u0004\b\u000b\u0010\fJ\u000f\u0010\u000e\u001a\u00020\rH\u0016¢\u0006\u0004\b\u000e\u0010\u000fR\u001a\u0010\u0003\u001a\u00020\u00028\u0000X\u0080\u0004¢\u0006\f\n\u0004\b\u0010\u0010\u0011\u001a\u0004\b\u0012\u0010\u0013R\u0011\u0010\u0014\u001a\u00020\u00068F¢\u0006\u0006\u001a\u0004\b\u0010\u0010\b¨\u0006\u0017"}, d2 = {"Lws/k;", "", "j$/time/ZoneOffset", "zoneOffset", "<init>", "(Lj$/time/ZoneOffset;)V", "", "hashCode", "()I", "other", "", "equals", "(Ljava/lang/Object;)Z", "", "toString", "()Ljava/lang/String;", "a", "Lj$/time/ZoneOffset;", "getZoneOffset$kotlinx_datetime", "()Lj$/time/ZoneOffset;", "totalSeconds", "Companion", "b", "kotlinx-datetime"}, k = 1, mv = {1, 9, 0}, xi = 48)
-@dt.m(with = ct.j.class)
+import kotlinx.coroutines.CancellableContinuation;
+import os.n0;
+import os.w1;
+import ts.b0;
+import ts.e0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class k {
-    @NotNull
-    public static final a Companion = new a(null);
+public class k implements kotlinx.coroutines.d, d, l, w1 {
 
-    /* renamed from: b  reason: collision with root package name */
-    private static final k f53288b;
+    /* renamed from: q  reason: collision with root package name */
+    private static final /* synthetic */ AtomicReferenceFieldUpdater f54080q = AtomicReferenceFieldUpdater.newUpdater(k.class, Object.class, "state$volatile");
 
-    /* renamed from: a  reason: collision with root package name */
-    private final ZoneOffset f53289a;
+    /* renamed from: d  reason: collision with root package name */
+    private final CoroutineContext f54081d;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a {
-        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
-        }
+    /* renamed from: e  reason: collision with root package name */
+    private List f54082e;
 
-        public static /* synthetic */ k b(a aVar, CharSequence charSequence, xs.n nVar, int i10, Object obj) {
-            if ((i10 & 2) != 0) {
-                nVar = n.a();
-            }
-            return aVar.a(charSequence, nVar);
-        }
+    /* renamed from: i  reason: collision with root package name */
+    private Object f54083i;
 
-        public final k a(CharSequence input, xs.n format) {
-            DateTimeFormatter f10;
-            k i10;
-            DateTimeFormatter g10;
-            k i11;
-            DateTimeFormatter h10;
-            k i12;
-            Intrinsics.checkNotNullParameter(input, "input");
-            Intrinsics.checkNotNullParameter(format, "format");
-            b bVar = b.f53290a;
-            if (format == bVar.b()) {
-                h10 = m.h();
-                Intrinsics.checkNotNullExpressionValue(h10, "access$getIsoFormat(...)");
-                i12 = m.i(input, h10);
-                return i12;
-            } else if (format == bVar.c()) {
-                g10 = m.g();
-                Intrinsics.checkNotNullExpressionValue(g10, "access$getIsoBasicFormat(...)");
-                i11 = m.i(input, g10);
-                return i11;
-            } else if (format == bVar.a()) {
-                f10 = m.f();
-                Intrinsics.checkNotNullExpressionValue(f10, "access$getFourDigitsFormat(...)");
-                i10 = m.i(input, f10);
-                return i10;
-            } else {
-                return (k) format.a(input);
-            }
-        }
+    /* renamed from: o  reason: collision with root package name */
+    private int f54084o;
 
-        @NotNull
-        public final KSerializer serializer() {
-            return ct.j.f20034a;
-        }
-
-        private a() {
-        }
-    }
+    /* renamed from: p  reason: collision with root package name */
+    private Object f54085p;
+    private volatile /* synthetic */ Object state$volatile;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class b {
+    public final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final b f53290a = new b();
+        public final Object f54086a;
 
-        private b() {
+        /* renamed from: b  reason: collision with root package name */
+        private final Function3 f54087b;
+
+        /* renamed from: c  reason: collision with root package name */
+        private final Function3 f54088c;
+
+        /* renamed from: d  reason: collision with root package name */
+        private final Object f54089d;
+
+        /* renamed from: e  reason: collision with root package name */
+        private final Object f54090e;
+
+        /* renamed from: f  reason: collision with root package name */
+        public final Function3 f54091f;
+
+        /* renamed from: g  reason: collision with root package name */
+        public Object f54092g;
+
+        /* renamed from: h  reason: collision with root package name */
+        public int f54093h = -1;
+
+        public a(Object obj, Function3 function3, Function3 function32, Object obj2, Object obj3, Function3 function33) {
+            this.f54086a = obj;
+            this.f54087b = function3;
+            this.f54088c = function32;
+            this.f54089d = obj2;
+            this.f54090e = obj3;
+            this.f54091f = function33;
         }
 
-        public final xs.n a() {
-            return p0.b();
+        public final Function3 a(l lVar, Object obj) {
+            Function3 function3 = this.f54091f;
+            if (function3 != null) {
+                return (Function3) function3.invoke(lVar, this.f54089d, obj);
+            }
+            return null;
         }
 
-        public final xs.n b() {
-            return p0.c();
+        public final void b() {
+            Object obj = this.f54092g;
+            k kVar = k.this;
+            n0 n0Var = null;
+            if (obj instanceof b0) {
+                ((b0) obj).s(this.f54093h, null, kVar.getContext());
+                return;
+            }
+            if (obj instanceof n0) {
+                n0Var = (n0) obj;
+            }
+            if (n0Var != null) {
+                n0Var.dispose();
+            }
         }
 
-        public final xs.n c() {
-            return p0.d();
+        public final Object c(Object obj, Continuation continuation) {
+            Object obj2 = this.f54090e;
+            if (this.f54089d == m.i()) {
+                Intrinsics.checkNotNull(obj2, "null cannot be cast to non-null type kotlin.coroutines.SuspendFunction0<R of kotlinx.coroutines.selects.SelectImplementation>");
+                return ((Function1) obj2).invoke(continuation);
+            }
+            Intrinsics.checkNotNull(obj2, "null cannot be cast to non-null type kotlin.coroutines.SuspendFunction1<kotlin.Any?, R of kotlinx.coroutines.selects.SelectImplementation>");
+            return ((Function2) obj2).invoke(obj, continuation);
+        }
+
+        public final Object d(Object obj) {
+            return this.f54088c.invoke(this.f54086a, this.f54089d, obj);
+        }
+
+        public final boolean e(k kVar) {
+            e0 e0Var;
+            this.f54087b.invoke(this.f54086a, kVar, this.f54089d);
+            Object obj = kVar.f54085p;
+            e0Var = m.f54103e;
+            if (obj == e0Var) {
+                return true;
+            }
+            return false;
         }
     }
 
-    static {
-        ZoneOffset UTC = ZoneOffset.UTC;
-        Intrinsics.checkNotNullExpressionValue(UTC, "UTC");
-        f53288b = new k(UTC);
+    /* JADX INFO: Access modifiers changed from: package-private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class b extends kotlin.coroutines.jvm.internal.d {
+
+        /* renamed from: d  reason: collision with root package name */
+        Object f54095d;
+
+        /* renamed from: e  reason: collision with root package name */
+        /* synthetic */ Object f54096e;
+
+        /* renamed from: o  reason: collision with root package name */
+        int f54098o;
+
+        b(Continuation continuation) {
+            super(continuation);
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.a
+        public final Object invokeSuspend(Object obj) {
+            this.f54096e = obj;
+            this.f54098o |= Integer.MIN_VALUE;
+            return k.this.q(this);
+        }
     }
 
-    public k(ZoneOffset zoneOffset) {
-        Intrinsics.checkNotNullParameter(zoneOffset, "zoneOffset");
-        this.f53289a = zoneOffset;
+    public k(CoroutineContext coroutineContext) {
+        e0 e0Var;
+        e0 e0Var2;
+        this.f54081d = coroutineContext;
+        e0Var = m.f54100b;
+        this.state$volatile = e0Var;
+        this.f54082e = new ArrayList(2);
+        this.f54084o = -1;
+        e0Var2 = m.f54103e;
+        this.f54085p = e0Var2;
     }
 
-    public final int a() {
-        return this.f53289a.getTotalSeconds();
+    private final void k(Object obj) {
+        List list = this.f54082e;
+        Intrinsics.checkNotNull(list);
+        List<a> list2 = list;
+        if ((list2 instanceof Collection) && list2.isEmpty()) {
+            return;
+        }
+        for (a aVar : list2) {
+            if (aVar.f54086a == obj) {
+                throw new IllegalStateException(("Cannot use select clauses on the same object: " + obj).toString());
+            }
+        }
     }
 
-    public boolean equals(Object obj) {
-        if ((obj instanceof k) && Intrinsics.areEqual(this.f53289a, ((k) obj).f53289a)) {
+    private final void l(a aVar) {
+        e0 e0Var;
+        e0 e0Var2;
+        List<a> list = this.f54082e;
+        if (list == null) {
+            return;
+        }
+        for (a aVar2 : list) {
+            if (aVar2 != aVar) {
+                aVar2.b();
+            }
+        }
+        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f54080q;
+        e0Var = m.f54101c;
+        atomicReferenceFieldUpdater.set(this, e0Var);
+        e0Var2 = m.f54103e;
+        this.f54085p = e0Var2;
+        this.f54082e = null;
+    }
+
+    private final Object m(Continuation continuation) {
+        Object obj = f54080q.get(this);
+        Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type kotlinx.coroutines.selects.SelectImplementation.ClauseData<R of kotlinx.coroutines.selects.SelectImplementation>");
+        a aVar = (a) obj;
+        Object obj2 = this.f54085p;
+        l(aVar);
+        return aVar.c(aVar.d(obj2), continuation);
+    }
+
+    static /* synthetic */ Object p(k kVar, Continuation continuation) {
+        if (kVar.t()) {
+            return kVar.m(continuation);
+        }
+        return kVar.q(continuation);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    /* JADX WARN: Removed duplicated region for block: B:10:0x0024  */
+    /* JADX WARN: Removed duplicated region for block: B:17:0x003c  */
+    /* JADX WARN: Removed duplicated region for block: B:23:0x0056 A[RETURN] */
+    /* JADX WARN: Removed duplicated region for block: B:24:0x0057 A[RETURN] */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public final java.lang.Object q(kotlin.coroutines.Continuation r6) {
+        /*
+            r5 = this;
+            boolean r0 = r6 instanceof ws.k.b
+            if (r0 == 0) goto L13
+            r0 = r6
+            ws.k$b r0 = (ws.k.b) r0
+            int r1 = r0.f54098o
+            r2 = -2147483648(0xffffffff80000000, float:-0.0)
+            r3 = r1 & r2
+            if (r3 == 0) goto L13
+            int r1 = r1 - r2
+            r0.f54098o = r1
+            goto L18
+        L13:
+            ws.k$b r0 = new ws.k$b
+            r0.<init>(r6)
+        L18:
+            java.lang.Object r6 = r0.f54096e
+            java.lang.Object r1 = wr.b.f()
+            int r2 = r0.f54098o
+            r3 = 2
+            r4 = 1
+            if (r2 == 0) goto L3c
+            if (r2 == r4) goto L34
+            if (r2 != r3) goto L2c
+            kotlin.c.b(r6)
+            return r6
+        L2c:
+            java.lang.IllegalStateException r6 = new java.lang.IllegalStateException
+            java.lang.String r0 = "call to 'resume' before 'invoke' with coroutine"
+            r6.<init>(r0)
+            throw r6
+        L34:
+            java.lang.Object r2 = r0.f54095d
+            ws.k r2 = (ws.k) r2
+            kotlin.c.b(r6)
+            goto L4b
+        L3c:
+            kotlin.c.b(r6)
+            r0.f54095d = r5
+            r0.f54098o = r4
+            java.lang.Object r6 = r5.z(r0)
+            if (r6 != r1) goto L4a
+            goto L56
+        L4a:
+            r2 = r5
+        L4b:
+            r6 = 0
+            r0.f54095d = r6
+            r0.f54098o = r3
+            java.lang.Object r6 = r2.m(r0)
+            if (r6 != r1) goto L57
+        L56:
+            return r1
+        L57:
+            return r6
+        */
+        throw new UnsupportedOperationException("Method not decompiled: ws.k.q(kotlin.coroutines.Continuation):java.lang.Object");
+    }
+
+    private final a r(Object obj) {
+        List list = this.f54082e;
+        Object obj2 = null;
+        if (list == null) {
+            return null;
+        }
+        Iterator it = list.iterator();
+        while (true) {
+            if (!it.hasNext()) {
+                break;
+            }
+            Object next = it.next();
+            if (((a) next).f54086a == obj) {
+                obj2 = next;
+                break;
+            }
+        }
+        a aVar = (a) obj2;
+        if (aVar != null) {
+            return aVar;
+        }
+        throw new IllegalStateException(("Clause with object " + obj + " is not found").toString());
+    }
+
+    private final boolean t() {
+        return f54080q.get(this) instanceof a;
+    }
+
+    public static /* synthetic */ void v(k kVar, a aVar, boolean z10, int i10, Object obj) {
+        if (obj == null) {
+            if ((i10 & 1) != 0) {
+                z10 = false;
+            }
+            kVar.u(aVar, z10);
+            return;
+        }
+        throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: register");
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public final void w(Object obj) {
+        a r10 = r(obj);
+        Intrinsics.checkNotNull(r10);
+        r10.f54092g = null;
+        r10.f54093h = -1;
+        u(r10, true);
+    }
+
+    private final int y(Object obj, Object obj2) {
+        boolean j10;
+        e0 e0Var;
+        e0 e0Var2;
+        e0 e0Var3;
+        e0 e0Var4;
+        while (true) {
+            Object obj3 = f54080q.get(this);
+            if (!(obj3 instanceof CancellableContinuation)) {
+                e0Var2 = m.f54101c;
+                if (!Intrinsics.areEqual(obj3, e0Var2) && !(obj3 instanceof a)) {
+                    e0Var3 = m.f54102d;
+                    if (!Intrinsics.areEqual(obj3, e0Var3)) {
+                        e0Var4 = m.f54100b;
+                        if (Intrinsics.areEqual(obj3, e0Var4)) {
+                            if (androidx.concurrent.futures.b.a(f54080q, this, obj3, CollectionsKt.e(obj))) {
+                                return 1;
+                            }
+                        } else if (obj3 instanceof List) {
+                            if (androidx.concurrent.futures.b.a(f54080q, this, obj3, CollectionsKt.M0((Collection) obj3, obj))) {
+                                return 1;
+                            }
+                        } else {
+                            throw new IllegalStateException(("Unexpected state: " + obj3).toString());
+                        }
+                    } else {
+                        return 2;
+                    }
+                } else {
+                    return 3;
+                }
+            } else {
+                a r10 = r(obj);
+                if (r10 == null) {
+                    continue;
+                } else {
+                    Function3 a10 = r10.a(this, obj2);
+                    if (androidx.concurrent.futures.b.a(f54080q, this, obj3, r10)) {
+                        this.f54085p = obj2;
+                        j10 = m.j((CancellableContinuation) obj3, a10);
+                        if (!j10) {
+                            e0Var = m.f54103e;
+                            this.f54085p = e0Var;
+                            return 2;
+                        }
+                        return 0;
+                    }
+                }
+            }
+        }
+    }
+
+    /* JADX WARN: Code restructure failed: missing block: B:19:0x0062, code lost:
+        r0 = r0.B();
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:20:0x006a, code lost:
+        if (r0 != wr.b.f()) goto L24;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:21:0x006c, code lost:
+        kotlin.coroutines.jvm.internal.g.c(r6);
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:23:0x0073, code lost:
+        if (r0 != wr.b.f()) goto L28;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:24:0x0075, code lost:
+        return r0;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:26:0x0078, code lost:
+        return kotlin.Unit.f32008a;
+     */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    private final java.lang.Object z(kotlin.coroutines.Continuation r6) {
+        /*
+            r5 = this;
+            kotlinx.coroutines.e r0 = new kotlinx.coroutines.e
+            kotlin.coroutines.Continuation r1 = wr.b.c(r6)
+            r2 = 1
+            r0.<init>(r1, r2)
+            r0.H()
+            java.util.concurrent.atomic.AtomicReferenceFieldUpdater r1 = i()
+        L11:
+            java.lang.Object r2 = r1.get(r5)
+            ts.e0 r3 = ws.m.g()
+            if (r2 != r3) goto L29
+            java.util.concurrent.atomic.AtomicReferenceFieldUpdater r3 = i()
+            boolean r2 = androidx.concurrent.futures.b.a(r3, r5, r2, r0)
+            if (r2 == 0) goto L11
+            os.l.c(r0, r5)
+            goto L62
+        L29:
+            boolean r3 = r2 instanceof java.util.List
+            if (r3 == 0) goto L4f
+            java.util.concurrent.atomic.AtomicReferenceFieldUpdater r3 = i()
+            ts.e0 r4 = ws.m.g()
+            boolean r3 = androidx.concurrent.futures.b.a(r3, r5, r2, r4)
+            if (r3 == 0) goto L11
+            java.lang.Iterable r2 = (java.lang.Iterable) r2
+            java.util.Iterator r2 = r2.iterator()
+        L41:
+            boolean r3 = r2.hasNext()
+            if (r3 == 0) goto L11
+            java.lang.Object r3 = r2.next()
+            j(r5, r3)
+            goto L41
+        L4f:
+            boolean r1 = r2 instanceof ws.k.a
+            if (r1 == 0) goto L79
+            kotlin.Unit r1 = kotlin.Unit.f32008a
+            ws.k$a r2 = (ws.k.a) r2
+            java.lang.Object r3 = h(r5)
+            kotlin.jvm.functions.Function3 r2 = r2.a(r5, r3)
+            r0.r(r1, r2)
+        L62:
+            java.lang.Object r0 = r0.B()
+            java.lang.Object r1 = wr.b.f()
+            if (r0 != r1) goto L6f
+            kotlin.coroutines.jvm.internal.g.c(r6)
+        L6f:
+            java.lang.Object r6 = wr.b.f()
+            if (r0 != r6) goto L76
+            return r0
+        L76:
+            kotlin.Unit r6 = kotlin.Unit.f32008a
+            return r6
+        L79:
+            java.lang.IllegalStateException r6 = new java.lang.IllegalStateException
+            java.lang.StringBuilder r0 = new java.lang.StringBuilder
+            r0.<init>()
+            java.lang.String r1 = "unexpected state: "
+            r0.append(r1)
+            r0.append(r2)
+            java.lang.String r0 = r0.toString()
+            java.lang.String r0 = r0.toString()
+            r6.<init>(r0)
+            throw r6
+        */
+        throw new UnsupportedOperationException("Method not decompiled: ws.k.z(kotlin.coroutines.Continuation):java.lang.Object");
+    }
+
+    @Override // ws.d
+    public void a(f fVar, Function1 function1) {
+        v(this, new a(fVar.d(), fVar.a(), fVar.c(), m.i(), function1, fVar.b()), false, 1, null);
+    }
+
+    @Override // kotlinx.coroutines.d
+    public void b(Throwable th2) {
+        Object obj;
+        e0 e0Var;
+        e0 e0Var2;
+        e0 e0Var3;
+        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f54080q;
+        do {
+            obj = atomicReferenceFieldUpdater.get(this);
+            e0Var = m.f54101c;
+            if (obj != e0Var) {
+                e0Var2 = m.f54102d;
+            } else {
+                return;
+            }
+        } while (!androidx.concurrent.futures.b.a(atomicReferenceFieldUpdater, this, obj, e0Var2));
+        List<a> list = this.f54082e;
+        if (list == null) {
+            return;
+        }
+        for (a aVar : list) {
+            aVar.b();
+        }
+        e0Var3 = m.f54103e;
+        this.f54085p = e0Var3;
+        this.f54082e = null;
+    }
+
+    @Override // ws.l
+    public void c(Object obj) {
+        this.f54085p = obj;
+    }
+
+    @Override // ws.d
+    public void d(h hVar, Function2 function2) {
+        v(this, new a(hVar.d(), hVar.a(), hVar.c(), null, function2, hVar.b()), false, 1, null);
+    }
+
+    @Override // ws.l
+    public boolean e(Object obj, Object obj2) {
+        if (y(obj, obj2) == 0) {
             return true;
         }
         return false;
     }
 
-    public int hashCode() {
-        return this.f53289a.hashCode();
+    @Override // os.w1
+    public void g(b0 b0Var, int i10) {
+        this.f54083i = b0Var;
+        this.f54084o = i10;
     }
 
-    public String toString() {
-        String zoneOffset = this.f53289a.toString();
-        Intrinsics.checkNotNullExpressionValue(zoneOffset, "toString(...)");
-        return zoneOffset;
+    @Override // ws.l
+    public CoroutineContext getContext() {
+        return this.f54081d;
+    }
+
+    public void n(n0 n0Var) {
+        this.f54083i = n0Var;
+    }
+
+    public Object o(Continuation continuation) {
+        return p(this, continuation);
+    }
+
+    public final void u(a aVar, boolean z10) {
+        if (f54080q.get(this) instanceof a) {
+            return;
+        }
+        if (!z10) {
+            k(aVar.f54086a);
+        }
+        if (aVar.e(this)) {
+            if (!z10) {
+                List list = this.f54082e;
+                Intrinsics.checkNotNull(list);
+                list.add(aVar);
+            }
+            aVar.f54092g = this.f54083i;
+            aVar.f54093h = this.f54084o;
+            this.f54083i = null;
+            this.f54084o = -1;
+            return;
+        }
+        f54080q.set(this, aVar);
+    }
+
+    public final o x(Object obj, Object obj2) {
+        o a10;
+        a10 = m.a(y(obj, obj2));
+        return a10;
     }
 }

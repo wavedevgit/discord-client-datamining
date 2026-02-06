@@ -14,44 +14,44 @@ import org.jetbrains.annotations.NotNull;
 public final class ExchangeOneTimeLinkCodeResponse_RelationshipDataJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19223a;
+    private final m.b f19203a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f19224b;
+    private final com.squareup.moshi.h f19204b;
 
     public ExchangeOneTimeLinkCodeResponse_RelationshipDataJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("type", StackTraceHelper.ID_KEY);
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19223a = a10;
+        this.f19203a = a10;
         com.squareup.moshi.h f10 = moshi.f(String.class, x0.d(), "type");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19224b = f10;
+        this.f19204b = f10;
     }
 
     @Override // com.squareup.moshi.h
     /* renamed from: a */
     public ExchangeOneTimeLinkCodeResponse.RelationshipData fromJson(m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         String str = null;
         String str2 = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.f19223a);
-            if (W != -1) {
-                if (W != 0) {
-                    if (W == 1) {
-                        str2 = (String) this.f19224b.fromJson(reader);
+            int J = reader.J(this.f19203a);
+            if (J != -1) {
+                if (J != 0) {
+                    if (J == 1) {
+                        str2 = (String) this.f19204b.fromJson(reader);
                     }
                 } else {
-                    str = (String) this.f19224b.fromJson(reader);
+                    str = (String) this.f19204b.fromJson(reader);
                 }
             } else {
                 reader.E0();
-                reader.P();
+                reader.S();
             }
         }
-        reader.z();
+        reader.D();
         return new ExchangeOneTimeLinkCodeResponse.RelationshipData(str, str2);
     }
 
@@ -61,11 +61,11 @@ public final class ExchangeOneTimeLinkCodeResponse_RelationshipDataJsonAdapter e
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (relationshipData != null) {
             writer.k();
-            writer.W("type");
-            this.f19224b.toJson(writer, relationshipData.b());
-            writer.W(StackTraceHelper.ID_KEY);
-            this.f19224b.toJson(writer, relationshipData.a());
-            writer.E();
+            writer.J("type");
+            this.f19204b.toJson(writer, relationshipData.b());
+            writer.J(StackTraceHelper.ID_KEY);
+            this.f19204b.toJson(writer, relationshipData.a());
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

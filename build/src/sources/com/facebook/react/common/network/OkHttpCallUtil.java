@@ -20,13 +20,13 @@ public final class OkHttpCallUtil {
         Intrinsics.checkNotNullParameter(tag, "tag");
         Dispatcher d10 = client.d();
         for (Call call : d10.l()) {
-            if (Intrinsics.areEqual(tag, call.h().l())) {
+            if (Intrinsics.areEqual(tag, call.g().l())) {
                 call.cancel();
                 return;
             }
         }
         for (Call call2 : d10.m()) {
-            if (Intrinsics.areEqual(tag, call2.h().l())) {
+            if (Intrinsics.areEqual(tag, call2.g().l())) {
                 call2.cancel();
                 return;
             }

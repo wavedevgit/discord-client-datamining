@@ -11,45 +11,157 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = var4.bind(var5)(var1, var0, var3);
     var0 = undefined;
     var1.default = var0;
-    var3 = {
-        'lastWeek': "'el' eeee 'pasado a la' p",
-        'yesterday': "'ayer a la' p",
-        'today': "'hoy a la' p",
-        'tomorrow': "'mañana a la' p",
-        'nextWeek': "eeee 'a la' p",
-        'other': 'P'
+    var3 = {};
+    var4 = {
+        'one': 'menos de un segundo',
+        'other': 'menos de {{count}} segundos'
     };
+    var3.lessThanXSeconds = var4;
+    var4 = {
+        'one': '1 segundo',
+        'other': '{{count}} segundos'
+    };
+    var3.xSeconds = var4;
+    var4 = 'medio minuto';
+    var3.halfAMinute = var4;
+    var4 = {
+        'one': 'menos de un minuto',
+        'other': 'menos de {{count}} minutos'
+    };
+    var3.lessThanXMinutes = var4;
+    var4 = {
+        'one': '1 minuto',
+        'other': '{{count}} minutos'
+    };
+    var3.xMinutes = var4;
+    var4 = {
+        'one': 'alrededor de 1 hora',
+        'other': 'alrededor de {{count}} horas'
+    };
+    var3.aboutXHours = var4;
+    var4 = {
+        'one': '1 hora',
+        'other': '{{count}} horas'
+    };
+    var3.xHours = var4;
+    var4 = {
+        'one': '1 día',
+        'other': '{{count}} días'
+    };
+    var3.xDays = var4;
+    var4 = {
+        'one': 'alrededor de 1 semana',
+        'other': 'alrededor de {{count}} semanas'
+    };
+    var3.aboutXWeeks = var4;
+    var4 = {
+        'one': '1 semana',
+        'other': '{{count}} semanas'
+    };
+    var3.xWeeks = var4;
+    var4 = {
+        'one': 'alrededor de 1 mes',
+        'other': 'alrededor de {{count}} meses'
+    };
+    var3.aboutXMonths = var4;
+    var4 = {
+        'one': '1 mes',
+        'other': '{{count}} meses'
+    };
+    var3.xMonths = var4;
+    var4 = {
+        'one': 'alrededor de 1 año',
+        'other': 'alrededor de {{count}} años'
+    };
+    var3.aboutXYears = var4;
+    var4 = {
+        'one': '1 año',
+        'other': '{{count}} años'
+    };
+    var3.xYears = var4;
+    var4 = {
+        'one': 'más de 1 año',
+        'other': 'más de {{count}} años'
+    };
+    var3.overXYears = var4;
+    var4 = {
+        'one': 'casi 1 año',
+        'other': 'casi {{count}} años'
+    };
+    var3.almostXYears = var4;
     var _closure1_slot0 = var3;
-    var3 = {
-        'lastWeek': "'el' eeee 'pasado a las' p",
-        'yesterday': "'ayer a las' p",
-        'today': "'hoy a las' p",
-        'tomorrow': "'mañana a las' p",
-        'nextWeek': "eeee 'a las' p",
-        'other': 'P'
-    };
-    var _closure1_slot1 = var3;
-    var2 = function arg0, arg1, arg2, arg3() {
-        _fun22053: for (var _fun22053_ip = 0;;) switch (_fun22053_ip) {
+    var2 = function arg0, arg1, arg2() {
+        _fun22054: for (var _fun22054_ip = 0;;) switch (_fun22054_ip) {
             case 0:
-                var2 = arg0;
-                var1 = arg1;
-                var0 = var1.getUTCHours;
-                var1 = var0.bind(var1)();
-                var0 = 1;
-                if (!(var0 === var1)) {
-                    _fun22053_ip = 36;
-                    continue _fun22053
+                var4 = arg1;
+                var1 = arg2;
+                var2 = _closure1_slot0;
+                var0 = arg0;
+                var2 = var2[var0];
+                var5 = 'string';
+                var0 = typeof var2;
+                var3 = var2;
+                if (!(var5 !== var0)) {
+                    _fun22054_ip = 84;
+                    continue _fun22054
                 }
-            case 23:
-                var0 = _closure1_slot0;
-                var0 = var0[var2];
-                _fun22053_ip = 47;
-                continue _fun22053;
-            case 36:
-                var1 = _closure1_slot1;
-                var0 = var1[var2];
-            case 47:
+            case 34:
+                var0 = 1;
+                if (!(var0 !== var4)) {
+                    _fun22054_ip = 75;
+                    continue _fun22054
+                }
+            case 41:
+                var6 = var2.other;
+                var5 = var6.replace;
+                var0 = var4.toString;
+                var4 = var0.bind(var4)();
+                var0 = '{{count}}';
+                var0 = var5.bind(var6)(var0, var4);
+                _fun22054_ip = 81;
+                continue _fun22054;
+            case 75:
+                var0 = var2.one;
+            case 81:
+                var3 = var0;
+            case 84:
+                var2 = null;
+                var0 = var3;
+                if (!(var2 != var1)) {
+                    _fun22054_ip = 151;
+                    continue _fun22054
+                }
+            case 93:
+                var2 = var1.addSuffix;
+                var0 = var3;
+                if (!var2) {
+                    _fun22054_ip = 151;
+                    continue _fun22054
+                }
+            case 105:
+                var2 = var1.comparison;
+                if (!var2) {
+                    _fun22054_ip = 126;
+                    continue _fun22054
+                }
+            case 114:
+                var2 = var1.comparison;
+                var1 = 0;
+                if (!(!(var2 > var1))) {
+                    _fun22054_ip = 138;
+                    continue _fun22054
+                }
+            case 126:
+                var1 = 'hace ';
+                var1 = var1 + var3;
+                _fun22054_ip = 148;
+                continue _fun22054;
+            case 138:
+                var2 = 'en ';
+                var1 = var2 + var3;
+            case 148:
+                var0 = var1;
+            case 151:
                 return var0;
         }
     };

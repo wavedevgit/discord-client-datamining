@@ -16,8 +16,8 @@ import android.view.View;
 import b2.e;
 import com.facebook.react.uimanager.ViewProps;
 import java.util.ArrayList;
-import ph.g;
-import ph.k;
+import qh.g;
+import qh.k;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 class c extends b {
     private StateListAnimator O;
@@ -29,14 +29,14 @@ class c extends b {
             super(kVar);
         }
 
-        @Override // ph.g, android.graphics.drawable.Drawable
+        @Override // qh.g, android.graphics.drawable.Drawable
         public boolean isStateful() {
             return true;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public c(FloatingActionButton floatingActionButton, oh.b bVar) {
+    public c(FloatingActionButton floatingActionButton, ph.b bVar) {
         super(floatingActionButton, bVar);
     }
 
@@ -48,12 +48,12 @@ class c extends b {
         stateListAnimator.addState(b.L, h0(f10, f11));
         AnimatorSet animatorSet = new AnimatorSet();
         ArrayList arrayList = new ArrayList();
-        arrayList.add(ObjectAnimator.ofFloat(this.f15057w, ViewProps.ELEVATION, f10).setDuration(0L));
+        arrayList.add(ObjectAnimator.ofFloat(this.f15037w, ViewProps.ELEVATION, f10).setDuration(0L));
         if (Build.VERSION.SDK_INT <= 24) {
-            FloatingActionButton floatingActionButton = this.f15057w;
+            FloatingActionButton floatingActionButton = this.f15037w;
             arrayList.add(ObjectAnimator.ofFloat(floatingActionButton, View.TRANSLATION_Z, floatingActionButton.getTranslationZ()).setDuration(100L));
         }
-        arrayList.add(ObjectAnimator.ofFloat(this.f15057w, View.TRANSLATION_Z, 0.0f).setDuration(100L));
+        arrayList.add(ObjectAnimator.ofFloat(this.f15037w, View.TRANSLATION_Z, 0.0f).setDuration(100L));
         animatorSet.playSequentially((Animator[]) arrayList.toArray(new Animator[0]));
         animatorSet.setInterpolator(b.D);
         stateListAnimator.addState(b.M, animatorSet);
@@ -63,7 +63,7 @@ class c extends b {
 
     private Animator h0(float f10, float f11) {
         AnimatorSet animatorSet = new AnimatorSet();
-        animatorSet.play(ObjectAnimator.ofFloat(this.f15057w, ViewProps.ELEVATION, f10).setDuration(0L)).with(ObjectAnimator.ofFloat(this.f15057w, View.TRANSLATION_Z, f11).setDuration(100L));
+        animatorSet.play(ObjectAnimator.ofFloat(this.f15037w, ViewProps.ELEVATION, f10).setDuration(0L)).with(ObjectAnimator.ofFloat(this.f15037w, View.TRANSLATION_Z, f11).setDuration(100L));
         animatorSet.setInterpolator(b.D);
         return animatorSet;
     }
@@ -75,10 +75,10 @@ class c extends b {
 
     @Override // com.google.android.material.floatingactionbutton.b
     void C(float f10, float f11, float f12) {
-        if (this.f15057w.getStateListAnimator() == this.O) {
+        if (this.f15037w.getStateListAnimator() == this.O) {
             StateListAnimator g02 = g0(f10, f11, f12);
             this.O = g02;
-            this.f15057w.setStateListAnimator(g02);
+            this.f15037w.setStateListAnimator(g02);
         }
         if (W()) {
             c0();
@@ -93,9 +93,9 @@ class c extends b {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.material.floatingactionbutton.b
     public void S(ColorStateList colorStateList) {
-        Drawable drawable = this.f15037c;
+        Drawable drawable = this.f15017c;
         if (drawable instanceof RippleDrawable) {
-            ((RippleDrawable) drawable).setColor(nh.b.a(colorStateList));
+            ((RippleDrawable) drawable).setColor(oh.b.a(colorStateList));
         } else {
             super.S(colorStateList);
         }
@@ -103,7 +103,7 @@ class c extends b {
 
     @Override // com.google.android.material.floatingactionbutton.b
     boolean W() {
-        if (!this.f15058x.c() && Y()) {
+        if (!this.f15038x.c() && Y()) {
             return false;
         }
         return true;
@@ -114,30 +114,30 @@ class c extends b {
     }
 
     com.google.android.material.floatingactionbutton.a f0(int i10, ColorStateList colorStateList) {
-        Context context = this.f15057w.getContext();
-        com.google.android.material.floatingactionbutton.a aVar = new com.google.android.material.floatingactionbutton.a((k) e.g(this.f15035a));
-        aVar.e(androidx.core.content.a.c(context, zg.c.f55574e), androidx.core.content.a.c(context, zg.c.f55573d), androidx.core.content.a.c(context, zg.c.f55571b), androidx.core.content.a.c(context, zg.c.f55572c));
+        Context context = this.f15037w.getContext();
+        com.google.android.material.floatingactionbutton.a aVar = new com.google.android.material.floatingactionbutton.a((k) e.g(this.f15015a));
+        aVar.e(androidx.core.content.a.c(context, ah.c.f669e), androidx.core.content.a.c(context, ah.c.f668d), androidx.core.content.a.c(context, ah.c.f666b), androidx.core.content.a.c(context, ah.c.f667c));
         aVar.d(i10);
         aVar.c(colorStateList);
         return aVar;
     }
 
     g i0() {
-        return new a((k) e.g(this.f15035a));
+        return new a((k) e.g(this.f15015a));
     }
 
     @Override // com.google.android.material.floatingactionbutton.b
     public float j() {
-        return this.f15057w.getElevation();
+        return this.f15037w.getElevation();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.material.floatingactionbutton.b
     public void o(Rect rect) {
-        if (this.f15058x.c()) {
+        if (this.f15038x.c()) {
             super.o(rect);
         } else if (!Y()) {
-            int sizeDimension = (this.f15045k - this.f15057w.getSizeDimension()) / 2;
+            int sizeDimension = (this.f15025k - this.f15037w.getSizeDimension()) / 2;
             rect.set(sizeDimension, sizeDimension, sizeDimension, sizeDimension);
         } else {
             rect.set(0, 0, 0, 0);
@@ -149,22 +149,22 @@ class c extends b {
     public void u(ColorStateList colorStateList, PorterDuff.Mode mode, ColorStateList colorStateList2, int i10) {
         Drawable drawable;
         g i02 = i0();
-        this.f15036b = i02;
+        this.f15016b = i02;
         i02.setTintList(colorStateList);
         if (mode != null) {
-            this.f15036b.setTintMode(mode);
+            this.f15016b.setTintMode(mode);
         }
-        this.f15036b.N(this.f15057w.getContext());
+        this.f15016b.N(this.f15037w.getContext());
         if (i10 > 0) {
-            this.f15038d = f0(i10, colorStateList);
-            drawable = new LayerDrawable(new Drawable[]{(Drawable) e.g(this.f15038d), (Drawable) e.g(this.f15036b)});
+            this.f15018d = f0(i10, colorStateList);
+            drawable = new LayerDrawable(new Drawable[]{(Drawable) e.g(this.f15018d), (Drawable) e.g(this.f15016b)});
         } else {
-            this.f15038d = null;
-            drawable = this.f15036b;
+            this.f15018d = null;
+            drawable = this.f15016b;
         }
-        RippleDrawable rippleDrawable = new RippleDrawable(nh.b.a(colorStateList2), drawable, null);
-        this.f15037c = rippleDrawable;
-        this.f15039e = rippleDrawable;
+        RippleDrawable rippleDrawable = new RippleDrawable(oh.b.a(colorStateList2), drawable, null);
+        this.f15017c = rippleDrawable;
+        this.f15019e = rippleDrawable;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */

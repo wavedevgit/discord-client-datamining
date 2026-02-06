@@ -68,4 +68,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.CHAT_PLACEHOLDER_ROW_LINE_HEIGHT = var3;
     var2.CHAT_PLACEHOLDER_ROW_LINE_MARGIN_TOP = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [671, 5458, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [671, 5459, 2]);

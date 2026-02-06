@@ -8,18 +8,18 @@ import java.util.Iterator;
 public final class s implements io.sentry.cache.g {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final s f29766d = new s();
+    private static final s f28910d = new s();
 
     public static s b() {
-        return f29766d;
+        return f28910d;
     }
 
     @Override // io.sentry.cache.g
-    public void E(l5 l5Var) {
+    public void I(l5 l5Var) {
     }
 
     @Override // io.sentry.cache.g
-    public boolean N0(l5 l5Var, Hint hint) {
+    public boolean K0(l5 l5Var, Hint hint) {
         return false;
     }
 

@@ -1,55 +1,50 @@
 package hu;
 
-import kotlin.jvm.internal.DefaultConstructorMarker;
+import okhttp3.Interceptor;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public enum b {
-    NO_ERROR(0),
-    PROTOCOL_ERROR(1),
-    INTERNAL_ERROR(2),
-    FLOW_CONTROL_ERROR(3),
-    SETTINGS_TIMEOUT(4),
-    STREAM_CLOSED(5),
-    FRAME_SIZE_ERROR(6),
-    REFUSED_STREAM(7),
-    CANCEL(8),
-    COMPRESSION_ERROR(9),
-    CONNECT_ERROR(10),
-    ENHANCE_YOUR_CALM(11),
-    INADEQUATE_SECURITY(12),
-    HTTP_1_1_REQUIRED(13);
-    
+public final class b implements Interceptor {
 
-    /* renamed from: e  reason: collision with root package name */
-    public static final a f26998e = new a(null);
+    /* renamed from: a  reason: collision with root package name */
+    private final boolean f26494a;
 
-    /* renamed from: d  reason: collision with root package name */
-    private final int f27012d;
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a {
-        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
-        }
-
-        public final b a(int i10) {
-            b[] values;
-            for (b bVar : b.values()) {
-                if (bVar.d() == i10) {
-                    return bVar;
-                }
-            }
-            return null;
-        }
-
-        private a() {
-        }
+    public b(boolean z10) {
+        this.f26494a = z10;
     }
 
-    b(int i10) {
-        this.f27012d = i10;
+    private final boolean a(int i10) {
+        if (i10 == 100) {
+            return true;
+        }
+        if (102 <= i10 && i10 < 200) {
+            return true;
+        }
+        return false;
     }
 
-    public final int d() {
-        return this.f27012d;
+    /* JADX WARN: Multi-variable type inference failed */
+    /* JADX WARN: Removed duplicated region for block: B:46:0x00e5 A[Catch: IOException -> 0x00b8, TryCatch #2 {IOException -> 0x00b8, blocks: (B:39:0x00aa, B:41:0x00b3, B:44:0x00bb, B:46:0x00e5, B:48:0x00ee, B:49:0x00f1, B:50:0x0115, B:54:0x0120, B:56:0x013f, B:58:0x014d, B:65:0x0163, B:67:0x0169, B:71:0x0176, B:73:0x0190, B:74:0x0198, B:75:0x01a2, B:60:0x0158, B:55:0x012f), top: B:87:0x00aa }] */
+    /* JADX WARN: Removed duplicated region for block: B:67:0x0169 A[Catch: IOException -> 0x00b8, TryCatch #2 {IOException -> 0x00b8, blocks: (B:39:0x00aa, B:41:0x00b3, B:44:0x00bb, B:46:0x00e5, B:48:0x00ee, B:49:0x00f1, B:50:0x0115, B:54:0x0120, B:56:0x013f, B:58:0x014d, B:65:0x0163, B:67:0x0169, B:71:0x0176, B:73:0x0190, B:74:0x0198, B:75:0x01a2, B:60:0x0158, B:55:0x012f), top: B:87:0x00aa }] */
+    /* JADX WARN: Removed duplicated region for block: B:68:0x016e  */
+    /* JADX WARN: Removed duplicated region for block: B:71:0x0176 A[Catch: IOException -> 0x00b8, TryCatch #2 {IOException -> 0x00b8, blocks: (B:39:0x00aa, B:41:0x00b3, B:44:0x00bb, B:46:0x00e5, B:48:0x00ee, B:49:0x00f1, B:50:0x0115, B:54:0x0120, B:56:0x013f, B:58:0x014d, B:65:0x0163, B:67:0x0169, B:71:0x0176, B:73:0x0190, B:74:0x0198, B:75:0x01a2, B:60:0x0158, B:55:0x012f), top: B:87:0x00aa }] */
+    /* JADX WARN: Removed duplicated region for block: B:87:0x00aa A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /* JADX WARN: Type inference failed for: r9v13, types: [boolean] */
+    /* JADX WARN: Type inference failed for: r9v14 */
+    /* JADX WARN: Type inference failed for: r9v15 */
+    /* JADX WARN: Type inference failed for: r9v16 */
+    /* JADX WARN: Type inference failed for: r9v23 */
+    /* JADX WARN: Type inference failed for: r9v24 */
+    /* JADX WARN: Type inference failed for: r9v25 */
+    /* JADX WARN: Type inference failed for: r9v26 */
+    @Override // okhttp3.Interceptor
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public okhttp3.Response intercept(okhttp3.Interceptor.Chain r14) {
+        /*
+            Method dump skipped, instructions count: 429
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: hu.b.intercept(okhttp3.Interceptor$Chain):okhttp3.Response");
     }
 }

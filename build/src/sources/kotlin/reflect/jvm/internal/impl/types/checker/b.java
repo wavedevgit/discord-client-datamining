@@ -7,16 +7,16 @@ import kotlin.jvm.functions.Function0;
 public class b implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f34665d;
+    private final List f34685d;
 
     public b(List list) {
-        this.f34665d = list;
+        this.f34685d = list;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         List a10;
-        a10 = NewCapturedTypeConstructor.a(this.f34665d);
+        a10 = NewCapturedTypeConstructor.a(this.f34685d);
         return a10;
     }
 }

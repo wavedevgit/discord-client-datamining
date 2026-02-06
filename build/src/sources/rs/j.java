@@ -1,121 +1,94 @@
 package rs;
 
-import java.util.concurrent.CancellationException;
-import kotlin.Result;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
-import kotlin.coroutines.CoroutineContext;
-import kotlinx.coroutines.CoroutineDispatcher;
+import kotlin.jvm.functions.Function2;
+import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.Job;
-import ms.l1;
-import ms.u1;
+import kotlinx.coroutines.flow.Flow;
+import kotlinx.coroutines.flow.FlowCollector;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class j {
+public abstract /* synthetic */ class j {
 
-    /* renamed from: a */
-    private static final e0 f48968a = new e0("UNDEFINED");
+    /* JADX INFO: Access modifiers changed from: package-private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
-    /* renamed from: b */
-    public static final e0 f48969b = new e0("REUSABLE_CLAIMED");
+        /* renamed from: d  reason: collision with root package name */
+        int f49290d;
 
-    public static final /* synthetic */ e0 a() {
-        return f48968a;
-    }
+        /* renamed from: e  reason: collision with root package name */
+        final /* synthetic */ Flow f49291e;
 
-    public static final void b(Continuation continuation, Object obj) {
-        u1 u1Var;
-        if (continuation instanceof i) {
-            i iVar = (i) continuation;
-            Object b10 = ms.t.b(obj);
-            if (d(iVar.f48964o, iVar.getContext())) {
-                iVar.f48966q = b10;
-                iVar.f35049i = 1;
-                c(iVar.f48964o, iVar.getContext(), iVar);
-                return;
-            }
-            ms.p0 b11 = l1.f38926a.b();
-            if (b11.r2()) {
-                iVar.f48966q = b10;
-                iVar.f35049i = 1;
-                b11.j2(iVar);
-                return;
-            }
-            b11.p2(true);
-            try {
-                Job job = (Job) iVar.getContext().k(Job.f34997h);
-                if (job != null && !job.a()) {
-                    CancellationException N = job.N();
-                    iVar.b(b10, N);
-                    Result.a aVar = Result.f31985e;
-                    iVar.resumeWith(Result.b(kotlin.c.a(N)));
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        a(Flow flow, Continuation continuation) {
+            super(2, continuation);
+            this.f49291e = flow;
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.a
+        public final Continuation create(Object obj, Continuation continuation) {
+            return new a(this.f49291e, continuation);
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.a
+        public final Object invokeSuspend(Object obj) {
+            Object f10 = wr.b.f();
+            int i10 = this.f49290d;
+            if (i10 != 0) {
+                if (i10 == 1) {
+                    kotlin.c.b(obj);
                 } else {
-                    Continuation continuation2 = iVar.f48965p;
-                    Object obj2 = iVar.f48967r;
-                    CoroutineContext context = continuation2.getContext();
-                    Object i10 = l0.i(context, obj2);
-                    if (i10 != l0.f48979a) {
-                        u1Var = ms.x.m(continuation2, context, i10);
-                    } else {
-                        u1Var = null;
-                    }
-                    iVar.f48965p.resumeWith(obj);
-                    Unit unit = Unit.f31988a;
-                    if (u1Var == null || u1Var.X0()) {
-                        l0.f(context, i10);
-                    }
+                    throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                do {
-                } while (b11.u2());
-            } finally {
-                try {
-                    return;
-                } finally {
+            } else {
+                kotlin.c.b(obj);
+                Flow flow = this.f49291e;
+                this.f49290d = 1;
+                if (g.h(flow, this) == f10) {
+                    return f10;
                 }
             }
-            return;
+            return Unit.f32008a;
         }
-        continuation.resumeWith(obj);
-    }
 
-    public static final void c(CoroutineDispatcher coroutineDispatcher, CoroutineContext coroutineContext, Runnable runnable) {
-        try {
-            coroutineDispatcher.E1(coroutineContext, runnable);
-        } catch (Throwable th2) {
-            throw new ms.j0(th2, coroutineDispatcher, coroutineContext);
+        @Override // kotlin.jvm.functions.Function2
+        public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
         }
     }
 
-    public static final boolean d(CoroutineDispatcher coroutineDispatcher, CoroutineContext coroutineContext) {
-        try {
-            return coroutineDispatcher.W1(coroutineContext);
-        } catch (Throwable th2) {
-            throw new ms.j0(th2, coroutineDispatcher, coroutineContext);
+    public static final Object a(Flow flow, Continuation continuation) {
+        Object collect = flow.collect(ss.s.f50098d, continuation);
+        if (collect == wr.b.f()) {
+            return collect;
         }
+        return Unit.f32008a;
     }
 
-    public static final boolean e(i iVar) {
-        Unit unit = Unit.f31988a;
-        ms.p0 b10 = l1.f38926a.b();
-        if (b10.s2()) {
-            return false;
+    public static final Object b(Flow flow, Function2 function2, Continuation continuation) {
+        Flow b10;
+        b10 = l.b(g.z(flow, function2), 0, null, 2, null);
+        Object h10 = g.h(b10, continuation);
+        if (h10 == wr.b.f()) {
+            return h10;
         }
-        if (b10.r2()) {
-            iVar.f48966q = unit;
-            iVar.f35049i = 1;
-            b10.j2(iVar);
-            return true;
+        return Unit.f32008a;
+    }
+
+    public static final Object c(FlowCollector flowCollector, Flow flow, Continuation continuation) {
+        g.q(flowCollector);
+        Object collect = flow.collect(flowCollector, continuation);
+        if (collect == wr.b.f()) {
+            return collect;
         }
-        b10.p2(true);
-        try {
-            iVar.run();
-            do {
-            } while (b10.u2());
-        } finally {
-            try {
-                return false;
-            } finally {
-            }
-        }
-        return false;
+        return Unit.f32008a;
+    }
+
+    public static final Job d(Flow flow, CoroutineScope coroutineScope) {
+        Job d10;
+        d10 = os.i.d(coroutineScope, null, null, new a(flow, null), 3, null);
+        return d10;
     }
 }

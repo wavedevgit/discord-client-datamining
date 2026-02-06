@@ -15,14 +15,14 @@ import androidx.lifecycle.r0;
 public class l extends ComponentDialog implements b {
 
     /* renamed from: o  reason: collision with root package name */
-    private AppCompatDelegate f1184o;
+    private AppCompatDelegate f1513o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final k.a f1185p;
+    private final k.a f1514p;
 
     public l(Context context, int i10) {
         super(context, g(context, i10));
-        this.f1185p = new k.a() { // from class: androidx.appcompat.app.k
+        this.f1514p = new k.a() { // from class: androidx.appcompat.app.k
             @Override // androidx.core.view.k.a
             public final boolean superDispatchKeyEvent(KeyEvent keyEvent) {
                 return l.this.i(keyEvent);
@@ -36,7 +36,7 @@ public class l extends ComponentDialog implements b {
     private static int g(Context context, int i10) {
         if (i10 == 0) {
             TypedValue typedValue = new TypedValue();
-            context.getTheme().resolveAttribute(f.a.f21920x, typedValue, true);
+            context.getTheme().resolveAttribute(f.a.f22221x, typedValue, true);
             return typedValue.resourceId;
         }
         return i10;
@@ -61,14 +61,14 @@ public class l extends ComponentDialog implements b {
 
     @Override // android.app.Dialog, android.view.Window.Callback
     public boolean dispatchKeyEvent(KeyEvent keyEvent) {
-        return androidx.core.view.k.e(this.f1185p, getWindow().getDecorView(), this, keyEvent);
+        return androidx.core.view.k.e(this.f1514p, getWindow().getDecorView(), this, keyEvent);
     }
 
     public AppCompatDelegate f() {
-        if (this.f1184o == null) {
-            this.f1184o = AppCompatDelegate.k(this, this);
+        if (this.f1513o == null) {
+            this.f1513o = AppCompatDelegate.k(this, this);
         }
-        return this.f1184o;
+        return this.f1513o;
     }
 
     @Override // android.app.Dialog

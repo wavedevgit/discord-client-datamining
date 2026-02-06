@@ -15,10 +15,10 @@ public final class Suggestion implements Parcelable {
     public static final Parcelable.Creator<Suggestion> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f19773d;
+    private final String f19753d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f19774e;
+    private final String f19754e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -39,16 +39,16 @@ public final class Suggestion implements Parcelable {
     public Suggestion(String id2, String address) {
         Intrinsics.checkNotNullParameter(id2, "id");
         Intrinsics.checkNotNullParameter(address, "address");
-        this.f19773d = id2;
-        this.f19774e = address;
+        this.f19753d = id2;
+        this.f19754e = address;
     }
 
     public final String a() {
-        return this.f19774e;
+        return this.f19754e;
     }
 
     public final String b() {
-        return this.f19773d;
+        return this.f19753d;
     }
 
     @Override // android.os.Parcelable
@@ -57,13 +57,13 @@ public final class Suggestion implements Parcelable {
     }
 
     public String toString() {
-        return String.valueOf(this.f19774e);
+        return String.valueOf(this.f19754e);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f19773d);
-        dest.writeString(this.f19774e);
+        dest.writeString(this.f19753d);
+        dest.writeString(this.f19754e);
     }
 }

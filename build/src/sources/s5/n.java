@@ -3,14 +3,14 @@ package s5;
 public class n implements c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f49423a;
+    private final String f49758a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final r5.m f49424b;
+    private final r5.m f49759b;
 
     public n(String str, r5.m mVar) {
-        this.f49423a = str;
-        this.f49424b = mVar;
+        this.f49758a = str;
+        this.f49759b = mVar;
     }
 
     @Override // s5.c
@@ -19,10 +19,10 @@ public class n implements c {
     }
 
     public r5.m b() {
-        return this.f49424b;
+        return this.f49759b;
     }
 
     public String c() {
-        return this.f49423a;
+        return this.f49758a;
     }
 }

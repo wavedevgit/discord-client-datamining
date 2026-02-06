@@ -1,6 +1,6 @@
 package kotlinx.serialization.internal;
 
-import gt.f2;
+import jt.f2;
 import kotlin.jvm.internal.BooleanCompanionObject;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.serialization.KSerializer;
@@ -9,14 +9,14 @@ import kotlinx.serialization.encoding.CompositeEncoder;
 public final class a extends f2 implements KSerializer {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f35088c = new a();
+    public static final a f35108c = new a();
 
     private a() {
-        super(et.a.w(BooleanCompanionObject.INSTANCE));
+        super(gt.a.w(BooleanCompanionObject.INSTANCE));
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // gt.a
+    @Override // jt.a
     /* renamed from: v */
     public int e(boolean[] zArr) {
         Intrinsics.checkNotNullParameter(zArr, "<this>");
@@ -24,37 +24,37 @@ public final class a extends f2 implements KSerializer {
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // gt.f2
+    @Override // jt.f2
     /* renamed from: w */
     public boolean[] r() {
         return new boolean[0];
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // gt.s, gt.a
+    @Override // jt.s, jt.a
     /* renamed from: x */
-    public void h(kotlinx.serialization.encoding.c decoder, int i10, gt.g builder, boolean z10) {
+    public void h(kotlinx.serialization.encoding.c decoder, int i10, jt.g builder, boolean z10) {
         Intrinsics.checkNotNullParameter(decoder, "decoder");
         Intrinsics.checkNotNullParameter(builder, "builder");
         builder.e(decoder.C(getDescriptor(), i10));
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // gt.a
+    @Override // jt.a
     /* renamed from: y */
-    public gt.g k(boolean[] zArr) {
+    public jt.g k(boolean[] zArr) {
         Intrinsics.checkNotNullParameter(zArr, "<this>");
-        return new gt.g(zArr);
+        return new jt.g(zArr);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // gt.f2
+    @Override // jt.f2
     /* renamed from: z */
     public void u(CompositeEncoder encoder, boolean[] content, int i10) {
         Intrinsics.checkNotNullParameter(encoder, "encoder");
         Intrinsics.checkNotNullParameter(content, "content");
         for (int i11 = 0; i11 < i10; i11++) {
-            encoder.w(getDescriptor(), i11, content[i11]);
+            encoder.y(getDescriptor(), i11, content[i11]);
         }
     }
 }

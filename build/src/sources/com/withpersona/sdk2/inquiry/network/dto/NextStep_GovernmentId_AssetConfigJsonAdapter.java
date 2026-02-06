@@ -64,7 +64,7 @@ public final class NextStep_GovernmentId_AssetConfigJsonAdapter extends h {
     @NotNull
     public NextStep.GovernmentId.AssetConfig fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         NextStep.GovernmentId.AssetConfig.SelectPage selectPage = null;
         NextStep.GovernmentId.AssetConfig.PromptPage promptPage = null;
         NextStep.GovernmentId.AssetConfig.CapturePage capturePage = null;
@@ -72,28 +72,28 @@ public final class NextStep_GovernmentId_AssetConfigJsonAdapter extends h {
         NextStep.GovernmentId.AssetConfig.PendingPage pendingPage = null;
         int i10 = -1;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 selectPage = (NextStep.GovernmentId.AssetConfig.SelectPage) this.nullableSelectPageAdapter.fromJson(reader);
                 i10 &= -2;
-            } else if (W == 1) {
+            } else if (J == 1) {
                 promptPage = (NextStep.GovernmentId.AssetConfig.PromptPage) this.nullablePromptPageAdapter.fromJson(reader);
                 i10 &= -3;
-            } else if (W == 2) {
+            } else if (J == 2) {
                 capturePage = (NextStep.GovernmentId.AssetConfig.CapturePage) this.nullableCapturePageAdapter.fromJson(reader);
                 i10 &= -5;
-            } else if (W == 3) {
+            } else if (J == 3) {
                 checkPage = (NextStep.GovernmentId.AssetConfig.CheckPage) this.nullableCheckPageAdapter.fromJson(reader);
                 i10 &= -9;
-            } else if (W == 4) {
+            } else if (J == 4) {
                 pendingPage = (NextStep.GovernmentId.AssetConfig.PendingPage) this.nullablePendingPageAdapter.fromJson(reader);
                 i10 &= -17;
             }
         }
-        reader.z();
+        reader.D();
         if (i10 == -32) {
             NextStep.GovernmentId.AssetConfig.PendingPage pendingPage2 = pendingPage;
             NextStep.GovernmentId.AssetConfig.CheckPage checkPage2 = checkPage;
@@ -106,7 +106,7 @@ public final class NextStep_GovernmentId_AssetConfigJsonAdapter extends h {
         NextStep.GovernmentId.AssetConfig.SelectPage selectPage2 = selectPage;
         Constructor<NextStep.GovernmentId.AssetConfig> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = NextStep.GovernmentId.AssetConfig.class.getDeclaredConstructor(NextStep.GovernmentId.AssetConfig.SelectPage.class, NextStep.GovernmentId.AssetConfig.PromptPage.class, NextStep.GovernmentId.AssetConfig.CapturePage.class, NextStep.GovernmentId.AssetConfig.CheckPage.class, NextStep.GovernmentId.AssetConfig.PendingPage.class, Integer.TYPE, ym.c.f54853c);
+            constructor = NextStep.GovernmentId.AssetConfig.class.getDeclaredConstructor(NextStep.GovernmentId.AssetConfig.SelectPage.class, NextStep.GovernmentId.AssetConfig.PromptPage.class, NextStep.GovernmentId.AssetConfig.CapturePage.class, NextStep.GovernmentId.AssetConfig.CheckPage.class, NextStep.GovernmentId.AssetConfig.PendingPage.class, Integer.TYPE, an.c.f1164c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -120,17 +120,17 @@ public final class NextStep_GovernmentId_AssetConfigJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (assetConfig != null) {
             writer.k();
-            writer.W("selectPage");
+            writer.J("selectPage");
             this.nullableSelectPageAdapter.toJson(writer, assetConfig.getSelectPage());
-            writer.W("promptPage");
+            writer.J("promptPage");
             this.nullablePromptPageAdapter.toJson(writer, assetConfig.getPromptPage());
-            writer.W("capturePage");
+            writer.J("capturePage");
             this.nullableCapturePageAdapter.toJson(writer, assetConfig.getCapturePage());
-            writer.W("checkPage");
+            writer.J("checkPage");
             this.nullableCheckPageAdapter.toJson(writer, assetConfig.getCheckPage());
-            writer.W("pendingPage");
+            writer.J("pendingPage");
             this.nullablePendingPageAdapter.toJson(writer, assetConfig.getPendingPage());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

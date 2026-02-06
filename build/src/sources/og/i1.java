@@ -1,33 +1,50 @@
 package og;
+
+import yi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class i1 extends p0 {
+final class i1 implements yi.d {
 
-    /* renamed from: i  reason: collision with root package name */
-    private final transient Object[] f42978i;
+    /* renamed from: a  reason: collision with root package name */
+    static final i1 f42107a = new i1();
 
-    /* renamed from: o  reason: collision with root package name */
-    private final transient int f42979o;
+    /* renamed from: b  reason: collision with root package name */
+    private static final yi.c f42108b;
 
-    /* renamed from: p  reason: collision with root package name */
-    private final transient int f42980p;
+    /* renamed from: c  reason: collision with root package name */
+    private static final yi.c f42109c;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public i1(Object[] objArr, int i10, int i11) {
-        this.f42978i = objArr;
-        this.f42979o = i10;
-        this.f42980p = i11;
+    /* renamed from: d  reason: collision with root package name */
+    private static final yi.c f42110d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private static final yi.c f42111e;
+
+    static {
+        c.b a10 = yi.c.a("errorCode");
+        f fVar = new f();
+        fVar.a(1);
+        f42108b = a10.b(fVar.b()).a();
+        c.b a11 = yi.c.a("imageInfo");
+        f fVar2 = new f();
+        fVar2.a(2);
+        f42109c = a11.b(fVar2.b()).a();
+        c.b a12 = yi.c.a("isColdCall");
+        f fVar3 = new f();
+        fVar3.a(3);
+        f42110d = a12.b(fVar3.b()).a();
+        c.b a13 = yi.c.a("detectorOptions");
+        f fVar4 = new f();
+        fVar4.a(4);
+        f42111e = a13.b(fVar4.b()).a();
     }
 
-    @Override // java.util.List
-    public final Object get(int i10) {
-        c.a(i10, this.f42980p, "index");
-        Object obj = this.f42978i[i10 + i10 + this.f42979o];
-        obj.getClass();
-        return obj;
+    private i1() {
     }
 
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
-    public final int size() {
-        return this.f42980p;
+    @Override // yi.d
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        android.support.v4.media.session.b.a(obj);
+        yi.e eVar = (yi.e) obj2;
+        throw null;
     }
 }

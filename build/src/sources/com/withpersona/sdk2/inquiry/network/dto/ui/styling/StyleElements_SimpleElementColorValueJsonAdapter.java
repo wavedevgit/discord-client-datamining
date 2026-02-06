@@ -62,18 +62,18 @@ public final class StyleElements_SimpleElementColorValueJsonAdapter extends h {
     @NotNull
     public StyleElements.SimpleElementColorValue fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         Integer num = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 num = (Integer) this.nullableIntAtRgbaHexColorAdapter.fromJson(reader);
             }
         }
-        reader.z();
+        reader.D();
         return new StyleElements.SimpleElementColorValue(num);
     }
 
@@ -82,9 +82,9 @@ public final class StyleElements_SimpleElementColorValueJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (simpleElementColorValue != null) {
             writer.k();
-            writer.W("value");
+            writer.J("value");
             this.nullableIntAtRgbaHexColorAdapter.toJson(writer, simpleElementColorValue.getValue());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

@@ -9,7 +9,7 @@ public abstract class j {
         f fVar;
         Intrinsics.checkNotNullParameter(view, "<this>");
         while (view != null) {
-            Object tag = view.getTag(a.f51159a);
+            Object tag = view.getTag(a.f51200a);
             if (tag instanceof f) {
                 fVar = (f) tag;
             } else {
@@ -30,6 +30,6 @@ public abstract class j {
 
     public static final void b(View view, f fVar) {
         Intrinsics.checkNotNullParameter(view, "<this>");
-        view.setTag(a.f51159a, fVar);
+        view.setTag(a.f51200a, fVar);
     }
 }

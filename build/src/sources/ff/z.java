@@ -6,20 +6,20 @@ import ff.c;
 final class z implements c.a {
 
     /* renamed from: a  reason: collision with root package name */
-    final /* synthetic */ e f23002a;
+    final /* synthetic */ e f23303a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public z(e eVar) {
-        this.f23002a = eVar;
+        this.f23303a = eVar;
     }
 
     @Override // ff.c.a
     public final void a(boolean z10) {
         Handler handler;
         Handler handler2;
-        e eVar = this.f23002a;
-        handler = eVar.f22910y;
-        handler2 = eVar.f22910y;
+        e eVar = this.f23303a;
+        handler = eVar.f23211y;
+        handler2 = eVar.f23211y;
         handler.sendMessage(handler2.obtainMessage(1, Boolean.valueOf(z10)));
     }
 }

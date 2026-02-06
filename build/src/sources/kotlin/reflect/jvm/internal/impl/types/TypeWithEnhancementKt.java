@@ -37,7 +37,7 @@ public final class TypeWithEnhancementKt {
             if (unwrappedType instanceof FlexibleType) {
                 return new FlexibleTypeWithEnhancement((FlexibleType) unwrappedType, kotlinType);
             }
-            throw new or.p();
+            throw new qr.p();
         }
         return unwrappedType;
     }

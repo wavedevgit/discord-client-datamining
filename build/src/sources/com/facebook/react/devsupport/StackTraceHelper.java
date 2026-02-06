@@ -273,7 +273,7 @@ public final class StackTraceHelper {
             if (file == null) {
                 file = "";
             }
-            return new JSONObject(kotlin.collections.o0.m(or.v.a("file", file), or.v.a("methodName", getMethod()), or.v.a("lineNumber", Integer.valueOf(getLine())), or.v.a("column", Integer.valueOf(getColumn())), or.v.a(StackTraceHelper.COLLAPSE_KEY, Boolean.valueOf(isCollapsed()))));
+            return new JSONObject(kotlin.collections.o0.m(qr.v.a("file", file), qr.v.a("methodName", getMethod()), qr.v.a("lineNumber", Integer.valueOf(getLine())), qr.v.a("column", Integer.valueOf(getColumn())), qr.v.a(StackTraceHelper.COLLAPSE_KEY, Boolean.valueOf(isCollapsed()))));
         }
 
         public /* synthetic */ StackFrameImpl(String str, String str2, String str3, int i10, int i11, boolean z10, int i12, DefaultConstructorMarker defaultConstructorMarker) {

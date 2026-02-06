@@ -10,34 +10,34 @@ import java.util.List;
 public final class t0 extends SQLiteOpenHelper {
 
     /* renamed from: i  reason: collision with root package name */
-    private static final String f25793i = "INSERT INTO global_log_event_state VALUES (" + System.currentTimeMillis() + ")";
+    private static final String f25921i = "INSERT INTO global_log_event_state VALUES (" + System.currentTimeMillis() + ")";
 
     /* renamed from: o  reason: collision with root package name */
-    static int f25794o = 5;
+    static int f25922o = 5;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final a f25795p;
+    private static final a f25923p;
 
     /* renamed from: q  reason: collision with root package name */
-    private static final a f25796q;
+    private static final a f25924q;
 
     /* renamed from: r  reason: collision with root package name */
-    private static final a f25797r;
+    private static final a f25925r;
 
     /* renamed from: s  reason: collision with root package name */
-    private static final a f25798s;
+    private static final a f25926s;
 
     /* renamed from: t  reason: collision with root package name */
-    private static final a f25799t;
+    private static final a f25927t;
 
     /* renamed from: u  reason: collision with root package name */
-    private static final List f25800u;
+    private static final List f25928u;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f25801d;
+    private final int f25929d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f25802e;
+    private boolean f25930e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public interface a {
@@ -51,60 +51,43 @@ public final class t0 extends SQLiteOpenHelper {
                 t0.a(sQLiteDatabase);
             }
         };
-        f25795p = aVar;
+        f25923p = aVar;
         a aVar2 = new a() { // from class: hc.p0
             @Override // hc.t0.a
             public final void a(SQLiteDatabase sQLiteDatabase) {
                 t0.m(sQLiteDatabase);
             }
         };
-        f25796q = aVar2;
+        f25924q = aVar2;
         a aVar3 = new a() { // from class: hc.q0
             @Override // hc.t0.a
             public final void a(SQLiteDatabase sQLiteDatabase) {
                 sQLiteDatabase.execSQL("ALTER TABLE events ADD COLUMN payload_encoding TEXT");
             }
         };
-        f25797r = aVar3;
+        f25925r = aVar3;
         a aVar4 = new a() { // from class: hc.r0
             @Override // hc.t0.a
             public final void a(SQLiteDatabase sQLiteDatabase) {
-                t0.o(sQLiteDatabase);
+                t0.n(sQLiteDatabase);
             }
         };
-        f25798s = aVar4;
+        f25926s = aVar4;
         a aVar5 = new a() { // from class: hc.s0
             @Override // hc.t0.a
             public final void a(SQLiteDatabase sQLiteDatabase) {
                 t0.k(sQLiteDatabase);
             }
         };
-        f25799t = aVar5;
-        f25800u = Arrays.asList(aVar, aVar2, aVar3, aVar4, aVar5);
+        f25927t = aVar5;
+        f25928u = Arrays.asList(aVar, aVar2, aVar3, aVar4, aVar5);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public t0(Context context, String str, int i10) {
         super(context, str, (SQLiteDatabase.CursorFactory) null, i10);
-        this.f25802e = false;
-        this.f25801d = i10;
-    }
-
-    private void E(SQLiteDatabase sQLiteDatabase, int i10) {
-        y(sQLiteDatabase);
-        F(sQLiteDatabase, 0, i10);
-    }
-
-    private void F(SQLiteDatabase sQLiteDatabase, int i10, int i11) {
-        List list = f25800u;
-        if (i11 <= list.size()) {
-            while (i10 < i11) {
-                ((a) f25800u.get(i10)).a(sQLiteDatabase);
-                i10++;
-            }
-            return;
-        }
-        throw new IllegalArgumentException("Migration from " + i10 + " to " + i11 + " was requested, but cannot be performed. Only " + list.size() + " migrations are provided");
+        this.f25930e = false;
+        this.f25929d = i10;
     }
 
     public static /* synthetic */ void a(SQLiteDatabase sQLiteDatabase) {
@@ -120,7 +103,7 @@ public final class t0 extends SQLiteOpenHelper {
         sQLiteDatabase.execSQL("DROP TABLE IF EXISTS global_log_event_state");
         sQLiteDatabase.execSQL("CREATE TABLE log_event_dropped (log_source VARCHAR(45) NOT NULL,reason INTEGER NOT NULL,events_dropped_count BIGINT NOT NULL,PRIMARY KEY(log_source, reason))");
         sQLiteDatabase.execSQL("CREATE TABLE global_log_event_state (last_metrics_upload_ms BIGINT PRIMARY KEY)");
-        sQLiteDatabase.execSQL(f25793i);
+        sQLiteDatabase.execSQL(f25921i);
     }
 
     public static /* synthetic */ void m(SQLiteDatabase sQLiteDatabase) {
@@ -129,28 +112,45 @@ public final class t0 extends SQLiteOpenHelper {
         sQLiteDatabase.execSQL("DROP INDEX contexts_backend_priority");
     }
 
-    public static /* synthetic */ void o(SQLiteDatabase sQLiteDatabase) {
+    public static /* synthetic */ void n(SQLiteDatabase sQLiteDatabase) {
         sQLiteDatabase.execSQL("ALTER TABLE events ADD COLUMN inline BOOLEAN NOT NULL DEFAULT 1");
         sQLiteDatabase.execSQL("DROP TABLE IF EXISTS event_payloads");
         sQLiteDatabase.execSQL("CREATE TABLE event_payloads (sequence_num INTEGER NOT NULL, event_id INTEGER NOT NULL, bytes BLOB NOT NULL,FOREIGN KEY (event_id) REFERENCES events(_id) ON DELETE CASCADE,PRIMARY KEY (sequence_num, event_id))");
     }
 
-    private void y(SQLiteDatabase sQLiteDatabase) {
-        if (!this.f25802e) {
+    private void p(SQLiteDatabase sQLiteDatabase) {
+        if (!this.f25930e) {
             onConfigure(sQLiteDatabase);
         }
     }
 
+    private void s(SQLiteDatabase sQLiteDatabase, int i10) {
+        p(sQLiteDatabase);
+        y(sQLiteDatabase, 0, i10);
+    }
+
+    private void y(SQLiteDatabase sQLiteDatabase, int i10, int i11) {
+        List list = f25928u;
+        if (i11 <= list.size()) {
+            while (i10 < i11) {
+                ((a) f25928u.get(i10)).a(sQLiteDatabase);
+                i10++;
+            }
+            return;
+        }
+        throw new IllegalArgumentException("Migration from " + i10 + " to " + i11 + " was requested, but cannot be performed. Only " + list.size() + " migrations are provided");
+    }
+
     @Override // android.database.sqlite.SQLiteOpenHelper
     public void onConfigure(SQLiteDatabase sQLiteDatabase) {
-        this.f25802e = true;
+        this.f25930e = true;
         sQLiteDatabase.rawQuery("PRAGMA busy_timeout=0;", new String[0]).close();
         sQLiteDatabase.setForeignKeyConstraintsEnabled(true);
     }
 
     @Override // android.database.sqlite.SQLiteOpenHelper
     public void onCreate(SQLiteDatabase sQLiteDatabase) {
-        E(sQLiteDatabase, this.f25801d);
+        s(sQLiteDatabase, this.f25929d);
     }
 
     @Override // android.database.sqlite.SQLiteOpenHelper
@@ -161,17 +161,17 @@ public final class t0 extends SQLiteOpenHelper {
         sQLiteDatabase.execSQL("DROP TABLE IF EXISTS event_payloads");
         sQLiteDatabase.execSQL("DROP TABLE IF EXISTS log_event_dropped");
         sQLiteDatabase.execSQL("DROP TABLE IF EXISTS global_log_event_state");
-        E(sQLiteDatabase, i11);
+        s(sQLiteDatabase, i11);
     }
 
     @Override // android.database.sqlite.SQLiteOpenHelper
     public void onOpen(SQLiteDatabase sQLiteDatabase) {
-        y(sQLiteDatabase);
+        p(sQLiteDatabase);
     }
 
     @Override // android.database.sqlite.SQLiteOpenHelper
     public void onUpgrade(SQLiteDatabase sQLiteDatabase, int i10, int i11) {
-        y(sQLiteDatabase);
-        F(sQLiteDatabase, i10, i11);
+        p(sQLiteDatabase);
+        y(sQLiteDatabase, i10, i11);
     }
 }

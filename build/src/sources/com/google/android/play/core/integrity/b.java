@@ -6,13 +6,13 @@ import java.util.Locale;
 public class b extends ef.b {
 
     /* renamed from: e  reason: collision with root package name */
-    private final Throwable f16139e;
+    private final Throwable f16119e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(int i10, Throwable th2) {
-        super(new Status(i10, String.format(Locale.ROOT, "Standard Integrity API error (%d): %s.", Integer.valueOf(i10), ai.b.a(i10))));
+        super(new Status(i10, String.format(Locale.ROOT, "Standard Integrity API error (%d): %s.", Integer.valueOf(i10), bi.b.a(i10))));
         if (i10 != 0) {
-            this.f16139e = th2;
+            this.f16119e = th2;
             return;
         }
         throw new IllegalArgumentException("ErrorCode should not be 0.");
@@ -20,6 +20,6 @@ public class b extends ef.b {
 
     @Override // java.lang.Throwable
     public final synchronized Throwable getCause() {
-        return this.f16139e;
+        return this.f16119e;
     }
 }

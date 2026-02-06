@@ -14,67 +14,67 @@ import java.util.Map;
 public final class h extends b implements w1 {
 
     /* renamed from: i  reason: collision with root package name */
-    private String f29663i;
+    private String f28807i;
 
     /* renamed from: o  reason: collision with root package name */
-    private Map f29664o;
+    private Map f28808o;
 
     /* renamed from: p  reason: collision with root package name */
-    private Map f29665p;
+    private Map f28809p;
 
     /* renamed from: q  reason: collision with root package name */
-    private Map f29666q;
+    private Map f28810q;
 
     public h() {
         super(c.Custom);
-        this.f29664o = new HashMap();
-        this.f29663i = "options";
+        this.f28808o = new HashMap();
+        this.f28807i = "options";
     }
 
     private void g(f3 f3Var, ILogger iLogger) {
-        f3Var.s();
-        f3Var.e("tag").f(this.f29663i);
+        f3Var.u();
+        f3Var.e("tag").f(this.f28807i);
         f3Var.e("payload");
         h(f3Var, iLogger);
-        Map map = this.f29666q;
+        Map map = this.f28810q;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f29666q.get(str);
+                Object obj = this.f28810q.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
         }
-        f3Var.z();
+        f3Var.D();
     }
 
     private void h(f3 f3Var, ILogger iLogger) {
-        f3Var.s();
-        Map map = this.f29664o;
+        f3Var.u();
+        Map map = this.f28808o;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f29664o.get(str);
+                Object obj = this.f28808o.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
         }
-        f3Var.z();
+        f3Var.D();
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
-        f3Var.s();
-        new b.C0412b().a(this, f3Var, iLogger);
+        f3Var.u();
+        new b.C0406b().a(this, f3Var, iLogger);
         f3Var.e("data");
         g(f3Var, iLogger);
-        Map map = this.f29665p;
+        Map map = this.f28809p;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f29665p.get(str);
+                Object obj = this.f28809p.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
         }
-        f3Var.z();
+        f3Var.D();
     }
 
     public h(k7 k7Var) {
@@ -82,31 +82,31 @@ public final class h extends b implements w1 {
         String str;
         r sdkVersion = k7Var.getSdkVersion();
         if (sdkVersion != null) {
-            this.f29664o.put("nativeSdkName", sdkVersion.f());
-            this.f29664o.put("nativeSdkVersion", sdkVersion.h());
+            this.f28808o.put("nativeSdkName", sdkVersion.f());
+            this.f28808o.put("nativeSdkVersion", sdkVersion.h());
         }
         m7 sessionReplay = k7Var.getSessionReplay();
-        this.f29664o.put("errorSampleRate", sessionReplay.l());
-        this.f29664o.put("sessionSampleRate", sessionReplay.q());
-        this.f29664o.put("maskAllImages", Boolean.valueOf(sessionReplay.e().contains("android.widget.ImageView")));
-        this.f29664o.put("maskAllText", Boolean.valueOf(sessionReplay.e().contains("android.widget.TextView")));
-        this.f29664o.put("quality", sessionReplay.m().serializedName());
-        this.f29664o.put("maskedViewClasses", sessionReplay.e());
-        this.f29664o.put("unmaskedViewClasses", sessionReplay.s());
+        this.f28808o.put("errorSampleRate", sessionReplay.l());
+        this.f28808o.put("sessionSampleRate", sessionReplay.q());
+        this.f28808o.put("maskAllImages", Boolean.valueOf(sessionReplay.e().contains("android.widget.ImageView")));
+        this.f28808o.put("maskAllText", Boolean.valueOf(sessionReplay.e().contains("android.widget.TextView")));
+        this.f28808o.put("quality", sessionReplay.m().serializedName());
+        this.f28808o.put("maskedViewClasses", sessionReplay.e());
+        this.f28808o.put("unmaskedViewClasses", sessionReplay.s());
         if (sessionReplay.n() == n4.PIXEL_COPY) {
             str = "pixelCopy";
         } else {
             str = "canvas";
         }
-        this.f29664o.put("screenshotStrategy", str);
-        this.f29664o.put("networkDetailHasUrls", Boolean.valueOf(sessionReplay.g().length > 0));
+        this.f28808o.put("screenshotStrategy", str);
+        this.f28808o.put("networkDetailHasUrls", Boolean.valueOf(sessionReplay.g().length > 0));
         if (sessionReplay.g().length > 0) {
-            this.f29664o.put("networkDetailAllowUrls", sessionReplay.g());
-            this.f29664o.put("networkRequestHeaders", sessionReplay.j());
-            this.f29664o.put("networkResponseHeaders", sessionReplay.k());
-            this.f29664o.put("networkCaptureBodies", Boolean.valueOf(sessionReplay.v()));
+            this.f28808o.put("networkDetailAllowUrls", sessionReplay.g());
+            this.f28808o.put("networkRequestHeaders", sessionReplay.j());
+            this.f28808o.put("networkResponseHeaders", sessionReplay.k());
+            this.f28808o.put("networkCaptureBodies", Boolean.valueOf(sessionReplay.v()));
             if (sessionReplay.h().length > 0) {
-                this.f29664o.put("networkDetailDenyUrls", sessionReplay.h());
+                this.f28808o.put("networkDetailDenyUrls", sessionReplay.h());
             }
         }
     }

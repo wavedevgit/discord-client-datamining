@@ -6,17 +6,17 @@ import android.os.Parcelable;
 public abstract class a implements Parcelable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Parcelable f51158d;
+    private final Parcelable f51199d;
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f51157e = new C0660a();
+    public static final a f51198e = new C0674a();
     public static final Parcelable.Creator<a> CREATOR = new b();
 
     /* renamed from: u2.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    class C0660a extends a {
-        C0660a() {
-            super((C0660a) null);
+    class C0674a extends a {
+        C0674a() {
+            super((C0674a) null);
         }
     }
 
@@ -35,7 +35,7 @@ public abstract class a implements Parcelable {
         /* renamed from: b */
         public a createFromParcel(Parcel parcel, ClassLoader classLoader) {
             if (parcel.readParcelable(classLoader) == null) {
-                return a.f51157e;
+                return a.f51198e;
             }
             throw new IllegalStateException("superState must be null");
         }
@@ -47,12 +47,12 @@ public abstract class a implements Parcelable {
         }
     }
 
-    /* synthetic */ a(C0660a c0660a) {
+    /* synthetic */ a(C0674a c0674a) {
         this();
     }
 
     public final Parcelable a() {
-        return this.f51158d;
+        return this.f51199d;
     }
 
     @Override // android.os.Parcelable
@@ -62,17 +62,17 @@ public abstract class a implements Parcelable {
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeParcelable(this.f51158d, i10);
+        parcel.writeParcelable(this.f51199d, i10);
     }
 
     private a() {
-        this.f51158d = null;
+        this.f51199d = null;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public a(Parcelable parcelable) {
         if (parcelable != null) {
-            this.f51158d = parcelable == f51157e ? null : parcelable;
+            this.f51199d = parcelable == f51198e ? null : parcelable;
             return;
         }
         throw new IllegalArgumentException("superState must not be null");
@@ -81,6 +81,6 @@ public abstract class a implements Parcelable {
     /* JADX INFO: Access modifiers changed from: protected */
     public a(Parcel parcel, ClassLoader classLoader) {
         Parcelable readParcelable = parcel.readParcelable(classLoader);
-        this.f51158d = readParcelable == null ? f51157e : readParcelable;
+        this.f51199d = readParcelable == null ? f51198e : readParcelable;
     }
 }

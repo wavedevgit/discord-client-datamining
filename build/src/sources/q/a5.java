@@ -3,26 +3,26 @@ package q;
 class a5 implements x.a2 {
 
     /* renamed from: a  reason: collision with root package name */
-    private float f46714a;
+    private float f45762a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final float f46715b;
+    private final float f45763b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final float f46716c;
+    private final float f45764c;
 
     /* renamed from: d  reason: collision with root package name */
-    private float f46717d;
+    private float f45765d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public a5(float f10, float f11) {
-        this.f46715b = f10;
-        this.f46716c = f11;
+        this.f45763b = f10;
+        this.f45764c = f11;
     }
 
     private float e(float f10) {
-        float f11 = this.f46715b;
-        float f12 = this.f46716c;
+        float f11 = this.f45763b;
+        float f12 = this.f45764c;
         if (f11 == f12) {
             return 0.0f;
         }
@@ -38,31 +38,31 @@ class a5 implements x.a2 {
 
     @Override // x.a2
     public float a() {
-        return this.f46715b;
+        return this.f45763b;
     }
 
     @Override // x.a2
     public float b() {
-        return this.f46717d;
+        return this.f45765d;
     }
 
     @Override // x.a2
     public float c() {
-        return this.f46716c;
+        return this.f45764c;
     }
 
     @Override // x.a2
     public float d() {
-        return this.f46714a;
+        return this.f45762a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void f(float f10) {
-        if (f10 <= this.f46715b && f10 >= this.f46716c) {
-            this.f46714a = f10;
-            this.f46717d = e(f10);
+        if (f10 <= this.f45763b && f10 >= this.f45764c) {
+            this.f45762a = f10;
+            this.f45765d = e(f10);
             return;
         }
-        throw new IllegalArgumentException("Requested zoomRatio " + f10 + " is not within valid range [" + this.f46716c + " , " + this.f46715b + "]");
+        throw new IllegalArgumentException("Requested zoomRatio " + f10 + " is not within valid range [" + this.f45764c + " , " + this.f45763b + "]");
     }
 }

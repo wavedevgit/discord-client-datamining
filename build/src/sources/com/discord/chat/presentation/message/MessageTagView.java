@@ -52,20 +52,20 @@ public final class MessageTagView extends FrameLayout {
     }
 
     /* renamed from: configureTagView-Ul7AT2Q$default  reason: not valid java name */
-    public static /* synthetic */ void m532configureTagViewUl7AT2Q$default(MessageTagView messageTagView, String str, Boolean bool, Integer num, Integer num2, String str2, ChatEventHandler chatEventHandler, String str3, long j10, String str4, String str5, int i10, Object obj) {
+    public static /* synthetic */ void m530configureTagViewUl7AT2Q$default(MessageTagView messageTagView, String str, Boolean bool, Integer num, Integer num2, String str2, ChatEventHandler chatEventHandler, String str3, long j10, String str4, String str5, int i10, Object obj) {
         String str6;
         if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 0) {
             str6 = null;
         } else {
             str6 = str5;
         }
-        messageTagView.m533configureTagViewUl7AT2Q(str, bool, num, num2, str2, chatEventHandler, str3, j10, str4, str6);
+        messageTagView.m531configureTagViewUl7AT2Q(str, bool, num, num2, str2, chatEventHandler, str3, j10, str4, str6);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void configureTagView_Ul7AT2Q$lambda$0(ChatEventHandler chatEventHandler, String str, long j10, String str2, View view) {
         if (chatEventHandler != null) {
-            chatEventHandler.mo484onTapTagEqy5D80(str, j10, str2);
+            chatEventHandler.mo482onTapTagEqy5D80(str, j10, str2);
         }
     }
 
@@ -77,7 +77,7 @@ public final class MessageTagView extends FrameLayout {
     }
 
     /* renamed from: configureTagView-Ul7AT2Q  reason: not valid java name */
-    public final void m533configureTagViewUl7AT2Q(String str, Boolean bool, Integer num, Integer num2, String str2, final ChatEventHandler chatEventHandler, @NotNull final String messageId, final long j10, final String str3, String str4) {
+    public final void m531configureTagViewUl7AT2Q(String str, Boolean bool, Integer num, Integer num2, String str2, final ChatEventHandler chatEventHandler, @NotNull final String messageId, final long j10, final String str3, String str4) {
         int colorCompat;
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         int i10 = 8;

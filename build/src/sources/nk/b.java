@@ -1,97 +1,225 @@
 package nk;
-
-import nk.e;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-final class b {
+public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f41340a;
+    private final a f40888a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final byte[] f41341b;
-
-    private b(int i10, byte[] bArr) {
-        this.f41340a = i10;
-        this.f41341b = bArr;
-    }
+    private final int[] f40889b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public static b[] b(byte[] bArr, e eVar) {
-        boolean z10;
-        int i10;
-        int i11;
-        e.c d10 = eVar.d();
-        e.b[] a10 = d10.a();
-        int i12 = 0;
-        for (e.b bVar : a10) {
-            i12 += bVar.a();
-        }
-        b[] bVarArr = new b[i12];
-        int i13 = 0;
-        for (e.b bVar2 : a10) {
-            int i14 = 0;
-            while (i14 < bVar2.a()) {
-                int b10 = bVar2.b();
-                bVarArr[i13] = new b(b10, new byte[d10.b() + b10]);
-                i14++;
-                i13++;
-            }
-        }
-        int length = bVarArr[0].f41341b.length - d10.b();
-        int i15 = length - 1;
-        int i16 = 0;
-        for (int i17 = 0; i17 < i15; i17++) {
-            int i18 = 0;
-            while (i18 < i13) {
-                bVarArr[i18].f41341b[i17] = bArr[i16];
-                i18++;
-                i16++;
-            }
-        }
-        if (eVar.i() == 24) {
-            z10 = true;
-        } else {
-            z10 = false;
-        }
-        if (z10) {
-            i10 = 8;
-        } else {
-            i10 = i13;
-        }
-        int i19 = 0;
-        while (i19 < i10) {
-            bVarArr[i19].f41341b[i15] = bArr[i16];
-            i19++;
-            i16++;
-        }
-        int length2 = bVarArr[0].f41341b.length;
-        while (length < length2) {
-            int i20 = 0;
-            while (i20 < i13) {
-                if (z10) {
-                    i11 = (i20 + 8) % i13;
-                } else {
-                    i11 = i20;
+    public b(a aVar, int[] iArr) {
+        if (iArr.length != 0) {
+            this.f40888a = aVar;
+            int length = iArr.length;
+            int i10 = 1;
+            if (length > 1 && iArr[0] == 0) {
+                while (i10 < length && iArr[i10] == 0) {
+                    i10++;
                 }
-                bVarArr[i11].f41341b[(z10 && i11 > 7) ? length - 1 : length] = bArr[i16];
-                i20++;
-                i16++;
+                if (i10 == length) {
+                    this.f40889b = new int[]{0};
+                    return;
+                }
+                int[] iArr2 = new int[length - i10];
+                this.f40889b = iArr2;
+                System.arraycopy(iArr, i10, iArr2, 0, iArr2.length);
+                return;
             }
-            length++;
-        }
-        if (i16 == bArr.length) {
-            return bVarArr;
+            this.f40889b = iArr;
+            return;
         }
         throw new IllegalArgumentException();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public byte[] a() {
-        return this.f41341b;
+    public b a(b bVar) {
+        if (this.f40888a.equals(bVar.f40888a)) {
+            if (g()) {
+                return bVar;
+            }
+            if (bVar.g()) {
+                return this;
+            }
+            int[] iArr = this.f40889b;
+            int[] iArr2 = bVar.f40889b;
+            if (iArr.length <= iArr2.length) {
+                iArr = iArr2;
+                iArr2 = iArr;
+            }
+            int[] iArr3 = new int[iArr.length];
+            int length = iArr.length - iArr2.length;
+            System.arraycopy(iArr, 0, iArr3, 0, length);
+            for (int i10 = length; i10 < iArr.length; i10++) {
+                iArr3[i10] = a.a(iArr2[i10 - length], iArr[i10]);
+            }
+            return new b(this.f40888a, iArr3);
+        }
+        throw new IllegalArgumentException("GenericGFPolys do not have same GenericGF field");
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public int c() {
-        return this.f41340a;
+    public b[] b(b bVar) {
+        if (this.f40888a.equals(bVar.f40888a)) {
+            if (!bVar.g()) {
+                b g10 = this.f40888a.g();
+                int h10 = this.f40888a.h(bVar.d(bVar.f()));
+                b bVar2 = this;
+                while (bVar2.f() >= bVar.f() && !bVar2.g()) {
+                    int f10 = bVar2.f() - bVar.f();
+                    int j10 = this.f40888a.j(bVar2.d(bVar2.f()), h10);
+                    b j11 = bVar.j(f10, j10);
+                    g10 = g10.a(this.f40888a.b(f10, j10));
+                    bVar2 = bVar2.a(j11);
+                }
+                return new b[]{g10, bVar2};
+            }
+            throw new IllegalArgumentException("Divide by 0");
+        }
+        throw new IllegalArgumentException("GenericGFPolys do not have same GenericGF field");
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public int c(int i10) {
+        if (i10 == 0) {
+            return d(0);
+        }
+        if (i10 == 1) {
+            int i11 = 0;
+            for (int i12 : this.f40889b) {
+                i11 = a.a(i11, i12);
+            }
+            return i11;
+        }
+        int[] iArr = this.f40889b;
+        int i13 = iArr[0];
+        int length = iArr.length;
+        for (int i14 = 1; i14 < length; i14++) {
+            i13 = a.a(this.f40888a.j(i10, i13), this.f40889b[i14]);
+        }
+        return i13;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public int d(int i10) {
+        int[] iArr = this.f40889b;
+        return iArr[(iArr.length - 1) - i10];
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public int[] e() {
+        return this.f40889b;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public int f() {
+        return this.f40889b.length - 1;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public boolean g() {
+        if (this.f40889b[0] != 0) {
+            return false;
+        }
+        return true;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public b h(int i10) {
+        if (i10 == 0) {
+            return this.f40888a.g();
+        }
+        if (i10 == 1) {
+            return this;
+        }
+        int length = this.f40889b.length;
+        int[] iArr = new int[length];
+        for (int i11 = 0; i11 < length; i11++) {
+            iArr[i11] = this.f40888a.j(this.f40889b[i11], i10);
+        }
+        return new b(this.f40888a, iArr);
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public b i(b bVar) {
+        if (this.f40888a.equals(bVar.f40888a)) {
+            if (!g() && !bVar.g()) {
+                int[] iArr = this.f40889b;
+                int length = iArr.length;
+                int[] iArr2 = bVar.f40889b;
+                int length2 = iArr2.length;
+                int[] iArr3 = new int[(length + length2) - 1];
+                for (int i10 = 0; i10 < length; i10++) {
+                    int i11 = iArr[i10];
+                    for (int i12 = 0; i12 < length2; i12++) {
+                        int i13 = i10 + i12;
+                        iArr3[i13] = a.a(iArr3[i13], this.f40888a.j(i11, iArr2[i12]));
+                    }
+                }
+                return new b(this.f40888a, iArr3);
+            }
+            return this.f40888a.g();
+        }
+        throw new IllegalArgumentException("GenericGFPolys do not have same GenericGF field");
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public b j(int i10, int i11) {
+        if (i10 >= 0) {
+            if (i11 == 0) {
+                return this.f40888a.g();
+            }
+            int length = this.f40889b.length;
+            int[] iArr = new int[i10 + length];
+            for (int i12 = 0; i12 < length; i12++) {
+                iArr[i12] = this.f40888a.j(this.f40889b[i12], i11);
+            }
+            return new b(this.f40888a, iArr);
+        }
+        throw new IllegalArgumentException();
+    }
+
+    public String toString() {
+        if (g()) {
+            return "0";
+        }
+        StringBuilder sb2 = new StringBuilder(f() * 8);
+        for (int f10 = f(); f10 >= 0; f10--) {
+            int d10 = d(f10);
+            if (d10 != 0) {
+                if (d10 < 0) {
+                    if (f10 == f()) {
+                        sb2.append("-");
+                    } else {
+                        sb2.append(" - ");
+                    }
+                    d10 = -d10;
+                } else if (sb2.length() > 0) {
+                    sb2.append(" + ");
+                }
+                if (f10 == 0 || d10 != 1) {
+                    int i10 = this.f40888a.i(d10);
+                    if (i10 == 0) {
+                        sb2.append('1');
+                    } else if (i10 == 1) {
+                        sb2.append('a');
+                    } else {
+                        sb2.append("a^");
+                        sb2.append(i10);
+                    }
+                }
+                if (f10 != 0) {
+                    if (f10 == 1) {
+                        sb2.append('x');
+                    } else {
+                        sb2.append("x^");
+                        sb2.append(f10);
+                    }
+                }
+            }
+        }
+        return sb2.toString();
     }
 }

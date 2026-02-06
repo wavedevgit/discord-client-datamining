@@ -1,32 +1,55 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun94425: for (var _fun94425_ip = 0;;) switch (_fun94425_ip) {
-        case 0:
-            var1 = {
-                'option': 'alt',
-                'command': 'meta',
-                'return': 'enter',
-                'escape': 'esc'
-            };
-            var2 = 'meta';
-            var4 = /Mac|iPod|iPhone|iPad/;
-            var3 = var4.test;
-            var0 = global;
-            var0 = var0.navigator;
-            var0 = var0.platform;
-            var3 = var3.bind(var4)(var0);
-            var0 = 'ctrl';
-            if (!var3) {
-                _fun94425_ip = 66;
-                continue _fun94425
-            }
-        case 63:
-            var0 = var2;
-        case 66:
-            var1.mod = var0;
-            var0 = module;
-            var0.exports = var1;
-            var0 = undefined;
-            return var0;
-    }
+    var1 = function(arg0) { // Environment: var0
+        _fun94433: for (var _fun94433_ip = 0;;) switch (_fun94433_ip) {
+            case 0:
+                var1 = arg0;
+                var0 = new Array(0);
+                var2 = var1.shiftKey;
+                if (!var2) {
+                    _fun94433_ip = 30;
+                    continue _fun94433
+                }
+            case 16:
+                var3 = var0.push;
+                var2 = 'shift';
+                var2 = var3.bind(var0)(var2);
+            case 30:
+                var2 = var1.altKey;
+                if (!var2) {
+                    _fun94433_ip = 53;
+                    continue _fun94433
+                }
+            case 39:
+                var3 = var0.push;
+                var2 = 'alt';
+                var2 = var3.bind(var0)(var2);
+            case 53:
+                var2 = var1.ctrlKey;
+                if (!var2) {
+                    _fun94433_ip = 76;
+                    continue _fun94433
+                }
+            case 62:
+                var3 = var0.push;
+                var2 = 'ctrl';
+                var2 = var3.bind(var0)(var2);
+            case 76:
+                var1 = var1.metaKey;
+                if (!var1) {
+                    _fun94433_ip = 99;
+                    continue _fun94433
+                }
+            case 85:
+                var2 = var0.push;
+                var1 = 'meta';
+                var1 = var2.bind(var0)(var1);
+            case 99:
+                return var0;
+        }
+    };
+    var0 = arg4;
+    var0.exports = var1;
+    var0 = undefined;
+    return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, []);

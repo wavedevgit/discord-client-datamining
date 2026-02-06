@@ -6,7 +6,7 @@ import android.view.View;
 class l0 extends k0 {
 
     /* renamed from: g  reason: collision with root package name */
-    private static boolean f5404g = true;
+    private static boolean f5733g = true;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     static class a {
@@ -19,11 +19,11 @@ class l0 extends k0 {
     public void f(View view, int i10) {
         if (Build.VERSION.SDK_INT == 28) {
             super.f(view, i10);
-        } else if (f5404g) {
+        } else if (f5733g) {
             try {
                 a.a(view, i10);
             } catch (NoSuchMethodError unused) {
-                f5404g = false;
+                f5733g = false;
             }
         }
     }

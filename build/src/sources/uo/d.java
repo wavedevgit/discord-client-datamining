@@ -1,39 +1,23 @@
 package uo;
-
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.FrameLayout;
-import androidx.viewbinding.ViewBinding;
-import so.g2;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class d implements ViewBinding {
+public final class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final FrameLayout f51649a;
+    private final br.h f51890a;
 
-    private d(FrameLayout frameLayout) {
-        this.f51649a = frameLayout;
+    public d(br.h hVar) {
+        this.f51890a = hVar;
     }
 
-    public static d a(View view) {
-        if (view != null) {
-            return new d((FrameLayout) view);
-        }
-        throw new NullPointerException("rootView");
+    public static d a(br.h hVar) {
+        return new d(hVar);
     }
 
-    public static d c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(g2.f50105e, viewGroup, false);
-        if (z10) {
-            viewGroup.addView(inflate);
-        }
-        return a(inflate);
+    public static com.withpersona.sdk2.inquiry.internal.c c(ap.d dVar, com.withpersona.sdk2.inquiry.internal.network.e eVar) {
+        return new com.withpersona.sdk2.inquiry.internal.c(dVar, eVar);
     }
 
-    @Override // androidx.viewbinding.ViewBinding
-    /* renamed from: b */
-    public FrameLayout getRoot() {
-        return this.f51649a;
+    public com.withpersona.sdk2.inquiry.internal.c b(ap.d dVar) {
+        return c(dVar, (com.withpersona.sdk2.inquiry.internal.network.e) this.f51890a.get());
     }
 }

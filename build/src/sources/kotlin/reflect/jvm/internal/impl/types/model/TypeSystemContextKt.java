@@ -2,8 +2,8 @@ package kotlin.reflect.jvm.internal.impl.types.model;
 
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.reflect.jvm.internal.impl.types.Variance;
-import or.p;
 import org.jetbrains.annotations.NotNull;
+import qr.p;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class TypeSystemContextKt {
 

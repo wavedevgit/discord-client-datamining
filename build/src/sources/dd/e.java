@@ -6,7 +6,7 @@ import tc.z;
 public final class e implements tc.k {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final tc.p f20436d = new tc.p() { // from class: dd.d
+    public static final tc.p f20391d = new tc.p() { // from class: dd.d
         @Override // tc.p
         public final tc.k[] b() {
             return e.b();
@@ -14,13 +14,13 @@ public final class e implements tc.k {
     };
 
     /* renamed from: a  reason: collision with root package name */
-    private final f f20437a = new f();
+    private final f f20392a = new f();
 
     /* renamed from: b  reason: collision with root package name */
-    private final ne.h0 f20438b = new ne.h0(16384);
+    private final ne.h0 f20393b = new ne.h0(16384);
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f20439c;
+    private boolean f20394c;
 
     public static /* synthetic */ tc.k[] b() {
         return new tc.k[]{new e()};
@@ -28,30 +28,30 @@ public final class e implements tc.k {
 
     @Override // tc.k
     public void a(long j10, long j11) {
-        this.f20439c = false;
-        this.f20437a.c();
+        this.f20394c = false;
+        this.f20392a.c();
     }
 
     @Override // tc.k
     public void c(tc.m mVar) {
-        this.f20437a.f(mVar, new i0.d(0, 1));
+        this.f20392a.f(mVar, new i0.d(0, 1));
         mVar.s();
         mVar.q(new z.b(-9223372036854775807L));
     }
 
     @Override // tc.k
     public int d(tc.l lVar, tc.y yVar) {
-        int read = lVar.read(this.f20438b.e(), 0, 16384);
+        int read = lVar.read(this.f20393b.e(), 0, 16384);
         if (read == -1) {
             return -1;
         }
-        this.f20438b.U(0);
-        this.f20438b.T(read);
-        if (!this.f20439c) {
-            this.f20437a.e(0L, 4);
-            this.f20439c = true;
+        this.f20393b.U(0);
+        this.f20393b.T(read);
+        if (!this.f20394c) {
+            this.f20392a.e(0L, 4);
+            this.f20394c = true;
         }
-        this.f20437a.b(this.f20438b);
+        this.f20392a.b(this.f20393b);
         return 0;
     }
 

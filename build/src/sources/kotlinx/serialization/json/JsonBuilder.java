@@ -1,114 +1,114 @@
 package kotlinx.serialization.json;
 
-import ht.d;
 import kotlin.jvm.internal.Intrinsics;
+import kt.d;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class JsonBuilder {
 
     /* renamed from: a  reason: collision with root package name */
-    private boolean f35105a;
+    private boolean f35125a;
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f35106b;
+    private boolean f35126b;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f35107c;
+    private boolean f35127c;
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f35108d;
+    private boolean f35128d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f35109e;
+    private boolean f35129e;
 
     /* renamed from: f  reason: collision with root package name */
-    private String f35110f;
+    private String f35130f;
 
     /* renamed from: g  reason: collision with root package name */
-    private boolean f35111g;
+    private boolean f35131g;
 
     /* renamed from: h  reason: collision with root package name */
-    private String f35112h;
+    private String f35132h;
 
     /* renamed from: i  reason: collision with root package name */
-    private ht.a f35113i;
+    private kt.a f35133i;
 
     /* renamed from: j  reason: collision with root package name */
-    private boolean f35114j;
+    private boolean f35134j;
 
     /* renamed from: k  reason: collision with root package name */
-    private boolean f35115k;
+    private boolean f35135k;
 
     /* renamed from: l  reason: collision with root package name */
-    private boolean f35116l;
+    private boolean f35136l;
 
     /* renamed from: m  reason: collision with root package name */
-    private boolean f35117m;
+    private boolean f35137m;
 
     /* renamed from: n  reason: collision with root package name */
-    private boolean f35118n;
+    private boolean f35138n;
 
     /* renamed from: o  reason: collision with root package name */
-    private boolean f35119o;
+    private boolean f35139o;
 
     /* renamed from: p  reason: collision with root package name */
-    private boolean f35120p;
+    private boolean f35140p;
 
     /* renamed from: q  reason: collision with root package name */
-    private kt.b f35121q;
+    private mt.b f35141q;
 
     public JsonBuilder(Json json) {
         Intrinsics.checkNotNullParameter(json, "json");
-        this.f35105a = json.e().i();
-        this.f35106b = json.e().j();
-        this.f35107c = json.e().k();
-        this.f35108d = json.e().q();
-        this.f35109e = json.e().m();
-        this.f35110f = json.e().n();
-        this.f35111g = json.e().g();
-        this.f35112h = json.e().e();
-        this.f35113i = json.e().f();
-        this.f35114j = json.e().o();
+        this.f35125a = json.e().i();
+        this.f35126b = json.e().j();
+        this.f35127c = json.e().k();
+        this.f35128d = json.e().q();
+        this.f35129e = json.e().m();
+        this.f35130f = json.e().n();
+        this.f35131g = json.e().g();
+        this.f35132h = json.e().e();
+        this.f35133i = json.e().f();
+        this.f35134j = json.e().o();
         json.e().l();
-        this.f35115k = json.e().h();
-        this.f35116l = json.e().d();
-        this.f35117m = json.e().a();
-        this.f35118n = json.e().b();
-        this.f35119o = json.e().c();
-        this.f35120p = json.e().p();
-        this.f35121q = json.a();
+        this.f35135k = json.e().h();
+        this.f35136l = json.e().d();
+        this.f35137m = json.e().a();
+        this.f35138n = json.e().b();
+        this.f35139o = json.e().c();
+        this.f35140p = json.e().p();
+        this.f35141q = json.a();
     }
 
     public final d a() {
-        if (this.f35120p) {
-            if (Intrinsics.areEqual(this.f35112h, "type")) {
-                if (this.f35113i != ht.a.f26955i) {
+        if (this.f35140p) {
+            if (Intrinsics.areEqual(this.f35132h, "type")) {
+                if (this.f35133i != kt.a.f35493i) {
                     throw new IllegalArgumentException("useArrayPolymorphism option can only be used if classDiscriminatorMode in a default POLYMORPHIC state.");
                 }
             } else {
                 throw new IllegalArgumentException("Class discriminator should not be specified when array polymorphism is specified");
             }
         }
-        if (!this.f35109e) {
-            if (!Intrinsics.areEqual(this.f35110f, "    ")) {
+        if (!this.f35129e) {
+            if (!Intrinsics.areEqual(this.f35130f, "    ")) {
                 throw new IllegalArgumentException("Indent should not be specified when default printing mode is used");
             }
-        } else if (!Intrinsics.areEqual(this.f35110f, "    ")) {
-            String str = this.f35110f;
+        } else if (!Intrinsics.areEqual(this.f35130f, "    ")) {
+            String str = this.f35130f;
             for (int i10 = 0; i10 < str.length(); i10++) {
                 char charAt = str.charAt(i10);
                 if (charAt != ' ' && charAt != '\t' && charAt != '\r' && charAt != '\n') {
-                    throw new IllegalArgumentException(("Only whitespace, tab, newline and carriage return are allowed as pretty print symbols. Had " + this.f35110f).toString());
+                    throw new IllegalArgumentException(("Only whitespace, tab, newline and carriage return are allowed as pretty print symbols. Had " + this.f35130f).toString());
                 }
             }
         }
-        return new d(this.f35105a, this.f35107c, this.f35108d, this.f35119o, this.f35109e, this.f35106b, this.f35110f, this.f35111g, this.f35120p, this.f35112h, this.f35118n, this.f35114j, null, this.f35115k, this.f35116l, this.f35117m, this.f35113i);
+        return new d(this.f35125a, this.f35127c, this.f35128d, this.f35139o, this.f35129e, this.f35126b, this.f35130f, this.f35131g, this.f35140p, this.f35132h, this.f35138n, this.f35134j, null, this.f35135k, this.f35136l, this.f35137m, this.f35133i);
     }
 
-    public final kt.b b() {
-        return this.f35121q;
+    public final mt.b b() {
+        return this.f35141q;
     }
 
     public final void c(boolean z10) {
-        this.f35107c = z10;
+        this.f35127c = z10;
     }
 }

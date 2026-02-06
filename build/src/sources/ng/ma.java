@@ -1,118 +1,34 @@
 package ng;
+
+import yi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class ma {
+final class ma implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f40826a;
+    static final ma f40087a = new ma();
 
-    /* renamed from: b  reason: collision with root package name */
-    private final String f40827b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final String f40828c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private final String f40829d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private final mc f40830e;
-
-    /* renamed from: f  reason: collision with root package name */
-    private final String f40831f;
-
-    /* renamed from: g  reason: collision with root package name */
-    private final Boolean f40832g;
-
-    /* renamed from: h  reason: collision with root package name */
-    private final Boolean f40833h;
-
-    /* renamed from: i  reason: collision with root package name */
-    private final Boolean f40834i;
-
-    /* renamed from: j  reason: collision with root package name */
-    private final Integer f40835j;
-
-    /* renamed from: k  reason: collision with root package name */
-    private final Integer f40836k;
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public /* synthetic */ ma(ja jaVar, ka kaVar) {
-        String str;
-        String str2;
-        String str3;
-        String str4;
-        mc mcVar;
-        String str5;
-        Boolean bool;
-        Boolean bool2;
-        Boolean bool3;
-        Integer num;
-        Integer num2;
-        str = jaVar.f40712a;
-        this.f40826a = str;
-        str2 = jaVar.f40713b;
-        this.f40827b = str2;
-        str3 = jaVar.f40714c;
-        this.f40828c = str3;
-        str4 = jaVar.f40715d;
-        this.f40829d = str4;
-        mcVar = jaVar.f40716e;
-        this.f40830e = mcVar;
-        str5 = jaVar.f40717f;
-        this.f40831f = str5;
-        bool = jaVar.f40718g;
-        this.f40832g = bool;
-        bool2 = jaVar.f40719h;
-        this.f40833h = bool2;
-        bool3 = jaVar.f40720i;
-        this.f40834i = bool3;
-        num = jaVar.f40721j;
-        this.f40835j = num;
-        num2 = jaVar.f40722k;
-        this.f40836k = num2;
+    static {
+        c.b a10 = yi.c.a("options");
+        l2 l2Var = new l2();
+        l2Var.a(1);
+        a10.b(l2Var.b()).a();
+        c.b a11 = yi.c.a("errorCode");
+        l2 l2Var2 = new l2();
+        l2Var2.a(2);
+        a11.b(l2Var2.b()).a();
+        c.b a12 = yi.c.a("durationMs");
+        l2 l2Var3 = new l2();
+        l2Var3.a(3);
+        a12.b(l2Var3.b()).a();
     }
 
-    public final mc a() {
-        return this.f40830e;
+    private ma() {
     }
 
-    public final Boolean b() {
-        return this.f40832g;
-    }
-
-    public final Boolean c() {
-        return this.f40834i;
-    }
-
-    public final Boolean d() {
-        return this.f40833h;
-    }
-
-    public final Integer e() {
-        return this.f40835j;
-    }
-
-    public final Integer f() {
-        return this.f40836k;
-    }
-
-    public final String g() {
-        return this.f40826a;
-    }
-
-    public final String h() {
-        return this.f40827b;
-    }
-
-    public final String i() {
-        return this.f40831f;
-    }
-
-    public final String j() {
-        return this.f40828c;
-    }
-
-    public final String k() {
-        return this.f40829d;
+    @Override // yi.d
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        android.support.v4.media.session.b.a(obj);
+        yi.e eVar = (yi.e) obj2;
+        throw null;
     }
 }

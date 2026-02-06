@@ -1,407 +1,296 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var2 = exports;
-    var1 = require;
-    var _closure1_slot0 = var1;
-    var1 = dependencyMap;
-    var _closure1_slot1 = var1;
-    var1 = global;
-    var5 = var1.Object;
-    var4 = var5.defineProperty;
-    var3 = {};
-    var1 = true;
-    var3.value = var1;
-    var1 = '__esModule';
-    var1 = var4.bind(var5)(var2, var1, var3);
-    var1 = function() { // Environment: var0
-        var0 = function() {
-            var0 = undefined;
-            return var0;
-        };
-        var2 = function(arg0, arg1, arg2) { // Environment: var1
-            _fun45874: for (var _fun45874_ip = 0;;) switch (_fun45874_ip) {
-                case 0:
-                    var12 = arg1;
-                    var11 = arg2;
-                    var0 = arg0;
-                    var10 = 1;
-                    var9 = var0 - var10;
-                    var8 = global;
-                    var2 = var8.Math;
-                    var1 = var2.floor;
-                    var4 = 0;
-                    var0 = var4 + var9;
-                    var7 = 2;
-                    var0 = var0 / var7;
-                    var0 = var1.bind(var2)(var0);
-                    var5 = var8.Math;
-                    var2 = var5.abs;
-                    var3 = undefined;
-                    var1 = var11.bind(var3)(var0);
-                    var1 = var1 - var12;
-                    var1 = var2.bind(var5)(var1);
-                    if (!(var4 !== var1)) {
-                        _fun45874_ip = 278;
-                        continue _fun45874
-                    }
-                case 83:
-                    if (!(!(var9 < var4))) {
-                        _fun45874_ip = 217;
-                        continue _fun45874
-                    }
-                case 90:
-                    var6 = var1;
-                    var5 = var0;
-                    var1 = var5;
-                    var2 = 0;
-                    if (!(var2 <= var9)) {
-                        _fun45874_ip = 215;
-                        continue _fun45874
-                    }
-                case 105:
-                    var15 = var8.Math;
-                    var14 = var15.floor;
-                    var13 = var2 + var9;
-                    var13 = var13 / var7;
-                    var15 = var14.bind(var15)(var13);
-                    var13 = var11.bind(var3)(var15);
-                    var16 = var13 - var12;
-                    var17 = var8.Math;
-                    var14 = var17.abs;
-                    var14 = var14.bind(var17)(var16);
-                    var16 = var16 >= var4;
-                    if (!var16) {
-                        _fun45874_ip = 167;
-                        continue _fun45874
-                    }
-                case 163:
-                    var16 = var14 < var6;
-                case 167:
-                    if (!var16) {
-                        _fun45874_ip = 176;
-                        continue _fun45874
-                    }
-                case 170:
-                    var6 = var14;
-                    var5 = var15;
-                case 176:
-                    var14 = var5;
-                    if (!(!(var12 < var13))) {
-                        _fun45874_ip = 195;
-                        continue _fun45874
-                    }
-                case 183:
-                    if (!(!(var12 > var13))) {
-                        _fun45874_ip = 189;
-                        continue _fun45874
-                    }
-                case 187:
-                    return var15;
-                case 189:
-                    var13 = var15 + var10;
-                    _fun45874_ip = 202;
-                    continue _fun45874;
-                case 195:
-                    var9 = var15 - var10;
-                    var13 = var2;
-                case 202:
-                    var2 = var13;
-                    var5 = var14;
-                    var1 = var5;
-                    if (var2 <= var9) {
-                        _fun45874_ip = 105;
-                        continue _fun45874
-                    }
-                case 215:
-                    return var1;
-                case 217:
-                    var2 = _closure1_slot0;
-                    var1 = _closure1_slot1;
-                    var1 = var1[var4];
-                    var1 = var2.bind(var3)(var1);
-                    var3 = var1.default;
-                    var1 = var3.prototype;
-                    var2 = Object.create(var1, {
-                        constructor: {
-                            value: var3
+    _fun45860: for (var _fun45860_ip = 0;;) switch (_fun45860_ip) {
+        case 0:
+            var2 = exports;
+            var3 = this;
+            var0 = var3;
+            if (!var0) {
+                _fun45860_ip = 20;
+                continue _fun45860
+            }
+        case 14:
+            var0 = var3.__extends;
+        case 20:
+            if (var0) {
+                _fun45860_ip = 37;
+                continue _fun45860
+            }
+        case 23:
+            var3 = function arg0, arg1() {
+                _fun45861: for (var _fun45861_ip = 0;;) switch (_fun45861_ip) {
+                    case 0:
+                        var1 = global;
+                        var2 = var1.Object;
+                        var3 = var2.setPrototypeOf;
+                        if (var3) {
+                            _fun45861_ip = 47;
+                            continue _fun45861
                         }
-                    });
-                    var18 = {
-                        'message': 'The collection cannot be empty',
-                        'type': 'InvalidStateException'
-                    };
-                    var19 = var2;
-                    var1 = new var19[var3](var18, var17);
-                    var1 = var1 instanceof Object ? var1 : var2;
-                    throw var1;
-                case 278:
+                    case 19:
+                        var2 = var1.Array;
+                        var1 = new Array(0);
+                        var1 = Object.create(var1);
+                        var1 = var1 instanceof var2;
+                        if (!var1) {
+                            _fun45861_ip = 44;
+                            continue _fun45861
+                        }
+                    case 39:
+                        var1 = function(arg0, arg1) { // Environment: var0
+                            var1 = arg1;
+                            var0 = arg0;
+                            var0.__proto__ = var1;
+                            var0 = undefined;
+                            return var0;
+                        };
+                    case 44:
+                        var3 = var1;
+                    case 47:
+                        if (var3) {
+                            _fun45861_ip = 55;
+                            continue _fun45861
+                        }
+                    case 50:
+                        var3 = function(arg0, arg1) { // Environment: var0
+                            _fun45863: for (var _fun45863_ip = 0;;) switch (_fun45863_ip) {
+                                case 0:
+                                    var7 = arg0;
+                                    var6 = arg1;
+                                    var4 = var6;
+                                    var0 = global;
+                                    for (var1 in var4)
+                                        case 19: {
+                                            case 28: var9 = var1;
+                                            var8 = var0.Object;
+                                            var8 = var8.prototype;
+                                            var10 = var8.hasOwnProperty;
+                                            var8 = var10.call;
+                                            var8 = var8.bind(var10)(var6, var9);
+                                            if (!var8) {
+                                                _fun45863_ip = 19;
+                                                continue _fun45863
+                                            }
+                                            case 62: var8 = var6[var9];
+                                            var7[var9] = var8;
+                                            _fun45863_ip = 19;
+                                            continue _fun45863;
+                                        }
+                                case 72:
+                                    var0 = undefined;
+                                    return var0;
+                            }
+                        };
+                    case 55:
+                        _closure1_slot0 = var3;
+                        var2 = undefined;
+                        var1 = arg0;
+                        var0 = arg1;
+                        var0 = var3.bind(var2)(var1, var0);
+                        return var0;
+                }
+            };
+            var _closure1_slot0 = var3;
+            var0 = function(arg0, arg1) { // Environment: var1
+                _fun45864: for (var _fun45864_ip = 0;;) switch (_fun45864_ip) {
+                    case 0:
+                        var2 = arg0;
+                        var3 = arg1;
+                        var _closure2_slot0 = var2;
+                        var1 = function() {
+                            var1 = _closure2_slot0;
+                            var0 = this;
+                            var0.constructor = var1;
+                            var0 = undefined;
+                            return var0;
+                        };
+                        var4 = 'function';
+                        var0 = typeof var3;
+                        if (!(var4 !== var0)) {
+                            _fun45864_ip = 34;
+                            continue _fun45864
+                        }
+                    case 28:
+                        var0 = null;
+                        if (!(var0 === var3)) {
+                            _fun45864_ip = 114;
+                            continue _fun45864
+                        }
+                    case 34:
+                        var4 = _closure1_slot0;
+                        var0 = undefined;
+                        var4 = var4.bind(var0)(var2, var3);
+                        var4 = null;
+                        if (!(var4 !== var3)) {
+                            _fun45864_ip = 88;
+                            continue _fun45864
+                        }
+                    case 55:
+                        var4 = var3.prototype;
+                        var1.prototype = var4;
+                        var4 = var1.prototype;
+                        var4 = Object.create(var4, {
+                            constructor: {
+                                value: var1
+                            }
+                        });
+                        var8 = var4;
+                        var1 = new var8[var1](var7);
+                        var1 = var1 instanceof Object ? var1 : var4;
+                        _fun45864_ip = 106;
+                        continue _fun45864;
+                    case 88:
+                        var4 = global;
+                        var5 = var4.Object;
+                        var4 = var5.create;
+                        var1 = var4.bind(var5)(var3);
+                    case 106:
+                        var2.prototype = var1;
+                        return var0;
+                    case 114:
+                        var0 = global;
+                        var2 = var0.TypeError;
+                        var1 = var0.String;
+                        var0 = undefined;
+                        var1 = var1.bind(var0)(var3);
+                        var0 = 'Class extends value ';
+                        var3 = var0 + var1;
+                        var0 = var2.prototype;
+                        var1 = Object.create(var0, {
+                            constructor: {
+                                value: var2
+                            }
+                        });
+                        var0 = ' is not a constructor or null';
+                        var7 = var3 + var0;
+                        var8 = var1;
+                        var0 = new var8[var2](var7, var6);
+                        var0 = var0 instanceof Object ? var0 : var1;
+                        throw var0;
+                }
+            };
+        case 37:
+            var _closure1_slot1 = var0;
+            var0 = global;
+            var5 = var0.Object;
+            var4 = var5.defineProperty;
+            var3 = {};
+            var0 = true;
+            var3.value = var0;
+            var0 = '__esModule';
+            var0 = var4.bind(var5)(var2, var0, var3);
+            var0 = undefined;
+            var2.ComponentCompat = var0;
+            var4 = arg6;
+            var3 = 0;
+            var4 = var4[var3];
+            var3 = arg1;
+            var3 = var3.bind(var0)(var4);
+            var3 = var3.Component;
+            var1 = function(arg0) { // Environment: var1
+                var4 = arg0;
+                var _closure2_slot0 = var4;
+                var0 = function arg0, arg1() {
+                    _fun45867: for (var _fun45867_ip = 0;;) switch (_fun45867_ip) {
+                        case 0:
+                            var1 = this;
+                            var4 = _closure2_slot0;
+                            var3 = var4.call;
+                            var2 = arg0;
+                            var0 = arg1;
+                            var0 = var3.bind(var4)(var1, var2, var0);
+                            if (var0) {
+                                _fun45867_ip = 34;
+                                continue _fun45867
+                            }
+                        case 31:
+                            var0 = var1;
+                        case 34:
+                            var1 = false;
+                            var0._hasRenderedOnce = var1;
+                            var0._didPropsChange = var1;
+                            return var0;
+                    }
+                };
+                var3 = _closure1_slot1;
+                var2 = undefined;
+                var2 = var3.bind(var2)(var0, var4);
+                var3 = var0.prototype;
+                var2 = function(arg0, arg1) { // Environment: var1
+                    _fun45868: for (var _fun45868_ip = 0;;) switch (_fun45868_ip) {
+                        case 0:
+                            var2 = arg0;
+                            var1 = this;
+                            var0 = var1.props;
+                            if (!(var0 !== var2)) {
+                                _fun45868_ip = 26;
+                                continue _fun45868
+                            }
+                        case 15:
+                            var0 = var1.componentWillReceivePropsCompat;
+                            var0 = var0.bind(var1)(var2);
+                        case 26:
+                            var0 = true;
+                            return var0;
+                    }
+                };
+                var3.shouldComponentUpdate = var2;
+                var3 = var0.prototype;
+                var2 = function() { // Environment: var1
+                    var0 = this;
+                    var0 = var0._hasRenderedOnce;
                     return var0;
-            }
-        };
-        var0.findClosestHigherValueIndex = var2;
-        var2 = function(arg0, arg1) { // Environment: var1
-            _fun45875: for (var _fun45875_ip = 0;;) switch (_fun45875_ip) {
-                case 0:
-                    var9 = arg0;
-                    var8 = arg1;
-                    var1 = var9.length;
-                    var0 = 1;
-                    var7 = var1 - var0;
-                    var6 = global;
-                    var3 = var6.Math;
-                    var2 = var3.floor;
-                    var5 = 0;
-                    var1 = var5 + var7;
-                    var4 = 2;
-                    var1 = var1 / var4;
-                    var11 = var2.bind(var3)(var1);
-                    var10 = var9[var11];
-                    var0 = var10 + var0;
-                    var1 = var11;
-                    var2 = var10;
-                    if (!(var5 <= var7)) {
-                        _fun45875_ip = 196;
-                        continue _fun45875
-                    }
-                case 71:
-                    var1 = var11;
-                    var2 = var10;
-                    if (!(var10 !== var0)) {
-                        _fun45875_ip = 196;
-                        continue _fun45875
-                    }
-                case 81:
-                    var5 = 0;
-                    var3 = var11;
-                    var0 = var10;
-                    var1 = var3;
-                    var2 = var0;
-                    if (!(var2 !== var8)) {
-                        _fun45875_ip = 196;
-                        continue _fun45875
-                    }
-                case 99:
-                    var13 = var3;
-                    var12 = var7;
-                    if (!(!(var0 < var8))) {
-                        _fun45875_ip = 125;
-                        continue _fun45875
-                    }
-                case 109:
-                    var13 = var5;
-                    var12 = var7;
-                    if (!(var0 > var8)) {
-                        _fun45875_ip = 125;
-                        continue _fun45875
-                    }
-                case 119:
-                    var13 = var5;
-                    var12 = var3;
-                case 125:
-                    var14 = var6.Math;
-                    var11 = var14.floor;
-                    var10 = var13 + var12;
-                    var10 = var10 / var4;
-                    var11 = var11.bind(var14)(var10);
-                    var10 = var9[var11];
-                    var1 = var11;
-                    var2 = var10;
-                    if (!(var13 <= var12)) {
-                        _fun45875_ip = 196;
-                        continue _fun45875
-                    }
-                case 164:
-                    var1 = var11;
-                    var2 = var10;
-                    if (!(var10 !== var0)) {
-                        _fun45875_ip = 196;
-                        continue _fun45875
-                    }
-                case 174:
-                    var5 = var13;
-                    var7 = var12;
-                    var3 = var11;
-                    var0 = var10;
-                    var1 = var3;
-                    var2 = var0;
-                    if (var2 !== var8) {
-                        _fun45875_ip = 99;
-                        continue _fun45875
-                    }
-                case 196:
-                    var0 = {};
-                    var0.value = var2;
-                    var0.index = var1;
-                    return var0;
-            }
-        };
-        var0.findClosestValueToTarget = var2;
-        var2 = function(arg0, arg1) { // Environment: var1
-            _fun45876: for (var _fun45876_ip = 0;;) switch (_fun45876_ip) {
-                case 0:
-                    var2 = arg0;
-                    var0 = arg1;
-                    var5 = this;
-                    var1 = var2.length;
-                    var3 = 1;
-                    var1 = var1 - var3;
-                    var4 = var2[var1];
-                    if (!(!(var0 >= var4))) {
-                        _fun45876_ip = 108;
-                        continue _fun45876
-                    }
-                case 29:
-                    var4 = 0;
-                    var4 = var2[var4];
-                    if (!(!(var0 < var4))) {
-                        _fun45876_ip = 104;
-                        continue _fun45876
-                    }
-                case 39:
-                    var4 = var5.findClosestValueToTarget;
-                    var4 = var4.bind(var5)(var2, var0);
-                    var5 = var4.value;
-                    var4 = var4.index;
-                    if (!(!(var5 <= var0))) {
-                        _fun45876_ip = 89;
-                        continue _fun45876
-                    }
-                case 65:
-                    var0 = {};
-                    var6 = var4 - var3;
-                    var6 = var2[var6];
-                    var0.value = var6;
-                    var3 = var4 - var3;
-                    var0.index = var3;
-                    _fun45876_ip = 102;
-                    continue _fun45876;
-                case 89:
-                    var3 = {};
-                    var3.value = var5;
-                    var3.index = var4;
-                    var0 = var3;
-                case 102:
-                    return var0;
-                case 104:
+                };
+                var3.getHasRenderedOnce = var2;
+                var3 = var0.prototype;
+                var2 = function(arg0) { // Environment: var1
                     var0 = undefined;
                     return var0;
-                case 108:
-                    var0 = {};
-                    var2 = var2[var1];
-                    var0.value = var2;
-                    var0.index = var1;
-                    return var0;
-            }
-        };
-        var0.findValueSmallerThanTarget = var2;
-        var2 = function(arg0, arg1) { // Environment: var1
-            _fun45877: for (var _fun45877_ip = 0;;) switch (_fun45877_ip) {
-                case 0:
-                    var2 = arg0;
-                    var0 = arg1;
-                    var5 = this;
-                    var1 = var2.length;
-                    var3 = 1;
-                    var4 = var1 - var3;
-                    var1 = 0;
-                    var6 = var2[var1];
-                    if (!(!(var0 < var6))) {
-                        _fun45877_ip = 108;
-                        continue _fun45877
-                    }
-                case 31:
-                    var4 = var2[var4];
-                    if (!(!(var0 > var4))) {
-                        _fun45877_ip = 104;
-                        continue _fun45877
-                    }
-                case 39:
-                    var4 = var5.findClosestValueToTarget;
-                    var4 = var4.bind(var5)(var2, var0);
-                    var5 = var4.value;
-                    var4 = var4.index;
-                    if (!(!(var5 >= var0))) {
-                        _fun45877_ip = 89;
-                        continue _fun45877
-                    }
-                case 65:
-                    var0 = {};
-                    var6 = var4 + var3;
-                    var6 = var2[var6];
-                    var0.value = var6;
-                    var3 = var4 + var3;
-                    var0.index = var3;
-                    _fun45877_ip = 102;
-                    continue _fun45877;
-                case 89:
-                    var3 = {};
-                    var3.value = var5;
-                    var3.index = var4;
-                    var0 = var3;
-                case 102:
-                    return var0;
-                case 104:
+                };
+                var3.componentWillReceivePropsCompat = var2;
+                var3 = var0.prototype;
+                var2 = function() { // Environment: var1
                     var0 = undefined;
                     return var0;
-                case 108:
-                    var0 = {};
-                    var2 = var2[var1];
-                    var0.value = var2;
-                    var0.index = var1;
+                };
+                var3.componentWillMountCompat = var2;
+                var3 = var0.prototype;
+                var2 = function() { // Environment: var1
+                    var0 = undefined;
                     return var0;
-            }
-        };
-        var0.findValueLargerThanTarget = var2;
-        var1 = function(arg0, arg1) { // Environment: var1
-            _fun45878: for (var _fun45878_ip = 0;;) switch (_fun45878_ip) {
-                case 0:
-                    var4 = arg0;
-                    var3 = arg1;
-                    var2 = var4.length;
-                    var1 = 0;
-                    var5 = var1 < var2;
-                    var0 = 1;
-                    if (!var5) {
-                        _fun45878_ip = 70;
-                        continue _fun45878
+                };
+                var3.componentWillUpdateCompat = var2;
+                var2 = var0.prototype;
+                var1 = function() { // Environment: var1
+                    _fun45873: for (var _fun45873_ip = 0;;) switch (_fun45873_ip) {
+                        case 0:
+                            var1 = this;
+                            var0 = var1._hasRenderedOnce;
+                            if (var0) {
+                                _fun45873_ip = 32;
+                                continue _fun45873
+                            }
+                        case 12:
+                            var0 = true;
+                            var1._hasRenderedOnce = var0;
+                            var0 = var1.componentWillMountCompat;
+                            var0 = var0.bind(var1)();
+                            _fun45873_ip = 42;
+                            continue _fun45873;
+                        case 32:
+                            var0 = var1.componentWillUpdateCompat;
+                            var0 = var0.bind(var1)();
+                        case 42:
+                            var0 = var1.renderCompat;
+                            var0 = var0.bind(var1)();
+                            return var0;
                     }
-                case 23:
-                    var5 = var2 + var1;
-                    var5 = var5 - var0;
-                    var6 = var5 >> var0;
-                    var5 = var4[var6];
-                    if (!(!(var3 > var5))) {
-                        _fun45878_ip = 56;
-                        continue _fun45878
-                    }
-                case 43:
-                    var7 = var4[var6];
-                    var5 = var6;
-                    if (!(!(var3 < var7))) {
-                        _fun45878_ip = 63;
-                        continue _fun45878
-                    }
-                case 54:
-                    return var6;
-                case 56:
-                    var1 = var6 + var0;
-                    var5 = var2;
-                case 63:
-                    var2 = var5;
-                    if (var1 < var2) {
-                        _fun45878_ip = 23;
-                        continue _fun45878
-                    }
-                case 70:
-                    var0 = -1;
-                    return var0;
-            }
-        };
-        var0.findIndexOf = var1;
-        return var0;
-    };
-    var0 = undefined;
-    var1 = var1.bind(var0)();
-    var2.default = var1;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5137]);
+                };
+                var2.render = var1;
+                return var0;
+            };
+            var1 = var1.bind(var0)(var3);
+            var2.ComponentCompat = var1;
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31]);

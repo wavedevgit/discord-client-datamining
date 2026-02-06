@@ -4,10 +4,10 @@ package com.google.android.gms.internal.play_billing;
 public final class o2 implements h3 {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final t2 f14344b = new m2();
+    private static final t2 f14307b = new m2();
 
     /* renamed from: a  reason: collision with root package name */
-    private final t2 f14345a;
+    private final t2 f14308a;
 
     public o2() {
         t2 t2Var;
@@ -15,11 +15,11 @@ public final class o2 implements h3 {
         try {
             t2Var = (t2) Class.forName("com.google.protobuf.DescriptorMessageInfoFactory").getDeclaredMethod("getInstance", null).invoke(null, null);
         } catch (Exception unused) {
-            t2Var = f14344b;
+            t2Var = f14307b;
         }
         n2 n2Var = new n2(c10, t2Var);
-        byte[] bArr = y1.f14404d;
-        this.f14345a = n2Var;
+        byte[] bArr = y1.f14367d;
+        this.f14308a = n2Var;
     }
 
     private static boolean b(s2 s2Var) {
@@ -32,7 +32,7 @@ public final class o2 implements h3 {
     @Override // com.google.android.gms.internal.play_billing.h3
     public final g3 a(Class cls) {
         i3.y(cls);
-        s2 a10 = this.f14345a.a(cls);
+        s2 a10 = this.f14308a.a(cls);
         if (a10.zzb()) {
             if (q1.class.isAssignableFrom(cls)) {
                 return z2.i(i3.u(), h1.b(), a10.zza());

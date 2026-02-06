@@ -26,34 +26,34 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public class d0 extends RenderableView {
 
     /* renamed from: d  reason: collision with root package name */
-    private SVGLength f16852d;
+    private SVGLength f16832d;
 
     /* renamed from: e  reason: collision with root package name */
-    private SVGLength f16853e;
+    private SVGLength f16833e;
 
     /* renamed from: i  reason: collision with root package name */
-    private SVGLength f16854i;
+    private SVGLength f16834i;
 
     /* renamed from: o  reason: collision with root package name */
-    private SVGLength f16855o;
+    private SVGLength f16835o;
 
     /* renamed from: p  reason: collision with root package name */
-    private String f16856p;
+    private String f16836p;
 
     /* renamed from: q  reason: collision with root package name */
-    private int f16857q;
+    private int f16837q;
 
     /* renamed from: r  reason: collision with root package name */
-    private int f16858r;
+    private int f16838r;
 
     /* renamed from: s  reason: collision with root package name */
-    private String f16859s;
+    private String f16839s;
 
     /* renamed from: t  reason: collision with root package name */
-    private int f16860t;
+    private int f16840t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final AtomicBoolean f16861u;
+    private final AtomicBoolean f16841u;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -63,7 +63,7 @@ public class d0 extends RenderableView {
 
         @Override // y8.b
         public void onFailureImpl(DataSource dataSource) {
-            d0.this.f16861u.set(false);
+            d0.this.f16841u.set(false);
             p8.a.M(ReactConstants.TAG, dataSource.b(), "RNSVG: fetchDecodedImage failed!", new Object[0]);
         }
 
@@ -74,8 +74,8 @@ public class d0 extends RenderableView {
             int surfaceId = UIManagerHelper.getSurfaceId(d0.this);
             int id2 = d0.this.getId();
             d0 d0Var2 = d0.this;
-            eventDispatcherForReactTag.dispatchEvent(new SvgLoadEvent(surfaceId, id2, d0Var2.mContext, d0Var2.f16856p, bitmap.getWidth(), bitmap.getHeight()));
-            d0.this.f16861u.set(false);
+            eventDispatcherForReactTag.dispatchEvent(new SvgLoadEvent(surfaceId, id2, d0Var2.mContext, d0Var2.f16836p, bitmap.getWidth(), bitmap.getHeight()));
+            d0.this.f16841u.set(false);
             SvgView svgView = d0.this.getSvgView();
             if (svgView != null) {
                 svgView.invalidate();
@@ -85,17 +85,17 @@ public class d0 extends RenderableView {
 
     public d0(ReactContext reactContext) {
         super(reactContext);
-        this.f16861u = new AtomicBoolean(false);
+        this.f16841u = new AtomicBoolean(false);
     }
 
     private void e(Canvas canvas, Paint paint, Bitmap bitmap, float f10) {
-        if (this.f16857q == 0 || this.f16858r == 0) {
-            this.f16857q = bitmap.getWidth();
-            this.f16858r = bitmap.getHeight();
+        if (this.f16837q == 0 || this.f16838r == 0) {
+            this.f16837q = bitmap.getWidth();
+            this.f16838r = bitmap.getHeight();
         }
         RectF f11 = f();
-        RectF rectF = new RectF(0.0f, 0.0f, this.f16857q, this.f16858r);
-        l1.a(rectF, f11, this.f16859s, this.f16860t).mapRect(rectF);
+        RectF rectF = new RectF(0.0f, 0.0f, this.f16837q, this.f16838r);
+        l1.a(rectF, f11, this.f16839s, this.f16840t).mapRect(rectF);
         canvas.clipPath(getPath(canvas, paint));
         Path clipPath = getClipPath(canvas, paint);
         if (clipPath != null) {
@@ -109,22 +109,22 @@ public class d0 extends RenderableView {
     }
 
     private RectF f() {
-        double relativeOnWidth = relativeOnWidth(this.f16852d);
-        double relativeOnHeight = relativeOnHeight(this.f16853e);
-        double relativeOnWidth2 = relativeOnWidth(this.f16854i);
-        double relativeOnHeight2 = relativeOnHeight(this.f16855o);
+        double relativeOnWidth = relativeOnWidth(this.f16832d);
+        double relativeOnHeight = relativeOnHeight(this.f16833e);
+        double relativeOnWidth2 = relativeOnWidth(this.f16834i);
+        double relativeOnHeight2 = relativeOnHeight(this.f16835o);
         if (relativeOnWidth2 == 0.0d) {
-            relativeOnWidth2 = this.f16857q * this.mScale;
+            relativeOnWidth2 = this.f16837q * this.mScale;
         }
         if (relativeOnHeight2 == 0.0d) {
-            relativeOnHeight2 = this.f16858r * this.mScale;
+            relativeOnHeight2 = this.f16838r * this.mScale;
         }
         return new RectF((float) relativeOnWidth, (float) relativeOnHeight, (float) (relativeOnWidth + relativeOnWidth2), (float) (relativeOnHeight + relativeOnHeight2));
     }
 
     private void g(ImagePipeline imagePipeline, ImageRequest imageRequest) {
-        this.f16861u.set(true);
-        imagePipeline.k(imageRequest, this.mContext).c(new a(), m8.i.F());
+        this.f16841u.set(true);
+        imagePipeline.k(imageRequest, this.mContext).c(new a(), m8.i.y());
     }
 
     private void m(ImagePipeline imagePipeline, ImageRequest imageRequest, Canvas canvas, Paint paint, float f10) {
@@ -137,20 +137,20 @@ public class d0 extends RenderableView {
                         return;
                     }
                     try {
-                        sa.e eVar = (sa.e) closeableReference.E0();
+                        sa.e eVar = (sa.e) closeableReference.J();
                         if (!(eVar instanceof sa.d)) {
                             return;
                         }
-                        Bitmap N1 = ((sa.d) eVar).N1();
-                        if (N1 == null) {
+                        Bitmap M1 = ((sa.d) eVar).M1();
+                        if (M1 == null) {
                             return;
                         }
-                        e(canvas, paint, N1, f10);
+                        e(canvas, paint, M1, f10);
                     } catch (Exception e10) {
                         throw new IllegalStateException(e10);
                     }
                 } finally {
-                    CloseableReference.N(closeableReference);
+                    CloseableReference.z(closeableReference);
                 }
             } catch (Exception e11) {
                 throw new IllegalStateException(e11);
@@ -163,9 +163,9 @@ public class d0 extends RenderableView {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.horcrux.svg.RenderableView, com.horcrux.svg.VirtualView
     public void draw(Canvas canvas, Paint paint, float f10) {
-        if (!this.f16861u.get()) {
+        if (!this.f16841u.get()) {
             ImagePipeline a10 = e9.d.a();
-            ImageRequest fromUri = ImageRequest.fromUri(new ImageSource(this.mContext, this.f16856p).getUri());
+            ImageRequest fromUri = ImageRequest.fromUri(new ImageSource(this.mContext, this.f16836p).getUri());
             if (a10.u(fromUri)) {
                 m(a10, fromUri, canvas, paint, f10 * this.mOpacity);
             } else {
@@ -184,52 +184,52 @@ public class d0 extends RenderableView {
     }
 
     public void h(Dynamic dynamic) {
-        this.f16855o = SVGLength.b(dynamic);
+        this.f16835o = SVGLength.b(dynamic);
         invalidate();
     }
 
     public void i(ReadableMap readableMap) {
         if (readableMap != null) {
             String string = readableMap.getString("uri");
-            this.f16856p = string;
+            this.f16836p = string;
             if (string != null && !string.isEmpty()) {
                 if (readableMap.hasKey("width") && readableMap.hasKey("height")) {
-                    this.f16857q = readableMap.getInt("width");
-                    this.f16858r = readableMap.getInt("height");
+                    this.f16837q = readableMap.getInt("width");
+                    this.f16838r = readableMap.getInt("height");
                 } else {
-                    this.f16857q = 0;
-                    this.f16858r = 0;
+                    this.f16837q = 0;
+                    this.f16838r = 0;
                 }
-                if (Uri.parse(this.f16856p).getScheme() == null) {
+                if (Uri.parse(this.f16836p).getScheme() == null) {
                     ResourceDrawableIdHelper.getInstance();
-                    ResourceDrawableIdHelper.getResourceDrawableUri(this.mContext, this.f16856p);
+                    ResourceDrawableIdHelper.getResourceDrawableUri(this.mContext, this.f16836p);
                 }
             }
         }
     }
 
     public void j(Dynamic dynamic) {
-        this.f16854i = SVGLength.b(dynamic);
+        this.f16834i = SVGLength.b(dynamic);
         invalidate();
     }
 
     public void k(Dynamic dynamic) {
-        this.f16852d = SVGLength.b(dynamic);
+        this.f16832d = SVGLength.b(dynamic);
         invalidate();
     }
 
     public void l(Dynamic dynamic) {
-        this.f16853e = SVGLength.b(dynamic);
+        this.f16833e = SVGLength.b(dynamic);
         invalidate();
     }
 
     public void setAlign(String str) {
-        this.f16859s = str;
+        this.f16839s = str;
         invalidate();
     }
 
     public void setMeetOrSlice(int i10) {
-        this.f16860t = i10;
+        this.f16840t = i10;
         invalidate();
     }
 }

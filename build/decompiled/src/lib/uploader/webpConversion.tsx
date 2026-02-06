@@ -1209,4 +1209,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.maybeConvertToWebP = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 3, 4134, 1215, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 3, 4135, 1215, 2]);

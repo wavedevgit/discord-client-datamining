@@ -117,7 +117,7 @@ public final class ESignature_ESignatureComponentStyleJsonAdapter extends h {
     @NotNull
     public ESignature.ESignatureComponentStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         AttributeStyles.ESignaturePrimaryButtonStyles eSignaturePrimaryButtonStyles = null;
         AttributeStyles.ESignatureSecondaryButtonStyles eSignatureSecondaryButtonStyles = null;
         AttributeStyles.ESignatureTitleStylesContainer eSignatureTitleStylesContainer = null;
@@ -135,10 +135,10 @@ public final class ESignature_ESignatureComponentStyleJsonAdapter extends h {
         AttributeStyles.ESignatureBorderColorStyle eSignatureBorderColorStyle = null;
         AttributeStyles.InputMarginStyle inputMarginStyle = null;
         while (reader.hasNext()) {
-            switch (reader.W(this.options)) {
+            switch (reader.J(this.options)) {
                 case -1:
                     reader.E0();
-                    reader.P();
+                    reader.S();
                     break;
                 case 0:
                     eSignaturePrimaryButtonStyles = (AttributeStyles.ESignaturePrimaryButtonStyles) this.nullableESignaturePrimaryButtonStylesAdapter.fromJson(reader);
@@ -190,7 +190,7 @@ public final class ESignature_ESignatureComponentStyleJsonAdapter extends h {
                     break;
             }
         }
-        reader.z();
+        reader.D();
         return new ESignature.ESignatureComponentStyle(eSignaturePrimaryButtonStyles, eSignatureSecondaryButtonStyles, eSignatureTitleStylesContainer, eSignatureTextStylesContainer, eSignatureFillColorStyle, eSignatureBackgroundColorStyle, complexTextBasedFontFamilyStyle, complexTextBasedFontSizeStyle, complexTextBasedFontWeightStyle, complexTextBasedLetterSpacingStyle, complexTextBasedLineHeightStyle, eSignatureTextColorStyle, eSignatureBorderRadiusStyle, eSignatureBorderWidthStyle, eSignatureBorderColorStyle, inputMarginStyle);
     }
 
@@ -199,39 +199,39 @@ public final class ESignature_ESignatureComponentStyleJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (eSignatureComponentStyle != null) {
             writer.k();
-            writer.W("buttonPrimaryStyle");
+            writer.J("buttonPrimaryStyle");
             this.nullableESignaturePrimaryButtonStylesAdapter.toJson(writer, eSignatureComponentStyle.getButtonPrimaryStyle());
-            writer.W("buttonSecondaryStyle");
+            writer.J("buttonSecondaryStyle");
             this.nullableESignatureSecondaryButtonStylesAdapter.toJson(writer, eSignatureComponentStyle.getButtonSecondaryStyle());
-            writer.W("titleStyle");
+            writer.J("titleStyle");
             this.nullableESignatureTitleStylesContainerAdapter.toJson(writer, eSignatureComponentStyle.getTitleStyle());
-            writer.W("textStyle");
+            writer.J("textStyle");
             this.nullableESignatureTextStylesContainerAdapter.toJson(writer, eSignatureComponentStyle.getTextStyle());
-            writer.W("fillColor");
+            writer.J("fillColor");
             this.nullableESignatureFillColorStyleAdapter.toJson(writer, eSignatureComponentStyle.getFillColor());
-            writer.W(ViewProps.BACKGROUND_COLOR);
+            writer.J(ViewProps.BACKGROUND_COLOR);
             this.nullableESignatureBackgroundColorStyleAdapter.toJson(writer, eSignatureComponentStyle.getBackgroundColor());
-            writer.W(ViewProps.FONT_FAMILY);
+            writer.J(ViewProps.FONT_FAMILY);
             this.nullableComplexTextBasedFontFamilyStyleAdapter.toJson(writer, eSignatureComponentStyle.getFontFamily());
-            writer.W(ViewProps.FONT_SIZE);
+            writer.J(ViewProps.FONT_SIZE);
             this.nullableComplexTextBasedFontSizeStyleAdapter.toJson(writer, eSignatureComponentStyle.getFontSize());
-            writer.W(ViewProps.FONT_WEIGHT);
+            writer.J(ViewProps.FONT_WEIGHT);
             this.nullableComplexTextBasedFontWeightStyleAdapter.toJson(writer, eSignatureComponentStyle.getFontWeight());
-            writer.W(ViewProps.LETTER_SPACING);
+            writer.J(ViewProps.LETTER_SPACING);
             this.nullableComplexTextBasedLetterSpacingStyleAdapter.toJson(writer, eSignatureComponentStyle.getLetterSpacing());
-            writer.W(ViewProps.LINE_HEIGHT);
+            writer.J(ViewProps.LINE_HEIGHT);
             this.nullableComplexTextBasedLineHeightStyleAdapter.toJson(writer, eSignatureComponentStyle.getLineHeight());
-            writer.W("textColor");
+            writer.J("textColor");
             this.nullableESignatureTextColorStyleAdapter.toJson(writer, eSignatureComponentStyle.getTextColor());
-            writer.W("borderRadius");
+            writer.J("borderRadius");
             this.nullableESignatureBorderRadiusStyleAdapter.toJson(writer, eSignatureComponentStyle.getBorderRadius());
-            writer.W(ViewProps.BORDER_WIDTH);
+            writer.J(ViewProps.BORDER_WIDTH);
             this.nullableESignatureBorderWidthStyleAdapter.toJson(writer, eSignatureComponentStyle.getBorderWidth());
-            writer.W(ViewProps.BORDER_COLOR);
+            writer.J(ViewProps.BORDER_COLOR);
             this.nullableESignatureBorderColorStyleAdapter.toJson(writer, eSignatureComponentStyle.getBorderColor());
-            writer.W(ViewProps.MARGIN);
+            writer.J(ViewProps.MARGIN);
             this.nullableInputMarginStyleAdapter.toJson(writer, eSignatureComponentStyle.getMargin());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

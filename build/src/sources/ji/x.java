@@ -1,15 +1,16 @@
 package ji;
 
-import java.util.ListIterator;
+import java.io.File;
+import java.util.Set;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class x extends w implements ListIterator {
-    @Override // java.util.ListIterator
-    public final void add(Object obj) {
-        throw new UnsupportedOperationException();
+final class x implements h {
+    @Override // ji.h
+    public final boolean a(ClassLoader classLoader, File file, File file2, boolean z10) {
+        return w.d(classLoader, file, file2, z10);
     }
 
-    @Override // java.util.ListIterator
-    public final void set(Object obj) {
-        throw new UnsupportedOperationException();
+    @Override // ji.h
+    public final void b(ClassLoader classLoader, Set set) {
+        w.c(classLoader, set);
     }
 }

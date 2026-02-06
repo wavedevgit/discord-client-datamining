@@ -19,7 +19,7 @@ public abstract class c {
             z12 = true;
         }
         if (z11 || z12) {
-            int b10 = fh.a.b(window.getContext(), 16842801, -16777216);
+            int b10 = gh.a.b(window.getContext(), 16842801, -16777216);
             if (z11) {
                 num = Integer.valueOf(b10);
             }
@@ -32,29 +32,29 @@ public abstract class c {
         int b11 = b(window.getContext(), z10);
         window.setStatusBarColor(c10);
         window.setNavigationBarColor(b11);
-        f(window, d(c10, fh.a.h(num.intValue())));
-        e(window, d(b11, fh.a.h(num2.intValue())));
+        f(window, d(c10, gh.a.h(num.intValue())));
+        e(window, d(b11, gh.a.h(num2.intValue())));
     }
 
     private static int b(Context context, boolean z10) {
         if (z10 && Build.VERSION.SDK_INT < 27) {
-            return r1.c.l(fh.a.b(context, 16843858, -16777216), IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
+            return r1.c.l(gh.a.b(context, 16843858, -16777216), IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
         }
         if (z10) {
             return 0;
         }
-        return fh.a.b(context, 16843858, -16777216);
+        return gh.a.b(context, 16843858, -16777216);
     }
 
     private static int c(Context context, boolean z10) {
         if (z10) {
             return 0;
         }
-        return fh.a.b(context, 16843857, -16777216);
+        return gh.a.b(context, 16843857, -16777216);
     }
 
     private static boolean d(int i10, boolean z10) {
-        if (!fh.a.h(i10)) {
+        if (!gh.a.h(i10)) {
             if (i10 != 0 || !z10) {
                 return false;
             }

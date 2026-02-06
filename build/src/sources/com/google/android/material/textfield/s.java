@@ -13,23 +13,23 @@ import com.google.android.material.internal.CheckableImageButton;
 public abstract class s {
 
     /* renamed from: a  reason: collision with root package name */
-    final TextInputLayout f15526a;
+    final TextInputLayout f15506a;
 
     /* renamed from: b  reason: collision with root package name */
-    final r f15527b;
+    final r f15507b;
 
     /* renamed from: c  reason: collision with root package name */
-    final Context f15528c;
+    final Context f15508c;
 
     /* renamed from: d  reason: collision with root package name */
-    final CheckableImageButton f15529d;
+    final CheckableImageButton f15509d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public s(r rVar) {
-        this.f15526a = rVar.f15504d;
-        this.f15527b = rVar;
-        this.f15528c = rVar.getContext();
-        this.f15529d = rVar.r();
+        this.f15506a = rVar.f15484d;
+        this.f15507b = rVar;
+        this.f15508c = rVar.getContext();
+        this.f15509d = rVar.r();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -113,7 +113,7 @@ public abstract class s {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void r() {
-        this.f15527b.L(false);
+        this.f15507b.L(false);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */

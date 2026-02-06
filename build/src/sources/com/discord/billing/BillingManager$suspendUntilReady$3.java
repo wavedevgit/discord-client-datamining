@@ -29,7 +29,7 @@ public final class BillingManager$suspendUntilReady$3 extends kotlin.coroutines.
 
     @Override // kotlin.coroutines.jvm.internal.a
     public final Object invokeSuspend(Object obj) {
-        Object f10 = ur.b.f();
+        Object f10 = wr.b.f();
         int i10 = this.label;
         if (i10 != 0) {
             if (i10 == 1) {
@@ -41,7 +41,7 @@ public final class BillingManager$suspendUntilReady$3 extends kotlin.coroutines.
             kotlin.c.b(obj);
             CompletableDeferred completableDeferred = this.$deferred;
             this.label = 1;
-            obj = completableDeferred.V(this);
+            obj = completableDeferred.I(this);
             if (obj == f10) {
                 return f10;
             }
@@ -54,6 +54,6 @@ public final class BillingManager$suspendUntilReady$3 extends kotlin.coroutines.
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super BillingManager.ClientReadyState> continuation) {
-        return ((BillingManager$suspendUntilReady$3) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+        return ((BillingManager$suspendUntilReady$3) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
     }
 }

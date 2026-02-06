@@ -6,7 +6,6 @@ import android.os.IBinder;
 import android.os.IInterface;
 import android.os.Looper;
 import android.text.TextUtils;
-import com.google.android.gms.common.j;
 import ff.k;
 import gf.g;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -37,7 +36,7 @@ public final class b extends g {
     @Override // gf.c, ef.a.f
     public final boolean g() {
         gf.d h02 = h0();
-        if (!TextUtils.isEmpty(h02.b()) && !h02.e(ue.b.f51378a).isEmpty()) {
+        if (!TextUtils.isEmpty(h02.b()) && !h02.e(ue.b.f51419a).isEmpty()) {
             return true;
         }
         return false;
@@ -45,7 +44,7 @@ public final class b extends g {
 
     @Override // gf.c, ef.a.f
     public final int n() {
-        return j.f13813a;
+        return com.google.android.gms.common.k.f13780a;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */

@@ -1,51 +1,48 @@
 package ng;
-/* JADX INFO: Access modifiers changed from: package-private */
+
+import android.os.Parcel;
+import android.os.Parcelable;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class p implements xi.g {
-
-    /* renamed from: a  reason: collision with root package name */
-    private boolean f40896a = false;
-
-    /* renamed from: b  reason: collision with root package name */
-    private boolean f40897b = false;
-
-    /* renamed from: c  reason: collision with root package name */
-    private xi.c f40898c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private final l f40899d;
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public p(l lVar) {
-        this.f40899d = lVar;
-    }
-
-    private final void c() {
-        if (!this.f40896a) {
-            this.f40896a = true;
-            return;
+public final class p implements Parcelable.Creator {
+    @Override // android.os.Parcelable.Creator
+    public final /* bridge */ /* synthetic */ Object createFromParcel(Parcel parcel) {
+        int A = hf.b.A(parcel);
+        int i10 = 0;
+        int i11 = 0;
+        int i12 = 0;
+        int i13 = 0;
+        long j10 = 0;
+        while (parcel.dataPosition() < A) {
+            int r10 = hf.b.r(parcel);
+            int l10 = hf.b.l(r10);
+            if (l10 != 2) {
+                if (l10 != 3) {
+                    if (l10 != 4) {
+                        if (l10 != 5) {
+                            if (l10 != 6) {
+                                hf.b.z(parcel, r10);
+                            } else {
+                                i13 = hf.b.t(parcel, r10);
+                            }
+                        } else {
+                            j10 = hf.b.v(parcel, r10);
+                        }
+                    } else {
+                        i12 = hf.b.t(parcel, r10);
+                    }
+                } else {
+                    i11 = hf.b.t(parcel, r10);
+                }
+            } else {
+                i10 = hf.b.t(parcel, r10);
+            }
         }
-        throw new xi.b("Cannot encode a second value in the ValueEncoderContext");
+        hf.b.k(parcel, A);
+        return new o(i10, i11, i12, j10, i13);
     }
 
-    @Override // xi.g
-    public final xi.g a(String str) {
-        c();
-        this.f40899d.f(this.f40898c, str, this.f40897b);
-        return this;
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public final void b(xi.c cVar, boolean z10) {
-        this.f40896a = false;
-        this.f40898c = cVar;
-        this.f40897b = z10;
-    }
-
-    @Override // xi.g
-    public final xi.g e(boolean z10) {
-        c();
-        this.f40899d.g(this.f40898c, z10 ? 1 : 0, this.f40897b);
-        return this;
+    @Override // android.os.Parcelable.Creator
+    public final /* synthetic */ Object[] newArray(int i10) {
+        return new o[i10];
     }
 }

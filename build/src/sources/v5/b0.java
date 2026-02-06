@@ -6,7 +6,7 @@ import w5.c;
 public class b0 implements n0 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b0 f51815a = new b0();
+    public static final b0 f52180a = new b0();
 
     private b0() {
     }
@@ -24,7 +24,7 @@ public class b0 implements n0 {
         if (m10 == c.b.NUMBER) {
             PointF pointF = new PointF(((float) cVar.nextDouble()) * f10, ((float) cVar.nextDouble()) * f10);
             while (cVar.hasNext()) {
-                cVar.P();
+                cVar.S();
             }
             return pointF;
         }

@@ -3,33 +3,33 @@ package ed;
 final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    public final int f21500a;
+    public final int f21433a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final int f21501b;
+    public final int f21434b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final int f21502c;
+    public final int f21435c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final int f21503d;
+    public final int f21436d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final int f21504e;
+    public final int f21437e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final int f21505f;
+    public final int f21438f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final byte[] f21506g;
+    public final byte[] f21439g;
 
     public c(int i10, int i11, int i12, int i13, int i14, int i15, byte[] bArr) {
-        this.f21500a = i10;
-        this.f21501b = i11;
-        this.f21502c = i12;
-        this.f21503d = i13;
-        this.f21504e = i14;
-        this.f21505f = i15;
-        this.f21506g = bArr;
+        this.f21433a = i10;
+        this.f21434b = i11;
+        this.f21435c = i12;
+        this.f21436d = i13;
+        this.f21437e = i14;
+        this.f21438f = i15;
+        this.f21439g = bArr;
     }
 }

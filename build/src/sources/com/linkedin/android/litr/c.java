@@ -7,60 +7,60 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
-import ml.e;
-import rl.f;
-import ul.g;
+import ol.e;
+import tl.f;
+import wl.g;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 class c implements Runnable {
 
     /* renamed from: u  reason: collision with root package name */
-    private static final String f17221u = "c";
+    private static final String f17201u = "c";
 
     /* renamed from: d  reason: collision with root package name */
-    List f17222d;
+    List f17202d;
 
     /* renamed from: i  reason: collision with root package name */
-    int f17224i;
+    int f17204i;
 
     /* renamed from: r  reason: collision with root package name */
-    private final List f17228r;
+    private final List f17208r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final String f17229s;
+    private final String f17209s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final a f17230t;
+    private final a f17210t;
 
     /* renamed from: e  reason: collision with root package name */
-    float f17223e = 0.0f;
+    float f17203e = 0.0f;
 
     /* renamed from: o  reason: collision with root package name */
-    tl.d f17225o = new tl.d();
+    vl.d f17205o = new vl.d();
 
     /* renamed from: p  reason: collision with root package name */
-    ul.d f17226p = new ul.d();
+    wl.d f17206p = new wl.d();
 
     /* renamed from: q  reason: collision with root package name */
-    kl.b f17227q = new kl.b();
+    ml.b f17207q = new ml.b();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c(String str, List list, int i10, a aVar) {
-        this.f17229s = str;
-        this.f17228r = list;
-        this.f17224i = i10;
-        this.f17230t = aVar;
+        this.f17209s = str;
+        this.f17208r = list;
+        this.f17204i = i10;
+        this.f17210t = aVar;
     }
 
     private void h() {
-        for (b bVar : this.f17228r) {
+        for (b bVar : this.f17208r) {
             bVar.c().seekTo(bVar.c().getSelection().b(), 0);
         }
     }
 
     private void k() {
-        if (this.f17222d != null) {
-            for (int i10 = 0; i10 < this.f17222d.size(); i10++) {
-                this.f17227q.d(i10, ((tl.c) this.f17222d.get(i10)).f());
+        if (this.f17202d != null) {
+            for (int i10 = 0; i10 < this.f17202d.size(); i10++) {
+                this.f17207q.d(i10, ((vl.c) this.f17202d.get(i10)).f());
             }
         }
     }
@@ -72,22 +72,22 @@ class c implements Runnable {
                 g();
                 c();
             } catch (Exception e10) {
-                Log.e(f17221u, "cancel: ", e10);
+                Log.e(f17201u, "cancel: ", e10);
             }
         } finally {
-            this.f17230t.b(this.f17229s, this.f17227q.b());
+            this.f17210t.b(this.f17209s, this.f17207q.b());
         }
     }
 
     void b() {
-        int size = this.f17228r.size();
-        this.f17222d = new ArrayList(size);
+        int size = this.f17208r.size();
+        this.f17202d = new ArrayList(size);
         if (size >= 1) {
             for (int i10 = 0; i10 < size; i10++) {
-                b bVar = (b) this.f17228r.get(i10);
-                tl.c a10 = this.f17225o.a(bVar.f(), bVar.h(), bVar.c(), bVar.a(), bVar.e(), bVar.b(), bVar.d(), bVar.g());
-                this.f17222d.add(a10);
-                this.f17227q.e(i10, a10.c(), a10.d());
+                b bVar = (b) this.f17208r.get(i10);
+                vl.c a10 = this.f17205o.a(bVar.f(), bVar.h(), bVar.c(), bVar.a(), bVar.e(), bVar.b(), bVar.d(), bVar.g());
+                this.f17202d.add(a10);
+                this.f17207q.e(i10, a10.c(), a10.d());
             }
             return;
         }
@@ -95,7 +95,7 @@ class c implements Runnable {
     }
 
     void c() {
-        List<b> list = this.f17228r;
+        List<b> list = this.f17208r;
         if (list != null) {
             for (b bVar : list) {
                 try {
@@ -104,7 +104,7 @@ class c implements Runnable {
                         new File(a10).delete();
                     }
                 } catch (Exception e10) {
-                    Log.e(f17221u, "deleteOutputFiles: ", e10);
+                    Log.e(f17201u, "deleteOutputFiles: ", e10);
                 }
             }
         }
@@ -117,69 +117,69 @@ class c implements Runnable {
                 g();
                 c();
             } catch (Exception e10) {
-                Log.e(f17221u, "error: ", e10);
+                Log.e(f17201u, "error: ", e10);
             }
         } finally {
-            this.f17230t.d(this.f17229s, th2, this.f17227q.b());
+            this.f17210t.d(this.f17209s, th2, this.f17207q.b());
         }
     }
 
     void e() {
-        for (int i10 = 0; i10 < this.f17228r.size(); i10++) {
-            b bVar = (b) this.f17228r.get(i10);
-            this.f17227q.a(bVar.c().getTrackFormat(bVar.f()));
-            this.f17227q.d(i10, bVar.g());
+        for (int i10 = 0; i10 < this.f17208r.size(); i10++) {
+            b bVar = (b) this.f17208r.get(i10);
+            this.f17207q.a(bVar.c().getTrackFormat(bVar.f()));
+            this.f17207q.d(i10, bVar.g());
         }
     }
 
     boolean f() {
         boolean z10;
         boolean z11 = true;
-        for (int i10 = 0; i10 < this.f17222d.size(); i10++) {
+        for (int i10 = 0; i10 < this.f17202d.size(); i10++) {
             long currentTimeMillis = System.currentTimeMillis();
-            if (((tl.c) this.f17222d.get(i10)).g() == 4) {
+            if (((vl.c) this.f17202d.get(i10)).g() == 4) {
                 z10 = true;
             } else {
                 z10 = false;
             }
             z11 &= z10;
-            this.f17227q.c(i10, System.currentTimeMillis() - currentTimeMillis);
+            this.f17207q.c(i10, System.currentTimeMillis() - currentTimeMillis);
         }
         float f10 = 0.0f;
-        for (tl.c cVar : this.f17222d) {
+        for (vl.c cVar : this.f17202d) {
             f10 += cVar.e();
         }
-        float size = f10 / this.f17222d.size();
-        int i11 = this.f17224i;
-        if ((i11 == 0 && size != this.f17223e) || (i11 != 0 && size >= this.f17223e + (1.0f / i11))) {
-            this.f17230t.e(this.f17229s, size);
-            this.f17223e = size;
+        float size = f10 / this.f17202d.size();
+        int i11 = this.f17204i;
+        if ((i11 == 0 && size != this.f17203e) || (i11 != 0 && size >= this.f17203e + (1.0f / i11))) {
+            this.f17210t.e(this.f17209s, size);
+            this.f17203e = size;
         }
         return z11;
     }
 
     void g() {
-        if (this.f17222d != null) {
-            for (int i10 = 0; i10 < this.f17222d.size(); i10++) {
+        if (this.f17202d != null) {
+            for (int i10 = 0; i10 < this.f17202d.size(); i10++) {
                 try {
-                    ((tl.c) this.f17222d.get(i10)).i();
+                    ((vl.c) this.f17202d.get(i10)).i();
                 } catch (Exception e10) {
-                    Log.e(f17221u, "release: Exception when stopping track transcoder: ", e10);
+                    Log.e(f17201u, "release: Exception when stopping track transcoder: ", e10);
                 }
             }
         }
         HashSet hashSet = new HashSet();
         HashSet hashSet2 = new HashSet();
-        for (b bVar : this.f17228r) {
+        for (b bVar : this.f17208r) {
             hashSet.add(bVar.c());
             hashSet2.add(bVar.d());
         }
         Iterator it = hashSet.iterator();
         while (it.hasNext()) {
             try {
-                ((rl.e) it.next()).release();
+                ((tl.e) it.next()).release();
             } catch (Exception e11) {
-                Log.e(f17221u, "release: Exception when releasing media source: ", e11);
+                Log.e(f17201u, "release: Exception when releasing media source: ", e11);
             }
         }
         Iterator it2 = hashSet2.iterator();
@@ -189,7 +189,7 @@ class c implements Runnable {
     }
 
     void i() {
-        for (tl.c cVar : this.f17222d) {
+        for (vl.c cVar : this.f17202d) {
             cVar.h();
         }
     }
@@ -201,8 +201,8 @@ class c implements Runnable {
         b();
         i();
         h();
-        this.f17230t.f(this.f17229s);
-        this.f17223e = 0.0f;
+        this.f17210t.f(this.f17209s);
+        this.f17203e = 0.0f;
         while (true) {
             f10 = f();
             if (Thread.interrupted()) {
@@ -216,16 +216,16 @@ class c implements Runnable {
         if (f10) {
             k();
             g();
-            this.f17230t.c(this.f17229s, this.f17227q.b());
+            this.f17210t.c(this.f17209s, this.f17207q.b());
         }
     }
 
     void l() {
-        long e10 = g.e(this.f17228r);
+        long e10 = g.e(this.f17208r);
         long j10 = ((float) e10) * 1.1f;
-        long a10 = this.f17226p.a();
+        long a10 = this.f17206p.a();
         if (a10 != -1 && a10 < j10) {
-            throw new ml.a(e10, a10);
+            throw new ol.a(e10, a10);
         }
     }
 
@@ -234,15 +234,15 @@ class c implements Runnable {
         try {
             j();
         } catch (RuntimeException e10) {
-            Log.e(f17221u, "Transformation job error", e10);
+            Log.e(f17201u, "Transformation job error", e10);
             if (e10.getCause() instanceof InterruptedException) {
                 a();
             } else {
                 d(e10);
             }
-        } catch (ml.d e11) {
-            Log.e(f17221u, "Transformation job error", e11);
-            e11.a(this.f17229s);
+        } catch (ol.d e11) {
+            Log.e(f17201u, "Transformation job error", e11);
+            e11.a(this.f17209s);
             d(e11);
         }
     }

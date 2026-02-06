@@ -1,37 +1,31 @@
 package bt;
 
-import bt.g;
+import java.util.List;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class f {
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final int d(CharSequence charSequence, int i10, int i11) {
-        int i12 = 0;
-        while (i10 < i11) {
-            i12 = (i12 * 10) + ys.d.a(charSequence.charAt(i10));
-            i10++;
-        }
-        return i12;
+public final class f extends h {
+
+    /* renamed from: b  reason: collision with root package name */
+    private final ct.e f7063b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private final dt.q f7064c;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public f(List formats) {
+        super(formats);
+        Intrinsics.checkNotNullParameter(formats, "formats");
+        this.f7063b = super.a();
+        this.f7064c = super.b();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final Integer e(CharSequence charSequence, int i10, int i11) {
-        int i12 = 0;
-        while (i10 < i11) {
-            i12 = (i12 * 10) + ys.d.a(charSequence.charAt(i10));
-            if (i12 < 0) {
-                return null;
-            }
-            i10++;
-        }
-        return Integer.valueOf(i12);
+    @Override // bt.h, bt.o
+    public ct.e a() {
+        return this.f7063b;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final g f(a aVar, Object obj, Object obj2) {
-        Object c10 = aVar.c(obj, obj2);
-        if (c10 == null) {
-            return null;
-        }
-        return new g.a(c10);
+    @Override // bt.h, bt.o
+    public dt.q b() {
+        return this.f7064c;
     }
 }

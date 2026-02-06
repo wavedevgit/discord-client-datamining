@@ -6,7 +6,7 @@ import tc.u;
 final class c extends u {
 
     /* renamed from: b  reason: collision with root package name */
-    private final long f54695b;
+    private final long f55239b;
 
     public c(l lVar, long j10) {
         super(lVar);
@@ -17,21 +17,21 @@ final class c extends u {
             z10 = false;
         }
         ne.a.a(z10);
-        this.f54695b = j10;
+        this.f55239b = j10;
     }
 
     @Override // tc.u, tc.l
     public long g() {
-        return super.g() - this.f54695b;
+        return super.g() - this.f55239b;
     }
 
     @Override // tc.u, tc.l
     public long getLength() {
-        return super.getLength() - this.f54695b;
+        return super.getLength() - this.f55239b;
     }
 
     @Override // tc.u, tc.l
     public long getPosition() {
-        return super.getPosition() - this.f54695b;
+        return super.getPosition() - this.f55239b;
     }
 }

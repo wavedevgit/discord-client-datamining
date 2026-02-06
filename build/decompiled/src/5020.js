@@ -4,7 +4,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = exports;
     var4 = dependencyMap;
     var0 = function() {
-        _fun45131: for (var _fun45131_ip = 0;;) switch (_fun45131_ip) {
+        _fun45126: for (var _fun45126_ip = 0;;) switch (_fun45126_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -25,8 +25,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun45131_ip = 74;
-                continue _fun45131;
+                _fun45126_ip = 74;
+                continue _fun45126;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -79,7 +79,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.BaseGesture;
     var1 = function(arg0) { // Environment: var1
         var3 = function() {
-            _fun45135: for (var _fun45135_ip = 0;;) switch (_fun45135_ip) {
+            _fun45130: for (var _fun45130_ip = 0;;) switch (_fun45130_ip) {
                 case 0:
                     var3 = this;
                     var0 = _closure1_slot0;
@@ -92,14 +92,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = _closure1_slot5;
                     var0 = var0.bind(var2)();
                     if (var0) {
-                        _fun45135_ip = 62;
-                        continue _fun45135
+                        _fun45130_ip = 62;
+                        continue _fun45130
                     }
                 case 49:
                     var0 = var8.apply;
                     var0 = var0.bind(var8)(var3, var2);
-                    _fun45135_ip = 100;
-                    continue _fun45135;
+                    _fun45130_ip = 100;
+                    continue _fun45130;
                 case 62:
                     var5 = global;
                     var7 = var5.Reflect;
@@ -113,11 +113,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = var1.bind(var2)(var3, var0);
                     var1 = {};
                     var0.config = var1;
-                    var1 = 'LongPressGestureHandler';
+                    var1 = 'FlingGestureHandler';
                     var0.handlerName = var1;
-                    var2 = var0.shouldCancelWhenOutside;
-                    var1 = true;
-                    var1 = var2.bind(var0)(var1);
                     return var0;
             }
         };
@@ -128,46 +125,34 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var1 = var4.bind(var2)(var3, var1);
         var1 = _closure1_slot1;
         var4 = {};
-        var0 = 'minDuration';
+        var0 = 'numberOfPointers';
         var4.key = var0;
         var0 = function arg0() {
-            var0 = this;
-            var2 = var0.config;
-            var1 = arg0;
-            var2.minDurationMs = var1;
-            return var0;
-        };
-        var4.value = var0;
-        var0 = new Array(3);
-        var0[0] = var4;
-        var4 = {};
-        var6 = 'maxDistance';
-        var4.key = var6;
-        var6 = function arg0() {
-            var0 = this;
-            var2 = var0.config;
-            var1 = arg0;
-            var2.maxDist = var1;
-            return var0;
-        };
-        var4.value = var6;
-        var0[1] = var4;
-        var4 = {};
-        var6 = 'numberOfPointers';
-        var4.key = var6;
-        var5 = function arg0() {
             var0 = this;
             var2 = var0.config;
             var1 = arg0;
             var2.numberOfPointers = var1;
             return var0;
         };
+        var4.value = var0;
+        var0 = new Array(2);
+        var0[0] = var4;
+        var4 = {};
+        var6 = 'direction';
+        var4.key = var6;
+        var5 = function arg0() {
+            var0 = this;
+            var2 = var0.config;
+            var1 = arg0;
+            var2.direction = var1;
+            return var0;
+        };
         var4.value = var5;
-        var0[2] = var4;
+        var0[1] = var4;
         var0 = var1.bind(var2)(var3, var0);
         return var0;
     };
     var1 = var1.bind(var0)(var3);
-    var2.LongPressGesture = var1;
+    var2.FlingGesture = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 5002]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 5003]);

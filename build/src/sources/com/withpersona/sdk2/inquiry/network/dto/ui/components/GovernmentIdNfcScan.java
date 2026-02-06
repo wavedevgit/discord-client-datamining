@@ -406,8 +406,8 @@ public final class GovernmentIdNfcScan implements UiComponentConfig {
             @NotNull
             public DataGroupTypes fromJson(@NotNull m reader) {
                 Intrinsics.checkNotNullParameter(reader, "reader");
-                Object V = reader.V();
-                return Intrinsics.areEqual(V, "dg1") ? DataGroupTypes.Dg1 : Intrinsics.areEqual(V, "dg2") ? DataGroupTypes.Dg2 : Intrinsics.areEqual(V, "dg14") ? DataGroupTypes.Dg14 : Intrinsics.areEqual(V, "sod") ? DataGroupTypes.Sod : DataGroupTypes.Unknown;
+                Object I = reader.I();
+                return Intrinsics.areEqual(I, "dg1") ? DataGroupTypes.Dg1 : Intrinsics.areEqual(I, "dg2") ? DataGroupTypes.Dg2 : Intrinsics.areEqual(I, "dg14") ? DataGroupTypes.Dg14 : Intrinsics.areEqual(I, "sod") ? DataGroupTypes.Sod : DataGroupTypes.Unknown;
             }
         }
 
@@ -418,7 +418,7 @@ public final class GovernmentIdNfcScan implements UiComponentConfig {
         static {
             DataGroupTypes[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = vr.a.a($values);
+            $ENTRIES = xr.a.a($values);
             Companion = new Companion(null);
         }
 

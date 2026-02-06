@@ -1,18 +1,10 @@
 package up;
 
-import kotlin.jvm.internal.Intrinsics;
+import kotlinx.coroutines.CoroutineDispatcher;
+import os.m0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class a {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final c f51650a;
-
-    public a(c sdkFilesManager) {
-        Intrinsics.checkNotNullParameter(sdkFilesManager, "sdkFilesManager");
-        this.f51650a = sdkFilesManager;
-    }
-
-    public final c a() {
-        return this.f51650a;
+    public final CoroutineDispatcher a() {
+        return m0.a();
     }
 }

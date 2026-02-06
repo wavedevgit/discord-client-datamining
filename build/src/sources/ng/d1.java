@@ -1,43 +1,96 @@
 package ng;
 
-import xi.c;
+import java.io.Serializable;
+import java.util.AbstractCollection;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Spliterator;
+import java.util.Spliterators;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class d1 implements xi.d {
-
-    /* renamed from: a  reason: collision with root package name */
-    static final d1 f40407a = new d1();
-
-    /* renamed from: b  reason: collision with root package name */
-    private static final xi.c f40408b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private static final xi.c f40409c;
+public abstract class d1 extends AbstractCollection implements Serializable {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final xi.c f40410d;
+    private static final Object[] f39753d = new Object[0];
 
-    static {
-        c.b a10 = xi.c.a("logEventKey");
-        f fVar = new f();
-        fVar.a(1);
-        f40408b = a10.b(fVar.b()).a();
-        c.b a11 = xi.c.a("eventCount");
-        f fVar2 = new f();
-        fVar2.a(2);
-        f40409c = a11.b(fVar2.b()).a();
-        c.b a12 = xi.c.a("inferenceDurationStats");
-        f fVar3 = new f();
-        fVar3.a(3);
-        f40410d = a12.b(fVar3.b()).a();
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public final boolean add(Object obj) {
+        throw new UnsupportedOperationException();
     }
 
-    private d1() {
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public final boolean addAll(Collection collection) {
+        throw new UnsupportedOperationException();
     }
 
-    @Override // xi.d
-    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
-        android.support.v4.media.session.b.a(obj);
-        xi.e eVar = (xi.e) obj2;
-        throw null;
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public abstract int b(Object[] objArr, int i10);
+
+    int c() {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public final void clear() {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
+    public abstract boolean contains(Object obj);
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public int d() {
+        throw new UnsupportedOperationException();
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public Object[] e() {
+        return null;
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public final boolean remove(Object obj) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public final boolean removeAll(Collection collection) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public final boolean retainAll(Collection collection) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override // java.util.Collection, java.lang.Iterable
+    public final Spliterator spliterator() {
+        return Spliterators.spliterator(this, 1296);
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public final Object[] toArray() {
+        return toArray(f39753d);
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public final Object[] toArray(Object[] objArr) {
+        objArr.getClass();
+        int size = size();
+        int length = objArr.length;
+        if (length < size) {
+            Object[] e10 = e();
+            if (e10 == null) {
+                if (length != 0) {
+                    objArr = Arrays.copyOf(objArr, 0);
+                }
+                objArr = Arrays.copyOf(objArr, size);
+            } else {
+                return Arrays.copyOfRange(e10, d(), c(), objArr.getClass());
+            }
+        } else if (length > size) {
+            objArr[size] = null;
+        }
+        b(objArr, 0);
+        return objArr;
     }
 }

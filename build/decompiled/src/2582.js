@@ -1,443 +1,248 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var6 = require;
     var1 = exports;
-    var0 = global;
-    var5 = var0.Object;
-    var4 = var5.defineProperty;
-    var3 = {};
-    var0 = true;
-    var3.value = var0;
-    var0 = '__esModule';
-    var0 = var4.bind(var5)(var1, var0, var3);
-    var0 = undefined;
-    var1.default = var0;
-    var3 = {};
-    var4 = {};
-    var5 = {
-        'regular': 'méně než sekunda',
-        'past': 'před méně než sekundou',
-        'future': 'za méně než sekundu'
-    };
-    var4.one = var5;
-    var5 = {
-        'regular': 'méně než {{count}} sekundy',
-        'past': 'před méně než {{count}} sekundami',
-        'future': 'za méně než {{count}} sekundy'
-    };
-    var4.few = var5;
-    var5 = {
-        'regular': 'méně než {{count}} sekund',
-        'past': 'před méně než {{count}} sekundami',
-        'future': 'za méně než {{count}} sekund'
-    };
-    var4.many = var5;
-    var3.lessThanXSeconds = var4;
-    var4 = {};
-    var5 = {
-        'regular': 'sekunda',
-        'past': 'před sekundou',
-        'future': 'za sekundu'
-    };
-    var4.one = var5;
-    var5 = {
-        'regular': '{{count}} sekundy',
-        'past': 'před {{count}} sekundami',
-        'future': 'za {{count}} sekundy'
-    };
-    var4.few = var5;
-    var5 = {
-        'regular': '{{count}} sekund',
-        'past': 'před {{count}} sekundami',
-        'future': 'za {{count}} sekund'
-    };
-    var4.many = var5;
-    var3.xSeconds = var4;
-    var4 = {};
-    var5 = 'other';
-    var4.type = var5;
-    var5 = {
-        'regular': 'půl minuty',
-        'past': 'před půl minutou',
-        'future': 'za půl minuty'
-    };
-    var4.other = var5;
-    var3.halfAMinute = var4;
-    var4 = {};
-    var5 = {
-        'regular': 'méně než minuta',
-        'past': 'před méně než minutou',
-        'future': 'za méně než minutu'
-    };
-    var4.one = var5;
-    var5 = {
-        'regular': 'méně než {{count}} minuty',
-        'past': 'před méně než {{count}} minutami',
-        'future': 'za méně než {{count}} minuty'
-    };
-    var4.few = var5;
-    var5 = {
-        'regular': 'méně než {{count}} minut',
-        'past': 'před méně než {{count}} minutami',
-        'future': 'za méně než {{count}} minut'
-    };
-    var4.many = var5;
-    var3.lessThanXMinutes = var4;
-    var4 = {};
-    var5 = {
-        'regular': 'minuta',
-        'past': 'před minutou',
-        'future': 'za minutu'
-    };
-    var4.one = var5;
-    var5 = {
-        'regular': '{{count}} minuty',
-        'past': 'před {{count}} minutami',
-        'future': 'za {{count}} minuty'
-    };
-    var4.few = var5;
-    var5 = {
-        'regular': '{{count}} minut',
-        'past': 'před {{count}} minutami',
-        'future': 'za {{count}} minut'
-    };
-    var4.many = var5;
-    var3.xMinutes = var4;
-    var4 = {};
-    var5 = {
-        'regular': 'přibližně hodina',
-        'past': 'přibližně před hodinou',
-        'future': 'přibližně za hodinu'
-    };
-    var4.one = var5;
-    var5 = {
-        'regular': 'přibližně {{count}} hodiny',
-        'past': 'přibližně před {{count}} hodinami',
-        'future': 'přibližně za {{count}} hodiny'
-    };
-    var4.few = var5;
-    var5 = {
-        'regular': 'přibližně {{count}} hodin',
-        'past': 'přibližně před {{count}} hodinami',
-        'future': 'přibližně za {{count}} hodin'
-    };
-    var4.many = var5;
-    var3.aboutXHours = var4;
-    var4 = {};
-    var5 = {
-        'regular': 'hodina',
-        'past': 'před hodinou',
-        'future': 'za hodinu'
-    };
-    var4.one = var5;
-    var5 = {
-        'regular': '{{count}} hodiny',
-        'past': 'před {{count}} hodinami',
-        'future': 'za {{count}} hodiny'
-    };
-    var4.few = var5;
-    var5 = {
-        'regular': '{{count}} hodin',
-        'past': 'před {{count}} hodinami',
-        'future': 'za {{count}} hodin'
-    };
-    var4.many = var5;
-    var3.xHours = var4;
-    var4 = {};
-    var5 = {
-        'regular': 'den',
-        'past': 'před dnem',
-        'future': 'za den'
-    };
-    var4.one = var5;
-    var5 = {
-        'regular': '{{count}} dny',
-        'past': 'před {{count}} dny',
-        'future': 'za {{count}} dny'
-    };
-    var4.few = var5;
-    var5 = {
-        'regular': '{{count}} dní',
-        'past': 'před {{count}} dny',
-        'future': 'za {{count}} dní'
-    };
-    var4.many = var5;
-    var3.xDays = var4;
-    var4 = {};
-    var5 = {
-        'regular': 'přibližně týden',
-        'past': 'přibližně před týdnem',
-        'future': 'přibližně za týden'
-    };
-    var4.one = var5;
-    var5 = {
-        'regular': 'přibližně {{count}} týdny',
-        'past': 'přibližně před {{count}} týdny',
-        'future': 'přibližně za {{count}} týdny'
-    };
-    var4.few = var5;
-    var5 = {
-        'regular': 'přibližně {{count}} týdnů',
-        'past': 'přibližně před {{count}} týdny',
-        'future': 'přibližně za {{count}} týdnů'
-    };
-    var4.many = var5;
-    var3.aboutXWeeks = var4;
-    var4 = {};
-    var5 = {
-        'regular': 'týden',
-        'past': 'před týdnem',
-        'future': 'za týden'
-    };
-    var4.one = var5;
-    var5 = {
-        'regular': '{{count}} týdny',
-        'past': 'před {{count}} týdny',
-        'future': 'za {{count}} týdny'
-    };
-    var4.few = var5;
-    var5 = {
-        'regular': '{{count}} týdnů',
-        'past': 'před {{count}} týdny',
-        'future': 'za {{count}} týdnů'
-    };
-    var4.many = var5;
-    var3.xWeeks = var4;
-    var4 = {};
-    var5 = {
-        'regular': 'přibližně měsíc',
-        'past': 'přibližně před měsícem',
-        'future': 'přibližně za měsíc'
-    };
-    var4.one = var5;
-    var5 = {
-        'regular': 'přibližně {{count}} měsíce',
-        'past': 'přibližně před {{count}} měsíci',
-        'future': 'přibližně za {{count}} měsíce'
-    };
-    var4.few = var5;
-    var5 = {
-        'regular': 'přibližně {{count}} měsíců',
-        'past': 'přibližně před {{count}} měsíci',
-        'future': 'přibližně za {{count}} měsíců'
-    };
-    var4.many = var5;
-    var3.aboutXMonths = var4;
-    var4 = {};
-    var5 = {
-        'regular': 'měsíc',
-        'past': 'před měsícem',
-        'future': 'za měsíc'
-    };
-    var4.one = var5;
-    var5 = {
-        'regular': '{{count}} měsíce',
-        'past': 'před {{count}} měsíci',
-        'future': 'za {{count}} měsíce'
-    };
-    var4.few = var5;
-    var5 = {
-        'regular': '{{count}} měsíců',
-        'past': 'před {{count}} měsíci',
-        'future': 'za {{count}} měsíců'
-    };
-    var4.many = var5;
-    var3.xMonths = var4;
-    var4 = {};
-    var5 = {
-        'regular': 'přibližně rok',
-        'past': 'přibližně před rokem',
-        'future': 'přibližně za rok'
-    };
-    var4.one = var5;
-    var5 = {
-        'regular': 'přibližně {{count}} roky',
-        'past': 'přibližně před {{count}} roky',
-        'future': 'přibližně za {{count}} roky'
-    };
-    var4.few = var5;
-    var5 = {
-        'regular': 'přibližně {{count}} roků',
-        'past': 'přibližně před {{count}} roky',
-        'future': 'přibližně za {{count}} roků'
-    };
-    var4.many = var5;
-    var3.aboutXYears = var4;
-    var4 = {};
-    var5 = {
-        'regular': 'rok',
-        'past': 'před rokem',
-        'future': 'za rok'
-    };
-    var4.one = var5;
-    var5 = {
-        'regular': '{{count}} roky',
-        'past': 'před {{count}} roky',
-        'future': 'za {{count}} roky'
-    };
-    var4.few = var5;
-    var5 = {
-        'regular': '{{count}} roků',
-        'past': 'před {{count}} roky',
-        'future': 'za {{count}} roků'
-    };
-    var4.many = var5;
-    var3.xYears = var4;
-    var4 = {};
-    var5 = {
-        'regular': 'více než rok',
-        'past': 'před více než rokem',
-        'future': 'za více než rok'
-    };
-    var4.one = var5;
-    var5 = {
-        'regular': 'více než {{count}} roky',
-        'past': 'před více než {{count}} roky',
-        'future': 'za více než {{count}} roky'
-    };
-    var4.few = var5;
-    var5 = {
-        'regular': 'více než {{count}} roků',
-        'past': 'před více než {{count}} roky',
-        'future': 'za více než {{count}} roků'
-    };
-    var4.many = var5;
-    var3.overXYears = var4;
-    var4 = {};
-    var5 = {
-        'regular': 'skoro rok',
-        'past': 'skoro před rokem',
-        'future': 'skoro za rok'
-    };
-    var4.one = var5;
-    var5 = {
-        'regular': 'skoro {{count}} roky',
-        'past': 'skoro před {{count}} roky',
-        'future': 'skoro za {{count}} roky'
-    };
-    var4.few = var5;
-    var5 = {
-        'regular': 'skoro {{count}} roků',
-        'past': 'skoro před {{count}} roky',
-        'future': 'skoro za {{count}} roků'
-    };
-    var4.many = var5;
-    var3.almostXYears = var4;
-    var _closure1_slot0 = var3;
-    var2 = function arg0, arg1, arg2() {
-        _fun21989: for (var _fun21989_ip = 0;;) switch (_fun21989_ip) {
+    var7 = dependencyMap;
+    var5 = function arg0() {
+        _fun21987: for (var _fun21987_ip = 0;;) switch (_fun21987_ip) {
             case 0:
-                var4 = arg1;
-                var5 = arg2;
-                var1 = _closure1_slot0;
-                var0 = arg0;
-                var1 = var1[var0];
-                var2 = var1.type;
-                var0 = 'other';
-                if (!(var0 !== var2)) {
-                    _fun21989_ip = 75;
-                    continue _fun21989
-                }
-            case 33:
-                var0 = 1;
-                if (!(var0 !== var4)) {
-                    _fun21989_ip = 67;
-                    continue _fun21989
-                }
-            case 40:
-                if (!(var4 > var0)) {
-                    _fun21989_ip = 51;
-                    continue _fun21989
-                }
-            case 44:
-                var0 = 5;
-                if (!(!(var4 < var0))) {
-                    _fun21989_ip = 59;
-                    continue _fun21989
-                }
-            case 51:
-                var0 = var1.many;
-                _fun21989_ip = 65;
-                continue _fun21989;
-            case 59:
-                var0 = var1.few;
-            case 65:
-                _fun21989_ip = 73;
-                continue _fun21989;
-            case 67:
-                var0 = var1.one;
-            case 73:
-                _fun21989_ip = 81;
-                continue _fun21989;
-            case 75:
-                var0 = var1.other;
-            case 81:
-                var3 = null;
-                var2 = var3 == var5;
-                var1 = undefined;
-                var6 = undefined;
-                if (var2) {
-                    _fun21989_ip = 100;
-                    continue _fun21989
-                }
-            case 94:
-                var6 = var5.addSuffix;
-            case 100:
-                var2 = true;
-                var2 = var2 === var6;
-                var6 = var3 == var5;
-                var3 = undefined;
-                if (var6) {
-                    _fun21989_ip = 121;
-                    continue _fun21989
-                }
-            case 115:
-                var3 = var5.comparison;
-            case 121:
+                var2 = arg0;
                 if (!var2) {
-                    _fun21989_ip = 134;
-                    continue _fun21989
+                    _fun21987_ip = 18;
+                    continue _fun21987
                 }
-            case 124:
-                var5 = -1;
-                if (!(var5 !== var3)) {
-                    _fun21989_ip = 160;
-                    continue _fun21989
+            case 6:
+                var1 = var2.__esModule;
+                var0 = var2;
+                if (var1) {
+                    _fun21987_ip = 27;
+                    continue _fun21987
                 }
-            case 134:
-                if (!var2) {
-                    _fun21989_ip = 144;
-                    continue _fun21989
-                }
-            case 137:
-                var2 = 1;
-                if (!(var2 !== var3)) {
-                    _fun21989_ip = 152;
-                    continue _fun21989
-                }
-            case 144:
-                var3 = var0.regular;
-                _fun21989_ip = 158;
-                continue _fun21989;
-            case 152:
-                var3 = var0.future;
-            case 158:
-                _fun21989_ip = 166;
-                continue _fun21989;
-            case 160:
-                var3 = var0.past;
-            case 166:
-                var2 = var3.replace;
-                var0 = global;
-                var0 = var0.String;
-                var1 = var0.bind(var1)(var4);
-                var0 = '{{count}}';
-                var0 = var2.bind(var3)(var0, var1);
+            case 18:
+                var1 = {};
+                var1.default = var2;
+                var0 = var1;
+            case 27:
                 return var0;
         }
     };
+    var0 = global;
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var2 = {};
+    var0 = true;
+    var2.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var4)(var1, var0, var2);
+    var0 = undefined;
+    var1.default = var0;
+    var2 = 0;
+    var2 = var7[var2];
+    var2 = var6.bind(var0)(var2);
+    var3 = var5.bind(var0)(var2);
+    var2 = {};
+    var4 = 1;
+    var4 = var7[var4];
+    var4 = var6.bind(var0)(var4);
+    var4 = var5.bind(var0)(var4);
+    var5 = var4.default;
+    var4 = {};
+    var6 = /^(\d+)(-?[врмт][аи]|-?т?(ен|на)|-?(ев|ева))?/i;
+    var4.matchPattern = var6;
+    var6 = /\d+/i;
+    var4.parsePattern = var6;
+    var6 = function arg0() {
+        var0 = global;
+        var3 = var0.parseInt;
+        var2 = undefined;
+        var1 = arg0;
+        var0 = 10;
+        var0 = var3.bind(var2)(var1, var0);
+        return var0;
+    };
+    var4.valueCallback = var6;
+    var4 = var5.bind(var0)(var4);
+    var2.ordinalNumber = var4;
+    var6 = var3.default;
+    var4 = {};
+    var5 = {};
+    var7 = /^((пр)?н\.?\s?е\.?)/i;
+    var5.narrow = var7;
+    var7 = /^((пр)?н\.?\s?е\.?)/i;
+    var5.abbreviated = var7;
+    var7 = /^(преди новата ера|новата ера|нова ера)/i;
+    var5.wide = var7;
+    var4.matchPatterns = var5;
+    var7 = 'wide';
+    var4.defaultMatchWidth = var7;
+    var5 = {};
+    var9 = new Array(2);
+    var10 = /^п/i;
+    var9[0] = var10;
+    var10 = /^н/i;
+    var9[1] = var10;
+    var5.any = var9;
+    var4.parsePatterns = var5;
+    var5 = 'any';
+    var4.defaultParseWidth = var5;
+    var4 = var6.bind(var0)(var4);
+    var2.era = var4;
+    var6 = var3.default;
+    var4 = {};
+    var9 = {};
+    var10 = /^[1234]/i;
+    var9.narrow = var10;
+    var10 = /^[1234](-?[врт]?o?)? тримес.?/i;
+    var9.abbreviated = var10;
+    var10 = /^[1234](-?[врт]?о?)? тримесечие/i;
+    var9.wide = var10;
+    var4.matchPatterns = var9;
+    var4.defaultMatchWidth = var7;
+    var9 = {};
+    var10 = new Array(4);
+    var11 = /1/i;
+    var10[0] = var11;
+    var11 = /2/i;
+    var10[1] = var11;
+    var11 = /3/i;
+    var10[2] = var11;
+    var11 = /4/i;
+    var10[3] = var11;
+    var9.any = var10;
+    var4.parsePatterns = var9;
+    var4.defaultParseWidth = var5;
+    var8 = function arg0() {
+        var1 = arg0;
+        var0 = 1;
+        var0 = var1 + var0;
+        return var0;
+    };
+    var4.valueCallback = var8;
+    var4 = var6.bind(var0)(var4);
+    var2.quarter = var4;
+    var6 = var3.default;
+    var4 = {};
+    var8 = {};
+    var9 = /^(яну|фев|мар|апр|май|юни|юли|авг|сеп|окт|ное|дек)/i;
+    var8.abbreviated = var9;
+    var9 = /^(януари|февруари|март|април|май|юни|юли|август|септември|октомври|ноември|декември)/i;
+    var8.wide = var9;
+    var4.matchPatterns = var8;
+    var4.defaultMatchWidth = var7;
+    var8 = {};
+    var9 = new Array(12);
+    var10 = /^я/i;
+    var9[0] = var10;
+    var10 = /^ф/i;
+    var9[1] = var10;
+    var10 = /^мар/i;
+    var9[2] = var10;
+    var10 = /^ап/i;
+    var9[3] = var10;
+    var10 = /^май/i;
+    var9[4] = var10;
+    var10 = /^юн/i;
+    var9[5] = var10;
+    var10 = /^юл/i;
+    var9[6] = var10;
+    var10 = /^ав/i;
+    var9[7] = var10;
+    var10 = /^се/i;
+    var9[8] = var10;
+    var10 = /^окт/i;
+    var9[9] = var10;
+    var10 = /^но/i;
+    var9[10] = var10;
+    var10 = /^де/i;
+    var9[11] = var10;
+    var8.any = var9;
+    var4.parsePatterns = var8;
+    var4.defaultParseWidth = var5;
+    var4 = var6.bind(var0)(var4);
+    var2.month = var4;
+    var6 = var3.default;
+    var4 = {};
+    var8 = {};
+    var9 = /^[нпвсч]/i;
+    var8.narrow = var9;
+    var9 = /^(нд|пн|вт|ср|чт|пт|сб)/i;
+    var8.short = var9;
+    var9 = /^(нед|пон|вто|сря|чет|пет|съб)/i;
+    var8.abbreviated = var9;
+    var9 = /^(неделя|понеделник|вторник|сряда|четвъртък|петък|събота)/i;
+    var8.wide = var9;
+    var4.matchPatterns = var8;
+    var4.defaultMatchWidth = var7;
+    var7 = {};
+    var8 = new Array(7);
+    var9 = /^н/i;
+    var8[0] = var9;
+    var9 = /^п/i;
+    var8[1] = var9;
+    var9 = /^в/i;
+    var8[2] = var9;
+    var9 = /^с/i;
+    var8[3] = var9;
+    var9 = /^ч/i;
+    var8[4] = var9;
+    var9 = /^п/i;
+    var8[5] = var9;
+    var9 = /^с/i;
+    var8[6] = var9;
+    var7.narrow = var8;
+    var8 = new Array(7);
+    var9 = /^н[ед]/i;
+    var8[0] = var9;
+    var9 = /^п[он]/i;
+    var8[1] = var9;
+    var9 = /^вт/i;
+    var8[2] = var9;
+    var9 = /^ср/i;
+    var8[3] = var9;
+    var9 = /^ч[ет]/i;
+    var8[4] = var9;
+    var9 = /^п[ет]/i;
+    var8[5] = var9;
+    var9 = /^с[ъб]/i;
+    var8[6] = var9;
+    var7.any = var8;
+    var4.parsePatterns = var7;
+    var4.defaultParseWidth = var5;
+    var4 = var6.bind(var0)(var4);
+    var2.day = var4;
+    var4 = var3.default;
+    var3 = {};
+    var6 = {};
+    var7 = /^(преди о|след о|в по|на о|през|веч|сут|следо)/i;
+    var6.any = var7;
+    var3.matchPatterns = var6;
+    var3.defaultMatchWidth = var5;
+    var6 = {};
+    var7 = {};
+    var8 = /^преди о/i;
+    var7.am = var8;
+    var8 = /^след о/i;
+    var7.pm = var8;
+    var8 = /^в пол/i;
+    var7.midnight = var8;
+    var8 = /^на об/i;
+    var7.noon = var8;
+    var8 = /^сут/i;
+    var7.morning = var8;
+    var8 = /^следо/i;
+    var7.afternoon = var8;
+    var8 = /^веч/i;
+    var7.evening = var8;
+    var8 = /^през н/i;
+    var7.night = var8;
+    var6.any = var7;
+    var3.parsePatterns = var6;
+    var3.defaultParseWidth = var5;
+    var3 = var4.bind(var0)(var3);
+    var2.dayPeriod = var3;
     var1.default = var2;
     var2 = var1.default;
     var1 = arg4;
     var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1695, 1696]);

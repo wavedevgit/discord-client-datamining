@@ -1,58 +1,42 @@
 package jt;
 
-import java.util.Map;
-import kotlin.jvm.functions.Function0;
+import ht.e;
 import kotlin.jvm.internal.Intrinsics;
+import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
+import kotlinx.serialization.encoding.Decoder;
+import kotlinx.serialization.encoding.Encoder;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class x {
+public final class x implements KSerializer {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f31397a = w.a(16);
+    public static final x f31095a = new x();
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a {
+    /* renamed from: b  reason: collision with root package name */
+    private static final SerialDescriptor f31096b = new g2("kotlin.Double", e.d.f26473a);
+
+    private x() {
     }
 
-    public final Object a(SerialDescriptor descriptor, a key) {
-        Object obj;
-        Intrinsics.checkNotNullParameter(descriptor, "descriptor");
-        Intrinsics.checkNotNullParameter(key, "key");
-        Map map = (Map) this.f31397a.get(descriptor);
-        if (map != null) {
-            obj = map.get(key);
-        } else {
-            obj = null;
-        }
-        if (obj == null) {
-            return null;
-        }
-        return obj;
+    @Override // kotlinx.serialization.DeserializationStrategy
+    /* renamed from: a */
+    public Double deserialize(Decoder decoder) {
+        Intrinsics.checkNotNullParameter(decoder, "decoder");
+        return Double.valueOf(decoder.v());
     }
 
-    public final Object b(SerialDescriptor descriptor, a key, Function0 defaultValue) {
-        Intrinsics.checkNotNullParameter(descriptor, "descriptor");
-        Intrinsics.checkNotNullParameter(key, "key");
-        Intrinsics.checkNotNullParameter(defaultValue, "defaultValue");
-        Object a10 = a(descriptor, key);
-        if (a10 != null) {
-            return a10;
-        }
-        Object invoke = defaultValue.invoke();
-        c(descriptor, key, invoke);
-        return invoke;
+    public void b(Encoder encoder, double d10) {
+        Intrinsics.checkNotNullParameter(encoder, "encoder");
+        encoder.f(d10);
     }
 
-    public final void c(SerialDescriptor descriptor, a key, Object value) {
-        Intrinsics.checkNotNullParameter(descriptor, "descriptor");
-        Intrinsics.checkNotNullParameter(key, "key");
-        Intrinsics.checkNotNullParameter(value, "value");
-        Map map = this.f31397a;
-        Object obj = map.get(descriptor);
-        if (obj == null) {
-            obj = w.a(2);
-            map.put(descriptor, obj);
-        }
-        ((Map) obj).put(key, value);
+    @Override // kotlinx.serialization.KSerializer, ft.o, kotlinx.serialization.DeserializationStrategy
+    public SerialDescriptor getDescriptor() {
+        return f31096b;
+    }
+
+    @Override // ft.o
+    public /* bridge */ /* synthetic */ void serialize(Encoder encoder, Object obj) {
+        b(encoder, ((Number) obj).doubleValue());
     }
 }

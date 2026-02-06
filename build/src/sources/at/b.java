@@ -1,15 +1,15 @@
 package at;
-
-import java.util.List;
-import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class b implements e {
+public abstract class b {
+    public static final long a(long j10, long j11) {
+        return Math.addExact(j10, j11);
+    }
 
-    /* renamed from: a  reason: collision with root package name */
-    private final List f5973a;
+    public static final int b(int i10, int i11) {
+        return Math.multiplyExact(i10, i11);
+    }
 
-    public b(List formatters) {
-        Intrinsics.checkNotNullParameter(formatters, "formatters");
-        this.f5973a = formatters;
+    public static final long c(long j10, long j11) {
+        return Math.multiplyExact(j10, j11);
     }
 }

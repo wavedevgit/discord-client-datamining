@@ -92,4 +92,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.useShowLinkDecorationsSettingValue = var3;
     var2.onShowLinkDecorationsValueChange = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1298, 7028, 566, 10952, 9017, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1298, 7033, 566, 10954, 9023, 1234, 2]);

@@ -13,43 +13,43 @@ import org.jetbrains.annotations.NotNull;
 public final class ExchangeOneTimeLinkCodeRequest_AttributesJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19203a;
+    private final m.b f19183a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f19204b;
+    private final com.squareup.moshi.h f19184b;
 
     public ExchangeOneTimeLinkCodeRequest_AttributesJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("oneTimeLinkCode");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19203a = a10;
+        this.f19183a = a10;
         com.squareup.moshi.h f10 = moshi.f(String.class, x0.d(), "oneTimeLinkCode");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19204b = f10;
+        this.f19184b = f10;
     }
 
     @Override // com.squareup.moshi.h
     /* renamed from: a */
     public ExchangeOneTimeLinkCodeRequest.Attributes fromJson(m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         String str = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.f19203a);
-            if (W != -1) {
-                if (W == 0 && (str = (String) this.f19204b.fromJson(reader)) == null) {
-                    throw ym.c.x("oneTimeLinkCode", "oneTimeLinkCode", reader);
+            int J = reader.J(this.f19183a);
+            if (J != -1) {
+                if (J == 0 && (str = (String) this.f19184b.fromJson(reader)) == null) {
+                    throw an.c.x("oneTimeLinkCode", "oneTimeLinkCode", reader);
                 }
             } else {
                 reader.E0();
-                reader.P();
+                reader.S();
             }
         }
-        reader.z();
+        reader.D();
         if (str != null) {
             return new ExchangeOneTimeLinkCodeRequest.Attributes(str);
         }
-        throw ym.c.o("oneTimeLinkCode", "oneTimeLinkCode", reader);
+        throw an.c.o("oneTimeLinkCode", "oneTimeLinkCode", reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -58,9 +58,9 @@ public final class ExchangeOneTimeLinkCodeRequest_AttributesJsonAdapter extends 
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (attributes != null) {
             writer.k();
-            writer.W("oneTimeLinkCode");
-            this.f19204b.toJson(writer, attributes.a());
-            writer.E();
+            writer.J("oneTimeLinkCode");
+            this.f19184b.toJson(writer, attributes.a());
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

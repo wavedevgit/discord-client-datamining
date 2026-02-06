@@ -60,7 +60,7 @@ public final class RedBoxContentView extends LinearLayout implements AdapterView
     private static final class OpenStackFrameTask extends AsyncTask<StackFrame, Void, Void> {
         @NotNull
         public static final Companion Companion = new Companion(null);
-        private static final MediaType JSON = MediaType.f43766e.a("application/json; charset=utf-8");
+        private static final MediaType JSON = MediaType.f42872e.a("application/json; charset=utf-8");
         @NotNull
         private final DevSupportManager devSupportManager;
 
@@ -73,7 +73,7 @@ public final class RedBoxContentView extends LinearLayout implements AdapterView
 
             /* JADX INFO: Access modifiers changed from: private */
             public final JSONObject stackFrameToJson(StackFrame stackFrame) {
-                return new JSONObject(kotlin.collections.o0.m(or.v.a("file", stackFrame.getFile()), or.v.a("methodName", stackFrame.getMethod()), or.v.a("lineNumber", Integer.valueOf(stackFrame.getLine())), or.v.a("column", Integer.valueOf(stackFrame.getColumn()))));
+                return new JSONObject(kotlin.collections.o0.m(qr.v.a("file", stackFrame.getFile()), qr.v.a("methodName", stackFrame.getMethod()), qr.v.a("lineNumber", Integer.valueOf(stackFrame.getLine())), qr.v.a("column", Integer.valueOf(stackFrame.getColumn()))));
             }
 
             private Companion() {
@@ -87,7 +87,7 @@ public final class RedBoxContentView extends LinearLayout implements AdapterView
 
         /* JADX INFO: Access modifiers changed from: protected */
         @Override // android.os.AsyncTask
-        @or.c
+        @qr.c
         public Void doInBackground(@NotNull StackFrame... stackFrames) {
             Intrinsics.checkNotNullParameter(stackFrames, "stackFrames");
             try {

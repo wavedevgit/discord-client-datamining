@@ -29,7 +29,7 @@ public final class FlexibleTypesKt {
         if (unwrap instanceof SimpleType) {
             return (SimpleType) unwrap;
         }
-        throw new or.p();
+        throw new qr.p();
     }
 
     @NotNull
@@ -42,6 +42,6 @@ public final class FlexibleTypesKt {
         if (unwrap instanceof SimpleType) {
             return (SimpleType) unwrap;
         }
-        throw new or.p();
+        throw new qr.p();
     }
 }

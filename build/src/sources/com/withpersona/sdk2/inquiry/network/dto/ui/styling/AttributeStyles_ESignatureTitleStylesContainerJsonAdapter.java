@@ -40,18 +40,18 @@ public final class AttributeStyles_ESignatureTitleStylesContainerJsonAdapter ext
     @NotNull
     public AttributeStyles.ESignatureTitleStylesContainer fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         AttributeStyles.ESignatureBaseTextStyle eSignatureBaseTextStyle = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 eSignatureBaseTextStyle = (AttributeStyles.ESignatureBaseTextStyle) this.nullableESignatureBaseTextStyleAdapter.fromJson(reader);
             }
         }
-        reader.z();
+        reader.D();
         return new AttributeStyles.ESignatureTitleStylesContainer(eSignatureBaseTextStyle);
     }
 
@@ -60,9 +60,9 @@ public final class AttributeStyles_ESignatureTitleStylesContainerJsonAdapter ext
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (eSignatureTitleStylesContainer != null) {
             writer.k();
-            writer.W("dialogTitle");
+            writer.J("dialogTitle");
             this.nullableESignatureBaseTextStyleAdapter.toJson(writer, eSignatureTitleStylesContainer.getDialogTitle());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

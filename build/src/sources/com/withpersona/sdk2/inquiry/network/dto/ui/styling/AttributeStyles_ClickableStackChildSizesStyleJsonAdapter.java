@@ -41,18 +41,18 @@ public final class AttributeStyles_ClickableStackChildSizesStyleJsonAdapter exte
     @NotNull
     public AttributeStyles.ClickableStackChildSizesStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         StyleElements.ChildSizes childSizes = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 childSizes = (StyleElements.ChildSizes) this.nullableChildSizesAdapter.fromJson(reader);
             }
         }
-        reader.z();
+        reader.D();
         return new AttributeStyles.ClickableStackChildSizesStyle(childSizes);
     }
 
@@ -61,9 +61,9 @@ public final class AttributeStyles_ClickableStackChildSizesStyleJsonAdapter exte
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (clickableStackChildSizesStyle != null) {
             writer.k();
-            writer.W("base");
+            writer.J("base");
             this.nullableChildSizesAdapter.toJson(writer, clickableStackChildSizesStyle.getBase());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

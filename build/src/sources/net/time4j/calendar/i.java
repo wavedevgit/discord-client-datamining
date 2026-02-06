@@ -3,64 +3,63 @@ package net.time4j.calendar;
 import java.io.Serializable;
 import java.text.ParsePosition;
 import java.util.Locale;
-import pt.z;
-import qt.t;
+import rt.z;
+import st.t;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 class i implements t, z, Serializable {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final i f39836d = new i();
+    private static final i f39191d = new i();
     private static final long serialVersionUID = 4572549754637955194L;
 
     i() {
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public static i D() {
-        return f39836d;
+    public static i C() {
+        return f39191d;
     }
 
-    @Override // pt.p
-    public boolean B() {
+    @Override // rt.p
+    public boolean A() {
+        return true;
+    }
+
+    @Override // rt.p
+    public boolean D() {
         return false;
     }
 
-    @Override // pt.p
-    /* renamed from: C */
-    public p A() {
-        return p.MINOR_01_LICHUN_315;
-    }
-
-    @Override // pt.z
+    @Override // rt.z
     /* renamed from: E */
     public p k(f fVar) {
         d U = fVar.U();
-        return p.k(U.n(U.q(fVar.V(), fVar.f0().getNumber()) + fVar.lengthOfYear()));
+        return p.j(U.n(U.q(fVar.V(), fVar.f0().getNumber()) + fVar.lengthOfYear()));
     }
 
-    @Override // pt.z
+    @Override // rt.z
     /* renamed from: F */
-    public p r(f fVar) {
+    public p o(f fVar) {
         d U = fVar.U();
-        return p.k(U.n(U.q(fVar.V(), fVar.f0().getNumber()) + 1));
+        return p.j(U.n(U.q(fVar.V(), fVar.f0().getNumber()) + 1));
     }
 
-    @Override // pt.z
+    @Override // rt.z
     /* renamed from: G */
     public p y(f fVar) {
-        return p.k(fVar.U().n(fVar.i() + 1));
+        return p.j(fVar.U().n(fVar.i() + 1));
     }
 
-    @Override // pt.z
+    @Override // rt.z
     /* renamed from: H */
-    public boolean p(f fVar, p pVar) {
+    public boolean n(f fVar, p pVar) {
         return pVar != null;
     }
 
-    @Override // qt.t
+    @Override // st.t
     /* renamed from: I */
-    public p t(CharSequence charSequence, ParsePosition parsePosition, pt.d dVar) {
-        Locale locale = (Locale) dVar.a(qt.a.f48088c, Locale.ROOT);
+    public p r(CharSequence charSequence, ParsePosition parsePosition, rt.d dVar) {
+        Locale locale = (Locale) dVar.b(st.a.f50112c, Locale.ROOT);
         int length = charSequence.length();
         if (parsePosition.getIndex() >= length) {
             parsePosition.setErrorIndex(length);
@@ -69,9 +68,9 @@ class i implements t, z, Serializable {
         return p.m(charSequence, locale, parsePosition);
     }
 
-    @Override // pt.z
+    @Override // rt.z
     /* renamed from: J */
-    public f x(f fVar, p pVar, boolean z10) {
+    public f u(f fVar, p pVar, boolean z10) {
         if (pVar != null) {
             return (f) fVar.F(pVar.n());
         }
@@ -80,59 +79,60 @@ class i implements t, z, Serializable {
 
     @Override // java.util.Comparator
     /* renamed from: b */
-    public int compare(pt.o oVar, pt.o oVar2) {
-        return ((p) oVar.v(this)).compareTo((p) oVar2.v(this));
+    public int compare(rt.o oVar, rt.o oVar2) {
+        return ((p) oVar.s(this)).compareTo((p) oVar2.s(this));
     }
 
-    @Override // pt.z
+    @Override // rt.z
     /* renamed from: c */
-    public pt.p a(f fVar) {
+    public rt.p a(f fVar) {
         throw new AbstractMethodError();
     }
 
-    @Override // pt.p
+    @Override // rt.p
     public char d() {
         return (char) 0;
     }
 
-    @Override // pt.p
+    @Override // rt.p
     public Class getType() {
         return p.class;
     }
 
-    @Override // pt.z
-    /* renamed from: j */
-    public pt.p h(f fVar) {
-        throw new AbstractMethodError();
-    }
-
-    @Override // pt.p
-    public boolean l() {
+    @Override // rt.p
+    public boolean i() {
         return false;
     }
 
-    @Override // pt.p
+    @Override // rt.z
+    /* renamed from: l */
+    public rt.p g(f fVar) {
+        throw new AbstractMethodError();
+    }
+
+    @Override // rt.p
     public String name() {
         return "SOLAR_TERM";
     }
 
-    @Override // pt.p
-    /* renamed from: o */
+    @Override // rt.p
+    /* renamed from: p */
     public p e() {
         return p.MAJOR_12_DAHAN_300;
     }
 
     protected Object readResolve() {
-        return f39836d;
+        return f39191d;
     }
 
-    @Override // qt.t
-    public void s(pt.o oVar, Appendable appendable, pt.d dVar) {
-        appendable.append(((p) oVar.v(this)).e((Locale) dVar.a(qt.a.f48088c, Locale.ROOT)));
+    @Override // st.t
+    public void v(rt.o oVar, Appendable appendable, rt.d dVar) {
+        appendable.append(((p) oVar.s(this)).e((Locale) dVar.b(st.a.f50112c, Locale.ROOT)));
     }
 
-    @Override // pt.p
-    public boolean z() {
-        return true;
+    @Override // rt.p
+    /* renamed from: z */
+    public p B() {
+        return p.MINOR_01_LICHUN_315;
     }
 }

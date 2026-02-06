@@ -11,11 +11,11 @@ import r.a0;
 public class ImageCaptureFailWithAutoFlashQuirk implements y1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final List f2031a = Arrays.asList("sm-j700f", "sm-j710f");
+    private static final List f2360a = Arrays.asList("sm-j700f", "sm-j710f");
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static boolean c(a0 a0Var) {
-        if (f2031a.contains(Build.MODEL.toLowerCase(Locale.US)) && ((Integer) a0Var.a(CameraCharacteristics.LENS_FACING)).intValue() == 0) {
+        if (f2360a.contains(Build.MODEL.toLowerCase(Locale.US)) && ((Integer) a0Var.a(CameraCharacteristics.LENS_FACING)).intValue() == 0) {
             return true;
         }
         return false;

@@ -12,15 +12,15 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ThreadFactory;
-import ti.d0;
-import ti.w;
+import ui.d0;
+import ui.w;
 @SuppressLint({"ThreadPoolCreation"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class ExecutorsRegistrar implements ComponentRegistrar {
 
     /* renamed from: a  reason: collision with root package name */
-    static final w f16290a = new w(new ej.b() { // from class: ui.a
-        @Override // ej.b
+    static final w f16270a = new w(new fj.b() { // from class: vi.a
+        @Override // fj.b
         public final Object get() {
             ScheduledExecutorService m10;
             m10 = ExecutorsRegistrar.m(Executors.newFixedThreadPool(4, ExecutorsRegistrar.k("Firebase Background", 10, ExecutorsRegistrar.i())));
@@ -29,8 +29,8 @@ public class ExecutorsRegistrar implements ComponentRegistrar {
     });
 
     /* renamed from: b  reason: collision with root package name */
-    static final w f16291b = new w(new ej.b() { // from class: ui.b
-        @Override // ej.b
+    static final w f16271b = new w(new fj.b() { // from class: vi.b
+        @Override // fj.b
         public final Object get() {
             ScheduledExecutorService m10;
             m10 = ExecutorsRegistrar.m(Executors.newFixedThreadPool(Math.max(2, Runtime.getRuntime().availableProcessors()), ExecutorsRegistrar.k("Firebase Lite", 0, ExecutorsRegistrar.l())));
@@ -39,8 +39,8 @@ public class ExecutorsRegistrar implements ComponentRegistrar {
     });
 
     /* renamed from: c  reason: collision with root package name */
-    static final w f16292c = new w(new ej.b() { // from class: ui.c
-        @Override // ej.b
+    static final w f16272c = new w(new fj.b() { // from class: vi.c
+        @Override // fj.b
         public final Object get() {
             ScheduledExecutorService m10;
             m10 = ExecutorsRegistrar.m(Executors.newCachedThreadPool(ExecutorsRegistrar.j("Firebase Blocking", 11)));
@@ -49,8 +49,8 @@ public class ExecutorsRegistrar implements ComponentRegistrar {
     });
 
     /* renamed from: d  reason: collision with root package name */
-    static final w f16293d = new w(new ej.b() { // from class: ui.d
-        @Override // ej.b
+    static final w f16273d = new w(new fj.b() { // from class: vi.d
+        @Override // fj.b
         public final Object get() {
             ScheduledExecutorService newSingleThreadScheduledExecutor;
             newSingleThreadScheduledExecutor = Executors.newSingleThreadScheduledExecutor(ExecutorsRegistrar.j("Firebase Scheduler", 0));
@@ -58,16 +58,16 @@ public class ExecutorsRegistrar implements ComponentRegistrar {
         }
     });
 
-    public static /* synthetic */ ScheduledExecutorService a(ti.d dVar) {
-        return (ScheduledExecutorService) f16291b.get();
+    public static /* synthetic */ ScheduledExecutorService a(ui.d dVar) {
+        return (ScheduledExecutorService) f16271b.get();
     }
 
-    public static /* synthetic */ ScheduledExecutorService e(ti.d dVar) {
-        return (ScheduledExecutorService) f16292c.get();
+    public static /* synthetic */ ScheduledExecutorService e(ui.d dVar) {
+        return (ScheduledExecutorService) f16272c.get();
     }
 
-    public static /* synthetic */ ScheduledExecutorService g(ti.d dVar) {
-        return (ScheduledExecutorService) f16290a.get();
+    public static /* synthetic */ ScheduledExecutorService g(ui.d dVar) {
+        return (ScheduledExecutorService) f16270a.get();
     }
 
     private static StrictMode.ThreadPolicy i() {
@@ -94,29 +94,29 @@ public class ExecutorsRegistrar implements ComponentRegistrar {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static ScheduledExecutorService m(ExecutorService executorService) {
-        return new o(executorService, (ScheduledExecutorService) f16293d.get());
+        return new o(executorService, (ScheduledExecutorService) f16273d.get());
     }
 
     @Override // com.google.firebase.components.ComponentRegistrar
     public List getComponents() {
-        return Arrays.asList(ti.c.f(d0.a(si.a.class, ScheduledExecutorService.class), d0.a(si.a.class, ExecutorService.class), d0.a(si.a.class, Executor.class)).e(new ti.g() { // from class: ui.e
-            @Override // ti.g
-            public final Object a(ti.d dVar) {
+        return Arrays.asList(ui.c.f(d0.a(ti.a.class, ScheduledExecutorService.class), d0.a(ti.a.class, ExecutorService.class), d0.a(ti.a.class, Executor.class)).e(new ui.g() { // from class: vi.e
+            @Override // ui.g
+            public final Object a(ui.d dVar) {
                 return ExecutorsRegistrar.g(dVar);
             }
-        }).d(), ti.c.f(d0.a(si.b.class, ScheduledExecutorService.class), d0.a(si.b.class, ExecutorService.class), d0.a(si.b.class, Executor.class)).e(new ti.g() { // from class: ui.f
-            @Override // ti.g
-            public final Object a(ti.d dVar) {
+        }).d(), ui.c.f(d0.a(ti.b.class, ScheduledExecutorService.class), d0.a(ti.b.class, ExecutorService.class), d0.a(ti.b.class, Executor.class)).e(new ui.g() { // from class: vi.f
+            @Override // ui.g
+            public final Object a(ui.d dVar) {
                 return ExecutorsRegistrar.e(dVar);
             }
-        }).d(), ti.c.f(d0.a(si.c.class, ScheduledExecutorService.class), d0.a(si.c.class, ExecutorService.class), d0.a(si.c.class, Executor.class)).e(new ti.g() { // from class: ui.g
-            @Override // ti.g
-            public final Object a(ti.d dVar) {
+        }).d(), ui.c.f(d0.a(ti.c.class, ScheduledExecutorService.class), d0.a(ti.c.class, ExecutorService.class), d0.a(ti.c.class, Executor.class)).e(new ui.g() { // from class: vi.g
+            @Override // ui.g
+            public final Object a(ui.d dVar) {
                 return ExecutorsRegistrar.a(dVar);
             }
-        }).d(), ti.c.e(d0.a(si.d.class, Executor.class)).e(new ti.g() { // from class: ui.h
-            @Override // ti.g
-            public final Object a(ti.d dVar) {
+        }).d(), ui.c.e(d0.a(ti.d.class, Executor.class)).e(new ui.g() { // from class: vi.h
+            @Override // ui.g
+            public final Object a(ui.d dVar) {
                 Executor executor;
                 executor = k.INSTANCE;
                 return executor;

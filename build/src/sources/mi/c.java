@@ -1,44 +1,126 @@
 package mi;
-
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-abstract class c extends d implements x {
-    /* JADX INFO: Access modifiers changed from: protected */
-    public c(Map map) {
-        super(map);
+public abstract class c implements n {
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    static abstract class a extends c {
+        a() {
+        }
+
+        @Override // mi.n
+        public /* bridge */ /* synthetic */ boolean apply(Object obj) {
+            return super.b((Character) obj);
+        }
     }
 
-    @Override // mi.d, mi.b0
-    /* renamed from: A */
-    public List get(Object obj) {
-        return (List) super.get(obj);
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    private static final class b extends a {
+
+        /* renamed from: d  reason: collision with root package name */
+        private final char f37166d;
+
+        b(char c10) {
+            this.f37166d = c10;
+        }
+
+        @Override // mi.c
+        public boolean e(char c10) {
+            if (c10 == this.f37166d) {
+                return true;
+            }
+            return false;
+        }
+
+        public String toString() {
+            String g10 = c.g(this.f37166d);
+            StringBuilder sb2 = new StringBuilder(String.valueOf(g10).length() + 18);
+            sb2.append("CharMatcher.is('");
+            sb2.append(g10);
+            sb2.append("')");
+            return sb2.toString();
+        }
     }
 
-    @Override // mi.f, mi.b0
-    public Map asMap() {
-        return super.asMap();
+    /* renamed from: mi.c$c  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    static abstract class AbstractC0503c extends a {
+
+        /* renamed from: d  reason: collision with root package name */
+        private final String f37167d;
+
+        AbstractC0503c(String str) {
+            this.f37167d = (String) m.j(str);
+        }
+
+        public final String toString() {
+            return this.f37167d;
+        }
     }
 
-    @Override // mi.f
-    public boolean equals(Object obj) {
-        return super.equals(obj);
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    private static final class d extends AbstractC0503c {
+
+        /* renamed from: e  reason: collision with root package name */
+        static final d f37168e = new d();
+
+        private d() {
+            super("CharMatcher.none()");
+        }
+
+        @Override // mi.c
+        public int c(CharSequence charSequence, int i10) {
+            m.l(i10, charSequence.length());
+            return -1;
+        }
+
+        @Override // mi.c
+        public boolean e(char c10) {
+            return false;
+        }
     }
 
-    @Override // mi.d, mi.b0
-    public boolean put(Object obj, Object obj2) {
-        return super.put(obj, obj2);
+    protected c() {
     }
 
-    @Override // mi.d
-    Collection x(Collection collection) {
-        return Collections.unmodifiableList((List) collection);
+    public static c d(char c10) {
+        return new b(c10);
     }
 
-    @Override // mi.d
-    Collection y(Object obj, Collection collection) {
-        return z(obj, (List) collection, null);
+    public static c f() {
+        return d.f37168e;
     }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static String g(char c10) {
+        char[] cArr = new char[6];
+        cArr[0] = '\\';
+        cArr[1] = 'u';
+        cArr[2] = 0;
+        cArr[3] = 0;
+        cArr[4] = 0;
+        cArr[5] = 0;
+        for (int i10 = 0; i10 < 4; i10++) {
+            cArr[5 - i10] = "0123456789ABCDEF".charAt(c10 & 15);
+            c10 = (char) (c10 >> 4);
+        }
+        return String.copyValueOf(cArr);
+    }
+
+    public boolean b(Character ch2) {
+        return e(ch2.charValue());
+    }
+
+    public int c(CharSequence charSequence, int i10) {
+        int length = charSequence.length();
+        m.l(i10, length);
+        while (i10 < length) {
+            if (e(charSequence.charAt(i10))) {
+                return i10;
+            }
+            i10++;
+        }
+        return -1;
+    }
+
+    public abstract boolean e(char c10);
 }

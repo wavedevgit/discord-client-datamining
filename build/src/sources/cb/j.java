@@ -9,12 +9,12 @@ import kotlin.Pair;
 import kotlin.collections.m0;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.ranges.IntRange;
-import or.e0;
+import qr.e0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class j {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final j f7450a = new j();
+    public static final j f7295a = new j();
 
     private j() {
     }
@@ -39,7 +39,7 @@ public final class j {
 
     public static final int b(InputStream stream) {
         Intrinsics.checkNotNullParameter(stream, "stream");
-        j jVar = f7450a;
+        j jVar = f7295a;
         return (jVar.e(stream) << 8) | jVar.e(stream);
     }
 
@@ -71,7 +71,7 @@ public final class j {
         try {
             try {
                 stream.read(bArr);
-                jVar = f7450a;
+                jVar = f7295a;
             } catch (IOException e10) {
                 e10.printStackTrace();
             }

@@ -10,8 +10,8 @@ import kotlin.jvm.functions.Function3;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.reflect.KFunction;
-import or.q;
 import org.jetbrains.annotations.NotNull;
+import qr.q;
 import w0.a;
 import w0.b0;
 import w0.c;
@@ -55,7 +55,7 @@ public final class AssetsKt {
         AudioAsset.Companion companion = AudioAsset.Companion;
         aVar.i(627205411);
         Object d10 = aVar.d();
-        if (d10 == a.f52444a.a()) {
+        if (d10 == a.f53223a.a()) {
             d10 = new AssetsKt$rememberAudio$1$1(companion);
             aVar.c(d10);
         }
@@ -80,7 +80,7 @@ public final class AssetsKt {
         FontAsset.Companion companion = FontAsset.Companion;
         aVar.i(574265323);
         Object d10 = aVar.d();
-        if (d10 == a.f52444a.a()) {
+        if (d10 == a.f53223a.a()) {
             d10 = new AssetsKt$rememberFont$1$1(companion);
             aVar.c(d10);
         }
@@ -118,7 +118,7 @@ public final class AssetsKt {
         AudioAsset.Companion companion = AudioAsset.Companion;
         aVar.i(-2131438527);
         Object d10 = aVar.d();
-        if (d10 == a.f52444a.a()) {
+        if (d10 == a.f53223a.a()) {
             d10 = new AssetsKt$rememberRegisteredAudio$1$1(companion);
             aVar.c(d10);
         }
@@ -144,7 +144,7 @@ public final class AssetsKt {
         FontAsset.Companion companion = FontAsset.Companion;
         aVar.i(208216109);
         Object d10 = aVar.d();
-        if (d10 == a.f52444a.a()) {
+        if (d10 == a.f53223a.a()) {
             d10 = new AssetsKt$rememberRegisteredFont$1$1(companion);
             aVar.c(d10);
         }

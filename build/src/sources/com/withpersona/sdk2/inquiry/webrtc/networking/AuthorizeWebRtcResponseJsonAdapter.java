@@ -14,49 +14,49 @@ import org.jetbrains.annotations.NotNull;
 public final class AuthorizeWebRtcResponseJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19876a;
+    private final m.b f19856a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f19877b;
+    private final h f19857b;
 
     public AuthorizeWebRtcResponseJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a(NotificationRenderer.USERNAME, "credential", "server_url");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19876a = a10;
+        this.f19856a = a10;
         h f10 = moshi.f(String.class, x0.d(), NotificationRenderer.USERNAME);
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19877b = f10;
+        this.f19857b = f10;
     }
 
     @Override // com.squareup.moshi.h
     /* renamed from: a */
     public AuthorizeWebRtcResponse fromJson(m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         String str = null;
         String str2 = null;
         String str3 = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.f19876a);
-            if (W != -1) {
-                if (W != 0) {
-                    if (W != 1) {
-                        if (W == 2) {
-                            str3 = (String) this.f19877b.fromJson(reader);
+            int J = reader.J(this.f19856a);
+            if (J != -1) {
+                if (J != 0) {
+                    if (J != 1) {
+                        if (J == 2) {
+                            str3 = (String) this.f19857b.fromJson(reader);
                         }
                     } else {
-                        str2 = (String) this.f19877b.fromJson(reader);
+                        str2 = (String) this.f19857b.fromJson(reader);
                     }
                 } else {
-                    str = (String) this.f19877b.fromJson(reader);
+                    str = (String) this.f19857b.fromJson(reader);
                 }
             } else {
                 reader.E0();
-                reader.P();
+                reader.S();
             }
         }
-        reader.z();
+        reader.D();
         return new AuthorizeWebRtcResponse(str, str2, str3);
     }
 
@@ -66,13 +66,13 @@ public final class AuthorizeWebRtcResponseJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (authorizeWebRtcResponse != null) {
             writer.k();
-            writer.W(NotificationRenderer.USERNAME);
-            this.f19877b.toJson(writer, authorizeWebRtcResponse.c());
-            writer.W("credential");
-            this.f19877b.toJson(writer, authorizeWebRtcResponse.a());
-            writer.W("server_url");
-            this.f19877b.toJson(writer, authorizeWebRtcResponse.b());
-            writer.E();
+            writer.J(NotificationRenderer.USERNAME);
+            this.f19857b.toJson(writer, authorizeWebRtcResponse.c());
+            writer.J("credential");
+            this.f19857b.toJson(writer, authorizeWebRtcResponse.a());
+            writer.J("server_url");
+            this.f19857b.toJson(writer, authorizeWebRtcResponse.b());
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

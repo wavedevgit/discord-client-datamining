@@ -9,10 +9,10 @@ import w5.c;
 public abstract class l0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final c.a f51848a = c.a.a("nm", "c", "w", "o", "lc", "lj", "ml", "hd", "d");
+    private static final c.a f52213a = c.a.a("nm", "c", "w", "o", "lc", "lj", "ml", "hd", "d");
 
     /* renamed from: b  reason: collision with root package name */
-    private static final c.a f51849b = c.a.a("n", "v");
+    private static final c.a f52214b = c.a.a("n", "v");
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static s5.s a(w5.c cVar, l5.i iVar) {
@@ -28,9 +28,9 @@ public abstract class l0 {
         boolean z10 = false;
         r5.d dVar = null;
         while (cVar.hasNext()) {
-            switch (cVar.y(f51848a)) {
+            switch (cVar.p(f52213a)) {
                 case 0:
-                    str = cVar.f1();
+                    str = cVar.e1();
                     break;
                 case 1:
                     aVar = d.c(cVar, iVar);
@@ -51,29 +51,29 @@ public abstract class l0 {
                     f10 = (float) cVar.nextDouble();
                     break;
                 case 7:
-                    z10 = cVar.h();
+                    z10 = cVar.g();
                     break;
                 case 8:
-                    cVar.v();
+                    cVar.x();
                     while (cVar.hasNext()) {
-                        cVar.s();
+                        cVar.u();
                         String str3 = str2;
                         Object obj2 = str3;
                         while (cVar.hasNext()) {
-                            int y10 = cVar.y(f51849b);
-                            if (y10 != 0) {
-                                if (y10 != 1) {
-                                    cVar.E();
-                                    cVar.P();
+                            int p10 = cVar.p(f52214b);
+                            if (p10 != 0) {
+                                if (p10 != 1) {
+                                    cVar.s();
+                                    cVar.S();
                                 } else {
                                     obj2 = d.e(cVar, iVar);
                                 }
                             } else {
-                                str3 = cVar.f1();
+                                str3 = cVar.e1();
                             }
                             obj2 = obj2;
                         }
-                        cVar.z();
+                        cVar.D();
                         str3.getClass();
                         char c10 = 65535;
                         switch (str3.hashCode()) {
@@ -108,14 +108,14 @@ public abstract class l0 {
                         }
                         str2 = null;
                     }
-                    cVar.t();
+                    cVar.v();
                     if (arrayList.size() == 1) {
                         arrayList.add((r5.b) arrayList.get(0));
                         break;
                     }
                     break;
                 default:
-                    cVar.P();
+                    cVar.S();
                     continue;
             }
             str2 = null;

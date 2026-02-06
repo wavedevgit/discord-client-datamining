@@ -1,79 +1,140 @@
 package bq;
+
+import android.os.Build;
+import android.view.View;
+import androidx.core.graphics.Insets;
+import androidx.core.view.WindowInsetsCompat;
+import androidx.core.view.h0;
+import androidx.core.view.v;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class f {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static int f7160a = 2131558626;
+    /* renamed from: a */
+    private static final boolean f6979a;
 
-    /* renamed from: b  reason: collision with root package name */
-    public static int f7161b = 2131558635;
+    /* renamed from: b */
+    private static final boolean f6980b;
 
-    /* renamed from: c  reason: collision with root package name */
-    public static int f7162c = 2131558646;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class a implements View.OnAttachStateChangeListener {
+        a() {
+        }
 
-    /* renamed from: d  reason: collision with root package name */
-    public static int f7163d = 2131558647;
+        @Override // android.view.View.OnAttachStateChangeListener
+        public void onViewAttachedToWindow(View v10) {
+            Intrinsics.checkNotNullParameter(v10, "v");
+            v10.removeOnAttachStateChangeListener(this);
+            v10.requestApplyInsets();
+        }
 
-    /* renamed from: e  reason: collision with root package name */
-    public static int f7164e = 2131558649;
+        @Override // android.view.View.OnAttachStateChangeListener
+        public void onViewDetachedFromWindow(View v10) {
+            Intrinsics.checkNotNullParameter(v10, "v");
+        }
+    }
 
-    /* renamed from: f  reason: collision with root package name */
-    public static int f7165f = 2131558650;
+    static {
+        boolean z10;
+        if (Build.VERSION.SDK_INT >= 30) {
+            z10 = true;
+        } else {
+            z10 = false;
+        }
+        f6979a = z10;
+        f6980b = true;
+    }
 
-    /* renamed from: g  reason: collision with root package name */
-    public static int f7166g = 2131558651;
+    public static final void c(final View view, final boolean z10, final boolean z11, final boolean z12, final boolean z13) {
+        Intrinsics.checkNotNullParameter(view, "<this>");
+        g(view, new Function1() { // from class: bq.d
+            @Override // kotlin.jvm.functions.Function1
+            public final Object invoke(Object obj) {
+                Unit e10;
+                e10 = f.e(view, z12, z10, z13, z11, (WindowInsetsCompat) obj);
+                return e10;
+            }
+        });
+    }
 
-    /* renamed from: h  reason: collision with root package name */
-    public static int f7167h = 2131558652;
+    public static /* synthetic */ void d(View view, boolean z10, boolean z11, boolean z12, boolean z13, int i10, Object obj) {
+        if ((i10 & 1) != 0) {
+            z10 = true;
+        }
+        if ((i10 & 2) != 0) {
+            z11 = true;
+        }
+        if ((i10 & 4) != 0) {
+            z12 = true;
+        }
+        if ((i10 & 8) != 0) {
+            z13 = true;
+        }
+        c(view, z10, z11, z12, z13);
+    }
 
-    /* renamed from: i  reason: collision with root package name */
-    public static int f7168i = 2131558654;
+    public static final Unit e(View view, boolean z10, boolean z11, boolean z12, boolean z13, WindowInsetsCompat insets) {
+        Intrinsics.checkNotNullParameter(insets, "insets");
+        Insets g10 = insets.g(WindowInsetsCompat.p.h());
+        Intrinsics.checkNotNullExpressionValue(g10, "getInsetsIgnoringVisibility(...)");
+        Insets f10 = insets.f(WindowInsetsCompat.p.c());
+        Intrinsics.checkNotNullExpressionValue(f10, "getInsets(...)");
+        int i10 = f10.f3607d;
+        int i11 = g10.f3605b;
+        int max = Integer.max(g10.f3607d, i10);
+        int i12 = g10.f3604a;
+        int i13 = g10.f3606c;
+        if (!z10) {
+            i12 = view.getPaddingLeft();
+        }
+        if (!z11) {
+            i11 = view.getPaddingTop();
+        }
+        if (!z12) {
+            i13 = view.getPaddingRight();
+        }
+        if (!z13) {
+            max = view.getPaddingBottom();
+        }
+        view.setPadding(i12, i11, i13, max);
+        return Unit.f32008a;
+    }
 
-    /* renamed from: j  reason: collision with root package name */
-    public static int f7169j = 2131558657;
+    public static final boolean f() {
+        return f6979a;
+    }
 
-    /* renamed from: k  reason: collision with root package name */
-    public static int f7170k = 2131558658;
+    public static final void g(View view, final Function1 cb2) {
+        Intrinsics.checkNotNullParameter(view, "<this>");
+        Intrinsics.checkNotNullParameter(cb2, "cb");
+        h0.D0(view, new v() { // from class: bq.e
+            @Override // androidx.core.view.v
+            public final WindowInsetsCompat a(View view2, WindowInsetsCompat windowInsetsCompat) {
+                WindowInsetsCompat h10;
+                h10 = f.h(Function1.this, view2, windowInsetsCompat);
+                return h10;
+            }
+        });
+        if (!view.isAttachedToWindow()) {
+            i(view);
+        }
+    }
 
-    /* renamed from: l  reason: collision with root package name */
-    public static int f7171l = 2131558659;
+    public static final WindowInsetsCompat h(Function1 function1, View view, WindowInsetsCompat insets) {
+        Intrinsics.checkNotNullParameter(view, "<unused var>");
+        Intrinsics.checkNotNullParameter(insets, "insets");
+        function1.invoke(insets);
+        return insets;
+    }
 
-    /* renamed from: m  reason: collision with root package name */
-    public static int f7172m = 2131558660;
-
-    /* renamed from: n  reason: collision with root package name */
-    public static int f7173n = 2131558661;
-
-    /* renamed from: o  reason: collision with root package name */
-    public static int f7174o = 2131558662;
-
-    /* renamed from: p  reason: collision with root package name */
-    public static int f7175p = 2131558663;
-
-    /* renamed from: q  reason: collision with root package name */
-    public static int f7176q = 2131558664;
-
-    /* renamed from: r  reason: collision with root package name */
-    public static int f7177r = 2131558665;
-
-    /* renamed from: s  reason: collision with root package name */
-    public static int f7178s = 2131558666;
-
-    /* renamed from: t  reason: collision with root package name */
-    public static int f7179t = 2131558667;
-
-    /* renamed from: u  reason: collision with root package name */
-    public static int f7180u = 2131558668;
-
-    /* renamed from: v  reason: collision with root package name */
-    public static int f7181v = 2131558669;
-
-    /* renamed from: w  reason: collision with root package name */
-    public static int f7182w = 2131558670;
-
-    /* renamed from: x  reason: collision with root package name */
-    public static int f7183x = 2131558671;
-
-    /* renamed from: y  reason: collision with root package name */
-    public static int f7184y = 2131558672;
+    public static final void i(View view) {
+        Intrinsics.checkNotNullParameter(view, "<this>");
+        if (view.isAttachedToWindow()) {
+            view.requestApplyInsets();
+        } else {
+            view.addOnAttachStateChangeListener(new a());
+        }
+    }
 }

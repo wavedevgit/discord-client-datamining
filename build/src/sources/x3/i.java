@@ -3,13 +3,13 @@ package x3;
 import java.io.Closeable;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public interface i extends Closeable {
-    void D1(int i10, byte[] bArr);
+    void C1(int i10, byte[] bArr);
 
-    void P1(int i10);
+    void O1(int i10);
 
-    void T(int i10, double d10);
+    void W(int i10, double d10);
 
-    void h1(int i10, String str);
+    void g1(int i10, String str);
 
-    void w1(int i10, long j10);
+    void v1(int i10, long j10);
 }

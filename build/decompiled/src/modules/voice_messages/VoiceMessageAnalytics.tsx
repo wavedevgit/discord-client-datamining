@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.VoiceMessageRecordingResult = var3;
     var3 = function arg0, arg1, arg2, arg3() {
-        _fun79771: for (var _fun79771_ip = 0;;) switch (_fun79771_ip) {
+        _fun79795: for (var _fun79795_ip = 0;;) switch (_fun79795_ip) {
             case 0:
                 var9 = arg1;
                 var8 = arg2;
@@ -63,8 +63,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = null;
                 var5 = var8;
                 if (!(var10 != var9)) {
-                    _fun79771_ip = 86;
-                    continue _fun79771
+                    _fun79795_ip = 86;
+                    continue _fun79795
                 }
             case 83:
                 var5 = var9;
@@ -79,7 +79,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.logVoiceMessagePlaybackStarted = var3;
     var3 = function arg0, arg1, arg2, arg3, arg4() {
-        _fun79772: for (var _fun79772_ip = 0;;) switch (_fun79772_ip) {
+        _fun79796: for (var _fun79796_ip = 0;;) switch (_fun79796_ip) {
             case 0:
                 var9 = arg1;
                 var8 = arg2;
@@ -102,8 +102,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = null;
                 var5 = var8;
                 if (!(var10 != var9)) {
-                    _fun79772_ip = 86;
-                    continue _fun79772
+                    _fun79796_ip = 86;
+                    continue _fun79796
                 }
             case 83:
                 var5 = var9;

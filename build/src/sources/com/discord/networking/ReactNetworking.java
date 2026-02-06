@@ -49,9 +49,9 @@ public final class ReactNetworking {
 
     @NotNull
     public final NetworkFetcher createReactOkHttpNetworkFetcher() {
-        OkHttpClient.Builder D = OkHttpClientProvider.createClient().D();
+        OkHttpClient.Builder E = OkHttpClientProvider.createClient().E();
         final DeviceResourceUsageRecorder.Companion companion = DeviceResourceUsageRecorder.Companion;
-        OkHttpClient c10 = D.b(new Interceptor() { // from class: com.discord.networking.ReactNetworking$createReactOkHttpNetworkFetcher$$inlined$-addNetworkInterceptor$1
+        OkHttpClient c10 = E.b(new Interceptor() { // from class: com.discord.networking.ReactNetworking$createReactOkHttpNetworkFetcher$$inlined$-addNetworkInterceptor$1
             @Override // okhttp3.Interceptor
             @NotNull
             public final Response intercept(@NotNull Interceptor.Chain chain) {
@@ -60,7 +60,7 @@ public final class ReactNetworking {
             }
         }).c();
         try {
-            int i10 = ReactOkHttpNetworkFetcher.f11170a;
+            int i10 = ReactOkHttpNetworkFetcher.f11069a;
             Constructor declaredConstructor = ReactOkHttpNetworkFetcher.class.getDeclaredConstructor(OkHttpClient.class);
             declaredConstructor.setAccessible(true);
             Object newInstance = declaredConstructor.newInstance(c10);

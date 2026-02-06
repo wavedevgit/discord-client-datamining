@@ -1,52 +1,75 @@
 package yp;
 
-import android.graphics.Color;
-import android.view.Window;
-import androidx.core.view.WindowInsetsControllerCompat;
+import android.os.Parcel;
+import android.os.Parcelable;
+import kotlin.enums.EnumEntries;
 import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a {
+public final class a implements Parcelable {
+    @NotNull
+    public static final Parcelable.Creator<a> CREATOR;
 
-    /* renamed from: a  reason: collision with root package name */
-    private final Window f54905a;
+    /* renamed from: d  reason: collision with root package name */
+    public static final a f55535d = new a("REQUIRED", 0);
 
-    /* renamed from: b  reason: collision with root package name */
-    private final boolean f54906b;
+    /* renamed from: e  reason: collision with root package name */
+    public static final a f55536e = new a("OPTIONAL", 1);
 
-    /* renamed from: c  reason: collision with root package name */
-    private final boolean f54907c;
+    /* renamed from: i  reason: collision with root package name */
+    public static final a f55537i = new a("NONE", 2);
 
-    public a(Window window, boolean z10, boolean z11) {
-        Intrinsics.checkNotNullParameter(window, "window");
-        this.f54905a = window;
-        this.f54906b = z10;
-        this.f54907c = z11;
+    /* renamed from: o  reason: collision with root package name */
+    private static final /* synthetic */ a[] f55538o;
+
+    /* renamed from: p  reason: collision with root package name */
+    private static final /* synthetic */ EnumEntries f55539p;
+
+    static {
+        a[] a10 = a();
+        f55538o = a10;
+        f55539p = xr.a.a(a10);
+        CREATOR = new Parcelable.Creator() { // from class: yp.a.a
+            @Override // android.os.Parcelable.Creator
+            /* renamed from: a */
+            public final a createFromParcel(Parcel parcel) {
+                Intrinsics.checkNotNullParameter(parcel, "parcel");
+                return a.valueOf(parcel.readString());
+            }
+
+            @Override // android.os.Parcelable.Creator
+            /* renamed from: b */
+            public final a[] newArray(int i10) {
+                return new a[i10];
+            }
+        };
     }
 
-    private final void b(Window window, int i10) {
-        boolean z10;
-        int rgb = Color.rgb(Color.red(i10), Color.green(i10), Color.blue(i10));
-        double d10 = r1.c.d(-1, rgb);
-        double d11 = r1.c.d(-16777216, rgb);
-        WindowInsetsControllerCompat windowInsetsControllerCompat = new WindowInsetsControllerCompat(window, window.getDecorView());
-        boolean z11 = false;
-        if (this.f54906b) {
-            if (d10 < d11) {
-                z10 = true;
-            } else {
-                z10 = false;
-            }
-            windowInsetsControllerCompat.d(z10);
-        }
-        if (this.f54907c) {
-            if (d10 < d11) {
-                z11 = true;
-            }
-            windowInsetsControllerCompat.e(z11);
-        }
+    private a(String str, int i10) {
     }
 
-    public final void a(int i10) {
-        b(this.f54905a, i10);
+    private static final /* synthetic */ a[] a() {
+        return new a[]{f55535d, f55536e, f55537i};
+    }
+
+    public static a valueOf(String str) {
+        return (a) Enum.valueOf(a.class, str);
+    }
+
+    public static a[] values() {
+        return (a[]) f55538o.clone();
+    }
+
+    @Override // android.os.Parcelable
+    public final int describeContents() {
+        return 0;
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(Parcel dest, int i10) {
+        Intrinsics.checkNotNullParameter(dest, "dest");
+        dest.writeString(name());
     }
 }

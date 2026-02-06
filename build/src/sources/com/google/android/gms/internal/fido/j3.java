@@ -9,22 +9,22 @@ import sun.misc.Unsafe;
 final class j3 extends c3 {
 
     /* renamed from: a  reason: collision with root package name */
-    static final Unsafe f14026a;
+    static final Unsafe f13989a;
 
     /* renamed from: b  reason: collision with root package name */
-    static final long f14027b;
+    static final long f13990b;
 
     /* renamed from: c  reason: collision with root package name */
-    static final long f14028c;
+    static final long f13991c;
 
     /* renamed from: d  reason: collision with root package name */
-    static final long f14029d;
+    static final long f13992d;
 
     /* renamed from: e  reason: collision with root package name */
-    static final long f14030e;
+    static final long f13993e;
 
     /* renamed from: f  reason: collision with root package name */
-    static final long f14031f;
+    static final long f13994f;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a implements PrivilegedExceptionAction {
@@ -57,12 +57,12 @@ final class j3 extends c3 {
             unsafe = (Unsafe) AccessController.doPrivileged(new a());
         }
         try {
-            f14028c = unsafe.objectFieldOffset(l3.class.getDeclaredField("i"));
-            f14027b = unsafe.objectFieldOffset(l3.class.getDeclaredField("e"));
-            f14029d = unsafe.objectFieldOffset(l3.class.getDeclaredField("d"));
-            f14030e = unsafe.objectFieldOffset(k3.class.getDeclaredField("a"));
-            f14031f = unsafe.objectFieldOffset(k3.class.getDeclaredField("b"));
-            f14026a = unsafe;
+            f13991c = unsafe.objectFieldOffset(l3.class.getDeclaredField("i"));
+            f13990b = unsafe.objectFieldOffset(l3.class.getDeclaredField("e"));
+            f13992d = unsafe.objectFieldOffset(l3.class.getDeclaredField("d"));
+            f13993e = unsafe.objectFieldOffset(k3.class.getDeclaredField("a"));
+            f13994f = unsafe.objectFieldOffset(k3.class.getDeclaredField("b"));
+            f13989a = unsafe;
         } catch (NoSuchFieldException e11) {
             throw new RuntimeException(e11);
         }
@@ -78,13 +78,13 @@ final class j3 extends c3 {
     public final g3 a(l3 l3Var, g3 g3Var) {
         g3 g3Var2;
         while (true) {
-            g3Var2 = l3Var.f14054e;
+            g3Var2 = l3Var.f14017e;
             if (g3Var == g3Var2) {
                 break;
             }
             l3 l3Var2 = l3Var;
             g3 g3Var3 = g3Var;
-            if (o3.a(f14026a, l3Var2, f14027b, g3Var2, g3Var3)) {
+            if (o3.a(f13989a, l3Var2, f13990b, g3Var2, g3Var3)) {
                 break;
             }
             l3Var = l3Var2;
@@ -98,7 +98,7 @@ final class j3 extends c3 {
     public final k3 b(l3 l3Var, k3 k3Var) {
         k3 k3Var2;
         do {
-            k3Var2 = l3Var.f14055i;
+            k3Var2 = l3Var.f14018i;
             if (k3Var == k3Var2) {
                 break;
             }
@@ -109,24 +109,24 @@ final class j3 extends c3 {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.gms.internal.fido.c3
     public final void c(k3 k3Var, k3 k3Var2) {
-        f14026a.putObject(k3Var, f14031f, k3Var2);
+        f13989a.putObject(k3Var, f13994f, k3Var2);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.gms.internal.fido.c3
     public final void d(k3 k3Var, Thread thread) {
-        f14026a.putObject(k3Var, f14030e, thread);
+        f13989a.putObject(k3Var, f13993e, thread);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.gms.internal.fido.c3
     public final boolean e(l3 l3Var, Object obj, Object obj2) {
-        return o3.a(f14026a, l3Var, f14029d, obj, obj2);
+        return o3.a(f13989a, l3Var, f13992d, obj, obj2);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.gms.internal.fido.c3
     public final boolean f(l3 l3Var, k3 k3Var, k3 k3Var2) {
-        return o3.a(f14026a, l3Var, f14028c, k3Var, k3Var2);
+        return o3.a(f13989a, l3Var, f13991c, k3Var, k3Var2);
     }
 }

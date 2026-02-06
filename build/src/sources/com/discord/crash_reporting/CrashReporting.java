@@ -60,9 +60,9 @@ import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.reflect.KClass;
 import kotlin.text.Charsets;
 import kotlin.text.StringsKt;
-import or.p;
-import or.v;
 import org.jetbrains.annotations.NotNull;
+import qr.p;
+import qr.v;
 @Metadata(d1 = {"\u0000\u009e\u0001\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\u0010\u0003\n\u0000\n\u0002\u0010\u0006\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010$\n\u0002\b\b\n\u0002\u0010\t\n\u0002\b\b\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0012\bÆ\u0002\u0018\u00002\u00020\u0001:\u0002\\]B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\u000e\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u0012J\b\u0010\u0013\u001a\u00020\u0005H\u0002J\u0016\u0010\u0014\u001a\u00020\u00152\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0016\u001a\u00020\u0017J\u0018\u0010\u0018\u001a\u00020\u00192\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u001a\u001a\u00020\u0019H\u0002J\u0018\u0010\u001b\u001a\u00020\u00152\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u001a\u001a\u00020\u0019H\u0002J\u0012\u0010\u001c\u001a\u0004\u0018\u00010\u00172\u0006\u0010\u001a\u001a\u00020\u0019H\u0002J\u0012\u0010\u001d\u001a\u0004\u0018\u00010\u00172\u0006\u0010\u001a\u001a\u00020\u0019H\u0002J\u001c\u0010\u001e\u001a\u0004\u0018\u00010\u001f2\u0006\u0010 \u001a\u00020\u001f2\b\u0010!\u001a\u0004\u0018\u00010\"H\u0002J\u0018\u0010#\u001a\u00020\u00152\u0006\u0010$\u001a\u00020\u000e2\b\b\u0002\u0010%\u001a\u00020\u0005J \u0010&\u001a\u00020\u00152\u0006\u0010'\u001a\u00020\u00172\u0006\u0010(\u001a\u00020\u00172\b\b\u0002\u0010)\u001a\u00020*J\u001a\u0010&\u001a\u00020\u00152\u0006\u0010'\u001a\u00020\u00172\n\u0010+\u001a\u00060,j\u0002`-J\u000e\u0010.\u001a\u00020/2\u0006\u00100\u001a\u000201J\u0010\u00102\u001a\u00020\u00152\u0006\u00103\u001a\u000204H\u0007JF\u00105\u001a\u00020\u00152\u0006\u00106\u001a\u00020\u00172\u0014\b\u0002\u00107\u001a\u000e\u0012\u0004\u0012\u00020\u0017\u0012\u0004\u0012\u00020\u0001082\n\b\u0002\u00109\u001a\u0004\u0018\u00010\u00172\n\b\u0002\u00100\u001a\u0004\u0018\u0001012\b\b\u0002\u0010:\u001a\u00020\u0005J\u0016\u0010;\u001a\u00020\u00152\u0006\u0010<\u001a\u00020\u00172\u0006\u0010\u0004\u001a\u00020\u0017J\b\u0010=\u001a\u00020\u0015H\u0002JH\u0010>\u001a\u00020\u00152\u0006\u0010<\u001a\u00020\u00172\b\u0010(\u001a\u0004\u0018\u00010\u00172\u0014\u0010?\u001a\u0010\u0012\u0004\u0012\u00020\u0017\u0012\u0006\u0012\u0004\u0018\u00010\u0001082\u0006\u0010@\u001a\u00020A2\u000e\b\u0002\u0010B\u001a\b\u0012\u0004\u0012\u00020\u00170\fH\u0002J\u0018\u0010H\u001a\u00020A2\u0006\u0010\u001a\u001a\u00020\u00192\u0006\u0010I\u001a\u00020JH\u0002J/\u0010K\u001a\u00020L2\u0006\u0010M\u001a\u00020A2\u0006\u0010N\u001a\u00020A2\u0006\u0010O\u001a\u00020L2\b\u0010P\u001a\u0004\u0018\u00010AH\u0002¢\u0006\u0002\u0010QJ)\u0010R\u001a\u0004\u0018\u00010A2\b\u0010S\u001a\u0004\u0018\u00010A2\u0006\u0010T\u001a\u00020A2\u0006\u0010U\u001a\u00020LH\u0002¢\u0006\u0002\u0010VJ \u0010W\u001a\u00020\u00192\u0006\u0010\u001a\u001a\u00020\u00192\u0006\u0010!\u001a\u00020\"2\u0006\u0010I\u001a\u00020JH\u0002R$\u0010\u0006\u001a\u0004\u0018\u00010\u00052\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005@BX\u0086\u000e¢\u0006\n\n\u0002\u0010\b\u001a\u0004\b\u0006\u0010\u0007R\u000e\u0010\t\u001a\u00020\nX\u0082\u000e¢\u0006\u0002\n\u0000R\u001c\u0010\u000b\u001a\u0010\u0012\f\u0012\n\u0012\u0006\b\u0001\u0012\u00020\u000e0\r0\fX\u0082\u0004¢\u0006\u0002\n\u0000R\u001b\u0010C\u001a\u00020A8BX\u0082\u0084\u0002¢\u0006\f\n\u0004\bF\u0010G\u001a\u0004\bD\u0010ER\u000e\u0010X\u001a\u00020\u0017X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010Y\u001a\u00020\u0017X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010Z\u001a\u00020\u0017X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010[\u001a\u00020LX\u0082T¢\u0006\u0002\n\u0000¨\u0006^"}, d2 = {"Lcom/discord/crash_reporting/CrashReporting;", "", "<init>", "()V", "value", "", "isCrashedLastRun", "()Ljava/lang/Boolean;", "Ljava/lang/Boolean;", "crashReportingInitialized", "Ljava/util/concurrent/CountDownLatch;", "ignoreNetworkExceptionList", "", "Lkotlin/reflect/KClass;", "", "getSampleRate", "", "context", "Landroid/content/Context;", "isDisabled", "init", "", "releaseName", "", "handleBeforeSend", "Lio/sentry/SentryEvent;", "event", "persistLastCrashInfo", "getErrorMessage", "getErrorStack", "handleBeforeBreadcrumb", "Lio/sentry/Breadcrumb;", "breadcrumb", "hint", "Lio/sentry/Hint;", "captureException", "throwable", "ignoreNetworkExceptions", "captureMessage", "tag", "message", "errorLevel", "Lcom/discord/crash_reporting/CrashReporting$ErrorLevel;", "exception", "Ljava/lang/Exception;", "Lkotlin/Exception;", "breadcrumbLevelToSentryLevel", "Lio/sentry/SentryLevel;", "level", "Lcom/discord/crash_reporting/CrashReporting$BreadcrumbLevel;", "addBreadcrumbBatchBinary", "buffer", "Ljava/nio/ByteBuffer;", "addBreadcrumb", "breadcrumbMessage", "breadcrumbData", "", "breadcrumbCategory", "log", "setTag", "key", "waitOrFail", "appendBreadcrumbToTelemetryRing", "data", "timestampMs", "", "channels", "maxEventSizeBytes", "getMaxEventSizeBytes", "()J", "maxEventSizeBytes$delegate", "Lkotlin/Lazy;", "getEventSize", "options", "Lio/sentry/android/core/SentryAndroidOptions;", "calculateBatchSize", "", "currentSize", "maxSizeBytes", "remainingBreadcrumbs", "avgBreadcrumbSize", "(JJILjava/lang/Long;)I", "computeAverageBreadcrumbSize", "previousEstimate", "sizeReduction", "removedCount", "(Ljava/lang/Long;JI)Ljava/lang/Long;", "incrementallyRemoveBreadcrumbs", "TAG_BUILD_NUMBER", "TAG_APP_VERSION", "TAG_EVENT_ORIGIN", "MAX_BREADCRUMBS", "BreadcrumbLevel", "ErrorLevel", "crash_reporting_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nCrashReporting.kt\nKotlin\n*S Kotlin\n*F\n+ 1 CrashReporting.kt\ncom/discord/crash_reporting/CrashReporting\n+ 2 _Maps.kt\nkotlin/collections/MapsKt___MapsKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,740:1\n216#2,2:741\n216#2,2:743\n216#2,2:745\n1#3:747\n*S KotlinDebug\n*F\n+ 1 CrashReporting.kt\ncom/discord/crash_reporting/CrashReporting\n*L\n191#1:741,2\n324#1:743,2\n484#1:745,2\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -82,7 +82,7 @@ public final class CrashReporting {
     @NotNull
     private static final List<KClass> ignoreNetworkExceptionList = CollectionsKt.o(Reflection.getOrCreateKotlinClass(UnknownHostException.class), Reflection.getOrCreateKotlinClass(SocketTimeoutException.class), Reflection.getOrCreateKotlinClass(SocketException.class), Reflection.getOrCreateKotlinClass(ConnectException.class), Reflection.getOrCreateKotlinClass(SSLException.class), Reflection.getOrCreateKotlinClass(CertPathValidatorException.class), Reflection.getOrCreateKotlinClass(SSLHandshakeException.class));
     @NotNull
-    private static final Lazy maxEventSizeBytes$delegate = or.l.a(new Function0() { // from class: com.discord.crash_reporting.a
+    private static final Lazy maxEventSizeBytes$delegate = qr.l.a(new Function0() { // from class: com.discord.crash_reporting.a
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             long maxEventSizeBytes_delegate$lambda$19;
@@ -106,7 +106,7 @@ public final class CrashReporting {
         static {
             BreadcrumbLevel[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = vr.a.a($values);
+            $ENTRIES = xr.a.a($values);
         }
 
         private BreadcrumbLevel(String str, int i10) {
@@ -142,7 +142,7 @@ public final class CrashReporting {
         static {
             ErrorLevel[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = vr.a.a($values);
+            $ENTRIES = xr.a.a($values);
         }
 
         private ErrorLevel(String str, int i10) {
@@ -276,7 +276,7 @@ public final class CrashReporting {
     public static final void captureMessage$lambda$12(String str, String str2, ErrorLevel errorLevel, IScope sentryScope) {
         SentryLevel sentryLevel;
         Intrinsics.checkNotNullParameter(sentryScope, "sentryScope");
-        sentryScope.v(CollectionsKt.e(str));
+        sentryScope.u(CollectionsKt.e(str));
         int i10 = WhenMappings.$EnumSwitchMapping$0[errorLevel.ordinal()];
         if (i10 != 1) {
             if (i10 == 2) {
@@ -516,7 +516,7 @@ public final class CrashReporting {
             java.lang.String r12 = "message"
             java.lang.String r0 = r11.r()
             r6.put(r12, r0)
-            java.util.Map r12 = r11.p()
+            java.util.Map r12 = r11.o()
             java.lang.String r0 = "getData(...)"
             kotlin.jvm.internal.Intrinsics.checkNotNullExpressionValue(r12, r0)
             java.util.Set r12 = r12.entrySet()
@@ -736,7 +736,7 @@ public final class CrashReporting {
         options.setEnableAutoActivityLifecycleTracing(false);
         options.setTracesSampleRate(Double.valueOf(0.0d));
         options.setSampleRate(Double.valueOf(d10));
-        options.setProguardUuid("a28c18eb-0454-4463-b742-37c3fdceb907");
+        options.setProguardUuid("b1452d61-b1ff-4d68-8813-67df47d5457f");
         options.setTag(TAG_BUILD_NUMBER, clientInfo.getVersionCode());
         options.setTag(TAG_APP_VERSION, clientInfo.getVersionName());
         options.setBeforeSend(new k7.c() { // from class: com.discord.crash_reporting.e
@@ -948,7 +948,7 @@ public final class CrashReporting {
 
     public final void captureException(@NotNull Throwable throwable, boolean z10) {
         Intrinsics.checkNotNullParameter(throwable, "throwable");
-        Log.e$default(Log.INSTANCE, "SentryBreadcrumb", or.e.b(throwable), (Throwable) null, 4, (Object) null);
+        Log.e$default(Log.INSTANCE, "SentryBreadcrumb", qr.e.b(throwable), (Throwable) null, 4, (Object) null);
         if (!z10) {
             b5.l(throwable);
         } else if (!ignoreNetworkExceptionList.contains(Reflection.getOrCreateKotlinClass(throwable.getClass()))) {

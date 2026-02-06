@@ -1,7 +1,4 @@
 package sl;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public interface a {
-    void a(ll.c cVar, ll.c cVar2);
-
-    void release();
+public abstract class a {
 }

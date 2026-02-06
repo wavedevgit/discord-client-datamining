@@ -40,21 +40,21 @@ public final class StepStyles_StepPrimaryButtonComponentStyleJsonAdapter extends
     @NotNull
     public StepStyles.StepPrimaryButtonComponentStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         StepStyles.StepSubmitButtonComponentStyleContainer stepSubmitButtonComponentStyleContainer = null;
         StepStyles.StepSubmitButtonComponentStyleContainer stepSubmitButtonComponentStyleContainer2 = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 stepSubmitButtonComponentStyleContainer = (StepStyles.StepSubmitButtonComponentStyleContainer) this.nullableStepSubmitButtonComponentStyleContainerAdapter.fromJson(reader);
-            } else if (W == 1) {
+            } else if (J == 1) {
                 stepSubmitButtonComponentStyleContainer2 = (StepStyles.StepSubmitButtonComponentStyleContainer) this.nullableStepSubmitButtonComponentStyleContainerAdapter.fromJson(reader);
             }
         }
-        reader.z();
+        reader.D();
         return new StepStyles.StepPrimaryButtonComponentStyle(stepSubmitButtonComponentStyleContainer, stepSubmitButtonComponentStyleContainer2);
     }
 
@@ -63,11 +63,11 @@ public final class StepStyles_StepPrimaryButtonComponentStyleJsonAdapter extends
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (stepPrimaryButtonComponentStyle != null) {
             writer.k();
-            writer.W("base");
+            writer.J("base");
             this.nullableStepSubmitButtonComponentStyleContainerAdapter.toJson(writer, stepPrimaryButtonComponentStyle.getBase());
-            writer.W("cancelDialogClose");
+            writer.J("cancelDialogClose");
             this.nullableStepSubmitButtonComponentStyleContainerAdapter.toJson(writer, stepPrimaryButtonComponentStyle.getCancelDialogClose());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

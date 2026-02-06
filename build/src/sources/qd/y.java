@@ -16,28 +16,28 @@ public interface y {
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public final int f47851a;
+        public final int f46899a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final r.b f47852b;
+        public final r.b f46900b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final CopyOnWriteArrayList f47853c;
+        private final CopyOnWriteArrayList f46901c;
 
         /* JADX INFO: Access modifiers changed from: private */
         /* renamed from: qd.y$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-        public static final class C0598a {
+        public static final class C0602a {
 
             /* renamed from: a  reason: collision with root package name */
-            public Handler f47854a;
+            public Handler f46902a;
 
             /* renamed from: b  reason: collision with root package name */
-            public y f47855b;
+            public y f46903b;
 
-            public C0598a(Handler handler, y yVar) {
-                this.f47854a = handler;
-                this.f47855b = yVar;
+            public C0602a(Handler handler, y yVar) {
+                this.f46902a = handler;
+                this.f46903b = yVar;
             }
         }
 
@@ -48,7 +48,7 @@ public interface y {
         public void g(Handler handler, y yVar) {
             ne.a.e(handler);
             ne.a.e(yVar);
-            this.f47853c.add(new C0598a(handler, yVar));
+            this.f46901c.add(new C0602a(handler, yVar));
         }
 
         public void h(int i10, Format format, int i11, Object obj, long j10) {
@@ -56,14 +56,14 @@ public interface y {
         }
 
         public void i(final MediaLoadData mediaLoadData) {
-            Iterator it = this.f47853c.iterator();
+            Iterator it = this.f46901c.iterator();
             while (it.hasNext()) {
-                C0598a c0598a = (C0598a) it.next();
-                final y yVar = c0598a.f47855b;
-                ne.w0.T0(c0598a.f47854a, new Runnable() { // from class: qd.x
+                C0602a c0602a = (C0602a) it.next();
+                final y yVar = c0602a.f46903b;
+                ne.w0.T0(c0602a.f46902a, new Runnable() { // from class: qd.x
                     @Override // java.lang.Runnable
                     public final void run() {
-                        yVar.g(r0.f47851a, y.a.this.f47852b, mediaLoadData);
+                        yVar.g(r0.f46899a, y.a.this.f46900b, mediaLoadData);
                     }
                 });
             }
@@ -78,14 +78,14 @@ public interface y {
         }
 
         public void l(final LoadEventInfo loadEventInfo, final MediaLoadData mediaLoadData) {
-            Iterator it = this.f47853c.iterator();
+            Iterator it = this.f46901c.iterator();
             while (it.hasNext()) {
-                C0598a c0598a = (C0598a) it.next();
-                final y yVar = c0598a.f47855b;
-                ne.w0.T0(c0598a.f47854a, new Runnable() { // from class: qd.u
+                C0602a c0602a = (C0602a) it.next();
+                final y yVar = c0602a.f46903b;
+                ne.w0.T0(c0602a.f46902a, new Runnable() { // from class: qd.u
                     @Override // java.lang.Runnable
                     public final void run() {
-                        yVar.G(r0.f47851a, y.a.this.f47852b, loadEventInfo, mediaLoadData);
+                        yVar.G(r0.f46899a, y.a.this.f46900b, loadEventInfo, mediaLoadData);
                     }
                 });
             }
@@ -100,14 +100,14 @@ public interface y {
         }
 
         public void o(final LoadEventInfo loadEventInfo, final MediaLoadData mediaLoadData) {
-            Iterator it = this.f47853c.iterator();
+            Iterator it = this.f46901c.iterator();
             while (it.hasNext()) {
-                C0598a c0598a = (C0598a) it.next();
-                final y yVar = c0598a.f47855b;
-                ne.w0.T0(c0598a.f47854a, new Runnable() { // from class: qd.s
+                C0602a c0602a = (C0602a) it.next();
+                final y yVar = c0602a.f46903b;
+                ne.w0.T0(c0602a.f46902a, new Runnable() { // from class: qd.s
                     @Override // java.lang.Runnable
                     public final void run() {
-                        yVar.H(r0.f47851a, y.a.this.f47852b, loadEventInfo, mediaLoadData);
+                        yVar.H(r0.f46899a, y.a.this.f46900b, loadEventInfo, mediaLoadData);
                     }
                 });
             }
@@ -122,14 +122,14 @@ public interface y {
         }
 
         public void r(final LoadEventInfo loadEventInfo, final MediaLoadData mediaLoadData, final IOException iOException, final boolean z10) {
-            Iterator it = this.f47853c.iterator();
+            Iterator it = this.f46901c.iterator();
             while (it.hasNext()) {
-                C0598a c0598a = (C0598a) it.next();
-                final y yVar = c0598a.f47855b;
-                ne.w0.T0(c0598a.f47854a, new Runnable() { // from class: qd.t
+                C0602a c0602a = (C0602a) it.next();
+                final y yVar = c0602a.f46903b;
+                ne.w0.T0(c0602a.f46902a, new Runnable() { // from class: qd.t
                     @Override // java.lang.Runnable
                     public final void run() {
-                        yVar.t(r0.f47851a, y.a.this.f47852b, loadEventInfo, mediaLoadData, iOException, z10);
+                        yVar.t(r0.f46899a, y.a.this.f46900b, loadEventInfo, mediaLoadData, iOException, z10);
                     }
                 });
             }
@@ -144,25 +144,25 @@ public interface y {
         }
 
         public void u(final LoadEventInfo loadEventInfo, final MediaLoadData mediaLoadData) {
-            Iterator it = this.f47853c.iterator();
+            Iterator it = this.f46901c.iterator();
             while (it.hasNext()) {
-                C0598a c0598a = (C0598a) it.next();
-                final y yVar = c0598a.f47855b;
-                ne.w0.T0(c0598a.f47854a, new Runnable() { // from class: qd.v
+                C0602a c0602a = (C0602a) it.next();
+                final y yVar = c0602a.f46903b;
+                ne.w0.T0(c0602a.f46902a, new Runnable() { // from class: qd.v
                     @Override // java.lang.Runnable
                     public final void run() {
-                        yVar.C(r0.f47851a, y.a.this.f47852b, loadEventInfo, mediaLoadData);
+                        yVar.C(r0.f46899a, y.a.this.f46900b, loadEventInfo, mediaLoadData);
                     }
                 });
             }
         }
 
         public void v(y yVar) {
-            Iterator it = this.f47853c.iterator();
+            Iterator it = this.f46901c.iterator();
             while (it.hasNext()) {
-                C0598a c0598a = (C0598a) it.next();
-                if (c0598a.f47855b == yVar) {
-                    this.f47853c.remove(c0598a);
+                C0602a c0602a = (C0602a) it.next();
+                if (c0602a.f46903b == yVar) {
+                    this.f46901c.remove(c0602a);
                 }
             }
         }
@@ -172,28 +172,28 @@ public interface y {
         }
 
         public void x(final MediaLoadData mediaLoadData) {
-            final r.b bVar = (r.b) ne.a.e(this.f47852b);
-            Iterator it = this.f47853c.iterator();
+            final r.b bVar = (r.b) ne.a.e(this.f46900b);
+            Iterator it = this.f46901c.iterator();
             while (it.hasNext()) {
-                C0598a c0598a = (C0598a) it.next();
-                final y yVar = c0598a.f47855b;
-                ne.w0.T0(c0598a.f47854a, new Runnable() { // from class: qd.w
+                C0602a c0602a = (C0602a) it.next();
+                final y yVar = c0602a.f46903b;
+                ne.w0.T0(c0602a.f46902a, new Runnable() { // from class: qd.w
                     @Override // java.lang.Runnable
                     public final void run() {
-                        yVar.D(y.a.this.f47851a, bVar, mediaLoadData);
+                        yVar.D(y.a.this.f46899a, bVar, mediaLoadData);
                     }
                 });
             }
         }
 
         public a y(int i10, r.b bVar) {
-            return new a(this.f47853c, i10, bVar);
+            return new a(this.f46901c, i10, bVar);
         }
 
         private a(CopyOnWriteArrayList copyOnWriteArrayList, int i10, r.b bVar) {
-            this.f47853c = copyOnWriteArrayList;
-            this.f47851a = i10;
-            this.f47852b = bVar;
+            this.f46901c = copyOnWriteArrayList;
+            this.f46899a = i10;
+            this.f46900b = bVar;
         }
     }
 

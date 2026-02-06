@@ -1,110 +1,186 @@
 package iv;
 
-import java.nio.charset.Charset;
-import java.util.Locale;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import android.os.ParcelFileDescriptor;
+import java.io.File;
+import java.io.FileInputStream;
+import java.nio.ByteBuffer;
+import java.nio.channels.FileChannel;
+import org.chromium.net.UploadDataProvider;
+import org.chromium.net.UploadDataSink;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public abstract class a {
 
-    /* renamed from: a  reason: collision with root package name */
-    private static final Pattern f30388a = Pattern.compile("[\\\\&]");
-
-    /* renamed from: b  reason: collision with root package name */
-    private static final Pattern f30389b = Pattern.compile("\\\\[!\"#$%&'()*+,./:;<=>?@\\[\\\\\\]^_`{|}~-]|&(?:#x[a-f0-9]{1,6}|#[0-9]{1,7}|[a-z][a-z0-9]{1,31});", 2);
-
-    /* renamed from: c  reason: collision with root package name */
-    private static final Pattern f30390c = Pattern.compile("(%[a-fA-F0-9]{0,2}|[^:/?#@!$&'()*+,;=a-zA-Z0-9\\-._~])");
-
-    /* renamed from: d  reason: collision with root package name */
-    private static final char[] f30391d = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
-
-    /* renamed from: e  reason: collision with root package name */
-    private static final Pattern f30392e = Pattern.compile("[ \t\r\n]+");
-
-    /* renamed from: f  reason: collision with root package name */
-    private static final c f30393f = new C0422a();
-
-    /* renamed from: g  reason: collision with root package name */
-    private static final c f30394g = new b();
-
     /* renamed from: iv.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    static class C0422a implements c {
-        C0422a() {
+    class C0412a implements d {
+
+        /* renamed from: a  reason: collision with root package name */
+        final /* synthetic */ File f29365a;
+
+        C0412a(File file) {
+            this.f29365a = file;
         }
 
-        @Override // iv.a.c
-        public void a(String str, StringBuilder sb2) {
-            if (str.charAt(0) == '\\') {
-                sb2.append((CharSequence) str, 1, str.length());
-            } else {
-                sb2.append(iv.b.a(str));
-            }
+        @Override // iv.a.d
+        public FileChannel g() {
+            return new FileInputStream(this.f29365a).getChannel();
         }
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    static class b implements c {
-        b() {
+    class b implements d {
+
+        /* renamed from: a  reason: collision with root package name */
+        final /* synthetic */ ParcelFileDescriptor f29366a;
+
+        b(ParcelFileDescriptor parcelFileDescriptor) {
+            this.f29366a = parcelFileDescriptor;
         }
 
-        @Override // iv.a.c
-        public void a(String str, StringBuilder sb2) {
-            byte[] bytes;
-            if (str.startsWith("%")) {
-                if (str.length() == 3) {
-                    sb2.append(str);
-                    return;
-                }
-                sb2.append("%25");
-                sb2.append((CharSequence) str, 1, str.length());
-                return;
+        @Override // iv.a.d
+        public FileChannel g() {
+            if (this.f29366a.getStatSize() != -1) {
+                return new ParcelFileDescriptor.AutoCloseInputStream(this.f29366a).getChannel();
             }
-            for (byte b10 : str.getBytes(Charset.forName("UTF-8"))) {
-                sb2.append('%');
-                sb2.append(a.f30391d[(b10 >> 4) & 15]);
-                sb2.append(a.f30391d[b10 & 15]);
-            }
+            this.f29366a.close();
+            String valueOf = String.valueOf(this.f29366a);
+            throw new IllegalArgumentException("Not a file: " + valueOf);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public interface c {
-        void a(String str, StringBuilder sb2);
-    }
+    public static final class c extends UploadDataProvider {
 
-    public static String b(String str) {
-        return f30392e.matcher(str.trim().toLowerCase(Locale.ROOT)).replaceAll(" ");
-    }
+        /* renamed from: d  reason: collision with root package name */
+        private final ByteBuffer f29367d;
 
-    public static String c(String str) {
-        return b(str.substring(1, str.length() - 1));
-    }
-
-    private static String d(Pattern pattern, String str, c cVar) {
-        Matcher matcher = pattern.matcher(str);
-        if (!matcher.find()) {
-            return str;
+        @Override // org.chromium.net.UploadDataProvider
+        public long getLength() {
+            return this.f29367d.limit();
         }
-        StringBuilder sb2 = new StringBuilder(str.length() + 16);
-        int i10 = 0;
-        do {
-            sb2.append((CharSequence) str, i10, matcher.start());
-            cVar.a(matcher.group(), sb2);
-            i10 = matcher.end();
-        } while (matcher.find());
-        if (i10 != str.length()) {
-            sb2.append((CharSequence) str, i10, str.length());
+
+        @Override // org.chromium.net.UploadDataProvider
+        public void read(UploadDataSink uploadDataSink, ByteBuffer byteBuffer) {
+            if (byteBuffer.hasRemaining()) {
+                if (byteBuffer.remaining() >= this.f29367d.remaining()) {
+                    byteBuffer.put(this.f29367d);
+                } else {
+                    int limit = this.f29367d.limit();
+                    ByteBuffer byteBuffer2 = this.f29367d;
+                    ByteBuffer byteBuffer3 = (ByteBuffer) byteBuffer2.limit(byteBuffer2.position() + byteBuffer.remaining());
+                    byteBuffer.put(this.f29367d);
+                    ByteBuffer byteBuffer4 = (ByteBuffer) this.f29367d.limit(limit);
+                }
+                uploadDataSink.onReadSucceeded(false);
+                return;
+            }
+            throw new IllegalStateException("Cronet passed a buffer with no bytes remaining");
         }
-        return sb2.toString();
+
+        @Override // org.chromium.net.UploadDataProvider
+        public void rewind(UploadDataSink uploadDataSink) {
+            ByteBuffer byteBuffer = (ByteBuffer) this.f29367d.position(0);
+            uploadDataSink.onRewindSucceeded();
+        }
+
+        private c(ByteBuffer byteBuffer) {
+            this.f29367d = byteBuffer;
+        }
     }
 
-    public static String e(String str) {
-        if (f30388a.matcher(str).find()) {
-            return d(f30389b, str, f30393f);
+    /* JADX INFO: Access modifiers changed from: private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public interface d {
+        FileChannel g();
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    private static final class e extends UploadDataProvider {
+
+        /* renamed from: d  reason: collision with root package name */
+        private volatile FileChannel f29368d;
+
+        /* renamed from: e  reason: collision with root package name */
+        private final d f29369e;
+
+        /* renamed from: i  reason: collision with root package name */
+        private final Object f29370i;
+
+        private FileChannel a() {
+            if (this.f29368d == null) {
+                synchronized (this.f29370i) {
+                    try {
+                        if (this.f29368d == null) {
+                            this.f29368d = this.f29369e.g();
+                        }
+                    } finally {
+                    }
+                }
+            }
+            return this.f29368d;
         }
-        return str;
+
+        @Override // org.chromium.net.UploadDataProvider, java.io.Closeable, java.lang.AutoCloseable
+        public void close() {
+            FileChannel fileChannel = this.f29368d;
+            if (fileChannel != null) {
+                fileChannel.close();
+            }
+        }
+
+        @Override // org.chromium.net.UploadDataProvider
+        public long getLength() {
+            return a().size();
+        }
+
+        @Override // org.chromium.net.UploadDataProvider
+        public void read(UploadDataSink uploadDataSink, ByteBuffer byteBuffer) {
+            if (byteBuffer.hasRemaining()) {
+                FileChannel a10 = a();
+                int i10 = 0;
+                while (i10 == 0) {
+                    int read = a10.read(byteBuffer);
+                    if (read == -1) {
+                        break;
+                    }
+                    i10 += read;
+                }
+                uploadDataSink.onReadSucceeded(false);
+                return;
+            }
+            throw new IllegalStateException("Cronet passed a buffer with no bytes remaining");
+        }
+
+        @Override // org.chromium.net.UploadDataProvider
+        public void rewind(UploadDataSink uploadDataSink) {
+            a().position(0L);
+            uploadDataSink.onRewindSucceeded();
+        }
+
+        private e(d dVar) {
+            this.f29370i = new Object();
+            this.f29369e = dVar;
+        }
+    }
+
+    public static UploadDataProvider a(ParcelFileDescriptor parcelFileDescriptor) {
+        return new e(new b(parcelFileDescriptor));
+    }
+
+    public static UploadDataProvider b(File file) {
+        return new e(new C0412a(file));
+    }
+
+    public static UploadDataProvider c(ByteBuffer byteBuffer) {
+        return new c(byteBuffer.slice());
+    }
+
+    public static UploadDataProvider d(byte[] bArr) {
+        return e(bArr, 0, bArr.length);
+    }
+
+    public static UploadDataProvider e(byte[] bArr, int i10, int i11) {
+        return new c(ByteBuffer.wrap(bArr, i10, i11).slice());
     }
 }

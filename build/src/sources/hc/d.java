@@ -3,21 +3,21 @@ package hc;
 import java.io.Closeable;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public interface d extends Closeable {
-    void G(Iterable iterable);
+    void K(Iterable iterable);
 
     void T0(Iterable iterable);
 
-    Iterable X1(zb.o oVar);
+    Iterable W1(zb.o oVar);
 
-    Iterable Y();
+    k Z0(zb.o oVar, zb.i iVar);
 
-    void Z(zb.o oVar, long j10);
+    Iterable a0();
 
-    k a1(zb.o oVar, zb.i iVar);
+    void b0(zb.o oVar, long j10);
 
     int l();
 
-    boolean p0(zb.o oVar);
+    boolean r0(zb.o oVar);
 
-    long r0(zb.o oVar);
+    long t0(zb.o oVar);
 }

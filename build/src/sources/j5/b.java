@@ -4,15 +4,15 @@ import g5.f;
 import g5.i;
 import g5.q;
 import j5.c;
-import or.p;
+import qr.p;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class b implements c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final d f30756a;
+    private final d f29729a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final i f30757b;
+    private final i f29730b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a implements c.a {
@@ -31,17 +31,17 @@ public final class b implements c {
     }
 
     public b(d dVar, i iVar) {
-        this.f30756a = dVar;
-        this.f30757b = iVar;
+        this.f29729a = dVar;
+        this.f29730b = iVar;
     }
 
     @Override // j5.c
     public void a() {
-        i iVar = this.f30757b;
+        i iVar = this.f29730b;
         if (iVar instanceof q) {
-            this.f30756a.a(((q) iVar).a());
+            this.f29729a.a(((q) iVar).a());
         } else if (iVar instanceof f) {
-            this.f30756a.c(((f) iVar).a());
+            this.f29729a.c(((f) iVar).a());
         } else {
             throw new p();
         }

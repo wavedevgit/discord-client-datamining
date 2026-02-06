@@ -45,7 +45,7 @@ public final class NextStep_GovernmentId_AssetConfig_PromptPageJsonAdapter exten
     @NotNull
     public NextStep.GovernmentId.AssetConfig.PromptPage fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         int i10 = -1;
         RemoteImage remoteImage = null;
         RemoteImage remoteImage2 = null;
@@ -54,10 +54,10 @@ public final class NextStep_GovernmentId_AssetConfig_PromptPageJsonAdapter exten
         RemoteImage remoteImage5 = null;
         RemoteImage remoteImage6 = null;
         while (reader.hasNext()) {
-            switch (reader.W(this.options)) {
+            switch (reader.J(this.options)) {
                 case -1:
                     reader.E0();
-                    reader.P();
+                    reader.S();
                     break;
                 case 0:
                     remoteImage = (RemoteImage) this.nullableRemoteImageAdapter.fromJson(reader);
@@ -85,7 +85,7 @@ public final class NextStep_GovernmentId_AssetConfig_PromptPageJsonAdapter exten
                     break;
             }
         }
-        reader.z();
+        reader.D();
         if (i10 == -64) {
             RemoteImage remoteImage7 = remoteImage6;
             RemoteImage remoteImage8 = remoteImage5;
@@ -100,7 +100,7 @@ public final class NextStep_GovernmentId_AssetConfig_PromptPageJsonAdapter exten
         RemoteImage remoteImage15 = remoteImage;
         Constructor<NextStep.GovernmentId.AssetConfig.PromptPage> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = NextStep.GovernmentId.AssetConfig.PromptPage.class.getDeclaredConstructor(RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, Integer.TYPE, ym.c.f54853c);
+            constructor = NextStep.GovernmentId.AssetConfig.PromptPage.class.getDeclaredConstructor(RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, Integer.TYPE, an.c.f1164c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -114,19 +114,19 @@ public final class NextStep_GovernmentId_AssetConfig_PromptPageJsonAdapter exten
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (promptPage != null) {
             writer.k();
-            writer.W("headerPictograph");
+            writer.J("headerPictograph");
             this.nullableRemoteImageAdapter.toJson(writer, promptPage.getHeaderPictograph());
-            writer.W("idFrontPictograph");
+            writer.J("idFrontPictograph");
             this.nullableRemoteImageAdapter.toJson(writer, promptPage.getIdFrontPictograph());
-            writer.W("idBackPictograph");
+            writer.J("idBackPictograph");
             this.nullableRemoteImageAdapter.toJson(writer, promptPage.getIdBackPictograph());
-            writer.W("barcodePdf417Pictograph");
+            writer.J("barcodePdf417Pictograph");
             this.nullableRemoteImageAdapter.toJson(writer, promptPage.getBarcodePdf417Pictograph());
-            writer.W("passportFrontPictograph");
+            writer.J("passportFrontPictograph");
             this.nullableRemoteImageAdapter.toJson(writer, promptPage.getPassportFrontPictograph());
-            writer.W("passportSignaturePictograph");
+            writer.J("passportSignaturePictograph");
             this.nullableRemoteImageAdapter.toJson(writer, promptPage.getPassportSignaturePictograph());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

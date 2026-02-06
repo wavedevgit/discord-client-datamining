@@ -20,56 +20,56 @@ import zd.b;
 final class b {
 
     /* renamed from: h  reason: collision with root package name */
-    private static final byte[] f6396h = {0, 7, 8, 15};
+    private static final byte[] f6689h = {0, 7, 8, 15};
 
     /* renamed from: i  reason: collision with root package name */
-    private static final byte[] f6397i = {0, 119, -120, -1};
+    private static final byte[] f6690i = {0, 119, -120, -1};
 
     /* renamed from: j  reason: collision with root package name */
-    private static final byte[] f6398j = {0, 17, 34, 51, 68, 85, 102, 119, -120, -103, -86, -69, -52, -35, -18, -1};
+    private static final byte[] f6691j = {0, 17, 34, 51, 68, 85, 102, 119, -120, -103, -86, -69, -52, -35, -18, -1};
 
     /* renamed from: a  reason: collision with root package name */
-    private final Paint f6399a;
+    private final Paint f6692a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Paint f6400b;
+    private final Paint f6693b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Canvas f6401c;
+    private final Canvas f6694c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final C0099b f6402d;
+    private final C0099b f6695d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final a f6403e;
+    private final a f6696e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final h f6404f;
+    private final h f6697f;
 
     /* renamed from: g  reason: collision with root package name */
-    private Bitmap f6405g;
+    private Bitmap f6698g;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public final int f6406a;
+        public final int f6699a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final int[] f6407b;
+        public final int[] f6700b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final int[] f6408c;
+        public final int[] f6701c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final int[] f6409d;
+        public final int[] f6702d;
 
         public a(int i10, int[] iArr, int[] iArr2, int[] iArr3) {
-            this.f6406a = i10;
-            this.f6407b = iArr;
-            this.f6408c = iArr2;
-            this.f6409d = iArr3;
+            this.f6699a = i10;
+            this.f6700b = iArr;
+            this.f6701c = iArr2;
+            this.f6702d = iArr3;
         }
     }
 
@@ -79,30 +79,30 @@ final class b {
     public static final class C0099b {
 
         /* renamed from: a  reason: collision with root package name */
-        public final int f6410a;
+        public final int f6703a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final int f6411b;
+        public final int f6704b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final int f6412c;
+        public final int f6705c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final int f6413d;
+        public final int f6706d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final int f6414e;
+        public final int f6707e;
 
         /* renamed from: f  reason: collision with root package name */
-        public final int f6415f;
+        public final int f6708f;
 
         public C0099b(int i10, int i11, int i12, int i13, int i14, int i15) {
-            this.f6410a = i10;
-            this.f6411b = i11;
-            this.f6412c = i12;
-            this.f6413d = i13;
-            this.f6414e = i14;
-            this.f6415f = i15;
+            this.f6703a = i10;
+            this.f6704b = i11;
+            this.f6705c = i12;
+            this.f6706d = i13;
+            this.f6707e = i14;
+            this.f6708f = i15;
         }
     }
 
@@ -111,22 +111,22 @@ final class b {
     public static final class c {
 
         /* renamed from: a  reason: collision with root package name */
-        public final int f6416a;
+        public final int f6709a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final boolean f6417b;
+        public final boolean f6710b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final byte[] f6418c;
+        public final byte[] f6711c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final byte[] f6419d;
+        public final byte[] f6712d;
 
         public c(int i10, boolean z10, byte[] bArr, byte[] bArr2) {
-            this.f6416a = i10;
-            this.f6417b = z10;
-            this.f6418c = bArr;
-            this.f6419d = bArr2;
+            this.f6709a = i10;
+            this.f6710b = z10;
+            this.f6711c = bArr;
+            this.f6712d = bArr2;
         }
     }
 
@@ -135,22 +135,22 @@ final class b {
     public static final class d {
 
         /* renamed from: a  reason: collision with root package name */
-        public final int f6420a;
+        public final int f6713a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final int f6421b;
+        public final int f6714b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final int f6422c;
+        public final int f6715c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final SparseArray f6423d;
+        public final SparseArray f6716d;
 
         public d(int i10, int i11, int i12, SparseArray sparseArray) {
-            this.f6420a = i10;
-            this.f6421b = i11;
-            this.f6422c = i12;
-            this.f6423d = sparseArray;
+            this.f6713a = i10;
+            this.f6714b = i11;
+            this.f6715c = i12;
+            this.f6716d = sparseArray;
         }
     }
 
@@ -159,14 +159,14 @@ final class b {
     public static final class e {
 
         /* renamed from: a  reason: collision with root package name */
-        public final int f6424a;
+        public final int f6717a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final int f6425b;
+        public final int f6718b;
 
         public e(int i10, int i11) {
-            this.f6424a = i10;
-            this.f6425b = i11;
+            this.f6717a = i10;
+            this.f6718b = i11;
         }
     }
 
@@ -175,56 +175,56 @@ final class b {
     public static final class f {
 
         /* renamed from: a  reason: collision with root package name */
-        public final int f6426a;
+        public final int f6719a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final boolean f6427b;
+        public final boolean f6720b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final int f6428c;
+        public final int f6721c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final int f6429d;
+        public final int f6722d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final int f6430e;
+        public final int f6723e;
 
         /* renamed from: f  reason: collision with root package name */
-        public final int f6431f;
+        public final int f6724f;
 
         /* renamed from: g  reason: collision with root package name */
-        public final int f6432g;
+        public final int f6725g;
 
         /* renamed from: h  reason: collision with root package name */
-        public final int f6433h;
+        public final int f6726h;
 
         /* renamed from: i  reason: collision with root package name */
-        public final int f6434i;
+        public final int f6727i;
 
         /* renamed from: j  reason: collision with root package name */
-        public final int f6435j;
+        public final int f6728j;
 
         /* renamed from: k  reason: collision with root package name */
-        public final SparseArray f6436k;
+        public final SparseArray f6729k;
 
         public f(int i10, boolean z10, int i11, int i12, int i13, int i14, int i15, int i16, int i17, int i18, SparseArray sparseArray) {
-            this.f6426a = i10;
-            this.f6427b = z10;
-            this.f6428c = i11;
-            this.f6429d = i12;
-            this.f6430e = i13;
-            this.f6431f = i14;
-            this.f6432g = i15;
-            this.f6433h = i16;
-            this.f6434i = i17;
-            this.f6435j = i18;
-            this.f6436k = sparseArray;
+            this.f6719a = i10;
+            this.f6720b = z10;
+            this.f6721c = i11;
+            this.f6722d = i12;
+            this.f6723e = i13;
+            this.f6724f = i14;
+            this.f6725g = i15;
+            this.f6726h = i16;
+            this.f6727i = i17;
+            this.f6728j = i18;
+            this.f6729k = sparseArray;
         }
 
         public void a(f fVar) {
-            SparseArray sparseArray = fVar.f6436k;
+            SparseArray sparseArray = fVar.f6729k;
             for (int i10 = 0; i10 < sparseArray.size(); i10++) {
-                this.f6436k.put(sparseArray.keyAt(i10), (g) sparseArray.valueAt(i10));
+                this.f6729k.put(sparseArray.keyAt(i10), (g) sparseArray.valueAt(i10));
             }
         }
     }
@@ -234,30 +234,30 @@ final class b {
     public static final class g {
 
         /* renamed from: a  reason: collision with root package name */
-        public final int f6437a;
+        public final int f6730a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final int f6438b;
+        public final int f6731b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final int f6439c;
+        public final int f6732c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final int f6440d;
+        public final int f6733d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final int f6441e;
+        public final int f6734e;
 
         /* renamed from: f  reason: collision with root package name */
-        public final int f6442f;
+        public final int f6735f;
 
         public g(int i10, int i11, int i12, int i13, int i14, int i15) {
-            this.f6437a = i10;
-            this.f6438b = i11;
-            this.f6439c = i12;
-            this.f6440d = i13;
-            this.f6441e = i14;
-            this.f6442f = i15;
+            this.f6730a = i10;
+            this.f6731b = i11;
+            this.f6732c = i12;
+            this.f6733d = i13;
+            this.f6734e = i14;
+            this.f6735f = i15;
         }
     }
 
@@ -266,63 +266,63 @@ final class b {
     public static final class h {
 
         /* renamed from: a  reason: collision with root package name */
-        public final int f6443a;
+        public final int f6736a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final int f6444b;
+        public final int f6737b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final SparseArray f6445c = new SparseArray();
+        public final SparseArray f6738c = new SparseArray();
 
         /* renamed from: d  reason: collision with root package name */
-        public final SparseArray f6446d = new SparseArray();
+        public final SparseArray f6739d = new SparseArray();
 
         /* renamed from: e  reason: collision with root package name */
-        public final SparseArray f6447e = new SparseArray();
+        public final SparseArray f6740e = new SparseArray();
 
         /* renamed from: f  reason: collision with root package name */
-        public final SparseArray f6448f = new SparseArray();
+        public final SparseArray f6741f = new SparseArray();
 
         /* renamed from: g  reason: collision with root package name */
-        public final SparseArray f6449g = new SparseArray();
+        public final SparseArray f6742g = new SparseArray();
 
         /* renamed from: h  reason: collision with root package name */
-        public C0099b f6450h;
+        public C0099b f6743h;
 
         /* renamed from: i  reason: collision with root package name */
-        public d f6451i;
+        public d f6744i;
 
         public h(int i10, int i11) {
-            this.f6443a = i10;
-            this.f6444b = i11;
+            this.f6736a = i10;
+            this.f6737b = i11;
         }
 
         public void a() {
-            this.f6445c.clear();
-            this.f6446d.clear();
-            this.f6447e.clear();
-            this.f6448f.clear();
-            this.f6449g.clear();
-            this.f6450h = null;
-            this.f6451i = null;
+            this.f6738c.clear();
+            this.f6739d.clear();
+            this.f6740e.clear();
+            this.f6741f.clear();
+            this.f6742g.clear();
+            this.f6743h = null;
+            this.f6744i = null;
         }
     }
 
     public b(int i10, int i11) {
         Paint paint = new Paint();
-        this.f6399a = paint;
+        this.f6692a = paint;
         paint.setStyle(Paint.Style.FILL_AND_STROKE);
         paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC));
         paint.setPathEffect(null);
         Paint paint2 = new Paint();
-        this.f6400b = paint2;
+        this.f6693b = paint2;
         paint2.setStyle(Paint.Style.FILL);
         paint2.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.DST_OVER));
         paint2.setPathEffect(null);
-        this.f6401c = new Canvas();
-        this.f6402d = new C0099b(719, 575, 0, 719, 0, 575);
-        this.f6403e = new a(0, c(), d(), e());
-        this.f6404f = new h(i10, i11);
+        this.f6694c = new Canvas();
+        this.f6695d = new C0099b(719, 575, 0, 719, 0, 575);
+        this.f6696e = new a(0, c(), d(), e());
+        this.f6697f = new h(i10, i11);
     }
 
     private static byte[] a(int i10, int i11, g0 g0Var) {
@@ -768,13 +768,13 @@ final class b {
                         canvas2 = canvas;
                         if (i10 == 3) {
                             if (bArr8 == null) {
-                                bArr3 = f6397i;
+                                bArr3 = f6690i;
                             } else {
                                 bArr3 = bArr8;
                             }
                         } else if (i10 == 2) {
                             if (bArr7 == null) {
-                                bArr3 = f6396h;
+                                bArr3 = f6689h;
                             } else {
                                 bArr3 = bArr7;
                             }
@@ -796,7 +796,7 @@ final class b {
                         canvas2 = canvas;
                         if (i10 == 3) {
                             if (bArr6 == null) {
-                                bArr5 = f6398j;
+                                bArr5 = f6691j;
                             } else {
                                 bArr5 = bArr6;
                             }
@@ -847,15 +847,15 @@ final class b {
     private static void k(c cVar, a aVar, int i10, int i11, int i12, Paint paint, Canvas canvas) {
         int[] iArr;
         if (i10 == 3) {
-            iArr = aVar.f6409d;
+            iArr = aVar.f6702d;
         } else if (i10 == 2) {
-            iArr = aVar.f6408c;
+            iArr = aVar.f6701c;
         } else {
-            iArr = aVar.f6407b;
+            iArr = aVar.f6700b;
         }
         int[] iArr2 = iArr;
-        j(cVar.f6418c, iArr2, i10, i11, i12, paint, canvas);
-        j(cVar.f6419d, iArr2, i10, i11, i12 + 1, paint, canvas);
+        j(cVar.f6711c, iArr2, i10, i11, i12, paint, canvas);
+        j(cVar.f6712d, iArr2, i10, i11, i12 + 1, paint, canvas);
     }
 
     private static a l(g0 g0Var, int i10) {
@@ -948,7 +948,7 @@ final class b {
         int h11 = g0Var.h(2);
         boolean g10 = g0Var.g();
         g0Var.r(1);
-        byte[] bArr2 = w0.f39662f;
+        byte[] bArr2 = w0.f39017f;
         if (h11 == 1) {
             g0Var.r(g0Var.h(8) * 16);
         } else if (h11 == 0) {
@@ -1056,57 +1056,57 @@ final class b {
         }
         switch (h10) {
             case 16:
-                if (h11 == hVar.f6443a) {
-                    d dVar = hVar.f6451i;
+                if (h11 == hVar.f6736a) {
+                    d dVar = hVar.f6744i;
                     d o10 = o(g0Var, h12);
-                    if (o10.f6422c != 0) {
-                        hVar.f6451i = o10;
-                        hVar.f6445c.clear();
-                        hVar.f6446d.clear();
-                        hVar.f6447e.clear();
+                    if (o10.f6715c != 0) {
+                        hVar.f6744i = o10;
+                        hVar.f6738c.clear();
+                        hVar.f6739d.clear();
+                        hVar.f6740e.clear();
                         break;
-                    } else if (dVar != null && dVar.f6421b != o10.f6421b) {
-                        hVar.f6451i = o10;
+                    } else if (dVar != null && dVar.f6714b != o10.f6714b) {
+                        hVar.f6744i = o10;
                         break;
                     }
                 }
                 break;
             case 17:
-                d dVar2 = hVar.f6451i;
-                if (h11 == hVar.f6443a && dVar2 != null) {
+                d dVar2 = hVar.f6744i;
+                if (h11 == hVar.f6736a && dVar2 != null) {
                     f p10 = p(g0Var, h12);
-                    if (dVar2.f6422c == 0 && (fVar = (f) hVar.f6445c.get(p10.f6426a)) != null) {
+                    if (dVar2.f6715c == 0 && (fVar = (f) hVar.f6738c.get(p10.f6719a)) != null) {
                         p10.a(fVar);
                     }
-                    hVar.f6445c.put(p10.f6426a, p10);
+                    hVar.f6738c.put(p10.f6719a, p10);
                     break;
                 }
                 break;
             case ChatViewRecyclerTypes.EPHEMERAL_INDICATION /* 18 */:
-                if (h11 == hVar.f6443a) {
+                if (h11 == hVar.f6736a) {
                     a l10 = l(g0Var, h12);
-                    hVar.f6446d.put(l10.f6406a, l10);
+                    hVar.f6739d.put(l10.f6699a, l10);
                     break;
-                } else if (h11 == hVar.f6444b) {
+                } else if (h11 == hVar.f6737b) {
                     a l11 = l(g0Var, h12);
-                    hVar.f6448f.put(l11.f6406a, l11);
+                    hVar.f6741f.put(l11.f6699a, l11);
                     break;
                 }
                 break;
             case ChatViewRecyclerTypes.INTERACTION_STATUS /* 19 */:
-                if (h11 == hVar.f6443a) {
+                if (h11 == hVar.f6736a) {
                     c n10 = n(g0Var);
-                    hVar.f6447e.put(n10.f6416a, n10);
+                    hVar.f6740e.put(n10.f6709a, n10);
                     break;
-                } else if (h11 == hVar.f6444b) {
+                } else if (h11 == hVar.f6737b) {
                     c n11 = n(g0Var);
-                    hVar.f6449g.put(n11.f6416a, n11);
+                    hVar.f6742g.put(n11.f6709a, n11);
                     break;
                 }
                 break;
             case 20:
-                if (h11 == hVar.f6443a) {
-                    hVar.f6450h = m(g0Var);
+                if (h11 == hVar.f6736a) {
+                    hVar.f6743h = m(g0Var);
                     break;
                 }
                 break;
@@ -1121,56 +1121,56 @@ final class b {
         Paint paint;
         g0 g0Var = new g0(bArr, i10);
         while (g0Var.b() >= 48 && g0Var.h(8) == 15) {
-            q(g0Var, this.f6404f);
+            q(g0Var, this.f6697f);
         }
-        h hVar = this.f6404f;
-        d dVar = hVar.f6451i;
+        h hVar = this.f6697f;
+        d dVar = hVar.f6744i;
         if (dVar == null) {
             return Collections.EMPTY_LIST;
         }
-        C0099b c0099b = hVar.f6450h;
+        C0099b c0099b = hVar.f6743h;
         if (c0099b == null) {
-            c0099b = this.f6402d;
+            c0099b = this.f6695d;
         }
-        Bitmap bitmap = this.f6405g;
-        if (bitmap == null || c0099b.f6410a + 1 != bitmap.getWidth() || c0099b.f6411b + 1 != this.f6405g.getHeight()) {
-            Bitmap createBitmap = Bitmap.createBitmap(c0099b.f6410a + 1, c0099b.f6411b + 1, Bitmap.Config.ARGB_8888);
-            this.f6405g = createBitmap;
-            this.f6401c.setBitmap(createBitmap);
+        Bitmap bitmap = this.f6698g;
+        if (bitmap == null || c0099b.f6703a + 1 != bitmap.getWidth() || c0099b.f6704b + 1 != this.f6698g.getHeight()) {
+            Bitmap createBitmap = Bitmap.createBitmap(c0099b.f6703a + 1, c0099b.f6704b + 1, Bitmap.Config.ARGB_8888);
+            this.f6698g = createBitmap;
+            this.f6694c.setBitmap(createBitmap);
         }
         ArrayList arrayList = new ArrayList();
-        SparseArray sparseArray2 = dVar.f6423d;
+        SparseArray sparseArray2 = dVar.f6716d;
         int i13 = 0;
         while (i13 < sparseArray2.size()) {
-            this.f6401c.save();
+            this.f6694c.save();
             e eVar = (e) sparseArray2.valueAt(i13);
-            f fVar = (f) this.f6404f.f6445c.get(sparseArray2.keyAt(i13));
-            int i14 = eVar.f6424a + c0099b.f6412c;
-            int i15 = eVar.f6425b + c0099b.f6414e;
-            this.f6401c.clipRect(i14, i15, Math.min(fVar.f6428c + i14, c0099b.f6413d), Math.min(fVar.f6429d + i15, c0099b.f6415f));
-            a aVar = (a) this.f6404f.f6446d.get(fVar.f6432g);
-            if (aVar == null && (aVar = (a) this.f6404f.f6448f.get(fVar.f6432g)) == null) {
-                aVar = this.f6403e;
+            f fVar = (f) this.f6697f.f6738c.get(sparseArray2.keyAt(i13));
+            int i14 = eVar.f6717a + c0099b.f6705c;
+            int i15 = eVar.f6718b + c0099b.f6707e;
+            this.f6694c.clipRect(i14, i15, Math.min(fVar.f6721c + i14, c0099b.f6706d), Math.min(fVar.f6722d + i15, c0099b.f6708f));
+            a aVar = (a) this.f6697f.f6739d.get(fVar.f6725g);
+            if (aVar == null && (aVar = (a) this.f6697f.f6741f.get(fVar.f6725g)) == null) {
+                aVar = this.f6696e;
             }
             a aVar2 = aVar;
-            SparseArray sparseArray3 = fVar.f6436k;
+            SparseArray sparseArray3 = fVar.f6729k;
             int i16 = 0;
             while (i16 < sparseArray3.size()) {
                 int keyAt = sparseArray3.keyAt(i16);
                 g gVar = (g) sparseArray3.valueAt(i16);
-                c cVar = (c) this.f6404f.f6447e.get(keyAt);
+                c cVar = (c) this.f6697f.f6740e.get(keyAt);
                 if (cVar == null) {
-                    cVar = (c) this.f6404f.f6449g.get(keyAt);
+                    cVar = (c) this.f6697f.f6742g.get(keyAt);
                 }
                 if (cVar != null) {
-                    if (cVar.f6417b) {
+                    if (cVar.f6710b) {
                         paint = null;
                     } else {
-                        paint = this.f6399a;
+                        paint = this.f6692a;
                     }
                     sparseArray = sparseArray2;
                     i12 = i16;
-                    k(cVar, aVar2, fVar.f6431f, gVar.f6439c + i14, gVar.f6440d + i15, paint, this.f6401c);
+                    k(cVar, aVar2, fVar.f6724f, gVar.f6732c + i14, gVar.f6733d + i15, paint, this.f6694c);
                 } else {
                     sparseArray = sparseArray2;
                     i12 = i16;
@@ -1179,21 +1179,21 @@ final class b {
                 sparseArray2 = sparseArray;
             }
             SparseArray sparseArray4 = sparseArray2;
-            if (fVar.f6427b) {
-                int i17 = fVar.f6431f;
+            if (fVar.f6720b) {
+                int i17 = fVar.f6724f;
                 if (i17 == 3) {
-                    i11 = aVar2.f6409d[fVar.f6433h];
+                    i11 = aVar2.f6702d[fVar.f6726h];
                 } else if (i17 == 2) {
-                    i11 = aVar2.f6408c[fVar.f6434i];
+                    i11 = aVar2.f6701c[fVar.f6727i];
                 } else {
-                    i11 = aVar2.f6407b[fVar.f6435j];
+                    i11 = aVar2.f6700b[fVar.f6728j];
                 }
-                this.f6400b.setColor(i11);
-                this.f6401c.drawRect(i14, i15, fVar.f6428c + i14, fVar.f6429d + i15, this.f6400b);
+                this.f6693b.setColor(i11);
+                this.f6694c.drawRect(i14, i15, fVar.f6721c + i14, fVar.f6722d + i15, this.f6693b);
             }
-            arrayList.add(new b.C0782b().f(Bitmap.createBitmap(this.f6405g, i14, i15, fVar.f6428c, fVar.f6429d)).k(i14 / c0099b.f6410a).l(0).h(i15 / c0099b.f6411b, 0).i(0).n(fVar.f6428c / c0099b.f6410a).g(fVar.f6429d / c0099b.f6411b).a());
-            this.f6401c.drawColor(0, PorterDuff.Mode.CLEAR);
-            this.f6401c.restore();
+            arrayList.add(new b.C0770b().f(Bitmap.createBitmap(this.f6698g, i14, i15, fVar.f6721c, fVar.f6722d)).k(i14 / c0099b.f6703a).l(0).h(i15 / c0099b.f6704b, 0).i(0).n(fVar.f6721c / c0099b.f6703a).g(fVar.f6722d / c0099b.f6704b).a());
+            this.f6694c.drawColor(0, PorterDuff.Mode.CLEAR);
+            this.f6694c.restore();
             i13++;
             sparseArray2 = sparseArray4;
         }
@@ -1201,6 +1201,6 @@ final class b {
     }
 
     public void r() {
-        this.f6404f.a();
+        this.f6697f.a();
     }
 }

@@ -116,7 +116,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.GuildSettingsRoleEditSections = var4;
     var2.ERROR_KEY_TO_LABEL_FUNC = var3;
     var1 = function arg0() {
-        _fun115847: for (var _fun115847_ip = 0;;) switch (_fun115847_ip) {
+        _fun115876: for (var _fun115876_ip = 0;;) switch (_fun115876_ip) {
             case 0:
                 var3 = arg0;
                 var1 = global;
@@ -126,8 +126,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.length;
                 var2 = 0;
                 if (!(var2 !== var0)) {
-                    _fun115847_ip = 132;
-                    continue _fun115847
+                    _fun115876_ip = 132;
+                    continue _fun115876
                 }
             case 32:
                 var4 = var1.Object;
@@ -140,8 +140,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var0 == var7;
                 var5 = undefined;
                 if (var6) {
-                    _fun115847_ip = 88;
-                    continue _fun115847
+                    _fun115876_ip = 88;
+                    continue _fun115876
                 }
             case 74:
                 var6 = var7.call;
@@ -149,13 +149,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var6.bind(var7)(var4);
             case 88:
                 if (!(var0 == var5)) {
-                    _fun115847_ip = 98;
-                    continue _fun115847
+                    _fun115876_ip = 98;
+                    continue _fun115876
                 }
             case 92:
                 var0 = var3[var2];
-                _fun115847_ip = 130;
-                continue _fun115847;
+                _fun115876_ip = 130;
+                continue _fun115876;
             case 98:
                 var4 = var3[var2];
                 var1 = var1.HermesInternal;

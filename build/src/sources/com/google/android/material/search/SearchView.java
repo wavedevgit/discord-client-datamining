@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.FrameLayout;
 import androidx.annotation.NonNull;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
-import kh.b;
+import lh.b;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class SearchView extends FrameLayout implements CoordinatorLayout.b, b {
 

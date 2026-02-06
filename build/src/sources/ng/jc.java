@@ -1,29 +1,30 @@
 package ng;
+
+import yi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class jc {
+final class jc implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private static jc f40731a;
+    static final jc f39905a = new jc();
+
+    static {
+        c.b a10 = yi.c.a("language");
+        l2 l2Var = new l2();
+        l2Var.a(1);
+        a10.b(l2Var.b()).a();
+        c.b a11 = yi.c.a("errorCode");
+        l2 l2Var2 = new l2();
+        l2Var2.a(2);
+        a11.b(l2Var2.b()).a();
+    }
 
     private jc() {
     }
 
-    public static synchronized jc a() {
-        jc jcVar;
-        synchronized (jc.class) {
-            try {
-                if (f40731a == null) {
-                    f40731a = new jc();
-                }
-                jcVar = f40731a;
-            } catch (Throwable th2) {
-                throw th2;
-            }
-        }
-        return jcVar;
-    }
-
-    public static final boolean b() {
-        return ic.a("mlkit-dev-profiling");
+    @Override // yi.d
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        android.support.v4.media.session.b.a(obj);
+        yi.e eVar = (yi.e) obj2;
+        throw null;
     }
 }

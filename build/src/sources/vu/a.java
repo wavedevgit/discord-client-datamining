@@ -1,53 +1,63 @@
 package vu;
 
 import java.util.List;
-import kotlin.collections.CollectionsKt;
-import kotlin.text.StringsKt;
+import java.util.Map;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.Intrinsics;
+import vu.d;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface a {
+public final class a implements su.a, d {
 
-    /* renamed from: vu.a$a  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class C0688a {
-        private static boolean a(a aVar, Object obj) {
-            return CollectionsKt.o(null, "", CollectionsKt.l()).contains(obj);
-        }
+    /* renamed from: a  reason: collision with root package name */
+    public static final a f52990a = new a();
 
-        public static List b(a aVar, Object obj) {
-            String obj2;
-            if (obj instanceof List) {
-                obj = d(aVar, (List) obj);
-            }
-            List list = null;
-            if (obj instanceof List) {
-                return null;
-            }
-            if (obj != null && (obj2 = obj.toString()) != null) {
-                list = StringsKt.split$default(obj2, new String[]{"."}, false, 0, 6, null);
-            }
-            if (list == null) {
-                return CollectionsKt.l();
-            }
-            return list;
-        }
+    private a() {
+    }
 
-        private static Object c(a aVar, List list) {
-            Object d10;
-            if (list.size() > 1 || (d10 = d(aVar, list)) == null) {
-                return list;
-            }
-            return d10;
-        }
+    @Override // uu.f
+    public Object b(Object obj, Object obj2, h hVar, Function2 function2) {
+        return d.a.f(this, obj, obj2, hVar, function2);
+    }
 
-        private static Object d(a aVar, List list) {
-            Object firstOrNull = CollectionsKt.firstOrNull(list);
-            if (firstOrNull instanceof List) {
-                return c(aVar, (List) firstOrNull);
+    @Override // uu.a
+    public uu.b c(List list, Object obj, h hVar) {
+        return d.a.c(this, list, obj, hVar);
+    }
+
+    @Override // vu.d
+    public Object d(c data, h evaluator) {
+        Intrinsics.checkNotNullParameter(data, "data");
+        Intrinsics.checkNotNullParameter(evaluator, "evaluator");
+        for (Object obj : data.b()) {
+            if (!f52990a.i(evaluator.a(data.a(), obj))) {
+                return data.c();
             }
-            if (a(aVar, firstOrNull)) {
-                return null;
-            }
-            return firstOrNull;
         }
+        return Boolean.TRUE;
+    }
+
+    @Override // su.a
+    public Object e(Object obj, Object obj2, h evaluator) {
+        Intrinsics.checkNotNullParameter(evaluator, "evaluator");
+        return g(obj, obj2, evaluator);
+    }
+
+    @Override // bw.a
+    public List f(List list, Object obj, h hVar) {
+        return d.a.h(this, list, obj, hVar);
+    }
+
+    public Object g(Object obj, Object obj2, h hVar) {
+        return d.a.b(this, obj, obj2, hVar);
+    }
+
+    @Override // uu.a
+    /* renamed from: h */
+    public Boolean a(Map map, List list) {
+        return d.a.e(this, map, list);
+    }
+
+    public boolean i(Object obj) {
+        return d.a.i(this, obj);
     }
 }

@@ -14,8 +14,8 @@ import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlinx.coroutines.CoroutineScope;
-import ms.c1;
-import ms.m0;
+import os.c1;
+import os.m0;
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {2, 1, 0}, xi = 48)
 @kotlin.coroutines.jvm.internal.e(c = "com.discord.chat.presentation.list.ChatListViewFactoryKt$fillChatList$1", f = "ChatListViewFactory.kt", l = {58}, m = "invokeSuspend")
@@ -56,7 +56,7 @@ public final class ChatListViewFactoryKt$fillChatList$1 extends kotlin.coroutine
         RecyclerView.RecycledViewPool recycledViewPool;
         Map<Class<? extends BaseChatListItemDelegate<? extends ChatListItem, ? extends View>>, Integer> map2;
         Iterator it;
-        Object f10 = ur.b.f();
+        Object f10 = wr.b.f();
         int i10 = this.label;
         if (i10 != 0) {
             if (i10 == 1) {
@@ -104,15 +104,15 @@ public final class ChatListViewFactoryKt$fillChatList$1 extends kotlin.coroutine
             this.L$3 = recycledViewPool;
             this.L$4 = it;
             this.label = 1;
-            if (ms.g.g(c10, chatListViewFactoryKt$fillChatList$1$1$1, this) == f10) {
+            if (os.g.g(c10, chatListViewFactoryKt$fillChatList$1$1$1, this) == f10) {
                 return f10;
             }
         }
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((ChatListViewFactoryKt$fillChatList$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+        return ((ChatListViewFactoryKt$fillChatList$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
     }
 }

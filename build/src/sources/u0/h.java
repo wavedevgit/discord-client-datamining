@@ -6,16 +6,16 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class h {
 
     /* renamed from: a  reason: collision with root package name */
-    public long[] f51129a;
+    public long[] f51170a;
 
     /* renamed from: b  reason: collision with root package name */
-    public long[] f51130b;
+    public long[] f51171b;
 
     /* renamed from: c  reason: collision with root package name */
-    public int f51131c;
+    public int f51172c;
 
     /* renamed from: d  reason: collision with root package name */
-    public int f51132d;
+    public int f51173d;
 
     public /* synthetic */ h(DefaultConstructorMarker defaultConstructorMarker) {
         this();
@@ -65,13 +65,13 @@ public abstract class h {
             int r2 = r1 << 16
             r1 = r1 ^ r2
             r2 = r1 & 127(0x7f, float:1.78E-43)
-            int r3 = r0.f51131c
+            int r3 = r0.f51172c
             int r1 = r1 >>> 7
             r1 = r1 & r3
             r4 = 0
             r5 = r4
         L16:
-            long[] r6 = r0.f51129a
+            long[] r6 = r0.f51170a
             int r7 = r1 >> 3
             r8 = r1 & 7
             int r8 = r8 << 3
@@ -105,7 +105,7 @@ public abstract class h {
             int r10 = r10 >> 3
             int r10 = r10 + r1
             r10 = r10 & r3
-            long[] r14 = r0.f51130b
+            long[] r14 = r0.f51171b
             r15 = r14[r10]
             int r14 = (r15 > r18 ? 1 : (r15 == r18 ? 0 : -1))
             if (r14 != 0) goto L59
@@ -139,7 +139,7 @@ public abstract class h {
     }
 
     public final int b() {
-        return this.f51131c;
+        return this.f51172c;
     }
 
     public final String c(CharSequence separator, CharSequence prefix, CharSequence postfix, int i10, CharSequence truncated) {
@@ -152,8 +152,8 @@ public abstract class h {
         Intrinsics.checkNotNullParameter(truncated, "truncated");
         StringBuilder sb2 = new StringBuilder();
         sb2.append(prefix);
-        long[] jArr = this.f51130b;
-        long[] jArr2 = this.f51129a;
+        long[] jArr = this.f51171b;
+        long[] jArr2 = this.f51170a;
         int length = jArr2.length - 2;
         if (length >= 0) {
             int i14 = 0;
@@ -215,11 +215,11 @@ public abstract class h {
             return false;
         }
         h hVar = (h) obj;
-        if (hVar.f51132d != this.f51132d) {
+        if (hVar.f51173d != this.f51173d) {
             return false;
         }
-        long[] jArr = this.f51130b;
-        long[] jArr2 = this.f51129a;
+        long[] jArr = this.f51171b;
+        long[] jArr2 = this.f51170a;
         int length = jArr2.length - 2;
         if (length >= 0) {
             int i10 = 0;
@@ -247,8 +247,8 @@ public abstract class h {
     }
 
     public int hashCode() {
-        long[] jArr = this.f51130b;
-        long[] jArr2 = this.f51129a;
+        long[] jArr = this.f51171b;
+        long[] jArr2 = this.f51170a;
         int length = jArr2.length - 2;
         if (length < 0) {
             return 0;
@@ -282,7 +282,7 @@ public abstract class h {
     }
 
     private h() {
-        this.f51129a = r.f51148a;
-        this.f51130b = i.a();
+        this.f51170a = r.f51189a;
+        this.f51171b = i.a();
     }
 }

@@ -1,65 +1,34 @@
 package tm;
 
+import android.animation.ArgbEvaluator;
+import android.animation.ValueAnimator;
 import android.app.Activity;
-import android.graphics.Rect;
-import android.os.Build;
-import android.view.MotionEvent;
-import android.view.VelocityTracker;
-import android.view.ViewConfiguration;
-import android.view.WindowManager;
-import android.view.WindowMetrics;
+import android.view.Window;
 import androidx.core.view.WindowInsetsCompat;
-import androidx.core.view.h0;
-import com.facebook.react.uimanager.ThemedReactContext;
-import com.facebook.react.views.view.ReactViewGroup;
-import jm.i;
+import androidx.core.view.WindowInsetsControllerCompat;
+import com.facebook.react.bridge.ReactApplicationContext;
+import com.facebook.react.bridge.UiThreadUtil;
+import java.lang.ref.WeakReference;
+import java.util.Map;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class f extends ReactViewGroup {
-
-    /* renamed from: y  reason: collision with root package name */
-    public static final a f50826y = new a(null);
-
-    /* renamed from: d  reason: collision with root package name */
-    private final ThemedReactContext f50827d;
+public final class f {
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f50828e;
+    public static final a f50759e = new a(null);
 
-    /* renamed from: i  reason: collision with root package name */
-    private float f50829i;
+    /* renamed from: a  reason: collision with root package name */
+    private final ReactApplicationContext f50760a;
 
-    /* renamed from: o  reason: collision with root package name */
-    private float f50830o;
+    /* renamed from: b  reason: collision with root package name */
+    private h f50761b;
 
-    /* renamed from: p  reason: collision with root package name */
-    private int f50831p;
+    /* renamed from: c  reason: collision with root package name */
+    private WindowInsetsControllerCompat f50762c;
 
-    /* renamed from: q  reason: collision with root package name */
-    private int f50832q;
-
-    /* renamed from: r  reason: collision with root package name */
-    private int f50833r;
-
-    /* renamed from: s  reason: collision with root package name */
-    private lm.a f50834s;
-
-    /* renamed from: t  reason: collision with root package name */
-    private boolean f50835t;
-
-    /* renamed from: u  reason: collision with root package name */
-    private boolean f50836u;
-
-    /* renamed from: v  reason: collision with root package name */
-    private final Rect f50837v;
-
-    /* renamed from: w  reason: collision with root package name */
-    private final km.f f50838w;
-
-    /* renamed from: x  reason: collision with root package name */
-    private VelocityTracker f50839x;
+    /* renamed from: d  reason: collision with root package name */
+    private WeakReference f50763d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -71,188 +40,158 @@ public final class f extends ReactViewGroup {
         }
     }
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public f(ThemedReactContext reactContext) {
-        super(reactContext);
-        Intrinsics.checkNotNullParameter(reactContext, "reactContext");
-        this.f50827d = reactContext;
-        this.f50834s = new lm.c();
-        this.f50836u = true;
-        this.f50837v = new Rect();
-        this.f50838w = new km.f();
+    public f(ReactApplicationContext mReactContext) {
+        Intrinsics.checkNotNullParameter(mReactContext, "mReactContext");
+        this.f50760a = mReactContext;
+        this.f50761b = new h(mReactContext);
+        this.f50763d = new WeakReference(null);
     }
 
-    private final void c() {
-        this.f50838w.n();
-        g();
-    }
-
-    private final void d(MotionEvent motionEvent) {
-        VelocityTracker velocityTracker = this.f50839x;
-        if (velocityTracker != null) {
-            velocityTracker.addMovement(motionEvent);
-        }
-        this.f50829i = motionEvent.getX();
-        this.f50830o = motionEvent.getY();
-        i.a(this, this.f50837v);
-        this.f50831p = this.f50837v.top;
-    }
-
-    private final void e(MotionEvent motionEvent) {
-        boolean z10;
-        i.a(this, this.f50837v);
-        int i10 = this.f50837v.top - this.f50831p;
-        MotionEvent obtain = MotionEvent.obtain(motionEvent);
-        obtain.offsetLocation(0.0f, i10);
-        VelocityTracker velocityTracker = this.f50839x;
-        if (velocityTracker != null) {
-            velocityTracker.addMovement(obtain);
-        }
-        float x10 = obtain.getX() - this.f50829i;
-        float y10 = obtain.getY() - this.f50830o;
-        boolean z11 = false;
-        if (!this.f50828e) {
-            if (Math.abs(y10) > Math.abs(x10) && Math.abs(y10) >= ViewConfiguration.get(getContext()).getScaledTouchSlop()) {
-                z10 = true;
-            } else {
-                z10 = false;
+    private final WindowInsetsControllerCompat g() {
+        String str;
+        Activity currentActivity = this.f50760a.getCurrentActivity();
+        if (this.f50762c == null || !Intrinsics.areEqual(currentActivity, this.f50763d.get())) {
+            if (currentActivity == null) {
+                pm.a aVar = pm.a.f45061a;
+                str = g.f50764a;
+                pm.a.f(aVar, str, "StatusBarManagerCompatModule: can not get `WindowInsetsControllerCompat` because current activity is null.", null, 4, null);
+                return this.f50762c;
             }
-            this.f50828e = z10;
+            Window window = currentActivity.getWindow();
+            this.f50763d = new WeakReference(currentActivity);
+            this.f50762c = new WindowInsetsControllerCompat(window, window.getDecorView());
         }
-        if (this.f50828e) {
-            if (this.f50838w.t()) {
-                if (this.f50832q == 0) {
-                    this.f50832q = this.f50838w.q();
+        return this.f50762c;
+    }
+
+    private final boolean h() {
+        vm.c r10 = r();
+        if (r10 != null) {
+            return r10.getActive();
+        }
+        return false;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final void j(Activity activity, boolean z10, int i10) {
+        final Window window = activity.getWindow();
+        if (z10) {
+            ValueAnimator ofObject = ValueAnimator.ofObject(new ArgbEvaluator(), Integer.valueOf(window.getStatusBarColor()), Integer.valueOf(i10));
+            ofObject.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: tm.e
+                @Override // android.animation.ValueAnimator.AnimatorUpdateListener
+                public final void onAnimationUpdate(ValueAnimator valueAnimator) {
+                    f.k(window, valueAnimator);
                 }
-                int a10 = this.f50834s.a(ds.a.c(y10), getWindowHeight() - ((int) motionEvent.getRawY()), this.f50838w.q(), this.f50833r);
-                if (a10 != 0) {
-                    this.f50838w.r(a10);
-                }
-            } else if (!this.f50838w.u()) {
-                WindowInsetsCompat G = h0.G(this);
-                if (G != null && G.u(WindowInsetsCompat.p.c())) {
-                    z11 = true;
-                }
-                if (h(y10, z11)) {
-                    km.f.y(this.f50838w, this, null, 2, null);
-                }
+            });
+            ofObject.setDuration(300L).setStartDelay(0L);
+            ofObject.start();
+            return;
+        }
+        window.setStatusBarColor(i10);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final void k(Window window, ValueAnimator animator) {
+        Intrinsics.checkNotNullParameter(animator, "animator");
+        Object animatedValue = animator.getAnimatedValue();
+        Intrinsics.checkNotNull(animatedValue, "null cannot be cast to non-null type kotlin.Int");
+        window.setStatusBarColor(((Integer) animatedValue).intValue());
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final void m(boolean z10, f fVar) {
+        if (z10) {
+            WindowInsetsControllerCompat g10 = fVar.g();
+            if (g10 != null) {
+                g10.b(WindowInsetsCompat.p.g());
+                return;
             }
-            this.f50830o = motionEvent.getY();
-            this.f50829i = motionEvent.getX();
-            this.f50831p = this.f50837v.top;
+            return;
+        }
+        WindowInsetsControllerCompat g11 = fVar.g();
+        if (g11 != null) {
+            g11.g(WindowInsetsCompat.p.g());
         }
     }
 
-    private final void f(MotionEvent motionEvent) {
-        Float f10;
-        VelocityTracker velocityTracker = this.f50839x;
-        if (velocityTracker != null) {
-            velocityTracker.addMovement(motionEvent);
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final void o(f fVar, String str) {
+        WindowInsetsControllerCompat g10 = fVar.g();
+        if (g10 != null) {
+            g10.e(Intrinsics.areEqual(str, "dark-content"));
         }
-        VelocityTracker velocityTracker2 = this.f50839x;
-        if (velocityTracker2 != null) {
-            velocityTracker2.computeCurrentVelocity(500);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final void q(f fVar, boolean z10) {
+        vm.c r10 = fVar.r();
+        if (r10 != null) {
+            r10.k(z10);
         }
-        VelocityTracker velocityTracker3 = this.f50839x;
-        Float f11 = null;
-        if (velocityTracker3 != null) {
-            f10 = Float.valueOf(velocityTracker3.getYVelocity());
+    }
+
+    private final vm.c r() {
+        return vm.e.f52752a.a();
+    }
+
+    public final Map f() {
+        return this.f50761b.a();
+    }
+
+    public final void i(final int i10, final boolean z10) {
+        String str;
+        if (!h()) {
+            this.f50761b.b(i10, z10);
+            return;
+        }
+        final Activity currentActivity = this.f50760a.getCurrentActivity();
+        if (currentActivity == null) {
+            pm.a aVar = pm.a.f45061a;
+            str = g.f50764a;
+            pm.a.f(aVar, str, "StatusBarManagerCompatModule: Ignored status bar change, current activity is null.", null, 4, null);
+            return;
+        }
+        UiThreadUtil.runOnUiThread(new Runnable() { // from class: tm.d
+            @Override // java.lang.Runnable
+            public final void run() {
+                f.j(currentActivity, z10, i10);
+            }
+        });
+    }
+
+    public final void l(final boolean z10) {
+        UiThreadUtil.runOnUiThread(new Runnable() { // from class: tm.a
+            @Override // java.lang.Runnable
+            public final void run() {
+                f.m(z10, this);
+            }
+        });
+    }
+
+    public final void n(final String style) {
+        Intrinsics.checkNotNullParameter(style, "style");
+        if (!h()) {
+            this.f50761b.c(style);
         } else {
-            f10 = null;
+            UiThreadUtil.runOnUiThread(new Runnable() { // from class: tm.b
+                @Override // java.lang.Runnable
+                public final void run() {
+                    f.o(f.this, style);
+                }
+            });
         }
-        if (!this.f50838w.t() || this.f50832q != this.f50838w.q()) {
-            f11 = f10;
-        }
-        this.f50838w.l(f11);
-        g();
     }
 
-    private final void g() {
-        this.f50828e = false;
-        this.f50829i = 0.0f;
-        this.f50830o = 0.0f;
-        this.f50831p = 0;
-        this.f50832q = 0;
-        this.f50837v.setEmpty();
-        VelocityTracker velocityTracker = this.f50839x;
-        if (velocityTracker != null) {
-            velocityTracker.recycle();
-        }
-        this.f50839x = null;
-    }
-
-    private final int getWindowHeight() {
-        WindowMetrics windowMetrics;
-        Rect bounds;
-        WindowManager windowManager;
-        if (Build.VERSION.SDK_INT >= 30) {
-            Activity currentActivity = this.f50827d.getCurrentActivity();
-            if (currentActivity != null && (windowManager = currentActivity.getWindowManager()) != null) {
-                windowMetrics = windowManager.getCurrentWindowMetrics();
-            } else {
-                windowMetrics = null;
-            }
-            if (windowMetrics != null && (bounds = windowMetrics.getBounds()) != null) {
-                return bounds.height();
-            }
-        }
-        return 0;
-    }
-
-    private final boolean h(float f10, boolean z10) {
-        if (f10 < 0.0f) {
-            if (!z10 && this.f50835t) {
-                return true;
-            }
-            return false;
-        } else if (f10 > 0.0f && z10 && this.f50836u) {
-            return true;
+    public final void p(final boolean z10) {
+        if (!h()) {
+            this.f50761b.d(z10);
         } else {
-            return false;
+            UiThreadUtil.runOnUiThread(new Runnable() { // from class: tm.c
+                @Override // java.lang.Runnable
+                public final void run() {
+                    f.q(f.this, z10);
+                }
+            });
         }
-    }
-
-    @Override // android.view.ViewGroup, android.view.View
-    public boolean dispatchTouchEvent(MotionEvent motionEvent) {
-        Integer num;
-        if (this.f50839x == null) {
-            this.f50839x = VelocityTracker.obtain();
-        }
-        if (motionEvent != null) {
-            num = Integer.valueOf(motionEvent.getAction());
-        } else {
-            num = null;
-        }
-        if (num != null && num.intValue() == 0) {
-            d(motionEvent);
-        } else if (num != null && num.intValue() == 2) {
-            e(motionEvent);
-        } else if (num != null && num.intValue() == 1) {
-            f(motionEvent);
-        } else if (num != null && num.intValue() == 3) {
-            c();
-        }
-        return super.dispatchTouchEvent(motionEvent);
-    }
-
-    public final void setInterpolator(@NotNull String interpolator) {
-        Intrinsics.checkNotNullParameter(interpolator, "interpolator");
-        lm.a aVar = (lm.a) g.a().get(interpolator);
-        if (aVar == null) {
-            aVar = new lm.c();
-        }
-        this.f50834s = aVar;
-    }
-
-    public final void setOffset(double d10) {
-        this.f50833r = (int) jm.d.b((float) d10);
-    }
-
-    public final void setScrollKeyboardOffScreenWhenVisible(boolean z10) {
-        this.f50836u = z10;
-    }
-
-    public final void setScrollKeyboardOnScreenWhenNotVisible(boolean z10) {
-        this.f50835t = z10;
     }
 }

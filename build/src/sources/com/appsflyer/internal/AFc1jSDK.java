@@ -12,7 +12,7 @@ import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class AFc1jSDK {
     @NotNull
-    private static final Lazy getMonetizationNetwork = or.l.a(new Function0<ExecutorService>() { // from class: com.appsflyer.internal.AFc1jSDK.4
+    private static final Lazy getMonetizationNetwork = qr.l.a(new Function0<ExecutorService>() { // from class: com.appsflyer.internal.AFc1jSDK.4
         @Override // kotlin.jvm.functions.Function0
         /* renamed from: getMonetizationNetwork */
         public final ExecutorService invoke() {

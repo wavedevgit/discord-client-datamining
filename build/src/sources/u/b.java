@@ -7,24 +7,24 @@ import androidx.camera.camera2.internal.compat.quirk.ImageCaptureFailWithAutoFla
 public class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f51072a;
+    private final boolean f51113a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f51073b;
+    private final boolean f51114b;
 
     public b(d2 d2Var) {
         boolean z10;
-        this.f51072a = d2Var.a(ImageCaptureFailWithAutoFlashQuirk.class);
+        this.f51113a = d2Var.a(ImageCaptureFailWithAutoFlashQuirk.class);
         if (androidx.camera.camera2.internal.compat.quirk.b.b(CrashWhenTakingPhotoWithAutoFlashAEModeQuirk.class) != null) {
             z10 = true;
         } else {
             z10 = false;
         }
-        this.f51073b = z10;
+        this.f51114b = z10;
     }
 
     public int a(int i10) {
-        if ((this.f51072a || this.f51073b) && i10 == 2) {
+        if ((this.f51113a || this.f51114b) && i10 == 2) {
             return 1;
         }
         return i10;

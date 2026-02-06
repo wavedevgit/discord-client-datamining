@@ -3,26 +3,26 @@ package ze;
 public class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private int f55508a = 1;
+    private int f56239a = 1;
 
     public b a(Object obj) {
         int hashCode;
-        int i10 = this.f55508a * 31;
+        int i10 = this.f56239a * 31;
         if (obj == null) {
             hashCode = 0;
         } else {
             hashCode = obj.hashCode();
         }
-        this.f55508a = i10 + hashCode;
+        this.f56239a = i10 + hashCode;
         return this;
     }
 
     public int b() {
-        return this.f55508a;
+        return this.f56239a;
     }
 
     public final b c(boolean z10) {
-        this.f55508a = (this.f55508a * 31) + (z10 ? 1 : 0);
+        this.f56239a = (this.f56239a * 31) + (z10 ? 1 : 0);
         return this;
     }
 }

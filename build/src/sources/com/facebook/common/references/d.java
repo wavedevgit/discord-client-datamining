@@ -11,8 +11,8 @@ public class d extends CloseableReference {
     @Override // com.facebook.common.references.CloseableReference
     /* renamed from: k */
     public CloseableReference clone() {
-        j.i(I0());
-        return new d(this.f9943e, this.f9944i, this.f9945o);
+        j.i(F0());
+        return new d(this.f9842e, this.f9843i, this.f9844o);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */

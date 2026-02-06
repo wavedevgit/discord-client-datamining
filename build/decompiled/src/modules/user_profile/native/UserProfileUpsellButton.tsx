@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_profile/native/UserProfileUpsellButton.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun80306: for (var _fun80306_ip = 0;;) switch (_fun80306_ip) {
+        _fun80328: for (var _fun80328_ip = 0;;) switch (_fun80328_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.analyticsObject;
@@ -160,8 +160,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.variant = var6;
                 var6 = null;
                 if (!(var6 == var5)) {
-                    _fun80306_ip = 209;
-                    continue _fun80306
+                    _fun80328_ip = 209;
+                    continue _fun80328
                 }
             case 154:
                 var10 = _closure1_slot0;
@@ -199,4 +199,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 1623, 33, 1297, 5730, 795, 4084, 7632, 1234, 5753, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 1623, 33, 1297, 5734, 795, 4085, 7637, 1234, 5757, 2]);

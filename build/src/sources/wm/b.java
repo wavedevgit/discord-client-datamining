@@ -1,22 +1,45 @@
 package wm;
 
-import com.facebook.react.ReactPackage;
-import com.facebook.react.bridge.ReactApplicationContext;
-import com.releaseprofiler.ReleaseProfilerModule;
-import java.util.List;
-import kotlin.collections.CollectionsKt;
+import android.content.res.Configuration;
+import android.view.WindowInsets;
+import com.facebook.react.uimanager.ThemedReactContext;
+import com.facebook.react.views.view.ReactViewGroup;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b implements ReactPackage {
-    @Override // com.facebook.react.ReactPackage
-    public List createNativeModules(ReactApplicationContext reactContext) {
+public final class b extends ReactViewGroup {
+
+    /* renamed from: d  reason: collision with root package name */
+    private final ThemedReactContext f53872d;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public b(ThemedReactContext reactContext) {
+        super(reactContext);
         Intrinsics.checkNotNullParameter(reactContext, "reactContext");
-        return CollectionsKt.e(new ReleaseProfilerModule(reactContext));
+        this.f53872d = reactContext;
     }
 
-    @Override // com.facebook.react.ReactPackage
-    public List createViewManagers(ReactApplicationContext reactContext) {
-        Intrinsics.checkNotNullParameter(reactContext, "reactContext");
-        return CollectionsKt.l();
+    @Override // android.view.View
+    public WindowInsets onApplyWindowInsets(WindowInsets windowInsets) {
+        super.setBackgroundColor(c.b(this.f53872d));
+        WindowInsets onApplyWindowInsets = super.onApplyWindowInsets(windowInsets);
+        Intrinsics.checkNotNullExpressionValue(onApplyWindowInsets, "onApplyWindowInsets(...)");
+        return onApplyWindowInsets;
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // com.facebook.react.views.view.ReactViewGroup, android.view.ViewGroup, android.view.View
+    public void onAttachedToWindow() {
+        super.onAttachedToWindow();
+        super.setBackgroundColor(c.b(this.f53872d));
+    }
+
+    @Override // android.view.View
+    protected void onConfigurationChanged(Configuration configuration) {
+        super.onConfigurationChanged(configuration);
+        super.setBackgroundColor(c.b(this.f53872d));
+    }
+
+    @Override // com.facebook.react.views.view.ReactViewGroup, android.view.View
+    public void setBackgroundColor(int i10) {
     }
 }

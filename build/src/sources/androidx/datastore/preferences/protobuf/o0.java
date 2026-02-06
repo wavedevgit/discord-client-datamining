@@ -4,9 +4,9 @@ public interface o0 extends p0 {
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public interface a extends p0, Cloneable {
-        o0 D0();
+        a P(o0 o0Var);
 
-        a L(o0 o0Var);
+        o0 s();
     }
 
     void a(j jVar);

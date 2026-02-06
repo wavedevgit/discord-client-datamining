@@ -6,16 +6,16 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class c {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f20192d = new a(null);
+    public static final a f20147d = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f20193a;
+    private final String f20148a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final long f20194b;
+    private final long f20149b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f20195c;
+    private final int f20150c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -32,11 +32,11 @@ public abstract class c {
     }
 
     public final int a() {
-        return b.f(this.f20194b);
+        return b.f(this.f20149b);
     }
 
     public final int b() {
-        return this.f20195c;
+        return this.f20150c;
     }
 
     public abstract float c(int i10);
@@ -44,7 +44,7 @@ public abstract class c {
     public abstract float d(int i10);
 
     public final long e() {
-        return this.f20194b;
+        return this.f20149b;
     }
 
     public boolean equals(Object obj) {
@@ -55,14 +55,14 @@ public abstract class c {
             return false;
         }
         c cVar = (c) obj;
-        if (this.f20195c != cVar.f20195c || !Intrinsics.areEqual(this.f20193a, cVar.f20193a)) {
+        if (this.f20150c != cVar.f20150c || !Intrinsics.areEqual(this.f20148a, cVar.f20148a)) {
             return false;
         }
-        return b.e(this.f20194b, cVar.f20194b);
+        return b.e(this.f20149b, cVar.f20149b);
     }
 
     public final String f() {
-        return this.f20193a;
+        return this.f20148a;
     }
 
     public boolean g() {
@@ -72,7 +72,7 @@ public abstract class c {
     public abstract long h(float f10, float f11, float f12);
 
     public int hashCode() {
-        return (((this.f20193a.hashCode() * 31) + b.g(this.f20194b)) * 31) + this.f20195c;
+        return (((this.f20148a.hashCode() * 31) + b.g(this.f20149b)) * 31) + this.f20150c;
     }
 
     public abstract float i(float f10, float f11, float f12);
@@ -80,14 +80,14 @@ public abstract class c {
     public abstract long j(float f10, float f11, float f12, float f13, c cVar);
 
     public String toString() {
-        return this.f20193a + " (id=" + this.f20195c + ", model=" + ((Object) b.h(this.f20194b)) + ')';
+        return this.f20148a + " (id=" + this.f20150c + ", model=" + ((Object) b.h(this.f20149b)) + ')';
     }
 
     private c(String name, long j10, int i10) {
         Intrinsics.checkNotNullParameter(name, "name");
-        this.f20193a = name;
-        this.f20194b = j10;
-        this.f20195c = i10;
+        this.f20148a = name;
+        this.f20149b = j10;
+        this.f20150c = i10;
         if (name.length() == 0) {
             throw new IllegalArgumentException("The name of a color space cannot be null and must contain at least 1 character");
         }

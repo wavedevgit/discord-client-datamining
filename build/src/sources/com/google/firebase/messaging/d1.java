@@ -10,29 +10,29 @@ import java.util.concurrent.TimeUnit;
 abstract class d1 {
 
     /* renamed from: a  reason: collision with root package name */
-    static final long f16464a = TimeUnit.MINUTES.toMillis(1);
+    static final long f16444a = TimeUnit.MINUTES.toMillis(1);
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Object f16465b = new Object();
+    private static final Object f16445b = new Object();
 
     /* renamed from: c  reason: collision with root package name */
-    private static wg.a f16466c;
+    private static xg.a f16446c;
 
     private static void b(Context context) {
-        if (f16466c == null) {
-            wg.a aVar = new wg.a(context, 1, "wake:com.google.firebase.iid.WakeLockHolder");
-            f16466c = aVar;
+        if (f16446c == null) {
+            xg.a aVar = new xg.a(context, 1, "wake:com.google.firebase.iid.WakeLockHolder");
+            f16446c = aVar;
             aVar.d(true);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void c(Intent intent) {
-        synchronized (f16465b) {
+        synchronized (f16445b) {
             try {
-                if (f16466c != null && d(intent)) {
+                if (f16446c != null && d(intent)) {
                     f(intent, false);
-                    f16466c.c();
+                    f16446c.c();
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -46,13 +46,13 @@ abstract class d1 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void e(Context context, i1 i1Var, final Intent intent) {
-        synchronized (f16465b) {
+        synchronized (f16445b) {
             try {
                 b(context);
                 boolean d10 = d(intent);
                 f(intent, true);
                 if (!d10) {
-                    f16466c.a(f16464a);
+                    f16446c.a(f16444a);
                 }
                 i1Var.c(intent).addOnCompleteListener(new OnCompleteListener() { // from class: com.google.firebase.messaging.c1
                     @Override // com.google.android.gms.tasks.OnCompleteListener
@@ -72,7 +72,7 @@ abstract class d1 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static ComponentName g(Context context, Intent intent) {
-        synchronized (f16465b) {
+        synchronized (f16445b) {
             try {
                 b(context);
                 boolean d10 = d(intent);
@@ -82,7 +82,7 @@ abstract class d1 {
                     return null;
                 }
                 if (!d10) {
-                    f16466c.a(f16464a);
+                    f16446c.a(f16444a);
                 }
                 return startService;
             } catch (Throwable th2) {

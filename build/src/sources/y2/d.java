@@ -26,7 +26,7 @@ public final class d extends w implements p0 {
             str.getClass();
             fVar.getClass();
             k();
-            ((d) this.f3956e).D().put(str, fVar);
+            ((d) this.f4285e).E().put(str, fVar);
             return this;
         }
 
@@ -39,56 +39,56 @@ public final class d extends w implements p0 {
     private static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        static final h0 f54335a = h0.d(q1.b.f3859v, "", q1.b.f3861x, f.K());
+        static final h0 f54879a = h0.d(q1.b.f4188v, "", q1.b.f4190x, f.L());
     }
 
     static {
         d dVar = new d();
         DEFAULT_INSTANCE = dVar;
-        w.z(d.class, dVar);
+        w.A(d.class, dVar);
     }
 
     private d() {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public Map D() {
-        return F();
+    public Map E() {
+        return G();
     }
 
-    private i0 F() {
+    private i0 G() {
         if (!this.preferences_.i()) {
             this.preferences_ = this.preferences_.l();
         }
         return this.preferences_;
     }
 
-    private i0 G() {
+    private i0 H() {
         return this.preferences_;
     }
 
-    public static a H() {
+    public static a I() {
         return (a) DEFAULT_INSTANCE.j();
     }
 
-    public static d I(InputStream inputStream) {
-        return (d) w.x(DEFAULT_INSTANCE, inputStream);
+    public static d J(InputStream inputStream) {
+        return (d) w.y(DEFAULT_INSTANCE, inputStream);
     }
 
-    public Map E() {
-        return Collections.unmodifiableMap(G());
+    public Map F() {
+        return Collections.unmodifiableMap(H());
     }
 
     @Override // androidx.datastore.preferences.protobuf.w
     protected final Object m(w.d dVar, Object obj, Object obj2) {
         w0 w0Var;
-        switch (c.f54334a[dVar.ordinal()]) {
+        switch (c.f54878a[dVar.ordinal()]) {
             case 1:
                 return new d();
             case 2:
                 return new a(null);
             case 3:
-                return w.w(DEFAULT_INSTANCE, "\u0001\u0001\u0000\u0000\u0001\u0001\u0001\u0001\u0000\u0000\u00012", new Object[]{"preferences_", b.f54335a});
+                return w.x(DEFAULT_INSTANCE, "\u0001\u0001\u0000\u0000\u0001\u0001\u0001\u0001\u0000\u0000\u00012", new Object[]{"preferences_", b.f54879a});
             case 4:
                 return DEFAULT_INSTANCE;
             case 5:

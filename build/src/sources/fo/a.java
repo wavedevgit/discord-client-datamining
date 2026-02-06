@@ -1,150 +1,89 @@
 package fo;
 
-import android.content.Context;
-import com.withpersona.sdk2.inquiry.BuildConfig;
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.OutputStreamWriter;
-import java.nio.charset.Charset;
-import kotlin.Unit;
-import kotlin.collections.i;
-import kotlin.jvm.internal.DefaultConstructorMarker;
-import kotlin.jvm.internal.Intrinsics;
-import kotlin.text.StringsKt;
-import zr.c;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.viewbinding.ViewBinding;
+import com.withpersona.sdk2.inquiry.shared.ui.Pi2NavigationBar;
+import com.withpersona.sdk2.inquiry.shared.ui.ThemeableLottieAnimationView;
+import eo.y2;
+import eo.z2;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a {
-
-    /* renamed from: b  reason: collision with root package name */
-    public static final C0318a f23197b = new C0318a(null);
-
-    /* renamed from: c  reason: collision with root package name */
-    private static final Charset f23198c = Charset.forName("UTF-8");
+public final class a implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final File f23199a;
+    private final ConstraintLayout f23368a;
 
-    /* renamed from: fo.a$a  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0318a {
-        public /* synthetic */ C0318a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
-        }
+    /* renamed from: b  reason: collision with root package name */
+    public final ConstraintLayout f23369b;
 
-        private C0318a() {
-        }
+    /* renamed from: c  reason: collision with root package name */
+    public final TextView f23370c;
+
+    /* renamed from: d  reason: collision with root package name */
+    public final ConstraintLayout f23371d;
+
+    /* renamed from: e  reason: collision with root package name */
+    public final Pi2NavigationBar f23372e;
+
+    /* renamed from: f  reason: collision with root package name */
+    public final ThemeableLottieAnimationView f23373f;
+
+    /* renamed from: g  reason: collision with root package name */
+    public final TextView f23374g;
+
+    private a(ConstraintLayout constraintLayout, ConstraintLayout constraintLayout2, TextView textView, ConstraintLayout constraintLayout3, Pi2NavigationBar pi2NavigationBar, ThemeableLottieAnimationView themeableLottieAnimationView, TextView textView2) {
+        this.f23368a = constraintLayout;
+        this.f23369b = constraintLayout2;
+        this.f23370c = textView;
+        this.f23371d = constraintLayout3;
+        this.f23372e = pi2NavigationBar;
+        this.f23373f = themeableLottieAnimationView;
+        this.f23374g = textView2;
     }
 
-    public a(Context context) {
-        Intrinsics.checkNotNullParameter(context, "context");
-        this.f23199a = new File(new File(context.getFilesDir(), ".com.withpersona.sdk2.inquiry"), "errors");
-    }
-
-    private final String b(Throwable th2) {
-        while (th2 != null) {
-            StackTraceElement[] stackTrace = th2.getStackTrace();
-            Intrinsics.checkNotNullExpressionValue(stackTrace, "getStackTrace(...)");
-            for (StackTraceElement stackTraceElement : stackTrace) {
-                String className = stackTraceElement.getClassName();
-                Intrinsics.checkNotNullExpressionValue(className, "getClassName(...)");
-                if (StringsKt.P(className, BuildConfig.LIBRARY_PACKAGE_NAME, false, 2, null)) {
-                    return stackTraceElement.getClassName() + " in " + stackTraceElement.getMethodName() + " at line " + stackTraceElement.getLineNumber();
+    public static a a(View view) {
+        int i10 = y2.f22064b;
+        ConstraintLayout constraintLayout = (ConstraintLayout) e4.a.a(view, i10);
+        if (constraintLayout != null) {
+            i10 = y2.f22065c;
+            TextView textView = (TextView) e4.a.a(view, i10);
+            if (textView != null) {
+                i10 = y2.f22068f;
+                ConstraintLayout constraintLayout2 = (ConstraintLayout) e4.a.a(view, i10);
+                if (constraintLayout2 != null) {
+                    i10 = y2.f22075m;
+                    Pi2NavigationBar pi2NavigationBar = (Pi2NavigationBar) e4.a.a(view, i10);
+                    if (pi2NavigationBar != null) {
+                        i10 = y2.f22076n;
+                        ThemeableLottieAnimationView themeableLottieAnimationView = (ThemeableLottieAnimationView) e4.a.a(view, i10);
+                        if (themeableLottieAnimationView != null) {
+                            i10 = y2.f22081s;
+                            TextView textView2 = (TextView) e4.a.a(view, i10);
+                            if (textView2 != null) {
+                                return new a((ConstraintLayout) view, constraintLayout, textView, constraintLayout2, pi2NavigationBar, themeableLottieAnimationView, textView2);
+                            }
+                        }
+                    }
                 }
             }
-            th2 = th2.getCause();
         }
-        return null;
+        throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i10)));
     }
 
-    private final String c(Throwable th2) {
-        StackTraceElement[] stackTrace = th2.getStackTrace();
-        Intrinsics.checkNotNullExpressionValue(stackTrace, "getStackTrace(...)");
-        StackTraceElement stackTraceElement = (StackTraceElement) i.V(stackTrace);
-        if (stackTraceElement != null) {
-            String className = stackTraceElement.getClassName();
-            String methodName = stackTraceElement.getMethodName();
-            int lineNumber = stackTraceElement.getLineNumber();
-            return className + " in " + methodName + " at line " + lineNumber;
+    public static a c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
+        View inflate = layoutInflater.inflate(z2.f22088a, viewGroup, false);
+        if (z10) {
+            viewGroup.addView(inflate);
         }
-        return null;
+        return a(inflate);
     }
 
-    private final File d() {
-        return new File(this.f23199a, "last_error.txt");
-    }
-
-    private final void h(File file) {
-        if (file.exists()) {
-            if (file.isDirectory()) {
-                return;
-            }
-            file.delete();
-        }
-        file.mkdirs();
-    }
-
-    private final String i(File file) {
-        if (!file.exists() || !file.isFile()) {
-            return null;
-        }
-        byte[] bArr = new byte[8192];
-        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-        FileInputStream fileInputStream = new FileInputStream(file);
-        while (true) {
-            try {
-                int read = fileInputStream.read(bArr);
-                if (read > 0) {
-                    byteArrayOutputStream.write(bArr, 0, read);
-                } else {
-                    byte[] byteArray = byteArrayOutputStream.toByteArray();
-                    Intrinsics.checkNotNullExpressionValue(byteArray, "toByteArray(...)");
-                    Charset UTF_8 = f23198c;
-                    Intrinsics.checkNotNullExpressionValue(UTF_8, "UTF_8");
-                    String str = new String(byteArray, UTF_8);
-                    c.a(fileInputStream, null);
-                    return str;
-                }
-            } finally {
-            }
-        }
-    }
-
-    private final void j(File file, String str) {
-        OutputStreamWriter outputStreamWriter = new OutputStreamWriter(new FileOutputStream(file), f23198c);
-        try {
-            outputStreamWriter.write(str);
-            Unit unit = Unit.f31988a;
-            c.a(outputStreamWriter, null);
-        } finally {
-        }
-    }
-
-    public final void a() {
-        d().delete();
-    }
-
-    public final String e() {
-        return i(d());
-    }
-
-    public final boolean f() {
-        return d().exists();
-    }
-
-    public final void g(Throwable error) {
-        Intrinsics.checkNotNullParameter(error, "error");
-        h(this.f23199a);
-        File d10 = d();
-        if (d10.isDirectory()) {
-            d10.delete();
-        }
-        String canonicalName = error.getClass().getCanonicalName();
-        String b10 = b(error);
-        if (b10 == null) {
-            b10 = c(error);
-        }
-        j(d10, canonicalName + " in " + b10);
+    @Override // androidx.viewbinding.ViewBinding
+    /* renamed from: b */
+    public ConstraintLayout getRoot() {
+        return this.f23368a;
     }
 }

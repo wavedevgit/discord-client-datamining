@@ -13,39 +13,39 @@ import org.jetbrains.annotations.NotNull;
 public final class FallbackModeService_StatusResponseJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f18844a;
+    private final m.b f18824a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f18845b;
+    private final com.squareup.moshi.h f18825b;
 
     public FallbackModeService_StatusResponseJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("static-inquiry-template");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f18844a = a10;
+        this.f18824a = a10;
         com.squareup.moshi.h f10 = moshi.f(FallbackModeService.StaticTemplate.class, x0.d(), "staticInquiryTemplate");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f18845b = f10;
+        this.f18825b = f10;
     }
 
     @Override // com.squareup.moshi.h
     /* renamed from: a */
     public FallbackModeService.StatusResponse fromJson(m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         FallbackModeService.StaticTemplate staticTemplate = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.f18844a);
-            if (W != -1) {
-                if (W == 0) {
-                    staticTemplate = (FallbackModeService.StaticTemplate) this.f18845b.fromJson(reader);
+            int J = reader.J(this.f18824a);
+            if (J != -1) {
+                if (J == 0) {
+                    staticTemplate = (FallbackModeService.StaticTemplate) this.f18825b.fromJson(reader);
                 }
             } else {
                 reader.E0();
-                reader.P();
+                reader.S();
             }
         }
-        reader.z();
+        reader.D();
         return new FallbackModeService.StatusResponse(staticTemplate);
     }
 
@@ -55,9 +55,9 @@ public final class FallbackModeService_StatusResponseJsonAdapter extends com.squ
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (statusResponse != null) {
             writer.k();
-            writer.W("static-inquiry-template");
-            this.f18845b.toJson(writer, statusResponse.a());
-            writer.E();
+            writer.J("static-inquiry-template");
+            this.f18825b.toJson(writer, statusResponse.a());
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

@@ -3,24 +3,14 @@ package jg;
 public abstract class d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f30905a;
+    public static final com.google.android.gms.common.d f29879a;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f30906b;
-
-    /* renamed from: c  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f30907c;
-
-    /* renamed from: d  reason: collision with root package name */
-    public static final com.google.android.gms.common.d[] f30908d;
+    public static final com.google.android.gms.common.d[] f29880b;
 
     static {
-        com.google.android.gms.common.d dVar = new com.google.android.gms.common.d("GET_CREDENTIAL", 1L);
-        f30905a = dVar;
-        com.google.android.gms.common.d dVar2 = new com.google.android.gms.common.d("CREDENTIAL_REGISTRY", 1L);
-        f30906b = dVar2;
-        com.google.android.gms.common.d dVar3 = new com.google.android.gms.common.d("CLEAR_REGISTRY", 1L);
-        f30907c = dVar3;
-        f30908d = new com.google.android.gms.common.d[]{dVar, dVar2, dVar3};
+        com.google.android.gms.common.d dVar = new com.google.android.gms.common.d("MEDIA_PERFORMANCE_CLASS", 1L);
+        f29879a = dVar;
+        f29880b = new com.google.android.gms.common.d[]{dVar};
     }
 }

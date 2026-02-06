@@ -67,21 +67,21 @@ public class i extends t5.b {
     public static /* synthetic */ class c {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f50399a;
+        static final /* synthetic */ int[] f50375a;
 
         static {
             int[] iArr = new int[b.a.values().length];
-            f50399a = iArr;
+            f50375a = iArr;
             try {
                 iArr[b.a.LEFT_ALIGN.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f50399a[b.a.RIGHT_ALIGN.ordinal()] = 2;
+                f50375a[b.a.RIGHT_ALIGN.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f50399a[b.a.CENTER.ordinal()] = 3;
+                f50375a[b.a.CENTER.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
         }
@@ -109,25 +109,25 @@ public class i extends t5.b {
         a10.a(this);
         i(a10);
         k u10 = eVar.u();
-        if (u10 != null && (aVar2 = u10.f48569a) != null) {
+        if (u10 != null && (aVar2 = u10.f48653a) != null) {
             o5.a a11 = aVar2.a();
             this.O = a11;
             a11.a(this);
             i(this.O);
         }
-        if (u10 != null && (aVar = u10.f48570b) != null) {
+        if (u10 != null && (aVar = u10.f48654b) != null) {
             o5.a a12 = aVar.a();
             this.Q = a12;
             a12.a(this);
             i(this.Q);
         }
-        if (u10 != null && (bVar2 = u10.f48571c) != null) {
+        if (u10 != null && (bVar2 = u10.f48655c) != null) {
             o5.a a13 = bVar2.a();
             this.S = a13;
             a13.a(this);
             i(this.S);
         }
-        if (u10 != null && (bVar = u10.f48572d) != null) {
+        if (u10 != null && (bVar = u10.f48656d) != null) {
             o5.a a14 = bVar.a();
             this.U = a14;
             a14.a(this);
@@ -157,7 +157,7 @@ public class i extends t5.b {
             i10 += Character.charCount(codePointAt3);
         }
         String sb2 = this.D.toString();
-        this.J.g(j10, sb2);
+        this.J.h(j10, sb2);
         return sb2;
     }
 
@@ -171,7 +171,7 @@ public class i extends t5.b {
             if (aVar2 != null) {
                 this.G.setColor(((Integer) aVar2.h()).intValue());
             } else {
-                this.G.setColor(bVar.f47468h);
+                this.G.setColor(bVar.f46516h);
             }
         }
         o5.a aVar3 = this.R;
@@ -182,13 +182,13 @@ public class i extends t5.b {
             if (aVar4 != null) {
                 this.H.setColor(((Integer) aVar4.h()).intValue());
             } else {
-                this.H.setColor(bVar.f47469i);
+                this.H.setColor(bVar.f46517i);
             }
         }
-        if (this.f50351x.h() == null) {
+        if (this.f50327x.h() == null) {
             intValue = 100;
         } else {
-            intValue = ((Integer) this.f50351x.h().h()).intValue();
+            intValue = ((Integer) this.f50327x.h().h()).intValue();
         }
         int i11 = (((intValue * SetSpanOperation.SPAN_MAX_PRIORITY) / 100) * i10) / SetSpanOperation.SPAN_MAX_PRIORITY;
         this.G.setAlpha(i11);
@@ -202,7 +202,7 @@ public class i extends t5.b {
         if (aVar6 != null) {
             this.H.setStrokeWidth(((Float) aVar6.h()).floatValue());
         } else {
-            this.H.setStrokeWidth(bVar.f47470j * x5.j.e());
+            this.H.setStrokeWidth(bVar.f46518j * x5.j.e());
         }
     }
 
@@ -218,24 +218,24 @@ public class i extends t5.b {
     private void S(q5.d dVar, float f10, q5.b bVar, Canvas canvas) {
         List a02 = a0(dVar);
         for (int i10 = 0; i10 < a02.size(); i10++) {
-            Path r10 = ((n5.d) a02.get(i10)).r();
-            r10.computeBounds(this.E, false);
+            Path t10 = ((n5.d) a02.get(i10)).t();
+            t10.computeBounds(this.E, false);
             this.F.reset();
-            this.F.preTranslate(0.0f, (-bVar.f47467g) * x5.j.e());
+            this.F.preTranslate(0.0f, (-bVar.f46515g) * x5.j.e());
             this.F.preScale(f10, f10);
-            r10.transform(this.F);
-            if (bVar.f47471k) {
-                V(r10, this.G, canvas);
-                V(r10, this.H, canvas);
+            t10.transform(this.F);
+            if (bVar.f46519k) {
+                V(t10, this.G, canvas);
+                V(t10, this.H, canvas);
             } else {
-                V(r10, this.H, canvas);
-                V(r10, this.G, canvas);
+                V(t10, this.H, canvas);
+                V(t10, this.G, canvas);
             }
         }
     }
 
     private void T(String str, q5.b bVar, Canvas canvas) {
-        if (bVar.f47471k) {
+        if (bVar.f46519k) {
             R(str, this.G, canvas);
             R(str, this.H, canvas);
             return;
@@ -287,7 +287,7 @@ public class i extends t5.b {
             r3 = r12
             goto Ld4
         L9:
-            java.lang.String r1 = r13.f47461a
+            java.lang.String r1 = r13.f46509a
             com.airbnb.lottie.n r2 = r12.M
             l5.i0 r2 = r2.b0()
             if (r2 == 0) goto L1b
@@ -303,7 +303,7 @@ public class i extends t5.b {
             float r0 = r0.floatValue()
             goto L31
         L2f:
-            float r0 = r13.f47463c
+            float r0 = r13.f46511c
         L31:
             android.graphics.Paint r2 = r12.G
             float r3 = x5.j.e()
@@ -317,7 +317,7 @@ public class i extends t5.b {
             android.graphics.Paint r3 = r12.G
             float r3 = r3.getTextSize()
             r2.setTextSize(r3)
-            int r2 = r13.f47465e
+            int r2 = r13.f46513e
             float r2 = (float) r2
             r3 = 1092616192(0x41200000, float:10.0)
             float r2 = r2 / r3
@@ -353,7 +353,7 @@ public class i extends t5.b {
             java.lang.Object r3 = r0.get(r11)
             r4 = r3
             java.lang.String r4 = (java.lang.String) r4
-            android.graphics.PointF r3 = r13.f47473m
+            android.graphics.PointF r3 = r13.f46521m
             if (r3 != 0) goto L9c
             r3 = 0
         L9a:
@@ -412,15 +412,15 @@ public class i extends t5.b {
             float r1 = r1.floatValue()
             goto L15
         L13:
-            float r1 = r7.f47463c
+            float r1 = r7.f46511c
         L15:
             r2 = 1120403456(0x42c80000, float:100.0)
             float r4 = r1 / r2
             float r8 = x5.j.g(r18)
-            java.lang.String r1 = r7.f47461a
+            java.lang.String r1 = r7.f46509a
             java.util.List r9 = r0.b0(r1)
             int r10 = r9.size()
-            int r1 = r7.f47465e
+            int r1 = r7.f46513e
             float r1 = (float) r1
             r2 = 1092616192(0x41200000, float:10.0)
             float r1 = r1 / r2
@@ -450,7 +450,7 @@ public class i extends t5.b {
             if (r13 >= r10) goto Lae
             java.lang.Object r1 = r9.get(r13)
             java.lang.String r1 = (java.lang.String) r1
-            android.graphics.PointF r2 = r7.f47473m
+            android.graphics.PointF r2 = r7.f46521m
             if (r2 != 0) goto L5f
             r2 = 0
             goto L61
@@ -555,17 +555,17 @@ public class i extends t5.b {
     private boolean e0(Canvas canvas, q5.b bVar, int i10, float f10) {
         float f11;
         float f12;
-        PointF pointF = bVar.f47472l;
-        PointF pointF2 = bVar.f47473m;
+        PointF pointF = bVar.f46520l;
+        PointF pointF2 = bVar.f46521m;
         float e10 = x5.j.e();
         float f13 = 0.0f;
         if (pointF == null) {
             f11 = 0.0f;
         } else {
-            f11 = (bVar.f47466f * e10) + pointF.y;
+            f11 = (bVar.f46514f * e10) + pointF.y;
         }
-        float f14 = (i10 * bVar.f47466f * e10) + f11;
-        if (this.M.I() && pointF2 != null && pointF != null && f14 >= pointF.y + pointF2.y + bVar.f47463c) {
+        float f14 = (i10 * bVar.f46514f * e10) + f11;
+        if (this.M.I() && pointF2 != null && pointF != null && f14 >= pointF.y + pointF2.y + bVar.f46511c) {
             return false;
         }
         if (pointF == null) {
@@ -576,7 +576,7 @@ public class i extends t5.b {
         if (pointF2 != null) {
             f13 = pointF2.x;
         }
-        int i11 = c.f50399a[bVar.f47464d.ordinal()];
+        int i11 = c.f50375a[bVar.f46512d.ordinal()];
         if (i11 != 1) {
             if (i11 != 2) {
                 if (i11 == 3) {
@@ -652,7 +652,7 @@ public class i extends t5.b {
     @Override // t5.b, q5.f
     public void d(Object obj, y5.c cVar) {
         super.d(obj, cVar);
-        if (obj == a0.f36372a) {
+        if (obj == a0.f35765a) {
             o5.a aVar = this.P;
             if (aVar != null) {
                 H(aVar);
@@ -665,7 +665,7 @@ public class i extends t5.b {
             this.P = qVar;
             qVar.a(this);
             i(this.P);
-        } else if (obj == a0.f36373b) {
+        } else if (obj == a0.f35766b) {
             o5.a aVar2 = this.R;
             if (aVar2 != null) {
                 H(aVar2);
@@ -678,7 +678,7 @@ public class i extends t5.b {
             this.R = qVar2;
             qVar2.a(this);
             i(this.R);
-        } else if (obj == a0.f36390s) {
+        } else if (obj == a0.f35783s) {
             o5.a aVar3 = this.T;
             if (aVar3 != null) {
                 H(aVar3);
@@ -691,7 +691,7 @@ public class i extends t5.b {
             this.T = qVar3;
             qVar3.a(this);
             i(this.T);
-        } else if (obj == a0.f36391t) {
+        } else if (obj == a0.f35784t) {
             o5.a aVar4 = this.V;
             if (aVar4 != null) {
                 H(aVar4);
@@ -744,7 +744,7 @@ public class i extends t5.b {
     @Override // t5.b
     void u(Canvas canvas, Matrix matrix, int i10) {
         q5.b bVar = (q5.b) this.L.h();
-        q5.c cVar = (q5.c) this.N.g().get(bVar.f47462b);
+        q5.c cVar = (q5.c) this.N.g().get(bVar.f46510b);
         if (cVar == null) {
             return;
         }
@@ -764,19 +764,19 @@ public class i extends t5.b {
     public static class d {
 
         /* renamed from: a  reason: collision with root package name */
-        private String f50400a;
+        private String f50376a;
 
         /* renamed from: b  reason: collision with root package name */
-        private float f50401b;
+        private float f50377b;
 
         private d() {
-            this.f50400a = "";
-            this.f50401b = 0.0f;
+            this.f50376a = "";
+            this.f50377b = 0.0f;
         }
 
         void c(String str, float f10) {
-            this.f50400a = str;
-            this.f50401b = f10;
+            this.f50376a = str;
+            this.f50377b = f10;
         }
 
         /* synthetic */ d(a aVar) {

@@ -1,39 +1,41 @@
 package ju;
 
-import java.net.InetSocketAddress;
-import java.net.Socket;
-import java.security.GeneralSecurityException;
-import java.security.KeyStore;
-import java.security.Security;
-import java.security.cert.X509Certificate;
-import java.util.ArrayList;
-import java.util.Arrays;
+import androidx.recyclerview.widget.RecyclerView;
+import com.facebook.react.views.text.internal.span.SetSpanOperation;
+import java.io.Closeable;
+import java.io.EOFException;
+import java.io.IOException;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.net.ssl.SSLContext;
-import javax.net.ssl.SSLSocket;
-import javax.net.ssl.SSLSocketFactory;
-import javax.net.ssl.TrustManager;
-import javax.net.ssl.TrustManagerFactory;
-import javax.net.ssl.X509TrustManager;
-import kotlin.collections.CollectionsKt;
+import ju.d;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import okhttp3.OkHttpClient;
 import okio.Buffer;
-import zt.j;
+import okio.BufferedSource;
+import okio.ByteString;
+import okio.Source;
+import okio.Timeout;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public class h {
+public final class h implements Closeable {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final a f31441a;
+    /* renamed from: p  reason: collision with root package name */
+    public static final a f31242p = new a(null);
 
-    /* renamed from: b  reason: collision with root package name */
-    private static volatile h f31442b;
+    /* renamed from: q  reason: collision with root package name */
+    private static final Logger f31243q;
 
-    /* renamed from: c  reason: collision with root package name */
-    private static final Logger f31443c;
+    /* renamed from: d  reason: collision with root package name */
+    private final BufferedSource f31244d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private final boolean f31245e;
+
+    /* renamed from: i  reason: collision with root package name */
+    private final b f31246i;
+
+    /* renamed from: o  reason: collision with root package name */
+    private final d.a f31247o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -41,229 +43,456 @@ public class h {
             this();
         }
 
-        private final h d() {
-            ku.c.f36146a.b();
-            h a10 = ju.a.f31411e.a();
-            if (a10 == null) {
-                h a11 = b.f31414f.a();
-                Intrinsics.checkNotNull(a11);
-                return a11;
-            }
-            return a10;
+        public final Logger a() {
+            return h.f31243q;
         }
 
-        private final h e() {
-            g a10;
-            c a11;
-            d b10;
-            if (j() && (b10 = d.f31423e.b()) != null) {
-                return b10;
+        public final int b(int i10, int i11, int i12) {
+            if ((i11 & 8) != 0) {
+                i10--;
             }
-            if (i() && (a11 = c.f31420e.a()) != null) {
-                return a11;
+            if (i12 <= i10) {
+                return i10 - i12;
             }
-            if (k() && (a10 = g.f31438e.a()) != null) {
-                return a10;
-            }
-            f a12 = f.f31436d.a();
-            if (a12 != null) {
-                return a12;
-            }
-            h a13 = e.f31427i.a();
-            if (a13 != null) {
-                return a13;
-            }
-            return new h();
-        }
-
-        /* JADX INFO: Access modifiers changed from: private */
-        public final h f() {
-            if (h()) {
-                return d();
-            }
-            return e();
-        }
-
-        private final boolean i() {
-            return Intrinsics.areEqual("BC", Security.getProviders()[0].getName());
-        }
-
-        private final boolean j() {
-            return Intrinsics.areEqual("Conscrypt", Security.getProviders()[0].getName());
-        }
-
-        private final boolean k() {
-            return Intrinsics.areEqual("OpenJSSE", Security.getProviders()[0].getName());
-        }
-
-        public final List b(List protocols) {
-            Intrinsics.checkNotNullParameter(protocols, "protocols");
-            ArrayList<j> arrayList = new ArrayList();
-            for (Object obj : protocols) {
-                if (((j) obj) != j.HTTP_1_0) {
-                    arrayList.add(obj);
-                }
-            }
-            ArrayList arrayList2 = new ArrayList(CollectionsKt.w(arrayList, 10));
-            for (j jVar : arrayList) {
-                arrayList2.add(jVar.toString());
-            }
-            return arrayList2;
-        }
-
-        public final byte[] c(List protocols) {
-            Intrinsics.checkNotNullParameter(protocols, "protocols");
-            Buffer buffer = new Buffer();
-            for (String str : b(protocols)) {
-                buffer.writeByte(str.length());
-                buffer.o0(str);
-            }
-            return buffer.n1();
-        }
-
-        public final h g() {
-            return h.f31442b;
-        }
-
-        public final boolean h() {
-            return Intrinsics.areEqual("Dalvik", System.getProperty("java.vm.name"));
+            throw new IOException("PROTOCOL_ERROR padding " + i12 + " > remaining length " + i10);
         }
 
         private a() {
         }
     }
 
-    static {
-        a aVar = new a(null);
-        f31441a = aVar;
-        f31442b = aVar.f();
-        f31443c = Logger.getLogger(OkHttpClient.class.getName());
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public interface c {
+        void a(boolean z10, int i10, int i11, List list);
+
+        void b(int i10, long j10);
+
+        void c(boolean z10, m mVar);
+
+        void d(int i10, ju.b bVar);
+
+        void e(int i10, int i11, List list);
+
+        void f();
+
+        void g(boolean z10, int i10, BufferedSource bufferedSource, int i11);
+
+        void h(boolean z10, int i10, int i11);
+
+        void i(int i10, int i11, int i12, boolean z10);
+
+        void j(int i10, ju.b bVar, ByteString byteString);
     }
 
-    public static /* synthetic */ void l(h hVar, String str, int i10, Throwable th2, int i11, Object obj) {
-        if (obj == null) {
-            if ((i11 & 2) != 0) {
-                i10 = 4;
+    static {
+        Logger logger = Logger.getLogger(e.class.getName());
+        Intrinsics.checkNotNullExpressionValue(logger, "getLogger(Http2::class.java.name)");
+        f31243q = logger;
+    }
+
+    public h(BufferedSource source, boolean z10) {
+        Intrinsics.checkNotNullParameter(source, "source");
+        this.f31244d = source;
+        this.f31245e = z10;
+        b bVar = new b(source);
+        this.f31246i = bVar;
+        this.f31247o = new d.a(bVar, RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT, 0, 4, null);
+    }
+
+    private final void C(c cVar, int i10, int i11, int i12) {
+        if (i10 == 5) {
+            if (i12 != 0) {
+                z(cVar, i12);
+                return;
             }
-            if ((i11 & 4) != 0) {
-                th2 = null;
+            throw new IOException("TYPE_PRIORITY streamId == 0");
+        }
+        throw new IOException("TYPE_PRIORITY length: " + i10 + " != 5");
+    }
+
+    private final void I(c cVar, int i10, int i11, int i12) {
+        int i13;
+        if (i12 != 0) {
+            if ((i11 & 8) != 0) {
+                i13 = cu.e.d(this.f31244d.readByte(), SetSpanOperation.SPAN_MAX_PRIORITY);
+            } else {
+                i13 = 0;
             }
-            hVar.k(str, i10, th2);
+            cVar.e(i12, this.f31244d.readInt() & Integer.MAX_VALUE, p(f31242p.b(i10 - 4, i11, i13), i13, i11, i12));
             return;
         }
-        throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: log");
+        throw new IOException("PROTOCOL_ERROR: TYPE_PUSH_PROMISE streamId == 0");
     }
 
-    public void b(SSLSocket sslSocket) {
-        Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
-    }
-
-    public mu.c c(X509TrustManager trustManager) {
-        Intrinsics.checkNotNullParameter(trustManager, "trustManager");
-        return new mu.a(d(trustManager));
-    }
-
-    public mu.e d(X509TrustManager trustManager) {
-        Intrinsics.checkNotNullParameter(trustManager, "trustManager");
-        X509Certificate[] acceptedIssuers = trustManager.getAcceptedIssuers();
-        Intrinsics.checkNotNullExpressionValue(acceptedIssuers, "trustManager.acceptedIssuers");
-        return new mu.b((X509Certificate[]) Arrays.copyOf(acceptedIssuers, acceptedIssuers.length));
-    }
-
-    public void e(SSLSocket sslSocket, String str, List protocols) {
-        Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
-        Intrinsics.checkNotNullParameter(protocols, "protocols");
-    }
-
-    public void f(Socket socket, InetSocketAddress address, int i10) {
-        Intrinsics.checkNotNullParameter(socket, "socket");
-        Intrinsics.checkNotNullParameter(address, "address");
-        socket.connect(address, i10);
-    }
-
-    public final String g() {
-        return "OkHttp";
-    }
-
-    public String h(SSLSocket sslSocket) {
-        Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
-        return null;
-    }
-
-    public Object i(String closer) {
-        Intrinsics.checkNotNullParameter(closer, "closer");
-        if (f31443c.isLoggable(Level.FINE)) {
-            return new Throwable(closer);
+    private final void J(c cVar, int i10, int i11, int i12) {
+        if (i10 == 4) {
+            if (i12 != 0) {
+                int readInt = this.f31244d.readInt();
+                ju.b a10 = ju.b.f31120e.a(readInt);
+                if (a10 != null) {
+                    cVar.d(i12, a10);
+                    return;
+                }
+                throw new IOException("TYPE_RST_STREAM unexpected error code: " + readInt);
+            }
+            throw new IOException("TYPE_RST_STREAM streamId == 0");
         }
-        return null;
+        throw new IOException("TYPE_RST_STREAM length: " + i10 + " != 4");
     }
 
-    public boolean j(String hostname) {
-        Intrinsics.checkNotNullParameter(hostname, "hostname");
-        return true;
-    }
-
-    public void k(String message, int i10, Throwable th2) {
-        Level level;
-        Intrinsics.checkNotNullParameter(message, "message");
-        if (i10 == 5) {
-            level = Level.WARNING;
-        } else {
-            level = Level.INFO;
-        }
-        f31443c.log(level, message, th2);
-    }
-
-    public void m(String message, Object obj) {
-        Intrinsics.checkNotNullParameter(message, "message");
-        if (obj == null) {
-            message = message + " To see where this was allocated, set the OkHttpClient logger level to FINE: Logger.getLogger(OkHttpClient.class.getName()).setLevel(Level.FINE);";
-        }
-        k(message, 5, (Throwable) obj);
-    }
-
-    public SSLContext n() {
-        SSLContext sSLContext = SSLContext.getInstance("TLS");
-        Intrinsics.checkNotNullExpressionValue(sSLContext, "getInstance(\"TLS\")");
-        return sSLContext;
-    }
-
-    public SSLSocketFactory o(X509TrustManager trustManager) {
-        Intrinsics.checkNotNullParameter(trustManager, "trustManager");
-        try {
-            SSLContext n10 = n();
-            n10.init(null, new TrustManager[]{trustManager}, null);
-            SSLSocketFactory socketFactory = n10.getSocketFactory();
-            Intrinsics.checkNotNullExpressionValue(socketFactory, "newSSLContext().apply {\n…ll)\n      }.socketFactory");
-            return socketFactory;
-        } catch (GeneralSecurityException e10) {
-            throw new AssertionError("No System TLS: " + e10, e10);
-        }
-    }
-
-    public X509TrustManager p() {
-        TrustManagerFactory trustManagerFactory = TrustManagerFactory.getInstance(TrustManagerFactory.getDefaultAlgorithm());
-        trustManagerFactory.init((KeyStore) null);
-        TrustManager[] trustManagers = trustManagerFactory.getTrustManagers();
-        Intrinsics.checkNotNull(trustManagers);
-        if (trustManagers.length == 1) {
-            TrustManager trustManager = trustManagers[0];
-            if (trustManager instanceof X509TrustManager) {
-                Intrinsics.checkNotNull(trustManager, "null cannot be cast to non-null type javax.net.ssl.X509TrustManager");
-                return (X509TrustManager) trustManager;
+    private final void P(c cVar, int i10, int i11, int i12) {
+        int readInt;
+        if (i12 == 0) {
+            if ((i11 & 1) != 0) {
+                if (i10 == 0) {
+                    cVar.f();
+                    return;
+                }
+                throw new IOException("FRAME_SIZE_ERROR ack frame should be empty!");
+            } else if (i10 % 6 == 0) {
+                m mVar = new m();
+                kotlin.ranges.a s10 = kotlin.ranges.d.s(kotlin.ranges.d.u(0, i10), 6);
+                int d10 = s10.d();
+                int e10 = s10.e();
+                int f10 = s10.f();
+                if ((f10 > 0 && d10 <= e10) || (f10 < 0 && e10 <= d10)) {
+                    while (true) {
+                        int e11 = cu.e.e(this.f31244d.readShort(), 65535);
+                        readInt = this.f31244d.readInt();
+                        if (e11 != 2) {
+                            if (e11 != 3) {
+                                if (e11 != 4) {
+                                    if (e11 == 5 && (readInt < 16384 || readInt > 16777215)) {
+                                        break;
+                                    }
+                                } else if (readInt >= 0) {
+                                    e11 = 7;
+                                } else {
+                                    throw new IOException("PROTOCOL_ERROR SETTINGS_INITIAL_WINDOW_SIZE > 2^31 - 1");
+                                }
+                            } else {
+                                e11 = 4;
+                            }
+                        } else if (readInt != 0 && readInt != 1) {
+                            throw new IOException("PROTOCOL_ERROR SETTINGS_ENABLE_PUSH != 0 or 1");
+                        }
+                        mVar.h(e11, readInt);
+                        if (d10 == e10) {
+                            break;
+                        }
+                        d10 += f10;
+                    }
+                    throw new IOException("PROTOCOL_ERROR SETTINGS_MAX_FRAME_SIZE: " + readInt);
+                }
+                cVar.c(false, mVar);
+                return;
+            } else {
+                throw new IOException("TYPE_SETTINGS length % 6 != 0: " + i10);
             }
         }
-        StringBuilder sb2 = new StringBuilder();
-        sb2.append("Unexpected default trust managers: ");
-        String arrays = Arrays.toString(trustManagers);
-        Intrinsics.checkNotNullExpressionValue(arrays, "toString(this)");
-        sb2.append(arrays);
-        throw new IllegalStateException(sb2.toString().toString());
+        throw new IOException("TYPE_SETTINGS streamId != 0");
     }
 
-    public String toString() {
-        String simpleName = getClass().getSimpleName();
-        Intrinsics.checkNotNullExpressionValue(simpleName, "javaClass.simpleName");
-        return simpleName;
+    private final void Y(c cVar, int i10, int i11, int i12) {
+        if (i10 == 4) {
+            long f10 = cu.e.f(this.f31244d.readInt(), 2147483647L);
+            if (f10 != 0) {
+                cVar.b(i12, f10);
+                return;
+            }
+            throw new IOException("windowSizeIncrement was 0");
+        }
+        throw new IOException("TYPE_WINDOW_UPDATE length !=4: " + i10);
+    }
+
+    private final void m(c cVar, int i10, int i11, int i12) {
+        boolean z10;
+        if (i12 != 0) {
+            int i13 = 0;
+            if ((i11 & 1) != 0) {
+                z10 = true;
+            } else {
+                z10 = false;
+            }
+            if ((i11 & 32) == 0) {
+                if ((i11 & 8) != 0) {
+                    i13 = cu.e.d(this.f31244d.readByte(), SetSpanOperation.SPAN_MAX_PRIORITY);
+                }
+                cVar.g(z10, i12, this.f31244d, f31242p.b(i10, i11, i13));
+                this.f31244d.skip(i13);
+                return;
+            }
+            throw new IOException("PROTOCOL_ERROR: FLAG_COMPRESSED without SETTINGS_COMPRESS_DATA");
+        }
+        throw new IOException("PROTOCOL_ERROR: TYPE_DATA streamId == 0");
+    }
+
+    private final void n(c cVar, int i10, int i11, int i12) {
+        if (i10 >= 8) {
+            if (i12 == 0) {
+                int readInt = this.f31244d.readInt();
+                int readInt2 = this.f31244d.readInt();
+                int i13 = i10 - 8;
+                ju.b a10 = ju.b.f31120e.a(readInt2);
+                if (a10 != null) {
+                    ByteString byteString = ByteString.f43167p;
+                    if (i13 > 0) {
+                        byteString = this.f31244d.f1(i13);
+                    }
+                    cVar.j(readInt, a10, byteString);
+                    return;
+                }
+                throw new IOException("TYPE_GOAWAY unexpected error code: " + readInt2);
+            }
+            throw new IOException("TYPE_GOAWAY streamId != 0");
+        }
+        throw new IOException("TYPE_GOAWAY length < 8: " + i10);
+    }
+
+    private final List p(int i10, int i11, int i12, int i13) {
+        this.f31246i.m(i10);
+        b bVar = this.f31246i;
+        bVar.n(bVar.a());
+        this.f31246i.p(i11);
+        this.f31246i.k(i12);
+        this.f31246i.s(i13);
+        this.f31247o.k();
+        return this.f31247o.e();
+    }
+
+    private final void s(c cVar, int i10, int i11, int i12) {
+        boolean z10;
+        if (i12 != 0) {
+            int i13 = 0;
+            if ((i11 & 1) != 0) {
+                z10 = true;
+            } else {
+                z10 = false;
+            }
+            if ((i11 & 8) != 0) {
+                i13 = cu.e.d(this.f31244d.readByte(), SetSpanOperation.SPAN_MAX_PRIORITY);
+            }
+            if ((i11 & 32) != 0) {
+                z(cVar, i12);
+                i10 -= 5;
+            }
+            cVar.a(z10, i12, -1, p(f31242p.b(i10, i11, i13), i13, i11, i12));
+            return;
+        }
+        throw new IOException("PROTOCOL_ERROR: TYPE_HEADERS streamId == 0");
+    }
+
+    private final void y(c cVar, int i10, int i11, int i12) {
+        if (i10 == 8) {
+            if (i12 == 0) {
+                int readInt = this.f31244d.readInt();
+                int readInt2 = this.f31244d.readInt();
+                boolean z10 = true;
+                if ((i11 & 1) == 0) {
+                    z10 = false;
+                }
+                cVar.h(z10, readInt, readInt2);
+                return;
+            }
+            throw new IOException("TYPE_PING streamId != 0");
+        }
+        throw new IOException("TYPE_PING length != 8: " + i10);
+    }
+
+    private final void z(c cVar, int i10) {
+        boolean z10;
+        int readInt = this.f31244d.readInt();
+        if ((Integer.MIN_VALUE & readInt) != 0) {
+            z10 = true;
+        } else {
+            z10 = false;
+        }
+        cVar.i(i10, readInt & Integer.MAX_VALUE, cu.e.d(this.f31244d.readByte(), SetSpanOperation.SPAN_MAX_PRIORITY) + 1, z10);
+    }
+
+    @Override // java.io.Closeable, java.lang.AutoCloseable
+    public void close() {
+        this.f31244d.close();
+    }
+
+    public final boolean g(boolean z10, c handler) {
+        Intrinsics.checkNotNullParameter(handler, "handler");
+        try {
+            this.f31244d.U0(9L);
+            int K = cu.e.K(this.f31244d);
+            if (K <= 16384) {
+                int d10 = cu.e.d(this.f31244d.readByte(), SetSpanOperation.SPAN_MAX_PRIORITY);
+                int d11 = cu.e.d(this.f31244d.readByte(), SetSpanOperation.SPAN_MAX_PRIORITY);
+                int readInt = this.f31244d.readInt() & Integer.MAX_VALUE;
+                Logger logger = f31243q;
+                if (logger.isLoggable(Level.FINE)) {
+                    logger.fine(e.f31166a.c(true, readInt, K, d10, d11));
+                }
+                if (z10 && d10 != 4) {
+                    throw new IOException("Expected a SETTINGS frame but was " + e.f31166a.b(d10));
+                }
+                switch (d10) {
+                    case 0:
+                        m(handler, K, d11, readInt);
+                        return true;
+                    case 1:
+                        s(handler, K, d11, readInt);
+                        return true;
+                    case 2:
+                        C(handler, K, d11, readInt);
+                        return true;
+                    case 3:
+                        J(handler, K, d11, readInt);
+                        return true;
+                    case 4:
+                        P(handler, K, d11, readInt);
+                        return true;
+                    case 5:
+                        I(handler, K, d11, readInt);
+                        return true;
+                    case 6:
+                        y(handler, K, d11, readInt);
+                        return true;
+                    case 7:
+                        n(handler, K, d11, readInt);
+                        return true;
+                    case 8:
+                        Y(handler, K, d11, readInt);
+                        return true;
+                    default:
+                        this.f31244d.skip(K);
+                        return true;
+                }
+            }
+            throw new IOException("FRAME_SIZE_ERROR: " + K);
+        } catch (EOFException unused) {
+            return false;
+        }
+    }
+
+    public final void k(c handler) {
+        Intrinsics.checkNotNullParameter(handler, "handler");
+        if (this.f31245e) {
+            if (!g(true, handler)) {
+                throw new IOException("Required SETTINGS preface not received");
+            }
+            return;
+        }
+        BufferedSource bufferedSource = this.f31244d;
+        ByteString byteString = e.f31167b;
+        ByteString f12 = bufferedSource.f1(byteString.G());
+        Logger logger = f31243q;
+        if (logger.isLoggable(Level.FINE)) {
+            logger.fine(cu.e.t("<< CONNECTION " + f12.q(), new Object[0]));
+        }
+        if (Intrinsics.areEqual(byteString, f12)) {
+            return;
+        }
+        throw new IOException("Expected a connection header but was " + f12.M());
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class b implements Source {
+
+        /* renamed from: d  reason: collision with root package name */
+        private final BufferedSource f31248d;
+
+        /* renamed from: e  reason: collision with root package name */
+        private int f31249e;
+
+        /* renamed from: i  reason: collision with root package name */
+        private int f31250i;
+
+        /* renamed from: o  reason: collision with root package name */
+        private int f31251o;
+
+        /* renamed from: p  reason: collision with root package name */
+        private int f31252p;
+
+        /* renamed from: q  reason: collision with root package name */
+        private int f31253q;
+
+        public b(BufferedSource source) {
+            Intrinsics.checkNotNullParameter(source, "source");
+            this.f31248d = source;
+        }
+
+        private final void g() {
+            int i10 = this.f31251o;
+            int K = cu.e.K(this.f31248d);
+            this.f31252p = K;
+            this.f31249e = K;
+            int d10 = cu.e.d(this.f31248d.readByte(), SetSpanOperation.SPAN_MAX_PRIORITY);
+            this.f31250i = cu.e.d(this.f31248d.readByte(), SetSpanOperation.SPAN_MAX_PRIORITY);
+            a aVar = h.f31242p;
+            if (aVar.a().isLoggable(Level.FINE)) {
+                aVar.a().fine(e.f31166a.c(true, this.f31251o, this.f31249e, d10, this.f31250i));
+            }
+            int readInt = this.f31248d.readInt() & Integer.MAX_VALUE;
+            this.f31251o = readInt;
+            if (d10 == 9) {
+                if (readInt == i10) {
+                    return;
+                }
+                throw new IOException("TYPE_CONTINUATION streamId changed");
+            }
+            throw new IOException(d10 + " != TYPE_CONTINUATION");
+        }
+
+        public final int a() {
+            return this.f31252p;
+        }
+
+        public final void k(int i10) {
+            this.f31250i = i10;
+        }
+
+        public final void m(int i10) {
+            this.f31252p = i10;
+        }
+
+        public final void n(int i10) {
+            this.f31249e = i10;
+        }
+
+        public final void p(int i10) {
+            this.f31253q = i10;
+        }
+
+        @Override // okio.Source
+        public long read(Buffer sink, long j10) {
+            Intrinsics.checkNotNullParameter(sink, "sink");
+            while (true) {
+                int i10 = this.f31252p;
+                if (i10 == 0) {
+                    this.f31248d.skip(this.f31253q);
+                    this.f31253q = 0;
+                    if ((this.f31250i & 4) != 0) {
+                        return -1L;
+                    }
+                    g();
+                } else {
+                    long read = this.f31248d.read(sink, Math.min(j10, i10));
+                    if (read == -1) {
+                        return -1L;
+                    }
+                    this.f31252p -= (int) read;
+                    return read;
+                }
+            }
+        }
+
+        public final void s(int i10) {
+            this.f31251o = i10;
+        }
+
+        @Override // okio.Source
+        public Timeout timeout() {
+            return this.f31248d.timeout();
+        }
+
+        @Override // okio.Source, java.io.Closeable, java.lang.AutoCloseable
+        public void close() {
+        }
     }
 }

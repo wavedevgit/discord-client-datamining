@@ -9,19 +9,19 @@ import java.util.Set;
 public final class i0 extends LinkedHashMap {
 
     /* renamed from: e  reason: collision with root package name */
-    private static final i0 f3784e;
+    private static final i0 f4113e;
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f3785d;
+    private boolean f4114d;
 
     static {
         i0 i0Var = new i0();
-        f3784e = i0Var;
+        f4113e = i0Var;
         i0Var.j();
     }
 
     private i0() {
-        this.f3785d = true;
+        this.f4114d = true;
     }
 
     static int a(Map map) {
@@ -47,7 +47,7 @@ public final class i0 extends LinkedHashMap {
     }
 
     public static i0 d() {
-        return f3784e;
+        return f4113e;
     }
 
     private void e() {
@@ -69,7 +69,7 @@ public final class i0 extends LinkedHashMap {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
     */
-    static boolean g(java.util.Map r4, java.util.Map r5) {
+    static boolean h(java.util.Map r4, java.util.Map r5) {
         /*
             r0 = 1
             if (r4 != r5) goto L4
@@ -102,7 +102,7 @@ public final class i0 extends LinkedHashMap {
         L42:
             return r0
         */
-        throw new UnsupportedOperationException("Method not decompiled: androidx.datastore.preferences.protobuf.i0.g(java.util.Map, java.util.Map):boolean");
+        throw new UnsupportedOperationException("Method not decompiled: androidx.datastore.preferences.protobuf.i0.h(java.util.Map, java.util.Map):boolean");
     }
 
     @Override // java.util.LinkedHashMap, java.util.HashMap, java.util.AbstractMap, java.util.Map
@@ -121,7 +121,7 @@ public final class i0 extends LinkedHashMap {
 
     @Override // java.util.AbstractMap, java.util.Map
     public boolean equals(Object obj) {
-        if ((obj instanceof Map) && g(this, (Map) obj)) {
+        if ((obj instanceof Map) && h(this, (Map) obj)) {
             return true;
         }
         return false;
@@ -133,11 +133,11 @@ public final class i0 extends LinkedHashMap {
     }
 
     public boolean i() {
-        return this.f3785d;
+        return this.f4114d;
     }
 
     public void j() {
-        this.f3785d = false;
+        this.f4114d = false;
     }
 
     public void k(i0 i0Var) {
@@ -177,6 +177,6 @@ public final class i0 extends LinkedHashMap {
 
     private i0(Map map) {
         super(map);
-        this.f3785d = true;
+        this.f4114d = true;
     }
 }

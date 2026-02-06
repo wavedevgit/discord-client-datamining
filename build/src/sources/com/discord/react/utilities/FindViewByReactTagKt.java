@@ -30,7 +30,7 @@ public final class FindViewByReactTagKt {
             return findViewByReactTag(reactContext, i10);
         } catch (IllegalViewOperationException e10) {
             onError.invoke(e10);
-            Unit unit = Unit.f31988a;
+            Unit unit = Unit.f32008a;
             return null;
         } catch (Exception e11) {
             throw new IllegalStateException(REACT_UPDATED_ERROR, e11);

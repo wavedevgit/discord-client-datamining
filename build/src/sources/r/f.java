@@ -9,21 +9,21 @@ import java.util.Set;
 public class f extends Exception {
 
     /* renamed from: i  reason: collision with root package name */
-    static final Set f48227i = Collections.unmodifiableSet(new HashSet(Arrays.asList(4, 5, 1, 2, 3)));
+    static final Set f48311i = Collections.unmodifiableSet(new HashSet(Arrays.asList(4, 5, 1, 2, 3)));
 
     /* renamed from: o  reason: collision with root package name */
-    static final Set f48228o = Collections.unmodifiableSet(new HashSet(Arrays.asList(10001, 10002)));
+    static final Set f48312o = Collections.unmodifiableSet(new HashSet(Arrays.asList(10001, 10002)));
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f48229d;
+    private final int f48313d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final CameraAccessException f48230e;
+    private final CameraAccessException f48314e;
 
     public f(int i10, String str, Throwable th2) {
         super(a(i10, str), th2);
-        this.f48229d = i10;
-        this.f48230e = f48227i.contains(Integer.valueOf(i10)) ? new CameraAccessException(i10, str, th2) : null;
+        this.f48313d = i10;
+        this.f48314e = f48311i.contains(Integer.valueOf(i10)) ? new CameraAccessException(i10, str, th2) : null;
     }
 
     private static String a(int i10, String str) {
@@ -91,18 +91,18 @@ public class f extends Exception {
     }
 
     public final int d() {
-        return this.f48229d;
+        return this.f48313d;
     }
 
     public f(int i10, Throwable th2) {
         super(b(i10), th2);
-        this.f48229d = i10;
-        this.f48230e = f48227i.contains(Integer.valueOf(i10)) ? new CameraAccessException(i10, null, th2) : null;
+        this.f48313d = i10;
+        this.f48314e = f48311i.contains(Integer.valueOf(i10)) ? new CameraAccessException(i10, null, th2) : null;
     }
 
     private f(CameraAccessException cameraAccessException) {
         super(cameraAccessException.getMessage(), cameraAccessException.getCause());
-        this.f48229d = cameraAccessException.getReason();
-        this.f48230e = cameraAccessException;
+        this.f48313d = cameraAccessException.getReason();
+        this.f48314e = cameraAccessException;
     }
 }

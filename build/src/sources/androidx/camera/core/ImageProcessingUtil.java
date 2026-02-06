@@ -16,7 +16,7 @@ import x.y0;
 public abstract class ImageProcessingUtil {
 
     /* renamed from: a  reason: collision with root package name */
-    private static int f2052a;
+    private static int f2381a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -57,12 +57,12 @@ public abstract class ImageProcessingUtil {
     private static a d(n nVar) {
         int width = nVar.getWidth();
         int height = nVar.getHeight();
-        int g10 = nVar.d1()[0].g();
-        int g11 = nVar.d1()[1].g();
-        int g12 = nVar.d1()[2].g();
-        int h10 = nVar.d1()[0].h();
-        int h11 = nVar.d1()[1].h();
-        if (nativeShiftPixel(nVar.d1()[0].f(), g10, nVar.d1()[1].f(), g11, nVar.d1()[2].f(), g12, h10, h11, width, height, h10, h11, h11) != 0) {
+        int f10 = nVar.c1()[0].f();
+        int f11 = nVar.c1()[1].f();
+        int f12 = nVar.c1()[2].f();
+        int g10 = nVar.c1()[0].g();
+        int g11 = nVar.c1()[1].g();
+        if (nativeShiftPixel(nVar.c1()[0].e(), f10, nVar.c1()[1].e(), f11, nVar.c1()[2].e(), f12, g10, g11, width, height, g10, g11, g11) != 0) {
             return a.ERROR_CONVERSION;
         }
         return a.SUCCESS;
@@ -94,13 +94,13 @@ public abstract class ImageProcessingUtil {
         if (nVar.getFormat() == 35) {
             int width = nVar.getWidth();
             int height = nVar.getHeight();
-            int g10 = nVar.d1()[0].g();
-            int g11 = nVar.d1()[1].g();
-            int g12 = nVar.d1()[2].g();
-            int h10 = nVar.d1()[0].h();
-            int h11 = nVar.d1()[1].h();
+            int f10 = nVar.c1()[0].f();
+            int f11 = nVar.c1()[1].f();
+            int f12 = nVar.c1()[2].f();
+            int g10 = nVar.c1()[0].g();
+            int g11 = nVar.c1()[1].g();
             Bitmap createBitmap = Bitmap.createBitmap(nVar.getWidth(), nVar.getHeight(), Bitmap.Config.ARGB_8888);
-            if (nativeConvertAndroid420ToBitmap(nVar.d1()[0].f(), g10, nVar.d1()[1].f(), g11, nVar.d1()[2].f(), g12, h10, h11, createBitmap, createBitmap.getRowBytes(), width, height) == 0) {
+            if (nativeConvertAndroid420ToBitmap(nVar.c1()[0].e(), f10, nVar.c1()[1].e(), f11, nVar.c1()[2].e(), f12, g10, g11, createBitmap, createBitmap.getRowBytes(), width, height) == 0) {
                 return createBitmap;
             }
             throw new UnsupportedOperationException("YUV to RGB conversion failed");
@@ -122,8 +122,8 @@ public abstract class ImageProcessingUtil {
             return null;
         } else {
             if (Log.isLoggable("MH", 3)) {
-                y0.a("ImageProcessingUtil", String.format(Locale.US, "Image processing performance profiling, duration: [%d], image count: %d", Long.valueOf(System.currentTimeMillis() - currentTimeMillis), Integer.valueOf(f2052a)));
-                f2052a++;
+                y0.a("ImageProcessingUtil", String.format(Locale.US, "Image processing performance profiling, duration: [%d], image count: %d", Long.valueOf(System.currentTimeMillis() - currentTimeMillis), Integer.valueOf(f2381a)));
+                f2381a++;
             }
             final n b10 = j1Var.b();
             if (b10 == null) {
@@ -147,27 +147,27 @@ public abstract class ImageProcessingUtil {
         int i13;
         int width = nVar.getWidth();
         int height = nVar.getHeight();
-        int g10 = nVar.d1()[0].g();
-        int g11 = nVar.d1()[1].g();
-        int g12 = nVar.d1()[2].g();
-        int h10 = nVar.d1()[0].h();
-        int h11 = nVar.d1()[1].h();
+        int f10 = nVar.c1()[0].f();
+        int f11 = nVar.c1()[1].f();
+        int f12 = nVar.c1()[2].f();
+        int g10 = nVar.c1()[0].g();
+        int g11 = nVar.c1()[1].g();
         if (z10) {
-            i11 = h10;
+            i11 = g10;
         } else {
             i11 = 0;
         }
         if (z10) {
-            i12 = h11;
+            i12 = g11;
         } else {
             i12 = 0;
         }
         if (z10) {
-            i13 = h11;
+            i13 = g11;
         } else {
             i13 = 0;
         }
-        if (nativeConvertAndroid420ToABGR(nVar.d1()[0].f(), g10, nVar.d1()[1].f(), g11, nVar.d1()[2].f(), g12, h10, h11, surface, byteBuffer, width, height, i11, i12, i13, i10) != 0) {
+        if (nativeConvertAndroid420ToABGR(nVar.c1()[0].e(), f10, nVar.c1()[1].e(), f11, nVar.c1()[2].e(), f12, g10, g11, surface, byteBuffer, width, height, i11, i12, i13, i10) != 0) {
             return a.ERROR_CONVERSION;
         }
         return a.SUCCESS;
@@ -186,7 +186,7 @@ public abstract class ImageProcessingUtil {
     }
 
     private static boolean l(n nVar) {
-        if (nVar.getFormat() == 35 && nVar.d1().length == 3) {
+        if (nVar.getFormat() == 35 && nVar.c1().length == 3) {
             return true;
         }
         return false;
@@ -233,15 +233,15 @@ public abstract class ImageProcessingUtil {
     private static a n(n nVar, ImageWriter imageWriter, ByteBuffer byteBuffer, ByteBuffer byteBuffer2, ByteBuffer byteBuffer3, int i10) {
         int width = nVar.getWidth();
         int height = nVar.getHeight();
-        int g10 = nVar.d1()[0].g();
-        int g11 = nVar.d1()[1].g();
-        int g12 = nVar.d1()[2].g();
-        int h10 = nVar.d1()[1].h();
+        int f10 = nVar.c1()[0].f();
+        int f11 = nVar.c1()[1].f();
+        int f12 = nVar.c1()[2].f();
+        int g10 = nVar.c1()[1].g();
         Image b10 = f0.a.b(imageWriter);
         if (b10 == null) {
             return a.ERROR_CONVERSION;
         }
-        if (nativeRotateYUV(nVar.d1()[0].f(), g10, nVar.d1()[1].f(), g11, nVar.d1()[2].f(), g12, h10, b10.getPlanes()[0].getBuffer(), b10.getPlanes()[0].getRowStride(), b10.getPlanes()[0].getPixelStride(), b10.getPlanes()[1].getBuffer(), b10.getPlanes()[1].getRowStride(), b10.getPlanes()[1].getPixelStride(), b10.getPlanes()[2].getBuffer(), b10.getPlanes()[2].getRowStride(), b10.getPlanes()[2].getPixelStride(), byteBuffer, byteBuffer2, byteBuffer3, width, height, i10) != 0) {
+        if (nativeRotateYUV(nVar.c1()[0].e(), f10, nVar.c1()[1].e(), f11, nVar.c1()[2].e(), f12, g10, b10.getPlanes()[0].getBuffer(), b10.getPlanes()[0].getRowStride(), b10.getPlanes()[0].getPixelStride(), b10.getPlanes()[1].getBuffer(), b10.getPlanes()[1].getRowStride(), b10.getPlanes()[1].getPixelStride(), b10.getPlanes()[2].getBuffer(), b10.getPlanes()[2].getRowStride(), b10.getPlanes()[2].getPixelStride(), byteBuffer, byteBuffer2, byteBuffer3, width, height, i10) != 0) {
             return a.ERROR_CONVERSION;
         }
         f0.a.d(imageWriter, b10);

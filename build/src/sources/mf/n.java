@@ -11,24 +11,24 @@ import java.util.Arrays;
 public final class n extends ef.d implements lf.d {
 
     /* renamed from: k  reason: collision with root package name */
-    private static final a.g f37510k;
+    private static final a.g f37092k;
 
     /* renamed from: l  reason: collision with root package name */
-    private static final a.AbstractC0294a f37511l;
+    private static final a.AbstractC0286a f37093l;
 
     /* renamed from: m  reason: collision with root package name */
-    private static final ef.a f37512m;
+    private static final ef.a f37094m;
 
     static {
         a.g gVar = new a.g();
-        f37510k = gVar;
+        f37092k = gVar;
         k kVar = new k();
-        f37511l = kVar;
-        f37512m = new ef.a("ModuleInstall.API", kVar, gVar);
+        f37093l = kVar;
+        f37094m = new ef.a("ModuleInstall.API", kVar, gVar);
     }
 
     public n(Context context) {
-        super(context, f37512m, a.d.f21557f, d.a.f21569c);
+        super(context, f37094m, a.d.f21490c, d.a.f21502c);
     }
 
     static final a C(boolean z10, ef.f... fVarArr) {
@@ -50,16 +50,16 @@ public final class n extends ef.d implements lf.d {
     public final Task i(ef.f... fVarArr) {
         final a C = C(false, fVarArr);
         if (C.c().isEmpty()) {
-            return xg.m.f(new lf.b(true, 0));
+            return yg.m.f(new lf.b(true, 0));
         }
         q.a a10 = ff.q.a();
-        a10.d(fg.i.f23013a);
+        a10.d(fg.i.f23314a);
         a10.e(27301);
         a10.c(false);
         a10.b(new ff.m() { // from class: mf.i
             @Override // ff.m
             public final void accept(Object obj, Object obj2) {
-                ((g) ((o) obj).C()).W0(new l(n.this, (xg.k) obj2), C);
+                ((g) ((o) obj).C()).W0(new l(n.this, (yg.k) obj2), C);
             }
         });
         return p(a10.a());
@@ -71,16 +71,16 @@ public final class n extends ef.d implements lf.d {
         fVar.b();
         fVar.c();
         if (b10.c().isEmpty()) {
-            return xg.m.f(new lf.g(0));
+            return yg.m.f(new lf.g(0));
         }
         q.a a10 = ff.q.a();
-        a10.d(fg.i.f23013a);
+        a10.d(fg.i.f23314a);
         a10.c(true);
         a10.e(27304);
         a10.b(new ff.m() { // from class: mf.j
             @Override // ff.m
             public final void accept(Object obj, Object obj2) {
-                ((g) ((o) obj).C()).X0(new m(n.this, (xg.k) obj2), b10, null);
+                ((g) ((o) obj).C()).X0(new m(n.this, (yg.k) obj2), b10, null);
             }
         });
         return p(a10.a());

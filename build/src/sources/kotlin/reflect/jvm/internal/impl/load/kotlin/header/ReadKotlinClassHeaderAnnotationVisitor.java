@@ -20,43 +20,43 @@ import org.jetbrains.annotations.NotNull;
 public class ReadKotlinClassHeaderAnnotationVisitor implements KotlinJvmBinaryClass.AnnotationVisitor {
 
     /* renamed from: j  reason: collision with root package name */
-    private static boolean f33256j;
+    private static boolean f33276j;
 
     /* renamed from: k  reason: collision with root package name */
-    private static final Map f33257k;
+    private static final Map f33277k;
 
     /* renamed from: a  reason: collision with root package name */
-    private int[] f33258a = null;
+    private int[] f33278a = null;
 
     /* renamed from: b  reason: collision with root package name */
-    private String f33259b = null;
+    private String f33279b = null;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f33260c = 0;
+    private int f33280c = 0;
 
     /* renamed from: d  reason: collision with root package name */
-    private String f33261d = null;
+    private String f33281d = null;
 
     /* renamed from: e  reason: collision with root package name */
-    private String[] f33262e = null;
+    private String[] f33282e = null;
 
     /* renamed from: f  reason: collision with root package name */
-    private String[] f33263f = null;
+    private String[] f33283f = null;
 
     /* renamed from: g  reason: collision with root package name */
-    private String[] f33264g = null;
+    private String[] f33284g = null;
 
     /* renamed from: h  reason: collision with root package name */
-    private KotlinClassHeader.Kind f33265h = null;
+    private KotlinClassHeader.Kind f33285h = null;
 
     /* renamed from: i  reason: collision with root package name */
-    private String[] f33266i = null;
+    private String[] f33286i = null;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     private static abstract class b implements KotlinJvmBinaryClass.AnnotationArrayArgumentVisitor {
 
         /* renamed from: a  reason: collision with root package name */
-        private final List f33267a = new ArrayList();
+        private final List f33287a = new ArrayList();
 
         private static /* synthetic */ void a(int i10) {
             Object[] objArr = new Object[3];
@@ -85,7 +85,7 @@ public class ReadKotlinClassHeaderAnnotationVisitor implements KotlinJvmBinaryCl
         @Override // kotlin.reflect.jvm.internal.impl.load.kotlin.KotlinJvmBinaryClass.AnnotationArrayArgumentVisitor
         public void visit(Object obj) {
             if (obj instanceof String) {
-                this.f33267a.add((String) obj);
+                this.f33287a.add((String) obj);
             }
         }
 
@@ -107,7 +107,7 @@ public class ReadKotlinClassHeaderAnnotationVisitor implements KotlinJvmBinaryCl
 
         @Override // kotlin.reflect.jvm.internal.impl.load.kotlin.KotlinJvmBinaryClass.AnnotationArrayArgumentVisitor
         public void visitEnd() {
-            b((String[]) this.f33267a.toArray(new String[0]));
+            b((String[]) this.f33287a.toArray(new String[0]));
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.load.kotlin.KotlinJvmBinaryClass.AnnotationArrayArgumentVisitor
@@ -139,7 +139,7 @@ public class ReadKotlinClassHeaderAnnotationVisitor implements KotlinJvmBinaryCl
                 if (strArr == null) {
                     a(0);
                 }
-                ReadKotlinClassHeaderAnnotationVisitor.this.f33262e = strArr;
+                ReadKotlinClassHeaderAnnotationVisitor.this.f33282e = strArr;
             }
         }
 
@@ -158,7 +158,7 @@ public class ReadKotlinClassHeaderAnnotationVisitor implements KotlinJvmBinaryCl
                 if (strArr == null) {
                     a(0);
                 }
-                ReadKotlinClassHeaderAnnotationVisitor.this.f33263f = strArr;
+                ReadKotlinClassHeaderAnnotationVisitor.this.f33283f = strArr;
             }
         }
 
@@ -201,27 +201,27 @@ public class ReadKotlinClassHeaderAnnotationVisitor implements KotlinJvmBinaryCl
                 String asString = name.asString();
                 if ("k".equals(asString)) {
                     if (obj instanceof Integer) {
-                        ReadKotlinClassHeaderAnnotationVisitor.this.f33265h = KotlinClassHeader.Kind.getById(((Integer) obj).intValue());
+                        ReadKotlinClassHeaderAnnotationVisitor.this.f33285h = KotlinClassHeader.Kind.getById(((Integer) obj).intValue());
                     }
                 } else if ("mv".equals(asString)) {
                     if (obj instanceof int[]) {
-                        ReadKotlinClassHeaderAnnotationVisitor.this.f33258a = (int[]) obj;
+                        ReadKotlinClassHeaderAnnotationVisitor.this.f33278a = (int[]) obj;
                     }
                 } else if ("xs".equals(asString)) {
                     if (obj instanceof String) {
                         String str = (String) obj;
                         if (!str.isEmpty()) {
-                            ReadKotlinClassHeaderAnnotationVisitor.this.f33259b = str;
+                            ReadKotlinClassHeaderAnnotationVisitor.this.f33279b = str;
                         }
                     }
                 } else if ("xi".equals(asString)) {
                     if (obj instanceof Integer) {
-                        ReadKotlinClassHeaderAnnotationVisitor.this.f33260c = ((Integer) obj).intValue();
+                        ReadKotlinClassHeaderAnnotationVisitor.this.f33280c = ((Integer) obj).intValue();
                     }
                 } else if ("pn".equals(asString) && (obj instanceof String)) {
                     String str2 = (String) obj;
                     if (!str2.isEmpty()) {
-                        ReadKotlinClassHeaderAnnotationVisitor.this.f33261d = str2;
+                        ReadKotlinClassHeaderAnnotationVisitor.this.f33281d = str2;
                     }
                 }
             }
@@ -293,7 +293,7 @@ public class ReadKotlinClassHeaderAnnotationVisitor implements KotlinJvmBinaryCl
                 if (strArr == null) {
                     a(0);
                 }
-                ReadKotlinClassHeaderAnnotationVisitor.this.f33266i = strArr;
+                ReadKotlinClassHeaderAnnotationVisitor.this.f33286i = strArr;
             }
         }
 
@@ -393,7 +393,7 @@ public class ReadKotlinClassHeaderAnnotationVisitor implements KotlinJvmBinaryCl
                 if (strArr == null) {
                     a(0);
                 }
-                ReadKotlinClassHeaderAnnotationVisitor.this.f33262e = strArr;
+                ReadKotlinClassHeaderAnnotationVisitor.this.f33282e = strArr;
             }
         }
 
@@ -412,7 +412,7 @@ public class ReadKotlinClassHeaderAnnotationVisitor implements KotlinJvmBinaryCl
                 if (strArr == null) {
                     a(0);
                 }
-                ReadKotlinClassHeaderAnnotationVisitor.this.f33263f = strArr;
+                ReadKotlinClassHeaderAnnotationVisitor.this.f33283f = strArr;
             }
         }
 
@@ -456,7 +456,7 @@ public class ReadKotlinClassHeaderAnnotationVisitor implements KotlinJvmBinaryCl
                 String asString = name.asString();
                 if ("version".equals(asString)) {
                     if (obj instanceof int[]) {
-                        ReadKotlinClassHeaderAnnotationVisitor.this.f33258a = (int[]) obj;
+                        ReadKotlinClassHeaderAnnotationVisitor.this.f33278a = (int[]) obj;
                     }
                 } else if ("multifileClassName".equals(asString)) {
                     ReadKotlinClassHeaderAnnotationVisitor readKotlinClassHeaderAnnotationVisitor = ReadKotlinClassHeaderAnnotationVisitor.this;
@@ -465,7 +465,7 @@ public class ReadKotlinClassHeaderAnnotationVisitor implements KotlinJvmBinaryCl
                     } else {
                         str = null;
                     }
-                    readKotlinClassHeaderAnnotationVisitor.f33259b = str;
+                    readKotlinClassHeaderAnnotationVisitor.f33279b = str;
                 }
             }
         }
@@ -520,12 +520,12 @@ public class ReadKotlinClassHeaderAnnotationVisitor implements KotlinJvmBinaryCl
 
     static {
         try {
-            f33256j = "true".equals(System.getProperty("kotlin.ignore.old.metadata"));
+            f33276j = "true".equals(System.getProperty("kotlin.ignore.old.metadata"));
         } catch (AccessControlException unused) {
-            f33256j = false;
+            f33276j = false;
         }
         HashMap hashMap = new HashMap();
-        f33257k = hashMap;
+        f33277k = hashMap;
         hashMap.put(ClassId.topLevel(new FqName("kotlin.jvm.internal.KotlinClass")), KotlinClassHeader.Kind.CLASS);
         hashMap.put(ClassId.topLevel(new FqName("kotlin.jvm.internal.KotlinFileFacade")), KotlinClassHeader.Kind.FILE_FACADE);
         hashMap.put(ClassId.topLevel(new FqName("kotlin.jvm.internal.KotlinMultifileClass")), KotlinClassHeader.Kind.MULTIFILE_CLASS);
@@ -546,7 +546,7 @@ public class ReadKotlinClassHeaderAnnotationVisitor implements KotlinJvmBinaryCl
     }
 
     private boolean j() {
-        KotlinClassHeader.Kind kind = this.f33265h;
+        KotlinClassHeader.Kind kind = this.f33285h;
         if (kind != KotlinClassHeader.Kind.CLASS && kind != KotlinClassHeader.Kind.FILE_FACADE && kind != KotlinClassHeader.Kind.MULTIFILE_CLASS_PART) {
             return false;
         }
@@ -556,27 +556,27 @@ public class ReadKotlinClassHeaderAnnotationVisitor implements KotlinJvmBinaryCl
     public KotlinClassHeader createHeader(MetadataVersion metadataVersion) {
         boolean z10;
         byte[] bArr = null;
-        if (this.f33265h == null || this.f33258a == null) {
+        if (this.f33285h == null || this.f33278a == null) {
             return null;
         }
-        int[] iArr = this.f33258a;
-        if ((this.f33260c & 8) != 0) {
+        int[] iArr = this.f33278a;
+        if ((this.f33280c & 8) != 0) {
             z10 = true;
         } else {
             z10 = false;
         }
         MetadataVersion metadataVersion2 = new MetadataVersion(iArr, z10);
         if (!metadataVersion2.isCompatible(metadataVersion)) {
-            this.f33264g = this.f33262e;
-            this.f33262e = null;
-        } else if (j() && this.f33262e == null) {
+            this.f33284g = this.f33282e;
+            this.f33282e = null;
+        } else if (j() && this.f33282e == null) {
             return null;
         }
-        String[] strArr = this.f33266i;
+        String[] strArr = this.f33286i;
         if (strArr != null) {
             bArr = BitEncoding.decodeBytes(strArr);
         }
-        return new KotlinClassHeader(this.f33265h, metadataVersion2, this.f33262e, this.f33264g, this.f33263f, this.f33259b, this.f33260c, this.f33261d, bArr);
+        return new KotlinClassHeader(this.f33285h, metadataVersion2, this.f33282e, this.f33284g, this.f33283f, this.f33279b, this.f33280c, this.f33281d, bArr);
     }
 
     public KotlinClassHeader createHeaderWithDefaultMetadataVersion() {
@@ -599,10 +599,10 @@ public class ReadKotlinClassHeaderAnnotationVisitor implements KotlinJvmBinaryCl
         if (asSingleFqName.equals(JvmAnnotationNames.SERIALIZED_IR_FQ_NAME)) {
             return new d();
         }
-        if (f33256j || this.f33265h != null || (kind = (KotlinClassHeader.Kind) f33257k.get(classId)) == null) {
+        if (f33276j || this.f33285h != null || (kind = (KotlinClassHeader.Kind) f33277k.get(classId)) == null) {
             return null;
         }
-        this.f33265h = kind;
+        this.f33285h = kind;
         return new e();
     }
 

@@ -40,18 +40,18 @@ public final class StyleElements_FontWeightContainerJsonAdapter extends h {
     @NotNull
     public StyleElements.FontWeightContainer fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         StyleElements.FontWeight fontWeight = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 fontWeight = (StyleElements.FontWeight) this.nullableFontWeightAdapter.fromJson(reader);
             }
         }
-        reader.z();
+        reader.D();
         return new StyleElements.FontWeightContainer(fontWeight);
     }
 
@@ -60,9 +60,9 @@ public final class StyleElements_FontWeightContainerJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (fontWeightContainer != null) {
             writer.k();
-            writer.W("base");
+            writer.J("base");
             this.nullableFontWeightAdapter.toJson(writer, fontWeightContainer.getBase());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

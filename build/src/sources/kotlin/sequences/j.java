@@ -9,11 +9,11 @@ public abstract class j {
 
     public abstract Object d(Iterator it, Continuation continuation);
 
-    public final Object h(Sequence sequence, Continuation continuation) {
+    public final Object g(Sequence sequence, Continuation continuation) {
         Object d10 = d(sequence.iterator(), continuation);
-        if (d10 == ur.b.f()) {
+        if (d10 == wr.b.f()) {
             return d10;
         }
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 }

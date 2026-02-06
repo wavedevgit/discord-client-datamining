@@ -1,42 +1,165 @@
 package sk;
+
+import hk.g;
+import java.text.DecimalFormat;
+import lk.e;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class b {
+abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f49728a;
+    private static final byte[] f49971a = {53, 54, 43, 44, 45, 46, 47, 48, 37, 38};
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f49729b;
+    private static final byte[] f49972b = {55, 56, 57, 58, 59, 60, 49, 50, 51, 52};
 
-    public b(int i10, int i11) {
-        this.f49728a = i10;
-        this.f49729b = i11;
-    }
+    /* renamed from: c  reason: collision with root package name */
+    private static final byte[] f49973c = {39, 40, 41, 42, 31, 32};
 
-    public final int a() {
-        return this.f49729b;
-    }
+    /* renamed from: d  reason: collision with root package name */
+    private static final byte[] f49974d = {33, 34, 35, 36, 25, 26, 27, 28, 29, 30, 19, 20, 21, 22, 23, 24, 13, 14, 15, 16, 17, 18, 7, 8, 9, 10, 11, 12, 1, 2};
 
-    public final int b() {
-        return this.f49728a;
-    }
+    /* renamed from: e  reason: collision with root package name */
+    private static final byte[][] f49975e = {new byte[]{39, 40, 41, 42, 31, 32}, new byte[]{33, 34, 35, 36, 25, 26}, new byte[]{27, 28, 29, 30, 19, 20}, new byte[]{21, 22, 23, 24, 13, 14}, new byte[]{15, 16, 17, 18, 7, 8}, new byte[]{9, 10, 11, 12, 1, 2}};
 
-    public final boolean equals(Object obj) {
-        if (!(obj instanceof b)) {
-            return false;
+    /* renamed from: f  reason: collision with root package name */
+    private static final String[] f49976f = {"\rABCDEFGHIJKLMNOPQRSTUVWXYZ\ufffa\u001c\u001d\u001e\ufffb ￼\"#$%&'()*+,-./0123456789:\ufff1\ufff2\ufff3\ufff4\ufff8", "`abcdefghijklmnopqrstuvwxyz\ufffa\u001c\u001d\u001e\ufffb{￼}~\u007f;<=>?[\\]^_ ,./:@!|￼\ufff5\ufff6￼\ufff0\ufff2\ufff3\ufff4\ufff7", "ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚ\ufffa\u001c\u001d\u001e\ufffbÛÜÝÞßª¬±²³µ¹º¼½¾\u0080\u0081\u0082\u0083\u0084\u0085\u0086\u0087\u0088\u0089\ufff7 \ufff9\ufff3\ufff4\ufff8", "àáâãäåæçèéêëìíîïðñòóôõö÷øùú\ufffa\u001c\u001d\u001e\ufffbûüýþÿ¡¨«¯°´·¸»¿\u008a\u008b\u008c\u008d\u008e\u008f\u0090\u0091\u0092\u0093\u0094\ufff7 \ufff2\ufff9\ufff4\ufff8", "\u0000\u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000b\f\r\u000e\u000f\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001a\ufffa￼￼\u001b\ufffb\u001c\u001d\u001e\u001f\u009f ¢£¤¥¦§©\u00ad®¶\u0095\u0096\u0097\u0098\u0099\u009a\u009b\u009c\u009d\u009e\ufff7 \ufff2\ufff3\ufff9\ufff8"};
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static e a(byte[] bArr, int i10) {
+        String h10;
+        StringBuilder sb2 = new StringBuilder(144);
+        if (i10 != 2 && i10 != 3) {
+            if (i10 != 4) {
+                if (i10 == 5) {
+                    sb2.append(e(bArr, 1, 77));
+                }
+            } else {
+                sb2.append(e(bArr, 1, 93));
+            }
+        } else {
+            if (i10 == 2) {
+                int f10 = f(bArr);
+                int g10 = g(bArr);
+                if (g10 <= 10) {
+                    h10 = new DecimalFormat("0000000000".substring(0, g10)).format(f10);
+                } else {
+                    throw g.a();
+                }
+            } else {
+                h10 = h(bArr);
+            }
+            DecimalFormat decimalFormat = new DecimalFormat("000");
+            String format = decimalFormat.format(c(bArr));
+            String format2 = decimalFormat.format(i(bArr));
+            sb2.append(e(bArr, 10, 84));
+            if (sb2.toString().startsWith("[)>\u001e01\u001d")) {
+                sb2.insert(9, h10 + (char) 29 + format + (char) 29 + format2 + (char) 29);
+            } else {
+                sb2.insert(0, h10 + (char) 29 + format + (char) 29 + format2 + (char) 29);
+            }
         }
-        b bVar = (b) obj;
-        if (this.f49728a != bVar.f49728a || this.f49729b != bVar.f49729b) {
-            return false;
+        return new e(bArr, sb2.toString(), null, String.valueOf(i10));
+    }
+
+    private static int b(int i10, byte[] bArr) {
+        int i11 = i10 - 1;
+        if (((1 << (5 - (i11 % 6))) & bArr[i11 / 6]) != 0) {
+            return 1;
         }
-        return true;
+        return 0;
     }
 
-    public final int hashCode() {
-        return this.f49728a ^ this.f49729b;
+    private static int c(byte[] bArr) {
+        return d(bArr, f49971a);
     }
 
-    public final String toString() {
-        return this.f49728a + "(" + this.f49729b + ')';
+    private static int d(byte[] bArr, byte[] bArr2) {
+        int i10 = 0;
+        for (int i11 = 0; i11 < bArr2.length; i11++) {
+            i10 += b(bArr2[i11], bArr) << ((bArr2.length - i11) - 1);
+        }
+        return i10;
+    }
+
+    private static String e(byte[] bArr, int i10, int i11) {
+        StringBuilder sb2 = new StringBuilder();
+        int i12 = i10;
+        int i13 = -1;
+        int i14 = 0;
+        int i15 = 0;
+        while (i12 < i10 + i11) {
+            char charAt = f49976f[i14].charAt(bArr[i12]);
+            switch (charAt) {
+                case 65520:
+                case 65521:
+                case 65522:
+                case 65523:
+                case 65524:
+                    i15 = i14;
+                    i14 = charAt - 65520;
+                    i13 = 1;
+                    break;
+                case 65525:
+                    i13 = 2;
+                    i15 = i14;
+                    i14 = 0;
+                    break;
+                case 65526:
+                    i13 = 3;
+                    i15 = i14;
+                    i14 = 0;
+                    break;
+                case 65527:
+                    i13 = -1;
+                    i14 = 0;
+                    break;
+                case 65528:
+                    i13 = -1;
+                    i14 = 1;
+                    break;
+                case 65529:
+                    i13 = -1;
+                    break;
+                case 65530:
+                default:
+                    sb2.append(charAt);
+                    break;
+                case 65531:
+                    i12 += 5;
+                    sb2.append(new DecimalFormat("000000000").format((bArr[i12 + 1] << 24) + (bArr[i12 + 2] << 18) + (bArr[i12 + 3] << 12) + (bArr[i12 + 4] << 6) + bArr[i12]));
+                    break;
+            }
+            int i16 = i13 - 1;
+            if (i13 == 0) {
+                i14 = i15;
+            }
+            i12++;
+            i13 = i16;
+        }
+        while (sb2.length() > 0 && sb2.charAt(sb2.length() - 1) == 65532) {
+            sb2.setLength(sb2.length() - 1);
+        }
+        return sb2.toString();
+    }
+
+    private static int f(byte[] bArr) {
+        return d(bArr, f49974d);
+    }
+
+    private static int g(byte[] bArr) {
+        return d(bArr, f49973c);
+    }
+
+    private static String h(byte[] bArr) {
+        byte[][] bArr2 = f49975e;
+        StringBuilder sb2 = new StringBuilder(bArr2.length);
+        for (byte[] bArr3 : bArr2) {
+            sb2.append(f49976f[0].charAt(d(bArr, bArr3)));
+        }
+        return sb2.toString();
+    }
+
+    private static int i(byte[] bArr) {
+        return d(bArr, f49972b);
     }
 }

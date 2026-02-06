@@ -47,7 +47,7 @@ public final class InputInternationalDb_IdTypeJsonAdapter extends h {
     @NotNull
     public InputInternationalDb.IdType fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         String str = null;
         String str2 = null;
         Boolean bool = null;
@@ -57,10 +57,10 @@ public final class InputInternationalDb_IdTypeJsonAdapter extends h {
         String str6 = null;
         String str7 = null;
         while (reader.hasNext()) {
-            switch (reader.W(this.options)) {
+            switch (reader.J(this.options)) {
                 case -1:
                     reader.E0();
-                    reader.P();
+                    reader.S();
                     break;
                 case 0:
                     str = (String) this.nullableStringAdapter.fromJson(reader);
@@ -88,7 +88,7 @@ public final class InputInternationalDb_IdTypeJsonAdapter extends h {
                     break;
             }
         }
-        reader.z();
+        reader.D();
         return new InputInternationalDb.IdType(str, str2, bool, str3, str4, str5, str6, str7);
     }
 
@@ -97,23 +97,23 @@ public final class InputInternationalDb_IdTypeJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (idType != null) {
             writer.k();
-            writer.W("mask");
+            writer.J("mask");
             this.nullableStringAdapter.toJson(writer, idType.getMask());
-            writer.W(ReactTextInputShadowNode.PROP_PLACEHOLDER);
+            writer.J(ReactTextInputShadowNode.PROP_PLACEHOLDER);
             this.nullableStringAdapter.toJson(writer, idType.getPlaceholder());
-            writer.W("secure");
+            writer.J("secure");
             this.nullableBooleanAdapter.toJson(writer, idType.getSecure());
-            writer.W("countryName");
+            writer.J("countryName");
             this.nullableStringAdapter.toJson(writer, idType.getCountryName());
-            writer.W("countryCode");
+            writer.J("countryCode");
             this.nullableStringAdapter.toJson(writer, idType.getCountryCode());
-            writer.W("idType");
+            writer.J("idType");
             this.nullableStringAdapter.toJson(writer, idType.getIdType());
-            writer.W(StackTraceHelper.NAME_KEY);
+            writer.J(StackTraceHelper.NAME_KEY);
             this.nullableStringAdapter.toJson(writer, idType.getName());
-            writer.W("description");
+            writer.J("description");
             this.nullableStringAdapter.toJson(writer, idType.getDescription());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

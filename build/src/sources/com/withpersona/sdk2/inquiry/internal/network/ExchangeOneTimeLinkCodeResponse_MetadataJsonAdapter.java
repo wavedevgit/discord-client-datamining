@@ -13,39 +13,39 @@ import org.jetbrains.annotations.NotNull;
 public final class ExchangeOneTimeLinkCodeResponse_MetadataJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19221a;
+    private final m.b f19201a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f19222b;
+    private final com.squareup.moshi.h f19202b;
 
     public ExchangeOneTimeLinkCodeResponse_MetadataJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("accessToken");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19221a = a10;
+        this.f19201a = a10;
         com.squareup.moshi.h f10 = moshi.f(String.class, x0.d(), "accessToken");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19222b = f10;
+        this.f19202b = f10;
     }
 
     @Override // com.squareup.moshi.h
     /* renamed from: a */
     public ExchangeOneTimeLinkCodeResponse.Metadata fromJson(m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         String str = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.f19221a);
-            if (W != -1) {
-                if (W == 0) {
-                    str = (String) this.f19222b.fromJson(reader);
+            int J = reader.J(this.f19201a);
+            if (J != -1) {
+                if (J == 0) {
+                    str = (String) this.f19202b.fromJson(reader);
                 }
             } else {
                 reader.E0();
-                reader.P();
+                reader.S();
             }
         }
-        reader.z();
+        reader.D();
         return new ExchangeOneTimeLinkCodeResponse.Metadata(str);
     }
 
@@ -55,9 +55,9 @@ public final class ExchangeOneTimeLinkCodeResponse_MetadataJsonAdapter extends c
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (metadata != null) {
             writer.k();
-            writer.W("accessToken");
-            this.f19222b.toJson(writer, metadata.a());
-            writer.E();
+            writer.J("accessToken");
+            this.f19202b.toJson(writer, metadata.a());
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

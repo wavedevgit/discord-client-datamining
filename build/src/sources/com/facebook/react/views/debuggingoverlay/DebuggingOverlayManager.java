@@ -90,7 +90,7 @@ public final class DebuggingOverlayManager extends SimpleViewManager<DebuggingOv
                         throw e10;
                     }
                     ReactSoftExceptionLogger.logSoftException(REACT_CLASS, new ReactNoCrashSoftException("Unexpected payload for highlighting elements: every element should have x, y, width, height fields"));
-                    Unit unit = Unit.f31988a;
+                    Unit unit = Unit.f32008a;
                     z10 = false;
                 }
             }
@@ -135,7 +135,7 @@ public final class DebuggingOverlayManager extends SimpleViewManager<DebuggingOv
                         throw e10;
                     }
                     ReactSoftExceptionLogger.logSoftException(REACT_CLASS, new ReactNoCrashSoftException("Unexpected payload for highlighting trace updates: rectangle field should have x, y, width, height fields"));
-                    Unit unit = Unit.f31988a;
+                    Unit unit = Unit.f32008a;
                     z11 = false;
                 }
             }

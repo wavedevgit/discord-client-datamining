@@ -5,23 +5,23 @@ import kotlin.jvm.internal.Intrinsics;
 public final class m {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f44871a;
+    private final String f43668a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f44872b;
+    private final int f43669b;
 
     public m(String workSpecId, int i10) {
         Intrinsics.checkNotNullParameter(workSpecId, "workSpecId");
-        this.f44871a = workSpecId;
-        this.f44872b = i10;
+        this.f43668a = workSpecId;
+        this.f43669b = i10;
     }
 
     public final int a() {
-        return this.f44872b;
+        return this.f43669b;
     }
 
     public final String b() {
-        return this.f44871a;
+        return this.f43668a;
     }
 
     public boolean equals(Object obj) {
@@ -32,17 +32,17 @@ public final class m {
             return false;
         }
         m mVar = (m) obj;
-        if (Intrinsics.areEqual(this.f44871a, mVar.f44871a) && this.f44872b == mVar.f44872b) {
+        if (Intrinsics.areEqual(this.f43668a, mVar.f43668a) && this.f43669b == mVar.f43669b) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (this.f44871a.hashCode() * 31) + Integer.hashCode(this.f44872b);
+        return (this.f43668a.hashCode() * 31) + Integer.hashCode(this.f43669b);
     }
 
     public String toString() {
-        return "WorkGenerationalId(workSpecId=" + this.f44871a + ", generation=" + this.f44872b + ')';
+        return "WorkGenerationalId(workSpecId=" + this.f43668a + ", generation=" + this.f43669b + ')';
     }
 }

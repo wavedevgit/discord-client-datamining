@@ -6,9 +6,9 @@ import com.discord.chat.bridge.summaries.Summary$$serializer;
 import com.facebook.react.devsupport.StackTraceHelper;
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
 import com.facebook.react.uimanager.ViewProps;
-import dt.m;
-import gt.h;
-import gt.v1;
+import ft.m;
+import jt.h;
+import jt.v1;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
@@ -17,8 +17,8 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
 import org.jetbrains.annotations.NotNull;
-@Metadata(d1 = {"\u0000T\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u001a\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 :2\u00020\u0001:\u00029:BS\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\b\u001a\u00020\u0007\u0012\u0006\u0010\t\u001a\u00020\u0005\u0012\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u000b\u0012\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\u000b\u0012\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u000e¢\u0006\u0004\b\u000f\u0010\u0010Bg\b\u0010\u0012\u0006\u0010\u0011\u001a\u00020\u0005\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010\b\u001a\u0004\u0018\u00010\u0007\u0012\u0006\u0010\t\u001a\u00020\u0005\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\f\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\r\u001a\u0004\u0018\u00010\u000e\u0012\b\u0010\u0012\u001a\u0004\u0018\u00010\u0013¢\u0006\u0004\b\u000f\u0010\u0014J\t\u0010\"\u001a\u00020\u0003HÆ\u0003J\t\u0010#\u001a\u00020\u0005HÆ\u0003J\t\u0010$\u001a\u00020\u0007HÆ\u0003J\t\u0010%\u001a\u00020\u0007HÆ\u0003J\t\u0010&\u001a\u00020\u0005HÆ\u0003J\u0010\u0010'\u001a\u0004\u0018\u00010\u000bHÆ\u0003¢\u0006\u0002\u0010\u001eJ\u0010\u0010(\u001a\u0004\u0018\u00010\u000bHÆ\u0003¢\u0006\u0002\u0010\u001eJ\u000b\u0010)\u001a\u0004\u0018\u00010\u000eHÆ\u0003Jd\u0010*\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00072\b\b\u0002\u0010\b\u001a\u00020\u00072\b\b\u0002\u0010\t\u001a\u00020\u00052\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u000eHÆ\u0001¢\u0006\u0002\u0010+J\u0013\u0010,\u001a\u00020\u000b2\b\u0010-\u001a\u0004\u0018\u00010.HÖ\u0003J\t\u0010/\u001a\u00020\u0005HÖ\u0001J\t\u00100\u001a\u00020\u0007HÖ\u0001J%\u00101\u001a\u0002022\u0006\u00103\u001a\u00020\u00002\u0006\u00104\u001a\u0002052\u0006\u00106\u001a\u000207H\u0001¢\u0006\u0002\b8R\u0014\u0010\u0002\u001a\u00020\u0003X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0016R\u0014\u0010\u0004\u001a\u00020\u0005X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0018R\u0011\u0010\u0006\u001a\u00020\u0007¢\u0006\b\n\u0000\u001a\u0004\b\u0019\u0010\u001aR\u0011\u0010\b\u001a\u00020\u0007¢\u0006\b\n\u0000\u001a\u0004\b\u001b\u0010\u001aR\u0011\u0010\t\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u001c\u0010\u0018R\u0015\u0010\n\u001a\u0004\u0018\u00010\u000b¢\u0006\n\n\u0002\u0010\u001f\u001a\u0004\b\u001d\u0010\u001eR\u0015\u0010\f\u001a\u0004\u0018\u00010\u000b¢\u0006\n\n\u0002\u0010\u001f\u001a\u0004\b\f\u0010\u001eR\u0013\u0010\r\u001a\u0004\u0018\u00010\u000e¢\u0006\b\n\u0000\u001a\u0004\b \u0010!¨\u0006;"}, d2 = {"Lcom/discord/chat/bridge/row/SeparatorRow;", "Lcom/discord/chat/bridge/row/Row;", "changeType", "Lcom/discord/chat/bridge/ChangeType;", "index", "", "text", "", StackTraceHelper.ID_KEY, ViewProps.COLOR, "scrollTo", "", "isBeforeContent", "summary", "Lcom/discord/chat/bridge/summaries/Summary;", "<init>", "(Lcom/discord/chat/bridge/ChangeType;ILjava/lang/String;Ljava/lang/String;ILjava/lang/Boolean;Ljava/lang/Boolean;Lcom/discord/chat/bridge/summaries/Summary;)V", "seen0", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILcom/discord/chat/bridge/ChangeType;ILjava/lang/String;Ljava/lang/String;ILjava/lang/Boolean;Ljava/lang/Boolean;Lcom/discord/chat/bridge/summaries/Summary;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "getChangeType", "()Lcom/discord/chat/bridge/ChangeType;", "getIndex", "()I", "getText", "()Ljava/lang/String;", "getId", "getColor", "getScrollTo", "()Ljava/lang/Boolean;", "Ljava/lang/Boolean;", "getSummary", "()Lcom/discord/chat/bridge/summaries/Summary;", "component1", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "copy", "(Lcom/discord/chat/bridge/ChangeType;ILjava/lang/String;Ljava/lang/String;ILjava/lang/Boolean;Ljava/lang/Boolean;Lcom/discord/chat/bridge/summaries/Summary;)Lcom/discord/chat/bridge/row/SeparatorRow;", "equals", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @m
+@Metadata(d1 = {"\u0000T\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u001a\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 :2\u00020\u0001:\u00029:BS\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\b\u001a\u00020\u0007\u0012\u0006\u0010\t\u001a\u00020\u0005\u0012\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u000b\u0012\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\u000b\u0012\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u000e¢\u0006\u0004\b\u000f\u0010\u0010Bg\b\u0010\u0012\u0006\u0010\u0011\u001a\u00020\u0005\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010\b\u001a\u0004\u0018\u00010\u0007\u0012\u0006\u0010\t\u001a\u00020\u0005\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\f\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\r\u001a\u0004\u0018\u00010\u000e\u0012\b\u0010\u0012\u001a\u0004\u0018\u00010\u0013¢\u0006\u0004\b\u000f\u0010\u0014J\t\u0010\"\u001a\u00020\u0003HÆ\u0003J\t\u0010#\u001a\u00020\u0005HÆ\u0003J\t\u0010$\u001a\u00020\u0007HÆ\u0003J\t\u0010%\u001a\u00020\u0007HÆ\u0003J\t\u0010&\u001a\u00020\u0005HÆ\u0003J\u0010\u0010'\u001a\u0004\u0018\u00010\u000bHÆ\u0003¢\u0006\u0002\u0010\u001eJ\u0010\u0010(\u001a\u0004\u0018\u00010\u000bHÆ\u0003¢\u0006\u0002\u0010\u001eJ\u000b\u0010)\u001a\u0004\u0018\u00010\u000eHÆ\u0003Jd\u0010*\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00072\b\b\u0002\u0010\b\u001a\u00020\u00072\b\b\u0002\u0010\t\u001a\u00020\u00052\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u000eHÆ\u0001¢\u0006\u0002\u0010+J\u0013\u0010,\u001a\u00020\u000b2\b\u0010-\u001a\u0004\u0018\u00010.HÖ\u0003J\t\u0010/\u001a\u00020\u0005HÖ\u0001J\t\u00100\u001a\u00020\u0007HÖ\u0001J%\u00101\u001a\u0002022\u0006\u00103\u001a\u00020\u00002\u0006\u00104\u001a\u0002052\u0006\u00106\u001a\u000207H\u0001¢\u0006\u0002\b8R\u0014\u0010\u0002\u001a\u00020\u0003X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0016R\u0014\u0010\u0004\u001a\u00020\u0005X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0018R\u0011\u0010\u0006\u001a\u00020\u0007¢\u0006\b\n\u0000\u001a\u0004\b\u0019\u0010\u001aR\u0011\u0010\b\u001a\u00020\u0007¢\u0006\b\n\u0000\u001a\u0004\b\u001b\u0010\u001aR\u0011\u0010\t\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u001c\u0010\u0018R\u0015\u0010\n\u001a\u0004\u0018\u00010\u000b¢\u0006\n\n\u0002\u0010\u001f\u001a\u0004\b\u001d\u0010\u001eR\u0015\u0010\f\u001a\u0004\u0018\u00010\u000b¢\u0006\n\n\u0002\u0010\u001f\u001a\u0004\b\f\u0010\u001eR\u0013\u0010\r\u001a\u0004\u0018\u00010\u000e¢\u0006\b\n\u0000\u001a\u0004\b \u0010!¨\u0006;"}, d2 = {"Lcom/discord/chat/bridge/row/SeparatorRow;", "Lcom/discord/chat/bridge/row/Row;", "changeType", "Lcom/discord/chat/bridge/ChangeType;", "index", "", "text", "", StackTraceHelper.ID_KEY, ViewProps.COLOR, "scrollTo", "", "isBeforeContent", "summary", "Lcom/discord/chat/bridge/summaries/Summary;", "<init>", "(Lcom/discord/chat/bridge/ChangeType;ILjava/lang/String;Ljava/lang/String;ILjava/lang/Boolean;Ljava/lang/Boolean;Lcom/discord/chat/bridge/summaries/Summary;)V", "seen0", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILcom/discord/chat/bridge/ChangeType;ILjava/lang/String;Ljava/lang/String;ILjava/lang/Boolean;Ljava/lang/Boolean;Lcom/discord/chat/bridge/summaries/Summary;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "getChangeType", "()Lcom/discord/chat/bridge/ChangeType;", "getIndex", "()I", "getText", "()Ljava/lang/String;", "getId", "getColor", "getScrollTo", "()Ljava/lang/Boolean;", "Ljava/lang/Boolean;", "getSummary", "()Lcom/discord/chat/bridge/summaries/Summary;", "component1", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "copy", "(Lcom/discord/chat/bridge/ChangeType;ILjava/lang/String;Ljava/lang/String;ILjava/lang/Boolean;Ljava/lang/Boolean;Lcom/discord/chat/bridge/summaries/Summary;)Lcom/discord/chat/bridge/row/SeparatorRow;", "equals", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class SeparatorRow extends Row {
     @NotNull
@@ -29,7 +29,7 @@ public final class SeparatorRow extends Row {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f8658id;
+    private final String f8557id;
     private final int index;
     private final Boolean isBeforeContent;
     private final Boolean scrollTo;
@@ -62,7 +62,7 @@ public final class SeparatorRow extends Row {
         this.changeType = changeType;
         this.index = i11;
         this.text = str;
-        this.f8658id = str2;
+        this.f8557id = str2;
         this.color = i12;
         if ((i10 & 32) == 0) {
             this.scrollTo = null;
@@ -92,7 +92,7 @@ public final class SeparatorRow extends Row {
             str = separatorRow.text;
         }
         if ((i12 & 8) != 0) {
-            str2 = separatorRow.f8658id;
+            str2 = separatorRow.f8557id;
         }
         if ((i12 & 16) != 0) {
             i11 = separatorRow.color;
@@ -114,19 +114,19 @@ public final class SeparatorRow extends Row {
     }
 
     public static final /* synthetic */ void write$Self$chat_release(SeparatorRow separatorRow, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
-        compositeEncoder.l(serialDescriptor, 0, ChangeType.Serializer.INSTANCE, separatorRow.getChangeType());
-        compositeEncoder.v(serialDescriptor, 1, separatorRow.getIndex());
-        compositeEncoder.x(serialDescriptor, 2, separatorRow.text);
-        compositeEncoder.x(serialDescriptor, 3, separatorRow.f8658id);
-        compositeEncoder.v(serialDescriptor, 4, separatorRow.color);
-        if (compositeEncoder.z(serialDescriptor, 5) || separatorRow.scrollTo != null) {
-            compositeEncoder.A(serialDescriptor, 5, h.f25266a, separatorRow.scrollTo);
+        compositeEncoder.s(serialDescriptor, 0, ChangeType.Serializer.INSTANCE, separatorRow.getChangeType());
+        compositeEncoder.x(serialDescriptor, 1, separatorRow.getIndex());
+        compositeEncoder.z(serialDescriptor, 2, separatorRow.text);
+        compositeEncoder.z(serialDescriptor, 3, separatorRow.f8557id);
+        compositeEncoder.x(serialDescriptor, 4, separatorRow.color);
+        if (compositeEncoder.A(serialDescriptor, 5) || separatorRow.scrollTo != null) {
+            compositeEncoder.l(serialDescriptor, 5, h.f31005a, separatorRow.scrollTo);
         }
-        if (compositeEncoder.z(serialDescriptor, 6) || separatorRow.isBeforeContent != null) {
-            compositeEncoder.A(serialDescriptor, 6, h.f25266a, separatorRow.isBeforeContent);
+        if (compositeEncoder.A(serialDescriptor, 6) || separatorRow.isBeforeContent != null) {
+            compositeEncoder.l(serialDescriptor, 6, h.f31005a, separatorRow.isBeforeContent);
         }
-        if (compositeEncoder.z(serialDescriptor, 7) || separatorRow.summary != null) {
-            compositeEncoder.A(serialDescriptor, 7, Summary$$serializer.INSTANCE, separatorRow.summary);
+        if (compositeEncoder.A(serialDescriptor, 7) || separatorRow.summary != null) {
+            compositeEncoder.l(serialDescriptor, 7, Summary$$serializer.INSTANCE, separatorRow.summary);
         }
     }
 
@@ -146,7 +146,7 @@ public final class SeparatorRow extends Row {
 
     @NotNull
     public final String component4() {
-        return this.f8658id;
+        return this.f8557id;
     }
 
     public final int component5() {
@@ -179,7 +179,7 @@ public final class SeparatorRow extends Row {
         }
         if (obj instanceof SeparatorRow) {
             SeparatorRow separatorRow = (SeparatorRow) obj;
-            return this.changeType == separatorRow.changeType && this.index == separatorRow.index && Intrinsics.areEqual(this.text, separatorRow.text) && Intrinsics.areEqual(this.f8658id, separatorRow.f8658id) && this.color == separatorRow.color && Intrinsics.areEqual(this.scrollTo, separatorRow.scrollTo) && Intrinsics.areEqual(this.isBeforeContent, separatorRow.isBeforeContent) && Intrinsics.areEqual(this.summary, separatorRow.summary);
+            return this.changeType == separatorRow.changeType && this.index == separatorRow.index && Intrinsics.areEqual(this.text, separatorRow.text) && Intrinsics.areEqual(this.f8557id, separatorRow.f8557id) && this.color == separatorRow.color && Intrinsics.areEqual(this.scrollTo, separatorRow.scrollTo) && Intrinsics.areEqual(this.isBeforeContent, separatorRow.isBeforeContent) && Intrinsics.areEqual(this.summary, separatorRow.summary);
         }
         return false;
     }
@@ -196,7 +196,7 @@ public final class SeparatorRow extends Row {
 
     @NotNull
     public final String getId() {
-        return this.f8658id;
+        return this.f8557id;
     }
 
     @Override // com.discord.chat.bridge.row.Row
@@ -218,7 +218,7 @@ public final class SeparatorRow extends Row {
     }
 
     public int hashCode() {
-        int hashCode = ((((((((this.changeType.hashCode() * 31) + Integer.hashCode(this.index)) * 31) + this.text.hashCode()) * 31) + this.f8658id.hashCode()) * 31) + Integer.hashCode(this.color)) * 31;
+        int hashCode = ((((((((this.changeType.hashCode() * 31) + Integer.hashCode(this.index)) * 31) + this.text.hashCode()) * 31) + this.f8557id.hashCode()) * 31) + Integer.hashCode(this.color)) * 31;
         Boolean bool = this.scrollTo;
         int hashCode2 = (hashCode + (bool == null ? 0 : bool.hashCode())) * 31;
         Boolean bool2 = this.isBeforeContent;
@@ -236,7 +236,7 @@ public final class SeparatorRow extends Row {
         ChangeType changeType = this.changeType;
         int i10 = this.index;
         String str = this.text;
-        String str2 = this.f8658id;
+        String str2 = this.f8557id;
         int i11 = this.color;
         Boolean bool = this.scrollTo;
         Boolean bool2 = this.isBeforeContent;
@@ -257,7 +257,7 @@ public final class SeparatorRow extends Row {
         this.changeType = changeType;
         this.index = i10;
         this.text = text;
-        this.f8658id = id2;
+        this.f8557id = id2;
         this.color = i11;
         this.scrollTo = bool;
         this.isBeforeContent = bool2;

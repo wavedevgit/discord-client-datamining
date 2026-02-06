@@ -42,7 +42,7 @@ import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import lc.e;
-import mi.s;
+import ni.s;
 import org.jetbrains.annotations.NotNull;
 import qd.h0;
 import qd.w0;
@@ -54,7 +54,7 @@ public final class MediaPlayer {
     @NotNull
     public static final Factory Factory = new Factory(null);
     @NotNull
-    private static final PlayerSettings defaultSettings = new PlayerSettings(20000, 20000, 1000, 1000, false, true);
+    private static final PlayerSettings defaultSettings = new PlayerSettings(20000, 20000, 1000, 1000, false, true, HttpEngine.DEFAULT);
     @NotNull
     private Function1<? super MediaPlayFinishedAnalytics, Unit> analyticsListener;
     @NotNull
@@ -284,7 +284,7 @@ public final class MediaPlayer {
             }
             SimpleExoPlayer a11 = new SimpleExoPlayer.a(context, k10).c(a10).d(new DefaultTrackSelector(context)).a();
             Intrinsics.checkNotNullExpressionValue(a11, "build(...)");
-            return new MediaPlayer(a11, CacheDataSourceFactory.Companion.getInstance(), playerSettings);
+            return new MediaPlayer(a11, CacheDataSourceFactory.Companion.getInstance(playerSettings.getHttpEngine()), playerSettings);
         }
 
         @NotNull
@@ -293,129 +293,6 @@ public final class MediaPlayer {
         }
 
         private Factory() {
-        }
-    }
-
-    @Metadata(d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0010\u000b\n\u0002\b\u0016\n\u0002\u0010\u000e\n\u0000\b\u0086\b\u0018\u00002\u00020\u0001B7\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0003\u0012\u0006\u0010\u0006\u001a\u00020\u0003\u0012\u0006\u0010\u0007\u001a\u00020\b\u0012\u0006\u0010\t\u001a\u00020\b¢\u0006\u0004\b\n\u0010\u000bJ\t\u0010\u0014\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0015\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0016\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0017\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0018\u001a\u00020\bHÆ\u0003J\t\u0010\u0019\u001a\u00020\bHÆ\u0003JE\u0010\u001a\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00032\b\b\u0002\u0010\u0005\u001a\u00020\u00032\b\b\u0002\u0010\u0006\u001a\u00020\u00032\b\b\u0002\u0010\u0007\u001a\u00020\b2\b\b\u0002\u0010\t\u001a\u00020\bHÆ\u0001J\u0013\u0010\u001b\u001a\u00020\b2\b\u0010\u001c\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u001d\u001a\u00020\u0003HÖ\u0001J\t\u0010\u001e\u001a\u00020\u001fHÖ\u0001R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\f\u0010\rR\u0011\u0010\u0004\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\rR\u0011\u0010\u0005\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\rR\u0011\u0010\u0006\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\rR\u0011\u0010\u0007\u001a\u00020\b¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u0012R\u0011\u0010\t\u001a\u00020\b¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u0012¨\u0006 "}, d2 = {"Lcom/discord/media_player/MediaPlayer$PlayerSettings;", "", "minBufferMs", "", "maxBufferMs", "bufferForPlaybackMs", "bufferForPlaybackAfterRebufferMs", "enableDecoderFallback", "", "enableAsyncBufferQueueing", "<init>", "(IIIIZZ)V", "getMinBufferMs", "()I", "getMaxBufferMs", "getBufferForPlaybackMs", "getBufferForPlaybackAfterRebufferMs", "getEnableDecoderFallback", "()Z", "getEnableAsyncBufferQueueing", "component1", "component2", "component3", "component4", "component5", "component6", "copy", "equals", "other", "hashCode", "toString", "", "media_player_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class PlayerSettings {
-        private final int bufferForPlaybackAfterRebufferMs;
-        private final int bufferForPlaybackMs;
-        private final boolean enableAsyncBufferQueueing;
-        private final boolean enableDecoderFallback;
-        private final int maxBufferMs;
-        private final int minBufferMs;
-
-        public PlayerSettings(int i10, int i11, int i12, int i13, boolean z10, boolean z11) {
-            this.minBufferMs = i10;
-            this.maxBufferMs = i11;
-            this.bufferForPlaybackMs = i12;
-            this.bufferForPlaybackAfterRebufferMs = i13;
-            this.enableDecoderFallback = z10;
-            this.enableAsyncBufferQueueing = z11;
-        }
-
-        public static /* synthetic */ PlayerSettings copy$default(PlayerSettings playerSettings, int i10, int i11, int i12, int i13, boolean z10, boolean z11, int i14, Object obj) {
-            if ((i14 & 1) != 0) {
-                i10 = playerSettings.minBufferMs;
-            }
-            if ((i14 & 2) != 0) {
-                i11 = playerSettings.maxBufferMs;
-            }
-            if ((i14 & 4) != 0) {
-                i12 = playerSettings.bufferForPlaybackMs;
-            }
-            if ((i14 & 8) != 0) {
-                i13 = playerSettings.bufferForPlaybackAfterRebufferMs;
-            }
-            if ((i14 & 16) != 0) {
-                z10 = playerSettings.enableDecoderFallback;
-            }
-            if ((i14 & 32) != 0) {
-                z11 = playerSettings.enableAsyncBufferQueueing;
-            }
-            boolean z12 = z10;
-            boolean z13 = z11;
-            return playerSettings.copy(i10, i11, i12, i13, z12, z13);
-        }
-
-        public final int component1() {
-            return this.minBufferMs;
-        }
-
-        public final int component2() {
-            return this.maxBufferMs;
-        }
-
-        public final int component3() {
-            return this.bufferForPlaybackMs;
-        }
-
-        public final int component4() {
-            return this.bufferForPlaybackAfterRebufferMs;
-        }
-
-        public final boolean component5() {
-            return this.enableDecoderFallback;
-        }
-
-        public final boolean component6() {
-            return this.enableAsyncBufferQueueing;
-        }
-
-        @NotNull
-        public final PlayerSettings copy(int i10, int i11, int i12, int i13, boolean z10, boolean z11) {
-            return new PlayerSettings(i10, i11, i12, i13, z10, z11);
-        }
-
-        public boolean equals(Object obj) {
-            if (this == obj) {
-                return true;
-            }
-            if (obj instanceof PlayerSettings) {
-                PlayerSettings playerSettings = (PlayerSettings) obj;
-                return this.minBufferMs == playerSettings.minBufferMs && this.maxBufferMs == playerSettings.maxBufferMs && this.bufferForPlaybackMs == playerSettings.bufferForPlaybackMs && this.bufferForPlaybackAfterRebufferMs == playerSettings.bufferForPlaybackAfterRebufferMs && this.enableDecoderFallback == playerSettings.enableDecoderFallback && this.enableAsyncBufferQueueing == playerSettings.enableAsyncBufferQueueing;
-            }
-            return false;
-        }
-
-        public final int getBufferForPlaybackAfterRebufferMs() {
-            return this.bufferForPlaybackAfterRebufferMs;
-        }
-
-        public final int getBufferForPlaybackMs() {
-            return this.bufferForPlaybackMs;
-        }
-
-        public final boolean getEnableAsyncBufferQueueing() {
-            return this.enableAsyncBufferQueueing;
-        }
-
-        public final boolean getEnableDecoderFallback() {
-            return this.enableDecoderFallback;
-        }
-
-        public final int getMaxBufferMs() {
-            return this.maxBufferMs;
-        }
-
-        public final int getMinBufferMs() {
-            return this.minBufferMs;
-        }
-
-        public int hashCode() {
-            return (((((((((Integer.hashCode(this.minBufferMs) * 31) + Integer.hashCode(this.maxBufferMs)) * 31) + Integer.hashCode(this.bufferForPlaybackMs)) * 31) + Integer.hashCode(this.bufferForPlaybackAfterRebufferMs)) * 31) + Boolean.hashCode(this.enableDecoderFallback)) * 31) + Boolean.hashCode(this.enableAsyncBufferQueueing);
-        }
-
-        @NotNull
-        public String toString() {
-            int i10 = this.minBufferMs;
-            int i11 = this.maxBufferMs;
-            int i12 = this.bufferForPlaybackMs;
-            int i13 = this.bufferForPlaybackAfterRebufferMs;
-            boolean z10 = this.enableDecoderFallback;
-            boolean z11 = this.enableAsyncBufferQueueing;
-            return "PlayerSettings(minBufferMs=" + i10 + ", maxBufferMs=" + i11 + ", bufferForPlaybackMs=" + i12 + ", bufferForPlaybackAfterRebufferMs=" + i13 + ", enableDecoderFallback=" + z10 + ", enableAsyncBufferQueueing=" + z11 + ")";
         }
     }
 
@@ -578,10 +455,10 @@ public final class MediaPlayer {
                 log.e(simpleName, "Playback error for feature: " + str, error);
                 if (error instanceof j) {
                     j jVar = (j) error;
-                    if (jVar.f12604t == 1) {
+                    if (jVar.f12565t == 1) {
                         String simpleName2 = AnonymousClass1.class.getSimpleName();
                         Intrinsics.checkNotNullExpressionValue(simpleName2, "getSimpleName(...)");
-                        int i10 = jVar.f12606v;
+                        int i10 = jVar.f12567v;
                         MediaSource mediaSource2 = MediaPlayer.this.getMediaSource();
                         if (mediaSource2 != null) {
                             str2 = mediaSource2.getFeatureTag();
@@ -596,7 +473,7 @@ public final class MediaPlayer {
                         if (defaultTrackSelector != null) {
                             DefaultTrackSelector.d.a E = defaultTrackSelector.E();
                             Intrinsics.checkNotNullExpressionValue(E, "buildUponParameters(...)");
-                            E.v0(jVar.f12606v, true);
+                            E.v0(jVar.f12567v, true);
                             defaultTrackSelector.b0(E.A());
                             MediaPlayer.this.exoPlayer.d();
                             MediaPlayer.this.exoPlayer.e();
@@ -615,7 +492,7 @@ public final class MediaPlayer {
             }
 
             @Override // com.google.android.exoplayer2.Player.b
-            @or.c
+            @qr.c
             public void onPlayerStateChanged(boolean z10, int i10) {
                 if (z10 && i10 == 3) {
                     MediaPlayer.this.exoPlayer.e();
@@ -854,11 +731,11 @@ public final class MediaPlayer {
                 Intrinsics.checkNotNullParameter(eventTime, "eventTime");
                 Intrinsics.checkNotNullParameter(loadEventInfo, "loadEventInfo");
                 Intrinsics.checkNotNullParameter(mediaLoadData, "mediaLoadData");
-                if (loadEventInfo.f12740d.isEmpty()) {
+                if (loadEventInfo.f12701d.isEmpty()) {
                     return;
                 }
                 DeviceResourceUsageRecorder.Companion companion = DeviceResourceUsageRecorder.Companion;
-                companion.setMediaPlayerBytesReceived(companion.getMediaPlayerBytesReceived() + loadEventInfo.f12743g);
+                companion.setMediaPlayerBytesReceived(companion.getMediaPlayerBytesReceived() + loadEventInfo.f12704g);
             }
 
             @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
@@ -866,11 +743,11 @@ public final class MediaPlayer {
                 Intrinsics.checkNotNullParameter(eventTime, "eventTime");
                 Intrinsics.checkNotNullParameter(loadEventInfo, "loadEventInfo");
                 Intrinsics.checkNotNullParameter(mediaLoadData, "mediaLoadData");
-                if (loadEventInfo.f12740d.isEmpty()) {
+                if (loadEventInfo.f12701d.isEmpty()) {
                     return;
                 }
                 DeviceResourceUsageRecorder.Companion companion = DeviceResourceUsageRecorder.Companion;
-                companion.setMediaPlayerBytesReceived(companion.getMediaPlayerBytesReceived() + loadEventInfo.f12743g);
+                companion.setMediaPlayerBytesReceived(companion.getMediaPlayerBytesReceived() + loadEventInfo.f12704g);
             }
 
             @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
@@ -879,11 +756,11 @@ public final class MediaPlayer {
                 Intrinsics.checkNotNullParameter(loadEventInfo, "loadEventInfo");
                 Intrinsics.checkNotNullParameter(mediaLoadData, "mediaLoadData");
                 Intrinsics.checkNotNullParameter(error, "error");
-                if (loadEventInfo.f12740d.isEmpty()) {
+                if (loadEventInfo.f12701d.isEmpty()) {
                     return;
                 }
                 DeviceResourceUsageRecorder.Companion companion = DeviceResourceUsageRecorder.Companion;
-                companion.setMediaPlayerBytesReceived(companion.getMediaPlayerBytesReceived() + loadEventInfo.f12743g);
+                companion.setMediaPlayerBytesReceived(companion.getMediaPlayerBytesReceived() + loadEventInfo.f12704g);
             }
 
             @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
@@ -1129,33 +1006,33 @@ public final class MediaPlayer {
             return;
         }
         Timeline.d dVar = new Timeline.d();
-        eventTime.f12026b.r(eventTime.f12027c, dVar);
-        long c10 = oi.g.c(dVar.f(), mediaPlayer.exoPlayer.getDuration(), mediaPlayer.exoPlayer.d0());
+        eventTime.f11925b.r(eventTime.f11926c, dVar);
+        long c10 = pi.g.c(dVar.f(), mediaPlayer.exoPlayer.getDuration(), mediaPlayer.exoPlayer.d0());
         Function1<? super MediaPlayFinishedAnalytics, Unit> function1 = mediaPlayer.analyticsListener;
         long b10 = playbackStats.b();
         long c11 = playbackStats.c();
-        int i10 = playbackStats.f12050n;
-        int i11 = playbackStats.f12049m;
-        long j10 = playbackStats.f12045i;
-        MediaItem.h hVar = dVar.f11989i.f11727i;
+        int i10 = playbackStats.f11949n;
+        int i11 = playbackStats.f11948m;
+        long j10 = playbackStats.f11944i;
+        MediaItem.h hVar = dVar.f11888i.f11626i;
         String str = null;
         if (hVar != null) {
-            uri = hVar.f11816d;
+            uri = hVar.f11715d;
         } else {
             uri = null;
         }
         String valueOf = String.valueOf(uri);
         float f10 = ((float) c10) / 1000.0f;
-        MediaItem.h hVar2 = dVar.f11989i.f11727i;
+        MediaItem.h hVar2 = dVar.f11888i.f11626i;
         if (hVar2 != null) {
-            str = hVar2.f11817e;
+            str = hVar2.f11716e;
         }
         function1.invoke(new MediaPlayFinishedAnalytics(b10, c11, i10, i11, j10, valueOf, f10, str, playbackStats.J, playbackStats.K, playbackStats.G, playbackStats.F));
     }
 
     public static final Unit analyticsListener$lambda$2(MediaPlayFinishedAnalytics it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     public final void configureDefaultAudioTrackOverride(DefaultTrackSelector defaultTrackSelector) {
@@ -1356,7 +1233,7 @@ public final class MediaPlayer {
                 }
                 int i10 = 0;
                 for (Tracks.a aVar : arrayList) {
-                    i10 += aVar.f12011d;
+                    i10 += aVar.f11910d;
                 }
                 if (i10 > 1) {
                     try {
@@ -1402,7 +1279,7 @@ public final class MediaPlayer {
 
     public static final Unit eventListener$lambda$0(Event it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     private final boolean findAndConfigureAudioRenderer(DefaultTrackSelector defaultTrackSelector, MappingTrackSelector.MappedTrackInfo mappedTrackInfo, int i10) {
@@ -1411,8 +1288,8 @@ public final class MediaPlayer {
         }
         w0 f10 = mappedTrackInfo.f(i10);
         Intrinsics.checkNotNullExpressionValue(f10, "getTrackGroups(...)");
-        int i11 = f10.f47844d;
-        if (i11 > 1 && i11 != 0 && f10.b(0).f47828d != 0) {
+        int i11 = f10.f46892d;
+        if (i11 > 1 && i11 != 0 && f10.b(0).f46876d != 0) {
             DefaultTrackSelector.d.a E = defaultTrackSelector.E();
             Intrinsics.checkNotNullExpressionValue(E, "buildUponParameters(...)");
             E.s0(false);
@@ -1447,7 +1324,7 @@ public final class MediaPlayer {
     }
 
     public static final Unit volumeListener$lambda$1(float f10) {
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     public final float bufferedPercentage() {
@@ -1649,5 +1526,153 @@ public final class MediaPlayer {
 
     public final boolean shouldPlay() {
         return this.exoPlayer.B();
+    }
+
+    @Metadata(d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0018\n\u0002\u0010\u000e\n\u0000\b\u0086\b\u0018\u00002\u00020\u0001BA\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0003\u0012\u0006\u0010\u0006\u001a\u00020\u0003\u0012\u0006\u0010\u0007\u001a\u00020\b\u0012\u0006\u0010\t\u001a\u00020\b\u0012\b\b\u0002\u0010\n\u001a\u00020\u000b¢\u0006\u0004\b\f\u0010\rJ\t\u0010\u0018\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0019\u001a\u00020\u0003HÆ\u0003J\t\u0010\u001a\u001a\u00020\u0003HÆ\u0003J\t\u0010\u001b\u001a\u00020\u0003HÆ\u0003J\t\u0010\u001c\u001a\u00020\bHÆ\u0003J\t\u0010\u001d\u001a\u00020\bHÆ\u0003J\t\u0010\u001e\u001a\u00020\u000bHÆ\u0003JO\u0010\u001f\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00032\b\b\u0002\u0010\u0005\u001a\u00020\u00032\b\b\u0002\u0010\u0006\u001a\u00020\u00032\b\b\u0002\u0010\u0007\u001a\u00020\b2\b\b\u0002\u0010\t\u001a\u00020\b2\b\b\u0002\u0010\n\u001a\u00020\u000bHÆ\u0001J\u0013\u0010 \u001a\u00020\b2\b\u0010!\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\"\u001a\u00020\u0003HÖ\u0001J\t\u0010#\u001a\u00020$HÖ\u0001R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u000fR\u0011\u0010\u0004\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u000fR\u0011\u0010\u0005\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u000fR\u0011\u0010\u0006\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\u000fR\u0011\u0010\u0007\u001a\u00020\b¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u0014R\u0011\u0010\t\u001a\u00020\b¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0014R\u0011\u0010\n\u001a\u00020\u000b¢\u0006\b\n\u0000\u001a\u0004\b\u0016\u0010\u0017¨\u0006%"}, d2 = {"Lcom/discord/media_player/MediaPlayer$PlayerSettings;", "", "minBufferMs", "", "maxBufferMs", "bufferForPlaybackMs", "bufferForPlaybackAfterRebufferMs", "enableDecoderFallback", "", "enableAsyncBufferQueueing", "httpEngine", "Lcom/discord/media_player/HttpEngine;", "<init>", "(IIIIZZLcom/discord/media_player/HttpEngine;)V", "getMinBufferMs", "()I", "getMaxBufferMs", "getBufferForPlaybackMs", "getBufferForPlaybackAfterRebufferMs", "getEnableDecoderFallback", "()Z", "getEnableAsyncBufferQueueing", "getHttpEngine", "()Lcom/discord/media_player/HttpEngine;", "component1", "component2", "component3", "component4", "component5", "component6", "component7", "copy", "equals", "other", "hashCode", "toString", "", "media_player_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    public static final class PlayerSettings {
+        private final int bufferForPlaybackAfterRebufferMs;
+        private final int bufferForPlaybackMs;
+        private final boolean enableAsyncBufferQueueing;
+        private final boolean enableDecoderFallback;
+        @NotNull
+        private final HttpEngine httpEngine;
+        private final int maxBufferMs;
+        private final int minBufferMs;
+
+        public PlayerSettings(int i10, int i11, int i12, int i13, boolean z10, boolean z11, @NotNull HttpEngine httpEngine) {
+            Intrinsics.checkNotNullParameter(httpEngine, "httpEngine");
+            this.minBufferMs = i10;
+            this.maxBufferMs = i11;
+            this.bufferForPlaybackMs = i12;
+            this.bufferForPlaybackAfterRebufferMs = i13;
+            this.enableDecoderFallback = z10;
+            this.enableAsyncBufferQueueing = z11;
+            this.httpEngine = httpEngine;
+        }
+
+        public static /* synthetic */ PlayerSettings copy$default(PlayerSettings playerSettings, int i10, int i11, int i12, int i13, boolean z10, boolean z11, HttpEngine httpEngine, int i14, Object obj) {
+            if ((i14 & 1) != 0) {
+                i10 = playerSettings.minBufferMs;
+            }
+            if ((i14 & 2) != 0) {
+                i11 = playerSettings.maxBufferMs;
+            }
+            if ((i14 & 4) != 0) {
+                i12 = playerSettings.bufferForPlaybackMs;
+            }
+            if ((i14 & 8) != 0) {
+                i13 = playerSettings.bufferForPlaybackAfterRebufferMs;
+            }
+            if ((i14 & 16) != 0) {
+                z10 = playerSettings.enableDecoderFallback;
+            }
+            if ((i14 & 32) != 0) {
+                z11 = playerSettings.enableAsyncBufferQueueing;
+            }
+            if ((i14 & 64) != 0) {
+                httpEngine = playerSettings.httpEngine;
+            }
+            boolean z12 = z11;
+            HttpEngine httpEngine2 = httpEngine;
+            boolean z13 = z10;
+            int i15 = i12;
+            return playerSettings.copy(i10, i11, i15, i13, z13, z12, httpEngine2);
+        }
+
+        public final int component1() {
+            return this.minBufferMs;
+        }
+
+        public final int component2() {
+            return this.maxBufferMs;
+        }
+
+        public final int component3() {
+            return this.bufferForPlaybackMs;
+        }
+
+        public final int component4() {
+            return this.bufferForPlaybackAfterRebufferMs;
+        }
+
+        public final boolean component5() {
+            return this.enableDecoderFallback;
+        }
+
+        public final boolean component6() {
+            return this.enableAsyncBufferQueueing;
+        }
+
+        @NotNull
+        public final HttpEngine component7() {
+            return this.httpEngine;
+        }
+
+        @NotNull
+        public final PlayerSettings copy(int i10, int i11, int i12, int i13, boolean z10, boolean z11, @NotNull HttpEngine httpEngine) {
+            Intrinsics.checkNotNullParameter(httpEngine, "httpEngine");
+            return new PlayerSettings(i10, i11, i12, i13, z10, z11, httpEngine);
+        }
+
+        public boolean equals(Object obj) {
+            if (this == obj) {
+                return true;
+            }
+            if (obj instanceof PlayerSettings) {
+                PlayerSettings playerSettings = (PlayerSettings) obj;
+                return this.minBufferMs == playerSettings.minBufferMs && this.maxBufferMs == playerSettings.maxBufferMs && this.bufferForPlaybackMs == playerSettings.bufferForPlaybackMs && this.bufferForPlaybackAfterRebufferMs == playerSettings.bufferForPlaybackAfterRebufferMs && this.enableDecoderFallback == playerSettings.enableDecoderFallback && this.enableAsyncBufferQueueing == playerSettings.enableAsyncBufferQueueing && this.httpEngine == playerSettings.httpEngine;
+            }
+            return false;
+        }
+
+        public final int getBufferForPlaybackAfterRebufferMs() {
+            return this.bufferForPlaybackAfterRebufferMs;
+        }
+
+        public final int getBufferForPlaybackMs() {
+            return this.bufferForPlaybackMs;
+        }
+
+        public final boolean getEnableAsyncBufferQueueing() {
+            return this.enableAsyncBufferQueueing;
+        }
+
+        public final boolean getEnableDecoderFallback() {
+            return this.enableDecoderFallback;
+        }
+
+        @NotNull
+        public final HttpEngine getHttpEngine() {
+            return this.httpEngine;
+        }
+
+        public final int getMaxBufferMs() {
+            return this.maxBufferMs;
+        }
+
+        public final int getMinBufferMs() {
+            return this.minBufferMs;
+        }
+
+        public int hashCode() {
+            return (((((((((((Integer.hashCode(this.minBufferMs) * 31) + Integer.hashCode(this.maxBufferMs)) * 31) + Integer.hashCode(this.bufferForPlaybackMs)) * 31) + Integer.hashCode(this.bufferForPlaybackAfterRebufferMs)) * 31) + Boolean.hashCode(this.enableDecoderFallback)) * 31) + Boolean.hashCode(this.enableAsyncBufferQueueing)) * 31) + this.httpEngine.hashCode();
+        }
+
+        @NotNull
+        public String toString() {
+            int i10 = this.minBufferMs;
+            int i11 = this.maxBufferMs;
+            int i12 = this.bufferForPlaybackMs;
+            int i13 = this.bufferForPlaybackAfterRebufferMs;
+            boolean z10 = this.enableDecoderFallback;
+            boolean z11 = this.enableAsyncBufferQueueing;
+            HttpEngine httpEngine = this.httpEngine;
+            return "PlayerSettings(minBufferMs=" + i10 + ", maxBufferMs=" + i11 + ", bufferForPlaybackMs=" + i12 + ", bufferForPlaybackAfterRebufferMs=" + i13 + ", enableDecoderFallback=" + z10 + ", enableAsyncBufferQueueing=" + z11 + ", httpEngine=" + httpEngine + ")";
+        }
+
+        public /* synthetic */ PlayerSettings(int i10, int i11, int i12, int i13, boolean z10, boolean z11, HttpEngine httpEngine, int i14, DefaultConstructorMarker defaultConstructorMarker) {
+            this(i10, i11, i12, i13, z10, z11, (i14 & 64) != 0 ? HttpEngine.DEFAULT : httpEngine);
+        }
     }
 }

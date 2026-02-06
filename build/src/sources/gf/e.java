@@ -9,60 +9,60 @@ public class e extends hf.a {
     public static final Parcelable.Creator<e> CREATOR = new f1();
 
     /* renamed from: d  reason: collision with root package name */
-    private final s f24796d;
+    private final s f25049d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f24797e;
+    private final boolean f25050e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final boolean f24798i;
+    private final boolean f25051i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final int[] f24799o;
+    private final int[] f25052o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final int f24800p;
+    private final int f25053p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final int[] f24801q;
+    private final int[] f25054q;
 
     public e(s sVar, boolean z10, boolean z11, int[] iArr, int i10, int[] iArr2) {
-        this.f24796d = sVar;
-        this.f24797e = z10;
-        this.f24798i = z11;
-        this.f24799o = iArr;
-        this.f24800p = i10;
-        this.f24801q = iArr2;
+        this.f25049d = sVar;
+        this.f25050e = z10;
+        this.f25051i = z11;
+        this.f25052o = iArr;
+        this.f25053p = i10;
+        this.f25054q = iArr2;
     }
 
     public int b() {
-        return this.f24800p;
+        return this.f25053p;
     }
 
     public int[] c() {
-        return this.f24799o;
+        return this.f25052o;
     }
 
     public int[] d() {
-        return this.f24801q;
+        return this.f25054q;
     }
 
     public boolean e() {
-        return this.f24797e;
+        return this.f25050e;
     }
 
     public boolean f() {
-        return this.f24798i;
+        return this.f25051i;
     }
 
-    public final s g() {
-        return this.f24796d;
+    public final s h() {
+        return this.f25049d;
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i10) {
         int a10 = hf.c.a(parcel);
-        hf.c.q(parcel, 1, this.f24796d, i10, false);
+        hf.c.q(parcel, 1, this.f25049d, i10, false);
         hf.c.c(parcel, 2, e());
         hf.c.c(parcel, 3, f());
         hf.c.m(parcel, 4, c(), false);

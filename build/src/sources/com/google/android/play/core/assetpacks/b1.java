@@ -11,7 +11,7 @@ public abstract class b1 {
         Bundle bundle;
         z0 z0Var = new z0("notification_bundle:", bVar, null);
         d(z0Var);
-        bundle = z0Var.f16117c;
+        bundle = z0Var.f16097c;
         return bundle;
     }
 
@@ -20,7 +20,7 @@ public abstract class b1 {
         Bundle bundle;
         z0 z0Var = new z0("session_bundle:", bVar, null);
         e(z0Var);
-        bundle = z0Var.f16117c;
+        bundle = z0Var.f16097c;
         return bundle;
     }
 
@@ -53,16 +53,16 @@ public abstract class b1 {
         y0Var.e(SharedPreferencesKey.SESSION_ID);
         y0Var.e("app_version_code");
         for (String str : y0Var.g("pack_names")) {
-            y0Var.b(xh.b.a("pack_version", str));
-            y0Var.a(xh.b.a("pack_version_tag", str));
-            y0Var.e(xh.b.a("status", str));
-            y0Var.b(xh.b.a("total_bytes_to_download", str));
-            for (String str2 : y0Var.g(xh.b.a("slice_ids", str))) {
-                y0Var.c(xh.b.b("chunk_intents", str, str2));
-                y0Var.a(xh.b.b("uncompressed_hash_sha256", str, str2));
-                y0Var.b(xh.b.b("uncompressed_size", str, str2));
-                y0Var.e(xh.b.b("patch_format", str, str2));
-                y0Var.e(xh.b.b("compression_format", str, str2));
+            y0Var.b(yh.b.a("pack_version", str));
+            y0Var.a(yh.b.a("pack_version_tag", str));
+            y0Var.e(yh.b.a("status", str));
+            y0Var.b(yh.b.a("total_bytes_to_download", str));
+            for (String str2 : y0Var.g(yh.b.a("slice_ids", str))) {
+                y0Var.c(yh.b.b("chunk_intents", str, str2));
+                y0Var.a(yh.b.b("uncompressed_hash_sha256", str, str2));
+                y0Var.b(yh.b.b("uncompressed_size", str, str2));
+                y0Var.e(yh.b.b("patch_format", str, str2));
+                y0Var.e(yh.b.b("compression_format", str, str2));
             }
         }
     }

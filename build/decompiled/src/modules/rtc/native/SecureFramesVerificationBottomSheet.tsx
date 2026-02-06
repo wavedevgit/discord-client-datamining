@@ -141,7 +141,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/rtc/native/SecureFramesVerificationBottomSheet.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun67033: for (var _fun67033_ip = 0;;) switch (_fun67033_ip) {
+        _fun67061: for (var _fun67061_ip = 0;;) switch (_fun67061_ip) {
             case 0:
                 var1 = arg0;
                 var23 = var1.title;
@@ -173,13 +173,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2[0] = var14;
                 var2[1] = var1;
                 var1 = function() { // Environment: var0
-                    _fun67034: for (var _fun67034_ip = 0;;) switch (_fun67034_ip) {
+                    _fun67062: for (var _fun67062_ip = 0;;) switch (_fun67062_ip) {
                         case 0:
                             var2 = _closure2_slot1;
                             var1 = null;
                             if (!(var1 != var2)) {
-                                _fun67034_ip = 77;
-                                continue _fun67034
+                                _fun67062_ip = 77;
+                                continue _fun67062
                             }
                         case 13:
                             var3 = _closure2_slot1;
@@ -367,8 +367,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9.title = var16;
                 var15 = var15 != var14;
                 if (!var15) {
-                    _fun67033_ip = 844;
-                    continue _fun67033
+                    _fun67061_ip = 844;
+                    continue _fun67061
                 }
             case 807:
                 var18 = _closure1_slot8;
@@ -412,4 +412,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 8285, 33, 1297, 671, 8290, 3278, 4933, 5213, 5211, 4904, 1234, 3941, 4080, 4860, 8299, 8302, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 8291, 33, 1297, 671, 8296, 3280, 4934, 5214, 5212, 4905, 1234, 3943, 4081, 4861, 8305, 8308, 2]);

@@ -1,91 +1,136 @@
 package zp;
 
-import android.view.View;
-import android.view.ViewGroup;
-import androidx.core.graphics.Insets;
-import androidx.core.view.WindowInsetsCompat;
-import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import kotlin.Unit;
-import kotlin.jvm.functions.Function0;
-import kotlin.jvm.functions.Function1;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.jvm.internal.k;
+import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
+import kotlinx.coroutines.CoroutineScope;
+import kotlinx.coroutines.flow.MutableStateFlow;
+import kotlinx.coroutines.i;
+import os.j1;
+import os.m0;
+import rs.l0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class b {
+public final class b {
 
+    /* renamed from: a  reason: collision with root package name */
+    private final vp.e f56420a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private final CoroutineScope f56421b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private final MutableStateFlow f56422c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private boolean f56423d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private boolean f56424e;
+
+    /* renamed from: f  reason: collision with root package name */
+    private boolean f56425f;
+
+    /* renamed from: g  reason: collision with root package name */
+    private boolean f56426g;
+
+    /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a extends BottomSheetBehavior.g {
+    public static final class a extends k implements Function2 {
 
-        /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Function0 f56140a;
+        /* renamed from: d  reason: collision with root package name */
+        int f56427d;
 
-        /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ View f56141b;
+        /* renamed from: i  reason: collision with root package name */
+        final /* synthetic */ zp.a f56429i;
 
-        a(Function0 function0, View view) {
-            this.f56140a = function0;
-            this.f56141b = view;
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        a(zp.a aVar, Continuation continuation) {
+            super(2, continuation);
+            this.f56429i = aVar;
         }
 
-        @Override // com.google.android.material.bottomsheet.BottomSheetBehavior.g
-        public void b(View bottomSheet, float f10) {
-            View view;
-            Intrinsics.checkNotNullParameter(bottomSheet, "bottomSheet");
-            if (f10 > 0.0f && (view = this.f56141b) != null) {
-                view.setVisibility(0);
-            }
-            View view2 = this.f56141b;
-            if (view2 != null) {
-                view2.setAlpha(kotlin.ranges.d.c(f10, 0.0f));
-            }
+        @Override // kotlin.coroutines.jvm.internal.a
+        public final Continuation create(Object obj, Continuation continuation) {
+            return new a(this.f56429i, continuation);
         }
 
-        @Override // com.google.android.material.bottomsheet.BottomSheetBehavior.g
-        public void c(View bottomSheet, int i10) {
-            Intrinsics.checkNotNullParameter(bottomSheet, "bottomSheet");
-            if (i10 == 4 || i10 == 5) {
-                this.f56140a.invoke();
-                View view = this.f56141b;
-                if (view != null) {
-                    view.setVisibility(8);
+        @Override // kotlin.coroutines.jvm.internal.a
+        public final Object invokeSuspend(Object obj) {
+            Object f10 = wr.b.f();
+            int i10 = this.f56427d;
+            if (i10 != 0) {
+                if (i10 == 1) {
+                    kotlin.c.b(obj);
+                } else {
+                    throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                }
+            } else {
+                kotlin.c.b(obj);
+                MutableStateFlow b10 = b.this.f56420a.b();
+                to.c cVar = new to.c(this.f56429i.b(), this.f56429i.c(), this.f56429i.e());
+                this.f56427d = 1;
+                if (b10.emit(cVar, this) == f10) {
+                    return f10;
                 }
             }
+            return Unit.f32008a;
+        }
+
+        @Override // kotlin.jvm.functions.Function2
+        public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
         }
     }
 
-    public static final void b(BottomSheetBehavior bottomSheetBehavior, Function0 onCancel, final View bottomSheet, View view, View view2) {
-        Intrinsics.checkNotNullParameter(bottomSheetBehavior, "<this>");
-        Intrinsics.checkNotNullParameter(onCancel, "onCancel");
-        Intrinsics.checkNotNullParameter(bottomSheet, "bottomSheet");
-        bottomSheetBehavior.c0(new a(onCancel, view2));
-        bottomSheetBehavior.X0(true);
-        if (view != null) {
-            bottomSheet = view;
-        }
-        f.g(bottomSheet, new Function1() { // from class: zp.a
-            @Override // kotlin.jvm.functions.Function1
-            public final Object invoke(Object obj) {
-                Unit c10;
-                c10 = b.c(bottomSheet, (WindowInsetsCompat) obj);
-                return c10;
-            }
-        });
+    public b(vp.e externalInquiryController) {
+        Intrinsics.checkNotNullParameter(externalInquiryController, "externalInquiryController");
+        this.f56420a = externalInquiryController;
+        this.f56421b = i.a(m0.a().Y0(j1.b(null, 1, null)));
+        this.f56422c = l0.a(new zp.a(true, true, externalInquiryController.d(), true, true));
+        this.f56425f = true;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final Unit c(View view, WindowInsetsCompat insets) {
-        Intrinsics.checkNotNullParameter(insets, "insets");
-        Insets g10 = insets.g(WindowInsetsCompat.p.h());
-        Intrinsics.checkNotNullExpressionValue(g10, "getInsetsIgnoringVisibility(...)");
-        Insets f10 = insets.f(WindowInsetsCompat.p.c());
-        Intrinsics.checkNotNullExpressionValue(f10, "getInsets(...)");
-        view.setPadding(view.getPaddingLeft(), view.getPaddingTop(), view.getPaddingRight(), Integer.max(g10.f3278d, f10.f3278d));
-        ViewGroup.LayoutParams layoutParams = view.getLayoutParams();
-        if (layoutParams != null) {
-            ViewGroup.MarginLayoutParams marginLayoutParams = (ViewGroup.MarginLayoutParams) layoutParams;
-            marginLayoutParams.topMargin = g10.f3276b;
-            view.setLayoutParams(marginLayoutParams);
-            return Unit.f31988a;
+    public static /* synthetic */ void d(b bVar, boolean z10, boolean z11, boolean z12, int i10, Object obj) {
+        if ((i10 & 4) != 0) {
+            z12 = true;
         }
-        throw new NullPointerException("null cannot be cast to non-null type android.view.ViewGroup.MarginLayoutParams");
+        bVar.c(z10, z11, z12);
+    }
+
+    private final void f() {
+        boolean z10;
+        boolean z11 = this.f56423d;
+        boolean z12 = this.f56424e;
+        boolean d10 = this.f56420a.d();
+        boolean e10 = this.f56420a.e();
+        if (this.f56425f && !this.f56426g) {
+            z10 = true;
+        } else {
+            z10 = false;
+        }
+        zp.a aVar = new zp.a(z11, z12, d10, e10, z10);
+        if (Intrinsics.areEqual(this.f56422c.getValue(), aVar)) {
+            return;
+        }
+        this.f56422c.setValue(aVar);
+        os.i.d(this.f56421b, null, null, new a(aVar, null), 3, null);
+    }
+
+    public final zp.a b() {
+        return (zp.a) this.f56422c.getValue();
+    }
+
+    public final void c(boolean z10, boolean z11, boolean z12) {
+        this.f56423d = z10;
+        this.f56424e = z11;
+        this.f56425f = z12;
+        f();
+    }
+
+    public final void e(boolean z10) {
+        this.f56426g = z10;
+        f();
     }
 }

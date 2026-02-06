@@ -26,10 +26,10 @@ public final class FastestListScrollOffset {
         private int width;
 
         /* renamed from: x  reason: collision with root package name */
-        private int f9397x;
+        private int f9296x;
 
         /* renamed from: y  reason: collision with root package name */
-        private int f9398y;
+        private int f9297y;
 
         public Data() {
             this(0, 0, 0, 0, 0, 0, 63, null);
@@ -37,10 +37,10 @@ public final class FastestListScrollOffset {
 
         public static /* synthetic */ Data copy$default(Data data, int i10, int i11, int i12, int i13, int i14, int i15, int i16, Object obj) {
             if ((i16 & 1) != 0) {
-                i10 = data.f9397x;
+                i10 = data.f9296x;
             }
             if ((i16 & 2) != 0) {
-                i11 = data.f9398y;
+                i11 = data.f9297y;
             }
             if ((i16 & 4) != 0) {
                 i12 = data.width;
@@ -60,11 +60,11 @@ public final class FastestListScrollOffset {
         }
 
         public final int component1() {
-            return this.f9397x;
+            return this.f9296x;
         }
 
         public final int component2() {
-            return this.f9398y;
+            return this.f9297y;
         }
 
         public final int component3() {
@@ -94,7 +94,7 @@ public final class FastestListScrollOffset {
             }
             if (obj instanceof Data) {
                 Data data = (Data) obj;
-                return this.f9397x == data.f9397x && this.f9398y == data.f9398y && this.width == data.width && this.height == data.height && this.contentWidth == data.contentWidth && this.contentHeight == data.contentHeight;
+                return this.f9296x == data.f9296x && this.f9297y == data.f9297y && this.width == data.width && this.height == data.height && this.contentWidth == data.contentWidth && this.contentHeight == data.contentHeight;
             }
             return false;
         }
@@ -116,15 +116,15 @@ public final class FastestListScrollOffset {
         }
 
         public final int getX() {
-            return this.f9397x;
+            return this.f9296x;
         }
 
         public final int getY() {
-            return this.f9398y;
+            return this.f9297y;
         }
 
         public int hashCode() {
-            return (((((((((Integer.hashCode(this.f9397x) * 31) + Integer.hashCode(this.f9398y)) * 31) + Integer.hashCode(this.width)) * 31) + Integer.hashCode(this.height)) * 31) + Integer.hashCode(this.contentWidth)) * 31) + Integer.hashCode(this.contentHeight);
+            return (((((((((Integer.hashCode(this.f9296x) * 31) + Integer.hashCode(this.f9297y)) * 31) + Integer.hashCode(this.width)) * 31) + Integer.hashCode(this.height)) * 31) + Integer.hashCode(this.contentWidth)) * 31) + Integer.hashCode(this.contentHeight);
         }
 
         public final void setContentHeight(int i10) {
@@ -144,17 +144,17 @@ public final class FastestListScrollOffset {
         }
 
         public final void setX(int i10) {
-            this.f9397x = i10;
+            this.f9296x = i10;
         }
 
         public final void setY(int i10) {
-            this.f9398y = i10;
+            this.f9297y = i10;
         }
 
         @NotNull
         public String toString() {
-            int i10 = this.f9397x;
-            int i11 = this.f9398y;
+            int i10 = this.f9296x;
+            int i11 = this.f9297y;
             int i12 = this.width;
             int i13 = this.height;
             int i14 = this.contentWidth;
@@ -163,8 +163,8 @@ public final class FastestListScrollOffset {
         }
 
         public Data(int i10, int i11, int i12, int i13, int i14, int i15) {
-            this.f9397x = i10;
-            this.f9398y = i11;
+            this.f9296x = i10;
+            this.f9297y = i11;
             this.width = i12;
             this.height = i13;
             this.contentWidth = i14;

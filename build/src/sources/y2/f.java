@@ -27,43 +27,43 @@ public final class f extends w implements p0 {
 
         public a q(boolean z10) {
             k();
-            ((f) this.f3956e).U(z10);
+            ((f) this.f4285e).V(z10);
             return this;
         }
 
         public a r(double d10) {
             k();
-            ((f) this.f3956e).V(d10);
+            ((f) this.f4285e).W(d10);
             return this;
         }
 
-        public a s(float f10) {
+        public a t(float f10) {
             k();
-            ((f) this.f3956e).W(f10);
+            ((f) this.f4285e).X(f10);
             return this;
         }
 
-        public a t(int i10) {
+        public a u(int i10) {
             k();
-            ((f) this.f3956e).X(i10);
+            ((f) this.f4285e).Y(i10);
             return this;
         }
 
-        public a u(long j10) {
+        public a v(long j10) {
             k();
-            ((f) this.f3956e).Y(j10);
+            ((f) this.f4285e).Z(j10);
             return this;
         }
 
-        public a v(String str) {
+        public a w(String str) {
             k();
-            ((f) this.f3956e).Z(str);
+            ((f) this.f4285e).a0(str);
             return this;
         }
 
-        public a w(e.a aVar) {
+        public a x(e.a aVar) {
             k();
-            ((f) this.f3956e).a0(aVar);
+            ((f) this.f4285e).b0(aVar);
             return this;
         }
 
@@ -85,10 +85,10 @@ public final class f extends w implements p0 {
         
 
         /* renamed from: d  reason: collision with root package name */
-        private final int f54345d;
+        private final int f54889d;
 
         b(int i10) {
-            this.f54345d = i10;
+            this.f54889d = i10;
         }
 
         public static b a(int i10) {
@@ -118,64 +118,64 @@ public final class f extends w implements p0 {
     static {
         f fVar = new f();
         DEFAULT_INSTANCE = fVar;
-        w.z(f.class, fVar);
+        w.A(f.class, fVar);
     }
 
     private f() {
     }
 
-    public static f K() {
+    public static f L() {
         return DEFAULT_INSTANCE;
     }
 
-    public static a T() {
+    public static a U() {
         return (a) DEFAULT_INSTANCE.j();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void U(boolean z10) {
+    public void V(boolean z10) {
         this.valueCase_ = 1;
         this.value_ = Boolean.valueOf(z10);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void V(double d10) {
+    public void W(double d10) {
         this.valueCase_ = 7;
         this.value_ = Double.valueOf(d10);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void W(float f10) {
+    public void X(float f10) {
         this.valueCase_ = 2;
         this.value_ = Float.valueOf(f10);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void X(int i10) {
+    public void Y(int i10) {
         this.valueCase_ = 3;
         this.value_ = Integer.valueOf(i10);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void Y(long j10) {
+    public void Z(long j10) {
         this.valueCase_ = 4;
         this.value_ = Long.valueOf(j10);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void Z(String str) {
+    public void a0(String str) {
         str.getClass();
         this.valueCase_ = 5;
         this.value_ = str;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void a0(e.a aVar) {
-        this.value_ = aVar.g();
+    public void b0(e.a aVar) {
+        this.value_ = aVar.h();
         this.valueCase_ = 6;
     }
 
-    public boolean J() {
+    public boolean K() {
         if (this.valueCase_ == 1) {
             return ((Boolean) this.value_).booleanValue();
         }
@@ -203,41 +203,41 @@ public final class f extends w implements p0 {
         return 0;
     }
 
-    public long P() {
+    public long Q() {
         if (this.valueCase_ == 4) {
             return ((Long) this.value_).longValue();
         }
         return 0L;
     }
 
-    public String Q() {
+    public String R() {
         if (this.valueCase_ == 5) {
             return (String) this.value_;
         }
         return "";
     }
 
-    public e R() {
+    public e S() {
         if (this.valueCase_ == 6) {
             return (e) this.value_;
         }
-        return e.F();
+        return e.G();
     }
 
-    public b S() {
+    public b T() {
         return b.a(this.valueCase_);
     }
 
     @Override // androidx.datastore.preferences.protobuf.w
     protected final Object m(w.d dVar, Object obj, Object obj2) {
         w0 w0Var;
-        switch (c.f54334a[dVar.ordinal()]) {
+        switch (c.f54878a[dVar.ordinal()]) {
             case 1:
                 return new f();
             case 2:
                 return new a(null);
             case 3:
-                return w.w(DEFAULT_INSTANCE, "\u0001\u0007\u0001\u0001\u0001\u0007\u0007\u0000\u0000\u0000\u0001:\u0000\u00024\u0000\u00037\u0000\u00045\u0000\u0005;\u0000\u0006<\u0000\u00073\u0000", new Object[]{"value_", "valueCase_", "bitField0_", e.class});
+                return w.x(DEFAULT_INSTANCE, "\u0001\u0007\u0001\u0001\u0001\u0007\u0007\u0000\u0000\u0000\u0001:\u0000\u00024\u0000\u00037\u0000\u00045\u0000\u0005;\u0000\u0006<\u0000\u00073\u0000", new Object[]{"value_", "valueCase_", "bitField0_", e.class});
             case 4:
                 return DEFAULT_INSTANCE;
             case 5:

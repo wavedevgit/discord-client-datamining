@@ -11,7 +11,7 @@ import org.jetbrains.annotations.NotNull;
 public final class LazyScopeAdapter extends AbstractScopeAdapter {
 
     /* renamed from: a  reason: collision with root package name */
-    private final NotNullLazyValue f34201a;
+    private final NotNullLazyValue f34221a;
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public LazyScopeAdapter(@NotNull Function0<? extends MemberScope> getScope) {
@@ -30,7 +30,7 @@ public final class LazyScopeAdapter extends AbstractScopeAdapter {
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.AbstractScopeAdapter
     protected MemberScope a() {
-        return (MemberScope) this.f34201a.invoke();
+        return (MemberScope) this.f34221a.invoke();
     }
 
     public /* synthetic */ LazyScopeAdapter(StorageManager storageManager, Function0 function0, int i10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -40,6 +40,6 @@ public final class LazyScopeAdapter extends AbstractScopeAdapter {
     public LazyScopeAdapter(@NotNull StorageManager storageManager, @NotNull Function0<? extends MemberScope> getScope) {
         Intrinsics.checkNotNullParameter(storageManager, "storageManager");
         Intrinsics.checkNotNullParameter(getScope, "getScope");
-        this.f34201a = storageManager.createLazyValue(new b(getScope));
+        this.f34221a = storageManager.createLazyValue(new b(getScope));
     }
 }

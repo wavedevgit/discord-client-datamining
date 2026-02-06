@@ -41,18 +41,18 @@ public final class StepStyles_UiStepStrokeColorJsonAdapter extends h {
     @NotNull
     public StepStyles.UiStepStrokeColor fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         StyleElements.SimpleElementColor simpleElementColor = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 simpleElementColor = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
             }
         }
-        reader.z();
+        reader.D();
         return new StepStyles.UiStepStrokeColor(simpleElementColor);
     }
 
@@ -61,9 +61,9 @@ public final class StepStyles_UiStepStrokeColorJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (uiStepStrokeColor != null) {
             writer.k();
-            writer.W("base");
+            writer.J("base");
             this.nullableSimpleElementColorAdapter.toJson(writer, uiStepStrokeColor.getBase());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

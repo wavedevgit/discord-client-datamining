@@ -1,57 +1,67 @@
 package og;
 
-import xi.c;
+import java.util.NoSuchElementException;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class h6 implements xi.d {
-
-    /* renamed from: a  reason: collision with root package name */
-    static final h6 f42944a = new h6();
-
-    /* renamed from: b  reason: collision with root package name */
-    private static final xi.c f42945b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private static final xi.c f42946c;
+abstract class h6 extends d {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final xi.c f42947d;
+    private final int f42097d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final xi.c f42948e;
+    private int f42098e;
 
-    /* renamed from: f  reason: collision with root package name */
-    private static final xi.c f42949f;
-
-    static {
-        c.b a10 = xi.c.a("inferenceCommonLogEvent");
-        s1 s1Var = new s1();
-        s1Var.a(1);
-        f42945b = a10.b(s1Var.b()).a();
-        c.b a11 = xi.c.a("options");
-        s1 s1Var2 = new s1();
-        s1Var2.a(2);
-        f42946c = a11.b(s1Var2.b()).a();
-        c.b a12 = xi.c.a("detectedBarcodeFormats");
-        s1 s1Var3 = new s1();
-        s1Var3.a(3);
-        f42947d = a12.b(s1Var3.b()).a();
-        c.b a13 = xi.c.a("detectedBarcodeValueTypes");
-        s1 s1Var4 = new s1();
-        s1Var4.a(4);
-        f42948e = a13.b(s1Var4.b()).a();
-        c.b a14 = xi.c.a("imageInfo");
-        s1 s1Var5 = new s1();
-        s1Var5.a(5);
-        f42949f = a14.b(s1Var5.b()).a();
+    /* JADX INFO: Access modifiers changed from: protected */
+    public h6(int i10, int i11) {
+        f4.b(i11, i10, "index");
+        this.f42097d = i10;
+        this.f42098e = i11;
     }
 
-    private h6() {
+    protected abstract Object a(int i10);
+
+    @Override // java.util.Iterator, java.util.ListIterator
+    public final boolean hasNext() {
+        if (this.f42098e < this.f42097d) {
+            return true;
+        }
+        return false;
     }
 
-    @Override // xi.d
-    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
-        android.support.v4.media.session.b.a(obj);
-        xi.e eVar = (xi.e) obj2;
-        throw null;
+    @Override // java.util.ListIterator
+    public final boolean hasPrevious() {
+        if (this.f42098e > 0) {
+            return true;
+        }
+        return false;
+    }
+
+    @Override // java.util.Iterator, java.util.ListIterator
+    public final Object next() {
+        if (hasNext()) {
+            int i10 = this.f42098e;
+            this.f42098e = i10 + 1;
+            return a(i10);
+        }
+        throw new NoSuchElementException();
+    }
+
+    @Override // java.util.ListIterator
+    public final int nextIndex() {
+        return this.f42098e;
+    }
+
+    @Override // java.util.ListIterator
+    public final Object previous() {
+        if (hasPrevious()) {
+            int i10 = this.f42098e - 1;
+            this.f42098e = i10;
+            return a(i10);
+        }
+        throw new NoSuchElementException();
+    }
+
+    @Override // java.util.ListIterator
+    public final int previousIndex() {
+        return this.f42098e - 1;
     }
 }

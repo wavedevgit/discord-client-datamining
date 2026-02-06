@@ -1,15 +1,34 @@
 package st;
-
-import java.text.ParsePosition;
-import java.util.Locale;
-import pt.o;
-import qt.g;
-import qt.m;
-import qt.t;
-import qt.v;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface e extends t {
-    void f(o oVar, Appendable appendable, Locale locale, v vVar, m mVar);
+public enum e implements rt.y {
+    FULL(0),
+    LONG(1),
+    MEDIUM(2),
+    SHORT(3);
+    
 
-    Object i(CharSequence charSequence, ParsePosition parsePosition, Locale locale, v vVar, m mVar, g gVar);
+    /* renamed from: q  reason: collision with root package name */
+    private static e[] f50162q = values();
+
+    /* renamed from: d  reason: collision with root package name */
+    private final transient int f50164d;
+
+    e(int i10) {
+        this.f50164d = i10;
+    }
+
+    public static e d(int i10) {
+        e[] eVarArr;
+        for (e eVar : f50162q) {
+            if (eVar.a() == i10) {
+                return eVar;
+            }
+        }
+        throw new UnsupportedOperationException("Unknown format style: " + i10);
+    }
+
+    @Override // rt.y
+    public int a() {
+        return this.f50164d;
+    }
 }

@@ -3,5 +3,5 @@ package tc;
 public final class y {
 
     /* renamed from: a  reason: collision with root package name */
-    public long f50603a;
+    public long f50579a;
 }

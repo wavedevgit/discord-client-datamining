@@ -1,28 +1,64 @@
 package og;
 
-import android.graphics.PointF;
-import android.os.Parcel;
-import android.os.Parcelable;
+import yi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class c2 extends hf.a {
-    public static final Parcelable.Creator<c2> CREATOR = new d3();
+final class c2 implements yi.d {
+
+    /* renamed from: a  reason: collision with root package name */
+    static final c2 f41832a = new c2();
+
+    /* renamed from: b  reason: collision with root package name */
+    private static final yi.c f41833b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private static final yi.c f41834c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final PointF[] f42622d;
+    private static final yi.c f41835d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final int f42623e;
+    private static final yi.c f41836e;
 
-    public c2(PointF[] pointFArr, int i10) {
-        this.f42622d = pointFArr;
-        this.f42623e = i10;
+    /* renamed from: f  reason: collision with root package name */
+    private static final yi.c f41837f;
+
+    /* renamed from: g  reason: collision with root package name */
+    private static final yi.c f41838g;
+
+    static {
+        c.b a10 = yi.c.a("cameraSource");
+        f fVar = new f();
+        fVar.a(1);
+        f41833b = a10.b(fVar.b()).a();
+        c.b a11 = yi.c.a("eventType");
+        f fVar2 = new f();
+        fVar2.a(2);
+        f41834c = a11.b(fVar2.b()).a();
+        c.b a12 = yi.c.a("requestedPreviewHeight");
+        f fVar3 = new f();
+        fVar3.a(3);
+        f41835d = a12.b(fVar3.b()).a();
+        c.b a13 = yi.c.a("requestedPreviewWidth");
+        f fVar4 = new f();
+        fVar4.a(4);
+        f41836e = a13.b(fVar4.b()).a();
+        c.b a14 = yi.c.a("actualPreviewHeight");
+        f fVar5 = new f();
+        fVar5.a(5);
+        f41837f = a14.b(fVar5.b()).a();
+        c.b a15 = yi.c.a("actualPreviewWidth");
+        f fVar6 = new f();
+        fVar6.a(6);
+        f41838g = a15.b(fVar6.b()).a();
     }
 
-    @Override // android.os.Parcelable
-    public final void writeToParcel(Parcel parcel, int i10) {
-        int a10 = hf.c.a(parcel);
-        hf.c.v(parcel, 2, this.f42622d, i10, false);
-        hf.c.l(parcel, 3, this.f42623e);
-        hf.c.b(parcel, a10);
+    private c2() {
+    }
+
+    @Override // yi.d
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        android.support.v4.media.session.b.a(obj);
+        yi.e eVar = (yi.e) obj2;
+        throw null;
     }
 }

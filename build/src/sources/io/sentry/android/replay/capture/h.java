@@ -35,42 +35,42 @@ import kotlin.jvm.internal.Ref;
 public interface h {
 
     /* renamed from: a */
-    public static final a f28482a = a.f28483a;
+    public static final a f27626a = a.f27627a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
 
         /* renamed from: a */
-        static final /* synthetic */ a f28483a = new a();
+        static final /* synthetic */ a f27627a = new a();
 
         /* renamed from: io.sentry.android.replay.capture.h$a$a */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public static final class C0398a extends Lambda implements Function1 {
+        public static final class C0392a extends Lambda implements Function1 {
 
             /* renamed from: d */
-            final /* synthetic */ Date f28484d;
+            final /* synthetic */ Date f27628d;
 
             /* renamed from: e */
-            final /* synthetic */ List f28485e;
+            final /* synthetic */ List f27629e;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            C0398a(Date date, List list) {
+            C0392a(Date date, List list) {
                 super(1);
-                this.f28484d = date;
-                this.f28485e = list;
+                this.f27628d = date;
+                this.f27629e = list;
             }
 
             public final void a(io.sentry.rrweb.b event) {
                 Intrinsics.checkNotNullParameter(event, "event");
-                if (event.e() >= this.f28484d.getTime()) {
-                    this.f28485e.add(event);
+                if (event.e() >= this.f27628d.getTime()) {
+                    this.f27629e.add(event);
                 }
             }
 
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Object invoke(Object obj) {
                 a((io.sentry.rrweb.b) obj);
-                return Unit.f31988a;
+                return Unit.f32008a;
             }
         }
 
@@ -78,7 +78,7 @@ public interface h {
         public static final class b implements Comparator {
             @Override // java.util.Comparator
             public final int compare(Object obj, Object obj2) {
-                return rr.a.d(Long.valueOf(((io.sentry.rrweb.b) obj).e()), Long.valueOf(((io.sentry.rrweb.b) obj2).e()));
+                return tr.a.d(Long.valueOf(((io.sentry.rrweb.b) obj).e()), Long.valueOf(((io.sentry.rrweb.b) obj2).e()));
             }
         }
 
@@ -106,14 +106,14 @@ public interface h {
         /* JADX WARN: Type inference failed for: r0v1, types: [T, java.util.ArrayList] */
         public static final void d(Ref.ObjectRef objectRef, IScope scope) {
             Intrinsics.checkNotNullParameter(scope, "scope");
-            objectRef.element = new ArrayList(scope.u());
+            objectRef.element = new ArrayList(scope.t());
         }
 
         private final boolean e(Breadcrumb breadcrumb) {
             if (breadcrumb != null && Intrinsics.areEqual(breadcrumb.m(), "network.event")) {
-                Map p10 = breadcrumb.p();
-                Intrinsics.checkNotNullExpressionValue(p10, "getData(...)");
-                Object obj = p10.get("action");
+                Map o10 = breadcrumb.o();
+                Intrinsics.checkNotNullExpressionValue(o10, "getData(...)");
+                Object obj = o10.get("action");
                 if (obj == null) {
                     obj = null;
                 }
@@ -126,7 +126,7 @@ public interface h {
         }
 
         private final boolean f(Breadcrumb breadcrumb) {
-            if (Intrinsics.areEqual(breadcrumb.m(), "network.event") && breadcrumb.p().containsKey("network_type")) {
+            if (Intrinsics.areEqual(breadcrumb.m(), "network.event") && breadcrumb.o().containsKey("network_type")) {
                 return true;
             }
             return false;
@@ -141,22 +141,22 @@ public interface h {
 
         /* JADX WARN: Type inference failed for: r7v2, types: [java.util.List, T] */
         public final c c(w0 w0Var, k7 options, long j10, Date currentSegmentTimestamp, x replayId, int i10, int i11, int i12, l7.b replayType, io.sentry.android.replay.i iVar, int i13, int i14, String str, List list, Deque events) {
-            io.sentry.android.replay.c F;
+            io.sentry.android.replay.c y10;
             List list2;
             Intrinsics.checkNotNullParameter(options, "options");
             Intrinsics.checkNotNullParameter(currentSegmentTimestamp, "currentSegmentTimestamp");
             Intrinsics.checkNotNullParameter(replayId, "replayId");
             Intrinsics.checkNotNullParameter(replayType, "replayType");
             Intrinsics.checkNotNullParameter(events, "events");
-            if (iVar != null && (F = io.sentry.android.replay.i.F(iVar, Math.min(j10, (long) LogThrottleSingleton.RATE_LIMIT_FIVE_MINUTES), currentSegmentTimestamp.getTime(), i10, i11, i12, i13, i14, null, IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT, null)) != null) {
-                File a10 = F.a();
-                int b10 = F.b();
-                long c10 = F.c();
+            if (iVar != null && (y10 = io.sentry.android.replay.i.y(iVar, Math.min(j10, (long) LogThrottleSingleton.RATE_LIMIT_FIVE_MINUTES), currentSegmentTimestamp.getTime(), i10, i11, i12, i13, i14, null, IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT, null)) != null) {
+                File a10 = y10.a();
+                int b10 = y10.b();
+                long c10 = y10.c();
                 if (list == null) {
                     final Ref.ObjectRef objectRef = new Ref.ObjectRef();
                     objectRef.element = CollectionsKt.l();
                     if (w0Var != null) {
-                        w0Var.p(new b4() { // from class: io.sentry.android.replay.capture.g
+                        w0Var.o(new b4() { // from class: io.sentry.android.replay.capture.g
                             @Override // io.sentry.b4
                             public final void a(IScope iScope) {
                                 h.a.d(Ref.ObjectRef.this, iScope);
@@ -169,7 +169,7 @@ public interface h {
                 }
                 return b(options, a10, replayId, currentSegmentTimestamp, i10, i11, i12, b10, i13, c10, replayType, str, list2, events);
             }
-            return c.b.f28488a;
+            return c.b.f27632a;
         }
 
         public final void g(Deque events, long j10, Function1 function1) {
@@ -202,7 +202,7 @@ public interface h {
                 if ((i11 & 4) != 0) {
                     bVar = null;
                 }
-                hVar.h(i10, xVar, bVar);
+                hVar.i(i10, xVar, bVar);
                 return;
             }
             throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: start");
@@ -216,18 +216,18 @@ public interface h {
         public static final class a extends c {
 
             /* renamed from: a */
-            private final l7 f28486a;
+            private final l7 f27630a;
 
             /* renamed from: b */
-            private final v3 f28487b;
+            private final v3 f27631b;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public a(l7 replay, v3 recording) {
                 super(null);
                 Intrinsics.checkNotNullParameter(replay, "replay");
                 Intrinsics.checkNotNullParameter(recording, "recording");
-                this.f28486a = replay;
-                this.f28487b = recording;
+                this.f27630a = replay;
+                this.f27631b = recording;
             }
 
             public static /* synthetic */ void b(a aVar, w0 w0Var, Hint hint, int i10, Object obj) {
@@ -240,20 +240,20 @@ public interface h {
             public final void a(w0 w0Var, Hint hint) {
                 Intrinsics.checkNotNullParameter(hint, "hint");
                 if (w0Var != null) {
-                    l7 l7Var = this.f28486a;
-                    hint.l(this.f28487b);
-                    Unit unit = Unit.f31988a;
-                    w0Var.t(l7Var, hint);
+                    l7 l7Var = this.f27630a;
+                    hint.l(this.f27631b);
+                    Unit unit = Unit.f32008a;
+                    w0Var.s(l7Var, hint);
                 }
             }
 
             public final l7 c() {
-                return this.f28486a;
+                return this.f27630a;
             }
 
             public final void d(int i10) {
-                this.f28486a.o0(i10);
-                List<io.sentry.rrweb.b> a10 = this.f28487b.a();
+                this.f27630a.o0(i10);
+                List<io.sentry.rrweb.b> a10 = this.f27631b.a();
                 if (a10 != null) {
                     for (io.sentry.rrweb.b bVar : a10) {
                         if (bVar instanceof io.sentry.rrweb.j) {
@@ -269,17 +269,17 @@ public interface h {
                 }
                 if (obj instanceof a) {
                     a aVar = (a) obj;
-                    return Intrinsics.areEqual(this.f28486a, aVar.f28486a) && Intrinsics.areEqual(this.f28487b, aVar.f28487b);
+                    return Intrinsics.areEqual(this.f27630a, aVar.f27630a) && Intrinsics.areEqual(this.f27631b, aVar.f27631b);
                 }
                 return false;
             }
 
             public int hashCode() {
-                return (this.f28486a.hashCode() * 31) + this.f28487b.hashCode();
+                return (this.f27630a.hashCode() * 31) + this.f27631b.hashCode();
             }
 
             public String toString() {
-                return "Created(replay=" + this.f28486a + ", recording=" + this.f28487b + ')';
+                return "Created(replay=" + this.f27630a + ", recording=" + this.f27631b + ')';
             }
         }
 
@@ -287,7 +287,7 @@ public interface h {
         public static final class b extends c {
 
             /* renamed from: a */
-            public static final b f28488a = new b();
+            public static final b f27632a = new b();
 
             private b() {
                 super(null);
@@ -316,13 +316,13 @@ public interface h {
 
     h g();
 
-    void h(int i10, x xVar, l7.b bVar);
+    void h();
 
-    void i();
+    void i(int i10, x xVar, l7.b bVar);
 
     void j(Date date);
 
-    void n(s sVar);
+    void o(s sVar);
 
     void onTouchEvent(MotionEvent motionEvent);
 

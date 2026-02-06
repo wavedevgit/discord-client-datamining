@@ -7,13 +7,13 @@ import com.discord.chat.bridge.structurabletext.AnnotatedStructurableTextSeriali
 import com.discord.misc.utilities.chat_view_types.ChatViewRecyclerTypes;
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
 import com.facebook.react.uimanager.ViewProps;
-import dt.b0;
-import et.a;
-import gt.a2;
-import gt.h;
-import gt.h0;
-import gt.n2;
-import gt.p0;
+import ft.b0;
+import gt.a;
+import jt.a2;
+import jt.h;
+import jt.h0;
+import jt.n2;
+import jt.p0;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.serialization.KSerializer;
@@ -22,11 +22,11 @@ import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.encoding.Decoder;
 import kotlinx.serialization.encoding.Encoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import or.c;
 import org.jetbrains.annotations.NotNull;
 import org.webrtc.PeerConnection;
+import qr.c;
+@Metadata(d1 = {"\u0000:\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u001d\u0010\t\u001a\u00020\b2\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0007\u001a\u00020\u0002¢\u0006\u0004\b\t\u0010\nJ\u0015\u0010\r\u001a\u00020\u00022\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b\r\u0010\u000eJ\u0017\u0010\u0011\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00100\u000f¢\u0006\u0004\b\u0011\u0010\u0012R\u0017\u0010\u0014\u001a\u00020\u00138\u0006¢\u0006\f\n\u0004\b\u0014\u0010\u0015\u001a\u0004\b\u0016\u0010\u0017¨\u0006\u0018"}, d2 = {"com/discord/chat/bridge/referral/ReferralEmbed.Resolved.$serializer", "Ljt/h0;", "Lcom/discord/chat/bridge/referral/ReferralEmbed$Resolved;", "<init>", "()V", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "(Lkotlinx/serialization/encoding/Encoder;Lcom/discord/chat/bridge/referral/ReferralEmbed$Resolved;)V", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "(Lkotlinx/serialization/encoding/Decoder;)Lcom/discord/chat/bridge/referral/ReferralEmbed$Resolved;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @c
-@Metadata(d1 = {"\u0000:\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u001d\u0010\t\u001a\u00020\b2\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0007\u001a\u00020\u0002¢\u0006\u0004\b\t\u0010\nJ\u0015\u0010\r\u001a\u00020\u00022\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b\r\u0010\u000eJ\u0017\u0010\u0011\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00100\u000f¢\u0006\u0004\b\u0011\u0010\u0012R\u0017\u0010\u0014\u001a\u00020\u00138\u0006¢\u0006\f\n\u0004\b\u0014\u0010\u0015\u001a\u0004\b\u0016\u0010\u0017¨\u0006\u0018"}, d2 = {"com/discord/chat/bridge/referral/ReferralEmbed.Resolved.$serializer", "Lgt/h0;", "Lcom/discord/chat/bridge/referral/ReferralEmbed$Resolved;", "<init>", "()V", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "(Lkotlinx/serialization/encoding/Encoder;Lcom/discord/chat/bridge/referral/ReferralEmbed$Resolved;)V", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "(Lkotlinx/serialization/encoding/Decoder;)Lcom/discord/chat/bridge/referral/ReferralEmbed$Resolved;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public /* synthetic */ class ReferralEmbed$Resolved$$serializer implements h0 {
     @NotNull
@@ -66,11 +66,11 @@ public /* synthetic */ class ReferralEmbed$Resolved$$serializer implements h0 {
     private ReferralEmbed$Resolved$$serializer() {
     }
 
-    @Override // gt.h0
+    @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f25302a;
-        p0 p0Var = p0.f25318a;
+        n2 n2Var = n2.f31041a;
+        p0 p0Var = p0.f31057a;
         KSerializer u10 = a.u(n2Var);
         KSerializer u11 = a.u(n2Var);
         KSerializer u12 = a.u(n2Var);
@@ -78,7 +78,7 @@ public /* synthetic */ class ReferralEmbed$Resolved$$serializer implements h0 {
         KSerializer u14 = a.u(p0Var);
         KSerializer u15 = a.u(n2Var);
         AnnotatedStructurableTextSerializer annotatedStructurableTextSerializer = AnnotatedStructurableTextSerializer.INSTANCE;
-        return new KSerializer[]{n2Var, p0Var, p0Var, p0Var, u10, u11, u12, u13, u14, u15, a.u(annotatedStructurableTextSerializer), a.u(p0Var), a.u(annotatedStructurableTextSerializer), a.u(p0Var), a.u(n2Var), a.u(p0Var), a.u(n2Var), a.u(p0Var), a.u(n2Var), a.u(p0Var), a.u(n2Var), a.u(h.f25266a)};
+        return new KSerializer[]{n2Var, p0Var, p0Var, p0Var, u10, u11, u12, u13, u14, u15, a.u(annotatedStructurableTextSerializer), a.u(p0Var), a.u(annotatedStructurableTextSerializer), a.u(p0Var), a.u(n2Var), a.u(p0Var), a.u(n2Var), a.u(p0Var), a.u(n2Var), a.u(p0Var), a.u(n2Var), a.u(h.f31005a)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -123,9 +123,9 @@ public /* synthetic */ class ReferralEmbed$Resolved$$serializer implements h0 {
             int i16 = b10.i(serialDescriptor, 1);
             int i17 = b10.i(serialDescriptor, 2);
             int i18 = b10.i(serialDescriptor, 3);
-            n2 n2Var = n2.f25302a;
+            n2 n2Var = n2.f31041a;
             String str13 = (String) b10.n(serialDescriptor, 5, n2Var, null);
-            p0 p0Var = p0.f25318a;
+            p0 p0Var = p0.f31057a;
             AnnotatedStructurableTextSerializer annotatedStructurableTextSerializer = AnnotatedStructurableTextSerializer.INSTANCE;
             Integer num8 = (Integer) b10.n(serialDescriptor, 11, p0Var, null);
             AnnotatedStructurableText annotatedStructurableText5 = (AnnotatedStructurableText) b10.n(serialDescriptor, 12, annotatedStructurableTextSerializer, null);
@@ -135,7 +135,7 @@ public /* synthetic */ class ReferralEmbed$Resolved$$serializer implements h0 {
             Integer num10 = (Integer) b10.n(serialDescriptor, 17, p0Var, null);
             String str16 = (String) b10.n(serialDescriptor, 18, n2Var, null);
             num = (Integer) b10.n(serialDescriptor, 19, p0Var, null);
-            bool = (Boolean) b10.n(serialDescriptor, 21, h.f25266a, null);
+            bool = (Boolean) b10.n(serialDescriptor, 21, h.f31005a, null);
             num5 = (Integer) b10.n(serialDescriptor, 13, p0Var, null);
             i11 = i18;
             str = (String) b10.n(serialDescriptor, 4, n2Var, null);
@@ -247,7 +247,7 @@ public /* synthetic */ class ReferralEmbed$Resolved$$serializer implements h0 {
                         str11 = str17;
                         bool2 = bool3;
                         str12 = str27;
-                        str23 = (String) b10.n(serialDescriptor, 4, n2.f25302a, str23);
+                        str23 = (String) b10.n(serialDescriptor, 4, n2.f31041a, str23);
                         i15 |= 16;
                         annotatedStructurableText7 = annotatedStructurableText7;
                         str24 = str24;
@@ -259,7 +259,7 @@ public /* synthetic */ class ReferralEmbed$Resolved$$serializer implements h0 {
                         str11 = str17;
                         bool2 = bool3;
                         str12 = str27;
-                        str24 = (String) b10.n(serialDescriptor, 5, n2.f25302a, str24);
+                        str24 = (String) b10.n(serialDescriptor, 5, n2.f31041a, str24);
                         i15 |= 32;
                         annotatedStructurableText7 = annotatedStructurableText7;
                         str25 = str25;
@@ -271,7 +271,7 @@ public /* synthetic */ class ReferralEmbed$Resolved$$serializer implements h0 {
                         str11 = str17;
                         bool2 = bool3;
                         str12 = str27;
-                        str25 = (String) b10.n(serialDescriptor, 6, n2.f25302a, str25);
+                        str25 = (String) b10.n(serialDescriptor, 6, n2.f31041a, str25);
                         i15 |= 64;
                         annotatedStructurableText7 = annotatedStructurableText7;
                         str26 = str26;
@@ -283,7 +283,7 @@ public /* synthetic */ class ReferralEmbed$Resolved$$serializer implements h0 {
                         str11 = str17;
                         bool2 = bool3;
                         str12 = str27;
-                        str26 = (String) b10.n(serialDescriptor, 7, n2.f25302a, str26);
+                        str26 = (String) b10.n(serialDescriptor, 7, n2.f31041a, str26);
                         i15 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                         annotatedStructurableText7 = annotatedStructurableText7;
                         num15 = num15;
@@ -296,7 +296,7 @@ public /* synthetic */ class ReferralEmbed$Resolved$$serializer implements h0 {
                         bool2 = bool3;
                         annotatedStructurableText4 = annotatedStructurableText7;
                         str12 = str27;
-                        num15 = (Integer) b10.n(serialDescriptor, 8, p0.f25318a, num15);
+                        num15 = (Integer) b10.n(serialDescriptor, 8, p0.f31057a, num15);
                         i15 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
                         annotatedStructurableText7 = annotatedStructurableText4;
                         str21 = str12;
@@ -308,7 +308,7 @@ public /* synthetic */ class ReferralEmbed$Resolved$$serializer implements h0 {
                         i15 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING;
                         annotatedStructurableText7 = annotatedStructurableText7;
                         bool3 = bool3;
-                        str21 = (String) b10.n(serialDescriptor, 9, n2.f25302a, str27);
+                        str21 = (String) b10.n(serialDescriptor, 9, n2.f31041a, str27);
                         str17 = str11;
                         break;
                     case 10:
@@ -319,7 +319,7 @@ public /* synthetic */ class ReferralEmbed$Resolved$$serializer implements h0 {
                         break;
                     case 11:
                         annotatedStructurableText3 = annotatedStructurableText7;
-                        num12 = (Integer) b10.n(serialDescriptor, 11, p0.f25318a, num12);
+                        num12 = (Integer) b10.n(serialDescriptor, 11, p0.f31057a, num12);
                         i15 |= RecyclerView.ItemAnimator.FLAG_MOVED;
                         str21 = str27;
                         annotatedStructurableText7 = annotatedStructurableText3;
@@ -333,21 +333,21 @@ public /* synthetic */ class ReferralEmbed$Resolved$$serializer implements h0 {
                         break;
                     case 13:
                         annotatedStructurableText3 = annotatedStructurableText7;
-                        num14 = (Integer) b10.n(serialDescriptor, 13, p0.f25318a, num14);
+                        num14 = (Integer) b10.n(serialDescriptor, 13, p0.f31057a, num14);
                         i15 |= 8192;
                         str21 = str27;
                         annotatedStructurableText7 = annotatedStructurableText3;
                         break;
                     case 14:
                         annotatedStructurableText3 = annotatedStructurableText7;
-                        str17 = (String) b10.n(serialDescriptor, 14, n2.f25302a, str17);
+                        str17 = (String) b10.n(serialDescriptor, 14, n2.f31041a, str17);
                         i15 |= 16384;
                         str21 = str27;
                         annotatedStructurableText7 = annotatedStructurableText3;
                         break;
                     case 15:
                         annotatedStructurableText3 = annotatedStructurableText7;
-                        num7 = (Integer) b10.n(serialDescriptor, 15, p0.f25318a, num7);
+                        num7 = (Integer) b10.n(serialDescriptor, 15, p0.f31057a, num7);
                         i14 = PeerConnection.PORTALLOCATOR_ENABLE_ANY_ADDRESS_PORTS;
                         i15 |= i14;
                         str21 = str27;
@@ -355,7 +355,7 @@ public /* synthetic */ class ReferralEmbed$Resolved$$serializer implements h0 {
                         break;
                     case 16:
                         annotatedStructurableText3 = annotatedStructurableText7;
-                        str20 = (String) b10.n(serialDescriptor, 16, n2.f25302a, str20);
+                        str20 = (String) b10.n(serialDescriptor, 16, n2.f31041a, str20);
                         i14 = 65536;
                         i15 |= i14;
                         str21 = str27;
@@ -363,7 +363,7 @@ public /* synthetic */ class ReferralEmbed$Resolved$$serializer implements h0 {
                         break;
                     case 17:
                         annotatedStructurableText3 = annotatedStructurableText7;
-                        num13 = (Integer) b10.n(serialDescriptor, 17, p0.f25318a, num13);
+                        num13 = (Integer) b10.n(serialDescriptor, 17, p0.f31057a, num13);
                         i14 = 131072;
                         i15 |= i14;
                         str21 = str27;
@@ -371,7 +371,7 @@ public /* synthetic */ class ReferralEmbed$Resolved$$serializer implements h0 {
                         break;
                     case ChatViewRecyclerTypes.EPHEMERAL_INDICATION /* 18 */:
                         annotatedStructurableText3 = annotatedStructurableText7;
-                        str19 = (String) b10.n(serialDescriptor, 18, n2.f25302a, str19);
+                        str19 = (String) b10.n(serialDescriptor, 18, n2.f31041a, str19);
                         i14 = 262144;
                         i15 |= i14;
                         str21 = str27;
@@ -379,7 +379,7 @@ public /* synthetic */ class ReferralEmbed$Resolved$$serializer implements h0 {
                         break;
                     case ChatViewRecyclerTypes.INTERACTION_STATUS /* 19 */:
                         annotatedStructurableText3 = annotatedStructurableText7;
-                        num11 = (Integer) b10.n(serialDescriptor, 19, p0.f25318a, num11);
+                        num11 = (Integer) b10.n(serialDescriptor, 19, p0.f31057a, num11);
                         i14 = 524288;
                         i15 |= i14;
                         str21 = str27;
@@ -387,7 +387,7 @@ public /* synthetic */ class ReferralEmbed$Resolved$$serializer implements h0 {
                         break;
                     case 20:
                         annotatedStructurableText3 = annotatedStructurableText7;
-                        str18 = (String) b10.n(serialDescriptor, 20, n2.f25302a, str18);
+                        str18 = (String) b10.n(serialDescriptor, 20, n2.f31041a, str18);
                         i14 = 1048576;
                         i15 |= i14;
                         str21 = str27;
@@ -395,7 +395,7 @@ public /* synthetic */ class ReferralEmbed$Resolved$$serializer implements h0 {
                         break;
                     case ChatViewRecyclerTypes.FLAGGED_MESSAGE_EMBED /* 21 */:
                         annotatedStructurableText3 = annotatedStructurableText7;
-                        bool3 = (Boolean) b10.n(serialDescriptor, 21, h.f25266a, bool3);
+                        bool3 = (Boolean) b10.n(serialDescriptor, 21, h.f31005a, bool3);
                         i14 = 2097152;
                         i15 |= i14;
                         str21 = str27;
@@ -433,13 +433,13 @@ public /* synthetic */ class ReferralEmbed$Resolved$$serializer implements h0 {
         return new ReferralEmbed.Resolved(i10, str5, i13, i12, i11, str, str6, str7, str8, num6, str9, annotatedStructurableText2, num2, annotatedStructurableText, num5, str10, num4, str4, num3, str3, num, str2, bool, (SerializationConstructorMarker) null);
     }
 
-    @Override // kotlinx.serialization.KSerializer, dt.o, kotlinx.serialization.DeserializationStrategy
+    @Override // kotlinx.serialization.KSerializer, ft.o, kotlinx.serialization.DeserializationStrategy
     @NotNull
     public final SerialDescriptor getDescriptor() {
         return descriptor;
     }
 
-    @Override // dt.o
+    @Override // ft.o
     public final void serialize(@NotNull Encoder encoder, @NotNull ReferralEmbed.Resolved value) {
         Intrinsics.checkNotNullParameter(encoder, "encoder");
         Intrinsics.checkNotNullParameter(value, "value");
@@ -449,7 +449,7 @@ public /* synthetic */ class ReferralEmbed$Resolved$$serializer implements h0 {
         b10.c(serialDescriptor);
     }
 
-    @Override // gt.h0
+    @Override // jt.h0
     @NotNull
     public KSerializer[] typeParametersSerializers() {
         return h0.a.a(this);

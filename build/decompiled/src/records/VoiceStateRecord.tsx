@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2 = exports;
     var4 = dependencyMap;
     var0 = function() {
-        _fun31272: for (var _fun31272_ip = 0;;) switch (_fun31272_ip) {
+        _fun31276: for (var _fun31276_ip = 0;;) switch (_fun31276_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -26,8 +26,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun31272_ip = 74;
-                continue _fun31272;
+                _fun31276_ip = 74;
+                continue _fun31276;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
         var3 = function arg0() {
-            _fun31276: for (var _fun31276_ip = 0;;) switch (_fun31276_ip) {
+            _fun31280: for (var _fun31280_ip = 0;;) switch (_fun31280_ip) {
                 case 0:
                     var1 = arg0;
                     var4 = this;
@@ -92,14 +92,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot5;
                     var0 = var0.bind(var3)();
                     if (var0) {
-                        _fun31276_ip = 65;
-                        continue _fun31276
+                        _fun31280_ip = 65;
+                        continue _fun31280
                     }
                 case 52:
                     var0 = var9.apply;
                     var0 = var0.bind(var9)(var4, var3);
-                    _fun31276_ip = 103;
-                    continue _fun31276;
+                    _fun31280_ip = 103;
+                    continue _fun31280;
                 case 65:
                     var6 = global;
                     var8 = var6.Reflect;
@@ -113,8 +113,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var2.bind(var3)(var4, var0);
                     var2 = var1.userId;
                     if (var2) {
-                        _fun31276_ip = 121;
-                        continue _fun31276
+                        _fun31280_ip = 121;
+                        continue _fun31280
                     }
                 case 117:
                     var2 = '';
@@ -122,8 +122,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0.userId = var2;
                     var2 = var1.channelId;
                     if (var2) {
-                        _fun31276_ip = 137;
-                        continue _fun31276
+                        _fun31280_ip = 137;
+                        continue _fun31280
                     }
                 case 135:
                     var2 = null;
@@ -131,8 +131,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0.channelId = var2;
                     var2 = var1.sessionId;
                     if (var2) {
-                        _fun31276_ip = 154;
-                        continue _fun31276
+                        _fun31280_ip = 154;
+                        continue _fun31280
                     }
                 case 152:
                     var2 = null;
@@ -140,8 +140,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0.sessionId = var2;
                     var2 = var1.mute;
                     if (var2) {
-                        _fun31276_ip = 171;
-                        continue _fun31276
+                        _fun31280_ip = 171;
+                        continue _fun31280
                     }
                 case 169:
                     var2 = false;
@@ -149,8 +149,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0.mute = var2;
                     var2 = var1.deaf;
                     if (var2) {
-                        _fun31276_ip = 188;
-                        continue _fun31276
+                        _fun31280_ip = 188;
+                        continue _fun31280
                     }
                 case 186:
                     var2 = false;
@@ -158,8 +158,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0.deaf = var2;
                     var2 = var1.selfMute;
                     if (var2) {
-                        _fun31276_ip = 205;
-                        continue _fun31276
+                        _fun31280_ip = 205;
+                        continue _fun31280
                     }
                 case 203:
                     var2 = false;
@@ -167,8 +167,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0.selfMute = var2;
                     var2 = var1.selfDeaf;
                     if (var2) {
-                        _fun31276_ip = 222;
-                        continue _fun31276
+                        _fun31280_ip = 222;
+                        continue _fun31280
                     }
                 case 220:
                     var2 = false;
@@ -176,8 +176,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0.selfDeaf = var2;
                     var2 = var1.selfVideo;
                     if (var2) {
-                        _fun31276_ip = 239;
-                        continue _fun31276
+                        _fun31280_ip = 239;
+                        continue _fun31280
                     }
                 case 237:
                     var2 = false;
@@ -185,8 +185,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0.selfVideo = var2;
                     var2 = var1.selfStream;
                     if (var2) {
-                        _fun31276_ip = 256;
-                        continue _fun31276
+                        _fun31280_ip = 256;
+                        continue _fun31280
                     }
                 case 254:
                     var2 = false;
@@ -194,8 +194,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0.selfStream = var2;
                     var2 = var1.suppress;
                     if (var2) {
-                        _fun31276_ip = 273;
-                        continue _fun31276
+                        _fun31280_ip = 273;
+                        continue _fun31280
                     }
                 case 271:
                     var2 = false;
@@ -207,8 +207,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = null;
                     var1 = var1 == var2;
                     if (var1) {
-                        _fun31276_ip = 309;
-                        continue _fun31276
+                        _fun31280_ip = 309;
+                        continue _fun31280
                     }
                 case 306:
                     var1 = var2;
@@ -227,27 +227,27 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = 'isVoiceMuted';
         var4.key = var0;
         var0 = function() {
-            _fun31277: for (var _fun31277_ip = 0;;) switch (_fun31277_ip) {
+            _fun31281: for (var _fun31281_ip = 0;;) switch (_fun31281_ip) {
                 case 0:
                     var1 = this;
                     var0 = var1.selfMute;
                     if (var0) {
-                        _fun31277_ip = 18;
-                        continue _fun31277
+                        _fun31281_ip = 18;
+                        continue _fun31281
                     }
                 case 12:
                     var0 = var1.mute;
                 case 18:
                     if (var0) {
-                        _fun31277_ip = 27;
-                        continue _fun31277
+                        _fun31281_ip = 27;
+                        continue _fun31281
                     }
                 case 21:
                     var0 = var1.suppress;
                 case 27:
                     if (var0) {
-                        _fun31277_ip = 42;
-                        continue _fun31277
+                        _fun31281_ip = 42;
+                        continue _fun31281
                     }
                 case 30:
                     var2 = var1.requestToSpeakTimestamp;
@@ -264,13 +264,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = 'isVoiceDeafened';
         var4.key = var6;
         var5 = function() {
-            _fun31278: for (var _fun31278_ip = 0;;) switch (_fun31278_ip) {
+            _fun31282: for (var _fun31282_ip = 0;;) switch (_fun31282_ip) {
                 case 0:
                     var1 = this;
                     var0 = var1.selfDeaf;
                     if (var0) {
-                        _fun31278_ip = 18;
-                        continue _fun31278
+                        _fun31282_ip = 18;
+                        continue _fun31282
                     }
                 case 12:
                     var0 = var1.deaf;

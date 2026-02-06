@@ -14,27 +14,27 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class g implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private List f29347d;
+    private List f28491d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Map f29348e;
+    private Map f28492e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
         @Override // io.sentry.m1
         /* renamed from: b */
         public g a(e3 e3Var, ILogger iLogger) {
-            e3Var.s();
+            e3Var.u();
             List list = null;
             ConcurrentHashMap concurrentHashMap = null;
             while (e3Var.peek() == io.sentry.vendor.gson.stream.b.NAME) {
-                String m02 = e3Var.m0();
-                m02.getClass();
-                if (!m02.equals("values")) {
+                String o02 = e3Var.o0();
+                o02.getClass();
+                if (!o02.equals("values")) {
                     if (concurrentHashMap == null) {
                         concurrentHashMap = new ConcurrentHashMap();
                     }
-                    e3Var.v1(iLogger, concurrentHashMap, m02);
+                    e3Var.u1(iLogger, concurrentHashMap, o02);
                 } else {
                     list = e3Var.g2(iLogger, new f.a());
                 }
@@ -44,21 +44,21 @@ public final class g implements w1 {
             }
             g gVar = new g(list);
             gVar.b(concurrentHashMap);
-            e3Var.z();
+            e3Var.D();
             return gVar;
         }
     }
 
     public g(List list) {
-        this.f29347d = list;
+        this.f28491d = list;
     }
 
     public List a() {
-        return this.f29347d;
+        return this.f28491d;
     }
 
     public void b(Map map) {
-        this.f29348e = map;
+        this.f28492e = map;
     }
 
     public boolean equals(Object obj) {
@@ -66,25 +66,25 @@ public final class g implements w1 {
             return true;
         }
         if (obj != null && g.class == obj.getClass()) {
-            return io.sentry.util.y.a(this.f29347d, ((g) obj).f29347d);
+            return io.sentry.util.y.a(this.f28491d, ((g) obj).f28491d);
         }
         return false;
     }
 
     public int hashCode() {
-        return io.sentry.util.y.b(this.f29347d);
+        return io.sentry.util.y.b(this.f28491d);
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
-        f3Var.s();
-        f3Var.e("values").j(iLogger, this.f29347d);
-        Map map = this.f29348e;
+        f3Var.u();
+        f3Var.e("values").j(iLogger, this.f28491d);
+        Map map = this.f28492e;
         if (map != null) {
             for (String str : map.keySet()) {
-                f3Var.e(str).j(iLogger, this.f29348e.get(str));
+                f3Var.e(str).j(iLogger, this.f28492e.get(str));
             }
         }
-        f3Var.z();
+        f3Var.D();
     }
 }

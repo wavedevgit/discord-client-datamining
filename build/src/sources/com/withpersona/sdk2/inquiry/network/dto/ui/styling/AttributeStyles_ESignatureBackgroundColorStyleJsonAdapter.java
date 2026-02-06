@@ -46,21 +46,21 @@ public final class AttributeStyles_ESignatureBackgroundColorStyleJsonAdapter ext
     @NotNull
     public AttributeStyles.ESignatureBackgroundColorStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         StyleElements.ComplexElementColor complexElementColor = null;
         StyleElements.SimpleElementColor simpleElementColor = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 complexElementColor = (StyleElements.ComplexElementColor) this.nullableComplexElementColorAdapter.fromJson(reader);
-            } else if (W == 1) {
+            } else if (J == 1) {
                 simpleElementColor = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
             }
         }
-        reader.z();
+        reader.D();
         return new AttributeStyles.ESignatureBackgroundColorStyle(complexElementColor, simpleElementColor);
     }
 
@@ -69,11 +69,11 @@ public final class AttributeStyles_ESignatureBackgroundColorStyleJsonAdapter ext
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (eSignatureBackgroundColorStyle != null) {
             writer.k();
-            writer.W("base");
+            writer.J("base");
             this.nullableComplexElementColorAdapter.toJson(writer, eSignatureBackgroundColorStyle.getBase());
-            writer.W("signaturePreview");
+            writer.J("signaturePreview");
             this.nullableSimpleElementColorAdapter.toJson(writer, eSignatureBackgroundColorStyle.getSignaturePreview());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

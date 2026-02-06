@@ -48,30 +48,30 @@ public final class InputConfirmationCode_AttributesJsonAdapter extends h {
     @NotNull
     public InputConfirmationCode.Attributes fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         String str = null;
         String str2 = null;
         String str3 = null;
         JsonLogicBoolean jsonLogicBoolean = null;
         JsonLogicBoolean jsonLogicBoolean2 = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 str = (String) this.nullableStringAdapter.fromJson(reader);
-            } else if (W == 1) {
+            } else if (J == 1) {
                 str2 = (String) this.nullableStringAdapter.fromJson(reader);
-            } else if (W == 2) {
+            } else if (J == 2) {
                 str3 = (String) this.nullableStringAdapter.fromJson(reader);
-            } else if (W == 3) {
+            } else if (J == 3) {
                 jsonLogicBoolean = (JsonLogicBoolean) this.nullableJsonLogicBooleanAdapter.fromJson(reader);
-            } else if (W == 4) {
+            } else if (J == 4) {
                 jsonLogicBoolean2 = (JsonLogicBoolean) this.nullableJsonLogicBooleanAdapter.fromJson(reader);
             }
         }
-        reader.z();
+        reader.D();
         return new InputConfirmationCode.Attributes(str, str2, str3, jsonLogicBoolean, jsonLogicBoolean2);
     }
 
@@ -80,17 +80,17 @@ public final class InputConfirmationCode_AttributesJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (attributes != null) {
             writer.k();
-            writer.W("prefill");
+            writer.J("prefill");
             this.nullableStringAdapter.toJson(writer, attributes.getPrefill());
-            writer.W("label");
+            writer.J("label");
             this.nullableStringAdapter.toJson(writer, attributes.getLabel());
-            writer.W(ReactTextInputShadowNode.PROP_PLACEHOLDER);
+            writer.J(ReactTextInputShadowNode.PROP_PLACEHOLDER);
             this.nullableStringAdapter.toJson(writer, attributes.getPlaceholder());
-            writer.W(ViewProps.HIDDEN);
+            writer.J(ViewProps.HIDDEN);
             this.nullableJsonLogicBooleanAdapter.toJson(writer, attributes.getHidden());
-            writer.W("disabled");
+            writer.J("disabled");
             this.nullableJsonLogicBooleanAdapter.toJson(writer, attributes.getDisabled());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

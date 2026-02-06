@@ -38,37 +38,37 @@ public final class GenericFileUploadErrorResponse_DocumentErrorResponse_UnknownE
     @Override // com.squareup.moshi.h
     @NotNull
     public GenericFileUploadErrorResponse.DocumentErrorResponse.UnknownError fromJson(@NotNull m mVar) {
-        mVar.s();
+        mVar.u();
         String str = null;
         String str2 = null;
         ErrorDetails errorDetails = null;
         int i10 = -1;
         while (mVar.hasNext()) {
-            int W = mVar.W(this.options);
-            if (W == -1) {
+            int J = mVar.J(this.options);
+            if (J == -1) {
                 mVar.E0();
-                mVar.P();
-            } else if (W == 0) {
+                mVar.S();
+            } else if (J == 0) {
                 str = (String) this.stringAdapter.fromJson(mVar);
                 if (str == null) {
-                    throw ym.c.x("title", "title", mVar);
+                    throw an.c.x("title", "title", mVar);
                 }
                 i10 &= -2;
-            } else if (W == 1) {
+            } else if (J == 1) {
                 str2 = (String) this.nullableStringAdapter.fromJson(mVar);
                 i10 &= -3;
-            } else if (W == 2) {
+            } else if (J == 2) {
                 errorDetails = (ErrorDetails) this.nullableErrorDetailsAdapter.fromJson(mVar);
                 i10 &= -5;
             }
         }
-        mVar.z();
+        mVar.D();
         if (i10 == -8) {
             return new GenericFileUploadErrorResponse.DocumentErrorResponse.UnknownError(str, str2, errorDetails);
         }
         Constructor<GenericFileUploadErrorResponse.DocumentErrorResponse.UnknownError> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = GenericFileUploadErrorResponse.DocumentErrorResponse.UnknownError.class.getDeclaredConstructor(String.class, String.class, ErrorDetails.class, Integer.TYPE, ym.c.f54853c);
+            constructor = GenericFileUploadErrorResponse.DocumentErrorResponse.UnknownError.class.getDeclaredConstructor(String.class, String.class, ErrorDetails.class, Integer.TYPE, an.c.f1164c);
             this.constructorRef = constructor;
         }
         return constructor.newInstance(str, str2, errorDetails, Integer.valueOf(i10), null);
@@ -78,13 +78,13 @@ public final class GenericFileUploadErrorResponse_DocumentErrorResponse_UnknownE
     public void toJson(@NotNull t tVar, GenericFileUploadErrorResponse.DocumentErrorResponse.UnknownError unknownError) {
         if (unknownError != null) {
             tVar.k();
-            tVar.W("title");
+            tVar.J("title");
             this.stringAdapter.toJson(tVar, unknownError.getTitle());
-            tVar.W("code");
+            tVar.J("code");
             this.nullableStringAdapter.toJson(tVar, unknownError.getCode());
-            tVar.W("details");
+            tVar.J("details");
             this.nullableErrorDetailsAdapter.toJson(tVar, unknownError.getDetails());
-            tVar.E();
+            tVar.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

@@ -1,443 +1,83 @@
 package no;
 
-import android.content.Context;
-import ho.c4;
-import kotlin.Metadata;
-import kotlin.Result;
-import kotlin.Unit;
-import kotlin.coroutines.Continuation;
-import kotlin.coroutines.jvm.internal.k;
-import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.DefaultConstructorMarker;
-import kotlin.jvm.internal.Intrinsics;
-import kotlinx.coroutines.flow.Flow;
-import kotlinx.coroutines.flow.FlowCollector;
-import or.h;
-import ps.g;
-import sn.f0;
-import sn.i0;
-import sn.t0;
-import zm.o;
-@Metadata(d1 = {"\u0000V\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u0000\n\u0002\b\n\b\u0086\b\u0018\u0000 &2\n\u0012\u0006\u0012\u0004\u0018\u00010\u00020\u0001:\u0003\u0012#!B#\b\u0007\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\b\b\u0001\u0010\b\u001a\u00020\u0007¢\u0006\u0004\b\t\u0010\nJ\u0019\u0010\u000e\u001a\u0004\u0018\u00010\r2\u0006\u0010\f\u001a\u00020\u000bH\u0002¢\u0006\u0004\b\u000e\u0010\u000fJ\u001b\u0010\u0012\u001a\u00020\u00112\n\u0010\u0010\u001a\u0006\u0012\u0002\b\u00030\u0001H\u0016¢\u0006\u0004\b\u0012\u0010\u0013J\u0017\u0010\u0015\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00020\u0014H\u0016¢\u0006\u0004\b\u0015\u0010\u0016J\u0010\u0010\u0018\u001a\u00020\u0017HÖ\u0001¢\u0006\u0004\b\u0018\u0010\u0019J\u0010\u0010\u001b\u001a\u00020\u001aHÖ\u0001¢\u0006\u0004\b\u001b\u0010\u001cJ\u001a\u0010\u001f\u001a\u00020\u00112\b\u0010\u001e\u001a\u0004\u0018\u00010\u001dHÖ\u0003¢\u0006\u0004\b\u001f\u0010 R\u0014\u0010\u0004\u001a\u00020\u00038\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b!\u0010\"R\u0014\u0010\u0006\u001a\u00020\u00058\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b#\u0010$R\u0014\u0010\b\u001a\u00020\u00078\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u000e\u0010%¨\u0006'"}, d2 = {"Lno/a;", "Lzm/o;", "Lno/d;", "Landroid/content/Context;", "context", "Lsn/f0;", "governmentIdFeed", "Lho/c4$e;", "side", "<init>", "(Landroid/content/Context;Lsn/f0;Lho/c4$e;)V", "Lsn/t0;", "it", "Lno/a$c;", "d", "(Lsn/t0;)Lno/a$c;", "otherWorker", "", "a", "(Lzm/o;)Z", "Lkotlinx/coroutines/flow/Flow;", "run", "()Lkotlinx/coroutines/flow/Flow;", "", "toString", "()Ljava/lang/String;", "", "hashCode", "()I", "", "other", "equals", "(Ljava/lang/Object;)Z", "b", "Landroid/content/Context;", "c", "Lsn/f0;", "Lho/c4$e;", "e", "government-id_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.viewbinding.ViewBinding;
+import com.withpersona.sdk2.inquiry.shared.ui.Pi2NavigationBar;
+import com.withpersona.sdk2.inquiry.shared.ui.ThemeableLottieAnimationView;
+import jo.m4;
+import jo.n4;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a implements o<no.d> {
+public final class a implements ViewBinding {
 
-    /* renamed from: e  reason: collision with root package name */
-    public static final C0529a f41381e = new C0529a(null);
+    /* renamed from: a  reason: collision with root package name */
+    private final CoordinatorLayout f40948a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Context f41382b;
+    public final LinearLayout f40949b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final f0 f41383c;
+    public final Button f40950c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final c4.e f41384d;
+    public final ThemeableLottieAnimationView f40951d;
 
-    /* renamed from: no.a$a  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0529a {
-        public /* synthetic */ C0529a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
-        }
+    /* renamed from: e  reason: collision with root package name */
+    public final Pi2NavigationBar f40952e;
 
-        private C0529a() {
-        }
+    /* renamed from: f  reason: collision with root package name */
+    public final TextView f40953f;
+
+    private a(CoordinatorLayout coordinatorLayout, LinearLayout linearLayout, Button button, ThemeableLottieAnimationView themeableLottieAnimationView, Pi2NavigationBar pi2NavigationBar, TextView textView) {
+        this.f40948a = coordinatorLayout;
+        this.f40949b = linearLayout;
+        this.f40950c = button;
+        this.f40951d = themeableLottieAnimationView;
+        this.f40952e = pi2NavigationBar;
+        this.f40953f = textView;
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public interface b {
-        a a(c4.e eVar);
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class c {
-
-        /* renamed from: a  reason: collision with root package name */
-        private final no.d f41385a;
-
-        /* renamed from: b  reason: collision with root package name */
-        private final long f41386b;
-
-        public c(no.d hint, long j10) {
-            Intrinsics.checkNotNullParameter(hint, "hint");
-            this.f41385a = hint;
-            this.f41386b = j10;
-        }
-
-        public final no.d a() {
-            return this.f41385a;
-        }
-
-        public final long b() {
-            return this.f41386b;
-        }
-
-        public boolean equals(Object obj) {
-            if (this == obj) {
-                return true;
-            }
-            if (!(obj instanceof c)) {
-                return false;
-            }
-            c cVar = (c) obj;
-            if (Intrinsics.areEqual(this.f41385a, cVar.f41385a) && this.f41386b == cVar.f41386b) {
-                return true;
-            }
-            return false;
-        }
-
-        public int hashCode() {
-            return (this.f41385a.hashCode() * 31) + Long.hashCode(this.f41386b);
-        }
-
-        public String toString() {
-            no.d dVar = this.f41385a;
-            long j10 = this.f41386b;
-            return "HintEvent(hint=" + dVar + ", minDurationMs=" + j10 + ")";
-        }
-    }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    static final class d extends k implements Function2 {
-
-        /* renamed from: d  reason: collision with root package name */
-        int f41387d;
-
-        /* renamed from: e  reason: collision with root package name */
-        private /* synthetic */ Object f41388e;
-
-        /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ Flow f41389i;
-
-        /* JADX INFO: Access modifiers changed from: package-private */
-        /* renamed from: no.a$d$a  reason: collision with other inner class name */
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public static final class C0530a implements FlowCollector {
-
-            /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ FlowCollector f41390d;
-
-            /* JADX INFO: Access modifiers changed from: package-private */
-            /* renamed from: no.a$d$a$a  reason: collision with other inner class name */
-            /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-            public static final class C0531a extends kotlin.coroutines.jvm.internal.d {
-
-                /* renamed from: d  reason: collision with root package name */
-                Object f41391d;
-
-                /* renamed from: e  reason: collision with root package name */
-                /* synthetic */ Object f41392e;
-
-                /* renamed from: o  reason: collision with root package name */
-                int f41394o;
-
-                C0531a(Continuation continuation) {
-                    super(continuation);
-                }
-
-                @Override // kotlin.coroutines.jvm.internal.a
-                public final Object invokeSuspend(Object obj) {
-                    this.f41392e = obj;
-                    this.f41394o |= Integer.MIN_VALUE;
-                    return C0530a.this.emit(null, this);
-                }
-            }
-
-            C0530a(FlowCollector flowCollector) {
-                this.f41390d = flowCollector;
-            }
-
-            /* JADX WARN: Code restructure failed: missing block: B:21:0x0052, code lost:
-                if (r9.emit(r2, r0) == r1) goto L21;
-             */
-            /* JADX WARN: Code restructure failed: missing block: B:27:0x006c, code lost:
-                if (ms.i0.a(r8, r0) != r1) goto L11;
-             */
-            /* JADX WARN: Code restructure failed: missing block: B:28:0x006e, code lost:
-                return r1;
-             */
-            /* JADX WARN: Removed duplicated region for block: B:10:0x0025  */
-            /* JADX WARN: Removed duplicated region for block: B:16:0x003d  */
-            /* JADX WARN: Removed duplicated region for block: B:24:0x0057  */
-            /* JADX WARN: Removed duplicated region for block: B:25:0x005c  */
-            @Override // kotlinx.coroutines.flow.FlowCollector
-            /* renamed from: a */
-            /*
-                Code decompiled incorrectly, please refer to instructions dump.
-                To view partially-correct add '--show-bad-code' argument
-            */
-            public final java.lang.Object emit(no.a.c r8, kotlin.coroutines.Continuation r9) {
-                /*
-                    r7 = this;
-                    boolean r0 = r9 instanceof no.a.d.C0530a.C0531a
-                    if (r0 == 0) goto L13
-                    r0 = r9
-                    no.a$d$a$a r0 = (no.a.d.C0530a.C0531a) r0
-                    int r1 = r0.f41394o
-                    r2 = -2147483648(0xffffffff80000000, float:-0.0)
-                    r3 = r1 & r2
-                    if (r3 == 0) goto L13
-                    int r1 = r1 - r2
-                    r0.f41394o = r1
-                    goto L18
-                L13:
-                    no.a$d$a$a r0 = new no.a$d$a$a
-                    r0.<init>(r9)
-                L18:
-                    java.lang.Object r9 = r0.f41392e
-                    java.lang.Object r1 = ur.b.f()
-                    int r2 = r0.f41394o
-                    r3 = 0
-                    r4 = 2
-                    r5 = 1
-                    if (r2 == 0) goto L3d
-                    if (r2 == r5) goto L35
-                    if (r2 != r4) goto L2d
-                    kotlin.c.b(r9)
-                    goto L6f
-                L2d:
-                    java.lang.IllegalStateException r8 = new java.lang.IllegalStateException
-                    java.lang.String r9 = "call to 'resume' before 'invoke' with coroutine"
-                    r8.<init>(r9)
-                    throw r8
-                L35:
-                    java.lang.Object r8 = r0.f41391d
-                    no.a$c r8 = (no.a.c) r8
-                    kotlin.c.b(r9)
-                    goto L55
-                L3d:
-                    kotlin.c.b(r9)
-                    kotlinx.coroutines.flow.FlowCollector r9 = r7.f41390d
-                    if (r8 == 0) goto L49
-                    no.d r2 = r8.a()
-                    goto L4a
-                L49:
-                    r2 = r3
-                L4a:
-                    r0.f41391d = r8
-                    r0.f41394o = r5
-                    java.lang.Object r9 = r9.emit(r2, r0)
-                    if (r9 != r1) goto L55
-                    goto L6e
-                L55:
-                    if (r8 == 0) goto L5c
-                    long r8 = r8.b()
-                    goto L5e
-                L5c:
-                    r8 = 0
-                L5e:
-                    r5 = 33
-                    long r8 = kotlin.ranges.d.e(r8, r5)
-                    r0.f41391d = r3
-                    r0.f41394o = r4
-                    java.lang.Object r8 = ms.i0.a(r8, r0)
-                    if (r8 != r1) goto L6f
-                L6e:
-                    return r1
-                L6f:
-                    kotlin.Unit r8 = kotlin.Unit.f31988a
-                    return r8
-                */
-                throw new UnsupportedOperationException("Method not decompiled: no.a.d.C0530a.emit(no.a$c, kotlin.coroutines.Continuation):java.lang.Object");
-            }
-        }
-
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        d(Flow flow, Continuation continuation) {
-            super(2, continuation);
-            this.f41389i = flow;
-        }
-
-        @Override // kotlin.coroutines.jvm.internal.a
-        public final Continuation create(Object obj, Continuation continuation) {
-            d dVar = new d(this.f41389i, continuation);
-            dVar.f41388e = obj;
-            return dVar;
-        }
-
-        @Override // kotlin.coroutines.jvm.internal.a
-        public final Object invokeSuspend(Object obj) {
-            Object f10 = ur.b.f();
-            int i10 = this.f41387d;
-            if (i10 != 0) {
-                if (i10 == 1) {
-                    kotlin.c.b(obj);
-                } else {
-                    throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
-                }
-            } else {
-                kotlin.c.b(obj);
-                Flow j10 = g.j(this.f41389i);
-                C0530a c0530a = new C0530a((FlowCollector) this.f41388e);
-                this.f41387d = 1;
-                if (j10.collect(c0530a, this) == f10) {
-                    return f10;
-                }
-            }
-            return Unit.f31988a;
-        }
-
-        @Override // kotlin.jvm.functions.Function2
-        public final Object invoke(FlowCollector flowCollector, Continuation continuation) {
-            return ((d) create(flowCollector, continuation)).invokeSuspend(Unit.f31988a);
-        }
-    }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    static final class e extends k implements Function2 {
-
-        /* renamed from: d  reason: collision with root package name */
-        int f41395d;
-
-        /* renamed from: e  reason: collision with root package name */
-        private /* synthetic */ Object f41396e;
-
-        /* JADX INFO: Access modifiers changed from: package-private */
-        /* renamed from: no.a$e$a  reason: collision with other inner class name */
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public static final class C0532a implements FlowCollector {
-
-            /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ FlowCollector f41398d;
-
-            /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ a f41399e;
-
-            C0532a(FlowCollector flowCollector, a aVar) {
-                this.f41398d = flowCollector;
-                this.f41399e = aVar;
-            }
-
-            @Override // kotlinx.coroutines.flow.FlowCollector
-            public final Object emit(Object obj, Continuation continuation) {
-                Object j10 = ((Result) obj).j();
-                FlowCollector flowCollector = this.f41398d;
-                a aVar = this.f41399e;
-                if (Result.e(j10) == null) {
-                    Object emit = flowCollector.emit(aVar.d((t0) j10), continuation);
-                    if (emit == ur.b.f()) {
-                        return emit;
-                    }
-                } else {
-                    Object emit2 = flowCollector.emit(null, continuation);
-                    if (emit2 == ur.b.f()) {
-                        return emit2;
+    public static a a(View view) {
+        int i10 = m4.f30413t;
+        LinearLayout linearLayout = (LinearLayout) e4.a.a(view, i10);
+        if (linearLayout != null) {
+            i10 = m4.f30415u;
+            Button button = (Button) e4.a.a(view, i10);
+            if (button != null) {
+                i10 = m4.P;
+                ThemeableLottieAnimationView themeableLottieAnimationView = (ThemeableLottieAnimationView) e4.a.a(view, i10);
+                if (themeableLottieAnimationView != null) {
+                    i10 = m4.Y;
+                    Pi2NavigationBar pi2NavigationBar = (Pi2NavigationBar) e4.a.a(view, i10);
+                    if (pi2NavigationBar != null) {
+                        i10 = m4.D0;
+                        TextView textView = (TextView) e4.a.a(view, i10);
+                        if (textView != null) {
+                            return new a((CoordinatorLayout) view, linearLayout, button, themeableLottieAnimationView, pi2NavigationBar, textView);
+                        }
                     }
                 }
-                return Unit.f31988a;
             }
         }
-
-        e(Continuation continuation) {
-            super(2, continuation);
-        }
-
-        @Override // kotlin.coroutines.jvm.internal.a
-        public final Continuation create(Object obj, Continuation continuation) {
-            e eVar = new e(continuation);
-            eVar.f41396e = obj;
-            return eVar;
-        }
-
-        @Override // kotlin.coroutines.jvm.internal.a
-        public final Object invokeSuspend(Object obj) {
-            Object f10 = ur.b.f();
-            int i10 = this.f41395d;
-            if (i10 != 0) {
-                if (i10 != 1) {
-                    throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
-                }
-                kotlin.c.b(obj);
-            } else {
-                kotlin.c.b(obj);
-                f0 f0Var = a.this.f41383c;
-                C0532a c0532a = new C0532a((FlowCollector) this.f41396e, a.this);
-                this.f41395d = 1;
-                if (f0Var.collect(c0532a, this) == f10) {
-                    return f10;
-                }
-            }
-            throw new h();
-        }
-
-        @Override // kotlin.jvm.functions.Function2
-        public final Object invoke(FlowCollector flowCollector, Continuation continuation) {
-            return ((e) create(flowCollector, continuation)).invokeSuspend(Unit.f31988a);
-        }
+        throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i10)));
     }
 
-    public a(Context context, f0 governmentIdFeed, c4.e side) {
-        Intrinsics.checkNotNullParameter(context, "context");
-        Intrinsics.checkNotNullParameter(governmentIdFeed, "governmentIdFeed");
-        Intrinsics.checkNotNullParameter(side, "side");
-        this.f41382b = context;
-        this.f41383c = governmentIdFeed;
-        this.f41384d = side;
+    public static a c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
+        View inflate = layoutInflater.inflate(n4.f30545a, viewGroup, false);
+        if (z10) {
+            viewGroup.addView(inflate);
+        }
+        return a(inflate);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public final c d(t0 t0Var) {
-        boolean z10;
-        if (t0Var instanceof t0.b) {
-            return new c(no.e.f41403d, 1000L);
-        }
-        i0 a10 = t0Var.a();
-        if (a10 != null) {
-            boolean z11 = true;
-            if (a10.c() >= 0.2d && a10.a() >= 0.2d) {
-                z10 = false;
-            } else {
-                z10 = true;
-            }
-            if (a10.c() <= 0.3d || a10.a() <= 0.5d) {
-                z11 = false;
-            }
-            if ((a10.b() < 0.34d && !z11) || (a10.b() < 0.45d && z10)) {
-                return new c(f.f41404d, 1000L);
-            }
-            return null;
-        }
-        return null;
-    }
-
-    @Override // zm.o
-    public boolean a(o otherWorker) {
-        Intrinsics.checkNotNullParameter(otherWorker, "otherWorker");
-        if ((otherWorker instanceof a) && ((a) otherWorker).f41384d == this.f41384d) {
-            return true;
-        }
-        return false;
-    }
-
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (!(obj instanceof a)) {
-            return false;
-        }
-        a aVar = (a) obj;
-        if (Intrinsics.areEqual(this.f41382b, aVar.f41382b) && Intrinsics.areEqual(this.f41383c, aVar.f41383c) && this.f41384d == aVar.f41384d) {
-            return true;
-        }
-        return false;
-    }
-
-    public int hashCode() {
-        return (((this.f41382b.hashCode() * 31) + this.f41383c.hashCode()) * 31) + this.f41384d.hashCode();
-    }
-
-    @Override // zm.o
-    public Flow run() {
-        return g.l(g.v(new d(g.v(new e(null)), null)));
-    }
-
-    public String toString() {
-        Context context = this.f41382b;
-        f0 f0Var = this.f41383c;
-        c4.e eVar = this.f41384d;
-        return "GovernmentIdHintWorker(context=" + context + ", governmentIdFeed=" + f0Var + ", side=" + eVar + ")";
+    @Override // androidx.viewbinding.ViewBinding
+    /* renamed from: b */
+    public CoordinatorLayout getRoot() {
+        return this.f40948a;
     }
 }

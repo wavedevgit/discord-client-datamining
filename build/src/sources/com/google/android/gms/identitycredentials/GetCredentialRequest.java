@@ -15,19 +15,19 @@ import org.jetbrains.annotations.NotNull;
 public final class GetCredentialRequest extends hf.a implements ReflectedParcelable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f13954d;
+    private final List f13917d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Bundle f13955e;
+    private final Bundle f13918e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f13956i;
+    private final String f13919i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final ResultReceiver f13957o;
+    private final ResultReceiver f13920o;
 
     /* renamed from: p  reason: collision with root package name */
-    public static final a f13953p = new a(null);
+    public static final a f13916p = new a(null);
     @NotNull
     public static final Parcelable.Creator<GetCredentialRequest> CREATOR = new com.google.android.gms.identitycredentials.a();
 
@@ -45,26 +45,26 @@ public final class GetCredentialRequest extends hf.a implements ReflectedParcela
         Intrinsics.checkNotNullParameter(credentialOptions, "credentialOptions");
         Intrinsics.checkNotNullParameter(data, "data");
         Intrinsics.checkNotNullParameter(resultReceiver, "resultReceiver");
-        this.f13954d = credentialOptions;
-        this.f13955e = data;
-        this.f13956i = str;
-        this.f13957o = resultReceiver;
+        this.f13917d = credentialOptions;
+        this.f13918e = data;
+        this.f13919i = str;
+        this.f13920o = resultReceiver;
     }
 
     public final List b() {
-        return this.f13954d;
+        return this.f13917d;
     }
 
     public final Bundle c() {
-        return this.f13955e;
+        return this.f13918e;
     }
 
     public final String d() {
-        return this.f13956i;
+        return this.f13919i;
     }
 
     public final ResultReceiver e() {
-        return this.f13957o;
+        return this.f13920o;
     }
 
     @Override // android.os.Parcelable

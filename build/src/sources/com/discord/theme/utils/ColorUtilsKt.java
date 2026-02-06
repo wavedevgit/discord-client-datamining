@@ -15,7 +15,7 @@ import com.facebook.drawee.view.SimpleDraweeView;
 import com.facebook.react.devsupport.StackTraceHelper;
 import com.facebook.react.uimanager.ViewProps;
 import com.facebook.react.views.text.internal.span.SetSpanOperation;
-import ds.a;
+import fs.a;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;

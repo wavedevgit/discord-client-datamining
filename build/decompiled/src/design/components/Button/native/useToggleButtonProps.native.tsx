@@ -20,19 +20,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Button/native/useToggleButtonProps.native.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0, arg1() {
-        _fun88160: for (var _fun88160_ip = 0;;) switch (_fun88160_ip) {
+        _fun88173: for (var _fun88173_ip = 0;;) switch (_fun88173_ip) {
             case 0:
                 var3 = arg0;
                 var1 = arg1;
                 var0 = {};
                 if (var1) {
-                    _fun88160_ip = 19;
-                    continue _fun88160
+                    _fun88173_ip = 19;
+                    continue _fun88173
                 }
             case 11:
                 var2 = var3.off;
-                _fun88160_ip = 25;
-                continue _fun88160;
+                _fun88173_ip = 25;
+                continue _fun88173;
             case 19:
                 var2 = var3.on;
             case 25:
@@ -51,19 +51,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useToggleButtonProps = var3;
     var1 = function arg0, arg1() {
-        _fun88161: for (var _fun88161_ip = 0;;) switch (_fun88161_ip) {
+        _fun88174: for (var _fun88174_ip = 0;;) switch (_fun88174_ip) {
             case 0:
                 var3 = arg0;
                 var1 = arg1;
                 var0 = {};
                 if (var1) {
-                    _fun88161_ip = 19;
-                    continue _fun88161
+                    _fun88174_ip = 19;
+                    continue _fun88174
                 }
             case 11:
                 var2 = var3.off;
-                _fun88161_ip = 25;
-                continue _fun88161;
+                _fun88174_ip = 25;
+                continue _fun88174;
             case 19:
                 var2 = var3.on;
             case 25:

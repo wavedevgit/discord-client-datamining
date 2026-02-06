@@ -1,38 +1,38 @@
 package ng;
+
+import yi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class h8 {
+final class h8 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ma f40647a;
+    static final h8 f39857a = new h8();
 
-    /* renamed from: b  reason: collision with root package name */
-    private final e8 f40648b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final z7 f40649c;
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public /* synthetic */ h8(f8 f8Var, g8 g8Var) {
-        ma maVar;
-        e8 e8Var;
-        z7 z7Var;
-        maVar = f8Var.f40585a;
-        this.f40647a = maVar;
-        e8Var = f8Var.f40586b;
-        this.f40648b = e8Var;
-        z7Var = f8Var.f40587c;
-        this.f40649c = z7Var;
+    static {
+        c.b a10 = yi.c.a("options");
+        l2 l2Var = new l2();
+        l2Var.a(1);
+        a10.b(l2Var.b()).a();
+        c.b a11 = yi.c.a("latencyMs");
+        l2 l2Var2 = new l2();
+        l2Var2.a(2);
+        a11.b(l2Var2.b()).a();
+        c.b a12 = yi.c.a("frameCount");
+        l2 l2Var3 = new l2();
+        l2Var3.a(3);
+        a12.b(l2Var3.b()).a();
+        c.b a13 = yi.c.a("errorCode");
+        l2 l2Var4 = new l2();
+        l2Var4.a(4);
+        a13.b(l2Var4.b()).a();
     }
 
-    public final z7 a() {
-        return this.f40649c;
+    private h8() {
     }
 
-    public final e8 b() {
-        return this.f40648b;
-    }
-
-    public final ma c() {
-        return this.f40647a;
+    @Override // yi.d
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        android.support.v4.media.session.b.a(obj);
+        yi.e eVar = (yi.e) obj2;
+        throw null;
     }
 }

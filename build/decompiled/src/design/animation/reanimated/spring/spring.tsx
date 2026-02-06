@@ -110,4 +110,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.withSpring = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4082, 4083, 3720, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4083, 4084, 3722, 2]);

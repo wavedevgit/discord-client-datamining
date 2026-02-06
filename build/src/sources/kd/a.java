@@ -7,39 +7,39 @@ import java.nio.charset.CharacterCodingException;
 import java.nio.charset.CharsetDecoder;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import li.d;
+import mi.d;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class a extends e {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Pattern f31692c = Pattern.compile("(.+?)='(.*?)';", 32);
+    private static final Pattern f31536c = Pattern.compile("(.+?)='(.*?)';", 32);
 
     /* renamed from: a  reason: collision with root package name */
-    private final CharsetDecoder f31693a = d.f36882c.newDecoder();
+    private final CharsetDecoder f31537a = d.f37171c.newDecoder();
 
     /* renamed from: b  reason: collision with root package name */
-    private final CharsetDecoder f31694b = d.f36881b.newDecoder();
+    private final CharsetDecoder f31538b = d.f37170b.newDecoder();
 
     private String c(ByteBuffer byteBuffer) {
         try {
-            return this.f31693a.decode(byteBuffer).toString();
+            return this.f31537a.decode(byteBuffer).toString();
         } catch (CharacterCodingException unused) {
             try {
-                String charBuffer = this.f31694b.decode(byteBuffer).toString();
-                this.f31694b.reset();
+                String charBuffer = this.f31538b.decode(byteBuffer).toString();
+                this.f31538b.reset();
                 byteBuffer.rewind();
                 return charBuffer;
             } catch (CharacterCodingException unused2) {
-                this.f31694b.reset();
+                this.f31538b.reset();
                 byteBuffer.rewind();
                 return null;
             } catch (Throwable th2) {
-                this.f31694b.reset();
+                this.f31538b.reset();
                 byteBuffer.rewind();
                 throw th2;
             }
         } finally {
-            this.f31693a.reset();
+            this.f31537a.reset();
             byteBuffer.rewind();
         }
     }
@@ -53,13 +53,13 @@ public final class a extends e {
         if (c10 == null) {
             return new Metadata(new c(bArr, null, null));
         }
-        Matcher matcher = f31692c.matcher(c10);
+        Matcher matcher = f31536c.matcher(c10);
         String str2 = null;
         for (int i10 = 0; matcher.find(i10); i10 = matcher.end()) {
             String group = matcher.group(1);
             String group2 = matcher.group(2);
             if (group != null) {
-                String e10 = li.b.e(group);
+                String e10 = mi.b.e(group);
                 e10.getClass();
                 if (!e10.equals("streamurl")) {
                     if (e10.equals("streamtitle")) {

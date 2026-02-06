@@ -28,10 +28,10 @@ public abstract class InquiryField implements Parcelable {
 
         @NotNull
         public final h.e createAdapter() {
-            xm.b b10 = xm.b.b(InquiryField.class, "type");
+            zm.b b10 = zm.b.b(InquiryField.class, "type");
             UnknownAdapter unknownAdapter = UnknownAdapter.INSTANCE;
             Intrinsics.checkNotNull(unknownAdapter, "null cannot be cast to non-null type com.squareup.moshi.JsonAdapter<kotlin.Any>");
-            xm.b e10 = b10.d(unknownAdapter).e(StringField.class, StringField.TYPE).e(IntegerField.class, IntegerField.TYPE).e(BooleanField.class, BooleanField.TYPE).e(FloatField.class, FloatField.TYPE).e(FloatField.class, FloatField.TYPE2).e(DateField.class, DateField.TYPE).e(DatetimeField.class, DatetimeField.TYPE).e(ChoicesField.class, ChoicesField.TYPE).e(MultiChoicesField.class, MultiChoicesField.TYPE);
+            zm.b e10 = b10.d(unknownAdapter).e(StringField.class, StringField.TYPE).e(IntegerField.class, IntegerField.TYPE).e(BooleanField.class, BooleanField.TYPE).e(FloatField.class, FloatField.TYPE).e(FloatField.class, FloatField.TYPE2).e(DateField.class, DateField.TYPE).e(DatetimeField.class, DatetimeField.TYPE).e(ChoicesField.class, ChoicesField.TYPE).e(MultiChoicesField.class, MultiChoicesField.TYPE);
             Intrinsics.checkNotNullExpressionValue(e10, "withSubtype(...)");
             return e10;
         }
@@ -103,16 +103,16 @@ public abstract class InquiryField implements Parcelable {
         @NotNull
         public InquiryField fromJson(@NotNull m reader) {
             Intrinsics.checkNotNullParameter(reader, "reader");
-            reader.s();
+            reader.u();
             String str = "";
             while (reader.hasNext()) {
-                if (Intrinsics.areEqual(reader.m0(), "type")) {
-                    str = reader.f1();
+                if (Intrinsics.areEqual(reader.o0(), "type")) {
+                    str = reader.e1();
                 } else {
-                    reader.P();
+                    reader.S();
                 }
             }
-            reader.z();
+            reader.D();
             return new Unknown(str);
         }
 
@@ -120,9 +120,9 @@ public abstract class InquiryField implements Parcelable {
         public void toJson(@NotNull t writer, InquiryField inquiryField) {
             Intrinsics.checkNotNullParameter(writer, "writer");
             writer.k();
-            writer.W("type");
-            writer.x1(inquiryField != null ? inquiryField.getType() : null);
-            writer.E();
+            writer.J("type");
+            writer.w1(inquiryField != null ? inquiryField.getType() : null);
+            writer.s();
         }
     }
 

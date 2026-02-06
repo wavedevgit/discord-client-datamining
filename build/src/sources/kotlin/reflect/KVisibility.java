@@ -7,34 +7,34 @@ import kotlin.enums.EnumEntries;
 public final class KVisibility {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final KVisibility f32097d = new KVisibility("PUBLIC", 0);
+    public static final KVisibility f32117d = new KVisibility("PUBLIC", 0);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final KVisibility f32098e = new KVisibility("PROTECTED", 1);
+    public static final KVisibility f32118e = new KVisibility("PROTECTED", 1);
 
     /* renamed from: i  reason: collision with root package name */
-    public static final KVisibility f32099i = new KVisibility("INTERNAL", 2);
+    public static final KVisibility f32119i = new KVisibility("INTERNAL", 2);
 
     /* renamed from: o  reason: collision with root package name */
-    public static final KVisibility f32100o = new KVisibility("PRIVATE", 3);
+    public static final KVisibility f32120o = new KVisibility("PRIVATE", 3);
 
     /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ KVisibility[] f32101p;
+    private static final /* synthetic */ KVisibility[] f32121p;
 
     /* renamed from: q  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f32102q;
+    private static final /* synthetic */ EnumEntries f32122q;
 
     static {
         KVisibility[] a10 = a();
-        f32101p = a10;
-        f32102q = vr.a.a(a10);
+        f32121p = a10;
+        f32122q = xr.a.a(a10);
     }
 
     private KVisibility(String str, int i10) {
     }
 
     private static final /* synthetic */ KVisibility[] a() {
-        return new KVisibility[]{f32097d, f32098e, f32099i, f32100o};
+        return new KVisibility[]{f32117d, f32118e, f32119i, f32120o};
     }
 
     public static KVisibility valueOf(String str) {
@@ -42,6 +42,6 @@ public final class KVisibility {
     }
 
     public static KVisibility[] values() {
-        return (KVisibility[]) f32101p.clone();
+        return (KVisibility[]) f32121p.clone();
     }
 }

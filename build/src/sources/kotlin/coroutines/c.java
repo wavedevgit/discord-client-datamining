@@ -8,25 +8,25 @@ import kotlin.jvm.internal.Intrinsics;
 public final class c implements CoroutineContext, Serializable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final CoroutineContext f32058d;
+    private final CoroutineContext f32078d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final CoroutineContext.Element f32059e;
+    private final CoroutineContext.Element f32079e;
 
     public c(CoroutineContext left, CoroutineContext.Element element) {
         Intrinsics.checkNotNullParameter(left, "left");
         Intrinsics.checkNotNullParameter(element, "element");
-        this.f32058d = left;
-        this.f32059e = element;
+        this.f32078d = left;
+        this.f32079e = element;
     }
 
     private final boolean c(CoroutineContext.Element element) {
-        return Intrinsics.areEqual(k(element.getKey()), element);
+        return Intrinsics.areEqual(m(element.getKey()), element);
     }
 
     private final boolean d(c cVar) {
-        while (c(cVar.f32059e)) {
-            CoroutineContext coroutineContext = cVar.f32058d;
+        while (c(cVar.f32079e)) {
+            CoroutineContext coroutineContext = cVar.f32078d;
             if (coroutineContext instanceof c) {
                 cVar = (c) coroutineContext;
             } else {
@@ -41,7 +41,7 @@ public final class c implements CoroutineContext, Serializable {
         int i10 = 2;
         c cVar = this;
         while (true) {
-            CoroutineContext coroutineContext = cVar.f32058d;
+            CoroutineContext coroutineContext = cVar.f32078d;
             if (coroutineContext instanceof c) {
                 cVar = (c) coroutineContext;
             } else {
@@ -65,13 +65,7 @@ public final class c implements CoroutineContext, Serializable {
     }
 
     @Override // kotlin.coroutines.CoroutineContext
-    public Object A1(Object obj, Function2 operation) {
-        Intrinsics.checkNotNullParameter(operation, "operation");
-        return operation.invoke(this.f32058d.A1(obj, operation), this.f32059e);
-    }
-
-    @Override // kotlin.coroutines.CoroutineContext
-    public CoroutineContext V0(CoroutineContext coroutineContext) {
+    public CoroutineContext Y0(CoroutineContext coroutineContext) {
         return CoroutineContext.a.b(this, coroutineContext);
     }
 
@@ -90,29 +84,29 @@ public final class c implements CoroutineContext, Serializable {
     }
 
     public int hashCode() {
-        return this.f32058d.hashCode() + this.f32059e.hashCode();
+        return this.f32078d.hashCode() + this.f32079e.hashCode();
     }
 
     @Override // kotlin.coroutines.CoroutineContext
-    public CoroutineContext.Element k(CoroutineContext.b key) {
+    public CoroutineContext.Element m(CoroutineContext.b key) {
         Intrinsics.checkNotNullParameter(key, "key");
         c cVar = this;
         while (true) {
-            CoroutineContext.Element k10 = cVar.f32059e.k(key);
-            if (k10 != null) {
-                return k10;
+            CoroutineContext.Element m10 = cVar.f32079e.m(key);
+            if (m10 != null) {
+                return m10;
             }
-            CoroutineContext coroutineContext = cVar.f32058d;
+            CoroutineContext coroutineContext = cVar.f32078d;
             if (coroutineContext instanceof c) {
                 cVar = (c) coroutineContext;
             } else {
-                return coroutineContext.k(key);
+                return coroutineContext.m(key);
             }
         }
     }
 
     public String toString() {
-        return '[' + ((String) A1("", new Function2() { // from class: tr.a
+        return '[' + ((String) z1("", new Function2() { // from class: vr.a
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(Object obj, Object obj2) {
                 String f10;
@@ -125,16 +119,22 @@ public final class c implements CoroutineContext, Serializable {
     @Override // kotlin.coroutines.CoroutineContext
     public CoroutineContext x1(CoroutineContext.b key) {
         Intrinsics.checkNotNullParameter(key, "key");
-        if (this.f32059e.k(key) != null) {
-            return this.f32058d;
+        if (this.f32079e.m(key) != null) {
+            return this.f32078d;
         }
-        CoroutineContext x12 = this.f32058d.x1(key);
-        if (x12 == this.f32058d) {
+        CoroutineContext x12 = this.f32078d.x1(key);
+        if (x12 == this.f32078d) {
             return this;
         }
-        if (x12 == e.f32062d) {
-            return this.f32059e;
+        if (x12 == e.f32082d) {
+            return this.f32079e;
         }
-        return new c(x12, this.f32059e);
+        return new c(x12, this.f32079e);
+    }
+
+    @Override // kotlin.coroutines.CoroutineContext
+    public Object z1(Object obj, Function2 operation) {
+        Intrinsics.checkNotNullParameter(operation, "operation");
+        return operation.invoke(this.f32078d.z1(obj, operation), this.f32079e);
     }
 }

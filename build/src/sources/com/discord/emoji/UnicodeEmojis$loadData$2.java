@@ -2,7 +2,6 @@ package com.discord.emoji;
 
 import android.content.Context;
 import com.discord.emoji.UnicodeEmojis;
-import ht.b0;
 import java.io.InputStream;
 import java.util.zip.GZIPInputStream;
 import kotlin.Metadata;
@@ -12,6 +11,7 @@ import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.serialization.json.Json;
+import kt.b0;
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, d2 = {"<anonymous>", "Lcom/discord/emoji/UnicodeEmojis$EmojiCategories;", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {2, 1, 0}, xi = 48)
 @kotlin.coroutines.jvm.internal.e(c = "com.discord.emoji.UnicodeEmojis$loadData$2", f = "UnicodeEmojis.kt", l = {}, m = "invokeSuspend")
@@ -36,7 +36,7 @@ public final class UnicodeEmojis$loadData$2 extends kotlin.coroutines.jvm.intern
     @Override // kotlin.coroutines.jvm.internal.a
     public final Object invokeSuspend(Object obj) {
         Json json;
-        ur.b.f();
+        wr.b.f();
         if (this.label == 0) {
             kotlin.c.b(obj);
             InputStream openRawResource = this.$context.getResources().openRawResource(R.raw.emojis_json);
@@ -45,8 +45,8 @@ public final class UnicodeEmojis$loadData$2 extends kotlin.coroutines.jvm.intern
                 json = UnicodeEmojis.emojiJsonParser;
                 json.a();
                 UnicodeEmojis.EmojiCategories emojiCategories = (UnicodeEmojis.EmojiCategories) b0.a(json, UnicodeEmojis.EmojiCategories.Companion.serializer(), gZIPInputStream);
-                zr.c.a(gZIPInputStream, null);
-                zr.c.a(openRawResource, null);
+                bs.c.a(gZIPInputStream, null);
+                bs.c.a(openRawResource, null);
                 return emojiCategories;
             } finally {
             }
@@ -57,6 +57,6 @@ public final class UnicodeEmojis$loadData$2 extends kotlin.coroutines.jvm.intern
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super UnicodeEmojis.EmojiCategories> continuation) {
-        return ((UnicodeEmojis$loadData$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+        return ((UnicodeEmojis$loadData$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
     }
 }

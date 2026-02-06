@@ -1,29 +1,34 @@
 package ng;
 
-import xi.c;
+import yi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class z4 implements xi.d {
+final class z4 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final z4 f41291a = new z4();
-
-    /* renamed from: b  reason: collision with root package name */
-    private static final xi.c f41292b;
+    static final z4 f40635a = new z4();
 
     static {
-        c.b a10 = xi.c.a("optionsType");
-        f fVar = new f();
-        fVar.a(1);
-        f41292b = a10.b(fVar.b()).a();
+        c.b a10 = yi.c.a("errorCode");
+        l2 l2Var = new l2();
+        l2Var.a(1);
+        a10.b(l2Var.b()).a();
+        c.b a11 = yi.c.a("imageInfo");
+        l2 l2Var2 = new l2();
+        l2Var2.a(2);
+        a11.b(l2Var2.b()).a();
+        c.b a12 = yi.c.a("isColdCall");
+        l2 l2Var3 = new l2();
+        l2Var3.a(3);
+        a12.b(l2Var3.b()).a();
     }
 
     private z4() {
     }
 
-    @Override // xi.d
+    @Override // yi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        xi.e eVar = (xi.e) obj2;
+        yi.e eVar = (yi.e) obj2;
         throw null;
     }
 }

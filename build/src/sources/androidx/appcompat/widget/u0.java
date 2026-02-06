@@ -8,17 +8,17 @@ import java.lang.ref.WeakReference;
 class u0 extends n0 {
 
     /* renamed from: b  reason: collision with root package name */
-    private final WeakReference f1927b;
+    private final WeakReference f2256b;
 
     public u0(Context context, Resources resources) {
         super(resources);
-        this.f1927b = new WeakReference(context);
+        this.f2256b = new WeakReference(context);
     }
 
     @Override // android.content.res.Resources
     public Drawable getDrawable(int i10) {
         Drawable a10 = a(i10);
-        Context context = (Context) this.f1927b.get();
+        Context context = (Context) this.f2256b.get();
         if (a10 != null && context != null) {
             m0.g().w(context, i10, a10);
         }

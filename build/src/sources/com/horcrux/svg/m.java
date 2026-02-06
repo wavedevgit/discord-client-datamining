@@ -18,17 +18,17 @@ import java.util.regex.Pattern;
 public class m extends q {
 
     /* renamed from: p  reason: collision with root package name */
-    private static final Pattern f16987p = Pattern.compile("[0-9.-]+");
+    private static final Pattern f16967p = Pattern.compile("[0-9.-]+");
 
     /* renamed from: i  reason: collision with root package name */
-    public ReadableArray f16988i;
+    public ReadableArray f16968i;
 
     /* renamed from: o  reason: collision with root package name */
-    public float f16989o;
+    public float f16969o;
 
     public m(ReactContext reactContext) {
         super(reactContext);
-        this.f16989o = 1.0f;
+        this.f16969o = 1.0f;
     }
 
     private void setupPaint(Paint paint, float f10, ReadableArray readableArray) {
@@ -61,7 +61,7 @@ public class m extends q {
         Paint paint = new Paint();
         paint.setFlags(129);
         paint.setStyle(Paint.Style.FILL);
-        setupPaint(paint, this.f16989o, this.f16988i);
+        setupPaint(paint, this.f16969o, this.f16968i);
         canvas.drawPaint(paint);
         return createBitmap;
     }
@@ -75,13 +75,13 @@ public class m extends q {
             ReadableType type = dynamic.getType();
             int i10 = 0;
             if (type.equals(ReadableType.Number)) {
-                this.f16988i = JavaOnlyArray.of(0, Integer.valueOf(dynamic.asInt()));
+                this.f16968i = JavaOnlyArray.of(0, Integer.valueOf(dynamic.asInt()));
             } else if (type.equals(ReadableType.Array)) {
-                this.f16988i = dynamic.asArray();
+                this.f16968i = dynamic.asArray();
             } else {
                 JavaOnlyArray javaOnlyArray = new JavaOnlyArray();
                 javaOnlyArray.pushInt(0);
-                Matcher matcher = f16987p.matcher(dynamic.asString());
+                Matcher matcher = f16967p.matcher(dynamic.asString());
                 while (matcher.find()) {
                     double parseDouble = Double.parseDouble(matcher.group());
                     int i11 = i10 + 1;
@@ -91,18 +91,18 @@ public class m extends q {
                     javaOnlyArray.pushDouble(parseDouble);
                     i10 = i11;
                 }
-                this.f16988i = javaOnlyArray;
+                this.f16968i = javaOnlyArray;
             }
             invalidate();
             return;
         }
-        this.f16988i = null;
+        this.f16968i = null;
         invalidate();
     }
 
     public void l(ReadableMap readableMap) {
         if (readableMap == null) {
-            this.f16988i = null;
+            this.f16968i = null;
             invalidate();
             return;
         }
@@ -110,20 +110,20 @@ public class m extends q {
         if (i10 == 0) {
             ReadableType type = readableMap.getType("payload");
             if (type.equals(ReadableType.Number)) {
-                this.f16988i = JavaOnlyArray.of(0, Integer.valueOf(readableMap.getInt("payload")));
+                this.f16968i = JavaOnlyArray.of(0, Integer.valueOf(readableMap.getInt("payload")));
             } else if (type.equals(ReadableType.Map)) {
-                this.f16988i = JavaOnlyArray.of(0, readableMap.getMap("payload"));
+                this.f16968i = JavaOnlyArray.of(0, readableMap.getMap("payload"));
             }
         } else if (i10 == 1) {
-            this.f16988i = JavaOnlyArray.of(1, readableMap.getString("brushRef"));
+            this.f16968i = JavaOnlyArray.of(1, readableMap.getString("brushRef"));
         } else {
-            this.f16988i = JavaOnlyArray.of(Integer.valueOf(i10));
+            this.f16968i = JavaOnlyArray.of(Integer.valueOf(i10));
         }
         invalidate();
     }
 
     public void m(float f10) {
-        this.f16989o = f10;
+        this.f16969o = f10;
         invalidate();
     }
 }

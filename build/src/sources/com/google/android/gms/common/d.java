@@ -8,34 +8,34 @@ import gf.o;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public class d extends hf.a {
     @NonNull
-    public static final Parcelable.Creator<d> CREATOR = new p();
+    public static final Parcelable.Creator<d> CREATOR = new r();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f13801d;
+    private final String f13767d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f13802e;
+    private final int f13768e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final long f13803i;
+    private final long f13769i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final boolean f13804o;
+    private final boolean f13770o;
 
     public d(String str, int i10, long j10, boolean z10) {
-        this.f13801d = str;
-        this.f13802e = i10;
-        this.f13803i = j10;
-        this.f13804o = z10;
+        this.f13767d = str;
+        this.f13768e = i10;
+        this.f13769i = j10;
+        this.f13770o = z10;
     }
 
     public boolean b() {
-        return this.f13804o;
+        return this.f13770o;
     }
 
     public long c() {
-        long j10 = this.f13803i;
-        return j10 == -1 ? this.f13802e : j10;
+        long j10 = this.f13769i;
+        return j10 == -1 ? this.f13768e : j10;
     }
 
     public final boolean equals(Object obj) {
@@ -49,7 +49,7 @@ public class d extends hf.a {
     }
 
     public String getName() {
-        return this.f13801d;
+        return this.f13767d;
     }
 
     public final int hashCode() {
@@ -68,7 +68,7 @@ public class d extends hf.a {
     public final void writeToParcel(Parcel parcel, int i10) {
         int a10 = hf.c.a(parcel);
         hf.c.s(parcel, 1, getName(), false);
-        hf.c.l(parcel, 2, this.f13802e);
+        hf.c.l(parcel, 2, this.f13768e);
         hf.c.o(parcel, 3, c());
         hf.c.c(parcel, 4, b());
         hf.c.b(parcel, a10);

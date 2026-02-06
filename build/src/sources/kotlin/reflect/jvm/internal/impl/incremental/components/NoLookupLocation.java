@@ -1,17 +1,17 @@
 package kotlin.reflect.jvm.internal.impl.incremental.components;
 
 import kotlin.enums.EnumEntries;
-import vr.a;
+import xr.a;
 /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
 /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class NoLookupLocation implements LookupLocation {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final /* synthetic */ NoLookupLocation[] f32653d;
+    private static final /* synthetic */ NoLookupLocation[] f32673d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f32654e;
+    private static final /* synthetic */ EnumEntries f32674e;
     public static final NoLookupLocation FROM_IDE = new NoLookupLocation("FROM_IDE", 0);
     public static final NoLookupLocation FROM_BACKEND = new NoLookupLocation("FROM_BACKEND", 1);
     public static final NoLookupLocation FROM_TEST = new NoLookupLocation("FROM_TEST", 2);
@@ -38,8 +38,8 @@ public final class NoLookupLocation implements LookupLocation {
 
     static {
         NoLookupLocation[] a10 = a();
-        f32653d = a10;
-        f32654e = a.a(a10);
+        f32673d = a10;
+        f32674e = a.a(a10);
     }
 
     private NoLookupLocation(String str, int i10) {
@@ -54,7 +54,7 @@ public final class NoLookupLocation implements LookupLocation {
     }
 
     public static NoLookupLocation[] values() {
-        return (NoLookupLocation[]) f32653d.clone();
+        return (NoLookupLocation[]) f32673d.clone();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.incremental.components.LookupLocation

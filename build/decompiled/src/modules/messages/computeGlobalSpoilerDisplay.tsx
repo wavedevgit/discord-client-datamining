@@ -7,21 +7,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
     var3 = function arg0, arg1() {
-        _fun77670: for (var _fun77670_ip = 0;;) switch (_fun77670_ip) {
+        _fun77697: for (var _fun77697_ip = 0;;) switch (_fun77697_ip) {
             case 0:
                 var2 = arg0;
                 var1 = _closure1_slot4;
                 var1 = var1.ALWAYS;
                 if (!(var1 !== var2)) {
-                    _fun77670_ip = 53;
-                    continue _fun77670
+                    _fun77697_ip = 53;
+                    continue _fun77697
                 }
             case 20:
                 var1 = _closure1_slot4;
                 var1 = var1.IF_MODERATOR;
                 if (!(var1 !== var2)) {
-                    _fun77670_ip = 48;
-                    continue _fun77670
+                    _fun77697_ip = 48;
+                    continue _fun77697
                 }
             case 34:
                 var0 = _closure1_slot4;
@@ -101,4 +101,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useShouldDisplaySpoilerObscurity = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3091, 660, 632, 1348, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3093, 660, 632, 1348, 2]);

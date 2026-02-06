@@ -1,41 +1,61 @@
 package jt;
+
+import java.util.Iterator;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+import kotlinx.serialization.KSerializer;
+import kotlinx.serialization.descriptors.SerialDescriptor;
+import kotlinx.serialization.encoding.CompositeEncoder;
+import kotlinx.serialization.encoding.Encoder;
+import kotlinx.serialization.encoding.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract /* synthetic */ class s {
-    public static /* synthetic */ String a(long j10, int i10) {
-        long a10;
-        int i11 = (j10 > 0L ? 1 : (j10 == 0L ? 0 : -1));
-        if (i11 == 0) {
-            return "0";
-        }
-        if (i11 > 0) {
-            return Long.toString(j10, i10);
-        }
-        i10 = (i10 < 2 || i10 > 36) ? 10 : 10;
-        int i12 = 64;
-        char[] cArr = new char[64];
-        int i13 = i10 - 1;
-        if ((i10 & i13) == 0) {
-            int numberOfTrailingZeros = Integer.numberOfTrailingZeros(i10);
-            do {
-                i12--;
-                cArr[i12] = Character.forDigit(((int) j10) & i13, i10);
-                j10 >>>= numberOfTrailingZeros;
-            } while (j10 != 0);
-        } else {
-            if ((i10 & 1) == 0) {
-                a10 = (j10 >>> 1) / (i10 >>> 1);
-            } else {
-                a10 = kotlin.text.b0.a(j10, i10);
+public abstract class s extends a {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final KSerializer f31072a;
+
+    public /* synthetic */ s(KSerializer kSerializer, DefaultConstructorMarker defaultConstructorMarker) {
+        this(kSerializer);
+    }
+
+    @Override // jt.a
+    protected final void g(kotlinx.serialization.encoding.c decoder, Object obj, int i10, int i11) {
+        Intrinsics.checkNotNullParameter(decoder, "decoder");
+        if (i11 >= 0) {
+            for (int i12 = 0; i12 < i11; i12++) {
+                h(decoder, i10 + i12, obj, false);
             }
-            long j11 = i10;
-            cArr[63] = Character.forDigit((int) (j10 - (a10 * j11)), i10);
-            i12 = 63;
-            while (a10 > 0) {
-                i12--;
-                cArr[i12] = Character.forDigit((int) (a10 % j11), i10);
-                a10 /= j11;
-            }
+            return;
         }
-        return new String(cArr, i12, 64 - i12);
+        throw new IllegalArgumentException("Size must be known in advance when using READ_ALL");
+    }
+
+    @Override // kotlinx.serialization.KSerializer, ft.o, kotlinx.serialization.DeserializationStrategy
+    public abstract SerialDescriptor getDescriptor();
+
+    @Override // jt.a
+    protected void h(kotlinx.serialization.encoding.c decoder, int i10, Object obj, boolean z10) {
+        Intrinsics.checkNotNullParameter(decoder, "decoder");
+        n(obj, i10, c.a.c(decoder, getDescriptor(), i10, this.f31072a, null, 8, null));
+    }
+
+    protected abstract void n(Object obj, int i10, Object obj2);
+
+    @Override // ft.o
+    public void serialize(Encoder encoder, Object obj) {
+        Intrinsics.checkNotNullParameter(encoder, "encoder");
+        int e10 = e(obj);
+        SerialDescriptor descriptor = getDescriptor();
+        CompositeEncoder h10 = encoder.h(descriptor, e10);
+        Iterator d10 = d(obj);
+        for (int i10 = 0; i10 < e10; i10++) {
+            h10.s(getDescriptor(), i10, this.f31072a, d10.next());
+        }
+        h10.c(descriptor);
+    }
+
+    private s(KSerializer kSerializer) {
+        super(null);
+        this.f31072a = kSerializer;
     }
 }

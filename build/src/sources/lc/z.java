@@ -5,17 +5,17 @@ import com.google.android.exoplayer2.Timeline;
 public final class z extends IllegalStateException {
 
     /* renamed from: d  reason: collision with root package name */
-    public final Timeline f36637d;
+    public final Timeline f36030d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final int f36638e;
+    public final int f36031e;
 
     /* renamed from: i  reason: collision with root package name */
-    public final long f36639i;
+    public final long f36032i;
 
     public z(Timeline timeline, int i10, long j10) {
-        this.f36637d = timeline;
-        this.f36638e = i10;
-        this.f36639i = j10;
+        this.f36030d = timeline;
+        this.f36031e = i10;
+        this.f36032i = j10;
     }
 }

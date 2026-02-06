@@ -1,36 +1,46 @@
 package at;
 
-import java.util.List;
-import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
+import kotlin.text.StringsKt;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class d implements e {
+public abstract class d {
+    public static final int a(char c10) {
+        return c10 - '0';
+    }
 
-    /* renamed from: a  reason: collision with root package name */
-    private final Function1 f5975a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private final int f5976b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final int f5977c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private final List f5978d;
-
-    public d(Function1 number, int i10, int i11, List zerosToAdd) {
-        Intrinsics.checkNotNullParameter(number, "number");
-        Intrinsics.checkNotNullParameter(zerosToAdd, "zerosToAdd");
-        this.f5975a = number;
-        this.f5976b = i10;
-        this.f5977c = i11;
-        this.f5978d = zerosToAdd;
-        if (1 <= i10 && i10 < 10) {
-            if (i10 <= i11 && i11 < 10) {
-                return;
-            }
-            throw new IllegalArgumentException(("The maximum number of digits (" + i11 + ") is not in range " + i10 + "..9").toString());
+    public static final boolean b(char c10) {
+        if ('0' > c10 || c10 >= ':') {
+            return false;
         }
-        throw new IllegalArgumentException(("The minimum number of digits (" + i10 + ") is not in range 1..9").toString());
+        return true;
+    }
+
+    private static final String c(String str, int i10) {
+        if (str.length() >= i10 + 12) {
+            int i11 = 0;
+            if (StringsKt.U("+-", str.charAt(0), false, 2, null)) {
+                int h02 = StringsKt.h0(str, '-', 1, false, 4, null);
+                if (h02 < 12) {
+                    return str;
+                }
+                while (true) {
+                    int i12 = i11 + 1;
+                    if (str.charAt(i12) != '0') {
+                        break;
+                    }
+                    i11 = i12;
+                }
+                if (h02 - i11 >= 12) {
+                    return str;
+                }
+                return StringsKt.C0(str, 1, h02 - 10).toString();
+            }
+        }
+        return str;
+    }
+
+    public static final String d(String input) {
+        Intrinsics.checkNotNullParameter(input, "input");
+        return c(input.toString(), 6);
     }
 }

@@ -12,10 +12,10 @@ public interface PortalUiModel {
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class DefaultImpls {
         public static double getPortal(@NotNull PortalUiModel portalUiModel) {
-            String m1092toStringimpl = MessageId.m1092toStringimpl(portalUiModel.m502getMessageId3Eiw7ao());
+            String m1090toStringimpl = MessageId.m1090toStringimpl(portalUiModel.m500getMessageId3Eiw7ao());
             String simpleName = portalUiModel.getClass().getSimpleName();
             int index = portalUiModel.getIndex();
-            return IdUtilsKt.convertToId(m1092toStringimpl + "_" + simpleName + "_" + index);
+            return IdUtilsKt.convertToId(m1090toStringimpl + "_" + simpleName + "_" + index);
         }
     }
 
@@ -23,7 +23,7 @@ public interface PortalUiModel {
 
     @NotNull
     /* renamed from: getMessageId-3Eiw7ao  reason: not valid java name */
-    String m502getMessageId3Eiw7ao();
+    String m500getMessageId3Eiw7ao();
 
     double getPortal();
 }

@@ -39,7 +39,7 @@ public final class SelectActionComponentViewManager extends SimpleViewManager<Se
     @NotNull
     public static final String NAME = "SelectActionComponentView";
     @NotNull
-    private final ReactEvents reactEvents = new ReactEvents(or.v.a("onTap", Reflection.getOrCreateKotlinClass(OnSelectComponentTapEvent.class)));
+    private final ReactEvents reactEvents = new ReactEvents(qr.v.a("onTap", Reflection.getOrCreateKotlinClass(OnSelectComponentTapEvent.class)));
 
     @Metadata(d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003R\u000e\u0010\u0004\u001a\u00020\u0005X\u0086T¢\u0006\u0002\n\u0000¨\u0006\u0006"}, d2 = {"Lcom/discord/chat/presentation/message/view/botuikit/react/SelectActionComponentViewManager$Companion;", "", "<init>", "()V", "NAME", "", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -71,13 +71,13 @@ public final class SelectActionComponentViewManager extends SimpleViewManager<Se
     public static final Unit createSelectComponentContext$lambda$1(Function0 function0, String str) {
         Intrinsics.checkNotNullParameter(str, "<unused var>");
         function0.invoke();
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setModel$lambda$0(SelectActionComponentViewManager selectActionComponentViewManager, SelectComponentView selectComponentView) {
         selectActionComponentViewManager.reactEvents.emitEvent(selectComponentView, new OnSelectComponentTapEvent());
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     @Override // com.facebook.react.uimanager.BaseViewManager, com.facebook.react.uimanager.ViewManager

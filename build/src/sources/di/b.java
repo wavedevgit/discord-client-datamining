@@ -1,32 +1,30 @@
 package di;
 
-import android.os.Binder;
-import android.os.IBinder;
-import android.os.IInterface;
+import android.app.PendingIntent;
 import android.os.Parcel;
+import android.os.Parcelable;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class b extends Binder implements IInterface {
-    /* JADX INFO: Access modifiers changed from: protected */
-    public b(String str) {
-        attachInterface(this, "com.google.android.play.core.inappreview.protocol.IInAppReviewServiceCallback");
+public abstract class b implements Parcelable {
+    public static final Parcelable.Creator<b> CREATOR = new e();
+
+    public static b c(PendingIntent pendingIntent, boolean z10) {
+        return new d(pendingIntent, false);
     }
 
-    protected abstract boolean e(int i10, Parcel parcel, Parcel parcel2, int i11);
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public abstract PendingIntent a();
 
-    @Override // android.os.Binder
-    public final boolean onTransact(int i10, Parcel parcel, Parcel parcel2, int i11) {
-        if (i10 > 16777215) {
-            if (super.onTransact(i10, parcel, parcel2, i11)) {
-                return true;
-            }
-        } else {
-            parcel.enforceInterface(getInterfaceDescriptor());
-        }
-        return e(i10, parcel, parcel2, i11);
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public abstract boolean b();
+
+    @Override // android.os.Parcelable
+    public final int describeContents() {
+        return 0;
     }
 
-    @Override // android.os.IInterface
-    public final IBinder asBinder() {
-        return this;
+    @Override // android.os.Parcelable
+    public final void writeToParcel(Parcel parcel, int i10) {
+        parcel.writeParcelable(a(), 0);
+        parcel.writeInt(b() ? 1 : 0);
     }
 }

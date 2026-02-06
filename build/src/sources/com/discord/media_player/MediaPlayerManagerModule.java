@@ -41,12 +41,12 @@ import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.Job;
 import kotlinx.coroutines.flow.Flow;
 import kotlinx.coroutines.flow.MutableStateFlow;
-import ms.j1;
-import ms.m0;
-import ms.u0;
-import or.v;
 import org.jetbrains.annotations.NotNull;
-import ps.l0;
+import os.j1;
+import os.m0;
+import os.u0;
+import qr.v;
+import rs.l0;
 @ReactModule(name = MediaPlayerManagerModule.NAME)
 @Metadata(d1 = {"\u0000\u0086\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010%\n\u0002\u0010\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\r\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\t\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0011\n\u0002\b\b\n\u0002\u0010\b\n\u0002\b\u0003\b\u0007\u0018\u0000 G2\u00020\u0001:\u0001GB\u000f\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0004\b\u0004\u0010\u0005J\b\u0010\u0013\u001a\u00020\u000eH\u0016J\b\u0010\u0016\u001a\u00020\u0017H\u0007J\u0018\u0010\u0018\u001a\u00020\u00172\u0006\u0010\u0019\u001a\u00020\b2\u0006\u0010\u001a\u001a\u00020\u001bH\u0007J\u0018\u0010\u001c\u001a\u00020\u00172\u0006\u0010\u0019\u001a\u00020\b2\u0006\u0010\u001d\u001a\u00020\bH\u0007J\u0018\u0010\u001e\u001a\u00020\u00172\u0006\u0010\u0019\u001a\u00020\b2\u0006\u0010\u001f\u001a\u00020\u001bH\u0007J\u0018\u0010 \u001a\u00020\u00172\u0006\u0010\u0019\u001a\u00020\b2\u0006\u0010!\u001a\u00020\u001bH\u0007J\b\u0010\"\u001a\u00020\u0017H\u0007J\b\u0010#\u001a\u00020\u0017H\u0007J\b\u0010$\u001a\u00020\u0017H\u0007J\u0016\u0010%\u001a\u00020\u00172\u0006\u0010\u0019\u001a\u00020\b2\u0006\u0010&\u001a\u00020\u001bJ$\u0010'\u001a\u00020\u00172\u0006\u0010\u0019\u001a\u00020\b2\u0012\u0010(\u001a\u000e\u0012\u0004\u0012\u00020*\u0012\u0004\u0012\u00020\u00170)H\u0002J\u0016\u0010+\u001a\u00020\u00172\u0006\u0010,\u001a\u00020-2\u0006\u0010.\u001a\u00020/J\u000e\u00100\u001a\u00020\u00172\u0006\u0010,\u001a\u00020-J\"\u00101\u001a\u00020\u00172\b\u0010,\u001a\u0004\u0018\u00010-2\u0006\u00102\u001a\u0002032\u0006\u00104\u001a\u000203H\u0002J \u00105\u001a\u00020\u00172\u0006\u0010\u0019\u001a\u00020\b2\u0006\u00106\u001a\u0002032\u0006\u00107\u001a\u000203H\u0002J)\u00108\u001a\u00020\t2\u0006\u00109\u001a\u00020:2\u0012\u0010;\u001a\n\u0012\u0006\b\u0001\u0012\u00020-0<\"\u00020-¢\u0006\u0004\b=\u0010>J)\u0010?\u001a\u00020\t2\u0006\u00109\u001a\u00020:2\u0012\u0010;\u001a\n\u0012\u0006\b\u0001\u0012\u00020-0<\"\u00020-¢\u0006\u0004\b@\u0010>J\u0010\u0010A\u001a\u00020\u00172\u0006\u0010B\u001a\u00020\u000eH\u0007J\u0010\u0010C\u001a\u00020\u00172\u0006\u0010D\u001a\u00020EH\u0007J\b\u0010F\u001a\u00020\u0017H\u0016R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u001a\u0010\u0006\u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\t0\u0007X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u000bX\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010\f\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u000e0\rX\u0082\u000e¢\u0006\u0002\n\u0000R\u0019\u0010\u000f\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u000e0\u0010¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u0012R\u000e\u0010\u0014\u001a\u00020\u0015X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006H"}, d2 = {"Lcom/discord/media_player/MediaPlayerManagerModule;", "Lcom/facebook/react/bridge/ReactContextBaseJavaModule;", "reactContext", "Lcom/facebook/react/bridge/ReactApplicationContext;", "<init>", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "mediaPlayerProgressMap", "", "", "Lkotlinx/coroutines/Job;", "scope", "Lkotlinx/coroutines/CoroutineScope;", "_pausePlayerFlow", "Lkotlinx/coroutines/flow/MutableStateFlow;", "", "pausePlayerFlow", "Lkotlinx/coroutines/flow/Flow;", "getPausePlayerFlow", "()Lkotlinx/coroutines/flow/Flow;", "getName", "reactEvents", "Lcom/discord/reactevents/ReactEvents;", "pauseAllMediaPlayers", "", "toggle", "portal", "play", "", "changeProgress", "seekToSec", "setMuted", "muted", "setLoopPlayback", "loop", "pauseCurrentPlayer", "playCurrentPlayer", "subscribeToPlaybackEvents", "onMuteToggle", "isMuted", "withPlayer", "callback", "Lkotlin/Function1;", "Lcom/google/android/exoplayer2/SimpleExoPlayer;", "startPlayerProgressInterval", "mediaSource", "Lcom/discord/media_player/MediaSource;", "mediaPlayer", "Lcom/discord/media_player/MediaPlayer;", "stopPlayerProgressInterval", "onMediaPlayerPlaybackProgress", "timeMs", "", "durationMs", "onMediaPlayerDownloadProgress", "bufferedPosition", "duration", "onMediaPlayerViewWillAppear", "channelId", "Lcom/discord/primitives/ChannelId;", "mediaSources", "", "onMediaPlayerViewWillAppear-LJLSWy8", "(J[Lcom/discord/media_player/MediaSource;)Lkotlinx/coroutines/Job;", "onMediaPlayerViewDetached", "onMediaPlayerViewDetached-LJLSWy8", "addListener", "type", "removeListeners", "count", "", "invalidate", "Companion", "media_player_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nMediaPlayerManagerModule.kt\nKotlin\n*S Kotlin\n*F\n+ 1 MediaPlayerManagerModule.kt\ncom/discord/media_player/MediaPlayerManagerModule\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 3 CastUtils.kt\ncom/discord/misc/utilities/kotlin/CastUtilsKt\n*L\n1#1,342:1\n1#2:343\n8#3:344\n8#3:345\n*S KotlinDebug\n*F\n+ 1 MediaPlayerManagerModule.kt\ncom/discord/media_player/MediaPlayerManagerModule\n*L\n213#1:344\n215#1:345\n*E\n"})
@@ -89,7 +89,7 @@ public final class MediaPlayerManagerModule extends ReactContextBaseJavaModule {
         CompletableJob b10 = j1.b(null, 1, null);
         ExecutorService newSingleThreadExecutor = Executors.newSingleThreadExecutor();
         Intrinsics.checkNotNullExpressionValue(newSingleThreadExecutor, "newSingleThreadExecutor(...)");
-        this.scope = kotlinx.coroutines.i.a(b10.V0(u0.c(newSingleThreadExecutor)));
+        this.scope = kotlinx.coroutines.i.a(b10.Y0(u0.c(newSingleThreadExecutor)));
         MutableStateFlow a10 = l0.a(null);
         this._pausePlayerFlow = a10;
         this.pausePlayerFlow = a10;
@@ -99,8 +99,8 @@ public final class MediaPlayerManagerModule extends ReactContextBaseJavaModule {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit changeProgress$lambda$1(double d10, SimpleExoPlayer player) {
         Intrinsics.checkNotNullParameter(player, "player");
-        Duration.a aVar = Duration.f34987e;
-        long t10 = Duration.t(kotlin.time.b.r(d10, ks.b.f36128p));
+        Duration.a aVar = Duration.f35007e;
+        long t10 = Duration.t(kotlin.time.b.r(d10, ms.b.f38284p));
         long duration = player.getDuration();
         if (duration > 0 && t10 >= 0 && t10 <= duration) {
             try {
@@ -113,7 +113,7 @@ public final class MediaPlayerManagerModule extends ReactContextBaseJavaModule {
             Log log2 = Log.INSTANCE;
             Log.w$default(log2, NAME, "Invalid seek attempt: position=" + t10 + ", duration=" + duration, (Throwable) null, 4, (Object) null);
         }
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -140,10 +140,10 @@ public final class MediaPlayerManagerModule extends ReactContextBaseJavaModule {
             double doubleValue = portal.doubleValue();
             ReactEvents reactEvents2 = this.reactEvents;
             ReactApplicationContext reactApplicationContext2 = this.reactContext;
-            Duration.a aVar = Duration.f34987e;
-            ks.b bVar = ks.b.f36127o;
+            Duration.a aVar = Duration.f35007e;
+            ms.b bVar = ms.b.f38283o;
             long t10 = kotlin.time.b.t(j10, bVar);
-            ks.b bVar2 = ks.b.f36128p;
+            ms.b bVar2 = ms.b.f38284p;
             reactEvents2.emitModuleEvent(reactApplicationContext2, new MediaPlayerProgress(doubleValue, Duration.J(t10, bVar2), Duration.J(kotlin.time.b.t(j11, bVar), bVar2)));
         }
     }
@@ -156,7 +156,7 @@ public final class MediaPlayerManagerModule extends ReactContextBaseJavaModule {
         } else {
             player.R(0);
         }
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -169,7 +169,7 @@ public final class MediaPlayerManagerModule extends ReactContextBaseJavaModule {
             f10 = 1.0f;
         }
         player.F0(f10);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -183,11 +183,11 @@ public final class MediaPlayerManagerModule extends ReactContextBaseJavaModule {
             }
         }
         if (player.P() == z10) {
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
         player.n(z10);
         mediaPlayerManagerModule.reactEvents.emitModuleEvent(mediaPlayerManagerModule.reactContext, new MediaPlayerPause(d10, !z10));
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     private final void withPlayer(final double d10, final Function1<? super SimpleExoPlayer, Unit> function1) {
@@ -260,19 +260,19 @@ public final class MediaPlayerManagerModule extends ReactContextBaseJavaModule {
 
     @NotNull
     /* renamed from: onMediaPlayerViewDetached-LJLSWy8  reason: not valid java name */
-    public final Job m944onMediaPlayerViewDetachedLJLSWy8(long j10, @NotNull MediaSource... mediaSources) {
+    public final Job m942onMediaPlayerViewDetachedLJLSWy8(long j10, @NotNull MediaSource... mediaSources) {
         Job d10;
         Intrinsics.checkNotNullParameter(mediaSources, "mediaSources");
-        d10 = ms.i.d(this.scope, m0.c(), null, new MediaPlayerManagerModule$onMediaPlayerViewDetached$1(this, j10, mediaSources, null), 2, null);
+        d10 = os.i.d(this.scope, m0.c(), null, new MediaPlayerManagerModule$onMediaPlayerViewDetached$1(this, j10, mediaSources, null), 2, null);
         return d10;
     }
 
     @NotNull
     /* renamed from: onMediaPlayerViewWillAppear-LJLSWy8  reason: not valid java name */
-    public final Job m945onMediaPlayerViewWillAppearLJLSWy8(long j10, @NotNull MediaSource... mediaSources) {
+    public final Job m943onMediaPlayerViewWillAppearLJLSWy8(long j10, @NotNull MediaSource... mediaSources) {
         Job d10;
         Intrinsics.checkNotNullParameter(mediaSources, "mediaSources");
-        d10 = ms.i.d(this.scope, m0.c(), null, new MediaPlayerManagerModule$onMediaPlayerViewWillAppear$1(this, j10, mediaSources, null), 2, null);
+        d10 = os.i.d(this.scope, m0.c(), null, new MediaPlayerManagerModule$onMediaPlayerViewWillAppear$1(this, j10, mediaSources, null), 2, null);
         return d10;
     }
 
@@ -332,7 +332,7 @@ public final class MediaPlayerManagerModule extends ReactContextBaseJavaModule {
         Map<Double, Job> map = this.mediaPlayerProgressMap;
         Double portal = mediaSource.getPortal();
         Intrinsics.checkNotNull(portal);
-        d10 = ms.i.d(this.scope, null, null, new MediaPlayerManagerModule$startPlayerProgressInterval$1(mediaPlayer, this, mediaSource, null), 3, null);
+        d10 = os.i.d(this.scope, null, null, new MediaPlayerManagerModule$startPlayerProgressInterval$1(mediaPlayer, this, mediaSource, null), 3, null);
         map.put(portal, d10);
     }
 
@@ -346,9 +346,9 @@ public final class MediaPlayerManagerModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void subscribeToPlaybackEvents() {
-        ms.i.d(this.scope, null, null, new MediaPlayerManagerModule$subscribeToPlaybackEvents$1(this, null), 3, null);
-        ms.i.d(this.scope, null, null, new MediaPlayerManagerModule$subscribeToPlaybackEvents$2(this, null), 3, null);
-        ms.i.d(this.scope, null, null, new MediaPlayerManagerModule$subscribeToPlaybackEvents$3(this, null), 3, null);
+        os.i.d(this.scope, null, null, new MediaPlayerManagerModule$subscribeToPlaybackEvents$1(this, null), 3, null);
+        os.i.d(this.scope, null, null, new MediaPlayerManagerModule$subscribeToPlaybackEvents$2(this, null), 3, null);
+        os.i.d(this.scope, null, null, new MediaPlayerManagerModule$subscribeToPlaybackEvents$3(this, null), 3, null);
     }
 
     @ReactMethod

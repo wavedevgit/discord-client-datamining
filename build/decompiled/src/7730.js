@@ -1,174 +1,117 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var3 = require;
-    var4 = dependencyMap;
-    var0 = 0;
-    var1 = var4[var0];
-    var0 = undefined;
-    var2 = var3.bind(var0)(var1);
-    var1 = 1;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var5 = var2.bind(var0)(var1);
+    var0 = require;
+    var _closure1_slot0 = var0;
+    var0 = dependencyMap;
+    var _closure1_slot1 = var0;
     var2 = {};
-    var1 = 2;
-    var6 = var4[var1];
-    var6 = var3.bind(var0)(var6);
-    var6 = var6.bool;
-    var2.accessible = var6;
-    var6 = var4[var1];
-    var6 = var3.bind(var0)(var6);
-    var6 = var6.node;
-    var2.accessibilityLabel = var6;
-    var6 = var4[var1];
-    var6 = var3.bind(var0)(var6);
-    var6 = var6.string;
-    var2.accessibilityHint = var6;
-    var6 = var4[var1];
-    var8 = var3.bind(var0)(var6);
-    var7 = var8.arrayOf;
-    var6 = var4[var1];
-    var6 = var3.bind(var0)(var6);
-    var6 = var6.string;
-    var6 = var7.bind(var8)(var6);
-    var2.accessibilityActions = var6;
-    var6 = var4[var1];
-    var6 = var3.bind(var0)(var6);
-    var6 = var6.bool;
-    var2.accessibilityIgnoresInvertColors = var6;
-    var6 = var4[var1];
-    var8 = var3.bind(var0)(var6);
-    var7 = var8.oneOf;
-    var6 = 3;
-    var6 = var4[var6];
-    var6 = var3.bind(var0)(var6);
-    var6 = var6.DeprecatedAccessibilityRoles;
-    var6 = var7.bind(var8)(var6);
-    var2.accessibilityRole = var6;
-    var6 = var4[var1];
-    var6 = var3.bind(var0)(var6);
-    var6 = var6.object;
-    var2.accessibilityState = var6;
-    var6 = var4[var1];
-    var6 = var3.bind(var0)(var6);
-    var6 = var6.object;
-    var2.accessibilityValue = var6;
-    var6 = var4[var1];
-    var8 = var3.bind(var0)(var6);
-    var7 = var8.oneOf;
-    var6 = ['none', 'polite', 'assertive'];
-    var6 = var7.bind(var8)(var6);
-    var2.accessibilityLiveRegion = var6;
-    var6 = var4[var1];
-    var8 = var3.bind(var0)(var6);
-    var7 = var8.oneOf;
-    var6 = ['auto', 'yes', 'no', 'no-hide-descendants'];
-    var6 = var7.bind(var8)(var6);
-    var2.importantForAccessibility = var6;
-    var6 = var4[var1];
-    var6 = var3.bind(var0)(var6);
-    var6 = var6.bool;
-    var2.accessibilityViewIsModal = var6;
-    var6 = var4[var1];
-    var6 = var3.bind(var0)(var6);
-    var6 = var6.bool;
-    var2.accessibilityElementsHidden = var6;
-    var6 = var4[var1];
-    var6 = var3.bind(var0)(var6);
-    var6 = var6.func;
-    var2.onAccessibilityAction = var6;
-    var6 = var4[var1];
-    var6 = var3.bind(var0)(var6);
-    var6 = var6.func;
-    var2.onAccessibilityTap = var6;
-    var6 = var4[var1];
-    var6 = var3.bind(var0)(var6);
-    var6 = var6.func;
-    var2.onMagicTap = var6;
-    var6 = var4[var1];
-    var6 = var3.bind(var0)(var6);
-    var6 = var6.string;
-    var2.testID = var6;
-    var6 = var4[var1];
-    var6 = var3.bind(var0)(var6);
-    var6 = var6.string;
-    var2.nativeID = var6;
-    var6 = var4[var1];
-    var6 = var3.bind(var0)(var6);
-    var6 = var6.func;
-    var2.onResponderGrant = var6;
-    var6 = var4[var1];
-    var6 = var3.bind(var0)(var6);
-    var6 = var6.func;
-    var2.onResponderMove = var6;
-    var6 = var4[var1];
-    var6 = var3.bind(var0)(var6);
-    var6 = var6.func;
-    var2.onResponderReject = var6;
-    var6 = var4[var1];
-    var6 = var3.bind(var0)(var6);
-    var6 = var6.func;
-    var2.onResponderRelease = var6;
-    var6 = var4[var1];
-    var6 = var3.bind(var0)(var6);
-    var6 = var6.func;
-    var2.onResponderTerminate = var6;
-    var6 = var4[var1];
-    var6 = var3.bind(var0)(var6);
-    var6 = var6.func;
-    var2.onResponderTerminationRequest = var6;
-    var6 = var4[var1];
-    var6 = var3.bind(var0)(var6);
-    var6 = var6.func;
-    var2.onStartShouldSetResponder = var6;
-    var6 = var4[var1];
-    var6 = var3.bind(var0)(var6);
-    var6 = var6.func;
-    var2.onStartShouldSetResponderCapture = var6;
-    var6 = var4[var1];
-    var6 = var3.bind(var0)(var6);
-    var6 = var6.func;
-    var2.onMoveShouldSetResponder = var6;
-    var6 = var4[var1];
-    var6 = var3.bind(var0)(var6);
-    var6 = var6.func;
-    var2.onMoveShouldSetResponderCapture = var6;
-    var6 = 4;
-    var6 = var4[var6];
-    var6 = var3.bind(var0)(var6);
-    var2.hitSlop = var6;
-    var6 = var4[var1];
-    var6 = var3.bind(var0)(var6);
-    var6 = var6.func;
-    var2.onLayout = var6;
-    var6 = var4[var1];
-    var8 = var3.bind(var0)(var6);
-    var7 = var8.oneOf;
-    var6 = ['box-none', 'none', 'box-only', 'auto'];
-    var6 = var7.bind(var8)(var6);
-    var2.pointerEvents = var6;
-    var2.style = var5;
-    var5 = var4[var1];
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.bool;
-    var2.removeClippedSubviews = var5;
-    var5 = var4[var1];
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.bool;
-    var2.renderToHardwareTextureAndroid = var5;
-    var5 = var4[var1];
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.bool;
-    var2.shouldRasterizeIOS = var5;
-    var5 = var4[var1];
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.bool;
-    var2.collapsable = var5;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.bool;
-    var2.needsOffscreenAlphaCompositing = var1;
-    var1 = module;
+    var4 = function() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 0;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        return var0;
+    };
+    var0 = undefined;
+    var3 = 'ColorPropType';
+    Object.defineProperty(var2, var3, {
+        get: var4,
+        set: var0,
+        enumerable: true
+    });
+    var4 = function() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 1;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        return var0;
+    };
+    var3 = 'EdgeInsetsPropType';
+    Object.defineProperty(var2, var3, {
+        get: var4,
+        set: var0,
+        enumerable: true
+    });
+    var4 = function() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 2;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        return var0;
+    };
+    var3 = 'ImagePropTypes';
+    Object.defineProperty(var2, var3, {
+        get: var4,
+        set: var0,
+        enumerable: true
+    });
+    var4 = function() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 3;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        return var0;
+    };
+    var3 = 'PointPropType';
+    Object.defineProperty(var2, var3, {
+        get: var4,
+        set: var0,
+        enumerable: true
+    });
+    var4 = function() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 4;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        return var0;
+    };
+    var3 = 'TextInputPropTypes';
+    Object.defineProperty(var2, var3, {
+        get: var4,
+        set: var0,
+        enumerable: true
+    });
+    var4 = function() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 5;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        return var0;
+    };
+    var3 = 'TextPropTypes';
+    Object.defineProperty(var2, var3, {
+        get: var4,
+        set: var0,
+        enumerable: true
+    });
+    var3 = function() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 6;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        return var0;
+    };
+    var1 = 'ViewPropTypes';
+    Object.defineProperty(var2, var1, {
+        get: var3,
+        set: var0,
+        enumerable: true
+    });
+    var1 = arg4;
     var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7731, 7733, 3220, 7737, 7728]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7731, 7733, 7734, 7744, 7745, 7746, 7735]);

@@ -1,52 +1,28 @@
 package wp;
 
-import android.location.Location;
-import kotlin.jvm.internal.Intrinsics;
+import br.d;
+import br.g;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b {
+public final class b implements d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Location f53225a;
+    private final a f54051a;
 
-    /* renamed from: b  reason: collision with root package name */
-    private final c f53226b;
-
-    public b(Location location, c precision) {
-        Intrinsics.checkNotNullParameter(location, "location");
-        Intrinsics.checkNotNullParameter(precision, "precision");
-        this.f53225a = location;
-        this.f53226b = precision;
+    public b(a aVar) {
+        this.f54051a = aVar;
     }
 
-    public final Location a() {
-        return this.f53225a;
+    public static b a(a aVar) {
+        return new b(aVar);
     }
 
-    public final c b() {
-        return this.f53226b;
+    public static c c(a aVar) {
+        return (c) g.d(aVar.a());
     }
 
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (!(obj instanceof b)) {
-            return false;
-        }
-        b bVar = (b) obj;
-        if (Intrinsics.areEqual(this.f53225a, bVar.f53225a) && this.f53226b == bVar.f53226b) {
-            return true;
-        }
-        return false;
-    }
-
-    public int hashCode() {
-        return (this.f53225a.hashCode() * 31) + this.f53226b.hashCode();
-    }
-
-    public String toString() {
-        Location location = this.f53225a;
-        c cVar = this.f53226b;
-        return "GpsData(location=" + location + ", precision=" + cVar + ")";
+    @Override // javax.inject.Provider
+    /* renamed from: b */
+    public c get() {
+        return c(this.f54051a);
     }
 }

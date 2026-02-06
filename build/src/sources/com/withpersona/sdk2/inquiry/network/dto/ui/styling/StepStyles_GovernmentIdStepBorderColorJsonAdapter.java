@@ -41,27 +41,27 @@ public final class StepStyles_GovernmentIdStepBorderColorJsonAdapter extends h {
     @NotNull
     public StepStyles.GovernmentIdStepBorderColor fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         StyleElements.SimpleElementColor simpleElementColor = null;
         StyleElements.SimpleElementColor simpleElementColor2 = null;
         StyleElements.SimpleElementColor simpleElementColor3 = null;
         StyleElements.SimpleElementColor simpleElementColor4 = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 simpleElementColor = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
-            } else if (W == 1) {
+            } else if (J == 1) {
                 simpleElementColor2 = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
-            } else if (W == 2) {
+            } else if (J == 2) {
                 simpleElementColor3 = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
-            } else if (W == 3) {
+            } else if (J == 3) {
                 simpleElementColor4 = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
             }
         }
-        reader.z();
+        reader.D();
         return new StepStyles.GovernmentIdStepBorderColor(simpleElementColor, simpleElementColor2, simpleElementColor3, simpleElementColor4);
     }
 
@@ -70,15 +70,15 @@ public final class StepStyles_GovernmentIdStepBorderColorJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (governmentIdStepBorderColor != null) {
             writer.k();
-            writer.W("base");
+            writer.J("base");
             this.nullableSimpleElementColorAdapter.toJson(writer, governmentIdStepBorderColor.getBase());
-            writer.W("governmentIdSelectOption");
+            writer.J("governmentIdSelectOption");
             this.nullableSimpleElementColorAdapter.toJson(writer, governmentIdStepBorderColor.getGovernmentIdSelectOption());
-            writer.W("governmentIdCaptureFeedBox");
+            writer.J("governmentIdCaptureFeedBox");
             this.nullableSimpleElementColorAdapter.toJson(writer, governmentIdStepBorderColor.getGovernmentIdCaptureFeedBox());
-            writer.W("governmentIdReviewImageBox");
+            writer.J("governmentIdReviewImageBox");
             this.nullableSimpleElementColorAdapter.toJson(writer, governmentIdStepBorderColor.getGovernmentIdReviewImageBox());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

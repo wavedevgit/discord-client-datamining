@@ -1,77 +1,71 @@
 package lg;
 
-import java.util.Collection;
-import java.util.List;
-import java.util.concurrent.Callable;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Future;
-import java.util.concurrent.TimeUnit;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class u extends x0 implements ExecutorService, AutoCloseable {
-    @Override // java.util.concurrent.ExecutorService
-    public final boolean awaitTermination(long j10, TimeUnit timeUnit) {
-        return h().awaitTermination(j10, timeUnit);
-    }
-
-    @Override // java.lang.AutoCloseable
-    public /* synthetic */ void close() {
-        c0.c.a(this);
-    }
-
-    protected abstract ExecutorService h();
-
-    @Override // java.util.concurrent.ExecutorService
-    public final List invokeAll(Collection collection) {
-        return h().invokeAll(collection);
-    }
-
-    @Override // java.util.concurrent.ExecutorService
-    public final Object invokeAny(Collection collection) {
-        return h().invokeAny(collection);
-    }
-
-    @Override // java.util.concurrent.ExecutorService
-    public final boolean isShutdown() {
-        return h().isShutdown();
-    }
-
-    @Override // java.util.concurrent.ExecutorService
-    public final boolean isTerminated() {
-        return h().isTerminated();
-    }
-
-    @Override // java.util.concurrent.ExecutorService
-    public final void shutdown() {
-        h().shutdown();
-    }
-
-    @Override // java.util.concurrent.ExecutorService
-    public final List shutdownNow() {
-        return h().shutdownNow();
-    }
-
-    @Override // java.util.concurrent.ExecutorService
-    public final Future submit(Runnable runnable) {
-        return h().submit(runnable);
-    }
-
-    @Override // java.util.concurrent.ExecutorService
-    public final List invokeAll(Collection collection, long j10, TimeUnit timeUnit) {
-        return h().invokeAll(collection, j10, timeUnit);
-    }
-
-    @Override // java.util.concurrent.ExecutorService
-    public final Object invokeAny(Collection collection, long j10, TimeUnit timeUnit) {
-        return h().invokeAny(collection, j10, timeUnit);
-    }
-
-    @Override // java.util.concurrent.ExecutorService
-    public final Future submit(Runnable runnable, Object obj) {
-        return h().submit(runnable, obj);
-    }
-
-    @Override // java.util.concurrent.ExecutorService
-    public final Future submit(Callable callable) {
-        return h().submit(callable);
+public abstract class u {
+    public static String a(String str, Object... objArr) {
+        int length;
+        int length2;
+        int indexOf;
+        String sb2;
+        int i10 = 0;
+        int i11 = 0;
+        while (true) {
+            length = objArr.length;
+            if (i11 >= length) {
+                break;
+            }
+            Object obj = objArr[i11];
+            if (obj == null) {
+                sb2 = "null";
+            } else {
+                try {
+                    sb2 = obj.toString();
+                } catch (Exception e10) {
+                    String name = obj.getClass().getName();
+                    String hexString = Integer.toHexString(System.identityHashCode(obj));
+                    StringBuilder sb3 = new StringBuilder(name.length() + 1 + String.valueOf(hexString).length());
+                    sb3.append(name);
+                    sb3.append("@");
+                    sb3.append(hexString);
+                    String sb4 = sb3.toString();
+                    Logger.getLogger("com.google.common.base.Strings").logp(Level.WARNING, "com.google.common.base.Strings", "lenientToString", "Exception during lenientFormat for ".concat(sb4), (Throwable) e10);
+                    String name2 = e10.getClass().getName();
+                    StringBuilder sb5 = new StringBuilder(sb4.length() + 8 + name2.length() + 1);
+                    sb5.append("<");
+                    sb5.append(sb4);
+                    sb5.append(" threw ");
+                    sb5.append(name2);
+                    sb5.append(">");
+                    sb2 = sb5.toString();
+                }
+            }
+            objArr[i11] = sb2;
+            i11++;
+        }
+        StringBuilder sb6 = new StringBuilder(str.length() + (length * 16));
+        int i12 = 0;
+        while (true) {
+            length2 = objArr.length;
+            if (i10 >= length2 || (indexOf = str.indexOf("%s", i12)) == -1) {
+                break;
+            }
+            sb6.append((CharSequence) str, i12, indexOf);
+            sb6.append(objArr[i10]);
+            i10++;
+            i12 = indexOf + 2;
+        }
+        sb6.append((CharSequence) str, i12, str.length());
+        if (i10 < length2) {
+            sb6.append(" [");
+            sb6.append(objArr[i10]);
+            for (int i13 = i10 + 1; i13 < objArr.length; i13++) {
+                sb6.append(", ");
+                sb6.append(objArr[i13]);
+            }
+            sb6.append(']');
+        }
+        return sb6.toString();
     }
 }

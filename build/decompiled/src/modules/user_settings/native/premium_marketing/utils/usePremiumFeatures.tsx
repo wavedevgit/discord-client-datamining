@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_settings/native/premium_marketing/utils/usePremiumFeatures.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun61756: for (var _fun61756_ip = 0;;) switch (_fun61756_ip) {
+        _fun61783: for (var _fun61783_ip = 0;;) switch (_fun61783_ip) {
             case 0:
                 var6 = arg0;
                 var5 = arguments[1];
@@ -49,16 +49,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot0 = var6;
                 var3 = undefined;
                 if (!(var5 === var3)) {
-                    _fun61756_ip = 23;
-                    continue _fun61756
+                    _fun61783_ip = 23;
+                    continue _fun61783
                 }
             case 21:
                 var5 = false;
             case 23:
                 var _closure2_slot1 = var5;
                 if (!(var4 === var3)) {
-                    _fun61756_ip = 66;
-                    continue _fun61756
+                    _fun61783_ip = 66;
+                    continue _fun61783
                 }
             case 31:
                 var2 = _closure1_slot0;
@@ -553,7 +553,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3[9] = var1;
                     var2 = var3.filter;
                     var1 = function(arg0) { // Environment: var0
-                        _fun61758: for (var _fun61758_ip = 0;;) switch (_fun61758_ip) {
+                        _fun61785: for (var _fun61785_ip = 0;;) switch (_fun61785_ip) {
                             case 0:
                                 var2 = arg0;
                                 var4 = var2.premiumTypes;
@@ -561,15 +561,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var0 = _closure2_slot0;
                                 var0 = var3.bind(var4)(var0);
                                 if (!var0) {
-                                    _fun61758_ip = 48;
-                                    continue _fun61758
+                                    _fun61785_ip = 48;
+                                    continue _fun61785
                                 }
                             case 29:
                                 var1 = _closure2_slot1;
                                 var1 = !var1;
                                 if (var1) {
-                                    _fun61758_ip = 45;
-                                    continue _fun61758
+                                    _fun61785_ip = 45;
+                                    continue _fun61785
                                 }
                             case 39:
                                 var1 = var2.availableOnFractional;
@@ -617,4 +617,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1623, 3124, 1637, 3149, 1234, 2436, 7696, 3109, 7698, 7037, 5753, 5329, 7700, 7702, 671, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1623, 3126, 1637, 3151, 1234, 2436, 7701, 3111, 7703, 7042, 5757, 5330, 7705, 7707, 671, 2]);

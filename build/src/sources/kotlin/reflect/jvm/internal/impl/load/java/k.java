@@ -7,7 +7,7 @@ import kotlin.reflect.jvm.internal.impl.descriptors.CallableMemberDescriptor;
 public class k implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final k f32821d = new k();
+    public static final k f32841d = new k();
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {

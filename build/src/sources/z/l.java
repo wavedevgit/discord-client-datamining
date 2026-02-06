@@ -5,23 +5,23 @@ import java.util.List;
 public final class l {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f54987a;
+    private final List f55718a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final u0 f54988b;
+    private final u0 f55719b;
 
     public l(List list, u0 u0Var) {
-        this.f54987a = list;
-        this.f54988b = u0Var;
+        this.f55718a = list;
+        this.f55719b = u0Var;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public List a() {
-        return this.f54987a;
+        return this.f55718a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean b() {
-        return this.f54988b.g();
+        return this.f55719b.g();
     }
 }

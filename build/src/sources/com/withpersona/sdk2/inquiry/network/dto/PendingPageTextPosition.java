@@ -46,8 +46,8 @@ public final class PendingPageTextPosition {
         @NotNull
         public PendingPageTextPosition fromJson(@NotNull m reader) {
             Intrinsics.checkNotNullParameter(reader, "reader");
-            Object V = reader.V();
-            return Intrinsics.areEqual(V, ViewProps.START) ? PendingPageTextPosition.TOP : Intrinsics.areEqual(V, ViewProps.END) ? PendingPageTextPosition.BOTTOM : PendingPageTextPositionKt.getDEFAULT_PROCESSING_TEXT_POSITION();
+            Object I = reader.I();
+            return Intrinsics.areEqual(I, ViewProps.START) ? PendingPageTextPosition.TOP : Intrinsics.areEqual(I, ViewProps.END) ? PendingPageTextPosition.BOTTOM : PendingPageTextPositionKt.getDEFAULT_PROCESSING_TEXT_POSITION();
         }
     }
 
@@ -58,7 +58,7 @@ public final class PendingPageTextPosition {
     static {
         PendingPageTextPosition[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = vr.a.a($values);
+        $ENTRIES = xr.a.a($values);
         Companion = new Companion(null);
     }
 

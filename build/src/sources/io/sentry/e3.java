@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.TimeZone;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public interface e3 extends Closeable {
-    static Date Q0(String str, ILogger iLogger) {
+    static Date R0(String str, ILogger iLogger) {
         if (str == null) {
             return null;
         }
@@ -23,29 +23,31 @@ public interface e3 extends Closeable {
         }
     }
 
+    void A(boolean z10);
+
+    void D();
+
     Object G0(ILogger iLogger, m1 m1Var);
 
-    Float O1();
+    Float N1();
 
-    void P();
+    void S();
 
-    Object V1();
+    Object U1();
 
-    TimeZone X(ILogger iLogger);
+    TimeZone Z(ILogger iLogger);
 
-    String f1();
+    String e1();
 
     List g2(ILogger iLogger, m1 m1Var);
 
     boolean hasNext();
 
-    Integer k1();
+    Integer j1();
 
-    Double l0();
+    Long l1();
 
-    String m0();
-
-    Long m1();
+    Double n0();
 
     double nextDouble();
 
@@ -55,25 +57,23 @@ public interface e3 extends Closeable {
 
     long nextLong();
 
+    String o0();
+
     io.sentry.vendor.gson.stream.b peek();
 
-    String r1();
+    String q1();
 
-    void s();
+    Map t1(ILogger iLogger, m1 m1Var);
 
-    Date s0(ILogger iLogger);
+    void u();
 
-    void t();
+    Date u0(ILogger iLogger);
 
-    Map u1(ILogger iLogger, m1 m1Var);
+    void u1(ILogger iLogger, Map map, String str);
 
     void v();
 
-    void v1(ILogger iLogger, Map map, String str);
+    void x();
 
-    void w(boolean z10);
-
-    Boolean w0();
-
-    void z();
+    Boolean y0();
 }

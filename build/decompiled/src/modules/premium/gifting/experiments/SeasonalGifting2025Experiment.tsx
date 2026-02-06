@@ -73,4 +73,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.SeasonalGifting2025Experiment = var3;
     var2.SeasonalGiftingReminderExperiment = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1591, 1301, 3115, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1591, 1301, 3117, 2]);

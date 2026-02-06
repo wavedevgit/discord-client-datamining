@@ -33,53 +33,53 @@ public final class GenericFileUploadErrorResponse_DocumentErrorResponse_FileLimi
     @Override // com.squareup.moshi.h
     @NotNull
     public GenericFileUploadErrorResponse.DocumentErrorResponse.FileLimitExceededError fromJson(@NotNull m mVar) {
-        mVar.s();
+        mVar.u();
         String str = null;
         String str2 = null;
         GenericFileUploadErrorResponse.DocumentErrorResponse.FileLimitExceededError.Details details = null;
         while (mVar.hasNext()) {
-            int W = mVar.W(this.options);
-            if (W == -1) {
+            int J = mVar.J(this.options);
+            if (J == -1) {
                 mVar.E0();
-                mVar.P();
-            } else if (W == 0) {
+                mVar.S();
+            } else if (J == 0) {
                 str = (String) this.stringAdapter.fromJson(mVar);
                 if (str == null) {
-                    throw ym.c.x("title", "title", mVar);
+                    throw an.c.x("title", "title", mVar);
                 }
-            } else if (W == 1) {
+            } else if (J == 1) {
                 str2 = (String) this.stringAdapter.fromJson(mVar);
                 if (str2 == null) {
-                    throw ym.c.x("code", "code", mVar);
+                    throw an.c.x("code", "code", mVar);
                 }
-            } else if (W == 2 && (details = (GenericFileUploadErrorResponse.DocumentErrorResponse.FileLimitExceededError.Details) this.detailsAdapter.fromJson(mVar)) == null) {
-                throw ym.c.x("details", "details", mVar);
+            } else if (J == 2 && (details = (GenericFileUploadErrorResponse.DocumentErrorResponse.FileLimitExceededError.Details) this.detailsAdapter.fromJson(mVar)) == null) {
+                throw an.c.x("details", "details", mVar);
             }
         }
-        mVar.z();
+        mVar.D();
         if (str != null) {
             if (str2 != null) {
                 if (details != null) {
                     return new GenericFileUploadErrorResponse.DocumentErrorResponse.FileLimitExceededError(str, str2, details);
                 }
-                throw ym.c.o("details", "details", mVar);
+                throw an.c.o("details", "details", mVar);
             }
-            throw ym.c.o("code", "code", mVar);
+            throw an.c.o("code", "code", mVar);
         }
-        throw ym.c.o("title", "title", mVar);
+        throw an.c.o("title", "title", mVar);
     }
 
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t tVar, GenericFileUploadErrorResponse.DocumentErrorResponse.FileLimitExceededError fileLimitExceededError) {
         if (fileLimitExceededError != null) {
             tVar.k();
-            tVar.W("title");
+            tVar.J("title");
             this.stringAdapter.toJson(tVar, fileLimitExceededError.getTitle());
-            tVar.W("code");
+            tVar.J("code");
             this.stringAdapter.toJson(tVar, fileLimitExceededError.getCode());
-            tVar.W("details");
+            tVar.J("details");
             this.detailsAdapter.toJson(tVar, fileLimitExceededError.getDetails());
-            tVar.E();
+            tVar.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

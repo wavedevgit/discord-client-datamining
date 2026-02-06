@@ -14,57 +14,57 @@ import java.util.concurrent.Executor;
 public class c {
 
     /* renamed from: h  reason: collision with root package name */
-    private static final Executor f5063h = new b();
+    private static final Executor f5392h = new b();
 
     /* renamed from: a  reason: collision with root package name */
-    private final m f5064a;
+    private final m f5393a;
 
     /* renamed from: b  reason: collision with root package name */
-    final androidx.recyclerview.widget.b f5065b;
+    final androidx.recyclerview.widget.b f5394b;
 
     /* renamed from: c  reason: collision with root package name */
-    Executor f5066c;
+    Executor f5395c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f5067d;
+    private final List f5396d;
 
     /* renamed from: e  reason: collision with root package name */
-    private List f5068e;
+    private List f5397e;
 
     /* renamed from: f  reason: collision with root package name */
-    private List f5069f;
+    private List f5398f;
 
     /* renamed from: g  reason: collision with root package name */
-    int f5070g;
+    int f5399g;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public class a implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ List f5071d;
+        final /* synthetic */ List f5400d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ List f5072e;
+        final /* synthetic */ List f5401e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ int f5073i;
+        final /* synthetic */ int f5402i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ Runnable f5074o;
+        final /* synthetic */ Runnable f5403o;
 
         /* renamed from: androidx.recyclerview.widget.c$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-        class C0067a extends e.b {
-            C0067a() {
+        class C0065a extends e.b {
+            C0065a() {
             }
 
             @Override // androidx.recyclerview.widget.e.b
             public boolean areContentsTheSame(int i10, int i11) {
-                Object obj = a.this.f5071d.get(i10);
-                Object obj2 = a.this.f5072e.get(i11);
+                Object obj = a.this.f5400d.get(i10);
+                Object obj2 = a.this.f5401e.get(i11);
                 if (obj != null && obj2 != null) {
-                    return c.this.f5065b.b().a(obj, obj2);
+                    return c.this.f5394b.b().a(obj, obj2);
                 }
                 if (obj == null && obj2 == null) {
                     return true;
@@ -74,10 +74,10 @@ public class c {
 
             @Override // androidx.recyclerview.widget.e.b
             public boolean areItemsTheSame(int i10, int i11) {
-                Object obj = a.this.f5071d.get(i10);
-                Object obj2 = a.this.f5072e.get(i11);
+                Object obj = a.this.f5400d.get(i10);
+                Object obj2 = a.this.f5401e.get(i11);
                 if (obj != null && obj2 != null) {
-                    return c.this.f5065b.b().b(obj, obj2);
+                    return c.this.f5394b.b().b(obj, obj2);
                 }
                 if (obj == null && obj2 == null) {
                     return true;
@@ -87,22 +87,22 @@ public class c {
 
             @Override // androidx.recyclerview.widget.e.b
             public Object getChangePayload(int i10, int i11) {
-                Object obj = a.this.f5071d.get(i10);
-                Object obj2 = a.this.f5072e.get(i11);
+                Object obj = a.this.f5400d.get(i10);
+                Object obj2 = a.this.f5401e.get(i11);
                 if (obj != null && obj2 != null) {
-                    return c.this.f5065b.b().c(obj, obj2);
+                    return c.this.f5394b.b().c(obj, obj2);
                 }
                 throw new AssertionError();
             }
 
             @Override // androidx.recyclerview.widget.e.b
             public int getNewListSize() {
-                return a.this.f5072e.size();
+                return a.this.f5401e.size();
             }
 
             @Override // androidx.recyclerview.widget.e.b
             public int getOldListSize() {
-                return a.this.f5071d.size();
+                return a.this.f5400d.size();
             }
         }
 
@@ -110,32 +110,32 @@ public class c {
         class b implements Runnable {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ e.C0068e f5077d;
+            final /* synthetic */ e.C0066e f5406d;
 
-            b(e.C0068e c0068e) {
-                this.f5077d = c0068e;
+            b(e.C0066e c0066e) {
+                this.f5406d = c0066e;
             }
 
             @Override // java.lang.Runnable
             public void run() {
                 a aVar = a.this;
                 c cVar = c.this;
-                if (cVar.f5070g == aVar.f5073i) {
-                    cVar.b(aVar.f5072e, this.f5077d, aVar.f5074o);
+                if (cVar.f5399g == aVar.f5402i) {
+                    cVar.b(aVar.f5401e, this.f5406d, aVar.f5403o);
                 }
             }
         }
 
         a(List list, List list2, int i10, Runnable runnable) {
-            this.f5071d = list;
-            this.f5072e = list2;
-            this.f5073i = i10;
-            this.f5074o = runnable;
+            this.f5400d = list;
+            this.f5401e = list2;
+            this.f5402i = i10;
+            this.f5403o = runnable;
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            c.this.f5066c.execute(new b(e.b(new C0067a())));
+            c.this.f5395c.execute(new b(e.b(new C0065a())));
         }
     }
 
@@ -143,14 +143,14 @@ public class c {
     private static class b implements Executor {
 
         /* renamed from: d  reason: collision with root package name */
-        final Handler f5079d = new Handler(Looper.getMainLooper());
+        final Handler f5408d = new Handler(Looper.getMainLooper());
 
         b() {
         }
 
         @Override // java.util.concurrent.Executor
         public void execute(Runnable runnable) {
-            this.f5079d.post(runnable);
+            this.f5408d.post(runnable);
         }
     }
 
@@ -159,7 +159,7 @@ public class c {
     }
 
     private void c(List list, Runnable runnable) {
-        Iterator it = this.f5067d.iterator();
+        Iterator it = this.f5396d.iterator();
         if (!it.hasNext()) {
             if (runnable != null) {
                 runnable.run();
@@ -172,14 +172,14 @@ public class c {
     }
 
     public List a() {
-        return this.f5069f;
+        return this.f5398f;
     }
 
-    void b(List list, e.C0068e c0068e, Runnable runnable) {
-        List list2 = this.f5069f;
-        this.f5068e = list;
-        this.f5069f = Collections.unmodifiableList(list);
-        c0068e.b(this.f5064a);
+    void b(List list, e.C0066e c0066e, Runnable runnable) {
+        List list2 = this.f5398f;
+        this.f5397e = list;
+        this.f5398f = Collections.unmodifiableList(list);
+        c0066e.b(this.f5393a);
         c(list2, runnable);
     }
 
@@ -188,9 +188,9 @@ public class c {
     }
 
     public void e(List list, Runnable runnable) {
-        int i10 = this.f5070g + 1;
-        this.f5070g = i10;
-        List list2 = this.f5068e;
+        int i10 = this.f5399g + 1;
+        this.f5399g = i10;
+        List list2 = this.f5397e;
         if (list == list2) {
             if (runnable != null) {
                 runnable.run();
@@ -198,32 +198,32 @@ public class c {
             }
             return;
         }
-        List list3 = this.f5069f;
+        List list3 = this.f5398f;
         if (list == null) {
             int size = list2.size();
-            this.f5068e = null;
-            this.f5069f = Collections.EMPTY_LIST;
-            this.f5064a.b(0, size);
+            this.f5397e = null;
+            this.f5398f = Collections.EMPTY_LIST;
+            this.f5393a.b(0, size);
             c(list3, runnable);
         } else if (list2 == null) {
-            this.f5068e = list;
-            this.f5069f = Collections.unmodifiableList(list);
-            this.f5064a.a(0, list.size());
+            this.f5397e = list;
+            this.f5398f = Collections.unmodifiableList(list);
+            this.f5393a.a(0, list.size());
             c(list3, runnable);
         } else {
-            this.f5065b.a().execute(new a(list2, list, i10, runnable));
+            this.f5394b.a().execute(new a(list2, list, i10, runnable));
         }
     }
 
     public c(m mVar, androidx.recyclerview.widget.b bVar) {
-        this.f5067d = new CopyOnWriteArrayList();
-        this.f5069f = Collections.EMPTY_LIST;
-        this.f5064a = mVar;
-        this.f5065b = bVar;
+        this.f5396d = new CopyOnWriteArrayList();
+        this.f5398f = Collections.EMPTY_LIST;
+        this.f5393a = mVar;
+        this.f5394b = bVar;
         if (bVar.c() != null) {
-            this.f5066c = bVar.c();
+            this.f5395c = bVar.c();
         } else {
-            this.f5066c = f5063h;
+            this.f5395c = f5392h;
         }
     }
 }

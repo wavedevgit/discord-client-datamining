@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.SEARCH_BAR_HEIGHT = var3;
     var1 = function arg0() {
-        _fun89921: for (var _fun89921_ip = 0;;) switch (_fun89921_ip) {
+        _fun89934: for (var _fun89934_ip = 0;;) switch (_fun89934_ip) {
             case 0:
                 var2 = arg0;
                 var7 = var2.panelVariant;
@@ -117,13 +117,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = new Array(3);
                 var6[0] = var9;
                 if (var7) {
-                    _fun89921_ip = 91;
-                    continue _fun89921
+                    _fun89934_ip = 91;
+                    continue _fun89934
                 }
             case 83:
                 var7 = var8.roundedCorners;
-                _fun89921_ip = 97;
-                continue _fun89921;
+                _fun89934_ip = 97;
+                continue _fun89934;
             case 91:
                 var7 = var8.roundedCornersAlt;
             case 97:
@@ -178,4 +178,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.SearchButtonContent = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 7033, 3941, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 7038, 3943, 1234, 2]);

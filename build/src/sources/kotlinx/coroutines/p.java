@@ -1,24 +1,24 @@
 package kotlinx.coroutines;
 
-import ms.d1;
-import ms.w0;
+import os.d1;
+import os.w0;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class p implements w0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f35052d;
+    private final boolean f35072d;
 
     public p(boolean z10) {
-        this.f35052d = z10;
+        this.f35072d = z10;
     }
 
-    @Override // ms.w0
+    @Override // os.w0
     public boolean a() {
-        return this.f35052d;
+        return this.f35072d;
     }
 
-    @Override // ms.w0
+    @Override // os.w0
     public d1 b() {
         return null;
     }

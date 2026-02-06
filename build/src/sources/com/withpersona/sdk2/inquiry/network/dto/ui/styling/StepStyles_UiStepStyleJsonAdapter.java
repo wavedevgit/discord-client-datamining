@@ -97,7 +97,7 @@ public final class StepStyles_UiStepStyleJsonAdapter extends h {
     @NotNull
     public StepStyles.UiStepStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         AttributeStyles.HeaderButtonColorStyle headerButtonColorStyle = null;
         StepStyles.StepBackgroundColorStyle stepBackgroundColorStyle = null;
         StepStyles.StepBackgroundImageStyle stepBackgroundImageStyle = null;
@@ -111,10 +111,10 @@ public final class StepStyles_UiStepStyleJsonAdapter extends h {
         StepStyles.StepPaddingStyle stepPaddingStyle = null;
         StepStyles.StepBorderRadiusStyle stepBorderRadiusStyle = null;
         while (reader.hasNext()) {
-            switch (reader.W(this.options)) {
+            switch (reader.J(this.options)) {
                 case -1:
                     reader.E0();
-                    reader.P();
+                    reader.S();
                     break;
                 case 0:
                     headerButtonColorStyle = (AttributeStyles.HeaderButtonColorStyle) this.nullableHeaderButtonColorStyleAdapter.fromJson(reader);
@@ -154,7 +154,7 @@ public final class StepStyles_UiStepStyleJsonAdapter extends h {
                     break;
             }
         }
-        reader.z();
+        reader.D();
         return new StepStyles.UiStepStyle(headerButtonColorStyle, stepBackgroundColorStyle, stepBackgroundImageStyle, uiStepTitleComponentStyle, uiStepTextBasedComponentStyle, stepPrimaryButtonComponentStyle, stepSecondaryButtonComponentStyle, uiStepStrokeColor, uiStepFillColor, uiStepAlignment, stepPaddingStyle, stepBorderRadiusStyle);
     }
 
@@ -163,31 +163,31 @@ public final class StepStyles_UiStepStyleJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (uiStepStyle != null) {
             writer.k();
-            writer.W("textColor");
+            writer.J("textColor");
             this.nullableHeaderButtonColorStyleAdapter.toJson(writer, uiStepStyle.getHeaderButtonColor());
-            writer.W(ViewProps.BACKGROUND_COLOR);
+            writer.J(ViewProps.BACKGROUND_COLOR);
             this.nullableStepBackgroundColorStyleAdapter.toJson(writer, uiStepStyle.getBackgroundColor());
-            writer.W("backgroundImage");
+            writer.J("backgroundImage");
             this.nullableStepBackgroundImageStyleAdapter.toJson(writer, uiStepStyle.getBackgroundImage());
-            writer.W("titleStyle");
+            writer.J("titleStyle");
             this.nullableUiStepTitleComponentStyleAdapter.toJson(writer, uiStepStyle.getTitleStyle());
-            writer.W("textStyle");
+            writer.J("textStyle");
             this.nullableUiStepTextBasedComponentStyleAdapter.toJson(writer, uiStepStyle.getTextStyle());
-            writer.W("buttonPrimaryStyle");
+            writer.J("buttonPrimaryStyle");
             this.nullableStepPrimaryButtonComponentStyleAdapter.toJson(writer, uiStepStyle.getButtonPrimaryStyle());
-            writer.W("buttonSecondaryStyle");
+            writer.J("buttonSecondaryStyle");
             this.nullableStepSecondaryButtonComponentStyleAdapter.toJson(writer, uiStepStyle.getButtonSecondaryStyle());
-            writer.W("strokeColor");
+            writer.J("strokeColor");
             this.nullableUiStepStrokeColorAdapter.toJson(writer, uiStepStyle.getStrokeColor());
-            writer.W("fillColor");
+            writer.J("fillColor");
             this.nullableUiStepFillColorAdapter.toJson(writer, uiStepStyle.getFillColor());
-            writer.W("alignment");
+            writer.J("alignment");
             this.nullableUiStepAlignmentAdapter.toJson(writer, uiStepStyle.getAlignment());
-            writer.W(ViewProps.PADDING);
+            writer.J(ViewProps.PADDING);
             this.nullableStepPaddingStyleAdapter.toJson(writer, uiStepStyle.getPadding());
-            writer.W("borderRadius");
+            writer.J("borderRadius");
             this.nullableStepBorderRadiusStyleAdapter.toJson(writer, uiStepStyle.getBorderRadius());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

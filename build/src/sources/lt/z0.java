@@ -1,0 +1,143 @@
+package lt;
+
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.text.StringsKt;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+public class z0 extends a {
+
+    /* renamed from: e  reason: collision with root package name */
+    private final String f36746e;
+
+    public z0(String source) {
+        Intrinsics.checkNotNullParameter(source, "source");
+        this.f36746e = source;
+    }
+
+    @Override // lt.a
+    public String F(String keyToMatch, boolean z10) {
+        Intrinsics.checkNotNullParameter(keyToMatch, "keyToMatch");
+        int i10 = this.f36632a;
+        try {
+            if (j() == 6 && Intrinsics.areEqual(H(z10), keyToMatch)) {
+                t();
+                if (j() == 5) {
+                    return H(z10);
+                }
+            }
+            return null;
+        } finally {
+            this.f36632a = i10;
+            t();
+        }
+    }
+
+    @Override // lt.a
+    public int I(int i10) {
+        if (i10 < D().length()) {
+            return i10;
+        }
+        return -1;
+    }
+
+    @Override // lt.a
+    public int K() {
+        char charAt;
+        int i10 = this.f36632a;
+        if (i10 == -1) {
+            return i10;
+        }
+        String D = D();
+        while (i10 < D.length() && ((charAt = D.charAt(i10)) == ' ' || charAt == '\n' || charAt == '\r' || charAt == '\t')) {
+            i10++;
+        }
+        this.f36632a = i10;
+        return i10;
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // lt.a
+    /* renamed from: S */
+    public String D() {
+        return this.f36746e;
+    }
+
+    @Override // lt.a
+    public boolean e() {
+        int i10 = this.f36632a;
+        if (i10 == -1) {
+            return false;
+        }
+        String D = D();
+        while (i10 < D.length()) {
+            char charAt = D.charAt(i10);
+            if (charAt != ' ' && charAt != '\n' && charAt != '\r' && charAt != '\t') {
+                this.f36632a = i10;
+                return E(charAt);
+            }
+            i10++;
+        }
+        this.f36632a = i10;
+        return false;
+    }
+
+    @Override // lt.a
+    public String i() {
+        l('\"');
+        int i10 = this.f36632a;
+        int h02 = StringsKt.h0(D(), '\"', i10, false, 4, null);
+        if (h02 != -1) {
+            for (int i11 = i10; i11 < h02; i11++) {
+                if (D().charAt(i11) == '\\') {
+                    return p(D(), this.f36632a, i11);
+                }
+            }
+            this.f36632a = h02 + 1;
+            String substring = D().substring(i10, h02);
+            Intrinsics.checkNotNullExpressionValue(substring, "substring(...)");
+            return substring;
+        }
+        q();
+        y((byte) 1, false);
+        throw new qr.h();
+    }
+
+    @Override // lt.a
+    public byte j() {
+        String D = D();
+        int i10 = this.f36632a;
+        while (i10 != -1 && i10 < D.length()) {
+            int i11 = i10 + 1;
+            char charAt = D.charAt(i10);
+            if (charAt != ' ' && charAt != '\n' && charAt != '\r' && charAt != '\t') {
+                this.f36632a = i11;
+                return b.a(charAt);
+            }
+            i10 = i11;
+        }
+        this.f36632a = D.length();
+        return (byte) 10;
+    }
+
+    @Override // lt.a
+    public void l(char c10) {
+        if (this.f36632a == -1) {
+            Q(c10);
+        }
+        String D = D();
+        int i10 = this.f36632a;
+        while (i10 < D.length()) {
+            int i11 = i10 + 1;
+            char charAt = D.charAt(i10);
+            if (charAt != ' ' && charAt != '\n' && charAt != '\r' && charAt != '\t') {
+                this.f36632a = i11;
+                if (charAt == c10) {
+                    return;
+                }
+                Q(c10);
+            }
+            i10 = i11;
+        }
+        this.f36632a = -1;
+        Q(c10);
+    }
+}

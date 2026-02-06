@@ -51,14 +51,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var5;
         var0 = function() { // Environment: var0
-            _fun67282: for (var _fun67282_ip = 0;;) switch (_fun67282_ip) {
+            _fun67310: for (var _fun67310_ip = 0;;) switch (_fun67310_ip) {
                 case 0:
                     var2 = _closure2_slot0;
                     var0 = null;
                     var0 = var0 != var2;
                     if (!var0) {
-                        _fun67282_ip = 49;
-                        continue _fun67282
+                        _fun67310_ip = 49;
+                        continue _fun67310
                     }
                 case 16:
                     var4 = _closure1_slot3;
@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useCanSendStageStartNotification = var3;
     var1 = function arg0() {
-        _fun67283: for (var _fun67283_ip = 0;;) switch (_fun67283_ip) {
+        _fun67311: for (var _fun67311_ip = 0;;) switch (_fun67311_ip) {
             case 0:
                 var0 = arg0;
                 var1 = null;
@@ -84,8 +84,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = undefined;
                 var7 = undefined;
                 if (var3) {
-                    _fun67283_ip = 23;
-                    continue _fun67283
+                    _fun67311_ip = 23;
+                    continue _fun67311
                 }
             case 18:
                 var7 = var0.guild_id;
@@ -112,14 +112,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var5.bind(var6)(var4, var2, var3);
                 var0 = var1 == var0;
                 if (var0) {
-                    _fun67283_ip = 116;
-                    continue _fun67283
+                    _fun67311_ip = 116;
+                    continue _fun67311
                 }
             case 96:
                 var1 = var1 == var3;
                 if (var1) {
-                    _fun67283_ip = 113;
-                    continue _fun67283
+                    _fun67311_ip = 113;
+                    continue _fun67311
                 }
             case 103:
                 var2 = 50000;
@@ -132,4 +132,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useDefaultSendStartStageNotificationToggle = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1599, 3091, 483, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1599, 3093, 483, 566, 2]);

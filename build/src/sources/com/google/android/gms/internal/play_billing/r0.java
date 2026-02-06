@@ -9,21 +9,21 @@ import java.util.Locale;
 public abstract class r0 implements Iterable, Serializable {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final r0 f14359e = new o0(y1.f14404d);
+    public static final r0 f14322e = new o0(y1.f14367d);
 
     /* renamed from: i  reason: collision with root package name */
-    private static final Comparator f14360i;
+    private static final Comparator f14323i;
 
     /* renamed from: o  reason: collision with root package name */
-    private static final q0 f14361o;
+    private static final q0 f14324o;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f14362d = 0;
+    private int f14325d = 0;
 
     static {
-        int i10 = c0.f14195a;
-        f14361o = new q0(null);
-        f14360i = new i0();
+        int i10 = c0.f14158a;
+        f14324o = new q0(null);
+        f14323i = new i0();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -41,7 +41,7 @@ public abstract class r0 implements Iterable, Serializable {
         return i13;
     }
 
-    public static r0 n(byte[] bArr, int i10, int i11) {
+    public static r0 o(byte[] bArr, int i10, int i11) {
         j(i10, i10 + i11, bArr.length);
         byte[] bArr2 = new byte[i11];
         System.arraycopy(bArr, i10, bArr2, 0, i11);
@@ -67,14 +67,14 @@ public abstract class r0 implements Iterable, Serializable {
     public abstract void h(g0 g0Var);
 
     public final int hashCode() {
-        int i10 = this.f14362d;
+        int i10 = this.f14325d;
         if (i10 == 0) {
             int d10 = d();
             i10 = e(d10, 0, d10);
             if (i10 == 0) {
                 i10 = 1;
             }
-            this.f14362d = i10;
+            this.f14325d = i10;
         }
         return i10;
     }
@@ -88,10 +88,10 @@ public abstract class r0 implements Iterable, Serializable {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final int l() {
-        return this.f14362d;
+        return this.f14325d;
     }
 
-    public final String o(Charset charset) {
+    public final String p(Charset charset) {
         return d() == 0 ? "" : g(charset);
     }
 

@@ -1,14 +1,36 @@
 package pg;
+
+import java.util.AbstractCollection;
+import java.util.Iterator;
+import java.util.Map;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-abstract class e0 {
+final class e0 extends AbstractCollection {
+
+    /* renamed from: d  reason: collision with root package name */
+    final /* synthetic */ f0 f44147d;
+
     /* JADX INFO: Access modifiers changed from: package-private */
-    public static int a(Object obj) {
-        int hashCode;
-        if (obj == null) {
-            hashCode = 0;
-        } else {
-            hashCode = obj.hashCode();
+    public e0(f0 f0Var) {
+        this.f44147d = f0Var;
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public final void clear() {
+        this.f44147d.clear();
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable
+    public final Iterator iterator() {
+        f0 f0Var = this.f44147d;
+        Map n10 = f0Var.n();
+        if (n10 != null) {
+            return n10.values().iterator();
         }
-        return (int) (Integer.rotateLeft((int) (hashCode * (-862048943)), 15) * 461845907);
+        return new y(f0Var);
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public final int size() {
+        return this.f44147d.size();
     }
 }

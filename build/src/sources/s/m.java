@@ -12,13 +12,13 @@ public class m extends l {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        final OutputConfiguration f49294a;
+        final OutputConfiguration f49629a;
 
         /* renamed from: b  reason: collision with root package name */
-        long f49295b = 1;
+        long f49630b = 1;
 
         a(OutputConfiguration outputConfiguration) {
-            this.f49294a = outputConfiguration;
+            this.f49629a = outputConfiguration;
         }
 
         public boolean equals(Object obj) {
@@ -26,15 +26,15 @@ public class m extends l {
                 return false;
             }
             a aVar = (a) obj;
-            if (!Objects.equals(this.f49294a, aVar.f49294a) || this.f49295b != aVar.f49295b) {
+            if (!Objects.equals(this.f49629a, aVar.f49629a) || this.f49630b != aVar.f49630b) {
                 return false;
             }
             return true;
         }
 
         public int hashCode() {
-            int hashCode = this.f49294a.hashCode() ^ 31;
-            return Long.hashCode(this.f49295b) ^ ((hashCode << 5) - hashCode);
+            int hashCode = this.f49629a.hashCode() ^ 31;
+            return Long.hashCode(this.f49630b) ^ ((hashCode << 5) - hashCode);
         }
     }
 
@@ -50,7 +50,7 @@ public class m extends l {
 
     @Override // s.l, s.k, s.j.a
     public void c(long j10) {
-        ((a) this.f49296a).f49295b = j10;
+        ((a) this.f49631a).f49630b = j10;
     }
 
     @Override // s.l, s.k, s.j.a
@@ -65,8 +65,8 @@ public class m extends l {
 
     @Override // s.l, s.k, s.j.a
     public Object h() {
-        b2.e.a(this.f49296a instanceof a);
-        return ((a) this.f49296a).f49294a;
+        b2.e.a(this.f49631a instanceof a);
+        return ((a) this.f49631a).f49629a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */

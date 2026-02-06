@@ -10,13 +10,13 @@ import p4.z;
 public final class a0 implements z {
 
     /* renamed from: a  reason: collision with root package name */
-    private final r3.u f44843a;
+    private final r3.u f43640a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final r3.i f44844b;
+    private final r3.i f43641b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final r3.a0 f44845c;
+    private final r3.a0 f43642c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a extends r3.i {
@@ -33,14 +33,14 @@ public final class a0 implements z {
         /* renamed from: k */
         public void i(x3.k kVar, y yVar) {
             if (yVar.a() == null) {
-                kVar.P1(1);
+                kVar.O1(1);
             } else {
-                kVar.h1(1, yVar.a());
+                kVar.g1(1, yVar.a());
             }
             if (yVar.b() == null) {
-                kVar.P1(2);
+                kVar.O1(2);
             } else {
-                kVar.h1(2, yVar.b());
+                kVar.g1(2, yVar.b());
             }
         }
     }
@@ -58,9 +58,9 @@ public final class a0 implements z {
     }
 
     public a0(r3.u uVar) {
-        this.f44843a = uVar;
-        this.f44844b = new a(uVar);
-        this.f44845c = new b(uVar);
+        this.f43640a = uVar;
+        this.f43641b = new a(uVar);
+        this.f43642c = new b(uVar);
     }
 
     public static List e() {
@@ -72,12 +72,12 @@ public final class a0 implements z {
         String string;
         r3.x k10 = r3.x.k("SELECT DISTINCT tag FROM worktag WHERE work_spec_id=?", 1);
         if (str == null) {
-            k10.P1(1);
+            k10.O1(1);
         } else {
-            k10.h1(1, str);
+            k10.g1(1, str);
         }
-        this.f44843a.d();
-        Cursor b10 = t3.b.b(this.f44843a, k10, false, null);
+        this.f43640a.d();
+        Cursor b10 = t3.b.b(this.f43640a, k10, false, null);
         try {
             ArrayList arrayList = new ArrayList(b10.getCount());
             while (b10.moveToNext()) {
@@ -91,19 +91,19 @@ public final class a0 implements z {
             return arrayList;
         } finally {
             b10.close();
-            k10.y();
+            k10.p();
         }
     }
 
     @Override // p4.z
     public void b(y yVar) {
-        this.f44843a.d();
-        this.f44843a.e();
+        this.f43640a.d();
+        this.f43640a.e();
         try {
-            this.f44844b.j(yVar);
-            this.f44843a.A();
+            this.f43641b.j(yVar);
+            this.f43640a.A();
         } finally {
-            this.f44843a.i();
+            this.f43640a.i();
         }
     }
 

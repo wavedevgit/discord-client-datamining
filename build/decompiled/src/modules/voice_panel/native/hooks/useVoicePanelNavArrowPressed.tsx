@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1[2] = var5;
         var1[3] = var4;
         var0 = function() { // Environment: var0
-            _fun111025: for (var _fun111025_ip = 0;;) switch (_fun111025_ip) {
+            _fun111048: for (var _fun111048_ip = 0;;) switch (_fun111048_ip) {
                 case 0:
                     var2 = _closure2_slot0;
                     var0 = var2.get;
@@ -67,15 +67,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = undefined;
                     var0 = undefined;
                     if (var5) {
-                        _fun111025_ip = 34;
-                        continue _fun111025
+                        _fun111048_ip = 34;
+                        continue _fun111048
                     }
                 case 29:
                     var0 = var4.id;
                 case 34:
                     if (!(var3 != var0)) {
-                        _fun111025_ip = 73;
-                        continue _fun111025
+                        _fun111048_ip = 73;
+                        continue _fun111048
                     }
                 case 38:
                     var4 = _closure2_slot3;
@@ -85,14 +85,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot3;
                     var0 = var0.DRAWER;
                     if (!(var4 === var0)) {
-                        _fun111025_ip = 83;
-                        continue _fun111025
+                        _fun111048_ip = 83;
+                        continue _fun111048
                     }
                 case 73:
                     var0 = _closure2_slot2;
                     var0 = var0.bind(var2)();
-                    _fun111025_ip = 94;
-                    continue _fun111025;
+                    _fun111048_ip = 94;
+                    continue _fun111048;
                 case 83:
                     var1 = _closure2_slot1;
                     var1 = var1.bind(var2)(var3);
@@ -106,4 +106,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 11835, 11836, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 11838, 11839, 2]);

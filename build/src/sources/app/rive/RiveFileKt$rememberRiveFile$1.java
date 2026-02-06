@@ -51,7 +51,7 @@ final class RiveFileKt$rememberRiveFile$1 extends k implements Function2<u, Cont
     public final java.lang.Object invokeSuspend(@org.jetbrains.annotations.NotNull java.lang.Object r7) {
         /*
             r6 = this;
-            java.lang.Object r0 = ur.b.f()
+            java.lang.Object r0 = wr.b.f()
             int r1 = r6.label
             r2 = 2
             r3 = 1
@@ -98,11 +98,11 @@ final class RiveFileKt$rememberRiveFile$1 extends k implements Function2<u, Cont
         L54:
             return r0
         L55:
-            or.h r7 = new or.h
+            qr.h r7 = new qr.h
             r7.<init>()
             throw r7
         L5b:
-            kotlin.Unit r7 = kotlin.Unit.f31988a
+            kotlin.Unit r7 = kotlin.Unit.f32008a
             return r7
         */
         throw new UnsupportedOperationException("Method not decompiled: app.rive.RiveFileKt$rememberRiveFile$1.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -110,6 +110,6 @@ final class RiveFileKt$rememberRiveFile$1 extends k implements Function2<u, Cont
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(@NotNull u uVar, Continuation<? super Unit> continuation) {
-        return ((RiveFileKt$rememberRiveFile$1) create(uVar, continuation)).invokeSuspend(Unit.f31988a);
+        return ((RiveFileKt$rememberRiveFile$1) create(uVar, continuation)).invokeSuspend(Unit.f32008a);
     }
 }

@@ -11,7 +11,7 @@ import org.jetbrains.annotations.NotNull;
 public final class DynamicType extends FlexibleType implements DynamicTypeMarker {
 
     /* renamed from: o  reason: collision with root package name */
-    private final TypeAttributes f34544o;
+    private final TypeAttributes f34564o;
 
     /* JADX WARN: Illegal instructions before constructor call */
     /*
@@ -32,7 +32,7 @@ public final class DynamicType extends FlexibleType implements DynamicTypeMarker
             java.lang.String r1 = "getNullableAnyType(...)"
             kotlin.jvm.internal.Intrinsics.checkNotNullExpressionValue(r3, r1)
             r2.<init>(r0, r3)
-            r2.f34544o = r4
+            r2.f34564o = r4
             return
         */
         throw new UnsupportedOperationException("Method not decompiled: kotlin.reflect.jvm.internal.impl.types.DynamicType.<init>(kotlin.reflect.jvm.internal.impl.builtins.KotlinBuiltIns, kotlin.reflect.jvm.internal.impl.types.TypeAttributes):void");
@@ -41,7 +41,7 @@ public final class DynamicType extends FlexibleType implements DynamicTypeMarker
     @Override // kotlin.reflect.jvm.internal.impl.types.FlexibleType, kotlin.reflect.jvm.internal.impl.types.KotlinType
     @NotNull
     public TypeAttributes getAttributes() {
-        return this.f34544o;
+        return this.f34564o;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.FlexibleType

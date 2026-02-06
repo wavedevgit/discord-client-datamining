@@ -31,21 +31,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var4.bind(var0)(var3);
     var6 = var7.createStyles;
     var3 = function() { // Environment: var1
-        _fun88305: for (var _fun88305_ip = 0;;) switch (_fun88305_ip) {
+        _fun88318: for (var _fun88318_ip = 0;;) switch (_fun88318_ip) {
             case 0:
                 var6 = arguments[0];
                 var4 = arguments[1];
                 var5 = undefined;
                 if (!(var6 === var5)) {
-                    _fun88305_ip = 16;
-                    continue _fun88305
+                    _fun88318_ip = 16;
+                    continue _fun88318
                 }
             case 12:
                 var6 = 'lg';
             case 16:
                 if (!(var4 === var5)) {
-                    _fun88305_ip = 24;
-                    continue _fun88305
+                    _fun88318_ip = 24;
+                    continue _fun88318
                 }
             case 20:
                 var4 = 'default';
@@ -71,8 +71,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = copyDataProperties(var12, var11);
                 var3 = 'error';
                 if (!(var3 !== var4)) {
-                    _fun88305_ip = 150;
-                    continue _fun88305
+                    _fun88318_ip = 150;
+                    continue _fun88318
                 }
             case 117:
                 var4 = _closure1_slot1;
@@ -82,8 +82,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var4.bind(var5)(var3);
                 var3 = var3.colors;
                 var3 = var3.TEXT_DEFAULT;
-                _fun88305_ip = 181;
-                continue _fun88305;
+                _fun88318_ip = 181;
+                continue _fun88318;
             case 150:
                 var4 = _closure1_slot1;
                 var6 = _closure1_slot2;
@@ -115,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/TextInput/native/GhostInput.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun88306: for (var _fun88306_ip = 0;;) switch (_fun88306_ip) {
+        _fun88319: for (var _fun88319_ip = 0;;) switch (_fun88319_ip) {
             case 0:
                 var5 = arg0;
                 var1 = _closure1_slot0;
@@ -136,8 +136,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var5.isCentered;
                 var12 = var3 === var0;
                 if (var12) {
-                    _fun88306_ip = 86;
-                    continue _fun88306
+                    _fun88319_ip = 86;
+                    continue _fun88319
                 }
             case 83:
                 var12 = var0;
@@ -145,8 +145,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var5.autoFocus;
                 var8 = var3 === var0;
                 if (var8) {
-                    _fun88306_ip = 102;
-                    continue _fun88306
+                    _fun88319_ip = 102;
+                    continue _fun88319
                 }
             case 99:
                 var8 = var0;
@@ -174,8 +174,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6[0] = var5;
                 var5 = undefined;
                 if (!var12) {
-                    _fun88306_ip = 205;
-                    continue _fun88306
+                    _fun88319_ip = 205;
+                    continue _fun88319
                 }
             case 199:
                 var5 = var9.centeredContainerStyle;
@@ -219,4 +219,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.GhostInput = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 3941, 671, 5399, 5401, 5393, 5402, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 3943, 671, 5400, 5402, 5394, 5403, 2]);

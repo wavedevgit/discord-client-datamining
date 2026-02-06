@@ -1,67 +1,49 @@
 package hs;
 
-import is.t2;
-import is.x2;
-import java.util.Iterator;
-import java.util.List;
-import kotlin.collections.CollectionsKt;
-import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.Reflection;
-import kotlin.reflect.KClass;
-import kotlin.reflect.KType;
-import kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor;
-import kotlin.reflect.jvm.internal.impl.descriptors.ClassKind;
-import kotlin.reflect.jvm.internal.impl.descriptors.ClassifierDescriptor;
-import kotlin.reflect.l;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-public abstract class b {
-    /* JADX WARN: Multi-variable type inference failed */
-    public static final KClass a(kotlin.reflect.d dVar) {
-        ClassDescriptor classDescriptor;
-        KClass b10;
-        Intrinsics.checkNotNullParameter(dVar, "<this>");
-        if (dVar instanceof KClass) {
-            return (KClass) dVar;
+import java.util.NoSuchElementException;
+import kotlin.collections.m0;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+public final class b extends m0 {
+
+    /* renamed from: d  reason: collision with root package name */
+    private final int f26450d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private final int f26451e;
+
+    /* renamed from: i  reason: collision with root package name */
+    private boolean f26452i;
+
+    /* renamed from: o  reason: collision with root package name */
+    private int f26453o;
+
+    public b(int i10, int i11, int i12) {
+        this.f26450d = i12;
+        this.f26451e = i11;
+        boolean z10 = false;
+        if (i12 <= 0 ? i10 >= i11 : i10 <= i11) {
+            z10 = true;
         }
-        if (dVar instanceof l) {
-            List upperBounds = ((l) dVar).getUpperBounds();
-            Iterator it = upperBounds.iterator();
-            while (true) {
-                classDescriptor = null;
-                if (!it.hasNext()) {
-                    break;
-                }
-                Object next = it.next();
-                KType kType = (KType) next;
-                Intrinsics.checkNotNull(kType, "null cannot be cast to non-null type kotlin.reflect.jvm.internal.KTypeImpl");
-                ClassifierDescriptor mo1199getDeclarationDescriptor = ((t2) kType).l().getConstructor().mo1199getDeclarationDescriptor();
-                if (mo1199getDeclarationDescriptor instanceof ClassDescriptor) {
-                    classDescriptor = (ClassDescriptor) mo1199getDeclarationDescriptor;
-                }
-                if (classDescriptor != null && classDescriptor.getKind() != ClassKind.INTERFACE && classDescriptor.getKind() != ClassKind.ANNOTATION_CLASS) {
-                    classDescriptor = next;
-                    break;
-                }
-            }
-            KType kType2 = (KType) classDescriptor;
-            if (kType2 == null) {
-                kType2 = (KType) CollectionsKt.firstOrNull(upperBounds);
-            }
-            if (kType2 != null && (b10 = b(kType2)) != null) {
-                return b10;
-            }
-            return Reflection.getOrCreateKotlinClass(Object.class);
-        }
-        throw new x2("Cannot calculate JVM erasure for type: " + dVar);
+        this.f26452i = z10;
+        this.f26453o = z10 ? i10 : i11;
     }
 
-    public static final KClass b(KType kType) {
-        KClass a10;
-        Intrinsics.checkNotNullParameter(kType, "<this>");
-        kotlin.reflect.d classifier = kType.getClassifier();
-        if (classifier != null && (a10 = a(classifier)) != null) {
-            return a10;
+    @Override // java.util.Iterator
+    public boolean hasNext() {
+        return this.f26452i;
+    }
+
+    @Override // kotlin.collections.m0
+    public int nextInt() {
+        int i10 = this.f26453o;
+        if (i10 == this.f26451e) {
+            if (this.f26452i) {
+                this.f26452i = false;
+                return i10;
+            }
+            throw new NoSuchElementException();
         }
-        throw new x2("Cannot calculate JVM erasure for type: " + kType);
+        this.f26453o = this.f26450d + i10;
+        return i10;
     }
 }

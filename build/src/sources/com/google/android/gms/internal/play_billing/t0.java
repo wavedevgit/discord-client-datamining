@@ -3,36 +3,36 @@ package com.google.android.gms.internal.play_billing;
 final class t0 extends v0 {
 
     /* renamed from: b  reason: collision with root package name */
-    private final byte[] f14376b;
+    private final byte[] f14339b;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f14377c;
+    private int f14340c;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f14378d;
+    private int f14341d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f14379e;
+    private int f14342e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ t0(byte[] bArr, int i10, int i11, boolean z10, s0 s0Var) {
         super(null);
-        this.f14379e = Integer.MAX_VALUE;
-        this.f14376b = bArr;
-        this.f14377c = 0;
+        this.f14342e = Integer.MAX_VALUE;
+        this.f14339b = bArr;
+        this.f14340c = 0;
     }
 
     public final int c(int i10) {
-        int i11 = this.f14379e;
-        this.f14379e = 0;
-        int i12 = this.f14377c + this.f14378d;
-        this.f14377c = i12;
+        int i11 = this.f14342e;
+        this.f14342e = 0;
+        int i12 = this.f14340c + this.f14341d;
+        this.f14340c = i12;
         if (i12 <= 0) {
-            this.f14378d = 0;
+            this.f14341d = 0;
             return i11;
         }
-        this.f14378d = i12;
-        this.f14377c = 0;
+        this.f14341d = i12;
+        this.f14340c = 0;
         return i11;
     }
 }

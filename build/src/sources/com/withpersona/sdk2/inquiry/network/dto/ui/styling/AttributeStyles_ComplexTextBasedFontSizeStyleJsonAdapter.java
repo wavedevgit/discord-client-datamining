@@ -42,27 +42,27 @@ public final class AttributeStyles_ComplexTextBasedFontSizeStyleJsonAdapter exte
     @NotNull
     public AttributeStyles.ComplexTextBasedFontSizeStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         StyleElements.Measurement measurement = null;
         StyleElements.Measurement measurement2 = null;
         StyleElements.Measurement measurement3 = null;
         StyleElements.Measurement measurement4 = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 measurement = (StyleElements.Measurement) this.nullableMeasurementAdapter.fromJson(reader);
-            } else if (W == 1) {
+            } else if (J == 1) {
                 measurement2 = (StyleElements.Measurement) this.nullableMeasurementAdapter.fromJson(reader);
-            } else if (W == 2) {
+            } else if (J == 2) {
                 measurement3 = (StyleElements.Measurement) this.nullableMeasurementAdapter.fromJson(reader);
-            } else if (W == 3) {
+            } else if (J == 3) {
                 measurement4 = (StyleElements.Measurement) this.nullableMeasurementAdapter.fromJson(reader);
             }
         }
-        reader.z();
+        reader.D();
         return new AttributeStyles.ComplexTextBasedFontSizeStyle(measurement, measurement2, measurement3, measurement4);
     }
 
@@ -71,15 +71,15 @@ public final class AttributeStyles_ComplexTextBasedFontSizeStyleJsonAdapter exte
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (complexTextBasedFontSizeStyle != null) {
             writer.k();
-            writer.W("value");
+            writer.J("value");
             this.nullableMeasurementAdapter.toJson(writer, complexTextBasedFontSizeStyle.getValue());
-            writer.W(ReactTextInputShadowNode.PROP_PLACEHOLDER);
+            writer.J(ReactTextInputShadowNode.PROP_PLACEHOLDER);
             this.nullableMeasurementAdapter.toJson(writer, complexTextBasedFontSizeStyle.getPlaceholder());
-            writer.W("label");
+            writer.J("label");
             this.nullableMeasurementAdapter.toJson(writer, complexTextBasedFontSizeStyle.getLabel());
-            writer.W("error");
+            writer.J("error");
             this.nullableMeasurementAdapter.toJson(writer, complexTextBasedFontSizeStyle.getError());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

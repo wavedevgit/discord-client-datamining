@@ -39,7 +39,7 @@ public final class MediaResolver$checkFreeSpace$2 extends k implements Function2
         MediaResolver.Companion companion;
         File file3;
         File[] listFiles;
-        ur.b.f();
+        wr.b.f();
         if (this.label == 0) {
             kotlin.c.b(obj);
             file = this.this$0.cacheDir;
@@ -69,13 +69,13 @@ public final class MediaResolver$checkFreeSpace$2 extends k implements Function2
                     }
                 }
             }
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaResolver$checkFreeSpace$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+        return ((MediaResolver$checkFreeSpace$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
     }
 }

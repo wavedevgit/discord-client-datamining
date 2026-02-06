@@ -1,22 +1,36 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var2 = exports;
-    var0 = global;
-    var4 = var0.Object;
-    var3 = var4.defineProperty;
-    var1 = {};
-    var0 = true;
-    var1.value = var0;
-    var0 = '__esModule';
-    var0 = var3.bind(var4)(var2, var0, var1);
+    var0 = module;
+    var1 = function arg0() {
+        _fun48290: for (var _fun48290_ip = 0;;) switch (_fun48290_ip) {
+            case 0:
+                var2 = arg0;
+                if (!var2) {
+                    _fun48290_ip = 18;
+                    continue _fun48290
+                }
+            case 6:
+                var1 = var2.__esModule;
+                var0 = var2;
+                if (var1) {
+                    _fun48290_ip = 27;
+                    continue _fun48290
+                }
+            case 18:
+                var1 = {};
+                var1.default = var2;
+                var0 = var1;
+            case 27:
+                return var0;
+        }
+    };
+    var0.exports = var1;
+    var2 = var0.exports;
+    var1 = true;
+    var2.__esModule = var1;
+    var1 = var0.exports;
+    var0 = var0.exports;
+    var1.default = var0;
     var0 = undefined;
-    var2.default = var0;
-    var3 = dependencyMap;
-    var1 = 0;
-    var3 = var3[var1];
-    var1 = require;
-    var1 = var1.bind(var0)(var3);
-    var1 = var1.default;
-    var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5434]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

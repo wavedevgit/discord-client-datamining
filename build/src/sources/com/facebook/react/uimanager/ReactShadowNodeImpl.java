@@ -57,7 +57,7 @@ public class ReactShadowNodeImpl implements ReactShadowNode<ReactShadowNodeImpl>
             YogaNode acquire = YogaNodePool.get().acquire();
             acquire = acquire == null ? com.facebook.yoga.i.a(sYogaConfig) : acquire;
             this.mYogaNode = acquire;
-            acquire.C(this);
+            acquire.D(this);
             Arrays.fill(fArr, Float.NaN);
             return;
         }
@@ -307,7 +307,7 @@ public class ReactShadowNodeImpl implements ReactShadowNode<ReactShadowNodeImpl>
     public void dispose() {
         YogaNode yogaNode = this.mYogaNode;
         if (yogaNode != null) {
-            yogaNode.u();
+            yogaNode.v();
             YogaNodePool.get().release(this.mYogaNode);
         }
     }
@@ -345,7 +345,7 @@ public class ReactShadowNodeImpl implements ReactShadowNode<ReactShadowNodeImpl>
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
     public final float getLayoutHeight() {
-        return this.mYogaNode.g();
+        return this.mYogaNode.h();
     }
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
@@ -463,7 +463,7 @@ public class ReactShadowNodeImpl implements ReactShadowNode<ReactShadowNodeImpl>
     @Override // com.facebook.react.uimanager.ReactShadowNode
     public final boolean hasNewLayout() {
         YogaNode yogaNode = this.mYogaNode;
-        if (yogaNode != null && yogaNode.p()) {
+        if (yogaNode != null && yogaNode.o()) {
             return true;
         }
         return false;
@@ -525,7 +525,7 @@ public class ReactShadowNodeImpl implements ReactShadowNode<ReactShadowNodeImpl>
     public final void markLayoutSeen() {
         YogaNode yogaNode = this.mYogaNode;
         if (yogaNode != null) {
-            yogaNode.s();
+            yogaNode.t();
         }
     }
 
@@ -579,7 +579,7 @@ public class ReactShadowNodeImpl implements ReactShadowNode<ReactShadowNodeImpl>
         int i10 = 0;
         for (int childCount = getChildCount() - 1; childCount >= 0; childCount--) {
             if (this.mYogaNode != null && !isYogaLeafNode()) {
-                this.mYogaNode.t(childCount);
+                this.mYogaNode.u(childCount);
             }
             ReactShadowNodeImpl childAt = getChildAt(childCount);
             childAt.mParent = null;
@@ -594,17 +594,17 @@ public class ReactShadowNodeImpl implements ReactShadowNode<ReactShadowNodeImpl>
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
     public void setAlignContent(YogaAlign yogaAlign) {
-        this.mYogaNode.v(yogaAlign);
-    }
-
-    @Override // com.facebook.react.uimanager.ReactShadowNode
-    public void setAlignItems(YogaAlign yogaAlign) {
         this.mYogaNode.w(yogaAlign);
     }
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
-    public void setAlignSelf(YogaAlign yogaAlign) {
+    public void setAlignItems(YogaAlign yogaAlign) {
         this.mYogaNode.x(yogaAlign);
+    }
+
+    @Override // com.facebook.react.uimanager.ReactShadowNode
+    public void setAlignSelf(YogaAlign yogaAlign) {
+        this.mYogaNode.y(yogaAlign);
     }
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
@@ -635,37 +635,37 @@ public class ReactShadowNodeImpl implements ReactShadowNode<ReactShadowNodeImpl>
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
     public void setDisplay(YogaDisplay yogaDisplay) {
-        this.mYogaNode.E(yogaDisplay);
+        this.mYogaNode.F(yogaDisplay);
     }
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
     public void setFlex(float f10) {
-        this.mYogaNode.F(f10);
-    }
-
-    @Override // com.facebook.react.uimanager.ReactShadowNode
-    public void setFlexBasis(float f10) {
         this.mYogaNode.G(f10);
     }
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
+    public void setFlexBasis(float f10) {
+        this.mYogaNode.H(f10);
+    }
+
+    @Override // com.facebook.react.uimanager.ReactShadowNode
     public void setFlexBasisAuto() {
-        this.mYogaNode.H();
+        this.mYogaNode.I();
     }
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
     public void setFlexBasisPercent(float f10) {
-        this.mYogaNode.I(f10);
+        this.mYogaNode.J(f10);
     }
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
     public void setFlexDirection(YogaFlexDirection yogaFlexDirection) {
-        this.mYogaNode.J(yogaFlexDirection);
+        this.mYogaNode.K(yogaFlexDirection);
     }
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
     public void setFlexGrow(float f10) {
-        this.mYogaNode.K(f10);
+        this.mYogaNode.L(f10);
     }
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
@@ -714,12 +714,12 @@ public class ReactShadowNodeImpl implements ReactShadowNode<ReactShadowNodeImpl>
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
     public void setJustifyContent(YogaJustify yogaJustify) {
-        this.mYogaNode.S(yogaJustify);
+        this.mYogaNode.T(yogaJustify);
     }
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
     public void setLayoutDirection(YogaDirection yogaDirection) {
-        this.mYogaNode.D(yogaDirection);
+        this.mYogaNode.E(yogaDirection);
     }
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
@@ -728,12 +728,12 @@ public class ReactShadowNodeImpl implements ReactShadowNode<ReactShadowNodeImpl>
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
     public void setMargin(int i10, float f10) {
-        this.mYogaNode.T(com.facebook.yoga.e.d(i10), f10);
+        this.mYogaNode.U(com.facebook.yoga.e.d(i10), f10);
     }
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
     public void setMarginAuto(int i10) {
-        this.mYogaNode.U(com.facebook.yoga.e.d(i10));
+        this.mYogaNode.V(com.facebook.yoga.e.d(i10));
     }
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
@@ -766,7 +766,7 @@ public class ReactShadowNodeImpl implements ReactShadowNode<ReactShadowNodeImpl>
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
     /* renamed from: setPaddingPercent */
-    public void mo912setPaddingPercent(int i10, float f10) {
+    public void mo910setPaddingPercent(int i10, float f10) {
         this.mPadding[i10] = f10;
         this.mPaddingIsPercent[i10] = !com.facebook.yoga.d.a(f10);
         updatePadding();
@@ -819,17 +819,17 @@ public class ReactShadowNodeImpl implements ReactShadowNode<ReactShadowNodeImpl>
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
     public void setStyleHeight(float f10) {
-        this.mYogaNode.P(f10);
+        this.mYogaNode.Q(f10);
     }
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
     public void setStyleHeightAuto() {
-        this.mYogaNode.Q();
+        this.mYogaNode.R();
     }
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
     public void setStyleHeightPercent(float f10) {
-        this.mYogaNode.R(f10);
+        this.mYogaNode.S(f10);
     }
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
@@ -1019,7 +1019,7 @@ public class ReactShadowNodeImpl implements ReactShadowNode<ReactShadowNodeImpl>
             ReactShadowNodeImpl remove = arrayList.remove(i10);
             remove.mParent = null;
             if (this.mYogaNode != null && !isYogaLeafNode()) {
-                this.mYogaNode.t(i10);
+                this.mYogaNode.u(i10);
             }
             markUpdated();
             int totalNativeNodeContributionToParent = remove.getTotalNativeNodeContributionToParent();

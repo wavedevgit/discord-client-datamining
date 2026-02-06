@@ -21,7 +21,7 @@ final class i2 extends k2 {
         int size2 = x1Var2.size();
         if (size > 0 && size2 > 0) {
             if (!x1Var.a()) {
-                x1Var = x1Var.F(size2 + size);
+                x1Var = x1Var.J(size2 + size);
             }
             x1Var.addAll(x1Var2);
         }

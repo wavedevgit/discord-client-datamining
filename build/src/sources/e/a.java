@@ -9,16 +9,16 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a extends ActivityResultContract {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final C0289a f21274a = new C0289a(null);
+    public static final C0281a f21207a = new C0281a(null);
 
     /* renamed from: e.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static final class C0289a {
-        public /* synthetic */ C0289a(DefaultConstructorMarker defaultConstructorMarker) {
+    public static final class C0281a {
+        public /* synthetic */ C0281a(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
 
-        private C0289a() {
+        private C0281a() {
         }
     }
 

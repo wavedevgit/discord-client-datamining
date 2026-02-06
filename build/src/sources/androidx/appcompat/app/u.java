@@ -10,54 +10,54 @@ import java.util.Calendar;
 class u {
 
     /* renamed from: d  reason: collision with root package name */
-    private static u f1226d;
+    private static u f1555d;
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f1227a;
+    private final Context f1556a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final LocationManager f1228b;
+    private final LocationManager f1557b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final a f1229c = new a();
+    private final a f1558c = new a();
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        boolean f1230a;
+        boolean f1559a;
 
         /* renamed from: b  reason: collision with root package name */
-        long f1231b;
+        long f1560b;
 
         a() {
         }
     }
 
     u(Context context, LocationManager locationManager) {
-        this.f1227a = context;
-        this.f1228b = locationManager;
+        this.f1556a = context;
+        this.f1557b = locationManager;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static u a(Context context) {
-        if (f1226d == null) {
+        if (f1555d == null) {
             Context applicationContext = context.getApplicationContext();
-            f1226d = new u(applicationContext, (LocationManager) applicationContext.getSystemService("location"));
+            f1555d = new u(applicationContext, (LocationManager) applicationContext.getSystemService("location"));
         }
-        return f1226d;
+        return f1555d;
     }
 
     private Location b() {
         Location location;
         Location location2 = null;
-        if (androidx.core.content.f.b(this.f1227a, "android.permission.ACCESS_COARSE_LOCATION") == 0) {
+        if (androidx.core.content.f.b(this.f1556a, "android.permission.ACCESS_COARSE_LOCATION") == 0) {
             location = c("network");
         } else {
             location = null;
         }
-        if (androidx.core.content.f.b(this.f1227a, "android.permission.ACCESS_FINE_LOCATION") == 0) {
+        if (androidx.core.content.f.b(this.f1556a, "android.permission.ACCESS_FINE_LOCATION") == 0) {
             location2 = c("gps");
         }
         if (location2 != null && location != null) {
@@ -74,8 +74,8 @@ class u {
 
     private Location c(String str) {
         try {
-            if (this.f1228b.isProviderEnabled(str)) {
-                return this.f1228b.getLastKnownLocation(str);
+            if (this.f1557b.isProviderEnabled(str)) {
+                return this.f1557b.getLastKnownLocation(str);
             }
             return null;
         } catch (Exception e10) {
@@ -85,7 +85,7 @@ class u {
     }
 
     private boolean e() {
-        if (this.f1229c.f1231b > System.currentTimeMillis()) {
+        if (this.f1558c.f1560b > System.currentTimeMillis()) {
             return true;
         }
         return false;
@@ -93,20 +93,20 @@ class u {
 
     private void f(Location location) {
         long j10;
-        a aVar = this.f1229c;
+        a aVar = this.f1558c;
         long currentTimeMillis = System.currentTimeMillis();
         t b10 = t.b();
         b10.a(currentTimeMillis - 86400000, location.getLatitude(), location.getLongitude());
         b10.a(currentTimeMillis, location.getLatitude(), location.getLongitude());
         boolean z10 = true;
-        if (b10.f1225c != 1) {
+        if (b10.f1554c != 1) {
             z10 = false;
         }
         boolean z11 = z10;
-        long j11 = b10.f1224b;
-        long j12 = b10.f1223a;
+        long j11 = b10.f1553b;
+        long j12 = b10.f1552a;
         b10.a(currentTimeMillis + 86400000, location.getLatitude(), location.getLongitude());
-        long j13 = b10.f1224b;
+        long j13 = b10.f1553b;
         if (j11 != -1 && j12 != -1) {
             if (currentTimeMillis > j12) {
                 j11 = j13;
@@ -117,20 +117,20 @@ class u {
         } else {
             j10 = currentTimeMillis + 43200000;
         }
-        aVar.f1230a = z11;
-        aVar.f1231b = j10;
+        aVar.f1559a = z11;
+        aVar.f1560b = j10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean d() {
-        a aVar = this.f1229c;
+        a aVar = this.f1558c;
         if (e()) {
-            return aVar.f1230a;
+            return aVar.f1559a;
         }
         Location b10 = b();
         if (b10 != null) {
             f(b10);
-            return aVar.f1230a;
+            return aVar.f1559a;
         }
         Log.i("TwilightManager", "Could not get last known location. This is probably because the app does not have any location permissions. Falling back to hardcoded sunrise/sunset values.");
         int i10 = Calendar.getInstance().get(11);

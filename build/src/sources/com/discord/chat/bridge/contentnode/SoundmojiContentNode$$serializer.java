@@ -5,10 +5,10 @@ import com.discord.primitives.ChannelId$$serializer;
 import com.discord.primitives.MessageId;
 import com.discord.primitives.MessageId$$serializer;
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
-import dt.b0;
-import gt.a2;
-import gt.h0;
-import gt.n2;
+import ft.b0;
+import jt.a2;
+import jt.h0;
+import jt.n2;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.serialization.KSerializer;
@@ -17,8 +17,8 @@ import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.encoding.Decoder;
 import kotlinx.serialization.encoding.Encoder;
 import org.jetbrains.annotations.NotNull;
-@or.c
-@Metadata(d1 = {"\u0000:\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u001d\u0010\t\u001a\u00020\b2\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0007\u001a\u00020\u0002¢\u0006\u0004\b\t\u0010\nJ\u0015\u0010\r\u001a\u00020\u00022\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b\r\u0010\u000eJ\u0017\u0010\u0011\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00100\u000f¢\u0006\u0004\b\u0011\u0010\u0012R\u0017\u0010\u0014\u001a\u00020\u00138\u0006¢\u0006\f\n\u0004\b\u0014\u0010\u0015\u001a\u0004\b\u0016\u0010\u0017¨\u0006\u0018"}, d2 = {"com/discord/chat/bridge/contentnode/SoundmojiContentNode.$serializer", "Lgt/h0;", "Lcom/discord/chat/bridge/contentnode/SoundmojiContentNode;", "<init>", "()V", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "(Lkotlinx/serialization/encoding/Encoder;Lcom/discord/chat/bridge/contentnode/SoundmojiContentNode;)V", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "(Lkotlinx/serialization/encoding/Decoder;)Lcom/discord/chat/bridge/contentnode/SoundmojiContentNode;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+@Metadata(d1 = {"\u0000:\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u001d\u0010\t\u001a\u00020\b2\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0007\u001a\u00020\u0002¢\u0006\u0004\b\t\u0010\nJ\u0015\u0010\r\u001a\u00020\u00022\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b\r\u0010\u000eJ\u0017\u0010\u0011\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00100\u000f¢\u0006\u0004\b\u0011\u0010\u0012R\u0017\u0010\u0014\u001a\u00020\u00138\u0006¢\u0006\f\n\u0004\b\u0014\u0010\u0015\u001a\u0004\b\u0016\u0010\u0017¨\u0006\u0018"}, d2 = {"com/discord/chat/bridge/contentnode/SoundmojiContentNode.$serializer", "Ljt/h0;", "Lcom/discord/chat/bridge/contentnode/SoundmojiContentNode;", "<init>", "()V", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "(Lkotlinx/serialization/encoding/Encoder;Lcom/discord/chat/bridge/contentnode/SoundmojiContentNode;)V", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "(Lkotlinx/serialization/encoding/Decoder;)Lcom/discord/chat/bridge/contentnode/SoundmojiContentNode;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+@qr.c
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public /* synthetic */ class SoundmojiContentNode$$serializer implements h0 {
     @NotNull
@@ -44,11 +44,11 @@ public /* synthetic */ class SoundmojiContentNode$$serializer implements h0 {
     private SoundmojiContentNode$$serializer() {
     }
 
-    @Override // gt.h0
+    @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f25302a;
-        return new KSerializer[]{n2Var, ChannelId$$serializer.INSTANCE, MessageId$$serializer.INSTANCE, et.a.u(n2Var), et.a.u(n2Var), gt.h.f25266a, et.a.u(n2Var), et.a.u(n2Var)};
+        n2 n2Var = n2.f31041a;
+        return new KSerializer[]{n2Var, ChannelId$$serializer.INSTANCE, MessageId$$serializer.INSTANCE, gt.a.u(n2Var), gt.a.u(n2Var), jt.h.f31005a, gt.a.u(n2Var), gt.a.u(n2Var)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -74,15 +74,15 @@ public /* synthetic */ class SoundmojiContentNode$$serializer implements h0 {
             str = b10.m(serialDescriptor, 0);
             ChannelId channelId2 = (ChannelId) b10.y(serialDescriptor, 1, ChannelId$$serializer.INSTANCE, null);
             MessageId messageId = (MessageId) b10.y(serialDescriptor, 2, MessageId$$serializer.INSTANCE, null);
-            String m1094unboximpl = messageId != null ? messageId.m1094unboximpl() : null;
-            n2 n2Var = n2.f25302a;
+            String m1092unboximpl = messageId != null ? messageId.m1092unboximpl() : null;
+            n2 n2Var = n2.f31041a;
             boolean C = b10.C(serialDescriptor, 5);
             str3 = (String) b10.n(serialDescriptor, 7, n2Var, null);
             str4 = (String) b10.n(serialDescriptor, 6, n2Var, null);
             z10 = C;
             str5 = (String) b10.n(serialDescriptor, 3, n2Var, null);
             str2 = (String) b10.n(serialDescriptor, 4, n2Var, null);
-            str6 = m1094unboximpl;
+            str6 = m1092unboximpl;
             channelId = channelId2;
             i10 = 255;
         } else {
@@ -117,25 +117,25 @@ public /* synthetic */ class SoundmojiContentNode$$serializer implements h0 {
                         i12 = 6;
                     case 2:
                         c10 = 2;
-                        MessageId messageId2 = (MessageId) b10.y(serialDescriptor, 2, MessageId$$serializer.INSTANCE, str11 != null ? MessageId.m1085boximpl(str11) : null);
-                        str11 = messageId2 != null ? messageId2.m1094unboximpl() : null;
+                        MessageId messageId2 = (MessageId) b10.y(serialDescriptor, 2, MessageId$$serializer.INSTANCE, str11 != null ? MessageId.m1083boximpl(str11) : null);
+                        str11 = messageId2 != null ? messageId2.m1092unboximpl() : null;
                         i13 |= 4;
                         i11 = 7;
                         i12 = 6;
                     case 3:
-                        str10 = (String) b10.n(serialDescriptor, 3, n2.f25302a, str10);
+                        str10 = (String) b10.n(serialDescriptor, 3, n2.f31041a, str10);
                         i13 |= 8;
                     case 4:
-                        str7 = (String) b10.n(serialDescriptor, 4, n2.f25302a, str7);
+                        str7 = (String) b10.n(serialDescriptor, 4, n2.f31041a, str7);
                         i13 |= 16;
                     case 5:
                         z12 = b10.C(serialDescriptor, 5);
                         i13 |= 32;
                     case 6:
-                        str9 = (String) b10.n(serialDescriptor, i12, n2.f25302a, str9);
+                        str9 = (String) b10.n(serialDescriptor, i12, n2.f31041a, str9);
                         i13 |= 64;
                     case 7:
-                        str8 = (String) b10.n(serialDescriptor, i11, n2.f25302a, str8);
+                        str8 = (String) b10.n(serialDescriptor, i11, n2.f31041a, str8);
                         i13 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                     default:
                         throw new b0(o10);
@@ -155,13 +155,13 @@ public /* synthetic */ class SoundmojiContentNode$$serializer implements h0 {
         return new SoundmojiContentNode(i10, str12, channelId, str6, str5, str2, z10, str4, str3, null, null);
     }
 
-    @Override // kotlinx.serialization.KSerializer, dt.o, kotlinx.serialization.DeserializationStrategy
+    @Override // kotlinx.serialization.KSerializer, ft.o, kotlinx.serialization.DeserializationStrategy
     @NotNull
     public final SerialDescriptor getDescriptor() {
         return descriptor;
     }
 
-    @Override // dt.o
+    @Override // ft.o
     public final void serialize(@NotNull Encoder encoder, @NotNull SoundmojiContentNode value) {
         Intrinsics.checkNotNullParameter(encoder, "encoder");
         Intrinsics.checkNotNullParameter(value, "value");
@@ -171,7 +171,7 @@ public /* synthetic */ class SoundmojiContentNode$$serializer implements h0 {
         b10.c(serialDescriptor);
     }
 
-    @Override // gt.h0
+    @Override // jt.h0
     @NotNull
     public KSerializer[] typeParametersSerializers() {
         return h0.a.a(this);

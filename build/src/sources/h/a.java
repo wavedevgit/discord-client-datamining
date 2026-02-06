@@ -11,18 +11,18 @@ import android.graphics.drawable.Drawable;
 public abstract class a extends Drawable implements Drawable.Callback {
 
     /* renamed from: d  reason: collision with root package name */
-    private Drawable f25523d;
+    private Drawable f25651d;
 
     public a(Drawable drawable) {
         a(drawable);
     }
 
     public void a(Drawable drawable) {
-        Drawable drawable2 = this.f25523d;
+        Drawable drawable2 = this.f25651d;
         if (drawable2 != null) {
             drawable2.setCallback(null);
         }
-        this.f25523d = drawable;
+        this.f25651d = drawable;
         if (drawable != null) {
             drawable.setCallback(this);
         }
@@ -30,57 +30,57 @@ public abstract class a extends Drawable implements Drawable.Callback {
 
     @Override // android.graphics.drawable.Drawable
     public void draw(Canvas canvas) {
-        this.f25523d.draw(canvas);
+        this.f25651d.draw(canvas);
     }
 
     @Override // android.graphics.drawable.Drawable
     public int getChangingConfigurations() {
-        return this.f25523d.getChangingConfigurations();
+        return this.f25651d.getChangingConfigurations();
     }
 
     @Override // android.graphics.drawable.Drawable
     public Drawable getCurrent() {
-        return this.f25523d.getCurrent();
+        return this.f25651d.getCurrent();
     }
 
     @Override // android.graphics.drawable.Drawable
     public int getIntrinsicHeight() {
-        return this.f25523d.getIntrinsicHeight();
+        return this.f25651d.getIntrinsicHeight();
     }
 
     @Override // android.graphics.drawable.Drawable
     public int getIntrinsicWidth() {
-        return this.f25523d.getIntrinsicWidth();
+        return this.f25651d.getIntrinsicWidth();
     }
 
     @Override // android.graphics.drawable.Drawable
     public int getMinimumHeight() {
-        return this.f25523d.getMinimumHeight();
+        return this.f25651d.getMinimumHeight();
     }
 
     @Override // android.graphics.drawable.Drawable
     public int getMinimumWidth() {
-        return this.f25523d.getMinimumWidth();
+        return this.f25651d.getMinimumWidth();
     }
 
     @Override // android.graphics.drawable.Drawable
     public int getOpacity() {
-        return this.f25523d.getOpacity();
+        return this.f25651d.getOpacity();
     }
 
     @Override // android.graphics.drawable.Drawable
     public boolean getPadding(Rect rect) {
-        return this.f25523d.getPadding(rect);
+        return this.f25651d.getPadding(rect);
     }
 
     @Override // android.graphics.drawable.Drawable
     public int[] getState() {
-        return this.f25523d.getState();
+        return this.f25651d.getState();
     }
 
     @Override // android.graphics.drawable.Drawable
     public Region getTransparentRegion() {
-        return this.f25523d.getTransparentRegion();
+        return this.f25651d.getTransparentRegion();
     }
 
     @Override // android.graphics.drawable.Drawable.Callback
@@ -90,27 +90,27 @@ public abstract class a extends Drawable implements Drawable.Callback {
 
     @Override // android.graphics.drawable.Drawable
     public boolean isAutoMirrored() {
-        return s1.a.h(this.f25523d);
+        return s1.a.h(this.f25651d);
     }
 
     @Override // android.graphics.drawable.Drawable
     public boolean isStateful() {
-        return this.f25523d.isStateful();
+        return this.f25651d.isStateful();
     }
 
     @Override // android.graphics.drawable.Drawable
     public void jumpToCurrentState() {
-        this.f25523d.jumpToCurrentState();
+        this.f25651d.jumpToCurrentState();
     }
 
     @Override // android.graphics.drawable.Drawable
     protected void onBoundsChange(Rect rect) {
-        this.f25523d.setBounds(rect);
+        this.f25651d.setBounds(rect);
     }
 
     @Override // android.graphics.drawable.Drawable
     protected boolean onLevelChange(int i10) {
-        return this.f25523d.setLevel(i10);
+        return this.f25651d.setLevel(i10);
     }
 
     @Override // android.graphics.drawable.Drawable.Callback
@@ -120,67 +120,67 @@ public abstract class a extends Drawable implements Drawable.Callback {
 
     @Override // android.graphics.drawable.Drawable
     public void setAlpha(int i10) {
-        this.f25523d.setAlpha(i10);
+        this.f25651d.setAlpha(i10);
     }
 
     @Override // android.graphics.drawable.Drawable
     public void setAutoMirrored(boolean z10) {
-        s1.a.j(this.f25523d, z10);
+        s1.a.j(this.f25651d, z10);
     }
 
     @Override // android.graphics.drawable.Drawable
     public void setChangingConfigurations(int i10) {
-        this.f25523d.setChangingConfigurations(i10);
+        this.f25651d.setChangingConfigurations(i10);
     }
 
     @Override // android.graphics.drawable.Drawable
     public void setColorFilter(ColorFilter colorFilter) {
-        this.f25523d.setColorFilter(colorFilter);
+        this.f25651d.setColorFilter(colorFilter);
     }
 
     @Override // android.graphics.drawable.Drawable
     public void setDither(boolean z10) {
-        this.f25523d.setDither(z10);
+        this.f25651d.setDither(z10);
     }
 
     @Override // android.graphics.drawable.Drawable
     public void setFilterBitmap(boolean z10) {
-        this.f25523d.setFilterBitmap(z10);
+        this.f25651d.setFilterBitmap(z10);
     }
 
     @Override // android.graphics.drawable.Drawable
     public void setHotspot(float f10, float f11) {
-        s1.a.k(this.f25523d, f10, f11);
+        s1.a.k(this.f25651d, f10, f11);
     }
 
     @Override // android.graphics.drawable.Drawable
     public void setHotspotBounds(int i10, int i11, int i12, int i13) {
-        s1.a.l(this.f25523d, i10, i11, i12, i13);
+        s1.a.l(this.f25651d, i10, i11, i12, i13);
     }
 
     @Override // android.graphics.drawable.Drawable
     public boolean setState(int[] iArr) {
-        return this.f25523d.setState(iArr);
+        return this.f25651d.setState(iArr);
     }
 
     @Override // android.graphics.drawable.Drawable
     public void setTint(int i10) {
-        s1.a.n(this.f25523d, i10);
+        s1.a.n(this.f25651d, i10);
     }
 
     @Override // android.graphics.drawable.Drawable
     public void setTintList(ColorStateList colorStateList) {
-        s1.a.o(this.f25523d, colorStateList);
+        s1.a.o(this.f25651d, colorStateList);
     }
 
     @Override // android.graphics.drawable.Drawable
     public void setTintMode(PorterDuff.Mode mode) {
-        s1.a.p(this.f25523d, mode);
+        s1.a.p(this.f25651d, mode);
     }
 
     @Override // android.graphics.drawable.Drawable
     public boolean setVisible(boolean z10, boolean z11) {
-        if (!super.setVisible(z10, z11) && !this.f25523d.setVisible(z10, z11)) {
+        if (!super.setVisible(z10, z11) && !this.f25651d.setVisible(z10, z11)) {
             return false;
         }
         return true;

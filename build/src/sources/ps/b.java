@@ -1,116 +1,57 @@
 package ps;
 
-import kotlin.coroutines.Continuation;
+import android.os.Build;
+import java.lang.Thread;
+import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
 import kotlin.coroutines.CoroutineContext;
-import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.DefaultConstructorMarker;
-/* JADX INFO: Access modifiers changed from: package-private */
+import os.z;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class b extends e {
+public final class b extends kotlin.coroutines.a implements z {
+    private volatile Object _preHandler;
 
-    /* renamed from: p  reason: collision with root package name */
-    private final Function2 f46318p;
+    public b() {
+        super(z.f43544j);
+        this._preHandler = this;
+    }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a extends kotlin.coroutines.jvm.internal.d {
-
-        /* renamed from: d  reason: collision with root package name */
-        Object f46319d;
-
-        /* renamed from: e  reason: collision with root package name */
-        /* synthetic */ Object f46320e;
-
-        /* renamed from: o  reason: collision with root package name */
-        int f46322o;
-
-        a(Continuation continuation) {
-            super(continuation);
+    private final Method D1() {
+        Object obj = this._preHandler;
+        if (obj != this) {
+            return (Method) obj;
         }
-
-        @Override // kotlin.coroutines.jvm.internal.a
-        public final Object invokeSuspend(Object obj) {
-            this.f46320e = obj;
-            this.f46322o |= Integer.MIN_VALUE;
-            return b.this.e(null, this);
+        Method method = null;
+        try {
+            Method declaredMethod = Thread.class.getDeclaredMethod("getUncaughtExceptionPreHandler", null);
+            if (Modifier.isPublic(declaredMethod.getModifiers())) {
+                if (Modifier.isStatic(declaredMethod.getModifiers())) {
+                    method = declaredMethod;
+                }
+            }
+        } catch (Throwable unused) {
         }
+        this._preHandler = method;
+        return method;
     }
 
-    public /* synthetic */ b(Function2 function2, CoroutineContext coroutineContext, int i10, os.a aVar, int i11, DefaultConstructorMarker defaultConstructorMarker) {
-        this(function2, (i11 & 2) != 0 ? kotlin.coroutines.e.f32062d : coroutineContext, (i11 & 4) != 0 ? -2 : i10, (i11 & 8) != 0 ? os.a.f44350d : aVar);
-    }
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    /* JADX WARN: Removed duplicated region for block: B:10:0x0023  */
-    /* JADX WARN: Removed duplicated region for block: B:14:0x0035  */
-    /* JADX WARN: Removed duplicated region for block: B:19:0x0049  */
-    /* JADX WARN: Removed duplicated region for block: B:21:0x004c  */
-    @Override // ps.e, qs.e
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    public java.lang.Object e(kotlinx.coroutines.channels.ProducerScope r5, kotlin.coroutines.Continuation r6) {
-        /*
-            r4 = this;
-            boolean r0 = r6 instanceof ps.b.a
-            if (r0 == 0) goto L13
-            r0 = r6
-            ps.b$a r0 = (ps.b.a) r0
-            int r1 = r0.f46322o
-            r2 = -2147483648(0xffffffff80000000, float:-0.0)
-            r3 = r1 & r2
-            if (r3 == 0) goto L13
-            int r1 = r1 - r2
-            r0.f46322o = r1
-            goto L18
-        L13:
-            ps.b$a r0 = new ps.b$a
-            r0.<init>(r6)
-        L18:
-            java.lang.Object r6 = r0.f46320e
-            java.lang.Object r1 = ur.b.f()
-            int r2 = r0.f46322o
-            r3 = 1
-            if (r2 == 0) goto L35
-            if (r2 != r3) goto L2d
-            java.lang.Object r5 = r0.f46319d
-            kotlinx.coroutines.channels.ProducerScope r5 = (kotlinx.coroutines.channels.ProducerScope) r5
-            kotlin.c.b(r6)
-            goto L43
-        L2d:
-            java.lang.IllegalStateException r5 = new java.lang.IllegalStateException
-            java.lang.String r6 = "call to 'resume' before 'invoke' with coroutine"
-            r5.<init>(r6)
-            throw r5
-        L35:
-            kotlin.c.b(r6)
-            r0.f46319d = r5
-            r0.f46322o = r3
-            java.lang.Object r6 = super.e(r5, r0)
-            if (r6 != r1) goto L43
-            return r1
-        L43:
-            boolean r5 = r5.w()
-            if (r5 == 0) goto L4c
-            kotlin.Unit r5 = kotlin.Unit.f31988a
-            return r5
-        L4c:
-            java.lang.IllegalStateException r5 = new java.lang.IllegalStateException
-            java.lang.String r6 = "'awaitClose { yourCallbackOrListener.cancel() }' should be used in the end of callbackFlow block.\nOtherwise, a callback/listener may leak in case of external cancellation.\nSee callbackFlow API documentation for the details."
-            r5.<init>(r6)
-            throw r5
-        */
-        throw new UnsupportedOperationException("Method not decompiled: ps.b.e(kotlinx.coroutines.channels.ProducerScope, kotlin.coroutines.Continuation):java.lang.Object");
-    }
-
-    @Override // qs.e
-    protected qs.e g(CoroutineContext coroutineContext, int i10, os.a aVar) {
-        return new b(this.f46318p, coroutineContext, i10, aVar);
-    }
-
-    public b(Function2 function2, CoroutineContext coroutineContext, int i10, os.a aVar) {
-        super(function2, coroutineContext, i10, aVar);
-        this.f46318p = function2;
+    @Override // os.z
+    public void V0(CoroutineContext coroutineContext, Throwable th2) {
+        Object obj;
+        int i10 = Build.VERSION.SDK_INT;
+        if (26 <= i10 && i10 < 28) {
+            Method D1 = D1();
+            Thread.UncaughtExceptionHandler uncaughtExceptionHandler = null;
+            if (D1 != null) {
+                obj = D1.invoke(null, null);
+            } else {
+                obj = null;
+            }
+            if (obj instanceof Thread.UncaughtExceptionHandler) {
+                uncaughtExceptionHandler = (Thread.UncaughtExceptionHandler) obj;
+            }
+            if (uncaughtExceptionHandler != null) {
+                uncaughtExceptionHandler.uncaughtException(Thread.currentThread(), th2);
+            }
+        }
     }
 }

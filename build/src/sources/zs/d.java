@@ -1,26 +1,73 @@
 package zs;
 
-import java.util.ArrayList;
-import java.util.List;
 import kotlin.jvm.internal.Intrinsics;
+import zs.c;
+import zs.f;
+import zs.o;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class d {
+public interface d extends c, f, o.a, o.c {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final List f56232a = new ArrayList();
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a {
+        public static void a(d dVar, bt.o structure) {
+            Intrinsics.checkNotNullParameter(structure, "structure");
+            dVar.l(structure);
+        }
 
-    public final void a(o format) {
-        Intrinsics.checkNotNullParameter(format, "format");
-        if (format instanceof s) {
-            this.f56232a.add(format);
-        } else if (format instanceof h) {
-            for (s sVar : ((h) format).c()) {
-                this.f56232a.add(sVar);
-            }
+        public static void b(d dVar, bt.o structure) {
+            Intrinsics.checkNotNullParameter(structure, "structure");
+            dVar.l(structure);
+        }
+
+        public static void c(d dVar, n format) {
+            Intrinsics.checkNotNullParameter(format, "format");
+            c.a.a(dVar, format);
+        }
+
+        public static void d(d dVar, h0 padding) {
+            Intrinsics.checkNotNullParameter(padding, "padding");
+            c.a.b(dVar, padding);
+        }
+
+        public static void e(d dVar, s names) {
+            Intrinsics.checkNotNullParameter(names, "names");
+            c.a.c(dVar, names);
+        }
+
+        public static void f(d dVar, h0 padding) {
+            Intrinsics.checkNotNullParameter(padding, "padding");
+            f.a.a(dVar, padding);
+        }
+
+        public static void g(d dVar, h0 padding) {
+            Intrinsics.checkNotNullParameter(padding, "padding");
+            f.a.b(dVar, padding);
+        }
+
+        public static void h(d dVar, f0 names) {
+            Intrinsics.checkNotNullParameter(names, "names");
+            c.a.d(dVar, names);
+        }
+
+        public static void i(d dVar, h0 padding) {
+            Intrinsics.checkNotNullParameter(padding, "padding");
+            c.a.e(dVar, padding);
+        }
+
+        public static void j(d dVar, h0 padding) {
+            Intrinsics.checkNotNullParameter(padding, "padding");
+            f.a.c(dVar, padding);
+        }
+
+        public static void k(d dVar, int i10, int i11) {
+            f.a.d(dVar, i10, i11);
+        }
+
+        public static void l(d dVar, h0 padding) {
+            Intrinsics.checkNotNullParameter(padding, "padding");
+            c.a.f(dVar, padding);
         }
     }
 
-    public final h b() {
-        return new h(this.f56232a);
-    }
+    void l(bt.o oVar);
 }

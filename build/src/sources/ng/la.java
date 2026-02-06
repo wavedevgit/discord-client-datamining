@@ -1,87 +1,30 @@
 package ng;
 
-import java.io.Serializable;
-import java.lang.reflect.Array;
-import java.util.AbstractCollection;
-import java.util.Arrays;
-import java.util.Collection;
+import yi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class la extends AbstractCollection implements Serializable {
+final class la implements yi.d {
 
-    /* renamed from: d  reason: collision with root package name */
-    private static final Object[] f40792d = new Object[0];
+    /* renamed from: a  reason: collision with root package name */
+    static final la f40045a = new la();
 
-    @Override // java.util.AbstractCollection, java.util.Collection
-    public final boolean add(Object obj) {
-        throw new UnsupportedOperationException();
+    static {
+        c.b a10 = yi.c.a("options");
+        l2 l2Var = new l2();
+        l2Var.a(1);
+        a10.b(l2Var.b()).a();
+        c.b a11 = yi.c.a("errorCode");
+        l2 l2Var2 = new l2();
+        l2Var2.a(2);
+        a11.b(l2Var2.b()).a();
     }
 
-    @Override // java.util.AbstractCollection, java.util.Collection
-    public final boolean addAll(Collection collection) {
-        throw new UnsupportedOperationException();
+    private la() {
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public abstract int b(Object[] objArr, int i10);
-
-    int c() {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override // java.util.AbstractCollection, java.util.Collection
-    public final void clear() {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override // java.util.AbstractCollection, java.util.Collection
-    public abstract boolean contains(Object obj);
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public int d() {
-        throw new UnsupportedOperationException();
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public Object[] e() {
-        return null;
-    }
-
-    @Override // java.util.AbstractCollection, java.util.Collection
-    public final boolean remove(Object obj) {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override // java.util.AbstractCollection, java.util.Collection
-    public final boolean removeAll(Collection collection) {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override // java.util.AbstractCollection, java.util.Collection
-    public final boolean retainAll(Collection collection) {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override // java.util.AbstractCollection, java.util.Collection
-    public final Object[] toArray() {
-        return toArray(f40792d);
-    }
-
-    @Override // java.util.AbstractCollection, java.util.Collection
-    public final Object[] toArray(Object[] objArr) {
-        objArr.getClass();
-        int size = size();
-        int length = objArr.length;
-        if (length < size) {
-            Object[] e10 = e();
-            if (e10 == null) {
-                objArr = (Object[]) Array.newInstance(objArr.getClass().getComponentType(), size);
-            } else {
-                return Arrays.copyOfRange(e10, d(), c(), objArr.getClass());
-            }
-        } else if (length > size) {
-            objArr[size] = null;
-        }
-        b(objArr, 0);
-        return objArr;
+    @Override // yi.d
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        android.support.v4.media.session.b.a(obj);
+        yi.e eVar = (yi.e) obj2;
+        throw null;
     }
 }

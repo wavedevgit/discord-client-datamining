@@ -32,7 +32,7 @@ public final class ExponentialBackoff$fail$1 extends k implements Function2<Coro
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:11:0x002d, code lost:
-        if (ms.i0.a(r4, r6) == r0) goto L14;
+        if (os.i0.a(r4, r6) == r0) goto L14;
      */
     /* JADX WARN: Code restructure failed: missing block: B:14:0x0038, code lost:
         if (r7.invoke(r6) == r0) goto L14;
@@ -48,7 +48,7 @@ public final class ExponentialBackoff$fail$1 extends k implements Function2<Coro
     public final java.lang.Object invokeSuspend(java.lang.Object r7) {
         /*
             r6 = this;
-            java.lang.Object r0 = ur.b.f()
+            java.lang.Object r0 = wr.b.f()
             int r1 = r6.label
             r2 = 2
             r3 = 1
@@ -70,7 +70,7 @@ public final class ExponentialBackoff$fail$1 extends k implements Function2<Coro
             com.discord.misc.utilities.backoff.ExponentialBackoff r7 = r6.this$0
             long r4 = com.discord.misc.utilities.backoff.ExponentialBackoff.access$getCurrentDelay$p(r7)
             r6.label = r3
-            java.lang.Object r7 = ms.i0.a(r4, r6)
+            java.lang.Object r7 = os.i0.a(r4, r6)
             if (r7 != r0) goto L30
             goto L3a
         L30:
@@ -81,7 +81,7 @@ public final class ExponentialBackoff$fail$1 extends k implements Function2<Coro
         L3a:
             return r0
         L3b:
-            kotlin.Unit r7 = kotlin.Unit.f31988a
+            kotlin.Unit r7 = kotlin.Unit.f32008a
             return r7
         */
         throw new UnsupportedOperationException("Method not decompiled: com.discord.misc.utilities.backoff.ExponentialBackoff$fail$1.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -89,6 +89,6 @@ public final class ExponentialBackoff$fail$1 extends k implements Function2<Coro
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((ExponentialBackoff$fail$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+        return ((ExponentialBackoff$fail$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
     }
 }

@@ -7,16 +7,16 @@ import kotlin.jvm.functions.Function0;
 public class d implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final DeserializedPackageFragmentImpl f34348d;
+    private final DeserializedPackageFragmentImpl f34368d;
 
     public d(DeserializedPackageFragmentImpl deserializedPackageFragmentImpl) {
-        this.f34348d = deserializedPackageFragmentImpl;
+        this.f34368d = deserializedPackageFragmentImpl;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         Collection e10;
-        e10 = DeserializedPackageFragmentImpl.e(this.f34348d);
+        e10 = DeserializedPackageFragmentImpl.e(this.f34368d);
         return e10;
     }
 }

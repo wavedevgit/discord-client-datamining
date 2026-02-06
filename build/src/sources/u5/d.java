@@ -4,11 +4,11 @@ import java.io.Closeable;
 import java.io.InputStream;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public interface d extends Closeable {
-    String G1();
+    String F1();
 
     boolean isSuccessful();
 
-    String n0();
+    String p0();
 
-    InputStream v0();
+    InputStream x0();
 }

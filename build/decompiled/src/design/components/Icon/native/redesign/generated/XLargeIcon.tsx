@@ -33,15 +33,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Icon/native/redesign/generated/XLargeIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun28245: for (var _fun28245_ip = 0;;) switch (_fun28245_ip) {
+        _fun28249: for (var _fun28249_ip = 0;;) switch (_fun28249_ip) {
             case 0:
                 var2 = arg0;
                 var5 = var2.style;
                 var6 = var2.color;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun28245_ip = 53;
-                    continue _fun28245
+                    _fun28249_ip = 53;
+                    continue _fun28249
                 }
             case 19:
                 var1 = _closure1_slot1;
@@ -83,4 +83,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.XLargeIcon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3150, 3265, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3152, 3267, 2]);

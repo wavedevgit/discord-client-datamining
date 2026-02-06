@@ -60,8 +60,8 @@ public final class EmbeddedActivityInviteView extends ConstraintLayout {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setSubtitleText_2dg2Uz0$lambda$8$lambda$7(Function2 function2, String str, LinkContentNode node) {
         Intrinsics.checkNotNullParameter(node, "node");
-        function2.invoke(MessageId.m1085boximpl(str), node);
-        return Unit.f31988a;
+        function2.invoke(MessageId.m1083boximpl(str), node);
+        return Unit.f32008a;
     }
 
     public final void setAvatarUris(@NotNull List<String> avatarUris) {
@@ -172,7 +172,7 @@ public final class EmbeddedActivityInviteView extends ConstraintLayout {
     }
 
     /* renamed from: setSubtitleText-2dg2Uz0  reason: not valid java name */
-    public final void m691setSubtitleText2dg2Uz0(@NotNull MessageMargins margins, StructurableText structurableText, @NotNull final String messageId, @NotNull final Function2<? super MessageId, ? super LinkContentNode, Unit> onTapLink, @NotNull Function1<? super LinkContentNode, Unit> onLongTapLink, @NotNull Function3 onTapChannel, @NotNull Function4 onLongPressChannel, @NotNull Function1<? super String, Unit> onTapAttachmentLink, @NotNull Function2<? super String, ? super String, Unit> onLongPressAttachmentLink, @NotNull Function4 onTapMention, @NotNull Function1<? super CommandMentionContentNode, Unit> onTapCommand, @NotNull Function1<? super CommandMentionContentNode, Unit> onLongPressCommand, @NotNull Function0<Unit> onTapSpoiler, @NotNull Function1<? super String, Unit> onTapTimestamp, @NotNull Function1<? super InlineCodeContentNode, Unit> onTapInlineCode, @NotNull Function1<? super EmojiContentNode, Unit> onTapEmoji, @NotNull Function1<? super MessageId, Unit> onTapSeeMore, @NotNull Function1<? super SoundmojiContentNode, Unit> onTapSoundmoji) {
+    public final void m689setSubtitleText2dg2Uz0(@NotNull MessageMargins margins, StructurableText structurableText, @NotNull final String messageId, @NotNull final Function2<? super MessageId, ? super LinkContentNode, Unit> onTapLink, @NotNull Function1<? super LinkContentNode, Unit> onLongTapLink, @NotNull Function3 onTapChannel, @NotNull Function4 onLongPressChannel, @NotNull Function1<? super String, Unit> onTapAttachmentLink, @NotNull Function2<? super String, ? super String, Unit> onLongPressAttachmentLink, @NotNull Function4 onTapMention, @NotNull Function1<? super CommandMentionContentNode, Unit> onTapCommand, @NotNull Function1<? super CommandMentionContentNode, Unit> onLongPressCommand, @NotNull Function0<Unit> onTapSpoiler, @NotNull Function1<? super String, Unit> onTapTimestamp, @NotNull Function1<? super InlineCodeContentNode, Unit> onTapInlineCode, @NotNull Function1<? super EmojiContentNode, Unit> onTapEmoji, @NotNull Function1<? super MessageId, Unit> onTapSeeMore, @NotNull Function1<? super SoundmojiContentNode, Unit> onTapSoundmoji) {
         boolean z10;
         int i10;
         boolean z11;
@@ -221,7 +221,7 @@ public final class EmbeddedActivityInviteView extends ConstraintLayout {
         }
         subtitleIcon.setVisibility(i11);
         if (structurableText != null) {
-            MessageContentView.m700setMessageContent4q5Jro$default(this.binding.itemSubtitle, margins, structurableText, messageId, false, false, false, false, new Function1() { // from class: com.discord.chat.presentation.message.view.t0
+            MessageContentView.m698setMessageContent4q5Jro$default(this.binding.itemSubtitle, margins, structurableText, messageId, false, false, false, false, new Function1() { // from class: com.discord.chat.presentation.message.view.t0
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
                     Unit subtitleText_2dg2Uz0$lambda$8$lambda$7;

@@ -1,54 +1,34 @@
 package ng;
+
+import yi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class kb extends qb {
+final class kb implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private String f40756a;
+    static final kb f40015a = new kb();
 
-    /* renamed from: b  reason: collision with root package name */
-    private boolean f40757b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private int f40758c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private byte f40759d;
-
-    @Override // ng.qb
-    public final qb a(boolean z10) {
-        this.f40757b = true;
-        this.f40759d = (byte) (1 | this.f40759d);
-        return this;
+    static {
+        c.b a10 = yi.c.a("errorCode");
+        l2 l2Var = new l2();
+        l2Var.a(1);
+        a10.b(l2Var.b()).a();
+        c.b a11 = yi.c.a("durationMs");
+        l2 l2Var2 = new l2();
+        l2Var2.a(2);
+        a11.b(l2Var2.b()).a();
+        c.b a12 = yi.c.a("subjectSegmenterOptions");
+        l2 l2Var3 = new l2();
+        l2Var3.a(3);
+        a12.b(l2Var3.b()).a();
     }
 
-    @Override // ng.qb
-    public final qb b(int i10) {
-        this.f40758c = 1;
-        this.f40759d = (byte) (this.f40759d | 2);
-        return this;
+    private kb() {
     }
 
-    @Override // ng.qb
-    public final rb c() {
-        String str;
-        if (this.f40759d == 3 && (str = this.f40756a) != null) {
-            return new nb(str, this.f40757b, this.f40758c, null);
-        }
-        StringBuilder sb2 = new StringBuilder();
-        if (this.f40756a == null) {
-            sb2.append(" libraryName");
-        }
-        if ((this.f40759d & 1) == 0) {
-            sb2.append(" enableFirelog");
-        }
-        if ((this.f40759d & 2) == 0) {
-            sb2.append(" firelogEventType");
-        }
-        throw new IllegalStateException("Missing required properties:".concat(sb2.toString()));
-    }
-
-    public final qb d(String str) {
-        this.f40756a = "vision-common";
-        return this;
+    @Override // yi.d
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        android.support.v4.media.session.b.a(obj);
+        yi.e eVar = (yi.e) obj2;
+        throw null;
     }
 }

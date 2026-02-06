@@ -8,53 +8,53 @@ import java.lang.reflect.InvocationTargetException;
 public class y {
 
     /* renamed from: a  reason: collision with root package name */
-    private final w f51987a;
+    private final w f52352a;
 
     /* renamed from: b  reason: collision with root package name */
-    private com.facebook.imagepipeline.memory.f f51988b;
+    private com.facebook.imagepipeline.memory.f f52353b;
 
     /* renamed from: c  reason: collision with root package name */
-    private d f51989c;
+    private d f52354c;
 
     /* renamed from: d  reason: collision with root package name */
-    private com.facebook.imagepipeline.memory.f f51990d;
+    private com.facebook.imagepipeline.memory.f f52355d;
 
     /* renamed from: e  reason: collision with root package name */
-    private com.facebook.imagepipeline.memory.d f51991e;
+    private com.facebook.imagepipeline.memory.d f52356e;
 
     /* renamed from: f  reason: collision with root package name */
-    private com.facebook.imagepipeline.memory.f f51992f;
+    private com.facebook.imagepipeline.memory.f f52357f;
 
     /* renamed from: g  reason: collision with root package name */
-    private r8.i f51993g;
+    private r8.i f52358g;
 
     /* renamed from: h  reason: collision with root package name */
-    private r8.l f51994h;
+    private r8.l f52359h;
 
     /* renamed from: i  reason: collision with root package name */
-    private r8.a f51995i;
+    private r8.a f52360i;
 
     public y(w wVar) {
-        this.f51987a = (w) o8.j.g(wVar);
+        this.f52352a = (w) o8.j.g(wVar);
     }
 
     private com.facebook.imagepipeline.memory.f a() {
-        if (this.f51988b == null) {
+        if (this.f52353b == null) {
             try {
-                this.f51988b = (com.facebook.imagepipeline.memory.f) AshmemMemoryChunkPool.class.getConstructor(r8.d.class, z.class, a0.class).newInstance(this.f51987a.i(), this.f51987a.g(), this.f51987a.h());
+                this.f52353b = (com.facebook.imagepipeline.memory.f) AshmemMemoryChunkPool.class.getConstructor(r8.d.class, z.class, a0.class).newInstance(this.f52352a.i(), this.f52352a.g(), this.f52352a.h());
             } catch (ClassNotFoundException unused) {
-                this.f51988b = null;
+                this.f52353b = null;
             } catch (IllegalAccessException unused2) {
-                this.f51988b = null;
+                this.f52353b = null;
             } catch (InstantiationException unused3) {
-                this.f51988b = null;
+                this.f52353b = null;
             } catch (NoSuchMethodException unused4) {
-                this.f51988b = null;
+                this.f52353b = null;
             } catch (InvocationTargetException unused5) {
-                this.f51988b = null;
+                this.f52353b = null;
             }
         }
-        return this.f51988b;
+        return this.f52353b;
     }
 
     private com.facebook.imagepipeline.memory.f f(int i10) {
@@ -73,109 +73,109 @@ public class y {
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
     public d b() {
         r8.d dVar;
-        if (this.f51989c == null) {
-            String e10 = this.f51987a.e();
+        if (this.f52354c == null) {
+            String e10 = this.f52352a.e();
             switch (e10.hashCode()) {
                 case -1868884870:
                     if (e10.equals("legacy_default_params")) {
-                        this.f51989c = new com.facebook.imagepipeline.memory.c(this.f51987a.i(), i.a(), this.f51987a.d(), this.f51987a.l());
+                        this.f52354c = new com.facebook.imagepipeline.memory.c(this.f52352a.i(), i.a(), this.f52352a.d(), this.f52352a.l());
                         break;
                     }
-                    this.f51989c = new com.facebook.imagepipeline.memory.c(this.f51987a.i(), this.f51987a.c(), this.f51987a.d(), this.f51987a.l());
+                    this.f52354c = new com.facebook.imagepipeline.memory.c(this.f52352a.i(), this.f52352a.c(), this.f52352a.d(), this.f52352a.l());
                     break;
                 case -1106578487:
                     e10.equals("legacy");
-                    this.f51989c = new com.facebook.imagepipeline.memory.c(this.f51987a.i(), this.f51987a.c(), this.f51987a.d(), this.f51987a.l());
+                    this.f52354c = new com.facebook.imagepipeline.memory.c(this.f52352a.i(), this.f52352a.c(), this.f52352a.d(), this.f52352a.l());
                     break;
                 case -404562712:
                     if (e10.equals("experimental")) {
-                        int b10 = this.f51987a.b();
-                        int a10 = this.f51987a.a();
+                        int b10 = this.f52352a.b();
+                        int a10 = this.f52352a.a();
                         u h10 = u.h();
-                        if (this.f51987a.m()) {
-                            dVar = this.f51987a.i();
+                        if (this.f52352a.m()) {
+                            dVar = this.f52352a.i();
                         } else {
                             dVar = null;
                         }
-                        this.f51989c = new o(b10, a10, h10, dVar);
+                        this.f52354c = new o(b10, a10, h10, dVar);
                         break;
                     }
-                    this.f51989c = new com.facebook.imagepipeline.memory.c(this.f51987a.i(), this.f51987a.c(), this.f51987a.d(), this.f51987a.l());
+                    this.f52354c = new com.facebook.imagepipeline.memory.c(this.f52352a.i(), this.f52352a.c(), this.f52352a.d(), this.f52352a.l());
                     break;
                 case -402149703:
                     if (e10.equals("dummy_with_tracking")) {
-                        this.f51989c = new n();
+                        this.f52354c = new n();
                         break;
                     }
-                    this.f51989c = new com.facebook.imagepipeline.memory.c(this.f51987a.i(), this.f51987a.c(), this.f51987a.d(), this.f51987a.l());
+                    this.f52354c = new com.facebook.imagepipeline.memory.c(this.f52352a.i(), this.f52352a.c(), this.f52352a.d(), this.f52352a.l());
                     break;
                 case 95945896:
                     if (e10.equals("dummy")) {
-                        this.f51989c = new m();
+                        this.f52354c = new m();
                         break;
                     }
-                    this.f51989c = new com.facebook.imagepipeline.memory.c(this.f51987a.i(), this.f51987a.c(), this.f51987a.d(), this.f51987a.l());
+                    this.f52354c = new com.facebook.imagepipeline.memory.c(this.f52352a.i(), this.f52352a.c(), this.f52352a.d(), this.f52352a.l());
                     break;
                 default:
-                    this.f51989c = new com.facebook.imagepipeline.memory.c(this.f51987a.i(), this.f51987a.c(), this.f51987a.d(), this.f51987a.l());
+                    this.f52354c = new com.facebook.imagepipeline.memory.c(this.f52352a.i(), this.f52352a.c(), this.f52352a.d(), this.f52352a.l());
                     break;
             }
         }
-        return this.f51989c;
+        return this.f52354c;
     }
 
     public com.facebook.imagepipeline.memory.f c() {
-        if (this.f51990d == null) {
+        if (this.f52355d == null) {
             try {
-                this.f51990d = (com.facebook.imagepipeline.memory.f) BufferMemoryChunkPool.class.getConstructor(r8.d.class, z.class, a0.class).newInstance(this.f51987a.i(), this.f51987a.g(), this.f51987a.h());
+                this.f52355d = (com.facebook.imagepipeline.memory.f) BufferMemoryChunkPool.class.getConstructor(r8.d.class, z.class, a0.class).newInstance(this.f52352a.i(), this.f52352a.g(), this.f52352a.h());
             } catch (ClassNotFoundException unused) {
-                this.f51990d = null;
+                this.f52355d = null;
             } catch (IllegalAccessException unused2) {
-                this.f51990d = null;
+                this.f52355d = null;
             } catch (InstantiationException unused3) {
-                this.f51990d = null;
+                this.f52355d = null;
             } catch (NoSuchMethodException unused4) {
-                this.f51990d = null;
+                this.f52355d = null;
             } catch (InvocationTargetException unused5) {
-                this.f51990d = null;
+                this.f52355d = null;
             }
         }
-        return this.f51990d;
+        return this.f52355d;
     }
 
     public com.facebook.imagepipeline.memory.d d() {
-        if (this.f51991e == null) {
-            this.f51991e = new com.facebook.imagepipeline.memory.d(this.f51987a.i(), this.f51987a.f());
+        if (this.f52356e == null) {
+            this.f52356e = new com.facebook.imagepipeline.memory.d(this.f52352a.i(), this.f52352a.f());
         }
-        return this.f51991e;
+        return this.f52356e;
     }
 
     public int e() {
-        return this.f51987a.f().f52002g;
+        return this.f52352a.f().f52367g;
     }
 
     public com.facebook.imagepipeline.memory.f g() {
-        if (this.f51992f == null) {
+        if (this.f52357f == null) {
             try {
-                this.f51992f = (com.facebook.imagepipeline.memory.f) NativeMemoryChunkPool.class.getConstructor(r8.d.class, z.class, a0.class).newInstance(this.f51987a.i(), this.f51987a.g(), this.f51987a.h());
+                this.f52357f = (com.facebook.imagepipeline.memory.f) NativeMemoryChunkPool.class.getConstructor(r8.d.class, z.class, a0.class).newInstance(this.f52352a.i(), this.f52352a.g(), this.f52352a.h());
             } catch (ClassNotFoundException e10) {
                 p8.a.n("PoolFactory", "", e10);
-                this.f51992f = null;
+                this.f52357f = null;
             } catch (IllegalAccessException e11) {
                 p8.a.n("PoolFactory", "", e11);
-                this.f51992f = null;
+                this.f52357f = null;
             } catch (InstantiationException e12) {
                 p8.a.n("PoolFactory", "", e12);
-                this.f51992f = null;
+                this.f52357f = null;
             } catch (NoSuchMethodException e13) {
                 p8.a.n("PoolFactory", "", e13);
-                this.f51992f = null;
+                this.f52357f = null;
             } catch (InvocationTargetException e14) {
                 p8.a.n("PoolFactory", "", e14);
-                this.f51992f = null;
+                this.f52357f = null;
             }
         }
-        return this.f51992f;
+        return this.f52357f;
     }
 
     public r8.i h() {
@@ -183,25 +183,25 @@ public class y {
     }
 
     public r8.i i(int i10) {
-        if (this.f51993g == null) {
+        if (this.f52358g == null) {
             com.facebook.imagepipeline.memory.f f10 = f(i10);
             o8.j.h(f10, "failed to get pool for chunk type: " + i10);
-            this.f51993g = new t(f10, j());
+            this.f52358g = new t(f10, j());
         }
-        return this.f51993g;
+        return this.f52358g;
     }
 
     public r8.l j() {
-        if (this.f51994h == null) {
-            this.f51994h = new r8.l(k());
+        if (this.f52359h == null) {
+            this.f52359h = new r8.l(k());
         }
-        return this.f51994h;
+        return this.f52359h;
     }
 
     public r8.a k() {
-        if (this.f51995i == null) {
-            this.f51995i = new com.facebook.imagepipeline.memory.e(this.f51987a.i(), this.f51987a.j(), this.f51987a.k());
+        if (this.f52360i == null) {
+            this.f52360i = new com.facebook.imagepipeline.memory.e(this.f52352a.i(), this.f52352a.j(), this.f52352a.k());
         }
-        return this.f51995i;
+        return this.f52360i;
     }
 }

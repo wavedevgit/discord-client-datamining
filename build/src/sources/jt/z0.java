@@ -1,143 +1,42 @@
 package jt;
 
+import ht.e;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.text.StringsKt;
+import kotlinx.serialization.KSerializer;
+import kotlinx.serialization.descriptors.SerialDescriptor;
+import kotlinx.serialization.encoding.Decoder;
+import kotlinx.serialization.encoding.Encoder;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public class z0 extends a {
+public final class z0 implements KSerializer {
 
-    /* renamed from: e  reason: collision with root package name */
-    private final String f31410e;
+    /* renamed from: a  reason: collision with root package name */
+    public static final z0 f31115a = new z0();
 
-    public z0(String source) {
-        Intrinsics.checkNotNullParameter(source, "source");
-        this.f31410e = source;
+    /* renamed from: b  reason: collision with root package name */
+    private static final SerialDescriptor f31116b = new g2("kotlin.Long", e.g.f26476a);
+
+    private z0() {
     }
 
-    @Override // jt.a
-    public String F(String keyToMatch, boolean z10) {
-        Intrinsics.checkNotNullParameter(keyToMatch, "keyToMatch");
-        int i10 = this.f31296a;
-        try {
-            if (j() == 6 && Intrinsics.areEqual(H(z10), keyToMatch)) {
-                t();
-                if (j() == 5) {
-                    return H(z10);
-                }
-            }
-            return null;
-        } finally {
-            this.f31296a = i10;
-            t();
-        }
+    @Override // kotlinx.serialization.DeserializationStrategy
+    /* renamed from: a */
+    public Long deserialize(Decoder decoder) {
+        Intrinsics.checkNotNullParameter(decoder, "decoder");
+        return Long.valueOf(decoder.l());
     }
 
-    @Override // jt.a
-    public int I(int i10) {
-        if (i10 < D().length()) {
-            return i10;
-        }
-        return -1;
+    public void b(Encoder encoder, long j10) {
+        Intrinsics.checkNotNullParameter(encoder, "encoder");
+        encoder.k(j10);
     }
 
-    @Override // jt.a
-    public int K() {
-        char charAt;
-        int i10 = this.f31296a;
-        if (i10 == -1) {
-            return i10;
-        }
-        String D = D();
-        while (i10 < D.length() && ((charAt = D.charAt(i10)) == ' ' || charAt == '\n' || charAt == '\r' || charAt == '\t')) {
-            i10++;
-        }
-        this.f31296a = i10;
-        return i10;
+    @Override // kotlinx.serialization.KSerializer, ft.o, kotlinx.serialization.DeserializationStrategy
+    public SerialDescriptor getDescriptor() {
+        return f31116b;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    @Override // jt.a
-    /* renamed from: S */
-    public String D() {
-        return this.f31410e;
-    }
-
-    @Override // jt.a
-    public boolean e() {
-        int i10 = this.f31296a;
-        if (i10 == -1) {
-            return false;
-        }
-        String D = D();
-        while (i10 < D.length()) {
-            char charAt = D.charAt(i10);
-            if (charAt != ' ' && charAt != '\n' && charAt != '\r' && charAt != '\t') {
-                this.f31296a = i10;
-                return E(charAt);
-            }
-            i10++;
-        }
-        this.f31296a = i10;
-        return false;
-    }
-
-    @Override // jt.a
-    public String i() {
-        l('\"');
-        int i10 = this.f31296a;
-        int h02 = StringsKt.h0(D(), '\"', i10, false, 4, null);
-        if (h02 != -1) {
-            for (int i11 = i10; i11 < h02; i11++) {
-                if (D().charAt(i11) == '\\') {
-                    return p(D(), this.f31296a, i11);
-                }
-            }
-            this.f31296a = h02 + 1;
-            String substring = D().substring(i10, h02);
-            Intrinsics.checkNotNullExpressionValue(substring, "substring(...)");
-            return substring;
-        }
-        q();
-        y((byte) 1, false);
-        throw new or.h();
-    }
-
-    @Override // jt.a
-    public byte j() {
-        String D = D();
-        int i10 = this.f31296a;
-        while (i10 != -1 && i10 < D.length()) {
-            int i11 = i10 + 1;
-            char charAt = D.charAt(i10);
-            if (charAt != ' ' && charAt != '\n' && charAt != '\r' && charAt != '\t') {
-                this.f31296a = i11;
-                return b.a(charAt);
-            }
-            i10 = i11;
-        }
-        this.f31296a = D.length();
-        return (byte) 10;
-    }
-
-    @Override // jt.a
-    public void l(char c10) {
-        if (this.f31296a == -1) {
-            Q(c10);
-        }
-        String D = D();
-        int i10 = this.f31296a;
-        while (i10 < D.length()) {
-            int i11 = i10 + 1;
-            char charAt = D.charAt(i10);
-            if (charAt != ' ' && charAt != '\n' && charAt != '\r' && charAt != '\t') {
-                this.f31296a = i11;
-                if (charAt == c10) {
-                    return;
-                }
-                Q(c10);
-            }
-            i10 = i11;
-        }
-        this.f31296a = -1;
-        Q(c10);
+    @Override // ft.o
+    public /* bridge */ /* synthetic */ void serialize(Encoder encoder, Object obj) {
+        b(encoder, ((Number) obj).longValue());
     }
 }

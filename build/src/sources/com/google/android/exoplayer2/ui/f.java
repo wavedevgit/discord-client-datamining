@@ -26,102 +26,102 @@ final class f {
     private Rect J;
 
     /* renamed from: a  reason: collision with root package name */
-    private final float f13269a;
+    private final float f13230a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final float f13270b;
+    private final float f13231b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final float f13271c;
+    private final float f13232c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final float f13272d;
+    private final float f13233d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final float f13273e;
+    private final float f13234e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final TextPaint f13274f;
+    private final TextPaint f13235f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final Paint f13275g;
+    private final Paint f13236g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final Paint f13276h;
+    private final Paint f13237h;
 
     /* renamed from: i  reason: collision with root package name */
-    private CharSequence f13277i;
+    private CharSequence f13238i;
 
     /* renamed from: j  reason: collision with root package name */
-    private Layout.Alignment f13278j;
+    private Layout.Alignment f13239j;
 
     /* renamed from: k  reason: collision with root package name */
-    private Bitmap f13279k;
+    private Bitmap f13240k;
 
     /* renamed from: l  reason: collision with root package name */
-    private float f13280l;
+    private float f13241l;
 
     /* renamed from: m  reason: collision with root package name */
-    private int f13281m;
+    private int f13242m;
 
     /* renamed from: n  reason: collision with root package name */
-    private int f13282n;
+    private int f13243n;
 
     /* renamed from: o  reason: collision with root package name */
-    private float f13283o;
+    private float f13244o;
 
     /* renamed from: p  reason: collision with root package name */
-    private int f13284p;
+    private int f13245p;
 
     /* renamed from: q  reason: collision with root package name */
-    private float f13285q;
+    private float f13246q;
 
     /* renamed from: r  reason: collision with root package name */
-    private float f13286r;
+    private float f13247r;
 
     /* renamed from: s  reason: collision with root package name */
-    private int f13287s;
+    private int f13248s;
 
     /* renamed from: t  reason: collision with root package name */
-    private int f13288t;
+    private int f13249t;
 
     /* renamed from: u  reason: collision with root package name */
-    private int f13289u;
+    private int f13250u;
 
     /* renamed from: v  reason: collision with root package name */
-    private int f13290v;
+    private int f13251v;
 
     /* renamed from: w  reason: collision with root package name */
-    private int f13291w;
+    private int f13252w;
 
     /* renamed from: x  reason: collision with root package name */
-    private float f13292x;
+    private float f13253x;
 
     /* renamed from: y  reason: collision with root package name */
-    private float f13293y;
+    private float f13254y;
 
     /* renamed from: z  reason: collision with root package name */
-    private float f13294z;
+    private float f13255z;
 
     public f(Context context) {
         TypedArray obtainStyledAttributes = context.obtainStyledAttributes(null, new int[]{16843287, 16843288}, 0, 0);
-        this.f13273e = obtainStyledAttributes.getDimensionPixelSize(0, 0);
-        this.f13272d = obtainStyledAttributes.getFloat(1, 1.0f);
+        this.f13234e = obtainStyledAttributes.getDimensionPixelSize(0, 0);
+        this.f13233d = obtainStyledAttributes.getFloat(1, 1.0f);
         obtainStyledAttributes.recycle();
         float round = Math.round((context.getResources().getDisplayMetrics().densityDpi * 2.0f) / 160.0f);
-        this.f13269a = round;
-        this.f13270b = round;
-        this.f13271c = round;
+        this.f13230a = round;
+        this.f13231b = round;
+        this.f13232c = round;
         TextPaint textPaint = new TextPaint();
-        this.f13274f = textPaint;
+        this.f13235f = textPaint;
         textPaint.setAntiAlias(true);
         textPaint.setSubpixelText(true);
         Paint paint = new Paint();
-        this.f13275g = paint;
+        this.f13236g = paint;
         paint.setAntiAlias(true);
         paint.setStyle(Paint.Style.FILL);
         Paint paint2 = new Paint();
-        this.f13276h = paint2;
+        this.f13237h = paint2;
         paint2.setAntiAlias(true);
         paint2.setFilterBitmap(true);
     }
@@ -137,7 +137,7 @@ final class f {
     }
 
     private void c(Canvas canvas) {
-        canvas.drawBitmap(this.f13279k, (Rect) null, this.J, this.f13276h);
+        canvas.drawBitmap(this.f13240k, (Rect) null, this.J, this.f13237h);
     }
 
     private void d(Canvas canvas, boolean z10) {
@@ -146,7 +146,7 @@ final class f {
             return;
         }
         ne.a.e(this.J);
-        ne.a.e(this.f13279k);
+        ne.a.e(this.f13240k);
         c(canvas);
     }
 
@@ -158,26 +158,26 @@ final class f {
         if (staticLayout != null && staticLayout2 != null) {
             int save = canvas.save();
             canvas.translate(this.G, this.H);
-            if (Color.alpha(this.f13289u) > 0) {
-                this.f13275g.setColor(this.f13289u);
+            if (Color.alpha(this.f13250u) > 0) {
+                this.f13236g.setColor(this.f13250u);
                 canvas2 = canvas;
-                canvas2.drawRect(-this.I, 0.0f, staticLayout.getWidth() + this.I, staticLayout.getHeight(), this.f13275g);
+                canvas2.drawRect(-this.I, 0.0f, staticLayout.getWidth() + this.I, staticLayout.getHeight(), this.f13236g);
             } else {
                 canvas2 = canvas;
             }
-            int i11 = this.f13291w;
+            int i11 = this.f13252w;
             boolean z10 = true;
             if (i11 == 1) {
-                this.f13274f.setStrokeJoin(Paint.Join.ROUND);
-                this.f13274f.setStrokeWidth(this.f13269a);
-                this.f13274f.setColor(this.f13290v);
-                this.f13274f.setStyle(Paint.Style.FILL_AND_STROKE);
+                this.f13235f.setStrokeJoin(Paint.Join.ROUND);
+                this.f13235f.setStrokeWidth(this.f13230a);
+                this.f13235f.setColor(this.f13251v);
+                this.f13235f.setStyle(Paint.Style.FILL_AND_STROKE);
                 staticLayout2.draw(canvas2);
             } else if (i11 == 2) {
-                TextPaint textPaint = this.f13274f;
-                float f10 = this.f13270b;
-                float f11 = this.f13271c;
-                textPaint.setShadowLayer(f10, f11, f11, this.f13290v);
+                TextPaint textPaint = this.f13235f;
+                float f10 = this.f13231b;
+                float f11 = this.f13232c;
+                textPaint.setShadowLayer(f10, f11, f11, this.f13251v);
             } else if (i11 == 3 || i11 == 4) {
                 if (i11 != 3) {
                     z10 = false;
@@ -186,23 +186,23 @@ final class f {
                 if (z10) {
                     i10 = -1;
                 } else {
-                    i10 = this.f13290v;
+                    i10 = this.f13251v;
                 }
                 if (z10) {
-                    i12 = this.f13290v;
+                    i12 = this.f13251v;
                 }
-                float f12 = this.f13270b / 2.0f;
-                this.f13274f.setColor(this.f13287s);
-                this.f13274f.setStyle(Paint.Style.FILL);
+                float f12 = this.f13231b / 2.0f;
+                this.f13235f.setColor(this.f13248s);
+                this.f13235f.setStyle(Paint.Style.FILL);
                 float f13 = -f12;
-                this.f13274f.setShadowLayer(this.f13270b, f13, f13, i10);
+                this.f13235f.setShadowLayer(this.f13231b, f13, f13, i10);
                 staticLayout2.draw(canvas2);
-                this.f13274f.setShadowLayer(this.f13270b, f12, f12, i12);
+                this.f13235f.setShadowLayer(this.f13231b, f12, f12, i12);
             }
-            this.f13274f.setColor(this.f13287s);
-            this.f13274f.setStyle(Paint.Style.FILL);
+            this.f13235f.setColor(this.f13248s);
+            this.f13235f.setStyle(Paint.Style.FILL);
             staticLayout.draw(canvas2);
-            this.f13274f.setShadowLayer(0.0f, 0.0f, 0.0f, 0);
+            this.f13235f.setShadowLayer(0.0f, 0.0f, 0.0f, 0);
             canvas2.restoreToCount(save);
         }
     }
@@ -216,7 +216,7 @@ final class f {
     private void f() {
         /*
             r7 = this;
-            android.graphics.Bitmap r0 = r7.f13279k
+            android.graphics.Bitmap r0 = r7.f13240k
             int r1 = r7.C
             int r2 = r7.A
             int r1 = r1 - r2
@@ -225,18 +225,18 @@ final class f {
             int r3 = r3 - r4
             float r2 = (float) r2
             float r1 = (float) r1
-            float r5 = r7.f13283o
+            float r5 = r7.f13244o
             float r5 = r5 * r1
             float r2 = r2 + r5
             float r4 = (float) r4
             float r3 = (float) r3
-            float r5 = r7.f13280l
+            float r5 = r7.f13241l
             float r5 = r5 * r3
             float r4 = r4 + r5
-            float r5 = r7.f13285q
+            float r5 = r7.f13246q
             float r1 = r1 * r5
             int r1 = java.lang.Math.round(r1)
-            float r5 = r7.f13286r
+            float r5 = r7.f13247r
             r6 = -8388609(0xffffffffff7fffff, float:-3.4028235E38)
             int r6 = (r5 > r6 ? 1 : (r5 == r6 ? 0 : -1))
             if (r6 == 0) goto L2e
@@ -253,7 +253,7 @@ final class f {
             float r3 = r3 * r5
             int r0 = java.lang.Math.round(r3)
         L3f:
-            int r3 = r7.f13284p
+            int r3 = r7.f13245p
             r5 = 1
             r6 = 2
             if (r3 != r6) goto L48
@@ -268,7 +268,7 @@ final class f {
             goto L46
         L4e:
             int r2 = java.lang.Math.round(r2)
-            int r3 = r7.f13282n
+            int r3 = r7.f13243n
             if (r3 != r6) goto L59
             float r3 = (float) r0
         L57:
@@ -308,55 +308,55 @@ final class f {
     public void b(zd.b bVar, ke.b bVar2, float f10, float f11, float f12, Canvas canvas, int i10, int i11, int i12, int i13) {
         boolean z10;
         int i14;
-        if (bVar.f55462o == null) {
+        if (bVar.f56193o == null) {
             z10 = true;
         } else {
             z10 = false;
         }
         if (z10) {
-            if (TextUtils.isEmpty(bVar.f55459d)) {
+            if (TextUtils.isEmpty(bVar.f56190d)) {
                 return;
             }
-            if (bVar.f55470w) {
-                i14 = bVar.f55471x;
+            if (bVar.f56201w) {
+                i14 = bVar.f56202x;
             } else {
-                i14 = bVar2.f31710c;
+                i14 = bVar2.f31554c;
             }
         } else {
             i14 = -16777216;
         }
-        if (a(this.f13277i, bVar.f55459d) && w0.c(this.f13278j, bVar.f55460e) && this.f13279k == bVar.f55462o && this.f13280l == bVar.f55463p && this.f13281m == bVar.f55464q && w0.c(Integer.valueOf(this.f13282n), Integer.valueOf(bVar.f55465r)) && this.f13283o == bVar.f55466s && w0.c(Integer.valueOf(this.f13284p), Integer.valueOf(bVar.f55467t)) && this.f13285q == bVar.f55468u && this.f13286r == bVar.f55469v && this.f13287s == bVar2.f31708a && this.f13288t == bVar2.f31709b && this.f13289u == i14 && this.f13291w == bVar2.f31711d && this.f13290v == bVar2.f31712e && w0.c(this.f13274f.getTypeface(), bVar2.f31713f) && this.f13292x == f10 && this.f13293y == f11 && this.f13294z == f12 && this.A == i10 && this.B == i11 && this.C == i12 && this.D == i13) {
+        if (a(this.f13238i, bVar.f56190d) && w0.c(this.f13239j, bVar.f56191e) && this.f13240k == bVar.f56193o && this.f13241l == bVar.f56194p && this.f13242m == bVar.f56195q && w0.c(Integer.valueOf(this.f13243n), Integer.valueOf(bVar.f56196r)) && this.f13244o == bVar.f56197s && w0.c(Integer.valueOf(this.f13245p), Integer.valueOf(bVar.f56198t)) && this.f13246q == bVar.f56199u && this.f13247r == bVar.f56200v && this.f13248s == bVar2.f31552a && this.f13249t == bVar2.f31553b && this.f13250u == i14 && this.f13252w == bVar2.f31555d && this.f13251v == bVar2.f31556e && w0.c(this.f13235f.getTypeface(), bVar2.f31557f) && this.f13253x == f10 && this.f13254y == f11 && this.f13255z == f12 && this.A == i10 && this.B == i11 && this.C == i12 && this.D == i13) {
             d(canvas, z10);
             return;
         }
-        this.f13277i = bVar.f55459d;
-        this.f13278j = bVar.f55460e;
-        this.f13279k = bVar.f55462o;
-        this.f13280l = bVar.f55463p;
-        this.f13281m = bVar.f55464q;
-        this.f13282n = bVar.f55465r;
-        this.f13283o = bVar.f55466s;
-        this.f13284p = bVar.f55467t;
-        this.f13285q = bVar.f55468u;
-        this.f13286r = bVar.f55469v;
-        this.f13287s = bVar2.f31708a;
-        this.f13288t = bVar2.f31709b;
-        this.f13289u = i14;
-        this.f13291w = bVar2.f31711d;
-        this.f13290v = bVar2.f31712e;
-        this.f13274f.setTypeface(bVar2.f31713f);
-        this.f13292x = f10;
-        this.f13293y = f11;
-        this.f13294z = f12;
+        this.f13238i = bVar.f56190d;
+        this.f13239j = bVar.f56191e;
+        this.f13240k = bVar.f56193o;
+        this.f13241l = bVar.f56194p;
+        this.f13242m = bVar.f56195q;
+        this.f13243n = bVar.f56196r;
+        this.f13244o = bVar.f56197s;
+        this.f13245p = bVar.f56198t;
+        this.f13246q = bVar.f56199u;
+        this.f13247r = bVar.f56200v;
+        this.f13248s = bVar2.f31552a;
+        this.f13249t = bVar2.f31553b;
+        this.f13250u = i14;
+        this.f13252w = bVar2.f31555d;
+        this.f13251v = bVar2.f31556e;
+        this.f13235f.setTypeface(bVar2.f31557f);
+        this.f13253x = f10;
+        this.f13254y = f11;
+        this.f13255z = f12;
         this.A = i10;
         this.B = i11;
         this.C = i12;
         this.D = i13;
         if (z10) {
-            ne.a.e(this.f13277i);
+            ne.a.e(this.f13238i);
             g();
         } else {
-            ne.a.e(this.f13279k);
+            ne.a.e(this.f13240k);
             f();
         }
         d(canvas, z10);

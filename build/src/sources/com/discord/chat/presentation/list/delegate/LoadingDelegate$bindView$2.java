@@ -15,12 +15,12 @@ import kotlin.jvm.internal.FunctionReferenceImpl;
 
     @Override // kotlin.jvm.functions.Function0
     public /* bridge */ /* synthetic */ Object invoke() {
-        m499invoke();
-        return Unit.f31988a;
+        m497invoke();
+        return Unit.f32008a;
     }
 
     /* renamed from: invoke  reason: collision with other method in class */
-    public final void m499invoke() {
+    public final void m497invoke() {
         ((ChatEventHandler) this.receiver).onTapLoadMessagesAfter();
     }
 }

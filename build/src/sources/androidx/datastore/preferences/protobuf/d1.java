@@ -4,19 +4,19 @@ package androidx.datastore.preferences.protobuf;
 public interface d1 {
     void a(Object obj, Object obj2);
 
-    void b(Object obj, c1 c1Var, o oVar);
+    void b(Object obj);
 
-    void c(Object obj);
+    boolean c(Object obj);
 
-    boolean d(Object obj);
+    Object d();
 
     int e(Object obj);
 
-    Object f();
+    boolean f(Object obj, Object obj2);
 
-    int g(Object obj);
+    void g(Object obj, c1 c1Var, o oVar);
 
-    void h(Object obj, r1 r1Var);
+    int h(Object obj);
 
-    boolean i(Object obj, Object obj2);
+    void i(Object obj, r1 r1Var);
 }

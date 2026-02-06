@@ -98,8 +98,8 @@ public abstract class g0 {
         if (sentryAndroidOptions.getCompositePerformanceCollector() instanceof io.sentry.c2) {
             sentryAndroidOptions.setCompositePerformanceCollector(new io.sentry.m(sentryAndroidOptions));
         }
-        if (z10 && (sentryAndroidOptions.getReplayController().L() instanceof io.sentry.k2)) {
-            sentryAndroidOptions.getReplayController().o(new io.sentry.android.replay.a(sentryAndroidOptions));
+        if (z10 && (sentryAndroidOptions.getReplayController().z() instanceof io.sentry.k2)) {
+            sentryAndroidOptions.getReplayController().n(new io.sentry.android.replay.a(sentryAndroidOptions));
         }
         io.sentry.a1 a10 = io.sentry.android.core.performance.h.B.a();
         try {
@@ -129,7 +129,7 @@ public abstract class g0 {
             @Override // io.sentry.util.r.a
             public final Object a() {
                 Boolean valueOf;
-                valueOf = Boolean.valueOf(io.sentry.android.core.cache.d.L(SentryAndroidOptions.this));
+                valueOf = Boolean.valueOf(io.sentry.android.core.cache.d.O(SentryAndroidOptions.this));
                 return valueOf;
             }
         });
@@ -198,8 +198,8 @@ public abstract class g0 {
         sentryAndroidOptions.setFlushTimeoutMillis(4000L);
         sentryAndroidOptions.setFrameMetricsCollector(new io.sentry.android.core.internal.util.c0(g10, iLogger, x0Var));
         b2.a(g10, sentryAndroidOptions, x0Var);
-        sentryAndroidOptions.setCacheDirPath((String) sentryAndroidOptions.getRuntimeManager().a(new a.InterfaceC0414a() { // from class: io.sentry.android.core.b0
-            @Override // io.sentry.util.runtime.a.InterfaceC0414a
+        sentryAndroidOptions.setCacheDirPath((String) sentryAndroidOptions.getRuntimeManager().a(new a.InterfaceC0408a() { // from class: io.sentry.android.core.b0
+            @Override // io.sentry.util.runtime.a.InterfaceC0408a
             public final Object run() {
                 String absolutePath;
                 absolutePath = g0.f(g10).getAbsolutePath();
@@ -207,7 +207,7 @@ public abstract class g0 {
             }
         }));
         k(sentryAndroidOptions, g10, x0Var);
-        w0.E().L(sentryAndroidOptions);
+        w0.s().z(sentryAndroidOptions);
     }
 
     private static void k(SentryAndroidOptions sentryAndroidOptions, final Context context, x0 x0Var) {
@@ -223,8 +223,8 @@ public abstract class g0 {
         }
         if (sentryAndroidOptions.getDistinctId() == null) {
             try {
-                sentryAndroidOptions.setDistinctId((String) sentryAndroidOptions.getRuntimeManager().a(new a.InterfaceC0414a() { // from class: io.sentry.android.core.f0
-                    @Override // io.sentry.util.runtime.a.InterfaceC0414a
+                sentryAndroidOptions.setDistinctId((String) sentryAndroidOptions.getRuntimeManager().a(new a.InterfaceC0408a() { // from class: io.sentry.android.core.f0
+                    @Override // io.sentry.util.runtime.a.InterfaceC0408a
                     public final Object run() {
                         String a10;
                         a10 = r1.a(context);
@@ -246,7 +246,7 @@ public abstract class g0 {
             if (l0Var != null) {
                 sentryAndroidOptions.setContinuousProfiler(l0Var);
                 io.sentry.protocol.x f10 = l0Var.f();
-                if (l0Var.isRunning() && !f10.equals(io.sentry.protocol.x.f29471e)) {
+                if (l0Var.isRunning() && !f10.equals(io.sentry.protocol.x.f28615e)) {
                     hVar.f(f10.toString());
                     return;
                 }

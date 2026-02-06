@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/checkpoint/CheckpointUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun56586: for (var _fun56586_ip = 0;;) switch (_fun56586_ip) {
+        _fun56613: for (var _fun56613_ip = 0;;) switch (_fun56613_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var6 = _closure1_slot2;
@@ -58,8 +58,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.bind(var2)();
                 var2 = null;
                 if (!(var2 != var7)) {
-                    _fun56586_ip = 239;
-                    continue _fun56586
+                    _fun56613_ip = 239;
+                    continue _fun56613
                 }
             case 86:
                 var2 = global;
@@ -73,8 +73,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.TimeUnits;
                 var2 = var2.HOURS;
                 if (!(var5 !== var2)) {
-                    _fun56586_ip = 188;
-                    continue _fun56586
+                    _fun56613_ip = 188;
+                    continue _fun56613
                 }
             case 137:
                 var5 = _closure1_slot0;
@@ -88,8 +88,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = {};
                 var2.minutes = var9;
                 var2 = var6.bind(var7)(var5, var2);
-                _fun56586_ip = 237;
-                continue _fun56586;
+                _fun56613_ip = 237;
+                continue _fun56613;
             case 188:
                 var6 = _closure1_slot0;
                 var7 = _closure1_slot2;
@@ -121,61 +121,61 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getVoiceDurationString = var3;
     var3 = function arg0() {
-        _fun56587: for (var _fun56587_ip = 0;;) switch (_fun56587_ip) {
+        _fun56614: for (var _fun56614_ip = 0;;) switch (_fun56614_ip) {
             case 0:
                 var1 = arg0;
                 var0 = 0;
                 if (!(var0 !== var1)) {
-                    _fun56587_ip = 326;
-                    continue _fun56587
+                    _fun56614_ip = 326;
+                    continue _fun56614
                 }
             case 12:
                 var0 = 1;
                 if (!(var0 !== var1)) {
-                    _fun56587_ip = 299;
-                    continue _fun56587
+                    _fun56614_ip = 299;
+                    continue _fun56614
                 }
             case 22:
                 var0 = 2;
                 if (!(var0 !== var1)) {
-                    _fun56587_ip = 272;
-                    continue _fun56587
+                    _fun56614_ip = 272;
+                    continue _fun56614
                 }
             case 32:
                 var0 = 3;
                 if (!(var0 !== var1)) {
-                    _fun56587_ip = 245;
-                    continue _fun56587
+                    _fun56614_ip = 245;
+                    continue _fun56614
                 }
             case 42:
                 var0 = 4;
                 if (!(var0 !== var1)) {
-                    _fun56587_ip = 218;
-                    continue _fun56587
+                    _fun56614_ip = 218;
+                    continue _fun56614
                 }
             case 52:
                 var0 = 5;
                 if (!(var0 !== var1)) {
-                    _fun56587_ip = 191;
-                    continue _fun56587
+                    _fun56614_ip = 191;
+                    continue _fun56614
                 }
             case 62:
                 var0 = 6;
                 if (!(var0 !== var1)) {
-                    _fun56587_ip = 164;
-                    continue _fun56587
+                    _fun56614_ip = 164;
+                    continue _fun56614
                 }
             case 69:
                 var0 = 7;
                 if (!(var0 !== var1)) {
-                    _fun56587_ip = 137;
-                    continue _fun56587
+                    _fun56614_ip = 137;
+                    continue _fun56614
                 }
             case 76:
                 var0 = 8;
                 if (!(var0 !== var1)) {
-                    _fun56587_ip = 110;
-                    continue _fun56587
+                    _fun56614_ip = 110;
+                    continue _fun56614
                 }
             case 83:
                 var2 = _closure1_slot1;
@@ -280,4 +280,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getCheckpointPowerBarUnits = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3529, 4223, 1234, 6872, 6873, 6874, 6875, 6876, 6877, 6878, 6879, 6880, 6881, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3531, 4224, 1234, 6877, 6878, 6879, 6880, 6881, 6882, 6883, 6884, 6885, 6886, 2]);

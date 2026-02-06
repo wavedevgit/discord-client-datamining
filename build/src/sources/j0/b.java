@@ -8,44 +8,44 @@ import android.util.Size;
 public final class b extends z {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Object f30578a;
+    private final Object f29551a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final b0.f f30579b;
+    private final b0.f f29552b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f30580c;
+    private final int f29553c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Size f30581d;
+    private final Size f29554d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Rect f30582e;
+    private final Rect f29555e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final int f30583f;
+    private final int f29556f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final Matrix f30584g;
+    private final Matrix f29557g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final a0.u f30585h;
+    private final a0.u f29558h;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(Object obj, b0.f fVar, int i10, Size size, Rect rect, int i11, Matrix matrix, a0.u uVar) {
         if (obj != null) {
-            this.f30578a = obj;
-            this.f30579b = fVar;
-            this.f30580c = i10;
+            this.f29551a = obj;
+            this.f29552b = fVar;
+            this.f29553c = i10;
             if (size != null) {
-                this.f30581d = size;
+                this.f29554d = size;
                 if (rect != null) {
-                    this.f30582e = rect;
-                    this.f30583f = i11;
+                    this.f29555e = rect;
+                    this.f29556f = i11;
                     if (matrix != null) {
-                        this.f30584g = matrix;
+                        this.f29557g = matrix;
                         if (uVar != null) {
-                            this.f30585h = uVar;
+                            this.f29558h = uVar;
                             return;
                         }
                         throw new NullPointerException("Null cameraCaptureResult");
@@ -61,27 +61,27 @@ public final class b extends z {
 
     @Override // j0.z
     public a0.u a() {
-        return this.f30585h;
+        return this.f29558h;
     }
 
     @Override // j0.z
     public Rect b() {
-        return this.f30582e;
+        return this.f29555e;
     }
 
     @Override // j0.z
     public Object c() {
-        return this.f30578a;
+        return this.f29551a;
     }
 
     @Override // j0.z
     public b0.f d() {
-        return this.f30579b;
+        return this.f29552b;
     }
 
     @Override // j0.z
     public int e() {
-        return this.f30580c;
+        return this.f29553c;
     }
 
     public boolean equals(Object obj) {
@@ -91,7 +91,7 @@ public final class b extends z {
         }
         if (obj instanceof z) {
             z zVar = (z) obj;
-            if (this.f30578a.equals(zVar.c()) && ((fVar = this.f30579b) != null ? fVar.equals(zVar.d()) : zVar.d() == null) && this.f30580c == zVar.e() && this.f30581d.equals(zVar.h()) && this.f30582e.equals(zVar.b()) && this.f30583f == zVar.f() && this.f30584g.equals(zVar.g()) && this.f30585h.equals(zVar.a())) {
+            if (this.f29551a.equals(zVar.c()) && ((fVar = this.f29552b) != null ? fVar.equals(zVar.d()) : zVar.d() == null) && this.f29553c == zVar.e() && this.f29554d.equals(zVar.h()) && this.f29555e.equals(zVar.b()) && this.f29556f == zVar.f() && this.f29557g.equals(zVar.g()) && this.f29558h.equals(zVar.a())) {
                 return true;
             }
         }
@@ -100,32 +100,32 @@ public final class b extends z {
 
     @Override // j0.z
     public int f() {
-        return this.f30583f;
+        return this.f29556f;
     }
 
     @Override // j0.z
     public Matrix g() {
-        return this.f30584g;
+        return this.f29557g;
     }
 
     @Override // j0.z
     public Size h() {
-        return this.f30581d;
+        return this.f29554d;
     }
 
     public int hashCode() {
         int hashCode;
-        int hashCode2 = (this.f30578a.hashCode() ^ 1000003) * 1000003;
-        b0.f fVar = this.f30579b;
+        int hashCode2 = (this.f29551a.hashCode() ^ 1000003) * 1000003;
+        b0.f fVar = this.f29552b;
         if (fVar == null) {
             hashCode = 0;
         } else {
             hashCode = fVar.hashCode();
         }
-        return ((((((((((((hashCode2 ^ hashCode) * 1000003) ^ this.f30580c) * 1000003) ^ this.f30581d.hashCode()) * 1000003) ^ this.f30582e.hashCode()) * 1000003) ^ this.f30583f) * 1000003) ^ this.f30584g.hashCode()) * 1000003) ^ this.f30585h.hashCode();
+        return ((((((((((((hashCode2 ^ hashCode) * 1000003) ^ this.f29553c) * 1000003) ^ this.f29554d.hashCode()) * 1000003) ^ this.f29555e.hashCode()) * 1000003) ^ this.f29556f) * 1000003) ^ this.f29557g.hashCode()) * 1000003) ^ this.f29558h.hashCode();
     }
 
     public String toString() {
-        return "Packet{data=" + this.f30578a + ", exif=" + this.f30579b + ", format=" + this.f30580c + ", size=" + this.f30581d + ", cropRect=" + this.f30582e + ", rotationDegrees=" + this.f30583f + ", sensorToBufferTransform=" + this.f30584g + ", cameraCaptureResult=" + this.f30585h + "}";
+        return "Packet{data=" + this.f29551a + ", exif=" + this.f29552b + ", format=" + this.f29553c + ", size=" + this.f29554d + ", cropRect=" + this.f29555e + ", rotationDegrees=" + this.f29556f + ", sensorToBufferTransform=" + this.f29557g + ", cameraCaptureResult=" + this.f29558h + "}";
     }
 }

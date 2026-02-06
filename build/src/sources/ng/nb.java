@@ -1,66 +1,34 @@
 package ng;
+
+import yi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class nb extends rb {
+final class nb implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f40865a;
+    static final nb f40115a = new nb();
 
-    /* renamed from: b  reason: collision with root package name */
-    private final boolean f40866b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final int f40867c;
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public /* synthetic */ nb(String str, boolean z10, int i10, lb lbVar) {
-        this.f40865a = str;
-        this.f40866b = z10;
-        this.f40867c = i10;
+    static {
+        c.b a10 = yi.c.a("languageOption");
+        l2 l2Var = new l2();
+        l2Var.a(3);
+        a10.b(l2Var.b()).a();
+        c.b a11 = yi.c.a("isUsingLegacyApi");
+        l2 l2Var2 = new l2();
+        l2Var2.a(4);
+        a11.b(l2Var2.b()).a();
+        c.b a12 = yi.c.a("sdkVersion");
+        l2 l2Var3 = new l2();
+        l2Var3.a(5);
+        a12.b(l2Var3.b()).a();
     }
 
-    @Override // ng.rb
-    public final int a() {
-        return this.f40867c;
+    private nb() {
     }
 
-    @Override // ng.rb
-    public final String b() {
-        return this.f40865a;
-    }
-
-    @Override // ng.rb
-    public final boolean c() {
-        return this.f40866b;
-    }
-
-    public final boolean equals(Object obj) {
-        if (obj == this) {
-            return true;
-        }
-        if (obj instanceof rb) {
-            rb rbVar = (rb) obj;
-            if (this.f40865a.equals(rbVar.b()) && this.f40866b == rbVar.c() && this.f40867c == rbVar.a()) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    public final int hashCode() {
-        int i10;
-        int hashCode = this.f40865a.hashCode() ^ 1000003;
-        if (true != this.f40866b) {
-            i10 = 1237;
-        } else {
-            i10 = 1231;
-        }
-        return (((hashCode * 1000003) ^ i10) * 1000003) ^ this.f40867c;
-    }
-
-    public final String toString() {
-        String str = this.f40865a;
-        boolean z10 = this.f40866b;
-        int i10 = this.f40867c;
-        return "MLKitLoggingOptions{libraryName=" + str + ", enableFirelog=" + z10 + ", firelogEventType=" + i10 + "}";
+    @Override // yi.d
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        android.support.v4.media.session.b.a(obj);
+        yi.e eVar = (yi.e) obj2;
+        throw null;
     }
 }

@@ -16,57 +16,57 @@ import org.jetbrains.annotations.NotNull;
 public final class CreateDocumentResponseJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f18503a;
+    private final m.b f18483a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f18504b;
+    private final h f18484b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final h f18505c;
+    private final h f18485c;
 
     public CreateDocumentResponseJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("data", "included");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f18503a = a10;
+        this.f18483a = a10;
         h f10 = moshi.f(CreateDocumentResponse.Data.class, x0.d(), "data");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f18504b = f10;
+        this.f18484b = f10;
         h f11 = moshi.f(a0.j(List.class, DocumentFileData.class), x0.d(), "included");
         Intrinsics.checkNotNullExpressionValue(f11, "adapter(...)");
-        this.f18505c = f11;
+        this.f18485c = f11;
     }
 
     @Override // com.squareup.moshi.h
     /* renamed from: a */
     public CreateDocumentResponse fromJson(m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         CreateDocumentResponse.Data data = null;
         List list = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.f18503a);
-            if (W != -1) {
-                if (W != 0) {
-                    if (W == 1) {
-                        list = (List) this.f18505c.fromJson(reader);
+            int J = reader.J(this.f18483a);
+            if (J != -1) {
+                if (J != 0) {
+                    if (J == 1) {
+                        list = (List) this.f18485c.fromJson(reader);
                     }
                 } else {
-                    data = (CreateDocumentResponse.Data) this.f18504b.fromJson(reader);
+                    data = (CreateDocumentResponse.Data) this.f18484b.fromJson(reader);
                     if (data == null) {
-                        throw ym.c.x("data_", "data", reader);
+                        throw an.c.x("data_", "data", reader);
                     }
                 }
             } else {
                 reader.E0();
-                reader.P();
+                reader.S();
             }
         }
-        reader.z();
+        reader.D();
         if (data != null) {
             return new CreateDocumentResponse(data, list);
         }
-        throw ym.c.o("data_", "data", reader);
+        throw an.c.o("data_", "data", reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -75,11 +75,11 @@ public final class CreateDocumentResponseJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (createDocumentResponse != null) {
             writer.k();
-            writer.W("data");
-            this.f18504b.toJson(writer, createDocumentResponse.a());
-            writer.W("included");
-            this.f18505c.toJson(writer, createDocumentResponse.b());
-            writer.E();
+            writer.J("data");
+            this.f18484b.toJson(writer, createDocumentResponse.a());
+            writer.J("included");
+            this.f18485c.toJson(writer, createDocumentResponse.b());
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

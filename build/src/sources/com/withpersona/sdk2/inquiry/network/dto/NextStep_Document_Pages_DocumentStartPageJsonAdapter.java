@@ -45,28 +45,28 @@ public final class NextStep_Document_Pages_DocumentStartPageJsonAdapter extends 
     @NotNull
     public NextStep.Document.Pages.DocumentStartPage fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         NextStep.Ui ui2 = null;
         NextStep.Document.Pages.DocumentStartPage.ComponentNameMapping componentNameMapping = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 ui2 = (NextStep.Ui) this.uiAdapter.fromJson(reader);
                 if (ui2 == null) {
-                    throw ym.c.x("uiStep", "uiStep", reader);
+                    throw an.c.x("uiStep", "uiStep", reader);
                 }
-            } else if (W == 1) {
+            } else if (J == 1) {
                 componentNameMapping = (NextStep.Document.Pages.DocumentStartPage.ComponentNameMapping) this.nullableComponentNameMappingAdapter.fromJson(reader);
             }
         }
-        reader.z();
+        reader.D();
         if (ui2 != null) {
             return new NextStep.Document.Pages.DocumentStartPage(ui2, componentNameMapping);
         }
-        throw ym.c.o("uiStep", "uiStep", reader);
+        throw an.c.o("uiStep", "uiStep", reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -74,11 +74,11 @@ public final class NextStep_Document_Pages_DocumentStartPageJsonAdapter extends 
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (documentStartPage != null) {
             writer.k();
-            writer.W("uiStep");
+            writer.J("uiStep");
             this.uiAdapter.toJson(writer, documentStartPage.getUiStep());
-            writer.W("componentNameMapping");
+            writer.J("componentNameMapping");
             this.nullableComponentNameMappingAdapter.toJson(writer, documentStartPage.getComponentNameMapping());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

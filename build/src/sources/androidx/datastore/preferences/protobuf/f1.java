@@ -8,16 +8,16 @@ import java.util.RandomAccess;
 abstract class f1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Class f3712a = A();
+    private static final Class f4041a = A();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final k1 f3713b = B(false);
+    private static final k1 f4042b = B(false);
 
     /* renamed from: c  reason: collision with root package name */
-    private static final k1 f3714c = B(true);
+    private static final k1 f4043c = B(true);
 
     /* renamed from: d  reason: collision with root package name */
-    private static final k1 f3715d = new m1();
+    private static final k1 f4044d = new m1();
 
     private static Class A() {
         try {
@@ -66,16 +66,16 @@ abstract class f1 {
     }
 
     public static k1 G() {
-        return f3713b;
+        return f4042b;
     }
 
     public static k1 H() {
-        return f3714c;
+        return f4043c;
     }
 
     public static void I(Class cls) {
         Class cls2;
-        if (!w.class.isAssignableFrom(cls) && (cls2 = f3712a) != null && !cls2.isAssignableFrom(cls)) {
+        if (!w.class.isAssignableFrom(cls) && (cls2 = f4041a) != null && !cls2.isAssignableFrom(cls)) {
             throw new IllegalArgumentException("Message classes must extend GeneratedMessage or GeneratedMessageLite");
         }
     }
@@ -100,7 +100,7 @@ abstract class f1 {
     }
 
     public static k1 L() {
-        return f3715d;
+        return f4044d;
     }
 
     public static void M(int i10, List list, r1 r1Var, boolean z10) {
@@ -483,11 +483,11 @@ abstract class f1 {
         if (list instanceof d0) {
             d0 d0Var = (d0) list;
             while (i11 < size) {
-                Object S0 = d0Var.S0(i11);
-                if (S0 instanceof g) {
-                    O2 = j.g((g) S0);
+                Object O0 = d0Var.O0(i11);
+                if (O0 instanceof g) {
+                    O2 = j.g((g) O0);
                 } else {
-                    O2 = j.O((String) S0);
+                    O2 = j.O((String) O0);
                 }
                 P += O2;
                 i11++;

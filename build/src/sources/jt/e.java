@@ -1,39 +1,17 @@
 package jt;
 
-import kotlin.Result;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.text.StringsKt;
+import kotlinx.serialization.descriptors.SerialDescriptor;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class e {
-
-    /* renamed from: a */
-    private static final int f31313a;
-
-    static {
-        Object b10;
-        int i10;
-        try {
-            Result.a aVar = Result.f31985e;
-            String property = System.getProperty("kotlinx.serialization.json.pool.size");
-            Intrinsics.checkNotNullExpressionValue(property, "getProperty(...)");
-            b10 = Result.b(StringsKt.toIntOrNull(property));
-        } catch (Throwable th2) {
-            Result.a aVar2 = Result.f31985e;
-            b10 = Result.b(kotlin.c.a(th2));
-        }
-        if (Result.g(b10)) {
-            b10 = null;
-        }
-        Integer num = (Integer) b10;
-        if (num != null) {
-            i10 = num.intValue();
-        } else {
-            i10 = 2097152;
-        }
-        f31313a = i10;
+public final class e extends x0 {
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public e(SerialDescriptor elementDesc) {
+        super(elementDesc, null);
+        Intrinsics.checkNotNullParameter(elementDesc, "elementDesc");
     }
 
-    public static final /* synthetic */ int a() {
-        return f31313a;
+    @Override // kotlinx.serialization.descriptors.SerialDescriptor
+    public String h() {
+        return "kotlin.collections.ArrayList";
     }
 }

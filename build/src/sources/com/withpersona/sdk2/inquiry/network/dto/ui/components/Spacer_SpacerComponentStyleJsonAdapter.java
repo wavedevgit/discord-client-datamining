@@ -46,21 +46,21 @@ public final class Spacer_SpacerComponentStyleJsonAdapter extends h {
     @NotNull
     public Spacer.SpacerComponentStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         AttributeStyles.SpacerHeightStyle spacerHeightStyle = null;
         AttributeStyles.SpacerWidthStyle spacerWidthStyle = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 spacerHeightStyle = (AttributeStyles.SpacerHeightStyle) this.nullableSpacerHeightStyleAdapter.fromJson(reader);
-            } else if (W == 1) {
+            } else if (J == 1) {
                 spacerWidthStyle = (AttributeStyles.SpacerWidthStyle) this.nullableSpacerWidthStyleAdapter.fromJson(reader);
             }
         }
-        reader.z();
+        reader.D();
         return new Spacer.SpacerComponentStyle(spacerHeightStyle, spacerWidthStyle);
     }
 
@@ -69,11 +69,11 @@ public final class Spacer_SpacerComponentStyleJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (spacerComponentStyle != null) {
             writer.k();
-            writer.W("height");
+            writer.J("height");
             this.nullableSpacerHeightStyleAdapter.toJson(writer, spacerComponentStyle.getHeight());
-            writer.W("width");
+            writer.J("width");
             this.nullableSpacerWidthStyleAdapter.toJson(writer, spacerComponentStyle.getWidth());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

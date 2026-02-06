@@ -3,26 +3,26 @@ package kotlin.time;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 class d extends c {
-    public static final ks.b d(char c10, boolean z10) {
+    public static final ms.b d(char c10, boolean z10) {
         if (!z10) {
             if (c10 == 'D') {
-                return ks.b.f36131s;
+                return ms.b.f38287s;
             }
             throw new IllegalArgumentException("Invalid or unsupported duration ISO non-time unit: " + c10);
         } else if (c10 != 'H') {
             if (c10 != 'M') {
                 if (c10 == 'S') {
-                    return ks.b.f36128p;
+                    return ms.b.f38284p;
                 }
                 throw new IllegalArgumentException("Invalid duration ISO time unit: " + c10);
             }
-            return ks.b.f36129q;
+            return ms.b.f38285q;
         } else {
-            return ks.b.f36130r;
+            return ms.b.f38286r;
         }
     }
 
-    public static final ks.b e(String shortName) {
+    public static final ms.b e(String shortName) {
         Intrinsics.checkNotNullParameter(shortName, "shortName");
         int hashCode = shortName.hashCode();
         if (hashCode != 100) {
@@ -32,25 +32,25 @@ class d extends c {
                         if (hashCode != 3494) {
                             if (hashCode != 3525) {
                                 if (hashCode == 3742 && shortName.equals("us")) {
-                                    return ks.b.f36126i;
+                                    return ms.b.f38282i;
                                 }
                             } else if (shortName.equals("ns")) {
-                                return ks.b.f36125e;
+                                return ms.b.f38281e;
                             }
                         } else if (shortName.equals("ms")) {
-                            return ks.b.f36127o;
+                            return ms.b.f38283o;
                         }
                     } else if (shortName.equals("s")) {
-                        return ks.b.f36128p;
+                        return ms.b.f38284p;
                     }
                 } else if (shortName.equals("m")) {
-                    return ks.b.f36129q;
+                    return ms.b.f38285q;
                 }
             } else if (shortName.equals("h")) {
-                return ks.b.f36130r;
+                return ms.b.f38286r;
             }
         } else if (shortName.equals("d")) {
-            return ks.b.f36131s;
+            return ms.b.f38287s;
         }
         throw new IllegalArgumentException("Unknown duration unit short name: " + shortName);
     }

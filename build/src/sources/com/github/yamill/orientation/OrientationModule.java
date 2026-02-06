@@ -14,8 +14,8 @@ import kotlin.enums.EnumEntries;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
-import or.v;
 import org.jetbrains.annotations.NotNull;
+import qr.v;
 @Metadata(d1 = {"\u0000H\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0010$\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0012\u0018\u00002\u00020\u0001:\u0001*B\u000f\u0012\u0006\u0010\u0003\u001a\u00020\u0002¢\u0006\u0004\b\u0004\u0010\u0005J/\u0010\f\u001a\u00020\u000b2\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u00062\b\b\u0002\u0010\t\u001a\u00020\b2\b\b\u0002\u0010\n\u001a\u00020\bH\u0002¢\u0006\u0004\b\f\u0010\rJ\u0019\u0010\u0011\u001a\u0004\u0018\u00010\u00102\u0006\u0010\u000f\u001a\u00020\u000eH\u0002¢\u0006\u0004\b\u0011\u0010\u0012J\u000f\u0010\u0013\u001a\u00020\u0010H\u0016¢\u0006\u0004\b\u0013\u0010\u0014J\u001d\u0010\u0017\u001a\u0010\u0012\u0004\u0012\u00020\u0010\u0012\u0006\u0012\u0004\u0018\u00010\u00160\u0015H\u0016¢\u0006\u0004\b\u0017\u0010\u0018J\u0017\u0010\u001b\u001a\u00020\u000b2\u0006\u0010\u001a\u001a\u00020\u0019H\u0007¢\u0006\u0004\b\u001b\u0010\u001cJ\u0017\u0010\u001d\u001a\u00020\u000b2\u0006\u0010\u001d\u001a\u00020\bH\u0007¢\u0006\u0004\b\u001d\u0010\u001eJ\u000f\u0010\u001f\u001a\u00020\u000bH\u0007¢\u0006\u0004\b\u001f\u0010 J\u000f\u0010!\u001a\u00020\u000bH\u0007¢\u0006\u0004\b!\u0010 J\u000f\u0010\"\u001a\u00020\u000bH\u0007¢\u0006\u0004\b\"\u0010 J\u000f\u0010#\u001a\u00020\u000bH\u0007¢\u0006\u0004\b#\u0010 J\u000f\u0010$\u001a\u00020\u000bH\u0007¢\u0006\u0004\b$\u0010 R\u0017\u0010\u0003\u001a\u00020\u00028\u0006¢\u0006\f\n\u0004\b\u0003\u0010%\u001a\u0004\b&\u0010'R\u0018\u0010\u0007\u001a\u0004\u0018\u00010\u00068\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\u0007\u0010(R\u0016\u0010\t\u001a\u00020\b8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\t\u0010)R\u0016\u0010\n\u001a\u00020\b8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\n\u0010)¨\u0006+"}, d2 = {"Lcom/github/yamill/orientation/OrientationModule;", "Lcom/facebook/react/bridge/ReactContextBaseJavaModule;", "Lcom/facebook/react/bridge/ReactApplicationContext;", "reactContext", "<init>", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "Lcom/github/yamill/orientation/OrientationModule$a;", "lockState", "", "autoRotateEnabled", "autoRotateIgnored", "", "updateOrientation", "(Lcom/github/yamill/orientation/OrientationModule$a;ZZ)V", "", "orientation", "", "getOrientationString", "(I)Ljava/lang/String;", "getName", "()Ljava/lang/String;", "", "", "getConstants", "()Ljava/util/Map;", "Lcom/facebook/react/bridge/Callback;", "callback", "getOrientation", "(Lcom/facebook/react/bridge/Callback;)V", "ignoreAutoRotate", "(Z)V", "lockToPortrait", "()V", "lockToLandscape", "lockToLandscapeLeft", "lockToLandscapeRight", "unlockAllOrientations", "Lcom/facebook/react/bridge/ReactApplicationContext;", "getReactContext", "()Lcom/facebook/react/bridge/ReactApplicationContext;", "Lcom/github/yamill/orientation/OrientationModule$a;", "Z", "a", "react-native-orientation_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class OrientationModule extends ReactContextBaseJavaModule {
@@ -32,44 +32,44 @@ public final class OrientationModule extends ReactContextBaseJavaModule {
     public static final class a {
 
         /* renamed from: e  reason: collision with root package name */
-        public static final a f11592e = new a("LOCKED_PORTRAIT", 0, 1);
+        public static final a f11491e = new a("LOCKED_PORTRAIT", 0, 1);
 
         /* renamed from: i  reason: collision with root package name */
-        public static final a f11593i = new a("LOCKED_LANDSCAPE", 1, 6);
+        public static final a f11492i = new a("LOCKED_LANDSCAPE", 1, 6);
 
         /* renamed from: o  reason: collision with root package name */
-        public static final a f11594o = new a("LOCKED_LANDSCAPE_LEFT", 2, 0);
+        public static final a f11493o = new a("LOCKED_LANDSCAPE_LEFT", 2, 0);
 
         /* renamed from: p  reason: collision with root package name */
-        public static final a f11595p = new a("LOCKED_LANDSCAPE_RIGHT", 3, 8);
+        public static final a f11494p = new a("LOCKED_LANDSCAPE_RIGHT", 3, 8);
 
         /* renamed from: q  reason: collision with root package name */
-        public static final a f11596q = new a("UNLOCKED", 4, 4);
+        public static final a f11495q = new a("UNLOCKED", 4, 4);
 
         /* renamed from: r  reason: collision with root package name */
-        public static final a f11597r = new a("UNSPECIFIED", 5, -1);
+        public static final a f11496r = new a("UNSPECIFIED", 5, -1);
 
         /* renamed from: s  reason: collision with root package name */
-        private static final /* synthetic */ a[] f11598s;
+        private static final /* synthetic */ a[] f11497s;
 
         /* renamed from: t  reason: collision with root package name */
-        private static final /* synthetic */ EnumEntries f11599t;
+        private static final /* synthetic */ EnumEntries f11498t;
 
         /* renamed from: d  reason: collision with root package name */
-        private final int f11600d;
+        private final int f11499d;
 
         static {
             a[] a10 = a();
-            f11598s = a10;
-            f11599t = vr.a.a(a10);
+            f11497s = a10;
+            f11498t = xr.a.a(a10);
         }
 
         private a(String str, int i10, int i11) {
-            this.f11600d = i11;
+            this.f11499d = i11;
         }
 
         private static final /* synthetic */ a[] a() {
-            return new a[]{f11592e, f11593i, f11594o, f11595p, f11596q, f11597r};
+            return new a[]{f11491e, f11492i, f11493o, f11494p, f11495q, f11496r};
         }
 
         public static a valueOf(String str) {
@@ -77,11 +77,11 @@ public final class OrientationModule extends ReactContextBaseJavaModule {
         }
 
         public static a[] values() {
-            return (a[]) f11598s.clone();
+            return (a[]) f11497s.clone();
         }
 
         public final int d() {
-            return this.f11600d;
+            return this.f11499d;
         }
     }
 
@@ -119,7 +119,7 @@ public final class OrientationModule extends ReactContextBaseJavaModule {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit _init_$lambda$0(OrientationModule orientationModule, boolean z10) {
         updateOrientation$default(orientationModule, null, z10, false, 5, null);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -157,7 +157,7 @@ public final class OrientationModule extends ReactContextBaseJavaModule {
                 if ((z10 || z11) && (currentActivity = this.reactContext.getCurrentActivity()) != null) {
                     currentActivity.setRequestedOrientation(aVar.d());
                 }
-                if (!z10 && !z11 && aVar != (aVar2 = a.f11597r) && (currentActivity2 = this.reactContext.getCurrentActivity()) != null) {
+                if (!z10 && !z11 && aVar != (aVar2 = a.f11496r) && (currentActivity2 = this.reactContext.getCurrentActivity()) != null) {
                     currentActivity2.setRequestedOrientation(aVar2.d());
                 }
             }
@@ -213,27 +213,27 @@ public final class OrientationModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void lockToLandscape() {
-        updateOrientation$default(this, a.f11593i, false, false, 6, null);
+        updateOrientation$default(this, a.f11492i, false, false, 6, null);
     }
 
     @ReactMethod
     public final void lockToLandscapeLeft() {
-        updateOrientation$default(this, a.f11594o, false, false, 6, null);
+        updateOrientation$default(this, a.f11493o, false, false, 6, null);
     }
 
     @ReactMethod
     public final void lockToLandscapeRight() {
-        updateOrientation$default(this, a.f11595p, false, false, 6, null);
+        updateOrientation$default(this, a.f11494p, false, false, 6, null);
     }
 
     @ReactMethod
     @SuppressLint({"SourceLockedOrientationActivity"})
     public final void lockToPortrait() {
-        updateOrientation$default(this, a.f11592e, false, false, 6, null);
+        updateOrientation$default(this, a.f11491e, false, false, 6, null);
     }
 
     @ReactMethod
     public final void unlockAllOrientations() {
-        updateOrientation$default(this, a.f11596q, false, false, 6, null);
+        updateOrientation$default(this, a.f11495q, false, false, 6, null);
     }
 }

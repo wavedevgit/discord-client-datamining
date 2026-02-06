@@ -7,17 +7,17 @@ import kotlin.jvm.internal.LongCompanionObject;
 public final class x extends b implements l0 {
 
     /* renamed from: r  reason: collision with root package name */
-    static final pt.p f40292r = new x();
+    static final rt.p f39647r = new x();
     private static final long serialVersionUID = 5930990958663061693L;
 
     /* renamed from: o  reason: collision with root package name */
-    private final transient Long f40293o;
+    private final transient Long f39648o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final transient Long f40294p;
+    private final transient Long f39649p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final transient pt.t f40295q;
+    private final transient rt.t f39650q;
 
     private x() {
         this("DAY_OVERFLOW", Long.MIN_VALUE, LongCompanionObject.MAX_VALUE);
@@ -32,49 +32,49 @@ public final class x extends b implements l0 {
         Object D0 = g0.D0(name());
         if (D0 == null) {
             if (name().equals("DAY_OVERFLOW")) {
-                return f40292r;
+                return f39647r;
             }
             throw new InvalidObjectException(name());
         }
         return D0;
     }
 
-    @Override // pt.p
-    public boolean B() {
+    @Override // rt.p
+    public boolean A() {
+        return false;
+    }
+
+    @Override // rt.p
+    public boolean D() {
         return true;
     }
 
-    @Override // pt.p
+    @Override // rt.p
     /* renamed from: H */
     public Long e() {
-        return this.f40294p;
+        return this.f39649p;
     }
 
-    @Override // pt.p
+    @Override // rt.p
     /* renamed from: I */
-    public Long A() {
-        return this.f40293o;
+    public Long B() {
+        return this.f39648o;
     }
 
-    @Override // pt.p
+    @Override // rt.p
     public Class getType() {
         return Long.class;
     }
 
     @Override // net.time4j.l0
-    public /* bridge */ /* synthetic */ o v(Number number) {
+    public /* bridge */ /* synthetic */ o t(Number number) {
         return super.F((Long) number);
-    }
-
-    @Override // pt.p
-    public boolean z() {
-        return false;
     }
 
     private x(String str, long j10, long j11) {
         super(str);
-        this.f40293o = Long.valueOf(j10);
-        this.f40294p = Long.valueOf(j11);
-        this.f40295q = new m0(this, true);
+        this.f39648o = Long.valueOf(j10);
+        this.f39649p = Long.valueOf(j11);
+        this.f39650q = new m0(this, true);
     }
 }

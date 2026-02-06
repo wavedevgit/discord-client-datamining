@@ -1,45 +1,55 @@
 package pu;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.util.Iterator;
-import kotlin.collections.ArrayDeque;
+import java.io.Closeable;
+import java.util.zip.Inflater;
 import kotlin.jvm.internal.Intrinsics;
-import ou.c0;
+import kotlin.jvm.internal.LongCompanionObject;
+import okio.Buffer;
+import okio.Source;
+import qu.o;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class c {
-    public static final void a(ou.h hVar, c0 dir, boolean z10) {
-        Intrinsics.checkNotNullParameter(hVar, "<this>");
-        Intrinsics.checkNotNullParameter(dir, "dir");
-        ArrayDeque arrayDeque = new ArrayDeque();
-        for (c0 c0Var = dir; c0Var != null && !hVar.j(c0Var); c0Var = c0Var.i()) {
-            arrayDeque.addFirst(c0Var);
-        }
-        if (z10 && arrayDeque.isEmpty()) {
-            throw new IOException(dir + " already exists.");
-        }
-        Iterator<E> it = arrayDeque.iterator();
-        while (it.hasNext()) {
-            hVar.f((c0) it.next());
-        }
+public final class c implements Closeable {
+
+    /* renamed from: d  reason: collision with root package name */
+    private final boolean f45668d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private final Buffer f45669e;
+
+    /* renamed from: i  reason: collision with root package name */
+    private final Inflater f45670i;
+
+    /* renamed from: o  reason: collision with root package name */
+    private final o f45671o;
+
+    public c(boolean z10) {
+        this.f45668d = z10;
+        Buffer buffer = new Buffer();
+        this.f45669e = buffer;
+        Inflater inflater = new Inflater(true);
+        this.f45670i = inflater;
+        this.f45671o = new o((Source) buffer, inflater);
     }
 
-    public static final boolean b(ou.h hVar, c0 path) {
-        Intrinsics.checkNotNullParameter(hVar, "<this>");
-        Intrinsics.checkNotNullParameter(path, "path");
-        if (hVar.m(path) != null) {
-            return true;
+    public final void a(Buffer buffer) {
+        Intrinsics.checkNotNullParameter(buffer, "buffer");
+        if (this.f45669e.size() == 0) {
+            if (this.f45668d) {
+                this.f45670i.reset();
+            }
+            this.f45669e.B0(buffer);
+            this.f45669e.writeInt(65535);
+            long bytesRead = this.f45670i.getBytesRead() + this.f45669e.size();
+            do {
+                this.f45671o.a(buffer, LongCompanionObject.MAX_VALUE);
+            } while (this.f45670i.getBytesRead() < bytesRead);
+            return;
         }
-        return false;
+        throw new IllegalArgumentException("Failed requirement.");
     }
 
-    public static final ou.g c(ou.h hVar, c0 path) {
-        Intrinsics.checkNotNullParameter(hVar, "<this>");
-        Intrinsics.checkNotNullParameter(path, "path");
-        ou.g m10 = hVar.m(path);
-        if (m10 != null) {
-            return m10;
-        }
-        throw new FileNotFoundException("no such file: " + path);
+    @Override // java.io.Closeable, java.lang.AutoCloseable
+    public void close() {
+        this.f45671o.close();
     }
 }

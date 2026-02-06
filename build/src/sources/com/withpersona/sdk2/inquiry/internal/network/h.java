@@ -11,32 +11,32 @@ public abstract class h {
     public static final class a extends h {
 
         /* renamed from: a  reason: collision with root package name */
-        private final InternalErrorInfo f19341a;
+        private final InternalErrorInfo f19321a;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public a(InternalErrorInfo cause) {
             super(null);
             Intrinsics.checkNotNullParameter(cause, "cause");
-            this.f19341a = cause;
+            this.f19321a = cause;
         }
 
         public final InternalErrorInfo a() {
-            return this.f19341a;
+            return this.f19321a;
         }
 
         public boolean equals(Object obj) {
             if (this == obj) {
                 return true;
             }
-            return (obj instanceof a) && Intrinsics.areEqual(this.f19341a, ((a) obj).f19341a);
+            return (obj instanceof a) && Intrinsics.areEqual(this.f19321a, ((a) obj).f19321a);
         }
 
         public int hashCode() {
-            return this.f19341a.hashCode();
+            return this.f19321a.hashCode();
         }
 
         public String toString() {
-            InternalErrorInfo internalErrorInfo = this.f19341a;
+            InternalErrorInfo internalErrorInfo = this.f19321a;
             return "Error(cause=" + internalErrorInfo + ")";
         }
     }
@@ -45,32 +45,32 @@ public abstract class h {
     public static final class b extends h {
 
         /* renamed from: a  reason: collision with root package name */
-        private final l f19342a;
+        private final l f19322a;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public b(l nextState) {
             super(null);
             Intrinsics.checkNotNullParameter(nextState, "nextState");
-            this.f19342a = nextState;
+            this.f19322a = nextState;
         }
 
         public final l a() {
-            return this.f19342a;
+            return this.f19322a;
         }
 
         public boolean equals(Object obj) {
             if (this == obj) {
                 return true;
             }
-            return (obj instanceof b) && Intrinsics.areEqual(this.f19342a, ((b) obj).f19342a);
+            return (obj instanceof b) && Intrinsics.areEqual(this.f19322a, ((b) obj).f19322a);
         }
 
         public int hashCode() {
-            return this.f19342a.hashCode();
+            return this.f19322a.hashCode();
         }
 
         public String toString() {
-            l lVar = this.f19342a;
+            l lVar = this.f19322a;
             return "Success(nextState=" + lVar + ")";
         }
     }

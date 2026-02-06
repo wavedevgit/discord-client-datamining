@@ -1,17 +1,26 @@
 package ng;
 
-import java.util.Objects;
+import yi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-abstract class i7 {
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static void a(Object obj, Object obj2) {
-        if (obj != null) {
-            if (obj2 != null) {
-                return;
-            }
-            throw new NullPointerException("null value in entry: " + obj + "=null");
-        }
-        Objects.toString(obj2);
-        throw new NullPointerException("null key in entry: null=".concat(String.valueOf(obj2)));
+final class i7 implements yi.d {
+
+    /* renamed from: a  reason: collision with root package name */
+    static final i7 f39881a = new i7();
+
+    static {
+        c.b a10 = yi.c.a("useCases");
+        l2 l2Var = new l2();
+        l2Var.a(1);
+        a10.b(l2Var.b()).a();
+    }
+
+    private i7() {
+    }
+
+    @Override // yi.d
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        android.support.v4.media.session.b.a(obj);
+        yi.e eVar = (yi.e) obj2;
+        throw null;
     }
 }

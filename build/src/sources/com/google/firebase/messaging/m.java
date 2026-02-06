@@ -11,25 +11,25 @@ import java.util.concurrent.Executor;
 public class m {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Object f16506c = new Object();
+    private static final Object f16486c = new Object();
 
     /* renamed from: d  reason: collision with root package name */
-    private static i1 f16507d;
+    private static i1 f16487d;
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f16508a;
+    private final Context f16488a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Executor f16509b = new g2.i();
+    private final Executor f16489b = new g2.i();
 
     public m(Context context) {
-        this.f16508a = context;
+        this.f16488a = context;
     }
 
     public static /* synthetic */ Task a(Context context, Intent intent, boolean z10, Task task) {
         if (com.google.android.gms.common.util.k.e() && ((Integer) task.l()).intValue() == 402) {
-            return e(context, intent, z10).h(new g2.i(), new xg.c() { // from class: com.google.firebase.messaging.k
-                @Override // xg.c
+            return e(context, intent, z10).h(new g2.i(), new yg.c() { // from class: com.google.firebase.messaging.k
+                @Override // yg.c
                 public final Object a(Task task2) {
                     return m.d(task2);
                 }
@@ -57,10 +57,10 @@ public class m {
             } else {
                 f10.c(intent);
             }
-            return xg.m.f(-1);
+            return yg.m.f(-1);
         }
-        return f10.c(intent).h(new g2.i(), new xg.c() { // from class: com.google.firebase.messaging.l
-            @Override // xg.c
+        return f10.c(intent).h(new g2.i(), new yg.c() { // from class: com.google.firebase.messaging.l
+            @Override // yg.c
             public final Object a(Task task) {
                 return m.c(task);
             }
@@ -69,12 +69,12 @@ public class m {
 
     private static i1 f(Context context, String str) {
         i1 i1Var;
-        synchronized (f16506c) {
+        synchronized (f16486c) {
             try {
-                if (f16507d == null) {
-                    f16507d = new i1(context, str);
+                if (f16487d == null) {
+                    f16487d = new i1(context, str);
                 }
-                i1Var = f16507d;
+                i1Var = f16487d;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -88,7 +88,7 @@ public class m {
             intent.putExtra("rawData", Base64.decode(stringExtra, 0));
             intent.removeExtra("gcm.rawData64");
         }
-        return h(this.f16508a, intent);
+        return h(this.f16488a, intent);
     }
 
     public Task h(final Context context, final Intent intent) {
@@ -105,15 +105,15 @@ public class m {
         if (z10 && !z11) {
             return e(context, intent, z11);
         }
-        return xg.m.c(this.f16509b, new Callable() { // from class: com.google.firebase.messaging.i
+        return yg.m.c(this.f16489b, new Callable() { // from class: com.google.firebase.messaging.i
             @Override // java.util.concurrent.Callable
             public final Object call() {
                 Integer valueOf;
                 valueOf = Integer.valueOf(s0.b().g(context, intent));
                 return valueOf;
             }
-        }).i(this.f16509b, new xg.c() { // from class: com.google.firebase.messaging.j
-            @Override // xg.c
+        }).i(this.f16489b, new yg.c() { // from class: com.google.firebase.messaging.j
+            @Override // yg.c
             public final Object a(Task task) {
                 return m.a(context, intent, z11, task);
             }

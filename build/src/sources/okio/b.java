@@ -8,10 +8,10 @@ import okio.Buffer;
 public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Buffer.a f44072a = new Buffer.a();
+    private static final Buffer.a f43178a = new Buffer.a();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final int f44073b = -1234567890;
+    private static final int f43179b = -1234567890;
 
     public static final boolean a(byte[] a10, int i10, byte[] b10, int i11, int i12) {
         Intrinsics.checkNotNullParameter(a10, "a");
@@ -32,16 +32,16 @@ public abstract class b {
     }
 
     public static final int c() {
-        return f44073b;
+        return f43179b;
     }
 
     public static final Buffer.a d() {
-        return f44072a;
+        return f43178a;
     }
 
     public static final int e(ByteString byteString, int i10) {
         Intrinsics.checkNotNullParameter(byteString, "<this>");
-        if (i10 == f44073b) {
+        if (i10 == f43179b) {
             return byteString.G();
         }
         return i10;
@@ -49,7 +49,7 @@ public abstract class b {
 
     public static final int f(byte[] bArr, int i10) {
         Intrinsics.checkNotNullParameter(bArr, "<this>");
-        if (i10 == f44073b) {
+        if (i10 == f43179b) {
             return bArr.length;
         }
         return i10;
@@ -57,7 +57,7 @@ public abstract class b {
 
     public static final Buffer.a g(Buffer.a unsafeCursor) {
         Intrinsics.checkNotNullParameter(unsafeCursor, "unsafeCursor");
-        if (unsafeCursor == f44072a) {
+        if (unsafeCursor == f43178a) {
             return new Buffer.a();
         }
         return unsafeCursor;
@@ -76,7 +76,7 @@ public abstract class b {
     }
 
     public static final String k(byte b10) {
-        return StringsKt.v(new char[]{pu.b.f()[(b10 >> 4) & 15], pu.b.f()[b10 & 15]});
+        return StringsKt.v(new char[]{ru.b.f()[(b10 >> 4) & 15], ru.b.f()[b10 & 15]});
     }
 
     public static final String l(int i10) {
@@ -84,7 +84,7 @@ public abstract class b {
             return "0";
         }
         int i11 = 0;
-        char[] cArr = {pu.b.f()[(i10 >> 28) & 15], pu.b.f()[(i10 >> 24) & 15], pu.b.f()[(i10 >> 20) & 15], pu.b.f()[(i10 >> 16) & 15], pu.b.f()[(i10 >> 12) & 15], pu.b.f()[(i10 >> 8) & 15], pu.b.f()[(i10 >> 4) & 15], pu.b.f()[i10 & 15]};
+        char[] cArr = {ru.b.f()[(i10 >> 28) & 15], ru.b.f()[(i10 >> 24) & 15], ru.b.f()[(i10 >> 20) & 15], ru.b.f()[(i10 >> 16) & 15], ru.b.f()[(i10 >> 12) & 15], ru.b.f()[(i10 >> 8) & 15], ru.b.f()[(i10 >> 4) & 15], ru.b.f()[i10 & 15]};
         while (i11 < 8 && cArr[i11] == '0') {
             i11++;
         }

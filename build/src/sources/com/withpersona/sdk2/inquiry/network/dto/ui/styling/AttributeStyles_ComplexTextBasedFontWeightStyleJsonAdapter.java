@@ -42,27 +42,27 @@ public final class AttributeStyles_ComplexTextBasedFontWeightStyleJsonAdapter ex
     @NotNull
     public AttributeStyles.ComplexTextBasedFontWeightStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         StyleElements.FontWeightContainer fontWeightContainer = null;
         StyleElements.FontWeightContainer fontWeightContainer2 = null;
         StyleElements.FontWeightContainer fontWeightContainer3 = null;
         StyleElements.FontWeightContainer fontWeightContainer4 = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 fontWeightContainer = (StyleElements.FontWeightContainer) this.nullableFontWeightContainerAdapter.fromJson(reader);
-            } else if (W == 1) {
+            } else if (J == 1) {
                 fontWeightContainer2 = (StyleElements.FontWeightContainer) this.nullableFontWeightContainerAdapter.fromJson(reader);
-            } else if (W == 2) {
+            } else if (J == 2) {
                 fontWeightContainer3 = (StyleElements.FontWeightContainer) this.nullableFontWeightContainerAdapter.fromJson(reader);
-            } else if (W == 3) {
+            } else if (J == 3) {
                 fontWeightContainer4 = (StyleElements.FontWeightContainer) this.nullableFontWeightContainerAdapter.fromJson(reader);
             }
         }
-        reader.z();
+        reader.D();
         return new AttributeStyles.ComplexTextBasedFontWeightStyle(fontWeightContainer, fontWeightContainer2, fontWeightContainer3, fontWeightContainer4);
     }
 
@@ -71,15 +71,15 @@ public final class AttributeStyles_ComplexTextBasedFontWeightStyleJsonAdapter ex
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (complexTextBasedFontWeightStyle != null) {
             writer.k();
-            writer.W("value");
+            writer.J("value");
             this.nullableFontWeightContainerAdapter.toJson(writer, complexTextBasedFontWeightStyle.getValue());
-            writer.W(ReactTextInputShadowNode.PROP_PLACEHOLDER);
+            writer.J(ReactTextInputShadowNode.PROP_PLACEHOLDER);
             this.nullableFontWeightContainerAdapter.toJson(writer, complexTextBasedFontWeightStyle.getPlaceholder());
-            writer.W("label");
+            writer.J("label");
             this.nullableFontWeightContainerAdapter.toJson(writer, complexTextBasedFontWeightStyle.getLabel());
-            writer.W("error");
+            writer.J("error");
             this.nullableFontWeightContainerAdapter.toJson(writer, complexTextBasedFontWeightStyle.getError());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

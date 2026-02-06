@@ -1,176 +1,134 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var4 = require;
     var2 = exports;
-    var5 = dependencyMap;
-    var _closure1_slot0 = var4;
-    var _closure1_slot1 = var5;
     var0 = global;
-    var7 = var0.Object;
-    var6 = var7.defineProperty;
+    var5 = var0.Object;
+    var4 = var5.defineProperty;
     var3 = {};
     var0 = true;
     var3.value = var0;
     var0 = '__esModule';
-    var0 = var6.bind(var7)(var2, var0, var3);
+    var0 = var4.bind(var5)(var2, var0, var3);
+    var3 = dependencyMap;
     var0 = 0;
-    var6 = var5[var0];
+    var4 = var3[var0];
     var3 = metroImportDefault;
     var0 = undefined;
-    var3 = var3.bind(var0)(var6);
-    var _closure1_slot2 = var3;
-    var3 = 1;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var3 = var3.NativeModules;
-    var5 = var3.RNIapAmazonModule;
-    var _closure1_slot3 = var5;
-    var3 = function() { // Environment: var1
-        var3 = _closure1_slot2;
+    var3 = var3.bind(var0)(var4);
+    var _closure1_slot0 = var3;
+    var1 = function() { // Environment: var1
+        var3 = _closure1_slot0;
         var2 = undefined;
-        var1 = function*(arg0) { // Environment: var0
-            var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
-                _fun58538: for (var _fun58538_ip = 0;;) switch (_fun58538_ip) {
+        var1 = function*(arg0, arg1) { // Environment: var0
+            var0 = function*(arg0, arg1) { // Original name: ?anon_0_, environment: var0
+                _fun58537: for (var _fun58537_ip = 0;;) switch (_fun58537_ip) {
                     case 0:
                         StartGenerator();
-                        var1 = arg0;
-                        ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 2);
-                        if (var2) {
-                            _fun58538_ip = 164;
-                            continue _fun58538
+                        var9 = arg1;
+                        ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
+                        if (var1) {
+                            _fun58537_ip = 253;
+                            continue _fun58537
                         }
                     case 13:
-                        var10 = var1.developerSecret;
-                        var9 = var1.userId;
-                        var8 = var1.receiptId;
-                        var1 = var1.useSandbox;
+                        var2 = global;
+                        var5 = var2.fetch;
+                        var7 = var2.Object;
+                        var6 = var7.assign;
+                        var3 = {};
+                        var1 = null;
+                        var8 = var1 == var9;
                         var4 = undefined;
-                        if (!(var4 !== var1)) {
-                            _fun58538_ip = 55;
-                            continue _fun58538
+                        var10 = undefined;
+                        if (var8) {
+                            _fun58537_ip = 53;
+                            continue _fun58537
                         }
-                    case 48:
-                        var7 = '';
-                        if (!var1) {
-                            _fun58538_ip = 61;
-                            continue _fun58538
+                    case 47:
+                        var10 = var9.method;
+                    case 53:
+                        var11 = var1 != var10;
+                        var8 = 'GET';
+                        if (!var11) {
+                            _fun58537_ip = 69;
+                            continue _fun58537
                         }
-                    case 55:
-                        var7 = 'sandbox/';
-                    case 61:
-                        var1 = global;
-                        var1 = var1.HermesInternal;
-                        var6 = var1.concat;
-                        var18 = 'https://appstore-sdk.amazon.com/';
-                        var16 = 'version/1.0/verifyReceiptId/developer/';
-                        var14 = '/user/';
-                        var12 = '/receiptId/';
-                        var17 = var7;
-                        var15 = var10;
-                        var13 = var9;
-                        var11 = var8;
-                        var3 = var18[var6](var17, var16, var15, var14, var13, var12, var11, var10);
-                        var2 = _closure1_slot0;
-                        var5 = _closure1_slot1;
-                        var1 = 2;
-                        var1 = var5[var1];
-                        var2 = var2.bind(var4)(var1);
-                        var1 = var2.enhancedFetch;
-                        var1 = var1.bind(var2)(var3);
-                        SaveGenerator(address = 152);
-                    case 150:
-                        return var1;
-                    case 152:
-                        ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 2);
-                        if (var2) {
-                            _fun58538_ip = 161;
-                            continue _fun58538
+                    case 66:
+                        var8 = var10;
+                    case 69:
+                        var3.method = var8;
+                        var8 = {
+                            'Accept': 'application/json',
+                            'Content-Type': 'application/json'
+                        };
+                        var3.headers = var8;
+                        if (!(var1 != var9)) {
+                            _fun58537_ip = 105;
+                            continue _fun58537
                         }
-                    case 158:
-                        return var1;
-                    case 161:
-                        return var1;
-                    case 164:
-                        return var0;
-                }
-            };
-            return var0;
-        };
-        var1 = var3.bind(var2)(var1);
-        var _closure2_slot0 = var1;
-        var0 = function arg0() {
-            var0 = undefined;
-            var3 = _closure2_slot0;
-            var2 = var3.apply;
-            var0 = arguments;
-            var1 = var0;
-            var0 = this;
-            var0 = var2.bind(var3)(var0, var1);
-            return var0;
-        };
-        return var0;
-    };
-    var4 = var3.bind(var0)();
-    var3 = function() { // Environment: var1
-        var3 = _closure1_slot2;
-        var2 = undefined;
-        var1 = function*() { // Environment: var0
-            var0 = function*() { // Original name: ?anon_0_, environment: var0
-                _fun58542: for (var _fun58542_ip = 0;;) switch (_fun58542_ip) {
-                    case 0:
-                        StartGenerator();
-                        ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
+                    case 97:
+                        var1 = var9.body;
                         if (var1) {
-                            _fun58542_ip = 27;
-                            continue _fun58542
+                            _fun58537_ip = 109;
+                            continue _fun58537
                         }
-                    case 7:
-                        var2 = _closure1_slot3;
-                        var1 = var2.verifyLicense;
-                        var1 = var1.bind(var2)();
-                        return var1;
-                    case 27:
-                        return var0;
-                }
-            };
-            return var0;
-        };
-        var1 = var3.bind(var2)(var1);
-        var _closure2_slot0 = var1;
-        var0 = function() {
-            var0 = undefined;
-            var3 = _closure2_slot0;
-            var2 = var3.apply;
-            var0 = arguments;
-            var1 = var0;
-            var0 = this;
-            var0 = var2.bind(var3)(var0, var1);
-            return var0;
-        };
-        return var0;
-    };
-    var3 = var3.bind(var0)();
-    var1 = function() { // Environment: var1
-        var3 = _closure1_slot2;
-        var2 = undefined;
-        var1 = function*(arg0) { // Environment: var0
-            var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
-                _fun58546: for (var _fun58546_ip = 0;;) switch (_fun58546_ip) {
-                    case 0:
-                        StartGenerator();
-                        ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
-                        if (var1) {
-                            _fun58546_ip = 37;
-                            continue _fun58546
-                        }
-                    case 7:
+                    case 105:
+                        var1 = {};
+                        _fun58537_ip = 140;
+                        continue _fun58537;
+                    case 109:
+                        var8 = {};
+                        var11 = var2.JSON;
+                        var10 = var11.stringify;
+                        var9 = var9.body;
+                        var9 = var10.bind(var11)(var9);
+                        var8.body = var9;
+                        var1 = var8;
+                    case 140:
+                        var3 = var6.bind(var7)(var3, var1);
                         var1 = arg0;
-                        var3 = var1.isAmazonDevice;
-                        var2 = _closure1_slot3;
-                        var1 = var2.deepLinkToSubscriptions;
-                        var1 = var1.bind(var2)(var3);
+                        var1 = var5.bind(var4)(var1, var3);
+                        SaveGenerator(address = 159);
+                    case 157:
                         return var1;
-                    case 37:
+                    case 159:
+                        ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 3);
+                        if (var3) {
+                            _fun58537_ip = 250;
+                            continue _fun58537
+                        }
+                    case 165:
+                        var3 = var1.ok;
+                        if (var3) {
+                            _fun58537_ip = 237;
+                            continue _fun58537
+                        }
+                    case 174:
+                        var5 = var2.Object;
+                        var4 = var5.assign;
+                        var6 = var2.Error;
+                        var13 = var1.statusText;
+                        var3 = var6.prototype;
+                        var3 = Object.create(var3, {
+                            constructor: {
+                                value: var6
+                            }
+                        });
+                        var14 = var3;
+                        var2 = new var14[var6](var13, var12);
+                        var3 = var2 instanceof Object ? var2 : var3;
+                        var2 = {};
+                        var6 = var1.status;
+                        var2.statusCode = var6;
+                        var2 = var4.bind(var5)(var3, var2);
+                        throw var2;
+                    case 237:
+                        var2 = var1.json;
+                        var2 = var2.bind(var1)();
+                        return var2;
+                    case 250:
+                        return var1;
+                    case 253:
                         return var0;
                 }
             };
@@ -178,7 +136,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         };
         var1 = var3.bind(var2)(var1);
         var _closure2_slot0 = var1;
-        var0 = function arg0() {
+        var0 = function arg0, arg1() {
             var0 = undefined;
             var3 = _closure2_slot0;
             var2 = var3.apply;
@@ -191,9 +149,6 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1 = var1.bind(var0)();
-    var2.AmazonModule = var5;
-    var2.validateReceiptAmazon = var4;
-    var2.verifyLicense = var3;
-    var2.deepLinkToSubscriptionsAmazon = var1;
+    var2.enhancedFetch = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 27, 7166]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5]);

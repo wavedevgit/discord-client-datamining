@@ -1,70 +1,53 @@
 package bv;
 
-import bv.e;
 import java.util.List;
-import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.Lambda;
+import kotlin.collections.CollectionsKt;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.text.StringsKt;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class c implements qu.b, e {
-
-    /* renamed from: a  reason: collision with root package name */
-    public static final c f7284a = new c();
+public interface c {
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    static final class a extends Lambda implements Function2 {
-
-        /* renamed from: d  reason: collision with root package name */
-        public static final a f7285d = new a();
-
-        a() {
-            super(2);
-        }
-
-        public final Boolean a(int i10, int i11) {
-            boolean z10;
-            if (i10 < i11) {
-                z10 = true;
+    public static final class a {
+        private static Object a(c cVar, Object obj) {
+            String str;
+            String obj2;
+            Object intOrNull;
+            Object obj3 = null;
+            if (obj instanceof String) {
+                str = (String) obj;
             } else {
-                z10 = false;
+                str = null;
             }
-            return Boolean.valueOf(z10);
+            if (str != null && (intOrNull = StringsKt.toIntOrNull(str)) != null) {
+                obj3 = intOrNull;
+            } else if (str != null) {
+                obj3 = StringsKt.p(str);
+            }
+            if (obj3 != null && (obj2 = obj3.toString()) != null) {
+                return obj2;
+            }
+            return obj;
         }
 
-        @Override // kotlin.jvm.functions.Function2
-        public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
-            return a(((Number) obj).intValue(), ((Number) obj2).intValue());
+        private static Object b(c cVar, Object obj) {
+            if (obj instanceof List) {
+                List list = (List) obj;
+                if (list.size() == 1) {
+                    return b(cVar, CollectionsKt.firstOrNull(list));
+                }
+            }
+            return obj;
+        }
+
+        public static Object c(c cVar, Object obj) {
+            Object b10 = b(cVar, obj);
+            if (!Intrinsics.areEqual(b10, obj)) {
+                return new b(a(cVar, b10));
+            }
+            return a(cVar, obj);
         }
     }
 
-    private c() {
-    }
-
-    @Override // ru.c
-    public boolean b(List list, Function2 function2) {
-        return e.a.b(this, list, function2);
-    }
-
-    @Override // ru.a
-    public Boolean c(Object obj) {
-        return e.a.f(this, obj);
-    }
-
-    @Override // ru.b
-    public List d(Comparable comparable, Comparable comparable2) {
-        return e.a.e(this, comparable, comparable2);
-    }
-
-    public boolean e(List list, Function2 function2) {
-        return e.a.c(this, list, function2);
-    }
-
-    @Override // qu.b
-    public Object f(Object obj, Object obj2) {
-        return Boolean.valueOf(e(vv.a.c(obj), a.f7285d));
-    }
-
-    @Override // ru.b
-    public List g(Comparable comparable, Comparable comparable2) {
-        return e.a.d(this, comparable, comparable2);
-    }
+    Object e(Object obj);
 }

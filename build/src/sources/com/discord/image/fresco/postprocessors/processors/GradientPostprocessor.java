@@ -12,9 +12,9 @@ import kotlin.Pair;
 import kotlin.Unit;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import or.p;
-import or.v;
 import org.jetbrains.annotations.NotNull;
+import qr.p;
+import qr.v;
 @Metadata(d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u0000\u0018\u0000 \n2\u00020\u0001:\u0001\nB\u000f\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0004\b\u0004\u0010\u0005J\u0010\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\tH\u0016R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u000b"}, d2 = {"Lcom/discord/image/fresco/postprocessors/processors/GradientPostprocessor;", "Lcom/facebook/imagepipeline/request/BasePostprocessor;", "gradient", "Lcom/discord/image/fresco/postprocessors/PostProcessor$Gradient;", "<init>", "(Lcom/discord/image/fresco/postprocessors/PostProcessor$Gradient;)V", "process", "", "bitmap", "Landroid/graphics/Bitmap;", "Companion", "fresco_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class GradientPostprocessor extends BasePostprocessor {
@@ -32,32 +32,32 @@ public final class GradientPostprocessor extends BasePostprocessor {
         private static final class Point {
 
             /* renamed from: x  reason: collision with root package name */
-            private final float f9439x;
+            private final float f9338x;
 
             /* renamed from: y  reason: collision with root package name */
-            private final float f9440y;
+            private final float f9339y;
 
             public Point(float f10, float f11) {
-                this.f9439x = f10;
-                this.f9440y = f11;
+                this.f9338x = f10;
+                this.f9339y = f11;
             }
 
             public static /* synthetic */ Point copy$default(Point point, float f10, float f11, int i10, Object obj) {
                 if ((i10 & 1) != 0) {
-                    f10 = point.f9439x;
+                    f10 = point.f9338x;
                 }
                 if ((i10 & 2) != 0) {
-                    f11 = point.f9440y;
+                    f11 = point.f9339y;
                 }
                 return point.copy(f10, f11);
             }
 
             public final float component1() {
-                return this.f9439x;
+                return this.f9338x;
             }
 
             public final float component2() {
-                return this.f9440y;
+                return this.f9339y;
             }
 
             @NotNull
@@ -71,27 +71,27 @@ public final class GradientPostprocessor extends BasePostprocessor {
                 }
                 if (obj instanceof Point) {
                     Point point = (Point) obj;
-                    return Float.compare(this.f9439x, point.f9439x) == 0 && Float.compare(this.f9440y, point.f9440y) == 0;
+                    return Float.compare(this.f9338x, point.f9338x) == 0 && Float.compare(this.f9339y, point.f9339y) == 0;
                 }
                 return false;
             }
 
             public final float getX() {
-                return this.f9439x;
+                return this.f9338x;
             }
 
             public final float getY() {
-                return this.f9440y;
+                return this.f9339y;
             }
 
             public int hashCode() {
-                return (Float.hashCode(this.f9439x) * 31) + Float.hashCode(this.f9440y);
+                return (Float.hashCode(this.f9338x) * 31) + Float.hashCode(this.f9339y);
             }
 
             @NotNull
             public String toString() {
-                float f10 = this.f9439x;
-                float f11 = this.f9440y;
+                float f10 = this.f9338x;
+                float f11 = this.f9339y;
                 return "Point(x=" + f10 + ", y=" + f11 + ")";
             }
         }
@@ -163,7 +163,7 @@ public final class GradientPostprocessor extends BasePostprocessor {
         float height = bitmap.getHeight();
         Paint paint = new Paint();
         paint.setShader(new LinearGradient(point.getX(), point.getY(), point2.getX(), point2.getY(), new int[]{this.gradient.getStartColor(), this.gradient.getEndColor()}, new float[]{this.gradient.getStartPosition(), this.gradient.getEndPosition()}, Shader.TileMode.CLAMP));
-        Unit unit = Unit.f31988a;
+        Unit unit = Unit.f32008a;
         new Canvas(bitmap).drawRect(0.0f, 0.0f, bitmap.getWidth(), height, paint);
     }
 }

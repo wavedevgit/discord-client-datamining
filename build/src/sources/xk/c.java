@@ -1,207 +1,89 @@
 package xk;
-/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final b f53931a;
+    private int f54704a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int[] f53932b;
+    private String f54705b;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public c(b bVar, int[] iArr) {
-        if (iArr.length != 0) {
-            this.f53931a = bVar;
-            int length = iArr.length;
-            int i10 = 1;
-            if (length > 1 && iArr[0] == 0) {
-                while (i10 < length && iArr[i10] == 0) {
-                    i10++;
-                }
-                if (i10 == length) {
-                    this.f53932b = new int[]{0};
-                    return;
-                }
-                int[] iArr2 = new int[length - i10];
-                this.f53932b = iArr2;
-                System.arraycopy(iArr, i10, iArr2, 0, iArr2.length);
-                return;
-            }
-            this.f53932b = iArr;
-            return;
-        }
-        throw new IllegalArgumentException();
+    /* renamed from: c  reason: collision with root package name */
+    private boolean f54706c;
+
+    /* renamed from: e  reason: collision with root package name */
+    private String f54708e;
+
+    /* renamed from: f  reason: collision with root package name */
+    private String f54709f;
+
+    /* renamed from: g  reason: collision with root package name */
+    private String f54710g;
+
+    /* renamed from: k  reason: collision with root package name */
+    private int[] f54714k;
+
+    /* renamed from: d  reason: collision with root package name */
+    private int f54707d = -1;
+
+    /* renamed from: h  reason: collision with root package name */
+    private long f54711h = -1;
+
+    /* renamed from: i  reason: collision with root package name */
+    private long f54712i = -1;
+
+    /* renamed from: j  reason: collision with root package name */
+    private int f54713j = -1;
+
+    public String a() {
+        return this.f54705b;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public c a(c cVar) {
-        if (this.f53931a.equals(cVar.f53931a)) {
-            if (e()) {
-                return cVar;
-            }
-            if (cVar.e()) {
-                return this;
-            }
-            int[] iArr = this.f53932b;
-            int[] iArr2 = cVar.f53932b;
-            if (iArr.length <= iArr2.length) {
-                iArr = iArr2;
-                iArr2 = iArr;
-            }
-            int[] iArr3 = new int[iArr.length];
-            int length = iArr.length - iArr2.length;
-            System.arraycopy(iArr, 0, iArr3, 0, length);
-            for (int i10 = length; i10 < iArr.length; i10++) {
-                iArr3[i10] = this.f53931a.a(iArr2[i10 - length], iArr[i10]);
-            }
-            return new c(this.f53931a, iArr3);
-        }
-        throw new IllegalArgumentException("ModulusPolys do not have same ModulusGF field");
+    public boolean b() {
+        return this.f54706c;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public int b(int i10) {
-        if (i10 == 0) {
-            return c(0);
-        }
-        if (i10 == 1) {
-            int i11 = 0;
-            for (int i12 : this.f53932b) {
-                i11 = this.f53931a.a(i11, i12);
-            }
-            return i11;
-        }
-        int[] iArr = this.f53932b;
-        int i13 = iArr[0];
-        int length = iArr.length;
-        for (int i14 = 1; i14 < length; i14++) {
-            b bVar = this.f53931a;
-            i13 = bVar.a(bVar.i(i10, i13), this.f53932b[i14]);
-        }
-        return i13;
+    public void c(String str) {
+        this.f54709f = str;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public int c(int i10) {
-        int[] iArr = this.f53932b;
-        return iArr[(iArr.length - 1) - i10];
+    public void d(int i10) {
+        this.f54713j = i10;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public int d() {
-        return this.f53932b.length - 1;
+    public void e(String str) {
+        this.f54705b = str;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public boolean e() {
-        if (this.f53932b[0] != 0) {
-            return false;
-        }
-        return true;
+    public void f(String str) {
+        this.f54710g = str;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public c f(int i10) {
-        if (i10 == 0) {
-            return this.f53931a.f();
-        }
-        if (i10 == 1) {
-            return this;
-        }
-        int length = this.f53932b.length;
-        int[] iArr = new int[length];
-        for (int i11 = 0; i11 < length; i11++) {
-            iArr[i11] = this.f53931a.i(this.f53932b[i11], i10);
-        }
-        return new c(this.f53931a, iArr);
+    public void g(long j10) {
+        this.f54711h = j10;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public c g(c cVar) {
-        if (this.f53931a.equals(cVar.f53931a)) {
-            if (!e() && !cVar.e()) {
-                int[] iArr = this.f53932b;
-                int length = iArr.length;
-                int[] iArr2 = cVar.f53932b;
-                int length2 = iArr2.length;
-                int[] iArr3 = new int[(length + length2) - 1];
-                for (int i10 = 0; i10 < length; i10++) {
-                    int i11 = iArr[i10];
-                    for (int i12 = 0; i12 < length2; i12++) {
-                        int i13 = i10 + i12;
-                        b bVar = this.f53931a;
-                        iArr3[i13] = bVar.a(iArr3[i13], bVar.i(i11, iArr2[i12]));
-                    }
-                }
-                return new c(this.f53931a, iArr3);
-            }
-            return this.f53931a.f();
-        }
-        throw new IllegalArgumentException("ModulusPolys do not have same ModulusGF field");
+    public void h(boolean z10) {
+        this.f54706c = z10;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public c h(int i10, int i11) {
-        if (i10 >= 0) {
-            if (i11 == 0) {
-                return this.f53931a.f();
-            }
-            int length = this.f53932b.length;
-            int[] iArr = new int[i10 + length];
-            for (int i12 = 0; i12 < length; i12++) {
-                iArr[i12] = this.f53931a.i(this.f53932b[i12], i11);
-            }
-            return new c(this.f53931a, iArr);
-        }
-        throw new IllegalArgumentException();
+    public void i(int[] iArr) {
+        this.f54714k = iArr;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public c i() {
-        int length = this.f53932b.length;
-        int[] iArr = new int[length];
-        for (int i10 = 0; i10 < length; i10++) {
-            iArr[i10] = this.f53931a.j(0, this.f53932b[i10]);
-        }
-        return new c(this.f53931a, iArr);
+    public void j(int i10) {
+        this.f54707d = i10;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public c j(c cVar) {
-        if (this.f53931a.equals(cVar.f53931a)) {
-            if (cVar.e()) {
-                return this;
-            }
-            return a(cVar.i());
-        }
-        throw new IllegalArgumentException("ModulusPolys do not have same ModulusGF field");
+    public void k(int i10) {
+        this.f54704a = i10;
     }
 
-    public String toString() {
-        StringBuilder sb2 = new StringBuilder(d() * 8);
-        for (int d10 = d(); d10 >= 0; d10--) {
-            int c10 = c(d10);
-            if (c10 != 0) {
-                if (c10 < 0) {
-                    sb2.append(" - ");
-                    c10 = -c10;
-                } else if (sb2.length() > 0) {
-                    sb2.append(" + ");
-                }
-                if (d10 == 0 || c10 != 1) {
-                    sb2.append(c10);
-                }
-                if (d10 != 0) {
-                    if (d10 == 1) {
-                        sb2.append('x');
-                    } else {
-                        sb2.append("x^");
-                        sb2.append(d10);
-                    }
-                }
-            }
-        }
-        return sb2.toString();
+    public void l(String str) {
+        this.f54708e = str;
+    }
+
+    public void m(long j10) {
+        this.f54712i = j10;
     }
 }

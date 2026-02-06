@@ -1,129 +1,115 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var4 = require;
-    var2 = exports;
-    var5 = dependencyMap;
-    var6 = function arg0() {
-        _fun97736: for (var _fun97736_ip = 0;;) switch (_fun97736_ip) {
-            case 0:
-                var2 = arg0;
-                if (!var2) {
-                    _fun97736_ip = 18;
-                    continue _fun97736
-                }
-            case 6:
-                var1 = var2.__esModule;
-                var0 = var2;
-                if (var1) {
-                    _fun97736_ip = 27;
-                    continue _fun97736
-                }
-            case 18:
-                var1 = {};
-                var1.default = var2;
-                var0 = var1;
-            case 27:
-                return var0;
-        }
-    };
-    var0 = global;
-    var8 = var0.Object;
-    var7 = var8.defineProperty;
-    var3 = {};
-    var0 = true;
-    var3.value = var0;
-    var0 = '__esModule';
-    var0 = var7.bind(var8)(var2, var0, var3);
-    var0 = undefined;
-    var2.default = var0;
-    var3 = 0;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var3 = var6.bind(var0)(var3);
-    var3 = 1;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var3 = var6.bind(var0)(var3);
-    var _closure1_slot0 = var3;
-    var3 = 2;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var3 = var6.bind(var0)(var3);
-    var _closure1_slot1 = var3;
-    var3 = 3;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var _closure1_slot2 = var3;
-    var1 = function() {
-        var0 = function() { // Environment: var0
-            var0 = _closure1_slot0;
-            var1 = var0.default;
+    _fun97717: for (var _fun97717_ip = 0;;) switch (_fun97717_ip) {
+        case 0:
+            var3 = global;
+            var2 = exports;
+            var6 = global;
+            var7 = var6.Object;
+            var5 = var7.defineProperty;
+            var4 = {};
+            var0 = true;
+            var4.value = var0;
+            var0 = '__esModule';
+            var0 = var5.bind(var7)(var2, var0, var4);
             var0 = undefined;
-            var0 = var1.bind(var0)();
-            var _closure3_slot0 = var0;
-            var0 = {};
-            var1 = function arg0() {
-                _fun97739: for (var _fun97739_ip = 0;;) switch (_fun97739_ip) {
+            var2.start = var0;
+            var4 = var6.window;
+            var5 = 'undefined';
+            var4 = typeof var4;
+            var4 = var5 !== var4;
+            if (!var4) {
+                _fun97717_ip = 73;
+                continue _fun97717
+            }
+        case 67:
+            var4 = var6.window;
+        case 73:
+            if (!var4) {
+                _fun97717_ip = 125;
+                continue _fun97717
+            }
+        case 76:
+            var5 = var6.window;
+            var5 = var5.performance;
+            if (var5) {
+                _fun97717_ip = 105;
+                continue _fun97717
+            }
+        case 91:
+            var7 = var6.window;
+            var5 = var7.msPerformance;
+        case 105:
+            if (var5) {
+                _fun97717_ip = 122;
+                continue _fun97717
+            }
+        case 108:
+            var6 = var6.window;
+            var5 = var6.webkitPerformance;
+        case 122:
+            var4 = var5;
+        case 125:
+            var _closure1_slot0 = var4;
+            var5 = function arg0() {
+                var0 = global;
+                var1 = var0.Date;
+                var0 = var1.now;
+                var0 = var0.bind(var1)();
+                return var0;
+            };
+            var _closure1_slot1 = var5;
+            var5 = var3.nativePerformanceNow;
+            if (var5) {
+                _fun97717_ip = 165;
+                continue _fun97717
+            }
+        case 149:
+            if (!var4) {
+                _fun97717_ip = 175;
+                continue _fun97717
+            }
+        case 152:
+            var4 = function() {
+                _fun97719: for (var _fun97719_ip = 0;;) switch (_fun97719_ip) {
                     case 0:
-                        var0 = arg0;
-                        var1 = var0.type;
-                        var3 = 'storybook';
-                        if (!(var3 === var1)) {
-                            _fun97739_ip = 43;
-                            continue _fun97739
+                        var0 = _closure1_slot0;
+                        var0 = var0.now;
+                        if (!var0) {
+                            _fun97719_ip = 28;
+                            continue _fun97719
                         }
-                    case 18:
-                        var2 = _closure3_slot0;
-                        var1 = var2.emit;
-                        var0 = var0.payload;
-                        var0 = var1.bind(var2)(var3, var0);
-                    case 43:
-                        var0 = undefined;
+                    case 15:
+                        var2 = _closure1_slot0;
+                        var1 = var2.now;
+                        var0 = var1.bind(var2)();
+                    case 28:
                         return var0;
                 }
             };
-            var0.onCommand = var1;
-            var1 = {};
-            var2 = function arg0() {
-                var1 = arg0;
-                var _closure4_slot0 = var1;
-                var0 = function(arg0) { // Environment: var0
-                    var1 = arg0;
-                    var _closure5_slot0 = var1;
-                    var0 = function arg0() {
-                        var0 = _closure1_slot2;
-                        var3 = var0.jsx;
-                        var1 = _closure1_slot1;
-                        var2 = var1.default;
-                        var1 = {};
-                        var4 = _closure4_slot0;
-                        var1.storybookUi = var4;
-                        var4 = _closure3_slot0;
-                        var1.emitter = var4;
-                        var6 = var0.jsx;
-                        var5 = _closure5_slot0;
-                        var0 = global;
-                        var8 = var0.Object;
-                        var7 = var8.assign;
-                        var4 = {};
-                        var0 = arg0;
-                        var4 = var7.bind(var8)(var4, var0);
-                        var0 = undefined;
-                        var4 = var6.bind(var0)(var5, var4);
-                        var1.children = var4;
-                        var0 = var3.bind(var0)(var2, var1);
-                        return var0;
-                    };
+            _closure1_slot1 = var4;
+            _fun97717_ip = 175;
+            continue _fun97717;
+        case 165:
+            var3 = var3.nativePerformanceNow;
+            _closure1_slot1 = var3;
+        case 175:
+            var1 = function() {
+                var2 = _closure1_slot1;
+                var1 = undefined;
+                var1 = var2.bind(var1)();
+                var _closure2_slot0 = var1;
+                var0 = function() { // Environment: var0
+                    var1 = _closure2_slot0;
+                    var2 = _closure1_slot1;
+                    var0 = undefined;
+                    var0 = var2.bind(var0)();
+                    var0 = var0 - var1;
                     return var0;
                 };
                 return var0;
             };
-            var1.storybookSwitcher = var2;
-            var0.features = var1;
+            var2.start = var1;
             return var0;
-        };
-        return var0;
-    };
-    var2.default = var1;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 12763, 12782, 33]);
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

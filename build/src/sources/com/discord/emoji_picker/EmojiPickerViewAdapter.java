@@ -101,25 +101,25 @@ public final class EmojiPickerViewAdapter extends RecyclerView.Adapter {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setCoreData$lambda$0(EmojiPickerViewAdapter emojiPickerViewAdapter) {
         emojiPickerViewAdapter.onItemsChanged.invoke(null, null);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setEmojis$lambda$1(EmojiPickerViewAdapter emojiPickerViewAdapter) {
         emojiPickerViewAdapter.onItemsChanged.invoke(null, null);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setSpacerBottomHeight$lambda$3(EmojiPickerViewAdapter emojiPickerViewAdapter, int i10) {
         emojiPickerViewAdapter.onItemsChanged.invoke(Integer.valueOf(i10), null);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setSpacerTopHeight$lambda$2(EmojiPickerViewAdapter emojiPickerViewAdapter, int i10) {
         emojiPickerViewAdapter.onItemsChanged.invoke(Integer.valueOf(i10), null);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     public final int findFirstItemPositionAboveOrBelowPosition(int i10, int i11) {
@@ -349,7 +349,7 @@ public final class EmojiPickerViewAdapter extends RecyclerView.Adapter {
         } else if (holder instanceof EmojiPickerViewHolder.PremiumInlineRoadblockHeader) {
             ((EmojiPickerViewHolder.PremiumInlineRoadblockHeader) holder).onBindViewHolder(this.useTier0UpsellContent);
         } else {
-            throw new or.p();
+            throw new qr.p();
         }
     }
 
@@ -387,7 +387,7 @@ public final class EmojiPickerViewAdapter extends RecyclerView.Adapter {
                 Intrinsics.checkNotNullExpressionValue(context7, "getContext(...)");
                 return new EmojiPickerViewHolder.PremiumInlineRoadblockFooter(context7, null, 2, null);
             default:
-                throw new or.p();
+                throw new qr.p();
         }
     }
 }

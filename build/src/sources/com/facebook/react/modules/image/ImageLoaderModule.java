@@ -99,7 +99,7 @@ public final class ImageLoaderModule extends NativeImageLoaderAndroidSpec implem
     private final void registerRequest(int i10, DataSource dataSource) {
         synchronized (this.enqueuedRequestMonitor) {
             this.enqueuedRequests.put(i10, dataSource);
-            Unit unit = Unit.f31988a;
+            Unit unit = Unit.f32008a;
         }
     }
 
@@ -150,9 +150,9 @@ public final class ImageLoaderModule extends NativeImageLoaderAndroidSpec implem
                     CloseableReference closeableReference = (CloseableReference) dataSource.getResult();
                     if (closeableReference != null) {
                         try {
-                            Object E0 = closeableReference.E0();
-                            Intrinsics.checkNotNullExpressionValue(E0, "get(...)");
-                            e eVar = (e) E0;
+                            Object J = closeableReference.J();
+                            Intrinsics.checkNotNullExpressionValue(J, "get(...)");
+                            e eVar = (e) J;
                             WritableMap createMap = Arguments.createMap();
                             Intrinsics.checkNotNullExpressionValue(createMap, "createMap(...)");
                             ReadableMapBuilder readableMapBuilder = new ReadableMapBuilder(createMap);
@@ -164,7 +164,7 @@ public final class ImageLoaderModule extends NativeImageLoaderAndroidSpec implem
                             Promise.this.reject("E_GET_SIZE_FAILURE", e10);
                             return;
                         } finally {
-                            CloseableReference.N(closeableReference);
+                            CloseableReference.z(closeableReference);
                         }
                     }
                     Promise.this.reject("E_GET_SIZE_FAILURE", "Failed to get the size of the image");
@@ -200,9 +200,9 @@ public final class ImageLoaderModule extends NativeImageLoaderAndroidSpec implem
                     CloseableReference closeableReference = (CloseableReference) dataSource.getResult();
                     if (closeableReference != null) {
                         try {
-                            Object E0 = closeableReference.E0();
-                            Intrinsics.checkNotNullExpressionValue(E0, "get(...)");
-                            e eVar = (e) E0;
+                            Object J = closeableReference.J();
+                            Intrinsics.checkNotNullExpressionValue(J, "get(...)");
+                            e eVar = (e) J;
                             WritableMap createMap = Arguments.createMap();
                             Intrinsics.checkNotNullExpressionValue(createMap, "createMap(...)");
                             ReadableMapBuilder readableMapBuilder = new ReadableMapBuilder(createMap);
@@ -214,7 +214,7 @@ public final class ImageLoaderModule extends NativeImageLoaderAndroidSpec implem
                             Promise.this.reject("E_GET_SIZE_FAILURE", e10);
                             return;
                         } finally {
-                            CloseableReference.N(closeableReference);
+                            CloseableReference.z(closeableReference);
                         }
                     }
                     Promise.this.reject("E_GET_SIZE_FAILURE", "Failed to get the size of the image");
@@ -236,7 +236,7 @@ public final class ImageLoaderModule extends NativeImageLoaderAndroidSpec implem
                     valueAt.close();
                 }
                 this.enqueuedRequests.clear();
-                Unit unit = Unit.f31988a;
+                Unit unit = Unit.f32008a;
             } catch (Throwable th2) {
                 throw th2;
             }

@@ -21,63 +21,63 @@ import java.util.concurrent.Executors;
 public class a extends t {
 
     /* renamed from: y  reason: collision with root package name */
-    private static int f17418y = 128;
+    private static int f17398y = 128;
 
     /* renamed from: e  reason: collision with root package name */
-    private double f17419e;
+    private double f17399e;
 
     /* renamed from: i  reason: collision with root package name */
-    private double f17420i;
+    private double f17400i;
 
     /* renamed from: o  reason: collision with root package name */
-    private double f17421o;
+    private double f17401o;
 
     /* renamed from: p  reason: collision with root package name */
-    private boolean f17422p;
+    private boolean f17402p;
 
     /* renamed from: q  reason: collision with root package name */
-    private double f17423q;
+    private double f17403q;
 
     /* renamed from: r  reason: collision with root package name */
-    private double f17424r;
+    private double f17404r;
 
     /* renamed from: s  reason: collision with root package name */
-    private String f17425s;
+    private String f17405s;
 
     /* renamed from: t  reason: collision with root package name */
-    private List f17426t;
+    private List f17406t;
 
     /* renamed from: u  reason: collision with root package name */
-    private double f17427u;
+    private double f17407u;
 
     /* renamed from: v  reason: collision with root package name */
-    private int f17428v;
+    private int f17408v;
 
     /* renamed from: w  reason: collision with root package name */
-    private double f17429w;
+    private double f17409w;
 
     /* renamed from: x  reason: collision with root package name */
-    private int f17430x;
+    private int f17410x;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: com.reactnativecommunity.slider.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public class C0213a extends TimerTask {
+    public class C0205a extends TimerTask {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ AccessibilityManager f17431d;
+        final /* synthetic */ AccessibilityManager f17411d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ AccessibilityEvent f17432e;
+        final /* synthetic */ AccessibilityEvent f17412e;
 
-        C0213a(AccessibilityManager accessibilityManager, AccessibilityEvent accessibilityEvent) {
-            this.f17431d = accessibilityManager;
-            this.f17432e = accessibilityEvent;
+        C0205a(AccessibilityManager accessibilityManager, AccessibilityEvent accessibilityEvent) {
+            this.f17411d = accessibilityManager;
+            this.f17412e = accessibilityEvent;
         }
 
         @Override // java.util.TimerTask, java.lang.Runnable
         public void run() {
-            this.f17431d.sendAccessibilityEvent(this.f17432e);
+            this.f17411d.sendAccessibilityEvent(this.f17412e);
         }
     }
 
@@ -86,10 +86,10 @@ public class a extends t {
     public class b implements Callable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ String f17434d;
+        final /* synthetic */ String f17414d;
 
         b(String str) {
-            this.f17434d = str;
+            this.f17414d = str;
         }
 
         @Override // java.util.concurrent.Callable
@@ -97,11 +97,11 @@ public class a extends t {
         public BitmapDrawable call() {
             Bitmap decodeStream;
             try {
-                if (!this.f17434d.startsWith("http://") && !this.f17434d.startsWith("https://") && !this.f17434d.startsWith("file://") && !this.f17434d.startsWith("asset://") && !this.f17434d.startsWith("data:")) {
-                    decodeStream = BitmapFactory.decodeResource(a.this.getResources(), a.this.getResources().getIdentifier(this.f17434d, "drawable", a.this.getContext().getPackageName()));
+                if (!this.f17414d.startsWith("http://") && !this.f17414d.startsWith("https://") && !this.f17414d.startsWith("file://") && !this.f17414d.startsWith("asset://") && !this.f17414d.startsWith("data:")) {
+                    decodeStream = BitmapFactory.decodeResource(a.this.getResources(), a.this.getResources().getIdentifier(this.f17414d, "drawable", a.this.getContext().getPackageName()));
                     return new BitmapDrawable(a.this.getResources(), decodeStream);
                 }
-                decodeStream = BitmapFactory.decodeStream(new URL(this.f17434d).openStream());
+                decodeStream = BitmapFactory.decodeStream(new URL(this.f17414d).openStream());
                 return new BitmapDrawable(a.this.getResources(), decodeStream);
             } catch (Exception e10) {
                 e10.printStackTrace();
@@ -112,14 +112,14 @@ public class a extends t {
 
     public a(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f17419e = 0.0d;
-        this.f17420i = 0.0d;
-        this.f17421o = 0.0d;
-        this.f17422p = false;
-        this.f17423q = 0.0d;
-        this.f17424r = 0.0d;
-        this.f17427u = -9.223372036854776E18d;
-        this.f17429w = 9.223372036854776E18d;
+        this.f17399e = 0.0d;
+        this.f17400i = 0.0d;
+        this.f17401o = 0.0d;
+        this.f17402p = false;
+        this.f17403q = 0.0d;
+        this.f17404r = 0.0d;
+        this.f17407u = -9.223372036854776E18d;
+        this.f17409w = 9.223372036854776E18d;
         super.setLayoutDirection(I18nUtil.getInstance().isRTL(context) ? 1 : 0);
         a();
     }
@@ -140,8 +140,8 @@ public class a extends t {
     }
 
     private void g() {
-        if (this.f17423q == 0.0d) {
-            this.f17424r = (this.f17420i - this.f17419e) / f17418y;
+        if (this.f17403q == 0.0d) {
+            this.f17404r = (this.f17400i - this.f17399e) / f17398y;
         }
         setMax(getTotalSteps());
         setKeyProgressIncrement(1);
@@ -151,44 +151,44 @@ public class a extends t {
     }
 
     private double getStepValue() {
-        double d10 = this.f17423q;
+        double d10 = this.f17403q;
         if (d10 > 0.0d) {
             return d10;
         }
-        return this.f17424r;
+        return this.f17404r;
     }
 
     private int getTotalSteps() {
-        return (int) Math.ceil((this.f17420i - this.f17419e) / getStepValue());
+        return (int) Math.ceil((this.f17400i - this.f17399e) / getStepValue());
     }
 
     private void h() {
-        double max = Math.max(this.f17427u, this.f17419e);
-        double d10 = this.f17419e;
-        int round = (int) Math.round(((max - d10) / (this.f17420i - d10)) * getTotalSteps());
-        int i10 = this.f17430x;
+        double max = Math.max(this.f17407u, this.f17399e);
+        double d10 = this.f17399e;
+        int round = (int) Math.round(((max - d10) / (this.f17400i - d10)) * getTotalSteps());
+        int i10 = this.f17410x;
         if (round > i10) {
             Log.d("Invalid configuration", "upperLimit < lowerLimit; lowerLimit not set");
         } else {
-            this.f17428v = Math.min(round, i10);
+            this.f17408v = Math.min(round, i10);
         }
     }
 
     private void i() {
-        double min = Math.min(this.f17429w, this.f17420i);
-        double d10 = this.f17419e;
-        int round = (int) Math.round(((min - d10) / (this.f17420i - d10)) * getTotalSteps());
-        if (this.f17428v > round) {
+        double min = Math.min(this.f17409w, this.f17400i);
+        double d10 = this.f17399e;
+        int round = (int) Math.round(((min - d10) / (this.f17400i - d10)) * getTotalSteps());
+        if (this.f17408v > round) {
             Log.d("Invalid configuration", "upperLimit < lowerLimit; upperLimit not set");
         } else {
-            this.f17430x = round;
+            this.f17410x = round;
         }
     }
 
     private void j() {
-        double d10 = this.f17421o;
-        double d11 = this.f17419e;
-        setProgress((int) Math.round(((d10 - d11) / (this.f17420i - d11)) * getTotalSteps()));
+        double d10 = this.f17401o;
+        double d11 = this.f17399e;
+        setProgress((int) Math.round(((d10 - d11) / (this.f17400i - d11)) * getTotalSteps()));
     }
 
     @Override // android.view.View
@@ -201,7 +201,7 @@ public class a extends t {
             obtain.setClassName(getClass().getName());
             obtain.setPackageName(context.getPackageName());
             obtain.getText().add(charSequence);
-            new Timer().schedule(new C0213a(accessibilityManager, obtain), 1000L);
+            new Timer().schedule(new C0205a(accessibilityManager, obtain), 1000L);
         }
     }
 
@@ -218,27 +218,27 @@ public class a extends t {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void d(boolean z10) {
-        this.f17422p = z10;
+        this.f17402p = z10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean e() {
-        return this.f17422p;
+        return this.f17402p;
     }
 
     public double f(int i10) {
         if (i10 == getMax()) {
-            return this.f17420i;
+            return this.f17400i;
         }
-        return (i10 * getStepValue()) + this.f17419e;
+        return (i10 * getStepValue()) + this.f17399e;
     }
 
     int getLowerLimit() {
-        return this.f17428v;
+        return this.f17408v;
     }
 
     int getUpperLimit() {
-        return this.f17430x;
+        return this.f17410x;
     }
 
     @Override // android.view.View
@@ -247,40 +247,40 @@ public class a extends t {
         if (accessibilityEvent.getEventType() != 32768 && (accessibilityEvent.getEventType() != 4 || !isAccessibilityFocused())) {
             return;
         }
-        setupAccessibility((int) this.f17421o);
+        setupAccessibility((int) this.f17401o);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void setAccessibilityIncrements(List<String> list) {
-        this.f17426t = list;
+        this.f17406t = list;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void setAccessibilityUnits(String str) {
-        this.f17425s = str;
+        this.f17405s = str;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void setLowerLimit(double d10) {
-        this.f17427u = d10;
+        this.f17407u = d10;
         h();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void setMaxValue(double d10) {
-        this.f17420i = d10;
+        this.f17400i = d10;
         g();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void setMinValue(double d10) {
-        this.f17419e = d10;
+        this.f17399e = d10;
         g();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void setStep(double d10) {
-        this.f17423q = d10;
+        this.f17403q = d10;
         g();
     }
 
@@ -295,22 +295,22 @@ public class a extends t {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void setUpperLimit(double d10) {
-        this.f17429w = d10;
+        this.f17409w = d10;
         i();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void setValue(double d10) {
-        this.f17421o = d10;
+        this.f17401o = d10;
         j();
     }
 
     public void setupAccessibility(int i10) {
         List list;
-        if (this.f17425s != null && (list = this.f17426t) != null && list.size() - 1 == ((int) this.f17420i)) {
-            String str = (String) this.f17426t.get(i10);
-            int length = this.f17425s.length();
-            String str2 = this.f17425s;
+        if (this.f17405s != null && (list = this.f17406t) != null && list.size() - 1 == ((int) this.f17400i)) {
+            String str = (String) this.f17406t.get(i10);
+            int length = this.f17405s.length();
+            String str2 = this.f17405s;
             if (str != null && Integer.parseInt(str) == 1) {
                 str2 = str2.substring(0, length - 1);
             }

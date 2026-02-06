@@ -10,31 +10,31 @@ public final class h {
     @NotNull
 
     /* renamed from: a  reason: collision with root package name */
-    public static final h f32064a = new h();
+    public static final h f32084a = new h();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final a f32065b = new a(null, null, null);
+    private static final a f32085b = new a(null, null, null);
 
     /* renamed from: c  reason: collision with root package name */
-    private static a f32066c;
+    private static a f32086c;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public final Method f32067a;
+        public final Method f32087a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final Method f32068b;
+        public final Method f32088b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final Method f32069c;
+        public final Method f32089c;
 
         public a(Method method, Method method2, Method method3) {
-            this.f32067a = method;
-            this.f32068b = method2;
-            this.f32069c = method3;
+            this.f32087a = method;
+            this.f32088b = method2;
+            this.f32089c = method3;
         }
     }
 
@@ -44,11 +44,11 @@ public final class h {
     private final a a(kotlin.coroutines.jvm.internal.a aVar) {
         try {
             a aVar2 = new a(Class.class.getDeclaredMethod("getModule", null), aVar.getClass().getClassLoader().loadClass("java.lang.Module").getDeclaredMethod("getDescriptor", null), aVar.getClass().getClassLoader().loadClass("java.lang.module.ModuleDescriptor").getDeclaredMethod(StackTraceHelper.NAME_KEY, null));
-            f32066c = aVar2;
+            f32086c = aVar2;
             return aVar2;
         } catch (Exception unused) {
-            a aVar3 = f32065b;
-            f32066c = aVar3;
+            a aVar3 = f32085b;
+            f32086c = aVar3;
             return aVar3;
         }
     }
@@ -60,12 +60,12 @@ public final class h {
         Object invoke2;
         Object obj;
         Intrinsics.checkNotNullParameter(continuation, "continuation");
-        a aVar = f32066c;
+        a aVar = f32086c;
         if (aVar == null) {
             aVar = a(continuation);
         }
-        if (aVar != f32065b && (method = aVar.f32067a) != null && (invoke = method.invoke(continuation.getClass(), null)) != null && (method2 = aVar.f32068b) != null && (invoke2 = method2.invoke(invoke, null)) != null) {
-            Method method3 = aVar.f32069c;
+        if (aVar != f32085b && (method = aVar.f32087a) != null && (invoke = method.invoke(continuation.getClass(), null)) != null && (method2 = aVar.f32088b) != null && (invoke2 = method2.invoke(invoke, null)) != null) {
+            Method method3 = aVar.f32089c;
             if (method3 != null) {
                 obj = method3.invoke(invoke2, null);
             } else {

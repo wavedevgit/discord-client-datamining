@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_scheduled_events/useGuildsUserCanStartStageIn.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun65557: for (var _fun65557_ip = 0;;) switch (_fun65557_ip) {
+        _fun65585: for (var _fun65585_ip = 0;;) switch (_fun65585_ip) {
             case 0:
                 var2 = arg0;
                 var5 = null;
@@ -43,8 +43,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = undefined;
                 var1 = undefined;
                 if (var3) {
-                    _fun65557_ip = 23;
-                    continue _fun65557
+                    _fun65585_ip = 23;
+                    continue _fun65585
                 }
             case 18:
                 var1 = var2.id;
@@ -52,8 +52,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var5 != var1;
                 var5 = null;
                 if (!var2) {
-                    _fun65557_ip = 35;
-                    continue _fun65557
+                    _fun65585_ip = 35;
+                    continue _fun65585
                 }
             case 32:
                 var5 = var1;
@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var1[var0];
                     var2 = var3.reduce;
                     var1 = function(arg0, arg1) { // Environment: var0
-                        _fun65559: for (var _fun65559_ip = 0;;) switch (_fun65559_ip) {
+                        _fun65587: for (var _fun65587_ip = 0;;) switch (_fun65587_ip) {
                             case 0:
                                 var0 = arg0;
                                 var1 = arg1;
@@ -89,16 +89,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var3 = var2.isGuildStageVoice;
                                 var3 = var3.bind(var2)();
                                 if (!var3) {
-                                    _fun65559_ip = 116;
-                                    continue _fun65559
+                                    _fun65587_ip = 116;
+                                    continue _fun65587
                                 }
                             case 24:
                                 var6 = var1.channel;
                                 var5 = _closure1_slot4;
                                 var8 = undefined;
                                 if (!(var5 === var8)) {
-                                    _fun65559_ip = 46;
-                                    continue _fun65559
+                                    _fun65587_ip = 46;
+                                    continue _fun65587
                                 }
                             case 42:
                                 var5 = _closure1_slot4;
@@ -108,8 +108,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var4 = !var1;
                                 var1 = !var4;
                                 if (var4) {
-                                    _fun65559_ip = 103;
-                                    continue _fun65559
+                                    _fun65587_ip = 103;
+                                    continue _fun65587
                                 }
                             case 65:
                                 var4 = var5.can;
@@ -122,8 +122,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var1 = var4.bind(var5)(var3, var6);
                             case 103:
                                 if (!var1) {
-                                    _fun65559_ip = 116;
-                                    continue _fun65559
+                                    _fun65587_ip = 116;
+                                    continue _fun65587
                                 }
                             case 106:
                                 var1 = var0.push;
@@ -142,4 +142,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useChannelsUserCanStartStageIn = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1671, 3091, 1380, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1671, 3093, 1380, 566, 2]);

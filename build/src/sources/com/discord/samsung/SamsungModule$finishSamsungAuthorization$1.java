@@ -10,9 +10,9 @@ import kotlin.coroutines.jvm.internal.k;
 import kotlin.jvm.functions.Function2;
 import kotlinx.coroutines.CoroutineDispatcher;
 import kotlinx.coroutines.CoroutineScope;
-import ms.g;
-import ms.m0;
 import okhttp3.OkHttpClient;
+import os.g;
+import os.m0;
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {2, 1, 0}, xi = 48)
 @e(c = "com.discord.samsung.SamsungModule$finishSamsungAuthorization$1", f = "SamsungModule.kt", l = {176}, m = "invokeSuspend")
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -44,7 +44,7 @@ final class SamsungModule$finishSamsungAuthorization$1 extends k implements Func
     @Override // kotlin.coroutines.jvm.internal.a
     public final Object invokeSuspend(Object obj) {
         Object b10;
-        Object f10 = ur.b.f();
+        Object f10 = wr.b.f();
         int i10 = this.label;
         try {
             if (i10 != 0) {
@@ -60,7 +60,7 @@ final class SamsungModule$finishSamsungAuthorization$1 extends k implements Func
                 SamsungModule samsungModule = this.this$0;
                 String str2 = this.$state;
                 String str3 = this.$authCode;
-                Result.a aVar = Result.f31985e;
+                Result.a aVar = Result.f32005e;
                 OkHttpClient c10 = new OkHttpClient.Builder().k(false).c();
                 CoroutineDispatcher b11 = m0.b();
                 SamsungModule$finishSamsungAuthorization$1$1$1 samsungModule$finishSamsungAuthorization$1$1$1 = new SamsungModule$finishSamsungAuthorization$1$1$1(str, samsungModule, c10, str2, str3, null);
@@ -69,9 +69,9 @@ final class SamsungModule$finishSamsungAuthorization$1 extends k implements Func
                     return f10;
                 }
             }
-            b10 = Result.b(Unit.f31988a);
+            b10 = Result.b(Unit.f32008a);
         } catch (Throwable th2) {
-            Result.a aVar2 = Result.f31985e;
+            Result.a aVar2 = Result.f32005e;
             b10 = Result.b(kotlin.c.a(th2));
         }
         SamsungModule samsungModule2 = this.this$0;
@@ -83,11 +83,11 @@ final class SamsungModule$finishSamsungAuthorization$1 extends k implements Func
                 throw e10;
             }
         }
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((SamsungModule$finishSamsungAuthorization$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+        return ((SamsungModule$finishSamsungAuthorization$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
     }
 }

@@ -1,47 +1,49 @@
 package ru;
 
-import java.util.List;
-import kotlin.collections.CollectionsKt;
-import kotlin.text.StringsKt;
-import ru.a;
+import kotlin.jvm.internal.Intrinsics;
+import okio.Buffer;
+import okio.ByteString;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface b extends ru.a {
+public abstract class b {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a {
-        public static List a(b bVar, Comparable comparable, Comparable comparable2) {
-            boolean z10 = comparable instanceof Number;
-            if (z10 && (comparable2 instanceof Number)) {
-                return CollectionsKt.o(Double.valueOf(((Number) comparable).doubleValue()), Double.valueOf(((Number) comparable2).doubleValue()));
-            }
-            if ((comparable instanceof String) && (comparable2 instanceof Number)) {
-                return CollectionsKt.o(StringsKt.p((String) comparable), Double.valueOf(((Number) comparable2).doubleValue()));
-            }
-            if (z10 && (comparable2 instanceof String)) {
-                return CollectionsKt.o(Double.valueOf(((Number) comparable).doubleValue()), StringsKt.p((String) comparable2));
-            }
-            if (!(comparable instanceof Boolean) && !(comparable2 instanceof Boolean)) {
-                return bVar.d(comparable, comparable2);
-            }
-            return CollectionsKt.o(bVar.c(comparable), bVar.c(comparable2));
-        }
+    /* renamed from: a */
+    private static final char[] f49549a = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'};
 
-        public static List b(b bVar, Comparable comparable, Comparable comparable2) {
-            if (comparable != null && comparable2 != null && comparable.getClass() == comparable2.getClass()) {
-                return CollectionsKt.o(comparable, comparable2);
-            }
-            if (comparable == null && comparable2 == null) {
-                return CollectionsKt.o((Void) comparable, (Void) comparable2);
-            }
-            return null;
-        }
-
-        public static Boolean c(b bVar, Object obj) {
-            return a.C0629a.a(bVar, obj);
-        }
+    /* JADX WARN: Code restructure failed: missing block: B:429:0x01ac, code lost:
+        return r4;
+     */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public static final int c(byte[] r18, int r19) {
+        /*
+            Method dump skipped, instructions count: 429
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: ru.b.c(byte[], int):int");
     }
 
-    List d(Comparable comparable, Comparable comparable2);
+    public static final void d(ByteString byteString, Buffer buffer, int i10, int i11) {
+        Intrinsics.checkNotNullParameter(byteString, "<this>");
+        Intrinsics.checkNotNullParameter(buffer, "buffer");
+        buffer.write(byteString.k(), i10, i11);
+    }
 
-    List g(Comparable comparable, Comparable comparable2);
+    public static final int e(char c10) {
+        if ('0' <= c10 && c10 < ':') {
+            return c10 - '0';
+        }
+        if ('a' <= c10 && c10 < 'g') {
+            return c10 - 'W';
+        }
+        if ('A' <= c10 && c10 < 'G') {
+            return c10 - '7';
+        }
+        throw new IllegalArgumentException("Unexpected hex digit: " + c10);
+    }
+
+    public static final char[] f() {
+        return f49549a;
+    }
 }

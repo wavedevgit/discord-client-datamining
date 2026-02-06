@@ -1,388 +1,98 @@
 package com.google.android.exoplayer2.upstream;
 
-import android.os.Handler;
-import android.os.Looper;
-import android.os.Message;
-import android.os.SystemClock;
+import com.google.android.exoplayer2.source.LoadEventInfo;
+import com.google.android.exoplayer2.source.MediaLoadData;
 import java.io.IOException;
-import java.util.concurrent.ExecutorService;
-import le.u;
-import ne.t0;
-import ne.w0;
-import ne.y;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class i implements u {
-
-    /* renamed from: d  reason: collision with root package name */
-    public static final c f13465d = h(false, -9223372036854775807L);
-
-    /* renamed from: e  reason: collision with root package name */
-    public static final c f13466e = h(true, -9223372036854775807L);
-
-    /* renamed from: f  reason: collision with root package name */
-    public static final c f13467f = new c(2, -9223372036854775807L);
-
-    /* renamed from: g  reason: collision with root package name */
-    public static final c f13468g = new c(3, -9223372036854775807L);
-
-    /* renamed from: a  reason: collision with root package name */
-    private final ExecutorService f13469a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private d f13470b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private IOException f13471c;
+public interface i {
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public interface b {
-        void i(e eVar, long j10, long j11, boolean z10);
+    public static final class a {
 
-        void j(e eVar, long j10, long j11);
+        /* renamed from: a  reason: collision with root package name */
+        public final int f13416a;
 
-        c n(e eVar, long j10, long j11, IOException iOException, int i10);
+        /* renamed from: b  reason: collision with root package name */
+        public final int f13417b;
+
+        /* renamed from: c  reason: collision with root package name */
+        public final int f13418c;
+
+        /* renamed from: d  reason: collision with root package name */
+        public final int f13419d;
+
+        public a(int i10, int i11, int i12, int i13) {
+            this.f13416a = i10;
+            this.f13417b = i11;
+            this.f13418c = i12;
+            this.f13419d = i13;
+        }
+
+        public boolean a(int i10) {
+            if (i10 == 1) {
+                if (this.f13416a - this.f13417b <= 1) {
+                    return false;
+                }
+                return true;
+            } else if (this.f13418c - this.f13419d <= 1) {
+                return false;
+            } else {
+                return true;
+            }
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    public static final class b {
+
+        /* renamed from: a  reason: collision with root package name */
+        public final int f13420a;
+
+        /* renamed from: b  reason: collision with root package name */
+        public final long f13421b;
+
+        public b(int i10, long j10) {
+            boolean z10;
+            if (j10 >= 0) {
+                z10 = true;
+            } else {
+                z10 = false;
+            }
+            ne.a.a(z10);
+            this.f13420a = i10;
+            this.f13421b = j10;
+        }
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class c {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f13472a;
+        public final LoadEventInfo f13422a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final long f13473b;
+        public final MediaLoadData f13423b;
 
-        public boolean c() {
-            int i10 = this.f13472a;
-            if (i10 == 0 || i10 == 1) {
-                return true;
-            }
-            return false;
-        }
-
-        private c(int i10, long j10) {
-            this.f13472a = i10;
-            this.f13473b = j10;
-        }
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public final class d extends Handler implements Runnable {
+        /* renamed from: c  reason: collision with root package name */
+        public final IOException f13424c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final int f13474d;
+        public final int f13425d;
 
-        /* renamed from: e  reason: collision with root package name */
-        private final e f13475e;
-
-        /* renamed from: i  reason: collision with root package name */
-        private final long f13476i;
-
-        /* renamed from: o  reason: collision with root package name */
-        private b f13477o;
-
-        /* renamed from: p  reason: collision with root package name */
-        private IOException f13478p;
-
-        /* renamed from: q  reason: collision with root package name */
-        private int f13479q;
-
-        /* renamed from: r  reason: collision with root package name */
-        private Thread f13480r;
-
-        /* renamed from: s  reason: collision with root package name */
-        private boolean f13481s;
-
-        /* renamed from: t  reason: collision with root package name */
-        private volatile boolean f13482t;
-
-        public d(Looper looper, e eVar, b bVar, int i10, long j10) {
-            super(looper);
-            this.f13475e = eVar;
-            this.f13477o = bVar;
-            this.f13474d = i10;
-            this.f13476i = j10;
-        }
-
-        private void b() {
-            this.f13478p = null;
-            i.this.f13469a.execute((Runnable) ne.a.e(i.this.f13470b));
-        }
-
-        private void c() {
-            i.this.f13470b = null;
-        }
-
-        private long d() {
-            return Math.min((this.f13479q - 1) * 1000, 5000);
-        }
-
-        public void a(boolean z10) {
-            this.f13482t = z10;
-            this.f13478p = null;
-            if (hasMessages(0)) {
-                this.f13481s = true;
-                removeMessages(0);
-                if (!z10) {
-                    sendEmptyMessage(1);
-                }
-            } else {
-                synchronized (this) {
-                    try {
-                        this.f13481s = true;
-                        this.f13475e.c();
-                        Thread thread = this.f13480r;
-                        if (thread != null) {
-                            thread.interrupt();
-                        }
-                    } catch (Throwable th2) {
-                        throw th2;
-                    }
-                }
-            }
-            if (z10) {
-                c();
-                long elapsedRealtime = SystemClock.elapsedRealtime();
-                ((b) ne.a.e(this.f13477o)).i(this.f13475e, elapsedRealtime, elapsedRealtime - this.f13476i, true);
-                this.f13477o = null;
-            }
-        }
-
-        public void e(int i10) {
-            IOException iOException = this.f13478p;
-            if (iOException != null && this.f13479q > i10) {
-                throw iOException;
-            }
-        }
-
-        public void f(long j10) {
-            boolean z10;
-            if (i.this.f13470b == null) {
-                z10 = true;
-            } else {
-                z10 = false;
-            }
-            ne.a.g(z10);
-            i.this.f13470b = this;
-            if (j10 > 0) {
-                sendEmptyMessageDelayed(0, j10);
-            } else {
-                b();
-            }
-        }
-
-        @Override // android.os.Handler
-        public void handleMessage(Message message) {
-            long d10;
-            if (!this.f13482t) {
-                int i10 = message.what;
-                if (i10 == 0) {
-                    b();
-                } else if (i10 != 3) {
-                    c();
-                    long elapsedRealtime = SystemClock.elapsedRealtime();
-                    long j10 = elapsedRealtime - this.f13476i;
-                    b bVar = (b) ne.a.e(this.f13477o);
-                    if (this.f13481s) {
-                        bVar.i(this.f13475e, elapsedRealtime, j10, false);
-                        return;
-                    }
-                    int i11 = message.what;
-                    if (i11 != 1) {
-                        if (i11 == 2) {
-                            IOException iOException = (IOException) message.obj;
-                            this.f13478p = iOException;
-                            int i12 = this.f13479q + 1;
-                            this.f13479q = i12;
-                            c n10 = bVar.n(this.f13475e, elapsedRealtime, j10, iOException, i12);
-                            if (n10.f13472a == 3) {
-                                i.this.f13471c = this.f13478p;
-                                return;
-                            } else if (n10.f13472a != 2) {
-                                if (n10.f13472a == 1) {
-                                    this.f13479q = 1;
-                                }
-                                if (n10.f13473b != -9223372036854775807L) {
-                                    d10 = n10.f13473b;
-                                } else {
-                                    d10 = d();
-                                }
-                                f(d10);
-                                return;
-                            } else {
-                                return;
-                            }
-                        }
-                        return;
-                    }
-                    try {
-                        bVar.j(this.f13475e, elapsedRealtime, j10);
-                    } catch (RuntimeException e10) {
-                        y.d("LoadTask", "Unexpected exception handling load completed", e10);
-                        i.this.f13471c = new h(e10);
-                    }
-                } else {
-                    throw ((Error) message.obj);
-                }
-            }
-        }
-
-        @Override // java.lang.Runnable
-        public void run() {
-            boolean z10;
-            try {
-                synchronized (this) {
-                    z10 = this.f13481s;
-                    this.f13480r = Thread.currentThread();
-                }
-                if (!z10) {
-                    t0.a("load:" + this.f13475e.getClass().getSimpleName());
-                    try {
-                        this.f13475e.b();
-                        t0.c();
-                    } catch (Throwable th2) {
-                        t0.c();
-                        throw th2;
-                    }
-                }
-                synchronized (this) {
-                    this.f13480r = null;
-                    Thread.interrupted();
-                }
-                if (!this.f13482t) {
-                    sendEmptyMessage(1);
-                }
-            } catch (IOException e10) {
-                if (!this.f13482t) {
-                    obtainMessage(2, e10).sendToTarget();
-                }
-            } catch (Error e11) {
-                if (!this.f13482t) {
-                    y.d("LoadTask", "Unexpected error loading stream", e11);
-                    obtainMessage(3, e11).sendToTarget();
-                }
-                throw e11;
-            } catch (Exception e12) {
-                if (!this.f13482t) {
-                    y.d("LoadTask", "Unexpected exception loading stream", e12);
-                    obtainMessage(2, new h(e12)).sendToTarget();
-                }
-            } catch (OutOfMemoryError e13) {
-                if (!this.f13482t) {
-                    y.d("LoadTask", "OutOfMemory error loading stream", e13);
-                    obtainMessage(2, new h(e13)).sendToTarget();
-                }
-            }
+        public c(LoadEventInfo loadEventInfo, MediaLoadData mediaLoadData, IOException iOException, int i10) {
+            this.f13422a = loadEventInfo;
+            this.f13423b = mediaLoadData;
+            this.f13424c = iOException;
+            this.f13425d = i10;
         }
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public interface e {
-        void b();
+    long a(c cVar);
 
-        void c();
-    }
+    int b(int i10);
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public interface f {
-        void p();
-    }
+    b c(a aVar, c cVar);
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class g implements Runnable {
-
-        /* renamed from: d  reason: collision with root package name */
-        private final f f13484d;
-
-        public g(f fVar) {
-            this.f13484d = fVar;
-        }
-
-        @Override // java.lang.Runnable
-        public void run() {
-            this.f13484d.p();
-        }
-    }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class h extends IOException {
-        public h(Throwable th2) {
-            super("Unexpected " + th2.getClass().getSimpleName() + ": " + th2.getMessage(), th2);
-        }
-    }
-
-    public i(String str) {
-        this.f13469a = w0.L0("ExoPlayer:Loader:" + str);
-    }
-
-    public static c h(boolean z10, long j10) {
-        return new c(z10 ? 1 : 0, j10);
-    }
-
-    @Override // le.u
-    public void a() {
-        k(Integer.MIN_VALUE);
-    }
-
-    public void f() {
-        ((d) ne.a.i(this.f13470b)).a(false);
-    }
-
-    public void g() {
-        this.f13471c = null;
-    }
-
-    public boolean i() {
-        if (this.f13471c != null) {
-            return true;
-        }
-        return false;
-    }
-
-    public boolean j() {
-        if (this.f13470b != null) {
-            return true;
-        }
-        return false;
-    }
-
-    public void k(int i10) {
-        IOException iOException = this.f13471c;
-        if (iOException == null) {
-            d dVar = this.f13470b;
-            if (dVar != null) {
-                if (i10 == Integer.MIN_VALUE) {
-                    i10 = dVar.f13474d;
-                }
-                dVar.e(i10);
-                return;
-            }
-            return;
-        }
-        throw iOException;
-    }
-
-    public void l() {
-        m(null);
-    }
-
-    public void m(f fVar) {
-        d dVar = this.f13470b;
-        if (dVar != null) {
-            dVar.a(true);
-        }
-        if (fVar != null) {
-            this.f13469a.execute(new g(fVar));
-        }
-        this.f13469a.shutdown();
-    }
-
-    public long n(e eVar, b bVar, int i10) {
-        this.f13471c = null;
-        long elapsedRealtime = SystemClock.elapsedRealtime();
-        new d((Looper) ne.a.i(Looper.myLooper()), eVar, bVar, i10, elapsedRealtime).f(0L);
-        return elapsedRealtime;
+    default void d(long j10) {
     }
 }

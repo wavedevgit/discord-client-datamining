@@ -9,22 +9,22 @@ import androidx.appcompat.widget.v0;
 public abstract class l {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final int[] f15196a = {zg.b.f55555l};
+    private static final int[] f15176a = {ah.b.f650l};
 
     /* renamed from: b  reason: collision with root package name */
-    private static final int[] f15197b = {zg.b.f55556m};
+    private static final int[] f15177b = {ah.b.f651m};
 
     public static void a(Context context) {
-        e(context, f15196a, "Theme.AppCompat");
+        e(context, f15176a, "Theme.AppCompat");
     }
 
     private static void b(Context context, AttributeSet attributeSet, int i10, int i11) {
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, zg.k.Z7, i10, i11);
-        boolean z10 = obtainStyledAttributes.getBoolean(zg.k.f55747b8, false);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, ah.k.Z7, i10, i11);
+        boolean z10 = obtainStyledAttributes.getBoolean(ah.k.f842b8, false);
         obtainStyledAttributes.recycle();
         if (z10) {
             TypedValue typedValue = new TypedValue();
-            if (!context.getTheme().resolveAttribute(zg.b.f55566w, typedValue, true) || (typedValue.type == 18 && typedValue.data == 0)) {
+            if (!context.getTheme().resolveAttribute(ah.b.f661w, typedValue, true) || (typedValue.type == 18 && typedValue.data == 0)) {
                 c(context);
             }
         }
@@ -32,21 +32,21 @@ public abstract class l {
     }
 
     public static void c(Context context) {
-        e(context, f15197b, "Theme.MaterialComponents");
+        e(context, f15177b, "Theme.MaterialComponents");
     }
 
     private static void d(Context context, AttributeSet attributeSet, int[] iArr, int i10, int i11, int... iArr2) {
         boolean z10;
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, zg.k.Z7, i10, i11);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, ah.k.Z7, i10, i11);
         boolean z11 = false;
-        if (!obtainStyledAttributes.getBoolean(zg.k.f55757c8, false)) {
+        if (!obtainStyledAttributes.getBoolean(ah.k.f852c8, false)) {
             obtainStyledAttributes.recycle();
             return;
         }
         if (iArr2 != null && iArr2.length != 0) {
             z10 = f(context, attributeSet, iArr, i10, i11, iArr2);
         } else {
-            if (obtainStyledAttributes.getResourceId(zg.k.f55737a8, -1) != -1) {
+            if (obtainStyledAttributes.getResourceId(ah.k.f832a8, -1) != -1) {
                 z11 = true;
             }
             z10 = z11;
@@ -78,7 +78,7 @@ public abstract class l {
     }
 
     public static boolean g(Context context) {
-        return mh.b.b(context, zg.b.f55565v, false);
+        return nh.b.b(context, ah.b.f660v, false);
     }
 
     private static boolean h(Context context, int[] iArr) {

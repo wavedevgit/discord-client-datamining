@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/app_analytics/native/useTrackNavigatorScreenImpression.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1() {
-        _fun99917: for (var _fun99917_ip = 0;;) switch (_fun99917_ip) {
+        _fun99924: for (var _fun99924_ip = 0;;) switch (_fun99924_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.impressionName;
@@ -33,8 +33,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = typeof var2;
                 var3 = var2;
                 if (!(var1 === var0)) {
-                    _fun99917_ip = 45;
-                    continue _fun99917
+                    _fun99924_ip = 45;
+                    continue _fun99924
                 }
             case 29:
                 var0 = arg1;
@@ -64,4 +64,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useTrackNavigatorScreenImpression = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5216, 481, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5217, 481, 2]);

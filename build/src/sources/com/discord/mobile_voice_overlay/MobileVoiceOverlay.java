@@ -205,13 +205,13 @@ public final class MobileVoiceOverlay {
     public static final Unit menuDialogProvider$lambda$14$lambda$13$lambda$11(MobileVoiceOverlay mobileVoiceOverlay, OverlayDialog it) {
         Intrinsics.checkNotNullParameter(it, "it");
         mobileVoiceOverlay.closeMenuDialog();
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit menuDialogProvider$lambda$14$lambda$13$lambda$12(MobileVoiceOverlay mobileVoiceOverlay) {
         mobileVoiceOverlay.selectorDialogProvider.showViewOnOverlay();
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     private final void onTrashVoiceBubble() {
@@ -263,7 +263,7 @@ public final class MobileVoiceOverlay {
         });
         loadAnimator.start();
         OverlayBubbleWrap.animateToCoordinate$default(voiceBubble, (int) voiceBubble.getX(), ((int) voiceBubble.getY()) + (voiceBubble.getHeight() / 2), null, 4, null);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -301,14 +301,14 @@ public final class MobileVoiceOverlay {
     public static final Unit selectorDialogProvider$lambda$19$lambda$18$lambda$15(OverlayViewProvider overlayViewProvider, OverlayDialog it) {
         Intrinsics.checkNotNullParameter(it, "it");
         overlayViewProvider.removeViewFromOverlay();
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit selectorDialogProvider$lambda$19$lambda$18$lambda$16(MobileVoiceOverlay mobileVoiceOverlay, String text) {
         Intrinsics.checkNotNullParameter(text, "text");
         mobileVoiceOverlay.emitOnChannelQueryUpdateEvent(text);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -316,8 +316,8 @@ public final class MobileVoiceOverlay {
         Companion companion = Companion;
         Context context = overlayVoiceSelectorBubbleDialog.getContext();
         Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
-        companion.startHeadlessTask(context, "SelectChannel", w1.c.a(or.v.a("channelId", String.valueOf(channelId.m1068unboximpl())), or.v.a("connectToVoice", Boolean.TRUE)));
-        return Unit.f31988a;
+        companion.startHeadlessTask(context, "SelectChannel", w1.c.a(qr.v.a("channelId", String.valueOf(channelId.m1066unboximpl())), qr.v.a("connectToVoice", Boolean.TRUE)));
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -463,7 +463,7 @@ public final class MobileVoiceOverlay {
                 }
             }
         });
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -477,7 +477,7 @@ public final class MobileVoiceOverlay {
                 return voiceBubbleProvider$lambda$9$lambda$6$lambda$5;
             }
         });
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -486,7 +486,7 @@ public final class MobileVoiceOverlay {
         if (trashWrap.processMotionEvent(overlayVoiceBubble, motionEvent)) {
             mobileVoiceOverlay.onTrashVoiceBubble();
         }
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -499,7 +499,7 @@ public final class MobileVoiceOverlay {
                 return voiceBubbleProvider$lambda$9$lambda$8$lambda$7;
             }
         });
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -511,7 +511,7 @@ public final class MobileVoiceOverlay {
             trashWrap.hide();
             mobileVoiceOverlay.floatBubbleToHorizontalEdge(overlayVoiceBubble);
         }
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     public final void hideOverlay$mobile_voice_overlay_release() {
@@ -551,7 +551,7 @@ public final class MobileVoiceOverlay {
                     @Override // kotlin.jvm.functions.Function1
                     public /* bridge */ /* synthetic */ Object invoke(Object obj) {
                         invoke((OverlayVoiceBubble) obj);
-                        return Unit.f31988a;
+                        return Unit.f32008a;
                     }
 
                     public final void invoke(OverlayVoiceBubble it) {

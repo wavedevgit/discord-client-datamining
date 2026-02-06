@@ -4,14 +4,14 @@ package io.sentry;
 public final class n7 implements b0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f29237d;
+    private final String f28381d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f29238e;
+    private final String f28382e;
 
     public n7(String str, String str2) {
-        this.f29237d = str;
-        this.f29238e = str2;
+        this.f28381d = str;
+        this.f28382e = str2;
     }
 
     private e5 b(e5 e5Var) {
@@ -20,14 +20,14 @@ public final class n7 implements b0 {
         }
         io.sentry.protocol.z i10 = e5Var.C().i();
         if (i10 != null && i10.d() == null && i10.e() == null) {
-            i10.f(this.f29238e);
-            i10.h(this.f29237d);
+            i10.f(this.f28382e);
+            i10.h(this.f28381d);
         }
         return e5Var;
     }
 
     @Override // io.sentry.b0
-    public SentryEvent h(SentryEvent sentryEvent, Hint hint) {
+    public SentryEvent g(SentryEvent sentryEvent, Hint hint) {
         return (SentryEvent) b(sentryEvent);
     }
 

@@ -12,7 +12,7 @@ public interface RootView {
 
     void onChildEndedNativeGesture(@NotNull View view, @NotNull MotionEvent motionEvent);
 
-    @or.c
+    @qr.c
     default void onChildStartedNativeGesture(@NotNull MotionEvent ev2) {
         Intrinsics.checkNotNullParameter(ev2, "ev");
         onChildStartedNativeGesture(null, ev2);

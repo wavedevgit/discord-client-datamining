@@ -20,11 +20,11 @@ import q1.j;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Object f3238a = new Object();
+    private static final Object f3567a = new Object();
 
     /* renamed from: androidx.core.content.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    static class C0035a {
+    static class C0033a {
         static Drawable a(Context context, int i10) {
             return context.getDrawable(i10);
         }
@@ -106,7 +106,7 @@ public abstract class a {
     }
 
     public static Drawable e(Context context, int i10) {
-        return C0035a.a(context, i10);
+        return C0033a.a(context, i10);
     }
 
     public static File[] f(Context context) {
@@ -125,7 +125,7 @@ public abstract class a {
     }
 
     public static File i(Context context) {
-        return C0035a.b(context);
+        return C0033a.b(context);
     }
 
     public static Object j(Context context, Class cls) {

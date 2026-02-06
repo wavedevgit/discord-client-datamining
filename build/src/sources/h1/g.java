@@ -8,22 +8,22 @@ import java.util.Comparator;
 public class g extends h1.b {
 
     /* renamed from: g  reason: collision with root package name */
-    private int f25579g;
+    private int f25707g;
 
     /* renamed from: h  reason: collision with root package name */
-    private h[] f25580h;
+    private h[] f25708h;
 
     /* renamed from: i  reason: collision with root package name */
-    private h[] f25581i;
+    private h[] f25709i;
 
     /* renamed from: j  reason: collision with root package name */
-    private int f25582j;
+    private int f25710j;
 
     /* renamed from: k  reason: collision with root package name */
-    b f25583k;
+    b f25711k;
 
     /* renamed from: l  reason: collision with root package name */
-    c f25584l;
+    c f25712l;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -34,7 +34,7 @@ public class g extends h1.b {
         @Override // java.util.Comparator
         /* renamed from: a */
         public int compare(h hVar, h hVar2) {
-            return hVar.f25591i - hVar2.f25591i;
+            return hVar.f25719i - hVar2.f25719i;
         }
     }
 
@@ -42,55 +42,55 @@ public class g extends h1.b {
     class b {
 
         /* renamed from: a  reason: collision with root package name */
-        h f25586a;
+        h f25714a;
 
         /* renamed from: b  reason: collision with root package name */
-        g f25587b;
+        g f25715b;
 
         b(g gVar) {
-            this.f25587b = gVar;
+            this.f25715b = gVar;
         }
 
         public boolean a(h hVar, float f10) {
             boolean z10 = true;
-            if (this.f25586a.f25589d) {
+            if (this.f25714a.f25717d) {
                 for (int i10 = 0; i10 < 9; i10++) {
-                    float[] fArr = this.f25586a.f25597t;
-                    float f11 = fArr[i10] + (hVar.f25597t[i10] * f10);
+                    float[] fArr = this.f25714a.f25725t;
+                    float f11 = fArr[i10] + (hVar.f25725t[i10] * f10);
                     fArr[i10] = f11;
                     if (Math.abs(f11) < 1.0E-4f) {
-                        this.f25586a.f25597t[i10] = 0.0f;
+                        this.f25714a.f25725t[i10] = 0.0f;
                     } else {
                         z10 = false;
                     }
                 }
                 if (z10) {
-                    g.this.G(this.f25586a);
+                    g.this.G(this.f25714a);
                 }
                 return false;
             }
             for (int i11 = 0; i11 < 9; i11++) {
-                float f12 = hVar.f25597t[i11];
+                float f12 = hVar.f25725t[i11];
                 if (f12 != 0.0f) {
                     float f13 = f12 * f10;
                     if (Math.abs(f13) < 1.0E-4f) {
                         f13 = 0.0f;
                     }
-                    this.f25586a.f25597t[i11] = f13;
+                    this.f25714a.f25725t[i11] = f13;
                 } else {
-                    this.f25586a.f25597t[i11] = 0.0f;
+                    this.f25714a.f25725t[i11] = 0.0f;
                 }
             }
             return true;
         }
 
         public void b(h hVar) {
-            this.f25586a = hVar;
+            this.f25714a = hVar;
         }
 
         public final boolean c() {
             for (int i10 = 8; i10 >= 0; i10--) {
-                float f10 = this.f25586a.f25597t[i10];
+                float f10 = this.f25714a.f25725t[i10];
                 if (f10 > 0.0f) {
                     return false;
                 }
@@ -107,8 +107,8 @@ public class g extends h1.b {
                 if (i10 < 0) {
                     break;
                 }
-                float f10 = hVar.f25597t[i10];
-                float f11 = this.f25586a.f25597t[i10];
+                float f10 = hVar.f25725t[i10];
+                float f11 = this.f25714a.f25725t[i10];
                 if (f11 == f10) {
                     i10--;
                 } else if (f11 < f10) {
@@ -119,78 +119,78 @@ public class g extends h1.b {
         }
 
         public void e() {
-            Arrays.fill(this.f25586a.f25597t, 0.0f);
+            Arrays.fill(this.f25714a.f25725t, 0.0f);
         }
 
         public String toString() {
             String str = "[ ";
-            if (this.f25586a != null) {
+            if (this.f25714a != null) {
                 for (int i10 = 0; i10 < 9; i10++) {
-                    str = str + this.f25586a.f25597t[i10] + " ";
+                    str = str + this.f25714a.f25725t[i10] + " ";
                 }
             }
-            return str + "] " + this.f25586a;
+            return str + "] " + this.f25714a;
         }
     }
 
     public g(c cVar) {
         super(cVar);
-        this.f25579g = IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
-        this.f25580h = new h[IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT];
-        this.f25581i = new h[IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT];
-        this.f25582j = 0;
-        this.f25583k = new b(this);
-        this.f25584l = cVar;
+        this.f25707g = IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        this.f25708h = new h[IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT];
+        this.f25709i = new h[IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT];
+        this.f25710j = 0;
+        this.f25711k = new b(this);
+        this.f25712l = cVar;
     }
 
     private void F(h hVar) {
         int i10;
-        int i11 = this.f25582j + 1;
-        h[] hVarArr = this.f25580h;
+        int i11 = this.f25710j + 1;
+        h[] hVarArr = this.f25708h;
         if (i11 > hVarArr.length) {
             h[] hVarArr2 = (h[]) Arrays.copyOf(hVarArr, hVarArr.length * 2);
-            this.f25580h = hVarArr2;
-            this.f25581i = (h[]) Arrays.copyOf(hVarArr2, hVarArr2.length * 2);
+            this.f25708h = hVarArr2;
+            this.f25709i = (h[]) Arrays.copyOf(hVarArr2, hVarArr2.length * 2);
         }
-        h[] hVarArr3 = this.f25580h;
-        int i12 = this.f25582j;
+        h[] hVarArr3 = this.f25708h;
+        int i12 = this.f25710j;
         hVarArr3[i12] = hVar;
         int i13 = i12 + 1;
-        this.f25582j = i13;
-        if (i13 > 1 && hVarArr3[i12].f25591i > hVar.f25591i) {
+        this.f25710j = i13;
+        if (i13 > 1 && hVarArr3[i12].f25719i > hVar.f25719i) {
             int i14 = 0;
             while (true) {
-                i10 = this.f25582j;
+                i10 = this.f25710j;
                 if (i14 >= i10) {
                     break;
                 }
-                this.f25581i[i14] = this.f25580h[i14];
+                this.f25709i[i14] = this.f25708h[i14];
                 i14++;
             }
-            Arrays.sort(this.f25581i, 0, i10, new a());
-            for (int i15 = 0; i15 < this.f25582j; i15++) {
-                this.f25580h[i15] = this.f25581i[i15];
+            Arrays.sort(this.f25709i, 0, i10, new a());
+            for (int i15 = 0; i15 < this.f25710j; i15++) {
+                this.f25708h[i15] = this.f25709i[i15];
             }
         }
-        hVar.f25589d = true;
+        hVar.f25717d = true;
         hVar.a(this);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void G(h hVar) {
         int i10 = 0;
-        while (i10 < this.f25582j) {
-            if (this.f25580h[i10] == hVar) {
+        while (i10 < this.f25710j) {
+            if (this.f25708h[i10] == hVar) {
                 while (true) {
-                    int i11 = this.f25582j;
+                    int i11 = this.f25710j;
                     if (i10 < i11 - 1) {
-                        h[] hVarArr = this.f25580h;
+                        h[] hVarArr = this.f25708h;
                         int i12 = i10 + 1;
                         hVarArr[i10] = hVarArr[i12];
                         i10 = i12;
                     } else {
-                        this.f25582j = i11 - 1;
-                        hVar.f25589d = false;
+                        this.f25710j = i11 - 1;
+                        hVar.f25717d = false;
                         return;
                     }
                 }
@@ -202,45 +202,45 @@ public class g extends h1.b {
 
     @Override // h1.b
     public void B(d dVar, h1.b bVar, boolean z10) {
-        h hVar = bVar.f25541a;
+        h hVar = bVar.f25669a;
         if (hVar == null) {
             return;
         }
-        b.a aVar = bVar.f25545e;
+        b.a aVar = bVar.f25673e;
         int h10 = aVar.h();
         for (int i10 = 0; i10 < h10; i10++) {
             h c10 = aVar.c(i10);
             float j10 = aVar.j(i10);
-            this.f25583k.b(c10);
-            if (this.f25583k.a(hVar, j10)) {
+            this.f25711k.b(c10);
+            if (this.f25711k.a(hVar, j10)) {
                 F(c10);
             }
-            this.f25542b += bVar.f25542b * j10;
+            this.f25670b += bVar.f25670b * j10;
         }
         G(hVar);
     }
 
     @Override // h1.b, h1.d.a
     public void a(h hVar) {
-        this.f25583k.b(hVar);
-        this.f25583k.e();
-        hVar.f25597t[hVar.f25593p] = 1.0f;
+        this.f25711k.b(hVar);
+        this.f25711k.e();
+        hVar.f25725t[hVar.f25721p] = 1.0f;
         F(hVar);
     }
 
     @Override // h1.b, h1.d.a
     public h c(d dVar, boolean[] zArr) {
         int i10 = -1;
-        for (int i11 = 0; i11 < this.f25582j; i11++) {
-            h hVar = this.f25580h[i11];
-            if (!zArr[hVar.f25591i]) {
-                this.f25583k.b(hVar);
+        for (int i11 = 0; i11 < this.f25710j; i11++) {
+            h hVar = this.f25708h[i11];
+            if (!zArr[hVar.f25719i]) {
+                this.f25711k.b(hVar);
                 if (i10 == -1) {
-                    if (!this.f25583k.c()) {
+                    if (!this.f25711k.c()) {
                     }
                     i10 = i11;
                 } else {
-                    if (!this.f25583k.d(this.f25580h[i10])) {
+                    if (!this.f25711k.d(this.f25708h[i10])) {
                     }
                     i10 = i11;
                 }
@@ -249,18 +249,18 @@ public class g extends h1.b {
         if (i10 == -1) {
             return null;
         }
-        return this.f25580h[i10];
+        return this.f25708h[i10];
     }
 
     @Override // h1.b, h1.d.a
     public void clear() {
-        this.f25582j = 0;
-        this.f25542b = 0.0f;
+        this.f25710j = 0;
+        this.f25670b = 0.0f;
     }
 
     @Override // h1.b, h1.d.a
     public boolean isEmpty() {
-        if (this.f25582j == 0) {
+        if (this.f25710j == 0) {
             return true;
         }
         return false;
@@ -268,10 +268,10 @@ public class g extends h1.b {
 
     @Override // h1.b
     public String toString() {
-        String str = " goal -> (" + this.f25542b + ") : ";
-        for (int i10 = 0; i10 < this.f25582j; i10++) {
-            this.f25583k.b(this.f25580h[i10]);
-            str = str + this.f25583k + " ";
+        String str = " goal -> (" + this.f25670b + ") : ";
+        for (int i10 = 0; i10 < this.f25710j; i10++) {
+            this.f25711k.b(this.f25708h[i10]);
+            str = str + this.f25711k + " ";
         }
         return str;
     }

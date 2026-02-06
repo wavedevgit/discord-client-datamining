@@ -23,34 +23,34 @@ import org.xmlpull.v1.XmlPullParserException;
 public final class m0 {
 
     /* renamed from: i  reason: collision with root package name */
-    private static m0 f1861i;
+    private static m0 f2190i;
 
     /* renamed from: a  reason: collision with root package name */
-    private WeakHashMap f1863a;
+    private WeakHashMap f2192a;
 
     /* renamed from: b  reason: collision with root package name */
-    private SimpleArrayMap f1864b;
+    private SimpleArrayMap f2193b;
 
     /* renamed from: c  reason: collision with root package name */
-    private SparseArrayCompat f1865c;
+    private SparseArrayCompat f2194c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final WeakHashMap f1866d = new WeakHashMap(0);
+    private final WeakHashMap f2195d = new WeakHashMap(0);
 
     /* renamed from: e  reason: collision with root package name */
-    private TypedValue f1867e;
+    private TypedValue f2196e;
 
     /* renamed from: f  reason: collision with root package name */
-    private boolean f1868f;
+    private boolean f2197f;
 
     /* renamed from: g  reason: collision with root package name */
-    private c f1869g;
+    private c f2198g;
 
     /* renamed from: h  reason: collision with root package name */
-    private static final PorterDuff.Mode f1860h = PorterDuff.Mode.SRC_IN;
+    private static final PorterDuff.Mode f2189h = PorterDuff.Mode.SRC_IN;
 
     /* renamed from: j  reason: collision with root package name */
-    private static final a f1862j = new a(6);
+    private static final a f2191j = new a(6);
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -95,12 +95,12 @@ public final class m0 {
         try {
             Drawable.ConstantState constantState = drawable.getConstantState();
             if (constantState != null) {
-                u0.j jVar = (u0.j) this.f1866d.get(context);
+                u0.j jVar = (u0.j) this.f2195d.get(context);
                 if (jVar == null) {
                     jVar = new u0.j();
-                    this.f1866d.put(context, jVar);
+                    this.f2195d.put(context, jVar);
                 }
-                jVar.g(j10, new WeakReference(constantState));
+                jVar.h(j10, new WeakReference(constantState));
                 return true;
             }
             return false;
@@ -110,25 +110,25 @@ public final class m0 {
     }
 
     private void b(Context context, int i10, ColorStateList colorStateList) {
-        if (this.f1863a == null) {
-            this.f1863a = new WeakHashMap();
+        if (this.f2192a == null) {
+            this.f2192a = new WeakHashMap();
         }
-        SparseArrayCompat sparseArrayCompat = (SparseArrayCompat) this.f1863a.get(context);
+        SparseArrayCompat sparseArrayCompat = (SparseArrayCompat) this.f2192a.get(context);
         if (sparseArrayCompat == null) {
             sparseArrayCompat = new SparseArrayCompat();
-            this.f1863a.put(context, sparseArrayCompat);
+            this.f2192a.put(context, sparseArrayCompat);
         }
         sparseArrayCompat.a(i10, colorStateList);
     }
 
     private void c(Context context) {
-        if (!this.f1868f) {
-            this.f1868f = true;
-            Drawable i10 = i(context, i.a.f27186a);
+        if (!this.f2197f) {
+            this.f2197f = true;
+            Drawable i10 = i(context, i.a.f26523a);
             if (i10 != null && p(i10)) {
                 return;
             }
-            this.f1868f = false;
+            this.f2197f = false;
             throw new IllegalStateException("This app has been built with an incorrect configuration. Please configure your build for VectorDrawableCompat.");
         }
     }
@@ -139,17 +139,17 @@ public final class m0 {
 
     private Drawable e(Context context, int i10) {
         Drawable a10;
-        if (this.f1867e == null) {
-            this.f1867e = new TypedValue();
+        if (this.f2196e == null) {
+            this.f2196e = new TypedValue();
         }
-        TypedValue typedValue = this.f1867e;
+        TypedValue typedValue = this.f2196e;
         context.getResources().getValue(i10, typedValue, true);
         long d10 = d(typedValue);
         Drawable h10 = h(context, d10);
         if (h10 != null) {
             return h10;
         }
-        c cVar = this.f1869g;
+        c cVar = this.f2198g;
         if (cVar == null) {
             a10 = null;
         } else {
@@ -173,12 +173,12 @@ public final class m0 {
         m0 m0Var;
         synchronized (m0.class) {
             try {
-                if (f1861i == null) {
+                if (f2190i == null) {
                     m0 m0Var2 = new m0();
-                    f1861i = m0Var2;
+                    f2190i = m0Var2;
                     o(m0Var2);
                 }
-                m0Var = f1861i;
+                m0Var = f2190i;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -187,7 +187,7 @@ public final class m0 {
     }
 
     private synchronized Drawable h(Context context, long j10) {
-        u0.j jVar = (u0.j) this.f1866d.get(context);
+        u0.j jVar = (u0.j) this.f2195d.get(context);
         if (jVar == null) {
             return null;
         }
@@ -205,7 +205,7 @@ public final class m0 {
     public static synchronized PorterDuffColorFilter k(int i10, PorterDuff.Mode mode) {
         PorterDuffColorFilter m10;
         synchronized (m0.class) {
-            a aVar = f1862j;
+            a aVar = f2191j;
             m10 = aVar.m(i10, mode);
             if (m10 == null) {
                 m10 = new PorterDuffColorFilter(i10, mode);
@@ -217,7 +217,7 @@ public final class m0 {
 
     private ColorStateList m(Context context, int i10) {
         SparseArrayCompat sparseArrayCompat;
-        WeakHashMap weakHashMap = this.f1863a;
+        WeakHashMap weakHashMap = this.f2192a;
         if (weakHashMap == null || (sparseArrayCompat = (SparseArrayCompat) weakHashMap.get(context)) == null) {
             return null;
         }
@@ -236,23 +236,23 @@ public final class m0 {
 
     private Drawable q(Context context, int i10) {
         int next;
-        SimpleArrayMap simpleArrayMap = this.f1864b;
+        SimpleArrayMap simpleArrayMap = this.f2193b;
         if (simpleArrayMap == null || simpleArrayMap.isEmpty()) {
             return null;
         }
-        SparseArrayCompat sparseArrayCompat = this.f1865c;
+        SparseArrayCompat sparseArrayCompat = this.f2194c;
         if (sparseArrayCompat != null) {
             String str = (String) sparseArrayCompat.e(i10);
-            if ("appcompat_skip_skip".equals(str) || (str != null && this.f1864b.get(str) == null)) {
+            if ("appcompat_skip_skip".equals(str) || (str != null && this.f2193b.get(str) == null)) {
                 return null;
             }
         } else {
-            this.f1865c = new SparseArrayCompat();
+            this.f2194c = new SparseArrayCompat();
         }
-        if (this.f1867e == null) {
-            this.f1867e = new TypedValue();
+        if (this.f2196e == null) {
+            this.f2196e = new TypedValue();
         }
-        TypedValue typedValue = this.f1867e;
+        TypedValue typedValue = this.f2196e;
         Resources resources = context.getResources();
         resources.getValue(i10, typedValue, true);
         long d10 = d(typedValue);
@@ -273,8 +273,8 @@ public final class m0 {
                 }
                 if (next == 2) {
                     String name = xml.getName();
-                    this.f1865c.a(i10, name);
-                    b bVar = (b) this.f1864b.get(name);
+                    this.f2194c.a(i10, name);
+                    b bVar = (b) this.f2193b.get(name);
                     if (bVar != null) {
                         h10 = bVar.a(context, xml, asAttributeSet, context.getTheme());
                     }
@@ -290,7 +290,7 @@ public final class m0 {
             }
         }
         if (h10 == null) {
-            this.f1865c.a(i10, "appcompat_skip_skip");
+            this.f2194c.a(i10, "appcompat_skip_skip");
         }
         return h10;
     }
@@ -306,7 +306,7 @@ public final class m0 {
             }
             return r10;
         }
-        c cVar = this.f1869g;
+        c cVar = this.f2198g;
         if ((cVar == null || !cVar.e(context, i10, drawable)) && !w(context, i10, drawable) && z10) {
             return null;
         }
@@ -323,20 +323,20 @@ public final class m0 {
                 drawable.setState(new int[0]);
                 drawable.setState(state);
             }
-            boolean z10 = t0Var.f1920d;
-            if (!z10 && !t0Var.f1919c) {
+            boolean z10 = t0Var.f2249d;
+            if (!z10 && !t0Var.f2248c) {
                 drawable.clearColorFilter();
                 return;
             }
             if (z10) {
-                colorStateList = t0Var.f1917a;
+                colorStateList = t0Var.f2246a;
             } else {
                 colorStateList = null;
             }
-            if (t0Var.f1919c) {
-                mode = t0Var.f1918b;
+            if (t0Var.f2248c) {
+                mode = t0Var.f2247b;
             } else {
-                mode = f1860h;
+                mode = f2189h;
             }
             drawable.setColorFilter(f(colorStateList, mode, iArr));
             return;
@@ -377,7 +377,7 @@ public final class m0 {
         ColorStateList m10;
         m10 = m(context, i10);
         if (m10 == null) {
-            c cVar = this.f1869g;
+            c cVar = this.f2198g;
             if (cVar == null) {
                 m10 = null;
             } else {
@@ -391,7 +391,7 @@ public final class m0 {
     }
 
     PorterDuff.Mode n(int i10) {
-        c cVar = this.f1869g;
+        c cVar = this.f2198g;
         if (cVar == null) {
             return null;
         }
@@ -399,7 +399,7 @@ public final class m0 {
     }
 
     public synchronized void r(Context context) {
-        u0.j jVar = (u0.j) this.f1866d.get(context);
+        u0.j jVar = (u0.j) this.f2195d.get(context);
         if (jVar != null) {
             jVar.a();
         }
@@ -422,12 +422,12 @@ public final class m0 {
     }
 
     public synchronized void t(c cVar) {
-        this.f1869g = cVar;
+        this.f2198g = cVar;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean w(Context context, int i10, Drawable drawable) {
-        c cVar = this.f1869g;
+        c cVar = this.f2198g;
         if (cVar != null && cVar.c(context, i10, drawable)) {
             return true;
         }

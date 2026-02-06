@@ -5,52 +5,52 @@ import java.util.Arrays;
 public final class f0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f13996a;
+    private final String f13959a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final e0 f13997b;
+    private final e0 f13960b;
 
     /* renamed from: c  reason: collision with root package name */
-    private e0 f13998c;
+    private e0 f13961c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ f0(String str, g0 g0Var) {
         e0 e0Var = new e0();
-        this.f13997b = e0Var;
-        this.f13998c = e0Var;
+        this.f13960b = e0Var;
+        this.f13961c = e0Var;
         str.getClass();
-        this.f13996a = str;
+        this.f13959a = str;
     }
 
     public final f0 a(String str, int i10) {
         String valueOf = String.valueOf(i10);
         d0 d0Var = new d0(null);
-        this.f13998c.f13985c = d0Var;
-        this.f13998c = d0Var;
-        d0Var.f13984b = valueOf;
-        d0Var.f13983a = "errorCode";
+        this.f13961c.f13948c = d0Var;
+        this.f13961c = d0Var;
+        d0Var.f13947b = valueOf;
+        d0Var.f13946a = "errorCode";
         return this;
     }
 
     public final f0 b(String str, Object obj) {
         e0 e0Var = new e0();
-        this.f13998c.f13985c = e0Var;
-        this.f13998c = e0Var;
-        e0Var.f13984b = obj;
-        e0Var.f13983a = str;
+        this.f13961c.f13948c = e0Var;
+        this.f13961c = e0Var;
+        e0Var.f13947b = obj;
+        e0Var.f13946a = str;
         return this;
     }
 
     public final String toString() {
         StringBuilder sb2 = new StringBuilder(32);
-        sb2.append(this.f13996a);
+        sb2.append(this.f13959a);
         sb2.append('{');
-        e0 e0Var = this.f13997b.f13985c;
+        e0 e0Var = this.f13960b.f13948c;
         String str = "";
         while (e0Var != null) {
-            Object obj = e0Var.f13984b;
+            Object obj = e0Var.f13947b;
             sb2.append(str);
-            String str2 = e0Var.f13983a;
+            String str2 = e0Var.f13946a;
             if (str2 != null) {
                 sb2.append(str2);
                 sb2.append('=');
@@ -61,7 +61,7 @@ public final class f0 {
             } else {
                 sb2.append(obj);
             }
-            e0Var = e0Var.f13985c;
+            e0Var = e0Var.f13948c;
             str = ", ";
         }
         sb2.append('}');

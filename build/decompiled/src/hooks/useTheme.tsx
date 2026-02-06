@@ -20,21 +20,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot3 = var4;
     var1 = function arg0() {
-        _fun28217: for (var _fun28217_ip = 0;;) switch (_fun28217_ip) {
+        _fun28221: for (var _fun28221_ip = 0;;) switch (_fun28221_ip) {
             case 0:
                 var1 = arg0;
                 var2 = _closure1_slot2;
                 var2 = var2.DARK;
                 if (!(var2 !== var1)) {
-                    _fun28217_ip = 43;
-                    continue _fun28217
+                    _fun28221_ip = 43;
+                    continue _fun28221
                 }
             case 20:
                 var0 = _closure1_slot2;
                 var0 = var0.LIGHT;
                 if (!(var0 !== var1)) {
-                    _fun28217_ip = 38;
-                    continue _fun28217
+                    _fun28221_ip = 38;
+                    continue _fun28221
                 }
             case 34:
                 var0 = undefined;
@@ -81,4 +81,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.useThemeIndex = var3;
     var2.getThemeIndex = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 3206, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 3208, 2]);

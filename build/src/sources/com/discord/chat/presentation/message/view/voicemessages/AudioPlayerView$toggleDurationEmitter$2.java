@@ -6,8 +6,8 @@ import kotlin.coroutines.Continuation;
 import kotlin.jvm.functions.Function2;
 import kotlinx.coroutines.CoroutineDispatcher;
 import kotlinx.coroutines.CoroutineScope;
-import ms.i0;
-import ms.m0;
+import os.i0;
+import os.m0;
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {2, 1, 0}, xi = 48)
 @kotlin.coroutines.jvm.internal.e(c = "com.discord.chat.presentation.message.view.voicemessages.AudioPlayerView$toggleDurationEmitter$2", f = "AudioPlayerView.kt", l = {516}, m = "invokeSuspend")
@@ -36,7 +36,7 @@ public final class AudioPlayerView$toggleDurationEmitter$2 extends kotlin.corout
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            Object f10 = ur.b.f();
+            Object f10 = wr.b.f();
             int i10 = this.label;
             if (i10 != 0) {
                 if (i10 == 1) {
@@ -51,12 +51,12 @@ public final class AudioPlayerView$toggleDurationEmitter$2 extends kotlin.corout
                     return f10;
                 }
             }
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
         }
     }
 
@@ -78,7 +78,7 @@ public final class AudioPlayerView$toggleDurationEmitter$2 extends kotlin.corout
     public final Object invokeSuspend(Object obj) {
         CoroutineScope coroutineScope;
         AudioPlayerViewState audioPlayerViewState;
-        Object f10 = ur.b.f();
+        Object f10 = wr.b.f();
         int i10 = this.label;
         if (i10 != 0) {
             if (i10 == 1) {
@@ -102,15 +102,15 @@ public final class AudioPlayerView$toggleDurationEmitter$2 extends kotlin.corout
             AnonymousClass1 anonymousClass1 = new AnonymousClass1(null);
             this.L$0 = coroutineScope;
             this.label = 1;
-            if (ms.g.g(a10, anonymousClass1, this) == f10) {
+            if (os.g.g(a10, anonymousClass1, this) == f10) {
                 return f10;
             }
         }
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((AudioPlayerView$toggleDurationEmitter$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+        return ((AudioPlayerView$toggleDurationEmitter$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
     }
 }

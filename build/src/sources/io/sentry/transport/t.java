@@ -6,21 +6,21 @@ import io.sentry.l5;
 public final class t implements q {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final t f29767d = new t();
+    private static final t f28911d = new t();
 
     private t() {
     }
 
     public static t a() {
-        return f29767d;
-    }
-
-    @Override // io.sentry.transport.q
-    public void a0(l5 l5Var, Hint hint) {
+        return f28911d;
     }
 
     @Override // io.sentry.transport.q
     public void c(boolean z10) {
+    }
+
+    @Override // io.sentry.transport.q
+    public void c0(l5 l5Var, Hint hint) {
     }
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
@@ -32,7 +32,7 @@ public final class t implements q {
     }
 
     @Override // io.sentry.transport.q
-    public a0 j() {
+    public a0 i() {
         return null;
     }
 }

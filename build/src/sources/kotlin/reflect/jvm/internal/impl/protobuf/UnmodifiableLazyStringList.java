@@ -9,20 +9,20 @@ import java.util.RandomAccess;
 public class UnmodifiableLazyStringList extends AbstractList<String> implements RandomAccess, LazyStringList {
 
     /* renamed from: d  reason: collision with root package name */
-    private final LazyStringList f33946d;
+    private final LazyStringList f33966d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     class a implements ListIterator {
 
         /* renamed from: d  reason: collision with root package name */
-        ListIterator f33947d;
+        ListIterator f33967d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ int f33948e;
+        final /* synthetic */ int f33968e;
 
         a(int i10) {
-            this.f33948e = i10;
-            this.f33947d = UnmodifiableLazyStringList.this.f33946d.listIterator(i10);
+            this.f33968e = i10;
+            this.f33967d = UnmodifiableLazyStringList.this.f33966d.listIterator(i10);
         }
 
         @Override // java.util.ListIterator
@@ -34,13 +34,13 @@ public class UnmodifiableLazyStringList extends AbstractList<String> implements 
         @Override // java.util.ListIterator, java.util.Iterator
         /* renamed from: b */
         public String next() {
-            return (String) this.f33947d.next();
+            return (String) this.f33967d.next();
         }
 
         @Override // java.util.ListIterator
         /* renamed from: c */
         public String previous() {
-            return (String) this.f33947d.previous();
+            return (String) this.f33967d.previous();
         }
 
         @Override // java.util.ListIterator
@@ -51,22 +51,22 @@ public class UnmodifiableLazyStringList extends AbstractList<String> implements 
 
         @Override // java.util.ListIterator, java.util.Iterator
         public boolean hasNext() {
-            return this.f33947d.hasNext();
+            return this.f33967d.hasNext();
         }
 
         @Override // java.util.ListIterator
         public boolean hasPrevious() {
-            return this.f33947d.hasPrevious();
+            return this.f33967d.hasPrevious();
         }
 
         @Override // java.util.ListIterator
         public int nextIndex() {
-            return this.f33947d.nextIndex();
+            return this.f33967d.nextIndex();
         }
 
         @Override // java.util.ListIterator
         public int previousIndex() {
-            return this.f33947d.previousIndex();
+            return this.f33967d.previousIndex();
         }
 
         @Override // java.util.ListIterator, java.util.Iterator
@@ -79,21 +79,21 @@ public class UnmodifiableLazyStringList extends AbstractList<String> implements 
     class b implements Iterator {
 
         /* renamed from: d  reason: collision with root package name */
-        Iterator f33950d;
+        Iterator f33970d;
 
         b() {
-            this.f33950d = UnmodifiableLazyStringList.this.f33946d.iterator();
+            this.f33970d = UnmodifiableLazyStringList.this.f33966d.iterator();
         }
 
         @Override // java.util.Iterator
         /* renamed from: a */
         public String next() {
-            return (String) this.f33950d.next();
+            return (String) this.f33970d.next();
         }
 
         @Override // java.util.Iterator
         public boolean hasNext() {
-            return this.f33950d.hasNext();
+            return this.f33970d.hasNext();
         }
 
         @Override // java.util.Iterator
@@ -103,7 +103,7 @@ public class UnmodifiableLazyStringList extends AbstractList<String> implements 
     }
 
     public UnmodifiableLazyStringList(LazyStringList lazyStringList) {
-        this.f33946d = lazyStringList;
+        this.f33966d = lazyStringList;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.protobuf.LazyStringList
@@ -113,12 +113,12 @@ public class UnmodifiableLazyStringList extends AbstractList<String> implements 
 
     @Override // kotlin.reflect.jvm.internal.impl.protobuf.LazyStringList
     public ByteString getByteString(int i10) {
-        return this.f33946d.getByteString(i10);
+        return this.f33966d.getByteString(i10);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.protobuf.LazyStringList
     public List<?> getUnderlyingElements() {
-        return this.f33946d.getUnderlyingElements();
+        return this.f33966d.getUnderlyingElements();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.protobuf.LazyStringList
@@ -138,11 +138,11 @@ public class UnmodifiableLazyStringList extends AbstractList<String> implements 
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
     public int size() {
-        return this.f33946d.size();
+        return this.f33966d.size();
     }
 
     @Override // java.util.AbstractList, java.util.List
     public String get(int i10) {
-        return this.f33946d.get(i10);
+        return this.f33966d.get(i10);
     }
 }

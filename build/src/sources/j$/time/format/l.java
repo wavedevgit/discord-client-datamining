@@ -9,7 +9,7 @@ public final class l implements e {
     public static final l STRICT;
 
     /* renamed from: a  reason: collision with root package name */
-    public static final /* synthetic */ l[] f30488a;
+    public static final /* synthetic */ l[] f29462a;
 
     @Override // j$.time.format.e
     public final boolean r(q qVar, StringBuilder sb2) {
@@ -21,7 +21,7 @@ public final class l implements e {
     }
 
     public static l[] values() {
-        return (l[]) f30488a.clone();
+        return (l[]) f29462a.clone();
     }
 
     /* JADX WARN: Type inference failed for: r0v0, types: [java.lang.Enum, j$.time.format.l] */
@@ -37,25 +37,25 @@ public final class l implements e {
         STRICT = r22;
         ?? r32 = new Enum("LENIENT", 3);
         LENIENT = r32;
-        f30488a = new l[]{r02, r12, r22, r32};
+        f29462a = new l[]{r02, r12, r22, r32};
     }
 
     @Override // j$.time.format.e
     public final int t(o oVar, CharSequence charSequence, int i10) {
         int ordinal = ordinal();
         if (ordinal == 0) {
-            oVar.f30495b = true;
+            oVar.f29469b = true;
             return i10;
         } else if (ordinal == 1) {
-            oVar.f30495b = false;
+            oVar.f29469b = false;
             return i10;
         } else if (ordinal == 2) {
-            oVar.f30496c = true;
+            oVar.f29470c = true;
             return i10;
         } else if (ordinal != 3) {
             return i10;
         } else {
-            oVar.f30496c = false;
+            oVar.f29470c = false;
             return i10;
         }
     }

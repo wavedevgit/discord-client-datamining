@@ -1,27 +1,27 @@
 package xp;
 
-import zq.h;
+import br.d;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class c implements zq.d {
+public final class c implements d {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final h f54069a;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    private static final class a {
 
-    public c(h hVar) {
-        this.f54069a = hVar;
+        /* renamed from: a  reason: collision with root package name */
+        static final c f54738a = new c();
     }
 
-    public static c a(h hVar) {
-        return new c(hVar);
+    public static c a() {
+        return a.f54738a;
     }
 
-    public static b c(tp.e eVar) {
-        return new b(eVar);
+    public static b c() {
+        return new b();
     }
 
     @Override // javax.inject.Provider
     /* renamed from: b */
     public b get() {
-        return c((tp.e) this.f54069a.get());
+        return c();
     }
 }

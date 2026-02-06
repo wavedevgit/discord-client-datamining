@@ -1,36 +1,32 @@
 package ng;
 
-import xi.c;
+import java.util.Iterator;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class f2 implements xi.d {
+abstract class f2 implements Iterator {
 
-    /* renamed from: a  reason: collision with root package name */
-    static final f2 f40565a = new f2();
+    /* renamed from: d  reason: collision with root package name */
+    final Iterator f39799d;
 
-    /* renamed from: b  reason: collision with root package name */
-    private static final xi.c f40566b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private static final xi.c f40567c;
-
-    static {
-        c.b a10 = xi.c.a("maxResults");
-        f fVar = new f();
-        fVar.a(1);
-        f40566b = a10.b(fVar.b()).a();
-        c.b a11 = xi.c.a("modelType");
-        f fVar2 = new f();
-        fVar2.a(2);
-        f40567c = a11.b(fVar2.b()).a();
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public f2(Iterator it) {
+        it.getClass();
+        this.f39799d = it;
     }
 
-    private f2() {
+    abstract Object a(Object obj);
+
+    @Override // java.util.Iterator
+    public final boolean hasNext() {
+        return this.f39799d.hasNext();
     }
 
-    @Override // xi.d
-    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
-        android.support.v4.media.session.b.a(obj);
-        xi.e eVar = (xi.e) obj2;
-        throw null;
+    @Override // java.util.Iterator
+    public final Object next() {
+        return a(this.f39799d.next());
+    }
+
+    @Override // java.util.Iterator
+    public final void remove() {
+        this.f39799d.remove();
     }
 }

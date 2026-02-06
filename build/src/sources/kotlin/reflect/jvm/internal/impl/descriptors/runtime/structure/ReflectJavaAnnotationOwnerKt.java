@@ -19,7 +19,7 @@ public final class ReflectJavaAnnotationOwnerKt {
         while (true) {
             if (i10 < length) {
                 annotation = annotationArr[i10];
-                if (Intrinsics.areEqual(ReflectClassUtilKt.getClassId(bs.a.b(bs.a.a(annotation))).asSingleFqName(), fqName)) {
+                if (Intrinsics.areEqual(ReflectClassUtilKt.getClassId(ds.a.b(ds.a.a(annotation))).asSingleFqName(), fqName)) {
                     break;
                 }
                 i10++;

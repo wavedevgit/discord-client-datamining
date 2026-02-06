@@ -1,189 +1,324 @@
 package al;
+
+import hk.c;
+import hk.p;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-final class a {
+public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final jk.b f708a;
+    private static final int[] f1103a = {0, 4, 1, 5};
 
     /* renamed from: b  reason: collision with root package name */
-    private j f709b;
+    private static final int[] f1104b = {6, 2, 7, 3};
 
     /* renamed from: c  reason: collision with root package name */
-    private g f710c;
+    private static final int[] f1105c = {8, 1, 1, 1, 1, 1, 1, 3};
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f711d;
+    private static final int[] f1106d = {7, 1, 1, 3, 1, 1, 1, 2, 1};
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public a(jk.b bVar) {
-        int i10 = bVar.i();
-        if (i10 >= 21 && (i10 & 3) == 1) {
-            this.f708a = bVar;
-            return;
+    /* renamed from: e  reason: collision with root package name */
+    private static final int[] f1107e = {0, 180, 270, 90};
+
+    private static lk.b a(lk.b bVar, int i10) {
+        if (i10 % 360 == 0) {
+            return bVar;
         }
-        throw fk.g.a();
+        lk.b clone = bVar.clone();
+        clone.m(i10);
+        return clone;
     }
 
-    private int a(int i10, int i11, int i12) {
-        boolean e10;
-        if (this.f711d) {
-            e10 = this.f708a.e(i11, i10);
-        } else {
-            e10 = this.f708a.e(i10, i11);
+    private static void b(p[] pVarArr, p[] pVarArr2, int[] iArr) {
+        for (int i10 = 0; i10 < iArr.length; i10++) {
+            pVarArr[iArr[i10]] = pVarArr2[i10];
         }
-        if (e10) {
-            return (i12 << 1) | 1;
-        }
-        return i12 << 1;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public void b() {
-        int i10 = 0;
-        while (i10 < this.f708a.l()) {
-            int i11 = i10 + 1;
-            for (int i12 = i11; i12 < this.f708a.i(); i12++) {
-                if (this.f708a.e(i10, i12) != this.f708a.e(i12, i10)) {
-                    this.f708a.d(i12, i10);
-                    this.f708a.d(i10, i12);
-                }
+    public static b c(c cVar, Map map, boolean z10) {
+        int[] iArr;
+        lk.b a10 = cVar.a();
+        for (int i10 : f1107e) {
+            lk.b a11 = a(a10, i10);
+            List d10 = d(z10, a11);
+            if (!d10.isEmpty()) {
+                return new b(a11, d10, i10);
             }
-            i10 = i11;
         }
+        return new b(a10, new ArrayList(), 0);
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public byte[] c() {
-        int i10;
-        g d10 = d();
-        j e10 = e();
-        c cVar = c.values()[d10.c()];
-        int i11 = this.f708a.i();
-        cVar.d(this.f708a, i11);
-        jk.b a10 = e10.a();
-        byte[] bArr = new byte[e10.h()];
-        int i12 = i11 - 1;
-        boolean z10 = true;
-        int i13 = i12;
-        int i14 = 0;
-        int i15 = 0;
+    /* JADX WARN: Code restructure failed: missing block: B:10:0x001d, code lost:
+        if (r4 != 0) goto L11;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:12:0x0020, code lost:
+        r3 = r0.iterator();
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:14:0x0028, code lost:
+        if (r3.hasNext() == false) goto L24;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:15:0x002a, code lost:
+        r4 = (hk.p[]) r3.next();
+        r7 = r4[1];
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:16:0x0032, code lost:
+        if (r7 == null) goto L17;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:17:0x0034, code lost:
+        r2 = (int) java.lang.Math.max(r2, r7.d());
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:18:0x003e, code lost:
+        r4 = r4[3];
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:19:0x0040, code lost:
+        if (r4 == null) goto L23;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:20:0x0042, code lost:
+        r2 = java.lang.Math.max(r2, (int) r4.d());
+     */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    private static java.util.List d(boolean r8, lk.b r9) {
+        /*
+            java.util.ArrayList r0 = new java.util.ArrayList
+            r0.<init>()
+            r1 = 0
+            r2 = r1
+            r3 = r2
+        L8:
+            r4 = r3
+        L9:
+            int r5 = r9.i()
+            if (r2 >= r5) goto L7a
+            hk.p[] r3 = g(r9, r2, r3)
+            r5 = r3[r1]
+            r6 = 1
+            if (r5 != 0) goto L50
+            r5 = 3
+            r7 = r3[r5]
+            if (r7 != 0) goto L50
+            if (r4 != 0) goto L20
+            goto L7a
+        L20:
+            java.util.Iterator r3 = r0.iterator()
+        L24:
+            boolean r4 = r3.hasNext()
+            if (r4 == 0) goto L4c
+            java.lang.Object r4 = r3.next()
+            hk.p[] r4 = (hk.p[]) r4
+            r7 = r4[r6]
+            if (r7 == 0) goto L3e
+            float r2 = (float) r2
+            float r7 = r7.d()
+            float r2 = java.lang.Math.max(r2, r7)
+            int r2 = (int) r2
+        L3e:
+            r4 = r4[r5]
+            if (r4 == 0) goto L24
+            float r4 = r4.d()
+            int r4 = (int) r4
+            int r2 = java.lang.Math.max(r2, r4)
+            goto L24
+        L4c:
+            int r2 = r2 + 5
+            r3 = r1
+            goto L8
+        L50:
+            r0.add(r3)
+            if (r8 != 0) goto L56
+            goto L7a
+        L56:
+            r2 = 2
+            r4 = r3[r2]
+            if (r4 == 0) goto L69
+            float r4 = r4.c()
+            int r4 = (int) r4
+            r2 = r3[r2]
+            float r2 = r2.d()
+        L66:
+            int r2 = (int) r2
+            r3 = r4
+            goto L78
+        L69:
+            r2 = 4
+            r4 = r3[r2]
+            float r4 = r4.c()
+            int r4 = (int) r4
+            r2 = r3[r2]
+            float r2 = r2.d()
+            goto L66
+        L78:
+            r4 = r6
+            goto L9
+        L7a:
+            return r0
+        */
+        throw new UnsupportedOperationException("Method not decompiled: al.a.d(boolean, lk.b):java.util.List");
+    }
+
+    private static int[] e(lk.b bVar, int i10, int i11, int i12, int[] iArr, int[] iArr2) {
+        Arrays.fill(iArr2, 0, iArr2.length, 0);
+        int i13 = 0;
+        while (bVar.e(i10, i11) && i10 > 0) {
+            int i14 = i13 + 1;
+            if (i13 >= 3) {
+                break;
+            }
+            i10--;
+            i13 = i14;
+        }
+        int length = iArr.length;
+        int i15 = i10;
         int i16 = 0;
-        while (i13 > 0) {
-            if (i13 == 6) {
-                i13--;
-            }
-            for (int i17 = 0; i17 < i11; i17++) {
-                if (z10) {
-                    i10 = i12 - i17;
-                } else {
-                    i10 = i17;
-                }
-                for (int i18 = 0; i18 < 2; i18++) {
-                    int i19 = i13 - i18;
-                    if (!a10.e(i19, i10)) {
-                        i15++;
-                        i16 <<= 1;
-                        if (this.f708a.e(i19, i10)) {
-                            i16 |= 1;
-                        }
-                        if (i15 == 8) {
-                            bArr[i14] = (byte) i16;
-                            i14++;
-                            i15 = 0;
-                            i16 = 0;
-                        }
+        boolean z10 = false;
+        while (i10 < i12) {
+            if (bVar.e(i10, i11) != z10) {
+                iArr2[i16] = iArr2[i16] + 1;
+            } else {
+                if (i16 == length - 1) {
+                    if (h(iArr2, iArr) < 0.42f) {
+                        return new int[]{i15, i10};
                     }
+                    i15 += iArr2[0] + iArr2[1];
+                    int i17 = i16 - 1;
+                    System.arraycopy(iArr2, 2, iArr2, 0, i17);
+                    iArr2[i17] = 0;
+                    iArr2[i16] = 0;
+                    i16--;
+                } else {
+                    i16++;
                 }
+                iArr2[i16] = 1;
+                z10 = !z10;
             }
-            z10 = !z10;
-            i13 -= 2;
+            i10++;
         }
-        if (i14 == e10.h()) {
-            return bArr;
+        if (i16 == length - 1 && h(iArr2, iArr) < 0.42f) {
+            return new int[]{i15, i10 - 1};
         }
-        throw fk.g.a();
+        return null;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public g d() {
-        g gVar = this.f710c;
-        if (gVar != null) {
-            return gVar;
+    private static p[] f(lk.b bVar, int i10, int i11, int i12, int i13, int i14, int[] iArr) {
+        int i15;
+        boolean z10;
+        int[] e10;
+        p[] pVarArr = new p[4];
+        int[] iArr2 = iArr;
+        int[] iArr3 = new int[iArr2.length];
+        int i16 = i12;
+        while (true) {
+            if (i16 < i10) {
+                int[] e11 = e(bVar, i13, i16, i11, iArr2, iArr3);
+                if (e11 != null) {
+                    int[] iArr4 = e11;
+                    while (true) {
+                        i15 = i16;
+                        if (i15 <= 0 || (e10 = e(bVar, i13, i15 - 1, i11, iArr, iArr3)) == null) {
+                            break;
+                        }
+                        iArr4 = e10;
+                    }
+                    float f10 = i15;
+                    pVarArr[0] = new p(iArr4[0], f10);
+                    pVarArr[1] = new p(iArr4[1], f10);
+                    z10 = true;
+                } else {
+                    i16 += 5;
+                    iArr2 = iArr;
+                }
+            } else {
+                i15 = i16;
+                z10 = false;
+                break;
+            }
         }
+        int i17 = i15 + 1;
+        if (z10) {
+            int[] iArr5 = {(int) pVarArr[0].c(), (int) pVarArr[1].c()};
+            int i18 = i17;
+            int i19 = 0;
+            while (i18 < i10) {
+                int[] e12 = e(bVar, iArr5[0], i18, i11, iArr, iArr3);
+                if (e12 != null && Math.abs(iArr5[0] - e12[0]) < 5 && Math.abs(iArr5[1] - e12[1]) < 5) {
+                    iArr5 = e12;
+                    i19 = 0;
+                } else if (i19 > 25) {
+                    break;
+                } else {
+                    i19++;
+                }
+                i18++;
+            }
+            i17 = i18 - (i19 + 1);
+            float f11 = i17;
+            pVarArr[2] = new p(iArr5[0], f11);
+            pVarArr[3] = new p(iArr5[1], f11);
+        }
+        if (i17 - i15 < i14) {
+            Arrays.fill(pVarArr, (Object) null);
+        }
+        return pVarArr;
+    }
+
+    private static p[] g(lk.b bVar, int i10, int i11) {
+        int i12 = bVar.i();
+        int l10 = bVar.l();
+        p[] pVarArr = new p[8];
+        int i13 = 10;
+        int i14 = i10;
+        int i15 = i11;
+        b(pVarArr, f(bVar, i12, l10, i14, i15, 10, f1105c), f1103a);
+        p pVar = pVarArr[4];
+        if (pVar != null) {
+            int c10 = (int) pVar.c();
+            int d10 = (int) pVarArr[4].d();
+            p pVar2 = pVarArr[5];
+            if (pVar2 != null) {
+                i13 = (int) Math.max((((int) pVar2.d()) - d10) * 0.5f, 10.0f);
+            }
+            i14 = d10;
+            i15 = c10;
+        }
+        b(pVarArr, f(bVar, i12, l10, i14, i15, i13, f1106d), f1104b);
+        return pVarArr;
+    }
+
+    private static float h(int[] iArr, int[] iArr2) {
+        float f10;
+        int length = iArr.length;
         int i10 = 0;
         int i11 = 0;
-        for (int i12 = 0; i12 < 6; i12++) {
-            i11 = a(i12, 8, i11);
+        for (int i12 = 0; i12 < length; i12++) {
+            i10 += iArr[i12];
+            i11 += iArr2[i12];
         }
-        int a10 = a(8, 7, a(8, 8, a(7, 8, i11)));
-        for (int i13 = 5; i13 >= 0; i13--) {
-            a10 = a(8, i13, a10);
+        if (i10 < i11) {
+            return Float.POSITIVE_INFINITY;
         }
-        int i14 = this.f708a.i();
-        int i15 = i14 - 7;
-        for (int i16 = i14 - 1; i16 >= i15; i16--) {
-            i10 = a(8, i16, i10);
-        }
-        for (int i17 = i14 - 8; i17 < i14; i17++) {
-            i10 = a(i17, 8, i10);
-        }
-        g a11 = g.a(a10, i10);
-        this.f710c = a11;
-        if (a11 != null) {
-            return a11;
-        }
-        throw fk.g.a();
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public j e() {
-        j jVar = this.f709b;
-        if (jVar != null) {
-            return jVar;
-        }
-        int i10 = this.f708a.i();
-        int i11 = (i10 - 17) / 4;
-        if (i11 <= 6) {
-            return j.i(i11);
-        }
-        int i12 = i10 - 11;
-        int i13 = 0;
-        int i14 = 0;
-        for (int i15 = 5; i15 >= 0; i15--) {
-            for (int i16 = i10 - 9; i16 >= i12; i16--) {
-                i14 = a(i16, i15, i14);
+        float f11 = i10;
+        float f12 = f11 / i11;
+        float f13 = 0.8f * f12;
+        float f14 = 0.0f;
+        for (int i13 = 0; i13 < length; i13++) {
+            float f15 = iArr2[i13] * f12;
+            float f16 = iArr[i13];
+            if (f16 > f15) {
+                f10 = f16 - f15;
+            } else {
+                f10 = f15 - f16;
             }
-        }
-        j c10 = j.c(i14);
-        if (c10 != null && c10.e() == i10) {
-            this.f709b = c10;
-            return c10;
-        }
-        for (int i17 = 5; i17 >= 0; i17--) {
-            for (int i18 = i10 - 9; i18 >= i12; i18--) {
-                i13 = a(i17, i18, i13);
+            if (f10 > f13) {
+                return Float.POSITIVE_INFINITY;
             }
+            f14 += f10;
         }
-        j c11 = j.c(i13);
-        if (c11 != null && c11.e() == i10) {
-            this.f709b = c11;
-            return c11;
-        }
-        throw fk.g.a();
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public void f() {
-        if (this.f710c == null) {
-            return;
-        }
-        c.values()[this.f710c.c()].d(this.f708a, this.f708a.i());
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public void g(boolean z10) {
-        this.f709b = null;
-        this.f710c = null;
-        this.f711d = z10;
+        return f14 / f11;
     }
 }

@@ -1,37 +1,47 @@
 package gp;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import androidx.viewbinding.ViewBinding;
-import fp.n1;
+import kotlin.enums.EnumEntries;
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a implements ViewBinding {
+public final class a {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final View f25038a;
+    /* renamed from: d  reason: collision with root package name */
+    public static final a f25428d = new a("NotRequested", 0);
 
-    private a(View view) {
-        this.f25038a = view;
+    /* renamed from: e  reason: collision with root package name */
+    public static final a f25429e = new a("NotSupported", 1);
+
+    /* renamed from: i  reason: collision with root package name */
+    public static final a f25430i = new a("Failed", 2);
+
+    /* renamed from: o  reason: collision with root package name */
+    public static final a f25431o = new a("Success", 3);
+
+    /* renamed from: p  reason: collision with root package name */
+    private static final /* synthetic */ a[] f25432p;
+
+    /* renamed from: q  reason: collision with root package name */
+    private static final /* synthetic */ EnumEntries f25433q;
+
+    static {
+        a[] a10 = a();
+        f25432p = a10;
+        f25433q = xr.a.a(a10);
     }
 
-    public static a a(View view) {
-        if (view != null) {
-            return new a(view);
-        }
-        throw new NullPointerException("rootView");
+    private a(String str, int i10) {
     }
 
-    public static a b(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(n1.f23353a, viewGroup, false);
-        if (z10) {
-            viewGroup.addView(inflate);
-        }
-        return a(inflate);
+    private static final /* synthetic */ a[] a() {
+        return new a[]{f25428d, f25429e, f25430i, f25431o};
     }
 
-    @Override // androidx.viewbinding.ViewBinding
-    public View getRoot() {
-        return this.f25038a;
+    public static a valueOf(String str) {
+        return (a) Enum.valueOf(a.class, str);
+    }
+
+    public static a[] values() {
+        return (a[]) f25432p.clone();
     }
 }

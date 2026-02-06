@@ -47,24 +47,24 @@ public final class NextStep_GovernmentId_DigitalIdRequestJsonAdapter extends h {
     @NotNull
     public NextStep.GovernmentId.DigitalIdRequest fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         String str = null;
         String str2 = null;
         Map map = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 str = (String) this.nullableStringAdapter.fromJson(reader);
-            } else if (W == 1) {
+            } else if (J == 1) {
                 str2 = (String) this.nullableStringAdapter.fromJson(reader);
-            } else if (W == 2) {
+            } else if (J == 2) {
                 map = (Map) this.nullableMapOfStringIntAdapter.fromJson(reader);
             }
         }
-        reader.z();
+        reader.D();
         return new NextStep.GovernmentId.DigitalIdRequest(str, str2, map);
     }
 
@@ -73,13 +73,13 @@ public final class NextStep_GovernmentId_DigitalIdRequestJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (digitalIdRequest != null) {
             writer.k();
-            writer.W("idType");
+            writer.J("idType");
             this.nullableStringAdapter.toJson(writer, digitalIdRequest.getIdType());
-            writer.W("minAge");
+            writer.J("minAge");
             this.nullableStringAdapter.toJson(writer, digitalIdRequest.getMinAge());
-            writer.W("elementToStoreLength");
+            writer.J("elementToStoreLength");
             this.nullableMapOfStringIntAdapter.toJson(writer, digitalIdRequest.getElementToStoreLength());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

@@ -15,27 +15,27 @@ import java.util.Map;
 class l {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f21313a;
+    private final int f21246a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f21314b;
+    private final int f21247b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Rational f21315c;
+    private final Rational f21248c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f21316d;
+    private final boolean f21249d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public l(d0 d0Var, Rational rational) {
-        this.f21313a = d0Var.a();
-        this.f21314b = d0Var.c();
-        this.f21315c = rational;
+        this.f21246a = d0Var.a();
+        this.f21247b = d0Var.c();
+        this.f21248c = rational;
         boolean z10 = true;
         if (rational != null && rational.getNumerator() < rational.getDenominator()) {
             z10 = false;
         }
-        this.f21316d = z10;
+        this.f21249d = z10;
     }
 
     private static Size a(Size size, int i10, int i11, int i12) {
@@ -59,7 +59,7 @@ class l {
 
     private Rational c(i1 i1Var, List list) {
         if (i1Var.v()) {
-            return k.n(i1Var.x(), this.f21316d);
+            return k.n(i1Var.x(), this.f21249d);
         }
         Size d10 = d(i1Var);
         if (d10 != null) {
@@ -69,7 +69,7 @@ class l {
     }
 
     private Size d(i1 i1Var) {
-        return a(i1Var.J(null), i1Var.z(0), this.f21314b, this.f21313a);
+        return a(i1Var.J(null), i1Var.z(0), this.f21247b, this.f21246a);
     }
 
     private static boolean e(int i10, int i11, int i12) {
@@ -102,10 +102,10 @@ class l {
             i10 = size;
         }
         Size d10 = d(i1Var);
-        Size size2 = i0.d.f27198c;
+        Size size2 = i0.d.f26535c;
         int b10 = i0.d.b(size2);
         if (i0.d.b(i10) < b10) {
-            size2 = i0.d.f27196a;
+            size2 = i0.d.f26533a;
         } else if (d10 != null && i0.d.b(d10) < b10) {
             size2 = d10;
         }
@@ -135,7 +135,7 @@ class l {
                     }
                 }
                 ArrayList<Rational> arrayList4 = new ArrayList(o10.keySet());
-                Collections.sort(arrayList4, new a.C0092a(c10, this.f21315c));
+                Collections.sort(arrayList4, new a.C0092a(c10, this.f21248c));
                 for (Rational rational2 : arrayList4) {
                     for (Size size4 : (List) o10.get(rational2)) {
                         if (!arrayList3.contains(size4)) {

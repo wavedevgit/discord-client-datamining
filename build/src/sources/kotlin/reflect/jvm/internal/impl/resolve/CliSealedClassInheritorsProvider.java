@@ -98,7 +98,7 @@ public final class CliSealedClassInheritorsProvider extends SealedClassInheritor
         return CollectionsKt.W0(linkedHashSet, new Comparator() { // from class: kotlin.reflect.jvm.internal.impl.resolve.CliSealedClassInheritorsProvider$computeSealedSubclasses$$inlined$sortedBy$1
             @Override // java.util.Comparator
             public final int compare(T t10, T t11) {
-                return rr.a.d(DescriptorUtilsKt.getFqNameSafe((ClassDescriptor) t10).asString(), DescriptorUtilsKt.getFqNameSafe((ClassDescriptor) t11).asString());
+                return tr.a.d(DescriptorUtilsKt.getFqNameSafe((ClassDescriptor) t10).asString(), DescriptorUtilsKt.getFqNameSafe((ClassDescriptor) t11).asString());
             }
         });
     }

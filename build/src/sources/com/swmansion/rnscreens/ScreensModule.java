@@ -110,10 +110,10 @@ public final class ScreensModule extends NativeScreensModuleSpec {
             if ((view instanceof ScreenStack) && (size = (fragments = (screenStack = (ScreenStack) view).getFragments()).size()) > 1) {
                 this.isActiveTransition.set(true);
                 screenStack.attachBelowTop();
-                int id2 = fragments.get(size - 1).h().getId();
+                int id2 = fragments.get(size - 1).g().getId();
                 this.topScreenId = id2;
                 iArr[0] = id2;
-                iArr[1] = fragments.get(size - 2).h().getId();
+                iArr[1] = fragments.get(size - 2).g().getId();
             }
             return iArr;
         }
@@ -125,10 +125,10 @@ public final class ScreensModule extends NativeScreensModuleSpec {
         UiThreadUtil.assertOnUiThread();
         if (this.topScreenId != -1) {
             float f10 = (float) d10;
-            short a10 = w.f18397s.a(f10);
+            short a10 = w.f18377s.a(f10);
             EventDispatcher eventDispatcherForReactTag = UIManagerHelper.getEventDispatcherForReactTag(this.reactContext, this.topScreenId);
             if (eventDispatcherForReactTag != null) {
-                eventDispatcherForReactTag.dispatchEvent(new ln.j(UIManagerHelper.getSurfaceId(this.reactContext), this.topScreenId, f10, true, true, a10));
+                eventDispatcherForReactTag.dispatchEvent(new nn.j(UIManagerHelper.getSurfaceId(this.reactContext), this.topScreenId, f10, true, true, a10));
             }
         }
     }

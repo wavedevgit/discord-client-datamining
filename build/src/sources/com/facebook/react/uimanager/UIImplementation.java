@@ -24,7 +24,7 @@ import java.util.Map;
 public class UIImplementation {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final /* synthetic */ int f11333a = 0;
+    public static final /* synthetic */ int f11232a = 0;
     protected final EventDispatcher mEventDispatcher;
     private long mLastCalculateLayoutTime;
     protected LayoutUpdateListener mLayoutUpdateListener;

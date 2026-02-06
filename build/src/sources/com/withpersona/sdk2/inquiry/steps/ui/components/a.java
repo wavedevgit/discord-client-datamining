@@ -2,10 +2,10 @@ package com.withpersona.sdk2.inquiry.steps.ui.components;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import bq.g;
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
 import com.withpersona.sdk2.inquiry.network.dto.ui.components.CreatePersonaSheet;
-import dq.t4;
+import dq.g;
+import fq.t4;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
@@ -13,38 +13,38 @@ import org.jetbrains.annotations.NotNull;
 public final class a implements t4 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f19710d;
+    private final String f19690d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final CreatePersonaSheet.CardCtaPage f19711e;
+    private final CreatePersonaSheet.CardCtaPage f19691e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f19712i;
+    private final String f19692i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final boolean f19713o;
+    private final boolean f19693o;
 
     /* renamed from: p  reason: collision with root package name */
-    private boolean f19714p;
+    private boolean f19694p;
 
     /* renamed from: q  reason: collision with root package name */
-    private boolean f19715q;
+    private boolean f19695q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final boolean f19716r;
+    private final boolean f19696r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final g f19717s;
+    private final g f19697s;
 
     /* renamed from: t  reason: collision with root package name */
-    public static final C0262a f19709t = new C0262a(null);
+    public static final C0254a f19689t = new C0254a(null);
     @NotNull
     public static final Parcelable.Creator<a> CREATOR = new b();
 
     /* renamed from: com.withpersona.sdk2.inquiry.steps.ui.components.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0262a {
-        public /* synthetic */ C0262a(DefaultConstructorMarker defaultConstructorMarker) {
+    public static final class C0254a {
+        public /* synthetic */ C0254a(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
 
@@ -69,7 +69,7 @@ public final class a implements t4 {
             return new a(config, ctaCard, url, z10);
         }
 
-        private C0262a() {
+        private C0254a() {
         }
     }
 
@@ -123,40 +123,40 @@ public final class a implements t4 {
         Intrinsics.checkNotNullParameter(ctaCard, "ctaCard");
         Intrinsics.checkNotNullParameter(url, "url");
         Intrinsics.checkNotNullParameter(screen, "screen");
-        this.f19710d = name;
-        this.f19711e = ctaCard;
-        this.f19712i = url;
-        this.f19713o = z10;
-        this.f19714p = z11;
-        this.f19715q = z12;
-        this.f19716r = z13;
-        this.f19717s = screen;
+        this.f19690d = name;
+        this.f19691e = ctaCard;
+        this.f19692i = url;
+        this.f19693o = z10;
+        this.f19694p = z11;
+        this.f19695q = z12;
+        this.f19696r = z13;
+        this.f19697s = screen;
     }
 
     public static /* synthetic */ a b(a aVar, String str, CreatePersonaSheet.CardCtaPage cardCtaPage, String str2, boolean z10, boolean z11, boolean z12, boolean z13, g gVar, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = aVar.f19710d;
+            str = aVar.f19690d;
         }
         if ((i10 & 2) != 0) {
-            cardCtaPage = aVar.f19711e;
+            cardCtaPage = aVar.f19691e;
         }
         if ((i10 & 4) != 0) {
-            str2 = aVar.f19712i;
+            str2 = aVar.f19692i;
         }
         if ((i10 & 8) != 0) {
-            z10 = aVar.f19713o;
+            z10 = aVar.f19693o;
         }
         if ((i10 & 16) != 0) {
-            z11 = aVar.f19714p;
+            z11 = aVar.f19694p;
         }
         if ((i10 & 32) != 0) {
-            z12 = aVar.f19715q;
+            z12 = aVar.f19695q;
         }
         if ((i10 & 64) != 0) {
-            z13 = aVar.f19716r;
+            z13 = aVar.f19696r;
         }
         if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0) {
-            gVar = aVar.f19717s;
+            gVar = aVar.f19697s;
         }
         boolean z14 = z13;
         g gVar2 = gVar;
@@ -165,24 +165,24 @@ public final class a implements t4 {
         return aVar.a(str, cardCtaPage, str2, z10, z15, z16, z14, gVar2);
     }
 
-    @Override // dq.t4
+    @Override // fq.t4
     public void I0(boolean z10) {
-        this.f19714p = z10;
+        this.f19694p = z10;
     }
 
-    @Override // dq.t4
-    public boolean K0() {
-        return this.f19716r;
+    @Override // fq.t4
+    public boolean J0() {
+        return this.f19696r;
     }
 
-    @Override // dq.t4
-    public boolean W1() {
-        return this.f19714p;
+    @Override // fq.t4
+    public boolean V1() {
+        return this.f19694p;
     }
 
-    @Override // dq.t4
-    public boolean Z0() {
-        return this.f19715q;
+    @Override // fq.t4
+    public boolean Y0() {
+        return this.f19695q;
     }
 
     public final a a(String name, CreatePersonaSheet.CardCtaPage ctaCard, String url, boolean z10, boolean z11, boolean z12, boolean z13, g screen) {
@@ -194,11 +194,11 @@ public final class a implements t4 {
     }
 
     public final boolean c() {
-        return this.f19713o;
+        return this.f19693o;
     }
 
     public final CreatePersonaSheet.CardCtaPage d() {
-        return this.f19711e;
+        return this.f19691e;
     }
 
     @Override // android.os.Parcelable
@@ -207,7 +207,7 @@ public final class a implements t4 {
     }
 
     public final String e() {
-        return this.f19712i;
+        return this.f19692i;
     }
 
     public boolean equals(Object obj) {
@@ -216,53 +216,53 @@ public final class a implements t4 {
         }
         if (obj instanceof a) {
             a aVar = (a) obj;
-            return Intrinsics.areEqual(this.f19710d, aVar.f19710d) && Intrinsics.areEqual(this.f19711e, aVar.f19711e) && Intrinsics.areEqual(this.f19712i, aVar.f19712i) && this.f19713o == aVar.f19713o && this.f19714p == aVar.f19714p && this.f19715q == aVar.f19715q && this.f19716r == aVar.f19716r && Intrinsics.areEqual(this.f19717s, aVar.f19717s);
+            return Intrinsics.areEqual(this.f19690d, aVar.f19690d) && Intrinsics.areEqual(this.f19691e, aVar.f19691e) && Intrinsics.areEqual(this.f19692i, aVar.f19692i) && this.f19693o == aVar.f19693o && this.f19694p == aVar.f19694p && this.f19695q == aVar.f19695q && this.f19696r == aVar.f19696r && Intrinsics.areEqual(this.f19697s, aVar.f19697s);
         }
         return false;
     }
 
-    @Override // dq.k5
-    public String getName() {
-        return this.f19710d;
+    @Override // fq.t4
+    public g g() {
+        return this.f19697s;
     }
 
-    @Override // dq.t4
-    public g h() {
-        return this.f19717s;
+    @Override // fq.k5
+    public String getName() {
+        return this.f19690d;
     }
 
     public int hashCode() {
-        return (((((((((((((this.f19710d.hashCode() * 31) + this.f19711e.hashCode()) * 31) + this.f19712i.hashCode()) * 31) + Boolean.hashCode(this.f19713o)) * 31) + Boolean.hashCode(this.f19714p)) * 31) + Boolean.hashCode(this.f19715q)) * 31) + Boolean.hashCode(this.f19716r)) * 31) + this.f19717s.hashCode();
+        return (((((((((((((this.f19690d.hashCode() * 31) + this.f19691e.hashCode()) * 31) + this.f19692i.hashCode()) * 31) + Boolean.hashCode(this.f19693o)) * 31) + Boolean.hashCode(this.f19694p)) * 31) + Boolean.hashCode(this.f19695q)) * 31) + Boolean.hashCode(this.f19696r)) * 31) + this.f19697s.hashCode();
     }
 
     public String toString() {
-        String str = this.f19710d;
-        CreatePersonaSheet.CardCtaPage cardCtaPage = this.f19711e;
-        String str2 = this.f19712i;
-        boolean z10 = this.f19713o;
-        boolean z11 = this.f19714p;
-        boolean z12 = this.f19715q;
-        boolean z13 = this.f19716r;
-        g gVar = this.f19717s;
+        String str = this.f19690d;
+        CreatePersonaSheet.CardCtaPage cardCtaPage = this.f19691e;
+        String str2 = this.f19692i;
+        boolean z10 = this.f19693o;
+        boolean z11 = this.f19694p;
+        boolean z12 = this.f19695q;
+        boolean z13 = this.f19696r;
+        g gVar = this.f19697s;
         return "CreatePersonaSheetComponent(name=" + str + ", ctaCard=" + cardCtaPage + ", url=" + str2 + ", autoCompleteOnDismiss=" + z10 + ", shown=" + z11 + ", showing=" + z12 + ", hideWhenTappedOutside=" + z13 + ", screen=" + gVar + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f19710d);
-        dest.writeParcelable(this.f19711e, i10);
-        dest.writeString(this.f19712i);
-        dest.writeInt(this.f19713o ? 1 : 0);
-        dest.writeInt(this.f19714p ? 1 : 0);
-        dest.writeInt(this.f19715q ? 1 : 0);
-        dest.writeInt(this.f19716r ? 1 : 0);
-        this.f19717s.writeToParcel(dest, i10);
+        dest.writeString(this.f19690d);
+        dest.writeParcelable(this.f19691e, i10);
+        dest.writeString(this.f19692i);
+        dest.writeInt(this.f19693o ? 1 : 0);
+        dest.writeInt(this.f19694p ? 1 : 0);
+        dest.writeInt(this.f19695q ? 1 : 0);
+        dest.writeInt(this.f19696r ? 1 : 0);
+        this.f19697s.writeToParcel(dest, i10);
     }
 
-    @Override // dq.t4
-    public void y1(boolean z10) {
-        this.f19715q = z10;
+    @Override // fq.t4
+    public void x1(boolean z10) {
+        this.f19695q = z10;
     }
 
     /* JADX WARN: Illegal instructions before constructor call */
@@ -270,7 +270,7 @@ public final class a implements t4 {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
     */
-    public /* synthetic */ a(java.lang.String r2, com.withpersona.sdk2.inquiry.network.dto.ui.components.CreatePersonaSheet.CardCtaPage r3, java.lang.String r4, boolean r5, boolean r6, boolean r7, boolean r8, bq.g r9, int r10, kotlin.jvm.internal.DefaultConstructorMarker r11) {
+    public /* synthetic */ a(java.lang.String r2, com.withpersona.sdk2.inquiry.network.dto.ui.components.CreatePersonaSheet.CardCtaPage r3, java.lang.String r4, boolean r5, boolean r6, boolean r7, boolean r8, dq.g r9, int r10, kotlin.jvm.internal.DefaultConstructorMarker r11) {
         /*
             r1 = this;
             r11 = r10 & 16
@@ -288,7 +288,7 @@ public final class a implements t4 {
         L10:
             r10 = r10 & 128(0x80, float:1.794E-43)
             if (r10 == 0) goto L4b
-            dq.r r9 = new dq.r
+            fq.r r9 = new fq.r
             com.withpersona.sdk2.inquiry.network.dto.NextStep$Ui r10 = r3.getUiStep()
             com.withpersona.sdk2.inquiry.network.dto.NextStep$Ui$Config r10 = r10.getConfig()
             java.util.List r10 = r10.getComponents()
@@ -307,7 +307,7 @@ public final class a implements t4 {
             com.withpersona.sdk2.inquiry.network.dto.NextStep$Ui r0 = r3.getUiStep()
             com.withpersona.sdk2.inquiry.network.dto.ui.styling.StepStyles$UiStepStyle r0 = r0.getStyles()
             r9.<init>(r10, r11, r0)
-            bq.g r9 = bq.c.a(r9)
+            dq.g r9 = dq.c.a(r9)
         L4b:
             r10 = r9
             r9 = r8
@@ -321,7 +321,7 @@ public final class a implements t4 {
             r2.<init>(r3, r4, r5, r6, r7, r8, r9, r10)
             return
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.withpersona.sdk2.inquiry.steps.ui.components.a.<init>(java.lang.String, com.withpersona.sdk2.inquiry.network.dto.ui.components.CreatePersonaSheet$CardCtaPage, java.lang.String, boolean, boolean, boolean, boolean, bq.g, int, kotlin.jvm.internal.DefaultConstructorMarker):void");
+        throw new UnsupportedOperationException("Method not decompiled: com.withpersona.sdk2.inquiry.steps.ui.components.a.<init>(java.lang.String, com.withpersona.sdk2.inquiry.network.dto.ui.components.CreatePersonaSheet$CardCtaPage, java.lang.String, boolean, boolean, boolean, boolean, dq.g, int, kotlin.jvm.internal.DefaultConstructorMarker):void");
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */

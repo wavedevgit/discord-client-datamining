@@ -29,10 +29,10 @@ import java.util.concurrent.ConcurrentHashMap;
 public class c implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final ConcurrentHashMap f29309d = new ConcurrentHashMap();
+    private final ConcurrentHashMap f28453d = new ConcurrentHashMap();
 
     /* renamed from: e  reason: collision with root package name */
-    protected final io.sentry.util.a f29310e = new io.sentry.util.a();
+    protected final io.sentry.util.a f28454e = new io.sentry.util.a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -40,80 +40,80 @@ public class c implements w1 {
         /* renamed from: b */
         public c a(e3 e3Var, ILogger iLogger) {
             c cVar = new c();
-            e3Var.s();
+            e3Var.u();
             while (e3Var.peek() == io.sentry.vendor.gson.stream.b.NAME) {
-                String m02 = e3Var.m0();
-                m02.getClass();
+                String o02 = e3Var.o0();
+                o02.getClass();
                 char c10 = 65535;
-                switch (m02.hashCode()) {
+                switch (o02.hashCode()) {
                     case -1335157162:
-                        if (m02.equals("device")) {
+                        if (o02.equals("device")) {
                             c10 = 0;
                             break;
                         }
                         break;
                     case -895679987:
-                        if (m02.equals("spring")) {
+                        if (o02.equals("spring")) {
                             c10 = 1;
                             break;
                         }
                         break;
                     case -340323263:
-                        if (m02.equals("response")) {
+                        if (o02.equals("response")) {
                             c10 = 2;
                             break;
                         }
                         break;
                     case -309425751:
-                        if (m02.equals("profile")) {
+                        if (o02.equals("profile")) {
                             c10 = 3;
                             break;
                         }
                         break;
                     case -191501435:
-                        if (m02.equals("feedback")) {
+                        if (o02.equals("feedback")) {
                             c10 = 4;
                             break;
                         }
                         break;
                     case 3556:
-                        if (m02.equals("os")) {
+                        if (o02.equals("os")) {
                             c10 = 5;
                             break;
                         }
                         break;
                     case 96801:
-                        if (m02.equals("app")) {
+                        if (o02.equals("app")) {
                             c10 = 6;
                             break;
                         }
                         break;
                     case 102572:
-                        if (m02.equals("gpu")) {
+                        if (o02.equals("gpu")) {
                             c10 = 7;
                             break;
                         }
                         break;
                     case 97513095:
-                        if (m02.equals("flags")) {
+                        if (o02.equals("flags")) {
                             c10 = '\b';
                             break;
                         }
                         break;
                     case 110620997:
-                        if (m02.equals(SharedPreferencesKey.TRACE)) {
+                        if (o02.equals(SharedPreferencesKey.TRACE)) {
                             c10 = '\t';
                             break;
                         }
                         break;
                     case 150940456:
-                        if (m02.equals("browser")) {
+                        if (o02.equals("browser")) {
                             c10 = '\n';
                             break;
                         }
                         break;
                     case 1550962648:
-                        if (m02.equals("runtime")) {
+                        if (o02.equals("runtime")) {
                             c10 = 11;
                             break;
                         }
@@ -139,7 +139,7 @@ public class c implements w1 {
                         cVar.u(new n.a().a(e3Var, iLogger));
                         break;
                     case 6:
-                        cVar.o(new a.C0408a().a(e3Var, iLogger));
+                        cVar.o(new a.C0402a().a(e3Var, iLogger));
                         break;
                     case 7:
                         cVar.t(new j.a().a(e3Var, iLogger));
@@ -157,16 +157,16 @@ public class c implements w1 {
                         cVar.x(new z.a().a(e3Var, iLogger));
                         break;
                     default:
-                        Object V1 = e3Var.V1();
-                        if (V1 == null) {
+                        Object U1 = e3Var.U1();
+                        if (U1 == null) {
                             break;
                         } else {
-                            cVar.l(m02, V1);
+                            cVar.l(o02, U1);
                             break;
                         }
                 }
             }
-            e3Var.z();
+            e3Var.D();
             return cVar;
         }
     }
@@ -186,18 +186,18 @@ public class c implements w1 {
         if (obj == null) {
             return false;
         }
-        return this.f29309d.containsKey(obj);
+        return this.f28453d.containsKey(obj);
     }
 
     public Set b() {
-        return this.f29309d.entrySet();
+        return this.f28453d.entrySet();
     }
 
     public Object c(Object obj) {
         if (obj == null) {
             return null;
         }
-        return this.f29309d.get(obj);
+        return this.f28453d.get(obj);
     }
 
     public io.sentry.protocol.a d() {
@@ -210,7 +210,7 @@ public class c implements w1 {
 
     public boolean equals(Object obj) {
         if (obj != null && (obj instanceof c)) {
-            return this.f29309d.equals(((c) obj).f29309d);
+            return this.f28453d.equals(((c) obj).f28453d);
         }
         return false;
     }
@@ -228,7 +228,7 @@ public class c implements w1 {
     }
 
     public int hashCode() {
-        return this.f29309d.hashCode();
+        return this.f28453d.hashCode();
     }
 
     public z i() {
@@ -240,7 +240,7 @@ public class c implements w1 {
     }
 
     public Enumeration k() {
-        return this.f29309d.keys();
+        return this.f28453d.keys();
     }
 
     public Object l(String str, Object obj) {
@@ -248,23 +248,23 @@ public class c implements w1 {
             return null;
         }
         if (obj == null) {
-            return this.f29309d.remove(str);
+            return this.f28453d.remove(str);
         }
-        return this.f29309d.put(str, obj);
+        return this.f28453d.put(str, obj);
     }
 
     public void m(c cVar) {
         if (cVar == null) {
             return;
         }
-        this.f29309d.putAll(cVar.f29309d);
+        this.f28453d.putAll(cVar.f28453d);
     }
 
     public Object n(Object obj) {
         if (obj == null) {
             return null;
         }
-        return this.f29309d.remove(obj);
+        return this.f28453d.remove(obj);
     }
 
     public void o(io.sentry.protocol.a aVar) {
@@ -289,7 +289,7 @@ public class c implements w1 {
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
-        f3Var.s();
+        f3Var.u();
         ArrayList<String> list = Collections.list(k());
         Collections.sort(list);
         for (String str : list) {
@@ -298,7 +298,7 @@ public class c implements w1 {
                 f3Var.e(str).j(iLogger, c10);
             }
         }
-        f3Var.z();
+        f3Var.D();
     }
 
     public void t(j jVar) {
@@ -315,7 +315,7 @@ public class c implements w1 {
     }
 
     public void w(p pVar) {
-        a1 a10 = this.f29310e.a();
+        a1 a10 = this.f28454e.a();
         try {
             l("response", pVar);
             if (a10 != null) {

@@ -1,15 +1,38 @@
 package qs;
 
-import rs.e0;
+import kotlin.Unit;
+import kotlin.coroutines.CoroutineContext;
+import kotlinx.coroutines.channels.ProducerScope;
+import os.a0;
+import qs.w;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class t {
+public final class t extends h implements ProducerScope {
+    public t(CoroutineContext coroutineContext, g gVar) {
+        super(coroutineContext, gVar, true, true);
+    }
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final e0 f48075a = new e0("NULL");
+    @Override // kotlinx.coroutines.a
+    protected void T0(Throwable th2, boolean z10) {
+        if (!Z0().v(th2) && !z10) {
+            a0.a(getContext(), th2);
+        }
+    }
 
-    /* renamed from: b  reason: collision with root package name */
-    public static final e0 f48076b = new e0("UNINITIALIZED");
+    @Override // kotlinx.coroutines.a, kotlinx.coroutines.b0, kotlinx.coroutines.Job
+    public boolean a() {
+        return super.a();
+    }
 
-    /* renamed from: c  reason: collision with root package name */
-    public static final e0 f48077c = new e0("DONE");
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // kotlinx.coroutines.a
+    /* renamed from: a1 */
+    public void U0(Unit unit) {
+        w.a.a(Z0(), null, 1, null);
+    }
+
+    @Override // kotlinx.coroutines.channels.ProducerScope
+    public /* bridge */ /* synthetic */ w g() {
+        return X0();
+    }
 }

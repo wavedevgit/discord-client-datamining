@@ -35,42 +35,42 @@ public final class GenericFileUploadErrorResponse_DocumentErrorResponse_Disabled
     @Override // com.squareup.moshi.h
     @NotNull
     public GenericFileUploadErrorResponse.DocumentErrorResponse.DisabledFileTypeError.Details fromJson(@NotNull m mVar) {
-        mVar.s();
+        mVar.u();
         String str = null;
         List list = null;
         while (mVar.hasNext()) {
-            int W = mVar.W(this.options);
-            if (W == -1) {
+            int J = mVar.J(this.options);
+            if (J == -1) {
                 mVar.E0();
-                mVar.P();
-            } else if (W == 0) {
+                mVar.S();
+            } else if (J == 0) {
                 str = (String) this.stringAdapter.fromJson(mVar);
                 if (str == null) {
-                    throw ym.c.x("uploadedFileType", "uploaded_file_type", mVar);
+                    throw an.c.x("uploadedFileType", "uploaded_file_type", mVar);
                 }
-            } else if (W == 1 && (list = (List) this.listOfStringAdapter.fromJson(mVar)) == null) {
-                throw ym.c.x("enabledFileTypes", "enabled_file_types", mVar);
+            } else if (J == 1 && (list = (List) this.listOfStringAdapter.fromJson(mVar)) == null) {
+                throw an.c.x("enabledFileTypes", "enabled_file_types", mVar);
             }
         }
-        mVar.z();
+        mVar.D();
         if (str != null) {
             if (list != null) {
                 return new GenericFileUploadErrorResponse.DocumentErrorResponse.DisabledFileTypeError.Details(str, list);
             }
-            throw ym.c.o("enabledFileTypes", "enabled_file_types", mVar);
+            throw an.c.o("enabledFileTypes", "enabled_file_types", mVar);
         }
-        throw ym.c.o("uploadedFileType", "uploaded_file_type", mVar);
+        throw an.c.o("uploadedFileType", "uploaded_file_type", mVar);
     }
 
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t tVar, GenericFileUploadErrorResponse.DocumentErrorResponse.DisabledFileTypeError.Details details) {
         if (details != null) {
             tVar.k();
-            tVar.W("uploaded_file_type");
+            tVar.J("uploaded_file_type");
             this.stringAdapter.toJson(tVar, details.getUploadedFileType());
-            tVar.W("enabled_file_types");
+            tVar.J("enabled_file_types");
             this.listOfStringAdapter.toJson(tVar, details.getEnabledFileTypes());
-            tVar.E();
+            tVar.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

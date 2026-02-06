@@ -6,40 +6,40 @@ import java.util.concurrent.Callable;
 public final class k4 extends a4 {
 
     /* renamed from: i  reason: collision with root package name */
-    private final Callable f14039i;
+    private final Callable f14002i;
 
     /* renamed from: o  reason: collision with root package name */
-    final /* synthetic */ l4 f14040o;
+    final /* synthetic */ l4 f14003o;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public k4(l4 l4Var, Callable callable) {
-        this.f14040o = l4Var;
+        this.f14003o = l4Var;
         callable.getClass();
-        this.f14039i = callable;
+        this.f14002i = callable;
     }
 
     @Override // com.google.android.gms.internal.fido.a4
     final Object a() {
-        return this.f14039i.call();
+        return this.f14002i.call();
     }
 
     @Override // com.google.android.gms.internal.fido.a4
     final String b() {
-        return this.f14039i.toString();
+        return this.f14002i.toString();
     }
 
     @Override // com.google.android.gms.internal.fido.a4
     final void c(Throwable th2) {
-        this.f14040o.l(th2);
+        this.f14003o.l(th2);
     }
 
     @Override // com.google.android.gms.internal.fido.a4
     final void d(Object obj) {
-        this.f14040o.k(obj);
+        this.f14003o.k(obj);
     }
 
     @Override // com.google.android.gms.internal.fido.a4
     final boolean f() {
-        return this.f14040o.isDone();
+        return this.f14003o.isDone();
     }
 }

@@ -21,19 +21,19 @@ public abstract class b {
     public static final class a extends Exception {
 
         /* renamed from: d  reason: collision with root package name */
-        private final EnumC0376a f27191d;
+        private final EnumC0373a f26528d;
 
         /* renamed from: i0.b$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-        public enum EnumC0376a {
+        public enum EnumC0373a {
             ENCODE_FAILED,
             DECODE_FAILED,
             UNKNOWN
         }
 
-        a(String str, EnumC0376a enumC0376a) {
+        a(String str, EnumC0373a enumC0373a) {
             super(str);
-            this.f27191d = enumC0376a;
+            this.f26528d = enumC0373a;
         }
     }
 
@@ -89,8 +89,8 @@ public abstract class b {
 
     private static Bitmap d(n nVar) {
         Bitmap createBitmap = Bitmap.createBitmap(nVar.getWidth(), nVar.getHeight(), Bitmap.Config.ARGB_8888);
-        nVar.d1()[0].f().rewind();
-        ImageProcessingUtil.j(createBitmap, nVar.d1()[0].f(), nVar.d1()[0].g());
+        nVar.c1()[0].e().rewind();
+        ImageProcessingUtil.j(createBitmap, nVar.c1()[0].e(), nVar.c1()[0].f());
         return createBitmap;
     }
 
@@ -138,10 +138,10 @@ public abstract class b {
 
     public static byte[] j(n nVar) {
         if (i(nVar.getFormat())) {
-            ByteBuffer f10 = nVar.d1()[0].f();
-            byte[] bArr = new byte[f10.capacity()];
-            f10.rewind();
-            f10.get(bArr);
+            ByteBuffer e10 = nVar.c1()[0].e();
+            byte[] bArr = new byte[e10.capacity()];
+            e10.rewind();
+            e10.get(bArr);
             return bArr;
         }
         throw new IllegalArgumentException("Incorrect image format of the input image proxy: " + nVar.getFormat());
@@ -164,40 +164,40 @@ public abstract class b {
             if (yuvImage.compressToJpeg(rect, i10, iVar)) {
                 return byteArrayOutputStream.toByteArray();
             }
-            throw new a("YuvImage failed to encode jpeg.", a.EnumC0376a.ENCODE_FAILED);
+            throw new a("YuvImage failed to encode jpeg.", a.EnumC0373a.ENCODE_FAILED);
         }
         throw new IllegalArgumentException("Incorrect image format of the input image proxy: " + nVar.getFormat());
     }
 
     public static byte[] m(n nVar) {
-        n.a aVar = nVar.d1()[0];
-        n.a aVar2 = nVar.d1()[1];
-        n.a aVar3 = nVar.d1()[2];
-        ByteBuffer f10 = aVar.f();
-        ByteBuffer f11 = aVar2.f();
-        ByteBuffer f12 = aVar3.f();
-        f10.rewind();
-        f11.rewind();
-        f12.rewind();
-        int remaining = f10.remaining();
+        n.a aVar = nVar.c1()[0];
+        n.a aVar2 = nVar.c1()[1];
+        n.a aVar3 = nVar.c1()[2];
+        ByteBuffer e10 = aVar.e();
+        ByteBuffer e11 = aVar2.e();
+        ByteBuffer e12 = aVar3.e();
+        e10.rewind();
+        e11.rewind();
+        e12.rewind();
+        int remaining = e10.remaining();
         byte[] bArr = new byte[((nVar.getWidth() * nVar.getHeight()) / 2) + remaining];
         int i10 = 0;
         for (int i11 = 0; i11 < nVar.getHeight(); i11++) {
-            f10.get(bArr, i10, nVar.getWidth());
+            e10.get(bArr, i10, nVar.getWidth());
             i10 += nVar.getWidth();
-            f10.position(Math.min(remaining, (f10.position() - nVar.getWidth()) + aVar.g()));
+            e10.position(Math.min(remaining, (e10.position() - nVar.getWidth()) + aVar.f()));
         }
         int height = nVar.getHeight() / 2;
         int width = nVar.getWidth() / 2;
+        int f10 = aVar3.f();
+        int f11 = aVar2.f();
         int g10 = aVar3.g();
         int g11 = aVar2.g();
-        int h10 = aVar3.h();
-        int h11 = aVar2.h();
-        byte[] bArr2 = new byte[g10];
-        byte[] bArr3 = new byte[g11];
+        byte[] bArr2 = new byte[f10];
+        byte[] bArr3 = new byte[f11];
         for (int i12 = 0; i12 < height; i12++) {
-            f12.get(bArr2, 0, Math.min(g10, f12.remaining()));
-            f11.get(bArr3, 0, Math.min(g11, f11.remaining()));
+            e12.get(bArr2, 0, Math.min(f10, e12.remaining()));
+            e11.get(bArr3, 0, Math.min(f11, e11.remaining()));
             int i13 = 0;
             int i14 = 0;
             for (int i15 = 0; i15 < width; i15++) {
@@ -205,8 +205,8 @@ public abstract class b {
                 bArr[i10] = bArr2[i13];
                 i10 += 2;
                 bArr[i16] = bArr3[i14];
-                i13 += h10;
-                i14 += h11;
+                i13 += g10;
+                i14 += g11;
             }
         }
         return bArr;

@@ -7,10 +7,10 @@ import w5.c;
 public class i implements n0 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final i f51830a = new i();
+    public static final i f52195a = new i();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final c.a f51831b = c.a.a("t", "f", "s", "j", "tr", "lh", "ls", "fc", "sc", "sw", "of", "ps", "sz");
+    private static final c.a f52196b = c.a.a("t", "f", "s", "j", "tr", "lh", "ls", "fc", "sc", "sw", "of", "ps", "sz");
 
     private i() {
     }
@@ -19,7 +19,7 @@ public class i implements n0 {
     /* renamed from: b */
     public q5.b a(w5.c cVar, float f10) {
         b.a aVar = b.a.CENTER;
-        cVar.s();
+        cVar.u();
         b.a aVar2 = aVar;
         String str = null;
         String str2 = null;
@@ -34,12 +34,12 @@ public class i implements n0 {
         int i12 = 0;
         boolean z10 = true;
         while (cVar.hasNext()) {
-            switch (cVar.y(f51831b)) {
+            switch (cVar.p(f52196b)) {
                 case 0:
-                    str = cVar.f1();
+                    str = cVar.e1();
                     break;
                 case 1:
-                    str2 = cVar.f1();
+                    str2 = cVar.e1();
                     break;
                 case 2:
                     f11 = (float) cVar.nextDouble();
@@ -71,27 +71,27 @@ public class i implements n0 {
                     f14 = (float) cVar.nextDouble();
                     break;
                 case 10:
-                    z10 = cVar.h();
+                    z10 = cVar.g();
                     break;
                 case 11:
-                    cVar.v();
+                    cVar.x();
                     PointF pointF3 = new PointF(((float) cVar.nextDouble()) * f10, ((float) cVar.nextDouble()) * f10);
-                    cVar.t();
+                    cVar.v();
                     pointF = pointF3;
                     break;
                 case 12:
-                    cVar.v();
+                    cVar.x();
                     PointF pointF4 = new PointF(((float) cVar.nextDouble()) * f10, ((float) cVar.nextDouble()) * f10);
-                    cVar.t();
+                    cVar.v();
                     pointF2 = pointF4;
                     break;
                 default:
-                    cVar.E();
-                    cVar.P();
+                    cVar.s();
+                    cVar.S();
                     break;
             }
         }
-        cVar.z();
+        cVar.D();
         return new q5.b(str, str2, f11, aVar2, i10, f12, f13, i11, i12, f14, z10, pointF, pointF2);
     }
 }

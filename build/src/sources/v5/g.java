@@ -6,7 +6,7 @@ import w5.c;
 public class g implements n0 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final g f51825a = new g();
+    public static final g f52190a = new g();
 
     private g() {
     }
@@ -22,7 +22,7 @@ public class g implements n0 {
             z10 = false;
         }
         if (z10) {
-            cVar.v();
+            cVar.x();
         }
         double nextDouble = cVar.nextDouble();
         double nextDouble2 = cVar.nextDouble();
@@ -33,7 +33,7 @@ public class g implements n0 {
             d10 = 1.0d;
         }
         if (z10) {
-            cVar.t();
+            cVar.v();
         }
         if (nextDouble <= 1.0d && nextDouble2 <= 1.0d && nextDouble3 <= 1.0d) {
             nextDouble *= 255.0d;

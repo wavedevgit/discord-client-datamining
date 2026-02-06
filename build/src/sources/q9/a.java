@@ -9,33 +9,33 @@ import kotlin.text.StringsKt;
 public final class a implements CacheKey {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final C0595a f47504c = new C0595a(null);
+    public static final C0599a f46552c = new C0599a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f47505a;
+    private final boolean f46553a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f47506b;
+    private final String f46554b;
 
     /* renamed from: q9.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class C0595a {
-        public /* synthetic */ C0595a(DefaultConstructorMarker defaultConstructorMarker) {
+    public static final class C0599a {
+        public /* synthetic */ C0599a(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
 
-        private C0595a() {
+        private C0599a() {
         }
     }
 
     public a(int i10, boolean z10) {
-        this.f47505a = z10;
-        this.f47506b = "anim://" + i10;
+        this.f46553a = z10;
+        this.f46554b = "anim://" + i10;
     }
 
     @Override // com.facebook.cache.common.CacheKey
     public String a() {
-        return this.f47506b;
+        return this.f46554b;
     }
 
     @Override // com.facebook.cache.common.CacheKey
@@ -43,7 +43,7 @@ public final class a implements CacheKey {
         Intrinsics.checkNotNullParameter(uri, "uri");
         String uri2 = uri.toString();
         Intrinsics.checkNotNullExpressionValue(uri2, "toString(...)");
-        return StringsKt.P(uri2, this.f47506b, false, 2, null);
+        return StringsKt.P(uri2, this.f46554b, false, 2, null);
     }
 
     @Override // com.facebook.cache.common.CacheKey
@@ -53,23 +53,23 @@ public final class a implements CacheKey {
 
     @Override // com.facebook.cache.common.CacheKey
     public boolean equals(Object obj) {
-        if (!this.f47505a) {
+        if (!this.f46553a) {
             return super.equals(obj);
         }
         if (this == obj) {
             return true;
         }
         if (obj != null && Intrinsics.areEqual(a.class, obj.getClass())) {
-            return Intrinsics.areEqual(this.f47506b, ((a) obj).f47506b);
+            return Intrinsics.areEqual(this.f46554b, ((a) obj).f46554b);
         }
         return false;
     }
 
     @Override // com.facebook.cache.common.CacheKey
     public int hashCode() {
-        if (!this.f47505a) {
+        if (!this.f46553a) {
             return super.hashCode();
         }
-        return this.f47506b.hashCode();
+        return this.f46554b.hashCode();
     }
 }

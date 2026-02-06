@@ -10,24 +10,24 @@ import ef.a;
 import ff.m;
 import ff.q;
 import wf.r;
-import xg.k;
+import yg.k;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public class a extends ef.d {
 
     /* renamed from: k  reason: collision with root package name */
-    private static final a.g f52276k;
+    private static final a.g f52641k;
 
     /* renamed from: l  reason: collision with root package name */
-    private static final ef.a f52277l;
+    private static final ef.a f52642l;
 
     static {
         a.g gVar = new a.g();
-        f52276k = gVar;
-        f52277l = new ef.a("Fido.FIDO2_API", new t5(), gVar);
+        f52641k = gVar;
+        f52642l = new ef.a("Fido.FIDO2_API", new t5(), gVar);
     }
 
     public a(Activity activity) {
-        super(activity, f52277l, a.d.f21557f, new ff.a());
+        super(activity, f52642l, a.d.f21490c, new ff.a());
     }
 
     public Task C(final r rVar) {

@@ -3850,6 +3850,60 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7.category = var9;
     var14 = var8.DARK;
     var13 = {
+        'raw': 'GREEN_NEW_25',
+        'opacity': 1
+    };
+    var7[var14] = var13;
+    var14 = var8.LIGHT;
+    var13 = {
+        'raw': 'GREEN_NEW_55',
+        'opacity': 1
+    };
+    var7[var14] = var13;
+    var14 = var8.MIDNIGHT;
+    var13 = {
+        'raw': 'GREEN_NEW_40',
+        'opacity': 1
+    };
+    var7[var14] = var13;
+    var14 = var8.DARKER;
+    var13 = {
+        'raw': 'GREEN_NEW_34',
+        'opacity': 1
+    };
+    var7[var14] = var13;
+    var6.ICON_VOICE_CONNECTED = var7;
+    var7 = {};
+    var7.category = var9;
+    var14 = var8.DARK;
+    var13 = {
+        'raw': 'RED_345',
+        'opacity': 1
+    };
+    var7[var14] = var13;
+    var14 = var8.LIGHT;
+    var13 = {
+        'raw': 'RED_500',
+        'opacity': 1
+    };
+    var7[var14] = var13;
+    var14 = var8.MIDNIGHT;
+    var13 = {
+        'raw': 'RED_345',
+        'opacity': 1
+    };
+    var7[var14] = var13;
+    var14 = var8.DARKER;
+    var13 = {
+        'raw': 'RED_345',
+        'opacity': 1
+    };
+    var7[var14] = var13;
+    var6.ICON_VOICE_DISCONNECTED = var7;
+    var7 = {};
+    var7.category = var9;
+    var14 = var8.DARK;
+    var13 = {
         'raw': 'RED_400',
         'opacity': 1
     };
@@ -3873,6 +3927,33 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var7[var14] = var13;
     var6.ICON_VOICE_MUTED = var7;
+    var7 = {};
+    var7.category = var9;
+    var14 = var8.DARK;
+    var13 = {
+        'raw': 'GREEN_NEW_40',
+        'opacity': 1
+    };
+    var7[var14] = var13;
+    var14 = var8.LIGHT;
+    var13 = {
+        'raw': 'GREEN_NEW_45',
+        'opacity': 1
+    };
+    var7[var14] = var13;
+    var14 = var8.MIDNIGHT;
+    var13 = {
+        'raw': 'GREEN_NEW_40',
+        'opacity': 1
+    };
+    var7[var14] = var13;
+    var14 = var8.DARKER;
+    var13 = {
+        'raw': 'GREEN_NEW_40',
+        'opacity': 1
+    };
+    var7[var14] = var13;
+    var6.ICON_VOICE_SPEAKING = var7;
     var7 = {};
     var7.category = var11;
     var14 = var8.DARK;
@@ -6798,31 +6879,112 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6.TEXT_STRONG = var7;
     var7 = {};
     var7.category = var10;
+    var12 = var8.DARK;
+    var11 = {
+        'raw': 'PRIMARY_330',
+        'opacity': 1
+    };
+    var7[var12] = var11;
+    var12 = var8.LIGHT;
+    var11 = {
+        'raw': 'PRIMARY_500',
+        'opacity': 1
+    };
+    var7[var12] = var11;
+    var12 = var8.MIDNIGHT;
+    var11 = {
+        'raw': 'PLUM_8',
+        'opacity': 1
+    };
+    var7[var12] = var11;
+    var12 = var8.DARKER;
+    var11 = {
+        'raw': 'PLUM_9',
+        'opacity': 1
+    };
+    var7[var12] = var11;
+    var6.TEXT_SUBTLE = var7;
+    var7 = {};
+    var7.category = var10;
+    var12 = var8.DARK;
+    var11 = {
+        'raw': 'GREEN_NEW_25',
+        'opacity': 1
+    };
+    var7[var12] = var11;
+    var12 = var8.LIGHT;
+    var11 = {
+        'raw': 'GREEN_NEW_55',
+        'opacity': 1
+    };
+    var7[var12] = var11;
+    var12 = var8.MIDNIGHT;
+    var11 = {
+        'raw': 'GREEN_NEW_40',
+        'opacity': 1
+    };
+    var7[var12] = var11;
+    var12 = var8.DARKER;
+    var11 = {
+        'raw': 'GREEN_NEW_34',
+        'opacity': 1
+    };
+    var7[var12] = var11;
+    var6.TEXT_VOICE_CONNECTED = var7;
+    var7 = {};
+    var7.category = var10;
+    var12 = var8.DARK;
+    var11 = {
+        'raw': 'RED_345',
+        'opacity': 1
+    };
+    var7[var12] = var11;
+    var12 = var8.LIGHT;
+    var11 = {
+        'raw': 'RED_500',
+        'opacity': 1
+    };
+    var7[var12] = var11;
+    var12 = var8.MIDNIGHT;
+    var11 = {
+        'raw': 'RED_345',
+        'opacity': 1
+    };
+    var7[var12] = var11;
+    var12 = var8.DARKER;
+    var11 = {
+        'raw': 'RED_345',
+        'opacity': 1
+    };
+    var7[var12] = var11;
+    var6.TEXT_VOICE_DISCONNECTED = var7;
+    var7 = {};
+    var7.category = var10;
     var11 = var8.DARK;
     var10 = {
-        'raw': 'PRIMARY_330',
+        'raw': 'GREEN_NEW_40',
         'opacity': 1
     };
     var7[var11] = var10;
     var11 = var8.LIGHT;
     var10 = {
-        'raw': 'PRIMARY_500',
+        'raw': 'GREEN_NEW_45',
         'opacity': 1
     };
     var7[var11] = var10;
     var11 = var8.MIDNIGHT;
     var10 = {
-        'raw': 'PLUM_8',
+        'raw': 'GREEN_NEW_40',
         'opacity': 1
     };
     var7[var11] = var10;
     var11 = var8.DARKER;
     var10 = {
-        'raw': 'PLUM_9',
+        'raw': 'GREEN_NEW_40',
         'opacity': 1
     };
     var7[var11] = var10;
-    var6.TEXT_SUBTLE = var7;
+    var6.TEXT_VOICE_SPEAKING = var7;
     var7 = {};
     var7.category = var9;
     var11 = var8.DARK;

@@ -8,19 +8,19 @@ import java.nio.BufferUnderflowException;
 public class g implements a0.u {
 
     /* renamed from: a  reason: collision with root package name */
-    private final a0.q2 f46838a;
+    private final a0.q2 f45886a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final CaptureResult f46839b;
+    private final CaptureResult f45887b;
 
     public g(a0.q2 q2Var, CaptureResult captureResult) {
-        this.f46838a = q2Var;
-        this.f46839b = captureResult;
+        this.f45886a = q2Var;
+        this.f45887b = captureResult;
     }
 
     @Override // a0.u
     public long a() {
-        Long l10 = (Long) this.f46839b.get(CaptureResult.SENSOR_TIMESTAMP);
+        Long l10 = (Long) this.f45887b.get(CaptureResult.SENSOR_TIMESTAMP);
         if (l10 == null) {
             return -1L;
         }
@@ -31,34 +31,34 @@ public class g implements a0.u {
     public void b(h.b bVar) {
         super.b(bVar);
         try {
-            Integer num = (Integer) this.f46839b.get(CaptureResult.JPEG_ORIENTATION);
+            Integer num = (Integer) this.f45887b.get(CaptureResult.JPEG_ORIENTATION);
             if (num != null) {
                 bVar.m(num.intValue());
             }
         } catch (BufferUnderflowException unused) {
             x.y0.l("C2CameraCaptureResult", "Failed to get JPEG orientation.");
         }
-        Long l10 = (Long) this.f46839b.get(CaptureResult.SENSOR_EXPOSURE_TIME);
+        Long l10 = (Long) this.f45887b.get(CaptureResult.SENSOR_EXPOSURE_TIME);
         if (l10 != null) {
             bVar.f(l10.longValue());
         }
-        Float f10 = (Float) this.f46839b.get(CaptureResult.LENS_APERTURE);
+        Float f10 = (Float) this.f45887b.get(CaptureResult.LENS_APERTURE);
         if (f10 != null) {
             bVar.l(f10.floatValue());
         }
-        Integer num2 = (Integer) this.f46839b.get(CaptureResult.SENSOR_SENSITIVITY);
+        Integer num2 = (Integer) this.f45887b.get(CaptureResult.SENSOR_SENSITIVITY);
         if (num2 != null) {
-            Integer num3 = (Integer) this.f46839b.get(CaptureResult.CONTROL_POST_RAW_SENSITIVITY_BOOST);
+            Integer num3 = (Integer) this.f45887b.get(CaptureResult.CONTROL_POST_RAW_SENSITIVITY_BOOST);
             if (num3 != null) {
                 num2 = Integer.valueOf(num2.intValue() * ((int) (num3.intValue() / 100.0f)));
             }
             bVar.k(num2.intValue());
         }
-        Float f11 = (Float) this.f46839b.get(CaptureResult.LENS_FOCAL_LENGTH);
+        Float f11 = (Float) this.f45887b.get(CaptureResult.LENS_FOCAL_LENGTH);
         if (f11 != null) {
             bVar.h(f11.floatValue());
         }
-        Integer num4 = (Integer) this.f46839b.get(CaptureResult.CONTROL_AWB_MODE);
+        Integer num4 = (Integer) this.f45887b.get(CaptureResult.CONTROL_AWB_MODE);
         if (num4 != null) {
             h.c cVar = h.c.AUTO;
             if (num4.intValue() == 0) {
@@ -70,12 +70,12 @@ public class g implements a0.u {
 
     @Override // a0.u
     public a0.q2 c() {
-        return this.f46838a;
+        return this.f45886a;
     }
 
     @Override // a0.u
     public a0.t d() {
-        Integer num = (Integer) this.f46839b.get(CaptureResult.FLASH_STATE);
+        Integer num = (Integer) this.f45887b.get(CaptureResult.FLASH_STATE);
         if (num == null) {
             return a0.t.UNKNOWN;
         }
@@ -95,7 +95,7 @@ public class g implements a0.u {
 
     @Override // a0.u
     public a0.r e() {
-        Integer num = (Integer) this.f46839b.get(CaptureResult.CONTROL_AWB_MODE);
+        Integer num = (Integer) this.f45887b.get(CaptureResult.CONTROL_AWB_MODE);
         if (num == null) {
             return a0.r.UNKNOWN;
         }
@@ -125,12 +125,12 @@ public class g implements a0.u {
 
     @Override // a0.u
     public CaptureResult f() {
-        return this.f46839b;
+        return this.f45887b;
     }
 
     @Override // a0.u
     public a0.n g() {
-        Integer num = (Integer) this.f46839b.get(CaptureResult.CONTROL_AE_MODE);
+        Integer num = (Integer) this.f45887b.get(CaptureResult.CONTROL_AE_MODE);
         if (num == null) {
             return a0.n.UNKNOWN;
         }
@@ -161,7 +161,7 @@ public class g implements a0.u {
 
     @Override // a0.u
     public a0.q h() {
-        Integer num = (Integer) this.f46839b.get(CaptureResult.CONTROL_AF_STATE);
+        Integer num = (Integer) this.f45887b.get(CaptureResult.CONTROL_AF_STATE);
         if (num == null) {
             return a0.q.UNKNOWN;
         }
@@ -187,7 +187,7 @@ public class g implements a0.u {
 
     @Override // a0.u
     public a0.s i() {
-        Integer num = (Integer) this.f46839b.get(CaptureResult.CONTROL_AWB_STATE);
+        Integer num = (Integer) this.f45887b.get(CaptureResult.CONTROL_AWB_STATE);
         if (num == null) {
             return a0.s.UNKNOWN;
         }
@@ -210,7 +210,7 @@ public class g implements a0.u {
 
     @Override // a0.u
     public a0.p j() {
-        Integer num = (Integer) this.f46839b.get(CaptureResult.CONTROL_AF_MODE);
+        Integer num = (Integer) this.f45887b.get(CaptureResult.CONTROL_AF_MODE);
         if (num == null) {
             return a0.p.UNKNOWN;
         }
@@ -234,7 +234,7 @@ public class g implements a0.u {
 
     @Override // a0.u
     public a0.o k() {
-        Integer num = (Integer) this.f46839b.get(CaptureResult.CONTROL_AE_STATE);
+        Integer num = (Integer) this.f45887b.get(CaptureResult.CONTROL_AE_STATE);
         if (num == null) {
             return a0.o.UNKNOWN;
         }

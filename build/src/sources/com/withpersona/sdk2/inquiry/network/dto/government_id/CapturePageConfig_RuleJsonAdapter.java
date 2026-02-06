@@ -45,21 +45,21 @@ public final class CapturePageConfig_RuleJsonAdapter extends h {
     @NotNull
     public CapturePageConfig.Rule fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         CapturePageConfig.RuleType ruleType = null;
         Boolean bool = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 ruleType = (CapturePageConfig.RuleType) this.nullableRuleTypeAdapter.fromJson(reader);
-            } else if (W == 1) {
+            } else if (J == 1) {
                 bool = (Boolean) this.nullableBooleanAdapter.fromJson(reader);
             }
         }
-        reader.z();
+        reader.D();
         return new CapturePageConfig.Rule(ruleType, bool);
     }
 
@@ -68,11 +68,11 @@ public final class CapturePageConfig_RuleJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (rule != null) {
             writer.k();
-            writer.W("type");
+            writer.J("type");
             this.nullableRuleTypeAdapter.toJson(writer, rule.getType());
-            writer.W("isRequired");
+            writer.J("isRequired");
             this.nullableBooleanAdapter.toJson(writer, rule.isRequired());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

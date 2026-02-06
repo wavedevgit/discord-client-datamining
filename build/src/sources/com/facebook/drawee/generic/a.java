@@ -6,38 +6,38 @@ import o8.j;
 public class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private EnumC0153a f10147a = EnumC0153a.BITMAP_ONLY;
+    private EnumC0146a f10046a = EnumC0146a.BITMAP_ONLY;
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f10148b = false;
+    private boolean f10047b = false;
 
     /* renamed from: c  reason: collision with root package name */
-    private float[] f10149c = null;
+    private float[] f10048c = null;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f10150d = 0;
+    private int f10049d = 0;
 
     /* renamed from: e  reason: collision with root package name */
-    private float f10151e = 0.0f;
+    private float f10050e = 0.0f;
 
     /* renamed from: f  reason: collision with root package name */
-    private int f10152f = 0;
+    private int f10051f = 0;
 
     /* renamed from: g  reason: collision with root package name */
-    private float f10153g = 0.0f;
+    private float f10052g = 0.0f;
 
     /* renamed from: h  reason: collision with root package name */
-    private boolean f10154h = false;
+    private boolean f10053h = false;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f10155i = false;
+    private boolean f10054i = false;
 
     /* renamed from: j  reason: collision with root package name */
-    private boolean f10156j = false;
+    private boolean f10055j = false;
 
     /* renamed from: com.facebook.drawee.generic.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public enum EnumC0153a {
+    public enum EnumC0146a {
         OVERLAY_COLOR,
         BITMAP_ONLY
     }
@@ -55,18 +55,18 @@ public class a {
     }
 
     private float[] g() {
-        if (this.f10149c == null) {
-            this.f10149c = new float[8];
+        if (this.f10048c == null) {
+            this.f10048c = new float[8];
         }
-        return this.f10149c;
+        return this.f10048c;
     }
 
     public int d() {
-        return this.f10152f;
+        return this.f10051f;
     }
 
     public float e() {
-        return this.f10151e;
+        return this.f10050e;
     }
 
     public boolean equals(Object obj) {
@@ -77,79 +77,79 @@ public class a {
             return false;
         }
         a aVar = (a) obj;
-        if (this.f10148b != aVar.f10148b || this.f10150d != aVar.f10150d || Float.compare(aVar.f10151e, this.f10151e) != 0 || this.f10152f != aVar.f10152f || Float.compare(aVar.f10153g, this.f10153g) != 0 || this.f10147a != aVar.f10147a || this.f10154h != aVar.f10154h || this.f10155i != aVar.f10155i) {
+        if (this.f10047b != aVar.f10047b || this.f10049d != aVar.f10049d || Float.compare(aVar.f10050e, this.f10050e) != 0 || this.f10051f != aVar.f10051f || Float.compare(aVar.f10052g, this.f10052g) != 0 || this.f10046a != aVar.f10046a || this.f10053h != aVar.f10053h || this.f10054i != aVar.f10054i) {
             return false;
         }
-        return Arrays.equals(this.f10149c, aVar.f10149c);
+        return Arrays.equals(this.f10048c, aVar.f10048c);
     }
 
     public float[] f() {
-        return this.f10149c;
+        return this.f10048c;
     }
 
     public int h() {
-        return this.f10150d;
+        return this.f10049d;
     }
 
     public int hashCode() {
         int i10;
         int i11;
         int i12;
-        EnumC0153a enumC0153a = this.f10147a;
+        EnumC0146a enumC0146a = this.f10046a;
         int i13 = 0;
-        if (enumC0153a != null) {
-            i10 = enumC0153a.hashCode();
+        if (enumC0146a != null) {
+            i10 = enumC0146a.hashCode();
         } else {
             i10 = 0;
         }
-        int i14 = ((i10 * 31) + (this.f10148b ? 1 : 0)) * 31;
-        float[] fArr = this.f10149c;
+        int i14 = ((i10 * 31) + (this.f10047b ? 1 : 0)) * 31;
+        float[] fArr = this.f10048c;
         if (fArr != null) {
             i11 = Arrays.hashCode(fArr);
         } else {
             i11 = 0;
         }
-        int i15 = (((i14 + i11) * 31) + this.f10150d) * 31;
-        float f10 = this.f10151e;
+        int i15 = (((i14 + i11) * 31) + this.f10049d) * 31;
+        float f10 = this.f10050e;
         if (f10 != 0.0f) {
             i12 = Float.floatToIntBits(f10);
         } else {
             i12 = 0;
         }
-        int i16 = (((i15 + i12) * 31) + this.f10152f) * 31;
-        float f11 = this.f10153g;
+        int i16 = (((i15 + i12) * 31) + this.f10051f) * 31;
+        float f11 = this.f10052g;
         if (f11 != 0.0f) {
             i13 = Float.floatToIntBits(f11);
         }
-        return ((((i16 + i13) * 31) + (this.f10154h ? 1 : 0)) * 31) + (this.f10155i ? 1 : 0);
+        return ((((i16 + i13) * 31) + (this.f10053h ? 1 : 0)) * 31) + (this.f10054i ? 1 : 0);
     }
 
     public float i() {
-        return this.f10153g;
+        return this.f10052g;
     }
 
     public boolean j() {
-        return this.f10155i;
+        return this.f10054i;
     }
 
     public boolean k() {
-        return this.f10156j;
+        return this.f10055j;
     }
 
     public boolean l() {
-        return this.f10148b;
+        return this.f10047b;
     }
 
-    public EnumC0153a m() {
-        return this.f10147a;
+    public EnumC0146a m() {
+        return this.f10046a;
     }
 
     public boolean n() {
-        return this.f10154h;
+        return this.f10053h;
     }
 
     public a o(int i10) {
-        this.f10152f = i10;
+        this.f10051f = i10;
         return this;
     }
 
@@ -161,7 +161,7 @@ public class a {
             z10 = false;
         }
         j.c(z10, "the border width cannot be < 0");
-        this.f10151e = f10;
+        this.f10050e = f10;
         return this;
     }
 
@@ -184,8 +184,8 @@ public class a {
     }
 
     public a s(int i10) {
-        this.f10150d = i10;
-        this.f10147a = EnumC0153a.OVERLAY_COLOR;
+        this.f10049d = i10;
+        this.f10046a = EnumC0146a.OVERLAY_COLOR;
         return this;
     }
 
@@ -197,22 +197,22 @@ public class a {
             z10 = false;
         }
         j.c(z10, "the padding cannot be < 0");
-        this.f10153g = f10;
+        this.f10052g = f10;
         return this;
     }
 
     public a u(boolean z10) {
-        this.f10155i = z10;
+        this.f10054i = z10;
         return this;
     }
 
     public a v(boolean z10) {
-        this.f10148b = z10;
+        this.f10047b = z10;
         return this;
     }
 
-    public a w(EnumC0153a enumC0153a) {
-        this.f10147a = enumC0153a;
+    public a w(EnumC0146a enumC0146a) {
+        this.f10046a = enumC0146a;
         return this;
     }
 }

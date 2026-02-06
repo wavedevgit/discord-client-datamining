@@ -9,46 +9,46 @@ public class s extends hf.a {
     public static final Parcelable.Creator<s> CREATOR = new v0();
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f24887d;
+    private final int f25140d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f24888e;
+    private final boolean f25141e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final boolean f24889i;
+    private final boolean f25142i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final int f24890o;
+    private final int f25143o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final int f24891p;
+    private final int f25144p;
 
     public s(int i10, boolean z10, boolean z11, int i11, int i12) {
-        this.f24887d = i10;
-        this.f24888e = z10;
-        this.f24889i = z11;
-        this.f24890o = i11;
-        this.f24891p = i12;
+        this.f25140d = i10;
+        this.f25141e = z10;
+        this.f25142i = z11;
+        this.f25143o = i11;
+        this.f25144p = i12;
     }
 
     public int b() {
-        return this.f24890o;
+        return this.f25143o;
     }
 
     public int c() {
-        return this.f24891p;
+        return this.f25144p;
     }
 
     public boolean d() {
-        return this.f24888e;
+        return this.f25141e;
     }
 
     public boolean e() {
-        return this.f24889i;
+        return this.f25142i;
     }
 
     public int f() {
-        return this.f24887d;
+        return this.f25140d;
     }
 
     @Override // android.os.Parcelable

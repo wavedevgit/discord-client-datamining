@@ -1,11 +1,7 @@
 package ir;
 
-import gr.q;
-import gr.s;
+import android.view.View;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class c implements s {
-    @Override // gr.s
-    public Object a(gr.g gVar, q qVar) {
-        return new jr.d(gVar.e());
-    }
+public interface c {
+    void a(View view, String str);
 }

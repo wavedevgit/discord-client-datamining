@@ -11,16 +11,16 @@ import x.w1;
 public abstract class i {
 
     /* renamed from: a  reason: collision with root package name */
-    Size f2232a;
+    Size f2561a;
 
     /* renamed from: b  reason: collision with root package name */
-    FrameLayout f2233b;
+    FrameLayout f2562b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final e f2234c;
+    private final e f2563c;
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f2235d = false;
+    private boolean f2564d = false;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -30,8 +30,8 @@ public abstract class i {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public i(FrameLayout frameLayout, e eVar) {
-        this.f2233b = frameLayout;
-        this.f2234c = eVar;
+        this.f2562b = frameLayout;
+        this.f2563c = eVar;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -40,7 +40,7 @@ public abstract class i {
         if (c10 == null) {
             return null;
         }
-        return this.f2234c.a(c10, new Size(this.f2233b.getWidth(), this.f2233b.getHeight()), this.f2233b.getLayoutDirection());
+        return this.f2563c.a(c10, new Size(this.f2562b.getWidth(), this.f2562b.getHeight()), this.f2562b.getLayoutDirection());
     }
 
     abstract View b();
@@ -55,7 +55,7 @@ public abstract class i {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void f() {
-        this.f2235d = true;
+        this.f2564d = true;
         h();
     }
 
@@ -65,8 +65,8 @@ public abstract class i {
     /* JADX INFO: Access modifiers changed from: package-private */
     public void h() {
         View b10 = b();
-        if (b10 != null && this.f2235d) {
-            this.f2234c.s(new Size(this.f2233b.getWidth(), this.f2233b.getHeight()), this.f2233b.getLayoutDirection(), b10);
+        if (b10 != null && this.f2564d) {
+            this.f2563c.s(new Size(this.f2562b.getWidth(), this.f2562b.getHeight()), this.f2562b.getLayoutDirection(), b10);
         }
     }
 

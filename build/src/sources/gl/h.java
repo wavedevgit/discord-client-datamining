@@ -1,5 +1,11 @@
 package gl;
+
+import com.facebook.react.bridge.Dynamic;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public interface h {
-    void a(hl.g gVar);
+public class h extends k {
+    @Override // gl.k
+    /* renamed from: d */
+    public String c(Dynamic dynamic) {
+        return dynamic.asString();
+    }
 }

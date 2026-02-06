@@ -16,7 +16,7 @@ import android.widget.ImageView;
 abstract class b0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final boolean f5330a;
+    private static final boolean f5659a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -30,27 +30,27 @@ abstract class b0 {
     static class b implements TypeEvaluator {
 
         /* renamed from: a  reason: collision with root package name */
-        final float[] f5331a = new float[9];
+        final float[] f5660a = new float[9];
 
         /* renamed from: b  reason: collision with root package name */
-        final float[] f5332b = new float[9];
+        final float[] f5661b = new float[9];
 
         /* renamed from: c  reason: collision with root package name */
-        final Matrix f5333c = new Matrix();
+        final Matrix f5662c = new Matrix();
 
         @Override // android.animation.TypeEvaluator
         /* renamed from: a */
         public Matrix evaluate(float f10, Matrix matrix, Matrix matrix2) {
-            matrix.getValues(this.f5331a);
-            matrix2.getValues(this.f5332b);
+            matrix.getValues(this.f5660a);
+            matrix2.getValues(this.f5661b);
             for (int i10 = 0; i10 < 9; i10++) {
-                float[] fArr = this.f5332b;
+                float[] fArr = this.f5661b;
                 float f11 = fArr[i10];
-                float f12 = this.f5331a[i10];
+                float f12 = this.f5660a[i10];
                 fArr[i10] = f12 + ((f11 - f12) * f10);
             }
-            this.f5333c.setValues(this.f5332b);
-            return this.f5333c;
+            this.f5662c.setValues(this.f5661b);
+            return this.f5662c;
         }
     }
 
@@ -61,7 +61,7 @@ abstract class b0 {
         } else {
             z10 = false;
         }
-        f5330a = z10;
+        f5659a = z10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -117,7 +117,7 @@ abstract class b0 {
             int round4 = Math.round(round2 * min);
             matrix.postTranslate(-rectF.left, -rectF.top);
             matrix.postScale(min, min);
-            if (f5330a) {
+            if (f5659a) {
                 Picture picture = new Picture();
                 Canvas beginRecording = picture.beginRecording(round3, round4);
                 beginRecording.concat(matrix);

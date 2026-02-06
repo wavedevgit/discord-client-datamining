@@ -26,13 +26,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'utils/native/AppInfoUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun112887: for (var _fun112887_ip = 0;;) switch (_fun112887_ip) {
+        _fun112910: for (var _fun112910_ip = 0;;) switch (_fun112910_ip) {
             case 0:
                 var1 = _closure1_slot0;
                 var3 = undefined;
                 if (!(var3 !== var1)) {
-                    _fun112887_ip = 76;
-                    continue _fun112887
+                    _fun112910_ip = 76;
+                    continue _fun112910
                 }
             case 13:
                 var0 = _closure1_slot0;
@@ -44,8 +44,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = -1;
                 var1 = 2;
                 if (!(var1 === var2)) {
-                    _fun112887_ip = 74;
-                    continue _fun112887
+                    _fun112910_ip = 74;
+                    continue _fun112910
                 }
             case 55:
                 var1 = global;

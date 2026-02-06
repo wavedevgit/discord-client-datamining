@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.isKlipyProvider = var4;
     var2.shouldUseAnimatedWebPThumbnail = var3;
     var3 = function arg0() {
-        _fun73354: for (var _fun73354_ip = 0;;) switch (_fun73354_ip) {
+        _fun73378: for (var _fun73378_ip = 0;;) switch (_fun73378_ip) {
             case 0:
                 var1 = arg0;
                 var3 = _closure1_slot2;
@@ -50,30 +50,30 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = undefined;
                 var2 = var3.bind(var0)(var2);
                 if (!var2) {
-                    _fun73354_ip = 38;
-                    continue _fun73354
+                    _fun73378_ip = 38;
+                    continue _fun73378
                 }
             case 26:
                 var1 = var1.thumbnail;
                 var2 = null;
                 if (!(var2 == var1)) {
-                    _fun73354_ip = 40;
-                    continue _fun73354
+                    _fun73378_ip = 40;
+                    continue _fun73378
                 }
             case 38:
                 return var0;
             case 40:
                 var0 = var1.proxyURL;
                 if (!(var2 == var0)) {
-                    _fun73354_ip = 55;
-                    continue _fun73354
+                    _fun73378_ip = 55;
+                    continue _fun73378
                 }
             case 50:
                 var0 = var1.url;
             case 55:
                 if (!(var2 == var0)) {
-                    _fun73354_ip = 64;
-                    continue _fun73354
+                    _fun73378_ip = 64;
+                    continue _fun73378
                 }
             case 59:
                 var0 = var1.uri;
@@ -83,19 +83,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getGIFThumbnailForFavorite = var3;
     var1 = function arg0, arg1, arg2() {
-        _fun73355: for (var _fun73355_ip = 0;;) switch (_fun73355_ip) {
+        _fun73379: for (var _fun73379_ip = 0;;) switch (_fun73379_ip) {
             case 0:
                 var5 = arg1;
                 var0 = arg2;
                 var2 = null;
                 if (!(var2 == var5)) {
-                    _fun73355_ip = 16;
-                    continue _fun73355
+                    _fun73379_ip = 16;
+                    continue _fun73379
                 }
             case 12:
                 var1 = {};
-                _fun73355_ip = 29;
-                continue _fun73355;
+                _fun73379_ip = 29;
+                continue _fun73379;
             case 16:
                 var3 = {};
                 var4 = 1;
@@ -103,8 +103,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var3;
             case 29:
                 if (!(var2 == var0)) {
-                    _fun73355_ip = 35;
-                    continue _fun73355
+                    _fun73379_ip = 35;
+                    continue _fun73379
                 }
             case 33:
                 var0 = {};
@@ -125,15 +125,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = 1;
                 var5 = var7;
                 if (!var8) {
-                    _fun73355_ip = 145;
-                    continue _fun73355
+                    _fun73379_ip = 145;
+                    continue _fun73379
                 }
             case 108:
                 var8 = var2 != var10;
                 var5 = var7;
                 if (!var8) {
-                    _fun73355_ip = 145;
-                    continue _fun73355
+                    _fun73379_ip = 145;
+                    continue _fun73379
                 }
             case 118:
                 var8 = global;
@@ -148,8 +148,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var2 != var3;
                 var2 = null;
                 if (!var4) {
-                    _fun73355_ip = 167;
-                    continue _fun73355
+                    _fun73379_ip = 167;
+                    continue _fun73379
                 }
             case 164:
                 var2 = var3;

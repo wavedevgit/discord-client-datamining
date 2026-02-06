@@ -1,0 +1,14 @@
+package qg;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+abstract class e0 {
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static int a(Object obj) {
+        int hashCode;
+        if (obj == null) {
+            hashCode = 0;
+        } else {
+            hashCode = obj.hashCode();
+        }
+        return (int) (Integer.rotateLeft((int) (hashCode * (-862048943)), 15) * 461845907);
+    }
+}

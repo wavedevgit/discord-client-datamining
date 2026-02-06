@@ -1,6 +1,6 @@
 package net.time4j;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public enum o0 implements pt.w {
+public enum o0 implements rt.w {
     SECONDS(1.0d),
     NANOSECONDS(1.0E-9d);
     
@@ -10,7 +10,7 @@ public enum o0 implements pt.w {
         this.length = d10;
     }
 
-    @Override // pt.w
+    @Override // rt.w
     public double getLength() {
         return this.length;
     }

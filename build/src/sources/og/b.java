@@ -1,20 +1,20 @@
 package og;
 
-import java.util.logging.Logger;
+import java.util.Set;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-abstract class b {
-
-    /* renamed from: a  reason: collision with root package name */
-    private static final Logger f42584a = Logger.getLogger(b.class.getName());
-
-    /* renamed from: b  reason: collision with root package name */
-    private static final bf f42585b = new bf(null);
-
+public abstract class b {
     /* JADX INFO: Access modifiers changed from: package-private */
-    public static boolean a(String str) {
-        if (str != null && !str.isEmpty()) {
-            return false;
+    public static int a(Set set) {
+        int i10;
+        int i11 = 0;
+        for (Object obj : set) {
+            if (obj != null) {
+                i10 = obj.hashCode();
+            } else {
+                i10 = 0;
+            }
+            i11 += i10;
         }
-        return true;
+        return i11;
     }
 }

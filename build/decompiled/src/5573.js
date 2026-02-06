@@ -3,289 +3,201 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = require;
     var2 = exports;
     var5 = dependencyMap;
-    var _closure1_slot0 = var4;
-    var _closure1_slot1 = var5;
-    var0 = function() {
-        var4 = undefined;
-        var0 = undefined;
-        var3 = _closure1_slot2;
-        var2 = function*(arg0) { // Environment: var2
-            var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
-                _fun49114: for (var _fun49114_ip = 0;;) switch (_fun49114_ip) {
-                    case 0:
-                        StartGenerator();
-                        var4 = arg0;
-                        ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
-                        if (var1) {
-                            _fun49114_ip = 225;
-                            continue _fun49114
-                        }
-                    case 13:
-                        var1 = null;
-                        if (!var4) {
-                            _fun49114_ip = 157;
-                            continue _fun49114
-                        }
-                    case 21:
-                        var3 = var4.startsWith;
-                        var2 = 'data:image/svg+xml;utf8';
-                        var2 = var3.bind(var4)(var2);
-                        if (var2) {
-                            _fun49114_ip = 93;
-                            continue _fun49114
-                        }
-                    case 41:
-                        var3 = var4.startsWith;
-                        var2 = 'data:image/svg+xml;base64';
-                        var2 = var3.bind(var4)(var2);
-                        if (var2) {
-                            _fun49114_ip = 77;
-                            continue _fun49114
-                        }
-                    case 61:
-                        var3 = function arg0() {
-                            var0 = undefined;
-                            var3 = _closure1_slot5;
-                            var2 = var3.apply;
-                            var0 = arguments;
-                            var1 = var0;
-                            var0 = this;
-                            var0 = var2.bind(var3)(var0, var1);
-                            return var0;
-                        };
-                        var2 = undefined;
-                        var3 = var3.bind(var2)(var4);
-                        _fun49114_ip = 91;
-                        continue _fun49114;
-                    case 77:
-                        var5 = _closure1_slot3;
-                        var2 = undefined;
-                        var3 = var5.bind(var2)(var4);
-                    case 91:
-                        _fun49114_ip = 154;
-                        continue _fun49114;
-                    case 93:
-                        var2 = var4;
-                    case 96: // try_start_0
-                        var4 = global;
-                        var6 = var4.decodeURIComponent;
-                        var5 = var2;
-                        var4 = undefined;
-                        var5 = var6.bind(var4)(var5);
-                        var4 = var5.split;
-                        var6 = ',';
-                        var7 = var4.bind(var5)(var6);
-                        var5 = var7.slice;
-                        var4 = 1;
-                        var5 = var5.bind(var7)(var4);
-                        var4 = var5.join;
-                        var4 = var4.bind(var5)(var6);
-                    case 151: // try_end0
-                        var3 = var4;
-                    case 154:
-                        var1 = var3;
-                    case 157:
-                        return var1;
-                    case 160: // catch_target0
-                        CatchBlockStart(arg_register = 6);
-                        var1 = global;
-                        var3 = var1.Error;
-                        var5 = var2;
-                        var1 = var1.HermesInternal;
-                        var4 = var1.concat;
-                        var2 = 'Decoding ';
-                        var1 = ' failed with error: ';
-                        var10 = var4.bind(var2)(var5, var1, var6);
-                        var2 = var3.prototype;
-                        var2 = Object.create(var2, {
-                            constructor: {
-                                value: var3
-                            }
-                        });
-                        var11 = var2;
-                        var1 = new var11[var3](var10, var9);
-                        var1 = var1 instanceof Object ? var1 : var2;
-                        throw var1;
-                    case 225:
-                        return var0;
-                }
-            };
-            return var0;
-        };
-        var3 = var3.bind(var4)(var2);
-        _closure1_slot4 = var3;
-        var2 = var3.apply;
-        var0 = arguments;
-        var1 = var0;
-        var0 = this;
-        var0 = var2.bind(var3)(var0, var1);
-        return var0;
-    };
-    var _closure1_slot4 = var0;
-    var0 = function() {
-        var4 = undefined;
-        var0 = undefined;
-        var3 = _closure1_slot2;
-        var2 = function*(arg0) { // Environment: var2
-            var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
-                _fun49118: for (var _fun49118_ip = 0;;) switch (_fun49118_ip) {
-                    case 0:
-                        StartGenerator();
-                        var7 = arg0;
-                        ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
-                        if (var1) {
-                            _fun49118_ip = 172;
-                            continue _fun49118
-                        }
-                    case 13:
-                        var2 = global;
-                        var3 = var2.fetch;
-                        var1 = undefined;
-                        var1 = var3.bind(var1)(var7);
-                        SaveGenerator(address = 32);
-                    case 30:
-                        return var1;
-                    case 32:
-                        ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 3);
-                        if (var3) {
-                            _fun49118_ip = 169;
-                            continue _fun49118
-                        }
-                    case 41:
-                        var3 = var1.ok;
-                        if (var3) {
-                            _fun49118_ip = 144;
-                            continue _fun49118
-                        }
-                    case 50:
-                        var4 = var1.status;
-                        var3 = 0;
-                        if (!(var3 === var4)) {
-                            _fun49118_ip = 81;
-                            continue _fun49118
-                        }
-                    case 61:
-                        var4 = var7.startsWith;
-                        var3 = 'file://';
-                        var3 = var4.bind(var7)(var3);
-                        if (var3) {
-                            _fun49118_ip = 144;
-                            continue _fun49118
-                        }
-                    case 81:
-                        var4 = var2.Error;
-                        var6 = var1.status;
-                        var2 = var2.HermesInternal;
-                        var5 = var2.concat;
-                        var3 = 'Fetching ';
-                        var2 = ' failed with status ';
-                        var10 = var5.bind(var3)(var7, var2, var6);
-                        var3 = var4.prototype;
-                        var3 = Object.create(var3, {
-                            constructor: {
-                                value: var4
-                            }
-                        });
-                        var11 = var3;
-                        var2 = new var11[var4](var10, var9);
-                        var2 = var2 instanceof Object ? var2 : var3;
-                        throw var2;
-                    case 144:
-                        var2 = var1.text;
-                        var2 = var2.bind(var1)();
-                        SaveGenerator(address = 157);
-                    case 155:
-                        return var2;
-                    case 157:
-                        ResumeGenerator(result_out_reg = 2, return_bool_out_reg = 3);
-                        if (var3) {
-                            _fun49118_ip = 166;
-                            continue _fun49118
-                        }
-                    case 163:
-                        return var2;
-                    case 166:
-                        return var2;
-                    case 169:
-                        return var1;
-                    case 172:
-                        return var0;
-                }
-            };
-            return var0;
-        };
-        var3 = var3.bind(var4)(var2);
-        _closure1_slot5 = var3;
-        var2 = var3.apply;
-        var0 = arguments;
-        var1 = var0;
-        var0 = this;
-        var0 = var2.bind(var3)(var0, var1);
-        return var0;
-    };
-    var _closure1_slot5 = var0;
     var0 = global;
-    var7 = var0.Object;
-    var6 = var7.defineProperty;
-    var3 = {};
+    var6 = var0.Object;
+    var3 = var6.defineProperty;
+    var1 = {};
     var0 = true;
-    var3.value = var0;
+    var1.value = var0;
     var0 = '__esModule';
-    var0 = var6.bind(var7)(var2, var0, var3);
-    var0 = 0;
-    var6 = var5[var0];
-    var3 = arg2;
+    var0 = var3.bind(var6)(var2, var0, var1);
+    var1 = {};
+    var3 = 0;
+    var6 = var5[var3];
     var0 = undefined;
-    var3 = var3.bind(var0)(var6);
-    var _closure1_slot2 = var3;
-    var3 = 1;
+    var6 = var4.bind(var0)(var6);
+    var6 = var6.Circle;
+    var1.circle = var6;
+    var6 = var5[var3];
+    var6 = var4.bind(var0)(var6);
+    var6 = var6.ClipPath;
+    var1.clipPath = var6;
+    var6 = var5[var3];
+    var6 = var4.bind(var0)(var6);
+    var6 = var6.Defs;
+    var1.defs = var6;
+    var6 = var5[var3];
+    var6 = var4.bind(var0)(var6);
+    var6 = var6.Ellipse;
+    var1.ellipse = var6;
+    var6 = var5[var3];
+    var6 = var4.bind(var0)(var6);
+    var6 = var6.Filter;
+    var1.filter = var6;
+    var6 = var5[var3];
+    var6 = var4.bind(var0)(var6);
+    var6 = var6.FeBlend;
+    var1.feBlend = var6;
+    var6 = var5[var3];
+    var6 = var4.bind(var0)(var6);
+    var6 = var6.FeColorMatrix;
+    var1.feColorMatrix = var6;
+    var6 = var5[var3];
+    var6 = var4.bind(var0)(var6);
+    var6 = var6.FeComponentTransfer;
+    var1.feComponentTransfer = var6;
+    var6 = var5[var3];
+    var6 = var4.bind(var0)(var6);
+    var6 = var6.FeComposite;
+    var1.feComposite = var6;
+    var6 = var5[var3];
+    var6 = var4.bind(var0)(var6);
+    var6 = var6.FeConvolveMatrix;
+    var1.feConvolveMatrix = var6;
+    var6 = var5[var3];
+    var6 = var4.bind(var0)(var6);
+    var6 = var6.FeDiffuseLighting;
+    var1.feDiffuseLighting = var6;
+    var6 = var5[var3];
+    var6 = var4.bind(var0)(var6);
+    var6 = var6.FeDisplacementMap;
+    var1.feDisplacementMap = var6;
+    var6 = var5[var3];
+    var6 = var4.bind(var0)(var6);
+    var6 = var6.FeDistantLight;
+    var1.feDistantLight = var6;
+    var6 = var5[var3];
+    var6 = var4.bind(var0)(var6);
+    var6 = var6.FeDropShadow;
+    var1.feDropShadow = var6;
+    var6 = var5[var3];
+    var6 = var4.bind(var0)(var6);
+    var6 = var6.FeFlood;
+    var1.feFlood = var6;
+    var6 = var5[var3];
+    var6 = var4.bind(var0)(var6);
+    var6 = var6.FeGaussianBlur;
+    var1.feGaussianBlur = var6;
+    var6 = var5[var3];
+    var6 = var4.bind(var0)(var6);
+    var6 = var6.FeImage;
+    var1.feImage = var6;
+    var6 = var5[var3];
+    var6 = var4.bind(var0)(var6);
+    var6 = var6.FeMerge;
+    var1.feMerge = var6;
+    var6 = var5[var3];
+    var6 = var4.bind(var0)(var6);
+    var6 = var6.FeMergeNode;
+    var1.feMergeNode = var6;
+    var6 = var5[var3];
+    var6 = var4.bind(var0)(var6);
+    var6 = var6.FeMorphology;
+    var1.feMorphology = var6;
+    var6 = var5[var3];
+    var6 = var4.bind(var0)(var6);
+    var6 = var6.FeOffset;
+    var1.feOffset = var6;
+    var6 = var5[var3];
+    var6 = var4.bind(var0)(var6);
+    var6 = var6.FePointLight;
+    var1.fePointLight = var6;
+    var6 = var5[var3];
+    var6 = var4.bind(var0)(var6);
+    var6 = var6.FeSpecularLighting;
+    var1.feSpecularLighting = var6;
+    var6 = var5[var3];
+    var6 = var4.bind(var0)(var6);
+    var6 = var6.FeSpotLight;
+    var1.feSpotLight = var6;
+    var6 = var5[var3];
+    var6 = var4.bind(var0)(var6);
+    var6 = var6.FeTile;
+    var1.feTile = var6;
+    var6 = var5[var3];
+    var6 = var4.bind(var0)(var6);
+    var6 = var6.FeTurbulence;
+    var1.feTurbulence = var6;
+    var6 = var5[var3];
+    var6 = var4.bind(var0)(var6);
+    var6 = var6.ForeignObject;
+    var1.foreignObject = var6;
+    var6 = var5[var3];
+    var6 = var4.bind(var0)(var6);
+    var6 = var6.G;
+    var1.g = var6;
+    var6 = var5[var3];
+    var6 = var4.bind(var0)(var6);
+    var6 = var6.Image;
+    var1.image = var6;
+    var6 = var5[var3];
+    var6 = var4.bind(var0)(var6);
+    var6 = var6.Line;
+    var1.line = var6;
+    var6 = var5[var3];
+    var6 = var4.bind(var0)(var6);
+    var6 = var6.LinearGradient;
+    var1.linearGradient = var6;
+    var6 = var5[var3];
+    var6 = var4.bind(var0)(var6);
+    var6 = var6.Marker;
+    var1.marker = var6;
+    var6 = var5[var3];
+    var6 = var4.bind(var0)(var6);
+    var6 = var6.Mask;
+    var1.mask = var6;
+    var6 = var5[var3];
+    var6 = var4.bind(var0)(var6);
+    var6 = var6.Path;
+    var1.path = var6;
+    var6 = var5[var3];
+    var6 = var4.bind(var0)(var6);
+    var6 = var6.Pattern;
+    var1.pattern = var6;
+    var6 = var5[var3];
+    var6 = var4.bind(var0)(var6);
+    var6 = var6.Polygon;
+    var1.polygon = var6;
+    var6 = var5[var3];
+    var6 = var4.bind(var0)(var6);
+    var6 = var6.Polyline;
+    var1.polyline = var6;
+    var6 = var5[var3];
+    var6 = var4.bind(var0)(var6);
+    var6 = var6.RadialGradient;
+    var1.radialGradient = var6;
+    var6 = var5[var3];
+    var6 = var4.bind(var0)(var6);
+    var6 = var6.Rect;
+    var1.rect = var6;
+    var6 = var5[var3];
+    var6 = var4.bind(var0)(var6);
+    var6 = var6.Stop;
+    var1.stop = var6;
+    var6 = var5[var3];
+    var6 = var4.bind(var0)(var6);
+    var6 = var6.Svg;
+    var1.svg = var6;
+    var6 = var5[var3];
+    var6 = var4.bind(var0)(var6);
+    var6 = var6.Symbol;
+    var1.symbol = var6;
+    var6 = var5[var3];
+    var6 = var4.bind(var0)(var6);
+    var6 = var6.Text;
+    var1.text = var6;
+    var6 = var5[var3];
+    var6 = var4.bind(var0)(var6);
+    var6 = var6.TextPath;
+    var1.textPath = var6;
+    var6 = var5[var3];
+    var6 = var4.bind(var0)(var6);
+    var6 = var6.TSpan;
+    var1.tspan = var6;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var3 = var3.Platform;
-    var3 = function arg0() {
-        var0 = global;
-        var1 = var0.decodeURIComponent;
-        var4 = undefined;
-        var0 = arg0;
-        var2 = var1.bind(var4)(var0);
-        var1 = var2.split;
-        var0 = ';';
-        var0 = var1.bind(var2)(var0);
-        var5 = 1;
-        var1 = var0[var5];
-        var0 = var1.split;
-        var2 = ',';
-        var1 = var0.bind(var1)(var2);
-        var0 = 0;
-        var3 = var1[var0];
-        var0 = var1.slice;
-        var1 = var0.bind(var1)(var5);
-        var0 = var1.join;
-        var2 = var0.bind(var1)(var2);
-        var1 = _closure1_slot0;
-        var5 = _closure1_slot1;
-        var0 = 2;
-        var0 = var5[var0];
-        var0 = var1.bind(var4)(var0);
-        var1 = var0.Buffer;
-        var0 = var1.from;
-        var2 = var0.bind(var1)(var2, var3);
-        var1 = var2.toString;
-        var0 = 'utf-8';
-        var0 = var1.bind(var2)(var0);
-        return var0;
-    };
-    var _closure1_slot3 = var3;
-    var1 = function arg0() {
-        var0 = undefined;
-        var3 = _closure1_slot4;
-        var2 = var3.apply;
-        var0 = arguments;
-        var1 = var0;
-        var0 = this;
-        var0 = var2.bind(var3)(var0, var1);
-        return var0;
-    };
-    var2.fetchText = var1;
+    var3 = var3.Use;
+    var1.use = var3;
+    var2.tags = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 27, 488]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5468]);

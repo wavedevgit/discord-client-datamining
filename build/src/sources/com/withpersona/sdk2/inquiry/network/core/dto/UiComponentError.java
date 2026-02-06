@@ -15,8 +15,8 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import or.p;
 import org.jetbrains.annotations.NotNull;
+import qr.p;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class UiComponentError implements Parcelable {
     @NotNull
@@ -29,13 +29,13 @@ public abstract class UiComponentError implements Parcelable {
         }
 
         private final String getJsonType(m mVar) {
-            m F = mVar.F();
-            F.s();
-            while (F.hasNext()) {
-                if (Intrinsics.areEqual(F.m0(), "type")) {
-                    return F.f1();
+            m y10 = mVar.y();
+            y10.u();
+            while (y10.hasNext()) {
+                if (Intrinsics.areEqual(y10.o0(), "type")) {
+                    return y10.e1();
                 }
-                F.P();
+                y10.S();
             }
             return null;
         }
@@ -79,7 +79,7 @@ public abstract class UiComponentError implements Parcelable {
             } else if (uiComponentError instanceof UiInputInternationalDbComponentError) {
                 d10.c(UiInputInternationalDbComponentError.class).toJson(tVar, uiComponentError);
             } else if (uiComponentError == null) {
-                tVar.C0();
+                tVar.P();
             } else {
                 throw new p();
             }

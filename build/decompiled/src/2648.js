@@ -1,240 +1,34 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var5 = require;
     var1 = exports;
-    var6 = dependencyMap;
-    var3 = function arg0() {
-        _fun22157: for (var _fun22157_ip = 0;;) switch (_fun22157_ip) {
-            case 0:
-                var2 = arg0;
-                if (!var2) {
-                    _fun22157_ip = 18;
-                    continue _fun22157
-                }
-            case 6:
-                var1 = var2.__esModule;
-                var0 = var2;
-                if (var1) {
-                    _fun22157_ip = 27;
-                    continue _fun22157
-                }
-            case 18:
-                var1 = {};
-                var1.default = var2;
-                var0 = var1;
-            case 27:
-                return var0;
-        }
-    };
     var0 = global;
-    var7 = var0.Object;
-    var4 = var7.defineProperty;
-    var2 = {};
+    var5 = var0.Object;
+    var4 = var5.defineProperty;
+    var3 = {};
     var0 = true;
-    var2.value = var0;
+    var3.value = var0;
     var0 = '__esModule';
-    var0 = var4.bind(var7)(var1, var0, var2);
+    var0 = var4.bind(var5)(var1, var0, var3);
     var0 = undefined;
     var1.default = var0;
-    var2 = 0;
-    var2 = var6[var2];
-    var2 = var5.bind(var0)(var2);
-    var4 = var3.bind(var0)(var2);
-    var2 = 1;
-    var2 = var6[var2];
-    var2 = var5.bind(var0)(var2);
-    var3 = var3.bind(var0)(var2);
-    var2 = {};
-    var5 = var4.default;
-    var4 = {};
-    var6 = /^第?\d+(年|四半期|月|週|日|時|分|秒)?/i;
-    var4.matchPattern = var6;
-    var6 = /\d+/i;
-    var4.parsePattern = var6;
-    var6 = function arg0() {
-        var0 = global;
-        var3 = var0.parseInt;
-        var2 = undefined;
-        var1 = arg0;
-        var0 = 10;
-        var0 = var3.bind(var2)(var1, var0);
+    var3 = {
+        'lastWeek': '先週のeeeeのp',
+        'yesterday': '昨日のp',
+        'today': '今日のp',
+        'tomorrow': '明日のp',
+        'nextWeek': '翌週のeeeeのp',
+        'other': 'P'
+    };
+    var _closure1_slot0 = var3;
+    var2 = function arg0, arg1, arg2, arg3() {
+        var1 = _closure1_slot0;
+        var0 = arg0;
+        var0 = var1[var0];
         return var0;
     };
-    var4.valueCallback = var6;
-    var4 = var5.bind(var0)(var4);
-    var2.ordinalNumber = var4;
-    var6 = var3.default;
-    var4 = {};
-    var5 = {};
-    var7 = /^(B\.?C\.?|A\.?D\.?)/i;
-    var5.narrow = var7;
-    var7 = /^(紀元[前後]|西暦)/i;
-    var5.abbreviated = var7;
-    var7 = /^(紀元[前後]|西暦)/i;
-    var5.wide = var7;
-    var4.matchPatterns = var5;
-    var7 = 'wide';
-    var4.defaultMatchWidth = var7;
-    var5 = {};
-    var9 = new Array(2);
-    var10 = /^B/i;
-    var9[0] = var10;
-    var10 = /^A/i;
-    var9[1] = var10;
-    var5.narrow = var9;
-    var9 = new Array(2);
-    var10 = /^(紀元前)/i;
-    var9[0] = var10;
-    var10 = /^(西暦|紀元後)/i;
-    var9[1] = var10;
-    var5.any = var9;
-    var4.parsePatterns = var5;
-    var5 = 'any';
-    var4.defaultParseWidth = var5;
-    var4 = var6.bind(var0)(var4);
-    var2.era = var4;
-    var6 = var3.default;
-    var4 = {};
-    var9 = {};
-    var10 = /^[1234]/i;
-    var9.narrow = var10;
-    var10 = /^Q[1234]/i;
-    var9.abbreviated = var10;
-    var10 = /^第[1234一二三四１２３４]四半期/i;
-    var9.wide = var10;
-    var4.matchPatterns = var9;
-    var4.defaultMatchWidth = var7;
-    var9 = {};
-    var10 = new Array(4);
-    var11 = /(1|一|１)/i;
-    var10[0] = var11;
-    var11 = /(2|二|２)/i;
-    var10[1] = var11;
-    var11 = /(3|三|３)/i;
-    var10[2] = var11;
-    var11 = /(4|四|４)/i;
-    var10[3] = var11;
-    var9.any = var10;
-    var4.parsePatterns = var9;
-    var4.defaultParseWidth = var5;
-    var8 = function arg0() {
-        var1 = arg0;
-        var0 = 1;
-        var0 = var1 + var0;
-        return var0;
-    };
-    var4.valueCallback = var8;
-    var4 = var6.bind(var0)(var4);
-    var2.quarter = var4;
-    var6 = var3.default;
-    var4 = {};
-    var8 = {};
-    var9 = /^([123456789]|1[012])/;
-    var8.narrow = var9;
-    var9 = /^([123456789]|1[012])月/i;
-    var8.abbreviated = var9;
-    var9 = /^([123456789]|1[012])月/i;
-    var8.wide = var9;
-    var4.matchPatterns = var8;
-    var4.defaultMatchWidth = var7;
-    var8 = {};
-    var9 = new Array(12);
-    var10 = /^1\D/;
-    var9[0] = var10;
-    var10 = /^2/;
-    var9[1] = var10;
-    var10 = /^3/;
-    var9[2] = var10;
-    var10 = /^4/;
-    var9[3] = var10;
-    var10 = /^5/;
-    var9[4] = var10;
-    var10 = /^6/;
-    var9[5] = var10;
-    var10 = /^7/;
-    var9[6] = var10;
-    var10 = /^8/;
-    var9[7] = var10;
-    var10 = /^9/;
-    var9[8] = var10;
-    var10 = /^10/;
-    var9[9] = var10;
-    var10 = /^11/;
-    var9[10] = var10;
-    var10 = /^12/;
-    var9[11] = var10;
-    var8.any = var9;
-    var4.parsePatterns = var8;
-    var4.defaultParseWidth = var5;
-    var4 = var6.bind(var0)(var4);
-    var2.month = var4;
-    var6 = var3.default;
-    var4 = {};
-    var8 = {};
-    var9 = /^[日月火水木金土]/;
-    var8.narrow = var9;
-    var9 = /^[日月火水木金土]/;
-    var8.short = var9;
-    var9 = /^[日月火水木金土]/;
-    var8.abbreviated = var9;
-    var9 = /^[日月火水木金土]曜日/;
-    var8.wide = var9;
-    var4.matchPatterns = var8;
-    var4.defaultMatchWidth = var7;
-    var7 = {};
-    var8 = new Array(7);
-    var9 = /^日/;
-    var8[0] = var9;
-    var9 = /^月/;
-    var8[1] = var9;
-    var9 = /^火/;
-    var8[2] = var9;
-    var9 = /^水/;
-    var8[3] = var9;
-    var9 = /^木/;
-    var8[4] = var9;
-    var9 = /^金/;
-    var8[5] = var9;
-    var9 = /^土/;
-    var8[6] = var9;
-    var7.any = var8;
-    var4.parsePatterns = var7;
-    var4.defaultParseWidth = var5;
-    var4 = var6.bind(var0)(var4);
-    var2.day = var4;
-    var4 = var3.default;
-    var3 = {};
-    var6 = {};
-    var7 = /^(AM|PM|午前|午後|正午|深夜|真夜中|夜|朝)/i;
-    var6.any = var7;
-    var3.matchPatterns = var6;
-    var3.defaultMatchWidth = var5;
-    var6 = {};
-    var7 = {};
-    var8 = /^(A|午前)/i;
-    var7.am = var8;
-    var8 = /^(P|午後)/i;
-    var7.pm = var8;
-    var8 = /^深夜|真夜中/i;
-    var7.midnight = var8;
-    var8 = /^正午/i;
-    var7.noon = var8;
-    var8 = /^朝/i;
-    var7.morning = var8;
-    var8 = /^午後/i;
-    var7.afternoon = var8;
-    var8 = /^夜/i;
-    var7.evening = var8;
-    var8 = /^深夜/i;
-    var7.night = var8;
-    var6.any = var7;
-    var3.parsePatterns = var6;
-    var3.defaultParseWidth = var5;
-    var3 = var4.bind(var0)(var3);
-    var2.dayPeriod = var3;
     var1.default = var2;
     var2 = var1.default;
     var1 = arg4;
     var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1696, 1695]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

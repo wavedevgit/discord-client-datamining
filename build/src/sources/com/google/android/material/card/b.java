@@ -1,5 +1,7 @@
 package com.google.android.material.card;
 
+import ah.f;
+import ah.j;
 import android.animation.TimeInterpolator;
 import android.animation.ValueAnimator;
 import android.content.res.ColorStateList;
@@ -17,95 +19,93 @@ import android.view.View;
 import androidx.core.view.h0;
 import com.facebook.react.views.image.ReactImageView;
 import com.facebook.react.views.text.internal.span.SetSpanOperation;
-import mh.c;
-import ph.d;
-import ph.e;
-import ph.g;
-import ph.k;
-import zg.f;
-import zg.j;
+import nh.c;
+import qh.d;
+import qh.e;
+import qh.g;
+import qh.k;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class b {
     private static final Drawable A;
 
     /* renamed from: z  reason: collision with root package name */
-    private static final double f14720z = Math.cos(Math.toRadians(45.0d));
+    private static final double f14700z = Math.cos(Math.toRadians(45.0d));
 
     /* renamed from: a  reason: collision with root package name */
-    private final MaterialCardView f14721a;
+    private final MaterialCardView f14701a;
 
     /* renamed from: c  reason: collision with root package name */
-    private final g f14723c;
+    private final g f14703c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final g f14724d;
+    private final g f14704d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f14725e;
+    private int f14705e;
 
     /* renamed from: f  reason: collision with root package name */
-    private int f14726f;
+    private int f14706f;
 
     /* renamed from: g  reason: collision with root package name */
-    private int f14727g;
+    private int f14707g;
 
     /* renamed from: h  reason: collision with root package name */
-    private int f14728h;
+    private int f14708h;
 
     /* renamed from: i  reason: collision with root package name */
-    private Drawable f14729i;
+    private Drawable f14709i;
 
     /* renamed from: j  reason: collision with root package name */
-    private Drawable f14730j;
+    private Drawable f14710j;
 
     /* renamed from: k  reason: collision with root package name */
-    private ColorStateList f14731k;
+    private ColorStateList f14711k;
 
     /* renamed from: l  reason: collision with root package name */
-    private ColorStateList f14732l;
+    private ColorStateList f14712l;
 
     /* renamed from: m  reason: collision with root package name */
-    private k f14733m;
+    private k f14713m;
 
     /* renamed from: n  reason: collision with root package name */
-    private ColorStateList f14734n;
+    private ColorStateList f14714n;
 
     /* renamed from: o  reason: collision with root package name */
-    private Drawable f14735o;
+    private Drawable f14715o;
 
     /* renamed from: p  reason: collision with root package name */
-    private LayerDrawable f14736p;
+    private LayerDrawable f14716p;
 
     /* renamed from: q  reason: collision with root package name */
-    private g f14737q;
+    private g f14717q;
 
     /* renamed from: r  reason: collision with root package name */
-    private g f14738r;
+    private g f14718r;
 
     /* renamed from: t  reason: collision with root package name */
-    private boolean f14740t;
+    private boolean f14720t;
 
     /* renamed from: u  reason: collision with root package name */
-    private ValueAnimator f14741u;
+    private ValueAnimator f14721u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final TimeInterpolator f14742v;
+    private final TimeInterpolator f14722v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final int f14743w;
+    private final int f14723w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final int f14744x;
+    private final int f14724x;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Rect f14722b = new Rect();
+    private final Rect f14702b = new Rect();
 
     /* renamed from: s  reason: collision with root package name */
-    private boolean f14739s = false;
+    private boolean f14719s = false;
 
     /* renamed from: y  reason: collision with root package name */
-    private float f14745y = 0.0f;
+    private float f14725y = 0.0f;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -141,28 +141,28 @@ public class b {
     }
 
     public b(MaterialCardView materialCardView, AttributeSet attributeSet, int i10, int i11) {
-        this.f14721a = materialCardView;
+        this.f14701a = materialCardView;
         g gVar = new g(materialCardView.getContext(), attributeSet, i10, i11);
-        this.f14723c = gVar;
+        this.f14703c = gVar;
         gVar.N(materialCardView.getContext());
         gVar.c0(-12303292);
         k.b v10 = gVar.D().v();
-        TypedArray obtainStyledAttributes = materialCardView.getContext().obtainStyledAttributes(attributeSet, zg.k.f55903s0, i10, j.f55702a);
-        if (obtainStyledAttributes.hasValue(zg.k.f55912t0)) {
-            v10.o(obtainStyledAttributes.getDimension(zg.k.f55912t0, 0.0f));
+        TypedArray obtainStyledAttributes = materialCardView.getContext().obtainStyledAttributes(attributeSet, ah.k.f998s0, i10, j.f797a);
+        if (obtainStyledAttributes.hasValue(ah.k.f1007t0)) {
+            v10.o(obtainStyledAttributes.getDimension(ah.k.f1007t0, 0.0f));
         }
-        this.f14724d = new g();
+        this.f14704d = new g();
         Y(v10.m());
-        this.f14742v = kh.g.g(materialCardView.getContext(), zg.b.Q, ah.a.f625a);
-        this.f14743w = kh.g.f(materialCardView.getContext(), zg.b.K, ReactImageView.REMOTE_IMAGE_FADE_DURATION_MS);
-        this.f14744x = kh.g.f(materialCardView.getContext(), zg.b.J, ReactImageView.REMOTE_IMAGE_FADE_DURATION_MS);
+        this.f14722v = lh.g.g(materialCardView.getContext(), ah.b.Q, bh.a.f6754a);
+        this.f14723w = lh.g.f(materialCardView.getContext(), ah.b.K, ReactImageView.REMOTE_IMAGE_FADE_DURATION_MS);
+        this.f14724x = lh.g.f(materialCardView.getContext(), ah.b.J, ReactImageView.REMOTE_IMAGE_FADE_DURATION_MS);
         obtainStyledAttributes.recycle();
     }
 
     private Drawable D(Drawable drawable) {
         int i10;
         int i11;
-        if (this.f14721a.getUseCompatPadding()) {
+        if (this.f14701a.getUseCompatPadding()) {
             i11 = (int) Math.ceil(f());
             i10 = (int) Math.ceil(e());
         } else {
@@ -173,14 +173,14 @@ public class b {
     }
 
     private boolean G() {
-        if ((this.f14727g & 80) == 80) {
+        if ((this.f14707g & 80) == 80) {
             return true;
         }
         return false;
     }
 
     private boolean H() {
-        if ((this.f14727g & 8388613) == 8388613) {
+        if ((this.f14707g & 8388613) == 8388613) {
             return true;
         }
         return false;
@@ -189,24 +189,24 @@ public class b {
     public static /* synthetic */ void a(b bVar, ValueAnimator valueAnimator) {
         bVar.getClass();
         float floatValue = ((Float) valueAnimator.getAnimatedValue()).floatValue();
-        bVar.f14730j.setAlpha((int) (255.0f * floatValue));
-        bVar.f14745y = floatValue;
+        bVar.f14710j.setAlpha((int) (255.0f * floatValue));
+        bVar.f14725y = floatValue;
     }
 
     private float c() {
-        return Math.max(Math.max(d(this.f14733m.q(), this.f14723c.G()), d(this.f14733m.s(), this.f14723c.H())), Math.max(d(this.f14733m.k(), this.f14723c.t()), d(this.f14733m.i(), this.f14723c.s())));
+        return Math.max(Math.max(d(this.f14713m.q(), this.f14703c.G()), d(this.f14713m.s(), this.f14703c.H())), Math.max(d(this.f14713m.k(), this.f14703c.t()), d(this.f14713m.i(), this.f14703c.s())));
     }
 
     private boolean c0() {
-        if (this.f14721a.getPreventCornerOverlap() && !g()) {
+        if (this.f14701a.getPreventCornerOverlap() && !g()) {
             return true;
         }
         return false;
     }
 
     private float d(d dVar, float f10) {
-        if (dVar instanceof ph.j) {
-            return (float) ((1.0d - f14720z) * f10);
+        if (dVar instanceof qh.j) {
+            return (float) ((1.0d - f14700z) * f10);
         }
         if (dVar instanceof e) {
             return f10 / 2.0f;
@@ -215,7 +215,7 @@ public class b {
     }
 
     private boolean d0() {
-        if (this.f14721a.getPreventCornerOverlap() && g() && this.f14721a.getUseCompatPadding()) {
+        if (this.f14701a.getPreventCornerOverlap() && g() && this.f14701a.getUseCompatPadding()) {
             return true;
         }
         return false;
@@ -223,7 +223,7 @@ public class b {
 
     private float e() {
         float f10;
-        float maxCardElevation = this.f14721a.getMaxCardElevation();
+        float maxCardElevation = this.f14701a.getMaxCardElevation();
         if (d0()) {
             f10 = c();
         } else {
@@ -233,10 +233,10 @@ public class b {
     }
 
     private boolean e0() {
-        if (this.f14721a.isClickable()) {
+        if (this.f14701a.isClickable()) {
             return true;
         }
-        View view = this.f14721a;
+        View view = this.f14701a;
         while (view.isDuplicateParentStateEnabled() && (view.getParent() instanceof View)) {
             view = (View) view.getParent();
         }
@@ -245,7 +245,7 @@ public class b {
 
     private float f() {
         float f10;
-        float maxCardElevation = this.f14721a.getMaxCardElevation() * 1.5f;
+        float maxCardElevation = this.f14701a.getMaxCardElevation() * 1.5f;
         if (d0()) {
             f10 = c();
         } else {
@@ -255,7 +255,7 @@ public class b {
     }
 
     private boolean g() {
-        if (this.f14723c.Q()) {
+        if (this.f14703c.Q()) {
             return true;
         }
         return false;
@@ -264,122 +264,122 @@ public class b {
     private Drawable h() {
         StateListDrawable stateListDrawable = new StateListDrawable();
         g j10 = j();
-        this.f14737q = j10;
-        j10.X(this.f14731k);
-        stateListDrawable.addState(new int[]{16842919}, this.f14737q);
+        this.f14717q = j10;
+        j10.X(this.f14711k);
+        stateListDrawable.addState(new int[]{16842919}, this.f14717q);
         return stateListDrawable;
     }
 
     private Drawable i() {
-        if (nh.b.f41306a) {
-            this.f14738r = j();
-            return new RippleDrawable(this.f14731k, null, this.f14738r);
+        if (oh.b.f42758a) {
+            this.f14718r = j();
+            return new RippleDrawable(this.f14711k, null, this.f14718r);
         }
         return h();
     }
 
     private void i0(Drawable drawable) {
-        if (this.f14721a.getForeground() instanceof InsetDrawable) {
-            ((InsetDrawable) this.f14721a.getForeground()).setDrawable(drawable);
+        if (this.f14701a.getForeground() instanceof InsetDrawable) {
+            ((InsetDrawable) this.f14701a.getForeground()).setDrawable(drawable);
         } else {
-            this.f14721a.setForeground(D(drawable));
+            this.f14701a.setForeground(D(drawable));
         }
     }
 
     private g j() {
-        return new g(this.f14733m);
+        return new g(this.f14713m);
     }
 
     private void k0() {
         Drawable drawable;
-        if (nh.b.f41306a && (drawable = this.f14735o) != null) {
-            ((RippleDrawable) drawable).setColor(this.f14731k);
+        if (oh.b.f42758a && (drawable = this.f14715o) != null) {
+            ((RippleDrawable) drawable).setColor(this.f14711k);
             return;
         }
-        g gVar = this.f14737q;
+        g gVar = this.f14717q;
         if (gVar != null) {
-            gVar.X(this.f14731k);
+            gVar.X(this.f14711k);
         }
     }
 
     private Drawable t() {
-        if (this.f14735o == null) {
-            this.f14735o = i();
+        if (this.f14715o == null) {
+            this.f14715o = i();
         }
-        if (this.f14736p == null) {
-            LayerDrawable layerDrawable = new LayerDrawable(new Drawable[]{this.f14735o, this.f14724d, this.f14730j});
-            this.f14736p = layerDrawable;
+        if (this.f14716p == null) {
+            LayerDrawable layerDrawable = new LayerDrawable(new Drawable[]{this.f14715o, this.f14704d, this.f14710j});
+            this.f14716p = layerDrawable;
             layerDrawable.setId(2, f.D);
         }
-        return this.f14736p;
+        return this.f14716p;
     }
 
     private float v() {
-        if (this.f14721a.getPreventCornerOverlap() && this.f14721a.getUseCompatPadding()) {
-            return (float) ((1.0d - f14720z) * this.f14721a.getCardViewRadius());
+        if (this.f14701a.getPreventCornerOverlap() && this.f14701a.getUseCompatPadding()) {
+            return (float) ((1.0d - f14700z) * this.f14701a.getCardViewRadius());
         }
         return 0.0f;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public ColorStateList A() {
-        return this.f14734n;
+        return this.f14714n;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int B() {
-        return this.f14728h;
+        return this.f14708h;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Rect C() {
-        return this.f14722b;
+        return this.f14702b;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean E() {
-        return this.f14739s;
+        return this.f14719s;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean F() {
-        return this.f14740t;
+        return this.f14720t;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void I(TypedArray typedArray) {
         Drawable drawable;
-        ColorStateList a10 = c.a(this.f14721a.getContext(), typedArray, zg.k.S3);
-        this.f14734n = a10;
+        ColorStateList a10 = c.a(this.f14701a.getContext(), typedArray, ah.k.S3);
+        this.f14714n = a10;
         if (a10 == null) {
-            this.f14734n = ColorStateList.valueOf(-1);
+            this.f14714n = ColorStateList.valueOf(-1);
         }
-        this.f14728h = typedArray.getDimensionPixelSize(zg.k.T3, 0);
-        boolean z10 = typedArray.getBoolean(zg.k.K3, false);
-        this.f14740t = z10;
-        this.f14721a.setLongClickable(z10);
-        this.f14732l = c.a(this.f14721a.getContext(), typedArray, zg.k.Q3);
-        Q(c.d(this.f14721a.getContext(), typedArray, zg.k.M3));
-        T(typedArray.getDimensionPixelSize(zg.k.P3, 0));
-        S(typedArray.getDimensionPixelSize(zg.k.O3, 0));
-        this.f14727g = typedArray.getInteger(zg.k.N3, 8388661);
-        ColorStateList a11 = c.a(this.f14721a.getContext(), typedArray, zg.k.R3);
-        this.f14731k = a11;
+        this.f14708h = typedArray.getDimensionPixelSize(ah.k.T3, 0);
+        boolean z10 = typedArray.getBoolean(ah.k.K3, false);
+        this.f14720t = z10;
+        this.f14701a.setLongClickable(z10);
+        this.f14712l = c.a(this.f14701a.getContext(), typedArray, ah.k.Q3);
+        Q(c.d(this.f14701a.getContext(), typedArray, ah.k.M3));
+        T(typedArray.getDimensionPixelSize(ah.k.P3, 0));
+        S(typedArray.getDimensionPixelSize(ah.k.O3, 0));
+        this.f14707g = typedArray.getInteger(ah.k.N3, 8388661);
+        ColorStateList a11 = c.a(this.f14701a.getContext(), typedArray, ah.k.R3);
+        this.f14711k = a11;
         if (a11 == null) {
-            this.f14731k = ColorStateList.valueOf(fh.a.d(this.f14721a, zg.b.f55550i));
+            this.f14711k = ColorStateList.valueOf(gh.a.d(this.f14701a, ah.b.f645i));
         }
-        M(c.a(this.f14721a.getContext(), typedArray, zg.k.L3));
+        M(c.a(this.f14701a.getContext(), typedArray, ah.k.L3));
         k0();
         h0();
         l0();
-        this.f14721a.setBackgroundInternal(D(this.f14723c));
+        this.f14701a.setBackgroundInternal(D(this.f14703c));
         if (e0()) {
             drawable = t();
         } else {
-            drawable = this.f14724d;
+            drawable = this.f14704d;
         }
-        this.f14729i = drawable;
-        this.f14721a.setForeground(D(drawable));
+        this.f14709i = drawable;
+        this.f14701a.setForeground(D(drawable));
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -392,8 +392,8 @@ public class b {
         int i17;
         int i18;
         int i19;
-        if (this.f14736p != null) {
-            if (this.f14721a.getUseCompatPadding()) {
+        if (this.f14716p != null) {
+            if (this.f14701a.getUseCompatPadding()) {
                 i12 = (int) Math.ceil(f() * 2.0f);
                 i13 = (int) Math.ceil(e() * 2.0f);
             } else {
@@ -401,51 +401,51 @@ public class b {
                 i13 = 0;
             }
             if (H()) {
-                i14 = ((i10 - this.f14725e) - this.f14726f) - i13;
+                i14 = ((i10 - this.f14705e) - this.f14706f) - i13;
             } else {
-                i14 = this.f14725e;
+                i14 = this.f14705e;
             }
             if (G()) {
-                i15 = this.f14725e;
+                i15 = this.f14705e;
             } else {
-                i15 = ((i11 - this.f14725e) - this.f14726f) - i12;
+                i15 = ((i11 - this.f14705e) - this.f14706f) - i12;
             }
             int i20 = i15;
             if (H()) {
-                i16 = this.f14725e;
+                i16 = this.f14705e;
             } else {
-                i16 = ((i10 - this.f14725e) - this.f14726f) - i13;
+                i16 = ((i10 - this.f14705e) - this.f14706f) - i13;
             }
             if (G()) {
-                i17 = ((i11 - this.f14725e) - this.f14726f) - i12;
+                i17 = ((i11 - this.f14705e) - this.f14706f) - i12;
             } else {
-                i17 = this.f14725e;
+                i17 = this.f14705e;
             }
             int i21 = i17;
-            if (h0.z(this.f14721a) == 1) {
+            if (h0.z(this.f14701a) == 1) {
                 i19 = i16;
                 i18 = i14;
             } else {
                 i18 = i16;
                 i19 = i14;
             }
-            this.f14736p.setLayerInset(2, i19, i21, i18, i20);
+            this.f14716p.setLayerInset(2, i19, i21, i18, i20);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void K(boolean z10) {
-        this.f14739s = z10;
+        this.f14719s = z10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void L(ColorStateList colorStateList) {
-        this.f14723c.X(colorStateList);
+        this.f14703c.X(colorStateList);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void M(ColorStateList colorStateList) {
-        g gVar = this.f14724d;
+        g gVar = this.f14704d;
         if (colorStateList == null) {
             colorStateList = ColorStateList.valueOf(0);
         }
@@ -454,7 +454,7 @@ public class b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void N(boolean z10) {
-        this.f14740t = z10;
+        this.f14720t = z10;
     }
 
     public void O(boolean z10) {
@@ -464,7 +464,7 @@ public class b {
     public void P(boolean z10, boolean z11) {
         int i10;
         float f10;
-        Drawable drawable = this.f14730j;
+        Drawable drawable = this.f14710j;
         if (drawable != null) {
             if (z11) {
                 b(z10);
@@ -481,7 +481,7 @@ public class b {
             } else {
                 f10 = 0.0f;
             }
-            this.f14745y = f10;
+            this.f14725y = f10;
         }
     }
 
@@ -489,38 +489,38 @@ public class b {
     public void Q(Drawable drawable) {
         if (drawable != null) {
             Drawable mutate = s1.a.r(drawable).mutate();
-            this.f14730j = mutate;
-            s1.a.o(mutate, this.f14732l);
-            O(this.f14721a.isChecked());
+            this.f14710j = mutate;
+            s1.a.o(mutate, this.f14712l);
+            O(this.f14701a.isChecked());
         } else {
-            this.f14730j = A;
+            this.f14710j = A;
         }
-        LayerDrawable layerDrawable = this.f14736p;
+        LayerDrawable layerDrawable = this.f14716p;
         if (layerDrawable != null) {
-            layerDrawable.setDrawableByLayerId(f.D, this.f14730j);
+            layerDrawable.setDrawableByLayerId(f.D, this.f14710j);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void R(int i10) {
-        this.f14727g = i10;
-        J(this.f14721a.getMeasuredWidth(), this.f14721a.getMeasuredHeight());
+        this.f14707g = i10;
+        J(this.f14701a.getMeasuredWidth(), this.f14701a.getMeasuredHeight());
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void S(int i10) {
-        this.f14725e = i10;
+        this.f14705e = i10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void T(int i10) {
-        this.f14726f = i10;
+        this.f14706f = i10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void U(ColorStateList colorStateList) {
-        this.f14732l = colorStateList;
-        Drawable drawable = this.f14730j;
+        this.f14712l = colorStateList;
+        Drawable drawable = this.f14710j;
         if (drawable != null) {
             s1.a.o(drawable, colorStateList);
         }
@@ -528,8 +528,8 @@ public class b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void V(float f10) {
-        Y(this.f14733m.w(f10));
-        this.f14729i.invalidateSelf();
+        Y(this.f14713m.w(f10));
+        this.f14709i.invalidateSelf();
         if (d0() || c0()) {
             g0();
         }
@@ -540,12 +540,12 @@ public class b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void W(float f10) {
-        this.f14723c.Y(f10);
-        g gVar = this.f14724d;
+        this.f14703c.Y(f10);
+        g gVar = this.f14704d;
         if (gVar != null) {
             gVar.Y(f10);
         }
-        g gVar2 = this.f14738r;
+        g gVar2 = this.f14718r;
         if (gVar2 != null) {
             gVar2.Y(f10);
         }
@@ -553,25 +553,25 @@ public class b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void X(ColorStateList colorStateList) {
-        this.f14731k = colorStateList;
+        this.f14711k = colorStateList;
         k0();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void Y(k kVar) {
-        this.f14733m = kVar;
-        this.f14723c.setShapeAppearanceModel(kVar);
-        g gVar = this.f14723c;
+        this.f14713m = kVar;
+        this.f14703c.setShapeAppearanceModel(kVar);
+        g gVar = this.f14703c;
         gVar.b0(!gVar.Q());
-        g gVar2 = this.f14724d;
+        g gVar2 = this.f14704d;
         if (gVar2 != null) {
             gVar2.setShapeAppearanceModel(kVar);
         }
-        g gVar3 = this.f14738r;
+        g gVar3 = this.f14718r;
         if (gVar3 != null) {
             gVar3.setShapeAppearanceModel(kVar);
         }
-        g gVar4 = this.f14737q;
+        g gVar4 = this.f14717q;
         if (gVar4 != null) {
             gVar4.setShapeAppearanceModel(kVar);
         }
@@ -579,19 +579,19 @@ public class b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void Z(ColorStateList colorStateList) {
-        if (this.f14734n == colorStateList) {
+        if (this.f14714n == colorStateList) {
             return;
         }
-        this.f14734n = colorStateList;
+        this.f14714n = colorStateList;
         l0();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void a0(int i10) {
-        if (i10 == this.f14728h) {
+        if (i10 == this.f14708h) {
             return;
         }
-        this.f14728h = i10;
+        this.f14708h = i10;
         l0();
     }
 
@@ -605,50 +605,50 @@ public class b {
             f10 = 0.0f;
         }
         if (z10) {
-            f11 = 1.0f - this.f14745y;
+            f11 = 1.0f - this.f14725y;
         } else {
-            f11 = this.f14745y;
+            f11 = this.f14725y;
         }
-        ValueAnimator valueAnimator = this.f14741u;
+        ValueAnimator valueAnimator = this.f14721u;
         if (valueAnimator != null) {
             valueAnimator.cancel();
-            this.f14741u = null;
+            this.f14721u = null;
         }
-        ValueAnimator ofFloat = ValueAnimator.ofFloat(this.f14745y, f10);
-        this.f14741u = ofFloat;
+        ValueAnimator ofFloat = ValueAnimator.ofFloat(this.f14725y, f10);
+        this.f14721u = ofFloat;
         ofFloat.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: com.google.android.material.card.a
             @Override // android.animation.ValueAnimator.AnimatorUpdateListener
             public final void onAnimationUpdate(ValueAnimator valueAnimator2) {
                 b.a(b.this, valueAnimator2);
             }
         });
-        this.f14741u.setInterpolator(this.f14742v);
-        ValueAnimator valueAnimator2 = this.f14741u;
+        this.f14721u.setInterpolator(this.f14722v);
+        ValueAnimator valueAnimator2 = this.f14721u;
         if (z10) {
-            i10 = this.f14743w;
+            i10 = this.f14723w;
         } else {
-            i10 = this.f14744x;
+            i10 = this.f14724x;
         }
         valueAnimator2.setDuration(i10 * f11);
-        this.f14741u.start();
+        this.f14721u.start();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void b0(int i10, int i11, int i12, int i13) {
-        this.f14722b.set(i10, i11, i12, i13);
+        this.f14702b.set(i10, i11, i12, i13);
         g0();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void f0() {
         Drawable drawable;
-        Drawable drawable2 = this.f14729i;
+        Drawable drawable2 = this.f14709i;
         if (e0()) {
             drawable = t();
         } else {
-            drawable = this.f14724d;
+            drawable = this.f14704d;
         }
-        this.f14729i = drawable;
+        this.f14709i = drawable;
         if (drawable2 != drawable) {
             i0(drawable);
         }
@@ -663,102 +663,102 @@ public class b {
             c10 = c();
         }
         int v10 = (int) (c10 - v());
-        MaterialCardView materialCardView = this.f14721a;
-        Rect rect = this.f14722b;
+        MaterialCardView materialCardView = this.f14701a;
+        Rect rect = this.f14702b;
         materialCardView.e(rect.left + v10, rect.top + v10, rect.right + v10, rect.bottom + v10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void h0() {
-        this.f14723c.W(this.f14721a.getCardElevation());
+        this.f14703c.W(this.f14701a.getCardElevation());
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void j0() {
         if (!E()) {
-            this.f14721a.setBackgroundInternal(D(this.f14723c));
+            this.f14701a.setBackgroundInternal(D(this.f14703c));
         }
-        this.f14721a.setForeground(D(this.f14729i));
+        this.f14701a.setForeground(D(this.f14709i));
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void k() {
-        Drawable drawable = this.f14735o;
+        Drawable drawable = this.f14715o;
         if (drawable != null) {
             Rect bounds = drawable.getBounds();
             int i10 = bounds.bottom;
-            this.f14735o.setBounds(bounds.left, bounds.top, bounds.right, i10 - 1);
-            this.f14735o.setBounds(bounds.left, bounds.top, bounds.right, i10);
+            this.f14715o.setBounds(bounds.left, bounds.top, bounds.right, i10 - 1);
+            this.f14715o.setBounds(bounds.left, bounds.top, bounds.right, i10);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public g l() {
-        return this.f14723c;
+        return this.f14703c;
     }
 
     void l0() {
-        this.f14724d.e0(this.f14728h, this.f14734n);
+        this.f14704d.e0(this.f14708h, this.f14714n);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public ColorStateList m() {
-        return this.f14723c.x();
+        return this.f14703c.x();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public ColorStateList n() {
-        return this.f14724d.x();
+        return this.f14704d.x();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Drawable o() {
-        return this.f14730j;
+        return this.f14710j;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int p() {
-        return this.f14727g;
+        return this.f14707g;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int q() {
-        return this.f14725e;
+        return this.f14705e;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int r() {
-        return this.f14726f;
+        return this.f14706f;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public ColorStateList s() {
-        return this.f14732l;
+        return this.f14712l;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public float u() {
-        return this.f14723c.G();
+        return this.f14703c.G();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public float w() {
-        return this.f14723c.y();
+        return this.f14703c.y();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public ColorStateList x() {
-        return this.f14731k;
+        return this.f14711k;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public k y() {
-        return this.f14733m;
+        return this.f14713m;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int z() {
-        ColorStateList colorStateList = this.f14734n;
+        ColorStateList colorStateList = this.f14714n;
         if (colorStateList == null) {
             return -1;
         }

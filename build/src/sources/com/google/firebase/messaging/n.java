@@ -26,7 +26,7 @@ abstract class n {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static ExecutorService d() {
-        return lj.b.a().a(new of.a("Firebase-Messaging-Intent-Handle"), lj.c.HIGH_SPEED);
+        return mj.b.a().a(new of.a("Firebase-Messaging-Intent-Handle"), mj.c.HIGH_SPEED);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */

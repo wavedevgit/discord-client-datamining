@@ -7,15 +7,15 @@ import xf.k;
 import xf.m;
 import yf.a;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class c extends a.AbstractBinderC0763a {
+public abstract class c extends a.AbstractBinderC0750a {
     @Override // yf.a
-    public void C0(Status status, m mVar) {
+    public void F0(Status status, m mVar) {
         Intrinsics.checkNotNullParameter(status, "status");
         throw new UnsupportedOperationException();
     }
 
     @Override // yf.a
-    public void R(Status status, k kVar) {
+    public void U(Status status, k kVar) {
         Intrinsics.checkNotNullParameter(status, "status");
         throw new UnsupportedOperationException();
     }

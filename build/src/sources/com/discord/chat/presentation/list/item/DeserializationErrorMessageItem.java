@@ -74,7 +74,7 @@ public final class DeserializationErrorMessageItem extends ChatListItem {
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public DeserializationErrorMessageItem(@NotNull ErrorMessage message, boolean z10) {
-        super(message.m226getId3Eiw7ao(), null);
+        super(message.m224getId3Eiw7ao(), null);
         Intrinsics.checkNotNullParameter(message, "message");
         this.message = message;
         this.isExpanded = z10;

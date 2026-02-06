@@ -71,7 +71,7 @@ public final class MessageQueueThreadSpec {
         static {
             ThreadType[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = vr.a.a($values);
+            $ENTRIES = xr.a.a($values);
         }
 
         private ThreadType(String str, int i10) {

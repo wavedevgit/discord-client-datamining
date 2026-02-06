@@ -3,7 +3,7 @@ package com.withpersona.sdk2.inquiry.steps.ui.view;
 import android.content.Context;
 import android.util.AttributeSet;
 import androidx.core.widget.NestedScrollView;
-import hp.g;
+import jp.g;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
@@ -22,8 +22,8 @@ public final class ShadowedNestedScrollView extends NestedScrollView {
     public int getSolidColor() {
         Context context = getContext();
         Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
-        int[] Theme = g.f26831h;
+        int[] Theme = g.f30827h;
         Intrinsics.checkNotNullExpressionValue(Theme, "Theme");
-        return context.obtainStyledAttributes(null, Theme, 0, 0).getColor(g.f26832i, -3355444);
+        return context.obtainStyledAttributes(null, Theme, 0, 0).getColor(g.f30828i, -3355444);
     }
 }

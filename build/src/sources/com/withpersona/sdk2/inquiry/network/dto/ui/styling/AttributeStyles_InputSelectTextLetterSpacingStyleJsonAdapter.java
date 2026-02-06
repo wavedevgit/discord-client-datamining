@@ -41,24 +41,24 @@ public final class AttributeStyles_InputSelectTextLetterSpacingStyleJsonAdapter 
     @NotNull
     public AttributeStyles.InputSelectTextLetterSpacingStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         StyleElements.Measurement measurement = null;
         StyleElements.Measurement measurement2 = null;
         StyleElements.Measurement measurement3 = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 measurement = (StyleElements.Measurement) this.nullableMeasurementAdapter.fromJson(reader);
-            } else if (W == 1) {
+            } else if (J == 1) {
                 measurement2 = (StyleElements.Measurement) this.nullableMeasurementAdapter.fromJson(reader);
-            } else if (W == 2) {
+            } else if (J == 2) {
                 measurement3 = (StyleElements.Measurement) this.nullableMeasurementAdapter.fromJson(reader);
             }
         }
-        reader.z();
+        reader.D();
         return new AttributeStyles.InputSelectTextLetterSpacingStyle(measurement, measurement2, measurement3);
     }
 
@@ -67,13 +67,13 @@ public final class AttributeStyles_InputSelectTextLetterSpacingStyleJsonAdapter 
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (inputSelectTextLetterSpacingStyle != null) {
             writer.k();
-            writer.W("base");
+            writer.J("base");
             this.nullableMeasurementAdapter.toJson(writer, inputSelectTextLetterSpacingStyle.getBase());
-            writer.W("label");
+            writer.J("label");
             this.nullableMeasurementAdapter.toJson(writer, inputSelectTextLetterSpacingStyle.getLabel());
-            writer.W("error");
+            writer.J("error");
             this.nullableMeasurementAdapter.toJson(writer, inputSelectTextLetterSpacingStyle.getError());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

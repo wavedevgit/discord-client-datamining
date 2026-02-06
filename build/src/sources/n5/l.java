@@ -9,102 +9,102 @@ import s5.j;
 public class l implements m, j {
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f39207d;
+    private final String f38562d;
 
     /* renamed from: f  reason: collision with root package name */
-    private final s5.j f39209f;
+    private final s5.j f38564f;
 
     /* renamed from: a  reason: collision with root package name */
-    private final Path f39204a = new Path();
+    private final Path f38559a = new Path();
 
     /* renamed from: b  reason: collision with root package name */
-    private final Path f39205b = new Path();
+    private final Path f38560b = new Path();
 
     /* renamed from: c  reason: collision with root package name */
-    private final Path f39206c = new Path();
+    private final Path f38561c = new Path();
 
     /* renamed from: e  reason: collision with root package name */
-    private final List f39208e = new ArrayList();
+    private final List f38563e = new ArrayList();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f39210a;
+        static final /* synthetic */ int[] f38565a;
 
         static {
             int[] iArr = new int[j.a.values().length];
-            f39210a = iArr;
+            f38565a = iArr;
             try {
                 iArr[j.a.MERGE.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f39210a[j.a.ADD.ordinal()] = 2;
+                f38565a[j.a.ADD.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f39210a[j.a.SUBTRACT.ordinal()] = 3;
+                f38565a[j.a.SUBTRACT.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f39210a[j.a.INTERSECT.ordinal()] = 4;
+                f38565a[j.a.INTERSECT.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f39210a[j.a.EXCLUDE_INTERSECTIONS.ordinal()] = 5;
+                f38565a[j.a.EXCLUDE_INTERSECTIONS.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
         }
     }
 
     public l(s5.j jVar) {
-        this.f39207d = jVar.c();
-        this.f39209f = jVar;
+        this.f38562d = jVar.c();
+        this.f38564f = jVar;
     }
 
     private void a() {
-        for (int i10 = 0; i10 < this.f39208e.size(); i10++) {
-            this.f39206c.addPath(((m) this.f39208e.get(i10)).r());
+        for (int i10 = 0; i10 < this.f38563e.size(); i10++) {
+            this.f38561c.addPath(((m) this.f38563e.get(i10)).t());
         }
     }
 
     private void c(Path.Op op2) {
-        this.f39205b.reset();
-        this.f39204a.reset();
-        for (int size = this.f39208e.size() - 1; size >= 1; size--) {
-            m mVar = (m) this.f39208e.get(size);
+        this.f38560b.reset();
+        this.f38559a.reset();
+        for (int size = this.f38563e.size() - 1; size >= 1; size--) {
+            m mVar = (m) this.f38563e.get(size);
             if (mVar instanceof d) {
                 d dVar = (d) mVar;
                 List k10 = dVar.k();
                 for (int size2 = k10.size() - 1; size2 >= 0; size2--) {
-                    Path r10 = ((m) k10.get(size2)).r();
-                    r10.transform(dVar.l());
-                    this.f39205b.addPath(r10);
+                    Path t10 = ((m) k10.get(size2)).t();
+                    t10.transform(dVar.l());
+                    this.f38560b.addPath(t10);
                 }
             } else {
-                this.f39205b.addPath(mVar.r());
+                this.f38560b.addPath(mVar.t());
             }
         }
-        m mVar2 = (m) this.f39208e.get(0);
+        m mVar2 = (m) this.f38563e.get(0);
         if (mVar2 instanceof d) {
             d dVar2 = (d) mVar2;
             List k11 = dVar2.k();
             for (int i10 = 0; i10 < k11.size(); i10++) {
-                Path r11 = ((m) k11.get(i10)).r();
-                r11.transform(dVar2.l());
-                this.f39204a.addPath(r11);
+                Path t11 = ((m) k11.get(i10)).t();
+                t11.transform(dVar2.l());
+                this.f38559a.addPath(t11);
             }
         } else {
-            this.f39204a.set(mVar2.r());
+            this.f38559a.set(mVar2.t());
         }
-        this.f39206c.op(this.f39204a, this.f39205b, op2);
+        this.f38561c.op(this.f38559a, this.f38560b, op2);
     }
 
     @Override // n5.c
     public void b(List list, List list2) {
-        for (int i10 = 0; i10 < this.f39208e.size(); i10++) {
-            ((m) this.f39208e.get(i10)).b(list, list2);
+        for (int i10 = 0; i10 < this.f38563e.size(); i10++) {
+            ((m) this.f38563e.get(i10)).b(list, list2);
         }
     }
 
@@ -115,19 +115,19 @@ public class l implements m, j {
         while (listIterator.hasPrevious()) {
             c cVar = (c) listIterator.previous();
             if (cVar instanceof m) {
-                this.f39208e.add((m) cVar);
+                this.f38563e.add((m) cVar);
                 listIterator.remove();
             }
         }
     }
 
     @Override // n5.m
-    public Path r() {
-        this.f39206c.reset();
-        if (this.f39209f.d()) {
-            return this.f39206c;
+    public Path t() {
+        this.f38561c.reset();
+        if (this.f38564f.d()) {
+            return this.f38561c;
         }
-        int i10 = a.f39210a[this.f39209f.b().ordinal()];
+        int i10 = a.f38565a[this.f38564f.b().ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 != 3) {
@@ -147,6 +147,6 @@ public class l implements m, j {
         } else {
             a();
         }
-        return this.f39206c;
+        return this.f38561c;
     }
 }

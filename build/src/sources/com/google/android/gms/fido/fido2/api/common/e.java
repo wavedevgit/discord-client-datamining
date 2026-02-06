@@ -8,7 +8,7 @@ final class e implements Parcelable.Creator {
     @Override // android.os.Parcelable.Creator
     public final /* bridge */ /* synthetic */ Object createFromParcel(Parcel parcel) {
         try {
-            return a.EnumC0178a.a(parcel.readString());
+            return a.EnumC0170a.a(parcel.readString());
         } catch (a.b e10) {
             throw new RuntimeException(e10);
         }
@@ -16,6 +16,6 @@ final class e implements Parcelable.Creator {
 
     @Override // android.os.Parcelable.Creator
     public final /* synthetic */ Object[] newArray(int i10) {
-        return new a.EnumC0178a[i10];
+        return new a.EnumC0170a[i10];
     }
 }

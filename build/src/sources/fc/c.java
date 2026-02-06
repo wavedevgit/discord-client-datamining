@@ -12,49 +12,49 @@ import zb.t;
 public class c implements e {
 
     /* renamed from: f  reason: collision with root package name */
-    private static final Logger f22729f = Logger.getLogger(t.class.getName());
+    private static final Logger f23030f = Logger.getLogger(t.class.getName());
 
     /* renamed from: a  reason: collision with root package name */
-    private final x f22730a;
+    private final x f23031a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Executor f22731b;
+    private final Executor f23032b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ac.e f22732c;
+    private final ac.e f23033c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final hc.d f22733d;
+    private final hc.d f23034d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final ic.b f22734e;
+    private final ic.b f23035e;
 
     public c(Executor executor, ac.e eVar, x xVar, hc.d dVar, ic.b bVar) {
-        this.f22731b = executor;
-        this.f22732c = eVar;
-        this.f22730a = xVar;
-        this.f22733d = dVar;
-        this.f22734e = bVar;
+        this.f23032b = executor;
+        this.f23033c = eVar;
+        this.f23031a = xVar;
+        this.f23034d = dVar;
+        this.f23035e = bVar;
     }
 
     public static /* synthetic */ Object b(c cVar, o oVar, zb.i iVar) {
-        cVar.f22733d.a1(oVar, iVar);
-        cVar.f22730a.b(oVar, 1);
+        cVar.f23034d.Z0(oVar, iVar);
+        cVar.f23031a.b(oVar, 1);
         return null;
     }
 
     public static /* synthetic */ void c(final c cVar, final o oVar, j jVar, zb.i iVar) {
         cVar.getClass();
         try {
-            m a10 = cVar.f22732c.a(oVar.b());
+            m a10 = cVar.f23033c.a(oVar.b());
             if (a10 == null) {
                 String format = String.format("Transport backend '%s' is not registered", oVar.b());
-                f22729f.warning(format);
+                f23030f.warning(format);
                 jVar.a(new IllegalArgumentException(format));
                 return;
             }
             final zb.i a11 = a10.a(iVar);
-            cVar.f22734e.k(new b.a() { // from class: fc.b
+            cVar.f23035e.k(new b.a() { // from class: fc.b
                 @Override // ic.b.a
                 public final Object execute() {
                     return c.b(c.this, oVar, a11);
@@ -62,7 +62,7 @@ public class c implements e {
             });
             jVar.a(null);
         } catch (Exception e10) {
-            Logger logger = f22729f;
+            Logger logger = f23030f;
             logger.warning("Error scheduling event " + e10.getMessage());
             jVar.a(e10);
         }
@@ -70,7 +70,7 @@ public class c implements e {
 
     @Override // fc.e
     public void a(final o oVar, final zb.i iVar, final j jVar) {
-        this.f22731b.execute(new Runnable() { // from class: fc.a
+        this.f23032b.execute(new Runnable() { // from class: fc.a
             @Override // java.lang.Runnable
             public final void run() {
                 c.c(c.this, oVar, jVar, iVar);

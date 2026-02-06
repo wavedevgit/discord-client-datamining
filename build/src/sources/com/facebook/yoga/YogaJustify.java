@@ -10,13 +10,13 @@ public enum YogaJustify {
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f11514d;
+    private final int f11413d;
 
     YogaJustify(int i10) {
-        this.f11514d = i10;
+        this.f11413d = i10;
     }
 
     public int d() {
-        return this.f11514d;
+        return this.f11413d;
     }
 }

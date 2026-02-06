@@ -13,37 +13,37 @@ import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.ranges.d;
 import kotlin.reflect.jvm.internal.impl.metadata.deserialization.MetadataVersion;
 import org.jetbrains.annotations.NotNull;
-import vr.a;
+import xr.a;
 @SourceDebugExtension({"SMAP\nKotlinClassHeader.kt\nKotlin\n*S Kotlin\n*F\n+ 1 KotlinClassHeader.kt\norg/jetbrains/kotlin/load/kotlin/header/KotlinClassHeader\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,75:1\n1#2:76\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class KotlinClassHeader {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Kind f33243a;
+    private final Kind f33263a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final MetadataVersion f33244b;
+    private final MetadataVersion f33264b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String[] f33245c;
+    private final String[] f33265c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String[] f33246d;
+    private final String[] f33266d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String[] f33247e;
+    private final String[] f33267e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final String f33248f;
+    private final String f33268f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final int f33249g;
+    private final int f33269g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final String f33250h;
+    private final String f33270h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final byte[] f33251i;
+    private final byte[] f33271i;
 
     /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
     /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
@@ -54,16 +54,16 @@ public final class KotlinClassHeader {
         public static final Companion Companion;
 
         /* renamed from: e  reason: collision with root package name */
-        private static final Map f33252e;
+        private static final Map f33272e;
 
         /* renamed from: i  reason: collision with root package name */
-        private static final /* synthetic */ Kind[] f33253i;
+        private static final /* synthetic */ Kind[] f33273i;
 
         /* renamed from: o  reason: collision with root package name */
-        private static final /* synthetic */ EnumEntries f33254o;
+        private static final /* synthetic */ EnumEntries f33274o;
 
         /* renamed from: d  reason: collision with root package name */
-        private final int f33255d;
+        private final int f33275d;
         public static final Kind UNKNOWN = new Kind("UNKNOWN", 0, 0);
         public static final Kind CLASS = new Kind("CLASS", 1, 1);
         public static final Kind FILE_FACADE = new Kind("FILE_FACADE", 2, 2);
@@ -79,7 +79,7 @@ public final class KotlinClassHeader {
 
             @NotNull
             public final Kind getById(int i10) {
-                Kind kind = (Kind) Kind.f33252e.get(Integer.valueOf(i10));
+                Kind kind = (Kind) Kind.f33272e.get(Integer.valueOf(i10));
                 if (kind == null) {
                     return Kind.UNKNOWN;
                 }
@@ -92,19 +92,19 @@ public final class KotlinClassHeader {
 
         static {
             Kind[] a10 = a();
-            f33253i = a10;
-            f33254o = a.a(a10);
+            f33273i = a10;
+            f33274o = a.a(a10);
             Companion = new Companion(null);
             Kind[] values = values();
             LinkedHashMap linkedHashMap = new LinkedHashMap(d.d(o0.e(values.length), 16));
             for (Kind kind : values) {
-                linkedHashMap.put(Integer.valueOf(kind.f33255d), kind);
+                linkedHashMap.put(Integer.valueOf(kind.f33275d), kind);
             }
-            f33252e = linkedHashMap;
+            f33272e = linkedHashMap;
         }
 
         private Kind(String str, int i10, int i11) {
-            this.f33255d = i11;
+            this.f33275d = i11;
         }
 
         private static final /* synthetic */ Kind[] a() {
@@ -121,22 +121,22 @@ public final class KotlinClassHeader {
         }
 
         public static Kind[] values() {
-            return (Kind[]) f33253i.clone();
+            return (Kind[]) f33273i.clone();
         }
     }
 
     public KotlinClassHeader(@NotNull Kind kind, @NotNull MetadataVersion metadataVersion, String[] strArr, String[] strArr2, String[] strArr3, String str, int i10, String str2, byte[] bArr) {
         Intrinsics.checkNotNullParameter(kind, "kind");
         Intrinsics.checkNotNullParameter(metadataVersion, "metadataVersion");
-        this.f33243a = kind;
-        this.f33244b = metadataVersion;
-        this.f33245c = strArr;
-        this.f33246d = strArr2;
-        this.f33247e = strArr3;
-        this.f33248f = str;
-        this.f33249g = i10;
-        this.f33250h = str2;
-        this.f33251i = bArr;
+        this.f33263a = kind;
+        this.f33264b = metadataVersion;
+        this.f33265c = strArr;
+        this.f33266d = strArr2;
+        this.f33267e = strArr3;
+        this.f33268f = str;
+        this.f33269g = i10;
+        this.f33270h = str2;
+        this.f33271i = bArr;
     }
 
     private final boolean a(int i10, int i11) {
@@ -144,26 +144,26 @@ public final class KotlinClassHeader {
     }
 
     public final String[] getData() {
-        return this.f33245c;
+        return this.f33265c;
     }
 
     public final String[] getIncompatibleData() {
-        return this.f33246d;
+        return this.f33266d;
     }
 
     @NotNull
     public final Kind getKind() {
-        return this.f33243a;
+        return this.f33263a;
     }
 
     @NotNull
     public final MetadataVersion getMetadataVersion() {
-        return this.f33244b;
+        return this.f33264b;
     }
 
     public final String getMultifileClassName() {
-        String str = this.f33248f;
-        if (this.f33243a == Kind.MULTIFILE_CLASS_PART) {
+        String str = this.f33268f;
+        if (this.f33263a == Kind.MULTIFILE_CLASS_PART) {
             return str;
         }
         return null;
@@ -171,9 +171,9 @@ public final class KotlinClassHeader {
 
     @NotNull
     public final List<String> getMultifilePartNames() {
-        String[] strArr = this.f33245c;
+        String[] strArr = this.f33265c;
         List<String> list = null;
-        if (this.f33243a != Kind.MULTIFILE_CLASS) {
+        if (this.f33263a != Kind.MULTIFILE_CLASS) {
             strArr = null;
         }
         if (strArr != null) {
@@ -186,15 +186,15 @@ public final class KotlinClassHeader {
     }
 
     public final String[] getStrings() {
-        return this.f33247e;
+        return this.f33267e;
     }
 
     public final boolean isPreRelease() {
-        return a(this.f33249g, 2);
+        return a(this.f33269g, 2);
     }
 
     public final boolean isUnstableJvmIrBinary() {
-        if (a(this.f33249g, 16) && !a(this.f33249g, 32)) {
+        if (a(this.f33269g, 16) && !a(this.f33269g, 32)) {
             return true;
         }
         return false;
@@ -202,6 +202,6 @@ public final class KotlinClassHeader {
 
     @NotNull
     public String toString() {
-        return this.f33243a + " version=" + this.f33244b;
+        return this.f33263a + " version=" + this.f33264b;
     }
 }

@@ -18,16 +18,16 @@ public class EmojiCompatInitializer implements a4.a {
     public class a implements DefaultLifecycleObserver {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Lifecycle f4049d;
+        final /* synthetic */ Lifecycle f4378d;
 
         a(Lifecycle lifecycle) {
-            this.f4049d = lifecycle;
+            this.f4378d = lifecycle;
         }
 
         @Override // androidx.lifecycle.DefaultLifecycleObserver
         public void onResume(LifecycleOwner lifecycleOwner) {
             EmojiCompatInitializer.this.c();
-            this.f4049d.d(this);
+            this.f4378d.d(this);
         }
     }
 
@@ -45,44 +45,44 @@ public class EmojiCompatInitializer implements a4.a {
     public static class c implements e.h {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Context f4051a;
+        private final Context f4380a;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         public class a extends e.i {
 
             /* renamed from: a  reason: collision with root package name */
-            final /* synthetic */ e.i f4052a;
+            final /* synthetic */ e.i f4381a;
 
             /* renamed from: b  reason: collision with root package name */
-            final /* synthetic */ ThreadPoolExecutor f4053b;
+            final /* synthetic */ ThreadPoolExecutor f4382b;
 
             a(e.i iVar, ThreadPoolExecutor threadPoolExecutor) {
-                this.f4052a = iVar;
-                this.f4053b = threadPoolExecutor;
+                this.f4381a = iVar;
+                this.f4382b = threadPoolExecutor;
             }
 
             @Override // androidx.emoji2.text.e.i
             public void a(Throwable th2) {
                 try {
-                    this.f4052a.a(th2);
+                    this.f4381a.a(th2);
                 } finally {
-                    this.f4053b.shutdown();
+                    this.f4382b.shutdown();
                 }
             }
 
             @Override // androidx.emoji2.text.e.i
             public void b(m mVar) {
                 try {
-                    this.f4052a.b(mVar);
+                    this.f4381a.b(mVar);
                 } finally {
-                    this.f4053b.shutdown();
+                    this.f4382b.shutdown();
                 }
             }
         }
 
         c(Context context) {
-            this.f4051a = context.getApplicationContext();
+            this.f4380a = context.getApplicationContext();
         }
 
         @Override // androidx.emoji2.text.e.h
@@ -99,7 +99,7 @@ public class EmojiCompatInitializer implements a4.a {
         /* JADX INFO: Access modifiers changed from: package-private */
         public void c(e.i iVar, ThreadPoolExecutor threadPoolExecutor) {
             try {
-                j a10 = androidx.emoji2.text.c.a(this.f4051a);
+                j a10 = androidx.emoji2.text.c.a(this.f4380a);
                 if (a10 != null) {
                     a10.c(threadPoolExecutor);
                     a10.a().a(new a(iVar, threadPoolExecutor));

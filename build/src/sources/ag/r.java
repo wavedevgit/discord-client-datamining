@@ -23,10 +23,10 @@ public final class r implements te.b {
                 int b10 = ((ef.b) k10).b();
                 if (b10 != 43001 && b10 != 43002 && b10 != 43003 && b10 != 17) {
                     if (b10 == 43000) {
-                        return xg.m.e(new Exception("Failed to get app set ID due to an internal error. Please try again later."));
+                        return yg.m.e(new Exception("Failed to get app set ID due to an internal error. Please try again later."));
                     }
                     if (b10 == 15) {
-                        return xg.m.e(new Exception("The operation to get app set ID timed out. Please try again later."));
+                        return yg.m.e(new Exception("The operation to get app set ID timed out. Please try again later."));
                     }
                 } else {
                     return rVar.f624b.g();
@@ -38,8 +38,8 @@ public final class r implements te.b {
 
     @Override // te.b
     public final Task g() {
-        return this.f623a.g().j(new xg.c() { // from class: ag.q
-            @Override // xg.c
+        return this.f623a.g().j(new yg.c() { // from class: ag.q
+            @Override // yg.c
             public final Object a(Task task) {
                 return r.a(r.this, task);
             }

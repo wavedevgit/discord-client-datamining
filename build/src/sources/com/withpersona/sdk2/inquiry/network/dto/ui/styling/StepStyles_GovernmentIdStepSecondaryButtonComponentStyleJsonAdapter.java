@@ -40,24 +40,24 @@ public final class StepStyles_GovernmentIdStepSecondaryButtonComponentStyleJsonA
     @NotNull
     public StepStyles.GovernmentIdStepSecondaryButtonComponentStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         StepStyles.StepCancelButtonComponentStyleContainer stepCancelButtonComponentStyleContainer = null;
         StepStyles.StepCancelButtonComponentStyleContainer stepCancelButtonComponentStyleContainer2 = null;
         StepStyles.StepCancelButtonComponentStyleContainer stepCancelButtonComponentStyleContainer3 = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 stepCancelButtonComponentStyleContainer = (StepStyles.StepCancelButtonComponentStyleContainer) this.nullableStepCancelButtonComponentStyleContainerAdapter.fromJson(reader);
-            } else if (W == 1) {
+            } else if (J == 1) {
                 stepCancelButtonComponentStyleContainer2 = (StepStyles.StepCancelButtonComponentStyleContainer) this.nullableStepCancelButtonComponentStyleContainerAdapter.fromJson(reader);
-            } else if (W == 2) {
+            } else if (J == 2) {
                 stepCancelButtonComponentStyleContainer3 = (StepStyles.StepCancelButtonComponentStyleContainer) this.nullableStepCancelButtonComponentStyleContainerAdapter.fromJson(reader);
             }
         }
-        reader.z();
+        reader.D();
         return new StepStyles.GovernmentIdStepSecondaryButtonComponentStyle(stepCancelButtonComponentStyleContainer, stepCancelButtonComponentStyleContainer2, stepCancelButtonComponentStyleContainer3);
     }
 
@@ -66,13 +66,13 @@ public final class StepStyles_GovernmentIdStepSecondaryButtonComponentStyleJsonA
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (governmentIdStepSecondaryButtonComponentStyle != null) {
             writer.k();
-            writer.W("base");
+            writer.J("base");
             this.nullableStepCancelButtonComponentStyleContainerAdapter.toJson(writer, governmentIdStepSecondaryButtonComponentStyle.getBase());
-            writer.W("cancelDialogResume");
+            writer.J("cancelDialogResume");
             this.nullableStepCancelButtonComponentStyleContainerAdapter.toJson(writer, governmentIdStepSecondaryButtonComponentStyle.getCancelDialogResume());
-            writer.W("retakePhotoButton");
+            writer.J("retakePhotoButton");
             this.nullableStepCancelButtonComponentStyleContainerAdapter.toJson(writer, governmentIdStepSecondaryButtonComponentStyle.getRetakePhotoButton());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

@@ -33,13 +33,13 @@ final class i implements g {
 
     public static i a(long j10, long j11, u.a aVar, h0 h0Var) {
         int L;
-        int i10 = aVar.f39457g;
-        int i11 = aVar.f39454d;
+        int i10 = aVar.f38812g;
+        int i11 = aVar.f38809d;
         int q10 = h0Var.q();
         if ((q10 & 1) == 1 && (L = h0Var.L()) != 0) {
             long X0 = w0.X0(L, i10 * 1000000, i11);
             if ((q10 & 6) != 6) {
-                return new i(j11, aVar.f39453c, X0);
+                return new i(j11, aVar.f38808c, X0);
             }
             long J = h0Var.J();
             long[] jArr = new long[100];
@@ -52,7 +52,7 @@ final class i implements g {
                     y.i("XingSeeker", "XING data size mismatch: " + j10 + ", " + j12);
                 }
             }
-            return new i(j11, aVar.f39453c, X0, J, jArr);
+            return new i(j11, aVar.f38808c, X0, J, jArr);
         }
         return null;
     }

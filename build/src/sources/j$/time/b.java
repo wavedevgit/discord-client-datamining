@@ -1,65 +1,63 @@
 package j$.time;
+
+import j$.time.format.DateTimeFormatterBuilder;
+import j$.time.temporal.TemporalAccessor;
+import j$.time.temporal.TemporalQuery;
+import j$.time.temporal.o;
+import j$.time.temporal.p;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes2.dex */
-public abstract /* synthetic */ class b {
+public final /* synthetic */ class b implements TemporalQuery {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final /* synthetic */ int[] f30430a;
+    public final /* synthetic */ int f29405a;
 
-    /* renamed from: b  reason: collision with root package name */
-    public static final /* synthetic */ int[] f30431b;
+    public /* synthetic */ b(int i10) {
+        this.f29405a = i10;
+    }
 
-    static {
-        int[] iArr = new int[j$.time.temporal.b.values().length];
-        f30431b = iArr;
-        try {
-            iArr[j$.time.temporal.b.NANOS.ordinal()] = 1;
-        } catch (NoSuchFieldError unused) {
-        }
-        try {
-            f30431b[j$.time.temporal.b.MICROS.ordinal()] = 2;
-        } catch (NoSuchFieldError unused2) {
-        }
-        try {
-            f30431b[j$.time.temporal.b.MILLIS.ordinal()] = 3;
-        } catch (NoSuchFieldError unused3) {
-        }
-        try {
-            f30431b[j$.time.temporal.b.SECONDS.ordinal()] = 4;
-        } catch (NoSuchFieldError unused4) {
-        }
-        try {
-            f30431b[j$.time.temporal.b.MINUTES.ordinal()] = 5;
-        } catch (NoSuchFieldError unused5) {
-        }
-        try {
-            f30431b[j$.time.temporal.b.HOURS.ordinal()] = 6;
-        } catch (NoSuchFieldError unused6) {
-        }
-        try {
-            f30431b[j$.time.temporal.b.HALF_DAYS.ordinal()] = 7;
-        } catch (NoSuchFieldError unused7) {
-        }
-        try {
-            f30431b[j$.time.temporal.b.DAYS.ordinal()] = 8;
-        } catch (NoSuchFieldError unused8) {
-        }
-        int[] iArr2 = new int[j$.time.temporal.a.values().length];
-        f30430a = iArr2;
-        try {
-            iArr2[j$.time.temporal.a.NANO_OF_SECOND.ordinal()] = 1;
-        } catch (NoSuchFieldError unused9) {
-        }
-        try {
-            f30430a[j$.time.temporal.a.MICRO_OF_SECOND.ordinal()] = 2;
-        } catch (NoSuchFieldError unused10) {
-        }
-        try {
-            f30430a[j$.time.temporal.a.MILLI_OF_SECOND.ordinal()] = 3;
-        } catch (NoSuchFieldError unused11) {
-        }
-        try {
-            f30430a[j$.time.temporal.a.INSTANT_SECONDS.ordinal()] = 4;
-        } catch (NoSuchFieldError unused12) {
+    @Override // j$.time.temporal.TemporalQuery
+    public final Object queryFrom(TemporalAccessor temporalAccessor) {
+        int i10 = this.f29405a;
+        b bVar = o.f29517a;
+        switch (i10) {
+            case 0:
+                return LocalDate.t(temporalAccessor);
+            case 1:
+                return LocalTime.t(temporalAccessor);
+            case 2:
+                b bVar2 = DateTimeFormatterBuilder.f29428f;
+                j jVar = (j) temporalAccessor.a(bVar);
+                if (jVar == null || (jVar instanceof ZoneOffset)) {
+                    return null;
+                }
+                return jVar;
+            case 3:
+                return (j) temporalAccessor.a(bVar);
+            case 4:
+                return (j$.time.chrono.j) temporalAccessor.a(o.f29518b);
+            case 5:
+                return (p) temporalAccessor.a(o.f29519c);
+            case 6:
+                j$.time.temporal.a aVar = j$.time.temporal.a.OFFSET_SECONDS;
+                if (temporalAccessor.j(aVar)) {
+                    return ZoneOffset.ofTotalSeconds(temporalAccessor.g(aVar));
+                }
+                return null;
+            case 7:
+                j jVar2 = (j) temporalAccessor.a(bVar);
+                return jVar2 != null ? jVar2 : (j) temporalAccessor.a(o.f29520d);
+            case 8:
+                j$.time.temporal.a aVar2 = j$.time.temporal.a.EPOCH_DAY;
+                if (temporalAccessor.j(aVar2)) {
+                    return LocalDate.ofEpochDay(temporalAccessor.m(aVar2));
+                }
+                return null;
+            default:
+                j$.time.temporal.a aVar3 = j$.time.temporal.a.NANO_OF_DAY;
+                if (temporalAccessor.j(aVar3)) {
+                    return LocalTime.x(temporalAccessor.m(aVar3));
+                }
+                return null;
         }
     }
 }

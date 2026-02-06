@@ -54,4 +54,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useAvatarDecorationPreviewSizes = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1464, 6935, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1464, 6940, 2]);

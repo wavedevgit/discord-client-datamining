@@ -7,7 +7,7 @@ import java.util.List;
 final class g2 extends k2 {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Class f14231c = Collections.unmodifiableList(Collections.EMPTY_LIST).getClass();
+    private static final Class f14194c = Collections.unmodifiableList(Collections.EMPTY_LIST).getClass();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ g2(f2 f2Var) {
@@ -21,7 +21,7 @@ final class g2 extends k2 {
         List list = (List) g4.k(obj, j10);
         if (list instanceof e2) {
             unmodifiableList = ((e2) list).k();
-        } else if (!f14231c.isAssignableFrom(list.getClass())) {
+        } else if (!f14194c.isAssignableFrom(list.getClass())) {
             if ((list instanceof c3) && (list instanceof x1)) {
                 x1 x1Var = (x1) list;
                 if (x1Var.a()) {
@@ -49,13 +49,13 @@ final class g2 extends k2 {
             if (list2 instanceof e2) {
                 list2 = new d2(size);
             } else if ((list2 instanceof c3) && (list2 instanceof x1)) {
-                list2 = ((x1) list2).F(size);
+                list2 = ((x1) list2).J(size);
             } else {
                 list2 = new ArrayList(size);
             }
             g4.x(obj, j10, list2);
         } else {
-            if (f14231c.isAssignableFrom(list2.getClass())) {
+            if (f14194c.isAssignableFrom(list2.getClass())) {
                 ArrayList arrayList = new ArrayList(list2.size() + size);
                 arrayList.addAll(list2);
                 g4.x(obj, j10, arrayList);
@@ -68,7 +68,7 @@ final class g2 extends k2 {
             } else if ((list2 instanceof c3) && (list2 instanceof x1)) {
                 x1 x1Var = (x1) list2;
                 if (!x1Var.a()) {
-                    list2 = x1Var.F(list2.size() + size);
+                    list2 = x1Var.J(list2.size() + size);
                     g4.x(obj, j10, list2);
                 }
             }

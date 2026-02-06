@@ -10,10 +10,10 @@ import kotlin.text.StringsKt;
 public final class h {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final a f18918b = new a(null);
+    public static final a f18898b = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final Bundle f18919a;
+    private final Bundle f18899a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -31,11 +31,11 @@ public final class h {
     }
 
     public h(Bundle bundle) {
-        this.f18919a = bundle;
+        this.f18899a = bundle;
     }
 
     public final boolean A() {
-        Bundle bundle = this.f18919a;
+        Bundle bundle = this.f18899a;
         if (bundle == null) {
             return true;
         }
@@ -43,7 +43,7 @@ public final class h {
     }
 
     public final String a() {
-        Bundle bundle = this.f18919a;
+        Bundle bundle = this.f18899a;
         if (bundle != null) {
             return bundle.getString("ACCOUNT_ID_KEY");
         }
@@ -51,7 +51,7 @@ public final class h {
     }
 
     public final boolean b() {
-        Bundle bundle = this.f18919a;
+        Bundle bundle = this.f18899a;
         if (bundle == null) {
             return false;
         }
@@ -59,7 +59,7 @@ public final class h {
     }
 
     public final boolean c() {
-        Bundle bundle = this.f18919a;
+        Bundle bundle = this.f18899a;
         if (bundle == null) {
             return true;
         }
@@ -67,7 +67,7 @@ public final class h {
     }
 
     public final boolean d() {
-        Bundle bundle = this.f18919a;
+        Bundle bundle = this.f18899a;
         if (bundle == null) {
             return true;
         }
@@ -75,16 +75,16 @@ public final class h {
     }
 
     public final boolean e() {
-        Bundle bundle = this.f18919a;
+        Bundle bundle = this.f18899a;
         if (bundle == null) {
             return true;
         }
         return bundle.getBoolean("ENABLE_ERROR_LOGGING", true);
     }
 
-    public final so.f f() {
+    public final uo.f f() {
         String str;
-        Bundle bundle = this.f18919a;
+        Bundle bundle = this.f18899a;
         if (bundle != null) {
             str = bundle.getString("ENVIRONMENT_KEY");
         } else {
@@ -94,17 +94,17 @@ public final class h {
             int hashCode = str.hashCode();
             if (hashCode != -2056856391) {
                 if (hashCode == -1711584601 && str.equals("SANDBOX")) {
-                    return so.f.f50060e;
+                    return uo.f.f51906e;
                 }
             } else if (str.equals("PRODUCTION")) {
-                return so.f.f50059d;
+                return uo.f.f51905d;
             }
         }
-        return so.f.f50059d;
+        return uo.f.f51905d;
     }
 
     public final String g() {
-        Bundle bundle = this.f18919a;
+        Bundle bundle = this.f18899a;
         if (bundle != null) {
             return bundle.getString("ENVIRONMENT_ID_KEY");
         }
@@ -113,7 +113,7 @@ public final class h {
 
     public final FallbackMode h() {
         String str;
-        Bundle bundle = this.f18919a;
+        Bundle bundle = this.f18899a;
         if (bundle != null) {
             str = bundle.getString("FALLBACK_MODE");
         } else {
@@ -138,23 +138,23 @@ public final class h {
 
     public final String i() {
         String string;
-        Bundle bundle = this.f18919a;
+        Bundle bundle = this.f18899a;
         if (bundle == null || (string = bundle.getString("FALLBACK_MODE_SERVER_ENDPOINT", "https://inquiry-fallback.withpersona.com")) == null) {
             return "https://inquiry-fallback.withpersona.com";
         }
         return string;
     }
 
-    public final so.s j() {
-        Bundle bundle = this.f18919a;
+    public final uo.s j() {
+        Bundle bundle = this.f18899a;
         if (bundle != null) {
-            return (so.s) w1.b.a(bundle, "FIELDS_MAP_KEY", so.s.class);
+            return (uo.s) w1.b.a(bundle, "FIELDS_MAP_KEY", uo.s.class);
         }
         return null;
     }
 
     public final boolean k() {
-        Bundle bundle = this.f18919a;
+        Bundle bundle = this.f18899a;
         if (bundle == null) {
             return true;
         }
@@ -162,7 +162,7 @@ public final class h {
     }
 
     public final String l() {
-        Bundle bundle = this.f18919a;
+        Bundle bundle = this.f18899a;
         if (bundle != null) {
             return bundle.getString("INQUIRY_ID_KEY");
         }
@@ -170,7 +170,7 @@ public final class h {
     }
 
     public final String m() {
-        Bundle bundle = this.f18919a;
+        Bundle bundle = this.f18899a;
         if (bundle != null) {
             return bundle.getString("LOCALE");
         }
@@ -178,7 +178,7 @@ public final class h {
     }
 
     public final String n() {
-        Bundle bundle = this.f18919a;
+        Bundle bundle = this.f18899a;
         if (bundle != null) {
             return bundle.getString("ONE_TIME_LINK_CODE");
         }
@@ -186,7 +186,7 @@ public final class h {
     }
 
     public final String o() {
-        Bundle bundle = this.f18919a;
+        Bundle bundle = this.f18899a;
         if (bundle != null) {
             return bundle.getString("REFERENCE_ID_KEY");
         }
@@ -195,7 +195,7 @@ public final class h {
 
     public final String p() {
         String string;
-        Bundle bundle = this.f18919a;
+        Bundle bundle = this.f18899a;
         if (bundle != null && (string = bundle.getString("REQUEST_KEY")) != null) {
             return string;
         }
@@ -203,7 +203,7 @@ public final class h {
     }
 
     public final boolean q() {
-        Bundle bundle = this.f18919a;
+        Bundle bundle = this.f18899a;
         if (bundle == null) {
             return false;
         }
@@ -212,7 +212,7 @@ public final class h {
 
     public final String r() {
         String string;
-        Bundle bundle = this.f18919a;
+        Bundle bundle = this.f18899a;
         if (bundle == null || (string = bundle.getString("SERVER_ENDPOINT", "https://withpersona.com")) == null) {
             return "https://withpersona.com";
         }
@@ -221,7 +221,7 @@ public final class h {
 
     public final String s() {
         String string;
-        Bundle bundle = this.f18919a;
+        Bundle bundle = this.f18899a;
         if (bundle != null && (string = bundle.getString("SESSION_TOKEN_KEY")) != null) {
             return "Bearer " + string;
         }
@@ -229,7 +229,7 @@ public final class h {
     }
 
     public final StaticInquiryTemplate t() {
-        Bundle bundle = this.f18919a;
+        Bundle bundle = this.f18899a;
         if (bundle != null) {
             return (StaticInquiryTemplate) w1.b.a(bundle, "STATIC_INQUIRY_TEMPLATE_KEY", StaticInquiryTemplate.class);
         }
@@ -237,7 +237,7 @@ public final class h {
     }
 
     public final String u() {
-        Bundle bundle = this.f18919a;
+        Bundle bundle = this.f18899a;
         if (bundle != null) {
             return bundle.getString("TEMPLATE_ID_KEY");
         }
@@ -245,7 +245,7 @@ public final class h {
     }
 
     public final String v() {
-        Bundle bundle = this.f18919a;
+        Bundle bundle = this.f18899a;
         if (bundle != null) {
             return bundle.getString("TEMPLATE_VERSION_KEY");
         }
@@ -253,7 +253,7 @@ public final class h {
     }
 
     public final Integer w() {
-        Bundle bundle = this.f18919a;
+        Bundle bundle = this.f18899a;
         if (bundle != null) {
             return Integer.valueOf(bundle.getInt("THEME_KEY"));
         }
@@ -261,7 +261,7 @@ public final class h {
     }
 
     public final String x() {
-        Bundle bundle = this.f18919a;
+        Bundle bundle = this.f18899a;
         if (bundle != null) {
             return bundle.getString("THEME_SET_ID_KEY");
         }
@@ -269,7 +269,7 @@ public final class h {
     }
 
     public final boolean y() {
-        Bundle bundle = this.f18919a;
+        Bundle bundle = this.f18899a;
         if (bundle == null) {
             return true;
         }
@@ -278,7 +278,7 @@ public final class h {
 
     public final String z() {
         String string;
-        Bundle bundle = this.f18919a;
+        Bundle bundle = this.f18899a;
         if (bundle == null || (string = bundle.getString("WEB_RTC_SERVER_ENDPOINT", "https://webrtc-consumer.withpersona.com")) == null) {
             return "https://webrtc-consumer.withpersona.com";
         }

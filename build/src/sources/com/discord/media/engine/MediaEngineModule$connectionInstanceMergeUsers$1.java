@@ -33,7 +33,7 @@ final class MediaEngineModule$connectionInstanceMergeUsers$1 extends kotlin.coro
     @Override // kotlin.coroutines.jvm.internal.a
     public final Object invokeSuspend(Object obj) {
         Object awaitMediaEngine;
-        Object f10 = ur.b.f();
+        Object f10 = wr.b.f();
         int i10 = this.label;
         if (i10 != 0) {
             if (i10 == 1) {
@@ -51,11 +51,11 @@ final class MediaEngineModule$connectionInstanceMergeUsers$1 extends kotlin.coro
             }
         }
         this.this$0.getMediaEngine().connectionInstanceMergeUsers$media_engine_release((int) this.$connectionId, NativeArrayExtensionsKt.toJsonString(this.$users));
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaEngineModule$connectionInstanceMergeUsers$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+        return ((MediaEngineModule$connectionInstanceMergeUsers$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
     }
 }

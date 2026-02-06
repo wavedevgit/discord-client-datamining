@@ -10,13 +10,13 @@ import kotlin.jvm.internal.Intrinsics;
 public final class SubmitDocumentRequest {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f18523c = new a(null);
+    public static final a f18503c = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final Data f18524a;
+    private final Data f18504a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Meta f18525b;
+    private final Meta f18505b;
 
     @i(generateAdapter = true)
     @Metadata(d1 = {"\u0000\u0010\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u000e\n\u0002\b\t\b\u0007\u0018\u00002\u00020\u0001B\u0017\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\u0006\u0010\u0004\u001a\u00020\u0002¢\u0006\u0004\b\u0005\u0010\u0006R\u0017\u0010\u0003\u001a\u00020\u00028\u0006¢\u0006\f\n\u0004\b\u0007\u0010\b\u001a\u0004\b\t\u0010\nR\u0017\u0010\u0004\u001a\u00020\u00028\u0006¢\u0006\f\n\u0004\b\t\u0010\b\u001a\u0004\b\u0007\u0010\n¨\u0006\u000b"}, d2 = {"Lcom/withpersona/sdk2/inquiry/document/network/SubmitDocumentRequest$Meta;", "", "", "fromStep", "fromComponent", "<init>", "(Ljava/lang/String;Ljava/lang/String;)V", "a", "Ljava/lang/String;", "b", "()Ljava/lang/String;", "document_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
@@ -24,24 +24,24 @@ public final class SubmitDocumentRequest {
     public static final class Meta {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f18527a;
+        private final String f18507a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final String f18528b;
+        private final String f18508b;
 
         public Meta(String fromStep, String fromComponent) {
             Intrinsics.checkNotNullParameter(fromStep, "fromStep");
             Intrinsics.checkNotNullParameter(fromComponent, "fromComponent");
-            this.f18527a = fromStep;
-            this.f18528b = fromComponent;
+            this.f18507a = fromStep;
+            this.f18508b = fromComponent;
         }
 
         public final String a() {
-            return this.f18528b;
+            return this.f18508b;
         }
 
         public final String b() {
-            return this.f18527a;
+            return this.f18507a;
         }
     }
 
@@ -64,16 +64,16 @@ public final class SubmitDocumentRequest {
     public SubmitDocumentRequest(Data data, Meta meta) {
         Intrinsics.checkNotNullParameter(data, "data");
         Intrinsics.checkNotNullParameter(meta, "meta");
-        this.f18524a = data;
-        this.f18525b = meta;
+        this.f18504a = data;
+        this.f18505b = meta;
     }
 
     public final Data a() {
-        return this.f18524a;
+        return this.f18504a;
     }
 
     public final Meta b() {
-        return this.f18525b;
+        return this.f18505b;
     }
 
     @i(generateAdapter = true)
@@ -82,15 +82,15 @@ public final class SubmitDocumentRequest {
     public static final class Data {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f18526a;
+        private final String f18506a;
 
         public Data(String type) {
             Intrinsics.checkNotNullParameter(type, "type");
-            this.f18526a = type;
+            this.f18506a = type;
         }
 
         public final String a() {
-            return this.f18526a;
+            return this.f18506a;
         }
 
         public /* synthetic */ Data(String str, int i10, DefaultConstructorMarker defaultConstructorMarker) {

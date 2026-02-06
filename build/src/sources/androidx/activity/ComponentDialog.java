@@ -19,20 +19,20 @@ import kotlin.jvm.internal.Intrinsics;
 public class ComponentDialog extends Dialog implements LifecycleOwner, z, u3.f {
 
     /* renamed from: d  reason: collision with root package name */
-    private LifecycleRegistry f916d;
+    private LifecycleRegistry f1245d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final SavedStateRegistryController f917e;
+    private final SavedStateRegistryController f1246e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final OnBackPressedDispatcher f918i;
+    private final OnBackPressedDispatcher f1247i;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public ComponentDialog(Context context, int i10) {
         super(context, i10);
         Intrinsics.checkNotNullParameter(context, "context");
-        this.f917e = SavedStateRegistryController.f5172c.b(this);
-        this.f918i = new OnBackPressedDispatcher(new Runnable() { // from class: androidx.activity.m
+        this.f1246e = SavedStateRegistryController.f5501c.b(this);
+        this.f1247i = new OnBackPressedDispatcher(new Runnable() { // from class: androidx.activity.m
             @Override // java.lang.Runnable
             public final void run() {
                 ComponentDialog.e(ComponentDialog.this);
@@ -41,10 +41,10 @@ public class ComponentDialog extends Dialog implements LifecycleOwner, z, u3.f {
     }
 
     private final LifecycleRegistry b() {
-        LifecycleRegistry lifecycleRegistry = this.f916d;
+        LifecycleRegistry lifecycleRegistry = this.f1245d;
         if (lifecycleRegistry == null) {
             LifecycleRegistry lifecycleRegistry2 = new LifecycleRegistry(this);
-            this.f916d = lifecycleRegistry2;
+            this.f1245d = lifecycleRegistry2;
             return lifecycleRegistry2;
         }
         return lifecycleRegistry;
@@ -87,17 +87,17 @@ public class ComponentDialog extends Dialog implements LifecycleOwner, z, u3.f {
 
     @Override // androidx.activity.z
     public final OnBackPressedDispatcher getOnBackPressedDispatcher() {
-        return this.f918i;
+        return this.f1247i;
     }
 
     @Override // u3.f
     public SavedStateRegistry getSavedStateRegistry() {
-        return this.f917e.b();
+        return this.f1246e.b();
     }
 
     @Override // android.app.Dialog
     public void onBackPressed() {
-        this.f918i.l();
+        this.f1247i.l();
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -105,12 +105,12 @@ public class ComponentDialog extends Dialog implements LifecycleOwner, z, u3.f {
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         if (Build.VERSION.SDK_INT >= 33) {
-            OnBackPressedDispatcher onBackPressedDispatcher = this.f918i;
+            OnBackPressedDispatcher onBackPressedDispatcher = this.f1247i;
             OnBackInvokedDispatcher onBackInvokedDispatcher = getOnBackInvokedDispatcher();
             Intrinsics.checkNotNullExpressionValue(onBackInvokedDispatcher, "onBackInvokedDispatcher");
             onBackPressedDispatcher.o(onBackInvokedDispatcher);
         }
-        this.f917e.d(bundle);
+        this.f1246e.d(bundle);
         b().j(Lifecycle.a.ON_CREATE);
     }
 
@@ -118,7 +118,7 @@ public class ComponentDialog extends Dialog implements LifecycleOwner, z, u3.f {
     public Bundle onSaveInstanceState() {
         Bundle onSaveInstanceState = super.onSaveInstanceState();
         Intrinsics.checkNotNullExpressionValue(onSaveInstanceState, "super.onSaveInstanceState()");
-        this.f917e.e(onSaveInstanceState);
+        this.f1246e.e(onSaveInstanceState);
         return onSaveInstanceState;
     }
 
@@ -133,7 +133,7 @@ public class ComponentDialog extends Dialog implements LifecycleOwner, z, u3.f {
     @Override // android.app.Dialog
     public void onStop() {
         b().j(Lifecycle.a.ON_DESTROY);
-        this.f916d = null;
+        this.f1245d = null;
         super.onStop();
     }
 

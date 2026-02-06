@@ -17,25 +17,25 @@ import kotlin.text.StringsKt;
 public final class i implements ScheduledExecutorService, AutoCloseable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final ScheduledExecutorService f28664d;
+    private final ScheduledExecutorService f27808d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final k7 f28665e;
+    private final k7 f27809e;
 
     public i(ScheduledExecutorService delegate, k7 options) {
         Intrinsics.checkNotNullParameter(delegate, "delegate");
         Intrinsics.checkNotNullParameter(options, "options");
-        this.f28664d = delegate;
-        this.f28665e = options;
+        this.f27808d = delegate;
+        this.f27809e = options;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final void h(Runnable runnable, i iVar) {
+    public static final void k(Runnable runnable, i iVar) {
         String str;
         try {
             runnable.run();
         } catch (Throwable th2) {
-            ILogger logger = iVar.f28665e.getLogger();
+            ILogger logger = iVar.f27809e.getLogger();
             SentryLevel sentryLevel = SentryLevel.ERROR;
             StringBuilder sb2 = new StringBuilder();
             sb2.append("Failed to execute task ");
@@ -51,7 +51,7 @@ public final class i implements ScheduledExecutorService, AutoCloseable {
 
     @Override // java.util.concurrent.ExecutorService
     public boolean awaitTermination(long j10, TimeUnit timeUnit) {
-        return this.f28664d.awaitTermination(j10, timeUnit);
+        return this.f27808d.awaitTermination(j10, timeUnit);
     }
 
     @Override // java.lang.AutoCloseable
@@ -61,90 +61,90 @@ public final class i implements ScheduledExecutorService, AutoCloseable {
 
     @Override // java.util.concurrent.Executor
     public void execute(Runnable runnable) {
-        this.f28664d.execute(runnable);
+        this.f27808d.execute(runnable);
     }
 
     @Override // java.util.concurrent.ExecutorService
     public List invokeAll(Collection collection) {
-        return this.f28664d.invokeAll(collection);
+        return this.f27808d.invokeAll(collection);
     }
 
     @Override // java.util.concurrent.ExecutorService
     public Object invokeAny(Collection collection) {
-        return this.f28664d.invokeAny(collection);
+        return this.f27808d.invokeAny(collection);
     }
 
     @Override // java.util.concurrent.ExecutorService
     public boolean isShutdown() {
-        return this.f28664d.isShutdown();
+        return this.f27808d.isShutdown();
     }
 
     @Override // java.util.concurrent.ExecutorService
     public boolean isTerminated() {
-        return this.f28664d.isTerminated();
+        return this.f27808d.isTerminated();
     }
 
     @Override // java.util.concurrent.ScheduledExecutorService
     public ScheduledFuture schedule(Runnable runnable, long j10, TimeUnit timeUnit) {
-        return this.f28664d.schedule(runnable, j10, timeUnit);
+        return this.f27808d.schedule(runnable, j10, timeUnit);
     }
 
     @Override // java.util.concurrent.ScheduledExecutorService
     public ScheduledFuture scheduleAtFixedRate(Runnable runnable, long j10, long j11, TimeUnit timeUnit) {
-        return this.f28664d.scheduleAtFixedRate(runnable, j10, j11, timeUnit);
+        return this.f27808d.scheduleAtFixedRate(runnable, j10, j11, timeUnit);
     }
 
     @Override // java.util.concurrent.ScheduledExecutorService
     public ScheduledFuture scheduleWithFixedDelay(Runnable runnable, long j10, long j11, TimeUnit timeUnit) {
-        return this.f28664d.scheduleWithFixedDelay(runnable, j10, j11, timeUnit);
+        return this.f27808d.scheduleWithFixedDelay(runnable, j10, j11, timeUnit);
     }
 
     @Override // java.util.concurrent.ExecutorService
     public void shutdown() {
         synchronized (this) {
             if (!isShutdown()) {
-                this.f28664d.shutdown();
+                this.f27808d.shutdown();
             }
             try {
-                if (!awaitTermination(this.f28665e.getShutdownTimeoutMillis(), TimeUnit.MILLISECONDS)) {
+                if (!awaitTermination(this.f27809e.getShutdownTimeoutMillis(), TimeUnit.MILLISECONDS)) {
                     shutdownNow();
                 }
             } catch (InterruptedException unused) {
                 shutdownNow();
                 Thread.currentThread().interrupt();
             }
-            Unit unit = Unit.f31988a;
+            Unit unit = Unit.f32008a;
         }
     }
 
     @Override // java.util.concurrent.ExecutorService
     public List shutdownNow() {
-        return this.f28664d.shutdownNow();
+        return this.f27808d.shutdownNow();
     }
 
     @Override // java.util.concurrent.ExecutorService
     public Future submit(Runnable runnable, Object obj) {
-        return this.f28664d.submit(runnable, obj);
+        return this.f27808d.submit(runnable, obj);
     }
 
     @Override // java.util.concurrent.ExecutorService
     public List invokeAll(Collection collection, long j10, TimeUnit timeUnit) {
-        return this.f28664d.invokeAll(collection, j10, timeUnit);
+        return this.f27808d.invokeAll(collection, j10, timeUnit);
     }
 
     @Override // java.util.concurrent.ExecutorService
     public Object invokeAny(Collection collection, long j10, TimeUnit timeUnit) {
-        return this.f28664d.invokeAny(collection, j10, timeUnit);
+        return this.f27808d.invokeAny(collection, j10, timeUnit);
     }
 
     @Override // java.util.concurrent.ScheduledExecutorService
     public ScheduledFuture schedule(Callable callable, long j10, TimeUnit timeUnit) {
-        return this.f28664d.schedule(callable, j10, timeUnit);
+        return this.f27808d.schedule(callable, j10, timeUnit);
     }
 
     @Override // java.util.concurrent.ExecutorService
     public Future submit(Callable callable) {
-        return this.f28664d.submit(callable);
+        return this.f27808d.submit(callable);
     }
 
     @Override // java.util.concurrent.ExecutorService
@@ -157,14 +157,14 @@ public final class i implements ScheduledExecutorService, AutoCloseable {
             return null;
         }
         try {
-            return this.f28664d.submit(new Runnable() { // from class: io.sentry.android.replay.util.h
+            return this.f27808d.submit(new Runnable() { // from class: io.sentry.android.replay.util.h
                 @Override // java.lang.Runnable
                 public final void run() {
-                    i.h(task, this);
+                    i.k(task, this);
                 }
             });
         } catch (Throwable th2) {
-            ILogger logger = this.f28665e.getLogger();
+            ILogger logger = this.f27809e.getLogger();
             SentryLevel sentryLevel = SentryLevel.ERROR;
             StringBuilder sb2 = new StringBuilder();
             sb2.append("Failed to submit task ");

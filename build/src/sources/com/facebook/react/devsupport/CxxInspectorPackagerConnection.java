@@ -59,7 +59,7 @@ public final class CxxInspectorPackagerConnection implements IInspectorPackagerC
         public final IWebSocket connectWebSocket(String str, @NotNull WebSocketDelegate delegate) {
             Intrinsics.checkNotNullParameter(delegate, "delegate");
             if (str != null) {
-                final WebSocket E = this.httpClient.E(new Request.Builder().l(str).b(), new CxxInspectorPackagerConnection$DelegateImpl$connectWebSocket$webSocket$1(this, delegate));
+                final WebSocket F = this.httpClient.F(new Request.Builder().l(str).b(), new CxxInspectorPackagerConnection$DelegateImpl$connectWebSocket$webSocket$1(this, delegate));
                 return new IWebSocket() { // from class: com.facebook.react.devsupport.CxxInspectorPackagerConnection$DelegateImpl$connectWebSocket$1
                     @Override // com.facebook.react.devsupport.CxxInspectorPackagerConnection.IWebSocket, java.io.Closeable, java.lang.AutoCloseable
                     public void close() {

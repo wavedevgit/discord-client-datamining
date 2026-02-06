@@ -12,39 +12,39 @@ import org.jetbrains.annotations.NotNull;
 public final class MetadataJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19827a;
+    private final m.b f19807a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f19828b;
+    private final h f19808b;
 
     public MetadataJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("oneTimeLinkCode");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19827a = a10;
+        this.f19807a = a10;
         h f10 = moshi.f(String.class, x0.d(), "oneTimeLinkCode");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19828b = f10;
+        this.f19808b = f10;
     }
 
     @Override // com.squareup.moshi.h
     /* renamed from: a */
     public Metadata fromJson(m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         String str = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.f19827a);
-            if (W != -1) {
-                if (W == 0) {
-                    str = (String) this.f19828b.fromJson(reader);
+            int J = reader.J(this.f19807a);
+            if (J != -1) {
+                if (J == 0) {
+                    str = (String) this.f19808b.fromJson(reader);
                 }
             } else {
                 reader.E0();
-                reader.P();
+                reader.S();
             }
         }
-        reader.z();
+        reader.D();
         return new Metadata(str);
     }
 
@@ -54,9 +54,9 @@ public final class MetadataJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (metadata != null) {
             writer.k();
-            writer.W("oneTimeLinkCode");
-            this.f19828b.toJson(writer, metadata.a());
-            writer.E();
+            writer.J("oneTimeLinkCode");
+            this.f19808b.toJson(writer, metadata.a());
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

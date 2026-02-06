@@ -6,10 +6,10 @@ import ef.a;
 import ff.k;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class i extends a.AbstractC0294a {
-    @Override // ef.a.AbstractC0294a
+public final class i extends a.AbstractC0286a {
+    @Override // ef.a.AbstractC0286a
     public final /* bridge */ /* synthetic */ a.f b(Context context, Looper looper, gf.d commonSettings, Object obj, ff.d connectedListener, k connectionFailedListener) {
-        a.d.C0295a apiOptions = (a.d.C0295a) obj;
+        a.d.C0287a apiOptions = (a.d.C0287a) obj;
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(looper, "looper");
         Intrinsics.checkNotNullParameter(commonSettings, "commonSettings");

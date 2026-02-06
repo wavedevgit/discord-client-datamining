@@ -40,27 +40,27 @@ public final class StepStyles_GovernmentIdStepTextBasedComponentStyleJsonAdapter
     @NotNull
     public StepStyles.GovernmentIdStepTextBasedComponentStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         StepStyles.StepTextBasedComponentStyleContainer stepTextBasedComponentStyleContainer = null;
         StepStyles.StepTextBasedComponentStyleContainer stepTextBasedComponentStyleContainer2 = null;
         StepStyles.StepTextBasedComponentStyleContainer stepTextBasedComponentStyleContainer3 = null;
         StepStyles.StepTextBasedComponentStyleContainer stepTextBasedComponentStyleContainer4 = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 stepTextBasedComponentStyleContainer = (StepStyles.StepTextBasedComponentStyleContainer) this.nullableStepTextBasedComponentStyleContainerAdapter.fromJson(reader);
-            } else if (W == 1) {
+            } else if (J == 1) {
                 stepTextBasedComponentStyleContainer2 = (StepStyles.StepTextBasedComponentStyleContainer) this.nullableStepTextBasedComponentStyleContainerAdapter.fromJson(reader);
-            } else if (W == 2) {
+            } else if (J == 2) {
                 stepTextBasedComponentStyleContainer3 = (StepStyles.StepTextBasedComponentStyleContainer) this.nullableStepTextBasedComponentStyleContainerAdapter.fromJson(reader);
-            } else if (W == 3) {
+            } else if (J == 3) {
                 stepTextBasedComponentStyleContainer4 = (StepStyles.StepTextBasedComponentStyleContainer) this.nullableStepTextBasedComponentStyleContainerAdapter.fromJson(reader);
             }
         }
-        reader.z();
+        reader.D();
         return new StepStyles.GovernmentIdStepTextBasedComponentStyle(stepTextBasedComponentStyleContainer, stepTextBasedComponentStyleContainer2, stepTextBasedComponentStyleContainer3, stepTextBasedComponentStyleContainer4);
     }
 
@@ -69,15 +69,15 @@ public final class StepStyles_GovernmentIdStepTextBasedComponentStyleJsonAdapter
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (governmentIdStepTextBasedComponentStyle != null) {
             writer.k();
-            writer.W("base");
+            writer.J("base");
             this.nullableStepTextBasedComponentStyleContainerAdapter.toJson(writer, governmentIdStepTextBasedComponentStyle.getBase());
-            writer.W("governmentIdVerticalOption");
+            writer.J("governmentIdVerticalOption");
             this.nullableStepTextBasedComponentStyleContainerAdapter.toJson(writer, governmentIdStepTextBasedComponentStyle.getGovernmentIdVerticalOption());
-            writer.W("governmentIdCaptureHintText");
+            writer.J("governmentIdCaptureHintText");
             this.nullableStepTextBasedComponentStyleContainerAdapter.toJson(writer, governmentIdStepTextBasedComponentStyle.getGovernmentIdCaptureHintText());
-            writer.W("governmentIdProcessingText");
+            writer.J("governmentIdProcessingText");
             this.nullableStepTextBasedComponentStyleContainerAdapter.toJson(writer, governmentIdStepTextBasedComponentStyle.getGovernmentIdProcessingText());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

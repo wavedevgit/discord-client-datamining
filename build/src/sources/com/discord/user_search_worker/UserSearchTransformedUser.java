@@ -2,9 +2,9 @@ package com.discord.user_search_worker;
 
 import com.discord.notifications.renderer.NotificationRenderer;
 import com.facebook.react.devsupport.StackTraceHelper;
-import dt.m;
-import ft.e;
-import ft.j;
+import ft.m;
+import ht.e;
+import ht.j;
 import java.util.Map;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -14,8 +14,8 @@ import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.Encoder;
 import org.jetbrains.annotations.NotNull;
-@Metadata(d1 = {"\u0000*\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010$\n\u0002\b\u0017\n\u0002\u0010\b\n\u0002\b\u0004\b\u0081\b\u0018\u0000 &2\u00020\u0001:\u0002%&B]\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\u0003\u0012\u0014\u0010\n\u001a\u0010\u0012\u0004\u0012\u00020\u0003\u0012\u0006\u0012\u0004\u0018\u00010\u00030\u000b¢\u0006\u0004\b\f\u0010\rJ\t\u0010\u0017\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0018\u001a\u00020\u0003HÆ\u0003J\u0010\u0010\u0019\u001a\u0004\u0018\u00010\u0006HÆ\u0003¢\u0006\u0002\u0010\u0011J\u0010\u0010\u001a\u001a\u0004\u0018\u00010\u0006HÆ\u0003¢\u0006\u0002\u0010\u0011J\u000b\u0010\u001b\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u000b\u0010\u001c\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u0017\u0010\u001d\u001a\u0010\u0012\u0004\u0012\u00020\u0003\u0012\u0006\u0012\u0004\u0018\u00010\u00030\u000bHÆ\u0003Jj\u0010\u001e\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00032\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u00062\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u00062\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\u00032\u0016\b\u0002\u0010\n\u001a\u0010\u0012\u0004\u0012\u00020\u0003\u0012\u0006\u0012\u0004\u0018\u00010\u00030\u000bHÆ\u0001¢\u0006\u0002\u0010\u001fJ\u0013\u0010 \u001a\u00020\u00062\b\u0010!\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\"\u001a\u00020#HÖ\u0001J\t\u0010$\u001a\u00020\u0003HÖ\u0001R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u000fR\u0011\u0010\u0004\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u000fR\u0015\u0010\u0005\u001a\u0004\u0018\u00010\u0006¢\u0006\n\n\u0002\u0010\u0012\u001a\u0004\b\u0005\u0010\u0011R\u0015\u0010\u0007\u001a\u0004\u0018\u00010\u0006¢\u0006\n\n\u0002\u0010\u0012\u001a\u0004\b\u0007\u0010\u0011R\u0013\u0010\b\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u000fR\u0013\u0010\t\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0014\u0010\u000fR\u001f\u0010\n\u001a\u0010\u0012\u0004\u0012\u00020\u0003\u0012\u0006\u0012\u0004\u0018\u00010\u00030\u000b¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0016¨\u0006'"}, d2 = {"Lcom/discord/user_search_worker/UserSearchTransformedUser;", "", StackTraceHelper.ID_KEY, "", NotificationRenderer.USERNAME, "isBot", "", "isFriend", "friendNickname", "globalName", "nicknames", "", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V", "getId", "()Ljava/lang/String;", "getUsername", "()Ljava/lang/Boolean;", "Ljava/lang/Boolean;", "getFriendNickname", "getGlobalName", "getNicknames", "()Ljava/util/Map;", "component1", "component2", "component3", "component4", "component5", "component6", "component7", "copy", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)Lcom/discord/user_search_worker/UserSearchTransformedUser;", "equals", "other", "hashCode", "", "toString", "Serializer", "Companion", "user_search_worker_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @m(with = Serializer.class)
+@Metadata(d1 = {"\u0000*\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010$\n\u0002\b\u0017\n\u0002\u0010\b\n\u0002\b\u0004\b\u0081\b\u0018\u0000 &2\u00020\u0001:\u0002%&B]\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\u0003\u0012\u0014\u0010\n\u001a\u0010\u0012\u0004\u0012\u00020\u0003\u0012\u0006\u0012\u0004\u0018\u00010\u00030\u000b¢\u0006\u0004\b\f\u0010\rJ\t\u0010\u0017\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0018\u001a\u00020\u0003HÆ\u0003J\u0010\u0010\u0019\u001a\u0004\u0018\u00010\u0006HÆ\u0003¢\u0006\u0002\u0010\u0011J\u0010\u0010\u001a\u001a\u0004\u0018\u00010\u0006HÆ\u0003¢\u0006\u0002\u0010\u0011J\u000b\u0010\u001b\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u000b\u0010\u001c\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u0017\u0010\u001d\u001a\u0010\u0012\u0004\u0012\u00020\u0003\u0012\u0006\u0012\u0004\u0018\u00010\u00030\u000bHÆ\u0003Jj\u0010\u001e\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00032\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u00062\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u00062\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\u00032\u0016\b\u0002\u0010\n\u001a\u0010\u0012\u0004\u0012\u00020\u0003\u0012\u0006\u0012\u0004\u0018\u00010\u00030\u000bHÆ\u0001¢\u0006\u0002\u0010\u001fJ\u0013\u0010 \u001a\u00020\u00062\b\u0010!\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\"\u001a\u00020#HÖ\u0001J\t\u0010$\u001a\u00020\u0003HÖ\u0001R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u000fR\u0011\u0010\u0004\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u000fR\u0015\u0010\u0005\u001a\u0004\u0018\u00010\u0006¢\u0006\n\n\u0002\u0010\u0012\u001a\u0004\b\u0005\u0010\u0011R\u0015\u0010\u0007\u001a\u0004\u0018\u00010\u0006¢\u0006\n\n\u0002\u0010\u0012\u001a\u0004\b\u0007\u0010\u0011R\u0013\u0010\b\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u000fR\u0013\u0010\t\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0014\u0010\u000fR\u001f\u0010\n\u001a\u0010\u0012\u0004\u0012\u00020\u0003\u0012\u0006\u0012\u0004\u0018\u00010\u00030\u000b¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0016¨\u0006'"}, d2 = {"Lcom/discord/user_search_worker/UserSearchTransformedUser;", "", StackTraceHelper.ID_KEY, "", NotificationRenderer.USERNAME, "isBot", "", "isFriend", "friendNickname", "globalName", "nicknames", "", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V", "getId", "()Ljava/lang/String;", "getUsername", "()Ljava/lang/Boolean;", "Ljava/lang/Boolean;", "getFriendNickname", "getGlobalName", "getNicknames", "()Ljava/util/Map;", "component1", "component2", "component3", "component4", "component5", "component6", "component7", "copy", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)Lcom/discord/user_search_worker/UserSearchTransformedUser;", "equals", "other", "hashCode", "", "toString", "Serializer", "Companion", "user_search_worker_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class UserSearchTransformedUser {
     @NotNull
@@ -25,7 +25,7 @@ public final class UserSearchTransformedUser {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f9830id;
+    private final String f9729id;
     private final Boolean isBot;
     private final Boolean isFriend;
     @NotNull
@@ -59,10 +59,10 @@ public final class UserSearchTransformedUser {
         private Serializer() {
         }
 
-        @Override // kotlinx.serialization.KSerializer, dt.o, kotlinx.serialization.DeserializationStrategy
+        @Override // kotlinx.serialization.KSerializer, ft.o, kotlinx.serialization.DeserializationStrategy
         @NotNull
         public SerialDescriptor getDescriptor() {
-            return j.b("UserSearchTransformedUser", e.i.f23483a);
+            return j.b("UserSearchTransformedUser", e.i.f26478a);
         }
 
         /* JADX WARN: Code restructure failed: missing block: B:16:0x0071, code lost:
@@ -82,7 +82,7 @@ public final class UserSearchTransformedUser {
             throw new UnsupportedOperationException("Method not decompiled: com.discord.user_search_worker.UserSearchTransformedUser.Serializer.deserialize(kotlinx.serialization.encoding.Decoder):com.discord.user_search_worker.UserSearchTransformedUser");
         }
 
-        @Override // dt.o
+        @Override // ft.o
         public void serialize(@NotNull Encoder encoder, @NotNull UserSearchTransformedUser value) {
             Intrinsics.checkNotNullParameter(encoder, "encoder");
             Intrinsics.checkNotNullParameter(value, "value");
@@ -94,7 +94,7 @@ public final class UserSearchTransformedUser {
         Intrinsics.checkNotNullParameter(id2, "id");
         Intrinsics.checkNotNullParameter(username, "username");
         Intrinsics.checkNotNullParameter(nicknames, "nicknames");
-        this.f9830id = id2;
+        this.f9729id = id2;
         this.username = username;
         this.isBot = bool;
         this.isFriend = bool2;
@@ -105,7 +105,7 @@ public final class UserSearchTransformedUser {
 
     public static /* synthetic */ UserSearchTransformedUser copy$default(UserSearchTransformedUser userSearchTransformedUser, String str, String str2, Boolean bool, Boolean bool2, String str3, String str4, Map map, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = userSearchTransformedUser.f9830id;
+            str = userSearchTransformedUser.f9729id;
         }
         if ((i10 & 2) != 0) {
             str2 = userSearchTransformedUser.username;
@@ -135,7 +135,7 @@ public final class UserSearchTransformedUser {
 
     @NotNull
     public final String component1() {
-        return this.f9830id;
+        return this.f9729id;
     }
 
     @NotNull
@@ -178,7 +178,7 @@ public final class UserSearchTransformedUser {
         }
         if (obj instanceof UserSearchTransformedUser) {
             UserSearchTransformedUser userSearchTransformedUser = (UserSearchTransformedUser) obj;
-            return Intrinsics.areEqual(this.f9830id, userSearchTransformedUser.f9830id) && Intrinsics.areEqual(this.username, userSearchTransformedUser.username) && Intrinsics.areEqual(this.isBot, userSearchTransformedUser.isBot) && Intrinsics.areEqual(this.isFriend, userSearchTransformedUser.isFriend) && Intrinsics.areEqual(this.friendNickname, userSearchTransformedUser.friendNickname) && Intrinsics.areEqual(this.globalName, userSearchTransformedUser.globalName) && Intrinsics.areEqual(this.nicknames, userSearchTransformedUser.nicknames);
+            return Intrinsics.areEqual(this.f9729id, userSearchTransformedUser.f9729id) && Intrinsics.areEqual(this.username, userSearchTransformedUser.username) && Intrinsics.areEqual(this.isBot, userSearchTransformedUser.isBot) && Intrinsics.areEqual(this.isFriend, userSearchTransformedUser.isFriend) && Intrinsics.areEqual(this.friendNickname, userSearchTransformedUser.friendNickname) && Intrinsics.areEqual(this.globalName, userSearchTransformedUser.globalName) && Intrinsics.areEqual(this.nicknames, userSearchTransformedUser.nicknames);
         }
         return false;
     }
@@ -193,7 +193,7 @@ public final class UserSearchTransformedUser {
 
     @NotNull
     public final String getId() {
-        return this.f9830id;
+        return this.f9729id;
     }
 
     @NotNull
@@ -207,7 +207,7 @@ public final class UserSearchTransformedUser {
     }
 
     public int hashCode() {
-        int hashCode = ((this.f9830id.hashCode() * 31) + this.username.hashCode()) * 31;
+        int hashCode = ((this.f9729id.hashCode() * 31) + this.username.hashCode()) * 31;
         Boolean bool = this.isBot;
         int hashCode2 = (hashCode + (bool == null ? 0 : bool.hashCode())) * 31;
         Boolean bool2 = this.isFriend;
@@ -228,7 +228,7 @@ public final class UserSearchTransformedUser {
 
     @NotNull
     public String toString() {
-        String str = this.f9830id;
+        String str = this.f9729id;
         String str2 = this.username;
         Boolean bool = this.isBot;
         Boolean bool2 = this.isFriend;

@@ -1,29 +1,15 @@
 package jr;
 
-import android.text.TextPaint;
-import android.text.style.MetricAffectingSpan;
+import ir.l;
+import qv.r;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class d extends MetricAffectingSpan {
-
-    /* renamed from: d  reason: collision with root package name */
-    private final hr.c f31218d;
-
-    public d(hr.c cVar) {
-        this.f31218d = cVar;
-    }
-
-    private void a(TextPaint textPaint) {
-        this.f31218d.c(textPaint);
-    }
-
-    @Override // android.text.style.CharacterStyle
-    public void updateDrawState(TextPaint textPaint) {
-        a(textPaint);
-        textPaint.bgColor = this.f31218d.m(textPaint);
-    }
-
-    @Override // android.text.style.MetricAffectingSpan
-    public void updateMeasureState(TextPaint textPaint) {
-        a(textPaint);
+public class d implements l.c {
+    @Override // ir.l.c
+    public void a(l lVar, r rVar) {
+        lVar.i(rVar);
+        int length = lVar.length();
+        lVar.t(rVar);
+        lVar.b(rVar, length);
+        lVar.c(rVar);
     }
 }

@@ -7,23 +7,23 @@ import kotlin.jvm.internal.Intrinsics;
 public final class y4 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Executor f47211a;
+    private final Executor f46259a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final AtomicInteger f47212b;
+    private final AtomicInteger f46260b;
 
     public y4(Executor executor) {
         Intrinsics.checkNotNullParameter(executor, "executor");
-        this.f47211a = executor;
-        this.f47212b = new AtomicInteger(0);
+        this.f46259a = executor;
+        this.f46260b = new AtomicInteger(0);
     }
 
     public final int a() {
-        return this.f47212b.get();
+        return this.f46260b.get();
     }
 
     public final void b() {
-        this.f47212b.set(0);
+        this.f46260b.set(0);
         x.y0.a("VideoUsageControl", "resetDirectly: mVideoUsage reset!");
     }
 }

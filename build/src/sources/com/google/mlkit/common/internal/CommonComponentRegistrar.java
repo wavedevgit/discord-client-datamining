@@ -2,60 +2,60 @@ package com.google.mlkit.common.internal;
 
 import com.google.firebase.components.ComponentRegistrar;
 import java.util.List;
-import lg.f;
-import rj.c;
-import sj.b;
-import sj.d;
-import sj.i;
-import sj.j;
-import sj.m;
-import ti.c;
-import ti.g;
-import ti.q;
-import tj.a;
+import mg.f;
+import sj.c;
+import tj.b;
+import tj.d;
+import tj.i;
+import tj.j;
+import tj.m;
+import ui.c;
+import ui.g;
+import ui.q;
+import uj.a;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class CommonComponentRegistrar implements ComponentRegistrar {
     @Override // com.google.firebase.components.ComponentRegistrar
     public final List getComponents() {
-        return f.i(m.f49694b, c.c(a.class).b(q.j(i.class)).e(new g() { // from class: pj.a
-            @Override // ti.g
-            public final Object a(ti.d dVar) {
-                return new tj.a((i) dVar.a(i.class));
+        return f.i(m.f50658b, c.c(a.class).b(q.j(i.class)).e(new g() { // from class: qj.a
+            @Override // ui.g
+            public final Object a(ui.d dVar) {
+                return new uj.a((i) dVar.a(i.class));
             }
-        }).d(), c.c(j.class).e(new g() { // from class: pj.b
-            @Override // ti.g
-            public final Object a(ti.d dVar) {
+        }).d(), c.c(j.class).e(new g() { // from class: qj.b
+            @Override // ui.g
+            public final Object a(ui.d dVar) {
                 return new j();
             }
-        }).d(), c.c(rj.c.class).b(q.m(c.a.class)).e(new g() { // from class: pj.c
-            @Override // ti.g
-            public final Object a(ti.d dVar) {
-                return new rj.c(dVar.b(c.a.class));
+        }).d(), c.c(sj.c.class).b(q.m(c.a.class)).e(new g() { // from class: qj.c
+            @Override // ui.g
+            public final Object a(ui.d dVar) {
+                return new sj.c(dVar.b(c.a.class));
             }
-        }).d(), ti.c.c(d.class).b(q.l(j.class)).e(new g() { // from class: pj.d
-            @Override // ti.g
-            public final Object a(ti.d dVar) {
-                return new sj.d(dVar.e(j.class));
+        }).d(), ui.c.c(d.class).b(q.l(j.class)).e(new g() { // from class: qj.d
+            @Override // ui.g
+            public final Object a(ui.d dVar) {
+                return new tj.d(dVar.g(j.class));
             }
-        }).d(), ti.c.c(sj.a.class).e(new g() { // from class: pj.e
-            @Override // ti.g
-            public final Object a(ti.d dVar) {
-                return sj.a.a();
+        }).d(), ui.c.c(tj.a.class).e(new g() { // from class: qj.e
+            @Override // ui.g
+            public final Object a(ui.d dVar) {
+                return tj.a.a();
             }
-        }).d(), ti.c.c(b.class).b(q.j(sj.a.class)).e(new g() { // from class: pj.f
-            @Override // ti.g
-            public final Object a(ti.d dVar) {
-                return new sj.b((sj.a) dVar.a(sj.a.class));
+        }).d(), ui.c.c(b.class).b(q.j(tj.a.class)).e(new g() { // from class: qj.f
+            @Override // ui.g
+            public final Object a(ui.d dVar) {
+                return new tj.b((tj.a) dVar.a(tj.a.class));
             }
-        }).d(), ti.c.c(qj.a.class).b(q.j(i.class)).e(new g() { // from class: pj.g
-            @Override // ti.g
-            public final Object a(ti.d dVar) {
-                return new qj.a((i) dVar.a(i.class));
+        }).d(), ui.c.c(rj.a.class).b(q.j(i.class)).e(new g() { // from class: qj.g
+            @Override // ui.g
+            public final Object a(ui.d dVar) {
+                return new rj.a((i) dVar.a(i.class));
             }
-        }).d(), ti.c.m(c.a.class).b(q.l(qj.a.class)).e(new g() { // from class: pj.h
-            @Override // ti.g
-            public final Object a(ti.d dVar) {
-                return new c.a(rj.a.class, dVar.e(qj.a.class));
+        }).d(), ui.c.m(c.a.class).b(q.l(rj.a.class)).e(new g() { // from class: qj.h
+            @Override // ui.g
+            public final Object a(ui.d dVar) {
+                return new c.a(sj.a.class, dVar.g(rj.a.class));
             }
         }).d());
     }

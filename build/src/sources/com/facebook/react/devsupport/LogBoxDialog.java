@@ -39,8 +39,8 @@ public final class LogBoxDialog extends Dialog {
         Intrinsics.checkNotNullExpressionValue(f10, "getInsets(...)");
         ViewGroup.LayoutParams layoutParams = view.getLayoutParams();
         Intrinsics.checkNotNull(layoutParams, "null cannot be cast to non-null type android.widget.FrameLayout.LayoutParams");
-        ((FrameLayout.LayoutParams) layoutParams).setMargins(f10.f3275a, f10.f3276b, f10.f3277c, f10.f3278d);
-        return WindowInsetsCompat.f3376b;
+        ((FrameLayout.LayoutParams) layoutParams).setMargins(f10.f3604a, f10.f3605b, f10.f3606c, f10.f3607d);
+        return WindowInsetsCompat.f3705b;
     }
 
     /* JADX INFO: Access modifiers changed from: private */

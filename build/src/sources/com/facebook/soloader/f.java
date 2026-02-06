@@ -9,13 +9,13 @@ import java.util.List;
 public class f extends e0 {
 
     /* renamed from: a  reason: collision with root package name */
-    protected final File f11426a;
+    protected final File f11325a;
 
     /* renamed from: b  reason: collision with root package name */
-    protected int f11427b;
+    protected int f11326b;
 
     /* renamed from: c  reason: collision with root package name */
-    protected final List f11428c;
+    protected final List f11327c;
 
     public f(File file, int i10) {
         this(file, i10, new String[0]);
@@ -28,11 +28,11 @@ public class f extends e0 {
 
     @Override // com.facebook.soloader.e0
     public int d(String str, int i10, StrictMode.ThreadPolicy threadPolicy) {
-        return g(str, i10, this.f11426a, threadPolicy);
+        return g(str, i10, this.f11325a, threadPolicy);
     }
 
     public File f(String str) {
-        File file = new File(this.f11426a, str);
+        File file = new File(this.f11325a, str);
         if (file.exists()) {
             return file;
         }
@@ -40,8 +40,8 @@ public class f extends e0 {
     }
 
     protected int g(String str, int i10, File file, StrictMode.ThreadPolicy threadPolicy) {
-        if (SoLoader.f11400b != null) {
-            if (this.f11428c.contains(str)) {
+        if (SoLoader.f11299b != null) {
+            if (this.f11327c.contains(str)) {
                 p.a("SoLoader", str + " is on the denyList, skip loading from " + file.getCanonicalPath());
                 return 0;
             }
@@ -52,11 +52,11 @@ public class f extends e0 {
             }
             String canonicalPath = f10.getCanonicalPath();
             p.a("SoLoader", str + " file found at " + canonicalPath);
-            if ((i10 & 1) != 0 && (this.f11427b & 2) != 0) {
+            if ((i10 & 1) != 0 && (this.f11326b & 2) != 0) {
                 p.a("SoLoader", str + " loaded implicitly");
                 return 2;
             }
-            if ((this.f11427b & 1) != 0) {
+            if ((this.f11326b & 1) != 0) {
                 i iVar = new i(f10);
                 try {
                     t.h(str, iVar, i10, threadPolicy);
@@ -73,7 +73,7 @@ public class f extends e0 {
                 p.a("SoLoader", "Not resolving dependencies for " + str);
             }
             try {
-                SoLoader.f11400b.a(canonicalPath, i10);
+                SoLoader.f11299b.a(canonicalPath, i10);
                 return 1;
             } catch (UnsatisfiedLinkError e10) {
                 throw d0.b(str, e10);
@@ -83,23 +83,23 @@ public class f extends e0 {
     }
 
     public void h() {
-        this.f11427b |= 1;
+        this.f11326b |= 1;
     }
 
     @Override // com.facebook.soloader.e0
     public String toString() {
         String name;
         try {
-            name = String.valueOf(this.f11426a.getCanonicalPath());
+            name = String.valueOf(this.f11325a.getCanonicalPath());
         } catch (IOException unused) {
-            name = this.f11426a.getName();
+            name = this.f11325a.getName();
         }
-        return c() + "[root = " + name + " flags = " + this.f11427b + ']';
+        return c() + "[root = " + name + " flags = " + this.f11326b + ']';
     }
 
     public f(File file, int i10, String[] strArr) {
-        this.f11426a = file;
-        this.f11427b = i10;
-        this.f11428c = Arrays.asList(strArr);
+        this.f11325a = file;
+        this.f11326b = i10;
+        this.f11327c = Arrays.asList(strArr);
     }
 }

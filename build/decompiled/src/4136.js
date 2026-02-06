@@ -1,265 +1,271 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var2 = exports;
-    var0 = require;
-    var _closure1_slot0 = var0;
-    var0 = dependencyMap;
-    var _closure1_slot1 = var0;
-    var0 = global;
-    var5 = var0.Object;
-    var4 = var5.defineProperty;
-    var3 = {};
-    var0 = true;
-    var3.value = var0;
-    var0 = '__esModule';
-    var0 = var4.bind(var5)(var2, var0, var3);
-    var0 = undefined;
-    var2.detectFile = var0;
-    var1 = function arg0, arg1() {
-        _fun37835: for (var _fun37835_ip = 0;;) switch (_fun37835_ip) {
-            case 0:
-                var1 = arg1;
-                if (!var1) {
-                    _fun37835_ip = 88;
-                    continue _fun37835
-                }
-            case 8:
-                var0 = global;
-                var2 = var0.Object;
-                var2 = var2.prototype;
-                var5 = var2.hasOwnProperty;
-                var4 = var5.call;
-                var2 = 'chunkSize';
-                var2 = var4.bind(var5)(var1, var2);
-                if (!var2) {
-                    _fun37835_ip = 88;
-                    continue _fun37835
-                }
-            case 45:
-                var7 = null;
-                var2 = var7 == var1;
-                var6 = undefined;
-                var5 = undefined;
-                if (var2) {
-                    _fun37835_ip = 64;
-                    continue _fun37835
-                }
-            case 58:
-                var5 = var1.chunkSize;
-            case 64:
-                var4 = 0;
-                var2 = 0;
-                if (!(var7 !== var5)) {
-                    _fun37835_ip = 81;
-                    continue _fun37835
-                }
-            case 72:
-                var2 = 0;
-                if (!(var6 !== var5)) {
-                    _fun37835_ip = 81;
-                    continue _fun37835
-                }
-            case 78:
-                var2 = var5;
-            case 81:
-                if (!(!(var2 <= var4))) {
-                    _fun37835_ip = 655;
-                    continue _fun37835
-                }
-            case 88:
-                var7 = _closure1_slot0;
-                var4 = _closure1_slot1;
-                var2 = 0;
-                var6 = var4[var2];
-                var4 = undefined;
-                var6 = var7.bind(var4)(var6);
-                var7 = var6.getFileChunk;
-                var6 = null;
-                var8 = var6 == var1;
-                var6 = undefined;
-                if (var8) {
-                    _fun37835_ip = 135;
-                    continue _fun37835
-                }
-            case 129:
-                var6 = var1.chunkSize;
-            case 135:
-                if (var6) {
-                    _fun37835_ip = 141;
-                    continue _fun37835
-                }
-            case 138:
-                var6 = 64;
-            case 141:
-                var1 = arg0;
-                var7 = var7.bind(var4)(var1, var6);
-                var1 = var7.length;
-                if (!(var2 !== var1)) {
-                    _fun37835_ip = 630;
-                    continue _fun37835
-                }
-            case 162:
-                var1 = new Array(0);
-                var6 = new Array(0);
-                var10 = _closure1_slot0;
-                var9 = _closure1_slot1;
-                var8 = 1;
-                var9 = var9[var8];
-                var9 = var10.bind(var4)(var9);
-                var15 = var9.FileTypes;
-                var11 = global;
-                var10 = undefined;
-                var9 = undefined;
-                for (var12 in var15)
-                    case 213: {
-                        case 225: var22 = var12;
-                        var17 = var11.Object;
-                        var17 = var17.prototype;
-                        var19 = var17.hasOwnProperty;
-                        var18 = var19.call;
-                        var20 = _closure1_slot0;
-                        var17 = _closure1_slot1;
-                        var17 = var17[var8];
-                        var17 = var20.bind(var4)(var17);
-                        var17 = var17.FileTypes;
-                        var17 = var18.bind(var19)(var17, var22);
-                        if (!var17) {
-                            _fun37835_ip = 213;
-                            continue _fun37835
+    _fun37827: for (var _fun37827_ip = 0;;) switch (_fun37827_ip) {
+        case 0:
+            var3 = require;
+            var4 = dependencyMap;
+            var1 = this;
+            var2 = var1;
+            if (!var1) {
+                _fun37827_ip = 23;
+                continue _fun37827
+            }
+        case 17:
+            var2 = var1.__createBinding;
+        case 23:
+            if (var2) {
+                _fun37827_ip = 57;
+                continue _fun37827
+            }
+        case 26:
+            var5 = global;
+            var5 = var5.Object;
+            var5 = var5.create;
+            if (var5) {
+                _fun37827_ip = 49;
+                continue _fun37827
+            }
+        case 42:
+            var5 = function(arg0, arg1, arg2, arg3) { // Environment: var0
+                _fun37830: for (var _fun37830_ip = 0;;) switch (_fun37830_ip) {
+                    case 0:
+                        var2 = arg2;
+                        var3 = arg3;
+                        var0 = undefined;
+                        if (!(var0 === var3)) {
+                            _fun37830_ip = 15;
+                            continue _fun37830
                         }
-                        case 282: var18 = _closure1_slot0;
-                        var17 = _closure1_slot1;
-                        var19 = var17[var8];
-                        var19 = var18.bind(var4)(var19);
-                        var20 = var19.FileTypes;
-                        var19 = var20.getSignaturesByName;
-                        var19 = var19.bind(var20)(var22);
-                        var17 = var17[var8];
-                        var17 = var18.bind(var4)(var17);
-                        var18 = var17.FileTypes;
-                        var17 = var18.detectbBySignatures;
-                        var18 = var17.bind(var18)(var7, var19);
-                        var10 = var18;
-                        if (!var18) {
-                            _fun37835_ip = 213;
-                            continue _fun37835
+                    case 12:
+                        var3 = var2;
+                    case 15:
+                        var1 = arg1;
+                        var2 = var1[var2];
+                        var1 = arg0;
+                        var1[var3] = var2;
+                        return var0;
+                }
+            };
+            _fun37827_ip = 54;
+            continue _fun37827;
+        case 49:
+            var5 = function(arg0, arg1, arg2, arg3) { // Environment: var0
+                _fun37828: for (var _fun37828_ip = 0;;) switch (_fun37828_ip) {
+                    case 0:
+                        var7 = arg1;
+                        var6 = arg2;
+                        var5 = arg3;
+                        var _closure2_slot0 = var7;
+                        var _closure2_slot1 = var6;
+                        var0 = undefined;
+                        if (!(var0 === var5)) {
+                            _fun37828_ip = 28;
+                            continue _fun37828
                         }
-                        case 354: var20 = _closure1_slot0;
-                        var19 = _closure1_slot1;
-                        var17 = var19[var8];
-                        var17 = var20.bind(var4)(var17);
-                        var21 = var17.FileTypes;
-                        var17 = var21.getInfoByName;
-                        var17 = var17.bind(var21)(var22);
-                        var19 = var19[var8];
-                        var19 = var20.bind(var4)(var19);
-                        var21 = var19.FILE_TYPES_REQUIRED_ADDITIONAL_CHECK;
-                        var20 = var21.includes;
-                        var19 = var17.extension;
-                        var19 = var20.bind(var21)(var19);
-                        if (!var19) {
-                            _fun37835_ip = 438;
-                            continue _fun37835
+                    case 25:
+                        var5 = var6;
+                    case 28:
+                        var1 = global;
+                        var4 = var1.Object;
+                        var2 = var4.getOwnPropertyDescriptor;
+                        var4 = var2.bind(var4)(var7, var6);
+                        var2 = var4;
+                        if (!var4) {
+                            _fun37828_ip = 94;
+                            continue _fun37828
                         }
-                        case 422: var20 = var6.push;
-                        var19 = var17.extension;
-                        var19 = var20.bind(var6)(var19);
-                        case 438: var20 = {};
-                        var19 = var17.extension;
-                        var20.extension = var19;
-                        var19 = var17.mimeType;
-                        var20.mimeType = var19;
-                        var19 = var17.description;
-                        var20.description = var19;
-                        var23 = var11.Object;
-                        var22 = var23.assign;
-                        var24 = var11.Object;
-                        var21 = var24.assign;
-                        var19 = {};
-                        var21 = var21.bind(var24)(var19, var18);
-                        var19 = {};
-                        var26 = var18.sequence;
-                        var25 = var26.map;
-                        var24 = function(arg0) { // Environment: var3
-                            var2 = arg0;
-                            var1 = var2.toString;
-                            var0 = 16;
-                            var0 = var1.bind(var2)(var0);
+                    case 54:
+                        var6 = 'get';
+                        var6 = var6 in var4;
+                        if (var6) {
+                            _fun37828_ip = 82;
+                            continue _fun37828
+                        }
+                    case 65:
+                        var6 = var4.writable;
+                        if (var6) {
+                            _fun37828_ip = 80;
+                            continue _fun37828
+                        }
+                    case 74:
+                        var6 = var4.configurable;
+                    case 80:
+                        _fun37828_ip = 91;
+                        continue _fun37828;
+                    case 82:
+                        var7 = var7.__esModule;
+                        var6 = !var7;
+                    case 91:
+                        var2 = !var6;
+                    case 94:
+                        if (var2) {
+                            _fun37828_ip = 117;
+                            continue _fun37828
+                        }
+                    case 97:
+                        var2 = {};
+                        var6 = true;
+                        var2.enumerable = var6;
+                        var3 = function() {
+                            var1 = _closure2_slot0;
+                            var0 = _closure2_slot1;
+                            var0 = var1[var0];
                             return var0;
                         };
-                        var24 = var25.bind(var26)(var24);
-                        var19.sequence = var24;
-                        var19 = var22.bind(var23)(var21, var19);
-                        var20.signature = var19;
-                        var19 = var1.push;
-                        var19 = var19.bind(var1)(var20);
-                        var10 = var18;
-                        var9 = var17;
-                        _fun37835_ip = 213;
-                        continue _fun37835;
-                    }
-            case 561:
-                var9 = var1.length;
-                if (!(var2 !== var9)) {
-                    _fun37835_ip = 630;
-                    continue _fun37835
+                        var2.get = var3;
+                        var4 = var2;
+                    case 117:
+                        var3 = var1.Object;
+                        var2 = var3.defineProperty;
+                        var1 = arg0;
+                        var1 = var2.bind(var3)(var1, var5, var4);
+                        return var0;
                 }
-            case 570:
-                var9 = var1.length;
-                if (!(var8 === var9)) {
-                    _fun37835_ip = 588;
-                    continue _fun37835
+            };
+        case 54:
+            var2 = var5;
+        case 57:
+            var _closure1_slot0 = var2;
+            var2 = var1;
+            if (!var1) {
+                _fun37827_ip = 73;
+                continue _fun37827
+            }
+        case 67:
+            var2 = var1.__setModuleDefault;
+        case 73:
+            if (var2) {
+                _fun37827_ip = 107;
+                continue _fun37827
+            }
+        case 76:
+            var5 = global;
+            var5 = var5.Object;
+            var5 = var5.create;
+            if (var5) {
+                _fun37827_ip = 99;
+                continue _fun37827
+            }
+        case 92:
+            var5 = function(arg0, arg1) { // Environment: var0
+                var1 = arg1;
+                var0 = arg0;
+                var0.default = var1;
+                var0 = undefined;
+                return var0;
+            };
+            _fun37827_ip = 104;
+            continue _fun37827;
+        case 99:
+            var5 = function(arg0, arg1) { // Environment: var0
+                var0 = global;
+                var4 = var0.Object;
+                var3 = var4.defineProperty;
+                var2 = {};
+                var0 = true;
+                var2.enumerable = var0;
+                var0 = arg1;
+                var2.value = var0;
+                var1 = arg0;
+                var0 = 'default';
+                var0 = var3.bind(var4)(var1, var0, var2);
+                var0 = undefined;
+                return var0;
+            };
+        case 104:
+            var2 = var5;
+        case 107:
+            var _closure1_slot1 = var2;
+            var2 = var1;
+            if (!var2) {
+                _fun37827_ip = 123;
+                continue _fun37827
+            }
+        case 117:
+            var2 = var1.__importStar;
+        case 123:
+            if (var2) {
+                _fun37827_ip = 131;
+                continue _fun37827
+            }
+        case 126:
+            var2 = function(arg0) { // Environment: var0
+                _fun37833: for (var _fun37833_ip = 0;;) switch (_fun37833_ip) {
+                    case 0:
+                        var0 = arg0;
+                        if (!var0) {
+                            _fun37833_ip = 15;
+                            continue _fun37833
+                        }
+                    case 6:
+                        var1 = var0.__esModule;
+                        if (var1) {
+                            _fun37833_ip = 125;
+                            continue _fun37833
+                        }
+                    case 15:
+                        var1 = {};
+                        var2 = null;
+                        if (!(var2 != var0)) {
+                            _fun37833_ip = 108;
+                            continue _fun37833
+                        }
+                    case 23:
+                        var9 = var0;
+                        var4 = undefined;
+                        var3 = global;
+                        var2 = 'default';
+                        for (var6 in var9)
+                            case 45: {
+                                case 54: var12 = var6;
+                                var11 = var2 !== var12;
+                                if (!var11) {
+                                    _fun37833_ip = 92;
+                                    continue _fun37833
+                                }
+                                case 64: var13 = var3.Object;
+                                var13 = var13.prototype;
+                                var14 = var13.hasOwnProperty;
+                                var13 = var14.call;
+                                var11 = var13.bind(var14)(var0, var12);
+                                case 92: if (!var11) {
+                                    _fun37833_ip = 45;
+                                    continue _fun37833
+                                }
+                                case 95: var11 = _closure1_slot0;
+                                var11 = var11.bind(var4)(var1, var0, var12);
+                                _fun37833_ip = 45;
+                                continue _fun37833;
+                            }
+                    case 108:
+                        var3 = _closure1_slot1;
+                        var2 = undefined;
+                        var2 = var3.bind(var2)(var1, var0);
+                        return var1;
+                    case 125:
+                        return var0;
                 }
-            case 579:
-                var6 = var6.length;
-                if (!(var2 !== var6)) {
-                    _fun37835_ip = 649;
-                    continue _fun37835
-                }
-            case 588:
-                var6 = _closure1_slot0;
-                var5 = _closure1_slot1;
-                var5 = var5[var8];
-                var5 = var6.bind(var4)(var5);
-                var6 = var5.FileTypes;
-                var5 = var6.detectTypeByAdditionalCheck;
-                var5 = var5.bind(var6)(var7, var1);
-                var _closure2_slot0 = var5;
-                if (var5) {
-                    _fun37835_ip = 632;
-                    continue _fun37835
-                }
-            case 630:
-                return var4;
-            case 632:
-                var4 = var1.find;
-                var3 = function(arg0) { // Environment: var3
-                    var0 = arg0;
-                    var1 = var0.extension;
-                    var0 = _closure2_slot0;
-                    var0 = var1 === var0;
-                    return var0;
-                };
-                var3 = var4.bind(var1)(var3);
-                return var3;
-            case 649:
-                var1 = var1[var2];
-                return var1;
-            case 655:
-                var2 = var0.RangeError;
-                var0 = var2.prototype;
-                var1 = Object.create(var0, {
-                    constructor: {
-                        value: var2
-                    }
-                });
-                var28 = 'chunkSize must be bigger than zero';
-                var29 = var1;
-                var0 = new var29[var2](var28, var27);
-                var0 = var0 instanceof Object ? var0 : var1;
-                throw var0;
-        }
-    };
-    var2.detectFile = var1;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4137, 4138]);
+            };
+        case 131:
+            var0 = 0;
+            var1 = var4[var0];
+            var0 = undefined;
+            var1 = var3.bind(var0)(var1);
+            var7 = var2.bind(var0)(var1);
+            var1 = 1;
+            var1 = var4[var1];
+            var1 = var3.bind(var0)(var1);
+            var4 = var2.bind(var0)(var1);
+            var1 = global;
+            var3 = var1.Object;
+            var2 = var3.assign;
+            var6 = var1.Object;
+            var5 = var6.assign;
+            var1 = {};
+            var1 = var5.bind(var6)(var1, var7);
+            var2 = var2.bind(var3)(var1, var4);
+            var1 = arg4;
+            var1.exports = var2;
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4137, 4141]);

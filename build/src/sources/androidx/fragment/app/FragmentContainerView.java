@@ -25,22 +25,22 @@ import org.jetbrains.annotations.NotNull;
 public final class FragmentContainerView extends FrameLayout {
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f4198d;
+    private final List f4527d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final List f4199e;
+    private final List f4528e;
 
     /* renamed from: i  reason: collision with root package name */
-    private View.OnApplyWindowInsetsListener f4200i;
+    private View.OnApplyWindowInsetsListener f4529i;
 
     /* renamed from: o  reason: collision with root package name */
-    private boolean f4201o;
+    private boolean f4530o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final a f4202a = new a();
+        public static final a f4531a = new a();
 
         private a() {
         }
@@ -62,8 +62,8 @@ public final class FragmentContainerView extends FrameLayout {
     }
 
     private final void a(View view) {
-        if (this.f4199e.contains(view)) {
-            this.f4198d.add(view);
+        if (this.f4528e.contains(view)) {
+            this.f4527d.add(view);
         }
     }
 
@@ -83,9 +83,9 @@ public final class FragmentContainerView extends FrameLayout {
         Intrinsics.checkNotNullParameter(insets, "insets");
         WindowInsetsCompat C = WindowInsetsCompat.C(insets);
         Intrinsics.checkNotNullExpressionValue(C, "toWindowInsetsCompat(insets)");
-        View.OnApplyWindowInsetsListener onApplyWindowInsetsListener = this.f4200i;
+        View.OnApplyWindowInsetsListener onApplyWindowInsetsListener = this.f4529i;
         if (onApplyWindowInsetsListener != null) {
-            a aVar = a.f4202a;
+            a aVar = a.f4531a;
             Intrinsics.checkNotNull(onApplyWindowInsetsListener);
             Z = WindowInsetsCompat.C(aVar.a(onApplyWindowInsetsListener, this, insets));
         } else {
@@ -104,8 +104,8 @@ public final class FragmentContainerView extends FrameLayout {
     @Override // android.view.ViewGroup, android.view.View
     protected void dispatchDraw(Canvas canvas) {
         Intrinsics.checkNotNullParameter(canvas, "canvas");
-        if (this.f4201o) {
-            for (View view : this.f4198d) {
+        if (this.f4530o) {
+            for (View view : this.f4527d) {
                 super.drawChild(canvas, view, getDrawingTime());
             }
         }
@@ -116,7 +116,7 @@ public final class FragmentContainerView extends FrameLayout {
     protected boolean drawChild(Canvas canvas, View child, long j10) {
         Intrinsics.checkNotNullParameter(canvas, "canvas");
         Intrinsics.checkNotNullParameter(child, "child");
-        if (this.f4201o && !this.f4198d.isEmpty() && this.f4198d.contains(child)) {
+        if (this.f4530o && !this.f4527d.isEmpty() && this.f4527d.contains(child)) {
             return false;
         }
         return super.drawChild(canvas, child, j10);
@@ -125,9 +125,9 @@ public final class FragmentContainerView extends FrameLayout {
     @Override // android.view.ViewGroup
     public void endViewTransition(View view) {
         Intrinsics.checkNotNullParameter(view, "view");
-        this.f4199e.remove(view);
-        if (this.f4198d.remove(view)) {
-            this.f4201o = true;
+        this.f4528e.remove(view);
+        if (this.f4527d.remove(view)) {
+            this.f4530o = true;
         }
         super.endViewTransition(view);
     }
@@ -203,7 +203,7 @@ public final class FragmentContainerView extends FrameLayout {
     }
 
     public final void setDrawDisappearingViewsLast(boolean z10) {
-        this.f4201o = z10;
+        this.f4530o = z10;
     }
 
     @Override // android.view.ViewGroup
@@ -213,14 +213,14 @@ public final class FragmentContainerView extends FrameLayout {
 
     @Override // android.view.View
     public void setOnApplyWindowInsetsListener(View.OnApplyWindowInsetsListener onApplyWindowInsetsListener) {
-        this.f4200i = onApplyWindowInsetsListener;
+        this.f4529i = onApplyWindowInsetsListener;
     }
 
     @Override // android.view.ViewGroup
     public void startViewTransition(View view) {
         Intrinsics.checkNotNullParameter(view, "view");
         if (view.getParent() == this) {
-            this.f4199e.add(view);
+            this.f4528e.add(view);
         }
         super.startViewTransition(view);
     }
@@ -234,16 +234,16 @@ public final class FragmentContainerView extends FrameLayout {
         super(context, attributeSet, i10);
         String str;
         Intrinsics.checkNotNullParameter(context, "context");
-        this.f4198d = new ArrayList();
-        this.f4199e = new ArrayList();
-        this.f4201o = true;
+        this.f4527d = new ArrayList();
+        this.f4528e = new ArrayList();
+        this.f4530o = true;
         if (attributeSet != null) {
             String classAttribute = attributeSet.getClassAttribute();
-            int[] FragmentContainerView = f3.c.f22179e;
+            int[] FragmentContainerView = f3.c.f22480e;
             Intrinsics.checkNotNullExpressionValue(FragmentContainerView, "FragmentContainerView");
             TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, FragmentContainerView, 0, 0);
             if (classAttribute == null) {
-                classAttribute = obtainStyledAttributes.getString(f3.c.f22180f);
+                classAttribute = obtainStyledAttributes.getString(f3.c.f22481f);
                 str = "android:name";
             } else {
                 str = "class";
@@ -263,15 +263,15 @@ public final class FragmentContainerView extends FrameLayout {
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(attrs, "attrs");
         Intrinsics.checkNotNullParameter(fm2, "fm");
-        this.f4198d = new ArrayList();
-        this.f4199e = new ArrayList();
-        this.f4201o = true;
+        this.f4527d = new ArrayList();
+        this.f4528e = new ArrayList();
+        this.f4530o = true;
         String classAttribute = attrs.getClassAttribute();
-        int[] FragmentContainerView = f3.c.f22179e;
+        int[] FragmentContainerView = f3.c.f22480e;
         Intrinsics.checkNotNullExpressionValue(FragmentContainerView, "FragmentContainerView");
         TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attrs, FragmentContainerView, 0, 0);
-        classAttribute = classAttribute == null ? obtainStyledAttributes.getString(f3.c.f22180f) : classAttribute;
-        String string = obtainStyledAttributes.getString(f3.c.f22181g);
+        classAttribute = classAttribute == null ? obtainStyledAttributes.getString(f3.c.f22481f) : classAttribute;
+        String string = obtainStyledAttributes.getString(f3.c.f22482g);
         obtainStyledAttributes.recycle();
         int id2 = getId();
         Fragment n02 = fm2.n0(id2);

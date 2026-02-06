@@ -1,560 +1,340 @@
 package un;
 
-import android.view.View;
-import kotlin.Result;
-import kotlin.Unit;
-import kotlin.coroutines.Continuation;
-import kotlin.jvm.functions.Function2;
-import kotlin.jvm.functions.Function3;
+import androidx.recyclerview.widget.RecyclerView;
+import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
+import com.facebook.react.views.textinput.ReactEditTextInputConnectionWrapper;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.List;
+import java.util.Locale;
+import kotlin.collections.CollectionsKt;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import kotlinx.coroutines.CoroutineScope;
-import kotlinx.coroutines.Job;
-import kotlinx.coroutines.flow.Flow;
-import kotlinx.coroutines.flow.FlowCollector;
-import kotlinx.coroutines.flow.MutableStateFlow;
-import ms.j1;
-import ms.m0;
-import ps.j0;
-import ps.l0;
-import sn.v;
-import sn.x;
-import un.e;
+import kotlin.text.MatchResult;
+import kotlin.text.Regex;
+import kotlin.text.StringsKt;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a implements sn.i {
+public final class a {
+    private static final Regex A;
+    private static final Regex B;
+
+    /* renamed from: o  reason: collision with root package name */
+    public static final C0678a f51632o;
+
+    /* renamed from: p  reason: collision with root package name */
+    private static final Regex f51633p;
+
+    /* renamed from: q  reason: collision with root package name */
+    private static final Regex f51634q;
+
+    /* renamed from: r  reason: collision with root package name */
+    private static final Regex f51635r;
+
+    /* renamed from: s  reason: collision with root package name */
+    private static final Regex f51636s;
+
+    /* renamed from: t  reason: collision with root package name */
+    private static final Regex f51637t;
+
+    /* renamed from: u  reason: collision with root package name */
+    private static final Regex f51638u;
+
+    /* renamed from: v  reason: collision with root package name */
+    private static final Regex f51639v;
+
+    /* renamed from: w  reason: collision with root package name */
+    private static final Regex f51640w;
+
+    /* renamed from: x  reason: collision with root package name */
+    private static final Regex f51641x;
+
+    /* renamed from: y  reason: collision with root package name */
+    private static final Regex f51642y;
+
+    /* renamed from: z  reason: collision with root package name */
+    private static final Regex f51643z;
 
     /* renamed from: a  reason: collision with root package name */
-    private final g f51474a;
+    private final String f51644a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final CoroutineScope f51475b;
+    private final String f51645b;
 
     /* renamed from: c  reason: collision with root package name */
-    private un.e f51476c;
+    private final String f51646c;
 
     /* renamed from: d  reason: collision with root package name */
-    private MutableStateFlow f51477d;
+    private final String f51647d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f51478e;
+    private final String f51648e;
 
     /* renamed from: f  reason: collision with root package name */
-    private Job f51479f;
+    private final String f51649f;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* renamed from: g  reason: collision with root package name */
+    private final String f51650g;
+
+    /* renamed from: h  reason: collision with root package name */
+    private final String f51651h;
+
+    /* renamed from: i  reason: collision with root package name */
+    private final String f51652i;
+
+    /* renamed from: j  reason: collision with root package name */
+    private final String f51653j;
+
+    /* renamed from: k  reason: collision with root package name */
+    private final Date f51654k;
+
+    /* renamed from: l  reason: collision with root package name */
+    private final Date f51655l;
+
+    /* renamed from: m  reason: collision with root package name */
+    private final Date f51656m;
+
+    /* renamed from: n  reason: collision with root package name */
+    private final String f51657n;
+
     /* renamed from: un.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0666a extends kotlin.coroutines.jvm.internal.k implements Function3 {
-
-        /* renamed from: d  reason: collision with root package name */
-        int f51480d;
-
-        /* renamed from: e  reason: collision with root package name */
-        private /* synthetic */ Object f51481e;
-
-        /* renamed from: i  reason: collision with root package name */
-        /* synthetic */ Object f51482i;
-
-        C0666a(Continuation continuation) {
-            super(3, continuation);
+    public static final class C0678a {
+        public /* synthetic */ C0678a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
         }
 
-        @Override // kotlin.coroutines.jvm.internal.a
-        public final Object invokeSuspend(Object obj) {
-            e.d dVar;
-            Object f10 = ur.b.f();
-            int i10 = this.f51480d;
-            if (i10 != 0) {
-                if (i10 == 1) {
-                    dVar = (e.d) this.f51481e;
-                    kotlin.c.b(obj);
-                } else {
-                    throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
-                }
-            } else {
-                kotlin.c.b(obj);
-                e.d dVar2 = (e.d) this.f51482i;
-                this.f51481e = dVar2;
-                this.f51480d = 1;
-                if (((FlowCollector) this.f51481e).emit(dVar2, this) == f10) {
-                    return f10;
-                }
-                dVar = dVar2;
+        private final Date b(String str) {
+            if (str == null) {
+                return null;
             }
-            return kotlin.coroutines.jvm.internal.b.a(!Intrinsics.areEqual(dVar, e.d.b.f51530a));
-        }
-
-        @Override // kotlin.jvm.functions.Function3
-        /* renamed from: j */
-        public final Object invoke(FlowCollector flowCollector, e.d dVar, Continuation continuation) {
-            C0666a c0666a = new C0666a(continuation);
-            c0666a.f51481e = flowCollector;
-            c0666a.f51482i = dVar;
-            return c0666a.invokeSuspend(Unit.f31988a);
-        }
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class b extends kotlin.coroutines.jvm.internal.k implements Function2 {
-
-        /* renamed from: d  reason: collision with root package name */
-        int f51483d;
-
-        /* JADX INFO: Access modifiers changed from: package-private */
-        /* renamed from: un.a$b$a  reason: collision with other inner class name */
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public static final class C0667a implements FlowCollector {
-
-            /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ a f51485d;
-
-            C0667a(a aVar) {
-                this.f51485d = aVar;
-            }
-
-            @Override // kotlinx.coroutines.flow.FlowCollector
-            /* renamed from: a */
-            public final Object emit(e.d dVar, Continuation continuation) {
-                if (!Intrinsics.areEqual(dVar, e.d.a.f51529a)) {
-                    if (Intrinsics.areEqual(dVar, e.d.C0669d.f51532a)) {
-                        this.f51485d.f51477d.setValue(x.e.f50007a);
-                    } else if (Intrinsics.areEqual(dVar, e.d.b.f51530a)) {
-                        this.f51485d.f51477d.setValue(new x.a(this.f51485d.f51478e));
-                        a aVar = this.f51485d;
-                        aVar.f51476c = aVar.f51474a.a();
-                        this.f51485d.f51478e = false;
-                    } else if (dVar instanceof e.d.c) {
-                        e.c a10 = ((e.d.c) dVar).a();
-                        if (a10 instanceof e.c.a) {
-                            if (this.f51485d.f51474a.b()) {
-                                Job job = this.f51485d.f51479f;
-                                if (job != null) {
-                                    Job.a.a(job, null, 1, null);
-                                }
-                                this.f51485d.u();
-                            } else {
-                                this.f51485d.f51477d.setValue(x.b.f50004a);
-                            }
-                        } else if (a10 instanceof e.c.b) {
-                            this.f51485d.f51477d.setValue(x.c.f50005a);
-                        } else {
-                            throw new or.p();
-                        }
-                    } else {
-                        throw new or.p();
-                    }
-                }
-                return Unit.f31988a;
+            try {
+                return new SimpleDateFormat("MMddyyyy", Locale.US).parse(str);
+            } catch (Exception unused) {
+                return null;
             }
         }
 
-        b(Continuation continuation) {
-            super(2, continuation);
+        /* JADX INFO: Access modifiers changed from: private */
+        public final Regex c(String str) {
+            return new Regex(ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE + str + "(.+?)(\n|$)");
         }
 
-        @Override // kotlin.coroutines.jvm.internal.a
-        public final Continuation create(Object obj, Continuation continuation) {
-            return new b(continuation);
-        }
-
-        @Override // kotlin.coroutines.jvm.internal.a
-        public final Object invokeSuspend(Object obj) {
-            Object f10 = ur.b.f();
-            int i10 = this.f51483d;
-            if (i10 != 0) {
-                if (i10 == 1) {
-                    kotlin.c.b(obj);
-                } else {
-                    throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
-                }
-            } else {
-                kotlin.c.b(obj);
-                a aVar = a.this;
-                Flow e10 = ps.g.e(aVar.t(aVar.f51476c.K()));
-                C0667a c0667a = new C0667a(a.this);
-                this.f51483d = 1;
-                if (e10.collect(c0667a, this) == f10) {
-                    return f10;
-                }
+        private final String e(String str, Regex regex) {
+            List b10;
+            MatchResult d10 = Regex.d(regex, str, 0, 2, null);
+            if (d10 == null || (b10 = d10.b()) == null) {
+                return null;
             }
-            return Unit.f31988a;
+            return (String) CollectionsKt.q0(b10, 1);
         }
 
-        @Override // kotlin.jvm.functions.Function2
-        public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((b) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
-        }
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class c extends kotlin.coroutines.jvm.internal.k implements Function2 {
-
-        /* renamed from: d  reason: collision with root package name */
-        int f51486d;
-
-        c(Continuation continuation) {
-            super(2, continuation);
-        }
-
-        @Override // kotlin.coroutines.jvm.internal.a
-        public final Continuation create(Object obj, Continuation continuation) {
-            return new c(continuation);
-        }
-
-        @Override // kotlin.coroutines.jvm.internal.a
-        public final Object invokeSuspend(Object obj) {
-            ur.b.f();
-            if (this.f51486d == 0) {
-                kotlin.c.b(obj);
-                a.this.f51477d.setValue(x.c.f50005a);
-                a.this.d();
-                return Unit.f31988a;
+        private final boolean f(String str) {
+            if (new Regex("^@\n\\u001e\r(ANSI |AAMVA)\\d{10}.+", kotlin.text.m.f34996s).i(StringsKt.k1(str).toString()) && e(str, a.f51639v) != null && e(str, a.f51643z) != null) {
+                return true;
             }
-            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            return false;
         }
 
-        @Override // kotlin.jvm.functions.Function2
-        public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((c) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
-        }
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class d extends kotlin.coroutines.jvm.internal.d {
-
-        /* renamed from: d  reason: collision with root package name */
-        Object f51488d;
-
-        /* renamed from: e  reason: collision with root package name */
-        /* synthetic */ Object f51489e;
-
-        /* renamed from: o  reason: collision with root package name */
-        int f51491o;
-
-        d(Continuation continuation) {
-            super(continuation);
-        }
-
-        @Override // kotlin.coroutines.jvm.internal.a
-        public final Object invokeSuspend(Object obj) {
-            this.f51489e = obj;
-            this.f51491o |= Integer.MIN_VALUE;
-            Object g10 = a.this.g(this);
-            if (g10 == ur.b.f()) {
-                return g10;
+        public final a d(String str) {
+            if (str == null || !f(str)) {
+                return null;
             }
-            return Result.a(g10);
+            return new a(null, e(str, a.f51639v), e(str, a.B), e(str, a.f51643z), e(str, a.f51640w), e(str, a.f51635r), e(str, a.f51633p), e(str, a.f51634q), e(str, a.f51636s), e(str, a.A), b(e(str, a.f51641x)), b(e(str, a.f51638u)), b(e(str, a.f51637t)), e(str, a.f51642y), 1, null);
+        }
+
+        private C0678a() {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class e extends kotlin.coroutines.jvm.internal.d {
+    static {
+        C0678a c0678a = new C0678a(null);
+        f51632o = c0678a;
+        f51633p = c0678a.c("DAI");
+        f51634q = c0678a.c("DAJ");
+        f51635r = c0678a.c("DAG");
+        f51636s = c0678a.c("DAK");
+        f51637t = c0678a.c("DBB");
+        f51638u = c0678a.c("DBA");
+        f51639v = c0678a.c("DAC");
+        f51640w = c0678a.c("DBC");
+        f51641x = c0678a.c("DBD");
+        f51642y = c0678a.c("DCG");
+        f51643z = c0678a.c("DCS");
+        A = c0678a.c("DAQ");
+        B = c0678a.c("DAD");
+    }
 
-        /* renamed from: d  reason: collision with root package name */
-        /* synthetic */ Object f51492d;
+    public a(String str, String str2, String str3, String str4, String str5, String str6, String str7, String str8, String str9, String str10, Date date, Date date2, Date date3, String str11) {
+        this.f51644a = str;
+        this.f51645b = str2;
+        this.f51646c = str3;
+        this.f51647d = str4;
+        this.f51648e = str5;
+        this.f51649f = str6;
+        this.f51650g = str7;
+        this.f51651h = str8;
+        this.f51652i = str9;
+        this.f51653j = str10;
+        this.f51654k = date;
+        this.f51655l = date2;
+        this.f51656m = date3;
+        this.f51657n = str11;
+    }
 
-        /* renamed from: i  reason: collision with root package name */
-        int f51494i;
-
-        e(Continuation continuation) {
-            super(continuation);
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
         }
-
-        @Override // kotlin.coroutines.jvm.internal.a
-        public final Object invokeSuspend(Object obj) {
-            this.f51492d = obj;
-            this.f51494i |= Integer.MIN_VALUE;
-            Object i10 = a.this.i(this);
-            if (i10 == ur.b.f()) {
-                return i10;
-            }
-            return Result.a(i10);
+        if (!(obj instanceof a)) {
+            return false;
         }
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class f extends kotlin.coroutines.jvm.internal.d {
-
-        /* renamed from: d  reason: collision with root package name */
-        /* synthetic */ Object f51495d;
-
-        /* renamed from: i  reason: collision with root package name */
-        int f51497i;
-
-        f(Continuation continuation) {
-            super(continuation);
+        a aVar = (a) obj;
+        if (Intrinsics.areEqual(this.f51644a, aVar.f51644a) && Intrinsics.areEqual(this.f51645b, aVar.f51645b) && Intrinsics.areEqual(this.f51646c, aVar.f51646c) && Intrinsics.areEqual(this.f51647d, aVar.f51647d) && Intrinsics.areEqual(this.f51648e, aVar.f51648e) && Intrinsics.areEqual(this.f51649f, aVar.f51649f) && Intrinsics.areEqual(this.f51650g, aVar.f51650g) && Intrinsics.areEqual(this.f51651h, aVar.f51651h) && Intrinsics.areEqual(this.f51652i, aVar.f51652i) && Intrinsics.areEqual(this.f51653j, aVar.f51653j) && Intrinsics.areEqual(this.f51654k, aVar.f51654k) && Intrinsics.areEqual(this.f51655l, aVar.f51655l) && Intrinsics.areEqual(this.f51656m, aVar.f51656m) && Intrinsics.areEqual(this.f51657n, aVar.f51657n)) {
+            return true;
         }
+        return false;
+    }
 
-        @Override // kotlin.coroutines.jvm.internal.a
-        public final Object invokeSuspend(Object obj) {
-            this.f51495d = obj;
-            this.f51497i |= Integer.MIN_VALUE;
-            Object j10 = a.this.j(this);
-            if (j10 == ur.b.f()) {
-                return j10;
-            }
-            return Result.a(j10);
+    public int hashCode() {
+        int hashCode;
+        int hashCode2;
+        int hashCode3;
+        int hashCode4;
+        int hashCode5;
+        int hashCode6;
+        int hashCode7;
+        int hashCode8;
+        int hashCode9;
+        int hashCode10;
+        int hashCode11;
+        int hashCode12;
+        int hashCode13;
+        String str = this.f51644a;
+        int i10 = 0;
+        if (str == null) {
+            hashCode = 0;
+        } else {
+            hashCode = str.hashCode();
         }
-    }
-
-    public a(g camera2ManagerFactory) {
-        Intrinsics.checkNotNullParameter(camera2ManagerFactory, "camera2ManagerFactory");
-        this.f51474a = camera2ManagerFactory;
-        this.f51475b = kotlinx.coroutines.i.a(m0.a().V0(j1.b(null, 1, null)));
-        this.f51476c = camera2ManagerFactory.a();
-        this.f51477d = l0.a(x.c.f50005a);
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public final Flow t(j0 j0Var) {
-        return ps.g.N(j0Var, new C0666a(null));
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public final void u() {
-        this.f51476c = this.f51474a.a();
-        ms.i.d(this.f51475b, m0.c(), null, new c(null), 2, null);
-    }
-
-    @Override // sn.i
-    public void a(boolean z10) {
-        this.f51476c.G(z10);
-    }
-
-    @Override // sn.i
-    public v b() {
-        return this.f51476c.I();
-    }
-
-    @Override // sn.i
-    public j0 c() {
-        return this.f51477d;
-    }
-
-    @Override // sn.i
-    public void d() {
-        Job d10;
-        if (!Intrinsics.areEqual(this.f51477d.getValue(), x.c.f50005a) && !(this.f51477d.getValue() instanceof x.a)) {
-            return;
+        int i11 = hashCode * 31;
+        String str2 = this.f51645b;
+        if (str2 == null) {
+            hashCode2 = 0;
+        } else {
+            hashCode2 = str2.hashCode();
         }
-        Job job = this.f51479f;
-        if (job != null) {
-            Job.a.a(job, null, 1, null);
+        int i12 = (i11 + hashCode2) * 31;
+        String str3 = this.f51646c;
+        if (str3 == null) {
+            hashCode3 = 0;
+        } else {
+            hashCode3 = str3.hashCode();
         }
-        this.f51477d.setValue(x.d.f50006a);
-        d10 = ms.i.d(this.f51475b, null, null, new b(null), 3, null);
-        this.f51479f = d10;
-        this.f51476c.T();
+        int i13 = (i12 + hashCode3) * 31;
+        String str4 = this.f51647d;
+        if (str4 == null) {
+            hashCode4 = 0;
+        } else {
+            hashCode4 = str4.hashCode();
+        }
+        int i14 = (i13 + hashCode4) * 31;
+        String str5 = this.f51648e;
+        if (str5 == null) {
+            hashCode5 = 0;
+        } else {
+            hashCode5 = str5.hashCode();
+        }
+        int i15 = (i14 + hashCode5) * 31;
+        String str6 = this.f51649f;
+        if (str6 == null) {
+            hashCode6 = 0;
+        } else {
+            hashCode6 = str6.hashCode();
+        }
+        int i16 = (i15 + hashCode6) * 31;
+        String str7 = this.f51650g;
+        if (str7 == null) {
+            hashCode7 = 0;
+        } else {
+            hashCode7 = str7.hashCode();
+        }
+        int i17 = (i16 + hashCode7) * 31;
+        String str8 = this.f51651h;
+        if (str8 == null) {
+            hashCode8 = 0;
+        } else {
+            hashCode8 = str8.hashCode();
+        }
+        int i18 = (i17 + hashCode8) * 31;
+        String str9 = this.f51652i;
+        if (str9 == null) {
+            hashCode9 = 0;
+        } else {
+            hashCode9 = str9.hashCode();
+        }
+        int i19 = (i18 + hashCode9) * 31;
+        String str10 = this.f51653j;
+        if (str10 == null) {
+            hashCode10 = 0;
+        } else {
+            hashCode10 = str10.hashCode();
+        }
+        int i20 = (i19 + hashCode10) * 31;
+        Date date = this.f51654k;
+        if (date == null) {
+            hashCode11 = 0;
+        } else {
+            hashCode11 = date.hashCode();
+        }
+        int i21 = (i20 + hashCode11) * 31;
+        Date date2 = this.f51655l;
+        if (date2 == null) {
+            hashCode12 = 0;
+        } else {
+            hashCode12 = date2.hashCode();
+        }
+        int i22 = (i21 + hashCode12) * 31;
+        Date date3 = this.f51656m;
+        if (date3 == null) {
+            hashCode13 = 0;
+        } else {
+            hashCode13 = date3.hashCode();
+        }
+        int i23 = (i22 + hashCode13) * 31;
+        String str11 = this.f51657n;
+        if (str11 != null) {
+            i10 = str11.hashCode();
+        }
+        return i23 + i10;
     }
 
-    @Override // sn.i
-    public View e() {
-        return this.f51476c.J();
+    public final Date n() {
+        return this.f51656m;
     }
 
-    @Override // sn.i
-    public void f() {
-        this.f51476c.H();
+    public final Date o() {
+        return this.f51655l;
     }
 
-    /* JADX WARN: Removed duplicated region for block: B:10:0x0023  */
-    /* JADX WARN: Removed duplicated region for block: B:14:0x003b  */
-    /* JADX WARN: Removed duplicated region for block: B:24:0x006c  */
-    /* JADX WARN: Removed duplicated region for block: B:25:0x006e  */
-    /* JADX WARN: Removed duplicated region for block: B:28:0x0079  */
-    @Override // sn.i
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    public java.lang.Object g(kotlin.coroutines.Continuation r5) {
-        /*
-            r4 = this;
-            boolean r0 = r5 instanceof un.a.d
-            if (r0 == 0) goto L13
-            r0 = r5
-            un.a$d r0 = (un.a.d) r0
-            int r1 = r0.f51491o
-            r2 = -2147483648(0xffffffff80000000, float:-0.0)
-            r3 = r1 & r2
-            if (r3 == 0) goto L13
-            int r1 = r1 - r2
-            r0.f51491o = r1
-            goto L18
-        L13:
-            un.a$d r0 = new un.a$d
-            r0.<init>(r5)
-        L18:
-            java.lang.Object r5 = r0.f51489e
-            java.lang.Object r1 = ur.b.f()
-            int r2 = r0.f51491o
-            r3 = 1
-            if (r2 == 0) goto L3b
-            if (r2 != r3) goto L33
-            java.lang.Object r0 = r0.f51488d
-            un.a r0 = (un.a) r0
-            kotlin.c.b(r5)
-            kotlin.Result r5 = (kotlin.Result) r5
-            java.lang.Object r5 = r5.j()
-            goto L66
-        L33:
-            java.lang.IllegalStateException r5 = new java.lang.IllegalStateException
-            java.lang.String r0 = "call to 'resume' before 'invoke' with coroutine"
-            r5.<init>(r0)
-            throw r5
-        L3b:
-            kotlin.c.b(r5)
-            kotlinx.coroutines.flow.MutableStateFlow r5 = r4.f51477d
-            java.lang.Object r5 = r5.getValue()
-            sn.x$e r2 = sn.x.e.f50007a
-            boolean r5 = kotlin.jvm.internal.Intrinsics.areEqual(r5, r2)
-            if (r5 != 0) goto L58
-            kotlin.Result$a r5 = kotlin.Result.f31985e
-            r5 = 0
-            java.lang.Boolean r5 = kotlin.coroutines.jvm.internal.b.a(r5)
-            java.lang.Object r5 = kotlin.Result.b(r5)
-            return r5
-        L58:
-            un.e r5 = r4.f51476c
-            r0.f51488d = r4
-            r0.f51491o = r3
-            java.lang.Object r5 = r5.W(r0)
-            if (r5 != r1) goto L65
-            return r1
-        L65:
-            r0 = r4
-        L66:
-            boolean r1 = kotlin.Result.g(r5)
-            if (r1 == 0) goto L6e
-            r1 = 0
-            goto L6f
-        L6e:
-            r1 = r5
-        L6f:
-            java.lang.Boolean r2 = kotlin.coroutines.jvm.internal.b.a(r3)
-            boolean r1 = kotlin.jvm.internal.Intrinsics.areEqual(r1, r2)
-            if (r1 == 0) goto L7b
-            r0.f51478e = r3
-        L7b:
-            return r5
-        */
-        throw new UnsupportedOperationException("Method not decompiled: un.a.g(kotlin.coroutines.Continuation):java.lang.Object");
+    public String toString() {
+        String str = this.f51644a;
+        String str2 = this.f51645b;
+        String str3 = this.f51646c;
+        String str4 = this.f51647d;
+        String str5 = this.f51648e;
+        String str6 = this.f51649f;
+        String str7 = this.f51650g;
+        String str8 = this.f51651h;
+        String str9 = this.f51652i;
+        String str10 = this.f51653j;
+        Date date = this.f51654k;
+        Date date2 = this.f51655l;
+        Date date3 = this.f51656m;
+        String str11 = this.f51657n;
+        return "AamvaExtraction(idClass=" + str + ", nameFirst=" + str2 + ", nameMiddle=" + str3 + ", nameLast=" + str4 + ", sex=" + str5 + ", addressStreet1=" + str6 + ", addressCity=" + str7 + ", addressState=" + str8 + ", addressPostalCode=" + str9 + ", identificationNumber=" + str10 + ", issueDate=" + date + ", expirationDate=" + date2 + ", birthdate=" + date3 + ", issuingCountry=" + str11 + ")";
     }
 
-    @Override // sn.i
-    public void h(boolean z10) {
-        this.f51476c.S(z10);
-    }
-
-    /* JADX WARN: Removed duplicated region for block: B:10:0x0023  */
-    /* JADX WARN: Removed duplicated region for block: B:15:0x0037  */
-    @Override // sn.i
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    public java.lang.Object i(kotlin.coroutines.Continuation r5) {
-        /*
-            r4 = this;
-            boolean r0 = r5 instanceof un.a.e
-            if (r0 == 0) goto L13
-            r0 = r5
-            un.a$e r0 = (un.a.e) r0
-            int r1 = r0.f51494i
-            r2 = -2147483648(0xffffffff80000000, float:-0.0)
-            r3 = r1 & r2
-            if (r3 == 0) goto L13
-            int r1 = r1 - r2
-            r0.f51494i = r1
-            goto L18
-        L13:
-            un.a$e r0 = new un.a$e
-            r0.<init>(r5)
-        L18:
-            java.lang.Object r5 = r0.f51492d
-            java.lang.Object r1 = ur.b.f()
-            int r2 = r0.f51494i
-            r3 = 1
-            if (r2 == 0) goto L37
-            if (r2 != r3) goto L2f
-            kotlin.c.b(r5)
-            kotlin.Result r5 = (kotlin.Result) r5
-            java.lang.Object r5 = r5.j()
-            return r5
-        L2f:
-            java.lang.IllegalStateException r5 = new java.lang.IllegalStateException
-            java.lang.String r0 = "call to 'resume' before 'invoke' with coroutine"
-            r5.<init>(r0)
-            throw r5
-        L37:
-            kotlin.c.b(r5)
-            r5 = 0
-            r4.f51478e = r5
-            un.e r5 = r4.f51476c
-            r0.f51494i = r3
-            java.lang.Object r5 = r5.X(r0)
-            if (r5 != r1) goto L48
-            return r1
-        L48:
-            return r5
-        */
-        throw new UnsupportedOperationException("Method not decompiled: un.a.i(kotlin.coroutines.Continuation):java.lang.Object");
-    }
-
-    /* JADX WARN: Removed duplicated region for block: B:10:0x0023  */
-    /* JADX WARN: Removed duplicated region for block: B:15:0x0037  */
-    @Override // sn.i
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    public java.lang.Object j(kotlin.coroutines.Continuation r5) {
-        /*
-            r4 = this;
-            boolean r0 = r5 instanceof un.a.f
-            if (r0 == 0) goto L13
-            r0 = r5
-            un.a$f r0 = (un.a.f) r0
-            int r1 = r0.f51497i
-            r2 = -2147483648(0xffffffff80000000, float:-0.0)
-            r3 = r1 & r2
-            if (r3 == 0) goto L13
-            int r1 = r1 - r2
-            r0.f51497i = r1
-            goto L18
-        L13:
-            un.a$f r0 = new un.a$f
-            r0.<init>(r5)
-        L18:
-            java.lang.Object r5 = r0.f51495d
-            java.lang.Object r1 = ur.b.f()
-            int r2 = r0.f51497i
-            r3 = 1
-            if (r2 == 0) goto L37
-            if (r2 != r3) goto L2f
-            kotlin.c.b(r5)
-            kotlin.Result r5 = (kotlin.Result) r5
-            java.lang.Object r5 = r5.j()
-            return r5
-        L2f:
-            java.lang.IllegalStateException r5 = new java.lang.IllegalStateException
-            java.lang.String r0 = "call to 'resume' before 'invoke' with coroutine"
-            r5.<init>(r0)
-            throw r5
-        L37:
-            kotlin.c.b(r5)
-            un.e r5 = r4.f51476c
-            r0.f51497i = r3
-            java.lang.Object r5 = r5.Q(r0)
-            if (r5 != r1) goto L45
-            return r1
-        L45:
-            return r5
-        */
-        throw new UnsupportedOperationException("Method not decompiled: un.a.j(kotlin.coroutines.Continuation):java.lang.Object");
+    public /* synthetic */ a(String str, String str2, String str3, String str4, String str5, String str6, String str7, String str8, String str9, String str10, Date date, Date date2, Date date3, String str11, int i10, DefaultConstructorMarker defaultConstructorMarker) {
+        this((i10 & 1) != 0 ? null : str, (i10 & 2) != 0 ? null : str2, (i10 & 4) != 0 ? null : str3, (i10 & 8) != 0 ? null : str4, (i10 & 16) != 0 ? null : str5, (i10 & 32) != 0 ? null : str6, (i10 & 64) != 0 ? null : str7, (i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0 ? null : str8, (i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 0 ? null : str9, (i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 0 ? null : str10, (i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) != 0 ? null : date, (i10 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? null : date2, (i10 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? null : date3, (i10 & 8192) != 0 ? null : str11);
     }
 }

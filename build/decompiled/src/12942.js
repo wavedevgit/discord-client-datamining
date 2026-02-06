@@ -1,42 +1,94 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = exports;
-    var0 = global;
-    var4 = var0.Object;
-    var3 = var4.defineProperty;
-    var2 = {};
-    var0 = true;
-    var2.value = var0;
-    var0 = '__esModule';
-    var0 = var3.bind(var4)(var1, var0, var2);
-    var0 = 'cache.hit';
-    var1.SEMANTIC_ATTRIBUTE_CACHE_HIT = var0;
-    var0 = 'cache.item_size';
-    var1.SEMANTIC_ATTRIBUTE_CACHE_ITEM_SIZE = var0;
-    var0 = 'cache.key';
-    var1.SEMANTIC_ATTRIBUTE_CACHE_KEY = var0;
-    var0 = 'sentry.exclusive_time';
-    var1.SEMANTIC_ATTRIBUTE_EXCLUSIVE_TIME = var0;
-    var0 = 'http.request.method';
-    var1.SEMANTIC_ATTRIBUTE_HTTP_REQUEST_METHOD = var0;
-    var0 = 'sentry.profile_id';
-    var1.SEMANTIC_ATTRIBUTE_PROFILE_ID = var0;
-    var0 = 'sentry.idle_span_finish_reason';
-    var1.SEMANTIC_ATTRIBUTE_SENTRY_IDLE_SPAN_FINISH_REASON = var0;
-    var0 = 'sentry.measurement_unit';
-    var1.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_UNIT = var0;
-    var0 = 'sentry.measurement_value';
-    var1.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_VALUE = var0;
-    var0 = 'sentry.op';
-    var1.SEMANTIC_ATTRIBUTE_SENTRY_OP = var0;
-    var0 = 'sentry.origin';
-    var1.SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN = var0;
-    var0 = 'sentry.sample_rate';
-    var1.SEMANTIC_ATTRIBUTE_SENTRY_SAMPLE_RATE = var0;
-    var0 = 'sentry.source';
-    var1.SEMANTIC_ATTRIBUTE_SENTRY_SOURCE = var0;
-    var0 = 'url.full';
-    var1.SEMANTIC_ATTRIBUTE_URL_FULL = var0;
+    var2 = require;
+    var _closure1_slot0 = var2;
+    var2 = dependencyMap;
+    var _closure1_slot1 = var2;
+    var2 = global;
+    var5 = var2.Object;
+    var4 = var5.defineProperty;
+    var3 = {};
+    var2 = true;
+    var3.value = var2;
+    var2 = '__esModule';
+    var2 = var4.bind(var5)(var1, var2, var3);
+    var0 = function() {
+        _fun99143: for (var _fun99143_ip = 0;;) switch (_fun99143_ip) {
+            case 0:
+                var1 = _closure1_slot0;
+                var0 = _closure1_slot1;
+                var5 = 0;
+                var0 = var0[var5];
+                var4 = undefined;
+                var0 = var1.bind(var4)(var0);
+                var0 = var0.GLOBAL_OBJ;
+                var1 = var0.chrome;
+                var0 = var1;
+                if (!var0) {
+                    _fun99143_ip = 48;
+                    continue _fun99143
+                }
+            case 42:
+                var0 = var1.app;
+            case 48:
+                if (!var0) {
+                    _fun99143_ip = 63;
+                    continue _fun99143
+                }
+            case 51:
+                var1 = var1.app;
+                var0 = var1.runtime;
+            case 63:
+                var3 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var1 = var1[var5];
+                var1 = var3.bind(var4)(var1);
+                var3 = var1.GLOBAL_OBJ;
+                var1 = 'history';
+                var1 = var1 in var3;
+                if (!var1) {
+                    _fun99143_ip = 138;
+                    continue _fun99143
+                }
+            case 97:
+                var6 = _closure1_slot0;
+                var3 = _closure1_slot1;
+                var3 = var3[var5];
+                var3 = var6.bind(var4)(var3);
+                var3 = var3.GLOBAL_OBJ;
+                var3 = var3.history;
+                var3 = var3.pushState;
+                var3 = !var3;
+                var1 = !var3;
+            case 138:
+                if (!var1) {
+                    _fun99143_ip = 182;
+                    continue _fun99143
+                }
+            case 141:
+                var3 = _closure1_slot0;
+                var2 = _closure1_slot1;
+                var2 = var2[var5];
+                var2 = var3.bind(var4)(var2);
+                var2 = var2.GLOBAL_OBJ;
+                var2 = var2.history;
+                var2 = var2.replaceState;
+                var2 = !var2;
+                var1 = !var2;
+            case 182:
+                var0 = !var0;
+                if (!var0) {
+                    _fun99143_ip = 191;
+                    continue _fun99143
+                }
+            case 188:
+                var0 = var1;
+            case 191:
+                return var0;
+        }
+    };
+    var1.supportsHistory = var0;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12895]);

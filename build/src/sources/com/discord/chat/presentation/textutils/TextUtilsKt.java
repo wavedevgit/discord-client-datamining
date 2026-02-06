@@ -193,10 +193,10 @@ public final class TextUtilsKt {
         draweeSpanStringBuilder.append((char) 8203);
         com.facebook.drawee.controller.a build = ((PipelineDraweeControllerBuilder) e9.d.g().E(ImageRequestBuilder.x(Uri.parse(ReactAssetUtilsKt.getReactImageUrl(context, imageUrl))).a())).build();
         Intrinsics.checkNotNullExpressionValue(build, "build(...)");
-        GenericDraweeHierarchyBuilder w10 = GenericDraweeHierarchyBuilder.u(context.getResources()).w(ScalingUtils$ScaleType.f10019e);
+        GenericDraweeHierarchyBuilder w10 = GenericDraweeHierarchyBuilder.u(context.getResources()).w(ScalingUtils$ScaleType.f9918e);
         com.facebook.drawee.generic.a c10 = com.facebook.drawee.generic.a.c(f10);
         c10.t(f11);
-        c10.w(a.EnumC0153a.BITMAP_ONLY);
+        c10.w(a.EnumC0146a.BITMAP_ONLY);
         w10.K(c10);
         if (rc2.spoilerIsHidden()) {
             w10.v(new PorterDuffColorFilter(rc2.getTheme().getSpoilerHiddenBackground(), PorterDuff.Mode.SRC_IN));
@@ -430,7 +430,7 @@ public final class TextUtilsKt {
         if (structurableText instanceof PrimitiveStructurableText) {
             return new DraweeSpanStringBuilder(((PrimitiveStructurableText) structurableText).getContent());
         }
-        throw new or.p();
+        throw new qr.p();
     }
 
     public static /* synthetic */ DraweeSpanStringBuilder toSpannable$default(StructurableText structurableText, Context context, String str, boolean z10, boolean z11, boolean z12, boolean z13, Paint paint, Function1 function1, Function1 function12, Function3 function3, Function4 function4, Function1 function13, Function2 function2, Function4 function42, Function1 function14, Function1 function15, Function1 function16, Function1 function17, Function1 function18, Function1 function19, Function0 function0, Function1 function110, boolean z14, DiscordThemeObject discordThemeObject, float f10, Float f11, boolean z15, int i10, Object obj) {
@@ -551,7 +551,7 @@ public final class TextUtilsKt {
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit unit;
-                unit = Unit.f31988a;
+                unit = Unit.f32008a;
                 return unit;
             }
         } : function0;
@@ -594,25 +594,25 @@ public final class TextUtilsKt {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit toSpannable$lambda$0(LinkContentNode it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit toSpannable$lambda$1(LinkContentNode it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit toSpannable$lambda$10(InlineCodeContentNode it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit toSpannable$lambda$11(EmojiContentNode it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -624,38 +624,38 @@ public final class TextUtilsKt {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit toSpannable$lambda$14(SoundmojiContentNode it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit toSpannable$lambda$2(String str, String str2, String str3) {
         Intrinsics.checkNotNullParameter(str, "<unused var>");
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit toSpannable$lambda$3(String str, String str2, String str3, String str4) {
         Intrinsics.checkNotNullParameter(str, "<unused var>");
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit toSpannable$lambda$4(String str) {
         Intrinsics.checkNotNullParameter(str, "<unused var>");
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit toSpannable$lambda$5(String str, String str2) {
         Intrinsics.checkNotNullParameter(str, "<unused var>");
         Intrinsics.checkNotNullParameter(str2, "<unused var>");
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit toSpannable$lambda$6(String str, String str2, String str3, String str4) {
         Intrinsics.checkNotNullParameter(str2, "<unused var>");
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -668,7 +668,7 @@ public final class TextUtilsKt {
     public static final Unit toSpannable$lambda$67$lambda$19(RenderContext renderContext, ContentNode contentNode, View it) {
         Intrinsics.checkNotNullParameter(it, "it");
         renderContext.getOnTapInlineCode().invoke(contentNode);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -685,7 +685,7 @@ public final class TextUtilsKt {
     public static final Unit toSpannable$lambda$67$lambda$22(RenderContext renderContext, ContentNode contentNode, View it) {
         Intrinsics.checkNotNullParameter(it, "it");
         renderContext.getOnTapLink().invoke(contentNode);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -695,14 +695,14 @@ public final class TextUtilsKt {
         Intrinsics.checkNotNullParameter(it, "it");
         Function4 onTapMention = renderContext.getOnTapMention();
         UserOrRoleMentionContentNode userOrRoleMentionContentNode = (UserOrRoleMentionContentNode) contentNode;
-        UserId m391getUserIdwUX8bhU = userOrRoleMentionContentNode.m391getUserIdwUX8bhU();
+        UserId m389getUserIdwUX8bhU = userOrRoleMentionContentNode.m389getUserIdwUX8bhU();
         String str3 = null;
-        if (m391getUserIdwUX8bhU != null) {
-            str = UserId.m1144toStringimpl(m391getUserIdwUX8bhU.m1146unboximpl());
+        if (m389getUserIdwUX8bhU != null) {
+            str = UserId.m1142toStringimpl(m389getUserIdwUX8bhU.m1144unboximpl());
         } else {
             str = null;
         }
-        String valueOf = String.valueOf(userOrRoleMentionContentNode.m388getChannelIdqMVnFVQ());
+        String valueOf = String.valueOf(userOrRoleMentionContentNode.m386getChannelIdqMVnFVQ());
         String roleName = userOrRoleMentionContentNode.getRoleName();
         if (roleName != null) {
             str2 = roleName.toString();
@@ -714,7 +714,7 @@ public final class TextUtilsKt {
             str3 = parsedUserId.toString();
         }
         onTapMention.invoke(str, valueOf, str2, str3);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -730,7 +730,7 @@ public final class TextUtilsKt {
         Intrinsics.checkNotNullParameter(it, "it");
         ChannelMentionContentNode channelMentionContentNode = (ChannelMentionContentNode) contentNode;
         renderContext.getOnTapChannel().invoke(channelMentionContentNode.getChannelId(), channelMentionContentNode.getGuildId(), channelMentionContentNode.getMessageId());
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -745,15 +745,15 @@ public final class TextUtilsKt {
     public static final Unit toSpannable$lambda$67$lambda$33(RenderContext renderContext, ContentNode contentNode, View it) {
         Intrinsics.checkNotNullParameter(it, "it");
         renderContext.getOnTapAttachmentLink().invoke(((AttachmentLinkContentNode) contentNode).getAttachmentUrl());
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit toSpannable$lambda$67$lambda$35(RenderContext renderContext, ContentNode contentNode, View it) {
         Intrinsics.checkNotNullParameter(it, "it");
         StaticChannelMentionContentNode staticChannelMentionContentNode = (StaticChannelMentionContentNode) contentNode;
-        renderContext.getOnTapChannel().invoke(staticChannelMentionContentNode.getId().getId(), String.valueOf(staticChannelMentionContentNode.m381getGuildIdqOKuAAo()), String.valueOf(staticChannelMentionContentNode.getItemId()));
-        return Unit.f31988a;
+        renderContext.getOnTapChannel().invoke(staticChannelMentionContentNode.getId().getId(), String.valueOf(staticChannelMentionContentNode.m379getGuildIdqOKuAAo()), String.valueOf(staticChannelMentionContentNode.getItemId()));
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -767,15 +767,15 @@ public final class TextUtilsKt {
     public static final Unit toSpannable$lambda$67$lambda$38(RenderContext renderContext, ContentNode contentNode, View it) {
         Intrinsics.checkNotNullParameter(it, "it");
         renderContext.getOnTapCommand().invoke(contentNode);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit toSpannable$lambda$67$lambda$42(String str, RenderContext renderContext, View it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        SpoilerManager.INSTANCE.m425markRevealedV2PEE7g(str);
+        SpoilerManager.INSTANCE.m423markRevealedV2PEE7g(str);
         renderContext.getOnTapSpoiler().invoke();
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -788,7 +788,7 @@ public final class TextUtilsKt {
         if (obj != null) {
             draweeSpanStringBuilder.setSpan(obj, length, draweeSpanStringBuilder.length(), 13107233);
         }
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -796,21 +796,21 @@ public final class TextUtilsKt {
         Intrinsics.checkNotNullParameter(changeTextSizeSp, "$this$changeTextSizeSp");
         Intrinsics.checkNotNullParameter(updatedRc, "updatedRc");
         appendToExistingBuilder(((HeadingContentNode) contentNode).getContent(), updatedRc, draweeSpanStringBuilder);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit toSpannable$lambda$67$lambda$60(RenderContext renderContext, ContentNode contentNode, View it) {
         Intrinsics.checkNotNullParameter(it, "it");
         renderContext.getOnTapTimestamp().invoke(((TimestampContentNode) contentNode).getFull());
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit toSpannable$lambda$67$lambda$63(RenderContext renderContext, ContentNode contentNode, View it) {
         Intrinsics.checkNotNullParameter(it, "it");
         renderContext.getOnTapSoundmoji().invoke(contentNode);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -850,32 +850,32 @@ public final class TextUtilsKt {
         }
         draweeSpanStringBuilder2.append((CharSequence) str);
         draweeSpanStringBuilder2.append("  ");
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit toSpannable$lambda$67$lambda$66$lambda$65$lambda$64(RenderContext renderContext, GenericDraweeHierarchyBuilder renderEmojiInto) {
         Intrinsics.checkNotNullParameter(renderEmojiInto, "$this$renderEmojiInto");
         EmojiRendererKt.handleEmojiSpoiler(renderEmojiInto, renderContext, true);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit toSpannable$lambda$7(CommandMentionContentNode it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit toSpannable$lambda$8(CommandMentionContentNode it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit toSpannable$lambda$9(String it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:171:0x04fa  */

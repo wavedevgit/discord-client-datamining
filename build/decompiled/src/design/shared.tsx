@@ -87,4 +87,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.WCAGContrastRatios;
     var2.WCAGContrastRatios = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [2, 3207, 3157, 3208]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2, 3209, 3159, 3210]);

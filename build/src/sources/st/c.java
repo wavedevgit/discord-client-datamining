@@ -1,8 +1,9 @@
 package st;
 
-import java.util.Locale;
-import qt.f;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+@Retention(RetentionPolicy.RUNTIME)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface c extends f {
-    String a(qt.e eVar, Locale locale, boolean z10);
+public @interface c {
+    String value();
 }

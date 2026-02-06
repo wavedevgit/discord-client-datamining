@@ -7,19 +7,19 @@ import androidx.lifecycle.c;
 public class y implements m {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Object f4662d;
+    private final Object f4991d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final c.a f4663e;
+    private final c.a f4992e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public y(Object obj) {
-        this.f4662d = obj;
-        this.f4663e = c.f4591c.c(obj.getClass());
+        this.f4991d = obj;
+        this.f4992e = c.f4920c.c(obj.getClass());
     }
 
     @Override // androidx.lifecycle.m
-    public void h(LifecycleOwner lifecycleOwner, Lifecycle.a aVar) {
-        this.f4663e.a(lifecycleOwner, aVar, this.f4662d);
+    public void k(LifecycleOwner lifecycleOwner, Lifecycle.a aVar) {
+        this.f4992e.a(lifecycleOwner, aVar, this.f4991d);
     }
 }

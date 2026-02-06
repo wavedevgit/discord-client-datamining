@@ -16,46 +16,46 @@ import ne.t0;
 public final class b implements l {
 
     /* renamed from: a  reason: collision with root package name */
-    private final MediaCodec f22750a;
+    private final MediaCodec f23051a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final g f22751b;
+    private final g f23052b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final e f22752c;
+    private final e f23053c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f22753d;
+    private final boolean f23054d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f22754e;
+    private boolean f23055e;
 
     /* renamed from: f  reason: collision with root package name */
-    private int f22755f;
+    private int f23056f;
 
     /* renamed from: fd.b$b  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class C0312b implements l.b {
+    public static final class C0323b implements l.b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final li.r f22756a;
+        private final mi.r f23057a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final li.r f22757b;
+        private final mi.r f23058b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final boolean f22758c;
+        private final boolean f23059c;
 
-        public C0312b(final int i10, boolean z10) {
-            this(new li.r() { // from class: fd.c
-                @Override // li.r
+        public C0323b(final int i10, boolean z10) {
+            this(new mi.r() { // from class: fd.c
+                @Override // mi.r
                 public final Object get() {
-                    return b.C0312b.b(i10);
+                    return b.C0323b.b(i10);
                 }
-            }, new li.r() { // from class: fd.d
-                @Override // li.r
+            }, new mi.r() { // from class: fd.d
+                @Override // mi.r
                 public final Object get() {
-                    return b.C0312b.c(i10);
+                    return b.C0323b.c(i10);
                 }
             }, z10);
         }
@@ -74,13 +74,13 @@ public final class b implements l {
             Exception exc;
             MediaCodec mediaCodec;
             b bVar;
-            String str = aVar.f22803a.f22811a;
+            String str = aVar.f23104a.f23112a;
             b bVar2 = null;
             try {
                 t0.a("createCodec:" + str);
                 mediaCodec = MediaCodec.createByCodecName(str);
                 try {
-                    bVar = new b(mediaCodec, (HandlerThread) this.f22756a.get(), (HandlerThread) this.f22757b.get(), this.f22758c);
+                    bVar = new b(mediaCodec, (HandlerThread) this.f23057a.get(), (HandlerThread) this.f23058b.get(), this.f23059c);
                 } catch (Exception e10) {
                     exc = e10;
                 }
@@ -90,7 +90,7 @@ public final class b implements l {
             }
             try {
                 t0.c();
-                bVar.p(aVar.f22804b, aVar.f22806d, aVar.f22807e, aVar.f22808f);
+                bVar.p(aVar.f23105b, aVar.f23107d, aVar.f23108e, aVar.f23109f);
                 return bVar;
             } catch (Exception e12) {
                 exc = e12;
@@ -106,10 +106,10 @@ public final class b implements l {
             }
         }
 
-        C0312b(li.r rVar, li.r rVar2, boolean z10) {
-            this.f22756a = rVar;
-            this.f22757b = rVar2;
-            this.f22758c = z10;
+        C0323b(mi.r rVar, mi.r rVar2, boolean z10) {
+            this.f23057a = rVar;
+            this.f23058b = rVar2;
+            this.f23059c = z10;
         }
     }
 
@@ -144,21 +144,21 @@ public final class b implements l {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void p(MediaFormat mediaFormat, Surface surface, MediaCrypto mediaCrypto, int i10) {
-        this.f22751b.h(this.f22750a);
+        this.f23052b.h(this.f23051a);
         t0.a("configureCodec");
-        this.f22750a.configure(mediaFormat, surface, mediaCrypto, i10);
+        this.f23051a.configure(mediaFormat, surface, mediaCrypto, i10);
         t0.c();
-        this.f22752c.q();
+        this.f23053c.q();
         t0.a("startCodec");
-        this.f22750a.start();
+        this.f23051a.start();
         t0.c();
-        this.f22755f = 1;
+        this.f23056f = 1;
     }
 
     private void q() {
-        if (this.f22753d) {
+        if (this.f23054d) {
             try {
-                this.f22752c.r();
+                this.f23053c.r();
             } catch (InterruptedException e10) {
                 Thread.currentThread().interrupt();
                 throw new IllegalStateException(e10);
@@ -168,13 +168,13 @@ public final class b implements l {
 
     @Override // fd.l
     public void a(int i10, int i11, qc.c cVar, long j10, int i12) {
-        this.f22752c.n(i10, i11, cVar, j10, i12);
+        this.f23053c.n(i10, i11, cVar, j10, i12);
     }
 
     @Override // fd.l
     public void b(final l.c cVar, Handler handler) {
         q();
-        this.f22750a.setOnFrameRenderedListener(new MediaCodec.OnFrameRenderedListener() { // from class: fd.a
+        this.f23051a.setOnFrameRenderedListener(new MediaCodec.OnFrameRenderedListener() { // from class: fd.a
             @Override // android.media.MediaCodec.OnFrameRenderedListener
             public final void onFrameRendered(MediaCodec mediaCodec, long j10, long j11) {
                 b.i(b.this, cVar, mediaCodec, j10, j11);
@@ -185,13 +185,13 @@ public final class b implements l {
     @Override // fd.l
     public void c(int i10) {
         q();
-        this.f22750a.setVideoScalingMode(i10);
+        this.f23051a.setVideoScalingMode(i10);
     }
 
     @Override // fd.l
     public void d(Surface surface) {
         q();
-        this.f22750a.setOutputSurface(surface);
+        this.f23051a.setOutputSurface(surface);
     }
 
     @Override // fd.l
@@ -201,65 +201,65 @@ public final class b implements l {
 
     @Override // fd.l
     public void f(int i10, long j10) {
-        this.f22750a.releaseOutputBuffer(i10, j10);
+        this.f23051a.releaseOutputBuffer(i10, j10);
     }
 
     @Override // fd.l
     public void flush() {
-        this.f22752c.i();
-        this.f22750a.flush();
-        this.f22751b.e();
-        this.f22750a.start();
+        this.f23053c.i();
+        this.f23051a.flush();
+        this.f23052b.e();
+        this.f23051a.start();
     }
 
     @Override // fd.l
     public int g() {
-        this.f22752c.l();
-        return this.f22751b.c();
+        this.f23053c.l();
+        return this.f23052b.c();
     }
 
     @Override // fd.l
     public ByteBuffer getInputBuffer(int i10) {
-        return this.f22750a.getInputBuffer(i10);
+        return this.f23051a.getInputBuffer(i10);
     }
 
     @Override // fd.l
     public ByteBuffer getOutputBuffer(int i10) {
-        return this.f22750a.getOutputBuffer(i10);
+        return this.f23051a.getOutputBuffer(i10);
     }
 
     @Override // fd.l
     public MediaFormat getOutputFormat() {
-        return this.f22751b.g();
+        return this.f23052b.g();
     }
 
     @Override // fd.l
     public int h(MediaCodec.BufferInfo bufferInfo) {
-        this.f22752c.l();
-        return this.f22751b.d(bufferInfo);
+        this.f23053c.l();
+        return this.f23052b.d(bufferInfo);
     }
 
     @Override // fd.l
     public void queueInputBuffer(int i10, int i11, int i12, long j10, int i13) {
-        this.f22752c.m(i10, i11, i12, j10, i13);
+        this.f23053c.m(i10, i11, i12, j10, i13);
     }
 
     @Override // fd.l
     public void release() {
         try {
-            if (this.f22755f == 1) {
-                this.f22752c.p();
-                this.f22751b.o();
+            if (this.f23056f == 1) {
+                this.f23053c.p();
+                this.f23052b.o();
             }
-            this.f22755f = 2;
-            if (!this.f22754e) {
-                this.f22750a.release();
-                this.f22754e = true;
+            this.f23056f = 2;
+            if (!this.f23055e) {
+                this.f23051a.release();
+                this.f23055e = true;
             }
         } catch (Throwable th2) {
-            if (!this.f22754e) {
-                this.f22750a.release();
-                this.f22754e = true;
+            if (!this.f23055e) {
+                this.f23051a.release();
+                this.f23055e = true;
             }
             throw th2;
         }
@@ -267,20 +267,20 @@ public final class b implements l {
 
     @Override // fd.l
     public void releaseOutputBuffer(int i10, boolean z10) {
-        this.f22750a.releaseOutputBuffer(i10, z10);
+        this.f23051a.releaseOutputBuffer(i10, z10);
     }
 
     @Override // fd.l
     public void setParameters(Bundle bundle) {
         q();
-        this.f22750a.setParameters(bundle);
+        this.f23051a.setParameters(bundle);
     }
 
     private b(MediaCodec mediaCodec, HandlerThread handlerThread, HandlerThread handlerThread2, boolean z10) {
-        this.f22750a = mediaCodec;
-        this.f22751b = new g(handlerThread);
-        this.f22752c = new e(mediaCodec, handlerThread2);
-        this.f22753d = z10;
-        this.f22755f = 0;
+        this.f23051a = mediaCodec;
+        this.f23052b = new g(handlerThread);
+        this.f23053c = new e(mediaCodec, handlerThread2);
+        this.f23054d = z10;
+        this.f23056f = 0;
     }
 }

@@ -44,7 +44,7 @@ public final class AFi1fSDKT8615$AFa1uSDK implements OnCompleteListener<Integrit
         } else {
             try {
                 Object[] objArr = {this.getRevenue, task.k()};
-                Map map = AFi1hSDK.f8245d;
+                Map map = AFi1hSDK.f8144d;
                 Object obj = map.get(-556555390);
                 if (obj != null) {
                     c10 = 2;
@@ -74,7 +74,7 @@ public final class AFi1fSDKT8615$AFa1uSDK implements OnCompleteListener<Integrit
         objArr2[c10] = str;
         objArr2[c11] = Long.valueOf(j11);
         objArr2[0] = aFi1jSDK;
-        Map map2 = AFi1hSDK.f8245d;
+        Map map2 = AFi1hSDK.f8144d;
         Object obj2 = map2.get(1107971505);
         if (obj2 == null) {
             obj2 = ((Class) AFi1hSDK.getCurrencyIso4217Code((char) (AudioTrack.getMinVolume() > 0.0f ? 1 : (AudioTrack.getMinVolume() == 0.0f ? 0 : -1)), (Process.getElapsedCpuTime() > j10 ? 1 : (Process.getElapsedCpuTime() == j10 ? 0 : -1)) + 35, Process.myPid() >> 22)).getMethod("getCurrencyIso4217Code", (Class) AFi1hSDK.getCurrencyIso4217Code((char) (ViewConfiguration.getPressedStateDuration() >> 16), 36 - View.MeasureSpec.getSize(0), ViewConfiguration.getScrollBarFadeDuration() >> 16), Long.TYPE, String.class, String.class);

@@ -1,44 +1,21 @@
 package un;
 
-import kotlin.enums.EnumEntries;
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+import kotlin.jvm.internal.Intrinsics;
+import kotlinx.coroutines.flow.MutableSharedFlow;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class n {
-
-    /* renamed from: d  reason: collision with root package name */
-    public static final n f51614d = new n("FRONT", 0);
-
-    /* renamed from: e  reason: collision with root package name */
-    public static final n f51615e = new n("BACK", 1);
-
-    /* renamed from: i  reason: collision with root package name */
-    public static final n f51616i = new n("EXTERNAL", 2);
-
-    /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ n[] f51617o;
-
-    /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f51618p;
-
-    static {
-        n[] a10 = a();
-        f51617o = a10;
-        f51618p = vr.a.a(a10);
+public class n {
+    public zn.a a(ar.a realCameraStatsManager) {
+        Intrinsics.checkNotNullParameter(realCameraStatsManager, "realCameraStatsManager");
+        Object obj = realCameraStatsManager.get();
+        Intrinsics.checkNotNullExpressionValue(obj, "get(...)");
+        return (zn.a) obj;
     }
 
-    private n(String str, int i10) {
+    public final MutableSharedFlow b() {
+        return rs.c0.b(0, 0, null, 7, null);
     }
 
-    private static final /* synthetic */ n[] a() {
-        return new n[]{f51614d, f51615e, f51616i};
-    }
-
-    public static n valueOf(String str) {
-        return (n) Enum.valueOf(n.class, str);
-    }
-
-    public static n[] values() {
-        return (n[]) f51617o.clone();
+    public final MutableSharedFlow c() {
+        return rs.c0.b(0, 0, null, 7, null);
     }
 }

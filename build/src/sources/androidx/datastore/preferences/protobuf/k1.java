@@ -32,7 +32,7 @@ abstract class k1 {
     public abstract Object k(Object obj, Object obj2);
 
     final void l(Object obj, c1 c1Var) {
-        while (c1Var.D() != Integer.MAX_VALUE && m(obj, c1Var)) {
+        while (c1Var.z() != Integer.MAX_VALUE && m(obj, c1Var)) {
         }
     }
 
@@ -47,7 +47,7 @@ abstract class k1 {
                     if (b10 != 3) {
                         if (b10 != 4) {
                             if (b10 == 5) {
-                                a(obj, a10, c1Var.w());
+                                a(obj, a10, c1Var.t());
                                 return true;
                             }
                             throw z.d();
@@ -63,13 +63,13 @@ abstract class k1 {
                     }
                     throw z.a();
                 }
-                d(obj, a10, c1Var.o());
+                d(obj, a10, c1Var.n());
                 return true;
             }
-            b(obj, a10, c1Var.b());
+            b(obj, a10, c1Var.a());
             return true;
         }
-        e(obj, a10, c1Var.L());
+        e(obj, a10, c1Var.G());
         return true;
     }
 

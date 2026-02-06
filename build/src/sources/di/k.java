@@ -1,0 +1,22 @@
+package di;
+
+import android.app.PendingIntent;
+import android.os.Bundle;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+final class k extends j {
+
+    /* renamed from: f  reason: collision with root package name */
+    final String f20779f;
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public k(l lVar, yg.k kVar, String str) {
+        super(lVar, new ei.i("OnRequestInstallCallback"), kVar);
+        this.f20779f = str;
+    }
+
+    @Override // di.j, ei.h
+    public final void H0(Bundle bundle) {
+        super.H0(bundle);
+        this.f20777d.e(new d((PendingIntent) bundle.get("confirmation_intent"), bundle.getBoolean("is_review_no_op")));
+    }
+}

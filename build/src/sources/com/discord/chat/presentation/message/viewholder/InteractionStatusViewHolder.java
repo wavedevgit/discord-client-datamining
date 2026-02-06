@@ -20,6 +20,6 @@ public final class InteractionStatusViewHolder extends MessagePartViewHolder {
 
     public final void bind(@NotNull InteractionStatusMessageAccessory accessory) {
         Intrinsics.checkNotNullParameter(accessory, "accessory");
-        this.interactionStatusView.m698setInteractionStatusntcYbpo(accessory.mo538getMessageId3Eiw7ao(), accessory.getInteractionStatus());
+        this.interactionStatusView.m696setInteractionStatusntcYbpo(accessory.mo536getMessageId3Eiw7ao(), accessory.getInteractionStatus());
     }
 }

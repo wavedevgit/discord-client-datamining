@@ -3,6 +3,8 @@ package ga;
 import android.graphics.Bitmap;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public interface c {
+    int[] A();
+
     int a();
 
     int b();
@@ -13,13 +15,11 @@ public interface c {
 
     int getWidth();
 
-    int u();
+    int w();
 
-    boolean v();
+    boolean x();
 
-    Bitmap.Config w();
+    Bitmap.Config y();
 
-    d x(int i10);
-
-    int[] y();
+    d z(int i10);
 }

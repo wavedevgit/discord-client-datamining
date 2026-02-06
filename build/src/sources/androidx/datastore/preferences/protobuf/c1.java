@@ -7,9 +7,9 @@ import java.util.Map;
 interface c1 {
     void A(List list);
 
-    long B();
+    void B(List list);
 
-    String C();
+    boolean C();
 
     int D();
 
@@ -17,75 +17,75 @@ interface c1 {
 
     void F(List list);
 
-    void G(List list, d1 d1Var, o oVar);
+    long G();
 
-    boolean H();
+    String H();
 
-    int I();
+    Object I(d1 d1Var, o oVar);
 
-    void J(List list);
+    void J(List list, d1 d1Var, o oVar);
 
-    void K(List list);
+    Object K(d1 d1Var, o oVar);
 
-    long L();
+    void L(Map map, h0.a aVar, o oVar);
 
-    String M();
+    void M(List list, d1 d1Var, o oVar);
 
-    Object a(d1 d1Var, o oVar);
+    long a();
 
-    long b();
+    void b(List list);
 
     void c(List list);
 
-    void d(List list);
+    boolean d();
 
-    boolean e();
+    long e();
 
-    long f();
+    void f(List list);
 
-    void g(List list);
+    int g();
 
     int getTag();
 
-    int h();
+    void h(List list);
 
     void i(List list);
 
-    void j(List list);
+    int j();
 
     int k();
 
-    int l();
+    void l(List list);
 
     void m(List list);
 
-    void n(List list);
+    g n();
 
-    g o();
+    int o();
 
-    int p();
+    void p(List list);
 
-    void q(List list, d1 d1Var, o oVar);
+    void q(List list);
 
-    void r(List list);
+    long r();
 
     double readDouble();
 
     float readFloat();
 
-    Object s(d1 d1Var, o oVar);
+    void s(List list);
 
-    void t(List list);
+    int t();
 
-    long u();
+    void u(List list);
 
     void v(List list);
 
-    int w();
+    void w(List list);
 
-    void x(List list);
+    long x();
 
-    void y(List list);
+    String y();
 
-    void z(Map map, h0.a aVar, o oVar);
+    int z();
 }

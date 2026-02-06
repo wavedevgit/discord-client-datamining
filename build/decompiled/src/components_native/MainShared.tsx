@@ -40,42 +40,42 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.bind(var0)(var3);
     var3 = var3.jsx;
     var _closure1_slot7 = var3;
-    var3 = 18;
+    var3 = 16;
     var3 = var5[var3];
     var7 = var6.bind(var0)(var3);
     var6 = var7.fileFinishedImporting;
     var3 = 'components_native/MainShared.tsx';
     var3 = var6.bind(var7)(var3);
-    var3 = 19;
+    var3 = 17;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var2.BurstReactionAnimationContainer = var3;
-    var3 = 20;
+    var3 = 18;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var2.MenuContainer = var3;
-    var3 = 21;
+    var3 = 19;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var2.ActionSheetContainer = var3;
-    var3 = 22;
+    var3 = 20;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var2.Alerts = var3;
-    var3 = 23;
+    var3 = 21;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var2.SoundPlayer = var3;
-    var3 = 24;
+    var3 = 22;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var2.MainViewTooltipActionSheets = var3;
-    var3 = 25;
+    var3 = 23;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var2.ToastContainer = var3;
     var3 = function() {
-        _fun109656: for (var _fun109656_ip = 0;;) switch (_fun109656_ip) {
+        _fun109681: for (var _fun109681_ip = 0;;) switch (_fun109681_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var3 = _closure1_slot2;
@@ -121,26 +121,26 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var3 == var5;
                 var0 = null;
                 if (var8) {
-                    _fun109656_ip = 203;
-                    continue _fun109656
+                    _fun109681_ip = 203;
+                    continue _fun109681
                 }
             case 152:
                 var0 = null;
                 if (!var7) {
-                    _fun109656_ip = 203;
-                    continue _fun109656
+                    _fun109681_ip = 203;
+                    continue _fun109681
                 }
             case 157:
                 var0 = null;
                 if (var6) {
-                    _fun109656_ip = 203;
-                    continue _fun109656
+                    _fun109681_ip = 203;
+                    continue _fun109681
                 }
             case 162:
                 var0 = null;
                 if (var2) {
-                    _fun109656_ip = 203;
-                    continue _fun109656
+                    _fun109681_ip = 203;
+                    continue _fun109681
                 }
             case 167:
                 var3 = _closure1_slot7;
@@ -161,7 +161,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = _closure1_slot3;
         var3 = var4.useMemo;
         var2 = function() { // Environment: var1
-            _fun109659: for (var _fun109659_ip = 0;;) switch (_fun109659_ip) {
+            _fun109684: for (var _fun109684_ip = 0;;) switch (_fun109684_ip) {
                 case 0:
                     var1 = {
                         'input': 'k',
@@ -177,15 +177,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var3.isAndroid;
                     var2 = var2.bind(var3)();
                     if (var2) {
-                        _fun109659_ip = 70;
-                        continue _fun109659
+                        _fun109684_ip = 70;
+                        continue _fun109684
                     }
                 case 52:
                     var2 = _closure1_slot4;
                     var2 = var2.KeyCommandsView;
                     var2 = var2.keyModifierCommand;
-                    _fun109659_ip = 106;
-                    continue _fun109659;
+                    _fun109684_ip = 106;
+                    continue _fun109684;
                 case 70:
                     var4 = _closure1_slot1;
                     var6 = _closure1_slot2;
@@ -239,45 +239,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.useAppKeyCommands = var3;
-    var3 = function() {
-        var3 = _closure1_slot3;
-        var2 = var3.useEffect;
-        var1 = function() { // Environment: var0
-            var5 = _closure1_slot1;
-            var6 = _closure1_slot2;
-            var0 = 15;
-            var1 = var6[var0];
-            var0 = undefined;
-            var3 = var5.bind(var0)(var1);
-            var2 = var3.init;
-            var1 = {};
-            var7 = _closure1_slot0;
-            var4 = 7;
-            var4 = var6[var4];
-            var4 = var7.bind(var0)(var4);
-            var4 = var4.isModalOpen;
-            var1.hasModalOpen = var4;
-            var4 = 16;
-            var4 = var6[var4];
-            var4 = var5.bind(var0)(var4);
-            var4 = var4.open;
-            var1.openModal = var4;
-            var1 = var2.bind(var3)(var1);
-            return var0;
-        };
-        var0 = new Array(0);
-        var0 = var2.bind(var3)(var1, var0);
-        var0 = undefined;
-        return var0;
-    };
-    var2.useUpsellManager = var3;
     var1 = function() {
         var3 = _closure1_slot3;
         var2 = var3.useEffect;
         var1 = function() { // Environment: var0
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
-            var0 = 17;
+            var0 = 15;
             var1 = var1[var0];
             var0 = undefined;
             var2 = var2.bind(var0)(var1);
@@ -292,4 +260,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useScreenReaderEnabled = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1372, 3518, 33, 566, 7921, 3919, 7902, 14128, 478, 13044, 1234, 14130, 13038, 10329, 10331, 12787, 2, 14131, 14132, 14133, 14134, 14142, 14144, 5224]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1372, 3520, 33, 566, 7926, 3921, 7907, 14132, 478, 13046, 1234, 14134, 13040, 12790, 2, 14135, 14136, 14137, 14138, 14146, 14148, 5225]);

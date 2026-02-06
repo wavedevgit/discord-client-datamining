@@ -34,7 +34,7 @@ public final class BytesRequest extends n {
         byte[] bArr;
         if (kVar != null) {
             try {
-                bArr = kVar.f8175b;
+                bArr = kVar.f8074b;
             } catch (Exception e10) {
                 p a10 = p.a(new m(e10));
                 Intrinsics.checkNotNull(a10);

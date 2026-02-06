@@ -6,15 +6,15 @@ import kotlin.jvm.internal.Intrinsics;
 public class u implements Consumer {
 
     /* renamed from: a  reason: collision with root package name */
-    private Consumer f30695a;
+    private Consumer f29668a;
 
     public void a(Consumer consumer) {
-        this.f30695a = consumer;
+        this.f29668a = consumer;
     }
 
     @Override // androidx.core.util.Consumer
     public void accept(Object obj) {
-        Intrinsics.checkNotNull(this.f30695a, "Listener is not set.");
-        this.f30695a.accept(obj);
+        Intrinsics.checkNotNull(this.f29668a, "Listener is not set.");
+        this.f29668a.accept(obj);
     }
 }

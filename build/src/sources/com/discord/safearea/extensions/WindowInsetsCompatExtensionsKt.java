@@ -87,7 +87,7 @@ public final class WindowInsetsCompatExtensionsKt {
         } else {
             i10 = 0;
         }
-        Insets c11 = Insets.c(insets.f3275a, insets.f3276b, insets.f3277c, i10);
+        Insets c11 = Insets.c(insets.f3604a, insets.f3605b, insets.f3606c, i10);
         Intrinsics.checkNotNullExpressionValue(c11, "of(...)");
         return c11;
     }

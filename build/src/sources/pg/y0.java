@@ -1,68 +1,94 @@
 package pg;
 
+import java.util.AbstractCollection;
 import java.util.Collection;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Map;
-/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class y0 extends m1 {
-    abstract Map b();
+final class y0 extends AbstractCollection {
 
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
+    /* renamed from: d  reason: collision with root package name */
+    final Map f44940d;
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public y0(Map map) {
+        this.f44940d = map;
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection
     public final void clear() {
-        b().clear();
+        this.f44940d.clear();
     }
 
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public abstract boolean contains(Object obj);
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public final boolean contains(Object obj) {
+        return this.f44940d.containsValue(obj);
+    }
 
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
+    @Override // java.util.AbstractCollection, java.util.Collection
     public final boolean isEmpty() {
-        return b().isEmpty();
+        return this.f44940d.isEmpty();
     }
 
-    @Override // pg.m1, java.util.AbstractSet, java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public final boolean removeAll(Collection collection) {
+    @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable
+    public final Iterator iterator() {
+        return new v0(this.f44940d.entrySet().iterator());
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public final boolean remove(Object obj) {
         try {
-            if (collection != null) {
-                return n1.b(this, collection);
-            }
-            throw null;
+            return super.remove(obj);
         } catch (UnsupportedOperationException unused) {
-            return n1.c(this, collection.iterator());
+            for (Map.Entry entry : this.f44940d.entrySet()) {
+                if (ze.a(obj, entry.getValue())) {
+                    this.f44940d.remove(entry.getKey());
+                    return true;
+                }
+            }
+            return false;
         }
     }
 
-    @Override // pg.m1, java.util.AbstractCollection, java.util.Collection, java.util.Set
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public final boolean removeAll(Collection collection) {
+        try {
+            if (collection != null) {
+                return super.removeAll(collection);
+            }
+            throw null;
+        } catch (UnsupportedOperationException unused) {
+            HashSet hashSet = new HashSet();
+            for (Map.Entry entry : this.f44940d.entrySet()) {
+                if (collection.contains(entry.getValue())) {
+                    hashSet.add(entry.getKey());
+                }
+            }
+            return this.f44940d.keySet().removeAll(hashSet);
+        }
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection
     public final boolean retainAll(Collection collection) {
-        int i10;
         try {
             if (collection != null) {
                 return super.retainAll(collection);
             }
             throw null;
         } catch (UnsupportedOperationException unused) {
-            int size = collection.size();
-            if (size < 3) {
-                r.a(size, "expectedSize");
-                i10 = size + 1;
-            } else if (size < 1073741824) {
-                i10 = (int) Math.ceil(size / 0.75d);
-            } else {
-                i10 = Integer.MAX_VALUE;
-            }
-            HashSet hashSet = new HashSet(i10);
-            for (Object obj : collection) {
-                if (contains(obj) && (obj instanceof Map.Entry)) {
-                    hashSet.add(((Map.Entry) obj).getKey());
+            HashSet hashSet = new HashSet();
+            for (Map.Entry entry : this.f44940d.entrySet()) {
+                if (collection.contains(entry.getValue())) {
+                    hashSet.add(entry.getKey());
                 }
             }
-            return ((e) b()).f45179o.d().retainAll(hashSet);
+            return this.f44940d.keySet().retainAll(hashSet);
         }
     }
 
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
+    @Override // java.util.AbstractCollection, java.util.Collection
     public final int size() {
-        return b().size();
+        return this.f44940d.size();
     }
 }

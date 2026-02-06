@@ -190,7 +190,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/channel_following/native/components/NewChannelFollower.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun76882: for (var _fun76882_ip = 0;;) switch (_fun76882_ip) {
+        _fun76909: for (var _fun76909_ip = 0;;) switch (_fun76909_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.sourceGuildId;
@@ -299,8 +299,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var30 = var1.bind(var3)(var36);
                 var25 = var10 != var29;
                 if (!var25) {
-                    _fun76882_ip = 383;
-                    continue _fun76882
+                    _fun76909_ip = 383;
+                    continue _fun76909
                 }
             case 379:
                 var25 = var10 != var0;
@@ -312,20 +312,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var5[var16];
                 var1 = var1.bind(var3)(var0);
                 var0 = function() { // Environment: var23
-                    _fun76885: for (var _fun76885_ip = 0;;) switch (_fun76885_ip) {
+                    _fun76912: for (var _fun76912_ip = 0;;) switch (_fun76912_ip) {
                         case 0:
                             var1 = _closure2_slot10;
                             if (!var1) {
-                                _fun76885_ip = 35;
-                                continue _fun76885
+                                _fun76912_ip = 35;
+                                continue _fun76912
                             }
                         case 10:
                             var0 = _closure2_slot8;
                             var1 = var0.current;
                             var0 = null;
                             if (!(var0 != var1)) {
-                                _fun76885_ip = 35;
-                                continue _fun76885
+                                _fun76912_ip = 35;
+                                continue _fun76912
                             }
                         case 25:
                             var0 = var1.expandActionSheet;
@@ -345,15 +345,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = _closure1_slot1;
                 var2 = _closure1_slot2;
                 if (var0) {
-                    _fun76882_ip = 471;
-                    continue _fun76882
+                    _fun76909_ip = 471;
+                    continue _fun76909
                 }
             case 457:
                 var0 = 19;
                 var0 = var2[var0];
                 var11 = var1.bind(var3)(var0);
-                _fun76882_ip = 483;
-                continue _fun76882;
+                _fun76909_ip = 483;
+                continue _fun76909;
             case 471:
                 var0 = 18;
                 var0 = var2[var0];
@@ -417,8 +417,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var27 = var10 != var31;
                 var26 = null;
                 if (!var27) {
-                    _fun76882_ip = 740;
-                    continue _fun76882
+                    _fun76909_ip = 740;
+                    continue _fun76909
                 }
             case 709:
                 var28 = _closure1_slot0;
@@ -538,8 +538,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var28 = var27.TableRow;
                 var27 = {};
                 if (!(var10 == var40)) {
-                    _fun76882_ip = 1273;
-                    continue _fun76882
+                    _fun76909_ip = 1273;
+                    continue _fun76909
                 }
             case 1219:
                 var38 = _closure1_slot0;
@@ -553,8 +553,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var32 = var32.t;
                 var32 = var32.XqMe3N;
                 var32 = var35.bind(var37)(var32);
-                _fun76882_ip = 1278;
-                continue _fun76882;
+                _fun76909_ip = 1278;
+                continue _fun76909;
             case 1273:
                 var32 = var40.name;
             case 1278:
@@ -562,8 +562,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var35 = var10 != var40;
                 var32 = null;
                 if (!var35) {
-                    _fun76882_ip = 1353;
-                    continue _fun76882
+                    _fun76909_ip = 1353;
+                    continue _fun76909
                 }
             case 1291:
                 var38 = _closure1_slot16;
@@ -584,7 +584,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var27.icon = var32;
                 var27.arrow = var18;
                 var32 = function() {
-                    _fun76886: for (var _fun76886_ip = 0;;) switch (_fun76886_ip) {
+                    _fun76913: for (var _fun76913_ip = 0;;) switch (_fun76913_ip) {
                         case 0:
                             var3 = _closure1_slot1;
                             var11 = _closure1_slot2;
@@ -629,7 +629,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var6 = new var15[var6](var14);
                             var7 = var6 instanceof Object ? var6 : var7;
                             var6 = function(arg0, arg1) { // Environment: var1
-                                _fun76887: for (var _fun76887_ip = 0;;) switch (_fun76887_ip) {
+                                _fun76914: for (var _fun76914_ip = 0;;) switch (_fun76914_ip) {
                                     case 0:
                                         var0 = arg0;
                                         var4 = _closure1_slot10;
@@ -639,8 +639,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         var1 = null;
                                         var1 = var1 != var3;
                                         if (!var1) {
-                                            _fun76887_ip = 58;
-                                            continue _fun76887
+                                            _fun76914_ip = 58;
+                                            continue _fun76914
                                         }
                                     case 32:
                                         var5 = _closure1_slot11;
@@ -650,8 +650,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         var1 = var4.bind(var5)(var2, var3);
                                     case 58:
                                         if (!var1) {
-                                            _fun76887_ip = 91;
-                                            continue _fun76887
+                                            _fun76914_ip = 91;
+                                            continue _fun76914
                                         }
                                     case 61:
                                         var2 = var0.push;
@@ -672,15 +672,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var8 = var6 != var8;
                             var6 = undefined;
                             if (!var8) {
-                                _fun76886_ip = 207;
-                                continue _fun76886
+                                _fun76913_ip = 207;
+                                continue _fun76913
                             }
                         case 203:
                             var6 = _closure2_slot2;
                         case 207:
                             var2.selectedItem = var6;
                             var6 = function arg0() {
-                                _fun76888: for (var _fun76888_ip = 0;;) switch (_fun76888_ip) {
+                                _fun76915: for (var _fun76915_ip = 0;;) switch (_fun76915_ip) {
                                     case 0:
                                         var3 = arg0;
                                         var2 = _closure2_slot4;
@@ -692,8 +692,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         var0 = undefined;
                                         var1 = undefined;
                                         if (var5) {
-                                            _fun76888_ip = 46;
-                                            continue _fun76888
+                                            _fun76915_ip = 46;
+                                            continue _fun76915
                                         }
                                     case 41:
                                         var1 = var4.id;
@@ -745,8 +745,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var28 = var27.TableRow;
                 var27 = {};
                 if (!(var10 == var30)) {
-                    _fun76882_ip = 1547;
-                    continue _fun76882
+                    _fun76909_ip = 1547;
+                    continue _fun76909
                 }
             case 1495:
                 var37 = _closure1_slot0;
@@ -767,8 +767,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var30 = var10 != var36;
                 var29 = null;
                 if (!var30) {
-                    _fun76882_ip = 1663;
-                    continue _fun76882
+                    _fun76909_ip = 1663;
+                    continue _fun76909
                 }
             case 1568:
                 var32 = _closure1_slot16;
@@ -796,13 +796,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var27.icon = var29;
                 var27.arrow = var18;
                 var29 = function() {
-                    _fun76890: for (var _fun76890_ip = 0;;) switch (_fun76890_ip) {
+                    _fun76917: for (var _fun76917_ip = 0;;) switch (_fun76917_ip) {
                         case 0:
                             var0 = _closure2_slot2;
                             var5 = null;
                             if (!(var5 != var0)) {
-                                _fun76890_ip = 122;
-                                continue _fun76890
+                                _fun76917_ip = 122;
+                                continue _fun76917
                             }
                         case 15:
                             var1 = _closure1_slot1;
@@ -818,8 +818,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var7 = var5 != var7;
                             var5 = null;
                             if (!var7) {
-                                _fun76890_ip = 67;
-                                continue _fun76890
+                                _fun76917_ip = 67;
+                                continue _fun76917
                             }
                         case 63:
                             var5 = _closure2_slot9;
@@ -828,7 +828,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = _closure1_slot9;
                             var0.channelType = var4;
                             var4 = function arg0() {
-                                _fun76891: for (var _fun76891_ip = 0;;) switch (_fun76891_ip) {
+                                _fun76918: for (var _fun76918_ip = 0;;) switch (_fun76918_ip) {
                                     case 0:
                                         var0 = arg0;
                                         var4 = var0.channel;
@@ -837,8 +837,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         var0 = var0.GUILD_TEXT;
                                         var0 = var2 === var0;
                                         if (!var0) {
-                                            _fun76891_ip = 59;
-                                            continue _fun76891
+                                            _fun76918_ip = 59;
+                                            continue _fun76918
                                         }
                                     case 33:
                                         var3 = _closure1_slot11;
@@ -908,8 +908,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var10 != var17;
                 var10 = null;
                 if (!var11) {
-                    _fun76882_ip = 1867;
-                    continue _fun76882
+                    _fun76909_ip = 1867;
+                    continue _fun76909
                 }
             case 1823:
                 var16 = _closure1_slot16;
@@ -952,13 +952,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18.disabled = var25;
                 var18.loading = var24;
                 var23 = function() {
-                    _fun76894: for (var _fun76894_ip = 0;;) switch (_fun76894_ip) {
+                    _fun76921: for (var _fun76921_ip = 0;;) switch (_fun76921_ip) {
                         case 0:
                             var2 = _closure2_slot3;
                             var1 = null;
                             if (!(var1 != var2)) {
-                                _fun76894_ip = 103;
-                                continue _fun76894
+                                _fun76921_ip = 103;
+                                continue _fun76921
                             }
                         case 13:
                             var2 = _closure2_slot6;
@@ -979,7 +979,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var1.bind(var2)(var0);
                             var1 = var2.catch;
                             var0 = function(arg0) { // Environment: var0
-                                _fun76895: for (var _fun76895_ip = 0;;) switch (_fun76895_ip) {
+                                _fun76922: for (var _fun76922_ip = 0;;) switch (_fun76922_ip) {
                                     case 0:
                                         var3 = _closure2_slot6;
                                         var0 = undefined;
@@ -991,8 +991,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         var3 = _closure1_slot13;
                                         var3 = var3.TOO_MANY_WEBHOOKS;
                                         if (!(var4 !== var3)) {
-                                            _fun76895_ip = 114;
-                                            continue _fun76895
+                                            _fun76922_ip = 114;
+                                            continue _fun76922
                                         }
                                     case 46:
                                         var4 = _closure2_slot7;
@@ -1009,8 +1009,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         var3 = var3.LgwhuN;
                                         var3 = var5.bind(var6)(var3);
                                         var3 = var4.bind(var0)(var3);
-                                        _fun76895_ip = 180;
-                                        continue _fun76895;
+                                        _fun76922_ip = 180;
+                                        continue _fun76922;
                                     case 114:
                                         var2 = _closure2_slot7;
                                         var5 = _closure1_slot0;
@@ -1090,4 +1090,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1372, 1671, 1410, 3091, 4376, 660, 33, 1297, 671, 5729, 3246, 566, 4794, 4103, 3206, 9804, 9805, 4933, 4935, 7415, 4086, 4809, 3941, 1234, 4080, 5367, 4900, 3278, 5381, 1307, 9806, 5382, 6463, 4084, 9647, 5204, 5204, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1372, 1671, 1410, 3093, 4377, 660, 33, 1297, 671, 5733, 3248, 566, 4795, 4104, 3208, 9811, 9812, 4934, 4936, 7420, 4087, 4810, 3943, 1234, 4081, 5368, 4901, 3280, 5382, 1307, 9813, 5383, 6467, 4085, 9654, 5205, 5205, 2]);

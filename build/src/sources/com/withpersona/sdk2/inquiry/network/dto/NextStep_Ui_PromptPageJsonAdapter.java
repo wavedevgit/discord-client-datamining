@@ -40,7 +40,7 @@ public final class NextStep_Ui_PromptPageJsonAdapter extends h {
     @NotNull
     public NextStep.Ui.PromptPage fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         String str = null;
         String str2 = null;
         String str3 = null;
@@ -49,10 +49,10 @@ public final class NextStep_Ui_PromptPageJsonAdapter extends h {
         String str6 = null;
         String str7 = null;
         while (reader.hasNext()) {
-            switch (reader.W(this.options)) {
+            switch (reader.J(this.options)) {
                 case -1:
                     reader.E0();
-                    reader.P();
+                    reader.S();
                     break;
                 case 0:
                     str = (String) this.nullableStringAdapter.fromJson(reader);
@@ -77,7 +77,7 @@ public final class NextStep_Ui_PromptPageJsonAdapter extends h {
                     break;
             }
         }
-        reader.z();
+        reader.D();
         return new NextStep.Ui.PromptPage(str, str2, str3, str4, str5, str6, str7);
     }
 
@@ -86,21 +86,21 @@ public final class NextStep_Ui_PromptPageJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (promptPage != null) {
             writer.k();
-            writer.W("gpsPermissionsBtnCancel");
+            writer.J("gpsPermissionsBtnCancel");
             this.nullableStringAdapter.toJson(writer, promptPage.getGpsPermissionsBtnCancel());
-            writer.W("gpsPermissionsBtnContinueMobile");
+            writer.J("gpsPermissionsBtnContinueMobile");
             this.nullableStringAdapter.toJson(writer, promptPage.getGpsPermissionsAllowButtonText());
-            writer.W("gpsDeviceFeatureBtnContinueMobile");
+            writer.J("gpsDeviceFeatureBtnContinueMobile");
             this.nullableStringAdapter.toJson(writer, promptPage.getGpsFeatureTurnOnText());
-            writer.W("gpsPermissionsPrompt");
+            writer.J("gpsPermissionsPrompt");
             this.nullableStringAdapter.toJson(writer, promptPage.getGpsPermissionsPrompt());
-            writer.W("gpsPermissionsTitle");
+            writer.J("gpsPermissionsTitle");
             this.nullableStringAdapter.toJson(writer, promptPage.getGpsPermissionsTitle());
-            writer.W("gpsFeaturePrompt");
+            writer.J("gpsFeaturePrompt");
             this.nullableStringAdapter.toJson(writer, promptPage.getGpsFeaturePrompt());
-            writer.W("gpsFeatureTitle");
+            writer.J("gpsFeatureTitle");
             this.nullableStringAdapter.toJson(writer, promptPage.getGpsFeatureTitle());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

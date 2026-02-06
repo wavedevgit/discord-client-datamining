@@ -1,68 +1,88 @@
 package pg;
 
+import java.util.AbstractSet;
+import java.util.Iterator;
 import java.util.Map;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class z extends n {
+final class z extends AbstractSet {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Object f45926d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private int f45927e;
-
-    /* renamed from: i  reason: collision with root package name */
-    final /* synthetic */ c0 f45928i;
+    final /* synthetic */ f0 f44980d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public z(c0 c0Var, int i10) {
-        this.f45928i = c0Var;
-        this.f45926d = c0.j(c0Var, i10);
-        this.f45927e = i10;
+    public z(f0 f0Var) {
+        this.f44980d = f0Var;
     }
 
-    private final void a() {
-        int z10;
-        int i10 = this.f45927e;
-        if (i10 == -1 || i10 >= this.f45928i.size() || !dl.a(this.f45926d, c0.j(this.f45928i, this.f45927e))) {
-            z10 = this.f45928i.z(this.f45926d);
-            this.f45927e = z10;
-        }
+    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
+    public final void clear() {
+        this.f44980d.clear();
     }
 
-    @Override // pg.n, java.util.Map.Entry
-    public final Object getKey() {
-        return this.f45926d;
+    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
+    public final boolean contains(Object obj) {
+        int x10;
+        Map n10 = this.f44980d.n();
+        if (n10 != null) {
+            return n10.entrySet().contains(obj);
+        }
+        if (obj instanceof Map.Entry) {
+            Map.Entry entry = (Map.Entry) obj;
+            x10 = this.f44980d.x(entry.getKey());
+            if (x10 != -1 && ze.a(f0.l(this.f44980d, x10), entry.getValue())) {
+                return true;
+            }
+        }
+        return false;
     }
 
-    @Override // pg.n, java.util.Map.Entry
-    public final Object getValue() {
-        Map o10 = this.f45928i.o();
-        if (o10 != null) {
-            return o10.get(this.f45926d);
+    @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set
+    public final Iterator iterator() {
+        f0 f0Var = this.f44980d;
+        Map n10 = f0Var.n();
+        if (n10 != null) {
+            return n10.entrySet().iterator();
         }
-        a();
-        int i10 = this.f45927e;
-        if (i10 == -1) {
-            return null;
-        }
-        return c0.m(this.f45928i, i10);
+        return new x(f0Var);
     }
 
-    @Override // java.util.Map.Entry
-    public final Object setValue(Object obj) {
-        Map o10 = this.f45928i.o();
-        if (o10 != null) {
-            return o10.put(this.f45926d, obj);
+    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
+    public final boolean remove(Object obj) {
+        int w10;
+        int[] B;
+        Object[] a10;
+        Object[] b10;
+        Map n10 = this.f44980d.n();
+        if (n10 != null) {
+            return n10.entrySet().remove(obj);
         }
-        a();
-        int i10 = this.f45927e;
-        if (i10 == -1) {
-            this.f45928i.put(this.f45926d, obj);
-            return null;
+        if (!(obj instanceof Map.Entry)) {
+            return false;
         }
-        c0 c0Var = this.f45928i;
-        Object m10 = c0.m(c0Var, i10);
-        c0.q(c0Var, this.f45927e, obj);
-        return m10;
+        Map.Entry entry = (Map.Entry) obj;
+        f0 f0Var = this.f44980d;
+        if (!f0Var.s()) {
+            w10 = f0Var.w();
+            Object key = entry.getKey();
+            Object value = entry.getValue();
+            Object m10 = f0.m(this.f44980d);
+            B = this.f44980d.B();
+            a10 = this.f44980d.a();
+            b10 = this.f44980d.b();
+            int b11 = g0.b(key, value, w10, m10, B, a10, b10);
+            if (b11 == -1) {
+                return false;
+            }
+            this.f44980d.r(b11, w10);
+            f0.d(this.f44980d);
+            this.f44980d.p();
+            return true;
+        }
+        return false;
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
+    public final int size() {
+        return this.f44980d.size();
     }
 }

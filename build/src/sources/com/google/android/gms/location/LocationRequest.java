@@ -9,125 +9,125 @@ import com.google.android.gms.common.internal.ReflectedParcelable;
 import gf.o;
 import gf.q;
 import hf.c;
-import kg.p;
 import kotlin.jvm.internal.LongCompanionObject;
-import tg.m;
-import tg.n;
+import lg.p;
+import ug.m;
+import ug.n;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class LocationRequest extends hf.a implements ReflectedParcelable {
     @NonNull
     public static final Parcelable.Creator<LocationRequest> CREATOR = new com.google.android.gms.location.a();
 
     /* renamed from: d  reason: collision with root package name */
-    private int f14434d;
+    private int f14397d;
 
     /* renamed from: e  reason: collision with root package name */
-    private long f14435e;
+    private long f14398e;
 
     /* renamed from: i  reason: collision with root package name */
-    private long f14436i;
+    private long f14399i;
 
     /* renamed from: o  reason: collision with root package name */
-    private long f14437o;
+    private long f14400o;
 
     /* renamed from: p  reason: collision with root package name */
-    private long f14438p;
+    private long f14401p;
 
     /* renamed from: q  reason: collision with root package name */
-    private int f14439q;
+    private int f14402q;
 
     /* renamed from: r  reason: collision with root package name */
-    private float f14440r;
+    private float f14403r;
 
     /* renamed from: s  reason: collision with root package name */
-    private boolean f14441s;
+    private boolean f14404s;
 
     /* renamed from: t  reason: collision with root package name */
-    private long f14442t;
+    private long f14405t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final int f14443u;
+    private final int f14406u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final int f14444v;
+    private final int f14407v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final boolean f14445w;
+    private final boolean f14408w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final WorkSource f14446x;
+    private final WorkSource f14409x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final p f14447y;
+    private final p f14410y;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
 
         /* renamed from: b  reason: collision with root package name */
-        private long f14449b;
+        private long f14412b;
 
         /* renamed from: a  reason: collision with root package name */
-        private int f14448a = 102;
+        private int f14411a = 102;
 
         /* renamed from: c  reason: collision with root package name */
-        private long f14450c = -1;
+        private long f14413c = -1;
 
         /* renamed from: d  reason: collision with root package name */
-        private long f14451d = 0;
+        private long f14414d = 0;
 
         /* renamed from: e  reason: collision with root package name */
-        private long f14452e = LongCompanionObject.MAX_VALUE;
+        private long f14415e = LongCompanionObject.MAX_VALUE;
 
         /* renamed from: f  reason: collision with root package name */
-        private int f14453f = Integer.MAX_VALUE;
+        private int f14416f = Integer.MAX_VALUE;
 
         /* renamed from: g  reason: collision with root package name */
-        private float f14454g = 0.0f;
+        private float f14417g = 0.0f;
 
         /* renamed from: h  reason: collision with root package name */
-        private boolean f14455h = true;
+        private boolean f14418h = true;
 
         /* renamed from: i  reason: collision with root package name */
-        private long f14456i = -1;
+        private long f14419i = -1;
 
         /* renamed from: j  reason: collision with root package name */
-        private int f14457j = 0;
+        private int f14420j = 0;
 
         /* renamed from: k  reason: collision with root package name */
-        private int f14458k = 0;
+        private int f14421k = 0;
 
         /* renamed from: l  reason: collision with root package name */
-        private boolean f14459l = false;
+        private boolean f14422l = false;
 
         /* renamed from: m  reason: collision with root package name */
-        private WorkSource f14460m = null;
+        private WorkSource f14423m = null;
 
         /* renamed from: n  reason: collision with root package name */
-        private p f14461n = null;
+        private p f14424n = null;
 
         public a(long j10) {
             b(j10);
         }
 
         public LocationRequest a() {
-            int i10 = this.f14448a;
-            long j10 = this.f14449b;
-            long j11 = this.f14450c;
+            int i10 = this.f14411a;
+            long j10 = this.f14412b;
+            long j11 = this.f14413c;
             if (j11 == -1) {
                 j11 = j10;
             } else if (i10 != 105) {
                 j11 = Math.min(j11, j10);
             }
-            long max = Math.max(this.f14451d, this.f14449b);
-            long j12 = this.f14452e;
-            int i11 = this.f14453f;
-            float f10 = this.f14454g;
-            boolean z10 = this.f14455h;
-            long j13 = this.f14456i;
+            long max = Math.max(this.f14414d, this.f14412b);
+            long j12 = this.f14415e;
+            int i11 = this.f14416f;
+            float f10 = this.f14417g;
+            boolean z10 = this.f14418h;
+            long j13 = this.f14419i;
             if (j13 == -1) {
-                j13 = this.f14449b;
+                j13 = this.f14412b;
             }
-            return new LocationRequest(i10, j10, j11, max, LongCompanionObject.MAX_VALUE, j12, i11, f10, z10, j13, this.f14457j, this.f14458k, this.f14459l, new WorkSource(this.f14460m), this.f14461n);
+            return new LocationRequest(i10, j10, j11, max, LongCompanionObject.MAX_VALUE, j12, i11, f10, z10, j13, this.f14420j, this.f14421k, this.f14422l, new WorkSource(this.f14423m), this.f14424n);
         }
 
         public a b(long j10) {
@@ -138,7 +138,7 @@ public final class LocationRequest extends hf.a implements ReflectedParcelable {
                 z10 = false;
             }
             q.b(z10, "intervalMillis must be greater than or equal to 0");
-            this.f14449b = j10;
+            this.f14412b = j10;
             return this;
         }
 
@@ -148,66 +148,66 @@ public final class LocationRequest extends hf.a implements ReflectedParcelable {
                 z10 = false;
             }
             q.b(z10, "minUpdateIntervalMillis must be greater than or equal to 0, or IMPLICIT_MIN_UPDATE_INTERVAL");
-            this.f14450c = j10;
+            this.f14413c = j10;
             return this;
         }
 
         public a d(int i10) {
             m.a(i10);
-            this.f14448a = i10;
+            this.f14411a = i10;
             return this;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public LocationRequest(int i10, long j10, long j11, long j12, long j13, long j14, int i11, float f10, boolean z10, long j15, int i12, int i13, boolean z11, WorkSource workSource, p pVar) {
-        this.f14434d = i10;
+        this.f14397d = i10;
         if (i10 == 105) {
-            this.f14435e = LongCompanionObject.MAX_VALUE;
+            this.f14398e = LongCompanionObject.MAX_VALUE;
         } else {
-            this.f14435e = j10;
+            this.f14398e = j10;
         }
-        this.f14436i = j11;
-        this.f14437o = j12;
-        this.f14438p = j13 == LongCompanionObject.MAX_VALUE ? j14 : Math.min(Math.max(1L, j13 - SystemClock.elapsedRealtime()), j14);
-        this.f14439q = i11;
-        this.f14440r = f10;
-        this.f14441s = z10;
-        this.f14442t = j15 != -1 ? j15 : j10;
-        this.f14443u = i12;
-        this.f14444v = i13;
-        this.f14445w = z11;
-        this.f14446x = workSource;
-        this.f14447y = pVar;
+        this.f14399i = j11;
+        this.f14400o = j12;
+        this.f14401p = j13 == LongCompanionObject.MAX_VALUE ? j14 : Math.min(Math.max(1L, j13 - SystemClock.elapsedRealtime()), j14);
+        this.f14402q = i11;
+        this.f14403r = f10;
+        this.f14404s = z10;
+        this.f14405t = j15 != -1 ? j15 : j10;
+        this.f14406u = i12;
+        this.f14407v = i13;
+        this.f14408w = z11;
+        this.f14409x = workSource;
+        this.f14410y = pVar;
     }
 
-    private static String q(long j10) {
+    private static String r(long j10) {
         if (j10 == LongCompanionObject.MAX_VALUE) {
             return "∞";
         }
-        return kg.q.a(j10);
+        return lg.q.a(j10);
     }
 
     public long b() {
-        return this.f14438p;
+        return this.f14401p;
     }
 
     public int c() {
-        return this.f14443u;
+        return this.f14406u;
     }
 
     public long d() {
-        return this.f14435e;
+        return this.f14398e;
     }
 
     public long e() {
-        return this.f14442t;
+        return this.f14405t;
     }
 
     public boolean equals(Object obj) {
         if (obj instanceof LocationRequest) {
             LocationRequest locationRequest = (LocationRequest) obj;
-            if (this.f14434d == locationRequest.f14434d && ((o() || this.f14435e == locationRequest.f14435e) && this.f14436i == locationRequest.f14436i && n() == locationRequest.n() && ((!n() || this.f14437o == locationRequest.f14437o) && this.f14438p == locationRequest.f14438p && this.f14439q == locationRequest.f14439q && this.f14440r == locationRequest.f14440r && this.f14441s == locationRequest.f14441s && this.f14443u == locationRequest.f14443u && this.f14444v == locationRequest.f14444v && this.f14445w == locationRequest.f14445w && this.f14446x.equals(locationRequest.f14446x) && o.a(this.f14447y, locationRequest.f14447y)))) {
+            if (this.f14397d == locationRequest.f14397d && ((p() || this.f14398e == locationRequest.f14398e) && this.f14399i == locationRequest.f14399i && o() == locationRequest.o() && ((!o() || this.f14400o == locationRequest.f14400o) && this.f14401p == locationRequest.f14401p && this.f14402q == locationRequest.f14402q && this.f14403r == locationRequest.f14403r && this.f14404s == locationRequest.f14404s && this.f14406u == locationRequest.f14406u && this.f14407v == locationRequest.f14407v && this.f14408w == locationRequest.f14408w && this.f14409x.equals(locationRequest.f14409x) && o.a(this.f14410y, locationRequest.f14410y)))) {
                 return true;
             }
         }
@@ -215,104 +215,104 @@ public final class LocationRequest extends hf.a implements ReflectedParcelable {
     }
 
     public long f() {
-        return this.f14437o;
+        return this.f14400o;
     }
 
-    public int g() {
-        return this.f14439q;
+    public int h() {
+        return this.f14402q;
     }
 
     public int hashCode() {
-        return o.b(Integer.valueOf(this.f14434d), Long.valueOf(this.f14435e), Long.valueOf(this.f14436i), this.f14446x);
+        return o.b(Integer.valueOf(this.f14397d), Long.valueOf(this.f14398e), Long.valueOf(this.f14399i), this.f14409x);
     }
 
     public float i() {
-        return this.f14440r;
+        return this.f14403r;
     }
 
     public long j() {
-        return this.f14436i;
+        return this.f14399i;
     }
 
     public int l() {
-        return this.f14434d;
-    }
-
-    public boolean n() {
-        long j10 = this.f14437o;
-        return j10 > 0 && (j10 >> 1) >= this.f14435e;
+        return this.f14397d;
     }
 
     public boolean o() {
-        return this.f14434d == 105;
+        long j10 = this.f14400o;
+        return j10 > 0 && (j10 >> 1) >= this.f14398e;
     }
 
     public boolean p() {
-        return this.f14441s;
+        return this.f14397d == 105;
+    }
+
+    public boolean q() {
+        return this.f14404s;
     }
 
     public String toString() {
         StringBuilder sb2 = new StringBuilder();
         sb2.append("Request[");
-        if (o()) {
-            sb2.append(m.b(this.f14434d));
-            if (this.f14437o > 0) {
+        if (p()) {
+            sb2.append(m.b(this.f14397d));
+            if (this.f14400o > 0) {
                 sb2.append("/");
-                kg.q.b(this.f14437o, sb2);
+                lg.q.b(this.f14400o, sb2);
             }
         } else {
             sb2.append("@");
-            if (n()) {
-                kg.q.b(this.f14435e, sb2);
+            if (o()) {
+                lg.q.b(this.f14398e, sb2);
                 sb2.append("/");
-                kg.q.b(this.f14437o, sb2);
+                lg.q.b(this.f14400o, sb2);
             } else {
-                kg.q.b(this.f14435e, sb2);
+                lg.q.b(this.f14398e, sb2);
             }
             sb2.append(" ");
-            sb2.append(m.b(this.f14434d));
+            sb2.append(m.b(this.f14397d));
         }
-        if (o() || this.f14436i != this.f14435e) {
+        if (p() || this.f14399i != this.f14398e) {
             sb2.append(", minUpdateInterval=");
-            sb2.append(q(this.f14436i));
+            sb2.append(r(this.f14399i));
         }
-        if (this.f14440r > 0.0d) {
+        if (this.f14403r > 0.0d) {
             sb2.append(", minUpdateDistance=");
-            sb2.append(this.f14440r);
+            sb2.append(this.f14403r);
         }
-        if (!o() ? this.f14442t != this.f14435e : this.f14442t != LongCompanionObject.MAX_VALUE) {
+        if (!p() ? this.f14405t != this.f14398e : this.f14405t != LongCompanionObject.MAX_VALUE) {
             sb2.append(", maxUpdateAge=");
-            sb2.append(q(this.f14442t));
+            sb2.append(r(this.f14405t));
         }
-        if (this.f14438p != LongCompanionObject.MAX_VALUE) {
+        if (this.f14401p != LongCompanionObject.MAX_VALUE) {
             sb2.append(", duration=");
-            kg.q.b(this.f14438p, sb2);
+            lg.q.b(this.f14401p, sb2);
         }
-        if (this.f14439q != Integer.MAX_VALUE) {
+        if (this.f14402q != Integer.MAX_VALUE) {
             sb2.append(", maxUpdates=");
-            sb2.append(this.f14439q);
+            sb2.append(this.f14402q);
         }
-        if (this.f14444v != 0) {
+        if (this.f14407v != 0) {
             sb2.append(", ");
-            sb2.append(n.a(this.f14444v));
+            sb2.append(n.a(this.f14407v));
         }
-        if (this.f14443u != 0) {
+        if (this.f14406u != 0) {
             sb2.append(", ");
-            sb2.append(tg.p.a(this.f14443u));
+            sb2.append(ug.p.a(this.f14406u));
         }
-        if (this.f14441s) {
+        if (this.f14404s) {
             sb2.append(", waitForAccurateLocation");
         }
-        if (this.f14445w) {
+        if (this.f14408w) {
             sb2.append(", bypass");
         }
-        if (!com.google.android.gms.common.util.o.d(this.f14446x)) {
+        if (!com.google.android.gms.common.util.o.d(this.f14409x)) {
             sb2.append(", ");
-            sb2.append(this.f14446x);
+            sb2.append(this.f14409x);
         }
-        if (this.f14447y != null) {
+        if (this.f14410y != null) {
             sb2.append(", impersonation=");
-            sb2.append(this.f14447y);
+            sb2.append(this.f14410y);
         }
         sb2.append(']');
         return sb2.toString();
@@ -324,17 +324,17 @@ public final class LocationRequest extends hf.a implements ReflectedParcelable {
         c.l(parcel, 1, l());
         c.o(parcel, 2, d());
         c.o(parcel, 3, j());
-        c.l(parcel, 6, g());
+        c.l(parcel, 6, h());
         c.j(parcel, 7, i());
         c.o(parcel, 8, f());
-        c.c(parcel, 9, p());
+        c.c(parcel, 9, q());
         c.o(parcel, 10, b());
         c.o(parcel, 11, e());
         c.l(parcel, 12, c());
-        c.l(parcel, 13, this.f14444v);
-        c.c(parcel, 15, this.f14445w);
-        c.q(parcel, 16, this.f14446x, i10, false);
-        c.q(parcel, 17, this.f14447y, i10, false);
+        c.l(parcel, 13, this.f14407v);
+        c.c(parcel, 15, this.f14408w);
+        c.q(parcel, 16, this.f14409x, i10, false);
+        c.q(parcel, 17, this.f14410y, i10, false);
         c.b(parcel, a10);
     }
 }

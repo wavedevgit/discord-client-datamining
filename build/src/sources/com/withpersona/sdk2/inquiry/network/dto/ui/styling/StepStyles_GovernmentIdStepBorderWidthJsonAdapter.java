@@ -41,24 +41,24 @@ public final class StepStyles_GovernmentIdStepBorderWidthJsonAdapter extends h {
     @NotNull
     public StepStyles.GovernmentIdStepBorderWidth fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         StyleElements.MeasurementSet measurementSet = null;
         StyleElements.MeasurementSet measurementSet2 = null;
         StyleElements.MeasurementSet measurementSet3 = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 measurementSet = (StyleElements.MeasurementSet) this.nullableMeasurementSetAdapter.fromJson(reader);
-            } else if (W == 1) {
+            } else if (J == 1) {
                 measurementSet2 = (StyleElements.MeasurementSet) this.nullableMeasurementSetAdapter.fromJson(reader);
-            } else if (W == 2) {
+            } else if (J == 2) {
                 measurementSet3 = (StyleElements.MeasurementSet) this.nullableMeasurementSetAdapter.fromJson(reader);
             }
         }
-        reader.z();
+        reader.D();
         return new StepStyles.GovernmentIdStepBorderWidth(measurementSet, measurementSet2, measurementSet3);
     }
 
@@ -67,13 +67,13 @@ public final class StepStyles_GovernmentIdStepBorderWidthJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (governmentIdStepBorderWidth != null) {
             writer.k();
-            writer.W("governmentIdSelectOption");
+            writer.J("governmentIdSelectOption");
             this.nullableMeasurementSetAdapter.toJson(writer, governmentIdStepBorderWidth.getGovernmentIdSelectOption());
-            writer.W("governmentIdCaptureFeedBox");
+            writer.J("governmentIdCaptureFeedBox");
             this.nullableMeasurementSetAdapter.toJson(writer, governmentIdStepBorderWidth.getGovernmentIdCaptureFeedBox());
-            writer.W("governmentIdReviewImageBox");
+            writer.J("governmentIdReviewImageBox");
             this.nullableMeasurementSetAdapter.toJson(writer, governmentIdStepBorderWidth.getGovernmentIdReviewImageBox());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

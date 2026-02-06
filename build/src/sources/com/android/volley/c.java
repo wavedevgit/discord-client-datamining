@@ -7,41 +7,41 @@ import java.util.concurrent.BlockingQueue;
 public class c extends Thread {
 
     /* renamed from: r  reason: collision with root package name */
-    private static final boolean f8148r = v.f8206b;
+    private static final boolean f8047r = v.f8105b;
 
     /* renamed from: d  reason: collision with root package name */
-    private final BlockingQueue f8149d;
+    private final BlockingQueue f8048d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final BlockingQueue f8150e;
+    private final BlockingQueue f8049e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final b f8151i;
+    private final b f8050i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final q f8152o;
+    private final q f8051o;
 
     /* renamed from: p  reason: collision with root package name */
-    private volatile boolean f8153p = false;
+    private volatile boolean f8052p = false;
 
     /* renamed from: q  reason: collision with root package name */
-    private final w f8154q;
+    private final w f8053q;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public class a implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ n f8155d;
+        final /* synthetic */ n f8054d;
 
         a(n nVar) {
-            this.f8155d = nVar;
+            this.f8054d = nVar;
         }
 
         @Override // java.lang.Runnable
         public void run() {
             try {
-                c.this.f8150e.put(this.f8155d);
+                c.this.f8049e.put(this.f8054d);
             } catch (InterruptedException unused) {
                 Thread.currentThread().interrupt();
             }
@@ -49,15 +49,15 @@ public class c extends Thread {
     }
 
     public c(BlockingQueue blockingQueue, BlockingQueue blockingQueue2, b bVar, q qVar) {
-        this.f8149d = blockingQueue;
-        this.f8150e = blockingQueue2;
-        this.f8151i = bVar;
-        this.f8152o = qVar;
-        this.f8154q = new w(this, blockingQueue2, qVar);
+        this.f8048d = blockingQueue;
+        this.f8049e = blockingQueue2;
+        this.f8050i = bVar;
+        this.f8051o = qVar;
+        this.f8053q = new w(this, blockingQueue2, qVar);
     }
 
     private void b() {
-        c((n) this.f8149d.take());
+        c((n) this.f8048d.take());
     }
 
     void c(n nVar) {
@@ -68,11 +68,11 @@ public class c extends Thread {
                 nVar.finish("cache-discard-canceled");
                 return;
             }
-            b.a a10 = this.f8151i.a(nVar.getCacheKey());
+            b.a a10 = this.f8050i.a(nVar.getCacheKey());
             if (a10 == null) {
                 nVar.addMarker("cache-miss");
-                if (!this.f8154q.c(nVar)) {
-                    this.f8150e.put(nVar);
+                if (!this.f8053q.c(nVar)) {
+                    this.f8049e.put(nVar);
                 }
                 return;
             }
@@ -80,33 +80,33 @@ public class c extends Thread {
             if (a10.b(currentTimeMillis)) {
                 nVar.addMarker("cache-hit-expired");
                 nVar.setCacheEntry(a10);
-                if (!this.f8154q.c(nVar)) {
-                    this.f8150e.put(nVar);
+                if (!this.f8053q.c(nVar)) {
+                    this.f8049e.put(nVar);
                 }
                 return;
             }
             nVar.addMarker("cache-hit");
-            p parseNetworkResponse = nVar.parseNetworkResponse(new k(a10.f8140a, a10.f8146g));
+            p parseNetworkResponse = nVar.parseNetworkResponse(new k(a10.f8039a, a10.f8045g));
             nVar.addMarker("cache-hit-parsed");
             if (!parseNetworkResponse.b()) {
                 nVar.addMarker("cache-parsing-failed");
-                this.f8151i.b(nVar.getCacheKey(), true);
+                this.f8050i.b(nVar.getCacheKey(), true);
                 nVar.setCacheEntry(null);
-                if (!this.f8154q.c(nVar)) {
-                    this.f8150e.put(nVar);
+                if (!this.f8053q.c(nVar)) {
+                    this.f8049e.put(nVar);
                 }
                 return;
             }
             if (!a10.c(currentTimeMillis)) {
-                this.f8152o.a(nVar, parseNetworkResponse);
+                this.f8051o.a(nVar, parseNetworkResponse);
             } else {
                 nVar.addMarker("cache-hit-refresh-needed");
                 nVar.setCacheEntry(a10);
-                parseNetworkResponse.f8202d = true;
-                if (!this.f8154q.c(nVar)) {
-                    this.f8152o.b(nVar, parseNetworkResponse, new a(nVar));
+                parseNetworkResponse.f8101d = true;
+                if (!this.f8053q.c(nVar)) {
+                    this.f8051o.b(nVar, parseNetworkResponse, new a(nVar));
                 } else {
-                    this.f8152o.a(nVar, parseNetworkResponse);
+                    this.f8051o.a(nVar, parseNetworkResponse);
                 }
             }
         } finally {
@@ -115,22 +115,22 @@ public class c extends Thread {
     }
 
     public void d() {
-        this.f8153p = true;
+        this.f8052p = true;
         interrupt();
     }
 
     @Override // java.lang.Thread, java.lang.Runnable
     public void run() {
-        if (f8148r) {
+        if (f8047r) {
             v.e("start new dispatcher", new Object[0]);
         }
         Process.setThreadPriority(10);
-        this.f8151i.initialize();
+        this.f8050i.initialize();
         while (true) {
             try {
                 b();
             } catch (InterruptedException unused) {
-                if (this.f8153p) {
+                if (this.f8052p) {
                     Thread.currentThread().interrupt();
                     return;
                 }

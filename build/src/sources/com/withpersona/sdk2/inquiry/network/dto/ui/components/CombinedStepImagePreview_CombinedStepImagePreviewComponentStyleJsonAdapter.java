@@ -57,27 +57,27 @@ public final class CombinedStepImagePreview_CombinedStepImagePreviewComponentSty
     @NotNull
     public CombinedStepImagePreview.CombinedStepImagePreviewComponentStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         AttributeStyles.RemoteImageHeightStyle remoteImageHeightStyle = null;
         AttributeStyles.RemoteImageWidthStyle remoteImageWidthStyle = null;
         AttributeStyles.RemoteImageJustifyStyle remoteImageJustifyStyle = null;
         AttributeStyles.RemoteImageMarginStyle remoteImageMarginStyle = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 remoteImageHeightStyle = (AttributeStyles.RemoteImageHeightStyle) this.nullableRemoteImageHeightStyleAdapter.fromJson(reader);
-            } else if (W == 1) {
+            } else if (J == 1) {
                 remoteImageWidthStyle = (AttributeStyles.RemoteImageWidthStyle) this.nullableRemoteImageWidthStyleAdapter.fromJson(reader);
-            } else if (W == 2) {
+            } else if (J == 2) {
                 remoteImageJustifyStyle = (AttributeStyles.RemoteImageJustifyStyle) this.nullableRemoteImageJustifyStyleAdapter.fromJson(reader);
-            } else if (W == 3) {
+            } else if (J == 3) {
                 remoteImageMarginStyle = (AttributeStyles.RemoteImageMarginStyle) this.nullableRemoteImageMarginStyleAdapter.fromJson(reader);
             }
         }
-        reader.z();
+        reader.D();
         return new CombinedStepImagePreview.CombinedStepImagePreviewComponentStyle(remoteImageHeightStyle, remoteImageWidthStyle, remoteImageJustifyStyle, remoteImageMarginStyle);
     }
 
@@ -86,15 +86,15 @@ public final class CombinedStepImagePreview_CombinedStepImagePreviewComponentSty
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (combinedStepImagePreviewComponentStyle != null) {
             writer.k();
-            writer.W("height");
+            writer.J("height");
             this.nullableRemoteImageHeightStyleAdapter.toJson(writer, combinedStepImagePreviewComponentStyle.getHeight());
-            writer.W("width");
+            writer.J("width");
             this.nullableRemoteImageWidthStyleAdapter.toJson(writer, combinedStepImagePreviewComponentStyle.getWidth());
-            writer.W("justify");
+            writer.J("justify");
             this.nullableRemoteImageJustifyStyleAdapter.toJson(writer, combinedStepImagePreviewComponentStyle.getJustify());
-            writer.W(ViewProps.MARGIN);
+            writer.J(ViewProps.MARGIN);
             this.nullableRemoteImageMarginStyleAdapter.toJson(writer, combinedStepImagePreviewComponentStyle.getMargin());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

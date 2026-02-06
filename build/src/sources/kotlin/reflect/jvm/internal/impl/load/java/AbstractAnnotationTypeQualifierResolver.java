@@ -26,16 +26,16 @@ import org.jetbrains.annotations.NotNull;
 public abstract class AbstractAnnotationTypeQualifierResolver<TAnnotation> {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final a f32660c = new a(null);
+    private static final a f32680c = new a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Map f32661d;
+    private static final Map f32681d;
 
     /* renamed from: a  reason: collision with root package name */
-    private final JavaTypeEnhancementState f32662a;
+    private final JavaTypeEnhancementState f32682a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ConcurrentHashMap f32663b;
+    private final ConcurrentHashMap f32683b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     private static final class a {
@@ -56,13 +56,13 @@ public abstract class AbstractAnnotationTypeQualifierResolver<TAnnotation> {
                 linkedHashMap.put(javaTarget, annotationQualifierApplicabilityType);
             }
         }
-        f32661d = linkedHashMap;
+        f32681d = linkedHashMap;
     }
 
     public AbstractAnnotationTypeQualifierResolver(@NotNull JavaTypeEnhancementState javaTypeEnhancementState) {
         Intrinsics.checkNotNullParameter(javaTypeEnhancementState, "javaTypeEnhancementState");
-        this.f32662a = javaTypeEnhancementState;
-        this.f32663b = new ConcurrentHashMap();
+        this.f32682a = javaTypeEnhancementState;
+        this.f32683b = new ConcurrentHashMap();
     }
 
     private final Set b(Set set) {
@@ -88,7 +88,7 @@ public abstract class AbstractAnnotationTypeQualifierResolver<TAnnotation> {
         if (k10 == null) {
             k10 = j(a10);
         }
-        if (k10.isIgnore() || (e10 = e(a10, kotlin.reflect.jvm.internal.impl.load.java.a.f32770d)) == null) {
+        if (k10.isIgnore() || (e10 = e(a10, kotlin.reflect.jvm.internal.impl.load.java.a.f32790d)) == null) {
             return null;
         }
         return new JavaDefaultQualifiers(NullabilityQualifierWithMigrationStatus.copy$default(e10, null, k10.isWarning(), 1, null), set, false, 4, null);
@@ -164,7 +164,7 @@ public abstract class AbstractAnnotationTypeQualifierResolver<TAnnotation> {
             if (r0 != 0) goto L8
             return r1
         L8:
-            kotlin.reflect.jvm.internal.impl.load.java.JavaTypeEnhancementState r2 = r5.f32662a
+            kotlin.reflect.jvm.internal.impl.load.java.JavaTypeEnhancementState r2 = r5.f32682a
             kotlin.jvm.functions.Function1 r2 = r2.getGetReportLevelForAnnotation()
             java.lang.Object r2 = r2.invoke(r0)
             kotlin.reflect.jvm.internal.impl.load.java.ReportLevel r2 = (kotlin.reflect.jvm.internal.impl.load.java.ReportLevel) r2
@@ -256,7 +256,7 @@ public abstract class AbstractAnnotationTypeQualifierResolver<TAnnotation> {
     private final ReportLevel i(Object obj) {
         FqName fqName = getFqName(obj);
         if (fqName != null && JavaDefaultQualifiersKt.getJSPECIFY_DEFAULT_ANNOTATIONS().containsKey(fqName)) {
-            return (ReportLevel) this.f32662a.getGetReportLevelForAnnotation().invoke(fqName);
+            return (ReportLevel) this.f32682a.getGetReportLevelForAnnotation().invoke(fqName);
         }
         return j(obj);
     }
@@ -266,13 +266,13 @@ public abstract class AbstractAnnotationTypeQualifierResolver<TAnnotation> {
         if (k10 != null) {
             return k10;
         }
-        return this.f32662a.getJsr305().getGlobalLevel();
+        return this.f32682a.getJsr305().getGlobalLevel();
     }
 
     private final ReportLevel k(Object obj) {
         Iterable enumArguments;
         String str;
-        ReportLevel reportLevel = this.f32662a.getJsr305().getUserDefinedLevelForSpecificAnnotation().get(getFqName(obj));
+        ReportLevel reportLevel = this.f32682a.getJsr305().getUserDefinedLevelForSpecificAnnotation().get(getFqName(obj));
         if (reportLevel != null) {
             return reportLevel;
         }
@@ -280,7 +280,7 @@ public abstract class AbstractAnnotationTypeQualifierResolver<TAnnotation> {
         if (f10 == null || (enumArguments = enumArguments(f10, false)) == null || (str = (String) CollectionsKt.p0(enumArguments)) == null) {
             return null;
         }
-        ReportLevel migrationLevel = this.f32662a.getJsr305().getMigrationLevel();
+        ReportLevel migrationLevel = this.f32682a.getJsr305().getMigrationLevel();
         if (migrationLevel == null) {
             int hashCode = str.hashCode();
             if (hashCode != -2137067054) {
@@ -301,7 +301,7 @@ public abstract class AbstractAnnotationTypeQualifierResolver<TAnnotation> {
 
     private final JavaDefaultQualifiers l(Object obj) {
         JavaDefaultQualifiers javaDefaultQualifiers;
-        if (this.f32662a.getDisabledDefaultAnnotations() || (javaDefaultQualifiers = JavaDefaultQualifiersKt.getBUILT_IN_TYPE_QUALIFIER_DEFAULT_ANNOTATIONS().get(getFqName(obj))) == null) {
+        if (this.f32682a.getDisabledDefaultAnnotations() || (javaDefaultQualifiers = JavaDefaultQualifiersKt.getBUILT_IN_TYPE_QUALIFIER_DEFAULT_ANNOTATIONS().get(getFqName(obj))) == null) {
             return null;
         }
         ReportLevel i10 = i(obj);
@@ -318,7 +318,7 @@ public abstract class AbstractAnnotationTypeQualifierResolver<TAnnotation> {
     private final Pair m(Object obj) {
         Object f10;
         Object obj2;
-        if (this.f32662a.getJsr305().isDisabled() || (f10 = f(obj, JvmAnnotationNamesKt.getJAVAX_TYPE_QUALIFIER_DEFAULT_ANNOTATION_FQ_NAME())) == null) {
+        if (this.f32682a.getJsr305().isDisabled() || (f10 = f(obj, JvmAnnotationNamesKt.getJAVAX_TYPE_QUALIFIER_DEFAULT_ANNOTATION_FQ_NAME())) == null) {
             return null;
         }
         Iterator it = getMetaAnnotations(obj).iterator();
@@ -339,7 +339,7 @@ public abstract class AbstractAnnotationTypeQualifierResolver<TAnnotation> {
         Iterable<String> enumArguments = enumArguments(f10, true);
         LinkedHashSet linkedHashSet = new LinkedHashSet();
         for (String str : enumArguments) {
-            AnnotationQualifierApplicabilityType annotationQualifierApplicabilityType = (AnnotationQualifierApplicabilityType) f32661d.get(str);
+            AnnotationQualifierApplicabilityType annotationQualifierApplicabilityType = (AnnotationQualifierApplicabilityType) f32681d.get(str);
             if (annotationQualifierApplicabilityType != null) {
                 linkedHashSet.add(annotationQualifierApplicabilityType);
             }
@@ -353,7 +353,7 @@ public abstract class AbstractAnnotationTypeQualifierResolver<TAnnotation> {
         EnumMap enumMap;
         EnumMap<AnnotationQualifierApplicabilityType, JavaDefaultQualifiers> defaultQualifiers;
         Intrinsics.checkNotNullParameter(annotations, "annotations");
-        if (!this.f32662a.getDisabledDefaultAnnotations()) {
+        if (!this.f32682a.getDisabledDefaultAnnotations()) {
             ArrayList<JavaDefaultQualifiers> arrayList = new ArrayList();
             for (TAnnotation tannotation : annotations) {
                 JavaDefaultQualifiers c10 = c(tannotation);
@@ -471,14 +471,14 @@ public abstract class AbstractAnnotationTypeQualifierResolver<TAnnotation> {
     public final TAnnotation resolveTypeQualifierAnnotation(@NotNull TAnnotation annotation) {
         TAnnotation tannotation;
         Intrinsics.checkNotNullParameter(annotation, "annotation");
-        if (this.f32662a.getJsr305().isDisabled()) {
+        if (this.f32682a.getJsr305().isDisabled()) {
             return null;
         }
         if (!CollectionsKt.d0(JvmAnnotationNamesKt.getBUILT_IN_TYPE_QUALIFIER_ANNOTATIONS(), getFqName(annotation)) && !g(annotation, JvmAnnotationNamesKt.getJAVAX_TYPE_QUALIFIER_ANNOTATION_FQ_NAME())) {
             if (!g(annotation, JvmAnnotationNamesKt.getJAVAX_TYPE_QUALIFIER_NICKNAME_ANNOTATION_FQ_NAME())) {
                 return null;
             }
-            ConcurrentHashMap concurrentHashMap = this.f32663b;
+            ConcurrentHashMap concurrentHashMap = this.f32683b;
             Object key = getKey(annotation);
             TAnnotation tannotation2 = (TAnnotation) concurrentHashMap.get(key);
             if (tannotation2 == null) {

@@ -6,48 +6,48 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a implements j {
 
     /* renamed from: i  reason: collision with root package name */
-    public static final C0707a f53615i = new C0707a(null);
+    public static final C0727a f54434i = new C0727a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f53616d;
+    private final String f54435d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Object[] f53617e;
+    private final Object[] f54436e;
 
     /* renamed from: x3.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static final class C0707a {
-        public /* synthetic */ C0707a(DefaultConstructorMarker defaultConstructorMarker) {
+    public static final class C0727a {
+        public /* synthetic */ C0727a(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
 
         private final void a(i iVar, int i10, Object obj) {
             long j10;
             if (obj == null) {
-                iVar.P1(i10);
+                iVar.O1(i10);
             } else if (obj instanceof byte[]) {
-                iVar.D1(i10, (byte[]) obj);
+                iVar.C1(i10, (byte[]) obj);
             } else if (obj instanceof Float) {
-                iVar.T(i10, ((Number) obj).floatValue());
+                iVar.W(i10, ((Number) obj).floatValue());
             } else if (obj instanceof Double) {
-                iVar.T(i10, ((Number) obj).doubleValue());
+                iVar.W(i10, ((Number) obj).doubleValue());
             } else if (obj instanceof Long) {
-                iVar.w1(i10, ((Number) obj).longValue());
+                iVar.v1(i10, ((Number) obj).longValue());
             } else if (obj instanceof Integer) {
-                iVar.w1(i10, ((Number) obj).intValue());
+                iVar.v1(i10, ((Number) obj).intValue());
             } else if (obj instanceof Short) {
-                iVar.w1(i10, ((Number) obj).shortValue());
+                iVar.v1(i10, ((Number) obj).shortValue());
             } else if (obj instanceof Byte) {
-                iVar.w1(i10, ((Number) obj).byteValue());
+                iVar.v1(i10, ((Number) obj).byteValue());
             } else if (obj instanceof String) {
-                iVar.h1(i10, (String) obj);
+                iVar.g1(i10, (String) obj);
             } else if (obj instanceof Boolean) {
                 if (((Boolean) obj).booleanValue()) {
                     j10 = 1;
                 } else {
                     j10 = 0;
                 }
-                iVar.w1(i10, j10);
+                iVar.v1(i10, j10);
             } else {
                 throw new IllegalArgumentException("Cannot bind " + obj + " at index " + i10 + " Supported types: Null, ByteArray, Float, Double, Long, Int, Short, Byte, String");
             }
@@ -66,25 +66,25 @@ public final class a implements j {
             }
         }
 
-        private C0707a() {
+        private C0727a() {
         }
     }
 
     public a(String query, Object[] objArr) {
         Intrinsics.checkNotNullParameter(query, "query");
-        this.f53616d = query;
-        this.f53617e = objArr;
+        this.f54435d = query;
+        this.f54436e = objArr;
     }
 
     @Override // x3.j
     public String a() {
-        return this.f53616d;
+        return this.f54435d;
     }
 
     @Override // x3.j
-    public void h(i statement) {
+    public void g(i statement) {
         Intrinsics.checkNotNullParameter(statement, "statement");
-        f53615i.b(statement, this.f53617e);
+        f54434i.b(statement, this.f54436e);
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */

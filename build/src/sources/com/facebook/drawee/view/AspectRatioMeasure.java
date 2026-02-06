@@ -9,10 +9,10 @@ public abstract class AspectRatioMeasure {
     public static class Spec {
 
         /* renamed from: a  reason: collision with root package name */
-        public int f10172a;
+        public int f10071a;
 
         /* renamed from: b  reason: collision with root package name */
-        public int f10173b;
+        public int f10072b;
     }
 
     private static boolean a(int i10) {
@@ -22,9 +22,9 @@ public abstract class AspectRatioMeasure {
     public static void b(Spec spec, float f10, ViewGroup.LayoutParams layoutParams, int i10, int i11) {
         if (f10 > 0.0f && layoutParams != null) {
             if (a(layoutParams.height)) {
-                spec.f10173b = View.MeasureSpec.makeMeasureSpec(View.resolveSize((int) (((View.MeasureSpec.getSize(spec.f10172a) - i10) / f10) + i11), spec.f10173b), 1073741824);
+                spec.f10072b = View.MeasureSpec.makeMeasureSpec(View.resolveSize((int) (((View.MeasureSpec.getSize(spec.f10071a) - i10) / f10) + i11), spec.f10072b), 1073741824);
             } else if (a(layoutParams.width)) {
-                spec.f10172a = View.MeasureSpec.makeMeasureSpec(View.resolveSize((int) (((View.MeasureSpec.getSize(spec.f10173b) - i11) * f10) + i10), spec.f10172a), 1073741824);
+                spec.f10071a = View.MeasureSpec.makeMeasureSpec(View.resolveSize((int) (((View.MeasureSpec.getSize(spec.f10072b) - i11) * f10) + i10), spec.f10071a), 1073741824);
             }
         }
     }

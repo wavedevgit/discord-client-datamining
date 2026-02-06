@@ -5,22 +5,22 @@ import android.app.Dialog;
 final class d1 extends k0 {
 
     /* renamed from: a  reason: collision with root package name */
-    final /* synthetic */ Dialog f22895a;
+    final /* synthetic */ Dialog f23196a;
 
     /* renamed from: b  reason: collision with root package name */
-    final /* synthetic */ e1 f22896b;
+    final /* synthetic */ e1 f23197b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public d1(e1 e1Var, Dialog dialog) {
-        this.f22896b = e1Var;
-        this.f22895a = dialog;
+        this.f23197b = e1Var;
+        this.f23196a = dialog;
     }
 
     @Override // ff.k0
     public final void a() {
-        this.f22896b.f22926e.o();
-        if (this.f22895a.isShowing()) {
-            this.f22895a.dismiss();
+        this.f23197b.f23227e.o();
+        if (this.f23196a.isShowing()) {
+            this.f23196a.dismiss();
         }
     }
 }

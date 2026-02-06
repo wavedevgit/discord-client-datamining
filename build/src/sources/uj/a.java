@@ -1,16 +1,25 @@
 package uj;
 
-import androidx.lifecycle.Lifecycle;
-import androidx.lifecycle.o;
-import androidx.lifecycle.w;
-import com.google.android.gms.tasks.Task;
-import ef.f;
-import java.io.Closeable;
+import gf.i;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public interface a extends Closeable, o, f {
-    @Override // java.io.Closeable, java.lang.AutoCloseable
-    @w(Lifecycle.a.ON_DESTROY)
-    void close();
+public class a {
 
-    Task e(yj.a aVar);
+    /* renamed from: b  reason: collision with root package name */
+    private static final i f51563b = new i("ModelFileHelper", "");
+
+    /* renamed from: c  reason: collision with root package name */
+    public static final String f51564c = String.format("com.google.mlkit.%s.models", "translate");
+
+    /* renamed from: d  reason: collision with root package name */
+    public static final String f51565d = String.format("com.google.mlkit.%s.models", "custom");
+
+    /* renamed from: e  reason: collision with root package name */
+    static final String f51566e = String.format("com.google.mlkit.%s.models", "base");
+
+    /* renamed from: a  reason: collision with root package name */
+    private final tj.i f51567a;
+
+    public a(tj.i iVar) {
+        this.f51567a = iVar;
+    }
 }

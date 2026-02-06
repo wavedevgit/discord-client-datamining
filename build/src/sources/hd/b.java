@@ -5,7 +5,7 @@ import gd.c;
 import gd.e;
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
-import li.d;
+import mi.d;
 import ne.g0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class b extends e {
@@ -36,14 +36,14 @@ public final class b extends e {
                     if (h13 != 3) {
                     }
                     while (g0Var.d() < d12) {
-                        str = g0Var.l(g0Var.h(8), d.f36880a);
+                        str = g0Var.l(g0Var.h(8), d.f37169a);
                         int h14 = g0Var.h(8);
                         for (int i10 = 0; i10 < h14; i10++) {
                             g0Var.s(g0Var.h(8));
                         }
                     }
                 } else if (h11 == 21) {
-                    str2 = g0Var.l(h12, d.f36880a);
+                    str2 = g0Var.l(h12, d.f37169a);
                 }
                 g0Var.p(d12 * 8);
             }

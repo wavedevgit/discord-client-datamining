@@ -19,14 +19,14 @@ public class Group extends b {
     @Override // androidx.constraintlayout.widget.b
     public void i(AttributeSet attributeSet) {
         super.i(attributeSet);
-        this.f2739p = false;
+        this.f3068p = false;
     }
 
     @Override // androidx.constraintlayout.widget.b
     public void k(ConstraintLayout constraintLayout) {
         ConstraintLayout.LayoutParams layoutParams = (ConstraintLayout.LayoutParams) getLayoutParams();
-        layoutParams.f2574v0.l1(0);
-        layoutParams.f2574v0.M0(0);
+        layoutParams.f2903v0.l1(0);
+        layoutParams.f2903v0.M0(0);
     }
 
     @Override // androidx.constraintlayout.widget.b, android.view.View

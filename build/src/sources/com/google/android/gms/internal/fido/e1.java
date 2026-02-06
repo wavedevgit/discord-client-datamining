@@ -9,22 +9,22 @@ import java.util.RandomAccess;
 public abstract class e1 extends z0 implements List, RandomAccess {
 
     /* renamed from: e  reason: collision with root package name */
-    private static final d2 f13986e = new a1(t1.f14115q, 0);
+    private static final d2 f13949e = new a1(t1.f14078q, 0);
 
     /* renamed from: i  reason: collision with root package name */
-    public static final /* synthetic */ int f13987i = 0;
+    public static final /* synthetic */ int f13950i = 0;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static e1 i(Object[] objArr, int i10) {
         if (i10 == 0) {
-            return t1.f14115q;
+            return t1.f14078q;
         }
         return new t1(objArr, i10);
     }
 
     public static e1 j(Object[] objArr) {
         if (objArr.length == 0) {
-            return t1.f14115q;
+            return t1.f14078q;
         }
         Object[] objArr2 = (Object[]) objArr.clone();
         int length = objArr2.length;
@@ -151,7 +151,7 @@ public abstract class e1 extends z0 implements List, RandomAccess {
             return this;
         }
         if (i12 == 0) {
-            return t1.f14115q;
+            return t1.f14078q;
         }
         return new d1(this, i10, i12);
     }
@@ -202,11 +202,11 @@ public abstract class e1 extends z0 implements List, RandomAccess {
     }
 
     @Override // java.util.List
-    /* renamed from: n */
+    /* renamed from: o */
     public final d2 listIterator(int i10) {
         k0.b(i10, size(), "index");
         if (isEmpty()) {
-            return f13986e;
+            return f13949e;
         }
         return new a1(this, i10);
     }

@@ -133,7 +133,7 @@ public abstract class BaseChatListItemDelegate<T extends ChatListItem, V extends
     public static final Unit _init_$lambda$0(View view) {
         Intrinsics.checkNotNullParameter(view, "<this>");
         view.setLayoutParams(new RecyclerView.LayoutParams(-1, -2));
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     public abstract void bindView(@NotNull V v10, @NotNull T t10, @NotNull Metadata<V> metadata);

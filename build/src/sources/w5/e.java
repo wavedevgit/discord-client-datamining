@@ -11,28 +11,28 @@ import w5.c;
 public final class e extends c {
 
     /* renamed from: s  reason: collision with root package name */
-    private final BufferedSource f52693s;
+    private final BufferedSource f53472s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final Buffer f52694t;
+    private final Buffer f53473t;
 
     /* renamed from: u  reason: collision with root package name */
-    private int f52695u = 0;
+    private int f53474u = 0;
 
     /* renamed from: v  reason: collision with root package name */
-    private long f52696v;
+    private long f53475v;
 
     /* renamed from: w  reason: collision with root package name */
-    private int f52697w;
+    private int f53476w;
 
     /* renamed from: x  reason: collision with root package name */
-    private String f52698x;
+    private String f53477x;
 
     /* renamed from: y  reason: collision with root package name */
-    private static final ByteString f52691y = ByteString.h("'\\");
+    private static final ByteString f53470y = ByteString.h("'\\");
 
     /* renamed from: z  reason: collision with root package name */
-    private static final ByteString f52692z = ByteString.h("\"\\");
+    private static final ByteString f53471z = ByteString.h("\"\\");
     private static final ByteString A = ByteString.h("{}[]:, \n\t\r\f/\\;#=");
     private static final ByteString B = ByteString.h("\n\r");
     private static final ByteString C = ByteString.h("*/");
@@ -40,220 +40,205 @@ public final class e extends c {
     /* JADX INFO: Access modifiers changed from: package-private */
     public e(BufferedSource bufferedSource) {
         if (bufferedSource != null) {
-            this.f52693s = bufferedSource;
-            this.f52694t = bufferedSource.I();
-            o(6);
+            this.f53472s = bufferedSource;
+            this.f53473t = bufferedSource.M();
+            n(6);
             return;
         }
         throw new NullPointerException("source == null");
     }
 
-    private boolean C0(int i10) {
-        if (i10 != 9 && i10 != 10 && i10 != 12 && i10 != 13 && i10 != 32) {
-            if (i10 != 35) {
-                if (i10 != 44) {
-                    if (i10 != 47 && i10 != 61) {
-                        if (i10 != 123 && i10 != 125 && i10 != 58) {
-                            if (i10 != 59) {
-                                switch (i10) {
-                                    case 91:
-                                    case 93:
-                                        return false;
-                                    case 92:
-                                        break;
-                                    default:
-                                        return true;
-                                }
-                            }
-                        } else {
-                            return false;
-                        }
-                    }
-                } else {
-                    return false;
-                }
-            }
-            N();
-            return false;
+    private void C() {
+        if (this.f53455p) {
+            return;
         }
-        return false;
-    }
-
-    /* JADX WARN: Code restructure failed: missing block: B:15:0x0025, code lost:
-        r6.f52694t.skip(r1);
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:16:0x002d, code lost:
-        if (r2 != 47) goto L16;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:18:0x0037, code lost:
-        if (r6.f52693s.B0(2) != false) goto L28;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:20:0x003a, code lost:
-        N();
-        r3 = r6.f52694t.F0(1);
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:21:0x0047, code lost:
-        if (r3 == 42) goto L30;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:22:0x0049, code lost:
-        if (r3 == 47) goto L39;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:24:0x004c, code lost:
-        r6.f52694t.readByte();
-        r6.f52694t.readByte();
-        Y0();
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:25:0x005a, code lost:
-        r6.f52694t.readByte();
-        r6.f52694t.readByte();
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:26:0x0068, code lost:
-        if (V0() == false) goto L33;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:29:0x0071, code lost:
-        throw L("Unterminated comment");
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:31:0x0074, code lost:
-        if (r2 != 35) goto L22;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:32:0x0076, code lost:
-        N();
-        Y0();
-     */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    private int D0(boolean r7) {
-        /*
-            r6 = this;
-            r0 = 0
-        L1:
-            r1 = r0
-        L2:
-            okio.BufferedSource r2 = r6.f52693s
-            int r3 = r1 + 1
-            long r4 = (long) r3
-            boolean r2 = r2.B0(r4)
-            if (r2 == 0) goto L80
-            okio.Buffer r2 = r6.f52694t
-            long r4 = (long) r1
-            byte r2 = r2.F0(r4)
-            r4 = 10
-            if (r2 == r4) goto L7e
-            r4 = 32
-            if (r2 == r4) goto L7e
-            r4 = 13
-            if (r2 == r4) goto L7e
-            r4 = 9
-            if (r2 != r4) goto L25
-            goto L7e
-        L25:
-            okio.Buffer r3 = r6.f52694t
-            long r4 = (long) r1
-            r3.skip(r4)
-            r1 = 47
-            if (r2 != r1) goto L72
-            okio.BufferedSource r3 = r6.f52693s
-            r4 = 2
-            boolean r3 = r3.B0(r4)
-            if (r3 != 0) goto L3a
-            goto L7d
-        L3a:
-            r6.N()
-            okio.Buffer r3 = r6.f52694t
-            r4 = 1
-            byte r3 = r3.F0(r4)
-            r4 = 42
-            if (r3 == r4) goto L5a
-            if (r3 == r1) goto L4c
-            goto L7d
-        L4c:
-            okio.Buffer r1 = r6.f52694t
-            r1.readByte()
-            okio.Buffer r1 = r6.f52694t
-            r1.readByte()
-            r6.Y0()
-            goto L1
-        L5a:
-            okio.Buffer r1 = r6.f52694t
-            r1.readByte()
-            okio.Buffer r1 = r6.f52694t
-            r1.readByte()
-            boolean r1 = r6.V0()
-            if (r1 == 0) goto L6b
-            goto L1
-        L6b:
-            java.lang.String r7 = "Unterminated comment"
-            w5.b r7 = r6.L(r7)
-            throw r7
-        L72:
-            r1 = 35
-            if (r2 != r1) goto L7d
-            r6.N()
-            r6.Y0()
-            goto L1
-        L7d:
-            return r2
-        L7e:
-            r1 = r3
-            goto L2
-        L80:
-            if (r7 != 0) goto L84
-            r7 = -1
-            return r7
-        L84:
-            java.io.EOFException r7 = new java.io.EOFException
-            java.lang.String r0 = "End of input"
-            r7.<init>(r0)
-            throw r7
-        */
-        throw new UnsupportedOperationException("Method not decompiled: w5.e.D0(boolean):int");
+        throw z("Use JsonReader.setLenient(true) to accept malformed JSON");
     }
 
     private String E0(ByteString byteString) {
         StringBuilder sb2 = null;
         while (true) {
-            long d02 = this.f52693s.d0(byteString);
-            if (d02 != -1) {
-                if (this.f52694t.F0(d02) == 92) {
+            long f02 = this.f53472s.f0(byteString);
+            if (f02 != -1) {
+                if (this.f53473t.Y(f02) == 92) {
                     if (sb2 == null) {
                         sb2 = new StringBuilder();
                     }
-                    sb2.append(this.f52694t.c1(d02));
-                    this.f52694t.readByte();
-                    sb2.append(N0());
+                    sb2.append(this.f53473t.b1(f02));
+                    this.f53473t.readByte();
+                    sb2.append(K0());
                 } else if (sb2 == null) {
-                    String c12 = this.f52694t.c1(d02);
-                    this.f52694t.readByte();
-                    return c12;
+                    String b12 = this.f53473t.b1(f02);
+                    this.f53473t.readByte();
+                    return b12;
                 } else {
-                    sb2.append(this.f52694t.c1(d02));
-                    this.f52694t.readByte();
+                    sb2.append(this.f53473t.b1(f02));
+                    this.f53473t.readByte();
                     return sb2.toString();
                 }
             } else {
-                throw L("Unterminated string");
+                throw z("Unterminated string");
             }
         }
     }
 
     private String F0() {
-        long d02 = this.f52693s.d0(A);
-        if (d02 != -1) {
-            return this.f52694t.c1(d02);
+        long f02 = this.f53472s.f0(A);
+        if (f02 != -1) {
+            return this.f53473t.b1(f02);
         }
-        return this.f52694t.T1();
+        return this.f53473t.S1();
+    }
+
+    private int I() {
+        int[] iArr = this.f53452e;
+        int i10 = this.f53451d;
+        int i11 = iArr[i10 - 1];
+        if (i11 == 1) {
+            iArr[i10 - 1] = 2;
+        } else if (i11 == 2) {
+            int Y = Y(true);
+            this.f53473t.readByte();
+            if (Y != 44) {
+                if (Y != 59) {
+                    if (Y == 93) {
+                        this.f53474u = 4;
+                        return 4;
+                    }
+                    throw z("Unterminated array");
+                }
+                C();
+            }
+        } else if (i11 != 3 && i11 != 5) {
+            if (i11 == 4) {
+                iArr[i10 - 1] = 5;
+                int Y2 = Y(true);
+                this.f53473t.readByte();
+                if (Y2 != 58) {
+                    if (Y2 == 61) {
+                        C();
+                        if (this.f53472s.D0(1L) && this.f53473t.Y(0L) == 62) {
+                            this.f53473t.readByte();
+                        }
+                    } else {
+                        throw z("Expected ':'");
+                    }
+                }
+            } else if (i11 == 6) {
+                iArr[i10 - 1] = 7;
+            } else if (i11 == 7) {
+                if (Y(false) == -1) {
+                    this.f53474u = 18;
+                    return 18;
+                }
+                C();
+            } else if (i11 == 8) {
+                throw new IllegalStateException("JsonReader is closed");
+            }
+        } else {
+            iArr[i10 - 1] = 4;
+            if (i11 == 5) {
+                int Y3 = Y(true);
+                this.f53473t.readByte();
+                if (Y3 != 44) {
+                    if (Y3 != 59) {
+                        if (Y3 == 125) {
+                            this.f53474u = 2;
+                            return 2;
+                        }
+                        throw z("Unterminated object");
+                    }
+                    C();
+                }
+            }
+            int Y4 = Y(true);
+            if (Y4 != 34) {
+                if (Y4 != 39) {
+                    if (Y4 != 125) {
+                        C();
+                        if (P((char) Y4)) {
+                            this.f53474u = 14;
+                            return 14;
+                        }
+                        throw z("Expected name");
+                    } else if (i11 != 5) {
+                        this.f53473t.readByte();
+                        this.f53474u = 2;
+                        return 2;
+                    } else {
+                        throw z("Expected name");
+                    }
+                }
+                this.f53473t.readByte();
+                C();
+                this.f53474u = 12;
+                return 12;
+            }
+            this.f53473t.readByte();
+            this.f53474u = 13;
+            return 13;
+        }
+        int Y5 = Y(true);
+        if (Y5 != 34) {
+            if (Y5 != 39) {
+                if (Y5 != 44 && Y5 != 59) {
+                    if (Y5 != 91) {
+                        if (Y5 != 93) {
+                            if (Y5 != 123) {
+                                int I0 = I0();
+                                if (I0 != 0) {
+                                    return I0;
+                                }
+                                int J0 = J0();
+                                if (J0 != 0) {
+                                    return J0;
+                                }
+                                if (P(this.f53473t.Y(0L))) {
+                                    C();
+                                    this.f53474u = 10;
+                                    return 10;
+                                }
+                                throw z("Expected value");
+                            }
+                            this.f53473t.readByte();
+                            this.f53474u = 1;
+                            return 1;
+                        } else if (i11 == 1) {
+                            this.f53473t.readByte();
+                            this.f53474u = 4;
+                            return 4;
+                        }
+                    } else {
+                        this.f53473t.readByte();
+                        this.f53474u = 3;
+                        return 3;
+                    }
+                }
+                if (i11 != 1 && i11 != 2) {
+                    throw z("Unexpected value");
+                }
+                C();
+                this.f53474u = 7;
+                return 7;
+            }
+            C();
+            this.f53473t.readByte();
+            this.f53474u = 8;
+            return 8;
+        }
+        this.f53473t.readByte();
+        this.f53474u = 9;
+        return 9;
     }
 
     private int I0() {
         String str;
         String str2;
         int i10;
-        byte F0 = this.f52694t.F0(0L);
-        if (F0 != 116 && F0 != 84) {
-            if (F0 != 102 && F0 != 70) {
-                if (F0 != 110 && F0 != 78) {
+        byte Y = this.f53473t.Y(0L);
+        if (Y != 116 && Y != 84) {
+            if (Y != 102 && Y != 70) {
+                if (Y != 110 && Y != 78) {
                     return 0;
                 }
                 str = "null";
@@ -273,25 +258,37 @@ public final class e extends c {
         int i11 = 1;
         while (i11 < length) {
             int i12 = i11 + 1;
-            if (!this.f52693s.B0(i12)) {
+            if (!this.f53472s.D0(i12)) {
                 return 0;
             }
-            byte F02 = this.f52694t.F0(i11);
-            if (F02 != str.charAt(i11) && F02 != str2.charAt(i11)) {
+            byte Y2 = this.f53473t.Y(i11);
+            if (Y2 != str.charAt(i11) && Y2 != str2.charAt(i11)) {
                 return 0;
             }
             i11 = i12;
         }
-        if (this.f52693s.B0(length + 1) && C0(this.f52694t.F0(length))) {
+        if (this.f53472s.D0(length + 1) && P(this.f53473t.Y(length))) {
             return 0;
         }
-        this.f52694t.skip(length);
-        this.f52695u = i10;
+        this.f53473t.skip(length);
+        this.f53474u = i10;
         return i10;
     }
 
+    private int J(String str, c.a aVar) {
+        int length = aVar.f53457a.length;
+        for (int i10 = 0; i10 < length; i10++) {
+            if (str.equals(aVar.f53457a[i10])) {
+                this.f53474u = 0;
+                this.f53453i[this.f53451d - 1] = str;
+                return i10;
+            }
+        }
+        return -1;
+    }
+
     /* JADX WARN: Code restructure failed: missing block: B:44:0x0089, code lost:
-        if (C0(r1) != false) goto L68;
+        if (P(r1) != false) goto L68;
      */
     /* JADX WARN: Code restructure failed: missing block: B:45:0x008b, code lost:
         if (r6 != 2) goto L61;
@@ -318,9 +315,9 @@ public final class e extends c {
         r8 = -r8;
      */
     /* JADX WARN: Code restructure failed: missing block: B:56:0x00a1, code lost:
-        r19.f52696v = r8;
-        r19.f52694t.skip(r5);
-        r19.f52695u = 16;
+        r19.f53475v = r8;
+        r19.f53473t.skip(r5);
+        r19.f53474u = 16;
      */
     /* JADX WARN: Code restructure failed: missing block: B:57:0x00ad, code lost:
         return 16;
@@ -338,8 +335,8 @@ public final class e extends c {
         return r18;
      */
     /* JADX WARN: Code restructure failed: missing block: B:64:0x00b7, code lost:
-        r19.f52697w = r5;
-        r19.f52695u = 17;
+        r19.f53476w = r5;
+        r19.f53474u = 17;
      */
     /* JADX WARN: Code restructure failed: missing block: B:65:0x00bd, code lost:
         return 17;
@@ -351,25 +348,18 @@ public final class e extends c {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
     */
-    private int K0() {
+    private int J0() {
         /*
             Method dump skipped, instructions count: 221
             To view this dump add '--comments-level debug' option
         */
-        throw new UnsupportedOperationException("Method not decompiled: w5.e.K0():int");
+        throw new UnsupportedOperationException("Method not decompiled: w5.e.J0():int");
     }
 
-    private void N() {
-        if (this.f52676p) {
-            return;
-        }
-        throw L("Use JsonReader.setLenient(true) to accept malformed JSON");
-    }
-
-    private char N0() {
+    private char K0() {
         int i10;
-        if (this.f52693s.B0(1L)) {
-            byte readByte = this.f52694t.readByte();
+        if (this.f53472s.D0(1L)) {
+            byte readByte = this.f53473t.readByte();
             if (readByte != 10 && readByte != 34 && readByte != 39 && readByte != 47 && readByte != 92) {
                 if (readByte != 98) {
                     if (readByte != 102) {
@@ -379,30 +369,30 @@ public final class e extends c {
                         if (readByte != 114) {
                             if (readByte != 116) {
                                 if (readByte != 117) {
-                                    if (this.f52676p) {
+                                    if (this.f53455p) {
                                         return (char) readByte;
                                     }
-                                    throw L("Invalid escape sequence: \\" + ((char) readByte));
-                                } else if (this.f52693s.B0(4L)) {
+                                    throw z("Invalid escape sequence: \\" + ((char) readByte));
+                                } else if (this.f53472s.D0(4L)) {
                                     char c10 = 0;
                                     for (int i11 = 0; i11 < 4; i11++) {
-                                        byte F0 = this.f52694t.F0(i11);
+                                        byte Y = this.f53473t.Y(i11);
                                         char c11 = (char) (c10 << 4);
-                                        if (F0 >= 48 && F0 <= 57) {
-                                            i10 = F0 - 48;
-                                        } else if (F0 >= 97 && F0 <= 102) {
-                                            i10 = F0 - 87;
-                                        } else if (F0 < 65 || F0 > 70) {
-                                            throw L("\\u" + this.f52694t.c1(4L));
+                                        if (Y >= 48 && Y <= 57) {
+                                            i10 = Y - 48;
+                                        } else if (Y >= 97 && Y <= 102) {
+                                            i10 = Y - 87;
+                                        } else if (Y < 65 || Y > 70) {
+                                            throw z("\\u" + this.f53473t.b1(4L));
                                         } else {
-                                            i10 = F0 - 55;
+                                            i10 = Y - 55;
                                         }
                                         c10 = (char) (c11 + i10);
                                     }
-                                    this.f52694t.skip(4L);
+                                    this.f53473t.skip(4L);
                                     return c10;
                                 } else {
-                                    throw new EOFException("Unterminated escape sequence at path " + r());
+                                    throw new EOFException("Unterminated escape sequence at path " + t());
                                 }
                             }
                             return '\t';
@@ -415,181 +405,40 @@ public final class e extends c {
             }
             return (char) readByte;
         }
-        throw L("Unterminated escape sequence");
+        throw z("Unterminated escape sequence");
     }
 
-    private void S0(ByteString byteString) {
+    private void L0(ByteString byteString) {
         while (true) {
-            long d02 = this.f52693s.d0(byteString);
-            if (d02 != -1) {
-                if (this.f52694t.F0(d02) == 92) {
-                    this.f52694t.skip(d02 + 1);
-                    N0();
+            long f02 = this.f53472s.f0(byteString);
+            if (f02 != -1) {
+                if (this.f53473t.Y(f02) == 92) {
+                    this.f53473t.skip(f02 + 1);
+                    K0();
                 } else {
-                    this.f52694t.skip(d02 + 1);
+                    this.f53473t.skip(f02 + 1);
                     return;
                 }
             } else {
-                throw L("Unterminated string");
+                throw z("Unterminated string");
             }
         }
     }
 
-    private int V() {
-        int[] iArr = this.f52673e;
-        int i10 = this.f52672d;
-        int i11 = iArr[i10 - 1];
-        if (i11 == 1) {
-            iArr[i10 - 1] = 2;
-        } else if (i11 == 2) {
-            int D0 = D0(true);
-            this.f52694t.readByte();
-            if (D0 != 44) {
-                if (D0 != 59) {
-                    if (D0 == 93) {
-                        this.f52695u = 4;
-                        return 4;
-                    }
-                    throw L("Unterminated array");
-                }
-                N();
-            }
-        } else if (i11 != 3 && i11 != 5) {
-            if (i11 == 4) {
-                iArr[i10 - 1] = 5;
-                int D02 = D0(true);
-                this.f52694t.readByte();
-                if (D02 != 58) {
-                    if (D02 == 61) {
-                        N();
-                        if (this.f52693s.B0(1L) && this.f52694t.F0(0L) == 62) {
-                            this.f52694t.readByte();
-                        }
-                    } else {
-                        throw L("Expected ':'");
-                    }
-                }
-            } else if (i11 == 6) {
-                iArr[i10 - 1] = 7;
-            } else if (i11 == 7) {
-                if (D0(false) == -1) {
-                    this.f52695u = 18;
-                    return 18;
-                }
-                N();
-            } else if (i11 == 8) {
-                throw new IllegalStateException("JsonReader is closed");
-            }
-        } else {
-            iArr[i10 - 1] = 4;
-            if (i11 == 5) {
-                int D03 = D0(true);
-                this.f52694t.readByte();
-                if (D03 != 44) {
-                    if (D03 != 59) {
-                        if (D03 == 125) {
-                            this.f52695u = 2;
-                            return 2;
-                        }
-                        throw L("Unterminated object");
-                    }
-                    N();
-                }
-            }
-            int D04 = D0(true);
-            if (D04 != 34) {
-                if (D04 != 39) {
-                    if (D04 != 125) {
-                        N();
-                        if (C0((char) D04)) {
-                            this.f52695u = 14;
-                            return 14;
-                        }
-                        throw L("Expected name");
-                    } else if (i11 != 5) {
-                        this.f52694t.readByte();
-                        this.f52695u = 2;
-                        return 2;
-                    } else {
-                        throw L("Expected name");
-                    }
-                }
-                this.f52694t.readByte();
-                N();
-                this.f52695u = 12;
-                return 12;
-            }
-            this.f52694t.readByte();
-            this.f52695u = 13;
-            return 13;
-        }
-        int D05 = D0(true);
-        if (D05 != 34) {
-            if (D05 != 39) {
-                if (D05 != 44 && D05 != 59) {
-                    if (D05 != 91) {
-                        if (D05 != 93) {
-                            if (D05 != 123) {
-                                int I0 = I0();
-                                if (I0 != 0) {
-                                    return I0;
-                                }
-                                int K0 = K0();
-                                if (K0 != 0) {
-                                    return K0;
-                                }
-                                if (C0(this.f52694t.F0(0L))) {
-                                    N();
-                                    this.f52695u = 10;
-                                    return 10;
-                                }
-                                throw L("Expected value");
-                            }
-                            this.f52694t.readByte();
-                            this.f52695u = 1;
-                            return 1;
-                        } else if (i11 == 1) {
-                            this.f52694t.readByte();
-                            this.f52695u = 4;
-                            return 4;
-                        }
-                    } else {
-                        this.f52694t.readByte();
-                        this.f52695u = 3;
-                        return 3;
-                    }
-                }
-                if (i11 != 1 && i11 != 2) {
-                    throw L("Unexpected value");
-                }
-                N();
-                this.f52695u = 7;
-                return 7;
-            }
-            N();
-            this.f52694t.readByte();
-            this.f52695u = 8;
-            return 8;
-        }
-        this.f52694t.readByte();
-        this.f52695u = 9;
-        return 9;
-    }
-
-    private boolean V0() {
+    private boolean O0() {
         boolean z10;
         long size;
-        BufferedSource bufferedSource = this.f52693s;
+        BufferedSource bufferedSource = this.f53472s;
         ByteString byteString = C;
-        long U = bufferedSource.U(byteString);
-        if (U != -1) {
+        long X = bufferedSource.X(byteString);
+        if (X != -1) {
             z10 = true;
         } else {
             z10 = false;
         }
-        Buffer buffer = this.f52694t;
+        Buffer buffer = this.f53473t;
         if (z10) {
-            size = U + byteString.G();
+            size = X + byteString.G();
         } else {
             size = buffer.size();
         }
@@ -597,189 +446,337 @@ public final class e extends c {
         return z10;
     }
 
-    private int W(String str, c.a aVar) {
-        int length = aVar.f52678a.length;
-        for (int i10 = 0; i10 < length; i10++) {
-            if (str.equals(aVar.f52678a[i10])) {
-                this.f52695u = 0;
-                this.f52674i[this.f52672d - 1] = str;
-                return i10;
+    private boolean P(int i10) {
+        if (i10 != 9 && i10 != 10 && i10 != 12 && i10 != 13 && i10 != 32) {
+            if (i10 != 35) {
+                if (i10 != 44) {
+                    if (i10 != 47 && i10 != 61) {
+                        if (i10 != 123 && i10 != 125 && i10 != 58) {
+                            if (i10 != 59) {
+                                switch (i10) {
+                                    case 91:
+                                    case 93:
+                                        return false;
+                                    case 92:
+                                        break;
+                                    default:
+                                        return true;
+                                }
+                            }
+                        } else {
+                            return false;
+                        }
+                    }
+                } else {
+                    return false;
+                }
             }
+            C();
+            return false;
         }
-        return -1;
+        return false;
     }
 
-    private void Y0() {
+    private void V0() {
         long size;
-        long d02 = this.f52693s.d0(B);
-        Buffer buffer = this.f52694t;
-        if (d02 != -1) {
-            size = d02 + 1;
+        long f02 = this.f53472s.f0(B);
+        Buffer buffer = this.f53473t;
+        if (f02 != -1) {
+            size = f02 + 1;
         } else {
             size = buffer.size();
         }
         buffer.skip(size);
     }
 
-    private void Z0() {
-        long d02 = this.f52693s.d0(A);
-        Buffer buffer = this.f52694t;
-        if (d02 == -1) {
-            d02 = buffer.size();
+    /* JADX WARN: Code restructure failed: missing block: B:15:0x0025, code lost:
+        r6.f53473t.skip(r1);
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:16:0x002d, code lost:
+        if (r2 != 47) goto L16;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:18:0x0037, code lost:
+        if (r6.f53472s.D0(2) != false) goto L28;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:20:0x003a, code lost:
+        C();
+        r3 = r6.f53473t.Y(1);
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:21:0x0047, code lost:
+        if (r3 == 42) goto L30;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:22:0x0049, code lost:
+        if (r3 == 47) goto L39;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:24:0x004c, code lost:
+        r6.f53473t.readByte();
+        r6.f53473t.readByte();
+        V0();
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:25:0x005a, code lost:
+        r6.f53473t.readByte();
+        r6.f53473t.readByte();
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:26:0x0068, code lost:
+        if (O0() == false) goto L33;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:29:0x0071, code lost:
+        throw z("Unterminated comment");
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:31:0x0074, code lost:
+        if (r2 != 35) goto L22;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:32:0x0076, code lost:
+        C();
+        V0();
+     */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    private int Y(boolean r7) {
+        /*
+            r6 = this;
+            r0 = 0
+        L1:
+            r1 = r0
+        L2:
+            okio.BufferedSource r2 = r6.f53472s
+            int r3 = r1 + 1
+            long r4 = (long) r3
+            boolean r2 = r2.D0(r4)
+            if (r2 == 0) goto L80
+            okio.Buffer r2 = r6.f53473t
+            long r4 = (long) r1
+            byte r2 = r2.Y(r4)
+            r4 = 10
+            if (r2 == r4) goto L7e
+            r4 = 32
+            if (r2 == r4) goto L7e
+            r4 = 13
+            if (r2 == r4) goto L7e
+            r4 = 9
+            if (r2 != r4) goto L25
+            goto L7e
+        L25:
+            okio.Buffer r3 = r6.f53473t
+            long r4 = (long) r1
+            r3.skip(r4)
+            r1 = 47
+            if (r2 != r1) goto L72
+            okio.BufferedSource r3 = r6.f53472s
+            r4 = 2
+            boolean r3 = r3.D0(r4)
+            if (r3 != 0) goto L3a
+            goto L7d
+        L3a:
+            r6.C()
+            okio.Buffer r3 = r6.f53473t
+            r4 = 1
+            byte r3 = r3.Y(r4)
+            r4 = 42
+            if (r3 == r4) goto L5a
+            if (r3 == r1) goto L4c
+            goto L7d
+        L4c:
+            okio.Buffer r1 = r6.f53473t
+            r1.readByte()
+            okio.Buffer r1 = r6.f53473t
+            r1.readByte()
+            r6.V0()
+            goto L1
+        L5a:
+            okio.Buffer r1 = r6.f53473t
+            r1.readByte()
+            okio.Buffer r1 = r6.f53473t
+            r1.readByte()
+            boolean r1 = r6.O0()
+            if (r1 == 0) goto L6b
+            goto L1
+        L6b:
+            java.lang.String r7 = "Unterminated comment"
+            w5.b r7 = r6.z(r7)
+            throw r7
+        L72:
+            r1 = 35
+            if (r2 != r1) goto L7d
+            r6.C()
+            r6.V0()
+            goto L1
+        L7d:
+            return r2
+        L7e:
+            r1 = r3
+            goto L2
+        L80:
+            if (r7 != 0) goto L84
+            r7 = -1
+            return r7
+        L84:
+            java.io.EOFException r7 = new java.io.EOFException
+            java.lang.String r0 = "End of input"
+            r7.<init>(r0)
+            throw r7
+        */
+        throw new UnsupportedOperationException("Method not decompiled: w5.e.Y(boolean):int");
+    }
+
+    private void Y0() {
+        long f02 = this.f53472s.f0(A);
+        Buffer buffer = this.f53473t;
+        if (f02 == -1) {
+            f02 = buffer.size();
         }
-        buffer.skip(d02);
+        buffer.skip(f02);
     }
 
     @Override // w5.c
-    public void E() {
-        if (!this.f52677q) {
-            int i10 = this.f52695u;
-            if (i10 == 0) {
-                i10 = V();
-            }
-            if (i10 == 14) {
-                Z0();
-            } else if (i10 == 13) {
-                S0(f52692z);
-            } else if (i10 == 12) {
-                S0(f52691y);
-            } else if (i10 != 15) {
-                throw new a("Expected a name but was " + m() + " at path " + r());
-            }
-            this.f52695u = 0;
-            this.f52674i[this.f52672d - 1] = "null";
+    public void D() {
+        int i10 = this.f53474u;
+        if (i10 == 0) {
+            i10 = I();
+        }
+        if (i10 == 2) {
+            int i11 = this.f53451d;
+            int i12 = i11 - 1;
+            this.f53451d = i12;
+            this.f53453i[i12] = null;
+            int[] iArr = this.f53454o;
+            int i13 = i11 - 2;
+            iArr[i13] = iArr[i13] + 1;
+            this.f53474u = 0;
             return;
         }
-        throw new a("Cannot skip unexpected " + m() + " at " + r());
+        throw new a("Expected END_OBJECT but was " + m() + " at path " + t());
     }
 
     @Override // w5.c
-    public void P() {
-        if (!this.f52677q) {
+    public void S() {
+        if (!this.f53456q) {
             int i10 = 0;
             do {
-                int i11 = this.f52695u;
+                int i11 = this.f53474u;
                 if (i11 == 0) {
-                    i11 = V();
+                    i11 = I();
                 }
                 if (i11 == 3) {
-                    o(1);
+                    n(1);
                 } else if (i11 == 1) {
-                    o(3);
+                    n(3);
                 } else {
                     if (i11 == 4) {
                         i10--;
                         if (i10 >= 0) {
-                            this.f52672d--;
+                            this.f53451d--;
                         } else {
-                            throw new a("Expected a value but was " + m() + " at path " + r());
+                            throw new a("Expected a value but was " + m() + " at path " + t());
                         }
                     } else if (i11 == 2) {
                         i10--;
                         if (i10 >= 0) {
-                            this.f52672d--;
+                            this.f53451d--;
                         } else {
-                            throw new a("Expected a value but was " + m() + " at path " + r());
+                            throw new a("Expected a value but was " + m() + " at path " + t());
                         }
                     } else if (i11 != 14 && i11 != 10) {
                         if (i11 != 9 && i11 != 13) {
                             if (i11 != 8 && i11 != 12) {
                                 if (i11 == 17) {
-                                    this.f52694t.skip(this.f52697w);
+                                    this.f53473t.skip(this.f53476w);
                                 } else if (i11 == 18) {
-                                    throw new a("Expected a value but was " + m() + " at path " + r());
+                                    throw new a("Expected a value but was " + m() + " at path " + t());
                                 }
                             } else {
-                                S0(f52691y);
+                                L0(f53470y);
                             }
                         } else {
-                            S0(f52692z);
+                            L0(f53471z);
                         }
                     } else {
-                        Z0();
+                        Y0();
                     }
-                    this.f52695u = 0;
+                    this.f53474u = 0;
                 }
                 i10++;
-                this.f52695u = 0;
+                this.f53474u = 0;
             } while (i10 != 0);
-            int[] iArr = this.f52675o;
-            int i12 = this.f52672d;
+            int[] iArr = this.f53454o;
+            int i12 = this.f53451d;
             int i13 = i12 - 1;
             iArr[i13] = iArr[i13] + 1;
-            this.f52674i[i12 - 1] = "null";
+            this.f53453i[i12 - 1] = "null";
             return;
         }
-        throw new a("Cannot skip unexpected " + m() + " at " + r());
+        throw new a("Cannot skip unexpected " + m() + " at " + t());
     }
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        this.f52695u = 0;
-        this.f52673e[0] = 8;
-        this.f52672d = 1;
-        this.f52694t.k();
-        this.f52693s.close();
+        this.f53474u = 0;
+        this.f53452e[0] = 8;
+        this.f53451d = 1;
+        this.f53473t.k();
+        this.f53472s.close();
     }
 
     @Override // w5.c
-    public String f1() {
-        String c12;
-        int i10 = this.f52695u;
+    public String e1() {
+        String b12;
+        int i10 = this.f53474u;
         if (i10 == 0) {
-            i10 = V();
+            i10 = I();
         }
         if (i10 == 10) {
-            c12 = F0();
+            b12 = F0();
         } else if (i10 == 9) {
-            c12 = E0(f52692z);
+            b12 = E0(f53471z);
         } else if (i10 == 8) {
-            c12 = E0(f52691y);
+            b12 = E0(f53470y);
         } else if (i10 == 11) {
-            c12 = this.f52698x;
-            this.f52698x = null;
+            b12 = this.f53477x;
+            this.f53477x = null;
         } else if (i10 == 16) {
-            c12 = Long.toString(this.f52696v);
+            b12 = Long.toString(this.f53475v);
         } else if (i10 == 17) {
-            c12 = this.f52694t.c1(this.f52697w);
+            b12 = this.f53473t.b1(this.f53476w);
         } else {
-            throw new a("Expected a string but was " + m() + " at path " + r());
+            throw new a("Expected a string but was " + m() + " at path " + t());
         }
-        this.f52695u = 0;
-        int[] iArr = this.f52675o;
-        int i11 = this.f52672d - 1;
+        this.f53474u = 0;
+        int[] iArr = this.f53454o;
+        int i11 = this.f53451d - 1;
         iArr[i11] = iArr[i11] + 1;
-        return c12;
+        return b12;
     }
 
     @Override // w5.c
-    public boolean h() {
-        int i10 = this.f52695u;
+    public boolean g() {
+        int i10 = this.f53474u;
         if (i10 == 0) {
-            i10 = V();
+            i10 = I();
         }
         if (i10 == 5) {
-            this.f52695u = 0;
-            int[] iArr = this.f52675o;
-            int i11 = this.f52672d - 1;
+            this.f53474u = 0;
+            int[] iArr = this.f53454o;
+            int i11 = this.f53451d - 1;
             iArr[i11] = iArr[i11] + 1;
             return true;
         } else if (i10 == 6) {
-            this.f52695u = 0;
-            int[] iArr2 = this.f52675o;
-            int i12 = this.f52672d - 1;
+            this.f53474u = 0;
+            int[] iArr2 = this.f53454o;
+            int i12 = this.f53451d - 1;
             iArr2[i12] = iArr2[i12] + 1;
             return false;
         } else {
-            throw new a("Expected a boolean but was " + m() + " at path " + r());
+            throw new a("Expected a boolean but was " + m() + " at path " + t());
         }
     }
 
     @Override // w5.c
     public boolean hasNext() {
-        int i10 = this.f52695u;
+        int i10 = this.f53474u;
         if (i10 == 0) {
-            i10 = V();
+            i10 = I();
         }
         if (i10 != 2 && i10 != 4 && i10 != 18) {
             return true;
@@ -789,9 +786,9 @@ public final class e extends c {
 
     @Override // w5.c
     public c.b m() {
-        int i10 = this.f52695u;
+        int i10 = this.f53474u;
         if (i10 == 0) {
-            i10 = V();
+            i10 = I();
         }
         switch (i10) {
             case 1:
@@ -828,226 +825,229 @@ public final class e extends c {
     }
 
     @Override // w5.c
-    public String m0() {
-        String str;
-        int i10 = this.f52695u;
-        if (i10 == 0) {
-            i10 = V();
-        }
-        if (i10 == 14) {
-            str = F0();
-        } else if (i10 == 13) {
-            str = E0(f52692z);
-        } else if (i10 == 12) {
-            str = E0(f52691y);
-        } else if (i10 == 15) {
-            str = this.f52698x;
-        } else {
-            throw new a("Expected a name but was " + m() + " at path " + r());
-        }
-        this.f52695u = 0;
-        this.f52674i[this.f52672d - 1] = str;
-        return str;
-    }
-
-    @Override // w5.c
     public double nextDouble() {
-        int i10 = this.f52695u;
+        int i10 = this.f53474u;
         if (i10 == 0) {
-            i10 = V();
+            i10 = I();
         }
         if (i10 == 16) {
-            this.f52695u = 0;
-            int[] iArr = this.f52675o;
-            int i11 = this.f52672d - 1;
+            this.f53474u = 0;
+            int[] iArr = this.f53454o;
+            int i11 = this.f53451d - 1;
             iArr[i11] = iArr[i11] + 1;
-            return this.f52696v;
+            return this.f53475v;
         }
         if (i10 == 17) {
-            this.f52698x = this.f52694t.c1(this.f52697w);
+            this.f53477x = this.f53473t.b1(this.f53476w);
         } else if (i10 == 9) {
-            this.f52698x = E0(f52692z);
+            this.f53477x = E0(f53471z);
         } else if (i10 == 8) {
-            this.f52698x = E0(f52691y);
+            this.f53477x = E0(f53470y);
         } else if (i10 == 10) {
-            this.f52698x = F0();
+            this.f53477x = F0();
         } else if (i10 != 11) {
-            throw new a("Expected a double but was " + m() + " at path " + r());
+            throw new a("Expected a double but was " + m() + " at path " + t());
         }
-        this.f52695u = 11;
+        this.f53474u = 11;
         try {
-            double parseDouble = Double.parseDouble(this.f52698x);
-            if (!this.f52676p && (Double.isNaN(parseDouble) || Double.isInfinite(parseDouble))) {
-                throw new b("JSON forbids NaN and infinities: " + parseDouble + " at path " + r());
+            double parseDouble = Double.parseDouble(this.f53477x);
+            if (!this.f53455p && (Double.isNaN(parseDouble) || Double.isInfinite(parseDouble))) {
+                throw new b("JSON forbids NaN and infinities: " + parseDouble + " at path " + t());
             }
-            this.f52698x = null;
-            this.f52695u = 0;
-            int[] iArr2 = this.f52675o;
-            int i12 = this.f52672d - 1;
+            this.f53477x = null;
+            this.f53474u = 0;
+            int[] iArr2 = this.f53454o;
+            int i12 = this.f53451d - 1;
             iArr2[i12] = iArr2[i12] + 1;
             return parseDouble;
         } catch (NumberFormatException unused) {
-            throw new a("Expected a double but was " + this.f52698x + " at path " + r());
+            throw new a("Expected a double but was " + this.f53477x + " at path " + t());
         }
     }
 
     @Override // w5.c
     public int nextInt() {
         String E0;
-        int i10 = this.f52695u;
+        int i10 = this.f53474u;
         if (i10 == 0) {
-            i10 = V();
+            i10 = I();
         }
         if (i10 == 16) {
-            long j10 = this.f52696v;
+            long j10 = this.f53475v;
             int i11 = (int) j10;
             if (j10 == i11) {
-                this.f52695u = 0;
-                int[] iArr = this.f52675o;
-                int i12 = this.f52672d - 1;
+                this.f53474u = 0;
+                int[] iArr = this.f53454o;
+                int i12 = this.f53451d - 1;
                 iArr[i12] = iArr[i12] + 1;
                 return i11;
             }
-            throw new a("Expected an int but was " + this.f52696v + " at path " + r());
+            throw new a("Expected an int but was " + this.f53475v + " at path " + t());
         }
         if (i10 == 17) {
-            this.f52698x = this.f52694t.c1(this.f52697w);
+            this.f53477x = this.f53473t.b1(this.f53476w);
         } else if (i10 != 9 && i10 != 8) {
             if (i10 != 11) {
-                throw new a("Expected an int but was " + m() + " at path " + r());
+                throw new a("Expected an int but was " + m() + " at path " + t());
             }
         } else {
             if (i10 == 9) {
-                E0 = E0(f52692z);
+                E0 = E0(f53471z);
             } else {
-                E0 = E0(f52691y);
+                E0 = E0(f53470y);
             }
-            this.f52698x = E0;
+            this.f53477x = E0;
             try {
                 int parseInt = Integer.parseInt(E0);
-                this.f52695u = 0;
-                int[] iArr2 = this.f52675o;
-                int i13 = this.f52672d - 1;
+                this.f53474u = 0;
+                int[] iArr2 = this.f53454o;
+                int i13 = this.f53451d - 1;
                 iArr2[i13] = iArr2[i13] + 1;
                 return parseInt;
             } catch (NumberFormatException unused) {
             }
         }
-        this.f52695u = 11;
+        this.f53474u = 11;
         try {
-            double parseDouble = Double.parseDouble(this.f52698x);
+            double parseDouble = Double.parseDouble(this.f53477x);
             int i14 = (int) parseDouble;
             if (i14 == parseDouble) {
-                this.f52698x = null;
-                this.f52695u = 0;
-                int[] iArr3 = this.f52675o;
-                int i15 = this.f52672d - 1;
+                this.f53477x = null;
+                this.f53474u = 0;
+                int[] iArr3 = this.f53454o;
+                int i15 = this.f53451d - 1;
                 iArr3[i15] = iArr3[i15] + 1;
                 return i14;
             }
-            throw new a("Expected an int but was " + this.f52698x + " at path " + r());
+            throw new a("Expected an int but was " + this.f53477x + " at path " + t());
         } catch (NumberFormatException unused2) {
-            throw new a("Expected an int but was " + this.f52698x + " at path " + r());
+            throw new a("Expected an int but was " + this.f53477x + " at path " + t());
         }
     }
 
     @Override // w5.c
-    public void s() {
-        int i10 = this.f52695u;
+    public String o0() {
+        String str;
+        int i10 = this.f53474u;
         if (i10 == 0) {
-            i10 = V();
+            i10 = I();
         }
-        if (i10 == 1) {
-            o(3);
-            this.f52695u = 0;
-            return;
+        if (i10 == 14) {
+            str = F0();
+        } else if (i10 == 13) {
+            str = E0(f53471z);
+        } else if (i10 == 12) {
+            str = E0(f53470y);
+        } else if (i10 == 15) {
+            str = this.f53477x;
+        } else {
+            throw new a("Expected a name but was " + m() + " at path " + t());
         }
-        throw new a("Expected BEGIN_OBJECT but was " + m() + " at path " + r());
+        this.f53474u = 0;
+        this.f53453i[this.f53451d - 1] = str;
+        return str;
     }
 
     @Override // w5.c
-    public void t() {
-        int i10 = this.f52695u;
+    public int p(c.a aVar) {
+        int i10 = this.f53474u;
         if (i10 == 0) {
-            i10 = V();
-        }
-        if (i10 == 4) {
-            int i11 = this.f52672d;
-            this.f52672d = i11 - 1;
-            int[] iArr = this.f52675o;
-            int i12 = i11 - 2;
-            iArr[i12] = iArr[i12] + 1;
-            this.f52695u = 0;
-            return;
-        }
-        throw new a("Expected END_ARRAY but was " + m() + " at path " + r());
-    }
-
-    public String toString() {
-        return "JsonReader(" + this.f52693s + ")";
-    }
-
-    @Override // w5.c
-    public void v() {
-        int i10 = this.f52695u;
-        if (i10 == 0) {
-            i10 = V();
-        }
-        if (i10 == 3) {
-            o(1);
-            this.f52675o[this.f52672d - 1] = 0;
-            this.f52695u = 0;
-            return;
-        }
-        throw new a("Expected BEGIN_ARRAY but was " + m() + " at path " + r());
-    }
-
-    @Override // w5.c
-    public int y(c.a aVar) {
-        int i10 = this.f52695u;
-        if (i10 == 0) {
-            i10 = V();
+            i10 = I();
         }
         if (i10 < 12 || i10 > 15) {
             return -1;
         }
         if (i10 == 15) {
-            return W(this.f52698x, aVar);
+            return J(this.f53477x, aVar);
         }
-        int J0 = this.f52693s.J0(aVar.f52679b);
-        if (J0 != -1) {
-            this.f52695u = 0;
-            this.f52674i[this.f52672d - 1] = aVar.f52678a[J0];
-            return J0;
+        int d22 = this.f53472s.d2(aVar.f53458b);
+        if (d22 != -1) {
+            this.f53474u = 0;
+            this.f53453i[this.f53451d - 1] = aVar.f53457a[d22];
+            return d22;
         }
-        String str = this.f52674i[this.f52672d - 1];
-        String m02 = m0();
-        int W = W(m02, aVar);
-        if (W == -1) {
-            this.f52695u = 15;
-            this.f52698x = m02;
-            this.f52674i[this.f52672d - 1] = str;
+        String str = this.f53453i[this.f53451d - 1];
+        String o02 = o0();
+        int J = J(o02, aVar);
+        if (J == -1) {
+            this.f53474u = 15;
+            this.f53477x = o02;
+            this.f53453i[this.f53451d - 1] = str;
         }
-        return W;
+        return J;
     }
 
     @Override // w5.c
-    public void z() {
-        int i10 = this.f52695u;
-        if (i10 == 0) {
-            i10 = V();
-        }
-        if (i10 == 2) {
-            int i11 = this.f52672d;
-            int i12 = i11 - 1;
-            this.f52672d = i12;
-            this.f52674i[i12] = null;
-            int[] iArr = this.f52675o;
-            int i13 = i11 - 2;
-            iArr[i13] = iArr[i13] + 1;
-            this.f52695u = 0;
+    public void s() {
+        if (!this.f53456q) {
+            int i10 = this.f53474u;
+            if (i10 == 0) {
+                i10 = I();
+            }
+            if (i10 == 14) {
+                Y0();
+            } else if (i10 == 13) {
+                L0(f53471z);
+            } else if (i10 == 12) {
+                L0(f53470y);
+            } else if (i10 != 15) {
+                throw new a("Expected a name but was " + m() + " at path " + t());
+            }
+            this.f53474u = 0;
+            this.f53453i[this.f53451d - 1] = "null";
             return;
         }
-        throw new a("Expected END_OBJECT but was " + m() + " at path " + r());
+        throw new a("Cannot skip unexpected " + m() + " at " + t());
+    }
+
+    public String toString() {
+        return "JsonReader(" + this.f53472s + ")";
+    }
+
+    @Override // w5.c
+    public void u() {
+        int i10 = this.f53474u;
+        if (i10 == 0) {
+            i10 = I();
+        }
+        if (i10 == 1) {
+            n(3);
+            this.f53474u = 0;
+            return;
+        }
+        throw new a("Expected BEGIN_OBJECT but was " + m() + " at path " + t());
+    }
+
+    @Override // w5.c
+    public void v() {
+        int i10 = this.f53474u;
+        if (i10 == 0) {
+            i10 = I();
+        }
+        if (i10 == 4) {
+            int i11 = this.f53451d;
+            this.f53451d = i11 - 1;
+            int[] iArr = this.f53454o;
+            int i12 = i11 - 2;
+            iArr[i12] = iArr[i12] + 1;
+            this.f53474u = 0;
+            return;
+        }
+        throw new a("Expected END_ARRAY but was " + m() + " at path " + t());
+    }
+
+    @Override // w5.c
+    public void x() {
+        int i10 = this.f53474u;
+        if (i10 == 0) {
+            i10 = I();
+        }
+        if (i10 == 3) {
+            n(1);
+            this.f53454o[this.f53451d - 1] = 0;
+            this.f53474u = 0;
+            return;
+        }
+        throw new a("Expected BEGIN_ARRAY but was " + m() + " at path " + t());
     }
 }

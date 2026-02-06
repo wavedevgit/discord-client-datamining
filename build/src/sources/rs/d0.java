@@ -1,45 +1,31 @@
 package rs;
 
-import kotlin.Result;
+import kotlin.coroutines.Continuation;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class d0 {
+public final class d0 extends ss.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final StackTraceElement f48955a = new a.a().a();
+    public long f49250a = -1;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final String f48956b;
+    public Continuation f49251b;
 
-    /* renamed from: c  reason: collision with root package name */
-    private static final String f48957c;
-
-    static {
-        Object b10;
-        Object b11;
-        try {
-            Result.a aVar = Result.f31985e;
-            b10 = Result.b(kotlin.coroutines.jvm.internal.a.class.getCanonicalName());
-        } catch (Throwable th2) {
-            Result.a aVar2 = Result.f31985e;
-            b10 = Result.b(kotlin.c.a(th2));
+    @Override // ss.d
+    /* renamed from: c */
+    public boolean a(b0 b0Var) {
+        if (this.f49250a >= 0) {
+            return false;
         }
-        if (Result.e(b10) != null) {
-            b10 = "kotlin.coroutines.jvm.internal.BaseContinuationImpl";
-        }
-        f48956b = (String) b10;
-        try {
-            b11 = Result.b(d0.class.getCanonicalName());
-        } catch (Throwable th3) {
-            Result.a aVar3 = Result.f31985e;
-            b11 = Result.b(kotlin.c.a(th3));
-        }
-        if (Result.e(b11) != null) {
-            b11 = "kotlinx.coroutines.internal.StackTraceRecoveryKt";
-        }
-        f48957c = (String) b11;
+        this.f49250a = b0Var.X();
+        return true;
     }
 
-    public static final Throwable a(Throwable th2) {
-        return th2;
+    @Override // ss.d
+    /* renamed from: d */
+    public Continuation[] b(b0 b0Var) {
+        long j10 = this.f49250a;
+        this.f49250a = -1L;
+        this.f49251b = null;
+        return b0Var.W(j10);
     }
 }

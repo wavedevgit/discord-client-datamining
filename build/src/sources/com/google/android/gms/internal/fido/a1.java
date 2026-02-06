@@ -4,16 +4,16 @@ package com.google.android.gms.internal.fido;
 public final class a1 extends u0 {
 
     /* renamed from: i  reason: collision with root package name */
-    private final e1 f13960i;
+    private final e1 f13923i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public a1(e1 e1Var, int i10) {
         super(e1Var.size(), i10);
-        this.f13960i = e1Var;
+        this.f13923i = e1Var;
     }
 
     @Override // com.google.android.gms.internal.fido.u0
     protected final Object a(int i10) {
-        return this.f13960i.get(i10);
+        return this.f13923i.get(i10);
     }
 }

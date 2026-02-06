@@ -8,30 +8,30 @@ import l1.p;
 public class n extends p {
 
     /* renamed from: k  reason: collision with root package name */
-    public f f36295k;
+    public f f35688k;
 
     /* renamed from: l  reason: collision with root package name */
-    g f36296l;
+    g f35689l;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f36297a;
+        static final /* synthetic */ int[] f35690a;
 
         static {
             int[] iArr = new int[p.b.values().length];
-            f36297a = iArr;
+            f35690a = iArr;
             try {
                 iArr[p.b.START.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f36297a[p.b.END.ordinal()] = 2;
+                f35690a[p.b.END.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f36297a[p.b.CENTER.ordinal()] = 3;
+                f35690a[p.b.CENTER.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
         }
@@ -40,12 +40,12 @@ public class n extends p {
     public n(ConstraintWidget constraintWidget) {
         super(constraintWidget);
         f fVar = new f(this);
-        this.f36295k = fVar;
-        this.f36296l = null;
-        this.f36319h.f36264e = f.a.TOP;
-        this.f36320i.f36264e = f.a.BOTTOM;
-        fVar.f36264e = f.a.BASELINE;
-        this.f36317f = 1;
+        this.f35688k = fVar;
+        this.f35689l = null;
+        this.f35712h.f35657e = f.a.TOP;
+        this.f35713i.f35657e = f.a.BOTTOM;
+        fVar.f35657e = f.a.BASELINE;
+        this.f35710f = 1;
     }
 
     @Override // l1.p, l1.d
@@ -56,11 +56,11 @@ public class n extends p {
         float f11;
         int i10;
         ConstraintWidget constraintWidget;
-        int i11 = a.f36297a[this.f36321j.ordinal()];
+        int i11 = a.f35690a[this.f35714j.ordinal()];
         if (i11 != 1) {
             if (i11 != 2) {
                 if (i11 == 3) {
-                    ConstraintWidget constraintWidget2 = this.f36313b;
+                    ConstraintWidget constraintWidget2 = this.f35706b;
                     n(dVar, constraintWidget2.P, constraintWidget2.R, 1);
                     return;
                 }
@@ -70,87 +70,87 @@ public class n extends p {
         } else {
             p(dVar);
         }
-        g gVar2 = this.f36316e;
-        if (gVar2.f36262c && !gVar2.f36269j && this.f36315d == ConstraintWidget.b.MATCH_CONSTRAINT) {
-            ConstraintWidget constraintWidget3 = this.f36313b;
-            int i12 = constraintWidget3.f2412x;
+        g gVar2 = this.f35709e;
+        if (gVar2.f35655c && !gVar2.f35662j && this.f35708d == ConstraintWidget.b.MATCH_CONSTRAINT) {
+            ConstraintWidget constraintWidget3 = this.f35706b;
+            int i12 = constraintWidget3.f2741x;
             if (i12 != 2) {
-                if (i12 == 3 && constraintWidget3.f2374e.f36316e.f36269j) {
+                if (i12 == 3 && constraintWidget3.f2703e.f35709e.f35662j) {
                     int w10 = constraintWidget3.w();
                     if (w10 != -1) {
                         if (w10 != 0) {
                             if (w10 != 1) {
                                 i10 = 0;
-                                this.f36316e.d(i10);
+                                this.f35709e.d(i10);
                             } else {
-                                ConstraintWidget constraintWidget4 = this.f36313b;
-                                f10 = constraintWidget4.f2374e.f36316e.f36266g;
+                                ConstraintWidget constraintWidget4 = this.f35706b;
+                                f10 = constraintWidget4.f2703e.f35709e.f35659g;
                                 v10 = constraintWidget4.v();
                             }
                         } else {
-                            f11 = constraintWidget.f2374e.f36316e.f36266g * this.f36313b.v();
+                            f11 = constraintWidget.f2703e.f35709e.f35659g * this.f35706b.v();
                             i10 = (int) (f11 + 0.5f);
-                            this.f36316e.d(i10);
+                            this.f35709e.d(i10);
                         }
                     } else {
-                        ConstraintWidget constraintWidget5 = this.f36313b;
-                        f10 = constraintWidget5.f2374e.f36316e.f36266g;
+                        ConstraintWidget constraintWidget5 = this.f35706b;
+                        f10 = constraintWidget5.f2703e.f35709e.f35659g;
                         v10 = constraintWidget5.v();
                     }
                     f11 = f10 / v10;
                     i10 = (int) (f11 + 0.5f);
-                    this.f36316e.d(i10);
+                    this.f35709e.d(i10);
                 }
             } else {
                 ConstraintWidget K = constraintWidget3.K();
                 if (K != null) {
-                    if (K.f2376f.f36316e.f36269j) {
-                        this.f36316e.d((int) ((gVar.f36266g * this.f36313b.E) + 0.5f));
+                    if (K.f2705f.f35709e.f35662j) {
+                        this.f35709e.d((int) ((gVar.f35659g * this.f35706b.E) + 0.5f));
                     }
                 }
             }
         }
-        f fVar = this.f36319h;
-        if (fVar.f36262c) {
-            f fVar2 = this.f36320i;
-            if (fVar2.f36262c) {
-                if (!fVar.f36269j || !fVar2.f36269j || !this.f36316e.f36269j) {
-                    if (!this.f36316e.f36269j && this.f36315d == ConstraintWidget.b.MATCH_CONSTRAINT) {
-                        ConstraintWidget constraintWidget6 = this.f36313b;
-                        if (constraintWidget6.f2410w == 0 && !constraintWidget6.k0()) {
-                            int i13 = ((f) this.f36319h.f36271l.get(0)).f36266g;
-                            f fVar3 = this.f36319h;
-                            int i14 = i13 + fVar3.f36265f;
-                            int i15 = ((f) this.f36320i.f36271l.get(0)).f36266g + this.f36320i.f36265f;
+        f fVar = this.f35712h;
+        if (fVar.f35655c) {
+            f fVar2 = this.f35713i;
+            if (fVar2.f35655c) {
+                if (!fVar.f35662j || !fVar2.f35662j || !this.f35709e.f35662j) {
+                    if (!this.f35709e.f35662j && this.f35708d == ConstraintWidget.b.MATCH_CONSTRAINT) {
+                        ConstraintWidget constraintWidget6 = this.f35706b;
+                        if (constraintWidget6.f2739w == 0 && !constraintWidget6.k0()) {
+                            int i13 = ((f) this.f35712h.f35664l.get(0)).f35659g;
+                            f fVar3 = this.f35712h;
+                            int i14 = i13 + fVar3.f35658f;
+                            int i15 = ((f) this.f35713i.f35664l.get(0)).f35659g + this.f35713i.f35658f;
                             fVar3.d(i14);
-                            this.f36320i.d(i15);
-                            this.f36316e.d(i15 - i14);
+                            this.f35713i.d(i15);
+                            this.f35709e.d(i15 - i14);
                             return;
                         }
                     }
-                    if (!this.f36316e.f36269j && this.f36315d == ConstraintWidget.b.MATCH_CONSTRAINT && this.f36312a == 1 && this.f36319h.f36271l.size() > 0 && this.f36320i.f36271l.size() > 0) {
-                        int i16 = (((f) this.f36320i.f36271l.get(0)).f36266g + this.f36320i.f36265f) - (((f) this.f36319h.f36271l.get(0)).f36266g + this.f36319h.f36265f);
-                        g gVar3 = this.f36316e;
-                        int i17 = gVar3.f36281m;
+                    if (!this.f35709e.f35662j && this.f35708d == ConstraintWidget.b.MATCH_CONSTRAINT && this.f35705a == 1 && this.f35712h.f35664l.size() > 0 && this.f35713i.f35664l.size() > 0) {
+                        int i16 = (((f) this.f35713i.f35664l.get(0)).f35659g + this.f35713i.f35658f) - (((f) this.f35712h.f35664l.get(0)).f35659g + this.f35712h.f35658f);
+                        g gVar3 = this.f35709e;
+                        int i17 = gVar3.f35674m;
                         if (i16 < i17) {
                             gVar3.d(i16);
                         } else {
                             gVar3.d(i17);
                         }
                     }
-                    if (this.f36316e.f36269j && this.f36319h.f36271l.size() > 0 && this.f36320i.f36271l.size() > 0) {
-                        f fVar4 = (f) this.f36319h.f36271l.get(0);
-                        f fVar5 = (f) this.f36320i.f36271l.get(0);
-                        int i18 = fVar4.f36266g + this.f36319h.f36265f;
-                        int i19 = fVar5.f36266g + this.f36320i.f36265f;
-                        float R = this.f36313b.R();
+                    if (this.f35709e.f35662j && this.f35712h.f35664l.size() > 0 && this.f35713i.f35664l.size() > 0) {
+                        f fVar4 = (f) this.f35712h.f35664l.get(0);
+                        f fVar5 = (f) this.f35713i.f35664l.get(0);
+                        int i18 = fVar4.f35659g + this.f35712h.f35658f;
+                        int i19 = fVar5.f35659g + this.f35713i.f35658f;
+                        float R = this.f35706b.R();
                         if (fVar4 == fVar5) {
-                            i18 = fVar4.f36266g;
-                            i19 = fVar5.f36266g;
+                            i18 = fVar4.f35659g;
+                            i19 = fVar5.f35659g;
                             R = 0.5f;
                         }
-                        this.f36319h.d((int) (i18 + 0.5f + (((i19 - i18) - this.f36316e.f36266g) * R)));
-                        this.f36320i.d(this.f36319h.f36266g + this.f36316e.f36266g);
+                        this.f35712h.d((int) (i18 + 0.5f + (((i19 - i18) - this.f35709e.f35659g) * R)));
+                        this.f35713i.d(this.f35712h.f35659g + this.f35709e.f35659g);
                     }
                 }
             }
@@ -162,68 +162,68 @@ public class n extends p {
     public void d() {
         ConstraintWidget K;
         ConstraintWidget K2;
-        ConstraintWidget constraintWidget = this.f36313b;
-        if (constraintWidget.f2366a) {
-            this.f36316e.d(constraintWidget.x());
+        ConstraintWidget constraintWidget = this.f35706b;
+        if (constraintWidget.f2695a) {
+            this.f35709e.d(constraintWidget.x());
         }
-        if (!this.f36316e.f36269j) {
-            this.f36315d = this.f36313b.T();
-            if (this.f36313b.Z()) {
-                this.f36296l = new l1.a(this);
+        if (!this.f35709e.f35662j) {
+            this.f35708d = this.f35706b.T();
+            if (this.f35706b.Z()) {
+                this.f35689l = new l1.a(this);
             }
-            ConstraintWidget.b bVar = this.f36315d;
+            ConstraintWidget.b bVar = this.f35708d;
             if (bVar != ConstraintWidget.b.MATCH_CONSTRAINT) {
-                if (bVar == ConstraintWidget.b.MATCH_PARENT && (K2 = this.f36313b.K()) != null && K2.T() == ConstraintWidget.b.FIXED) {
-                    int x10 = (K2.x() - this.f36313b.P.f()) - this.f36313b.R.f();
-                    b(this.f36319h, K2.f2376f.f36319h, this.f36313b.P.f());
-                    b(this.f36320i, K2.f2376f.f36320i, -this.f36313b.R.f());
-                    this.f36316e.d(x10);
+                if (bVar == ConstraintWidget.b.MATCH_PARENT && (K2 = this.f35706b.K()) != null && K2.T() == ConstraintWidget.b.FIXED) {
+                    int x10 = (K2.x() - this.f35706b.P.f()) - this.f35706b.R.f();
+                    b(this.f35712h, K2.f2705f.f35712h, this.f35706b.P.f());
+                    b(this.f35713i, K2.f2705f.f35713i, -this.f35706b.R.f());
+                    this.f35709e.d(x10);
                     return;
-                } else if (this.f36315d == ConstraintWidget.b.FIXED) {
-                    this.f36316e.d(this.f36313b.x());
+                } else if (this.f35708d == ConstraintWidget.b.FIXED) {
+                    this.f35709e.d(this.f35706b.x());
                 }
             }
-        } else if (this.f36315d == ConstraintWidget.b.MATCH_PARENT && (K = this.f36313b.K()) != null && K.T() == ConstraintWidget.b.FIXED) {
-            b(this.f36319h, K.f2376f.f36319h, this.f36313b.P.f());
-            b(this.f36320i, K.f2376f.f36320i, -this.f36313b.R.f());
+        } else if (this.f35708d == ConstraintWidget.b.MATCH_PARENT && (K = this.f35706b.K()) != null && K.T() == ConstraintWidget.b.FIXED) {
+            b(this.f35712h, K.f2705f.f35712h, this.f35706b.P.f());
+            b(this.f35713i, K.f2705f.f35713i, -this.f35706b.R.f());
             return;
         }
-        g gVar = this.f36316e;
-        boolean z10 = gVar.f36269j;
+        g gVar = this.f35709e;
+        boolean z10 = gVar.f35662j;
         if (z10) {
-            ConstraintWidget constraintWidget2 = this.f36313b;
-            if (constraintWidget2.f2366a) {
+            ConstraintWidget constraintWidget2 = this.f35706b;
+            if (constraintWidget2.f2695a) {
                 androidx.constraintlayout.core.widgets.d[] dVarArr = constraintWidget2.W;
                 androidx.constraintlayout.core.widgets.d dVar = dVarArr[2];
-                androidx.constraintlayout.core.widgets.d dVar2 = dVar.f2468f;
-                if (dVar2 != null && dVarArr[3].f2468f != null) {
+                androidx.constraintlayout.core.widgets.d dVar2 = dVar.f2797f;
+                if (dVar2 != null && dVarArr[3].f2797f != null) {
                     if (constraintWidget2.k0()) {
-                        this.f36319h.f36265f = this.f36313b.W[2].f();
-                        this.f36320i.f36265f = -this.f36313b.W[3].f();
+                        this.f35712h.f35658f = this.f35706b.W[2].f();
+                        this.f35713i.f35658f = -this.f35706b.W[3].f();
                     } else {
-                        f h10 = h(this.f36313b.W[2]);
+                        f h10 = h(this.f35706b.W[2]);
                         if (h10 != null) {
-                            b(this.f36319h, h10, this.f36313b.W[2].f());
+                            b(this.f35712h, h10, this.f35706b.W[2].f());
                         }
-                        f h11 = h(this.f36313b.W[3]);
+                        f h11 = h(this.f35706b.W[3]);
                         if (h11 != null) {
-                            b(this.f36320i, h11, -this.f36313b.W[3].f());
+                            b(this.f35713i, h11, -this.f35706b.W[3].f());
                         }
-                        this.f36319h.f36261b = true;
-                        this.f36320i.f36261b = true;
+                        this.f35712h.f35654b = true;
+                        this.f35713i.f35654b = true;
                     }
-                    if (this.f36313b.Z()) {
-                        b(this.f36295k, this.f36319h, this.f36313b.p());
+                    if (this.f35706b.Z()) {
+                        b(this.f35688k, this.f35712h, this.f35706b.p());
                         return;
                     }
                     return;
                 } else if (dVar2 != null) {
                     f h12 = h(dVar);
                     if (h12 != null) {
-                        b(this.f36319h, h12, this.f36313b.W[2].f());
-                        b(this.f36320i, this.f36319h, this.f36316e.f36266g);
-                        if (this.f36313b.Z()) {
-                            b(this.f36295k, this.f36319h, this.f36313b.p());
+                        b(this.f35712h, h12, this.f35706b.W[2].f());
+                        b(this.f35713i, this.f35712h, this.f35709e.f35659g);
+                        if (this.f35706b.Z()) {
+                            b(this.f35688k, this.f35712h, this.f35706b.p());
                             return;
                         }
                         return;
@@ -231,33 +231,33 @@ public class n extends p {
                     return;
                 } else {
                     androidx.constraintlayout.core.widgets.d dVar3 = dVarArr[3];
-                    if (dVar3.f2468f != null) {
+                    if (dVar3.f2797f != null) {
                         f h13 = h(dVar3);
                         if (h13 != null) {
-                            b(this.f36320i, h13, -this.f36313b.W[3].f());
-                            b(this.f36319h, this.f36320i, -this.f36316e.f36266g);
+                            b(this.f35713i, h13, -this.f35706b.W[3].f());
+                            b(this.f35712h, this.f35713i, -this.f35709e.f35659g);
                         }
-                        if (this.f36313b.Z()) {
-                            b(this.f36295k, this.f36319h, this.f36313b.p());
+                        if (this.f35706b.Z()) {
+                            b(this.f35688k, this.f35712h, this.f35706b.p());
                             return;
                         }
                         return;
                     }
                     androidx.constraintlayout.core.widgets.d dVar4 = dVarArr[4];
-                    if (dVar4.f2468f != null) {
+                    if (dVar4.f2797f != null) {
                         f h14 = h(dVar4);
                         if (h14 != null) {
-                            b(this.f36295k, h14, 0);
-                            b(this.f36319h, this.f36295k, -this.f36313b.p());
-                            b(this.f36320i, this.f36319h, this.f36316e.f36266g);
+                            b(this.f35688k, h14, 0);
+                            b(this.f35712h, this.f35688k, -this.f35706b.p());
+                            b(this.f35713i, this.f35712h, this.f35709e.f35659g);
                             return;
                         }
                         return;
-                    } else if (!(constraintWidget2 instanceof k1.a) && constraintWidget2.K() != null && this.f36313b.o(d.a.CENTER).f2468f == null) {
-                        b(this.f36319h, this.f36313b.K().f2376f.f36319h, this.f36313b.Y());
-                        b(this.f36320i, this.f36319h, this.f36316e.f36266g);
-                        if (this.f36313b.Z()) {
-                            b(this.f36295k, this.f36319h, this.f36313b.p());
+                    } else if (!(constraintWidget2 instanceof k1.a) && constraintWidget2.K() != null && this.f35706b.o(d.a.CENTER).f2797f == null) {
+                        b(this.f35712h, this.f35706b.K().f2705f.f35712h, this.f35706b.Y());
+                        b(this.f35713i, this.f35712h, this.f35709e.f35659g);
+                        if (this.f35706b.Z()) {
+                            b(this.f35688k, this.f35712h, this.f35706b.p());
                             return;
                         }
                         return;
@@ -267,145 +267,145 @@ public class n extends p {
                 }
             }
         }
-        if (!z10 && this.f36315d == ConstraintWidget.b.MATCH_CONSTRAINT) {
-            ConstraintWidget constraintWidget3 = this.f36313b;
-            int i10 = constraintWidget3.f2412x;
+        if (!z10 && this.f35708d == ConstraintWidget.b.MATCH_CONSTRAINT) {
+            ConstraintWidget constraintWidget3 = this.f35706b;
+            int i10 = constraintWidget3.f2741x;
             if (i10 != 2) {
                 if (i10 == 3 && !constraintWidget3.k0()) {
-                    ConstraintWidget constraintWidget4 = this.f36313b;
-                    if (constraintWidget4.f2410w != 3) {
-                        g gVar2 = constraintWidget4.f2374e.f36316e;
-                        this.f36316e.f36271l.add(gVar2);
-                        gVar2.f36270k.add(this.f36316e);
-                        g gVar3 = this.f36316e;
-                        gVar3.f36261b = true;
-                        gVar3.f36270k.add(this.f36319h);
-                        this.f36316e.f36270k.add(this.f36320i);
+                    ConstraintWidget constraintWidget4 = this.f35706b;
+                    if (constraintWidget4.f2739w != 3) {
+                        g gVar2 = constraintWidget4.f2703e.f35709e;
+                        this.f35709e.f35664l.add(gVar2);
+                        gVar2.f35663k.add(this.f35709e);
+                        g gVar3 = this.f35709e;
+                        gVar3.f35654b = true;
+                        gVar3.f35663k.add(this.f35712h);
+                        this.f35709e.f35663k.add(this.f35713i);
                     }
                 }
             } else {
                 ConstraintWidget K3 = constraintWidget3.K();
                 if (K3 != null) {
-                    g gVar4 = K3.f2376f.f36316e;
-                    this.f36316e.f36271l.add(gVar4);
-                    gVar4.f36270k.add(this.f36316e);
-                    g gVar5 = this.f36316e;
-                    gVar5.f36261b = true;
-                    gVar5.f36270k.add(this.f36319h);
-                    this.f36316e.f36270k.add(this.f36320i);
+                    g gVar4 = K3.f2705f.f35709e;
+                    this.f35709e.f35664l.add(gVar4);
+                    gVar4.f35663k.add(this.f35709e);
+                    g gVar5 = this.f35709e;
+                    gVar5.f35654b = true;
+                    gVar5.f35663k.add(this.f35712h);
+                    this.f35709e.f35663k.add(this.f35713i);
                 }
             }
         } else {
             gVar.b(this);
         }
-        ConstraintWidget constraintWidget5 = this.f36313b;
+        ConstraintWidget constraintWidget5 = this.f35706b;
         androidx.constraintlayout.core.widgets.d[] dVarArr2 = constraintWidget5.W;
         androidx.constraintlayout.core.widgets.d dVar5 = dVarArr2[2];
-        androidx.constraintlayout.core.widgets.d dVar6 = dVar5.f2468f;
-        if (dVar6 != null && dVarArr2[3].f2468f != null) {
+        androidx.constraintlayout.core.widgets.d dVar6 = dVar5.f2797f;
+        if (dVar6 != null && dVarArr2[3].f2797f != null) {
             if (constraintWidget5.k0()) {
-                this.f36319h.f36265f = this.f36313b.W[2].f();
-                this.f36320i.f36265f = -this.f36313b.W[3].f();
+                this.f35712h.f35658f = this.f35706b.W[2].f();
+                this.f35713i.f35658f = -this.f35706b.W[3].f();
             } else {
-                f h15 = h(this.f36313b.W[2]);
-                f h16 = h(this.f36313b.W[3]);
+                f h15 = h(this.f35706b.W[2]);
+                f h16 = h(this.f35706b.W[3]);
                 if (h15 != null) {
                     h15.b(this);
                 }
                 if (h16 != null) {
                     h16.b(this);
                 }
-                this.f36321j = p.b.CENTER;
+                this.f35714j = p.b.CENTER;
             }
-            if (this.f36313b.Z()) {
-                c(this.f36295k, this.f36319h, 1, this.f36296l);
+            if (this.f35706b.Z()) {
+                c(this.f35688k, this.f35712h, 1, this.f35689l);
             }
         } else if (dVar6 != null) {
             f h17 = h(dVar5);
             if (h17 != null) {
-                b(this.f36319h, h17, this.f36313b.W[2].f());
-                c(this.f36320i, this.f36319h, 1, this.f36316e);
-                if (this.f36313b.Z()) {
-                    c(this.f36295k, this.f36319h, 1, this.f36296l);
+                b(this.f35712h, h17, this.f35706b.W[2].f());
+                c(this.f35713i, this.f35712h, 1, this.f35709e);
+                if (this.f35706b.Z()) {
+                    c(this.f35688k, this.f35712h, 1, this.f35689l);
                 }
-                ConstraintWidget.b bVar2 = this.f36315d;
+                ConstraintWidget.b bVar2 = this.f35708d;
                 ConstraintWidget.b bVar3 = ConstraintWidget.b.MATCH_CONSTRAINT;
-                if (bVar2 == bVar3 && this.f36313b.v() > 0.0f) {
-                    l lVar = this.f36313b.f2374e;
-                    if (lVar.f36315d == bVar3) {
-                        lVar.f36316e.f36270k.add(this.f36316e);
-                        this.f36316e.f36271l.add(this.f36313b.f2374e.f36316e);
-                        this.f36316e.f36260a = this;
+                if (bVar2 == bVar3 && this.f35706b.v() > 0.0f) {
+                    l lVar = this.f35706b.f2703e;
+                    if (lVar.f35708d == bVar3) {
+                        lVar.f35709e.f35663k.add(this.f35709e);
+                        this.f35709e.f35664l.add(this.f35706b.f2703e.f35709e);
+                        this.f35709e.f35653a = this;
                     }
                 }
             }
         } else {
             androidx.constraintlayout.core.widgets.d dVar7 = dVarArr2[3];
-            if (dVar7.f2468f != null) {
+            if (dVar7.f2797f != null) {
                 f h18 = h(dVar7);
                 if (h18 != null) {
-                    b(this.f36320i, h18, -this.f36313b.W[3].f());
-                    c(this.f36319h, this.f36320i, -1, this.f36316e);
-                    if (this.f36313b.Z()) {
-                        c(this.f36295k, this.f36319h, 1, this.f36296l);
+                    b(this.f35713i, h18, -this.f35706b.W[3].f());
+                    c(this.f35712h, this.f35713i, -1, this.f35709e);
+                    if (this.f35706b.Z()) {
+                        c(this.f35688k, this.f35712h, 1, this.f35689l);
                     }
                 }
             } else {
                 androidx.constraintlayout.core.widgets.d dVar8 = dVarArr2[4];
-                if (dVar8.f2468f != null) {
+                if (dVar8.f2797f != null) {
                     f h19 = h(dVar8);
                     if (h19 != null) {
-                        b(this.f36295k, h19, 0);
-                        c(this.f36319h, this.f36295k, -1, this.f36296l);
-                        c(this.f36320i, this.f36319h, 1, this.f36316e);
+                        b(this.f35688k, h19, 0);
+                        c(this.f35712h, this.f35688k, -1, this.f35689l);
+                        c(this.f35713i, this.f35712h, 1, this.f35709e);
                     }
                 } else if (!(constraintWidget5 instanceof k1.a) && constraintWidget5.K() != null) {
-                    b(this.f36319h, this.f36313b.K().f2376f.f36319h, this.f36313b.Y());
-                    c(this.f36320i, this.f36319h, 1, this.f36316e);
-                    if (this.f36313b.Z()) {
-                        c(this.f36295k, this.f36319h, 1, this.f36296l);
+                    b(this.f35712h, this.f35706b.K().f2705f.f35712h, this.f35706b.Y());
+                    c(this.f35713i, this.f35712h, 1, this.f35709e);
+                    if (this.f35706b.Z()) {
+                        c(this.f35688k, this.f35712h, 1, this.f35689l);
                     }
-                    ConstraintWidget.b bVar4 = this.f36315d;
+                    ConstraintWidget.b bVar4 = this.f35708d;
                     ConstraintWidget.b bVar5 = ConstraintWidget.b.MATCH_CONSTRAINT;
-                    if (bVar4 == bVar5 && this.f36313b.v() > 0.0f) {
-                        l lVar2 = this.f36313b.f2374e;
-                        if (lVar2.f36315d == bVar5) {
-                            lVar2.f36316e.f36270k.add(this.f36316e);
-                            this.f36316e.f36271l.add(this.f36313b.f2374e.f36316e);
-                            this.f36316e.f36260a = this;
+                    if (bVar4 == bVar5 && this.f35706b.v() > 0.0f) {
+                        l lVar2 = this.f35706b.f2703e;
+                        if (lVar2.f35708d == bVar5) {
+                            lVar2.f35709e.f35663k.add(this.f35709e);
+                            this.f35709e.f35664l.add(this.f35706b.f2703e.f35709e);
+                            this.f35709e.f35653a = this;
                         }
                     }
                 }
             }
         }
-        if (this.f36316e.f36271l.size() == 0) {
-            this.f36316e.f36262c = true;
+        if (this.f35709e.f35664l.size() == 0) {
+            this.f35709e.f35655c = true;
         }
     }
 
     @Override // l1.p
     public void e() {
-        f fVar = this.f36319h;
-        if (fVar.f36269j) {
-            this.f36313b.o1(fVar.f36266g);
+        f fVar = this.f35712h;
+        if (fVar.f35662j) {
+            this.f35706b.o1(fVar.f35659g);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // l1.p
     public void f() {
-        this.f36314c = null;
-        this.f36319h.c();
-        this.f36320i.c();
-        this.f36295k.c();
-        this.f36316e.c();
-        this.f36318g = false;
+        this.f35707c = null;
+        this.f35712h.c();
+        this.f35713i.c();
+        this.f35688k.c();
+        this.f35709e.c();
+        this.f35711g = false;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // l1.p
     public boolean m() {
-        if (this.f36315d != ConstraintWidget.b.MATCH_CONSTRAINT || this.f36313b.f2412x == 0) {
+        if (this.f35708d != ConstraintWidget.b.MATCH_CONSTRAINT || this.f35706b.f2741x == 0) {
             return true;
         }
         return false;
@@ -413,17 +413,17 @@ public class n extends p {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void q() {
-        this.f36318g = false;
-        this.f36319h.c();
-        this.f36319h.f36269j = false;
-        this.f36320i.c();
-        this.f36320i.f36269j = false;
-        this.f36295k.c();
-        this.f36295k.f36269j = false;
-        this.f36316e.f36269j = false;
+        this.f35711g = false;
+        this.f35712h.c();
+        this.f35712h.f35662j = false;
+        this.f35713i.c();
+        this.f35713i.f35662j = false;
+        this.f35688k.c();
+        this.f35688k.f35662j = false;
+        this.f35709e.f35662j = false;
     }
 
     public String toString() {
-        return "VerticalRun " + this.f36313b.t();
+        return "VerticalRun " + this.f35706b.t();
     }
 }

@@ -1,108 +1,96 @@
 package gq;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.AutoCompleteTextView;
+import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.drawable.Drawable;
+import android.graphics.drawable.GradientDrawable;
+import android.graphics.drawable.InsetDrawable;
+import android.text.Spanned;
+import android.text.style.URLSpan;
+import android.util.Base64;
 import android.widget.TextView;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.viewbinding.ViewBinding;
-import com.google.android.material.textfield.TextInputEditText;
-import com.google.android.material.textfield.TextInputLayout;
+import fq.k5;
+import fq.l5;
+import java.io.ByteArrayOutputStream;
+import java.util.Iterator;
+import java.util.List;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.reflect.KClass;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class f implements ViewBinding {
+public abstract class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ConstraintLayout f25091a;
+    private static ir.e f25525a;
 
-    /* renamed from: b  reason: collision with root package name */
-    public final TextView f25092b;
-
-    /* renamed from: c  reason: collision with root package name */
-    public final TextInputLayout f25093c;
-
-    /* renamed from: d  reason: collision with root package name */
-    public final TextInputEditText f25094d;
-
-    /* renamed from: e  reason: collision with root package name */
-    public final TextView f25095e;
-
-    /* renamed from: f  reason: collision with root package name */
-    public final TextInputLayout f25096f;
-
-    /* renamed from: g  reason: collision with root package name */
-    public final AutoCompleteTextView f25097g;
-
-    /* renamed from: h  reason: collision with root package name */
-    public final TextInputLayout f25098h;
-
-    /* renamed from: i  reason: collision with root package name */
-    public final TextInputEditText f25099i;
-
-    private f(ConstraintLayout constraintLayout, TextView textView, TextInputLayout textInputLayout, TextInputEditText textInputEditText, TextView textView2, TextInputLayout textInputLayout2, AutoCompleteTextView autoCompleteTextView, TextInputLayout textInputLayout3, TextInputEditText textInputEditText2) {
-        this.f25091a = constraintLayout;
-        this.f25092b = textView;
-        this.f25093c = textInputLayout;
-        this.f25094d = textInputEditText;
-        this.f25095e = textView2;
-        this.f25096f = textInputLayout2;
-        this.f25097g = autoCompleteTextView;
-        this.f25098h = textInputLayout3;
-        this.f25099i = textInputEditText2;
-    }
-
-    public static f a(View view) {
-        int i10 = bq.e.f7150v;
-        TextView textView = (TextView) e4.a.a(view, i10);
-        if (textView != null) {
-            i10 = bq.e.f7152w;
-            TextInputLayout textInputLayout = (TextInputLayout) e4.a.a(view, i10);
-            if (textInputLayout != null) {
-                i10 = bq.e.f7154x;
-                TextInputEditText textInputEditText = (TextInputEditText) e4.a.a(view, i10);
-                if (textInputEditText != null) {
-                    i10 = bq.e.E;
-                    TextView textView2 = (TextView) e4.a.a(view, i10);
-                    if (textView2 != null) {
-                        i10 = bq.e.Z;
-                        TextInputLayout textInputLayout2 = (TextInputLayout) e4.a.a(view, i10);
-                        if (textInputLayout2 != null) {
-                            i10 = bq.e.f7109a0;
-                            AutoCompleteTextView autoCompleteTextView = (AutoCompleteTextView) e4.a.a(view, i10);
-                            if (autoCompleteTextView != null) {
-                                i10 = bq.e.D0;
-                                TextInputLayout textInputLayout3 = (TextInputLayout) e4.a.a(view, i10);
-                                if (textInputLayout3 != null) {
-                                    i10 = bq.e.E0;
-                                    TextInputEditText textInputEditText2 = (TextInputEditText) e4.a.a(view, i10);
-                                    if (textInputEditText2 != null) {
-                                        return new f((ConstraintLayout) view, textView, textInputLayout, textInputEditText, textView2, textInputLayout2, autoCompleteTextView, textInputLayout3, textInputEditText2);
-                                    }
-                                }
-                            }
-                        }
-                    }
+    public static final k5 a(List list, KClass type, Function1 predicate) {
+        k5 a10;
+        Intrinsics.checkNotNullParameter(list, "<this>");
+        Intrinsics.checkNotNullParameter(type, "type");
+        Intrinsics.checkNotNullParameter(predicate, "predicate");
+        Iterator it = list.iterator();
+        while (it.hasNext()) {
+            k5 k5Var = (k5) it.next();
+            if (type.isInstance(k5Var)) {
+                Intrinsics.checkNotNull(k5Var, "null cannot be cast to non-null type T of com.withpersona.sdk2.inquiry.steps.ui.components.utils.ExtensionsKt.findFirst");
+                if (((Boolean) predicate.invoke(k5Var)).booleanValue()) {
+                    return k5Var;
                 }
+            } else if ((k5Var instanceof l5) && (a10 = a(((l5) k5Var).getChildren(), type, predicate)) != null) {
+                return a10;
             }
         }
-        throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i10)));
+        return null;
     }
 
-    public static f c(LayoutInflater layoutInflater) {
-        return d(layoutInflater, null, false);
-    }
-
-    public static f d(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(bq.f.f7165f, viewGroup, false);
-        if (z10) {
-            viewGroup.addView(inflate);
+    public static final Drawable b(Context context, int i10, int i11) {
+        Intrinsics.checkNotNullParameter(context, "context");
+        int c10 = androidx.core.content.a.c(context, jp.b.f30781a);
+        int c11 = androidx.core.content.a.c(context, jp.b.f30782b);
+        double d10 = r1.c.d(i10, c10);
+        double d11 = r1.c.d(i10, c11);
+        float a10 = (float) rp.h.a(8.0d);
+        GradientDrawable gradientDrawable = new GradientDrawable();
+        if (d10 < d11) {
+            c10 = c11;
         }
-        return a(inflate);
+        gradientDrawable.setColor(c10);
+        gradientDrawable.setCornerRadii(new float[]{a10, a10, a10, a10, a10, a10, a10, a10});
+        gradientDrawable.setSize(i11 + ((int) rp.h.a(24.0d)), gradientDrawable.getMinimumHeight());
+        return new InsetDrawable((Drawable) gradientDrawable, (int) rp.h.a(4.0d));
     }
 
-    @Override // androidx.viewbinding.ViewBinding
-    /* renamed from: b */
-    public ConstraintLayout getRoot() {
-        return this.f25091a;
+    private static final ir.e c(Context context) {
+        ir.e eVar = f25525a;
+        if (eVar == null) {
+            ir.e b10 = ir.e.b(context);
+            f25525a = b10;
+            Intrinsics.checkNotNullExpressionValue(b10, "also(...)");
+            return b10;
+        }
+        return eVar;
+    }
+
+    public static final void d(TextView textView, String text) {
+        Intrinsics.checkNotNullParameter(textView, "<this>");
+        Intrinsics.checkNotNullParameter(text, "text");
+        Context context = textView.getContext();
+        Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
+        ir.e c10 = c(context);
+        Spanned e10 = c10.e(text);
+        Intrinsics.checkNotNullExpressionValue(e10, "toMarkdown(...)");
+        c10.d(textView, e10);
+        if (e10.getSpans(0, e10.length(), lr.g.class).length == 0 && e10.getSpans(0, e10.length(), URLSpan.class).length == 0) {
+            textView.setMovementMethod(null);
+        }
+    }
+
+    public static final String e(Bitmap bitmap) {
+        Intrinsics.checkNotNullParameter(bitmap, "<this>");
+        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+        bitmap.compress(Bitmap.CompressFormat.PNG, 100, byteArrayOutputStream);
+        String encodeToString = Base64.encodeToString(byteArrayOutputStream.toByteArray(), 3);
+        Intrinsics.checkNotNull(encodeToString);
+        return encodeToString;
     }
 }

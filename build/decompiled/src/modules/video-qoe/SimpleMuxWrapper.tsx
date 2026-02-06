@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = 'initialize';
         var0.key = var1;
         var1 = function() {
-            _fun83525: for (var _fun83525_ip = 0;;) switch (_fun83525_ip) {
+            _fun83526: for (var _fun83526_ip = 0;;) switch (_fun83526_ip) {
                 case 0:
                     var2 = this;
                     var0 = undefined;
@@ -87,12 +87,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = null;
                     var1 = var6 != var3;
                     if (!var1) {
-                        _fun83525_ip = 44;
-                        continue _fun83525
+                        _fun83526_ip = 40;
+                        continue _fun83526
                     }
-                case 41:
+                case 37:
                     var1 = var3;
-                case 44:
+                case 40:
                     var5.debug = var1;
                     var3 = true;
                     var8 = _closure1_slot0;
@@ -109,17 +109,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var5;
                     var5 = var2.hlsInstance;
                     if (!(var6 != var5)) {
-                        _fun83525_ip = 155;
-                        continue _fun83525
+                        _fun83526_ip = 151;
+                        continue _fun83526
                     }
-                case 123:
+                case 119:
                     var6 = var4;
                     var5 = var2.hlsInstance;
                     var6.hlsjs = var5;
                     var5 = var2.hlsInstance;
                     var5 = var5.constructor;
                     var6.Hls = var5;
-                case 155: // try_start_0
+                case 151: // try_start_0
                     var6 = _closure1_slot1;
                     var7 = _closure1_slot2;
                     var5 = 5;
@@ -129,10 +129,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = var2.videoElement;
                     var4 = var6.bind(var7)(var5, var4);
                     var2.isMonitoring = var3;
-                case 199: // try_end0
-                    _fun83525_ip = 232;
-                    continue _fun83525;
-                case 201: // catch_target0
+                case 195: // try_end0
+                    _fun83526_ip = 228;
+                    continue _fun83526;
+                case 197: // catch_target0
                     CatchBlockStart(arg_register = 5);
                     var4 = _closure1_slot5;
                     var3 = var4.error;
@@ -140,7 +140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var3.bind(var4)(var1, var5);
                     var1 = false;
                     var2.isMonitoring = var1;
-                case 232:
+                case 228:
                     return var0;
             }
         };
@@ -149,59 +149,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1[0] = var0;
         var0 = {};
         var5 = 'endSession';
-        var0.key = var5;
-        var5 = function() {
-            _fun83526: for (var _fun83526_ip = 0;;) switch (_fun83526_ip) {
-                case 0:
-                    var1 = this;
-                    var0 = var1.isMonitoring;
-                    if (!var0) {
-                        _fun83526_ip = 124;
-                        continue _fun83526
-                    }
-                case 12: // try_start_0
-                    var5 = _closure1_slot1;
-                    var2 = _closure1_slot2;
-                    var4 = 5;
-                    var2 = var2[var4];
-                    var3 = undefined;
-                    var2 = var5.bind(var3)(var2);
-                    var2 = var2.destroyMonitor;
-                    var5 = 'function';
-                    var2 = typeof var2;
-                    if (!(var5 === var2)) {
-                        _fun83526_ip = 88;
-                        continue _fun83526
-                    }
-                case 54:
-                    var2 = _closure1_slot1;
-                    var0 = _closure1_slot2;
-                    var0 = var0[var4];
-                    var3 = var2.bind(var3)(var0);
-                    var2 = var3.destroyMonitor;
-                    var0 = var1.videoElement;
-                    var0 = var2.bind(var3)(var0);
-                case 88:
-                    var0 = false;
-                    var1.isMonitoring = var0;
-                case 96: // try_end0
-                    _fun83526_ip = 124;
-                    continue _fun83526;
-                case 98: // catch_target0
-                    CatchBlockStart(arg_register = 3);
-                    var2 = _closure1_slot5;
-                    var1 = var2.error;
-                    var0 = 'Error ending Mux session';
-                    var0 = var1.bind(var2)(var0, var3);
-                case 124:
-                    var0 = undefined;
-                    return var0;
-            }
-        };
-        var0.value = var5;
-        var1[1] = var0;
-        var0 = {};
-        var5 = 'destroy';
         var0.key = var5;
         var5 = function() {
             _fun83527: for (var _fun83527_ip = 0;;) switch (_fun83527_ip) {
@@ -244,6 +191,59 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     CatchBlockStart(arg_register = 3);
                     var2 = _closure1_slot5;
                     var1 = var2.error;
+                    var0 = 'Error ending Mux session';
+                    var0 = var1.bind(var2)(var0, var3);
+                case 124:
+                    var0 = undefined;
+                    return var0;
+            }
+        };
+        var0.value = var5;
+        var1[1] = var0;
+        var0 = {};
+        var5 = 'destroy';
+        var0.key = var5;
+        var5 = function() {
+            _fun83528: for (var _fun83528_ip = 0;;) switch (_fun83528_ip) {
+                case 0:
+                    var1 = this;
+                    var0 = var1.isMonitoring;
+                    if (!var0) {
+                        _fun83528_ip = 124;
+                        continue _fun83528
+                    }
+                case 12: // try_start_0
+                    var5 = _closure1_slot1;
+                    var2 = _closure1_slot2;
+                    var4 = 5;
+                    var2 = var2[var4];
+                    var3 = undefined;
+                    var2 = var5.bind(var3)(var2);
+                    var2 = var2.destroyMonitor;
+                    var5 = 'function';
+                    var2 = typeof var2;
+                    if (!(var5 === var2)) {
+                        _fun83528_ip = 88;
+                        continue _fun83528
+                    }
+                case 54:
+                    var2 = _closure1_slot1;
+                    var0 = _closure1_slot2;
+                    var0 = var0[var4];
+                    var3 = var2.bind(var3)(var0);
+                    var2 = var3.destroyMonitor;
+                    var0 = var1.videoElement;
+                    var0 = var2.bind(var3)(var0);
+                case 88:
+                    var0 = false;
+                    var1.isMonitoring = var0;
+                case 96: // try_end0
+                    _fun83528_ip = 124;
+                    continue _fun83528;
+                case 98: // catch_target0
+                    CatchBlockStart(arg_register = 3);
+                    var2 = _closure1_slot5;
+                    var1 = var2.error;
                     var0 = 'Error destroying Mux monitor';
                     var0 = var1.bind(var2)(var0, var3);
                 case 124:
@@ -276,4 +276,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.SimpleMuxWrapper = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 4, 10749, 10750, 10751, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 4, 10751, 10752, 10753, 2]);

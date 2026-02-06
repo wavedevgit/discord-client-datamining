@@ -1,36 +1,23 @@
 package fv;
 
-import android.os.Build;
-import java.lang.reflect.InvocationHandler;
-import java.lang.reflect.Proxy;
-import java.util.Collection;
+import fv.b;
+import java.util.List;
+import kotlin.collections.CollectionsKt;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class a {
-    public static Object a(Class cls, InvocationHandler invocationHandler) {
-        if (invocationHandler == null) {
-            return null;
-        }
-        return cls.cast(Proxy.newProxyInstance(a.class.getClassLoader(), new Class[]{cls}, invocationHandler));
+public final class a implements su.b, b {
+
+    /* renamed from: a  reason: collision with root package name */
+    public static final a f23776a = new a();
+
+    private a() {
     }
 
-    public static boolean b(Collection collection, String str) {
-        if (!collection.contains(str)) {
-            if (c()) {
-                if (!collection.contains(str + ":dev")) {
-                    return false;
-                }
-                return true;
-            }
-            return false;
-        }
-        return true;
+    public List a(Object obj) {
+        return b.a.d(this, obj);
     }
 
-    private static boolean c() {
-        String str = Build.TYPE;
-        if (!"eng".equals(str) && !"userdebug".equals(str)) {
-            return false;
-        }
-        return true;
+    @Override // su.b
+    public Object f(Object obj, Object obj2) {
+        return CollectionsKt.x0(a(obj), "", null, null, 0, null, null, 62, null);
     }
 }

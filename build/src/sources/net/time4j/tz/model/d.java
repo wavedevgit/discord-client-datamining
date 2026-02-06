@@ -6,16 +6,16 @@ import net.time4j.g0;
 public abstract class d {
 
     /* renamed from: d  reason: collision with root package name */
-    private final transient long f40253d;
+    private final transient long f39608d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final transient g0 f40254e;
+    private final transient g0 f39609e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final transient i f40255i;
+    private final transient i f39610i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final transient int f40256o;
+    private final transient int f39611o;
 
     /* JADX INFO: Access modifiers changed from: protected */
     public d(int i10, i iVar, int i11) {
@@ -24,15 +24,15 @@ public abstract class d {
                 throw new IllegalArgumentException("DST out of range: " + i11);
             }
             if (i10 == 86400) {
-                this.f40253d = 0L;
-                this.f40254e = g0.E0();
+                this.f39608d = 0L;
+                this.f39609e = g0.E0();
             } else {
-                net.time4j.j P0 = g0.F0().P0(i10, net.time4j.g.f39968i);
-                this.f40253d = P0.a();
-                this.f40254e = P0.b();
+                net.time4j.j P0 = g0.F0().P0(i10, net.time4j.g.f39323i);
+                this.f39608d = P0.a();
+                this.f39609e = P0.b();
             }
-            this.f40255i = iVar;
-            this.f40256o = i11 == Integer.MAX_VALUE ? 0 : i11;
+            this.f39610i = iVar;
+            this.f39611o = i11 == Integer.MAX_VALUE ? 0 : i11;
             return;
         }
         throw new NullPointerException("Missing offset indicator.");
@@ -45,19 +45,19 @@ public abstract class d {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final long c() {
-        return this.f40253d;
+        return this.f39608d;
     }
 
     public final i d() {
-        return this.f40255i;
+        return this.f39610i;
     }
 
     public final int e() {
-        return this.f40256o;
+        return this.f39611o;
     }
 
     public final g0 f() {
-        return this.f40254e;
+        return this.f39609e;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -67,5 +67,5 @@ public abstract class d {
     public abstract int h(long j10);
 
     /* JADX INFO: Access modifiers changed from: protected */
-    public abstract int i(nt.a aVar);
+    public abstract int i(pt.a aVar);
 }

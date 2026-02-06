@@ -1,27 +1,25 @@
 package io.sentry;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public interface w0 {
-    e1 A(t8 t8Var, v8 v8Var);
+    Boolean A();
 
-    Boolean B();
+    IScope B();
 
-    IScope C();
+    void C(b4 b4Var);
 
-    void D(b4 b4Var);
-
-    default io.sentry.protocol.x E(Throwable th2) {
-        return F(th2, new Hint());
+    default io.sentry.protocol.x D(Throwable th2) {
+        return E(th2, new Hint());
     }
 
-    io.sentry.protocol.x F(Throwable th2, Hint hint);
+    io.sentry.protocol.x E(Throwable th2, Hint hint);
 
-    default e1 G(String str, String str2, v8 v8Var) {
-        return A(new t8(str, str2), v8Var);
+    default e1 F(String str, String str2, v8 v8Var) {
+        return z(new t8(str, str2), v8Var);
     }
 
-    io.sentry.protocol.x H(io.sentry.protocol.d0 d0Var, q8 q8Var, Hint hint, q3 q3Var);
+    io.sentry.protocol.x G(io.sentry.protocol.d0 d0Var, q8 q8Var, Hint hint, q3 q3Var);
 
-    w0 I(String str);
+    w0 H(String str);
 
     void a(String str, String str2);
 
@@ -35,55 +33,57 @@ public interface w0 {
 
     void e(Breadcrumb breadcrumb);
 
-    boolean g();
+    boolean f();
 
-    void i(Breadcrumb breadcrumb, Hint hint);
+    void h(Breadcrumb breadcrumb, Hint hint);
+
+    io.sentry.transport.a0 i();
 
     boolean isEnabled();
 
-    io.sentry.transport.a0 j();
+    void j(Throwable th2, ISpan iSpan, String str);
 
-    void k(Throwable th2, ISpan iSpan, String str);
+    io.sentry.protocol.x k(l5 l5Var, Hint hint);
 
-    io.sentry.protocol.x l(l5 l5Var, Hint hint);
+    e1 l();
 
-    e1 m();
+    void m();
 
     a1 makeCurrent();
 
-    void n();
-
-    default io.sentry.protocol.x o(io.sentry.protocol.d0 d0Var, q8 q8Var, Hint hint) {
-        return H(d0Var, q8Var, hint, null);
+    default io.sentry.protocol.x n(io.sentry.protocol.d0 d0Var, q8 q8Var, Hint hint) {
+        return G(d0Var, q8Var, hint, null);
     }
 
-    default void p(b4 b4Var) {
-        s(null, b4Var);
+    default void o(b4 b4Var) {
+        r(null, b4Var);
     }
 
-    default boolean q() {
+    default boolean p() {
         return false;
     }
 
-    void r();
+    void q();
 
-    void s(d4 d4Var, b4 b4Var);
+    void r(d4 d4Var, b4 b4Var);
 
-    io.sentry.protocol.x t(l7 l7Var, Hint hint);
+    io.sentry.protocol.x s(l7 l7Var, Hint hint);
 
-    IScope u();
+    IScope t();
 
-    io.sentry.protocol.x v(String str, SentryLevel sentryLevel);
+    io.sentry.protocol.x u(String str, SentryLevel sentryLevel);
 
-    io.sentry.protocol.x w(m3 m3Var);
+    io.sentry.protocol.x v(m3 m3Var);
 
-    default io.sentry.protocol.x x(l5 l5Var) {
-        return l(l5Var, new Hint());
+    default io.sentry.protocol.x w(l5 l5Var) {
+        return k(l5Var, new Hint());
     }
 
-    io.sentry.protocol.x y(SentryEvent sentryEvent, Hint hint);
+    io.sentry.protocol.x x(SentryEvent sentryEvent, Hint hint);
 
-    default e1 z(String str, String str2) {
-        return G(str, str2, new v8());
+    default e1 y(String str, String str2) {
+        return F(str, str2, new v8());
     }
+
+    e1 z(t8 t8Var, v8 v8Var);
 }

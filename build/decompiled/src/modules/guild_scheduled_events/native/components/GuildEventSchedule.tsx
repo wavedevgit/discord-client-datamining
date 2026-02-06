@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_scheduled_events/native/components/GuildEventSchedule.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun65534: for (var _fun65534_ip = 0;;) switch (_fun65534_ip) {
+        _fun65562: for (var _fun65562_ip = 0;;) switch (_fun65562_ip) {
             case 0:
                 var1 = arg0;
                 var5 = var1.guildEvent;
@@ -97,10 +97,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var2.bind(var4)(var1, var8);
                 var8 = null;
                 if (!(var8 != var0)) {
-                    _fun65534_ip = 259;
-                    continue _fun65534
+                    _fun65562_ip = 261;
+                    continue _fun65562
                 }
-            case 195:
+            case 197:
                 var9 = var13.add;
                 var4 = _closure1_slot0;
                 var0 = _closure1_slot2;
@@ -114,7 +114,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var4.bind(var3)(var0);
                 var0 = var0.MAX_YEARS_AHEAD_RECURRING_EVENT;
                 var0 = var1.bind(var10)(var0, var2);
-            case 259:
+            case 261:
                 var2 = _closure1_slot6;
                 var1 = _closure1_slot5;
                 var0 = {};
@@ -171,10 +171,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5.scheduled_end_time;
                 var5 = var8 != var5;
                 if (!var5) {
-                    _fun65534_ip = 631;
-                    continue _fun65534
+                    _fun65562_ip = 633;
+                    continue _fun65562
                 }
-            case 465:
+            case 467:
                 var8 = _closure1_slot4;
                 var12 = _closure1_slot0;
                 var9 = _closure1_slot2;
@@ -221,7 +221,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var10.bind(var11)(var9);
                 var6.timeLabel = var9;
                 var5 = var8.bind(var3)(var7, var6);
-            case 631:
+            case 633:
                 var4[1] = var5;
                 var0.children = var4;
                 var0 = var2.bind(var3)(var1, var0);
@@ -230,4 +230,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 3045, 8105, 8129, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 3047, 8111, 8135, 1234, 2]);

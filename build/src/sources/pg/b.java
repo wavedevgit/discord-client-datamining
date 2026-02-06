@@ -1,23 +1,20 @@
 package pg;
 
-import java.util.Collection;
-import java.util.List;
-import java.util.Map;
+import java.util.logging.Logger;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-abstract class b extends m implements r0 {
-    /* JADX INFO: Access modifiers changed from: protected */
-    public b(Map map) {
-        super(map);
-    }
+abstract class b {
 
-    @Override // pg.r0
-    public final List a(Object obj) {
-        return (List) super.j(obj);
-    }
+    /* renamed from: a  reason: collision with root package name */
+    private static final Logger f43926a = Logger.getLogger(b.class.getName());
+
+    /* renamed from: b  reason: collision with root package name */
+    private static final bf f43927b = new bf(null);
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    @Override // pg.m
-    public final Collection h(Object obj, Collection collection) {
-        return k(obj, (List) collection, null);
+    public static boolean a(String str) {
+        if (str != null && !str.isEmpty()) {
+            return false;
+        }
+        return true;
     }
 }

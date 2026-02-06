@@ -105,7 +105,7 @@ public class ReactExoplayerViewManager extends ViewGroupManager<g> {
         String[] strArr;
         String str;
         MapBuilder.Builder builder = MapBuilder.builder();
-        for (String str2 : i.f8368c) {
+        for (String str2 : i.f8267c) {
             if (ReactNativeFeatureFlags.enableFabricRenderer()) {
                 str = ViewProps.TOP + str2.replaceFirst("^on", "");
             } else {

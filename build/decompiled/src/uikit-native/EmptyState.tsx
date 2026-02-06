@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'uikit-native/EmptyState.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun59720: for (var _fun59720_ip = 0;;) switch (_fun59720_ip) {
+        _fun59747: for (var _fun59747_ip = 0;;) switch (_fun59747_ip) {
             case 0:
                 var0 = arg0;
                 var1 = _closure1_slot6;
@@ -95,8 +95,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.Illustration;
                 var6 = null;
                 if (!(var6 == var1)) {
-                    _fun59720_ip = 167;
-                    continue _fun59720
+                    _fun59747_ip = 167;
+                    continue _fun59747
                 }
             case 64:
                 var4 = _closure1_slot4;
@@ -111,13 +111,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var8.isThemeLight;
                 var5 = var5.bind(var8)(var9);
                 if (var5) {
-                    _fun59720_ip = 121;
-                    continue _fun59720
+                    _fun59747_ip = 121;
+                    continue _fun59747
                 }
             case 113:
                 var5 = var0.darkSource;
-                _fun59720_ip = 127;
-                continue _fun59720;
+                _fun59747_ip = 127;
+                continue _fun59747;
             case 121:
                 var5 = var0.lightSource;
             case 127:
@@ -129,8 +129,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5[1] = var8;
                 var1.style = var5;
                 var8 = var4.bind(var3)(var2, var1);
-                _fun59720_ip = 221;
-                continue _fun59720;
+                _fun59747_ip = 221;
+                continue _fun59747;
             case 167:
                 var4 = _closure1_slot4;
                 var2 = var0.Illustration;
@@ -166,8 +166,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var6 != var15;
                 var8 = null;
                 if (!var9) {
-                    _fun59720_ip = 382;
-                    continue _fun59720
+                    _fun59747_ip = 382;
+                    continue _fun59747
                 }
             case 307:
                 var14 = _closure1_slot4;
@@ -194,8 +194,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var6 != var10;
                 var6 = null;
                 if (!var8) {
-                    _fun59720_ip = 470;
-                    continue _fun59720
+                    _fun59747_ip = 470;
+                    continue _fun59747
                 }
             case 395:
                 var9 = _closure1_slot4;
@@ -227,4 +227,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 3206, 3941, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 3208, 3943, 2]);

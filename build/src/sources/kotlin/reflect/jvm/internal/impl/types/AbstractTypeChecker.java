@@ -179,7 +179,7 @@ public final class AbstractTypeChecker {
                     if (i10 != 1) {
                         if (i10 != 2) {
                             if (i10 != 3) {
-                                throw new or.p();
+                                throw new qr.p();
                             }
                         } else if (isSubtypeOf$default(INSTANCE, typeCheckerState, rigidTypeMarker, kotlinTypeMarker2, false, 8, null)) {
                             return Boolean.TRUE;
@@ -451,7 +451,7 @@ public final class AbstractTypeChecker {
         while (it.hasNext()) {
             runForkingPoint.fork(new b(typeCheckerState, typeSystemContext, (RigidTypeMarker) it.next(), rigidTypeMarker));
         }
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     public static final boolean r(TypeCheckerState typeCheckerState, TypeSystemContext typeSystemContext, RigidTypeMarker rigidTypeMarker, RigidTypeMarker rigidTypeMarker2) {
@@ -637,10 +637,10 @@ public final class AbstractTypeChecker {
                     return typeCheckerState2.isErrorTypeEqualsToAnything();
                 }
                 if (effectiveVariance != typeVariance || (!abstractTypeChecker.s(typeSystemContext, type2, type, typeConstructor) && !abstractTypeChecker.s(typeSystemContext, type, type2, typeConstructor))) {
-                    i10 = typeCheckerState2.f34591h;
+                    i10 = typeCheckerState2.f34611h;
                     if (i10 <= 100) {
-                        i11 = typeCheckerState2.f34591h;
-                        typeCheckerState2.f34591h = i11 + 1;
+                        i11 = typeCheckerState2.f34611h;
+                        typeCheckerState2.f34611h = i11 + 1;
                         int i14 = WhenMappings.$EnumSwitchMapping$0[effectiveVariance.ordinal()];
                         if (i14 != 1) {
                             if (i14 != 2) {
@@ -648,7 +648,7 @@ public final class AbstractTypeChecker {
                                     equalTypes = isSubtypeOf$default(abstractTypeChecker, typeCheckerState2, type, type2, false, 8, null);
                                     typeCheckerState2 = typeCheckerState;
                                 } else {
-                                    throw new or.p();
+                                    throw new qr.p();
                                 }
                             } else {
                                 typeCheckerState2 = typeCheckerState;
@@ -657,8 +657,8 @@ public final class AbstractTypeChecker {
                         } else {
                             equalTypes = abstractTypeChecker.equalTypes(typeCheckerState2, type2, type);
                         }
-                        i12 = typeCheckerState2.f34591h;
-                        typeCheckerState2.f34591h = i12 - 1;
+                        i12 = typeCheckerState2.f34611h;
+                        typeCheckerState2.f34611h = i12 - 1;
                         if (!equalTypes) {
                             return false;
                         }

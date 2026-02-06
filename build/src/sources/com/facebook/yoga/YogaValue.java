@@ -3,51 +3,51 @@ package com.facebook.yoga;
 public class YogaValue {
 
     /* renamed from: c  reason: collision with root package name */
-    static final YogaValue f11556c = new YogaValue(Float.NaN, YogaUnit.UNDEFINED);
+    static final YogaValue f11455c = new YogaValue(Float.NaN, YogaUnit.UNDEFINED);
 
     /* renamed from: d  reason: collision with root package name */
-    static final YogaValue f11557d = new YogaValue(0.0f, YogaUnit.POINT);
+    static final YogaValue f11456d = new YogaValue(0.0f, YogaUnit.POINT);
 
     /* renamed from: e  reason: collision with root package name */
-    static final YogaValue f11558e = new YogaValue(Float.NaN, YogaUnit.AUTO);
+    static final YogaValue f11457e = new YogaValue(Float.NaN, YogaUnit.AUTO);
 
     /* renamed from: a  reason: collision with root package name */
-    public final float f11559a;
+    public final float f11458a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final YogaUnit f11560b;
+    public final YogaUnit f11459b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f11561a;
+        static final /* synthetic */ int[] f11460a;
 
         static {
             int[] iArr = new int[YogaUnit.values().length];
-            f11561a = iArr;
+            f11460a = iArr;
             try {
                 iArr[YogaUnit.UNDEFINED.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f11561a[YogaUnit.POINT.ordinal()] = 2;
+                f11460a[YogaUnit.POINT.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f11561a[YogaUnit.PERCENT.ordinal()] = 3;
+                f11460a[YogaUnit.PERCENT.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f11561a[YogaUnit.AUTO.ordinal()] = 4;
+                f11460a[YogaUnit.AUTO.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
         }
     }
 
     public YogaValue(float f10, YogaUnit yogaUnit) {
-        this.f11559a = f10;
-        this.f11560b = yogaUnit;
+        this.f11458a = f10;
+        this.f11459b = yogaUnit;
     }
 
     public static YogaValue a(String str) {
@@ -55,10 +55,10 @@ public class YogaValue {
             return null;
         }
         if ("undefined".equals(str)) {
-            return f11556c;
+            return f11455c;
         }
         if ("auto".equals(str)) {
-            return f11558e;
+            return f11457e;
         }
         if (str.endsWith("%")) {
             return new YogaValue(Float.parseFloat(str.substring(0, str.length() - 1)), YogaUnit.PERCENT);
@@ -69,9 +69,9 @@ public class YogaValue {
     public boolean equals(Object obj) {
         if (obj instanceof YogaValue) {
             YogaValue yogaValue = (YogaValue) obj;
-            YogaUnit yogaUnit = this.f11560b;
-            if (yogaUnit == yogaValue.f11560b) {
-                if (yogaUnit != YogaUnit.UNDEFINED && yogaUnit != YogaUnit.AUTO && Float.compare(this.f11559a, yogaValue.f11559a) != 0) {
+            YogaUnit yogaUnit = this.f11459b;
+            if (yogaUnit == yogaValue.f11459b) {
+                if (yogaUnit != YogaUnit.UNDEFINED && yogaUnit != YogaUnit.AUTO && Float.compare(this.f11458a, yogaValue.f11458a) != 0) {
                     return false;
                 }
                 return true;
@@ -81,11 +81,11 @@ public class YogaValue {
     }
 
     public int hashCode() {
-        return Float.floatToIntBits(this.f11559a) + this.f11560b.e();
+        return Float.floatToIntBits(this.f11458a) + this.f11459b.e();
     }
 
     public String toString() {
-        int i10 = a.f11561a[this.f11560b.ordinal()];
+        int i10 = a.f11460a[this.f11459b.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 != 3) {
@@ -94,9 +94,9 @@ public class YogaValue {
                     }
                     throw new IllegalStateException();
                 }
-                return this.f11559a + "%";
+                return this.f11458a + "%";
             }
-            return Float.toString(this.f11559a);
+            return Float.toString(this.f11458a);
         }
         return "undefined";
     }

@@ -1,138 +1,46 @@
 package nh;
 
-import android.content.res.ColorStateList;
-import android.graphics.Canvas;
-import android.graphics.ColorFilter;
-import android.graphics.PorterDuff;
-import android.graphics.Rect;
-import android.graphics.drawable.Drawable;
-import ph.g;
-import ph.k;
-import ph.n;
+import android.graphics.Typeface;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class a extends Drawable implements n {
+public final class a extends f {
 
-    /* renamed from: d  reason: collision with root package name */
-    private b f41303d;
+    /* renamed from: a  reason: collision with root package name */
+    private final Typeface f40680a;
 
-    @Override // android.graphics.drawable.Drawable
-    /* renamed from: a */
-    public a mutate() {
-        this.f41303d = new b(this.f41303d);
-        return this;
-    }
+    /* renamed from: b  reason: collision with root package name */
+    private final InterfaceC0542a f40681b;
 
-    @Override // android.graphics.drawable.Drawable
-    public void draw(Canvas canvas) {
-        b bVar = this.f41303d;
-        if (bVar.f41305b) {
-            bVar.f41304a.draw(canvas);
-        }
-    }
+    /* renamed from: c  reason: collision with root package name */
+    private boolean f40682c;
 
-    @Override // android.graphics.drawable.Drawable
-    public Drawable.ConstantState getConstantState() {
-        return this.f41303d;
-    }
-
-    @Override // android.graphics.drawable.Drawable
-    public int getOpacity() {
-        return this.f41303d.f41304a.getOpacity();
-    }
-
-    @Override // android.graphics.drawable.Drawable
-    public boolean isStateful() {
-        return true;
-    }
-
-    @Override // android.graphics.drawable.Drawable
-    protected void onBoundsChange(Rect rect) {
-        super.onBoundsChange(rect);
-        this.f41303d.f41304a.setBounds(rect);
-    }
-
-    @Override // android.graphics.drawable.Drawable
-    protected boolean onStateChange(int[] iArr) {
-        boolean onStateChange = super.onStateChange(iArr);
-        if (this.f41303d.f41304a.setState(iArr)) {
-            onStateChange = true;
-        }
-        boolean b10 = nh.b.b(iArr);
-        b bVar = this.f41303d;
-        if (bVar.f41305b != b10) {
-            bVar.f41305b = b10;
-            return true;
-        }
-        return onStateChange;
-    }
-
-    @Override // android.graphics.drawable.Drawable
-    public void setAlpha(int i10) {
-        this.f41303d.f41304a.setAlpha(i10);
-    }
-
-    @Override // android.graphics.drawable.Drawable
-    public void setColorFilter(ColorFilter colorFilter) {
-        this.f41303d.f41304a.setColorFilter(colorFilter);
-    }
-
-    @Override // ph.n
-    public void setShapeAppearanceModel(k kVar) {
-        this.f41303d.f41304a.setShapeAppearanceModel(kVar);
-    }
-
-    @Override // android.graphics.drawable.Drawable
-    public void setTint(int i10) {
-        this.f41303d.f41304a.setTint(i10);
-    }
-
-    @Override // android.graphics.drawable.Drawable
-    public void setTintList(ColorStateList colorStateList) {
-        this.f41303d.f41304a.setTintList(colorStateList);
-    }
-
-    @Override // android.graphics.drawable.Drawable
-    public void setTintMode(PorterDuff.Mode mode) {
-        this.f41303d.f41304a.setTintMode(mode);
-    }
-
-    public a(k kVar) {
-        this(new b(new g(kVar)));
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* renamed from: nh.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class b extends Drawable.ConstantState {
+    public interface InterfaceC0542a {
+        void a(Typeface typeface);
+    }
 
-        /* renamed from: a  reason: collision with root package name */
-        g f41304a;
+    public a(InterfaceC0542a interfaceC0542a, Typeface typeface) {
+        this.f40680a = typeface;
+        this.f40681b = interfaceC0542a;
+    }
 
-        /* renamed from: b  reason: collision with root package name */
-        boolean f41305b;
-
-        public b(g gVar) {
-            this.f41304a = gVar;
-            this.f41305b = false;
-        }
-
-        @Override // android.graphics.drawable.Drawable.ConstantState
-        /* renamed from: a */
-        public a newDrawable() {
-            return new a(new b(this));
-        }
-
-        @Override // android.graphics.drawable.Drawable.ConstantState
-        public int getChangingConfigurations() {
-            return 0;
-        }
-
-        public b(b bVar) {
-            this.f41304a = (g) bVar.f41304a.getConstantState().newDrawable();
-            this.f41305b = bVar.f41305b;
+    private void d(Typeface typeface) {
+        if (!this.f40682c) {
+            this.f40681b.a(typeface);
         }
     }
 
-    private a(b bVar) {
-        this.f41303d = bVar;
+    @Override // nh.f
+    public void a(int i10) {
+        d(this.f40680a);
+    }
+
+    @Override // nh.f
+    public void b(Typeface typeface, boolean z10) {
+        d(typeface);
+    }
+
+    public void c() {
+        this.f40682c = true;
     }
 }

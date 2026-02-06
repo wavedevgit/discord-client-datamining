@@ -18,28 +18,28 @@ import java.util.concurrent.TimeUnit;
 public final class e implements io.sentry.logger.b {
 
     /* renamed from: h  reason: collision with root package name */
-    private static final io.sentry.util.a f29144h = new io.sentry.util.a();
+    private static final io.sentry.util.a f28288h = new io.sentry.util.a();
 
     /* renamed from: a  reason: collision with root package name */
-    private final k7 f29145a;
+    private final k7 f28289a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final y0 f29146b;
+    private final y0 f28290b;
 
     /* renamed from: d  reason: collision with root package name */
-    private final z0 f29148d;
+    private final z0 f28292d;
 
     /* renamed from: e  reason: collision with root package name */
-    private volatile Future f29149e;
+    private volatile Future f28293e;
 
     /* renamed from: f  reason: collision with root package name */
-    private volatile boolean f29150f = false;
+    private volatile boolean f28294f = false;
 
     /* renamed from: g  reason: collision with root package name */
-    private final b0 f29151g = new b0();
+    private final b0 f28295g = new b0();
 
     /* renamed from: c  reason: collision with root package name */
-    private final Queue f29147c = new ConcurrentLinkedQueue();
+    private final Queue f28291c = new ConcurrentLinkedQueue();
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -54,20 +54,20 @@ public final class e implements io.sentry.logger.b {
     }
 
     public e(k7 k7Var, y0 y0Var) {
-        this.f29145a = k7Var;
-        this.f29146b = y0Var;
-        this.f29148d = new q6(k7Var);
+        this.f28289a = k7Var;
+        this.f28290b = y0Var;
+        this.f28292d = new q6(k7Var);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void e() {
         g();
-        a1 a10 = f29144h.a();
+        a1 a10 = f28288h.a();
         try {
-            if (!this.f29147c.isEmpty()) {
+            if (!this.f28291c.isEmpty()) {
                 h(true, false);
             } else {
-                this.f29150f = false;
+                this.f28294f = false;
             }
             if (a10 != null) {
                 a10.close();
@@ -87,18 +87,18 @@ public final class e implements io.sentry.logger.b {
     private void f() {
         ArrayList arrayList = new ArrayList(100);
         do {
-            x6 x6Var = (x6) this.f29147c.poll();
+            x6 x6Var = (x6) this.f28291c.poll();
             if (x6Var != null) {
                 arrayList.add(x6Var);
             }
-            if (this.f29147c.isEmpty()) {
+            if (this.f28291c.isEmpty()) {
                 break;
             }
         } while (arrayList.size() < 100);
         if (!arrayList.isEmpty()) {
-            this.f29146b.h(new z6(arrayList));
+            this.f28290b.h(new z6(arrayList));
             for (int i10 = 0; i10 < arrayList.size(); i10++) {
-                this.f29151g.a();
+                this.f28295g.a();
             }
         }
     }
@@ -106,7 +106,7 @@ public final class e implements io.sentry.logger.b {
     private void g() {
         do {
             f();
-        } while (this.f29147c.size() >= 100);
+        } while (this.f28291c.size() >= 100);
     }
 
     /* JADX WARN: Can't wrap try/catch for region: R(9:7|8|(1:(2:11|(3:13|(1:15)|(2:17|18)(1:19))))|20|21|(1:23)(1:30)|24|25|(0)(0)) */
@@ -114,8 +114,8 @@ public final class e implements io.sentry.logger.b {
         r7 = move-exception;
      */
     /* JADX WARN: Code restructure failed: missing block: B:25:0x003d, code lost:
-        r5.f29150f = false;
-        r5.f29145a.getLogger().b(io.sentry.SentryLevel.WARNING, "Logs batch processor flush task rejected", r7);
+        r5.f28294f = false;
+        r5.f28289a.getLogger().b(io.sentry.SentryLevel.WARNING, "Logs batch processor flush task rejected", r7);
      */
     /* JADX WARN: Removed duplicated region for block: B:27:0x004e  */
     /* JADX WARN: Removed duplicated region for block: B:41:? A[RETURN, SYNTHETIC] */
@@ -126,14 +126,14 @@ public final class e implements io.sentry.logger.b {
     private void h(boolean r6, boolean r7) {
         /*
             r5 = this;
-            boolean r0 = r5.f29150f
+            boolean r0 = r5.f28294f
             if (r0 == 0) goto L7
             if (r6 != 0) goto L7
             goto L51
         L7:
-            io.sentry.util.a r0 = io.sentry.logger.e.f29144h
+            io.sentry.util.a r0 = io.sentry.logger.e.f28288h
             io.sentry.a1 r0 = r0.a()
-            java.util.concurrent.Future r1 = r5.f29149e     // Catch: java.lang.Throwable -> L20
+            java.util.concurrent.Future r1 = r5.f28293e     // Catch: java.lang.Throwable -> L20
             if (r6 != 0) goto L22
             if (r1 == 0) goto L22
             boolean r6 = r1.isDone()     // Catch: java.lang.Throwable -> L20
@@ -146,7 +146,7 @@ public final class e implements io.sentry.logger.b {
             goto L52
         L22:
             r6 = 1
-            r5.f29150f = r6     // Catch: java.lang.Throwable -> L20
+            r5.f28294f = r6     // Catch: java.lang.Throwable -> L20
             r6 = 0
             if (r7 == 0) goto L2a
             r7 = r6
@@ -154,18 +154,18 @@ public final class e implements io.sentry.logger.b {
         L2a:
             r7 = 5000(0x1388, float:7.006E-42)
         L2c:
-            io.sentry.z0 r1 = r5.f29148d     // Catch: java.lang.Throwable -> L20 java.util.concurrent.RejectedExecutionException -> L3c
+            io.sentry.z0 r1 = r5.f28292d     // Catch: java.lang.Throwable -> L20 java.util.concurrent.RejectedExecutionException -> L3c
             io.sentry.logger.e$b r2 = new io.sentry.logger.e$b     // Catch: java.lang.Throwable -> L20 java.util.concurrent.RejectedExecutionException -> L3c
             r3 = 0
             r2.<init>()     // Catch: java.lang.Throwable -> L20 java.util.concurrent.RejectedExecutionException -> L3c
             long r3 = (long) r7     // Catch: java.lang.Throwable -> L20 java.util.concurrent.RejectedExecutionException -> L3c
             java.util.concurrent.Future r7 = r1.c(r2, r3)     // Catch: java.lang.Throwable -> L20 java.util.concurrent.RejectedExecutionException -> L3c
-            r5.f29149e = r7     // Catch: java.lang.Throwable -> L20 java.util.concurrent.RejectedExecutionException -> L3c
+            r5.f28293e = r7     // Catch: java.lang.Throwable -> L20 java.util.concurrent.RejectedExecutionException -> L3c
             goto L4c
         L3c:
             r7 = move-exception
-            r5.f29150f = r6     // Catch: java.lang.Throwable -> L20
-            io.sentry.k7 r6 = r5.f29145a     // Catch: java.lang.Throwable -> L20
+            r5.f28294f = r6     // Catch: java.lang.Throwable -> L20
+            io.sentry.k7 r6 = r5.f28289a     // Catch: java.lang.Throwable -> L20
             io.sentry.ILogger r6 = r6.getLogger()     // Catch: java.lang.Throwable -> L20
             io.sentry.SentryLevel r1 = io.sentry.SentryLevel.WARNING     // Catch: java.lang.Throwable -> L20
             java.lang.String r2 = "Logs batch processor flush task rejected"
@@ -192,16 +192,16 @@ public final class e implements io.sentry.logger.b {
     public void c(boolean z10) {
         if (z10) {
             h(true, true);
-            this.f29148d.submit(new Runnable() { // from class: io.sentry.logger.d
+            this.f28292d.submit(new Runnable() { // from class: io.sentry.logger.d
                 @Override // java.lang.Runnable
                 public final void run() {
-                    r0.f29148d.a(e.this.f29145a.getShutdownTimeoutMillis());
+                    r0.f28292d.a(e.this.f28289a.getShutdownTimeoutMillis());
                 }
             });
             return;
         }
-        this.f29148d.a(this.f29145a.getShutdownTimeoutMillis());
-        while (!this.f29147c.isEmpty()) {
+        this.f28292d.a(this.f28289a.getShutdownTimeoutMillis());
+        while (!this.f28291c.isEmpty()) {
             f();
         }
     }
@@ -210,9 +210,9 @@ public final class e implements io.sentry.logger.b {
     public void d(long j10) {
         h(true, true);
         try {
-            this.f29151g.d(j10, TimeUnit.MILLISECONDS);
+            this.f28295g.d(j10, TimeUnit.MILLISECONDS);
         } catch (InterruptedException e10) {
-            this.f29145a.getLogger().b(SentryLevel.ERROR, "Failed to flush log events", e10);
+            this.f28289a.getLogger().b(SentryLevel.ERROR, "Failed to flush log events", e10);
             Thread.currentThread().interrupt();
         }
     }

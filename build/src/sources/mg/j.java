@@ -1,33 +1,50 @@
 package mg;
 
-import android.os.Parcel;
-import android.os.Parcelable;
+import java.util.Set;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class j implements Parcelable.Creator {
-    @Override // android.os.Parcelable.Creator
-    public final /* bridge */ /* synthetic */ Object createFromParcel(Parcel parcel) {
-        int A = hf.b.A(parcel);
-        int i10 = 0;
-        boolean z10 = false;
-        while (parcel.dataPosition() < A) {
-            int r10 = hf.b.r(parcel);
-            int l10 = hf.b.l(r10);
-            if (l10 != 2) {
-                if (l10 != 3) {
-                    hf.b.z(parcel, r10);
-                } else {
-                    z10 = hf.b.m(parcel, r10);
+public abstract class j extends c implements Set {
+
+    /* renamed from: e  reason: collision with root package name */
+    private transient f f37126e;
+
+    @Override // java.util.Collection, java.util.Set
+    public final boolean equals(Object obj) {
+        if (obj == this || obj == this) {
+            return true;
+        }
+        if (obj instanceof Set) {
+            Set set = (Set) obj;
+            try {
+                if (size() == set.size()) {
+                    if (containsAll(set)) {
+                        return true;
+                    }
+                    return false;
                 }
-            } else {
-                i10 = hf.b.t(parcel, r10);
+            } catch (ClassCastException | NullPointerException unused) {
             }
         }
-        hf.b.k(parcel, A);
-        return new i(i10, z10);
+        return false;
     }
 
-    @Override // android.os.Parcelable.Creator
-    public final /* synthetic */ Object[] newArray(int i10) {
-        return new i[i10];
+    public final f f() {
+        f fVar = this.f37126e;
+        if (fVar == null) {
+            f g10 = g();
+            this.f37126e = g10;
+            return g10;
+        }
+        return fVar;
+    }
+
+    f g() {
+        Object[] array = toArray();
+        int i10 = f.f37104i;
+        return f.g(array, array.length);
+    }
+
+    @Override // java.util.Collection, java.util.Set
+    public final int hashCode() {
+        return r.a(this);
     }
 }

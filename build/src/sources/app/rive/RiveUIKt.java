@@ -84,7 +84,7 @@ public final class RiveUIKt {
             Alignment.Companion companion2 = Alignment.Companion;
         }
         if (i17 != 0) {
-            b.d(c1.a.f7340a.a());
+            b.d(c1.a.f7185a.a());
         }
         if (c.c()) {
             c.e(-902710966, i13, -1, "app.rive.RiveUI (RiveUI.kt:97)");

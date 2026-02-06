@@ -61,4 +61,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.onServerTrendingNotificationSettingsChanged = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3103, 660, 1348, 795, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3105, 660, 1348, 795, 2]);

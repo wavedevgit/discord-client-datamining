@@ -7,39 +7,39 @@ import android.graphics.Typeface;
 public class o {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ThreadLocal f4142d = new ThreadLocal();
+    private static final ThreadLocal f4471d = new ThreadLocal();
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f4143a;
+    private final int f4472a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final m f4144b;
+    private final m f4473b;
 
     /* renamed from: c  reason: collision with root package name */
-    private volatile int f4145c = 0;
+    private volatile int f4474c = 0;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public o(m mVar, int i10) {
-        this.f4144b = mVar;
-        this.f4143a = i10;
+        this.f4473b = mVar;
+        this.f4472a = i10;
     }
 
     private c3.a g() {
-        ThreadLocal threadLocal = f4142d;
+        ThreadLocal threadLocal = f4471d;
         c3.a aVar = (c3.a) threadLocal.get();
         if (aVar == null) {
             aVar = new c3.a();
             threadLocal.set(aVar);
         }
-        this.f4144b.d().j(aVar, this.f4143a);
+        this.f4473b.d().j(aVar, this.f4472a);
         return aVar;
     }
 
     public void a(Canvas canvas, float f10, float f11, Paint paint) {
-        Typeface g10 = this.f4144b.g();
+        Typeface g10 = this.f4473b.g();
         Typeface typeface = paint.getTypeface();
         paint.setTypeface(g10);
-        canvas.drawText(this.f4144b.c(), this.f4143a * 2, 2, f10, f11, paint);
+        canvas.drawText(this.f4473b.c(), this.f4472a * 2, 2, f10, f11, paint);
         paint.setTypeface(typeface);
     }
 
@@ -52,7 +52,7 @@ public class o {
     }
 
     public int d() {
-        return this.f4145c & 3;
+        return this.f4474c & 3;
     }
 
     public int e() {
@@ -76,7 +76,7 @@ public class o {
     }
 
     public boolean k() {
-        if ((this.f4145c & 4) > 0) {
+        if ((this.f4474c & 4) > 0) {
             return true;
         }
         return false;
@@ -85,21 +85,21 @@ public class o {
     public void l(boolean z10) {
         int d10 = d();
         if (z10) {
-            this.f4145c = d10 | 4;
+            this.f4474c = d10 | 4;
         } else {
-            this.f4145c = d10;
+            this.f4474c = d10;
         }
     }
 
     public void m(boolean z10) {
         int i10;
-        int i11 = this.f4145c & 4;
+        int i11 = this.f4474c & 4;
         if (z10) {
             i10 = i11 | 2;
         } else {
             i10 = i11 | 1;
         }
-        this.f4145c = i10;
+        this.f4474c = i10;
     }
 
     public String toString() {

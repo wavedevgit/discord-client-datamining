@@ -7,13 +7,13 @@ import kotlin.jvm.internal.Intrinsics;
 public final class f0 extends h {
 
     /* renamed from: f  reason: collision with root package name */
-    public static final a f23588f = new a(null);
+    public static final a f23841f = new a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f23589d;
+    private final String f23842d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f23590e;
+    private final String f23843e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -53,8 +53,8 @@ public final class f0 extends h {
 
     private f0(String str, String str2, Bundle bundle) {
         super("android.credentials.TYPE_PASSWORD_CREDENTIAL", bundle);
-        this.f23589d = str;
-        this.f23590e = str2;
+        this.f23842d = str;
+        this.f23843e = str2;
         if (str2.length() <= 0) {
             throw new IllegalArgumentException("password should not be empty");
         }
@@ -62,7 +62,7 @@ public final class f0 extends h {
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public f0(String id2, String password) {
-        this(id2, password, f23588f.b(id2, password));
+        this(id2, password, f23841f.b(id2, password));
         Intrinsics.checkNotNullParameter(id2, "id");
         Intrinsics.checkNotNullParameter(password, "password");
     }

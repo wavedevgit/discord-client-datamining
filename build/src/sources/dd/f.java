@@ -7,53 +7,53 @@ import nc.c;
 public final class f implements m {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ne.g0 f20444a;
+    private final ne.g0 f20399a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ne.h0 f20445b;
+    private final ne.h0 f20400b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f20446c;
+    private final String f20401c;
 
     /* renamed from: d  reason: collision with root package name */
-    private String f20447d;
+    private String f20402d;
 
     /* renamed from: e  reason: collision with root package name */
-    private tc.b0 f20448e;
+    private tc.b0 f20403e;
 
     /* renamed from: f  reason: collision with root package name */
-    private int f20449f;
+    private int f20404f;
 
     /* renamed from: g  reason: collision with root package name */
-    private int f20450g;
+    private int f20405g;
 
     /* renamed from: h  reason: collision with root package name */
-    private boolean f20451h;
+    private boolean f20406h;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f20452i;
+    private boolean f20407i;
 
     /* renamed from: j  reason: collision with root package name */
-    private long f20453j;
+    private long f20408j;
 
     /* renamed from: k  reason: collision with root package name */
-    private Format f20454k;
+    private Format f20409k;
 
     /* renamed from: l  reason: collision with root package name */
-    private int f20455l;
+    private int f20410l;
 
     /* renamed from: m  reason: collision with root package name */
-    private long f20456m;
+    private long f20411m;
 
     public f() {
         this(null);
     }
 
     private boolean a(ne.h0 h0Var, byte[] bArr, int i10) {
-        int min = Math.min(h0Var.a(), i10 - this.f20450g);
-        h0Var.l(bArr, this.f20450g, min);
-        int i11 = this.f20450g + min;
-        this.f20450g = i11;
+        int min = Math.min(h0Var.a(), i10 - this.f20405g);
+        h0Var.l(bArr, this.f20405g, min);
+        int i11 = this.f20405g + min;
+        this.f20405g = i11;
         if (i11 == i10) {
             return true;
         }
@@ -61,16 +61,16 @@ public final class f implements m {
     }
 
     private void g() {
-        this.f20444a.p(0);
-        c.b d10 = nc.c.d(this.f20444a);
-        Format format = this.f20454k;
-        if (format == null || d10.f39407c != format.J || d10.f39406b != format.K || !"audio/ac4".equals(format.f11688w)) {
-            Format G = new Format.b().U(this.f20447d).g0("audio/ac4").J(d10.f39407c).h0(d10.f39406b).X(this.f20446c).G();
-            this.f20454k = G;
-            this.f20448e.b(G);
+        this.f20399a.p(0);
+        c.b d10 = nc.c.d(this.f20399a);
+        Format format = this.f20409k;
+        if (format == null || d10.f38762c != format.J || d10.f38761b != format.K || !"audio/ac4".equals(format.f11587w)) {
+            Format G = new Format.b().U(this.f20402d).g0("audio/ac4").J(d10.f38762c).h0(d10.f38761b).X(this.f20401c).G();
+            this.f20409k = G;
+            this.f20403e.b(G);
         }
-        this.f20455l = d10.f39408d;
-        this.f20453j = (d10.f39409e * 1000000) / this.f20454k.K;
+        this.f20410l = d10.f38763d;
+        this.f20408j = (d10.f38764e * 1000000) / this.f20409k.K;
     }
 
     private boolean h(ne.h0 h0Var) {
@@ -82,11 +82,11 @@ public final class f implements m {
             if (h0Var.a() <= 0) {
                 return false;
             }
-            if (!this.f20451h) {
+            if (!this.f20406h) {
                 if (h0Var.H() == 172) {
                     z10 = true;
                 }
-                this.f20451h = z10;
+                this.f20406h = z10;
             } else {
                 H = h0Var.H();
                 if (H == 172) {
@@ -94,7 +94,7 @@ public final class f implements m {
                 } else {
                     z11 = false;
                 }
-                this.f20451h = z11;
+                this.f20406h = z11;
                 if (H == 64 || H == 65) {
                     break;
                 }
@@ -103,87 +103,87 @@ public final class f implements m {
         if (H == 65) {
             z10 = true;
         }
-        this.f20452i = z10;
+        this.f20407i = z10;
         return true;
     }
 
     @Override // dd.m
     public void b(ne.h0 h0Var) {
         int i10;
-        ne.a.i(this.f20448e);
+        ne.a.i(this.f20403e);
         while (h0Var.a() > 0) {
-            int i11 = this.f20449f;
+            int i11 = this.f20404f;
             if (i11 != 0) {
                 if (i11 != 1) {
                     if (i11 == 2) {
-                        int min = Math.min(h0Var.a(), this.f20455l - this.f20450g);
-                        this.f20448e.f(h0Var, min);
-                        int i12 = this.f20450g + min;
-                        this.f20450g = i12;
-                        int i13 = this.f20455l;
+                        int min = Math.min(h0Var.a(), this.f20410l - this.f20405g);
+                        this.f20403e.f(h0Var, min);
+                        int i12 = this.f20405g + min;
+                        this.f20405g = i12;
+                        int i13 = this.f20410l;
                         if (i12 == i13) {
-                            long j10 = this.f20456m;
+                            long j10 = this.f20411m;
                             if (j10 != -9223372036854775807L) {
-                                this.f20448e.d(j10, 1, i13, 0, null);
-                                this.f20456m += this.f20453j;
+                                this.f20403e.d(j10, 1, i13, 0, null);
+                                this.f20411m += this.f20408j;
                             }
-                            this.f20449f = 0;
+                            this.f20404f = 0;
                         }
                     }
-                } else if (a(h0Var, this.f20445b.e(), 16)) {
+                } else if (a(h0Var, this.f20400b.e(), 16)) {
                     g();
-                    this.f20445b.U(0);
-                    this.f20448e.f(this.f20445b, 16);
-                    this.f20449f = 2;
+                    this.f20400b.U(0);
+                    this.f20403e.f(this.f20400b, 16);
+                    this.f20404f = 2;
                 }
             } else if (h(h0Var)) {
-                this.f20449f = 1;
-                this.f20445b.e()[0] = -84;
-                byte[] e10 = this.f20445b.e();
-                if (this.f20452i) {
+                this.f20404f = 1;
+                this.f20400b.e()[0] = -84;
+                byte[] e10 = this.f20400b.e();
+                if (this.f20407i) {
                     i10 = 65;
                 } else {
                     i10 = 64;
                 }
                 e10[1] = (byte) i10;
-                this.f20450g = 2;
+                this.f20405g = 2;
             }
         }
     }
 
     @Override // dd.m
     public void c() {
-        this.f20449f = 0;
-        this.f20450g = 0;
-        this.f20451h = false;
-        this.f20452i = false;
-        this.f20456m = -9223372036854775807L;
+        this.f20404f = 0;
+        this.f20405g = 0;
+        this.f20406h = false;
+        this.f20407i = false;
+        this.f20411m = -9223372036854775807L;
     }
 
     @Override // dd.m
     public void e(long j10, int i10) {
         if (j10 != -9223372036854775807L) {
-            this.f20456m = j10;
+            this.f20411m = j10;
         }
     }
 
     @Override // dd.m
     public void f(tc.m mVar, i0.d dVar) {
         dVar.a();
-        this.f20447d = dVar.b();
-        this.f20448e = mVar.c(dVar.c(), 1);
+        this.f20402d = dVar.b();
+        this.f20403e = mVar.c(dVar.c(), 1);
     }
 
     public f(String str) {
         ne.g0 g0Var = new ne.g0(new byte[16]);
-        this.f20444a = g0Var;
-        this.f20445b = new ne.h0(g0Var.f39566a);
-        this.f20449f = 0;
-        this.f20450g = 0;
-        this.f20451h = false;
-        this.f20452i = false;
-        this.f20456m = -9223372036854775807L;
-        this.f20446c = str;
+        this.f20399a = g0Var;
+        this.f20400b = new ne.h0(g0Var.f38921a);
+        this.f20404f = 0;
+        this.f20405g = 0;
+        this.f20406h = false;
+        this.f20407i = false;
+        this.f20411m = -9223372036854775807L;
+        this.f20401c = str;
     }
 
     @Override // dd.m

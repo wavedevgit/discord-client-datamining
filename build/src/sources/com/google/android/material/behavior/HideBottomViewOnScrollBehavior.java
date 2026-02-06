@@ -1,5 +1,6 @@
 package com.google.android.material.behavior;
 
+import ah.b;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.TimeInterpolator;
@@ -11,46 +12,45 @@ import android.view.ViewPropertyAnimator;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
-import kh.g;
-import zg.b;
+import lh.g;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class HideBottomViewOnScrollBehavior<V extends View> extends CoordinatorLayout.c {
 
     /* renamed from: u  reason: collision with root package name */
-    private static final int f14538u = b.F;
+    private static final int f14518u = b.F;
 
     /* renamed from: v  reason: collision with root package name */
-    private static final int f14539v = b.I;
+    private static final int f14519v = b.I;
 
     /* renamed from: w  reason: collision with root package name */
-    private static final int f14540w = b.P;
+    private static final int f14520w = b.P;
 
     /* renamed from: d  reason: collision with root package name */
-    private final LinkedHashSet f14541d;
+    private final LinkedHashSet f14521d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f14542e;
+    private int f14522e;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f14543i;
+    private int f14523i;
 
     /* renamed from: o  reason: collision with root package name */
-    private TimeInterpolator f14544o;
+    private TimeInterpolator f14524o;
 
     /* renamed from: p  reason: collision with root package name */
-    private TimeInterpolator f14545p;
+    private TimeInterpolator f14525p;
 
     /* renamed from: q  reason: collision with root package name */
-    private int f14546q;
+    private int f14526q;
 
     /* renamed from: r  reason: collision with root package name */
-    private int f14547r;
+    private int f14527r;
 
     /* renamed from: s  reason: collision with root package name */
-    private int f14548s;
+    private int f14528s;
 
     /* renamed from: t  reason: collision with root package name */
-    private ViewPropertyAnimator f14549t;
+    private ViewPropertyAnimator f14529t;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -60,24 +60,24 @@ public class HideBottomViewOnScrollBehavior<V extends View> extends CoordinatorL
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationEnd(Animator animator) {
-            HideBottomViewOnScrollBehavior.this.f14549t = null;
+            HideBottomViewOnScrollBehavior.this.f14529t = null;
         }
     }
 
     public HideBottomViewOnScrollBehavior() {
-        this.f14541d = new LinkedHashSet();
-        this.f14546q = 0;
-        this.f14547r = 2;
-        this.f14548s = 0;
+        this.f14521d = new LinkedHashSet();
+        this.f14526q = 0;
+        this.f14527r = 2;
+        this.f14528s = 0;
     }
 
     private void J(View view, int i10, long j10, TimeInterpolator timeInterpolator) {
-        this.f14549t = view.animate().translationY(i10).setInterpolator(timeInterpolator).setDuration(j10).setListener(new a());
+        this.f14529t = view.animate().translationY(i10).setInterpolator(timeInterpolator).setDuration(j10).setListener(new a());
     }
 
     private void Q(View view, int i10) {
-        this.f14547r = i10;
-        Iterator it = this.f14541d.iterator();
+        this.f14527r = i10;
+        Iterator it = this.f14521d.iterator();
         if (!it.hasNext()) {
             return;
         }
@@ -91,14 +91,14 @@ public class HideBottomViewOnScrollBehavior<V extends View> extends CoordinatorL
     }
 
     public boolean K() {
-        if (this.f14547r == 1) {
+        if (this.f14527r == 1) {
             return true;
         }
         return false;
     }
 
     public boolean L() {
-        if (this.f14547r == 2) {
+        if (this.f14527r == 2) {
             return true;
         }
         return false;
@@ -112,15 +112,15 @@ public class HideBottomViewOnScrollBehavior<V extends View> extends CoordinatorL
         if (K()) {
             return;
         }
-        ViewPropertyAnimator viewPropertyAnimator = this.f14549t;
+        ViewPropertyAnimator viewPropertyAnimator = this.f14529t;
         if (viewPropertyAnimator != null) {
             viewPropertyAnimator.cancel();
             view.clearAnimation();
         }
         Q(view, 1);
-        int i10 = this.f14546q + this.f14548s;
+        int i10 = this.f14526q + this.f14528s;
         if (z10) {
-            J(view, i10, this.f14543i, this.f14545p);
+            J(view, i10, this.f14523i, this.f14525p);
         } else {
             view.setTranslationY(i10);
         }
@@ -134,14 +134,14 @@ public class HideBottomViewOnScrollBehavior<V extends View> extends CoordinatorL
         if (L()) {
             return;
         }
-        ViewPropertyAnimator viewPropertyAnimator = this.f14549t;
+        ViewPropertyAnimator viewPropertyAnimator = this.f14529t;
         if (viewPropertyAnimator != null) {
             viewPropertyAnimator.cancel();
             view.clearAnimation();
         }
         Q(view, 2);
         if (z10) {
-            J(view, 0, this.f14542e, this.f14544o);
+            J(view, 0, this.f14522e, this.f14524o);
         } else {
             view.setTranslationY(0);
         }
@@ -149,13 +149,13 @@ public class HideBottomViewOnScrollBehavior<V extends View> extends CoordinatorL
 
     @Override // androidx.coordinatorlayout.widget.CoordinatorLayout.c
     public boolean p(CoordinatorLayout coordinatorLayout, View view, int i10) {
-        this.f14546q = view.getMeasuredHeight() + ((ViewGroup.MarginLayoutParams) view.getLayoutParams()).bottomMargin;
-        this.f14542e = g.f(view.getContext(), f14538u, 225);
-        this.f14543i = g.f(view.getContext(), f14539v, 175);
+        this.f14526q = view.getMeasuredHeight() + ((ViewGroup.MarginLayoutParams) view.getLayoutParams()).bottomMargin;
+        this.f14522e = g.f(view.getContext(), f14518u, 225);
+        this.f14523i = g.f(view.getContext(), f14519v, 175);
         Context context = view.getContext();
-        int i11 = f14540w;
-        this.f14544o = g.g(context, i11, ah.a.f628d);
-        this.f14545p = g.g(view.getContext(), i11, ah.a.f627c);
+        int i11 = f14520w;
+        this.f14524o = g.g(context, i11, bh.a.f6757d);
+        this.f14525p = g.g(view.getContext(), i11, bh.a.f6756c);
         return super.p(coordinatorLayout, view, i10);
     }
 
@@ -170,9 +170,9 @@ public class HideBottomViewOnScrollBehavior<V extends View> extends CoordinatorL
 
     public HideBottomViewOnScrollBehavior(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f14541d = new LinkedHashSet();
-        this.f14546q = 0;
-        this.f14547r = 2;
-        this.f14548s = 0;
+        this.f14521d = new LinkedHashSet();
+        this.f14526q = 0;
+        this.f14527r = 2;
+        this.f14528s = 0;
     }
 }

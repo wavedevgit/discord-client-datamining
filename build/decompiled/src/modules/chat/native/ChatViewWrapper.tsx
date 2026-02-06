@@ -1,7 +1,7 @@
 // modules/chat/native/ChatViewWrapper.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun76970: for (var _fun76970_ip = 0;;) switch (_fun76970_ip) {
+    _fun76997: for (var _fun76997_ip = 0;;) switch (_fun76997_ip) {
         case 0:
             var4 = require;
             var6 = metroImportDefault;
@@ -22,15 +22,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1 = var3.isAnimatedAndroidKeyboard;
             var1 = var1.bind(var3)();
             if (var1) {
-                _fun76970_ip = 84;
-                continue _fun76970
+                _fun76997_ip = 84;
+                continue _fun76997
             }
         case 70:
             var1 = 2;
             var1 = var5[var1];
             var1 = var6.bind(var0)(var1);
-            _fun76970_ip = 96;
-            continue _fun76970;
+            _fun76997_ip = 96;
+            continue _fun76997;
         case 84:
             var3 = 1;
             var3 = var5[var3];
@@ -45,4 +45,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.default = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [9821, 9822, 9830, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [9828, 9829, 9837, 2]);

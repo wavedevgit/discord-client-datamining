@@ -80,7 +80,7 @@ public final class ThreadEmbedView extends ConstraintLayout {
     }
 
     /* renamed from: setMessage-CKTq3AQ  reason: not valid java name */
-    public final void m709setMessageCKTq3AQ(String str, String str2, Integer num, @NotNull DraweeSpanStringBuilder message, boolean z10, String str3, String str4, GuildId guildId) {
+    public final void m707setMessageCKTq3AQ(String str, String str2, Integer num, @NotNull DraweeSpanStringBuilder message, boolean z10, String str3, String str4, GuildId guildId) {
         boolean z11;
         int i10;
         DiscordFont discordFont;
@@ -116,7 +116,7 @@ public final class ThreadEmbedView extends ConstraintLayout {
         }
         DiscordFontUtilsKt.setDiscordFont(threadEmbedMostRecentMessageContent, discordFont);
         if (str3 != null && guildId != null) {
-            this.binding.tagChiplet.m504configureD0ylKIU(str3, str4, guildId.m1081unboximpl(), null, 0.89f);
+            this.binding.tagChiplet.m502configureD0ylKIU(str3, str4, guildId.m1079unboximpl(), null, 0.89f);
             ClanTagChipletView tagChiplet = this.binding.tagChiplet;
             Intrinsics.checkNotNullExpressionValue(tagChiplet, "tagChiplet");
             tagChiplet.setVisibility(0);

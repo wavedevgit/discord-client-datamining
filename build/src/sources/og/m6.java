@@ -1,69 +1,155 @@
 package og;
-
-import xi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class m6 implements xi.d {
+public final class m6 implements zi.a {
 
     /* renamed from: a  reason: collision with root package name */
-    static final m6 f43133a = new m6();
-
-    /* renamed from: b  reason: collision with root package name */
-    private static final xi.c f43134b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private static final xi.c f43135c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private static final xi.c f43136d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private static final xi.c f43137e;
-
-    /* renamed from: f  reason: collision with root package name */
-    private static final xi.c f43138f;
-
-    /* renamed from: g  reason: collision with root package name */
-    private static final xi.c f43139g;
-
-    static {
-        c.b a10 = xi.c.a("inferenceCommonLogEvent");
-        s1 s1Var = new s1();
-        s1Var.a(1);
-        f43134b = a10.b(s1Var.b()).a();
-        c.b a11 = xi.c.a("options");
-        s1 s1Var2 = new s1();
-        s1Var2.a(2);
-        f43135c = a11.b(s1Var2.b()).a();
-        c.b a12 = xi.c.a("imageInfo");
-        s1 s1Var3 = new s1();
-        s1Var3.a(3);
-        f43136d = a12.b(s1Var3.b()).a();
-        c.b a13 = xi.c.a("detectorOptions");
-        s1 s1Var4 = new s1();
-        s1Var4.a(4);
-        f43137e = a13.b(s1Var4.b()).a();
-        c.b a14 = xi.c.a("contourDetectedFaces");
-        s1 s1Var5 = new s1();
-        s1Var5.a(5);
-        f43138f = a14.b(s1Var5.b()).a();
-        c.b a15 = xi.c.a("nonContourDetectedFaces");
-        s1 s1Var6 = new s1();
-        s1Var6.a(6);
-        f43139g = a15.b(s1Var6.b()).a();
-    }
+    public static final zi.a f42277a = new m6();
 
     private m6() {
     }
 
-    @Override // xi.d
-    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
-        wa waVar = (wa) obj;
-        xi.e eVar = (xi.e) obj2;
-        eVar.d(f43134b, waVar.c());
-        eVar.d(f43135c, null);
-        eVar.d(f43136d, waVar.b());
-        eVar.d(f43137e, waVar.a());
-        eVar.d(f43138f, waVar.d());
-        eVar.d(f43139g, waVar.e());
+    @Override // zi.a
+    public final void a(zi.b bVar) {
+        bVar.a(h8.class, t3.f42459a);
+        bVar.a(ma.class, b6.f41816a);
+        bVar.a(i8.class, u3.f42535a);
+        bVar.a(m8.class, w3.f42617a);
+        bVar.a(k8.class, v3.f42574a);
+        bVar.a(l8.class, x3.f42678a);
+        bVar.a(g7.class, v2.f42568a);
+        bVar.a(f7.class, u2.f42529a);
+        bVar.a(v7.class, m3.f42258a);
+        bVar.a(fa.class, t5.f42517a);
+        bVar.a(e7.class, t2.f42456a);
+        bVar.a(d7.class, s2.f42433a);
+        bVar.a(v8.class, j4.f42144a);
+        bVar.a(gb.class, g3.f42053a);
+        bVar.a(s7.class, j3.f42139a);
+        bVar.a(p7.class, f3.f42020a);
+        bVar.a(w8.class, k4.f42197a);
+        bVar.a(ca.class, q5.f42391a);
+        bVar.a(da.class, r5.f42409a);
+        bVar.a(ba.class, p5.f42367a);
+        bVar.a(q8.class, d4.f41867a);
+        bVar.a(fb.class, b2.f41806a);
+        bVar.a(r8.class, e4.f41889a);
+        bVar.a(e9.class, s4.f42438a);
+        bVar.a(h9.class, v4.f42584a);
+        bVar.a(g9.class, u4.f42543a);
+        bVar.a(f9.class, t4.f42511a);
+        bVar.a(r9.class, e5.f41891a);
+        bVar.a(s9.class, f5.f42027a);
+        bVar.a(u9.class, i5.f42121a);
+        bVar.a(t9.class, h5.f42092a);
+        bVar.a(p8.class, c4.f41846a);
+        bVar.a(v9.class, j5.f42151a);
+        bVar.a(w9.class, k5.f42199a);
+        bVar.a(x9.class, l5.f42236a);
+        bVar.a(y9.class, m5.f42273a);
+        bVar.a(aa.class, n5.f42311a);
+        bVar.a(z9.class, o5.f42343a);
+        bVar.a(q9.class, a5.f41789a);
+        bVar.a(c8.class, r3.f42402a);
+        bVar.a(o9.class, c5.f41851a);
+        bVar.a(n9.class, b5.f41813a);
+        bVar.a(p9.class, d5.f41873a);
+        bVar.a(ea.class, s5.f42441a);
+        bVar.a(sa.class, i6.f42127a);
+        bVar.a(s6.class, h2.f42077a);
+        bVar.a(q6.class, f2.f42017a);
+        bVar.a(p6.class, e2.f41883a);
+        bVar.a(r6.class, g2.f42049a);
+        bVar.a(u6.class, j2.f42135a);
+        bVar.a(t6.class, i2.f42112a);
+        bVar.a(v6.class, k2.f42189a);
+        bVar.a(w6.class, l2.f42226a);
+        bVar.a(x6.class, m2.f42254a);
+        bVar.a(y6.class, n2.f42299a);
+        bVar.a(z6.class, o2.f42328a);
+        bVar.a(s0.class, x1.f42665a);
+        bVar.a(u0.class, z1.f42732a);
+        bVar.a(t0.class, y1.f42704a);
+        bVar.a(a8.class, p3.f42361a);
+        bVar.a(h7.class, w2.f42613a);
+        bVar.a(s.class, w0.f42603a);
+        bVar.a(r.class, x0.f42660a);
+        bVar.a(n7.class, c3.f41839a);
+        bVar.a(u.class, y0.f42700a);
+        bVar.a(t.class, z0.f42726a);
+        bVar.a(a0.class, f1.f42013a);
+        bVar.a(z.class, g1.f42042a);
+        bVar.a(w.class, a1.f41773a);
+        bVar.a(v.class, b1.f41798a);
+        bVar.a(h0.class, l1.f42222a);
+        bVar.a(g0.class, m1.f42249a);
+        bVar.a(l0.class, p1.f42352a);
+        bVar.a(k0.class, q1.f42370a);
+        bVar.a(r0.class, v1.f42564a);
+        bVar.a(q0.class, w1.f42607a);
+        bVar.a(n0.class, r1.f42395a);
+        bVar.a(m0.class, s1.f42428a);
+        bVar.a(p0.class, t1.f42452a);
+        bVar.a(o0.class, u1.f42524a);
+        bVar.a(ab.class, w5.f42625a);
+        bVar.a(ta.class, x2.f42667a);
+        bVar.a(xa.class, b4.f41810a);
+        bVar.a(wa.class, a4.f41784a);
+        bVar.a(ua.class, h3.f42081a);
+        bVar.a(za.class, v5.f42588a);
+        bVar.a(ya.class, u5.f42549a);
+        bVar.a(bb.class, x5.f42687a);
+        bVar.a(va.class, n3.f42303a);
+        bVar.a(eb.class, k6.f42205a);
+        bVar.a(db.class, l6.f42240a);
+        bVar.a(cb.class, j6.f42158a);
+        bVar.a(ga.class, y5.f42719a);
+        bVar.a(z7.class, o3.f42332a);
+        bVar.a(d8.class, s3.f42436a);
+        bVar.a(o6.class, c2.f41832a);
+        bVar.a(t7.class, k3.f42193a);
+        bVar.a(b8.class, q3.f42381a);
+        bVar.a(o7.class, d3.f41863a);
+        bVar.a(k7.class, z2.f42737a);
+        bVar.a(l7.class, a3.f41782a);
+        bVar.a(j7.class, y2.f42710a);
+        bVar.a(m7.class, b3.f41808a);
+        bVar.a(o8.class, z3.f42740a);
+        bVar.a(n8.class, y3.f42712a);
+        bVar.a(q.class, v0.f42556a);
+        bVar.a(pa.class, e6.f41894a);
+        bVar.a(ra.class, g6.f42062a);
+        bVar.a(qa.class, f6.f42034a);
+        bVar.a(n6.class, a2.f41777a);
+        bVar.a(c7.class, r2.f42399a);
+        bVar.a(b7.class, q2.f42376a);
+        bVar.a(a7.class, p2.f42356a);
+        bVar.a(s8.class, g4.f42060a);
+        bVar.a(u8.class, i4.f42118a);
+        bVar.a(t8.class, h4.f42089a);
+        bVar.a(y.class, d1.f41859a);
+        bVar.a(x.class, e1.f41879a);
+        bVar.a(x8.class, l4.f42233a);
+        bVar.a(a9.class, o4.f42340a);
+        bVar.a(y8.class, m4.f42269a);
+        bVar.a(z8.class, n4.f42306a);
+        bVar.a(d0.class, h1.f42073a);
+        bVar.a(c0.class, i1.f42107a);
+        bVar.a(ia.class, a6.f41794a);
+        bVar.a(ha.class, z5.f42745a);
+        bVar.a(na.class, c6.f41853a);
+        bVar.a(oa.class, d6.f41875a);
+        bVar.a(i9.class, w4.f42622a);
+        bVar.a(m9.class, z4.f42743a);
+        bVar.a(j9.class, x4.f42683a);
+        bVar.a(l9.class, y4.f42715a);
+        bVar.a(j0.class, n1.f42295a);
+        bVar.a(i0.class, o1.f42323a);
+        bVar.a(u7.class, l3.f42230a);
+        bVar.a(q7.class, i3.f42116a);
+        bVar.a(b9.class, p4.f42365a);
+        bVar.a(d9.class, r4.f42406a);
+        bVar.a(c9.class, q4.f42385a);
+        bVar.a(f0.class, j1.f42131a);
+        bVar.a(e0.class, k1.f42185a);
     }
 }

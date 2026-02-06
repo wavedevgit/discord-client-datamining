@@ -45,34 +45,34 @@ public final class NextStep_Selfie_AssetConfig_RecordPageJsonAdapter extends h {
     @NotNull
     public NextStep.Selfie.AssetConfig.RecordPage fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         RemoteImage remoteImage = null;
         RemoteImage remoteImage2 = null;
         RemoteImage remoteImage3 = null;
         int i10 = -1;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 remoteImage = (RemoteImage) this.nullableRemoteImageAdapter.fromJson(reader);
                 i10 &= -2;
-            } else if (W == 1) {
+            } else if (J == 1) {
                 remoteImage2 = (RemoteImage) this.nullableRemoteImageAdapter.fromJson(reader);
                 i10 &= -3;
-            } else if (W == 2) {
+            } else if (J == 2) {
                 remoteImage3 = (RemoteImage) this.nullableRemoteImageAdapter.fromJson(reader);
                 i10 &= -5;
             }
         }
-        reader.z();
+        reader.D();
         if (i10 == -8) {
             return new NextStep.Selfie.AssetConfig.RecordPage(remoteImage, remoteImage2, remoteImage3);
         }
         Constructor<NextStep.Selfie.AssetConfig.RecordPage> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = NextStep.Selfie.AssetConfig.RecordPage.class.getDeclaredConstructor(RemoteImage.class, RemoteImage.class, RemoteImage.class, Integer.TYPE, ym.c.f54853c);
+            constructor = NextStep.Selfie.AssetConfig.RecordPage.class.getDeclaredConstructor(RemoteImage.class, RemoteImage.class, RemoteImage.class, Integer.TYPE, an.c.f1164c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -86,13 +86,13 @@ public final class NextStep_Selfie_AssetConfig_RecordPageJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (recordPage != null) {
             writer.k();
-            writer.W("loadingPictograph");
+            writer.J("loadingPictograph");
             this.nullableRemoteImageAdapter.toJson(writer, recordPage.getLoadingPictograph());
-            writer.W("selfieLeftPictograph");
+            writer.J("selfieLeftPictograph");
             this.nullableRemoteImageAdapter.toJson(writer, recordPage.getSelfieLeftPictograph());
-            writer.W("selfieRightPictograph");
+            writer.J("selfieRightPictograph");
             this.nullableRemoteImageAdapter.toJson(writer, recordPage.getSelfieRightPictograph());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

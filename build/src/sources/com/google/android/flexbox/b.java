@@ -3,31 +3,25 @@ package com.google.android.flexbox;
 import android.os.Parcelable;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 interface b extends Parcelable {
-    void A1(int i10);
+    int A1();
 
-    int B1();
+    int C();
 
-    float E();
-
-    int E1();
+    int D1();
 
     float F0();
 
-    int L();
+    void I(int i10);
 
-    int N();
+    float J();
 
-    boolean N0();
+    boolean K0();
 
-    void V(int i10);
+    int V0();
 
-    float W();
+    int X1();
 
-    int Y0();
-
-    int Y1();
-
-    int b2();
+    int a2();
 
     int getHeight();
 
@@ -37,5 +31,11 @@ interface b extends Parcelable {
 
     int h2();
 
-    int y();
+    int n();
+
+    float s();
+
+    int z();
+
+    void z1(int i10);
 }

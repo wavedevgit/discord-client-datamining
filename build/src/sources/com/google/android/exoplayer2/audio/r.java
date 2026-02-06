@@ -17,8 +17,8 @@ public final class r extends i {
             int r0 = r10.position()
             int r1 = r10.limit()
             int r2 = r1 - r0
-            com.google.android.exoplayer2.audio.d$a r3 = r9.f12273b
-            int r3 = r3.f12223c
+            com.google.android.exoplayer2.audio.d$a r3 = r9.f12172b
+            int r3 = r3.f12122c
             r4 = 805306368(0x30000000, float:4.656613E-10)
             r5 = 536870912(0x20000000, float:1.0842022E-19)
             r6 = 268435456(0x10000000, float:2.5243549E-29)
@@ -43,8 +43,8 @@ public final class r extends i {
             int r2 = r2 / 2
         L2e:
             java.nio.ByteBuffer r2 = r9.l(r2)
-            com.google.android.exoplayer2.audio.d$a r3 = r9.f12273b
-            int r3 = r3.f12223c
+            com.google.android.exoplayer2.audio.d$a r3 = r9.f12172b
+            int r3 = r3.f12122c
             if (r3 == r8) goto Lae
             if (r3 == r7) goto L89
             if (r3 == r6) goto L74
@@ -124,13 +124,13 @@ public final class r extends i {
 
     @Override // com.google.android.exoplayer2.audio.i
     public d.a h(d.a aVar) {
-        int i10 = aVar.f12223c;
+        int i10 = aVar.f12122c;
         if (i10 != 3 && i10 != 2 && i10 != 268435456 && i10 != 536870912 && i10 != 805306368 && i10 != 4) {
             throw new d.b(aVar);
         }
         if (i10 != 2) {
-            return new d.a(aVar.f12221a, aVar.f12222b, 2);
+            return new d.a(aVar.f12120a, aVar.f12121b, 2);
         }
-        return d.a.f12220e;
+        return d.a.f12119e;
     }
 }

@@ -8,10 +8,10 @@ import r.a0;
 public class AeFpsRangeLegacyQuirk implements y1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Range f2018a;
+    private final Range f2347a;
 
     public AeFpsRangeLegacyQuirk(a0 a0Var) {
-        this.f2018a = f((Range[]) a0Var.a(CameraCharacteristics.CONTROL_AE_AVAILABLE_TARGET_FPS_RANGES));
+        this.f2347a = f((Range[]) a0Var.a(CameraCharacteristics.CONTROL_AE_AVAILABLE_TARGET_FPS_RANGES));
     }
 
     private Range c(Range range) {
@@ -49,6 +49,6 @@ public class AeFpsRangeLegacyQuirk implements y1 {
     }
 
     public Range d() {
-        return this.f2018a;
+        return this.f2347a;
     }
 }

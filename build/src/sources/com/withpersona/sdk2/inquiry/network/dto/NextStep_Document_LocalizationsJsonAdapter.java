@@ -50,37 +50,37 @@ public final class NextStep_Document_LocalizationsJsonAdapter extends h {
     @NotNull
     public NextStep.Document.Localizations fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         NextStep.Document.PendingPage pendingPage = null;
         NextStep.Document.PromptPage promptPage = null;
         NextStep.CancelDialog cancelDialog = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 pendingPage = (NextStep.Document.PendingPage) this.pendingPageAdapter.fromJson(reader);
                 if (pendingPage == null) {
-                    throw ym.c.x("pendingPage", "pendingPage", reader);
+                    throw an.c.x("pendingPage", "pendingPage", reader);
                 }
-            } else if (W == 1) {
+            } else if (J == 1) {
                 promptPage = (NextStep.Document.PromptPage) this.promptPageAdapter.fromJson(reader);
                 if (promptPage == null) {
-                    throw ym.c.x("promptPage", "promptPage", reader);
+                    throw an.c.x("promptPage", "promptPage", reader);
                 }
-            } else if (W == 2) {
+            } else if (J == 2) {
                 cancelDialog = (NextStep.CancelDialog) this.nullableCancelDialogAdapter.fromJson(reader);
             }
         }
-        reader.z();
+        reader.D();
         if (pendingPage != null) {
             if (promptPage != null) {
                 return new NextStep.Document.Localizations(pendingPage, promptPage, cancelDialog);
             }
-            throw ym.c.o("promptPage", "promptPage", reader);
+            throw an.c.o("promptPage", "promptPage", reader);
         }
-        throw ym.c.o("pendingPage", "pendingPage", reader);
+        throw an.c.o("pendingPage", "pendingPage", reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -88,13 +88,13 @@ public final class NextStep_Document_LocalizationsJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (localizations != null) {
             writer.k();
-            writer.W("pendingPage");
+            writer.J("pendingPage");
             this.pendingPageAdapter.toJson(writer, localizations.getPendingPage());
-            writer.W("promptPage");
+            writer.J("promptPage");
             this.promptPageAdapter.toJson(writer, localizations.getPromptPage());
-            writer.W("cancelDialog");
+            writer.J("cancelDialog");
             this.nullableCancelDialogAdapter.toJson(writer, localizations.getCancelDialog());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

@@ -1,17 +1,19 @@
 package ji;
 
-import android.os.IBinder;
-import android.os.IInterface;
+import java.security.cert.X509Certificate;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class k0 extends b0 implements l0 {
-    public static l0 f(IBinder iBinder) {
-        if (iBinder == null) {
-            return null;
-        }
-        IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.play.core.integrity.protocol.IExpressIntegrityService");
-        if (queryLocalInterface instanceof l0) {
-            return (l0) queryLocalInterface;
-        }
-        return new j0(iBinder);
+final class k0 extends l0 {
+
+    /* renamed from: e  reason: collision with root package name */
+    private final byte[] f29911e;
+
+    public k0(X509Certificate x509Certificate, byte[] bArr) {
+        super(x509Certificate);
+        this.f29911e = bArr;
+    }
+
+    @Override // java.security.cert.Certificate
+    public final byte[] getEncoded() {
+        return this.f29911e;
     }
 }

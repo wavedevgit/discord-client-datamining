@@ -12,32 +12,32 @@ import kotlin.jvm.internal.Intrinsics;
 final class a implements Window.OnFrameMetricsAvailableListener {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f4729a;
+    private final List f5058a;
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f4730b;
+    private boolean f5059b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final List f4731c;
+    private final List f5060c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f4732d;
+    private final List f5061d;
 
     public a(List delegates) {
         Intrinsics.checkNotNullParameter(delegates, "delegates");
-        this.f4729a = delegates;
-        this.f4731c = new ArrayList();
-        this.f4732d = new ArrayList();
+        this.f5058a = delegates;
+        this.f5060c = new ArrayList();
+        this.f5061d = new ArrayList();
     }
 
     public final void a(Window.OnFrameMetricsAvailableListener delegate) {
         Intrinsics.checkNotNullParameter(delegate, "delegate");
         synchronized (this) {
             try {
-                if (this.f4730b) {
-                    this.f4731c.add(delegate);
+                if (this.f5059b) {
+                    this.f5060c.add(delegate);
                 } else {
-                    this.f4729a.add(delegate);
+                    this.f5058a.add(delegate);
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -50,16 +50,16 @@ final class a implements Window.OnFrameMetricsAvailableListener {
         Intrinsics.checkNotNullParameter(window, "window");
         synchronized (this) {
             try {
-                if (this.f4730b) {
-                    this.f4732d.add(delegate);
+                if (this.f5059b) {
+                    this.f5061d.add(delegate);
                 } else {
-                    boolean isEmpty = this.f4729a.isEmpty();
-                    this.f4729a.remove(delegate);
-                    if (!isEmpty && this.f4729a.isEmpty()) {
+                    boolean isEmpty = this.f5058a.isEmpty();
+                    this.f5058a.remove(delegate);
+                    if (!isEmpty && this.f5058a.isEmpty()) {
                         window.removeOnFrameMetricsAvailableListener(this);
-                        window.getDecorView().setTag(o3.g.f42231a, null);
+                        window.getDecorView().setTag(o3.g.f41454a, null);
                     }
-                    Unit unit = Unit.f31988a;
+                    Unit unit = Unit.f32008a;
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -72,39 +72,39 @@ final class a implements Window.OnFrameMetricsAvailableListener {
         View decorView;
         synchronized (this) {
             try {
-                this.f4730b = true;
-                for (Window.OnFrameMetricsAvailableListener onFrameMetricsAvailableListener : this.f4729a) {
+                this.f5059b = true;
+                for (Window.OnFrameMetricsAvailableListener onFrameMetricsAvailableListener : this.f5058a) {
                     onFrameMetricsAvailableListener.onFrameMetricsAvailable(window, frameMetrics, i10);
                 }
-                if (!this.f4731c.isEmpty()) {
-                    for (Window.OnFrameMetricsAvailableListener onFrameMetricsAvailableListener2 : this.f4731c) {
-                        this.f4729a.add(onFrameMetricsAvailableListener2);
+                if (!this.f5060c.isEmpty()) {
+                    for (Window.OnFrameMetricsAvailableListener onFrameMetricsAvailableListener2 : this.f5060c) {
+                        this.f5058a.add(onFrameMetricsAvailableListener2);
                     }
-                    this.f4731c.clear();
+                    this.f5060c.clear();
                 }
-                if (!this.f4732d.isEmpty()) {
-                    boolean isEmpty = this.f4729a.isEmpty();
-                    for (Window.OnFrameMetricsAvailableListener onFrameMetricsAvailableListener3 : this.f4732d) {
-                        this.f4729a.remove(onFrameMetricsAvailableListener3);
+                if (!this.f5061d.isEmpty()) {
+                    boolean isEmpty = this.f5058a.isEmpty();
+                    for (Window.OnFrameMetricsAvailableListener onFrameMetricsAvailableListener3 : this.f5061d) {
+                        this.f5058a.remove(onFrameMetricsAvailableListener3);
                     }
-                    this.f4732d.clear();
-                    if (!isEmpty && this.f4729a.isEmpty()) {
+                    this.f5061d.clear();
+                    if (!isEmpty && this.f5058a.isEmpty()) {
                         if (window != null) {
                             window.removeOnFrameMetricsAvailableListener(this);
                         }
                         if (window != null && (decorView = window.getDecorView()) != null) {
-                            decorView.setTag(o3.g.f42231a, null);
+                            decorView.setTag(o3.g.f41454a, null);
                         }
                     }
                 }
-                this.f4730b = false;
-                Unit unit = Unit.f31988a;
+                this.f5059b = false;
+                Unit unit = Unit.f32008a;
             } catch (Throwable th2) {
                 throw th2;
             }
         }
         if (window != null) {
-            g.a aVar = g.f4755f;
+            g.a aVar = g.f5084f;
             View decorView2 = window.getDecorView();
             Intrinsics.checkNotNullExpressionValue(decorView2, "window.decorView");
             g a10 = aVar.b(decorView2).a();

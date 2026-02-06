@@ -1,27 +1,27 @@
 package ap;
 
-import androidx.activity.result.ActivityResultLauncher;
+import java.util.Set;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class l implements zq.d {
+public final class l implements br.d {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final g f5942a;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    private static final class a {
 
-    public l(g gVar) {
-        this.f5942a = gVar;
+        /* renamed from: a  reason: collision with root package name */
+        static final l f6260a = new l();
     }
 
-    public static l a(g gVar) {
-        return new l(gVar);
+    public static l a() {
+        return a.f6260a;
     }
 
-    public static ActivityResultLauncher c(g gVar) {
-        return (ActivityResultLauncher) zq.g.d(gVar.a());
+    public static Set c() {
+        return (Set) br.g.d(com.withpersona.sdk2.inquiry.internal.network.f.h());
     }
 
     @Override // javax.inject.Provider
     /* renamed from: b */
-    public ActivityResultLauncher get() {
-        return c(this.f5942a);
+    public Set get() {
+        return c();
     }
 }

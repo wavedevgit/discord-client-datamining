@@ -1,32 +1,23 @@
 package qg;
 
-import android.os.Binder;
-import android.os.IBinder;
-import android.os.IInterface;
-import android.os.Parcel;
+import java.util.Collection;
+import java.util.List;
+import java.util.Map;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class b extends Binder implements IInterface {
+abstract class b extends m implements r0 {
     /* JADX INFO: Access modifiers changed from: protected */
-    public b(String str) {
-        attachInterface(this, str);
+    public b(Map map) {
+        super(map);
     }
 
-    protected abstract boolean e(int i10, Parcel parcel, Parcel parcel2, int i11);
-
-    @Override // android.os.Binder
-    public final boolean onTransact(int i10, Parcel parcel, Parcel parcel2, int i11) {
-        if (i10 > 16777215) {
-            if (super.onTransact(i10, parcel, parcel2, i11)) {
-                return true;
-            }
-        } else {
-            parcel.enforceInterface(getInterfaceDescriptor());
-        }
-        return e(i10, parcel, parcel2, i11);
+    @Override // qg.r0
+    public final List a(Object obj) {
+        return (List) super.j(obj);
     }
 
-    @Override // android.os.IInterface
-    public final IBinder asBinder() {
-        return this;
+    /* JADX INFO: Access modifiers changed from: package-private */
+    @Override // qg.m
+    public final Collection h(Object obj, Collection collection) {
+        return k(obj, (List) collection, null);
     }
 }

@@ -80,4 +80,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.TelemetryChannel = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12639, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12642, 2]);

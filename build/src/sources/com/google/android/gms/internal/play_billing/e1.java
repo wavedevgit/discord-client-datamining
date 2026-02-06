@@ -6,30 +6,30 @@ import java.util.Map;
 public final class e1 {
 
     /* renamed from: b  reason: collision with root package name */
-    private static volatile e1 f14211b;
+    private static volatile e1 f14174b;
 
     /* renamed from: c  reason: collision with root package name */
-    static final e1 f14212c = new e1(true);
+    static final e1 f14175c = new e1(true);
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f14213a = Collections.EMPTY_MAP;
+    private final Map f14176a = Collections.EMPTY_MAP;
 
     e1(boolean z10) {
     }
 
     public static e1 a() {
-        e1 e1Var = f14211b;
+        e1 e1Var = f14174b;
         if (e1Var != null) {
             return e1Var;
         }
         synchronized (e1.class) {
             try {
-                e1 e1Var2 = f14211b;
+                e1 e1Var2 = f14174b;
                 if (e1Var2 != null) {
                     return e1Var2;
                 }
                 e1 a10 = m1.a(e1.class);
-                f14211b = a10;
+                f14174b = a10;
                 return a10;
             } catch (Throwable th2) {
                 throw th2;
@@ -38,7 +38,7 @@ public final class e1 {
     }
 
     public final p1 b(v2 v2Var, int i10) {
-        android.support.v4.media.session.b.a(this.f14213a.get(new d1(v2Var, i10)));
+        android.support.v4.media.session.b.a(this.f14176a.get(new d1(v2Var, i10)));
         return null;
     }
 }

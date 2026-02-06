@@ -7,7 +7,7 @@ import androidx.core.view.h0;
 class j implements ItemTouchUIUtil {
 
     /* renamed from: a  reason: collision with root package name */
-    static final ItemTouchUIUtil f5145a = new j();
+    static final ItemTouchUIUtil f5474a = new j();
 
     j() {
     }
@@ -29,11 +29,11 @@ class j implements ItemTouchUIUtil {
 
     @Override // androidx.recyclerview.widget.ItemTouchUIUtil
     public void a(View view) {
-        Object tag = view.getTag(q3.c.f47380a);
+        Object tag = view.getTag(q3.c.f46428a);
         if (tag instanceof Float) {
             h0.v0(view, ((Float) tag).floatValue());
         }
-        view.setTag(q3.c.f47380a, null);
+        view.setTag(q3.c.f46428a, null);
         view.setTranslationX(0.0f);
         view.setTranslationY(0.0f);
     }
@@ -44,10 +44,10 @@ class j implements ItemTouchUIUtil {
 
     @Override // androidx.recyclerview.widget.ItemTouchUIUtil
     public void c(Canvas canvas, RecyclerView recyclerView, View view, float f10, float f11, int i10, boolean z10) {
-        if (z10 && view.getTag(q3.c.f47380a) == null) {
+        if (z10 && view.getTag(q3.c.f46428a) == null) {
             Float valueOf = Float.valueOf(h0.u(view));
             h0.v0(view, e(recyclerView, view) + 1.0f);
-            view.setTag(q3.c.f47380a, valueOf);
+            view.setTag(q3.c.f46428a, valueOf);
         }
         view.setTranslationX(f10);
         view.setTranslationY(f11);

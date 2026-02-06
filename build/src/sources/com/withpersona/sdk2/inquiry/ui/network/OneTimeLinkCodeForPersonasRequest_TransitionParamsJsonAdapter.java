@@ -15,39 +15,39 @@ import org.jetbrains.annotations.NotNull;
 public final class OneTimeLinkCodeForPersonasRequest_TransitionParamsJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19842a;
+    private final m.b f19822a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f19843b;
+    private final h f19823b;
 
     public OneTimeLinkCodeForPersonasRequest_TransitionParamsJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("componentData");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19842a = a10;
+        this.f19822a = a10;
         h f10 = moshi.f(a0.j(List.class, OneTimeLinkCodeForPersonasRequest.NamedComponentParam.class), x0.d(), "componentData");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19843b = f10;
+        this.f19823b = f10;
     }
 
     @Override // com.squareup.moshi.h
     /* renamed from: a */
     public OneTimeLinkCodeForPersonasRequest.TransitionParams fromJson(m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         List list = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.f19842a);
-            if (W != -1) {
-                if (W == 0) {
-                    list = (List) this.f19843b.fromJson(reader);
+            int J = reader.J(this.f19822a);
+            if (J != -1) {
+                if (J == 0) {
+                    list = (List) this.f19823b.fromJson(reader);
                 }
             } else {
                 reader.E0();
-                reader.P();
+                reader.S();
             }
         }
-        reader.z();
+        reader.D();
         return new OneTimeLinkCodeForPersonasRequest.TransitionParams(list);
     }
 
@@ -57,9 +57,9 @@ public final class OneTimeLinkCodeForPersonasRequest_TransitionParamsJsonAdapter
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (transitionParams != null) {
             writer.k();
-            writer.W("componentData");
-            this.f19843b.toJson(writer, transitionParams.a());
-            writer.E();
+            writer.J("componentData");
+            this.f19823b.toJson(writer, transitionParams.a());
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

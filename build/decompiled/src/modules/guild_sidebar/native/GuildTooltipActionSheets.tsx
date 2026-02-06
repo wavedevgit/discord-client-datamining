@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
     var1 = function arg0() {
-        _fun102755: for (var _fun102755_ip = 0;;) switch (_fun102755_ip) {
+        _fun102763: for (var _fun102763_ip = 0;;) switch (_fun102763_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.guild;
@@ -26,15 +26,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var7.useCanSeeNUFChannelsForGuild;
                 var2 = var2.bind(var7)(var1);
                 if (!var0) {
-                    _fun102755_ip = 73;
-                    continue _fun102755
+                    _fun102763_ip = 73;
+                    continue _fun102763
                 }
             case 70:
                 var0 = var2;
             case 73:
                 if (!var0) {
-                    _fun102755_ip = 118;
-                    continue _fun102755
+                    _fun102763_ip = 118;
+                    continue _fun102763
                 }
             case 76:
                 var2 = var6.push;
@@ -55,8 +55,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.useCanSeeCreatorMonetizationOnboardingV2Upsell;
                 var0 = var0.bind(var2)(var1);
                 if (!var0) {
-                    _fun102755_ip = 194;
-                    continue _fun102755
+                    _fun102763_ip = 194;
+                    continue _fun102763
                 }
             case 152:
                 var2 = var6.push;
@@ -76,8 +76,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.bind(var3)(var0);
                 var0 = var0.bind(var3)(var1);
                 if (!var0) {
-                    _fun102755_ip = 264;
-                    continue _fun102755
+                    _fun102763_ip = 264;
+                    continue _fun102763
                 }
             case 222:
                 var2 = var6.push;
@@ -98,8 +98,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.useCanUseRoleSubscriptionIAP;
                 var0 = var0.bind(var2)(var1);
                 if (!var0) {
-                    _fun102755_ip = 340;
-                    continue _fun102755
+                    _fun102763_ip = 340;
+                    continue _fun102763
                 }
             case 298:
                 var2 = var6.push;
@@ -119,8 +119,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.bind(var3)(var0);
                 var0 = var0.bind(var3)(var1);
                 if (!var0) {
-                    _fun102755_ip = 410;
-                    continue _fun102755
+                    _fun102763_ip = 410;
+                    continue _fun102763
                 }
             case 368:
                 var1 = var6.push;
@@ -145,7 +145,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5.GUILD_HEADER_TOOLTIPS;
                 var0.groupName = var5;
                 var4 = function arg0() {
-                    _fun102756: for (var _fun102756_ip = 0;;) switch (_fun102756_ip) {
+                    _fun102764: for (var _fun102764_ip = 0;;) switch (_fun102764_ip) {
                         case 0:
                             var0 = arg0;
                             var1 = var0.visibleContent;
@@ -160,8 +160,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = var0.DismissibleContent;
                             var0 = var0.GUILD_HEADER_ROLE_SUBSCRIPTION_UPSELL;
                             if (!(var0 !== var1)) {
-                                _fun102756_ip = 499;
-                                continue _fun102756
+                                _fun102764_ip = 499;
+                                continue _fun102764
                             }
                         case 65:
                             var2 = _closure1_slot0;
@@ -171,8 +171,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = var0.DismissibleContent;
                             var0 = var0.GUILD_ROLE_SUBSCRIPTION_IAP_UPSELL;
                             if (!(var0 !== var1)) {
-                                _fun102756_ip = 425;
-                                continue _fun102756
+                                _fun102764_ip = 425;
+                                continue _fun102764
                             }
                         case 101:
                             var2 = _closure1_slot0;
@@ -182,8 +182,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = var0.DismissibleContent;
                             var0 = var0.CREATOR_MONETIZATION_ONBOARDING_V2_UPSELL;
                             if (!(var0 !== var1)) {
-                                _fun102756_ip = 351;
-                                continue _fun102756
+                                _fun102764_ip = 351;
+                                continue _fun102764
                             }
                         case 137:
                             var2 = _closure1_slot0;
@@ -193,8 +193,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = var0.DismissibleContent;
                             var0 = var0.SERVER_SUBSCRIPTION_TIER_TEMPLATE_UPSELL;
                             if (!(var0 !== var1)) {
-                                _fun102756_ip = 277;
-                                continue _fun102756
+                                _fun102764_ip = 277;
+                                continue _fun102764
                             }
                         case 170:
                             var2 = _closure1_slot0;
@@ -204,8 +204,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = var0.DismissibleContent;
                             var0 = var0.NUX_GUILD_CHANNEL_EXPLAINER;
                             if (!(var0 !== var1)) {
-                                _fun102756_ip = 207;
-                                continue _fun102756
+                                _fun102764_ip = 207;
+                                continue _fun102764
                             }
                         case 203:
                             var0 = null;
@@ -424,7 +424,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/guild_sidebar/native/GuildTooltipActionSheets.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function arg0() {
-        _fun102763: for (var _fun102763_ip = 0;;) switch (_fun102763_ip) {
+        _fun102771: for (var _fun102771_ip = 0;;) switch (_fun102771_ip) {
             case 0:
                 var6 = _closure1_slot4;
                 var3 = var6.useState;
@@ -482,8 +482,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var5.bind(var6)(var3, var0);
                 var0 = null;
                 if (!var2) {
-                    _fun102763_ip = 106;
-                    continue _fun102763
+                    _fun102771_ip = 106;
+                    continue _fun102771
                 }
             case 80:
                 var3 = _closure1_slot6;
@@ -500,4 +500,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.GuildTooltipActionSheets = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 1369, 33, 11918, 1307, 13441, 13443, 13446, 13448, 13449, 1358, 13450, 13451, 4779, 13452, 5961, 9429, 3720, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 1369, 33, 11921, 1307, 13443, 13445, 13448, 13450, 13451, 1358, 13452, 13453, 4780, 13454, 5965, 9436, 3722, 2]);

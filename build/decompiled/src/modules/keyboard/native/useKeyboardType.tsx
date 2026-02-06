@@ -215,4 +215,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useKeyboardWillOpenSharedValue = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1467, 3720, 1567, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1467, 3722, 1567, 2]);

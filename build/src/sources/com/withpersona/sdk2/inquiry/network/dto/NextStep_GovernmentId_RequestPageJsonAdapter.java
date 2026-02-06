@@ -40,7 +40,7 @@ public final class NextStep_GovernmentId_RequestPageJsonAdapter extends h {
     @NotNull
     public NextStep.GovernmentId.RequestPage fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         String str = null;
         String str2 = null;
         String str3 = null;
@@ -60,10 +60,10 @@ public final class NextStep_GovernmentId_RequestPageJsonAdapter extends h {
             String str16 = str6;
             if (reader.hasNext()) {
                 String str17 = str7;
-                switch (reader.W(this.options)) {
+                switch (reader.J(this.options)) {
                     case -1:
                         reader.E0();
-                        reader.P();
+                        reader.S();
                         str7 = str17;
                         str = str11;
                         str2 = str12;
@@ -81,7 +81,7 @@ public final class NextStep_GovernmentId_RequestPageJsonAdapter extends h {
                             str5 = str15;
                             break;
                         } else {
-                            throw ym.c.x("titleFront", "titleFront", reader);
+                            throw an.c.x("titleFront", "titleFront", reader);
                         }
                     case 1:
                         str2 = (String) this.stringAdapter.fromJson(reader);
@@ -93,7 +93,7 @@ public final class NextStep_GovernmentId_RequestPageJsonAdapter extends h {
                             str5 = str15;
                             break;
                         } else {
-                            throw ym.c.x("titleBack", "titleBack", reader);
+                            throw an.c.x("titleBack", "titleBack", reader);
                         }
                     case 2:
                         str3 = (String) this.stringAdapter.fromJson(reader);
@@ -105,7 +105,7 @@ public final class NextStep_GovernmentId_RequestPageJsonAdapter extends h {
                             str5 = str15;
                             break;
                         } else {
-                            throw ym.c.x("titlePdf417", "titlePdf417", reader);
+                            throw an.c.x("titlePdf417", "titlePdf417", reader);
                         }
                     case 3:
                         str4 = (String) this.stringAdapter.fromJson(reader);
@@ -117,7 +117,7 @@ public final class NextStep_GovernmentId_RequestPageJsonAdapter extends h {
                             str5 = str15;
                             break;
                         } else {
-                            throw ym.c.x("titlePassportSignature", "titlePassportSignature", reader);
+                            throw an.c.x("titlePassportSignature", "titlePassportSignature", reader);
                         }
                     case 4:
                         str5 = (String) this.stringAdapter.fromJson(reader);
@@ -129,7 +129,7 @@ public final class NextStep_GovernmentId_RequestPageJsonAdapter extends h {
                             str4 = str14;
                             break;
                         } else {
-                            throw ym.c.x("descriptionFront", "descriptionFront", reader);
+                            throw an.c.x("descriptionFront", "descriptionFront", reader);
                         }
                     case 5:
                         str6 = (String) this.stringAdapter.fromJson(reader);
@@ -142,12 +142,12 @@ public final class NextStep_GovernmentId_RequestPageJsonAdapter extends h {
                             str5 = str15;
                             continue;
                         } else {
-                            throw ym.c.x("descriptionBack", "descriptionBack", reader);
+                            throw an.c.x("descriptionBack", "descriptionBack", reader);
                         }
                     case 6:
                         str7 = (String) this.stringAdapter.fromJson(reader);
                         if (str7 == null) {
-                            throw ym.c.x("descriptionPdf417", "descriptionPdf417", reader);
+                            throw an.c.x("descriptionPdf417", "descriptionPdf417", reader);
                         }
                         str = str11;
                         str2 = str12;
@@ -158,7 +158,7 @@ public final class NextStep_GovernmentId_RequestPageJsonAdapter extends h {
                     case 7:
                         str8 = (String) this.stringAdapter.fromJson(reader);
                         if (str8 == null) {
-                            throw ym.c.x("descriptionPassportSignature", "descriptionPassportSignature", reader);
+                            throw an.c.x("descriptionPassportSignature", "descriptionPassportSignature", reader);
                         }
                         str7 = str17;
                         str = str11;
@@ -170,7 +170,7 @@ public final class NextStep_GovernmentId_RequestPageJsonAdapter extends h {
                     case 8:
                         str9 = (String) this.stringAdapter.fromJson(reader);
                         if (str9 == null) {
-                            throw ym.c.x("choosePhotoButtonText", "choosePhotoButtonText", reader);
+                            throw an.c.x("choosePhotoButtonText", "choosePhotoButtonText", reader);
                         }
                         str7 = str17;
                         str = str11;
@@ -182,7 +182,7 @@ public final class NextStep_GovernmentId_RequestPageJsonAdapter extends h {
                     case 9:
                         str10 = (String) this.stringAdapter.fromJson(reader);
                         if (str10 == null) {
-                            throw ym.c.x("liveUploadButtonText", "liveUploadButtonText", reader);
+                            throw an.c.x("liveUploadButtonText", "liveUploadButtonText", reader);
                         }
                         str7 = str17;
                         str = str11;
@@ -203,7 +203,7 @@ public final class NextStep_GovernmentId_RequestPageJsonAdapter extends h {
                 str6 = str16;
             } else {
                 String str18 = str7;
-                reader.z();
+                reader.D();
                 if (str11 != null) {
                     if (str12 != null) {
                         if (str13 != null) {
@@ -216,25 +216,25 @@ public final class NextStep_GovernmentId_RequestPageJsonAdapter extends h {
                                                     if (str10 != null) {
                                                         return new NextStep.GovernmentId.RequestPage(str11, str12, str13, str14, str15, str16, str18, str8, str9, str10);
                                                     }
-                                                    throw ym.c.o("liveUploadButtonText", "liveUploadButtonText", reader);
+                                                    throw an.c.o("liveUploadButtonText", "liveUploadButtonText", reader);
                                                 }
-                                                throw ym.c.o("choosePhotoButtonText", "choosePhotoButtonText", reader);
+                                                throw an.c.o("choosePhotoButtonText", "choosePhotoButtonText", reader);
                                             }
-                                            throw ym.c.o("descriptionPassportSignature", "descriptionPassportSignature", reader);
+                                            throw an.c.o("descriptionPassportSignature", "descriptionPassportSignature", reader);
                                         }
-                                        throw ym.c.o("descriptionPdf417", "descriptionPdf417", reader);
+                                        throw an.c.o("descriptionPdf417", "descriptionPdf417", reader);
                                     }
-                                    throw ym.c.o("descriptionBack", "descriptionBack", reader);
+                                    throw an.c.o("descriptionBack", "descriptionBack", reader);
                                 }
-                                throw ym.c.o("descriptionFront", "descriptionFront", reader);
+                                throw an.c.o("descriptionFront", "descriptionFront", reader);
                             }
-                            throw ym.c.o("titlePassportSignature", "titlePassportSignature", reader);
+                            throw an.c.o("titlePassportSignature", "titlePassportSignature", reader);
                         }
-                        throw ym.c.o("titlePdf417", "titlePdf417", reader);
+                        throw an.c.o("titlePdf417", "titlePdf417", reader);
                     }
-                    throw ym.c.o("titleBack", "titleBack", reader);
+                    throw an.c.o("titleBack", "titleBack", reader);
                 }
-                throw ym.c.o("titleFront", "titleFront", reader);
+                throw an.c.o("titleFront", "titleFront", reader);
             }
         }
     }
@@ -244,27 +244,27 @@ public final class NextStep_GovernmentId_RequestPageJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (requestPage != null) {
             writer.k();
-            writer.W("titleFront");
+            writer.J("titleFront");
             this.stringAdapter.toJson(writer, requestPage.getTitleFront());
-            writer.W("titleBack");
+            writer.J("titleBack");
             this.stringAdapter.toJson(writer, requestPage.getTitleBack());
-            writer.W("titlePdf417");
+            writer.J("titlePdf417");
             this.stringAdapter.toJson(writer, requestPage.getTitlePdf417());
-            writer.W("titlePassportSignature");
+            writer.J("titlePassportSignature");
             this.stringAdapter.toJson(writer, requestPage.getTitlePassportSignature());
-            writer.W("descriptionFront");
+            writer.J("descriptionFront");
             this.stringAdapter.toJson(writer, requestPage.getDescriptionFront());
-            writer.W("descriptionBack");
+            writer.J("descriptionBack");
             this.stringAdapter.toJson(writer, requestPage.getDescriptionBack());
-            writer.W("descriptionPdf417");
+            writer.J("descriptionPdf417");
             this.stringAdapter.toJson(writer, requestPage.getDescriptionPdf417());
-            writer.W("descriptionPassportSignature");
+            writer.J("descriptionPassportSignature");
             this.stringAdapter.toJson(writer, requestPage.getDescriptionPassportSignature());
-            writer.W("choosePhotoButtonText");
+            writer.J("choosePhotoButtonText");
             this.stringAdapter.toJson(writer, requestPage.getChoosePhotoButtonText());
-            writer.W("liveUploadButtonText");
+            writer.J("liveUploadButtonText");
             this.stringAdapter.toJson(writer, requestPage.getLiveUploadButtonText());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

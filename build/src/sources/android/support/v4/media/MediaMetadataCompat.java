@@ -11,19 +11,19 @@ public final class MediaMetadataCompat implements Parcelable {
     public static final Parcelable.Creator<MediaMetadataCompat> CREATOR;
 
     /* renamed from: e  reason: collision with root package name */
-    static final u0.a f863e;
+    static final u0.a f1192e;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final String[] f864i;
+    private static final String[] f1193i;
 
     /* renamed from: o  reason: collision with root package name */
-    private static final String[] f865o;
+    private static final String[] f1194o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final String[] f866p;
+    private static final String[] f1195p;
 
     /* renamed from: d  reason: collision with root package name */
-    final Bundle f867d;
+    final Bundle f1196d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a implements Parcelable.Creator {
@@ -45,7 +45,7 @@ public final class MediaMetadataCompat implements Parcelable {
 
     static {
         u0.a aVar = new u0.a();
-        f863e = aVar;
+        f1192e = aVar;
         aVar.put("android.media.metadata.TITLE", 1);
         aVar.put("android.media.metadata.ARTIST", 1);
         aVar.put("android.media.metadata.DURATION", 0);
@@ -77,14 +77,14 @@ public final class MediaMetadataCompat implements Parcelable {
         aVar.put("android.media.metadata.MEDIA_URI", 1);
         aVar.put("android.media.metadata.ADVERTISEMENT", 0);
         aVar.put("android.media.metadata.DOWNLOAD_STATUS", 0);
-        f864i = new String[]{"android.media.metadata.TITLE", "android.media.metadata.ARTIST", "android.media.metadata.ALBUM", "android.media.metadata.ALBUM_ARTIST", "android.media.metadata.WRITER", "android.media.metadata.AUTHOR", "android.media.metadata.COMPOSER"};
-        f865o = new String[]{"android.media.metadata.DISPLAY_ICON", "android.media.metadata.ART", "android.media.metadata.ALBUM_ART"};
-        f866p = new String[]{"android.media.metadata.DISPLAY_ICON_URI", "android.media.metadata.ART_URI", "android.media.metadata.ALBUM_ART_URI"};
+        f1193i = new String[]{"android.media.metadata.TITLE", "android.media.metadata.ARTIST", "android.media.metadata.ALBUM", "android.media.metadata.ALBUM_ARTIST", "android.media.metadata.WRITER", "android.media.metadata.AUTHOR", "android.media.metadata.COMPOSER"};
+        f1194o = new String[]{"android.media.metadata.DISPLAY_ICON", "android.media.metadata.ART", "android.media.metadata.ALBUM_ART"};
+        f1195p = new String[]{"android.media.metadata.DISPLAY_ICON_URI", "android.media.metadata.ART_URI", "android.media.metadata.ALBUM_ART_URI"};
         CREATOR = new a();
     }
 
     MediaMetadataCompat(Parcel parcel) {
-        this.f867d = parcel.readBundle(MediaSessionCompat.class.getClassLoader());
+        this.f1196d = parcel.readBundle(MediaSessionCompat.class.getClassLoader());
     }
 
     @Override // android.os.Parcelable
@@ -94,6 +94,6 @@ public final class MediaMetadataCompat implements Parcelable {
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeBundle(this.f867d);
+        parcel.writeBundle(this.f1196d);
     }
 }

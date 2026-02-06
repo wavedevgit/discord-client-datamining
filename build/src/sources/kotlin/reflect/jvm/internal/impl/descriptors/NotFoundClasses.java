@@ -30,29 +30,29 @@ import org.jetbrains.annotations.NotNull;
 public final class NotFoundClasses {
 
     /* renamed from: a  reason: collision with root package name */
-    private final StorageManager f32296a;
+    private final StorageManager f32316a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ModuleDescriptor f32297b;
+    private final ModuleDescriptor f32317b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final MemoizedFunctionToNotNull f32298c;
+    private final MemoizedFunctionToNotNull f32318c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final MemoizedFunctionToNotNull f32299d;
+    private final MemoizedFunctionToNotNull f32319d;
 
     @SourceDebugExtension({"SMAP\nNotFoundClasses.kt\nKotlin\n*S Kotlin\n*F\n+ 1 NotFoundClasses.kt\norg/jetbrains/kotlin/descriptors/NotFoundClasses$MockClassDescriptor\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,100:1\n1563#2:101\n1634#2,3:102\n*S KotlinDebug\n*F\n+ 1 NotFoundClasses.kt\norg/jetbrains/kotlin/descriptors/NotFoundClasses$MockClassDescriptor\n*L\n55#1:101\n55#1:102,3\n*E\n"})
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class MockClassDescriptor extends ClassDescriptorBase {
 
         /* renamed from: s  reason: collision with root package name */
-        private final boolean f32300s;
+        private final boolean f32320s;
 
         /* renamed from: t  reason: collision with root package name */
-        private final List f32301t;
+        private final List f32321t;
 
         /* renamed from: u  reason: collision with root package name */
-        private final ClassTypeConstructorImpl f32302u;
+        private final ClassTypeConstructorImpl f32322u;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public MockClassDescriptor(@NotNull StorageManager storageManager, @NotNull DeclarationDescriptor container, @NotNull Name name, boolean z10, int i10) {
@@ -60,7 +60,7 @@ public final class NotFoundClasses {
             Intrinsics.checkNotNullParameter(storageManager, "storageManager");
             Intrinsics.checkNotNullParameter(container, "container");
             Intrinsics.checkNotNullParameter(name, "name");
-            this.f32300s = z10;
+            this.f32320s = z10;
             IntRange u10 = kotlin.ranges.d.u(0, i10);
             ArrayList arrayList = new ArrayList(CollectionsKt.w(u10, 10));
             Iterator it = u10.iterator();
@@ -73,8 +73,8 @@ public final class NotFoundClasses {
                 sb2.append(nextInt);
                 arrayList.add(TypeParameterDescriptorImpl.createWithDefaultBound(this, empty, false, variance, Name.identifier(sb2.toString()), nextInt, storageManager));
             }
-            this.f32301t = arrayList;
-            this.f32302u = new ClassTypeConstructorImpl(this, TypeParameterUtilsKt.computeConstructorTypeParameters(this), x0.c(DescriptorUtilsKt.getModule(this).getBuiltIns().getAnyType()), storageManager);
+            this.f32321t = arrayList;
+            this.f32322u = new ClassTypeConstructorImpl(this, TypeParameterUtilsKt.computeConstructorTypeParameters(this), x0.c(DescriptorUtilsKt.getModule(this).getBuiltIns().getAnyType()), storageManager);
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
@@ -106,7 +106,7 @@ public final class NotFoundClasses {
         @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor, kotlin.reflect.jvm.internal.impl.descriptors.ClassifierDescriptorWithTypeParameters
         @NotNull
         public List<TypeParameterDescriptor> getDeclaredTypeParameters() {
-            return this.f32301t;
+            return this.f32321t;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
@@ -183,7 +183,7 @@ public final class NotFoundClasses {
 
         @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassifierDescriptorWithTypeParameters
         public boolean isInner() {
-            return this.f32300s;
+            return this.f32320s;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
@@ -205,7 +205,7 @@ public final class NotFoundClasses {
         @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassifierDescriptor
         @NotNull
         public ClassTypeConstructorImpl getTypeConstructor() {
-            return this.f32302u;
+            return this.f32322u;
         }
     }
 
@@ -214,24 +214,24 @@ public final class NotFoundClasses {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final ClassId f32303a;
+        private final ClassId f32323a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final List f32304b;
+        private final List f32324b;
 
         public a(ClassId classId, List typeParametersCount) {
             Intrinsics.checkNotNullParameter(classId, "classId");
             Intrinsics.checkNotNullParameter(typeParametersCount, "typeParametersCount");
-            this.f32303a = classId;
-            this.f32304b = typeParametersCount;
+            this.f32323a = classId;
+            this.f32324b = typeParametersCount;
         }
 
         public final ClassId a() {
-            return this.f32303a;
+            return this.f32323a;
         }
 
         public final List b() {
-            return this.f32304b;
+            return this.f32324b;
         }
 
         public boolean equals(Object obj) {
@@ -240,27 +240,27 @@ public final class NotFoundClasses {
             }
             if (obj instanceof a) {
                 a aVar = (a) obj;
-                return Intrinsics.areEqual(this.f32303a, aVar.f32303a) && Intrinsics.areEqual(this.f32304b, aVar.f32304b);
+                return Intrinsics.areEqual(this.f32323a, aVar.f32323a) && Intrinsics.areEqual(this.f32324b, aVar.f32324b);
             }
             return false;
         }
 
         public int hashCode() {
-            return (this.f32303a.hashCode() * 31) + this.f32304b.hashCode();
+            return (this.f32323a.hashCode() * 31) + this.f32324b.hashCode();
         }
 
         public String toString() {
-            return "ClassRequest(classId=" + this.f32303a + ", typeParametersCount=" + this.f32304b + ')';
+            return "ClassRequest(classId=" + this.f32323a + ", typeParametersCount=" + this.f32324b + ')';
         }
     }
 
     public NotFoundClasses(@NotNull StorageManager storageManager, @NotNull ModuleDescriptor module) {
         Intrinsics.checkNotNullParameter(storageManager, "storageManager");
         Intrinsics.checkNotNullParameter(module, "module");
-        this.f32296a = storageManager;
-        this.f32297b = module;
-        this.f32298c = storageManager.createMemoizedFunction(new c(this));
-        this.f32299d = storageManager.createMemoizedFunction(new d(this));
+        this.f32316a = storageManager;
+        this.f32317b = module;
+        this.f32318c = storageManager.createMemoizedFunction(new c(this));
+        this.f32319d = storageManager.createMemoizedFunction(new d(this));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -273,11 +273,11 @@ public final class NotFoundClasses {
         if (!a10.isLocal()) {
             ClassId outerClassId = a10.getOuterClassId();
             if (outerClassId == null || (declarationDescriptor = notFoundClasses.getClass(outerClassId, CollectionsKt.f0(b10, 1))) == null) {
-                declarationDescriptor = (ClassOrPackageFragmentDescriptor) notFoundClasses.f32298c.invoke(a10.getPackageFqName());
+                declarationDescriptor = (ClassOrPackageFragmentDescriptor) notFoundClasses.f32318c.invoke(a10.getPackageFqName());
             }
             DeclarationDescriptor declarationDescriptor2 = declarationDescriptor;
             boolean isNestedClass = a10.isNestedClass();
-            StorageManager storageManager = notFoundClasses.f32296a;
+            StorageManager storageManager = notFoundClasses.f32316a;
             Name shortClassName = a10.getShortClassName();
             Integer num = (Integer) CollectionsKt.firstOrNull(b10);
             if (num != null) {
@@ -293,13 +293,13 @@ public final class NotFoundClasses {
     /* JADX INFO: Access modifiers changed from: private */
     public static final PackageFragmentDescriptor d(NotFoundClasses notFoundClasses, FqName fqName) {
         Intrinsics.checkNotNullParameter(fqName, "fqName");
-        return new EmptyPackageFragmentDescriptor(notFoundClasses.f32297b, fqName);
+        return new EmptyPackageFragmentDescriptor(notFoundClasses.f32317b, fqName);
     }
 
     @NotNull
     public final ClassDescriptor getClass(@NotNull ClassId classId, @NotNull List<Integer> typeParametersCount) {
         Intrinsics.checkNotNullParameter(classId, "classId");
         Intrinsics.checkNotNullParameter(typeParametersCount, "typeParametersCount");
-        return (ClassDescriptor) this.f32299d.invoke(new a(classId, typeParametersCount));
+        return (ClassDescriptor) this.f32319d.invoke(new a(classId, typeParametersCount));
     }
 }

@@ -1,47 +1,47 @@
 package net.time4j;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class r implements pt.o {
+public final class r implements rt.o {
 
     /* renamed from: d  reason: collision with root package name */
-    private final pt.m f40169d;
+    private final rt.m f39524d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final g0 f40170e;
+    private final g0 f39525e;
 
-    private r(pt.l lVar, pt.m mVar, g0 g0Var) {
+    private r(rt.l lVar, rt.m mVar, g0 g0Var) {
         if (g0Var.h() == 24) {
-            this.f40169d = mVar.R(pt.h.e(1L));
-            this.f40170e = g0.F0();
+            this.f39524d = mVar.R(rt.h.e(1L));
+            this.f39525e = g0.F0();
             return;
         }
-        this.f40169d = mVar;
-        this.f40170e = g0Var;
+        this.f39524d = mVar;
+        this.f39525e = g0Var;
     }
 
-    public static r b(pt.m mVar, g0 g0Var) {
+    public static r b(rt.m mVar, g0 g0Var) {
         if (mVar != null) {
             return new r(null, mVar, g0Var);
         }
         throw new NullPointerException("Missing date component.");
     }
 
-    private pt.o d() {
-        return this.f40169d;
+    private rt.o d() {
+        return this.f39524d;
     }
 
-    public a0 a(net.time4j.tz.l lVar, pt.f0 f0Var) {
-        i0 o02 = ((f0) this.f40169d.T(f0.class)).o0(this.f40170e);
-        int intValue = ((Integer) this.f40170e.v(g0.K)).intValue() - f0Var.b(o02.V(), lVar.z());
+    public a0 a(net.time4j.tz.l lVar, rt.f0 f0Var) {
+        i0 o02 = ((f0) this.f39524d.T(f0.class)).o0(this.f39525e);
+        int intValue = ((Integer) this.f39525e.s(g0.K)).intValue() - f0Var.b(o02.V(), lVar.z());
         if (intValue >= 86400) {
-            o02 = (i0) o02.J(1L, f.f39933s);
+            o02 = (i0) o02.J(1L, f.f39288s);
         } else if (intValue < 0) {
-            o02 = (i0) o02.K(1L, f.f39933s);
+            o02 = (i0) o02.K(1L, f.f39288s);
         }
         return o02.Y(lVar);
     }
 
     public Object c() {
-        return this.f40169d;
+        return this.f39524d;
     }
 
     public boolean equals(Object obj) {
@@ -50,7 +50,7 @@ public final class r implements pt.o {
         }
         if (obj instanceof r) {
             r rVar = (r) r.class.cast(obj);
-            if (this.f40170e.equals(rVar.f40170e) && this.f40169d.equals(rVar.f40169d)) {
+            if (this.f39525e.equals(rVar.f39525e) && this.f39524d.equals(rVar.f39524d)) {
                 return true;
             }
         }
@@ -58,63 +58,63 @@ public final class r implements pt.o {
     }
 
     public int hashCode() {
-        return this.f40169d.hashCode() + this.f40170e.hashCode();
+        return this.f39524d.hashCode() + this.f39525e.hashCode();
     }
 
-    @Override // pt.o
+    @Override // rt.o
     public boolean k() {
         return false;
     }
 
-    @Override // pt.o
-    public boolean m(pt.p pVar) {
-        if (pVar.z()) {
-            return d().m(pVar);
-        }
-        return this.f40170e.m(pVar);
-    }
-
-    @Override // pt.o
-    public Object n(pt.p pVar) {
-        if (pVar.z()) {
+    @Override // rt.o
+    public boolean n(rt.p pVar) {
+        if (pVar.A()) {
             return d().n(pVar);
         }
-        return this.f40170e.n(pVar);
+        return this.f39525e.n(pVar);
     }
 
-    @Override // pt.o
-    public int r(pt.p pVar) {
-        if (pVar.z()) {
-            return d().r(pVar);
+    @Override // rt.o
+    public int q(rt.p pVar) {
+        if (pVar.A()) {
+            return d().q(pVar);
         }
-        return this.f40170e.r(pVar);
+        return this.f39525e.q(pVar);
     }
 
-    @Override // pt.o
-    public Object s(pt.p pVar) {
-        if (pVar.z()) {
+    @Override // rt.o
+    public Object s(rt.p pVar) {
+        if (pVar.A()) {
             return d().s(pVar);
         }
-        return this.f40170e.s(pVar);
+        return this.f39525e.s(pVar);
+    }
+
+    @Override // rt.o
+    public Object t(rt.p pVar) {
+        if (pVar.A()) {
+            return d().t(pVar);
+        }
+        return this.f39525e.t(pVar);
     }
 
     public String toString() {
         StringBuilder sb2 = new StringBuilder();
-        sb2.append(this.f40169d);
-        sb2.append(this.f40170e);
+        sb2.append(this.f39524d);
+        sb2.append(this.f39525e);
         return sb2.toString();
     }
 
-    @Override // pt.o
+    @Override // rt.o
     public net.time4j.tz.k u() {
-        throw new pt.r("Timezone not available: " + this);
+        throw new rt.r("Timezone not available: " + this);
     }
 
-    @Override // pt.o
-    public Object v(pt.p pVar) {
-        if (pVar.z()) {
+    @Override // rt.o
+    public Object v(rt.p pVar) {
+        if (pVar.A()) {
             return d().v(pVar);
         }
-        return this.f40170e.v(pVar);
+        return this.f39525e.v(pVar);
     }
 }

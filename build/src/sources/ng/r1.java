@@ -1,43 +1,94 @@
 package ng;
 
-import xi.c;
+import java.util.AbstractCollection;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Map;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class r1 implements xi.d {
-
-    /* renamed from: a  reason: collision with root package name */
-    static final r1 f40943a = new r1();
-
-    /* renamed from: b  reason: collision with root package name */
-    private static final xi.c f40944b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private static final xi.c f40945c;
+final class r1 extends AbstractCollection {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final xi.c f40946d;
+    final Map f40216d;
 
-    static {
-        c.b a10 = xi.c.a("logEventKey");
-        f fVar = new f();
-        fVar.a(1);
-        f40944b = a10.b(fVar.b()).a();
-        c.b a11 = xi.c.a("eventCount");
-        f fVar2 = new f();
-        fVar2.a(2);
-        f40945c = a11.b(fVar2.b()).a();
-        c.b a12 = xi.c.a("inferenceDurationStats");
-        f fVar3 = new f();
-        fVar3.a(3);
-        f40946d = a12.b(fVar3.b()).a();
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public r1(Map map) {
+        this.f40216d = map;
     }
 
-    private r1() {
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public final void clear() {
+        this.f40216d.clear();
     }
 
-    @Override // xi.d
-    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
-        android.support.v4.media.session.b.a(obj);
-        xi.e eVar = (xi.e) obj2;
-        throw null;
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public final boolean contains(Object obj) {
+        return this.f40216d.containsValue(obj);
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public final boolean isEmpty() {
+        return this.f40216d.isEmpty();
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable
+    public final Iterator iterator() {
+        return new o1(this.f40216d.entrySet().iterator());
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public final boolean remove(Object obj) {
+        try {
+            return super.remove(obj);
+        } catch (UnsupportedOperationException unused) {
+            for (Map.Entry entry : this.f40216d.entrySet()) {
+                if (r.a(obj, entry.getValue())) {
+                    this.f40216d.remove(entry.getKey());
+                    return true;
+                }
+            }
+            return false;
+        }
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public final boolean removeAll(Collection collection) {
+        try {
+            if (collection != null) {
+                return super.removeAll(collection);
+            }
+            throw null;
+        } catch (UnsupportedOperationException unused) {
+            HashSet hashSet = new HashSet();
+            for (Map.Entry entry : this.f40216d.entrySet()) {
+                if (collection.contains(entry.getValue())) {
+                    hashSet.add(entry.getKey());
+                }
+            }
+            return this.f40216d.keySet().removeAll(hashSet);
+        }
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public final boolean retainAll(Collection collection) {
+        try {
+            if (collection != null) {
+                return super.retainAll(collection);
+            }
+            throw null;
+        } catch (UnsupportedOperationException unused) {
+            HashSet hashSet = new HashSet();
+            for (Map.Entry entry : this.f40216d.entrySet()) {
+                if (collection.contains(entry.getValue())) {
+                    hashSet.add(entry.getKey());
+                }
+            }
+            return this.f40216d.keySet().retainAll(hashSet);
+        }
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public final int size() {
+        return this.f40216d.size();
     }
 }

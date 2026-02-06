@@ -18,7 +18,7 @@ import kotlin.jvm.internal.Intrinsics;
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Object invoke(Object obj) {
         invoke((MediaPlayFinishedAnalytics) obj);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     public final void invoke(MediaPlayFinishedAnalytics p02) {

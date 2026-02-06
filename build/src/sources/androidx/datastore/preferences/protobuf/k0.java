@@ -61,12 +61,12 @@ class k0 implements j0 {
     }
 
     @Override // androidx.datastore.preferences.protobuf.j0
-    public int g(int i10, Object obj, Object obj2) {
-        return i(i10, obj, obj2);
+    public boolean g(Object obj) {
+        return !((i0) obj).i();
     }
 
     @Override // androidx.datastore.preferences.protobuf.j0
-    public boolean h(Object obj) {
-        return !((i0) obj).i();
+    public int h(int i10, Object obj, Object obj2) {
+        return i(i10, obj, obj2);
     }
 }

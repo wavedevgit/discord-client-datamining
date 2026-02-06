@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
     var0 = function arg0, arg1() {
-        _fun100742: for (var _fun100742_ip = 0;;) switch (_fun100742_ip) {
+        _fun100750: for (var _fun100750_ip = 0;;) switch (_fun100750_ip) {
             case 0:
                 var5 = arg0;
                 var0 = arg1;
@@ -17,16 +17,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = null;
                 var1 = var3 != var1;
                 if (!var1) {
-                    _fun100742_ip = 31;
-                    continue _fun100742
+                    _fun100750_ip = 31;
+                    continue _fun100750
                 }
             case 21:
                 var2 = var0.layoutUITime;
                 var1 = var3 != var2;
             case 31:
                 if (!var1) {
-                    _fun100742_ip = 280;
-                    continue _fun100742
+                    _fun100750_ip = 280;
+                    continue _fun100750
                 }
             case 37:
                 var4 = _closure1_slot1;
@@ -132,15 +132,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/main_tabs_v2/native/tabs/TabsPerformanceTracker.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun100743: for (var _fun100743_ip = 0;;) switch (_fun100743_ip) {
+        _fun100751: for (var _fun100751_ip = 0;;) switch (_fun100751_ip) {
             case 0:
                 var2 = arg0;
                 var1 = _closure1_slot6;
                 var3 = var1[var2];
                 var1 = null;
                 if (!(var1 == var3)) {
-                    _fun100743_ip = 52;
-                    continue _fun100743
+                    _fun100751_ip = 52;
+                    continue _fun100751
                 }
             case 20:
                 var1 = _closure1_slot6;
@@ -165,7 +165,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = new Array(1);
         var2[0] = var4;
         var1 = function() { // Environment: var0
-            _fun100745: for (var _fun100745_ip = 0;;) switch (_fun100745_ip) {
+            _fun100753: for (var _fun100753_ip = 0;;) switch (_fun100753_ip) {
                 case 0:
                     var3 = _closure1_slot6;
                     var2 = _closure2_slot0;
@@ -173,29 +173,29 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var _closure3_slot0 = var2;
                     var6 = null;
                     if (!(var6 != var2)) {
-                        _fun100745_ip = 40;
-                        continue _fun100745
+                        _fun100753_ip = 40;
+                        continue _fun100753
                     }
                 case 30:
                     var3 = var2.startTime;
                     if (!(var6 == var3)) {
-                        _fun100745_ip = 67;
-                        continue _fun100745
+                        _fun100753_ip = 67;
+                        continue _fun100753
                     }
                 case 40:
                     var5 = _closure1_slot6;
                     var3 = _closure2_slot0;
                     var1 = var5[var3];
                     if (!(var6 == var1)) {
-                        _fun100745_ip = 58;
-                        continue _fun100745
+                        _fun100753_ip = 58;
+                        continue _fun100753
                     }
                 case 56:
                     var1 = {};
                 case 58:
                     var5[var3] = var1;
-                    _fun100745_ip = 201;
-                    continue _fun100745;
+                    _fun100753_ip = 201;
+                    continue _fun100753;
                 case 67:
                     var1 = global;
                     var3 = var1.performance;
@@ -259,7 +259,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var4;
         var0 = function() { // Environment: var0
-            _fun100748: for (var _fun100748_ip = 0;;) switch (_fun100748_ip) {
+            _fun100756: for (var _fun100756_ip = 0;;) switch (_fun100756_ip) {
                 case 0:
                     var3 = _closure1_slot6;
                     var2 = _closure2_slot0;
@@ -267,29 +267,29 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var _closure3_slot0 = var2;
                     var6 = null;
                     if (!(var6 != var2)) {
-                        _fun100748_ip = 40;
-                        continue _fun100748
+                        _fun100756_ip = 40;
+                        continue _fun100756
                     }
                 case 30:
                     var3 = var2.startTime;
                     if (!(var6 == var3)) {
-                        _fun100748_ip = 67;
-                        continue _fun100748
+                        _fun100756_ip = 67;
+                        continue _fun100756
                     }
                 case 40:
                     var5 = _closure1_slot6;
                     var3 = _closure2_slot0;
                     var1 = var5[var3];
                     if (!(var6 == var1)) {
-                        _fun100748_ip = 58;
-                        continue _fun100748
+                        _fun100756_ip = 58;
+                        continue _fun100756
                     }
                 case 56:
                     var1 = {};
                 case 58:
                     var5[var3] = var1;
-                    _fun100748_ip = 201;
-                    continue _fun100748;
+                    _fun100756_ip = 201;
+                    continue _fun100756;
                 case 67:
                     var1 = global;
                     var3 = var1.performance;
@@ -354,4 +354,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useTrackTabPerformance = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 3, 795, 3720, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 3, 795, 3722, 2]);

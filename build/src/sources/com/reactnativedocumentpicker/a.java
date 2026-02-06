@@ -9,27 +9,27 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final C0215a f17582e;
+    public static final C0207a f17562e;
 
     /* renamed from: i  reason: collision with root package name */
-    public static final a f17583i = new a("CACHES_DIRECTORY", 0, "cachesDirectory");
+    public static final a f17563i = new a("CACHES_DIRECTORY", 0, "cachesDirectory");
 
     /* renamed from: o  reason: collision with root package name */
-    public static final a f17584o = new a("DOCUMENT_DIRECTORY", 1, "documentDirectory");
+    public static final a f17564o = new a("DOCUMENT_DIRECTORY", 1, "documentDirectory");
 
     /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ a[] f17585p;
+    private static final /* synthetic */ a[] f17565p;
 
     /* renamed from: q  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f17586q;
+    private static final /* synthetic */ EnumEntries f17566q;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f17587d;
+    private final String f17567d;
 
     /* renamed from: com.reactnativedocumentpicker.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0215a {
-        public /* synthetic */ C0215a(DefaultConstructorMarker defaultConstructorMarker) {
+    public static final class C0207a {
+        public /* synthetic */ C0207a(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
 
@@ -52,28 +52,28 @@ public final class a {
                 }
             }
             if (aVar == null) {
-                return a.f17583i;
+                return a.f17563i;
             }
             return aVar;
         }
 
-        private C0215a() {
+        private C0207a() {
         }
     }
 
     static {
         a[] a10 = a();
-        f17585p = a10;
-        f17586q = vr.a.a(a10);
-        f17582e = new C0215a(null);
+        f17565p = a10;
+        f17566q = xr.a.a(a10);
+        f17562e = new C0207a(null);
     }
 
     private a(String str, int i10, String str2) {
-        this.f17587d = str2;
+        this.f17567d = str2;
     }
 
     private static final /* synthetic */ a[] a() {
-        return new a[]{f17583i, f17584o};
+        return new a[]{f17563i, f17564o};
     }
 
     public static a valueOf(String str) {
@@ -81,10 +81,10 @@ public final class a {
     }
 
     public static a[] values() {
-        return (a[]) f17585p.clone();
+        return (a[]) f17565p.clone();
     }
 
     public final String d() {
-        return this.f17587d;
+        return this.f17567d;
     }
 }

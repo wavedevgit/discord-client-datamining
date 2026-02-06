@@ -48,34 +48,34 @@ public final class NextStep_GovernmentId_AutoClassificationConfigJsonAdapter ext
     @NotNull
     public NextStep.GovernmentId.AutoClassificationConfig fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         Boolean bool = null;
         Boolean bool2 = null;
         CapturePageConfig capturePageConfig = null;
         int i10 = -1;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 bool = (Boolean) this.nullableBooleanAdapter.fromJson(reader);
                 i10 &= -2;
-            } else if (W == 1) {
+            } else if (J == 1) {
                 bool2 = (Boolean) this.nullableBooleanAdapter.fromJson(reader);
                 i10 &= -3;
-            } else if (W == 2) {
+            } else if (J == 2) {
                 capturePageConfig = (CapturePageConfig) this.nullableCapturePageConfigAdapter.fromJson(reader);
                 i10 &= -5;
             }
         }
-        reader.z();
+        reader.D();
         if (i10 == -8) {
             return new NextStep.GovernmentId.AutoClassificationConfig(bool, bool2, capturePageConfig);
         }
         Constructor<NextStep.GovernmentId.AutoClassificationConfig> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = NextStep.GovernmentId.AutoClassificationConfig.class.getDeclaredConstructor(Boolean.class, Boolean.class, CapturePageConfig.class, Integer.TYPE, ym.c.f54853c);
+            constructor = NextStep.GovernmentId.AutoClassificationConfig.class.getDeclaredConstructor(Boolean.class, Boolean.class, CapturePageConfig.class, Integer.TYPE, an.c.f1164c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -89,13 +89,13 @@ public final class NextStep_GovernmentId_AutoClassificationConfigJsonAdapter ext
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (autoClassificationConfig != null) {
             writer.k();
-            writer.W("isEnabled");
+            writer.J("isEnabled");
             this.nullableBooleanAdapter.toJson(writer, autoClassificationConfig.isEnabled());
-            writer.W("extractTextFromImage");
+            writer.J("extractTextFromImage");
             this.nullableBooleanAdapter.toJson(writer, autoClassificationConfig.getExtractTextFromImage());
-            writer.W("capturePageConfig");
+            writer.J("capturePageConfig");
             this.nullableCapturePageConfigAdapter.toJson(writer, autoClassificationConfig.getCapturePageConfig());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

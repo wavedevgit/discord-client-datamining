@@ -40,7 +40,7 @@ public final class NextStep_Selfie_CheckPageJsonAdapter extends h {
     @NotNull
     public NextStep.Selfie.CheckPage fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         String str = null;
         String str2 = null;
         String str3 = null;
@@ -49,10 +49,10 @@ public final class NextStep_Selfie_CheckPageJsonAdapter extends h {
         String str6 = null;
         String str7 = null;
         while (reader.hasNext()) {
-            switch (reader.W(this.options)) {
+            switch (reader.J(this.options)) {
                 case -1:
                     reader.E0();
-                    reader.P();
+                    reader.S();
                     break;
                 case 0:
                     str = (String) this.nullableStringAdapter.fromJson(reader);
@@ -77,7 +77,7 @@ public final class NextStep_Selfie_CheckPageJsonAdapter extends h {
                     break;
             }
         }
-        reader.z();
+        reader.D();
         return new NextStep.Selfie.CheckPage(str, str2, str3, str4, str5, str6, str7);
     }
 
@@ -86,21 +86,21 @@ public final class NextStep_Selfie_CheckPageJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (checkPage != null) {
             writer.k();
-            writer.W("title");
+            writer.J("title");
             this.nullableStringAdapter.toJson(writer, checkPage.getTitle());
-            writer.W("description");
+            writer.J("description");
             this.nullableStringAdapter.toJson(writer, checkPage.getDescription());
-            writer.W("selfieLabelFront");
+            writer.J("selfieLabelFront");
             this.nullableStringAdapter.toJson(writer, checkPage.getSelfieLabelFront());
-            writer.W("selfieLabelLeft");
+            writer.J("selfieLabelLeft");
             this.nullableStringAdapter.toJson(writer, checkPage.getSelfieLabelLeft());
-            writer.W("selfieLabelRight");
+            writer.J("selfieLabelRight");
             this.nullableStringAdapter.toJson(writer, checkPage.getSelfieLabelRight());
-            writer.W("btnSubmit");
+            writer.J("btnSubmit");
             this.nullableStringAdapter.toJson(writer, checkPage.getBtnSubmit());
-            writer.W("btnRetake");
+            writer.J("btnRetake");
             this.nullableStringAdapter.toJson(writer, checkPage.getBtnRetake());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

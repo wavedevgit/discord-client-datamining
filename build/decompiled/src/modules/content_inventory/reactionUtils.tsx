@@ -85,4 +85,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.sendMessageWithoutContentInventoryEntry = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5592, 6546, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5592, 6550, 2]);

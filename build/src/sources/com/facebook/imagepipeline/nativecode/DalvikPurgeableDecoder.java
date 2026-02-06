@@ -17,10 +17,10 @@ import sa.k;
 public abstract class DalvikPurgeableDecoder implements wa.d {
 
     /* renamed from: b  reason: collision with root package name */
-    protected static final byte[] f10640b;
+    protected static final byte[] f10539b;
 
     /* renamed from: a  reason: collision with root package name */
-    private final va.b f10641a = va.c.a();
+    private final va.b f10540a = va.c.a();
 
     @g
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -40,12 +40,12 @@ public abstract class DalvikPurgeableDecoder implements wa.d {
 
     static {
         b.a();
-        f10640b = new byte[]{-1, -39};
+        f10539b = new byte[]{-1, -39};
     }
 
     public static boolean e(CloseableReference closeableReference, int i10) {
-        h hVar = (h) closeableReference.E0();
-        if (i10 >= 2 && hVar.x(i10 - 2) == -1 && hVar.x(i10 - 1) == -39) {
+        h hVar = (h) closeableReference.J();
+        if (i10 >= 2 && hVar.B(i10 - 2) == -1 && hVar.B(i10 - 1) == -39) {
             return true;
         }
         return false;
@@ -67,31 +67,31 @@ public abstract class DalvikPurgeableDecoder implements wa.d {
 
     @Override // wa.d
     public CloseableReference a(k kVar, Bitmap.Config config, Rect rect, ColorSpace colorSpace) {
-        BitmapFactory.Options f10 = f(kVar.W(), config);
+        BitmapFactory.Options f10 = f(kVar.J(), config);
         if (Build.VERSION.SDK_INT >= 26) {
             OreoUtils.a(f10, colorSpace);
         }
-        CloseableReference o10 = kVar.o();
-        j.g(o10);
+        CloseableReference n10 = kVar.n();
+        j.g(n10);
         try {
-            return g(c(o10, f10));
+            return g(c(n10, f10));
         } finally {
-            CloseableReference.N(o10);
+            CloseableReference.z(n10);
         }
     }
 
     @Override // wa.d
     public CloseableReference b(k kVar, Bitmap.Config config, Rect rect, int i10, ColorSpace colorSpace) {
-        BitmapFactory.Options f10 = f(kVar.W(), config);
+        BitmapFactory.Options f10 = f(kVar.J(), config);
         if (Build.VERSION.SDK_INT >= 26) {
             OreoUtils.a(f10, colorSpace);
         }
-        CloseableReference o10 = kVar.o();
-        j.g(o10);
+        CloseableReference n10 = kVar.n();
+        j.g(n10);
         try {
-            return g(d(o10, i10, f10));
+            return g(d(n10, i10, f10));
         } finally {
-            CloseableReference.N(o10);
+            CloseableReference.z(n10);
         }
     }
 
@@ -103,12 +103,12 @@ public abstract class DalvikPurgeableDecoder implements wa.d {
         j.g(bitmap);
         try {
             nativePinBitmap(bitmap);
-            if (this.f10641a.g(bitmap)) {
-                return CloseableReference.V0(bitmap, this.f10641a.e());
+            if (this.f10540a.g(bitmap)) {
+                return CloseableReference.O0(bitmap, this.f10540a.e());
             }
             int j10 = cb.d.j(bitmap);
             bitmap.recycle();
-            throw new ma.c(String.format(Locale.US, "Attempted to pin a bitmap of size %d bytes. The current pool count is %d, the current pool size is %d bytes. The current pool max count is %d, the current pool max size is %d bytes.", Integer.valueOf(j10), Integer.valueOf(this.f10641a.b()), Long.valueOf(this.f10641a.f()), Integer.valueOf(this.f10641a.c()), Integer.valueOf(this.f10641a.d())));
+            throw new ma.c(String.format(Locale.US, "Attempted to pin a bitmap of size %d bytes. The current pool count is %d, the current pool size is %d bytes. The current pool max count is %d, the current pool max size is %d bytes.", Integer.valueOf(j10), Integer.valueOf(this.f10540a.b()), Long.valueOf(this.f10540a.f()), Integer.valueOf(this.f10540a.c()), Integer.valueOf(this.f10540a.d())));
         } catch (Exception e10) {
             bitmap.recycle();
             throw n.a(e10);

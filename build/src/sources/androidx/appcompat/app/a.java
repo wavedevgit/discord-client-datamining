@@ -18,144 +18,144 @@ import com.facebook.react.views.text.internal.span.SetSpanOperation;
 public class a extends l implements DialogInterface {
 
     /* renamed from: q  reason: collision with root package name */
-    final AlertController f1102q;
+    final AlertController f1431q;
 
     /* renamed from: androidx.appcompat.app.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static class C0018a {
+    public static class C0016a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final AlertController.b f1103a;
+        private final AlertController.b f1432a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f1104b;
+        private final int f1433b;
 
-        public C0018a(Context context) {
+        public C0016a(Context context) {
             this(context, a.m(context, 0));
         }
 
-        public C0018a a(ListAdapter listAdapter, DialogInterface.OnClickListener onClickListener) {
-            AlertController.b bVar = this.f1103a;
-            bVar.f1070w = listAdapter;
-            bVar.f1071x = onClickListener;
+        public C0016a a(ListAdapter listAdapter, DialogInterface.OnClickListener onClickListener) {
+            AlertController.b bVar = this.f1432a;
+            bVar.f1399w = listAdapter;
+            bVar.f1400x = onClickListener;
             return this;
         }
 
-        public C0018a b(View view) {
-            this.f1103a.f1054g = view;
+        public C0016a b(View view) {
+            this.f1432a.f1383g = view;
             return this;
         }
 
-        public C0018a c(Drawable drawable) {
-            this.f1103a.f1051d = drawable;
+        public C0016a c(Drawable drawable) {
+            this.f1432a.f1380d = drawable;
             return this;
         }
 
         @NonNull
         public a create() {
-            a aVar = new a(this.f1103a.f1048a, this.f1104b);
-            this.f1103a.a(aVar.f1102q);
-            aVar.setCancelable(this.f1103a.f1065r);
-            if (this.f1103a.f1065r) {
+            a aVar = new a(this.f1432a.f1377a, this.f1433b);
+            this.f1432a.a(aVar.f1431q);
+            aVar.setCancelable(this.f1432a.f1394r);
+            if (this.f1432a.f1394r) {
                 aVar.setCanceledOnTouchOutside(true);
             }
-            aVar.setOnCancelListener(this.f1103a.f1066s);
-            aVar.setOnDismissListener(this.f1103a.f1067t);
-            DialogInterface.OnKeyListener onKeyListener = this.f1103a.f1068u;
+            aVar.setOnCancelListener(this.f1432a.f1395s);
+            aVar.setOnDismissListener(this.f1432a.f1396t);
+            DialogInterface.OnKeyListener onKeyListener = this.f1432a.f1397u;
             if (onKeyListener != null) {
                 aVar.setOnKeyListener(onKeyListener);
             }
             return aVar;
         }
 
-        public C0018a d(CharSequence[] charSequenceArr, DialogInterface.OnClickListener onClickListener) {
-            AlertController.b bVar = this.f1103a;
-            bVar.f1069v = charSequenceArr;
-            bVar.f1071x = onClickListener;
+        public C0016a d(CharSequence[] charSequenceArr, DialogInterface.OnClickListener onClickListener) {
+            AlertController.b bVar = this.f1432a;
+            bVar.f1398v = charSequenceArr;
+            bVar.f1400x = onClickListener;
             return this;
         }
 
-        public C0018a e(CharSequence charSequence) {
-            this.f1103a.f1055h = charSequence;
+        public C0016a e(CharSequence charSequence) {
+            this.f1432a.f1384h = charSequence;
             return this;
         }
 
-        public C0018a f(CharSequence charSequence, DialogInterface.OnClickListener onClickListener) {
-            AlertController.b bVar = this.f1103a;
-            bVar.f1059l = charSequence;
-            bVar.f1061n = onClickListener;
+        public C0016a f(CharSequence charSequence, DialogInterface.OnClickListener onClickListener) {
+            AlertController.b bVar = this.f1432a;
+            bVar.f1388l = charSequence;
+            bVar.f1390n = onClickListener;
             return this;
         }
 
-        public C0018a g(CharSequence charSequence, DialogInterface.OnClickListener onClickListener) {
-            AlertController.b bVar = this.f1103a;
-            bVar.f1062o = charSequence;
-            bVar.f1064q = onClickListener;
+        public C0016a g(CharSequence charSequence, DialogInterface.OnClickListener onClickListener) {
+            AlertController.b bVar = this.f1432a;
+            bVar.f1391o = charSequence;
+            bVar.f1393q = onClickListener;
             return this;
         }
 
         @NonNull
         public Context getContext() {
-            return this.f1103a.f1048a;
+            return this.f1432a.f1377a;
         }
 
-        public C0018a h(DialogInterface.OnKeyListener onKeyListener) {
-            this.f1103a.f1068u = onKeyListener;
+        public C0016a h(DialogInterface.OnKeyListener onKeyListener) {
+            this.f1432a.f1397u = onKeyListener;
             return this;
         }
 
-        public C0018a i(CharSequence charSequence, DialogInterface.OnClickListener onClickListener) {
-            AlertController.b bVar = this.f1103a;
-            bVar.f1056i = charSequence;
-            bVar.f1058k = onClickListener;
+        public C0016a i(CharSequence charSequence, DialogInterface.OnClickListener onClickListener) {
+            AlertController.b bVar = this.f1432a;
+            bVar.f1385i = charSequence;
+            bVar.f1387k = onClickListener;
             return this;
         }
 
-        public C0018a j(ListAdapter listAdapter, int i10, DialogInterface.OnClickListener onClickListener) {
-            AlertController.b bVar = this.f1103a;
-            bVar.f1070w = listAdapter;
-            bVar.f1071x = onClickListener;
+        public C0016a j(ListAdapter listAdapter, int i10, DialogInterface.OnClickListener onClickListener) {
+            AlertController.b bVar = this.f1432a;
+            bVar.f1399w = listAdapter;
+            bVar.f1400x = onClickListener;
             bVar.I = i10;
             bVar.H = true;
             return this;
         }
 
-        public C0018a setNegativeButton(int i10, DialogInterface.OnClickListener onClickListener) {
-            AlertController.b bVar = this.f1103a;
-            bVar.f1059l = bVar.f1048a.getText(i10);
-            this.f1103a.f1061n = onClickListener;
+        public C0016a setNegativeButton(int i10, DialogInterface.OnClickListener onClickListener) {
+            AlertController.b bVar = this.f1432a;
+            bVar.f1388l = bVar.f1377a.getText(i10);
+            this.f1432a.f1390n = onClickListener;
             return this;
         }
 
-        public C0018a setPositiveButton(int i10, DialogInterface.OnClickListener onClickListener) {
-            AlertController.b bVar = this.f1103a;
-            bVar.f1056i = bVar.f1048a.getText(i10);
-            this.f1103a.f1058k = onClickListener;
+        public C0016a setPositiveButton(int i10, DialogInterface.OnClickListener onClickListener) {
+            AlertController.b bVar = this.f1432a;
+            bVar.f1385i = bVar.f1377a.getText(i10);
+            this.f1432a.f1387k = onClickListener;
             return this;
         }
 
-        public C0018a setTitle(CharSequence charSequence) {
-            this.f1103a.f1053f = charSequence;
+        public C0016a setTitle(CharSequence charSequence) {
+            this.f1432a.f1382f = charSequence;
             return this;
         }
 
-        public C0018a setView(View view) {
-            AlertController.b bVar = this.f1103a;
-            bVar.f1073z = view;
-            bVar.f1072y = 0;
+        public C0016a setView(View view) {
+            AlertController.b bVar = this.f1432a;
+            bVar.f1402z = view;
+            bVar.f1401y = 0;
             bVar.E = false;
             return this;
         }
 
-        public C0018a(@NonNull Context context, int i10) {
-            this.f1103a = new AlertController.b(new ContextThemeWrapper(context, a.m(context, i10)));
-            this.f1104b = i10;
+        public C0016a(@NonNull Context context, int i10) {
+            this.f1432a = new AlertController.b(new ContextThemeWrapper(context, a.m(context, i10)));
+            this.f1433b = i10;
         }
     }
 
     protected a(Context context, int i10) {
         super(context, m(context, i10));
-        this.f1102q = new AlertController(getContext(), this, getWindow());
+        this.f1431q = new AlertController(getContext(), this, getWindow());
     }
 
     static int m(Context context, int i10) {
@@ -163,36 +163,36 @@ public class a extends l implements DialogInterface {
             return i10;
         }
         TypedValue typedValue = new TypedValue();
-        context.getTheme().resolveAttribute(f.a.f21908l, typedValue, true);
+        context.getTheme().resolveAttribute(f.a.f22209l, typedValue, true);
         return typedValue.resourceId;
     }
 
     public Button k(int i10) {
-        return this.f1102q.c(i10);
+        return this.f1431q.c(i10);
     }
 
     public ListView l() {
-        return this.f1102q.e();
+        return this.f1431q.e();
     }
 
     public void n(int i10, CharSequence charSequence, DialogInterface.OnClickListener onClickListener) {
-        this.f1102q.k(i10, charSequence, onClickListener, null, null);
+        this.f1431q.k(i10, charSequence, onClickListener, null, null);
     }
 
     public void o(CharSequence charSequence) {
-        this.f1102q.o(charSequence);
+        this.f1431q.o(charSequence);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // androidx.appcompat.app.l, androidx.activity.ComponentDialog, android.app.Dialog
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        this.f1102q.f();
+        this.f1431q.f();
     }
 
     @Override // android.app.Dialog, android.view.KeyEvent.Callback
     public boolean onKeyDown(int i10, KeyEvent keyEvent) {
-        if (this.f1102q.g(i10, keyEvent)) {
+        if (this.f1431q.g(i10, keyEvent)) {
             return true;
         }
         return super.onKeyDown(i10, keyEvent);
@@ -200,7 +200,7 @@ public class a extends l implements DialogInterface {
 
     @Override // android.app.Dialog, android.view.KeyEvent.Callback
     public boolean onKeyUp(int i10, KeyEvent keyEvent) {
-        if (this.f1102q.h(i10, keyEvent)) {
+        if (this.f1431q.h(i10, keyEvent)) {
             return true;
         }
         return super.onKeyUp(i10, keyEvent);
@@ -209,6 +209,6 @@ public class a extends l implements DialogInterface {
     @Override // androidx.appcompat.app.l, android.app.Dialog
     public void setTitle(CharSequence charSequence) {
         super.setTitle(charSequence);
-        this.f1102q.q(charSequence);
+        this.f1431q.q(charSequence);
     }
 }

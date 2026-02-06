@@ -1,38 +1,24 @@
 package pg;
-
-import xi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class o9 implements xi.d {
+public final class o9 {
 
     /* renamed from: a  reason: collision with root package name */
-    static final o9 f45593a = new o9();
+    private p9 f44566a;
 
-    static {
-        c.b a10 = xi.c.a("inferenceCommonLogEvent");
-        v1 v1Var = new v1();
-        v1Var.a(1);
-        a10.b(v1Var.b()).a();
-        c.b a11 = xi.c.a("detectorOptions");
-        v1 v1Var2 = new v1();
-        v1Var2.a(2);
-        a11.b(v1Var2.b()).a();
-        c.b a12 = xi.c.a("imageInfo");
-        v1 v1Var3 = new v1();
-        v1Var3.a(3);
-        a12.b(v1Var3.b()).a();
-        c.b a13 = xi.c.a("detectedFaces");
-        v1 v1Var4 = new v1();
-        v1Var4.a(4);
-        a13.b(v1Var4.b()).a();
+    /* renamed from: b  reason: collision with root package name */
+    private Integer f44567b;
+
+    public final o9 a(p9 p9Var) {
+        this.f44566a = p9Var;
+        return this;
     }
 
-    private o9() {
+    public final o9 b(Integer num) {
+        this.f44567b = Integer.valueOf(num.intValue() & Integer.MAX_VALUE);
+        return this;
     }
 
-    @Override // xi.d
-    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
-        android.support.v4.media.session.b.a(obj);
-        xi.e eVar = (xi.e) obj2;
-        throw null;
+    public final r9 d() {
+        return new r9(this, null);
     }
 }

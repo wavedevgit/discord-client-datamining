@@ -32,7 +32,7 @@ public final class FastestListViewHolderView extends FrameLayout {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onViewTransitioning$lambda$0(boolean z10) {
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     @Override // android.view.ViewGroup

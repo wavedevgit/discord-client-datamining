@@ -1,7 +1,7 @@
 // modules/spotify/SpotifyConstants.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun50230: for (var _fun50230_ip = 0;;) switch (_fun50230_ip) {
+    _fun50193: for (var _fun50193_ip = 0;;) switch (_fun50193_ip) {
         case 0:
             var8 = require;
             var2 = exports;
@@ -99,13 +99,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var12 = var14.bind(var16)(var15, var12);
             var3.PLAYER_REPEAT = var12;
             var12 = function arg0, arg1() {
-                _fun50232: for (var _fun50232_ip = 0;;) switch (_fun50232_ip) {
+                _fun50195: for (var _fun50195_ip = 0;;) switch (_fun50195_ip) {
                     case 0:
                         var3 = arguments[2];
                         var2 = undefined;
                         if (!(var3 === var2)) {
-                            _fun50232_ip = 13;
-                            continue _fun50232
+                            _fun50195_ip = 13;
+                            continue _fun50195
                         }
                     case 9:
                         var3 = 'desktop';
@@ -130,13 +130,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var3.WEB_OPEN = var12;
             var12 = function arg0() {
-                _fun50233: for (var _fun50233_ip = 0;;) switch (_fun50233_ip) {
+                _fun50196: for (var _fun50196_ip = 0;;) switch (_fun50196_ip) {
                     case 0:
                         var2 = arguments[1];
                         var1 = undefined;
                         if (!(var2 === var1)) {
-                            _fun50233_ip = 13;
-                            continue _fun50233
+                            _fun50196_ip = 13;
+                            continue _fun50196
                         }
                     case 9:
                         var2 = 'desktop';
@@ -154,21 +154,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var3.EMBED = var12;
             var12 = function arg0, arg1() {
-                _fun50234: for (var _fun50234_ip = 0;;) switch (_fun50234_ip) {
+                _fun50197: for (var _fun50197_ip = 0;;) switch (_fun50197_ip) {
                     case 0:
                         var1 = arguments[2];
                         var7 = arguments[3];
                         var2 = undefined;
                         if (!(var1 === var2)) {
-                            _fun50234_ip = 14;
-                            continue _fun50234
+                            _fun50197_ip = 14;
+                            continue _fun50197
                         }
                     case 12:
                         var1 = true;
                     case 14:
                         if (!(var7 === var2)) {
-                            _fun50234_ip = 22;
-                            continue _fun50234
+                            _fun50197_ip = 22;
+                            continue _fun50197
                         }
                     case 18:
                         var7 = 'desktop';
@@ -183,8 +183,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var4 = '';
                         var3 = var4;
                         if (!var1) {
-                            _fun50234_ip = 74;
-                            continue _fun50234
+                            _fun50197_ip = 74;
+                            continue _fun50197
                         }
                     case 62:
                         var1 = _closure1_slot1;
@@ -230,8 +230,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var11 = 'https://itunes.apple.com/us/app/spotify-music/id324684580?mt=8';
             var12 = var11;
             if (!var13) {
-                _fun50230_ip = 559;
-                continue _fun50230
+                _fun50193_ip = 559;
+                continue _fun50193
             }
         case 553:
             var12 = 'https://play.google.com/store/apps/details?id=com.spotify.music&hl=en_US&gl=US';
@@ -251,14 +251,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.SPOTIFY_PARTY_PREFIX = var7;
             var2.SPOTIFY_PLATFORM_NAME = var6;
             var6 = function arg0() {
-                _fun50236: for (var _fun50236_ip = 0;;) switch (_fun50236_ip) {
+                _fun50199: for (var _fun50199_ip = 0;;) switch (_fun50199_ip) {
                     case 0:
                         var3 = arg0;
                         var0 = null;
                         var0 = var0 != var3;
                         if (!var0) {
-                            _fun50236_ip = 29;
-                            continue _fun50236
+                            _fun50199_ip = 29;
+                            continue _fun50199
                         }
                     case 12:
                         var2 = var3.startsWith;
@@ -275,50 +275,50 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.SPOTIFY_HOSTNAMES = var4;
             var2.SpotifyEndpoints = var3;
             var1 = function arg0() {
-                _fun50237: for (var _fun50237_ip = 0;;) switch (_fun50237_ip) {
+                _fun50200: for (var _fun50200_ip = 0;;) switch (_fun50200_ip) {
                     case 0:
                         var1 = arg0;
                         var2 = 'string';
                         var0 = typeof var1;
                         if (!(var2 === var0)) {
-                            _fun50237_ip = 166;
-                            continue _fun50237
+                            _fun50200_ip = 166;
+                            continue _fun50200
                         }
                     case 17:
                         var0 = 'track';
                         if (!(var0 !== var1)) {
-                            _fun50237_ip = 151;
-                            continue _fun50237
+                            _fun50200_ip = 151;
+                            continue _fun50200
                         }
                     case 28:
                         var0 = 'artist';
                         if (!(var0 !== var1)) {
-                            _fun50237_ip = 136;
-                            continue _fun50237
+                            _fun50200_ip = 136;
+                            continue _fun50200
                         }
                     case 36:
                         var0 = 'album';
                         if (!(var0 !== var1)) {
-                            _fun50237_ip = 121;
-                            continue _fun50237
+                            _fun50200_ip = 121;
+                            continue _fun50200
                         }
                     case 44:
                         var0 = 'playlist';
                         if (!(var0 !== var1)) {
-                            _fun50237_ip = 106;
-                            continue _fun50237
+                            _fun50200_ip = 106;
+                            continue _fun50200
                         }
                     case 54:
                         var0 = 'episode';
                         if (!(var0 !== var1)) {
-                            _fun50237_ip = 91;
-                            continue _fun50237
+                            _fun50200_ip = 91;
+                            continue _fun50200
                         }
                     case 64:
                         var0 = 'show';
                         if (!(var0 !== var1)) {
-                            _fun50237_ip = 76;
-                            continue _fun50237
+                            _fun50200_ip = 76;
+                            continue _fun50200
                         }
                     case 72:
                         var0 = null;
@@ -355,4 +355,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.getSpotifyResourceType = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 4395, 478, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 4396, 478, 2]);

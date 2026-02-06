@@ -1,52 +1,50 @@
 package cv;
 
-import java.util.ArrayList;
+import cv.c;
+import ev.b;
 import java.util.List;
 import kotlin.collections.CollectionsKt;
-import kotlin.text.StringsKt;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.Lambda;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface a {
+public final class a implements su.b, c, ev.b {
+
+    /* renamed from: a  reason: collision with root package name */
+    public static final a f20044a = new a();
 
     /* renamed from: cv.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class C0279a {
-        private static Double a(a aVar, Object obj) {
-            if (obj instanceof Number) {
-                return Double.valueOf(((Number) obj).doubleValue());
-            }
-            if (obj instanceof String) {
-                return StringsKt.p((String) obj);
-            }
-            if (obj instanceof List) {
-                return b(aVar, (List) obj);
-            }
-            if (obj instanceof Boolean) {
-                return Double.valueOf(vv.b.a(((Boolean) obj).booleanValue()));
-            }
-            if (obj == null) {
-                return Double.valueOf(0.0d);
-            }
-            return null;
+    static final class C0262a extends Lambda implements Function1 {
+
+        /* renamed from: d  reason: collision with root package name */
+        public static final C0262a f20045d = new C0262a();
+
+        C0262a() {
+            super(1);
         }
 
-        private static Double b(a aVar, List list) {
-            int size = list.size();
-            if (size != 0) {
-                if (size != 1) {
-                    return null;
-                }
-                return a(aVar, CollectionsKt.o0(list));
-            }
-            return Double.valueOf(0.0d);
+        @Override // kotlin.jvm.functions.Function1
+        /* renamed from: a */
+        public final Double invoke(List it) {
+            Intrinsics.checkNotNullParameter(it, "it");
+            return Double.valueOf(CollectionsKt.Y0(it));
         }
+    }
 
-        public static List c(a aVar, Object obj) {
-            List<Object> c10 = vv.a.c(obj);
-            ArrayList arrayList = new ArrayList(CollectionsKt.w(c10, 10));
-            for (Object obj2 : c10) {
-                arrayList.add(a(aVar, obj2));
-            }
-            return arrayList;
-        }
+    private a() {
+    }
+
+    public Double a(Object obj, Function1 function1) {
+        return c.a.a(this, obj, function1);
+    }
+
+    public List b(Object obj) {
+        return b.a.b(this, obj);
+    }
+
+    @Override // su.b
+    public Object f(Object obj, Object obj2) {
+        return a(b(obj), C0262a.f20045d);
     }
 }

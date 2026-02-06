@@ -1,121 +1,88 @@
 package oq;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.FrameLayout;
-import android.widget.ImageView;
-import android.widget.TextView;
-import androidx.constraintlayout.helper.widget.Flow;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.viewbinding.ViewBinding;
-import com.withpersona.sdk2.inquiry.steps.ui.view.SignatureView;
-import nq.f1;
-import nq.g1;
+import android.os.Parcel;
+import android.os.Parcelable;
+import java.util.Date;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b implements ViewBinding {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final FrameLayout f44189a;
-
-    /* renamed from: b  reason: collision with root package name */
-    public final FrameLayout f44190b;
-
-    /* renamed from: c  reason: collision with root package name */
-    public final Button f44191c;
+public final class b implements Parcelable {
+    @NotNull
+    public static final Parcelable.Creator<b> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    public final ImageView f44192d;
+    private final Date f43328d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final Flow f44193e;
+    private final Date f43329e;
 
-    /* renamed from: f  reason: collision with root package name */
-    public final Button f44194f;
-
-    /* renamed from: g  reason: collision with root package name */
-    public final View f44195g;
-
-    /* renamed from: h  reason: collision with root package name */
-    public final SignatureView f44196h;
-
-    /* renamed from: i  reason: collision with root package name */
-    public final TextView f44197i;
-
-    /* renamed from: j  reason: collision with root package name */
-    public final TextView f44198j;
-
-    /* renamed from: k  reason: collision with root package name */
-    public final ConstraintLayout f44199k;
-
-    private b(FrameLayout frameLayout, FrameLayout frameLayout2, Button button, ImageView imageView, Flow flow, Button button2, View view, SignatureView signatureView, TextView textView, TextView textView2, ConstraintLayout constraintLayout) {
-        this.f44189a = frameLayout;
-        this.f44190b = frameLayout2;
-        this.f44191c = button;
-        this.f44192d = imageView;
-        this.f44193e = flow;
-        this.f44194f = button2;
-        this.f44195g = view;
-        this.f44196h = signatureView;
-        this.f44197i = textView;
-        this.f44198j = textView2;
-        this.f44199k = constraintLayout;
-    }
-
-    public static b a(View view) {
-        View a10;
-        int i10 = f1.f41499a;
-        FrameLayout frameLayout = (FrameLayout) e4.a.a(view, i10);
-        if (frameLayout != null) {
-            i10 = f1.f41500b;
-            Button button = (Button) e4.a.a(view, i10);
-            if (button != null) {
-                i10 = f1.f41501c;
-                ImageView imageView = (ImageView) e4.a.a(view, i10);
-                if (imageView != null) {
-                    i10 = f1.f41503e;
-                    Flow flow = (Flow) e4.a.a(view, i10);
-                    if (flow != null) {
-                        i10 = f1.f41514p;
-                        Button button2 = (Button) e4.a.a(view, i10);
-                        if (button2 != null && (a10 = e4.a.a(view, (i10 = f1.f41515q))) != null) {
-                            i10 = f1.f41516r;
-                            SignatureView signatureView = (SignatureView) e4.a.a(view, i10);
-                            if (signatureView != null) {
-                                i10 = f1.f41517s;
-                                TextView textView = (TextView) e4.a.a(view, i10);
-                                if (textView != null) {
-                                    i10 = f1.f41518t;
-                                    TextView textView2 = (TextView) e4.a.a(view, i10);
-                                    if (textView2 != null) {
-                                        i10 = f1.f41519u;
-                                        ConstraintLayout constraintLayout = (ConstraintLayout) e4.a.a(view, i10);
-                                        if (constraintLayout != null) {
-                                            return new b((FrameLayout) view, frameLayout, button, imageView, flow, button2, a10, signatureView, textView, textView2, constraintLayout);
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class a implements Parcelable.Creator {
+        @Override // android.os.Parcelable.Creator
+        /* renamed from: a */
+        public final b createFromParcel(Parcel parcel) {
+            Intrinsics.checkNotNullParameter(parcel, "parcel");
+            return new b((Date) parcel.readSerializable(), (Date) parcel.readSerializable());
         }
-        throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i10)));
-    }
 
-    public static b c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(g1.f41549b, viewGroup, false);
-        if (z10) {
-            viewGroup.addView(inflate);
+        @Override // android.os.Parcelable.Creator
+        /* renamed from: b */
+        public final b[] newArray(int i10) {
+            return new b[i10];
         }
-        return a(inflate);
     }
 
-    @Override // androidx.viewbinding.ViewBinding
-    /* renamed from: b */
-    public FrameLayout getRoot() {
-        return this.f44189a;
+    public b(Date date, Date date2) {
+        this.f43328d = date;
+        this.f43329e = date2;
+    }
+
+    @Override // android.os.Parcelable
+    public final int describeContents() {
+        return 0;
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof b)) {
+            return false;
+        }
+        b bVar = (b) obj;
+        if (Intrinsics.areEqual(this.f43328d, bVar.f43328d) && Intrinsics.areEqual(this.f43329e, bVar.f43329e)) {
+            return true;
+        }
+        return false;
+    }
+
+    public int hashCode() {
+        int hashCode;
+        Date date = this.f43328d;
+        int i10 = 0;
+        if (date == null) {
+            hashCode = 0;
+        } else {
+            hashCode = date.hashCode();
+        }
+        int i11 = hashCode * 31;
+        Date date2 = this.f43329e;
+        if (date2 != null) {
+            i10 = date2.hashCode();
+        }
+        return i11 + i10;
+    }
+
+    public String toString() {
+        Date date = this.f43328d;
+        Date date2 = this.f43329e;
+        return "CollectedGovernmentIdDetails(dateOfBirth=" + date + ", expirationDate=" + date2 + ")";
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(Parcel dest, int i10) {
+        Intrinsics.checkNotNullParameter(dest, "dest");
+        dest.writeSerializable(this.f43328d);
+        dest.writeSerializable(this.f43329e);
     }
 }

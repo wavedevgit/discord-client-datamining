@@ -105,7 +105,7 @@ public final class l implements te.b {
         return j10 + 33696000000L;
     }
 
-    public final /* synthetic */ void d(xg.k kVar) {
+    public final /* synthetic */ void d(yg.k kVar) {
         String str;
         String str2;
         String string = f(this.f611a).getString("app_set_id", null);
@@ -154,7 +154,7 @@ public final class l implements te.b {
 
     @Override // te.b
     public final Task g() {
-        final xg.k kVar = new xg.k();
+        final yg.k kVar = new yg.k();
         this.f614d.execute(new Runnable() { // from class: ag.h
             @Override // java.lang.Runnable
             public final void run() {

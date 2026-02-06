@@ -12,17 +12,17 @@ import gf.q;
 public abstract class a extends BasePendingResult {
 
     /* renamed from: a  reason: collision with root package name */
-    private final a.c f13790a;
+    private final a.c f13745a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ef.a f13791b;
+    private final ef.a f13746b;
 
     /* JADX INFO: Access modifiers changed from: protected */
     public a(ef.a aVar, e eVar) {
         super((e) q.m(eVar, "GoogleApiClient must not be null"));
         q.m(aVar, "Api must not be null");
-        this.f13790a = aVar.b();
-        this.f13791b = aVar;
+        this.f13745a = aVar.b();
+        this.f13746b = aVar;
     }
 
     private void g(RemoteException remoteException) {
@@ -43,7 +43,7 @@ public abstract class a extends BasePendingResult {
     }
 
     public final void h(Status status) {
-        q.b(!status.g(), "Failed result must not be success");
+        q.b(!status.h(), "Failed result must not be success");
         k a10 = a(status);
         setResult(a10);
         e(a10);

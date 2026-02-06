@@ -10796,10 +10796,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var9 = var12 < var9;
                         var12 = 0;
                         if (!var9) {
-                            _fun7991_ip = 5032;
+                            _fun7991_ip = 5030;
                             continue _fun7991
                         }
-                    case 4997:
+                    case 4995:
                         var9 = var10[var12];
                         var13 = var9.toLowerCase;
                         var13 = var13.bind(var9)();
@@ -10808,10 +10808,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var12 = var12 + var11;
                         var9 = var10.length;
                         if (var12 < var9) {
-                            _fun7991_ip = 4997;
+                            _fun7991_ip = 4995;
                             continue _fun7991
                         }
-                    case 5032:
+                    case 5030:
                         var9 = function arg0, arg1, arg2() {
                             _fun8172: for (var _fun8172_ip = 0;;) switch (_fun8172_ip) {
                                 case 0:
@@ -12495,10 +12495,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         }
                                     });
                                     var0 = new var8[var1](var7);
-                                case 107: // try_end0
+                                case 105: // try_end0
                                     var0 = true;
                                     return var0;
-                                case 111: // catch_target0
+                                case 109: // catch_target0
                                     CatchBlockStart(arg_register = 0);
                                     var0 = false;
                                     return var0;

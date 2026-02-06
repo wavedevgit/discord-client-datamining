@@ -27,7 +27,7 @@ public enum v6 implements w1 {
         @Override // io.sentry.m1
         /* renamed from: b */
         public v6 a(e3 e3Var, ILogger iLogger) {
-            return v6.valueOfLabel(e3Var.f1().toLowerCase(Locale.ROOT));
+            return v6.valueOfLabel(e3Var.e1().toLowerCase(Locale.ROOT));
         }
     }
 

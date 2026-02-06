@@ -4,7 +4,7 @@ import com.discord.chat.bridge.media.UnfurledMediaItem;
 import com.discord.chat.bridge.spoiler.SpoilerableData;
 import com.facebook.react.devsupport.StackTraceHelper;
 import com.facebook.react.uimanager.ViewProps;
-import gt.v1;
+import jt.v1;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
@@ -14,8 +14,8 @@ import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
 import org.jetbrains.annotations.NotNull;
 import org.webrtc.PeerConnection;
+@ft.m
 @Metadata(d1 = {"\u0000P\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u000f\n\u0002\u0018\u0002\n\u0002\b&\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 N2\u00020\u00012\u00020\u0002:\u0002MNB\u0081\u0001\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\u0006\u0010\u0007\u001a\u00020\b\u0012\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\u0006\u0012\u0006\u0010\n\u001a\u00020\u000b\u0012\b\u0010\f\u001a\u0004\u0018\u00010\u0006\u0012\u0006\u0010\r\u001a\u00020\u000b\u0012\u0006\u0010\u000e\u001a\u00020\u000b\u0012\u0006\u0010\u000f\u001a\u00020\u000b\u0012\u0006\u0010\u0010\u001a\u00020\u000b\u0012\b\u0010\u0011\u001a\u0004\u0018\u00010\u0006\u0012\b\u0010\u0012\u001a\u0004\u0018\u00010\u000b\u0012\u0006\u0010\u0013\u001a\u00020\u0006\u0012\u0006\u0010\u0014\u001a\u00020\u0006¢\u0006\u0004\b\u0015\u0010\u0016B¯\u0001\b\u0010\u0012\u0006\u0010\u0017\u001a\u00020\u0004\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\b\u0012\b\u0010\t\u001a\u0004\u0018\u00010\u0006\u0012\u0006\u0010\n\u001a\u00020\u000b\u0012\b\u0010\f\u001a\u0004\u0018\u00010\u0006\u0012\u0006\u0010\r\u001a\u00020\u000b\u0012\u0006\u0010\u000e\u001a\u00020\u000b\u0012\u0006\u0010\u000f\u001a\u00020\u000b\u0012\u0006\u0010\u0010\u001a\u00020\u000b\u0012\b\u0010\u0011\u001a\u0004\u0018\u00010\u0006\u0012\b\u0010\u0012\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\u0013\u001a\u0004\u0018\u00010\u0006\u0012\b\u0010\u0014\u001a\u0004\u0018\u00010\u0006\u0012\b\u0010\u0018\u001a\u0004\u0018\u00010\u0006\u0012\b\u0010\u0019\u001a\u0004\u0018\u00010\u0006\u0012\b\u0010\u001a\u001a\u0004\u0018\u00010\u001b¢\u0006\u0004\b\u0015\u0010\u001cJ\t\u00100\u001a\u00020\u0004HÆ\u0003J\t\u00101\u001a\u00020\u0006HÆ\u0003J\t\u00102\u001a\u00020\bHÆ\u0003J\u000b\u00103\u001a\u0004\u0018\u00010\u0006HÆ\u0003J\t\u00104\u001a\u00020\u000bHÆ\u0003J\u000b\u00105\u001a\u0004\u0018\u00010\u0006HÆ\u0003J\t\u00106\u001a\u00020\u000bHÆ\u0003J\t\u00107\u001a\u00020\u000bHÆ\u0003J\t\u00108\u001a\u00020\u000bHÆ\u0003J\t\u00109\u001a\u00020\u000bHÆ\u0003J\u000b\u0010:\u001a\u0004\u0018\u00010\u0006HÆ\u0003J\u0010\u0010;\u001a\u0004\u0018\u00010\u000bHÆ\u0003¢\u0006\u0002\u0010*J\t\u0010<\u001a\u00020\u0006HÆ\u0003J\t\u0010=\u001a\u00020\u0006HÆ\u0003J¢\u0001\u0010>\u001a\u00020\u00002\b\b\u0002\u0010\u0003\u001a\u00020\u00042\b\b\u0002\u0010\u0005\u001a\u00020\u00062\b\b\u0002\u0010\u0007\u001a\u00020\b2\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\u00062\b\b\u0002\u0010\n\u001a\u00020\u000b2\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\u00062\b\b\u0002\u0010\r\u001a\u00020\u000b2\b\b\u0002\u0010\u000e\u001a\u00020\u000b2\b\b\u0002\u0010\u000f\u001a\u00020\u000b2\b\b\u0002\u0010\u0010\u001a\u00020\u000b2\n\b\u0002\u0010\u0011\u001a\u0004\u0018\u00010\u00062\n\b\u0002\u0010\u0012\u001a\u0004\u0018\u00010\u000b2\b\b\u0002\u0010\u0013\u001a\u00020\u00062\b\b\u0002\u0010\u0014\u001a\u00020\u0006HÆ\u0001¢\u0006\u0002\u0010?J\u0013\u0010@\u001a\u00020\u000b2\b\u0010A\u001a\u0004\u0018\u00010BHÖ\u0003J\t\u0010C\u001a\u00020\u0004HÖ\u0001J\t\u0010D\u001a\u00020\u0006HÖ\u0001J%\u0010E\u001a\u00020F2\u0006\u0010G\u001a\u00020\u00002\u0006\u0010H\u001a\u00020I2\u0006\u0010J\u001a\u00020KH\u0001¢\u0006\u0002\bLR\u0014\u0010\u0003\u001a\u00020\u0004X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001d\u0010\u001eR\u0014\u0010\u0005\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001f\u0010 R\u0011\u0010\u0007\u001a\u00020\b¢\u0006\b\n\u0000\u001a\u0004\b!\u0010\"R\u0013\u0010\t\u001a\u0004\u0018\u00010\u0006¢\u0006\b\n\u0000\u001a\u0004\b#\u0010 R\u0011\u0010\n\u001a\u00020\u000b¢\u0006\b\n\u0000\u001a\u0004\b\n\u0010$R\u0013\u0010\f\u001a\u0004\u0018\u00010\u0006¢\u0006\b\n\u0000\u001a\u0004\b%\u0010 R\u0011\u0010\r\u001a\u00020\u000b¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010$R\u0011\u0010\u000e\u001a\u00020\u000b¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010$R\u0011\u0010\u000f\u001a\u00020\u000b¢\u0006\b\n\u0000\u001a\u0004\b&\u0010$R\u0011\u0010\u0010\u001a\u00020\u000b¢\u0006\b\n\u0000\u001a\u0004\b'\u0010$R\u0013\u0010\u0011\u001a\u0004\u0018\u00010\u0006¢\u0006\b\n\u0000\u001a\u0004\b(\u0010 R\u0015\u0010\u0012\u001a\u0004\u0018\u00010\u000b¢\u0006\n\n\u0002\u0010+\u001a\u0004\b)\u0010*R\u0011\u0010\u0013\u001a\u00020\u0006¢\u0006\b\n\u0000\u001a\u0004\b,\u0010 R\u0011\u0010\u0014\u001a\u00020\u0006¢\u0006\b\n\u0000\u001a\u0004\b-\u0010 R\u0016\u0010\u0018\u001a\u0004\u0018\u00010\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b.\u0010 R\u0016\u0010\u0019\u001a\u0004\u0018\u00010\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b/\u0010 ¨\u0006O"}, d2 = {"Lcom/discord/chat/bridge/botuikit/ThumbnailDisplayComponent;", "Lcom/discord/chat/bridge/botuikit/Component;", "Lcom/discord/chat/bridge/spoiler/SpoilerableData;", "type", "", StackTraceHelper.ID_KEY, "", "media", "Lcom/discord/chat/bridge/media/UnfurledMediaItem;", "description", "isSpoiler", "", "spoilerDescription", "isObscure", "isObscureAwaitingScan", "obscureHideControls", "obscureIsOpaque", "obscureDescription", "verifyAge", "descriptionHint", ViewProps.ACCESSIBILITY_ROLE, "<init>", "(ILjava/lang/String;Lcom/discord/chat/bridge/media/UnfurledMediaItem;Ljava/lang/String;ZLjava/lang/String;ZZZZLjava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;)V", "seen0", "spoilerOrNull", "obscureOrNull", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(IILjava/lang/String;Lcom/discord/chat/bridge/media/UnfurledMediaItem;Ljava/lang/String;ZLjava/lang/String;ZZZZLjava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "getType", "()I", "getId", "()Ljava/lang/String;", "getMedia", "()Lcom/discord/chat/bridge/media/UnfurledMediaItem;", "getDescription", "()Z", "getSpoilerDescription", "getObscureHideControls", "getObscureIsOpaque", "getObscureDescription", "getVerifyAge", "()Ljava/lang/Boolean;", "Ljava/lang/Boolean;", "getDescriptionHint", "getAccessibilityRole", "getSpoilerOrNull", "getObscureOrNull", "component1", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "component9", "component10", "component11", "component12", "component13", "component14", "copy", "(ILjava/lang/String;Lcom/discord/chat/bridge/media/UnfurledMediaItem;Ljava/lang/String;ZLjava/lang/String;ZZZZLjava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;)Lcom/discord/chat/bridge/botuikit/ThumbnailDisplayComponent;", "equals", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
-@dt.m
 @SourceDebugExtension({"SMAP\nThumbnailDisplayComponent.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ThumbnailDisplayComponent.kt\ncom/discord/chat/bridge/botuikit/ThumbnailDisplayComponent\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,30:1\n1#2:31\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class ThumbnailDisplayComponent extends Component implements SpoilerableData {
@@ -29,7 +29,7 @@ public final class ThumbnailDisplayComponent extends Component implements Spoile
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f8639id;
+    private final String f8538id;
     private final boolean isObscure;
     private final boolean isObscureAwaitingScan;
     private final boolean isSpoiler;
@@ -67,7 +67,7 @@ public final class ThumbnailDisplayComponent extends Component implements Spoile
             v1.b(i10, 16375, ThumbnailDisplayComponent$$serializer.INSTANCE.getDescriptor());
         }
         this.type = i11;
-        this.f8639id = str;
+        this.f8538id = str;
         this.media = unfurledMediaItem;
         if ((i10 & 8) == 0) {
             this.description = null;
@@ -111,60 +111,60 @@ public final class ThumbnailDisplayComponent extends Component implements Spoile
         /*
             int r0 = r8.getType()
             r1 = 0
-            r9.v(r10, r1, r0)
+            r9.x(r10, r1, r0)
             java.lang.String r0 = r8.getId()
             r2 = 1
-            r9.x(r10, r2, r0)
+            r9.z(r10, r2, r0)
             com.discord.chat.bridge.media.UnfurledMediaItem$$serializer r0 = com.discord.chat.bridge.media.UnfurledMediaItem$$serializer.INSTANCE
             com.discord.chat.bridge.media.UnfurledMediaItem r3 = r8.media
             r4 = 2
-            r9.l(r10, r4, r0, r3)
+            r9.s(r10, r4, r0, r3)
             r0 = 3
-            boolean r3 = r9.z(r10, r0)
+            boolean r3 = r9.A(r10, r0)
             if (r3 == 0) goto L20
             goto L24
         L20:
             java.lang.String r3 = r8.description
             if (r3 == 0) goto L2b
         L24:
-            gt.n2 r3 = gt.n2.f25302a
+            jt.n2 r3 = jt.n2.f31041a
             java.lang.String r4 = r8.description
-            r9.A(r10, r0, r3, r4)
+            r9.l(r10, r0, r3, r4)
         L2b:
             r0 = 4
             boolean r3 = r8.isSpoiler
-            r9.w(r10, r0, r3)
-            gt.n2 r0 = gt.n2.f25302a
+            r9.y(r10, r0, r3)
+            jt.n2 r0 = jt.n2.f31041a
             java.lang.String r3 = r8.spoilerDescription
             r4 = 5
-            r9.A(r10, r4, r0, r3)
+            r9.l(r10, r4, r0, r3)
             r3 = 6
             boolean r4 = r8.isObscure
-            r9.w(r10, r3, r4)
+            r9.y(r10, r3, r4)
             r3 = 7
             boolean r4 = r8.isObscureAwaitingScan
-            r9.w(r10, r3, r4)
+            r9.y(r10, r3, r4)
             r3 = 8
             boolean r4 = r8.obscureHideControls
-            r9.w(r10, r3, r4)
+            r9.y(r10, r3, r4)
             r3 = 9
             boolean r4 = r8.obscureIsOpaque
-            r9.w(r10, r3, r4)
+            r9.y(r10, r3, r4)
             r3 = 10
             java.lang.String r4 = r8.obscureDescription
-            r9.A(r10, r3, r0, r4)
-            gt.h r3 = gt.h.f25266a
+            r9.l(r10, r3, r0, r4)
+            jt.h r3 = jt.h.f31005a
             java.lang.Boolean r4 = r8.verifyAge
             r5 = 11
-            r9.A(r10, r5, r3, r4)
+            r9.l(r10, r5, r3, r4)
             r3 = 12
             java.lang.String r4 = r8.descriptionHint
-            r9.x(r10, r3, r4)
+            r9.z(r10, r3, r4)
             r3 = 13
             java.lang.String r4 = r8.accessibilityRole
-            r9.x(r10, r3, r4)
+            r9.z(r10, r3, r4)
             r3 = 14
-            boolean r4 = r9.z(r10, r3)
+            boolean r4 = r9.A(r10, r3)
             r5 = 0
             if (r4 == 0) goto L7b
             goto L97
@@ -190,10 +190,10 @@ public final class ThumbnailDisplayComponent extends Component implements Spoile
             if (r4 != 0) goto L9e
         L97:
             java.lang.String r4 = r8.getSpoilerOrNull()
-            r9.A(r10, r3, r0, r4)
+            r9.l(r10, r3, r0, r4)
         L9e:
             r3 = 15
-            boolean r4 = r9.z(r10, r3)
+            boolean r4 = r9.A(r10, r3)
             if (r4 == 0) goto La7
             goto Lbf
         La7:
@@ -212,7 +212,7 @@ public final class ThumbnailDisplayComponent extends Component implements Spoile
             if (r1 != 0) goto Lc6
         Lbf:
             java.lang.String r8 = r8.getObscureOrNull()
-            r9.A(r10, r3, r0, r8)
+            r9.l(r10, r3, r0, r8)
         Lc6:
             return
         */
@@ -247,7 +247,7 @@ public final class ThumbnailDisplayComponent extends Component implements Spoile
 
     @NotNull
     public final String component2() {
-        return this.f8639id;
+        return this.f8538id;
     }
 
     @NotNull
@@ -294,7 +294,7 @@ public final class ThumbnailDisplayComponent extends Component implements Spoile
         }
         if (obj instanceof ThumbnailDisplayComponent) {
             ThumbnailDisplayComponent thumbnailDisplayComponent = (ThumbnailDisplayComponent) obj;
-            return this.type == thumbnailDisplayComponent.type && Intrinsics.areEqual(this.f8639id, thumbnailDisplayComponent.f8639id) && Intrinsics.areEqual(this.media, thumbnailDisplayComponent.media) && Intrinsics.areEqual(this.description, thumbnailDisplayComponent.description) && this.isSpoiler == thumbnailDisplayComponent.isSpoiler && Intrinsics.areEqual(this.spoilerDescription, thumbnailDisplayComponent.spoilerDescription) && this.isObscure == thumbnailDisplayComponent.isObscure && this.isObscureAwaitingScan == thumbnailDisplayComponent.isObscureAwaitingScan && this.obscureHideControls == thumbnailDisplayComponent.obscureHideControls && this.obscureIsOpaque == thumbnailDisplayComponent.obscureIsOpaque && Intrinsics.areEqual(this.obscureDescription, thumbnailDisplayComponent.obscureDescription) && Intrinsics.areEqual(this.verifyAge, thumbnailDisplayComponent.verifyAge) && Intrinsics.areEqual(this.descriptionHint, thumbnailDisplayComponent.descriptionHint) && Intrinsics.areEqual(this.accessibilityRole, thumbnailDisplayComponent.accessibilityRole);
+            return this.type == thumbnailDisplayComponent.type && Intrinsics.areEqual(this.f8538id, thumbnailDisplayComponent.f8538id) && Intrinsics.areEqual(this.media, thumbnailDisplayComponent.media) && Intrinsics.areEqual(this.description, thumbnailDisplayComponent.description) && this.isSpoiler == thumbnailDisplayComponent.isSpoiler && Intrinsics.areEqual(this.spoilerDescription, thumbnailDisplayComponent.spoilerDescription) && this.isObscure == thumbnailDisplayComponent.isObscure && this.isObscureAwaitingScan == thumbnailDisplayComponent.isObscureAwaitingScan && this.obscureHideControls == thumbnailDisplayComponent.obscureHideControls && this.obscureIsOpaque == thumbnailDisplayComponent.obscureIsOpaque && Intrinsics.areEqual(this.obscureDescription, thumbnailDisplayComponent.obscureDescription) && Intrinsics.areEqual(this.verifyAge, thumbnailDisplayComponent.verifyAge) && Intrinsics.areEqual(this.descriptionHint, thumbnailDisplayComponent.descriptionHint) && Intrinsics.areEqual(this.accessibilityRole, thumbnailDisplayComponent.accessibilityRole);
         }
         return false;
     }
@@ -316,7 +316,7 @@ public final class ThumbnailDisplayComponent extends Component implements Spoile
     @Override // com.discord.chat.bridge.botuikit.Component
     @NotNull
     public String getId() {
-        return this.f8639id;
+        return this.f8538id;
     }
 
     @NotNull
@@ -360,7 +360,7 @@ public final class ThumbnailDisplayComponent extends Component implements Spoile
     }
 
     public int hashCode() {
-        int hashCode = ((((Integer.hashCode(this.type) * 31) + this.f8639id.hashCode()) * 31) + this.media.hashCode()) * 31;
+        int hashCode = ((((Integer.hashCode(this.type) * 31) + this.f8538id.hashCode()) * 31) + this.media.hashCode()) * 31;
         String str = this.description;
         int hashCode2 = (((hashCode + (str == null ? 0 : str.hashCode())) * 31) + Boolean.hashCode(this.isSpoiler)) * 31;
         String str2 = this.spoilerDescription;
@@ -386,7 +386,7 @@ public final class ThumbnailDisplayComponent extends Component implements Spoile
     @NotNull
     public String toString() {
         int i10 = this.type;
-        String str = this.f8639id;
+        String str = this.f8538id;
         UnfurledMediaItem unfurledMediaItem = this.media;
         String str2 = this.description;
         boolean z10 = this.isSpoiler;
@@ -414,7 +414,7 @@ public final class ThumbnailDisplayComponent extends Component implements Spoile
         Intrinsics.checkNotNullParameter(descriptionHint, "descriptionHint");
         Intrinsics.checkNotNullParameter(accessibilityRole, "accessibilityRole");
         this.type = i10;
-        this.f8639id = id2;
+        this.f8538id = id2;
         this.media = media;
         this.description = str;
         this.isSpoiler = z10;

@@ -16,47 +16,47 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class a implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private Map f29253d;
+    private Map f28397d;
 
     /* renamed from: e  reason: collision with root package name */
-    private String f29254e;
+    private String f28398e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Collection f29255i;
+    private Collection f28399i;
 
     /* renamed from: io.sentry.profilemeasurements.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0407a implements m1 {
+    public static final class C0401a implements m1 {
         @Override // io.sentry.m1
         /* renamed from: b */
         public a a(e3 e3Var, ILogger iLogger) {
-            e3Var.s();
+            e3Var.u();
             a aVar = new a();
             ConcurrentHashMap concurrentHashMap = null;
             while (e3Var.peek() == io.sentry.vendor.gson.stream.b.NAME) {
-                String m02 = e3Var.m0();
-                m02.getClass();
-                if (!m02.equals("values")) {
-                    if (!m02.equals("unit")) {
+                String o02 = e3Var.o0();
+                o02.getClass();
+                if (!o02.equals("values")) {
+                    if (!o02.equals("unit")) {
                         if (concurrentHashMap == null) {
                             concurrentHashMap = new ConcurrentHashMap();
                         }
-                        e3Var.v1(iLogger, concurrentHashMap, m02);
+                        e3Var.u1(iLogger, concurrentHashMap, o02);
                     } else {
-                        String r12 = e3Var.r1();
-                        if (r12 != null) {
-                            aVar.f29254e = r12;
+                        String q12 = e3Var.q1();
+                        if (q12 != null) {
+                            aVar.f28398e = q12;
                         }
                     }
                 } else {
                     List g22 = e3Var.g2(iLogger, new b.a());
                     if (g22 != null) {
-                        aVar.f29255i = g22;
+                        aVar.f28399i = g22;
                     }
                 }
             }
             aVar.c(concurrentHashMap);
-            e3Var.z();
+            e3Var.D();
             return aVar;
         }
     }
@@ -66,7 +66,7 @@ public final class a implements w1 {
     }
 
     public void c(Map map) {
-        this.f29253d = map;
+        this.f28397d = map;
     }
 
     public boolean equals(Object obj) {
@@ -75,7 +75,7 @@ public final class a implements w1 {
         }
         if (obj != null && a.class == obj.getClass()) {
             a aVar = (a) obj;
-            if (y.a(this.f29253d, aVar.f29253d) && this.f29254e.equals(aVar.f29254e) && new ArrayList(this.f29255i).equals(new ArrayList(aVar.f29255i))) {
+            if (y.a(this.f28397d, aVar.f28397d) && this.f28398e.equals(aVar.f28398e) && new ArrayList(this.f28399i).equals(new ArrayList(aVar.f28399i))) {
                 return true;
             }
         }
@@ -83,27 +83,27 @@ public final class a implements w1 {
     }
 
     public int hashCode() {
-        return y.b(this.f29253d, this.f29254e, this.f29255i);
+        return y.b(this.f28397d, this.f28398e, this.f28399i);
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
-        f3Var.s();
-        f3Var.e("unit").j(iLogger, this.f29254e);
-        f3Var.e("values").j(iLogger, this.f29255i);
-        Map map = this.f29253d;
+        f3Var.u();
+        f3Var.e("unit").j(iLogger, this.f28398e);
+        f3Var.e("values").j(iLogger, this.f28399i);
+        Map map = this.f28397d;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f29253d.get(str);
+                Object obj = this.f28397d.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
         }
-        f3Var.z();
+        f3Var.D();
     }
 
     public a(String str, Collection collection) {
-        this.f29254e = str;
-        this.f29255i = collection;
+        this.f28398e = str;
+        this.f28399i = collection;
     }
 }

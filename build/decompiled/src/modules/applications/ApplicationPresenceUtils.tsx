@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/applications/ApplicationPresenceUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1() {
-        _fun59717: for (var _fun59717_ip = 0;;) switch (_fun59717_ip) {
+        _fun59744: for (var _fun59744_ip = 0;;) switch (_fun59744_ip) {
             case 0:
                 var4 = arg0;
                 var _closure2_slot0 = var4;
@@ -36,23 +36,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = null;
                 var0 = var2 != var3;
                 if (!var0) {
-                    _fun59717_ip = 44;
-                    continue _fun59717
+                    _fun59744_ip = 44;
+                    continue _fun59744
                 }
             case 38:
                 var0 = var4.bot;
             case 44:
                 if (!var0) {
-                    _fun59717_ip = 57;
-                    continue _fun59717
+                    _fun59744_ip = 57;
+                    continue _fun59744
                 }
             case 47:
                 var4 = var3.isPrivate;
                 var0 = var4.bind(var3)();
             case 57:
                 if (!var0) {
-                    _fun59717_ip = 85;
-                    continue _fun59717
+                    _fun59744_ip = 85;
+                    continue _fun59744
                 }
             case 60:
                 var4 = var3.rawRecipients;

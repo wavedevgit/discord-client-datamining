@@ -40,18 +40,18 @@ public final class Id_IdIconJsonAdapter extends h {
     @NotNull
     public Id.IdIcon fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         Id.IdLocalIcon idLocalIcon = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 idLocalIcon = (Id.IdLocalIcon) this.nullableIdLocalIconAdapter.fromJson(reader);
             }
         }
-        reader.z();
+        reader.D();
         return new Id.IdIcon(idLocalIcon);
     }
 
@@ -60,9 +60,9 @@ public final class Id_IdIconJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (idIcon != null) {
             writer.k();
-            writer.W("iconFallback");
+            writer.J("iconFallback");
             this.nullableIdLocalIconAdapter.toJson(writer, idIcon.getIconFallback());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

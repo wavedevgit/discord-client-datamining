@@ -33,8 +33,8 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Reflection;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlinx.coroutines.CoroutineScope;
-import ms.g0;
-import ms.i;
+import os.g0;
+import os.i;
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {2, 1, 0}, xi = 48)
 @e(c = "com.discord.notifications.renderer.IncomingCallActivity$configureActions$1", f = "IncomingCallActivity.kt", l = {164}, m = "invokeSuspend")
@@ -75,7 +75,7 @@ public final class IncomingCallActivity$configureActions$1 extends k implements 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             Object fetchImage;
-            Object f10 = ur.b.f();
+            Object f10 = wr.b.f();
             int i10 = this.label;
             if (i10 != 0) {
                 if (i10 == 1) {
@@ -97,7 +97,7 @@ public final class IncomingCallActivity$configureActions$1 extends k implements 
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Bitmap> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
         }
     }
 
@@ -126,7 +126,7 @@ public final class IncomingCallActivity$configureActions$1 extends k implements 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             Object fetchImage;
-            Object f10 = ur.b.f();
+            Object f10 = wr.b.f();
             int i10 = this.label;
             if (i10 != 0) {
                 if (i10 == 1) {
@@ -148,7 +148,7 @@ public final class IncomingCallActivity$configureActions$1 extends k implements 
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Bitmap> continuation) {
-            return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+            return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
         }
     }
 
@@ -216,7 +216,7 @@ public final class IncomingCallActivity$configureActions$1 extends k implements 
         TextView textView2;
         final DismissCallAction dismissCallAction;
         ImageButton imageButton2;
-        Object f10 = ur.b.f();
+        Object f10 = wr.b.f();
         int i11 = this.label;
         ?? r52 = 1;
         if (i11 != 0) {
@@ -271,7 +271,7 @@ public final class IncomingCallActivity$configureActions$1 extends k implements 
             this.L$5 = textView4;
             r52 = 1;
             this.label = 1;
-            b12 = ms.d.b(g0VarArr, this);
+            b12 = os.d.b(g0VarArr, this);
             if (b12 == f10) {
                 return f10;
             }
@@ -325,11 +325,11 @@ public final class IncomingCallActivity$configureActions$1 extends k implements 
                 IncomingCallActivity$configureActions$1.invokeSuspend$lambda$3(IncomingCallActivity.this, dismissCallAction, view);
             }
         });
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((IncomingCallActivity$configureActions$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+        return ((IncomingCallActivity$configureActions$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
     }
 }

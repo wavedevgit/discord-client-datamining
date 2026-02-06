@@ -20,8 +20,8 @@ import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlinx.coroutines.CoroutineScope;
-import ms.g0;
-import ms.i;
+import os.g0;
+import os.i;
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {2, 1, 0}, xi = 48)
 @e(c = "com.discord.notifications.renderer.IncomingCallActivity$configureUser$1", f = "IncomingCallActivity.kt", l = {144}, m = "invokeSuspend")
@@ -64,9 +64,9 @@ public final class IncomingCallActivity$configureUser$1 extends k implements Fun
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            String m1043getIconUrlForAvatarr1nfqec;
+            String m1041getIconUrlForAvatarr1nfqec;
             Object fetchImage;
-            Object f10 = ur.b.f();
+            Object f10 = wr.b.f();
             int i10 = this.label;
             if (i10 != 0) {
                 if (i10 == 1) {
@@ -79,9 +79,9 @@ public final class IncomingCallActivity$configureUser$1 extends k implements Fun
             IncomingCallActivity incomingCallActivity = this.this$0;
             Context applicationContext = incomingCallActivity.getApplicationContext();
             Intrinsics.checkNotNullExpressionValue(applicationContext, "getApplicationContext(...)");
-            m1043getIconUrlForAvatarr1nfqec = incomingCallActivity.m1043getIconUrlForAvatarr1nfqec(applicationContext, this.$userGuildAvatar, this.$guildId, this.$userId, this.$userAvatar, this.$userDiscriminator);
+            m1041getIconUrlForAvatarr1nfqec = incomingCallActivity.m1041getIconUrlForAvatarr1nfqec(applicationContext, this.$userGuildAvatar, this.$guildId, this.$userId, this.$userAvatar, this.$userDiscriminator);
             this.label = 1;
-            fetchImage = incomingCallActivity.fetchImage(m1043getIconUrlForAvatarr1nfqec, this);
+            fetchImage = incomingCallActivity.fetchImage(m1041getIconUrlForAvatarr1nfqec, this);
             if (fetchImage == f10) {
                 return f10;
             }
@@ -90,7 +90,7 @@ public final class IncomingCallActivity$configureUser$1 extends k implements Fun
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Bitmap> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
         }
     }
 
@@ -114,7 +114,7 @@ public final class IncomingCallActivity$configureUser$1 extends k implements Fun
         g0 b10;
         Long snowflake;
         Long snowflake2;
-        Object f10 = ur.b.f();
+        Object f10 = wr.b.f();
         int i10 = this.label;
         if (i10 != 0) {
             if (i10 == 1) {
@@ -129,7 +129,7 @@ public final class IncomingCallActivity$configureUser$1 extends k implements Fun
             String stringExtra2 = this.this$0.getIntent().getStringExtra("userId");
             GuildId guildId = null;
             if (stringExtra2 != null && (snowflake2 = SnowflakeUtils.INSTANCE.toSnowflake(stringExtra2)) != null) {
-                userId = UserId.m1137boximpl(UserId.m1138constructorimpl(snowflake2.longValue()));
+                userId = UserId.m1135boximpl(UserId.m1136constructorimpl(snowflake2.longValue()));
             } else {
                 userId = null;
             }
@@ -138,7 +138,7 @@ public final class IncomingCallActivity$configureUser$1 extends k implements Fun
             int intExtra = this.this$0.getIntent().getIntExtra("userDiscriminator", 0);
             String stringExtra5 = this.this$0.getIntent().getStringExtra("guildId");
             if (stringExtra5 != null && (snowflake = SnowflakeUtils.INSTANCE.toSnowflake(stringExtra5)) != null) {
-                guildId = GuildId.m1072boximpl(GuildId.m1073constructorimpl(snowflake.longValue()));
+                guildId = GuildId.m1070boximpl(GuildId.m1071constructorimpl(snowflake.longValue()));
             }
             TextView textView = (TextView) this.this$0.findViewById(R.id.userName);
             textView.setText(stringExtra);
@@ -147,17 +147,17 @@ public final class IncomingCallActivity$configureUser$1 extends k implements Fun
             textView.setTextColor(ThemeManagerKt.getTheme().getWhite());
             b10 = i.b(coroutineScope, null, null, new AnonymousClass1(this.this$0, stringExtra4, guildId, userId, stringExtra3, intExtra, null), 3, null);
             this.label = 1;
-            obj = ms.d.b(new g0[]{b10}, this);
+            obj = os.d.b(new g0[]{b10}, this);
             if (obj == f10) {
                 return f10;
             }
         }
         ((ImageView) this.this$0.findViewById(R.id.imageView)).setImageBitmap((Bitmap) ((List) obj).get(0));
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((IncomingCallActivity$configureUser$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+        return ((IncomingCallActivity$configureUser$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
     }
 }

@@ -308,4 +308,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.fileIsInAppDir = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 3, 44, 4005, 4012, 4006, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 3, 44, 4006, 4013, 4007, 2]);

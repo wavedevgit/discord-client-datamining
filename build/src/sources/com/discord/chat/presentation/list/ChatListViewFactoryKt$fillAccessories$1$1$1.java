@@ -8,8 +8,8 @@ import kotlin.coroutines.Continuation;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlinx.coroutines.CoroutineScope;
-import ms.c1;
-import ms.m0;
+import os.c1;
+import os.m0;
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {2, 1, 0}, xi = 48)
 @kotlin.coroutines.jvm.internal.e(c = "com.discord.chat.presentation.list.ChatListViewFactoryKt$fillAccessories$1$1$1", f = "ChatListViewFactory.kt", l = {94}, m = "invokeSuspend")
 @SourceDebugExtension({"SMAP\nChatListViewFactory.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ChatListViewFactory.kt\ncom/discord/chat/presentation/list/ChatListViewFactoryKt$fillAccessories$1$1$1\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,104:1\n1869#2,2:105\n*S KotlinDebug\n*F\n+ 1 ChatListViewFactory.kt\ncom/discord/chat/presentation/list/ChatListViewFactoryKt$fillAccessories$1$1$1\n*L\n91#1:105,2\n*E\n"})
@@ -38,17 +38,17 @@ final class ChatListViewFactoryKt$fillAccessories$1$1$1 extends kotlin.coroutine
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            ur.b.f();
+            wr.b.f();
             if (this.label == 0) {
                 kotlin.c.b(obj);
-                return Unit.f31988a;
+                return Unit.f32008a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+            return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
         }
     }
 
@@ -67,7 +67,7 @@ final class ChatListViewFactoryKt$fillAccessories$1$1$1 extends kotlin.coroutine
 
     @Override // kotlin.coroutines.jvm.internal.a
     public final Object invokeSuspend(Object obj) {
-        Object f10 = ur.b.f();
+        Object f10 = wr.b.f();
         int i10 = this.label;
         if (i10 != 0) {
             if (i10 == 1) {
@@ -84,15 +84,15 @@ final class ChatListViewFactoryKt$fillAccessories$1$1$1 extends kotlin.coroutine
             c1 c10 = m0.c();
             AnonymousClass2 anonymousClass2 = new AnonymousClass2(null);
             this.label = 1;
-            if (ms.g.g(c10, anonymousClass2, this) == f10) {
+            if (os.g.g(c10, anonymousClass2, this) == f10) {
                 return f10;
             }
         }
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((ChatListViewFactoryKt$fillAccessories$1$1$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+        return ((ChatListViewFactoryKt$fillAccessories$1$1$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
     }
 }

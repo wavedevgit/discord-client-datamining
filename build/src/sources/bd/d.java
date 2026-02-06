@@ -8,30 +8,30 @@ abstract class d {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public final long[] f6262a;
+        public final long[] f6555a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final int[] f6263b;
+        public final int[] f6556b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final int f6264c;
+        public final int f6557c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final long[] f6265d;
+        public final long[] f6558d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final int[] f6266e;
+        public final int[] f6559e;
 
         /* renamed from: f  reason: collision with root package name */
-        public final long f6267f;
+        public final long f6560f;
 
         private b(long[] jArr, int[] iArr, int i10, long[] jArr2, int[] iArr2, long j10) {
-            this.f6262a = jArr;
-            this.f6263b = iArr;
-            this.f6264c = i10;
-            this.f6265d = jArr2;
-            this.f6266e = iArr2;
-            this.f6267f = j10;
+            this.f6555a = jArr;
+            this.f6556b = iArr;
+            this.f6557c = i10;
+            this.f6558d = jArr2;
+            this.f6559e = iArr2;
+            this.f6560f = j10;
         }
     }
 

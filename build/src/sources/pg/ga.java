@@ -1,46 +1,68 @@
 package pg;
-
-import xi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class ga implements xi.d {
+public final class ga {
 
     /* renamed from: a  reason: collision with root package name */
-    static final ga f45233a = new ga();
+    private final hc f44262a;
 
-    static {
-        c.b a10 = xi.c.a("detectorMode");
-        v1 v1Var = new v1();
-        v1Var.a(1);
-        a10.b(v1Var.b()).a();
-        c.b a11 = xi.c.a("multipleObjectsEnabled");
-        v1 v1Var2 = new v1();
-        v1Var2.a(2);
-        a11.b(v1Var2.b()).a();
-        c.b a12 = xi.c.a("classificationEnabled");
-        v1 v1Var3 = new v1();
-        v1Var3.a(3);
-        a12.b(v1Var3.b()).a();
-        c.b a13 = xi.c.a("maxPerObjectLabelCount");
-        v1 v1Var4 = new v1();
-        v1Var4.a(4);
-        a13.b(v1Var4.b()).a();
-        c.b a14 = xi.c.a("classificationConfidenceThreshold");
-        v1 v1Var5 = new v1();
-        v1Var5.a(5);
-        a14.b(v1Var5.b()).a();
-        c.b a15 = xi.c.a("customLocalModelOptions");
-        v1 v1Var6 = new v1();
-        v1Var6.a(6);
-        a15.b(v1Var6.b()).a();
+    /* renamed from: b  reason: collision with root package name */
+    private final da f44263b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private final ba f44264c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private final wa f44265d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private final za f44266e;
+
+    /* renamed from: f  reason: collision with root package name */
+    private final s2 f44267f;
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public /* synthetic */ ga(ea eaVar, fa faVar) {
+        hc hcVar;
+        da daVar;
+        ba baVar;
+        wa waVar;
+        za zaVar;
+        s2 s2Var;
+        hcVar = eaVar.f44188a;
+        this.f44262a = hcVar;
+        daVar = eaVar.f44189b;
+        this.f44263b = daVar;
+        baVar = eaVar.f44190c;
+        this.f44264c = baVar;
+        waVar = eaVar.f44191d;
+        this.f44265d = waVar;
+        zaVar = eaVar.f44192e;
+        this.f44266e = zaVar;
+        s2Var = eaVar.f44193f;
+        this.f44267f = s2Var;
     }
 
-    private ga() {
+    public final s2 a() {
+        return this.f44267f;
     }
 
-    @Override // xi.d
-    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
-        android.support.v4.media.session.b.a(obj);
-        xi.e eVar = (xi.e) obj2;
-        throw null;
+    public final ba b() {
+        return this.f44264c;
+    }
+
+    public final da c() {
+        return this.f44263b;
+    }
+
+    public final wa d() {
+        return this.f44265d;
+    }
+
+    public final za e() {
+        return this.f44266e;
+    }
+
+    public final hc f() {
+        return this.f44262a;
     }
 }

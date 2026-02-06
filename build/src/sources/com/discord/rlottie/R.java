@@ -742,7 +742,7 @@ public final class R {
         public static int off = 0x7f0a039c;
 
         /* renamed from: on  reason: collision with root package name */
-        public static int f9778on = 0x7f0a039d;
+        public static int f9677on = 0x7f0a039d;
         public static int parentPanel = 0x7f0a03d2;
         public static int progress_circular = 0x7f0a0412;
         public static int progress_horizontal = 0x7f0a0413;
@@ -794,7 +794,7 @@ public final class R {
         public static int uniform = 0x7f0a057e;
 
         /* renamed from: up  reason: collision with root package name */
-        public static int f9779up = 0x7f0a0580;
+        public static int f9678up = 0x7f0a0580;
         public static int wrap_content = 0x7f0a05c8;
 
         private id() {
@@ -875,35 +875,35 @@ public final class R {
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class string {
-        public static int abc_action_bar_home_description = 0x7f130000;
-        public static int abc_action_bar_up_description = 0x7f130001;
-        public static int abc_action_menu_overflow_description = 0x7f130002;
-        public static int abc_action_mode_done = 0x7f130003;
-        public static int abc_activity_chooser_view_see_all = 0x7f130004;
-        public static int abc_activitychooserview_choose_application = 0x7f130005;
-        public static int abc_capital_off = 0x7f130006;
-        public static int abc_capital_on = 0x7f130007;
-        public static int abc_menu_alt_shortcut_label = 0x7f130008;
-        public static int abc_menu_ctrl_shortcut_label = 0x7f130009;
-        public static int abc_menu_delete_shortcut_label = 0x7f13000a;
-        public static int abc_menu_enter_shortcut_label = 0x7f13000b;
-        public static int abc_menu_function_shortcut_label = 0x7f13000c;
-        public static int abc_menu_meta_shortcut_label = 0x7f13000d;
-        public static int abc_menu_shift_shortcut_label = 0x7f13000e;
-        public static int abc_menu_space_shortcut_label = 0x7f13000f;
-        public static int abc_menu_sym_shortcut_label = 0x7f130010;
-        public static int abc_prepend_shortcut_label = 0x7f130011;
-        public static int abc_search_hint = 0x7f130012;
-        public static int abc_searchview_description_clear = 0x7f130013;
-        public static int abc_searchview_description_query = 0x7f130014;
-        public static int abc_searchview_description_search = 0x7f130015;
-        public static int abc_searchview_description_submit = 0x7f130016;
-        public static int abc_searchview_description_voice = 0x7f130017;
-        public static int abc_shareactionprovider_share_with = 0x7f130018;
-        public static int abc_shareactionprovider_share_with_application = 0x7f130019;
-        public static int abc_toolbar_collapse_description = 0x7f13001a;
-        public static int search_menu_title = 0x7f130190;
-        public static int status_bar_notification_info_overflow = 0x7f13019f;
+        public static int abc_action_bar_home_description = 0x7f130001;
+        public static int abc_action_bar_up_description = 0x7f130002;
+        public static int abc_action_menu_overflow_description = 0x7f130003;
+        public static int abc_action_mode_done = 0x7f130004;
+        public static int abc_activity_chooser_view_see_all = 0x7f130005;
+        public static int abc_activitychooserview_choose_application = 0x7f130006;
+        public static int abc_capital_off = 0x7f130007;
+        public static int abc_capital_on = 0x7f130008;
+        public static int abc_menu_alt_shortcut_label = 0x7f130009;
+        public static int abc_menu_ctrl_shortcut_label = 0x7f13000a;
+        public static int abc_menu_delete_shortcut_label = 0x7f13000b;
+        public static int abc_menu_enter_shortcut_label = 0x7f13000c;
+        public static int abc_menu_function_shortcut_label = 0x7f13000d;
+        public static int abc_menu_meta_shortcut_label = 0x7f13000e;
+        public static int abc_menu_shift_shortcut_label = 0x7f13000f;
+        public static int abc_menu_space_shortcut_label = 0x7f130010;
+        public static int abc_menu_sym_shortcut_label = 0x7f130011;
+        public static int abc_prepend_shortcut_label = 0x7f130012;
+        public static int abc_search_hint = 0x7f130013;
+        public static int abc_searchview_description_clear = 0x7f130014;
+        public static int abc_searchview_description_query = 0x7f130015;
+        public static int abc_searchview_description_search = 0x7f130016;
+        public static int abc_searchview_description_submit = 0x7f130017;
+        public static int abc_searchview_description_voice = 0x7f130018;
+        public static int abc_shareactionprovider_share_with = 0x7f130019;
+        public static int abc_shareactionprovider_share_with_application = 0x7f13001a;
+        public static int abc_toolbar_collapse_description = 0x7f13001b;
+        public static int search_menu_title = 0x7f130191;
+        public static int status_bar_notification_info_overflow = 0x7f1301a0;
 
         private string() {
         }

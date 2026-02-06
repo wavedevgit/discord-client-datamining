@@ -76,7 +76,7 @@ public final class TextBasedComponentStyleJsonAdapter extends h {
     @NotNull
     public TextBasedComponentStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         AttributeStyles.TextBasedMarginStyle textBasedMarginStyle = null;
         AttributeStyles.TextBasedJustifyStyle textBasedJustifyStyle = null;
         AttributeStyles.TextBasedFontFamilyStyle textBasedFontFamilyStyle = null;
@@ -87,10 +87,10 @@ public final class TextBasedComponentStyleJsonAdapter extends h {
         AttributeStyles.TextBasedTextColorStyle textBasedTextColorStyle = null;
         AttributeStyles.TextBasedTextColorStyle textBasedTextColorStyle2 = null;
         while (reader.hasNext()) {
-            switch (reader.W(this.options)) {
+            switch (reader.J(this.options)) {
                 case -1:
                     reader.E0();
-                    reader.P();
+                    reader.S();
                     break;
                 case 0:
                     textBasedMarginStyle = (AttributeStyles.TextBasedMarginStyle) this.nullableTextBasedMarginStyleAdapter.fromJson(reader);
@@ -121,7 +121,7 @@ public final class TextBasedComponentStyleJsonAdapter extends h {
                     break;
             }
         }
-        reader.z();
+        reader.D();
         return new TextBasedComponentStyle(textBasedMarginStyle, textBasedJustifyStyle, textBasedFontFamilyStyle, textBasedFontSizeStyle, textBasedFontWeightStyle, textBasedLetterSpacingStyle, textBasedLineHeightStyle, textBasedTextColorStyle, textBasedTextColorStyle2);
     }
 
@@ -130,25 +130,25 @@ public final class TextBasedComponentStyleJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (textBasedComponentStyle != null) {
             writer.k();
-            writer.W(ViewProps.MARGIN);
+            writer.J(ViewProps.MARGIN);
             this.nullableTextBasedMarginStyleAdapter.toJson(writer, textBasedComponentStyle.getMargin());
-            writer.W("justify");
+            writer.J("justify");
             this.nullableTextBasedJustifyStyleAdapter.toJson(writer, textBasedComponentStyle.getJustify());
-            writer.W(ViewProps.FONT_FAMILY);
+            writer.J(ViewProps.FONT_FAMILY);
             this.nullableTextBasedFontFamilyStyleAdapter.toJson(writer, textBasedComponentStyle.getFontFamily());
-            writer.W(ViewProps.FONT_SIZE);
+            writer.J(ViewProps.FONT_SIZE);
             this.nullableTextBasedFontSizeStyleAdapter.toJson(writer, textBasedComponentStyle.getFontSize());
-            writer.W(ViewProps.FONT_WEIGHT);
+            writer.J(ViewProps.FONT_WEIGHT);
             this.nullableTextBasedFontWeightStyleAdapter.toJson(writer, textBasedComponentStyle.getFontWeight());
-            writer.W(ViewProps.LETTER_SPACING);
+            writer.J(ViewProps.LETTER_SPACING);
             this.nullableTextBasedLetterSpacingStyleAdapter.toJson(writer, textBasedComponentStyle.getLetterSpacing());
-            writer.W(ViewProps.LINE_HEIGHT);
+            writer.J(ViewProps.LINE_HEIGHT);
             this.nullableTextBasedLineHeightStyleAdapter.toJson(writer, textBasedComponentStyle.getLineHeight());
-            writer.W("textColor");
+            writer.J("textColor");
             this.nullableTextBasedTextColorStyleAdapter.toJson(writer, textBasedComponentStyle.getTextColor());
-            writer.W("textColorHighlight");
+            writer.J("textColorHighlight");
             this.nullableTextBasedTextColorStyleAdapter.toJson(writer, textBasedComponentStyle.getTextColorHighlight());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

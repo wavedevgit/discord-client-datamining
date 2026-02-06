@@ -1,44 +1,93 @@
 package ht;
 
-import kotlin.enums.EnumEntries;
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+import kotlin.collections.CollectionsKt;
+import kotlin.jvm.internal.Intrinsics;
+import kotlinx.serialization.descriptors.SerialDescriptor;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class a {
 
+    /* renamed from: a  reason: collision with root package name */
+    private final String f26458a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private List f26459b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private final List f26460c;
+
     /* renamed from: d  reason: collision with root package name */
-    public static final a f26953d = new a("NONE", 0);
+    private final Set f26461d;
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f26954e = new a("ALL_JSON_OBJECTS", 1);
+    private final List f26462e;
 
-    /* renamed from: i  reason: collision with root package name */
-    public static final a f26955i = new a("POLYMORPHIC", 2);
+    /* renamed from: f  reason: collision with root package name */
+    private final List f26463f;
 
-    /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ a[] f26956o;
+    /* renamed from: g  reason: collision with root package name */
+    private final List f26464g;
 
-    /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f26957p;
-
-    static {
-        a[] a10 = a();
-        f26956o = a10;
-        f26957p = vr.a.a(a10);
+    public a(String serialName) {
+        Intrinsics.checkNotNullParameter(serialName, "serialName");
+        this.f26458a = serialName;
+        this.f26459b = CollectionsKt.l();
+        this.f26460c = new ArrayList();
+        this.f26461d = new HashSet();
+        this.f26462e = new ArrayList();
+        this.f26463f = new ArrayList();
+        this.f26464g = new ArrayList();
     }
 
-    private a(String str, int i10) {
+    public static /* synthetic */ void b(a aVar, String str, SerialDescriptor serialDescriptor, List list, boolean z10, int i10, Object obj) {
+        if ((i10 & 4) != 0) {
+            list = CollectionsKt.l();
+        }
+        if ((i10 & 8) != 0) {
+            z10 = false;
+        }
+        aVar.a(str, serialDescriptor, list, z10);
     }
 
-    private static final /* synthetic */ a[] a() {
-        return new a[]{f26953d, f26954e, f26955i};
+    public final void a(String elementName, SerialDescriptor descriptor, List annotations, boolean z10) {
+        Intrinsics.checkNotNullParameter(elementName, "elementName");
+        Intrinsics.checkNotNullParameter(descriptor, "descriptor");
+        Intrinsics.checkNotNullParameter(annotations, "annotations");
+        if (this.f26461d.add(elementName)) {
+            this.f26460c.add(elementName);
+            this.f26462e.add(descriptor);
+            this.f26463f.add(annotations);
+            this.f26464g.add(Boolean.valueOf(z10));
+            return;
+        }
+        throw new IllegalArgumentException(("Element with name '" + elementName + "' is already registered in " + this.f26458a).toString());
     }
 
-    public static a valueOf(String str) {
-        return (a) Enum.valueOf(a.class, str);
+    public final List c() {
+        return this.f26459b;
     }
 
-    public static a[] values() {
-        return (a[]) f26956o.clone();
+    public final List d() {
+        return this.f26463f;
+    }
+
+    public final List e() {
+        return this.f26462e;
+    }
+
+    public final List f() {
+        return this.f26460c;
+    }
+
+    public final List g() {
+        return this.f26464g;
+    }
+
+    public final void h(List list) {
+        Intrinsics.checkNotNullParameter(list, "<set-?>");
+        this.f26459b = list;
     }
 }

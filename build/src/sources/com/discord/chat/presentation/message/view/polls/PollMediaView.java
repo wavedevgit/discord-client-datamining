@@ -205,7 +205,7 @@ public final class PollMediaView extends FrameLayout {
         TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, PollMediaView, 0, 0);
         this.emojiSize = obtainStyledAttributes.getDimensionPixelSize(R.styleable.PollMediaView_emojiSize, this.emojiSize);
         obtainStyledAttributes.recycle();
-        this.draweeView$delegate = or.l.a(new Function0() { // from class: com.discord.chat.presentation.message.view.polls.k
+        this.draweeView$delegate = qr.l.a(new Function0() { // from class: com.discord.chat.presentation.message.view.polls.k
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 SimpleDraweeView draweeView_delegate$lambda$2;
@@ -213,7 +213,7 @@ public final class PollMediaView extends FrameLayout {
                 return draweeView_delegate$lambda$2;
             }
         });
-        this.textView$delegate = or.l.a(new Function0() { // from class: com.discord.chat.presentation.message.view.polls.l
+        this.textView$delegate = qr.l.a(new Function0() { // from class: com.discord.chat.presentation.message.view.polls.l
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 SimpleDraweeSpanTextView textView_delegate$lambda$4;

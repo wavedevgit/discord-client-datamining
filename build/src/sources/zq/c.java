@@ -1,62 +1,44 @@
 package zq;
+
+import android.opengl.EGL14;
+import android.opengl.EGLConfig;
+import android.opengl.EGLContext;
+import android.opengl.EGLDisplay;
+import android.opengl.EGLSurface;
+import android.opengl.GLES20;
+import android.util.Log;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class c implements h, yq.a {
-
-    /* renamed from: c  reason: collision with root package name */
-    private static final Object f56175c = new Object();
-
-    /* renamed from: a  reason: collision with root package name */
-    private volatile h f56176a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private volatile Object f56177b = f56175c;
-
-    private c(h hVar) {
-        this.f56176a = hVar;
-    }
-
-    private synchronized Object a() {
-        Object obj;
-        obj = this.f56177b;
-        if (obj == f56175c) {
-            obj = this.f56176a.get();
-            this.f56177b = d(this.f56177b, obj);
-            this.f56176a = null;
+public abstract class c {
+    private static int a() {
+        EGLDisplay eglGetDisplay = EGL14.eglGetDisplay(0);
+        int[] iArr = new int[2];
+        EGL14.eglInitialize(eglGetDisplay, iArr, 0, iArr, 1);
+        EGLConfig[] eGLConfigArr = new EGLConfig[1];
+        int[] iArr2 = new int[1];
+        EGL14.eglChooseConfig(eglGetDisplay, new int[]{12351, 12430, 12329, 0, 12352, 4, 12339, 1, 12344}, 0, eGLConfigArr, 0, 1, iArr2, 0);
+        if (iArr2[0] == 0) {
+            return 0;
         }
-        return obj;
+        EGLConfig eGLConfig = eGLConfigArr[0];
+        EGLSurface eglCreatePbufferSurface = EGL14.eglCreatePbufferSurface(eglGetDisplay, eGLConfig, new int[]{12375, 64, 12374, 64, 12344}, 0);
+        EGLContext eglCreateContext = EGL14.eglCreateContext(eglGetDisplay, eGLConfig, EGL14.EGL_NO_CONTEXT, new int[]{12440, 2, 12344}, 0);
+        EGL14.eglMakeCurrent(eglGetDisplay, eglCreatePbufferSurface, eglCreatePbufferSurface, eglCreateContext);
+        int[] iArr3 = new int[1];
+        GLES20.glGetIntegerv(3379, iArr3, 0);
+        EGLSurface eGLSurface = EGL14.EGL_NO_SURFACE;
+        EGL14.eglMakeCurrent(eglGetDisplay, eGLSurface, eGLSurface, EGL14.EGL_NO_CONTEXT);
+        EGL14.eglDestroySurface(eglGetDisplay, eglCreatePbufferSurface);
+        EGL14.eglDestroyContext(eglGetDisplay, eglCreateContext);
+        EGL14.eglTerminate(eglGetDisplay);
+        return iArr3[0];
     }
 
-    public static yq.a b(h hVar) {
-        if (hVar instanceof yq.a) {
-            return (yq.a) hVar;
-        }
-        return new c((h) g.b(hVar));
-    }
-
-    public static h c(h hVar) {
-        g.b(hVar);
-        if (hVar instanceof c) {
-            return hVar;
-        }
-        return new c(hVar);
-    }
-
-    private static Object d(Object obj, Object obj2) {
-        if (obj != f56175c) {
-            if (obj == obj2) {
-                return obj2;
-            }
-            throw new IllegalStateException("Scoped provider was invoked recursively returning different results: " + obj + " & " + obj2 + ". This is likely due to a circular dependency.");
-        }
-        return obj2;
-    }
-
-    @Override // javax.inject.Provider
-    public Object get() {
-        Object obj = this.f56177b;
-        if (obj == f56175c) {
+    public static int b() {
+        try {
             return a();
+        } catch (Exception e10) {
+            Log.d("EglUtils", "getMaxTextureSize: ", e10);
+            return 0;
         }
-        return obj;
     }
 }

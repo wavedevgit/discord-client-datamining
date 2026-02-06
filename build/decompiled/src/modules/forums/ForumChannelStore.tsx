@@ -115,13 +115,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var2.setChannelState = var3;
         var3 = function(arg0) { // Environment: var1
-            _fun89534: for (var _fun89534_ip = 0;;) switch (_fun89534_ip) {
+            _fun89547: for (var _fun89547_ip = 0;;) switch (_fun89547_ip) {
                 case 0:
                     var5 = arg0;
                     var1 = null;
                     if (!(var1 != var5)) {
-                        _fun89534_ip = 168;
-                        continue _fun89534
+                        _fun89547_ip = 168;
+                        continue _fun89547
                     }
                 case 12:
                     var2 = _closure2_slot0;
@@ -130,8 +130,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var0.channelStates;
                     var0 = var0[var5];
                     if (!(var1 == var0)) {
-                        _fun89534_ip = 166;
-                        continue _fun89534
+                        _fun89547_ip = 166;
+                        continue _fun89547
                     }
                 case 45:
                     var4 = _closure1_slot4;
@@ -170,7 +170,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var2.getChannelState = var3;
         var3 = function(arg0, arg1) { // Environment: var1
-            _fun89535: for (var _fun89535_ip = 0;;) switch (_fun89535_ip) {
+            _fun89548: for (var _fun89548_ip = 0;;) switch (_fun89548_ip) {
                 case 0:
                     var3 = arg0;
                     var4 = arg1;
@@ -192,14 +192,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var2.has;
                     var1 = var1.bind(var2)(var4);
                     if (var1) {
-                        _fun89535_ip = 83;
-                        continue _fun89535
+                        _fun89548_ip = 83;
+                        continue _fun89548
                     }
                 case 71:
                     var1 = var2.add;
                     var1 = var1.bind(var2)(var4);
-                    _fun89535_ip = 93;
-                    continue _fun89535;
+                    _fun89548_ip = 93;
+                    continue _fun89548;
                 case 83:
                     var1 = var2.delete;
                     var1 = var1.bind(var2)(var4);
@@ -333,7 +333,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/forums/ForumChannelStore.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0) { // Environment: var1
-        _fun89542: for (var _fun89542_ip = 0;;) switch (_fun89542_ip) {
+        _fun89555: for (var _fun89555_ip = 0;;) switch (_fun89555_ip) {
             case 0:
                 var3 = arg0;
                 var _closure2_slot0 = var3;
@@ -359,14 +359,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var5.bind(var6)(var4, var0);
                 var0 = null;
                 if (!(var0 != var4)) {
-                    _fun89542_ip = 91;
-                    continue _fun89542
+                    _fun89555_ip = 91;
+                    continue _fun89555
                 }
             case 78:
                 var0 = var2.getChannelState;
                 var0 = var0.bind(var2)(var3);
-                _fun89542_ip = 95;
-                continue _fun89542;
+                _fun89555_ip = 95;
+                continue _fun89555;
             case 91:
                 var0 = _closure1_slot6;
             case 95:
@@ -380,4 +380,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useForumChannelStoreApi = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7, 6, 1372, 1382, 1381, 1383, 802, 44, 6495, 629, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7, 6, 1372, 1382, 1381, 1383, 802, 44, 6499, 629, 566, 2]);

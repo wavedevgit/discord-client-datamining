@@ -1,34 +1,50 @@
 package pg;
 
-import android.os.IBinder;
-import android.os.IInterface;
 import android.os.Parcel;
+import android.os.Parcelable;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class h7 extends a implements j9 {
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public h7(IBinder iBinder) {
-        super(iBinder, "com.google.android.gms.vision.text.internal.client.INativeTextRecognizerCreator");
-    }
-
-    @Override // pg.j9
-    public final g6 w0(sf.a aVar, oe oeVar) {
-        g6 g6Var;
-        Parcel e10 = e();
-        b1.b(e10, aVar);
-        b1.a(e10, oeVar);
-        Parcel f10 = f(1, e10);
-        IBinder readStrongBinder = f10.readStrongBinder();
-        if (readStrongBinder == null) {
-            g6Var = null;
-        } else {
-            IInterface queryLocalInterface = readStrongBinder.queryLocalInterface("com.google.android.gms.vision.text.internal.client.INativeTextRecognizer");
-            if (queryLocalInterface instanceof g6) {
-                g6Var = (g6) queryLocalInterface;
-            } else {
-                g6Var = new g6(readStrongBinder);
+public final class h7 implements Parcelable.Creator {
+    @Override // android.os.Parcelable.Creator
+    public final /* bridge */ /* synthetic */ Object createFromParcel(Parcel parcel) {
+        int A = hf.b.A(parcel);
+        int i10 = 0;
+        int i11 = 0;
+        int i12 = 0;
+        boolean z10 = false;
+        boolean z11 = false;
+        float f10 = -1.0f;
+        while (parcel.dataPosition() < A) {
+            int r10 = hf.b.r(parcel);
+            switch (hf.b.l(r10)) {
+                case 2:
+                    i10 = hf.b.t(parcel, r10);
+                    break;
+                case 3:
+                    i11 = hf.b.t(parcel, r10);
+                    break;
+                case 4:
+                    i12 = hf.b.t(parcel, r10);
+                    break;
+                case 5:
+                    z10 = hf.b.m(parcel, r10);
+                    break;
+                case 6:
+                    z11 = hf.b.m(parcel, r10);
+                    break;
+                case 7:
+                    f10 = hf.b.q(parcel, r10);
+                    break;
+                default:
+                    hf.b.z(parcel, r10);
+                    break;
             }
         }
-        f10.recycle();
-        return g6Var;
+        hf.b.k(parcel, A);
+        return new g6(i10, i11, i12, z10, z11, f10);
+    }
+
+    @Override // android.os.Parcelable.Creator
+    public final /* synthetic */ Object[] newArray(int i10) {
+        return new g6[i10];
     }
 }

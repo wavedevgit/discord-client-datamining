@@ -1,81 +1,183 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun24157: for (var _fun24157_ip = 0;;) switch (_fun24157_ip) {
-        case 0:
-            var1 = exports;
-            var0 = global;
-            var4 = var0.Object;
-            var3 = var4.defineProperty;
-            var2 = {};
-            var0 = true;
-            var2.value = var0;
-            var0 = '__esModule';
-            var0 = var3.bind(var4)(var1, var0, var2);
-            var0 = undefined;
-            var1.default = var0;
-            var3 = dependencyMap;
-            var2 = 0;
-            var3 = var3[var2];
-            var2 = require;
-            var4 = var2.bind(var0)(var3);
-            if (!var4) {
-                _fun24157_ip = 75;
-                continue _fun24157
-            }
-        case 63:
-            var2 = var4.__esModule;
-            var3 = var4;
-            if (var2) {
-                _fun24157_ip = 84;
-                continue _fun24157
-            }
-        case 75:
-            var2 = {};
-            var2.default = var4;
-            var3 = var2;
-        case 84:
-            var2 = {};
-            var6 = var3.default;
-            var4 = {};
-            var5 = {
-                'full': 'EEEE, do MMMM, y',
-                'long': 'do MMMM, y',
-                'medium': 'd MMM, y',
-                'short': 'dd/MM/yyyy'
-            };
-            var4.formats = var5;
-            var5 = 'full';
-            var4.defaultWidth = var5;
-            var4 = var6.bind(var0)(var4);
-            var2.date = var4;
-            var6 = var3.default;
-            var4 = {};
-            var7 = {
-                'full': 'h:mm:ss a zzzz',
-                'long': 'h:mm:ss a z',
-                'medium': 'h:mm:ss a',
-                'short': 'h:mm a'
-            };
-            var4.formats = var7;
-            var4.defaultWidth = var5;
-            var4 = var6.bind(var0)(var4);
-            var2.time = var4;
-            var4 = var3.default;
-            var3 = {};
-            var6 = {
-                'full': "{{date}} 'को' {{time}}",
-                'long': "{{date}} 'को' {{time}}",
-                'medium': '{{date}}, {{time}}',
-                'short': '{{date}}, {{time}}'
-            };
-            var3.formats = var6;
-            var3.defaultWidth = var5;
-            var3 = var4.bind(var0)(var3);
-            var2.dateTime = var3;
-            var1.default = var2;
-            var2 = var1.default;
-            var1 = module;
-            var1.exports = var2;
-            return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1690]);
+    var1 = exports;
+    var0 = require;
+    var _closure1_slot0 = var0;
+    var0 = dependencyMap;
+    var _closure1_slot1 = var0;
+    var0 = global;
+    var5 = var0.Object;
+    var4 = var5.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var4.bind(var5)(var1, var0, var3);
+    var0 = undefined;
+    var1.default = var0;
+    var3 = {};
+    var4 = {
+        'one': '१ सेकंड से कम',
+        'other': '{{count}} सेकंड से कम'
+    };
+    var3.lessThanXSeconds = var4;
+    var4 = {
+        'one': '१ सेकंड',
+        'other': '{{count}} सेकंड'
+    };
+    var3.xSeconds = var4;
+    var4 = 'आधा मिनट';
+    var3.halfAMinute = var4;
+    var4 = {
+        'one': '१ मिनट से कम',
+        'other': '{{count}} मिनट से कम'
+    };
+    var3.lessThanXMinutes = var4;
+    var4 = {
+        'one': '१ मिनट',
+        'other': '{{count}} मिनट'
+    };
+    var3.xMinutes = var4;
+    var4 = {
+        'one': 'लगभग १ घंटा',
+        'other': 'लगभग {{count}} घंटे'
+    };
+    var3.aboutXHours = var4;
+    var4 = {
+        'one': '१ घंटा',
+        'other': '{{count}} घंटे'
+    };
+    var3.xHours = var4;
+    var4 = {
+        'one': '१ दिन',
+        'other': '{{count}} दिन'
+    };
+    var3.xDays = var4;
+    var4 = {
+        'one': 'लगभग १ सप्ताह',
+        'other': 'लगभग {{count}} सप्ताह'
+    };
+    var3.aboutXWeeks = var4;
+    var4 = {
+        'one': '१ सप्ताह',
+        'other': '{{count}} सप्ताह'
+    };
+    var3.xWeeks = var4;
+    var4 = {
+        'one': 'लगभग १ महीना',
+        'other': 'लगभग {{count}} महीने'
+    };
+    var3.aboutXMonths = var4;
+    var4 = {
+        'one': '१ महीना',
+        'other': '{{count}} महीने'
+    };
+    var3.xMonths = var4;
+    var4 = {
+        'one': 'लगभग १ वर्ष',
+        'other': 'लगभग {{count}} वर्ष'
+    };
+    var3.aboutXYears = var4;
+    var4 = {
+        'one': '१ वर्ष',
+        'other': '{{count}} वर्ष'
+    };
+    var3.xYears = var4;
+    var4 = {
+        'one': '१ वर्ष से अधिक',
+        'other': '{{count}} वर्ष से अधिक'
+    };
+    var3.overXYears = var4;
+    var4 = {
+        'one': 'लगभग १ वर्ष',
+        'other': 'लगभग {{count}} वर्ष'
+    };
+    var3.almostXYears = var4;
+    var _closure1_slot2 = var3;
+    var2 = function arg0, arg1, arg2() {
+        _fun24153: for (var _fun24153_ip = 0;;) switch (_fun24153_ip) {
+            case 0:
+                var7 = arg1;
+                var1 = arg2;
+                var3 = _closure1_slot2;
+                var2 = arg0;
+                var2 = var3[var2];
+                var5 = 'string';
+                var4 = typeof var2;
+                var3 = var2;
+                if (!(var5 !== var4)) {
+                    _fun24153_ip = 107;
+                    continue _fun24153
+                }
+            case 34:
+                var4 = 1;
+                if (!(var4 !== var7)) {
+                    _fun24153_ip = 98;
+                    continue _fun24153
+                }
+            case 41:
+                var6 = var2.other;
+                var5 = var6.replace;
+                var8 = _closure1_slot0;
+                var4 = _closure1_slot1;
+                var0 = 0;
+                var0 = var4[var0];
+                var4 = undefined;
+                var0 = var8.bind(var4)(var0);
+                var0 = var0.numberToLocale;
+                var4 = var0.bind(var4)(var7);
+                var0 = '{{count}}';
+                var0 = var5.bind(var6)(var0, var4);
+                _fun24153_ip = 104;
+                continue _fun24153;
+            case 98:
+                var0 = var2.one;
+            case 104:
+                var3 = var0;
+            case 107:
+                var2 = null;
+                var0 = var3;
+                if (!(var2 != var1)) {
+                    _fun24153_ip = 174;
+                    continue _fun24153
+                }
+            case 116:
+                var2 = var1.addSuffix;
+                var0 = var3;
+                if (!var2) {
+                    _fun24153_ip = 174;
+                    continue _fun24153
+                }
+            case 128:
+                var2 = var1.comparison;
+                if (!var2) {
+                    _fun24153_ip = 149;
+                    continue _fun24153
+                }
+            case 137:
+                var2 = var1.comparison;
+                var1 = 0;
+                if (!(!(var2 > var1))) {
+                    _fun24153_ip = 161;
+                    continue _fun24153
+                }
+            case 149:
+                var1 = ' पहले';
+                var1 = var3 + var1;
+                _fun24153_ip = 171;
+                continue _fun24153;
+            case 161:
+                var2 = 'मे ';
+                var1 = var3 + var2;
+            case 171:
+                var0 = var1;
+            case 174:
+                return var0;
+        }
+    };
+    var1.default = var2;
+    var2 = var1.default;
+    var1 = arg4;
+    var1.exports = var2;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3041]);

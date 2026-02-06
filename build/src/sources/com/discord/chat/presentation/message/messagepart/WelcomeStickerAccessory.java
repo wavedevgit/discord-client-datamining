@@ -25,7 +25,7 @@ public final class WelcomeStickerAccessory extends MessageAccessory {
             kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r8, r0)
             java.lang.String r0 = "sticker"
             kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r9, r0)
-            java.lang.String r2 = r8.m239getId3Eiw7ao()
+            java.lang.String r2 = r8.m237getId3Eiw7ao()
             long r0 = r9.getId()
             java.lang.StringBuilder r3 = new java.lang.StringBuilder
             r3.<init>()

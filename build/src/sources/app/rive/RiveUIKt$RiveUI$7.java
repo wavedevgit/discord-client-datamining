@@ -18,8 +18,8 @@ import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlinx.coroutines.CoroutineScope;
 import org.jetbrains.annotations.NotNull;
-import ur.b;
 import w0.q;
+import wr.b;
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
 @e(c = "app.rive.RiveUIKt$RiveUI$7", f = "RiveUI.kt", l = {234}, m = "invokeSuspend")
 @SourceDebugExtension({"SMAP\nRiveUI.kt\nKotlin\n*S Kotlin\n*F\n+ 1 RiveUI.kt\napp/rive/RiveUIKt$RiveUI$7\n+ 2 RiveLog.kt\napp/rive/RiveLog\n*L\n1#1,310:1\n57#2:311\n*S KotlinDebug\n*F\n+ 1 RiveUI.kt\napp/rive/RiveUIKt$RiveUI$7\n*L\n231#1:311\n*E\n"})
@@ -89,7 +89,7 @@ final class RiveUIKt$RiveUI$7 extends k implements Function2<CoroutineScope, Con
             /*
                 r20 = this;
                 r0 = r20
-                java.lang.Object r1 = ur.b.f()
+                java.lang.Object r1 = wr.b.f()
                 int r2 = r0.label
                 r3 = 1
                 if (r2 == 0) goto L23
@@ -159,7 +159,7 @@ final class RiveUIKt$RiveUI$7 extends k implements Function2<CoroutineScope, Con
                 r10.m125drawPOUf8go(r11, r13, r15, r16, r17, r18)
                 goto L48
             L93:
-                kotlin.Unit r1 = kotlin.Unit.f31988a
+                kotlin.Unit r1 = kotlin.Unit.f32008a
                 return r1
             */
             throw new UnsupportedOperationException("Method not decompiled: app.rive.RiveUIKt$RiveUI$7.AnonymousClass2.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -167,7 +167,7 @@ final class RiveUIKt$RiveUI$7 extends k implements Function2<CoroutineScope, Con
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(@NotNull CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+            return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
         }
     }
 
@@ -213,21 +213,21 @@ final class RiveUIKt$RiveUI$7 extends k implements Function2<CoroutineScope, Con
                         return "Surface is null, skipping drawing";
                     }
                 });
-                return Unit.f31988a;
+                return Unit.f32008a;
             }
             Lifecycle lifecycle = this.$lifecycleOwner.getLifecycle();
-            Lifecycle.State state = Lifecycle.State.f4521p;
+            Lifecycle.State state = Lifecycle.State.f4850p;
             AnonymousClass2 anonymousClass2 = new AnonymousClass2(this.$commandQueue, this.$stateMachineHandle, this.$artboardHandle, this.$fit, this.$alignment, this.$clearColor, this.$isSettled$delegate, this.$surface$delegate, null);
             this.label = 1;
             if (z.a(lifecycle, state, anonymousClass2, this) == f10) {
                 return f10;
             }
         }
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(@NotNull CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((RiveUIKt$RiveUI$7) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+        return ((RiveUIKt$RiveUI$7) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
     }
 }

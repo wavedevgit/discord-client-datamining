@@ -10,7 +10,7 @@ import java.util.Set;
 public class ImageCaptureFailedForVideoSnapshotQuirk implements y1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Set f2032a = new HashSet(Arrays.asList("itel l6006", "itel w6004", "moto g(20)", "moto e13", "moto e20", "rmx3231", "rmx3511", "sm-a032f", "sm-a035m", "tecno mobile bf6"));
+    private static final Set f2361a = new HashSet(Arrays.asList("itel l6006", "itel w6004", "moto g(20)", "moto e13", "moto e20", "rmx3231", "rmx3511", "sm-a032f", "sm-a035m", "tecno mobile bf6"));
 
     private static boolean c() {
         if ("HUAWEI".equalsIgnoreCase(Build.BRAND) && "FIG-LX1".equalsIgnoreCase(Build.MODEL)) {
@@ -21,7 +21,7 @@ public class ImageCaptureFailedForVideoSnapshotQuirk implements y1 {
 
     private static boolean d() {
         String str;
-        Set set = f2032a;
+        Set set = f2361a;
         String str2 = Build.MODEL;
         Locale locale = Locale.US;
         if (!set.contains(str2.toLowerCase(locale))) {

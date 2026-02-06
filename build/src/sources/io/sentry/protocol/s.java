@@ -13,25 +13,25 @@ import java.util.Map;
 public final class s implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private String f29459d;
+    private String f28603d;
 
     /* renamed from: e  reason: collision with root package name */
-    private String f29460e;
+    private String f28604e;
 
     /* renamed from: i  reason: collision with root package name */
-    private String f29461i;
+    private String f28605i;
 
     /* renamed from: o  reason: collision with root package name */
-    private Long f29462o;
+    private Long f28606o;
 
     /* renamed from: p  reason: collision with root package name */
-    private b0 f29463p;
+    private b0 f28607p;
 
     /* renamed from: q  reason: collision with root package name */
-    private l f29464q;
+    private l f28608q;
 
     /* renamed from: r  reason: collision with root package name */
-    private Map f29465r;
+    private Map f28609r;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -39,45 +39,45 @@ public final class s implements w1 {
         /* renamed from: b */
         public s a(e3 e3Var, ILogger iLogger) {
             s sVar = new s();
-            e3Var.s();
+            e3Var.u();
             HashMap hashMap = null;
             while (e3Var.peek() == io.sentry.vendor.gson.stream.b.NAME) {
-                String m02 = e3Var.m0();
-                m02.getClass();
+                String o02 = e3Var.o0();
+                o02.getClass();
                 char c10 = 65535;
-                switch (m02.hashCode()) {
+                switch (o02.hashCode()) {
                     case -1562235024:
-                        if (m02.equals("thread_id")) {
+                        if (o02.equals("thread_id")) {
                             c10 = 0;
                             break;
                         }
                         break;
                     case -1068784020:
-                        if (m02.equals("module")) {
+                        if (o02.equals("module")) {
                             c10 = 1;
                             break;
                         }
                         break;
                     case 3575610:
-                        if (m02.equals("type")) {
+                        if (o02.equals("type")) {
                             c10 = 2;
                             break;
                         }
                         break;
                     case 111972721:
-                        if (m02.equals("value")) {
+                        if (o02.equals("value")) {
                             c10 = 3;
                             break;
                         }
                         break;
                     case 1225089881:
-                        if (m02.equals("mechanism")) {
+                        if (o02.equals("mechanism")) {
                             c10 = 4;
                             break;
                         }
                         break;
                     case 2055832509:
-                        if (m02.equals("stacktrace")) {
+                        if (o02.equals("stacktrace")) {
                             c10 = 5;
                             break;
                         }
@@ -85,116 +85,116 @@ public final class s implements w1 {
                 }
                 switch (c10) {
                     case 0:
-                        sVar.f29462o = e3Var.m1();
+                        sVar.f28606o = e3Var.l1();
                         break;
                     case 1:
-                        sVar.f29461i = e3Var.r1();
+                        sVar.f28605i = e3Var.q1();
                         break;
                     case 2:
-                        sVar.f29459d = e3Var.r1();
+                        sVar.f28603d = e3Var.q1();
                         break;
                     case 3:
-                        sVar.f29460e = e3Var.r1();
+                        sVar.f28604e = e3Var.q1();
                         break;
                     case 4:
-                        sVar.f29464q = (l) e3Var.G0(iLogger, new l.a());
+                        sVar.f28608q = (l) e3Var.G0(iLogger, new l.a());
                         break;
                     case 5:
-                        sVar.f29463p = (b0) e3Var.G0(iLogger, new b0.a());
+                        sVar.f28607p = (b0) e3Var.G0(iLogger, new b0.a());
                         break;
                     default:
                         if (hashMap == null) {
                             hashMap = new HashMap();
                         }
-                        e3Var.v1(iLogger, hashMap, m02);
+                        e3Var.u1(iLogger, hashMap, o02);
                         break;
                 }
             }
-            e3Var.z();
+            e3Var.D();
             sVar.r(hashMap);
             return sVar;
         }
     }
 
     public l g() {
-        return this.f29464q;
+        return this.f28608q;
     }
 
     public String h() {
-        return this.f29461i;
+        return this.f28605i;
     }
 
     public b0 i() {
-        return this.f29463p;
+        return this.f28607p;
     }
 
     public Long j() {
-        return this.f29462o;
+        return this.f28606o;
     }
 
     public String k() {
-        return this.f29459d;
+        return this.f28603d;
     }
 
     public String l() {
-        return this.f29460e;
+        return this.f28604e;
     }
 
     public void m(l lVar) {
-        this.f29464q = lVar;
+        this.f28608q = lVar;
     }
 
     public void n(String str) {
-        this.f29461i = str;
+        this.f28605i = str;
     }
 
     public void o(b0 b0Var) {
-        this.f29463p = b0Var;
+        this.f28607p = b0Var;
     }
 
     public void p(Long l10) {
-        this.f29462o = l10;
+        this.f28606o = l10;
     }
 
     public void q(String str) {
-        this.f29459d = str;
+        this.f28603d = str;
     }
 
     public void r(Map map) {
-        this.f29465r = map;
+        this.f28609r = map;
     }
 
     public void s(String str) {
-        this.f29460e = str;
+        this.f28604e = str;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
-        f3Var.s();
-        if (this.f29459d != null) {
-            f3Var.e("type").f(this.f29459d);
+        f3Var.u();
+        if (this.f28603d != null) {
+            f3Var.e("type").f(this.f28603d);
         }
-        if (this.f29460e != null) {
-            f3Var.e("value").f(this.f29460e);
+        if (this.f28604e != null) {
+            f3Var.e("value").f(this.f28604e);
         }
-        if (this.f29461i != null) {
-            f3Var.e("module").f(this.f29461i);
+        if (this.f28605i != null) {
+            f3Var.e("module").f(this.f28605i);
         }
-        if (this.f29462o != null) {
-            f3Var.e("thread_id").i(this.f29462o);
+        if (this.f28606o != null) {
+            f3Var.e("thread_id").i(this.f28606o);
         }
-        if (this.f29463p != null) {
-            f3Var.e("stacktrace").j(iLogger, this.f29463p);
+        if (this.f28607p != null) {
+            f3Var.e("stacktrace").j(iLogger, this.f28607p);
         }
-        if (this.f29464q != null) {
-            f3Var.e("mechanism").j(iLogger, this.f29464q);
+        if (this.f28608q != null) {
+            f3Var.e("mechanism").j(iLogger, this.f28608q);
         }
-        Map map = this.f29465r;
+        Map map = this.f28609r;
         if (map != null) {
             for (String str : map.keySet()) {
-                f3Var.e(str).j(iLogger, this.f29465r.get(str));
+                f3Var.e(str).j(iLogger, this.f28609r.get(str));
             }
         }
-        f3Var.z();
+        f3Var.D();
     }
 }

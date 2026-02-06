@@ -6,24 +6,24 @@ import java.util.Objects;
 public final class c1 extends r0 {
 
     /* renamed from: g  reason: collision with root package name */
-    final /* synthetic */ c f24774g;
+    final /* synthetic */ c f25027g;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public c1(c cVar, int i10, Bundle bundle) {
         super(cVar, i10, bundle);
         Objects.requireNonNull(cVar);
-        this.f24774g = cVar;
+        this.f25027g = cVar;
     }
 
     @Override // gf.r0
     protected final boolean e() {
-        this.f24774g.A.a(com.google.android.gms.common.b.f13792q);
+        this.f25027g.A.a(com.google.android.gms.common.b.f13747q);
         return true;
     }
 
     @Override // gf.r0
     protected final void f(com.google.android.gms.common.b bVar) {
-        c cVar = this.f24774g;
+        c cVar = this.f25027g;
         if (cVar.s() && cVar.X()) {
             cVar.W(16);
             return;

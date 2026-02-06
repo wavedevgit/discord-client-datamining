@@ -3,7 +3,8 @@ package com.withpersona.sdk2.inquiry.internal;
 import android.content.Context;
 import android.os.Parcel;
 import android.os.Parcelable;
-import bo.r2;
+import bn.k;
+import bn.r;
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
 import com.withpersona.sdk2.inquiry.StaticInquiryTemplate;
 import com.withpersona.sdk2.inquiry.governmentid.video_capture.VideoCaptureConfig;
@@ -32,15 +33,15 @@ import com.withpersona.sdk2.inquiry.network.dto.PendingPageTextPositionKt;
 import com.withpersona.sdk2.inquiry.network.dto.government_id.Id;
 import com.withpersona.sdk2.inquiry.network.dto.ui.styling.StepStyle;
 import com.withpersona.sdk2.inquiry.network.dto.ui.styling.StepStyles;
-import ho.c4;
-import ho.g3;
-import ip.c;
+import eo.r2;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import jo.c4;
+import jo.g3;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
 import kotlin.coroutines.Continuation;
@@ -53,81 +54,80 @@ import kotlin.jvm.internal.Reflection;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.flow.Flow;
 import kotlinx.coroutines.flow.FlowCollector;
-import kp.a1;
-import kp.d2;
-import kp.e2;
-import kp.m1;
-import kp.x5;
-import ms.i0;
-import nq.v4;
+import kp.c;
+import mp.a1;
+import mp.d2;
+import mp.e2;
+import mp.m1;
+import mp.x5;
 import okio.ByteString;
 import org.jetbrains.annotations.NotNull;
-import ro.b;
-import so.b2;
-import so.j2;
-import so.l2;
-import tp.a;
-import zm.k;
-import zm.r;
+import os.i0;
+import pq.v4;
+import to.b;
+import uo.b2;
+import uo.j2;
+import uo.l2;
+import vp.a;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class n extends zm.k {
+public final class n extends bn.k {
 
     /* renamed from: s  reason: collision with root package name */
-    public static final a f19060s = new a(null);
+    public static final a f19040s = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f19061a;
+    private final Context f19041a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final c.a f19062b;
+    private final c.a f19042b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final a.InterfaceC0243a f19063c;
+    private final a.InterfaceC0235a f19043c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final q.b f19064d;
+    private final q.b f19044d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final u.a f19065e;
+    private final u.a f19045e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final x.a f19066f;
+    private final x.a f19046f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final a0.a f19067g;
+    private final a0.a f19047g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final f.a f19068h;
+    private final f.a f19048h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final g3 f19069i;
+    private final g3 f19049i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final x5 f19070j;
+    private final x5 f19050j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final v4 f19071k;
+    private final v4 f19051k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final r2 f19072l;
+    private final r2 f19052l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final ip.c f19073m;
+    private final kp.c f19053m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final tp.e f19074n;
+    private final vp.e f19054n;
 
     /* renamed from: o  reason: collision with root package name */
-    private final xp.b f19075o;
+    private final zp.b f19055o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final tp.c f19076p;
+    private final vp.c f19056p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final l2 f19077q;
+    private final l2 f19057q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final s.a f19078r;
+    private final s.a f19058r;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -153,33 +153,33 @@ public final class n extends zm.k {
         public static final class b extends d {
 
             /* renamed from: a  reason: collision with root package name */
-            private final StepStyle f19118a;
+            private final StepStyle f19098a;
 
             /* renamed from: b  reason: collision with root package name */
-            private final boolean f19119b;
+            private final boolean f19099b;
 
             /* renamed from: c  reason: collision with root package name */
-            private final Function0 f19120c;
+            private final Function0 f19100c;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public b(StepStyle stepStyle, boolean z10, Function0 onBack) {
                 super(null);
                 Intrinsics.checkNotNullParameter(onBack, "onBack");
-                this.f19118a = stepStyle;
-                this.f19119b = z10;
-                this.f19120c = onBack;
+                this.f19098a = stepStyle;
+                this.f19099b = z10;
+                this.f19100c = onBack;
             }
 
             public final Function0 a() {
-                return this.f19120c;
+                return this.f19100c;
             }
 
             public final StepStyle b() {
-                return this.f19118a;
+                return this.f19098a;
             }
 
             public final boolean c() {
-                return this.f19119b;
+                return this.f19099b;
             }
         }
 
@@ -195,13 +195,13 @@ public final class n extends zm.k {
     public /* synthetic */ class e {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f19121a;
+        public static final /* synthetic */ int[] f19101a;
 
         /* renamed from: b  reason: collision with root package name */
-        public static final /* synthetic */ int[] f19122b;
+        public static final /* synthetic */ int[] f19102b;
 
         /* renamed from: c  reason: collision with root package name */
-        public static final /* synthetic */ int[] f19123c;
+        public static final /* synthetic */ int[] f19103c;
 
         static {
             int[] iArr = new int[NextStep.Selfie.CaptureMethod.values().length];
@@ -217,17 +217,17 @@ public final class n extends zm.k {
                 iArr[NextStep.Selfie.CaptureMethod.CONFIGURABLE_POSES.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
-            f19121a = iArr;
+            f19101a = iArr;
             int[] iArr2 = new int[b2.values().length];
             try {
-                iArr2[b2.f50035d.ordinal()] = 1;
+                iArr2[b2.f51881d.ordinal()] = 1;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                iArr2[b2.f50036e.ordinal()] = 2;
+                iArr2[b2.f51882e.ordinal()] = 2;
             } catch (NoSuchFieldError unused5) {
             }
-            f19122b = iArr2;
+            f19102b = iArr2;
             int[] iArr3 = new int[NextStep.Document.StartPage.values().length];
             try {
                 iArr3[NextStep.Document.StartPage.PROMPT.ordinal()] = 1;
@@ -237,7 +237,7 @@ public final class n extends zm.k {
                 iArr3[NextStep.Document.StartPage.REVIEW.ordinal()] = 2;
             } catch (NoSuchFieldError unused7) {
             }
-            f19123c = iArr3;
+            f19103c = iArr3;
         }
     }
 
@@ -246,60 +246,60 @@ public final class n extends zm.k {
     public static final class f extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f19124d;
+        int f19104d;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ k.a f19126i;
+        final /* synthetic */ k.a f19106i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ l f19127o;
+        final /* synthetic */ l f19107o;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements FlowCollector {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ k.a f19128d;
+            final /* synthetic */ k.a f19108d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ n f19129e;
+            final /* synthetic */ n f19109e;
 
             /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ l f19130i;
+            final /* synthetic */ l f19110i;
 
             a(k.a aVar, n nVar, l lVar) {
-                this.f19128d = aVar;
-                this.f19129e = nVar;
-                this.f19130i = lVar;
+                this.f19108d = aVar;
+                this.f19109e = nVar;
+                this.f19110i = lVar;
             }
 
             @Override // kotlinx.coroutines.flow.FlowCollector
             /* renamed from: a */
-            public final Object emit(tp.a aVar, Continuation continuation) {
-                if (aVar instanceof a.C0653a) {
-                    n.n0(this.f19128d, this.f19129e, this.f19130i, ((a.C0653a) aVar).a());
-                    return Unit.f31988a;
+            public final Object emit(vp.a aVar, Continuation continuation) {
+                if (aVar instanceof a.C0699a) {
+                    n.n0(this.f19108d, this.f19109e, this.f19110i, ((a.C0699a) aVar).a());
+                    return Unit.f32008a;
                 }
-                throw new or.p();
+                throw new qr.p();
             }
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         f(k.a aVar, l lVar, Continuation continuation) {
             super(2, continuation);
-            this.f19126i = aVar;
-            this.f19127o = lVar;
+            this.f19106i = aVar;
+            this.f19107o = lVar;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new f(this.f19126i, this.f19127o, continuation);
+            return new f(this.f19106i, this.f19107o, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            Object f10 = ur.b.f();
-            int i10 = this.f19124d;
+            Object f10 = wr.b.f();
+            int i10 = this.f19104d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -308,19 +308,19 @@ public final class n extends zm.k {
                 }
             } else {
                 kotlin.c.b(obj);
-                Flow c10 = n.this.f19074n.c();
-                a aVar = new a(this.f19126i, n.this, this.f19127o);
-                this.f19124d = 1;
+                Flow c10 = n.this.f19054n.c();
+                a aVar = new a(this.f19106i, n.this, this.f19107o);
+                this.f19104d = 1;
                 if (c10.collect(aVar, this) == f10) {
                     return f10;
                 }
             }
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((f) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+            return ((f) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
         }
     }
 
@@ -329,44 +329,44 @@ public final class n extends zm.k {
     public static final class g extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f19131d;
+        int f19111d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ k.a f19132e;
+        final /* synthetic */ k.a f19112e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ n f19133i;
+        final /* synthetic */ n f19113i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ l f19134o;
+        final /* synthetic */ l f19114o;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         g(k.a aVar, n nVar, l lVar, Continuation continuation) {
             super(2, continuation);
-            this.f19132e = aVar;
-            this.f19133i = nVar;
-            this.f19134o = lVar;
+            this.f19112e = aVar;
+            this.f19113i = nVar;
+            this.f19114o = lVar;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new g(this.f19132e, this.f19133i, this.f19134o, continuation);
+            return new g(this.f19112e, this.f19113i, this.f19114o, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            ur.b.f();
-            if (this.f19131d == 0) {
+            wr.b.f();
+            if (this.f19111d == 0) {
                 kotlin.c.b(obj);
-                n.n0(this.f19132e, this.f19133i, this.f19134o, true);
-                return Unit.f31988a;
+                n.n0(this.f19112e, this.f19113i, this.f19114o, true);
+                return Unit.f32008a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((g) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+            return ((g) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
         }
     }
 
@@ -375,46 +375,46 @@ public final class n extends zm.k {
     public static final class h extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f19135d;
+        int f19115d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ k.a f19136e;
+        final /* synthetic */ k.a f19116e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ n f19137i;
+        final /* synthetic */ n f19117i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ l.a f19138o;
+        final /* synthetic */ l.a f19118o;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         h(k.a aVar, n nVar, l.a aVar2, Continuation continuation) {
             super(2, continuation);
-            this.f19136e = aVar;
-            this.f19137i = nVar;
-            this.f19138o = aVar2;
+            this.f19116e = aVar;
+            this.f19117i = nVar;
+            this.f19118o = aVar2;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final Unit k(l.a aVar, r.c cVar) {
-            cVar.d(new b.C0252b(aVar.b(), aVar.o(), aVar.n(), aVar.k()));
-            return Unit.f31988a;
+            cVar.d(new b.C0244b(aVar.b(), aVar.p(), aVar.o(), aVar.k()));
+            return Unit.f32008a;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new h(this.f19136e, this.f19137i, this.f19138o, continuation);
+            return new h(this.f19116e, this.f19117i, this.f19118o, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            zm.r d10;
-            ur.b.f();
-            if (this.f19135d == 0) {
+            bn.r d10;
+            wr.b.f();
+            if (this.f19115d == 0) {
                 kotlin.c.b(obj);
-                zm.h c10 = this.f19136e.c();
-                n nVar = this.f19137i;
-                final l.a aVar = this.f19138o;
-                d10 = zm.z.d(nVar, null, new Function1() { // from class: com.withpersona.sdk2.inquiry.internal.o
+                bn.h c10 = this.f19116e.c();
+                n nVar = this.f19117i;
+                final l.a aVar = this.f19118o;
+                d10 = bn.z.d(nVar, null, new Function1() { // from class: com.withpersona.sdk2.inquiry.internal.o
                     @Override // kotlin.jvm.functions.Function1
                     public final Object invoke(Object obj2) {
                         Unit k10;
@@ -423,14 +423,14 @@ public final class n extends zm.k {
                     }
                 }, 1, null);
                 c10.d(d10);
-                return Unit.f31988a;
+                return Unit.f32008a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((h) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+            return ((h) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
         }
     }
 
@@ -439,19 +439,19 @@ public final class n extends zm.k {
     public static final class i extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f19139d;
+        int f19119d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ k.a f19140e;
+        final /* synthetic */ k.a f19120e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ n f19141i;
+        final /* synthetic */ n f19121i;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         i(k.a aVar, n nVar, Continuation continuation) {
             super(2, continuation);
-            this.f19140e = aVar;
-            this.f19141i = nVar;
+            this.f19120e = aVar;
+            this.f19121i = nVar;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -465,22 +465,22 @@ public final class n extends zm.k {
             }
             l.j jVar2 = jVar;
             if (jVar2 == null) {
-                return Unit.f31988a;
+                return Unit.f32008a;
             }
             cVar.e(l.j.l(jVar2, null, null, null, null, null, null, null, null, null, false, false, false, null, null, null, null, null, false, 229375, null));
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new i(this.f19140e, this.f19141i, continuation);
+            return new i(this.f19120e, this.f19121i, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            zm.r d10;
-            Object f10 = ur.b.f();
-            int i10 = this.f19139d;
+            bn.r d10;
+            Object f10 = wr.b.f();
+            int i10 = this.f19119d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -489,13 +489,13 @@ public final class n extends zm.k {
                 }
             } else {
                 kotlin.c.b(obj);
-                this.f19139d = 1;
+                this.f19119d = 1;
                 if (i0.a(2000L, this) == f10) {
                     return f10;
                 }
             }
-            zm.h c10 = this.f19140e.c();
-            d10 = zm.z.d(this.f19141i, null, new Function1() { // from class: com.withpersona.sdk2.inquiry.internal.p
+            bn.h c10 = this.f19120e.c();
+            d10 = bn.z.d(this.f19121i, null, new Function1() { // from class: com.withpersona.sdk2.inquiry.internal.p
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj2) {
                     Unit k10;
@@ -504,16 +504,16 @@ public final class n extends zm.k {
                 }
             }, 1, null);
             c10.d(d10);
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((i) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+            return ((i) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
         }
     }
 
-    public n(Context applicationContext, c.a createInquiryWorker, a.InterfaceC0243a inquirySessionWorker, q.b pollingWorker, u.a transitionBackWorker, x.a transitionWorkerFactory, a0.a updateInquirySessionWorkerFactory, f.a exchangeOneTimeCodeWorkerFactory, g3 governmentIdWorkflow, x5 selfieWorkflow, v4 uiWorkflow, r2 documentWorkflow, ip.c sandboxFlags, tp.e externalInquiryController, xp.b navigationStateManager, tp.c externalEventLogger, l2 uiStepSavedStateHelper, s.a restoreUiStepStateWorkerFactory) {
+    public n(Context applicationContext, c.a createInquiryWorker, a.InterfaceC0235a inquirySessionWorker, q.b pollingWorker, u.a transitionBackWorker, x.a transitionWorkerFactory, a0.a updateInquirySessionWorkerFactory, f.a exchangeOneTimeCodeWorkerFactory, g3 governmentIdWorkflow, x5 selfieWorkflow, v4 uiWorkflow, r2 documentWorkflow, kp.c sandboxFlags, vp.e externalInquiryController, zp.b navigationStateManager, vp.c externalEventLogger, l2 uiStepSavedStateHelper, s.a restoreUiStepStateWorkerFactory) {
         Intrinsics.checkNotNullParameter(applicationContext, "applicationContext");
         Intrinsics.checkNotNullParameter(createInquiryWorker, "createInquiryWorker");
         Intrinsics.checkNotNullParameter(inquirySessionWorker, "inquirySessionWorker");
@@ -532,39 +532,39 @@ public final class n extends zm.k {
         Intrinsics.checkNotNullParameter(externalEventLogger, "externalEventLogger");
         Intrinsics.checkNotNullParameter(uiStepSavedStateHelper, "uiStepSavedStateHelper");
         Intrinsics.checkNotNullParameter(restoreUiStepStateWorkerFactory, "restoreUiStepStateWorkerFactory");
-        this.f19061a = applicationContext;
-        this.f19062b = createInquiryWorker;
-        this.f19063c = inquirySessionWorker;
-        this.f19064d = pollingWorker;
-        this.f19065e = transitionBackWorker;
-        this.f19066f = transitionWorkerFactory;
-        this.f19067g = updateInquirySessionWorkerFactory;
-        this.f19068h = exchangeOneTimeCodeWorkerFactory;
-        this.f19069i = governmentIdWorkflow;
-        this.f19070j = selfieWorkflow;
-        this.f19071k = uiWorkflow;
-        this.f19072l = documentWorkflow;
-        this.f19073m = sandboxFlags;
-        this.f19074n = externalInquiryController;
-        this.f19075o = navigationStateManager;
-        this.f19076p = externalEventLogger;
-        this.f19077q = uiStepSavedStateHelper;
-        this.f19078r = restoreUiStepStateWorkerFactory;
+        this.f19041a = applicationContext;
+        this.f19042b = createInquiryWorker;
+        this.f19043c = inquirySessionWorker;
+        this.f19044d = pollingWorker;
+        this.f19045e = transitionBackWorker;
+        this.f19046f = transitionWorkerFactory;
+        this.f19047g = updateInquirySessionWorkerFactory;
+        this.f19048h = exchangeOneTimeCodeWorkerFactory;
+        this.f19049i = governmentIdWorkflow;
+        this.f19050j = selfieWorkflow;
+        this.f19051k = uiWorkflow;
+        this.f19052l = documentWorkflow;
+        this.f19053m = sandboxFlags;
+        this.f19054n = externalInquiryController;
+        this.f19055o = navigationStateManager;
+        this.f19056p = externalEventLogger;
+        this.f19057q = uiStepSavedStateHelper;
+        this.f19058r = restoreUiStepStateWorkerFactory;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit A0(l.d dVar, r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
         action.e(l.d.l(dVar, null, null, new w.a(null, 1, null), null, null, null, null, null, null, null, 1019, null));
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit A1(n nVar, k.a aVar) {
-        zm.r d10;
-        nVar.f19073m.f();
-        zm.h c10 = aVar.c();
-        d10 = zm.z.d(nVar, null, new Function1() { // from class: so.t1
+        bn.r d10;
+        nVar.f19053m.f();
+        bn.h c10 = aVar.c();
+        d10 = bn.z.d(nVar, null, new Function1() { // from class: uo.t1
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit B1;
@@ -573,15 +573,15 @@ public final class n extends zm.k {
             }
         }, 1, null);
         c10.d(d10);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     private final Object B0(c cVar, final l.e eVar, k.a aVar, Function0 function0) {
-        xp.b.d(this.f19075o, false, false, false, 4, null);
-        zm.w.l(aVar, this.f19068h.a(eVar.j()), Reflection.typeOf(com.withpersona.sdk2.inquiry.internal.f.class), "", new Function1() { // from class: so.w0
+        zp.b.d(this.f19055o, false, false, false, 4, null);
+        bn.w.l(aVar, this.f19048h.a(eVar.j()), Reflection.typeOf(com.withpersona.sdk2.inquiry.internal.f.class), "", new Function1() { // from class: uo.w0
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
-                zm.r C0;
+                bn.r C0;
                 C0 = com.withpersona.sdk2.inquiry.internal.n.C0(com.withpersona.sdk2.inquiry.internal.n.this, eVar, (com.withpersona.sdk2.inquiry.internal.network.d) obj);
                 return C0;
             }
@@ -592,16 +592,16 @@ public final class n extends zm.k {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit B1(r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final zm.r C0(final n nVar, final l.e eVar, final com.withpersona.sdk2.inquiry.internal.network.d it) {
-        zm.r d10;
-        zm.r d11;
+    public static final bn.r C0(final n nVar, final l.e eVar, final com.withpersona.sdk2.inquiry.internal.network.d it) {
+        bn.r d10;
+        bn.r d11;
         Intrinsics.checkNotNullParameter(it, "it");
         if (it instanceof d.b) {
-            d11 = zm.z.d(nVar, null, new Function1() { // from class: so.i0
+            d11 = bn.z.d(nVar, null, new Function1() { // from class: uo.i0
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
                     Unit D0;
@@ -611,7 +611,7 @@ public final class n extends zm.k {
             }, 1, null);
             return d11;
         } else if (it instanceof d.a) {
-            d10 = zm.z.d(nVar, null, new Function1() { // from class: so.j0
+            d10 = bn.z.d(nVar, null, new Function1() { // from class: uo.j0
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
                     Unit E0;
@@ -621,13 +621,13 @@ public final class n extends zm.k {
             }, 1, null);
             return d10;
         } else {
-            throw new or.p();
+            throw new qr.p();
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final c.b C1(n nVar) {
-        return nVar.f19073m.a();
+        return nVar.f19053m.a();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -637,17 +637,17 @@ public final class n extends zm.k {
         if (bVar.b() == null) {
             action.e(new l.c(bVar.a()));
         } else {
-            action.e(new l.i(bVar.b(), new w.a(null, 1, null), bVar.a(), null, true, wp.g.f53236o.a()));
+            action.e(new l.i(bVar.b(), new w.a(null, 1, null), bVar.a(), null, true, yp.g.f55551o.a()));
         }
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit D1(n nVar, k.a aVar, boolean z10) {
-        zm.r d10;
-        nVar.f19073m.e(z10);
-        zm.h c10 = aVar.c();
-        d10 = zm.z.d(nVar, null, new Function1() { // from class: so.a1
+        bn.r d10;
+        nVar.f19053m.e(z10);
+        bn.h c10 = aVar.c();
+        d10 = bn.z.d(nVar, null, new Function1() { // from class: uo.a1
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit E1;
@@ -656,42 +656,42 @@ public final class n extends zm.k {
             }
         }, 1, null);
         c10.d(d10);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit E0(n nVar, l.e eVar, com.withpersona.sdk2.inquiry.internal.network.d dVar, r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
         x1(nVar, action, eVar.k(), ((d.a) dVar).a(), null, 4, null);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit E1(r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     private final Object F0(c cVar, final l.f fVar, k.a aVar) {
         List list;
         NextStep.GovernmentId.AssetConfig assetConfig;
         String e10 = fVar.e();
-        g3 g3Var = this.f19069i;
+        g3 g3Var = this.f19049i;
         String k10 = fVar.k();
-        String s10 = fVar.s();
+        String u10 = fVar.u();
         ArrayList arrayList = new ArrayList();
-        Iterator it = fVar.w().iterator();
+        Iterator it = fVar.A().iterator();
         while (true) {
             String str = "US";
             if (!it.hasNext()) {
                 break;
             }
             Id id2 = (Id) it.next();
-            String s11 = fVar.s();
-            if (s11 != null) {
-                str = s11;
+            String u11 = fVar.u();
+            if (u11 != null) {
+                str = u11;
             }
-            c4 o10 = ho.z.o(id2, str, fVar.G());
+            c4 o10 = jo.z.o(id2, str, fVar.K());
             if (o10 != null) {
                 arrayList.add(o10);
             }
@@ -699,71 +699,71 @@ public final class n extends zm.k {
         String b10 = fVar.b();
         String str2 = "US";
         String e11 = fVar.e();
-        String A = fVar.A();
-        boolean q10 = fVar.q();
+        String E = fVar.E();
         boolean r10 = fVar.r();
-        List v10 = fVar.v();
+        boolean t10 = fVar.t();
+        List x10 = fVar.x();
         StepStyles.GovernmentIdStepStyle styles = fVar.getStyles();
-        int B = fVar.B();
-        String x10 = fVar.x();
-        String z10 = fVar.z();
-        NextStep.GovernmentId.Localizations D = fVar.D();
-        String s12 = fVar.s();
-        if (s12 != null) {
-            str2 = s12;
+        int F = fVar.F();
+        String B = fVar.B();
+        String D = fVar.D();
+        NextStep.GovernmentId.Localizations H = fVar.H();
+        String u12 = fVar.u();
+        if (u12 != null) {
+            str2 = u12;
         }
-        List C = fVar.C();
-        if (C != null) {
-            list = CollectionsKt.V0(C);
+        List G = fVar.G();
+        if (G != null) {
+            list = CollectionsKt.V0(G);
         } else {
             list = null;
         }
-        g3.a.C0361a i10 = yo.a.i(D, str2, list);
-        long G = fVar.G();
+        g3.a.C0428a i10 = ap.a.i(H, str2, list);
+        long K = fVar.K();
         Integer theme = cVar.getTheme();
-        boolean J = fVar.J();
-        List u10 = fVar.u();
-        List<NextStep.GovernmentId.VideoCaptureMethod> M = fVar.M();
-        ArrayList arrayList2 = new ArrayList(CollectionsKt.w(M, 10));
-        for (NextStep.GovernmentId.VideoCaptureMethod videoCaptureMethod : M) {
-            arrayList2.add(yn.a.valueOf(videoCaptureMethod.toString()));
+        boolean N = fVar.N();
+        List w10 = fVar.w();
+        List<NextStep.GovernmentId.VideoCaptureMethod> Q = fVar.Q();
+        ArrayList arrayList2 = new ArrayList(CollectionsKt.w(Q, 10));
+        for (NextStep.GovernmentId.VideoCaptureMethod videoCaptureMethod : Q) {
+            arrayList2.add(ao.a.valueOf(videoCaptureMethod.toString()));
         }
-        VideoCaptureConfig videoCaptureConfig = new VideoCaptureConfig(0L, u10, arrayList2, fVar.O(), fVar.o(), 1, null);
-        NextStep.GovernmentId.AssetConfig n10 = fVar.n();
-        if (n10 == null) {
+        VideoCaptureConfig videoCaptureConfig = new VideoCaptureConfig(0L, w10, arrayList2, fVar.R(), fVar.p(), 1, null);
+        NextStep.GovernmentId.AssetConfig o11 = fVar.o();
+        if (o11 == null) {
             assetConfig = new NextStep.GovernmentId.AssetConfig(null, null, null, null, null, 31, null);
         } else {
-            assetConfig = n10;
+            assetConfig = o11;
         }
-        return aVar.b(g3Var, new g3.a(k10, s10, arrayList, b10, e11, A, q10, r10, v10, styles, i10, B, x10, z10, G, J, theme, videoCaptureConfig, assetConfig, !Intrinsics.areEqual(fVar.f(), w.c.f19390d), fVar.p(), fVar.I(), fVar.H(), fVar.t()), e10, new Function1() { // from class: so.f0
+        return aVar.b(g3Var, new g3.a(k10, u10, arrayList, b10, e11, E, r10, t10, x10, styles, i10, F, B, D, K, N, theme, videoCaptureConfig, assetConfig, !Intrinsics.areEqual(fVar.f(), w.c.f19370d), fVar.q(), fVar.M(), fVar.L(), fVar.v()), e10, new Function1() { // from class: uo.f0
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
-                zm.r G0;
+                bn.r G0;
                 G0 = com.withpersona.sdk2.inquiry.internal.n.G0(com.withpersona.sdk2.inquiry.internal.n.this, fVar, (g3.b) obj);
                 return G0;
             }
         });
     }
 
-    private final zp.k F1(Object obj, l lVar) {
-        zp.j jVar;
+    private final bq.k F1(Object obj, l lVar) {
+        bq.j jVar;
         if (lVar.d()) {
-            jVar = zp.j.f56159e;
+            jVar = bq.j.f6988e;
         } else {
-            jVar = zp.j.f56158d;
+            jVar = bq.j.f6987d;
         }
-        return new zp.k(obj, jVar);
+        return new bq.k(obj, jVar);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final zm.r G0(final n nVar, final l.f fVar, final g3.b it) {
-        zm.r d10;
-        zm.r d11;
-        zm.r d12;
-        zm.r d13;
+    public static final bn.r G0(final n nVar, final l.f fVar, final g3.b it) {
+        bn.r d10;
+        bn.r d11;
+        bn.r d12;
+        bn.r d13;
         Intrinsics.checkNotNullParameter(it, "it");
-        if (Intrinsics.areEqual(it, g3.b.C0362b.f26291a)) {
-            d13 = zm.z.d(nVar, null, new Function1() { // from class: so.n0
+        if (Intrinsics.areEqual(it, g3.b.C0429b.f30287a)) {
+            d13 = bn.z.d(nVar, null, new Function1() { // from class: uo.n0
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
                     Unit H0;
@@ -773,7 +773,7 @@ public final class n extends zm.k {
             }, 1, null);
             return d13;
         } else if (it instanceof g3.b.c) {
-            d12 = zm.z.d(nVar, null, new Function1() { // from class: so.o0
+            d12 = bn.z.d(nVar, null, new Function1() { // from class: uo.o0
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
                     Unit I0;
@@ -782,8 +782,8 @@ public final class n extends zm.k {
                 }
             }, 1, null);
             return d12;
-        } else if (Intrinsics.areEqual(it, g3.b.d.f26293a)) {
-            d11 = zm.z.d(nVar, null, new Function1() { // from class: so.p0
+        } else if (Intrinsics.areEqual(it, g3.b.d.f30289a)) {
+            d11 = bn.z.d(nVar, null, new Function1() { // from class: uo.p0
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
                     Unit J0;
@@ -792,8 +792,8 @@ public final class n extends zm.k {
                 }
             }, 1, null);
             return d11;
-        } else if (Intrinsics.areEqual(it, g3.b.a.f26290a)) {
-            d10 = zm.z.d(nVar, null, new Function1() { // from class: so.q0
+        } else if (Intrinsics.areEqual(it, g3.b.a.f30286a)) {
+            d10 = bn.z.d(nVar, null, new Function1() { // from class: uo.q0
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
                     Unit K0;
@@ -803,7 +803,7 @@ public final class n extends zm.k {
             }, 1, null);
             return d10;
         } else {
-            throw new or.p();
+            throw new qr.p();
         }
     }
 
@@ -840,7 +840,7 @@ public final class n extends zm.k {
             str4 = c13.getBtnSubmit();
         }
         action.d(new b.a(b10, k10, styles, str, str2, str3, str4, false, IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT, null));
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -852,29 +852,29 @@ public final class n extends zm.k {
         } else {
             x1(nVar, action, fVar.k(), cVar.a(), null, 4, null);
         }
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit J0(l.f fVar, r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
         action.e(l.f.l(fVar, null, null, new w.a(null, 1, null), null, null, null, null, null, null, false, false, null, null, null, 0, 0L, null, null, false, null, null, null, null, null, null, null, false, null, 268435451, null));
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit K0(l.f fVar, r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
-        action.e(l.f.l(fVar, null, null, w.c.f19390d, null, null, null, null, null, null, false, false, null, null, null, 0, 0L, null, null, false, null, null, null, null, null, null, null, false, null, 268435451, null));
-        return Unit.f31988a;
+        action.e(l.f.l(fVar, null, null, w.c.f19370d, null, null, null, null, null, null, false, false, null, null, null, 0, 0L, null, null, false, null, null, null, null, null, null, null, false, null, 268435451, null));
+        return Unit.f32008a;
     }
 
-    private final Object L0(c cVar, final yo.d dVar, k.a aVar, StepStyle stepStyle, Function0 function0) {
-        xp.b.d(this.f19075o, false, false, false, 4, null);
-        zm.w.l(aVar, this.f19062b.a(dVar), Reflection.typeOf(com.withpersona.sdk2.inquiry.internal.c.class), "", new Function1() { // from class: so.z1
+    private final Object L0(c cVar, final ap.d dVar, k.a aVar, StepStyle stepStyle, Function0 function0) {
+        zp.b.d(this.f19055o, false, false, false, 4, null);
+        bn.w.l(aVar, this.f19042b.a(dVar), Reflection.typeOf(com.withpersona.sdk2.inquiry.internal.c.class), "", new Function1() { // from class: uo.z1
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
-                zm.r M0;
+                bn.r M0;
                 M0 = com.withpersona.sdk2.inquiry.internal.n.M0(com.withpersona.sdk2.inquiry.internal.n.this, dVar, (com.withpersona.sdk2.inquiry.internal.network.a) obj);
                 return M0;
             }
@@ -883,12 +883,12 @@ public final class n extends zm.k {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final zm.r M0(final n nVar, final yo.d dVar, final com.withpersona.sdk2.inquiry.internal.network.a it) {
-        zm.r d10;
-        zm.r d11;
+    public static final bn.r M0(final n nVar, final ap.d dVar, final com.withpersona.sdk2.inquiry.internal.network.a it) {
+        bn.r d10;
+        bn.r d11;
         Intrinsics.checkNotNullParameter(it, "it");
         if (it instanceof a.b) {
-            d11 = zm.z.d(nVar, null, new Function1() { // from class: so.k0
+            d11 = bn.z.d(nVar, null, new Function1() { // from class: uo.k0
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
                     Unit N0;
@@ -897,8 +897,8 @@ public final class n extends zm.k {
                 }
             }, 1, null);
             return d11;
-        } else if (it instanceof a.C0254a) {
-            d10 = zm.z.d(nVar, null, new Function1() { // from class: so.m0
+        } else if (it instanceof a.C0246a) {
+            d10 = bn.z.d(nVar, null, new Function1() { // from class: uo.m0
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
                     Unit O0;
@@ -908,7 +908,7 @@ public final class n extends zm.k {
             }, 1, null);
             return d10;
         } else {
-            throw new or.p();
+            throw new qr.p();
         }
     }
 
@@ -916,24 +916,24 @@ public final class n extends zm.k {
     public static final Unit N0(com.withpersona.sdk2.inquiry.internal.network.a aVar, r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
         a.b bVar = (a.b) aVar;
-        if (pp.h.e(bVar.b())) {
+        if (rp.h.e(bVar.b())) {
             action.d(new b.d(bVar.b(), bVar.a()));
         } else {
             action.e(new l.c(bVar.b()));
         }
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final Unit O0(n nVar, yo.d dVar, com.withpersona.sdk2.inquiry.internal.network.a aVar, r.c action) {
+    public static final Unit O0(n nVar, ap.d dVar, com.withpersona.sdk2.inquiry.internal.network.a aVar, r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
-        a.C0254a c0254a = (a.C0254a) aVar;
-        nVar.w1(action, dVar.g(), c0254a.a(), c0254a.b());
-        return Unit.f31988a;
+        a.C0246a c0246a = (a.C0246a) aVar;
+        nVar.w1(action, dVar.g(), c0246a.a(), c0246a.b());
+        return Unit.f32008a;
     }
 
     private final Object P0(c cVar, l.g gVar, k.a aVar, Function0 function0) {
-        return L0(cVar, new yo.d(null, null, gVar.j(), gVar.l(), cVar.a(), null, null, null, null, null, null, 2019, null), aVar, gVar.getStyles(), function0);
+        return L0(cVar, new ap.d(null, null, gVar.j(), gVar.l(), cVar.a(), null, null, null, null, null, null, 2019, null), aVar, gVar.getStyles(), function0);
     }
 
     private final Object Q0(c cVar, final l.h hVar, k.a aVar, Function0 function0) {
@@ -945,59 +945,59 @@ public final class n extends zm.k {
         String str3;
         String str4;
         String e11 = hVar.e();
-        x5 x5Var = this.f19070j;
+        x5 x5Var = this.f19050j;
         String k10 = hVar.k();
         String b10 = hVar.b();
-        String u10 = hVar.u();
+        String w10 = hVar.w();
         String e12 = hVar.e();
-        boolean p10 = hVar.p();
         boolean q10 = hVar.q();
-        String t10 = hVar.t();
-        boolean A = hVar.A();
-        boolean C = hVar.C();
-        NextStep.Selfie.Localizations v10 = hVar.v();
-        if (hVar.B() == NextStep.Selfie.CaptureMethod.ONLY_CENTER) {
+        boolean r10 = hVar.r();
+        String v10 = hVar.v();
+        boolean E = hVar.E();
+        boolean G = hVar.G();
+        NextStep.Selfie.Localizations x10 = hVar.x();
+        if (hVar.F() == NextStep.Selfie.CaptureMethod.ONLY_CENTER) {
             z10 = true;
         } else {
             z10 = false;
         }
-        x5.b.a j10 = yo.a.j(v10, z10);
-        d2 a10 = e2.a(hVar.B());
-        List w10 = hVar.w();
-        if (w10 == null || w10.isEmpty()) {
+        x5.b.a j10 = ap.a.j(x10, z10);
+        d2 a10 = e2.a(hVar.F());
+        List A = hVar.A();
+        if (A == null || A.isEmpty()) {
             str = k10;
             str2 = b10;
-            int i10 = e.f19121a[hVar.B().ordinal()];
+            int i10 = e.f19101a[hVar.F().ordinal()];
             if (i10 != 1) {
                 if (i10 != 2 && i10 != 3) {
-                    throw new or.p();
+                    throw new qr.p();
                 }
-                e10 = CollectionsKt.o(a1.b.f35131d, a1.b.f35132e, a1.b.f35133i);
+                e10 = CollectionsKt.o(a1.b.f37287d, a1.b.f37288e, a1.b.f37289i);
             } else {
-                e10 = CollectionsKt.e(a1.b.f35131d);
+                e10 = CollectionsKt.e(a1.b.f37287d);
             }
         } else {
-            List<NextStep.Selfie.SelfiePose> w11 = hVar.w();
+            List<NextStep.Selfie.SelfiePose> A2 = hVar.A();
             str = k10;
             str2 = b10;
-            e10 = new ArrayList(CollectionsKt.w(w11, 10));
-            for (NextStep.Selfie.SelfiePose selfiePose : w11) {
+            e10 = new ArrayList(CollectionsKt.w(A2, 10));
+            for (NextStep.Selfie.SelfiePose selfiePose : A2) {
                 e10.add(m1.c(selfiePose));
             }
         }
-        String cameraPermissionsTitle = hVar.v().getPromptPage().getCameraPermissionsTitle();
-        String cameraPermissionsPrompt = hVar.v().getPromptPage().getCameraPermissionsPrompt();
-        String cameraPermissionsAllowButtonText = hVar.v().getPromptPage().getCameraPermissionsAllowButtonText();
-        String cameraPermissionsCancelButtonText = hVar.v().getPromptPage().getCameraPermissionsCancelButtonText();
-        String microphonePermissionsTitle = hVar.v().getPromptPage().getMicrophonePermissionsTitle();
-        String microphonePermissionsPrompt = hVar.v().getPromptPage().getMicrophonePermissionsPrompt();
-        String microphonePermissionsBtnContinueMobile = hVar.v().getPromptPage().getMicrophonePermissionsBtnContinueMobile();
-        String microphonePermissionsBtnCancel = hVar.v().getPromptPage().getMicrophonePermissionsBtnCancel();
+        String cameraPermissionsTitle = hVar.x().getPromptPage().getCameraPermissionsTitle();
+        String cameraPermissionsPrompt = hVar.x().getPromptPage().getCameraPermissionsPrompt();
+        String cameraPermissionsAllowButtonText = hVar.x().getPromptPage().getCameraPermissionsAllowButtonText();
+        String cameraPermissionsCancelButtonText = hVar.x().getPromptPage().getCameraPermissionsCancelButtonText();
+        String microphonePermissionsTitle = hVar.x().getPromptPage().getMicrophonePermissionsTitle();
+        String microphonePermissionsPrompt = hVar.x().getPromptPage().getMicrophonePermissionsPrompt();
+        String microphonePermissionsBtnContinueMobile = hVar.x().getPromptPage().getMicrophonePermissionsBtnContinueMobile();
+        String microphonePermissionsBtnCancel = hVar.x().getPromptPage().getMicrophonePermissionsBtnCancel();
         StepStyles.SelfieStepStyle styles = hVar.getStyles();
-        NextStep.Selfie.AssetConfig n10 = hVar.n();
-        if (n10 == null) {
+        NextStep.Selfie.AssetConfig o10 = hVar.o();
+        if (o10 == null) {
             list = e10;
-            n10 = new NextStep.Selfie.AssetConfig(null, null, 3, null);
+            o10 = new NextStep.Selfie.AssetConfig(null, null, 3, null);
             str3 = str;
             str4 = cameraPermissionsTitle;
         } else {
@@ -1005,33 +1005,33 @@ public final class n extends zm.k {
             str3 = str;
             str4 = cameraPermissionsTitle;
         }
-        PendingPageTextPosition x10 = hVar.x();
-        List s10 = hVar.s();
-        List<NextStep.Selfie.VideoCaptureMethod> G = hVar.G();
+        PendingPageTextPosition B = hVar.B();
+        List u10 = hVar.u();
+        List<NextStep.Selfie.VideoCaptureMethod> K = hVar.K();
         String str5 = str3;
-        ArrayList arrayList = new ArrayList(CollectionsKt.w(G, 10));
-        for (NextStep.Selfie.VideoCaptureMethod videoCaptureMethod : G) {
-            arrayList.add(yn.a.valueOf(videoCaptureMethod.toString()));
+        ArrayList arrayList = new ArrayList(CollectionsKt.w(K, 10));
+        for (NextStep.Selfie.VideoCaptureMethod videoCaptureMethod : K) {
+            arrayList.add(ao.a.valueOf(videoCaptureMethod.toString()));
         }
-        return new zo.d(aVar.b(x5Var, new x5.b(str5, str2, u10, e12, p10, q10, t10, A, C, j10, a10, list, str4, cameraPermissionsPrompt, cameraPermissionsAllowButtonText, cameraPermissionsCancelButtonText, microphonePermissionsTitle, microphonePermissionsPrompt, microphonePermissionsBtnContinueMobile, microphonePermissionsBtnCancel, styles, new com.withpersona.sdk2.inquiry.selfie.video_capture.VideoCaptureConfig(0L, s10, arrayList, hVar.H(), hVar.o(), 1, null), n10, x10, hVar.z(), hVar.r()), e11, new Function1() { // from class: so.g0
+        return new bp.d(aVar.b(x5Var, new x5.b(str5, str2, w10, e12, q10, r10, v10, E, G, j10, a10, list, str4, cameraPermissionsPrompt, cameraPermissionsAllowButtonText, cameraPermissionsCancelButtonText, microphonePermissionsTitle, microphonePermissionsPrompt, microphonePermissionsBtnContinueMobile, microphonePermissionsBtnCancel, styles, new com.withpersona.sdk2.inquiry.selfie.video_capture.VideoCaptureConfig(0L, u10, arrayList, hVar.L(), hVar.p(), 1, null), o10, B, hVar.D(), hVar.t()), e11, new Function1() { // from class: uo.g0
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
-                zm.r R0;
+                bn.r R0;
                 R0 = com.withpersona.sdk2.inquiry.internal.n.R0(com.withpersona.sdk2.inquiry.internal.n.this, hVar, (x5.c) obj);
                 return R0;
             }
-        }), !Intrinsics.areEqual(hVar.f(), w.c.f19390d), hVar.e());
+        }), !Intrinsics.areEqual(hVar.f(), w.c.f19370d), hVar.e());
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final zm.r R0(final n nVar, final l.h hVar, final x5.c it) {
-        zm.r d10;
-        zm.r d11;
-        zm.r d12;
-        zm.r d13;
+    public static final bn.r R0(final n nVar, final l.h hVar, final x5.c it) {
+        bn.r d10;
+        bn.r d11;
+        bn.r d12;
+        bn.r d13;
         Intrinsics.checkNotNullParameter(it, "it");
-        if (Intrinsics.areEqual(it, x5.c.b.f35899a)) {
-            d13 = zm.z.d(nVar, null, new Function1() { // from class: so.b1
+        if (Intrinsics.areEqual(it, x5.c.b.f38055a)) {
+            d13 = bn.z.d(nVar, null, new Function1() { // from class: uo.b1
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
                     Unit S0;
@@ -1040,8 +1040,8 @@ public final class n extends zm.k {
                 }
             }, 1, null);
             return d13;
-        } else if (Intrinsics.areEqual(it, x5.c.d.f35901a)) {
-            d12 = zm.z.d(nVar, null, new Function1() { // from class: so.c1
+        } else if (Intrinsics.areEqual(it, x5.c.d.f38057a)) {
+            d12 = bn.z.d(nVar, null, new Function1() { // from class: uo.c1
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
                     Unit T0;
@@ -1050,8 +1050,8 @@ public final class n extends zm.k {
                 }
             }, 1, null);
             return d12;
-        } else if (Intrinsics.areEqual(it, x5.c.a.f35898a)) {
-            d11 = zm.z.d(nVar, null, new Function1() { // from class: so.d1
+        } else if (Intrinsics.areEqual(it, x5.c.a.f38054a)) {
+            d11 = bn.z.d(nVar, null, new Function1() { // from class: uo.d1
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
                     Unit U0;
@@ -1060,8 +1060,8 @@ public final class n extends zm.k {
                 }
             }, 1, null);
             return d11;
-        } else if (it instanceof x5.c.C0461c) {
-            d10 = zm.z.d(nVar, null, new Function1() { // from class: so.e1
+        } else if (it instanceof x5.c.C0515c) {
+            d10 = bn.z.d(nVar, null, new Function1() { // from class: uo.e1
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
                     Unit V0;
@@ -1071,7 +1071,7 @@ public final class n extends zm.k {
             }, 1, null);
             return d10;
         } else {
-            throw new or.p();
+            throw new qr.p();
         }
     }
 
@@ -1108,38 +1108,38 @@ public final class n extends zm.k {
             str4 = c13.getBtnSubmit();
         }
         action.d(new b.a(b10, k10, styles, str, str2, str3, str4, false, IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT, null));
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit T0(l.h hVar, r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
         action.e(l.h.l(hVar, null, null, new w.a(null, 1, null), null, null, null, null, null, false, false, null, false, false, null, null, null, null, null, null, null, false, null, null, 8388603, null));
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit U0(l.h hVar, r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
-        action.e(l.h.l(hVar, null, null, w.c.f19390d, null, null, null, null, null, false, false, null, false, false, null, null, null, null, null, null, null, false, null, null, 8388603, null));
-        return Unit.f31988a;
+        action.e(l.h.l(hVar, null, null, w.c.f19370d, null, null, null, null, null, false, false, null, false, false, null, null, null, null, null, null, null, false, null, null, 8388603, null));
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit V0(n nVar, x5.c cVar, l.h hVar, r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
-        x5.c.C0461c c0461c = (x5.c.C0461c) cVar;
-        if (nVar.k0(c0461c.a())) {
+        x5.c.C0515c c0515c = (x5.c.C0515c) cVar;
+        if (nVar.k0(c0515c.a())) {
             action.e(nVar.i1(hVar));
         } else {
-            x1(nVar, action, hVar.k(), c0461c.a(), null, 4, null);
+            x1(nVar, action, hVar.k(), c0515c.a(), null, 4, null);
         }
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     private final Object W0(c cVar, l.i iVar, k.a aVar, Function0 function0) {
-        xp.b.d(this.f19075o, false, false, false, 4, null);
-        return new d.b(iVar.getStyles(), iVar.n(), function0);
+        zp.b.d(this.f19055o, false, false, false, 4, null);
+        return new d.b(iVar.getStyles(), iVar.o(), function0);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:66:0x0145  */
@@ -1148,25 +1148,25 @@ public final class n extends zm.k {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
     */
-    private final java.lang.Object X0(com.withpersona.sdk2.inquiry.internal.n.c r27, final com.withpersona.sdk2.inquiry.internal.l.j r28, zm.k.a r29, kotlin.jvm.functions.Function0 r30) {
+    private final java.lang.Object X0(com.withpersona.sdk2.inquiry.internal.n.c r27, final com.withpersona.sdk2.inquiry.internal.l.j r28, bn.k.a r29, kotlin.jvm.functions.Function0 r30) {
         /*
             Method dump skipped, instructions count: 399
             To view this dump add '--comments-level debug' option
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.withpersona.sdk2.inquiry.internal.n.X0(com.withpersona.sdk2.inquiry.internal.n$c, com.withpersona.sdk2.inquiry.internal.l$j, zm.k$a, kotlin.jvm.functions.Function0):java.lang.Object");
+        throw new UnsupportedOperationException("Method not decompiled: com.withpersona.sdk2.inquiry.internal.n.X0(com.withpersona.sdk2.inquiry.internal.n$c, com.withpersona.sdk2.inquiry.internal.l$j, bn.k$a, kotlin.jvm.functions.Function0):java.lang.Object");
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final zm.r Y0(final n nVar, final l.j jVar, final v4.c it) {
-        zm.r d10;
-        zm.r d11;
-        zm.r d12;
-        zm.r d13;
-        zm.r d14;
-        zm.r d15;
+    public static final bn.r Y0(final n nVar, final l.j jVar, final v4.c it) {
+        bn.r d10;
+        bn.r d11;
+        bn.r d12;
+        bn.r d13;
+        bn.r d14;
+        bn.r d15;
         Intrinsics.checkNotNullParameter(it, "it");
-        if (Intrinsics.areEqual(it, v4.c.b.f41824a)) {
-            d15 = zm.z.d(nVar, null, new Function1() { // from class: so.f1
+        if (Intrinsics.areEqual(it, v4.c.b.f45512a)) {
+            d15 = bn.z.d(nVar, null, new Function1() { // from class: uo.f1
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
                     Unit Z0;
@@ -1176,7 +1176,7 @@ public final class n extends zm.k {
             }, 1, null);
             return d15;
         } else if (it instanceof v4.c.d) {
-            d14 = zm.z.d(nVar, null, new Function1() { // from class: so.g1
+            d14 = bn.z.d(nVar, null, new Function1() { // from class: uo.g1
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
                     Unit a12;
@@ -1186,7 +1186,7 @@ public final class n extends zm.k {
             }, 1, null);
             return d14;
         } else if (it instanceof v4.c.f) {
-            d13 = zm.z.d(nVar, null, new Function1() { // from class: so.i1
+            d13 = bn.z.d(nVar, null, new Function1() { // from class: uo.i1
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
                     Unit b12;
@@ -1195,8 +1195,8 @@ public final class n extends zm.k {
                 }
             }, 1, null);
             return d13;
-        } else if (Intrinsics.areEqual(it, v4.c.e.f41828a)) {
-            d12 = zm.z.d(nVar, null, new Function1() { // from class: so.j1
+        } else if (Intrinsics.areEqual(it, v4.c.e.f45516a)) {
+            d12 = bn.z.d(nVar, null, new Function1() { // from class: uo.j1
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
                     Unit c12;
@@ -1206,7 +1206,7 @@ public final class n extends zm.k {
             }, 1, null);
             return d12;
         } else if (it instanceof v4.c.a) {
-            d11 = zm.z.d(nVar, null, new Function1() { // from class: so.k1
+            d11 = bn.z.d(nVar, null, new Function1() { // from class: uo.k1
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
                     Unit d16;
@@ -1215,8 +1215,8 @@ public final class n extends zm.k {
                 }
             }, 1, null);
             return d11;
-        } else if (it instanceof v4.c.C0539c) {
-            d10 = zm.z.d(nVar, null, new Function1() { // from class: so.l1
+        } else if (it instanceof v4.c.C0589c) {
+            d10 = bn.z.d(nVar, null, new Function1() { // from class: uo.l1
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
                     Unit e12;
@@ -1226,7 +1226,7 @@ public final class n extends zm.k {
             }, 1, null);
             return d10;
         } else {
-            throw new or.p();
+            throw new qr.p();
         }
     }
 
@@ -1263,7 +1263,7 @@ public final class n extends zm.k {
             str4 = c13.getBtnSubmit();
         }
         action.d(new b.a(b10, k10, styles, str, str2, str3, str4, false, IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT, null));
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1275,7 +1275,7 @@ public final class n extends zm.k {
         } else {
             nVar.w1(action, jVar.k(), dVar.a(), dVar.b());
         }
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1283,37 +1283,37 @@ public final class n extends zm.k {
         Intrinsics.checkNotNullParameter(action, "$this$action");
         v4.c.f fVar = (v4.c.f) cVar;
         action.e(l.j.l(jVar, null, null, new w.b(new x.c(fVar.b(), fVar.a(), fVar.c())), null, null, null, null, null, null, false, false, false, null, null, null, null, null, false, 262139, null));
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit c1(l.j jVar, r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
         action.e(l.j.l(jVar, null, null, new w.d(null), null, null, null, null, null, null, false, false, false, null, null, null, null, null, false, 262139, null));
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit d1(l.j jVar, r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
-        action.e(l.j.l(jVar, null, null, w.c.f19390d, null, null, null, null, null, null, false, false, false, null, null, null, null, null, false, 262139, null));
-        return Unit.f31988a;
+        action.e(l.j.l(jVar, null, null, w.c.f19370d, null, null, null, null, null, null, false, false, false, null, null, null, null, null, false, 262139, null));
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit e1(l.j jVar, r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
-        action.d(new b.C0252b(jVar.b(), jVar.s(), jVar.q(), jVar.k()));
-        return Unit.f31988a;
+        action.d(new b.C0244b(jVar.b(), jVar.u(), jVar.r(), jVar.k()));
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final zm.r f1(final n nVar, final l.j jVar, final s.b it) {
-        zm.r d10;
-        zm.r d11;
+    public static final bn.r f1(final n nVar, final l.j jVar, final s.b it) {
+        bn.r d10;
+        bn.r d11;
         Intrinsics.checkNotNullParameter(it, "it");
-        if (Intrinsics.areEqual(it, s.b.a.f19373a)) {
-            d11 = zm.z.d(nVar, null, new Function1() { // from class: so.p1
+        if (Intrinsics.areEqual(it, s.b.a.f19353a)) {
+            d11 = bn.z.d(nVar, null, new Function1() { // from class: uo.p1
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
                     Unit g12;
@@ -1322,8 +1322,8 @@ public final class n extends zm.k {
                 }
             }, 1, null);
             return d11;
-        } else if (it instanceof s.b.C0257b) {
-            d10 = zm.z.d(nVar, null, new Function1() { // from class: so.q1
+        } else if (it instanceof s.b.C0249b) {
+            d10 = bn.z.d(nVar, null, new Function1() { // from class: uo.q1
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
                     Unit h12;
@@ -1333,7 +1333,7 @@ public final class n extends zm.k {
             }, 1, null);
             return d10;
         } else {
-            throw new or.p();
+            throw new qr.p();
         }
     }
 
@@ -1341,10 +1341,10 @@ public final class n extends zm.k {
     public static final Unit g1(n nVar, l.j jVar, r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
         if (!(action.c() instanceof l.j)) {
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
         action.e(nVar.i1(jVar));
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1359,10 +1359,10 @@ public final class n extends zm.k {
         }
         l.j jVar2 = jVar;
         if (jVar2 == null) {
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
-        action.e(l.j.l(jVar2, null, null, null, null, null, null, null, null, ((s.b.C0257b) bVar).a(), false, false, false, null, null, null, null, null, false, 130815, null));
-        return Unit.f31988a;
+        action.e(l.j.l(jVar2, null, null, null, null, null, null, null, null, ((s.b.C0249b) bVar).a(), false, false, false, null, null, null, null, null, false, 130815, null));
+        return Unit.f32008a;
     }
 
     private final l.i i1(j2 j2Var) {
@@ -1376,10 +1376,10 @@ public final class n extends zm.k {
         final w f10 = lVar.f();
         if (f10 instanceof w.b) {
             if (k10 != null && b10 != null) {
-                zm.w.l(aVar, this.f19066f.a(k10, b10, lVar.a(), ((w.b) f10).a()), Reflection.typeOf(x.class), "", new Function1() { // from class: so.v1
+                bn.w.l(aVar, this.f19046f.a(k10, b10, lVar.a(), ((w.b) f10).a()), Reflection.typeOf(x.class), "", new Function1() { // from class: uo.v1
                     @Override // kotlin.jvm.functions.Function1
                     public final Object invoke(Object obj) {
-                        zm.r u12;
+                        bn.r u12;
                         u12 = com.withpersona.sdk2.inquiry.internal.n.u1(com.withpersona.sdk2.inquiry.internal.n.this, lVar, k10, (x.b) obj);
                         return u12;
                     }
@@ -1387,10 +1387,10 @@ public final class n extends zm.k {
             }
         } else if (f10 instanceof w.d) {
             if (k10 != null && b10 != null) {
-                zm.w.l(aVar, this.f19067g.a(k10, b10, lVar.a()), Reflection.typeOf(a0.class), "", new Function1() { // from class: so.w1
+                bn.w.l(aVar, this.f19047g.a(k10, b10, lVar.a()), Reflection.typeOf(a0.class), "", new Function1() { // from class: uo.w1
                     @Override // kotlin.jvm.functions.Function1
                     public final Object invoke(Object obj) {
-                        zm.r m12;
+                        bn.r m12;
                         m12 = com.withpersona.sdk2.inquiry.internal.n.m1(com.withpersona.sdk2.inquiry.internal.n.this, k10, f10, (com.withpersona.sdk2.inquiry.internal.network.i) obj);
                         return m12;
                     }
@@ -1398,21 +1398,21 @@ public final class n extends zm.k {
             }
         } else if (f10 instanceof w.a) {
             if (k10 != null && b10 != null) {
-                zm.w.l(aVar, this.f19064d.a(k10, b10, ((w.a) f10).a(), lVar.a()), Reflection.typeOf(q.class), "", new Function1() { // from class: so.x1
+                bn.w.l(aVar, this.f19044d.a(k10, b10, ((w.a) f10).a(), lVar.a()), Reflection.typeOf(q.class), "", new Function1() { // from class: uo.x1
                     @Override // kotlin.jvm.functions.Function1
                     public final Object invoke(Object obj) {
-                        zm.r p12;
+                        bn.r p12;
                         p12 = com.withpersona.sdk2.inquiry.internal.n.p1(com.withpersona.sdk2.inquiry.internal.n.this, lVar, k10, (q.c) obj);
                         return p12;
                     }
                 });
             }
-        } else if (Intrinsics.areEqual(f10, w.c.f19390d)) {
+        } else if (Intrinsics.areEqual(f10, w.c.f19370d)) {
             if (k10 != null && b10 != null && e10 != null) {
-                zm.w.l(aVar, this.f19065e.a(k10, b10, e10, lVar.a()), Reflection.typeOf(u.class), "", new Function1() { // from class: so.y1
+                bn.w.l(aVar, this.f19045e.a(k10, b10, e10, lVar.a()), Reflection.typeOf(u.class), "", new Function1() { // from class: uo.y1
                     @Override // kotlin.jvm.functions.Function1
                     public final Object invoke(Object obj) {
-                        zm.r r12;
+                        bn.r r12;
                         r12 = com.withpersona.sdk2.inquiry.internal.n.r1(com.withpersona.sdk2.inquiry.internal.n.this, lVar, k10, (com.withpersona.sdk2.inquiry.internal.network.h) obj);
                         return r12;
                     }
@@ -1420,7 +1420,7 @@ public final class n extends zm.k {
             }
         } else if (f10 == null) {
         } else {
-            throw new or.p();
+            throw new qr.p();
         }
     }
 
@@ -1435,9 +1435,9 @@ public final class n extends zm.k {
         return false;
     }
 
-    private static final zm.r k1(final n nVar, final l lVar, final String str, final InternalErrorInfo internalErrorInfo) {
-        zm.r d10;
-        d10 = zm.z.d(nVar, null, new Function1() { // from class: so.u1
+    private static final bn.r k1(final n nVar, final l lVar, final String str, final InternalErrorInfo internalErrorInfo) {
+        bn.r d10;
+        d10 = bn.z.d(nVar, null, new Function1() { // from class: uo.u1
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit l12;
@@ -1467,7 +1467,7 @@ public final class n extends zm.k {
                     jVar = null;
                 }
                 if (jVar == null) {
-                    return Unit.f31988a;
+                    return Unit.f32008a;
                 }
                 Map<String, UiComponentError> details = ((ErrorResponse.Error.InvalidFieldValueError) responseError).getDetails();
                 if (details != null && (values = details.values()) != null) {
@@ -1481,7 +1481,7 @@ public final class n extends zm.k {
                     x1(nVar, action, str, internalErrorInfo, null, 4, null);
                 }
             } else if (!(responseError instanceof ErrorResponse.Error.FieldNotFoundError) && !(responseError instanceof ErrorResponse.Error.InactiveTemplateError) && !(responseError instanceof ErrorResponse.Error.InvalidConfigError) && !(responseError instanceof ErrorResponse.Error.RateLimitExceededError) && !(responseError instanceof ErrorResponse.Error.TransitionFromTerminalStateError) && !(responseError instanceof ErrorResponse.Error.UnauthenticatedError) && !(responseError instanceof ErrorResponse.Error.UnknownError) && responseError != null) {
-                throw new or.p();
+                throw new qr.p();
             } else {
                 if (networkErrorInfo.isRecoverable()) {
                     Object c11 = action.c();
@@ -1490,7 +1490,7 @@ public final class n extends zm.k {
                     }
                     l.j jVar3 = jVar2;
                     if (jVar3 == null) {
-                        return Unit.f31988a;
+                        return Unit.f32008a;
                     }
                     action.e(l.j.l(jVar3, null, null, null, null, null, null, null, null, null, false, false, false, null, null, null, networkErrorInfo, null, false, 229371, null));
                 } else {
@@ -1498,26 +1498,26 @@ public final class n extends zm.k {
                 }
             }
         } else if (!(internalErrorInfo instanceof InternalErrorInfo.CameraErrorInfo) && !(internalErrorInfo instanceof InternalErrorInfo.ConfigurationErrorInfo) && !(internalErrorInfo instanceof InternalErrorInfo.IntegrationErrorInfo) && !(internalErrorInfo instanceof InternalErrorInfo.NoDiskSpaceErrorInfo) && !(internalErrorInfo instanceof InternalErrorInfo.PermissionErrorInfo) && !(internalErrorInfo instanceof InternalErrorInfo.UnknownErrorInfo) && !(internalErrorInfo instanceof InternalErrorInfo.WebRtcIntegrationErrorInfo) && !(internalErrorInfo instanceof InternalErrorInfo.InvalidOneTimeLinkCode)) {
-            throw new or.p();
+            throw new qr.p();
         } else {
             x1(nVar, action, str, internalErrorInfo, null, 4, null);
         }
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit m0(k.a aVar, n nVar, l lVar) {
         n0(aVar, nVar, lVar, false);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final zm.r m1(final n nVar, final String str, final w wVar, final com.withpersona.sdk2.inquiry.internal.network.i it) {
-        zm.r d10;
-        zm.r d11;
+    public static final bn.r m1(final n nVar, final String str, final w wVar, final com.withpersona.sdk2.inquiry.internal.network.i it) {
+        bn.r d10;
+        bn.r d11;
         Intrinsics.checkNotNullParameter(it, "it");
         if (it instanceof i.a) {
-            d11 = zm.z.d(nVar, null, new Function1() { // from class: so.m1
+            d11 = bn.z.d(nVar, null, new Function1() { // from class: uo.m1
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
                     Unit n12;
@@ -1526,8 +1526,8 @@ public final class n extends zm.k {
                 }
             }, 1, null);
             return d11;
-        } else if (Intrinsics.areEqual(it, i.b.f19344a)) {
-            d10 = zm.z.d(nVar, null, new Function1() { // from class: so.n1
+        } else if (Intrinsics.areEqual(it, i.b.f19324a)) {
+            d10 = bn.z.d(nVar, null, new Function1() { // from class: uo.n1
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
                     Unit o12;
@@ -1537,15 +1537,15 @@ public final class n extends zm.k {
             }, 1, null);
             return d10;
         } else {
-            throw new or.p();
+            throw new qr.p();
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void n0(k.a aVar, n nVar, final l lVar, final boolean z10) {
-        zm.r d10;
-        zm.h c10 = aVar.c();
-        d10 = zm.z.d(nVar, null, new Function1() { // from class: so.l0
+        bn.r d10;
+        bn.h c10 = aVar.c();
+        d10 = bn.z.d(nVar, null, new Function1() { // from class: uo.l0
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit o02;
@@ -1560,7 +1560,7 @@ public final class n extends zm.k {
     public static final Unit n1(n nVar, String str, com.withpersona.sdk2.inquiry.internal.network.i iVar, r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
         x1(nVar, action, str, ((i.a) iVar).a(), null, 4, null);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1596,7 +1596,7 @@ public final class n extends zm.k {
             str4 = c13.getBtnSubmit();
         }
         action.d(new b.a(b10, k10, styles, str, str2, str3, str4, z10));
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1608,7 +1608,7 @@ public final class n extends zm.k {
         } else {
             action.e(((l) action.c()).i(new w.a(null, 1, null)));
         }
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     private final Object p0(l.a aVar, k.a aVar2) {
@@ -1617,11 +1617,11 @@ public final class n extends zm.k {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final zm.r p1(n nVar, l lVar, String str, final q.c it) {
-        zm.r d10;
+    public static final bn.r p1(n nVar, l lVar, String str, final q.c it) {
+        bn.r d10;
         Intrinsics.checkNotNullParameter(it, "it");
         if (it instanceof q.c.b) {
-            d10 = zm.z.d(nVar, null, new Function1() { // from class: so.o1
+            d10 = bn.z.d(nVar, null, new Function1() { // from class: uo.o1
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
                     Unit q12;
@@ -1633,27 +1633,27 @@ public final class n extends zm.k {
         } else if (it instanceof q.c.a) {
             return k1(nVar, lVar, str, ((q.c.a) it).a());
         } else {
-            throw new or.p();
+            throw new qr.p();
         }
     }
 
     private final Object q0(c cVar, l.b bVar, k.a aVar, Function0 function0) {
-        return L0(cVar, new yo.d(bVar.p(), bVar.q(), bVar.b(), bVar.k(), cVar.a(), bVar.l(), bVar.j(), bVar.o(), null, bVar.n(), bVar.r(), IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER, null), aVar, bVar.getStyles(), function0);
+        return L0(cVar, new ap.d(bVar.q(), bVar.r(), bVar.b(), bVar.k(), cVar.a(), bVar.l(), bVar.j(), bVar.p(), null, bVar.o(), bVar.t(), IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER, null), aVar, bVar.getStyles(), function0);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit q1(q.c cVar, r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
         action.e(((q.c.b) cVar).a());
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     private final Object r0(c cVar, final l.c cVar2, k.a aVar, Function0 function0) {
-        xp.b.d(this.f19075o, false, false, false, 4, null);
-        zm.w.l(aVar, this.f19063c.a(cVar2.b()), Reflection.typeOf(com.withpersona.sdk2.inquiry.internal.a.class), "", new Function1() { // from class: so.b0
+        zp.b.d(this.f19055o, false, false, false, 4, null);
+        bn.w.l(aVar, this.f19043c.a(cVar2.b()), Reflection.typeOf(com.withpersona.sdk2.inquiry.internal.a.class), "", new Function1() { // from class: uo.b0
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
-                zm.r s02;
+                bn.r s02;
                 s02 = com.withpersona.sdk2.inquiry.internal.n.s0(com.withpersona.sdk2.inquiry.internal.n.this, cVar2, (com.withpersona.sdk2.inquiry.internal.network.b) obj);
                 return s02;
             }
@@ -1662,12 +1662,12 @@ public final class n extends zm.k {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final zm.r r1(final n nVar, final l lVar, final String str, final com.withpersona.sdk2.inquiry.internal.network.h it) {
-        zm.r d10;
-        zm.r d11;
+    public static final bn.r r1(final n nVar, final l lVar, final String str, final com.withpersona.sdk2.inquiry.internal.network.h it) {
+        bn.r d10;
+        bn.r d11;
         Intrinsics.checkNotNullParameter(it, "it");
         if (it instanceof h.b) {
-            d11 = zm.z.d(nVar, null, new Function1() { // from class: so.r0
+            d11 = bn.z.d(nVar, null, new Function1() { // from class: uo.r0
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
                     Unit s12;
@@ -1677,7 +1677,7 @@ public final class n extends zm.k {
             }, 1, null);
             return d11;
         } else if (it instanceof h.a) {
-            d10 = zm.z.d(nVar, null, new Function1() { // from class: so.s0
+            d10 = bn.z.d(nVar, null, new Function1() { // from class: uo.s0
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
                     Unit t12;
@@ -1687,17 +1687,17 @@ public final class n extends zm.k {
             }, 1, null);
             return d10;
         } else {
-            throw new or.p();
+            throw new qr.p();
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final zm.r s0(final n nVar, final l.c cVar, final com.withpersona.sdk2.inquiry.internal.network.b it) {
-        zm.r d10;
-        zm.r d11;
+    public static final bn.r s0(final n nVar, final l.c cVar, final com.withpersona.sdk2.inquiry.internal.network.b it) {
+        bn.r d10;
+        bn.r d11;
         Intrinsics.checkNotNullParameter(it, "it");
-        if (it instanceof b.C0255b) {
-            d11 = zm.z.d(nVar, null, new Function1() { // from class: so.t0
+        if (it instanceof b.C0247b) {
+            d11 = bn.z.d(nVar, null, new Function1() { // from class: uo.t0
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
                     Unit t02;
@@ -1707,7 +1707,7 @@ public final class n extends zm.k {
             }, 1, null);
             return d11;
         } else if (it instanceof b.a) {
-            d10 = zm.z.d(nVar, null, new Function1() { // from class: so.u0
+            d10 = bn.z.d(nVar, null, new Function1() { // from class: uo.u0
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
                     Unit u02;
@@ -1717,7 +1717,7 @@ public final class n extends zm.k {
             }, 1, null);
             return d10;
         } else {
-            throw new or.p();
+            throw new qr.p();
         }
     }
 
@@ -1725,18 +1725,18 @@ public final class n extends zm.k {
     public static final Unit s1(com.withpersona.sdk2.inquiry.internal.network.h hVar, r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
         h.b bVar = (h.b) hVar;
-        bVar.a().g(true);
+        bVar.a().h(true);
         action.e(bVar.a());
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit t0(l.c cVar, com.withpersona.sdk2.inquiry.internal.network.b bVar, n nVar, r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
-        b.C0255b c0255b = (b.C0255b) bVar;
-        action.e(new l.i(c0255b.b(), null, cVar.b(), null, true, c0255b.a(), 2, null));
-        nVar.f19076p.b(new b.C0627b(cVar.b(), com.withpersona.sdk2.inquiry.internal.h.f18918b.a(c0255b.b())));
-        return Unit.f31988a;
+        b.C0247b c0247b = (b.C0247b) bVar;
+        action.e(new l.i(c0247b.b(), null, cVar.b(), null, true, c0247b.a(), 2, null));
+        nVar.f19056p.b(new b.C0670b(cVar.b(), com.withpersona.sdk2.inquiry.internal.h.f18898b.a(c0247b.b())));
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1748,25 +1748,25 @@ public final class n extends zm.k {
         } else {
             x1(nVar, action, str, aVar.a(), null, 4, null);
         }
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit u0(n nVar, l.c cVar, com.withpersona.sdk2.inquiry.internal.network.b bVar, r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
         x1(nVar, action, cVar.k(), ((b.a) bVar).a(), null, 4, null);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final zm.r u1(n nVar, l lVar, String str, final x.b it) {
-        zm.r d10;
+    public static final bn.r u1(n nVar, l lVar, String str, final x.b it) {
+        bn.r d10;
         Intrinsics.checkNotNullParameter(it, "it");
         if (it instanceof x.b.a) {
             return k1(nVar, lVar, str, ((x.b.a) it).a());
         }
-        if (it instanceof x.b.C0259b) {
-            d10 = zm.z.d(nVar, null, new Function1() { // from class: so.r1
+        if (it instanceof x.b.C0251b) {
+            d10 = bn.z.d(nVar, null, new Function1() { // from class: uo.r1
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
                     Unit v12;
@@ -1776,7 +1776,7 @@ public final class n extends zm.k {
             }, 1, null);
             return d10;
         }
-        throw new or.p();
+        throw new qr.p();
     }
 
     private final Object v0(final l.d dVar, k.a aVar) {
@@ -1785,94 +1785,94 @@ public final class n extends zm.k {
         boolean z11;
         String str;
         String str2;
-        String documentId = dVar.o().getConfig().getDocumentId();
-        int i10 = e.f19123c[dVar.o().getConfig().getStartPage().ordinal()];
+        String documentId = dVar.p().getConfig().getDocumentId();
+        int i10 = e.f19103c[dVar.p().getConfig().getStartPage().ordinal()];
         if (i10 != 1) {
             if (i10 == 2) {
                 if (documentId != null) {
                     eVar = new r2.e.b(documentId);
                 } else {
-                    eVar = r2.e.a.f6908d;
+                    eVar = r2.e.a.f21934d;
                 }
             } else {
-                throw new or.p();
+                throw new qr.p();
             }
         } else {
-            eVar = r2.e.a.f6908d;
+            eVar = r2.e.a.f21934d;
         }
         r2.e eVar2 = eVar;
         String e10 = dVar.e();
-        r2 r2Var = this.f19072l;
+        r2 r2Var = this.f19052l;
         String k10 = dVar.k();
         String b10 = dVar.b();
         String e11 = dVar.e();
-        String p10 = dVar.p();
-        String title = dVar.o().getConfig().getLocalizations().getPromptPage().getTitle();
-        String prompt = dVar.o().getConfig().getLocalizations().getPromptPage().getPrompt();
-        String disclaimer = dVar.o().getConfig().getLocalizations().getPromptPage().getDisclaimer();
-        String btnSubmit = dVar.o().getConfig().getLocalizations().getPromptPage().getBtnSubmit();
-        String title2 = dVar.o().getConfig().getLocalizations().getPendingPage().getTitle();
-        String description = dVar.o().getConfig().getLocalizations().getPendingPage().getDescription();
-        String fieldKeyDocument = dVar.o().getConfig().getFieldKeyDocument();
-        String kind = dVar.o().getConfig().getKind();
-        int documentFileLimit = dVar.o().getConfig().getDocumentFileLimit();
-        Boolean backStepEnabled = dVar.o().getConfig().getBackStepEnabled();
+        String q10 = dVar.q();
+        String title = dVar.p().getConfig().getLocalizations().getPromptPage().getTitle();
+        String prompt = dVar.p().getConfig().getLocalizations().getPromptPage().getPrompt();
+        String disclaimer = dVar.p().getConfig().getLocalizations().getPromptPage().getDisclaimer();
+        String btnSubmit = dVar.p().getConfig().getLocalizations().getPromptPage().getBtnSubmit();
+        String title2 = dVar.p().getConfig().getLocalizations().getPendingPage().getTitle();
+        String description = dVar.p().getConfig().getLocalizations().getPendingPage().getDescription();
+        String fieldKeyDocument = dVar.p().getConfig().getFieldKeyDocument();
+        String kind = dVar.p().getConfig().getKind();
+        int documentFileLimit = dVar.p().getConfig().getDocumentFileLimit();
+        Boolean backStepEnabled = dVar.p().getConfig().getBackStepEnabled();
         if (backStepEnabled != null) {
             z10 = backStepEnabled.booleanValue();
         } else {
             z10 = false;
         }
-        Boolean cancelButtonEnabled = dVar.o().getConfig().getCancelButtonEnabled();
+        Boolean cancelButtonEnabled = dVar.p().getConfig().getCancelButtonEnabled();
         if (cancelButtonEnabled != null) {
             z11 = cancelButtonEnabled.booleanValue();
         } else {
             z11 = true;
         }
-        String cameraPermissionsTitle = dVar.o().getConfig().getLocalizations().getPromptPage().getCameraPermissionsTitle();
-        String cameraPermissionsPrompt = dVar.o().getConfig().getLocalizations().getPromptPage().getCameraPermissionsPrompt();
-        String cameraPermissionsAllowButtonText = dVar.o().getConfig().getLocalizations().getPromptPage().getCameraPermissionsAllowButtonText();
-        String cameraPermissionsCancelButtonText = dVar.o().getConfig().getLocalizations().getPromptPage().getCameraPermissionsCancelButtonText();
+        String cameraPermissionsTitle = dVar.p().getConfig().getLocalizations().getPromptPage().getCameraPermissionsTitle();
+        String cameraPermissionsPrompt = dVar.p().getConfig().getLocalizations().getPromptPage().getCameraPermissionsPrompt();
+        String cameraPermissionsAllowButtonText = dVar.p().getConfig().getLocalizations().getPromptPage().getCameraPermissionsAllowButtonText();
+        String cameraPermissionsCancelButtonText = dVar.p().getConfig().getLocalizations().getPromptPage().getCameraPermissionsCancelButtonText();
         StepStyles.DocumentStepStyle styles = dVar.getStyles();
-        bo.l q10 = dVar.q();
-        NextStep.Document.AssetConfig n10 = dVar.n();
-        if (n10 == null) {
+        eo.l r10 = dVar.r();
+        NextStep.Document.AssetConfig o10 = dVar.o();
+        if (o10 == null) {
             str = k10;
             str2 = b10;
-            n10 = new NextStep.Document.AssetConfig(null, null, 3, null);
+            o10 = new NextStep.Document.AssetConfig(null, null, 3, null);
         } else {
             str = k10;
             str2 = b10;
         }
-        PendingPageTextPosition pendingPageTextVerticalPosition = dVar.o().getConfig().getPendingPageTextVerticalPosition();
+        PendingPageTextPosition pendingPageTextVerticalPosition = dVar.p().getConfig().getPendingPageTextVerticalPosition();
         if (pendingPageTextVerticalPosition == null) {
             pendingPageTextVerticalPosition = PendingPageTextPositionKt.getDEFAULT_PROCESSING_TEXT_POSITION();
         }
-        return new zo.d(aVar.b(r2Var, new r2.b(str, str2, e11, p10, title, prompt, disclaimer, btnSubmit, title2, description, fieldKeyDocument, kind, documentId, eVar2, q10, documentFileLimit, z10, z11, cameraPermissionsTitle, cameraPermissionsPrompt, cameraPermissionsAllowButtonText, cameraPermissionsCancelButtonText, styles, n10, pendingPageTextVerticalPosition), e10, new Function1() { // from class: so.h0
+        return new bp.d(aVar.b(r2Var, new r2.b(str, str2, e11, q10, title, prompt, disclaimer, btnSubmit, title2, description, fieldKeyDocument, kind, documentId, eVar2, r10, documentFileLimit, z10, z11, cameraPermissionsTitle, cameraPermissionsPrompt, cameraPermissionsAllowButtonText, cameraPermissionsCancelButtonText, styles, o10, pendingPageTextVerticalPosition), e10, new Function1() { // from class: uo.h0
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
-                zm.r w02;
+                bn.r w02;
                 w02 = com.withpersona.sdk2.inquiry.internal.n.w0(com.withpersona.sdk2.inquiry.internal.n.this, dVar, (r2.c) obj);
                 return w02;
             }
-        }), !Intrinsics.areEqual(dVar.f(), w.c.f19390d), dVar.e());
+        }), !Intrinsics.areEqual(dVar.f(), w.c.f19370d), dVar.e());
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit v1(x.b bVar, r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
-        action.e(((l) action.c()).i(new w.d(((x.b.C0259b) bVar).a())));
-        return Unit.f31988a;
+        action.e(((l) action.c()).i(new w.d(((x.b.C0251b) bVar).a())));
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final zm.r w0(final n nVar, final l.d dVar, final r2.c it) {
-        zm.r d10;
-        zm.r d11;
-        zm.r d12;
-        zm.r d13;
+    public static final bn.r w0(final n nVar, final l.d dVar, final r2.c it) {
+        bn.r d10;
+        bn.r d11;
+        bn.r d12;
+        bn.r d13;
         Intrinsics.checkNotNullParameter(it, "it");
-        if (Intrinsics.areEqual(it, r2.c.b.f6876a)) {
-            d13 = zm.z.d(nVar, null, new Function1() { // from class: so.v0
+        if (Intrinsics.areEqual(it, r2.c.b.f21902a)) {
+            d13 = bn.z.d(nVar, null, new Function1() { // from class: uo.v0
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
                     Unit x02;
@@ -1881,8 +1881,8 @@ public final class n extends zm.k {
                 }
             }, 1, null);
             return d13;
-        } else if (Intrinsics.areEqual(it, r2.c.a.f6875a)) {
-            d12 = zm.z.d(nVar, null, new Function1() { // from class: so.x0
+        } else if (Intrinsics.areEqual(it, r2.c.a.f21901a)) {
+            d12 = bn.z.d(nVar, null, new Function1() { // from class: uo.x0
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
                     Unit y02;
@@ -1891,8 +1891,8 @@ public final class n extends zm.k {
                 }
             }, 1, null);
             return d12;
-        } else if (it instanceof r2.c.C0117c) {
-            d11 = zm.z.d(nVar, null, new Function1() { // from class: so.y0
+        } else if (it instanceof r2.c.C0298c) {
+            d11 = bn.z.d(nVar, null, new Function1() { // from class: uo.y0
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
                     Unit z02;
@@ -1901,8 +1901,8 @@ public final class n extends zm.k {
                 }
             }, 1, null);
             return d11;
-        } else if (Intrinsics.areEqual(it, r2.c.d.f6878a)) {
-            d10 = zm.z.d(nVar, null, new Function1() { // from class: so.z0
+        } else if (Intrinsics.areEqual(it, r2.c.d.f21904a)) {
+            d10 = bn.z.d(nVar, null, new Function1() { // from class: uo.z0
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
                     Unit A0;
@@ -1912,15 +1912,15 @@ public final class n extends zm.k {
             }, 1, null);
             return d10;
         } else {
-            throw new or.p();
+            throw new qr.p();
         }
     }
 
     private final void w1(r.c cVar, String str, InternalErrorInfo internalErrorInfo, String str2) {
         if (str2 == null) {
-            str2 = so.r.b(internalErrorInfo);
+            str2 = uo.r.b(internalErrorInfo);
         }
-        cVar.d(new b.c(str2, so.r.a(internalErrorInfo), internalErrorInfo, str));
+        cVar.d(new b.c(str2, uo.r.a(internalErrorInfo), internalErrorInfo, str));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1956,7 +1956,7 @@ public final class n extends zm.k {
             str4 = c13.getBtnSubmit();
         }
         action.d(new b.a(b10, k10, styles, str, str2, str3, str4, false, IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT, null));
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     static /* synthetic */ void x1(n nVar, r.c cVar, String str, InternalErrorInfo internalErrorInfo, String str2, int i10, Object obj) {
@@ -1969,38 +1969,38 @@ public final class n extends zm.k {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit y0(l.d dVar, r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
-        action.e(l.d.l(dVar, null, null, w.c.f19390d, null, null, null, null, null, null, null, 1019, null));
-        return Unit.f31988a;
+        action.e(l.d.l(dVar, null, null, w.c.f19370d, null, null, null, null, null, null, null, 1019, null));
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit z0(n nVar, r2.c cVar, l.d dVar, r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
-        r2.c.C0117c c0117c = (r2.c.C0117c) cVar;
-        if (nVar.k0(c0117c.a())) {
+        r2.c.C0298c c0298c = (r2.c.C0298c) cVar;
+        if (nVar.k0(c0298c.a())) {
             action.e(nVar.i1(dVar));
         } else {
-            x1(nVar, action, dVar.k(), c0117c.a(), null, 4, null);
+            x1(nVar, action, dVar.k(), c0298c.a(), null, 4, null);
         }
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
-    private final ip.i z1(Object obj, final k.a aVar) {
-        return new ip.i(obj, new Function0() { // from class: so.c0
+    private final kp.i z1(Object obj, final k.a aVar) {
+        return new kp.i(obj, new Function0() { // from class: uo.c0
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit A1;
                 A1 = com.withpersona.sdk2.inquiry.internal.n.A1(com.withpersona.sdk2.inquiry.internal.n.this, aVar);
                 return A1;
             }
-        }, new Function0() { // from class: so.d0
+        }, new Function0() { // from class: uo.d0
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 c.b C1;
                 C1 = com.withpersona.sdk2.inquiry.internal.n.C1(com.withpersona.sdk2.inquiry.internal.n.this);
                 return C1;
             }
-        }, this.f19073m.b(), new Function1() { // from class: so.e0
+        }, this.f19053m.b(), new Function1() { // from class: uo.e0
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj2) {
                 Unit D1;
@@ -2010,9 +2010,9 @@ public final class n extends zm.k {
         });
     }
 
-    @Override // zm.k
+    @Override // bn.k
     /* renamed from: j0 */
-    public l d(c props, zm.i iVar) {
+    public l d(c props, bn.i iVar) {
         l lVar;
         Parcelable readParcelable;
         Intrinsics.checkNotNullParameter(props, "props");
@@ -2029,7 +2029,7 @@ public final class n extends zm.k {
                 byte[] L = b10.L();
                 obtain.unmarshall(L, 0, L.length);
                 obtain.setDataPosition(0);
-                readParcelable = obtain.readParcelable(zm.i.class.getClassLoader());
+                readParcelable = obtain.readParcelable(bn.i.class.getClassLoader());
                 Intrinsics.checkNotNull(readParcelable);
                 Intrinsics.checkNotNullExpressionValue(readParcelable, "parcel.readParcelable<T>…class.java.classLoader)!!");
                 obtain.recycle();
@@ -2043,28 +2043,28 @@ public final class n extends zm.k {
                 return l.j.l((l.j) lVar, null, null, null, null, null, null, null, null, null, false, false, false, null, null, null, null, null, true, 131071, null);
             }
             return lVar;
-        } else if (props instanceof c.C0253c) {
-            c.C0253c c0253c = (c.C0253c) props;
-            return new l.b(c0253c.g(), c0253c.h(), c0253c.b(), c0253c.c(), c0253c.e(), c0253c.d(), c0253c.i(), c0253c.f());
+        } else if (props instanceof c.C0245c) {
+            c.C0245c c0245c = (c.C0245c) props;
+            return new l.b(c0245c.g(), c0245c.h(), c0245c.b(), c0245c.c(), c0245c.e(), c0245c.d(), c0245c.i(), c0245c.f());
         } else if (props instanceof c.b) {
             return new l.e(((c.b) props).b());
         } else {
             if (props instanceof c.a) {
                 c.a aVar = (c.a) props;
-                if (pp.h.e(aVar.b()) && aVar.c() != null) {
+                if (rp.h.e(aVar.b()) && aVar.c() != null) {
                     return new l.g(aVar.b(), aVar.c());
                 }
                 String c10 = aVar.c();
                 if (c10 != null && c10.length() != 0) {
-                    return new l.i(aVar.c(), new w.a(null, 1, null), aVar.b(), null, true, wp.g.f53236o.a());
+                    return new l.i(aVar.c(), new w.a(null, 1, null), aVar.b(), null, true, yp.g.f55551o.a());
                 }
                 return new l.c(aVar.b());
             }
-            throw new or.p();
+            throw new qr.p();
         }
     }
 
-    @Override // zm.k
+    @Override // bn.k
     /* renamed from: l0 */
     public Object f(c renderProps, final l renderState, final k.a context) {
         Object p02;
@@ -2072,8 +2072,8 @@ public final class n extends zm.k {
         Intrinsics.checkNotNullParameter(renderState, "renderState");
         Intrinsics.checkNotNullParameter(context, "context");
         j1(renderProps, renderState, context);
-        this.f19075o.e(Intrinsics.areEqual(renderState.f(), w.c.f19390d));
-        Function0 function0 = new Function0() { // from class: so.a0
+        this.f19055o.e(Intrinsics.areEqual(renderState.f(), w.c.f19370d));
+        Function0 function0 = new Function0() { // from class: uo.a0
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit m02;
@@ -2106,30 +2106,30 @@ public final class n extends zm.k {
         } else if (renderState instanceof l.a) {
             p02 = p0((l.a) renderState, context);
         } else {
-            throw new or.p();
+            throw new qr.p();
         }
-        zp.k F1 = F1(p02, renderState);
-        if (this.f19073m.c()) {
+        bq.k F1 = F1(p02, renderState);
+        if (this.f19053m.c()) {
             return z1(F1, context);
         }
         return F1;
     }
 
-    @Override // zm.k
+    @Override // bn.k
     /* renamed from: y1 */
-    public zm.i g(l state) {
+    public bn.i g(l state) {
         Intrinsics.checkNotNullParameter(state, "state");
         if (state instanceof l.j) {
             l.j jVar = (l.j) state;
-            this.f19077q.e(jVar.k(), jVar.b(), jVar.v(), jVar.getComponents());
-            return bn.s.a(l.j.l(jVar, null, null, null, null, null, null, null, null, null, false, false, false, null, null, null, null, null, false, 261887, null));
+            this.f19057q.e(jVar.k(), jVar.b(), jVar.x(), jVar.getComponents());
+            return dn.s.a(l.j.l(jVar, null, null, null, null, null, null, null, null, null, false, false, false, null, null, null, null, null, false, 261887, null));
         }
-        return bn.s.a(state);
+        return dn.s.a(state);
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public interface c {
-        so.f a();
+        uo.f a();
 
         Integer getTheme();
 
@@ -2139,33 +2139,33 @@ public final class n extends zm.k {
         public static final class b implements c {
 
             /* renamed from: a  reason: collision with root package name */
-            private final String f19103a;
+            private final String f19083a;
 
             /* renamed from: b  reason: collision with root package name */
-            private final so.f f19104b;
+            private final uo.f f19084b;
 
             /* renamed from: c  reason: collision with root package name */
-            private final Integer f19105c;
+            private final Integer f19085c;
 
             /* renamed from: d  reason: collision with root package name */
-            private final boolean f19106d;
+            private final boolean f19086d;
 
-            public b(String oneTimeLinkCode, so.f environment, Integer num, boolean z10) {
+            public b(String oneTimeLinkCode, uo.f environment, Integer num, boolean z10) {
                 Intrinsics.checkNotNullParameter(oneTimeLinkCode, "oneTimeLinkCode");
                 Intrinsics.checkNotNullParameter(environment, "environment");
-                this.f19103a = oneTimeLinkCode;
-                this.f19104b = environment;
-                this.f19105c = num;
-                this.f19106d = z10;
+                this.f19083a = oneTimeLinkCode;
+                this.f19084b = environment;
+                this.f19085c = num;
+                this.f19086d = z10;
             }
 
             @Override // com.withpersona.sdk2.inquiry.internal.n.c
-            public so.f a() {
-                return this.f19104b;
+            public uo.f a() {
+                return this.f19084b;
             }
 
             public final String b() {
-                return this.f19103a;
+                return this.f19083a;
             }
 
             public boolean equals(Object obj) {
@@ -2174,36 +2174,36 @@ public final class n extends zm.k {
                 }
                 if (obj instanceof b) {
                     b bVar = (b) obj;
-                    return Intrinsics.areEqual(this.f19103a, bVar.f19103a) && this.f19104b == bVar.f19104b && Intrinsics.areEqual(this.f19105c, bVar.f19105c) && this.f19106d == bVar.f19106d;
+                    return Intrinsics.areEqual(this.f19083a, bVar.f19083a) && this.f19084b == bVar.f19084b && Intrinsics.areEqual(this.f19085c, bVar.f19085c) && this.f19086d == bVar.f19086d;
                 }
                 return false;
             }
 
             @Override // com.withpersona.sdk2.inquiry.internal.n.c
             public Integer getTheme() {
-                return this.f19105c;
+                return this.f19085c;
             }
 
             public int hashCode() {
-                int hashCode = ((this.f19103a.hashCode() * 31) + this.f19104b.hashCode()) * 31;
-                Integer num = this.f19105c;
-                return ((hashCode + (num == null ? 0 : num.hashCode())) * 31) + Boolean.hashCode(this.f19106d);
+                int hashCode = ((this.f19083a.hashCode() * 31) + this.f19084b.hashCode()) * 31;
+                Integer num = this.f19085c;
+                return ((hashCode + (num == null ? 0 : num.hashCode())) * 31) + Boolean.hashCode(this.f19086d);
             }
 
             @Override // com.withpersona.sdk2.inquiry.internal.n.c
             public boolean isCancelled() {
-                return this.f19106d;
+                return this.f19086d;
             }
 
             public String toString() {
-                String str = this.f19103a;
-                so.f fVar = this.f19104b;
-                Integer num = this.f19105c;
-                boolean z10 = this.f19106d;
+                String str = this.f19083a;
+                uo.f fVar = this.f19084b;
+                Integer num = this.f19085c;
+                boolean z10 = this.f19086d;
                 return "OneTimeCodeProps(oneTimeLinkCode=" + str + ", environment=" + fVar + ", theme=" + num + ", isCancelled=" + z10 + ")";
             }
 
-            public /* synthetic */ b(String str, so.f fVar, Integer num, boolean z10, int i10, DefaultConstructorMarker defaultConstructorMarker) {
+            public /* synthetic */ b(String str, uo.f fVar, Integer num, boolean z10, int i10, DefaultConstructorMarker defaultConstructorMarker) {
                 this(str, fVar, num, (i10 & 8) != 0 ? false : z10);
             }
         }
@@ -2212,45 +2212,45 @@ public final class n extends zm.k {
         public static final class a implements c {
 
             /* renamed from: a  reason: collision with root package name */
-            private final String f19097a;
+            private final String f19077a;
 
             /* renamed from: b  reason: collision with root package name */
-            private final String f19098b;
+            private final String f19078b;
 
             /* renamed from: c  reason: collision with root package name */
-            private final String f19099c;
+            private final String f19079c;
 
             /* renamed from: d  reason: collision with root package name */
-            private final so.f f19100d;
+            private final uo.f f19080d;
 
             /* renamed from: e  reason: collision with root package name */
-            private final Integer f19101e;
+            private final Integer f19081e;
 
             /* renamed from: f  reason: collision with root package name */
-            private final boolean f19102f;
+            private final boolean f19082f;
 
-            public a(String inquiryId, String str, String str2, so.f environment, Integer num, boolean z10) {
+            public a(String inquiryId, String str, String str2, uo.f environment, Integer num, boolean z10) {
                 Intrinsics.checkNotNullParameter(inquiryId, "inquiryId");
                 Intrinsics.checkNotNullParameter(environment, "environment");
-                this.f19097a = inquiryId;
-                this.f19098b = str;
-                this.f19099c = str2;
-                this.f19100d = environment;
-                this.f19101e = num;
-                this.f19102f = z10;
+                this.f19077a = inquiryId;
+                this.f19078b = str;
+                this.f19079c = str2;
+                this.f19080d = environment;
+                this.f19081e = num;
+                this.f19082f = z10;
             }
 
             @Override // com.withpersona.sdk2.inquiry.internal.n.c
-            public so.f a() {
-                return this.f19100d;
+            public uo.f a() {
+                return this.f19080d;
             }
 
             public final String b() {
-                return this.f19097a;
+                return this.f19077a;
             }
 
             public final String c() {
-                return this.f19098b;
+                return this.f19078b;
             }
 
             public boolean equals(Object obj) {
@@ -2259,193 +2259,193 @@ public final class n extends zm.k {
                 }
                 if (obj instanceof a) {
                     a aVar = (a) obj;
-                    return Intrinsics.areEqual(this.f19097a, aVar.f19097a) && Intrinsics.areEqual(this.f19098b, aVar.f19098b) && Intrinsics.areEqual(this.f19099c, aVar.f19099c) && this.f19100d == aVar.f19100d && Intrinsics.areEqual(this.f19101e, aVar.f19101e) && this.f19102f == aVar.f19102f;
+                    return Intrinsics.areEqual(this.f19077a, aVar.f19077a) && Intrinsics.areEqual(this.f19078b, aVar.f19078b) && Intrinsics.areEqual(this.f19079c, aVar.f19079c) && this.f19080d == aVar.f19080d && Intrinsics.areEqual(this.f19081e, aVar.f19081e) && this.f19082f == aVar.f19082f;
                 }
                 return false;
             }
 
             @Override // com.withpersona.sdk2.inquiry.internal.n.c
             public Integer getTheme() {
-                return this.f19101e;
+                return this.f19081e;
             }
 
             public int hashCode() {
-                int hashCode = this.f19097a.hashCode() * 31;
-                String str = this.f19098b;
+                int hashCode = this.f19077a.hashCode() * 31;
+                String str = this.f19078b;
                 int hashCode2 = (hashCode + (str == null ? 0 : str.hashCode())) * 31;
-                String str2 = this.f19099c;
-                int hashCode3 = (((hashCode2 + (str2 == null ? 0 : str2.hashCode())) * 31) + this.f19100d.hashCode()) * 31;
-                Integer num = this.f19101e;
-                return ((hashCode3 + (num != null ? num.hashCode() : 0)) * 31) + Boolean.hashCode(this.f19102f);
+                String str2 = this.f19079c;
+                int hashCode3 = (((hashCode2 + (str2 == null ? 0 : str2.hashCode())) * 31) + this.f19080d.hashCode()) * 31;
+                Integer num = this.f19081e;
+                return ((hashCode3 + (num != null ? num.hashCode() : 0)) * 31) + Boolean.hashCode(this.f19082f);
             }
 
             @Override // com.withpersona.sdk2.inquiry.internal.n.c
             public boolean isCancelled() {
-                return this.f19102f;
+                return this.f19082f;
             }
 
             public String toString() {
-                String str = this.f19097a;
-                String str2 = this.f19098b;
-                String str3 = this.f19099c;
-                so.f fVar = this.f19100d;
-                Integer num = this.f19101e;
-                boolean z10 = this.f19102f;
+                String str = this.f19077a;
+                String str2 = this.f19078b;
+                String str3 = this.f19079c;
+                uo.f fVar = this.f19080d;
+                Integer num = this.f19081e;
+                boolean z10 = this.f19082f;
                 return "InquiryProps(inquiryId=" + str + ", sessionToken=" + str2 + ", environmentId=" + str3 + ", environment=" + fVar + ", theme=" + num + ", isCancelled=" + z10 + ")";
             }
 
-            public /* synthetic */ a(String str, String str2, String str3, so.f fVar, Integer num, boolean z10, int i10, DefaultConstructorMarker defaultConstructorMarker) {
+            public /* synthetic */ a(String str, String str2, String str3, uo.f fVar, Integer num, boolean z10, int i10, DefaultConstructorMarker defaultConstructorMarker) {
                 this(str, str2, str3, fVar, num, (i10 & 32) != 0 ? false : z10);
             }
         }
 
         /* renamed from: com.withpersona.sdk2.inquiry.internal.n$c$c  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public static final class C0253c implements c {
+        public static final class C0245c implements c {
 
             /* renamed from: a  reason: collision with root package name */
-            private final String f19107a;
+            private final String f19087a;
 
             /* renamed from: b  reason: collision with root package name */
-            private final String f19108b;
+            private final String f19088b;
 
             /* renamed from: c  reason: collision with root package name */
-            private final String f19109c;
+            private final String f19089c;
 
             /* renamed from: d  reason: collision with root package name */
-            private final String f19110d;
+            private final String f19090d;
 
             /* renamed from: e  reason: collision with root package name */
-            private final String f19111e;
+            private final String f19091e;
 
             /* renamed from: f  reason: collision with root package name */
-            private final Map f19112f;
+            private final Map f19092f;
 
             /* renamed from: g  reason: collision with root package name */
-            private final String f19113g;
+            private final String f19093g;
 
             /* renamed from: h  reason: collision with root package name */
-            private final StaticInquiryTemplate f19114h;
+            private final StaticInquiryTemplate f19094h;
 
             /* renamed from: i  reason: collision with root package name */
-            private final so.f f19115i;
+            private final uo.f f19095i;
 
             /* renamed from: j  reason: collision with root package name */
-            private final Integer f19116j;
+            private final Integer f19096j;
 
             /* renamed from: k  reason: collision with root package name */
-            private final boolean f19117k;
+            private final boolean f19097k;
 
-            public C0253c(String str, String str2, String str3, String str4, String str5, Map map, String str6, StaticInquiryTemplate staticInquiryTemplate, so.f environment, Integer num, boolean z10) {
+            public C0245c(String str, String str2, String str3, String str4, String str5, Map map, String str6, StaticInquiryTemplate staticInquiryTemplate, uo.f environment, Integer num, boolean z10) {
                 Intrinsics.checkNotNullParameter(environment, "environment");
-                this.f19107a = str;
-                this.f19108b = str2;
-                this.f19109c = str3;
-                this.f19110d = str4;
-                this.f19111e = str5;
-                this.f19112f = map;
-                this.f19113g = str6;
-                this.f19114h = staticInquiryTemplate;
-                this.f19115i = environment;
-                this.f19116j = num;
-                this.f19117k = z10;
+                this.f19087a = str;
+                this.f19088b = str2;
+                this.f19089c = str3;
+                this.f19090d = str4;
+                this.f19091e = str5;
+                this.f19092f = map;
+                this.f19093g = str6;
+                this.f19094h = staticInquiryTemplate;
+                this.f19095i = environment;
+                this.f19096j = num;
+                this.f19097k = z10;
             }
 
             @Override // com.withpersona.sdk2.inquiry.internal.n.c
-            public so.f a() {
-                return this.f19115i;
+            public uo.f a() {
+                return this.f19095i;
             }
 
             public final String b() {
-                return this.f19109c;
+                return this.f19089c;
             }
 
             public final String c() {
-                return this.f19111e;
+                return this.f19091e;
             }
 
             public final Map d() {
-                return this.f19112f;
+                return this.f19092f;
             }
 
             public final String e() {
-                return this.f19110d;
+                return this.f19090d;
             }
 
             public boolean equals(Object obj) {
                 if (this == obj) {
                     return true;
                 }
-                if (obj instanceof C0253c) {
-                    C0253c c0253c = (C0253c) obj;
-                    return Intrinsics.areEqual(this.f19107a, c0253c.f19107a) && Intrinsics.areEqual(this.f19108b, c0253c.f19108b) && Intrinsics.areEqual(this.f19109c, c0253c.f19109c) && Intrinsics.areEqual(this.f19110d, c0253c.f19110d) && Intrinsics.areEqual(this.f19111e, c0253c.f19111e) && Intrinsics.areEqual(this.f19112f, c0253c.f19112f) && Intrinsics.areEqual(this.f19113g, c0253c.f19113g) && Intrinsics.areEqual(this.f19114h, c0253c.f19114h) && this.f19115i == c0253c.f19115i && Intrinsics.areEqual(this.f19116j, c0253c.f19116j) && this.f19117k == c0253c.f19117k;
+                if (obj instanceof C0245c) {
+                    C0245c c0245c = (C0245c) obj;
+                    return Intrinsics.areEqual(this.f19087a, c0245c.f19087a) && Intrinsics.areEqual(this.f19088b, c0245c.f19088b) && Intrinsics.areEqual(this.f19089c, c0245c.f19089c) && Intrinsics.areEqual(this.f19090d, c0245c.f19090d) && Intrinsics.areEqual(this.f19091e, c0245c.f19091e) && Intrinsics.areEqual(this.f19092f, c0245c.f19092f) && Intrinsics.areEqual(this.f19093g, c0245c.f19093g) && Intrinsics.areEqual(this.f19094h, c0245c.f19094h) && this.f19095i == c0245c.f19095i && Intrinsics.areEqual(this.f19096j, c0245c.f19096j) && this.f19097k == c0245c.f19097k;
                 }
                 return false;
             }
 
             public final StaticInquiryTemplate f() {
-                return this.f19114h;
+                return this.f19094h;
             }
 
             public final String g() {
-                return this.f19107a;
+                return this.f19087a;
             }
 
             @Override // com.withpersona.sdk2.inquiry.internal.n.c
             public Integer getTheme() {
-                return this.f19116j;
+                return this.f19096j;
             }
 
             public final String h() {
-                return this.f19108b;
+                return this.f19088b;
             }
 
             public int hashCode() {
-                String str = this.f19107a;
+                String str = this.f19087a;
                 int hashCode = (str == null ? 0 : str.hashCode()) * 31;
-                String str2 = this.f19108b;
+                String str2 = this.f19088b;
                 int hashCode2 = (hashCode + (str2 == null ? 0 : str2.hashCode())) * 31;
-                String str3 = this.f19109c;
+                String str3 = this.f19089c;
                 int hashCode3 = (hashCode2 + (str3 == null ? 0 : str3.hashCode())) * 31;
-                String str4 = this.f19110d;
+                String str4 = this.f19090d;
                 int hashCode4 = (hashCode3 + (str4 == null ? 0 : str4.hashCode())) * 31;
-                String str5 = this.f19111e;
+                String str5 = this.f19091e;
                 int hashCode5 = (hashCode4 + (str5 == null ? 0 : str5.hashCode())) * 31;
-                Map map = this.f19112f;
+                Map map = this.f19092f;
                 int hashCode6 = (hashCode5 + (map == null ? 0 : map.hashCode())) * 31;
-                String str6 = this.f19113g;
+                String str6 = this.f19093g;
                 int hashCode7 = (hashCode6 + (str6 == null ? 0 : str6.hashCode())) * 31;
-                StaticInquiryTemplate staticInquiryTemplate = this.f19114h;
-                int hashCode8 = (((hashCode7 + (staticInquiryTemplate == null ? 0 : staticInquiryTemplate.hashCode())) * 31) + this.f19115i.hashCode()) * 31;
-                Integer num = this.f19116j;
-                return ((hashCode8 + (num != null ? num.hashCode() : 0)) * 31) + Boolean.hashCode(this.f19117k);
+                StaticInquiryTemplate staticInquiryTemplate = this.f19094h;
+                int hashCode8 = (((hashCode7 + (staticInquiryTemplate == null ? 0 : staticInquiryTemplate.hashCode())) * 31) + this.f19095i.hashCode()) * 31;
+                Integer num = this.f19096j;
+                return ((hashCode8 + (num != null ? num.hashCode() : 0)) * 31) + Boolean.hashCode(this.f19097k);
             }
 
             public final String i() {
-                return this.f19113g;
+                return this.f19093g;
             }
 
             @Override // com.withpersona.sdk2.inquiry.internal.n.c
             public boolean isCancelled() {
-                return this.f19117k;
+                return this.f19097k;
             }
 
             public String toString() {
-                String str = this.f19107a;
-                String str2 = this.f19108b;
-                String str3 = this.f19109c;
-                String str4 = this.f19110d;
-                String str5 = this.f19111e;
-                Map map = this.f19112f;
-                String str6 = this.f19113g;
-                StaticInquiryTemplate staticInquiryTemplate = this.f19114h;
-                so.f fVar = this.f19115i;
-                Integer num = this.f19116j;
-                boolean z10 = this.f19117k;
+                String str = this.f19087a;
+                String str2 = this.f19088b;
+                String str3 = this.f19089c;
+                String str4 = this.f19090d;
+                String str5 = this.f19091e;
+                Map map = this.f19092f;
+                String str6 = this.f19093g;
+                StaticInquiryTemplate staticInquiryTemplate = this.f19094h;
+                uo.f fVar = this.f19095i;
+                Integer num = this.f19096j;
+                boolean z10 = this.f19097k;
                 return "TemplateProps(templateId=" + str + ", templateVersion=" + str2 + ", accountId=" + str3 + ", referenceId=" + str4 + ", environmentId=" + str5 + ", fields=" + map + ", themeSetId=" + str6 + ", staticInquiryTemplate=" + staticInquiryTemplate + ", environment=" + fVar + ", theme=" + num + ", isCancelled=" + z10 + ")";
             }
 
-            public /* synthetic */ C0253c(String str, String str2, String str3, String str4, String str5, Map map, String str6, StaticInquiryTemplate staticInquiryTemplate, so.f fVar, Integer num, boolean z10, int i10, DefaultConstructorMarker defaultConstructorMarker) {
+            public /* synthetic */ C0245c(String str, String str2, String str3, String str4, String str5, Map map, String str6, StaticInquiryTemplate staticInquiryTemplate, uo.f fVar, Integer num, boolean z10, int i10, DefaultConstructorMarker defaultConstructorMarker) {
                 this(str, str2, str3, str4, str5, map, str6, staticInquiryTemplate, fVar, num, (i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) != 0 ? false : z10);
             }
         }
@@ -2456,66 +2456,66 @@ public final class n extends zm.k {
 
         /* renamed from: com.withpersona.sdk2.inquiry.internal.n$b$b  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public static final class C0252b implements b {
+        public static final class C0244b implements b {
             @NotNull
-            public static final Parcelable.Creator<C0252b> CREATOR = new a();
+            public static final Parcelable.Creator<C0244b> CREATOR = new a();
 
             /* renamed from: d  reason: collision with root package name */
-            private final String f19087d;
+            private final String f19067d;
 
             /* renamed from: e  reason: collision with root package name */
-            private final String f19088e;
+            private final String f19068e;
 
             /* renamed from: i  reason: collision with root package name */
-            private final Map f19089i;
+            private final Map f19069i;
 
             /* renamed from: o  reason: collision with root package name */
-            private final String f19090o;
+            private final String f19070o;
 
             /* renamed from: com.withpersona.sdk2.inquiry.internal.n$b$b$a */
             /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
             public static final class a implements Parcelable.Creator {
                 @Override // android.os.Parcelable.Creator
                 /* renamed from: a */
-                public final C0252b createFromParcel(Parcel parcel) {
+                public final C0244b createFromParcel(Parcel parcel) {
                     Intrinsics.checkNotNullParameter(parcel, "parcel");
                     String readString = parcel.readString();
                     String readString2 = parcel.readString();
                     int readInt = parcel.readInt();
                     LinkedHashMap linkedHashMap = new LinkedHashMap(readInt);
                     for (int i10 = 0; i10 != readInt; i10++) {
-                        linkedHashMap.put(parcel.readString(), parcel.readParcelable(C0252b.class.getClassLoader()));
+                        linkedHashMap.put(parcel.readString(), parcel.readParcelable(C0244b.class.getClassLoader()));
                     }
-                    return new C0252b(readString, readString2, linkedHashMap, parcel.readString());
+                    return new C0244b(readString, readString2, linkedHashMap, parcel.readString());
                 }
 
                 @Override // android.os.Parcelable.Creator
                 /* renamed from: b */
-                public final C0252b[] newArray(int i10) {
-                    return new C0252b[i10];
+                public final C0244b[] newArray(int i10) {
+                    return new C0244b[i10];
                 }
             }
 
-            public C0252b(String inquiryId, String inquiryStatus, Map fields, String str) {
+            public C0244b(String inquiryId, String inquiryStatus, Map fields, String str) {
                 Intrinsics.checkNotNullParameter(inquiryId, "inquiryId");
                 Intrinsics.checkNotNullParameter(inquiryStatus, "inquiryStatus");
                 Intrinsics.checkNotNullParameter(fields, "fields");
-                this.f19087d = inquiryId;
-                this.f19088e = inquiryStatus;
-                this.f19089i = fields;
-                this.f19090o = str;
+                this.f19067d = inquiryId;
+                this.f19068e = inquiryStatus;
+                this.f19069i = fields;
+                this.f19070o = str;
             }
 
             public final Map a() {
-                return this.f19089i;
+                return this.f19069i;
             }
 
             public final String b() {
-                return this.f19087d;
+                return this.f19067d;
             }
 
             public final String c() {
-                return this.f19088e;
+                return this.f19068e;
             }
 
             @Override // android.os.Parcelable
@@ -2527,44 +2527,44 @@ public final class n extends zm.k {
                 if (this == obj) {
                     return true;
                 }
-                if (obj instanceof C0252b) {
-                    C0252b c0252b = (C0252b) obj;
-                    return Intrinsics.areEqual(this.f19087d, c0252b.f19087d) && Intrinsics.areEqual(this.f19088e, c0252b.f19088e) && Intrinsics.areEqual(this.f19089i, c0252b.f19089i) && Intrinsics.areEqual(this.f19090o, c0252b.f19090o);
+                if (obj instanceof C0244b) {
+                    C0244b c0244b = (C0244b) obj;
+                    return Intrinsics.areEqual(this.f19067d, c0244b.f19067d) && Intrinsics.areEqual(this.f19068e, c0244b.f19068e) && Intrinsics.areEqual(this.f19069i, c0244b.f19069i) && Intrinsics.areEqual(this.f19070o, c0244b.f19070o);
                 }
                 return false;
             }
 
             public int hashCode() {
-                int hashCode = ((((this.f19087d.hashCode() * 31) + this.f19088e.hashCode()) * 31) + this.f19089i.hashCode()) * 31;
-                String str = this.f19090o;
+                int hashCode = ((((this.f19067d.hashCode() * 31) + this.f19068e.hashCode()) * 31) + this.f19069i.hashCode()) * 31;
+                String str = this.f19070o;
                 return hashCode + (str == null ? 0 : str.hashCode());
             }
 
             @Override // com.withpersona.sdk2.inquiry.internal.n.b
             public String k() {
-                return this.f19090o;
+                return this.f19070o;
             }
 
             public String toString() {
-                String str = this.f19087d;
-                String str2 = this.f19088e;
-                Map map = this.f19089i;
-                String str3 = this.f19090o;
+                String str = this.f19067d;
+                String str2 = this.f19068e;
+                Map map = this.f19069i;
+                String str3 = this.f19070o;
                 return "Complete(inquiryId=" + str + ", inquiryStatus=" + str2 + ", fields=" + map + ", sessionToken=" + str3 + ")";
             }
 
             @Override // android.os.Parcelable
             public final void writeToParcel(Parcel dest, int i10) {
                 Intrinsics.checkNotNullParameter(dest, "dest");
-                dest.writeString(this.f19087d);
-                dest.writeString(this.f19088e);
-                Map map = this.f19089i;
+                dest.writeString(this.f19067d);
+                dest.writeString(this.f19068e);
+                Map map = this.f19069i;
                 dest.writeInt(map.size());
                 for (Map.Entry entry : map.entrySet()) {
                     dest.writeString((String) entry.getKey());
                     dest.writeParcelable((Parcelable) entry.getValue(), i10);
                 }
-                dest.writeString(this.f19090o);
+                dest.writeString(this.f19070o);
             }
         }
 
@@ -2574,16 +2574,16 @@ public final class n extends zm.k {
             public static final Parcelable.Creator<c> CREATOR = new a();
 
             /* renamed from: d  reason: collision with root package name */
-            private final String f19091d;
+            private final String f19071d;
 
             /* renamed from: e  reason: collision with root package name */
-            private final mq.d f19092e;
+            private final oq.d f19072e;
 
             /* renamed from: i  reason: collision with root package name */
-            private final InternalErrorInfo f19093i;
+            private final InternalErrorInfo f19073i;
 
             /* renamed from: o  reason: collision with root package name */
-            private final String f19094o;
+            private final String f19074o;
 
             /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
             public static final class a implements Parcelable.Creator {
@@ -2591,7 +2591,7 @@ public final class n extends zm.k {
                 /* renamed from: a */
                 public final c createFromParcel(Parcel parcel) {
                     Intrinsics.checkNotNullParameter(parcel, "parcel");
-                    return new c(parcel.readString(), (mq.d) parcel.readParcelable(c.class.getClassLoader()), (InternalErrorInfo) parcel.readParcelable(c.class.getClassLoader()), parcel.readString());
+                    return new c(parcel.readString(), (oq.d) parcel.readParcelable(c.class.getClassLoader()), (InternalErrorInfo) parcel.readParcelable(c.class.getClassLoader()), parcel.readString());
                 }
 
                 @Override // android.os.Parcelable.Creator
@@ -2601,25 +2601,25 @@ public final class n extends zm.k {
                 }
             }
 
-            public c(String str, mq.d errorCode, InternalErrorInfo cause, String str2) {
+            public c(String str, oq.d errorCode, InternalErrorInfo cause, String str2) {
                 Intrinsics.checkNotNullParameter(errorCode, "errorCode");
                 Intrinsics.checkNotNullParameter(cause, "cause");
-                this.f19091d = str;
-                this.f19092e = errorCode;
-                this.f19093i = cause;
-                this.f19094o = str2;
+                this.f19071d = str;
+                this.f19072e = errorCode;
+                this.f19073i = cause;
+                this.f19074o = str2;
             }
 
             public final InternalErrorInfo a() {
-                return this.f19093i;
+                return this.f19073i;
             }
 
             public final String b() {
-                return this.f19091d;
+                return this.f19071d;
             }
 
-            public final mq.d c() {
-                return this.f19092e;
+            public final oq.d c() {
+                return this.f19072e;
             }
 
             @Override // android.os.Parcelable
@@ -2633,38 +2633,38 @@ public final class n extends zm.k {
                 }
                 if (obj instanceof c) {
                     c cVar = (c) obj;
-                    return Intrinsics.areEqual(this.f19091d, cVar.f19091d) && this.f19092e == cVar.f19092e && Intrinsics.areEqual(this.f19093i, cVar.f19093i) && Intrinsics.areEqual(this.f19094o, cVar.f19094o);
+                    return Intrinsics.areEqual(this.f19071d, cVar.f19071d) && this.f19072e == cVar.f19072e && Intrinsics.areEqual(this.f19073i, cVar.f19073i) && Intrinsics.areEqual(this.f19074o, cVar.f19074o);
                 }
                 return false;
             }
 
             public int hashCode() {
-                String str = this.f19091d;
-                int hashCode = (((((str == null ? 0 : str.hashCode()) * 31) + this.f19092e.hashCode()) * 31) + this.f19093i.hashCode()) * 31;
-                String str2 = this.f19094o;
+                String str = this.f19071d;
+                int hashCode = (((((str == null ? 0 : str.hashCode()) * 31) + this.f19072e.hashCode()) * 31) + this.f19073i.hashCode()) * 31;
+                String str2 = this.f19074o;
                 return hashCode + (str2 != null ? str2.hashCode() : 0);
             }
 
             @Override // com.withpersona.sdk2.inquiry.internal.n.b
             public String k() {
-                return this.f19094o;
+                return this.f19074o;
             }
 
             public String toString() {
-                String str = this.f19091d;
-                mq.d dVar = this.f19092e;
-                InternalErrorInfo internalErrorInfo = this.f19093i;
-                String str2 = this.f19094o;
+                String str = this.f19071d;
+                oq.d dVar = this.f19072e;
+                InternalErrorInfo internalErrorInfo = this.f19073i;
+                String str2 = this.f19074o;
                 return "Error(debugMessage=" + str + ", errorCode=" + dVar + ", cause=" + internalErrorInfo + ", sessionToken=" + str2 + ")";
             }
 
             @Override // android.os.Parcelable
             public final void writeToParcel(Parcel dest, int i10) {
                 Intrinsics.checkNotNullParameter(dest, "dest");
-                dest.writeString(this.f19091d);
-                dest.writeParcelable(this.f19092e, i10);
-                dest.writeParcelable(this.f19093i, i10);
-                dest.writeString(this.f19094o);
+                dest.writeString(this.f19071d);
+                dest.writeParcelable(this.f19072e, i10);
+                dest.writeParcelable(this.f19073i, i10);
+                dest.writeString(this.f19074o);
             }
         }
 
@@ -2674,10 +2674,10 @@ public final class n extends zm.k {
             public static final Parcelable.Creator<d> CREATOR = new a();
 
             /* renamed from: d  reason: collision with root package name */
-            private final String f19095d;
+            private final String f19075d;
 
             /* renamed from: e  reason: collision with root package name */
-            private final String f19096e;
+            private final String f19076e;
 
             /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
             public static final class a implements Parcelable.Creator {
@@ -2697,12 +2697,12 @@ public final class n extends zm.k {
 
             public d(String inquiryId, String str) {
                 Intrinsics.checkNotNullParameter(inquiryId, "inquiryId");
-                this.f19095d = inquiryId;
-                this.f19096e = str;
+                this.f19075d = inquiryId;
+                this.f19076e = str;
             }
 
             public final String a() {
-                return this.f19095d;
+                return this.f19075d;
             }
 
             @Override // android.os.Parcelable
@@ -2716,33 +2716,33 @@ public final class n extends zm.k {
                 }
                 if (obj instanceof d) {
                     d dVar = (d) obj;
-                    return Intrinsics.areEqual(this.f19095d, dVar.f19095d) && Intrinsics.areEqual(this.f19096e, dVar.f19096e);
+                    return Intrinsics.areEqual(this.f19075d, dVar.f19075d) && Intrinsics.areEqual(this.f19076e, dVar.f19076e);
                 }
                 return false;
             }
 
             public int hashCode() {
-                int hashCode = this.f19095d.hashCode() * 31;
-                String str = this.f19096e;
+                int hashCode = this.f19075d.hashCode() * 31;
+                String str = this.f19076e;
                 return hashCode + (str == null ? 0 : str.hashCode());
             }
 
             @Override // com.withpersona.sdk2.inquiry.internal.n.b
             public String k() {
-                return this.f19096e;
+                return this.f19076e;
             }
 
             public String toString() {
-                String str = this.f19095d;
-                String str2 = this.f19096e;
+                String str = this.f19075d;
+                String str2 = this.f19076e;
                 return "ReinitializeWithFallbackMode(inquiryId=" + str + ", sessionToken=" + str2 + ")";
             }
 
             @Override // android.os.Parcelable
             public final void writeToParcel(Parcel dest, int i10) {
                 Intrinsics.checkNotNullParameter(dest, "dest");
-                dest.writeString(this.f19095d);
-                dest.writeString(this.f19096e);
+                dest.writeString(this.f19075d);
+                dest.writeString(this.f19076e);
             }
         }
 
@@ -2751,35 +2751,35 @@ public final class n extends zm.k {
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements b {
             @NotNull
-            public static final Parcelable.Creator<a> CREATOR = new C0251a();
+            public static final Parcelable.Creator<a> CREATOR = new C0243a();
 
             /* renamed from: d  reason: collision with root package name */
-            private final String f19079d;
+            private final String f19059d;
 
             /* renamed from: e  reason: collision with root package name */
-            private final String f19080e;
+            private final String f19060e;
 
             /* renamed from: i  reason: collision with root package name */
-            private final StepStyle f19081i;
+            private final StepStyle f19061i;
 
             /* renamed from: o  reason: collision with root package name */
-            private final String f19082o;
+            private final String f19062o;
 
             /* renamed from: p  reason: collision with root package name */
-            private final String f19083p;
+            private final String f19063p;
 
             /* renamed from: q  reason: collision with root package name */
-            private final String f19084q;
+            private final String f19064q;
 
             /* renamed from: r  reason: collision with root package name */
-            private final String f19085r;
+            private final String f19065r;
 
             /* renamed from: s  reason: collision with root package name */
-            private final boolean f19086s;
+            private final boolean f19066s;
 
             /* renamed from: com.withpersona.sdk2.inquiry.internal.n$b$a$a  reason: collision with other inner class name */
             /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-            public static final class C0251a implements Parcelable.Creator {
+            public static final class C0243a implements Parcelable.Creator {
                 @Override // android.os.Parcelable.Creator
                 /* renamed from: a */
                 public final a createFromParcel(Parcel parcel) {
@@ -2795,30 +2795,30 @@ public final class n extends zm.k {
             }
 
             public a(String str, String str2, StepStyle stepStyle, String str3, String str4, String str5, String str6, boolean z10) {
-                this.f19079d = str;
-                this.f19080e = str2;
-                this.f19081i = stepStyle;
-                this.f19082o = str3;
-                this.f19083p = str4;
-                this.f19084q = str5;
-                this.f19085r = str6;
-                this.f19086s = z10;
+                this.f19059d = str;
+                this.f19060e = str2;
+                this.f19061i = stepStyle;
+                this.f19062o = str3;
+                this.f19063p = str4;
+                this.f19064q = str5;
+                this.f19065r = str6;
+                this.f19066s = z10;
             }
 
             public final String a() {
-                return this.f19085r;
+                return this.f19065r;
             }
 
             public final boolean b() {
-                return this.f19086s;
+                return this.f19066s;
             }
 
             public final String c() {
-                return this.f19079d;
+                return this.f19059d;
             }
 
             public final String d() {
-                return this.f19083p;
+                return this.f19063p;
             }
 
             @Override // android.os.Parcelable
@@ -2827,7 +2827,7 @@ public final class n extends zm.k {
             }
 
             public final String e() {
-                return this.f19084q;
+                return this.f19064q;
             }
 
             public boolean equals(Object obj) {
@@ -2836,64 +2836,64 @@ public final class n extends zm.k {
                 }
                 if (obj instanceof a) {
                     a aVar = (a) obj;
-                    return Intrinsics.areEqual(this.f19079d, aVar.f19079d) && Intrinsics.areEqual(this.f19080e, aVar.f19080e) && Intrinsics.areEqual(this.f19081i, aVar.f19081i) && Intrinsics.areEqual(this.f19082o, aVar.f19082o) && Intrinsics.areEqual(this.f19083p, aVar.f19083p) && Intrinsics.areEqual(this.f19084q, aVar.f19084q) && Intrinsics.areEqual(this.f19085r, aVar.f19085r) && this.f19086s == aVar.f19086s;
+                    return Intrinsics.areEqual(this.f19059d, aVar.f19059d) && Intrinsics.areEqual(this.f19060e, aVar.f19060e) && Intrinsics.areEqual(this.f19061i, aVar.f19061i) && Intrinsics.areEqual(this.f19062o, aVar.f19062o) && Intrinsics.areEqual(this.f19063p, aVar.f19063p) && Intrinsics.areEqual(this.f19064q, aVar.f19064q) && Intrinsics.areEqual(this.f19065r, aVar.f19065r) && this.f19066s == aVar.f19066s;
                 }
                 return false;
             }
 
             public final StepStyle f() {
-                return this.f19081i;
+                return this.f19061i;
             }
 
-            public final String g() {
-                return this.f19082o;
+            public final String h() {
+                return this.f19062o;
             }
 
             public int hashCode() {
-                String str = this.f19079d;
+                String str = this.f19059d;
                 int hashCode = (str == null ? 0 : str.hashCode()) * 31;
-                String str2 = this.f19080e;
+                String str2 = this.f19060e;
                 int hashCode2 = (hashCode + (str2 == null ? 0 : str2.hashCode())) * 31;
-                StepStyle stepStyle = this.f19081i;
+                StepStyle stepStyle = this.f19061i;
                 int hashCode3 = (hashCode2 + (stepStyle == null ? 0 : stepStyle.hashCode())) * 31;
-                String str3 = this.f19082o;
+                String str3 = this.f19062o;
                 int hashCode4 = (hashCode3 + (str3 == null ? 0 : str3.hashCode())) * 31;
-                String str4 = this.f19083p;
+                String str4 = this.f19063p;
                 int hashCode5 = (hashCode4 + (str4 == null ? 0 : str4.hashCode())) * 31;
-                String str5 = this.f19084q;
+                String str5 = this.f19064q;
                 int hashCode6 = (hashCode5 + (str5 == null ? 0 : str5.hashCode())) * 31;
-                String str6 = this.f19085r;
-                return ((hashCode6 + (str6 != null ? str6.hashCode() : 0)) * 31) + Boolean.hashCode(this.f19086s);
+                String str6 = this.f19065r;
+                return ((hashCode6 + (str6 != null ? str6.hashCode() : 0)) * 31) + Boolean.hashCode(this.f19066s);
             }
 
             @Override // com.withpersona.sdk2.inquiry.internal.n.b
             public String k() {
-                return this.f19080e;
+                return this.f19060e;
             }
 
             public String toString() {
-                String str = this.f19079d;
-                String str2 = this.f19080e;
-                StepStyle stepStyle = this.f19081i;
-                String str3 = this.f19082o;
-                String str4 = this.f19083p;
-                String str5 = this.f19084q;
-                String str6 = this.f19085r;
-                boolean z10 = this.f19086s;
+                String str = this.f19059d;
+                String str2 = this.f19060e;
+                StepStyle stepStyle = this.f19061i;
+                String str3 = this.f19062o;
+                String str4 = this.f19063p;
+                String str5 = this.f19064q;
+                String str6 = this.f19065r;
+                boolean z10 = this.f19066s;
                 return "Cancel(inquiryId=" + str + ", sessionToken=" + str2 + ", styles=" + stepStyle + ", title=" + str3 + ", message=" + str4 + ", resumeButtonText=" + str5 + ", cancelButtonText=" + str6 + ", force=" + z10 + ")";
             }
 
             @Override // android.os.Parcelable
             public final void writeToParcel(Parcel dest, int i10) {
                 Intrinsics.checkNotNullParameter(dest, "dest");
-                dest.writeString(this.f19079d);
-                dest.writeString(this.f19080e);
-                dest.writeParcelable(this.f19081i, i10);
-                dest.writeString(this.f19082o);
-                dest.writeString(this.f19083p);
-                dest.writeString(this.f19084q);
-                dest.writeString(this.f19085r);
-                dest.writeInt(this.f19086s ? 1 : 0);
+                dest.writeString(this.f19059d);
+                dest.writeString(this.f19060e);
+                dest.writeParcelable(this.f19061i, i10);
+                dest.writeString(this.f19062o);
+                dest.writeString(this.f19063p);
+                dest.writeString(this.f19064q);
+                dest.writeString(this.f19065r);
+                dest.writeInt(this.f19066s ? 1 : 0);
             }
 
             public /* synthetic */ a(String str, String str2, StepStyle stepStyle, String str3, String str4, String str5, String str6, boolean z10, int i10, DefaultConstructorMarker defaultConstructorMarker) {

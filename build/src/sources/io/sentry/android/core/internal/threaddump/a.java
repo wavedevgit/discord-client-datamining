@@ -3,13 +3,13 @@ package io.sentry.android.core.internal.threaddump;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public int f27982a;
+    public int f27126a;
 
     /* renamed from: b  reason: collision with root package name */
-    public String f27983b;
+    public String f27127b;
 
     public a(int i10, String str) {
-        this.f27982a = i10;
-        this.f27983b = str;
+        this.f27126a = i10;
+        this.f27127b = str;
     }
 }

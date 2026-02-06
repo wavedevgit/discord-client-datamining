@@ -14,35 +14,35 @@ public abstract class h {
     class a extends h {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ h f17921a;
+        final /* synthetic */ h f17901a;
 
         a(h hVar) {
-            this.f17921a = hVar;
+            this.f17901a = hVar;
         }
 
         @Override // com.squareup.moshi.h
         public Object fromJson(m mVar) {
-            return this.f17921a.fromJson(mVar);
+            return this.f17901a.fromJson(mVar);
         }
 
         @Override // com.squareup.moshi.h
         boolean isLenient() {
-            return this.f17921a.isLenient();
+            return this.f17901a.isLenient();
         }
 
         @Override // com.squareup.moshi.h
         public void toJson(t tVar, Object obj) {
-            boolean L = tVar.L();
-            tVar.S0(true);
+            boolean z10 = tVar.z();
+            tVar.L0(true);
             try {
-                this.f17921a.toJson(tVar, obj);
+                this.f17901a.toJson(tVar, obj);
             } finally {
-                tVar.S0(L);
+                tVar.L0(z10);
             }
         }
 
         public String toString() {
-            return this.f17921a + ".serializeNulls()";
+            return this.f17901a + ".serializeNulls()";
         }
     }
 
@@ -51,20 +51,20 @@ public abstract class h {
     public class b extends h {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ h f17923a;
+        final /* synthetic */ h f17903a;
 
         b(h hVar) {
-            this.f17923a = hVar;
+            this.f17903a = hVar;
         }
 
         @Override // com.squareup.moshi.h
         public Object fromJson(m mVar) {
-            boolean h10 = mVar.h();
-            mVar.w(true);
+            boolean g10 = mVar.g();
+            mVar.A(true);
             try {
-                return this.f17923a.fromJson(mVar);
+                return this.f17903a.fromJson(mVar);
             } finally {
-                mVar.w(h10);
+                mVar.A(g10);
             }
         }
 
@@ -75,17 +75,17 @@ public abstract class h {
 
         @Override // com.squareup.moshi.h
         public void toJson(t tVar, Object obj) {
-            boolean N = tVar.N();
-            tVar.w(true);
+            boolean C = tVar.C();
+            tVar.A(true);
             try {
-                this.f17923a.toJson(tVar, obj);
+                this.f17903a.toJson(tVar, obj);
             } finally {
-                tVar.w(N);
+                tVar.A(C);
             }
         }
 
         public String toString() {
-            return this.f17923a + ".lenient()";
+            return this.f17903a + ".lenient()";
         }
     }
 
@@ -93,35 +93,35 @@ public abstract class h {
     class c extends h {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ h f17925a;
+        final /* synthetic */ h f17905a;
 
         c(h hVar) {
-            this.f17925a = hVar;
+            this.f17905a = hVar;
         }
 
         @Override // com.squareup.moshi.h
         public Object fromJson(m mVar) {
             boolean a10 = mVar.a();
-            mVar.D0(true);
+            mVar.Y(true);
             try {
-                return this.f17925a.fromJson(mVar);
+                return this.f17905a.fromJson(mVar);
             } finally {
-                mVar.D0(a10);
+                mVar.Y(a10);
             }
         }
 
         @Override // com.squareup.moshi.h
         boolean isLenient() {
-            return this.f17925a.isLenient();
+            return this.f17905a.isLenient();
         }
 
         @Override // com.squareup.moshi.h
         public void toJson(t tVar, Object obj) {
-            this.f17925a.toJson(tVar, obj);
+            this.f17905a.toJson(tVar, obj);
         }
 
         public String toString() {
-            return this.f17925a + ".failOnUnknown()";
+            return this.f17905a + ".failOnUnknown()";
         }
     }
 
@@ -129,39 +129,39 @@ public abstract class h {
     class d extends h {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ h f17927a;
+        final /* synthetic */ h f17907a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ String f17928b;
+        final /* synthetic */ String f17908b;
 
         d(h hVar, String str) {
-            this.f17927a = hVar;
-            this.f17928b = str;
+            this.f17907a = hVar;
+            this.f17908b = str;
         }
 
         @Override // com.squareup.moshi.h
         public Object fromJson(m mVar) {
-            return this.f17927a.fromJson(mVar);
+            return this.f17907a.fromJson(mVar);
         }
 
         @Override // com.squareup.moshi.h
         boolean isLenient() {
-            return this.f17927a.isLenient();
+            return this.f17907a.isLenient();
         }
 
         @Override // com.squareup.moshi.h
         public void toJson(t tVar, Object obj) {
-            String F = tVar.F();
-            tVar.N0(this.f17928b);
+            String y10 = tVar.y();
+            tVar.K0(this.f17908b);
             try {
-                this.f17927a.toJson(tVar, obj);
+                this.f17907a.toJson(tVar, obj);
             } finally {
-                tVar.N0(F);
+                tVar.K0(y10);
             }
         }
 
         public String toString() {
-            return this.f17927a + ".indent(\"" + this.f17928b + "\")";
+            return this.f17907a + ".indent(\"" + this.f17908b + "\")";
         }
     }
 
@@ -177,7 +177,7 @@ public abstract class h {
     public abstract Object fromJson(m mVar);
 
     public final Object fromJson(BufferedSource bufferedSource) {
-        return fromJson(m.y(bufferedSource));
+        return fromJson(m.p(bufferedSource));
     }
 
     public final Object fromJsonValue(Object obj) {
@@ -204,17 +204,17 @@ public abstract class h {
     }
 
     public final h nonNull() {
-        if (this instanceof ym.a) {
+        if (this instanceof an.a) {
             return this;
         }
-        return new ym.a(this);
+        return new an.a(this);
     }
 
     public final h nullSafe() {
-        if (this instanceof ym.b) {
+        if (this instanceof an.b) {
             return this;
         }
-        return new ym.b(this);
+        return new an.b(this);
     }
 
     public final h serializeNulls() {
@@ -224,23 +224,23 @@ public abstract class h {
     public abstract void toJson(t tVar, Object obj);
 
     public final void toJson(BufferedSink bufferedSink, Object obj) {
-        toJson(t.D0(bufferedSink), obj);
+        toJson(t.Y(bufferedSink), obj);
     }
 
     public final Object toJsonValue(Object obj) {
         s sVar = new s();
         try {
             toJson(sVar, obj);
-            return sVar.B1();
+            return sVar.A1();
         } catch (IOException e10) {
             throw new AssertionError(e10);
         }
     }
 
     public final Object fromJson(String str) {
-        m y10 = m.y(new Buffer().o0(str));
-        Object fromJson = fromJson(y10);
-        if (isLenient() || y10.E() == m.c.END_DOCUMENT) {
+        m p10 = m.p(new Buffer().q0(str));
+        Object fromJson = fromJson(p10);
+        if (isLenient() || p10.s() == m.c.END_DOCUMENT) {
             return fromJson;
         }
         throw new j("JSON document was not fully consumed.");
@@ -250,7 +250,7 @@ public abstract class h {
         Buffer buffer = new Buffer();
         try {
             toJson(buffer, obj);
-            return buffer.T1();
+            return buffer.S1();
         } catch (IOException e10) {
             throw new AssertionError(e10);
         }

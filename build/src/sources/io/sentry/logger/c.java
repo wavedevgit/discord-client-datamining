@@ -5,9 +5,9 @@ import io.sentry.k4;
 public final class c implements a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final k4 f29142a;
+    private final k4 f28286a;
 
     public c(k4 k4Var) {
-        this.f29142a = k4Var;
+        this.f28286a = k4Var;
     }
 }

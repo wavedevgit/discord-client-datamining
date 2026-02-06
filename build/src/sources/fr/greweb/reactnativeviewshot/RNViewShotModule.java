@@ -31,10 +31,10 @@ public class RNViewShotModule extends ReactContextBaseJavaModule {
     private static class a extends GuardedAsyncTask implements FilenameFilter {
 
         /* renamed from: a  reason: collision with root package name */
-        private final File f23425a;
+        private final File f23701a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final File f23426b;
+        private final File f23702b;
 
         private void a(File file) {
             File[] listFiles = file.listFiles(this);
@@ -54,18 +54,18 @@ public class RNViewShotModule extends ReactContextBaseJavaModule {
 
         private a(ReactContext reactContext) {
             super(reactContext);
-            this.f23425a = reactContext.getCacheDir();
-            this.f23426b = reactContext.getExternalCacheDir();
+            this.f23701a = reactContext.getCacheDir();
+            this.f23702b = reactContext.getExternalCacheDir();
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
         @Override // com.facebook.react.bridge.GuardedAsyncTask
         public void doInBackgroundGuarded(Void... voidArr) {
-            File file = this.f23425a;
+            File file = this.f23701a;
             if (file != null) {
                 a(file);
             }
-            File file2 = this.f23426b;
+            File file2 = this.f23702b;
             if (file2 != null) {
                 a(file2);
             }

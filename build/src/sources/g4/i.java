@@ -7,13 +7,13 @@ import org.chromium.support_lib_boundary.WebkitToCompatConverterBoundaryInterfac
 public class i {
 
     /* renamed from: a  reason: collision with root package name */
-    private final WebkitToCompatConverterBoundaryInterface f23683a;
+    private final WebkitToCompatConverterBoundaryInterface f23936a;
 
     public i(WebkitToCompatConverterBoundaryInterface webkitToCompatConverterBoundaryInterface) {
-        this.f23683a = webkitToCompatConverterBoundaryInterface;
+        this.f23936a = webkitToCompatConverterBoundaryInterface;
     }
 
     public d a(WebSettings webSettings) {
-        return new d((WebSettingsBoundaryInterface) fv.a.a(WebSettingsBoundaryInterface.class, this.f23683a.convertSettings(webSettings)));
+        return new d((WebSettingsBoundaryInterface) mv.a.a(WebSettingsBoundaryInterface.class, this.f23936a.convertSettings(webSettings)));
     }
 }

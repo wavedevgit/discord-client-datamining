@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/useAllowedChatOverlays.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun77231: for (var _fun77231_ip = 0;;) switch (_fun77231_ip) {
+        _fun77258: for (var _fun77258_ip = 0;;) switch (_fun77258_ip) {
             case 0:
                 var4 = _closure1_slot0;
                 var6 = _closure1_slot2;
@@ -129,16 +129,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var3 == var0;
                 var3 = undefined;
                 if (var7) {
-                    _fun77231_ip = 126;
-                    continue _fun77231
+                    _fun77258_ip = 126;
+                    continue _fun77258
                 }
             case 121:
                 var3 = var0.location;
             case 126:
                 var4 = var4.bind(var6)(var3);
                 if (!(var5 !== var0)) {
-                    _fun77231_ip = 178;
-                    continue _fun77231
+                    _fun77258_ip = 178;
+                    continue _fun77258
                 }
             case 135:
                 var3 = _closure1_slot1;
@@ -149,14 +149,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = _closure1_slot4;
                 var0 = var3.bind(var5)(var4, var0);
                 if (var0) {
-                    _fun77231_ip = 178;
-                    continue _fun77231
+                    _fun77258_ip = 178;
+                    continue _fun77258
                 }
             case 168:
                 var0 = _closure1_slot5;
                 var0 = var0[var2];
-                _fun77231_ip = 190;
-                continue _fun77231;
+                _fun77258_ip = 190;
+                continue _fun77258;
             case 178:
                 var1 = _closure1_slot5;
                 var0 = var1.no_text_activity;
@@ -166,4 +166,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1371, 1372, 9861, 7936, 632, 3081, 7978, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1371, 1372, 9868, 7941, 632, 3083, 7983, 2]);

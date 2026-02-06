@@ -89,10 +89,10 @@ public final class MediaEngine {
 
         /* JADX INFO: Access modifiers changed from: private */
         /* JADX WARN: Code restructure failed: missing block: B:17:0x004f, code lost:
-            if (ms.x1.a(r0) == r1) goto L19;
+            if (os.x1.a(r0) == r1) goto L19;
          */
         /* JADX WARN: Code restructure failed: missing block: B:20:0x005f, code lost:
-            if (ms.x1.a(r0) != r1) goto L11;
+            if (os.x1.a(r0) != r1) goto L11;
          */
         /* JADX WARN: Code restructure failed: missing block: B:21:0x0061, code lost:
             return r1;
@@ -122,7 +122,7 @@ public final class MediaEngine {
                 r0.<init>(r5, r7)
             L18:
                 java.lang.Object r7 = r0.result
-                java.lang.Object r1 = ur.b.f()
+                java.lang.Object r1 = wr.b.f()
                 int r2 = r0.label
                 r3 = 2
                 r4 = 1
@@ -148,7 +148,7 @@ public final class MediaEngine {
                 byte[] r6 = r5.compressToJpegBytes(r6)
                 r0.L$0 = r6
                 r0.label = r4
-                java.lang.Object r7 = ms.x1.a(r0)
+                java.lang.Object r7 = os.x1.a(r0)
                 if (r7 != r1) goto L52
                 goto L61
             L52:
@@ -156,7 +156,7 @@ public final class MediaEngine {
                 java.lang.String r6 = android.util.Base64.encodeToString(r6, r7)
                 r0.L$0 = r6
                 r0.label = r3
-                java.lang.Object r7 = ms.x1.a(r0)
+                java.lang.Object r7 = os.x1.a(r0)
                 if (r7 != r1) goto L62
             L61:
                 return r1
@@ -253,7 +253,7 @@ public final class MediaEngine {
         this.instanceCreationNs = System.nanoTime();
         this.engineConnections = new MediaEngineNativeConnections();
         this.dispatcher = new AsyncInitDispatcher(TAG, 0L, 2, null);
-        this.coroutineScope = kotlinx.coroutines.i.a(coroutineDispatcher.V0(new ms.b0(TAG)));
+        this.coroutineScope = kotlinx.coroutines.i.a(coroutineDispatcher.Y0(new os.b0(TAG)));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -439,8 +439,8 @@ public final class MediaEngine {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setBroadcastThumbnailParams$lambda$54$lambda$53(MediaEngine mediaEngine, Function1 function1, Bitmap bitmap) {
         Intrinsics.checkNotNullParameter(bitmap, "bitmap");
-        ms.i.d(mediaEngine.coroutineScope, null, null, new MediaEngine$setBroadcastThumbnailParams$1$1$1(bitmap, function1, null), 3, null);
-        return Unit.f31988a;
+        os.i.d(mediaEngine.coroutineScope, null, null, new MediaEngine$setBroadcastThumbnailParams$1$1$1(bitmap, function1, null), 3, null);
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -470,7 +470,7 @@ public final class MediaEngine {
         Function2<? super String, ? super Boolean, Unit> function2 = this.activeSinksChangeCallback;
         if (function2 != null) {
             function2.invoke(streamId, Boolean.valueOf(z10));
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
         return null;
     }
@@ -479,7 +479,7 @@ public final class MediaEngine {
         NativeConnection connection = getConnection(i10, "configureConnectionRetries");
         if (connection != null) {
             connection.configureConnectionRetries(i11, i12, i13);
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
         return null;
     }
@@ -494,7 +494,7 @@ public final class MediaEngine {
         NativeConnection connection = getConnection(i10, "destroyUser");
         if (connection != null) {
             connection.destroyUser(userId);
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
         return null;
     }
@@ -503,7 +503,7 @@ public final class MediaEngine {
         NativeConnection connection = getConnection(i10, "executeSecureFramesTransition");
         if (connection != null) {
             connection.executeSecureFramesTransition(i11);
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
         return null;
     }
@@ -512,7 +512,7 @@ public final class MediaEngine {
         NativeConnection connection = getConnection(i10, "fastUdpReconnect");
         if (connection != null) {
             connection.fastUdpReconnect();
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
         return null;
     }
@@ -527,7 +527,7 @@ public final class MediaEngine {
                     MediaEngine.connectionInstanceGetEncryptionModes$lambda$55(Function1.this, strArr);
                 }
             });
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
         return null;
     }
@@ -542,7 +542,7 @@ public final class MediaEngine {
                     MediaEngine.connectionInstanceGetFilteredStats$lambda$57(Function1.this, str);
                 }
             });
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
         return null;
     }
@@ -557,7 +557,7 @@ public final class MediaEngine {
                     MediaEngine.connectionInstanceGetMLSKeyPackageB64$lambda$59(Function1.this, str);
                 }
             });
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
         return null;
     }
@@ -573,7 +573,7 @@ public final class MediaEngine {
                     MediaEngine.connectionInstanceGetMLSPairwiseFingerprintB64$lambda$63(Function1.this, str);
                 }
             });
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
         return null;
     }
@@ -588,7 +588,7 @@ public final class MediaEngine {
                     MediaEngine.connectionInstanceGetStats$lambda$56(Function1.this, str);
                 }
             });
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
         return null;
     }
@@ -598,7 +598,7 @@ public final class MediaEngine {
         NativeConnection connection = getConnection(i10, "mergeUsers");
         if (connection != null) {
             connection.mergeUsers(usersJSON);
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
         return null;
     }
@@ -614,7 +614,7 @@ public final class MediaEngine {
                     MediaEngine.connectionInstancePrepareMLSCommitTransitionB64$lambda$61(Function3.this, z10, i12, str);
                 }
             });
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
         return null;
     }
@@ -625,7 +625,7 @@ public final class MediaEngine {
         NativeConnection connection = getConnection(i10, "prepareSecureFramesEpoch");
         if (connection != null) {
             connection.prepareSecureFramesEpoch(epoch, i11, groupId);
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
         return null;
     }
@@ -640,7 +640,7 @@ public final class MediaEngine {
                     Function0.this.invoke();
                 }
             });
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
         return null;
     }
@@ -656,7 +656,7 @@ public final class MediaEngine {
                     MediaEngine.connectionInstanceProcessMLSProposalsB64$lambda$60(Function1.this, str);
                 }
             });
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
         return null;
     }
@@ -672,7 +672,7 @@ public final class MediaEngine {
                     MediaEngine.connectionInstanceProcessMLSWelcomeB64$lambda$62(Function3.this, z10, i12, str);
                 }
             });
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
         return null;
     }
@@ -682,7 +682,7 @@ public final class MediaEngine {
         NativeConnection connection = getConnection(i10, "setLocalMute");
         if (connection != null) {
             connection.setLocalMute(userId, z10);
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
         return null;
     }
@@ -692,7 +692,7 @@ public final class MediaEngine {
         NativeConnection connection = getConnection(i10, "setLocalPan");
         if (connection != null) {
             connection.setLocalPan(userId, f10, f11);
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
         return null;
     }
@@ -702,7 +702,7 @@ public final class MediaEngine {
         NativeConnection connection = getConnection(i10, "setLocalVolume");
         if (connection != null) {
             connection.setLocalVolume(userId, f10);
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
         return null;
     }
@@ -711,7 +711,7 @@ public final class MediaEngine {
         NativeConnection connection = getConnection(i10, "setMinimumOutputDelay");
         if (connection != null) {
             connection.setMinimumOutputDelay(i11);
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
         return null;
     }
@@ -720,7 +720,7 @@ public final class MediaEngine {
         NativeConnection connection = getConnection(i10, "setNoInputThreshold");
         if (connection != null) {
             connection.setNoInputThreshold(f10);
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
         return null;
     }
@@ -735,7 +735,7 @@ public final class MediaEngine {
                     MediaEngine.connectionInstanceSetOnFirstFrameCallback$lambda$48(Function3.this, str, j10, str2);
                 }
             });
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
         return null;
     }
@@ -750,7 +750,7 @@ public final class MediaEngine {
                     MediaEngine.connectionInstanceSetOnMLSFailureCallback$lambda$50(Function2.this, str, str2);
                 }
             });
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
         return null;
     }
@@ -765,7 +765,7 @@ public final class MediaEngine {
                     MediaEngine.connectionInstanceSetOnPingCallback$lambda$46(Function4.this, i11, str, i12, i13);
                 }
             });
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
         return null;
     }
@@ -780,7 +780,7 @@ public final class MediaEngine {
                     MediaEngine.connectionInstanceSetOnPingTimeoutCallback$lambda$47(Function4.this, str, i11, i12, i13);
                 }
             });
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
         return null;
     }
@@ -795,7 +795,7 @@ public final class MediaEngine {
                     MediaEngine.connectionInstanceSetOnSpeakingCallback$lambda$45(Function3.this, str, i11, f10);
                 }
             });
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
         return null;
     }
@@ -810,7 +810,7 @@ public final class MediaEngine {
                     MediaEngine.connectionInstanceSetOnVideoCallback$lambda$49(Function4.this, str, j10, str2, str3);
                 }
             });
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
         return null;
     }
@@ -819,7 +819,7 @@ public final class MediaEngine {
         NativeConnection connection = getConnection(i10, "setPTTActive");
         if (connection != null) {
             connection.setPTTActive(z10, z11, z12);
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
         return null;
     }
@@ -828,7 +828,7 @@ public final class MediaEngine {
         NativeConnection connection = getConnection(i10, "setPingInterval");
         if (connection != null) {
             connection.setPingInterval(i11);
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
         return null;
     }
@@ -843,7 +843,7 @@ public final class MediaEngine {
                     MediaEngine.connectionInstanceSetSecureFramesStateUpdateCallback$lambda$51(Function1.this, str);
                 }
             });
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
         return null;
     }
@@ -852,7 +852,7 @@ public final class MediaEngine {
         NativeConnection connection = getConnection(i10, "setSelfDeafen");
         if (connection != null) {
             connection.setSelfDeafen(z10);
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
         return null;
     }
@@ -861,7 +861,7 @@ public final class MediaEngine {
         NativeConnection connection = getConnection(i10, "setSelfMute");
         if (connection != null) {
             connection.setSelfMute(z10);
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
         return null;
     }
@@ -871,7 +871,7 @@ public final class MediaEngine {
         NativeConnection connection = getConnection(i10, "setTransportOptions");
         if (connection != null) {
             connection.setTransportOptions(optionsJSON);
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
         return null;
     }
@@ -880,7 +880,7 @@ public final class MediaEngine {
         NativeConnection connection = getConnection(i10, "setVideoBroadcast");
         if (connection != null) {
             connection.setVideoBroadcast(z10);
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
         return null;
     }
@@ -918,7 +918,7 @@ public final class MediaEngine {
         NativeConnection connection = getConnection(i10, "updateMLSExternalSenderB64");
         if (connection != null) {
             connection.updateMLSExternalSenderB64(externalSender);
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
         return null;
     }
@@ -945,12 +945,12 @@ public final class MediaEngine {
             asyncInitDispatcher.getDelayedTasks().add(new Function0<Unit>() { // from class: com.discord.media.engine.MediaEngine$getAudioSubsystem$$inlined$post$default$1
                 @Override // kotlin.jvm.functions.Function0
                 public /* bridge */ /* synthetic */ Object invoke() {
-                    m923invoke();
-                    return Unit.f31988a;
+                    m921invoke();
+                    return Unit.f32008a;
                 }
 
                 /* renamed from: invoke  reason: collision with other method in class */
-                public final void m923invoke() {
+                public final void m921invoke() {
                     MediaEngine.this.getEngine().getAudioSubsystem(new MediaEngine$getAudioSubsystem$1$1(cb2));
                 }
             });
@@ -1128,12 +1128,12 @@ public final class MediaEngine {
             asyncInitDispatcher.getDelayedTasks().add(new Function0<Unit>() { // from class: com.discord.media.engine.MediaEngine$setAudioInputEnabled$$inlined$post$default$1
                 @Override // kotlin.jvm.functions.Function0
                 public /* bridge */ /* synthetic */ Object invoke() {
-                    m924invoke();
-                    return Unit.f31988a;
+                    m922invoke();
+                    return Unit.f32008a;
                 }
 
                 /* renamed from: invoke  reason: collision with other method in class */
-                public final void m924invoke() {
+                public final void m922invoke() {
                     MediaEngine.this.getEngine().setAudioInputEnabled(z10);
                 }
             });
@@ -1150,12 +1150,12 @@ public final class MediaEngine {
             asyncInitDispatcher.getDelayedTasks().add(new Function0<Unit>() { // from class: com.discord.media.engine.MediaEngine$setAudioInputInitializationCallback$$inlined$post$default$1
                 @Override // kotlin.jvm.functions.Function0
                 public /* bridge */ /* synthetic */ Object invoke() {
-                    m925invoke();
-                    return Unit.f31988a;
+                    m923invoke();
+                    return Unit.f32008a;
                 }
 
                 /* renamed from: invoke  reason: collision with other method in class */
-                public final void m925invoke() {
+                public final void m923invoke() {
                     MediaEngine.this.getEngine().setAudioInputInitializationCallback(new MediaEngine$setAudioInputInitializationCallback$1$1(callback));
                 }
             });
@@ -1187,12 +1187,12 @@ public final class MediaEngine {
             asyncInitDispatcher.getDelayedTasks().add(new Function0<Unit>() { // from class: com.discord.media.engine.MediaEngine$setDeviceChangeCallback$$inlined$post$default$1
                 @Override // kotlin.jvm.functions.Function0
                 public /* bridge */ /* synthetic */ Object invoke() {
-                    m926invoke();
-                    return Unit.f31988a;
+                    m924invoke();
+                    return Unit.f32008a;
                 }
 
                 /* renamed from: invoke  reason: collision with other method in class */
-                public final void m926invoke() {
+                public final void m924invoke() {
                     MediaEngine.this.getEngine().setOnDeviceChangeCallback(new MediaEngine$setDeviceChangeCallback$1$1(callback));
                 }
             });
@@ -1208,12 +1208,12 @@ public final class MediaEngine {
             asyncInitDispatcher.getDelayedTasks().add(new Function0<Unit>() { // from class: com.discord.media.engine.MediaEngine$setEmitVADLevel2$$inlined$post$default$1
                 @Override // kotlin.jvm.functions.Function0
                 public /* bridge */ /* synthetic */ Object invoke() {
-                    m927invoke();
-                    return Unit.f31988a;
+                    m925invoke();
+                    return Unit.f32008a;
                 }
 
                 /* renamed from: invoke  reason: collision with other method in class */
-                public final void m927invoke() {
+                public final void m925invoke() {
                     MediaEngine.this.getEngine().setEmitVADLevel2(z10);
                 }
             });
@@ -1229,12 +1229,12 @@ public final class MediaEngine {
             asyncInitDispatcher.getDelayedTasks().add(new Function0<Unit>() { // from class: com.discord.media.engine.MediaEngine$setHasFullbandPerformance$$inlined$post$default$1
                 @Override // kotlin.jvm.functions.Function0
                 public /* bridge */ /* synthetic */ Object invoke() {
-                    m928invoke();
-                    return Unit.f31988a;
+                    m926invoke();
+                    return Unit.f32008a;
                 }
 
                 /* renamed from: invoke  reason: collision with other method in class */
-                public final void m928invoke() {
+                public final void m926invoke() {
                     MediaEngine.this.getEngine().setHasFullbandPerformance(z10);
                 }
             });
@@ -1250,12 +1250,12 @@ public final class MediaEngine {
             asyncInitDispatcher.getDelayedTasks().add(new Function0<Unit>() { // from class: com.discord.media.engine.MediaEngine$setInputDevice$$inlined$post$default$1
                 @Override // kotlin.jvm.functions.Function0
                 public /* bridge */ /* synthetic */ Object invoke() {
-                    m929invoke();
-                    return Unit.f31988a;
+                    m927invoke();
+                    return Unit.f32008a;
                 }
 
                 /* renamed from: invoke  reason: collision with other method in class */
-                public final void m929invoke() {
+                public final void m927invoke() {
                     MediaEngine.this.getEngine().setInputDeviceIndex(i10);
                 }
             });
@@ -1271,12 +1271,12 @@ public final class MediaEngine {
             asyncInitDispatcher.getDelayedTasks().add(new Function0<Unit>() { // from class: com.discord.media.engine.MediaEngine$setInputVolume$$inlined$post$default$1
                 @Override // kotlin.jvm.functions.Function0
                 public /* bridge */ /* synthetic */ Object invoke() {
-                    m931invoke();
-                    return Unit.f31988a;
+                    m929invoke();
+                    return Unit.f32008a;
                 }
 
                 /* renamed from: invoke  reason: collision with other method in class */
-                public final void m931invoke() {
+                public final void m929invoke() {
                     MediaEngine.this.getEngine().setInputVolume(f10);
                 }
             });
@@ -1292,12 +1292,12 @@ public final class MediaEngine {
             asyncInitDispatcher.getDelayedTasks().add(new Function0<Unit>() { // from class: com.discord.media.engine.MediaEngine$setNoInputThreshold$$inlined$post$default$1
                 @Override // kotlin.jvm.functions.Function0
                 public /* bridge */ /* synthetic */ Object invoke() {
-                    m932invoke();
-                    return Unit.f31988a;
+                    m930invoke();
+                    return Unit.f32008a;
                 }
 
                 /* renamed from: invoke  reason: collision with other method in class */
-                public final void m932invoke() {
+                public final void m930invoke() {
                     MediaEngine.this.getEngine().setNoInputThreshold(f10);
                 }
             });
@@ -1314,12 +1314,12 @@ public final class MediaEngine {
             asyncInitDispatcher.getDelayedTasks().add(new Function0<Unit>() { // from class: com.discord.media.engine.MediaEngine$setOnNoInputCallback$$inlined$post$default$1
                 @Override // kotlin.jvm.functions.Function0
                 public /* bridge */ /* synthetic */ Object invoke() {
-                    m933invoke();
-                    return Unit.f31988a;
+                    m931invoke();
+                    return Unit.f32008a;
                 }
 
                 /* renamed from: invoke  reason: collision with other method in class */
-                public final void m933invoke() {
+                public final void m931invoke() {
                     MediaEngine.this.getEngine().setOnNoInputCallback(new MediaEngine$setOnNoInputCallback$1$1(cb2));
                 }
             });
@@ -1336,12 +1336,12 @@ public final class MediaEngine {
             asyncInitDispatcher.getDelayedTasks().add(new Function0<Unit>() { // from class: com.discord.media.engine.MediaEngine$setOnVoiceCallback$$inlined$post$default$1
                 @Override // kotlin.jvm.functions.Function0
                 public /* bridge */ /* synthetic */ Object invoke() {
-                    m934invoke();
-                    return Unit.f31988a;
+                    m932invoke();
+                    return Unit.f32008a;
                 }
 
                 /* renamed from: invoke  reason: collision with other method in class */
-                public final void m934invoke() {
+                public final void m932invoke() {
                     MediaEngine.this.getEngine().setOnVoiceCallback(new MediaEngine$setOnVoiceCallback$1$1(cb2));
                 }
             });
@@ -1357,12 +1357,12 @@ public final class MediaEngine {
             asyncInitDispatcher.getDelayedTasks().add(new Function0<Unit>() { // from class: com.discord.media.engine.MediaEngine$setOutputDevice$$inlined$post$default$1
                 @Override // kotlin.jvm.functions.Function0
                 public /* bridge */ /* synthetic */ Object invoke() {
-                    m935invoke();
-                    return Unit.f31988a;
+                    m933invoke();
+                    return Unit.f32008a;
                 }
 
                 /* renamed from: invoke  reason: collision with other method in class */
-                public final void m935invoke() {
+                public final void m933invoke() {
                     MediaEngine.this.getEngine().setOutputDeviceIndex(i10);
                 }
             });
@@ -1378,12 +1378,12 @@ public final class MediaEngine {
             asyncInitDispatcher.getDelayedTasks().add(new Function0<Unit>() { // from class: com.discord.media.engine.MediaEngine$setOutputVolume$$inlined$post$default$1
                 @Override // kotlin.jvm.functions.Function0
                 public /* bridge */ /* synthetic */ Object invoke() {
-                    m937invoke();
-                    return Unit.f31988a;
+                    m935invoke();
+                    return Unit.f32008a;
                 }
 
                 /* renamed from: invoke  reason: collision with other method in class */
-                public final void m937invoke() {
+                public final void m935invoke() {
                     MediaEngine.this.getEngine().setOutputVolume(f10);
                 }
             });
@@ -1404,12 +1404,12 @@ public final class MediaEngine {
             asyncInitDispatcher.getDelayedTasks().add(new Function0<Unit>() { // from class: com.discord.media.engine.MediaEngine$setTransportOptions$$inlined$post$default$1
                 @Override // kotlin.jvm.functions.Function0
                 public /* bridge */ /* synthetic */ Object invoke() {
-                    m938invoke();
-                    return Unit.f31988a;
+                    m936invoke();
+                    return Unit.f32008a;
                 }
 
                 /* renamed from: invoke  reason: collision with other method in class */
-                public final void m938invoke() {
+                public final void m936invoke() {
                     MediaEngine.this.getEngine().setTransportOptions(optionsJSON);
                 }
             });
@@ -1426,12 +1426,12 @@ public final class MediaEngine {
             asyncInitDispatcher.getDelayedTasks().add(new Function0<Unit>() { // from class: com.discord.media.engine.MediaEngine$setVideoInputDevice$$inlined$post$default$1
                 @Override // kotlin.jvm.functions.Function0
                 public /* bridge */ /* synthetic */ Object invoke() {
-                    m939invoke();
-                    return Unit.f31988a;
+                    m937invoke();
+                    return Unit.f32008a;
                 }
 
                 /* renamed from: invoke  reason: collision with other method in class */
-                public final void m939invoke() {
+                public final void m937invoke() {
                     MediaEngine.this.getEngine().setVideoInputDevice(deviceName);
                 }
             });
@@ -1453,12 +1453,12 @@ public final class MediaEngine {
         asyncInitDispatcher.getDelayedTasks().add(new Function0<Unit>() { // from class: com.discord.media.engine.MediaEngine$setVideoOutputSink$$inlined$post$1
             @Override // kotlin.jvm.functions.Function0
             public /* bridge */ /* synthetic */ Object invoke() {
-                m941invoke();
-                return Unit.f31988a;
+                m939invoke();
+                return Unit.f32008a;
             }
 
             /* renamed from: invoke  reason: collision with other method in class */
-            public final void m941invoke() {
+            public final void m939invoke() {
                 if (Function2.this == null) {
                     this.getEngine().setVideoOutputSink(streamIdentifier, null);
                 } else {
@@ -1511,12 +1511,12 @@ public final class MediaEngine {
             asyncInitDispatcher.getDelayedTasks().add(new Function0<Unit>() { // from class: com.discord.media.engine.MediaEngine$setInputDevice$$inlined$post$default$2
                 @Override // kotlin.jvm.functions.Function0
                 public /* bridge */ /* synthetic */ Object invoke() {
-                    m930invoke();
-                    return Unit.f31988a;
+                    m928invoke();
+                    return Unit.f32008a;
                 }
 
                 /* renamed from: invoke  reason: collision with other method in class */
-                public final void m930invoke() {
+                public final void m928invoke() {
                     MediaEngine.this.getEngine().setInputDevice(deviceIndex);
                 }
             });
@@ -1533,12 +1533,12 @@ public final class MediaEngine {
             asyncInitDispatcher.getDelayedTasks().add(new Function0<Unit>() { // from class: com.discord.media.engine.MediaEngine$setOutputDevice$$inlined$post$default$2
                 @Override // kotlin.jvm.functions.Function0
                 public /* bridge */ /* synthetic */ Object invoke() {
-                    m936invoke();
-                    return Unit.f31988a;
+                    m934invoke();
+                    return Unit.f32008a;
                 }
 
                 /* renamed from: invoke  reason: collision with other method in class */
-                public final void m936invoke() {
+                public final void m934invoke() {
                     MediaEngine.this.getEngine().setOutputDevice(deviceIndex);
                 }
             });
@@ -1554,12 +1554,12 @@ public final class MediaEngine {
             asyncInitDispatcher.getDelayedTasks().add(new Function0<Unit>() { // from class: com.discord.media.engine.MediaEngine$setVideoInputDevice$$inlined$post$default$2
                 @Override // kotlin.jvm.functions.Function0
                 public /* bridge */ /* synthetic */ Object invoke() {
-                    m940invoke();
-                    return Unit.f31988a;
+                    m938invoke();
+                    return Unit.f32008a;
                 }
 
                 /* renamed from: invoke  reason: collision with other method in class */
-                public final void m940invoke() {
+                public final void m938invoke() {
                     MediaEngine.this.getEngine().setVideoInputDeviceIndex(i10);
                 }
             });
@@ -1567,6 +1567,6 @@ public final class MediaEngine {
     }
 
     public /* synthetic */ MediaEngine(Context context, CoroutineDispatcher coroutineDispatcher, int i10, DefaultConstructorMarker defaultConstructorMarker) {
-        this(context, (i10 & 2) != 0 ? ms.m0.a() : coroutineDispatcher);
+        this(context, (i10 & 2) != 0 ? os.m0.a() : coroutineDispatcher);
     }
 }

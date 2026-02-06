@@ -3,30 +3,30 @@ package net.time4j.history;
 public final class h implements Comparable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final j f40048d;
+    private final j f39403d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f40049e;
+    private final int f39404e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f40050i;
+    private final int f39405i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final int f40051o;
+    private final int f39406o;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public h(j jVar, int i10, int i11, int i12) {
-        this.f40048d = jVar;
-        this.f40049e = i10;
-        this.f40050i = i11;
-        this.f40051o = i12;
+        this.f39403d = jVar;
+        this.f39404e = i10;
+        this.f39405i = i11;
+        this.f39406o = i12;
     }
 
     public static h i(j jVar, int i10, int i11, int i12) {
-        return k(jVar, i10, i11, i12, tt.a.DUAL_DATING, o.f40075d);
+        return j(jVar, i10, i11, i12, vt.a.DUAL_DATING, o.f39430d);
     }
 
-    public static h k(j jVar, int i10, int i11, int i12, tt.a aVar, o oVar) {
+    public static h j(j jVar, int i10, int i11, int i12, vt.a aVar, o oVar) {
         j jVar2;
         int i13;
         int i14;
@@ -36,14 +36,14 @@ public final class h implements Comparable {
                 if (i11 >= 1 && i11 <= 12) {
                     if (jVar == j.BYZANTINE) {
                         if (i10 < 0 || (i10 == 0 && i11 < 9)) {
-                            throw new IllegalArgumentException("Before creation of the world: " + l(jVar, i10, i11, i12));
+                            throw new IllegalArgumentException("Before creation of the world: " + k(jVar, i10, i11, i12));
                         }
                     } else if (i10 < 1) {
-                        throw new IllegalArgumentException("Year of era must be positive: " + l(jVar, i10, i11, i12));
+                        throw new IllegalArgumentException("Year of era must be positive: " + k(jVar, i10, i11, i12));
                     }
-                    if (!aVar.equals(tt.a.DUAL_DATING)) {
+                    if (!aVar.equals(vt.a.DUAL_DATING)) {
                         n f10 = oVar.f(jVar, i10);
-                        if (aVar != tt.a.AFTER_NEW_YEAR) {
+                        if (aVar != vt.a.AFTER_NEW_YEAR) {
                             z10 = false;
                         }
                         jVar2 = jVar;
@@ -57,14 +57,14 @@ public final class h implements Comparable {
                     }
                     return new h(jVar2, i10, i13, i14);
                 }
-                throw new IllegalArgumentException("Month out of range: " + l(jVar, i10, i11, i12));
+                throw new IllegalArgumentException("Month out of range: " + k(jVar, i10, i11, i12));
             }
-            throw new IllegalArgumentException("Day of month out of range: " + l(jVar, i10, i11, i12));
+            throw new IllegalArgumentException("Day of month out of range: " + k(jVar, i10, i11, i12));
         }
         throw new NullPointerException("Missing historic era.");
     }
 
-    private static String l(j jVar, int i10, int i11, int i12) {
+    private static String k(j jVar, int i10, int i11, int i12) {
         StringBuilder sb2 = new StringBuilder();
         sb2.append(jVar);
         sb2.append('-');
@@ -89,8 +89,8 @@ public final class h implements Comparable {
     @Override // java.lang.Comparable
     /* renamed from: a */
     public int compareTo(h hVar) {
-        int a10 = this.f40048d.a(this.f40049e);
-        int a11 = hVar.f40048d.a(hVar.f40049e);
+        int a10 = this.f39403d.a(this.f39404e);
+        int a11 = hVar.f39403d.a(hVar.f39404e);
         if (a10 < a11) {
             return -1;
         }
@@ -111,11 +111,11 @@ public final class h implements Comparable {
     }
 
     public int d() {
-        return this.f40051o;
+        return this.f39406o;
     }
 
     public j e() {
-        return this.f40048d;
+        return this.f39403d;
     }
 
     public boolean equals(Object obj) {
@@ -124,7 +124,7 @@ public final class h implements Comparable {
         }
         if (obj instanceof h) {
             h hVar = (h) obj;
-            if (this.f40048d == hVar.f40048d && this.f40049e == hVar.f40049e && this.f40050i == hVar.f40050i && this.f40051o == hVar.f40051o) {
+            if (this.f39403d == hVar.f39403d && this.f39404e == hVar.f39404e && this.f39405i == hVar.f39405i && this.f39406o == hVar.f39406o) {
                 return true;
             }
         }
@@ -132,11 +132,11 @@ public final class h implements Comparable {
     }
 
     public int f() {
-        return this.f40050i;
+        return this.f39405i;
     }
 
     public int g() {
-        return this.f40049e;
+        return this.f39404e;
     }
 
     public int h(o oVar) {
@@ -144,14 +144,14 @@ public final class h implements Comparable {
     }
 
     public int hashCode() {
-        int i10 = (this.f40049e * 1000) + (this.f40050i * 32) + this.f40051o;
-        if (this.f40048d == j.AD) {
+        int i10 = (this.f39404e * 1000) + (this.f39405i * 32) + this.f39406o;
+        if (this.f39403d == j.AD) {
             return i10;
         }
         return -i10;
     }
 
     public String toString() {
-        return l(this.f40048d, this.f40049e, this.f40050i, this.f40051o);
+        return k(this.f39403d, this.f39404e, this.f39405i, this.f39406o);
     }
 }

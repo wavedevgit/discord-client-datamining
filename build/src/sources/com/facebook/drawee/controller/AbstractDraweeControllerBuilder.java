@@ -15,61 +15,61 @@ import y8.f;
 public abstract class AbstractDraweeControllerBuilder implements n9.b {
 
     /* renamed from: q  reason: collision with root package name */
-    private static final ControllerListener f9952q = new a();
+    private static final ControllerListener f9851q = new a();
 
     /* renamed from: r  reason: collision with root package name */
-    private static final NullPointerException f9953r = new NullPointerException("No image request was specified!");
+    private static final NullPointerException f9852r = new NullPointerException("No image request was specified!");
 
     /* renamed from: s  reason: collision with root package name */
-    private static final AtomicLong f9954s = new AtomicLong();
+    private static final AtomicLong f9853s = new AtomicLong();
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f9955a;
+    private final Context f9854a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Set f9956b;
+    private final Set f9855b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Set f9957c;
+    private final Set f9856c;
 
     /* renamed from: d  reason: collision with root package name */
-    private Object f9958d;
+    private Object f9857d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Object f9959e;
+    private Object f9858e;
 
     /* renamed from: f  reason: collision with root package name */
-    private Object f9960f;
+    private Object f9859f;
 
     /* renamed from: g  reason: collision with root package name */
-    private Object[] f9961g;
+    private Object[] f9860g;
 
     /* renamed from: h  reason: collision with root package name */
-    private boolean f9962h;
+    private boolean f9861h;
 
     /* renamed from: i  reason: collision with root package name */
-    private Supplier f9963i;
+    private Supplier f9862i;
 
     /* renamed from: j  reason: collision with root package name */
-    private ControllerListener f9964j;
+    private ControllerListener f9863j;
 
     /* renamed from: k  reason: collision with root package name */
-    private boolean f9965k;
+    private boolean f9864k;
 
     /* renamed from: l  reason: collision with root package name */
-    private boolean f9966l;
+    private boolean f9865l;
 
     /* renamed from: m  reason: collision with root package name */
-    private boolean f9967m;
+    private boolean f9866m;
 
     /* renamed from: n  reason: collision with root package name */
-    private boolean f9968n = false;
+    private boolean f9867n = false;
 
     /* renamed from: o  reason: collision with root package name */
-    private String f9969o;
+    private String f9868o;
 
     /* renamed from: p  reason: collision with root package name */
-    private DraweeController f9970p;
+    private DraweeController f9869p;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a extends i9.a {
@@ -89,36 +89,36 @@ public abstract class AbstractDraweeControllerBuilder implements n9.b {
     public class b implements Supplier {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ DraweeController f9971a;
+        final /* synthetic */ DraweeController f9870a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ String f9972b;
+        final /* synthetic */ String f9871b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ Object f9973c;
+        final /* synthetic */ Object f9872c;
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Object f9974d;
+        final /* synthetic */ Object f9873d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ c f9975e;
+        final /* synthetic */ c f9874e;
 
         b(DraweeController draweeController, String str, Object obj, Object obj2, c cVar) {
-            this.f9971a = draweeController;
-            this.f9972b = str;
-            this.f9973c = obj;
-            this.f9974d = obj2;
-            this.f9975e = cVar;
+            this.f9870a = draweeController;
+            this.f9871b = str;
+            this.f9872c = obj;
+            this.f9873d = obj2;
+            this.f9874e = cVar;
         }
 
         @Override // com.facebook.common.internal.Supplier
         /* renamed from: a */
         public DataSource get() {
-            return AbstractDraweeControllerBuilder.this.i(this.f9971a, this.f9972b, this.f9973c, this.f9974d, this.f9975e);
+            return AbstractDraweeControllerBuilder.this.i(this.f9870a, this.f9871b, this.f9872c, this.f9873d, this.f9874e);
         }
 
         public String toString() {
-            return h.b(this).b("request", this.f9973c.toString()).toString();
+            return h.b(this).b("request", this.f9872c.toString()).toString();
         }
     }
 
@@ -131,78 +131,78 @@ public abstract class AbstractDraweeControllerBuilder implements n9.b {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public AbstractDraweeControllerBuilder(Context context, Set set, Set set2) {
-        this.f9955a = context;
-        this.f9956b = set;
-        this.f9957c = set2;
+        this.f9854a = context;
+        this.f9855b = set;
+        this.f9856c = set2;
         s();
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public static String e() {
-        return String.valueOf(f9954s.getAndIncrement());
+        return String.valueOf(f9853s.getAndIncrement());
     }
 
     private void s() {
-        this.f9958d = null;
-        this.f9959e = null;
-        this.f9960f = null;
-        this.f9961g = null;
-        this.f9962h = true;
-        this.f9964j = null;
-        this.f9965k = false;
-        this.f9966l = false;
-        this.f9968n = false;
-        this.f9970p = null;
-        this.f9969o = null;
+        this.f9857d = null;
+        this.f9858e = null;
+        this.f9859f = null;
+        this.f9860g = null;
+        this.f9861h = true;
+        this.f9863j = null;
+        this.f9864k = false;
+        this.f9865l = false;
+        this.f9867n = false;
+        this.f9869p = null;
+        this.f9868o = null;
     }
 
     public AbstractDraweeControllerBuilder A(boolean z10) {
-        this.f9966l = z10;
+        this.f9865l = z10;
         return r();
     }
 
     public AbstractDraweeControllerBuilder B(Object obj) {
-        this.f9958d = obj;
+        this.f9857d = obj;
         return r();
     }
 
     public AbstractDraweeControllerBuilder C(String str) {
-        this.f9969o = str;
+        this.f9868o = str;
         return r();
     }
 
     public AbstractDraweeControllerBuilder D(ControllerListener controllerListener) {
-        this.f9964j = controllerListener;
+        this.f9863j = controllerListener;
         return r();
     }
 
     public AbstractDraweeControllerBuilder E(Object obj) {
-        this.f9959e = obj;
+        this.f9858e = obj;
         return r();
     }
 
     public AbstractDraweeControllerBuilder F(Object obj) {
-        this.f9960f = obj;
+        this.f9859f = obj;
         return r();
     }
 
     @Override // n9.b
     /* renamed from: G */
     public AbstractDraweeControllerBuilder b(DraweeController draweeController) {
-        this.f9970p = draweeController;
+        this.f9869p = draweeController;
         return r();
     }
 
     protected void H() {
         boolean z10;
         boolean z11 = true;
-        if (this.f9961g != null && this.f9959e != null) {
+        if (this.f9860g != null && this.f9858e != null) {
             z10 = false;
         } else {
             z10 = true;
         }
         j.j(z10, "Cannot specify both ImageRequest and FirstAvailableImageRequests!");
-        if (this.f9963i != null && (this.f9961g != null || this.f9959e != null || this.f9960f != null)) {
+        if (this.f9862i != null && (this.f9860g != null || this.f9858e != null || this.f9859f != null)) {
             z11 = false;
         }
         j.j(z11, "Cannot specify DataSourceSupplier with other ImageRequests! Use one or the other.");
@@ -213,9 +213,9 @@ public abstract class AbstractDraweeControllerBuilder implements n9.b {
     public com.facebook.drawee.controller.a build() {
         Object obj;
         H();
-        if (this.f9959e == null && this.f9961g == null && (obj = this.f9960f) != null) {
-            this.f9959e = obj;
-            this.f9960f = null;
+        if (this.f9858e == null && this.f9860g == null && (obj = this.f9859f) != null) {
+            this.f9858e = obj;
+            this.f9859f = null;
         }
         return d();
     }
@@ -239,11 +239,11 @@ public abstract class AbstractDraweeControllerBuilder implements n9.b {
     }
 
     public Object f() {
-        return this.f9958d;
+        return this.f9857d;
     }
 
     public String g() {
-        return this.f9969o;
+        return this.f9868o;
     }
 
     public i9.b h() {
@@ -274,23 +274,23 @@ public abstract class AbstractDraweeControllerBuilder implements n9.b {
     }
 
     public Object[] m() {
-        return this.f9961g;
+        return this.f9860g;
     }
 
     public Object n() {
-        return this.f9959e;
+        return this.f9858e;
     }
 
     public Object o() {
-        return this.f9960f;
+        return this.f9859f;
     }
 
     public DraweeController p() {
-        return this.f9970p;
+        return this.f9869p;
     }
 
     public boolean q() {
-        return this.f9967m;
+        return this.f9866m;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -299,42 +299,42 @@ public abstract class AbstractDraweeControllerBuilder implements n9.b {
     }
 
     public boolean t() {
-        return this.f9968n;
+        return this.f9867n;
     }
 
     protected void u(com.facebook.drawee.controller.a aVar) {
-        Set<ControllerListener> set = this.f9956b;
+        Set<ControllerListener> set = this.f9855b;
         if (set != null) {
             for (ControllerListener controllerListener : set) {
                 aVar.e(controllerListener);
             }
         }
-        Set<z9.b> set2 = this.f9957c;
+        Set<z9.b> set2 = this.f9856c;
         if (set2 != null) {
             for (z9.b bVar : set2) {
                 aVar.f(bVar);
             }
         }
-        ControllerListener controllerListener2 = this.f9964j;
+        ControllerListener controllerListener2 = this.f9863j;
         if (controllerListener2 != null) {
             aVar.e(controllerListener2);
         }
-        if (this.f9966l) {
-            aVar.e(f9952q);
+        if (this.f9865l) {
+            aVar.e(f9851q);
         }
     }
 
     protected void v(com.facebook.drawee.controller.a aVar) {
         if (aVar.o() == null) {
-            aVar.W(m9.a.c(this.f9955a));
+            aVar.W(m9.a.c(this.f9854a));
         }
     }
 
     protected void w(com.facebook.drawee.controller.a aVar) {
-        if (!this.f9965k) {
+        if (!this.f9864k) {
             return;
         }
-        aVar.u().d(this.f9965k);
+        aVar.u().d(this.f9864k);
         v(aVar);
     }
 
@@ -343,29 +343,29 @@ public abstract class AbstractDraweeControllerBuilder implements n9.b {
     /* JADX INFO: Access modifiers changed from: protected */
     public Supplier y(DraweeController draweeController, String str) {
         Supplier supplier;
-        Supplier supplier2 = this.f9963i;
+        Supplier supplier2 = this.f9862i;
         if (supplier2 != null) {
             return supplier2;
         }
-        Object obj = this.f9959e;
+        Object obj = this.f9858e;
         if (obj != null) {
             supplier = j(draweeController, str, obj);
         } else {
-            Object[] objArr = this.f9961g;
+            Object[] objArr = this.f9860g;
             if (objArr != null) {
-                supplier = l(draweeController, str, objArr, this.f9962h);
+                supplier = l(draweeController, str, objArr, this.f9861h);
             } else {
                 supplier = null;
             }
         }
-        if (supplier != null && this.f9960f != null) {
+        if (supplier != null && this.f9859f != null) {
             ArrayList arrayList = new ArrayList(2);
             arrayList.add(supplier);
-            arrayList.add(j(draweeController, str, this.f9960f));
+            arrayList.add(j(draweeController, str, this.f9859f));
             supplier = y8.h.c(arrayList, false);
         }
         if (supplier == null) {
-            return y8.c.a(f9953r);
+            return y8.c.a(f9852r);
         }
         return supplier;
     }

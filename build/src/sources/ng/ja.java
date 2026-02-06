@@ -1,96 +1,42 @@
 package ng;
+
+import yi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class ja {
+final class ja implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private String f40712a;
+    static final ja f39903a = new ja();
 
-    /* renamed from: b  reason: collision with root package name */
-    private String f40713b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private String f40714c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private String f40715d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private mc f40716e;
-
-    /* renamed from: f  reason: collision with root package name */
-    private String f40717f;
-
-    /* renamed from: g  reason: collision with root package name */
-    private Boolean f40718g;
-
-    /* renamed from: h  reason: collision with root package name */
-    private Boolean f40719h;
-
-    /* renamed from: i  reason: collision with root package name */
-    private Boolean f40720i;
-
-    /* renamed from: j  reason: collision with root package name */
-    private Integer f40721j;
-
-    /* renamed from: k  reason: collision with root package name */
-    private Integer f40722k;
-
-    public final ja b(String str) {
-        this.f40712a = str;
-        return this;
+    static {
+        c.b a10 = yi.c.a("detectorOptions");
+        l2 l2Var = new l2();
+        l2Var.a(1);
+        a10.b(l2Var.b()).a();
+        c.b a11 = yi.c.a("errorCodes");
+        l2 l2Var2 = new l2();
+        l2Var2.a(2);
+        a11.b(l2Var2.b()).a();
+        c.b a12 = yi.c.a("totalInitializationMs");
+        l2 l2Var3 = new l2();
+        l2Var3.a(3);
+        a12.b(l2Var3.b()).a();
+        c.b a13 = yi.c.a("loggingInitializationMs");
+        l2 l2Var4 = new l2();
+        l2Var4.a(4);
+        a13.b(l2Var4.b()).a();
+        c.b a14 = yi.c.a("otherErrors");
+        l2 l2Var5 = new l2();
+        l2Var5.a(5);
+        a14.b(l2Var5.b()).a();
     }
 
-    public final ja c(String str) {
-        this.f40713b = str;
-        return this;
+    private ja() {
     }
 
-    public final ja d(Integer num) {
-        this.f40721j = Integer.valueOf(num.intValue() & Integer.MAX_VALUE);
-        return this;
-    }
-
-    public final ja e(Boolean bool) {
-        this.f40718g = bool;
-        return this;
-    }
-
-    public final ja f(Boolean bool) {
-        this.f40720i = bool;
-        return this;
-    }
-
-    public final ja g(Boolean bool) {
-        this.f40719h = bool;
-        return this;
-    }
-
-    public final ja h(mc mcVar) {
-        this.f40716e = mcVar;
-        return this;
-    }
-
-    public final ja i(String str) {
-        this.f40717f = str;
-        return this;
-    }
-
-    public final ja j(String str) {
-        this.f40714c = str;
-        return this;
-    }
-
-    public final ja k(Integer num) {
-        this.f40722k = num;
-        return this;
-    }
-
-    public final ja l(String str) {
-        this.f40715d = str;
-        return this;
-    }
-
-    public final ma m() {
-        return new ma(this, null);
+    @Override // yi.d
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        android.support.v4.media.session.b.a(obj);
+        yi.e eVar = (yi.e) obj2;
+        throw null;
     }
 }

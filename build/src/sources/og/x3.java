@@ -1,57 +1,50 @@
 package og;
 
-import xi.c;
+import yi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class x3 implements xi.d {
+final class x3 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final x3 f43552a = new x3();
+    static final x3 f42678a = new x3();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final xi.c f43553b;
+    private static final yi.c f42679b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final xi.c f43554c;
+    private static final yi.c f42680c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final xi.c f43555d;
+    private static final yi.c f42681d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final xi.c f43556e;
-
-    /* renamed from: f  reason: collision with root package name */
-    private static final xi.c f43557f;
+    private static final yi.c f42682e;
 
     static {
-        c.b a10 = xi.c.a("errorCode");
-        s1 s1Var = new s1();
-        s1Var.a(1);
-        f43553b = a10.b(s1Var.b()).a();
-        c.b a11 = xi.c.a("hasResult");
-        s1 s1Var2 = new s1();
-        s1Var2.a(2);
-        f43554c = a11.b(s1Var2.b()).a();
-        c.b a12 = xi.c.a("isColdCall");
-        s1 s1Var3 = new s1();
-        s1Var3.a(3);
-        f43555d = a12.b(s1Var3.b()).a();
-        c.b a13 = xi.c.a("imageInfo");
-        s1 s1Var4 = new s1();
-        s1Var4.a(4);
-        f43556e = a13.b(s1Var4.b()).a();
-        c.b a14 = xi.c.a("detectorOptions");
-        s1 s1Var5 = new s1();
-        s1Var5.a(5);
-        f43557f = a14.b(s1Var5.b()).a();
+        c.b a10 = yi.c.a("isChargingRequired");
+        f fVar = new f();
+        fVar.a(1);
+        f42679b = a10.b(fVar.b()).a();
+        c.b a11 = yi.c.a("isWifiRequired");
+        f fVar2 = new f();
+        fVar2.a(2);
+        f42680c = a11.b(fVar2.b()).a();
+        c.b a12 = yi.c.a("isDeviceIdleRequired");
+        f fVar3 = new f();
+        fVar3.a(3);
+        f42681d = a12.b(fVar3.b()).a();
+        c.b a13 = yi.c.a("canDownloadInBackground");
+        f fVar4 = new f();
+        fVar4.a(4);
+        f42682e = a13.b(fVar4.b()).a();
     }
 
     private x3() {
     }
 
-    @Override // xi.d
+    @Override // yi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        xi.e eVar = (xi.e) obj2;
+        yi.e eVar = (yi.e) obj2;
         throw null;
     }
 }

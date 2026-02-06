@@ -21,19 +21,19 @@ public abstract class b {
     public static final void a(g db2) {
         Intrinsics.checkNotNullParameter(db2, "db");
         List c10 = CollectionsKt.c();
-        Cursor H1 = db2.H1("SELECT name FROM sqlite_master WHERE type = 'trigger'");
-        while (H1.moveToNext()) {
+        Cursor G1 = db2.G1("SELECT name FROM sqlite_master WHERE type = 'trigger'");
+        while (G1.moveToNext()) {
             try {
-                c10.add(H1.getString(0));
+                c10.add(G1.getString(0));
             } finally {
             }
         }
-        Unit unit = Unit.f31988a;
-        zr.c.a(H1, null);
+        Unit unit = Unit.f32008a;
+        bs.c.a(G1, null);
         for (String triggerName : CollectionsKt.a(c10)) {
             Intrinsics.checkNotNullExpressionValue(triggerName, "triggerName");
             if (StringsKt.P(triggerName, "room_fts_content_sync_", false, 2, null)) {
-                db2.K("DROP TRIGGER IF EXISTS " + triggerName);
+                db2.O("DROP TRIGGER IF EXISTS " + triggerName);
             }
         }
     }
@@ -69,7 +69,7 @@ public abstract class b {
             if (channel.read(allocate) == 4) {
                 allocate.rewind();
                 int i10 = allocate.getInt();
-                zr.c.a(channel, null);
+                bs.c.a(channel, null);
                 return i10;
             }
             throw new IOException("Bad database header, unable to read 4 bytes at offset 60");
@@ -77,7 +77,7 @@ public abstract class b {
             try {
                 throw th2;
             } catch (Throwable th3) {
-                zr.c.a(channel, th2);
+                bs.c.a(channel, th2);
                 throw th3;
             }
         }

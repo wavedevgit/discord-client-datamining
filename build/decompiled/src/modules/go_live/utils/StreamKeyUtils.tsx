@@ -30,14 +30,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/go_live/utils/StreamKeyUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun30997: for (var _fun30997_ip = 0;;) switch (_fun30997_ip) {
+        _fun31001: for (var _fun31001_ip = 0;;) switch (_fun31001_ip) {
             case 0:
                 var4 = arg0;
                 var0 = null;
                 var0 = var0 != var4;
                 if (!var0) {
-                    _fun30997_ip = 63;
-                    continue _fun30997
+                    _fun31001_ip = 63;
+                    continue _fun31001
                 }
             case 12:
                 var3 = var4.startsWith;
@@ -45,8 +45,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.GUILD;
                 var1 = var3.bind(var4)(var1);
                 if (var1) {
-                    _fun30997_ip = 60;
-                    continue _fun30997
+                    _fun31001_ip = 60;
+                    continue _fun31001
                 }
             case 39:
                 var3 = var4.startsWith;
@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isStreamKey = var3;
     var3 = function arg0() {
-        _fun30998: for (var _fun30998_ip = 0;;) switch (_fun30998_ip) {
+        _fun31002: for (var _fun31002_ip = 0;;) switch (_fun31002_ip) {
             case 0:
                 var2 = arg0;
                 var1 = var2.split;
@@ -72,15 +72,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure1_slot1;
                 var2 = var2.GUILD;
                 if (!(var2 !== var6)) {
-                    _fun30998_ip = 157;
-                    continue _fun30998
+                    _fun31002_ip = 157;
+                    continue _fun31002
                 }
             case 40:
                 var2 = _closure1_slot1;
                 var2 = var2.CALL;
                 if (!(var2 !== var6)) {
-                    _fun30998_ip = 106;
-                    continue _fun30998
+                    _fun31002_ip = 106;
+                    continue _fun31002
                 }
             case 54:
                 var2 = global;
@@ -136,7 +136,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.decodeStreamKey = var3;
     var1 = function arg0() {
-        _fun30999: for (var _fun30999_ip = 0;;) switch (_fun30999_ip) {
+        _fun31003: for (var _fun31003_ip = 0;;) switch (_fun31003_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.streamType;
@@ -146,15 +146,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = _closure1_slot1;
                 var5 = var5.GUILD;
                 if (!(var5 !== var4)) {
-                    _fun30999_ip = 140;
-                    continue _fun30999
+                    _fun31003_ip = 140;
+                    continue _fun31003
                 }
             case 42:
                 var2 = _closure1_slot1;
                 var2 = var2.CALL;
                 if (!(var2 !== var4)) {
-                    _fun30999_ip = 108;
-                    continue _fun30999
+                    _fun31003_ip = 108;
+                    continue _fun31003
                 }
             case 56:
                 var2 = global;
@@ -196,4 +196,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.encodeStreamKey = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 3506, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 3508, 2]);

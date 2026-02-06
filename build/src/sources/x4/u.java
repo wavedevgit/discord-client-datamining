@@ -5,7 +5,7 @@ import java.io.Closeable;
 import java.io.File;
 import kotlin.jvm.functions.Function0;
 import okio.BufferedSource;
-import ou.c0;
+import qu.c0;
 import x4.r;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public abstract class u {
@@ -41,13 +41,13 @@ public abstract class u {
         }, aVar);
     }
 
-    public static final r g(c0 c0Var, ou.h hVar, String str, Closeable closeable) {
+    public static final r g(c0 c0Var, qu.h hVar, String str, Closeable closeable) {
         return new q(c0Var, hVar, str, closeable, null);
     }
 
-    public static /* synthetic */ r h(c0 c0Var, ou.h hVar, String str, Closeable closeable, int i10, Object obj) {
+    public static /* synthetic */ r h(c0 c0Var, qu.h hVar, String str, Closeable closeable, int i10, Object obj) {
         if ((i10 & 2) != 0) {
-            hVar = ou.h.f44516b;
+            hVar = qu.h.f48232b;
         }
         if ((i10 & 4) != 0) {
             str = null;

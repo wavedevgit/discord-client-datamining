@@ -5,23 +5,23 @@ public abstract class YogaNode {
 
     public abstract void B(e eVar, float f10);
 
-    public abstract void C(Object obj);
+    public abstract void D(Object obj);
 
-    public abstract void D(YogaDirection yogaDirection);
+    public abstract void E(YogaDirection yogaDirection);
 
-    public abstract void E(YogaDisplay yogaDisplay);
-
-    public abstract void F(float f10);
+    public abstract void F(YogaDisplay yogaDisplay);
 
     public abstract void G(float f10);
 
-    public abstract void H();
+    public abstract void H(float f10);
 
-    public abstract void I(float f10);
+    public abstract void I();
 
-    public abstract void J(YogaFlexDirection yogaFlexDirection);
+    public abstract void J(float f10);
 
-    public abstract void K(float f10);
+    public abstract void K(YogaFlexDirection yogaFlexDirection);
+
+    public abstract void L(float f10);
 
     public abstract void M(float f10);
 
@@ -29,17 +29,17 @@ public abstract class YogaNode {
 
     public abstract void O(g gVar, float f10);
 
-    public abstract void P(float f10);
+    public abstract void Q(float f10);
 
-    public abstract void Q();
+    public abstract void R();
 
-    public abstract void R(float f10);
+    public abstract void S(float f10);
 
-    public abstract void S(YogaJustify yogaJustify);
+    public abstract void T(YogaJustify yogaJustify);
 
-    public abstract void T(e eVar, float f10);
+    public abstract void U(e eVar, float f10);
 
-    public abstract void U(e eVar);
+    public abstract void V(e eVar);
 
     public abstract void W(e eVar, float f10);
 
@@ -73,9 +73,9 @@ public abstract class YogaNode {
 
     public abstract void f0(float f10);
 
-    public abstract float g();
-
     public abstract void g0(YogaOverflow yogaOverflow);
+
+    public abstract float h();
 
     public abstract void h0(e eVar, float f10);
 
@@ -103,9 +103,9 @@ public abstract class YogaNode {
 
     public abstract void n0();
 
-    public abstract void o0(float f10);
+    public abstract boolean o();
 
-    public abstract boolean p();
+    public abstract void o0(float f10);
 
     public abstract void p0(YogaWrap yogaWrap);
 
@@ -113,17 +113,17 @@ public abstract class YogaNode {
 
     public abstract boolean r();
 
-    public abstract void s();
+    public abstract void t();
 
-    public abstract YogaNode t(int i10);
+    public abstract YogaNode u(int i10);
 
-    public abstract void u();
-
-    public abstract void v(YogaAlign yogaAlign);
+    public abstract void v();
 
     public abstract void w(YogaAlign yogaAlign);
 
     public abstract void x(YogaAlign yogaAlign);
+
+    public abstract void y(YogaAlign yogaAlign);
 
     public abstract void z(float f10);
 }

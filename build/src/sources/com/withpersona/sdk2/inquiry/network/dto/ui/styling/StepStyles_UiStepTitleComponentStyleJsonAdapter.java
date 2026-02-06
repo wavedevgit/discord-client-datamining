@@ -40,21 +40,21 @@ public final class StepStyles_UiStepTitleComponentStyleJsonAdapter extends h {
     @NotNull
     public StepStyles.UiStepTitleComponentStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         StepStyles.StepTextBasedComponentStyleContainer stepTextBasedComponentStyleContainer = null;
         StepStyles.StepTextBasedComponentStyleContainer stepTextBasedComponentStyleContainer2 = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 stepTextBasedComponentStyleContainer = (StepStyles.StepTextBasedComponentStyleContainer) this.nullableStepTextBasedComponentStyleContainerAdapter.fromJson(reader);
-            } else if (W == 1) {
+            } else if (J == 1) {
                 stepTextBasedComponentStyleContainer2 = (StepStyles.StepTextBasedComponentStyleContainer) this.nullableStepTextBasedComponentStyleContainerAdapter.fromJson(reader);
             }
         }
-        reader.z();
+        reader.D();
         return new StepStyles.UiStepTitleComponentStyle(stepTextBasedComponentStyleContainer, stepTextBasedComponentStyleContainer2);
     }
 
@@ -63,11 +63,11 @@ public final class StepStyles_UiStepTitleComponentStyleJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (uiStepTitleComponentStyle != null) {
             writer.k();
-            writer.W("base");
+            writer.J("base");
             this.nullableStepTextBasedComponentStyleContainerAdapter.toJson(writer, uiStepTitleComponentStyle.getBase());
-            writer.W("uiStepProcessingTitle");
+            writer.J("uiStepProcessingTitle");
             this.nullableStepTextBasedComponentStyleContainerAdapter.toJson(writer, uiStepTitleComponentStyle.getUiStepProcessingTitle());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

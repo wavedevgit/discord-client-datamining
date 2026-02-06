@@ -12,142 +12,142 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
-import pt.h0;
+import rt.h0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class a0 extends pt.k0 implements wt.g {
-    private static final pt.v A;
+public final class a0 extends rt.k0 implements yt.g {
+    private static final rt.v A;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final long f39696i;
+    private static final long f39051i;
 
     /* renamed from: o  reason: collision with root package name */
-    private static final long f39697o;
+    private static final long f39052o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final a0 f39698p;
+    private static final a0 f39053p;
 
     /* renamed from: q  reason: collision with root package name */
-    private static final a0 f39699q;
+    private static final a0 f39054q;
 
     /* renamed from: r  reason: collision with root package name */
-    private static final a0 f39700r;
+    private static final a0 f39055r;
 
     /* renamed from: s  reason: collision with root package name */
-    private static final Set f39701s;
+    private static final Set f39056s;
     private static final long serialVersionUID = -3192884724477742274L;
 
     /* renamed from: t  reason: collision with root package name */
-    private static final Map f39702t;
+    private static final Map f39057t;
 
     /* renamed from: u  reason: collision with root package name */
-    private static final Map f39703u;
+    private static final Map f39058u;
 
     /* renamed from: v  reason: collision with root package name */
-    private static final pt.h0 f39704v;
+    private static final rt.h0 f39059v;
 
     /* renamed from: w  reason: collision with root package name */
-    public static final a0 f39705w;
+    public static final a0 f39060w;
 
     /* renamed from: x  reason: collision with root package name */
-    public static final pt.p f39706x;
+    public static final rt.p f39061x;
 
     /* renamed from: y  reason: collision with root package name */
-    public static final pt.p f39707y;
+    public static final rt.p f39062y;
 
     /* renamed from: z  reason: collision with root package name */
-    public static final pt.p f39708z;
+    public static final rt.p f39063z;
 
     /* renamed from: d  reason: collision with root package name */
-    private final transient long f39709d;
+    private final transient long f39064d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final transient int f39710e;
+    private final transient int f39065e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f39711a;
+        static final /* synthetic */ int[] f39066a;
 
         /* renamed from: b  reason: collision with root package name */
-        static final /* synthetic */ int[] f39712b;
+        static final /* synthetic */ int[] f39067b;
 
         /* renamed from: c  reason: collision with root package name */
-        static final /* synthetic */ int[] f39713c;
+        static final /* synthetic */ int[] f39068c;
 
         static {
             int[] iArr = new int[TimeUnit.values().length];
-            f39713c = iArr;
+            f39068c = iArr;
             try {
                 iArr[TimeUnit.DAYS.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f39713c[TimeUnit.HOURS.ordinal()] = 2;
+                f39068c[TimeUnit.HOURS.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f39713c[TimeUnit.MINUTES.ordinal()] = 3;
+                f39068c[TimeUnit.MINUTES.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f39713c[TimeUnit.SECONDS.ordinal()] = 4;
+                f39068c[TimeUnit.SECONDS.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f39713c[TimeUnit.MILLISECONDS.ordinal()] = 5;
+                f39068c[TimeUnit.MILLISECONDS.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                f39713c[TimeUnit.MICROSECONDS.ordinal()] = 6;
+                f39068c[TimeUnit.MICROSECONDS.ordinal()] = 6;
             } catch (NoSuchFieldError unused6) {
             }
             try {
-                f39713c[TimeUnit.NANOSECONDS.ordinal()] = 7;
+                f39068c[TimeUnit.NANOSECONDS.ordinal()] = 7;
             } catch (NoSuchFieldError unused7) {
             }
             int[] iArr2 = new int[o0.values().length];
-            f39712b = iArr2;
+            f39067b = iArr2;
             try {
                 iArr2[o0.SECONDS.ordinal()] = 1;
             } catch (NoSuchFieldError unused8) {
             }
             try {
-                f39712b[o0.NANOSECONDS.ordinal()] = 2;
+                f39067b[o0.NANOSECONDS.ordinal()] = 2;
             } catch (NoSuchFieldError unused9) {
             }
-            int[] iArr3 = new int[wt.f.values().length];
-            f39711a = iArr3;
+            int[] iArr3 = new int[yt.f.values().length];
+            f39066a = iArr3;
             try {
-                iArr3[wt.f.POSIX.ordinal()] = 1;
+                iArr3[yt.f.POSIX.ordinal()] = 1;
             } catch (NoSuchFieldError unused10) {
             }
             try {
-                f39711a[wt.f.UTC.ordinal()] = 2;
+                f39066a[yt.f.UTC.ordinal()] = 2;
             } catch (NoSuchFieldError unused11) {
             }
             try {
-                f39711a[wt.f.TAI.ordinal()] = 3;
+                f39066a[yt.f.TAI.ordinal()] = 3;
             } catch (NoSuchFieldError unused12) {
             }
             try {
-                f39711a[wt.f.GPS.ordinal()] = 4;
+                f39066a[yt.f.GPS.ordinal()] = 4;
             } catch (NoSuchFieldError unused13) {
             }
             try {
-                f39711a[wt.f.TT.ordinal()] = 5;
+                f39066a[yt.f.TT.ordinal()] = 5;
             } catch (NoSuchFieldError unused14) {
             }
             try {
-                f39711a[wt.f.UT.ordinal()] = 6;
+                f39066a[yt.f.UT.ordinal()] = 6;
             } catch (NoSuchFieldError unused15) {
             }
         }
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    private static class b implements pt.i0 {
+    private static class b implements rt.i0 {
         private b() {
         }
 
@@ -164,65 +164,64 @@ public final class a0 extends pt.k0 implements wt.g {
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public enum c implements pt.p, pt.z {
+    public enum c implements rt.p, rt.z {
         FRACTION;
 
-        @Override // pt.p
-        public boolean B() {
+        @Override // rt.p
+        public boolean A() {
             return false;
         }
 
-        @Override // java.util.Comparator
+        @Override // rt.z
         /* renamed from: C */
-        public int compare(pt.o oVar, pt.o oVar2) {
-            return ((Integer) oVar.v(this)).compareTo((Integer) oVar2.v(this));
-        }
-
-        @Override // pt.z
-        /* renamed from: D */
-        public pt.p a(a0 a0Var) {
+        public rt.p a(a0 a0Var) {
             return null;
         }
 
-        @Override // pt.z
+        @Override // rt.p
+        public boolean D() {
+            return false;
+        }
+
+        @Override // rt.z
         /* renamed from: E */
-        public pt.p h(a0 a0Var) {
+        public rt.p g(a0 a0Var) {
             return null;
         }
 
-        @Override // pt.p
+        @Override // rt.p
         /* renamed from: F */
         public Integer e() {
             return 999999999;
         }
 
-        @Override // pt.p
+        @Override // rt.p
         /* renamed from: G */
-        public Integer A() {
+        public Integer B() {
             return 0;
         }
 
-        @Override // pt.z
+        @Override // rt.z
         /* renamed from: H */
         public Integer k(a0 a0Var) {
             return e();
         }
 
-        @Override // pt.z
+        @Override // rt.z
         /* renamed from: I */
-        public Integer r(a0 a0Var) {
-            return A();
+        public Integer o(a0 a0Var) {
+            return B();
         }
 
-        @Override // pt.z
+        @Override // rt.z
         /* renamed from: J */
         public Integer y(a0 a0Var) {
             return Integer.valueOf(a0Var.a());
         }
 
-        @Override // pt.z
+        @Override // rt.z
         /* renamed from: K */
-        public boolean p(a0 a0Var, Integer num) {
+        public boolean n(a0 a0Var, Integer num) {
             int intValue;
             if (num == null || (intValue = num.intValue()) < 0 || intValue >= 1000000000) {
                 return false;
@@ -230,189 +229,190 @@ public final class a0 extends pt.k0 implements wt.g {
             return true;
         }
 
-        @Override // pt.z
+        @Override // rt.z
         /* renamed from: L */
-        public a0 x(a0 a0Var, Integer num, boolean z10) {
+        public a0 u(a0 a0Var, Integer num, boolean z10) {
             if (num != null) {
-                if (wt.d.w().D()) {
-                    wt.f fVar = wt.f.UTC;
-                    return a0.l0(a0Var.l(fVar), num.intValue(), fVar);
+                if (yt.d.u().G()) {
+                    yt.f fVar = yt.f.UTC;
+                    return a0.l0(a0Var.o(fVar), num.intValue(), fVar);
                 }
-                return a0.l0(a0Var.q(), num.intValue(), wt.f.POSIX);
+                return a0.l0(a0Var.m(), num.intValue(), yt.f.POSIX);
             }
             throw new IllegalArgumentException("Missing fraction value.");
         }
 
-        @Override // pt.p
+        @Override // rt.p
         public char d() {
             return (char) 0;
         }
 
-        @Override // pt.p
+        @Override // rt.p
         public Class getType() {
             return Integer.class;
         }
 
-        @Override // pt.p
-        public boolean l() {
+        @Override // rt.p
+        public boolean i() {
             return false;
         }
 
-        @Override // pt.p
-        public boolean z() {
-            return false;
+        @Override // java.util.Comparator
+        /* renamed from: z */
+        public int compare(rt.o oVar, rt.o oVar2) {
+            return ((Integer) oVar.s(this)).compareTo((Integer) oVar2.s(this));
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public enum d implements pt.p, pt.z {
+    public enum d implements rt.p, rt.z {
         POSIX_TIME;
 
-        @Override // pt.p
-        public boolean B() {
+        @Override // rt.p
+        public boolean A() {
             return false;
         }
 
-        @Override // java.util.Comparator
+        @Override // rt.z
         /* renamed from: C */
-        public int compare(pt.o oVar, pt.o oVar2) {
-            return ((Long) oVar.v(this)).compareTo((Long) oVar2.v(this));
-        }
-
-        @Override // pt.z
-        /* renamed from: D */
-        public pt.p a(a0 a0Var) {
+        public rt.p a(a0 a0Var) {
             return c.FRACTION;
         }
 
-        @Override // pt.z
+        @Override // rt.p
+        public boolean D() {
+            return false;
+        }
+
+        @Override // rt.z
         /* renamed from: E */
-        public pt.p h(a0 a0Var) {
+        public rt.p g(a0 a0Var) {
             return c.FRACTION;
         }
 
-        @Override // pt.p
+        @Override // rt.p
         /* renamed from: F */
         public Long e() {
-            return Long.valueOf(a0.f39697o);
+            return Long.valueOf(a0.f39052o);
         }
 
-        @Override // pt.p
+        @Override // rt.p
         /* renamed from: G */
-        public Long A() {
-            return Long.valueOf(a0.f39696i);
+        public Long B() {
+            return Long.valueOf(a0.f39051i);
         }
 
-        @Override // pt.z
+        @Override // rt.z
         /* renamed from: H */
         public Long k(a0 a0Var) {
-            return Long.valueOf(a0.f39697o);
+            return Long.valueOf(a0.f39052o);
         }
 
-        @Override // pt.z
+        @Override // rt.z
         /* renamed from: I */
-        public Long r(a0 a0Var) {
-            return Long.valueOf(a0.f39696i);
+        public Long o(a0 a0Var) {
+            return Long.valueOf(a0.f39051i);
         }
 
-        @Override // pt.z
+        @Override // rt.z
         /* renamed from: J */
         public Long y(a0 a0Var) {
-            return Long.valueOf(a0Var.q());
+            return Long.valueOf(a0Var.m());
         }
 
-        @Override // pt.z
+        @Override // rt.z
         /* renamed from: K */
-        public boolean p(a0 a0Var, Long l10) {
+        public boolean n(a0 a0Var, Long l10) {
             if (l10 == null) {
                 return false;
             }
             long longValue = l10.longValue();
-            if (longValue < a0.f39696i || longValue > a0.f39697o) {
+            if (longValue < a0.f39051i || longValue > a0.f39052o) {
                 return false;
             }
             return true;
         }
 
-        @Override // pt.z
+        @Override // rt.z
         /* renamed from: L */
-        public a0 x(a0 a0Var, Long l10, boolean z10) {
+        public a0 u(a0 a0Var, Long l10, boolean z10) {
             if (l10 != null) {
-                return a0.l0(l10.longValue(), a0Var.a(), wt.f.POSIX);
+                return a0.l0(l10.longValue(), a0Var.a(), yt.f.POSIX);
             }
             throw new IllegalArgumentException("Missing elapsed seconds.");
         }
 
-        @Override // pt.p
+        @Override // rt.p
         public char d() {
             return (char) 0;
         }
 
-        @Override // pt.p
+        @Override // rt.p
         public Class getType() {
             return Long.class;
         }
 
-        @Override // pt.p
-        public boolean l() {
+        @Override // rt.p
+        public boolean i() {
             return false;
         }
 
-        @Override // pt.p
-        public boolean z() {
-            return false;
+        @Override // java.util.Comparator
+        /* renamed from: z */
+        public int compare(rt.o oVar, rt.o oVar2) {
+            return ((Long) oVar.s(this)).compareTo((Long) oVar2.s(this));
         }
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    private static class e implements pt.u {
+    private static class e implements rt.u {
         private e() {
         }
 
-        @Override // pt.u
-        public pt.f0 a() {
-            return pt.f0.f46601a;
+        @Override // rt.u
+        public rt.f0 a() {
+            return rt.f0.f49502a;
         }
 
-        @Override // pt.u
-        public pt.x b() {
+        @Override // rt.u
+        public String b(rt.y yVar, Locale locale) {
+            st.e d10 = st.e.d(yVar.a());
+            return st.b.s(d10, d10, locale);
+        }
+
+        @Override // rt.u
+        public rt.x c() {
             return i0.S();
         }
 
-        @Override // pt.u
-        public String c(pt.y yVar, Locale locale) {
-            qt.e d10 = qt.e.d(yVar.a());
-            return qt.b.s(d10, d10, locale);
-        }
-
-        @Override // pt.u
+        @Override // rt.u
         /* renamed from: d */
-        public a0 k(pt.q qVar, pt.d dVar, boolean z10, boolean z11) {
+        public a0 l(rt.q qVar, rt.d dVar, boolean z10, boolean z11) {
             i0 i0Var;
             net.time4j.tz.k kVar;
             a0 a0Var;
             net.time4j.tz.p B;
             a0 a0Var2;
-            wt.f fVar = (wt.f) dVar.a(qt.a.f48108w, wt.f.UTC);
-            if (qVar instanceof nt.f) {
-                return a0.a0((nt.f) nt.f.class.cast(qVar)).u0(fVar);
+            yt.f fVar = (yt.f) dVar.b(st.a.f50132w, yt.f.UTC);
+            if (qVar instanceof pt.f) {
+                return a0.a0((pt.f) pt.f.class.cast(qVar)).u0(fVar);
             }
             d dVar2 = d.POSIX_TIME;
-            if (qVar.m(dVar2)) {
-                long longValue = ((Long) qVar.v(dVar2)).longValue();
+            if (qVar.n(dVar2)) {
+                long longValue = ((Long) qVar.s(dVar2)).longValue();
                 c cVar = c.FRACTION;
-                return a0.l0(longValue, qVar.m(cVar) ? ((Integer) qVar.v(cVar)).intValue() : 0, wt.f.POSIX).u0(fVar);
+                return a0.l0(longValue, qVar.n(cVar) ? ((Integer) qVar.s(cVar)).intValue() : 0, yt.f.POSIX).u0(fVar);
             }
-            if (qVar.m(pt.b0.LEAP_SECOND)) {
+            if (qVar.n(rt.b0.LEAP_SECOND)) {
                 qVar.C(g0.J, 60);
                 r3 = 1;
             }
-            pt.p M = i0.S().M();
-            if (qVar.m(M)) {
-                i0Var = (i0) qVar.v(M);
+            rt.p M = i0.S().M();
+            if (qVar.n(M)) {
+                i0Var = (i0) qVar.s(M);
             } else {
-                i0Var = (i0) i0.S().k(qVar, dVar, z10, z11);
+                i0Var = (i0) i0.S().l(qVar, dVar, z10, z11);
             }
             if (i0Var == null) {
                 return null;
@@ -420,17 +420,17 @@ public final class a0 extends pt.k0 implements wt.g {
             if (qVar.k()) {
                 kVar = qVar.u();
             } else {
-                pt.c cVar2 = qt.a.f48089d;
-                kVar = dVar.b(cVar2) ? (net.time4j.tz.k) dVar.c(cVar2) : null;
+                rt.c cVar2 = st.a.f50113d;
+                kVar = dVar.c(cVar2) ? (net.time4j.tz.k) dVar.a(cVar2) : null;
             }
             if (kVar != null) {
-                pt.b0 b0Var = pt.b0.DAYLIGHT_SAVING;
-                if (qVar.m(b0Var)) {
-                    a0Var = i0Var.Y(net.time4j.tz.l.N(kVar).Q(((net.time4j.tz.o) dVar.a(qt.a.f48090e, net.time4j.tz.l.f40224o)).a(((Boolean) qVar.v(b0Var)).booleanValue() ? net.time4j.tz.g.EARLIER_OFFSET : net.time4j.tz.g.LATER_OFFSET)));
+                rt.b0 b0Var = rt.b0.DAYLIGHT_SAVING;
+                if (qVar.n(b0Var)) {
+                    a0Var = i0Var.Y(net.time4j.tz.l.N(kVar).Q(((net.time4j.tz.o) dVar.b(st.a.f50114e, net.time4j.tz.l.f39579o)).a(((Boolean) qVar.s(b0Var)).booleanValue() ? net.time4j.tz.g.EARLIER_OFFSET : net.time4j.tz.g.LATER_OFFSET)));
                 } else {
-                    pt.c cVar3 = qt.a.f48090e;
-                    if (dVar.b(cVar3)) {
-                        a0Var = i0Var.Y(net.time4j.tz.l.N(kVar).Q((net.time4j.tz.o) dVar.c(cVar3)));
+                    rt.c cVar3 = st.a.f50114e;
+                    if (dVar.c(cVar3)) {
+                        a0Var = i0Var.Y(net.time4j.tz.l.N(kVar).Q((net.time4j.tz.o) dVar.a(cVar3)));
                     } else {
                         a0Var = i0Var.Z(kVar);
                     }
@@ -447,14 +447,14 @@ public final class a0 extends pt.k0 implements wt.g {
                 } else {
                     B = net.time4j.tz.l.N(kVar).B(a0Var);
                 }
-                if (B.l() == 0 && B.k() % 60 == 0) {
+                if (B.k() == 0 && B.j() % 60 == 0) {
                     if (a0Var.c0().f() >= 1972) {
                         a0Var2 = a0Var.n0(1L, o0.SECONDS);
                     } else {
-                        a0Var2 = new a0(a0Var.a(), a0Var.q() + 1, (a) null);
+                        a0Var2 = new a0(a0Var.a(), a0Var.m() + 1, (a) null);
                     }
                     if (!z10) {
-                        if (wt.d.w().D()) {
+                        if (yt.d.u().G()) {
                             if (!a0Var2.k0()) {
                                 throw new IllegalArgumentException("SECOND_OF_MINUTE parsed as invalid leapsecond before " + a0Var2);
                             }
@@ -468,19 +468,19 @@ public final class a0 extends pt.k0 implements wt.g {
             return a0Var.u0(fVar);
         }
 
-        @Override // pt.u
+        @Override // rt.u
         /* renamed from: e */
-        public pt.o h(a0 a0Var, pt.d dVar) {
-            pt.c cVar = qt.a.f48089d;
-            if (dVar.b(cVar)) {
-                return a0Var.v0((wt.f) dVar.a(qt.a.f48108w, wt.f.UTC)).h0((net.time4j.tz.k) dVar.c(cVar));
+        public rt.o k(a0 a0Var, rt.d dVar) {
+            rt.c cVar = st.a.f50113d;
+            if (dVar.c(cVar)) {
+                return a0Var.v0((yt.f) dVar.b(st.a.f50132w, yt.f.UTC)).h0((net.time4j.tz.k) dVar.a(cVar));
             }
             throw new IllegalArgumentException("Cannot print moment without timezone.");
         }
 
-        @Override // pt.u
-        public int j() {
-            return f0.r0().j();
+        @Override // rt.u
+        public int g() {
+            return f0.r0().g();
         }
 
         /* synthetic */ e(a aVar) {
@@ -489,17 +489,17 @@ public final class a0 extends pt.k0 implements wt.g {
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    private static class f implements pt.v {
+    private static class f implements rt.v {
         private f() {
         }
 
-        @Override // pt.v
+        @Override // rt.v
         /* renamed from: a */
         public a0 apply(a0 a0Var) {
-            wt.b x10;
-            wt.d w10 = wt.d.w();
-            if (w10.D() && (x10 = w10.x(a0Var.l(wt.f.UTC))) != null) {
-                return f0.w0(x10.c()).q0(23, 59, 59).R().n0(x10.a(), o0.SECONDS);
+            yt.b C;
+            yt.d u10 = yt.d.u();
+            if (u10.G() && (C = u10.C(a0Var.o(yt.f.UTC))) != null) {
+                return f0.w0(C.c()).q0(23, 59, 59).R().n0(C.a(), o0.SECONDS);
             }
             return null;
         }
@@ -510,47 +510,47 @@ public final class a0 extends pt.k0 implements wt.g {
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    private static class g implements pt.z {
+    private static class g implements rt.z {
         private g() {
         }
 
-        @Override // pt.z
+        @Override // rt.z
         /* renamed from: b */
-        public pt.p a(a0 a0Var) {
+        public rt.p a(a0 a0Var) {
             return null;
         }
 
-        @Override // pt.z
+        @Override // rt.z
         /* renamed from: c */
-        public pt.p h(a0 a0Var) {
+        public rt.p g(a0 a0Var) {
             return null;
         }
 
-        @Override // pt.z
+        @Override // rt.z
         /* renamed from: d */
         public TimeUnit k(a0 a0Var) {
             return TimeUnit.NANOSECONDS;
         }
 
-        @Override // pt.z
+        @Override // rt.z
         /* renamed from: e */
-        public TimeUnit r(a0 a0Var) {
+        public TimeUnit o(a0 a0Var) {
             return TimeUnit.DAYS;
         }
 
-        @Override // pt.z
+        @Override // rt.z
         /* renamed from: f */
         public TimeUnit y(a0 a0Var) {
             int a10 = a0Var.a();
             if (a10 == 0) {
-                long j10 = a0Var.f39709d;
-                if (nt.c.d(j10, 86400) == 0) {
+                long j10 = a0Var.f39064d;
+                if (pt.c.d(j10, 86400) == 0) {
                     return TimeUnit.DAYS;
                 }
-                if (nt.c.d(j10, 3600) == 0) {
+                if (pt.c.d(j10, 3600) == 0) {
                     return TimeUnit.HOURS;
                 }
-                if (nt.c.d(j10, 60) == 0) {
+                if (pt.c.d(j10, 60) == 0) {
                     return TimeUnit.MINUTES;
                 }
                 return TimeUnit.SECONDS;
@@ -564,39 +564,39 @@ public final class a0 extends pt.k0 implements wt.g {
             }
         }
 
-        @Override // pt.z
-        /* renamed from: g */
-        public boolean p(a0 a0Var, TimeUnit timeUnit) {
+        @Override // rt.z
+        /* renamed from: h */
+        public boolean n(a0 a0Var, TimeUnit timeUnit) {
             return timeUnit != null;
         }
 
-        @Override // pt.z
+        @Override // rt.z
         /* renamed from: i */
-        public a0 x(a0 a0Var, TimeUnit timeUnit, boolean z10) {
+        public a0 u(a0 a0Var, TimeUnit timeUnit, boolean z10) {
             a0 l02;
             if (timeUnit != null) {
-                switch (a.f39713c[timeUnit.ordinal()]) {
+                switch (a.f39068c[timeUnit.ordinal()]) {
                     case 1:
-                        return a0.m0(nt.c.b(a0Var.f39709d, 86400) * 86400, wt.f.POSIX);
+                        return a0.m0(pt.c.b(a0Var.f39064d, 86400) * 86400, yt.f.POSIX);
                     case 2:
-                        return a0.m0(nt.c.b(a0Var.f39709d, 3600) * 3600, wt.f.POSIX);
+                        return a0.m0(pt.c.b(a0Var.f39064d, 3600) * 3600, yt.f.POSIX);
                     case 3:
-                        return a0.m0(nt.c.b(a0Var.f39709d, 60) * 60, wt.f.POSIX);
+                        return a0.m0(pt.c.b(a0Var.f39064d, 60) * 60, yt.f.POSIX);
                     case 4:
-                        l02 = a0.l0(a0Var.f39709d, 0, wt.f.POSIX);
+                        l02 = a0.l0(a0Var.f39064d, 0, yt.f.POSIX);
                         break;
                     case 5:
-                        l02 = a0.l0(a0Var.f39709d, (a0Var.a() / 1000000) * 1000000, wt.f.POSIX);
+                        l02 = a0.l0(a0Var.f39064d, (a0Var.a() / 1000000) * 1000000, yt.f.POSIX);
                         break;
                     case 6:
-                        l02 = a0.l0(a0Var.f39709d, (a0Var.a() / 1000) * 1000, wt.f.POSIX);
+                        l02 = a0.l0(a0Var.f39064d, (a0Var.a() / 1000) * 1000, yt.f.POSIX);
                         break;
                     case 7:
                         return a0Var;
                     default:
                         throw new UnsupportedOperationException(timeUnit.name());
                 }
-                if (a0Var.j0() && wt.d.w().D()) {
+                if (a0Var.j0() && yt.d.u().G()) {
                     return l02.n0(1L, o0.SECONDS);
                 }
                 return l02;
@@ -610,31 +610,31 @@ public final class a0 extends pt.k0 implements wt.g {
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    private static class h implements pt.m0 {
+    private static class h implements rt.m0 {
 
         /* renamed from: a  reason: collision with root package name */
-        private final TimeUnit f39718a;
+        private final TimeUnit f39073a;
 
         h(TimeUnit timeUnit) {
-            this.f39718a = timeUnit;
+            this.f39073a = timeUnit;
         }
 
-        @Override // pt.m0
+        @Override // rt.m0
         /* renamed from: c */
         public a0 b(a0 a0Var, long j10) {
-            if (this.f39718a.compareTo(TimeUnit.SECONDS) >= 0) {
-                return a0.l0(nt.c.f(a0Var.q(), nt.c.i(j10, this.f39718a.toSeconds(1L))), a0Var.a(), wt.f.POSIX);
+            if (this.f39073a.compareTo(TimeUnit.SECONDS) >= 0) {
+                return a0.l0(pt.c.f(a0Var.m(), pt.c.i(j10, this.f39073a.toSeconds(1L))), a0Var.a(), yt.f.POSIX);
             }
-            long f10 = nt.c.f(a0Var.a(), nt.c.i(j10, this.f39718a.toNanos(1L)));
-            return a0.l0(nt.c.f(a0Var.q(), nt.c.b(f10, 1000000000)), nt.c.d(f10, 1000000000), wt.f.POSIX);
+            long f10 = pt.c.f(a0Var.a(), pt.c.i(j10, this.f39073a.toNanos(1L)));
+            return a0.l0(pt.c.f(a0Var.m(), pt.c.b(f10, 1000000000)), pt.c.d(f10, 1000000000), yt.f.POSIX);
         }
 
-        @Override // pt.m0
+        @Override // rt.m0
         /* renamed from: d */
         public long a(a0 a0Var, a0 a0Var2) {
             long f10;
-            if (this.f39718a.compareTo(TimeUnit.SECONDS) >= 0) {
-                f10 = a0Var2.q() - a0Var.q();
+            if (this.f39073a.compareTo(TimeUnit.SECONDS) >= 0) {
+                f10 = a0Var2.m() - a0Var.m();
                 int i10 = (f10 > 0L ? 1 : (f10 == 0L ? 0 : -1));
                 if (i10 < 0) {
                     if (a0Var2.a() > a0Var.a()) {
@@ -644,9 +644,9 @@ public final class a0 extends pt.k0 implements wt.g {
                     f10--;
                 }
             } else {
-                f10 = nt.c.f(nt.c.i(nt.c.m(a0Var2.q(), a0Var.q()), 1000000000L), a0Var2.a() - a0Var.a());
+                f10 = pt.c.f(pt.c.i(pt.c.m(a0Var2.m(), a0Var.m()), 1000000000L), a0Var2.a() - a0Var.a());
             }
-            switch (a.f39713c[this.f39718a.ordinal()]) {
+            switch (a.f39068c[this.f39073a.ordinal()]) {
                 case 1:
                     return f10 / 86400;
                 case 2:
@@ -661,27 +661,27 @@ public final class a0 extends pt.k0 implements wt.g {
                 case 6:
                     return f10 / 1000;
                 default:
-                    throw new UnsupportedOperationException(this.f39718a.name());
+                    throw new UnsupportedOperationException(this.f39073a.name());
             }
         }
     }
 
     static {
         TimeUnit[] values;
-        long j10 = nt.b.j(-999999999, 1, 1);
-        long j11 = nt.b.j(999999999, 12, 31);
-        pt.a0 a0Var = pt.a0.UNIX;
-        pt.a0 a0Var2 = pt.a0.MODIFIED_JULIAN_DATE;
-        long p10 = a0Var.p(j10, a0Var2) * 86400;
-        f39696i = p10;
-        long p11 = (a0Var.p(j11, a0Var2) * 86400) + 86399;
-        f39697o = p11;
-        wt.f fVar = wt.f.POSIX;
-        a0 a0Var3 = new a0(p10, 0, fVar);
-        f39698p = a0Var3;
-        a0 a0Var4 = new a0(p11, 999999999, fVar);
-        f39699q = a0Var4;
-        f39700r = new a0(63158400L, 0, fVar);
+        long j10 = pt.b.j(-999999999, 1, 1);
+        long j11 = pt.b.j(999999999, 12, 31);
+        rt.a0 a0Var = rt.a0.UNIX;
+        rt.a0 a0Var2 = rt.a0.MODIFIED_JULIAN_DATE;
+        long n10 = a0Var.n(j10, a0Var2) * 86400;
+        f39051i = n10;
+        long n11 = (a0Var.n(j11, a0Var2) * 86400) + 86399;
+        f39052o = n11;
+        yt.f fVar = yt.f.POSIX;
+        a0 a0Var3 = new a0(n10, 0, fVar);
+        f39053p = a0Var3;
+        a0 a0Var4 = new a0(n11, 999999999, fVar);
+        f39054q = a0Var4;
+        f39055r = new a0(63158400L, 0, fVar);
         HashSet hashSet = new HashSet();
         hashSet.add(g0.G);
         hashSet.add(g0.F);
@@ -691,7 +691,7 @@ public final class a0 extends pt.k0 implements wt.g {
         hashSet.add(g0.B);
         hashSet.add(g0.H);
         hashSet.add(g0.I);
-        f39701s = Collections.unmodifiableSet(hashSet);
+        f39056s = Collections.unmodifiableSet(hashSet);
         HashMap hashMap = new HashMap();
         hashMap.put(g0.J, 1);
         hashMap.put(g0.K, 1);
@@ -701,7 +701,7 @@ public final class a0 extends pt.k0 implements wt.g {
         hashMap.put(g0.P, 1000000);
         hashMap.put(g0.N, 1000000000);
         hashMap.put(g0.Q, 1000000000);
-        f39702t = Collections.unmodifiableMap(hashMap);
+        f39057t = Collections.unmodifiableMap(hashMap);
         EnumMap enumMap = new EnumMap(TimeUnit.class);
         enumMap.put((EnumMap) TimeUnit.DAYS, (TimeUnit) Double.valueOf(86400.0d));
         enumMap.put((EnumMap) TimeUnit.HOURS, (TimeUnit) Double.valueOf(3600.0d));
@@ -710,24 +710,24 @@ public final class a0 extends pt.k0 implements wt.g {
         enumMap.put((EnumMap) TimeUnit.MILLISECONDS, (TimeUnit) Double.valueOf(0.001d));
         enumMap.put((EnumMap) TimeUnit.MICROSECONDS, (TimeUnit) Double.valueOf(1.0E-6d));
         enumMap.put((EnumMap) TimeUnit.NANOSECONDS, (TimeUnit) Double.valueOf(1.0E-9d));
-        f39703u = Collections.unmodifiableMap(enumMap);
+        f39058u = Collections.unmodifiableMap(enumMap);
         h0.b k10 = h0.b.k(TimeUnit.class, a0.class, new e(null), a0Var3, a0Var4);
         for (TimeUnit timeUnit : TimeUnit.values()) {
             h hVar = new h(timeUnit);
-            Map map = f39703u;
+            Map map = f39058u;
             k10.g(timeUnit, hVar, ((Double) map.get(timeUnit)).doubleValue(), map.keySet());
         }
         d dVar = d.POSIX_TIME;
         k10.e(dVar, dVar, TimeUnit.SECONDS);
         c cVar = c.FRACTION;
         k10.e(cVar, cVar, TimeUnit.NANOSECONDS);
-        pt.p pVar = j0.f40093p;
+        rt.p pVar = j0.f39448p;
         k10.d(pVar, new g(null));
-        f39704v = k10.l(new b(null)).h();
-        f39705w = new a0(0L, 0, wt.f.POSIX);
-        f39706x = dVar;
-        f39707y = cVar;
-        f39708z = pVar;
+        f39059v = k10.l(new b(null)).h();
+        f39060w = new a0(0L, 0, yt.f.POSIX);
+        f39061x = dVar;
+        f39062y = cVar;
+        f39063z = pVar;
         A = new f(null);
     }
 
@@ -735,12 +735,12 @@ public final class a0 extends pt.k0 implements wt.g {
         this(i10, j10);
     }
 
-    public static pt.h0 T() {
-        return f39704v;
+    public static rt.h0 T() {
+        return f39059v;
     }
 
     static void U(a0 a0Var) {
-        if (a0Var.f39709d >= 63072000) {
+        if (a0Var.f39064d >= 63072000) {
             return;
         }
         throw new UnsupportedOperationException("Cannot calculate SI-duration before 1972-01-01.");
@@ -755,14 +755,14 @@ public final class a0 extends pt.k0 implements wt.g {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void W(long j10, i0 i0Var) {
-        wt.d w10 = wt.d.w();
-        if (w10.I() && w10.H(w10.h(j10)) > j10) {
-            throw new pt.r("Illegal local timestamp due to negative leap second: " + i0Var);
+        yt.d u10 = yt.d.u();
+        if (u10.L() && u10.K(u10.g(j10)) > j10) {
+            throw new rt.r("Illegal local timestamp due to negative leap second: " + i0Var);
         }
     }
 
     private static void X(long j10) {
-        if (j10 <= f39697o && j10 >= f39696i) {
+        if (j10 <= f39052o && j10 >= f39051i) {
             return;
         }
         throw new IllegalArgumentException("UNIX time (UT) out of supported range: " + j10);
@@ -780,36 +780,36 @@ public final class a0 extends pt.k0 implements wt.g {
         sb2.append(String.valueOf(i10));
     }
 
-    public static a0 a0(nt.f fVar) {
+    public static a0 a0(pt.f fVar) {
         if (fVar instanceof a0) {
             return (a0) a0.class.cast(fVar);
         }
-        if ((fVar instanceof wt.g) && wt.d.w().D()) {
-            wt.g gVar = (wt.g) wt.g.class.cast(fVar);
-            wt.f fVar2 = wt.f.UTC;
-            return l0(gVar.l(fVar2), gVar.p(fVar2), fVar2);
+        if ((fVar instanceof yt.g) && yt.d.u().G()) {
+            yt.g gVar = (yt.g) yt.g.class.cast(fVar);
+            yt.f fVar2 = yt.f.UTC;
+            return l0(gVar.o(fVar2), gVar.j(fVar2), fVar2);
         }
-        return l0(fVar.q(), fVar.a(), wt.f.POSIX);
+        return l0(fVar.m(), fVar.a(), yt.f.POSIX);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public f0 c0() {
-        return f0.M0(nt.c.b(this.f39709d, 86400), pt.a0.UNIX);
+        return f0.M0(pt.c.b(this.f39064d, 86400), rt.a0.UNIX);
     }
 
     private long d0() {
-        if (wt.d.w().D()) {
-            long h10 = wt.d.w().h(this.f39709d);
+        if (yt.d.u().G()) {
+            long g10 = yt.d.u().g(this.f39064d);
             if (k0()) {
-                return h10 + 1;
+                return g10 + 1;
             }
-            return h10;
+            return g10;
         }
-        return this.f39709d - 63072000;
+        return this.f39064d - 63072000;
     }
 
     private double e0() {
-        double d02 = ((d0() + 42.184d) + (a() / 1.0E9d)) - wt.f.e(c0());
+        double d02 = ((d0() + 42.184d) + (a() / 1.0E9d)) - yt.f.e(c0());
         long floor = (long) Math.floor(d02);
         if (Double.compare(1.0E9d - ((d02 - floor) * 1.0E9d), 1.0d) < 0) {
             return floor + 1;
@@ -818,7 +818,7 @@ public final class a0 extends pt.k0 implements wt.g {
     }
 
     private static int f0(a0 a0Var) {
-        return nt.c.d(a0Var.f39709d, 86400);
+        return pt.c.d(a0Var.f39064d, 86400);
     }
 
     private i0 g0(net.time4j.tz.l lVar) {
@@ -827,20 +827,20 @@ public final class a0 extends pt.k0 implements wt.g {
 
     /* JADX INFO: Access modifiers changed from: private */
     public boolean k0() {
-        if ((this.f39710e >>> 30) != 0) {
+        if ((this.f39065e >>> 30) != 0) {
             return true;
         }
         return false;
     }
 
-    public static a0 l0(long j10, int i10, wt.f fVar) {
-        if (j10 == 0 && i10 == 0 && fVar == wt.f.POSIX) {
-            return f39705w;
+    public static a0 l0(long j10, int i10, yt.f fVar) {
+        if (j10 == 0 && i10 == 0 && fVar == yt.f.POSIX) {
+            return f39060w;
         }
         return new a0(j10, i10, fVar);
     }
 
-    public static a0 m0(long j10, wt.f fVar) {
+    public static a0 m0(long j10, yt.f fVar) {
         return l0(j10, 0, fVar);
     }
 
@@ -857,33 +857,33 @@ public final class a0 extends pt.k0 implements wt.g {
         if (readLong == 0) {
             if (!z10) {
                 if (i10 == 0) {
-                    return f39705w;
+                    return f39060w;
                 }
             } else {
                 throw new InvalidObjectException("UTC epoch is no leap second.");
             }
         }
-        if (readLong == f39696i && i10 == 0) {
+        if (readLong == f39051i && i10 == 0) {
             if (!z10) {
-                return f39698p;
+                return f39053p;
             }
             throw new InvalidObjectException("Minimum is no leap second.");
-        } else if (readLong == f39697o && i10 == 999999999) {
+        } else if (readLong == f39052o && i10 == 999999999) {
             if (!z10) {
-                return f39699q;
+                return f39054q;
             }
             throw new InvalidObjectException("Maximum is no leap second.");
         } else {
             V(i10);
             if (z10) {
-                wt.d w10 = wt.d.w();
-                if (w10.D() && !w10.G(w10.h(readLong) + 1)) {
-                    long l10 = nt.b.l(readLong);
-                    int h10 = nt.b.h(l10);
-                    int g10 = nt.b.g(l10);
+                yt.d u10 = yt.d.u();
+                if (u10.G() && !u10.H(u10.g(readLong) + 1)) {
+                    long l10 = pt.b.l(readLong);
+                    int h10 = pt.b.h(l10);
+                    int g10 = pt.b.g(l10);
                     StringBuilder sb2 = new StringBuilder();
                     sb2.append("Not registered as leap second event: ");
-                    sb2.append(nt.b.i(l10));
+                    sb2.append(pt.b.i(l10));
                     sb2.append("-");
                     String str2 = "";
                     if (h10 >= 10) {
@@ -910,7 +910,7 @@ public final class a0 extends pt.k0 implements wt.g {
 
     private static int r0(double d10, long j10) {
         try {
-            return (int) ((d10 * 1.0E9d) - nt.c.i(j10, 1000000000L));
+            return (int) ((d10 * 1.0E9d) - pt.c.i(j10, 1000000000L));
         } catch (ArithmeticException unused) {
             return (int) ((d10 - j10) * 1.0E9d);
         }
@@ -926,18 +926,18 @@ public final class a0 extends pt.k0 implements wt.g {
         int i10 = f02 / 60;
         int i11 = i10 / 60;
         int i12 = i10 % 60;
-        int y10 = (f02 % 60) + wt.d.w().y(d0());
+        int E = (f02 % 60) + yt.d.u().E(d0());
         int a10 = a();
         StringBuilder sb2 = new StringBuilder(50);
         sb2.append(c02);
         sb2.append('T');
         Z(i11, 2, sb2);
-        if (z10 || (i12 | y10 | a10) != 0) {
+        if (z10 || (i12 | E | a10) != 0) {
             sb2.append(':');
             Z(i12, 2, sb2);
-            if (z10 || (y10 | a10) != 0) {
+            if (z10 || (E | a10) != 0) {
                 sb2.append(':');
-                Z(y10, 2, sb2);
+                Z(E, 2, sb2);
                 if (a10 > 0) {
                     sb2.append(',');
                     Z(a10, 9, sb2);
@@ -949,21 +949,21 @@ public final class a0 extends pt.k0 implements wt.g {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public a0 u0(wt.f fVar) {
-        if (fVar != wt.f.UTC) {
+    public a0 u0(yt.f fVar) {
+        if (fVar != yt.f.UTC) {
             if (!j0()) {
-                int i10 = a.f39711a[fVar.ordinal()];
+                int i10 = a.f39066a[fVar.ordinal()];
                 if (i10 != 1) {
                     if (i10 != 3) {
                         if (i10 != 4) {
                             if (i10 != 5 && i10 != 6) {
                                 throw new UnsupportedOperationException(fVar.name());
                             }
-                            return new a0(nt.c.m(this.f39709d, 63072000L), a(), fVar);
+                            return new a0(pt.c.m(this.f39064d, 63072000L), a(), fVar);
                         }
-                        return new a0(nt.c.m(this.f39709d, 315964800L), a(), fVar);
+                        return new a0(pt.c.m(this.f39064d, 315964800L), a(), fVar);
                     }
-                    return new a0(nt.c.m(this.f39709d, -378691200L), a(), fVar);
+                    return new a0(pt.c.m(this.f39064d, -378691200L), a(), fVar);
                 }
             } else {
                 throw new IllegalArgumentException("Leap seconds do not exist on continuous time scale: " + fVar);
@@ -974,22 +974,22 @@ public final class a0 extends pt.k0 implements wt.g {
 
     /* JADX INFO: Access modifiers changed from: private */
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
-    public a0 v0(wt.f fVar) {
-        switch (a.f39711a[fVar.ordinal()]) {
+    public a0 v0(yt.f fVar) {
+        switch (a.f39066a[fVar.ordinal()]) {
             case 1:
                 if (j0()) {
-                    return new a0(a(), this.f39709d);
+                    return new a0(a(), this.f39064d);
                 }
                 break;
             case 2:
                 break;
             case 3:
-                return new a0(p(fVar), nt.c.f(l(fVar), -378691200L));
+                return new a0(j(fVar), pt.c.f(o(fVar), -378691200L));
             case 4:
-                return new a0(a(), nt.c.f(l(wt.f.GPS), 315964800L));
+                return new a0(a(), pt.c.f(o(yt.f.GPS), 315964800L));
             case 5:
             case 6:
-                return new a0(p(fVar), nt.c.f(l(fVar), 63072000L));
+                return new a0(j(fVar), pt.c.f(o(fVar), 63072000L));
             default:
                 throw new UnsupportedOperationException(fVar.name());
         }
@@ -1001,10 +1001,10 @@ public final class a0 extends pt.k0 implements wt.g {
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // pt.q
+    @Override // rt.q
     /* renamed from: H */
-    public pt.h0 w() {
-        return f39704v;
+    public rt.h0 w() {
+        return f39059v;
     }
 
     @Override // java.lang.Comparable
@@ -1024,13 +1024,13 @@ public final class a0 extends pt.k0 implements wt.g {
         return 0;
     }
 
-    @Override // nt.f
+    @Override // pt.f
     public int a() {
-        return this.f39710e & (-1073741825);
+        return this.f39065e & (-1073741825);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // pt.q
+    @Override // rt.q
     /* renamed from: b0 */
     public a0 x() {
         return this;
@@ -1042,11 +1042,11 @@ public final class a0 extends pt.k0 implements wt.g {
         }
         if (obj instanceof a0) {
             a0 a0Var = (a0) obj;
-            if (this.f39709d != a0Var.f39709d) {
+            if (this.f39064d != a0Var.f39064d) {
                 return false;
             }
-            if (wt.d.w().D()) {
-                if (this.f39710e == a0Var.f39710e) {
+            if (yt.d.u().G()) {
+                if (this.f39065e == a0Var.f39065e) {
                     return true;
                 }
                 return false;
@@ -1062,139 +1062,29 @@ public final class a0 extends pt.k0 implements wt.g {
     }
 
     public int hashCode() {
-        long j10 = this.f39709d;
+        long j10 = this.f39064d;
         return (((int) (j10 ^ (j10 >>> 32))) * 19) + (a() * 37);
     }
 
-    public boolean i0(wt.g gVar) {
+    public boolean i0(yt.g gVar) {
         if (compareTo(a0(gVar)) < 0) {
             return true;
         }
         return false;
     }
 
-    public boolean j0() {
-        if (k0() && wt.d.w().D()) {
-            return true;
-        }
-        return false;
-    }
-
-    @Override // wt.g
-    public long l(wt.f fVar) {
-        long d02;
-        int r02;
-        switch (a.f39711a[fVar.ordinal()]) {
-            case 1:
-                return this.f39709d;
-            case 2:
-                return d0();
-            case 3:
-                if (d0() < 0) {
-                    double e10 = wt.f.e(c0()) + (this.f39709d - 63072000) + (a() / 1.0E9d);
-                    long floor = (long) Math.floor(e10);
-                    if (Double.compare(1.0E9d - ((e10 - floor) * 1.0E9d), 1.0d) < 0) {
-                        floor++;
-                        r02 = 0;
-                    } else {
-                        r02 = r0(e10, floor);
-                    }
-                    d02 = floor - (-441763168);
-                    if (r02 - 184000000 < 0) {
-                        d02 = floor - (-441763167);
-                    }
-                } else {
-                    d02 = d0() + 441763210;
-                }
-                if (d02 >= 0) {
-                    return d02;
-                }
-                throw new IllegalArgumentException("TAI not supported before 1958-01-01: " + this);
-            case 4:
-                long d03 = d0();
-                if (wt.d.w().H(d03) >= 315964800) {
-                    if (!wt.d.w().D()) {
-                        d03 += 9;
-                    }
-                    return d03 - 252892809;
-                }
-                throw new IllegalArgumentException("GPS not supported before 1980-01-06: " + this);
-            case 5:
-                if (this.f39709d < 63072000) {
-                    double e11 = wt.f.e(c0()) + (this.f39709d - 63072000) + (a() / 1.0E9d);
-                    long floor2 = (long) Math.floor(e11);
-                    if (Double.compare(1.0E9d - ((e11 - floor2) * 1.0E9d), 1.0d) < 0) {
-                        return floor2 + 1;
-                    }
-                    return floor2;
-                }
-                long d04 = d0();
-                long j10 = 42 + d04;
-                if (a() + 184000000 >= 1000000000) {
-                    return d04 + 43;
-                }
-                return j10;
-            case 6:
-                long j11 = this.f39709d;
-                if (j11 < 63072000) {
-                    return j11 - 63072000;
-                }
-                return (long) Math.floor(e0());
-            default:
-                throw new UnsupportedOperationException("Not yet implemented: " + fVar);
-        }
-    }
-
-    public a0 n0(long j10, o0 o0Var) {
-        a0 l02;
-        U(this);
-        int i10 = (j10 > 0L ? 1 : (j10 == 0L ? 0 : -1));
-        if (i10 == 0) {
-            return this;
-        }
-        try {
-            int i11 = a.f39712b[o0Var.ordinal()];
-            if (i11 != 1) {
-                if (i11 == 2) {
-                    long f10 = nt.c.f(a(), j10);
-                    int d10 = nt.c.d(f10, 1000000000);
-                    long b10 = nt.c.b(f10, 1000000000);
-                    if (wt.d.w().D()) {
-                        l02 = new a0(nt.c.f(d0(), b10), d10, wt.f.UTC);
-                    } else {
-                        l02 = l0(nt.c.f(this.f39709d, b10), d10, wt.f.POSIX);
-                    }
-                } else {
-                    throw new UnsupportedOperationException();
-                }
-            } else if (wt.d.w().D()) {
-                l02 = new a0(nt.c.f(d0(), j10), a(), wt.f.UTC);
-            } else {
-                l02 = l0(nt.c.f(this.f39709d, j10), a(), wt.f.POSIX);
-            }
-            if (i10 < 0) {
-                U(l02);
-            }
-            return l02;
-        } catch (IllegalArgumentException e10) {
-            ArithmeticException arithmeticException = new ArithmeticException("Result beyond boundaries of time axis.");
-            arithmeticException.initCause(e10);
-            throw arithmeticException;
-        }
-    }
-
-    @Override // wt.g
-    public int p(wt.f fVar) {
+    @Override // yt.g
+    public int j(yt.f fVar) {
         long d02;
         int a10;
         int i10 = 0;
-        switch (a.f39711a[fVar.ordinal()]) {
+        switch (a.f39066a[fVar.ordinal()]) {
             case 1:
             case 2:
                 return a();
             case 3:
                 if (d0() < 0) {
-                    double e10 = wt.f.e(c0()) + (this.f39709d - 63072000) + (a() / 1.0E9d);
+                    double e10 = yt.f.e(c0()) + (this.f39064d - 63072000) + (a() / 1.0E9d);
                     long floor = (long) Math.floor(e10);
                     if (Double.compare(1.0E9d - ((e10 - floor) * 1.0E9d), 1.0d) < 0) {
                         floor++;
@@ -1216,13 +1106,13 @@ public final class a0 extends pt.k0 implements wt.g {
                 }
                 throw new IllegalArgumentException("TAI not supported before 1958-01-01: " + this);
             case 4:
-                if (wt.d.w().H(d0()) >= 315964800) {
+                if (yt.d.u().K(d0()) >= 315964800) {
                     return a();
                 }
                 throw new IllegalArgumentException("GPS not supported before 1980-01-06: " + this);
             case 5:
-                if (this.f39709d < 63072000) {
-                    double e11 = wt.f.e(c0()) + (this.f39709d - 63072000) + (a() / 1.0E9d);
+                if (this.f39064d < 63072000) {
+                    double e11 = yt.f.e(c0()) + (this.f39064d - 63072000) + (a() / 1.0E9d);
                     long floor2 = (long) Math.floor(e11);
                     if (Double.compare(1.0E9d - ((e11 - floor2) * 1.0E9d), 1.0d) < 0) {
                         return 0;
@@ -1236,7 +1126,7 @@ public final class a0 extends pt.k0 implements wt.g {
                 }
                 return i11;
             case 6:
-                if (this.f39709d < 63072000) {
+                if (this.f39064d < 63072000) {
                     return a();
                 }
                 double e02 = e0();
@@ -1246,21 +1136,131 @@ public final class a0 extends pt.k0 implements wt.g {
         }
     }
 
-    public r p0(pt.j jVar, String str, net.time4j.tz.k kVar, pt.f0 f0Var) {
+    public boolean j0() {
+        if (k0() && yt.d.u().G()) {
+            return true;
+        }
+        return false;
+    }
+
+    @Override // pt.f
+    public long m() {
+        return this.f39064d;
+    }
+
+    public a0 n0(long j10, o0 o0Var) {
+        a0 l02;
+        U(this);
+        int i10 = (j10 > 0L ? 1 : (j10 == 0L ? 0 : -1));
+        if (i10 == 0) {
+            return this;
+        }
+        try {
+            int i11 = a.f39067b[o0Var.ordinal()];
+            if (i11 != 1) {
+                if (i11 == 2) {
+                    long f10 = pt.c.f(a(), j10);
+                    int d10 = pt.c.d(f10, 1000000000);
+                    long b10 = pt.c.b(f10, 1000000000);
+                    if (yt.d.u().G()) {
+                        l02 = new a0(pt.c.f(d0(), b10), d10, yt.f.UTC);
+                    } else {
+                        l02 = l0(pt.c.f(this.f39064d, b10), d10, yt.f.POSIX);
+                    }
+                } else {
+                    throw new UnsupportedOperationException();
+                }
+            } else if (yt.d.u().G()) {
+                l02 = new a0(pt.c.f(d0(), j10), a(), yt.f.UTC);
+            } else {
+                l02 = l0(pt.c.f(this.f39064d, j10), a(), yt.f.POSIX);
+            }
+            if (i10 < 0) {
+                U(l02);
+            }
+            return l02;
+        } catch (IllegalArgumentException e10) {
+            ArithmeticException arithmeticException = new ArithmeticException("Result beyond boundaries of time axis.");
+            arithmeticException.initCause(e10);
+            throw arithmeticException;
+        }
+    }
+
+    @Override // yt.g
+    public long o(yt.f fVar) {
+        long d02;
+        int r02;
+        switch (a.f39066a[fVar.ordinal()]) {
+            case 1:
+                return this.f39064d;
+            case 2:
+                return d0();
+            case 3:
+                if (d0() < 0) {
+                    double e10 = yt.f.e(c0()) + (this.f39064d - 63072000) + (a() / 1.0E9d);
+                    long floor = (long) Math.floor(e10);
+                    if (Double.compare(1.0E9d - ((e10 - floor) * 1.0E9d), 1.0d) < 0) {
+                        floor++;
+                        r02 = 0;
+                    } else {
+                        r02 = r0(e10, floor);
+                    }
+                    d02 = floor - (-441763168);
+                    if (r02 - 184000000 < 0) {
+                        d02 = floor - (-441763167);
+                    }
+                } else {
+                    d02 = d0() + 441763210;
+                }
+                if (d02 >= 0) {
+                    return d02;
+                }
+                throw new IllegalArgumentException("TAI not supported before 1958-01-01: " + this);
+            case 4:
+                long d03 = d0();
+                if (yt.d.u().K(d03) >= 315964800) {
+                    if (!yt.d.u().G()) {
+                        d03 += 9;
+                    }
+                    return d03 - 252892809;
+                }
+                throw new IllegalArgumentException("GPS not supported before 1980-01-06: " + this);
+            case 5:
+                if (this.f39064d < 63072000) {
+                    double e11 = yt.f.e(c0()) + (this.f39064d - 63072000) + (a() / 1.0E9d);
+                    long floor2 = (long) Math.floor(e11);
+                    if (Double.compare(1.0E9d - ((e11 - floor2) * 1.0E9d), 1.0d) < 0) {
+                        return floor2 + 1;
+                    }
+                    return floor2;
+                }
+                long d04 = d0();
+                long j10 = 42 + d04;
+                if (a() + 184000000 >= 1000000000) {
+                    return d04 + 43;
+                }
+                return j10;
+            case 6:
+                long j11 = this.f39064d;
+                if (j11 < 63072000) {
+                    return j11 - 63072000;
+                }
+                return (long) Math.floor(e0());
+            default:
+                throw new UnsupportedOperationException("Not yet implemented: " + fVar);
+        }
+    }
+
+    public r p0(rt.j jVar, String str, net.time4j.tz.k kVar, rt.f0 f0Var) {
         i0 t02 = t0(kVar);
         t02.X();
-        ((i0) t02.J(f0Var.b(t02.V(), kVar), net.time4j.g.f39968i)).V();
+        ((i0) t02.J(f0Var.b(t02.V(), kVar), net.time4j.g.f39323i)).V();
         throw null;
     }
 
-    @Override // nt.f
-    public long q() {
-        return this.f39709d;
-    }
-
-    public r q0(pt.x xVar, net.time4j.tz.k kVar, pt.f0 f0Var) {
+    public r q0(rt.x xVar, net.time4j.tz.k kVar, rt.f0 f0Var) {
         i0 t02 = t0(kVar);
-        return r.b(((i0) t02.J(f0Var.b(t02.V(), kVar), net.time4j.g.f39968i)).V().T(xVar.r()), t02.X());
+        return r.b(((i0) t02.J(f0Var.b(t02.V(), kVar), net.time4j.g.f39323i)).V().T(xVar.p()), t02.X());
     }
 
     public i0 t0(net.time4j.tz.k kVar) {
@@ -1284,83 +1284,83 @@ public final class a0 extends pt.k0 implements wt.g {
             i10 |= 2;
         }
         dataOutput.writeByte(i10);
-        dataOutput.writeLong(this.f39709d);
+        dataOutput.writeLong(this.f39064d);
         if (a10 > 0) {
             dataOutput.writeInt(a10);
         }
     }
 
-    private a0(long j10, int i10, wt.f fVar) {
+    private a0(long j10, int i10, yt.f fVar) {
         long j11;
         long floor;
         int r02;
-        long h10;
+        long g10;
         long j12 = j10;
         int i11 = i10;
-        if (fVar == wt.f.POSIX) {
-            this.f39709d = j12;
-            this.f39710e = i11;
+        if (fVar == yt.f.POSIX) {
+            this.f39064d = j12;
+            this.f39065e = i11;
         } else {
-            wt.d w10 = wt.d.w();
-            if (w10.D()) {
-                if (fVar == wt.f.UTC) {
+            yt.d u10 = yt.d.u();
+            if (u10.G()) {
+                if (fVar == yt.f.UTC) {
                     j11 = 0;
                 } else {
                     j11 = 0;
-                    if (fVar == wt.f.TAI) {
+                    if (fVar == yt.f.TAI) {
                         if (j12 < 0) {
                             throw new IllegalArgumentException("TAI not supported before 1958-01-01: " + j12);
                         } else if (j12 < 441763200) {
-                            long f10 = nt.c.f(j12, -441763168L);
-                            int e10 = nt.c.e(i11, 184000000);
+                            long f10 = pt.c.f(j12, -441763168L);
+                            int e10 = pt.c.e(i11, 184000000);
                             if (e10 >= 1000000000) {
-                                f10 = nt.c.f(f10, 1L);
-                                e10 = nt.c.l(e10, 1000000000);
+                                f10 = pt.c.f(f10, 1L);
+                                e10 = pt.c.l(e10, 1000000000);
                             }
                             double d10 = f10 + (e10 / 1.0E9d);
-                            double e11 = d10 - wt.f.e(f0.M0(nt.c.b((long) (d10 - 42.184d), 86400), pt.a0.UTC));
+                            double e11 = d10 - yt.f.e(f0.M0(pt.c.b((long) (d10 - 42.184d), 86400), rt.a0.UTC));
                             floor = (long) Math.floor(e11);
                             r02 = r0(e11, floor);
                         } else {
                             r02 = i11;
-                            floor = nt.c.m(j12, 441763210L);
+                            floor = pt.c.m(j12, 441763210L);
                         }
-                    } else if (fVar == wt.f.GPS) {
-                        long f11 = nt.c.f(j12, 252892809L);
+                    } else if (fVar == yt.f.GPS) {
+                        long f11 = pt.c.f(j12, 252892809L);
                         if (f11 < 252892809) {
                             throw new IllegalArgumentException("GPS not supported before 1980-01-06: " + j12);
                         }
                         r02 = i11;
                         floor = f11;
-                    } else if (fVar == wt.f.TT) {
+                    } else if (fVar == yt.f.TT) {
                         int i12 = (j12 > 42L ? 1 : (j12 == 42L ? 0 : -1));
                         if (i12 >= 0 && (i12 != 0 || i11 >= 184000000)) {
-                            j12 = nt.c.m(j12, 42L);
-                            i11 = nt.c.l(i11, 184000000);
+                            j12 = pt.c.m(j12, 42L);
+                            i11 = pt.c.l(i11, 184000000);
                             if (i11 < 0) {
-                                j12 = nt.c.m(j12, 1L);
-                                i11 = nt.c.e(i11, 1000000000);
+                                j12 = pt.c.m(j12, 1L);
+                                i11 = pt.c.e(i11, 1000000000);
                             }
                         } else {
                             double d11 = j12 + (i11 / 1.0E9d);
-                            double e12 = d11 - wt.f.e(f0.M0(nt.c.b((long) (d11 - 42.184d), 86400), pt.a0.UTC));
+                            double e12 = d11 - yt.f.e(f0.M0(pt.c.b((long) (d11 - 42.184d), 86400), rt.a0.UTC));
                             floor = (long) Math.floor(e12);
                             r02 = r0(e12, floor);
                         }
-                    } else if (fVar != wt.f.UT) {
+                    } else if (fVar != yt.f.UT) {
                         throw new UnsupportedOperationException("Not yet implemented: " + fVar.name());
                     } else if (j12 >= 0) {
-                        double e13 = ((j12 + (i11 / 1.0E9d)) + wt.f.e(f0.M0(nt.c.b(j12, 86400), pt.a0.UTC))) - 42.184d;
+                        double e13 = ((j12 + (i11 / 1.0E9d)) + yt.f.e(f0.M0(pt.c.b(j12, 86400), rt.a0.UTC))) - 42.184d;
                         floor = (long) Math.floor(e13);
                         r02 = r0(e13, floor);
                     }
-                    long H = w10.H(floor);
-                    h10 = floor - w10.h(H);
-                    this.f39709d = H;
-                    if (h10 != j11 || H == f39697o) {
-                        this.f39710e = r02;
-                    } else if (h10 == 1) {
-                        this.f39710e = 1073741824 | r02;
+                    long K = u10.K(floor);
+                    g10 = floor - u10.g(K);
+                    this.f39064d = K;
+                    if (g10 != j11 || K == f39052o) {
+                        this.f39065e = r02;
+                    } else if (g10 == 1) {
+                        this.f39065e = 1073741824 | r02;
                     } else {
                         throw new IllegalStateException("Cannot handle leap shift of " + j12 + ".");
                     }
@@ -1368,24 +1368,24 @@ public final class a0 extends pt.k0 implements wt.g {
                 }
                 r02 = i11;
                 floor = j12;
-                long H2 = w10.H(floor);
-                h10 = floor - w10.h(H2);
-                this.f39709d = H2;
-                if (h10 != j11) {
+                long K2 = u10.K(floor);
+                g10 = floor - u10.g(K2);
+                this.f39064d = K2;
+                if (g10 != j11) {
                 }
-                this.f39710e = r02;
+                this.f39065e = r02;
                 i11 = r02;
             } else {
                 throw new IllegalStateException("Leap seconds are not supported by configuration.");
             }
         }
-        X(this.f39709d);
+        X(this.f39064d);
         V(i11);
     }
 
     private a0(int i10, long j10) {
         X(j10);
-        this.f39709d = j10;
-        this.f39710e = i10;
+        this.f39064d = j10;
+        this.f39065e = i10;
     }
 }

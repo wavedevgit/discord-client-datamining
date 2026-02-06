@@ -1,27 +1,27 @@
 package rs;
+
+import kotlin.coroutines.CoroutineContext;
+import kotlinx.coroutines.flow.Flow;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class f0 {
-    public static final int a() {
-        return g0.a();
-    }
+public final class f0 {
 
-    public static final int b(String str, int i10, int i11, int i12) {
-        return h0.a(str, i10, i11, i12);
-    }
+    /* renamed from: a  reason: collision with root package name */
+    public final Flow f49267a;
 
-    public static final long c(String str, long j10, long j11, long j12) {
-        return h0.b(str, j10, j11, j12);
-    }
+    /* renamed from: b  reason: collision with root package name */
+    public final int f49268b;
 
-    public static final String d(String str) {
-        return g0.b(str);
-    }
+    /* renamed from: c  reason: collision with root package name */
+    public final qs.a f49269c;
 
-    public static final String e(String str, String str2) {
-        return h0.c(str, str2);
-    }
+    /* renamed from: d  reason: collision with root package name */
+    public final CoroutineContext f49270d;
 
-    public static final boolean f(String str, boolean z10) {
-        return h0.d(str, z10);
+    public f0(Flow flow, int i10, qs.a aVar, CoroutineContext coroutineContext) {
+        this.f49267a = flow;
+        this.f49268b = i10;
+        this.f49269c = aVar;
+        this.f49270d = coroutineContext;
     }
 }

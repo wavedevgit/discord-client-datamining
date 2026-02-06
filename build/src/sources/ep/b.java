@@ -1,84 +1,156 @@
 package ep;
 
-import android.os.Parcel;
-import android.os.Parcelable;
-import java.util.Date;
+import android.app.Dialog;
+import android.content.Context;
+import android.util.AttributeSet;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.Window;
+import androidx.core.view.w0;
+import bq.s;
+import dn.a0;
+import dn.c0;
+import dn.g0;
+import ep.b;
+import hn.j;
+import java.util.Iterator;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.functions.Function4;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.FunctionReferenceImpl;
 import kotlin.jvm.internal.Intrinsics;
-import org.jetbrains.annotations.NotNull;
+import kotlin.jvm.internal.Reflection;
+import kotlin.reflect.KClass;
+import rp.f0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b implements Parcelable {
-    @NotNull
-    public static final Parcelable.Creator<b> CREATOR = new a();
+public final class b extends j {
 
-    /* renamed from: d  reason: collision with root package name */
-    private final String f21679d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private final Date f21680e;
-
-    /* renamed from: i  reason: collision with root package name */
-    private final Date f21681i;
+    /* renamed from: q  reason: collision with root package name */
+    public static final a f22092q = new a(null);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a implements Parcelable.Creator {
-        @Override // android.os.Parcelable.Creator
-        /* renamed from: a */
-        public final b createFromParcel(Parcel parcel) {
-            Intrinsics.checkNotNullParameter(parcel, "parcel");
-            return new b(parcel.readString(), (Date) parcel.readSerializable(), (Date) parcel.readSerializable());
+    public static final class a implements c0 {
+
+        /* renamed from: a  reason: collision with root package name */
+        private final /* synthetic */ dn.f f22093a;
+
+        /* JADX INFO: Access modifiers changed from: package-private */
+        /* renamed from: ep.b$a$a  reason: collision with other inner class name */
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+        public /* synthetic */ class C0307a extends FunctionReferenceImpl implements Function2 {
+            C0307a(Object obj) {
+                super(2, obj, b.class, "update", "update(Lcom/squareup/workflow1/ui/modal/HasModals;Lcom/squareup/workflow1/ui/ViewEnvironment;)V", 0);
+            }
+
+            public final void a(hn.f p02, a0 p12) {
+                Intrinsics.checkNotNullParameter(p02, "p0");
+                Intrinsics.checkNotNullParameter(p12, "p1");
+                ((b) this.receiver).c(p02, p12);
+            }
+
+            @Override // kotlin.jvm.functions.Function2
+            public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
+                a((hn.f) obj, (a0) obj2);
+                return Unit.f32008a;
+            }
         }
 
-        @Override // android.os.Parcelable.Creator
-        /* renamed from: b */
-        public final b[] newArray(int i10) {
-            return new b[i10];
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        /* JADX INFO: Access modifiers changed from: private */
+        public static final View c(c initialRendering, a0 initialEnv, Context contextForNewView, ViewGroup viewGroup) {
+            Intrinsics.checkNotNullParameter(initialRendering, "initialRendering");
+            Intrinsics.checkNotNullParameter(initialEnv, "initialEnv");
+            Intrinsics.checkNotNullParameter(contextForNewView, "contextForNewView");
+            b bVar = new b(contextForNewView, null, 0, 0, 14, null);
+            bVar.setId(g.f22101b);
+            bVar.setLayoutParams(new ViewGroup.LayoutParams(-1, -1));
+            g0.a(bVar, initialRendering, initialEnv, new C0307a(bVar));
+            return bVar;
+        }
+
+        @Override // dn.c0
+        /* renamed from: d */
+        public View a(c initialRendering, a0 initialViewEnvironment, Context contextForNewView, ViewGroup viewGroup) {
+            Intrinsics.checkNotNullParameter(initialRendering, "initialRendering");
+            Intrinsics.checkNotNullParameter(initialViewEnvironment, "initialViewEnvironment");
+            Intrinsics.checkNotNullParameter(contextForNewView, "contextForNewView");
+            return this.f22093a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
+        }
+
+        @Override // dn.c0
+        public KClass getType() {
+            return this.f22093a.getType();
+        }
+
+        private a() {
+            this.f22093a = new dn.f(Reflection.getOrCreateKotlinClass(c.class), new Function4() { // from class: ep.a
+                @Override // kotlin.jvm.functions.Function4
+                public final Object invoke(Object obj, Object obj2, Object obj3, Object obj4) {
+                    View c10;
+                    c10 = b.a.c((c) obj, (a0) obj2, (Context) obj3, (ViewGroup) obj4);
+                    return c10;
+                }
+            });
         }
     }
 
-    public b(String passportNumber, Date expirationDate, Date dateOfBirth) {
-        Intrinsics.checkNotNullParameter(passportNumber, "passportNumber");
-        Intrinsics.checkNotNullParameter(expirationDate, "expirationDate");
-        Intrinsics.checkNotNullParameter(dateOfBirth, "dateOfBirth");
-        this.f21679d = passportNumber;
-        this.f21680e = expirationDate;
-        this.f21681i = dateOfBirth;
+    public /* synthetic */ b(Context context, AttributeSet attributeSet, int i10, int i11, int i12, DefaultConstructorMarker defaultConstructorMarker) {
+        this(context, (i12 & 2) != 0 ? null : attributeSet, (i12 & 4) != 0 ? 0 : i10, (i12 & 8) != 0 ? 0 : i11);
     }
 
-    @Override // android.os.Parcelable
-    public final int describeContents() {
-        return 0;
-    }
-
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
+    @Override // hn.j
+    public Dialog g(View view) {
+        Object obj;
+        Object obj2;
+        Integer num;
+        Intrinsics.checkNotNullParameter(view, "view");
+        Dialog dialog = new Dialog(getContext(), jp.f.f30818a);
+        Iterator it = s.d(view).iterator();
+        while (true) {
+            if (it.hasNext()) {
+                obj = it.next();
+                if (((View) obj).getTag(g.f22100a) instanceof Integer) {
+                    break;
+                }
+            } else {
+                obj = null;
+                break;
+            }
         }
-        if (!(obj instanceof b)) {
-            return false;
+        View view2 = (View) obj;
+        if (view2 != null) {
+            obj2 = view2.getTag(g.f22100a);
+        } else {
+            obj2 = null;
         }
-        b bVar = (b) obj;
-        if (Intrinsics.areEqual(this.f21679d, bVar.f21679d) && Intrinsics.areEqual(this.f21680e, bVar.f21680e) && Intrinsics.areEqual(this.f21681i, bVar.f21681i)) {
-            return true;
+        if (obj2 instanceof Integer) {
+            num = (Integer) obj2;
+        } else {
+            num = null;
         }
-        return false;
+        dialog.setContentView(view);
+        Window window = dialog.getWindow();
+        if (window != null) {
+            if (num != null) {
+                f0.a(window, num.intValue());
+            }
+            window.setBackgroundDrawable(null);
+            window.setLayout(-1, -1);
+            w0.c(window, false);
+            if (!bq.f.f()) {
+                window.setNavigationBarColor(-16777216);
+            }
+        }
+        return dialog;
     }
 
-    public int hashCode() {
-        return (((this.f21679d.hashCode() * 31) + this.f21680e.hashCode()) * 31) + this.f21681i.hashCode();
-    }
-
-    public String toString() {
-        String str = this.f21679d;
-        Date date = this.f21680e;
-        Date date2 = this.f21681i;
-        return "MrzKey(passportNumber=" + str + ", expirationDate=" + date + ", dateOfBirth=" + date2 + ")";
-    }
-
-    @Override // android.os.Parcelable
-    public final void writeToParcel(Parcel dest, int i10) {
-        Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f21679d);
-        dest.writeSerializable(this.f21680e);
-        dest.writeSerializable(this.f21681i);
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public b(Context context, AttributeSet attributeSet, int i10, int i11) {
+        super(context, attributeSet, i10, i11);
+        Intrinsics.checkNotNullParameter(context, "context");
     }
 }

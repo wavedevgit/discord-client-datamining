@@ -12,53 +12,53 @@ import qd.r;
 public final class j implements r.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final a f47682a;
+    private final a f46730a;
 
     /* renamed from: b  reason: collision with root package name */
-    private DataSource.Factory f47683b;
+    private DataSource.Factory f46731b;
 
     /* renamed from: c  reason: collision with root package name */
-    private long f47684c;
+    private long f46732c;
 
     /* renamed from: d  reason: collision with root package name */
-    private long f47685d;
+    private long f46733d;
 
     /* renamed from: e  reason: collision with root package name */
-    private long f47686e;
+    private long f46734e;
 
     /* renamed from: f  reason: collision with root package name */
-    private float f47687f;
+    private float f46735f;
 
     /* renamed from: g  reason: collision with root package name */
-    private float f47688g;
+    private float f46736g;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     private static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final tc.p f47689a;
+        private final tc.p f46737a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Map f47690b = new HashMap();
+        private final Map f46738b = new HashMap();
 
         /* renamed from: c  reason: collision with root package name */
-        private final Set f47691c = new HashSet();
+        private final Set f46739c = new HashSet();
 
         /* renamed from: d  reason: collision with root package name */
-        private final Map f47692d = new HashMap();
+        private final Map f46740d = new HashMap();
 
         /* renamed from: e  reason: collision with root package name */
-        private DataSource.Factory f47693e;
+        private DataSource.Factory f46741e;
 
         public a(tc.p pVar) {
-            this.f47689a = pVar;
+            this.f46737a = pVar;
         }
 
         public void a(DataSource.Factory factory) {
-            if (factory != this.f47693e) {
-                this.f47693e = factory;
-                this.f47690b.clear();
-                this.f47692d.clear();
+            if (factory != this.f46741e) {
+                this.f46741e = factory;
+                this.f46738b.clear();
+                this.f46740d.clear();
             }
         }
     }
@@ -68,14 +68,14 @@ public final class j implements r.a {
     }
 
     public j(DataSource.Factory factory, tc.p pVar) {
-        this.f47683b = factory;
+        this.f46731b = factory;
         a aVar = new a(pVar);
-        this.f47682a = aVar;
+        this.f46730a = aVar;
         aVar.a(factory);
-        this.f47684c = -9223372036854775807L;
-        this.f47685d = -9223372036854775807L;
-        this.f47686e = -9223372036854775807L;
-        this.f47687f = -3.4028235E38f;
-        this.f47688g = -3.4028235E38f;
+        this.f46732c = -9223372036854775807L;
+        this.f46733d = -9223372036854775807L;
+        this.f46734e = -9223372036854775807L;
+        this.f46735f = -3.4028235E38f;
+        this.f46736g = -3.4028235E38f;
     }
 }

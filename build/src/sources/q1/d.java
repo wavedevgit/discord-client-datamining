@@ -12,18 +12,18 @@ import org.xmlpull.v1.XmlPullParserException;
 public final class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Shader f47298a;
+    private final Shader f46346a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ColorStateList f47299b;
+    private final ColorStateList f46347b;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f47300c;
+    private int f46348c;
 
     private d(Shader shader, ColorStateList colorStateList, int i10) {
-        this.f47298a = shader;
-        this.f47299b = colorStateList;
-        this.f47300c = i10;
+        this.f46346a = shader;
+        this.f46347b = colorStateList;
+        this.f46348c = i10;
     }
 
     private static d a(Resources resources, int i10, Resources.Theme theme) {
@@ -73,15 +73,15 @@ public final class d {
     }
 
     public int e() {
-        return this.f47300c;
+        return this.f46348c;
     }
 
     public Shader f() {
-        return this.f47298a;
+        return this.f46346a;
     }
 
     public boolean h() {
-        if (this.f47298a != null) {
+        if (this.f46346a != null) {
             return true;
         }
         return false;
@@ -89,7 +89,7 @@ public final class d {
 
     public boolean i() {
         ColorStateList colorStateList;
-        if (this.f47298a == null && (colorStateList = this.f47299b) != null && colorStateList.isStateful()) {
+        if (this.f46346a == null && (colorStateList = this.f46347b) != null && colorStateList.isStateful()) {
             return true;
         }
         return false;
@@ -97,10 +97,10 @@ public final class d {
 
     public boolean j(int[] iArr) {
         if (i()) {
-            ColorStateList colorStateList = this.f47299b;
+            ColorStateList colorStateList = this.f46347b;
             int colorForState = colorStateList.getColorForState(iArr, colorStateList.getDefaultColor());
-            if (colorForState != this.f47300c) {
-                this.f47300c = colorForState;
+            if (colorForState != this.f46348c) {
+                this.f46348c = colorForState;
                 return true;
             }
             return false;
@@ -109,11 +109,11 @@ public final class d {
     }
 
     public void k(int i10) {
-        this.f47300c = i10;
+        this.f46348c = i10;
     }
 
     public boolean l() {
-        if (!h() && this.f47300c == 0) {
+        if (!h() && this.f46348c == 0) {
             return false;
         }
         return true;

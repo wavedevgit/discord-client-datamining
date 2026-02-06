@@ -6,14 +6,14 @@ import kotlin.jvm.internal.Intrinsics;
 public final class t extends DelegatingSimpleTypeImpl {
 
     /* renamed from: i  reason: collision with root package name */
-    private final TypeAttributes f34741i;
+    private final TypeAttributes f34761i;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public t(SimpleType delegate, TypeAttributes attributes) {
         super(delegate);
         Intrinsics.checkNotNullParameter(delegate, "delegate");
         Intrinsics.checkNotNullParameter(attributes, "attributes");
-        this.f34741i = attributes;
+        this.f34761i = attributes;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.DelegatingSimpleType
@@ -25,6 +25,6 @@ public final class t extends DelegatingSimpleTypeImpl {
 
     @Override // kotlin.reflect.jvm.internal.impl.types.DelegatingSimpleType, kotlin.reflect.jvm.internal.impl.types.KotlinType
     public TypeAttributes getAttributes() {
-        return this.f34741i;
+        return this.f34761i;
     }
 }

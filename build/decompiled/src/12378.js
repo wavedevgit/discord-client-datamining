@@ -1,35 +1,28 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function(arg0) { // Environment: var0
-        _fun94405: for (var _fun94405_ip = 0;;) switch (_fun94405_ip) {
+    var1 = function(arg0, arg1) { // Environment: var0
+        _fun94412: for (var _fun94412_ip = 0;;) switch (_fun94412_ip) {
             case 0:
-                var2 = arg0;
-                var0 = 'shift';
-                var0 = var0 === var2;
-                if (var0) {
-                    _fun94405_ip = 22;
-                    continue _fun94405
+                var4 = arg0;
+                var2 = arg1;
+                var0 = this;
+                var5 = var0.directMap;
+                var1 = ':';
+                var3 = var4 + var1;
+                var3 = var3 + var2;
+                var3 = var5[var3];
+                if (!var3) {
+                    _fun94412_ip = 60;
+                    continue _fun94412
                 }
-            case 14:
-                var1 = 'ctrl';
-                var0 = var1 === var2;
-            case 22:
-                if (var0) {
-                    _fun94405_ip = 33;
-                    continue _fun94405
-                }
-            case 25:
-                var1 = 'alt';
-                var0 = var1 === var2;
-            case 33:
-                if (var0) {
-                    _fun94405_ip = 44;
-                    continue _fun94405
-                }
-            case 36:
-                var1 = 'meta';
-                var0 = var1 === var2;
-            case 44:
+            case 34:
+                var3 = var0.directMap;
+                var1 = var4 + var1;
+                var1 = var1 + var2;
+                var2 = var3[var1];
+                var1 = {};
+                var1 = var2.bind(var3)(var1, var4);
+            case 60:
                 return var0;
         }
     };

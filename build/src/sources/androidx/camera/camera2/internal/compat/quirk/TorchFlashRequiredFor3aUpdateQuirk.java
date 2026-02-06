@@ -12,13 +12,13 @@ import r.a0;
 public class TorchFlashRequiredFor3aUpdateQuirk implements y1 {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final List f2046b = Arrays.asList("PIXEL 6A", "PIXEL 6 PRO", "PIXEL 7", "PIXEL 7A", "PIXEL 7 PRO", "PIXEL 8", "PIXEL 8 PRO");
+    private static final List f2375b = Arrays.asList("PIXEL 6A", "PIXEL 6 PRO", "PIXEL 7", "PIXEL 7A", "PIXEL 7 PRO", "PIXEL 8", "PIXEL 8 PRO");
 
     /* renamed from: a  reason: collision with root package name */
-    private final a0 f2047a;
+    private final a0 f2376a;
 
     public TorchFlashRequiredFor3aUpdateQuirk(a0 a0Var) {
-        this.f2047a = a0Var;
+        this.f2376a = a0Var;
     }
 
     private static boolean c(a0 a0Var) {
@@ -29,7 +29,7 @@ public class TorchFlashRequiredFor3aUpdateQuirk implements y1 {
     }
 
     private static boolean d() {
-        for (String str : f2046b) {
+        for (String str : f2375b) {
             if (Build.MODEL.toUpperCase(Locale.US).equals(str)) {
                 return true;
             }
@@ -57,6 +57,6 @@ public class TorchFlashRequiredFor3aUpdateQuirk implements y1 {
     }
 
     public boolean f() {
-        return !e(this.f2047a);
+        return !e(this.f2376a);
     }
 }

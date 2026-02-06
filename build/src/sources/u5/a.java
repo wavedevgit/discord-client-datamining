@@ -10,10 +10,10 @@ import java.net.HttpURLConnection;
 public class a implements d {
 
     /* renamed from: d  reason: collision with root package name */
-    private final HttpURLConnection f51196d;
+    private final HttpURLConnection f51237d;
 
     public a(HttpURLConnection httpURLConnection) {
-        this.f51196d = httpURLConnection;
+        this.f51237d = httpURLConnection;
     }
 
     private String a(HttpURLConnection httpURLConnection) {
@@ -44,12 +44,12 @@ public class a implements d {
     }
 
     @Override // u5.d
-    public String G1() {
+    public String F1() {
         try {
             if (isSuccessful()) {
                 return null;
             }
-            return "Unable to fetch " + this.f51196d.getURL() + ". Failed with " + this.f51196d.getResponseCode() + ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE + a(this.f51196d);
+            return "Unable to fetch " + this.f51237d.getURL() + ". Failed with " + this.f51237d.getResponseCode() + ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE + a(this.f51237d);
         } catch (IOException e10) {
             x5.d.d("get error failed ", e10);
             return e10.getMessage();
@@ -58,13 +58,13 @@ public class a implements d {
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        this.f51196d.disconnect();
+        this.f51237d.disconnect();
     }
 
     @Override // u5.d
     public boolean isSuccessful() {
         try {
-            if (this.f51196d.getResponseCode() / 100 != 2) {
+            if (this.f51237d.getResponseCode() / 100 != 2) {
                 return false;
             }
             return true;
@@ -74,12 +74,12 @@ public class a implements d {
     }
 
     @Override // u5.d
-    public String n0() {
-        return this.f51196d.getContentType();
+    public String p0() {
+        return this.f51237d.getContentType();
     }
 
     @Override // u5.d
-    public InputStream v0() {
-        return this.f51196d.getInputStream();
+    public InputStream x0() {
+        return this.f51237d.getInputStream();
     }
 }

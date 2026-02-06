@@ -1,53 +1,79 @@
 package sh;
 
-import android.content.Context;
-import android.content.res.TypedArray;
-import android.util.AttributeSet;
-import androidx.appcompat.view.ContextThemeWrapper;
-import zg.b;
+import android.os.Bundle;
+import android.os.Parcel;
+import android.os.Parcelable;
+import androidx.collection.SimpleArrayMap;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class a {
+public class a extends u2.a {
+    public static final Parcelable.Creator<a> CREATOR = new C0649a();
 
-    /* renamed from: a  reason: collision with root package name */
-    private static final int[] f49642a = {16842752, b.f55551i0};
+    /* renamed from: i  reason: collision with root package name */
+    public final SimpleArrayMap f49965i;
 
-    /* renamed from: b  reason: collision with root package name */
-    private static final int[] f49643b = {b.E};
-
-    private static int a(Context context, AttributeSet attributeSet) {
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f49642a);
-        int resourceId = obtainStyledAttributes.getResourceId(0, 0);
-        int resourceId2 = obtainStyledAttributes.getResourceId(1, 0);
-        obtainStyledAttributes.recycle();
-        if (resourceId != 0) {
-            return resourceId;
+    /* renamed from: sh.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    class C0649a implements Parcelable.ClassLoaderCreator {
+        C0649a() {
         }
-        return resourceId2;
+
+        @Override // android.os.Parcelable.Creator
+        /* renamed from: a */
+        public a createFromParcel(Parcel parcel) {
+            return new a(parcel, null, null);
+        }
+
+        @Override // android.os.Parcelable.ClassLoaderCreator
+        /* renamed from: b */
+        public a createFromParcel(Parcel parcel, ClassLoader classLoader) {
+            return new a(parcel, classLoader, null);
+        }
+
+        @Override // android.os.Parcelable.Creator
+        /* renamed from: c */
+        public a[] newArray(int i10) {
+            return new a[i10];
+        }
     }
 
-    private static int b(Context context, AttributeSet attributeSet, int i10, int i11) {
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f49643b, i10, i11);
-        int resourceId = obtainStyledAttributes.getResourceId(0, 0);
-        obtainStyledAttributes.recycle();
-        return resourceId;
+    /* synthetic */ a(Parcel parcel, ClassLoader classLoader, C0649a c0649a) {
+        this(parcel, classLoader);
     }
 
-    public static Context c(Context context, AttributeSet attributeSet, int i10, int i11) {
-        boolean z10;
-        int b10 = b(context, attributeSet, i10, i11);
-        if ((context instanceof ContextThemeWrapper) && ((ContextThemeWrapper) context).c() == b10) {
-            z10 = true;
-        } else {
-            z10 = false;
+    public String toString() {
+        return "ExtendableSavedState{" + Integer.toHexString(System.identityHashCode(this)) + " states=" + this.f49965i + "}";
+    }
+
+    @Override // u2.a, android.os.Parcelable
+    public void writeToParcel(Parcel parcel, int i10) {
+        super.writeToParcel(parcel, i10);
+        int size = this.f49965i.size();
+        parcel.writeInt(size);
+        String[] strArr = new String[size];
+        Bundle[] bundleArr = new Bundle[size];
+        for (int i11 = 0; i11 < size; i11++) {
+            strArr[i11] = (String) this.f49965i.f(i11);
+            bundleArr[i11] = (Bundle) this.f49965i.j(i11);
         }
-        if (b10 != 0 && !z10) {
-            ContextThemeWrapper contextThemeWrapper = new ContextThemeWrapper(context, b10);
-            int a10 = a(context, attributeSet);
-            if (a10 != 0) {
-                contextThemeWrapper.getTheme().applyStyle(a10, true);
-            }
-            return contextThemeWrapper;
+        parcel.writeStringArray(strArr);
+        parcel.writeTypedArray(bundleArr, 0);
+    }
+
+    public a(Parcelable parcelable) {
+        super(parcelable);
+        this.f49965i = new SimpleArrayMap();
+    }
+
+    private a(Parcel parcel, ClassLoader classLoader) {
+        super(parcel, classLoader);
+        int readInt = parcel.readInt();
+        String[] strArr = new String[readInt];
+        parcel.readStringArray(strArr);
+        Bundle[] bundleArr = new Bundle[readInt];
+        parcel.readTypedArray(bundleArr, Bundle.CREATOR);
+        this.f49965i = new SimpleArrayMap(readInt);
+        for (int i10 = 0; i10 < readInt; i10++) {
+            this.f49965i.put(strArr[i10], bundleArr[i10]);
         }
-        return context;
     }
 }

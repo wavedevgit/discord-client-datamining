@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/notifications/settings_unread_notice/utils/updateChannelUnreadSettings.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1, arg2() {
-        _fun77210: for (var _fun77210_ip = 0;;) switch (_fun77210_ip) {
+        _fun77237: for (var _fun77237_ip = 0;;) switch (_fun77237_ip) {
             case 0:
                 var7 = arg0;
                 var6 = arg1;
@@ -74,14 +74,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = _closure1_slot6;
                 var1 = var1.UNREADS_ALL_MESSAGES;
                 if (!(var10 !== var1)) {
-                    _fun77210_ip = 140;
-                    continue _fun77210
+                    _fun77237_ip = 140;
+                    continue _fun77237
                 }
             case 128:
                 var1 = _closure1_slot5;
                 var1 = var1.ONLY_MENTIONS;
-                _fun77210_ip = 150;
-                continue _fun77210;
+                _fun77237_ip = 150;
+                continue _fun77237;
             case 140:
                 var10 = _closure1_slot5;
                 var1 = var10.ALL_MESSAGES;
@@ -102,4 +102,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4303, 660, 4304, 665, 4698, 8784, 4695, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4304, 660, 4305, 665, 4699, 8790, 4696, 2]);

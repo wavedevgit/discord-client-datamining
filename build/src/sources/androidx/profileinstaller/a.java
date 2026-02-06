@@ -9,7 +9,7 @@ abstract class a {
 
     /* renamed from: androidx.profileinstaller.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    private static class C0065a {
+    private static class C0063a {
         static File a(Context context) {
             return context.getCodeCacheDir();
         }
@@ -48,7 +48,7 @@ abstract class a {
         if (Build.VERSION.SDK_INT >= 34) {
             a10 = b.a(context).getCacheDir();
         } else {
-            a10 = C0065a.a(b.a(context));
+            a10 = C0063a.a(b.a(context));
         }
         if (a(a10)) {
             aVar.a(14, null);

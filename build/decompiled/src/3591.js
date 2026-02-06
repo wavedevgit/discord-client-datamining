@@ -1,13 +1,14 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = dependencyMap;
-    var0 = 0;
-    var2 = var1[var0];
-    var1 = require;
+    var1 = function arg0, arg1() {
+        var2 = arg0;
+        var1 = var2.has;
+        var0 = arg1;
+        var0 = var1.bind(var2)(var0);
+        return var0;
+    };
+    var0 = arg4;
+    var0.exports = var1;
     var0 = undefined;
-    var1 = var1.bind(var0)(var2);
-    var2 = var1.Uint8Array;
-    var1 = module;
-    var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [601]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

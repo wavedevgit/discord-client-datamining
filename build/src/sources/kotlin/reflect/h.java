@@ -9,5 +9,6 @@ public interface h extends k, e {
     public interface a extends e.a, Function3 {
     }
 
+    @Override // kotlin.reflect.e
     a getSetter();
 }

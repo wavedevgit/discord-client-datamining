@@ -7,20 +7,20 @@ import java.util.List;
 public class e {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final e f47489c = new e("COMPOSITION");
+    public static final e f46537c = new e("COMPOSITION");
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f47490a;
+    private final List f46538a;
 
     /* renamed from: b  reason: collision with root package name */
-    private f f47491b;
+    private f f46539b;
 
     public e(String... strArr) {
-        this.f47490a = Arrays.asList(strArr);
+        this.f46538a = Arrays.asList(strArr);
     }
 
     private boolean b() {
-        List list = this.f47490a;
+        List list = this.f46538a;
         return ((String) list.get(list.size() - 1)).equals("**");
     }
 
@@ -30,34 +30,34 @@ public class e {
 
     public e a(String str) {
         e eVar = new e(this);
-        eVar.f47490a.add(str);
+        eVar.f46538a.add(str);
         return eVar;
     }
 
     public boolean c(String str, int i10) {
         boolean z10;
         boolean z11;
-        if (i10 >= this.f47490a.size()) {
+        if (i10 >= this.f46538a.size()) {
             return false;
         }
-        if (i10 == this.f47490a.size() - 1) {
+        if (i10 == this.f46538a.size() - 1) {
             z10 = true;
         } else {
             z10 = false;
         }
-        String str2 = (String) this.f47490a.get(i10);
+        String str2 = (String) this.f46538a.get(i10);
         if (!str2.equals("**")) {
             if (!str2.equals(str) && !str2.equals("*")) {
                 z11 = false;
             } else {
                 z11 = true;
             }
-            if ((!z10 && (i10 != this.f47490a.size() - 2 || !b())) || !z11) {
+            if ((!z10 && (i10 != this.f46538a.size() - 2 || !b())) || !z11) {
                 return false;
             }
             return true;
-        } else if (!z10 && ((String) this.f47490a.get(i10 + 1)).equals(str)) {
-            if (i10 != this.f47490a.size() - 2 && (i10 != this.f47490a.size() - 3 || !b())) {
+        } else if (!z10 && ((String) this.f46538a.get(i10 + 1)).equals(str)) {
+            if (i10 != this.f46538a.size() - 2 && (i10 != this.f46538a.size() - 3 || !b())) {
                 return false;
             }
             return true;
@@ -65,25 +65,25 @@ public class e {
             return true;
         } else {
             int i11 = i10 + 1;
-            if (i11 < this.f47490a.size() - 1) {
+            if (i11 < this.f46538a.size() - 1) {
                 return false;
             }
-            return ((String) this.f47490a.get(i11)).equals(str);
+            return ((String) this.f46538a.get(i11)).equals(str);
         }
     }
 
     public f d() {
-        return this.f47491b;
+        return this.f46539b;
     }
 
     public int e(String str, int i10) {
         if (f(str)) {
             return 0;
         }
-        if (!((String) this.f47490a.get(i10)).equals("**")) {
+        if (!((String) this.f46538a.get(i10)).equals("**")) {
             return 1;
         }
-        if (i10 == this.f47490a.size() - 1 || !((String) this.f47490a.get(i10 + 1)).equals(str)) {
+        if (i10 == this.f46538a.size() - 1 || !((String) this.f46538a.get(i10 + 1)).equals(str)) {
             return 0;
         }
         return 2;
@@ -95,11 +95,11 @@ public class e {
         }
         if (obj != null && getClass() == obj.getClass()) {
             e eVar = (e) obj;
-            if (!this.f47490a.equals(eVar.f47490a)) {
+            if (!this.f46538a.equals(eVar.f46538a)) {
                 return false;
             }
-            f fVar = this.f47491b;
-            f fVar2 = eVar.f47491b;
+            f fVar = this.f46539b;
+            f fVar2 = eVar.f46539b;
             if (fVar != null) {
                 return fVar.equals(fVar2);
             }
@@ -114,17 +114,17 @@ public class e {
         if (f(str)) {
             return true;
         }
-        if (i10 >= this.f47490a.size()) {
+        if (i10 >= this.f46538a.size()) {
             return false;
         }
-        if (((String) this.f47490a.get(i10)).equals(str) || ((String) this.f47490a.get(i10)).equals("**") || ((String) this.f47490a.get(i10)).equals("*")) {
+        if (((String) this.f46538a.get(i10)).equals(str) || ((String) this.f46538a.get(i10)).equals("**") || ((String) this.f46538a.get(i10)).equals("*")) {
             return true;
         }
         return false;
     }
 
     public boolean h(String str, int i10) {
-        if ("__container".equals(str) || i10 < this.f47490a.size() - 1 || ((String) this.f47490a.get(i10)).equals("**")) {
+        if ("__container".equals(str) || i10 < this.f46538a.size() - 1 || ((String) this.f46538a.get(i10)).equals("**")) {
             return true;
         }
         return false;
@@ -132,8 +132,8 @@ public class e {
 
     public int hashCode() {
         int i10;
-        int hashCode = this.f47490a.hashCode() * 31;
-        f fVar = this.f47491b;
+        int hashCode = this.f46538a.hashCode() * 31;
+        f fVar = this.f46539b;
         if (fVar != null) {
             i10 = fVar.hashCode();
         } else {
@@ -144,7 +144,7 @@ public class e {
 
     public e i(f fVar) {
         e eVar = new e(this);
-        eVar.f47491b = fVar;
+        eVar.f46539b = fVar;
         return eVar;
     }
 
@@ -152,9 +152,9 @@ public class e {
         boolean z10;
         StringBuilder sb2 = new StringBuilder();
         sb2.append("KeyPath{keys=");
-        sb2.append(this.f47490a);
+        sb2.append(this.f46538a);
         sb2.append(",resolved=");
-        if (this.f47491b != null) {
+        if (this.f46539b != null) {
             z10 = true;
         } else {
             z10 = false;
@@ -165,7 +165,7 @@ public class e {
     }
 
     private e(e eVar) {
-        this.f47490a = new ArrayList(eVar.f47490a);
-        this.f47491b = eVar.f47491b;
+        this.f46538a = new ArrayList(eVar.f46538a);
+        this.f46539b = eVar.f46539b;
     }
 }

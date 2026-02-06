@@ -11,13 +11,13 @@ import kotlin.jvm.internal.Intrinsics;
 public final class f extends ReactViewGroup implements ViewTreeObserver.OnPreDrawListener {
 
     /* renamed from: d  reason: collision with root package name */
-    private Function3 f18446d;
+    private Function3 f18426d;
 
     /* renamed from: e  reason: collision with root package name */
-    private a f18447e;
+    private a f18427e;
 
     /* renamed from: i  reason: collision with root package name */
-    private c f18448i;
+    private c f18428i;
 
     public f(Context context) {
         super(context);
@@ -25,18 +25,18 @@ public final class f extends ReactViewGroup implements ViewTreeObserver.OnPreDra
 
     private final void c() {
         a e10;
-        Function3 function3 = this.f18446d;
+        Function3 function3 = this.f18426d;
         if (function3 != null && (e10 = h.e(this)) != null) {
             View rootView = getRootView();
             Intrinsics.checkNotNull(rootView, "null cannot be cast to non-null type android.view.ViewGroup");
             c a10 = h.a((ViewGroup) rootView, this);
             if (a10 != null) {
-                if (Intrinsics.areEqual(this.f18447e, e10) && Intrinsics.areEqual(this.f18448i, a10)) {
+                if (Intrinsics.areEqual(this.f18427e, e10) && Intrinsics.areEqual(this.f18428i, a10)) {
                     return;
                 }
                 function3.invoke(this, e10, a10);
-                this.f18447e = e10;
-                this.f18448i = a10;
+                this.f18427e = e10;
+                this.f18428i = a10;
             }
         }
     }
@@ -62,7 +62,7 @@ public final class f extends ReactViewGroup implements ViewTreeObserver.OnPreDra
     }
 
     public final void setOnInsetsChangeHandler(Function3 function3) {
-        this.f18446d = function3;
+        this.f18426d = function3;
         c();
     }
 }

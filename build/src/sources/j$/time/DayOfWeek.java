@@ -2,6 +2,7 @@ package j$.time;
 
 import j$.time.temporal.TemporalAccessor;
 import j$.time.temporal.TemporalQuery;
+import j$.time.temporal.n;
 import j$.time.temporal.o;
 import j$.time.temporal.r;
 /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
@@ -17,17 +18,17 @@ public final class DayOfWeek implements TemporalAccessor, j$.time.temporal.l {
     public static final DayOfWeek WEDNESDAY;
 
     /* renamed from: a  reason: collision with root package name */
-    public static final DayOfWeek[] f30399a;
+    public static final DayOfWeek[] f29372a;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final /* synthetic */ DayOfWeek[] f30400b;
+    public static final /* synthetic */ DayOfWeek[] f29373b;
 
     public static DayOfWeek valueOf(String str) {
         return (DayOfWeek) Enum.valueOf(DayOfWeek.class, str);
     }
 
     public static DayOfWeek[] values() {
-        return (DayOfWeek[]) f30400b.clone();
+        return (DayOfWeek[]) f29373b.clone();
     }
 
     /* JADX WARN: Type inference failed for: r0v0, types: [j$.time.DayOfWeek, java.lang.Enum] */
@@ -52,15 +53,15 @@ public final class DayOfWeek implements TemporalAccessor, j$.time.temporal.l {
         SATURDAY = r52;
         ?? r62 = new Enum("SUNDAY", 6);
         SUNDAY = r62;
-        f30400b = new DayOfWeek[]{r02, r12, r22, r32, r42, r52, r62};
-        f30399a = values();
+        f29373b = new DayOfWeek[]{r02, r12, r22, r32, r42, r52, r62};
+        f29372a = values();
     }
 
     public static DayOfWeek t(int i10) {
         if (i10 < 1 || i10 > 7) {
             throw new DateTimeException("Invalid value for DayOfWeek: " + i10);
         }
-        return f30399a[i10 - 1];
+        return f29372a[i10 - 1];
     }
 
     public final int r() {
@@ -68,12 +69,12 @@ public final class DayOfWeek implements TemporalAccessor, j$.time.temporal.l {
     }
 
     @Override // j$.time.temporal.TemporalAccessor
-    public final boolean j(j$.time.temporal.n nVar) {
+    public final boolean j(n nVar) {
         return nVar instanceof j$.time.temporal.a ? nVar == j$.time.temporal.a.DAY_OF_WEEK : nVar != null && nVar.r(this);
     }
 
     @Override // j$.time.temporal.TemporalAccessor
-    public final r i(j$.time.temporal.n nVar) {
+    public final r i(n nVar) {
         if (nVar == j$.time.temporal.a.DAY_OF_WEEK) {
             return nVar.x();
         }
@@ -81,7 +82,7 @@ public final class DayOfWeek implements TemporalAccessor, j$.time.temporal.l {
     }
 
     @Override // j$.time.temporal.TemporalAccessor
-    public final int g(j$.time.temporal.n nVar) {
+    public final int g(n nVar) {
         if (nVar == j$.time.temporal.a.DAY_OF_WEEK) {
             return r();
         }
@@ -89,7 +90,7 @@ public final class DayOfWeek implements TemporalAccessor, j$.time.temporal.l {
     }
 
     @Override // j$.time.temporal.TemporalAccessor
-    public final long m(j$.time.temporal.n nVar) {
+    public final long m(n nVar) {
         if (nVar == j$.time.temporal.a.DAY_OF_WEEK) {
             return r();
         }
@@ -101,7 +102,7 @@ public final class DayOfWeek implements TemporalAccessor, j$.time.temporal.l {
 
     @Override // j$.time.temporal.TemporalAccessor
     public final Object a(TemporalQuery temporalQuery) {
-        if (temporalQuery == o.f30546c) {
+        if (temporalQuery == o.f29519c) {
             return j$.time.temporal.b.DAYS;
         }
         return super.a(temporalQuery);

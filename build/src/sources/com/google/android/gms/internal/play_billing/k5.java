@@ -8,19 +8,19 @@ public final class k5 extends o1 implements w2 {
 
     public final k5 l(int i10) {
         i();
-        l5.D((l5) this.f14343e, i10);
+        l5.D((l5) this.f14306e, i10);
         return this;
     }
 
-    public final k5 n(String str) {
+    public final k5 m(String str) {
         i();
-        l5.C((l5) this.f14343e, str);
+        l5.C((l5) this.f14306e, str);
         return this;
     }
 
-    public final k5 p(String str) {
+    public final k5 o(String str) {
         i();
-        l5.B((l5) this.f14343e, str);
+        l5.B((l5) this.f14306e, str);
         return this;
     }
 }

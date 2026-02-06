@@ -4899,4 +4899,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     }; var1 = var1.bind(var0)(var5); var5 = 34; var5 = var7[var5]; var7 = var6.bind(var0)(var5); var6 = var7.fileFinishedImporting; var5 = 'lib/uploader/CloudUpload.tsx'; var5 = var6.bind(var7)(var5); var2.ResumableUploadError = var4; var2.CloudUploadStatus = var3; var2.CloudUpload = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 5, 102, 6, 7, 15, 17, 18, 162, 4004, 3197, 3626, 660, 3, 507, 4005, 4010, 667, 561, 4123, 22, 1444, 4012, 4006, 4124, 4125, 4129, 4130, 4131, 1207, 4011, 795, 4132, 4133, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 5, 102, 6, 7, 15, 17, 18, 162, 4005, 3199, 3628, 660, 3, 507, 4006, 4011, 667, 561, 4124, 22, 1444, 4013, 4007, 4125, 4126, 4130, 4131, 4132, 1207, 4012, 795, 4133, 4134, 2]);

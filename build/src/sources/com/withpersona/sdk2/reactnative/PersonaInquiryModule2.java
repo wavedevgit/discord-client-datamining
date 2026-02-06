@@ -28,13 +28,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
-import mq.a;
-import mq.c;
-import mq.e;
-import mq.f;
-import mq.g;
+import oq.a;
+import oq.c;
+import oq.e;
+import oq.f;
+import oq.g;
 import org.jetbrains.annotations.NotNull;
-import sq.b;
+import uq.b;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class PersonaInquiryModule2 extends ReactContextBaseJavaModule implements ActivityEventListener {
     private static final String ACCESS_TOKEN = "sessionToken";
@@ -71,7 +71,7 @@ public class PersonaInquiryModule2 extends ReactContextBaseJavaModule implements
             createMap2.putString("stepName", gVar.a());
             if (gVar instanceof g.a) {
                 WritableArray createArray2 = Arguments.createArray();
-                for (c cVar : ((g.a) gVar).o()) {
+                for (c cVar : ((g.a) gVar).p()) {
                     WritableMap createMap3 = Arguments.createMap();
                     createMap3.putString("absoluteFilePath", cVar.a().getAbsolutePath());
                     createArray2.pushMap(createMap3);
@@ -80,7 +80,7 @@ public class PersonaInquiryModule2 extends ReactContextBaseJavaModule implements
                 createMap2.putString("type", "DocumentStepData");
             } else if (gVar instanceof g.b) {
                 WritableArray createArray3 = Arguments.createArray();
-                for (e eVar : ((g.b) gVar).o()) {
+                for (e eVar : ((g.b) gVar).p()) {
                     WritableMap createMap4 = Arguments.createMap();
                     createMap4.putString("idClass", eVar.b());
                     createMap4.putString("captureMethod", eVar.a().name());
@@ -98,7 +98,7 @@ public class PersonaInquiryModule2 extends ReactContextBaseJavaModule implements
                 createMap2.putString("type", "GovernmentIdStepData");
             } else if (gVar instanceof g.c) {
                 g.c cVar3 = (g.c) gVar;
-                ReadableMap selfieCaptureToMap = selfieCaptureToMap(cVar3.o());
+                ReadableMap selfieCaptureToMap = selfieCaptureToMap(cVar3.p());
                 ReadableMap selfieCaptureToMap2 = selfieCaptureToMap(cVar3.f2());
                 ReadableMap selfieCaptureToMap3 = selfieCaptureToMap(cVar3.o2());
                 createMap2.putMap("centerCapture", selfieCaptureToMap);
@@ -106,7 +106,7 @@ public class PersonaInquiryModule2 extends ReactContextBaseJavaModule implements
                 createMap2.putMap("rightCapture", selfieCaptureToMap3);
                 createMap2.putString("type", "SelfieStepData");
             } else if (gVar instanceof g.d) {
-                createMap2.putMap("componentParams", uiStepParamsMapToMap(((g.d) gVar).o()));
+                createMap2.putMap("componentParams", uiStepParamsMapToMap(((g.d) gVar).p()));
                 createMap2.putString("type", "UiStepData");
             }
             createArray.pushMap(createMap2);
@@ -299,9 +299,9 @@ public class PersonaInquiryModule2 extends ReactContextBaseJavaModule implements
                 str11 = null;
             }
             if (str11 != null && str11.equals("server")) {
-                clientThemeSource2 = new ServerThemeSource(Integer.valueOf(b.f50239a));
+                clientThemeSource2 = new ServerThemeSource(Integer.valueOf(b.f52085a));
             } else {
-                clientThemeSource2 = new ClientThemeSource(Integer.valueOf(b.f50239a));
+                clientThemeSource2 = new ClientThemeSource(Integer.valueOf(b.f52085a));
             }
             InquiryBuilder theme = fromInquiry.theme(clientThemeSource2);
             if (readableMap.hasKey(ACCESS_TOKEN)) {
@@ -336,9 +336,9 @@ public class PersonaInquiryModule2 extends ReactContextBaseJavaModule implements
                 str4 = null;
             }
             if (str4 != null && str4.equals("server")) {
-                clientThemeSource = new ServerThemeSource(Integer.valueOf(b.f50239a));
+                clientThemeSource = new ServerThemeSource(Integer.valueOf(b.f52085a));
             } else {
-                clientThemeSource = new ClientThemeSource(Integer.valueOf(b.f50239a));
+                clientThemeSource = new ClientThemeSource(Integer.valueOf(b.f52085a));
             }
             InquiryTemplateBuilder theme2 = fromTemplateVersion.theme(clientThemeSource);
             if (readableMap.hasKey(REFERENCE_ID)) {

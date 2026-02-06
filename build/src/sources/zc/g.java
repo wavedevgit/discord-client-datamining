@@ -5,21 +5,21 @@ import tc.l;
 final class g {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final long[] f55455d = {128, 64, 32, 16, 8, 4, 2, 1};
+    private static final long[] f56186d = {128, 64, 32, 16, 8, 4, 2, 1};
 
     /* renamed from: a  reason: collision with root package name */
-    private final byte[] f55456a = new byte[8];
+    private final byte[] f56187a = new byte[8];
 
     /* renamed from: b  reason: collision with root package name */
-    private int f55457b;
+    private int f56188b;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f55458c;
+    private int f56189c;
 
     public static long a(byte[] bArr, int i10, boolean z10) {
         long j10 = bArr[0] & 255;
         if (z10) {
-            j10 &= ~f55455d[i10 - 1];
+            j10 &= ~f56186d[i10 - 1];
         }
         for (int i11 = 1; i11 < i10; i11++) {
             j10 = (j10 << 8) | (bArr[i11] & 255);
@@ -30,7 +30,7 @@ final class g {
     public static int c(int i10) {
         int i11 = 0;
         while (true) {
-            long[] jArr = f55455d;
+            long[] jArr = f56186d;
             if (i11 < jArr.length) {
                 if ((jArr[i11] & i10) != 0) {
                     return i11 + 1;
@@ -43,36 +43,36 @@ final class g {
     }
 
     public int b() {
-        return this.f55458c;
+        return this.f56189c;
     }
 
     public long d(l lVar, boolean z10, boolean z11, int i10) {
-        if (this.f55457b == 0) {
-            if (!lVar.f(this.f55456a, 0, 1, z10)) {
+        if (this.f56188b == 0) {
+            if (!lVar.f(this.f56187a, 0, 1, z10)) {
                 return -1L;
             }
-            int c10 = c(this.f55456a[0] & 255);
-            this.f55458c = c10;
+            int c10 = c(this.f56187a[0] & 255);
+            this.f56189c = c10;
             if (c10 != -1) {
-                this.f55457b = 1;
+                this.f56188b = 1;
             } else {
                 throw new IllegalStateException("No valid varint length mask found");
             }
         }
-        int i11 = this.f55458c;
+        int i11 = this.f56189c;
         if (i11 > i10) {
-            this.f55457b = 0;
+            this.f56188b = 0;
             return -2L;
         }
         if (i11 != 1) {
-            lVar.readFully(this.f55456a, 1, i11 - 1);
+            lVar.readFully(this.f56187a, 1, i11 - 1);
         }
-        this.f55457b = 0;
-        return a(this.f55456a, this.f55458c, z11);
+        this.f56188b = 0;
+        return a(this.f56187a, this.f56189c, z11);
     }
 
     public void e() {
-        this.f55457b = 0;
-        this.f55458c = 0;
+        this.f56188b = 0;
+        this.f56189c = 0;
     }
 }

@@ -201,7 +201,7 @@ public final class AFj1iSDK {
     public static boolean getRevenue(Context context) {
         if (context != null) {
             try {
-                if (com.google.android.gms.common.f.m().g(context) == 0) {
+                if (com.google.android.gms.common.f.n().g(context) == 0) {
                     return true;
                 }
             } catch (Throwable unused) {

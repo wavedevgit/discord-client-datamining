@@ -3,44 +3,44 @@ package cc;
 public final class e {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final e f7482c = new a().a();
+    private static final e f7327c = new a().a();
 
     /* renamed from: a  reason: collision with root package name */
-    private final long f7483a;
+    private final long f7328a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final long f7484b;
+    private final long f7329b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private long f7485a = 0;
+        private long f7330a = 0;
 
         /* renamed from: b  reason: collision with root package name */
-        private long f7486b = 0;
+        private long f7331b = 0;
 
         a() {
         }
 
         public e a() {
-            return new e(this.f7485a, this.f7486b);
+            return new e(this.f7330a, this.f7331b);
         }
 
         public a b(long j10) {
-            this.f7485a = j10;
+            this.f7330a = j10;
             return this;
         }
 
         public a c(long j10) {
-            this.f7486b = j10;
+            this.f7331b = j10;
             return this;
         }
     }
 
     e(long j10, long j11) {
-        this.f7483a = j10;
-        this.f7484b = j11;
+        this.f7328a = j10;
+        this.f7329b = j11;
     }
 
     public static a c() {
@@ -48,10 +48,10 @@ public final class e {
     }
 
     public long a() {
-        return this.f7483a;
+        return this.f7328a;
     }
 
     public long b() {
-        return this.f7484b;
+        return this.f7329b;
     }
 }

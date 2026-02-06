@@ -109,4 +109,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.useValue = var3;
     var2.onValueChange = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1298, 7028, 566, 10952, 3986, 9017, 1234, 2180, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1298, 7033, 566, 10954, 3987, 9023, 1234, 2180, 2]);

@@ -18,7 +18,7 @@ import kotlin.enums.EnumEntries;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
-import vr.a;
+import xr.a;
 @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0014\u0018\u0000 \u00042\u00020\u0001:\u0011\u0004\u0005\u0006\u0007\b\t\n\u000b\f\r\u000e\u000f\u0010\u0011\u0012\u0013\u0014B\u0007¢\u0006\u0004\b\u0002\u0010\u0003¨\u0006\u0015"}, d2 = {"Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/StyleElements;", "", "<init>", "()V", "Companion", "Size", "Measurement", "MeasurementSet", "Position", "DPSize", "SizeSet", "SimpleElementColor", "SimpleElementColorValue", "ComplexElementColor", "PositionType", "FontName", "FontWeightContainer", "FontWeight", "ChildSizes", "AxisContainer", "Axis", "network-inquiry_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class StyleElements {
@@ -59,8 +59,8 @@ public final class StyleElements {
             @NotNull
             public Axis fromJson(@NotNull m reader) {
                 Intrinsics.checkNotNullParameter(reader, "reader");
-                Object V = reader.V();
-                return Intrinsics.areEqual(V, "horizontal") ? Axis.HORIZONTAL : Intrinsics.areEqual(V, "vertical") ? Axis.VERTICAL : Axis.HORIZONTAL;
+                Object I = reader.I();
+                return Intrinsics.areEqual(I, "horizontal") ? Axis.HORIZONTAL : Intrinsics.areEqual(I, "vertical") ? Axis.VERTICAL : Axis.HORIZONTAL;
             }
         }
 
@@ -197,19 +197,19 @@ public final class StyleElements {
 
         /* JADX INFO: Access modifiers changed from: private */
         public final Double getDoubleFromJsonReader(m mVar) {
-            if (mVar.E() != m.c.NULL) {
+            if (mVar.s() != m.c.NULL) {
                 return Double.valueOf(mVar.nextDouble());
             }
-            mVar.P();
+            mVar.S();
             return null;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public final String getStringFromJsonReader(m mVar) {
-            if (mVar.E() != m.c.NULL) {
-                return mVar.f1();
+            if (mVar.s() != m.c.NULL) {
+                return mVar.e1();
             }
-            mVar.P();
+            mVar.S();
             return null;
         }
 
@@ -366,7 +366,7 @@ public final class StyleElements {
     public static final class DPSize implements Parcelable, Size {
 
         /* renamed from: dp  reason: collision with root package name */
-        private final Double f19428dp;
+        private final Double f19408dp;
         @NotNull
         public static final Companion Companion = new Companion(null);
         @NotNull
@@ -397,24 +397,24 @@ public final class StyleElements {
                 double pxToDp;
                 Intrinsics.checkNotNullParameter(reader, "reader");
                 Object obj = null;
-                if (reader.E() == m.c.BEGIN_OBJECT) {
-                    reader.s();
+                if (reader.s() == m.c.BEGIN_OBJECT) {
+                    reader.u();
                     String str = null;
                     while (reader.hasNext()) {
-                        String m02 = reader.m0();
-                        if (Intrinsics.areEqual(m02, "unit")) {
+                        String o02 = reader.o0();
+                        if (Intrinsics.areEqual(o02, "unit")) {
                             str = StyleElements.Companion.getStringFromJsonReader(reader);
-                        } else if (Intrinsics.areEqual(m02, "value")) {
+                        } else if (Intrinsics.areEqual(o02, "value")) {
                             obj = StyleElements.Companion.getDoubleFromJsonReader(reader);
                         } else {
-                            reader.P();
+                            reader.S();
                         }
                     }
-                    reader.z();
+                    reader.D();
                     d10 = obj;
                     obj = str;
                 } else {
-                    reader.P();
+                    reader.S();
                     d10 = null;
                 }
                 Double d11 = d10;
@@ -445,7 +445,7 @@ public final class StyleElements {
         }
 
         public DPSize(Double d10) {
-            this.f19428dp = d10;
+            this.f19408dp = d10;
         }
 
         @Override // android.os.Parcelable
@@ -455,13 +455,13 @@ public final class StyleElements {
 
         @Override // com.withpersona.sdk2.inquiry.network.dto.ui.styling.StyleElements.Size
         public Double getDp() {
-            return this.f19428dp;
+            return this.f19408dp;
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(@NotNull Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            Double d10 = this.f19428dp;
+            Double d10 = this.f19408dp;
             if (d10 == null) {
                 dest.writeInt(0);
                 return;
@@ -503,18 +503,18 @@ public final class StyleElements {
             public FontName fromJson(@NotNull m reader) {
                 Intrinsics.checkNotNullParameter(reader, "reader");
                 String str = null;
-                if (reader.E() == m.c.BEGIN_OBJECT) {
-                    reader.s();
+                if (reader.s() == m.c.BEGIN_OBJECT) {
+                    reader.u();
                     while (reader.hasNext()) {
-                        if (Intrinsics.areEqual(reader.m0(), "base")) {
+                        if (Intrinsics.areEqual(reader.o0(), "base")) {
                             str = StyleElements.Companion.getStringFromJsonReader(reader);
                         } else {
-                            reader.P();
+                            reader.S();
                         }
                     }
-                    reader.z();
+                    reader.D();
                 } else {
-                    reader.P();
+                    reader.S();
                 }
                 return new FontName(str);
             }
@@ -602,8 +602,8 @@ public final class StyleElements {
             @NotNull
             public FontWeight fromJson(@NotNull m reader) {
                 Intrinsics.checkNotNullParameter(reader, "reader");
-                Object V = reader.V();
-                return Intrinsics.areEqual(V, "light") ? FontWeight.LIGHT : Intrinsics.areEqual(V, "normal") ? FontWeight.NORMAL : Intrinsics.areEqual(V, "medium") ? FontWeight.MEDIUM : Intrinsics.areEqual(V, "bold") ? FontWeight.BOLD : Intrinsics.areEqual(V, "heavy") ? FontWeight.HEAVY : FontWeight.NORMAL;
+                Object I = reader.I();
+                return Intrinsics.areEqual(I, "light") ? FontWeight.LIGHT : Intrinsics.areEqual(I, "normal") ? FontWeight.NORMAL : Intrinsics.areEqual(I, "medium") ? FontWeight.MEDIUM : Intrinsics.areEqual(I, "bold") ? FontWeight.BOLD : Intrinsics.areEqual(I, "heavy") ? FontWeight.HEAVY : FontWeight.NORMAL;
             }
         }
 
@@ -867,14 +867,14 @@ public final class StyleElements {
             @f
             public PositionType fromJson(@NotNull m reader) {
                 Intrinsics.checkNotNullParameter(reader, "reader");
-                Object V = reader.V();
-                if (Intrinsics.areEqual(V, ViewProps.START)) {
+                Object I = reader.I();
+                if (Intrinsics.areEqual(I, ViewProps.START)) {
                     return PositionType.START;
                 }
-                if (Intrinsics.areEqual(V, "center")) {
+                if (Intrinsics.areEqual(I, "center")) {
                     return PositionType.CENTER;
                 }
-                if (Intrinsics.areEqual(V, ViewProps.END)) {
+                if (Intrinsics.areEqual(I, ViewProps.END)) {
                     return PositionType.END;
                 }
                 return null;
@@ -1039,24 +1039,24 @@ public final class StyleElements {
                 Double d10;
                 Intrinsics.checkNotNullParameter(reader, "reader");
                 String str = null;
-                if (reader.E() == m.c.BEGIN_OBJECT) {
-                    reader.s();
+                if (reader.s() == m.c.BEGIN_OBJECT) {
+                    reader.u();
                     String str2 = null;
                     while (reader.hasNext()) {
-                        String m02 = reader.m0();
-                        if (Intrinsics.areEqual(m02, "unit")) {
+                        String o02 = reader.o0();
+                        if (Intrinsics.areEqual(o02, "unit")) {
                             str2 = StyleElements.Companion.getStringFromJsonReader(reader);
-                        } else if (Intrinsics.areEqual(m02, "value")) {
+                        } else if (Intrinsics.areEqual(o02, "value")) {
                             str = StyleElements.Companion.getDoubleFromJsonReader(reader);
                         } else {
-                            reader.P();
+                            reader.S();
                         }
                     }
-                    reader.z();
+                    reader.D();
                     d10 = str;
                     str = str2;
                 } else {
-                    reader.P();
+                    reader.S();
                     d10 = 0;
                 }
                 if (Intrinsics.areEqual(str, "%") && d10 != 0) {

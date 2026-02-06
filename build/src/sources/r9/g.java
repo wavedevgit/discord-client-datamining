@@ -3,21 +3,21 @@ package r9;
 final class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f48631a;
+    private final int f48715a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f48632b;
+    private final int f48716b;
 
     public g(int i10, int i11) {
-        this.f48631a = i10;
-        this.f48632b = i11;
+        this.f48715a = i10;
+        this.f48716b = i11;
     }
 
     public final int a() {
-        return this.f48632b;
+        return this.f48716b;
     }
 
     public final int b() {
-        return this.f48631a;
+        return this.f48715a;
     }
 }

@@ -8,7 +8,7 @@ import org.jetbrains.annotations.NotNull;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f5641a = new a();
+    public static final a f5970a = new a();
 
     private a() {
     }

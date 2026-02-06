@@ -10,10 +10,10 @@ import java.util.Locale;
 public class ZslDisablerQuirk implements y1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final List f2049a = Arrays.asList("SM-F936", "SM-S901U", "SM-S908U", "SM-S908U1");
+    private static final List f2378a = Arrays.asList("SM-F936", "SM-S901U", "SM-S908U", "SM-S908U1");
 
     /* renamed from: b  reason: collision with root package name */
-    private static final List f2050b = Arrays.asList("MI 8");
+    private static final List f2379b = Arrays.asList("MI 8");
 
     private static boolean c(List list) {
         Iterator it = list.iterator();
@@ -26,14 +26,14 @@ public class ZslDisablerQuirk implements y1 {
     }
 
     private static boolean d() {
-        if ("samsung".equalsIgnoreCase(Build.BRAND) && c(f2049a)) {
+        if ("samsung".equalsIgnoreCase(Build.BRAND) && c(f2378a)) {
             return true;
         }
         return false;
     }
 
     private static boolean e() {
-        if ("xiaomi".equalsIgnoreCase(Build.BRAND) && c(f2050b)) {
+        if ("xiaomi".equalsIgnoreCase(Build.BRAND) && c(f2379b)) {
             return true;
         }
         return false;

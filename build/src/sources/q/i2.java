@@ -15,10 +15,10 @@ import java.util.Map;
 class i2 extends CameraCaptureSession.CaptureCallback {
 
     /* renamed from: b  reason: collision with root package name */
-    a f46873b = null;
+    a f45921b = null;
 
     /* renamed from: a  reason: collision with root package name */
-    final Map f46872a = new HashMap();
+    final Map f45920a = new HashMap();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     interface a {
@@ -26,7 +26,7 @@ class i2 extends CameraCaptureSession.CaptureCallback {
     }
 
     private List b(CaptureRequest captureRequest) {
-        List list = (List) this.f46872a.get(captureRequest);
+        List list = (List) this.f45920a.get(captureRequest);
         if (list != null) {
             return list;
         }
@@ -35,19 +35,19 @@ class i2 extends CameraCaptureSession.CaptureCallback {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void a(CaptureRequest captureRequest, List list) {
-        List list2 = (List) this.f46872a.get(captureRequest);
+        List list2 = (List) this.f45920a.get(captureRequest);
         if (list2 != null) {
             ArrayList arrayList = new ArrayList(list.size() + list2.size());
             arrayList.addAll(list);
             arrayList.addAll(list2);
-            this.f46872a.put(captureRequest, arrayList);
+            this.f45920a.put(captureRequest, arrayList);
             return;
         }
-        this.f46872a.put(captureRequest, list);
+        this.f45920a.put(captureRequest, list);
     }
 
     public void c(a aVar) {
-        this.f46873b = aVar;
+        this.f45921b = aVar;
     }
 
     @Override // android.hardware.camera2.CameraCaptureSession.CaptureCallback
@@ -80,12 +80,12 @@ class i2 extends CameraCaptureSession.CaptureCallback {
 
     @Override // android.hardware.camera2.CameraCaptureSession.CaptureCallback
     public void onCaptureSequenceAborted(CameraCaptureSession cameraCaptureSession, int i10) {
-        for (List<CameraCaptureSession.CaptureCallback> list : this.f46872a.values()) {
+        for (List<CameraCaptureSession.CaptureCallback> list : this.f45920a.values()) {
             for (CameraCaptureSession.CaptureCallback captureCallback : list) {
                 captureCallback.onCaptureSequenceAborted(cameraCaptureSession, i10);
             }
         }
-        a aVar = this.f46873b;
+        a aVar = this.f45921b;
         if (aVar != null) {
             aVar.a(cameraCaptureSession, i10, true);
         }
@@ -93,12 +93,12 @@ class i2 extends CameraCaptureSession.CaptureCallback {
 
     @Override // android.hardware.camera2.CameraCaptureSession.CaptureCallback
     public void onCaptureSequenceCompleted(CameraCaptureSession cameraCaptureSession, int i10, long j10) {
-        for (List<CameraCaptureSession.CaptureCallback> list : this.f46872a.values()) {
+        for (List<CameraCaptureSession.CaptureCallback> list : this.f45920a.values()) {
             for (CameraCaptureSession.CaptureCallback captureCallback : list) {
                 captureCallback.onCaptureSequenceCompleted(cameraCaptureSession, i10, j10);
             }
         }
-        a aVar = this.f46873b;
+        a aVar = this.f45921b;
         if (aVar != null) {
             aVar.a(cameraCaptureSession, i10, false);
         }

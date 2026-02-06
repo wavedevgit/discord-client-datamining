@@ -1,155 +1,104 @@
 package dt;
 
-import gt.k2;
-import gt.s1;
-import gt.t1;
-import java.util.List;
-import kotlin.jvm.functions.Function0;
-import kotlin.jvm.functions.Function1;
-import kotlin.jvm.functions.Function2;
+import dt.g;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.reflect.KClass;
-import kotlin.reflect.KType;
-import kotlinx.serialization.KSerializer;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class v {
-
-    /* renamed from: a  reason: collision with root package name */
-    private static final k2 f21241a = gt.m.a(new Function1() { // from class: dt.p
-        @Override // kotlin.jvm.functions.Function1
-        public final Object invoke(Object obj) {
-            KSerializer k10;
-            k10 = v.k((KClass) obj);
-            return k10;
-        }
-    });
-
-    /* renamed from: b  reason: collision with root package name */
-    private static final k2 f21242b = gt.m.a(new Function1() { // from class: dt.q
-        @Override // kotlin.jvm.functions.Function1
-        public final Object invoke(Object obj) {
-            KSerializer l10;
-            l10 = v.l((KClass) obj);
-            return l10;
-        }
-    });
+public final class v extends e {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final s1 f21243c = gt.m.b(new Function2() { // from class: dt.r
-        @Override // kotlin.jvm.functions.Function2
-        public final Object invoke(Object obj, Object obj2) {
-            KSerializer g10;
-            g10 = v.g((KClass) obj, (List) obj2);
-            return g10;
-        }
-    });
+    private final Integer f21190c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final s1 f21244d = gt.m.b(new Function2() { // from class: dt.s
-        @Override // kotlin.jvm.functions.Function2
-        public final Object invoke(Object obj, Object obj2) {
-            KSerializer i10;
-            i10 = v.i((KClass) obj, (List) obj2);
-            return i10;
-        }
-    });
+    private final Integer f21191d;
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final KSerializer g(KClass clazz, final List types) {
-        Intrinsics.checkNotNullParameter(clazz, "clazz");
-        Intrinsics.checkNotNullParameter(types, "types");
-        List h10 = w.h(kt.c.a(), types, true);
-        Intrinsics.checkNotNull(h10);
-        return w.a(clazz, h10, new Function0() { // from class: dt.t
-            @Override // kotlin.jvm.functions.Function0
-            public final Object invoke() {
-                kotlin.reflect.d h11;
-                h11 = v.h(types);
-                return h11;
+    /* renamed from: e  reason: collision with root package name */
+    private final a f21192e;
+
+    /* renamed from: f  reason: collision with root package name */
+    private final boolean f21193f;
+
+    /* JADX WARN: Illegal instructions before constructor call */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public v(java.lang.Integer r3, java.lang.Integer r4, dt.a r5, java.lang.String r6, boolean r7) {
+        /*
+            r2 = this;
+            java.lang.String r0 = "setter"
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r5, r0)
+            java.lang.String r0 = "name"
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r6, r0)
+            boolean r0 = kotlin.jvm.internal.Intrinsics.areEqual(r3, r4)
+            r1 = 0
+            if (r0 == 0) goto L13
+            r0 = r3
+            goto L14
+        L13:
+            r0 = r1
+        L14:
+            r2.<init>(r0, r6, r1)
+            r2.f21190c = r3
+            r2.f21191d = r4
+            r2.f21192e = r5
+            r2.f21193f = r7
+            java.lang.Integer r3 = r2.b()
+            if (r3 == 0) goto L67
+            kotlin.ranges.IntRange r3 = new kotlin.ranges.IntRange
+            r4 = 1
+            r5 = 9
+            r3.<init>(r4, r5)
+            java.lang.Integer r4 = r2.b()
+            int r4 = r4.intValue()
+            boolean r3 = r3.contains(r4)
+            if (r3 == 0) goto L3c
+            goto L67
+        L3c:
+            java.lang.StringBuilder r3 = new java.lang.StringBuilder
+            r3.<init>()
+            java.lang.String r4 = "Invalid length for field "
+            r3.append(r4)
+            java.lang.String r4 = r2.c()
+            r3.append(r4)
+            java.lang.String r4 = ": "
+            r3.append(r4)
+            java.lang.Integer r4 = r2.b()
+            r3.append(r4)
+            java.lang.String r3 = r3.toString()
+            java.lang.IllegalArgumentException r4 = new java.lang.IllegalArgumentException
+            java.lang.String r3 = r3.toString()
+            r4.<init>(r3)
+            throw r4
+        L67:
+            return
+        */
+        throw new UnsupportedOperationException("Method not decompiled: dt.v.<init>(java.lang.Integer, java.lang.Integer, dt.a, java.lang.String, boolean):void");
+    }
+
+    @Override // dt.e
+    public g a(Object obj, CharSequence input, int i10, int i11) {
+        Integer e10;
+        g f10;
+        Intrinsics.checkNotNullParameter(input, "input");
+        Integer num = this.f21191d;
+        if (num != null && i11 - i10 > num.intValue()) {
+            return new g.d(this.f21191d.intValue());
+        }
+        Integer num2 = this.f21190c;
+        if (num2 == null || i11 - i10 >= num2.intValue()) {
+            e10 = f.e(input, i10, i11);
+            if (e10 == null) {
+                return g.b.f21141a;
             }
-        });
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final kotlin.reflect.d h(List list) {
-        return ((KType) list.get(0)).getClassifier();
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final KSerializer i(KClass clazz, final List types) {
-        KSerializer u10;
-        Intrinsics.checkNotNullParameter(clazz, "clazz");
-        Intrinsics.checkNotNullParameter(types, "types");
-        List h10 = w.h(kt.c.a(), types, true);
-        Intrinsics.checkNotNull(h10);
-        KSerializer a10 = w.a(clazz, h10, new Function0() { // from class: dt.u
-            @Override // kotlin.jvm.functions.Function0
-            public final Object invoke() {
-                kotlin.reflect.d j10;
-                j10 = v.j(types);
-                return j10;
+            a aVar = this.f21192e;
+            boolean z10 = this.f21193f;
+            int intValue = e10.intValue();
+            if (z10) {
+                intValue = -intValue;
             }
-        });
-        if (a10 != null && (u10 = et.a.u(a10)) != null) {
-            return u10;
+            f10 = f.f(aVar, obj, Integer.valueOf(intValue));
+            return f10;
         }
-        return null;
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final kotlin.reflect.d j(List list) {
-        return ((KType) list.get(0)).getClassifier();
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final KSerializer k(KClass it) {
-        Intrinsics.checkNotNullParameter(it, "it");
-        KSerializer e10 = w.e(it);
-        if (e10 == null) {
-            if (t1.l(it)) {
-                return new g(it);
-            }
-            return null;
-        }
-        return e10;
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final KSerializer l(KClass it) {
-        KSerializer u10;
-        Intrinsics.checkNotNullParameter(it, "it");
-        KSerializer e10 = w.e(it);
-        if (e10 == null) {
-            if (t1.l(it)) {
-                e10 = new g(it);
-            } else {
-                e10 = null;
-            }
-        }
-        if (e10 == null || (u10 = et.a.u(e10)) == null) {
-            return null;
-        }
-        return u10;
-    }
-
-    public static final KSerializer m(KClass clazz, boolean z10) {
-        Intrinsics.checkNotNullParameter(clazz, "clazz");
-        if (!z10) {
-            KSerializer a10 = f21241a.a(clazz);
-            if (a10 != null) {
-                return a10;
-            }
-            return null;
-        }
-        return f21242b.a(clazz);
-    }
-
-    public static final Object n(KClass clazz, List types, boolean z10) {
-        Intrinsics.checkNotNullParameter(clazz, "clazz");
-        Intrinsics.checkNotNullParameter(types, "types");
-        if (!z10) {
-            return f21243c.a(clazz, types);
-        }
-        return f21244d.a(clazz, types);
+        return new g.c(this.f21190c.intValue());
     }
 }

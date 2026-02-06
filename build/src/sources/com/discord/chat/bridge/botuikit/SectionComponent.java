@@ -3,9 +3,9 @@ package com.discord.chat.bridge.botuikit;
 import com.discord.chat.bridge.botuikit.SectionAccessory;
 import com.discord.chat.bridge.botuikit.SectionChildComponent;
 import com.facebook.react.devsupport.StackTraceHelper;
-import gt.n2;
-import gt.v1;
 import java.util.List;
+import jt.n2;
+import jt.v1;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.jvm.functions.Function0;
@@ -16,8 +16,8 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
 import org.jetbrains.annotations.NotNull;
+@ft.m
 @Metadata(d1 = {"\u0000V\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0011\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 02\u00020\u0001:\u0002/0BA\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u0012\u0010\u0010\u0007\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\t0\b\u0012\n\u0010\n\u001a\u0006\u0012\u0002\b\u00030\u000b¢\u0006\u0004\b\f\u0010\rBY\b\u0010\u0012\u0006\u0010\u000e\u001a\u00020\u0003\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u0012\u0012\u0010\u0007\u001a\u000e\u0012\b\u0012\u0006\u0012\u0002\b\u00030\t\u0018\u00010\b\u0012\f\u0010\n\u001a\b\u0012\u0002\b\u0003\u0018\u00010\u000b\u0012\b\u0010\u000f\u001a\u0004\u0018\u00010\u0010¢\u0006\u0004\b\f\u0010\u0011J\t\u0010\u001b\u001a\u00020\u0003HÆ\u0003J\t\u0010\u001c\u001a\u00020\u0005HÆ\u0003J\u000b\u0010\u001d\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u0013\u0010\u001e\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\t0\bHÆ\u0003J\r\u0010\u001f\u001a\u0006\u0012\u0002\b\u00030\u000bHÆ\u0003JK\u0010 \u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u00052\u0012\b\u0002\u0010\u0007\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\t0\b2\f\b\u0002\u0010\n\u001a\u0006\u0012\u0002\b\u00030\u000bHÆ\u0001J\u0013\u0010!\u001a\u00020\"2\b\u0010#\u001a\u0004\u0018\u00010$HÖ\u0003J\t\u0010%\u001a\u00020\u0003HÖ\u0001J\t\u0010&\u001a\u00020\u0005HÖ\u0001J%\u0010'\u001a\u00020(2\u0006\u0010)\u001a\u00020\u00002\u0006\u0010*\u001a\u00020+2\u0006\u0010,\u001a\u00020-H\u0001¢\u0006\u0002\b.R\u0014\u0010\u0002\u001a\u00020\u0003X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\u0013R\u0014\u0010\u0004\u001a\u00020\u0005X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0014\u0010\u0015R\u0016\u0010\u0006\u001a\u0004\u0018\u00010\u0005X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0016\u0010\u0015R\u001b\u0010\u0007\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\t0\b¢\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0018R\u0015\u0010\n\u001a\u0006\u0012\u0002\b\u00030\u000b¢\u0006\b\n\u0000\u001a\u0004\b\u0019\u0010\u001a¨\u00061"}, d2 = {"Lcom/discord/chat/bridge/botuikit/SectionComponent;", "Lcom/discord/chat/bridge/botuikit/BaseLayoutComponent;", "type", "", StackTraceHelper.ID_KEY, "", "errorText", "components", "", "Lcom/discord/chat/bridge/botuikit/SectionChildComponent;", "accessory", "Lcom/discord/chat/bridge/botuikit/SectionAccessory;", "<init>", "(ILjava/lang/String;Ljava/lang/String;Ljava/util/List;Lcom/discord/chat/bridge/botuikit/SectionAccessory;)V", "seen0", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(IILjava/lang/String;Ljava/lang/String;Ljava/util/List;Lcom/discord/chat/bridge/botuikit/SectionAccessory;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "getType", "()I", "getId", "()Ljava/lang/String;", "getErrorText", "getComponents", "()Ljava/util/List;", "getAccessory", "()Lcom/discord/chat/bridge/botuikit/SectionAccessory;", "component1", "component2", "component3", "component4", "component5", "copy", "equals", "", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
-@dt.m
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class SectionComponent extends BaseLayoutComponent {
     @NotNull
@@ -28,12 +28,12 @@ public final class SectionComponent extends BaseLayoutComponent {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f8635id;
+    private final String f8534id;
     private final int type;
     @NotNull
     public static final Companion Companion = new Companion(null);
     @NotNull
-    private static final Lazy[] $childSerializers = {null, null, null, or.l.b(or.o.f44232e, new Function0() { // from class: com.discord.chat.bridge.botuikit.k
+    private static final Lazy[] $childSerializers = {null, null, null, qr.l.b(qr.o.f48044e, new Function0() { // from class: com.discord.chat.bridge.botuikit.k
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             KSerializer _childSerializers$_anonymous_;
@@ -65,7 +65,7 @@ public final class SectionComponent extends BaseLayoutComponent {
             v1.b(i10, 27, SectionComponent$$serializer.INSTANCE.getDescriptor());
         }
         this.type = i11;
-        this.f8635id = str;
+        this.f8534id = str;
         if ((i10 & 4) == 0) {
             this.errorText = null;
         } else {
@@ -77,7 +77,7 @@ public final class SectionComponent extends BaseLayoutComponent {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_() {
-        return new gt.f(SectionChildComponent.Serializer.INSTANCE);
+        return new jt.f(SectionChildComponent.Serializer.INSTANCE);
     }
 
     public static /* synthetic */ SectionComponent copy$default(SectionComponent sectionComponent, int i10, String str, String str2, List list, SectionAccessory sectionAccessory, int i11, Object obj) {
@@ -85,7 +85,7 @@ public final class SectionComponent extends BaseLayoutComponent {
             i10 = sectionComponent.type;
         }
         if ((i11 & 2) != 0) {
-            str = sectionComponent.f8635id;
+            str = sectionComponent.f8534id;
         }
         if ((i11 & 4) != 0) {
             str2 = sectionComponent.errorText;
@@ -105,13 +105,13 @@ public final class SectionComponent extends BaseLayoutComponent {
 
     public static final /* synthetic */ void write$Self$chat_release(SectionComponent sectionComponent, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         Lazy[] lazyArr = $childSerializers;
-        compositeEncoder.v(serialDescriptor, 0, sectionComponent.getType());
-        compositeEncoder.x(serialDescriptor, 1, sectionComponent.getId());
-        if (compositeEncoder.z(serialDescriptor, 2) || sectionComponent.getErrorText() != null) {
-            compositeEncoder.A(serialDescriptor, 2, n2.f25302a, sectionComponent.getErrorText());
+        compositeEncoder.x(serialDescriptor, 0, sectionComponent.getType());
+        compositeEncoder.z(serialDescriptor, 1, sectionComponent.getId());
+        if (compositeEncoder.A(serialDescriptor, 2) || sectionComponent.getErrorText() != null) {
+            compositeEncoder.l(serialDescriptor, 2, n2.f31041a, sectionComponent.getErrorText());
         }
-        compositeEncoder.l(serialDescriptor, 3, (dt.o) lazyArr[3].getValue(), sectionComponent.components);
-        compositeEncoder.l(serialDescriptor, 4, SectionAccessory.Serializer.INSTANCE, sectionComponent.accessory);
+        compositeEncoder.s(serialDescriptor, 3, (ft.o) lazyArr[3].getValue(), sectionComponent.components);
+        compositeEncoder.s(serialDescriptor, 4, SectionAccessory.Serializer.INSTANCE, sectionComponent.accessory);
     }
 
     public final int component1() {
@@ -120,7 +120,7 @@ public final class SectionComponent extends BaseLayoutComponent {
 
     @NotNull
     public final String component2() {
-        return this.f8635id;
+        return this.f8534id;
     }
 
     public final String component3() {
@@ -151,7 +151,7 @@ public final class SectionComponent extends BaseLayoutComponent {
         }
         if (obj instanceof SectionComponent) {
             SectionComponent sectionComponent = (SectionComponent) obj;
-            return this.type == sectionComponent.type && Intrinsics.areEqual(this.f8635id, sectionComponent.f8635id) && Intrinsics.areEqual(this.errorText, sectionComponent.errorText) && Intrinsics.areEqual(this.components, sectionComponent.components) && Intrinsics.areEqual(this.accessory, sectionComponent.accessory);
+            return this.type == sectionComponent.type && Intrinsics.areEqual(this.f8534id, sectionComponent.f8534id) && Intrinsics.areEqual(this.errorText, sectionComponent.errorText) && Intrinsics.areEqual(this.components, sectionComponent.components) && Intrinsics.areEqual(this.accessory, sectionComponent.accessory);
         }
         return false;
     }
@@ -174,7 +174,7 @@ public final class SectionComponent extends BaseLayoutComponent {
     @Override // com.discord.chat.bridge.botuikit.Component
     @NotNull
     public String getId() {
-        return this.f8635id;
+        return this.f8534id;
     }
 
     @Override // com.discord.chat.bridge.botuikit.Component
@@ -183,7 +183,7 @@ public final class SectionComponent extends BaseLayoutComponent {
     }
 
     public int hashCode() {
-        int hashCode = ((Integer.hashCode(this.type) * 31) + this.f8635id.hashCode()) * 31;
+        int hashCode = ((Integer.hashCode(this.type) * 31) + this.f8534id.hashCode()) * 31;
         String str = this.errorText;
         return ((((hashCode + (str == null ? 0 : str.hashCode())) * 31) + this.components.hashCode()) * 31) + this.accessory.hashCode();
     }
@@ -191,7 +191,7 @@ public final class SectionComponent extends BaseLayoutComponent {
     @NotNull
     public String toString() {
         int i10 = this.type;
-        String str = this.f8635id;
+        String str = this.f8534id;
         String str2 = this.errorText;
         List<SectionChildComponent<?>> list = this.components;
         SectionAccessory<?> sectionAccessory = this.accessory;
@@ -210,7 +210,7 @@ public final class SectionComponent extends BaseLayoutComponent {
         Intrinsics.checkNotNullParameter(components, "components");
         Intrinsics.checkNotNullParameter(accessory, "accessory");
         this.type = i10;
-        this.f8635id = id2;
+        this.f8534id = id2;
         this.errorText = str;
         this.components = components;
         this.accessory = accessory;

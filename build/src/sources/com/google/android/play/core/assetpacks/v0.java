@@ -5,61 +5,61 @@ import java.util.Arrays;
 final class v0 extends h4 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f16057a;
+    private final String f16037a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final long f16058b;
+    private final long f16038b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f16059c;
+    private final int f16039c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f16060d;
+    private final boolean f16040d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f16061e;
+    private final boolean f16041e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final byte[] f16062f;
+    private final byte[] f16042f;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public v0(String str, long j10, int i10, boolean z10, boolean z11, byte[] bArr) {
-        this.f16057a = str;
-        this.f16058b = j10;
-        this.f16059c = i10;
-        this.f16060d = z10;
-        this.f16061e = z11;
-        this.f16062f = bArr;
+        this.f16037a = str;
+        this.f16038b = j10;
+        this.f16039c = i10;
+        this.f16040d = z10;
+        this.f16041e = z11;
+        this.f16042f = bArr;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.play.core.assetpacks.h4
     public final int a() {
-        return this.f16059c;
+        return this.f16039c;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.play.core.assetpacks.h4
     public final long b() {
-        return this.f16058b;
+        return this.f16038b;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.play.core.assetpacks.h4
     public final String c() {
-        return this.f16057a;
+        return this.f16037a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.play.core.assetpacks.h4
     public final boolean d() {
-        return this.f16061e;
+        return this.f16041e;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.play.core.assetpacks.h4
     public final boolean e() {
-        return this.f16060d;
+        return this.f16040d;
     }
 
     public final boolean equals(Object obj) {
@@ -69,12 +69,12 @@ final class v0 extends h4 {
         }
         if (obj instanceof h4) {
             h4 h4Var = (h4) obj;
-            String str = this.f16057a;
+            String str = this.f16037a;
             if (str != null ? str.equals(h4Var.c()) : h4Var.c() == null) {
-                if (this.f16058b == h4Var.b() && this.f16059c == h4Var.a() && this.f16060d == h4Var.e() && this.f16061e == h4Var.d()) {
-                    byte[] bArr = this.f16062f;
+                if (this.f16038b == h4Var.b() && this.f16039c == h4Var.a() && this.f16040d == h4Var.e() && this.f16041e == h4Var.d()) {
+                    byte[] bArr = this.f16042f;
                     if (h4Var instanceof v0) {
-                        f10 = ((v0) h4Var).f16062f;
+                        f10 = ((v0) h4Var).f16042f;
                     } else {
                         f10 = h4Var.f();
                     }
@@ -90,35 +90,35 @@ final class v0 extends h4 {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.play.core.assetpacks.h4
     public final byte[] f() {
-        return this.f16062f;
+        return this.f16042f;
     }
 
     public final int hashCode() {
         int hashCode;
         int i10;
-        String str = this.f16057a;
+        String str = this.f16037a;
         if (str == null) {
             hashCode = 0;
         } else {
             hashCode = str.hashCode();
         }
-        long j10 = this.f16058b;
-        int i11 = this.f16059c;
+        long j10 = this.f16038b;
+        int i11 = this.f16039c;
         int i12 = 1231;
-        if (true != this.f16060d) {
+        if (true != this.f16040d) {
             i10 = 1237;
         } else {
             i10 = 1231;
         }
         int i13 = ((((hashCode ^ 1000003) * 1000003) ^ ((int) (j10 ^ (j10 >>> 32)))) * 1000003) ^ i11;
-        if (true != this.f16061e) {
+        if (true != this.f16041e) {
             i12 = 1237;
         }
-        return (((((i13 * 1000003) ^ i10) * 1000003) ^ i12) * 1000003) ^ Arrays.hashCode(this.f16062f);
+        return (((((i13 * 1000003) ^ i10) * 1000003) ^ i12) * 1000003) ^ Arrays.hashCode(this.f16042f);
     }
 
     public final String toString() {
-        String arrays = Arrays.toString(this.f16062f);
-        return "ZipEntry{name=" + this.f16057a + ", size=" + this.f16058b + ", compressionMethod=" + this.f16059c + ", isPartial=" + this.f16060d + ", isEndOfArchive=" + this.f16061e + ", headerBytes=" + arrays + "}";
+        String arrays = Arrays.toString(this.f16042f);
+        return "ZipEntry{name=" + this.f16037a + ", size=" + this.f16038b + ", compressionMethod=" + this.f16039c + ", isPartial=" + this.f16040d + ", isEndOfArchive=" + this.f16041e + ", headerBytes=" + arrays + "}";
     }
 }

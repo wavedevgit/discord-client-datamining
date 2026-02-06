@@ -5,5 +5,5 @@ import android.os.IInterface;
 public interface f extends IInterface {
     String a();
 
-    boolean p(boolean z10);
+    boolean o(boolean z10);
 }

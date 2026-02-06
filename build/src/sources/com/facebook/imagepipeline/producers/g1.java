@@ -8,13 +8,13 @@ import kotlin.jvm.internal.Intrinsics;
 public final class g1 implements w0 {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f10758c = new a(null);
+    public static final a f10657c = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final w0 f10759a;
+    private final w0 f10658a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h1 f10760b;
+    private final h1 f10659b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
@@ -47,20 +47,20 @@ public final class g1 implements w0 {
     public static final class b extends f {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ e1 f10761a;
+        final /* synthetic */ e1 f10660a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ g1 f10762b;
+        final /* synthetic */ g1 f10661b;
 
         b(e1 e1Var, g1 g1Var) {
-            this.f10761a = e1Var;
-            this.f10762b = g1Var;
+            this.f10660a = e1Var;
+            this.f10661b = g1Var;
         }
 
         @Override // com.facebook.imagepipeline.producers.x0
         public void b() {
-            this.f10761a.a();
-            this.f10762b.d().a(this.f10761a);
+            this.f10660a.a();
+            this.f10661b.d().a(this.f10660a);
         }
     }
 
@@ -68,24 +68,24 @@ public final class g1 implements w0 {
     public static final class c extends e1 {
 
         /* renamed from: q  reason: collision with root package name */
-        final /* synthetic */ Consumer f10763q;
+        final /* synthetic */ Consumer f10662q;
 
         /* renamed from: r  reason: collision with root package name */
-        final /* synthetic */ y0 f10764r;
+        final /* synthetic */ y0 f10663r;
 
         /* renamed from: s  reason: collision with root package name */
-        final /* synthetic */ ProducerContext f10765s;
+        final /* synthetic */ ProducerContext f10664s;
 
         /* renamed from: t  reason: collision with root package name */
-        final /* synthetic */ g1 f10766t;
+        final /* synthetic */ g1 f10665t;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         c(Consumer consumer, y0 y0Var, ProducerContext producerContext, g1 g1Var) {
             super(consumer, y0Var, producerContext, "BackgroundThreadHandoffProducer");
-            this.f10763q = consumer;
-            this.f10764r = y0Var;
-            this.f10765s = producerContext;
-            this.f10766t = g1Var;
+            this.f10662q = consumer;
+            this.f10663r = y0Var;
+            this.f10664s = producerContext;
+            this.f10665t = g1Var;
         }
 
         @Override // m8.h
@@ -100,16 +100,16 @@ public final class g1 implements w0 {
         /* JADX INFO: Access modifiers changed from: protected */
         @Override // com.facebook.imagepipeline.producers.e1, m8.h
         public void f(Object obj) {
-            this.f10764r.j(this.f10765s, "BackgroundThreadHandoffProducer", null);
-            this.f10766t.c().b(this.f10763q, this.f10765s);
+            this.f10663r.j(this.f10664s, "BackgroundThreadHandoffProducer", null);
+            this.f10665t.c().b(this.f10662q, this.f10664s);
         }
     }
 
     public g1(w0 inputProducer, h1 threadHandoffProducerQueue) {
         Intrinsics.checkNotNullParameter(inputProducer, "inputProducer");
         Intrinsics.checkNotNullParameter(threadHandoffProducerQueue, "threadHandoffProducerQueue");
-        this.f10759a = inputProducer;
-        this.f10760b = threadHandoffProducerQueue;
+        this.f10658a = inputProducer;
+        this.f10659b = threadHandoffProducerQueue;
     }
 
     @Override // com.facebook.imagepipeline.producers.w0
@@ -117,43 +117,43 @@ public final class g1 implements w0 {
         Intrinsics.checkNotNullParameter(consumer, "consumer");
         Intrinsics.checkNotNullParameter(context, "context");
         if (!ya.b.d()) {
-            y0 F = context.F();
-            a aVar = f10758c;
+            y0 y10 = context.y();
+            a aVar = f10657c;
             if (aVar.d(context)) {
-                F.d(context, "BackgroundThreadHandoffProducer");
-                F.j(context, "BackgroundThreadHandoffProducer", null);
-                this.f10759a.b(consumer, context);
+                y10.d(context, "BackgroundThreadHandoffProducer");
+                y10.j(context, "BackgroundThreadHandoffProducer", null);
+                this.f10658a.b(consumer, context);
                 return;
             }
-            c cVar = new c(consumer, F, context, this);
-            context.h(new b(cVar, this));
-            this.f10760b.b(ta.a.a(cVar, aVar.c(context)));
+            c cVar = new c(consumer, y10, context, this);
+            context.g(new b(cVar, this));
+            this.f10659b.b(ta.a.a(cVar, aVar.c(context)));
             return;
         }
         ya.b.a("ThreadHandoffProducer#produceResults");
         try {
-            y0 F2 = context.F();
-            a aVar2 = f10758c;
+            y0 y11 = context.y();
+            a aVar2 = f10657c;
             if (aVar2.d(context)) {
-                F2.d(context, "BackgroundThreadHandoffProducer");
-                F2.j(context, "BackgroundThreadHandoffProducer", null);
-                this.f10759a.b(consumer, context);
+                y11.d(context, "BackgroundThreadHandoffProducer");
+                y11.j(context, "BackgroundThreadHandoffProducer", null);
+                this.f10658a.b(consumer, context);
                 return;
             }
-            c cVar2 = new c(consumer, F2, context, this);
-            context.h(new b(cVar2, this));
-            this.f10760b.b(ta.a.a(cVar2, aVar2.c(context)));
-            Unit unit = Unit.f31988a;
+            c cVar2 = new c(consumer, y11, context, this);
+            context.g(new b(cVar2, this));
+            this.f10659b.b(ta.a.a(cVar2, aVar2.c(context)));
+            Unit unit = Unit.f32008a;
         } finally {
             ya.b.b();
         }
     }
 
     public final w0 c() {
-        return this.f10759a;
+        return this.f10658a;
     }
 
     public final h1 d() {
-        return this.f10760b;
+        return this.f10659b;
     }
 }

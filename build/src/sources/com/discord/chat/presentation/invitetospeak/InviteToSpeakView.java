@@ -43,7 +43,7 @@ public final class InviteToSpeakView extends LinearLayout {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void setProps$lambda$1(Function1 function1, Message message, View view) {
-        function1.invoke(MessageId.m1085boximpl(message.m239getId3Eiw7ao()));
+        function1.invoke(MessageId.m1083boximpl(message.m237getId3Eiw7ao()));
     }
 
     public final void setProps(@NotNull final Message message, @NotNull final Function1<? super MessageId, Unit> onInviteToSpeakClicked) {

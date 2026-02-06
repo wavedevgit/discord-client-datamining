@@ -1,7 +1,7 @@
 package com.google.android.gms.auth.api.signin;
 
 import android.content.Context;
-import com.google.android.gms.common.j;
+import com.google.android.gms.common.k;
 import com.google.android.gms.dynamite.DynamiteModule;
 import com.google.android.gms.tasks.Task;
 import ef.d;
@@ -11,33 +11,33 @@ import ze.o;
 public class b extends ef.d {
 
     /* renamed from: k  reason: collision with root package name */
-    private static final f f13731k = new f(null);
+    private static final f f13692k = new f(null);
 
     /* renamed from: l  reason: collision with root package name */
-    static int f13732l = 1;
+    static int f13693l = 1;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(Context context, GoogleSignInOptions googleSignInOptions) {
-        super(context, ue.a.f51369b, googleSignInOptions, new d.a.C0296a().c(new ff.a()).a());
+        super(context, ue.a.f51410b, googleSignInOptions, new d.a.C0288a().c(new ff.a()).a());
     }
 
     private final synchronized int E() {
         int i10;
         try {
-            i10 = f13732l;
+            i10 = f13693l;
             if (i10 == 1) {
                 Context u10 = u();
-                com.google.android.gms.common.f m10 = com.google.android.gms.common.f.m();
-                int h10 = m10.h(u10, j.f13813a);
+                com.google.android.gms.common.f n10 = com.google.android.gms.common.f.n();
+                int h10 = n10.h(u10, k.f13780a);
                 if (h10 == 0) {
                     i10 = 4;
-                    f13732l = 4;
-                } else if (m10.b(u10, h10, null) == null && DynamiteModule.a(u10, "com.google.android.gms.auth.api.fallback") != 0) {
+                    f13693l = 4;
+                } else if (n10.b(u10, h10, null) == null && DynamiteModule.a(u10, "com.google.android.gms.auth.api.fallback") != 0) {
                     i10 = 3;
-                    f13732l = 3;
+                    f13693l = 3;
                 } else {
                     i10 = 2;
-                    f13732l = 2;
+                    f13693l = 2;
                 }
             }
         } catch (Throwable th2) {

@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Sheet/native/PromoSheet.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun46458: for (var _fun46458_ip = 0;;) switch (_fun46458_ip) {
+        _fun46461: for (var _fun46461_ip = 0;;) switch (_fun46461_ip) {
             case 0:
                 var2 = arg0;
                 var20 = var2.title;
@@ -112,10 +112,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var13 != var15;
                 var10 = null;
                 if (!var7) {
-                    _fun46458_ip = 205;
-                    continue _fun46458
+                    _fun46461_ip = 209;
+                    continue _fun46461
                 }
-            case 175:
+            case 179:
                 var12 = _closure1_slot3;
                 var11 = _closure1_slot2;
                 var7 = {};
@@ -123,7 +123,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7.style = var16;
                 var7.children = var15;
                 var10 = var12.bind(var3)(var11, var7);
-            case 205:
+            case 209:
                 var7 = new Array(3);
                 var7[0] = var10;
                 var11 = _closure1_slot4;
@@ -151,10 +151,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var13 != var17;
                 var13 = null;
                 if (!var15) {
-                    _fun46458_ip = 368;
-                    continue _fun46458
+                    _fun46461_ip = 372;
+                    continue _fun46461
                 }
-            case 313:
+            case 317:
                 var16 = _closure1_slot3;
                 var15 = _closure1_slot0;
                 var14 = _closure1_slot1;
@@ -168,7 +168,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14.style = var18;
                 var14.children = var17;
                 var13 = var16.bind(var3)(var15, var14);
-            case 368:
+            case 372:
                 var12[1] = var13;
                 var9.children = var12;
                 var9 = var11.bind(var3)(var10, var9);
@@ -184,4 +184,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.PromoSheet = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 4933, 4080, 3941, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 4934, 4081, 3943, 2]);

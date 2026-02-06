@@ -1,34 +1,58 @@
 package pg;
-
-import xi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class wa implements xi.d {
+public final class wa {
 
     /* renamed from: a  reason: collision with root package name */
-    static final wa f45868a = new wa();
+    private final v9 f44882a;
 
-    static {
-        c.b a10 = xi.c.a("errorCode");
-        v1 v1Var = new v1();
-        v1Var.a(1);
-        a10.b(v1Var.b()).a();
-        c.b a11 = xi.c.a("durationMs");
-        v1 v1Var2 = new v1();
-        v1Var2.a(2);
-        a11.b(v1Var2.b()).a();
-        c.b a12 = xi.c.a("subjectSegmenterOptions");
-        v1 v1Var3 = new v1();
-        v1Var3.a(3);
-        a12.b(v1Var3.b()).a();
+    /* renamed from: b  reason: collision with root package name */
+    private final r9 f44883b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private final n9 f44884c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private final Integer f44885d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private final Integer f44886e;
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public /* synthetic */ wa(ua uaVar, va vaVar) {
+        v9 v9Var;
+        r9 r9Var;
+        n9 n9Var;
+        Integer num;
+        Integer num2;
+        v9Var = uaVar.f44785a;
+        this.f44882a = v9Var;
+        r9Var = uaVar.f44786b;
+        this.f44883b = r9Var;
+        n9Var = uaVar.f44787c;
+        this.f44884c = n9Var;
+        num = uaVar.f44788d;
+        this.f44885d = num;
+        num2 = uaVar.f44789e;
+        this.f44886e = num2;
     }
 
-    private wa() {
+    public final n9 a() {
+        return this.f44884c;
     }
 
-    @Override // xi.d
-    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
-        android.support.v4.media.session.b.a(obj);
-        xi.e eVar = (xi.e) obj2;
-        throw null;
+    public final r9 b() {
+        return this.f44883b;
+    }
+
+    public final v9 c() {
+        return this.f44882a;
+    }
+
+    public final Integer d() {
+        return this.f44885d;
+    }
+
+    public final Integer e() {
+        return this.f44886e;
     }
 }

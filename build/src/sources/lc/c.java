@@ -5,26 +5,26 @@ import android.os.Bundle;
 import android.os.IBinder;
 import android.os.Parcel;
 import android.os.RemoteException;
-import mi.s;
+import ni.s;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public abstract class c extends Binder {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final int f36578c;
+    private static final int f35971c;
 
     static {
         int i10;
-        if (ne.w0.f39657a >= 30) {
+        if (ne.w0.f39012a >= 30) {
             i10 = IBinder.getSuggestedMaxIpcSizeBytes();
         } else {
             i10 = 65536;
         }
-        f36578c = i10;
+        f35971c = i10;
     }
 
-    public static mi.s a(IBinder iBinder) {
+    public static ni.s a(IBinder iBinder) {
         int readInt;
-        s.a j10 = mi.s.j();
+        s.a j10 = ni.s.j();
         int i10 = 0;
         int i11 = 1;
         while (i11 != 0) {

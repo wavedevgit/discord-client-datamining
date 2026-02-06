@@ -5,42 +5,42 @@ import java.text.ParsePosition;
 import java.util.Locale;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class p extends a implements c0, qt.l, st.e {
+public final class p extends a implements c0, st.l, ut.e {
     private static final long serialVersionUID = 2055272540517425102L;
 
     /* renamed from: o  reason: collision with root package name */
-    private final transient Class f40155o;
+    private final transient Class f39510o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final transient Enum f40156p;
+    private final transient Enum f39511p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final transient Enum f40157q;
+    private final transient Enum f39512q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final transient int f40158r;
+    private final transient int f39513r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final transient char f40159s;
+    private final transient char f39514s;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public p(String str, Class cls, Enum r32, Enum r42, int i10, char c10) {
         super(str);
-        this.f40155o = cls;
-        this.f40156p = r32;
-        this.f40157q = r42;
-        this.f40158r = i10;
-        this.f40159s = c10;
+        this.f39510o = cls;
+        this.f39511p = r32;
+        this.f39512q = r42;
+        this.f39513r = i10;
+        this.f39514s = c10;
     }
 
-    private qt.s G(Locale locale, qt.v vVar, qt.m mVar) {
-        switch (this.f40158r) {
+    private st.s G(Locale locale, st.v vVar, st.m mVar) {
+        switch (this.f39513r) {
             case 101:
-                return qt.b.d(locale).l(vVar, mVar);
+                return st.b.d(locale).l(vVar, mVar);
             case 102:
-                return qt.b.d(locale).p(vVar, mVar);
+                return st.b.d(locale).p(vVar, mVar);
             case 103:
-                return qt.b.d(locale).k(vVar, mVar);
+                return st.b.d(locale).k(vVar, mVar);
             default:
                 throw new UnsupportedOperationException(name());
         }
@@ -54,98 +54,93 @@ public final class p extends a implements c0, qt.l, st.e {
         throw new InvalidObjectException(name());
     }
 
-    @Override // pt.p
-    public boolean B() {
+    @Override // rt.p
+    public boolean A() {
+        return true;
+    }
+
+    @Override // rt.p
+    public boolean D() {
         return false;
     }
 
-    @Override // pt.e
+    @Override // rt.e
     protected boolean E() {
         return true;
     }
 
-    @Override // pt.p
+    @Override // rt.p
     /* renamed from: H */
     public Enum e() {
-        return this.f40157q;
+        return this.f39512q;
     }
 
-    @Override // pt.p
+    @Override // rt.p
     /* renamed from: I */
-    public Enum A() {
-        return this.f40156p;
+    public Enum B() {
+        return this.f39511p;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int J() {
-        return this.f40158r;
+        return this.f39513r;
     }
 
     public int K(Enum r12) {
         return r12.ordinal() + 1;
     }
 
-    @Override // st.e
+    @Override // ut.e
     /* renamed from: L */
-    public Enum i(CharSequence charSequence, ParsePosition parsePosition, Locale locale, qt.v vVar, qt.m mVar, qt.g gVar) {
+    public Enum q(CharSequence charSequence, ParsePosition parsePosition, Locale locale, st.v vVar, st.m mVar, st.g gVar) {
         int index = parsePosition.getIndex();
         Enum d10 = G(locale, vVar, mVar).d(charSequence, parsePosition, getType(), gVar);
         if (d10 == null && !gVar.e()) {
             parsePosition.setErrorIndex(-1);
             parsePosition.setIndex(index);
-            qt.m mVar2 = qt.m.FORMAT;
+            st.m mVar2 = st.m.FORMAT;
             if (mVar == mVar2) {
-                mVar2 = qt.m.STANDALONE;
+                mVar2 = st.m.STANDALONE;
             }
             return G(locale, vVar, mVar2).d(charSequence, parsePosition, getType(), gVar);
         }
         return d10;
     }
 
-    @Override // qt.t
+    @Override // st.t
     /* renamed from: M */
-    public Enum t(CharSequence charSequence, ParsePosition parsePosition, pt.d dVar) {
+    public Enum r(CharSequence charSequence, ParsePosition parsePosition, rt.d dVar) {
         int index = parsePosition.getIndex();
-        Locale locale = (Locale) dVar.a(qt.a.f48088c, Locale.ROOT);
-        qt.v vVar = (qt.v) dVar.a(qt.a.f48092g, qt.v.WIDE);
-        pt.c cVar = qt.a.f48093h;
-        qt.m mVar = qt.m.FORMAT;
-        qt.m mVar2 = (qt.m) dVar.a(cVar, mVar);
+        Locale locale = (Locale) dVar.b(st.a.f50112c, Locale.ROOT);
+        st.v vVar = (st.v) dVar.b(st.a.f50116g, st.v.WIDE);
+        rt.c cVar = st.a.f50117h;
+        st.m mVar = st.m.FORMAT;
+        st.m mVar2 = (st.m) dVar.b(cVar, mVar);
         Enum c10 = G(locale, vVar, mVar2).c(charSequence, parsePosition, getType(), dVar);
-        if (c10 == null && ((Boolean) dVar.a(qt.a.f48096k, Boolean.TRUE)).booleanValue()) {
+        if (c10 == null && ((Boolean) dVar.b(st.a.f50120k, Boolean.TRUE)).booleanValue()) {
             parsePosition.setErrorIndex(-1);
             parsePosition.setIndex(index);
             if (mVar2 == mVar) {
-                mVar = qt.m.STANDALONE;
+                mVar = st.m.STANDALONE;
             }
             return G(locale, vVar, mVar).c(charSequence, parsePosition, getType(), dVar);
         }
         return c10;
     }
 
-    @Override // qt.l
+    @Override // st.l
     /* renamed from: N */
-    public int g(Enum r12, pt.o oVar, pt.d dVar) {
+    public int j(Enum r12, rt.o oVar, rt.d dVar) {
         return r12.ordinal() + 1;
     }
 
-    @Override // pt.e, pt.p
+    @Override // rt.e, rt.p
     public char d() {
-        return this.f40159s;
+        return this.f39514s;
     }
 
-    @Override // st.e
-    public void f(pt.o oVar, Appendable appendable, Locale locale, qt.v vVar, qt.m mVar) {
-        appendable.append(G(locale, vVar, mVar).f((Enum) oVar.v(this)));
-    }
-
-    @Override // pt.p
-    public Class getType() {
-        return this.f40155o;
-    }
-
-    @Override // qt.l
-    public boolean q(pt.q qVar, int i10) {
+    @Override // st.l
+    public boolean f(rt.q qVar, int i10) {
         Enum[] enumArr;
         for (Enum r42 : (Enum[]) getType().getEnumConstants()) {
             if (K(r42) == i10) {
@@ -156,13 +151,18 @@ public final class p extends a implements c0, qt.l, st.e {
         return false;
     }
 
-    @Override // qt.t
-    public void s(pt.o oVar, Appendable appendable, pt.d dVar) {
-        appendable.append(G((Locale) dVar.a(qt.a.f48088c, Locale.ROOT), (qt.v) dVar.a(qt.a.f48092g, qt.v.WIDE), (qt.m) dVar.a(qt.a.f48093h, qt.m.FORMAT)).f((Enum) oVar.v(this)));
+    @Override // rt.p
+    public Class getType() {
+        return this.f39510o;
     }
 
-    @Override // pt.p
-    public boolean z() {
-        return true;
+    @Override // ut.e
+    public void h(rt.o oVar, Appendable appendable, Locale locale, st.v vVar, st.m mVar) {
+        appendable.append(G(locale, vVar, mVar).f((Enum) oVar.s(this)));
+    }
+
+    @Override // st.t
+    public void v(rt.o oVar, Appendable appendable, rt.d dVar) {
+        appendable.append(G((Locale) dVar.b(st.a.f50112c, Locale.ROOT), (st.v) dVar.b(st.a.f50116g, st.v.WIDE), (st.m) dVar.b(st.a.f50117h, st.m.FORMAT)).f((Enum) oVar.s(this)));
     }
 }

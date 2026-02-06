@@ -8,16 +8,16 @@ import kotlin.reflect.jvm.internal.impl.name.Name;
 public class e0 implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final LazyJavaScope f32961d;
+    private final LazyJavaScope f32981d;
 
     public e0(LazyJavaScope lazyJavaScope) {
-        this.f32961d = lazyJavaScope;
+        this.f32981d = lazyJavaScope;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         Collection A;
-        A = LazyJavaScope.A(this.f32961d, (Name) obj);
+        A = LazyJavaScope.A(this.f32981d, (Name) obj);
         return A;
     }
 }

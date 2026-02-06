@@ -8,28 +8,28 @@ import java.util.Map;
 final class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final fk.j f8444a;
+    private final hk.j f8343a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final a f8445b;
+    private final a f8344b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final c f8446c;
+    private final c f8345c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Map f8447d;
+    private final Map f8346d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Object f8448e = new Object();
+    private final Object f8347e = new Object();
 
     /* renamed from: f  reason: collision with root package name */
-    private volatile d f8449f;
+    private volatile d f8348f;
 
     /* renamed from: g  reason: collision with root package name */
-    private volatile e f8450g;
+    private volatile e f8349g;
 
     /* renamed from: h  reason: collision with root package name */
-    private volatile b f8451h;
+    private volatile b f8350h;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     private final class a extends Thread {
@@ -54,9 +54,9 @@ final class f {
                 com.budiyev.android.codescanner.f$b r1 = com.budiyev.android.codescanner.f.b.IDLE
                 com.budiyev.android.codescanner.f.a(r0, r1)
             Lc:
-                com.budiyev.android.codescanner.f r0 = com.budiyev.android.codescanner.f.this     // Catch: fk.n -> L5 java.lang.Throwable -> L50
-                java.lang.Object r0 = com.budiyev.android.codescanner.f.b(r0)     // Catch: fk.n -> L5 java.lang.Throwable -> L50
-                monitor-enter(r0)     // Catch: fk.n -> L5 java.lang.Throwable -> L50
+                com.budiyev.android.codescanner.f r0 = com.budiyev.android.codescanner.f.this     // Catch: hk.n -> L5 java.lang.Throwable -> L50
+                java.lang.Object r0 = com.budiyev.android.codescanner.f.b(r0)     // Catch: hk.n -> L5 java.lang.Throwable -> L50
+                monitor-enter(r0)     // Catch: hk.n -> L5 java.lang.Throwable -> L50
                 com.budiyev.android.codescanner.f r1 = com.budiyev.android.codescanner.f.this     // Catch: java.lang.Throwable -> L52
                 com.budiyev.android.codescanner.e r1 = com.budiyev.android.codescanner.f.c(r1)     // Catch: java.lang.Throwable -> L52
                 if (r1 == 0) goto L54
@@ -64,12 +64,12 @@ final class f {
                 r3 = 0
                 com.budiyev.android.codescanner.f.d(r2, r3)     // Catch: java.lang.Throwable -> L52
                 monitor-exit(r0)     // Catch: java.lang.Throwable -> L52
-                com.budiyev.android.codescanner.f r0 = com.budiyev.android.codescanner.f.this     // Catch: fk.n -> L5 java.lang.Throwable -> L50
-                com.budiyev.android.codescanner.f$b r2 = com.budiyev.android.codescanner.f.b.DECODING     // Catch: fk.n -> L5 java.lang.Throwable -> L50
-                com.budiyev.android.codescanner.f.a(r0, r2)     // Catch: fk.n -> L5 java.lang.Throwable -> L50
-                com.budiyev.android.codescanner.f r0 = com.budiyev.android.codescanner.f.this     // Catch: fk.n -> L5 java.lang.Throwable -> L50
-                fk.j r0 = com.budiyev.android.codescanner.f.e(r0)     // Catch: fk.n -> L5 java.lang.Throwable -> L50
-                com.google.zxing.Result r0 = r1.a(r0)     // Catch: fk.n -> L5 java.lang.Throwable -> L50
+                com.budiyev.android.codescanner.f r0 = com.budiyev.android.codescanner.f.this     // Catch: hk.n -> L5 java.lang.Throwable -> L50
+                com.budiyev.android.codescanner.f$b r2 = com.budiyev.android.codescanner.f.b.DECODING     // Catch: hk.n -> L5 java.lang.Throwable -> L50
+                com.budiyev.android.codescanner.f.a(r0, r2)     // Catch: hk.n -> L5 java.lang.Throwable -> L50
+                com.budiyev.android.codescanner.f r0 = com.budiyev.android.codescanner.f.this     // Catch: hk.n -> L5 java.lang.Throwable -> L50
+                hk.j r0 = com.budiyev.android.codescanner.f.e(r0)     // Catch: hk.n -> L5 java.lang.Throwable -> L50
+                com.google.zxing.Result r0 = r1.a(r0)     // Catch: hk.n -> L5 java.lang.Throwable -> L50
                 if (r0 == 0) goto L5
                 com.budiyev.android.codescanner.f r1 = com.budiyev.android.codescanner.f.this
                 com.budiyev.android.codescanner.f.d(r1, r3)
@@ -102,7 +102,7 @@ final class f {
                 return
             L68:
                 monitor-exit(r0)     // Catch: java.lang.Throwable -> L52
-                throw r1     // Catch: fk.n -> L5 java.lang.Throwable -> L50
+                throw r1     // Catch: hk.n -> L5 java.lang.Throwable -> L50
             L6a:
                 throw r0
             */
@@ -125,32 +125,32 @@ final class f {
     }
 
     public f(c cVar, Thread.UncaughtExceptionHandler uncaughtExceptionHandler, List list, d dVar) {
-        fk.j jVar = new fk.j();
-        this.f8444a = jVar;
+        hk.j jVar = new hk.j();
+        this.f8343a = jVar;
         a aVar = new a();
-        this.f8445b = aVar;
+        this.f8344b = aVar;
         aVar.setUncaughtExceptionHandler(uncaughtExceptionHandler);
-        EnumMap enumMap = new EnumMap(fk.e.class);
-        this.f8447d = enumMap;
-        enumMap.put((EnumMap) fk.e.POSSIBLE_FORMATS, (fk.e) list);
+        EnumMap enumMap = new EnumMap(hk.e.class);
+        this.f8346d = enumMap;
+        enumMap.put((EnumMap) hk.e.POSSIBLE_FORMATS, (hk.e) list);
         jVar.d(enumMap);
-        this.f8449f = dVar;
-        this.f8446c = cVar;
-        this.f8451h = b.INITIALIZED;
+        this.f8348f = dVar;
+        this.f8345c = cVar;
+        this.f8350h = b.INITIALIZED;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public boolean k(b bVar) {
-        this.f8451h = bVar;
-        return this.f8446c.a(bVar);
+        this.f8350h = bVar;
+        return this.f8345c.a(bVar);
     }
 
     public void g(e eVar) {
-        synchronized (this.f8448e) {
+        synchronized (this.f8347e) {
             try {
-                if (this.f8451h != b.STOPPED) {
-                    this.f8450g = eVar;
-                    this.f8448e.notify();
+                if (this.f8350h != b.STOPPED) {
+                    this.f8349g = eVar;
+                    this.f8347e.notify();
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -159,26 +159,26 @@ final class f {
     }
 
     public b h() {
-        return this.f8451h;
+        return this.f8350h;
     }
 
     public void i(d dVar) {
-        this.f8449f = dVar;
+        this.f8348f = dVar;
     }
 
     public void j(List list) {
-        this.f8447d.put(fk.e.POSSIBLE_FORMATS, list);
-        this.f8444a.d(this.f8447d);
+        this.f8346d.put(hk.e.POSSIBLE_FORMATS, list);
+        this.f8343a.d(this.f8346d);
     }
 
     public void l() {
-        this.f8445b.interrupt();
-        this.f8450g = null;
+        this.f8344b.interrupt();
+        this.f8349g = null;
     }
 
     public void m() {
-        if (this.f8451h == b.INITIALIZED) {
-            this.f8445b.start();
+        if (this.f8350h == b.INITIALIZED) {
+            this.f8344b.start();
             return;
         }
         throw new IllegalStateException("Illegal decoder state");

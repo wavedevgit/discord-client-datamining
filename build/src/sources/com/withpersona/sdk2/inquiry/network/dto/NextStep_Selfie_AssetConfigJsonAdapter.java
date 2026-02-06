@@ -49,30 +49,30 @@ public final class NextStep_Selfie_AssetConfigJsonAdapter extends h {
     @NotNull
     public NextStep.Selfie.AssetConfig fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         NextStep.Selfie.AssetConfig.PromptPage promptPage = null;
         NextStep.Selfie.AssetConfig.RecordPage recordPage = null;
         int i10 = -1;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 promptPage = (NextStep.Selfie.AssetConfig.PromptPage) this.nullablePromptPageAdapter.fromJson(reader);
                 i10 &= -2;
-            } else if (W == 1) {
+            } else if (J == 1) {
                 recordPage = (NextStep.Selfie.AssetConfig.RecordPage) this.nullableRecordPageAdapter.fromJson(reader);
                 i10 &= -3;
             }
         }
-        reader.z();
+        reader.D();
         if (i10 == -4) {
             return new NextStep.Selfie.AssetConfig(promptPage, recordPage);
         }
         Constructor<NextStep.Selfie.AssetConfig> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = NextStep.Selfie.AssetConfig.class.getDeclaredConstructor(NextStep.Selfie.AssetConfig.PromptPage.class, NextStep.Selfie.AssetConfig.RecordPage.class, Integer.TYPE, ym.c.f54853c);
+            constructor = NextStep.Selfie.AssetConfig.class.getDeclaredConstructor(NextStep.Selfie.AssetConfig.PromptPage.class, NextStep.Selfie.AssetConfig.RecordPage.class, Integer.TYPE, an.c.f1164c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -86,11 +86,11 @@ public final class NextStep_Selfie_AssetConfigJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (assetConfig != null) {
             writer.k();
-            writer.W("promptPage");
+            writer.J("promptPage");
             this.nullablePromptPageAdapter.toJson(writer, assetConfig.getPromptPage());
-            writer.W("recordPage");
+            writer.J("recordPage");
             this.nullableRecordPageAdapter.toJson(writer, assetConfig.getRecordPage());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

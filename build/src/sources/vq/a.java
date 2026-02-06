@@ -1,72 +1,40 @@
 package vq;
-
-import android.os.Parcel;
-import android.os.Parcelable;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class a implements Parcelable {
-    public static final Parcelable.Creator<a> CREATOR = new C0686a();
+public abstract class a {
+
+    /* renamed from: a  reason: collision with root package name */
+    public static int f52850a = 2131101193;
+
+    /* renamed from: b  reason: collision with root package name */
+    public static int f52851b = 2131101196;
+
+    /* renamed from: c  reason: collision with root package name */
+    public static int f52852c = 2131101197;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f52339d;
+    public static int f52853d = 2131101198;
 
     /* renamed from: e  reason: collision with root package name */
-    private final float f52340e;
+    public static int f52854e = 2131101199;
+
+    /* renamed from: f  reason: collision with root package name */
+    public static int f52855f = 2131101200;
+
+    /* renamed from: g  reason: collision with root package name */
+    public static int f52856g = 2131101205;
+
+    /* renamed from: h  reason: collision with root package name */
+    public static int f52857h = 2131101206;
 
     /* renamed from: i  reason: collision with root package name */
-    private final float f52341i;
+    public static int f52858i = 2131101207;
 
-    /* renamed from: vq.a$a  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    class C0686a implements Parcelable.Creator {
-        C0686a() {
-        }
+    /* renamed from: j  reason: collision with root package name */
+    public static int f52859j = 2131101209;
 
-        @Override // android.os.Parcelable.Creator
-        /* renamed from: a */
-        public a createFromParcel(Parcel parcel) {
-            return new a(parcel);
-        }
+    /* renamed from: k  reason: collision with root package name */
+    public static int f52860k = 2131101210;
 
-        @Override // android.os.Parcelable.Creator
-        /* renamed from: b */
-        public a[] newArray(int i10) {
-            return new a[i10];
-        }
-    }
-
-    public a(String str, float f10, float f11) {
-        this.f52339d = str;
-        this.f52340e = f10;
-        this.f52341i = f11;
-    }
-
-    public String a() {
-        return this.f52339d;
-    }
-
-    public float b() {
-        return this.f52340e;
-    }
-
-    public float c() {
-        return this.f52341i;
-    }
-
-    @Override // android.os.Parcelable
-    public int describeContents() {
-        return 0;
-    }
-
-    @Override // android.os.Parcelable
-    public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeString(this.f52339d);
-        parcel.writeFloat(this.f52340e);
-        parcel.writeFloat(this.f52341i);
-    }
-
-    protected a(Parcel parcel) {
-        this.f52339d = parcel.readString();
-        this.f52340e = parcel.readFloat();
-        this.f52341i = parcel.readFloat();
-    }
+    /* renamed from: l  reason: collision with root package name */
+    public static int f52861l = 2131101213;
 }

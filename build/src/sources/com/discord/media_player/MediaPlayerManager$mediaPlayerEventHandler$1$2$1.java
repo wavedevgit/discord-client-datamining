@@ -27,17 +27,17 @@ final class MediaPlayerManager$mediaPlayerEventHandler$1$2$1 extends k implement
 
     @Override // kotlin.coroutines.jvm.internal.a
     public final Object invokeSuspend(Object obj) {
-        ur.b.f();
+        wr.b.f();
         if (this.label == 0) {
             kotlin.c.b(obj);
             this.$prevMediaPlayer.pause();
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaPlayerManager$mediaPlayerEventHandler$1$2$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+        return ((MediaPlayerManager$mediaPlayerEventHandler$1$2$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
     }
 }

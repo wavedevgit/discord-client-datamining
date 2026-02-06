@@ -41,24 +41,24 @@ public final class StepStyles_SelfieStepStrokeColorJsonAdapter extends h {
     @NotNull
     public StepStyles.SelfieStepStrokeColor fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         StyleElements.SimpleElementColor simpleElementColor = null;
         StyleElements.SimpleElementColor simpleElementColor2 = null;
         StyleElements.SimpleElementColor simpleElementColor3 = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 simpleElementColor = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
-            } else if (W == 1) {
+            } else if (J == 1) {
                 simpleElementColor2 = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
-            } else if (W == 2) {
+            } else if (J == 2) {
                 simpleElementColor3 = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
             }
         }
-        reader.z();
+        reader.D();
         return new StepStyles.SelfieStepStrokeColor(simpleElementColor, simpleElementColor2, simpleElementColor3);
     }
 
@@ -67,13 +67,13 @@ public final class StepStyles_SelfieStepStrokeColorJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (selfieStepStrokeColor != null) {
             writer.k();
-            writer.W("base");
+            writer.J("base");
             this.nullableSimpleElementColorAdapter.toJson(writer, selfieStepStrokeColor.getBase());
-            writer.W("selfieCaptureIconStrokeColor");
+            writer.J("selfieCaptureIconStrokeColor");
             this.nullableSimpleElementColorAdapter.toJson(writer, selfieStepStrokeColor.getSelfieCaptureIconStrokeColor());
-            writer.W("captureOverlayHeaderButton");
+            writer.J("captureOverlayHeaderButton");
             this.nullableSimpleElementColorAdapter.toJson(writer, selfieStepStrokeColor.getCaptureOverlayHeaderButton());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

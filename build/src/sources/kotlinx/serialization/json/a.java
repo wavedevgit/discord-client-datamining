@@ -1,14 +1,14 @@
 package kotlinx.serialization.json;
 
-import ht.d;
-import jt.s0;
 import kotlin.jvm.internal.Intrinsics;
-import kt.c;
+import kt.d;
+import lt.s0;
+import mt.c;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class a extends Json {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public a(d configuration, kt.b module) {
+    public a(d configuration, mt.b module) {
         super(configuration, module, null);
         Intrinsics.checkNotNullParameter(configuration, "configuration");
         Intrinsics.checkNotNullParameter(module, "module");

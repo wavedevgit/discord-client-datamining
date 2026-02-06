@@ -1,32 +1,26 @@
 package ng;
+
+import yi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class f8 {
+final class f8 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private ma f40585a;
+    static final f8 f39803a = new f8();
 
-    /* renamed from: b  reason: collision with root package name */
-    private e8 f40586b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private z7 f40587c;
-
-    public final f8 c(e8 e8Var) {
-        this.f40586b = e8Var;
-        return this;
+    static {
+        c.b a10 = yi.c.a("api");
+        l2 l2Var = new l2();
+        l2Var.a(1);
+        a10.b(l2Var.b()).a();
     }
 
-    public final f8 d(z7 z7Var) {
-        this.f40587c = z7Var;
-        return this;
+    private f8() {
     }
 
-    public final f8 e(ma maVar) {
-        this.f40585a = maVar;
-        return this;
-    }
-
-    public final h8 f() {
-        return new h8(this, null);
+    @Override // yi.d
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        android.support.v4.media.session.b.a(obj);
+        yi.e eVar = (yi.e) obj2;
+        throw null;
     }
 }

@@ -7,19 +7,19 @@ import android.os.Parcel;
 public interface b extends IInterface {
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static abstract class a extends ig.b implements b {
+    public static abstract class a extends jg.b implements b {
 
         /* renamed from: rf.b$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-        public static class C0624a extends ig.a implements b {
-            C0624a(IBinder iBinder) {
+        public static class C0622a extends jg.a implements b {
+            C0622a(IBinder iBinder) {
                 super(iBinder, "com.google.android.gms.deviceperformance.internal.IDevicePerformanceService");
             }
 
             @Override // rf.b
-            public void N(rf.a aVar) {
+            public void Q(rf.a aVar) {
                 Parcel e10 = e();
-                int i10 = ig.c.f27380b;
+                int i10 = jg.c.f29878b;
                 if (aVar == null) {
                     e10.writeStrongBinder(null);
                 } else {
@@ -37,9 +37,9 @@ public interface b extends IInterface {
             if (queryLocalInterface instanceof b) {
                 return (b) queryLocalInterface;
             }
-            return new C0624a(iBinder);
+            return new C0622a(iBinder);
         }
     }
 
-    void N(rf.a aVar);
+    void Q(rf.a aVar);
 }

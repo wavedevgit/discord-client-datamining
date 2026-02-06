@@ -1,29 +1,18 @@
 package sp;
 
-import kotlinx.coroutines.CoroutineDispatcher;
-import zq.d;
-import zq.g;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b implements d {
+public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final a f50238a;
+    private final a f50000a;
 
-    public b(a aVar) {
-        this.f50238a = aVar;
+    public b(a dataCollector) {
+        Intrinsics.checkNotNullParameter(dataCollector, "dataCollector");
+        this.f50000a = dataCollector;
     }
 
-    public static b a(a aVar) {
-        return new b(aVar);
-    }
-
-    public static CoroutineDispatcher c(a aVar) {
-        return (CoroutineDispatcher) g.d(aVar.a());
-    }
-
-    @Override // javax.inject.Provider
-    /* renamed from: b */
-    public CoroutineDispatcher get() {
-        return c(this.f50238a);
+    public final a a() {
+        return this.f50000a;
     }
 }

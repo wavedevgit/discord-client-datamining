@@ -35,8 +35,8 @@ public abstract class n0 {
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void f(final Context context, c0 c0Var, final boolean z10) {
         if (com.google.android.gms.common.util.k.g() && !d(b(context), z10)) {
-            c0Var.j(z10).f(new g2.i(), new xg.g() { // from class: com.google.firebase.messaging.m0
-                @Override // xg.g
+            c0Var.j(z10).f(new g2.i(), new yg.g() { // from class: com.google.firebase.messaging.m0
+                @Override // yg.g
                 public final void onSuccess(Object obj) {
                     Void r32 = (Void) obj;
                     n0.g(context, z10);

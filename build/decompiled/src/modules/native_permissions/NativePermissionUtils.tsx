@@ -58,4 +58,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.NativePermissionsRequestOptions = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4015, 4016, 4018, 4022, 2, 4019]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4016, 4017, 4019, 4023, 2, 4020]);

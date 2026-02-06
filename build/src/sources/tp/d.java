@@ -1,25 +1,45 @@
 package tp;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ProgressBar;
+import androidx.viewbinding.ViewBinding;
+import rp.m;
+import rp.n;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class d implements zq.d {
+public final class d implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final zq.h f50895a;
+    private final View f50801a;
 
-    public d(zq.h hVar) {
-        this.f50895a = hVar;
+    /* renamed from: b  reason: collision with root package name */
+    public final ProgressBar f50802b;
+
+    private d(View view, ProgressBar progressBar) {
+        this.f50801a = view;
+        this.f50802b = progressBar;
     }
 
-    public static d a(zq.h hVar) {
-        return new d(hVar);
+    public static d a(View view) {
+        int i10 = m.f49097k;
+        ProgressBar progressBar = (ProgressBar) e4.a.a(view, i10);
+        if (progressBar != null) {
+            return new d(view, progressBar);
+        }
+        throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i10)));
     }
 
-    public static c c(e eVar) {
-        return new c(eVar);
+    public static d b(LayoutInflater layoutInflater, ViewGroup viewGroup) {
+        if (viewGroup != null) {
+            layoutInflater.inflate(n.f49103d, viewGroup);
+            return a(viewGroup);
+        }
+        throw new NullPointerException("parent");
     }
 
-    @Override // javax.inject.Provider
-    /* renamed from: b */
-    public c get() {
-        return c((e) this.f50895a.get());
+    @Override // androidx.viewbinding.ViewBinding
+    public View getRoot() {
+        return this.f50801a;
     }
 }

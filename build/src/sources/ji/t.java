@@ -1,56 +1,17 @@
 package ji;
 
+import java.io.File;
 import java.util.Set;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class t extends p implements Set {
-
-    /* renamed from: e  reason: collision with root package name */
-    private transient s f30943e;
-
-    public static t h() {
-        return v.f30949q;
+public final class t implements h {
+    @Override // ji.h
+    public final boolean a(ClassLoader classLoader, File file, File file2, boolean z10) {
+        return q.d(classLoader, file, file2, z10, "zip");
     }
 
-    @Override // java.util.Collection, java.util.Set
-    public final boolean equals(Object obj) {
-        if (obj == this) {
-            return true;
-        }
-        if (obj instanceof t) {
-            ((t) obj).i();
-            if (obj.hashCode() != 0) {
-                return false;
-            }
-        }
-        if (obj == this) {
-            return true;
-        }
-        if (obj instanceof Set) {
-            Set set = (Set) obj;
-            try {
-                if (size() == set.size()) {
-                    if (containsAll(set)) {
-                        return true;
-                    }
-                    return false;
-                }
-            } catch (ClassCastException | NullPointerException unused) {
-            }
-        }
-        return false;
+    @Override // ji.h
+    public final void b(ClassLoader classLoader, Set set) {
+        q.c(classLoader, set, new o());
     }
-
-    public final s f() {
-        s sVar = this.f30943e;
-        if (sVar == null) {
-            s g10 = g();
-            this.f30943e = g10;
-            return g10;
-        }
-        return sVar;
-    }
-
-    abstract s g();
-
-    abstract boolean i();
 }

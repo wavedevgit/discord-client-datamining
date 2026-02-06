@@ -13,16 +13,16 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class b0 implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private List f29305d;
+    private List f28449d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Map f29306e;
+    private Map f28450e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Boolean f29307i;
+    private Boolean f28451i;
 
     /* renamed from: o  reason: collision with root package name */
-    private Map f29308o;
+    private Map f28452o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -30,27 +30,27 @@ public final class b0 implements w1 {
         /* renamed from: b */
         public b0 a(e3 e3Var, ILogger iLogger) {
             b0 b0Var = new b0();
-            e3Var.s();
+            e3Var.u();
             ConcurrentHashMap concurrentHashMap = null;
             while (e3Var.peek() == io.sentry.vendor.gson.stream.b.NAME) {
-                String m02 = e3Var.m0();
-                m02.getClass();
+                String o02 = e3Var.o0();
+                o02.getClass();
                 char c10 = 65535;
-                switch (m02.hashCode()) {
+                switch (o02.hashCode()) {
                     case -1266514778:
-                        if (m02.equals("frames")) {
+                        if (o02.equals("frames")) {
                             c10 = 0;
                             break;
                         }
                         break;
                     case 78226992:
-                        if (m02.equals("registers")) {
+                        if (o02.equals("registers")) {
                             c10 = 1;
                             break;
                         }
                         break;
                     case 284874180:
-                        if (m02.equals("snapshot")) {
+                        if (o02.equals("snapshot")) {
                             c10 = 2;
                             break;
                         }
@@ -58,24 +58,24 @@ public final class b0 implements w1 {
                 }
                 switch (c10) {
                     case 0:
-                        b0Var.f29305d = e3Var.g2(iLogger, new SentryStackFrame.a());
+                        b0Var.f28449d = e3Var.g2(iLogger, new SentryStackFrame.a());
                         break;
                     case 1:
-                        b0Var.f29306e = io.sentry.util.c.b((Map) e3Var.V1());
+                        b0Var.f28450e = io.sentry.util.c.b((Map) e3Var.U1());
                         break;
                     case 2:
-                        b0Var.f29307i = e3Var.w0();
+                        b0Var.f28451i = e3Var.y0();
                         break;
                     default:
                         if (concurrentHashMap == null) {
                             concurrentHashMap = new ConcurrentHashMap();
                         }
-                        e3Var.v1(iLogger, concurrentHashMap, m02);
+                        e3Var.u1(iLogger, concurrentHashMap, o02);
                         break;
                 }
             }
             b0Var.g(concurrentHashMap);
-            e3Var.z();
+            e3Var.D();
             return b0Var;
         }
     }
@@ -84,45 +84,45 @@ public final class b0 implements w1 {
     }
 
     public List d() {
-        return this.f29305d;
+        return this.f28449d;
     }
 
     public void e(List list) {
-        this.f29305d = list;
+        this.f28449d = list;
     }
 
     public void f(Boolean bool) {
-        this.f29307i = bool;
+        this.f28451i = bool;
     }
 
     public void g(Map map) {
-        this.f29308o = map;
+        this.f28452o = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
-        f3Var.s();
-        if (this.f29305d != null) {
-            f3Var.e("frames").j(iLogger, this.f29305d);
+        f3Var.u();
+        if (this.f28449d != null) {
+            f3Var.e("frames").j(iLogger, this.f28449d);
         }
-        if (this.f29306e != null) {
-            f3Var.e("registers").j(iLogger, this.f29306e);
+        if (this.f28450e != null) {
+            f3Var.e("registers").j(iLogger, this.f28450e);
         }
-        if (this.f29307i != null) {
-            f3Var.e("snapshot").k(this.f29307i);
+        if (this.f28451i != null) {
+            f3Var.e("snapshot").k(this.f28451i);
         }
-        Map map = this.f29308o;
+        Map map = this.f28452o;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f29308o.get(str);
+                Object obj = this.f28452o.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
         }
-        f3Var.z();
+        f3Var.D();
     }
 
     public b0(List list) {
-        this.f29305d = list;
+        this.f28449d = list;
     }
 }

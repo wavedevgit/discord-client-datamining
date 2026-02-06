@@ -22,7 +22,7 @@ public final class ActivityInstanceEmbedMessageAccessory extends MessageAccessor
     }
 
     /* renamed from: copy-AFFcxXc$default  reason: not valid java name */
-    public static /* synthetic */ ActivityInstanceEmbedMessageAccessory m535copyAFFcxXc$default(ActivityInstanceEmbedMessageAccessory activityInstanceEmbedMessageAccessory, String str, MessageMargins messageMargins, ActivityInstanceEmbed activityInstanceEmbed, int i10, int i11, Object obj) {
+    public static /* synthetic */ ActivityInstanceEmbedMessageAccessory m533copyAFFcxXc$default(ActivityInstanceEmbedMessageAccessory activityInstanceEmbedMessageAccessory, String str, MessageMargins messageMargins, ActivityInstanceEmbed activityInstanceEmbed, int i10, int i11, Object obj) {
         if ((i11 & 1) != 0) {
             str = activityInstanceEmbedMessageAccessory.messageId;
         }
@@ -35,12 +35,12 @@ public final class ActivityInstanceEmbedMessageAccessory extends MessageAccessor
         if ((i11 & 8) != 0) {
             i10 = activityInstanceEmbedMessageAccessory.constrainedWidth;
         }
-        return activityInstanceEmbedMessageAccessory.m537copyAFFcxXc(str, messageMargins, activityInstanceEmbed, i10);
+        return activityInstanceEmbedMessageAccessory.m535copyAFFcxXc(str, messageMargins, activityInstanceEmbed, i10);
     }
 
     @NotNull
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m536component13Eiw7ao() {
+    public final String m534component13Eiw7ao() {
         return this.messageId;
     }
 
@@ -60,7 +60,7 @@ public final class ActivityInstanceEmbedMessageAccessory extends MessageAccessor
 
     @NotNull
     /* renamed from: copy-AFFcxXc  reason: not valid java name */
-    public final ActivityInstanceEmbedMessageAccessory m537copyAFFcxXc(@NotNull String messageId, @NotNull MessageMargins margins, @NotNull ActivityInstanceEmbed activityInstanceEmbed, int i10) {
+    public final ActivityInstanceEmbedMessageAccessory m535copyAFFcxXc(@NotNull String messageId, @NotNull MessageMargins margins, @NotNull ActivityInstanceEmbed activityInstanceEmbed, int i10) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(margins, "margins");
         Intrinsics.checkNotNullParameter(activityInstanceEmbed, "activityInstanceEmbed");
@@ -73,7 +73,7 @@ public final class ActivityInstanceEmbedMessageAccessory extends MessageAccessor
         }
         if (obj instanceof ActivityInstanceEmbedMessageAccessory) {
             ActivityInstanceEmbedMessageAccessory activityInstanceEmbedMessageAccessory = (ActivityInstanceEmbedMessageAccessory) obj;
-            return MessageId.m1089equalsimpl0(this.messageId, activityInstanceEmbedMessageAccessory.messageId) && Intrinsics.areEqual(this.margins, activityInstanceEmbedMessageAccessory.margins) && Intrinsics.areEqual(this.activityInstanceEmbed, activityInstanceEmbedMessageAccessory.activityInstanceEmbed) && this.constrainedWidth == activityInstanceEmbedMessageAccessory.constrainedWidth;
+            return MessageId.m1087equalsimpl0(this.messageId, activityInstanceEmbedMessageAccessory.messageId) && Intrinsics.areEqual(this.margins, activityInstanceEmbedMessageAccessory.margins) && Intrinsics.areEqual(this.activityInstanceEmbed, activityInstanceEmbedMessageAccessory.activityInstanceEmbed) && this.constrainedWidth == activityInstanceEmbedMessageAccessory.constrainedWidth;
         }
         return false;
     }
@@ -95,21 +95,21 @@ public final class ActivityInstanceEmbedMessageAccessory extends MessageAccessor
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     @NotNull
     /* renamed from: getMessageId-3Eiw7ao  reason: not valid java name */
-    public String mo538getMessageId3Eiw7ao() {
+    public String mo536getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        return (((((MessageId.m1090hashCodeimpl(this.messageId) * 31) + this.margins.hashCode()) * 31) + this.activityInstanceEmbed.hashCode()) * 31) + Integer.hashCode(this.constrainedWidth);
+        return (((((MessageId.m1088hashCodeimpl(this.messageId) * 31) + this.margins.hashCode()) * 31) + this.activityInstanceEmbed.hashCode()) * 31) + Integer.hashCode(this.constrainedWidth);
     }
 
     @NotNull
     public String toString() {
-        String m1092toStringimpl = MessageId.m1092toStringimpl(this.messageId);
+        String m1090toStringimpl = MessageId.m1090toStringimpl(this.messageId);
         MessageMargins messageMargins = this.margins;
         ActivityInstanceEmbed activityInstanceEmbed = this.activityInstanceEmbed;
         int i10 = this.constrainedWidth;
-        return "ActivityInstanceEmbedMessageAccessory(messageId=" + m1092toStringimpl + ", margins=" + messageMargins + ", activityInstanceEmbed=" + activityInstanceEmbed + ", constrainedWidth=" + i10 + ")";
+        return "ActivityInstanceEmbedMessageAccessory(messageId=" + m1090toStringimpl + ", margins=" + messageMargins + ", activityInstanceEmbed=" + activityInstanceEmbed + ", constrainedWidth=" + i10 + ")";
     }
 
     /* JADX WARN: Illegal instructions before constructor call */

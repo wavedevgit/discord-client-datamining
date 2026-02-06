@@ -31,7 +31,7 @@ final class MediaEngineModule$setTransportOptions$1 extends kotlin.coroutines.jv
     @Override // kotlin.coroutines.jvm.internal.a
     public final Object invokeSuspend(Object obj) {
         Object awaitMediaEngine;
-        Object f10 = ur.b.f();
+        Object f10 = wr.b.f();
         int i10 = this.label;
         if (i10 != 0) {
             if (i10 == 1) {
@@ -49,11 +49,11 @@ final class MediaEngineModule$setTransportOptions$1 extends kotlin.coroutines.jv
             }
         }
         this.this$0.getMediaEngine().setTransportOptions$media_engine_release(NativeMapExtensionsKt.toJsonString(this.$options));
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaEngineModule$setTransportOptions$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+        return ((MediaEngineModule$setTransportOptions$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
     }
 }

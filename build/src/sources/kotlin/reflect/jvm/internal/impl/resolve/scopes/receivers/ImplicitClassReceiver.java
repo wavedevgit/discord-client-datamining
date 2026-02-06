@@ -8,24 +8,24 @@ import org.jetbrains.annotations.NotNull;
 public class ImplicitClassReceiver implements ImplicitReceiver, ThisClassReceiver {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ClassDescriptor f34233a;
+    private final ClassDescriptor f34253a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ImplicitClassReceiver f34234b;
+    private final ImplicitClassReceiver f34254b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ClassDescriptor f34235c;
+    private final ClassDescriptor f34255c;
 
     public ImplicitClassReceiver(@NotNull ClassDescriptor classDescriptor, ImplicitClassReceiver implicitClassReceiver) {
         Intrinsics.checkNotNullParameter(classDescriptor, "classDescriptor");
-        this.f34233a = classDescriptor;
-        this.f34234b = implicitClassReceiver == null ? this : implicitClassReceiver;
-        this.f34235c = classDescriptor;
+        this.f34253a = classDescriptor;
+        this.f34254b = implicitClassReceiver == null ? this : implicitClassReceiver;
+        this.f34255c = classDescriptor;
     }
 
     public boolean equals(Object obj) {
         ImplicitClassReceiver implicitClassReceiver;
-        ClassDescriptor classDescriptor = this.f34233a;
+        ClassDescriptor classDescriptor = this.f34253a;
         ClassDescriptor classDescriptor2 = null;
         if (obj instanceof ImplicitClassReceiver) {
             implicitClassReceiver = (ImplicitClassReceiver) obj;
@@ -33,7 +33,7 @@ public class ImplicitClassReceiver implements ImplicitReceiver, ThisClassReceive
             implicitClassReceiver = null;
         }
         if (implicitClassReceiver != null) {
-            classDescriptor2 = implicitClassReceiver.f34233a;
+            classDescriptor2 = implicitClassReceiver.f34253a;
         }
         return Intrinsics.areEqual(classDescriptor, classDescriptor2);
     }
@@ -41,11 +41,11 @@ public class ImplicitClassReceiver implements ImplicitReceiver, ThisClassReceive
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.receivers.ThisClassReceiver
     @NotNull
     public final ClassDescriptor getClassDescriptor() {
-        return this.f34233a;
+        return this.f34253a;
     }
 
     public int hashCode() {
-        return this.f34233a.hashCode();
+        return this.f34253a.hashCode();
     }
 
     @NotNull
@@ -56,7 +56,7 @@ public class ImplicitClassReceiver implements ImplicitReceiver, ThisClassReceive
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.receivers.ReceiverValue
     @NotNull
     public SimpleType getType() {
-        SimpleType defaultType = this.f34233a.getDefaultType();
+        SimpleType defaultType = this.f34253a.getDefaultType();
         Intrinsics.checkNotNullExpressionValue(defaultType, "getDefaultType(...)");
         return defaultType;
     }

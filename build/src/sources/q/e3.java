@@ -11,52 +11,52 @@ import com.facebook.react.uimanager.ViewProps;
 public class e3 {
 
     /* renamed from: e  reason: collision with root package name */
-    private static final Size f46780e = new Size(1920, 1080);
+    private static final Size f45828e = new Size(1920, 1080);
 
     /* renamed from: f  reason: collision with root package name */
-    private static final Size f46781f = new Size(320, 240);
+    private static final Size f45829f = new Size(320, 240);
 
     /* renamed from: g  reason: collision with root package name */
-    private static final Size f46782g = new Size(DiscordVideoMediaSource.DEFAULT_WIDTH, DiscordVideoMediaSource.DEFAULT_HEIGHT);
+    private static final Size f45830g = new Size(DiscordVideoMediaSource.DEFAULT_WIDTH, DiscordVideoMediaSource.DEFAULT_HEIGHT);
 
     /* renamed from: h  reason: collision with root package name */
-    private static final Object f46783h = new Object();
+    private static final Object f45831h = new Object();
 
     /* renamed from: i  reason: collision with root package name */
-    private static volatile e3 f46784i;
+    private static volatile e3 f45832i;
 
     /* renamed from: a  reason: collision with root package name */
-    private final DisplayManager f46785a;
+    private final DisplayManager f45833a;
 
     /* renamed from: b  reason: collision with root package name */
-    private volatile Size f46786b = null;
+    private volatile Size f45834b = null;
 
     /* renamed from: c  reason: collision with root package name */
-    private final u.l f46787c = new u.l();
+    private final u.l f45835c = new u.l();
 
     /* renamed from: d  reason: collision with root package name */
-    private final u.d f46788d = new u.d();
+    private final u.d f45836d = new u.d();
 
     private e3(Context context) {
-        this.f46785a = (DisplayManager) context.getSystemService(ViewProps.DISPLAY);
+        this.f45833a = (DisplayManager) context.getSystemService(ViewProps.DISPLAY);
     }
 
     private Size a() {
         Size b10 = b();
         int width = b10.getWidth() * b10.getHeight();
-        Size size = f46780e;
+        Size size = f45828e;
         if (width > size.getWidth() * size.getHeight()) {
             b10 = size;
         }
-        return this.f46787c.a(b10);
+        return this.f45835c.a(b10);
     }
 
     private Size b() {
         Point point = new Point();
         d(false).getRealSize(point);
         Size size = new Size(point.x, point.y);
-        if (i0.d.c(size, f46781f) && (size = this.f46788d.a()) == null) {
-            size = f46782g;
+        if (i0.d.c(size, f45829f) && (size = this.f45836d.a()) == null) {
+            size = f45830g;
         }
         if (size.getHeight() > size.getWidth()) {
             return new Size(size.getHeight(), size.getWidth());
@@ -65,17 +65,17 @@ public class e3 {
     }
 
     public static e3 c(Context context) {
-        if (f46784i == null) {
-            synchronized (f46783h) {
+        if (f45832i == null) {
+            synchronized (f45831h) {
                 try {
-                    if (f46784i == null) {
-                        f46784i = new e3(context);
+                    if (f45832i == null) {
+                        f45832i = new e3(context);
                     }
                 } finally {
                 }
             }
         }
-        return f46784i;
+        return f45832i;
     }
 
     private Display e(Display[] displayArr, boolean z10) {
@@ -97,7 +97,7 @@ public class e3 {
     }
 
     public Display d(boolean z10) {
-        Display[] displays = this.f46785a.getDisplays();
+        Display[] displays = this.f45833a.getDisplays();
         if (displays.length == 1) {
             return displays[0];
         }
@@ -113,15 +113,15 @@ public class e3 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Size f() {
-        if (this.f46786b != null) {
-            return this.f46786b;
+        if (this.f45834b != null) {
+            return this.f45834b;
         }
-        this.f46786b = a();
-        return this.f46786b;
+        this.f45834b = a();
+        return this.f45834b;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void g() {
-        this.f46786b = a();
+        this.f45834b = a();
     }
 }

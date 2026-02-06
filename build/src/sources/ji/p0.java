@@ -1,17 +1,16 @@
 package ji;
 
-import android.os.IBinder;
-import android.os.IInterface;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class p0 extends b0 implements q0 {
-    public static q0 f(IBinder iBinder) {
-        if (iBinder == null) {
-            return null;
-        }
-        IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.play.core.integrity.protocol.IIntegrityService");
-        if (queryLocalInterface instanceof q0) {
-            return (q0) queryLocalInterface;
-        }
-        return new o0(iBinder);
+final class p0 extends BroadcastReceiver {
+
+    /* renamed from: a  reason: collision with root package name */
+    final /* synthetic */ q0 f29913a;
+
+    @Override // android.content.BroadcastReceiver
+    public final void onReceive(Context context, Intent intent) {
+        this.f29913a.a(context, intent);
     }
 }

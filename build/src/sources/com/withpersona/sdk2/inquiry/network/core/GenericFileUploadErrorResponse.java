@@ -27,7 +27,7 @@ public final class GenericFileUploadErrorResponse {
 
         @NotNull
         public final h.e getAdapter() {
-            return xm.b.b(DocumentErrorResponse.class, "code").e(DocumentErrorResponse.DisabledFileTypeError.class, "document-generic-disabled-file-type-error").e(DocumentErrorResponse.FileLimitExceededError.class, "document-generic-file-limit-exceeded-error").e(DocumentErrorResponse.PageLimitExceededError.class, "document-generic-page-limit-exceeded-error").e(DocumentErrorResponse.MalformedFileError.class, "document-generic-malformed-file-error").e(DocumentErrorResponse.MalformedImageError.class, "document-generic-malformed-image-error").e(DocumentErrorResponse.MalformedPdfError.class, "document-generic-malformed-pdf-error").e(DocumentErrorResponse.GovernmentIdDimensionSizeError.class, "document-government-id-dimension-size-error").d(UnknownErrorAdapter.INSTANCE);
+            return zm.b.b(DocumentErrorResponse.class, "code").e(DocumentErrorResponse.DisabledFileTypeError.class, "document-generic-disabled-file-type-error").e(DocumentErrorResponse.FileLimitExceededError.class, "document-generic-file-limit-exceeded-error").e(DocumentErrorResponse.PageLimitExceededError.class, "document-generic-page-limit-exceeded-error").e(DocumentErrorResponse.MalformedFileError.class, "document-generic-malformed-file-error").e(DocumentErrorResponse.MalformedImageError.class, "document-generic-malformed-image-error").e(DocumentErrorResponse.MalformedPdfError.class, "document-generic-malformed-pdf-error").e(DocumentErrorResponse.GovernmentIdDimensionSizeError.class, "document-government-id-dimension-size-error").d(UnknownErrorAdapter.INSTANCE);
         }
 
         private Companion() {
@@ -860,20 +860,20 @@ public final class GenericFileUploadErrorResponse {
         @Override // com.squareup.moshi.h
         @NotNull
         public DocumentErrorResponse.UnknownError fromJson(@NotNull m mVar) {
-            mVar.s();
+            mVar.u();
             String str = null;
             String str2 = null;
             while (mVar.hasNext()) {
-                String m02 = mVar.m0();
-                if (Intrinsics.areEqual(m02, "title")) {
+                String o02 = mVar.o0();
+                if (Intrinsics.areEqual(o02, "title")) {
                     str = JsonReaderUtilsKt.nextStringOrNull(mVar);
-                } else if (Intrinsics.areEqual(m02, "code")) {
+                } else if (Intrinsics.areEqual(o02, "code")) {
                     str2 = JsonReaderUtilsKt.nextStringOrNull(mVar);
                 } else {
-                    mVar.P();
+                    mVar.S();
                 }
             }
-            mVar.z();
+            mVar.D();
             if (str == null) {
                 str = "Unknown Error";
             }
@@ -883,11 +883,11 @@ public final class GenericFileUploadErrorResponse {
         @Override // com.squareup.moshi.h
         public void toJson(@NotNull t tVar, DocumentErrorResponse.UnknownError unknownError) {
             tVar.k();
-            tVar.W("title");
-            tVar.x1(unknownError != null ? unknownError.getTitle() : null);
-            tVar.W("code");
-            tVar.x1(unknownError != null ? unknownError.getCode() : null);
-            tVar.E();
+            tVar.J("title");
+            tVar.w1(unknownError != null ? unknownError.getTitle() : null);
+            tVar.J("code");
+            tVar.w1(unknownError != null ? unknownError.getCode() : null);
+            tVar.s();
         }
     }
 

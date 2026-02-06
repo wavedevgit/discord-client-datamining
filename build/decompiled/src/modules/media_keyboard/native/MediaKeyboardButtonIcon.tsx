@@ -37,13 +37,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/media_keyboard/native/MediaKeyboardButtonIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun90345: for (var _fun90345_ip = 0;;) switch (_fun90345_ip) {
+        _fun90358: for (var _fun90358_ip = 0;;) switch (_fun90358_ip) {
             case 0:
                 var1 = arg0;
                 var0 = null;
                 if (!(var1 != var0)) {
-                    _fun90345_ip = 271;
-                    continue _fun90345
+                    _fun90358_ip = 271;
+                    continue _fun90358
                 }
             case 14:
                 var16 = {};
@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var6.bind(var4)(var9);
                 var9 = var10.useAnimatedStyle;
                 var5 = function() {
-                    _fun90346: for (var _fun90346_ip = 0;;) switch (_fun90346_ip) {
+                    _fun90359: for (var _fun90359_ip = 0;;) switch (_fun90359_ip) {
                         case 0:
                             var0 = {};
                             var2 = {};
@@ -84,8 +84,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var6 = var3.MEDIA;
                             var3 = '0deg';
                             if (!(var8 === var6)) {
-                                _fun90346_ip = 81;
-                                continue _fun90346
+                                _fun90359_ip = 81;
+                                continue _fun90359
                             }
                         case 75:
                             var3 = '45deg';
@@ -154,4 +154,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.MediaKeyboardButtonIcon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 3914, 3720, 4097, 1567, 4883, 9178, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 3916, 3722, 4098, 1567, 4884, 9184, 2]);

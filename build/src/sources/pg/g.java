@@ -1,65 +1,48 @@
 package pg;
 
-import java.util.Collection;
 import java.util.Iterator;
 import java.util.Map;
-/* JADX INFO: Access modifiers changed from: package-private */
+import java.util.Set;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class g extends z0 {
+final class g extends w0 {
 
-    /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ m f45216e;
+    /* renamed from: d  reason: collision with root package name */
+    final /* synthetic */ i f44232d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public g(m mVar, Map map) {
-        super(map);
-        this.f45216e = mVar;
+    public g(i iVar) {
+        this.f44232d = iVar;
     }
 
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public final void clear() {
-        q0.a(iterator());
+    @Override // pg.w0
+    final Map b() {
+        return this.f44232d;
     }
 
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public final boolean containsAll(Collection collection) {
-        return this.f45929d.keySet().containsAll(collection);
-    }
-
-    @Override // java.util.AbstractSet, java.util.Collection, java.util.Set
-    public final boolean equals(Object obj) {
-        if (this != obj && !this.f45929d.keySet().equals(obj)) {
+    @Override // pg.w0, java.util.AbstractCollection, java.util.Collection, java.util.Set
+    public final boolean contains(Object obj) {
+        Set entrySet = this.f44232d.f44315i.entrySet();
+        entrySet.getClass();
+        try {
+            return entrySet.contains(obj);
+        } catch (ClassCastException | NullPointerException unused) {
             return false;
         }
-        return true;
     }
 
-    @Override // java.util.AbstractSet, java.util.Collection, java.util.Set
-    public final int hashCode() {
-        return this.f45929d.keySet().hashCode();
-    }
-
-    @Override // pg.z0, java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set
+    @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set
     public final Iterator iterator() {
-        return new f(this, this.f45929d.entrySet().iterator());
+        return new h(this.f44232d);
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
     public final boolean remove(Object obj) {
-        int i10;
-        Collection collection = (Collection) this.f45929d.remove(obj);
-        if (collection != null) {
-            int size = collection.size();
-            collection.clear();
-            m mVar = this.f45216e;
-            i10 = mVar.f45545o;
-            mVar.f45545o = i10 - size;
-            if (size > 0) {
-                return true;
-            }
+        if (!contains(obj)) {
             return false;
         }
-        return false;
+        Map.Entry entry = (Map.Entry) obj;
+        entry.getClass();
+        q.p(this.f44232d.f44316o, entry.getKey());
+        return true;
     }
 }

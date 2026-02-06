@@ -9,7 +9,7 @@ import java.util.concurrent.Executor;
 public abstract class z {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final String f5896a = k4.m.i("Schedulers");
+    private static final String f6225a = k4.m.i("Schedulers");
 
     public static /* synthetic */ void b(List list, p4.m mVar, androidx.work.a aVar, WorkDatabase workDatabase) {
         Iterator it = list.iterator();
@@ -23,7 +23,7 @@ public abstract class z {
     public static w c(Context context, WorkDatabase workDatabase, androidx.work.a aVar) {
         androidx.work.impl.background.systemjob.b bVar = new androidx.work.impl.background.systemjob.b(context, workDatabase, aVar);
         q4.m.c(context, SystemJobService.class, true);
-        k4.m.e().a(f5896a, "Created SystemJobScheduler and enabled SystemJobService");
+        k4.m.e().a(f6225a, "Created SystemJobScheduler and enabled SystemJobService");
         return bVar;
     }
 
@@ -32,7 +32,7 @@ public abstract class z {
             long a10 = bVar.a();
             Iterator it = list.iterator();
             while (it.hasNext()) {
-                vVar.o(((p4.u) it.next()).f44888a, a10);
+                vVar.o(((p4.u) it.next()).f43685a, a10);
             }
         }
     }

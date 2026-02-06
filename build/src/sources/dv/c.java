@@ -1,126 +1,70 @@
 package dv;
 
-import dv.b;
+import dv.e;
 import java.util.List;
-import kotlin.Result;
-import kotlin.collections.CollectionsKt;
-import kotlin.jvm.internal.Intrinsics;
-import vv.d;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.Lambda;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class c implements qu.b, b {
+public final class c implements su.b, e {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final c f21270a = new c();
+    public static final c f21200a = new c();
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    static final class a extends Lambda implements Function2 {
+
+        /* renamed from: d  reason: collision with root package name */
+        public static final a f21201d = new a();
+
+        a() {
+            super(2);
+        }
+
+        public final Boolean a(int i10, int i11) {
+            boolean z10;
+            if (i10 < i11) {
+                z10 = true;
+            } else {
+                z10 = false;
+            }
+            return Boolean.valueOf(z10);
+        }
+
+        @Override // kotlin.jvm.functions.Function2
+        public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
+            return a(((Number) obj).intValue(), ((Number) obj2).intValue());
+        }
+    }
 
     private c() {
     }
 
-    private final int a(String str, int i10) {
-        Integer valueOf = Integer.valueOf(str.length() + i10);
-        if (valueOf.intValue() < 0) {
-            valueOf = null;
-        }
-        if (valueOf != null) {
-            return valueOf.intValue();
-        }
-        return 0;
+    @Override // tu.c
+    public boolean b(List list, Function2 function2) {
+        return e.a.b(this, list, function2);
     }
 
-    private final int b(int i10, int i11) {
-        Integer valueOf = Integer.valueOf(i10);
-        if (valueOf.intValue() > i11) {
-            valueOf = null;
-        }
-        if (valueOf != null) {
-            return valueOf.intValue();
-        }
-        return i11;
+    @Override // tu.a
+    public Boolean c(Object obj) {
+        return e.a.f(this, obj);
     }
 
-    private final String d(String str, int i10, int i11) {
-        if (i10 >= 0 && i11 > 0) {
-            return h(str, i10, i11);
-        }
-        if (i10 >= 0 && i11 < 0) {
-            String substring = str.substring(i10, str.length() + i11);
-            Intrinsics.checkNotNullExpressionValue(substring, "this as java.lang.String…ing(startIndex, endIndex)");
-            return substring;
-        } else if (i10 < 0 && i11 < 0) {
-            return e(str, i10, i11);
-        } else {
-            if (i10 < 0 && i11 > 0) {
-                return g(str, i10, i11);
-            }
-            return null;
-        }
+    @Override // tu.b
+    public List d(Comparable comparable, Comparable comparable2) {
+        return e.a.e(this, comparable, comparable2);
     }
 
-    private final String e(String str, int i10, int i11) {
-        String substring = str.substring(a(str, i10), b(str.length() + i11, str.length()));
-        Intrinsics.checkNotNullExpressionValue(substring, "this as java.lang.String…ing(startIndex, endIndex)");
-        return substring;
+    public boolean e(List list, Function2 function2) {
+        return e.a.c(this, list, function2);
     }
 
-    private final String g(String str, int i10, int i11) {
-        int a10 = a(str, i10);
-        String substring = str.substring(a10, b(i11 + a10, str.length()));
-        Intrinsics.checkNotNullExpressionValue(substring, "this as java.lang.String…ing(startIndex, endIndex)");
-        return substring;
+    @Override // su.b
+    public Object f(Object obj, Object obj2) {
+        return Boolean.valueOf(e(cw.a.c(obj), a.f21201d));
     }
 
-    private final String h(String str, int i10, int i11) {
-        String substring = str.substring(i10, b(i11 + i10, str.length()));
-        Intrinsics.checkNotNullExpressionValue(substring, "this as java.lang.String…ing(startIndex, endIndex)");
-        return substring;
-    }
-
-    private final String i(String str, int i10) {
-        if (i10 >= 0) {
-            String substring = str.substring(i10);
-            Intrinsics.checkNotNullExpressionValue(substring, "this as java.lang.String).substring(startIndex)");
-            return substring;
-        } else if (Math.abs(i10) <= str.length()) {
-            String substring2 = str.substring(str.length() + i10);
-            Intrinsics.checkNotNullExpressionValue(substring2, "this as java.lang.String).substring(startIndex)");
-            return substring2;
-        } else {
-            return str;
-        }
-    }
-
-    private final String j(List list, int i10, int i11) {
-        Object b10;
-        String x02 = CollectionsKt.x0(k(CollectionsKt.firstOrNull(list)), ",", null, null, 0, null, null, 62, null);
-        try {
-            Result.a aVar = Result.f31985e;
-            if (list.size() == 2) {
-                x02 = f21270a.i(x02, i10);
-            } else if (list.size() > 2) {
-                x02 = f21270a.d(x02, i10, i11);
-            }
-            b10 = Result.b(x02);
-        } catch (Throwable th2) {
-            Result.a aVar2 = Result.f31985e;
-            b10 = Result.b(kotlin.c.a(th2));
-        }
-        if (Result.g(b10)) {
-            b10 = null;
-        }
-        String str = (String) b10;
-        if (str == null) {
-            return "";
-        }
-        return str;
-    }
-
-    @Override // qu.b
-    /* renamed from: c */
-    public String f(Object obj, Object obj2) {
-        List c10 = vv.a.c(obj);
-        return f21270a.j(c10, d.b(String.valueOf(vv.c.b(c10))), d.b(String.valueOf(vv.c.c(c10))));
-    }
-
-    public List k(Object obj) {
-        return b.a.d(this, obj);
+    @Override // tu.b
+    public List g(Comparable comparable, Comparable comparable2) {
+        return e.a.d(this, comparable, comparable2);
     }
 }

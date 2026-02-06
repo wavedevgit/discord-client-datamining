@@ -21,7 +21,7 @@ import org.jetbrains.annotations.NotNull;
     @Override // kotlin.jvm.functions.Function8
     public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2, Object obj3, Object obj4, Object obj5, Object obj6, Object obj7, Object obj8) {
         m42invokeOV3vCas(((StateMachineHandle) obj).m196unboximpl(), (Fit) obj2, (Alignment) obj3, ((Number) obj4).floatValue(), ((Number) obj5).floatValue(), ((Number) obj6).intValue(), ((Number) obj7).floatValue(), ((Number) obj8).floatValue());
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* renamed from: invoke-OV3vCas  reason: not valid java name */

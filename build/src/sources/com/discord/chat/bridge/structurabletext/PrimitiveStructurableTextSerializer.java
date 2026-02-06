@@ -1,7 +1,7 @@
 package com.discord.chat.bridge.structurabletext;
 
-import ft.e;
-import ft.j;
+import ht.e;
+import ht.j;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.serialization.KSerializer;
@@ -15,12 +15,12 @@ public final class PrimitiveStructurableTextSerializer implements KSerializer {
     @NotNull
     public static final PrimitiveStructurableTextSerializer INSTANCE = new PrimitiveStructurableTextSerializer();
     @NotNull
-    private static final SerialDescriptor descriptor = j.b("PrimitiveStructurableText", e.i.f23483a);
+    private static final SerialDescriptor descriptor = j.b("PrimitiveStructurableText", e.i.f26478a);
 
     private PrimitiveStructurableTextSerializer() {
     }
 
-    @Override // kotlinx.serialization.KSerializer, dt.o, kotlinx.serialization.DeserializationStrategy
+    @Override // kotlinx.serialization.KSerializer, ft.o, kotlinx.serialization.DeserializationStrategy
     @NotNull
     public SerialDescriptor getDescriptor() {
         return descriptor;
@@ -33,7 +33,7 @@ public final class PrimitiveStructurableTextSerializer implements KSerializer {
         return new PrimitiveStructurableText(decoder.z());
     }
 
-    @Override // dt.o
+    @Override // ft.o
     public void serialize(@NotNull Encoder encoder, @NotNull PrimitiveStructurableText value) {
         Intrinsics.checkNotNullParameter(encoder, "encoder");
         Intrinsics.checkNotNullParameter(value, "value");

@@ -6,37 +6,37 @@ import java.io.File;
 public final class m1 {
 
     /* renamed from: g  reason: collision with root package name */
-    private static final wh.k0 f15905g = new wh.k0("ExtractChunkTaskHandler");
+    private static final xh.k0 f15885g = new xh.k0("ExtractChunkTaskHandler");
 
     /* renamed from: a  reason: collision with root package name */
-    private final byte[] f15906a = new byte[8192];
+    private final byte[] f15886a = new byte[8192];
 
     /* renamed from: b  reason: collision with root package name */
-    private final n0 f15907b;
+    private final n0 f15887b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final b2 f15908c;
+    private final b2 f15888c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final o3 f15909d;
+    private final o3 f15889d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final wh.r f15910e;
+    private final xh.r f15890e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final wh.r f15911f;
+    private final xh.r f15891f;
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public m1(n0 n0Var, wh.r rVar, wh.r rVar2, b2 b2Var, o3 o3Var) {
-        this.f15907b = n0Var;
-        this.f15910e = rVar;
-        this.f15911f = rVar2;
-        this.f15908c = b2Var;
-        this.f15909d = o3Var;
+    public m1(n0 n0Var, xh.r rVar, xh.r rVar2, b2 b2Var, o3 o3Var) {
+        this.f15887b = n0Var;
+        this.f15890e = rVar;
+        this.f15891f = rVar2;
+        this.f15888c = b2Var;
+        this.f15889d = o3Var;
     }
 
     private final File b(l1 l1Var) {
-        File C = this.f15907b.C(l1Var.f16034b, l1Var.f15871c, l1Var.f15872d, l1Var.f15874f);
+        File C = this.f15887b.C(l1Var.f16014b, l1Var.f15851c, l1Var.f15852d, l1Var.f15854f);
         if (!C.exists()) {
             C.mkdirs();
         }
@@ -45,7 +45,7 @@ public final class m1 {
 
     /* JADX WARN: Can't wrap try/catch for region: R(18:1|(1:3)|4|5|(1:7)(2:110|111)|8|(2:10|(12:12|(2:14|(1:(2:17|(2:82|83))(2:84|85))(2:86|(10:88|(7:21|(4:22|(2:26|(1:35)(4:30|(1:32)|33|34))|36|(1:38)(1:62))|40|41|(1:43)|44|(2:46|(1:48)(2:49|(1:51)(3:52|(2:54|(1:56)(2:58|59))(1:61)|57))))|63|64|(2:76|77)|66|67|68|69|(2:71|72)(1:73))(2:89|90)))(2:91|(5:93|(4:94|(1:96)|97|(0)(1:104))|100|101|(1:103))(2:105|106))|19|(0)|63|64|(0)|66|67|68|69|(0)(0))(2:107|108))|109|(0)|63|64|(0)|66|67|68|69|(0)(0)|(1:(0))) */
     /* JADX WARN: Code restructure failed: missing block: B:100:0x02ce, code lost:
-        com.google.android.play.core.assetpacks.m1.f15905g.e("Could not close file for chunk %s of slice %s of pack %s.", java.lang.Integer.valueOf(r21.f15876h), r21.f15874f, r21.f16034b);
+        com.google.android.play.core.assetpacks.m1.f15885g.e("Could not close file for chunk %s of slice %s of pack %s.", java.lang.Integer.valueOf(r21.f15856h), r21.f15854f, r21.f16014b);
      */
     /* JADX WARN: Removed duplicated region for block: B:103:0x02e7  */
     /* JADX WARN: Removed duplicated region for block: B:114:0x027a A[EXC_TOP_SPLITTER, SYNTHETIC] */

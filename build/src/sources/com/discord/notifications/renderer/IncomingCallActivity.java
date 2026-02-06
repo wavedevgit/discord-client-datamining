@@ -17,8 +17,8 @@ import kotlin.Metadata;
 import kotlin.coroutines.Continuation;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import ms.g;
 import org.jetbrains.annotations.NotNull;
+import os.g;
 @Metadata(d1 = {"\u0000F\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0004\u0018\u0000 !2\u00020\u0001:\u0001!B\u0007¢\u0006\u0004\b\u0002\u0010\u0003J\u0010\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007H\u0014J\b\u0010\b\u001a\u00020\u0005H\u0002J\b\u0010\t\u001a\u00020\u0005H\u0002J\u0012\u0010\n\u001a\u00020\u00052\b\u0010\u000b\u001a\u0004\u0018\u00010\fH\u0014J\b\u0010\r\u001a\u00020\u0005H\u0002J\u0018\u0010\u000e\u001a\u0004\u0018\u00010\u000f2\u0006\u0010\u0010\u001a\u00020\u0011H\u0082@¢\u0006\u0002\u0010\u0012J\b\u0010\u0013\u001a\u00020\u0005H\u0002J\b\u0010\u0014\u001a\u00020\u0005H\u0003JE\u0010\u0015\u001a\u00020\u00112\u0006\u0010\u0016\u001a\u00020\u00072\b\u0010\u0017\u001a\u0004\u0018\u00010\u00112\b\u0010\u0018\u001a\u0004\u0018\u00010\u00192\b\u0010\u001a\u001a\u0004\u0018\u00010\u001b2\b\u0010\u001c\u001a\u0004\u0018\u00010\u00112\u0006\u0010\u001d\u001a\u00020\u001eH\u0002¢\u0006\u0002\b\u001fJ\b\u0010 \u001a\u00020\u0005H\u0014¨\u0006\""}, d2 = {"Lcom/discord/notifications/renderer/IncomingCallActivity;", "Landroidx/appcompat/app/AppCompatActivity;", "<init>", "()V", "attachBaseContext", "", "newBase", "Landroid/content/Context;", "turnScreenOnAndKeyguardOff", "turnScreenOffAndKeyguardOn", "onCreate", "savedInstanceState", "Landroid/os/Bundle;", "initView", "fetchImage", "Landroid/graphics/Bitmap;", "uri", "", "(Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "configureUser", "configureActions", "getIconUrlForAvatar", "context", "userGuildAvatar", "guildId", "Lcom/discord/primitives/GuildId;", "userId", "Lcom/discord/primitives/UserId;", "userAvatar", "userDiscriminator", "", "getIconUrlForAvatar-r1nfqec", "onDestroy", "Companion", "notification_renderer_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class IncomingCallActivity extends AppCompatActivity {
@@ -68,14 +68,14 @@ public final class IncomingCallActivity extends AppCompatActivity {
 
     /* JADX INFO: Access modifiers changed from: private */
     /* renamed from: getIconUrlForAvatar-r1nfqec  reason: not valid java name */
-    public final String m1043getIconUrlForAvatarr1nfqec(Context context, String str, GuildId guildId, UserId userId, String str2, int i10) {
+    public final String m1041getIconUrlForAvatarr1nfqec(Context context, String str, GuildId guildId, UserId userId, String str2, int i10) {
         IconUrlUtils iconUrlUtils = IconUrlUtils.INSTANCE;
         IconUrlUtils.init$default(iconUrlUtils, context, null, null, 6, null);
-        String m916getForGuildMember2tNb6hE$default = IconUrlUtils.m916getForGuildMember2tNb6hE$default(iconUrlUtils, str, guildId, userId, null, false, 24, null);
-        if (m916getForGuildMember2tNb6hE$default.length() == 0) {
-            return IconUrlUtils.m917getForUser_fRzTXg$default(iconUrlUtils, context, userId, str2, Integer.valueOf(i10), false, null, 32, null);
+        String m914getForGuildMember2tNb6hE$default = IconUrlUtils.m914getForGuildMember2tNb6hE$default(iconUrlUtils, str, guildId, userId, null, false, 24, null);
+        if (m914getForGuildMember2tNb6hE$default.length() == 0) {
+            return IconUrlUtils.m915getForUser_fRzTXg$default(iconUrlUtils, context, userId, str2, Integer.valueOf(i10), false, null, 32, null);
         }
-        return m916getForGuildMember2tNb6hE$default;
+        return m914getForGuildMember2tNb6hE$default;
     }
 
     private final void initView() {

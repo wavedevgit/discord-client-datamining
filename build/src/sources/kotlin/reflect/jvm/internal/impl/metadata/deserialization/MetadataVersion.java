@@ -16,7 +16,7 @@ public final class MetadataVersion extends BinaryVersion {
     public static final MetadataVersion INVALID_VERSION;
 
     /* renamed from: f  reason: collision with root package name */
-    private final boolean f33704f;
+    private final boolean f33724f;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
@@ -39,7 +39,7 @@ public final class MetadataVersion extends BinaryVersion {
     public MetadataVersion(@NotNull int[] versionArray, boolean z10) {
         super(Arrays.copyOf(versionArray, versionArray.length));
         Intrinsics.checkNotNullParameter(versionArray, "versionArray");
-        this.f33704f = z10;
+        this.f33724f = z10;
     }
 
     private final boolean b(MetadataVersion metadataVersion) {
@@ -61,11 +61,11 @@ public final class MetadataVersion extends BinaryVersion {
 
     public final boolean isCompatible(@NotNull MetadataVersion metadataVersionFromLanguageVersion) {
         Intrinsics.checkNotNullParameter(metadataVersionFromLanguageVersion, "metadataVersionFromLanguageVersion");
-        return b(metadataVersionFromLanguageVersion.lastSupportedVersionWithThisLanguageVersion(this.f33704f));
+        return b(metadataVersionFromLanguageVersion.lastSupportedVersionWithThisLanguageVersion(this.f33724f));
     }
 
     public final boolean isStrictSemantics() {
-        return this.f33704f;
+        return this.f33724f;
     }
 
     @NotNull

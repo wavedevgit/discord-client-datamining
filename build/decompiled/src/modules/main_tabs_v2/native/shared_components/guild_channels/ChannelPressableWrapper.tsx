@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/main_tabs_v2/native/shared_components/guild_channels/ChannelPressableWrapper.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1() {
-        _fun103518: for (var _fun103518_ip = 0;;) switch (_fun103518_ip) {
+        _fun103546: for (var _fun103546_ip = 0;;) switch (_fun103546_ip) {
             case 0:
                 var0 = arg1;
                 var7 = var0.layout;
@@ -45,8 +45,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var0.panelVariant;
                 var3 = undefined;
                 if (!(var5 === var3)) {
-                    _fun103518_ip = 35;
-                    continue _fun103518
+                    _fun103546_ip = 35;
+                    continue _fun103546
                 }
             case 33:
                 var5 = false;
@@ -63,23 +63,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var4 = var4.layout;
                 if (var6) {
-                    _fun103518_ip = 108;
-                    continue _fun103518
+                    _fun103546_ip = 108;
+                    continue _fun103546
                 }
             case 89:
                 if (var5) {
-                    _fun103518_ip = 100;
-                    continue _fun103518
+                    _fun103546_ip = 100;
+                    continue _fun103546
                 }
             case 92:
                 var5 = var4.margin;
-                _fun103518_ip = 106;
-                continue _fun103518;
+                _fun103546_ip = 106;
+                continue _fun103546;
             case 100:
                 var5 = var4.marginPanels;
             case 106:
-                _fun103518_ip = 114;
-                continue _fun103518;
+                _fun103546_ip = 114;
+                continue _fun103546;
             case 108:
                 var5 = var4.marginThread;
             case 114:
@@ -100,4 +100,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.renderChannelPressableWrapper = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 8822, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 8828, 2]);

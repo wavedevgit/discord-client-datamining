@@ -20,37 +20,37 @@ import org.jetbrains.annotations.NotNull;
 public class TypeCheckerState {
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f34584a;
+    private final boolean f34604a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f34585b;
+    private final boolean f34605b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f34586c;
+    private final boolean f34606c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f34587d;
+    private final boolean f34607d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final TypeSystemContext f34588e;
+    private final TypeSystemContext f34608e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final AbstractTypePreparator f34589f;
+    private final AbstractTypePreparator f34609f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final AbstractTypeRefiner f34590g;
+    private final AbstractTypeRefiner f34610g;
 
     /* renamed from: h  reason: collision with root package name */
-    private int f34591h;
+    private int f34611h;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f34592i;
+    private boolean f34612i;
 
     /* renamed from: j  reason: collision with root package name */
-    private ArrayDeque f34593j;
+    private ArrayDeque f34613j;
 
     /* renamed from: k  reason: collision with root package name */
-    private Set f34594k;
+    private Set f34614k;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public interface ForkPointContext {
@@ -59,19 +59,19 @@ public class TypeCheckerState {
         public static final class Default implements ForkPointContext {
 
             /* renamed from: a  reason: collision with root package name */
-            private boolean f34595a;
+            private boolean f34615a;
 
             @Override // kotlin.reflect.jvm.internal.impl.types.TypeCheckerState.ForkPointContext
             public void fork(@NotNull Function0<Boolean> block) {
                 Intrinsics.checkNotNullParameter(block, "block");
-                if (this.f34595a) {
+                if (this.f34615a) {
                     return;
                 }
-                this.f34595a = ((Boolean) block.invoke()).booleanValue();
+                this.f34615a = ((Boolean) block.invoke()).booleanValue();
             }
 
             public final boolean getResult() {
-                return this.f34595a;
+                return this.f34615a;
             }
         }
 
@@ -87,15 +87,15 @@ public class TypeCheckerState {
         public static final LowerCapturedTypePolicy SKIP_LOWER = new LowerCapturedTypePolicy("SKIP_LOWER", 2);
 
         /* renamed from: d  reason: collision with root package name */
-        private static final /* synthetic */ LowerCapturedTypePolicy[] f34596d;
+        private static final /* synthetic */ LowerCapturedTypePolicy[] f34616d;
 
         /* renamed from: e  reason: collision with root package name */
-        private static final /* synthetic */ EnumEntries f34597e;
+        private static final /* synthetic */ EnumEntries f34617e;
 
         static {
             LowerCapturedTypePolicy[] a10 = a();
-            f34596d = a10;
-            f34597e = vr.a.a(a10);
+            f34616d = a10;
+            f34617e = xr.a.a(a10);
         }
 
         private LowerCapturedTypePolicy(String str, int i10) {
@@ -110,7 +110,7 @@ public class TypeCheckerState {
         }
 
         public static LowerCapturedTypePolicy[] values() {
-            return (LowerCapturedTypePolicy[]) f34596d.clone();
+            return (LowerCapturedTypePolicy[]) f34616d.clone();
         }
     }
 
@@ -203,13 +203,13 @@ public class TypeCheckerState {
         Intrinsics.checkNotNullParameter(typeSystemContext, "typeSystemContext");
         Intrinsics.checkNotNullParameter(kotlinTypePreparator, "kotlinTypePreparator");
         Intrinsics.checkNotNullParameter(kotlinTypeRefiner, "kotlinTypeRefiner");
-        this.f34584a = z10;
-        this.f34585b = z11;
-        this.f34586c = z12;
-        this.f34587d = z13;
-        this.f34588e = typeSystemContext;
-        this.f34589f = kotlinTypePreparator;
-        this.f34590g = kotlinTypeRefiner;
+        this.f34604a = z10;
+        this.f34605b = z11;
+        this.f34606c = z12;
+        this.f34607d = z13;
+        this.f34608e = typeSystemContext;
+        this.f34609f = kotlinTypePreparator;
+        this.f34610g = kotlinTypeRefiner;
     }
 
     public static /* synthetic */ Boolean addSubtypeConstraint$default(TypeCheckerState typeCheckerState, KotlinTypeMarker kotlinTypeMarker, KotlinTypeMarker kotlinTypeMarker2, boolean z10, int i10, Object obj) {
@@ -229,13 +229,13 @@ public class TypeCheckerState {
     }
 
     public final void clear() {
-        ArrayDeque arrayDeque = this.f34593j;
+        ArrayDeque arrayDeque = this.f34613j;
         Intrinsics.checkNotNull(arrayDeque);
         arrayDeque.clear();
-        Set set = this.f34594k;
+        Set set = this.f34614k;
         Intrinsics.checkNotNull(set);
         set.clear();
-        this.f34592i = false;
+        this.f34612i = false;
     }
 
     public boolean customIsSubtypeOf(@NotNull KotlinTypeMarker subType, @NotNull KotlinTypeMarker superType) {
@@ -252,58 +252,58 @@ public class TypeCheckerState {
     }
 
     public final ArrayDeque<RigidTypeMarker> getSupertypesDeque() {
-        return this.f34593j;
+        return this.f34613j;
     }
 
     public final Set<RigidTypeMarker> getSupertypesSet() {
-        return this.f34594k;
+        return this.f34614k;
     }
 
     @NotNull
     public final TypeSystemContext getTypeSystemContext() {
-        return this.f34588e;
+        return this.f34608e;
     }
 
     public final void initialize() {
-        this.f34592i = true;
-        if (this.f34593j == null) {
-            this.f34593j = new ArrayDeque(4);
+        this.f34612i = true;
+        if (this.f34613j == null) {
+            this.f34613j = new ArrayDeque(4);
         }
-        if (this.f34594k == null) {
-            this.f34594k = SmartSet.Companion.create();
+        if (this.f34614k == null) {
+            this.f34614k = SmartSet.Companion.create();
         }
     }
 
     public final boolean isAllowedTypeVariable(@NotNull KotlinTypeMarker type) {
         Intrinsics.checkNotNullParameter(type, "type");
-        if (this.f34587d && this.f34588e.isTypeVariableType(type)) {
+        if (this.f34607d && this.f34608e.isTypeVariableType(type)) {
             return true;
         }
         return false;
     }
 
     public final boolean isDnnTypesEqualToFlexible() {
-        return this.f34586c;
+        return this.f34606c;
     }
 
     public final boolean isErrorTypeEqualsToAnything() {
-        return this.f34584a;
+        return this.f34604a;
     }
 
     public final boolean isStubTypeEqualsToAnything() {
-        return this.f34585b;
+        return this.f34605b;
     }
 
     @NotNull
     public final KotlinTypeMarker prepareType(@NotNull KotlinTypeMarker type) {
         Intrinsics.checkNotNullParameter(type, "type");
-        return this.f34589f.prepareType(type);
+        return this.f34609f.prepareType(type);
     }
 
     @NotNull
     public final KotlinTypeMarker refineType(@NotNull KotlinTypeMarker type) {
         Intrinsics.checkNotNullParameter(type, "type");
-        return this.f34590g.refineType(type);
+        return this.f34610g.refineType(type);
     }
 
     public boolean runForkingPoint(@NotNull Function1<? super ForkPointContext, Unit> block) {

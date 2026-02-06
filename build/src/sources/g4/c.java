@@ -5,11 +5,11 @@ import org.chromium.support_lib_boundary.WebkitToCompatConverterBoundaryInterfac
 public class c implements g {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final String[] f23654a = new String[0];
+    private static final String[] f23907a = new String[0];
 
     @Override // g4.g
     public String[] a() {
-        return f23654a;
+        return f23907a;
     }
 
     @Override // g4.g

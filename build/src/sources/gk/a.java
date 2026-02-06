@@ -1,43 +1,79 @@
 package gk;
 
-import fk.p;
-import jk.g;
+import gk.i0;
+import java.io.FilterInputStream;
+import java.io.InputStream;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a extends g {
-
-    /* renamed from: c  reason: collision with root package name */
-    private final boolean f24979c;
+public abstract class a implements i0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f24980d;
+    protected int f25179d = 0;
 
-    /* renamed from: e  reason: collision with root package name */
-    private final int f24981e;
-
-    /* renamed from: f  reason: collision with root package name */
-    private final int f24982f;
-
-    public a(jk.b bVar, p[] pVarArr, boolean z10, int i10, int i11, int i12) {
-        super(bVar, pVarArr);
-        this.f24979c = z10;
-        this.f24980d = i10;
-        this.f24981e = i11;
-        this.f24982f = i12;
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public c1 a() {
+        return new c1(this);
     }
 
-    public int c() {
-        return this.f24982f;
-    }
+    /* renamed from: gk.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static abstract class AbstractC0338a implements i0.a {
+        /* JADX INFO: Access modifiers changed from: protected */
+        public static c1 a(i0 i0Var) {
+            return new c1(i0Var);
+        }
 
-    public int d() {
-        return this.f24980d;
-    }
+        /* JADX INFO: Access modifiers changed from: package-private */
+        /* renamed from: gk.a$a$a  reason: collision with other inner class name */
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+        public static final class C0339a extends FilterInputStream {
 
-    public int e() {
-        return this.f24981e;
-    }
+            /* renamed from: d  reason: collision with root package name */
+            private int f25180d;
 
-    public boolean f() {
-        return this.f24979c;
+            /* JADX INFO: Access modifiers changed from: package-private */
+            public C0339a(InputStream inputStream, int i10) {
+                super(inputStream);
+                this.f25180d = i10;
+            }
+
+            @Override // java.io.FilterInputStream, java.io.InputStream
+            public int available() {
+                return Math.min(super.available(), this.f25180d);
+            }
+
+            @Override // java.io.FilterInputStream, java.io.InputStream
+            public int read() {
+                if (this.f25180d <= 0) {
+                    return -1;
+                }
+                int read = super.read();
+                if (read >= 0) {
+                    this.f25180d--;
+                }
+                return read;
+            }
+
+            @Override // java.io.FilterInputStream, java.io.InputStream
+            public long skip(long j10) {
+                int skip = (int) super.skip(Math.min(j10, this.f25180d));
+                if (skip >= 0) {
+                    this.f25180d -= skip;
+                }
+                return skip;
+            }
+
+            @Override // java.io.FilterInputStream, java.io.InputStream
+            public int read(byte[] bArr, int i10, int i11) {
+                int i12 = this.f25180d;
+                if (i12 <= 0) {
+                    return -1;
+                }
+                int read = super.read(bArr, i10, Math.min(i11, i12));
+                if (read >= 0) {
+                    this.f25180d -= read;
+                }
+                return read;
+            }
+        }
     }
 }

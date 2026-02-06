@@ -31,7 +31,7 @@ import java.util.Objects;
 import java.util.Set;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class NativeProxyCommon {
-    private final gn.a gestureHandlerStateManager;
+    private final in.a gestureHandlerStateManager;
     private final KeyboardAnimationManager keyboardAnimationManager;
     protected final WeakReference<ReactApplicationContext> mContext;
     protected NodesManager mNodesManager;
@@ -48,7 +48,7 @@ public abstract class NativeProxyCommon {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public NativeProxyCommon(ReactApplicationContext reactApplicationContext) {
-        gn.a aVar = null;
+        in.a aVar = null;
         ReanimatedModule reanimatedModule = (ReanimatedModule) reactApplicationContext.getNativeModule(ReanimatedModule.class);
         Objects.requireNonNull(reanimatedModule);
         this.mWorkletsModule = reanimatedModule.getWorkletsModule();
@@ -59,7 +59,7 @@ public abstract class NativeProxyCommon {
         addDevMenuOption();
         try {
             RNGestureHandlerModule.a aVar2 = RNGestureHandlerModule.Companion;
-            aVar = (gn.a) reactApplicationContext.getNativeModule(RNGestureHandlerModule.class);
+            aVar = (in.a) reactApplicationContext.getNativeModule(RNGestureHandlerModule.class);
         } catch (ClassCastException | ClassNotFoundException unused) {
         }
         this.gestureHandlerStateManager = aVar;
@@ -205,7 +205,7 @@ public abstract class NativeProxyCommon {
 
     @fb.a
     public void setGestureState(int i10, int i11) {
-        gn.a aVar = this.gestureHandlerStateManager;
+        in.a aVar = this.gestureHandlerStateManager;
         if (aVar != null) {
             aVar.setGestureHandlerState(i10, i11);
         }

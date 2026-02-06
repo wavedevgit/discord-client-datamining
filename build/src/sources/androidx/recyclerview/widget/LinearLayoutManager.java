@@ -44,19 +44,19 @@ public class LinearLayoutManager extends RecyclerView.LayoutManager implements i
     public static class AnchorInfo {
 
         /* renamed from: a  reason: collision with root package name */
-        OrientationHelper f4891a;
+        OrientationHelper f5220a;
 
         /* renamed from: b  reason: collision with root package name */
-        int f4892b;
+        int f5221b;
 
         /* renamed from: c  reason: collision with root package name */
-        int f4893c;
+        int f5222c;
 
         /* renamed from: d  reason: collision with root package name */
-        boolean f4894d;
+        boolean f5223d;
 
         /* renamed from: e  reason: collision with root package name */
-        boolean f4895e;
+        boolean f5224e;
 
         AnchorInfo() {
             e();
@@ -64,52 +64,52 @@ public class LinearLayoutManager extends RecyclerView.LayoutManager implements i
 
         void a() {
             int m10;
-            if (this.f4894d) {
-                m10 = this.f4891a.i();
+            if (this.f5223d) {
+                m10 = this.f5220a.i();
             } else {
-                m10 = this.f4891a.m();
+                m10 = this.f5220a.m();
             }
-            this.f4893c = m10;
+            this.f5222c = m10;
         }
 
         public void b(View view, int i10) {
-            if (this.f4894d) {
-                this.f4893c = this.f4891a.d(view) + this.f4891a.o();
+            if (this.f5223d) {
+                this.f5222c = this.f5220a.d(view) + this.f5220a.o();
             } else {
-                this.f4893c = this.f4891a.g(view);
+                this.f5222c = this.f5220a.g(view);
             }
-            this.f4892b = i10;
+            this.f5221b = i10;
         }
 
         public void c(View view, int i10) {
-            int o10 = this.f4891a.o();
+            int o10 = this.f5220a.o();
             if (o10 >= 0) {
                 b(view, i10);
                 return;
             }
-            this.f4892b = i10;
-            if (this.f4894d) {
-                int i11 = (this.f4891a.i() - o10) - this.f4891a.d(view);
-                this.f4893c = this.f4891a.i() - i11;
+            this.f5221b = i10;
+            if (this.f5223d) {
+                int i11 = (this.f5220a.i() - o10) - this.f5220a.d(view);
+                this.f5222c = this.f5220a.i() - i11;
                 if (i11 > 0) {
-                    int e10 = this.f4893c - this.f4891a.e(view);
-                    int m10 = this.f4891a.m();
-                    int min = e10 - (m10 + Math.min(this.f4891a.g(view) - m10, 0));
+                    int e10 = this.f5222c - this.f5220a.e(view);
+                    int m10 = this.f5220a.m();
+                    int min = e10 - (m10 + Math.min(this.f5220a.g(view) - m10, 0));
                     if (min < 0) {
-                        this.f4893c += Math.min(i11, -min);
+                        this.f5222c += Math.min(i11, -min);
                         return;
                     }
                     return;
                 }
                 return;
             }
-            int g10 = this.f4891a.g(view);
-            int m11 = g10 - this.f4891a.m();
-            this.f4893c = g10;
+            int g10 = this.f5220a.g(view);
+            int m11 = g10 - this.f5220a.m();
+            this.f5222c = g10;
             if (m11 > 0) {
-                int i12 = (this.f4891a.i() - Math.min(0, (this.f4891a.i() - o10) - this.f4891a.d(view))) - (g10 + this.f4891a.e(view));
+                int i12 = (this.f5220a.i() - Math.min(0, (this.f5220a.i() - o10) - this.f5220a.d(view))) - (g10 + this.f5220a.e(view));
                 if (i12 < 0) {
-                    this.f4893c -= Math.min(m11, -i12);
+                    this.f5222c -= Math.min(m11, -i12);
                 }
             }
         }
@@ -123,14 +123,14 @@ public class LinearLayoutManager extends RecyclerView.LayoutManager implements i
         }
 
         void e() {
-            this.f4892b = -1;
-            this.f4893c = Integer.MIN_VALUE;
-            this.f4894d = false;
-            this.f4895e = false;
+            this.f5221b = -1;
+            this.f5222c = Integer.MIN_VALUE;
+            this.f5223d = false;
+            this.f5224e = false;
         }
 
         public String toString() {
-            return "AnchorInfo{mPosition=" + this.f4892b + ", mCoordinate=" + this.f4893c + ", mLayoutFromEnd=" + this.f4894d + ", mValid=" + this.f4895e + '}';
+            return "AnchorInfo{mPosition=" + this.f5221b + ", mCoordinate=" + this.f5222c + ", mLayoutFromEnd=" + this.f5223d + ", mValid=" + this.f5224e + '}';
         }
     }
 
@@ -139,25 +139,25 @@ public class LinearLayoutManager extends RecyclerView.LayoutManager implements i
     public static class LayoutChunkResult {
 
         /* renamed from: a  reason: collision with root package name */
-        public int f4896a;
+        public int f5225a;
 
         /* renamed from: b  reason: collision with root package name */
-        public boolean f4897b;
+        public boolean f5226b;
 
         /* renamed from: c  reason: collision with root package name */
-        public boolean f4898c;
+        public boolean f5227c;
 
         /* renamed from: d  reason: collision with root package name */
-        public boolean f4899d;
+        public boolean f5228d;
 
         protected LayoutChunkResult() {
         }
 
         void a() {
-            this.f4896a = 0;
-            this.f4897b = false;
-            this.f4898c = false;
-            this.f4899d = false;
+            this.f5225a = 0;
+            this.f5226b = false;
+            this.f5227c = false;
+            this.f5228d = false;
         }
     }
 
@@ -166,53 +166,53 @@ public class LinearLayoutManager extends RecyclerView.LayoutManager implements i
     public static class LayoutState {
 
         /* renamed from: b  reason: collision with root package name */
-        int f4901b;
+        int f5230b;
 
         /* renamed from: c  reason: collision with root package name */
-        int f4902c;
+        int f5231c;
 
         /* renamed from: d  reason: collision with root package name */
-        int f4903d;
+        int f5232d;
 
         /* renamed from: e  reason: collision with root package name */
-        int f4904e;
+        int f5233e;
 
         /* renamed from: f  reason: collision with root package name */
-        int f4905f;
+        int f5234f;
 
         /* renamed from: g  reason: collision with root package name */
-        int f4906g;
+        int f5235g;
 
         /* renamed from: k  reason: collision with root package name */
-        int f4910k;
+        int f5239k;
 
         /* renamed from: m  reason: collision with root package name */
-        boolean f4912m;
+        boolean f5241m;
 
         /* renamed from: a  reason: collision with root package name */
-        boolean f4900a = true;
+        boolean f5229a = true;
 
         /* renamed from: h  reason: collision with root package name */
-        int f4907h = 0;
+        int f5236h = 0;
 
         /* renamed from: i  reason: collision with root package name */
-        int f4908i = 0;
+        int f5237i = 0;
 
         /* renamed from: j  reason: collision with root package name */
-        boolean f4909j = false;
+        boolean f5238j = false;
 
         /* renamed from: l  reason: collision with root package name */
-        List f4911l = null;
+        List f5240l = null;
 
         LayoutState() {
         }
 
         private View e() {
-            int size = this.f4911l.size();
+            int size = this.f5240l.size();
             for (int i10 = 0; i10 < size; i10++) {
-                View view = ((RecyclerView.ViewHolder) this.f4911l.get(i10)).itemView;
+                View view = ((RecyclerView.ViewHolder) this.f5240l.get(i10)).itemView;
                 RecyclerView.LayoutParams layoutParams = (RecyclerView.LayoutParams) view.getLayoutParams();
-                if (!layoutParams.c() && this.f4903d == layoutParams.a()) {
+                if (!layoutParams.c() && this.f5232d == layoutParams.a()) {
                     b(view);
                     return view;
                 }
@@ -227,15 +227,15 @@ public class LinearLayoutManager extends RecyclerView.LayoutManager implements i
         public void b(View view) {
             View f10 = f(view);
             if (f10 == null) {
-                this.f4903d = -1;
+                this.f5232d = -1;
             } else {
-                this.f4903d = ((RecyclerView.LayoutParams) f10.getLayoutParams()).a();
+                this.f5232d = ((RecyclerView.LayoutParams) f10.getLayoutParams()).a();
             }
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public boolean c(RecyclerView.State state) {
-            int i10 = this.f4903d;
+            int i10 = this.f5232d;
             if (i10 >= 0 && i10 < state.b()) {
                 return true;
             }
@@ -244,23 +244,23 @@ public class LinearLayoutManager extends RecyclerView.LayoutManager implements i
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public View d(RecyclerView.Recycler recycler) {
-            if (this.f4911l != null) {
+            if (this.f5240l != null) {
                 return e();
             }
-            View o10 = recycler.o(this.f4903d);
-            this.f4903d += this.f4904e;
+            View o10 = recycler.o(this.f5232d);
+            this.f5232d += this.f5233e;
             return o10;
         }
 
         public View f(View view) {
             int a10;
-            int size = this.f4911l.size();
+            int size = this.f5240l.size();
             View view2 = null;
             int i10 = Integer.MAX_VALUE;
             for (int i11 = 0; i11 < size; i11++) {
-                View view3 = ((RecyclerView.ViewHolder) this.f4911l.get(i11)).itemView;
+                View view3 = ((RecyclerView.ViewHolder) this.f5240l.get(i11)).itemView;
                 RecyclerView.LayoutParams layoutParams = (RecyclerView.LayoutParams) view3.getLayoutParams();
-                if (view3 != view && !layoutParams.c() && (a10 = (layoutParams.a() - this.f4903d) * this.f4904e) >= 0 && a10 < i10) {
+                if (view3 != view && !layoutParams.c() && (a10 = (layoutParams.a() - this.f5232d) * this.f5233e) >= 0 && a10 < i10) {
                     if (a10 == 0) {
                         return view3;
                     }
@@ -277,13 +277,13 @@ public class LinearLayoutManager extends RecyclerView.LayoutManager implements i
         public static final Parcelable.Creator<SavedState> CREATOR = new a();
 
         /* renamed from: d  reason: collision with root package name */
-        int f4913d;
+        int f5242d;
 
         /* renamed from: e  reason: collision with root package name */
-        int f4914e;
+        int f5243e;
 
         /* renamed from: i  reason: collision with root package name */
-        boolean f4915i;
+        boolean f5244i;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         class a implements Parcelable.Creator {
@@ -307,14 +307,14 @@ public class LinearLayoutManager extends RecyclerView.LayoutManager implements i
         }
 
         boolean a() {
-            if (this.f4913d >= 0) {
+            if (this.f5242d >= 0) {
                 return true;
             }
             return false;
         }
 
         void b() {
-            this.f4913d = -1;
+            this.f5242d = -1;
         }
 
         @Override // android.os.Parcelable
@@ -324,21 +324,21 @@ public class LinearLayoutManager extends RecyclerView.LayoutManager implements i
 
         @Override // android.os.Parcelable
         public void writeToParcel(Parcel parcel, int i10) {
-            parcel.writeInt(this.f4913d);
-            parcel.writeInt(this.f4914e);
-            parcel.writeInt(this.f4915i ? 1 : 0);
+            parcel.writeInt(this.f5242d);
+            parcel.writeInt(this.f5243e);
+            parcel.writeInt(this.f5244i ? 1 : 0);
         }
 
         SavedState(Parcel parcel) {
-            this.f4913d = parcel.readInt();
-            this.f4914e = parcel.readInt();
-            this.f4915i = parcel.readInt() == 1;
+            this.f5242d = parcel.readInt();
+            this.f5243e = parcel.readInt();
+            this.f5244i = parcel.readInt() == 1;
         }
 
         public SavedState(SavedState savedState) {
-            this.f4913d = savedState.f4913d;
-            this.f4914e = savedState.f4914e;
-            this.f4915i = savedState.f4915i;
+            this.f5242d = savedState.f5242d;
+            this.f5243e = savedState.f5243e;
+            this.f5244i = savedState.f5244i;
         }
     }
 
@@ -393,7 +393,7 @@ public class LinearLayoutManager extends RecyclerView.LayoutManager implements i
         }
         boolean z12 = this.mLastStackFromEnd;
         boolean z13 = this.mStackFromEnd;
-        if (z12 != z13 || (findReferenceChild = findReferenceChild(recycler, state, anchorInfo.f4894d, z13)) == null) {
+        if (z12 != z13 || (findReferenceChild = findReferenceChild(recycler, state, anchorInfo.f5223d, z13)) == null) {
             return false;
         }
         anchorInfo.b(findReferenceChild, getPosition(findReferenceChild));
@@ -411,10 +411,10 @@ public class LinearLayoutManager extends RecyclerView.LayoutManager implements i
                 z11 = true;
             }
             if (z10 || z11) {
-                if (anchorInfo.f4894d) {
+                if (anchorInfo.f5223d) {
                     m10 = i10;
                 }
-                anchorInfo.f4893c = m10;
+                anchorInfo.f5222c = m10;
             }
         }
         return true;
@@ -427,15 +427,15 @@ public class LinearLayoutManager extends RecyclerView.LayoutManager implements i
         boolean z11 = false;
         if (!state.e() && (i10 = this.mPendingScrollPosition) != -1) {
             if (i10 >= 0 && i10 < state.b()) {
-                anchorInfo.f4892b = this.mPendingScrollPosition;
+                anchorInfo.f5221b = this.mPendingScrollPosition;
                 SavedState savedState = this.mPendingSavedState;
                 if (savedState != null && savedState.a()) {
-                    boolean z12 = this.mPendingSavedState.f4915i;
-                    anchorInfo.f4894d = z12;
+                    boolean z12 = this.mPendingSavedState.f5244i;
+                    anchorInfo.f5223d = z12;
                     if (z12) {
-                        anchorInfo.f4893c = this.mOrientationHelper.i() - this.mPendingSavedState.f4914e;
+                        anchorInfo.f5222c = this.mOrientationHelper.i() - this.mPendingSavedState.f5243e;
                     } else {
-                        anchorInfo.f4893c = this.mOrientationHelper.m() + this.mPendingSavedState.f4914e;
+                        anchorInfo.f5222c = this.mOrientationHelper.m() + this.mPendingSavedState.f5243e;
                     }
                     return true;
                 } else if (this.mPendingScrollPositionOffset == Integer.MIN_VALUE) {
@@ -445,20 +445,20 @@ public class LinearLayoutManager extends RecyclerView.LayoutManager implements i
                             anchorInfo.a();
                             return true;
                         } else if (this.mOrientationHelper.g(findViewByPosition) - this.mOrientationHelper.m() < 0) {
-                            anchorInfo.f4893c = this.mOrientationHelper.m();
-                            anchorInfo.f4894d = false;
+                            anchorInfo.f5222c = this.mOrientationHelper.m();
+                            anchorInfo.f5223d = false;
                             return true;
                         } else if (this.mOrientationHelper.i() - this.mOrientationHelper.d(findViewByPosition) < 0) {
-                            anchorInfo.f4893c = this.mOrientationHelper.i();
-                            anchorInfo.f4894d = true;
+                            anchorInfo.f5222c = this.mOrientationHelper.i();
+                            anchorInfo.f5223d = true;
                             return true;
                         } else {
-                            if (anchorInfo.f4894d) {
+                            if (anchorInfo.f5223d) {
                                 g10 = this.mOrientationHelper.d(findViewByPosition) + this.mOrientationHelper.o();
                             } else {
                                 g10 = this.mOrientationHelper.g(findViewByPosition);
                             }
-                            anchorInfo.f4893c = g10;
+                            anchorInfo.f5222c = g10;
                         }
                     } else {
                         if (getChildCount() > 0) {
@@ -470,18 +470,18 @@ public class LinearLayoutManager extends RecyclerView.LayoutManager implements i
                             if (z10 == this.mShouldReverseLayout) {
                                 z11 = true;
                             }
-                            anchorInfo.f4894d = z11;
+                            anchorInfo.f5223d = z11;
                         }
                         anchorInfo.a();
                     }
                     return true;
                 } else {
                     boolean z13 = this.mShouldReverseLayout;
-                    anchorInfo.f4894d = z13;
+                    anchorInfo.f5223d = z13;
                     if (z13) {
-                        anchorInfo.f4893c = this.mOrientationHelper.i() - this.mPendingScrollPositionOffset;
+                        anchorInfo.f5222c = this.mOrientationHelper.i() - this.mPendingScrollPositionOffset;
                     } else {
-                        anchorInfo.f4893c = this.mOrientationHelper.m() + this.mPendingScrollPositionOffset;
+                        anchorInfo.f5222c = this.mOrientationHelper.m() + this.mPendingScrollPositionOffset;
                     }
                     return true;
                 }
@@ -503,14 +503,14 @@ public class LinearLayoutManager extends RecyclerView.LayoutManager implements i
         } else {
             i10 = 0;
         }
-        anchorInfo.f4892b = i10;
+        anchorInfo.f5221b = i10;
     }
 
     private void F(int i10, int i11, boolean z10, RecyclerView.State state) {
         int i12;
         int m10;
-        this.mLayoutState.f4912m = resolveIsInfinite();
-        this.mLayoutState.f4905f = i10;
+        this.mLayoutState.f5241m = resolveIsInfinite();
+        this.mLayoutState.f5234f = i10;
         int[] iArr = this.mReusableIntPair;
         boolean z11 = false;
         iArr[0] = 0;
@@ -528,84 +528,84 @@ public class LinearLayoutManager extends RecyclerView.LayoutManager implements i
         } else {
             i12 = max;
         }
-        layoutState.f4907h = i12;
+        layoutState.f5236h = i12;
         if (!z11) {
             max = max2;
         }
-        layoutState.f4908i = max;
+        layoutState.f5237i = max;
         if (z11) {
-            layoutState.f4907h = i12 + this.mOrientationHelper.j();
+            layoutState.f5236h = i12 + this.mOrientationHelper.j();
             View t10 = t();
             LayoutState layoutState2 = this.mLayoutState;
             if (this.mShouldReverseLayout) {
                 i13 = -1;
             }
-            layoutState2.f4904e = i13;
+            layoutState2.f5233e = i13;
             int position = getPosition(t10);
             LayoutState layoutState3 = this.mLayoutState;
-            layoutState2.f4903d = position + layoutState3.f4904e;
-            layoutState3.f4901b = this.mOrientationHelper.d(t10);
+            layoutState2.f5232d = position + layoutState3.f5233e;
+            layoutState3.f5230b = this.mOrientationHelper.d(t10);
             m10 = this.mOrientationHelper.d(t10) - this.mOrientationHelper.i();
         } else {
             View u10 = u();
-            this.mLayoutState.f4907h += this.mOrientationHelper.m();
+            this.mLayoutState.f5236h += this.mOrientationHelper.m();
             LayoutState layoutState4 = this.mLayoutState;
             if (!this.mShouldReverseLayout) {
                 i13 = -1;
             }
-            layoutState4.f4904e = i13;
+            layoutState4.f5233e = i13;
             int position2 = getPosition(u10);
             LayoutState layoutState5 = this.mLayoutState;
-            layoutState4.f4903d = position2 + layoutState5.f4904e;
-            layoutState5.f4901b = this.mOrientationHelper.g(u10);
+            layoutState4.f5232d = position2 + layoutState5.f5233e;
+            layoutState5.f5230b = this.mOrientationHelper.g(u10);
             m10 = (-this.mOrientationHelper.g(u10)) + this.mOrientationHelper.m();
         }
         LayoutState layoutState6 = this.mLayoutState;
-        layoutState6.f4902c = i11;
+        layoutState6.f5231c = i11;
         if (z10) {
-            layoutState6.f4902c = i11 - m10;
+            layoutState6.f5231c = i11 - m10;
         }
-        layoutState6.f4906g = m10;
+        layoutState6.f5235g = m10;
     }
 
     private void G(int i10, int i11) {
         int i12;
-        this.mLayoutState.f4902c = this.mOrientationHelper.i() - i11;
+        this.mLayoutState.f5231c = this.mOrientationHelper.i() - i11;
         LayoutState layoutState = this.mLayoutState;
         if (this.mShouldReverseLayout) {
             i12 = -1;
         } else {
             i12 = 1;
         }
-        layoutState.f4904e = i12;
-        layoutState.f4903d = i10;
-        layoutState.f4905f = 1;
-        layoutState.f4901b = i11;
-        layoutState.f4906g = Integer.MIN_VALUE;
+        layoutState.f5233e = i12;
+        layoutState.f5232d = i10;
+        layoutState.f5234f = 1;
+        layoutState.f5230b = i11;
+        layoutState.f5235g = Integer.MIN_VALUE;
     }
 
     private void H(AnchorInfo anchorInfo) {
-        G(anchorInfo.f4892b, anchorInfo.f4893c);
+        G(anchorInfo.f5221b, anchorInfo.f5222c);
     }
 
     private void I(int i10, int i11) {
         int i12;
-        this.mLayoutState.f4902c = i11 - this.mOrientationHelper.m();
+        this.mLayoutState.f5231c = i11 - this.mOrientationHelper.m();
         LayoutState layoutState = this.mLayoutState;
-        layoutState.f4903d = i10;
+        layoutState.f5232d = i10;
         if (this.mShouldReverseLayout) {
             i12 = 1;
         } else {
             i12 = -1;
         }
-        layoutState.f4904e = i12;
-        layoutState.f4905f = -1;
-        layoutState.f4901b = i11;
-        layoutState.f4906g = Integer.MIN_VALUE;
+        layoutState.f5233e = i12;
+        layoutState.f5234f = -1;
+        layoutState.f5230b = i11;
+        layoutState.f5235g = Integer.MIN_VALUE;
     }
 
     private void J(AnchorInfo anchorInfo) {
-        I(anchorInfo.f4892b, anchorInfo.f4893c);
+        I(anchorInfo.f5221b, anchorInfo.f5222c);
     }
 
     private int k(RecyclerView.State state) {
@@ -727,24 +727,24 @@ public class LinearLayoutManager extends RecyclerView.LayoutManager implements i
                     }
                 }
             }
-            this.mLayoutState.f4911l = k10;
+            this.mLayoutState.f5240l = k10;
             if (i12 > 0) {
                 I(getPosition(u()), i10);
                 LayoutState layoutState = this.mLayoutState;
-                layoutState.f4907h = i12;
-                layoutState.f4902c = 0;
+                layoutState.f5236h = i12;
+                layoutState.f5231c = 0;
                 layoutState.a();
                 fill(recycler, this.mLayoutState, state, false);
             }
             if (i13 > 0) {
                 G(getPosition(t()), i11);
                 LayoutState layoutState2 = this.mLayoutState;
-                layoutState2.f4907h = i13;
-                layoutState2.f4902c = 0;
+                layoutState2.f5236h = i13;
+                layoutState2.f5231c = 0;
                 layoutState2.a();
                 fill(recycler, this.mLayoutState, state, false);
             }
-            this.mLayoutState.f4911l = null;
+            this.mLayoutState.f5240l = null;
         }
     }
 
@@ -758,10 +758,10 @@ public class LinearLayoutManager extends RecyclerView.LayoutManager implements i
     }
 
     private void x(RecyclerView.Recycler recycler, LayoutState layoutState) {
-        if (layoutState.f4900a && !layoutState.f4912m) {
-            int i10 = layoutState.f4906g;
-            int i11 = layoutState.f4908i;
-            if (layoutState.f4905f == -1) {
+        if (layoutState.f5229a && !layoutState.f5241m) {
+            int i10 = layoutState.f5235g;
+            int i11 = layoutState.f5237i;
+            if (layoutState.f5234f == -1) {
                 z(recycler, i10, i11);
             } else {
                 A(recycler, i10, i11);
@@ -820,7 +820,7 @@ public class LinearLayoutManager extends RecyclerView.LayoutManager implements i
     protected void calculateExtraLayoutSpace(@NonNull RecyclerView.State state, @NonNull int[] iArr) {
         int i10;
         int extraLayoutSpace = getExtraLayoutSpace(state);
-        if (this.mLayoutState.f4905f == -1) {
+        if (this.mLayoutState.f5234f == -1) {
             i10 = 0;
         } else {
             i10 = extraLayoutSpace;
@@ -874,8 +874,8 @@ public class LinearLayoutManager extends RecyclerView.LayoutManager implements i
         int i12 = -1;
         if (savedState != null && savedState.a()) {
             SavedState savedState2 = this.mPendingSavedState;
-            z10 = savedState2.f4915i;
-            i11 = savedState2.f4913d;
+            z10 = savedState2.f5244i;
+            i11 = savedState2.f5242d;
         } else {
             B();
             z10 = this.mShouldReverseLayout;
@@ -894,9 +894,9 @@ public class LinearLayoutManager extends RecyclerView.LayoutManager implements i
     }
 
     void collectPrefetchPositionsForLayoutState(RecyclerView.State state, LayoutState layoutState, RecyclerView.LayoutManager.LayoutPrefetchRegistry layoutPrefetchRegistry) {
-        int i10 = layoutState.f4903d;
+        int i10 = layoutState.f5232d;
         if (i10 >= 0 && i10 < state.b()) {
-            layoutPrefetchRegistry.a(i10, Math.max(0, layoutState.f4906g));
+            layoutPrefetchRegistry.a(i10, Math.max(0, layoutState.f5235g));
         }
     }
 
@@ -1006,48 +1006,48 @@ public class LinearLayoutManager extends RecyclerView.LayoutManager implements i
     }
 
     int fill(RecyclerView.Recycler recycler, LayoutState layoutState, RecyclerView.State state, boolean z10) {
-        int i10 = layoutState.f4902c;
-        int i11 = layoutState.f4906g;
+        int i10 = layoutState.f5231c;
+        int i11 = layoutState.f5235g;
         if (i11 != Integer.MIN_VALUE) {
             if (i10 < 0) {
-                layoutState.f4906g = i11 + i10;
+                layoutState.f5235g = i11 + i10;
             }
             x(recycler, layoutState);
         }
-        int i12 = layoutState.f4902c + layoutState.f4907h;
+        int i12 = layoutState.f5231c + layoutState.f5236h;
         LayoutChunkResult layoutChunkResult = this.mLayoutChunkResult;
         while (true) {
-            if ((!layoutState.f4912m && i12 <= 0) || !layoutState.c(state)) {
+            if ((!layoutState.f5241m && i12 <= 0) || !layoutState.c(state)) {
                 break;
             }
             layoutChunkResult.a();
             layoutChunk(recycler, state, layoutState, layoutChunkResult);
-            if (!layoutChunkResult.f4897b) {
-                layoutState.f4901b += layoutChunkResult.f4896a * layoutState.f4905f;
-                if (!layoutChunkResult.f4898c || layoutState.f4911l != null || !state.e()) {
-                    int i13 = layoutState.f4902c;
-                    int i14 = layoutChunkResult.f4896a;
-                    layoutState.f4902c = i13 - i14;
+            if (!layoutChunkResult.f5226b) {
+                layoutState.f5230b += layoutChunkResult.f5225a * layoutState.f5234f;
+                if (!layoutChunkResult.f5227c || layoutState.f5240l != null || !state.e()) {
+                    int i13 = layoutState.f5231c;
+                    int i14 = layoutChunkResult.f5225a;
+                    layoutState.f5231c = i13 - i14;
                     i12 -= i14;
                 }
-                int i15 = layoutState.f4906g;
+                int i15 = layoutState.f5235g;
                 if (i15 != Integer.MIN_VALUE) {
-                    int i16 = i15 + layoutChunkResult.f4896a;
-                    layoutState.f4906g = i16;
-                    int i17 = layoutState.f4902c;
+                    int i16 = i15 + layoutChunkResult.f5225a;
+                    layoutState.f5235g = i16;
+                    int i17 = layoutState.f5231c;
                     if (i17 < 0) {
-                        layoutState.f4906g = i16 + i17;
+                        layoutState.f5235g = i16 + i17;
                     }
                     x(recycler, layoutState);
                 }
-                if (z10 && layoutChunkResult.f4899d) {
+                if (z10 && layoutChunkResult.f5228d) {
                     break;
                 }
             } else {
                 break;
             }
         }
-        return i10 - layoutState.f4902c;
+        return i10 - layoutState.f5231c;
     }
 
     public int findFirstCompletelyVisibleItemPosition() {
@@ -1297,13 +1297,13 @@ public class LinearLayoutManager extends RecyclerView.LayoutManager implements i
         boolean z11;
         View d10 = layoutState.d(recycler);
         if (d10 == null) {
-            layoutChunkResult.f4897b = true;
+            layoutChunkResult.f5226b = true;
             return;
         }
         RecyclerView.LayoutParams layoutParams = (RecyclerView.LayoutParams) d10.getLayoutParams();
-        if (layoutState.f4911l == null) {
+        if (layoutState.f5240l == null) {
             boolean z12 = this.mShouldReverseLayout;
-            if (layoutState.f4905f == -1) {
+            if (layoutState.f5234f == -1) {
                 z11 = true;
             } else {
                 z11 = false;
@@ -1315,7 +1315,7 @@ public class LinearLayoutManager extends RecyclerView.LayoutManager implements i
             }
         } else {
             boolean z13 = this.mShouldReverseLayout;
-            if (layoutState.f4905f == -1) {
+            if (layoutState.f5234f == -1) {
                 z10 = true;
             } else {
                 z10 = false;
@@ -1327,7 +1327,7 @@ public class LinearLayoutManager extends RecyclerView.LayoutManager implements i
             }
         }
         measureChildWithMargins(d10, 0, 0);
-        layoutChunkResult.f4896a = this.mOrientationHelper.e(d10);
+        layoutChunkResult.f5225a = this.mOrientationHelper.e(d10);
         if (this.mOrientation == 1) {
             if (isLayoutRTL()) {
                 f10 = getWidth() - getPaddingRight();
@@ -1336,12 +1336,12 @@ public class LinearLayoutManager extends RecyclerView.LayoutManager implements i
                 paddingLeft = getPaddingLeft();
                 f10 = this.mOrientationHelper.f(d10) + paddingLeft;
             }
-            if (layoutState.f4905f == -1) {
-                i15 = layoutState.f4901b;
-                i14 = i15 - layoutChunkResult.f4896a;
+            if (layoutState.f5234f == -1) {
+                i15 = layoutState.f5230b;
+                i14 = i15 - layoutChunkResult.f5225a;
             } else {
-                i14 = layoutState.f4901b;
-                i15 = layoutChunkResult.f4896a + i14;
+                i14 = layoutState.f5230b;
+                i15 = layoutChunkResult.f5225a + i14;
             }
             int i16 = paddingLeft;
             i13 = i14;
@@ -1351,14 +1351,14 @@ public class LinearLayoutManager extends RecyclerView.LayoutManager implements i
         } else {
             int paddingTop = getPaddingTop();
             int f11 = this.mOrientationHelper.f(d10) + paddingTop;
-            if (layoutState.f4905f == -1) {
-                int i17 = layoutState.f4901b;
-                i12 = i17 - layoutChunkResult.f4896a;
+            if (layoutState.f5234f == -1) {
+                int i17 = layoutState.f5230b;
+                i12 = i17 - layoutChunkResult.f5225a;
                 i10 = i17;
                 i11 = f11;
             } else {
-                int i18 = layoutState.f4901b;
-                i10 = layoutChunkResult.f4896a + i18;
+                int i18 = layoutState.f5230b;
+                i10 = layoutChunkResult.f5225a + i18;
                 i11 = f11;
                 i12 = i18;
             }
@@ -1366,9 +1366,9 @@ public class LinearLayoutManager extends RecyclerView.LayoutManager implements i
         }
         layoutDecoratedWithMargins(d10, i12, i13, i10, i11);
         if (layoutParams.c() || layoutParams.b()) {
-            layoutChunkResult.f4898c = true;
+            layoutChunkResult.f5227c = true;
         }
-        layoutChunkResult.f4899d = d10.hasFocusable();
+        layoutChunkResult.f5228d = d10.hasFocusable();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -1398,8 +1398,8 @@ public class LinearLayoutManager extends RecyclerView.LayoutManager implements i
         ensureLayoutState();
         F(convertFocusDirectionToLayoutDirection, (int) (this.mOrientationHelper.n() * MAX_SCROLL_FACTOR), false, state);
         LayoutState layoutState = this.mLayoutState;
-        layoutState.f4906g = Integer.MIN_VALUE;
-        layoutState.f4900a = false;
+        layoutState.f5235g = Integer.MIN_VALUE;
+        layoutState.f5229a = false;
         fill(recycler, layoutState, state, true);
         if (convertFocusDirectionToLayoutDirection == -1) {
             p10 = q();
@@ -1458,31 +1458,31 @@ public class LinearLayoutManager extends RecyclerView.LayoutManager implements i
         }
         SavedState savedState = this.mPendingSavedState;
         if (savedState != null && savedState.a()) {
-            this.mPendingScrollPosition = this.mPendingSavedState.f4913d;
+            this.mPendingScrollPosition = this.mPendingSavedState.f5242d;
         }
         ensureLayoutState();
-        this.mLayoutState.f4900a = false;
+        this.mLayoutState.f5229a = false;
         B();
         View focusedChild = getFocusedChild();
         AnchorInfo anchorInfo = this.mAnchorInfo;
-        if (anchorInfo.f4895e && this.mPendingScrollPosition == -1 && this.mPendingSavedState == null) {
+        if (anchorInfo.f5224e && this.mPendingScrollPosition == -1 && this.mPendingSavedState == null) {
             if (focusedChild != null && (this.mOrientationHelper.g(focusedChild) >= this.mOrientationHelper.i() || this.mOrientationHelper.d(focusedChild) <= this.mOrientationHelper.m())) {
                 this.mAnchorInfo.c(focusedChild, getPosition(focusedChild));
             }
         } else {
             anchorInfo.e();
             AnchorInfo anchorInfo2 = this.mAnchorInfo;
-            anchorInfo2.f4894d = this.mShouldReverseLayout ^ this.mStackFromEnd;
+            anchorInfo2.f5223d = this.mShouldReverseLayout ^ this.mStackFromEnd;
             E(recycler, state, anchorInfo2);
-            this.mAnchorInfo.f4895e = true;
+            this.mAnchorInfo.f5224e = true;
         }
         LayoutState layoutState = this.mLayoutState;
-        if (layoutState.f4910k >= 0) {
+        if (layoutState.f5239k >= 0) {
             i10 = 1;
         } else {
             i10 = -1;
         }
-        layoutState.f4905f = i10;
+        layoutState.f5234f = i10;
         int[] iArr = this.mReusableIntPair;
         iArr[0] = 0;
         iArr[1] = 0;
@@ -1505,68 +1505,68 @@ public class LinearLayoutManager extends RecyclerView.LayoutManager implements i
             }
         }
         AnchorInfo anchorInfo3 = this.mAnchorInfo;
-        if (!anchorInfo3.f4894d ? !this.mShouldReverseLayout : this.mShouldReverseLayout) {
+        if (!anchorInfo3.f5223d ? !this.mShouldReverseLayout : this.mShouldReverseLayout) {
             i17 = 1;
         }
         onAnchorReady(recycler, state, anchorInfo3, i17);
         detachAndScrapAttachedViews(recycler);
-        this.mLayoutState.f4912m = resolveIsInfinite();
-        this.mLayoutState.f4909j = state.e();
-        this.mLayoutState.f4908i = 0;
+        this.mLayoutState.f5241m = resolveIsInfinite();
+        this.mLayoutState.f5238j = state.e();
+        this.mLayoutState.f5237i = 0;
         AnchorInfo anchorInfo4 = this.mAnchorInfo;
-        if (anchorInfo4.f4894d) {
+        if (anchorInfo4.f5223d) {
             J(anchorInfo4);
             LayoutState layoutState2 = this.mLayoutState;
-            layoutState2.f4907h = max;
+            layoutState2.f5236h = max;
             fill(recycler, layoutState2, state, false);
             LayoutState layoutState3 = this.mLayoutState;
-            i12 = layoutState3.f4901b;
-            int i19 = layoutState3.f4903d;
-            int i20 = layoutState3.f4902c;
+            i12 = layoutState3.f5230b;
+            int i19 = layoutState3.f5232d;
+            int i20 = layoutState3.f5231c;
             if (i20 > 0) {
                 max2 += i20;
             }
             H(this.mAnchorInfo);
             LayoutState layoutState4 = this.mLayoutState;
-            layoutState4.f4907h = max2;
-            layoutState4.f4903d += layoutState4.f4904e;
+            layoutState4.f5236h = max2;
+            layoutState4.f5232d += layoutState4.f5233e;
             fill(recycler, layoutState4, state, false);
             LayoutState layoutState5 = this.mLayoutState;
-            i11 = layoutState5.f4901b;
-            int i21 = layoutState5.f4902c;
+            i11 = layoutState5.f5230b;
+            int i21 = layoutState5.f5231c;
             if (i21 > 0) {
                 I(i19, i12);
                 LayoutState layoutState6 = this.mLayoutState;
-                layoutState6.f4907h = i21;
+                layoutState6.f5236h = i21;
                 fill(recycler, layoutState6, state, false);
-                i12 = this.mLayoutState.f4901b;
+                i12 = this.mLayoutState.f5230b;
             }
         } else {
             H(anchorInfo4);
             LayoutState layoutState7 = this.mLayoutState;
-            layoutState7.f4907h = max2;
+            layoutState7.f5236h = max2;
             fill(recycler, layoutState7, state, false);
             LayoutState layoutState8 = this.mLayoutState;
-            i11 = layoutState8.f4901b;
-            int i22 = layoutState8.f4903d;
-            int i23 = layoutState8.f4902c;
+            i11 = layoutState8.f5230b;
+            int i22 = layoutState8.f5232d;
+            int i23 = layoutState8.f5231c;
             if (i23 > 0) {
                 max += i23;
             }
             J(this.mAnchorInfo);
             LayoutState layoutState9 = this.mLayoutState;
-            layoutState9.f4907h = max;
-            layoutState9.f4903d += layoutState9.f4904e;
+            layoutState9.f5236h = max;
+            layoutState9.f5232d += layoutState9.f5233e;
             fill(recycler, layoutState9, state, false);
             LayoutState layoutState10 = this.mLayoutState;
-            i12 = layoutState10.f4901b;
-            int i24 = layoutState10.f4902c;
+            i12 = layoutState10.f5230b;
+            int i24 = layoutState10.f5231c;
             if (i24 > 0) {
                 G(i22, i11);
                 LayoutState layoutState11 = this.mLayoutState;
-                layoutState11.f4907h = i24;
+                layoutState11.f5236h = i24;
                 fill(recycler, layoutState11, state, false);
-                i11 = this.mLayoutState.f4901b;
+                i11 = this.mLayoutState.f5230b;
             }
         }
         if (getChildCount() > 0) {
@@ -1626,16 +1626,16 @@ public class LinearLayoutManager extends RecyclerView.LayoutManager implements i
         if (getChildCount() > 0) {
             ensureLayoutState();
             boolean z10 = this.mLastStackFromEnd ^ this.mShouldReverseLayout;
-            savedState.f4915i = z10;
+            savedState.f5244i = z10;
             if (z10) {
                 View t10 = t();
-                savedState.f4914e = this.mOrientationHelper.i() - this.mOrientationHelper.d(t10);
-                savedState.f4913d = getPosition(t10);
+                savedState.f5243e = this.mOrientationHelper.i() - this.mOrientationHelper.d(t10);
+                savedState.f5242d = getPosition(t10);
                 return savedState;
             }
             View u10 = u();
-            savedState.f4913d = getPosition(u10);
-            savedState.f4914e = this.mOrientationHelper.g(u10) - this.mOrientationHelper.m();
+            savedState.f5242d = getPosition(u10);
+            savedState.f5243e = this.mOrientationHelper.g(u10) - this.mOrientationHelper.m();
             return savedState;
         }
         savedState.b();
@@ -1712,7 +1712,7 @@ public class LinearLayoutManager extends RecyclerView.LayoutManager implements i
             return 0;
         }
         ensureLayoutState();
-        this.mLayoutState.f4900a = true;
+        this.mLayoutState.f5229a = true;
         if (i10 > 0) {
             i11 = 1;
         } else {
@@ -1721,7 +1721,7 @@ public class LinearLayoutManager extends RecyclerView.LayoutManager implements i
         int abs = Math.abs(i10);
         F(i11, abs, true, state);
         LayoutState layoutState = this.mLayoutState;
-        int fill = layoutState.f4906g + fill(recycler, layoutState, state, false);
+        int fill = layoutState.f5235g + fill(recycler, layoutState, state, false);
         if (fill < 0) {
             return 0;
         }
@@ -1729,7 +1729,7 @@ public class LinearLayoutManager extends RecyclerView.LayoutManager implements i
             i10 = i11 * fill;
         }
         this.mOrientationHelper.r(-i10);
-        this.mLayoutState.f4910k = i10;
+        this.mLayoutState.f5239k = i10;
         return i10;
     }
 
@@ -1786,7 +1786,7 @@ public class LinearLayoutManager extends RecyclerView.LayoutManager implements i
         }
         OrientationHelper b10 = OrientationHelper.b(this, i10);
         this.mOrientationHelper = b10;
-        this.mAnchorInfo.f4891a = b10;
+        this.mAnchorInfo.f5220a = b10;
         this.mOrientation = i10;
         requestLayout();
     }
@@ -1921,8 +1921,8 @@ public class LinearLayoutManager extends RecyclerView.LayoutManager implements i
         this.mInitialPrefetchItemCount = 2;
         this.mReusableIntPair = new int[2];
         RecyclerView.LayoutManager.Properties properties = RecyclerView.LayoutManager.getProperties(context, attributeSet, i10, i11);
-        setOrientation(properties.f4927a);
-        setReverseLayout(properties.f4929c);
-        setStackFromEnd(properties.f4930d);
+        setOrientation(properties.f5256a);
+        setReverseLayout(properties.f5258c);
+        setStackFromEnd(properties.f5259d);
     }
 }

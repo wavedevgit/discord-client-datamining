@@ -34,78 +34,78 @@ public abstract class NotificationCompat {
     public static class Action {
 
         /* renamed from: a  reason: collision with root package name */
-        final Bundle f3026a;
+        final Bundle f3355a;
 
         /* renamed from: b  reason: collision with root package name */
-        private IconCompat f3027b;
+        private IconCompat f3356b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final RemoteInput[] f3028c;
+        private final RemoteInput[] f3357c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final RemoteInput[] f3029d;
+        private final RemoteInput[] f3358d;
 
         /* renamed from: e  reason: collision with root package name */
-        private boolean f3030e;
+        private boolean f3359e;
 
         /* renamed from: f  reason: collision with root package name */
-        boolean f3031f;
+        boolean f3360f;
 
         /* renamed from: g  reason: collision with root package name */
-        private final int f3032g;
+        private final int f3361g;
 
         /* renamed from: h  reason: collision with root package name */
-        private final boolean f3033h;
+        private final boolean f3362h;
 
         /* renamed from: i  reason: collision with root package name */
-        public int f3034i;
+        public int f3363i;
 
         /* renamed from: j  reason: collision with root package name */
-        public CharSequence f3035j;
+        public CharSequence f3364j;
 
         /* renamed from: k  reason: collision with root package name */
-        public PendingIntent f3036k;
+        public PendingIntent f3365k;
 
         /* renamed from: l  reason: collision with root package name */
-        private boolean f3037l;
+        private boolean f3366l;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         public static final class a {
 
             /* renamed from: a  reason: collision with root package name */
-            private final IconCompat f3038a;
+            private final IconCompat f3367a;
 
             /* renamed from: b  reason: collision with root package name */
-            private final CharSequence f3039b;
+            private final CharSequence f3368b;
 
             /* renamed from: c  reason: collision with root package name */
-            private final PendingIntent f3040c;
+            private final PendingIntent f3369c;
 
             /* renamed from: d  reason: collision with root package name */
-            private boolean f3041d;
+            private boolean f3370d;
 
             /* renamed from: e  reason: collision with root package name */
-            private final Bundle f3042e;
+            private final Bundle f3371e;
 
             /* renamed from: f  reason: collision with root package name */
-            private ArrayList f3043f;
+            private ArrayList f3372f;
 
             /* renamed from: g  reason: collision with root package name */
-            private int f3044g;
+            private int f3373g;
 
             /* renamed from: h  reason: collision with root package name */
-            private boolean f3045h;
+            private boolean f3374h;
 
             /* renamed from: i  reason: collision with root package name */
-            private boolean f3046i;
+            private boolean f3375i;
 
             /* renamed from: j  reason: collision with root package name */
-            private boolean f3047j;
+            private boolean f3376j;
 
             /* JADX INFO: Access modifiers changed from: package-private */
             /* renamed from: androidx.core.app.NotificationCompat$Action$a$a  reason: collision with other inner class name */
             /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-            public static class C0033a {
+            public static class C0031a {
                 static Bundle a(Notification.Action action) {
                     return action.getExtras();
                 }
@@ -160,7 +160,7 @@ public abstract class NotificationCompat {
             }
 
             private void d() {
-                if (!this.f3046i || this.f3040c != null) {
+                if (!this.f3375i || this.f3369c != null) {
                     return;
                 }
                 throw new NullPointerException("Contextual Actions must contain a valid PendingIntent");
@@ -173,14 +173,14 @@ public abstract class NotificationCompat {
                 } else {
                     aVar = new a(action.icon, action.title, action.actionIntent);
                 }
-                android.app.RemoteInput[] b10 = C0033a.b(action);
+                android.app.RemoteInput[] b10 = C0031a.b(action);
                 if (b10 != null && b10.length != 0) {
                     for (android.app.RemoteInput remoteInput : b10) {
                         aVar.b(RemoteInput.c(remoteInput));
                     }
                 }
                 int i10 = Build.VERSION.SDK_INT;
-                aVar.f3041d = c.a(action);
+                aVar.f3370d = c.a(action);
                 if (i10 >= 28) {
                     aVar.i(d.a(action));
                 }
@@ -190,23 +190,23 @@ public abstract class NotificationCompat {
                 if (i10 >= 31) {
                     aVar.g(f.a(action));
                 }
-                aVar.a(C0033a.a(action));
+                aVar.a(C0031a.a(action));
                 return aVar;
             }
 
             public a a(Bundle bundle) {
                 if (bundle != null) {
-                    this.f3042e.putAll(bundle);
+                    this.f3371e.putAll(bundle);
                 }
                 return this;
             }
 
             public a b(RemoteInput remoteInput) {
-                if (this.f3043f == null) {
-                    this.f3043f = new ArrayList();
+                if (this.f3372f == null) {
+                    this.f3372f = new ArrayList();
                 }
                 if (remoteInput != null) {
-                    this.f3043f.add(remoteInput);
+                    this.f3372f.add(remoteInput);
                 }
                 return this;
             }
@@ -216,7 +216,7 @@ public abstract class NotificationCompat {
                 d();
                 ArrayList arrayList = new ArrayList();
                 ArrayList arrayList2 = new ArrayList();
-                ArrayList arrayList3 = this.f3043f;
+                ArrayList arrayList3 = this.f3372f;
                 if (arrayList3 != null) {
                     Iterator it = arrayList3.iterator();
                     while (it.hasNext()) {
@@ -237,31 +237,31 @@ public abstract class NotificationCompat {
                 if (!arrayList2.isEmpty()) {
                     remoteInputArr2 = (RemoteInput[]) arrayList2.toArray(new RemoteInput[arrayList2.size()]);
                 }
-                return new Action(this.f3038a, this.f3039b, this.f3040c, this.f3042e, remoteInputArr2, remoteInputArr, this.f3041d, this.f3044g, this.f3045h, this.f3046i, this.f3047j);
+                return new Action(this.f3367a, this.f3368b, this.f3369c, this.f3371e, remoteInputArr2, remoteInputArr, this.f3370d, this.f3373g, this.f3374h, this.f3375i, this.f3376j);
             }
 
             public a f(boolean z10) {
-                this.f3041d = z10;
+                this.f3370d = z10;
                 return this;
             }
 
             public a g(boolean z10) {
-                this.f3047j = z10;
+                this.f3376j = z10;
                 return this;
             }
 
             public a h(boolean z10) {
-                this.f3046i = z10;
+                this.f3375i = z10;
                 return this;
             }
 
             public a i(int i10) {
-                this.f3044g = i10;
+                this.f3373g = i10;
                 return this;
             }
 
             public a j(boolean z10) {
-                this.f3045h = z10;
+                this.f3374h = z10;
                 return this;
             }
 
@@ -270,18 +270,18 @@ public abstract class NotificationCompat {
             }
 
             private a(IconCompat iconCompat, CharSequence charSequence, PendingIntent pendingIntent, Bundle bundle, RemoteInput[] remoteInputArr, boolean z10, int i10, boolean z11, boolean z12, boolean z13) {
-                this.f3041d = true;
-                this.f3045h = true;
-                this.f3038a = iconCompat;
-                this.f3039b = Builder.k(charSequence);
-                this.f3040c = pendingIntent;
-                this.f3042e = bundle;
-                this.f3043f = remoteInputArr == null ? null : new ArrayList(Arrays.asList(remoteInputArr));
-                this.f3041d = z10;
-                this.f3044g = i10;
-                this.f3045h = z11;
-                this.f3046i = z12;
-                this.f3047j = z13;
+                this.f3370d = true;
+                this.f3374h = true;
+                this.f3367a = iconCompat;
+                this.f3368b = Builder.k(charSequence);
+                this.f3369c = pendingIntent;
+                this.f3371e = bundle;
+                this.f3372f = remoteInputArr == null ? null : new ArrayList(Arrays.asList(remoteInputArr));
+                this.f3370d = z10;
+                this.f3373g = i10;
+                this.f3374h = z11;
+                this.f3375i = z12;
+                this.f3376j = z13;
             }
         }
 
@@ -290,47 +290,47 @@ public abstract class NotificationCompat {
         }
 
         public PendingIntent a() {
-            return this.f3036k;
+            return this.f3365k;
         }
 
         public boolean b() {
-            return this.f3030e;
+            return this.f3359e;
         }
 
         public Bundle c() {
-            return this.f3026a;
+            return this.f3355a;
         }
 
         public IconCompat d() {
             int i10;
-            if (this.f3027b == null && (i10 = this.f3034i) != 0) {
-                this.f3027b = IconCompat.l(null, "", i10);
+            if (this.f3356b == null && (i10 = this.f3363i) != 0) {
+                this.f3356b = IconCompat.l(null, "", i10);
             }
-            return this.f3027b;
+            return this.f3356b;
         }
 
         public RemoteInput[] e() {
-            return this.f3028c;
+            return this.f3357c;
         }
 
         public int f() {
-            return this.f3032g;
+            return this.f3361g;
         }
 
         public boolean g() {
-            return this.f3031f;
+            return this.f3360f;
         }
 
         public CharSequence h() {
-            return this.f3035j;
+            return this.f3364j;
         }
 
         public boolean i() {
-            return this.f3037l;
+            return this.f3366l;
         }
 
         public boolean j() {
-            return this.f3033h;
+            return this.f3362h;
         }
 
         public Action(IconCompat iconCompat, CharSequence charSequence, PendingIntent pendingIntent) {
@@ -343,21 +343,21 @@ public abstract class NotificationCompat {
         }
 
         Action(IconCompat iconCompat, CharSequence charSequence, PendingIntent pendingIntent, Bundle bundle, RemoteInput[] remoteInputArr, RemoteInput[] remoteInputArr2, boolean z10, int i10, boolean z11, boolean z12, boolean z13) {
-            this.f3031f = true;
-            this.f3027b = iconCompat;
+            this.f3360f = true;
+            this.f3356b = iconCompat;
             if (iconCompat != null && iconCompat.p() == 2) {
-                this.f3034i = iconCompat.n();
+                this.f3363i = iconCompat.n();
             }
-            this.f3035j = Builder.k(charSequence);
-            this.f3036k = pendingIntent;
-            this.f3026a = bundle == null ? new Bundle() : bundle;
-            this.f3028c = remoteInputArr;
-            this.f3029d = remoteInputArr2;
-            this.f3030e = z10;
-            this.f3032g = i10;
-            this.f3031f = z11;
-            this.f3033h = z12;
-            this.f3037l = z13;
+            this.f3364j = Builder.k(charSequence);
+            this.f3365k = pendingIntent;
+            this.f3355a = bundle == null ? new Bundle() : bundle;
+            this.f3357c = remoteInputArr;
+            this.f3358d = remoteInputArr2;
+            this.f3359e = z10;
+            this.f3361g = i10;
+            this.f3360f = z11;
+            this.f3362h = z12;
+            this.f3366l = z13;
         }
     }
 
@@ -417,19 +417,19 @@ public abstract class NotificationCompat {
     public static class e extends l {
 
         /* renamed from: e  reason: collision with root package name */
-        private IconCompat f3085e;
+        private IconCompat f3414e;
 
         /* renamed from: f  reason: collision with root package name */
-        private IconCompat f3086f;
+        private IconCompat f3415f;
 
         /* renamed from: g  reason: collision with root package name */
-        private boolean f3087g;
+        private boolean f3416g;
 
         /* renamed from: h  reason: collision with root package name */
-        private CharSequence f3088h;
+        private CharSequence f3417h;
 
         /* renamed from: i  reason: collision with root package name */
-        private boolean f3089i;
+        private boolean f3418i;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         private static class a {
@@ -480,8 +480,8 @@ public abstract class NotificationCompat {
         @Override // androidx.core.app.NotificationCompat.l
         public void b(androidx.core.app.j jVar) {
             Context context;
-            Notification.BigPictureStyle bigContentTitle = new Notification.BigPictureStyle(jVar.a()).setBigContentTitle(this.f3131b);
-            IconCompat iconCompat = this.f3085e;
+            Notification.BigPictureStyle bigContentTitle = new Notification.BigPictureStyle(jVar.a()).setBigContentTitle(this.f3460b);
+            IconCompat iconCompat = this.f3414e;
             Context context2 = null;
             if (iconCompat != null) {
                 if (Build.VERSION.SDK_INT >= 31) {
@@ -490,27 +490,27 @@ public abstract class NotificationCompat {
                     } else {
                         context = null;
                     }
-                    b.a(bigContentTitle, this.f3085e.w(context));
+                    b.a(bigContentTitle, this.f3414e.w(context));
                 } else if (iconCompat.p() == 1) {
-                    bigContentTitle = bigContentTitle.bigPicture(this.f3085e.m());
+                    bigContentTitle = bigContentTitle.bigPicture(this.f3414e.m());
                 }
             }
-            if (this.f3087g) {
-                if (this.f3086f == null) {
+            if (this.f3416g) {
+                if (this.f3415f == null) {
                     bigContentTitle.bigLargeIcon((Bitmap) null);
                 } else {
                     if (jVar instanceof o) {
                         context2 = ((o) jVar).f();
                     }
-                    a.a(bigContentTitle, this.f3086f.w(context2));
+                    a.a(bigContentTitle, this.f3415f.w(context2));
                 }
             }
-            if (this.f3133d) {
-                bigContentTitle.setSummaryText(this.f3132c);
+            if (this.f3462d) {
+                bigContentTitle.setSummaryText(this.f3461c);
             }
             if (Build.VERSION.SDK_INT >= 31) {
-                b.c(bigContentTitle, this.f3089i);
-                b.b(bigContentTitle, this.f3088h);
+                b.c(bigContentTitle, this.f3418i);
+                b.b(bigContentTitle, this.f3417h);
             }
         }
 
@@ -532,11 +532,11 @@ public abstract class NotificationCompat {
         protected void m(Bundle bundle) {
             super.m(bundle);
             if (bundle.containsKey("android.largeIcon.big")) {
-                this.f3086f = o(bundle.getParcelable("android.largeIcon.big"));
-                this.f3087g = true;
+                this.f3415f = o(bundle.getParcelable("android.largeIcon.big"));
+                this.f3416g = true;
             }
-            this.f3085e = r(bundle);
-            this.f3089i = bundle.getBoolean("android.showBigPictureWhenCollapsed");
+            this.f3414e = r(bundle);
+            this.f3418i = bundle.getBoolean("android.showBigPictureWhenCollapsed");
         }
 
         public e p(Bitmap bitmap) {
@@ -546,8 +546,8 @@ public abstract class NotificationCompat {
             } else {
                 h10 = IconCompat.h(bitmap);
             }
-            this.f3086f = h10;
-            this.f3087g = true;
+            this.f3415f = h10;
+            this.f3416g = true;
             return this;
         }
 
@@ -558,7 +558,7 @@ public abstract class NotificationCompat {
             } else {
                 h10 = IconCompat.h(bitmap);
             }
-            this.f3085e = h10;
+            this.f3414e = h10;
             return this;
         }
     }
@@ -567,7 +567,7 @@ public abstract class NotificationCompat {
     public static class f extends l {
 
         /* renamed from: e  reason: collision with root package name */
-        private CharSequence f3090e;
+        private CharSequence f3419e;
 
         @Override // androidx.core.app.NotificationCompat.l
         public void a(Bundle bundle) {
@@ -576,9 +576,9 @@ public abstract class NotificationCompat {
 
         @Override // androidx.core.app.NotificationCompat.l
         public void b(androidx.core.app.j jVar) {
-            Notification.BigTextStyle bigText = new Notification.BigTextStyle(jVar.a()).setBigContentTitle(this.f3131b).bigText(this.f3090e);
-            if (this.f3133d) {
-                bigText.setSummaryText(this.f3132c);
+            Notification.BigTextStyle bigText = new Notification.BigTextStyle(jVar.a()).setBigContentTitle(this.f3460b).bigText(this.f3419e);
+            if (this.f3462d) {
+                bigText.setSummaryText(this.f3461c);
             }
         }
 
@@ -596,11 +596,11 @@ public abstract class NotificationCompat {
         @Override // androidx.core.app.NotificationCompat.l
         protected void m(Bundle bundle) {
             super.m(bundle);
-            this.f3090e = bundle.getCharSequence("android.bigText");
+            this.f3419e = bundle.getCharSequence("android.bigText");
         }
 
         public f o(CharSequence charSequence) {
-            this.f3090e = Builder.k(charSequence);
+            this.f3419e = Builder.k(charSequence);
             return this;
         }
     }
@@ -609,25 +609,25 @@ public abstract class NotificationCompat {
     public static final class g {
 
         /* renamed from: a  reason: collision with root package name */
-        private PendingIntent f3091a;
+        private PendingIntent f3420a;
 
         /* renamed from: b  reason: collision with root package name */
-        private PendingIntent f3092b;
+        private PendingIntent f3421b;
 
         /* renamed from: c  reason: collision with root package name */
-        private IconCompat f3093c;
+        private IconCompat f3422c;
 
         /* renamed from: d  reason: collision with root package name */
-        private int f3094d;
+        private int f3423d;
 
         /* renamed from: e  reason: collision with root package name */
-        private int f3095e;
+        private int f3424e;
 
         /* renamed from: f  reason: collision with root package name */
-        private int f3096f;
+        private int f3425f;
 
         /* renamed from: g  reason: collision with root package name */
-        private String f3097g;
+        private String f3426g;
 
         /* JADX INFO: Access modifiers changed from: private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -734,84 +734,84 @@ public abstract class NotificationCompat {
         }
 
         public boolean b() {
-            if ((this.f3096f & 1) != 0) {
+            if ((this.f3425f & 1) != 0) {
                 return true;
             }
             return false;
         }
 
         public PendingIntent c() {
-            return this.f3092b;
+            return this.f3421b;
         }
 
         public int d() {
-            return this.f3094d;
+            return this.f3423d;
         }
 
         public int e() {
-            return this.f3095e;
+            return this.f3424e;
         }
 
         public IconCompat f() {
-            return this.f3093c;
+            return this.f3422c;
         }
 
         public PendingIntent g() {
-            return this.f3091a;
+            return this.f3420a;
         }
 
         public String h() {
-            return this.f3097g;
+            return this.f3426g;
         }
 
         public boolean i() {
-            if ((this.f3096f & 2) != 0) {
+            if ((this.f3425f & 2) != 0) {
                 return true;
             }
             return false;
         }
 
         public void j(int i10) {
-            this.f3096f = i10;
+            this.f3425f = i10;
         }
 
         private g(PendingIntent pendingIntent, PendingIntent pendingIntent2, IconCompat iconCompat, int i10, int i11, int i12, String str) {
-            this.f3091a = pendingIntent;
-            this.f3093c = iconCompat;
-            this.f3094d = i10;
-            this.f3095e = i11;
-            this.f3092b = pendingIntent2;
-            this.f3096f = i12;
-            this.f3097g = str;
+            this.f3420a = pendingIntent;
+            this.f3422c = iconCompat;
+            this.f3423d = i10;
+            this.f3424e = i11;
+            this.f3421b = pendingIntent2;
+            this.f3425f = i12;
+            this.f3426g = str;
         }
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         public static final class c {
 
             /* renamed from: a  reason: collision with root package name */
-            private PendingIntent f3098a;
+            private PendingIntent f3427a;
 
             /* renamed from: b  reason: collision with root package name */
-            private IconCompat f3099b;
+            private IconCompat f3428b;
 
             /* renamed from: c  reason: collision with root package name */
-            private int f3100c;
+            private int f3429c;
 
             /* renamed from: d  reason: collision with root package name */
-            private int f3101d;
+            private int f3430d;
 
             /* renamed from: e  reason: collision with root package name */
-            private int f3102e;
+            private int f3431e;
 
             /* renamed from: f  reason: collision with root package name */
-            private PendingIntent f3103f;
+            private PendingIntent f3432f;
 
             /* renamed from: g  reason: collision with root package name */
-            private String f3104g;
+            private String f3433g;
 
             public c(String str) {
                 if (!TextUtils.isEmpty(str)) {
-                    this.f3104g = str;
+                    this.f3433g = str;
                     return;
                 }
                 throw new NullPointerException("Bubble requires a non-null shortcut id");
@@ -819,23 +819,23 @@ public abstract class NotificationCompat {
 
             private c f(int i10, boolean z10) {
                 if (z10) {
-                    this.f3102e = i10 | this.f3102e;
+                    this.f3431e = i10 | this.f3431e;
                     return this;
                 }
-                this.f3102e = (~i10) & this.f3102e;
+                this.f3431e = (~i10) & this.f3431e;
                 return this;
             }
 
             public g a() {
-                String str = this.f3104g;
-                if (str == null && this.f3098a == null) {
+                String str = this.f3433g;
+                if (str == null && this.f3427a == null) {
                     throw new NullPointerException("Must supply pending intent or shortcut to bubble");
                 }
-                if (str == null && this.f3099b == null) {
+                if (str == null && this.f3428b == null) {
                     throw new NullPointerException("Must supply an icon or shortcut for the bubble");
                 }
-                g gVar = new g(this.f3098a, this.f3103f, this.f3099b, this.f3100c, this.f3101d, this.f3102e, str);
-                gVar.j(this.f3102e);
+                g gVar = new g(this.f3427a, this.f3432f, this.f3428b, this.f3429c, this.f3430d, this.f3431e, str);
+                gVar.j(this.f3431e);
                 return gVar;
             }
 
@@ -845,19 +845,19 @@ public abstract class NotificationCompat {
             }
 
             public c c(PendingIntent pendingIntent) {
-                this.f3103f = pendingIntent;
+                this.f3432f = pendingIntent;
                 return this;
             }
 
             public c d(int i10) {
-                this.f3100c = Math.max(i10, 0);
-                this.f3101d = 0;
+                this.f3429c = Math.max(i10, 0);
+                this.f3430d = 0;
                 return this;
             }
 
             public c e(int i10) {
-                this.f3101d = i10;
-                this.f3100c = 0;
+                this.f3430d = i10;
+                this.f3429c = 0;
                 return this;
             }
 
@@ -871,8 +871,8 @@ public abstract class NotificationCompat {
                     throw new NullPointerException("Bubble requires non-null pending intent");
                 }
                 if (iconCompat != null) {
-                    this.f3098a = pendingIntent;
-                    this.f3099b = iconCompat;
+                    this.f3427a = pendingIntent;
+                    this.f3428b = iconCompat;
                     return;
                 }
                 throw new NullPointerException("Bubbles require non-null icon");
@@ -884,34 +884,34 @@ public abstract class NotificationCompat {
     public static class h extends l {
 
         /* renamed from: e  reason: collision with root package name */
-        private int f3105e;
+        private int f3434e;
 
         /* renamed from: f  reason: collision with root package name */
-        private Person f3106f;
+        private Person f3435f;
 
         /* renamed from: g  reason: collision with root package name */
-        private PendingIntent f3107g;
+        private PendingIntent f3436g;
 
         /* renamed from: h  reason: collision with root package name */
-        private PendingIntent f3108h;
+        private PendingIntent f3437h;
 
         /* renamed from: i  reason: collision with root package name */
-        private PendingIntent f3109i;
+        private PendingIntent f3438i;
 
         /* renamed from: j  reason: collision with root package name */
-        private boolean f3110j;
+        private boolean f3439j;
 
         /* renamed from: k  reason: collision with root package name */
-        private Integer f3111k;
+        private Integer f3440k;
 
         /* renamed from: l  reason: collision with root package name */
-        private Integer f3112l;
+        private Integer f3441l;
 
         /* renamed from: m  reason: collision with root package name */
-        private IconCompat f3113m;
+        private IconCompat f3442m;
 
         /* renamed from: n  reason: collision with root package name */
-        private CharSequence f3114n;
+        private CharSequence f3443n;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         static class a {
@@ -982,17 +982,17 @@ public abstract class NotificationCompat {
         }
 
         private String p() {
-            int i10 = this.f3105e;
+            int i10 = this.f3434e;
             if (i10 != 1) {
                 if (i10 != 2) {
                     if (i10 != 3) {
                         return null;
                     }
-                    return this.f3130a.f3048a.getResources().getString(o1.f.f42134g);
+                    return this.f3459a.f3377a.getResources().getString(o1.f.f41357g);
                 }
-                return this.f3130a.f3048a.getResources().getString(o1.f.f42133f);
+                return this.f3459a.f3377a.getResources().getString(o1.f.f41356f);
             }
-            return this.f3130a.f3048a.getResources().getString(o1.f.f42132e);
+            return this.f3459a.f3377a.getResources().getString(o1.f.f41355e);
         }
 
         private boolean q(Action action) {
@@ -1004,12 +1004,12 @@ public abstract class NotificationCompat {
 
         private Action r(int i10, int i11, Integer num, int i12, PendingIntent pendingIntent) {
             if (num == null) {
-                num = Integer.valueOf(androidx.core.content.a.c(this.f3130a.f3048a, i12));
+                num = Integer.valueOf(androidx.core.content.a.c(this.f3459a.f3377a, i12));
             }
             SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder();
-            spannableStringBuilder.append((CharSequence) this.f3130a.f3048a.getResources().getString(i11));
+            spannableStringBuilder.append((CharSequence) this.f3459a.f3377a.getResources().getString(i11));
             spannableStringBuilder.setSpan(new ForegroundColorSpan(num.intValue()), 0, spannableStringBuilder.length(), 18);
-            Action c10 = new Action.a(IconCompat.k(this.f3130a.f3048a, i10), spannableStringBuilder, pendingIntent).c();
+            Action c10 = new Action.a(IconCompat.k(this.f3459a.f3377a, i10), spannableStringBuilder, pendingIntent).c();
             c10.c().putBoolean("key_action_priority", true);
             return c10;
         }
@@ -1017,41 +1017,41 @@ public abstract class NotificationCompat {
         private Action s() {
             int i10;
             int i11;
-            int i12 = o1.d.f42100b;
-            int i13 = o1.d.f42099a;
-            PendingIntent pendingIntent = this.f3107g;
+            int i12 = o1.d.f41323b;
+            int i13 = o1.d.f41322a;
+            PendingIntent pendingIntent = this.f3436g;
             if (pendingIntent == null) {
                 return null;
             }
-            boolean z10 = this.f3110j;
+            boolean z10 = this.f3439j;
             if (z10) {
                 i10 = i12;
             } else {
                 i10 = i13;
             }
             if (z10) {
-                i11 = o1.f.f42129b;
+                i11 = o1.f.f41352b;
             } else {
-                i11 = o1.f.f42128a;
+                i11 = o1.f.f41351a;
             }
-            return r(i10, i11, this.f3111k, o1.b.f42095a, pendingIntent);
+            return r(i10, i11, this.f3440k, o1.b.f41318a, pendingIntent);
         }
 
         private Action t() {
-            int i10 = o1.d.f42101c;
-            PendingIntent pendingIntent = this.f3108h;
+            int i10 = o1.d.f41324c;
+            PendingIntent pendingIntent = this.f3437h;
             if (pendingIntent == null) {
-                return r(i10, o1.f.f42131d, this.f3112l, o1.b.f42096b, this.f3109i);
+                return r(i10, o1.f.f41354d, this.f3441l, o1.b.f41319b, this.f3438i);
             }
-            return r(i10, o1.f.f42130c, this.f3112l, o1.b.f42096b, pendingIntent);
+            return r(i10, o1.f.f41353c, this.f3441l, o1.b.f41319b, pendingIntent);
         }
 
         @Override // androidx.core.app.NotificationCompat.l
         public void a(Bundle bundle) {
             super.a(bundle);
-            bundle.putInt("android.callType", this.f3105e);
-            bundle.putBoolean("android.callIsVideo", this.f3110j);
-            Person person = this.f3106f;
+            bundle.putInt("android.callType", this.f3434e);
+            bundle.putBoolean("android.callIsVideo", this.f3439j);
+            Person person = this.f3435f;
             if (person != null) {
                 if (Build.VERSION.SDK_INT >= 28) {
                     bundle.putParcelable("android.callPerson", c.b(person.k()));
@@ -1059,19 +1059,19 @@ public abstract class NotificationCompat {
                     bundle.putParcelable("android.callPersonCompat", person.l());
                 }
             }
-            IconCompat iconCompat = this.f3113m;
+            IconCompat iconCompat = this.f3442m;
             if (iconCompat != null) {
-                bundle.putParcelable("android.verificationIcon", b.a(iconCompat.w(this.f3130a.f3048a)));
+                bundle.putParcelable("android.verificationIcon", b.a(iconCompat.w(this.f3459a.f3377a)));
             }
-            bundle.putCharSequence("android.verificationText", this.f3114n);
-            bundle.putParcelable("android.answerIntent", this.f3107g);
-            bundle.putParcelable("android.declineIntent", this.f3108h);
-            bundle.putParcelable("android.hangUpIntent", this.f3109i);
-            Integer num = this.f3111k;
+            bundle.putCharSequence("android.verificationText", this.f3443n);
+            bundle.putParcelable("android.answerIntent", this.f3436g);
+            bundle.putParcelable("android.declineIntent", this.f3437h);
+            bundle.putParcelable("android.hangUpIntent", this.f3438i);
+            Integer num = this.f3440k;
             if (num != null) {
                 bundle.putInt("android.answerColor", num.intValue());
             }
-            Integer num2 = this.f3112l;
+            Integer num2 = this.f3441l;
             if (num2 != null) {
                 bundle.putInt("android.declineColor", num2.intValue());
             }
@@ -1086,67 +1086,67 @@ public abstract class NotificationCompat {
             Notification.CallStyle a10 = null;
             charSequence2 = null;
             if (i10 >= 31) {
-                int i11 = this.f3105e;
+                int i11 = this.f3434e;
                 if (i11 != 1) {
                     if (i11 != 2) {
                         if (i11 != 3) {
                             if (Log.isLoggable("NotifCompat", 3)) {
-                                Log.d("NotifCompat", "Unrecognized call type in CallStyle: " + String.valueOf(this.f3105e));
+                                Log.d("NotifCompat", "Unrecognized call type in CallStyle: " + String.valueOf(this.f3434e));
                             }
                         } else {
-                            a10 = d.c(this.f3106f.k(), this.f3109i, this.f3107g);
+                            a10 = d.c(this.f3435f.k(), this.f3438i, this.f3436g);
                         }
                     } else {
-                        a10 = d.b(this.f3106f.k(), this.f3109i);
+                        a10 = d.b(this.f3435f.k(), this.f3438i);
                     }
                 } else {
-                    a10 = d.a(this.f3106f.k(), this.f3108h, this.f3107g);
+                    a10 = d.a(this.f3435f.k(), this.f3437h, this.f3436g);
                 }
                 if (a10 != null) {
                     a10.setBuilder(jVar.a());
-                    Integer num = this.f3111k;
+                    Integer num = this.f3440k;
                     if (num != null) {
                         d.d(a10, num.intValue());
                     }
-                    Integer num2 = this.f3112l;
+                    Integer num2 = this.f3441l;
                     if (num2 != null) {
                         d.e(a10, num2.intValue());
                     }
-                    d.h(a10, this.f3114n);
-                    IconCompat iconCompat = this.f3113m;
+                    d.h(a10, this.f3443n);
+                    IconCompat iconCompat = this.f3442m;
                     if (iconCompat != null) {
-                        d.g(a10, iconCompat.w(this.f3130a.f3048a));
+                        d.g(a10, iconCompat.w(this.f3459a.f3377a));
                     }
-                    d.f(a10, this.f3110j);
+                    d.f(a10, this.f3439j);
                     return;
                 }
                 return;
             }
             Notification.Builder a11 = jVar.a();
-            Person person = this.f3106f;
+            Person person = this.f3435f;
             if (person != null) {
                 charSequence = person.f();
             } else {
                 charSequence = null;
             }
             a11.setContentTitle(charSequence);
-            Bundle bundle = this.f3130a.F;
+            Bundle bundle = this.f3459a.F;
             if (bundle != null && bundle.containsKey("android.text")) {
-                charSequence2 = this.f3130a.F.getCharSequence("android.text");
+                charSequence2 = this.f3459a.F.getCharSequence("android.text");
             }
             if (charSequence2 == null) {
                 charSequence2 = p();
             }
             a11.setContentText(charSequence2);
-            Person person2 = this.f3106f;
+            Person person2 = this.f3435f;
             if (person2 != null) {
                 if (person2.d() != null) {
-                    b.b(a11, this.f3106f.d().w(this.f3130a.f3048a));
+                    b.b(a11, this.f3435f.d().w(this.f3459a.f3377a));
                 }
                 if (i10 >= 28) {
-                    c.a(a11, this.f3106f.k());
+                    c.a(a11, this.f3435f.k());
                 } else {
-                    a.a(a11, this.f3106f.g());
+                    a.a(a11, this.f3435f.g());
                 }
             }
             a.b(a11, "call");
@@ -1161,33 +1161,33 @@ public abstract class NotificationCompat {
         protected void m(Bundle bundle) {
             Integer num;
             super.m(bundle);
-            this.f3105e = bundle.getInt("android.callType");
-            this.f3110j = bundle.getBoolean("android.callIsVideo");
+            this.f3434e = bundle.getInt("android.callType");
+            this.f3439j = bundle.getBoolean("android.callIsVideo");
             if (Build.VERSION.SDK_INT >= 28 && bundle.containsKey("android.callPerson")) {
-                this.f3106f = Person.a(androidx.core.app.l.a(bundle.getParcelable("android.callPerson")));
+                this.f3435f = Person.a(androidx.core.app.l.a(bundle.getParcelable("android.callPerson")));
             } else if (bundle.containsKey("android.callPersonCompat")) {
-                this.f3106f = Person.b(bundle.getBundle("android.callPersonCompat"));
+                this.f3435f = Person.b(bundle.getBundle("android.callPersonCompat"));
             }
             if (bundle.containsKey("android.verificationIcon")) {
-                this.f3113m = IconCompat.b((Icon) bundle.getParcelable("android.verificationIcon"));
+                this.f3442m = IconCompat.b((Icon) bundle.getParcelable("android.verificationIcon"));
             } else if (bundle.containsKey("android.verificationIconCompat")) {
-                this.f3113m = IconCompat.a(bundle.getBundle("android.verificationIconCompat"));
+                this.f3442m = IconCompat.a(bundle.getBundle("android.verificationIconCompat"));
             }
-            this.f3114n = bundle.getCharSequence("android.verificationText");
-            this.f3107g = (PendingIntent) bundle.getParcelable("android.answerIntent");
-            this.f3108h = (PendingIntent) bundle.getParcelable("android.declineIntent");
-            this.f3109i = (PendingIntent) bundle.getParcelable("android.hangUpIntent");
+            this.f3443n = bundle.getCharSequence("android.verificationText");
+            this.f3436g = (PendingIntent) bundle.getParcelable("android.answerIntent");
+            this.f3437h = (PendingIntent) bundle.getParcelable("android.declineIntent");
+            this.f3438i = (PendingIntent) bundle.getParcelable("android.hangUpIntent");
             Integer num2 = null;
             if (bundle.containsKey("android.answerColor")) {
                 num = Integer.valueOf(bundle.getInt("android.answerColor"));
             } else {
                 num = null;
             }
-            this.f3111k = num;
+            this.f3440k = num;
             if (bundle.containsKey("android.declineColor")) {
                 num2 = Integer.valueOf(bundle.getInt("android.declineColor"));
             }
-            this.f3112l = num2;
+            this.f3441l = num2;
         }
 
         public ArrayList o() {
@@ -1195,7 +1195,7 @@ public abstract class NotificationCompat {
             Action s10 = s();
             ArrayList arrayList = new ArrayList(3);
             arrayList.add(t10);
-            ArrayList<Action> arrayList2 = this.f3130a.f3049b;
+            ArrayList<Action> arrayList2 = this.f3459a.f3378b;
             int i10 = 2;
             if (arrayList2 != null) {
                 for (Action action : arrayList2) {
@@ -1258,15 +1258,15 @@ public abstract class NotificationCompat {
     public static class j extends l {
 
         /* renamed from: e  reason: collision with root package name */
-        private ArrayList f3115e = new ArrayList();
+        private ArrayList f3444e = new ArrayList();
 
         @Override // androidx.core.app.NotificationCompat.l
         public void b(androidx.core.app.j jVar) {
-            Notification.InboxStyle bigContentTitle = new Notification.InboxStyle(jVar.a()).setBigContentTitle(this.f3131b);
-            if (this.f3133d) {
-                bigContentTitle.setSummaryText(this.f3132c);
+            Notification.InboxStyle bigContentTitle = new Notification.InboxStyle(jVar.a()).setBigContentTitle(this.f3460b);
+            if (this.f3462d) {
+                bigContentTitle.setSummaryText(this.f3461c);
             }
-            Iterator it = this.f3115e.iterator();
+            Iterator it = this.f3444e.iterator();
             while (it.hasNext()) {
                 bigContentTitle.addLine((CharSequence) it.next());
             }
@@ -1286,9 +1286,9 @@ public abstract class NotificationCompat {
         @Override // androidx.core.app.NotificationCompat.l
         protected void m(Bundle bundle) {
             super.m(bundle);
-            this.f3115e.clear();
+            this.f3444e.clear();
             if (bundle.containsKey("android.textLines")) {
-                Collections.addAll(this.f3115e, bundle.getCharSequenceArray("android.textLines"));
+                Collections.addAll(this.f3444e, bundle.getCharSequenceArray("android.textLines"));
             }
         }
     }
@@ -1297,28 +1297,28 @@ public abstract class NotificationCompat {
     public static class k extends l {
 
         /* renamed from: h  reason: collision with root package name */
-        private boolean f3119h;
+        private boolean f3448h;
 
         /* renamed from: j  reason: collision with root package name */
-        private IconCompat f3121j;
+        private IconCompat f3450j;
 
         /* renamed from: k  reason: collision with root package name */
-        private IconCompat f3122k;
+        private IconCompat f3451k;
 
         /* renamed from: l  reason: collision with root package name */
-        private IconCompat f3123l;
+        private IconCompat f3452l;
 
         /* renamed from: e  reason: collision with root package name */
-        private List f3116e = new ArrayList();
+        private List f3445e = new ArrayList();
 
         /* renamed from: f  reason: collision with root package name */
-        private List f3117f = new ArrayList();
+        private List f3446f = new ArrayList();
 
         /* renamed from: g  reason: collision with root package name */
-        private int f3118g = 0;
+        private int f3447g = 0;
 
         /* renamed from: i  reason: collision with root package name */
-        private boolean f3120i = true;
+        private boolean f3449i = true;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         private static final class a {
@@ -1363,37 +1363,37 @@ public abstract class NotificationCompat {
         public static final class b {
 
             /* renamed from: a  reason: collision with root package name */
-            private int f3124a;
+            private int f3453a;
 
             /* renamed from: b  reason: collision with root package name */
-            private int f3125b = 0;
+            private int f3454b = 0;
 
             /* renamed from: c  reason: collision with root package name */
-            private int f3126c = 0;
+            private int f3455c = 0;
 
             public b(int i10) {
-                this.f3124a = i10;
+                this.f3453a = i10;
             }
 
             public int a() {
-                return this.f3126c;
+                return this.f3455c;
             }
 
             public int b() {
-                return this.f3125b;
+                return this.f3454b;
             }
 
             public int c() {
-                return this.f3124a;
+                return this.f3453a;
             }
 
             public b d(int i10) {
-                this.f3126c = i10;
+                this.f3455c = i10;
                 return this;
             }
 
             public b e(int i10) {
-                this.f3125b = i10;
+                this.f3454b = i10;
                 return this;
             }
         }
@@ -1402,37 +1402,37 @@ public abstract class NotificationCompat {
         public static final class c {
 
             /* renamed from: a  reason: collision with root package name */
-            private int f3127a;
+            private int f3456a;
 
             /* renamed from: b  reason: collision with root package name */
-            private int f3128b = 0;
+            private int f3457b = 0;
 
             /* renamed from: c  reason: collision with root package name */
-            private int f3129c = 0;
+            private int f3458c = 0;
 
             public c(int i10) {
-                this.f3127a = i10;
+                this.f3456a = i10;
             }
 
             public int a() {
-                return this.f3129c;
+                return this.f3458c;
             }
 
             public int b() {
-                return this.f3128b;
+                return this.f3457b;
             }
 
             public int c() {
-                return this.f3127a;
+                return this.f3456a;
             }
 
             public c d(int i10) {
-                this.f3129c = i10;
+                this.f3458c = i10;
                 return this;
             }
 
             public c e(int i10) {
-                this.f3128b = i10;
+                this.f3457b = i10;
                 return this;
             }
         }
@@ -1517,32 +1517,32 @@ public abstract class NotificationCompat {
             Context context;
             super.a(bundle);
             if (Build.VERSION.SDK_INT < 36) {
-                bundle.putParcelableArrayList("android.progressSegments", s(this.f3116e));
-                bundle.putParcelableArrayList("android.progressPoints", q(this.f3117f));
-                bundle.putInt("android.progress", this.f3118g);
-                bundle.putBoolean("android.progressIndeterminate", this.f3119h);
+                bundle.putParcelableArrayList("android.progressSegments", s(this.f3445e));
+                bundle.putParcelableArrayList("android.progressPoints", q(this.f3446f));
+                bundle.putInt("android.progress", this.f3447g);
+                bundle.putBoolean("android.progressIndeterminate", this.f3448h);
                 bundle.putInt("android.progressMax", p());
-                bundle.putBoolean("android.styledByProgress", this.f3120i);
-                Builder builder = this.f3130a;
+                bundle.putBoolean("android.styledByProgress", this.f3449i);
+                Builder builder = this.f3459a;
                 if (builder != null) {
-                    context = builder.f3048a;
+                    context = builder.f3377a;
                 } else {
                     context = null;
                 }
                 if (context != null) {
-                    IconCompat iconCompat = this.f3121j;
+                    IconCompat iconCompat = this.f3450j;
                     if (iconCompat != null) {
                         bundle.putParcelable("android.progressTrackerIcon", iconCompat.w(context));
                     } else {
                         bundle.remove("android.progressTrackerIcon");
                     }
-                    IconCompat iconCompat2 = this.f3122k;
+                    IconCompat iconCompat2 = this.f3451k;
                     if (iconCompat2 != null) {
                         bundle.putParcelable("android.progressStartIcon", iconCompat2.w(context));
                     } else {
                         bundle.remove("android.progressStartIcon");
                     }
-                    IconCompat iconCompat3 = this.f3123l;
+                    IconCompat iconCompat3 = this.f3452l;
                     if (iconCompat3 != null) {
                         bundle.putParcelable("android.progressEndIcon", iconCompat3.w(context));
                     } else {
@@ -1566,35 +1566,35 @@ public abstract class NotificationCompat {
                     context = null;
                 }
                 Notification.ProgressStyle a11 = m.a();
-                a.h(a11, this.f3120i);
-                a.a(a11, this.f3118g);
-                a.c(a11, this.f3119h);
-                IconCompat iconCompat = this.f3122k;
+                a.h(a11, this.f3449i);
+                a.a(a11, this.f3447g);
+                a.c(a11, this.f3448h);
+                IconCompat iconCompat = this.f3451k;
                 if (iconCompat != null) {
                     icon = iconCompat.w(context);
                 } else {
                     icon = null;
                 }
                 a.f(a11, icon);
-                IconCompat iconCompat2 = this.f3123l;
+                IconCompat iconCompat2 = this.f3452l;
                 if (iconCompat2 != null) {
                     icon2 = iconCompat2.w(context);
                 } else {
                     icon2 = null;
                 }
                 a.b(a11, icon2);
-                IconCompat iconCompat3 = this.f3121j;
+                IconCompat iconCompat3 = this.f3450j;
                 if (iconCompat3 != null) {
                     icon3 = iconCompat3.w(context);
                 }
                 a.g(a11, icon3);
-                a.d(a11, this.f3117f);
-                a.e(a11, this.f3116e);
+                a.d(a11, this.f3446f);
+                a.e(a11, this.f3445e);
                 a10.setStyle(a11);
                 return;
             }
             int p10 = p();
-            a10.setProgress(p10, Math.min(this.f3118g, p10), this.f3119h);
+            a10.setProgress(p10, Math.min(this.f3447g, p10), this.f3448h);
         }
 
         @Override // androidx.core.app.NotificationCompat.l
@@ -1618,18 +1618,18 @@ public abstract class NotificationCompat {
         @Override // androidx.core.app.NotificationCompat.l
         protected void m(Bundle bundle) {
             super.m(bundle);
-            this.f3116e = t(w1.b.b(bundle, "android.progressSegments", Bundle.class));
-            this.f3118g = bundle.getInt("android.progress", 0);
-            this.f3119h = bundle.getBoolean("android.progressIndeterminate", false);
-            this.f3120i = bundle.getBoolean("android.styledByProgress", true);
-            this.f3117f = r(w1.b.b(bundle, "android.progressPoints", Bundle.class));
-            this.f3121j = o((Parcelable) w1.b.a(bundle, "android.progressTrackerIcon", Icon.class));
-            this.f3122k = o((Parcelable) w1.b.a(bundle, "android.progressStartIcon", Icon.class));
-            this.f3123l = o((Parcelable) w1.b.a(bundle, "android.progressEndIcon", Icon.class));
+            this.f3445e = t(w1.b.b(bundle, "android.progressSegments", Bundle.class));
+            this.f3447g = bundle.getInt("android.progress", 0);
+            this.f3448h = bundle.getBoolean("android.progressIndeterminate", false);
+            this.f3449i = bundle.getBoolean("android.styledByProgress", true);
+            this.f3446f = r(w1.b.b(bundle, "android.progressPoints", Bundle.class));
+            this.f3450j = o((Parcelable) w1.b.a(bundle, "android.progressTrackerIcon", Icon.class));
+            this.f3451k = o((Parcelable) w1.b.a(bundle, "android.progressStartIcon", Icon.class));
+            this.f3452l = o((Parcelable) w1.b.a(bundle, "android.progressEndIcon", Icon.class));
         }
 
         public int p() {
-            List list = this.f3116e;
+            List list = this.f3445e;
             if (list == null || list.isEmpty()) {
                 return 100;
             }
@@ -1657,16 +1657,16 @@ public abstract class NotificationCompat {
     public static abstract class l {
 
         /* renamed from: a  reason: collision with root package name */
-        protected Builder f3130a;
+        protected Builder f3459a;
 
         /* renamed from: b  reason: collision with root package name */
-        CharSequence f3131b;
+        CharSequence f3460b;
 
         /* renamed from: c  reason: collision with root package name */
-        CharSequence f3132c;
+        CharSequence f3461c;
 
         /* renamed from: d  reason: collision with root package name */
-        boolean f3133d = false;
+        boolean f3462d = false;
 
         static l d(String str) {
             if (str != null) {
@@ -1810,10 +1810,10 @@ public abstract class NotificationCompat {
         }
 
         public void a(Bundle bundle) {
-            if (this.f3133d) {
-                bundle.putCharSequence("android.summaryText", this.f3132c);
+            if (this.f3462d) {
+                bundle.putCharSequence("android.summaryText", this.f3461c);
             }
-            CharSequence charSequence = this.f3131b;
+            CharSequence charSequence = this.f3460b;
             if (charSequence != null) {
                 bundle.putCharSequence("android.title.big", charSequence);
             }
@@ -1847,15 +1847,15 @@ public abstract class NotificationCompat {
 
         protected void m(Bundle bundle) {
             if (bundle.containsKey("android.summaryText")) {
-                this.f3132c = bundle.getCharSequence("android.summaryText");
-                this.f3133d = true;
+                this.f3461c = bundle.getCharSequence("android.summaryText");
+                this.f3462d = true;
             }
-            this.f3131b = bundle.getCharSequence("android.title.big");
+            this.f3460b = bundle.getCharSequence("android.title.big");
         }
 
         public void n(Builder builder) {
-            if (this.f3130a != builder) {
-                this.f3130a = builder;
+            if (this.f3459a != builder) {
+                this.f3459a = builder;
                 if (builder != null) {
                     builder.Z(this);
                 }
@@ -1877,8 +1877,8 @@ public abstract class NotificationCompat {
     public static Bitmap C(Context context, Bitmap bitmap) {
         if (bitmap != null && Build.VERSION.SDK_INT < 27) {
             Resources resources = context.getResources();
-            int dimensionPixelSize = resources.getDimensionPixelSize(o1.c.f42098b);
-            int dimensionPixelSize2 = resources.getDimensionPixelSize(o1.c.f42097a);
+            int dimensionPixelSize = resources.getDimensionPixelSize(o1.c.f41321b);
+            int dimensionPixelSize2 = resources.getDimensionPixelSize(o1.c.f41320a);
             if (bitmap.getWidth() <= dimensionPixelSize && bitmap.getHeight() <= dimensionPixelSize2) {
                 return bitmap;
             }
@@ -2044,19 +2044,19 @@ public abstract class NotificationCompat {
     public static class MessagingStyle extends l {
 
         /* renamed from: e  reason: collision with root package name */
-        private final List f3074e = new ArrayList();
+        private final List f3403e = new ArrayList();
 
         /* renamed from: f  reason: collision with root package name */
-        private final List f3075f = new ArrayList();
+        private final List f3404f = new ArrayList();
 
         /* renamed from: g  reason: collision with root package name */
-        private Person f3076g;
+        private Person f3405g;
 
         /* renamed from: h  reason: collision with root package name */
-        private CharSequence f3077h;
+        private CharSequence f3406h;
 
         /* renamed from: i  reason: collision with root package name */
-        private Boolean f3078i;
+        private Boolean f3407i;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         static class a {
@@ -2095,22 +2095,22 @@ public abstract class NotificationCompat {
         public static final class d {
 
             /* renamed from: a  reason: collision with root package name */
-            private final CharSequence f3079a;
+            private final CharSequence f3408a;
 
             /* renamed from: b  reason: collision with root package name */
-            private final long f3080b;
+            private final long f3409b;
 
             /* renamed from: c  reason: collision with root package name */
-            private final Person f3081c;
+            private final Person f3410c;
 
             /* renamed from: d  reason: collision with root package name */
-            private Bundle f3082d = new Bundle();
+            private Bundle f3411d = new Bundle();
 
             /* renamed from: e  reason: collision with root package name */
-            private String f3083e;
+            private String f3412e;
 
             /* renamed from: f  reason: collision with root package name */
-            private Uri f3084f;
+            private Uri f3413f;
 
             /* JADX INFO: Access modifiers changed from: package-private */
             /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -2137,9 +2137,9 @@ public abstract class NotificationCompat {
             }
 
             public d(CharSequence charSequence, long j10, Person person) {
-                this.f3079a = charSequence;
-                this.f3080b = j10;
-                this.f3081c = person;
+                this.f3408a = charSequence;
+                this.f3409b = j10;
+                this.f3410c = person;
             }
 
             static Bundle[] a(List list) {
@@ -2191,29 +2191,29 @@ public abstract class NotificationCompat {
 
             private Bundle l() {
                 Bundle bundle = new Bundle();
-                CharSequence charSequence = this.f3079a;
+                CharSequence charSequence = this.f3408a;
                 if (charSequence != null) {
                     bundle.putCharSequence("text", charSequence);
                 }
-                bundle.putLong("time", this.f3080b);
-                Person person = this.f3081c;
+                bundle.putLong("time", this.f3409b);
+                Person person = this.f3410c;
                 if (person != null) {
                     bundle.putCharSequence("sender", person.f());
                     if (Build.VERSION.SDK_INT >= 28) {
-                        bundle.putParcelable("sender_person", b.a(this.f3081c.k()));
+                        bundle.putParcelable("sender_person", b.a(this.f3410c.k()));
                     } else {
-                        bundle.putBundle("person", this.f3081c.l());
+                        bundle.putBundle("person", this.f3410c.l());
                     }
                 }
-                String str = this.f3083e;
+                String str = this.f3412e;
                 if (str != null) {
                     bundle.putString("type", str);
                 }
-                Uri uri = this.f3084f;
+                Uri uri = this.f3413f;
                 if (uri != null) {
                     bundle.putParcelable("uri", uri);
                 }
-                Bundle bundle2 = this.f3082d;
+                Bundle bundle2 = this.f3411d;
                 if (bundle2 != null) {
                     bundle.putBundle("extras", bundle2);
                 }
@@ -2221,32 +2221,32 @@ public abstract class NotificationCompat {
             }
 
             public String b() {
-                return this.f3083e;
+                return this.f3412e;
             }
 
             public Uri c() {
-                return this.f3084f;
+                return this.f3413f;
             }
 
             public Bundle d() {
-                return this.f3082d;
+                return this.f3411d;
             }
 
             public Person g() {
-                return this.f3081c;
+                return this.f3410c;
             }
 
             public CharSequence h() {
-                return this.f3079a;
+                return this.f3408a;
             }
 
             public long i() {
-                return this.f3080b;
+                return this.f3409b;
             }
 
             public d j(String str, Uri uri) {
-                this.f3083e = str;
-                this.f3084f = uri;
+                this.f3412e = str;
+                this.f3413f = uri;
                 return this;
             }
 
@@ -2291,19 +2291,19 @@ public abstract class NotificationCompat {
         @Override // androidx.core.app.NotificationCompat.l
         public void a(Bundle bundle) {
             super.a(bundle);
-            bundle.putCharSequence("android.selfDisplayName", this.f3076g.f());
-            bundle.putBundle("android.messagingStyleUser", this.f3076g.l());
-            bundle.putCharSequence("android.hiddenConversationTitle", this.f3077h);
-            if (this.f3077h != null && this.f3078i.booleanValue()) {
-                bundle.putCharSequence("android.conversationTitle", this.f3077h);
+            bundle.putCharSequence("android.selfDisplayName", this.f3405g.f());
+            bundle.putBundle("android.messagingStyleUser", this.f3405g.l());
+            bundle.putCharSequence("android.hiddenConversationTitle", this.f3406h);
+            if (this.f3406h != null && this.f3407i.booleanValue()) {
+                bundle.putCharSequence("android.conversationTitle", this.f3406h);
             }
-            if (!this.f3074e.isEmpty()) {
-                bundle.putParcelableArray("android.messages", d.a(this.f3074e));
+            if (!this.f3403e.isEmpty()) {
+                bundle.putParcelableArray("android.messages", d.a(this.f3403e));
             }
-            if (!this.f3075f.isEmpty()) {
-                bundle.putParcelableArray("android.messages.historic", d.a(this.f3075f));
+            if (!this.f3404f.isEmpty()) {
+                bundle.putParcelableArray("android.messages.historic", d.a(this.f3404f));
             }
-            Boolean bool = this.f3078i;
+            Boolean bool = this.f3407i;
             if (bool != null) {
                 bundle.putBoolean("android.isGroupConversation", bool.booleanValue());
             }
@@ -2314,23 +2314,23 @@ public abstract class NotificationCompat {
             Notification.MessagingStyle b10;
             t(r());
             if (Build.VERSION.SDK_INT >= 28) {
-                b10 = c.a(this.f3076g.k());
+                b10 = c.a(this.f3405g.k());
             } else {
-                b10 = a.b(this.f3076g.f());
+                b10 = a.b(this.f3405g.f());
             }
-            for (d dVar : this.f3074e) {
+            for (d dVar : this.f3403e) {
                 a.a(b10, dVar.k());
             }
             if (Build.VERSION.SDK_INT >= 26) {
-                for (d dVar2 : this.f3075f) {
+                for (d dVar2 : this.f3404f) {
                     b.a(b10, dVar2.k());
                 }
             }
-            if (this.f3078i.booleanValue() || Build.VERSION.SDK_INT >= 28) {
-                a.c(b10, this.f3077h);
+            if (this.f3407i.booleanValue() || Build.VERSION.SDK_INT >= 28) {
+                a.c(b10, this.f3406h);
             }
             if (Build.VERSION.SDK_INT >= 28) {
-                c.b(b10, this.f3078i.booleanValue());
+                c.b(b10, this.f3407i.booleanValue());
             }
             b10.setBuilder(jVar.a());
         }
@@ -2355,53 +2355,53 @@ public abstract class NotificationCompat {
         @Override // androidx.core.app.NotificationCompat.l
         protected void m(Bundle bundle) {
             super.m(bundle);
-            this.f3074e.clear();
+            this.f3403e.clear();
             if (bundle.containsKey("android.messagingStyleUser")) {
-                this.f3076g = Person.b(bundle.getBundle("android.messagingStyleUser"));
+                this.f3405g = Person.b(bundle.getBundle("android.messagingStyleUser"));
             } else {
-                this.f3076g = new Person.c().f(bundle.getString("android.selfDisplayName")).a();
+                this.f3405g = new Person.c().f(bundle.getString("android.selfDisplayName")).a();
             }
             CharSequence charSequence = bundle.getCharSequence("android.conversationTitle");
-            this.f3077h = charSequence;
+            this.f3406h = charSequence;
             if (charSequence == null) {
-                this.f3077h = bundle.getCharSequence("android.hiddenConversationTitle");
+                this.f3406h = bundle.getCharSequence("android.hiddenConversationTitle");
             }
             Parcelable[] parcelableArray = bundle.getParcelableArray("android.messages");
             if (parcelableArray != null) {
-                this.f3074e.addAll(d.f(parcelableArray));
+                this.f3403e.addAll(d.f(parcelableArray));
             }
             Parcelable[] parcelableArray2 = bundle.getParcelableArray("android.messages.historic");
             if (parcelableArray2 != null) {
-                this.f3075f.addAll(d.f(parcelableArray2));
+                this.f3404f.addAll(d.f(parcelableArray2));
             }
             if (bundle.containsKey("android.isGroupConversation")) {
-                this.f3078i = Boolean.valueOf(bundle.getBoolean("android.isGroupConversation"));
+                this.f3407i = Boolean.valueOf(bundle.getBoolean("android.isGroupConversation"));
             }
         }
 
         public MessagingStyle o(d dVar) {
             if (dVar != null) {
-                this.f3074e.add(dVar);
-                if (this.f3074e.size() > 25) {
-                    this.f3074e.remove(0);
+                this.f3403e.add(dVar);
+                if (this.f3403e.size() > 25) {
+                    this.f3403e.remove(0);
                 }
             }
             return this;
         }
 
         public List q() {
-            return this.f3074e;
+            return this.f3403e;
         }
 
         public boolean r() {
-            Builder builder = this.f3130a;
-            if (builder != null && builder.f3048a.getApplicationInfo().targetSdkVersion < 28 && this.f3078i == null) {
-                if (this.f3077h == null) {
+            Builder builder = this.f3459a;
+            if (builder != null && builder.f3377a.getApplicationInfo().targetSdkVersion < 28 && this.f3407i == null) {
+                if (this.f3406h == null) {
                     return false;
                 }
                 return true;
             }
-            Boolean bool = this.f3078i;
+            Boolean bool = this.f3407i;
             if (bool == null) {
                 return false;
             }
@@ -2409,18 +2409,18 @@ public abstract class NotificationCompat {
         }
 
         public MessagingStyle s(CharSequence charSequence) {
-            this.f3077h = charSequence;
+            this.f3406h = charSequence;
             return this;
         }
 
         public MessagingStyle t(boolean z10) {
-            this.f3078i = Boolean.valueOf(z10);
+            this.f3407i = Boolean.valueOf(z10);
             return this;
         }
 
         public MessagingStyle(Person person) {
             if (!TextUtils.isEmpty(person.f())) {
-                this.f3076g = person;
+                this.f3405g = person;
                 return;
             }
             throw new IllegalArgumentException("User's name must not be empty.");
@@ -2456,82 +2456,82 @@ public abstract class NotificationCompat {
         public ArrayList Y;
 
         /* renamed from: a  reason: collision with root package name */
-        public Context f3048a;
+        public Context f3377a;
 
         /* renamed from: b  reason: collision with root package name */
-        public ArrayList f3049b;
+        public ArrayList f3378b;
 
         /* renamed from: c  reason: collision with root package name */
-        public ArrayList f3050c;
+        public ArrayList f3379c;
 
         /* renamed from: d  reason: collision with root package name */
-        ArrayList f3051d;
+        ArrayList f3380d;
 
         /* renamed from: e  reason: collision with root package name */
-        CharSequence f3052e;
+        CharSequence f3381e;
 
         /* renamed from: f  reason: collision with root package name */
-        CharSequence f3053f;
+        CharSequence f3382f;
 
         /* renamed from: g  reason: collision with root package name */
-        String f3054g;
+        String f3383g;
 
         /* renamed from: h  reason: collision with root package name */
-        PendingIntent f3055h;
+        PendingIntent f3384h;
 
         /* renamed from: i  reason: collision with root package name */
-        PendingIntent f3056i;
+        PendingIntent f3385i;
 
         /* renamed from: j  reason: collision with root package name */
-        RemoteViews f3057j;
+        RemoteViews f3386j;
 
         /* renamed from: k  reason: collision with root package name */
-        IconCompat f3058k;
+        IconCompat f3387k;
 
         /* renamed from: l  reason: collision with root package name */
-        CharSequence f3059l;
+        CharSequence f3388l;
 
         /* renamed from: m  reason: collision with root package name */
-        int f3060m;
+        int f3389m;
 
         /* renamed from: n  reason: collision with root package name */
-        int f3061n;
+        int f3390n;
 
         /* renamed from: o  reason: collision with root package name */
-        boolean f3062o;
+        boolean f3391o;
 
         /* renamed from: p  reason: collision with root package name */
-        boolean f3063p;
+        boolean f3392p;
 
         /* renamed from: q  reason: collision with root package name */
-        boolean f3064q;
+        boolean f3393q;
 
         /* renamed from: r  reason: collision with root package name */
-        l f3065r;
+        l f3394r;
 
         /* renamed from: s  reason: collision with root package name */
-        CharSequence f3066s;
+        CharSequence f3395s;
 
         /* renamed from: t  reason: collision with root package name */
-        CharSequence f3067t;
+        CharSequence f3396t;
 
         /* renamed from: u  reason: collision with root package name */
-        CharSequence[] f3068u;
+        CharSequence[] f3397u;
 
         /* renamed from: v  reason: collision with root package name */
-        int f3069v;
+        int f3398v;
 
         /* renamed from: w  reason: collision with root package name */
-        int f3070w;
+        int f3399w;
 
         /* renamed from: x  reason: collision with root package name */
-        boolean f3071x;
+        boolean f3400x;
 
         /* renamed from: y  reason: collision with root package name */
-        String f3072y;
+        String f3401y;
 
         /* renamed from: z  reason: collision with root package name */
-        boolean f3073z;
+        boolean f3402z;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -2577,7 +2577,7 @@ public abstract class NotificationCompat {
             this.X = b.b(notification);
             Icon a10 = b.a(notification);
             if (a10 != null) {
-                this.f3058k = IconCompat.b(a10);
+                this.f3387k = IconCompat.b(a10);
             }
             Notification.Action[] actionArr = notification.actions;
             if (actionArr != null && actionArr.length != 0) {
@@ -2681,18 +2681,18 @@ public abstract class NotificationCompat {
         }
 
         public Builder C(PendingIntent pendingIntent, boolean z10) {
-            this.f3056i = pendingIntent;
+            this.f3385i = pendingIntent;
             B(IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT, z10);
             return this;
         }
 
         public Builder D(String str) {
-            this.f3072y = str;
+            this.f3401y = str;
             return this;
         }
 
         public Builder E(boolean z10) {
-            this.f3073z = z10;
+            this.f3402z = z10;
             return this;
         }
 
@@ -2701,9 +2701,9 @@ public abstract class NotificationCompat {
             if (bitmap == null) {
                 h10 = null;
             } else {
-                h10 = IconCompat.h(NotificationCompat.C(this.f3048a, bitmap));
+                h10 = IconCompat.h(NotificationCompat.C(this.f3377a, bitmap));
             }
-            this.f3058k = h10;
+            this.f3387k = h10;
             return this;
         }
 
@@ -2733,7 +2733,7 @@ public abstract class NotificationCompat {
         }
 
         public Builder J(int i10) {
-            this.f3060m = i10;
+            this.f3389m = i10;
             return this;
         }
 
@@ -2748,14 +2748,14 @@ public abstract class NotificationCompat {
         }
 
         public Builder M(int i10) {
-            this.f3061n = i10;
+            this.f3390n = i10;
             return this;
         }
 
         public Builder N(int i10, int i11, boolean z10) {
-            this.f3069v = i10;
-            this.f3070w = i11;
-            this.f3071x = z10;
+            this.f3398v = i10;
+            this.f3399w = i11;
+            this.f3400x = z10;
             return this;
         }
 
@@ -2765,12 +2765,12 @@ public abstract class NotificationCompat {
         }
 
         public Builder P(CharSequence charSequence) {
-            this.f3067t = k(charSequence);
+            this.f3396t = k(charSequence);
             return this;
         }
 
         public Builder Q(String str) {
-            this.f3054g = str;
+            this.f3383g = str;
             if (Build.VERSION.SDK_INT < 36) {
                 i().putString("android.shortCriticalText", str);
             }
@@ -2783,7 +2783,7 @@ public abstract class NotificationCompat {
         }
 
         public Builder S(boolean z10) {
-            this.f3062o = z10;
+            this.f3391o = z10;
             return this;
         }
 
@@ -2828,8 +2828,8 @@ public abstract class NotificationCompat {
         }
 
         public Builder Z(l lVar) {
-            if (this.f3065r != lVar) {
-                this.f3065r = lVar;
+            if (this.f3394r != lVar) {
+                this.f3394r = lVar;
                 if (lVar != null) {
                     lVar.n(this);
                 }
@@ -2838,18 +2838,18 @@ public abstract class NotificationCompat {
         }
 
         public Builder a(int i10, CharSequence charSequence, PendingIntent pendingIntent) {
-            this.f3049b.add(new Action(i10, charSequence, pendingIntent));
+            this.f3378b.add(new Action(i10, charSequence, pendingIntent));
             return this;
         }
 
         public Builder a0(CharSequence charSequence) {
-            this.f3066s = k(charSequence);
+            this.f3395s = k(charSequence);
             return this;
         }
 
         public Builder b(Action action) {
             if (action != null) {
-                this.f3049b.add(action);
+                this.f3378b.add(action);
             }
             return this;
         }
@@ -2878,19 +2878,19 @@ public abstract class NotificationCompat {
 
         public Builder d(Action action) {
             if (action != null) {
-                this.f3051d.add(action);
+                this.f3380d.add(action);
             }
             return this;
         }
 
         public Builder d0(boolean z10) {
-            this.f3063p = z10;
+            this.f3392p = z10;
             return this;
         }
 
         public Builder e(Person person) {
             if (person != null) {
-                this.f3050c.add(person);
+                this.f3379c.add(person);
             }
             return this;
         }
@@ -2922,7 +2922,7 @@ public abstract class NotificationCompat {
         }
 
         public Builder h() {
-            this.f3049b.clear();
+            this.f3378b.clear();
             return this;
         }
 
@@ -2964,7 +2964,7 @@ public abstract class NotificationCompat {
         }
 
         public Builder r(boolean z10) {
-            this.f3064q = z10;
+            this.f3393q = z10;
             i().putBoolean("android.chronometerCountDown", z10);
             return this;
         }
@@ -2981,22 +2981,22 @@ public abstract class NotificationCompat {
         }
 
         public Builder u(CharSequence charSequence) {
-            this.f3059l = k(charSequence);
+            this.f3388l = k(charSequence);
             return this;
         }
 
         public Builder v(PendingIntent pendingIntent) {
-            this.f3055h = pendingIntent;
+            this.f3384h = pendingIntent;
             return this;
         }
 
         public Builder w(CharSequence charSequence) {
-            this.f3053f = k(charSequence);
+            this.f3382f = k(charSequence);
             return this;
         }
 
         public Builder x(CharSequence charSequence) {
-            this.f3052e = k(charSequence);
+            this.f3381e = k(charSequence);
             return this;
         }
 
@@ -3015,10 +3015,10 @@ public abstract class NotificationCompat {
         }
 
         public Builder(Context context, String str) {
-            this.f3049b = new ArrayList();
-            this.f3050c = new ArrayList();
-            this.f3051d = new ArrayList();
-            this.f3062o = true;
+            this.f3378b = new ArrayList();
+            this.f3379c = new ArrayList();
+            this.f3380d = new ArrayList();
+            this.f3391o = true;
             this.B = false;
             this.G = 0;
             this.H = 0;
@@ -3027,11 +3027,11 @@ public abstract class NotificationCompat {
             this.S = 0;
             Notification notification = new Notification();
             this.V = notification;
-            this.f3048a = context;
+            this.f3377a = context;
             this.M = str;
             notification.when = System.currentTimeMillis();
             this.V.audioStreamType = -1;
-            this.f3061n = 0;
+            this.f3390n = 0;
             this.Y = new ArrayList();
             this.T = true;
         }

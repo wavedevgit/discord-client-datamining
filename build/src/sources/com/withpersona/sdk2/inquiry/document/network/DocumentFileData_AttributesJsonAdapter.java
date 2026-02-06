@@ -16,39 +16,39 @@ import org.jetbrains.annotations.NotNull;
 public final class DocumentFileData_AttributesJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f18516a;
+    private final m.b f18496a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f18517b;
+    private final h f18497b;
 
     public DocumentFileData_AttributesJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("originals");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f18516a = a10;
+        this.f18496a = a10;
         h f10 = moshi.f(a0.j(List.class, DocumentFileData.RemoteDocumentFile.class), x0.d(), "originals");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f18517b = f10;
+        this.f18497b = f10;
     }
 
     @Override // com.squareup.moshi.h
     /* renamed from: a */
     public DocumentFileData.Attributes fromJson(m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         List list = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.f18516a);
-            if (W != -1) {
-                if (W == 0) {
-                    list = (List) this.f18517b.fromJson(reader);
+            int J = reader.J(this.f18496a);
+            if (J != -1) {
+                if (J == 0) {
+                    list = (List) this.f18497b.fromJson(reader);
                 }
             } else {
                 reader.E0();
-                reader.P();
+                reader.S();
             }
         }
-        reader.z();
+        reader.D();
         return new DocumentFileData.Attributes(list);
     }
 
@@ -58,9 +58,9 @@ public final class DocumentFileData_AttributesJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (attributes != null) {
             writer.k();
-            writer.W("originals");
-            this.f18517b.toJson(writer, attributes.a());
-            writer.E();
+            writer.J("originals");
+            this.f18497b.toJson(writer, attributes.a());
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

@@ -1,49 +1,35 @@
 package ev;
+
+import java.util.ArrayList;
+import java.util.List;
+import kotlin.collections.CollectionsKt;
+import kotlin.text.StringsKt;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class b {
-    public static boolean a(CharSequence charSequence) {
-        if (charSequence == null || c(charSequence)) {
-            return false;
-        }
-        int length = charSequence.length();
-        for (int i10 = 0; i10 < length; i10++) {
-            if (!Character.isLowerCase(charSequence.charAt(i10))) {
-                return false;
-            }
-        }
-        return true;
-    }
+public interface b {
 
-    public static boolean b(CharSequence charSequence) {
-        if (charSequence == null || c(charSequence)) {
-            return false;
-        }
-        int length = charSequence.length();
-        for (int i10 = 0; i10 < length; i10++) {
-            if (!Character.isUpperCase(charSequence.charAt(i10))) {
-                return false;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a {
+        private static Object a(b bVar, Object obj) {
+            while (!(obj instanceof Number)) {
+                if (obj instanceof String) {
+                    return StringsKt.p((String) obj);
+                }
+                if (obj instanceof List) {
+                    obj = CollectionsKt.firstOrNull((List) obj);
+                } else {
+                    return null;
+                }
             }
+            return Double.valueOf(((Number) obj).doubleValue());
         }
-        return true;
-    }
 
-    public static boolean c(CharSequence charSequence) {
-        if (charSequence != null && charSequence.length() != 0) {
-            return false;
-        }
-        return true;
-    }
-
-    public static boolean d(CharSequence charSequence) {
-        if (c(charSequence)) {
-            return false;
-        }
-        int length = charSequence.length();
-        for (int i10 = 0; i10 < length; i10++) {
-            if (!Character.isDigit(charSequence.charAt(i10))) {
-                return false;
+        public static List b(b bVar, Object obj) {
+            List<Object> c10 = cw.a.c(obj);
+            ArrayList arrayList = new ArrayList(CollectionsKt.w(c10, 10));
+            for (Object obj2 : c10) {
+                arrayList.add(a(bVar, obj2));
             }
+            return arrayList;
         }
-        return true;
     }
 }

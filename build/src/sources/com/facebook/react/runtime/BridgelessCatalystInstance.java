@@ -26,9 +26,9 @@ import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
-@or.c
 @Metadata(d1 = {"\u0000²\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u000b\n\u0002\b\f\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u001e\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0001\u0018\u0000 f2\u00020\u0001:\u0001fB\u000f\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0004\b\u0004\u0010\u0005J\u0010\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\tH\u0016J \u0010\n\u001a\u00020\u00072\u0006\u0010\u000b\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u0010H\u0016J \u0010\u0011\u001a\u00020\u00072\u0006\u0010\u0012\u001a\u00020\u000e2\u0006\u0010\u0013\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u0010H\u0016J\u0018\u0010\u0014\u001a\u00020\u00072\u0006\u0010\u0012\u001a\u00020\u000e2\u0006\u0010\u0013\u001a\u00020\u000eH\u0016J\u0018\u0010\u0015\u001a\u00020\u00072\u0006\u0010\u0016\u001a\u00020\u000e2\u0006\u0010\u0017\u001a\u00020\u000eH\u0016J\b\u0010\u0018\u001a\u00020\u0007H\u0016J\b\u0010\u0019\u001a\u00020\u0010H\u0016J\u0018\u0010\u001a\u001a\u00020\u00072\u0006\u0010\u001b\u001a\u00020\t2\u0006\u0010\u001c\u001a\u00020\u001dH\u0016J\"\u0010\u001e\u001a\u00020\u00072\u0006\u0010\u001f\u001a\u00020\u000e2\u0006\u0010 \u001a\u00020\u000e2\b\u0010\u001c\u001a\u0004\u0018\u00010!H\u0016J\b\u0010\"\u001a\u00020\u0007H\u0016J\b\u0010%\u001a\u00020\u0007H\u0017J'\u0010&\u001a\u0004\u0018\u0001H'\"\b\b\u0000\u0010'*\u00020(2\f\u0010)\u001a\b\u0012\u0004\u0012\u0002H'0*H\u0016¢\u0006\u0002\u0010+J \u0010:\u001a\u00020\u0010\"\b\b\u0000\u0010'*\u00020;2\f\u0010<\u001a\b\u0012\u0004\u0012\u0002H'0*H\u0016J'\u0010=\u001a\u0004\u0018\u0001H'\"\b\b\u0000\u0010'*\u00020;2\f\u0010<\u001a\b\u0012\u0004\u0012\u0002H'0*H\u0016¢\u0006\u0002\u0010>J\u0012\u0010=\u001a\u0004\u0018\u00010;2\u0006\u0010?\u001a\u00020\u000eH\u0016J\u0010\u0010P\u001a\u00020\u00072\u0006\u0010Q\u001a\u00020RH\u0016J\u0010\u0010U\u001a\u00020\u00072\u0006\u0010V\u001a\u00020WH\u0016J\u0010\u0010X\u001a\u00020\u00072\u0006\u0010V\u001a\u00020WH\u0016J\u0018\u0010Y\u001a\u00020\u00072\u0006\u0010Z\u001a\u00020\t2\u0006\u0010[\u001a\u00020\u000eH\u0016J\u0018\u0010\\\u001a\u00020\u00072\u0006\u0010]\u001a\u00020\u000e2\u0006\u0010^\u001a\u00020\u000eH\u0017J\u0010\u0010_\u001a\u00020\u00072\u0006\u0010`\u001a\u00020aH\u0017J\u0010\u0010b\u001a\u00020\u00072\u0006\u0010c\u001a\u00020dH\u0017J\b\u0010e\u001a\u00020dH\u0017R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010#\u001a\u00020\u00108VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b#\u0010$R\u0014\u0010,\u001a\u00020-8WX\u0096\u0004¢\u0006\u0006\u001a\u0004\b.\u0010/R\u001a\u00100\u001a\u0002018WX\u0096\u0004¢\u0006\f\u0012\u0004\b2\u00103\u001a\u0004\b4\u00105R\u0014\u00106\u001a\u0002078VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b8\u00109R\u001a\u0010@\u001a\b\u0012\u0004\u0012\u00020;0A8VX\u0096\u0004¢\u0006\u0006\u001a\u0004\bB\u0010CR\u0014\u0010D\u001a\u00020E8VX\u0096\u0004¢\u0006\u0006\u001a\u0004\bF\u0010GR\u0016\u0010H\u001a\u0004\u0018\u00010I8VX\u0096\u0004¢\u0006\u0006\u001a\u0004\bJ\u0010KR\u0014\u0010L\u001a\u00020M8VX\u0096\u0004¢\u0006\u0006\u001a\u0004\bN\u0010OR\u0014\u0010\u0013\u001a\u00020\u000e8VX\u0096\u0004¢\u0006\u0006\u001a\u0004\bS\u0010T¨\u0006g"}, d2 = {"Lcom/facebook/react/runtime/BridgelessCatalystInstance;", "Lcom/facebook/react/bridge/CatalystInstance;", "reactHost", "Lcom/facebook/react/runtime/ReactHostImpl;", "<init>", "(Lcom/facebook/react/runtime/ReactHostImpl;)V", "handleMemoryPressure", "", "level", "", "loadScriptFromAssets", "assetManager", "Landroid/content/res/AssetManager;", "assetURL", "", "loadSynchronously", "", "loadScriptFromFile", "fileName", "sourceURL", "loadSplitBundleFromFile", "setSourceURLs", "deviceURL", "remoteURL", "runJSBundle", "hasRunJSBundle", "invokeCallback", "callbackID", "arguments", "Lcom/facebook/react/bridge/NativeArrayInterface;", "callFunction", "module", "method", "Lcom/facebook/react/bridge/NativeArray;", "destroy", "isDestroyed", "()Z", "initialize", "getJSModule", "T", "Lcom/facebook/react/bridge/JavaScriptModule;", "jsInterface", "Ljava/lang/Class;", "(Ljava/lang/Class;)Lcom/facebook/react/bridge/JavaScriptModule;", "javaScriptContextHolder", "Lcom/facebook/react/bridge/JavaScriptContextHolder;", "getJavaScriptContextHolder", "()Lcom/facebook/react/bridge/JavaScriptContextHolder;", "jsCallInvokerHolder", "Lcom/facebook/react/turbomodule/core/interfaces/CallInvokerHolder;", "getJSCallInvokerHolder$annotations", "()V", "getJSCallInvokerHolder", "()Lcom/facebook/react/turbomodule/core/interfaces/CallInvokerHolder;", "nativeMethodCallInvokerHolder", "Lcom/facebook/react/turbomodule/core/interfaces/NativeMethodCallInvokerHolder;", "getNativeMethodCallInvokerHolder", "()Lcom/facebook/react/turbomodule/core/interfaces/NativeMethodCallInvokerHolder;", "hasNativeModule", "Lcom/facebook/react/bridge/NativeModule;", "nativeModuleInterface", "getNativeModule", "(Ljava/lang/Class;)Lcom/facebook/react/bridge/NativeModule;", "moduleName", "nativeModules", "", "getNativeModules", "()Ljava/util/Collection;", "reactQueueConfiguration", "Lcom/facebook/react/bridge/queue/ReactQueueConfiguration;", "getReactQueueConfiguration", "()Lcom/facebook/react/bridge/queue/ReactQueueConfiguration;", "runtimeExecutor", "Lcom/facebook/react/bridge/RuntimeExecutor;", "getRuntimeExecutor", "()Lcom/facebook/react/bridge/RuntimeExecutor;", "runtimeScheduler", "Lcom/facebook/react/bridge/RuntimeScheduler;", "getRuntimeScheduler", "()Lcom/facebook/react/bridge/RuntimeScheduler;", "extendNativeModules", "modules", "Lcom/facebook/react/bridge/NativeModuleRegistry;", "getSourceURL", "()Ljava/lang/String;", "addBridgeIdleDebugListener", "listener", "Lcom/facebook/react/bridge/NotThreadSafeBridgeIdleDebugListener;", "removeBridgeIdleDebugListener", "registerSegment", "segmentId", "path", "setGlobalVariable", "propName", "jsonValue", "setTurboModuleRegistry", "turboModuleRegistry", "Lcom/facebook/react/internal/turbomodule/core/interfaces/TurboModuleRegistry;", "setFabricUIManager", "fabricUIManager", "Lcom/facebook/react/bridge/UIManager;", "getFabricUIManager", "Companion", "ReactAndroid_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @FrameworkAPI
+@qr.c
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class BridgelessCatalystInstance implements CatalystInstance {
     @NotNull
@@ -84,15 +84,15 @@ public final class BridgelessCatalystInstance implements CatalystInstance {
     }
 
     @Override // com.facebook.react.bridge.CatalystInstance
-    @or.c
     @NotNull
+    @qr.c
     public UIManager getFabricUIManager() {
         throw new UnsupportedOperationException("Unimplemented method 'getFabricUIManager'");
     }
 
     @Override // com.facebook.react.bridge.CatalystInstance
-    @or.c
     @NotNull
+    @qr.c
     public CallInvokerHolder getJSCallInvokerHolder() {
         CallInvokerHolder jsCallInvokerHolder$ReactAndroid_release = this.reactHost.getJsCallInvokerHolder$ReactAndroid_release();
         Intrinsics.checkNotNull(jsCallInvokerHolder$ReactAndroid_release);
@@ -110,8 +110,8 @@ public final class BridgelessCatalystInstance implements CatalystInstance {
     }
 
     @Override // com.facebook.react.bridge.CatalystInstance
-    @or.c
     @NotNull
+    @qr.c
     public JavaScriptContextHolder getJavaScriptContextHolder() {
         JavaScriptContextHolder javaScriptContextHolder$ReactAndroid_release = this.reactHost.getJavaScriptContextHolder$ReactAndroid_release();
         Intrinsics.checkNotNull(javaScriptContextHolder$ReactAndroid_release);
@@ -233,7 +233,7 @@ public final class BridgelessCatalystInstance implements CatalystInstance {
     }
 
     @Override // com.facebook.react.bridge.CatalystInstance
-    @or.c
+    @qr.c
     public void setFabricUIManager(@NotNull UIManager fabricUIManager) {
         Intrinsics.checkNotNullParameter(fabricUIManager, "fabricUIManager");
         throw new UnsupportedOperationException("Unimplemented method 'setFabricUIManager'");
@@ -255,7 +255,7 @@ public final class BridgelessCatalystInstance implements CatalystInstance {
     }
 
     @Override // com.facebook.react.bridge.CatalystInstance
-    @or.c
+    @qr.c
     public void setTurboModuleRegistry(@NotNull TurboModuleRegistry turboModuleRegistry) {
         Intrinsics.checkNotNullParameter(turboModuleRegistry, "turboModuleRegistry");
         throw new UnsupportedOperationException("Unimplemented method 'setTurboModuleRegistry'");

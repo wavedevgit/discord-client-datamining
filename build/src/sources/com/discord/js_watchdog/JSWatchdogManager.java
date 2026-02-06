@@ -12,9 +12,9 @@ import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.coroutines.Job;
-import ms.g;
-import ms.v0;
 import org.jetbrains.annotations.NotNull;
+import os.g;
+import os.v0;
 @Metadata(d1 = {"\u0000b\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\t\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0010\b\n\u0000\bÆ\u0002\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\u000e\u0010\u0014\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u0017J.\u0010\u0018\u001a\u00020\u00152\u0006\u0010\u0019\u001a\u00020\t2\u0006\u0010\u001a\u001a\u00020\u000b2\u0006\u0010\u001b\u001a\u00020\u001c2\u0006\u0010\u001d\u001a\u00020\t2\u0006\u0010\u001e\u001a\u00020\u001fJ\b\u0010 \u001a\u0004\u0018\u00010!J\u0006\u0010\"\u001a\u00020\u0015J\u0006\u0010#\u001a\u00020\u0015J\b\u0010$\u001a\u00020\u0015H\u0002J \u0010%\u001a\u00020\u00152\u0006\u0010\u001a\u001a\u00020\u000b2\u0006\u0010\u001b\u001a\u00020\u001c2\u0006\u0010\u001d\u001a\u00020\tH\u0002J \u0010&\u001a\u00020\u00152\u0006\u0010'\u001a\u00020(2\u0006\u0010\u001b\u001a\u00020\u001c2\u0006\u0010\u001d\u001a\u00020\tH\u0002R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\b\u001a\u00020\tX\u0082\u000e¢\u0006\u0002\n\u0000R\u0012\u0010\n\u001a\u0004\u0018\u00010\u000bX\u0082\u000e¢\u0006\u0004\n\u0002\u0010\fR\u0012\u0010\r\u001a\u0004\u0018\u00010\u000bX\u0082\u000e¢\u0006\u0004\n\u0002\u0010\fR\u0010\u0010\u000e\u001a\u0004\u0018\u00010\u000fX\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u0010\u001a\u0004\u0018\u00010\u0011X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\u0013X\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006)"}, d2 = {"Lcom/discord/js_watchdog/JSWatchdogManager;", "", "<init>", "()V", "storage", "Lcom/discord/js_watchdog/JSWatchdogStorage;", "cacheDir", "Ljava/io/File;", ViewProps.ENABLED, "", "recentPingTS", "", "Ljava/lang/Long;", "previousPingTS", "freezeTimer", "Ljava/util/TimerTask;", "pingCoroutineJob", "Lkotlinx/coroutines/Job;", "timerInstance", "Ljava/util/Timer;", "initialize", "", "context", "Landroid/content/Context;", "ping", "resetTimestamps", "sentTimestamp", "sessionId", "", "enableTrace", BaseJavaModule.METHOD_TYPE_PROMISE, "Lcom/facebook/react/bridge/Promise;", "checkForExistingReport", "Lcom/discord/js_watchdog/StallReport;", "enable", "disable", "cancelExistingJobs", "updateStallTime", "saveStallReport", "stallTime", "", "js_watchdog_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class JSWatchdogManager {
@@ -133,7 +133,7 @@ public final class JSWatchdogManager {
         synchronized (this) {
             storage = JSWatchdogStorage.Companion.getInstance(context);
             cacheDir = context.getCacheDir();
-            Unit unit = Unit.f31988a;
+            Unit unit = Unit.f32008a;
         }
     }
 
@@ -141,6 +141,6 @@ public final class JSWatchdogManager {
         Intrinsics.checkNotNullParameter(sessionId, "sessionId");
         Intrinsics.checkNotNullParameter(promise, "promise");
         cancelExistingJobs();
-        pingCoroutineJob = g.d(v0.f38956d, null, null, new JSWatchdogManager$ping$1(z10, j10, promise, sessionId, z11, null), 3, null);
+        pingCoroutineJob = g.d(v0.f43538d, null, null, new JSWatchdogManager$ping$1(z10, j10, promise, sessionId, z11, null), 3, null);
     }
 }

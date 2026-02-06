@@ -1,33 +1,52 @@
 package bt;
 
-import java.util.List;
-import kotlin.collections.CollectionsKt;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class q {
+public final class q extends a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f7250a;
+    private final b f7074a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f7251b;
+    private final String f7075b;
 
-    public q(List operations, List followedBy) {
-        Intrinsics.checkNotNullParameter(operations, "operations");
-        Intrinsics.checkNotNullParameter(followedBy, "followedBy");
-        this.f7250a = operations;
-        this.f7251b = followedBy;
+    /* renamed from: c  reason: collision with root package name */
+    private final Object f7076c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private final m f7077d;
+
+    public /* synthetic */ q(b bVar, String str, Object obj, m mVar, int i10, DefaultConstructorMarker defaultConstructorMarker) {
+        this(bVar, (i10 & 2) != 0 ? bVar.getName() : str, (i10 & 4) != 0 ? null : obj, (i10 & 8) != 0 ? null : mVar);
     }
 
-    public final List a() {
-        return this.f7251b;
+    @Override // bt.n
+    public Object a() {
+        return this.f7076c;
     }
 
-    public final List b() {
-        return this.f7250a;
+    @Override // bt.n
+    public b b() {
+        return this.f7074a;
     }
 
-    public String toString() {
-        return CollectionsKt.x0(this.f7250a, ", ", null, null, 0, null, null, 62, null) + '(' + CollectionsKt.x0(this.f7251b, ";", null, null, 0, null, null, 62, null) + ')';
+    @Override // bt.n
+    public m c() {
+        return this.f7077d;
+    }
+
+    @Override // bt.n
+    public String getName() {
+        return this.f7075b;
+    }
+
+    public q(b accessor, String name, Object obj, m mVar) {
+        Intrinsics.checkNotNullParameter(accessor, "accessor");
+        Intrinsics.checkNotNullParameter(name, "name");
+        this.f7074a = accessor;
+        this.f7075b = name;
+        this.f7076c = obj;
+        this.f7077d = mVar;
     }
 }

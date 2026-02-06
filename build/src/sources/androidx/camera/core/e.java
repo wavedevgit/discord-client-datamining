@@ -10,13 +10,13 @@ import x.p0;
 public abstract class e implements n {
 
     /* renamed from: e  reason: collision with root package name */
-    protected final n f2070e;
+    protected final n f2399e;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Object f2069d = new Object();
+    private final Object f2398d = new Object();
 
     /* renamed from: i  reason: collision with root package name */
-    private final Set f2071i = new HashSet();
+    private final Set f2400i = new HashSet();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public interface a {
@@ -25,63 +25,63 @@ public abstract class e implements n {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public e(n nVar) {
-        this.f2070e = nVar;
+        this.f2399e = nVar;
     }
 
     @Override // androidx.camera.core.n
-    public p0 A() {
-        return this.f2070e.A();
+    public void C0(Rect rect) {
+        this.f2399e.C0(rect);
     }
 
     @Override // androidx.camera.core.n
-    public void A0(Rect rect) {
-        this.f2070e.A0(rect);
+    public p0 E() {
+        return this.f2399e.E();
     }
 
     @Override // androidx.camera.core.n
-    public Image B() {
-        return this.f2070e.B();
+    public Image F() {
+        return this.f2399e.F();
     }
 
     public void a(a aVar) {
-        synchronized (this.f2069d) {
-            this.f2071i.add(aVar);
+        synchronized (this.f2398d) {
+            this.f2400i.add(aVar);
         }
+    }
+
+    @Override // androidx.camera.core.n
+    public n.a[] c1() {
+        return this.f2399e.c1();
     }
 
     @Override // androidx.camera.core.n, java.lang.AutoCloseable
     public void close() {
-        this.f2070e.close();
-        h();
+        this.f2399e.close();
+        g();
     }
 
-    @Override // androidx.camera.core.n
-    public n.a[] d1() {
-        return this.f2070e.d1();
-    }
-
-    @Override // androidx.camera.core.n
-    public int getFormat() {
-        return this.f2070e.getFormat();
-    }
-
-    @Override // androidx.camera.core.n
-    public int getHeight() {
-        return this.f2070e.getHeight();
-    }
-
-    @Override // androidx.camera.core.n
-    public int getWidth() {
-        return this.f2070e.getWidth();
-    }
-
-    protected void h() {
+    protected void g() {
         HashSet<a> hashSet;
-        synchronized (this.f2069d) {
-            hashSet = new HashSet(this.f2071i);
+        synchronized (this.f2398d) {
+            hashSet = new HashSet(this.f2400i);
         }
         for (a aVar : hashSet) {
             aVar.a(this);
         }
+    }
+
+    @Override // androidx.camera.core.n
+    public int getFormat() {
+        return this.f2399e.getFormat();
+    }
+
+    @Override // androidx.camera.core.n
+    public int getHeight() {
+        return this.f2399e.getHeight();
+    }
+
+    @Override // androidx.camera.core.n
+    public int getWidth() {
+        return this.f2399e.getWidth();
     }
 }

@@ -12,35 +12,35 @@ public abstract class j {
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f31639a;
+        public static final /* synthetic */ int[] f31483a;
 
         static {
             int[] iArr = new int[h5.h.values().length];
             try {
-                iArr[h5.h.f25668d.ordinal()] = 1;
+                iArr[h5.h.f25796d.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[h5.h.f25669e.ordinal()] = 2;
+                iArr[h5.h.f25797e.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
-            f31639a = iArr;
+            f31483a = iArr;
         }
     }
 
     public static final long a(BufferedSource bufferedSource, ByteString byteString, long j10, long j11) {
         if (byteString.G() > 0) {
-            byte k10 = byteString.k(0);
+            byte j12 = byteString.j(0);
             long G = j11 - byteString.G();
-            long j12 = j10;
-            while (j12 < G) {
+            long j13 = j10;
+            while (j13 < G) {
                 BufferedSource bufferedSource2 = bufferedSource;
-                long c02 = bufferedSource2.c0(k10, j12, G);
-                if (c02 != -1 && !bufferedSource2.q0(c02, byteString)) {
-                    j12 = c02 + 1;
+                long e02 = bufferedSource2.e0(j12, j13, G);
+                if (e02 != -1 && !bufferedSource2.s0(e02, byteString)) {
+                    j13 = e02 + 1;
                     bufferedSource = bufferedSource2;
                 } else {
-                    return c02;
+                    return e02;
                 }
             }
             return -1L;
@@ -62,14 +62,14 @@ public abstract class j {
 
     public static final float c(h5.c cVar, h5.h hVar) {
         if (cVar instanceof c.a) {
-            return ((c.a) cVar).f25657a;
+            return ((c.a) cVar).f25785a;
         }
-        int i10 = a.f31639a[hVar.ordinal()];
+        int i10 = a.f31483a[hVar.ordinal()];
         if (i10 != 1) {
             if (i10 == 2) {
                 return Float.MAX_VALUE;
             }
-            throw new or.p();
+            throw new qr.p();
         }
         return Float.MIN_VALUE;
     }

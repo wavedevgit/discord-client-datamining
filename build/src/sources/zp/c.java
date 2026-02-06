@@ -1,27 +1,27 @@
 package zp;
 
-import java.util.HashMap;
-import kotlin.jvm.internal.DefaultConstructorMarker;
+import br.h;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class c {
+public final class c implements br.d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f56142a = new a(null);
+    private final h f56430a;
 
-    /* renamed from: b  reason: collision with root package name */
-    private static final HashMap f56143b = new HashMap();
+    public c(h hVar) {
+        this.f56430a = hVar;
+    }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a {
-        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
-        }
+    public static c a(h hVar) {
+        return new c(hVar);
+    }
 
-        public final HashMap a() {
-            return c.f56143b;
-        }
+    public static b c(vp.e eVar) {
+        return new b(eVar);
+    }
 
-        private a() {
-        }
+    @Override // javax.inject.Provider
+    /* renamed from: b */
+    public b get() {
+        return c((vp.e) this.f56430a.get());
     }
 }

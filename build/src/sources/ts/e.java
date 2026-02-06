@@ -1,15 +1,23 @@
 package ts;
+
+import kotlin.coroutines.CoroutineContext;
+import kotlinx.coroutines.CoroutineScope;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class e extends g {
+public final class e implements CoroutineScope {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final e f51037a = new e();
+    /* renamed from: d  reason: collision with root package name */
+    private final CoroutineContext f50821d;
 
-    private e() {
+    public e(CoroutineContext coroutineContext) {
+        this.f50821d = coroutineContext;
     }
 
-    @Override // ts.g
-    public long a() {
-        return System.nanoTime();
+    @Override // kotlinx.coroutines.CoroutineScope
+    public CoroutineContext getCoroutineContext() {
+        return this.f50821d;
+    }
+
+    public String toString() {
+        return "CoroutineScope(coroutineContext=" + getCoroutineContext() + ')';
     }
 }

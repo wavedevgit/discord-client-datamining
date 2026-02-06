@@ -42,7 +42,7 @@ public final class BridgelessAtomicRef<T> {
         static {
             State[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = vr.a.a($values);
+            $ENTRIES = xr.a.a($values);
         }
 
         private State(String str, int i10) {
@@ -111,7 +111,7 @@ public final class BridgelessAtomicRef<T> {
                 } else {
                     z10 = false;
                 }
-                Unit unit = Unit.f31988a;
+                Unit unit = Unit.f32008a;
                 if (z10) {
                     try {
                         this.value = provider.get();
@@ -128,7 +128,7 @@ public final class BridgelessAtomicRef<T> {
                             this.failureMessage = String.valueOf(e10.getMessage());
                             Intrinsics.checkNotNull(this, "null cannot be cast to non-null type java.lang.Object");
                             notifyAll();
-                            Unit unit2 = Unit.f31988a;
+                            Unit unit2 = Unit.f32008a;
                             throw new RuntimeException("BridgelessAtomicRef: Failed to create object.", e10);
                         }
                     }

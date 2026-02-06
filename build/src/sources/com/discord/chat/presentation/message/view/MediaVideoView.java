@@ -193,7 +193,7 @@ public final class MediaVideoView extends FrameLayout implements MosaicView {
         if (z10 && (spoilerView = mediaVideoView.spoilerViewManager.getSpoilerView()) != null) {
             spoilerView.makeObscureHideButtonHidden();
         }
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     @Override // com.discord.chat.presentation.message.view.mosaic_recycler.MosaicView
@@ -223,12 +223,12 @@ public final class MediaVideoView extends FrameLayout implements MosaicView {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
     */
-    public final void m699setContentwJTRs(com.discord.primitives.ChannelId r26, java.lang.String r27, java.lang.Integer r28, @org.jetbrains.annotations.NotNull java.lang.String r29, @org.jetbrains.annotations.NotNull java.lang.String r30, int r31, int r32, java.lang.String r33, java.lang.Integer r34, int r35, boolean r36, boolean r37, com.discord.chat.bridge.spoiler.SpoilerConfig r38, boolean r39, boolean r40, boolean r41, boolean r42, com.discord.chat.presentation.message.view.UploadItemProps r43, boolean r44, boolean r45, java.lang.String r46, com.discord.react_asset_fetcher.ReactAsset r47, java.lang.Integer r48, java.lang.Integer r49, double r50, @org.jetbrains.annotations.NotNull com.discord.media_player.MediaPlayer.PlayerSettings r52) {
+    public final void m697setContentwJTRs(com.discord.primitives.ChannelId r26, java.lang.String r27, java.lang.Integer r28, @org.jetbrains.annotations.NotNull java.lang.String r29, @org.jetbrains.annotations.NotNull java.lang.String r30, int r31, int r32, java.lang.String r33, java.lang.Integer r34, int r35, boolean r36, boolean r37, com.discord.chat.bridge.spoiler.SpoilerConfig r38, boolean r39, boolean r40, boolean r41, boolean r42, com.discord.chat.presentation.message.view.UploadItemProps r43, boolean r44, boolean r45, java.lang.String r46, com.discord.react_asset_fetcher.ReactAsset r47, java.lang.Integer r48, java.lang.Integer r49, double r50, @org.jetbrains.annotations.NotNull com.discord.media_player.MediaPlayer.PlayerSettings r52) {
         /*
             Method dump skipped, instructions count: 279
             To view this dump add '--comments-level debug' option
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.discord.chat.presentation.message.view.MediaVideoView.m699setContentwJTRs(com.discord.primitives.ChannelId, java.lang.String, java.lang.Integer, java.lang.String, java.lang.String, int, int, java.lang.String, java.lang.Integer, int, boolean, boolean, com.discord.chat.bridge.spoiler.SpoilerConfig, boolean, boolean, boolean, boolean, com.discord.chat.presentation.message.view.UploadItemProps, boolean, boolean, java.lang.String, com.discord.react_asset_fetcher.ReactAsset, java.lang.Integer, java.lang.Integer, double, com.discord.media_player.MediaPlayer$PlayerSettings):void");
+        throw new UnsupportedOperationException("Method not decompiled: com.discord.chat.presentation.message.view.MediaVideoView.m697setContentwJTRs(com.discord.primitives.ChannelId, java.lang.String, java.lang.Integer, java.lang.String, java.lang.String, int, int, java.lang.String, java.lang.Integer, int, boolean, boolean, com.discord.chat.bridge.spoiler.SpoilerConfig, boolean, boolean, boolean, boolean, com.discord.chat.presentation.message.view.UploadItemProps, boolean, boolean, java.lang.String, com.discord.react_asset_fetcher.ReactAsset, java.lang.Integer, java.lang.Integer, double, com.discord.media_player.MediaPlayer$PlayerSettings):void");
     }
 
     public final void setDescription(String str, String str2) {

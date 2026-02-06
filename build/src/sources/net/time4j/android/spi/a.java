@@ -3,25 +3,25 @@ package net.time4j.android.spi;
 import android.os.SystemClock;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import nt.c;
-import wt.e;
+import pt.c;
+import yt.e;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 class a implements e {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Class[] f39754a;
+    private static final Class[] f39109a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Object[] f39755b;
+    private static final Object[] f39110b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Method f39756c;
+    private static final Method f39111c;
 
     static {
         Class[] clsArr = new Class[0];
-        f39754a = clsArr;
+        f39109a = clsArr;
         Object[] objArr = new Object[0];
-        f39755b = objArr;
+        f39110b = objArr;
         Method method = null;
         try {
             Method method2 = SystemClock.class.getMethod("elapsedRealtimeNanos", clsArr);
@@ -29,15 +29,15 @@ class a implements e {
             method = method2;
         } catch (IllegalAccessException | NoSuchMethodException | RuntimeException | InvocationTargetException unused) {
         }
-        f39756c = method;
+        f39111c = method;
     }
 
-    @Override // wt.e
+    @Override // yt.e
     public long a() {
-        Method method = f39756c;
+        Method method = f39111c;
         if (method != null) {
             try {
-                return ((Long) method.invoke(null, f39755b)).longValue();
+                return ((Long) method.invoke(null, f39110b)).longValue();
             } catch (IllegalAccessException e10) {
                 e10.printStackTrace(System.err);
             } catch (InvocationTargetException e11) {
@@ -47,7 +47,7 @@ class a implements e {
         return c.i(SystemClock.elapsedRealtime(), 1000000L);
     }
 
-    @Override // wt.e
+    @Override // yt.e
     public String b() {
         return "Dalvik";
     }

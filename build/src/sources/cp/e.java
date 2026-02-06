@@ -1,30 +1,27 @@
 package cp;
 
-import com.squareup.workflow1.ui.backstack.BackStackContainer;
-import java.util.Set;
-import kotlin.collections.x0;
-import kotlin.jvm.internal.DefaultConstructorMarker;
+import androidx.activity.result.ActivityResultLauncher;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class e {
+public final class e implements br.d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f20001a = new a(null);
+    private final b f19980a;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a {
-        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
-        }
-
-        public final Set a() {
-            return x0.i(b.f19995q, BackStackContainer.f18070i);
-        }
-
-        private a() {
-        }
+    public e(b bVar) {
+        this.f19980a = bVar;
     }
 
-    public static final Set a() {
-        return f20001a.a();
+    public static e a(b bVar) {
+        return new e(bVar);
+    }
+
+    public static ActivityResultLauncher b(b bVar) {
+        return (ActivityResultLauncher) br.g.d(bVar.a());
+    }
+
+    @Override // javax.inject.Provider
+    /* renamed from: c */
+    public ActivityResultLauncher get() {
+        return b(this.f19980a);
     }
 }

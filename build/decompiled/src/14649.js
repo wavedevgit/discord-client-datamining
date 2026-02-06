@@ -1,161 +1,140 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var2 = require;
-    var _closure1_slot0 = var2;
-    var2 = dependencyMap;
-    var _closure1_slot1 = var2;
-    var2 = global;
-    var6 = var2.Object;
-    var5 = var6.defineProperty;
-    var4 = {};
-    var3 = true;
-    var4.value = var3;
-    var3 = '__esModule';
-    var3 = var5.bind(var6)(var1, var3, var4);
-    var2 = var2.Map;
-    var3 = var2.prototype;
-    var3 = Object.create(var3, {
-        constructor: {
-            value: var2
-        }
-    });
-    var10 = var3;
-    var2 = new var10[var2](var9);
-    var2 = var2 instanceof Object ? var2 : var3;
-    var _closure1_slot2 = var2;
-    var0 = function arg0() {
-        _fun114168: for (var _fun114168_ip = 0;;) switch (_fun114168_ip) {
-            case 0:
-                var2 = arg0;
-                var _closure2_slot0 = var2;
-                var3 = _closure1_slot2;
-                var1 = var3.has;
-                var1 = var1.bind(var3)(var2);
-                if (var1) {
-                    _fun114168_ip = 110;
-                    continue _fun114168
+    _fun114184: for (var _fun114184_ip = 0;;) switch (_fun114184_ip) {
+        case 0:
+            var11 = require;
+            var16 = exports;
+            var12 = dependencyMap;
+            var7 = global;
+            var1 = var11;
+            var6 = var16;
+            var0 = var12;
+            var3 = undefined;
+            var8 = undefined;
+            var9 = undefined;
+            var4 = undefined;
+            var5 = undefined;
+            var2 = global;
+            var15 = var2.Object;
+            var14 = var15.defineProperty;
+            var13 = {};
+            var10 = true;
+            var13.value = var10;
+            var10 = '__esModule';
+            var10 = var14.bind(var15)(var16, var10, var13);
+            var10 = 0;
+            var10 = var12[var10];
+            var10 = var11.bind(var3)(var10);
+            var9 = var10.TurboModuleRegistry;
+        case 80: // try_start_0
+            var11 = var9;
+            var10 = var11.getEnforcing;
+            var9 = 'NitroModules';
+            var8 = var10.bind(var11)(var9);
+        case 98: // try_end0
+            var9 = var8;
+            var8 = var9.install;
+            var9 = var8.bind(var9)();
+            var4 = var9;
+            var8 = null;
+            if (!(var8 == var9)) {
+                _fun114184_ip = 244;
+                continue _fun114184
+            }
+        case 123:
+            var7 = var7.NitroModulesProxy;
+            var5 = var7;
+            if (!(var8 != var7)) {
+                _fun114184_ip = 163;
+                continue _fun114184
+            }
+        case 138:
+            var6.NitroModules = var5;
+            var5 = function() {
+                _fun114185: for (var _fun114185_ip = 0;;) switch (_fun114185_ip) {
+                    case 0:
+                        var1 = global;
+                        var0 = var1.globalThis;
+                        var0 = var0.__nitroJsiCache;
+                        var1 = var1.globalThis;
+                        var2 = var1.__nitroDispatcher;
+                        var1 = null;
+                        var0 = var1 != var0;
+                        if (!var0) {
+                            _fun114185_ip = 43;
+                            continue _fun114185
+                        }
+                    case 39:
+                        var0 = var1 != var2;
+                    case 43:
+                        return var0;
                 }
-            case 29:
-                var1 = function() {
-                    _fun114169: for (var _fun114169_ip = 0;;) switch (_fun114169_ip) {
-                        case 0:
-                            var2 = _closure1_slot0;
-                            var1 = _closure1_slot1;
-                            var0 = 0;
-                            var1 = var1[var0];
-                            var0 = undefined;
-                            var0 = var2.bind(var0)(var1);
-                            var3 = var0.NitroModules;
-                            var2 = var3.createHybridObject;
-                            var0 = _closure2_slot0;
-                            var0 = var2.bind(var3)(var0);
-                            var2 = global;
-                            var3 = var2.Object;
-                            var2 = var3.getPrototypeOf;
-                            var3 = var2.bind(var3)(var0);
-                            var2 = _closure2_slot1;
-                            var2 = var2.prototype;
-                            if (!(var2 !== var3)) {
-                                _fun114169_ip = 102;
-                                continue _fun114169
-                            }
-                        case 80:
-                            var2 = _closure2_slot1;
-                            var2.prototype = var3;
-                            var2 = _closure2_slot1;
-                            var1 = true;
-                            var2.prototypeInitialized = var1;
-                        case 102:
-                            return var0;
-                    }
-                };
-                var _closure2_slot1 = var1;
-                var3 = false;
-                var1.prototypeInitialized = var3;
-                var3 = global;
-                var6 = var3.Object;
-                var5 = var6.defineProperty;
-                var3 = var3.Symbol;
-                var4 = var3.hasInstance;
-                var3 = {};
-                var7 = function arg0() {
-                    _fun114170: for (var _fun114170_ip = 0;;) switch (_fun114170_ip) {
-                        case 0:
-                            var0 = _closure2_slot1;
-                            var0 = var0.prototypeInitialized;
-                            if (var0) {
-                                _fun114170_ip = 102;
-                                continue _fun114170
-                            }
-                        case 16:
-                            var2 = _closure1_slot0;
-                            var1 = _closure1_slot1;
-                            var0 = 0;
-                            var1 = var1[var0];
-                            var0 = undefined;
-                            var0 = var2.bind(var0)(var1);
-                            var2 = var0.NitroModules;
-                            var1 = var2.createHybridObject;
-                            var0 = _closure2_slot0;
-                            var4 = var1.bind(var2)(var0);
-                            var1 = _closure2_slot1;
-                            var0 = global;
-                            var2 = var0.Object;
-                            var0 = var2.getPrototypeOf;
-                            var0 = var0.bind(var2)(var4);
-                            var1.prototype = var0;
-                            var1 = _closure2_slot1;
-                            var0 = true;
-                            var1.prototypeInitialized = var0;
-                        case 102:
-                            var2 = global;
-                            var4 = var2.Object;
-                            var1 = var4.getPrototypeOf;
-                            var0 = arg0;
-                            var0 = var1.bind(var4)(var0);
-                            var1 = null;
-                            if (!(var1 != var0)) {
-                                _fun114170_ip = 164;
-                                continue _fun114170
-                            }
-                        case 130:
-                            var4 = _closure2_slot1;
-                            var4 = var4.prototype;
-                            if (!(var0 !== var4)) {
-                                _fun114170_ip = 168;
-                                continue _fun114170
-                            }
-                        case 143:
-                            var5 = var2.Object;
-                            var4 = var5.getPrototypeOf;
-                            var0 = var4.bind(var5)(var0);
-                            if (var1 != var0) {
-                                _fun114170_ip = 130;
-                                continue _fun114170
-                            }
-                        case 164:
-                            var0 = false;
-                            return var0;
-                        case 168:
-                            var0 = true;
-                            return var0;
-                    }
-                };
-                var3.value = var7;
-                var3 = var5.bind(var6)(var1, var4, var3);
-                var4 = _closure1_slot2;
-                var3 = var4.set;
-                var3 = var3.bind(var4)(var2, var1);
-                return var1;
-            case 110:
-                var1 = _closure1_slot2;
-                var0 = var1.get;
-                var0 = var0.bind(var1)(var2);
-                return var0;
-        }
-    };
-    var1.getHybridObjectConstructor = var0;
-    var0 = undefined;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [14642]);
+            };
+            var6.isRuntimeAlive = var5;
+            return var3;
+        case 163:
+            var7 = var2.Error;
+            var5 = var7.prototype;
+            var6 = Object.create(var5, {
+                constructor: {
+                    value: var7
+                }
+            });
+            var19 = 'NitroModules was installed, but `global.NitroModulesProxy` was null!';
+            var20 = var6;
+            var5 = new var20[var7](var19, var18);
+            var7 = var5 instanceof Object ? var5 : var6;
+            var6 = var1;
+            var8 = var0;
+            var5 = 1;
+            var5 = var8[var5];
+            var5 = var6.bind(var3)(var5);
+            var5 = var5.ModuleNotFoundError;
+            var6 = var5.prototype;
+            var6 = Object.create(var6, {
+                constructor: {
+                    value: var5
+                }
+            });
+            var20 = var6;
+            var19 = var7;
+            var5 = new var20[var5](var19, var18);
+            var5 = var5 instanceof Object ? var5 : var6;
+            throw var5;
+        case 244:
+            var5 = var2.Error;
+            var6 = var4;
+            var2 = var2.HermesInternal;
+            var4 = var2.concat;
+            var2 = 'Failed to install Nitro: ';
+            var19 = var4.bind(var2)(var6);
+            var4 = var5.prototype;
+            var4 = Object.create(var4, {
+                constructor: {
+                    value: var5
+                }
+            });
+            var20 = var4;
+            var2 = new var20[var5](var19, var18);
+            var2 = var2 instanceof Object ? var2 : var4;
+            throw var2;
+        case 297: // catch_target0
+            CatchBlockStart(arg_register = 2);
+            var4 = var0;
+            var0 = 1;
+            var0 = var4[var0];
+            var0 = var1.bind(var3)(var0);
+            var0 = var0.ModuleNotFoundError;
+            var1 = var0.prototype;
+            var1 = Object.create(var1, {
+                constructor: {
+                    value: var0
+                }
+            });
+            var20 = var1;
+            var19 = var2;
+            var0 = new var20[var0](var19, var18);
+            var0 = var0 instanceof Object ? var0 : var1;
+            throw var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 14650]);

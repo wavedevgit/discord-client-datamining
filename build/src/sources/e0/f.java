@@ -52,49 +52,49 @@ public final class f implements x.i {
     private final x0 F;
 
     /* renamed from: d  reason: collision with root package name */
-    private final e0 f21285d;
+    private final e0 f21218d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final e0 f21286e;
+    private final e0 f21219e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final b0 f21287i;
+    private final b0 f21220i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final y2 f21288o;
+    private final y2 f21221o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final b f21289p;
+    private final b f21222p;
 
     /* renamed from: s  reason: collision with root package name */
-    private final y.a f21292s;
+    private final y.a f21225s;
 
     /* renamed from: t  reason: collision with root package name */
-    private z1 f21293t;
+    private z1 f21226t;
 
     /* renamed from: v  reason: collision with root package name */
-    private final w f21295v;
+    private final w f21228v;
 
     /* renamed from: z  reason: collision with root package name */
-    private x1 f21299z;
+    private x1 f21232z;
 
     /* renamed from: q  reason: collision with root package name */
-    private final List f21290q = new ArrayList();
+    private final List f21223q = new ArrayList();
 
     /* renamed from: r  reason: collision with root package name */
-    private final List f21291r = new ArrayList();
+    private final List f21224r = new ArrayList();
 
     /* renamed from: u  reason: collision with root package name */
-    private List f21294u = Collections.EMPTY_LIST;
+    private List f21227u = Collections.EMPTY_LIST;
 
     /* renamed from: w  reason: collision with root package name */
-    private final Object f21296w = new Object();
+    private final Object f21229w = new Object();
 
     /* renamed from: x  reason: collision with root package name */
-    private boolean f21297x = true;
+    private boolean f21230x = true;
 
     /* renamed from: y  reason: collision with root package name */
-    private r0 f21298y = null;
+    private r0 f21231y = null;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a extends Exception {
@@ -119,32 +119,32 @@ public final class f implements x.i {
     public static class c {
 
         /* renamed from: a  reason: collision with root package name */
-        x2 f21300a;
+        x2 f21233a;
 
         /* renamed from: b  reason: collision with root package name */
-        x2 f21301b;
+        x2 f21234b;
 
         c(x2 x2Var, x2 x2Var2) {
-            this.f21300a = x2Var;
-            this.f21301b = x2Var2;
+            this.f21233a = x2Var;
+            this.f21234b = x2Var2;
         }
     }
 
     public f(e0 e0Var, e0 e0Var2, g2 g2Var, g2 g2Var2, x0 x0Var, x0 x0Var2, y.a aVar, b0 b0Var, y2 y2Var) {
-        this.f21285d = e0Var;
-        this.f21286e = e0Var2;
+        this.f21218d = e0Var;
+        this.f21219e = e0Var2;
         this.E = x0Var;
         this.F = x0Var2;
-        this.f21292s = aVar;
-        this.f21287i = b0Var;
-        this.f21288o = y2Var;
+        this.f21225s = aVar;
+        this.f21220i = b0Var;
+        this.f21221o = y2Var;
         w l10 = g2Var.l();
-        this.f21295v = l10;
+        this.f21228v = l10;
         l10.C(null);
         this.B = new f2(e0Var.f(), null);
         this.C = g2Var;
         this.D = g2Var2;
-        this.f21289p = B(g2Var, g2Var2);
+        this.f21222p = B(g2Var, g2Var2);
     }
 
     public static b B(g2 g2Var, g2 g2Var2) {
@@ -171,9 +171,9 @@ public final class f implements x.i {
     }
 
     private int E() {
-        synchronized (this.f21296w) {
+        synchronized (this.f21229w) {
             try {
-                if (this.f21292s.c() == 2) {
+                if (this.f21225s.c() == 2) {
                     return 1;
                 }
                 return 0;
@@ -201,9 +201,9 @@ public final class f implements x.i {
 
     private int H(boolean z10) {
         int i10;
-        synchronized (this.f21296w) {
+        synchronized (this.f21229w) {
             try {
-                Iterator it = this.f21294u.iterator();
+                Iterator it = this.f21227u.iterator();
                 if (!it.hasNext()) {
                     if (z10) {
                         i10 = 3;
@@ -235,8 +235,8 @@ public final class f implements x.i {
     }
 
     private boolean K() {
-        synchronized (this.f21296w) {
-            this.f21295v.C(null);
+        synchronized (this.f21229w) {
+            this.f21228v.C(null);
         }
         return false;
     }
@@ -318,9 +318,9 @@ public final class f implements x.i {
 
     private boolean P() {
         boolean z10;
-        synchronized (this.f21296w) {
+        synchronized (this.f21229w) {
             z10 = true;
-            if (this.f21295v.r() != 1) {
+            if (this.f21228v.r() != 1) {
                 z10 = false;
             }
         }
@@ -427,10 +427,10 @@ public final class f implements x.i {
     }
 
     private void Y() {
-        synchronized (this.f21296w) {
+        synchronized (this.f21229w) {
             try {
-                if (this.f21298y != null) {
-                    this.f21285d.f().k(this.f21298y);
+                if (this.f21231y != null) {
+                    this.f21218d.f().k(this.f21231y);
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -483,16 +483,16 @@ public final class f implements x.i {
     private void e0(Map map, Collection collection) {
         Map map2;
         boolean z10;
-        synchronized (this.f21296w) {
+        synchronized (this.f21229w) {
             try {
-                if (this.f21293t != null && !collection.isEmpty()) {
-                    if (this.f21285d.l().c() == 0) {
+                if (this.f21226t != null && !collection.isEmpty()) {
+                    if (this.f21218d.m().c() == 0) {
                         z10 = true;
                     } else {
                         z10 = false;
                     }
                     map2 = map;
-                    Map a10 = o.a(this.f21285d.f().d(), z10, this.f21293t.a(), this.f21285d.l().j(this.f21293t.c()), this.f21293t.d(), this.f21293t.b(), map2);
+                    Map a10 = o.a(this.f21218d.f().d(), z10, this.f21226t.a(), this.f21218d.m().j(this.f21226t.c()), this.f21226t.d(), this.f21226t.b(), map2);
                     Iterator it = collection.iterator();
                     while (it.hasNext()) {
                         x1 x1Var = (x1) it.next();
@@ -504,7 +504,7 @@ public final class f implements x.i {
                 Iterator it2 = collection.iterator();
                 while (it2.hasNext()) {
                     x1 x1Var2 = (x1) it2.next();
-                    x1Var2.S(u(this.f21285d.f().d(), ((m2) b2.e.g((m2) map2.get(x1Var2))).e()));
+                    x1Var2.S(u(this.f21218d.f().d(), ((m2) b2.e.g((m2) map2.get(x1Var2))).e()));
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -512,10 +512,10 @@ public final class f implements x.i {
         }
     }
 
-    private void r() {
-        synchronized (this.f21296w) {
-            a0 f10 = this.f21285d.f();
-            this.f21298y = f10.g();
+    private void n() {
+        synchronized (this.f21229w) {
+            a0 f10 = this.f21218d.f();
+            this.f21231y = f10.g();
             f10.j();
         }
     }
@@ -534,7 +534,7 @@ public final class f implements x.i {
 
     private x1 t(Collection collection, n0.f fVar) {
         x1 x1Var;
-        synchronized (this.f21296w) {
+        synchronized (this.f21229w) {
             try {
                 ArrayList arrayList = new ArrayList(collection);
                 if (fVar != null) {
@@ -543,14 +543,14 @@ public final class f implements x.i {
                 }
                 if (P()) {
                     if (R(arrayList)) {
-                        if (U(this.f21299z)) {
-                            x1Var = this.f21299z;
+                        if (U(this.f21232z)) {
+                            x1Var = this.f21232z;
                         } else {
                             x1Var = y();
                         }
                     } else if (Q(arrayList)) {
-                        if (S(this.f21299z)) {
-                            x1Var = this.f21299z;
+                        if (S(this.f21232z)) {
+                            x1Var = this.f21232z;
                         } else {
                             x1Var = x();
                         }
@@ -593,7 +593,7 @@ public final class f implements x.i {
                 break;
             }
             x1 x1Var = (x1) it.next();
-            a0.a a10 = a0.a.a(this.f21287i.b(i10, b10, x1Var.m(), x1Var.f()), x1Var.m(), x1Var.f(), ((m2) b2.e.g(x1Var.e())).b(), n0.f.g0(x1Var), x1Var.e().d(), x1Var.j().u(null));
+            a0.a a10 = a0.a.a(this.f21220i.b(i10, b10, x1Var.m(), x1Var.f()), x1Var.m(), x1Var.f(), ((m2) b2.e.g(x1Var.e())).b(), n0.f.g0(x1Var), x1Var.e().d(), x1Var.j().u(null));
             arrayList.add(a10);
             hashMap2.put(a10, x1Var);
             hashMap.put(x1Var, x1Var.e());
@@ -602,7 +602,7 @@ public final class f implements x.i {
             HashMap hashMap3 = new HashMap();
             HashMap hashMap4 = new HashMap();
             try {
-                rect = this.f21285d.f().d();
+                rect = this.f21218d.f().d();
             } catch (NullPointerException unused) {
                 rect = null;
             }
@@ -615,7 +615,7 @@ public final class f implements x.i {
             while (it2.hasNext()) {
                 x1 x1Var2 = (x1) it2.next();
                 c cVar = (c) map.get(x1Var2);
-                x2 D = x1Var2.D(d0Var, cVar.f21300a, cVar.f21301b);
+                x2 D = x1Var2.D(d0Var, cVar.f21233a, cVar.f21234b);
                 hashMap3.put(D, x1Var2);
                 hashMap4.put(D, kVar.m(D));
                 if (x1Var2.j() instanceof a0.x1) {
@@ -626,7 +626,7 @@ public final class f implements x.i {
                     }
                 }
             }
-            Pair a11 = this.f21287i.a(i10, b10, arrayList, hashMap4, z10, O(collection));
+            Pair a11 = this.f21220i.a(i10, b10, arrayList, hashMap4, z10, O(collection));
             for (Map.Entry entry : hashMap3.entrySet()) {
                 hashMap.put((x1) entry.getValue(), (m2) ((Map) a11.first).get(entry.getKey()));
             }
@@ -649,9 +649,9 @@ public final class f implements x.i {
                 throw new IllegalArgumentException("Extensions are only supported for use with standard dynamic range.");
             }
         }
-        synchronized (this.f21296w) {
+        synchronized (this.f21229w) {
             try {
-                if (!this.f21294u.isEmpty() && N(collection)) {
+                if (!this.f21227u.isEmpty() && N(collection)) {
                     throw new IllegalArgumentException("Ultra HDR image capture does not support for use with CameraEffect.");
                 }
             } finally {
@@ -675,7 +675,7 @@ public final class f implements x.i {
     }
 
     private n0.f z(Collection collection, boolean z10) {
-        synchronized (this.f21296w) {
+        synchronized (this.f21229w) {
             try {
                 Set I = I(collection, z10);
                 if (I.size() >= 2 || (K() && O(I))) {
@@ -687,7 +687,7 @@ public final class f implements x.i {
                     } else if (!V(I)) {
                         return null;
                     } else {
-                        return new n0.f(this.f21285d, this.f21286e, this.E, this.F, I, this.f21288o);
+                        return new n0.f(this.f21218d, this.f21219e, this.E, this.F, I, this.f21221o);
                     }
                 }
                 return null;
@@ -697,16 +697,16 @@ public final class f implements x.i {
     }
 
     public void A() {
-        synchronized (this.f21296w) {
+        synchronized (this.f21229w) {
             try {
-                if (this.f21297x) {
-                    this.f21285d.k(new ArrayList(this.f21291r));
-                    e0 e0Var = this.f21286e;
+                if (this.f21230x) {
+                    this.f21218d.l(new ArrayList(this.f21224r));
+                    e0 e0Var = this.f21219e;
                     if (e0Var != null) {
-                        e0Var.k(new ArrayList(this.f21291r));
+                        e0Var.l(new ArrayList(this.f21224r));
                     }
-                    r();
-                    this.f21297x = false;
+                    n();
+                    this.f21230x = false;
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -715,7 +715,7 @@ public final class f implements x.i {
     }
 
     public b D() {
-        return this.f21289p;
+        return this.f21222p;
     }
 
     public x.o G() {
@@ -724,18 +724,18 @@ public final class f implements x.i {
 
     public List J() {
         ArrayList arrayList;
-        synchronized (this.f21296w) {
-            arrayList = new ArrayList(this.f21290q);
+        synchronized (this.f21229w) {
+            arrayList = new ArrayList(this.f21223q);
         }
         return arrayList;
     }
 
     public void X(Collection collection) {
         boolean z10;
-        synchronized (this.f21296w) {
-            LinkedHashSet linkedHashSet = new LinkedHashSet(this.f21290q);
+        synchronized (this.f21229w) {
+            LinkedHashSet linkedHashSet = new LinkedHashSet(this.f21223q);
             linkedHashSet.removeAll(collection);
-            e0 e0Var = this.f21286e;
+            e0 e0Var = this.f21219e;
             boolean z11 = false;
             if (e0Var != null) {
                 z10 = true;
@@ -750,8 +750,8 @@ public final class f implements x.i {
     }
 
     public void Z(List list) {
-        synchronized (this.f21296w) {
-            this.f21294u = list;
+        synchronized (this.f21229w) {
+            this.f21227u = list;
         }
     }
 
@@ -766,15 +766,15 @@ public final class f implements x.i {
     }
 
     public void b0(z1 z1Var) {
-        synchronized (this.f21296w) {
-            this.f21293t = z1Var;
+        synchronized (this.f21229w) {
+            this.f21226t = z1Var;
         }
     }
 
     void d0(Collection collection, boolean z10, boolean z11) {
         m2 m2Var;
         r0 d10;
-        synchronized (this.f21296w) {
+        synchronized (this.f21229w) {
             try {
                 w(collection);
                 if (!z10 && K() && O(collection)) {
@@ -785,44 +785,44 @@ public final class f implements x.i {
                 x1 t10 = t(collection, z12);
                 Collection s10 = s(collection, t10, z12);
                 ArrayList<x1> arrayList = new ArrayList(s10);
-                arrayList.removeAll(this.f21291r);
+                arrayList.removeAll(this.f21224r);
                 ArrayList<x1> arrayList2 = new ArrayList(s10);
-                arrayList2.retainAll(this.f21291r);
-                ArrayList<x1> arrayList3 = new ArrayList(this.f21291r);
+                arrayList2.retainAll(this.f21224r);
+                ArrayList<x1> arrayList3 = new ArrayList(this.f21224r);
                 arrayList3.removeAll(s10);
-                Map F = F(arrayList, this.f21295v.k(), this.f21288o);
+                Map F = F(arrayList, this.f21228v.k(), this.f21221o);
                 Map map = Collections.EMPTY_MAP;
                 try {
-                    Map v10 = v(E(), this.f21285d.l(), arrayList, arrayList2, F);
-                    if (this.f21286e != null) {
+                    Map v10 = v(E(), this.f21218d.m(), arrayList, arrayList2, F);
+                    if (this.f21219e != null) {
                         int E = E();
-                        e0 e0Var = this.f21286e;
+                        e0 e0Var = this.f21219e;
                         Objects.requireNonNull(e0Var);
-                        map = v(E, e0Var.l(), arrayList, arrayList2, F);
+                        map = v(E, e0Var.m(), arrayList, arrayList2, F);
                     }
                     e0(v10, s10);
-                    c0(this.f21294u, s10, collection);
+                    c0(this.f21227u, s10, collection);
                     for (x1 x1Var : arrayList3) {
-                        x1Var.U(this.f21285d);
+                        x1Var.U(this.f21218d);
                     }
-                    this.f21285d.k(arrayList3);
-                    if (this.f21286e != null) {
+                    this.f21218d.l(arrayList3);
+                    if (this.f21219e != null) {
                         for (x1 x1Var2 : arrayList3) {
-                            e0 e0Var2 = this.f21286e;
+                            e0 e0Var2 = this.f21219e;
                             Objects.requireNonNull(e0Var2);
                             x1Var2.U(e0Var2);
                         }
-                        e0 e0Var3 = this.f21286e;
+                        e0 e0Var3 = this.f21219e;
                         Objects.requireNonNull(e0Var3);
-                        e0Var3.k(arrayList3);
+                        e0Var3.l(arrayList3);
                     }
                     if (arrayList3.isEmpty()) {
                         for (x1 x1Var3 : arrayList2) {
                             if (v10.containsKey(x1Var3) && (d10 = (m2Var = (m2) v10.get(x1Var3)).d()) != null && L(m2Var, x1Var3.w())) {
                                 x1Var3.X(d10);
-                                if (this.f21297x) {
-                                    this.f21285d.d(x1Var3);
-                                    e0 e0Var4 = this.f21286e;
+                                if (this.f21230x) {
+                                    this.f21218d.d(x1Var3);
+                                    e0 e0Var4 = this.f21219e;
                                     if (e0Var4 != null) {
                                         Objects.requireNonNull(e0Var4);
                                         e0Var4.d(x1Var3);
@@ -834,36 +834,36 @@ public final class f implements x.i {
                     for (x1 x1Var4 : arrayList) {
                         c cVar = (c) F.get(x1Var4);
                         Objects.requireNonNull(cVar);
-                        e0 e0Var5 = this.f21286e;
+                        e0 e0Var5 = this.f21219e;
                         if (e0Var5 != null) {
-                            e0 e0Var6 = this.f21285d;
+                            e0 e0Var6 = this.f21218d;
                             Objects.requireNonNull(e0Var5);
-                            x1Var4.b(e0Var6, e0Var5, cVar.f21300a, cVar.f21301b);
+                            x1Var4.b(e0Var6, e0Var5, cVar.f21233a, cVar.f21234b);
                             x1Var4.W((m2) b2.e.g((m2) v10.get(x1Var4)), (m2) map.get(x1Var4));
                         } else {
-                            x1Var4.b(this.f21285d, null, cVar.f21300a, cVar.f21301b);
+                            x1Var4.b(this.f21218d, null, cVar.f21233a, cVar.f21234b);
                             x1Var4.W((m2) b2.e.g((m2) v10.get(x1Var4)), null);
                         }
                     }
-                    if (this.f21297x) {
-                        this.f21285d.j(arrayList);
-                        e0 e0Var7 = this.f21286e;
+                    if (this.f21230x) {
+                        this.f21218d.i(arrayList);
+                        e0 e0Var7 = this.f21219e;
                         if (e0Var7 != null) {
                             Objects.requireNonNull(e0Var7);
-                            e0Var7.j(arrayList);
+                            e0Var7.i(arrayList);
                         }
                     }
                     for (x1 x1Var5 : arrayList) {
                         x1Var5.H();
                     }
-                    this.f21290q.clear();
-                    this.f21290q.addAll(collection);
-                    this.f21291r.clear();
-                    this.f21291r.addAll(s10);
-                    this.f21299z = t10;
+                    this.f21223q.clear();
+                    this.f21223q.addAll(collection);
+                    this.f21224r.clear();
+                    this.f21224r.addAll(s10);
+                    this.f21232z = t10;
                     this.A = z12;
                 } catch (IllegalArgumentException e10) {
-                    if (!z10 && !K() && this.f21292s.c() != 2) {
+                    if (!z10 && !K() && this.f21225s.c() != 2) {
                         d0(collection, true, z11);
                         return;
                     }
@@ -875,19 +875,23 @@ public final class f implements x.i {
         }
     }
 
-    public void h(Collection collection) {
+    public void h(boolean z10) {
+        this.f21218d.h(z10);
+    }
+
+    public void j(Collection collection) {
         boolean z10;
-        synchronized (this.f21296w) {
+        synchronized (this.f21229w) {
             try {
-                this.f21285d.n(this.f21295v);
-                e0 e0Var = this.f21286e;
+                this.f21218d.p(this.f21228v);
+                e0 e0Var = this.f21219e;
                 if (e0Var != null) {
-                    e0Var.n(this.f21295v);
+                    e0Var.p(this.f21228v);
                 }
-                LinkedHashSet linkedHashSet = new LinkedHashSet(this.f21290q);
+                LinkedHashSet linkedHashSet = new LinkedHashSet(this.f21223q);
                 linkedHashSet.addAll(collection);
                 try {
-                    e0 e0Var2 = this.f21286e;
+                    e0 e0Var2 = this.f21219e;
                     boolean z11 = false;
                     if (e0Var2 != null) {
                         z10 = true;
@@ -907,31 +911,27 @@ public final class f implements x.i {
         }
     }
 
-    public void i(boolean z10) {
-        this.f21285d.i(z10);
-    }
-
-    public void o() {
-        synchronized (this.f21296w) {
+    public void k() {
+        synchronized (this.f21229w) {
             try {
-                if (!this.f21297x) {
-                    if (!this.f21291r.isEmpty()) {
-                        this.f21285d.n(this.f21295v);
-                        e0 e0Var = this.f21286e;
+                if (!this.f21230x) {
+                    if (!this.f21224r.isEmpty()) {
+                        this.f21218d.p(this.f21228v);
+                        e0 e0Var = this.f21219e;
                         if (e0Var != null) {
-                            e0Var.n(this.f21295v);
+                            e0Var.p(this.f21228v);
                         }
                     }
-                    this.f21285d.j(this.f21291r);
-                    e0 e0Var2 = this.f21286e;
+                    this.f21218d.i(this.f21224r);
+                    e0 e0Var2 = this.f21219e;
                     if (e0Var2 != null) {
-                        e0Var2.j(this.f21291r);
+                        e0Var2.i(this.f21224r);
                     }
                     Y();
-                    for (x1 x1Var : this.f21291r) {
+                    for (x1 x1Var : this.f21224r) {
                         x1Var.H();
                     }
-                    this.f21297x = true;
+                    this.f21230x = true;
                 }
             } catch (Throwable th2) {
                 throw th2;

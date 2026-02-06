@@ -51,8 +51,6 @@ import kotlin.time.Duration;
 import kotlin.time.TimeMark;
 import kotlin.time.g;
 import kotlinx.coroutines.CoroutineScope;
-import ms.j1;
-import ms.m0;
 import okhttp3.Cookie;
 import okhttp3.CookieJar;
 import okhttp3.Headers;
@@ -60,8 +58,10 @@ import okhttp3.HttpUrl;
 import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
 import okhttp3.Response;
-import or.v;
 import org.jetbrains.annotations.NotNull;
+import os.j1;
+import os.m0;
+import qr.v;
 @Metadata(d1 = {"\u0000ú\u0001\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\b\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u0003\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0010\u0011\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u000f\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u001f\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0011\u0018\u0000 \u00ad\u00012\u00020\u0001:\u0016®\u0001¯\u0001°\u0001±\u0001²\u0001³\u0001´\u0001µ\u0001¶\u0001·\u0001\u00ad\u0001B+\b\u0002\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\u0006\u0010\u0005\u001a\u00020\u0004\u0012\u0006\u0010\u0007\u001a\u00020\u0006\u0012\b\b\u0002\u0010\t\u001a\u00020\b¢\u0006\u0004\b\n\u0010\u000bJ\u001f\u0010\u000f\u001a\u00020\u00042\u0006\u0010\r\u001a\u00020\f2\u0006\u0010\u000e\u001a\u00020\fH\u0002¢\u0006\u0004\b\u000f\u0010\u0010J\u0017\u0010\u0011\u001a\u00020\u00042\u0006\u0010\u000e\u001a\u00020\fH\u0002¢\u0006\u0004\b\u0011\u0010\u0012J\u001f\u0010\u0016\u001a\u00020\u00152\u0006\u0010\u0013\u001a\u00020\u00042\u0006\u0010\u0014\u001a\u00020\u0004H\u0002¢\u0006\u0004\b\u0016\u0010\u0017J\u000f\u0010\u0019\u001a\u00020\u0018H\u0002¢\u0006\u0004\b\u0019\u0010\u001aJ\u0017\u0010\u001d\u001a\u00020\u00152\u0006\u0010\u001c\u001a\u00020\u001bH\u0002¢\u0006\u0004\b\u001d\u0010\u001eJ)\u0010#\u001a\u00020\u00182\b\u0010\u001f\u001a\u0004\u0018\u00010\f2\u0006\u0010!\u001a\u00020 2\u0006\u0010\"\u001a\u00020\fH\u0002¢\u0006\u0004\b#\u0010$J\u0017\u0010(\u001a\u00020'2\u0006\u0010&\u001a\u00020%H\u0002¢\u0006\u0004\b(\u0010)Je\u00108\u001a\b\u0012\u0004\u0012\u000205042\u0006\u0010*\u001a\u00020\f2\u001c\b\u0002\u0010-\u001a\u0016\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\f\u0012\u0004\u0012\u00020\f0,\u0018\u00010+2\n\b\u0002\u0010.\u001a\u0004\u0018\u00010\f2\n\b\u0002\u00100\u001a\u0004\u0018\u00010/2\u0006\u00101\u001a\u00020\u00042\b\b\u0002\u00103\u001a\u000202H\u0002¢\u0006\u0004\b6\u00107J\u0013\u00109\u001a\u00020\u0004*\u00020\u0004H\u0002¢\u0006\u0004\b9\u0010:J\u000f\u0010;\u001a\u00020\u0015H\u0002¢\u0006\u0004\b;\u0010<J'\u0010?\u001a\u00020\u00152\u0016\u0010>\u001a\f\u0012\b\b\u0001\u0012\u0004\u0018\u00010\f0=\"\u0004\u0018\u00010\fH\u0002¢\u0006\u0004\b?\u0010@J#\u0010D\u001a\u00020\u00182\u0006\u0010B\u001a\u00020A2\n\b\u0002\u0010C\u001a\u0004\u0018\u00010\fH\u0002¢\u0006\u0004\bD\u0010EJK\u0010L\u001a\u00020\u00152\u0006\u0010B\u001a\u00020F2\u0006\u0010*\u001a\u00020\f2\u0006\u0010H\u001a\u00020G2\n\b\u0002\u0010J\u001a\u0004\u0018\u00010I2\n\b\u0002\u0010K\u001a\u0004\u0018\u0001022\n\b\u0002\u0010C\u001a\u0004\u0018\u00010\fH\u0002¢\u0006\u0004\bL\u0010MJ\u0017\u0010N\u001a\u00020\u00152\u0006\u0010B\u001a\u00020\u0018H\u0002¢\u0006\u0004\bN\u0010OJ\u000f\u0010Q\u001a\u0004\u0018\u00010P¢\u0006\u0004\bQ\u0010RJ\u001d\u0010U\u001a\u00020\u00152\u0006\u0010\u001c\u001a\u00020\u001b2\u0006\u0010T\u001a\u00020S¢\u0006\u0004\bU\u0010VJ/\u0010[\u001a\b\u0012\u0002\b\u0003\u0018\u00010Z2\b\b\u0002\u0010W\u001a\u0002022\u0010\b\u0002\u0010Y\u001a\n\u0012\u0004\u0012\u00020\u0015\u0018\u00010X¢\u0006\u0004\b[\u0010\\R\u0014\u0010\u0003\u001a\u00020\u00028\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0003\u0010]R\u0014\u0010\u0005\u001a\u00020\u00048\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0005\u0010^R\u0014\u0010\u0007\u001a\u00020\u00068\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0007\u0010_R\u0014\u0010\t\u001a\u00020\b8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\t\u0010`R#\u0010g\u001a\n b*\u0004\u0018\u00010a0a8BX\u0082\u0084\u0002¢\u0006\f\n\u0004\bc\u0010d\u001a\u0004\be\u0010fR\u0014\u0010i\u001a\u00020h8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bi\u0010jR\u001b\u0010o\u001a\u00020k8BX\u0082\u0084\u0002¢\u0006\f\n\u0004\bl\u0010d\u001a\u0004\bm\u0010nR\u001b\u0010s\u001a\u00020\u00048FX\u0086\u0084\u0002¢\u0006\f\n\u0004\bp\u0010d\u001a\u0004\bq\u0010rR\u0016\u0010t\u001a\u00020I8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\bt\u0010uR$\u0010w\u001a\u00020'2\u0006\u0010v\u001a\u00020'8\u0006@BX\u0086\u000e¢\u0006\f\n\u0004\bw\u0010x\u001a\u0004\bw\u0010yR\u0016\u0010z\u001a\u00020'8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\bz\u0010xR\u001e\u0010}\u001a\b\u0012\u0004\u0012\u00020|0{8\u0006¢\u0006\r\n\u0004\b}\u0010~\u001a\u0005\b\u007f\u0010\u0080\u0001R\u001b\u0010\u0081\u0001\u001a\u0004\u0018\u00010G8\u0002@\u0002X\u0082\u000e¢\u0006\b\n\u0006\b\u0081\u0001\u0010\u0082\u0001R8\u0010\u0084\u0001\u001a\u0011\u0012\u0004\u0012\u00020'\u0012\u0004\u0012\u00020\u0015\u0018\u00010\u0083\u00018\u0006@\u0006X\u0086\u000e¢\u0006\u0018\n\u0006\b\u0084\u0001\u0010\u0085\u0001\u001a\u0006\b\u0086\u0001\u0010\u0087\u0001\"\u0006\b\u0088\u0001\u0010\u0089\u0001R>\u0010\u008a\u0001\u001a\u0017\u0012\n\u0012\b\u0012\u0004\u0012\u00020|0+\u0012\u0004\u0012\u00020\u0015\u0018\u00010\u0083\u00018\u0006@\u0006X\u0086\u000e¢\u0006\u0018\n\u0006\b\u008a\u0001\u0010\u0085\u0001\u001a\u0006\b\u008b\u0001\u0010\u0087\u0001\"\u0006\b\u008c\u0001\u0010\u0089\u0001R\u0017\u0010\u008f\u0001\u001a\u00020\f8BX\u0082\u0004¢\u0006\b\u001a\u0006\b\u008d\u0001\u0010\u008e\u0001R\u0017\u0010\u0091\u0001\u001a\u00020\f8BX\u0082\u0004¢\u0006\b\u001a\u0006\b\u0090\u0001\u0010\u008e\u0001R)\u0010\u0095\u0001\u001a\u00020\f2\u0006\u0010v\u001a\u00020\f8F@BX\u0086\u000e¢\u0006\u0010\u001a\u0006\b\u0092\u0001\u0010\u008e\u0001\"\u0006\b\u0093\u0001\u0010\u0094\u0001R-\u0010\u0098\u0001\u001a\u0004\u0018\u00010\f2\b\u0010v\u001a\u0004\u0018\u00010\f8B@BX\u0082\u000e¢\u0006\u0010\u001a\u0006\b\u0096\u0001\u0010\u008e\u0001\"\u0006\b\u0097\u0001\u0010\u0094\u0001R)\u0010\u009b\u0001\u001a\u00020\f2\u0006\u0010v\u001a\u00020\f8F@BX\u0086\u000e¢\u0006\u0010\u001a\u0006\b\u0099\u0001\u0010\u008e\u0001\"\u0006\b\u009a\u0001\u0010\u0094\u0001R\u0016\u0010\u009d\u0001\u001a\u00020'8BX\u0082\u0004¢\u0006\u0007\u001a\u0005\b\u009c\u0001\u0010yR\u0018\u0010\u001f\u001a\u0004\u0018\u00010\f8BX\u0082\u0004¢\u0006\b\u001a\u0006\b\u009e\u0001\u0010\u008e\u0001R*\u0010¢\u0001\u001a\u00020\f2\u0007\u0010\u009f\u0001\u001a\u00020\f8F@FX\u0086\u000e¢\u0006\u0010\u001a\u0006\b \u0001\u0010\u008e\u0001\"\u0006\b¡\u0001\u0010\u0094\u0001R\u0017\u0010¦\u0001\u001a\u0005\u0018\u00010£\u00018F¢\u0006\b\u001a\u0006\b¤\u0001\u0010¥\u0001R0\u0010¨\u0001\u001a\u0005\u0018\u00010§\u00012\n\u0010¨\u0001\u001a\u0005\u0018\u00010§\u00018F@FX\u0086\u000e¢\u0006\u0010\u001a\u0006\b©\u0001\u0010ª\u0001\"\u0006\b«\u0001\u0010¬\u0001¨\u0006¸\u0001"}, d2 = {"Lcom/discord/bundle_updater/BundleUpdater;", "", "Landroid/content/SharedPreferences;", "sharedPreferences", "Ljava/io/File;", "filesDirectory", "Landroid/content/res/AssetManager;", "assetManager", "Ljava/util/concurrent/ExecutorService;", "executor", "<init>", "(Landroid/content/SharedPreferences;Ljava/io/File;Landroid/content/res/AssetManager;Ljava/util/concurrent/ExecutorService;)V", "", "commit", "file", "otaFile", "(Ljava/lang/String;Ljava/lang/String;)Ljava/io/File;", "otaTempFile", "(Ljava/lang/String;)Ljava/io/File;", "src", "dst", "", "moveFile", "(Ljava/io/File;Ljava/io/File;)V", "Lcom/discord/bundle_updater/BundleUpdater$OtaCheckAttempt;", "attemptOtaUpdate", "()Lcom/discord/bundle_updater/BundleUpdater$OtaCheckAttempt;", "Landroid/content/Context;", "context", "clearBundle", "(Landroid/content/Context;)V", "existingOtaCommit", "Lcom/discord/bundle_updater/AppManifest;", "newManifest", "newOtaCommit", "downloadOtaFiles", "(Ljava/lang/String;Lcom/discord/bundle_updater/AppManifest;Ljava/lang/String;)Lcom/discord/bundle_updater/BundleUpdater$OtaCheckAttempt;", "", "throwable", "", "isNetworkException", "(Ljava/lang/Throwable;)Z", "url", "", "Lkotlin/Pair;", "extraHeaders", "hash", "Lcom/discord/bundle_updater/BundleUpdater$Patch;", "patch", "destinationFile", "", "attempt", "Lkotlin/Result;", "Lokhttp3/Headers;", "downloadSingleFile-hUnOzRk", "(Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Lcom/discord/bundle_updater/BundleUpdater$Patch;Ljava/io/File;I)Ljava/lang/Object;", "downloadSingleFile", "ensureEmptyFile", "(Ljava/io/File;)Ljava/io/File;", "validateBuildOverrideCookie", "()V", "", "knownOtaCommits", "deleteUnknownOtas", "([Ljava/lang/String;)V", "Lcom/discord/bundle_updater/BundleUpdater$OtaCheckAttemptResult;", "result", "error", "createOtaCheckAttempt", "(Lcom/discord/bundle_updater/BundleUpdater$OtaCheckAttemptResult;Ljava/lang/String;)Lcom/discord/bundle_updater/BundleUpdater$OtaCheckAttempt;", "Lcom/discord/bundle_updater/BundleUpdater$OtaAssetDownloadAttemptResult;", "Lkotlin/time/TimeMark;", "startMark", "", "bytesReceived", "statusCode", "trackAssetDownload", "(Lcom/discord/bundle_updater/BundleUpdater$OtaAssetDownloadAttemptResult;Ljava/lang/String;Lkotlin/time/TimeMark;Ljava/lang/Long;Ljava/lang/Integer;Ljava/lang/String;)V", "trackCheckAttempt", "(Lcom/discord/bundle_updater/BundleUpdater$OtaCheckAttempt;)V", "Lcom/discord/bundle_updater/BundleUpdater$ManifestInfo;", "manifestInfo", "()Lcom/discord/bundle_updater/BundleUpdater$ManifestInfo;", "Landroid/content/Intent;", "intent", "handleIntent", "(Landroid/content/Context;Landroid/content/Intent;)V", "delaySeconds", "Lkotlin/Function0;", "onComplete", "Ljava/util/concurrent/Future;", "checkForUpdate", "(ILkotlin/jvm/functions/Function0;)Ljava/util/concurrent/Future;", "Landroid/content/SharedPreferences;", "Ljava/io/File;", "Landroid/content/res/AssetManager;", "Ljava/util/concurrent/ExecutorService;", "Landroid/webkit/CookieManager;", "kotlin.jvm.PlatformType", "cookieManager$delegate", "Lkotlin/Lazy;", "getCookieManager", "()Landroid/webkit/CookieManager;", "cookieManager", "Lkotlinx/coroutines/CoroutineScope;", "coroutineScope", "Lkotlinx/coroutines/CoroutineScope;", "Lokhttp3/OkHttpClient;", "client$delegate", "getClient", "()Lokhttp3/OkHttpClient;", "client", "otasRootDirectory$delegate", "getOtasRootDirectory", "()Ljava/io/File;", "otasRootDirectory", "totalBytesReceived", "J", "value", "isVersionRequired", "Z", "()Z", "otaUpdateChecking", "", "Lcom/discord/bundle_updater/BundleUpdater$OtaMetric;", "otaMetrics", "Ljava/util/List;", "getOtaMetrics", "()Ljava/util/List;", "otaCheckTimeMark", "Lkotlin/time/TimeMark;", "Lkotlin/Function1;", "onBundleDownloadedListener", "Lkotlin/jvm/functions/Function1;", "getOnBundleDownloadedListener", "()Lkotlin/jvm/functions/Function1;", "setOnBundleDownloadedListener", "(Lkotlin/jvm/functions/Function1;)V", "onOtaUpdateCheckedListener", "getOnOtaUpdateCheckedListener", "setOnOtaUpdateCheckedListener", "getVersion", "()Ljava/lang/String;", "version", "getManifestURL", "manifestURL", "getManifestETag", "setManifestETag", "(Ljava/lang/String;)V", "manifestETag", "getInProgressOtaCommit", "setInProgressOtaCommit", "inProgressOtaCommit", "getOtaVersion", "setOtaVersion", "otaVersion", "getValidOTAVersion", "validOTAVersion", "getExistingOtaCommit", "cookieHeader", "getBuildOverrideCookieHeader", "setBuildOverrideCookieHeader", "buildOverrideCookieHeader", "Lokhttp3/Cookie;", "getBuildOverrideCookie", "()Lokhttp3/Cookie;", "buildOverrideCookie", "Lcom/discord/bundle_updater/BundleUpdater$OtaBundle;", "bundle", "getBundle", "()Lcom/discord/bundle_updater/BundleUpdater$OtaBundle;", "setBundle", "(Lcom/discord/bundle_updater/BundleUpdater$OtaBundle;)V", "Companion", "ManifestInfo", "OtaMetric", "OtaCheckAttempt", "OtaAssetDownloadAttempt", "OtaCheckAttemptResult", "OtaAssetDownloadAttemptResult", "HttpException", "MaxDownloadAttemptsException", "Patch", "OtaBundle", "bundle_updater_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nBundleUpdater.kt\nKotlin\n*S Kotlin\n*F\n+ 1 BundleUpdater.kt\ncom/discord/bundle_updater/BundleUpdater\n+ 2 SharedPreferences.kt\nandroidx/core/content/SharedPreferencesKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 4 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 5 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n+ 6 OkHttpClient.kt\nokhttp3/OkHttpClient$Builder\n*L\n1#1,911:1\n40#2,13:912\n40#2,13:925\n40#2,13:938\n40#2,13:951\n40#2,13:964\n1#3:977\n1#3:988\n1617#4,9:978\n1869#4:987\n1870#4:989\n1626#4:990\n1869#4,2:991\n13472#5,2:993\n563#6:995\n*S KotlinDebug\n*F\n+ 1 BundleUpdater.kt\ncom/discord/bundle_updater/BundleUpdater\n*L\n167#1:912,13\n171#1:925,13\n181#1:938,13\n192#1:951,13\n212#1:964,13\n479#1:988\n479#1:978,9\n479#1:987\n479#1:989\n479#1:990\n552#1:991,2\n777#1:993,2\n101#1:995\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -292,7 +292,7 @@ public final class BundleUpdater {
         }
 
         /* renamed from: copy-fUqyM7Y$default */
-        public static /* synthetic */ OtaAssetDownloadAttempt m215copyfUqyM7Y$default(OtaAssetDownloadAttempt otaAssetDownloadAttempt, OtaAssetDownloadAttemptResult otaAssetDownloadAttemptResult, String str, Duration duration, Long l10, Integer num, String str2, int i10, Object obj) {
+        public static /* synthetic */ OtaAssetDownloadAttempt m213copyfUqyM7Y$default(OtaAssetDownloadAttempt otaAssetDownloadAttempt, OtaAssetDownloadAttemptResult otaAssetDownloadAttemptResult, String str, Duration duration, Long l10, Integer num, String str2, int i10, Object obj) {
             if ((i10 & 1) != 0) {
                 otaAssetDownloadAttemptResult = otaAssetDownloadAttempt.result;
             }
@@ -313,7 +313,7 @@ public final class BundleUpdater {
             }
             Integer num2 = num;
             String str3 = str2;
-            return otaAssetDownloadAttempt.m217copyfUqyM7Y(otaAssetDownloadAttemptResult, str, duration, l10, num2, str3);
+            return otaAssetDownloadAttempt.m215copyfUqyM7Y(otaAssetDownloadAttemptResult, str, duration, l10, num2, str3);
         }
 
         @NotNull
@@ -327,7 +327,7 @@ public final class BundleUpdater {
         }
 
         /* renamed from: component3-FghU774 */
-        public final Duration m216component3FghU774() {
+        public final Duration m214component3FghU774() {
             return this.duration;
         }
 
@@ -345,7 +345,7 @@ public final class BundleUpdater {
 
         @NotNull
         /* renamed from: copy-fUqyM7Y */
-        public final OtaAssetDownloadAttempt m217copyfUqyM7Y(@NotNull OtaAssetDownloadAttemptResult result, @NotNull String url, Duration duration, Long l10, Integer num, String str) {
+        public final OtaAssetDownloadAttempt m215copyfUqyM7Y(@NotNull OtaAssetDownloadAttemptResult result, @NotNull String url, Duration duration, Long l10, Integer num, String str) {
             Intrinsics.checkNotNullParameter(result, "result");
             Intrinsics.checkNotNullParameter(url, "url");
             return new OtaAssetDownloadAttempt(result, url, duration, l10, num, str, null);
@@ -367,7 +367,7 @@ public final class BundleUpdater {
         }
 
         /* renamed from: getDuration-FghU774 */
-        public final Duration m218getDurationFghU774() {
+        public final Duration m216getDurationFghU774() {
             return this.duration;
         }
 
@@ -411,7 +411,7 @@ public final class BundleUpdater {
             Pair a13 = v.a("bytesReceived", this.bytesReceived);
             Duration duration = this.duration;
             if (duration != null) {
-                d10 = Double.valueOf(Duration.J(duration.O(), ks.b.f36128p));
+                d10 = Double.valueOf(Duration.J(duration.O(), ms.b.f38284p));
             } else {
                 d10 = null;
             }
@@ -462,7 +462,7 @@ public final class BundleUpdater {
         static {
             OtaAssetDownloadAttemptResult[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = vr.a.a($values);
+            $ENTRIES = xr.a.a($values);
         }
 
         private OtaAssetDownloadAttemptResult(String str, int i10, String str2) {
@@ -575,7 +575,7 @@ public final class BundleUpdater {
         }
 
         /* renamed from: copy-dWUq8MI$default */
-        public static /* synthetic */ OtaCheckAttempt m219copydWUq8MI$default(OtaCheckAttempt otaCheckAttempt, OtaCheckAttemptResult otaCheckAttemptResult, long j10, long j11, String str, int i10, Object obj) {
+        public static /* synthetic */ OtaCheckAttempt m217copydWUq8MI$default(OtaCheckAttempt otaCheckAttempt, OtaCheckAttemptResult otaCheckAttemptResult, long j10, long j11, String str, int i10, Object obj) {
             if ((i10 & 1) != 0) {
                 otaCheckAttemptResult = otaCheckAttempt.result;
             }
@@ -589,7 +589,7 @@ public final class BundleUpdater {
                 str = otaCheckAttempt.error;
             }
             String str2 = str;
-            return otaCheckAttempt.m221copydWUq8MI(otaCheckAttemptResult, j10, j11, str2);
+            return otaCheckAttempt.m219copydWUq8MI(otaCheckAttemptResult, j10, j11, str2);
         }
 
         @NotNull
@@ -598,7 +598,7 @@ public final class BundleUpdater {
         }
 
         /* renamed from: component2-UwyO8pc */
-        public final long m220component2UwyO8pc() {
+        public final long m218component2UwyO8pc() {
             return this.duration;
         }
 
@@ -612,7 +612,7 @@ public final class BundleUpdater {
 
         @NotNull
         /* renamed from: copy-dWUq8MI */
-        public final OtaCheckAttempt m221copydWUq8MI(@NotNull OtaCheckAttemptResult result, long j10, long j11, String str) {
+        public final OtaCheckAttempt m219copydWUq8MI(@NotNull OtaCheckAttemptResult result, long j10, long j11, String str) {
             Intrinsics.checkNotNullParameter(result, "result");
             return new OtaCheckAttempt(result, j10, j11, str, null);
         }
@@ -629,7 +629,7 @@ public final class BundleUpdater {
         }
 
         /* renamed from: getDuration-UwyO8pc */
-        public final long m222getDurationUwyO8pc() {
+        public final long m220getDurationUwyO8pc() {
             return this.duration;
         }
 
@@ -655,7 +655,7 @@ public final class BundleUpdater {
         @Override // com.discord.bundle_updater.BundleUpdater.OtaMetric
         @NotNull
         public ReadableMap toNativeMap() {
-            return NativeMapExtensionsKt.nativeMapOf(v.a("type", "OtaCheckAttempt"), v.a("result", this.result.getValue()), v.a("durationSeconds", Double.valueOf(Duration.J(this.duration, ks.b.f36128p))), v.a("bytesReceived", Long.valueOf(this.totalBytesReceived)), v.a("error", this.error));
+            return NativeMapExtensionsKt.nativeMapOf(v.a("type", "OtaCheckAttempt"), v.a("result", this.result.getValue()), v.a("durationSeconds", Double.valueOf(Duration.J(this.duration, ms.b.f38284p))), v.a("bytesReceived", Long.valueOf(this.totalBytesReceived)), v.a("error", this.error));
         }
 
         @NotNull
@@ -700,7 +700,7 @@ public final class BundleUpdater {
         static {
             OtaCheckAttemptResult[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = vr.a.a($values);
+            $ENTRIES = xr.a.a($values);
         }
 
         private OtaCheckAttemptResult(String str, int i10, String str2) {
@@ -804,7 +804,7 @@ public final class BundleUpdater {
         this.filesDirectory = file;
         this.assetManager = assetManager;
         this.executor = executorService;
-        this.cookieManager$delegate = or.l.a(new Function0() { // from class: com.discord.bundle_updater.f
+        this.cookieManager$delegate = qr.l.a(new Function0() { // from class: com.discord.bundle_updater.f
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 CookieManager cookieManager_delegate$lambda$0;
@@ -812,8 +812,8 @@ public final class BundleUpdater {
                 return cookieManager_delegate$lambda$0;
             }
         });
-        this.coroutineScope = kotlinx.coroutines.i.a(m0.c().V0(j1.b(null, 1, null)));
-        this.client$delegate = or.l.a(new Function0() { // from class: com.discord.bundle_updater.g
+        this.coroutineScope = kotlinx.coroutines.i.a(m0.c().Y0(j1.b(null, 1, null)));
+        this.client$delegate = qr.l.a(new Function0() { // from class: com.discord.bundle_updater.g
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 OkHttpClient client_delegate$lambda$1;
@@ -821,7 +821,7 @@ public final class BundleUpdater {
                 return client_delegate$lambda$1;
             }
         });
-        this.otasRootDirectory$delegate = or.l.a(new Function0() { // from class: com.discord.bundle_updater.h
+        this.otasRootDirectory$delegate = qr.l.a(new Function0() { // from class: com.discord.bundle_updater.h
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 File otasRootDirectory_delegate$lambda$2;
@@ -830,7 +830,7 @@ public final class BundleUpdater {
             }
         });
         this.otaMetrics = new ArrayList();
-        this.otaCheckTimeMark = g.a.d(kotlin.time.g.f34994a.a());
+        this.otaCheckTimeMark = g.a.d(kotlin.time.g.f35014a.a());
     }
 
     private final OtaCheckAttempt attemptOtaUpdate() {
@@ -856,11 +856,11 @@ public final class BundleUpdater {
         } else {
             list = null;
         }
-        Object m214downloadSingleFilehUnOzRk$default = m214downloadSingleFilehUnOzRk$default(this, manifestURL, list, null, null, otaTempFile, 0, 44, null);
-        Throwable e10 = Result.e(m214downloadSingleFilehUnOzRk$default);
+        Object m212downloadSingleFilehUnOzRk$default = m212downloadSingleFilehUnOzRk$default(this, manifestURL, list, null, null, otaTempFile, 0, 44, null);
+        Throwable e10 = Result.e(m212downloadSingleFilehUnOzRk$default);
         String str = "";
         if (e10 == null) {
-            Headers headers = (Headers) m214downloadSingleFilehUnOzRk$default;
+            Headers headers = (Headers) m212downloadSingleFilehUnOzRk$default;
             AppManifest manifestFromFile = BundleUpdaterUtils.INSTANCE.getManifestFromFile(otaTempFile);
             String commit = manifestFromFile.getMetadata().getCommit();
             if (Intrinsics.areEqual(commit, getExistingOtaCommit())) {
@@ -915,7 +915,7 @@ public final class BundleUpdater {
         Thread.sleep(i10 * 1000);
         try {
             bundleUpdater.otaMetrics.clear();
-            bundleUpdater.otaCheckTimeMark = g.a.d(kotlin.time.g.f34994a.a());
+            bundleUpdater.otaCheckTimeMark = g.a.d(kotlin.time.g.f35014a.a());
             bundleUpdater.totalBytesReceived = 0L;
             OtaCheckAttempt attemptOtaUpdate = bundleUpdater.attemptOtaUpdate();
             if (function0 != null) {
@@ -947,7 +947,7 @@ public final class BundleUpdater {
         setBundle(null);
         setManifestETag("");
         createOtaCheckAttempt$default(this, OtaCheckAttemptResult.CLEARED, null, 2, null);
-        ms.i.d(this.coroutineScope, null, null, new BundleUpdater$clearBundle$1(context, null), 3, null);
+        os.i.d(this.coroutineScope, null, null, new BundleUpdater$clearBundle$1(context, null), 3, null);
     }
 
     public static final OkHttpClient client_delegate$lambda$1(BundleUpdater bundleUpdater) {
@@ -1016,7 +1016,7 @@ public final class BundleUpdater {
                 if (!kotlin.collections.i.N(strArr, file.getName())) {
                     CrashReporting.addBreadcrumb$default(CrashReporting.INSTANCE, TAG + " - Deleting outdated/unknown OTA at " + file.getName() + "...", null, null, null, false, 30, null);
                     Intrinsics.checkNotNull(file);
-                    zr.j.r(file);
+                    bs.j.r(file);
                 }
             }
         }
@@ -1078,9 +1078,9 @@ public final class BundleUpdater {
                         Intrinsics.checkNotNull(open);
                         assetStatus = assetStatus2;
                         uri = build2;
-                        zr.b.b(open, fileOutputStream, 0, 2, null);
-                        zr.c.a(fileOutputStream, null);
-                        zr.c.a(open, null);
+                        bs.b.b(open, fileOutputStream, 0, 2, null);
+                        bs.c.a(fileOutputStream, null);
+                        bs.c.a(open, null);
                         String uri2 = build.buildUpon().appendEncodedPath(str5).build().toString();
                         Intrinsics.checkNotNullExpressionValue(uri2, "toString(...)");
                         patch2 = new Patch(uri2, otaTempFile, otaTempFile2);
@@ -1167,13 +1167,13 @@ public final class BundleUpdater {
             if (i10 == 2) {
                 String uri2 = uri.toString();
                 Intrinsics.checkNotNullExpressionValue(uri2, "toString(...)");
-                kotlin.c.b(m214downloadSingleFilehUnOzRk$default(bundleUpdater, uri2, null, appManifest.getHashes().get(str3), patch, file, 0, 34, null));
+                kotlin.c.b(m212downloadSingleFilehUnOzRk$default(bundleUpdater, uri2, null, appManifest.getHashes().get(str3), patch, file, 0, 34, null));
             } else {
-                throw new or.p();
+                throw new qr.p();
             }
         } else {
             Intrinsics.checkNotNull(str);
-            zr.j.q(bundleUpdater.otaFile(str, str2), file, true, 0, 4, null);
+            bs.j.q(bundleUpdater.otaFile(str, str2), file, true, 0, 4, null);
         }
         bundleUpdater.moveFile(file, file2);
     }
@@ -1194,17 +1194,17 @@ public final class BundleUpdater {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
     */
-    private final java.lang.Object m213downloadSingleFilehUnOzRk(java.lang.String r30, java.util.List<kotlin.Pair<java.lang.String, java.lang.String>> r31, java.lang.String r32, com.discord.bundle_updater.BundleUpdater.Patch r33, java.io.File r34, int r35) {
+    private final java.lang.Object m211downloadSingleFilehUnOzRk(java.lang.String r30, java.util.List<kotlin.Pair<java.lang.String, java.lang.String>> r31, java.lang.String r32, com.discord.bundle_updater.BundleUpdater.Patch r33, java.io.File r34, int r35) {
         /*
             Method dump skipped, instructions count: 745
             To view this dump add '--comments-level debug' option
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.discord.bundle_updater.BundleUpdater.m213downloadSingleFilehUnOzRk(java.lang.String, java.util.List, java.lang.String, com.discord.bundle_updater.BundleUpdater$Patch, java.io.File, int):java.lang.Object");
+        throw new UnsupportedOperationException("Method not decompiled: com.discord.bundle_updater.BundleUpdater.m211downloadSingleFilehUnOzRk(java.lang.String, java.util.List, java.lang.String, com.discord.bundle_updater.BundleUpdater$Patch, java.io.File, int):java.lang.Object");
     }
 
     /* JADX WARN: Multi-variable type inference failed */
     /* renamed from: downloadSingleFile-hUnOzRk$default */
-    static /* synthetic */ Object m214downloadSingleFilehUnOzRk$default(BundleUpdater bundleUpdater, String str, List list, String str2, Patch patch, File file, int i10, int i11, Object obj) {
+    static /* synthetic */ Object m212downloadSingleFilehUnOzRk$default(BundleUpdater bundleUpdater, String str, List list, String str2, Patch patch, File file, int i10, int i11, Object obj) {
         if ((i11 & 2) != 0) {
             list = null;
         }
@@ -1217,7 +1217,7 @@ public final class BundleUpdater {
         if ((i11 & 32) != 0) {
             i10 = 0;
         }
-        return bundleUpdater.m213downloadSingleFilehUnOzRk(str, list, str2, patch, file, i10);
+        return bundleUpdater.m211downloadSingleFilehUnOzRk(str, list, str2, patch, file, i10);
     }
 
     private final File ensureEmptyFile(File file) {
@@ -1287,7 +1287,7 @@ public final class BundleUpdater {
         String y10;
         List L0;
         OtaBundle bundle = getBundle();
-        if (bundle != null && (location = bundle.getLocation()) != null && (y10 = zr.j.y(location, getOtasRootDirectory())) != null && (L0 = StringsKt.L0(y10, new char[]{File.separatorChar}, false, 0, 6, null)) != null) {
+        if (bundle != null && (location = bundle.getLocation()) != null && (y10 = bs.j.y(location, getOtasRootDirectory())) != null && (L0 = StringsKt.L0(y10, new char[]{File.separatorChar}, false, 0, 6, null)) != null) {
             return (String) CollectionsKt.firstOrNull(L0);
         }
         return null;
@@ -1400,7 +1400,7 @@ public final class BundleUpdater {
     }
 
     public final Cookie getBuildOverrideCookie() {
-        return Cookie.f43709j.c(BASE_OTA_URL, getBuildOverrideCookieHeader());
+        return Cookie.f42815j.c(BASE_OTA_URL, getBuildOverrideCookieHeader());
     }
 
     @NotNull

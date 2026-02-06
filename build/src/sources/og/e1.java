@@ -1,55 +1,43 @@
 package og;
+
+import yi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class e1 extends p0 {
+final class e1 implements yi.d {
 
-    /* renamed from: p  reason: collision with root package name */
-    static final p0 f42806p = new e1(new Object[0], 0);
+    /* renamed from: a  reason: collision with root package name */
+    static final e1 f41879a = new e1();
 
-    /* renamed from: i  reason: collision with root package name */
-    final transient Object[] f42807i;
+    /* renamed from: b  reason: collision with root package name */
+    private static final yi.c f41880b;
 
-    /* renamed from: o  reason: collision with root package name */
-    private final transient int f42808o;
+    /* renamed from: c  reason: collision with root package name */
+    private static final yi.c f41881c;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public e1(Object[] objArr, int i10) {
-        this.f42807i = objArr;
-        this.f42808o = i10;
+    /* renamed from: d  reason: collision with root package name */
+    private static final yi.c f41882d;
+
+    static {
+        c.b a10 = yi.c.a("errorCode");
+        f fVar = new f();
+        fVar.a(1);
+        f41880b = a10.b(fVar.b()).a();
+        c.b a11 = yi.c.a("imageInfo");
+        f fVar2 = new f();
+        fVar2.a(2);
+        f41881c = a11.b(fVar2.b()).a();
+        c.b a12 = yi.c.a("isColdCall");
+        f fVar3 = new f();
+        fVar3.a(3);
+        f41882d = a12.b(fVar3.b()).a();
     }
 
-    @Override // og.p0, og.k0
-    final int b(Object[] objArr, int i10) {
-        System.arraycopy(this.f42807i, 0, objArr, 0, this.f42808o);
-        return this.f42808o;
+    private e1() {
     }
 
-    @Override // og.k0
-    final int c() {
-        return this.f42808o;
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    @Override // og.k0
-    public final int d() {
-        return 0;
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    @Override // og.k0
-    public final Object[] e() {
-        return this.f42807i;
-    }
-
-    @Override // java.util.List
-    public final Object get(int i10) {
-        c.a(i10, this.f42808o, "index");
-        Object obj = this.f42807i[i10];
-        obj.getClass();
-        return obj;
-    }
-
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
-    public final int size() {
-        return this.f42808o;
+    @Override // yi.d
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        android.support.v4.media.session.b.a(obj);
+        yi.e eVar = (yi.e) obj2;
+        throw null;
     }
 }

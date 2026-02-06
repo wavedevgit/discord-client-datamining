@@ -7,18 +7,18 @@ import kotlin.jvm.internal.Intrinsics;
 public final class h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final WorkDatabase f47408a;
+    private final WorkDatabase f46456a;
 
     public h(WorkDatabase workDatabase) {
         Intrinsics.checkNotNullParameter(workDatabase, "workDatabase");
-        this.f47408a = workDatabase;
+        this.f46456a = workDatabase;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Integer d(h this$0) {
         int d10;
         Intrinsics.checkNotNullParameter(this$0, "this$0");
-        d10 = i.d(this$0.f47408a, "next_alarm_manager_id");
+        d10 = i.d(this$0.f46456a, "next_alarm_manager_id");
         return Integer.valueOf(d10);
     }
 
@@ -26,9 +26,9 @@ public final class h {
     public static final Integer f(h this$0, int i10, int i11) {
         int d10;
         Intrinsics.checkNotNullParameter(this$0, "this$0");
-        d10 = i.d(this$0.f47408a, "next_job_scheduler_id");
+        d10 = i.d(this$0.f46456a, "next_job_scheduler_id");
         if (i10 > d10 || d10 > i11) {
-            i.e(this$0.f47408a, "next_job_scheduler_id", i10 + 1);
+            i.e(this$0.f46456a, "next_job_scheduler_id", i10 + 1);
         } else {
             i10 = d10;
         }
@@ -36,7 +36,7 @@ public final class h {
     }
 
     public final int c() {
-        Object z10 = this.f47408a.z(new Callable() { // from class: q4.f
+        Object z10 = this.f46456a.z(new Callable() { // from class: q4.f
             @Override // java.util.concurrent.Callable
             public final Object call() {
                 Integer d10;
@@ -49,7 +49,7 @@ public final class h {
     }
 
     public final int e(final int i10, final int i11) {
-        Object z10 = this.f47408a.z(new Callable() { // from class: q4.g
+        Object z10 = this.f46456a.z(new Callable() { // from class: q4.g
             @Override // java.util.concurrent.Callable
             public final Object call() {
                 Integer f10;

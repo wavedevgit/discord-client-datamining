@@ -220,7 +220,7 @@ public final class AFe1fSDK extends AFe1lSDK<AFh1pSDK> {
         Intrinsics.checkNotNullExpressionValue(afInfoLog, "");
         this.component1 = afInfoLog;
         this.areAllFieldsValid = new AFh1pSDK(null, null, null, null, null, null, null, null, SetSpanOperation.SPAN_MAX_PRIORITY, null);
-        this.component4 = or.l.a(new Function0<Long>() { // from class: com.appsflyer.internal.AFe1fSDK.4
+        this.component4 = qr.l.a(new Function0<Long>() { // from class: com.appsflyer.internal.AFe1fSDK.4
             {
                 super(0);
             }
@@ -233,7 +233,7 @@ public final class AFe1fSDK extends AFe1lSDK<AFh1pSDK> {
                 return Long.valueOf((monetizationNetwork == null || (t10 = StringsKt.t(monetizationNetwork)) == null) ? 1000L : t10.longValue());
             }
         });
-        this.copydefault = or.l.a(new Function0<Boolean>() { // from class: com.appsflyer.internal.AFe1fSDK.1
+        this.copydefault = qr.l.a(new Function0<Boolean>() { // from class: com.appsflyer.internal.AFe1fSDK.1
             {
                 super(0);
             }
@@ -442,10 +442,10 @@ public final class AFe1fSDK extends AFe1lSDK<AFh1pSDK> {
                 if (advertisingId != null) {
                     if (advertisingId.length() == 0) {
                     }
-                    unit = Unit.f31988a;
+                    unit = Unit.f32008a;
                 }
                 aFa1tSDK.getGaidError().append("emptyOrNull |");
-                unit = Unit.f31988a;
+                unit = Unit.f32008a;
             } else {
                 unit = null;
             }
@@ -500,7 +500,7 @@ public final class AFe1fSDK extends AFe1lSDK<AFh1pSDK> {
 
     private static int getMonetizationNetwork(Context context) {
         try {
-            return com.google.android.gms.common.f.m().g(context);
+            return com.google.android.gms.common.f.n().g(context);
         } catch (Throwable th2) {
             AFh1ySDK.e$default(AFLogger.INSTANCE, AFg1cSDK.ADVERTISING_ID, "isGooglePlayServicesAvailable error", th2, false, false, false, false, 96, null);
             return -1;
@@ -596,7 +596,7 @@ public final class AFe1fSDK extends AFe1lSDK<AFh1pSDK> {
             java.lang.String r0 = "emptyOrNull (bypass) |"
             r11.append(r0)     // Catch: java.lang.Throwable -> L21
         L2e:
-            kotlin.Unit r11 = kotlin.Unit.f31988a     // Catch: java.lang.Throwable -> L21
+            kotlin.Unit r11 = kotlin.Unit.f32008a     // Catch: java.lang.Throwable -> L21
             if (r11 == 0) goto L34
             r11 = 1
             return r11

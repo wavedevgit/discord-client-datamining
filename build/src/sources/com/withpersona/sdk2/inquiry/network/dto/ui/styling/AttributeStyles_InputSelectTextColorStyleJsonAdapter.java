@@ -42,27 +42,27 @@ public final class AttributeStyles_InputSelectTextColorStyleJsonAdapter extends 
     @NotNull
     public AttributeStyles.InputSelectTextColorStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         StyleElements.ComplexElementColor complexElementColor = null;
         StyleElements.ComplexElementColor complexElementColor2 = null;
         StyleElements.ComplexElementColor complexElementColor3 = null;
         StyleElements.ComplexElementColor complexElementColor4 = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 complexElementColor = (StyleElements.ComplexElementColor) this.nullableComplexElementColorAdapter.fromJson(reader);
-            } else if (W == 1) {
+            } else if (J == 1) {
                 complexElementColor2 = (StyleElements.ComplexElementColor) this.nullableComplexElementColorAdapter.fromJson(reader);
-            } else if (W == 2) {
+            } else if (J == 2) {
                 complexElementColor3 = (StyleElements.ComplexElementColor) this.nullableComplexElementColorAdapter.fromJson(reader);
-            } else if (W == 3) {
+            } else if (J == 3) {
                 complexElementColor4 = (StyleElements.ComplexElementColor) this.nullableComplexElementColorAdapter.fromJson(reader);
             }
         }
-        reader.z();
+        reader.D();
         return new AttributeStyles.InputSelectTextColorStyle(complexElementColor, complexElementColor2, complexElementColor3, complexElementColor4);
     }
 
@@ -71,15 +71,15 @@ public final class AttributeStyles_InputSelectTextColorStyleJsonAdapter extends 
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (inputSelectTextColorStyle != null) {
             writer.k();
-            writer.W("value");
+            writer.J("value");
             this.nullableComplexElementColorAdapter.toJson(writer, inputSelectTextColorStyle.getValue());
-            writer.W(ReactTextInputShadowNode.PROP_PLACEHOLDER);
+            writer.J(ReactTextInputShadowNode.PROP_PLACEHOLDER);
             this.nullableComplexElementColorAdapter.toJson(writer, inputSelectTextColorStyle.getPlaceholder());
-            writer.W("label");
+            writer.J("label");
             this.nullableComplexElementColorAdapter.toJson(writer, inputSelectTextColorStyle.getLabel());
-            writer.W("error");
+            writer.J("error");
             this.nullableComplexElementColorAdapter.toJson(writer, inputSelectTextColorStyle.getError());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

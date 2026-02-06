@@ -9,13 +9,13 @@ import r.s0;
 public class CamcorderProfileResolutionQuirk implements y1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final s0 f2019a;
+    private final s0 f2348a;
 
     /* renamed from: b  reason: collision with root package name */
-    private List f2020b = null;
+    private List f2349b = null;
 
     public CamcorderProfileResolutionQuirk(a0 a0Var) {
-        this.f2019a = a0Var.b();
+        this.f2348a = a0Var.b();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */

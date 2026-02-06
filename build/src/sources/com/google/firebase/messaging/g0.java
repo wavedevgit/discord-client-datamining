@@ -11,7 +11,7 @@ import android.util.Log;
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
 import com.facebook.react.uimanager.ViewProps;
 import java.util.concurrent.ExecutionException;
-import kj.a;
+import lj.a;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class g0 {
     public static boolean A(Intent intent) {
@@ -33,8 +33,8 @@ public abstract class g0 {
         ApplicationInfo applicationInfo;
         Bundle bundle;
         try {
-            qi.e.k();
-            Context j10 = qi.e.k().j();
+            ri.e.k();
+            Context j10 = ri.e.k().j();
             SharedPreferences sharedPreferences = j10.getSharedPreferences("com.google.firebase.messaging", 0);
             if (sharedPreferences.contains("export_to_big_query")) {
                 return sharedPreferences.getBoolean("export_to_big_query", false);
@@ -53,7 +53,7 @@ public abstract class g0 {
         }
     }
 
-    static kj.a b(a.b bVar, Intent intent) {
+    static lj.a b(a.b bVar, Intent intent) {
         if (intent == null) {
             return null;
         }
@@ -61,7 +61,7 @@ public abstract class g0 {
         if (extras == null) {
             extras = Bundle.EMPTY;
         }
-        a.C0438a h10 = kj.a.p().m(p(extras)).e(bVar).f(f(extras)).i(m()).k(a.d.ANDROID).h(k(extras));
+        a.C0485a h10 = lj.a.p().m(p(extras)).e(bVar).f(f(extras)).i(m()).k(a.d.ANDROID).h(k(extras));
         String h11 = h(extras);
         if (h11 != null) {
             h10.g(h11);
@@ -107,7 +107,7 @@ public abstract class g0 {
             return string;
         }
         try {
-            return (String) xg.m.a(com.google.firebase.installations.c.p(qi.e.k()).getId());
+            return (String) yg.m.a(com.google.firebase.installations.c.p(ri.e.k()).getId());
         } catch (InterruptedException | ExecutionException e10) {
             throw new RuntimeException(e10);
         }
@@ -148,7 +148,7 @@ public abstract class g0 {
     }
 
     static String m() {
-        return qi.e.k().j().getPackageName();
+        return ri.e.k().j().getPackageName();
     }
 
     static long n(Bundle bundle) {
@@ -159,7 +159,7 @@ public abstract class g0 {
                 Log.w("FirebaseMessaging", "error parsing project number", e10);
             }
         }
-        qi.e k10 = qi.e.k();
+        ri.e k10 = ri.e.k();
         String d10 = k10.m().d();
         if (d10 != null) {
             try {
@@ -255,17 +255,17 @@ public abstract class g0 {
             Log.e("FirebaseMessaging", "TransportFactory is null. Skip exporting message delivery metrics to Big Query");
             return;
         }
-        kj.a b10 = b(bVar, intent);
+        lj.a b10 = b(bVar, intent);
         if (b10 == null) {
             return;
         }
         try {
-            iVar.a("FCM_CLIENT_EVENT_LOGGING", kj.b.class, xb.c.b("proto"), new xb.g() { // from class: com.google.firebase.messaging.f0
+            iVar.a("FCM_CLIENT_EVENT_LOGGING", lj.b.class, xb.c.b("proto"), new xb.g() { // from class: com.google.firebase.messaging.f0
                 @Override // xb.g
                 public final Object apply(Object obj) {
-                    return ((kj.b) obj).c();
+                    return ((lj.b) obj).c();
                 }
-            }).a(xb.d.f(kj.b.b().b(b10).a(), xb.f.b(Integer.valueOf(intent.getIntExtra("google.product_id", 111881503)))));
+            }).a(xb.d.f(lj.b.b().b(b10).a(), xb.f.b(Integer.valueOf(intent.getIntExtra("google.product_id", 111881503)))));
         } catch (RuntimeException e10) {
             Log.w("FirebaseMessaging", "Failed to send big query analytics payload.", e10);
         }
@@ -273,7 +273,7 @@ public abstract class g0 {
 
     static void x(String str, Bundle bundle) {
         try {
-            qi.e.k();
+            ri.e.k();
             if (bundle == null) {
                 bundle = new Bundle();
             }
@@ -321,7 +321,7 @@ public abstract class g0 {
             if (Log.isLoggable("FirebaseMessaging", 3)) {
                 Log.d("FirebaseMessaging", "Logging to scion event=" + str + " scionPayload=" + bundle2);
             }
-            android.support.v4.media.session.b.a(qi.e.k().i(ri.a.class));
+            android.support.v4.media.session.b.a(ri.e.k().i(si.a.class));
             Log.w("FirebaseMessaging", "Unable to log event: analytics library is missing");
         } catch (IllegalStateException unused) {
             Log.e("FirebaseMessaging", "Default FirebaseApp has not been initialized. Skip logging event to GA.");
@@ -331,7 +331,7 @@ public abstract class g0 {
     private static void y(Bundle bundle) {
         if (bundle != null) {
             if ("1".equals(bundle.getString("google.c.a.tc"))) {
-                android.support.v4.media.session.b.a(qi.e.k().i(ri.a.class));
+                android.support.v4.media.session.b.a(ri.e.k().i(si.a.class));
                 if (Log.isLoggable("FirebaseMessaging", 3)) {
                     Log.d("FirebaseMessaging", "Received event with track-conversion=true. Setting user property and reengagement event");
                 }

@@ -4,7 +4,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = exports;
     var4 = dependencyMap;
     var0 = function() {
-        _fun45077: for (var _fun45077_ip = 0;;) switch (_fun45077_ip) {
+        _fun45067: for (var _fun45067_ip = 0;;) switch (_fun45067_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -25,8 +25,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun45077_ip = 74;
-                continue _fun45077;
+                _fun45067_ip = 74;
+                continue _fun45067;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -36,13 +36,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = !var0;
                     return var0;
                 };
-                _closure1_slot8 = var1;
+                _closure1_slot5 = var1;
                 var0 = undefined;
                 var0 = var1.bind(var0)();
                 return var0;
         }
     };
-    var _closure1_slot8 = var0;
+    var _closure1_slot5 = var0;
     var0 = global;
     var7 = var0.Object;
     var6 = var7.defineProperty;
@@ -73,70 +73,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5.bind(var0)(var3);
     var _closure1_slot4 = var3;
     var3 = 5;
-    var3 = var4[var3];
-    var3 = var5.bind(var0)(var3);
-    var _closure1_slot5 = var3;
-    var3 = {};
-    var5 = 'function changeEventCalculator_Pnpm_panGestureTs1(current,previous){let changePayload;if(previous===undefined){changePayload={changeX:current.translationX,changeY:current.translationY};}else{changePayload={changeX:current.translationX-previous.translationX,changeY:current.translationY-previous.translationY};}return{...current,...changePayload};}';
-    var3.code = var5;
-    var _closure1_slot6 = var3;
-    var3 = function() { // Environment: var1
-        var0 = function arg0, arg1() {
-            _fun45081: for (var _fun45081_ip = 0;;) switch (_fun45081_ip) {
-                case 0:
-                    var4 = arg0;
-                    var0 = arg1;
-                    var1 = undefined;
-                    if (!(var1 !== var0)) {
-                        _fun45081_ip = 58;
-                        continue _fun45081
-                    }
-                case 12:
-                    var3 = {};
-                    var2 = var4.translationX;
-                    var1 = var0.translationX;
-                    var1 = var2 - var1;
-                    var3.changeX = var1;
-                    var1 = var4.translationY;
-                    var0 = var0.translationY;
-                    var0 = var1 - var0;
-                    var3.changeY = var0;
-                    _fun45081_ip = 85;
-                    continue _fun45081;
-                case 58:
-                    var0 = {};
-                    var1 = var4.translationX;
-                    var0.changeX = var1;
-                    var1 = var4.translationY;
-                    var0.changeY = var1;
-                    var3 = var0;
-                case 85:
-                    var0 = global;
-                    var2 = var0.Object;
-                    var1 = var2.assign;
-                    var0 = {};
-                    var0 = var1.bind(var2)(var0, var4, var3);
-                    return var0;
-            }
-        };
-        var1 = {};
-        var0.__closure = var1;
-        var1 = 1947784830943.0;
-        var0.__workletHash = var1;
-        var1 = _closure1_slot6;
-        var0.__initData = var1;
-        return var0;
-    };
-    var3 = var3.bind(var0)();
-    var _closure1_slot7 = var3;
-    var3 = 6;
     var4 = var4[var3];
     var3 = arg1;
     var3 = var3.bind(var0)(var4);
-    var3 = var3.ContinousBaseGesture;
+    var3 = var3.BaseGesture;
     var1 = function(arg0) { // Environment: var1
         var3 = function() {
-            _fun45083: for (var _fun45083_ip = 0;;) switch (_fun45083_ip) {
+            _fun45071: for (var _fun45071_ip = 0;;) switch (_fun45071_ip) {
                 case 0:
                     var3 = this;
                     var0 = _closure1_slot0;
@@ -146,17 +89,17 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = _closure1_slot3;
                     var8 = var0.bind(var2)(var1);
                     var1 = _closure1_slot2;
-                    var0 = _closure1_slot8;
+                    var0 = _closure1_slot5;
                     var0 = var0.bind(var2)();
                     if (var0) {
-                        _fun45083_ip = 62;
-                        continue _fun45083
+                        _fun45071_ip = 62;
+                        continue _fun45071
                     }
                 case 49:
                     var0 = var8.apply;
                     var0 = var0.bind(var8)(var3, var2);
-                    _fun45083_ip = 100;
-                    continue _fun45083;
+                    _fun45071_ip = 100;
+                    continue _fun45071;
                 case 62:
                     var5 = global;
                     var7 = var5.Reflect;
@@ -170,389 +113,109 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = var1.bind(var2)(var3, var0);
                     var1 = {};
                     var0.config = var1;
-                    var1 = 'PanGestureHandler';
+                    var1 = 'TapGestureHandler';
                     var0.handlerName = var1;
+                    var2 = var0.shouldCancelWhenOutside;
+                    var1 = true;
+                    var1 = var2.bind(var0)(var1);
                     return var0;
             }
         };
         var _closure2_slot0 = var3;
-        var4 = _closure1_slot5;
+        var4 = _closure1_slot4;
         var2 = undefined;
         var1 = arg0;
         var1 = var4.bind(var2)(var3, var1);
         var1 = _closure1_slot1;
         var4 = {};
-        var0 = 'activeOffsetY';
+        var0 = 'minPointers';
         var4.key = var0;
         var0 = function arg0() {
-            _fun45084: for (var _fun45084_ip = 0;;) switch (_fun45084_ip) {
-                case 0:
-                    var3 = arg0;
-                    var0 = this;
-                    var1 = global;
-                    var2 = var1.Array;
-                    var1 = var2.isArray;
-                    var2 = var1.bind(var2)(var3);
-                    var1 = 0;
-                    if (var2) {
-                        _fun45084_ip = 59;
-                        continue _fun45084
-                    }
-                case 29:
-                    if (!(!(var3 < var1))) {
-                        _fun45084_ip = 46;
-                        continue _fun45084
-                    }
-                case 33:
-                    var2 = var0.config;
-                    var2.activeOffsetYEnd = var3;
-                    _fun45084_ip = 92;
-                    continue _fun45084;
-                case 46:
-                    var2 = var0.config;
-                    var2.activeOffsetYStart = var3;
-                    _fun45084_ip = 92;
-                    continue _fun45084;
-                case 59:
-                    var2 = var0.config;
-                    var1 = var3[var1];
-                    var2.activeOffsetYStart = var1;
-                    var2 = var0.config;
-                    var1 = 1;
-                    var1 = var3[var1];
-                    var2.activeOffsetYEnd = var1;
-                case 92:
-                    return var0;
-            }
-        };
-        var4.value = var0;
-        var0 = new Array(14);
-        var0[0] = var4;
-        var4 = {};
-        var6 = 'activeOffsetX';
-        var4.key = var6;
-        var6 = function arg0() {
-            _fun45085: for (var _fun45085_ip = 0;;) switch (_fun45085_ip) {
-                case 0:
-                    var3 = arg0;
-                    var0 = this;
-                    var1 = global;
-                    var2 = var1.Array;
-                    var1 = var2.isArray;
-                    var2 = var1.bind(var2)(var3);
-                    var1 = 0;
-                    if (var2) {
-                        _fun45085_ip = 59;
-                        continue _fun45085
-                    }
-                case 29:
-                    if (!(!(var3 < var1))) {
-                        _fun45085_ip = 46;
-                        continue _fun45085
-                    }
-                case 33:
-                    var2 = var0.config;
-                    var2.activeOffsetXEnd = var3;
-                    _fun45085_ip = 92;
-                    continue _fun45085;
-                case 46:
-                    var2 = var0.config;
-                    var2.activeOffsetXStart = var3;
-                    _fun45085_ip = 92;
-                    continue _fun45085;
-                case 59:
-                    var2 = var0.config;
-                    var1 = var3[var1];
-                    var2.activeOffsetXStart = var1;
-                    var2 = var0.config;
-                    var1 = 1;
-                    var1 = var3[var1];
-                    var2.activeOffsetXEnd = var1;
-                case 92:
-                    return var0;
-            }
-        };
-        var4.value = var6;
-        var0[1] = var4;
-        var4 = {};
-        var6 = 'failOffsetY';
-        var4.key = var6;
-        var6 = function arg0() {
-            _fun45086: for (var _fun45086_ip = 0;;) switch (_fun45086_ip) {
-                case 0:
-                    var3 = arg0;
-                    var0 = this;
-                    var1 = global;
-                    var2 = var1.Array;
-                    var1 = var2.isArray;
-                    var2 = var1.bind(var2)(var3);
-                    var1 = 0;
-                    if (var2) {
-                        _fun45086_ip = 59;
-                        continue _fun45086
-                    }
-                case 29:
-                    if (!(!(var3 < var1))) {
-                        _fun45086_ip = 46;
-                        continue _fun45086
-                    }
-                case 33:
-                    var2 = var0.config;
-                    var2.failOffsetYEnd = var3;
-                    _fun45086_ip = 92;
-                    continue _fun45086;
-                case 46:
-                    var2 = var0.config;
-                    var2.failOffsetYStart = var3;
-                    _fun45086_ip = 92;
-                    continue _fun45086;
-                case 59:
-                    var2 = var0.config;
-                    var1 = var3[var1];
-                    var2.failOffsetYStart = var1;
-                    var2 = var0.config;
-                    var1 = 1;
-                    var1 = var3[var1];
-                    var2.failOffsetYEnd = var1;
-                case 92:
-                    return var0;
-            }
-        };
-        var4.value = var6;
-        var0[2] = var4;
-        var4 = {};
-        var6 = 'failOffsetX';
-        var4.key = var6;
-        var6 = function arg0() {
-            _fun45087: for (var _fun45087_ip = 0;;) switch (_fun45087_ip) {
-                case 0:
-                    var3 = arg0;
-                    var0 = this;
-                    var1 = global;
-                    var2 = var1.Array;
-                    var1 = var2.isArray;
-                    var2 = var1.bind(var2)(var3);
-                    var1 = 0;
-                    if (var2) {
-                        _fun45087_ip = 59;
-                        continue _fun45087
-                    }
-                case 29:
-                    if (!(!(var3 < var1))) {
-                        _fun45087_ip = 46;
-                        continue _fun45087
-                    }
-                case 33:
-                    var2 = var0.config;
-                    var2.failOffsetXEnd = var3;
-                    _fun45087_ip = 92;
-                    continue _fun45087;
-                case 46:
-                    var2 = var0.config;
-                    var2.failOffsetXStart = var3;
-                    _fun45087_ip = 92;
-                    continue _fun45087;
-                case 59:
-                    var2 = var0.config;
-                    var1 = var3[var1];
-                    var2.failOffsetXStart = var1;
-                    var2 = var0.config;
-                    var1 = 1;
-                    var1 = var3[var1];
-                    var2.failOffsetXEnd = var1;
-                case 92:
-                    return var0;
-            }
-        };
-        var4.value = var6;
-        var0[3] = var4;
-        var4 = {};
-        var6 = 'minPointers';
-        var4.key = var6;
-        var6 = function arg0() {
             var0 = this;
             var2 = var0.config;
             var1 = arg0;
             var2.minPointers = var1;
             return var0;
         };
-        var4.value = var6;
-        var0[4] = var4;
+        var4.value = var0;
+        var0 = new Array(7);
+        var0[0] = var4;
         var4 = {};
-        var6 = 'maxPointers';
+        var6 = 'numberOfTaps';
         var4.key = var6;
         var6 = function arg0() {
             var0 = this;
             var2 = var0.config;
             var1 = arg0;
-            var2.maxPointers = var1;
+            var2.numberOfTaps = var1;
+            return var0;
+        };
+        var4.value = var6;
+        var0[1] = var4;
+        var4 = {};
+        var6 = 'maxDistance';
+        var4.key = var6;
+        var6 = function arg0() {
+            var0 = this;
+            var2 = var0.config;
+            var1 = arg0;
+            var2.maxDist = var1;
+            return var0;
+        };
+        var4.value = var6;
+        var0[2] = var4;
+        var4 = {};
+        var6 = 'maxDuration';
+        var4.key = var6;
+        var6 = function arg0() {
+            var0 = this;
+            var2 = var0.config;
+            var1 = arg0;
+            var2.maxDurationMs = var1;
+            return var0;
+        };
+        var4.value = var6;
+        var0[3] = var4;
+        var4 = {};
+        var6 = 'maxDelay';
+        var4.key = var6;
+        var6 = function arg0() {
+            var0 = this;
+            var2 = var0.config;
+            var1 = arg0;
+            var2.maxDelayMs = var1;
+            return var0;
+        };
+        var4.value = var6;
+        var0[4] = var4;
+        var4 = {};
+        var6 = 'maxDeltaX';
+        var4.key = var6;
+        var6 = function arg0() {
+            var0 = this;
+            var2 = var0.config;
+            var1 = arg0;
+            var2.maxDeltaX = var1;
             return var0;
         };
         var4.value = var6;
         var0[5] = var4;
         var4 = {};
-        var6 = 'minDistance';
-        var4.key = var6;
-        var6 = function arg0() {
-            var0 = this;
-            var2 = var0.config;
-            var1 = arg0;
-            var2.minDist = var1;
-            return var0;
-        };
-        var4.value = var6;
-        var0[6] = var4;
-        var4 = {};
-        var6 = 'minVelocity';
-        var4.key = var6;
-        var6 = function arg0() {
-            var0 = this;
-            var2 = var0.config;
-            var1 = arg0;
-            var2.minVelocity = var1;
-            return var0;
-        };
-        var4.value = var6;
-        var0[7] = var4;
-        var4 = {};
-        var6 = 'minVelocityX';
-        var4.key = var6;
-        var6 = function arg0() {
-            var0 = this;
-            var2 = var0.config;
-            var1 = arg0;
-            var2.minVelocityX = var1;
-            return var0;
-        };
-        var4.value = var6;
-        var0[8] = var4;
-        var4 = {};
-        var6 = 'minVelocityY';
-        var4.key = var6;
-        var6 = function arg0() {
-            var0 = this;
-            var2 = var0.config;
-            var1 = arg0;
-            var2.minVelocityY = var1;
-            return var0;
-        };
-        var4.value = var6;
-        var0[9] = var4;
-        var4 = {};
-        var6 = 'averageTouches';
-        var4.key = var6;
-        var6 = function arg0() {
-            var0 = this;
-            var2 = var0.config;
-            var1 = arg0;
-            var2.avgTouches = var1;
-            return var0;
-        };
-        var4.value = var6;
-        var0[10] = var4;
-        var4 = {};
-        var6 = 'enableTrackpadTwoFingerGesture';
-        var4.key = var6;
-        var6 = function arg0() {
-            var0 = this;
-            var2 = var0.config;
-            var1 = arg0;
-            var2.enableTrackpadTwoFingerGesture = var1;
-            return var0;
-        };
-        var4.value = var6;
-        var0[11] = var4;
-        var4 = {};
-        var6 = 'activateAfterLongPress';
-        var4.key = var6;
-        var6 = function arg0() {
-            var0 = this;
-            var2 = var0.config;
-            var1 = arg0;
-            var2.activateAfterLongPress = var1;
-            return var0;
-        };
-        var4.value = var6;
-        var0[12] = var4;
-        var4 = {};
-        var6 = 'onChange';
+        var6 = 'maxDeltaY';
         var4.key = var6;
         var5 = function arg0() {
-            var5 = this;
-            var1 = var5.handlers;
-            var0 = _closure1_slot7;
-            var1.changeEventCalculator = var0;
-            var9 = _closure2_slot0;
-            var3 = function arg0, arg1, arg2, arg3() {
-                _fun45098: for (var _fun45098_ip = 0;;) switch (_fun45098_ip) {
-                    case 0:
-                        var4 = arg0;
-                        var6 = arg2;
-                        var _closure4_slot0 = var6;
-                        var5 = _closure1_slot4;
-                        var3 = _closure1_slot3;
-                        var0 = 1;
-                        var2 = 3;
-                        var7 = var0 & var2;
-                        var0 = var4;
-                        if (!var7) {
-                            _fun45098_ip = 44;
-                            continue _fun45098
-                        }
-                    case 39:
-                        var0 = var4.prototype;
-                    case 44:
-                        var4 = undefined;
-                        var3 = var3.bind(var4)(var0);
-                        var0 = 'onChange';
-                        var4 = var5.bind(var4)(var3, var0, var6);
-                        var _closure4_slot1 = var4;
-                        var0 = 2;
-                        var2 = var0 & var2;
-                        var0 = var4;
-                        if (!var2) {
-                            _fun45098_ip = 98;
-                            continue _fun45098
-                        }
-                    case 79:
-                        var3 = 'function';
-                        var2 = typeof var4;
-                        var0 = var4;
-                        if (!(var3 === var2)) {
-                            _fun45098_ip = 98;
-                            continue _fun45098
-                        }
-                    case 93:
-                        var0 = function(arg0) { // Environment: var1
-                            var3 = _closure4_slot1;
-                            var2 = var3.apply;
-                            var1 = _closure4_slot0;
-                            var0 = arg0;
-                            var0 = var2.bind(var3)(var1, var0);
-                            return var0;
-                        };
-                    case 98:
-                        return var0;
-                }
-            };
-            var2 = undefined;
-            var8 = 'onChange';
-            var6 = 3;
-            var10 = undefined;
-            var7 = var5;
-            var1 = var10[var3](var9, var8, var7, var6, var5);
-            var0 = new Array(1);
-            var3 = arg0;
-            var0[0] = var3;
-            var0 = var1.bind(var2)(var0);
+            var0 = this;
+            var2 = var0.config;
+            var1 = arg0;
+            var2.maxDeltaY = var1;
             return var0;
         };
         var4.value = var5;
-        var0[13] = var4;
+        var0[6] = var4;
         var0 = var1.bind(var2)(var3, var0);
         return var0;
     };
     var1 = var1.bind(var0)(var3);
-    var2.PanGesture = var1;
+    var2.TapGesture = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 102, 18, 5002]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 5003]);

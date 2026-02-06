@@ -49,11 +49,11 @@ public final class ConnectionsRoleTagView extends FrameLayout {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void configureConnectionsRoleTag_uESh2Cg$lambda$0(ChatEventHandler chatEventHandler, UserId userId, GuildId guildId, ChannelId channelId, ConnectionsRoleTag connectionsRoleTag, View view) {
-        chatEventHandler.onTapConnectionsRoleTag(UserId.m1144toStringimpl(userId.m1146unboximpl()), GuildId.m1079toStringimpl(guildId.m1081unboximpl()), ChannelId.m1066toStringimpl(channelId.m1068unboximpl()), connectionsRoleTag.getId());
+        chatEventHandler.onTapConnectionsRoleTag(UserId.m1142toStringimpl(userId.m1144unboximpl()), GuildId.m1077toStringimpl(guildId.m1079unboximpl()), ChannelId.m1064toStringimpl(channelId.m1066unboximpl()), connectionsRoleTag.getId());
     }
 
     /* renamed from: configureConnectionsRoleTag-uESh2Cg  reason: not valid java name */
-    public final void m505configureConnectionsRoleTaguESh2Cg(final UserId userId, final GuildId guildId, final ChannelId channelId, @NotNull final ConnectionsRoleTag connectionsRoleTag, @NotNull final ChatEventHandler eventHandler) {
+    public final void m503configureConnectionsRoleTaguESh2Cg(final UserId userId, final GuildId guildId, final ChannelId channelId, @NotNull final ConnectionsRoleTag connectionsRoleTag, @NotNull final ChatEventHandler eventHandler) {
         Intrinsics.checkNotNullParameter(connectionsRoleTag, "connectionsRoleTag");
         Intrinsics.checkNotNullParameter(eventHandler, "eventHandler");
         ImageView verifiedCheckIconBackground = this.binding.verifiedCheckIconBackground;

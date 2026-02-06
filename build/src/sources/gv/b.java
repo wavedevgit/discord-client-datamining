@@ -1,31 +1,49 @@
 package gv;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public class b extends lv.c {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final int f25411a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private final int f25412b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final boolean f25413c;
-
-    public b(int i10, int i11, boolean z10) {
-        this.f25411a = i10;
-        this.f25412b = i11;
-        this.f25413c = z10;
+public abstract class b {
+    public static boolean a(CharSequence charSequence) {
+        if (charSequence == null || c(charSequence)) {
+            return false;
+        }
+        int length = charSequence.length();
+        for (int i10 = 0; i10 < length; i10++) {
+            if (!Character.isLowerCase(charSequence.charAt(i10))) {
+                return false;
+            }
+        }
+        return true;
     }
 
-    public int e() {
-        return this.f25412b;
+    public static boolean b(CharSequence charSequence) {
+        if (charSequence == null || c(charSequence)) {
+            return false;
+        }
+        int length = charSequence.length();
+        for (int i10 = 0; i10 < length; i10++) {
+            if (!Character.isUpperCase(charSequence.charAt(i10))) {
+                return false;
+            }
+        }
+        return true;
     }
 
-    public int f() {
-        return this.f25411a;
+    public static boolean c(CharSequence charSequence) {
+        if (charSequence != null && charSequence.length() != 0) {
+            return false;
+        }
+        return true;
     }
 
-    public boolean g() {
-        return this.f25413c;
+    public static boolean d(CharSequence charSequence) {
+        if (c(charSequence)) {
+            return false;
+        }
+        int length = charSequence.length();
+        for (int i10 = 0; i10 < length; i10++) {
+            if (!Character.isDigit(charSequence.charAt(i10))) {
+                return false;
+            }
+        }
+        return true;
     }
 }

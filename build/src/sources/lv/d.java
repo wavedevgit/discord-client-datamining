@@ -1,19 +1,21 @@
 package lv;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface d {
-    boolean a();
+public final class d {
 
-    boolean b();
+    /* renamed from: b  reason: collision with root package name */
+    private final int f36792b;
 
-    jv.a c();
+    /* renamed from: a  reason: collision with root package name */
+    private final Object f36791a = new Object();
 
-    void d(kv.a aVar);
+    /* renamed from: c  reason: collision with root package name */
+    private long f36793c = Long.MIN_VALUE;
 
-    void e(CharSequence charSequence);
-
-    void f();
-
-    c g(h hVar);
-
-    boolean h(jv.a aVar);
+    public d(int i10) {
+        if (i10 > 0) {
+            this.f36792b = i10;
+            return;
+        }
+        throw new IllegalArgumentException("Expect sample rate to be > 0 sample(s) per second");
+    }
 }

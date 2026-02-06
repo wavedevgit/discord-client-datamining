@@ -114,4 +114,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.DiscordImageFactory = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 4135, 4162, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 4136, 4163, 2]);

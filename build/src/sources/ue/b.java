@@ -5,23 +5,23 @@ import ef.a;
 public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final ef.a f51378a;
+    public static final ef.a f51419a;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final xe.a f51379b;
+    public static final xe.a f51420b;
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a.g f51380c;
+    public static final a.g f51421c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final a.AbstractC0294a f51381d;
+    private static final a.AbstractC0286a f51422d;
 
     static {
         a.g gVar = new a.g();
-        f51380c = gVar;
+        f51421c = gVar;
         h hVar = new h();
-        f51381d = hVar;
-        f51378a = new ef.a("Auth.PROXY_API", hVar, gVar);
-        f51379b = new bg.d();
+        f51422d = hVar;
+        f51419a = new ef.a("Auth.PROXY_API", hVar, gVar);
+        f51420b = new bg.d();
     }
 }

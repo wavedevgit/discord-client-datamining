@@ -29,31 +29,31 @@ import java.util.concurrent.Executor;
 public abstract class AppCompatDelegate {
 
     /* renamed from: d  reason: collision with root package name */
-    static c f1089d = new c(new d());
+    static c f1418d = new c(new d());
 
     /* renamed from: e  reason: collision with root package name */
-    private static int f1090e = -100;
+    private static int f1419e = -100;
 
     /* renamed from: i  reason: collision with root package name */
-    private static LocaleListCompat f1091i = null;
+    private static LocaleListCompat f1420i = null;
 
     /* renamed from: o  reason: collision with root package name */
-    private static LocaleListCompat f1092o = null;
+    private static LocaleListCompat f1421o = null;
 
     /* renamed from: p  reason: collision with root package name */
-    private static Boolean f1093p = null;
+    private static Boolean f1422p = null;
 
     /* renamed from: q  reason: collision with root package name */
-    private static boolean f1094q = false;
+    private static boolean f1423q = false;
 
     /* renamed from: r  reason: collision with root package name */
-    private static final u0.b f1095r = new u0.b();
+    private static final u0.b f1424r = new u0.b();
 
     /* renamed from: s  reason: collision with root package name */
-    private static final Object f1096s = new Object();
+    private static final Object f1425s = new Object();
 
     /* renamed from: t  reason: collision with root package name */
-    private static final Object f1097t = new Object();
+    private static final Object f1426t = new Object();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -80,19 +80,19 @@ public abstract class AppCompatDelegate {
     public static class c implements Executor {
 
         /* renamed from: d  reason: collision with root package name */
-        private final Object f1098d = new Object();
+        private final Object f1427d = new Object();
 
         /* renamed from: e  reason: collision with root package name */
-        final Queue f1099e = new ArrayDeque();
+        final Queue f1428e = new ArrayDeque();
 
         /* renamed from: i  reason: collision with root package name */
-        final Executor f1100i;
+        final Executor f1429i;
 
         /* renamed from: o  reason: collision with root package name */
-        Runnable f1101o;
+        Runnable f1430o;
 
         c(Executor executor) {
-            this.f1100i = executor;
+            this.f1429i = executor;
         }
 
         public static /* synthetic */ void a(c cVar, Runnable runnable) {
@@ -105,12 +105,12 @@ public abstract class AppCompatDelegate {
         }
 
         protected void b() {
-            synchronized (this.f1098d) {
+            synchronized (this.f1427d) {
                 try {
-                    Runnable runnable = (Runnable) this.f1099e.poll();
-                    this.f1101o = runnable;
+                    Runnable runnable = (Runnable) this.f1428e.poll();
+                    this.f1430o = runnable;
                     if (runnable != null) {
-                        this.f1100i.execute(runnable);
+                        this.f1429i.execute(runnable);
                     }
                 } catch (Throwable th2) {
                     throw th2;
@@ -120,15 +120,15 @@ public abstract class AppCompatDelegate {
 
         @Override // java.util.concurrent.Executor
         public void execute(final Runnable runnable) {
-            synchronized (this.f1098d) {
+            synchronized (this.f1427d) {
                 try {
-                    this.f1099e.add(new Runnable() { // from class: androidx.appcompat.app.d
+                    this.f1428e.add(new Runnable() { // from class: androidx.appcompat.app.d
                         @Override // java.lang.Runnable
                         public final void run() {
                             AppCompatDelegate.c.a(AppCompatDelegate.c.this, runnable);
                         }
                     });
-                    if (this.f1101o == null) {
+                    if (this.f1430o == null) {
                         b();
                     }
                 } catch (Throwable th2) {
@@ -151,15 +151,15 @@ public abstract class AppCompatDelegate {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void G(AppCompatDelegate appCompatDelegate) {
-        synchronized (f1096s) {
+        synchronized (f1425s) {
             H(appCompatDelegate);
         }
     }
 
     private static void H(AppCompatDelegate appCompatDelegate) {
-        synchronized (f1096s) {
+        synchronized (f1425s) {
             try {
-                Iterator it = f1095r.iterator();
+                Iterator it = f1424r.iterator();
                 while (it.hasNext()) {
                     AppCompatDelegate appCompatDelegate2 = (AppCompatDelegate) ((WeakReference) it.next()).get();
                     if (appCompatDelegate2 == appCompatDelegate || appCompatDelegate2 == null) {
@@ -179,8 +179,8 @@ public abstract class AppCompatDelegate {
     public static void N(int i10) {
         if (i10 != -1 && i10 != 0 && i10 != 1 && i10 != 2 && i10 != 3) {
             Log.d("AppCompatDelegate", "setDefaultNightMode() called with an unknown mode");
-        } else if (f1090e != i10) {
-            f1090e = i10;
+        } else if (f1419e != i10) {
+            f1419e = i10;
             g();
         }
     }
@@ -205,8 +205,8 @@ public abstract class AppCompatDelegate {
     public static void U(final Context context) {
         if (x(context)) {
             if (Build.VERSION.SDK_INT >= 33) {
-                if (!f1094q) {
-                    f1089d.execute(new Runnable() { // from class: androidx.appcompat.app.c
+                if (!f1423q) {
+                    f1418d.execute(new Runnable() { // from class: androidx.appcompat.app.c
                         @Override // java.lang.Runnable
                         public final void run() {
                             AppCompatDelegate.c(context);
@@ -216,20 +216,20 @@ public abstract class AppCompatDelegate {
                 }
                 return;
             }
-            synchronized (f1097t) {
+            synchronized (f1426t) {
                 try {
-                    LocaleListCompat localeListCompat = f1091i;
+                    LocaleListCompat localeListCompat = f1420i;
                     if (localeListCompat == null) {
-                        if (f1092o == null) {
-                            f1092o = LocaleListCompat.b(androidx.core.app.f.b(context));
+                        if (f1421o == null) {
+                            f1421o = LocaleListCompat.b(androidx.core.app.f.b(context));
                         }
-                        if (f1092o.e()) {
+                        if (f1421o.e()) {
                             return;
                         }
-                        f1091i = f1092o;
-                    } else if (!localeListCompat.equals(f1092o)) {
-                        LocaleListCompat localeListCompat2 = f1091i;
-                        f1092o = localeListCompat2;
+                        f1420i = f1421o;
+                    } else if (!localeListCompat.equals(f1421o)) {
+                        LocaleListCompat localeListCompat2 = f1420i;
+                        f1421o = localeListCompat2;
                         androidx.core.app.f.a(context, localeListCompat2.g());
                     }
                 } catch (Throwable th2) {
@@ -241,21 +241,21 @@ public abstract class AppCompatDelegate {
 
     public static /* synthetic */ void c(Context context) {
         T(context);
-        f1094q = true;
+        f1423q = true;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void d(AppCompatDelegate appCompatDelegate) {
-        synchronized (f1096s) {
+        synchronized (f1425s) {
             H(appCompatDelegate);
-            f1095r.add(new WeakReference(appCompatDelegate));
+            f1424r.add(new WeakReference(appCompatDelegate));
         }
     }
 
     private static void g() {
-        synchronized (f1096s) {
+        synchronized (f1425s) {
             try {
-                Iterator it = f1095r.iterator();
+                Iterator it = f1424r.iterator();
                 while (it.hasNext()) {
                     AppCompatDelegate appCompatDelegate = (AppCompatDelegate) ((WeakReference) it.next()).get();
                     if (appCompatDelegate != null) {
@@ -283,7 +283,7 @@ public abstract class AppCompatDelegate {
                 return LocaleListCompat.h(b.a(r10));
             }
         } else {
-            LocaleListCompat localeListCompat = f1091i;
+            LocaleListCompat localeListCompat = f1420i;
             if (localeListCompat != null) {
                 return localeListCompat;
             }
@@ -292,12 +292,12 @@ public abstract class AppCompatDelegate {
     }
 
     public static int o() {
-        return f1090e;
+        return f1419e;
     }
 
     static Object r() {
         Context n10;
-        Iterator it = f1095r.iterator();
+        Iterator it = f1424r.iterator();
         while (it.hasNext()) {
             AppCompatDelegate appCompatDelegate = (AppCompatDelegate) ((WeakReference) it.next()).get();
             if (appCompatDelegate != null && (n10 = appCompatDelegate.n()) != null) {
@@ -309,23 +309,23 @@ public abstract class AppCompatDelegate {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static LocaleListCompat t() {
-        return f1091i;
+        return f1420i;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static boolean x(Context context) {
-        if (f1093p == null) {
+        if (f1422p == null) {
             try {
                 Bundle bundle = o.a(context).metaData;
                 if (bundle != null) {
-                    f1093p = Boolean.valueOf(bundle.getBoolean("autoStoreLocales"));
+                    f1422p = Boolean.valueOf(bundle.getBoolean("autoStoreLocales"));
                 }
             } catch (PackageManager.NameNotFoundException unused) {
                 Log.d("AppCompatDelegate", "Checking for metadata for AppLocalesMetadataHolderService : Service not found");
-                f1093p = Boolean.FALSE;
+                f1422p = Boolean.FALSE;
             }
         }
-        return f1093p.booleanValue();
+        return f1422p.booleanValue();
     }
 
     public abstract void A();

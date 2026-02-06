@@ -6,27 +6,27 @@ import java.util.Map;
 class b0 implements Iterator {
 
     /* renamed from: d  reason: collision with root package name */
-    private Iterator f3698d;
+    private Iterator f4027d;
 
     public b0(Iterator it) {
-        this.f3698d = it;
+        this.f4027d = it;
     }
 
     @Override // java.util.Iterator
     /* renamed from: a */
     public Map.Entry next() {
-        Map.Entry entry = (Map.Entry) this.f3698d.next();
+        Map.Entry entry = (Map.Entry) this.f4027d.next();
         entry.getValue();
         return entry;
     }
 
     @Override // java.util.Iterator
     public boolean hasNext() {
-        return this.f3698d.hasNext();
+        return this.f4027d.hasNext();
     }
 
     @Override // java.util.Iterator
     public void remove() {
-        this.f3698d.remove();
+        this.f4027d.remove();
     }
 }

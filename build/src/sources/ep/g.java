@@ -1,19 +1,10 @@
 package ep;
-
-import androidx.activity.result.ActivityResultLauncher;
-import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class g {
+public abstract class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ActivityResultLauncher f21695a;
+    public static int f22100a = 2131362790;
 
-    public g(ActivityResultLauncher passportNfcReaderLauncher) {
-        Intrinsics.checkNotNullParameter(passportNfcReaderLauncher, "passportNfcReaderLauncher");
-        this.f21695a = passportNfcReaderLauncher;
-    }
-
-    public final ActivityResultLauncher a() {
-        return this.f21695a;
-    }
+    /* renamed from: b  reason: collision with root package name */
+    public static int f22101b = 2131362802;
 }

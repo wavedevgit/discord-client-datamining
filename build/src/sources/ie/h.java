@@ -8,15 +8,15 @@ import ne.h0;
 public final class h extends zd.f {
 
     /* renamed from: o  reason: collision with root package name */
-    private final h0 f27371o;
+    private final h0 f26708o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final c f27372p;
+    private final c f26709p;
 
     public h() {
         super("WebvttDecoder");
-        this.f27371o = new h0();
-        this.f27372p = new c();
+        this.f26708o = new h0();
+        this.f26709p = new c();
     }
 
     private static int B(h0 h0Var) {
@@ -47,26 +47,26 @@ public final class h extends zd.f {
     @Override // zd.f
     protected zd.g z(byte[] bArr, int i10, boolean z10) {
         e n10;
-        this.f27371o.S(bArr, i10);
+        this.f26708o.S(bArr, i10);
         ArrayList arrayList = new ArrayList();
         try {
-            i.e(this.f27371o);
+            i.e(this.f26708o);
             do {
-            } while (!TextUtils.isEmpty(this.f27371o.s()));
+            } while (!TextUtils.isEmpty(this.f26708o.s()));
             ArrayList arrayList2 = new ArrayList();
             while (true) {
-                int B = B(this.f27371o);
+                int B = B(this.f26708o);
                 if (B != 0) {
                     if (B == 1) {
-                        C(this.f27371o);
+                        C(this.f26708o);
                     } else if (B == 2) {
                         if (arrayList2.isEmpty()) {
-                            this.f27371o.s();
-                            arrayList.addAll(this.f27372p.d(this.f27371o));
+                            this.f26708o.s();
+                            arrayList.addAll(this.f26709p.d(this.f26708o));
                         } else {
                             throw new zd.i("A style block was found after the first cue.");
                         }
-                    } else if (B == 3 && (n10 = f.n(this.f27371o, arrayList)) != null) {
+                    } else if (B == 3 && (n10 = f.n(this.f26708o, arrayList)) != null) {
                         arrayList2.add(n10);
                     }
                 } else {

@@ -38,7 +38,7 @@ public final class EmbedMessageAccessory extends MessageAccessory implements Por
 
     @NotNull
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m561component13Eiw7ao() {
+    public final String m559component13Eiw7ao() {
         return this.messageId;
     }
 
@@ -76,7 +76,7 @@ public final class EmbedMessageAccessory extends MessageAccessory implements Por
     }
 
     /* renamed from: component4-o4g7jtM  reason: not valid java name */
-    public final long m562component4o4g7jtM() {
+    public final long m560component4o4g7jtM() {
         return this.channelId;
     }
 
@@ -103,7 +103,7 @@ public final class EmbedMessageAccessory extends MessageAccessory implements Por
 
     @NotNull
     /* renamed from: copy-BDjX1ak  reason: not valid java name */
-    public final EmbedMessageAccessory m563copyBDjX1ak(@NotNull String messageId, @NotNull MessageMargins margins, int i10, long j10, int i11, int i12, @NotNull Embed embed, boolean z10, boolean z11, boolean z12, boolean z13, boolean z14, SpoilerAttributes spoilerAttributes, View.OnLongClickListener onLongClickListener, boolean z15) {
+    public final EmbedMessageAccessory m561copyBDjX1ak(@NotNull String messageId, @NotNull MessageMargins margins, int i10, long j10, int i11, int i12, @NotNull Embed embed, boolean z10, boolean z11, boolean z12, boolean z13, boolean z14, SpoilerAttributes spoilerAttributes, View.OnLongClickListener onLongClickListener, boolean z15) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(margins, "margins");
         Intrinsics.checkNotNullParameter(embed, "embed");
@@ -116,13 +116,13 @@ public final class EmbedMessageAccessory extends MessageAccessory implements Por
         }
         if (obj instanceof EmbedMessageAccessory) {
             EmbedMessageAccessory embedMessageAccessory = (EmbedMessageAccessory) obj;
-            return MessageId.m1089equalsimpl0(this.messageId, embedMessageAccessory.messageId) && Intrinsics.areEqual(this.margins, embedMessageAccessory.margins) && this.index == embedMessageAccessory.index && ChannelId.m1063equalsimpl0(this.channelId, embedMessageAccessory.channelId) && this.constrainedWidth == embedMessageAccessory.constrainedWidth && this.radiusPx == embedMessageAccessory.radiusPx && Intrinsics.areEqual(this.embed, embedMessageAccessory.embed) && this.shouldAutoPlayGifs == embedMessageAccessory.shouldAutoPlayGifs && this.shouldAnimateEmoji == embedMessageAccessory.shouldAnimateEmoji && this.shouldShowLinkDecorations == embedMessageAccessory.shouldShowLinkDecorations && this.shouldShowRoleDot == embedMessageAccessory.shouldShowRoleDot && this.shouldShowRoleOnName == embedMessageAccessory.shouldShowRoleOnName && Intrinsics.areEqual(this.spoilerAttributes, embedMessageAccessory.spoilerAttributes) && Intrinsics.areEqual(this.onLongClick, embedMessageAccessory.onLongClick) && this.isForwardedContent == embedMessageAccessory.isForwardedContent;
+            return MessageId.m1087equalsimpl0(this.messageId, embedMessageAccessory.messageId) && Intrinsics.areEqual(this.margins, embedMessageAccessory.margins) && this.index == embedMessageAccessory.index && ChannelId.m1061equalsimpl0(this.channelId, embedMessageAccessory.channelId) && this.constrainedWidth == embedMessageAccessory.constrainedWidth && this.radiusPx == embedMessageAccessory.radiusPx && Intrinsics.areEqual(this.embed, embedMessageAccessory.embed) && this.shouldAutoPlayGifs == embedMessageAccessory.shouldAutoPlayGifs && this.shouldAnimateEmoji == embedMessageAccessory.shouldAnimateEmoji && this.shouldShowLinkDecorations == embedMessageAccessory.shouldShowLinkDecorations && this.shouldShowRoleDot == embedMessageAccessory.shouldShowRoleDot && this.shouldShowRoleOnName == embedMessageAccessory.shouldShowRoleOnName && Intrinsics.areEqual(this.spoilerAttributes, embedMessageAccessory.spoilerAttributes) && Intrinsics.areEqual(this.onLongClick, embedMessageAccessory.onLongClick) && this.isForwardedContent == embedMessageAccessory.isForwardedContent;
         }
         return false;
     }
 
     /* renamed from: getChannelId-o4g7jtM  reason: not valid java name */
-    public final long m564getChannelIdo4g7jtM() {
+    public final long m562getChannelIdo4g7jtM() {
         return this.channelId;
     }
 
@@ -148,7 +148,7 @@ public final class EmbedMessageAccessory extends MessageAccessory implements Por
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     @NotNull
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo538getMessageId3Eiw7ao() {
+    public String mo536getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -190,9 +190,9 @@ public final class EmbedMessageAccessory extends MessageAccessory implements Por
     }
 
     public int hashCode() {
-        int m1090hashCodeimpl = ((((((((((((((((((((((MessageId.m1090hashCodeimpl(this.messageId) * 31) + this.margins.hashCode()) * 31) + Integer.hashCode(this.index)) * 31) + ChannelId.m1064hashCodeimpl(this.channelId)) * 31) + Integer.hashCode(this.constrainedWidth)) * 31) + Integer.hashCode(this.radiusPx)) * 31) + this.embed.hashCode()) * 31) + Boolean.hashCode(this.shouldAutoPlayGifs)) * 31) + Boolean.hashCode(this.shouldAnimateEmoji)) * 31) + Boolean.hashCode(this.shouldShowLinkDecorations)) * 31) + Boolean.hashCode(this.shouldShowRoleDot)) * 31) + Boolean.hashCode(this.shouldShowRoleOnName)) * 31;
+        int m1088hashCodeimpl = ((((((((((((((((((((((MessageId.m1088hashCodeimpl(this.messageId) * 31) + this.margins.hashCode()) * 31) + Integer.hashCode(this.index)) * 31) + ChannelId.m1062hashCodeimpl(this.channelId)) * 31) + Integer.hashCode(this.constrainedWidth)) * 31) + Integer.hashCode(this.radiusPx)) * 31) + this.embed.hashCode()) * 31) + Boolean.hashCode(this.shouldAutoPlayGifs)) * 31) + Boolean.hashCode(this.shouldAnimateEmoji)) * 31) + Boolean.hashCode(this.shouldShowLinkDecorations)) * 31) + Boolean.hashCode(this.shouldShowRoleDot)) * 31) + Boolean.hashCode(this.shouldShowRoleOnName)) * 31;
         SpoilerAttributes spoilerAttributes = this.spoilerAttributes;
-        int hashCode = (m1090hashCodeimpl + (spoilerAttributes == null ? 0 : spoilerAttributes.hashCode())) * 31;
+        int hashCode = (m1088hashCodeimpl + (spoilerAttributes == null ? 0 : spoilerAttributes.hashCode())) * 31;
         View.OnLongClickListener onLongClickListener = this.onLongClick;
         return ((hashCode + (onLongClickListener != null ? onLongClickListener.hashCode() : 0)) * 31) + Boolean.hashCode(this.isForwardedContent);
     }
@@ -203,10 +203,10 @@ public final class EmbedMessageAccessory extends MessageAccessory implements Por
 
     @NotNull
     public String toString() {
-        String m1092toStringimpl = MessageId.m1092toStringimpl(this.messageId);
+        String m1090toStringimpl = MessageId.m1090toStringimpl(this.messageId);
         MessageMargins messageMargins = this.margins;
         int i10 = this.index;
-        String m1066toStringimpl = ChannelId.m1066toStringimpl(this.channelId);
+        String m1064toStringimpl = ChannelId.m1064toStringimpl(this.channelId);
         int i11 = this.constrainedWidth;
         int i12 = this.radiusPx;
         Embed embed = this.embed;
@@ -218,7 +218,7 @@ public final class EmbedMessageAccessory extends MessageAccessory implements Por
         SpoilerAttributes spoilerAttributes = this.spoilerAttributes;
         View.OnLongClickListener onLongClickListener = this.onLongClick;
         boolean z15 = this.isForwardedContent;
-        return "EmbedMessageAccessory(messageId=" + m1092toStringimpl + ", margins=" + messageMargins + ", index=" + i10 + ", channelId=" + m1066toStringimpl + ", constrainedWidth=" + i11 + ", radiusPx=" + i12 + ", embed=" + embed + ", shouldAutoPlayGifs=" + z10 + ", shouldAnimateEmoji=" + z11 + ", shouldShowLinkDecorations=" + z12 + ", shouldShowRoleDot=" + z13 + ", shouldShowRoleOnName=" + z14 + ", spoilerAttributes=" + spoilerAttributes + ", onLongClick=" + onLongClickListener + ", isForwardedContent=" + z15 + ")";
+        return "EmbedMessageAccessory(messageId=" + m1090toStringimpl + ", margins=" + messageMargins + ", index=" + i10 + ", channelId=" + m1064toStringimpl + ", constrainedWidth=" + i11 + ", radiusPx=" + i12 + ", embed=" + embed + ", shouldAutoPlayGifs=" + z10 + ", shouldAnimateEmoji=" + z11 + ", shouldShowLinkDecorations=" + z12 + ", shouldShowRoleDot=" + z13 + ", shouldShowRoleOnName=" + z14 + ", spoilerAttributes=" + spoilerAttributes + ", onLongClick=" + onLongClickListener + ", isForwardedContent=" + z15 + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

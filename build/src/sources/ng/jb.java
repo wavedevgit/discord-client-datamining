@@ -1,101 +1,42 @@
 package ng;
 
-import android.os.SystemClock;
-import java.io.Closeable;
-import java.util.HashMap;
-import java.util.Locale;
-import java.util.Map;
+import yi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public class jb implements Closeable {
+final class jb implements yi.d {
 
-    /* renamed from: s  reason: collision with root package name */
-    private static final Map f40723s = new HashMap();
+    /* renamed from: a  reason: collision with root package name */
+    static final jb f39904a = new jb();
 
-    /* renamed from: d  reason: collision with root package name */
-    private final String f40724d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private int f40725e;
-
-    /* renamed from: i  reason: collision with root package name */
-    private double f40726i;
-
-    /* renamed from: o  reason: collision with root package name */
-    private long f40727o;
-
-    /* renamed from: p  reason: collision with root package name */
-    private long f40728p;
-
-    /* renamed from: q  reason: collision with root package name */
-    private long f40729q;
-
-    /* renamed from: r  reason: collision with root package name */
-    private long f40730r;
-
-    private jb(String str) {
-        this.f40729q = 2147483647L;
-        this.f40730r = -2147483648L;
-        this.f40724d = str;
+    static {
+        c.b a10 = yi.c.a("inferenceCommonLogEvent");
+        l2 l2Var = new l2();
+        l2Var.a(1);
+        a10.b(l2Var.b()).a();
+        c.b a11 = yi.c.a("imageInfo");
+        l2 l2Var2 = new l2();
+        l2Var2.a(2);
+        a11.b(l2Var2.b()).a();
+        c.b a12 = yi.c.a("subjectSegmenterOptions");
+        l2 l2Var3 = new l2();
+        l2Var3.a(3);
+        a12.b(l2Var3.b()).a();
+        c.b a13 = yi.c.a("subjectInfos");
+        l2 l2Var4 = new l2();
+        l2Var4.a(4);
+        a13.b(l2Var4.b()).a();
+        c.b a14 = yi.c.a("qualityScores");
+        l2 l2Var5 = new l2();
+        l2Var5.a(5);
+        a14.b(l2Var5.b()).a();
     }
 
-    private final void a() {
-        this.f40725e = 0;
-        this.f40726i = 0.0d;
-        this.f40727o = 0L;
-        this.f40729q = 2147483647L;
-        this.f40730r = -2147483648L;
+    private jb() {
     }
 
-    public static jb o(String str) {
-        hb hbVar;
-        jc.a();
-        if (!jc.b()) {
-            hbVar = hb.f40650t;
-            return hbVar;
-        }
-        Map map = f40723s;
-        if (map.get("detectorTaskWithResource#run") == null) {
-            map.put("detectorTaskWithResource#run", new jb("detectorTaskWithResource#run"));
-        }
-        return (jb) map.get("detectorTaskWithResource#run");
-    }
-
-    @Override // java.io.Closeable, java.lang.AutoCloseable
-    public void close() {
-        long j10 = this.f40727o;
-        if (j10 != 0) {
-            m(j10);
-            return;
-        }
-        throw new IllegalStateException("Did you forget to call start()?");
-    }
-
-    public jb h() {
-        this.f40727o = SystemClock.elapsedRealtimeNanos() / 1000;
-        return this;
-    }
-
-    public void k(long j10) {
-        long elapsedRealtimeNanos = SystemClock.elapsedRealtimeNanos() / 1000;
-        long j11 = this.f40728p;
-        if (j11 != 0 && elapsedRealtimeNanos - j11 >= 1000000) {
-            a();
-        }
-        this.f40728p = elapsedRealtimeNanos;
-        this.f40725e++;
-        this.f40726i += j10;
-        this.f40729q = Math.min(this.f40729q, j10);
-        this.f40730r = Math.max(this.f40730r, j10);
-        if (this.f40725e % 50 == 0) {
-            String.format(Locale.US, "[%s] cur=%dus, counts=%d, min=%dus, max=%dus, avg=%dus", this.f40724d, Long.valueOf(j10), Integer.valueOf(this.f40725e), Long.valueOf(this.f40729q), Long.valueOf(this.f40730r), Integer.valueOf((int) (this.f40726i / this.f40725e)));
-            jc.a();
-        }
-        if (this.f40725e % 500 == 0) {
-            a();
-        }
-    }
-
-    public void m(long j10) {
-        k((SystemClock.elapsedRealtimeNanos() / 1000) - j10);
+    @Override // yi.d
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        android.support.v4.media.session.b.a(obj);
+        yi.e eVar = (yi.e) obj2;
+        throw null;
     }
 }

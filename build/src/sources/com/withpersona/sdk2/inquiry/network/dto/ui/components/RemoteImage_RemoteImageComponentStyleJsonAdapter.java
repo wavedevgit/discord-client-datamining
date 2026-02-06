@@ -67,7 +67,7 @@ public final class RemoteImage_RemoteImageComponentStyleJsonAdapter extends h {
     @NotNull
     public RemoteImage.RemoteImageComponentStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         AttributeStyles.RemoteImageHeightStyle remoteImageHeightStyle = null;
         AttributeStyles.RemoteImageWidthStyle remoteImageWidthStyle = null;
         AttributeStyles.RemoteImageJustifyStyle remoteImageJustifyStyle = null;
@@ -75,10 +75,10 @@ public final class RemoteImage_RemoteImageComponentStyleJsonAdapter extends h {
         AttributeStyles.RemoteImageStrokeColorStyle remoteImageStrokeColorStyle = null;
         AttributeStyles.RemoteImageFillColorStyle remoteImageFillColorStyle = null;
         while (reader.hasNext()) {
-            switch (reader.W(this.options)) {
+            switch (reader.J(this.options)) {
                 case -1:
                     reader.E0();
-                    reader.P();
+                    reader.S();
                     break;
                 case 0:
                     remoteImageHeightStyle = (AttributeStyles.RemoteImageHeightStyle) this.nullableRemoteImageHeightStyleAdapter.fromJson(reader);
@@ -100,7 +100,7 @@ public final class RemoteImage_RemoteImageComponentStyleJsonAdapter extends h {
                     break;
             }
         }
-        reader.z();
+        reader.D();
         return new RemoteImage.RemoteImageComponentStyle(remoteImageHeightStyle, remoteImageWidthStyle, remoteImageJustifyStyle, remoteImageMarginStyle, remoteImageStrokeColorStyle, remoteImageFillColorStyle);
     }
 
@@ -109,19 +109,19 @@ public final class RemoteImage_RemoteImageComponentStyleJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (remoteImageComponentStyle != null) {
             writer.k();
-            writer.W("height");
+            writer.J("height");
             this.nullableRemoteImageHeightStyleAdapter.toJson(writer, remoteImageComponentStyle.getHeight());
-            writer.W("width");
+            writer.J("width");
             this.nullableRemoteImageWidthStyleAdapter.toJson(writer, remoteImageComponentStyle.getWidth());
-            writer.W("justify");
+            writer.J("justify");
             this.nullableRemoteImageJustifyStyleAdapter.toJson(writer, remoteImageComponentStyle.getJustify());
-            writer.W(ViewProps.MARGIN);
+            writer.J(ViewProps.MARGIN);
             this.nullableRemoteImageMarginStyleAdapter.toJson(writer, remoteImageComponentStyle.getMargin());
-            writer.W("strokeColor");
+            writer.J("strokeColor");
             this.nullableRemoteImageStrokeColorStyleAdapter.toJson(writer, remoteImageComponentStyle.getStrokeColor());
-            writer.W("fillColor");
+            writer.J("fillColor");
             this.nullableRemoteImageFillColorStyleAdapter.toJson(writer, remoteImageComponentStyle.getFillColor());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

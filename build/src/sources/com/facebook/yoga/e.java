@@ -13,10 +13,10 @@ public enum e {
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f11578d;
+    private final int f11477d;
 
     e(int i10) {
-        this.f11578d = i10;
+        this.f11477d = i10;
     }
 
     public static e d(int i10) {
@@ -45,6 +45,6 @@ public enum e {
     }
 
     public int e() {
-        return this.f11578d;
+        return this.f11477d;
     }
 }

@@ -1,13 +1,20 @@
 package mg;
+
+import java.util.Set;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class r extends q {
-    public static boolean a(Object obj, Object obj2) {
-        if (obj == obj2) {
-            return true;
+public abstract class r {
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static int a(Set set) {
+        int i10;
+        int i11 = 0;
+        for (Object obj : set) {
+            if (obj != null) {
+                i10 = obj.hashCode();
+            } else {
+                i10 = 0;
+            }
+            i11 += i10;
         }
-        if (obj != null && obj.equals(obj2)) {
-            return true;
-        }
-        return false;
+        return i11;
     }
 }

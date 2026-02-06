@@ -1,63 +1,33 @@
 package tu;
 
-import java.util.List;
-import java.util.Map;
-import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.Intrinsics;
-import tu.d;
+import kotlin.text.StringsKt;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class a implements qu.a, d {
+public interface a {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final a f51062a = new a();
-
-    private a() {
-    }
-
-    @Override // su.f
-    public Object b(Object obj, Object obj2, h hVar, Function2 function2) {
-        return d.a.f(this, obj, obj2, hVar, function2);
-    }
-
-    @Override // su.a
-    public su.b c(List list, Object obj, h hVar) {
-        return d.a.c(this, list, obj, hVar);
-    }
-
-    @Override // qu.a
-    public Object d(Object obj, Object obj2, h evaluator) {
-        Intrinsics.checkNotNullParameter(evaluator, "evaluator");
-        return g(obj, obj2, evaluator);
-    }
-
-    @Override // tu.d
-    public Object e(c data, h evaluator) {
-        Intrinsics.checkNotNullParameter(data, "data");
-        Intrinsics.checkNotNullParameter(evaluator, "evaluator");
-        for (Object obj : data.b()) {
-            if (!f51062a.i(evaluator.a(data.a(), obj))) {
-                return data.c();
+    /* renamed from: tu.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class C0672a {
+        public static Boolean a(a aVar, Object obj) {
+            Double p10;
+            if (obj instanceof Boolean) {
+                return (Boolean) obj;
+            }
+            boolean z10 = false;
+            if (obj instanceof Number) {
+                if (((Number) obj).longValue() > 0) {
+                    z10 = true;
+                }
+                return Boolean.valueOf(z10);
+            } else if (!(obj instanceof String) || (p10 = StringsKt.p((String) obj)) == null) {
+                return null;
+            } else {
+                if (((long) p10.doubleValue()) > 0) {
+                    z10 = true;
+                }
+                return Boolean.valueOf(z10);
             }
         }
-        return Boolean.TRUE;
     }
 
-    @Override // uv.a
-    public List f(List list, Object obj, h hVar) {
-        return d.a.h(this, list, obj, hVar);
-    }
-
-    public Object g(Object obj, Object obj2, h hVar) {
-        return d.a.b(this, obj, obj2, hVar);
-    }
-
-    @Override // su.a
-    /* renamed from: h */
-    public Boolean a(Map map, List list) {
-        return d.a.e(this, map, list);
-    }
-
-    public boolean i(Object obj) {
-        return d.a.i(this, obj);
-    }
+    Boolean c(Object obj);
 }

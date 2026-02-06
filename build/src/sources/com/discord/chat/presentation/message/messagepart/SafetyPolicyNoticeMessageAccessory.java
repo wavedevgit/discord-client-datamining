@@ -19,19 +19,19 @@ public final class SafetyPolicyNoticeMessageAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-ntcYbpo$default  reason: not valid java name */
-    public static /* synthetic */ SafetyPolicyNoticeMessageAccessory m648copyntcYbpo$default(SafetyPolicyNoticeMessageAccessory safetyPolicyNoticeMessageAccessory, String str, SafetyPolicyNoticeEmbed safetyPolicyNoticeEmbed, int i10, Object obj) {
+    public static /* synthetic */ SafetyPolicyNoticeMessageAccessory m646copyntcYbpo$default(SafetyPolicyNoticeMessageAccessory safetyPolicyNoticeMessageAccessory, String str, SafetyPolicyNoticeEmbed safetyPolicyNoticeEmbed, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = safetyPolicyNoticeMessageAccessory.messageId;
         }
         if ((i10 & 2) != 0) {
             safetyPolicyNoticeEmbed = safetyPolicyNoticeMessageAccessory.safetyPolicyNoticeEmbed;
         }
-        return safetyPolicyNoticeMessageAccessory.m650copyntcYbpo(str, safetyPolicyNoticeEmbed);
+        return safetyPolicyNoticeMessageAccessory.m648copyntcYbpo(str, safetyPolicyNoticeEmbed);
     }
 
     @NotNull
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m649component13Eiw7ao() {
+    public final String m647component13Eiw7ao() {
         return this.messageId;
     }
 
@@ -42,7 +42,7 @@ public final class SafetyPolicyNoticeMessageAccessory extends MessageAccessory {
 
     @NotNull
     /* renamed from: copy-ntcYbpo  reason: not valid java name */
-    public final SafetyPolicyNoticeMessageAccessory m650copyntcYbpo(@NotNull String messageId, @NotNull SafetyPolicyNoticeEmbed safetyPolicyNoticeEmbed) {
+    public final SafetyPolicyNoticeMessageAccessory m648copyntcYbpo(@NotNull String messageId, @NotNull SafetyPolicyNoticeEmbed safetyPolicyNoticeEmbed) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(safetyPolicyNoticeEmbed, "safetyPolicyNoticeEmbed");
         return new SafetyPolicyNoticeMessageAccessory(messageId, safetyPolicyNoticeEmbed, null);
@@ -54,7 +54,7 @@ public final class SafetyPolicyNoticeMessageAccessory extends MessageAccessory {
         }
         if (obj instanceof SafetyPolicyNoticeMessageAccessory) {
             SafetyPolicyNoticeMessageAccessory safetyPolicyNoticeMessageAccessory = (SafetyPolicyNoticeMessageAccessory) obj;
-            return MessageId.m1089equalsimpl0(this.messageId, safetyPolicyNoticeMessageAccessory.messageId) && Intrinsics.areEqual(this.safetyPolicyNoticeEmbed, safetyPolicyNoticeMessageAccessory.safetyPolicyNoticeEmbed);
+            return MessageId.m1087equalsimpl0(this.messageId, safetyPolicyNoticeMessageAccessory.messageId) && Intrinsics.areEqual(this.safetyPolicyNoticeEmbed, safetyPolicyNoticeMessageAccessory.safetyPolicyNoticeEmbed);
         }
         return false;
     }
@@ -62,7 +62,7 @@ public final class SafetyPolicyNoticeMessageAccessory extends MessageAccessory {
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     @NotNull
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo538getMessageId3Eiw7ao() {
+    public String mo536getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -72,14 +72,14 @@ public final class SafetyPolicyNoticeMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        return (MessageId.m1090hashCodeimpl(this.messageId) * 31) + this.safetyPolicyNoticeEmbed.hashCode();
+        return (MessageId.m1088hashCodeimpl(this.messageId) * 31) + this.safetyPolicyNoticeEmbed.hashCode();
     }
 
     @NotNull
     public String toString() {
-        String m1092toStringimpl = MessageId.m1092toStringimpl(this.messageId);
+        String m1090toStringimpl = MessageId.m1090toStringimpl(this.messageId);
         SafetyPolicyNoticeEmbed safetyPolicyNoticeEmbed = this.safetyPolicyNoticeEmbed;
-        return "SafetyPolicyNoticeMessageAccessory(messageId=" + m1092toStringimpl + ", safetyPolicyNoticeEmbed=" + safetyPolicyNoticeEmbed + ")";
+        return "SafetyPolicyNoticeMessageAccessory(messageId=" + m1090toStringimpl + ", safetyPolicyNoticeEmbed=" + safetyPolicyNoticeEmbed + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

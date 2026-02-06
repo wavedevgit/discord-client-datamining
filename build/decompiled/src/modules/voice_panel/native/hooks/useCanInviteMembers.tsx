@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var5;
         var0 = function() { // Environment: var0
-            _fun111022: for (var _fun111022_ip = 0;;) switch (_fun111022_ip) {
+            _fun111045: for (var _fun111045_ip = 0;;) switch (_fun111045_ip) {
                 case 0:
                     var3 = _closure1_slot2;
                     var2 = var3.getChannel;
@@ -62,8 +62,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = null;
                     var0 = var0 != var4;
                     if (!var0) {
-                        _fun111022_ip = 59;
-                        continue _fun111022
+                        _fun111045_ip = 59;
+                        continue _fun111045
                     }
                 case 33:
                     var5 = _closure1_slot3;
@@ -73,8 +73,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var3.bind(var5)(var2, var4);
                 case 59:
                     if (!var0) {
-                        _fun111022_ip = 88;
-                        continue _fun111022
+                        _fun111045_ip = 88;
+                        continue _fun111045
                     }
                 case 62:
                     var3 = _closure1_slot3;
@@ -91,4 +91,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useCanInviteMembers = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 3091, 483, 632, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 3093, 483, 632, 2]);

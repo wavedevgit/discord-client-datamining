@@ -3,7 +3,7 @@ package g5;
 public final class j {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final j f23781a = new j();
+    public static final j f24034a = new j();
 
     private j() {
     }

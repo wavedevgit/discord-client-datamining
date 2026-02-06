@@ -7,30 +7,30 @@ import java.nio.ByteBuffer;
 public class h implements q, Closeable {
 
     /* renamed from: d  reason: collision with root package name */
-    private ByteBuffer f51938d;
+    private ByteBuffer f52303d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f51939e;
+    private final int f52304e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final long f51940i = System.identityHashCode(this);
+    private final long f52305i = System.identityHashCode(this);
 
     public h(int i10) {
-        this.f51938d = ByteBuffer.allocateDirect(i10);
-        this.f51939e = i10;
+        this.f52303d = ByteBuffer.allocateDirect(i10);
+        this.f52304e = i10;
     }
 
     private void m(int i10, q qVar, int i11, int i12) {
         if (qVar instanceof h) {
             o8.j.i(!isClosed());
             o8.j.i(!qVar.isClosed());
-            o8.j.g(this.f51938d);
-            r.b(i10, qVar.getSize(), i11, i12, this.f51939e);
-            this.f51938d.position(i10);
-            ByteBuffer byteBuffer = (ByteBuffer) o8.j.g(qVar.q());
+            o8.j.g(this.f52303d);
+            r.b(i10, qVar.getSize(), i11, i12, this.f52304e);
+            this.f52303d.position(i10);
+            ByteBuffer byteBuffer = (ByteBuffer) o8.j.g(qVar.r());
             byteBuffer.position(i11);
             byte[] bArr = new byte[i12];
-            this.f51938d.get(bArr, 0, i12);
+            this.f52303d.get(bArr, 0, i12);
             byteBuffer.put(bArr, 0, i12);
             return;
         }
@@ -38,42 +38,61 @@ public class h implements q, Closeable {
     }
 
     @Override // va.q
-    public long C() {
+    public synchronized byte B(int i10) {
+        boolean z10;
+        boolean z11 = true;
+        o8.j.i(!isClosed());
+        if (i10 >= 0) {
+            z10 = true;
+        } else {
+            z10 = false;
+        }
+        o8.j.b(Boolean.valueOf(z10));
+        if (i10 >= this.f52304e) {
+            z11 = false;
+        }
+        o8.j.b(Boolean.valueOf(z11));
+        o8.j.g(this.f52303d);
+        return this.f52303d.get(i10);
+    }
+
+    @Override // va.q
+    public long G() {
         throw new UnsupportedOperationException("Cannot get the pointer of a BufferMemoryChunk");
     }
 
     @Override // va.q
     public long a() {
-        return this.f51940i;
+        return this.f52305i;
     }
 
     @Override // va.q, java.io.Closeable, java.lang.AutoCloseable
     public synchronized void close() {
-        this.f51938d = null;
+        this.f52303d = null;
+    }
+
+    @Override // va.q
+    public synchronized int g(int i10, byte[] bArr, int i11, int i12) {
+        int a10;
+        o8.j.g(bArr);
+        o8.j.i(!isClosed());
+        o8.j.g(this.f52303d);
+        a10 = r.a(i10, i12, this.f52304e);
+        r.b(i10, bArr.length, i11, a10, this.f52304e);
+        this.f52303d.position(i10);
+        this.f52303d.put(bArr, i11, a10);
+        return a10;
     }
 
     @Override // va.q
     public int getSize() {
-        return this.f51939e;
-    }
-
-    @Override // va.q
-    public synchronized int h(int i10, byte[] bArr, int i11, int i12) {
-        int a10;
-        o8.j.g(bArr);
-        o8.j.i(!isClosed());
-        o8.j.g(this.f51938d);
-        a10 = r.a(i10, i12, this.f51939e);
-        r.b(i10, bArr.length, i11, a10, this.f51939e);
-        this.f51938d.position(i10);
-        this.f51938d.put(bArr, i11, a10);
-        return a10;
+        return this.f52304e;
     }
 
     @Override // va.q
     public synchronized boolean isClosed() {
         boolean z10;
-        if (this.f51938d == null) {
+        if (this.f52303d == null) {
             z10 = true;
         } else {
             z10 = false;
@@ -104,39 +123,20 @@ public class h implements q, Closeable {
     }
 
     @Override // va.q
-    public synchronized int p(int i10, byte[] bArr, int i11, int i12) {
+    public synchronized int q(int i10, byte[] bArr, int i11, int i12) {
         int a10;
         o8.j.g(bArr);
         o8.j.i(!isClosed());
-        o8.j.g(this.f51938d);
-        a10 = r.a(i10, i12, this.f51939e);
-        r.b(i10, bArr.length, i11, a10, this.f51939e);
-        this.f51938d.position(i10);
-        this.f51938d.get(bArr, i11, a10);
+        o8.j.g(this.f52303d);
+        a10 = r.a(i10, i12, this.f52304e);
+        r.b(i10, bArr.length, i11, a10, this.f52304e);
+        this.f52303d.position(i10);
+        this.f52303d.get(bArr, i11, a10);
         return a10;
     }
 
     @Override // va.q
-    public synchronized ByteBuffer q() {
-        return this.f51938d;
-    }
-
-    @Override // va.q
-    public synchronized byte x(int i10) {
-        boolean z10;
-        boolean z11 = true;
-        o8.j.i(!isClosed());
-        if (i10 >= 0) {
-            z10 = true;
-        } else {
-            z10 = false;
-        }
-        o8.j.b(Boolean.valueOf(z10));
-        if (i10 >= this.f51939e) {
-            z11 = false;
-        }
-        o8.j.b(Boolean.valueOf(z11));
-        o8.j.g(this.f51938d);
-        return this.f51938d.get(i10);
+    public synchronized ByteBuffer r() {
+        return this.f52303d;
     }
 }

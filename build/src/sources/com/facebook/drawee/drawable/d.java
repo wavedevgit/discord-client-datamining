@@ -5,7 +5,7 @@ import android.graphics.drawable.Drawable;
 public final class d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final d f10040a = new d();
+    public static final d f9939a = new d();
 
     private d() {
     }

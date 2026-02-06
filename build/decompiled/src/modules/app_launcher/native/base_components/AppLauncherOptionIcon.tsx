@@ -58,15 +58,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/app_launcher/native/base_components/AppLauncherOptionIcon.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function arg0() {
-        _fun105557: for (var _fun105557_ip = 0;;) switch (_fun105557_ip) {
+        _fun105585: for (var _fun105585_ip = 0;;) switch (_fun105585_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.wrapperStyle;
                 var7 = var0.wrapperSize;
                 var3 = undefined;
                 if (!(var7 === var3)) {
-                    _fun105557_ip = 24;
-                    continue _fun105557
+                    _fun105585_ip = 24;
+                    continue _fun105585
                 }
             case 21:
                 var7 = 32;

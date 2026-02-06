@@ -5,23 +5,23 @@ import kotlin.jvm.internal.Intrinsics;
 public final class i {
 
     /* renamed from: a  reason: collision with root package name */
-    public final String f44861a;
+    public final String f43658a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f44862b;
+    private final int f43659b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final int f44863c;
+    public final int f43660c;
 
     public i(String workSpecId, int i10, int i11) {
         Intrinsics.checkNotNullParameter(workSpecId, "workSpecId");
-        this.f44861a = workSpecId;
-        this.f44862b = i10;
-        this.f44863c = i11;
+        this.f43658a = workSpecId;
+        this.f43659b = i10;
+        this.f43660c = i11;
     }
 
     public final int a() {
-        return this.f44862b;
+        return this.f43659b;
     }
 
     public boolean equals(Object obj) {
@@ -32,17 +32,17 @@ public final class i {
             return false;
         }
         i iVar = (i) obj;
-        if (Intrinsics.areEqual(this.f44861a, iVar.f44861a) && this.f44862b == iVar.f44862b && this.f44863c == iVar.f44863c) {
+        if (Intrinsics.areEqual(this.f43658a, iVar.f43658a) && this.f43659b == iVar.f43659b && this.f43660c == iVar.f43660c) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (((this.f44861a.hashCode() * 31) + Integer.hashCode(this.f44862b)) * 31) + Integer.hashCode(this.f44863c);
+        return (((this.f43658a.hashCode() * 31) + Integer.hashCode(this.f43659b)) * 31) + Integer.hashCode(this.f43660c);
     }
 
     public String toString() {
-        return "SystemIdInfo(workSpecId=" + this.f44861a + ", generation=" + this.f44862b + ", systemId=" + this.f44863c + ')';
+        return "SystemIdInfo(workSpecId=" + this.f43658a + ", generation=" + this.f43659b + ", systemId=" + this.f43660c + ')';
     }
 }

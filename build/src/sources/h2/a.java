@@ -5,22 +5,22 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 public abstract class a extends Exception {
 
     /* renamed from: i  reason: collision with root package name */
-    public static final C0346a f25624i = new C0346a(null);
+    public static final C0350a f25752i = new C0350a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f25625d;
+    private final String f25753d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final CharSequence f25626e;
+    private final CharSequence f25754e;
 
     /* renamed from: h2.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static final class C0346a {
-        public /* synthetic */ C0346a(DefaultConstructorMarker defaultConstructorMarker) {
+    public static final class C0350a {
+        public /* synthetic */ C0350a(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
 
-        private C0346a() {
+        private C0350a() {
         }
     }
 
@@ -41,8 +41,8 @@ public abstract class a extends Exception {
             r0 = 0
         Ld:
             r1.<init>(r0)
-            r1.f25625d = r2
-            r1.f25626e = r3
+            r1.f25753d = r2
+            r1.f25754e = r3
             return
         */
         throw new UnsupportedOperationException("Method not decompiled: h2.a.<init>(java.lang.String, java.lang.CharSequence):void");

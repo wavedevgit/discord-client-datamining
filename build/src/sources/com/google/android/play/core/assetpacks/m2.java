@@ -4,10 +4,10 @@ package com.google.android.play.core.assetpacks;
 public final class m2 {
 
     /* renamed from: a  reason: collision with root package name */
-    boolean f15912a;
+    boolean f15892a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public m2(boolean z10) {
-        this.f15912a = z10;
+        this.f15892a = z10;
     }
 }

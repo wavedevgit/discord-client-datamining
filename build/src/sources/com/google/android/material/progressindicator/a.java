@@ -1,5 +1,6 @@
 package com.google.android.material.progressindicator;
 
+import ah.k;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
@@ -13,59 +14,58 @@ import androidx.annotation.NonNull;
 import androidx.core.view.h0;
 import com.google.android.material.internal.l;
 import java.util.Arrays;
-import zg.k;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class a extends ProgressBar {
 
     /* renamed from: z  reason: collision with root package name */
-    static final int f15223z = zg.j.f55725x;
+    static final int f15203z = ah.j.f820x;
 
     /* renamed from: d  reason: collision with root package name */
-    com.google.android.material.progressindicator.b f15224d;
+    com.google.android.material.progressindicator.b f15204d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f15225e;
+    private int f15205e;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f15226i;
+    private boolean f15206i;
 
     /* renamed from: o  reason: collision with root package name */
-    private boolean f15227o;
+    private boolean f15207o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final int f15228p;
+    private final int f15208p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final int f15229q;
+    private final int f15209q;
 
     /* renamed from: r  reason: collision with root package name */
-    private long f15230r;
+    private long f15210r;
 
     /* renamed from: s  reason: collision with root package name */
-    lh.a f15231s;
+    mh.a f15211s;
 
     /* renamed from: t  reason: collision with root package name */
-    private boolean f15232t;
+    private boolean f15212t;
 
     /* renamed from: u  reason: collision with root package name */
-    private int f15233u;
+    private int f15213u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final Runnable f15234v;
+    private final Runnable f15214v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final Runnable f15235w;
+    private final Runnable f15215w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final androidx.vectordrawable.graphics.drawable.b f15236x;
+    private final androidx.vectordrawable.graphics.drawable.b f15216x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final androidx.vectordrawable.graphics.drawable.b f15237y;
+    private final androidx.vectordrawable.graphics.drawable.b f15217y;
 
     /* renamed from: com.google.android.material.progressindicator.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    class RunnableC0187a implements Runnable {
-        RunnableC0187a() {
+    class RunnableC0179a implements Runnable {
+        RunnableC0179a() {
         }
 
         @Override // java.lang.Runnable
@@ -82,7 +82,7 @@ public abstract class a extends ProgressBar {
         @Override // java.lang.Runnable
         public void run() {
             a.this.j();
-            a.this.f15230r = -1L;
+            a.this.f15210r = -1L;
         }
     }
 
@@ -95,7 +95,7 @@ public abstract class a extends ProgressBar {
         public void b(Drawable drawable) {
             a.this.setIndeterminate(false);
             a aVar = a.this;
-            aVar.o(aVar.f15225e, a.this.f15226i);
+            aVar.o(aVar.f15205e, a.this.f15206i);
         }
     }
 
@@ -107,31 +107,31 @@ public abstract class a extends ProgressBar {
         @Override // androidx.vectordrawable.graphics.drawable.b
         public void b(Drawable drawable) {
             super.b(drawable);
-            if (!a.this.f15232t) {
+            if (!a.this.f15212t) {
                 a aVar = a.this;
-                aVar.setVisibility(aVar.f15233u);
+                aVar.setVisibility(aVar.f15213u);
             }
         }
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public a(Context context, AttributeSet attributeSet, int i10, int i11) {
-        super(sh.a.c(context, attributeSet, i10, f15223z), attributeSet, i10);
-        this.f15230r = -1L;
-        this.f15232t = false;
-        this.f15233u = 4;
-        this.f15234v = new RunnableC0187a();
-        this.f15235w = new b();
-        this.f15236x = new c();
-        this.f15237y = new d();
+        super(th.a.c(context, attributeSet, i10, f15203z), attributeSet, i10);
+        this.f15210r = -1L;
+        this.f15212t = false;
+        this.f15213u = 4;
+        this.f15214v = new RunnableC0179a();
+        this.f15215w = new b();
+        this.f15216x = new c();
+        this.f15217y = new d();
         Context context2 = getContext();
-        this.f15224d = i(context2, attributeSet);
+        this.f15204d = i(context2, attributeSet);
         TypedArray i12 = l.i(context2, attributeSet, k.G, i10, i11, new int[0]);
-        this.f15228p = i12.getInt(k.M, -1);
-        this.f15229q = Math.min(i12.getInt(k.K, -1), 1000);
+        this.f15208p = i12.getInt(k.M, -1);
+        this.f15209q = Math.min(i12.getInt(k.K, -1), 1000);
         i12.recycle();
-        this.f15231s = new lh.a();
-        this.f15227o = true;
+        this.f15211s = new mh.a();
+        this.f15207o = true;
     }
 
     private h getCurrentDrawingDelegate() {
@@ -157,8 +157,8 @@ public abstract class a extends ProgressBar {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void k() {
-        if (this.f15229q > 0) {
-            this.f15230r = SystemClock.uptimeMillis();
+        if (this.f15209q > 0) {
+            this.f15210r = SystemClock.uptimeMillis();
         }
         setVisibility(0);
     }
@@ -175,23 +175,23 @@ public abstract class a extends ProgressBar {
 
     private void n() {
         if (getProgressDrawable() != null && getIndeterminateDrawable() != null) {
-            getIndeterminateDrawable().u().d(this.f15236x);
+            getIndeterminateDrawable().u().d(this.f15216x);
         }
         if (getProgressDrawable() != null) {
-            getProgressDrawable().m(this.f15237y);
+            getProgressDrawable().m(this.f15217y);
         }
         if (getIndeterminateDrawable() != null) {
-            getIndeterminateDrawable().m(this.f15237y);
+            getIndeterminateDrawable().m(this.f15217y);
         }
     }
 
     private void p() {
         if (getIndeterminateDrawable() != null) {
-            getIndeterminateDrawable().s(this.f15237y);
+            getIndeterminateDrawable().s(this.f15217y);
             getIndeterminateDrawable().u().h();
         }
         if (getProgressDrawable() != null) {
-            getProgressDrawable().s(this.f15237y);
+            getProgressDrawable().s(this.f15217y);
         }
     }
 
@@ -204,36 +204,36 @@ public abstract class a extends ProgressBar {
     }
 
     public int getHideAnimationBehavior() {
-        return this.f15224d.f15247f;
+        return this.f15204d.f15227f;
     }
 
     @NonNull
     public int[] getIndicatorColor() {
-        return this.f15224d.f15244c;
+        return this.f15204d.f15224c;
     }
 
     public int getIndicatorTrackGapSize() {
-        return this.f15224d.f15248g;
+        return this.f15204d.f15228g;
     }
 
     public int getShowAnimationBehavior() {
-        return this.f15224d.f15246e;
+        return this.f15204d.f15226e;
     }
 
     public int getTrackColor() {
-        return this.f15224d.f15245d;
+        return this.f15204d.f15225d;
     }
 
     public int getTrackCornerRadius() {
-        return this.f15224d.f15243b;
+        return this.f15204d.f15223b;
     }
 
     public int getTrackThickness() {
-        return this.f15224d.f15242a;
+        return this.f15204d.f15222a;
     }
 
     protected void h(boolean z10) {
-        if (!this.f15227o) {
+        if (!this.f15207o) {
             return;
         }
         ((g) getCurrentDrawable()).q(q(), false, z10);
@@ -270,14 +270,14 @@ public abstract class a extends ProgressBar {
     public void o(int i10, boolean z10) {
         if (isIndeterminate()) {
             if (getProgressDrawable() != null) {
-                this.f15225e = i10;
-                this.f15226i = z10;
-                this.f15232t = true;
-                if (getIndeterminateDrawable().isVisible() && this.f15231s.a(getContext().getContentResolver()) != 0.0f) {
+                this.f15205e = i10;
+                this.f15206i = z10;
+                this.f15212t = true;
+                if (getIndeterminateDrawable().isVisible() && this.f15211s.a(getContext().getContentResolver()) != 0.0f) {
                     getIndeterminateDrawable().u().f();
                     return;
                 } else {
-                    this.f15236x.b(getIndeterminateDrawable());
+                    this.f15216x.b(getIndeterminateDrawable());
                     return;
                 }
             }
@@ -300,8 +300,8 @@ public abstract class a extends ProgressBar {
 
     @Override // android.widget.ProgressBar, android.view.View
     protected void onDetachedFromWindow() {
-        removeCallbacks(this.f15235w);
-        removeCallbacks(this.f15234v);
+        removeCallbacks(this.f15215w);
+        removeCallbacks(this.f15214v);
         ((g) getCurrentDrawable()).i();
         p();
         super.onDetachedFromWindow();
@@ -381,18 +381,18 @@ public abstract class a extends ProgressBar {
         return false;
     }
 
-    public void setAnimatorDurationScaleProvider(@NonNull lh.a aVar) {
-        this.f15231s = aVar;
+    public void setAnimatorDurationScaleProvider(@NonNull mh.a aVar) {
+        this.f15211s = aVar;
         if (getProgressDrawable() != null) {
-            getProgressDrawable().f15275i = aVar;
+            getProgressDrawable().f15255i = aVar;
         }
         if (getIndeterminateDrawable() != null) {
-            getIndeterminateDrawable().f15275i = aVar;
+            getIndeterminateDrawable().f15255i = aVar;
         }
     }
 
     public void setHideAnimationBehavior(int i10) {
-        this.f15224d.f15247f = i10;
+        this.f15204d.f15227f = i10;
         invalidate();
     }
 
@@ -414,7 +414,7 @@ public abstract class a extends ProgressBar {
             if ((gVar2 instanceof j) && q()) {
                 ((j) gVar2).u().g();
             }
-            this.f15232t = false;
+            this.f15212t = false;
         } catch (Throwable th2) {
             throw th2;
         }
@@ -434,19 +434,19 @@ public abstract class a extends ProgressBar {
 
     public void setIndicatorColor(int... iArr) {
         if (iArr.length == 0) {
-            iArr = new int[]{fh.a.b(getContext(), zg.b.f55555l, -1)};
+            iArr = new int[]{gh.a.b(getContext(), ah.b.f650l, -1)};
         }
         if (!Arrays.equals(getIndicatorColor(), iArr)) {
-            this.f15224d.f15244c = iArr;
+            this.f15204d.f15224c = iArr;
             getIndeterminateDrawable().u().c();
             invalidate();
         }
     }
 
     public void setIndicatorTrackGapSize(int i10) {
-        com.google.android.material.progressindicator.b bVar = this.f15224d;
-        if (bVar.f15248g != i10) {
-            bVar.f15248g = i10;
+        com.google.android.material.progressindicator.b bVar = this.f15204d;
+        if (bVar.f15228g != i10) {
+            bVar.f15228g = i10;
             bVar.e();
             invalidate();
         }
@@ -475,30 +475,30 @@ public abstract class a extends ProgressBar {
     }
 
     public void setShowAnimationBehavior(int i10) {
-        this.f15224d.f15246e = i10;
+        this.f15204d.f15226e = i10;
         invalidate();
     }
 
     public void setTrackColor(int i10) {
-        com.google.android.material.progressindicator.b bVar = this.f15224d;
-        if (bVar.f15245d != i10) {
-            bVar.f15245d = i10;
+        com.google.android.material.progressindicator.b bVar = this.f15204d;
+        if (bVar.f15225d != i10) {
+            bVar.f15225d = i10;
             invalidate();
         }
     }
 
     public void setTrackCornerRadius(int i10) {
-        com.google.android.material.progressindicator.b bVar = this.f15224d;
-        if (bVar.f15243b != i10) {
-            bVar.f15243b = Math.min(i10, bVar.f15242a / 2);
+        com.google.android.material.progressindicator.b bVar = this.f15204d;
+        if (bVar.f15223b != i10) {
+            bVar.f15223b = Math.min(i10, bVar.f15222a / 2);
             invalidate();
         }
     }
 
     public void setTrackThickness(int i10) {
-        com.google.android.material.progressindicator.b bVar = this.f15224d;
-        if (bVar.f15242a != i10) {
-            bVar.f15242a = i10;
+        com.google.android.material.progressindicator.b bVar = this.f15204d;
+        if (bVar.f15222a != i10) {
+            bVar.f15222a = i10;
             requestLayout();
         }
     }
@@ -507,7 +507,7 @@ public abstract class a extends ProgressBar {
         if (i10 != 0 && i10 != 4 && i10 != 8) {
             throw new IllegalArgumentException("The component's visibility must be one of VISIBLE, INVISIBLE, and GONE defined in View.");
         }
-        this.f15233u = i10;
+        this.f15213u = i10;
     }
 
     @Override // android.widget.ProgressBar

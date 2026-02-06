@@ -60,7 +60,7 @@ public final class GovernmentIdNfcScan_AttributesJsonAdapter extends h {
     @NotNull
     public GovernmentIdNfcScan.Attributes fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         JsonLogicBoolean jsonLogicBoolean = null;
         JsonLogicBoolean jsonLogicBoolean2 = null;
         String str = null;
@@ -86,10 +86,10 @@ public final class GovernmentIdNfcScan_AttributesJsonAdapter extends h {
         String str19 = null;
         String str20 = null;
         while (reader.hasNext()) {
-            switch (reader.W(this.options)) {
+            switch (reader.J(this.options)) {
                 case -1:
                     reader.E0();
-                    reader.P();
+                    reader.S();
                     break;
                 case 0:
                     jsonLogicBoolean = (JsonLogicBoolean) this.nullableJsonLogicBooleanAdapter.fromJson(reader);
@@ -165,7 +165,7 @@ public final class GovernmentIdNfcScan_AttributesJsonAdapter extends h {
                     break;
             }
         }
-        reader.z();
+        reader.D();
         return new GovernmentIdNfcScan.Attributes(jsonLogicBoolean, jsonLogicBoolean2, str, str2, str3, str4, str5, str6, str7, str8, str9, str10, str11, list, str12, str13, str14, str15, str16, str17, bool, str18, str19, str20);
     }
 
@@ -174,55 +174,55 @@ public final class GovernmentIdNfcScan_AttributesJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (attributes != null) {
             writer.k();
-            writer.W(ViewProps.HIDDEN);
+            writer.J(ViewProps.HIDDEN);
             this.nullableJsonLogicBooleanAdapter.toJson(writer, attributes.getHidden());
-            writer.W("disabled");
+            writer.J("disabled");
             this.nullableJsonLogicBooleanAdapter.toJson(writer, attributes.getDisabled());
-            writer.W("documentNumberLabel");
+            writer.J("documentNumberLabel");
             this.nullableStringAdapter.toJson(writer, attributes.getDocumentNumberLabel());
-            writer.W("prefillCardAccessNumber");
+            writer.J("prefillCardAccessNumber");
             this.nullableStringAdapter.toJson(writer, attributes.getPrefillCardAccessNumber());
-            writer.W("prefillDocumentNumber");
+            writer.J("prefillDocumentNumber");
             this.nullableStringAdapter.toJson(writer, attributes.getPrefillDocumentNumber());
-            writer.W("dateOfBirthLabel");
+            writer.J("dateOfBirthLabel");
             this.nullableStringAdapter.toJson(writer, attributes.getDateOfBirthLabel());
-            writer.W("prefillDateOfBirth");
+            writer.J("prefillDateOfBirth");
             this.nullableStringAdapter.toJson(writer, attributes.getPrefillDateOfBirth());
-            writer.W("cardAccessNumberLabel");
+            writer.J("cardAccessNumberLabel");
             this.nullableStringAdapter.toJson(writer, attributes.getCardAccessNumberLabel());
-            writer.W("expirationDateLabel");
+            writer.J("expirationDateLabel");
             this.nullableStringAdapter.toJson(writer, attributes.getExpirationDateLabel());
-            writer.W("prefillExpirationDate");
+            writer.J("prefillExpirationDate");
             this.nullableStringAdapter.toJson(writer, attributes.getPrefillExpirationDate());
-            writer.W("launchButtonText");
+            writer.J("launchButtonText");
             this.nullableStringAdapter.toJson(writer, attributes.getLaunchButtonText());
-            writer.W("scanDocumentPrompt");
+            writer.J("scanDocumentPrompt");
             this.nullableStringAdapter.toJson(writer, attributes.getScanDocumentPrompt());
-            writer.W("scanDocumentSuccess");
+            writer.J("scanDocumentSuccess");
             this.nullableStringAdapter.toJson(writer, attributes.getScanDocumentSuccess());
-            writer.W("enabledDataGroups");
+            writer.J("enabledDataGroups");
             this.nullableListOfDataGroupTypesAdapter.toJson(writer, attributes.getEnabledDataGroups());
-            writer.W("authenticating");
+            writer.J("authenticating");
             this.nullableStringAdapter.toJson(writer, attributes.getAuthenticating());
-            writer.W("reading");
+            writer.J("reading");
             this.nullableStringAdapter.toJson(writer, attributes.getReading());
-            writer.W("requiredText");
+            writer.J("requiredText");
             this.nullableStringAdapter.toJson(writer, attributes.getRequiredText());
-            writer.W("scanDocumentError");
+            writer.J("scanDocumentError");
             this.nullableStringAdapter.toJson(writer, attributes.getScanDocumentError());
-            writer.W("enableNfcPrompt");
+            writer.J("enableNfcPrompt");
             this.nullableStringAdapter.toJson(writer, attributes.getEnableNfcPrompt());
-            writer.W("authenticationErrorPrompt");
+            writer.J("authenticationErrorPrompt");
             this.nullableStringAdapter.toJson(writer, attributes.getAuthenticationErrorPrompt());
-            writer.W("hidePrefilledInputs");
+            writer.J("hidePrefilledInputs");
             this.nullableBooleanAdapter.toJson(writer, attributes.getHidePrefilledInputs());
-            writer.W("connectionLostPrompt");
+            writer.J("connectionLostPrompt");
             this.nullableStringAdapter.toJson(writer, attributes.getConnectionLostPrompt());
-            writer.W("unsupportedDocumentType");
+            writer.J("unsupportedDocumentType");
             this.nullableStringAdapter.toJson(writer, attributes.getUnsupportedDocumentType());
-            writer.W("retryError");
+            writer.J("retryError");
             this.nullableStringAdapter.toJson(writer, attributes.getRetryError());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

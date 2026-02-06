@@ -5,19 +5,19 @@ import com.google.android.play.core.integrity.c;
 final class n0 extends c.b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f16214a;
+    private final String f16194a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h1 f16215b;
+    private final h1 f16195b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public n0(String str, h1 h1Var) {
-        this.f16214a = str;
-        this.f16215b = h1Var;
+        this.f16194a = str;
+        this.f16195b = h1Var;
     }
 
     @Override // com.google.android.play.core.integrity.c.b
     public final String a() {
-        return this.f16214a;
+        return this.f16194a;
     }
 }

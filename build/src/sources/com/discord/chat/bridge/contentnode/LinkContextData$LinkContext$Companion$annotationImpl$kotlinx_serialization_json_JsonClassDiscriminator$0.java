@@ -5,7 +5,7 @@ import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
 @Metadata(k = 3, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-public /* synthetic */ class LinkContextData$LinkContext$Companion$annotationImpl$kotlinx_serialization_json_JsonClassDiscriminator$0 implements ht.c {
+public /* synthetic */ class LinkContextData$LinkContext$Companion$annotationImpl$kotlinx_serialization_json_JsonClassDiscriminator$0 implements kt.c {
     private final /* synthetic */ String discriminator;
 
     public LinkContextData$LinkContext$Companion$annotationImpl$kotlinx_serialization_json_JsonClassDiscriminator$0(@NotNull String discriminator) {
@@ -15,17 +15,17 @@ public /* synthetic */ class LinkContextData$LinkContext$Companion$annotationImp
 
     @Override // java.lang.annotation.Annotation
     public final /* synthetic */ Class annotationType() {
-        return ht.c.class;
+        return kt.c.class;
     }
 
-    @Override // ht.c
+    @Override // kt.c
     public final /* synthetic */ String discriminator() {
         return this.discriminator;
     }
 
     @Override // java.lang.annotation.Annotation
     public final boolean equals(Object obj) {
-        return (obj instanceof ht.c) && Intrinsics.areEqual(discriminator(), ((ht.c) obj).discriminator());
+        return (obj instanceof kt.c) && Intrinsics.areEqual(discriminator(), ((kt.c) obj).discriminator());
     }
 
     @Override // java.lang.annotation.Annotation

@@ -14,15 +14,15 @@ public abstract class s extends cg.o implements t {
         switch (i10) {
             case 101:
                 cg.p.b(parcel);
-                C((GoogleSignInAccount) cg.p.a(parcel, GoogleSignInAccount.CREATOR), (Status) cg.p.a(parcel, Status.CREATOR));
+                A((GoogleSignInAccount) cg.p.a(parcel, GoogleSignInAccount.CREATOR), (Status) cg.p.a(parcel, Status.CREATOR));
                 break;
             case 102:
                 cg.p.b(parcel);
-                A0((Status) cg.p.a(parcel, Status.CREATOR));
+                C0((Status) cg.p.a(parcel, Status.CREATOR));
                 break;
             case 103:
                 cg.p.b(parcel);
-                u0((Status) cg.p.a(parcel, Status.CREATOR));
+                v0((Status) cg.p.a(parcel, Status.CREATOR));
                 break;
             default:
                 return false;

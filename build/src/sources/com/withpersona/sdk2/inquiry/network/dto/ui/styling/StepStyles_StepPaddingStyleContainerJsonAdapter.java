@@ -41,18 +41,18 @@ public final class StepStyles_StepPaddingStyleContainerJsonAdapter extends h {
     @NotNull
     public StepStyles.StepPaddingStyleContainer fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         StyleElements.SizeSet sizeSet = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 sizeSet = (StyleElements.SizeSet) this.nullableSizeSetAdapter.fromJson(reader);
             }
         }
-        reader.z();
+        reader.D();
         return new StepStyles.StepPaddingStyleContainer(sizeSet);
     }
 
@@ -61,9 +61,9 @@ public final class StepStyles_StepPaddingStyleContainerJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (stepPaddingStyleContainer != null) {
             writer.k();
-            writer.W("base");
+            writer.J("base");
             this.nullableSizeSetAdapter.toJson(writer, stepPaddingStyleContainer.getBase());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

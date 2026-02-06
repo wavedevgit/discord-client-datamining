@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var7;
     var3 = function() {
-        _fun72167: for (var _fun72167_ip = 0;;) switch (_fun72167_ip) {
+        _fun72191: for (var _fun72191_ip = 0;;) switch (_fun72191_ip) {
             case 0:
                 var5 = _closure1_slot0;
                 var2 = _closure1_slot2;
@@ -26,8 +26,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.SwipeRightToLeftMode;
                 var2 = var2.SWIPE_RIGHT_TO_LEFT_UNSET;
                 if (!(var0 === var2)) {
-                    _fun72167_ip = 98;
-                    continue _fun72167
+                    _fun72191_ip = 98;
+                    continue _fun72191
                 }
             case 69:
                 var2 = _closure1_slot0;
@@ -206,7 +206,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var4;
     var2.useSwipeToReplySettingValue = var3;
     var1 = function() {
-        _fun72172: for (var _fun72172_ip = 0;;) switch (_fun72172_ip) {
+        _fun72196: for (var _fun72196_ip = 0;;) switch (_fun72196_ip) {
             case 0:
                 var5 = _closure1_slot0;
                 var2 = _closure1_slot2;
@@ -223,8 +223,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.SwipeRightToLeftMode;
                 var2 = var2.SWIPE_RIGHT_TO_LEFT_UNSET;
                 if (!(var0 === var2)) {
-                    _fun72172_ip = 98;
-                    continue _fun72172
+                    _fun72196_ip = 98;
+                    continue _fun72196
                 }
             case 69:
                 var2 = _closure1_slot0;
@@ -239,4 +239,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getSwipeToReplySettingValue = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7028, 660, 1311, 1234, 795, 1348, 9017, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7033, 660, 1311, 1234, 795, 1348, 9023, 2]);

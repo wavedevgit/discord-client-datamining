@@ -13,25 +13,25 @@ import org.jetbrains.annotations.NotNull;
 public final class FilteredAnnotations implements Annotations {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Annotations f32342d;
+    private final Annotations f32362d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f32343e;
+    private final boolean f32363e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Function1 f32344i;
+    private final Function1 f32364i;
 
     public FilteredAnnotations(@NotNull Annotations delegate, boolean z10, @NotNull Function1<? super FqName, Boolean> fqNameFilter) {
         Intrinsics.checkNotNullParameter(delegate, "delegate");
         Intrinsics.checkNotNullParameter(fqNameFilter, "fqNameFilter");
-        this.f32342d = delegate;
-        this.f32343e = z10;
-        this.f32344i = fqNameFilter;
+        this.f32362d = delegate;
+        this.f32363e = z10;
+        this.f32364i = fqNameFilter;
     }
 
     private final boolean b(AnnotationDescriptor annotationDescriptor) {
         FqName fqName = annotationDescriptor.getFqName();
-        if (fqName != null && ((Boolean) this.f32344i.invoke(fqName)).booleanValue()) {
+        if (fqName != null && ((Boolean) this.f32364i.invoke(fqName)).booleanValue()) {
             return true;
         }
         return false;
@@ -41,8 +41,8 @@ public final class FilteredAnnotations implements Annotations {
     /* renamed from: findAnnotation */
     public AnnotationDescriptor mo1195findAnnotation(@NotNull FqName fqName) {
         Intrinsics.checkNotNullParameter(fqName, "fqName");
-        if (((Boolean) this.f32344i.invoke(fqName)).booleanValue()) {
-            return this.f32342d.mo1195findAnnotation(fqName);
+        if (((Boolean) this.f32364i.invoke(fqName)).booleanValue()) {
+            return this.f32362d.mo1195findAnnotation(fqName);
         }
         return null;
     }
@@ -50,8 +50,8 @@ public final class FilteredAnnotations implements Annotations {
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.annotations.Annotations
     public boolean hasAnnotation(@NotNull FqName fqName) {
         Intrinsics.checkNotNullParameter(fqName, "fqName");
-        if (((Boolean) this.f32344i.invoke(fqName)).booleanValue()) {
-            return this.f32342d.hasAnnotation(fqName);
+        if (((Boolean) this.f32364i.invoke(fqName)).booleanValue()) {
+            return this.f32362d.hasAnnotation(fqName);
         }
         return false;
     }
@@ -59,7 +59,7 @@ public final class FilteredAnnotations implements Annotations {
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.annotations.Annotations
     public boolean isEmpty() {
         boolean z10;
-        Annotations<AnnotationDescriptor> annotations = this.f32342d;
+        Annotations<AnnotationDescriptor> annotations = this.f32362d;
         if (!(annotations instanceof Collection) || !((Collection) annotations).isEmpty()) {
             for (AnnotationDescriptor annotationDescriptor : annotations) {
                 if (b(annotationDescriptor)) {
@@ -69,7 +69,7 @@ public final class FilteredAnnotations implements Annotations {
             }
         }
         z10 = false;
-        if (this.f32343e) {
+        if (this.f32363e) {
             if (!z10) {
                 return true;
             }
@@ -81,7 +81,7 @@ public final class FilteredAnnotations implements Annotations {
     @Override // java.lang.Iterable
     @NotNull
     public Iterator<AnnotationDescriptor> iterator() {
-        Annotations annotations = this.f32342d;
+        Annotations annotations = this.f32362d;
         ArrayList arrayList = new ArrayList();
         for (AnnotationDescriptor annotationDescriptor : annotations) {
             if (b(annotationDescriptor)) {

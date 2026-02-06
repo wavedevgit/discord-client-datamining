@@ -1,43 +1,20 @@
 package j$.time;
-
-import java.util.Objects;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes2.dex */
-public final class l extends k {
+public abstract /* synthetic */ class l {
 
     /* renamed from: a  reason: collision with root package name */
-    public final String f30524a;
+    public static final /* synthetic */ int[] f29499a;
 
-    /* renamed from: b  reason: collision with root package name */
-    public final transient j$.time.zone.c f30525b;
-
-    public static l C(String str) {
-        Objects.requireNonNull(str, "zoneId");
-        int length = str.length();
-        if (length >= 2) {
-            for (int i10 = 0; i10 < length; i10++) {
-                char charAt = str.charAt(i10);
-                if ((charAt < 'a' || charAt > 'z') && ((charAt < 'A' || charAt > 'Z') && ((charAt != '/' || i10 == 0) && ((charAt < '0' || charAt > '9' || i10 == 0) && ((charAt != '~' || i10 == 0) && ((charAt != '.' || i10 == 0) && ((charAt != '_' || i10 == 0) && ((charAt != '+' || i10 == 0) && (charAt != '-' || i10 == 0))))))))) {
-                    throw new DateTimeException("Invalid ID for region-based ZoneId, invalid format: ".concat(str));
-                }
-            }
-            return new l(str, j$.time.zone.e.a(str));
+    static {
+        int[] iArr = new int[j$.time.temporal.a.values().length];
+        f29499a = iArr;
+        try {
+            iArr[j$.time.temporal.a.INSTANT_SECONDS.ordinal()] = 1;
+        } catch (NoSuchFieldError unused) {
         }
-        throw new DateTimeException("Invalid ID for region-based ZoneId, invalid format: ".concat(str));
-    }
-
-    public l(String str, j$.time.zone.c cVar) {
-        this.f30524a = str;
-        this.f30525b = cVar;
-    }
-
-    @Override // j$.time.k
-    public final String r() {
-        return this.f30524a;
-    }
-
-    @Override // j$.time.k
-    public final j$.time.zone.c t() {
-        j$.time.zone.c cVar = this.f30525b;
-        return cVar != null ? cVar : j$.time.zone.e.a(this.f30524a);
+        try {
+            f29499a[j$.time.temporal.a.OFFSET_SECONDS.ordinal()] = 2;
+        } catch (NoSuchFieldError unused2) {
+        }
     }
 }

@@ -8,25 +8,25 @@ import ne.w0;
 public final class c implements com.google.android.exoplayer2.g {
 
     /* renamed from: q  reason: collision with root package name */
-    public static final c f42368q = new c(1, 2, 3, null);
+    public static final c f41591q = new c(1, 2, 3, null);
 
     /* renamed from: r  reason: collision with root package name */
-    public static final c f42369r = new b().c(1).b(1).d(2).a();
+    public static final c f41592r = new b().c(1).b(1).d(2).a();
 
     /* renamed from: s  reason: collision with root package name */
-    private static final String f42370s = w0.B0(0);
+    private static final String f41593s = w0.B0(0);
 
     /* renamed from: t  reason: collision with root package name */
-    private static final String f42371t = w0.B0(1);
+    private static final String f41594t = w0.B0(1);
 
     /* renamed from: u  reason: collision with root package name */
-    private static final String f42372u = w0.B0(2);
+    private static final String f41595u = w0.B0(2);
 
     /* renamed from: v  reason: collision with root package name */
-    private static final String f42373v = w0.B0(3);
+    private static final String f41596v = w0.B0(3);
 
     /* renamed from: w  reason: collision with root package name */
-    public static final g.a f42374w = new g.a() { // from class: oe.b
+    public static final g.a f41597w = new g.a() { // from class: oe.b
         @Override // com.google.android.exoplayer2.g.a
         public final com.google.android.exoplayer2.g a(Bundle bundle) {
             return c.a(bundle);
@@ -34,77 +34,77 @@ public final class c implements com.google.android.exoplayer2.g {
     };
 
     /* renamed from: d  reason: collision with root package name */
-    public final int f42375d;
+    public final int f41598d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final int f42376e;
+    public final int f41599e;
 
     /* renamed from: i  reason: collision with root package name */
-    public final int f42377i;
+    public final int f41600i;
 
     /* renamed from: o  reason: collision with root package name */
-    public final byte[] f42378o;
+    public final byte[] f41601o;
 
     /* renamed from: p  reason: collision with root package name */
-    private int f42379p;
+    private int f41602p;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private int f42380a;
+        private int f41603a;
 
         /* renamed from: b  reason: collision with root package name */
-        private int f42381b;
+        private int f41604b;
 
         /* renamed from: c  reason: collision with root package name */
-        private int f42382c;
+        private int f41605c;
 
         /* renamed from: d  reason: collision with root package name */
-        private byte[] f42383d;
+        private byte[] f41606d;
 
         public c a() {
-            return new c(this.f42380a, this.f42381b, this.f42382c, this.f42383d);
+            return new c(this.f41603a, this.f41604b, this.f41605c, this.f41606d);
         }
 
         public b b(int i10) {
-            this.f42381b = i10;
+            this.f41604b = i10;
             return this;
         }
 
         public b c(int i10) {
-            this.f42380a = i10;
+            this.f41603a = i10;
             return this;
         }
 
         public b d(int i10) {
-            this.f42382c = i10;
+            this.f41605c = i10;
             return this;
         }
 
         public b() {
-            this.f42380a = -1;
-            this.f42381b = -1;
-            this.f42382c = -1;
+            this.f41603a = -1;
+            this.f41604b = -1;
+            this.f41605c = -1;
         }
 
         private b(c cVar) {
-            this.f42380a = cVar.f42375d;
-            this.f42381b = cVar.f42376e;
-            this.f42382c = cVar.f42377i;
-            this.f42383d = cVar.f42378o;
+            this.f41603a = cVar.f41598d;
+            this.f41604b = cVar.f41599e;
+            this.f41605c = cVar.f41600i;
+            this.f41606d = cVar.f41601o;
         }
     }
 
     public c(int i10, int i11, int i12, byte[] bArr) {
-        this.f42375d = i10;
-        this.f42376e = i11;
-        this.f42377i = i12;
-        this.f42378o = bArr;
+        this.f41598d = i10;
+        this.f41599e = i11;
+        this.f41600i = i12;
+        this.f41601o = bArr;
     }
 
     public static /* synthetic */ c a(Bundle bundle) {
-        return new c(bundle.getInt(f42370s, -1), bundle.getInt(f42371t, -1), bundle.getInt(f42372u, -1), bundle.getByteArray(f42373v));
+        return new c(bundle.getInt(f41593s, -1), bundle.getInt(f41594t, -1), bundle.getInt(f41595u, -1), bundle.getByteArray(f41596v));
     }
 
     private static String c(int i10) {
@@ -163,7 +163,7 @@ public final class c implements com.google.android.exoplayer2.g {
 
     public static boolean f(c cVar) {
         if (cVar != null) {
-            int i10 = cVar.f42377i;
+            int i10 = cVar.f41600i;
             if (i10 == 7 || i10 == 6) {
                 return true;
             }
@@ -217,7 +217,7 @@ public final class c implements com.google.android.exoplayer2.g {
         }
         if (obj != null && c.class == obj.getClass()) {
             c cVar = (c) obj;
-            if (this.f42375d == cVar.f42375d && this.f42376e == cVar.f42376e && this.f42377i == cVar.f42377i && Arrays.equals(this.f42378o, cVar.f42378o)) {
+            if (this.f41598d == cVar.f41598d && this.f41599e == cVar.f41599e && this.f41600i == cVar.f41600i && Arrays.equals(this.f41601o, cVar.f41601o)) {
                 return true;
             }
         }
@@ -225,37 +225,37 @@ public final class c implements com.google.android.exoplayer2.g {
     }
 
     public boolean g() {
-        if (this.f42375d != -1 && this.f42376e != -1 && this.f42377i != -1) {
+        if (this.f41598d != -1 && this.f41599e != -1 && this.f41600i != -1) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        if (this.f42379p == 0) {
-            this.f42379p = ((((((527 + this.f42375d) * 31) + this.f42376e) * 31) + this.f42377i) * 31) + Arrays.hashCode(this.f42378o);
+        if (this.f41602p == 0) {
+            this.f41602p = ((((((527 + this.f41598d) * 31) + this.f41599e) * 31) + this.f41600i) * 31) + Arrays.hashCode(this.f41601o);
         }
-        return this.f42379p;
+        return this.f41602p;
     }
 
     public String j() {
         if (!g()) {
             return "NA";
         }
-        return w0.D("%s/%s/%s", d(this.f42375d), c(this.f42376e), e(this.f42377i));
+        return w0.D("%s/%s/%s", d(this.f41598d), c(this.f41599e), e(this.f41600i));
     }
 
     public String toString() {
         boolean z10;
         StringBuilder sb2 = new StringBuilder();
         sb2.append("ColorInfo(");
-        sb2.append(d(this.f42375d));
+        sb2.append(d(this.f41598d));
         sb2.append(", ");
-        sb2.append(c(this.f42376e));
+        sb2.append(c(this.f41599e));
         sb2.append(", ");
-        sb2.append(e(this.f42377i));
+        sb2.append(e(this.f41600i));
         sb2.append(", ");
-        if (this.f42378o != null) {
+        if (this.f41601o != null) {
             z10 = true;
         } else {
             z10 = false;

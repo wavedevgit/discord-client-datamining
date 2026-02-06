@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
     var0 = function() {
-        _fun114237: for (var _fun114237_ip = 0;;) switch (_fun114237_ip) {
+        _fun114267: for (var _fun114267_ip = 0;;) switch (_fun114267_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -28,8 +28,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 72: // try_end0
-                _fun114237_ip = 76;
-                continue _fun114237;
+                _fun114267_ip = 76;
+                continue _fun114267;
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
@@ -84,7 +84,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
         var2 = function arg0() {
-            _fun114241: for (var _fun114241_ip = 0;;) switch (_fun114241_ip) {
+            _fun114271: for (var _fun114271_ip = 0;;) switch (_fun114271_ip) {
                 case 0:
                     var4 = this;
                     var12 = 0;
@@ -104,14 +104,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot8;
                     var0 = var0.bind(var3)();
                     if (var0) {
-                        _fun114241_ip = 86;
-                        continue _fun114241
+                        _fun114271_ip = 86;
+                        continue _fun114271
                     }
                 case 73:
                     var0 = var8.apply;
                     var0 = var0.bind(var8)(var4, var9);
-                    _fun114241_ip = 120;
-                    continue _fun114241;
+                    _fun114271_ip = 120;
+                    continue _fun114271;
                 case 86:
                     var6 = global;
                     var7 = var6.Reflect;
@@ -147,15 +147,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2.LOGOUT = var3;
                     var0.actions = var2;
                     var2 = function() { // Environment: var1
-                        _fun114245: for (var _fun114245_ip = 0;;) switch (_fun114245_ip) {
+                        _fun114275: for (var _fun114275_ip = 0;;) switch (_fun114275_ip) {
                             case 0:
                                 var2 = _closure1_slot7;
                                 var0 = var2.getCurrentUser;
                                 var0 = var0.bind(var2)();
                                 var4 = null;
                                 if (!(var4 == var0)) {
-                                    _fun114245_ip = 58;
-                                    continue _fun114245
+                                    _fun114275_ip = 58;
+                                    continue _fun114275
                                 }
                             case 22:
                                 var5 = _closure1_slot0;
@@ -166,8 +166,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var3 = var5.bind(var2)(var3);
                                 var2 = var3.setCurrentUser;
                                 var2 = var2.bind(var3)(var4, var4);
-                                _fun114245_ip = 102;
-                                continue _fun114245;
+                                _fun114275_ip = 102;
+                                continue _fun114275;
                             case 58:
                                 var3 = _closure1_slot0;
                                 var2 = _closure1_slot1;
@@ -231,4 +231,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7, 6, 15, 17, 18, 1621, 8646, 4299, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7, 6, 15, 17, 18, 1621, 8652, 4300, 2]);

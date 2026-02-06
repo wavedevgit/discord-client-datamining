@@ -1,0 +1,10 @@
+package org.chromium.net;
+
+import java.io.IOException;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+public abstract class CronetException extends IOException {
+    /* JADX INFO: Access modifiers changed from: protected */
+    public CronetException(String str, Throwable th2) {
+        super(str, th2);
+    }
+}

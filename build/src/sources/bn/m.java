@@ -1,74 +1,215 @@
 package bn;
 
-import android.content.Context;
-import android.view.View;
-import android.view.ViewGroup;
-import kotlin.Unit;
-import kotlin.jvm.functions.Function1;
-import kotlin.jvm.functions.Function2;
+import java.util.Map;
+import kotlin.Lazy;
+import kotlin.collections.o0;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
-import kotlin.reflect.KClass;
+import okio.Buffer;
+import okio.BufferedSource;
+import okio.ByteString;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class m implements c0 {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final KClass f6592a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private final int f6593b;
+public final class m {
 
     /* renamed from: c  reason: collision with root package name */
-    private final Function1 f6594c;
+    public static final a f6910c = new a(null);
+
+    /* renamed from: a  reason: collision with root package name */
+    private final Lazy f6911a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private final Lazy f6912b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    static final class a extends Lambda implements Function2 {
+    public static final class a {
+
+        /* JADX INFO: Access modifiers changed from: package-private */
+        /* renamed from: bn.m$a$a  reason: collision with other inner class name */
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+        public static final class C0108a extends Lambda implements Function0 {
+
+            /* renamed from: d  reason: collision with root package name */
+            final /* synthetic */ BufferedSource f6913d;
+
+            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            C0108a(BufferedSource bufferedSource) {
+                super(0);
+                this.f6913d = bufferedSource;
+            }
+
+            @Override // kotlin.jvm.functions.Function0
+            /* renamed from: a */
+            public final Map invoke() {
+                int readInt = this.f6913d.readInt();
+                BufferedSource bufferedSource = this.f6913d;
+                Map d10 = o0.d(readInt);
+                int i10 = 0;
+                while (i10 < readInt) {
+                    i10++;
+                    d10.put(cn.k.f7626c.a(j.a(bufferedSource)), m.f6910c.a(j.a(bufferedSource)));
+                }
+                return o0.b(d10);
+            }
+        }
+
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        public final m a(ByteString bytes) {
+            Intrinsics.checkNotNullParameter(bytes, "bytes");
+            Buffer Z1 = new Buffer().Z1(bytes);
+            return new m(i.f6897c.b(j.a(Z1)), new C0108a(Z1));
+        }
+
+        private a() {
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    static final class b extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ k f6595d;
+        final /* synthetic */ i f6914d;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        a(k kVar) {
-            super(2);
-            this.f6595d = kVar;
+        b(i iVar) {
+            super(0);
+            this.f6914d = iVar;
         }
 
-        public final void a(Object rendering, a0 environment) {
-            Intrinsics.checkNotNullParameter(rendering, "rendering");
-            Intrinsics.checkNotNullParameter(environment, "environment");
-            this.f6595d.a(rendering, environment);
-        }
-
-        @Override // kotlin.jvm.functions.Function2
-        public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
-            a(obj, (a0) obj2);
-            return Unit.f31988a;
+        @Override // kotlin.jvm.functions.Function0
+        /* renamed from: a */
+        public final i invoke() {
+            i iVar = this.f6914d;
+            if (iVar == null || iVar.b().G() == 0) {
+                return null;
+            }
+            return iVar;
         }
     }
 
-    public m(KClass type, int i10, Function1 runnerConstructor) {
-        Intrinsics.checkNotNullParameter(type, "type");
-        Intrinsics.checkNotNullParameter(runnerConstructor, "runnerConstructor");
-        this.f6592a = type;
-        this.f6593b = i10;
-        this.f6594c = runnerConstructor;
+    public m(i iVar, Function0 childTreeSnapshots) {
+        Intrinsics.checkNotNullParameter(childTreeSnapshots, "childTreeSnapshots");
+        qr.o oVar = qr.o.f48045i;
+        this.f6911a = qr.l.b(oVar, new b(iVar));
+        this.f6912b = qr.l.b(oVar, childTreeSnapshots);
     }
 
-    @Override // bn.c0
-    public View a(Object initialRendering, a0 initialViewEnvironment, Context contextForNewView, ViewGroup viewGroup) {
-        Intrinsics.checkNotNullParameter(initialRendering, "initialRendering");
-        Intrinsics.checkNotNullParameter(initialViewEnvironment, "initialViewEnvironment");
-        Intrinsics.checkNotNullParameter(contextForNewView, "contextForNewView");
-        View view = l.a(contextForNewView, viewGroup).inflate(this.f6593b, viewGroup, false);
-        Function1 function1 = this.f6594c;
-        Intrinsics.checkNotNullExpressionValue(view, "view");
-        g0.a(view, initialRendering, initialViewEnvironment, new a((k) function1.invoke(view)));
-        Intrinsics.checkNotNullExpressionValue(view, "contextForNewView.viewBi…onment)\n        }\n      }");
-        return view;
+    public final Map a() {
+        return (Map) this.f6912b.getValue();
     }
 
-    @Override // bn.c0
-    public KClass getType() {
-        return this.f6592a;
+    public final i b() {
+        return (i) this.f6911a.getValue();
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:29:0x0060 A[SYNTHETIC] */
+    /* JADX WARN: Removed duplicated region for block: B:32:0x002a A[SYNTHETIC] */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public final okio.ByteString c() {
+        /*
+            r7 = this;
+            okio.Buffer r0 = new okio.Buffer
+            r0.<init>()
+            bn.i r1 = r7.b()
+            r2 = 0
+            if (r1 != 0) goto Le
+            r1 = r2
+            goto L12
+        Le:
+            okio.ByteString r1 = r1.b()
+        L12:
+            if (r1 != 0) goto L16
+            okio.ByteString r1 = okio.ByteString.f43167p
+        L16:
+            bn.j.c(r0, r1)
+            java.util.Map r1 = r7.a()
+            java.util.ArrayList r3 = new java.util.ArrayList
+            r3.<init>()
+            java.util.Set r1 = r1.entrySet()
+            java.util.Iterator r1 = r1.iterator()
+        L2a:
+            boolean r4 = r1.hasNext()
+            if (r4 == 0) goto L64
+            java.lang.Object r4 = r1.next()
+            java.util.Map$Entry r4 = (java.util.Map.Entry) r4
+            java.lang.Object r5 = r4.getKey()
+            cn.k r5 = (cn.k) r5
+            java.lang.Object r4 = r4.getValue()
+            bn.m r4 = (bn.m) r4
+            okio.ByteString r5 = r5.d()
+            if (r5 != 0) goto L4a
+        L48:
+            r6 = r2
+            goto L5d
+        L4a:
+            okio.ByteString r4 = r4.c()
+            int r6 = r4.G()
+            if (r6 != 0) goto L55
+            r4 = r2
+        L55:
+            if (r4 != 0) goto L58
+            goto L48
+        L58:
+            kotlin.Pair r6 = new kotlin.Pair
+            r6.<init>(r5, r4)
+        L5d:
+            if (r6 != 0) goto L60
+            goto L2a
+        L60:
+            r3.add(r6)
+            goto L2a
+        L64:
+            int r1 = r3.size()
+            r0.writeInt(r1)
+            java.util.Iterator r1 = r3.iterator()
+        L6f:
+            boolean r2 = r1.hasNext()
+            if (r2 == 0) goto L8e
+            java.lang.Object r2 = r1.next()
+            kotlin.Pair r2 = (kotlin.Pair) r2
+            java.lang.Object r3 = r2.a()
+            okio.ByteString r3 = (okio.ByteString) r3
+            java.lang.Object r2 = r2.b()
+            okio.ByteString r2 = (okio.ByteString) r2
+            bn.j.c(r0, r3)
+            bn.j.c(r0, r2)
+            goto L6f
+        L8e:
+            okio.ByteString r0 = r0.K1()
+            return r0
+        */
+        throw new UnsupportedOperationException("Method not decompiled: bn.m.c():okio.ByteString");
+    }
+
+    public boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
+        }
+        if (!(obj instanceof m)) {
+            return false;
+        }
+        m mVar = (m) obj;
+        if (Intrinsics.areEqual(mVar.b(), b()) && Intrinsics.areEqual(mVar.a(), a())) {
+            return true;
+        }
+        return false;
+    }
+
+    public int hashCode() {
+        int hashCode;
+        i b10 = b();
+        if (b10 == null) {
+            hashCode = 0;
+        } else {
+            hashCode = b10.hashCode();
+        }
+        return (hashCode * 31) + a().hashCode();
     }
 }

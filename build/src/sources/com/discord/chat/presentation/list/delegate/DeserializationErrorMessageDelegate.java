@@ -57,7 +57,7 @@ public final class DeserializationErrorMessageDelegate extends BaseChatListItemD
         }
         baseChatListAdapter.setItems(arrayList);
         baseChatListAdapter.notifyItemChanged(bindingAdapterPosition);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     @Override // com.discord.chat.presentation.list.delegate.BaseChatListItemDelegate

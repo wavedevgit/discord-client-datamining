@@ -10,31 +10,31 @@ import l1.o;
 public class d {
 
     /* renamed from: b  reason: collision with root package name */
-    private int f2464b;
+    private int f2793b;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f2465c;
+    private boolean f2794c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final ConstraintWidget f2466d;
+    public final ConstraintWidget f2795d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final a f2467e;
+    public final a f2796e;
 
     /* renamed from: f  reason: collision with root package name */
-    public d f2468f;
+    public d f2797f;
 
     /* renamed from: i  reason: collision with root package name */
-    h1.h f2471i;
+    h1.h f2800i;
 
     /* renamed from: a  reason: collision with root package name */
-    private HashSet f2463a = null;
+    private HashSet f2792a = null;
 
     /* renamed from: g  reason: collision with root package name */
-    public int f2469g = 0;
+    public int f2798g = 0;
 
     /* renamed from: h  reason: collision with root package name */
-    int f2470h = Integer.MIN_VALUE;
+    int f2799h = Integer.MIN_VALUE;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public enum a {
@@ -50,8 +50,8 @@ public class d {
     }
 
     public d(ConstraintWidget constraintWidget, a aVar) {
-        this.f2466d = constraintWidget;
-        this.f2467e = aVar;
+        this.f2795d = constraintWidget;
+        this.f2796e = aVar;
     }
 
     public boolean a(d dVar, int i10) {
@@ -65,54 +65,54 @@ public class d {
         } else if (!z10 && !p(dVar)) {
             return false;
         } else {
-            this.f2468f = dVar;
-            if (dVar.f2463a == null) {
-                dVar.f2463a = new HashSet();
+            this.f2797f = dVar;
+            if (dVar.f2792a == null) {
+                dVar.f2792a = new HashSet();
             }
-            HashSet hashSet = this.f2468f.f2463a;
+            HashSet hashSet = this.f2797f.f2792a;
             if (hashSet != null) {
                 hashSet.add(this);
             }
-            this.f2469g = i10;
-            this.f2470h = i11;
+            this.f2798g = i10;
+            this.f2799h = i11;
             return true;
         }
     }
 
     public void c(int i10, ArrayList arrayList, o oVar) {
-        HashSet hashSet = this.f2463a;
+        HashSet hashSet = this.f2792a;
         if (hashSet != null) {
             Iterator it = hashSet.iterator();
             while (it.hasNext()) {
-                i.a(((d) it.next()).f2466d, i10, arrayList, oVar);
+                i.a(((d) it.next()).f2795d, i10, arrayList, oVar);
             }
         }
     }
 
     public HashSet d() {
-        return this.f2463a;
+        return this.f2792a;
     }
 
     public int e() {
-        if (!this.f2465c) {
+        if (!this.f2794c) {
             return 0;
         }
-        return this.f2464b;
+        return this.f2793b;
     }
 
     public int f() {
         d dVar;
-        if (this.f2466d.V() == 8) {
+        if (this.f2795d.V() == 8) {
             return 0;
         }
-        if (this.f2470h != Integer.MIN_VALUE && (dVar = this.f2468f) != null && dVar.f2466d.V() == 8) {
-            return this.f2470h;
+        if (this.f2799h != Integer.MIN_VALUE && (dVar = this.f2797f) != null && dVar.f2795d.V() == 8) {
+            return this.f2799h;
         }
-        return this.f2469g;
+        return this.f2798g;
     }
 
     public final d g() {
-        switch (this.f2467e.ordinal()) {
+        switch (this.f2796e.ordinal()) {
             case 0:
             case 5:
             case 6:
@@ -120,36 +120,36 @@ public class d {
             case 8:
                 return null;
             case 1:
-                return this.f2466d.Q;
+                return this.f2795d.Q;
             case 2:
-                return this.f2466d.R;
+                return this.f2795d.R;
             case 3:
-                return this.f2466d.O;
+                return this.f2795d.O;
             case 4:
-                return this.f2466d.P;
+                return this.f2795d.P;
             default:
-                throw new AssertionError(this.f2467e.name());
+                throw new AssertionError(this.f2796e.name());
         }
     }
 
     public ConstraintWidget h() {
-        return this.f2466d;
+        return this.f2795d;
     }
 
     public h1.h i() {
-        return this.f2471i;
+        return this.f2800i;
     }
 
     public d j() {
-        return this.f2468f;
+        return this.f2797f;
     }
 
     public a k() {
-        return this.f2467e;
+        return this.f2796e;
     }
 
     public boolean l() {
-        HashSet hashSet = this.f2463a;
+        HashSet hashSet = this.f2792a;
         if (hashSet == null) {
             return false;
         }
@@ -163,7 +163,7 @@ public class d {
     }
 
     public boolean m() {
-        HashSet hashSet = this.f2463a;
+        HashSet hashSet = this.f2792a;
         if (hashSet == null || hashSet.size() <= 0) {
             return false;
         }
@@ -171,11 +171,11 @@ public class d {
     }
 
     public boolean n() {
-        return this.f2465c;
+        return this.f2794c;
     }
 
     public boolean o() {
-        if (this.f2468f != null) {
+        if (this.f2797f != null) {
             return true;
         }
         return false;
@@ -188,7 +188,7 @@ public class d {
             return false;
         }
         a k10 = dVar.k();
-        a aVar = this.f2467e;
+        a aVar = this.f2796e;
         if (k10 != aVar) {
             switch (aVar.ordinal()) {
                 case 0:
@@ -234,7 +234,7 @@ public class d {
                     }
                     return true;
                 default:
-                    throw new AssertionError(this.f2467e.name());
+                    throw new AssertionError(this.f2796e.name());
             }
         } else if (aVar == a.BASELINE && (!dVar.h().Z() || !h().Z())) {
             return false;
@@ -245,47 +245,47 @@ public class d {
 
     public void q() {
         HashSet hashSet;
-        d dVar = this.f2468f;
-        if (dVar != null && (hashSet = dVar.f2463a) != null) {
+        d dVar = this.f2797f;
+        if (dVar != null && (hashSet = dVar.f2792a) != null) {
             hashSet.remove(this);
-            if (this.f2468f.f2463a.size() == 0) {
-                this.f2468f.f2463a = null;
+            if (this.f2797f.f2792a.size() == 0) {
+                this.f2797f.f2792a = null;
             }
         }
-        this.f2463a = null;
-        this.f2468f = null;
-        this.f2469g = 0;
-        this.f2470h = Integer.MIN_VALUE;
-        this.f2465c = false;
-        this.f2464b = 0;
+        this.f2792a = null;
+        this.f2797f = null;
+        this.f2798g = 0;
+        this.f2799h = Integer.MIN_VALUE;
+        this.f2794c = false;
+        this.f2793b = 0;
     }
 
     public void r() {
-        this.f2465c = false;
-        this.f2464b = 0;
+        this.f2794c = false;
+        this.f2793b = 0;
     }
 
     public void s(h1.c cVar) {
-        h1.h hVar = this.f2471i;
+        h1.h hVar = this.f2800i;
         if (hVar == null) {
-            this.f2471i = new h1.h(h.a.UNRESTRICTED, null);
+            this.f2800i = new h1.h(h.a.UNRESTRICTED, null);
         } else {
             hVar.g();
         }
     }
 
     public void t(int i10) {
-        this.f2464b = i10;
-        this.f2465c = true;
+        this.f2793b = i10;
+        this.f2794c = true;
     }
 
     public String toString() {
-        return this.f2466d.t() + ":" + this.f2467e.toString();
+        return this.f2795d.t() + ":" + this.f2796e.toString();
     }
 
     public void u(int i10) {
         if (o()) {
-            this.f2470h = i10;
+            this.f2799h = i10;
         }
     }
 }

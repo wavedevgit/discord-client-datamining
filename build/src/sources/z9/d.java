@@ -11,10 +11,10 @@ import z9.b;
 public class d extends z9.a {
 
     /* renamed from: o  reason: collision with root package name */
-    public static final a f55198o = new a(null);
+    public static final a f55929o = new a(null);
 
     /* renamed from: i  reason: collision with root package name */
-    private final List f55199i = new ArrayList(2);
+    private final List f55930i = new ArrayList(2);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
@@ -26,25 +26,15 @@ public class d extends z9.a {
         }
     }
 
-    public final synchronized void E(b listener) {
-        Intrinsics.checkNotNullParameter(listener, "listener");
-        this.f55199i.add(listener);
-    }
-
-    public final synchronized void F(b listener) {
-        Intrinsics.checkNotNullParameter(listener, "listener");
-        this.f55199i.remove(listener);
-    }
-
     @Override // z9.a, z9.b
     public void a(String id2, Object obj, b.a aVar) {
         Intrinsics.checkNotNullParameter(id2, "id");
-        int size = this.f55199i.size();
+        int size = this.f55930i.size();
         for (int i10 = 0; i10 < size; i10++) {
             try {
                 try {
-                    ((b) this.f55199i.get(i10)).a(id2, obj, aVar);
-                    Unit unit = Unit.f31988a;
+                    ((b) this.f55930i.get(i10)).a(id2, obj, aVar);
+                    Unit unit = Unit.f32008a;
                 } catch (Exception e10) {
                     Log.e("FwdControllerListener2", "InternalListener exception in onFinalImageSet", e10);
                 }
@@ -55,14 +45,14 @@ public class d extends z9.a {
     }
 
     @Override // z9.a, z9.b
-    public void h(String id2, Throwable th2, b.a aVar) {
+    public void g(String id2, Throwable th2, b.a aVar) {
         Intrinsics.checkNotNullParameter(id2, "id");
-        int size = this.f55199i.size();
+        int size = this.f55930i.size();
         for (int i10 = 0; i10 < size; i10++) {
             try {
                 try {
-                    ((b) this.f55199i.get(i10)).h(id2, th2, aVar);
-                    Unit unit = Unit.f31988a;
+                    ((b) this.f55930i.get(i10)).g(id2, th2, aVar);
+                    Unit unit = Unit.f32008a;
                 } catch (Exception e10) {
                     Log.e("FwdControllerListener2", "InternalListener exception in onFailure", e10);
                 }
@@ -75,12 +65,12 @@ public class d extends z9.a {
     @Override // z9.a, z9.b
     public void k(String id2) {
         Intrinsics.checkNotNullParameter(id2, "id");
-        int size = this.f55199i.size();
+        int size = this.f55930i.size();
         for (int i10 = 0; i10 < size; i10++) {
             try {
                 try {
-                    ((b) this.f55199i.get(i10)).k(id2);
-                    Unit unit = Unit.f31988a;
+                    ((b) this.f55930i.get(i10)).k(id2);
+                    Unit unit = Unit.f32008a;
                 } catch (Exception e10) {
                     Log.e("FwdControllerListener2", "InternalListener exception in onIntermediateImageFailed", e10);
                 }
@@ -91,14 +81,14 @@ public class d extends z9.a {
     }
 
     @Override // z9.a, z9.b
-    public void o(String id2, b.a aVar) {
+    public void n(String id2, b.a aVar) {
         Intrinsics.checkNotNullParameter(id2, "id");
-        int size = this.f55199i.size();
+        int size = this.f55930i.size();
         for (int i10 = 0; i10 < size; i10++) {
             try {
                 try {
-                    ((b) this.f55199i.get(i10)).o(id2, aVar);
-                    Unit unit = Unit.f31988a;
+                    ((b) this.f55930i.get(i10)).n(id2, aVar);
+                    Unit unit = Unit.f32008a;
                 } catch (Exception e10) {
                     Log.e("FwdControllerListener2", "InternalListener exception in onRelease", e10);
                 }
@@ -111,12 +101,12 @@ public class d extends z9.a {
     @Override // z9.a, z9.b
     public void onIntermediateImageSet(String id2, Object obj) {
         Intrinsics.checkNotNullParameter(id2, "id");
-        int size = this.f55199i.size();
+        int size = this.f55930i.size();
         for (int i10 = 0; i10 < size; i10++) {
             try {
                 try {
-                    ((b) this.f55199i.get(i10)).onIntermediateImageSet(id2, obj);
-                    Unit unit = Unit.f31988a;
+                    ((b) this.f55930i.get(i10)).onIntermediateImageSet(id2, obj);
+                    Unit unit = Unit.f32008a;
                 } catch (Exception e10) {
                     Log.e("FwdControllerListener2", "InternalListener exception in onIntermediateImageSet", e10);
                 }
@@ -127,14 +117,14 @@ public class d extends z9.a {
     }
 
     @Override // z9.a, z9.b
-    public void y(String id2, Object obj, b.a aVar) {
+    public void p(String id2, Object obj, b.a aVar) {
         Intrinsics.checkNotNullParameter(id2, "id");
-        int size = this.f55199i.size();
+        int size = this.f55930i.size();
         for (int i10 = 0; i10 < size; i10++) {
             try {
                 try {
-                    ((b) this.f55199i.get(i10)).y(id2, obj, aVar);
-                    Unit unit = Unit.f31988a;
+                    ((b) this.f55930i.get(i10)).p(id2, obj, aVar);
+                    Unit unit = Unit.f32008a;
                 } catch (Exception e10) {
                     Log.e("FwdControllerListener2", "InternalListener exception in onSubmit", e10);
                 }
@@ -142,5 +132,15 @@ public class d extends z9.a {
                 return;
             }
         }
+    }
+
+    public final synchronized void s(b listener) {
+        Intrinsics.checkNotNullParameter(listener, "listener");
+        this.f55930i.add(listener);
+    }
+
+    public final synchronized void y(b listener) {
+        Intrinsics.checkNotNullParameter(listener, "listener");
+        this.f55930i.remove(listener);
     }
 }

@@ -1,61 +1,70 @@
 package qg;
 
-import android.content.Context;
-import android.content.ServiceConnection;
-import android.os.IInterface;
-import java.util.Objects;
-import java.util.concurrent.atomic.AtomicInteger;
-/* JADX INFO: Access modifiers changed from: package-private */
+import java.util.Collection;
+import java.util.ConcurrentModificationException;
+import java.util.Iterator;
+import java.util.List;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class i extends e {
+class i implements Iterator {
+
+    /* renamed from: d  reason: collision with root package name */
+    final Iterator f47088d;
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ o f47887e;
+    final Collection f47089e;
+
+    /* renamed from: i  reason: collision with root package name */
+    final /* synthetic */ j f47090i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public i(o oVar) {
-        Objects.requireNonNull(oVar);
-        this.f47887e = oVar;
+    public i(j jVar, Iterator it) {
+        this.f47090i = jVar;
+        this.f47089e = jVar.f47139e;
+        this.f47088d = it;
     }
 
-    @Override // qg.e
-    public final void b() {
-        Object obj;
-        AtomicInteger atomicInteger;
-        IInterface iInterface;
-        d dVar;
-        Context context;
-        ServiceConnection serviceConnection;
-        AtomicInteger atomicInteger2;
-        d dVar2;
-        o oVar = this.f47887e;
-        obj = oVar.f47898f;
-        synchronized (obj) {
-            try {
-                atomicInteger = oVar.f47903k;
-                if (atomicInteger.get() > 0) {
-                    atomicInteger2 = oVar.f47903k;
-                    if (atomicInteger2.decrementAndGet() > 0) {
-                        dVar2 = oVar.f47894b;
-                        dVar2.c("Leaving the connection open for other ongoing calls.", new Object[0]);
-                        return;
-                    }
-                }
-                iInterface = oVar.f47905m;
-                if (iInterface != null) {
-                    dVar = oVar.f47894b;
-                    dVar.c("Unbind from service.", new Object[0]);
-                    context = oVar.f47893a;
-                    serviceConnection = oVar.f47904l;
-                    context.unbindService(serviceConnection);
-                    oVar.f47899g = false;
-                    oVar.f47905m = null;
-                    oVar.f47904l = null;
-                }
-                oVar.w();
-            } catch (Throwable th2) {
-                throw th2;
-            }
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public final void a() {
+        this.f47090i.zzb();
+        if (this.f47090i.f47139e == this.f47089e) {
+            return;
         }
+        throw new ConcurrentModificationException();
+    }
+
+    @Override // java.util.Iterator
+    public final boolean hasNext() {
+        a();
+        return this.f47088d.hasNext();
+    }
+
+    @Override // java.util.Iterator
+    public final Object next() {
+        a();
+        return this.f47088d.next();
+    }
+
+    @Override // java.util.Iterator
+    public final void remove() {
+        int i10;
+        this.f47088d.remove();
+        m mVar = this.f47090i.f47142p;
+        i10 = mVar.f47375o;
+        mVar.f47375o = i10 - 1;
+        this.f47090i.c();
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public i(j jVar) {
+        Iterator it;
+        this.f47090i = jVar;
+        Collection collection = jVar.f47139e;
+        this.f47089e = collection;
+        if (collection instanceof List) {
+            it = ((List) collection).listIterator();
+        } else {
+            it = collection.iterator();
+        }
+        this.f47088d = it;
     }
 }

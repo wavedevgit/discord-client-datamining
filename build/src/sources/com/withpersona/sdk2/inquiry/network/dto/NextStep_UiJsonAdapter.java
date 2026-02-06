@@ -54,44 +54,44 @@ public final class NextStep_UiJsonAdapter extends h {
     @NotNull
     public NextStep.Ui fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         String str = null;
         NextStep.Ui.Config config = null;
         StepStyles.UiStepStyle uiStepStyle = null;
         int i10 = -1;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 str = (String) this.stringAdapter.fromJson(reader);
                 if (str == null) {
-                    throw ym.c.x(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
+                    throw an.c.x(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
                 }
-            } else if (W == 1) {
+            } else if (J == 1) {
                 config = (NextStep.Ui.Config) this.configAdapter.fromJson(reader);
                 if (config == null) {
-                    throw ym.c.x("config", "config", reader);
+                    throw an.c.x("config", "config", reader);
                 }
-            } else if (W == 2) {
+            } else if (J == 2) {
                 uiStepStyle = (StepStyles.UiStepStyle) this.nullableUiStepStyleAdapter.fromJson(reader);
                 i10 = -5;
             }
         }
-        reader.z();
+        reader.D();
         if (i10 == -5) {
             if (str != null) {
                 if (config != null) {
                     return new NextStep.Ui(str, config, uiStepStyle);
                 }
-                throw ym.c.o("config", "config", reader);
+                throw an.c.o("config", "config", reader);
             }
-            throw ym.c.o(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
+            throw an.c.o(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
         }
         Constructor<NextStep.Ui> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = NextStep.Ui.class.getDeclaredConstructor(String.class, NextStep.Ui.Config.class, StepStyles.UiStepStyle.class, Integer.TYPE, ym.c.f54853c);
+            constructor = NextStep.Ui.class.getDeclaredConstructor(String.class, NextStep.Ui.Config.class, StepStyles.UiStepStyle.class, Integer.TYPE, an.c.f1164c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -101,9 +101,9 @@ public final class NextStep_UiJsonAdapter extends h {
                 Intrinsics.checkNotNullExpressionValue(newInstance, "newInstance(...)");
                 return newInstance;
             }
-            throw ym.c.o("config", "config", reader);
+            throw an.c.o("config", "config", reader);
         }
-        throw ym.c.o(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
+        throw an.c.o(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -111,13 +111,13 @@ public final class NextStep_UiJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (ui2 != null) {
             writer.k();
-            writer.W(StackTraceHelper.NAME_KEY);
+            writer.J(StackTraceHelper.NAME_KEY);
             this.stringAdapter.toJson(writer, ui2.getName());
-            writer.W("config");
+            writer.J("config");
             this.configAdapter.toJson(writer, ui2.getConfig());
-            writer.W("styles");
+            writer.J("styles");
             this.nullableUiStepStyleAdapter.toJson(writer, ui2.getStyles());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

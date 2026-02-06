@@ -103,7 +103,7 @@ public final class AnimatedImageStateManager<T> {
     public static final Unit updateWorker$lambda$5(AnimatedImageStateManager stateManager) {
         Intrinsics.checkNotNullParameter(stateManager, "stateManager");
         stateManager.reload();
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     public final void onAttachedToWindow() {

@@ -3,26 +3,26 @@ package qd;
 public final class c implements b0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final tc.p f47600a;
+    private final tc.p f46648a;
 
     /* renamed from: b  reason: collision with root package name */
-    private tc.k f47601b;
+    private tc.k f46649b;
 
     /* renamed from: c  reason: collision with root package name */
-    private tc.l f47602c;
+    private tc.l f46650c;
 
     public c(tc.p pVar) {
-        this.f47600a = pVar;
+        this.f46648a = pVar;
     }
 
     @Override // qd.b0
     public void a(long j10, long j11) {
-        ((tc.k) ne.a.e(this.f47601b)).a(j10, j11);
+        ((tc.k) ne.a.e(this.f46649b)).a(j10, j11);
     }
 
     @Override // qd.b0
     public void b() {
-        tc.k kVar = this.f47601b;
+        tc.k kVar = this.f46649b;
         if (kVar instanceof ad.f) {
             ((ad.f) kVar).j();
         }
@@ -30,12 +30,12 @@ public final class c implements b0 {
 
     @Override // qd.b0
     public int c(tc.y yVar) {
-        return ((tc.k) ne.a.e(this.f47601b)).d((tc.l) ne.a.e(this.f47602c), yVar);
+        return ((tc.k) ne.a.e(this.f46649b)).d((tc.l) ne.a.e(this.f46650c), yVar);
     }
 
     @Override // qd.b0
     public long d() {
-        tc.l lVar = this.f47602c;
+        tc.l lVar = this.f46650c;
         if (lVar != null) {
             return lVar.getPosition();
         }
@@ -64,19 +64,19 @@ public final class c implements b0 {
             r3 = r11
             r5 = r13
             r1.<init>(r2, r3, r5)
-            r7.f47602c = r1
-            tc.k r8 = r7.f47601b
+            r7.f46650c = r1
+            tc.k r8 = r7.f46649b
             if (r8 == 0) goto Lf
             return
         Lf:
-            tc.p r8 = r7.f47600a
+            tc.p r8 = r7.f46648a
             tc.k[] r8 = r8.a(r9, r10)
             int r10 = r8.length
             r11 = 0
             r12 = 1
             if (r10 != r12) goto L1f
             r8 = r8[r11]
-            r7.f47601b = r8
+            r7.f46649b = r8
             goto L76
         L1f:
             int r10 = r8.length
@@ -86,7 +86,7 @@ public final class c implements b0 {
             r14 = r8[r13]
             boolean r0 = r14.f(r1)     // Catch: java.lang.Throwable -> L34 java.io.EOFException -> L62
             if (r0 == 0) goto L37
-            r7.f47601b = r14     // Catch: java.lang.Throwable -> L34 java.io.EOFException -> L62
+            r7.f46649b = r14     // Catch: java.lang.Throwable -> L34 java.io.EOFException -> L62
             ne.a.g(r12)
             r1.e()
             goto L72
@@ -95,7 +95,7 @@ public final class c implements b0 {
             r8 = r0
             goto L4e
         L37:
-            tc.k r14 = r7.f47601b
+            tc.k r14 = r7.f46649b
             if (r14 != 0) goto L46
             long r5 = r1.getPosition()
             int r14 = (r5 > r3 ? 1 : (r5 == r3 ? 0 : -1))
@@ -111,7 +111,7 @@ public final class c implements b0 {
             r1.e()
             goto L6f
         L4e:
-            tc.k r9 = r7.f47601b
+            tc.k r9 = r7.f46649b
             if (r9 != 0) goto L5a
             long r9 = r1.getPosition()
             int r9 = (r9 > r3 ? 1 : (r9 == r3 ? 0 : -1))
@@ -123,7 +123,7 @@ public final class c implements b0 {
             r1.e()
             throw r8
         L62:
-            tc.k r14 = r7.f47601b
+            tc.k r14 = r7.f46649b
             if (r14 != 0) goto L46
             long r5 = r1.getPosition()
             int r14 = (r5 > r3 ? 1 : (r5 == r3 ? 0 : -1))
@@ -133,10 +133,10 @@ public final class c implements b0 {
             int r13 = r13 + 1
             goto L21
         L72:
-            tc.k r10 = r7.f47601b
+            tc.k r10 = r7.f46649b
             if (r10 == 0) goto L7c
         L76:
-            tc.k r8 = r7.f47601b
+            tc.k r8 = r7.f46649b
             r8.c(r15)
             return
         L7c:
@@ -160,11 +160,11 @@ public final class c implements b0 {
 
     @Override // qd.b0
     public void release() {
-        tc.k kVar = this.f47601b;
+        tc.k kVar = this.f46649b;
         if (kVar != null) {
             kVar.release();
-            this.f47601b = null;
+            this.f46649b = null;
         }
-        this.f47602c = null;
+        this.f46650c = null;
     }
 }

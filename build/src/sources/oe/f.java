@@ -9,42 +9,42 @@ import ne.h0;
 public final class f {
 
     /* renamed from: a  reason: collision with root package name */
-    public final List f42401a;
+    public final List f41624a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final int f42402b;
+    public final int f41625b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final int f42403c;
+    public final int f41626c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final int f42404d;
+    public final int f41627d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final int f42405e;
+    public final int f41628e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final int f42406f;
+    public final int f41629f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final int f42407g;
+    public final int f41630g;
 
     /* renamed from: h  reason: collision with root package name */
-    public final float f42408h;
+    public final float f41631h;
 
     /* renamed from: i  reason: collision with root package name */
-    public final String f42409i;
+    public final String f41632i;
 
     private f(List list, int i10, int i11, int i12, int i13, int i14, int i15, float f10, String str) {
-        this.f42401a = list;
-        this.f42402b = i10;
-        this.f42403c = i11;
-        this.f42404d = i12;
-        this.f42405e = i13;
-        this.f42406f = i14;
-        this.f42407g = i15;
-        this.f42408h = f10;
-        this.f42409i = str;
+        this.f41624a = list;
+        this.f41625b = i10;
+        this.f41626c = i11;
+        this.f41627d = i12;
+        this.f41628e = i13;
+        this.f41629f = i14;
+        this.f41630g = i15;
+        this.f41631h = f10;
+        this.f41632i = str;
     }
 
     public static f a(h0 h0Var) {
@@ -91,21 +91,21 @@ public final class f {
                 while (i22 < N3) {
                     int N4 = h0Var.N();
                     boolean z11 = z10;
-                    byte[] bArr2 = d0.f39510a;
+                    byte[] bArr2 = d0.f38865a;
                     int i23 = H;
                     System.arraycopy(bArr2, i11, bArr, i21, bArr2.length);
                     int length = i21 + bArr2.length;
                     System.arraycopy(h0Var.e(), h0Var.f(), bArr, length, N4);
                     if (H3 == 33 && i22 == 0) {
                         d0.a h10 = d0.h(bArr, length, length + N4);
-                        i15 = h10.f39524k;
-                        i16 = h10.f39525l;
-                        i17 = h10.f39527n;
-                        int i24 = h10.f39528o;
-                        int i25 = h10.f39529p;
+                        i15 = h10.f38879k;
+                        i16 = h10.f38880l;
+                        i17 = h10.f38882n;
+                        int i24 = h10.f38883o;
+                        int i25 = h10.f38884p;
                         i10 = H2;
-                        float f12 = h10.f39526m;
-                        str = ne.f.c(h10.f39514a, h10.f39515b, h10.f39516c, h10.f39517d, h10.f39521h, h10.f39522i);
+                        float f12 = h10.f38881m;
+                        str = ne.f.c(h10.f38869a, h10.f38870b, h10.f38871c, h10.f38872d, h10.f38876h, h10.f38877i);
                         i19 = i25;
                         f11 = f12;
                         i18 = i24;

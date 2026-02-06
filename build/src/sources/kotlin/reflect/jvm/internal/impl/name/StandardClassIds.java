@@ -61,239 +61,239 @@ public final class StandardClassIds {
     private static final ClassId Z;
 
     /* renamed from: a  reason: collision with root package name */
-    private static final FqName f33819a;
+    private static final FqName f33839a;
 
     /* renamed from: a0  reason: collision with root package name */
-    private static final ClassId f33820a0;
+    private static final ClassId f33840a0;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final FqName f33821b;
+    private static final FqName f33841b;
 
     /* renamed from: b0  reason: collision with root package name */
-    private static final ClassId f33822b0;
+    private static final ClassId f33842b0;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final FqName f33823c;
+    private static final FqName f33843c;
 
     /* renamed from: c0  reason: collision with root package name */
-    private static final ClassId f33824c0;
+    private static final ClassId f33844c0;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final FqName f33825d;
+    private static final FqName f33845d;
 
     /* renamed from: d0  reason: collision with root package name */
-    private static final ClassId f33826d0;
+    private static final ClassId f33846d0;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final FqName f33827e;
+    private static final FqName f33847e;
 
     /* renamed from: e0  reason: collision with root package name */
-    private static final ClassId f33828e0;
+    private static final ClassId f33848e0;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final FqName f33829f;
+    private static final FqName f33849f;
 
     /* renamed from: f0  reason: collision with root package name */
-    private static final ClassId f33830f0;
+    private static final ClassId f33850f0;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final FqName f33831g;
+    private static final FqName f33851g;
 
     /* renamed from: g0  reason: collision with root package name */
-    private static final ClassId f33832g0;
+    private static final ClassId f33852g0;
 
     /* renamed from: h  reason: collision with root package name */
-    private static final FqName f33833h;
+    private static final FqName f33853h;
 
     /* renamed from: h0  reason: collision with root package name */
-    private static final Set f33834h0;
+    private static final Set f33854h0;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final FqName f33835i;
+    private static final FqName f33855i;
 
     /* renamed from: i0  reason: collision with root package name */
-    private static final Set f33836i0;
+    private static final Set f33856i0;
 
     /* renamed from: j  reason: collision with root package name */
-    private static final FqName f33837j;
+    private static final FqName f33857j;
 
     /* renamed from: j0  reason: collision with root package name */
-    private static final Map f33838j0;
+    private static final Map f33858j0;
 
     /* renamed from: k  reason: collision with root package name */
-    private static final FqName f33839k;
+    private static final FqName f33859k;
 
     /* renamed from: k0  reason: collision with root package name */
-    private static final Map f33840k0;
+    private static final Map f33860k0;
 
     /* renamed from: l  reason: collision with root package name */
-    private static final FqName f33841l;
+    private static final FqName f33861l;
 
     /* renamed from: l0  reason: collision with root package name */
-    private static final Set f33842l0;
+    private static final Set f33862l0;
 
     /* renamed from: m  reason: collision with root package name */
-    private static final FqName f33843m;
+    private static final FqName f33863m;
 
     /* renamed from: m0  reason: collision with root package name */
-    private static final Map f33844m0;
+    private static final Map f33864m0;
 
     /* renamed from: n  reason: collision with root package name */
-    private static final FqName f33845n;
+    private static final FqName f33865n;
 
     /* renamed from: n0  reason: collision with root package name */
-    private static final Map f33846n0;
+    private static final Map f33866n0;
 
     /* renamed from: o  reason: collision with root package name */
-    private static final FqName f33847o;
+    private static final FqName f33867o;
 
     /* renamed from: o0  reason: collision with root package name */
-    private static final Set f33848o0;
+    private static final Set f33868o0;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final FqName f33849p;
+    private static final FqName f33869p;
 
     /* renamed from: p0  reason: collision with root package name */
-    private static final ClassId f33850p0;
+    private static final ClassId f33870p0;
 
     /* renamed from: q  reason: collision with root package name */
-    private static final FqName f33851q;
+    private static final FqName f33871q;
 
     /* renamed from: q0  reason: collision with root package name */
-    private static final ClassId f33852q0;
+    private static final ClassId f33872q0;
 
     /* renamed from: r  reason: collision with root package name */
-    private static final FqName f33853r;
+    private static final FqName f33873r;
 
     /* renamed from: r0  reason: collision with root package name */
-    private static final ClassId f33854r0;
+    private static final ClassId f33874r0;
 
     /* renamed from: s  reason: collision with root package name */
-    private static final FqName f33855s;
+    private static final FqName f33875s;
 
     /* renamed from: s0  reason: collision with root package name */
-    private static final ClassId f33856s0;
+    private static final ClassId f33876s0;
 
     /* renamed from: t  reason: collision with root package name */
-    private static final FqName f33857t;
+    private static final FqName f33877t;
 
     /* renamed from: t0  reason: collision with root package name */
-    private static final ClassId f33858t0;
+    private static final ClassId f33878t0;
 
     /* renamed from: u  reason: collision with root package name */
-    private static final Set f33859u;
+    private static final Set f33879u;
 
     /* renamed from: u0  reason: collision with root package name */
-    private static final ClassId f33860u0;
+    private static final ClassId f33880u0;
 
     /* renamed from: v  reason: collision with root package name */
-    private static final Set f33861v;
+    private static final Set f33881v;
 
     /* renamed from: v0  reason: collision with root package name */
-    private static final ClassId f33862v0;
+    private static final ClassId f33882v0;
 
     /* renamed from: w  reason: collision with root package name */
-    private static final ClassId f33863w;
+    private static final ClassId f33883w;
 
     /* renamed from: w0  reason: collision with root package name */
-    private static final ClassId f33864w0;
+    private static final ClassId f33884w0;
 
     /* renamed from: x  reason: collision with root package name */
-    private static final ClassId f33865x;
+    private static final ClassId f33885x;
 
     /* renamed from: x0  reason: collision with root package name */
-    private static final ClassId f33866x0;
+    private static final ClassId f33886x0;
 
     /* renamed from: y  reason: collision with root package name */
-    private static final ClassId f33867y;
+    private static final ClassId f33887y;
 
     /* renamed from: y0  reason: collision with root package name */
-    private static final ClassId f33868y0;
+    private static final ClassId f33888y0;
 
     /* renamed from: z  reason: collision with root package name */
-    private static final ClassId f33869z;
+    private static final ClassId f33889z;
 
     /* renamed from: z0  reason: collision with root package name */
-    private static final ClassId f33870z0;
+    private static final ClassId f33890z0;
 
     static {
         FqName fqName = new FqName("kotlin");
-        f33819a = fqName;
+        f33839a = fqName;
         Name identifier = Name.identifier("reflect");
         Intrinsics.checkNotNullExpressionValue(identifier, "identifier(...)");
         FqName child = fqName.child(identifier);
-        f33821b = child;
+        f33841b = child;
         Name identifier2 = Name.identifier("collections");
         Intrinsics.checkNotNullExpressionValue(identifier2, "identifier(...)");
         FqName child2 = fqName.child(identifier2);
-        f33823c = child2;
+        f33843c = child2;
         Name identifier3 = Name.identifier("sequences");
         Intrinsics.checkNotNullExpressionValue(identifier3, "identifier(...)");
-        f33825d = fqName.child(identifier3);
+        f33845d = fqName.child(identifier3);
         Name identifier4 = Name.identifier("ranges");
         Intrinsics.checkNotNullExpressionValue(identifier4, "identifier(...)");
         FqName child3 = fqName.child(identifier4);
-        f33827e = child3;
+        f33847e = child3;
         Name identifier5 = Name.identifier(DebugImage.JVM);
         Intrinsics.checkNotNullExpressionValue(identifier5, "identifier(...)");
         FqName child4 = fqName.child(identifier5);
-        f33829f = child4;
+        f33849f = child4;
         Name identifier6 = Name.identifier("annotations");
         Intrinsics.checkNotNullExpressionValue(identifier6, "identifier(...)");
         FqName child5 = fqName.child(identifier6);
         Name identifier7 = Name.identifier(DebugImage.JVM);
         Intrinsics.checkNotNullExpressionValue(identifier7, "identifier(...)");
-        f33831g = child5.child(identifier7);
+        f33851g = child5.child(identifier7);
         Name identifier8 = Name.identifier("internal");
         Intrinsics.checkNotNullExpressionValue(identifier8, "identifier(...)");
-        f33833h = child4.child(identifier8);
+        f33853h = child4.child(identifier8);
         Name identifier9 = Name.identifier("functions");
         Intrinsics.checkNotNullExpressionValue(identifier9, "identifier(...)");
-        f33835i = child4.child(identifier9);
+        f33855i = child4.child(identifier9);
         Name identifier10 = Name.identifier("annotation");
         Intrinsics.checkNotNullExpressionValue(identifier10, "identifier(...)");
         FqName child6 = fqName.child(identifier10);
-        f33837j = child6;
+        f33857j = child6;
         Name identifier11 = Name.identifier("internal");
         Intrinsics.checkNotNullExpressionValue(identifier11, "identifier(...)");
         FqName child7 = fqName.child(identifier11);
-        f33839k = child7;
+        f33859k = child7;
         Name identifier12 = Name.identifier("ir");
         Intrinsics.checkNotNullExpressionValue(identifier12, "identifier(...)");
-        f33841l = child7.child(identifier12);
+        f33861l = child7.child(identifier12);
         Name identifier13 = Name.identifier("coroutines");
         Intrinsics.checkNotNullExpressionValue(identifier13, "identifier(...)");
         FqName child8 = fqName.child(identifier13);
-        f33843m = child8;
+        f33863m = child8;
         Name identifier14 = Name.identifier("intrinsics");
         Intrinsics.checkNotNullExpressionValue(identifier14, "identifier(...)");
-        f33845n = child8.child(identifier14);
+        f33865n = child8.child(identifier14);
         Name identifier15 = Name.identifier("enums");
         Intrinsics.checkNotNullExpressionValue(identifier15, "identifier(...)");
-        f33847o = fqName.child(identifier15);
+        f33867o = fqName.child(identifier15);
         Name identifier16 = Name.identifier("contracts");
         Intrinsics.checkNotNullExpressionValue(identifier16, "identifier(...)");
-        f33849p = fqName.child(identifier16);
+        f33869p = fqName.child(identifier16);
         Name identifier17 = Name.identifier("concurrent");
         Intrinsics.checkNotNullExpressionValue(identifier17, "identifier(...)");
         FqName child9 = fqName.child(identifier17);
-        f33851q = child9;
+        f33871q = child9;
         Name identifier18 = Name.identifier("atomics");
         Intrinsics.checkNotNullExpressionValue(identifier18, "identifier(...)");
         FqName child10 = child9.child(identifier18);
-        f33853r = child10;
+        f33873r = child10;
         Name identifier19 = Name.identifier("test");
         Intrinsics.checkNotNullExpressionValue(identifier19, "identifier(...)");
-        f33855s = fqName.child(identifier19);
+        f33875s = fqName.child(identifier19);
         Name identifier20 = Name.identifier("text");
         Intrinsics.checkNotNullExpressionValue(identifier20, "identifier(...)");
-        f33857t = fqName.child(identifier20);
-        f33859u = x0.i(fqName, child2, child3, child6);
-        f33861v = x0.i(fqName, child2, child3, child6, child, child7, child8, child10);
-        f33863w = StandardClassIdsKt.access$baseId("Nothing");
-        f33865x = StandardClassIdsKt.access$baseId("Unit");
-        f33867y = StandardClassIdsKt.access$baseId("Any");
-        f33869z = StandardClassIdsKt.access$baseId("Enum");
+        f33877t = fqName.child(identifier20);
+        f33879u = x0.i(fqName, child2, child3, child6);
+        f33881v = x0.i(fqName, child2, child3, child6, child, child7, child8, child10);
+        f33883w = StandardClassIdsKt.access$baseId("Nothing");
+        f33885x = StandardClassIdsKt.access$baseId("Unit");
+        f33887y = StandardClassIdsKt.access$baseId("Any");
+        f33889z = StandardClassIdsKt.access$baseId("Enum");
         A = StandardClassIdsKt.access$baseId("Annotation");
         B = StandardClassIdsKt.access$baseId("Array");
         ClassId access$baseId = StandardClassIdsKt.access$baseId("Boolean");
@@ -328,49 +328,49 @@ public final class StandardClassIds {
         X = StandardClassIdsKt.access$reflectId("KMutableProperty1");
         Y = StandardClassIdsKt.access$reflectId("KProperty2");
         Z = StandardClassIdsKt.access$reflectId("KMutableProperty2");
-        f33820a0 = StandardClassIdsKt.access$reflectId("KFunction");
-        f33822b0 = StandardClassIdsKt.access$reflectId("KClass");
-        f33824c0 = StandardClassIdsKt.access$reflectId("KCallable");
-        f33826d0 = StandardClassIdsKt.access$reflectId("KType");
-        f33828e0 = StandardClassIdsKt.access$baseId("Comparable");
-        f33830f0 = StandardClassIdsKt.access$baseId("Number");
-        f33832g0 = StandardClassIdsKt.access$baseId("Function");
+        f33840a0 = StandardClassIdsKt.access$reflectId("KFunction");
+        f33842b0 = StandardClassIdsKt.access$reflectId("KClass");
+        f33844c0 = StandardClassIdsKt.access$reflectId("KCallable");
+        f33846d0 = StandardClassIdsKt.access$reflectId("KType");
+        f33848e0 = StandardClassIdsKt.access$baseId("Comparable");
+        f33850f0 = StandardClassIdsKt.access$baseId("Number");
+        f33852g0 = StandardClassIdsKt.access$baseId("Function");
         Set i10 = x0.i(access$baseId, access$baseId2, access$baseId3, access$baseId4, access$baseId5, access$baseId6, access$baseId7, access$baseId8);
-        f33834h0 = i10;
-        f33836i0 = x0.i(access$baseId3, access$baseId4, access$baseId5, access$baseId6);
+        f33854h0 = i10;
+        f33856i0 = x0.i(access$baseId3, access$baseId4, access$baseId5, access$baseId6);
         Set set = i10;
         LinkedHashMap linkedHashMap = new LinkedHashMap(d.d(o0.e(CollectionsKt.w(set, 10)), 16));
         for (Object obj : set) {
             linkedHashMap.put(obj, StandardClassIdsKt.access$primitiveArrayId(((ClassId) obj).getShortClassName()));
         }
-        f33838j0 = linkedHashMap;
-        f33840k0 = StandardClassIdsKt.access$inverseMap(linkedHashMap);
+        f33858j0 = linkedHashMap;
+        f33860k0 = StandardClassIdsKt.access$inverseMap(linkedHashMap);
         Set i11 = x0.i(K, L, M, N);
-        f33842l0 = i11;
+        f33862l0 = i11;
         Set set2 = i11;
         LinkedHashMap linkedHashMap2 = new LinkedHashMap(d.d(o0.e(CollectionsKt.w(set2, 10)), 16));
         for (Object obj2 : set2) {
             linkedHashMap2.put(obj2, StandardClassIdsKt.access$primitiveArrayId(((ClassId) obj2).getShortClassName()));
         }
-        f33844m0 = linkedHashMap2;
-        f33846n0 = StandardClassIdsKt.access$inverseMap(linkedHashMap2);
-        Set set3 = f33834h0;
-        Set set4 = f33842l0;
+        f33864m0 = linkedHashMap2;
+        f33866n0 = StandardClassIdsKt.access$inverseMap(linkedHashMap2);
+        Set set3 = f33854h0;
+        Set set4 = f33862l0;
         Set l10 = x0.l(set3, set4);
         ClassId classId = P;
-        f33848o0 = x0.m(l10, classId);
-        f33850p0 = StandardClassIdsKt.access$coroutinesId("Continuation");
-        f33852q0 = StandardClassIdsKt.access$collectionsId("Iterator");
-        f33854r0 = StandardClassIdsKt.access$collectionsId("Iterable");
-        f33856s0 = StandardClassIdsKt.access$collectionsId("Collection");
-        f33858t0 = StandardClassIdsKt.access$collectionsId("List");
-        f33860u0 = StandardClassIdsKt.access$collectionsId("ListIterator");
-        f33862v0 = StandardClassIdsKt.access$collectionsId("Set");
+        f33868o0 = x0.m(l10, classId);
+        f33870p0 = StandardClassIdsKt.access$coroutinesId("Continuation");
+        f33872q0 = StandardClassIdsKt.access$collectionsId("Iterator");
+        f33874r0 = StandardClassIdsKt.access$collectionsId("Iterable");
+        f33876s0 = StandardClassIdsKt.access$collectionsId("Collection");
+        f33878t0 = StandardClassIdsKt.access$collectionsId("List");
+        f33880u0 = StandardClassIdsKt.access$collectionsId("ListIterator");
+        f33882v0 = StandardClassIdsKt.access$collectionsId("Set");
         ClassId access$collectionsId = StandardClassIdsKt.access$collectionsId("Map");
-        f33864w0 = access$collectionsId;
-        f33866x0 = StandardClassIdsKt.access$collectionsId("AbstractMap");
-        f33868y0 = StandardClassIdsKt.access$collectionsId("MutableIterator");
-        f33870z0 = StandardClassIdsKt.access$collectionsId("CharIterator");
+        f33884w0 = access$collectionsId;
+        f33886x0 = StandardClassIdsKt.access$collectionsId("AbstractMap");
+        f33888y0 = StandardClassIdsKt.access$collectionsId("MutableIterator");
+        f33890z0 = StandardClassIdsKt.access$collectionsId("CharIterator");
         A0 = StandardClassIdsKt.access$collectionsId("MutableIterable");
         B0 = StandardClassIdsKt.access$collectionsId("MutableCollection");
         C0 = StandardClassIdsKt.access$collectionsId("MutableList");
@@ -392,7 +392,7 @@ public final class StandardClassIds {
         N0 = StandardClassIdsKt.access$annotationId("AnnotationTarget");
         O0 = StandardClassIdsKt.access$baseId("DeprecationLevel");
         P0 = StandardClassIdsKt.access$enumsId("EnumEntries");
-        Q0 = x0.m(x0.m(x0.m(x0.m(x0.l(set3, set4), classId), f33865x), f33867y), f33869z);
+        Q0 = x0.m(x0.m(x0.m(x0.m(x0.l(set3, set4), classId), f33885x), f33887y), f33889z);
     }
 
     private StandardClassIds() {
@@ -405,37 +405,37 @@ public final class StandardClassIds {
 
     @NotNull
     public final FqName getBASE_ANNOTATION_PACKAGE() {
-        return f33837j;
+        return f33857j;
     }
 
     @NotNull
     public final FqName getBASE_COLLECTIONS_PACKAGE() {
-        return f33823c;
+        return f33843c;
     }
 
     @NotNull
     public final FqName getBASE_COROUTINES_PACKAGE() {
-        return f33843m;
+        return f33863m;
     }
 
     @NotNull
     public final FqName getBASE_ENUMS_PACKAGE() {
-        return f33847o;
+        return f33867o;
     }
 
     @NotNull
     public final FqName getBASE_KOTLIN_PACKAGE() {
-        return f33819a;
+        return f33839a;
     }
 
     @NotNull
     public final FqName getBASE_RANGES_PACKAGE() {
-        return f33827e;
+        return f33847e;
     }
 
     @NotNull
     public final FqName getBASE_REFLECT_PACKAGE() {
-        return f33821b;
+        return f33841b;
     }
 
     @NotNull
@@ -445,12 +445,12 @@ public final class StandardClassIds {
 
     @NotNull
     public final ClassId getKClass() {
-        return f33822b0;
+        return f33842b0;
     }
 
     @NotNull
     public final ClassId getKFunction() {
-        return f33820a0;
+        return f33840a0;
     }
 
     @NotNull

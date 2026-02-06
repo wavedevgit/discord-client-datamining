@@ -1,46 +1,43 @@
 package lg;
 
-import java.util.Arrays;
+import android.os.BadParcelableException;
+import android.os.IInterface;
+import android.os.Parcel;
+import android.os.Parcelable;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class h {
+public abstract class h {
 
     /* renamed from: a  reason: collision with root package name */
-    Object[] f36821a = new Object[8];
+    private static final ClassLoader f36207a = h.class.getClassLoader();
 
-    /* renamed from: b  reason: collision with root package name */
-    int f36822b = 0;
-
-    /* renamed from: c  reason: collision with root package name */
-    g f36823c;
-
-    public final h a(Object obj, Object obj2) {
-        int i10 = this.f36822b + 1;
-        Object[] objArr = this.f36821a;
-        int length = objArr.length;
-        int i11 = i10 + i10;
-        if (i11 > length) {
-            this.f36821a = Arrays.copyOf(objArr, b.a(length, i11));
+    public static Parcelable a(Parcel parcel, Parcelable.Creator creator) {
+        if (parcel.readInt() == 0) {
+            return null;
         }
-        w0.a(obj, obj2);
-        Object[] objArr2 = this.f36821a;
-        int i12 = this.f36822b;
-        int i13 = i12 + i12;
-        objArr2[i13] = obj;
-        objArr2[i13 + 1] = obj2;
-        this.f36822b = i12 + 1;
-        return this;
+        return (Parcelable) creator.createFromParcel(parcel);
     }
 
-    public final i b() {
-        g gVar = this.f36823c;
-        if (gVar == null) {
-            q g10 = q.g(this.f36822b, this.f36821a, this);
-            g gVar2 = this.f36823c;
-            if (gVar2 == null) {
-                return g10;
-            }
-            throw gVar2.a();
+    public static void b(Parcel parcel, Parcelable parcelable) {
+        if (parcelable == null) {
+            parcel.writeInt(0);
+            return;
         }
-        throw gVar.a();
+        parcel.writeInt(1);
+        parcelable.writeToParcel(parcel, 0);
+    }
+
+    public static void c(Parcel parcel, IInterface iInterface) {
+        parcel.writeStrongBinder(iInterface.asBinder());
+    }
+
+    public static void d(Parcel parcel) {
+        int dataAvail = parcel.dataAvail();
+        if (dataAvail <= 0) {
+            return;
+        }
+        StringBuilder sb2 = new StringBuilder(String.valueOf(dataAvail).length() + 45);
+        sb2.append("Parcel data not fully consumed, unread size: ");
+        sb2.append(dataAvail);
+        throw new BadParcelableException(sb2.toString());
     }
 }

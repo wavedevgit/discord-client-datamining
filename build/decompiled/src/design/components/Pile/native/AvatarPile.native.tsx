@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Pile/native/AvatarPile.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun88407: for (var _fun88407_ip = 0;;) switch (_fun88407_ip) {
+        _fun88420: for (var _fun88420_ip = 0;;) switch (_fun88420_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.size;
@@ -75,8 +75,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = 40;
                 var7 = var11 <= var7;
                 if (!var7) {
-                    _fun88407_ip = 179;
-                    continue _fun88407
+                    _fun88420_ip = 179;
+                    continue _fun88420
                 }
             case 176:
                 var4 = var12;
@@ -89,15 +89,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = null;
                 var5 = var5 != var10;
                 if (!var5) {
-                    _fun88407_ip = 219;
-                    continue _fun88407
+                    _fun88420_ip = 219;
+                    continue _fun88420
                 }
             case 215:
                 var5 = var9 < var10;
             case 219:
                 if (!var5) {
-                    _fun88407_ip = 280;
-                    continue _fun88407
+                    _fun88420_ip = 280;
+                    continue _fun88420
                 }
             case 222:
                 var8 = _closure1_slot3;
@@ -123,4 +123,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.AvatarPile = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 5458, 7828, 7830, 5461, 7829, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 5459, 7833, 7835, 5462, 7834, 2]);

@@ -15,13 +15,13 @@ public interface g extends l {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public final u0 f13140a;
+        public final u0 f13101a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final int[] f13141b;
+        public final int[] f13102b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final int f13142c;
+        public final int f13103c;
 
         public a(u0 u0Var, int... iArr) {
             this(u0Var, iArr, 0);
@@ -31,9 +31,9 @@ public interface g extends l {
             if (iArr.length == 0) {
                 y.d("ETSDefinition", "Empty tracks are not allowed", new IllegalArgumentException());
             }
-            this.f13140a = u0Var;
-            this.f13141b = iArr;
-            this.f13142c = i10;
+            this.f13101a = u0Var;
+            this.f13102b = iArr;
+            this.f13103c = i10;
         }
     }
 

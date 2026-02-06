@@ -37,13 +37,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = undefined;
         var0 = function*() { // Environment: var0
             var0 = function*() { // Original name: ?anon_0_, environment: var0
-                _fun53758: for (var _fun53758_ip = 0;;) switch (_fun53758_ip) {
+                _fun53784: for (var _fun53784_ip = 0;;) switch (_fun53784_ip) {
                     case 0:
                         StartGenerator();
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun53758_ip = 107;
-                            continue _fun53758
+                            _fun53784_ip = 107;
+                            continue _fun53784
                         }
                     case 7:
                         var6 = _closure1_slot3;
@@ -55,8 +55,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var3.guildId = var7;
                         var3 = var5.bind(var6)(var4, var3);
                         if (!var3) {
-                            _fun53758_ip = 99;
-                            continue _fun53758
+                            _fun53784_ip = 99;
+                            continue _fun53784
                         }
                     case 52:
                         var4 = _closure1_slot0;
@@ -74,8 +74,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 93:
                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 2);
                         if (var2) {
-                            _fun53758_ip = 104;
-                            continue _fun53758
+                            _fun53784_ip = 104;
+                            continue _fun53784
                         }
                     case 99:
                         var2 = undefined;
@@ -133,4 +133,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 3091, 660, 6508, 806, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 3093, 660, 6512, 806, 2]);

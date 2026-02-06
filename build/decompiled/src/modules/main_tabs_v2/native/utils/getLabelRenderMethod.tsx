@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
     var0 = function arg0() {
-        _fun104669: for (var _fun104669_ip = 0;;) switch (_fun104669_ip) {
+        _fun104697: for (var _fun104697_ip = 0;;) switch (_fun104697_ip) {
             case 0:
                 var0 = arg0;
                 var9 = var0.focused;
@@ -33,8 +33,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var6 = 'interactive-text-default';
                 if (!var9) {
-                    _fun104669_ip = 95;
-                    continue _fun104669
+                    _fun104697_ip = 95;
+                    continue _fun104697
                 }
             case 89:
                 var6 = 'interactive-text-active';
@@ -42,13 +42,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.color = var6;
                 var6 = 'beside-icon';
                 if (!(var6 !== var8)) {
-                    _fun104669_ip = 119;
-                    continue _fun104669
+                    _fun104697_ip = 119;
+                    continue _fun104697
                 }
             case 111:
                 var6 = var5.titleBelow;
-                _fun104669_ip = 125;
-                continue _fun104669;
+                _fun104697_ip = 125;
+                continue _fun104697;
             case 119:
                 var6 = var5.titleBeside;
             case 125:
@@ -124,4 +124,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getTabLabelRenderMethod = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 3941, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 3943, 2]);

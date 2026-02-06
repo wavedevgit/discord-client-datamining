@@ -1,53 +1,96 @@
 package lk;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.nio.charset.Charset;
+import java.util.HashMap;
+import java.util.Map;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class d {
+public enum d {
+    Cp437(new int[]{0, 2}, new String[0]),
+    ISO8859_1(new int[]{1, 3}, "ISO-8859-1"),
+    ISO8859_2(4, "ISO-8859-2"),
+    ISO8859_3(5, "ISO-8859-3"),
+    ISO8859_4(6, "ISO-8859-4"),
+    ISO8859_5(7, "ISO-8859-5"),
+    ISO8859_6(8, "ISO-8859-6"),
+    ISO8859_7(9, "ISO-8859-7"),
+    ISO8859_8(10, "ISO-8859-8"),
+    ISO8859_9(11, "ISO-8859-9"),
+    ISO8859_10(12, "ISO-8859-10"),
+    ISO8859_11(13, "ISO-8859-11"),
+    ISO8859_13(15, "ISO-8859-13"),
+    ISO8859_14(16, "ISO-8859-14"),
+    ISO8859_15(17, "ISO-8859-15"),
+    ISO8859_16(18, "ISO-8859-16"),
+    SJIS(20, "Shift_JIS"),
+    Cp1250(21, "windows-1250"),
+    Cp1251(22, "windows-1251"),
+    Cp1252(23, "windows-1252"),
+    Cp1256(24, "windows-1256"),
+    UnicodeBigUnmarked(25, "UTF-16BE", "UnicodeBig"),
+    UTF8(26, "UTF-8"),
+    ASCII(new int[]{27, 170}, "US-ASCII"),
+    Big5(28),
+    GB18030(29, "GB2312", "EUC_CN", "GBK"),
+    EUC_KR(30, "EUC-KR");
+    
+    private static final Map O = new HashMap();
+    private static final Map P = new HashMap();
 
-    /* renamed from: a  reason: collision with root package name */
-    private final a f36935a;
+    /* renamed from: d  reason: collision with root package name */
+    private final int[] f36325d;
 
-    /* renamed from: b  reason: collision with root package name */
-    private final List f36936b;
+    /* renamed from: e  reason: collision with root package name */
+    private final String[] f36326e;
 
-    public d(a aVar) {
-        this.f36935a = aVar;
-        ArrayList arrayList = new ArrayList();
-        this.f36936b = arrayList;
-        arrayList.add(new b(aVar, new int[]{1}));
-    }
-
-    private b a(int i10) {
-        if (i10 >= this.f36936b.size()) {
-            List list = this.f36936b;
-            b bVar = (b) list.get(list.size() - 1);
-            for (int size = this.f36936b.size(); size <= i10; size++) {
-                a aVar = this.f36935a;
-                bVar = bVar.i(new b(aVar, new int[]{1, aVar.c((size - 1) + aVar.d())}));
-                this.f36936b.add(bVar);
-            }
-        }
-        return (b) this.f36936b.get(i10);
-    }
-
-    public void b(int[] iArr, int i10) {
-        if (i10 != 0) {
-            int length = iArr.length - i10;
-            if (length > 0) {
-                b a10 = a(i10);
-                int[] iArr2 = new int[length];
-                System.arraycopy(iArr, 0, iArr2, 0, length);
-                int[] e10 = new b(this.f36935a, iArr2).j(i10, 1).b(a10)[1].e();
-                int length2 = i10 - e10.length;
-                for (int i11 = 0; i11 < length2; i11++) {
-                    iArr[length + i11] = 0;
+    static {
+        d[] values;
+        for (d dVar : values()) {
+            if (Charset.isSupported(dVar.name())) {
+                for (int i10 : dVar.f36325d) {
+                    O.put(Integer.valueOf(i10), dVar);
                 }
-                System.arraycopy(e10, 0, iArr, length + length2, e10.length);
-                return;
+                P.put(dVar.name(), dVar);
+                for (String str : dVar.f36326e) {
+                    P.put(str, dVar);
+                }
             }
-            throw new IllegalArgumentException("No data bytes provided");
         }
-        throw new IllegalArgumentException("No error correction bytes");
+    }
+
+    d(int i10) {
+        this(new int[]{i10}, new String[0]);
+    }
+
+    public static d a(Charset charset) {
+        return (d) P.get(charset.name());
+    }
+
+    public static d d(String str) {
+        return (d) P.get(str);
+    }
+
+    public static d e(int i10) {
+        if (i10 >= 0 && i10 < 900) {
+            return (d) O.get(Integer.valueOf(i10));
+        }
+        throw hk.g.a();
+    }
+
+    public Charset f() {
+        return Charset.forName(name());
+    }
+
+    public int g() {
+        return this.f36325d[0];
+    }
+
+    d(int i10, String... strArr) {
+        this.f36325d = new int[]{i10};
+        this.f36326e = strArr;
+    }
+
+    d(int[] iArr, String... strArr) {
+        this.f36325d = iArr;
+        this.f36326e = strArr;
     }
 }

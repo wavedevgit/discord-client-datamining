@@ -15,36 +15,36 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final C0775a f55158e = new C0775a(null);
+    public static final C0763a f55889e = new C0763a(null);
 
     /* renamed from: f  reason: collision with root package name */
-    private static final Map f55159f = new HashMap();
+    private static final Map f55890f = new HashMap();
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f55160a;
+    private final boolean f55891a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final File f55161b;
+    private final File f55892b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Lock f55162c;
+    private final Lock f55893c;
 
     /* renamed from: d  reason: collision with root package name */
-    private FileChannel f55163d;
+    private FileChannel f55894d;
 
     /* renamed from: z3.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static final class C0775a {
-        public /* synthetic */ C0775a(DefaultConstructorMarker defaultConstructorMarker) {
+    public static final class C0763a {
+        public /* synthetic */ C0763a(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public final Lock b(String str) {
             Lock lock;
-            synchronized (a.f55159f) {
+            synchronized (a.f55890f) {
                 try {
-                    Map map = a.f55159f;
+                    Map map = a.f55890f;
                     Object obj = map.get(str);
                     if (obj == null) {
                         obj = new ReentrantLock();
@@ -58,42 +58,42 @@ public final class a {
             return lock;
         }
 
-        private C0775a() {
+        private C0763a() {
         }
     }
 
     public a(String name, File lockDir, boolean z10) {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(lockDir, "lockDir");
-        this.f55160a = z10;
+        this.f55891a = z10;
         File file = new File(lockDir, name + ".lck");
-        this.f55161b = file;
-        C0775a c0775a = f55158e;
+        this.f55892b = file;
+        C0763a c0763a = f55889e;
         String absolutePath = file.getAbsolutePath();
         Intrinsics.checkNotNullExpressionValue(absolutePath, "lockFile.absolutePath");
-        this.f55162c = c0775a.b(absolutePath);
+        this.f55893c = c0763a.b(absolutePath);
     }
 
     public static /* synthetic */ void c(a aVar, boolean z10, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            z10 = aVar.f55160a;
+            z10 = aVar.f55891a;
         }
         aVar.b(z10);
     }
 
     public final void b(boolean z10) {
-        this.f55162c.lock();
+        this.f55893c.lock();
         if (z10) {
             try {
-                File parentFile = this.f55161b.getParentFile();
+                File parentFile = this.f55892b.getParentFile();
                 if (parentFile != null) {
                     parentFile.mkdirs();
                 }
-                FileChannel channel = new FileOutputStream(this.f55161b).getChannel();
+                FileChannel channel = new FileOutputStream(this.f55892b).getChannel();
                 channel.lock();
-                this.f55163d = channel;
+                this.f55894d = channel;
             } catch (IOException e10) {
-                this.f55163d = null;
+                this.f55894d = null;
                 Log.w("SupportSQLiteLock", "Unable to grab file lock.", e10);
             }
         }
@@ -101,12 +101,12 @@ public final class a {
 
     public final void d() {
         try {
-            FileChannel fileChannel = this.f55163d;
+            FileChannel fileChannel = this.f55894d;
             if (fileChannel != null) {
                 fileChannel.close();
             }
         } catch (IOException unused) {
         }
-        this.f55162c.unlock();
+        this.f55893c.unlock();
     }
 }

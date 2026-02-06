@@ -26,8 +26,8 @@ public abstract class d extends a {
     public final Continuation<Object> intercepted() {
         Continuation continuation = this.intercepted;
         if (continuation == null) {
-            kotlin.coroutines.d dVar = (kotlin.coroutines.d) getContext().k(kotlin.coroutines.d.f32060g);
-            if (dVar == null || (continuation = dVar.E(this)) == null) {
+            kotlin.coroutines.d dVar = (kotlin.coroutines.d) getContext().m(kotlin.coroutines.d.f32080g);
+            if (dVar == null || (continuation = dVar.s(this)) == null) {
                 continuation = this;
             }
             this.intercepted = continuation;
@@ -40,11 +40,11 @@ public abstract class d extends a {
     public void releaseIntercepted() {
         Continuation<Object> continuation = this.intercepted;
         if (continuation != null && continuation != this) {
-            CoroutineContext.Element k10 = getContext().k(kotlin.coroutines.d.f32060g);
-            Intrinsics.checkNotNull(k10);
-            ((kotlin.coroutines.d) k10).o(continuation);
+            CoroutineContext.Element m10 = getContext().m(kotlin.coroutines.d.f32080g);
+            Intrinsics.checkNotNull(m10);
+            ((kotlin.coroutines.d) m10).n(continuation);
         }
-        this.intercepted = c.f32063d;
+        this.intercepted = c.f32083d;
     }
 
     public d(Continuation continuation) {

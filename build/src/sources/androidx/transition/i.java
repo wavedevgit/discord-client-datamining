@@ -6,7 +6,7 @@ import android.graphics.RectF;
 abstract class i {
 
     /* renamed from: a  reason: collision with root package name */
-    static final Matrix f5391a = new a();
+    static final Matrix f5720a = new a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a extends Matrix {

@@ -7,24 +7,24 @@ import xb.e;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private static SparseArray f31690a = new SparseArray();
+    private static SparseArray f31534a = new SparseArray();
 
     /* renamed from: b  reason: collision with root package name */
-    private static HashMap f31691b;
+    private static HashMap f31535b;
 
     static {
         HashMap hashMap = new HashMap();
-        f31691b = hashMap;
+        f31535b = hashMap;
         hashMap.put(e.DEFAULT, 0);
-        f31691b.put(e.VERY_LOW, 1);
-        f31691b.put(e.HIGHEST, 2);
-        for (e eVar : f31691b.keySet()) {
-            f31690a.append(((Integer) f31691b.get(eVar)).intValue(), eVar);
+        f31535b.put(e.VERY_LOW, 1);
+        f31535b.put(e.HIGHEST, 2);
+        for (e eVar : f31535b.keySet()) {
+            f31534a.append(((Integer) f31535b.get(eVar)).intValue(), eVar);
         }
     }
 
     public static int a(e eVar) {
-        Integer num = (Integer) f31691b.get(eVar);
+        Integer num = (Integer) f31535b.get(eVar);
         if (num != null) {
             return num.intValue();
         }
@@ -32,7 +32,7 @@ public abstract class a {
     }
 
     public static e b(int i10) {
-        e eVar = (e) f31690a.get(i10);
+        e eVar = (e) f31534a.get(i10);
         if (eVar != null) {
             return eVar;
         }

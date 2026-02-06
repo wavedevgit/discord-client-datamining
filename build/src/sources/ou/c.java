@@ -1,10 +1,30 @@
 package ou;
+
+import java.util.List;
+import javax.net.ssl.X509TrustManager;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+import lu.h;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class c {
+public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final c f44471a = new c();
+    public static final a f43552a = new a(null);
 
-    private c() {
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a {
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        public final c a(X509TrustManager trustManager) {
+            Intrinsics.checkNotNullParameter(trustManager, "trustManager");
+            return h.f36777a.g().c(trustManager);
+        }
+
+        private a() {
+        }
     }
+
+    public abstract List a(List list, String str);
 }

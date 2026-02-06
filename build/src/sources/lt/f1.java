@@ -1,0 +1,50 @@
+package lt;
+
+import ht.k;
+import ht.l;
+import kotlin.jvm.internal.Intrinsics;
+import kotlinx.serialization.descriptors.SerialDescriptor;
+import kotlinx.serialization.json.Json;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+public abstract class f1 {
+    public static final SerialDescriptor a(SerialDescriptor serialDescriptor, mt.b module) {
+        SerialDescriptor a10;
+        Intrinsics.checkNotNullParameter(serialDescriptor, "<this>");
+        Intrinsics.checkNotNullParameter(module, "module");
+        if (Intrinsics.areEqual(serialDescriptor.getKind(), k.a.f26487a)) {
+            SerialDescriptor b10 = ht.b.b(module, serialDescriptor);
+            if (b10 != null && (a10 = a(b10, module)) != null) {
+                return a10;
+            }
+            return serialDescriptor;
+        } else if (serialDescriptor.isInline()) {
+            return a(serialDescriptor.g(0), module);
+        } else {
+            return serialDescriptor;
+        }
+    }
+
+    public static final e1 b(Json json, SerialDescriptor desc) {
+        Intrinsics.checkNotNullParameter(json, "<this>");
+        Intrinsics.checkNotNullParameter(desc, "desc");
+        ht.k kind = desc.getKind();
+        if (kind instanceof ht.d) {
+            return e1.f36653q;
+        }
+        if (Intrinsics.areEqual(kind, l.b.f26490a)) {
+            return e1.f36651o;
+        }
+        if (Intrinsics.areEqual(kind, l.c.f26491a)) {
+            SerialDescriptor a10 = a(desc.g(0), json.a());
+            ht.k kind2 = a10.getKind();
+            if (!(kind2 instanceof ht.e) && !Intrinsics.areEqual(kind2, k.b.f26488a)) {
+                if (json.e().c()) {
+                    return e1.f36651o;
+                }
+                throw g0.c(a10);
+            }
+            return e1.f36652p;
+        }
+        return e1.f36650i;
+    }
+}

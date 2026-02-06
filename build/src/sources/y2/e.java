@@ -20,7 +20,7 @@ public final class e extends w implements p0 {
 
         public a q(Iterable iterable) {
             k();
-            ((e) this.f3956e).D(iterable);
+            ((e) this.f4285e).E(iterable);
             return this;
         }
 
@@ -32,46 +32,46 @@ public final class e extends w implements p0 {
     static {
         e eVar = new e();
         DEFAULT_INSTANCE = eVar;
-        w.z(e.class, eVar);
+        w.A(e.class, eVar);
     }
 
     private e() {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void D(Iterable iterable) {
-        E();
+    public void E(Iterable iterable) {
+        F();
         androidx.datastore.preferences.protobuf.a.b(iterable, this.strings_);
     }
 
-    private void E() {
-        if (!this.strings_.E0()) {
-            this.strings_ = w.u(this.strings_);
+    private void F() {
+        if (!this.strings_.y()) {
+            this.strings_ = w.v(this.strings_);
         }
     }
 
-    public static e F() {
+    public static e G() {
         return DEFAULT_INSTANCE;
     }
 
-    public static a H() {
+    public static a I() {
         return (a) DEFAULT_INSTANCE.j();
     }
 
-    public List G() {
+    public List H() {
         return this.strings_;
     }
 
     @Override // androidx.datastore.preferences.protobuf.w
     protected final Object m(w.d dVar, Object obj, Object obj2) {
         w0 w0Var;
-        switch (c.f54334a[dVar.ordinal()]) {
+        switch (c.f54878a[dVar.ordinal()]) {
             case 1:
                 return new e();
             case 2:
                 return new a(null);
             case 3:
-                return w.w(DEFAULT_INSTANCE, "\u0001\u0001\u0000\u0000\u0001\u0001\u0001\u0000\u0001\u0000\u0001\u001a", new Object[]{"strings_"});
+                return w.x(DEFAULT_INSTANCE, "\u0001\u0001\u0000\u0000\u0001\u0001\u0001\u0000\u0001\u0000\u0001\u001a", new Object[]{"strings_"});
             case 4:
                 return DEFAULT_INSTANCE;
             case 5:

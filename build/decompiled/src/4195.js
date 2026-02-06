@@ -9,22 +9,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.value = var0;
     var0 = '__esModule';
     var0 = var3.bind(var4)(var1, var0, var2);
-    var0 = {
-        5: 'PentaxModelID',
-        555: 'LevelInfo'
-    };
+    var0 = {};
     var2 = {};
-    var3 = 'PentaxVersion';
+    var3 = 'ShotInfo';
     var2.name = var3;
     var3 = function arg0() {
-        var2 = arg0;
-        var1 = var2.join;
-        var0 = '.';
-        var0 = var1.bind(var2)(var0);
+        var0 = arg0;
         return var0;
     };
     var2.description = var3;
-    var0[0] = var2;
+    var0[4] = var2;
     var1.default = var0;
     var0 = undefined;
     return var0;

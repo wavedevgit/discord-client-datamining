@@ -46,7 +46,7 @@ public final class AFd1ySDK implements AFd1xSDK {
     public AFd1ySDK(@NotNull AFc1bSDK aFc1bSDK) {
         Intrinsics.checkNotNullParameter(aFc1bSDK, "");
         this.getRevenue = aFc1bSDK;
-        this.getCurrencyIso4217Code = or.l.a(new Function0<AFf1lSDK>() { // from class: com.appsflyer.internal.AFd1ySDK.1
+        this.getCurrencyIso4217Code = qr.l.a(new Function0<AFf1lSDK>() { // from class: com.appsflyer.internal.AFd1ySDK.1
             {
                 super(0);
             }
@@ -60,7 +60,7 @@ public final class AFd1ySDK implements AFd1xSDK {
                 return component1;
             }
         });
-        this.getMediationNetwork = or.l.a(new Function0<AFc1pSDK>() { // from class: com.appsflyer.internal.AFd1ySDK.5
+        this.getMediationNetwork = qr.l.a(new Function0<AFc1pSDK>() { // from class: com.appsflyer.internal.AFd1ySDK.5
             {
                 super(0);
             }
@@ -74,7 +74,7 @@ public final class AFd1ySDK implements AFd1xSDK {
                 return currencyIso4217Code;
             }
         });
-        this.getMonetizationNetwork = or.l.a(new Function0<AFc1oSDK>() { // from class: com.appsflyer.internal.AFd1ySDK.3
+        this.getMonetizationNetwork = qr.l.a(new Function0<AFc1oSDK>() { // from class: com.appsflyer.internal.AFd1ySDK.3
             {
                 super(0);
             }
@@ -88,7 +88,7 @@ public final class AFd1ySDK implements AFd1xSDK {
                 return component2;
             }
         });
-        this.AFAdRevenueData = or.l.a(new Function0<AFf1cSDK>() { // from class: com.appsflyer.internal.AFd1ySDK.9
+        this.AFAdRevenueData = qr.l.a(new Function0<AFf1cSDK>() { // from class: com.appsflyer.internal.AFd1ySDK.9
             {
                 super(0);
             }
@@ -102,7 +102,7 @@ public final class AFd1ySDK implements AFd1xSDK {
                 return AFKeystoreWrapper;
             }
         });
-        this.component2 = or.l.a(new Function0<ExecutorService>() { // from class: com.appsflyer.internal.AFd1ySDK.2
+        this.component2 = qr.l.a(new Function0<ExecutorService>() { // from class: com.appsflyer.internal.AFd1ySDK.2
             {
                 super(0);
             }
@@ -117,7 +117,7 @@ public final class AFd1ySDK implements AFd1xSDK {
             }
         });
         this.component1 = "6.17.3";
-        this.areAllFieldsValid = or.l.a(new Function0<AFd1uSDK>() { // from class: com.appsflyer.internal.AFd1ySDK.4
+        this.areAllFieldsValid = qr.l.a(new Function0<AFd1uSDK>() { // from class: com.appsflyer.internal.AFd1ySDK.4
             {
                 super(0);
             }
@@ -131,7 +131,7 @@ public final class AFd1ySDK implements AFd1xSDK {
                 return new AFd1uSDK(registerClient);
             }
         });
-        this.component3 = or.l.a(new Function0<AFd1vSDK>() { // from class: com.appsflyer.internal.AFd1ySDK.6
+        this.component3 = qr.l.a(new Function0<AFd1vSDK>() { // from class: com.appsflyer.internal.AFd1ySDK.6
             {
                 super(0);
             }
@@ -351,7 +351,7 @@ public final class AFd1ySDK implements AFd1xSDK {
             if (i16 != 3) {
                 if (i16 != 4) {
                     equals = (copydefault + 47) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
-                    Map m10 = o0.m(or.v.a("deviceInfo", (Map) objArr[0]), or.v.a("excs", AFd1tSDK.AFAdRevenueData((List) objArr[1])));
+                    Map m10 = o0.m(qr.v.a("deviceInfo", (Map) objArr[0]), qr.v.a("excs", AFd1tSDK.AFAdRevenueData((List) objArr[1])));
                     copydefault = (equals + 11) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                     return m10;
                 }
@@ -634,7 +634,7 @@ public final class AFd1ySDK implements AFd1xSDK {
     private final Map<String, String> getCurrencyIso4217Code(AFh1aSDK aFh1aSDK) {
         Object[] objArr = new Object[1];
         a("퍒䪹\ue0a7ắ뒸", (ViewConfiguration.getMaximumDrawingCacheSize() >> 24) + 39419, objArr);
-        Map<String, String> m10 = o0.m(or.v.a(((String) objArr[0]).intern(), Build.BRAND), or.v.a("model", Build.MODEL), or.v.a("app_id", getMonetizationNetwork().getRevenue.getRevenue.getPackageName()), or.v.a("p_ex", new AFa1ySDK().getMediationNetwork()), or.v.a("api", String.valueOf(Build.VERSION.SDK_INT)), or.v.a("sdk", this.component1), or.v.a("uid", AFb1jSDK.getRevenue(getMonetizationNetwork().getMonetizationNetwork)), or.v.a("exc_config", aFh1aSDK.getMonetizationNetwork()));
+        Map<String, String> m10 = o0.m(qr.v.a(((String) objArr[0]).intern(), Build.BRAND), qr.v.a("model", Build.MODEL), qr.v.a("app_id", getMonetizationNetwork().getRevenue.getRevenue.getPackageName()), qr.v.a("p_ex", new AFa1ySDK().getMediationNetwork()), qr.v.a("api", String.valueOf(Build.VERSION.SDK_INT)), qr.v.a("sdk", this.component1), qr.v.a("uid", AFb1jSDK.getRevenue(getMonetizationNetwork().getMonetizationNetwork)), qr.v.a("exc_config", aFh1aSDK.getMonetizationNetwork()));
         copydefault = (equals + 109) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         return m10;
     }
@@ -716,7 +716,7 @@ public final class AFd1ySDK implements AFd1xSDK {
         equals = (copydefault + 41) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         byte[] bytes = str.getBytes(Charsets.UTF_8);
         Intrinsics.checkNotNullExpressionValue(bytes, "");
-        ((AFd1ySDK) objArr[0]).component2().getRevenue(bytes, o0.f(or.v.a("Authorization", AFj1bSDK.getRevenue(str, (String) objArr[2]))), 2000);
+        ((AFd1ySDK) objArr[0]).component2().getRevenue(bytes, o0.f(qr.v.a("Authorization", AFj1bSDK.getRevenue(str, (String) objArr[2]))), 2000);
         int i10 = copydefault + 37;
         equals = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i10 % 2 == 0) {

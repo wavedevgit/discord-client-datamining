@@ -41,7 +41,7 @@ public final class BillingManagerModule extends ReactContextBaseJavaModule {
         super(reactContext);
         Intrinsics.checkNotNullParameter(reactContext, "reactContext");
         this.reactContext = reactContext;
-        this.reactEvents = new ReactEvents(or.v.a("billing-manager-connection-state-updated", Reflection.getOrCreateKotlinClass(BillingManagerConnectionStateUpdated.class)), or.v.a("billing-manager-purchase-updated", Reflection.getOrCreateKotlinClass(BillingManagerPurchaseUpdated.class)), or.v.a("billing-manager-purchase-state-updated", Reflection.getOrCreateKotlinClass(BillingManagerPurchaseStateUpdated.class)));
+        this.reactEvents = new ReactEvents(qr.v.a("billing-manager-connection-state-updated", Reflection.getOrCreateKotlinClass(BillingManagerConnectionStateUpdated.class)), qr.v.a("billing-manager-purchase-updated", Reflection.getOrCreateKotlinClass(BillingManagerPurchaseUpdated.class)), qr.v.a("billing-manager-purchase-state-updated", Reflection.getOrCreateKotlinClass(BillingManagerPurchaseStateUpdated.class)));
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();
         Intrinsics.checkNotNullExpressionValue(reactApplicationContext, "getReactApplicationContext(...)");
         this.billingManager = new BillingManager(reactApplicationContext, ClientInfo.INSTANCE.isProdBuild(), new Function1() { // from class: com.discord.billing.q
@@ -71,13 +71,13 @@ public final class BillingManagerModule extends ReactContextBaseJavaModule {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit billingManager$lambda$0(BillingManagerModule billingManagerModule, int i10) {
         billingManagerModule.emitEvent(new BillingManagerConnectionStateUpdated(i10));
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit billingManager$lambda$1(BillingManagerModule billingManagerModule, int i10, boolean z10) {
         billingManagerModule.emitEvent(new BillingManagerPurchaseStateUpdated(i10, z10));
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -86,20 +86,20 @@ public final class BillingManagerModule extends ReactContextBaseJavaModule {
         Intrinsics.checkNotNullParameter(packageName, "packageName");
         Intrinsics.checkNotNullParameter(product, "product");
         billingManagerModule.emitEvent(new BillingManagerPurchaseUpdated(purchaseToken, packageName, product));
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit consumePurchase$lambda$7(Promise promise) {
         promise.resolve(Boolean.TRUE);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit consumePurchase$lambda$8(Promise promise, BillingManagerException e10) {
         Intrinsics.checkNotNullParameter(e10, "e");
         promise.reject(e10.getErrorCode(), e10.getReason(), e10);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     private final void emitEvent(ReactEvent reactEvent) {
@@ -128,60 +128,60 @@ public final class BillingManagerModule extends ReactContextBaseJavaModule {
     public static final Unit getProducts$lambda$13(Promise promise, BillingManagerException e10) {
         Intrinsics.checkNotNullParameter(e10, "e");
         promise.reject(e10.getErrorCode(), e10.getReason(), e10);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit getUserCountry$lambda$11(Promise promise, String countryCode) {
         Intrinsics.checkNotNullParameter(countryCode, "countryCode");
         promise.resolve(countryCode);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit getUserCountry$lambda$12(Promise promise, BillingManagerException e10) {
         Intrinsics.checkNotNullParameter(e10, "e");
         promise.reject(e10.getErrorCode(), e10.getReason(), e10);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit loadPurchases$lambda$10(Promise promise, Exception e10) {
         Intrinsics.checkNotNullParameter(e10, "e");
         promise.reject(e10);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit loadPurchases$lambda$9(Promise promise) {
         promise.resolve(Boolean.TRUE);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit purchase$lambda$3(Promise promise) {
         promise.resolve(Boolean.TRUE);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit purchase$lambda$4(Promise promise, BillingManagerException e10) {
         Intrinsics.checkNotNullParameter(e10, "e");
         promise.reject(e10.getErrorCode(), e10.getReason(), e10);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit subscribe$lambda$5(Promise promise) {
         promise.resolve(Boolean.TRUE);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit subscribe$lambda$6(Promise promise, BillingManagerException e10) {
         Intrinsics.checkNotNullParameter(e10, "e");
         promise.reject(e10.getErrorCode(), e10.getReason(), e10);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     @ReactMethod

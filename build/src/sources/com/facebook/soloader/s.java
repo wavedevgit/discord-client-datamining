@@ -289,11 +289,11 @@ public abstract class s {
     }
 
     private static void i(h hVar, ByteBuffer byteBuffer, int i10, long j10) {
-        int g02;
+        int i02;
         byteBuffer.position(0);
         byteBuffer.limit(i10);
-        while (byteBuffer.remaining() > 0 && (g02 = hVar.g0(byteBuffer, j10)) != -1) {
-            j10 += g02;
+        while (byteBuffer.remaining() > 0 && (i02 = hVar.i0(byteBuffer, j10)) != -1) {
+            j10 += i02;
         }
         if (byteBuffer.remaining() <= 0) {
             byteBuffer.position(0);

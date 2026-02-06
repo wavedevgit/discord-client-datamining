@@ -1,51 +1,27 @@
 package ap;
 
-import androidx.activity.result.ActivityResultCallback;
-import java.util.List;
-import kotlin.jvm.internal.Intrinsics;
+import java.util.Set;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class k {
-    public static final f0 d() {
-        return new f0(new androidx.activity.result.contract.c(), new ActivityResultCallback() { // from class: ap.i
-            @Override // androidx.activity.result.ActivityResultCallback
-            public final void a(Object obj) {
-                k.e((List) obj);
-            }
-        });
+public final class k implements br.d {
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    private static final class a {
+
+        /* renamed from: a  reason: collision with root package name */
+        static final k f6259a = new k();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final void e(List uriList) {
-        Intrinsics.checkNotNullParameter(uriList, "uriList");
-        new t().a(uriList);
+    public static k a() {
+        return a.f6259a;
     }
 
-    public static final f0 f() {
-        return new f0(new androidx.activity.result.contract.d(0, 1, null), new ActivityResultCallback() { // from class: ap.h
-            @Override // androidx.activity.result.ActivityResultCallback
-            public final void a(Object obj) {
-                k.g((List) obj);
-            }
-        });
+    public static Set c() {
+        return (Set) br.g.d(com.withpersona.sdk2.inquiry.internal.network.f.g());
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final void g(List uriList) {
-        Intrinsics.checkNotNullParameter(uriList, "uriList");
-        new t().a(uriList);
-    }
-
-    public static final f0 h() {
-        return new f0(new androidx.activity.result.contract.h(), new ActivityResultCallback() { // from class: ap.j
-            @Override // androidx.activity.result.ActivityResultCallback
-            public final void a(Object obj) {
-                k.i(((Boolean) obj).booleanValue());
-            }
-        });
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final void i(boolean z10) {
-        new y().a(z10);
+    @Override // javax.inject.Provider
+    /* renamed from: b */
+    public Set get() {
+        return c();
     }
 }

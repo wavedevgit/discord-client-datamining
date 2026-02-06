@@ -45,21 +45,21 @@ public final class NextStep_Document_Pages_DocumentPagesJsonAdapter extends h {
     @NotNull
     public NextStep.Document.Pages.DocumentPages fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         NextStep.Document.Pages.DocumentStartPage documentStartPage = null;
         NextStep.Document.Pages.UploadOptionsDialog uploadOptionsDialog = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 documentStartPage = (NextStep.Document.Pages.DocumentStartPage) this.nullableDocumentStartPageAdapter.fromJson(reader);
-            } else if (W == 1) {
+            } else if (J == 1) {
                 uploadOptionsDialog = (NextStep.Document.Pages.UploadOptionsDialog) this.nullableUploadOptionsDialogAdapter.fromJson(reader);
             }
         }
-        reader.z();
+        reader.D();
         return new NextStep.Document.Pages.DocumentPages(documentStartPage, uploadOptionsDialog);
     }
 
@@ -68,11 +68,11 @@ public final class NextStep_Document_Pages_DocumentPagesJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (documentPages != null) {
             writer.k();
-            writer.W("prompt");
+            writer.J("prompt");
             this.nullableDocumentStartPageAdapter.toJson(writer, documentPages.getPrompt());
-            writer.W("uploadOptionsDialog");
+            writer.J("uploadOptionsDialog");
             this.nullableUploadOptionsDialogAdapter.toJson(writer, documentPages.getUploadOptionsDialog());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

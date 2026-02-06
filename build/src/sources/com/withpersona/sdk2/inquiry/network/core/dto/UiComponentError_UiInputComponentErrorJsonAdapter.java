@@ -1,5 +1,6 @@
 package com.withpersona.sdk2.inquiry.network.core.dto;
 
+import an.c;
 import com.facebook.react.devsupport.StackTraceHelper;
 import com.squareup.moshi.h;
 import com.squareup.moshi.m;
@@ -8,7 +9,6 @@ import com.squareup.moshi.w;
 import com.withpersona.sdk2.inquiry.network.core.dto.UiComponentError;
 import kotlin.collections.x0;
 import org.jetbrains.annotations.NotNull;
-import ym.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class UiComponentError_UiInputComponentErrorJsonAdapter extends h {
     @NotNull
@@ -32,30 +32,30 @@ public final class UiComponentError_UiInputComponentErrorJsonAdapter extends h {
     @Override // com.squareup.moshi.h
     @NotNull
     public UiComponentError.UiInputComponentError fromJson(@NotNull m mVar) {
-        mVar.s();
+        mVar.u();
         String str = null;
         String str2 = null;
         String str3 = null;
         while (mVar.hasNext()) {
-            int W = mVar.W(this.options);
-            if (W == -1) {
+            int J = mVar.J(this.options);
+            if (J == -1) {
                 mVar.E0();
-                mVar.P();
-            } else if (W == 0) {
+                mVar.S();
+            } else if (J == 0) {
                 str = (String) this.stringAdapter.fromJson(mVar);
                 if (str == null) {
                     throw c.x(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, mVar);
                 }
-            } else if (W == 1) {
+            } else if (J == 1) {
                 str2 = (String) this.stringAdapter.fromJson(mVar);
                 if (str2 == null) {
                     throw c.x("type", "type", mVar);
                 }
-            } else if (W == 2 && (str3 = (String) this.stringAdapter.fromJson(mVar)) == null) {
+            } else if (J == 2 && (str3 = (String) this.stringAdapter.fromJson(mVar)) == null) {
                 throw c.x("message", "message", mVar);
             }
         }
-        mVar.z();
+        mVar.D();
         if (str != null) {
             if (str2 != null) {
                 if (str3 != null) {
@@ -72,13 +72,13 @@ public final class UiComponentError_UiInputComponentErrorJsonAdapter extends h {
     public void toJson(@NotNull t tVar, UiComponentError.UiInputComponentError uiInputComponentError) {
         if (uiInputComponentError != null) {
             tVar.k();
-            tVar.W(StackTraceHelper.NAME_KEY);
+            tVar.J(StackTraceHelper.NAME_KEY);
             this.stringAdapter.toJson(tVar, uiInputComponentError.getName());
-            tVar.W("type");
+            tVar.J("type");
             this.stringAdapter.toJson(tVar, uiInputComponentError.getType());
-            tVar.W("message");
+            tVar.J("message");
             this.stringAdapter.toJson(tVar, uiInputComponentError.getMessage());
-            tVar.E();
+            tVar.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

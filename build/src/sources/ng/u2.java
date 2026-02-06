@@ -1,57 +1,33 @@
 package ng;
 
-import xi.c;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.util.Map;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class u2 implements xi.d {
+public final class u2 {
 
     /* renamed from: a  reason: collision with root package name */
-    static final u2 f41077a = new u2();
+    private final Map f40309a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final xi.c f41078b;
+    private final Map f40310b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final xi.c f41079c;
+    private final yi.d f40311c;
 
-    /* renamed from: d  reason: collision with root package name */
-    private static final xi.c f41080d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private static final xi.c f41081e;
-
-    /* renamed from: f  reason: collision with root package name */
-    private static final xi.c f41082f;
-
-    static {
-        c.b a10 = xi.c.a("inferenceCommonLogEvent");
-        f fVar = new f();
-        fVar.a(1);
-        f41078b = a10.b(fVar.b()).a();
-        c.b a11 = xi.c.a("options");
-        f fVar2 = new f();
-        fVar2.a(2);
-        f41079c = a11.b(fVar2.b()).a();
-        c.b a12 = xi.c.a("inputsFormats");
-        f fVar3 = new f();
-        fVar3.a(3);
-        f41080d = a12.b(fVar3.b()).a();
-        c.b a13 = xi.c.a("outputFormats");
-        f fVar4 = new f();
-        fVar4.a(4);
-        f41081e = a13.b(fVar4.b()).a();
-        c.b a14 = xi.c.a("modelInitializationMs");
-        f fVar5 = new f();
-        fVar5.a(5);
-        f41082f = a14.b(fVar5.b()).a();
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public u2(Map map, Map map2, yi.d dVar) {
+        this.f40309a = map;
+        this.f40310b = map2;
+        this.f40311c = dVar;
     }
 
-    private u2() {
-    }
-
-    @Override // xi.d
-    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
-        android.support.v4.media.session.b.a(obj);
-        xi.e eVar = (xi.e) obj2;
-        throw null;
+    public final byte[] a(Object obj) {
+        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+        try {
+            new r2(byteArrayOutputStream, this.f40309a, this.f40310b, this.f40311c).i(obj);
+        } catch (IOException unused) {
+        }
+        return byteArrayOutputStream.toByteArray();
     }
 }

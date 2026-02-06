@@ -1,48 +1,46 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function(arg0) { // Environment: var0
-        _fun94437: for (var _fun94437_ip = 0;;) switch (_fun94437_ip) {
+    var1 = function(arg0, arg1, arg2) { // Environment: var0
+        _fun94443: for (var _fun94443_ip = 0;;) switch (_fun94443_ip) {
             case 0:
-                var11 = arg0;
-                var1 = this;
-                if (var11) {
-                    _fun94437_ip = 11;
-                    continue _fun94437
+                var0 = arg2;
+                var2 = this;
+                if (var0) {
+                    _fun94443_ip = 40;
+                    continue _fun94443
                 }
             case 9:
-                var11 = {};
-            case 11:
-                var9 = var1.sequenceLevels;
-                var0 = false;
-                var5 = 0;
-                var3 = false;
-                var2 = false;
-                for (var6 in var9)
-                    case 33: {
-                        var12 = var3;
-                        var2 = var12;
-                        case 48: var14 = var6;
-                        var13 = var11[var14];
-                        var3 = true;
-                        if (var13) {
-                            _fun94437_ip = 33;
-                            continue _fun94437
-                        }
-                        case 60: var13 = var1.sequenceLevels;
-                        var13[var14] = var5;
-                        var3 = var12;
-                        _fun94437_ip = 33;
-                        continue _fun94437;
-                    }
-            case 75:
-                if (var2) {
-                    _fun94437_ip = 84;
-                    continue _fun94437
+                var1 = var2.getReverseMap;
+                var2 = var1.bind(var2)();
+                var1 = arg0;
+                var2 = var2[var1];
+                var1 = 'keypress';
+                if (!var2) {
+                    _fun94443_ip = 37;
+                    continue _fun94443
                 }
-            case 78:
-                var1.nextExpectedAction = var0;
-            case 84:
-                var0 = undefined;
+            case 33:
+                var1 = 'keydown';
+            case 37:
+                var0 = var1;
+            case 40:
+                var1 = 'keypress';
+                var1 = var1 === var0;
+                if (!var1) {
+                    _fun94443_ip = 59;
+                    continue _fun94443
+                }
+            case 51:
+                var2 = arg1;
+                var1 = var2.length;
+            case 59:
+                if (!var1) {
+                    _fun94443_ip = 66;
+                    continue _fun94443
+                }
+            case 62:
+                var0 = 'keydown';
+            case 66:
                 return var0;
         }
     };

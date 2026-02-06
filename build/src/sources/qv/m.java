@@ -1,9 +1,20 @@
 package qv;
-
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-@Retention(RetentionPolicy.RUNTIME)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public @interface m {
-    String value() default "";
+public class m extends a {
+
+    /* renamed from: f  reason: collision with root package name */
+    private String f48281f;
+
+    @Override // qv.r
+    public void a(y yVar) {
+        yVar.e(this);
+    }
+
+    public String n() {
+        return this.f48281f;
+    }
+
+    public void o(String str) {
+        this.f48281f = str;
+    }
 }

@@ -10,12 +10,12 @@ import com.discord.notifications.renderer.NotificationRenderer;
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
 import com.facebook.react.uimanager.ViewProps;
 import com.facebook.react.uimanager.events.PointerEventHelper;
-import dt.b0;
-import gt.a2;
-import gt.h;
-import gt.h0;
-import gt.n2;
-import gt.p0;
+import ft.b0;
+import jt.a2;
+import jt.h;
+import jt.h0;
+import jt.n2;
+import jt.p0;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.internal.Intrinsics;
@@ -27,8 +27,8 @@ import kotlinx.serialization.encoding.Encoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
 import org.jetbrains.annotations.NotNull;
 import org.webrtc.PeerConnection;
-@or.c
-@Metadata(d1 = {"\u0000:\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u001d\u0010\t\u001a\u00020\b2\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0007\u001a\u00020\u0002¢\u0006\u0004\b\t\u0010\nJ\u0015\u0010\r\u001a\u00020\u00022\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b\r\u0010\u000eJ\u0017\u0010\u0011\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00100\u000f¢\u0006\u0004\b\u0011\u0010\u0012R\u0017\u0010\u0014\u001a\u00020\u00138\u0006¢\u0006\f\n\u0004\b\u0014\u0010\u0015\u001a\u0004\b\u0016\u0010\u0017¨\u0006\u0018"}, d2 = {"com/discord/chat/bridge/codedlinks/GuildEventInviteEmbedImpl.$serializer", "Lgt/h0;", "Lcom/discord/chat/bridge/codedlinks/GuildEventInviteEmbedImpl;", "<init>", "()V", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "(Lkotlinx/serialization/encoding/Encoder;Lcom/discord/chat/bridge/codedlinks/GuildEventInviteEmbedImpl;)V", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "(Lkotlinx/serialization/encoding/Decoder;)Lcom/discord/chat/bridge/codedlinks/GuildEventInviteEmbedImpl;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+@Metadata(d1 = {"\u0000:\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u001d\u0010\t\u001a\u00020\b2\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0007\u001a\u00020\u0002¢\u0006\u0004\b\t\u0010\nJ\u0015\u0010\r\u001a\u00020\u00022\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b\r\u0010\u000eJ\u0017\u0010\u0011\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00100\u000f¢\u0006\u0004\b\u0011\u0010\u0012R\u0017\u0010\u0014\u001a\u00020\u00138\u0006¢\u0006\f\n\u0004\b\u0014\u0010\u0015\u001a\u0004\b\u0016\u0010\u0017¨\u0006\u0018"}, d2 = {"com/discord/chat/bridge/codedlinks/GuildEventInviteEmbedImpl.$serializer", "Ljt/h0;", "Lcom/discord/chat/bridge/codedlinks/GuildEventInviteEmbedImpl;", "<init>", "()V", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "(Lkotlinx/serialization/encoding/Encoder;Lcom/discord/chat/bridge/codedlinks/GuildEventInviteEmbedImpl;)V", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "(Lkotlinx/serialization/encoding/Decoder;)Lcom/discord/chat/bridge/codedlinks/GuildEventInviteEmbedImpl;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+@qr.c
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public /* synthetic */ class GuildEventInviteEmbedImpl$$serializer implements h0 {
     @NotNull
@@ -90,22 +90,22 @@ public /* synthetic */ class GuildEventInviteEmbedImpl$$serializer implements h0
     private GuildEventInviteEmbedImpl$$serializer() {
     }
 
-    @Override // gt.h0
+    @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        p0 p0Var = p0.f25318a;
-        n2 n2Var = n2.f25302a;
-        KSerializer u10 = et.a.u(p0Var);
-        KSerializer u11 = et.a.u(p0Var);
-        KSerializer u12 = et.a.u(p0Var);
-        KSerializer u13 = et.a.u(n2Var);
-        KSerializer u14 = et.a.u(n2Var);
-        KSerializer u15 = et.a.u(n2Var);
-        KSerializer u16 = et.a.u(n2Var);
-        KSerializer u17 = et.a.u(n2Var);
-        KSerializer u18 = et.a.u(p0Var);
-        h hVar = h.f25266a;
-        return new KSerializer[]{p0Var, p0Var, CodedLinkExtendedType.Serializer.INSTANCE, p0Var, n2Var, InviteType.Serializer.INSTANCE, u10, u11, u12, u13, u14, u15, u16, u17, u18, et.a.u(hVar), et.a.u(n2Var), et.a.u(n2Var), et.a.u(StructurableTextSerializer.INSTANCE), et.a.u(n2Var), et.a.u(hVar), et.a.u(n2Var), et.a.u(n2Var), et.a.u(n2Var), et.a.u(p0Var), et.a.u(hVar), et.a.u(n2Var), et.a.u(n2Var), et.a.u(p0Var), et.a.u(p0Var), et.a.u(n2Var), et.a.u(hVar), et.a.u(p0Var), et.a.u(n2Var), et.a.u(n2Var), et.a.u(n2Var), et.a.u(p0Var), et.a.u(p0Var), et.a.u(p0Var), et.a.u(n2Var), et.a.u(n2Var), et.a.u(p0Var), et.a.u(n2Var), et.a.u(n2Var)};
+        p0 p0Var = p0.f31057a;
+        n2 n2Var = n2.f31041a;
+        KSerializer u10 = gt.a.u(p0Var);
+        KSerializer u11 = gt.a.u(p0Var);
+        KSerializer u12 = gt.a.u(p0Var);
+        KSerializer u13 = gt.a.u(n2Var);
+        KSerializer u14 = gt.a.u(n2Var);
+        KSerializer u15 = gt.a.u(n2Var);
+        KSerializer u16 = gt.a.u(n2Var);
+        KSerializer u17 = gt.a.u(n2Var);
+        KSerializer u18 = gt.a.u(p0Var);
+        h hVar = h.f31005a;
+        return new KSerializer[]{p0Var, p0Var, CodedLinkExtendedType.Serializer.INSTANCE, p0Var, n2Var, InviteType.Serializer.INSTANCE, u10, u11, u12, u13, u14, u15, u16, u17, u18, gt.a.u(hVar), gt.a.u(n2Var), gt.a.u(n2Var), gt.a.u(StructurableTextSerializer.INSTANCE), gt.a.u(n2Var), gt.a.u(hVar), gt.a.u(n2Var), gt.a.u(n2Var), gt.a.u(n2Var), gt.a.u(p0Var), gt.a.u(hVar), gt.a.u(n2Var), gt.a.u(n2Var), gt.a.u(p0Var), gt.a.u(p0Var), gt.a.u(n2Var), gt.a.u(hVar), gt.a.u(p0Var), gt.a.u(n2Var), gt.a.u(n2Var), gt.a.u(n2Var), gt.a.u(p0Var), gt.a.u(p0Var), gt.a.u(p0Var), gt.a.u(n2Var), gt.a.u(n2Var), gt.a.u(p0Var), gt.a.u(n2Var), gt.a.u(n2Var)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -197,13 +197,13 @@ public /* synthetic */ class GuildEventInviteEmbedImpl$$serializer implements h0
             CodedLinkExtendedType codedLinkExtendedType3 = (CodedLinkExtendedType) b10.y(serialDescriptor, 2, CodedLinkExtendedType.Serializer.INSTANCE, null);
             int i18 = b10.i(serialDescriptor, 3);
             String m10 = b10.m(serialDescriptor, 4);
-            p0 p0Var = p0.f25318a;
-            n2 n2Var = n2.f25302a;
+            p0 p0Var = p0.f31057a;
+            n2 n2Var = n2.f31041a;
             String str38 = (String) b10.n(serialDescriptor, 11, n2Var, null);
             String str39 = (String) b10.n(serialDescriptor, 12, n2Var, null);
             String str40 = (String) b10.n(serialDescriptor, 13, n2Var, null);
             Integer num22 = (Integer) b10.n(serialDescriptor, 14, p0Var, null);
-            h hVar = h.f25266a;
+            h hVar = h.f31005a;
             Boolean bool8 = (Boolean) b10.n(serialDescriptor, 15, hVar, null);
             String str41 = (String) b10.n(serialDescriptor, 16, n2Var, null);
             String str42 = (String) b10.n(serialDescriptor, 17, n2Var, null);
@@ -353,7 +353,7 @@ public /* synthetic */ class GuildEventInviteEmbedImpl$$serializer implements h0
                         num19 = num40;
                         str36 = str74;
                         i15 = i22;
-                        Unit unit = Unit.f31988a;
+                        Unit unit = Unit.f32008a;
                         codedLinkExtendedType2 = codedLinkExtendedType4;
                         str54 = str54;
                         num20 = num35;
@@ -388,7 +388,7 @@ public /* synthetic */ class GuildEventInviteEmbedImpl$$serializer implements h0
                         num19 = num40;
                         str36 = str74;
                         int i24 = b10.i(serialDescriptor, 0);
-                        Unit unit2 = Unit.f31988a;
+                        Unit unit2 = Unit.f32008a;
                         codedLinkExtendedType2 = codedLinkExtendedType4;
                         str54 = str54;
                         num20 = num35;
@@ -425,7 +425,7 @@ public /* synthetic */ class GuildEventInviteEmbedImpl$$serializer implements h0
                         str36 = str74;
                         int i25 = b10.i(serialDescriptor, 1);
                         i15 = i22 | 2;
-                        Unit unit3 = Unit.f31988a;
+                        Unit unit3 = Unit.f32008a;
                         codedLinkExtendedType2 = codedLinkExtendedType4;
                         str54 = str54;
                         num20 = num35;
@@ -459,7 +459,7 @@ public /* synthetic */ class GuildEventInviteEmbedImpl$$serializer implements h0
                         num19 = num40;
                         str36 = str74;
                         inviteType2 = inviteType3;
-                        Unit unit4 = Unit.f31988a;
+                        Unit unit4 = Unit.f32008a;
                         num20 = num35;
                         str37 = str37;
                         i15 = i22 | 4;
@@ -493,7 +493,7 @@ public /* synthetic */ class GuildEventInviteEmbedImpl$$serializer implements h0
                         num19 = num40;
                         str36 = str74;
                         i23 = b10.i(serialDescriptor, 3);
-                        Unit unit5 = Unit.f31988a;
+                        Unit unit5 = Unit.f32008a;
                         num20 = num35;
                         str37 = str37;
                         inviteType2 = inviteType3;
@@ -528,7 +528,7 @@ public /* synthetic */ class GuildEventInviteEmbedImpl$$serializer implements h0
                         num19 = num40;
                         str36 = str74;
                         str60 = b10.m(serialDescriptor, 4);
-                        Unit unit6 = Unit.f31988a;
+                        Unit unit6 = Unit.f32008a;
                         num20 = num35;
                         str37 = str37;
                         inviteType2 = inviteType3;
@@ -562,7 +562,7 @@ public /* synthetic */ class GuildEventInviteEmbedImpl$$serializer implements h0
                         num19 = num40;
                         str36 = str74;
                         num14 = num34;
-                        Unit unit7 = Unit.f31988a;
+                        Unit unit7 = Unit.f32008a;
                         num20 = num35;
                         str37 = str37;
                         inviteType2 = (InviteType) b10.y(serialDescriptor, 5, InviteType.Serializer.INSTANCE, inviteType3);
@@ -595,10 +595,10 @@ public /* synthetic */ class GuildEventInviteEmbedImpl$$serializer implements h0
                         num18 = num39;
                         num19 = num40;
                         str36 = str74;
-                        Unit unit8 = Unit.f31988a;
+                        Unit unit8 = Unit.f32008a;
                         num20 = num35;
                         str37 = str37;
-                        num14 = (Integer) b10.n(serialDescriptor, 6, p0.f25318a, num34);
+                        num14 = (Integer) b10.n(serialDescriptor, 6, p0.f31057a, num34);
                         i15 = i22 | 64;
                         str54 = str54;
                         codedLinkExtendedType2 = codedLinkExtendedType4;
@@ -631,12 +631,12 @@ public /* synthetic */ class GuildEventInviteEmbedImpl$$serializer implements h0
                         str36 = str74;
                         num15 = num36;
                         int i26 = i22 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
-                        Unit unit9 = Unit.f31988a;
+                        Unit unit9 = Unit.f32008a;
                         i15 = i26;
                         str37 = str75;
                         inviteType2 = inviteType3;
                         num14 = num34;
-                        num20 = (Integer) b10.n(serialDescriptor, 7, p0.f25318a, num35);
+                        num20 = (Integer) b10.n(serialDescriptor, 7, p0.f31057a, num35);
                         str54 = str54;
                         codedLinkExtendedType2 = codedLinkExtendedType4;
                         break;
@@ -666,8 +666,8 @@ public /* synthetic */ class GuildEventInviteEmbedImpl$$serializer implements h0
                         str36 = str74;
                         str23 = str61;
                         int i27 = i22 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
-                        Unit unit10 = Unit.f31988a;
-                        num15 = (Integer) b10.n(serialDescriptor, 8, p0.f25318a, num36);
+                        Unit unit10 = Unit.f32008a;
+                        num15 = (Integer) b10.n(serialDescriptor, 8, p0.f31057a, num36);
                         i15 = i27;
                         str54 = str76;
                         str37 = str37;
@@ -701,9 +701,9 @@ public /* synthetic */ class GuildEventInviteEmbedImpl$$serializer implements h0
                         str36 = str74;
                         str24 = str62;
                         int i28 = i22 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING;
-                        Unit unit11 = Unit.f31988a;
+                        Unit unit11 = Unit.f32008a;
                         i15 = i28;
-                        str23 = (String) b10.n(serialDescriptor, 9, n2.f25302a, str61);
+                        str23 = (String) b10.n(serialDescriptor, 9, n2.f31041a, str61);
                         str54 = str54;
                         str37 = str77;
                         codedLinkExtendedType2 = codedLinkExtendedType4;
@@ -736,8 +736,8 @@ public /* synthetic */ class GuildEventInviteEmbedImpl$$serializer implements h0
                         str36 = str74;
                         str25 = str63;
                         int i29 = i22 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET;
-                        Unit unit12 = Unit.f31988a;
-                        str24 = (String) b10.n(serialDescriptor, 10, n2.f25302a, str62);
+                        Unit unit12 = Unit.f32008a;
+                        str24 = (String) b10.n(serialDescriptor, 10, n2.f31041a, str62);
                         i15 = i29;
                         str54 = str78;
                         str37 = str37;
@@ -771,9 +771,9 @@ public /* synthetic */ class GuildEventInviteEmbedImpl$$serializer implements h0
                         str36 = str74;
                         str26 = str64;
                         int i30 = i22 | RecyclerView.ItemAnimator.FLAG_MOVED;
-                        Unit unit13 = Unit.f31988a;
+                        Unit unit13 = Unit.f32008a;
                         i15 = i30;
-                        str25 = (String) b10.n(serialDescriptor, 11, n2.f25302a, str63);
+                        str25 = (String) b10.n(serialDescriptor, 11, n2.f31041a, str63);
                         str54 = str54;
                         str37 = str79;
                         codedLinkExtendedType2 = codedLinkExtendedType4;
@@ -806,8 +806,8 @@ public /* synthetic */ class GuildEventInviteEmbedImpl$$serializer implements h0
                         str36 = str74;
                         str27 = str65;
                         int i31 = i22 | RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
-                        Unit unit14 = Unit.f31988a;
-                        str26 = (String) b10.n(serialDescriptor, 12, n2.f25302a, str64);
+                        Unit unit14 = Unit.f32008a;
+                        str26 = (String) b10.n(serialDescriptor, 12, n2.f31041a, str64);
                         i15 = i31;
                         str54 = str80;
                         str37 = str37;
@@ -840,9 +840,9 @@ public /* synthetic */ class GuildEventInviteEmbedImpl$$serializer implements h0
                         num19 = num40;
                         str36 = str74;
                         num16 = num37;
-                        Unit unit15 = Unit.f31988a;
+                        Unit unit15 = Unit.f32008a;
                         i15 = i22 | 8192;
-                        str27 = (String) b10.n(serialDescriptor, 13, n2.f25302a, str65);
+                        str27 = (String) b10.n(serialDescriptor, 13, n2.f31041a, str65);
                         str54 = str54;
                         str37 = str81;
                         codedLinkExtendedType2 = codedLinkExtendedType4;
@@ -874,8 +874,8 @@ public /* synthetic */ class GuildEventInviteEmbedImpl$$serializer implements h0
                         num19 = num40;
                         str36 = str74;
                         bool5 = bool13;
-                        Unit unit16 = Unit.f31988a;
-                        num16 = (Integer) b10.n(serialDescriptor, 14, p0.f25318a, num37);
+                        Unit unit16 = Unit.f32008a;
+                        num16 = (Integer) b10.n(serialDescriptor, 14, p0.f31057a, num37);
                         i15 = i22 | 16384;
                         str54 = str82;
                         str37 = str37;
@@ -909,9 +909,9 @@ public /* synthetic */ class GuildEventInviteEmbedImpl$$serializer implements h0
                         str36 = str74;
                         str28 = str66;
                         int i32 = i22 | PeerConnection.PORTALLOCATOR_ENABLE_ANY_ADDRESS_PORTS;
-                        Unit unit17 = Unit.f31988a;
+                        Unit unit17 = Unit.f32008a;
                         i15 = i32;
-                        bool5 = (Boolean) b10.n(serialDescriptor, 15, h.f25266a, bool13);
+                        bool5 = (Boolean) b10.n(serialDescriptor, 15, h.f31005a, bool13);
                         str54 = str54;
                         str37 = str83;
                         codedLinkExtendedType2 = codedLinkExtendedType4;
@@ -943,8 +943,8 @@ public /* synthetic */ class GuildEventInviteEmbedImpl$$serializer implements h0
                         num19 = num40;
                         str36 = str74;
                         str29 = str67;
-                        Unit unit18 = Unit.f31988a;
-                        str28 = (String) b10.n(serialDescriptor, 16, n2.f25302a, str66);
+                        Unit unit18 = Unit.f32008a;
+                        str28 = (String) b10.n(serialDescriptor, 16, n2.f31041a, str66);
                         i15 = i22 | 65536;
                         str54 = str84;
                         str37 = str37;
@@ -977,9 +977,9 @@ public /* synthetic */ class GuildEventInviteEmbedImpl$$serializer implements h0
                         num19 = num40;
                         str36 = str74;
                         structurableText2 = structurableText4;
-                        Unit unit19 = Unit.f31988a;
+                        Unit unit19 = Unit.f32008a;
                         i15 = i22 | 131072;
-                        str29 = (String) b10.n(serialDescriptor, 17, n2.f25302a, str67);
+                        str29 = (String) b10.n(serialDescriptor, 17, n2.f31041a, str67);
                         str54 = str54;
                         str37 = str85;
                         codedLinkExtendedType2 = codedLinkExtendedType4;
@@ -1011,7 +1011,7 @@ public /* synthetic */ class GuildEventInviteEmbedImpl$$serializer implements h0
                         num19 = num40;
                         str36 = str74;
                         str30 = str68;
-                        Unit unit20 = Unit.f31988a;
+                        Unit unit20 = Unit.f32008a;
                         structurableText2 = (StructurableText) b10.n(serialDescriptor, 18, StructurableTextSerializer.INSTANCE, structurableText4);
                         i15 = i22 | 262144;
                         str54 = str86;
@@ -1045,9 +1045,9 @@ public /* synthetic */ class GuildEventInviteEmbedImpl$$serializer implements h0
                         num19 = num40;
                         str36 = str74;
                         bool6 = bool14;
-                        Unit unit21 = Unit.f31988a;
+                        Unit unit21 = Unit.f32008a;
                         i15 = i22 | 524288;
-                        str30 = (String) b10.n(serialDescriptor, 19, n2.f25302a, str68);
+                        str30 = (String) b10.n(serialDescriptor, 19, n2.f31041a, str68);
                         str54 = str54;
                         str37 = str87;
                         codedLinkExtendedType2 = codedLinkExtendedType4;
@@ -1079,8 +1079,8 @@ public /* synthetic */ class GuildEventInviteEmbedImpl$$serializer implements h0
                         num19 = num40;
                         str36 = str74;
                         str31 = str69;
-                        Unit unit22 = Unit.f31988a;
-                        bool6 = (Boolean) b10.n(serialDescriptor, 20, h.f25266a, bool14);
+                        Unit unit22 = Unit.f32008a;
+                        bool6 = (Boolean) b10.n(serialDescriptor, 20, h.f31005a, bool14);
                         i15 = i22 | 1048576;
                         str54 = str88;
                         str37 = str37;
@@ -1113,9 +1113,9 @@ public /* synthetic */ class GuildEventInviteEmbedImpl$$serializer implements h0
                         num19 = num40;
                         str36 = str74;
                         str32 = str70;
-                        Unit unit23 = Unit.f31988a;
+                        Unit unit23 = Unit.f32008a;
                         i15 = i22 | 2097152;
-                        str31 = (String) b10.n(serialDescriptor, 21, n2.f25302a, str69);
+                        str31 = (String) b10.n(serialDescriptor, 21, n2.f31041a, str69);
                         str54 = str54;
                         str37 = str89;
                         codedLinkExtendedType2 = codedLinkExtendedType4;
@@ -1147,8 +1147,8 @@ public /* synthetic */ class GuildEventInviteEmbedImpl$$serializer implements h0
                         num19 = num40;
                         str36 = str74;
                         str33 = str71;
-                        Unit unit24 = Unit.f31988a;
-                        str32 = (String) b10.n(serialDescriptor, 22, n2.f25302a, str70);
+                        Unit unit24 = Unit.f32008a;
+                        str32 = (String) b10.n(serialDescriptor, 22, n2.f31041a, str70);
                         i15 = i22 | 4194304;
                         str54 = str90;
                         str37 = str37;
@@ -1181,9 +1181,9 @@ public /* synthetic */ class GuildEventInviteEmbedImpl$$serializer implements h0
                         num19 = num40;
                         str36 = str74;
                         num17 = num38;
-                        Unit unit25 = Unit.f31988a;
+                        Unit unit25 = Unit.f32008a;
                         i15 = i22 | 8388608;
-                        str33 = (String) b10.n(serialDescriptor, 23, n2.f25302a, str71);
+                        str33 = (String) b10.n(serialDescriptor, 23, n2.f31041a, str71);
                         str54 = str54;
                         str37 = str91;
                         codedLinkExtendedType2 = codedLinkExtendedType4;
@@ -1216,8 +1216,8 @@ public /* synthetic */ class GuildEventInviteEmbedImpl$$serializer implements h0
                         str36 = str74;
                         bool7 = bool15;
                         int i33 = i22 | PointerEventHelper.X_FLAG_SUPPORTS_HOVER;
-                        Unit unit26 = Unit.f31988a;
-                        num17 = (Integer) b10.n(serialDescriptor, 24, p0.f25318a, num38);
+                        Unit unit26 = Unit.f32008a;
+                        num17 = (Integer) b10.n(serialDescriptor, 24, p0.f31057a, num38);
                         i15 = i33;
                         str54 = str92;
                         str37 = str37;
@@ -1250,9 +1250,9 @@ public /* synthetic */ class GuildEventInviteEmbedImpl$$serializer implements h0
                         num19 = num40;
                         str36 = str74;
                         str34 = str72;
-                        Unit unit27 = Unit.f31988a;
+                        Unit unit27 = Unit.f32008a;
                         i15 = i22 | 33554432;
-                        bool7 = (Boolean) b10.n(serialDescriptor, 25, h.f25266a, bool15);
+                        bool7 = (Boolean) b10.n(serialDescriptor, 25, h.f31005a, bool15);
                         str54 = str54;
                         str37 = str93;
                         codedLinkExtendedType2 = codedLinkExtendedType4;
@@ -1284,8 +1284,8 @@ public /* synthetic */ class GuildEventInviteEmbedImpl$$serializer implements h0
                         num19 = num40;
                         str36 = str74;
                         str35 = str73;
-                        Unit unit28 = Unit.f31988a;
-                        str34 = (String) b10.n(serialDescriptor, 26, n2.f25302a, str72);
+                        Unit unit28 = Unit.f32008a;
+                        str34 = (String) b10.n(serialDescriptor, 26, n2.f31041a, str72);
                         i15 = i22 | 67108864;
                         str54 = str94;
                         str37 = str37;
@@ -1318,9 +1318,9 @@ public /* synthetic */ class GuildEventInviteEmbedImpl$$serializer implements h0
                         num19 = num40;
                         str36 = str74;
                         num18 = num39;
-                        Unit unit29 = Unit.f31988a;
+                        Unit unit29 = Unit.f32008a;
                         i15 = i22 | 134217728;
-                        str35 = (String) b10.n(serialDescriptor, 27, n2.f25302a, str73);
+                        str35 = (String) b10.n(serialDescriptor, 27, n2.f31041a, str73);
                         str54 = str54;
                         str37 = str95;
                         codedLinkExtendedType2 = codedLinkExtendedType4;
@@ -1352,8 +1352,8 @@ public /* synthetic */ class GuildEventInviteEmbedImpl$$serializer implements h0
                         String str96 = str54;
                         str36 = str74;
                         num19 = num40;
-                        Unit unit30 = Unit.f31988a;
-                        num18 = (Integer) b10.n(serialDescriptor, 28, p0.f25318a, num39);
+                        Unit unit30 = Unit.f32008a;
+                        num18 = (Integer) b10.n(serialDescriptor, 28, p0.f31057a, num39);
                         i15 = i22 | 268435456;
                         str54 = str96;
                         str37 = str37;
@@ -1386,9 +1386,9 @@ public /* synthetic */ class GuildEventInviteEmbedImpl$$serializer implements h0
                         num13 = num29;
                         String str97 = str37;
                         str36 = str74;
-                        Unit unit31 = Unit.f31988a;
+                        Unit unit31 = Unit.f32008a;
                         i15 = i22 | 536870912;
-                        num19 = (Integer) b10.n(serialDescriptor, 29, p0.f25318a, num40);
+                        num19 = (Integer) b10.n(serialDescriptor, 29, p0.f31057a, num40);
                         str54 = str54;
                         str37 = str97;
                         codedLinkExtendedType2 = codedLinkExtendedType4;
@@ -1420,8 +1420,8 @@ public /* synthetic */ class GuildEventInviteEmbedImpl$$serializer implements h0
                     case 30:
                         num13 = num29;
                         String str98 = str54;
-                        Unit unit32 = Unit.f31988a;
-                        str36 = (String) b10.n(serialDescriptor, 30, n2.f25302a, str74);
+                        Unit unit32 = Unit.f32008a;
+                        str36 = (String) b10.n(serialDescriptor, 30, n2.f31041a, str74);
                         i15 = i22 | 1073741824;
                         str54 = str98;
                         str37 = str37;
@@ -1455,8 +1455,8 @@ public /* synthetic */ class GuildEventInviteEmbedImpl$$serializer implements h0
                     case ChatViewRecyclerTypes.EMBEDDED_ACTIVITY_INVITE /* 31 */:
                         num13 = num29;
                         i22 |= Integer.MIN_VALUE;
-                        Unit unit33 = Unit.f31988a;
-                        bool16 = (Boolean) b10.n(serialDescriptor, 31, h.f25266a, bool16);
+                        Unit unit33 = Unit.f32008a;
+                        bool16 = (Boolean) b10.n(serialDescriptor, 31, h.f31005a, bool16);
                         str54 = str54;
                         codedLinkExtendedType2 = codedLinkExtendedType4;
                         inviteType2 = inviteType3;
@@ -1488,10 +1488,10 @@ public /* synthetic */ class GuildEventInviteEmbedImpl$$serializer implements h0
                         i15 = i22;
                         break;
                     case 32:
-                        p0 p0Var2 = p0.f25318a;
+                        p0 p0Var2 = p0.f31057a;
                         num13 = num29;
                         i19 |= 1;
-                        Unit unit34 = Unit.f31988a;
+                        Unit unit34 = Unit.f32008a;
                         num33 = (Integer) b10.n(serialDescriptor, 32, p0Var2, num33);
                         codedLinkExtendedType2 = codedLinkExtendedType4;
                         inviteType2 = inviteType3;
@@ -1525,9 +1525,9 @@ public /* synthetic */ class GuildEventInviteEmbedImpl$$serializer implements h0
                     case ChatViewRecyclerTypes.AUTO_MODERATION_NOTIFICATION_EMBED /* 33 */:
                         num21 = num33;
                         i19 |= 2;
-                        Unit unit35 = Unit.f31988a;
+                        Unit unit35 = Unit.f32008a;
                         num13 = num29;
-                        str58 = (String) b10.n(serialDescriptor, 33, n2.f25302a, str58);
+                        str58 = (String) b10.n(serialDescriptor, 33, n2.f31041a, str58);
                         codedLinkExtendedType2 = codedLinkExtendedType4;
                         inviteType2 = inviteType3;
                         num14 = num34;
@@ -1561,9 +1561,9 @@ public /* synthetic */ class GuildEventInviteEmbedImpl$$serializer implements h0
                     case ChatViewRecyclerTypes.CHANNEL_DEADCHAT_PROMPT_ACTIONS /* 34 */:
                         num21 = num33;
                         i19 |= 4;
-                        Unit unit36 = Unit.f31988a;
+                        Unit unit36 = Unit.f32008a;
                         num13 = num29;
-                        str59 = (String) b10.n(serialDescriptor, 34, n2.f25302a, str59);
+                        str59 = (String) b10.n(serialDescriptor, 34, n2.f31041a, str59);
                         codedLinkExtendedType2 = codedLinkExtendedType4;
                         inviteType2 = inviteType3;
                         num14 = num34;
@@ -1597,9 +1597,9 @@ public /* synthetic */ class GuildEventInviteEmbedImpl$$serializer implements h0
                     case ChatViewRecyclerTypes.INFO_LINK /* 35 */:
                         num21 = num33;
                         i19 |= 8;
-                        Unit unit37 = Unit.f31988a;
+                        Unit unit37 = Unit.f32008a;
                         num13 = num29;
-                        str57 = (String) b10.n(serialDescriptor, 35, n2.f25302a, str57);
+                        str57 = (String) b10.n(serialDescriptor, 35, n2.f31041a, str57);
                         codedLinkExtendedType2 = codedLinkExtendedType4;
                         inviteType2 = inviteType3;
                         num14 = num34;
@@ -1633,9 +1633,9 @@ public /* synthetic */ class GuildEventInviteEmbedImpl$$serializer implements h0
                     case ChatViewRecyclerTypes.SAFETY_POLICY_NOTICE /* 36 */:
                         num21 = num33;
                         i19 |= 16;
-                        Unit unit38 = Unit.f31988a;
+                        Unit unit38 = Unit.f32008a;
                         num13 = num29;
-                        num31 = (Integer) b10.n(serialDescriptor, 36, p0.f25318a, num31);
+                        num31 = (Integer) b10.n(serialDescriptor, 36, p0.f31057a, num31);
                         codedLinkExtendedType2 = codedLinkExtendedType4;
                         inviteType2 = inviteType3;
                         num14 = num34;
@@ -1669,9 +1669,9 @@ public /* synthetic */ class GuildEventInviteEmbedImpl$$serializer implements h0
                     case ChatViewRecyclerTypes.POLL_TEXT_AND_IMAGE /* 37 */:
                         num21 = num33;
                         i19 |= 32;
-                        Unit unit39 = Unit.f31988a;
+                        Unit unit39 = Unit.f32008a;
                         num13 = num29;
-                        num30 = (Integer) b10.n(serialDescriptor, 37, p0.f25318a, num30);
+                        num30 = (Integer) b10.n(serialDescriptor, 37, p0.f31057a, num30);
                         codedLinkExtendedType2 = codedLinkExtendedType4;
                         inviteType2 = inviteType3;
                         num14 = num34;
@@ -1705,9 +1705,9 @@ public /* synthetic */ class GuildEventInviteEmbedImpl$$serializer implements h0
                     case ChatViewRecyclerTypes.POLL_IMAGE_ONLY /* 38 */:
                         num21 = num33;
                         i19 |= 64;
-                        Unit unit40 = Unit.f31988a;
+                        Unit unit40 = Unit.f32008a;
                         num13 = num29;
-                        num32 = (Integer) b10.n(serialDescriptor, 38, p0.f25318a, num32);
+                        num32 = (Integer) b10.n(serialDescriptor, 38, p0.f31057a, num32);
                         codedLinkExtendedType2 = codedLinkExtendedType4;
                         inviteType2 = inviteType3;
                         num14 = num34;
@@ -1741,9 +1741,9 @@ public /* synthetic */ class GuildEventInviteEmbedImpl$$serializer implements h0
                     case ChatViewRecyclerTypes.SAFETY_SYSTEM_NOTIFICATION /* 39 */:
                         num21 = num33;
                         i19 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
-                        Unit unit41 = Unit.f31988a;
+                        Unit unit41 = Unit.f32008a;
                         num13 = num29;
-                        str56 = (String) b10.n(serialDescriptor, 39, n2.f25302a, str56);
+                        str56 = (String) b10.n(serialDescriptor, 39, n2.f31041a, str56);
                         codedLinkExtendedType2 = codedLinkExtendedType4;
                         inviteType2 = inviteType3;
                         num14 = num34;
@@ -1777,9 +1777,9 @@ public /* synthetic */ class GuildEventInviteEmbedImpl$$serializer implements h0
                     case 40:
                         num21 = num33;
                         i19 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
-                        Unit unit42 = Unit.f31988a;
+                        Unit unit42 = Unit.f32008a;
                         num13 = num29;
-                        str55 = (String) b10.n(serialDescriptor, 40, n2.f25302a, str55);
+                        str55 = (String) b10.n(serialDescriptor, 40, n2.f31041a, str55);
                         codedLinkExtendedType2 = codedLinkExtendedType4;
                         inviteType2 = inviteType3;
                         num14 = num34;
@@ -1813,8 +1813,8 @@ public /* synthetic */ class GuildEventInviteEmbedImpl$$serializer implements h0
                     case 41:
                         num21 = num33;
                         i19 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING;
-                        Unit unit43 = Unit.f31988a;
-                        num13 = (Integer) b10.n(serialDescriptor, 41, p0.f25318a, num29);
+                        Unit unit43 = Unit.f32008a;
+                        num13 = (Integer) b10.n(serialDescriptor, 41, p0.f31057a, num29);
                         codedLinkExtendedType2 = codedLinkExtendedType4;
                         inviteType2 = inviteType3;
                         num14 = num34;
@@ -1848,9 +1848,9 @@ public /* synthetic */ class GuildEventInviteEmbedImpl$$serializer implements h0
                     case 42:
                         num21 = num33;
                         i19 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET;
-                        Unit unit44 = Unit.f31988a;
+                        Unit unit44 = Unit.f32008a;
                         num13 = num29;
-                        str37 = (String) b10.n(serialDescriptor, 42, n2.f25302a, str37);
+                        str37 = (String) b10.n(serialDescriptor, 42, n2.f31041a, str37);
                         codedLinkExtendedType2 = codedLinkExtendedType4;
                         inviteType2 = inviteType3;
                         num14 = num34;
@@ -1884,9 +1884,9 @@ public /* synthetic */ class GuildEventInviteEmbedImpl$$serializer implements h0
                     case ChatViewRecyclerTypes.FORWARD_HEADER /* 43 */:
                         num21 = num33;
                         i19 |= RecyclerView.ItemAnimator.FLAG_MOVED;
-                        Unit unit45 = Unit.f31988a;
+                        Unit unit45 = Unit.f32008a;
                         num13 = num29;
-                        str54 = (String) b10.n(serialDescriptor, 43, n2.f25302a, str54);
+                        str54 = (String) b10.n(serialDescriptor, 43, n2.f31041a, str54);
                         codedLinkExtendedType2 = codedLinkExtendedType4;
                         inviteType2 = inviteType3;
                         num14 = num34;
@@ -2002,13 +2002,13 @@ public /* synthetic */ class GuildEventInviteEmbedImpl$$serializer implements h0
         return new GuildEventInviteEmbedImpl(i11, i10, i12, i13, codedLinkExtendedType, i14, str19, inviteType, num11, num, num12, str20, str21, str22, str18, str17, num10, bool3, str16, str15, structurableText, str14, bool2, str13, str12, str11, num8, bool, str10, str9, num7, num6, str8, bool4, num5, str4, str5, str3, num3, num2, num4, str2, str, num9, str7, str6, (SerializationConstructorMarker) null);
     }
 
-    @Override // kotlinx.serialization.KSerializer, dt.o, kotlinx.serialization.DeserializationStrategy
+    @Override // kotlinx.serialization.KSerializer, ft.o, kotlinx.serialization.DeserializationStrategy
     @NotNull
     public final SerialDescriptor getDescriptor() {
         return descriptor;
     }
 
-    @Override // dt.o
+    @Override // ft.o
     public final void serialize(@NotNull Encoder encoder, @NotNull GuildEventInviteEmbedImpl value) {
         Intrinsics.checkNotNullParameter(encoder, "encoder");
         Intrinsics.checkNotNullParameter(value, "value");
@@ -2018,7 +2018,7 @@ public /* synthetic */ class GuildEventInviteEmbedImpl$$serializer implements h0
         b10.c(serialDescriptor);
     }
 
-    @Override // gt.h0
+    @Override // jt.h0
     @NotNull
     public KSerializer[] typeParametersSerializers() {
         return h0.a.a(this);

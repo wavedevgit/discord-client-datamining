@@ -13,15 +13,19 @@ public interface y0 {
         return m(sentryEvent, iScope, null);
     }
 
-    void f(z7 z7Var, Hint hint);
-
-    default boolean g() {
+    default boolean f() {
         return true;
     }
 
+    void g(z7 z7Var, Hint hint);
+
     void h(z6 z6Var);
 
-    default io.sentry.protocol.x i(String str, SentryLevel sentryLevel, IScope iScope) {
+    io.sentry.transport.a0 i();
+
+    boolean isEnabled();
+
+    default io.sentry.protocol.x j(String str, SentryLevel sentryLevel, IScope iScope) {
         SentryEvent sentryEvent = new SentryEvent();
         io.sentry.protocol.m mVar = new io.sentry.protocol.m();
         mVar.f(str);
@@ -30,13 +34,9 @@ public interface y0 {
         return e(sentryEvent, iScope);
     }
 
-    boolean isEnabled();
+    io.sentry.protocol.x k(l5 l5Var, Hint hint);
 
-    io.sentry.transport.a0 j();
-
-    io.sentry.protocol.x k(m3 m3Var, IScope iScope);
-
-    io.sentry.protocol.x l(l5 l5Var, Hint hint);
+    io.sentry.protocol.x l(m3 m3Var, IScope iScope);
 
     io.sentry.protocol.x m(SentryEvent sentryEvent, IScope iScope, Hint hint);
 }

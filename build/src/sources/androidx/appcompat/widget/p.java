@@ -17,13 +17,13 @@ import android.widget.ProgressBar;
 class p {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final int[] f1885c = {16843067, 16843068};
+    private static final int[] f2214c = {16843067, 16843068};
 
     /* renamed from: a  reason: collision with root package name */
-    private final ProgressBar f1886a;
+    private final ProgressBar f2215a;
 
     /* renamed from: b  reason: collision with root package name */
-    private Bitmap f1887b;
+    private Bitmap f2216b;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -43,7 +43,7 @@ class p {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public p(ProgressBar progressBar) {
-        this.f1886a = progressBar;
+        this.f2215a = progressBar;
     }
 
     private Shape a() {
@@ -69,19 +69,19 @@ class p {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Bitmap b() {
-        return this.f1887b;
+        return this.f2216b;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void c(AttributeSet attributeSet, int i10) {
-        v0 v10 = v0.v(this.f1886a.getContext(), attributeSet, f1885c, i10, 0);
+        v0 v10 = v0.v(this.f2215a.getContext(), attributeSet, f2214c, i10, 0);
         Drawable h10 = v10.h(0);
         if (h10 != null) {
-            this.f1886a.setIndeterminateDrawable(e(h10));
+            this.f2215a.setIndeterminateDrawable(e(h10));
         }
         Drawable h11 = v10.h(1);
         if (h11 != null) {
-            this.f1886a.setProgressDrawable(d(h11, false));
+            this.f2215a.setProgressDrawable(d(h11, false));
         }
         v10.x();
     }
@@ -118,8 +118,8 @@ class p {
         } else if (drawable instanceof BitmapDrawable) {
             BitmapDrawable bitmapDrawable = (BitmapDrawable) drawable;
             Bitmap bitmap = bitmapDrawable.getBitmap();
-            if (this.f1887b == null) {
-                this.f1887b = bitmap;
+            if (this.f2216b == null) {
+                this.f2216b = bitmap;
             }
             ShapeDrawable shapeDrawable = new ShapeDrawable(a());
             shapeDrawable.getPaint().setShader(new BitmapShader(bitmap, Shader.TileMode.REPEAT, Shader.TileMode.CLAMP));

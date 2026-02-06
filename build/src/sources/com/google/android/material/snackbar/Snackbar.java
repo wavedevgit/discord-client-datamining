@@ -1,5 +1,6 @@
 package com.google.android.material.snackbar;
 
+import ah.h;
 import android.content.Context;
 import android.content.res.ColorStateList;
 import android.content.res.TypedArray;
@@ -16,7 +17,6 @@ import android.widget.FrameLayout;
 import android.widget.TextView;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import com.google.android.material.snackbar.BaseTransientBottomBar;
-import zg.h;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class Snackbar extends BaseTransientBottomBar {
     private static final int[] J;
@@ -84,9 +84,9 @@ public class Snackbar extends BaseTransientBottomBar {
     }
 
     static {
-        int i10 = zg.b.V;
+        int i10 = ah.b.V;
         J = new int[]{i10};
-        K = new int[]{i10, zg.b.X};
+        K = new int[]{i10, ah.b.X};
     }
 
     private Snackbar(Context context, ViewGroup viewGroup, View view, com.google.android.material.snackbar.a aVar) {
@@ -121,7 +121,7 @@ public class Snackbar extends BaseTransientBottomBar {
     }
 
     private SnackbarContentLayout i0() {
-        return (SnackbarContentLayout) this.f15334i.getChildAt(0);
+        return (SnackbarContentLayout) this.f15314i.getChildAt(0);
     }
 
     private TextView j0() {
@@ -152,9 +152,9 @@ public class Snackbar extends BaseTransientBottomBar {
             }
             LayoutInflater from = LayoutInflater.from(context);
             if (k0(context)) {
-                i11 = h.f55676u;
+                i11 = h.f771u;
             } else {
-                i11 = h.f55658c;
+                i11 = h.f753c;
             }
             SnackbarContentLayout snackbarContentLayout = (SnackbarContentLayout) from.inflate(i11, h02, false);
             Snackbar snackbar = new Snackbar(context, h02, snackbarContentLayout, snackbarContentLayout);

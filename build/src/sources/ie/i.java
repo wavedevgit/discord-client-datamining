@@ -9,21 +9,21 @@ import ne.w0;
 public abstract class i {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Pattern f27373a = Pattern.compile("^NOTE([ \t].*)?$");
+    private static final Pattern f26710a = Pattern.compile("^NOTE([ \t].*)?$");
 
     public static Matcher a(h0 h0Var) {
         String s10;
         while (true) {
             String s11 = h0Var.s();
             if (s11 != null) {
-                if (f27373a.matcher(s11).matches()) {
+                if (f26710a.matcher(s11).matches()) {
                     do {
                         s10 = h0Var.s();
                         if (s10 != null) {
                         }
                     } while (!s10.isEmpty());
                 } else {
-                    Matcher matcher = f.f27347a.matcher(s11);
+                    Matcher matcher = f.f26684a.matcher(s11);
                     if (matcher.matches()) {
                         return matcher;
                     }

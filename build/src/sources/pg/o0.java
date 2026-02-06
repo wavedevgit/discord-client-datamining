@@ -1,148 +1,64 @@
 package pg;
 
-import java.io.Serializable;
-import java.util.Map;
-import java.util.Set;
+import java.util.List;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class o0 implements Map, Serializable {
-
-    /* renamed from: d  reason: collision with root package name */
-    private transient p0 f45584d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private transient p0 f45585e;
+public final class o0 extends p0 {
 
     /* renamed from: i  reason: collision with root package name */
-    private transient h0 f45586i;
+    final transient int f44535i;
 
-    public static o0 c(Object obj, Object obj2) {
-        r.b("optional-module-barcode", "com.google.android.gms.vision.barcode");
-        return l1.g(1, new Object[]{"optional-module-barcode", "com.google.android.gms.vision.barcode"}, null);
+    /* renamed from: o  reason: collision with root package name */
+    final transient int f44536o;
+
+    /* renamed from: p  reason: collision with root package name */
+    final /* synthetic */ p0 f44537p;
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public o0(p0 p0Var, int i10, int i11) {
+        this.f44537p = p0Var;
+        this.f44535i = i10;
+        this.f44536o = i11;
     }
 
-    abstract h0 a();
-
-    @Override // java.util.Map
-    /* renamed from: b */
-    public final h0 values() {
-        h0 h0Var = this.f45586i;
-        if (h0Var == null) {
-            h0 a10 = a();
-            this.f45586i = a10;
-            return a10;
-        }
-        return h0Var;
+    @Override // pg.k0
+    final int c() {
+        return this.f44537p.d() + this.f44535i + this.f44536o;
     }
 
-    @Override // java.util.Map
-    public final void clear() {
-        throw new UnsupportedOperationException();
+    /* JADX INFO: Access modifiers changed from: package-private */
+    @Override // pg.k0
+    public final int d() {
+        return this.f44537p.d() + this.f44535i;
     }
 
-    @Override // java.util.Map
-    public final boolean containsKey(Object obj) {
-        if (get(obj) != null) {
-            return true;
-        }
-        return false;
+    /* JADX INFO: Access modifiers changed from: package-private */
+    @Override // pg.k0
+    public final Object[] e() {
+        return this.f44537p.e();
     }
 
-    @Override // java.util.Map
-    public final boolean containsValue(Object obj) {
-        return values().contains(obj);
+    @Override // pg.p0
+    public final p0 f(int i10, int i11) {
+        c.c(i10, i11, this.f44536o);
+        p0 p0Var = this.f44537p;
+        int i12 = this.f44535i;
+        return p0Var.subList(i10 + i12, i11 + i12);
     }
 
-    abstract p0 d();
-
-    abstract p0 e();
-
-    @Override // java.util.Map
-    public final boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (!(obj instanceof Map)) {
-            return false;
-        }
-        return entrySet().equals(((Map) obj).entrySet());
+    @Override // java.util.List
+    public final Object get(int i10) {
+        c.a(i10, this.f44536o, "index");
+        return this.f44537p.get(i10 + this.f44535i);
     }
 
-    @Override // java.util.Map
-    /* renamed from: f */
-    public final p0 entrySet() {
-        p0 p0Var = this.f45584d;
-        if (p0Var == null) {
-            p0 d10 = d();
-            this.f45584d = d10;
-            return d10;
-        }
-        return p0Var;
+    @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
+    public final int size() {
+        return this.f44536o;
     }
 
-    @Override // java.util.Map
-    public abstract Object get(Object obj);
-
-    @Override // java.util.Map
-    public final Object getOrDefault(Object obj, Object obj2) {
-        Object obj3 = get(obj);
-        if (obj3 != null) {
-            return obj3;
-        }
-        return obj2;
-    }
-
-    @Override // java.util.Map
-    public final int hashCode() {
-        return n1.a(entrySet());
-    }
-
-    @Override // java.util.Map
-    public final boolean isEmpty() {
-        return false;
-    }
-
-    @Override // java.util.Map
-    public final /* bridge */ /* synthetic */ Set keySet() {
-        p0 p0Var = this.f45585e;
-        if (p0Var == null) {
-            p0 e10 = e();
-            this.f45585e = e10;
-            return e10;
-        }
-        return p0Var;
-    }
-
-    @Override // java.util.Map
-    public final Object put(Object obj, Object obj2) {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override // java.util.Map
-    public final void putAll(Map map) {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override // java.util.Map
-    public final Object remove(Object obj) {
-        throw new UnsupportedOperationException();
-    }
-
-    public final String toString() {
-        int size = size();
-        r.a(size, "size");
-        StringBuilder sb2 = new StringBuilder((int) Math.min(size * 8, 1073741824L));
-        sb2.append('{');
-        boolean z10 = true;
-        for (Map.Entry entry : entrySet()) {
-            if (!z10) {
-                sb2.append(", ");
-            }
-            sb2.append(entry.getKey());
-            sb2.append('=');
-            sb2.append(entry.getValue());
-            z10 = false;
-        }
-        sb2.append('}');
-        return sb2.toString();
+    @Override // pg.p0, java.util.List
+    public final /* bridge */ /* synthetic */ List subList(int i10, int i11) {
+        return subList(i10, i11);
     }
 }

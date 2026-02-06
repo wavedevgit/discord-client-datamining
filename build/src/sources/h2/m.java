@@ -7,13 +7,13 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class m extends Exception {
 
     /* renamed from: i  reason: collision with root package name */
-    public static final a f25640i = new a(null);
+    public static final a f25768i = new a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f25641d;
+    private final String f25769d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final CharSequence f25642e;
+    private final CharSequence f25770e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -51,8 +51,8 @@ public abstract class m extends Exception {
             r0 = 0
         Ld:
             r1.<init>(r0)
-            r1.f25641d = r2
-            r1.f25642e = r3
+            r1.f25769d = r2
+            r1.f25770e = r3
             return
         */
         throw new UnsupportedOperationException("Method not decompiled: h2.m.<init>(java.lang.String, java.lang.CharSequence):void");

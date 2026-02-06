@@ -68,7 +68,7 @@ public final class NativeModuleRegistryBuilder {
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
-    @or.c
+    @qr.c
     public NativeModuleRegistryBuilder(@NotNull ReactApplicationContext reactApplicationContext, @NotNull ReactInstanceManager reactInstanceManager) {
         this(reactApplicationContext);
         Intrinsics.checkNotNullParameter(reactApplicationContext, "reactApplicationContext");

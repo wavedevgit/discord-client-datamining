@@ -15,11 +15,11 @@ import r8.h;
 public class KitKatPurgeableDecoder extends DalvikPurgeableDecoder {
 
     /* renamed from: c  reason: collision with root package name */
-    private final com.facebook.imagepipeline.memory.d f10654c;
+    private final com.facebook.imagepipeline.memory.d f10553c;
 
     @d
     public KitKatPurgeableDecoder(com.facebook.imagepipeline.memory.d dVar) {
-        this.f10654c = dVar;
+        this.f10553c = dVar;
     }
 
     private static void h(byte[] bArr, int i10) {
@@ -29,15 +29,15 @@ public class KitKatPurgeableDecoder extends DalvikPurgeableDecoder {
 
     @Override // com.facebook.imagepipeline.nativecode.DalvikPurgeableDecoder
     protected Bitmap c(CloseableReference closeableReference, BitmapFactory.Options options) {
-        h hVar = (h) closeableReference.E0();
+        h hVar = (h) closeableReference.J();
         int size = hVar.size();
-        CloseableReference a10 = this.f10654c.a(size);
+        CloseableReference a10 = this.f10553c.a(size);
         try {
-            byte[] bArr = (byte[]) a10.E0();
-            hVar.p(0, bArr, 0, size);
+            byte[] bArr = (byte[]) a10.J();
+            hVar.q(0, bArr, 0, size);
             return (Bitmap) j.h(BitmapFactory.decodeByteArray(bArr, 0, size, options), "BitmapFactory returned null");
         } finally {
-            CloseableReference.N(a10);
+            CloseableReference.z(a10);
         }
     }
 
@@ -48,9 +48,9 @@ public class KitKatPurgeableDecoder extends DalvikPurgeableDecoder {
         if (DalvikPurgeableDecoder.e(closeableReference, i10)) {
             bArr = null;
         } else {
-            bArr = DalvikPurgeableDecoder.f10640b;
+            bArr = DalvikPurgeableDecoder.f10539b;
         }
-        h hVar = (h) closeableReference.E0();
+        h hVar = (h) closeableReference.J();
         if (i10 <= hVar.size()) {
             z10 = true;
         } else {
@@ -58,19 +58,19 @@ public class KitKatPurgeableDecoder extends DalvikPurgeableDecoder {
         }
         j.b(Boolean.valueOf(z10));
         int i11 = i10 + 2;
-        CloseableReference a10 = this.f10654c.a(i11);
+        CloseableReference a10 = this.f10553c.a(i11);
         try {
-            byte[] bArr2 = (byte[]) a10.E0();
-            hVar.p(0, bArr2, 0, i10);
+            byte[] bArr2 = (byte[]) a10.J();
+            hVar.q(0, bArr2, 0, i10);
             if (bArr != null) {
                 h(bArr2, i10);
                 i10 = i11;
             }
             Bitmap bitmap = (Bitmap) j.h(BitmapFactory.decodeByteArray(bArr2, 0, i10, options), "BitmapFactory returned null");
-            CloseableReference.N(a10);
+            CloseableReference.z(a10);
             return bitmap;
         } catch (Throwable th2) {
-            CloseableReference.N(a10);
+            CloseableReference.z(a10);
             throw th2;
         }
     }

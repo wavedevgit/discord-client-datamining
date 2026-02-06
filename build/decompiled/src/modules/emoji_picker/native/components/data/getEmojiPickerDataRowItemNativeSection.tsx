@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/emoji_picker/native/components/data/getEmojiPickerDataRowItemNativeSection.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1, arg2() {
-        _fun74146: for (var _fun74146_ip = 0;;) switch (_fun74146_ip) {
+        _fun74173: for (var _fun74173_ip = 0;;) switch (_fun74173_ip) {
             case 0:
                 var0 = arg0;
                 var5 = var0.label;
@@ -32,23 +32,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.isSectionNitroLocked;
                 var8 = undefined;
                 if (!(var1 === var8)) {
-                    _fun74146_ip = 39;
-                    continue _fun74146
+                    _fun74173_ip = 39;
+                    continue _fun74173
                 }
             case 37:
                 var1 = false;
             case 39:
                 if (var1) {
-                    _fun74146_ip = 62;
-                    continue _fun74146
+                    _fun74173_ip = 62;
+                    continue _fun74173
                 }
             case 42:
                 var0 = global;
                 var2 = var0.Array;
                 var0 = var2.from;
                 var2 = var0.bind(var2)(var6);
-                _fun74146_ip = 66;
-                continue _fun74146;
+                _fun74173_ip = 66;
+                continue _fun74173;
             case 62:
                 var2 = new Array(0);
             case 66:
@@ -75,4 +75,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [9325, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [9332, 2]);

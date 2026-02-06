@@ -32,8 +32,8 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Reflection;
 import kotlin.jvm.internal.SourceDebugExtension;
-import or.p;
 import org.jetbrains.annotations.NotNull;
+import qr.p;
 @Metadata(d1 = {"\u0000t\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010$\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\f\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\bÆ\u0002\u0018\u00002\u00020\u0001:\u00017B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003JU\u0010\f\u001a\u000e\u0012\u0004\u0012\u00020\u000e\u0012\u0004\u0012\u00020\u00010\r2\u0006\u0010\u000f\u001a\u00020\u000e2\u0006\u0010\u0010\u001a\u00020\u000e2\u0006\u0010\u0011\u001a\u00020\u000e2\n\b\u0002\u0010\u0012\u001a\u0004\u0018\u00010\u00132\n\b\u0002\u0010\u0014\u001a\u0004\u0018\u00010\u00152\n\b\u0002\u0010\u0016\u001a\u0004\u0018\u00010\u000eH\u0002¢\u0006\u0002\u0010\u0017J\u001d\u0010\u0018\u001a\u0004\u0018\u00010\u00192\u0006\u0010\u001a\u001a\u00020\u001b2\u0006\u0010\u001c\u001a\u00020\u001d¢\u0006\u0002\u0010\u001eJ\r\u0010\u001f\u001a\u00020\u0015H\u0000¢\u0006\u0002\b J#\u0010!\u001a\u00020\u00192\u0006\u0010\u001a\u001a\u00020\"2\f\u0010#\u001a\b\u0012\u0004\u0012\u00020%0$H\u0000¢\u0006\u0002\b&J\u0015\u0010'\u001a\u00020\u00192\u0006\u0010(\u001a\u00020\u0006H\u0000¢\u0006\u0002\b)J\u0015\u0010*\u001a\u00020\u00192\u0006\u0010\u001a\u001a\u00020\"H\u0000¢\u0006\u0002\b+J\r\u0010,\u001a\u00020\u0019H\u0000¢\u0006\u0002\b-J\u0010\u0010.\u001a\u00020\u00192\u0006\u0010/\u001a\u00020\nH\u0002J\b\u00100\u001a\u00020\u0019H\u0002J\u0010\u00101\u001a\u00020\u00192\u0006\u0010/\u001a\u000202H\u0002J\b\u00103\u001a\u00020\u0019H\u0002J\u0010\u00104\u001a\u00020\u00192\u0006\u0010/\u001a\u000205H\u0002J\u0016\u00106\u001a\u00020\u00132\f\u0010#\u001a\b\u0012\u0004\u0012\u00020%0$H\u0002R\u0016\u0010\u0004\u001a\n\u0012\u0004\u0012\u00020\u0006\u0018\u00010\u0005X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\bX\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\t\u001a\u0004\u0018\u00010\nX\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u000b\u001a\u0004\u0018\u00010\nX\u0082\u000e¢\u0006\u0002\n\u0000¨\u00068"}, d2 = {"Lcom/discord/foreground_service/ForegroundServiceManager;", "", "<init>", "()V", "serviceRef", "Ljava/lang/ref/WeakReference;", "Landroid/app/Service;", "serviceWakelocks", "Lcom/discord/foreground_service/utils/Wakelocks;", "currentOperation", "Lcom/discord/foreground_service/ForegroundServiceManager$ForegroundServiceOperation;", "nextOperation", "telemetryData", "", "", "action", "detail", "operationKind", "configurationType", "Lcom/discord/foreground_service/service/ServiceNotificationConfiguration$Type;", "guardAllowed", "", "guardReason", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/foreground_service/service/ServiceNotificationConfiguration$Type;Ljava/lang/Boolean;Ljava/lang/String;)Ljava/util/Map;", "handleIntent", "", "context", "Landroid/content/Context;", "intent", "Landroid/content/Intent;", "(Landroid/content/Context;Landroid/content/Intent;)Lkotlin/Unit;", "isRunning", "isRunning$foreground_service_release", "onRequestServiceCreateOrUpdate", "Lcom/facebook/react/bridge/ReactApplicationContext;", "serviceConfigurations", "", "Lcom/discord/foreground_service/service/ServiceNotificationConfiguration;", "onRequestServiceCreateOrUpdate$foreground_service_release", "onServiceCreatedOrUpdated", "foregroundService", "onServiceCreatedOrUpdated$foreground_service_release", "onRequestServiceDestroy", "onRequestServiceDestroy$foreground_service_release", "onServiceDestroyed", "onServiceDestroyed$foreground_service_release", "handleQueueOperation", "op", "handleNextOperation", "handleCreateOrUpdateService", "Lcom/discord/foreground_service/ForegroundServiceManager$ForegroundServiceOperation$CreateOrUpdate;", "onCreateOrUpdateServiceFailed", "handleDestroyService", "Lcom/discord/foreground_service/ForegroundServiceManager$ForegroundServiceOperation$Destroy;", "getTypeFromServiceConfigurationList", "ForegroundServiceOperation", "foreground_service_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nForegroundServiceManager.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ForegroundServiceManager.kt\ncom/discord/foreground_service/ForegroundServiceManager\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 3 NotificationAction.kt\ncom/discord/notifications/actions/intents/NotificationAction$Companion\n+ 4 IntentUtils.kt\ncom/discord/misc/utilities/intent/IntentUtilsKt\n+ 5 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,285:1\n1#2:286\n96#3,2:287\n99#3,2:290\n14#4:289\n1969#5,14:292\n*S KotlinDebug\n*F\n+ 1 ForegroundServiceManager.kt\ncom/discord/foreground_service/ForegroundServiceManager\n*L\n55#1:287,2\n55#1:290,2\n55#1:289\n268#1:292,14\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -299,7 +299,7 @@ public final class ForegroundServiceManager {
                 return handleCreateOrUpdateService$lambda$6$lambda$5;
             }
         });
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -309,7 +309,7 @@ public final class ForegroundServiceManager {
         ForegroundServiceManager foregroundServiceManager = INSTANCE;
         log.w$foreground_service_release("Unable to start service", foregroundServiceManager.telemetryData(ViewProps.START, "start_failed", "create_or_update", type, Boolean.valueOf(result.getAllowed()), result.getReason()), e10);
         foregroundServiceManager.onCreateOrUpdateServiceFailed();
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -318,7 +318,7 @@ public final class ForegroundServiceManager {
         ForegroundServiceManager foregroundServiceManager = INSTANCE;
         Log.w$foreground_service_release$default(log, "Couldn't start ForegroundService", foregroundServiceManager.telemetryData(ViewProps.START, "permission_rejected", "create_or_update", type, Boolean.valueOf(result.getAllowed()), result.getReason()), null, 4, null);
         foregroundServiceManager.onCreateOrUpdateServiceFailed();
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     private final void handleDestroyService(ForegroundServiceOperation.Destroy destroy) {
@@ -417,7 +417,7 @@ public final class ForegroundServiceManager {
             return null;
         }
         genericAction.onNotificationAction(context, false);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     public final synchronized boolean isRunning$foreground_service_release() {

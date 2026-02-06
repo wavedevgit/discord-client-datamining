@@ -9,10 +9,10 @@ import java.io.IOException;
 public class j implements h {
 
     /* renamed from: a  reason: collision with root package name */
-    private int f44996a;
+    private int f43793a;
 
     public j(int i10) {
-        this.f44996a = i10;
+        this.f43793a = i10;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x002e, code lost:
@@ -155,7 +155,7 @@ public class j implements h {
             p.b("SoLoader", "No so name provided in ULE, cannot recover");
             return false;
         } else if (c0Var instanceof b0) {
-            if ((this.f44996a & 1) == 0) {
+            if ((this.f43793a & 1) == 0) {
                 return false;
             }
             c(c0Var, a10);

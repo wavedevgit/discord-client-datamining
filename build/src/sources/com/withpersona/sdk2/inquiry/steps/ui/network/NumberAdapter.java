@@ -12,7 +12,7 @@ import org.jetbrains.annotations.NotNull;
 public final class NumberAdapter {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final NumberAdapter f19772a = new NumberAdapter();
+    public static final NumberAdapter f19752a = new NumberAdapter();
 
     private NumberAdapter() {
     }
@@ -21,9 +21,9 @@ public final class NumberAdapter {
     public final Number fromJson(@NotNull m reader) {
         Number number;
         Intrinsics.checkNotNullParameter(reader, "reader");
-        Object V = reader.V();
-        if (V instanceof Number) {
-            number = (Number) V;
+        Object I = reader.I();
+        if (I instanceof Number) {
+            number = (Number) I;
         } else {
             number = null;
         }

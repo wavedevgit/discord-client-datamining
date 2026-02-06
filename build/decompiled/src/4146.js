@@ -1,139 +1,312 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var5 = require;
-    var1 = exports;
-    var6 = dependencyMap;
-    var0 = 0;
-    var2 = var6[var0];
+    var2 = exports;
+    var0 = require;
+    var _closure1_slot0 = var0;
+    var0 = dependencyMap;
+    var _closure1_slot1 = var0;
+    var3 = function arg0() {
+        _fun37930: for (var _fun37930_ip = 0;;) switch (_fun37930_ip) {
+            case 0:
+                var4 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                var5 = 0;
+                var0 = var6[var5];
+                var3 = undefined;
+                var0 = var4.bind(var3)(var0);
+                var2 = var0.getFileChunk;
+                var0 = arg0;
+                var2 = var2.bind(var3)(var0);
+                var0 = 1;
+                var0 = var6[var0];
+                var0 = var4.bind(var3)(var0);
+                var6 = var0.FileTypes;
+                var4 = var6.checkByFileType;
+                var0 = 'm4v';
+                var0 = var4.bind(var6)(var2, var0);
+                var4 = !var0;
+                var0 = !var4;
+                if (var4) {
+                    _fun37930_ip = 111;
+                    continue _fun37930
+                }
+            case 83:
+                var4 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var1 = var1[var5];
+                var1 = var4.bind(var3)(var1);
+                var1 = var1.isftypStringIncluded;
+                var0 = var1.bind(var3)(var2);
+            case 111:
+                return var0;
+        }
+    };
+    var _closure1_slot2 = var3;
+    var0 = global;
+    var6 = var0.Object;
+    var5 = var6.defineProperty;
+    var4 = {};
+    var0 = true;
+    var4.value = var0;
+    var0 = '__esModule';
+    var0 = var5.bind(var6)(var2, var0, var4);
     var0 = undefined;
-    var3 = var5.bind(var0)(var2);
-    var2 = 1;
-    var2 = var6[var2];
-    var2 = var5.bind(var0)(var2);
-    var _closure1_slot0 = var2;
-    var2 = global;
-    var7 = var2.Object;
-    var6 = var7.defineProperty;
-    var5 = {};
-    var2 = true;
-    var5.value = var2;
-    var2 = '__esModule';
-    var2 = var6.bind(var7)(var1, var2, var5);
-    var1.AudioTypes = var0;
-    var2 = function() {
-        var3 = _closure1_slot0;
-        var2 = _closure1_slot1;
-        var0 = undefined;
-        var1 = this;
-        var1 = var3.bind(var0)(var1, var2);
+    var2.isAVI = var0;
+    var2.isFLV = var0;
+    var2.isM4V = var0;
+    var2.isMKV = var0;
+    var2.isMOV = var0;
+    var2.isMP4 = var0;
+    var2.isOGG = var0;
+    var2.isSWF = var0;
+    var2.isWEBM = var0;
+    var4 = function arg0() {
+        var2 = _closure1_slot0;
+        var4 = _closure1_slot1;
+        var0 = 0;
+        var0 = var4[var0];
+        var1 = undefined;
+        var0 = var2.bind(var1)(var0);
+        var3 = var0.getFileChunk;
+        var0 = arg0;
+        var3 = var3.bind(var1)(var0);
+        var0 = 1;
+        var0 = var4[var0];
+        var0 = var2.bind(var1)(var0);
+        var2 = var0.FileTypes;
+        var1 = var2.checkByFileType;
+        var0 = 'avi';
+        var0 = var1.bind(var2)(var3, var0);
         return var0;
     };
-    var _closure1_slot1 = var2;
-    var2 = var3.bind(var0)(var2);
-    var1.AudioTypes = var2;
-    var1 = {
-        'extension': 'aac',
-        'mimeType': 'audio/aac',
-        'description': 'Advanced Audio Coding (AAC) is an audio coding standard for lossy digital audio compression'
+    var2.isAVI = var4;
+    var4 = function arg0() {
+        _fun37932: for (var _fun37932_ip = 0;;) switch (_fun37932_ip) {
+            case 0:
+                var4 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                var5 = 0;
+                var0 = var6[var5];
+                var3 = undefined;
+                var0 = var4.bind(var3)(var0);
+                var2 = var0.getFileChunk;
+                var0 = arg0;
+                var2 = var2.bind(var3)(var0);
+                var0 = 1;
+                var0 = var6[var0];
+                var0 = var4.bind(var3)(var0);
+                var6 = var0.FileTypes;
+                var4 = var6.checkByFileType;
+                var0 = 'flv';
+                var0 = var4.bind(var6)(var2, var0);
+                var4 = !var0;
+                var0 = !var4;
+                if (var4) {
+                    _fun37932_ip = 111;
+                    continue _fun37932
+                }
+            case 83:
+                var4 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var1 = var1[var5];
+                var1 = var4.bind(var3)(var1);
+                var1 = var1.isFlvStringIncluded;
+                var0 = var1.bind(var3)(var2);
+            case 111:
+                return var0;
+        }
     };
-    var4 = {};
-    var3 = [255, 241];
-    var4.sequence = var3;
-    var3 = 'MPEG-4 Advanced Audio Coding (AAC) Low Complexity (LC) audio file';
-    var4.description = var3;
-    var3 = new Array(2);
-    var3[0] = var4;
-    var4 = {};
-    var5 = [255, 249];
-    var4.sequence = var5;
-    var5 = 'MPEG-2 Advanced Audio Coding (AAC) Low Complexity (LC) audio file';
-    var4.description = var5;
-    var3[1] = var4;
-    var1.signatures = var3;
-    var2.AAC = var1;
-    var1 = {
-        'extension': 'amr',
-        'mimeType': 'audio/amr',
-        'description': 'Adaptive Multi-Rate ACELP (Algebraic Code Excited Linear Prediction) Codec, commonly audio format with GSM cell phones'
+    var2.isFLV = var4;
+    var2.isM4V = var3;
+    var3 = function arg0() {
+        _fun37933: for (var _fun37933_ip = 0;;) switch (_fun37933_ip) {
+            case 0:
+                var2 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var6 = 0;
+                var0 = var5[var6];
+                var4 = undefined;
+                var0 = var2.bind(var4)(var0);
+                var7 = var0.getFileChunk;
+                var3 = arg0;
+                var0 = 64;
+                var3 = var7.bind(var4)(var3, var0);
+                var0 = 1;
+                var0 = var5[var0];
+                var0 = var2.bind(var4)(var0);
+                var5 = var0.FileTypes;
+                var0 = var5.checkByFileType;
+                var2 = 'mkv';
+                var0 = var0.bind(var5)(var3, var2);
+                var5 = !var0;
+                var0 = !var5;
+                if (var5) {
+                    _fun37933_ip = 119;
+                    continue _fun37933
+                }
+            case 87:
+                var5 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var1 = var1[var6];
+                var1 = var5.bind(var4)(var1);
+                var1 = var1.findMatroskaDocTypeElements;
+                var1 = var1.bind(var4)(var3);
+                var0 = var2 === var1;
+            case 119:
+                return var0;
+        }
     };
-    var4 = {};
-    var3 = [35, 33, 65, 77, 82];
-    var4.sequence = var3;
-    var3 = new Array(1);
-    var3[0] = var4;
-    var1.signatures = var3;
-    var2.AMR = var1;
-    var1 = {
-        'extension': 'flac',
-        'mimeType': 'audio/x-flac',
-        'description': 'Free Lossless Audio Codec file'
+    var2.isMKV = var3;
+    var3 = function arg0() {
+        var2 = _closure1_slot0;
+        var4 = _closure1_slot1;
+        var0 = 0;
+        var0 = var4[var0];
+        var1 = undefined;
+        var0 = var2.bind(var1)(var0);
+        var3 = var0.getFileChunk;
+        var0 = arg0;
+        var3 = var3.bind(var1)(var0);
+        var0 = 1;
+        var0 = var4[var0];
+        var0 = var2.bind(var1)(var0);
+        var2 = var0.FileTypes;
+        var1 = var2.checkByFileType;
+        var0 = 'mov';
+        var0 = var1.bind(var2)(var3, var0);
+        return var0;
     };
-    var4 = {};
-    var3 = [102, 76, 97, 67, 0, 0, 0, 34];
-    var4.sequence = var3;
-    var3 = new Array(1);
-    var3[0] = var4;
-    var1.signatures = var3;
-    var2.FLAC = var1;
-    var1 = {
-        'extension': 'm4a',
-        'mimeType': 'audio/x-m4a',
-        'description': 'Apple Lossless Audio Codec file'
+    var2.isMOV = var3;
+    var3 = function arg0, arg1() {
+        _fun37935: for (var _fun37935_ip = 0;;) switch (_fun37935_ip) {
+            case 0:
+                var5 = arg1;
+                var1 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                var0 = 0;
+                var0 = var6[var0];
+                var4 = undefined;
+                var0 = var1.bind(var4)(var0);
+                var3 = var0.getFileChunk;
+                var0 = arg0;
+                var3 = var3.bind(var4)(var0);
+                var0 = 1;
+                var0 = var6[var0];
+                var0 = var1.bind(var4)(var0);
+                var6 = var0.FileTypes;
+                var1 = var6.checkByFileType;
+                var0 = 'mp4';
+                var0 = var1.bind(var6)(var3, var0);
+                var1 = !var0;
+                var0 = !var1;
+                if (!var1) {
+                    _fun37935_ip = 121;
+                    continue _fun37935
+                }
+            case 86:
+                var1 = null;
+                var6 = var1 == var5;
+                var1 = undefined;
+                if (var6) {
+                    _fun37935_ip = 103;
+                    continue _fun37935
+                }
+            case 97:
+                var1 = var5.excludeSimilarTypes;
+            case 103:
+                var1 = !var1;
+                if (!var1) {
+                    _fun37935_ip = 118;
+                    continue _fun37935
+                }
+            case 109:
+                var2 = _closure1_slot2;
+                var1 = var2.bind(var4)(var3);
+            case 118:
+                var0 = var1;
+            case 121:
+                return var0;
+        }
     };
-    var4 = {};
-    var3 = [102, 116, 121, 112, 77, 52, 65, 32];
-    var4.sequence = var3;
-    var3 = 4;
-    var4.offset = var3;
-    var3 = ['aac'];
-    var4.compatibleExtensions = var3;
-    var3 = new Array(1);
-    var3[0] = var4;
-    var1.signatures = var3;
-    var2.M4A = var1;
-    var1 = {
-        'extension': 'mp3',
-        'mimeType': 'audio/mpeg',
-        'description': 'A digital audio file format that uses compression to reduce file size while maintaining high quality sound'
+    var2.isMP4 = var3;
+    var3 = function arg0() {
+        var2 = _closure1_slot0;
+        var4 = _closure1_slot1;
+        var0 = 0;
+        var0 = var4[var0];
+        var1 = undefined;
+        var0 = var2.bind(var1)(var0);
+        var3 = var0.getFileChunk;
+        var0 = arg0;
+        var3 = var3.bind(var1)(var0);
+        var0 = 1;
+        var0 = var4[var0];
+        var0 = var2.bind(var1)(var0);
+        var2 = var0.FileTypes;
+        var1 = var2.checkByFileType;
+        var0 = 'ogg';
+        var0 = var1.bind(var2)(var3, var0);
+        return var0;
     };
-    var4 = {};
-    var3 = [255, 251];
-    var4.sequence = var3;
-    var5 = 'MPEG-1 Layer 3 file without an ID3 tag or with an ID3v1 tag (which is appended at the end of the file)';
-    var4.description = var5;
-    var3 = new Array(4);
-    var3[0] = var4;
-    var4 = {};
-    var6 = [255, 243];
-    var4.sequence = var6;
-    var4.description = var5;
-    var3[1] = var4;
-    var4 = {};
-    var6 = [255, 242];
-    var4.sequence = var6;
-    var4.description = var5;
-    var3[2] = var4;
-    var4 = {};
-    var5 = [73, 68, 51];
-    var4.sequence = var5;
-    var5 = 'MP3 file with an ID3v2 container';
-    var4.description = var5;
-    var3[3] = var4;
-    var1.signatures = var3;
-    var2.MP3 = var1;
-    var1 = {
-        'extension': 'wav',
-        'mimeType': 'audio/wav',
-        'description': 'Waveform Audio File Format'
+    var2.isOGG = var3;
+    var3 = function arg0() {
+        var2 = _closure1_slot0;
+        var4 = _closure1_slot1;
+        var0 = 0;
+        var0 = var4[var0];
+        var1 = undefined;
+        var0 = var2.bind(var1)(var0);
+        var3 = var0.getFileChunk;
+        var0 = arg0;
+        var3 = var3.bind(var1)(var0);
+        var0 = 1;
+        var0 = var4[var0];
+        var0 = var2.bind(var1)(var0);
+        var2 = var0.FileTypes;
+        var1 = var2.checkByFileType;
+        var0 = 'swf';
+        var0 = var1.bind(var2)(var3, var0);
+        return var0;
     };
-    var4 = {};
-    var3 = [82, 73, 70, 70, 87, 65, 86, 69, 102, 109, 116, 32];
-    var4.sequence = var3;
-    var3 = [4, 5, 6, 7];
-    var4.skippedBytes = var3;
-    var3 = new Array(1);
-    var3[0] = var4;
-    var1.signatures = var3;
-    var2.WAV = var1;
+    var2.isSWF = var3;
+    var1 = function arg0() {
+        _fun37938: for (var _fun37938_ip = 0;;) switch (_fun37938_ip) {
+            case 0:
+                var2 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var6 = 0;
+                var0 = var5[var6];
+                var4 = undefined;
+                var0 = var2.bind(var4)(var0);
+                var7 = var0.getFileChunk;
+                var3 = arg0;
+                var0 = 64;
+                var3 = var7.bind(var4)(var3, var0);
+                var0 = 1;
+                var0 = var5[var0];
+                var0 = var2.bind(var4)(var0);
+                var5 = var0.FileTypes;
+                var0 = var5.checkByFileType;
+                var2 = 'webm';
+                var0 = var0.bind(var5)(var3, var2);
+                var5 = !var0;
+                var0 = !var5;
+                if (var5) {
+                    _fun37938_ip = 119;
+                    continue _fun37938
+                }
+            case 87:
+                var5 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var1 = var1[var6];
+                var1 = var5.bind(var4)(var1);
+                var1 = var1.findMatroskaDocTypeElements;
+                var1 = var1.bind(var4)(var3);
+                var0 = var2 === var1;
+            case 119:
+                return var0;
+        }
+    };
+    var2.isWEBM = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7, 6]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4138, 4139]);

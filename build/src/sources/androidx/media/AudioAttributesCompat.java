@@ -6,24 +6,24 @@ import d4.a;
 public class AudioAttributesCompat implements a {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final SparseIntArray f4710b;
+    private static final SparseIntArray f5039b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final int[] f4711c;
+    private static final int[] f5040c;
 
     /* renamed from: a  reason: collision with root package name */
-    public AudioAttributesImpl f4712a;
+    public AudioAttributesImpl f5041a;
 
     static {
         SparseIntArray sparseIntArray = new SparseIntArray();
-        f4710b = sparseIntArray;
+        f5039b = sparseIntArray;
         sparseIntArray.put(5, 1);
         sparseIntArray.put(6, 2);
         sparseIntArray.put(7, 2);
         sparseIntArray.put(8, 1);
         sparseIntArray.put(9, 1);
         sparseIntArray.put(10, 1);
-        f4711c = new int[]{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 16};
+        f5040c = new int[]{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 16};
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -123,21 +123,21 @@ public class AudioAttributesCompat implements a {
             return false;
         }
         AudioAttributesCompat audioAttributesCompat = (AudioAttributesCompat) obj;
-        AudioAttributesImpl audioAttributesImpl = this.f4712a;
+        AudioAttributesImpl audioAttributesImpl = this.f5041a;
         if (audioAttributesImpl == null) {
-            if (audioAttributesCompat.f4712a != null) {
+            if (audioAttributesCompat.f5041a != null) {
                 return false;
             }
             return true;
         }
-        return audioAttributesImpl.equals(audioAttributesCompat.f4712a);
+        return audioAttributesImpl.equals(audioAttributesCompat.f5041a);
     }
 
     public int hashCode() {
-        return this.f4712a.hashCode();
+        return this.f5041a.hashCode();
     }
 
     public String toString() {
-        return this.f4712a.toString();
+        return this.f5041a.toString();
     }
 }

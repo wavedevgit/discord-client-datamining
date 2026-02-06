@@ -27,33 +27,33 @@ import java.util.Iterator;
 public abstract class c {
 
     /* renamed from: p  reason: collision with root package name */
-    protected static final Charset f28791p = Charset.forName("UTF-8");
+    protected static final Charset f27935p = Charset.forName("UTF-8");
 
     /* renamed from: d  reason: collision with root package name */
-    protected k7 f28792d;
+    protected k7 f27936d;
 
     /* renamed from: e  reason: collision with root package name */
-    protected final io.sentry.util.r f28793e = new io.sentry.util.r(new r.a() { // from class: io.sentry.cache.a
+    protected final io.sentry.util.r f27937e = new io.sentry.util.r(new r.a() { // from class: io.sentry.cache.a
         @Override // io.sentry.util.r.a
         public final Object a() {
             b1 serializer;
-            serializer = c.this.f28792d.getSerializer();
+            serializer = c.this.f27936d.getSerializer();
             return serializer;
         }
     });
 
     /* renamed from: i  reason: collision with root package name */
-    protected final File f28794i;
+    protected final File f27938i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final int f28795o;
+    private final int f27939o;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c(k7 k7Var, String str, int i10) {
         y.c(str, "Directory is required.");
-        this.f28792d = (k7) y.c(k7Var, "SentryOptions is required.");
-        this.f28794i = new File(str);
-        this.f28795o = i10;
+        this.f27936d = (k7) y.c(k7Var, "SentryOptions is required.");
+        this.f27938i = new File(str);
+        this.f27939o = i10;
     }
 
     private l5 d(l5 l5Var, l6 l6Var) {
@@ -68,7 +68,7 @@ public abstract class c {
     private z7 e(l5 l5Var) {
         for (l6 l6Var : l5Var.c()) {
             if (g(l6Var)) {
-                return n(l6Var);
+                return o(l6Var);
             }
         }
         return null;
@@ -101,10 +101,10 @@ public abstract class c {
         File file2;
         l5 l10;
         l6 l6Var;
-        z7 n10;
+        z7 o10;
         l5 l11 = l(file);
         if (l11 != null && h(l11)) {
-            this.f28792d.getClientReportRecorder().b(io.sentry.clientreport.f.CACHE_OVERFLOW, l11);
+            this.f27936d.getClientReportRecorder().b(io.sentry.clientreport.f.CACHE_OVERFLOW, l11);
             z7 e10 = e(l11);
             if (e10 != null && i(e10) && (g10 = e10.g()) != null && g10.booleanValue()) {
                 int length = fileArr.length;
@@ -119,19 +119,19 @@ public abstract class c {
                                 break;
                             }
                             l6 l6Var2 = (l6) it.next();
-                            if (g(l6Var2) && (n10 = n(l6Var2)) != null && i(n10)) {
-                                Boolean g11 = n10.g();
+                            if (g(l6Var2) && (o10 = o(l6Var2)) != null && i(o10)) {
+                                Boolean g11 = o10.g();
                                 if (g11 != null && g11.booleanValue()) {
-                                    this.f28792d.getLogger().c(SentryLevel.ERROR, "Session %s has 2 times the init flag.", e10.j());
+                                    this.f27936d.getLogger().c(SentryLevel.ERROR, "Session %s has 2 times the init flag.", e10.j());
                                     return;
-                                } else if (e10.j() != null && e10.j().equals(n10.j())) {
-                                    n10.n();
+                                } else if (e10.j() != null && e10.j().equals(o10.j())) {
+                                    o10.n();
                                     try {
-                                        l6Var = l6.G((b1) this.f28793e.a(), n10);
+                                        l6Var = l6.G((b1) this.f27937e.a(), o10);
                                         it.remove();
                                         break;
                                     } catch (IOException e11) {
-                                        this.f28792d.getLogger().a(SentryLevel.ERROR, e11, "Failed to create new envelope item for the session %s", e10.j());
+                                        this.f27936d.getLogger().a(SentryLevel.ERROR, e11, "Failed to create new envelope item for the session %s", e10.j());
                                     }
                                 }
                             }
@@ -147,9 +147,9 @@ public abstract class c {
             l5 d10 = d(l10, l6Var);
             long lastModified = file2.lastModified();
             if (!file2.delete()) {
-                this.f28792d.getLogger().c(SentryLevel.WARNING, "File can't be deleted: %s", file2.getAbsolutePath());
+                this.f27936d.getLogger().c(SentryLevel.WARNING, "File can't be deleted: %s", file2.getAbsolutePath());
             }
-            p(d10, file2, lastModified);
+            q(d10, file2, lastModified);
             return;
         }
     }
@@ -157,39 +157,39 @@ public abstract class c {
     private l5 l(File file) {
         try {
             BufferedInputStream bufferedInputStream = new BufferedInputStream(new FileInputStream(file));
-            l5 d10 = ((b1) this.f28793e.a()).d(bufferedInputStream);
+            l5 d10 = ((b1) this.f27937e.a()).d(bufferedInputStream);
             bufferedInputStream.close();
             return d10;
         } catch (IOException e10) {
-            this.f28792d.getLogger().b(SentryLevel.ERROR, "Failed to deserialize the envelope.", e10);
+            this.f27936d.getLogger().b(SentryLevel.ERROR, "Failed to deserialize the envelope.", e10);
             return null;
         }
     }
 
-    private z7 n(l6 l6Var) {
+    private z7 o(l6 l6Var) {
         try {
-            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new ByteArrayInputStream(l6Var.I()), f28791p));
-            z7 z7Var = (z7) ((b1) this.f28793e.a()).c(bufferedReader, z7.class);
+            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new ByteArrayInputStream(l6Var.I()), f27935p));
+            z7 z7Var = (z7) ((b1) this.f27937e.a()).c(bufferedReader, z7.class);
             bufferedReader.close();
             return z7Var;
         } catch (Throwable th2) {
-            this.f28792d.getLogger().b(SentryLevel.ERROR, "Failed to deserialize the session.", th2);
+            this.f27936d.getLogger().b(SentryLevel.ERROR, "Failed to deserialize the session.", th2);
             return null;
         }
     }
 
-    private void p(l5 l5Var, File file, long j10) {
+    private void q(l5 l5Var, File file, long j10) {
         try {
             FileOutputStream fileOutputStream = new FileOutputStream(file);
-            ((b1) this.f28793e.a()).b(l5Var, fileOutputStream);
+            ((b1) this.f27937e.a()).b(l5Var, fileOutputStream);
             file.setLastModified(j10);
             fileOutputStream.close();
         } catch (Throwable th2) {
-            this.f28792d.getLogger().b(SentryLevel.ERROR, "Failed to serialize the new envelope to the disk.", th2);
+            this.f27936d.getLogger().b(SentryLevel.ERROR, "Failed to serialize the new envelope to the disk.", th2);
         }
     }
 
-    private void q(File[] fileArr) {
+    private void r(File[] fileArr) {
         if (fileArr.length > 1) {
             Arrays.sort(fileArr, new Comparator() { // from class: io.sentry.cache.b
                 @Override // java.util.Comparator
@@ -204,26 +204,26 @@ public abstract class c {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public boolean f() {
-        if (this.f28794i.isDirectory() && this.f28794i.canWrite() && this.f28794i.canRead()) {
+        if (this.f27938i.isDirectory() && this.f27938i.canWrite() && this.f27938i.canRead()) {
             return true;
         }
-        this.f28792d.getLogger().c(SentryLevel.ERROR, "The directory for caching files is inaccessible.: %s", this.f28794i.getAbsolutePath());
+        this.f27936d.getLogger().c(SentryLevel.ERROR, "The directory for caching files is inaccessible.: %s", this.f27938i.getAbsolutePath());
         return false;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    public void o(File[] fileArr) {
+    public void p(File[] fileArr) {
         int length = fileArr.length;
-        if (length >= this.f28795o) {
-            this.f28792d.getLogger().c(SentryLevel.WARNING, "Cache folder if full (respecting maxSize). Rotating files", new Object[0]);
-            int i10 = (length - this.f28795o) + 1;
-            q(fileArr);
+        if (length >= this.f27939o) {
+            this.f27936d.getLogger().c(SentryLevel.WARNING, "Cache folder if full (respecting maxSize). Rotating files", new Object[0]);
+            int i10 = (length - this.f27939o) + 1;
+            r(fileArr);
             File[] fileArr2 = (File[]) Arrays.copyOfRange(fileArr, i10, length);
             for (int i11 = 0; i11 < i10; i11++) {
                 File file = fileArr[i11];
                 j(file, fileArr2);
                 if (!file.delete()) {
-                    this.f28792d.getLogger().c(SentryLevel.WARNING, "File can't be deleted: %s", file.getAbsolutePath());
+                    this.f27936d.getLogger().c(SentryLevel.WARNING, "File can't be deleted: %s", file.getAbsolutePath());
                 }
             }
         }

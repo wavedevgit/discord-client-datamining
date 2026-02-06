@@ -1,6 +1,5 @@
 package com.discord.chat.bridge.structurabletext;
 
-import ht.e;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Reflection;
@@ -8,8 +7,9 @@ import kotlinx.serialization.DeserializationStrategy;
 import kotlinx.serialization.json.JsonArray;
 import kotlinx.serialization.json.JsonElement;
 import kotlinx.serialization.json.JsonPrimitive;
+import kt.e;
 import org.jetbrains.annotations.NotNull;
-@Metadata(d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\bÀ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u001d\u0010\b\u001a\b\u0012\u0004\u0012\u00020\u00020\u00072\u0006\u0010\u0006\u001a\u00020\u0005H\u0014¢\u0006\u0004\b\b\u0010\t¨\u0006\n"}, d2 = {"Lcom/discord/chat/bridge/structurabletext/StructurableTextSerializer;", "Lht/e;", "Lcom/discord/chat/bridge/structurabletext/StructurableText;", "<init>", "()V", "Lkotlinx/serialization/json/JsonElement;", "element", "Lkotlinx/serialization/DeserializationStrategy;", "selectDeserializer", "(Lkotlinx/serialization/json/JsonElement;)Lkotlinx/serialization/DeserializationStrategy;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+@Metadata(d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\bÀ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u001d\u0010\b\u001a\b\u0012\u0004\u0012\u00020\u00020\u00072\u0006\u0010\u0006\u001a\u00020\u0005H\u0014¢\u0006\u0004\b\b\u0010\t¨\u0006\n"}, d2 = {"Lcom/discord/chat/bridge/structurabletext/StructurableTextSerializer;", "Lkt/e;", "Lcom/discord/chat/bridge/structurabletext/StructurableText;", "<init>", "()V", "Lkotlinx/serialization/json/JsonElement;", "element", "Lkotlinx/serialization/DeserializationStrategy;", "selectDeserializer", "(Lkotlinx/serialization/json/JsonElement;)Lkotlinx/serialization/DeserializationStrategy;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class StructurableTextSerializer extends e {
     @NotNull
@@ -19,7 +19,7 @@ public final class StructurableTextSerializer extends e {
         super(Reflection.getOrCreateKotlinClass(StructurableText.class));
     }
 
-    @Override // ht.e
+    @Override // kt.e
     @NotNull
     protected DeserializationStrategy selectDeserializer(@NotNull JsonElement element) {
         Intrinsics.checkNotNullParameter(element, "element");

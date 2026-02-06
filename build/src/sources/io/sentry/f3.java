@@ -1,6 +1,10 @@
 package io.sentry;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public interface f3 {
+    void A(boolean z10);
+
+    f3 D();
+
     String a();
 
     f3 b(long j10);
@@ -25,13 +29,9 @@ public interface f3 {
 
     f3 l();
 
-    f3 s();
-
-    f3 t();
+    f3 u();
 
     f3 v();
 
-    void w(boolean z10);
-
-    f3 z();
+    f3 x();
 }

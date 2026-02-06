@@ -27,7 +27,7 @@ public final class PostPreviewEmbedViewHolder extends MessagePartViewHolder {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void bind$lambda$0(Function4 function4, PostPreviewEmbed postPreviewEmbed, View view) {
-        function4.invoke(GuildId.m1072boximpl(postPreviewEmbed.m404getGuildIdfYKD8eg()), ChannelId.m1059boximpl(postPreviewEmbed.m406getParentChannelIdo4g7jtM()), ChannelId.m1059boximpl(postPreviewEmbed.m407getThreadIdo4g7jtM()), MessageId.m1085boximpl(postPreviewEmbed.m405getMessageId3Eiw7ao()));
+        function4.invoke(GuildId.m1070boximpl(postPreviewEmbed.m402getGuildIdfYKD8eg()), ChannelId.m1057boximpl(postPreviewEmbed.m404getParentChannelIdo4g7jtM()), ChannelId.m1057boximpl(postPreviewEmbed.m405getThreadIdo4g7jtM()), MessageId.m1083boximpl(postPreviewEmbed.m403getMessageId3Eiw7ao()));
     }
 
     public final void bind(@NotNull final PostPreviewEmbed postPreviewEmbed, @NotNull final Function4 onTapPostPreviewEmbed, SpoilerConfig spoilerConfig) {
@@ -42,7 +42,7 @@ public final class PostPreviewEmbedViewHolder extends MessagePartViewHolder {
         int ctaButtonColor = postPreviewEmbed.getCtaButtonColor();
         String coverImage = postPreviewEmbed.getCoverImage();
         String blurredCoverImage = postPreviewEmbed.getBlurredCoverImage();
-        String m405getMessageId3Eiw7ao = postPreviewEmbed.m405getMessageId3Eiw7ao();
+        String m403getMessageId3Eiw7ao = postPreviewEmbed.m403getMessageId3Eiw7ao();
         StructurableText footer = postPreviewEmbed.getFooter();
         String coverImageOverlayText = postPreviewEmbed.getCoverImageOverlayText();
         String backgroundImage = postPreviewEmbed.getBackgroundImage();
@@ -70,6 +70,6 @@ public final class PostPreviewEmbedViewHolder extends MessagePartViewHolder {
         if (obscureIsOpaque != null) {
             z12 = obscureIsOpaque.booleanValue();
         }
-        postPreviewEmbedView.m705setPostPreviewEmbed4itWklQ(title, subtitle, ctaText, ctaButtonColor, footer, m405getMessageId3Eiw7ao, coverImage, blurredCoverImage, coverImageOverlayText, backgroundImage, onClickListener, shouldSpoiler, z10, z11, z12, spoilerConfig);
+        postPreviewEmbedView.m703setPostPreviewEmbed4itWklQ(title, subtitle, ctaText, ctaButtonColor, footer, m403getMessageId3Eiw7ao, coverImage, blurredCoverImage, coverImageOverlayText, backgroundImage, onClickListener, shouldSpoiler, z10, z11, z12, spoilerConfig);
     }
 }

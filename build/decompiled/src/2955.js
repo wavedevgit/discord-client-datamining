@@ -27,7 +27,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = _closure1_slot1;
                 var0 = var0[var3];
                 var0 = var1.bind(var2)(var0);
-                var1 = var0.millisecondsInSecond;
+                var1 = var0.millisecondsInHour;
                 var0 = arg0;
                 var2 = var0 / var1;
                 var0 = global;
@@ -63,4 +63,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var1.exports = var2;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [2574, 2752]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2576, 2754]);

@@ -1,20 +1,41 @@
 package yp;
 
-import bn.a0;
-import kotlin.jvm.internal.Intrinsics;
+import kotlin.enums.EnumEntries;
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class c {
-    public static final void a(a0 a0Var, int i10) {
-        a aVar;
-        Intrinsics.checkNotNullParameter(a0Var, "<this>");
-        Object obj = a0Var.b().get(b.f54908b);
-        if (obj instanceof a) {
-            aVar = (a) obj;
-        } else {
-            aVar = null;
-        }
-        if (aVar != null) {
-            aVar.a(i10);
-        }
+public final class c {
+
+    /* renamed from: d  reason: collision with root package name */
+    public static final c f55542d = new c("ROUGH", 0);
+
+    /* renamed from: e  reason: collision with root package name */
+    public static final c f55543e = new c("PRECISE", 1);
+
+    /* renamed from: i  reason: collision with root package name */
+    private static final /* synthetic */ c[] f55544i;
+
+    /* renamed from: o  reason: collision with root package name */
+    private static final /* synthetic */ EnumEntries f55545o;
+
+    static {
+        c[] a10 = a();
+        f55544i = a10;
+        f55545o = xr.a.a(a10);
+    }
+
+    private c(String str, int i10) {
+    }
+
+    private static final /* synthetic */ c[] a() {
+        return new c[]{f55542d, f55543e};
+    }
+
+    public static c valueOf(String str) {
+        return (c) Enum.valueOf(c.class, str);
+    }
+
+    public static c[] values() {
+        return (c[]) f55544i.clone();
     }
 }

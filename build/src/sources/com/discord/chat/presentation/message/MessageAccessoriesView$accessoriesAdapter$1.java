@@ -16,12 +16,12 @@ import kotlin.jvm.internal.FunctionReferenceImpl;
 
     @Override // kotlin.jvm.functions.Function0
     public /* bridge */ /* synthetic */ Object invoke() {
-        m531invoke();
-        return Unit.f31988a;
+        m529invoke();
+        return Unit.f32008a;
     }
 
     /* renamed from: invoke  reason: collision with other method in class */
-    public final void m531invoke() {
+    public final void m529invoke() {
         ViewMeasureExtensionsKt.measureAndLayout((View) this.receiver);
     }
 }

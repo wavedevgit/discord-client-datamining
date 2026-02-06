@@ -34,7 +34,7 @@ public final class ActivityRichPresenceInviteEmbedViewHolder extends MessagePart
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void bind$lambda$0(Function1 function1, ActivityRichPresenceInviteEmbedMessageAccessory activityRichPresenceInviteEmbedMessageAccessory, View view) {
-        function1.invoke(MessageId.m1085boximpl(activityRichPresenceInviteEmbedMessageAccessory.mo538getMessageId3Eiw7ao()));
+        function1.invoke(MessageId.m1083boximpl(activityRichPresenceInviteEmbedMessageAccessory.mo536getMessageId3Eiw7ao()));
     }
 
     public final void bind(@NotNull final ActivityRichPresenceInviteEmbedMessageAccessory accessory, @NotNull final Function1<? super MessageId, Unit> onTapJoinRichPresence) {
@@ -86,16 +86,16 @@ public final class ActivityRichPresenceInviteEmbedViewHolder extends MessagePart
         if (maxPartySize != null) {
             i10 = maxPartySize.intValue();
         }
-        activityRichPresenceInviteEmbedView.m683setActivityRichPresenceInviteEmbeddJIpDCQ(margins, z10, ctaButtonText, z16, footerLabel, gradientColors, headerText, iconSrc, z13, z14, i10, new View.OnClickListener() { // from class: com.discord.chat.presentation.message.viewholder.a
+        activityRichPresenceInviteEmbedView.m681setActivityRichPresenceInviteEmbeddJIpDCQ(margins, z10, ctaButtonText, z16, footerLabel, gradientColors, headerText, iconSrc, z13, z14, i10, new View.OnClickListener() { // from class: com.discord.chat.presentation.message.viewholder.a
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 ActivityRichPresenceInviteEmbedViewHolder.bind$lambda$0(Function1.this, accessory, view);
             }
-        }, activityRichPresenceInviteEmbed.getPartyMemberAvatarURIs(), activityRichPresenceInviteEmbed.getPartySizeText(), activityRichPresenceInviteEmbed.getPlatformIconKeys(), activityRichPresenceInviteEmbed.getCoverImageUrl(), activityRichPresenceInviteEmbed.getSubtitle(), activityRichPresenceInviteEmbed.getTitle(), activityRichPresenceInviteEmbed.getHiddenEmbedMessageContent(), accessory.mo538getMessageId3Eiw7ao(), new ActivityRichPresenceInviteEmbedViewHolder$bind$2(this.eventHandler), new ActivityRichPresenceInviteEmbedViewHolder$bind$3(this.eventHandler), new ActivityRichPresenceInviteEmbedViewHolder$bind$4(this.eventHandler), new ActivityRichPresenceInviteEmbedViewHolder$bind$5(this.eventHandler), new ActivityRichPresenceInviteEmbedViewHolder$bind$6(this.eventHandler), new ActivityRichPresenceInviteEmbedViewHolder$bind$7(this.eventHandler), new ActivityRichPresenceInviteEmbedViewHolder$bind$8(this.eventHandler), new ActivityRichPresenceInviteEmbedViewHolder$bind$9(this.eventHandler), new ActivityRichPresenceInviteEmbedViewHolder$bind$10(this.eventHandler), new Function0() { // from class: com.discord.chat.presentation.message.viewholder.b
+        }, activityRichPresenceInviteEmbed.getPartyMemberAvatarURIs(), activityRichPresenceInviteEmbed.getPartySizeText(), activityRichPresenceInviteEmbed.getPlatformIconKeys(), activityRichPresenceInviteEmbed.getCoverImageUrl(), activityRichPresenceInviteEmbed.getSubtitle(), activityRichPresenceInviteEmbed.getTitle(), activityRichPresenceInviteEmbed.getHiddenEmbedMessageContent(), accessory.mo536getMessageId3Eiw7ao(), new ActivityRichPresenceInviteEmbedViewHolder$bind$2(this.eventHandler), new ActivityRichPresenceInviteEmbedViewHolder$bind$3(this.eventHandler), new ActivityRichPresenceInviteEmbedViewHolder$bind$4(this.eventHandler), new ActivityRichPresenceInviteEmbedViewHolder$bind$5(this.eventHandler), new ActivityRichPresenceInviteEmbedViewHolder$bind$6(this.eventHandler), new ActivityRichPresenceInviteEmbedViewHolder$bind$7(this.eventHandler), new ActivityRichPresenceInviteEmbedViewHolder$bind$8(this.eventHandler), new ActivityRichPresenceInviteEmbedViewHolder$bind$9(this.eventHandler), new ActivityRichPresenceInviteEmbedViewHolder$bind$10(this.eventHandler), new Function0() { // from class: com.discord.chat.presentation.message.viewholder.b
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit unit;
-                unit = Unit.f31988a;
+                unit = Unit.f32008a;
                 return unit;
             }
         }, new ActivityRichPresenceInviteEmbedViewHolder$bind$12(this.eventHandler), new ActivityRichPresenceInviteEmbedViewHolder$bind$13(this.eventHandler), new ActivityRichPresenceInviteEmbedViewHolder$bind$14(this.eventHandler), new ActivityRichPresenceInviteEmbedViewHolder$bind$15(this.eventHandler), new ActivityRichPresenceInviteEmbedViewHolder$bind$16(this.eventHandler));

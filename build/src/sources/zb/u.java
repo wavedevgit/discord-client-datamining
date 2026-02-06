@@ -22,5 +22,5 @@ public abstract class u implements Closeable {
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public abstract t h();
+    public abstract t g();
 }

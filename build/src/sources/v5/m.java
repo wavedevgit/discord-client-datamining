@@ -7,51 +7,51 @@ import w5.c;
 public abstract class m {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final c.a f51850a = c.a.a("ch", "size", "w", "style", "fFamily", "data");
+    private static final c.a f52215a = c.a.a("ch", "size", "w", "style", "fFamily", "data");
 
     /* renamed from: b  reason: collision with root package name */
-    private static final c.a f51851b = c.a.a("shapes");
+    private static final c.a f52216b = c.a.a("shapes");
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static q5.d a(w5.c cVar, l5.i iVar) {
         ArrayList arrayList = new ArrayList();
-        cVar.s();
+        cVar.u();
         double d10 = 0.0d;
         String str = null;
         String str2 = null;
         char c10 = 0;
         double d11 = 0.0d;
         while (cVar.hasNext()) {
-            int y10 = cVar.y(f51850a);
-            if (y10 != 0) {
-                if (y10 != 1) {
-                    if (y10 != 2) {
-                        if (y10 != 3) {
-                            if (y10 != 4) {
-                                if (y10 != 5) {
-                                    cVar.E();
-                                    cVar.P();
-                                } else {
+            int p10 = cVar.p(f52215a);
+            if (p10 != 0) {
+                if (p10 != 1) {
+                    if (p10 != 2) {
+                        if (p10 != 3) {
+                            if (p10 != 4) {
+                                if (p10 != 5) {
                                     cVar.s();
+                                    cVar.S();
+                                } else {
+                                    cVar.u();
                                     while (cVar.hasNext()) {
-                                        if (cVar.y(f51851b) != 0) {
-                                            cVar.E();
-                                            cVar.P();
+                                        if (cVar.p(f52216b) != 0) {
+                                            cVar.s();
+                                            cVar.S();
                                         } else {
-                                            cVar.v();
+                                            cVar.x();
                                             while (cVar.hasNext()) {
                                                 arrayList.add((s5.q) h.a(cVar, iVar));
                                             }
-                                            cVar.t();
+                                            cVar.v();
                                         }
                                     }
-                                    cVar.z();
+                                    cVar.D();
                                 }
                             } else {
-                                str2 = cVar.f1();
+                                str2 = cVar.e1();
                             }
                         } else {
-                            str = cVar.f1();
+                            str = cVar.e1();
                         }
                     } else {
                         d10 = cVar.nextDouble();
@@ -60,10 +60,10 @@ public abstract class m {
                     d11 = cVar.nextDouble();
                 }
             } else {
-                c10 = cVar.f1().charAt(0);
+                c10 = cVar.e1().charAt(0);
             }
         }
-        cVar.z();
+        cVar.D();
         return new q5.d(arrayList, c10, d11, d10, str, str2);
     }
 }

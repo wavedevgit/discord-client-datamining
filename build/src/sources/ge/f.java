@@ -43,7 +43,7 @@ public abstract class f {
         }
         if (gVar.o() != null) {
             b bVar = (b) ne.a.e(gVar.o());
-            int i15 = bVar.f24682a;
+            int i15 = bVar.f24935a;
             if (i15 == -1) {
                 if (i12 != 2 && i12 != 1) {
                     i15 = 1;
@@ -52,9 +52,9 @@ public abstract class f {
                 }
                 i14 = 1;
             } else {
-                i14 = bVar.f24683b;
+                i14 = bVar.f24936b;
             }
-            int i16 = bVar.f24684c;
+            int i16 = bVar.f24937c;
             if (i16 == -2) {
                 i16 = 1;
             }
@@ -68,15 +68,15 @@ public abstract class f {
         } else {
             d d10 = d(dVar, map);
             if (d10 != null && (e10 = e(d10, map)) != null) {
-                if (e10.g() == 1 && e10.f(0).f24703b != null) {
-                    String str = (String) w0.j(e10.f(0).f24703b);
-                    g f11 = f(e10.f24707f, e10.l(), map);
+                if (e10.g() == 1 && e10.f(0).f24956b != null) {
+                    String str = (String) w0.j(e10.f(0).f24956b);
+                    g f11 = f(e10.f24960f, e10.l(), map);
                     if (f11 != null) {
                         i13 = f11.i();
                     } else {
                         i13 = -1;
                     }
-                    if (i13 == -1 && (f10 = f(d10.f24707f, d10.l(), map)) != null) {
+                    if (i13 == -1 && (f10 = f(d10.f24960f, d10.l(), map)) != null) {
                         i13 = f10.i();
                     }
                     spannable.setSpan(new de.c(str, i13), i10, i11, 33);
@@ -121,11 +121,11 @@ public abstract class f {
 
     private static d d(d dVar, Map map) {
         while (dVar != null) {
-            g f10 = f(dVar.f24707f, dVar.l(), map);
+            g f10 = f(dVar.f24960f, dVar.l(), map);
             if (f10 != null && f10.j() == 1) {
                 return dVar;
             }
-            dVar = dVar.f24711j;
+            dVar = dVar.f24964j;
         }
         return null;
     }
@@ -135,7 +135,7 @@ public abstract class f {
         arrayDeque.push(dVar);
         while (!arrayDeque.isEmpty()) {
             d dVar2 = (d) arrayDeque.pop();
-            g f10 = f(dVar2.f24707f, dVar2.l(), map);
+            g f10 = f(dVar2.f24960f, dVar2.l(), map);
             if (f10 != null && f10.j() == 3) {
                 return dVar2;
             }

@@ -7,52 +7,52 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final File f28692a;
+    private final File f27836a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f28693b;
+    private int f27837b;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f28694c;
+    private int f27838c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f28695d;
+    private final int f27839d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f28696e;
+    private final int f27840e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final String f28697f;
+    private final String f27841f;
 
     public a(File file, int i10, int i11, int i12, int i13, String mimeType) {
         Intrinsics.checkNotNullParameter(file, "file");
         Intrinsics.checkNotNullParameter(mimeType, "mimeType");
-        this.f28692a = file;
-        this.f28693b = i10;
-        this.f28694c = i11;
-        this.f28695d = i12;
-        this.f28696e = i13;
-        this.f28697f = mimeType;
+        this.f27836a = file;
+        this.f27837b = i10;
+        this.f27838c = i11;
+        this.f27839d = i12;
+        this.f27840e = i13;
+        this.f27841f = mimeType;
     }
 
     public final int a() {
-        return this.f28696e;
+        return this.f27840e;
     }
 
     public final File b() {
-        return this.f28692a;
+        return this.f27836a;
     }
 
     public final int c() {
-        return this.f28695d;
+        return this.f27839d;
     }
 
     public final String d() {
-        return this.f28697f;
+        return this.f27841f;
     }
 
     public final int e() {
-        return this.f28694c;
+        return this.f27838c;
     }
 
     public boolean equals(Object obj) {
@@ -61,21 +61,21 @@ public final class a {
         }
         if (obj instanceof a) {
             a aVar = (a) obj;
-            return Intrinsics.areEqual(this.f28692a, aVar.f28692a) && this.f28693b == aVar.f28693b && this.f28694c == aVar.f28694c && this.f28695d == aVar.f28695d && this.f28696e == aVar.f28696e && Intrinsics.areEqual(this.f28697f, aVar.f28697f);
+            return Intrinsics.areEqual(this.f27836a, aVar.f27836a) && this.f27837b == aVar.f27837b && this.f27838c == aVar.f27838c && this.f27839d == aVar.f27839d && this.f27840e == aVar.f27840e && Intrinsics.areEqual(this.f27841f, aVar.f27841f);
         }
         return false;
     }
 
     public final int f() {
-        return this.f28693b;
+        return this.f27837b;
     }
 
     public int hashCode() {
-        return (((((((((this.f28692a.hashCode() * 31) + Integer.hashCode(this.f28693b)) * 31) + Integer.hashCode(this.f28694c)) * 31) + Integer.hashCode(this.f28695d)) * 31) + Integer.hashCode(this.f28696e)) * 31) + this.f28697f.hashCode();
+        return (((((((((this.f27836a.hashCode() * 31) + Integer.hashCode(this.f27837b)) * 31) + Integer.hashCode(this.f27838c)) * 31) + Integer.hashCode(this.f27839d)) * 31) + Integer.hashCode(this.f27840e)) * 31) + this.f27841f.hashCode();
     }
 
     public String toString() {
-        return "MuxerConfig(file=" + this.f28692a + ", recordingWidth=" + this.f28693b + ", recordingHeight=" + this.f28694c + ", frameRate=" + this.f28695d + ", bitRate=" + this.f28696e + ", mimeType=" + this.f28697f + ')';
+        return "MuxerConfig(file=" + this.f27836a + ", recordingWidth=" + this.f27837b + ", recordingHeight=" + this.f27838c + ", frameRate=" + this.f27839d + ", bitRate=" + this.f27840e + ", mimeType=" + this.f27841f + ')';
     }
 
     public /* synthetic */ a(File file, int i10, int i11, int i12, int i13, String str, int i14, DefaultConstructorMarker defaultConstructorMarker) {

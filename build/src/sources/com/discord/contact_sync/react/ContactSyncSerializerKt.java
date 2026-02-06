@@ -10,13 +10,13 @@ import com.facebook.react.bridge.BaseJavaModule;
 import com.facebook.react.bridge.Callback;
 import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactContext;
-import gt.f;
-import gt.n2;
-import gt.u0;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Locale;
 import java.util.Map;
+import jt.f;
+import jt.n2;
+import jt.u0;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
@@ -66,7 +66,7 @@ public final class ContactSyncSerializerKt {
                     return serializeHasContactPermissionsResult$lambda$0;
                 }
             }, null, 4, null));
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
         return null;
     }
@@ -90,9 +90,9 @@ public final class ContactSyncSerializerKt {
         Intrinsics.checkNotNullParameter(callback, "callback");
         try {
             Map<String, ContactSyncBlobEntry> contactsMap = ContactSyncProvider.INSTANCE.getContactsMap(reactContext);
-            Json.a aVar = Json.f35100d;
+            Json.a aVar = Json.f35120d;
             aVar.a();
-            String c10 = aVar.c(new u0(n2.f25302a, ContactSyncBlobEntry.Companion.serializer()), contactsMap);
+            String c10 = aVar.c(new u0(n2.f31041a, ContactSyncBlobEntry.Companion.serializer()), contactsMap);
             Collection<ContactSyncBlobEntry> values = contactsMap.values();
             ArrayList arrayList = new ArrayList(CollectionsKt.w(values, 10));
             for (ContactSyncBlobEntry contactSyncBlobEntry : values) {

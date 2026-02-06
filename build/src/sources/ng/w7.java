@@ -1,66 +1,34 @@
 package ng;
 
-import kotlin.jvm.internal.LongCompanionObject;
+import yi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class w7 {
+final class w7 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private Long f41186a;
+    static final w7 f40363a = new w7();
 
-    /* renamed from: b  reason: collision with root package name */
-    private x7 f41187b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private r7 f41188c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private Integer f41189d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private Integer f41190e;
-
-    /* renamed from: f  reason: collision with root package name */
-    private Integer f41191f;
-
-    /* renamed from: g  reason: collision with root package name */
-    private Integer f41192g;
-
-    public final w7 b(Long l10) {
-        this.f41186a = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
-        return this;
+    static {
+        c.b a10 = yi.c.a("detectorOptions");
+        l2 l2Var = new l2();
+        l2Var.a(1);
+        a10.b(l2Var.b()).a();
+        c.b a11 = yi.c.a("eventType");
+        l2 l2Var2 = new l2();
+        l2Var2.a(2);
+        a11.b(l2Var2.b()).a();
+        c.b a12 = yi.c.a("errorCode");
+        l2 l2Var3 = new l2();
+        l2Var3.a(3);
+        a12.b(l2Var3.b()).a();
     }
 
-    public final w7 c(Integer num) {
-        this.f41189d = Integer.valueOf(num.intValue() & Integer.MAX_VALUE);
-        return this;
+    private w7() {
     }
 
-    public final w7 d(r7 r7Var) {
-        this.f41188c = r7Var;
-        return this;
-    }
-
-    public final w7 e(Integer num) {
-        this.f41191f = Integer.valueOf(num.intValue() & Integer.MAX_VALUE);
-        return this;
-    }
-
-    public final w7 f(x7 x7Var) {
-        this.f41187b = x7Var;
-        return this;
-    }
-
-    public final w7 g(Integer num) {
-        this.f41190e = Integer.valueOf(num.intValue() & Integer.MAX_VALUE);
-        return this;
-    }
-
-    public final w7 h(Integer num) {
-        this.f41192g = Integer.valueOf(num.intValue() & Integer.MAX_VALUE);
-        return this;
-    }
-
-    public final z7 j() {
-        return new z7(this, null);
+    @Override // yi.d
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        android.support.v4.media.session.b.a(obj);
+        yi.e eVar = (yi.e) obj2;
+        throw null;
     }
 }

@@ -6,7 +6,7 @@ import w5.c;
 abstract class y {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final c.a f51876a = c.a.a("nm", "mm", "hd");
+    private static final c.a f52241a = c.a.a("nm", "mm", "hd");
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static s5.j a(w5.c cVar) {
@@ -14,20 +14,20 @@ abstract class y {
         boolean z10 = false;
         j.a aVar = null;
         while (cVar.hasNext()) {
-            int y10 = cVar.y(f51876a);
-            if (y10 != 0) {
-                if (y10 != 1) {
-                    if (y10 != 2) {
-                        cVar.E();
-                        cVar.P();
+            int p10 = cVar.p(f52241a);
+            if (p10 != 0) {
+                if (p10 != 1) {
+                    if (p10 != 2) {
+                        cVar.s();
+                        cVar.S();
                     } else {
-                        z10 = cVar.h();
+                        z10 = cVar.g();
                     }
                 } else {
                     aVar = j.a.d(cVar.nextInt());
                 }
             } else {
-                str = cVar.f1();
+                str = cVar.e1();
             }
         }
         return new s5.j(str, aVar, z10);

@@ -1,9 +1,7 @@
 package uq;
-
-import android.graphics.Bitmap;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public interface b {
-    void a(Bitmap bitmap, vq.c cVar, String str, String str2);
+public abstract class b {
 
-    void onFailure(Exception exc);
+    /* renamed from: a  reason: collision with root package name */
+    public static int f52085a = 2132017535;
 }

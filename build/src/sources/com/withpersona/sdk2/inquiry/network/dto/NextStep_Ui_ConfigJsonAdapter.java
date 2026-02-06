@@ -61,7 +61,7 @@ public final class NextStep_Ui_ConfigJsonAdapter extends h {
     @NotNull
     public NextStep.Ui.Config fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         int i10 = -1;
         List list = null;
         Boolean bool = null;
@@ -70,10 +70,10 @@ public final class NextStep_Ui_ConfigJsonAdapter extends h {
         NextStep.Ui.Localizations localizations = null;
         List list2 = null;
         while (reader.hasNext()) {
-            switch (reader.W(this.options)) {
+            switch (reader.J(this.options)) {
                 case -1:
                     reader.E0();
-                    reader.P();
+                    reader.S();
                     break;
                 case 0:
                     list = (List) this.nullableListOfUiComponentConfigAdapter.fromJson(reader);
@@ -100,7 +100,7 @@ public final class NextStep_Ui_ConfigJsonAdapter extends h {
                     break;
             }
         }
-        reader.z();
+        reader.D();
         if (i10 == -63) {
             List list3 = list2;
             NextStep.Ui.Localizations localizations2 = localizations;
@@ -115,7 +115,7 @@ public final class NextStep_Ui_ConfigJsonAdapter extends h {
         List list5 = list;
         Constructor<NextStep.Ui.Config> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = NextStep.Ui.Config.class.getDeclaredConstructor(List.class, Boolean.class, Boolean.class, Boolean.class, NextStep.Ui.Localizations.class, List.class, Integer.TYPE, ym.c.f54853c);
+            constructor = NextStep.Ui.Config.class.getDeclaredConstructor(List.class, Boolean.class, Boolean.class, Boolean.class, NextStep.Ui.Localizations.class, List.class, Integer.TYPE, an.c.f1164c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -129,19 +129,19 @@ public final class NextStep_Ui_ConfigJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (config != null) {
             writer.k();
-            writer.W("components");
+            writer.J("components");
             this.nullableListOfUiComponentConfigAdapter.toJson(writer, config.getComponents());
-            writer.W("backStepEnabled");
+            writer.J("backStepEnabled");
             this.nullableBooleanAdapter.toJson(writer, config.getBackStepEnabled());
-            writer.W("cancelButtonEnabled");
+            writer.J("cancelButtonEnabled");
             this.nullableBooleanAdapter.toJson(writer, config.getCancelButtonEnabled());
-            writer.W("terminal");
+            writer.J("terminal");
             this.nullableBooleanAdapter.toJson(writer, config.getTerminal());
-            writer.W("localizations");
+            writer.J("localizations");
             this.nullableLocalizationsAdapter.toJson(writer, config.getLocalizations());
-            writer.W("serverComponentErrors");
+            writer.J("serverComponentErrors");
             this.nullableListOfUiComponentErrorAdapter.toJson(writer, config.getServerComponentErrors());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

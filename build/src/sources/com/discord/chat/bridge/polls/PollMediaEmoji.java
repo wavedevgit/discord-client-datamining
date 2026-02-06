@@ -2,9 +2,9 @@ package com.discord.chat.bridge.polls;
 
 import com.discord.emoji.RenderableEmoji;
 import com.facebook.react.devsupport.StackTraceHelper;
-import dt.m;
-import gt.n2;
-import gt.v1;
+import ft.m;
+import jt.n2;
+import jt.v1;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
@@ -14,8 +14,8 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
 import org.jetbrains.annotations.NotNull;
-@Metadata(d1 = {"\u0000F\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 )2\u00020\u0001:\u0002()B/\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u0003\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0007¢\u0006\u0004\b\b\u0010\tBA\b\u0010\u0012\u0006\u0010\n\u001a\u00020\u000b\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0003\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\b\u0010\f\u001a\u0004\u0018\u00010\r¢\u0006\u0004\b\b\u0010\u000eJ\u0006\u0010\u0015\u001a\u00020\u0016J\u000b\u0010\u0017\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\t\u0010\u0018\u001a\u00020\u0003HÆ\u0003J\u000b\u0010\u0019\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\t\u0010\u001a\u001a\u00020\u0007HÆ\u0003J5\u0010\u001b\u001a\u00020\u00002\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00032\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u00032\b\b\u0002\u0010\u0006\u001a\u00020\u0007HÆ\u0001J\u0013\u0010\u001c\u001a\u00020\u00072\b\u0010\u001d\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u001e\u001a\u00020\u000bHÖ\u0001J\t\u0010\u001f\u001a\u00020\u0003HÖ\u0001J%\u0010 \u001a\u00020!2\u0006\u0010\"\u001a\u00020\u00002\u0006\u0010#\u001a\u00020$2\u0006\u0010%\u001a\u00020&H\u0001¢\u0006\u0002\b'R\u0013\u0010\u0002\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u0010R\u0011\u0010\u0004\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u0010R\u0013\u0010\u0005\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\u0010R\u0011\u0010\u0006\u001a\u00020\u0007¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u0014¨\u0006*"}, d2 = {"Lcom/discord/chat/bridge/polls/PollMediaEmoji;", "", StackTraceHelper.ID_KEY, "", StackTraceHelper.NAME_KEY, "displayName", "animated", "", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V", "seen0", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLkotlinx/serialization/internal/SerializationConstructorMarker;)V", "getId", "()Ljava/lang/String;", "getName", "getDisplayName", "getAnimated", "()Z", "renderable", "Lcom/discord/emoji/RenderableEmoji;", "component1", "component2", "component3", "component4", "copy", "equals", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @m
+@Metadata(d1 = {"\u0000F\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 )2\u00020\u0001:\u0002()B/\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u0003\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0007¢\u0006\u0004\b\b\u0010\tBA\b\u0010\u0012\u0006\u0010\n\u001a\u00020\u000b\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0003\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\b\u0010\f\u001a\u0004\u0018\u00010\r¢\u0006\u0004\b\b\u0010\u000eJ\u0006\u0010\u0015\u001a\u00020\u0016J\u000b\u0010\u0017\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\t\u0010\u0018\u001a\u00020\u0003HÆ\u0003J\u000b\u0010\u0019\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\t\u0010\u001a\u001a\u00020\u0007HÆ\u0003J5\u0010\u001b\u001a\u00020\u00002\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00032\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u00032\b\b\u0002\u0010\u0006\u001a\u00020\u0007HÆ\u0001J\u0013\u0010\u001c\u001a\u00020\u00072\b\u0010\u001d\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u001e\u001a\u00020\u000bHÖ\u0001J\t\u0010\u001f\u001a\u00020\u0003HÖ\u0001J%\u0010 \u001a\u00020!2\u0006\u0010\"\u001a\u00020\u00002\u0006\u0010#\u001a\u00020$2\u0006\u0010%\u001a\u00020&H\u0001¢\u0006\u0002\b'R\u0013\u0010\u0002\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u0010R\u0011\u0010\u0004\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u0010R\u0013\u0010\u0005\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\u0010R\u0011\u0010\u0006\u001a\u00020\u0007¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u0014¨\u0006*"}, d2 = {"Lcom/discord/chat/bridge/polls/PollMediaEmoji;", "", StackTraceHelper.ID_KEY, "", StackTraceHelper.NAME_KEY, "displayName", "animated", "", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V", "seen0", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLkotlinx/serialization/internal/SerializationConstructorMarker;)V", "getId", "()Ljava/lang/String;", "getName", "getDisplayName", "getAnimated", "()Z", "renderable", "Lcom/discord/emoji/RenderableEmoji;", "component1", "component2", "component3", "component4", "copy", "equals", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class PollMediaEmoji {
     @NotNull
@@ -24,7 +24,7 @@ public final class PollMediaEmoji {
     private final String displayName;
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f8655id;
+    private final String f8554id;
     @NotNull
     private final String name;
 
@@ -48,7 +48,7 @@ public final class PollMediaEmoji {
         if (3 != (i10 & 3)) {
             v1.b(i10, 3, PollMediaEmoji$$serializer.INSTANCE.getDescriptor());
         }
-        this.f8655id = str;
+        this.f8554id = str;
         this.name = str2;
         if ((i10 & 4) == 0) {
             this.displayName = null;
@@ -64,7 +64,7 @@ public final class PollMediaEmoji {
 
     public static /* synthetic */ PollMediaEmoji copy$default(PollMediaEmoji pollMediaEmoji, String str, String str2, String str3, boolean z10, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = pollMediaEmoji.f8655id;
+            str = pollMediaEmoji.f8554id;
         }
         if ((i10 & 2) != 0) {
             str2 = pollMediaEmoji.name;
@@ -79,19 +79,19 @@ public final class PollMediaEmoji {
     }
 
     public static final /* synthetic */ void write$Self$chat_release(PollMediaEmoji pollMediaEmoji, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
-        n2 n2Var = n2.f25302a;
-        compositeEncoder.A(serialDescriptor, 0, n2Var, pollMediaEmoji.f8655id);
-        compositeEncoder.x(serialDescriptor, 1, pollMediaEmoji.name);
-        if (compositeEncoder.z(serialDescriptor, 2) || pollMediaEmoji.displayName != null) {
-            compositeEncoder.A(serialDescriptor, 2, n2Var, pollMediaEmoji.displayName);
+        n2 n2Var = n2.f31041a;
+        compositeEncoder.l(serialDescriptor, 0, n2Var, pollMediaEmoji.f8554id);
+        compositeEncoder.z(serialDescriptor, 1, pollMediaEmoji.name);
+        if (compositeEncoder.A(serialDescriptor, 2) || pollMediaEmoji.displayName != null) {
+            compositeEncoder.l(serialDescriptor, 2, n2Var, pollMediaEmoji.displayName);
         }
-        if (compositeEncoder.z(serialDescriptor, 3) || pollMediaEmoji.animated) {
-            compositeEncoder.w(serialDescriptor, 3, pollMediaEmoji.animated);
+        if (compositeEncoder.A(serialDescriptor, 3) || pollMediaEmoji.animated) {
+            compositeEncoder.y(serialDescriptor, 3, pollMediaEmoji.animated);
         }
     }
 
     public final String component1() {
-        return this.f8655id;
+        return this.f8554id;
     }
 
     @NotNull
@@ -119,7 +119,7 @@ public final class PollMediaEmoji {
         }
         if (obj instanceof PollMediaEmoji) {
             PollMediaEmoji pollMediaEmoji = (PollMediaEmoji) obj;
-            return Intrinsics.areEqual(this.f8655id, pollMediaEmoji.f8655id) && Intrinsics.areEqual(this.name, pollMediaEmoji.name) && Intrinsics.areEqual(this.displayName, pollMediaEmoji.displayName) && this.animated == pollMediaEmoji.animated;
+            return Intrinsics.areEqual(this.f8554id, pollMediaEmoji.f8554id) && Intrinsics.areEqual(this.name, pollMediaEmoji.name) && Intrinsics.areEqual(this.displayName, pollMediaEmoji.displayName) && this.animated == pollMediaEmoji.animated;
         }
         return false;
     }
@@ -133,7 +133,7 @@ public final class PollMediaEmoji {
     }
 
     public final String getId() {
-        return this.f8655id;
+        return this.f8554id;
     }
 
     @NotNull
@@ -142,7 +142,7 @@ public final class PollMediaEmoji {
     }
 
     public int hashCode() {
-        String str = this.f8655id;
+        String str = this.f8554id;
         int hashCode = (((str == null ? 0 : str.hashCode()) * 31) + this.name.hashCode()) * 31;
         String str2 = this.displayName;
         return ((hashCode + (str2 != null ? str2.hashCode() : 0)) * 31) + Boolean.hashCode(this.animated);
@@ -151,7 +151,7 @@ public final class PollMediaEmoji {
     @NotNull
     public final RenderableEmoji renderable() {
         Long t10;
-        String str = this.f8655id;
+        String str = this.f8554id;
         if (str != null && (t10 = StringsKt.t(str)) != null) {
             long longValue = t10.longValue();
             RenderableEmoji.Companion companion = RenderableEmoji.Companion;
@@ -170,7 +170,7 @@ public final class PollMediaEmoji {
 
     @NotNull
     public String toString() {
-        String str = this.f8655id;
+        String str = this.f8554id;
         String str2 = this.name;
         String str3 = this.displayName;
         boolean z10 = this.animated;
@@ -179,7 +179,7 @@ public final class PollMediaEmoji {
 
     public PollMediaEmoji(String str, @NotNull String name, String str2, boolean z10) {
         Intrinsics.checkNotNullParameter(name, "name");
-        this.f8655id = str;
+        this.f8554id = str;
         this.name = name;
         this.displayName = str2;
         this.animated = z10;

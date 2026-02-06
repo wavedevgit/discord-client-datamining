@@ -15,7 +15,7 @@ import tc.z;
 public final class e implements tc.m, g {
 
     /* renamed from: u  reason: collision with root package name */
-    public static final g.a f49546u = new g.a() { // from class: sd.d
+    public static final g.a f49867u = new g.a() { // from class: sd.d
         @Override // sd.g.a
         public final g a(int i10, Format format, boolean z10, List list, b0 b0Var, t1 t1Var) {
             return e.f(i10, format, z10, list, b0Var, t1Var);
@@ -23,103 +23,103 @@ public final class e implements tc.m, g {
     };
 
     /* renamed from: v  reason: collision with root package name */
-    private static final y f49547v = new y();
+    private static final y f49868v = new y();
 
     /* renamed from: d  reason: collision with root package name */
-    private final tc.k f49548d;
+    private final tc.k f49869d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f49549e;
+    private final int f49870e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Format f49550i;
+    private final Format f49871i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final SparseArray f49551o = new SparseArray();
+    private final SparseArray f49872o = new SparseArray();
 
     /* renamed from: p  reason: collision with root package name */
-    private boolean f49552p;
+    private boolean f49873p;
 
     /* renamed from: q  reason: collision with root package name */
-    private g.b f49553q;
+    private g.b f49874q;
 
     /* renamed from: r  reason: collision with root package name */
-    private long f49554r;
+    private long f49875r;
 
     /* renamed from: s  reason: collision with root package name */
-    private z f49555s;
+    private z f49876s;
 
     /* renamed from: t  reason: collision with root package name */
-    private Format[] f49556t;
+    private Format[] f49877t;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     private static final class a implements b0 {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f49557a;
+        private final int f49878a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f49558b;
+        private final int f49879b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final Format f49559c;
+        private final Format f49880c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final tc.j f49560d = new tc.j();
+        private final tc.j f49881d = new tc.j();
 
         /* renamed from: e  reason: collision with root package name */
-        public Format f49561e;
+        public Format f49882e;
 
         /* renamed from: f  reason: collision with root package name */
-        private b0 f49562f;
+        private b0 f49883f;
 
         /* renamed from: g  reason: collision with root package name */
-        private long f49563g;
+        private long f49884g;
 
         public a(int i10, int i11, Format format) {
-            this.f49557a = i10;
-            this.f49558b = i11;
-            this.f49559c = format;
+            this.f49878a = i10;
+            this.f49879b = i11;
+            this.f49880c = format;
         }
 
         @Override // tc.b0
         public void b(Format format) {
-            Format format2 = this.f49559c;
+            Format format2 = this.f49880c;
             if (format2 != null) {
                 format = format.j(format2);
             }
-            this.f49561e = format;
-            ((b0) w0.j(this.f49562f)).b(this.f49561e);
+            this.f49882e = format;
+            ((b0) w0.j(this.f49883f)).b(this.f49882e);
         }
 
         @Override // tc.b0
         public int c(le.j jVar, int i10, boolean z10, int i11) {
-            return ((b0) w0.j(this.f49562f)).a(jVar, i10, z10);
+            return ((b0) w0.j(this.f49883f)).a(jVar, i10, z10);
         }
 
         @Override // tc.b0
         public void d(long j10, int i10, int i11, int i12, b0.a aVar) {
-            long j11 = this.f49563g;
+            long j11 = this.f49884g;
             if (j11 != -9223372036854775807L && j10 >= j11) {
-                this.f49562f = this.f49560d;
+                this.f49883f = this.f49881d;
             }
-            ((b0) w0.j(this.f49562f)).d(j10, i10, i11, i12, aVar);
+            ((b0) w0.j(this.f49883f)).d(j10, i10, i11, i12, aVar);
         }
 
         @Override // tc.b0
         public void e(h0 h0Var, int i10, int i11) {
-            ((b0) w0.j(this.f49562f)).f(h0Var, i10);
+            ((b0) w0.j(this.f49883f)).f(h0Var, i10);
         }
 
         public void g(g.b bVar, long j10) {
             if (bVar == null) {
-                this.f49562f = this.f49560d;
+                this.f49883f = this.f49881d;
                 return;
             }
-            this.f49563g = j10;
-            b0 c10 = bVar.c(this.f49557a, this.f49558b);
-            this.f49562f = c10;
-            Format format = this.f49561e;
+            this.f49884g = j10;
+            b0 c10 = bVar.c(this.f49878a, this.f49879b);
+            this.f49883f = c10;
+            Format format = this.f49882e;
             if (format != null) {
                 c10.b(format);
             }
@@ -127,15 +127,15 @@ public final class e implements tc.m, g {
     }
 
     public e(tc.k kVar, int i10, Format format) {
-        this.f49548d = kVar;
-        this.f49549e = i10;
-        this.f49550i = format;
+        this.f49869d = kVar;
+        this.f49870e = i10;
+        this.f49871i = format;
     }
 
     public static /* synthetic */ g f(int i10, Format format, boolean z10, List list, b0 b0Var, t1 t1Var) {
         int i11;
         tc.k gVar;
-        String str = format.f11687v;
+        String str = format.f11586v;
         if (c0.r(str)) {
             return null;
         }
@@ -155,7 +155,7 @@ public final class e implements tc.m, g {
     @Override // sd.g
     public boolean a(tc.l lVar) {
         boolean z10;
-        int d10 = this.f49548d.d(lVar, f49547v);
+        int d10 = this.f49869d.d(lVar, f49868v);
         if (d10 != 1) {
             z10 = true;
         } else {
@@ -170,7 +170,7 @@ public final class e implements tc.m, g {
 
     @Override // sd.g
     public tc.c b() {
-        z zVar = this.f49555s;
+        z zVar = this.f49876s;
         if (zVar instanceof tc.c) {
             return (tc.c) zVar;
         }
@@ -181,69 +181,69 @@ public final class e implements tc.m, g {
     public b0 c(int i10, int i11) {
         boolean z10;
         Format format;
-        a aVar = (a) this.f49551o.get(i10);
+        a aVar = (a) this.f49872o.get(i10);
         if (aVar == null) {
-            if (this.f49556t == null) {
+            if (this.f49877t == null) {
                 z10 = true;
             } else {
                 z10 = false;
             }
             ne.a.g(z10);
-            if (i11 == this.f49549e) {
-                format = this.f49550i;
+            if (i11 == this.f49870e) {
+                format = this.f49871i;
             } else {
                 format = null;
             }
             aVar = new a(i10, i11, format);
-            aVar.g(this.f49553q, this.f49554r);
-            this.f49551o.put(i10, aVar);
+            aVar.g(this.f49874q, this.f49875r);
+            this.f49872o.put(i10, aVar);
         }
         return aVar;
     }
 
     @Override // sd.g
     public Format[] d() {
-        return this.f49556t;
+        return this.f49877t;
     }
 
     @Override // sd.g
     public void e(g.b bVar, long j10, long j11) {
-        this.f49553q = bVar;
-        this.f49554r = j11;
-        if (!this.f49552p) {
-            this.f49548d.c(this);
+        this.f49874q = bVar;
+        this.f49875r = j11;
+        if (!this.f49873p) {
+            this.f49869d.c(this);
             if (j10 != -9223372036854775807L) {
-                this.f49548d.a(0L, j10);
+                this.f49869d.a(0L, j10);
             }
-            this.f49552p = true;
+            this.f49873p = true;
             return;
         }
-        tc.k kVar = this.f49548d;
+        tc.k kVar = this.f49869d;
         if (j10 == -9223372036854775807L) {
             j10 = 0;
         }
         kVar.a(0L, j10);
-        for (int i10 = 0; i10 < this.f49551o.size(); i10++) {
-            ((a) this.f49551o.valueAt(i10)).g(bVar, j11);
+        for (int i10 = 0; i10 < this.f49872o.size(); i10++) {
+            ((a) this.f49872o.valueAt(i10)).g(bVar, j11);
         }
     }
 
     @Override // tc.m
     public void q(z zVar) {
-        this.f49555s = zVar;
+        this.f49876s = zVar;
     }
 
     @Override // sd.g
     public void release() {
-        this.f49548d.release();
+        this.f49869d.release();
     }
 
     @Override // tc.m
     public void s() {
-        Format[] formatArr = new Format[this.f49551o.size()];
-        for (int i10 = 0; i10 < this.f49551o.size(); i10++) {
-            formatArr[i10] = (Format) ne.a.i(((a) this.f49551o.valueAt(i10)).f49561e);
+        Format[] formatArr = new Format[this.f49872o.size()];
+        for (int i10 = 0; i10 < this.f49872o.size(); i10++) {
+            formatArr[i10] = (Format) ne.a.i(((a) this.f49872o.valueAt(i10)).f49882e);
         }
-        this.f49556t = formatArr;
+        this.f49877t = formatArr;
     }
 }

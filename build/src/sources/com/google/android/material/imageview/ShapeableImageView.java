@@ -1,5 +1,6 @@
 package com.google.android.material.imageview;
 
+import ah.j;
 import android.content.Context;
 import android.content.res.ColorStateList;
 import android.graphics.Canvas;
@@ -13,83 +14,82 @@ import android.view.View;
 import android.view.ViewOutlineProvider;
 import androidx.annotation.NonNull;
 import androidx.appcompat.widget.m;
-import ph.g;
-import ph.k;
-import ph.l;
-import ph.n;
-import zg.j;
+import qh.g;
+import qh.k;
+import qh.l;
+import qh.n;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class ShapeableImageView extends m implements n {
-    private static final int D = j.f55726y;
+    private static final int D = j.f821y;
     private int A;
     private int B;
     private boolean C;
 
     /* renamed from: d  reason: collision with root package name */
-    private final l f15089d;
+    private final l f15069d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final RectF f15090e;
+    private final RectF f15070e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final RectF f15091i;
+    private final RectF f15071i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final Paint f15092o;
+    private final Paint f15072o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final Paint f15093p;
+    private final Paint f15073p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final Path f15094q;
+    private final Path f15074q;
 
     /* renamed from: r  reason: collision with root package name */
-    private ColorStateList f15095r;
+    private ColorStateList f15075r;
 
     /* renamed from: s  reason: collision with root package name */
-    private g f15096s;
+    private g f15076s;
 
     /* renamed from: t  reason: collision with root package name */
-    private k f15097t;
+    private k f15077t;
 
     /* renamed from: u  reason: collision with root package name */
-    private float f15098u;
+    private float f15078u;
 
     /* renamed from: v  reason: collision with root package name */
-    private Path f15099v;
+    private Path f15079v;
 
     /* renamed from: w  reason: collision with root package name */
-    private int f15100w;
+    private int f15080w;
 
     /* renamed from: x  reason: collision with root package name */
-    private int f15101x;
+    private int f15081x;
 
     /* renamed from: y  reason: collision with root package name */
-    private int f15102y;
+    private int f15082y;
 
     /* renamed from: z  reason: collision with root package name */
-    private int f15103z;
+    private int f15083z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a extends ViewOutlineProvider {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Rect f15104a = new Rect();
+        private final Rect f15084a = new Rect();
 
         a() {
         }
 
         @Override // android.view.ViewOutlineProvider
         public void getOutline(View view, Outline outline) {
-            if (ShapeableImageView.this.f15097t == null) {
+            if (ShapeableImageView.this.f15077t == null) {
                 return;
             }
-            if (ShapeableImageView.this.f15096s == null) {
-                ShapeableImageView.this.f15096s = new g(ShapeableImageView.this.f15097t);
+            if (ShapeableImageView.this.f15076s == null) {
+                ShapeableImageView.this.f15076s = new g(ShapeableImageView.this.f15077t);
             }
-            ShapeableImageView.this.f15090e.round(this.f15104a);
-            ShapeableImageView.this.f15096s.setBounds(this.f15104a);
-            ShapeableImageView.this.f15096s.getOutline(outline);
+            ShapeableImageView.this.f15070e.round(this.f15084a);
+            ShapeableImageView.this.f15076s.setBounds(this.f15084a);
+            ShapeableImageView.this.f15076s.getOutline(outline);
         }
     }
 
@@ -98,12 +98,12 @@ public class ShapeableImageView extends m implements n {
     }
 
     private void g(Canvas canvas) {
-        if (this.f15095r != null) {
-            this.f15092o.setStrokeWidth(this.f15098u);
-            int colorForState = this.f15095r.getColorForState(getDrawableState(), this.f15095r.getDefaultColor());
-            if (this.f15098u > 0.0f && colorForState != 0) {
-                this.f15092o.setColor(colorForState);
-                canvas.drawPath(this.f15094q, this.f15092o);
+        if (this.f15075r != null) {
+            this.f15072o.setStrokeWidth(this.f15078u);
+            int colorForState = this.f15075r.getColorForState(getDrawableState(), this.f15075r.getDefaultColor());
+            if (this.f15078u > 0.0f && colorForState != 0) {
+                this.f15072o.setColor(colorForState);
+                canvas.drawPath(this.f15074q, this.f15072o);
             }
         }
     }
@@ -123,16 +123,16 @@ public class ShapeableImageView extends m implements n {
     }
 
     private void j(int i10, int i11) {
-        this.f15090e.set(getPaddingLeft(), getPaddingTop(), i10 - getPaddingRight(), i11 - getPaddingBottom());
-        this.f15089d.d(this.f15097t, 1.0f, this.f15090e, this.f15094q);
-        this.f15099v.rewind();
-        this.f15099v.addPath(this.f15094q);
-        this.f15091i.set(0.0f, 0.0f, i10, i11);
-        this.f15099v.addRect(this.f15091i, Path.Direction.CCW);
+        this.f15070e.set(getPaddingLeft(), getPaddingTop(), i10 - getPaddingRight(), i11 - getPaddingBottom());
+        this.f15069d.d(this.f15077t, 1.0f, this.f15070e, this.f15074q);
+        this.f15079v.rewind();
+        this.f15079v.addPath(this.f15074q);
+        this.f15071i.set(0.0f, 0.0f, i10, i11);
+        this.f15079v.addRect(this.f15071i, Path.Direction.CCW);
     }
 
     public int getContentPaddingBottom() {
-        return this.f15103z;
+        return this.f15083z;
     }
 
     public final int getContentPaddingEnd() {
@@ -141,9 +141,9 @@ public class ShapeableImageView extends m implements n {
             return i10;
         }
         if (i()) {
-            return this.f15100w;
+            return this.f15080w;
         }
-        return this.f15102y;
+        return this.f15082y;
     }
 
     public int getContentPaddingLeft() {
@@ -157,7 +157,7 @@ public class ShapeableImageView extends m implements n {
                 return i10;
             }
         }
-        return this.f15100w;
+        return this.f15080w;
     }
 
     public int getContentPaddingRight() {
@@ -171,7 +171,7 @@ public class ShapeableImageView extends m implements n {
                 return i10;
             }
         }
-        return this.f15102y;
+        return this.f15082y;
     }
 
     public final int getContentPaddingStart() {
@@ -180,13 +180,13 @@ public class ShapeableImageView extends m implements n {
             return i10;
         }
         if (i()) {
-            return this.f15102y;
+            return this.f15082y;
         }
-        return this.f15100w;
+        return this.f15080w;
     }
 
     public int getContentPaddingTop() {
-        return this.f15101x;
+        return this.f15081x;
     }
 
     @Override // android.view.View
@@ -221,21 +221,21 @@ public class ShapeableImageView extends m implements n {
 
     @NonNull
     public k getShapeAppearanceModel() {
-        return this.f15097t;
+        return this.f15077t;
     }
 
     public ColorStateList getStrokeColor() {
-        return this.f15095r;
+        return this.f15075r;
     }
 
     public float getStrokeWidth() {
-        return this.f15098u;
+        return this.f15078u;
     }
 
     @Override // android.widget.ImageView, android.view.View
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        canvas.drawPath(this.f15099v, this.f15093p);
+        canvas.drawPath(this.f15079v, this.f15073p);
         g(canvas);
     }
 
@@ -269,10 +269,10 @@ public class ShapeableImageView extends m implements n {
         super.setPaddingRelative(i10 + getContentPaddingStart(), i11 + getContentPaddingTop(), i12 + getContentPaddingEnd(), i13 + getContentPaddingBottom());
     }
 
-    @Override // ph.n
+    @Override // qh.n
     public void setShapeAppearanceModel(@NonNull k kVar) {
-        this.f15097t = kVar;
-        g gVar = this.f15096s;
+        this.f15077t = kVar;
+        g gVar = this.f15076s;
         if (gVar != null) {
             gVar.setShapeAppearanceModel(kVar);
         }
@@ -282,7 +282,7 @@ public class ShapeableImageView extends m implements n {
     }
 
     public void setStrokeColor(ColorStateList colorStateList) {
-        this.f15095r = colorStateList;
+        this.f15075r = colorStateList;
         invalidate();
     }
 
@@ -291,8 +291,8 @@ public class ShapeableImageView extends m implements n {
     }
 
     public void setStrokeWidth(float f10) {
-        if (this.f15098u != f10) {
-            this.f15098u = f10;
+        if (this.f15078u != f10) {
+            this.f15078u = f10;
             invalidate();
         }
     }
@@ -314,19 +314,19 @@ public class ShapeableImageView extends m implements n {
         /*
             r6 = this;
             int r0 = com.google.android.material.imageview.ShapeableImageView.D
-            android.content.Context r7 = sh.a.c(r7, r8, r9, r0)
+            android.content.Context r7 = th.a.c(r7, r8, r9, r0)
             r6.<init>(r7, r8, r9)
-            ph.l r7 = ph.l.k()
-            r6.f15089d = r7
+            qh.l r7 = qh.l.k()
+            r6.f15069d = r7
             android.graphics.Path r7 = new android.graphics.Path
             r7.<init>()
-            r6.f15094q = r7
+            r6.f15074q = r7
             r7 = 0
             r6.C = r7
             android.content.Context r1 = r6.getContext()
             android.graphics.Paint r2 = new android.graphics.Paint
             r2.<init>()
-            r6.f15093p = r2
+            r6.f15073p = r2
             r3 = 1
             r2.setAntiAlias(r3)
             r4 = -1
@@ -337,60 +337,60 @@ public class ShapeableImageView extends m implements n {
             r2.setXfermode(r4)
             android.graphics.RectF r2 = new android.graphics.RectF
             r2.<init>()
-            r6.f15090e = r2
+            r6.f15070e = r2
             android.graphics.RectF r2 = new android.graphics.RectF
             r2.<init>()
-            r6.f15091i = r2
+            r6.f15071i = r2
             android.graphics.Path r2 = new android.graphics.Path
             r2.<init>()
-            r6.f15099v = r2
-            int[] r2 = zg.k.C5
+            r6.f15079v = r2
+            int[] r2 = ah.k.C5
             android.content.res.TypedArray r2 = r1.obtainStyledAttributes(r8, r2, r9, r0)
             r4 = 2
             r5 = 0
             r6.setLayerType(r4, r5)
-            int r4 = zg.k.K5
-            android.content.res.ColorStateList r4 = mh.c.a(r1, r2, r4)
-            r6.f15095r = r4
-            int r4 = zg.k.L5
+            int r4 = ah.k.K5
+            android.content.res.ColorStateList r4 = nh.c.a(r1, r2, r4)
+            r6.f15075r = r4
+            int r4 = ah.k.L5
             int r4 = r2.getDimensionPixelSize(r4, r7)
             float r4 = (float) r4
-            r6.f15098u = r4
-            int r4 = zg.k.D5
+            r6.f15078u = r4
+            int r4 = ah.k.D5
             int r7 = r2.getDimensionPixelSize(r4, r7)
-            r6.f15100w = r7
-            r6.f15101x = r7
-            r6.f15102y = r7
-            r6.f15103z = r7
-            int r4 = zg.k.G5
+            r6.f15080w = r7
+            r6.f15081x = r7
+            r6.f15082y = r7
+            r6.f15083z = r7
+            int r4 = ah.k.G5
             int r4 = r2.getDimensionPixelSize(r4, r7)
-            r6.f15100w = r4
-            int r4 = zg.k.J5
+            r6.f15080w = r4
+            int r4 = ah.k.J5
             int r4 = r2.getDimensionPixelSize(r4, r7)
-            r6.f15101x = r4
-            int r4 = zg.k.H5
+            r6.f15081x = r4
+            int r4 = ah.k.H5
             int r4 = r2.getDimensionPixelSize(r4, r7)
-            r6.f15102y = r4
-            int r4 = zg.k.E5
+            r6.f15082y = r4
+            int r4 = ah.k.E5
             int r7 = r2.getDimensionPixelSize(r4, r7)
-            r6.f15103z = r7
-            int r7 = zg.k.I5
+            r6.f15083z = r7
+            int r7 = ah.k.I5
             r4 = -2147483648(0xffffffff80000000, float:-0.0)
             int r7 = r2.getDimensionPixelSize(r7, r4)
             r6.A = r7
-            int r7 = zg.k.F5
+            int r7 = ah.k.F5
             int r7 = r2.getDimensionPixelSize(r7, r4)
             r6.B = r7
             r2.recycle()
             android.graphics.Paint r7 = new android.graphics.Paint
             r7.<init>()
-            r6.f15092o = r7
+            r6.f15072o = r7
             android.graphics.Paint$Style r2 = android.graphics.Paint.Style.STROKE
             r7.setStyle(r2)
             r7.setAntiAlias(r3)
-            ph.k$b r7 = ph.k.e(r1, r8, r9, r0)
-            ph.k r7 = r7.m()
-            r6.f15097t = r7
+            qh.k$b r7 = qh.k.e(r1, r8, r9, r0)
+            qh.k r7 = r7.m()
+            r6.f15077t = r7
             com.google.android.material.imageview.ShapeableImageView$a r7 = new com.google.android.material.imageview.ShapeableImageView$a
             r7.<init>()
             r6.setOutlineProvider(r7)

@@ -59,4 +59,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.textMarkupPatternWithExclusions = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3146, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3148, 2]);

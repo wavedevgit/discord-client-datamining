@@ -82,25 +82,25 @@ public final class MultiPostprocessor implements Postprocessor {
         try {
             CloseableReference closeableReference2 = null;
             for (Postprocessor postprocessor : this.postprocessors) {
-                if (closeableReference2 != null && (r4 = (Bitmap) closeableReference2.E0()) != null) {
+                if (closeableReference2 != null && (r4 = (Bitmap) closeableReference2.J()) != null) {
                     closeableReference = postprocessor.process(r4, bitmapFactory);
-                    CloseableReference.N(closeableReference2);
+                    CloseableReference.z(closeableReference2);
                     closeableReference2 = closeableReference.clone();
                 }
                 Bitmap bitmap = sourceBitmap;
                 closeableReference = postprocessor.process(bitmap, bitmapFactory);
-                CloseableReference.N(closeableReference2);
+                CloseableReference.z(closeableReference2);
                 closeableReference2 = closeableReference.clone();
             }
             if (closeableReference != null) {
                 CloseableReference clone = closeableReference.clone();
                 Intrinsics.checkNotNullExpressionValue(clone, "clone(...)");
-                CloseableReference.N(closeableReference);
+                CloseableReference.z(closeableReference);
                 return clone;
             }
             throw new IllegalStateException(("MultiPostprocessor returned null bitmap - Number of Postprocessors: " + this.postprocessors.size()).toString());
         } catch (Throwable th2) {
-            CloseableReference.N(null);
+            CloseableReference.z(null);
             throw th2;
         }
     }

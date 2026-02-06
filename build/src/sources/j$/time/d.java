@@ -3,99 +3,38 @@ package j$.time;
 public abstract /* synthetic */ class d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final /* synthetic */ int[] f30442a;
-
-    /* renamed from: b  reason: collision with root package name */
-    public static final /* synthetic */ int[] f30443b;
+    public static final /* synthetic */ int[] f29417a;
 
     static {
         int[] iArr = new int[j$.time.temporal.b.values().length];
-        f30443b = iArr;
+        f29417a = iArr;
         try {
-            iArr[j$.time.temporal.b.DAYS.ordinal()] = 1;
+            iArr[j$.time.temporal.b.NANOS.ordinal()] = 1;
         } catch (NoSuchFieldError unused) {
         }
         try {
-            f30443b[j$.time.temporal.b.WEEKS.ordinal()] = 2;
+            f29417a[j$.time.temporal.b.MICROS.ordinal()] = 2;
         } catch (NoSuchFieldError unused2) {
         }
         try {
-            f30443b[j$.time.temporal.b.MONTHS.ordinal()] = 3;
+            f29417a[j$.time.temporal.b.MILLIS.ordinal()] = 3;
         } catch (NoSuchFieldError unused3) {
         }
         try {
-            f30443b[j$.time.temporal.b.YEARS.ordinal()] = 4;
+            f29417a[j$.time.temporal.b.SECONDS.ordinal()] = 4;
         } catch (NoSuchFieldError unused4) {
         }
         try {
-            f30443b[j$.time.temporal.b.DECADES.ordinal()] = 5;
+            f29417a[j$.time.temporal.b.MINUTES.ordinal()] = 5;
         } catch (NoSuchFieldError unused5) {
         }
         try {
-            f30443b[j$.time.temporal.b.CENTURIES.ordinal()] = 6;
+            f29417a[j$.time.temporal.b.HOURS.ordinal()] = 6;
         } catch (NoSuchFieldError unused6) {
         }
         try {
-            f30443b[j$.time.temporal.b.MILLENNIA.ordinal()] = 7;
+            f29417a[j$.time.temporal.b.HALF_DAYS.ordinal()] = 7;
         } catch (NoSuchFieldError unused7) {
-        }
-        try {
-            f30443b[j$.time.temporal.b.ERAS.ordinal()] = 8;
-        } catch (NoSuchFieldError unused8) {
-        }
-        int[] iArr2 = new int[j$.time.temporal.a.values().length];
-        f30442a = iArr2;
-        try {
-            iArr2[j$.time.temporal.a.DAY_OF_MONTH.ordinal()] = 1;
-        } catch (NoSuchFieldError unused9) {
-        }
-        try {
-            f30442a[j$.time.temporal.a.DAY_OF_YEAR.ordinal()] = 2;
-        } catch (NoSuchFieldError unused10) {
-        }
-        try {
-            f30442a[j$.time.temporal.a.ALIGNED_WEEK_OF_MONTH.ordinal()] = 3;
-        } catch (NoSuchFieldError unused11) {
-        }
-        try {
-            f30442a[j$.time.temporal.a.YEAR_OF_ERA.ordinal()] = 4;
-        } catch (NoSuchFieldError unused12) {
-        }
-        try {
-            f30442a[j$.time.temporal.a.DAY_OF_WEEK.ordinal()] = 5;
-        } catch (NoSuchFieldError unused13) {
-        }
-        try {
-            f30442a[j$.time.temporal.a.ALIGNED_DAY_OF_WEEK_IN_MONTH.ordinal()] = 6;
-        } catch (NoSuchFieldError unused14) {
-        }
-        try {
-            f30442a[j$.time.temporal.a.ALIGNED_DAY_OF_WEEK_IN_YEAR.ordinal()] = 7;
-        } catch (NoSuchFieldError unused15) {
-        }
-        try {
-            f30442a[j$.time.temporal.a.EPOCH_DAY.ordinal()] = 8;
-        } catch (NoSuchFieldError unused16) {
-        }
-        try {
-            f30442a[j$.time.temporal.a.ALIGNED_WEEK_OF_YEAR.ordinal()] = 9;
-        } catch (NoSuchFieldError unused17) {
-        }
-        try {
-            f30442a[j$.time.temporal.a.MONTH_OF_YEAR.ordinal()] = 10;
-        } catch (NoSuchFieldError unused18) {
-        }
-        try {
-            f30442a[j$.time.temporal.a.PROLEPTIC_MONTH.ordinal()] = 11;
-        } catch (NoSuchFieldError unused19) {
-        }
-        try {
-            f30442a[j$.time.temporal.a.YEAR.ordinal()] = 12;
-        } catch (NoSuchFieldError unused20) {
-        }
-        try {
-            f30442a[j$.time.temporal.a.ERA.ordinal()] = 13;
-        } catch (NoSuchFieldError unused21) {
         }
     }
 }

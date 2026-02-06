@@ -1383,4 +1383,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isViewChannelSidebar = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 1590, 4226, 1372, 1410, 3091, 1670, 3213, 1621, 660, 1379, 483, 4227, 1229, 21, 3360, 566, 806, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 1590, 4227, 1372, 1410, 3093, 1670, 3215, 1621, 660, 1379, 483, 4228, 1229, 21, 3362, 566, 806, 2]);

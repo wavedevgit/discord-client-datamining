@@ -53,24 +53,24 @@ public final class InputInternationalDb_InputInternationalDbComponentStyleJsonAd
     @NotNull
     public InputInternationalDb.InputInternationalDbComponentStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         InputSelectComponentStyle inputSelectComponentStyle = null;
         InputTextBasedComponentStyle inputTextBasedComponentStyle = null;
         TextBasedComponentStyle textBasedComponentStyle = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0) {
+                reader.S();
+            } else if (J == 0) {
                 inputSelectComponentStyle = (InputSelectComponentStyle) this.nullableInputSelectComponentStyleAdapter.fromJson(reader);
-            } else if (W == 1) {
+            } else if (J == 1) {
                 inputTextBasedComponentStyle = (InputTextBasedComponentStyle) this.nullableInputTextBasedComponentStyleAdapter.fromJson(reader);
-            } else if (W == 2) {
+            } else if (J == 2) {
                 textBasedComponentStyle = (TextBasedComponentStyle) this.nullableTextBasedComponentStyleAdapter.fromJson(reader);
             }
         }
-        reader.z();
+        reader.D();
         return new InputInternationalDb.InputInternationalDbComponentStyle(inputSelectComponentStyle, inputTextBasedComponentStyle, textBasedComponentStyle);
     }
 
@@ -79,13 +79,13 @@ public final class InputInternationalDb_InputInternationalDbComponentStyleJsonAd
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (inputInternationalDbComponentStyle != null) {
             writer.k();
-            writer.W("inputSelectStyle");
+            writer.J("inputSelectStyle");
             this.nullableInputSelectComponentStyleAdapter.toJson(writer, inputInternationalDbComponentStyle.getInputSelectStyle());
-            writer.W("inputTextStyle");
+            writer.J("inputTextStyle");
             this.nullableInputTextBasedComponentStyleAdapter.toJson(writer, inputInternationalDbComponentStyle.getInputTextStyle());
-            writer.W("textStyle");
+            writer.J("textStyle");
             this.nullableTextBasedComponentStyleAdapter.toJson(writer, inputInternationalDbComponentStyle.getTextStyle());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

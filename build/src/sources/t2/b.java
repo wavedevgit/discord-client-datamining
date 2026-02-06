@@ -7,14 +7,14 @@ import kotlin.collections.CollectionsKt;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ArrayList f50281a = new ArrayList();
+    private final ArrayList f50257a = new ArrayList();
 
     public final void a() {
-        int n10 = CollectionsKt.n(this.f50281a);
+        int n10 = CollectionsKt.n(this.f50257a);
         if (-1 >= n10) {
             return;
         }
-        android.support.v4.media.session.b.a(this.f50281a.get(n10));
+        android.support.v4.media.session.b.a(this.f50257a.get(n10));
         throw null;
     }
 }

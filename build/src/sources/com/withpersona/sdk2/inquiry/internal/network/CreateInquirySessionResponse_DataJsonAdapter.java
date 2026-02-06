@@ -14,60 +14,60 @@ import org.jetbrains.annotations.NotNull;
 public final class CreateInquirySessionResponse_DataJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19187a;
+    private final m.b f19167a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f19188b;
+    private final com.squareup.moshi.h f19168b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final com.squareup.moshi.h f19189c;
+    private final com.squareup.moshi.h f19169c;
 
     public CreateInquirySessionResponse_DataJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a(StackTraceHelper.ID_KEY, "attributes");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19187a = a10;
+        this.f19167a = a10;
         com.squareup.moshi.h f10 = moshi.f(String.class, x0.d(), StackTraceHelper.ID_KEY);
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19188b = f10;
+        this.f19168b = f10;
         com.squareup.moshi.h f11 = moshi.f(CreateInquirySessionResponse.Attributes.class, x0.d(), "attributes");
         Intrinsics.checkNotNullExpressionValue(f11, "adapter(...)");
-        this.f19189c = f11;
+        this.f19169c = f11;
     }
 
     @Override // com.squareup.moshi.h
     /* renamed from: a */
     public CreateInquirySessionResponse.Data fromJson(m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         String str = null;
         CreateInquirySessionResponse.Attributes attributes = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.f19187a);
-            if (W != -1) {
-                if (W != 0) {
-                    if (W == 1 && (attributes = (CreateInquirySessionResponse.Attributes) this.f19189c.fromJson(reader)) == null) {
-                        throw ym.c.x("attributes", "attributes", reader);
+            int J = reader.J(this.f19167a);
+            if (J != -1) {
+                if (J != 0) {
+                    if (J == 1 && (attributes = (CreateInquirySessionResponse.Attributes) this.f19169c.fromJson(reader)) == null) {
+                        throw an.c.x("attributes", "attributes", reader);
                     }
                 } else {
-                    str = (String) this.f19188b.fromJson(reader);
+                    str = (String) this.f19168b.fromJson(reader);
                     if (str == null) {
-                        throw ym.c.x(StackTraceHelper.ID_KEY, StackTraceHelper.ID_KEY, reader);
+                        throw an.c.x(StackTraceHelper.ID_KEY, StackTraceHelper.ID_KEY, reader);
                     }
                 }
             } else {
                 reader.E0();
-                reader.P();
+                reader.S();
             }
         }
-        reader.z();
+        reader.D();
         if (str != null) {
             if (attributes != null) {
                 return new CreateInquirySessionResponse.Data(str, attributes);
             }
-            throw ym.c.o("attributes", "attributes", reader);
+            throw an.c.o("attributes", "attributes", reader);
         }
-        throw ym.c.o(StackTraceHelper.ID_KEY, StackTraceHelper.ID_KEY, reader);
+        throw an.c.o(StackTraceHelper.ID_KEY, StackTraceHelper.ID_KEY, reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -76,11 +76,11 @@ public final class CreateInquirySessionResponse_DataJsonAdapter extends com.squa
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (data != null) {
             writer.k();
-            writer.W(StackTraceHelper.ID_KEY);
-            this.f19188b.toJson(writer, data.b());
-            writer.W("attributes");
-            this.f19189c.toJson(writer, data.a());
-            writer.E();
+            writer.J(StackTraceHelper.ID_KEY);
+            this.f19168b.toJson(writer, data.b());
+            writer.J("attributes");
+            this.f19169c.toJson(writer, data.a());
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

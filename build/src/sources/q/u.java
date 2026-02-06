@@ -32,98 +32,98 @@ import x.n0;
 public class u implements a0.a0 {
 
     /* renamed from: b  reason: collision with root package name */
-    final b f47075b;
+    final b f46123b;
 
     /* renamed from: c  reason: collision with root package name */
-    final Executor f47076c;
+    final Executor f46124c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Object f47077d = new Object();
+    private final Object f46125d = new Object();
 
     /* renamed from: e  reason: collision with root package name */
-    private final r.a0 f47078e;
+    private final r.a0 f46126e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final a0.d f47079f;
+    private final a0.d f46127f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final i2.b f47080g;
+    private final i2.b f46128g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final v3 f47081h;
+    private final v3 f46129h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final z4 f47082i;
+    private final z4 f46130i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final w4 f47083j;
+    private final w4 f46131j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final g3 f47084k;
+    private final g3 f46132k;
 
     /* renamed from: l  reason: collision with root package name */
-    b5 f47085l;
+    b5 f46133l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final w.g f47086m;
+    private final w.g f46134m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final z0 f47087n;
+    private final z0 f46135n;
 
     /* renamed from: o  reason: collision with root package name */
-    private final y4 f47088o;
+    private final y4 f46136o;
 
     /* renamed from: p  reason: collision with root package name */
-    private int f47089p;
+    private int f46137p;
 
     /* renamed from: q  reason: collision with root package name */
-    private n0.i f47090q;
+    private n0.i f46138q;
 
     /* renamed from: r  reason: collision with root package name */
-    private volatile boolean f47091r;
+    private volatile boolean f46139r;
 
     /* renamed from: s  reason: collision with root package name */
-    private volatile int f47092s;
+    private volatile int f46140s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final u.a f47093t;
+    private final u.a f46141t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final u.b f47094u;
+    private final u.b f46142u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final AtomicLong f47095v;
+    private final AtomicLong f46143v;
 
     /* renamed from: w  reason: collision with root package name */
-    private volatile ListenableFuture f47096w;
+    private volatile ListenableFuture f46144w;
 
     /* renamed from: x  reason: collision with root package name */
-    private int f47097x;
+    private int f46145x;
 
     /* renamed from: y  reason: collision with root package name */
-    private long f47098y;
+    private long f46146y;
 
     /* renamed from: z  reason: collision with root package name */
-    private final a f47099z;
+    private final a f46147z;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a extends a0.k {
 
         /* renamed from: a  reason: collision with root package name */
-        Set f47100a = new HashSet();
+        Set f46148a = new HashSet();
 
         /* renamed from: b  reason: collision with root package name */
-        Map f47101b = new ArrayMap();
+        Map f46149b = new ArrayMap();
 
         a() {
         }
 
         @Override // a0.k
         public void a(final int i10) {
-            for (final a0.k kVar : this.f47100a) {
+            for (final a0.k kVar : this.f46148a) {
                 try {
-                    ((Executor) this.f47101b.get(kVar)).execute(new Runnable() { // from class: q.t
+                    ((Executor) this.f46149b.get(kVar)).execute(new Runnable() { // from class: q.t
                         @Override // java.lang.Runnable
                         public final void run() {
                             a0.k.this.a(i10);
@@ -137,9 +137,9 @@ public class u implements a0.a0 {
 
         @Override // a0.k
         public void b(final int i10, final a0.u uVar) {
-            for (final a0.k kVar : this.f47100a) {
+            for (final a0.k kVar : this.f46148a) {
                 try {
-                    ((Executor) this.f47101b.get(kVar)).execute(new Runnable() { // from class: q.s
+                    ((Executor) this.f46149b.get(kVar)).execute(new Runnable() { // from class: q.s
                         @Override // java.lang.Runnable
                         public final void run() {
                             a0.k.this.b(i10, uVar);
@@ -153,9 +153,9 @@ public class u implements a0.a0 {
 
         @Override // a0.k
         public void c(final int i10, final a0.m mVar) {
-            for (final a0.k kVar : this.f47100a) {
+            for (final a0.k kVar : this.f46148a) {
                 try {
-                    ((Executor) this.f47101b.get(kVar)).execute(new Runnable() { // from class: q.r
+                    ((Executor) this.f46149b.get(kVar)).execute(new Runnable() { // from class: q.r
                         @Override // java.lang.Runnable
                         public final void run() {
                             a0.k.this.c(i10, mVar);
@@ -169,14 +169,14 @@ public class u implements a0.a0 {
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public void h(Executor executor, a0.k kVar) {
-            this.f47100a.add(kVar);
-            this.f47101b.put(kVar, executor);
+            this.f46148a.add(kVar);
+            this.f46149b.put(kVar, executor);
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public void i(a0.k kVar) {
-            this.f47100a.remove(kVar);
-            this.f47101b.remove(kVar);
+            this.f46148a.remove(kVar);
+            this.f46149b.remove(kVar);
         }
     }
 
@@ -185,39 +185,39 @@ public class u implements a0.a0 {
     public static final class b extends CameraCaptureSession.CaptureCallback {
 
         /* renamed from: a  reason: collision with root package name */
-        final Set f47102a = new HashSet();
+        final Set f46150a = new HashSet();
 
         /* renamed from: b  reason: collision with root package name */
-        private final Executor f47103b;
+        private final Executor f46151b;
 
         b(Executor executor) {
-            this.f47103b = executor;
+            this.f46151b = executor;
         }
 
         public static /* synthetic */ void a(b bVar, TotalCaptureResult totalCaptureResult) {
             bVar.getClass();
             HashSet hashSet = new HashSet();
-            for (c cVar : bVar.f47102a) {
+            for (c cVar : bVar.f46150a) {
                 if (cVar.a(totalCaptureResult)) {
                     hashSet.add(cVar);
                 }
             }
             if (!hashSet.isEmpty()) {
-                bVar.f47102a.removeAll(hashSet);
+                bVar.f46150a.removeAll(hashSet);
             }
         }
 
         void b(c cVar) {
-            this.f47102a.add(cVar);
+            this.f46150a.add(cVar);
         }
 
         void c(c cVar) {
-            this.f47102a.remove(cVar);
+            this.f46150a.remove(cVar);
         }
 
         @Override // android.hardware.camera2.CameraCaptureSession.CaptureCallback
         public void onCaptureCompleted(CameraCaptureSession cameraCaptureSession, CaptureRequest captureRequest, final TotalCaptureResult totalCaptureResult) {
-            this.f47103b.execute(new Runnable() { // from class: q.v
+            this.f46151b.execute(new Runnable() { // from class: q.v
                 @Override // java.lang.Runnable
                 public final void run() {
                     u.b.a(u.b.this, totalCaptureResult);
@@ -234,34 +234,34 @@ public class u implements a0.a0 {
     /* JADX INFO: Access modifiers changed from: package-private */
     public u(r.a0 a0Var, ScheduledExecutorService scheduledExecutorService, Executor executor, a0.d dVar, a0.d2 d2Var) {
         i2.b bVar = new i2.b();
-        this.f47080g = bVar;
-        this.f47089p = 0;
-        this.f47091r = false;
-        this.f47092s = 2;
-        this.f47095v = new AtomicLong(0L);
-        this.f47096w = d0.n.p(null);
-        this.f47097x = 1;
-        this.f47098y = 0L;
+        this.f46128g = bVar;
+        this.f46137p = 0;
+        this.f46139r = false;
+        this.f46140s = 2;
+        this.f46143v = new AtomicLong(0L);
+        this.f46144w = d0.n.p(null);
+        this.f46145x = 1;
+        this.f46146y = 0L;
         a aVar = new a();
-        this.f47099z = aVar;
-        this.f47078e = a0Var;
-        this.f47079f = dVar;
-        this.f47076c = executor;
-        this.f47088o = new y4(executor);
+        this.f46147z = aVar;
+        this.f46126e = a0Var;
+        this.f46127f = dVar;
+        this.f46124c = executor;
+        this.f46136o = new y4(executor);
         b bVar2 = new b(executor);
-        this.f47075b = bVar2;
-        bVar.x(this.f47097x);
+        this.f46123b = bVar2;
+        bVar.x(this.f46145x);
         bVar.j(q2.e(bVar2));
         bVar.j(aVar);
-        this.f47084k = new g3(this, a0Var, executor);
-        this.f47081h = new v3(this, scheduledExecutorService, executor, d2Var);
-        this.f47082i = new z4(this, a0Var, executor);
-        this.f47083j = new w4(this, a0Var, executor);
-        this.f47085l = new f5(a0Var);
-        this.f47093t = new u.a(d2Var);
-        this.f47094u = new u.b(d2Var);
-        this.f47086m = new w.g(this, executor);
-        this.f47087n = new z0(this, a0Var, d2Var, executor, scheduledExecutorService);
+        this.f46132k = new g3(this, a0Var, executor);
+        this.f46129h = new v3(this, scheduledExecutorService, executor, d2Var);
+        this.f46130i = new z4(this, a0Var, executor);
+        this.f46131j = new w4(this, a0Var, executor);
+        this.f46133l = new f5(a0Var);
+        this.f46141t = new u.a(d2Var);
+        this.f46142u = new u.b(d2Var);
+        this.f46134m = new w.g(this, executor);
+        this.f46135n = new z0(this, a0Var, d2Var, executor, scheduledExecutorService);
     }
 
     public static int J(r.a0 a0Var, int i10) {
@@ -279,7 +279,7 @@ public class u implements a0.a0 {
     }
 
     private int L(int i10) {
-        int[] iArr = (int[]) this.f47078e.a(CameraCharacteristics.CONTROL_AWB_AVAILABLE_MODES);
+        int[] iArr = (int[]) this.f46126e.a(CameraCharacteristics.CONTROL_AWB_AVAILABLE_MODES);
         if (iArr == null) {
             return 0;
         }
@@ -322,8 +322,8 @@ public class u implements a0.a0 {
     }
 
     private ListenableFuture g0(final long j10) {
-        return androidx.concurrent.futures.c.a(new c.InterfaceC0029c() { // from class: q.k
-            @Override // androidx.concurrent.futures.c.InterfaceC0029c
+        return androidx.concurrent.futures.c.a(new c.InterfaceC0027c() { // from class: q.k
+            @Override // androidx.concurrent.futures.c.InterfaceC0027c
             public final Object a(c.a aVar) {
                 return u.q(u.this, j10, aVar);
             }
@@ -348,7 +348,7 @@ public class u implements a0.a0 {
     }
 
     public static /* synthetic */ Object r(final u uVar, final c.a aVar) {
-        uVar.f47076c.execute(new Runnable() { // from class: q.h
+        uVar.f46124c.execute(new Runnable() { // from class: q.h
             @Override // java.lang.Runnable
             public final void run() {
                 d0.n.t(r0.g0(u.this.f0()), aVar);
@@ -366,16 +366,16 @@ public class u implements a0.a0 {
     }
 
     public int A() {
-        return this.f47092s;
+        return this.f46140s;
     }
 
     public v3 B() {
-        return this.f47081h;
+        return this.f46129h;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int C() {
-        Integer num = (Integer) this.f47078e.a(CameraCharacteristics.CONTROL_MAX_REGIONS_AE);
+        Integer num = (Integer) this.f46126e.a(CameraCharacteristics.CONTROL_MAX_REGIONS_AE);
         if (num == null) {
             return 0;
         }
@@ -384,7 +384,7 @@ public class u implements a0.a0 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int D() {
-        Integer num = (Integer) this.f47078e.a(CameraCharacteristics.CONTROL_MAX_REGIONS_AF);
+        Integer num = (Integer) this.f46126e.a(CameraCharacteristics.CONTROL_MAX_REGIONS_AF);
         if (num == null) {
             return 0;
         }
@@ -393,7 +393,7 @@ public class u implements a0.a0 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int E() {
-        Integer num = (Integer) this.f47078e.a(CameraCharacteristics.CONTROL_MAX_REGIONS_AWB);
+        Integer num = (Integer) this.f46126e.a(CameraCharacteristics.CONTROL_MAX_REGIONS_AWB);
         if (num == null) {
             return 0;
         }
@@ -401,34 +401,34 @@ public class u implements a0.a0 {
     }
 
     public n0.i F() {
-        return this.f47090q;
+        return this.f46138q;
     }
 
     public a0.i2 G() {
-        this.f47080g.x(this.f47097x);
-        this.f47080g.t(H());
-        this.f47080g.n("CameraControlSessionUpdateId", Long.valueOf(this.f47098y));
-        return this.f47080g.o();
+        this.f46128g.x(this.f46145x);
+        this.f46128g.t(H());
+        this.f46128g.n("CameraControlSessionUpdateId", Long.valueOf(this.f46146y));
+        return this.f46128g.o();
     }
 
     a0.r0 H() {
         int i10;
-        a.C0564a c0564a = new a.C0564a();
+        a.C0575a c0575a = new a.C0575a();
         CaptureRequest.Key key = CaptureRequest.CONTROL_MODE;
         r0.c cVar = r0.c.REQUIRED;
-        c0564a.g(key, 1, cVar);
-        this.f47081h.n(c0564a);
-        this.f47093t.a(c0564a);
-        this.f47082i.a(c0564a);
-        if (this.f47081h.G()) {
+        c0575a.g(key, 1, cVar);
+        this.f46129h.n(c0575a);
+        this.f46141t.a(c0575a);
+        this.f46130i.a(c0575a);
+        if (this.f46129h.G()) {
             i10 = 5;
         } else {
             i10 = 1;
         }
-        if (this.f47091r) {
-            c0564a.g(CaptureRequest.FLASH_MODE, 2, cVar);
+        if (this.f46139r) {
+            c0575a.g(CaptureRequest.FLASH_MODE, 2, cVar);
         } else {
-            int i11 = this.f47092s;
+            int i11 = this.f46140s;
             if (i11 != 0) {
                 if (i11 != 1) {
                     if (i11 == 2) {
@@ -438,24 +438,24 @@ public class u implements a0.a0 {
                     i10 = 3;
                 }
             } else {
-                i10 = this.f47094u.a(2);
+                i10 = this.f46142u.a(2);
             }
         }
-        c0564a.g(CaptureRequest.CONTROL_AE_MODE, Integer.valueOf(I(i10)), cVar);
-        c0564a.g(CaptureRequest.CONTROL_AWB_MODE, Integer.valueOf(L(1)), cVar);
-        this.f47084k.c(c0564a);
-        this.f47086m.i(c0564a);
-        return c0564a.c();
+        c0575a.g(CaptureRequest.CONTROL_AE_MODE, Integer.valueOf(I(i10)), cVar);
+        c0575a.g(CaptureRequest.CONTROL_AWB_MODE, Integer.valueOf(L(1)), cVar);
+        this.f46132k.c(c0575a);
+        this.f46134m.i(c0575a);
+        return c0575a.c();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int I(int i10) {
-        return J(this.f47078e, i10);
+        return J(this.f46126e, i10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int K(int i10) {
-        int[] iArr = (int[]) this.f47078e.a(CameraCharacteristics.CONTROL_AF_AVAILABLE_MODES);
+        int[] iArr = (int[]) this.f46126e.a(CameraCharacteristics.CONTROL_AF_AVAILABLE_MODES);
         if (iArr == null) {
             return 0;
         }
@@ -472,34 +472,34 @@ public class u implements a0.a0 {
     }
 
     public w4 M() {
-        return this.f47083j;
+        return this.f46131j;
     }
 
     int N() {
         int i10;
-        synchronized (this.f47077d) {
-            i10 = this.f47089p;
+        synchronized (this.f46125d) {
+            i10 = this.f46137p;
         }
         return i10;
     }
 
     public z4 O() {
-        return this.f47082i;
+        return this.f46130i;
     }
 
     public b5 P() {
-        return this.f47085l;
+        return this.f46133l;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void Q() {
-        synchronized (this.f47077d) {
-            this.f47089p++;
+        synchronized (this.f46125d) {
+            this.f46137p++;
         }
     }
 
     public boolean S() {
-        int a10 = this.f47088o.a();
+        int a10 = this.f46136o.a();
         x.y0.a("Camera2CameraControlImp", "isInVideoUsage: mVideoUsageControl value = " + a10);
         if (a10 > 0) {
             return true;
@@ -509,20 +509,20 @@ public class u implements a0.a0 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean V() {
-        return this.f47091r;
+        return this.f46139r;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void W(c cVar) {
-        this.f47075b.c(cVar);
+        this.f46123b.c(cVar);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void X(final a0.k kVar) {
-        this.f47076c.execute(new Runnable() { // from class: q.m
+        this.f46124c.execute(new Runnable() { // from class: q.m
             @Override // java.lang.Runnable
             public final void run() {
-                u.this.f47099z.i(kVar);
+                u.this.f46147z.i(kVar);
             }
         });
     }
@@ -535,14 +535,14 @@ public class u implements a0.a0 {
     /* JADX INFO: Access modifiers changed from: package-private */
     public void Z(boolean z10) {
         x.y0.a("Camera2CameraControlImp", "setActive: isActive = " + z10);
-        this.f47081h.J(z10);
-        this.f47082i.g(z10);
-        this.f47083j.g(z10);
-        this.f47084k.b(z10);
-        this.f47086m.o(z10);
+        this.f46129h.J(z10);
+        this.f46130i.g(z10);
+        this.f46131j.g(z10);
+        this.f46132k.b(z10);
+        this.f46134m.o(z10);
         if (!z10) {
-            this.f47090q = null;
-            this.f47088o.b();
+            this.f46138q = null;
+            this.f46136o.b();
         }
     }
 
@@ -551,23 +551,23 @@ public class u implements a0.a0 {
         if (!R()) {
             return d0.n.n(new j.a("Camera is not active."));
         }
-        return d0.n.s(this.f47083j.d(z10));
+        return d0.n.s(this.f46131j.d(z10));
     }
 
     public void a0(Rational rational) {
-        this.f47081h.K(rational);
+        this.f46129h.K(rational);
     }
 
     @Override // a0.a0
     public void b(i2.b bVar) {
-        this.f47085l.b(bVar);
+        this.f46133l.b(bVar);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void b0(int i10) {
-        this.f47097x = i10;
-        this.f47081h.L(i10);
-        this.f47087n.g(this.f47097x);
+        this.f46145x = i10;
+        this.f46129h.L(i10);
+        this.f46135n.g(this.f46145x);
     }
 
     @Override // a0.a0
@@ -577,24 +577,24 @@ public class u implements a0.a0 {
             return d0.n.n(new j.a("Camera is not active."));
         }
         final int A = A();
-        return d0.d.b(d0.n.s(this.f47096w)).f(new d0.a() { // from class: q.i
+        return d0.d.b(d0.n.s(this.f46144w)).f(new d0.a() { // from class: q.i
             @Override // d0.a
             public final ListenableFuture apply(Object obj) {
                 ListenableFuture h10;
                 Void r52 = (Void) obj;
-                h10 = u.this.f47087n.h(list, i10, A, i11);
+                h10 = u.this.f46135n.h(list, i10, A, i11);
                 return h10;
             }
-        }, this.f47076c);
+        }, this.f46124c);
     }
 
     public void c0(boolean z10) {
-        this.f47085l.d(z10);
+        this.f46133l.d(z10);
     }
 
     @Override // a0.a0
     public Rect d() {
-        Rect rect = (Rect) this.f47078e.a(CameraCharacteristics.SENSOR_INFO_ACTIVE_ARRAY_SIZE);
+        Rect rect = (Rect) this.f46126e.a(CameraCharacteristics.SENSOR_INFO_ACTIVE_ARRAY_SIZE);
         if ("robolectric".equals(Build.FINGERPRINT) && rect == null) {
             return new Rect(0, 0, 4000, 3000);
         }
@@ -603,17 +603,17 @@ public class u implements a0.a0 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void d0(List list) {
-        this.f47079f.b(list);
+        this.f46127f.b(list);
     }
 
     @Override // a0.a0
     public void e(n0.i iVar) {
-        this.f47090q = iVar;
+        this.f46138q = iVar;
     }
 
     public ListenableFuture e0() {
-        return d0.n.s(androidx.concurrent.futures.c.a(new c.InterfaceC0029c() { // from class: q.p
-            @Override // androidx.concurrent.futures.c.InterfaceC0029c
+        return d0.n.s(androidx.concurrent.futures.c.a(new c.InterfaceC0027c() { // from class: q.p
+            @Override // androidx.concurrent.futures.c.InterfaceC0027c
             public final Object a(c.a aVar) {
                 return u.r(u.this, aVar);
             }
@@ -626,27 +626,27 @@ public class u implements a0.a0 {
             x.y0.l("Camera2CameraControlImp", "Camera is not active.");
             return;
         }
-        this.f47092s = i10;
-        x.y0.a("Camera2CameraControlImp", "setFlashMode: mFlashMode = " + this.f47092s);
-        b5 b5Var = this.f47085l;
+        this.f46140s = i10;
+        x.y0.a("Camera2CameraControlImp", "setFlashMode: mFlashMode = " + this.f46140s);
+        b5 b5Var = this.f46133l;
         boolean z10 = true;
-        if (this.f47092s != 1 && this.f47092s != 0) {
+        if (this.f46140s != 1 && this.f46140s != 0) {
             z10 = false;
         }
         b5Var.c(z10);
-        this.f47096w = e0();
+        this.f46144w = e0();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public long f0() {
-        this.f47098y = this.f47095v.getAndIncrement();
-        this.f47079f.a();
-        return this.f47098y;
+        this.f46146y = this.f46143v.getAndIncrement();
+        this.f46127f.a();
+        return this.f46146y;
     }
 
     @Override // a0.a0
     public a0.r0 g() {
-        return this.f47086m.n();
+        return this.f46134m.n();
     }
 
     @Override // x.j
@@ -654,7 +654,7 @@ public class u implements a0.a0 {
         if (!R()) {
             return d0.n.n(new j.a("Camera is not active."));
         }
-        return d0.n.s(this.f47081h.N(b0Var));
+        return d0.n.s(this.f46129h.N(b0Var));
     }
 
     @Override // a0.a0
@@ -664,20 +664,20 @@ public class u implements a0.a0 {
             return d0.n.n(new j.a("Camera is not active."));
         }
         final int A = A();
-        return d0.d.b(d0.n.s(this.f47096w)).f(new d0.a() { // from class: q.j
+        return d0.d.b(d0.n.s(this.f46144w)).f(new d0.a() { // from class: q.j
             @Override // d0.a
             public final ListenableFuture apply(Object obj) {
                 ListenableFuture p10;
                 Void r52 = (Void) obj;
-                p10 = d0.n.p(u.this.f47087n.c(i10, A, i11));
+                p10 = d0.n.p(u.this.f46135n.c(i10, A, i11));
                 return p10;
             }
-        }, this.f47076c);
+        }, this.f46124c);
     }
 
     @Override // a0.a0
     public void j() {
-        this.f47086m.j().a(new Runnable() { // from class: q.q
+        this.f46134m.j().a(new Runnable() { // from class: q.q
             @Override // java.lang.Runnable
             public final void run() {
                 u.m();
@@ -687,7 +687,7 @@ public class u implements a0.a0 {
 
     @Override // a0.a0
     public void k(a0.r0 r0Var) {
-        this.f47086m.g(j.a.e(r0Var).d()).a(new Runnable() { // from class: q.o
+        this.f46134m.g(j.a.e(r0Var).d()).a(new Runnable() { // from class: q.o
             @Override // java.lang.Runnable
             public final void run() {
                 u.l();
@@ -697,26 +697,26 @@ public class u implements a0.a0 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void v(c cVar) {
-        this.f47075b.b(cVar);
+        this.f46123b.b(cVar);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void w(final Executor executor, final a0.k kVar) {
-        this.f47076c.execute(new Runnable() { // from class: q.n
+        this.f46124c.execute(new Runnable() { // from class: q.n
             @Override // java.lang.Runnable
             public final void run() {
-                u.this.f47099z.h(executor, kVar);
+                u.this.f46147z.h(executor, kVar);
             }
         });
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void x() {
-        synchronized (this.f47077d) {
+        synchronized (this.f46125d) {
             try {
-                int i10 = this.f47089p;
+                int i10 = this.f46137p;
                 if (i10 != 0) {
-                    this.f47089p = i10 - 1;
+                    this.f46137p = i10 - 1;
                 } else {
                     throw new IllegalStateException("Decrementing use count occurs more times than incrementing");
                 }
@@ -728,15 +728,15 @@ public class u implements a0.a0 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void y(boolean z10) {
-        this.f47091r = z10;
+        this.f46139r = z10;
         if (!z10) {
             p0.a aVar = new p0.a();
-            aVar.t(this.f47097x);
+            aVar.t(this.f46145x);
             aVar.u(true);
-            a.C0564a c0564a = new a.C0564a();
-            c0564a.f(CaptureRequest.CONTROL_AE_MODE, Integer.valueOf(I(1)));
-            c0564a.f(CaptureRequest.FLASH_MODE, 0);
-            aVar.e(c0564a.c());
+            a.C0575a c0575a = new a.C0575a();
+            c0575a.f(CaptureRequest.CONTROL_AE_MODE, Integer.valueOf(I(1)));
+            c0575a.f(CaptureRequest.FLASH_MODE, 0);
+            aVar.e(c0575a.c());
             d0(Collections.singletonList(aVar.h()));
         }
         f0();
@@ -744,6 +744,6 @@ public class u implements a0.a0 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Rect z() {
-        return this.f47082i.c();
+        return this.f46130i.c();
     }
 }

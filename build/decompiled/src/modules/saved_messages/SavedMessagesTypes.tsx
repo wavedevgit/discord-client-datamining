@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
     var3 = function arg0() {
-        _fun76103: for (var _fun76103_ip = 0;;) switch (_fun76103_ip) {
+        _fun76130: for (var _fun76130_ip = 0;;) switch (_fun76130_ip) {
             case 0:
                 var2 = arg0;
                 var0 = {};
@@ -38,8 +38,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = 0;
                 var4 = undefined;
                 if (!(var6 !== var5)) {
-                    _fun76103_ip = 128;
-                    continue _fun76103
+                    _fun76130_ip = 128;
+                    continue _fun76130
                 }
             case 123:
                 var4 = var2.guild_id;
@@ -48,8 +48,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var2.author_id;
                 var4 = undefined;
                 if (!(var6 !== var5)) {
-                    _fun76103_ip = 150;
-                    continue _fun76103
+                    _fun76130_ip = 150;
+                    continue _fun76130
                 }
             case 144:
                 var4 = var2.author_id;
@@ -62,8 +62,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var4 != var5;
                 var1 = undefined;
                 if (!var4) {
-                    _fun76103_ip = 215;
-                    continue _fun76103
+                    _fun76130_ip = 215;
+                    continue _fun76130
                 }
             case 183:
                 var4 = var3.Date;
@@ -108,7 +108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.SavedMessageSortTypes = var4;
     var2.savedMessageDataToClient = var3;
     var3 = function arg0() {
-        _fun76104: for (var _fun76104_ip = 0;;) switch (_fun76104_ip) {
+        _fun76131: for (var _fun76131_ip = 0;;) switch (_fun76131_ip) {
             case 0:
                 var1 = arg0;
                 var0 = {};
@@ -116,8 +116,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = null;
                 var3 = var2 != var3;
                 if (!var3) {
-                    _fun76104_ip = 59;
-                    continue _fun76104
+                    _fun76131_ip = 59;
+                    continue _fun76131
                 }
             case 19:
                 var5 = _closure1_slot0;
@@ -151,4 +151,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.savedMessageDeleteObjectToClient = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3971, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3972, 2]);

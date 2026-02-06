@@ -40,22 +40,22 @@ public final class Included_FontJsonAdapter extends h {
     @NotNull
     public Included.Font fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         Included.Font.FontAttributes fontAttributes = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.options);
-            if (W == -1) {
+            int J = reader.J(this.options);
+            if (J == -1) {
                 reader.E0();
-                reader.P();
-            } else if (W == 0 && (fontAttributes = (Included.Font.FontAttributes) this.fontAttributesAdapter.fromJson(reader)) == null) {
-                throw ym.c.x("attributes", "attributes", reader);
+                reader.S();
+            } else if (J == 0 && (fontAttributes = (Included.Font.FontAttributes) this.fontAttributesAdapter.fromJson(reader)) == null) {
+                throw an.c.x("attributes", "attributes", reader);
             }
         }
-        reader.z();
+        reader.D();
         if (fontAttributes != null) {
             return new Included.Font(fontAttributes);
         }
-        throw ym.c.o("attributes", "attributes", reader);
+        throw an.c.o("attributes", "attributes", reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -63,9 +63,9 @@ public final class Included_FontJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (font != null) {
             writer.k();
-            writer.W("attributes");
+            writer.J("attributes");
             this.fontAttributesAdapter.toJson(writer, font.getAttributes());
-            writer.E();
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

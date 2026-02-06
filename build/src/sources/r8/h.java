@@ -12,15 +12,15 @@ public interface h extends Closeable {
         }
     }
 
-    long C();
+    byte B(int i10);
+
+    long G();
 
     boolean isClosed();
 
-    int p(int i10, byte[] bArr, int i11, int i12);
+    int q(int i10, byte[] bArr, int i11, int i12);
 
-    ByteBuffer q();
+    ByteBuffer r();
 
     int size();
-
-    byte x(int i10);
 }

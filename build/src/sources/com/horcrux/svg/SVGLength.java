@@ -8,10 +8,10 @@ import java.util.ArrayList;
 class SVGLength {
 
     /* renamed from: a  reason: collision with root package name */
-    final double f16734a;
+    final double f16714a;
 
     /* renamed from: b  reason: collision with root package name */
-    final UnitType f16735b;
+    final UnitType f16715b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public enum UnitType {
@@ -33,34 +33,34 @@ class SVGLength {
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f16736a;
+        static final /* synthetic */ int[] f16716a;
 
         static {
             int[] iArr = new int[ReadableType.values().length];
-            f16736a = iArr;
+            f16716a = iArr;
             try {
                 iArr[ReadableType.Number.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f16736a[ReadableType.String.ordinal()] = 2;
+                f16716a[ReadableType.String.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f16736a[ReadableType.Array.ordinal()] = 3;
+                f16716a[ReadableType.Array.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
         }
     }
 
     private SVGLength() {
-        this.f16734a = 0.0d;
-        this.f16735b = UnitType.UNKNOWN;
+        this.f16714a = 0.0d;
+        this.f16715b = UnitType.UNKNOWN;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static ArrayList a(Dynamic dynamic) {
-        int i10 = a.f16736a[dynamic.getType().ordinal()];
+        int i10 = a.f16716a[dynamic.getType().ordinal()];
         if (i10 != 1) {
             int i11 = 0;
             if (i10 != 2) {
@@ -92,7 +92,7 @@ class SVGLength {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static SVGLength b(Dynamic dynamic) {
-        int i10 = a.f16736a[dynamic.getType().ordinal()];
+        int i10 = a.f16716a[dynamic.getType().ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 return new SVGLength();
@@ -104,7 +104,7 @@ class SVGLength {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static String c(Dynamic dynamic) {
-        int i10 = a.f16736a[dynamic.getType().ordinal()];
+        int i10 = a.f16716a[dynamic.getType().ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 return null;
@@ -116,8 +116,8 @@ class SVGLength {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public SVGLength(double d10) {
-        this.f16734a = d10;
-        this.f16735b = UnitType.NUMBER;
+        this.f16714a = d10;
+        this.f16715b = UnitType.NUMBER;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -127,8 +127,8 @@ class SVGLength {
         int i10 = length - 1;
         if (length != 0 && !trim.equals("normal")) {
             if (trim.codePointAt(i10) == 37) {
-                this.f16735b = UnitType.PERCENTAGE;
-                this.f16734a = Double.valueOf(trim.substring(0, i10)).doubleValue();
+                this.f16715b = UnitType.PERCENTAGE;
+                this.f16714a = Double.valueOf(trim.substring(0, i10)).doubleValue();
                 return;
             }
             int i11 = length - 2;
@@ -188,49 +188,49 @@ class SVGLength {
                 }
                 switch (c10) {
                     case 0:
-                        this.f16735b = UnitType.CM;
+                        this.f16715b = UnitType.CM;
                         length = i11;
                         break;
                     case 1:
-                        this.f16735b = UnitType.EMS;
+                        this.f16715b = UnitType.EMS;
                         length = i11;
                         break;
                     case 2:
-                        this.f16735b = UnitType.EXS;
+                        this.f16715b = UnitType.EXS;
                         length = i11;
                         break;
                     case 3:
-                        this.f16735b = UnitType.IN;
+                        this.f16715b = UnitType.IN;
                         length = i11;
                         break;
                     case 4:
-                        this.f16735b = UnitType.MM;
+                        this.f16715b = UnitType.MM;
                         length = i11;
                         break;
                     case 5:
-                        this.f16735b = UnitType.PC;
+                        this.f16715b = UnitType.PC;
                         length = i11;
                         break;
                     case 6:
-                        this.f16735b = UnitType.PT;
+                        this.f16715b = UnitType.PT;
                         length = i11;
                         break;
                     case 7:
-                        this.f16735b = UnitType.NUMBER;
+                        this.f16715b = UnitType.NUMBER;
                         length = i11;
                         break;
                     default:
-                        this.f16735b = UnitType.NUMBER;
+                        this.f16715b = UnitType.NUMBER;
                         break;
                 }
-                this.f16734a = Double.valueOf(trim.substring(0, length)).doubleValue();
+                this.f16714a = Double.valueOf(trim.substring(0, length)).doubleValue();
                 return;
             }
-            this.f16735b = UnitType.NUMBER;
-            this.f16734a = Double.valueOf(trim).doubleValue();
+            this.f16715b = UnitType.NUMBER;
+            this.f16714a = Double.valueOf(trim).doubleValue();
             return;
         }
-        this.f16735b = UnitType.UNKNOWN;
-        this.f16734a = 0.0d;
+        this.f16715b = UnitType.UNKNOWN;
+        this.f16714a = 0.0d;
     }
 }

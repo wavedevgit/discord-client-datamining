@@ -1,53 +1,59 @@
 package com.google.android.gms.common;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
 import android.content.Context;
-import android.os.Message;
-import android.util.Log;
-/* JADX INFO: Access modifiers changed from: package-private */
+import android.content.DialogInterface;
+import android.os.Bundle;
+import androidx.fragment.app.DialogFragment;
+import androidx.fragment.app.FragmentManager;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class n extends fg.h {
+public class n extends DialogFragment {
 
-    /* renamed from: b  reason: collision with root package name */
-    private final Context f13824b;
+    /* renamed from: d  reason: collision with root package name */
+    private Dialog f13788d;
 
-    /* renamed from: c  reason: collision with root package name */
-    final /* synthetic */ f f13825c;
+    /* renamed from: e  reason: collision with root package name */
+    private DialogInterface.OnCancelListener f13789e;
 
-    /* JADX WARN: Illegal instructions before constructor call */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    public n(com.google.android.gms.common.f r1, android.content.Context r2) {
-        /*
-            r0 = this;
-            r0.f13825c = r1
-            android.os.Looper r1 = android.os.Looper.myLooper()
-            if (r1 != 0) goto Ld
-            android.os.Looper r1 = android.os.Looper.getMainLooper()
-            goto L11
-        Ld:
-            android.os.Looper r1 = android.os.Looper.myLooper()
-        L11:
-            r0.<init>(r1)
-            android.content.Context r1 = r2.getApplicationContext()
-            r0.f13824b = r1
-            return
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.common.n.<init>(com.google.android.gms.common.f, android.content.Context):void");
+    /* renamed from: i  reason: collision with root package name */
+    private Dialog f13790i;
+
+    public static n z(Dialog dialog, DialogInterface.OnCancelListener onCancelListener) {
+        n nVar = new n();
+        Dialog dialog2 = (Dialog) gf.q.m(dialog, "Cannot display null dialog");
+        dialog2.setOnCancelListener(null);
+        dialog2.setOnDismissListener(null);
+        nVar.f13788d = dialog2;
+        if (onCancelListener != null) {
+            nVar.f13789e = onCancelListener;
+        }
+        return nVar;
     }
 
-    @Override // android.os.Handler
-    public final void handleMessage(Message message) {
-        int i10 = message.what;
-        if (i10 != 1) {
-            Log.w("GoogleApiAvailability", "Don't know how to handle this message: " + i10);
-            return;
+    @Override // androidx.fragment.app.DialogFragment, android.content.DialogInterface.OnCancelListener
+    public void onCancel(DialogInterface dialogInterface) {
+        DialogInterface.OnCancelListener onCancelListener = this.f13789e;
+        if (onCancelListener != null) {
+            onCancelListener.onCancel(dialogInterface);
         }
-        f fVar = this.f13825c;
-        int g10 = fVar.g(this.f13824b);
-        if (fVar.j(g10)) {
-            this.f13825c.o(this.f13824b, g10);
+    }
+
+    @Override // androidx.fragment.app.DialogFragment
+    public Dialog onCreateDialog(Bundle bundle) {
+        Dialog dialog = this.f13788d;
+        if (dialog == null) {
+            setShowsDialog(false);
+            if (this.f13790i == null) {
+                this.f13790i = new AlertDialog.Builder((Context) gf.q.l(getContext())).create();
+            }
+            return this.f13790i;
         }
+        return dialog;
+    }
+
+    @Override // androidx.fragment.app.DialogFragment
+    public void show(FragmentManager fragmentManager, String str) {
+        super.show(fragmentManager, str);
     }
 }

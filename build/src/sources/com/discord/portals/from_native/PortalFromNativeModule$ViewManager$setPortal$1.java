@@ -12,9 +12,9 @@ import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function2;
 import kotlinx.coroutines.CoroutineDispatcher;
 import kotlinx.coroutines.CoroutineScope;
-import ms.g;
-import ms.i0;
-import ms.m0;
+import os.g;
+import os.i0;
+import os.m0;
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {2, 1, 0}, xi = 48)
 @e(c = "com.discord.portals.from_native.PortalFromNativeModule$ViewManager$setPortal$1", f = "PortalFromNativeModule.kt", l = {ChatViewRecyclerTypes.ACTIVITY_RICH_PRESENCE_INVITE_EMBED}, m = "invokeSuspend")
@@ -44,7 +44,7 @@ public final class PortalFromNativeModule$ViewManager$setPortal$1 extends k impl
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            Object f10 = ur.b.f();
+            Object f10 = wr.b.f();
             int i10 = this.label;
             if (i10 != 0) {
                 if (i10 == 1) {
@@ -59,12 +59,12 @@ public final class PortalFromNativeModule$ViewManager$setPortal$1 extends k impl
                     return f10;
                 }
             }
-            return Unit.f31988a;
+            return Unit.f32008a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
         }
     }
 
@@ -82,7 +82,7 @@ public final class PortalFromNativeModule$ViewManager$setPortal$1 extends k impl
         ReactEvents reactEvents;
         reactEvents = viewManager.reactEvents;
         reactEvents.emitEvent(portalHolderViewGroup, new PortalFromNativeModule.OnPortalViewLoadedEvent(d10));
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -92,7 +92,7 @@ public final class PortalFromNativeModule$ViewManager$setPortal$1 extends k impl
 
     @Override // kotlin.coroutines.jvm.internal.a
     public final Object invokeSuspend(Object obj) {
-        Object f10 = ur.b.f();
+        Object f10 = wr.b.f();
         int i10 = this.label;
         if (i10 != 0) {
             if (i10 == 1) {
@@ -121,11 +121,11 @@ public final class PortalFromNativeModule$ViewManager$setPortal$1 extends k impl
                 return invokeSuspend$lambda$0;
             }
         });
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((PortalFromNativeModule$ViewManager$setPortal$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+        return ((PortalFromNativeModule$ViewManager$setPortal$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
     }
 }

@@ -9,13 +9,13 @@ import java.util.Map;
 final class w2 implements b1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final w2 f29897a = new w2();
+    private static final w2 f29041a = new w2();
 
     private w2() {
     }
 
     public static w2 g() {
-        return f29897a;
+        return f29041a;
     }
 
     @Override // io.sentry.b1

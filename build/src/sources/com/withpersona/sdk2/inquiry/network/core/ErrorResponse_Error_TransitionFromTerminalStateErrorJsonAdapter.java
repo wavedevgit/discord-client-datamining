@@ -30,21 +30,21 @@ public final class ErrorResponse_Error_TransitionFromTerminalStateErrorJsonAdapt
     @Override // com.squareup.moshi.h
     @NotNull
     public ErrorResponse.Error.TransitionFromTerminalStateError fromJson(@NotNull m mVar) {
-        mVar.s();
+        mVar.u();
         String str = null;
         String str2 = null;
         while (mVar.hasNext()) {
-            int W = mVar.W(this.options);
-            if (W == -1) {
+            int J = mVar.J(this.options);
+            if (J == -1) {
                 mVar.E0();
-                mVar.P();
-            } else if (W == 0) {
+                mVar.S();
+            } else if (J == 0) {
                 str = (String) this.nullableStringAdapter.fromJson(mVar);
-            } else if (W == 1) {
+            } else if (J == 1) {
                 str2 = (String) this.nullableStringAdapter.fromJson(mVar);
             }
         }
-        mVar.z();
+        mVar.D();
         return new ErrorResponse.Error.TransitionFromTerminalStateError(str, str2);
     }
 
@@ -52,11 +52,11 @@ public final class ErrorResponse_Error_TransitionFromTerminalStateErrorJsonAdapt
     public void toJson(@NotNull t tVar, ErrorResponse.Error.TransitionFromTerminalStateError transitionFromTerminalStateError) {
         if (transitionFromTerminalStateError != null) {
             tVar.k();
-            tVar.W("title");
+            tVar.J("title");
             this.nullableStringAdapter.toJson(tVar, transitionFromTerminalStateError.getTitle());
-            tVar.W("details");
+            tVar.J("details");
             this.nullableStringAdapter.toJson(tVar, transitionFromTerminalStateError.getDetails());
-            tVar.E();
+            tVar.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

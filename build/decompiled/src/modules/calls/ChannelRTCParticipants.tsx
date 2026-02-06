@@ -1718,4 +1718,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.areParticipantsEqual = var3;
     var2.ChannelRTCParticipantsIndexes = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 1371, 3714, 1216, 3475, 1372, 3476, 3949, 1621, 3952, 3521, 3523, 660, 3510, 3954, 3087, 3955, 22, 3960, 3961, 3505, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 1371, 3716, 1216, 3477, 1372, 3478, 3951, 1621, 3953, 3523, 3525, 660, 3512, 3955, 3089, 3956, 22, 3961, 3962, 3507, 2]);

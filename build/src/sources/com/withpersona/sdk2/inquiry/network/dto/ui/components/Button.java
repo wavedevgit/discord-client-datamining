@@ -51,8 +51,8 @@ public interface Button extends UiComponentConfig {
             @NotNull
             public ButtonType fromJson(@NotNull m reader) {
                 Intrinsics.checkNotNullParameter(reader, "reader");
-                Object V = reader.V();
-                return Intrinsics.areEqual(V, "primary") ? ButtonType.PRIMARY : Intrinsics.areEqual(V, "secondary") ? ButtonType.SECONDARY : ButtonType.PRIMARY;
+                Object I = reader.I();
+                return Intrinsics.areEqual(I, "primary") ? ButtonType.PRIMARY : Intrinsics.areEqual(I, "secondary") ? ButtonType.SECONDARY : ButtonType.PRIMARY;
             }
         }
 
@@ -63,7 +63,7 @@ public interface Button extends UiComponentConfig {
         static {
             ButtonType[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = vr.a.a($values);
+            $ENTRIES = xr.a.a($values);
             Companion = new Companion(null);
         }
 

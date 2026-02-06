@@ -13,13 +13,13 @@ import org.jetbrains.annotations.NotNull;
 public class AnnotationDescriptorImpl implements AnnotationDescriptor {
 
     /* renamed from: a  reason: collision with root package name */
-    private final KotlinType f32322a;
+    private final KotlinType f32342a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Map f32323b;
+    private final Map f32343b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final SourceElement f32324c;
+    private final SourceElement f32344c;
 
     public AnnotationDescriptorImpl(@NotNull KotlinType kotlinType, @NotNull Map<Name, ConstantValue<?>> map, @NotNull SourceElement sourceElement) {
         if (kotlinType == null) {
@@ -31,9 +31,9 @@ public class AnnotationDescriptorImpl implements AnnotationDescriptor {
         if (sourceElement == null) {
             a(2);
         }
-        this.f32322a = kotlinType;
-        this.f32323b = map;
-        this.f32324c = sourceElement;
+        this.f32342a = kotlinType;
+        this.f32343b = map;
+        this.f32344c = sourceElement;
     }
 
     private static /* synthetic */ void a(int i10) {
@@ -70,7 +70,7 @@ public class AnnotationDescriptorImpl implements AnnotationDescriptor {
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.annotations.AnnotationDescriptor
     @NotNull
     public Map<Name, ConstantValue<?>> getAllValueArguments() {
-        Map<Name, ConstantValue<?>> map = this.f32323b;
+        Map<Name, ConstantValue<?>> map = this.f32343b;
         if (map == null) {
             a(4);
         }
@@ -85,7 +85,7 @@ public class AnnotationDescriptorImpl implements AnnotationDescriptor {
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.annotations.AnnotationDescriptor
     @NotNull
     public SourceElement getSource() {
-        SourceElement sourceElement = this.f32324c;
+        SourceElement sourceElement = this.f32344c;
         if (sourceElement == null) {
             a(5);
         }
@@ -95,7 +95,7 @@ public class AnnotationDescriptorImpl implements AnnotationDescriptor {
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.annotations.AnnotationDescriptor
     @NotNull
     public KotlinType getType() {
-        KotlinType kotlinType = this.f32322a;
+        KotlinType kotlinType = this.f32342a;
         if (kotlinType == null) {
             a(3);
         }

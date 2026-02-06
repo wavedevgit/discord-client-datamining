@@ -1,81 +1,58 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = module;
-    var3 = function arg0, arg1, arg2, arg3() {
-        _fun94409: for (var _fun94409_ip = 0;;) switch (_fun94409_ip) {
+    var1 = function(arg0, arg1) { // Environment: var0
+        _fun94416: for (var _fun94416_ip = 0;;) switch (_fun94416_ip) {
             case 0:
-                var5 = arg0;
-                var2 = arg1;
-                var0 = arg2;
-                var1 = var5.addEventListener;
-                var1 = !var1;
-                var4 = var2;
-                if (!var1) {
-                    _fun94409_ip = 32;
-                    continue _fun94409
+                var1 = arg1;
+                var0 = var1.className;
+                var2 = ' ';
+                var0 = var2 + var0;
+                var3 = var0 + var2;
+                var2 = var3.indexOf;
+                var0 = ' combokeys ';
+                var2 = var2.bind(var3)(var0);
+                var0 = -1;
+                if (!(!(var2 > var0))) {
+                    _fun94416_ip = 107;
+                    continue _fun94416
                 }
-            case 24:
-                var1 = 'on';
-                var4 = var1 + var2;
-            case 32:
-                var3 = var5.addEventListener;
-                if (var3) {
-                    _fun94409_ip = 47;
-                    continue _fun94409
+            case 50:
+                var2 = var1.tagName;
+                var0 = var2.toLowerCase;
+                var3 = var0.bind(var2)();
+                var0 = 'input';
+                var0 = var0 === var3;
+                if (var0) {
+                    _fun94416_ip = 85;
+                    continue _fun94416
                 }
-            case 41:
-                var3 = var5.attachEvent;
-            case 47:
-                var2 = var3.call;
-                var6 = arg3;
-                var10 = var3;
-                var9 = var5;
-                var8 = var4;
-                var7 = var0;
-                var1 = var10[var2](var9, var8, var7, var6, var5);
+            case 77:
+                var2 = 'select';
+                var0 = var2 === var3;
+            case 85:
+                if (var0) {
+                    _fun94416_ip = 96;
+                    continue _fun94416
+                }
+            case 88:
+                var2 = 'textarea';
+                var0 = var2 === var3;
+            case 96:
+                if (var0) {
+                    _fun94416_ip = 105;
+                    continue _fun94416
+                }
+            case 99:
+                var0 = var1.isContentEditable;
+            case 105:
+                return var0;
+            case 107:
+                var0 = false;
                 return var0;
         }
     };
-    var1.exports = var3;
-    var2 = var1.exports;
-    var2.on = var3;
-    var1 = var1.exports;
-    var0 = function arg0, arg1, arg2, arg3() {
-        _fun94410: for (var _fun94410_ip = 0;;) switch (_fun94410_ip) {
-            case 0:
-                var5 = arg0;
-                var2 = arg1;
-                var0 = arg2;
-                var1 = var5.removeEventListener;
-                var1 = !var1;
-                var4 = var2;
-                if (!var1) {
-                    _fun94410_ip = 32;
-                    continue _fun94410
-                }
-            case 24:
-                var1 = 'on';
-                var4 = var1 + var2;
-            case 32:
-                var3 = var5.removeEventListener;
-                if (var3) {
-                    _fun94410_ip = 47;
-                    continue _fun94410
-                }
-            case 41:
-                var3 = var5.detachEvent;
-            case 47:
-                var2 = var3.call;
-                var6 = arg3;
-                var10 = var3;
-                var9 = var5;
-                var8 = var4;
-                var7 = var0;
-                var1 = var10[var2](var9, var8, var7, var6, var5);
-                return var0;
-        }
-    };
-    var1.off = var0;
+    var0 = arg4;
+    var0.exports = var1;
     var0 = undefined;
     return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, []);

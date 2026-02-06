@@ -1,54 +1,52 @@
 package bn;
 
-import android.content.Context;
-import android.view.View;
-import android.view.ViewGroup;
-import kotlin.jvm.functions.Function1;
+import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.Lambda;
 import kotlin.jvm.internal.Reflection;
-import kotlin.reflect.KClass;
+import kotlin.reflect.KType;
+import kotlinx.coroutines.flow.Flow;
+@Metadata(d1 = {"\u0000\u001a\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0003\bf\u0018\u0000 \b*\u0006\b\u0000\u0010\u0001 \u00012\u00020\u0002:\u0001\bJ\u0015\u0010\u0004\u001a\b\u0012\u0004\u0012\u00028\u00000\u0003H&¢\u0006\u0004\b\u0004\u0010\u0005J\u001b\u0010\b\u001a\u00020\u00072\n\u0010\u0006\u001a\u0006\u0012\u0002\b\u00030\u0000H\u0016¢\u0006\u0004\b\b\u0010\t¨\u0006\n"}, d2 = {"Lbn/o;", "OutputT", "", "Lkotlinx/coroutines/flow/Flow;", "run", "()Lkotlinx/coroutines/flow/Flow;", "otherWorker", "", "a", "(Lbn/o;)Z", "wf1-workflow-core"}, k = 1, mv = {1, 6, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class o implements c0 {
-
-    /* renamed from: b  reason: collision with root package name */
-    public static final o f6599b = new o();
+public interface o<OutputT> {
 
     /* renamed from: a  reason: collision with root package name */
-    private final /* synthetic */ i f6600a = new i(Reflection.getOrCreateKotlinClass(n.class), a.f6601d, null, null, 12, null);
+    public static final a f6917a = a.f6918a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    static final class a extends Lambda implements Function1 {
+    public static final class a {
 
-        /* renamed from: d  reason: collision with root package name */
-        public static final a f6601d = new a();
+        /* renamed from: a  reason: collision with root package name */
+        static final /* synthetic */ a f6918a = new a();
 
-        a() {
-            super(1);
+        /* renamed from: b  reason: collision with root package name */
+        private static final KType f6919b = Reflection.typeOf(Void.class);
+
+        private a() {
         }
 
-        @Override // kotlin.jvm.functions.Function1
-        /* renamed from: a */
-        public final Object invoke(n named) {
-            Intrinsics.checkNotNullParameter(named, "named");
-            return named.a();
+        public static /* synthetic */ o b(a aVar, long j10, String str, int i10, Object obj) {
+            if ((i10 & 2) != 0) {
+                str = "";
+            }
+            return aVar.a(j10, str);
+        }
+
+        public final o a(long j10, String key) {
+            Intrinsics.checkNotNullParameter(key, "key");
+            return new l(j10, key);
         }
     }
 
-    private o() {
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class b {
+        public static boolean a(o oVar, o otherWorker) {
+            Intrinsics.checkNotNullParameter(oVar, "this");
+            Intrinsics.checkNotNullParameter(otherWorker, "otherWorker");
+            return Intrinsics.areEqual(Reflection.getOrCreateKotlinClass(otherWorker.getClass()), Reflection.getOrCreateKotlinClass(oVar.getClass()));
+        }
     }
 
-    @Override // bn.c0
-    /* renamed from: b */
-    public View a(n initialRendering, a0 initialViewEnvironment, Context contextForNewView, ViewGroup viewGroup) {
-        Intrinsics.checkNotNullParameter(initialRendering, "initialRendering");
-        Intrinsics.checkNotNullParameter(initialViewEnvironment, "initialViewEnvironment");
-        Intrinsics.checkNotNullParameter(contextForNewView, "contextForNewView");
-        return this.f6600a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
-    }
+    boolean a(o oVar);
 
-    @Override // bn.c0
-    public KClass getType() {
-        return this.f6600a.getType();
-    }
+    Flow run();
 }

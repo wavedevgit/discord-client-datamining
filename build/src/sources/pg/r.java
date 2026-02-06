@@ -1,23 +1,43 @@
 package pg;
+
+import java.util.Map;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-abstract class r {
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static int a(int i10, String str) {
-        if (i10 >= 0) {
-            return i10;
+abstract class r implements Map.Entry {
+    @Override // java.util.Map.Entry
+    public final boolean equals(Object obj) {
+        if (obj instanceof Map.Entry) {
+            Map.Entry entry = (Map.Entry) obj;
+            if (ze.a(getKey(), entry.getKey()) && ze.a(getValue(), entry.getValue())) {
+                return true;
+            }
         }
-        throw new IllegalArgumentException(str + " cannot be negative but was: " + i10);
+        return false;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static void b(Object obj, Object obj2) {
-        if (obj != null) {
-            if (obj2 != null) {
-                return;
-            }
-            String obj3 = obj.toString();
-            throw new NullPointerException("null value in entry: " + obj3 + "=null");
+    @Override // java.util.Map.Entry
+    public abstract Object getKey();
+
+    @Override // java.util.Map.Entry
+    public abstract Object getValue();
+
+    @Override // java.util.Map.Entry
+    public final int hashCode() {
+        int hashCode;
+        Object key = getKey();
+        Object value = getValue();
+        int i10 = 0;
+        if (key == null) {
+            hashCode = 0;
+        } else {
+            hashCode = key.hashCode();
         }
-        throw new NullPointerException("null key in entry: null=".concat(String.valueOf(obj2)));
+        if (value != null) {
+            i10 = value.hashCode();
+        }
+        return hashCode ^ i10;
+    }
+
+    public final String toString() {
+        return getKey() + "=" + getValue();
     }
 }

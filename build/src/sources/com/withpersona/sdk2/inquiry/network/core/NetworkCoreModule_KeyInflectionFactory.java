@@ -1,8 +1,8 @@
 package com.withpersona.sdk2.inquiry.network.core;
 
-import zq.g;
+import br.g;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class NetworkCoreModule_KeyInflectionFactory implements zq.d {
+public final class NetworkCoreModule_KeyInflectionFactory implements br.d {
     private final NetworkCoreModule module;
 
     public NetworkCoreModule_KeyInflectionFactory(NetworkCoreModule networkCoreModule) {

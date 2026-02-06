@@ -25,13 +25,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/go_live/utils/getSoundshareAnalyticsContext.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun33052: for (var _fun33052_ip = 0;;) switch (_fun33052_ip) {
+        _fun33056: for (var _fun33056_ip = 0;;) switch (_fun33056_ip) {
             case 0:
                 var3 = arg0;
                 var6 = null;
                 if (!(var6 != var3)) {
-                    _fun33052_ip = 103;
-                    continue _fun33052
+                    _fun33056_ip = 103;
+                    continue _fun33056
                 }
             case 9:
                 var7 = var3.sourcePid;
@@ -39,8 +39,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = undefined;
                 var1 = undefined;
                 if (!var4) {
-                    _fun33052_ip = 78;
-                    continue _fun33052
+                    _fun33056_ip = 78;
+                    continue _fun33056
                 }
             case 26:
                 var5 = _closure1_slot0;
@@ -49,8 +49,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var6 == var5;
                 var4 = undefined;
                 if (var7) {
-                    _fun33052_ip = 58;
-                    continue _fun33052
+                    _fun33056_ip = 58;
+                    continue _fun33056
                 }
             case 53:
                 var4 = var5.name;
@@ -58,8 +58,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var6 == var5;
                 var0 = undefined;
                 if (var6) {
-                    _fun33052_ip = 72;
-                    continue _fun33052
+                    _fun33056_ip = 72;
+                    continue _fun33056
                 }
             case 67:
                 var0 = var5.id;
@@ -80,4 +80,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3483, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3485, 2]);

@@ -1,43 +1,70 @@
 package ng;
 
-import xi.c;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.Set;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class e2 implements xi.d {
-
-    /* renamed from: a  reason: collision with root package name */
-    static final e2 f40431a = new e2();
-
-    /* renamed from: b  reason: collision with root package name */
-    private static final xi.c f40432b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private static final xi.c f40433c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private static final xi.c f40434d;
-
-    static {
-        c.b a10 = xi.c.a("inferenceCommonLogEvent");
-        f fVar = new f();
-        fVar.a(1);
-        f40432b = a10.b(fVar.b()).a();
-        c.b a11 = xi.c.a("options");
-        f fVar2 = new f();
-        fVar2.a(2);
-        f40433c = a11.b(fVar2.b()).a();
-        c.b a12 = xi.c.a("imageInfo");
-        f fVar3 = new f();
-        fVar3.a(3);
-        f40434d = a12.b(fVar3.b()).a();
+public abstract class e2 {
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static int a(Set set) {
+        int i10;
+        int i11 = 0;
+        for (Object obj : set) {
+            if (obj != null) {
+                i10 = obj.hashCode();
+            } else {
+                i10 = 0;
+            }
+            i11 += i10;
+        }
+        return i11;
     }
 
-    private e2() {
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static boolean b(Set set, Object obj) {
+        if (set == obj) {
+            return true;
+        }
+        if (obj instanceof Set) {
+            Set set2 = (Set) obj;
+            try {
+                if (set.size() == set2.size()) {
+                    if (set.containsAll(set2)) {
+                        return true;
+                    }
+                }
+            } catch (ClassCastException | NullPointerException unused) {
+            }
+        }
+        return false;
     }
 
-    @Override // xi.d
-    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
-        android.support.v4.media.session.b.a(obj);
-        xi.e eVar = (xi.e) obj2;
-        throw null;
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static boolean c(Set set, Collection collection) {
+        collection.getClass();
+        if (collection instanceof v1) {
+            collection = ((v1) collection).zza();
+        }
+        if ((collection instanceof Set) && collection.size() > set.size()) {
+            Iterator it = set.iterator();
+            boolean z10 = false;
+            while (it.hasNext()) {
+                if (collection.contains(it.next())) {
+                    it.remove();
+                    z10 = true;
+                }
+            }
+            return z10;
+        }
+        return d(set, collection.iterator());
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static boolean d(Set set, Iterator it) {
+        boolean z10 = false;
+        while (it.hasNext()) {
+            z10 |= set.remove(it.next());
+        }
+        return z10;
     }
 }

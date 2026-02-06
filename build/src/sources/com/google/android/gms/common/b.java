@@ -10,32 +10,32 @@ import gf.o;
 public final class b extends hf.a {
 
     /* renamed from: d  reason: collision with root package name */
-    final int f13793d;
+    final int f13748d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f13794e;
+    private final int f13749e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final PendingIntent f13795i;
+    private final PendingIntent f13750i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final String f13796o;
+    private final String f13751o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final Integer f13797p;
+    private final Integer f13752p;
 
     /* renamed from: q  reason: collision with root package name */
-    public static final b f13792q = new b(0);
+    public static final b f13747q = new b(0);
     @NonNull
-    public static final Parcelable.Creator<b> CREATOR = new o();
+    public static final Parcelable.Creator<b> CREATOR = new q();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(int i10, int i11, PendingIntent pendingIntent, String str, Integer num) {
-        this.f13793d = i10;
-        this.f13794e = i11;
-        this.f13795i = pendingIntent;
-        this.f13796o = str;
-        this.f13797p = num;
+        this.f13748d = i10;
+        this.f13749e = i11;
+        this.f13750i = pendingIntent;
+        this.f13751o = str;
+        this.f13752p = num;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -112,19 +112,19 @@ public final class b extends hf.a {
     }
 
     public Integer b() {
-        return this.f13797p;
+        return this.f13752p;
     }
 
     public int c() {
-        return this.f13794e;
+        return this.f13749e;
     }
 
     public String d() {
-        return this.f13796o;
+        return this.f13751o;
     }
 
     public PendingIntent e() {
-        return this.f13795i;
+        return this.f13750i;
     }
 
     public boolean equals(Object obj) {
@@ -135,36 +135,36 @@ public final class b extends hf.a {
             return false;
         }
         b bVar = (b) obj;
-        if (this.f13794e == bVar.f13794e && gf.o.a(this.f13795i, bVar.f13795i) && gf.o.a(this.f13796o, bVar.f13796o) && gf.o.a(this.f13797p, bVar.f13797p)) {
+        if (this.f13749e == bVar.f13749e && gf.o.a(this.f13750i, bVar.f13750i) && gf.o.a(this.f13751o, bVar.f13751o) && gf.o.a(this.f13752p, bVar.f13752p)) {
             return true;
         }
         return false;
     }
 
     public boolean f() {
-        return (this.f13794e == 0 || this.f13795i == null) ? false : true;
+        return (this.f13749e == 0 || this.f13750i == null) ? false : true;
     }
 
-    public boolean g() {
-        return this.f13794e == 0;
+    public boolean h() {
+        return this.f13749e == 0;
     }
 
     public int hashCode() {
-        return gf.o.b(Integer.valueOf(this.f13794e), this.f13795i, this.f13796o, this.f13797p);
+        return gf.o.b(Integer.valueOf(this.f13749e), this.f13750i, this.f13751o, this.f13752p);
     }
 
     public String toString() {
         o.a c10 = gf.o.c(this);
-        c10.a("statusCode", i(this.f13794e));
-        c10.a("resolution", this.f13795i);
-        c10.a("message", this.f13796o);
-        c10.a("clientMethodKey", this.f13797p);
+        c10.a("statusCode", i(this.f13749e));
+        c10.a("resolution", this.f13750i);
+        c10.a("message", this.f13751o);
+        c10.a("clientMethodKey", this.f13752p);
         return c10.toString();
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        int i11 = this.f13793d;
+        int i11 = this.f13748d;
         int a10 = hf.c.a(parcel);
         hf.c.l(parcel, 1, i11);
         hf.c.l(parcel, 2, c());

@@ -1,57 +1,64 @@
 package pg;
 
-import java.util.Map;
-import java.util.Set;
+import java.util.List;
+import java.util.ListIterator;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-abstract class o implements e1 {
+final class o extends m implements ListIterator {
 
-    /* renamed from: d  reason: collision with root package name */
-    private transient Set f45582d;
+    /* renamed from: o  reason: collision with root package name */
+    final /* synthetic */ p f44534o;
 
-    /* renamed from: e  reason: collision with root package name */
-    private transient Map f45583e;
-
-    @Override // pg.e1
-    public final Map c() {
-        Map map = this.f45583e;
-        if (map == null) {
-            Map e10 = e();
-            this.f45583e = e10;
-            return e10;
-        }
-        return map;
+    /* JADX INFO: Access modifiers changed from: package-private */
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public o(p pVar) {
+        super(pVar);
+        this.f44534o = pVar;
     }
 
-    @Override // pg.e1
-    public final Set d() {
-        Set set = this.f45582d;
-        if (set == null) {
-            Set f10 = f();
-            this.f45582d = f10;
-            return f10;
+    @Override // java.util.ListIterator
+    public final void add(Object obj) {
+        boolean isEmpty = this.f44534o.isEmpty();
+        a();
+        ((ListIterator) this.f44452d).add(obj);
+        q.i(this.f44534o.f44568q);
+        if (isEmpty) {
+            this.f44534o.b();
         }
-        return set;
     }
 
-    abstract Map e();
-
-    public final boolean equals(Object obj) {
-        if (obj == this) {
-            return true;
-        }
-        if (!(obj instanceof e1)) {
-            return false;
-        }
-        return c().equals(((e1) obj).c());
+    @Override // java.util.ListIterator
+    public final boolean hasPrevious() {
+        a();
+        return ((ListIterator) this.f44452d).hasPrevious();
     }
 
-    abstract Set f();
-
-    public final int hashCode() {
-        return c().hashCode();
+    @Override // java.util.ListIterator
+    public final int nextIndex() {
+        a();
+        return ((ListIterator) this.f44452d).nextIndex();
     }
 
-    public final String toString() {
-        return c().toString();
+    @Override // java.util.ListIterator
+    public final Object previous() {
+        a();
+        return ((ListIterator) this.f44452d).previous();
+    }
+
+    @Override // java.util.ListIterator
+    public final int previousIndex() {
+        a();
+        return ((ListIterator) this.f44452d).previousIndex();
+    }
+
+    @Override // java.util.ListIterator
+    public final void set(Object obj) {
+        a();
+        ((ListIterator) this.f44452d).set(obj);
+    }
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public o(p pVar, int i10) {
+        super(pVar, ((List) pVar.f44494e).listIterator(i10));
+        this.f44534o = pVar;
     }
 }

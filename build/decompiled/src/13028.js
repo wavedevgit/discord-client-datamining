@@ -12,11 +12,26 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = dependencyMap;
     var0 = 0;
     var3 = var1[var0];
-    var1 = metroImportAll;
+    var1 = require;
     var0 = undefined;
-    var3 = var1.bind(var0)(var3);
-    var1 = var3.createContext;
-    var1 = var1.bind(var3)(var0);
+    var1 = var1.bind(var0)(var3);
+    var1 = var1.Platform;
+    var1 = function arg0, arg1, arg2() {
+        _fun99946: for (var _fun99946_ip = 0;;) switch (_fun99946_ip) {
+            case 0:
+                var0 = arg0;
+                var1 = arg2;
+                if (var1) {
+                    _fun99946_ip = 17;
+                    continue _fun99946
+                }
+            case 9:
+                var1 = arg1;
+                var0 = var1.y;
+            case 17:
+                return var0;
+        }
+    };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27]);

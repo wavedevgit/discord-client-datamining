@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/reply_nudge/trackReplyNudgesShown.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun100786: for (var _fun100786_ip = 0;;) switch (_fun100786_ip) {
+        _fun100794: for (var _fun100794_ip = 0;;) switch (_fun100794_ip) {
             case 0:
                 var2 = _closure1_slot4;
                 var1 = var2.getPrivateChannelIds;
@@ -88,8 +88,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var8.length;
                 var1 = 0;
                 if (!(var2 > var1)) {
-                    _fun100786_ip = 296;
-                    continue _fun100786
+                    _fun100794_ip = 296;
+                    continue _fun100794
                 }
             case 102:
                 var2 = var8.map;
@@ -130,15 +130,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.channel_dm_list_indexes = var5;
                 var7 = var6.map;
                 var5 = function(arg0) { // Environment: var4
-                    _fun100793: for (var _fun100793_ip = 0;;) switch (_fun100793_ip) {
+                    _fun100801: for (var _fun100801_ip = 0;;) switch (_fun100801_ip) {
                         case 0:
                             var2 = arg0;
                             var0 = null;
                             var3 = var0 == var2;
                             var1 = undefined;
                             if (var3) {
-                                _fun100793_ip = 20;
-                                continue _fun100793
+                                _fun100801_ip = 20;
+                                continue _fun100801
                             }
                         case 14:
                             var1 = var2.affinity;
@@ -146,8 +146,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var0 != var1;
                             var0 = -2;
                             if (!var2) {
-                                _fun100793_ip = 36;
-                                continue _fun100793
+                                _fun100801_ip = 36;
+                                continue _fun100801
                             }
                         case 33:
                             var0 = var1;
@@ -159,23 +159,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.nudge_author_affinities = var5;
                 var7 = var6.map;
                 var5 = function(arg0) { // Environment: var4
-                    _fun100794: for (var _fun100794_ip = 0;;) switch (_fun100794_ip) {
+                    _fun100802: for (var _fun100802_ip = 0;;) switch (_fun100802_ip) {
                         case 0:
                             var1 = arg0;
                             var2 = null;
                             var3 = var2 == var1;
                             var0 = undefined;
                             if (var3) {
-                                _fun100794_ip = 20;
-                                continue _fun100794
+                                _fun100802_ip = 20;
+                                continue _fun100802
                             }
                         case 14:
                             var0 = var1.authorId;
                         case 20:
                             var0 = var2 != var0;
                             if (!var0) {
-                                _fun100794_ip = 51;
-                                continue _fun100794
+                                _fun100802_ip = 51;
+                                continue _fun100802
                             }
                         case 27:
                             var3 = _closure1_slot3;
@@ -190,15 +190,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.nudge_author_is_friend = var5;
                 var7 = var6.map;
                 var5 = function(arg0) { // Environment: var4
-                    _fun100795: for (var _fun100795_ip = 0;;) switch (_fun100795_ip) {
+                    _fun100803: for (var _fun100803_ip = 0;;) switch (_fun100803_ip) {
                         case 0:
                             var2 = arg0;
                             var0 = null;
                             var3 = var0 == var2;
                             var1 = undefined;
                             if (var3) {
-                                _fun100795_ip = 20;
-                                continue _fun100795
+                                _fun100803_ip = 20;
+                                continue _fun100803
                             }
                         case 14:
                             var1 = var2.authorId;
@@ -206,8 +206,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var0 != var1;
                             var0 = '0';
                             if (!var2) {
-                                _fun100795_ip = 36;
-                                continue _fun100795
+                                _fun100803_ip = 36;
+                                continue _fun100803
                             }
                         case 33:
                             var0 = var1;
@@ -219,15 +219,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.nudge_author_ids = var5;
                 var5 = var6.map;
                 var4 = function(arg0) { // Environment: var4
-                    _fun100796: for (var _fun100796_ip = 0;;) switch (_fun100796_ip) {
+                    _fun100804: for (var _fun100804_ip = 0;;) switch (_fun100804_ip) {
                         case 0:
                             var2 = arg0;
                             var0 = null;
                             var3 = var0 == var2;
                             var1 = undefined;
                             if (var3) {
-                                _fun100796_ip = 20;
-                                continue _fun100796
+                                _fun100804_ip = 20;
+                                continue _fun100804
                             }
                         case 14:
                             var1 = var2.lastMessageId;
@@ -235,8 +235,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var0 != var1;
                             var0 = '0';
                             if (!var2) {
-                                _fun100796_ip = 36;
-                                continue _fun100796
+                                _fun100804_ip = 36;
+                                continue _fun100804
                             }
                         case 33:
                             var0 = var1;
@@ -254,4 +254,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 3100, 8353, 8354, 660, 795, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 3102, 8359, 8360, 660, 795, 2]);

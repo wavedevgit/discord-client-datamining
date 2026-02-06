@@ -1,43 +1,34 @@
 package ng;
 
-import xi.c;
+import yi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class l6 implements xi.d {
+final class l6 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final l6 f40788a = new l6();
-
-    /* renamed from: b  reason: collision with root package name */
-    private static final xi.c f40789b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private static final xi.c f40790c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private static final xi.c f40791d;
+    static final l6 f40041a = new l6();
 
     static {
-        c.b a10 = xi.c.a("numSamples");
-        f fVar = new f();
-        fVar.a(1);
-        f40789b = a10.b(fVar.b()).a();
-        c.b a11 = xi.c.a("errorCode");
-        f fVar2 = new f();
-        fVar2.a(2);
-        f40790c = a11.b(fVar2.b()).a();
-        c.b a12 = xi.c.a("metricResults");
-        f fVar3 = new f();
-        fVar3.a(3);
-        f40791d = a12.b(fVar3.b()).a();
+        c.b a10 = yi.c.a("inferenceCommonLogEvent");
+        l2 l2Var = new l2();
+        l2Var.a(1);
+        a10.b(l2Var.b()).a();
+        c.b a11 = yi.c.a("options");
+        l2 l2Var2 = new l2();
+        l2Var2.a(2);
+        a11.b(l2Var2.b()).a();
+        c.b a12 = yi.c.a("imageInfo");
+        l2 l2Var3 = new l2();
+        l2Var3.a(3);
+        a12.b(l2Var3.b()).a();
     }
 
     private l6() {
     }
 
-    @Override // xi.d
+    @Override // yi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        xi.e eVar = (xi.e) obj2;
+        yi.e eVar = (yi.e) obj2;
         throw null;
     }
 }

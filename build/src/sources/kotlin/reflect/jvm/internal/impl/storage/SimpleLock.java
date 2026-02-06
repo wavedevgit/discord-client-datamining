@@ -6,13 +6,13 @@ import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public interface SimpleLock {
     @NotNull
-    public static final Companion Companion = Companion.f34516a;
+    public static final Companion Companion = Companion.f34536a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ Companion f34516a = new Companion();
+        static final /* synthetic */ Companion f34536a = new Companion();
 
         private Companion() {
         }

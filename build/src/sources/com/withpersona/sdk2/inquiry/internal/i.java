@@ -3,39 +3,39 @@ package com.withpersona.sdk2.inquiry.internal;
 import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
-import bn.c0;
-import bn.k;
 import com.withpersona.sdk2.inquiry.internal.n;
+import dn.c0;
+import dn.k;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.FunctionReferenceImpl;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Reflection;
 import kotlin.reflect.KClass;
-import so.g2;
+import uo.g2;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class i implements bn.k {
+public final class i implements dn.k {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f18920c = new a(null);
+    public static final a f18900c = new a(null);
 
     /* renamed from: b  reason: collision with root package name */
-    private final View f18921b;
+    private final View f18901b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements c0 {
 
         /* renamed from: a  reason: collision with root package name */
-        private final /* synthetic */ c0 f18922a;
+        private final /* synthetic */ c0 f18902a;
 
         /* renamed from: com.withpersona.sdk2.inquiry.internal.i$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        /* synthetic */ class C0245a extends FunctionReferenceImpl implements Function1 {
+        /* synthetic */ class C0237a extends FunctionReferenceImpl implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final C0245a f18923d = new C0245a();
+            public static final C0237a f18903d = new C0237a();
 
-            C0245a() {
+            C0237a() {
                 super(1, i.class, "<init>", "<init>(Landroid/view/View;)V", 0);
             }
 
@@ -51,34 +51,34 @@ public final class i implements bn.k {
             this();
         }
 
-        @Override // bn.c0
+        @Override // dn.c0
         /* renamed from: b */
-        public View a(n.d.a initialRendering, bn.a0 initialViewEnvironment, Context contextForNewView, ViewGroup viewGroup) {
+        public View a(n.d.a initialRendering, dn.a0 initialViewEnvironment, Context contextForNewView, ViewGroup viewGroup) {
             Intrinsics.checkNotNullParameter(initialRendering, "initialRendering");
             Intrinsics.checkNotNullParameter(initialViewEnvironment, "initialViewEnvironment");
             Intrinsics.checkNotNullParameter(contextForNewView, "contextForNewView");
-            return this.f18922a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
+            return this.f18902a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
         }
 
-        @Override // bn.c0
+        @Override // dn.c0
         public KClass getType() {
-            return this.f18922a.getType();
+            return this.f18902a.getType();
         }
 
         private a() {
-            k.a aVar = bn.k.f6590a;
-            this.f18922a = new bn.m(Reflection.getOrCreateKotlinClass(n.d.a.class), g2.f50104d, C0245a.f18923d);
+            k.a aVar = dn.k.f20913a;
+            this.f18902a = new dn.m(Reflection.getOrCreateKotlinClass(n.d.a.class), g2.f51950d, C0237a.f18903d);
         }
     }
 
     public i(View view) {
         Intrinsics.checkNotNullParameter(view, "view");
-        this.f18921b = view;
+        this.f18901b = view;
     }
 
-    @Override // bn.k
+    @Override // dn.k
     /* renamed from: b */
-    public void a(n.d.a rendering, bn.a0 viewEnvironment) {
+    public void a(n.d.a rendering, dn.a0 viewEnvironment) {
         Intrinsics.checkNotNullParameter(rendering, "rendering");
         Intrinsics.checkNotNullParameter(viewEnvironment, "viewEnvironment");
     }

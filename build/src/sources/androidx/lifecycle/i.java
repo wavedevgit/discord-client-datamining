@@ -8,7 +8,7 @@ import kotlin.jvm.internal.Intrinsics;
 public final class i {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final i f4614a = new i();
+    public static final i f4943a = new i();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a implements SavedStateRegistry.a {
@@ -38,23 +38,23 @@ public final class i {
     public static final class b implements m {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Lifecycle f4615d;
+        final /* synthetic */ Lifecycle f4944d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ SavedStateRegistry f4616e;
+        final /* synthetic */ SavedStateRegistry f4945e;
 
         b(Lifecycle lifecycle, SavedStateRegistry savedStateRegistry) {
-            this.f4615d = lifecycle;
-            this.f4616e = savedStateRegistry;
+            this.f4944d = lifecycle;
+            this.f4945e = savedStateRegistry;
         }
 
         @Override // androidx.lifecycle.m
-        public void h(LifecycleOwner source, Lifecycle.a event) {
+        public void k(LifecycleOwner source, Lifecycle.a event) {
             Intrinsics.checkNotNullParameter(source, "source");
             Intrinsics.checkNotNullParameter(event, "event");
             if (event == Lifecycle.a.ON_START) {
-                this.f4615d.d(this);
-                this.f4616e.d(a.class);
+                this.f4944d.d(this);
+                this.f4945e.d(a.class);
             }
         }
     }
@@ -69,7 +69,7 @@ public final class i {
         d0 d0Var = (d0) viewModel.c("androidx.lifecycle.savedstate.vm.tag");
         if (d0Var != null && !d0Var.m()) {
             d0Var.a(registry, lifecycle);
-            f4614a.c(registry, lifecycle);
+            f4943a.c(registry, lifecycle);
         }
     }
 
@@ -77,15 +77,15 @@ public final class i {
         Intrinsics.checkNotNullParameter(registry, "registry");
         Intrinsics.checkNotNullParameter(lifecycle, "lifecycle");
         Intrinsics.checkNotNull(str);
-        d0 d0Var = new d0(str, b0.f4586c.a(registry.a(str), bundle));
+        d0 d0Var = new d0(str, b0.f4915c.a(registry.a(str), bundle));
         d0Var.a(registry, lifecycle);
-        f4614a.c(registry, lifecycle);
+        f4943a.c(registry, lifecycle);
         return d0Var;
     }
 
     private final void c(SavedStateRegistry savedStateRegistry, Lifecycle lifecycle) {
         Lifecycle.State b10 = lifecycle.b();
-        if (b10 != Lifecycle.State.f4518e && !b10.d(Lifecycle.State.f4520o)) {
+        if (b10 != Lifecycle.State.f4847e && !b10.d(Lifecycle.State.f4849o)) {
             lifecycle.a(new b(lifecycle, savedStateRegistry));
         } else {
             savedStateRegistry.d(a.class);

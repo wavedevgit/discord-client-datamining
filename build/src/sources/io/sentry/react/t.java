@@ -62,7 +62,7 @@ public final class t extends io.sentry.android.replay.a {
 
     private void j(io.sentry.rrweb.a aVar, Breadcrumb breadcrumb) {
         aVar.w(breadcrumb.q());
-        aVar.u(breadcrumb.p());
+        aVar.u(breadcrumb.o());
         aVar.f(breadcrumb.t().getTime());
         aVar.r(breadcrumb.t().getTime() / 1000.0d);
         aVar.s("default");

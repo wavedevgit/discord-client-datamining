@@ -9,14 +9,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var6;
     var3 = function arg0() {
-        _fun51920: for (var _fun51920_ip = 0;;) switch (_fun51920_ip) {
+        _fun51933: for (var _fun51933_ip = 0;;) switch (_fun51933_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.isGuildStageVoice;
                 var1 = var1.bind(var0)();
                 if (!var1) {
-                    _fun51920_ip = 122;
-                    continue _fun51920
+                    _fun51933_ip = 122;
+                    continue _fun51933
                 }
             case 16:
                 var3 = _closure1_slot1;
@@ -231,7 +231,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.showPlatformUserProfile = var3;
     var3 = function arg0() {
-        _fun51928: for (var _fun51928_ip = 0;;) switch (_fun51928_ip) {
+        _fun51941: for (var _fun51941_ip = 0;;) switch (_fun51941_ip) {
             case 0:
                 var3 = arg0;
                 var4 = _closure1_slot0;
@@ -249,8 +249,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = 0;
                 var0 = var0 > var1;
                 if (var0) {
-                    _fun51928_ip = 72;
-                    continue _fun51928
+                    _fun51941_ip = 72;
+                    continue _fun51941
                 }
             case 68:
                 var0 = var2 > var1;
@@ -260,14 +260,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.shouldShowBlockedUsers = var3;
     var3 = function arg0, arg1() {
-        _fun51929: for (var _fun51929_ip = 0;;) switch (_fun51929_ip) {
+        _fun51942: for (var _fun51942_ip = 0;;) switch (_fun51942_ip) {
             case 0:
                 var2 = arg0;
                 var1 = var2.id;
                 var0 = arg1;
                 if (!(var0 !== var1)) {
-                    _fun51929_ip = 31;
-                    continue _fun51929
+                    _fun51942_ip = 31;
+                    continue _fun51942
                 }
             case 15:
                 var3 = _closure1_slot3;
@@ -288,4 +288,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.showChannelChangeConfirmationAlert = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5917, 4235, 3278, 5919, 1307, 6466, 6473, 6481, 12134, 4561, 7903, 7898, 7372, 6475, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5921, 4236, 3280, 5923, 1307, 6470, 6477, 6485, 12137, 4562, 7908, 7903, 7377, 6479, 2]);

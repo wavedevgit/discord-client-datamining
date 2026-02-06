@@ -1,59 +1,38 @@
 package sn;
 
-import android.media.AudioRecord;
-import java.util.Iterator;
-import java.util.List;
-import kotlin.collections.CollectionsKt;
+import android.view.View;
+import android.view.WindowInsets;
+import androidx.core.graphics.Insets;
+import androidx.core.view.WindowInsetsCompat;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class d {
-
-    /* renamed from: a  reason: collision with root package name */
-    private static final List f49842a = CollectionsKt.o(48000, 44100, 22050, 16000, 11025, 8000);
-
-    public static final c a() {
-        Iterator it = f49842a.iterator();
-        while (true) {
-            AudioRecord audioRecord = null;
-            if (!it.hasNext()) {
-                return null;
-            }
-            int intValue = ((Number) it.next()).intValue();
-            try {
-                int minBufferSize = AudioRecord.getMinBufferSize(intValue, 16, 2);
-                if (minBufferSize != -2) {
-                    AudioRecord audioRecord2 = new AudioRecord(1, intValue, 16, 2, minBufferSize);
-                    try {
-                        if (audioRecord2.getState() == 1) {
-                            audioRecord2.release();
-                            c cVar = new c(intValue, 16, 2, minBufferSize);
-                            audioRecord2.release();
-                            return cVar;
-                        }
-                        audioRecord2.release();
-                    } catch (IllegalArgumentException unused) {
-                        audioRecord = audioRecord2;
-                        if (audioRecord != null) {
-                            audioRecord.release();
-                        }
-                    } catch (SecurityException unused2) {
-                        audioRecord = audioRecord2;
-                        if (audioRecord != null) {
-                            audioRecord.release();
-                        }
-                    } catch (Throwable th2) {
-                        th = th2;
-                        audioRecord = audioRecord2;
-                        if (audioRecord != null) {
-                            audioRecord.release();
-                        }
-                        throw th;
-                    }
-                }
-            } catch (IllegalArgumentException unused3) {
-            } catch (SecurityException unused4) {
-            } catch (Throwable th3) {
-                th = th3;
-            }
+    public static final Insets a(View view, int i10, WindowInsets windowInsets, boolean z10) {
+        Intrinsics.checkNotNullParameter(view, "<this>");
+        if (windowInsets == null) {
+            Insets NONE = Insets.f3603e;
+            Intrinsics.checkNotNullExpressionValue(NONE, "NONE");
+            return NONE;
         }
+        WindowInsetsCompat D = WindowInsetsCompat.D(windowInsets, view);
+        Intrinsics.checkNotNullExpressionValue(D, "toWindowInsetsCompat(...)");
+        if (!z10) {
+            Insets f10 = D.f(i10);
+            Intrinsics.checkNotNull(f10);
+            return f10;
+        }
+        Insets g10 = D.g(i10);
+        Intrinsics.checkNotNull(g10);
+        return g10;
+    }
+
+    public static /* synthetic */ Insets b(View view, int i10, WindowInsets windowInsets, boolean z10, int i11, Object obj) {
+        if ((i11 & 2) != 0) {
+            windowInsets = view.getRootWindowInsets();
+        }
+        if ((i11 & 4) != 0) {
+            z10 = false;
+        }
+        return a(view, i10, windowInsets, z10);
     }
 }

@@ -12,30 +12,30 @@ import w5.c;
 public abstract class v {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final c.a f51868a = c.a.a("nm", "ind", "refId", "ty", "parent", "sw", "sh", "sc", "ks", "tt", "masksProperties", "shapes", "t", "ef", "sr", "st", "w", "h", "ip", "op", "tm", "cl", "hd", "ao", "bm");
+    private static final c.a f52233a = c.a.a("nm", "ind", "refId", "ty", "parent", "sw", "sh", "sc", "ks", "tt", "masksProperties", "shapes", "t", "ef", "sr", "st", "w", "h", "ip", "op", "tm", "cl", "hd", "ao", "bm");
 
     /* renamed from: b  reason: collision with root package name */
-    private static final c.a f51869b = c.a.a("d", "a");
+    private static final c.a f52234b = c.a.a("d", "a");
 
     /* renamed from: c  reason: collision with root package name */
-    private static final c.a f51870c = c.a.a("ty", "nm");
+    private static final c.a f52235c = c.a.a("ty", "nm");
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f51871a;
+        static final /* synthetic */ int[] f52236a;
 
         static {
             int[] iArr = new int[e.b.values().length];
-            f51871a = iArr;
+            f52236a = iArr;
             try {
                 iArr[e.b.LUMA.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f51871a[e.b.LUMA_INVERTED.ordinal()] = 2;
+                f52236a[e.b.LUMA_INVERTED.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
         }
@@ -57,7 +57,7 @@ public abstract class v {
         s5.h hVar = s5.h.NORMAL;
         ArrayList arrayList = new ArrayList();
         ArrayList arrayList2 = new ArrayList();
-        cVar.s();
+        cVar.u();
         boolean z11 = false;
         e.b bVar2 = bVar;
         s5.h hVar2 = hVar;
@@ -85,15 +85,15 @@ public abstract class v {
         e.a aVar2 = null;
         boolean z13 = false;
         while (cVar.hasNext()) {
-            switch (cVar.y(f51868a)) {
+            switch (cVar.p(f52233a)) {
                 case 0:
-                    str2 = cVar.f1();
+                    str2 = cVar.e1();
                     break;
                 case 1:
                     j10 = cVar.nextInt();
                     break;
                 case 2:
-                    str = cVar.f1();
+                    str = cVar.e1();
                     break;
                 case 3:
                     f11 = f17;
@@ -114,7 +114,7 @@ public abstract class v {
                     i11 = (int) (cVar.nextInt() * x5.j.e());
                     break;
                 case 7:
-                    i12 = Color.parseColor(cVar.f1());
+                    i12 = Color.parseColor(cVar.e1());
                     break;
                 case 8:
                     lVar = c.g(cVar, iVar);
@@ -126,7 +126,7 @@ public abstract class v {
                         iVar.a("Unsupported matte type: " + nextInt2);
                     } else {
                         bVar2 = e.b.values()[nextInt2];
-                        int i13 = a.f51871a[bVar2.ordinal()];
+                        int i13 = a.f52236a[bVar2.ordinal()];
                         if (i13 != 1) {
                             if (i13 == 2) {
                                 iVar.a("Unsupported matte type: Luma Inverted");
@@ -140,66 +140,66 @@ public abstract class v {
                     break;
                 case 10:
                     f11 = f17;
-                    cVar.v();
+                    cVar.x();
                     while (cVar.hasNext()) {
                         arrayList.add(x.a(cVar, iVar));
                     }
                     iVar.r(arrayList.size());
-                    cVar.t();
+                    cVar.v();
                     f17 = f11;
                     break;
                 case 11:
                     f11 = f17;
-                    cVar.v();
+                    cVar.x();
                     while (cVar.hasNext()) {
                         s5.c a10 = h.a(cVar, iVar);
                         if (a10 != null) {
                             arrayList2.add(a10);
                         }
                     }
-                    cVar.t();
+                    cVar.v();
                     f17 = f11;
                     break;
                 case 12:
                     f11 = f17;
-                    cVar.s();
+                    cVar.u();
                     while (cVar.hasNext()) {
-                        int y10 = cVar.y(f51869b);
-                        if (y10 != 0) {
-                            if (y10 != 1) {
-                                cVar.E();
-                                cVar.P();
+                        int p10 = cVar.p(f52234b);
+                        if (p10 != 0) {
+                            if (p10 != 1) {
+                                cVar.s();
+                                cVar.S();
                             } else {
-                                cVar.v();
+                                cVar.x();
                                 if (cVar.hasNext()) {
                                     kVar = b.a(cVar, iVar);
                                 }
                                 while (cVar.hasNext()) {
-                                    cVar.P();
+                                    cVar.S();
                                 }
-                                cVar.t();
+                                cVar.v();
                             }
                         } else {
                             jVar = d.d(cVar, iVar);
                         }
                     }
-                    cVar.z();
+                    cVar.D();
                     f17 = f11;
                     break;
                 case 13:
                     f11 = f17;
-                    cVar.v();
+                    cVar.x();
                     ArrayList arrayList3 = new ArrayList();
                     while (cVar.hasNext()) {
-                        cVar.s();
+                        cVar.u();
                         while (cVar.hasNext()) {
-                            int y11 = cVar.y(f51870c);
-                            if (y11 != 0) {
-                                if (y11 != 1) {
-                                    cVar.E();
-                                    cVar.P();
+                            int p11 = cVar.p(f52235c);
+                            if (p11 != 0) {
+                                if (p11 != 1) {
+                                    cVar.s();
+                                    cVar.S();
                                 } else {
-                                    arrayList3.add(cVar.f1());
+                                    arrayList3.add(cVar.e1());
                                 }
                             } else {
                                 int nextInt3 = cVar.nextInt();
@@ -210,9 +210,9 @@ public abstract class v {
                                 }
                             }
                         }
-                        cVar.z();
+                        cVar.D();
                     }
-                    cVar.t();
+                    cVar.v();
                     iVar.a("Lottie doesn't support layer effects. If you are using them for  fills, strokes, trim paths etc. then try adding them directly as contents  in your shape. Found: " + arrayList3);
                     f17 = f11;
                     break;
@@ -242,10 +242,10 @@ public abstract class v {
                     bVar3 = d.f(cVar, iVar, z11);
                     continue;
                 case ChatViewRecyclerTypes.FLAGGED_MESSAGE_EMBED /* 21 */:
-                    str3 = cVar.f1();
+                    str3 = cVar.e1();
                     continue;
                 case ChatViewRecyclerTypes.FLAGGED_MESSAGE_ACTION_BAR /* 22 */:
-                    z12 = cVar.h();
+                    z12 = cVar.g();
                     continue;
                 case 23:
                     if (cVar.nextInt() == 1) {
@@ -264,8 +264,8 @@ public abstract class v {
                         continue;
                     }
                 default:
-                    cVar.E();
-                    cVar.P();
+                    cVar.s();
+                    cVar.S();
                     f11 = f17;
                     f17 = f11;
                     break;
@@ -273,7 +273,7 @@ public abstract class v {
             z11 = false;
         }
         float f18 = f17;
-        cVar.z();
+        cVar.D();
         ArrayList arrayList4 = new ArrayList();
         if (f12 > 0.0f) {
             z10 = z13;

@@ -10,37 +10,37 @@ import kotlinx.coroutines.flow.Flow;
 public final class b implements w2.f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final w2.f f55145a;
+    private final w2.f f55876a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     static final class a extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f55146d;
+        int f55877d;
 
         /* renamed from: e  reason: collision with root package name */
-        /* synthetic */ Object f55147e;
+        /* synthetic */ Object f55878e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ Function2 f55148i;
+        final /* synthetic */ Function2 f55879i;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(Function2 function2, Continuation continuation) {
             super(2, continuation);
-            this.f55148i = function2;
+            this.f55879i = function2;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            a aVar = new a(this.f55148i, continuation);
-            aVar.f55147e = obj;
+            a aVar = new a(this.f55879i, continuation);
+            aVar.f55878e = obj;
             return aVar;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            Object f10 = ur.b.f();
-            int i10 = this.f55146d;
+            Object f10 = wr.b.f();
+            int i10 = this.f55877d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -49,9 +49,9 @@ public final class b implements w2.f {
                 }
             } else {
                 kotlin.c.b(obj);
-                Function2 function2 = this.f55148i;
-                this.f55146d = 1;
-                obj = function2.invoke((d) this.f55147e, this);
+                Function2 function2 = this.f55879i;
+                this.f55877d = 1;
+                obj = function2.invoke((d) this.f55878e, this);
                 if (obj == f10) {
                     return f10;
                 }
@@ -64,22 +64,22 @@ public final class b implements w2.f {
         @Override // kotlin.jvm.functions.Function2
         /* renamed from: j */
         public final Object invoke(d dVar, Continuation continuation) {
-            return ((a) create(dVar, continuation)).invokeSuspend(Unit.f31988a);
+            return ((a) create(dVar, continuation)).invokeSuspend(Unit.f32008a);
         }
     }
 
     public b(w2.f delegate) {
         Intrinsics.checkNotNullParameter(delegate, "delegate");
-        this.f55145a = delegate;
+        this.f55876a = delegate;
     }
 
     @Override // w2.f
     public Object a(Function2 function2, Continuation continuation) {
-        return this.f55145a.a(new a(function2, null), continuation);
+        return this.f55876a.a(new a(function2, null), continuation);
     }
 
     @Override // w2.f
     public Flow getData() {
-        return this.f55145a.getData();
+        return this.f55876a.getData();
     }
 }

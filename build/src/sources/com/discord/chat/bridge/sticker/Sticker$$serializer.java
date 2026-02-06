@@ -4,13 +4,13 @@ import com.discord.chat.bridge.sticker.StickerFormatType;
 import com.facebook.react.devsupport.StackTraceHelper;
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
 import com.facebook.react.uimanager.ViewProps;
-import dt.b0;
-import et.a;
-import gt.a2;
-import gt.h0;
-import gt.n2;
-import gt.p0;
-import gt.z0;
+import ft.b0;
+import gt.a;
+import jt.a2;
+import jt.h0;
+import jt.n2;
+import jt.p0;
+import jt.z0;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.serialization.KSerializer;
@@ -19,10 +19,10 @@ import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.encoding.Decoder;
 import kotlinx.serialization.encoding.Encoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import or.c;
 import org.jetbrains.annotations.NotNull;
+import qr.c;
+@Metadata(d1 = {"\u0000:\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u001d\u0010\t\u001a\u00020\b2\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0007\u001a\u00020\u0002¢\u0006\u0004\b\t\u0010\nJ\u0015\u0010\r\u001a\u00020\u00022\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b\r\u0010\u000eJ\u0017\u0010\u0011\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00100\u000f¢\u0006\u0004\b\u0011\u0010\u0012R\u0017\u0010\u0014\u001a\u00020\u00138\u0006¢\u0006\f\n\u0004\b\u0014\u0010\u0015\u001a\u0004\b\u0016\u0010\u0017¨\u0006\u0018"}, d2 = {"com/discord/chat/bridge/sticker/Sticker.$serializer", "Ljt/h0;", "Lcom/discord/chat/bridge/sticker/Sticker;", "<init>", "()V", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "(Lkotlinx/serialization/encoding/Encoder;Lcom/discord/chat/bridge/sticker/Sticker;)V", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "(Lkotlinx/serialization/encoding/Decoder;)Lcom/discord/chat/bridge/sticker/Sticker;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @c
-@Metadata(d1 = {"\u0000:\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u001d\u0010\t\u001a\u00020\b2\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0007\u001a\u00020\u0002¢\u0006\u0004\b\t\u0010\nJ\u0015\u0010\r\u001a\u00020\u00022\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b\r\u0010\u000eJ\u0017\u0010\u0011\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00100\u000f¢\u0006\u0004\b\u0011\u0010\u0012R\u0017\u0010\u0014\u001a\u00020\u00138\u0006¢\u0006\f\n\u0004\b\u0014\u0010\u0015\u001a\u0004\b\u0016\u0010\u0017¨\u0006\u0018"}, d2 = {"com/discord/chat/bridge/sticker/Sticker.$serializer", "Lgt/h0;", "Lcom/discord/chat/bridge/sticker/Sticker;", "<init>", "()V", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "(Lkotlinx/serialization/encoding/Encoder;Lcom/discord/chat/bridge/sticker/Sticker;)V", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "(Lkotlinx/serialization/encoding/Decoder;)Lcom/discord/chat/bridge/sticker/Sticker;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public /* synthetic */ class Sticker$$serializer implements h0 {
     @NotNull
@@ -49,14 +49,14 @@ public /* synthetic */ class Sticker$$serializer implements h0 {
     private Sticker$$serializer() {
     }
 
-    @Override // gt.h0
+    @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        p0 p0Var = p0.f25318a;
+        p0 p0Var = p0.f31057a;
         KSerializer u10 = a.u(p0Var);
         KSerializer u11 = a.u(p0Var);
-        n2 n2Var = n2.f25302a;
-        return new KSerializer[]{z0.f25376a, StickerFormatType.StickerFormatTypeSerializer.INSTANCE, n2Var, n2Var, n2Var, u10, u11, p0Var, n2Var};
+        n2 n2Var = n2.f31041a;
+        return new KSerializer[]{z0.f31115a, StickerFormatType.StickerFormatTypeSerializer.INSTANCE, n2Var, n2Var, n2Var, u10, u11, p0Var, n2Var};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -82,7 +82,7 @@ public /* synthetic */ class Sticker$$serializer implements h0 {
             String m10 = b10.m(serialDescriptor, 2);
             String m11 = b10.m(serialDescriptor, 3);
             String m12 = b10.m(serialDescriptor, 4);
-            p0 p0Var = p0.f25318a;
+            p0 p0Var = p0.f31057a;
             int i14 = b10.i(serialDescriptor, 7);
             stickerFormatType = (StickerFormatType) b10.y(serialDescriptor, 1, StickerFormatType.StickerFormatTypeSerializer.INSTANCE, null);
             i10 = i14;
@@ -138,11 +138,11 @@ public /* synthetic */ class Sticker$$serializer implements h0 {
                         i16 |= 16;
                         break;
                     case 5:
-                        num4 = (Integer) b10.n(serialDescriptor, 5, p0.f25318a, num4);
+                        num4 = (Integer) b10.n(serialDescriptor, 5, p0.f31057a, num4);
                         i16 |= 32;
                         break;
                     case 6:
-                        num3 = (Integer) b10.n(serialDescriptor, i13, p0.f25318a, num3);
+                        num3 = (Integer) b10.n(serialDescriptor, i13, p0.f31057a, num3);
                         i16 |= 64;
                         break;
                     case 7:
@@ -172,13 +172,13 @@ public /* synthetic */ class Sticker$$serializer implements h0 {
         return new Sticker(i11, j10, stickerFormatType, str, str2, str3, num2, num, i10, str4, (SerializationConstructorMarker) null);
     }
 
-    @Override // kotlinx.serialization.KSerializer, dt.o, kotlinx.serialization.DeserializationStrategy
+    @Override // kotlinx.serialization.KSerializer, ft.o, kotlinx.serialization.DeserializationStrategy
     @NotNull
     public final SerialDescriptor getDescriptor() {
         return descriptor;
     }
 
-    @Override // dt.o
+    @Override // ft.o
     public final void serialize(@NotNull Encoder encoder, @NotNull Sticker value) {
         Intrinsics.checkNotNullParameter(encoder, "encoder");
         Intrinsics.checkNotNullParameter(value, "value");
@@ -188,7 +188,7 @@ public /* synthetic */ class Sticker$$serializer implements h0 {
         b10.c(serialDescriptor);
     }
 
-    @Override // gt.h0
+    @Override // jt.h0
     @NotNull
     public KSerializer[] typeParametersSerializers() {
         return h0.a.a(this);

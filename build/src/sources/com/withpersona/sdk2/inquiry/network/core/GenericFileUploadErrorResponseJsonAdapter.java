@@ -32,31 +32,31 @@ public final class GenericFileUploadErrorResponseJsonAdapter extends h {
     @Override // com.squareup.moshi.h
     @NotNull
     public GenericFileUploadErrorResponse fromJson(@NotNull m mVar) {
-        mVar.s();
+        mVar.u();
         List list = null;
         while (mVar.hasNext()) {
-            int W = mVar.W(this.options);
-            if (W == -1) {
+            int J = mVar.J(this.options);
+            if (J == -1) {
                 mVar.E0();
-                mVar.P();
-            } else if (W == 0 && (list = (List) this.listOfDocumentErrorResponseAdapter.fromJson(mVar)) == null) {
-                throw ym.c.x("errors", "errors", mVar);
+                mVar.S();
+            } else if (J == 0 && (list = (List) this.listOfDocumentErrorResponseAdapter.fromJson(mVar)) == null) {
+                throw an.c.x("errors", "errors", mVar);
             }
         }
-        mVar.z();
+        mVar.D();
         if (list != null) {
             return new GenericFileUploadErrorResponse(list);
         }
-        throw ym.c.o("errors", "errors", mVar);
+        throw an.c.o("errors", "errors", mVar);
     }
 
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t tVar, GenericFileUploadErrorResponse genericFileUploadErrorResponse) {
         if (genericFileUploadErrorResponse != null) {
             tVar.k();
-            tVar.W("errors");
+            tVar.J("errors");
             this.listOfDocumentErrorResponseAdapter.toJson(tVar, genericFileUploadErrorResponse.getErrors());
-            tVar.E();
+            tVar.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

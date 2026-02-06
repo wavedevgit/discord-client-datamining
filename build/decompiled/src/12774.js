@@ -17,62 +17,28 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure3_slot0 = var0;
             var0 = {};
             var1 = {};
-            var2 = function arg0, arg1, arg2() {
-                _fun97692: for (var _fun97692_ip = 0;;) switch (_fun97692_ip) {
-                    case 0:
-                        var0 = arg1;
-                        var1 = var0;
-                        if (!var1) {
-                            _fun97692_ip = 14;
-                            continue _fun97692
-                        }
-                    case 9:
-                        var1 = var0.status;
-                    case 14:
-                        if (!var1) {
-                            _fun97692_ip = 33;
-                            continue _fun97692
-                        }
-                    case 17:
-                        var2 = var0.status;
-                        var3 = 'number';
-                        var2 = typeof var2;
-                        var1 = var3 === var2;
-                    case 33:
-                        if (!var1) {
-                            _fun97692_ip = 48;
-                            continue _fun97692
-                        }
-                    case 36:
-                        var3 = var0.status;
-                        var2 = 200;
-                        var1 = var3 >= var2;
-                    case 48:
-                        if (!var1) {
-                            _fun97692_ip = 66;
-                            continue _fun97692
-                        }
-                    case 51:
-                        var3 = var0.status;
-                        var2 = 299;
-                        var1 = var3 <= var2;
-                    case 66:
-                        var4 = !var1;
-                        var3 = _closure3_slot0;
-                        var2 = var3.send;
-                        var1 = {};
-                        var5 = arg0;
-                        var1.request = var5;
-                        var1.response = var0;
-                        var0 = arg2;
-                        var1.duration = var0;
-                        var0 = 'api.response';
-                        var0 = var2.bind(var3)(var0, var1, var4);
-                        var0 = undefined;
-                        return var0;
-                }
+            var2 = function arg0() {
+                var0 = arg0;
+                var8 = var0.uri;
+                var7 = var0.preview;
+                var6 = var0.filename;
+                var5 = var0.width;
+                var4 = var0.height;
+                var0 = var0.caption;
+                var3 = _closure3_slot0;
+                var2 = var3.send;
+                var1 = {};
+                var1.uri = var8;
+                var1.preview = var7;
+                var1.filename = var6;
+                var1.width = var5;
+                var1.height = var4;
+                var1.caption = var0;
+                var0 = 'image';
+                var0 = var2.bind(var3)(var0, var1);
+                return var0;
             };
-            var1.apiResponse = var2;
+            var1.image = var2;
             var0.features = var1;
             return var0;
         };

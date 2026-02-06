@@ -43,8 +43,8 @@ public abstract class BaseReactPackage implements ReactPackage {
     }
 
     @Override // com.facebook.react.ReactPackage
-    @or.c
     @NotNull
+    @qr.c
     public List<NativeModule> createNativeModules(@NotNull ReactApplicationContext reactContext) {
         Intrinsics.checkNotNullParameter(reactContext, "reactContext");
         throw new UnsupportedOperationException("createNativeModules method is not supported. Use getModule() method instead.");

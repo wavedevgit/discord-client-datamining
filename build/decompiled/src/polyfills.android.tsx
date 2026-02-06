@@ -15,15 +15,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var4.String;
     var4 = var4.prototype;
     var1 = function() {
-        _fun96852: for (var _fun96852_ip = 0;;) switch (_fun96852_ip) {
+        _fun96861: for (var _fun96861_ip = 0;;) switch (_fun96861_ip) {
             case 0:
                 var3 = this;
                 var2 = var3.length;
                 var0 = '';
                 var1 = 0;
                 if (!(var1 !== var2)) {
-                    _fun96852_ip = 35;
-                    continue _fun96852
+                    _fun96861_ip = 35;
+                    continue _fun96861
                 }
             case 18:
                 var2 = _closure1_slot0;
@@ -41,4 +41,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'polyfills.android.tsx';
     var1 = var2.bind(var3)(var1);
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12654, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12657, 2]);

@@ -8,10 +8,10 @@ import android.view.View;
 public class FragmentController {
 
     /* renamed from: a  reason: collision with root package name */
-    private final FragmentHostCallback f4203a;
+    private final FragmentHostCallback f4532a;
 
     private FragmentController(FragmentHostCallback fragmentHostCallback) {
-        this.f4203a = fragmentHostCallback;
+        this.f4532a = fragmentHostCallback;
     }
 
     public static FragmentController b(FragmentHostCallback fragmentHostCallback) {
@@ -19,56 +19,56 @@ public class FragmentController {
     }
 
     public void a(Fragment fragment) {
-        FragmentManager h10 = this.f4203a.h();
-        FragmentHostCallback fragmentHostCallback = this.f4203a;
+        FragmentManager h10 = this.f4532a.h();
+        FragmentHostCallback fragmentHostCallback = this.f4532a;
         h10.p(fragmentHostCallback, fragmentHostCallback, fragment);
     }
 
     public void c() {
-        this.f4203a.h().C();
+        this.f4532a.h().C();
     }
 
     public boolean d(MenuItem menuItem) {
-        return this.f4203a.h().F(menuItem);
+        return this.f4532a.h().F(menuItem);
     }
 
     public void e() {
-        this.f4203a.h().G();
+        this.f4532a.h().G();
     }
 
     public void f() {
-        this.f4203a.h().I();
+        this.f4532a.h().I();
     }
 
     public void g() {
-        this.f4203a.h().R();
+        this.f4532a.h().R();
     }
 
     public void h() {
-        this.f4203a.h().V();
+        this.f4532a.h().V();
     }
 
     public void i() {
-        this.f4203a.h().W();
+        this.f4532a.h().W();
     }
 
     public void j() {
-        this.f4203a.h().Y();
+        this.f4532a.h().Y();
     }
 
     public boolean k() {
-        return this.f4203a.h().f0(true);
+        return this.f4532a.h().f0(true);
     }
 
     public FragmentManager l() {
-        return this.f4203a.h();
+        return this.f4532a.h();
     }
 
     public void m() {
-        this.f4203a.h().a1();
+        this.f4532a.h().a1();
     }
 
     public View n(View view, String str, Context context, AttributeSet attributeSet) {
-        return this.f4203a.h().C0().onCreateView(view, str, context, attributeSet);
+        return this.f4532a.h().C0().onCreateView(view, str, context, attributeSet);
     }
 }

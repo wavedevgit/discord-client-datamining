@@ -1,43 +1,35 @@
 package ng;
 
-import xi.c;
+import java.io.OutputStream;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class m2 implements xi.d {
-
-    /* renamed from: a  reason: collision with root package name */
-    static final m2 f40802a = new m2();
-
-    /* renamed from: b  reason: collision with root package name */
-    private static final xi.c f40803b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private static final xi.c f40804c;
+final class m2 extends OutputStream {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final xi.c f40805d;
+    private long f40080d = 0;
 
-    static {
-        c.b a10 = xi.c.a("inferenceCommonLogEvent");
-        f fVar = new f();
-        fVar.a(1);
-        f40803b = a10.b(fVar.b()).a();
-        c.b a11 = xi.c.a("options");
-        f fVar2 = new f();
-        fVar2.a(2);
-        f40804c = a11.b(fVar2.b()).a();
-        c.b a12 = xi.c.a("imageInfo");
-        f fVar3 = new f();
-        fVar3.a(3);
-        f40805d = a12.b(fVar3.b()).a();
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public final long a() {
+        return this.f40080d;
     }
 
-    private m2() {
+    @Override // java.io.OutputStream
+    public final void write(int i10) {
+        this.f40080d++;
     }
 
-    @Override // xi.d
-    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
-        android.support.v4.media.session.b.a(obj);
-        xi.e eVar = (xi.e) obj2;
-        throw null;
+    @Override // java.io.OutputStream
+    public final void write(byte[] bArr) {
+        this.f40080d += bArr.length;
+    }
+
+    @Override // java.io.OutputStream
+    public final void write(byte[] bArr, int i10, int i11) {
+        int length;
+        int i12;
+        if (i10 >= 0 && i10 <= (length = bArr.length) && i11 >= 0 && (i12 = i10 + i11) <= length && i12 >= 0) {
+            this.f40080d += i11;
+            return;
+        }
+        throw new IndexOutOfBoundsException();
     }
 }

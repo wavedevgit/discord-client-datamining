@@ -1,276 +1,174 @@
 package au;
 
-import com.facebook.react.views.text.internal.span.SetSpanOperation;
-import java.net.IDN;
-import java.net.InetAddress;
-import java.util.Locale;
-import kotlin.jvm.internal.Intrinsics;
-import kotlin.text.StringsKt;
-import okio.Buffer;
+import java.io.File;
+import java.io.FileDescriptor;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.PrintStream;
+import java.nio.ByteBuffer;
+import java.nio.ByteOrder;
+import java.nio.channels.FileChannel;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public abstract class a {
-    private static final boolean a(String str) {
-        int length = str.length();
-        for (int i10 = 0; i10 < length; i10++) {
-            char charAt = str.charAt(i10);
-            if (Intrinsics.compare((int) charAt, 31) <= 0 || Intrinsics.compare((int) charAt, 127) >= 0 || StringsKt.h0(" #%/:?@[\\]", charAt, 0, false, 6, null) != -1) {
-                return true;
-            }
+
+    /* renamed from: a  reason: collision with root package name */
+    public static boolean f6287a = false;
+
+    /* renamed from: b  reason: collision with root package name */
+    private static final int f6288b = d(new byte[]{102, 114, 101, 101});
+
+    /* renamed from: c  reason: collision with root package name */
+    private static final int f6289c = d(new byte[]{106, 117, 110, 107});
+
+    /* renamed from: d  reason: collision with root package name */
+    private static final int f6290d = d(new byte[]{109, 100, 97, 116});
+
+    /* renamed from: e  reason: collision with root package name */
+    private static final int f6291e = d(new byte[]{109, 111, 111, 118});
+
+    /* renamed from: f  reason: collision with root package name */
+    private static final int f6292f = d(new byte[]{112, 110, 111, 116});
+
+    /* renamed from: g  reason: collision with root package name */
+    private static final int f6293g = d(new byte[]{115, 107, 105, 112});
+
+    /* renamed from: h  reason: collision with root package name */
+    private static final int f6294h = d(new byte[]{119, 105, 100, 101});
+
+    /* renamed from: i  reason: collision with root package name */
+    private static final int f6295i = d(new byte[]{80, 73, 67, 84});
+
+    /* renamed from: j  reason: collision with root package name */
+    private static final int f6296j = d(new byte[]{102, 116, 121, 112});
+
+    /* renamed from: k  reason: collision with root package name */
+    private static final int f6297k = d(new byte[]{117, 117, 105, 100});
+
+    /* renamed from: l  reason: collision with root package name */
+    private static final int f6298l = d(new byte[]{99, 109, 111, 118});
+
+    /* renamed from: m  reason: collision with root package name */
+    private static final int f6299m = d(new byte[]{115, 116, 99, 111});
+
+    /* renamed from: n  reason: collision with root package name */
+    private static final int f6300n = d(new byte[]{99, 111, 54, 52});
+
+    /* renamed from: au.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static class C0088a extends b {
+        private C0088a(String str) {
+            super(str);
         }
-        return false;
     }
 
-    private static final boolean b(String str, int i10, int i11, byte[] bArr, int i12) {
-        int i13 = i12;
-        while (i10 < i11) {
-            if (i13 == bArr.length) {
-                return false;
-            }
-            if (i13 != i12) {
-                if (str.charAt(i10) != '.') {
-                    return false;
-                }
-                i10++;
-            }
-            int i14 = i10;
-            int i15 = 0;
-            while (i14 < i11) {
-                char charAt = str.charAt(i14);
-                if (Intrinsics.compare((int) charAt, 48) < 0 || Intrinsics.compare((int) charAt, 57) > 0) {
-                    break;
-                } else if ((i15 == 0 && i10 != i14) || (i15 = ((i15 * 10) + charAt) - 48) > 255) {
-                    return false;
-                } else {
-                    i14++;
-                }
-            }
-            if (i14 - i10 == 0) {
-                return false;
-            }
-            bArr[i13] = (byte) i15;
-            i13++;
-            i10 = i14;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static class b extends Exception {
+        private b(String str) {
+            super(str);
         }
-        if (i13 != i12 + 4) {
-            return false;
-        }
-        return true;
     }
 
-    /* JADX WARN: Code restructure failed: missing block: B:41:0x0091, code lost:
-        if (r11 == 16) goto L35;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:42:0x0093, code lost:
-        if (r12 != (-1)) goto L34;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:43:0x0095, code lost:
-        return null;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:44:0x0096, code lost:
-        r0 = r11 - r12;
-        java.lang.System.arraycopy(r8, r12, r8, 16 - r0, r0);
-        java.util.Arrays.fill(r8, r12, (16 - r11) + r12, (byte) 0);
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:46:0x00a6, code lost:
-        return java.net.InetAddress.getByAddress(r8);
-     */
-    /* JADX WARN: Removed duplicated region for block: B:31:0x0066  */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static class c extends b {
+        private c(String str) {
+            super(str);
+        }
+    }
+
+    public static boolean a(FileDescriptor fileDescriptor, File file) {
+        return c(new FileInputStream(fileDescriptor), file);
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:103:0x00ed A[EDGE_INSN: B:103:0x00ed->B:40:0x00ed ?: BREAK  , SYNTHETIC] */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
     */
-    private static final java.net.InetAddress c(java.lang.String r16, int r17, int r18) {
+    private static boolean b(java.nio.channels.FileChannel r24, java.nio.channels.FileChannel r25) {
         /*
-            r6 = r18
-            r7 = 16
-            byte[] r8 = new byte[r7]
-            r9 = 0
-            r10 = -1
-            r2 = r17
-            r11 = r9
-            r12 = r10
-            r13 = r12
-        Ld:
-            r14 = 0
-            if (r2 >= r6) goto L91
-            if (r11 != r7) goto L13
-            return r14
-        L13:
-            int r15 = r2 + 2
-            if (r15 > r6) goto L33
-            r4 = 4
-            r5 = 0
-            java.lang.String r1 = "::"
-            r3 = 0
-            r0 = r16
-            boolean r1 = kotlin.text.StringsKt.O(r0, r1, r2, r3, r4, r5)
-            if (r1 == 0) goto L33
-            if (r12 == r10) goto L27
-            return r14
-        L27:
-            int r11 = r11 + 2
-            if (r15 != r6) goto L2e
-            r12 = r11
-            goto L91
-        L2e:
-            r0 = r16
-            r12 = r11
-            r13 = r15
-            goto L62
-        L33:
-            if (r11 == 0) goto L44
-            r4 = 4
-            r5 = 0
-            java.lang.String r1 = ":"
-            r3 = 0
-            r0 = r16
-            boolean r1 = kotlin.text.StringsKt.O(r0, r1, r2, r3, r4, r5)
-            if (r1 == 0) goto L48
-            int r2 = r2 + 1
-        L44:
-            r0 = r16
-            r13 = r2
-            goto L62
-        L48:
-            r4 = 4
-            r5 = 0
-            java.lang.String r1 = "."
-            r3 = 0
-            r0 = r16
-            boolean r1 = kotlin.text.StringsKt.O(r0, r1, r2, r3, r4, r5)
-            if (r1 == 0) goto L61
-            int r1 = r11 + (-2)
-            boolean r0 = b(r0, r13, r6, r8, r1)
-            if (r0 != 0) goto L5e
-            return r14
-        L5e:
-            int r11 = r11 + 2
-            goto L91
-        L61:
-            return r14
-        L62:
-            r1 = r9
-            r2 = r13
-        L64:
-            if (r2 >= r6) goto L76
-            char r3 = r0.charAt(r2)
-            int r3 = au.e.I(r3)
-            if (r3 == r10) goto L76
-            int r1 = r1 << 4
-            int r1 = r1 + r3
-            int r2 = r2 + 1
-            goto L64
-        L76:
-            int r3 = r2 - r13
-            if (r3 == 0) goto L90
-            r4 = 4
-            if (r3 <= r4) goto L7e
-            goto L90
-        L7e:
-            int r3 = r11 + 1
-            int r4 = r1 >>> 8
-            r4 = r4 & 255(0xff, float:3.57E-43)
-            byte r4 = (byte) r4
-            r8[r11] = r4
-            int r11 = r11 + 2
-            r1 = r1 & 255(0xff, float:3.57E-43)
-            byte r1 = (byte) r1
-            r8[r3] = r1
-            goto Ld
-        L90:
-            return r14
-        L91:
-            if (r11 == r7) goto La2
-            if (r12 != r10) goto L96
-            return r14
-        L96:
-            int r0 = r11 - r12
-            int r1 = 16 - r0
-            java.lang.System.arraycopy(r8, r12, r8, r1, r0)
-            int r7 = r7 - r11
-            int r7 = r7 + r12
-            java.util.Arrays.fill(r8, r12, r7, r9)
-        La2:
-            java.net.InetAddress r0 = java.net.InetAddress.getByAddress(r8)
-            return r0
+            Method dump skipped, instructions count: 564
+            To view this dump add '--comments-level debug' option
         */
-        throw new UnsupportedOperationException("Method not decompiled: au.a.c(java.lang.String, int, int):java.net.InetAddress");
+        throw new UnsupportedOperationException("Method not decompiled: au.a.b(java.nio.channels.FileChannel, java.nio.channels.FileChannel):boolean");
     }
 
-    private static final String d(byte[] bArr) {
-        int i10 = -1;
-        int i11 = 0;
-        int i12 = 0;
-        int i13 = 0;
-        while (i12 < bArr.length) {
-            int i14 = i12;
-            while (i14 < 16 && bArr[i14] == 0 && bArr[i14 + 1] == 0) {
-                i14 += 2;
-            }
-            int i15 = i14 - i12;
-            if (i15 > i13 && i15 >= 4) {
-                i10 = i12;
-                i13 = i15;
-            }
-            i12 = i14 + 2;
-        }
-        Buffer buffer = new Buffer();
-        while (i11 < bArr.length) {
-            if (i11 == i10) {
-                buffer.writeByte(58);
-                i11 += i13;
-                if (i11 == 16) {
-                    buffer.writeByte(58);
-                }
-            } else {
-                if (i11 > 0) {
-                    buffer.writeByte(58);
-                }
-                buffer.K1((e.d(bArr[i11], SetSpanOperation.SPAN_MAX_PRIORITY) << 8) | e.d(bArr[i11 + 1], SetSpanOperation.SPAN_MAX_PRIORITY));
-                i11 += 2;
-            }
-        }
-        return buffer.T1();
-    }
-
-    public static final String e(String str) {
-        InetAddress c10;
-        Intrinsics.checkNotNullParameter(str, "<this>");
-        if (StringsKt.V(str, ":", false, 2, null)) {
-            if (StringsKt.P(str, "[", false, 2, null) && StringsKt.z(str, "]", false, 2, null)) {
-                c10 = c(str, 1, str.length() - 1);
-            } else {
-                c10 = c(str, 0, str.length());
-            }
-            if (c10 == null) {
-                return null;
-            }
-            byte[] address = c10.getAddress();
-            if (address.length == 16) {
-                Intrinsics.checkNotNullExpressionValue(address, "address");
-                return d(address);
-            } else if (address.length == 4) {
-                return c10.getHostAddress();
-            } else {
-                throw new AssertionError("Invalid IPv6 address: '" + str + '\'');
-            }
-        }
+    private static boolean c(FileInputStream fileInputStream, File file) {
+        FileOutputStream fileOutputStream = null;
         try {
-            String ascii = IDN.toASCII(str);
-            Intrinsics.checkNotNullExpressionValue(ascii, "toASCII(host)");
-            Locale US = Locale.US;
-            Intrinsics.checkNotNullExpressionValue(US, "US");
-            String lowerCase = ascii.toLowerCase(US);
-            Intrinsics.checkNotNullExpressionValue(lowerCase, "this as java.lang.String).toLowerCase(locale)");
-            if (lowerCase.length() == 0) {
-                return null;
+            FileChannel channel = fileInputStream.getChannel();
+            FileOutputStream fileOutputStream2 = new FileOutputStream(file);
+            try {
+                boolean b10 = b(channel, fileOutputStream2.getChannel());
+                fileInputStream.close();
+                fileOutputStream2.close();
+                return b10;
+            } catch (Throwable th2) {
+                th = th2;
+                fileOutputStream = fileOutputStream2;
+                fileInputStream.close();
+                if (fileOutputStream != null) {
+                    fileOutputStream.close();
+                }
+                throw th;
             }
-            if (a(lowerCase)) {
-                return null;
-            }
-            return lowerCase;
-        } catch (IllegalArgumentException unused) {
-            return null;
+        } catch (Throwable th3) {
+            th = th3;
         }
+    }
+
+    private static int d(byte[] bArr) {
+        return ByteBuffer.wrap(bArr).order(ByteOrder.BIG_ENDIAN).getInt();
+    }
+
+    private static void e(String str, Object... objArr) {
+        if (f6287a) {
+            PrintStream printStream = System.err;
+            printStream.println("QtFastStart: " + String.format(str, objArr));
+        }
+    }
+
+    private static boolean f(FileChannel fileChannel, ByteBuffer byteBuffer) {
+        byteBuffer.clear();
+        int read = fileChannel.read(byteBuffer);
+        byteBuffer.flip();
+        if (read == byteBuffer.capacity()) {
+            return true;
+        }
+        return false;
+    }
+
+    private static boolean g(FileChannel fileChannel, ByteBuffer byteBuffer, long j10) {
+        byteBuffer.clear();
+        int read = fileChannel.read(byteBuffer, j10);
+        byteBuffer.flip();
+        if (read == byteBuffer.capacity()) {
+            return true;
+        }
+        return false;
+    }
+
+    static int h(int i10) {
+        if (i10 >= 0) {
+            return i10;
+        }
+        throw new c("uint32 value is too large");
+    }
+
+    static int i(long j10) {
+        if (j10 <= 2147483647L && j10 >= 0) {
+            return (int) j10;
+        }
+        throw new c("uint32 value is too large");
+    }
+
+    static long j(int i10) {
+        return i10 & 4294967295L;
+    }
+
+    static long k(long j10) {
+        if (j10 >= 0) {
+            return j10;
+        }
+        throw new c("uint64 value is too large");
     }
 }

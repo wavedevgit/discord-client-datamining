@@ -40,8 +40,8 @@ import kotlin.reflect.jvm.internal.impl.types.Variance;
 import kotlin.reflect.jvm.internal.impl.types.checker.KotlinTypeChecker;
 import kotlin.reflect.jvm.internal.impl.types.error.ErrorType;
 import kotlin.reflect.jvm.internal.impl.types.model.TypeVariableTypeConstructorMarker;
-import or.p;
 import org.jetbrains.annotations.NotNull;
+import qr.p;
 @SourceDebugExtension({"SMAP\nTypeUtils.kt\nKotlin\n*S Kotlin\n*F\n+ 1 TypeUtils.kt\norg/jetbrains/kotlin/types/typeUtil/TypeUtilsKt\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,390:1\n245#1,14:415\n260#1:433\n249#1,12:434\n245#1,14:446\n260#1:464\n249#1,12:465\n256#1,3:483\n260#1:490\n256#1,3:491\n260#1:498\n256#1,3:499\n260#1:506\n381#1:532\n381#1:533\n381#1:534\n1761#2,3:391\n1563#2:394\n1634#2,3:395\n1617#2,9:399\n1869#2:408\n1870#2:410\n1626#2:411\n774#2:412\n865#2,2:413\n1563#2:429\n1634#2,3:430\n1563#2:460\n1634#2,3:461\n1761#2,3:477\n1761#2,3:480\n1563#2:486\n1634#2,3:487\n1563#2:494\n1634#2,3:495\n1563#2:502\n1634#2,3:503\n1563#2:507\n1634#2,3:508\n1563#2:511\n1634#2,3:512\n1761#2,3:515\n295#2,2:518\n1563#2:520\n1634#2,3:521\n1563#2:524\n1634#2,3:525\n1563#2:528\n1634#2,3:529\n1#3:398\n1#3:409\n*S KotlinDebug\n*F\n+ 1 TypeUtils.kt\norg/jetbrains/kotlin/types/typeUtil/TypeUtilsKt\n*L\n184#1:415,14\n184#1:433\n184#1:434,12\n185#1:446,14\n185#1:464\n185#1:465,12\n248#1:483,3\n248#1:490\n249#1:491,3\n249#1:498\n251#1:499,3\n251#1:506\n373#1:532\n376#1:533\n379#1:534\n80#1:391,3\n131#1:394\n131#1:395,3\n167#1:399,9\n167#1:408\n167#1:410\n167#1:411\n173#1:412\n173#1:413,2\n184#1:429\n184#1:430,3\n185#1:460\n185#1:461,3\n223#1:477,3\n235#1:480,3\n248#1:486\n248#1:487,3\n249#1:494\n249#1:495,3\n251#1:502\n251#1:503,3\n258#1:507\n258#1:508,3\n265#1:511\n265#1:512,3\n291#1:515,3\n298#1:518,2\n308#1:520\n308#1:521,3\n327#1:524\n327#1:525,3\n335#1:528\n335#1:529,3\n167#1:409\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class TypeUtilsKt {
@@ -59,12 +59,12 @@ public final class TypeUtilsKt {
 
     public static final boolean containsTypeAliasParameters(@NotNull KotlinType kotlinType) {
         Intrinsics.checkNotNullParameter(kotlinType, "<this>");
-        return contains(kotlinType, b.f34743d);
+        return contains(kotlinType, b.f34763d);
     }
 
     public static final boolean containsTypeParameter(@NotNull KotlinType kotlinType) {
         Intrinsics.checkNotNullParameter(kotlinType, "<this>");
-        return TypeUtils.contains(kotlinType, a.f34742d);
+        return TypeUtils.contains(kotlinType, a.f34762d);
     }
 
     @NotNull
@@ -422,11 +422,11 @@ public final class TypeUtilsKt {
 
     public static final boolean requiresTypeAliasExpansion(@NotNull KotlinType kotlinType) {
         Intrinsics.checkNotNullParameter(kotlinType, "<this>");
-        return contains(kotlinType, c.f34744d);
+        return contains(kotlinType, c.f34764d);
     }
 
     public static final boolean shouldBeUpdated(KotlinType kotlinType) {
-        if (kotlinType != null && !contains(kotlinType, d.f34745d)) {
+        if (kotlinType != null && !contains(kotlinType, d.f34765d)) {
             return false;
         }
         return true;

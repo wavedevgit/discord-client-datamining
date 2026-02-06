@@ -8,7 +8,7 @@ public interface h {
 
     void e(String str, g gVar);
 
-    Activity g();
+    Activity n();
 
     void startActivityForResult(Intent intent, int i10);
 }

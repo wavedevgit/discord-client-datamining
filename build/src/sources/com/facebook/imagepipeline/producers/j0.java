@@ -8,29 +8,29 @@ import java.util.concurrent.Executor;
 public abstract class j0 implements w0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Executor f10789a;
+    private final Executor f10688a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final r8.i f10790b;
+    private final r8.i f10689b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a extends e1 {
 
         /* renamed from: q  reason: collision with root package name */
-        final /* synthetic */ ImageRequest f10791q;
+        final /* synthetic */ ImageRequest f10690q;
 
         /* renamed from: r  reason: collision with root package name */
-        final /* synthetic */ y0 f10792r;
+        final /* synthetic */ y0 f10691r;
 
         /* renamed from: s  reason: collision with root package name */
-        final /* synthetic */ ProducerContext f10793s;
+        final /* synthetic */ ProducerContext f10692s;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(Consumer consumer, y0 y0Var, ProducerContext producerContext, String str, ImageRequest imageRequest, y0 y0Var2, ProducerContext producerContext2) {
             super(consumer, y0Var, producerContext, str);
-            this.f10791q = imageRequest;
-            this.f10792r = y0Var2;
-            this.f10793s = producerContext2;
+            this.f10690q = imageRequest;
+            this.f10691r = y0Var2;
+            this.f10692s = producerContext2;
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
@@ -44,16 +44,16 @@ public abstract class j0 implements w0 {
         @Override // m8.h
         /* renamed from: k */
         public sa.k c() {
-            sa.k d10 = j0.this.d(this.f10791q);
+            sa.k d10 = j0.this.d(this.f10690q);
             if (d10 == null) {
-                this.f10792r.b(this.f10793s, j0.this.f(), false);
-                this.f10793s.m("local", "fetch");
+                this.f10691r.b(this.f10692s, j0.this.f(), false);
+                this.f10692s.m("local", "fetch");
                 return null;
             }
-            d10.V0();
-            this.f10792r.b(this.f10793s, j0.this.f(), true);
-            this.f10793s.m("local", "fetch");
-            this.f10793s.y("image_color_space", d10.E());
+            d10.O0();
+            this.f10691r.b(this.f10692s, j0.this.f(), true);
+            this.f10692s.m("local", "fetch");
+            this.f10692s.p("image_color_space", d10.s());
             return d10;
         }
     }
@@ -62,52 +62,52 @@ public abstract class j0 implements w0 {
     class b extends f {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ e1 f10795a;
+        final /* synthetic */ e1 f10694a;
 
         b(e1 e1Var) {
-            this.f10795a = e1Var;
+            this.f10694a = e1Var;
         }
 
         @Override // com.facebook.imagepipeline.producers.x0
         public void b() {
-            this.f10795a.a();
+            this.f10694a.a();
         }
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public j0(Executor executor, r8.i iVar) {
-        this.f10789a = executor;
-        this.f10790b = iVar;
+        this.f10688a = executor;
+        this.f10689b = iVar;
     }
 
     @Override // com.facebook.imagepipeline.producers.w0
     public void b(Consumer consumer, ProducerContext producerContext) {
-        y0 F = producerContext.F();
-        ImageRequest V = producerContext.V();
+        y0 y10 = producerContext.y();
+        ImageRequest I = producerContext.I();
         producerContext.m("local", "fetch");
-        a aVar = new a(consumer, F, producerContext, f(), V, F, producerContext);
-        producerContext.h(new b(aVar));
-        this.f10789a.execute(aVar);
+        a aVar = new a(consumer, y10, producerContext, f(), I, y10, producerContext);
+        producerContext.g(new b(aVar));
+        this.f10688a.execute(aVar);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public sa.k c(InputStream inputStream, int i10) {
-        CloseableReference N0;
+        CloseableReference K0;
         CloseableReference closeableReference = null;
         try {
             if (i10 <= 0) {
-                N0 = CloseableReference.N0(this.f10790b.a(inputStream));
+                K0 = CloseableReference.K0(this.f10689b.a(inputStream));
             } else {
-                N0 = CloseableReference.N0(this.f10790b.b(inputStream, i10));
+                K0 = CloseableReference.K0(this.f10689b.b(inputStream, i10));
             }
-            closeableReference = N0;
+            closeableReference = K0;
             sa.k kVar = new sa.k(closeableReference);
             o8.b.b(inputStream);
-            CloseableReference.N(closeableReference);
+            CloseableReference.z(closeableReference);
             return kVar;
         } catch (Throwable th2) {
             o8.b.b(inputStream);
-            CloseableReference.N(closeableReference);
+            CloseableReference.z(closeableReference);
             throw th2;
         }
     }

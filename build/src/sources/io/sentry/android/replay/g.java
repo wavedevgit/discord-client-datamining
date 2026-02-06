@@ -5,9 +5,9 @@ import java.io.Closeable;
 public interface g extends Closeable {
     void b();
 
-    void i();
+    void h();
 
-    void n(s sVar);
+    void o(s sVar);
 
     void reset();
 

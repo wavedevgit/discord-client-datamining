@@ -24,22 +24,22 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public final class a0 implements Closeable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final p f29724d;
+    private final p f28868d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final k7 f29725e;
+    private final k7 f28869e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Map f29726i;
+    private final Map f28870i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final List f29727o;
+    private final List f28871o;
 
     /* renamed from: p  reason: collision with root package name */
-    private Timer f29728p;
+    private Timer f28872p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final io.sentry.util.a f29729q;
+    private final io.sentry.util.a f28873q;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -49,32 +49,62 @@ public final class a0 implements Closeable {
 
         @Override // java.util.TimerTask, java.lang.Runnable
         public void run() {
-            a0.this.C0();
+            a0.this.P();
         }
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public interface b {
-        void E(a0 a0Var);
+        void s(a0 a0Var);
     }
 
     public a0(p pVar, k7 k7Var) {
-        this.f29726i = new ConcurrentHashMap();
-        this.f29727o = new CopyOnWriteArrayList();
-        this.f29728p = null;
-        this.f29729q = new io.sentry.util.a();
-        this.f29724d = pVar;
-        this.f29725e = k7Var;
+        this.f28870i = new ConcurrentHashMap();
+        this.f28871o = new CopyOnWriteArrayList();
+        this.f28872p = null;
+        this.f28873q = new io.sentry.util.a();
+        this.f28868d = pVar;
+        this.f28869e = k7Var;
+    }
+
+    private boolean I(String str) {
+        for (io.sentry.j jVar : y(str)) {
+            if (z(jVar)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private void J(Hint hint, final boolean z10) {
+        io.sentry.util.n.k(hint, io.sentry.hints.p.class, new n.a() { // from class: io.sentry.transport.x
+            @Override // io.sentry.util.n.a
+            public final void accept(Object obj) {
+                ((io.sentry.hints.p) obj).c(false);
+            }
+        });
+        io.sentry.util.n.k(hint, io.sentry.hints.k.class, new n.a() { // from class: io.sentry.transport.y
+            @Override // io.sentry.util.n.a
+            public final void accept(Object obj) {
+                ((io.sentry.hints.k) obj).d(z10);
+            }
+        });
+        io.sentry.util.n.k(hint, io.sentry.hints.f.class, new n.a() { // from class: io.sentry.transport.z
+            @Override // io.sentry.util.n.a
+            public final void accept(Object obj) {
+                a0.k(a0.this, (io.sentry.hints.f) obj);
+            }
+        });
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void C0() {
-        for (b bVar : this.f29727o) {
-            bVar.E(this);
+    public void P() {
+        for (b bVar : this.f28871o) {
+            bVar.s(this);
         }
     }
 
-    private long D0(String str) {
+    private long Y(String str) {
         if (str != null) {
             try {
                 return (long) (Double.parseDouble(str) * 1000.0d);
@@ -85,7 +115,40 @@ public final class a0 implements Closeable {
         return LogThrottleSingleton.RATE_LIMIT_ONE_MINUTE;
     }
 
-    private List F(String str) {
+    public static /* synthetic */ void k(a0 a0Var, io.sentry.hints.f fVar) {
+        a0Var.getClass();
+        fVar.d();
+        a0Var.f28869e.getLogger().c(SentryLevel.DEBUG, "Disk flush envelope fired due to rate limit", new Object[0]);
+    }
+
+    private void p(io.sentry.j jVar, Date date) {
+        Date date2 = (Date) this.f28870i.get(jVar);
+        if (date2 == null || date.after(date2)) {
+            this.f28870i.put(jVar, date);
+            P();
+            a1 a10 = this.f28873q.a();
+            try {
+                if (this.f28872p == null) {
+                    this.f28872p = new Timer(true);
+                }
+                this.f28872p.schedule(new a(), date);
+                if (a10 != null) {
+                    a10.close();
+                }
+            } catch (Throwable th2) {
+                if (a10 != null) {
+                    try {
+                        a10.close();
+                    } catch (Throwable th3) {
+                        th2.addSuppressed(th3);
+                    }
+                }
+                throw th2;
+            }
+        }
+    }
+
+    private List y(String str) {
         str.getClass();
         char c10 = 65535;
         switch (str.hashCode()) {
@@ -176,100 +239,19 @@ public final class a0 implements Closeable {
         }
     }
 
-    private boolean V(String str) {
-        for (io.sentry.j jVar : F(str)) {
-            if (L(jVar)) {
+    public boolean C() {
+        Date date = new Date(this.f28868d.a());
+        for (io.sentry.j jVar : this.f28870i.keySet()) {
+            Date date2 = (Date) this.f28870i.get(jVar);
+            if (date2 != null && !date.after(date2)) {
                 return true;
             }
         }
         return false;
     }
 
-    private void W(Hint hint, final boolean z10) {
-        io.sentry.util.n.k(hint, io.sentry.hints.p.class, new n.a() { // from class: io.sentry.transport.x
-            @Override // io.sentry.util.n.a
-            public final void accept(Object obj) {
-                ((io.sentry.hints.p) obj).c(false);
-            }
-        });
-        io.sentry.util.n.k(hint, io.sentry.hints.k.class, new n.a() { // from class: io.sentry.transport.y
-            @Override // io.sentry.util.n.a
-            public final void accept(Object obj) {
-                ((io.sentry.hints.k) obj).d(z10);
-            }
-        });
-        io.sentry.util.n.k(hint, io.sentry.hints.f.class, new n.a() { // from class: io.sentry.transport.z
-            @Override // io.sentry.util.n.a
-            public final void accept(Object obj) {
-                a0.k(a0.this, (io.sentry.hints.f) obj);
-            }
-        });
-    }
-
-    public static /* synthetic */ void k(a0 a0Var, io.sentry.hints.f fVar) {
-        a0Var.getClass();
-        fVar.d();
-        a0Var.f29725e.getLogger().c(SentryLevel.DEBUG, "Disk flush envelope fired due to rate limit", new Object[0]);
-    }
-
-    private void y(io.sentry.j jVar, Date date) {
-        Date date2 = (Date) this.f29726i.get(jVar);
-        if (date2 == null || date.after(date2)) {
-            this.f29726i.put(jVar, date);
-            C0();
-            a1 a10 = this.f29729q.a();
-            try {
-                if (this.f29728p == null) {
-                    this.f29728p = new Timer(true);
-                }
-                this.f29728p.schedule(new a(), date);
-                if (a10 != null) {
-                    a10.close();
-                }
-            } catch (Throwable th2) {
-                if (a10 != null) {
-                    try {
-                        a10.close();
-                    } catch (Throwable th3) {
-                        th2.addSuppressed(th3);
-                    }
-                }
-                throw th2;
-            }
-        }
-    }
-
-    public l5 E(l5 l5Var, Hint hint) {
-        ArrayList arrayList = null;
-        for (l6 l6Var : l5Var.c()) {
-            if (V(l6Var.K().b().getItemType())) {
-                if (arrayList == null) {
-                    arrayList = new ArrayList();
-                }
-                arrayList.add(l6Var);
-                this.f29725e.getClientReportRecorder().d(io.sentry.clientreport.f.RATELIMIT_BACKOFF, l6Var);
-            }
-        }
-        if (arrayList != null) {
-            this.f29725e.getLogger().c(SentryLevel.WARNING, "%d envelope items will be dropped due rate limiting.", Integer.valueOf(arrayList.size()));
-            ArrayList arrayList2 = new ArrayList();
-            for (l6 l6Var2 : l5Var.c()) {
-                if (!arrayList.contains(l6Var2)) {
-                    arrayList2.add(l6Var2);
-                }
-            }
-            if (arrayList2.isEmpty()) {
-                this.f29725e.getLogger().c(SentryLevel.WARNING, "Envelope discarded due all items rate limited.", new Object[0]);
-                W(hint, false);
-                return null;
-            }
-            return new l5(l5Var.b(), arrayList2);
-        }
-        return l5Var;
-    }
-
     public void E0(b bVar) {
-        this.f29727o.remove(bVar);
+        this.f28871o.remove(bVar);
     }
 
     public void F0(String str, String str2, int i10) {
@@ -278,10 +260,10 @@ public final class a0 implements Closeable {
             for (String str3 : str.split(",", -1)) {
                 String[] split2 = str3.replace(" ", "").split(":", -1);
                 if (split2.length > 0) {
-                    long D0 = D0(split2[0]);
+                    long Y = Y(split2[0]);
                     if (split2.length > 1) {
                         String str4 = split2[1];
-                        Date date = new Date(this.f29724d.a() + D0);
+                        Date date = new Date(this.f28868d.a() + Y);
                         if (str4 != null && !str4.isEmpty()) {
                             for (String str5 : str4.split(";", -1)) {
                                 io.sentry.j jVar = io.sentry.j.Unknown;
@@ -290,63 +272,39 @@ public final class a0 implements Closeable {
                                     if (b10 != null) {
                                         jVar = io.sentry.j.valueOf(b10);
                                     } else {
-                                        this.f29725e.getLogger().c(SentryLevel.ERROR, "Couldn't capitalize: %s", str5);
+                                        this.f28869e.getLogger().c(SentryLevel.ERROR, "Couldn't capitalize: %s", str5);
                                     }
                                 } catch (IllegalArgumentException e10) {
-                                    this.f29725e.getLogger().a(SentryLevel.INFO, e10, "Unknown category: %s", str5);
+                                    this.f28869e.getLogger().a(SentryLevel.INFO, e10, "Unknown category: %s", str5);
                                 }
                                 if (!io.sentry.j.Unknown.equals(jVar)) {
-                                    y(jVar, date);
+                                    p(jVar, date);
                                 }
                             }
                         } else {
-                            y(io.sentry.j.All, date);
+                            p(io.sentry.j.All, date);
                         }
                     }
                 }
             }
         } else if (i10 == 429) {
-            y(io.sentry.j.All, new Date(this.f29724d.a() + D0(str2)));
+            p(io.sentry.j.All, new Date(this.f28868d.a() + Y(str2)));
         }
-    }
-
-    public boolean L(io.sentry.j jVar) {
-        Date date;
-        Date date2 = new Date(this.f29724d.a());
-        Date date3 = (Date) this.f29726i.get(io.sentry.j.All);
-        if (date3 != null && !date2.after(date3)) {
-            return true;
-        }
-        if (io.sentry.j.Unknown.equals(jVar) || (date = (Date) this.f29726i.get(jVar)) == null) {
-            return false;
-        }
-        return !date2.after(date);
-    }
-
-    public boolean N() {
-        Date date = new Date(this.f29724d.a());
-        for (io.sentry.j jVar : this.f29726i.keySet()) {
-            Date date2 = (Date) this.f29726i.get(jVar);
-            if (date2 != null && !date.after(date2)) {
-                return true;
-            }
-        }
-        return false;
     }
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        a1 a10 = this.f29729q.a();
+        a1 a10 = this.f28873q.a();
         try {
-            Timer timer = this.f29728p;
+            Timer timer = this.f28872p;
             if (timer != null) {
                 timer.cancel();
-                this.f29728p = null;
+                this.f28872p = null;
             }
             if (a10 != null) {
                 a10.close();
             }
-            this.f29727o.clear();
+            this.f28871o.clear();
         } catch (Throwable th2) {
             if (a10 != null) {
                 try {
@@ -359,8 +317,50 @@ public final class a0 implements Closeable {
         }
     }
 
-    public void o(b bVar) {
-        this.f29727o.add(bVar);
+    public void n(b bVar) {
+        this.f28871o.add(bVar);
+    }
+
+    public l5 s(l5 l5Var, Hint hint) {
+        ArrayList arrayList = null;
+        for (l6 l6Var : l5Var.c()) {
+            if (I(l6Var.K().b().getItemType())) {
+                if (arrayList == null) {
+                    arrayList = new ArrayList();
+                }
+                arrayList.add(l6Var);
+                this.f28869e.getClientReportRecorder().d(io.sentry.clientreport.f.RATELIMIT_BACKOFF, l6Var);
+            }
+        }
+        if (arrayList != null) {
+            this.f28869e.getLogger().c(SentryLevel.WARNING, "%d envelope items will be dropped due rate limiting.", Integer.valueOf(arrayList.size()));
+            ArrayList arrayList2 = new ArrayList();
+            for (l6 l6Var2 : l5Var.c()) {
+                if (!arrayList.contains(l6Var2)) {
+                    arrayList2.add(l6Var2);
+                }
+            }
+            if (arrayList2.isEmpty()) {
+                this.f28869e.getLogger().c(SentryLevel.WARNING, "Envelope discarded due all items rate limited.", new Object[0]);
+                J(hint, false);
+                return null;
+            }
+            return new l5(l5Var.b(), arrayList2);
+        }
+        return l5Var;
+    }
+
+    public boolean z(io.sentry.j jVar) {
+        Date date;
+        Date date2 = new Date(this.f28868d.a());
+        Date date3 = (Date) this.f28870i.get(io.sentry.j.All);
+        if (date3 != null && !date2.after(date3)) {
+            return true;
+        }
+        if (io.sentry.j.Unknown.equals(jVar) || (date = (Date) this.f28870i.get(jVar)) == null) {
+            return false;
+        }
+        return !date2.after(date);
     }
 
     public a0(k7 k7Var) {

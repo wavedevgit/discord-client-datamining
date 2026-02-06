@@ -21,7 +21,7 @@ import com.google.android.exoplayer2.trackselection.TrackSelectionParameters;
 import com.google.android.exoplayer2.video.VideoSize;
 import java.io.IOException;
 import java.util.List;
-import li.j;
+import mi.j;
 import ne.q;
 import qd.r;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -31,46 +31,46 @@ public interface AnalyticsListener {
     public static final class EventTime {
 
         /* renamed from: a  reason: collision with root package name */
-        public final long f12025a;
+        public final long f11924a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final Timeline f12026b;
+        public final Timeline f11925b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final int f12027c;
+        public final int f11926c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final r.b f12028d;
+        public final r.b f11927d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final long f12029e;
+        public final long f11928e;
 
         /* renamed from: f  reason: collision with root package name */
-        public final Timeline f12030f;
+        public final Timeline f11929f;
 
         /* renamed from: g  reason: collision with root package name */
-        public final int f12031g;
+        public final int f11930g;
 
         /* renamed from: h  reason: collision with root package name */
-        public final r.b f12032h;
+        public final r.b f11931h;
 
         /* renamed from: i  reason: collision with root package name */
-        public final long f12033i;
+        public final long f11932i;
 
         /* renamed from: j  reason: collision with root package name */
-        public final long f12034j;
+        public final long f11933j;
 
         public EventTime(long j10, Timeline timeline, int i10, r.b bVar, long j11, Timeline timeline2, int i11, r.b bVar2, long j12, long j13) {
-            this.f12025a = j10;
-            this.f12026b = timeline;
-            this.f12027c = i10;
-            this.f12028d = bVar;
-            this.f12029e = j11;
-            this.f12030f = timeline2;
-            this.f12031g = i11;
-            this.f12032h = bVar2;
-            this.f12033i = j12;
-            this.f12034j = j13;
+            this.f11924a = j10;
+            this.f11925b = timeline;
+            this.f11926c = i10;
+            this.f11927d = bVar;
+            this.f11928e = j11;
+            this.f11929f = timeline2;
+            this.f11930g = i11;
+            this.f11931h = bVar2;
+            this.f11932i = j12;
+            this.f11933j = j13;
         }
 
         public boolean equals(Object obj) {
@@ -79,7 +79,7 @@ public interface AnalyticsListener {
             }
             if (obj != null && EventTime.class == obj.getClass()) {
                 EventTime eventTime = (EventTime) obj;
-                if (this.f12025a == eventTime.f12025a && this.f12027c == eventTime.f12027c && this.f12029e == eventTime.f12029e && this.f12031g == eventTime.f12031g && this.f12033i == eventTime.f12033i && this.f12034j == eventTime.f12034j && j.a(this.f12026b, eventTime.f12026b) && j.a(this.f12028d, eventTime.f12028d) && j.a(this.f12030f, eventTime.f12030f) && j.a(this.f12032h, eventTime.f12032h)) {
+                if (this.f11924a == eventTime.f11924a && this.f11926c == eventTime.f11926c && this.f11928e == eventTime.f11928e && this.f11930g == eventTime.f11930g && this.f11932i == eventTime.f11932i && this.f11933j == eventTime.f11933j && j.a(this.f11925b, eventTime.f11925b) && j.a(this.f11927d, eventTime.f11927d) && j.a(this.f11929f, eventTime.f11929f) && j.a(this.f11931h, eventTime.f11931h)) {
                     return true;
                 }
             }
@@ -87,7 +87,7 @@ public interface AnalyticsListener {
         }
 
         public int hashCode() {
-            return j.b(Long.valueOf(this.f12025a), this.f12026b, Integer.valueOf(this.f12027c), this.f12028d, Long.valueOf(this.f12029e), this.f12030f, Integer.valueOf(this.f12031g), this.f12032h, Long.valueOf(this.f12033i), Long.valueOf(this.f12034j));
+            return j.b(Long.valueOf(this.f11924a), this.f11925b, Integer.valueOf(this.f11926c), this.f11927d, Long.valueOf(this.f11928e), this.f11929f, Integer.valueOf(this.f11930g), this.f11931h, Long.valueOf(this.f11932i), Long.valueOf(this.f11933j));
         }
     }
 
@@ -95,35 +95,35 @@ public interface AnalyticsListener {
     public static final class Events {
 
         /* renamed from: a  reason: collision with root package name */
-        private final q f12035a;
+        private final q f11934a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final SparseArray f12036b;
+        private final SparseArray f11935b;
 
         public Events(q qVar, SparseArray sparseArray) {
-            this.f12035a = qVar;
+            this.f11934a = qVar;
             SparseArray sparseArray2 = new SparseArray(qVar.d());
             for (int i10 = 0; i10 < qVar.d(); i10++) {
                 int c10 = qVar.c(i10);
                 sparseArray2.append(c10, (EventTime) ne.a.e((EventTime) sparseArray.get(c10)));
             }
-            this.f12036b = sparseArray2;
+            this.f11935b = sparseArray2;
         }
 
         public boolean a(int i10) {
-            return this.f12035a.a(i10);
+            return this.f11934a.a(i10);
         }
 
         public int b(int i10) {
-            return this.f12035a.c(i10);
+            return this.f11934a.c(i10);
         }
 
         public EventTime c(int i10) {
-            return (EventTime) ne.a.e((EventTime) this.f12036b.get(i10));
+            return (EventTime) ne.a.e((EventTime) this.f11935b.get(i10));
         }
 
         public int d() {
-            return this.f12035a.d();
+            return this.f11934a.d();
         }
     }
 

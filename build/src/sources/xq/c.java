@@ -1,44 +1,44 @@
 package xq;
-
-import android.opengl.EGL14;
-import android.opengl.EGLConfig;
-import android.opengl.EGLContext;
-import android.opengl.EGLDisplay;
-import android.opengl.EGLSurface;
-import android.opengl.GLES20;
-import android.util.Log;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class c {
-    private static int a() {
-        EGLDisplay eglGetDisplay = EGL14.eglGetDisplay(0);
-        int[] iArr = new int[2];
-        EGL14.eglInitialize(eglGetDisplay, iArr, 0, iArr, 1);
-        EGLConfig[] eGLConfigArr = new EGLConfig[1];
-        int[] iArr2 = new int[1];
-        EGL14.eglChooseConfig(eglGetDisplay, new int[]{12351, 12430, 12329, 0, 12352, 4, 12339, 1, 12344}, 0, eGLConfigArr, 0, 1, iArr2, 0);
-        if (iArr2[0] == 0) {
-            return 0;
-        }
-        EGLConfig eGLConfig = eGLConfigArr[0];
-        EGLSurface eglCreatePbufferSurface = EGL14.eglCreatePbufferSurface(eglGetDisplay, eGLConfig, new int[]{12375, 64, 12374, 64, 12344}, 0);
-        EGLContext eglCreateContext = EGL14.eglCreateContext(eglGetDisplay, eGLConfig, EGL14.EGL_NO_CONTEXT, new int[]{12440, 2, 12344}, 0);
-        EGL14.eglMakeCurrent(eglGetDisplay, eglCreatePbufferSurface, eglCreatePbufferSurface, eglCreateContext);
-        int[] iArr3 = new int[1];
-        GLES20.glGetIntegerv(3379, iArr3, 0);
-        EGLSurface eGLSurface = EGL14.EGL_NO_SURFACE;
-        EGL14.eglMakeCurrent(eglGetDisplay, eGLSurface, eGLSurface, EGL14.EGL_NO_CONTEXT);
-        EGL14.eglDestroySurface(eglGetDisplay, eglCreatePbufferSurface);
-        EGL14.eglDestroyContext(eglGetDisplay, eglCreateContext);
-        EGL14.eglTerminate(eglGetDisplay);
-        return iArr3[0];
+public class c {
+
+    /* renamed from: a  reason: collision with root package name */
+    private int f54749a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private int f54750b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private int f54751c;
+
+    public c(int i10, int i11, int i12) {
+        this.f54749a = i10;
+        this.f54750b = i11;
+        this.f54751c = i12;
     }
 
-    public static int b() {
-        try {
-            return a();
-        } catch (Exception e10) {
-            Log.d("EglUtils", "getMaxTextureSize: ", e10);
-            return 0;
+    public int a() {
+        return this.f54750b;
+    }
+
+    public int b() {
+        return this.f54751c;
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
         }
+        if (obj != null && getClass() == obj.getClass()) {
+            c cVar = (c) obj;
+            if (this.f54749a == cVar.f54749a && this.f54750b == cVar.f54750b && this.f54751c == cVar.f54751c) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public int hashCode() {
+        return (((this.f54749a * 31) + this.f54750b) * 31) + this.f54751c;
     }
 }

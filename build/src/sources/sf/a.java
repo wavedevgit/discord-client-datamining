@@ -8,8 +8,8 @@ public interface a extends IInterface {
 
     /* renamed from: sf.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static abstract class AbstractBinderC0634a extends n implements a {
-        public AbstractBinderC0634a() {
+    public static abstract class AbstractBinderC0648a extends n implements a {
+        public AbstractBinderC0648a() {
             super("com.google.android.gms.dynamic.IObjectWrapper");
         }
 

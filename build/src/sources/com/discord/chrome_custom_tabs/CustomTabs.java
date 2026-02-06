@@ -72,7 +72,7 @@ public final class CustomTabs {
         Intrinsics.checkNotNullParameter(uri, "uri");
         Intrinsics.checkNotNullParameter(onFailure, "onFailure");
         if (CustomTabsPackages.INSTANCE.getCustomTabsDefaultPackage(context) != null) {
-            a a10 = new a.C0023a().b(i10).d(i10).c(i10).a();
+            a a10 = new a.C0021a().b(i10).d(i10).c(i10).a();
             Intrinsics.checkNotNullExpressionValue(a10, "build(...)");
             b.d g10 = new b.d().c(a10).g(z10);
             if (num != null && num2 != null) {
@@ -84,7 +84,7 @@ public final class CustomTabs {
             b a11 = g10.a();
             Intrinsics.checkNotNullExpressionValue(a11, "build(...)");
             try {
-                a11.f2006a.setData(uri);
+                a11.f2335a.setData(uri);
                 a11.a(context, uri);
                 return;
             } catch (ActivityNotFoundException e10) {

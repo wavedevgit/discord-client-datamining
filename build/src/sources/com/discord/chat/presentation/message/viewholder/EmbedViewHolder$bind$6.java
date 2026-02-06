@@ -19,7 +19,7 @@ public /* synthetic */ class EmbedViewHolder$bind$6 extends FunctionReferenceImp
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Object invoke(Object obj) {
         invoke((EmojiContentNode) obj);
-        return Unit.f31988a;
+        return Unit.f32008a;
     }
 
     public final void invoke(EmojiContentNode p02) {

@@ -5,13 +5,13 @@ import gf.q;
 import java.lang.reflect.Field;
 import sf.a;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class b extends a.AbstractBinderC0634a {
+public final class b extends a.AbstractBinderC0648a {
 
     /* renamed from: c  reason: collision with root package name */
-    private final Object f49640c;
+    private final Object f49961c;
 
     private b(Object obj) {
-        this.f49640c = obj;
+        this.f49961c = obj;
     }
 
     public static a W0(Object obj) {
@@ -20,7 +20,7 @@ public final class b extends a.AbstractBinderC0634a {
 
     public static Object h(a aVar) {
         if (aVar instanceof b) {
-            return ((b) aVar).f49640c;
+            return ((b) aVar).f49961c;
         }
         IBinder asBinder = aVar.asBinder();
         Field[] declaredFields = asBinder.getClass().getDeclaredFields();

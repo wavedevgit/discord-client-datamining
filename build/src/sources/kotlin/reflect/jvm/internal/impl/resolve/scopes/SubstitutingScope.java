@@ -23,49 +23,49 @@ import kotlin.reflect.jvm.internal.impl.resolve.scopes.ResolutionScope;
 import kotlin.reflect.jvm.internal.impl.types.TypeSubstitution;
 import kotlin.reflect.jvm.internal.impl.types.TypeSubstitutor;
 import kotlin.reflect.jvm.internal.impl.utils.CollectionsKt;
-import or.l;
 import org.jetbrains.annotations.NotNull;
+import qr.l;
 @SourceDebugExtension({"SMAP\nSubstitutingScope.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SubstitutingScope.kt\norg/jetbrains/kotlin/resolve/scopes/SubstitutingScope\n+ 2 Maps.kt\nkotlin/collections/MapsKt__MapsKt\n+ 3 coreLib.kt\norg/jetbrains/kotlin/utils/CoreLibKt\n+ 4 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,111:1\n384#2,3:112\n387#2,4:116\n19#3:115\n1#4:120\n*S KotlinDebug\n*F\n+ 1 SubstitutingScope.kt\norg/jetbrains/kotlin/resolve/scopes/SubstitutingScope\n*L\n52#1:112,3\n52#1:116,4\n54#1:115\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class SubstitutingScope implements MemberScope {
 
     /* renamed from: a  reason: collision with root package name */
-    private final MemberScope f34209a;
+    private final MemberScope f34229a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Lazy f34210b;
+    private final Lazy f34230b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final TypeSubstitutor f34211c;
+    private final TypeSubstitutor f34231c;
 
     /* renamed from: d  reason: collision with root package name */
-    private Map f34212d;
+    private Map f34232d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Lazy f34213e;
+    private final Lazy f34233e;
 
     public SubstitutingScope(@NotNull MemberScope workerScope, @NotNull TypeSubstitutor givenSubstitutor) {
         Intrinsics.checkNotNullParameter(workerScope, "workerScope");
         Intrinsics.checkNotNullParameter(givenSubstitutor, "givenSubstitutor");
-        this.f34209a = workerScope;
-        this.f34210b = l.a(new f(givenSubstitutor));
+        this.f34229a = workerScope;
+        this.f34230b = l.a(new f(givenSubstitutor));
         TypeSubstitution substitution = givenSubstitutor.getSubstitution();
         Intrinsics.checkNotNullExpressionValue(substitution, "getSubstitution(...)");
-        this.f34211c = CapturedTypeConstructorKt.wrapWithCapturingSubstitution$default(substitution, false, 1, null).buildSubstitutor();
-        this.f34213e = l.a(new g(this));
+        this.f34231c = CapturedTypeConstructorKt.wrapWithCapturingSubstitution$default(substitution, false, 1, null).buildSubstitutor();
+        this.f34233e = l.a(new g(this));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Collection a(SubstitutingScope substitutingScope) {
-        return substitutingScope.e(ResolutionScope.DefaultImpls.getContributedDescriptors$default(substitutingScope.f34209a, null, null, 3, null));
+        return substitutingScope.e(ResolutionScope.DefaultImpls.getContributedDescriptors$default(substitutingScope.f34229a, null, null, 3, null));
     }
 
     private final Collection d() {
-        return (Collection) this.f34213e.getValue();
+        return (Collection) this.f34233e.getValue();
     }
 
     private final Collection e(Collection collection) {
-        if (this.f34211c.isEmpty()) {
+        if (this.f34231c.isEmpty()) {
             return collection;
         }
         if (collection.isEmpty()) {
@@ -80,18 +80,18 @@ public final class SubstitutingScope implements MemberScope {
     }
 
     private final DeclarationDescriptor f(DeclarationDescriptor declarationDescriptor) {
-        if (this.f34211c.isEmpty()) {
+        if (this.f34231c.isEmpty()) {
             return declarationDescriptor;
         }
-        if (this.f34212d == null) {
-            this.f34212d = new HashMap();
+        if (this.f34232d == null) {
+            this.f34232d = new HashMap();
         }
-        Map map = this.f34212d;
+        Map map = this.f34232d;
         Intrinsics.checkNotNull(map);
         Object obj = map.get(declarationDescriptor);
         if (obj == null) {
             if (declarationDescriptor instanceof Substitutable) {
-                obj = ((Substitutable) declarationDescriptor).substitute(this.f34211c);
+                obj = ((Substitutable) declarationDescriptor).substitute(this.f34231c);
                 if (obj != null) {
                     map.put(declarationDescriptor, obj);
                 } else {
@@ -113,7 +113,7 @@ public final class SubstitutingScope implements MemberScope {
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScope
     public Set<Name> getClassifierNames() {
-        return this.f34209a.getClassifierNames();
+        return this.f34229a.getClassifierNames();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.ResolutionScope
@@ -121,7 +121,7 @@ public final class SubstitutingScope implements MemberScope {
     public ClassifierDescriptor mo1200getContributedClassifier(@NotNull Name name, @NotNull LookupLocation location) {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(location, "location");
-        ClassifierDescriptor mo1200getContributedClassifier = this.f34209a.mo1200getContributedClassifier(name, location);
+        ClassifierDescriptor mo1200getContributedClassifier = this.f34229a.mo1200getContributedClassifier(name, location);
         if (mo1200getContributedClassifier != null) {
             return (ClassifierDescriptor) f(mo1200getContributedClassifier);
         }
@@ -141,7 +141,7 @@ public final class SubstitutingScope implements MemberScope {
     public Collection<? extends SimpleFunctionDescriptor> getContributedFunctions(@NotNull Name name, @NotNull LookupLocation location) {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(location, "location");
-        return e(this.f34209a.getContributedFunctions(name, location));
+        return e(this.f34229a.getContributedFunctions(name, location));
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScope
@@ -149,19 +149,19 @@ public final class SubstitutingScope implements MemberScope {
     public Collection<? extends PropertyDescriptor> getContributedVariables(@NotNull Name name, @NotNull LookupLocation location) {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(location, "location");
-        return e(this.f34209a.getContributedVariables(name, location));
+        return e(this.f34229a.getContributedVariables(name, location));
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScope
     @NotNull
     public Set<Name> getFunctionNames() {
-        return this.f34209a.getFunctionNames();
+        return this.f34229a.getFunctionNames();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScope
     @NotNull
     public Set<Name> getVariableNames() {
-        return this.f34209a.getVariableNames();
+        return this.f34229a.getVariableNames();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.ResolutionScope

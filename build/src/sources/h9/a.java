@@ -5,11 +5,11 @@ import android.os.Looper;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private static a f25685a;
+    private static a f25813a;
 
     /* renamed from: h9.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public interface InterfaceC0347a {
+    public interface InterfaceC0351a {
         void release();
     }
 
@@ -17,10 +17,10 @@ public abstract class a {
         a aVar;
         synchronized (a.class) {
             try {
-                if (f25685a == null) {
-                    f25685a = new b();
+                if (f25813a == null) {
+                    f25813a = new b();
                 }
-                aVar = f25685a;
+                aVar = f25813a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -36,7 +36,7 @@ public abstract class a {
         return false;
     }
 
-    public abstract void a(InterfaceC0347a interfaceC0347a);
+    public abstract void a(InterfaceC0351a interfaceC0351a);
 
-    public abstract void d(InterfaceC0347a interfaceC0347a);
+    public abstract void d(InterfaceC0351a interfaceC0351a);
 }

@@ -13,39 +13,39 @@ import org.jetbrains.annotations.NotNull;
 public final class FallbackModeService_StatusRequestJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f18842a;
+    private final m.b f18822a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f18843b;
+    private final com.squareup.moshi.h f18823b;
 
     public FallbackModeService_StatusRequestJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("inquiry-template-id");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f18842a = a10;
+        this.f18822a = a10;
         com.squareup.moshi.h f10 = moshi.f(String.class, x0.d(), "inquiryTemplateId");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f18843b = f10;
+        this.f18823b = f10;
     }
 
     @Override // com.squareup.moshi.h
     /* renamed from: a */
     public FallbackModeService.StatusRequest fromJson(m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.s();
+        reader.u();
         String str = null;
         while (reader.hasNext()) {
-            int W = reader.W(this.f18842a);
-            if (W != -1) {
-                if (W == 0) {
-                    str = (String) this.f18843b.fromJson(reader);
+            int J = reader.J(this.f18822a);
+            if (J != -1) {
+                if (J == 0) {
+                    str = (String) this.f18823b.fromJson(reader);
                 }
             } else {
                 reader.E0();
-                reader.P();
+                reader.S();
             }
         }
-        reader.z();
+        reader.D();
         return new FallbackModeService.StatusRequest(str);
     }
 
@@ -55,9 +55,9 @@ public final class FallbackModeService_StatusRequestJsonAdapter extends com.squa
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (statusRequest != null) {
             writer.k();
-            writer.W("inquiry-template-id");
-            this.f18843b.toJson(writer, statusRequest.a());
-            writer.E();
+            writer.J("inquiry-template-id");
+            this.f18823b.toJson(writer, statusRequest.a());
+            writer.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

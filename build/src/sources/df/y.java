@@ -10,38 +10,38 @@ import java.util.concurrent.ScheduledExecutorService;
 public final class y {
 
     /* renamed from: e */
-    private static y f20793e;
+    private static y f20748e;
 
     /* renamed from: a */
-    private final Context f20794a;
+    private final Context f20749a;
 
     /* renamed from: b */
-    private final ScheduledExecutorService f20795b;
+    private final ScheduledExecutorService f20750b;
 
     /* renamed from: c */
-    private s f20796c = new s(this, null);
+    private s f20751c = new s(this, null);
 
     /* renamed from: d */
-    private int f20797d = 1;
+    private int f20752d = 1;
 
     y(Context context, ScheduledExecutorService scheduledExecutorService) {
-        this.f20795b = scheduledExecutorService;
-        this.f20794a = context.getApplicationContext();
+        this.f20750b = scheduledExecutorService;
+        this.f20749a = context.getApplicationContext();
     }
 
     public static /* bridge */ /* synthetic */ Context a(y yVar) {
-        return yVar.f20794a;
+        return yVar.f20749a;
     }
 
     public static synchronized y b(Context context) {
         y yVar;
         synchronized (y.class) {
             try {
-                if (f20793e == null) {
+                if (f20748e == null) {
                     gg.e.a();
-                    f20793e = new y(context, Executors.unconfigurableScheduledExecutorService(Executors.newScheduledThreadPool(1, new of.a("MessengerIpcClient"))));
+                    f20748e = new y(context, Executors.unconfigurableScheduledExecutorService(Executors.newScheduledThreadPool(1, new of.a("MessengerIpcClient"))));
                 }
-                yVar = f20793e;
+                yVar = f20748e;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -50,13 +50,13 @@ public final class y {
     }
 
     public static /* bridge */ /* synthetic */ ScheduledExecutorService e(y yVar) {
-        return yVar.f20795b;
+        return yVar.f20750b;
     }
 
     private final synchronized int f() {
         int i10;
-        i10 = this.f20797d;
-        this.f20797d = i10 + 1;
+        i10 = this.f20752d;
+        this.f20752d = i10 + 1;
         return i10;
     }
 
@@ -65,15 +65,15 @@ public final class y {
             if (Log.isLoggable("MessengerIpcClient", 3)) {
                 Log.d("MessengerIpcClient", "Queueing ".concat(vVar.toString()));
             }
-            if (!this.f20796c.g(vVar)) {
+            if (!this.f20751c.g(vVar)) {
                 s sVar = new s(this, null);
-                this.f20796c = sVar;
+                this.f20751c = sVar;
                 sVar.g(vVar);
             }
         } catch (Throwable th2) {
             throw th2;
         }
-        return vVar.f20790b.a();
+        return vVar.f20745b.a();
     }
 
     public final Task c(int i10, Bundle bundle) {

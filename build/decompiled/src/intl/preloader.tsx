@@ -17,7 +17,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         StartGenerator();
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun19303_ip = 1013;
+                            _fun19303_ip = 1044;
                             continue _fun19303
                         }
                     case 10:
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var8 = var4[var1];
                         var1 = var4.paths;
                         var8 = var9.bind(var7)(var8, var1);
-                        var1 = new Array(31);
+                        var1 = new Array(32);
                         var1[0] = var8;
                         var8 = var4[var5];
                         var10 = var6.bind(var7)(var8);
@@ -239,16 +239,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var8 = var4.paths;
                         var8 = var10.bind(var7)(var9, var8);
                         var1[29] = var8;
+                        var8 = var4[var5];
+                        var10 = var6.bind(var7)(var8);
+                        var8 = 32;
+                        var9 = var4[var8];
+                        var8 = var4.paths;
+                        var8 = var10.bind(var7)(var9, var8);
+                        var1[30] = var8;
                         var5 = var4[var5];
                         var6 = var6.bind(var7)(var5);
-                        var5 = 32;
+                        var5 = 33;
                         var5 = var4[var5];
                         var4 = var4.paths;
                         var4 = var6.bind(var7)(var5, var4);
-                        var1[30] = var4;
+                        var1[31] = var4;
                         var1 = var2.bind(var3)(var1);
                         return var1;
-                    case 1013:
+                    case 1044:
                         return var0;
                 }
             };
@@ -278,7 +285,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = undefined;
     var3 = var3.bind(var0)(var6);
     var _closure1_slot2 = var3;
-    var3 = 33;
+    var3 = 34;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
     var4 = var5.fileFinishedImporting;
@@ -296,4 +303,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.preloadAllIntlMessageFiles = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 1234, 1307, 1698, 1730, 1762, 1794, 1826, 1858, 1890, 1922, 1954, 1986, 1988, 2020, 2052, 2084, 2116, 2148, 2180, 2212, 2244, 2276, 2308, 2340, 2372, 2404, 2436, 2468, 2500, 2532, 2534, 2566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 1234, 1307, 1698, 1730, 1762, 1794, 1826, 1858, 1890, 1922, 1954, 1986, 1988, 2020, 2052, 2084, 2116, 2148, 2180, 2212, 2244, 2276, 2308, 2340, 2372, 2404, 2436, 2468, 2500, 2532, 2534, 2566, 2568, 2]);

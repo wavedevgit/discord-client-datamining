@@ -7,20 +7,20 @@ abstract class i1 {
     public static class a implements b {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ g f3786a;
+        final /* synthetic */ g f4115a;
 
         a(g gVar) {
-            this.f3786a = gVar;
+            this.f4115a = gVar;
         }
 
         @Override // androidx.datastore.preferences.protobuf.i1.b
         public byte a(int i10) {
-            return this.f3786a.c(i10);
+            return this.f4115a.c(i10);
         }
 
         @Override // androidx.datastore.preferences.protobuf.i1.b
         public int size() {
-            return this.f3786a.size();
+            return this.f4115a.size();
         }
     }
 

@@ -8,13 +8,13 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class h {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f23593c = new a(null);
+    public static final a f23846c = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f23594a;
+    private final String f23847a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Bundle f23595b;
+    private final Bundle f23848b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -38,22 +38,22 @@ public abstract class h {
                 switch (type.hashCode()) {
                     case -1678407252:
                         if (type.equals("androidx.credentials.TYPE_DIGITAL_CREDENTIAL")) {
-                            return b0.f23568e.a(data);
+                            return b0.f23821e.a(data);
                         }
                         break;
                     case -1072734346:
                         if (type.equals("androidx.credentials.TYPE_RESTORE_CREDENTIAL")) {
-                            return j0.f23600e.a(data);
+                            return j0.f23853e.a(data);
                         }
                         break;
                     case -543568185:
                         if (type.equals("android.credentials.TYPE_PASSWORD_CREDENTIAL")) {
-                            return f0.f23588f.a(data);
+                            return f0.f23841f.a(data);
                         }
                         break;
                     case -95037569:
                         if (type.equals("androidx.credentials.TYPE_PUBLIC_KEY_CREDENTIAL")) {
-                            return h0.f23596e.a(data);
+                            return h0.f23849e.a(data);
                         }
                         break;
                 }
@@ -70,7 +70,7 @@ public abstract class h {
     public h(String type, Bundle data) {
         Intrinsics.checkNotNullParameter(type, "type");
         Intrinsics.checkNotNullParameter(data, "data");
-        this.f23594a = type;
-        this.f23595b = data;
+        this.f23847a = type;
+        this.f23848b = data;
     }
 }

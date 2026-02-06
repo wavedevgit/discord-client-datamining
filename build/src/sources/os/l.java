@@ -1,14 +1,34 @@
 package os;
 
-import java.util.concurrent.atomic.AtomicReferenceArray;
+import kotlin.coroutines.Continuation;
+import kotlinx.coroutines.CancellableContinuation;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract /* synthetic */ class l {
-    public static /* synthetic */ boolean a(AtomicReferenceArray atomicReferenceArray, int i10, Object obj, Object obj2) {
-        while (!atomicReferenceArray.compareAndSet(i10, obj, obj2)) {
-            if (atomicReferenceArray.get(i10) != obj) {
-                return false;
+public abstract class l {
+    public static final void a(CancellableContinuation cancellableContinuation, n0 n0Var) {
+        c(cancellableContinuation, new o0(n0Var));
+    }
+
+    public static final kotlinx.coroutines.e b(Continuation continuation) {
+        if (!(continuation instanceof ts.i)) {
+            return new kotlinx.coroutines.e(continuation, 1);
+        }
+        kotlinx.coroutines.e n10 = ((ts.i) continuation).n();
+        if (n10 != null) {
+            if (!n10.Q()) {
+                n10 = null;
+            }
+            if (n10 != null) {
+                return n10;
             }
         }
-        return true;
+        return new kotlinx.coroutines.e(continuation, 2);
+    }
+
+    public static final void c(CancellableContinuation cancellableContinuation, kotlinx.coroutines.d dVar) {
+        if (cancellableContinuation instanceof kotlinx.coroutines.e) {
+            ((kotlinx.coroutines.e) cancellableContinuation).K(dVar);
+            return;
+        }
+        throw new UnsupportedOperationException("third-party implementation of CancellableContinuation is not supported");
     }
 }

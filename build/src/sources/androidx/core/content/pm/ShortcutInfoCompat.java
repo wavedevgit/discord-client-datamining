@@ -23,82 +23,82 @@ public class ShortcutInfoCompat {
     int A;
 
     /* renamed from: a  reason: collision with root package name */
-    Context f3241a;
+    Context f3570a;
 
     /* renamed from: b  reason: collision with root package name */
-    String f3242b;
+    String f3571b;
 
     /* renamed from: c  reason: collision with root package name */
-    String f3243c;
+    String f3572c;
 
     /* renamed from: d  reason: collision with root package name */
-    Intent[] f3244d;
+    Intent[] f3573d;
 
     /* renamed from: e  reason: collision with root package name */
-    ComponentName f3245e;
+    ComponentName f3574e;
 
     /* renamed from: f  reason: collision with root package name */
-    CharSequence f3246f;
+    CharSequence f3575f;
 
     /* renamed from: g  reason: collision with root package name */
-    CharSequence f3247g;
+    CharSequence f3576g;
 
     /* renamed from: h  reason: collision with root package name */
-    CharSequence f3248h;
+    CharSequence f3577h;
 
     /* renamed from: i  reason: collision with root package name */
-    IconCompat f3249i;
+    IconCompat f3578i;
 
     /* renamed from: j  reason: collision with root package name */
-    boolean f3250j;
+    boolean f3579j;
 
     /* renamed from: k  reason: collision with root package name */
-    Person[] f3251k;
+    Person[] f3580k;
 
     /* renamed from: l  reason: collision with root package name */
-    Set f3252l;
+    Set f3581l;
 
     /* renamed from: m  reason: collision with root package name */
-    c f3253m;
+    c f3582m;
 
     /* renamed from: n  reason: collision with root package name */
-    boolean f3254n;
+    boolean f3583n;
 
     /* renamed from: o  reason: collision with root package name */
-    int f3255o;
+    int f3584o;
 
     /* renamed from: p  reason: collision with root package name */
-    PersistableBundle f3256p;
+    PersistableBundle f3585p;
 
     /* renamed from: q  reason: collision with root package name */
-    long f3257q;
+    long f3586q;
 
     /* renamed from: r  reason: collision with root package name */
-    UserHandle f3258r;
+    UserHandle f3587r;
 
     /* renamed from: s  reason: collision with root package name */
-    boolean f3259s;
+    boolean f3588s;
 
     /* renamed from: t  reason: collision with root package name */
-    boolean f3260t;
+    boolean f3589t;
 
     /* renamed from: u  reason: collision with root package name */
-    boolean f3261u;
+    boolean f3590u;
 
     /* renamed from: v  reason: collision with root package name */
-    boolean f3262v;
+    boolean f3591v;
 
     /* renamed from: w  reason: collision with root package name */
-    boolean f3263w;
+    boolean f3592w;
 
     /* renamed from: x  reason: collision with root package name */
-    boolean f3264x = true;
+    boolean f3593x = true;
 
     /* renamed from: y  reason: collision with root package name */
-    boolean f3265y;
+    boolean f3594y;
 
     /* renamed from: z  reason: collision with root package name */
-    int f3266z;
+    int f3595z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     private static class a {
@@ -111,29 +111,29 @@ public class ShortcutInfoCompat {
     }
 
     private PersistableBundle a() {
-        if (this.f3256p == null) {
-            this.f3256p = new PersistableBundle();
+        if (this.f3585p == null) {
+            this.f3585p = new PersistableBundle();
         }
-        Person[] personArr = this.f3251k;
+        Person[] personArr = this.f3580k;
         if (personArr != null && personArr.length > 0) {
-            this.f3256p.putInt("extraPersonCount", personArr.length);
+            this.f3585p.putInt("extraPersonCount", personArr.length);
             int i10 = 0;
-            while (i10 < this.f3251k.length) {
-                PersistableBundle persistableBundle = this.f3256p;
+            while (i10 < this.f3580k.length) {
+                PersistableBundle persistableBundle = this.f3585p;
                 StringBuilder sb2 = new StringBuilder();
                 sb2.append("extraPerson_");
                 int i11 = i10 + 1;
                 sb2.append(i11);
-                persistableBundle.putPersistableBundle(sb2.toString(), this.f3251k[i10].m());
+                persistableBundle.putPersistableBundle(sb2.toString(), this.f3580k[i10].m());
                 i10 = i11;
             }
         }
-        c cVar = this.f3253m;
+        c cVar = this.f3582m;
         if (cVar != null) {
-            this.f3256p.putString("extraLocusId", cVar.a());
+            this.f3585p.putString("extraLocusId", cVar.a());
         }
-        this.f3256p.putBoolean("extraLongLived", this.f3254n);
-        return this.f3256p;
+        this.f3585p.putBoolean("extraLongLived", this.f3583n);
+        return this.f3585p;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -182,45 +182,45 @@ public class ShortcutInfoCompat {
     }
 
     public ComponentName c() {
-        return this.f3245e;
+        return this.f3574e;
     }
 
     public Set d() {
-        return this.f3252l;
+        return this.f3581l;
     }
 
     public CharSequence e() {
-        return this.f3248h;
+        return this.f3577h;
     }
 
     public IconCompat f() {
-        return this.f3249i;
+        return this.f3578i;
     }
 
     public String g() {
-        return this.f3242b;
+        return this.f3571b;
     }
 
     public Intent h() {
-        Intent[] intentArr = this.f3244d;
+        Intent[] intentArr = this.f3573d;
         return intentArr[intentArr.length - 1];
     }
 
     public Intent[] i() {
-        Intent[] intentArr = this.f3244d;
+        Intent[] intentArr = this.f3573d;
         return (Intent[]) Arrays.copyOf(intentArr, intentArr.length);
     }
 
     public CharSequence l() {
-        return this.f3247g;
+        return this.f3576g;
     }
 
     public int n() {
-        return this.f3255o;
+        return this.f3584o;
     }
 
     public CharSequence o() {
-        return this.f3246f;
+        return this.f3575f;
     }
 
     public boolean p(int i10) {
@@ -232,45 +232,45 @@ public class ShortcutInfoCompat {
 
     public ShortcutInfo q() {
         p1.b.a();
-        ShortcutInfo.Builder intents = p1.a.a(this.f3241a, this.f3242b).setShortLabel(this.f3246f).setIntents(this.f3244d);
-        IconCompat iconCompat = this.f3249i;
+        ShortcutInfo.Builder intents = p1.a.a(this.f3570a, this.f3571b).setShortLabel(this.f3575f).setIntents(this.f3573d);
+        IconCompat iconCompat = this.f3578i;
         if (iconCompat != null) {
-            intents.setIcon(iconCompat.w(this.f3241a));
+            intents.setIcon(iconCompat.w(this.f3570a));
         }
-        if (!TextUtils.isEmpty(this.f3247g)) {
-            intents.setLongLabel(this.f3247g);
+        if (!TextUtils.isEmpty(this.f3576g)) {
+            intents.setLongLabel(this.f3576g);
         }
-        if (!TextUtils.isEmpty(this.f3248h)) {
-            intents.setDisabledMessage(this.f3248h);
+        if (!TextUtils.isEmpty(this.f3577h)) {
+            intents.setDisabledMessage(this.f3577h);
         }
-        ComponentName componentName = this.f3245e;
+        ComponentName componentName = this.f3574e;
         if (componentName != null) {
             intents.setActivity(componentName);
         }
-        Set<String> set = this.f3252l;
+        Set<String> set = this.f3581l;
         if (set != null) {
             intents.setCategories(set);
         }
-        intents.setRank(this.f3255o);
-        PersistableBundle persistableBundle = this.f3256p;
+        intents.setRank(this.f3584o);
+        PersistableBundle persistableBundle = this.f3585p;
         if (persistableBundle != null) {
             intents.setExtras(persistableBundle);
         }
         if (Build.VERSION.SDK_INT >= 29) {
-            Person[] personArr = this.f3251k;
+            Person[] personArr = this.f3580k;
             if (personArr != null && personArr.length > 0) {
                 int length = personArr.length;
                 android.app.Person[] personArr2 = new android.app.Person[length];
                 for (int i10 = 0; i10 < length; i10++) {
-                    personArr2[i10] = this.f3251k[i10].k();
+                    personArr2[i10] = this.f3580k[i10].k();
                 }
                 intents.setPersons(personArr2);
             }
-            c cVar = this.f3253m;
+            c cVar = this.f3582m;
             if (cVar != null) {
                 intents.setLocusId(cVar.c());
             }
-            intents.setLongLived(this.f3254n);
+            intents.setLongLived(this.f3583n);
         } else {
             intents.setExtras(a());
         }
@@ -284,57 +284,57 @@ public class ShortcutInfoCompat {
     public static class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final ShortcutInfoCompat f3267a;
+        private final ShortcutInfoCompat f3596a;
 
         /* renamed from: b  reason: collision with root package name */
-        private boolean f3268b;
+        private boolean f3597b;
 
         /* renamed from: c  reason: collision with root package name */
-        private Set f3269c;
+        private Set f3598c;
 
         /* renamed from: d  reason: collision with root package name */
-        private Map f3270d;
+        private Map f3599d;
 
         /* renamed from: e  reason: collision with root package name */
-        private Uri f3271e;
+        private Uri f3600e;
 
         public b(Context context, String str) {
             ShortcutInfoCompat shortcutInfoCompat = new ShortcutInfoCompat();
-            this.f3267a = shortcutInfoCompat;
-            shortcutInfoCompat.f3241a = context;
-            shortcutInfoCompat.f3242b = str;
+            this.f3596a = shortcutInfoCompat;
+            shortcutInfoCompat.f3570a = context;
+            shortcutInfoCompat.f3571b = str;
         }
 
         public ShortcutInfoCompat a() {
             String[] strArr;
-            if (!TextUtils.isEmpty(this.f3267a.f3246f)) {
-                ShortcutInfoCompat shortcutInfoCompat = this.f3267a;
-                Intent[] intentArr = shortcutInfoCompat.f3244d;
+            if (!TextUtils.isEmpty(this.f3596a.f3575f)) {
+                ShortcutInfoCompat shortcutInfoCompat = this.f3596a;
+                Intent[] intentArr = shortcutInfoCompat.f3573d;
                 if (intentArr != null && intentArr.length != 0) {
-                    if (this.f3268b) {
-                        if (shortcutInfoCompat.f3253m == null) {
-                            shortcutInfoCompat.f3253m = new c(shortcutInfoCompat.f3242b);
+                    if (this.f3597b) {
+                        if (shortcutInfoCompat.f3582m == null) {
+                            shortcutInfoCompat.f3582m = new c(shortcutInfoCompat.f3571b);
                         }
-                        this.f3267a.f3254n = true;
+                        this.f3596a.f3583n = true;
                     }
-                    if (this.f3269c != null) {
-                        ShortcutInfoCompat shortcutInfoCompat2 = this.f3267a;
-                        if (shortcutInfoCompat2.f3252l == null) {
-                            shortcutInfoCompat2.f3252l = new HashSet();
+                    if (this.f3598c != null) {
+                        ShortcutInfoCompat shortcutInfoCompat2 = this.f3596a;
+                        if (shortcutInfoCompat2.f3581l == null) {
+                            shortcutInfoCompat2.f3581l = new HashSet();
                         }
-                        this.f3267a.f3252l.addAll(this.f3269c);
+                        this.f3596a.f3581l.addAll(this.f3598c);
                     }
-                    if (this.f3270d != null) {
-                        ShortcutInfoCompat shortcutInfoCompat3 = this.f3267a;
-                        if (shortcutInfoCompat3.f3256p == null) {
-                            shortcutInfoCompat3.f3256p = new PersistableBundle();
+                    if (this.f3599d != null) {
+                        ShortcutInfoCompat shortcutInfoCompat3 = this.f3596a;
+                        if (shortcutInfoCompat3.f3585p == null) {
+                            shortcutInfoCompat3.f3585p = new PersistableBundle();
                         }
-                        for (String str : this.f3270d.keySet()) {
-                            Map map = (Map) this.f3270d.get(str);
-                            this.f3267a.f3256p.putStringArray(str, (String[]) map.keySet().toArray(new String[0]));
+                        for (String str : this.f3599d.keySet()) {
+                            Map map = (Map) this.f3599d.get(str);
+                            this.f3596a.f3585p.putStringArray(str, (String[]) map.keySet().toArray(new String[0]));
                             for (String str2 : map.keySet()) {
                                 List list = (List) map.get(str2);
-                                PersistableBundle persistableBundle = this.f3267a.f3256p;
+                                PersistableBundle persistableBundle = this.f3596a.f3585p;
                                 String str3 = str + "/" + str2;
                                 if (list == null) {
                                     strArr = new String[0];
@@ -345,14 +345,14 @@ public class ShortcutInfoCompat {
                             }
                         }
                     }
-                    if (this.f3271e != null) {
-                        ShortcutInfoCompat shortcutInfoCompat4 = this.f3267a;
-                        if (shortcutInfoCompat4.f3256p == null) {
-                            shortcutInfoCompat4.f3256p = new PersistableBundle();
+                    if (this.f3600e != null) {
+                        ShortcutInfoCompat shortcutInfoCompat4 = this.f3596a;
+                        if (shortcutInfoCompat4.f3585p == null) {
+                            shortcutInfoCompat4.f3585p = new PersistableBundle();
                         }
-                        this.f3267a.f3256p.putString("extraSliceUri", v1.b.a(this.f3271e));
+                        this.f3596a.f3585p.putString("extraSliceUri", v1.b.a(this.f3600e));
                     }
-                    return this.f3267a;
+                    return this.f3596a;
                 }
                 throw new IllegalArgumentException("Shortcut must have an intent");
             }
@@ -360,24 +360,24 @@ public class ShortcutInfoCompat {
         }
 
         public b b(ComponentName componentName) {
-            this.f3267a.f3245e = componentName;
+            this.f3596a.f3574e = componentName;
             return this;
         }
 
         public b c(Set set) {
             u0.b bVar = new u0.b();
             bVar.addAll(set);
-            this.f3267a.f3252l = bVar;
+            this.f3596a.f3581l = bVar;
             return this;
         }
 
         public b d(CharSequence charSequence) {
-            this.f3267a.f3248h = charSequence;
+            this.f3596a.f3577h = charSequence;
             return this;
         }
 
         public b e(IconCompat iconCompat) {
-            this.f3267a.f3249i = iconCompat;
+            this.f3596a.f3578i = iconCompat;
             return this;
         }
 
@@ -386,115 +386,115 @@ public class ShortcutInfoCompat {
         }
 
         public b g(Intent[] intentArr) {
-            this.f3267a.f3244d = intentArr;
+            this.f3596a.f3573d = intentArr;
             return this;
         }
 
         public b h(c cVar) {
-            this.f3267a.f3253m = cVar;
+            this.f3596a.f3582m = cVar;
             return this;
         }
 
         public b i(CharSequence charSequence) {
-            this.f3267a.f3247g = charSequence;
+            this.f3596a.f3576g = charSequence;
             return this;
         }
 
         public b j(boolean z10) {
-            this.f3267a.f3254n = z10;
+            this.f3596a.f3583n = z10;
             return this;
         }
 
         public b k(Person[] personArr) {
-            this.f3267a.f3251k = personArr;
+            this.f3596a.f3580k = personArr;
             return this;
         }
 
         public b l(int i10) {
-            this.f3267a.f3255o = i10;
+            this.f3596a.f3584o = i10;
             return this;
         }
 
         public b m(CharSequence charSequence) {
-            this.f3267a.f3246f = charSequence;
+            this.f3596a.f3575f = charSequence;
             return this;
         }
 
         public b(ShortcutInfoCompat shortcutInfoCompat) {
             ShortcutInfoCompat shortcutInfoCompat2 = new ShortcutInfoCompat();
-            this.f3267a = shortcutInfoCompat2;
-            shortcutInfoCompat2.f3241a = shortcutInfoCompat.f3241a;
-            shortcutInfoCompat2.f3242b = shortcutInfoCompat.f3242b;
-            shortcutInfoCompat2.f3243c = shortcutInfoCompat.f3243c;
-            Intent[] intentArr = shortcutInfoCompat.f3244d;
-            shortcutInfoCompat2.f3244d = (Intent[]) Arrays.copyOf(intentArr, intentArr.length);
-            shortcutInfoCompat2.f3245e = shortcutInfoCompat.f3245e;
-            shortcutInfoCompat2.f3246f = shortcutInfoCompat.f3246f;
-            shortcutInfoCompat2.f3247g = shortcutInfoCompat.f3247g;
-            shortcutInfoCompat2.f3248h = shortcutInfoCompat.f3248h;
-            shortcutInfoCompat2.f3266z = shortcutInfoCompat.f3266z;
-            shortcutInfoCompat2.f3249i = shortcutInfoCompat.f3249i;
-            shortcutInfoCompat2.f3250j = shortcutInfoCompat.f3250j;
-            shortcutInfoCompat2.f3258r = shortcutInfoCompat.f3258r;
-            shortcutInfoCompat2.f3257q = shortcutInfoCompat.f3257q;
-            shortcutInfoCompat2.f3259s = shortcutInfoCompat.f3259s;
-            shortcutInfoCompat2.f3260t = shortcutInfoCompat.f3260t;
-            shortcutInfoCompat2.f3261u = shortcutInfoCompat.f3261u;
-            shortcutInfoCompat2.f3262v = shortcutInfoCompat.f3262v;
-            shortcutInfoCompat2.f3263w = shortcutInfoCompat.f3263w;
-            shortcutInfoCompat2.f3264x = shortcutInfoCompat.f3264x;
-            shortcutInfoCompat2.f3253m = shortcutInfoCompat.f3253m;
-            shortcutInfoCompat2.f3254n = shortcutInfoCompat.f3254n;
-            shortcutInfoCompat2.f3265y = shortcutInfoCompat.f3265y;
-            shortcutInfoCompat2.f3255o = shortcutInfoCompat.f3255o;
-            Person[] personArr = shortcutInfoCompat.f3251k;
+            this.f3596a = shortcutInfoCompat2;
+            shortcutInfoCompat2.f3570a = shortcutInfoCompat.f3570a;
+            shortcutInfoCompat2.f3571b = shortcutInfoCompat.f3571b;
+            shortcutInfoCompat2.f3572c = shortcutInfoCompat.f3572c;
+            Intent[] intentArr = shortcutInfoCompat.f3573d;
+            shortcutInfoCompat2.f3573d = (Intent[]) Arrays.copyOf(intentArr, intentArr.length);
+            shortcutInfoCompat2.f3574e = shortcutInfoCompat.f3574e;
+            shortcutInfoCompat2.f3575f = shortcutInfoCompat.f3575f;
+            shortcutInfoCompat2.f3576g = shortcutInfoCompat.f3576g;
+            shortcutInfoCompat2.f3577h = shortcutInfoCompat.f3577h;
+            shortcutInfoCompat2.f3595z = shortcutInfoCompat.f3595z;
+            shortcutInfoCompat2.f3578i = shortcutInfoCompat.f3578i;
+            shortcutInfoCompat2.f3579j = shortcutInfoCompat.f3579j;
+            shortcutInfoCompat2.f3587r = shortcutInfoCompat.f3587r;
+            shortcutInfoCompat2.f3586q = shortcutInfoCompat.f3586q;
+            shortcutInfoCompat2.f3588s = shortcutInfoCompat.f3588s;
+            shortcutInfoCompat2.f3589t = shortcutInfoCompat.f3589t;
+            shortcutInfoCompat2.f3590u = shortcutInfoCompat.f3590u;
+            shortcutInfoCompat2.f3591v = shortcutInfoCompat.f3591v;
+            shortcutInfoCompat2.f3592w = shortcutInfoCompat.f3592w;
+            shortcutInfoCompat2.f3593x = shortcutInfoCompat.f3593x;
+            shortcutInfoCompat2.f3582m = shortcutInfoCompat.f3582m;
+            shortcutInfoCompat2.f3583n = shortcutInfoCompat.f3583n;
+            shortcutInfoCompat2.f3594y = shortcutInfoCompat.f3594y;
+            shortcutInfoCompat2.f3584o = shortcutInfoCompat.f3584o;
+            Person[] personArr = shortcutInfoCompat.f3580k;
             if (personArr != null) {
-                shortcutInfoCompat2.f3251k = (Person[]) Arrays.copyOf(personArr, personArr.length);
+                shortcutInfoCompat2.f3580k = (Person[]) Arrays.copyOf(personArr, personArr.length);
             }
-            if (shortcutInfoCompat.f3252l != null) {
-                shortcutInfoCompat2.f3252l = new HashSet(shortcutInfoCompat.f3252l);
+            if (shortcutInfoCompat.f3581l != null) {
+                shortcutInfoCompat2.f3581l = new HashSet(shortcutInfoCompat.f3581l);
             }
-            PersistableBundle persistableBundle = shortcutInfoCompat.f3256p;
+            PersistableBundle persistableBundle = shortcutInfoCompat.f3585p;
             if (persistableBundle != null) {
-                shortcutInfoCompat2.f3256p = persistableBundle;
+                shortcutInfoCompat2.f3585p = persistableBundle;
             }
             shortcutInfoCompat2.A = shortcutInfoCompat.A;
         }
 
         public b(Context context, ShortcutInfo shortcutInfo) {
             ShortcutInfoCompat shortcutInfoCompat = new ShortcutInfoCompat();
-            this.f3267a = shortcutInfoCompat;
-            shortcutInfoCompat.f3241a = context;
-            shortcutInfoCompat.f3242b = shortcutInfo.getId();
-            shortcutInfoCompat.f3243c = shortcutInfo.getPackage();
+            this.f3596a = shortcutInfoCompat;
+            shortcutInfoCompat.f3570a = context;
+            shortcutInfoCompat.f3571b = shortcutInfo.getId();
+            shortcutInfoCompat.f3572c = shortcutInfo.getPackage();
             Intent[] intents = shortcutInfo.getIntents();
-            shortcutInfoCompat.f3244d = (Intent[]) Arrays.copyOf(intents, intents.length);
-            shortcutInfoCompat.f3245e = shortcutInfo.getActivity();
-            shortcutInfoCompat.f3246f = shortcutInfo.getShortLabel();
-            shortcutInfoCompat.f3247g = shortcutInfo.getLongLabel();
-            shortcutInfoCompat.f3248h = shortcutInfo.getDisabledMessage();
+            shortcutInfoCompat.f3573d = (Intent[]) Arrays.copyOf(intents, intents.length);
+            shortcutInfoCompat.f3574e = shortcutInfo.getActivity();
+            shortcutInfoCompat.f3575f = shortcutInfo.getShortLabel();
+            shortcutInfoCompat.f3576g = shortcutInfo.getLongLabel();
+            shortcutInfoCompat.f3577h = shortcutInfo.getDisabledMessage();
             int i10 = Build.VERSION.SDK_INT;
             if (i10 >= 28) {
-                shortcutInfoCompat.f3266z = shortcutInfo.getDisabledReason();
+                shortcutInfoCompat.f3595z = shortcutInfo.getDisabledReason();
             } else {
-                shortcutInfoCompat.f3266z = shortcutInfo.isEnabled() ? 0 : 3;
+                shortcutInfoCompat.f3595z = shortcutInfo.isEnabled() ? 0 : 3;
             }
-            shortcutInfoCompat.f3252l = shortcutInfo.getCategories();
-            shortcutInfoCompat.f3251k = ShortcutInfoCompat.m(shortcutInfo.getExtras());
-            shortcutInfoCompat.f3258r = shortcutInfo.getUserHandle();
-            shortcutInfoCompat.f3257q = shortcutInfo.getLastChangedTimestamp();
+            shortcutInfoCompat.f3581l = shortcutInfo.getCategories();
+            shortcutInfoCompat.f3580k = ShortcutInfoCompat.m(shortcutInfo.getExtras());
+            shortcutInfoCompat.f3587r = shortcutInfo.getUserHandle();
+            shortcutInfoCompat.f3586q = shortcutInfo.getLastChangedTimestamp();
             if (i10 >= 30) {
-                shortcutInfoCompat.f3259s = shortcutInfo.isCached();
+                shortcutInfoCompat.f3588s = shortcutInfo.isCached();
             }
-            shortcutInfoCompat.f3260t = shortcutInfo.isDynamic();
-            shortcutInfoCompat.f3261u = shortcutInfo.isPinned();
-            shortcutInfoCompat.f3262v = shortcutInfo.isDeclaredInManifest();
-            shortcutInfoCompat.f3263w = shortcutInfo.isImmutable();
-            shortcutInfoCompat.f3264x = shortcutInfo.isEnabled();
-            shortcutInfoCompat.f3265y = shortcutInfo.hasKeyFieldsOnly();
-            shortcutInfoCompat.f3253m = ShortcutInfoCompat.j(shortcutInfo);
-            shortcutInfoCompat.f3255o = shortcutInfo.getRank();
-            shortcutInfoCompat.f3256p = shortcutInfo.getExtras();
+            shortcutInfoCompat.f3589t = shortcutInfo.isDynamic();
+            shortcutInfoCompat.f3590u = shortcutInfo.isPinned();
+            shortcutInfoCompat.f3591v = shortcutInfo.isDeclaredInManifest();
+            shortcutInfoCompat.f3592w = shortcutInfo.isImmutable();
+            shortcutInfoCompat.f3593x = shortcutInfo.isEnabled();
+            shortcutInfoCompat.f3594y = shortcutInfo.hasKeyFieldsOnly();
+            shortcutInfoCompat.f3582m = ShortcutInfoCompat.j(shortcutInfo);
+            shortcutInfoCompat.f3584o = shortcutInfo.getRank();
+            shortcutInfoCompat.f3585p = shortcutInfo.getExtras();
         }
     }
 }

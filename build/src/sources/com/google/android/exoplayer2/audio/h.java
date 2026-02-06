@@ -15,82 +15,82 @@ final class h {
     private long G;
 
     /* renamed from: a  reason: collision with root package name */
-    private final a f12247a;
+    private final a f12146a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final long[] f12248b;
+    private final long[] f12147b;
 
     /* renamed from: c  reason: collision with root package name */
-    private AudioTrack f12249c;
+    private AudioTrack f12148c;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f12250d;
+    private int f12149d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f12251e;
+    private int f12150e;
 
     /* renamed from: f  reason: collision with root package name */
-    private g f12252f;
+    private g f12151f;
 
     /* renamed from: g  reason: collision with root package name */
-    private int f12253g;
+    private int f12152g;
 
     /* renamed from: h  reason: collision with root package name */
-    private boolean f12254h;
+    private boolean f12153h;
 
     /* renamed from: i  reason: collision with root package name */
-    private long f12255i;
+    private long f12154i;
 
     /* renamed from: j  reason: collision with root package name */
-    private float f12256j;
+    private float f12155j;
 
     /* renamed from: k  reason: collision with root package name */
-    private boolean f12257k;
+    private boolean f12156k;
 
     /* renamed from: l  reason: collision with root package name */
-    private long f12258l;
+    private long f12157l;
 
     /* renamed from: m  reason: collision with root package name */
-    private long f12259m;
+    private long f12158m;
 
     /* renamed from: n  reason: collision with root package name */
-    private Method f12260n;
+    private Method f12159n;
 
     /* renamed from: o  reason: collision with root package name */
-    private long f12261o;
+    private long f12160o;
 
     /* renamed from: p  reason: collision with root package name */
-    private boolean f12262p;
+    private boolean f12161p;
 
     /* renamed from: q  reason: collision with root package name */
-    private boolean f12263q;
+    private boolean f12162q;
 
     /* renamed from: r  reason: collision with root package name */
-    private long f12264r;
+    private long f12163r;
 
     /* renamed from: s  reason: collision with root package name */
-    private long f12265s;
+    private long f12164s;
 
     /* renamed from: t  reason: collision with root package name */
-    private long f12266t;
+    private long f12165t;
 
     /* renamed from: u  reason: collision with root package name */
-    private long f12267u;
+    private long f12166u;
 
     /* renamed from: v  reason: collision with root package name */
-    private long f12268v;
+    private long f12167v;
 
     /* renamed from: w  reason: collision with root package name */
-    private int f12269w;
+    private int f12168w;
 
     /* renamed from: x  reason: collision with root package name */
-    private int f12270x;
+    private int f12169x;
 
     /* renamed from: y  reason: collision with root package name */
-    private long f12271y;
+    private long f12170y;
 
     /* renamed from: z  reason: collision with root package name */
-    private long f12272z;
+    private long f12171z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public interface a {
@@ -106,18 +106,18 @@ final class h {
     }
 
     public h(a aVar) {
-        this.f12247a = (a) ne.a.e(aVar);
-        if (w0.f39657a >= 18) {
+        this.f12146a = (a) ne.a.e(aVar);
+        if (w0.f39012a >= 18) {
             try {
-                this.f12260n = AudioTrack.class.getMethod("getLatency", null);
+                this.f12159n = AudioTrack.class.getMethod("getLatency", null);
             } catch (NoSuchMethodException unused) {
             }
         }
-        this.f12248b = new long[10];
+        this.f12147b = new long[10];
     }
 
     private boolean a() {
-        if (this.f12254h && ((AudioTrack) ne.a.e(this.f12249c)).getPlayState() == 2 && d() == 0) {
+        if (this.f12153h && ((AudioTrack) ne.a.e(this.f12148c)).getPlayState() == 2 && d() == 0) {
             return true;
         }
         return false;
@@ -125,23 +125,23 @@ final class h {
 
     private long d() {
         long elapsedRealtime = SystemClock.elapsedRealtime();
-        long j10 = this.f12271y;
+        long j10 = this.f12170y;
         if (j10 != -9223372036854775807L) {
-            return Math.min(this.B, this.A + w0.B(w0.e0((elapsedRealtime * 1000) - j10, this.f12256j), this.f12253g));
+            return Math.min(this.B, this.A + w0.B(w0.e0((elapsedRealtime * 1000) - j10, this.f12155j), this.f12152g));
         }
-        if (elapsedRealtime - this.f12265s >= 5) {
+        if (elapsedRealtime - this.f12164s >= 5) {
             u(elapsedRealtime);
-            this.f12265s = elapsedRealtime;
+            this.f12164s = elapsedRealtime;
         }
-        return this.f12266t + (this.f12267u << 32);
+        return this.f12165t + (this.f12166u << 32);
     }
 
     private long e() {
-        return w0.W0(d(), this.f12253g);
+        return w0.W0(d(), this.f12152g);
     }
 
     private void k(long j10) {
-        g gVar = (g) ne.a.e(this.f12252f);
+        g gVar = (g) ne.a.e(this.f12151f);
         if (!gVar.e(j10)) {
             return;
         }
@@ -149,10 +149,10 @@ final class h {
         long b10 = gVar.b();
         long e10 = e();
         if (Math.abs(c10 - j10) > 5000000) {
-            this.f12247a.e(b10, c10, j10, e10);
+            this.f12146a.e(b10, c10, j10, e10);
             gVar.f();
-        } else if (Math.abs(w0.W0(b10, this.f12253g) - e10) > 5000000) {
-            this.f12247a.d(b10, c10, j10, e10);
+        } else if (Math.abs(w0.W0(b10, this.f12152g) - e10) > 5000000) {
+            this.f12146a.d(b10, c10, j10, e10);
             gVar.f();
         } else {
             gVar.a();
@@ -161,31 +161,31 @@ final class h {
 
     private void l() {
         long nanoTime = System.nanoTime() / 1000;
-        if (nanoTime - this.f12259m >= 30000) {
+        if (nanoTime - this.f12158m >= 30000) {
             long e10 = e();
             if (e10 != 0) {
-                this.f12248b[this.f12269w] = w0.j0(e10, this.f12256j) - nanoTime;
-                this.f12269w = (this.f12269w + 1) % 10;
-                int i10 = this.f12270x;
+                this.f12147b[this.f12168w] = w0.j0(e10, this.f12155j) - nanoTime;
+                this.f12168w = (this.f12168w + 1) % 10;
+                int i10 = this.f12169x;
                 if (i10 < 10) {
-                    this.f12270x = i10 + 1;
+                    this.f12169x = i10 + 1;
                 }
-                this.f12259m = nanoTime;
-                this.f12258l = 0L;
+                this.f12158m = nanoTime;
+                this.f12157l = 0L;
                 int i11 = 0;
                 while (true) {
-                    int i12 = this.f12270x;
+                    int i12 = this.f12169x;
                     if (i11 >= i12) {
                         break;
                     }
-                    this.f12258l += this.f12248b[i11] / i12;
+                    this.f12157l += this.f12147b[i11] / i12;
                     i11++;
                 }
             } else {
                 return;
             }
         }
-        if (this.f12254h) {
+        if (this.f12153h) {
             return;
         }
         k(nanoTime);
@@ -194,25 +194,25 @@ final class h {
 
     private void m(long j10) {
         Method method;
-        if (this.f12263q && (method = this.f12260n) != null && j10 - this.f12264r >= 500000) {
+        if (this.f12162q && (method = this.f12159n) != null && j10 - this.f12163r >= 500000) {
             try {
-                long intValue = (((Integer) w0.j((Integer) method.invoke(ne.a.e(this.f12249c), null))).intValue() * 1000) - this.f12255i;
-                this.f12261o = intValue;
+                long intValue = (((Integer) w0.j((Integer) method.invoke(ne.a.e(this.f12148c), null))).intValue() * 1000) - this.f12154i;
+                this.f12160o = intValue;
                 long max = Math.max(intValue, 0L);
-                this.f12261o = max;
+                this.f12160o = max;
                 if (max > 5000000) {
-                    this.f12247a.c(max);
-                    this.f12261o = 0L;
+                    this.f12146a.c(max);
+                    this.f12160o = 0L;
                 }
             } catch (Exception unused) {
-                this.f12260n = null;
+                this.f12159n = null;
             }
-            this.f12264r = j10;
+            this.f12163r = j10;
         }
     }
 
     private static boolean n(int i10) {
-        if (w0.f39657a < 23) {
+        if (w0.f39012a < 23) {
             if (i10 == 5 || i10 == 6) {
                 return true;
             }
@@ -222,65 +222,65 @@ final class h {
     }
 
     private void q() {
-        this.f12258l = 0L;
-        this.f12270x = 0;
-        this.f12269w = 0;
-        this.f12259m = 0L;
+        this.f12157l = 0L;
+        this.f12169x = 0;
+        this.f12168w = 0;
+        this.f12158m = 0L;
         this.D = 0L;
         this.G = 0L;
-        this.f12257k = false;
+        this.f12156k = false;
     }
 
     private void u(long j10) {
         AudioTrack audioTrack;
-        int playState = ((AudioTrack) ne.a.e(this.f12249c)).getPlayState();
+        int playState = ((AudioTrack) ne.a.e(this.f12148c)).getPlayState();
         if (playState != 1) {
             long playbackHeadPosition = audioTrack.getPlaybackHeadPosition() & 4294967295L;
-            if (this.f12254h) {
+            if (this.f12153h) {
                 if (playState == 2 && playbackHeadPosition == 0) {
-                    this.f12268v = this.f12266t;
+                    this.f12167v = this.f12165t;
                 }
-                playbackHeadPosition += this.f12268v;
+                playbackHeadPosition += this.f12167v;
             }
-            if (w0.f39657a <= 29) {
-                if (playbackHeadPosition == 0 && this.f12266t > 0 && playState == 3) {
-                    if (this.f12272z == -9223372036854775807L) {
-                        this.f12272z = j10;
+            if (w0.f39012a <= 29) {
+                if (playbackHeadPosition == 0 && this.f12165t > 0 && playState == 3) {
+                    if (this.f12171z == -9223372036854775807L) {
+                        this.f12171z = j10;
                         return;
                     }
                     return;
                 }
-                this.f12272z = -9223372036854775807L;
+                this.f12171z = -9223372036854775807L;
             }
-            if (this.f12266t > playbackHeadPosition) {
-                this.f12267u++;
+            if (this.f12165t > playbackHeadPosition) {
+                this.f12166u++;
             }
-            this.f12266t = playbackHeadPosition;
+            this.f12165t = playbackHeadPosition;
         }
     }
 
     public int b(long j10) {
-        return this.f12251e - ((int) (j10 - (d() * this.f12250d)));
+        return this.f12150e - ((int) (j10 - (d() * this.f12149d)));
     }
 
     public long c(boolean z10) {
         long e02;
-        if (((AudioTrack) ne.a.e(this.f12249c)).getPlayState() == 3) {
+        if (((AudioTrack) ne.a.e(this.f12148c)).getPlayState() == 3) {
             l();
         }
         long nanoTime = System.nanoTime() / 1000;
-        g gVar = (g) ne.a.e(this.f12252f);
+        g gVar = (g) ne.a.e(this.f12151f);
         boolean d10 = gVar.d();
         if (d10) {
-            e02 = w0.W0(gVar.b(), this.f12253g) + w0.e0(nanoTime - gVar.c(), this.f12256j);
+            e02 = w0.W0(gVar.b(), this.f12152g) + w0.e0(nanoTime - gVar.c(), this.f12155j);
         } else {
-            if (this.f12270x == 0) {
+            if (this.f12169x == 0) {
                 e02 = e();
             } else {
-                e02 = w0.e0(this.f12258l + nanoTime, this.f12256j);
+                e02 = w0.e0(this.f12157l + nanoTime, this.f12155j);
             }
             if (!z10) {
-                e02 = Math.max(0L, e02 - this.f12261o);
+                e02 = Math.max(0L, e02 - this.f12160o);
             }
         }
         if (this.E != d10) {
@@ -290,13 +290,13 @@ final class h {
         long j10 = nanoTime - this.G;
         if (j10 < 1000000) {
             long j11 = (j10 * 1000) / 1000000;
-            e02 = ((e02 * j11) + ((1000 - j11) * (this.F + w0.e0(j10, this.f12256j)))) / 1000;
+            e02 = ((e02 * j11) + ((1000 - j11) * (this.F + w0.e0(j10, this.f12155j)))) / 1000;
         }
-        if (!this.f12257k) {
+        if (!this.f12156k) {
             long j12 = this.C;
             if (e02 > j12) {
-                this.f12257k = true;
-                this.f12247a.b(System.currentTimeMillis() - w0.p1(w0.j0(w0.p1(e02 - j12), this.f12256j)));
+                this.f12156k = true;
+                this.f12146a.b(System.currentTimeMillis() - w0.p1(w0.j0(w0.p1(e02 - j12), this.f12155j)));
             }
         }
         this.D = nanoTime;
@@ -307,54 +307,54 @@ final class h {
 
     public void f(long j10) {
         this.A = d();
-        this.f12271y = SystemClock.elapsedRealtime() * 1000;
+        this.f12170y = SystemClock.elapsedRealtime() * 1000;
         this.B = j10;
     }
 
     public boolean g(long j10) {
-        if (j10 <= w0.B(c(false), this.f12253g) && !a()) {
+        if (j10 <= w0.B(c(false), this.f12152g) && !a()) {
             return false;
         }
         return true;
     }
 
     public boolean h() {
-        if (((AudioTrack) ne.a.e(this.f12249c)).getPlayState() == 3) {
+        if (((AudioTrack) ne.a.e(this.f12148c)).getPlayState() == 3) {
             return true;
         }
         return false;
     }
 
     public boolean i(long j10) {
-        if (this.f12272z != -9223372036854775807L && j10 > 0 && SystemClock.elapsedRealtime() - this.f12272z >= 200) {
+        if (this.f12171z != -9223372036854775807L && j10 > 0 && SystemClock.elapsedRealtime() - this.f12171z >= 200) {
             return true;
         }
         return false;
     }
 
     public boolean j(long j10) {
-        int playState = ((AudioTrack) ne.a.e(this.f12249c)).getPlayState();
-        if (this.f12254h) {
+        int playState = ((AudioTrack) ne.a.e(this.f12148c)).getPlayState();
+        if (this.f12153h) {
             if (playState == 2) {
-                this.f12262p = false;
+                this.f12161p = false;
                 return false;
             } else if (playState == 1 && d() == 0) {
                 return false;
             }
         }
-        boolean z10 = this.f12262p;
+        boolean z10 = this.f12161p;
         boolean g10 = g(j10);
-        this.f12262p = g10;
+        this.f12161p = g10;
         if (z10 && !g10 && playState != 1) {
-            this.f12247a.a(this.f12251e, w0.p1(this.f12255i));
+            this.f12146a.a(this.f12150e, w0.p1(this.f12154i));
         }
         return true;
     }
 
     public boolean o() {
         q();
-        if (this.f12271y == -9223372036854775807L) {
-            ((g) ne.a.e(this.f12252f)).g();
+        if (this.f12170y == -9223372036854775807L) {
+            ((g) ne.a.e(this.f12151f)).g();
             return true;
         }
         return false;
@@ -362,46 +362,46 @@ final class h {
 
     public void p() {
         q();
-        this.f12249c = null;
-        this.f12252f = null;
+        this.f12148c = null;
+        this.f12151f = null;
     }
 
     public void r(AudioTrack audioTrack, boolean z10, int i10, int i11, int i12) {
         boolean z11;
         long j10;
-        this.f12249c = audioTrack;
-        this.f12250d = i11;
-        this.f12251e = i12;
-        this.f12252f = new g(audioTrack);
-        this.f12253g = audioTrack.getSampleRate();
+        this.f12148c = audioTrack;
+        this.f12149d = i11;
+        this.f12150e = i12;
+        this.f12151f = new g(audioTrack);
+        this.f12152g = audioTrack.getSampleRate();
         if (z10 && n(i10)) {
             z11 = true;
         } else {
             z11 = false;
         }
-        this.f12254h = z11;
+        this.f12153h = z11;
         boolean E0 = w0.E0(i10);
-        this.f12263q = E0;
+        this.f12162q = E0;
         if (E0) {
-            j10 = w0.W0(i12 / i11, this.f12253g);
+            j10 = w0.W0(i12 / i11, this.f12152g);
         } else {
             j10 = -9223372036854775807L;
         }
-        this.f12255i = j10;
-        this.f12266t = 0L;
-        this.f12267u = 0L;
-        this.f12268v = 0L;
-        this.f12262p = false;
-        this.f12271y = -9223372036854775807L;
-        this.f12272z = -9223372036854775807L;
-        this.f12264r = 0L;
-        this.f12261o = 0L;
-        this.f12256j = 1.0f;
+        this.f12154i = j10;
+        this.f12165t = 0L;
+        this.f12166u = 0L;
+        this.f12167v = 0L;
+        this.f12161p = false;
+        this.f12170y = -9223372036854775807L;
+        this.f12171z = -9223372036854775807L;
+        this.f12163r = 0L;
+        this.f12160o = 0L;
+        this.f12155j = 1.0f;
     }
 
     public void s(float f10) {
-        this.f12256j = f10;
-        g gVar = this.f12252f;
+        this.f12155j = f10;
+        g gVar = this.f12151f;
         if (gVar != null) {
             gVar.g();
         }
@@ -409,6 +409,6 @@ final class h {
     }
 
     public void t() {
-        ((g) ne.a.e(this.f12252f)).g();
+        ((g) ne.a.e(this.f12151f)).g();
     }
 }

@@ -5,61 +5,61 @@ import android.graphics.Bitmap;
 public class w {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f36497a;
+    private final int f35890a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f36498b;
+    private final int f35891b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f36499c;
+    private final String f35892c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f36500d;
+    private final String f35893d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f36501e;
+    private final String f35894e;
 
     /* renamed from: f  reason: collision with root package name */
-    private Bitmap f36502f;
+    private Bitmap f35895f;
 
     public w(int i10, int i11, String str, String str2, String str3) {
-        this.f36497a = i10;
-        this.f36498b = i11;
-        this.f36499c = str;
-        this.f36500d = str2;
-        this.f36501e = str3;
+        this.f35890a = i10;
+        this.f35891b = i11;
+        this.f35892c = str;
+        this.f35893d = str2;
+        this.f35894e = str3;
     }
 
     public w a(float f10) {
-        w wVar = new w((int) (this.f36497a * f10), (int) (this.f36498b * f10), this.f36499c, this.f36500d, this.f36501e);
-        Bitmap bitmap = this.f36502f;
+        w wVar = new w((int) (this.f35890a * f10), (int) (this.f35891b * f10), this.f35892c, this.f35893d, this.f35894e);
+        Bitmap bitmap = this.f35895f;
         if (bitmap != null) {
-            wVar.g(Bitmap.createScaledBitmap(bitmap, wVar.f36497a, wVar.f36498b, true));
+            wVar.g(Bitmap.createScaledBitmap(bitmap, wVar.f35890a, wVar.f35891b, true));
         }
         return wVar;
     }
 
     public Bitmap b() {
-        return this.f36502f;
+        return this.f35895f;
     }
 
     public String c() {
-        return this.f36500d;
+        return this.f35893d;
     }
 
     public int d() {
-        return this.f36498b;
+        return this.f35891b;
     }
 
     public String e() {
-        return this.f36499c;
+        return this.f35892c;
     }
 
     public int f() {
-        return this.f36497a;
+        return this.f35890a;
     }
 
     public void g(Bitmap bitmap) {
-        this.f36502f = bitmap;
+        this.f35895f = bitmap;
     }
 }

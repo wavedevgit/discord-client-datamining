@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/pomelo/native/useUserProfileBannerBackgroundColor.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1() {
-        _fun81453: for (var _fun81453_ip = 0;;) switch (_fun81453_ip) {
+        _fun81454: for (var _fun81454_ip = 0;;) switch (_fun81454_ip) {
             case 0:
                 var7 = arg0;
                 var3 = arg1;
@@ -46,15 +46,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = null;
                 var4 = var2 == var3;
                 if (var4) {
-                    _fun81453_ip = 100;
-                    continue _fun81453
+                    _fun81454_ip = 100;
+                    continue _fun81454
                 }
             case 94:
                 var1 = var3.primaryColor;
             case 100:
                 if (!(var2 != var1)) {
-                    _fun81453_ip = 107;
-                    continue _fun81453
+                    _fun81454_ip = 107;
+                    continue _fun81454
                 }
             case 104:
                 var0 = var1;
@@ -64,4 +64,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5742, 668, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5746, 668, 2]);

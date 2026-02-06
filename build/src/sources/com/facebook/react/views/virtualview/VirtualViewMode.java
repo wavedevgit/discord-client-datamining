@@ -22,7 +22,7 @@ public final class VirtualViewMode {
     static {
         VirtualViewMode[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = vr.a.a($values);
+        $ENTRIES = xr.a.a($values);
     }
 
     private VirtualViewMode(String str, int i10, int i11) {

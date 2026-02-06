@@ -30,31 +30,31 @@ public final class InternalErrorInfo_IntegrationErrorInfoJsonAdapter extends h {
     @Override // com.squareup.moshi.h
     @NotNull
     public InternalErrorInfo.IntegrationErrorInfo fromJson(@NotNull m mVar) {
-        mVar.s();
+        mVar.u();
         String str = null;
         while (mVar.hasNext()) {
-            int W = mVar.W(this.options);
-            if (W == -1) {
+            int J = mVar.J(this.options);
+            if (J == -1) {
                 mVar.E0();
-                mVar.P();
-            } else if (W == 0 && (str = (String) this.stringAdapter.fromJson(mVar)) == null) {
-                throw ym.c.x("message", "message", mVar);
+                mVar.S();
+            } else if (J == 0 && (str = (String) this.stringAdapter.fromJson(mVar)) == null) {
+                throw an.c.x("message", "message", mVar);
             }
         }
-        mVar.z();
+        mVar.D();
         if (str != null) {
             return new InternalErrorInfo.IntegrationErrorInfo(str);
         }
-        throw ym.c.o("message", "message", mVar);
+        throw an.c.o("message", "message", mVar);
     }
 
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t tVar, InternalErrorInfo.IntegrationErrorInfo integrationErrorInfo) {
         if (integrationErrorInfo != null) {
             tVar.k();
-            tVar.W("message");
+            tVar.J("message");
             this.stringAdapter.toJson(tVar, integrationErrorInfo.getMessage());
-            tVar.E();
+            tVar.s();
             return;
         }
         throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");

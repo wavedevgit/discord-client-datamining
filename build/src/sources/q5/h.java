@@ -3,26 +3,26 @@ package q5;
 public class h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f47494a;
+    private final String f46542a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final float f47495b;
+    public final float f46543b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final float f47496c;
+    public final float f46544c;
 
     public h(String str, float f10, float f11) {
-        this.f47494a = str;
-        this.f47496c = f11;
-        this.f47495b = f10;
+        this.f46542a = str;
+        this.f46544c = f11;
+        this.f46543b = f10;
     }
 
     public boolean a(String str) {
-        if (this.f47494a.equalsIgnoreCase(str)) {
+        if (this.f46542a.equalsIgnoreCase(str)) {
             return true;
         }
-        if (this.f47494a.endsWith("\r")) {
-            String str2 = this.f47494a;
+        if (this.f46542a.endsWith("\r")) {
+            String str2 = this.f46542a;
             if (str2.substring(0, str2.length() - 1).equalsIgnoreCase(str)) {
                 return true;
             }

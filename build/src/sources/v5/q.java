@@ -9,13 +9,13 @@ import w5.c;
 public abstract class q {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final c.a f51857a = c.a.a("nm", "g", "o", "t", "s", "e", "w", "lc", "lj", "ml", "hd", "d");
+    private static final c.a f52222a = c.a.a("nm", "g", "o", "t", "s", "e", "w", "lc", "lj", "ml", "hd", "d");
 
     /* renamed from: b  reason: collision with root package name */
-    private static final c.a f51858b = c.a.a("p", "k");
+    private static final c.a f52223b = c.a.a("p", "k");
 
     /* renamed from: c  reason: collision with root package name */
-    private static final c.a f51859c = c.a.a("n", "v");
+    private static final c.a f52224c = c.a.a("n", "v");
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static s5.f a(w5.c cVar, l5.i iVar) {
@@ -37,20 +37,20 @@ public abstract class q {
         r5.d dVar3 = null;
         while (cVar.hasNext()) {
             s5.g gVar3 = gVar2;
-            switch (cVar.y(f51857a)) {
+            switch (cVar.p(f52222a)) {
                 case 0:
-                    str = cVar.f1();
+                    str = cVar.e1();
                     gVar2 = gVar3;
                 case 1:
                     dVar2 = dVar3;
-                    cVar.s();
+                    cVar.u();
                     int i10 = -1;
                     while (cVar.hasNext()) {
-                        int y10 = cVar.y(f51858b);
-                        if (y10 != 0) {
-                            if (y10 != 1) {
-                                cVar.E();
-                                cVar.P();
+                        int p10 = cVar.p(f52223b);
+                        if (p10 != 0) {
+                            if (p10 != 1) {
+                                cVar.s();
+                                cVar.S();
                             } else {
                                 cVar2 = d.g(cVar, iVar, i10);
                             }
@@ -58,7 +58,7 @@ public abstract class q {
                             i10 = cVar.nextInt();
                         }
                     }
-                    cVar.z();
+                    cVar.D();
                     gVar2 = gVar3;
                     dVar3 = dVar2;
                 case 2:
@@ -98,31 +98,31 @@ public abstract class q {
                     gVar2 = gVar3;
                     dVar3 = dVar2;
                 case 10:
-                    z10 = cVar.h();
+                    z10 = cVar.g();
                     gVar2 = gVar3;
                 case 11:
-                    cVar.v();
+                    cVar.x();
                     while (cVar.hasNext()) {
-                        cVar.s();
+                        cVar.u();
                         String str2 = null;
                         r5.b bVar4 = null;
                         while (cVar.hasNext()) {
-                            int y11 = cVar.y(f51859c);
-                            if (y11 != 0) {
+                            int p11 = cVar.p(f52224c);
+                            if (p11 != 0) {
                                 r5.d dVar4 = dVar3;
-                                if (y11 != 1) {
-                                    cVar.E();
-                                    cVar.P();
+                                if (p11 != 1) {
+                                    cVar.s();
+                                    cVar.S();
                                 } else {
                                     bVar4 = d.e(cVar, iVar);
                                 }
                                 dVar3 = dVar4;
                             } else {
-                                str2 = cVar.f1();
+                                str2 = cVar.e1();
                             }
                         }
                         r5.d dVar5 = dVar3;
-                        cVar.z();
+                        cVar.D();
                         if (str2.equals("o")) {
                             bVar3 = bVar4;
                         } else if (str2.equals("d") || str2.equals("g")) {
@@ -133,7 +133,7 @@ public abstract class q {
                         dVar3 = dVar5;
                     }
                     dVar2 = dVar3;
-                    cVar.t();
+                    cVar.v();
                     if (arrayList.size() == 1) {
                         arrayList.add((r5.b) arrayList.get(0));
                     }
@@ -141,8 +141,8 @@ public abstract class q {
                     dVar3 = dVar2;
                     break;
                 default:
-                    cVar.E();
-                    cVar.P();
+                    cVar.s();
+                    cVar.S();
                     gVar2 = gVar3;
             }
         }

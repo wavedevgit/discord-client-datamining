@@ -10,7 +10,7 @@ import x.y0;
 public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private static volatile d2 f2051a;
+    private static volatile d2 f2380a;
 
     static {
         a2.b().c(c0.a.a(), new Consumer() { // from class: t.a
@@ -22,15 +22,15 @@ public abstract class b {
     }
 
     public static /* synthetic */ void a(z1 z1Var) {
-        f2051a = new d2(c.a(z1Var));
-        y0.a("DeviceQuirks", "camera2 DeviceQuirks = " + d2.d(f2051a));
+        f2380a = new d2(c.a(z1Var));
+        y0.a("DeviceQuirks", "camera2 DeviceQuirks = " + d2.d(f2380a));
     }
 
     public static y1 b(Class cls) {
-        return f2051a.b(cls);
+        return f2380a.b(cls);
     }
 
     public static d2 c() {
-        return f2051a;
+        return f2380a;
     }
 }

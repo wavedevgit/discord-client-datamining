@@ -8,43 +8,43 @@ import ne.w0;
 public class l implements k.e {
 
     /* renamed from: b  reason: collision with root package name */
-    protected final int f12354b;
+    protected final int f12253b;
 
     /* renamed from: c  reason: collision with root package name */
-    protected final int f12355c;
+    protected final int f12254c;
 
     /* renamed from: d  reason: collision with root package name */
-    protected final int f12356d;
+    protected final int f12255d;
 
     /* renamed from: e  reason: collision with root package name */
-    protected final int f12357e;
+    protected final int f12256e;
 
     /* renamed from: f  reason: collision with root package name */
-    protected final int f12358f;
+    protected final int f12257f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final int f12359g;
+    public final int f12258g;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private int f12360a = 250000;
+        private int f12259a = 250000;
 
         /* renamed from: b  reason: collision with root package name */
-        private int f12361b = 750000;
+        private int f12260b = 750000;
 
         /* renamed from: c  reason: collision with root package name */
-        private int f12362c = 4;
+        private int f12261c = 4;
 
         /* renamed from: d  reason: collision with root package name */
-        private int f12363d = 250000;
+        private int f12262d = 250000;
 
         /* renamed from: e  reason: collision with root package name */
-        private int f12364e = 50000000;
+        private int f12263e = 50000000;
 
         /* renamed from: f  reason: collision with root package name */
-        private int f12365f = 2;
+        private int f12264f = 2;
 
         public l g() {
             return new l(this);
@@ -52,16 +52,16 @@ public class l implements k.e {
     }
 
     protected l(a aVar) {
-        this.f12354b = aVar.f12360a;
-        this.f12355c = aVar.f12361b;
-        this.f12356d = aVar.f12362c;
-        this.f12357e = aVar.f12363d;
-        this.f12358f = aVar.f12364e;
-        this.f12359g = aVar.f12365f;
+        this.f12253b = aVar.f12259a;
+        this.f12254c = aVar.f12260b;
+        this.f12255d = aVar.f12261c;
+        this.f12256e = aVar.f12262d;
+        this.f12257f = aVar.f12263e;
+        this.f12258g = aVar.f12264f;
     }
 
     protected static int b(int i10, int i11, int i12) {
-        return oi.e.d(((i10 * i11) * i12) / 1000000);
+        return pi.e.d(((i10 * i11) * i12) / 1000000);
     }
 
     protected static int d(int i10) {
@@ -119,24 +119,24 @@ public class l implements k.e {
     }
 
     protected int e(int i10) {
-        return oi.e.d((this.f12358f * d(i10)) / 1000000);
+        return pi.e.d((this.f12257f * d(i10)) / 1000000);
     }
 
     protected int f(int i10, int i11) {
         int d10;
-        int i12 = this.f12357e;
+        int i12 = this.f12256e;
         if (i10 == 5) {
-            i12 *= this.f12359g;
+            i12 *= this.f12258g;
         }
         if (i11 != -1) {
-            d10 = ni.b.a(i11, 8, RoundingMode.CEILING);
+            d10 = oi.b.a(i11, 8, RoundingMode.CEILING);
         } else {
             d10 = d(i10);
         }
-        return oi.e.d((i12 * d10) / 1000000);
+        return pi.e.d((i12 * d10) / 1000000);
     }
 
     protected int g(int i10, int i11, int i12) {
-        return w0.q(i10 * this.f12356d, b(this.f12354b, i11, i12), b(this.f12355c, i11, i12));
+        return w0.q(i10 * this.f12255d, b(this.f12253b, i11, i12), b(this.f12254c, i11, i12));
     }
 }

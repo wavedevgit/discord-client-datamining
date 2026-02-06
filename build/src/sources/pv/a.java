@@ -1,86 +1,110 @@
 package pv;
 
-import com.squareup.moshi.l;
-import com.squareup.moshi.w;
-import java.lang.annotation.Annotation;
-import java.lang.reflect.Type;
-import java.util.Collections;
-import java.util.LinkedHashSet;
-import java.util.Set;
-import ov.a0;
-import ov.h;
+import java.nio.charset.Charset;
+import java.util.Locale;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class a extends h.a {
+public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final w f46701a;
+    private static final Pattern f45747a = Pattern.compile("[\\\\&]");
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f46702b;
+    private static final Pattern f45748b = Pattern.compile("\\\\[!\"#$%&'()*+,./:;<=>?@\\[\\\\\\]^_`{|}~-]|&(?:#x[a-f0-9]{1,6}|#[0-9]{1,7}|[a-z][a-z0-9]{1,31});", 2);
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f46703c;
+    private static final Pattern f45749c = Pattern.compile("(%[a-fA-F0-9]{0,2}|[^:/?#@!$&'()*+,;=a-zA-Z0-9\\-._~])");
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f46704d;
+    private static final char[] f45750d = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
 
-    private a(w wVar, boolean z10, boolean z11, boolean z12) {
-        this.f46701a = wVar;
-        this.f46702b = z10;
-        this.f46703c = z11;
-        this.f46704d = z12;
-    }
+    /* renamed from: e  reason: collision with root package name */
+    private static final Pattern f45751e = Pattern.compile("[ \t\r\n]+");
 
-    public static a f(w wVar) {
-        if (wVar != null) {
-            return new a(wVar, false, false, false);
+    /* renamed from: f  reason: collision with root package name */
+    private static final c f45752f = new C0594a();
+
+    /* renamed from: g  reason: collision with root package name */
+    private static final c f45753g = new b();
+
+    /* renamed from: pv.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    static class C0594a implements c {
+        C0594a() {
         }
-        throw new NullPointerException("moshi == null");
-    }
 
-    private static Set g(Annotation[] annotationArr) {
-        LinkedHashSet linkedHashSet = null;
-        for (Annotation annotation : annotationArr) {
-            if (annotation.annotationType().isAnnotationPresent(l.class)) {
-                if (linkedHashSet == null) {
-                    linkedHashSet = new LinkedHashSet();
-                }
-                linkedHashSet.add(annotation);
+        @Override // pv.a.c
+        public void a(String str, StringBuilder sb2) {
+            if (str.charAt(0) == '\\') {
+                sb2.append((CharSequence) str, 1, str.length());
+            } else {
+                sb2.append(pv.b.a(str));
             }
         }
-        if (linkedHashSet != null) {
-            return Collections.unmodifiableSet(linkedHashSet);
-        }
-        return Collections.EMPTY_SET;
     }
 
-    @Override // ov.h.a
-    public h c(Type type, Annotation[] annotationArr, Annotation[] annotationArr2, a0 a0Var) {
-        com.squareup.moshi.h e10 = this.f46701a.e(type, g(annotationArr));
-        if (this.f46702b) {
-            e10 = e10.lenient();
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    static class b implements c {
+        b() {
         }
-        if (this.f46703c) {
-            e10 = e10.failOnUnknown();
+
+        @Override // pv.a.c
+        public void a(String str, StringBuilder sb2) {
+            byte[] bytes;
+            if (str.startsWith("%")) {
+                if (str.length() == 3) {
+                    sb2.append(str);
+                    return;
+                }
+                sb2.append("%25");
+                sb2.append((CharSequence) str, 1, str.length());
+                return;
+            }
+            for (byte b10 : str.getBytes(Charset.forName("UTF-8"))) {
+                sb2.append('%');
+                sb2.append(a.f45750d[(b10 >> 4) & 15]);
+                sb2.append(a.f45750d[b10 & 15]);
+            }
         }
-        if (this.f46704d) {
-            e10 = e10.serializeNulls();
-        }
-        return new b(e10);
     }
 
-    @Override // ov.h.a
-    public h d(Type type, Annotation[] annotationArr, a0 a0Var) {
-        com.squareup.moshi.h e10 = this.f46701a.e(type, g(annotationArr));
-        if (this.f46702b) {
-            e10 = e10.lenient();
+    /* JADX INFO: Access modifiers changed from: private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public interface c {
+        void a(String str, StringBuilder sb2);
+    }
+
+    public static String b(String str) {
+        return f45751e.matcher(str.trim().toLowerCase(Locale.ROOT)).replaceAll(" ");
+    }
+
+    public static String c(String str) {
+        return b(str.substring(1, str.length() - 1));
+    }
+
+    private static String d(Pattern pattern, String str, c cVar) {
+        Matcher matcher = pattern.matcher(str);
+        if (!matcher.find()) {
+            return str;
         }
-        if (this.f46703c) {
-            e10 = e10.failOnUnknown();
+        StringBuilder sb2 = new StringBuilder(str.length() + 16);
+        int i10 = 0;
+        do {
+            sb2.append((CharSequence) str, i10, matcher.start());
+            cVar.a(matcher.group(), sb2);
+            i10 = matcher.end();
+        } while (matcher.find());
+        if (i10 != str.length()) {
+            sb2.append((CharSequence) str, i10, str.length());
         }
-        if (this.f46704d) {
-            e10 = e10.serializeNulls();
+        return sb2.toString();
+    }
+
+    public static String e(String str) {
+        if (f45747a.matcher(str).find()) {
+            return d(f45748b, str, f45752f);
         }
-        return new c(e10);
+        return str;
     }
 }

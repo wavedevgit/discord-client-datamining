@@ -18,11 +18,11 @@ import org.jetbrains.annotations.NotNull;
 public final class ReflectJavaMethod extends ReflectJavaMember implements JavaMethod {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Method f32634a;
+    private final Method f32654a;
 
     public ReflectJavaMethod(@NotNull Method member) {
         Intrinsics.checkNotNullParameter(member, "member");
-        this.f32634a = member;
+        this.f32654a = member;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaMethod
@@ -67,7 +67,7 @@ public final class ReflectJavaMethod extends ReflectJavaMember implements JavaMe
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.runtime.structure.ReflectJavaMember
     @NotNull
     public Method getMember() {
-        return this.f32634a;
+        return this.f32654a;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaMethod

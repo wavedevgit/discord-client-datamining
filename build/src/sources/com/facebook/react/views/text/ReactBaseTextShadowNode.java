@@ -123,11 +123,11 @@ public abstract class ReactBaseTextShadowNode extends LayoutShadowNode {
                 int reactTag = childAt.getReactTag();
                 YogaValue styleWidth = childAt.getStyleWidth();
                 YogaValue styleHeight = childAt.getStyleHeight();
-                YogaUnit yogaUnit = styleWidth.f11560b;
+                YogaUnit yogaUnit = styleWidth.f11459b;
                 YogaUnit yogaUnit2 = YogaUnit.POINT;
-                if (yogaUnit == yogaUnit2 && styleHeight.f11560b == yogaUnit2) {
-                    layoutWidth = styleWidth.f11559a;
-                    layoutHeight = styleHeight.f11559a;
+                if (yogaUnit == yogaUnit2 && styleHeight.f11459b == yogaUnit2) {
+                    layoutWidth = styleWidth.f11458a;
+                    layoutHeight = styleHeight.f11458a;
                 } else {
                     childAt.calculateLayout();
                     layoutWidth = childAt.getLayoutWidth();

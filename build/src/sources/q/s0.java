@@ -17,70 +17,70 @@ import x.q;
 public final class s0 implements a0.d0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f47049a;
+    private final String f46097a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final r.a0 f47050b;
+    private final r.a0 f46098b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final w.h f47051c;
+    private final w.h f46099c;
 
     /* renamed from: e  reason: collision with root package name */
-    private u f47053e;
+    private u f46101e;
 
     /* renamed from: h  reason: collision with root package name */
-    private final a f47056h;
+    private final a f46104h;
 
     /* renamed from: j  reason: collision with root package name */
-    private final a0.d2 f47058j;
+    private final a0.d2 f46106j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final a0.a1 f47059k;
+    private final a0.a1 f46107k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final r.n0 f47060l;
+    private final r.n0 f46108l;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Object f47052d = new Object();
+    private final Object f46100d = new Object();
 
     /* renamed from: f  reason: collision with root package name */
-    private a f47054f = null;
+    private a f46102f = null;
 
     /* renamed from: g  reason: collision with root package name */
-    private a f47055g = null;
+    private a f46103g = null;
 
     /* renamed from: i  reason: collision with root package name */
-    private List f47057i = null;
+    private List f46105i = null;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static class a extends androidx.lifecycle.u {
 
         /* renamed from: m  reason: collision with root package name */
-        private LiveData f47061m;
+        private LiveData f46109m;
 
         /* renamed from: n  reason: collision with root package name */
-        private final Object f47062n;
+        private final Object f46110n;
 
         a(Object obj) {
-            this.f47062n = obj;
+            this.f46110n = obj;
         }
 
         @Override // androidx.lifecycle.LiveData
         public Object f() {
-            LiveData liveData = this.f47061m;
+            LiveData liveData = this.f46109m;
             if (liveData == null) {
-                return this.f47062n;
+                return this.f46110n;
             }
             return liveData.f();
         }
 
         void r(LiveData liveData) {
-            LiveData liveData2 = this.f47061m;
+            LiveData liveData2 = this.f46109m;
             if (liveData2 != null) {
                 super.q(liveData2);
             }
-            this.f47061m = liveData;
+            this.f46109m = liveData;
             super.p(liveData, new Observer() { // from class: q.r0
                 @Override // androidx.lifecycle.Observer
                 public final void a(Object obj) {
@@ -92,15 +92,15 @@ public final class s0 implements a0.d0 {
 
     public s0(String str, r.n0 n0Var) {
         String str2 = (String) b2.e.g(str);
-        this.f47049a = str2;
-        this.f47060l = n0Var;
+        this.f46097a = str2;
+        this.f46108l = n0Var;
         r.a0 c10 = n0Var.c(str2);
-        this.f47050b = c10;
-        this.f47051c = new w.h(this);
+        this.f46098b = c10;
+        this.f46099c = new w.h(this);
         a0.d2 a10 = androidx.camera.camera2.internal.compat.quirk.a.a(str, c10);
-        this.f47058j = a10;
-        this.f47059k = new f2(str, a10);
-        this.f47056h = new a(x.q.a(q.b.CLOSED));
+        this.f46106j = a10;
+        this.f46107k = new f2(str, a10);
+        this.f46104h = new a(x.q.a(q.b.CLOSED));
     }
 
     private void q() {
@@ -141,13 +141,13 @@ public final class s0 implements a0.d0 {
 
     @Override // a0.d0
     public String b() {
-        return this.f47049a;
+        return this.f46097a;
     }
 
     @Override // x.o
     public int c() {
         boolean z10;
-        Integer num = (Integer) this.f47050b.a(CameraCharacteristics.LENS_FACING);
+        Integer num = (Integer) this.f46098b.a(CameraCharacteristics.LENS_FACING);
         if (num != null) {
             z10 = true;
         } else {
@@ -159,7 +159,7 @@ public final class s0 implements a0.d0 {
 
     @Override // a0.d0
     public List d(int i10) {
-        Size[] a10 = this.f47050b.b().a(i10);
+        Size[] a10 = this.f46098b.b().a(i10);
         if (a10 != null) {
             return Arrays.asList(a10);
         }
@@ -168,12 +168,12 @@ public final class s0 implements a0.d0 {
 
     @Override // a0.d0
     public a0.d2 e() {
-        return this.f47058j;
+        return this.f46106j;
     }
 
     @Override // a0.d0
     public List f(int i10) {
-        Size[] c10 = this.f47050b.b().c(i10);
+        Size[] c10 = this.f46098b.b().c(i10);
         if (c10 != null) {
             return Arrays.asList(c10);
         }
@@ -182,14 +182,14 @@ public final class s0 implements a0.d0 {
 
     @Override // a0.d0
     public void g(Executor executor, a0.k kVar) {
-        synchronized (this.f47052d) {
+        synchronized (this.f46100d) {
             try {
-                u uVar = this.f47053e;
+                u uVar = this.f46101e;
                 if (uVar == null) {
-                    if (this.f47057i == null) {
-                        this.f47057i = new ArrayList();
+                    if (this.f46105i == null) {
+                        this.f46105i = new ArrayList();
                     }
-                    this.f47057i.add(new Pair(kVar, executor));
+                    this.f46105i.add(new Pair(kVar, executor));
                     return;
                 }
                 uVar.w(executor, kVar);
@@ -220,11 +220,11 @@ public final class s0 implements a0.d0 {
 
     @Override // a0.d0
     public void k(a0.k kVar) {
-        synchronized (this.f47052d) {
+        synchronized (this.f46100d) {
             try {
-                u uVar = this.f47053e;
+                u uVar = this.f46101e;
                 if (uVar == null) {
-                    List list = this.f47057i;
+                    List list = this.f46105i;
                     if (list == null) {
                         return;
                     }
@@ -244,44 +244,44 @@ public final class s0 implements a0.d0 {
     }
 
     public w.h l() {
-        return this.f47051c;
+        return this.f46099c;
     }
 
     public r.a0 m() {
-        return this.f47050b;
+        return this.f46098b;
     }
 
     int n() {
-        Integer num = (Integer) this.f47050b.a(CameraCharacteristics.SENSOR_ORIENTATION);
+        Integer num = (Integer) this.f46098b.a(CameraCharacteristics.SENSOR_ORIENTATION);
         b2.e.g(num);
         return num.intValue();
     }
 
     int o() {
-        Integer num = (Integer) this.f47050b.a(CameraCharacteristics.INFO_SUPPORTED_HARDWARE_LEVEL);
+        Integer num = (Integer) this.f46098b.a(CameraCharacteristics.INFO_SUPPORTED_HARDWARE_LEVEL);
         b2.e.g(num);
         return num.intValue();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void p(u uVar) {
-        synchronized (this.f47052d) {
+        synchronized (this.f46100d) {
             try {
-                this.f47053e = uVar;
-                a aVar = this.f47055g;
+                this.f46101e = uVar;
+                a aVar = this.f46103g;
                 if (aVar != null) {
                     aVar.r(uVar.O().e());
                 }
-                a aVar2 = this.f47054f;
+                a aVar2 = this.f46102f;
                 if (aVar2 != null) {
-                    aVar2.r(this.f47053e.M().f());
+                    aVar2.r(this.f46101e.M().f());
                 }
-                List<Pair> list = this.f47057i;
+                List<Pair> list = this.f46105i;
                 if (list != null) {
                     for (Pair pair : list) {
-                        this.f47053e.w((Executor) pair.second, (a0.k) pair.first);
+                        this.f46101e.w((Executor) pair.second, (a0.k) pair.first);
                     }
-                    this.f47057i = null;
+                    this.f46105i = null;
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -292,6 +292,6 @@ public final class s0 implements a0.d0 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void s(LiveData liveData) {
-        this.f47056h.r(liveData);
+        this.f46104h.r(liveData);
     }
 }

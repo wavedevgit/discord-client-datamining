@@ -1,18 +1,18 @@
 package vc;
 
 import com.google.android.exoplayer2.Format;
-import mi.s;
 import ne.h0;
 import ne.w0;
 import ne.y;
+import ni.s;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 final class g implements a {
 
     /* renamed from: a  reason: collision with root package name */
-    public final Format f52064a;
+    public final Format f52429a;
 
     public g(Format format) {
-        this.f52064a = format;
+        this.f52429a = format;
     }
 
     private static String a(int i10) {
@@ -107,7 +107,7 @@ final class g implements a {
             bVar.a0(g02);
         }
         if ("audio/mp4a-latm".equals(b10) && z12 > 0) {
-            bVar.V(s.t(bArr));
+            bVar.V(s.u(bArr));
         }
         return new g(bVar.G());
     }

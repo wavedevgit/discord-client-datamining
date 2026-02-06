@@ -27,8 +27,8 @@ import kotlin.reflect.jvm.internal.impl.types.TypeWithEnhancementKt;
 import kotlin.reflect.jvm.internal.impl.types.UnwrappedType;
 import kotlin.reflect.jvm.internal.impl.types.Variance;
 import kotlin.reflect.jvm.internal.impl.types.typeUtil.TypeUtilsKt;
-import or.p;
 import org.jetbrains.annotations.NotNull;
+import qr.p;
 @SourceDebugExtension({"SMAP\nCapturedTypeApproximation.kt\nKotlin\n*S Kotlin\n*F\n+ 1 CapturedTypeApproximation.kt\norg/jetbrains/kotlin/types/typesApproximation/CapturedTypeApproximationKt\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,178:1\n1761#2,3:179\n1563#2:183\n1634#2,3:184\n1#3:182\n*S KotlinDebug\n*F\n+ 1 CapturedTypeApproximation.kt\norg/jetbrains/kotlin/types/typesApproximation/CapturedTypeApproximationKt\n*L\n158#1:179,3\n167#1:183\n167#1:184,3\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class CapturedTypeApproximationKt {
@@ -133,7 +133,7 @@ public final class CapturedTypeApproximationKt {
         if (!typeProjection.isStarProjection()) {
             KotlinType type = typeProjection.getType();
             Intrinsics.checkNotNullExpressionValue(type, "getType(...)");
-            if (TypeUtils.contains(type, a.f34748d)) {
+            if (TypeUtils.contains(type, a.f34768d)) {
                 Variance projectionKind = typeProjection.getProjectionKind();
                 Intrinsics.checkNotNullExpressionValue(projectionKind, "getProjectionKind(...)");
                 if (projectionKind == Variance.OUT_VARIANCE) {

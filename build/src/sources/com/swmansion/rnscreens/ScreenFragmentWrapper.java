@@ -5,19 +5,19 @@ import com.facebook.react.bridge.ReactContext;
 import java.util.List;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public interface ScreenFragmentWrapper extends i, u {
-    Screen h();
+    Screen g();
 
-    boolean i();
+    boolean h();
 
-    Activity j();
+    Activity i();
 
-    List k();
+    List j();
 
-    void l(ScreenContainer screenContainer);
+    void k(ScreenContainer screenContainer);
 
-    void m();
+    void l();
 
-    void n(ScreenContainer screenContainer);
+    void m(ScreenContainer screenContainer);
 
     ReactContext o();
 }
