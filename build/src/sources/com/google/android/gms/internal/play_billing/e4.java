@@ -22,10 +22,8 @@ final class e4 extends f4 {
         jadx.core.utils.exceptions.JadxRuntimeException: Failed to process method for inline: com.google.android.gms.internal.play_billing.g4.o(java.lang.Object, long, boolean):void
         	at jadx.core.dex.visitors.InlineMethods.processInvokeInsn(InlineMethods.java:76)
         	at jadx.core.dex.visitors.InlineMethods.visit(InlineMethods.java:51)
-        Caused by: java.lang.ArrayIndexOutOfBoundsException: arraycopy: length -1 is negative
-        	at java.base/java.lang.System.arraycopy(Native Method)
-        	at java.base/java.util.ArrayList.shiftTailOverGap(ArrayList.java:746)
-        	at java.base/java.util.ArrayList.removeIf(ArrayList.java:1691)
+        Caused by: java.util.ConcurrentModificationException
+        	at java.base/java.util.ArrayList.removeIf(ArrayList.java:1685)
         	at java.base/java.util.ArrayList.removeIf(ArrayList.java:1660)
         	at jadx.core.dex.instructions.args.SSAVar.removeUse(SSAVar.java:130)
         	at jadx.core.dex.instructions.args.SSAVar.use(SSAVar.java:123)
