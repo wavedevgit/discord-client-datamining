@@ -32,25 +32,20 @@ final class g extends wh.l0 {
 
     @Override // wh.l0
     protected final void a() {
-        wh.k0 k0Var;
-        wh.v0 v0Var;
         String str;
         b2 b2Var;
         o3 o3Var;
         ArrayList w10 = x.w(this.f15772e);
         try {
-            v0Var = this.f15775p.f16086d;
             str = this.f15775p.f16083a;
             Bundle o10 = x.o(this.f15773i);
             x xVar = this.f15775p;
             xg.k kVar = this.f15774o;
             b2Var = xVar.f16084b;
             o3Var = xVar.f16085c;
-            ((wh.b0) v0Var.e()).L0(str, w10, o10, new w(xVar, kVar, b2Var, o3Var));
+            ((wh.b0) this.f15775p.f16086d.e()).L0(str, w10, o10, new w(xVar, kVar, b2Var, o3Var));
         } catch (RemoteException e10) {
-            List list = this.f15772e;
-            k0Var = x.f16081g;
-            k0Var.c(e10, "startDownload(%s)", list);
+            x.f16081g.c(e10, "startDownload(%s)", this.f15772e);
             this.f15774o.d(new RuntimeException(e10));
         }
     }
