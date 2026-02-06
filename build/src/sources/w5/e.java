@@ -6,9 +6,8 @@ import okio.Buffer;
 import okio.BufferedSource;
 import okio.ByteString;
 import w5.c;
-/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-public final class e extends c {
+final class e extends c {
 
     /* renamed from: s  reason: collision with root package name */
     private final BufferedSource f53472s;
