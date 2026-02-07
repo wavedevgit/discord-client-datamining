@@ -19,13 +19,14 @@ final class d4 extends f4 {
     }
 
     /*  JADX ERROR: JadxRuntimeException in pass: InlineMethods
-        jadx.core.utils.exceptions.JadxRuntimeException: Failed to process method for inline: com.google.android.gms.internal.play_billing.g4.n(java.lang.Object, long, boolean):void
+        jadx.core.utils.exceptions.JadxRuntimeException: Failed to process method for inline: com.google.android.gms.internal.play_billing.g4.o(java.lang.Object, long, boolean):void
         	at jadx.core.dex.visitors.InlineMethods.processInvokeInsn(InlineMethods.java:76)
         	at jadx.core.dex.visitors.InlineMethods.visit(InlineMethods.java:51)
-        Caused by: java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 2
-        	at java.base/java.util.ArrayList.add(ArrayList.java:455)
-        	at java.base/java.util.ArrayList.add(ArrayList.java:467)
-        	at jadx.core.dex.instructions.args.SSAVar.use(SSAVar.java:126)
+        Caused by: java.util.ConcurrentModificationException
+        	at java.base/java.util.ArrayList.removeIf(ArrayList.java:1685)
+        	at java.base/java.util.ArrayList.removeIf(ArrayList.java:1660)
+        	at jadx.core.dex.instructions.args.SSAVar.removeUse(SSAVar.java:130)
+        	at jadx.core.dex.instructions.args.SSAVar.use(SSAVar.java:123)
         	at jadx.core.dex.nodes.InsnNode.rebindArgs(InsnNode.java:481)
         	at jadx.core.dex.instructions.mods.TernaryInsn.rebindArgs(TernaryInsn.java:92)
         	at jadx.core.dex.nodes.InsnNode.rebindArgs(InsnNode.java:484)
