@@ -22,11 +22,14 @@ final class e4 extends f4 {
         jadx.core.utils.exceptions.JadxRuntimeException: Failed to process method for inline: com.google.android.gms.internal.play_billing.g4.n(java.lang.Object, long, boolean):void
         	at jadx.core.dex.visitors.InlineMethods.processInvokeInsn(InlineMethods.java:76)
         	at jadx.core.dex.visitors.InlineMethods.visit(InlineMethods.java:51)
-        Caused by: java.util.ConcurrentModificationException
-        	at java.base/java.util.ArrayList$Itr.checkForComodification(ArrayList.java:1013)
-        	at java.base/java.util.ArrayList$Itr.next(ArrayList.java:967)
-        	at jadx.core.dex.instructions.args.SSAVar.updateUsedInPhiList(SSAVar.java:151)
-        	at jadx.core.dex.nodes.InsnNode.rebindArgs(InsnNode.java:482)
+        Caused by: java.lang.ArrayIndexOutOfBoundsException: arraycopy: length -1 is negative
+        	at java.base/java.lang.System.arraycopy(Native Method)
+        	at java.base/java.util.ArrayList.shiftTailOverGap(ArrayList.java:746)
+        	at java.base/java.util.ArrayList.removeIf(ArrayList.java:1691)
+        	at java.base/java.util.ArrayList.removeIf(ArrayList.java:1660)
+        	at jadx.core.dex.instructions.args.SSAVar.removeUse(SSAVar.java:130)
+        	at jadx.core.dex.instructions.args.SSAVar.use(SSAVar.java:123)
+        	at jadx.core.dex.nodes.InsnNode.rebindArgs(InsnNode.java:481)
         	at jadx.core.dex.instructions.mods.TernaryInsn.rebindArgs(TernaryInsn.java:92)
         	at jadx.core.dex.nodes.InsnNode.rebindArgs(InsnNode.java:484)
         	at jadx.core.utils.BlockUtils.replaceInsn(BlockUtils.java:1079)
