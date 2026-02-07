@@ -25,12 +25,16 @@ final class i extends xh.l0 {
 
     @Override // xh.l0
     protected final void a() {
+        xh.k0 k0Var;
+        xh.v0 v0Var;
         String str;
         try {
+            v0Var = this.f15773o.f16066d;
             str = this.f15773o.f16063a;
-            ((xh.b0) this.f15773o.f16066d.e()).i0(str, x.o(this.f15771e), new r(this.f15773o, this.f15772i));
+            ((xh.b0) v0Var.e()).i0(str, x.o(this.f15771e), new r(this.f15773o, this.f15772i));
         } catch (RemoteException e10) {
-            x.f16061g.c(e10, "syncPacks", new Object[0]);
+            k0Var = x.f16061g;
+            k0Var.c(e10, "syncPacks", new Object[0]);
             this.f15772i.d(new RuntimeException(e10));
         }
     }
