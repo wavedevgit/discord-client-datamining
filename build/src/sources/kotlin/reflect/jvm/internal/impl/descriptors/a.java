@@ -9,9 +9,8 @@ import kotlin.reflect.jvm.internal.impl.types.KotlinType;
 import kotlin.reflect.jvm.internal.impl.types.SimpleType;
 import kotlin.reflect.jvm.internal.impl.types.TypeConstructor;
 import kotlin.reflect.jvm.internal.impl.types.Variance;
-/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class a implements TypeParameterDescriptor {
+final class a implements TypeParameterDescriptor {
 
     /* renamed from: d  reason: collision with root package name */
     private final TypeParameterDescriptor f32338d;
